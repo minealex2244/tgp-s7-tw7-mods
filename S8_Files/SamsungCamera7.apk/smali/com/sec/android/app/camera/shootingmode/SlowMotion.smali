@@ -17,7 +17,7 @@
 
 .field private static final MAX_NUM_OF_EVENT_RESULTS:I = 0x2
 
-.field private static final SLOW_MOTION_RECORDING_BITRATE:I = 0x895440
+.field private static final SLOW_MOTION_RECORDING_BITRATE:I = 0xe4e1c0
 
 .field private static final SLOW_MOTION_RECORDING_FPS:I = 0xf0
 

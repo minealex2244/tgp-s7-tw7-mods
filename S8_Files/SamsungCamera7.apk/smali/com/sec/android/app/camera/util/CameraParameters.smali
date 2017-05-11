@@ -1352,7 +1352,7 @@
     .param p0, "value"    # I
 
     .prologue
-    const/16 v0, 0x60
+    const/16 v0, 0x62
 
     .line 442
     packed-switch p0, :pswitch_data_0
@@ -1364,19 +1364,19 @@
 
     .line 446
     :pswitch_1
-    const/16 v0, 0x5c
+    const/16 v0, 0x62
 
     goto :goto_0
 
     .line 448
     :pswitch_2
-    const/16 v0, 0x28
+    const/16 v0, 0x62
 
     goto :goto_0
 
     .line 450
     :pswitch_3
-    const/16 v0, 0x5a
+    const/16 v0, 0x62
 
     goto :goto_0
 
