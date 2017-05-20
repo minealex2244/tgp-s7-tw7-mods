@@ -30,18 +30,18 @@
     .param p3, "callingUid"    # I
 
     .prologue
-    .line 26320
+    .line 26365
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {p0}, Landroid/app/IAppTask$Stub;-><init>()V
 
-    .line 26321
+    .line 26366
     iput p2, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->mTaskId:I
 
-    .line 26322
+    .line 26367
     iput p3, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->mCallingUid:I
 
-    .line 26320
+    .line 26365
     return-void
 .end method
 
@@ -49,7 +49,7 @@
     .locals 3
 
     .prologue
-    .line 26326
+    .line 26371
     iget v0, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->mCallingUid:I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
@@ -58,7 +58,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 26327
+    .line 26372
     new-instance v0, Ljava/lang/SecurityException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -77,20 +77,20 @@
 
     move-result-object v1
 
-    .line 26328
+    .line 26373
     const-string/jumbo v2, " does not match caller of getAppTasks(): "
 
-    .line 26327
+    .line 26372
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 26328
+    .line 26373
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v2
 
-    .line 26327
+    .line 26372
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -103,7 +103,7 @@
 
     throw v0
 
-    .line 26325
+    .line 26370
     :cond_0
     return-void
 .end method
@@ -114,10 +114,10 @@
     .locals 7
 
     .prologue
-    .line 26334
+    .line 26379
     invoke-direct {p0}, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->checkCaller()V
 
-    .line 26336
+    .line 26381
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v3
@@ -125,14 +125,14 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 26337
+    .line 26382
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     move-result-wide v0
 
-    .line 26340
+    .line 26385
     .local v0, "origId":J
     :try_start_1
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -149,7 +149,7 @@
 
     if-nez v2, :cond_0
 
-    .line 26341
+    .line 26386
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -178,20 +178,20 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 26343
+    .line 26388
     :catchall_0
     move-exception v2
 
-    .line 26344
+    .line 26389
     :try_start_2
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 26343
+    .line 26388
     throw v2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 26336
+    .line 26381
     .end local v0    # "origId":J
     :catchall_1
     move-exception v2
@@ -202,7 +202,7 @@
 
     throw v2
 
-    .line 26344
+    .line 26389
     .restart local v0    # "origId":J
     :cond_0
     :try_start_3
@@ -212,10 +212,10 @@
 
     monitor-exit v3
 
-    .line 26336
+    .line 26381
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 26333
+    .line 26378
     return-void
 .end method
 
@@ -223,10 +223,10 @@
     .locals 8
 
     .prologue
-    .line 26351
+    .line 26396
     invoke-direct {p0}, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->checkCaller()V
 
-    .line 26353
+    .line 26398
     iget-object v4, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v4
@@ -234,14 +234,14 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 26354
+    .line 26399
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     move-result-wide v0
 
-    .line 26357
+    .line 26402
     .local v0, "origId":J
     :try_start_1
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -258,11 +258,11 @@
 
     move-result-object v2
 
-    .line 26359
+    .line 26404
     .local v2, "tr":Lcom/android/server/am/TaskRecord;
     if-nez v2, :cond_0
 
-    .line 26360
+    .line 26405
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -291,21 +291,21 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 26363
+    .line 26408
     .end local v2    # "tr":Lcom/android/server/am/TaskRecord;
     :catchall_0
     move-exception v3
 
-    .line 26364
+    .line 26409
     :try_start_2
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 26363
+    .line 26408
     throw v3
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 26353
+    .line 26398
     .end local v0    # "origId":J
     :catchall_1
     move-exception v3
@@ -316,7 +316,7 @@
 
     throw v3
 
-    .line 26362
+    .line 26407
     .restart local v0    # "origId":J
     .restart local v2    # "tr":Lcom/android/server/am/TaskRecord;
     :cond_0
@@ -329,7 +329,7 @@
 
     move-result-object v3
 
-    .line 26364
+    .line 26409
     :try_start_4
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
     :try_end_4
@@ -337,10 +337,10 @@
 
     monitor-exit v4
 
-    .line 26353
+    .line 26398
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 26362
+    .line 26407
     return-object v3
 .end method
 
@@ -348,22 +348,22 @@
     .locals 5
 
     .prologue
-    .line 26371
+    .line 26416
     invoke-direct {p0}, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->checkCaller()V
 
-    .line 26373
+    .line 26418
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v0
 
-    .line 26375
+    .line 26420
     .local v0, "origId":J
     :try_start_0
     monitor-enter p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 26376
+    .line 26421
     :try_start_1
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
@@ -382,13 +382,13 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 26379
+    .line 26424
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 26370
+    .line 26415
     return-void
 
-    .line 26375
+    .line 26420
     :catchall_0
     move-exception v2
 
@@ -399,14 +399,14 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 26378
+    .line 26423
     :catchall_1
     move-exception v2
 
-    .line 26379
+    .line 26424
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 26378
+    .line 26423
     throw v2
 .end method
 
@@ -415,10 +415,10 @@
     .param p1, "exclude"    # Z
 
     .prologue
-    .line 26408
+    .line 26453
     invoke-direct {p0}, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->checkCaller()V
 
-    .line 26410
+    .line 26455
     iget-object v5, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v5
@@ -426,14 +426,14 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 26411
+    .line 26456
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     move-result-wide v2
 
-    .line 26413
+    .line 26458
     .local v2, "origId":J
     :try_start_1
     iget-object v4, p0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -446,11 +446,11 @@
 
     move-result-object v1
 
-    .line 26414
+    .line 26459
     .local v1, "tr":Lcom/android/server/am/TaskRecord;
     if-nez v1, :cond_0
 
-    .line 26415
+    .line 26460
     new-instance v4, Ljava/lang/IllegalArgumentException;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -479,21 +479,21 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 26424
+    .line 26469
     .end local v1    # "tr":Lcom/android/server/am/TaskRecord;
     :catchall_0
     move-exception v4
 
-    .line 26425
+    .line 26470
     :try_start_2
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 26424
+    .line 26469
     throw v4
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 26410
+    .line 26455
     .end local v2    # "origId":J
     :catchall_1
     move-exception v4
@@ -504,7 +504,7 @@
 
     throw v4
 
-    .line 26417
+    .line 26462
     .restart local v1    # "tr":Lcom/android/server/am/TaskRecord;
     .restart local v2    # "origId":J
     :cond_0
@@ -513,18 +513,18 @@
 
     move-result-object v0
 
-    .line 26418
+    .line 26463
     .local v0, "intent":Landroid/content/Intent;
     if-eqz p1, :cond_1
 
-    .line 26419
+    .line 26464
     const/high16 v4, 0x800000
 
     invoke-virtual {v0, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 26425
+    .line 26470
     :goto_0
     :try_start_4
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
@@ -533,23 +533,23 @@
 
     monitor-exit v5
 
-    .line 26410
+    .line 26455
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 26407
+    .line 26452
     return-void
 
-    .line 26421
+    .line 26466
     :cond_1
     :try_start_5
     invoke-virtual {v0}, Landroid/content/Intent;->getFlags()I
 
     move-result v4
 
-    .line 26422
+    .line 26467
     const v6, -0x800001
 
-    .line 26421
+    .line 26466
     and-int/2addr v4, v6
 
     invoke-virtual {v0, v4}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
@@ -568,15 +568,15 @@
     .param p5, "bOptions"    # Landroid/os/Bundle;
 
     .prologue
-    .line 26386
+    .line 26431
     invoke-direct/range {p0 .. p0}, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->checkCaller()V
 
-    .line 26388
+    .line 26433
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
     move-result v18
 
-    .line 26391
+    .line 26436
     .local v18, "callingUser":I
     move-object/from16 v0, p0
 
@@ -587,7 +587,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 26392
+    .line 26437
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -602,11 +602,11 @@
 
     move-result-object v20
 
-    .line 26393
+    .line 26438
     .local v20, "tr":Lcom/android/server/am/TaskRecord;
     if-nez v20, :cond_0
 
-    .line 26394
+    .line 26439
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -637,7 +637,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 26391
+    .line 26436
     .end local v20    # "tr":Lcom/android/server/am/TaskRecord;
     :catchall_0
     move-exception v1
@@ -648,7 +648,7 @@
 
     throw v1
 
-    .line 26396
+    .line 26441
     .restart local v20    # "tr":Lcom/android/server/am/TaskRecord;
     :cond_0
     :try_start_1
@@ -656,11 +656,11 @@
 
     move-result-object v2
 
-    .line 26397
+    .line 26442
     .local v2, "appThread":Landroid/app/IApplicationThread;
     if-nez v2, :cond_1
 
-    .line 26398
+    .line 26443
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -690,10 +690,10 @@
     :cond_1
     monitor-exit v3
 
-    .line 26391
+    .line 26436
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 26401
+    .line 26446
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/server/am/ActivityManagerService$AppTaskImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
@@ -702,7 +702,7 @@
 
     const/4 v3, -0x1
 
-    .line 26402
+    .line 26447
     const/4 v7, 0x0
 
     const/4 v8, 0x0
@@ -719,7 +719,7 @@
 
     const/4 v14, 0x0
 
-    .line 26403
+    .line 26448
     const/4 v15, 0x0
 
     const/16 v17, 0x0
@@ -734,7 +734,7 @@
 
     move-object/from16 v16, p5
 
-    .line 26401
+    .line 26446
     invoke-virtual/range {v1 .. v20}, Lcom/android/server/am/ActivityStarter;->startActivityMayWait(Landroid/app/IApplicationThread;ILjava/lang/String;Landroid/content/Intent;Ljava/lang/String;Landroid/service/voice/IVoiceInteractionSession;Lcom/android/internal/app/IVoiceInteractor;Landroid/os/IBinder;Ljava/lang/String;IILandroid/app/ProfilerInfo;Landroid/app/IActivityManager$WaitResult;Landroid/content/res/Configuration;Landroid/os/Bundle;ZILandroid/app/IActivityContainer;Lcom/android/server/am/TaskRecord;)I
 
     move-result v1

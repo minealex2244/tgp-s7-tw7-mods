@@ -24,10 +24,10 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 96
+    .line 95
     invoke-direct {p0, p1}, Lcom/android/server/SystemService;-><init>(Landroid/content/Context;)V
 
-    .line 95
+    .line 94
     return-void
 .end method
 
@@ -38,17 +38,17 @@
     .param p1, "phase"    # I
 
     .prologue
-    .line 109
+    .line 108
     const/16 v0, 0x226
 
     if-ne p1, v0, :cond_0
 
-    .line 110
+    .line 109
     iget-object v0, p0, Lcom/android/server/content/ContentService$Lifecycle;->mService:Lcom/android/server/content/ContentService;
 
     invoke-virtual {v0}, Lcom/android/server/content/ContentService;->systemReady()V
 
-    .line 108
+    .line 107
     :cond_0
     return-void
 .end method
@@ -58,7 +58,7 @@
     .param p1, "userHandle"    # I
 
     .prologue
-    .line 116
+    .line 115
     iget-object v0, p0, Lcom/android/server/content/ContentService$Lifecycle;->mService:Lcom/android/server/content/ContentService;
 
     invoke-static {v0}, Lcom/android/server/content/ContentService;->-get0(Lcom/android/server/content/ContentService;)Landroid/util/SparseArray;
@@ -67,7 +67,7 @@
 
     monitor-enter v1
 
-    .line 117
+    .line 116
     :try_start_0
     iget-object v0, p0, Lcom/android/server/content/ContentService$Lifecycle;->mService:Lcom/android/server/content/ContentService;
 
@@ -81,10 +81,10 @@
 
     monitor-exit v1
 
-    .line 115
+    .line 114
     return-void
 
-    .line 116
+    .line 115
     :catchall_0
     move-exception v0
 
@@ -97,20 +97,20 @@
     .locals 3
 
     .prologue
-    .line 101
+    .line 100
     invoke-static {}, Landroid/os/FactoryTest;->getMode()I
 
     move-result v1
 
-    .line 102
+    .line 101
     const/4 v2, 0x1
 
-    .line 101
+    .line 100
     if-ne v1, v2, :cond_0
 
     const/4 v0, 0x1
 
-    .line 103
+    .line 102
     .local v0, "factoryTest":Z
     :goto_0
     new-instance v1, Lcom/android/server/content/ContentService;
@@ -123,17 +123,17 @@
 
     iput-object v1, p0, Lcom/android/server/content/ContentService$Lifecycle;->mService:Lcom/android/server/content/ContentService;
 
-    .line 104
+    .line 103
     const-string/jumbo v1, "content"
 
     iget-object v2, p0, Lcom/android/server/content/ContentService$Lifecycle;->mService:Lcom/android/server/content/ContentService;
 
     invoke-virtual {p0, v1, v2}, Lcom/android/server/content/ContentService$Lifecycle;->publishBinderService(Ljava/lang/String;Landroid/os/IBinder;)V
 
-    .line 100
+    .line 99
     return-void
 
-    .line 101
+    .line 100
     .end local v0    # "factoryTest":Z
     :cond_0
     const/4 v0, 0x0

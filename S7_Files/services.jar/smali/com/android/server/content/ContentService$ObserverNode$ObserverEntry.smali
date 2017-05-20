@@ -53,30 +53,30 @@
     .param p7, "_userHandle"    # I
 
     .prologue
-    .line 1258
+    .line 1260
     iput-object p1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->this$1:Lcom/android/server/content/ContentService$ObserverNode;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1260
+    .line 1262
     iput-object p4, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->observersLock:Ljava/lang/Object;
 
-    .line 1261
+    .line 1263
     iput-object p2, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->observer:Landroid/database/IContentObserver;
 
-    .line 1262
+    .line 1264
     iput p5, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->uid:I
 
-    .line 1263
+    .line 1265
     iput p6, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->pid:I
 
-    .line 1264
+    .line 1266
     iput p7, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->userHandle:I
 
-    .line 1265
+    .line 1267
     iput-boolean p3, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->notifyForDescendants:Z
 
-    .line 1267
+    .line 1269
     :try_start_0
     iget-object v1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->observer:Landroid/database/IContentObserver;
 
@@ -90,15 +90,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1259
+    .line 1261
     :goto_0
     return-void
 
-    .line 1268
+    .line 1270
     :catch_0
     move-exception v0
 
-    .line 1269
+    .line 1271
     .local v0, "e":Landroid/os/RemoteException;
     invoke-virtual {p0}, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->binderDied()V
 
@@ -111,12 +111,12 @@
     .locals 3
 
     .prologue
-    .line 1275
+    .line 1277
     iget-object v1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->observersLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 1276
+    .line 1278
     :try_start_0
     iget-object v0, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->this$1:Lcom/android/server/content/ContentService$ObserverNode;
 
@@ -128,10 +128,10 @@
 
     monitor-exit v1
 
-    .line 1274
+    .line 1276
     return-void
 
-    .line 1275
+    .line 1277
     :catchall_0
     move-exception v0
 
@@ -152,7 +152,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1282
+    .line 1284
     iget v1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->pid:I
 
     iget v2, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->pid:I
@@ -165,7 +165,7 @@
 
     invoke-virtual {p6, v1, v2}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 1283
+    .line 1285
     invoke-virtual {p2, p5}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     invoke-virtual {p2, p4}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
@@ -174,7 +174,7 @@
 
     invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1284
+    .line 1286
     iget v1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->pid:I
 
     invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(I)V
@@ -183,7 +183,7 @@
 
     invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1285
+    .line 1287
     iget v1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->uid:I
 
     invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(I)V
@@ -192,7 +192,7 @@
 
     invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1286
+    .line 1288
     iget v1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->userHandle:I
 
     invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(I)V
@@ -201,7 +201,7 @@
 
     invoke-virtual {p2, v1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 1288
+    .line 1290
     iget-object v1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->observer:Landroid/database/IContentObserver;
 
     if-eqz v1, :cond_0
@@ -212,7 +212,7 @@
 
     move-result-object v0
 
-    .line 1287
+    .line 1289
     :cond_0
     invoke-static {v0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
@@ -224,6 +224,6 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1281
+    .line 1283
     return-void
 .end method

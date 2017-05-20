@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/settings/CryptKeeper;
 
     .prologue
-    .line 1491
+    .line 1492
     iput-object p1, p0, Lcom/android/settings/CryptKeeper$13;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 1506
+    .line 1507
     iget-object v0, p0, Lcom/android/settings/CryptKeeper$13;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-static {v0}, Lcom/android/settings/CryptKeeper;->-get4(Lcom/android/settings/CryptKeeper;)Landroid/widget/ImageView;
@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1507
+    .line 1508
     iget-object v0, p0, Lcom/android/settings/CryptKeeper$13;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-static {v0}, Lcom/android/settings/CryptKeeper;->-get4(Lcom/android/settings/CryptKeeper;)Landroid/widget/ImageView;
@@ -62,7 +62,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setScaleX(F)V
 
-    .line 1508
+    .line 1509
     iget-object v0, p0, Lcom/android/settings/CryptKeeper$13;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-static {v0}, Lcom/android/settings/CryptKeeper;->-get4(Lcom/android/settings/CryptKeeper;)Landroid/widget/ImageView;
@@ -71,7 +71,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setScaleY(F)V
 
-    .line 1505
+    .line 1506
     :cond_0
     return-void
 .end method
@@ -81,7 +81,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 1502
+    .line 1503
     return-void
 .end method
 
@@ -90,7 +90,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 1499
+    .line 1500
     return-void
 .end method
 
@@ -99,7 +99,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 1494
+    .line 1495
     iget-object v0, p0, Lcom/android/settings/CryptKeeper$13;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-static {v0}, Lcom/android/settings/CryptKeeper;->-get5(Lcom/android/settings/CryptKeeper;)Landroid/widget/LinearLayout;
@@ -116,7 +116,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1495
+    .line 1496
     iget-object v0, p0, Lcom/android/settings/CryptKeeper$13;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-static {v0}, Lcom/android/settings/CryptKeeper;->-get5(Lcom/android/settings/CryptKeeper;)Landroid/widget/LinearLayout;
@@ -131,7 +131,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 1493
+    .line 1494
     :cond_0
     return-void
 .end method

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     .prologue
-    .line 3385
+    .line 3388
     iput-object p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Lcom/samsung/android/camera/iris/SemIrisManager$AuthenticationCallback;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "acquireInfo"    # I
 
     .prologue
-    .line 3437
+    .line 3440
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isIrisRunning()Z
@@ -48,17 +48,17 @@
 
     if-nez v0, :cond_0
 
-    .line 3438
+    .line 3441
     const-string/jumbo v0, "KeyguardIRIS"
 
     const-string/jumbo v1, "onAuthenticationAcquired: Iris is not running"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3439
+    .line 3442
     return-void
 
-    .line 3441
+    .line 3444
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
@@ -66,21 +66,21 @@
 
     if-nez v0, :cond_1
 
-    .line 3442
+    .line 3445
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Lcom/android/keyguard/KeyguardUpdateMonitor;->mIsIrisReady:Z
 
-    .line 3443
+    .line 3446
     const-string/jumbo v0, "KeyguardIRIS"
 
     const-string/jumbo v1, "Iris is ready"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3436
+    .line 3439
     :cond_1
     return-void
 .end method
@@ -91,7 +91,7 @@
     .param p2, "errString"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 3388
+    .line 3391
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isIrisRunning()Z
@@ -100,17 +100,17 @@
 
     if-nez v1, :cond_0
 
-    .line 3389
+    .line 3392
     const-string/jumbo v1, "KeyguardIRIS"
 
     const-string/jumbo v2, "onAuthenticationError: Iris is not running"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3390
+    .line 3393
     return-void
 
-    .line 3392
+    .line 3395
     :cond_0
     const-string/jumbo v1, "KeyguardIRIS"
 
@@ -144,7 +144,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3394
+    .line 3397
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v1, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isShowErrorMsgByToast(I)Z
@@ -153,7 +153,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 3395
+    .line 3398
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-static {v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-get1(Lcom/android/keyguard/KeyguardUpdateMonitor;)Landroid/content/Context;
@@ -166,26 +166,26 @@
 
     move-result-object v0
 
-    .line 3396
+    .line 3399
     .local v0, "toast":Landroid/widget/Toast;
     invoke-virtual {v0}, Landroid/widget/Toast;->setShowForAllUsers()V
 
-    .line 3397
+    .line 3400
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 3399
+    .line 3402
     .end local v0    # "toast":Landroid/widget/Toast;
     :cond_1
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->stopIrisCamera()V
 
-    .line 3400
+    .line 3403
     iget-object v1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-static {v1, p1, p2}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap34(Lcom/android/keyguard/KeyguardUpdateMonitor;ILjava/lang/CharSequence;)V
 
-    .line 3387
+    .line 3390
     return-void
 .end method
 
@@ -193,7 +193,7 @@
     .locals 2
 
     .prologue
-    .line 3427
+    .line 3430
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isIrisRunning()Z
@@ -202,17 +202,17 @@
 
     if-nez v0, :cond_0
 
-    .line 3428
+    .line 3431
     const-string/jumbo v0, "KeyguardIRIS"
 
     const-string/jumbo v1, "onAuthenticationFailed: Iris is not running"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3429
+    .line 3432
     return-void
 
-    .line 3431
+    .line 3434
     :cond_0
     const-string/jumbo v0, "KeyguardIRIS"
 
@@ -220,12 +220,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3432
+    .line 3435
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap16(Lcom/android/keyguard/KeyguardUpdateMonitor;)V
 
-    .line 3426
+    .line 3429
     return-void
 .end method
 
@@ -235,7 +235,7 @@
     .param p2, "helpString"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 3405
+    .line 3408
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isIrisRunning()Z
@@ -244,17 +244,17 @@
 
     if-nez v0, :cond_0
 
-    .line 3406
+    .line 3409
     const-string/jumbo v0, "KeyguardIRIS"
 
     const-string/jumbo v1, "onAuthenticationHelp: Iris is not running"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3407
+    .line 3410
     return-void
 
-    .line 3409
+    .line 3412
     :cond_0
     const-string/jumbo v0, "KeyguardIRIS"
 
@@ -288,12 +288,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3410
+    .line 3413
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v0, p1, p2}, Lcom/android/keyguard/KeyguardUpdateMonitor;->irisAuthenticationHelp(ILjava/lang/CharSequence;)V
 
-    .line 3404
+    .line 3407
     return-void
 .end method
 
@@ -302,7 +302,7 @@
     .param p1, "result"    # Lcom/samsung/android/camera/iris/SemIrisManager$AuthenticationResult;
 
     .prologue
-    .line 3415
+    .line 3418
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->isIrisRunning()Z
@@ -311,17 +311,17 @@
 
     if-nez v0, :cond_0
 
-    .line 3416
+    .line 3419
     const-string/jumbo v0, "KeyguardIRIS"
 
     const-string/jumbo v1, "onAuthenticationSucceeded: Iris is not running"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3417
+    .line 3420
     return-void
 
-    .line 3419
+    .line 3422
     :cond_0
     const-string/jumbo v0, "KeyguardIRIS"
 
@@ -329,20 +329,20 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3420
+    .line 3423
     const-string/jumbo v0, "KeyguardUpdateMonitor#onAuthenticationSucceeded"
 
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 3421
+    .line 3424
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$11;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap17(Lcom/android/keyguard/KeyguardUpdateMonitor;)V
 
-    .line 3422
+    .line 3425
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
-    .line 3414
+    .line 3417
     return-void
 .end method
 
@@ -353,6 +353,6 @@
     .param p3, "height"    # I
 
     .prologue
-    .line 3448
+    .line 3451
     return-void
 .end method

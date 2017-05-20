@@ -2628,7 +2628,7 @@
     invoke-interface {v0, v1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 572
-    const/16 v0, 0x14b
+    const/16 v0, 0x15f
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -4732,220 +4732,360 @@
 
     aput-object v1, v0, v2
 
-    .line 885
-    const-string/jumbo v1, "sim_status"
+    .line 884
+    const-string/jumbo v1, "apn_name"
 
     const/16 v2, 0x12c
 
     aput-object v1, v0, v2
 
-    .line 886
-    const-string/jumbo v1, "imei_info"
+    .line 885
+    const-string/jumbo v1, "apn_apn"
 
     const/16 v2, 0x12d
 
     aput-object v1, v0, v2
 
-    .line 887
-    const-string/jumbo v1, "wifi_ip_address"
+    .line 886
+    const-string/jumbo v1, "apn_http_proxy"
 
     const/16 v2, 0x12e
 
     aput-object v1, v0, v2
 
-    .line 888
-    const-string/jumbo v1, "wifi_mac_address"
+    .line 887
+    const-string/jumbo v1, "apn_http_port"
 
     const/16 v2, 0x12f
 
     aput-object v1, v0, v2
 
-    .line 889
-    const-string/jumbo v1, "bt_address"
+    .line 888
+    const-string/jumbo v1, "apn_user"
 
     const/16 v2, 0x130
 
     aput-object v1, v0, v2
 
-    .line 890
-    const-string/jumbo v1, "ethernet_mac_address"
+    .line 889
+    const-string/jumbo v1, "apn_password"
 
     const/16 v2, 0x131
 
     aput-object v1, v0, v2
 
-    .line 891
-    const-string/jumbo v1, "serial_number"
+    .line 890
+    const-string/jumbo v1, "apn_server"
 
     const/16 v2, 0x132
 
     aput-object v1, v0, v2
 
-    .line 892
-    const-string/jumbo v1, "up_time"
+    .line 891
+    const-string/jumbo v1, "apn_mmsc"
 
     const/16 v2, 0x133
 
     aput-object v1, v0, v2
 
-    .line 893
-    const-string/jumbo v1, "wimax_mac_address"
+    .line 892
+    const-string/jumbo v1, "apn_mms_proxy"
 
     const/16 v2, 0x134
 
     aput-object v1, v0, v2
 
-    .line 894
-    const-string/jumbo v1, "sysscope_status"
+    .line 893
+    const-string/jumbo v1, "apn_mms_port"
 
     const/16 v2, 0x135
 
     aput-object v1, v0, v2
 
-    .line 895
-    const-string/jumbo v1, "installment_balance"
+    .line 894
+    const-string/jumbo v1, "apn_mcc"
 
     const/16 v2, 0x136
 
     aput-object v1, v0, v2
 
-    .line 896
-    const-string/jumbo v1, "operator_name"
+    .line 895
+    const-string/jumbo v1, "apn_mnc"
 
     const/16 v2, 0x137
 
     aput-object v1, v0, v2
 
-    .line 897
-    const-string/jumbo v1, "signal_strength"
+    .line 896
+    const-string/jumbo v1, "auth_type"
 
     const/16 v2, 0x138
 
     aput-object v1, v0, v2
 
-    .line 898
-    const-string/jumbo v1, "network_type"
+    .line 897
+    const-string/jumbo v1, "apn_type"
 
     const/16 v2, 0x139
 
     aput-object v1, v0, v2
 
-    .line 899
-    const-string/jumbo v1, "latest_area_info"
+    .line 898
+    const-string/jumbo v1, "apn_protocol"
 
     const/16 v2, 0x13a
 
     aput-object v1, v0, v2
 
-    .line 900
-    const-string/jumbo v1, "service_state"
+    .line 899
+    const-string/jumbo v1, "apn_roaming_protocol"
 
     const/16 v2, 0x13b
 
     aput-object v1, v0, v2
 
-    .line 901
-    const-string/jumbo v1, "roaming_state"
+    .line 900
+    const-string/jumbo v1, "carrier_enabled"
 
     const/16 v2, 0x13c
 
     aput-object v1, v0, v2
 
-    .line 902
-    const-string/jumbo v1, "data_state"
+    .line 901
+    const-string/jumbo v1, "bearer_multi"
 
     const/16 v2, 0x13d
 
     aput-object v1, v0, v2
 
-    .line 903
-    const-string/jumbo v1, "mmsc_server_acg"
+    .line 902
+    const-string/jumbo v1, "mvno_type"
 
     const/16 v2, 0x13e
 
     aput-object v1, v0, v2
 
-    .line 904
-    const-string/jumbo v1, "sim_lock_status_kddi"
+    .line 903
+    const-string/jumbo v1, "mvno_match_data"
 
     const/16 v2, 0x13f
 
     aput-object v1, v0, v2
 
     .line 905
-    const-string/jumbo v1, "sim_state_status"
+    const-string/jumbo v1, "sim_status"
 
     const/16 v2, 0x140
 
     aput-object v1, v0, v2
 
     .line 906
-    const-string/jumbo v1, "sim_state_code"
+    const-string/jumbo v1, "imei_info"
 
     const/16 v2, 0x141
 
     aput-object v1, v0, v2
 
     .line 907
-    const-string/jumbo v1, "meid_number"
+    const-string/jumbo v1, "wifi_ip_address"
 
     const/16 v2, 0x142
 
     aput-object v1, v0, v2
 
     .line 908
-    const-string/jumbo v1, "imei"
+    const-string/jumbo v1, "wifi_mac_address"
 
     const/16 v2, 0x143
 
     aput-object v1, v0, v2
 
     .line 909
-    const-string/jumbo v1, "imei_sv"
+    const-string/jumbo v1, "bt_address"
 
     const/16 v2, 0x144
 
     aput-object v1, v0, v2
 
     .line 910
-    const-string/jumbo v1, "_imei0"
+    const-string/jumbo v1, "ethernet_mac_address"
 
     const/16 v2, 0x145
 
     aput-object v1, v0, v2
 
     .line 911
-    const-string/jumbo v1, "_imei_sv0"
+    const-string/jumbo v1, "serial_number"
 
     const/16 v2, 0x146
 
     aput-object v1, v0, v2
 
     .line 912
-    const-string/jumbo v1, "_imei1"
+    const-string/jumbo v1, "up_time"
 
     const/16 v2, 0x147
 
     aput-object v1, v0, v2
 
     .line 913
-    const-string/jumbo v1, "_imei_sv1"
+    const-string/jumbo v1, "wimax_mac_address"
 
     const/16 v2, 0x148
 
     aput-object v1, v0, v2
 
     .line 914
-    const-string/jumbo v1, "icc_id"
+    const-string/jumbo v1, "sysscope_status"
 
     const/16 v2, 0x149
 
     aput-object v1, v0, v2
 
     .line 915
-    const-string/jumbo v1, "ims_reg"
+    const-string/jumbo v1, "installment_balance"
 
     const/16 v2, 0x14a
+
+    aput-object v1, v0, v2
+
+    .line 916
+    const-string/jumbo v1, "operator_name"
+
+    const/16 v2, 0x14b
+
+    aput-object v1, v0, v2
+
+    .line 917
+    const-string/jumbo v1, "signal_strength"
+
+    const/16 v2, 0x14c
+
+    aput-object v1, v0, v2
+
+    .line 918
+    const-string/jumbo v1, "network_type"
+
+    const/16 v2, 0x14d
+
+    aput-object v1, v0, v2
+
+    .line 919
+    const-string/jumbo v1, "latest_area_info"
+
+    const/16 v2, 0x14e
+
+    aput-object v1, v0, v2
+
+    .line 920
+    const-string/jumbo v1, "service_state"
+
+    const/16 v2, 0x14f
+
+    aput-object v1, v0, v2
+
+    .line 921
+    const-string/jumbo v1, "roaming_state"
+
+    const/16 v2, 0x150
+
+    aput-object v1, v0, v2
+
+    .line 922
+    const-string/jumbo v1, "data_state"
+
+    const/16 v2, 0x151
+
+    aput-object v1, v0, v2
+
+    .line 923
+    const-string/jumbo v1, "mmsc_server_acg"
+
+    const/16 v2, 0x152
+
+    aput-object v1, v0, v2
+
+    .line 924
+    const-string/jumbo v1, "sim_lock_status_kddi"
+
+    const/16 v2, 0x153
+
+    aput-object v1, v0, v2
+
+    .line 925
+    const-string/jumbo v1, "sim_state_status"
+
+    const/16 v2, 0x154
+
+    aput-object v1, v0, v2
+
+    .line 926
+    const-string/jumbo v1, "sim_state_code"
+
+    const/16 v2, 0x155
+
+    aput-object v1, v0, v2
+
+    .line 927
+    const-string/jumbo v1, "meid_number"
+
+    const/16 v2, 0x156
+
+    aput-object v1, v0, v2
+
+    .line 928
+    const-string/jumbo v1, "imei"
+
+    const/16 v2, 0x157
+
+    aput-object v1, v0, v2
+
+    .line 929
+    const-string/jumbo v1, "imei_sv"
+
+    const/16 v2, 0x158
+
+    aput-object v1, v0, v2
+
+    .line 930
+    const-string/jumbo v1, "_imei0"
+
+    const/16 v2, 0x159
+
+    aput-object v1, v0, v2
+
+    .line 931
+    const-string/jumbo v1, "_imei_sv0"
+
+    const/16 v2, 0x15a
+
+    aput-object v1, v0, v2
+
+    .line 932
+    const-string/jumbo v1, "_imei1"
+
+    const/16 v2, 0x15b
+
+    aput-object v1, v0, v2
+
+    .line 933
+    const-string/jumbo v1, "_imei_sv1"
+
+    const/16 v2, 0x15c
+
+    aput-object v1, v0, v2
+
+    .line 934
+    const-string/jumbo v1, "icc_id"
+
+    const/16 v2, 0x15d
+
+    aput-object v1, v0, v2
+
+    .line 935
+    const-string/jumbo v1, "ims_reg"
+
+    const/16 v2, 0x15e
 
     aput-object v1, v0, v2
 
@@ -4962,16 +5102,16 @@
     .param p2, "service"    # Landroid/content/pm/IPersonaPolicyManager;
 
     .prologue
-    .line 943
+    .line 963
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 944
+    .line 964
     iput-object p2, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
-    .line 945
+    .line 965
     iput-object p1, p0, Landroid/os/PersonaPolicyManager;->mContext:Landroid/content/Context;
 
-    .line 943
+    .line 963
     return-void
 .end method
 
@@ -4988,13 +5128,13 @@
     .end annotation
 
     .prologue
-    .line 934
+    .line 954
     .local p0, "outKeySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
     sget-object v0, Landroid/os/PersonaPolicyManager;->CLONE_TO_KNOX_PROFILE:Ljava/util/Set;
 
     invoke-interface {p0, v0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
-    .line 933
+    .line 953
     return-void
 .end method
 
@@ -5002,7 +5142,7 @@
     .locals 1
 
     .prologue
-    .line 920
+    .line 940
     sget-object v0, Landroid/os/PersonaPolicyManager;->SETTINGS_FOR_COM:[Ljava/lang/String;
 
     return-object v0
@@ -5025,13 +5165,13 @@
     .end annotation
 
     .prologue
-    .line 1612
+    .line 1632
     .local p1, "blockedComp":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1613
+    .line 1633
     .local v1, "compArrary":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ComponentName;>;"
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -5051,7 +5191,7 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 1614
+    .line 1634
     .local v2, "policy":Ljava/lang/String;
     const-string/jumbo v4, "/"
 
@@ -5059,7 +5199,7 @@
 
     move-result-object v0
 
-    .line 1615
+    .line 1635
     .local v0, "comp":[Ljava/lang/String;
     new-instance v4, Landroid/content/ComponentName;
 
@@ -5077,7 +5217,7 @@
 
     goto :goto_0
 
-    .line 1617
+    .line 1637
     .end local v0    # "comp":[Ljava/lang/String;
     .end local v2    # "policy":Ljava/lang/String;
     :cond_0
@@ -5097,13 +5237,13 @@
     .end annotation
 
     .prologue
-    .line 925
+    .line 945
     .local p0, "outKeySet":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     sget-object v0, Landroid/os/PersonaPolicyManager;->SHARE_WITH_KNOX:Ljava/util/HashSet;
 
     invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->addAll(Ljava/util/Collection;)Z
 
-    .line 927
+    .line 947
     const/4 v0, 0x0
 
     invoke-static {v0}, Lcom/samsung/android/knox/SemPersonaManager;->isKioskModeEnabled(Landroid/content/Context;)Z
@@ -5112,12 +5252,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 928
+    .line 948
     sget-object v0, Landroid/os/PersonaPolicyManager;->EXCLUDE_IN_COM:Ljava/util/HashSet;
 
     invoke-virtual {p0, v0}, Ljava/util/AbstractSet;->removeAll(Ljava/util/Collection;)Z
 
-    .line 924
+    .line 944
     :cond_0
     return-void
 .end method
@@ -5135,13 +5275,13 @@
     .end annotation
 
     .prologue
-    .line 939
+    .line 959
     .local p0, "outKeySet":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     sget-object v0, Landroid/os/PersonaPolicyManager;->SHARE_WITH_KNOX_TO_SECURE:Ljava/util/HashSet;
 
     invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->addAll(Ljava/util/Collection;)Z
 
-    .line 938
+    .line 958
     return-void
 .end method
 
@@ -5154,13 +5294,13 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1392
+    .line 1412
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1393
+    .line 1413
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1, p1}, Landroid/content/pm/IPersonaPolicyManager;->addLockOnImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
@@ -5169,7 +5309,7 @@
 
     return-object v1
 
-    .line 1395
+    .line 1415
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5179,15 +5319,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1400
+    .line 1420
     :goto_0
     return-object v3
 
-    .line 1397
+    .line 1417
     :catch_0
     move-exception v0
 
-    .line 1398
+    .line 1418
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5203,12 +5343,12 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 1668
+    .line 1688
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1670
+    .line 1690
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5216,16 +5356,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1667
+    .line 1687
     :cond_0
     :goto_0
     return-void
 
-    .line 1671
+    .line 1691
     :catch_0
     move-exception v0
 
-    .line 1672
+    .line 1692
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5241,12 +5381,12 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 1646
+    .line 1666
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1648
+    .line 1668
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5254,16 +5394,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1645
+    .line 1665
     :cond_0
     :goto_0
     return-void
 
-    .line 1649
+    .line 1669
     :catch_0
     move-exception v0
 
-    .line 1650
+    .line 1670
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5279,7 +5419,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1264
+    .line 1284
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5291,11 +5431,11 @@
 
     return v1
 
-    .line 1265
+    .line 1285
     :catch_0
     move-exception v0
 
-    .line 1266
+    .line 1286
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5319,7 +5459,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1268
+    .line 1288
     const/4 v1, 0x1
 
     return v1
@@ -5330,7 +5470,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1207
+    .line 1227
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5342,11 +5482,11 @@
 
     return v1
 
-    .line 1208
+    .line 1228
     :catch_0
     move-exception v0
 
-    .line 1209
+    .line 1229
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5370,7 +5510,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1211
+    .line 1231
     const/4 v1, 0x0
 
     return v1
@@ -5381,7 +5521,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1112
+    .line 1132
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5393,11 +5533,11 @@
 
     return v1
 
-    .line 1113
+    .line 1133
     :catch_0
     move-exception v0
 
-    .line 1114
+    .line 1134
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5421,7 +5561,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1116
+    .line 1136
     const/4 v1, 0x0
 
     return v1
@@ -5432,7 +5572,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1036
+    .line 1056
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5444,11 +5584,11 @@
 
     return v1
 
-    .line 1037
+    .line 1057
     :catch_0
     move-exception v0
 
-    .line 1038
+    .line 1058
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5472,7 +5612,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1040
+    .line 1060
     const/4 v1, 0x1
 
     return v1
@@ -5483,7 +5623,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1093
+    .line 1113
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5495,11 +5635,11 @@
 
     return v1
 
-    .line 1094
+    .line 1114
     :catch_0
     move-exception v0
 
-    .line 1095
+    .line 1115
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5523,7 +5663,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1097
+    .line 1117
     const/4 v1, 0x1
 
     return v1
@@ -5534,7 +5674,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1074
+    .line 1094
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5546,11 +5686,11 @@
 
     return v1
 
-    .line 1075
+    .line 1095
     :catch_0
     move-exception v0
 
-    .line 1076
+    .line 1096
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5574,7 +5714,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1078
+    .line 1098
     const/4 v1, 0x1
 
     return v1
@@ -5585,7 +5725,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1150
+    .line 1170
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5597,11 +5737,11 @@
 
     return v1
 
-    .line 1151
+    .line 1171
     :catch_0
     move-exception v0
 
-    .line 1152
+    .line 1172
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5625,7 +5765,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1154
+    .line 1174
     const/4 v1, 0x0
 
     return v1
@@ -5636,7 +5776,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1340
+    .line 1360
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5648,11 +5788,11 @@
 
     return v1
 
-    .line 1341
+    .line 1361
     :catch_0
     move-exception v0
 
-    .line 1342
+    .line 1362
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5676,7 +5816,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1344
+    .line 1364
     const/4 v1, 0x0
 
     return v1
@@ -5687,7 +5827,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1321
+    .line 1341
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5699,11 +5839,11 @@
 
     return v1
 
-    .line 1322
+    .line 1342
     :catch_0
     move-exception v0
 
-    .line 1323
+    .line 1343
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5727,7 +5867,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1325
+    .line 1345
     const/4 v1, 0x0
 
     return v1
@@ -5738,7 +5878,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1302
+    .line 1322
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5750,11 +5890,11 @@
 
     return v1
 
-    .line 1303
+    .line 1323
     :catch_0
     move-exception v0
 
-    .line 1304
+    .line 1324
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5778,7 +5918,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1306
+    .line 1326
     const/4 v1, 0x1
 
     return v1
@@ -5789,7 +5929,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1169
+    .line 1189
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5801,11 +5941,11 @@
 
     return v1
 
-    .line 1170
+    .line 1190
     :catch_0
     move-exception v0
 
-    .line 1171
+    .line 1191
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5829,7 +5969,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1173
+    .line 1193
     const/4 v1, 0x0
 
     return v1
@@ -5840,7 +5980,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1131
+    .line 1151
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5852,11 +5992,11 @@
 
     return v1
 
-    .line 1132
+    .line 1152
     :catch_0
     move-exception v0
 
-    .line 1133
+    .line 1153
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5880,7 +6020,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1135
+    .line 1155
     const/4 v1, 0x1
 
     return v1
@@ -5891,7 +6031,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1283
+    .line 1303
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5903,11 +6043,11 @@
 
     return v1
 
-    .line 1284
+    .line 1304
     :catch_0
     move-exception v0
 
-    .line 1285
+    .line 1305
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5931,7 +6071,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1287
+    .line 1307
     const/4 v1, 0x1
 
     return v1
@@ -5942,7 +6082,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1017
+    .line 1037
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -5954,11 +6094,11 @@
 
     return v1
 
-    .line 1018
+    .line 1038
     :catch_0
     move-exception v0
 
-    .line 1019
+    .line 1039
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -5982,7 +6122,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1021
+    .line 1041
     const/4 v1, 0x0
 
     return v1
@@ -5993,7 +6133,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1055
+    .line 1075
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6005,11 +6145,11 @@
 
     return v1
 
-    .line 1056
+    .line 1076
     :catch_0
     move-exception v0
 
-    .line 1057
+    .line 1077
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6033,7 +6173,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1059
+    .line 1079
     const/4 v1, 0x0
 
     return v1
@@ -6044,7 +6184,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 979
+    .line 999
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6056,11 +6196,11 @@
 
     return v1
 
-    .line 980
+    .line 1000
     :catch_0
     move-exception v0
 
-    .line 981
+    .line 1001
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6084,7 +6224,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 983
+    .line 1003
     const/4 v1, 0x1
 
     return v1
@@ -6105,30 +6245,30 @@
     .end annotation
 
     .prologue
-    .line 1589
+    .line 1609
     sget-object v3, Landroid/os/PersonaPolicyManager;->EXCLUDE_FROM_SHARE_COMMON:Ljava/util/ArrayList;
 
-    .line 1590
+    .line 1610
     .local v3, "ret":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ComponentName;>;"
     if-eqz p1, :cond_2
 
-    .line 1591
+    .line 1611
     sget-object v5, Landroid/os/PersonaPolicyManager;->EXCLUDE_FROM_SHARE_FROM_KNOX:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1596
+    .line 1616
     :goto_0
     if-eqz p2, :cond_1
 
-    .line 1597
+    .line 1617
     iget-object v5, p0, Landroid/os/PersonaPolicyManager;->mContext:Landroid/content/Context;
 
     invoke-static {v5}, Lcom/samsung/android/knox/SemPersonaManager;->getSecureFolderId(Landroid/content/Context;)I
 
     move-result v4
 
-    .line 1598
+    .line 1618
     .local v4, "sfId":I
     const-string/jumbo v5, "blockedcompcommon"
 
@@ -6136,7 +6276,7 @@
 
     move-result-object v0
 
-    .line 1599
+    .line 1619
     .local v0, "blockedCompCommon":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     if-eqz v0, :cond_0
 
@@ -6152,18 +6292,18 @@
 
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1600
+    .line 1620
     :cond_0
     if-eqz p1, :cond_3
 
-    .line 1601
+    .line 1621
     const-string/jumbo v5, "blockedcompsecurefolder"
 
     invoke-virtual {p0, v5, v4}, Landroid/os/PersonaPolicyManager;->getSecureFolderPolicy(Ljava/lang/String;I)Ljava/util/List;
 
     move-result-object v2
 
-    .line 1602
+    .line 1622
     .local v2, "blockedCompSecurefolder":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     if-eqz v2, :cond_1
 
@@ -6179,7 +6319,7 @@
 
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1608
+    .line 1628
     .end local v0    # "blockedCompCommon":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     .end local v2    # "blockedCompSecurefolder":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     .end local v4    # "sfId":I
@@ -6187,7 +6327,7 @@
     :goto_1
     return-object v3
 
-    .line 1593
+    .line 1613
     :cond_2
     sget-object v5, Landroid/os/PersonaPolicyManager;->EXCLUDE_FROM_SHARE_FROM_OWNER:Ljava/util/ArrayList;
 
@@ -6195,7 +6335,7 @@
 
     goto :goto_0
 
-    .line 1604
+    .line 1624
     .restart local v0    # "blockedCompCommon":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     .restart local v4    # "sfId":I
     :cond_3
@@ -6205,7 +6345,7 @@
 
     move-result-object v1
 
-    .line 1605
+    .line 1625
     .local v1, "blockedCompOwner":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     if-eqz v1, :cond_1
 
@@ -6229,7 +6369,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1226
+    .line 1246
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6241,11 +6381,11 @@
 
     return v1
 
-    .line 1227
+    .line 1247
     :catch_0
     move-exception v0
 
-    .line 1228
+    .line 1248
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6269,7 +6409,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1230
+    .line 1250
     const/4 v1, 0x1
 
     return v1
@@ -6280,7 +6420,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1188
+    .line 1208
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6292,11 +6432,11 @@
 
     return v1
 
-    .line 1189
+    .line 1209
     :catch_0
     move-exception v0
 
-    .line 1190
+    .line 1210
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6320,7 +6460,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1192
+    .line 1212
     const/4 v1, 0x1
 
     return v1
@@ -6331,7 +6471,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 960
+    .line 980
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6343,11 +6483,11 @@
 
     return v1
 
-    .line 961
+    .line 981
     :catch_0
     move-exception v0
 
-    .line 962
+    .line 982
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6371,7 +6511,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 964
+    .line 984
     const/4 v1, 0x1
 
     return v1
@@ -6382,7 +6522,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1245
+    .line 1265
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6394,11 +6534,11 @@
 
     return v1
 
-    .line 1246
+    .line 1266
     :catch_0
     move-exception v0
 
-    .line 1247
+    .line 1267
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6422,7 +6562,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1249
+    .line 1269
     const/4 v1, 0x1
 
     return v1
@@ -6436,13 +6576,13 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1406
+    .line 1426
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1407
+    .line 1427
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1, p1, p2}, Landroid/content/pm/IPersonaPolicyManager;->getRCPDataPolicy(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -6451,7 +6591,7 @@
 
     return-object v1
 
-    .line 1409
+    .line 1429
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6461,15 +6601,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1414
+    .line 1434
     :goto_0
     return-object v3
 
-    .line 1411
+    .line 1431
     :catch_0
     move-exception v0
 
-    .line 1412
+    .line 1432
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6489,13 +6629,13 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1430
+    .line 1450
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1431
+    .line 1451
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1, p1, p2, p3}, Landroid/content/pm/IPersonaPolicyManager;->getRCPDataPolicyForUser(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -6504,7 +6644,7 @@
 
     return-object v1
 
-    .line 1433
+    .line 1453
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6514,15 +6654,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1438
+    .line 1458
     :goto_0
     return-object v3
 
-    .line 1435
+    .line 1455
     :catch_0
     move-exception v0
 
-    .line 1436
+    .line 1456
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6541,13 +6681,13 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1445
+    .line 1465
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1446
+    .line 1466
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1, p1, p2}, Landroid/content/pm/IPersonaPolicyManager;->getRCPNotificationPolicy(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -6556,7 +6696,7 @@
 
     return-object v1
 
-    .line 1448
+    .line 1468
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6566,15 +6706,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1453
+    .line 1473
     :goto_0
     return-object v3
 
-    .line 1450
+    .line 1470
     :catch_0
     move-exception v0
 
-    .line 1451
+    .line 1471
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6604,12 +6744,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1564
+    .line 1584
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1566
+    .line 1586
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6621,11 +6761,11 @@
 
     return-object v1
 
-    .line 1567
+    .line 1587
     :catch_0
     move-exception v0
 
-    .line 1568
+    .line 1588
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6633,7 +6773,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1571
+    .line 1591
     .end local v0    # "re":Landroid/os/RemoteException;
     :cond_0
     return-object v3
@@ -6654,12 +6794,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1634
+    .line 1654
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1636
+    .line 1656
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6671,11 +6811,11 @@
 
     return-object v1
 
-    .line 1637
+    .line 1657
     :catch_0
     move-exception v0
 
-    .line 1638
+    .line 1658
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6683,7 +6823,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1641
+    .line 1661
     .end local v0    # "re":Landroid/os/RemoteException;
     :cond_0
     return-object v3
@@ -6694,7 +6834,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 998
+    .line 1018
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6706,11 +6846,11 @@
 
     return v1
 
-    .line 999
+    .line 1019
     :catch_0
     move-exception v0
 
-    .line 1000
+    .line 1020
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6734,7 +6874,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1002
+    .line 1022
     const/4 v1, 0x1
 
     return v1
@@ -6745,7 +6885,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1507
+    .line 1527
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6757,11 +6897,11 @@
 
     return v1
 
-    .line 1508
+    .line 1528
     :catch_0
     move-exception v0
 
-    .line 1509
+    .line 1529
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6785,7 +6925,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1511
+    .line 1531
     const/4 v1, 0x1
 
     return v1
@@ -6796,7 +6936,7 @@
     .param p1, "appName"    # Ljava/lang/String;
 
     .prologue
-    .line 1492
+    .line 1512
     const-string/jumbo v0, "all_contacts"
 
     return-object v0
@@ -6817,12 +6957,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1622
+    .line 1642
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1624
+    .line 1644
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6834,11 +6974,11 @@
 
     return-object v1
 
-    .line 1625
+    .line 1645
     :catch_0
     move-exception v0
 
-    .line 1626
+    .line 1646
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6846,7 +6986,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1629
+    .line 1649
     .end local v0    # "re":Landroid/os/RemoteException;
     :cond_0
     return-object v3
@@ -6856,13 +6996,13 @@
     .locals 3
 
     .prologue
-    .line 1350
+    .line 1370
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1351
+    .line 1371
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1}, Landroid/content/pm/IPersonaPolicyManager;->isBadgeRequired()Z
@@ -6871,7 +7011,7 @@
 
     return v1
 
-    .line 1353
+    .line 1373
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6881,17 +7021,17 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1358
+    .line 1378
     :goto_0
     const/4 v1, 0x0
 
     return v1
 
-    .line 1355
+    .line 1375
     :catch_0
     move-exception v0
 
-    .line 1356
+    .line 1376
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6907,13 +7047,13 @@
     .param p1, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 1364
+    .line 1384
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1365
+    .line 1385
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1, p1}, Landroid/content/pm/IPersonaPolicyManager;->isBadgeRequiredFromOwner(Ljava/lang/String;)Z
@@ -6922,7 +7062,7 @@
 
     return v1
 
-    .line 1367
+    .line 1387
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6932,17 +7072,17 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1372
+    .line 1392
     :goto_0
     const/4 v1, 0x0
 
     return v1
 
-    .line 1369
+    .line 1389
     :catch_0
     move-exception v0
 
-    .line 1370
+    .line 1390
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6958,12 +7098,12 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 1528
+    .line 1548
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1530
+    .line 1550
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -6975,11 +7115,11 @@
 
     return v1
 
-    .line 1531
+    .line 1551
     :catch_0
     move-exception v0
 
-    .line 1532
+    .line 1552
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -6987,7 +7127,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1535
+    .line 1555
     .end local v0    # "re":Landroid/os/RemoteException;
     :cond_0
     const/4 v1, 0x0
@@ -7000,12 +7140,12 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 1540
+    .line 1560
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1542
+    .line 1562
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7017,11 +7157,11 @@
 
     return v1
 
-    .line 1543
+    .line 1563
     :catch_0
     move-exception v0
 
-    .line 1544
+    .line 1564
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7029,7 +7169,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1547
+    .line 1567
     .end local v0    # "re":Landroid/os/RemoteException;
     :cond_0
     const/4 v1, 0x0
@@ -7042,12 +7182,12 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 1552
+    .line 1572
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1554
+    .line 1574
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7059,11 +7199,11 @@
 
     return v1
 
-    .line 1555
+    .line 1575
     :catch_0
     move-exception v0
 
-    .line 1556
+    .line 1576
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7071,7 +7211,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1559
+    .line 1579
     .end local v0    # "re":Landroid/os/RemoteException;
     :cond_0
     const/4 v1, 0x0
@@ -7084,12 +7224,12 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 1516
+    .line 1536
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1518
+    .line 1538
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7101,11 +7241,11 @@
 
     return v1
 
-    .line 1519
+    .line 1539
     :catch_0
     move-exception v0
 
-    .line 1520
+    .line 1540
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7113,7 +7253,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1523
+    .line 1543
     .end local v0    # "re":Landroid/os/RemoteException;
     :cond_0
     const/4 v1, 0x0
@@ -7125,22 +7265,22 @@
     .locals 3
 
     .prologue
-    .line 1378
+    .line 1398
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1379
+    .line 1399
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1}, Landroid/content/pm/IPersonaPolicyManager;->registerReceivers()V
 
-    .line 1376
+    .line 1396
     :goto_0
     return-void
 
-    .line 1381
+    .line 1401
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7152,11 +7292,11 @@
 
     goto :goto_0
 
-    .line 1383
+    .line 1403
     :catch_0
     move-exception v0
 
-    .line 1384
+    .line 1404
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7172,12 +7312,12 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 1679
+    .line 1699
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1681
+    .line 1701
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7185,16 +7325,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1678
+    .line 1698
     :cond_0
     :goto_0
     return-void
 
-    .line 1682
+    .line 1702
     :catch_0
     move-exception v0
 
-    .line 1683
+    .line 1703
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7210,12 +7350,12 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 1657
+    .line 1677
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1659
+    .line 1679
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7223,16 +7363,16 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1656
+    .line 1676
     :cond_0
     :goto_0
     return-void
 
-    .line 1660
+    .line 1680
     :catch_0
     move-exception v0
 
-    .line 1661
+    .line 1681
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7249,7 +7389,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1255
+    .line 1275
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7257,15 +7397,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1253
+    .line 1273
     :goto_0
     return-void
 
-    .line 1256
+    .line 1276
     :catch_0
     move-exception v0
 
-    .line 1257
+    .line 1277
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7298,7 +7438,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1198
+    .line 1218
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7306,15 +7446,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1196
+    .line 1216
     :goto_0
     return-void
 
-    .line 1199
+    .line 1219
     :catch_0
     move-exception v0
 
-    .line 1200
+    .line 1220
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7347,7 +7487,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1103
+    .line 1123
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7355,15 +7495,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1101
+    .line 1121
     :goto_0
     return-void
 
-    .line 1104
+    .line 1124
     :catch_0
     move-exception v0
 
-    .line 1105
+    .line 1125
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7396,7 +7536,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1027
+    .line 1047
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7404,15 +7544,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1025
+    .line 1045
     :goto_0
     return-void
 
-    .line 1028
+    .line 1048
     :catch_0
     move-exception v0
 
-    .line 1029
+    .line 1049
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7445,7 +7585,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1084
+    .line 1104
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7453,15 +7593,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1082
+    .line 1102
     :goto_0
     return-void
 
-    .line 1085
+    .line 1105
     :catch_0
     move-exception v0
 
-    .line 1086
+    .line 1106
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7494,7 +7634,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1065
+    .line 1085
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7502,15 +7642,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1063
+    .line 1083
     :goto_0
     return-void
 
-    .line 1066
+    .line 1086
     :catch_0
     move-exception v0
 
-    .line 1067
+    .line 1087
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7543,7 +7683,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1141
+    .line 1161
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7551,15 +7691,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1139
+    .line 1159
     :goto_0
     return-void
 
-    .line 1142
+    .line 1162
     :catch_0
     move-exception v0
 
-    .line 1143
+    .line 1163
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7592,7 +7732,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1331
+    .line 1351
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7600,15 +7740,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1329
+    .line 1349
     :goto_0
     return-void
 
-    .line 1332
+    .line 1352
     :catch_0
     move-exception v0
 
-    .line 1333
+    .line 1353
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7641,7 +7781,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1312
+    .line 1332
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7649,15 +7789,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1310
+    .line 1330
     :goto_0
     return-void
 
-    .line 1313
+    .line 1333
     :catch_0
     move-exception v0
 
-    .line 1314
+    .line 1334
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7690,7 +7830,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1293
+    .line 1313
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7698,15 +7838,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1291
+    .line 1311
     :goto_0
     return-void
 
-    .line 1294
+    .line 1314
     :catch_0
     move-exception v0
 
-    .line 1295
+    .line 1315
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7739,7 +7879,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1160
+    .line 1180
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7747,15 +7887,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1158
+    .line 1178
     :goto_0
     return-void
 
-    .line 1161
+    .line 1181
     :catch_0
     move-exception v0
 
-    .line 1162
+    .line 1182
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7788,7 +7928,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1122
+    .line 1142
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7796,15 +7936,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1120
+    .line 1140
     :goto_0
     return-void
 
-    .line 1123
+    .line 1143
     :catch_0
     move-exception v0
 
-    .line 1124
+    .line 1144
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7837,7 +7977,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1274
+    .line 1294
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7845,15 +7985,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1272
+    .line 1292
     :goto_0
     return-void
 
-    .line 1275
+    .line 1295
     :catch_0
     move-exception v0
 
-    .line 1276
+    .line 1296
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7886,7 +8026,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1008
+    .line 1028
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7894,15 +8034,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1006
+    .line 1026
     :goto_0
     return-void
 
-    .line 1009
+    .line 1029
     :catch_0
     move-exception v0
 
-    .line 1010
+    .line 1030
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7935,7 +8075,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1046
+    .line 1066
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7943,15 +8083,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1044
+    .line 1064
     :goto_0
     return-void
 
-    .line 1047
+    .line 1067
     :catch_0
     move-exception v0
 
-    .line 1048
+    .line 1068
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -7984,7 +8124,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 970
+    .line 990
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -7992,15 +8132,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 968
+    .line 988
     :goto_0
     return-void
 
-    .line 971
+    .line 991
     :catch_0
     move-exception v0
 
-    .line 972
+    .line 992
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8033,7 +8173,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1217
+    .line 1237
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -8041,15 +8181,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1215
+    .line 1235
     :goto_0
     return-void
 
-    .line 1218
+    .line 1238
     :catch_0
     move-exception v0
 
-    .line 1219
+    .line 1239
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8082,7 +8222,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1179
+    .line 1199
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -8090,15 +8230,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1177
+    .line 1197
     :goto_0
     return-void
 
-    .line 1180
+    .line 1200
     :catch_0
     move-exception v0
 
-    .line 1181
+    .line 1201
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8131,7 +8271,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 951
+    .line 971
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -8139,15 +8279,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 949
+    .line 969
     :goto_0
     return-void
 
-    .line 952
+    .line 972
     :catch_0
     move-exception v0
 
-    .line 953
+    .line 973
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8180,7 +8320,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1236
+    .line 1256
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -8188,15 +8328,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1234
+    .line 1254
     :goto_0
     return-void
 
-    .line 1237
+    .line 1257
     :catch_0
     move-exception v0
 
-    .line 1238
+    .line 1258
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8230,13 +8370,13 @@
     .param p3, "value"    # Ljava/lang/String;
 
     .prologue
-    .line 1459
+    .line 1479
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1460
+    .line 1480
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1, p1, p2, p3}, Landroid/content/pm/IPersonaPolicyManager;->setRCPDataPolicy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
@@ -8245,7 +8385,7 @@
 
     return v1
 
-    .line 1462
+    .line 1482
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8255,17 +8395,17 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1467
+    .line 1487
     :goto_0
     const/4 v1, 0x0
 
     return v1
 
-    .line 1464
+    .line 1484
     :catch_0
     move-exception v0
 
-    .line 1465
+    .line 1485
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8283,13 +8423,13 @@
     .param p3, "value"    # Ljava/lang/String;
 
     .prologue
-    .line 1473
+    .line 1493
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1474
+    .line 1494
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     invoke-interface {v1, p1, p2, p3}, Landroid/content/pm/IPersonaPolicyManager;->setRCPNotificationPolicy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
@@ -8298,7 +8438,7 @@
 
     return v1
 
-    .line 1476
+    .line 1496
     :cond_0
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8308,17 +8448,17 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1481
+    .line 1501
     :goto_0
     const/4 v1, 0x0
 
     return v1
 
-    .line 1478
+    .line 1498
     :catch_0
     move-exception v0
 
-    .line 1479
+    .line 1499
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8345,13 +8485,13 @@
     .end annotation
 
     .prologue
-    .line 1576
+    .line 1596
     .local p2, "pkgList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
     if-eqz v1, :cond_0
 
-    .line 1578
+    .line 1598
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -8363,11 +8503,11 @@
 
     return v1
 
-    .line 1579
+    .line 1599
     :catch_0
     move-exception v0
 
-    .line 1580
+    .line 1600
     .local v0, "re":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8375,7 +8515,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1583
+    .line 1603
     .end local v0    # "re":Landroid/os/RemoteException;
     :cond_0
     const/4 v1, 0x0
@@ -8389,7 +8529,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 989
+    .line 1009
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -8397,15 +8537,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 987
+    .line 1007
     :goto_0
     return-void
 
-    .line 990
+    .line 1010
     :catch_0
     move-exception v0
 
-    .line 991
+    .line 1011
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8438,7 +8578,7 @@
     .param p2, "value"    # Z
 
     .prologue
-    .line 1498
+    .line 1518
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaPolicyManager;->mService:Landroid/content/pm/IPersonaPolicyManager;
 
@@ -8446,15 +8586,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1496
+    .line 1516
     :goto_0
     return-void
 
-    .line 1499
+    .line 1519
     :catch_0
     move-exception v0
 
-    .line 1500
+    .line 1520
     .local v0, "e":Landroid/os/RemoteException;
     sget-object v1, Landroid/os/PersonaPolicyManager;->TAG:Ljava/lang/String;
 
@@ -8487,6 +8627,6 @@
     .param p2, "value"    # Ljava/lang/String;
 
     .prologue
-    .line 1485
+    .line 1505
     return-void
 .end method

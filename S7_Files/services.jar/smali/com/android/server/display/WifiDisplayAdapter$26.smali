@@ -36,7 +36,7 @@
     .param p4, "val$device"    # Landroid/hardware/display/SemDlnaDevice;
 
     .prologue
-    .line 2011
+    .line 2015
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iput p2, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->val$state:I
@@ -58,7 +58,7 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 2015
+    .line 2019
     :try_start_0
     iget v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->val$state:I
 
@@ -70,7 +70,7 @@
 
     if-ne v1, v4, :cond_6
 
-    .line 2016
+    .line 2020
     :cond_0
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -80,7 +80,7 @@
 
     if-nez v1, :cond_1
 
-    .line 2017
+    .line 2021
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iget-object v2, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->val$appToken:Landroid/os/IBinder;
@@ -89,7 +89,7 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/server/display/WifiDisplayAdapter;->-wrap10(Lcom/android/server/display/WifiDisplayAdapter;Landroid/os/IBinder;Landroid/hardware/display/SemDlnaDevice;)V
 
-    .line 2019
+    .line 2023
     :cond_1
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -97,7 +97,7 @@
 
     invoke-static {v1, v2}, Lcom/android/server/display/WifiDisplayAdapter;->-set0(Lcom/android/server/display/WifiDisplayAdapter;I)I
 
-    .line 2021
+    .line 2025
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v1}, Lcom/android/server/display/WifiDisplayAdapter;->-get2(Lcom/android/server/display/WifiDisplayAdapter;)I
@@ -106,7 +106,7 @@
 
     if-ne v1, v4, :cond_4
 
-    .line 2022
+    .line 2026
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v1}, Lcom/android/server/display/WifiDisplayAdapter;->-get1(Lcom/android/server/display/WifiDisplayAdapter;)Landroid/hardware/display/SemDlnaDevice;
@@ -127,7 +127,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 2025
+    .line 2029
     :cond_2
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -149,7 +149,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 2026
+    .line 2030
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v1}, Lcom/android/server/display/WifiDisplayAdapter;->-get3(Lcom/android/server/display/WifiDisplayAdapter;)Landroid/hardware/display/WifiDisplay;
@@ -168,15 +168,15 @@
 
     move-result v1
 
-    .line 2025
+    .line 2029
     if-eqz v1, :cond_3
 
-    .line 2027
+    .line 2031
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v1}, Lcom/android/server/display/WifiDisplayAdapter;->-wrap22(Lcom/android/server/display/WifiDisplayAdapter;)V
 
-    .line 2029
+    .line 2033
     :cond_3
     :goto_0
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
@@ -187,7 +187,7 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/server/display/WifiDisplayAdapter;->-wrap21(Lcom/android/server/display/WifiDisplayAdapter;II)V
 
-    .line 2030
+    .line 2034
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v1}, Lcom/android/server/display/WifiDisplayAdapter;->-get3(Lcom/android/server/display/WifiDisplayAdapter;)Landroid/hardware/display/WifiDisplay;
@@ -208,7 +208,7 @@
 
     if-nez v1, :cond_4
 
-    .line 2031
+    .line 2035
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -217,7 +217,7 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/server/display/WifiDisplayAdapter;->-set16(Lcom/android/server/display/WifiDisplayAdapter;J)J
 
-    .line 2036
+    .line 2040
     :cond_4
     :goto_1
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
@@ -228,11 +228,11 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/server/display/WifiDisplayAdapter;->-wrap20(Lcom/android/server/display/WifiDisplayAdapter;Landroid/hardware/display/SemDlnaDevice;I)V
 
-    .line 2013
+    .line 2017
     :goto_2
     return-void
 
-    .line 2023
+    .line 2027
     :cond_5
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -244,7 +244,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/server/display/WifiDisplayAdapter;->setLastConnectedDlnaDevice(Landroid/hardware/display/SemDlnaDevice;)V
 
-    .line 2024
+    .line 2028
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v1}, Lcom/android/server/display/WifiDisplayAdapter;->-wrap18(Lcom/android/server/display/WifiDisplayAdapter;)V
@@ -253,11 +253,11 @@
 
     goto :goto_0
 
-    .line 2037
+    .line 2041
     :catch_0
     move-exception v0
 
-    .line 2038
+    .line 2042
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v1, "WifiDisplayAdapter"
 
@@ -287,7 +287,7 @@
 
     goto :goto_2
 
-    .line 2033
+    .line 2037
     .end local v0    # "e":Ljava/lang/Exception;
     :cond_6
     :try_start_1
@@ -301,7 +301,7 @@
 
     if-nez v1, :cond_4
 
-    .line 2034
+    .line 2038
     :cond_7
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$26;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 

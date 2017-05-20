@@ -30,7 +30,7 @@
     .param p2, "val$off"    # Z
 
     .prologue
-    .line 1681
+    .line 1685
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iput-boolean p2, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->val$off:Z
@@ -46,7 +46,7 @@
     .locals 5
 
     .prologue
-    .line 1684
+    .line 1688
     iget-object v3, p0, Lcom/android/server/display/WifiDisplayAdapter$20;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-virtual {v3}, Lcom/android/server/display/WifiDisplayAdapter;->getContext()Landroid/content/Context;
@@ -61,7 +61,7 @@
 
     check-cast v2, Landroid/net/wifi/WifiManager;
 
-    .line 1685
+    .line 1689
     .local v2, "tWifiManager":Landroid/net/wifi/WifiManager;
     if-eqz v2, :cond_0
 
@@ -71,23 +71,23 @@
 
     if-eqz v3, :cond_0
 
-    .line 1686
+    .line 1690
     new-instance v1, Landroid/os/Message;
 
     invoke-direct {v1}, Landroid/os/Message;-><init>()V
 
-    .line 1687
+    .line 1691
     .local v1, "msg":Landroid/os/Message;
     const/16 v3, 0x12
 
     iput v3, v1, Landroid/os/Message;->what:I
 
-    .line 1688
+    .line 1692
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 1689
+    .line 1693
     .local v0, "args":Landroid/os/Bundle;
     const-string/jumbo v3, "stop"
 
@@ -95,13 +95,13 @@
 
     invoke-virtual {v0, v3, v4}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 1690
+    .line 1694
     iput-object v0, v1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 1691
+    .line 1695
     invoke-virtual {v2, v1}, Landroid/net/wifi/WifiManager;->callSECApi(Landroid/os/Message;)I
 
-    .line 1683
+    .line 1687
     .end local v0    # "args":Landroid/os/Bundle;
     .end local v1    # "msg":Landroid/os/Message;
     :cond_0

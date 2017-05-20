@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/settings/CryptKeeper;
 
     .prologue
-    .line 1519
+    .line 1520
     iput-object p1, p0, Lcom/android/settings/CryptKeeper$14;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "animation"    # Landroid/animation/ValueAnimator;
 
     .prologue
-    .line 1522
+    .line 1523
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -53,7 +53,7 @@
 
     move-result v1
 
-    .line 1523
+    .line 1524
     .local v1, "value":F
     iget-object v2, p0, Lcom/android/settings/CryptKeeper$14;->this$0:Lcom/android/settings/CryptKeeper;
 
@@ -65,7 +65,7 @@
 
     move-result-object v0
 
-    .line 1524
+    .line 1525
     .local v0, "mDotListIterator":Ljava/util/Iterator;, "Ljava/util/Iterator<Landroid/widget/ImageView;>;"
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -74,7 +74,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1525
+    .line 1526
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
@@ -85,7 +85,7 @@
 
     goto :goto_0
 
-    .line 1521
+    .line 1522
     :cond_0
     return-void
 .end method

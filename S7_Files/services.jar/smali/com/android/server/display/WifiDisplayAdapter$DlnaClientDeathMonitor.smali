@@ -30,22 +30,22 @@
     .param p2, "binder"    # Landroid/os/IBinder;
 
     .prologue
-    .line 2399
+    .line 2403
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$DlnaClientDeathMonitor;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2400
+    .line 2404
     const-string/jumbo v1, "WifiDisplayAdapter"
 
     const-string/jumbo v2, "DlnaClientDeathMonitor"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2401
+    .line 2405
     iput-object p2, p0, Lcom/android/server/display/WifiDisplayAdapter$DlnaClientDeathMonitor;->mBinder:Landroid/os/IBinder;
 
-    .line 2403
+    .line 2407
     :try_start_0
     iget-object v1, p0, Lcom/android/server/display/WifiDisplayAdapter$DlnaClientDeathMonitor;->mBinder:Landroid/os/IBinder;
 
@@ -55,15 +55,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2399
+    .line 2403
     :goto_0
     return-void
 
-    .line 2404
+    .line 2408
     :catch_0
     move-exception v0
 
-    .line 2405
+    .line 2409
     .local v0, "e":Landroid/os/RemoteException;
     invoke-virtual {p0}, Lcom/android/server/display/WifiDisplayAdapter$DlnaClientDeathMonitor;->binderDied()V
 
@@ -76,19 +76,19 @@
     .locals 2
 
     .prologue
-    .line 2411
+    .line 2415
     const-string/jumbo v0, "WifiDisplayAdapter"
 
     const-string/jumbo v1, "binderDied"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2412
+    .line 2416
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$DlnaClientDeathMonitor;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-wrap5(Lcom/android/server/display/WifiDisplayAdapter;)V
 
-    .line 2410
+    .line 2414
     return-void
 .end method
 
@@ -96,20 +96,20 @@
     .locals 2
 
     .prologue
-    .line 2416
+    .line 2420
     const-string/jumbo v0, "WifiDisplayAdapter"
 
     const-string/jumbo v1, "unlinkToDeath"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2417
+    .line 2421
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$DlnaClientDeathMonitor;->mBinder:Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, p0, v1}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
 
-    .line 2415
+    .line 2419
     return-void
 .end method

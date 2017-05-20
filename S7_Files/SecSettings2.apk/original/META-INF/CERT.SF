@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: a8sT5V0sv4u0ckHQ3shFOIlufhQ4ACyHOq0T5hu/GK0=
+SHA-256-Digest-Manifest: wRr9TudrmGv7xzoGaYryVuF5p0doD6uhTqCEYljnVaE=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/layout/display.xml
@@ -4301,7 +4301,7 @@ Name: res/drawable/sf_finger_setting_img.qmg
 SHA-256-Digest: EGrYsPC43yl8/Q1yEVckRLmtJRVoWEiSjEpiKwOlerY=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: OuG/dma5W4xI9ls7cX1nKJ+5ul9BSPIxg55ZDYZY8Yk=
+SHA-256-Digest: h21s18pGQpp3k3vG908i321rvTcLClG3Ec8ZA6ZQW4w=
 
 Name: res/drawable/motion_multi_window_anim.xml
 SHA-256-Digest: rx2/XT8nf5cJ4ihF7RVzoTUrubDXepzRTUqwe3UTaIk=

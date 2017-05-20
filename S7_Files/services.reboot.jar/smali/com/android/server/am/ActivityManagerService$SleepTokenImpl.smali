@@ -29,22 +29,22 @@
     .param p2, "tag"    # Ljava/lang/String;
 
     .prologue
-    .line 26282
+    .line 26327
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {p0}, Landroid/app/ActivityManagerInternal$SleepToken;-><init>()V
 
-    .line 26283
+    .line 26328
     iput-object p2, p0, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;->mTag:Ljava/lang/String;
 
-    .line 26284
+    .line 26329
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;->mAcquireTime:J
 
-    .line 26282
+    .line 26327
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .locals 6
 
     .prologue
-    .line 26289
+    .line 26334
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     monitor-enter v3
@@ -62,7 +62,7 @@
     :try_start_0
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->boostPriorityForLockedSection()V
 
-    .line 26290
+    .line 26335
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v2, v2, Lcom/android/server/am/ActivityManagerService;->mSleepTokens:Ljava/util/ArrayList;
@@ -73,12 +73,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 26291
+    .line 26336
     sget-boolean v2, Lcom/android/server/am/ActivityManagerService;->mEnableNetOpts:Z
 
     if-eqz v2, :cond_0
 
-    .line 26292
+    .line 26337
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v2, v2, Lcom/android/server/am/ActivityManagerService;->mStackSupervisor:Lcom/android/server/am/ActivityStackSupervisor;
@@ -87,20 +87,20 @@
 
     move-result-object v1
 
-    .line 26293
+    .line 26338
     .local v1, "stack":Lcom/android/server/am/ActivityStack;
     if-eqz v1, :cond_0
 
-    .line 26294
+    .line 26339
     invoke-virtual {v1}, Lcom/android/server/am/ActivityStack;->topRunningActivityLocked()Lcom/android/server/am/ActivityRecord;
 
     move-result-object v0
 
-    .line 26295
+    .line 26340
     .local v0, "r":Lcom/android/server/am/ActivityRecord;
     if-eqz v0, :cond_0
 
-    .line 26296
+    .line 26341
     iget-object v2, p0, Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     iget-object v4, v0, Lcom/android/server/am/ActivityRecord;->processName:Ljava/lang/String;
@@ -109,7 +109,7 @@
 
     invoke-static {v2, v5, v4}, Lcom/android/server/am/ActivityManagerService;->-wrap9(Lcom/android/server/am/ActivityManagerService;ILjava/lang/String;)V
 
-    .line 26300
+    .line 26345
     .end local v0    # "r":Lcom/android/server/am/ActivityRecord;
     .end local v1    # "stack":Lcom/android/server/am/ActivityStack;
     :cond_0
@@ -122,13 +122,13 @@
     :cond_1
     monitor-exit v3
 
-    .line 26289
+    .line 26334
     invoke-static {}, Lcom/android/server/am/ActivityManagerService;->resetPriorityAfterLockedSection()V
 
-    .line 26288
+    .line 26333
     return-void
 
-    .line 26289
+    .line 26334
     :catchall_0
     move-exception v2
 
@@ -143,7 +143,7 @@
     .locals 4
 
     .prologue
-    .line 26307
+    .line 26352
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

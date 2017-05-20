@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/am/ActivityManagerService;
 
     .prologue
-    .line 16649
+    .line 16689
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$CooldownReceiver;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,7 +42,7 @@
     .prologue
     const/4 v6, -0x1
 
-    .line 16652
+    .line 16692
     if-eqz p2, :cond_0
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -51,11 +51,11 @@
 
     if-nez v3, :cond_1
 
-    .line 16653
+    .line 16693
     :cond_0
     return-void
 
-    .line 16656
+    .line 16696
     :cond_1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -69,39 +69,39 @@
 
     if-eqz v3, :cond_6
 
-    .line 16657
+    .line 16697
     const/4 v2, -0x1
 
-    .line 16658
+    .line 16698
     .local v2, "siopLevel":I
     const/4 v0, -0x1
 
-    .line 16659
+    .line 16699
     .local v0, "battOverheatLevel":I
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v1
 
-    .line 16660
+    .line 16700
     .local v1, "mExtras":Landroid/os/Bundle;
     if-eqz v1, :cond_6
 
-    .line 16661
+    .line 16701
     const-string/jumbo v3, "check_cooldown_level"
 
     invoke-virtual {v1, v3, v6}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 16662
+    .line 16702
     if-eq v2, v6, :cond_2
 
-    .line 16663
+    .line 16703
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$CooldownReceiver;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-static {v3, v2}, Lcom/android/server/am/ActivityManagerService;->-set7(Lcom/android/server/am/ActivityManagerService;I)I
 
-    .line 16665
+    .line 16705
     :cond_2
     const-string/jumbo v3, "batt_temp_level"
 
@@ -109,15 +109,15 @@
 
     move-result v0
 
-    .line 16666
+    .line 16706
     if-eq v0, v6, :cond_3
 
-    .line 16667
+    .line 16707
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$CooldownReceiver;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-static {v3, v0}, Lcom/android/server/am/ActivityManagerService;->-set1(Lcom/android/server/am/ActivityManagerService;I)I
 
-    .line 16669
+    .line 16709
     :cond_3
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$CooldownReceiver;->this$0:Lcom/android/server/am/ActivityManagerService;
 
@@ -131,7 +131,7 @@
 
     invoke-static {v3, v4}, Lcom/android/server/am/ActivityManagerService;->-set6(Lcom/android/server/am/ActivityManagerService;I)I
 
-    .line 16670
+    .line 16710
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$CooldownReceiver;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-static {v3}, Lcom/android/server/am/ActivityManagerService;->-get10(Lcom/android/server/am/ActivityManagerService;)I
@@ -148,7 +148,7 @@
 
     if-eq v3, v6, :cond_5
 
-    .line 16671
+    .line 16711
     :cond_4
     const-string/jumbo v3, "check_cooldown_list"
 
@@ -158,7 +158,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 16672
+    .line 16712
     iget-object v3, p0, Lcom/android/server/am/ActivityManagerService$CooldownReceiver;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     invoke-static {v3}, Lcom/android/server/am/ActivityManagerService;->-get5(Lcom/android/server/am/ActivityManagerService;)Ljava/util/HashMap;
@@ -167,7 +167,7 @@
 
     invoke-virtual {v3}, Ljava/util/HashMap;->clear()V
 
-    .line 16673
+    .line 16713
     iget-object v4, p0, Lcom/android/server/am/ActivityManagerService$CooldownReceiver;->this$0:Lcom/android/server/am/ActivityManagerService;
 
     const-string/jumbo v3, "check_cooldown_list"
@@ -180,7 +180,7 @@
 
     invoke-static {v4, v3}, Lcom/android/server/am/ActivityManagerService;->-set3(Lcom/android/server/am/ActivityManagerService;Ljava/util/HashMap;)Ljava/util/HashMap;
 
-    .line 16676
+    .line 16716
     :cond_5
     const-string/jumbo v3, "checkingSIOP"
 
@@ -226,7 +226,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 16651
+    .line 16691
     .end local v0    # "battOverheatLevel":I
     .end local v1    # "mExtras":Landroid/os/Bundle;
     .end local v2    # "siopLevel":I

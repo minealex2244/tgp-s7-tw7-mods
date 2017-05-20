@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/power/PowerManagerService;
 
     .prologue
-    .line 5502
+    .line 5573
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$UserSwitchedReceiver;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -50,7 +50,7 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 5506
+    .line 5577
     const-string/jumbo v0, "PowerManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -95,16 +95,16 @@
 
     invoke-static {v0, v1}, Lcom/android/server/power/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5508
+    .line 5579
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$UserSwitchedReceiver;->this$0:Lcom/android/server/power/PowerManagerService;
 
-    invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->-get34(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->-get35(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 5509
+    .line 5580
     :try_start_0
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$UserSwitchedReceiver;->this$0:Lcom/android/server/power/PowerManagerService;
 
@@ -112,7 +112,7 @@
 
     invoke-static {v0, v2}, Lcom/android/server/power/PowerManagerService;->-set32(Lcom/android/server/power/PowerManagerService;Z)Z
 
-    .line 5510
+    .line 5581
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$UserSwitchedReceiver;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->-wrap23(Lcom/android/server/power/PowerManagerService;)V
@@ -121,10 +121,10 @@
 
     monitor-exit v1
 
-    .line 5504
+    .line 5575
     return-void
 
-    .line 5508
+    .line 5579
     :catchall_0
     move-exception v0
 

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/power/PowerManagerService;
 
     .prologue
-    .line 5570
+    .line 5641
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$5;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Landroid/service/vr/IVrStateCallbacks$Stub;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "enabled"    # Z
 
     .prologue
-    .line 5573
+    .line 5644
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$5;->this$0:Lcom/android/server/power/PowerManagerService;
 
     if-eqz p1, :cond_0
@@ -51,10 +51,10 @@
 
     invoke-static {v1, v2, v0}, Lcom/android/server/power/PowerManagerService;->-wrap32(Lcom/android/server/power/PowerManagerService;II)V
 
-    .line 5572
+    .line 5643
     return-void
 
-    .line 5573
+    .line 5644
     :cond_0
     const/4 v0, 0x0
 

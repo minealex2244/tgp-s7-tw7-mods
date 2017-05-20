@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/settings/CryptKeeper;
 
     .prologue
-    .line 1480
+    .line 1481
     iput-object p1, p0, Lcom/android/settings/CryptKeeper$12;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "animation"    # Landroid/animation/ValueAnimator;
 
     .prologue
-    .line 1483
+    .line 1484
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -53,7 +53,7 @@
 
     move-result v0
 
-    .line 1484
+    .line 1485
     .local v0, "value":F
     iget-object v1, p0, Lcom/android/settings/CryptKeeper$12;->this$0:Lcom/android/settings/CryptKeeper;
 
@@ -63,7 +63,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1485
+    .line 1486
     iget-object v1, p0, Lcom/android/settings/CryptKeeper$12;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-static {v1}, Lcom/android/settings/CryptKeeper;->-get4(Lcom/android/settings/CryptKeeper;)Landroid/widget/ImageView;
@@ -72,7 +72,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setScaleX(F)V
 
-    .line 1486
+    .line 1487
     iget-object v1, p0, Lcom/android/settings/CryptKeeper$12;->this$0:Lcom/android/settings/CryptKeeper;
 
     invoke-static {v1}, Lcom/android/settings/CryptKeeper;->-get4(Lcom/android/settings/CryptKeeper;)Landroid/widget/ImageView;
@@ -81,7 +81,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setScaleY(F)V
 
-    .line 1482
+    .line 1483
     :cond_0
     return-void
 .end method

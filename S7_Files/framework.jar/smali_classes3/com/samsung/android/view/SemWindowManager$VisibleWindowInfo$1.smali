@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 253
+    .line 241
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
     .param p1, "source"    # Landroid/os/Parcel;
 
     .prologue
-    .line 255
+    .line 243
     new-instance v0, Lcom/samsung/android/view/SemWindowManager$VisibleWindowInfo;
 
     const/4 v1, 0x0
@@ -60,7 +60,7 @@
     .param p1, "source"    # Landroid/os/Parcel;
 
     .prologue
-    .line 254
+    .line 242
     invoke-virtual {p0, p1}, Lcom/samsung/android/view/SemWindowManager$VisibleWindowInfo$1;->createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/view/SemWindowManager$VisibleWindowInfo;
 
     move-result-object v0
@@ -73,7 +73,7 @@
     .param p1, "size"    # I
 
     .prologue
-    .line 258
+    .line 246
     new-array v0, p1, [Lcom/samsung/android/view/SemWindowManager$VisibleWindowInfo;
 
     return-object v0
@@ -84,7 +84,7 @@
     .param p1, "size"    # I
 
     .prologue
-    .line 257
+    .line 245
     invoke-virtual {p0, p1}, Lcom/samsung/android/view/SemWindowManager$VisibleWindowInfo$1;->newArray(I)[Lcom/samsung/android/view/SemWindowManager$VisibleWindowInfo;
 
     move-result-object v0

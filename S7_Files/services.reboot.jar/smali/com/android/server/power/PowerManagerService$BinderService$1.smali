@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/android/server/power/PowerManagerService$BinderService;
 
     .prologue
-    .line 6651
+    .line 6722
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,18 +41,18 @@
     .locals 5
 
     .prologue
-    .line 6654
+    .line 6725
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v1, v1, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
 
-    invoke-static {v1}, Lcom/android/server/power/PowerManagerService;->-get34(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
+    invoke-static {v1}, Lcom/android/server/power/PowerManagerService;->-get35(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
 
     move-result-object v2
 
     monitor-enter v2
 
-    .line 6655
+    .line 6726
     :try_start_0
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
@@ -64,7 +64,7 @@
 
     invoke-virtual {v1, p0}, Lcom/android/server/power/PowerManagerService$PowerManagerHandler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 6656
+    .line 6727
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v1, v1, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -77,7 +77,7 @@
 
     invoke-static {v1, v3}, Lcom/android/server/power/PowerManagerService;->-set2(Lcom/android/server/power/PowerManagerService;I)I
 
-    .line 6657
+    .line 6728
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v1, v1, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -86,7 +86,7 @@
 
     move-result v0
 
-    .line 6658
+    .line 6729
     .local v0, "oldClearViewBrightnessModeEnabled":Z
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
@@ -98,7 +98,7 @@
 
     if-lez v1, :cond_1
 
-    .line 6659
+    .line 6730
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v1, v1, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -107,7 +107,7 @@
 
     invoke-static {v1, v3}, Lcom/android/server/power/PowerManagerService;->-set3(Lcom/android/server/power/PowerManagerService;Z)Z
 
-    .line 6663
+    .line 6734
     :goto_0
     const-string/jumbo v1, "PowerManagerService"
 
@@ -139,7 +139,7 @@
 
     invoke-static {v1, v3}, Lcom/android/server/power/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6664
+    .line 6735
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v1, v1, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -150,7 +150,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 6665
+    .line 6736
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v1, v1, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -161,7 +161,7 @@
 
     iput v3, v1, Lcom/android/server/power/PowerManagerService;->mDirty:I
 
-    .line 6666
+    .line 6737
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v1, v1, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -173,10 +173,10 @@
     :cond_0
     monitor-exit v2
 
-    .line 6653
+    .line 6724
     return-void
 
-    .line 6661
+    .line 6732
     :cond_1
     :try_start_1
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$BinderService$1;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
@@ -191,7 +191,7 @@
 
     goto :goto_0
 
-    .line 6654
+    .line 6725
     .end local v0    # "oldClearViewBrightnessModeEnabled":Z
     :catchall_0
     move-exception v1

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     .prologue
-    .line 2953
+    .line 2956
     iput-object p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$8;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Landroid/os/IRemoteCallback$Stub;-><init>()V
@@ -44,7 +44,7 @@
     .end annotation
 
     .prologue
-    .line 2956
+    .line 2959
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$8;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-static {}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-get13()I
@@ -53,6 +53,6 @@
 
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap37(Lcom/android/keyguard/KeyguardUpdateMonitor;I)V
 
-    .line 2955
+    .line 2958
     return-void
 .end method

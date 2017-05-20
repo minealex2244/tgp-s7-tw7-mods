@@ -39,7 +39,7 @@
     .param p5, "val$options"    # Ljava/lang/String;
 
     .prologue
-    .line 1855
+    .line 1859
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iput-object p2, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->val$ipAddr:Ljava/lang/String;
@@ -61,7 +61,7 @@
     .locals 5
 
     .prologue
-    .line 1858
+    .line 1862
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get12(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/IpRemoteDisplayController;
@@ -70,7 +70,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1861
+    .line 1865
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$22;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get12(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/IpRemoteDisplayController;
@@ -87,7 +87,7 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/server/display/IpRemoteDisplayController;->requestEnableWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
-    .line 1857
+    .line 1861
     :cond_0
     return-void
 .end method

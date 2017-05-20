@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PackageManagerService;
 
     .prologue
-    .line 22797
+    .line 22811
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$24;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,14 +49,14 @@
     .end annotation
 
     .prologue
-    .line 22801
+    .line 22815
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$24;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v1, v0, Lcom/android/server/pm/PackageManagerService;->mPackages:Landroid/util/ArrayMap;
 
     monitor-enter v1
 
-    .line 22802
+    .line 22816
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$24;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -64,7 +64,7 @@
 
     invoke-virtual {v0, p1, p2}, Lcom/android/server/pm/Settings;->readAllDomainVerificationsLPr(Lorg/xmlpull/v1/XmlPullParser;I)V
 
-    .line 22803
+    .line 22817
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$24;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v0, v0, Lcom/android/server/pm/PackageManagerService;->mSettings:Lcom/android/server/pm/Settings;
@@ -75,10 +75,10 @@
 
     monitor-exit v1
 
-    .line 22800
+    .line 22814
     return-void
 
-    .line 22801
+    .line 22815
     :catchall_0
     move-exception v0
 

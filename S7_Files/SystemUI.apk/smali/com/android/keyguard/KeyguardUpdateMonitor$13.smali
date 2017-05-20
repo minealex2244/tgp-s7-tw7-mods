@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     .prologue
-    .line 1759
+    .line 1762
     iput-object p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$13;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Landroid/app/IUserSwitchObserver$Stub;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "newProfileId"    # I
 
     .prologue
-    .line 1783
+    .line 1786
     return-void
 .end method
 
@@ -53,17 +53,17 @@
     .end annotation
 
     .prologue
-    .line 1774
+    .line 1777
     invoke-static {p1}, Lcom/samsung/android/knox/SemPersonaManager;->isBBCContainer(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1775
+    .line 1778
     const/4 p1, 0x0
 
-    .line 1779
+    .line 1782
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$13;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
@@ -79,17 +79,17 @@
 
     const/16 v2, 0x13a
 
-    .line 1780
+    .line 1783
     const/4 v3, 0x0
 
-    .line 1779
+    .line 1782
     invoke-virtual {v1, v2, p1, v3}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 1772
+    .line 1775
     return-void
 .end method
 
@@ -99,17 +99,17 @@
     .param p2, "reply"    # Landroid/os/IRemoteCallback;
 
     .prologue
-    .line 1763
+    .line 1766
     invoke-static {p1}, Lcom/samsung/android/knox/SemPersonaManager;->isBBCContainer(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1764
+    .line 1767
     const/4 p1, 0x0
 
-    .line 1768
+    .line 1771
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$13;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
@@ -125,16 +125,16 @@
 
     const/16 v2, 0x136
 
-    .line 1769
+    .line 1772
     const/4 v3, 0x0
 
-    .line 1768
+    .line 1771
     invoke-virtual {v1, v2, p1, v3, p2}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 1761
+    .line 1764
     return-void
 .end method

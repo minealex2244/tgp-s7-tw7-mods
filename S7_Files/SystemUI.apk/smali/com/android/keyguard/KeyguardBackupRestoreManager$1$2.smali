@@ -42,7 +42,7 @@
     .param p6, "val$saveKey"    # Ljava/lang/String;
 
     .prologue
-    .line 113
+    .line 114
     iput-object p1, p0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1$2;->this$1:Lcom/android/keyguard/KeyguardBackupRestoreManager$1;
 
     iput-object p2, p0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1$2;->val$context:Landroid/content/Context;
@@ -66,14 +66,14 @@
     .locals 7
 
     .prologue
-    .line 115
+    .line 116
     iget-object v0, p0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1$2;->val$context:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/app/WallpaperManager;->getInstance(Landroid/content/Context;)Landroid/app/WallpaperManager;
 
     move-result-object v6
 
-    .line 116
+    .line 117
     .local v6, "wallpaperManager":Landroid/app/WallpaperManager;
     iget-object v0, p0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1$2;->val$context:Landroid/content/Context;
 
@@ -89,6 +89,6 @@
 
     invoke-static/range {v0 .. v5}, Landroid/app/WallpaperManager;->startRestoreWallpaper(Landroid/content/Context;ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
-    .line 114
+    .line 115
     return-void
 .end method

@@ -30,16 +30,16 @@
     .param p2, "binder"    # Landroid/os/IBinder;
 
     .prologue
-    .line 6720
+    .line 6791
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
-    .line 6721
+    .line 6792
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6722
+    .line 6793
     iput-object p2, p0, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->binder:Landroid/os/IBinder;
 
-    .line 6724
+    .line 6795
     const/4 v1, 0x0
 
     :try_start_0
@@ -47,15 +47,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6720
+    .line 6791
     :goto_0
     return-void
 
-    .line 6725
+    .line 6796
     :catch_0
     move-exception v0
 
-    .line 6726
+    .line 6797
     .local v0, "e":Landroid/os/RemoteException;
     invoke-virtual {p0}, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->binderDied()V
 
@@ -68,18 +68,18 @@
     .locals 3
 
     .prologue
-    .line 6730
+    .line 6801
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v0, v0, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
 
-    invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->-get34(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->-get35(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 6731
+    .line 6802
     :try_start_0
     const-string/jumbo v0, "PowerManagerService"
 
@@ -87,7 +87,7 @@
 
     invoke-static {v0, v2}, Lcom/android/server/power/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6732
+    .line 6803
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v0, v0, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -96,7 +96,7 @@
 
     invoke-static {v0, v2}, Lcom/android/server/power/PowerManagerService;->-set5(Lcom/android/server/power/PowerManagerService;I)I
 
-    .line 6733
+    .line 6804
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v0, v0, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -105,14 +105,14 @@
 
     invoke-static {v0, v2}, Lcom/android/server/power/PowerManagerService;->-set6(Lcom/android/server/power/PowerManagerService;Z)Z
 
-    .line 6734
+    .line 6805
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     const/4 v2, 0x0
 
     invoke-static {v0, v2}, Lcom/android/server/power/PowerManagerService$BinderService;->-set1(Lcom/android/server/power/PowerManagerService$BinderService;Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;)Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;
 
-    .line 6735
+    .line 6806
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v0, v0, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -123,7 +123,7 @@
 
     iput v2, v0, Lcom/android/server/power/PowerManagerService;->mDirty:I
 
-    .line 6736
+    .line 6807
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$BinderService$ColorWeaknessLock;->this$1:Lcom/android/server/power/PowerManagerService$BinderService;
 
     iget-object v0, v0, Lcom/android/server/power/PowerManagerService$BinderService;->this$0:Lcom/android/server/power/PowerManagerService;
@@ -134,10 +134,10 @@
 
     monitor-exit v1
 
-    .line 6729
+    .line 6800
     return-void
 
-    .line 6730
+    .line 6801
     :catchall_0
     move-exception v0
 

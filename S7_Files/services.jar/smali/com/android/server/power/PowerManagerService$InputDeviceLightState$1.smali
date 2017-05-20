@@ -25,7 +25,7 @@
     .param p2, "$anonymous0"    # Landroid/os/Looper;
 
     .prologue
-    .line 7133
+    .line 7204
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState$1;->this$1:Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
@@ -40,16 +40,16 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 7135
+    .line 7206
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 7134
+    .line 7205
     :goto_0
     return-void
 
-    .line 7137
+    .line 7208
     :pswitch_0
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState$1;->this$1:Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
 
@@ -57,7 +57,7 @@
 
     goto :goto_0
 
-    .line 7140
+    .line 7211
     :pswitch_1
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState$1;->this$1:Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
 
@@ -65,7 +65,7 @@
 
     goto :goto_0
 
-    .line 7135
+    .line 7206
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1

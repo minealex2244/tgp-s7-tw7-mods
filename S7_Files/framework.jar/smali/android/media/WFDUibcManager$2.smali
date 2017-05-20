@@ -25,7 +25,7 @@
     .param p2, "$anonymous0"    # Landroid/content/Context;
 
     .prologue
-    .line 148
+    .line 152
     iput-object p1, p0, Landroid/media/WFDUibcManager$2;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-direct {p0, p2}, Landroid/view/OrientationEventListener;-><init>(Landroid/content/Context;)V
@@ -40,17 +40,17 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 151
+    .line 155
     const/4 v0, -0x1
 
     if-eq p1, v0, :cond_0
 
-    .line 153
+    .line 157
     iget-object v0, p0, Landroid/media/WFDUibcManager$2;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-static {v0, p1}, Landroid/media/WFDUibcManager;->-set1(Landroid/media/WFDUibcManager;I)I
 
-    .line 150
+    .line 154
     :cond_0
     return-void
 .end method

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/power/PowerManagerService;
 
     .prologue
-    .line 2271
+    .line 2336
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$1;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,26 +42,26 @@
     .param p1, "event"    # Landroid/hardware/scontext/SContextEvent;
 
     .prologue
-    .line 2274
+    .line 2339
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService$1;->this$0:Lcom/android/server/power/PowerManagerService;
 
-    invoke-static {v2}, Lcom/android/server/power/PowerManagerService;->-get42(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
+    invoke-static {v2}, Lcom/android/server/power/PowerManagerService;->-get43(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
 
     move-result-object v3
 
     monitor-enter v3
 
-    .line 2275
+    .line 2340
     :try_start_0
     iget-object v1, p1, Landroid/hardware/scontext/SContextEvent;->scontext:Landroid/hardware/scontext/SContext;
 
-    .line 2276
+    .line 2341
     .local v1, "scontext":Landroid/hardware/scontext/SContext;
     invoke-virtual {p1}, Landroid/hardware/scontext/SContextEvent;->getPhoneStatusMonitorContext()Landroid/hardware/scontext/SContextPhoneStatusMonitor;
 
     move-result-object v0
 
-    .line 2278
+    .line 2343
     .local v0, "phoneStatusMonitor":Landroid/hardware/scontext/SContextPhoneStatusMonitor;
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService$1;->this$0:Lcom/android/server/power/PowerManagerService;
 
@@ -71,7 +71,7 @@
 
     invoke-static {v2, v4}, Lcom/android/server/power/PowerManagerService;->-set16(Lcom/android/server/power/PowerManagerService;Z)Z
 
-    .line 2279
+    .line 2344
     const-string/jumbo v2, "PowerManagerService"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -100,17 +100,17 @@
 
     invoke-static {v2, v4}, Lcom/android/server/power/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2281
+    .line 2346
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService$1;->this$0:Lcom/android/server/power/PowerManagerService;
 
     const/4 v4, 0x1
 
     invoke-static {v2, v4}, Lcom/android/server/power/PowerManagerService;->-set25(Lcom/android/server/power/PowerManagerService;Z)Z
 
-    .line 2282
+    .line 2347
     iget-object v2, p0, Lcom/android/server/power/PowerManagerService$1;->this$0:Lcom/android/server/power/PowerManagerService;
 
-    invoke-static {v2}, Lcom/android/server/power/PowerManagerService;->-get42(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
+    invoke-static {v2}, Lcom/android/server/power/PowerManagerService;->-get43(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -120,10 +120,10 @@
 
     monitor-exit v3
 
-    .line 2273
+    .line 2338
     return-void
 
-    .line 2274
+    .line 2339
     .end local v0    # "phoneStatusMonitor":Landroid/hardware/scontext/SContextPhoneStatusMonitor;
     .end local v1    # "scontext":Landroid/hardware/scontext/SContext;
     :catchall_0

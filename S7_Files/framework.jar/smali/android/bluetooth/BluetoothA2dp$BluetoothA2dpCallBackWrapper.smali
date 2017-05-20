@@ -24,13 +24,13 @@
     .param p1, "callBack"    # Landroid/bluetooth/BluetoothA2dpDevCallBack;
 
     .prologue
-    .line 891
+    .line 896
     invoke-direct {p0}, Landroid/bluetooth/IBluetoothA2dpDevCallBack$Stub;-><init>()V
 
-    .line 892
+    .line 897
     iput-object p1, p0, Landroid/bluetooth/BluetoothA2dp$BluetoothA2dpCallBackWrapper;->mCallBack:Landroid/bluetooth/BluetoothA2dpDevCallBack;
 
-    .line 891
+    .line 896
     return-void
 .end method
 
@@ -41,11 +41,11 @@
     .param p1, "a2dpInfo"    # Ljava/lang/String;
 
     .prologue
-    .line 897
+    .line 902
     iget-object v0, p0, Landroid/bluetooth/BluetoothA2dp$BluetoothA2dpCallBackWrapper;->mCallBack:Landroid/bluetooth/BluetoothA2dpDevCallBack;
 
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothA2dpDevCallBack;->onA2dpDataUpdate(Ljava/lang/String;)V
 
-    .line 896
+    .line 901
     return-void
 .end method

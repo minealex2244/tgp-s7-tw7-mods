@@ -30,7 +30,7 @@
     .param p2, "val$params"    # Ljava/lang/String;
 
     .prologue
-    .line 1899
+    .line 1903
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$24;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iput-object p2, p0, Lcom/android/server/display/WifiDisplayAdapter$24;->val$params:Ljava/lang/String;
@@ -46,7 +46,7 @@
     .locals 6
 
     .prologue
-    .line 1902
+    .line 1906
     iget-object v3, p0, Lcom/android/server/display/WifiDisplayAdapter$24;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v3}, Lcom/android/server/display/WifiDisplayAdapter;->-get12(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/IpRemoteDisplayController;
@@ -55,7 +55,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 1906
+    .line 1910
     :try_start_0
     new-instance v2, Lorg/json/JSONObject;
 
@@ -63,7 +63,7 @@
 
     invoke-direct {v2, v3}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 1907
+    .line 1911
     .local v2, "jsonObj":Lorg/json/JSONObject;
     const-string/jumbo v3, "deviceType"
 
@@ -71,7 +71,7 @@
 
     move-result v0
 
-    .line 1909
+    .line 1913
     .local v0, "deviceType":I
     iget-object v3, p0, Lcom/android/server/display/WifiDisplayAdapter$24;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -81,14 +81,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 1910
+    .line 1914
     const-string/jumbo v3, "WifiDisplayAdapter"
 
     const-string/jumbo v4, "requestEnableLocked SEM_CONNECT_STATE_SCREEN_SHARING_AP call requestStopScan."
 
     invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1911
+    .line 1915
     iget-object v3, p0, Lcom/android/server/display/WifiDisplayAdapter$24;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v3}, Lcom/android/server/display/WifiDisplayAdapter;->-get9(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/WifiDisplayController;
@@ -97,7 +97,7 @@
 
     invoke-virtual {v3}, Lcom/android/server/display/WifiDisplayController;->requestStopScan()V
 
-    .line 1913
+    .line 1917
     :cond_0
     iget-object v3, p0, Lcom/android/server/display/WifiDisplayAdapter$24;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -111,18 +111,18 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1901
+    .line 1905
     .end local v0    # "deviceType":I
     .end local v2    # "jsonObj":Lorg/json/JSONObject;
     :cond_1
     :goto_0
     return-void
 
-    .line 1914
+    .line 1918
     :catch_0
     move-exception v1
 
-    .line 1915
+    .line 1919
     .local v1, "e":Ljava/lang/Exception;
     const-string/jumbo v3, "WifiDisplayAdapter"
 

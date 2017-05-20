@@ -33,21 +33,21 @@
     .param p4, "observerUserId"    # I
 
     .prologue
-    .line 480
+    .line 461
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 481
+    .line 462
     iput-object p1, p0, Lcom/android/server/content/ContentService$ObserverCall;->mNode:Lcom/android/server/content/ContentService$ObserverNode;
 
-    .line 482
+    .line 463
     iput-object p2, p0, Lcom/android/server/content/ContentService$ObserverCall;->mObserver:Landroid/database/IContentObserver;
 
-    .line 483
+    .line 464
     iput-boolean p3, p0, Lcom/android/server/content/ContentService$ObserverCall;->mSelfChange:Z
 
-    .line 484
+    .line 465
     iput p4, p0, Lcom/android/server/content/ContentService$ObserverCall;->mObserverUserId:I
 
-    .line 480
+    .line 461
     return-void
 .end method

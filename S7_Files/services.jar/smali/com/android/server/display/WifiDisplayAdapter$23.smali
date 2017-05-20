@@ -48,7 +48,7 @@
     .param p8, "val$isPendingRequest"    # Z
 
     .prologue
-    .line 1875
+    .line 1879
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$23;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iput p2, p0, Lcom/android/server/display/WifiDisplayAdapter$23;->val$deviceType:I
@@ -76,7 +76,7 @@
     .locals 8
 
     .prologue
-    .line 1878
+    .line 1882
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$23;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get12(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/IpRemoteDisplayController;
@@ -85,7 +85,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1881
+    .line 1885
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$23;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iget v1, p0, Lcom/android/server/display/WifiDisplayAdapter$23;->val$deviceType:I
@@ -96,14 +96,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1882
+    .line 1886
     const-string/jumbo v0, "WifiDisplayAdapter"
 
     const-string/jumbo v1, "requestEnableLocked SEM_CONNECT_STATE_SCREEN_SHARING_AP call requestStopScan."
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1883
+    .line 1887
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$23;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get9(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/WifiDisplayController;
@@ -112,7 +112,7 @@
 
     invoke-virtual {v0}, Lcom/android/server/display/WifiDisplayController;->requestStopScan()V
 
-    .line 1885
+    .line 1889
     :cond_0
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$23;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -136,7 +136,7 @@
 
     invoke-virtual/range {v0 .. v7}, Lcom/android/server/display/IpRemoteDisplayController;->requestEnableWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 1877
+    .line 1881
     :cond_1
     return-void
 .end method

@@ -73,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 153
+    .line 157
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 79
@@ -83,7 +83,7 @@
 
     iput-object v0, p0, Lcom/android/keyguard/KeyguardBackupRestoreManager;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 153
+    .line 157
     return-void
 .end method
 
@@ -98,7 +98,7 @@
     .param p7, "sessionTime"    # Ljava/lang/String;
 
     .prologue
-    .line 166
+    .line 170
     const-string/jumbo v1, "KeyguardBackupRestoreManager"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -115,10 +115,10 @@
 
     move-result-object v2
 
-    .line 167
+    .line 171
     const-string/jumbo v3, ", result="
 
-    .line 166
+    .line 170
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -127,10 +127,10 @@
 
     move-result-object v2
 
-    .line 168
+    .line 172
     const-string/jumbo v3, ", errCode="
 
-    .line 166
+    .line 170
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -139,10 +139,10 @@
 
     move-result-object v2
 
-    .line 169
+    .line 173
     const-string/jumbo v3, ", requiredSize="
 
-    .line 166
+    .line 170
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -151,10 +151,10 @@
 
     move-result-object v2
 
-    .line 170
+    .line 174
     const-string/jumbo v3, ")"
 
-    .line 166
+    .line 170
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -165,21 +165,21 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 172
+    .line 176
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 173
+    .line 177
     .local v0, "intent":Landroid/content/Intent;
     invoke-virtual {v0, p2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 174
+    .line 178
     const-string/jumbo v1, "RESULT"
 
     invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 175
+    .line 179
     const-string/jumbo v1, "ERR_CODE"
 
     invoke-virtual {p4}, Lcom/android/keyguard/KeyguardBackupRestoreManager$ERR_CODE;->getValue()I
@@ -188,38 +188,38 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 176
+    .line 180
     const-string/jumbo v1, "REQ_SIZE"
 
     invoke-virtual {v0, v1, p5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 177
+    .line 181
     const-string/jumbo v1, "SOURCE"
 
     invoke-virtual {v0, v1, p6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 178
+    .line 182
     if-eqz p7, :cond_0
 
-    .line 179
+    .line 183
     const-string/jumbo v1, "EXPORT_SESSION_TIME"
 
     invoke-virtual {v0, v1, p7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 182
+    .line 186
     :cond_0
     const-string/jumbo v1, "com.wssnps.permission.COM_WSSNPS"
 
     invoke-virtual {p1, v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 183
+    .line 187
     const-string/jumbo v1, "KeyguardBackupRestoreManager"
 
     const-string/jumbo v2, "sendBroadcast"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 165
+    .line 169
     return-void
 .end method
 
@@ -230,37 +230,37 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 157
+    .line 161
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 158
+    .line 162
     .local v0, "filter":Landroid/content/IntentFilter;
     const-string/jumbo v1, "com.sec.android.intent.action.REQUEST_BACKUP_LOCKSCREEN"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 159
+    .line 163
     const-string/jumbo v1, "com.sec.android.intent.action.REQUEST_RESTORE_LOCKSCREEN"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 160
+    .line 164
     const-string/jumbo v1, "com.sec.android.intent.action.REQUEST_BACKUP_WALLPAPER"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 161
+    .line 165
     const-string/jumbo v1, "com.sec.android.intent.action.REQUEST_RESTORE_WALLPAPER"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 162
+    .line 166
     iget-object v1, p0, Lcom/android/keyguard/KeyguardBackupRestoreManager;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p1, v1, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 156
+    .line 160
     return-void
 .end method

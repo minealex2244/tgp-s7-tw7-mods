@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     .prologue
-    .line 3747
+    .line 3750
     iput-object p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$12;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Lcom/samsung/android/bio/face/SemBioFaceManager$AuthenticationCallback;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "acquireInfo"    # I
 
     .prologue
-    .line 3773
+    .line 3776
     const-string/jumbo v0, "KeyguardFACE"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -62,7 +62,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3772
+    .line 3775
     return-void
 .end method
 
@@ -72,7 +72,7 @@
     .param p2, "errString"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 3750
+    .line 3753
     const-string/jumbo v0, "KeyguardFACE"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -105,7 +105,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3749
+    .line 3752
     return-void
 .end method
 
@@ -113,14 +113,14 @@
     .locals 2
 
     .prologue
-    .line 3768
+    .line 3771
     const-string/jumbo v0, "KeyguardFACE"
 
     const-string/jumbo v1, "onAuthenticationFailed()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3767
+    .line 3770
     return-void
 .end method
 
@@ -130,7 +130,7 @@
     .param p2, "helpString"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 3755
+    .line 3758
     const-string/jumbo v0, "KeyguardFACE"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -163,7 +163,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3754
+    .line 3757
     return-void
 .end method
 
@@ -172,30 +172,30 @@
     .param p1, "result"    # Lcom/samsung/android/bio/face/SemBioFaceManager$AuthenticationResult;
 
     .prologue
-    .line 3760
+    .line 3763
     const-string/jumbo v0, "KeyguardFACE"
 
     const-string/jumbo v1, "onAuthenticationSucceeded()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3761
+    .line 3764
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$12;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->setFaceRecognitionState(Z)V
 
-    .line 3762
+    .line 3765
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$12;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->updateFaceRecognitionTrustState()V
 
-    .line 3763
+    .line 3766
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$12;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap36(Lcom/android/keyguard/KeyguardUpdateMonitor;)V
 
-    .line 3759
+    .line 3762
     return-void
 .end method

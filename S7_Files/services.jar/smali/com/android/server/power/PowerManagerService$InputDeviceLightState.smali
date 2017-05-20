@@ -107,13 +107,13 @@
     .param p2, "lightsId"    # I
 
     .prologue
-    .line 7125
+    .line 7196
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7127
-    invoke-static {p1}, Lcom/android/server/power/PowerManagerService;->-get33(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/lights/LightsManager;
+    .line 7198
+    invoke-static {p1}, Lcom/android/server/power/PowerManagerService;->-get34(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/lights/LightsManager;
 
     move-result-object v0
 
@@ -123,17 +123,17 @@
 
     iput-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLight:Lcom/android/server/lights/Light;
 
-    .line 7128
+    .line 7199
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightState:I
 
-    .line 7129
+    .line 7200
     const/16 v0, 0x5dc
 
     iput v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightTimeout:I
 
-    .line 7131
+    .line 7202
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string/jumbo v1, "InputDeviceLight"
@@ -142,12 +142,12 @@
 
     iput-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerThreadInputDeviceLight:Landroid/os/HandlerThread;
 
-    .line 7132
+    .line 7203
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerThreadInputDeviceLight:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 7133
+    .line 7204
     new-instance v0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState$1;
 
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerThreadInputDeviceLight:Landroid/os/HandlerThread;
@@ -160,12 +160,12 @@
 
     iput-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
 
-    .line 7146
+    .line 7217
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->setInputDeviceLightOn(I)V
 
-    .line 7125
+    .line 7196
     return-void
 .end method
 
@@ -173,7 +173,7 @@
     .locals 1
 
     .prologue
-    .line 7207
+    .line 7278
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mIsKeepLight:Z
 
     return v0
@@ -183,7 +183,7 @@
     .locals 1
 
     .prologue
-    .line 7179
+    .line 7250
     iget v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightState:I
 
     return v0
@@ -193,7 +193,7 @@
     .locals 1
 
     .prologue
-    .line 7199
+    .line 7270
     iget v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightTimeout:I
 
     return v0
@@ -205,20 +205,20 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 7187
+    .line 7258
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 7188
+    .line 7259
     iput-boolean v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mIsMsgPending:Z
 
-    .line 7189
+    .line 7260
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLight:Lcom/android/server/lights/Light;
 
     invoke-virtual {v0, v1}, Lcom/android/server/lights/Light;->setBrightness(I)V
 
-    .line 7186
+    .line 7257
     return-void
 .end method
 
@@ -226,14 +226,14 @@
     .locals 2
 
     .prologue
-    .line 7183
+    .line 7254
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLight:Lcom/android/server/lights/Light;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/server/lights/Light;->setBrightness(I)V
 
-    .line 7182
+    .line 7253
     return-void
 .end method
 
@@ -242,10 +242,10 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 7203
+    .line 7274
     iput-boolean p1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mIsKeepLight:Z
 
-    .line 7202
+    .line 7273
     return-void
 .end method
 
@@ -254,15 +254,15 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 7193
+    .line 7264
     iget v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightTimeout:I
 
     if-eq v0, p1, :cond_0
 
-    .line 7194
+    .line 7265
     iput p1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightTimeout:I
 
-    .line 7192
+    .line 7263
     :cond_0
     return-void
 .end method
@@ -278,60 +278,60 @@
 
     const/4 v4, 0x1
 
-    .line 7152
+    .line 7223
     iget-boolean v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mIsMsgPending:Z
 
     if-eqz v1, :cond_0
 
-    .line 7153
+    .line 7224
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
 
     invoke-virtual {v1, v3}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 7154
+    .line 7225
     iput-boolean v3, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mIsMsgPending:Z
 
-    .line 7157
+    .line 7228
     :cond_0
     if-ne p1, v4, :cond_3
 
-    .line 7158
+    .line 7229
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
 
     invoke-virtual {v1, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v0
 
-    .line 7159
+    .line 7230
     .local v0, "msg":Landroid/os/Message;
     invoke-virtual {v0, v4}, Landroid/os/Message;->setAsynchronous(Z)V
 
-    .line 7160
+    .line 7231
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 7162
+    .line 7233
     iget v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightTimeout:I
 
     const/4 v2, -0x1
 
     if-eq v1, v2, :cond_1
 
-    .line 7163
+    .line 7234
     iget-boolean v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mIsKeepLight:Z
 
     if-eqz v1, :cond_2
 
-    .line 7175
+    .line 7246
     :cond_1
     :goto_0
     iput p1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightState:I
 
-    .line 7149
+    .line 7220
     return-void
 
-    .line 7164
+    .line 7235
     :cond_2
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
 
@@ -339,10 +339,10 @@
 
     move-result-object v0
 
-    .line 7165
+    .line 7236
     invoke-virtual {v0, v4}, Landroid/os/Message;->setAsynchronous(Z)V
 
-    .line 7166
+    .line 7237
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
 
     iget v2, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightTimeout:I
@@ -351,12 +351,12 @@
 
     invoke-virtual {v1, v0, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 7167
+    .line 7238
     iput-boolean v4, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mIsMsgPending:Z
 
     goto :goto_0
 
-    .line 7170
+    .line 7241
     .end local v0    # "msg":Landroid/os/Message;
     :cond_3
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
@@ -365,11 +365,11 @@
 
     move-result-object v0
 
-    .line 7171
+    .line 7242
     .restart local v0    # "msg":Landroid/os/Message;
     invoke-virtual {v0, v4}, Landroid/os/Message;->setAsynchronous(Z)V
 
-    .line 7172
+    .line 7243
     iget-object v1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mHandlerInputDeviceLight:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z

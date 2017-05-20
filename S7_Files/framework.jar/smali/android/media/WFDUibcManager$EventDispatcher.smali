@@ -266,47 +266,47 @@
 
     const/4 v2, 0x0
 
-    .line 272
+    .line 276
     iput-object p1, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-direct {p0, p1, v2}, Landroid/media/WFDUibcManager$EventQueue;-><init>(Landroid/media/WFDUibcManager;Landroid/media/WFDUibcManager$EventQueue;)V
 
-    .line 273
+    .line 277
     iput-boolean v6, p0, Landroid/media/WFDUibcManager$EventDispatcher;->running:Z
 
-    .line 275
+    .line 279
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
-    .line 276
+    .line 280
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->wm:Landroid/view/WindowManager;
 
-    .line 286
+    .line 290
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->me:Landroid/view/MotionEvent;
 
-    .line 287
+    .line 291
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->ke:Landroid/view/KeyEvent;
 
-    .line 289
+    .line 293
     iput-boolean v3, p0, Landroid/media/WFDUibcManager$EventDispatcher;->foregroundCamera:Z
 
-    .line 290
+    .line 294
     sget-object v0, Landroid/media/WFDUibcManager$UIBC_Mode;->NORMAL:Landroid/media/WFDUibcManager$UIBC_Mode;
 
     iput-object v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Mode:Landroid/media/WFDUibcManager$UIBC_Mode;
 
-    .line 291
+    .line 295
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->ev:Landroid/view/InputEvent;
 
-    .line 292
+    .line 296
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
-    .line 293
+    .line 297
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
 
-    .line 294
+    .line 298
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
-    .line 295
+    .line 299
     new-instance v0, Ljava/util/HashMap;
 
     const/16 v1, 0xf
@@ -315,64 +315,64 @@
 
     iput-object v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyEvnt_Arr:Ljava/util/HashMap;
 
-    .line 296
+    .line 300
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->configuration:Landroid/content/res/Configuration;
 
-    .line 298
+    .line 302
     iput v3, p0, Landroid/media/WFDUibcManager$EventDispatcher;->CAMERA_0:I
 
-    .line 299
+    .line 303
     iput v6, p0, Landroid/media/WFDUibcManager$EventDispatcher;->CAMERA_90:I
 
-    .line 300
+    .line 304
     const/4 v0, 0x2
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->CAMERA_180:I
 
-    .line 301
+    .line 305
     const/4 v0, 0x3
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->CAMERA_270:I
 
-    .line 304
+    .line 308
     iput v3, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 305
+    .line 309
     iput-boolean v3, p0, Landroid/media/WFDUibcManager$EventDispatcher;->bCap:Z
 
-    .line 306
+    .line 310
     iput-boolean v3, p0, Landroid/media/WFDUibcManager$EventDispatcher;->bSim:Z
 
-    .line 307
+    .line 311
     iput-boolean v3, p0, Landroid/media/WFDUibcManager$EventDispatcher;->bNum:Z
 
-    .line 308
+    .line 312
     iput-boolean v3, p0, Landroid/media/WFDUibcManager$EventDispatcher;->bScroll:Z
 
-    .line 309
+    .line 313
     iput-wide v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mBroadTime:J
 
-    .line 310
+    .line 314
     iput-wide v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mTouchDownTime:J
 
-    .line 311
+    .line 315
     iput-wide v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyDownTime:J
 
-    .line 312
+    .line 316
     iput-wide v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyUpTime:J
 
-    .line 313
+    .line 317
     const/4 v0, -0x1
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mRepeatCnt:I
 
-    .line 314
+    .line 318
     iput v3, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
 
-    .line 315
+    .line 319
     iput-object v2, p0, Landroid/media/WFDUibcManager$EventDispatcher;->last_Ke:Landroid/view/KeyEvent;
 
-    .line 272
+    .line 276
     return-void
 .end method
 
@@ -392,15 +392,15 @@
 
     const/16 v1, 0x39
 
-    .line 774
+    .line 778
     if-eqz p2, :cond_a
 
-    .line 775
+    .line 779
     if-eq p1, v3, :cond_0
 
     if-ne p1, v4, :cond_2
 
-    .line 776
+    .line 780
     :cond_0
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
@@ -408,34 +408,34 @@
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 777
+    .line 781
     if-ne p1, v3, :cond_1
 
-    .line 778
+    .line 782
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     or-int/lit8 v0, v0, 0x40
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 779
+    .line 783
     :cond_1
     if-ne p1, v4, :cond_2
 
-    .line 780
+    .line 784
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     or-int/lit16 v0, v0, 0x80
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 782
+    .line 786
     :cond_2
     if-eq p1, v1, :cond_3
 
     if-ne p1, v2, :cond_5
 
-    .line 783
+    .line 787
     :cond_3
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
@@ -443,28 +443,28 @@
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 784
+    .line 788
     if-ne p1, v1, :cond_4
 
-    .line 785
+    .line 789
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     or-int/lit8 v0, v0, 0x10
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 786
+    .line 790
     :cond_4
     if-ne p1, v2, :cond_5
 
-    .line 787
+    .line 791
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     or-int/lit8 v0, v0, 0x20
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 789
+    .line 793
     :cond_5
     if-eq p1, v5, :cond_6
 
@@ -472,7 +472,7 @@
 
     if-ne p1, v0, :cond_8
 
-    .line 790
+    .line 794
     :cond_6
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
@@ -480,54 +480,54 @@
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 791
+    .line 795
     if-ne p1, v5, :cond_7
 
-    .line 792
+    .line 796
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     or-int/lit16 v0, v0, 0x2000
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 793
+    .line 797
     :cond_7
     const/16 v0, 0x72
 
     if-ne p1, v0, :cond_8
 
-    .line 794
+    .line 798
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     or-int/lit16 v0, v0, 0x4000
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 796
+    .line 800
     :cond_8
     const/16 v0, 0x77
 
     if-ne p1, v0, :cond_9
 
-    .line 797
+    .line 801
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     or-int/lit8 v0, v0, 0x8
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 773
+    .line 777
     :cond_9
     :goto_0
     return-void
 
-    .line 800
+    .line 804
     :cond_a
     if-eq p1, v3, :cond_b
 
     if-ne p1, v4, :cond_d
 
-    .line 801
+    .line 805
     :cond_b
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
@@ -535,34 +535,34 @@
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 802
+    .line 806
     if-ne p1, v3, :cond_c
 
-    .line 803
+    .line 807
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     and-int/lit8 v0, v0, -0x41
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 804
+    .line 808
     :cond_c
     if-ne p1, v4, :cond_d
 
-    .line 805
+    .line 809
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     and-int/lit16 v0, v0, -0x81
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 807
+    .line 811
     :cond_d
     if-eq p1, v1, :cond_e
 
     if-ne p1, v2, :cond_10
 
-    .line 808
+    .line 812
     :cond_e
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
@@ -570,28 +570,28 @@
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 809
+    .line 813
     if-ne p1, v1, :cond_f
 
-    .line 810
+    .line 814
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     and-int/lit8 v0, v0, -0x11
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 811
+    .line 815
     :cond_f
     if-ne p1, v2, :cond_10
 
-    .line 812
+    .line 816
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     and-int/lit8 v0, v0, -0x21
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 814
+    .line 818
     :cond_10
     if-eq p1, v5, :cond_11
 
@@ -599,7 +599,7 @@
 
     if-ne p1, v0, :cond_13
 
-    .line 815
+    .line 819
     :cond_11
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
@@ -607,54 +607,54 @@
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 816
+    .line 820
     if-ne p1, v5, :cond_12
 
-    .line 817
+    .line 821
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     and-int/lit16 v0, v0, -0x2001
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 818
+    .line 822
     :cond_12
     const/16 v0, 0x72
 
     if-ne p1, v0, :cond_13
 
-    .line 819
+    .line 823
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     and-int/lit16 v0, v0, -0x4001
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 821
+    .line 825
     :cond_13
     const/16 v0, 0x77
 
     if-ne p1, v0, :cond_14
 
-    .line 822
+    .line 826
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     and-int/lit8 v0, v0, -0x9
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 824
+    .line 828
     :cond_14
     const/16 v0, 0x73
 
     if-ne p1, v0, :cond_9
 
-    .line 825
+    .line 829
     iget-boolean v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->bCap:Z
 
     if-nez v0, :cond_15
 
-    .line 827
+    .line 831
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
     const/high16 v1, 0x100000
@@ -663,14 +663,14 @@
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 828
+    .line 832
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->bCap:Z
 
     goto :goto_0
 
-    .line 830
+    .line 834
     :cond_15
     iget v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
@@ -680,7 +680,7 @@
 
     iput v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 832
+    .line 836
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Landroid/media/WFDUibcManager$EventDispatcher;->bCap:Z
@@ -693,10 +693,10 @@
     .param p1, "i"    # I
 
     .prologue
-    .line 331
+    .line 335
     const/4 v0, -0x1
 
-    .line 332
+    .line 336
     .local v0, "mCameraOrientation":I
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->wm:Landroid/view/WindowManager;
 
@@ -708,7 +708,7 @@
 
     move-result v6
 
-    .line 333
+    .line 337
     .local v6, "rotation":I
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -754,7 +754,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 335
+    .line 339
     :cond_0
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -774,25 +774,25 @@
 
     if-ge v7, v8, :cond_6
 
-    .line 337
+    .line 341
     :cond_1
     const/4 v0, 0x0
 
-    .line 351
+    .line 355
     :goto_0
     add-int/2addr v0, v6
 
-    .line 352
+    .line 356
     rem-int/lit8 v0, v0, 0x4
 
-    .line 353
+    .line 357
     if-eqz v0, :cond_2
 
     const/4 v7, 0x2
 
     if-ne v0, v7, :cond_c
 
-    .line 355
+    .line 359
     :cond_2
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
@@ -810,7 +810,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->screenRatio:F
 
-    .line 356
+    .line 360
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-static {v7}, Landroid/media/WFDUibcManager;->-get5(Landroid/media/WFDUibcManager;)F
@@ -827,7 +827,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->wfdRatio:F
 
-    .line 357
+    .line 361
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v7
@@ -870,7 +870,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 359
+    .line 363
     :cond_3
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->screenRatio:F
 
@@ -880,7 +880,7 @@
 
     if-gez v7, :cond_9
 
-    .line 361
+    .line 365
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->kW:F
 
     iget-object v8, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
@@ -895,7 +895,7 @@
 
     div-float v2, v7, v8
 
-    .line 362
+    .line 366
     .local v2, "newWidth":F
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -909,7 +909,7 @@
 
     div-float v5, v7, v8
 
-    .line 363
+    .line 367
     .local v5, "pad":F
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -929,7 +929,7 @@
 
     mul-float v3, v7, v8
 
-    .line 364
+    .line 368
     .local v3, "normX":F
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
@@ -945,7 +945,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 365
+    .line 369
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
 
     iget-object v8, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -958,14 +958,14 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 378
+    .line 382
     .end local v2    # "newWidth":F
     .end local v3    # "normX":F
     .end local v5    # "pad":F
     :goto_1
     if-nez v0, :cond_b
 
-    .line 379
+    .line 383
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
     aget-object v7, v7, p1
@@ -976,7 +976,7 @@
 
     invoke-virtual {v7, v9, v8}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 380
+    .line 384
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
     aget-object v7, v7, p1
@@ -987,7 +987,7 @@
 
     invoke-virtual {v7, v9, v8}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 381
+    .line 385
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v7
@@ -1030,7 +1030,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 411
+    .line 415
     :cond_4
     :goto_2
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
@@ -1061,11 +1061,11 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 330
+    .line 334
     :cond_5
     return-void
 
-    .line 335
+    .line 339
     :cond_6
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -1077,7 +1077,7 @@
 
     if-gt v7, v8, :cond_1
 
-    .line 339
+    .line 343
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-static {v7}, Landroid/media/WFDUibcManager;->-get7(Landroid/media/WFDUibcManager;)I
@@ -1098,13 +1098,13 @@
 
     if-ge v7, v8, :cond_7
 
-    .line 341
+    .line 345
     const/4 v0, 0x1
 
-    .line 340
+    .line 344
     goto/16 :goto_0
 
-    .line 343
+    .line 347
     :cond_7
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -1126,19 +1126,19 @@
 
     if-ge v7, v8, :cond_8
 
-    .line 345
+    .line 349
     const/4 v0, 0x2
 
-    .line 344
+    .line 348
     goto/16 :goto_0
 
-    .line 349
+    .line 353
     :cond_8
     const/4 v0, 0x3
 
     goto/16 :goto_0
 
-    .line 367
+    .line 371
     :cond_9
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->screenRatio:F
 
@@ -1148,7 +1148,7 @@
 
     if-lez v7, :cond_a
 
-    .line 368
+    .line 372
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->kH:F
 
     iget-object v8, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
@@ -1163,7 +1163,7 @@
 
     div-float v1, v7, v8
 
-    .line 369
+    .line 373
     .local v1, "newHeight":F
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -1177,7 +1177,7 @@
 
     div-float v5, v7, v8
 
-    .line 370
+    .line 374
     .restart local v5    # "pad":F
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -1197,7 +1197,7 @@
 
     mul-float v4, v7, v8
 
-    .line 371
+    .line 375
     .local v4, "normY":F
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->kX:F
 
@@ -1211,7 +1211,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 372
+    .line 376
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v7, Landroid/util/DisplayMetrics;->heightPixels:I
@@ -1228,7 +1228,7 @@
 
     goto/16 :goto_1
 
-    .line 375
+    .line 379
     .end local v1    # "newHeight":F
     .end local v4    # "normY":F
     .end local v5    # "pad":F
@@ -1245,7 +1245,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 376
+    .line 380
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
 
     iget-object v8, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -1260,7 +1260,7 @@
 
     goto/16 :goto_1
 
-    .line 384
+    .line 388
     :cond_b
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
@@ -1274,7 +1274,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 385
+    .line 389
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v7, Landroid/util/DisplayMetrics;->heightPixels:I
@@ -1287,7 +1287,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 386
+    .line 390
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
     aget-object v7, v7, p1
@@ -1298,7 +1298,7 @@
 
     invoke-virtual {v7, v9, v8}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 387
+    .line 391
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
     aget-object v7, v7, p1
@@ -1309,7 +1309,7 @@
 
     invoke-virtual {v7, v9, v8}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 388
+    .line 392
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v7
@@ -1354,7 +1354,7 @@
 
     goto/16 :goto_2
 
-    .line 391
+    .line 395
     :cond_c
     const/4 v7, 0x1
 
@@ -1364,7 +1364,7 @@
 
     if-ne v0, v7, :cond_4
 
-    .line 394
+    .line 398
     :cond_d
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->kH:F
 
@@ -1380,7 +1380,7 @@
 
     div-float v2, v7, v8
 
-    .line 395
+    .line 399
     .restart local v2    # "newWidth":F
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -1394,7 +1394,7 @@
 
     div-float v5, v7, v8
 
-    .line 396
+    .line 400
     .restart local v5    # "pad":F
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -1414,13 +1414,13 @@
 
     mul-float v3, v7, v8
 
-    .line 397
+    .line 401
     .restart local v3    # "normX":F
     const/4 v7, 0x1
 
     if-ne v0, v7, :cond_f
 
-    .line 398
+    .line 402
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v7, Landroid/util/DisplayMetrics;->heightPixels:I
@@ -1443,7 +1443,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 399
+    .line 403
     iget v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->kX:F
 
     iget-object v8, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -1456,7 +1456,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 400
+    .line 404
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v7
@@ -1499,7 +1499,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 407
+    .line 411
     :cond_e
     :goto_3
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -1512,7 +1512,7 @@
 
     invoke-virtual {v7, v9, v8}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 408
+    .line 412
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
     aget-object v7, v7, p1
@@ -1525,7 +1525,7 @@
 
     goto/16 :goto_2
 
-    .line 403
+    .line 407
     :cond_f
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
@@ -1541,7 +1541,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 404
+    .line 408
     iget-object v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
     iget v7, v7, Landroid/util/DisplayMetrics;->widthPixels:I
@@ -1562,7 +1562,7 @@
 
     iput v7, p0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 405
+    .line 409
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v7
@@ -1612,7 +1612,7 @@
     .locals 23
 
     .prologue
-    .line 855
+    .line 859
     move-object/from16 v0, p0
 
     iget-object v0, v0, Landroid/media/WFDUibcManager$EventDispatcher;->ev:Landroid/view/InputEvent;
@@ -1621,14 +1621,14 @@
 
     check-cast v16, Landroid/view/KeyEvent;
 
-    .line 856
+    .line 860
     .local v16, "NewKE":Landroid/view/KeyEvent;
     const/16 v19, -0x1
 
     .local v19, "fndKyIndex":I
     const/16 v18, -0x1
 
-    .line 857
+    .line 861
     .local v18, "empKyIndex":I
     const/4 v2, 0x0
 
@@ -1636,21 +1636,21 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
 
-    .line 858
+    .line 862
     const-wide/16 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-wide v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyDownTime:J
 
-    .line 859
+    .line 863
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mRepeatCnt:I
 
-    .line 861
+    .line 865
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v2
@@ -1687,13 +1687,13 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 863
+    .line 867
     :cond_0
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->semGetDisplayId()I
 
     move-result v13
 
-    .line 864
+    .line 868
     .local v13, "displayId":I
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -1723,16 +1723,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 865
+    .line 869
     :cond_1
     if-gez v13, :cond_2
 
-    .line 867
+    .line 871
     invoke-static {}, Landroid/hardware/display/DisplayManagerGlobal;->getInstance()Landroid/hardware/display/DisplayManagerGlobal;
 
     move-result-object v17
 
-    .line 868
+    .line 872
     .local v17, "dm":Landroid/hardware/display/DisplayManagerGlobal;
     invoke-virtual/range {v17 .. v17}, Landroid/hardware/display/DisplayManagerGlobal;->getDisplayIds()[I
 
@@ -1747,7 +1747,7 @@
 
     aget v20, v3, v2
 
-    .line 869
+    .line 873
     .local v20, "id":I
     move-object/from16 v0, v17
 
@@ -1773,10 +1773,10 @@
 
     if-ne v5, v6, :cond_5
 
-    .line 870
+    .line 874
     move/from16 v13, v20
 
-    .line 875
+    .line 879
     .end local v17    # "dm":Landroid/hardware/display/DisplayManagerGlobal;
     .end local v20    # "id":I
     :cond_2
@@ -1808,7 +1808,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 880
+    .line 884
     :cond_3
     move-object/from16 v0, p0
 
@@ -1828,7 +1828,7 @@
 
     if-ne v2, v3, :cond_6
 
-    .line 881
+    .line 885
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v2
@@ -1841,11 +1841,11 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 882
+    .line 886
     :cond_4
     return-void
 
-    .line 868
+    .line 872
     .restart local v17    # "dm":Landroid/hardware/display/DisplayManagerGlobal;
     .restart local v20    # "id":I
     :cond_5
@@ -1853,7 +1853,7 @@
 
     goto :goto_0
 
-    .line 885
+    .line 889
     .end local v17    # "dm":Landroid/hardware/display/DisplayManagerGlobal;
     .end local v20    # "id":I
     :cond_6
@@ -1863,7 +1863,7 @@
 
     if-nez v2, :cond_15
 
-    .line 887
+    .line 891
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v2
@@ -1876,7 +1876,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 889
+    .line 893
     :cond_7
     move-object/from16 v0, p0
 
@@ -1896,7 +1896,7 @@
 
     if-nez v2, :cond_13
 
-    .line 891
+    .line 895
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyEvnt_Arr:Ljava/util/HashMap;
@@ -1909,7 +1909,7 @@
 
     if-ge v2, v3, :cond_8
 
-    .line 893
+    .line 897
     new-instance v21, Landroid/media/WFDUibcManager$Keyevnt_arrC;
 
     move-object/from16 v0, p0
@@ -1922,7 +1922,7 @@
 
     invoke-direct {v0, v2, v3}, Landroid/media/WFDUibcManager$Keyevnt_arrC;-><init>(Landroid/media/WFDUibcManager;Landroid/media/WFDUibcManager$Keyevnt_arrC;)V
 
-    .line 894
+    .line 898
     .local v21, "kev":Landroid/media/WFDUibcManager$Keyevnt_arrC;
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getDownTime()J
 
@@ -1932,21 +1932,21 @@
 
     iput-wide v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyDwnTime:J
 
-    .line 895
+    .line 899
     const/4 v2, 0x0
 
     move-object/from16 v0, v21
 
     iput v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyFlag:I
 
-    .line 896
+    .line 900
     const/4 v2, 0x0
 
     move-object/from16 v0, v21
 
     iput v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mRepCnt:I
 
-    .line 897
+    .line 901
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyEvnt_Arr:Ljava/util/HashMap;
@@ -1963,7 +1963,7 @@
 
     invoke-virtual {v2, v3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 899
+    .line 903
     .end local v21    # "kev":Landroid/media/WFDUibcManager$Keyevnt_arrC;
     :cond_8
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getDownTime()J
@@ -1974,7 +1974,7 @@
 
     iput-wide v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyDownTime:J
 
-    .line 900
+    .line 904
     move-object/from16 v0, p0
 
     iget v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
@@ -1989,7 +1989,7 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
 
-    .line 901
+    .line 905
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getRepeatCount()I
 
     move-result v2
@@ -1998,7 +1998,7 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mRepeatCnt:I
 
-    .line 917
+    .line 921
     :cond_9
     :goto_1
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getKeyCode()I
@@ -2011,7 +2011,7 @@
 
     invoke-direct {v0, v2, v3}, Landroid/media/WFDUibcManager$EventDispatcher;->getMetaFlag(IZ)V
 
-    .line 938
+    .line 942
     :cond_a
     :goto_2
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
@@ -2054,56 +2054,56 @@
 
     move-result-object v3
 
-    .line 939
+    .line 943
     const-string/jumbo v4, " Flag: "
 
-    .line 938
+    .line 942
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 939
+    .line 943
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
 
-    .line 938
+    .line 942
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 939
+    .line 943
     const-string/jumbo v4, " RepeatCnt: "
 
-    .line 938
+    .line 942
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 939
+    .line 943
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mRepeatCnt:I
 
-    .line 938
+    .line 942
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 939
+    .line 943
     const-string/jumbo v4, "mMetaFlag: "
 
-    .line 938
+    .line 942
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v3
 
-    .line 939
+    .line 943
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 938
+    .line 942
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v3
@@ -2114,13 +2114,13 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 941
+    .line 945
     :cond_b
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getMetaState()I
 
     move-result v9
 
-    .line 942
+    .line 946
     .local v9, "metakey":I
     if-nez v9, :cond_c
 
@@ -2128,58 +2128,58 @@
 
     iget v9, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mMetaFlag:I
 
-    .line 943
+    .line 947
     :cond_c
     move-object/from16 v0, p0
 
     iget-wide v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyDownTime:J
 
-    .line 944
+    .line 948
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getEventTime()J
 
     move-result-wide v4
 
-    .line 945
+    .line 949
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getAction()I
 
     move-result v6
 
-    .line 946
+    .line 950
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v7
 
-    .line 947
+    .line 951
     move-object/from16 v0, p0
 
     iget v8, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mRepeatCnt:I
 
-    .line 949
+    .line 953
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getDeviceId()I
 
     move-result v10
 
-    .line 950
+    .line 954
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getScanCode()I
 
     move-result v11
 
-    .line 951
+    .line 955
     move-object/from16 v0, p0
 
     iget v12, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
 
-    .line 953
+    .line 957
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getSource()I
 
     move-result v14
 
-    .line 954
+    .line 958
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getCharacters()Ljava/lang/String;
 
     move-result-object v15
 
-    .line 943
+    .line 947
     invoke-static/range {v2 .. v15}, Landroid/view/KeyEvent;->obtain(JJIIIIIIIIILjava/lang/String;)Landroid/view/KeyEvent;
 
     move-result-object v2
@@ -2188,7 +2188,7 @@
 
     iput-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->ke:Landroid/view/KeyEvent;
 
-    .line 955
+    .line 959
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->ke:Landroid/view/KeyEvent;
@@ -2199,7 +2199,7 @@
 
     if-nez v2, :cond_d
 
-    .line 956
+    .line 960
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->ke:Landroid/view/KeyEvent;
@@ -2208,7 +2208,7 @@
 
     iput-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->last_Ke:Landroid/view/KeyEvent;
 
-    .line 958
+    .line 962
     :cond_d
     invoke-static {}, Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager;
 
@@ -2222,7 +2222,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z
 
-    .line 960
+    .line 964
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v2
@@ -2255,7 +2255,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 962
+    .line 966
     :cond_e
     move-object/from16 v0, p0
 
@@ -2269,7 +2269,7 @@
 
     if-ne v2, v3, :cond_12
 
-    .line 963
+    .line 967
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->ke:Landroid/view/KeyEvent;
@@ -2294,7 +2294,7 @@
 
     if-ne v2, v3, :cond_12
 
-    .line 965
+    .line 969
     :cond_f
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -2308,7 +2308,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 966
+    .line 970
     :cond_10
     new-instance v22, Landroid/content/Intent;
 
@@ -2318,7 +2318,7 @@
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 967
+    .line 971
     .local v22, "mintent":Landroid/content/Intent;
     const-string/jumbo v2, "app_name"
 
@@ -2328,7 +2328,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 968
+    .line 972
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->ke:Landroid/view/KeyEvent;
@@ -2341,7 +2341,7 @@
 
     if-ne v2, v3, :cond_18
 
-    .line 969
+    .line 973
     const-string/jumbo v2, "launch_home"
 
     const/4 v3, 0x1
@@ -2350,7 +2350,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 977
+    .line 981
     :cond_11
     :goto_3
     move-object/from16 v0, p0
@@ -2365,7 +2365,7 @@
 
     invoke-virtual {v2, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 980
+    .line 984
     .end local v22    # "mintent":Landroid/content/Intent;
     :cond_12
     const/4 v2, 0x0
@@ -2374,10 +2374,10 @@
 
     iput-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->ke:Landroid/view/KeyEvent;
 
-    .line 853
+    .line 857
     return-void
 
-    .line 904
+    .line 908
     .end local v9    # "metakey":I
     :cond_13
     move-object/from16 v0, p0
@@ -2398,7 +2398,7 @@
 
     check-cast v21, Landroid/media/WFDUibcManager$Keyevnt_arrC;
 
-    .line 905
+    .line 909
     .restart local v21    # "kev":Landroid/media/WFDUibcManager$Keyevnt_arrC;
     move-object/from16 v0, v21
 
@@ -2414,7 +2414,7 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyFlag:I
 
-    .line 906
+    .line 910
     move-object/from16 v0, v21
 
     iget v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mRepCnt:I
@@ -2425,7 +2425,7 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mRepCnt:I
 
-    .line 907
+    .line 911
     move-object/from16 v0, v21
 
     iget v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mRepCnt:I
@@ -2434,7 +2434,7 @@
 
     if-lt v2, v3, :cond_14
 
-    .line 909
+    .line 913
     move-object/from16 v0, v21
 
     iget v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyFlag:I
@@ -2445,7 +2445,7 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyFlag:I
 
-    .line 911
+    .line 915
     :cond_14
     move-object/from16 v0, v21
 
@@ -2455,7 +2455,7 @@
 
     iput-wide v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyDownTime:J
 
-    .line 912
+    .line 916
     move-object/from16 v0, p0
 
     iget v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
@@ -2470,7 +2470,7 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
 
-    .line 913
+    .line 917
     move-object/from16 v0, v21
 
     iget v2, v0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mRepCnt:I
@@ -2479,7 +2479,7 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mRepeatCnt:I
 
-    .line 914
+    .line 918
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v2
@@ -2494,7 +2494,7 @@
 
     goto/16 :goto_1
 
-    .line 920
+    .line 924
     .end local v21    # "kev":Landroid/media/WFDUibcManager$Keyevnt_arrC;
     :cond_15
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getAction()I
@@ -2505,7 +2505,7 @@
 
     if-ne v2, v3, :cond_a
 
-    .line 921
+    .line 925
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v2
@@ -2518,7 +2518,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 922
+    .line 926
     :cond_16
     move-object/from16 v0, p0
 
@@ -2538,7 +2538,7 @@
 
     if-eqz v2, :cond_17
 
-    .line 924
+    .line 928
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyEvnt_Arr:Ljava/util/HashMap;
@@ -2557,7 +2557,7 @@
 
     check-cast v21, Landroid/media/WFDUibcManager$Keyevnt_arrC;
 
-    .line 925
+    .line 929
     .restart local v21    # "kev":Landroid/media/WFDUibcManager$Keyevnt_arrC;
     move-object/from16 v0, v21
 
@@ -2567,7 +2567,7 @@
 
     iput-wide v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyDownTime:J
 
-    .line 926
+    .line 930
     move-object/from16 v0, p0
 
     iget v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
@@ -2582,14 +2582,14 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
 
-    .line 927
+    .line 931
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mRepeatCnt:I
 
-    .line 928
+    .line 932
     move-object/from16 v0, p0
 
     iget-object v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyEvnt_Arr:Ljava/util/HashMap;
@@ -2604,7 +2604,7 @@
 
     invoke-virtual {v2, v3}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 935
+    .line 939
     .end local v21    # "kev":Landroid/media/WFDUibcManager$Keyevnt_arrC;
     :goto_4
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getKeyCode()I
@@ -2619,7 +2619,7 @@
 
     goto/16 :goto_2
 
-    .line 931
+    .line 935
     :cond_17
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getDownTime()J
 
@@ -2629,7 +2629,7 @@
 
     iput-wide v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mKeyDownTime:J
 
-    .line 932
+    .line 936
     move-object/from16 v0, p0
 
     iget v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
@@ -2644,7 +2644,7 @@
 
     iput v2, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mFlag:I
 
-    .line 933
+    .line 937
     invoke-virtual/range {v16 .. v16}, Landroid/view/KeyEvent;->getRepeatCount()I
 
     move-result v2
@@ -2655,7 +2655,7 @@
 
     goto :goto_4
 
-    .line 971
+    .line 975
     .restart local v9    # "metakey":I
     .restart local v22    # "mintent":Landroid/content/Intent;
     :cond_18
@@ -2671,7 +2671,7 @@
 
     if-ne v2, v3, :cond_19
 
-    .line 972
+    .line 976
     const-string/jumbo v2, "launch_home"
 
     const/4 v3, 0x0
@@ -2682,7 +2682,7 @@
 
     goto/16 :goto_3
 
-    .line 975
+    .line 979
     :cond_19
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -2703,7 +2703,7 @@
     .locals 44
 
     .prologue
-    .line 434
+    .line 438
     move-object/from16 v0, p0
 
     iget-object v0, v0, Landroid/media/WFDUibcManager$EventDispatcher;->ev:Landroid/view/InputEvent;
@@ -2712,7 +2712,7 @@
 
     check-cast v34, Landroid/view/MotionEvent;
 
-    .line 436
+    .line 440
     .local v34, "newEv":Landroid/view/MotionEvent;
     sget-object v4, Landroid/media/WFDUibcManager$UIBC_Mode;->NORMAL:Landroid/media/WFDUibcManager$UIBC_Mode;
 
@@ -2720,7 +2720,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Mode:Landroid/media/WFDUibcManager$UIBC_Mode;
 
-    .line 439
+    .line 443
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->wm:Landroid/view/WindowManager;
@@ -2735,7 +2735,7 @@
 
     invoke-virtual {v4, v5}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 440
+    .line 444
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -2764,22 +2764,22 @@
 
     move-result-object v5
 
-    .line 441
+    .line 445
     const-string/jumbo v6, " heightPixels: "
 
-    .line 440
+    .line 444
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 441
+    .line 445
     move-object/from16 v0, p0
 
     iget-object v6, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
     iget v6, v6, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    .line 440
+    .line 444
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -2790,7 +2790,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 442
+    .line 446
     :cond_0
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -2846,13 +2846,13 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 444
+    .line 448
     :cond_1
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getDisplayId()I
 
     move-result v14
 
-    .line 446
+    .line 450
     .local v14, "displayId":I
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -2882,17 +2882,17 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 447
+    .line 451
     :cond_2
     invoke-static {}, Landroid/hardware/display/DisplayManagerGlobal;->getInstance()Landroid/hardware/display/DisplayManagerGlobal;
 
     move-result-object v24
 
-    .line 449
+    .line 453
     .local v24, "dm":Landroid/hardware/display/DisplayManagerGlobal;
     if-gez v14, :cond_3
 
-    .line 450
+    .line 454
     invoke-virtual/range {v24 .. v24}, Landroid/hardware/display/DisplayManagerGlobal;->getDisplayIds()[I
 
     move-result-object v5
@@ -2906,7 +2906,7 @@
 
     aget v28, v5, v4
 
-    .line 451
+    .line 455
     .local v28, "id":I
     move-object/from16 v0, v24
 
@@ -2932,10 +2932,10 @@
 
     if-ne v7, v8, :cond_5
 
-    .line 452
+    .line 456
     move/from16 v14, v28
 
-    .line 457
+    .line 461
     .end local v28    # "id":I
     :cond_3
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
@@ -2984,28 +2984,28 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 458
+    .line 462
     :cond_4
     if-gez v14, :cond_6
 
-    .line 459
+    .line 463
     const-string/jumbo v4, "WFDUibcManager"
 
     const-string/jumbo v5, "displayId not found"
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 460
+    .line 464
     return-void
 
-    .line 450
+    .line 454
     .restart local v28    # "id":I
     :cond_5
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 465
+    .line 469
     .end local v28    # "id":I
     :cond_6
     move-object/from16 v0, p0
@@ -3028,7 +3028,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->activityManager:Landroid/app/ActivityManager;
 
-    .line 466
+    .line 470
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->activityManager:Landroid/app/ActivityManager;
@@ -3039,7 +3039,7 @@
 
     move-result-object v29
 
-    .line 467
+    .line 471
     .local v29, "info":Ljava/util/List;, "Ljava/util/List<Landroid/app/ActivityManager$RunningTaskInfo;>;"
     invoke-interface/range {v29 .. v29}, Ljava/util/List;->isEmpty()Z
 
@@ -3047,7 +3047,7 @@
 
     if-nez v4, :cond_8
 
-    .line 468
+    .line 472
     const/4 v4, 0x0
 
     move-object/from16 v0, v29
@@ -3058,7 +3058,7 @@
 
     check-cast v42, Landroid/app/ActivityManager$RunningTaskInfo;
 
-    .line 469
+    .line 473
     .local v42, "runningTaskInfo":Landroid/app/ActivityManager$RunningTaskInfo;
     move-object/from16 v0, v42
 
@@ -3078,7 +3078,7 @@
 
     iput-boolean v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->foregroundCamera:Z
 
-    .line 470
+    .line 474
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -3111,7 +3111,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 471
+    .line 475
     :cond_7
     move-object/from16 v0, p0
 
@@ -3125,7 +3125,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Mode:Landroid/media/WFDUibcManager$UIBC_Mode;
 
-    .line 475
+    .line 479
     .end local v42    # "runningTaskInfo":Landroid/app/ActivityManager$RunningTaskInfo;
     :cond_8
     move-object/from16 v0, p0
@@ -3144,7 +3144,7 @@
 
     check-cast v30, Landroid/hardware/display/DisplayManager;
 
-    .line 476
+    .line 480
     .local v30, "mDm":Landroid/hardware/display/DisplayManager;
     move-object/from16 v0, p0
 
@@ -3158,21 +3158,21 @@
 
     move-result-object v4
 
-    .line 477
+    .line 481
     const-string/jumbo v5, "sidesync_source_connect"
 
     const/4 v6, 0x0
 
     const/4 v7, -0x2
 
-    .line 476
+    .line 480
     invoke-static {v4, v5, v6, v7}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result v4
 
     if-nez v4, :cond_9
 
-    .line 477
+    .line 481
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
@@ -3181,10 +3181,10 @@
 
     move-result v4
 
-    .line 476
+    .line 480
     if-eqz v4, :cond_d
 
-    .line 479
+    .line 483
     :cond_9
     sget-object v4, Landroid/media/WFDUibcManager$UIBC_Mode;->FORCE_VALUE:Landroid/media/WFDUibcManager$UIBC_Mode;
 
@@ -3192,7 +3192,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Mode:Landroid/media/WFDUibcManager$UIBC_Mode;
 
-    .line 480
+    .line 484
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -3205,7 +3205,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 514
+    .line 518
     :cond_a
     :goto_1
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getAction()I
@@ -3216,7 +3216,7 @@
 
     if-ne v4, v5, :cond_17
 
-    .line 515
+    .line 519
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v4
@@ -3225,7 +3225,7 @@
 
     iput-wide v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mTouchDownTime:J
 
-    .line 516
+    .line 520
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -3258,7 +3258,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 519
+    .line 523
     :cond_b
     move-object/from16 v0, p0
 
@@ -3270,7 +3270,7 @@
 
     invoke-virtual {v4}, Landroid/view/MotionEvent$PointerProperties;->clear()V
 
-    .line 520
+    .line 524
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -3281,7 +3281,7 @@
 
     invoke-virtual {v4}, Landroid/view/MotionEvent$PointerCoords;->clear()V
 
-    .line 521
+    .line 525
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
@@ -3296,7 +3296,7 @@
 
     invoke-virtual {v0, v5, v4}, Landroid/view/MotionEvent;->getPointerProperties(ILandroid/view/MotionEvent$PointerProperties;)V
 
-    .line 522
+    .line 526
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -3311,7 +3311,7 @@
 
     invoke-virtual {v0, v5, v4}, Landroid/view/MotionEvent;->getPointerCoords(ILandroid/view/MotionEvent$PointerCoords;)V
 
-    .line 524
+    .line 528
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
@@ -3324,7 +3324,7 @@
 
     iput v5, v4, Landroid/view/MotionEvent$PointerProperties;->id:I
 
-    .line 525
+    .line 529
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
@@ -3337,7 +3337,7 @@
 
     iput v5, v4, Landroid/view/MotionEvent$PointerProperties;->toolType:I
 
-    .line 527
+    .line 531
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -3360,7 +3360,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 528
+    .line 532
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -3383,7 +3383,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 529
+    .line 533
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -3404,7 +3404,7 @@
 
     iput v5, v4, Landroid/view/MotionEvent$PointerCoords;->y:F
 
-    .line 530
+    .line 534
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -3425,7 +3425,7 @@
 
     iput v5, v4, Landroid/view/MotionEvent$PointerCoords;->x:F
 
-    .line 532
+    .line 536
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mTouchDownTime:J
@@ -3434,7 +3434,7 @@
 
     sub-long/2addr v4, v6
 
-    .line 533
+    .line 537
     move-object/from16 v0, p0
 
     iget-wide v6, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mTouchDownTime:J
@@ -3443,47 +3443,47 @@
 
     sub-long/2addr v6, v8
 
-    .line 536
+    .line 540
     move-object/from16 v0, p0
 
     iget-object v10, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
 
-    .line 537
+    .line 541
     move-object/from16 v0, p0
 
     iget-object v11, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
-    .line 534
+    .line 538
     const/16 v8, 0x8
 
-    .line 535
+    .line 539
     const/4 v9, 0x1
 
-    .line 538
+    .line 542
     const/4 v12, 0x0
 
-    .line 539
+    .line 543
     const/4 v13, 0x0
 
-    .line 541
+    .line 545
     const/high16 v15, 0x3f800000    # 1.0f
 
-    .line 542
+    .line 546
     const/high16 v16, 0x3f800000    # 1.0f
 
-    .line 543
+    .line 547
     const/16 v17, 0xa
 
-    .line 544
+    .line 548
     const/16 v18, 0x0
 
-    .line 545
+    .line 549
     const/16 v19, 0x2002
 
-    .line 546
+    .line 550
     const/16 v20, 0x0
 
-    .line 532
+    .line 536
     invoke-static/range {v4 .. v20}, Landroid/view/MotionEvent;->obtain(JJII[Landroid/view/MotionEvent$PointerProperties;[Landroid/view/MotionEvent$PointerCoords;IIIFFIIII)Landroid/view/MotionEvent;
 
     move-result-object v4
@@ -3492,7 +3492,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->me:Landroid/view/MotionEvent;
 
-    .line 547
+    .line 551
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->me:Landroid/view/MotionEvent;
@@ -3501,7 +3501,7 @@
 
     invoke-virtual {v4, v5}, Landroid/view/MotionEvent;->setSource(I)V
 
-    .line 548
+    .line 552
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -3534,7 +3534,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 549
+    .line 553
     :cond_c
     invoke-static {}, Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager;
 
@@ -3548,17 +3548,17 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z
 
-    .line 550
+    .line 554
     const/4 v4, 0x0
 
     move-object/from16 v0, p0
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->me:Landroid/view/MotionEvent;
 
-    .line 551
+    .line 555
     return-void
 
-    .line 481
+    .line 485
     :cond_d
     invoke-virtual/range {v30 .. v30}, Landroid/hardware/display/DisplayManager;->isAuSLServiceRunning()Z
 
@@ -3566,14 +3566,14 @@
 
     if-eqz v4, :cond_e
 
-    .line 482
+    .line 486
     sget-object v4, Landroid/media/WFDUibcManager$UIBC_Mode;->FULL_SCREEN:Landroid/media/WFDUibcManager$UIBC_Mode;
 
     move-object/from16 v0, p0
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Mode:Landroid/media/WFDUibcManager$UIBC_Mode;
 
-    .line 483
+    .line 487
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -3588,7 +3588,7 @@
 
     goto/16 :goto_1
 
-    .line 484
+    .line 488
     :cond_e
     move-object/from16 v0, v24
 
@@ -3614,7 +3614,7 @@
 
     if-ne v4, v5, :cond_10
 
-    .line 485
+    .line 489
     :cond_f
     sget-object v4, Landroid/media/WFDUibcManager$UIBC_Mode;->PORTRAIT_SCREEN:Landroid/media/WFDUibcManager$UIBC_Mode;
 
@@ -3622,7 +3622,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Mode:Landroid/media/WFDUibcManager$UIBC_Mode;
 
-    .line 486
+    .line 490
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -3637,7 +3637,7 @@
 
     goto/16 :goto_1
 
-    .line 484
+    .line 488
     :cond_10
     move-object/from16 v0, p0
 
@@ -3649,7 +3649,7 @@
 
     if-nez v4, :cond_f
 
-    .line 490
+    .line 494
     const-string/jumbo v4, "android.hardware.display.category.PRESENTATION"
 
     move-object/from16 v0, v30
@@ -3658,7 +3658,7 @@
 
     move-result-object v40
 
-    .line 491
+    .line 495
     .local v40, "presentationDisplays":[Landroid/view/Display;
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -3692,13 +3692,13 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 492
+    .line 496
     :cond_11
     invoke-virtual/range {v30 .. v30}, Landroid/hardware/display/DisplayManager;->getDisplays()[Landroid/view/Display;
 
     move-result-object v21
 
-    .line 493
+    .line 497
     .local v21, "allDisplays":[Landroid/view/Display;
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -3732,7 +3732,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 495
+    .line 499
     :cond_12
     const/16 v27, 0x0
 
@@ -3746,10 +3746,10 @@
 
     if-ge v0, v4, :cond_a
 
-    .line 496
+    .line 500
     aget-object v23, v40, v27
 
-    .line 497
+    .line 501
     .local v23, "display":Landroid/view/Display;
     invoke-virtual/range {v23 .. v23}, Landroid/view/Display;->getDisplayId()I
 
@@ -3757,7 +3757,7 @@
 
     if-ne v14, v4, :cond_16
 
-    .line 498
+    .line 502
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -3792,7 +3792,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 500
+    .line 504
     :cond_13
     move-object/from16 v0, p0
 
@@ -3826,7 +3826,7 @@
 
     if-ne v14, v4, :cond_15
 
-    .line 501
+    .line 505
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -3869,7 +3869,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 502
+    .line 506
     :cond_14
     move-object/from16 v0, p0
 
@@ -3879,7 +3879,7 @@
 
     invoke-virtual {v0, v4}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 503
+    .line 507
     sget-object v4, Landroid/media/WFDUibcManager$UIBC_Mode;->PRESENTATION:Landroid/media/WFDUibcManager$UIBC_Mode;
 
     move-object/from16 v0, p0
@@ -3888,7 +3888,7 @@
 
     goto/16 :goto_1
 
-    .line 506
+    .line 510
     :cond_15
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -3934,13 +3934,13 @@
 
     goto/16 :goto_1
 
-    .line 495
+    .line 499
     :cond_16
     add-int/lit8 v27, v27, 0x1
 
     goto/16 :goto_2
 
-    .line 554
+    .line 558
     .end local v21    # "allDisplays":[Landroid/view/Display;
     .end local v23    # "display":Landroid/view/Display;
     .end local v27    # "i":I
@@ -3962,7 +3962,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kX:F
 
-    .line 555
+    .line 559
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -3979,7 +3979,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
 
-    .line 556
+    .line 560
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -3996,7 +3996,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kH:F
 
-    .line 557
+    .line 561
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -4013,26 +4013,26 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kW:F
 
-    .line 558
+    .line 562
     const/high16 v4, 0x3f800000    # 1.0f
 
     move-object/from16 v0, p0
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 559
+    .line 563
     const/high16 v4, 0x3f800000    # 1.0f
 
     move-object/from16 v0, p0
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 561
+    .line 565
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v22
 
-    .line 563
+    .line 567
     .local v22, "count":I
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -4066,7 +4066,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 564
+    .line 568
     :cond_18
     const/16 v27, 0x0
 
@@ -4078,7 +4078,7 @@
 
     if-ge v0, v1, :cond_2f
 
-    .line 565
+    .line 569
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
@@ -4087,7 +4087,7 @@
 
     invoke-virtual {v4}, Landroid/view/MotionEvent$PointerProperties;->clear()V
 
-    .line 566
+    .line 570
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -4096,7 +4096,7 @@
 
     invoke-virtual {v4}, Landroid/view/MotionEvent$PointerCoords;->clear()V
 
-    .line 567
+    .line 571
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
@@ -4109,7 +4109,7 @@
 
     invoke-virtual {v0, v1, v4}, Landroid/view/MotionEvent;->getPointerProperties(ILandroid/view/MotionEvent$PointerProperties;)V
 
-    .line 568
+    .line 572
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -4122,7 +4122,7 @@
 
     invoke-virtual {v0, v1, v4}, Landroid/view/MotionEvent;->getPointerCoords(ILandroid/view/MotionEvent$PointerCoords;)V
 
-    .line 569
+    .line 573
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -4165,10 +4165,10 @@
 
     move-result-object v5
 
-    .line 570
+    .line 574
     const-string/jumbo v6, " aPtrCoords["
 
-    .line 569
+    .line 573
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -4179,15 +4179,15 @@
 
     move-result-object v5
 
-    .line 570
+    .line 574
     const-string/jumbo v6, "].y: "
 
-    .line 569
+    .line 573
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v5
 
-    .line 570
+    .line 574
     move-object/from16 v0, p0
 
     iget-object v6, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -4196,7 +4196,7 @@
 
     iget v6, v6, Landroid/view/MotionEvent$PointerCoords;->y:F
 
-    .line 569
+    .line 573
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     move-result-object v5
@@ -4207,7 +4207,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 572
+    .line 576
     :cond_19
     invoke-static {}, Landroid/media/WFDUibcManager$EventDispatcher;->-getandroid-media-WFDUibcManager$UIBC_ModeSwitchesValues()[I
 
@@ -4225,7 +4225,7 @@
 
     packed-switch v4, :pswitch_data_0
 
-    .line 647
+    .line 651
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
@@ -4246,7 +4246,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->configuration:Landroid/content/res/Configuration;
 
-    .line 648
+    .line 652
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -4269,7 +4269,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->screenRatio:F
 
-    .line 649
+    .line 653
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
@@ -4292,7 +4292,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->wfdRatio:F
 
-    .line 650
+    .line 654
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -4325,7 +4325,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 651
+    .line 655
     :cond_1a
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -4373,7 +4373,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 652
+    .line 656
     :cond_1b
     move-object/from16 v0, p0
 
@@ -4385,7 +4385,7 @@
 
     if-ne v4, v5, :cond_2c
 
-    .line 653
+    .line 657
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->screenRatio:F
@@ -4398,7 +4398,7 @@
 
     if-gez v4, :cond_2a
 
-    .line 655
+    .line 659
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kW:F
@@ -4419,7 +4419,7 @@
 
     div-float v36, v4, v5
 
-    .line 656
+    .line 660
     .local v36, "newWidth":F
     move-object/from16 v0, p0
 
@@ -4435,7 +4435,7 @@
 
     div-float v39, v4, v5
 
-    .line 657
+    .line 661
     .local v39, "pad":F
     move-object/from16 v0, p0
 
@@ -4459,7 +4459,7 @@
 
     mul-float v37, v4, v5
 
-    .line 658
+    .line 662
     .local v37, "normX":F
     move-object/from16 v0, p0
 
@@ -4479,7 +4479,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 659
+    .line 663
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -4498,7 +4498,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 660
+    .line 664
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -4513,7 +4513,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 661
+    .line 665
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -4528,7 +4528,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 701
+    .line 705
     .end local v36    # "newWidth":F
     .end local v37    # "normX":F
     .end local v39    # "pad":F
@@ -4580,13 +4580,13 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 564
+    .line 568
     :cond_1d
     add-int/lit8 v27, v27, 0x1
 
     goto/16 :goto_3
 
-    .line 574
+    .line 578
     :pswitch_0
     move-object/from16 v0, p0
 
@@ -4596,7 +4596,7 @@
 
     goto :goto_4
 
-    .line 579
+    .line 583
     :pswitch_1
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -4610,7 +4610,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 580
+    .line 584
     :cond_1e
     move-object/from16 v0, p0
 
@@ -4630,7 +4630,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 581
+    .line 585
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -4649,7 +4649,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 582
+    .line 586
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -4664,7 +4664,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 583
+    .line 587
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -4681,7 +4681,7 @@
 
     goto/16 :goto_4
 
-    .line 587
+    .line 591
     :pswitch_2
     move-object/from16 v0, p0
 
@@ -4695,7 +4695,7 @@
 
     move-result v41
 
-    .line 588
+    .line 592
     .local v41, "rotation":I
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -4727,11 +4727,11 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 589
+    .line 593
     :cond_1f
     if-nez v41, :cond_20
 
-    .line 590
+    .line 594
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -4760,7 +4760,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 591
+    .line 595
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -4779,7 +4779,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 604
+    .line 608
     :goto_5
     move-object/from16 v0, p0
 
@@ -4795,7 +4795,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 605
+    .line 609
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -4812,7 +4812,7 @@
 
     goto/16 :goto_4
 
-    .line 592
+    .line 596
     :cond_20
     const/4 v4, 0x3
 
@@ -4820,7 +4820,7 @@
 
     if-ne v0, v4, :cond_21
 
-    .line 593
+    .line 597
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -4849,7 +4849,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 594
+    .line 598
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -4880,7 +4880,7 @@
 
     goto :goto_5
 
-    .line 596
+    .line 600
     :cond_21
     const/4 v4, 0x2
 
@@ -4888,7 +4888,7 @@
 
     if-ne v0, v4, :cond_22
 
-    .line 597
+    .line 601
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kX:F
@@ -4907,7 +4907,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 598
+    .line 602
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -4938,7 +4938,7 @@
 
     goto/16 :goto_5
 
-    .line 600
+    .line 604
     :cond_22
     move-object/from16 v0, p0
 
@@ -4958,7 +4958,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 601
+    .line 605
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -4979,7 +4979,7 @@
 
     goto/16 :goto_5
 
-    .line 609
+    .line 613
     .end local v41    # "rotation":I
     :pswitch_3
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
@@ -4994,7 +4994,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 610
+    .line 614
     :cond_23
     move-object/from16 v0, p0
 
@@ -5014,7 +5014,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 611
+    .line 615
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -5033,7 +5033,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 612
+    .line 616
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5048,7 +5048,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 613
+    .line 617
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5065,7 +5065,7 @@
 
     goto/16 :goto_4
 
-    .line 617
+    .line 621
     :pswitch_4
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -5079,7 +5079,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 619
+    .line 623
     :cond_24
     move-object/from16 v0, p0
 
@@ -5101,7 +5101,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->configuration:Landroid/content/res/Configuration;
 
-    .line 620
+    .line 624
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -5124,7 +5124,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->screenRatio:F
 
-    .line 621
+    .line 625
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
@@ -5147,7 +5147,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->wfdRatio:F
 
-    .line 622
+    .line 626
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -5180,7 +5180,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 623
+    .line 627
     :cond_25
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -5228,7 +5228,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 625
+    .line 629
     :cond_26
     move-object/from16 v0, p0
 
@@ -5240,7 +5240,7 @@
 
     if-ne v4, v5, :cond_28
 
-    .line 626
+    .line 630
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -5253,7 +5253,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 628
+    .line 632
     :cond_27
     move-object/from16 v0, p0
 
@@ -5275,7 +5275,7 @@
 
     div-float v35, v4, v5
 
-    .line 629
+    .line 633
     .local v35, "newHeight":F
     move-object/from16 v0, p0
 
@@ -5291,7 +5291,7 @@
 
     div-float v39, v4, v5
 
-    .line 630
+    .line 634
     .restart local v39    # "pad":F
     move-object/from16 v0, p0
 
@@ -5315,7 +5315,7 @@
 
     mul-float v38, v4, v5
 
-    .line 631
+    .line 635
     .local v38, "normY":F
     move-object/from16 v0, p0
 
@@ -5335,7 +5335,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 632
+    .line 636
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -5354,7 +5354,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 633
+    .line 637
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5369,7 +5369,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 634
+    .line 638
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5384,7 +5384,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 635
+    .line 639
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -5441,7 +5441,7 @@
 
     goto/16 :goto_4
 
-    .line 638
+    .line 642
     .end local v35    # "newHeight":F
     .end local v38    # "normY":F
     .end local v39    # "pad":F
@@ -5458,7 +5458,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 639
+    .line 643
     :cond_29
     move-object/from16 v0, p0
 
@@ -5478,7 +5478,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 640
+    .line 644
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -5497,7 +5497,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 641
+    .line 645
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5512,7 +5512,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 642
+    .line 646
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5529,7 +5529,7 @@
 
     goto/16 :goto_4
 
-    .line 663
+    .line 667
     :cond_2a
     move-object/from16 v0, p0
 
@@ -5543,7 +5543,7 @@
 
     if-lez v4, :cond_2b
 
-    .line 665
+    .line 669
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kH:F
@@ -5564,7 +5564,7 @@
 
     div-float v35, v4, v5
 
-    .line 666
+    .line 670
     .restart local v35    # "newHeight":F
     move-object/from16 v0, p0
 
@@ -5580,7 +5580,7 @@
 
     div-float v39, v4, v5
 
-    .line 667
+    .line 671
     .restart local v39    # "pad":F
     move-object/from16 v0, p0
 
@@ -5604,7 +5604,7 @@
 
     mul-float v38, v4, v5
 
-    .line 668
+    .line 672
     .restart local v38    # "normY":F
     move-object/from16 v0, p0
 
@@ -5624,7 +5624,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 669
+    .line 673
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
@@ -5643,7 +5643,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 670
+    .line 674
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5658,7 +5658,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 671
+    .line 675
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5675,7 +5675,7 @@
 
     goto/16 :goto_4
 
-    .line 674
+    .line 678
     .end local v35    # "newHeight":F
     .end local v38    # "normY":F
     .end local v39    # "pad":F
@@ -5698,7 +5698,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 675
+    .line 679
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -5717,7 +5717,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 676
+    .line 680
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5732,7 +5732,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 677
+    .line 681
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5749,7 +5749,7 @@
 
     goto/16 :goto_4
 
-    .line 681
+    .line 685
     :cond_2c
     move-object/from16 v0, p0
 
@@ -5763,7 +5763,7 @@
 
     if-gez v4, :cond_2d
 
-    .line 683
+    .line 687
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kW:F
@@ -5784,7 +5784,7 @@
 
     div-float v36, v4, v5
 
-    .line 684
+    .line 688
     .restart local v36    # "newWidth":F
     move-object/from16 v0, p0
 
@@ -5800,7 +5800,7 @@
 
     div-float v39, v4, v5
 
-    .line 685
+    .line 689
     .restart local v39    # "pad":F
     move-object/from16 v0, p0
 
@@ -5824,7 +5824,7 @@
 
     mul-float v37, v4, v5
 
-    .line 686
+    .line 690
     .restart local v37    # "normX":F
     move-object/from16 v0, p0
 
@@ -5844,7 +5844,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 687
+    .line 691
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -5863,7 +5863,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 688
+    .line 692
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5878,7 +5878,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 689
+    .line 693
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5895,7 +5895,7 @@
 
     goto/16 :goto_4
 
-    .line 690
+    .line 694
     .end local v36    # "newWidth":F
     .end local v37    # "normX":F
     .end local v39    # "pad":F
@@ -5920,7 +5920,7 @@
 
     if-gez v4, :cond_2e
 
-    .line 691
+    .line 695
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kX:F
@@ -5939,7 +5939,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_X:F
 
-    .line 692
+    .line 696
     move-object/from16 v0, p0
 
     iget v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->kY:F
@@ -5958,7 +5958,7 @@
 
     iput v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Me_Y:F
 
-    .line 693
+    .line 697
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5973,7 +5973,7 @@
 
     invoke-virtual {v4, v6, v5}, Landroid/view/MotionEvent$PointerCoords;->setAxisValue(IF)V
 
-    .line 694
+    .line 698
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
@@ -5990,7 +5990,7 @@
 
     goto/16 :goto_4
 
-    .line 696
+    .line 700
     :cond_2e
     const-string/jumbo v4, "WFDUibcManager"
 
@@ -6000,7 +6000,7 @@
 
     goto/16 :goto_4
 
-    .line 704
+    .line 708
     :cond_2f
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -6034,7 +6034,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 706
+    .line 710
     :cond_30
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getAction()I
 
@@ -6042,7 +6042,7 @@
 
     if-nez v4, :cond_31
 
-    .line 708
+    .line 712
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v4
@@ -6051,7 +6051,7 @@
 
     iput-wide v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mTouchDownTime:J
 
-    .line 711
+    .line 715
     :cond_31
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getAction()I
 
@@ -6065,13 +6065,13 @@
 
     or-int v31, v4, v5
 
-    .line 712
+    .line 716
     .local v31, "motionAction":I
     invoke-static/range {v31 .. v31}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v26
 
-    .line 713
+    .line 717
     .local v26, "hex":Ljava/lang/String;
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -6103,7 +6103,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 715
+    .line 719
     :cond_32
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getAction()I
 
@@ -6115,67 +6115,67 @@
 
     if-ne v4, v5, :cond_37
 
-    .line 716
+    .line 720
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mTouchDownTime:J
 
-    .line 717
+    .line 721
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v6
 
-    .line 718
+    .line 722
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v8
 
     and-int/lit16 v8, v8, 0xff
 
-    .line 719
+    .line 723
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v9
 
-    .line 720
+    .line 724
     move-object/from16 v0, p0
 
     iget-object v10, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
 
-    .line 721
+    .line 725
     move-object/from16 v0, p0
 
     iget-object v11, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
-    .line 727
+    .line 731
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getDeviceId()I
 
     move-result v17
 
-    .line 729
+    .line 733
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getSource()I
 
     move-result v19
 
-    .line 722
+    .line 726
     const/4 v12, 0x0
 
-    .line 723
+    .line 727
     const/4 v13, 0x0
 
-    .line 725
+    .line 729
     const/high16 v15, 0x3f800000    # 1.0f
 
-    .line 726
+    .line 730
     const/high16 v16, 0x3f800000    # 1.0f
 
-    .line 728
+    .line 732
     const/16 v18, 0x0
 
-    .line 730
+    .line 734
     const/16 v20, 0x0
 
-    .line 716
+    .line 720
     invoke-static/range {v4 .. v20}, Landroid/view/MotionEvent;->obtain(JJII[Landroid/view/MotionEvent$PointerProperties;[Landroid/view/MotionEvent$PointerCoords;IIIFFIIII)Landroid/view/MotionEvent;
 
     move-result-object v4
@@ -6184,7 +6184,7 @@
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->me:Landroid/view/MotionEvent;
 
-    .line 747
+    .line 751
     :goto_6
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -6218,7 +6218,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 749
+    .line 753
     :cond_33
     invoke-static {}, Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager;
 
@@ -6232,14 +6232,14 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z
 
-    .line 751
+    .line 755
     const/4 v4, 0x0
 
     move-object/from16 v0, p0
 
     iput-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->me:Landroid/view/MotionEvent;
 
-    .line 753
+    .line 757
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->Mode:Landroid/media/WFDUibcManager$UIBC_Mode;
@@ -6258,12 +6258,12 @@
 
     if-nez v4, :cond_36
 
-    .line 754
+    .line 758
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v32
 
-    .line 755
+    .line 759
     .local v32, "mlTempTime":J
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -6299,7 +6299,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 756
+    .line 760
     :cond_34
     move-object/from16 v0, p0
 
@@ -6313,7 +6313,7 @@
 
     if-lez v4, :cond_36
 
-    .line 757
+    .line 761
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -6326,7 +6326,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 759
+    .line 763
     :cond_35
     :try_start_0
     new-instance v43, Landroid/content/Intent;
@@ -6337,7 +6337,7 @@
 
     invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 760
+    .line 764
     .local v43, "virtualKey_Intent":Landroid/content/Intent;
     const-string/jumbo v4, "UIBC_X"
 
@@ -6351,7 +6351,7 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 761
+    .line 765
     const-string/jumbo v4, "UIBC_Y"
 
     move-object/from16 v0, p0
@@ -6364,14 +6364,14 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 762
+    .line 766
     const-string/jumbo v4, "DISPLAY_ID"
 
     move-object/from16 v0, v43
 
     invoke-virtual {v0, v4, v14}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 763
+    .line 767
     move-object/from16 v0, p0
 
     iget-object v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
@@ -6386,7 +6386,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 767
+    .line 771
     .end local v43    # "virtualKey_Intent":Landroid/content/Intent;
     :goto_7
     move-wide/from16 v0, v32
@@ -6395,23 +6395,23 @@
 
     iput-wide v0, v2, Landroid/media/WFDUibcManager$EventDispatcher;->mBroadTime:J
 
-    .line 432
+    .line 436
     .end local v32    # "mlTempTime":J
     :cond_36
     return-void
 
-    .line 732
+    .line 736
     :cond_37
     move-object/from16 v0, p0
 
     iget-wide v4, v0, Landroid/media/WFDUibcManager$EventDispatcher;->mTouchDownTime:J
 
-    .line 733
+    .line 737
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v6
 
-    .line 734
+    .line 738
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v8
@@ -6424,50 +6424,50 @@
 
     or-int/2addr v8, v9
 
-    .line 735
+    .line 739
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v9
 
-    .line 736
+    .line 740
     move-object/from16 v0, p0
 
     iget-object v10, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
 
-    .line 737
+    .line 741
     move-object/from16 v0, p0
 
     iget-object v11, v0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
-    .line 743
+    .line 747
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getDeviceId()I
 
     move-result v17
 
-    .line 745
+    .line 749
     invoke-virtual/range {v34 .. v34}, Landroid/view/MotionEvent;->getSource()I
 
     move-result v19
 
-    .line 738
+    .line 742
     const/4 v12, 0x0
 
-    .line 739
+    .line 743
     const/4 v13, 0x0
 
-    .line 741
+    .line 745
     const/high16 v15, 0x3f800000    # 1.0f
 
-    .line 742
+    .line 746
     const/high16 v16, 0x3f800000    # 1.0f
 
-    .line 744
+    .line 748
     const/16 v18, 0x0
 
-    .line 746
+    .line 750
     const/16 v20, 0x0
 
-    .line 732
+    .line 736
     invoke-static/range {v4 .. v20}, Landroid/view/MotionEvent;->obtain(JJII[Landroid/view/MotionEvent$PointerProperties;[Landroid/view/MotionEvent$PointerCoords;IIIFFIIII)Landroid/view/MotionEvent;
 
     move-result-object v4
@@ -6478,12 +6478,12 @@
 
     goto/16 :goto_6
 
-    .line 764
+    .line 768
     .restart local v32    # "mlTempTime":J
     :catch_0
     move-exception v25
 
-    .line 765
+    .line 769
     .local v25, "e":Ljava/lang/Exception;
     const-string/jumbo v4, "WFDUibcManager"
 
@@ -6495,7 +6495,7 @@
 
     goto :goto_7
 
-    .line 572
+    .line 576
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -6520,24 +6520,24 @@
 
     const/4 v7, 0x0
 
-    .line 994
+    .line 998
     new-array v4, v6, [Landroid/view/MotionEvent$PointerProperties;
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
 
-    .line 995
+    .line 999
     new-array v4, v6, [Landroid/view/MotionEvent$PointerCoords;
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
-    .line 997
+    .line 1001
     const/4 v1, 0x0
 
     .local v1, "i":I
     :goto_0
     if-ge v1, v6, :cond_0
 
-    .line 998
+    .line 1002
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPointerProp:[Landroid/view/MotionEvent$PointerProperties;
 
     new-instance v5, Landroid/view/MotionEvent$PointerProperties;
@@ -6546,7 +6546,7 @@
 
     aput-object v5, v4, v1
 
-    .line 999
+    .line 1003
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->aPtrCoords:[Landroid/view/MotionEvent$PointerCoords;
 
     new-instance v5, Landroid/view/MotionEvent$PointerCoords;
@@ -6555,12 +6555,12 @@
 
     aput-object v5, v4, v1
 
-    .line 997
+    .line 1001
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1001
+    .line 1005
     :cond_0
     new-instance v4, Landroid/util/DisplayMetrics;
 
@@ -6568,7 +6568,7 @@
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->displayMetrics:Landroid/util/DisplayMetrics;
 
-    .line 1002
+    .line 1006
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-static {v4}, Landroid/media/WFDUibcManager;->-get1(Landroid/media/WFDUibcManager;)Landroid/content/Context;
@@ -6585,28 +6585,28 @@
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->wm:Landroid/view/WindowManager;
 
-    .line 1004
+    .line 1008
     :cond_1
     :goto_1
     iget-boolean v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->running:Z
 
     if-eqz v4, :cond_11
 
-    .line 1005
+    .line 1009
     invoke-virtual {p0}, Landroid/media/WFDUibcManager$EventQueue;->getNextEvent()Landroid/view/InputEvent;
 
     move-result-object v4
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->ev:Landroid/view/InputEvent;
 
-    .line 1006
+    .line 1010
     invoke-virtual {p0}, Landroid/media/WFDUibcManager$EventQueue;->getRotateEvent()Ljava/lang/Integer;
 
     move-result-object v4
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
-    .line 1007
+    .line 1011
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->ev:Landroid/view/InputEvent;
 
     if-nez v4, :cond_2
@@ -6615,7 +6615,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 1012
+    .line 1016
     :cond_2
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -6647,7 +6647,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1013
+    .line 1017
     :cond_3
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -6679,7 +6679,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1015
+    .line 1019
     :cond_4
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->ev:Landroid/view/InputEvent;
 
@@ -6687,17 +6687,17 @@
 
     if-eqz v4, :cond_e
 
-    .line 1016
+    .line 1020
     invoke-direct {p0}, Landroid/media/WFDUibcManager$EventDispatcher;->handleMotionEvent()V
 
-    .line 1021
+    .line 1025
     :cond_5
     :goto_2
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
     if-eqz v4, :cond_1
 
-    .line 1022
+    .line 1026
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-static {v4}, Landroid/media/WFDUibcManager;->-get1(Landroid/media/WFDUibcManager;)Landroid/content/Context;
@@ -6714,7 +6714,7 @@
 
     move-result v0
 
-    .line 1023
+    .line 1027
     .local v0, "accel":I
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -6730,7 +6730,7 @@
 
     invoke-static {v4, v5, v7}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1024
+    .line 1028
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-static {v4}, Landroid/media/WFDUibcManager;->-get1(Landroid/media/WFDUibcManager;)Landroid/content/Context;
@@ -6747,7 +6747,7 @@
 
     move-result v3
 
-    .line 1025
+    .line 1029
     .local v3, "rotation":I
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -6777,7 +6777,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1026
+    .line 1030
     :cond_6
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -6793,7 +6793,7 @@
 
     check-cast v2, Landroid/hardware/display/DisplayManager;
 
-    .line 1027
+    .line 1031
     .local v2, "mDm":Landroid/hardware/display/DisplayManager;
     invoke-virtual {v2}, Landroid/hardware/display/DisplayManager;->isAuSLServiceRunning()Z
 
@@ -6801,7 +6801,7 @@
 
     if-eqz v4, :cond_f
 
-    .line 1028
+    .line 1032
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
     move-result v4
@@ -6814,13 +6814,13 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1029
+    .line 1033
     :cond_7
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
-    .line 1033
+    .line 1037
     :goto_3
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
@@ -6836,7 +6836,7 @@
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
-    .line 1034
+    .line 1038
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
     invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
@@ -6859,7 +6859,7 @@
 
     iput-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
-    .line 1036
+    .line 1040
     :cond_8
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
@@ -6884,7 +6884,7 @@
     :goto_4
     const/4 v3, 0x0
 
-    .line 1037
+    .line 1041
     :cond_9
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
@@ -6904,7 +6904,7 @@
 
     const/4 v3, 0x1
 
-    .line 1038
+    .line 1042
     :cond_a
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
@@ -6926,7 +6926,7 @@
 
     const/4 v3, 0x2
 
-    .line 1039
+    .line 1043
     :cond_b
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
@@ -6950,7 +6950,7 @@
 
     const/4 v3, 0x3
 
-    .line 1040
+    .line 1044
     :cond_c
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -6980,7 +6980,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1041
+    .line 1045
     :cond_d
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
@@ -6996,7 +6996,7 @@
 
     invoke-static {v4, v5, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1042
+    .line 1046
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-static {v4}, Landroid/media/WFDUibcManager;->-get1(Landroid/media/WFDUibcManager;)Landroid/content/Context;
@@ -7013,7 +7013,7 @@
 
     goto/16 :goto_1
 
-    .line 1018
+    .line 1022
     .end local v0    # "accel":I
     .end local v2    # "mDm":Landroid/hardware/display/DisplayManager;
     .end local v3    # "rotation":I
@@ -7024,12 +7024,12 @@
 
     if-eqz v4, :cond_5
 
-    .line 1019
+    .line 1023
     invoke-direct {p0}, Landroid/media/WFDUibcManager$EventDispatcher;->handleKeyEvent()V
 
     goto/16 :goto_2
 
-    .line 1031
+    .line 1035
     .restart local v0    # "accel":I
     .restart local v2    # "mDm":Landroid/hardware/display/DisplayManager;
     .restart local v3    # "rotation":I
@@ -7052,7 +7052,7 @@
 
     goto/16 :goto_3
 
-    .line 1036
+    .line 1040
     :cond_10
     iget-object v4, p0, Landroid/media/WFDUibcManager$EventDispatcher;->rEv:Ljava/lang/Integer;
 
@@ -7072,7 +7072,7 @@
 
     goto/16 :goto_4
 
-    .line 993
+    .line 997
     .end local v0    # "accel":I
     .end local v2    # "mDm":Landroid/hardware/display/DisplayManager;
     .end local v3    # "rotation":I

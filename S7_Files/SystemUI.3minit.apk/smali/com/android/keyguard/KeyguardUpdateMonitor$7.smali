@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     .prologue
-    .line 1253
+    .line 1256
     iput-object p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$7;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-direct {p0}, Landroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "acquireInfo"    # I
 
     .prologue
-    .line 1283
+    .line 1286
     const-string/jumbo v0, "KeyguardFingerPrint"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -62,19 +62,19 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1285
+    .line 1288
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$7;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     const/16 v1, 0x5dc
 
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap2(Lcom/android/keyguard/KeyguardUpdateMonitor;I)V
 
-    .line 1287
+    .line 1290
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$7;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-static {v0, p1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap9(Lcom/android/keyguard/KeyguardUpdateMonitor;I)V
 
-    .line 1282
+    .line 1285
     return-void
 .end method
 
@@ -84,14 +84,14 @@
     .param p2, "errString"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 1277
+    .line 1280
     const-string/jumbo v0, "KeyguardFingerPrint"
 
     const-string/jumbo v1, "onAuthenticationError()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1278
+    .line 1281
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$7;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-interface {p2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -100,7 +100,7 @@
 
     invoke-static {v0, p1, v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap12(Lcom/android/keyguard/KeyguardUpdateMonitor;ILjava/lang/String;)V
 
-    .line 1276
+    .line 1279
     return-void
 .end method
 
@@ -108,19 +108,19 @@
     .locals 2
 
     .prologue
-    .line 1257
+    .line 1260
     const-string/jumbo v0, "KeyguardFingerPrint"
 
     const-string/jumbo v1, "onAuthenticationFailed()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1258
+    .line 1261
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$7;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap10(Lcom/android/keyguard/KeyguardUpdateMonitor;)V
 
-    .line 1256
+    .line 1259
     return-void
 .end method
 
@@ -130,7 +130,7 @@
     .param p2, "helpString"    # Ljava/lang/CharSequence;
 
     .prologue
-    .line 1271
+    .line 1274
     const-string/jumbo v0, "KeyguardFingerPrint"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -169,7 +169,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1272
+    .line 1275
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$7;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-interface {p2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -178,7 +178,7 @@
 
     invoke-static {v0, p1, v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap13(Lcom/android/keyguard/KeyguardUpdateMonitor;ILjava/lang/String;)V
 
-    .line 1270
+    .line 1273
     return-void
 .end method
 
@@ -187,19 +187,19 @@
     .param p1, "result"    # Landroid/hardware/fingerprint/FingerprintManager$AuthenticationResult;
 
     .prologue
-    .line 1263
+    .line 1266
     const-string/jumbo v0, "KeyguardUpdateMonitor#onAuthenticationSucceeded"
 
     invoke-static {v0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 1264
+    .line 1267
     const-string/jumbo v0, "KeyguardFingerPrint"
 
     const-string/jumbo v1, "onAuthenticationSucceeded()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1265
+    .line 1268
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$7;->this$0:Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     invoke-virtual {p1}, Landroid/hardware/fingerprint/FingerprintManager$AuthenticationResult;->getUserId()I
@@ -208,9 +208,9 @@
 
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-wrap11(Lcom/android/keyguard/KeyguardUpdateMonitor;I)V
 
-    .line 1266
+    .line 1269
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
-    .line 1262
+    .line 1265
     return-void
 .end method

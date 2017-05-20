@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
     .prologue
-    .line 437
+    .line 442
     iput-object p1, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver$1;->this$1:Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +43,12 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 445
+    .line 450
     sget-boolean v3, Lcom/android/server/power/PowerManagerUtil;->USE_PERSONAL_AUTO_BRIGHTNESS:Z
 
     if-nez v3, :cond_2
 
-    .line 446
+    .line 451
     iget-object v3, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver$1;->this$1:Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
     iget-object v3, v3, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
@@ -61,7 +61,7 @@
 
     move-result-object v2
 
-    .line 447
+    .line 452
     .local v2, "resolver":Landroid/content/ContentResolver;
     iget-object v3, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver$1;->this$1:Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
@@ -71,26 +71,26 @@
 
     move-result v1
 
-    .line 448
+    .line 453
     .local v1, "oldScreenBrightnessModeSetting":I
     iget-object v3, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver$1;->this$1:Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
     iget-object v3, v3, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
-    .line 449
+    .line 454
     const-string/jumbo v4, "screen_brightness_mode"
 
-    .line 450
+    .line 455
     const/4 v5, -0x2
 
-    .line 448
+    .line 453
     invoke-static {v2, v4, v0, v5}, Landroid/provider/Settings$System;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result v4
 
     invoke-static {v3, v4}, Lcom/android/server/display/AutomaticBrightnessController;->-set9(Lcom/android/server/display/AutomaticBrightnessController;I)I
 
-    .line 451
+    .line 456
     iget-object v3, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver$1;->this$1:Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
     iget-object v3, v3, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
@@ -103,7 +103,7 @@
 
     const/4 v0, 0x1
 
-    .line 452
+    .line 457
     .local v0, "modeChanged":Z
     :cond_0
     if-eqz v0, :cond_1
@@ -118,14 +118,14 @@
 
     if-eqz v3, :cond_1
 
-    .line 453
+    .line 458
     iget-object v3, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver$1;->this$1:Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
     iget-object v3, v3, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-static {v3}, Lcom/android/server/display/AutomaticBrightnessController;->-wrap1(Lcom/android/server/display/AutomaticBrightnessController;)V
 
-    .line 439
+    .line 444
     .end local v0    # "modeChanged":Z
     .end local v1    # "oldScreenBrightnessModeSetting":I
     .end local v2    # "resolver":Landroid/content/ContentResolver;
@@ -133,7 +133,7 @@
     :goto_0
     return-void
 
-    .line 456
+    .line 461
     :cond_2
     iget-object v3, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver$1;->this$1:Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
@@ -145,7 +145,7 @@
 
     monitor-enter v4
 
-    .line 457
+    .line 462
     :try_start_0
     iget-object v3, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver$1;->this$1:Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;
 
@@ -161,7 +161,7 @@
 
     goto :goto_0
 
-    .line 456
+    .line 461
     :catchall_0
     move-exception v3
 

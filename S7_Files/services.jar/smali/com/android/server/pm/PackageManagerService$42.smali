@@ -33,7 +33,7 @@
     .param p3, "val$userId"    # I
 
     .prologue
-    .line 32799
+    .line 32813
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$42;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iput p2, p0, Lcom/android/server/pm/PackageManagerService$42;->val$appId:I
@@ -51,19 +51,19 @@
     .locals 4
 
     .prologue
-    .line 32802
+    .line 32816
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$42;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget v1, p0, Lcom/android/server/pm/PackageManagerService$42;->val$appId:I
 
     iget v2, p0, Lcom/android/server/pm/PackageManagerService$42;->val$userId:I
 
-    .line 32803
+    .line 32817
     const-string/jumbo v3, "permissions revoked"
 
-    .line 32802
+    .line 32816
     invoke-static {v0, v1, v2, v3}, Lcom/android/server/pm/PackageManagerService;->-wrap34(Lcom/android/server/pm/PackageManagerService;IILjava/lang/String;)V
 
-    .line 32801
+    .line 32815
     return-void
 .end method

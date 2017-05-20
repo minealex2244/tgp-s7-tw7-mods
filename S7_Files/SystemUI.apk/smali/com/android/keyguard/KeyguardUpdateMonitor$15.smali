@@ -27,7 +27,7 @@
     .param p1, "val$context"    # Landroid/content/Context;
 
     .prologue
-    .line 3630
+    .line 3633
     iput-object p1, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$15;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 3634
+    .line 3637
     iget-object v0, p0, Lcom/android/keyguard/KeyguardUpdateMonitor$15;->val$context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/samsung/android/camera/iris/SemIrisManager;->getSemIrisManager(Landroid/content/Context;)Lcom/samsung/android/camera/iris/SemIrisManager;
@@ -50,6 +50,6 @@
 
     invoke-static {v0}, Lcom/android/keyguard/KeyguardUpdateMonitor;->-set7(Lcom/samsung/android/camera/iris/SemIrisManager;)Lcom/samsung/android/camera/iris/SemIrisManager;
 
-    .line 3633
+    .line 3636
     return-void
 .end method

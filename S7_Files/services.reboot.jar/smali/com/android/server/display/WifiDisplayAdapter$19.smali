@@ -33,7 +33,7 @@
     .param p3, "val$event"    # I
 
     .prologue
-    .line 1178
+    .line 1182
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$19;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iput p2, p0, Lcom/android/server/display/WifiDisplayAdapter$19;->val$param:I
@@ -51,12 +51,12 @@
     .locals 6
 
     .prologue
-    .line 1181
+    .line 1185
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 1182
+    .line 1186
     .local v0, "data":Landroid/os/Bundle;
     const-string/jumbo v2, "status"
 
@@ -64,7 +64,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 1183
+    .line 1187
     iget-object v2, p0, Lcom/android/server/display/WifiDisplayAdapter$19;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-virtual {v2}, Lcom/android/server/display/WifiDisplayAdapter;->getHandler()Landroid/os/Handler;
@@ -81,11 +81,11 @@
 
     move-result-object v1
 
-    .line 1184
+    .line 1188
     .local v1, "msg":Landroid/os/Message;
     invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    .line 1185
+    .line 1189
     const-string/jumbo v2, "WifiDisplayAdapter"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -122,7 +122,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1186
+    .line 1190
     iget-object v2, p0, Lcom/android/server/display/WifiDisplayAdapter$19;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-virtual {v2}, Lcom/android/server/display/WifiDisplayAdapter;->getHandler()Landroid/os/Handler;
@@ -131,6 +131,6 @@
 
     invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 1180
+    .line 1184
     return-void
 .end method

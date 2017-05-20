@@ -25,13 +25,13 @@
     .param p2, "handler"    # Landroid/os/Handler;
 
     .prologue
-    .line 428
+    .line 433
     iput-object p1, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
-    .line 430
+    .line 435
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 428
+    .line 433
     return-void
 .end method
 
@@ -42,10 +42,10 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 435
+    .line 440
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
-    .line 437
+    .line 442
     iget-object v0, p0, Lcom/android/server/display/AutomaticBrightnessController$SettingsObserver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-static {v0}, Lcom/android/server/display/AutomaticBrightnessController;->-get6(Lcom/android/server/display/AutomaticBrightnessController;)Lcom/android/server/display/AutomaticBrightnessController$AutomaticBrightnessHandler;
@@ -58,6 +58,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/display/AutomaticBrightnessController$AutomaticBrightnessHandler;->post(Ljava/lang/Runnable;)Z
 
-    .line 434
+    .line 439
     return-void
 .end method

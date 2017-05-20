@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/display/AutomaticBrightnessController;
 
     .prologue
-    .line 1698
+    .line 1711
     iput-object p1, p0, Lcom/android/server/display/AutomaticBrightnessController$UserSwitchedReceiver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,7 +42,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1701
+    .line 1714
     const-string/jumbo v0, "AutomaticBrightnessController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -55,32 +55,32 @@
 
     move-result-object v1
 
-    .line 1702
+    .line 1715
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
     move-result v2
 
-    .line 1701
+    .line 1714
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 1702
+    .line 1715
     const-string/jumbo v2, " -> "
 
-    .line 1701
+    .line 1714
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 1702
+    .line 1715
     const-string/jumbo v2, "android.intent.extra.user_handle"
 
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 1701
+    .line 1714
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -91,7 +91,7 @@
 
     invoke-static {v0, v1}, Lcom/android/server/power/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1703
+    .line 1716
     iget-object v0, p0, Lcom/android/server/display/AutomaticBrightnessController$UserSwitchedReceiver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-static {v0}, Lcom/android/server/display/AutomaticBrightnessController;->-get13(Lcom/android/server/display/AutomaticBrightnessController;)Ljava/lang/Object;
@@ -100,7 +100,7 @@
 
     monitor-enter v1
 
-    .line 1704
+    .line 1717
     :try_start_0
     iget-object v0, p0, Lcom/android/server/display/AutomaticBrightnessController$UserSwitchedReceiver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
@@ -108,7 +108,7 @@
 
     invoke-static {v0, v2}, Lcom/android/server/display/AutomaticBrightnessController;->-set10(Lcom/android/server/display/AutomaticBrightnessController;Z)Z
 
-    .line 1705
+    .line 1718
     iget-object v0, p0, Lcom/android/server/display/AutomaticBrightnessController$UserSwitchedReceiver;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     const/4 v2, 0x0
@@ -119,10 +119,10 @@
 
     monitor-exit v1
 
-    .line 1700
+    .line 1713
     return-void
 
-    .line 1703
+    .line 1716
     :catchall_0
     move-exception v0
 

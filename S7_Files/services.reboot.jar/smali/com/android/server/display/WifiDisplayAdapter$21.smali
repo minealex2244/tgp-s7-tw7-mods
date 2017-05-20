@@ -30,7 +30,7 @@
     .param p2, "val$address"    # Ljava/lang/String;
 
     .prologue
-    .line 1836
+    .line 1840
     iput-object p1, p0, Lcom/android/server/display/WifiDisplayAdapter$21;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     iput-object p2, p0, Lcom/android/server/display/WifiDisplayAdapter$21;->val$address:Ljava/lang/String;
@@ -46,7 +46,7 @@
     .locals 2
 
     .prologue
-    .line 1839
+    .line 1843
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$21;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get9(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/WifiDisplayController;
@@ -55,7 +55,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1842
+    .line 1846
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$21;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
     invoke-static {v0}, Lcom/android/server/display/WifiDisplayAdapter;->-get9(Lcom/android/server/display/WifiDisplayAdapter;)Lcom/android/server/display/WifiDisplayController;
@@ -66,7 +66,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/display/WifiDisplayController;->requestConnectWithPin(Ljava/lang/String;)V
 
-    .line 1838
+    .line 1842
     :cond_0
     return-void
 .end method

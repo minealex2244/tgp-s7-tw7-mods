@@ -91,7 +91,7 @@
     .locals 3
 
     .prologue
-    .line 199
+    .line 187
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/view/SemWindowManager;->mWindowManager:Landroid/view/IWindowManager;
 
@@ -101,15 +101,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 197
+    .line 185
     :goto_0
     return-void
 
-    .line 200
+    .line 188
     :catch_0
     move-exception v0
 
-    .line 201
+    .line 189
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "SemWindowManager"
 
@@ -124,7 +124,7 @@
     .locals 3
 
     .prologue
-    .line 168
+    .line 156
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/view/SemWindowManager;->mWindowManager:Landroid/view/IWindowManager;
 
@@ -138,11 +138,11 @@
 
     return v1
 
-    .line 169
+    .line 157
     :catch_0
     move-exception v0
 
-    .line 170
+    .line 158
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "SemWindowManager"
 
@@ -150,7 +150,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 172
+    .line 160
     const/4 v1, -0x1
 
     return v1
@@ -169,7 +169,7 @@
     .end annotation
 
     .prologue
-    .line 276
+    .line 264
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/view/SemWindowManager;->mWindowManager:Landroid/view/IWindowManager;
 
@@ -181,11 +181,11 @@
 
     return-object v1
 
-    .line 277
+    .line 265
     :catch_0
     move-exception v0
 
-    .line 278
+    .line 266
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v1, "SemWindowManager"
 
@@ -193,7 +193,7 @@
 
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 281
+    .line 269
     const/4 v1, 0x0
 
     return-object v1
@@ -312,7 +312,7 @@
     .param p3, "density"    # I
 
     .prologue
-    .line 186
+    .line 174
     :try_start_0
     iget-object v0, p0, Lcom/samsung/android/view/SemWindowManager;->mWindowManager:Landroid/view/IWindowManager;
 
@@ -330,15 +330,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 184
+    .line 172
     :goto_0
     return-void
 
-    .line 187
+    .line 175
     :catch_0
     move-exception v6
 
-    .line 188
+    .line 176
     .local v6, "e":Landroid/os/RemoteException;
     const-string/jumbo v0, "SemWindowManager"
 
@@ -459,101 +459,11 @@
     .line 137
     return-void
 
-    .line 142
+    .line 141
     .end local v1    # "e":Ljava/lang/Exception;
     .restart local v2    # "packageInfo":Landroid/content/pm/PackageInfo;
     :cond_1
     :try_start_1
-    invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
-
-    move-result-object v3
-
-    .line 143
-    invoke-virtual {p1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
-
-    move-result v5
-
-    const/4 v6, 0x0
-
-    .line 142
-    invoke-interface {v3, v4, v6, v5}, Landroid/content/pm/IPackageManager;->getPackageInfo(Ljava/lang/String;II)Landroid/content/pm/PackageInfo;
-
-    move-result-object v2
-
-    .line 144
-    const-string/jumbo v3, "SemWindowManager"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "setStartingWindowContentView : packageInfo="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 145
-    if-nez v2, :cond_2
-
-    .line 146
-    return-void
-
-    .line 147
-    :catch_1
-    move-exception v1
-
-    .line 148
-    .restart local v1    # "e":Ljava/lang/Exception;
-    const-string/jumbo v3, "SemWindowManager"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v5, "setStartingWindowContentView error ="
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v1}, Ljava/lang/Throwable;->fillInStackTrace()Ljava/lang/Throwable;
-
-    move-result-object v5
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 149
-    return-void
-
-    .line 153
-    .end local v1    # "e":Ljava/lang/Exception;
-    :cond_2
-    :try_start_2
     iget-object v3, p0, Lcom/samsung/android/view/SemWindowManager;->mWindowManager:Landroid/view/IWindowManager;
 
     invoke-virtual {p1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
@@ -561,18 +471,18 @@
     move-result-object v4
 
     invoke-interface {v3, v4, p2}, Landroid/view/IWindowManager;->setStartingWindowContentView(Ljava/lang/String;I)V
-    :try_end_2
-    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_2
+    :try_end_1
+    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 123
     :goto_0
     return-void
 
-    .line 154
-    :catch_2
+    .line 142
+    :catch_1
     move-exception v0
 
-    .line 155
+    .line 143
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v3, "SemWindowManager"
 

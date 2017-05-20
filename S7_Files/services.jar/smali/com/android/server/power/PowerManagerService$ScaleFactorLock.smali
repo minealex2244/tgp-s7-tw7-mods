@@ -30,16 +30,16 @@
     .param p2, "binder"    # Landroid/os/IBinder;
 
     .prologue
-    .line 5090
+    .line 5161
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$ScaleFactorLock;->this$0:Lcom/android/server/power/PowerManagerService;
 
-    .line 5091
+    .line 5162
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5092
+    .line 5163
     iput-object p2, p0, Lcom/android/server/power/PowerManagerService$ScaleFactorLock;->binder:Landroid/os/IBinder;
 
-    .line 5094
+    .line 5165
     const/4 v1, 0x0
 
     :try_start_0
@@ -47,15 +47,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5090
+    .line 5161
     :goto_0
     return-void
 
-    .line 5095
+    .line 5166
     :catch_0
     move-exception v0
 
-    .line 5096
+    .line 5167
     .local v0, "e":Landroid/os/RemoteException;
     invoke-virtual {p0}, Lcom/android/server/power/PowerManagerService$ScaleFactorLock;->binderDied()V
 
@@ -68,16 +68,16 @@
     .locals 3
 
     .prologue
-    .line 5101
+    .line 5172
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$ScaleFactorLock;->this$0:Lcom/android/server/power/PowerManagerService;
 
-    invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->-get34(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/server/power/PowerManagerService;->-get35(Lcom/android/server/power/PowerManagerService;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 5102
+    .line 5173
     :try_start_0
     const-string/jumbo v0, "PowerManagerService"
 
@@ -85,21 +85,21 @@
 
     invoke-static {v0, v2}, Lcom/android/server/power/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5104
+    .line 5175
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$ScaleFactorLock;->this$0:Lcom/android/server/power/PowerManagerService;
 
     const/high16 v2, -0x40800000    # -1.0f
 
     invoke-static {v0, v2}, Lcom/android/server/power/PowerManagerService;->-set28(Lcom/android/server/power/PowerManagerService;F)F
 
-    .line 5105
+    .line 5176
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$ScaleFactorLock;->this$0:Lcom/android/server/power/PowerManagerService;
 
     const/4 v2, 0x0
 
     invoke-static {v0, v2}, Lcom/android/server/power/PowerManagerService;->-set27(Lcom/android/server/power/PowerManagerService;Lcom/android/server/power/PowerManagerService$ScaleFactorLock;)Lcom/android/server/power/PowerManagerService$ScaleFactorLock;
 
-    .line 5106
+    .line 5177
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$ScaleFactorLock;->this$0:Lcom/android/server/power/PowerManagerService;
 
     iget v2, v0, Lcom/android/server/power/PowerManagerService;->mDirty:I
@@ -108,7 +108,7 @@
 
     iput v2, v0, Lcom/android/server/power/PowerManagerService;->mDirty:I
 
-    .line 5108
+    .line 5179
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$ScaleFactorLock;->this$0:Lcom/android/server/power/PowerManagerService;
 
     invoke-virtual {v0}, Lcom/android/server/power/PowerManagerService;->updatePowerStateLocked()V
@@ -117,10 +117,10 @@
 
     monitor-exit v1
 
-    .line 5100
+    .line 5171
     return-void
 
-    .line 5101
+    .line 5172
     :catchall_0
     move-exception v0
 

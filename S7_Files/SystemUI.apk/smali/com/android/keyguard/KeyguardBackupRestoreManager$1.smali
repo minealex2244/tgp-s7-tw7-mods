@@ -35,7 +35,7 @@
 
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 20
+    .locals 21
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "intent"    # Landroid/content/Intent;
 
@@ -77,10 +77,11 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 84
+    .line 85
     if-eqz v17, :cond_0
 
-    .line 85
+    .line 86
+    :try_start_0
     const-string/jumbo v1, "SAVE_PATH"
 
     move-object/from16 v0, p2
@@ -89,7 +90,7 @@
 
     move-result-object v12
 
-    .line 86
+    .line 87
     .local v12, "basePath":Ljava/lang/String;
     const-string/jumbo v1, "SOURCE"
 
@@ -99,7 +100,7 @@
 
     move-result-object v7
 
-    .line 87
+    .line 88
     .local v7, "source":Ljava/lang/String;
     const-string/jumbo v1, "SESSION_KEY"
 
@@ -109,7 +110,7 @@
 
     move-result-object v16
 
-    .line 88
+    .line 89
     .local v16, "saveKey":Ljava/lang/String;
     const-string/jumbo v1, "EXPORT_SESSION_TIME"
 
@@ -119,7 +120,7 @@
 
     move-result-object v8
 
-    .line 89
+    .line 90
     .local v8, "sessionTime":Ljava/lang/String;
     const-string/jumbo v1, "ACTION"
 
@@ -129,10 +130,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    move-result v18
+    move-result v19
 
-    .line 90
-    .local v18, "extraAction":I
+    .line 91
+    .local v19, "extraAction":I
     const-string/jumbo v1, "SECURITY_LEVEL"
 
     const/4 v2, 0x0
@@ -143,7 +144,7 @@
 
     move-result v14
 
-    .line 92
+    .line 93
     .local v14, "securityLevel":I
     const-string/jumbo v1, "com.sec.android.intent.action.REQUEST_BACKUP_LOCKSCREEN"
 
@@ -155,14 +156,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 93
+    .line 94
     const/4 v1, 0x2
 
-    move/from16 v0, v18
+    move/from16 v0, v19
 
     if-ne v0, v1, :cond_1
 
-    .line 96
+    .line 97
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -187,14 +188,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 97
+    .line 98
     const-string/jumbo v1, "KeyguardBackupRestoreManager"
 
     const-string/jumbo v2, "stop backup working thread for lock"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 98
+    .line 99
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -205,7 +206,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 99
+    .line 100
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -214,7 +215,7 @@
 
     invoke-static {v1, v2}, Lcom/android/keyguard/KeyguardBackupRestoreManager;->-set0(Lcom/android/keyguard/KeyguardBackupRestoreManager;Ljava/lang/Thread;)Ljava/lang/Thread;
 
-    .line 101
+    .line 102
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -237,18 +238,18 @@
     .end local v12    # "basePath":Ljava/lang/String;
     .end local v14    # "securityLevel":I
     .end local v16    # "saveKey":Ljava/lang/String;
-    .end local v18    # "extraAction":I
+    .end local v19    # "extraAction":I
     :cond_0
     :goto_0
     return-void
 
-    .line 104
+    .line 105
     .restart local v7    # "source":Ljava/lang/String;
     .restart local v8    # "sessionTime":Ljava/lang/String;
     .restart local v12    # "basePath":Ljava/lang/String;
     .restart local v14    # "securityLevel":I
     .restart local v16    # "saveKey":Ljava/lang/String;
-    .restart local v18    # "extraAction":I
+    .restart local v19    # "extraAction":I
     :cond_1
     move-object/from16 v0, p0
 
@@ -272,7 +273,7 @@
 
     invoke-static {v1, v2}, Lcom/android/keyguard/KeyguardBackupRestoreManager;->-set0(Lcom/android/keyguard/KeyguardBackupRestoreManager;Ljava/lang/Thread;)Ljava/lang/Thread;
 
-    .line 110
+    .line 111
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -282,11 +283,37 @@
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Thread;->start()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 112
+    .line 151
+    .end local v7    # "source":Ljava/lang/String;
+    .end local v8    # "sessionTime":Ljava/lang/String;
+    .end local v12    # "basePath":Ljava/lang/String;
+    .end local v14    # "securityLevel":I
+    .end local v16    # "saveKey":Ljava/lang/String;
+    .end local v19    # "extraAction":I
+    :catch_0
+    move-exception v18
+
+    .line 152
+    .local v18, "e":Ljava/lang/Exception;
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Exception;->printStackTrace()V
+
+    goto :goto_0
+
+    .line 113
+    .end local v18    # "e":Ljava/lang/Exception;
+    .restart local v7    # "source":Ljava/lang/String;
+    .restart local v8    # "sessionTime":Ljava/lang/String;
+    .restart local v12    # "basePath":Ljava/lang/String;
+    .restart local v14    # "securityLevel":I
+    .restart local v16    # "saveKey":Ljava/lang/String;
+    .restart local v19    # "extraAction":I
     :cond_2
+    :try_start_1
     const-string/jumbo v1, "com.sec.android.intent.action.REQUEST_RESTORE_LOCKSCREEN"
 
     move-object/from16 v0, v17
@@ -297,8 +324,8 @@
 
     if-eqz v1, :cond_3
 
-    .line 113
-    new-instance v19, Ljava/lang/Thread;
+    .line 114
+    new-instance v20, Ljava/lang/Thread;
 
     new-instance v9, Lcom/android/keyguard/KeyguardBackupRestoreManager$1$2;
 
@@ -312,18 +339,18 @@
 
     invoke-direct/range {v9 .. v15}, Lcom/android/keyguard/KeyguardBackupRestoreManager$1$2;-><init>(Lcom/android/keyguard/KeyguardBackupRestoreManager$1;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v20
 
     invoke-direct {v0, v9}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 119
-    .local v19, "restoreThread":Ljava/lang/Thread;
-    invoke-virtual/range {v19 .. v19}, Ljava/lang/Thread;->start()V
+    .line 120
+    .local v20, "restoreThread":Ljava/lang/Thread;
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/Thread;->start()V
 
     goto :goto_0
 
-    .line 120
-    .end local v19    # "restoreThread":Ljava/lang/Thread;
+    .line 121
+    .end local v20    # "restoreThread":Ljava/lang/Thread;
     :cond_3
     const-string/jumbo v1, "com.sec.android.intent.action.REQUEST_BACKUP_WALLPAPER"
 
@@ -335,14 +362,14 @@
 
     if-eqz v1, :cond_5
 
-    .line 121
+    .line 122
     const/4 v1, 0x2
 
-    move/from16 v0, v18
+    move/from16 v0, v19
 
     if-ne v0, v1, :cond_4
 
-    .line 124
+    .line 125
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -367,14 +394,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 125
+    .line 126
     const-string/jumbo v1, "KeyguardBackupRestoreManager"
 
     const-string/jumbo v2, "stop backup working thread"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 126
+    .line 127
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -385,7 +412,7 @@
 
     invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 127
+    .line 128
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -394,7 +421,7 @@
 
     invoke-static {v1, v2}, Lcom/android/keyguard/KeyguardBackupRestoreManager;->-set1(Lcom/android/keyguard/KeyguardBackupRestoreManager;Ljava/lang/Thread;)Ljava/lang/Thread;
 
-    .line 129
+    .line 130
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -413,7 +440,7 @@
 
     goto/16 :goto_0
 
-    .line 132
+    .line 133
     :cond_4
     move-object/from16 v0, p0
 
@@ -437,7 +464,7 @@
 
     invoke-static {v1, v2}, Lcom/android/keyguard/KeyguardBackupRestoreManager;->-set1(Lcom/android/keyguard/KeyguardBackupRestoreManager;Ljava/lang/Thread;)Ljava/lang/Thread;
 
-    .line 138
+    .line 139
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/keyguard/KeyguardBackupRestoreManager$1;->this$0:Lcom/android/keyguard/KeyguardBackupRestoreManager;
@@ -450,7 +477,7 @@
 
     goto/16 :goto_0
 
-    .line 140
+    .line 141
     :cond_5
     const-string/jumbo v1, "com.sec.android.intent.action.REQUEST_RESTORE_WALLPAPER"
 
@@ -462,8 +489,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 141
-    new-instance v19, Ljava/lang/Thread;
+    .line 142
+    new-instance v20, Ljava/lang/Thread;
 
     new-instance v9, Lcom/android/keyguard/KeyguardBackupRestoreManager$1$4;
 
@@ -477,13 +504,15 @@
 
     invoke-direct/range {v9 .. v15}, Lcom/android/keyguard/KeyguardBackupRestoreManager$1$4;-><init>(Lcom/android/keyguard/KeyguardBackupRestoreManager$1;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v20
 
     invoke-direct {v0, v9}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 147
-    .restart local v19    # "restoreThread":Ljava/lang/Thread;
-    invoke-virtual/range {v19 .. v19}, Ljava/lang/Thread;->start()V
+    .line 148
+    .restart local v20    # "restoreThread":Ljava/lang/Thread;
+    invoke-virtual/range {v20 .. v20}, Ljava/lang/Thread;->start()V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     goto/16 :goto_0
 .end method

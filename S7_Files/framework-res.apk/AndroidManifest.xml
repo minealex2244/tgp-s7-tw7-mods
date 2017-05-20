@@ -324,6 +324,10 @@
     <protected-broadcast android:name="android.net.wigig.p2p.DISCOVERY_STATE_CHANGE"/>
     <protected-broadcast android:name="android.net.wigig.p2p.THIS_DEVICE_CHANGED"/>
     <protected-broadcast android:name="android.net.wigig.p2p.PERSISTENT_GROUPS_CHANGED"/>
+    <protected-broadcast android:name="com.samsung.action.REDIRECT_STATUS"/>
+    <protected-broadcast android:name="com.samsung.action.HOTSPOT_EXEC_COMMAND"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.TEST_START_OSU_PROCESS_NOSIGMA"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.TEST_TRIGGER_INSTALL_FILE"/>
     <protected-broadcast android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
     <protected-broadcast android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"/>
     <protected-broadcast android:name="android.net.wifi.WIFI_CREDENTIAL_CHANGED"/>
@@ -777,6 +781,7 @@
     <protected-broadcast android:name="com.samsung.intent.action.START_PROVISIONING"/>
     <protected-broadcast android:name="com.samsung.android.intent.action.WIFIAP_RESET"/>
     <protected-broadcast android:name="com.samsung.settings.wifi.wifiap_power_mode_alarm"/>
+    <protected-broadcast android:name="com.samsung.android.net.wifi.SEC_NETWORK_STATE_CHANGED"/>
     <protected-broadcast android:name="com.sec.android.wifi.scan.result"/>
     <protected-broadcast android:name="com.sec.android.wifi.GEOFENCE_TRIGGERED"/>
     <protected-broadcast android:name="com.sec.android.wifi.geofence.state"/>
@@ -1182,6 +1187,7 @@
     <protected-broadcast android:name="com.samsung.ssrm.RESOLUTION_CHANGED"/>
     <protected-broadcast android:name="com.samsung.context.hqmbigdata.intent"/>
     <protected-broadcast android:name="com.kddi.agent.action.SCREEN_PINNING_CONDITION"/>
+    <protected-broadcast android:name="com.samsung.android.security.SemSdCardEncryption.UNMOUNT_POLICY"/>
     <permission-group android:name="com.samsung.android.authfw.pass.permission-group.SEM_PASS_AUTHENTICATE"/>
     <permission android:name="com.samsung.android.authfw.pass.permission.SEM_PASS_B2B_USE_PASS" android:permissionGroup="com.samsung.android.authfw.pass.permission-group.SEM_PASS_AUTHENTICATE" android:protectionLevel="system|signature"/>
     <permission android:name="com.samsung.android.authfw.pass.permission.SEM_PASS_B2B_USE_IRIS" android:permissionGroup="com.samsung.android.authfw.pass.permission-group.SEM_PASS_AUTHENTICATE" android:protectionLevel="system|signature"/>

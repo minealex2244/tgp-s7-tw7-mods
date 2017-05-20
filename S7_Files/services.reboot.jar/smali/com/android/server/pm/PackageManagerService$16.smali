@@ -45,7 +45,7 @@
     .param p7, "val$observer"    # Landroid/content/pm/IPackageDeleteObserver2;
 
     .prologue
-    .line 20658
+    .line 20672
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$16;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iput-boolean p2, p0, Lcom/android/server/pm/PackageManagerService$16;->val$deleteAllUsers:Z
@@ -75,19 +75,19 @@
 
     const/4 v6, 0x0
 
-    .line 20660
+    .line 20674
     iget-object v7, p0, Lcom/android/server/pm/PackageManagerService$16;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v7, v7, Lcom/android/server/pm/PackageManagerService;->mHandler:Lcom/android/server/pm/PackageManagerService$PackageHandler;
 
     invoke-virtual {v7, p0}, Lcom/android/server/pm/PackageManagerService$PackageHandler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 20662
+    .line 20676
     iget-boolean v7, p0, Lcom/android/server/pm/PackageManagerService$16;->val$deleteAllUsers:Z
 
     if-nez v7, :cond_0
 
-    .line 20663
+    .line 20677
     iget-object v7, p0, Lcom/android/server/pm/PackageManagerService$16;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v8, p0, Lcom/android/server/pm/PackageManagerService$16;->val$packageName:Ljava/lang/String;
@@ -100,7 +100,7 @@
 
     move-result v2
 
-    .line 20686
+    .line 20700
     .local v2, "returnCode":I
     :goto_0
     iget-object v7, p0, Lcom/android/server/pm/PackageManagerService$16;->val$packageName:Ljava/lang/String;
@@ -112,7 +112,7 @@
 
     invoke-static {v7, v5, v6}, Lcom/android/server/pm/PmHook;->uninstallLog(Ljava/lang/String;ZI)V
 
-    .line 20688
+    .line 20702
     :try_start_0
     const-string/jumbo v5, "PackageManager"
 
@@ -130,30 +130,30 @@
 
     move-result-object v6
 
-    .line 20689
+    .line 20703
     const-string/jumbo v7, "{"
 
-    .line 20688
+    .line 20702
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
 
-    .line 20689
+    .line 20703
     iget-object v7, p0, Lcom/android/server/pm/PackageManagerService$16;->val$observer:Landroid/content/pm/IPackageDeleteObserver2;
 
     invoke-virtual {v7}, Ljava/lang/Object;->hashCode()I
 
     move-result v7
 
-    .line 20688
+    .line 20702
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v6
 
-    .line 20689
+    .line 20703
     const-string/jumbo v7, "}"
 
-    .line 20688
+    .line 20702
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
@@ -164,7 +164,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 20690
+    .line 20704
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$16;->val$observer:Landroid/content/pm/IPackageDeleteObserver2;
 
     iget-object v6, p0, Lcom/android/server/pm/PackageManagerService$16;->val$packageName:Ljava/lang/String;
@@ -175,11 +175,11 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 20659
+    .line 20673
     :goto_2
     return-void
 
-    .line 20665
+    .line 20679
     .end local v2    # "returnCode":I
     :cond_0
     iget-object v7, p0, Lcom/android/server/pm/PackageManagerService$16;->this$0:Lcom/android/server/pm/PackageManagerService;
@@ -192,7 +192,7 @@
 
     move-result-object v0
 
-    .line 20667
+    .line 20681
     .local v0, "blockUninstallUserIds":[I
     invoke-static {v0}, Lcom/android/internal/util/ArrayUtils;->isEmpty([I)Z
 
@@ -200,7 +200,7 @@
 
     if-eqz v7, :cond_1
 
-    .line 20668
+    .line 20682
     iget-object v7, p0, Lcom/android/server/pm/PackageManagerService$16;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v8, p0, Lcom/android/server/pm/PackageManagerService$16;->val$packageName:Ljava/lang/String;
@@ -216,14 +216,14 @@
     .restart local v2    # "returnCode":I
     goto :goto_0
 
-    .line 20671
+    .line 20685
     .end local v2    # "returnCode":I
     :cond_1
     iget v7, p0, Lcom/android/server/pm/PackageManagerService$16;->val$deleteFlags:I
 
     and-int/lit8 v3, v7, -0x3
 
-    .line 20672
+    .line 20686
     .local v3, "userFlags":I
     iget-object v8, p0, Lcom/android/server/pm/PackageManagerService$16;->val$users:[I
 
@@ -236,7 +236,7 @@
 
     aget v4, v8, v7
 
-    .line 20673
+    .line 20687
     .local v4, "userId":I
     invoke-static {v0, v4}, Lcom/android/internal/util/ArrayUtils;->contains([II)Z
 
@@ -244,7 +244,7 @@
 
     if-nez v10, :cond_2
 
-    .line 20674
+    .line 20688
     iget-object v10, p0, Lcom/android/server/pm/PackageManagerService$16;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v11, p0, Lcom/android/server/pm/PackageManagerService$16;->val$packageName:Ljava/lang/String;
@@ -253,11 +253,11 @@
 
     move-result v2
 
-    .line 20675
+    .line 20689
     .restart local v2    # "returnCode":I
     if-eq v2, v5, :cond_2
 
-    .line 20676
+    .line 20690
     const-string/jumbo v10, "PackageManager"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -274,10 +274,10 @@
 
     move-result-object v11
 
-    .line 20677
+    .line 20691
     const-string/jumbo v12, ", returnCode "
 
-    .line 20676
+    .line 20690
     invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v11
@@ -292,14 +292,14 @@
 
     invoke-static {v10, v11}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 20672
+    .line 20686
     .end local v2    # "returnCode":I
     :cond_2
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_3
 
-    .line 20683
+    .line 20697
     .end local v4    # "userId":I
     :cond_3
     const/4 v2, -0x4
@@ -312,14 +312,14 @@
     :cond_4
     move v5, v6
 
-    .line 20686
+    .line 20700
     goto/16 :goto_1
 
-    .line 20691
+    .line 20705
     :catch_0
     move-exception v1
 
-    .line 20692
+    .line 20706
     .local v1, "e":Landroid/os/RemoteException;
     const-string/jumbo v5, "PackageManager"
 

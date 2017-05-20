@@ -46,26 +46,26 @@
     .param p1, "this$0"    # Landroid/media/WFDUibcManager;
 
     .prologue
-    .line 1051
+    .line 1055
     iput-object p1, p0, Landroid/media/WFDUibcManager$EventQueue;->this$0:Landroid/media/WFDUibcManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1053
+    .line 1057
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
     iput-object v0, p0, Landroid/media/WFDUibcManager$EventQueue;->queuedEvents:Ljava/util/concurrent/BlockingQueue;
 
-    .line 1054
+    .line 1058
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
     iput-object v0, p0, Landroid/media/WFDUibcManager$EventQueue;->rotateEvents:Ljava/util/concurrent/BlockingQueue;
 
-    .line 1051
+    .line 1055
     return-void
 .end method
 
@@ -86,7 +86,7 @@
     .param p1, "ev"    # Landroid/view/InputEvent;
 
     .prologue
-    .line 1091
+    .line 1095
     :try_start_0
     iget-object v2, p0, Landroid/media/WFDUibcManager$EventQueue;->queuedEvents:Ljava/util/concurrent/BlockingQueue;
 
@@ -95,15 +95,15 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1089
+    .line 1093
     :goto_0
     return-void
 
-    .line 1094
+    .line 1098
     :catch_0
     move-exception v1
 
-    .line 1095
+    .line 1099
     .local v1, "e":Ljava/lang/NullPointerException;
     const-string/jumbo v2, "WFDUibcManager"
 
@@ -113,12 +113,12 @@
 
     goto :goto_0
 
-    .line 1092
+    .line 1096
     .end local v1    # "e":Ljava/lang/NullPointerException;
     :catch_1
     move-exception v0
 
-    .line 1093
+    .line 1097
     .local v0, "e":Ljava/lang/InterruptedException;
     const-string/jumbo v2, "WFDUibcManager"
 
@@ -135,7 +135,7 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 1060
+    .line 1064
     :try_start_0
     iget-object v2, p0, Landroid/media/WFDUibcManager$EventQueue;->queuedEvents:Ljava/util/concurrent/BlockingQueue;
 
@@ -151,23 +151,23 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1061
+    .line 1065
     .local v1, "queuedEvent":Landroid/view/InputEvent;
     if-eqz v1, :cond_0
 
-    .line 1063
+    .line 1067
     return-object v1
 
-    .line 1066
+    .line 1070
     :cond_0
     return-object v6
 
-    .line 1068
+    .line 1072
     .end local v1    # "queuedEvent":Landroid/view/InputEvent;
     :catch_0
     move-exception v0
 
-    .line 1069
+    .line 1073
     .local v0, "e":Ljava/lang/InterruptedException;
     const-string/jumbo v2, "WFDUibcManager"
 
@@ -175,7 +175,7 @@
 
     invoke-static {v2, v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1070
+    .line 1074
     return-object v6
 .end method
 
@@ -185,7 +185,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1077
+    .line 1081
     iget-object v1, p0, Landroid/media/WFDUibcManager$EventQueue;->rotateEvents:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v1}, Ljava/util/concurrent/BlockingQueue;->poll()Ljava/lang/Object;
@@ -194,14 +194,14 @@
 
     check-cast v0, Ljava/lang/Integer;
 
-    .line 1078
+    .line 1082
     .local v0, "event":Ljava/lang/Integer;
     if-eqz v0, :cond_0
 
-    .line 1080
+    .line 1084
     return-object v0
 
-    .line 1083
+    .line 1087
     :cond_0
     return-object v2
 .end method
@@ -212,13 +212,13 @@
     .param p2, "fraction"    # I
 
     .prologue
-    .line 1101
+    .line 1105
     if-gez p1, :cond_0
 
-    .line 1102
+    .line 1106
     mul-int/lit8 p2, p2, -0x1
 
-    .line 1104
+    .line 1108
     :cond_0
     int-to-float v3, p1
 
@@ -238,7 +238,7 @@
 
     div-float v0, v3, v4
 
-    .line 1105
+    .line 1109
     .local v0, "degrees":F
     invoke-static {}, Landroid/media/WFDUibcManager;->-get0()Z
 
@@ -268,7 +268,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1107
+    .line 1111
     :cond_1
     :try_start_0
     iget-object v3, p0, Landroid/media/WFDUibcManager$EventQueue;->rotateEvents:Ljava/util/concurrent/BlockingQueue;
@@ -286,15 +286,15 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1100
+    .line 1104
     :goto_0
     return-void
 
-    .line 1110
+    .line 1114
     :catch_0
     move-exception v2
 
-    .line 1111
+    .line 1115
     .local v2, "e":Ljava/lang/NullPointerException;
     const-string/jumbo v3, "WFDUibcManager"
 
@@ -304,12 +304,12 @@
 
     goto :goto_0
 
-    .line 1108
+    .line 1112
     .end local v2    # "e":Ljava/lang/NullPointerException;
     :catch_1
     move-exception v1
 
-    .line 1109
+    .line 1113
     .local v1, "e":Ljava/lang/InterruptedException;
     const-string/jumbo v3, "WFDUibcManager"
 

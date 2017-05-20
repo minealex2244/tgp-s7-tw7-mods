@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/display/AutomaticBrightnessController;
 
     .prologue
-    .line 747
+    .line 752
     iput-object p1, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,16 +43,16 @@
     .prologue
     const-wide/16 v8, 0x0
 
-    .line 750
+    .line 755
     iget-object v2, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
-    invoke-static {v2}, Lcom/android/server/display/AutomaticBrightnessController;->-get22(Lcom/android/server/display/AutomaticBrightnessController;)Lcom/android/server/power/PowerManagerUtil$TimeMeasurement;
+    invoke-static {v2}, Lcom/android/server/display/AutomaticBrightnessController;->-get23(Lcom/android/server/display/AutomaticBrightnessController;)Lcom/android/server/power/PowerManagerUtil$TimeMeasurement;
 
     move-result-object v2
 
     invoke-virtual {v2}, Lcom/android/server/power/PowerManagerUtil$TimeMeasurement;->resetTime()V
 
-    .line 751
+    .line 756
     iget-object v2, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
@@ -61,14 +61,14 @@
 
     invoke-static {v2, v4, v5}, Lcom/android/server/display/AutomaticBrightnessController;->-set6(Lcom/android/server/display/AutomaticBrightnessController;J)J
 
-    .line 752
+    .line 757
     const-string/jumbo v2, "AutomaticBrightnessController"
 
     const-string/jumbo v3, "[DAB] setLightSensorEnabled : registerListenerRunnable"
 
     invoke-static {v2, v3}, Lcom/android/server/power/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 753
+    .line 758
     iget-object v2, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-static {v2}, Lcom/android/server/display/AutomaticBrightnessController;->-get8(Lcom/android/server/display/AutomaticBrightnessController;)Z
@@ -77,10 +77,10 @@
 
     if-eqz v2, :cond_1
 
-    .line 754
+    .line 759
     const/4 v1, 0x0
 
-    .line 755
+    .line 760
     .local v1, "mode":I
     iget-object v2, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
@@ -90,16 +90,16 @@
 
     if-eqz v2, :cond_0
 
-    .line 756
+    .line 761
     const/4 v1, 0x1
 
-    .line 758
+    .line 763
     :cond_0
     new-instance v0, Landroid/hardware/scontext/SContextAutoBrightnessAttribute;
 
     invoke-direct {v0, v1}, Landroid/hardware/scontext/SContextAutoBrightnessAttribute;-><init>(I)V
 
-    .line 759
+    .line 764
     .local v0, "attribute":Landroid/hardware/scontext/SContextAttribute;
     iget-object v2, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
@@ -113,20 +113,20 @@
 
     move-result-object v3
 
-    .line 760
+    .line 765
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v4
 
     const/16 v5, 0x27
 
-    .line 759
+    .line 764
     invoke-virtual {v2, v3, v5, v0, v4}, Landroid/hardware/scontext/SContextManager;->registerListener(Landroid/hardware/scontext/SContextListener;ILandroid/hardware/scontext/SContextAttribute;Landroid/os/Looper;)Z
 
-    .line 761
+    .line 766
     iget-object v2, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
-    invoke-static {v2}, Lcom/android/server/display/AutomaticBrightnessController;->-get22(Lcom/android/server/display/AutomaticBrightnessController;)Lcom/android/server/power/PowerManagerUtil$TimeMeasurement;
+    invoke-static {v2}, Lcom/android/server/display/AutomaticBrightnessController;->-get23(Lcom/android/server/display/AutomaticBrightnessController;)Lcom/android/server/power/PowerManagerUtil$TimeMeasurement;
 
     move-result-object v2
 
@@ -134,13 +134,13 @@
 
     invoke-virtual {v2, v3, v8, v9}, Lcom/android/server/power/PowerManagerUtil$TimeMeasurement;->printLapTime(Ljava/lang/String;J)V
 
-    .line 749
+    .line 754
     .end local v0    # "attribute":Landroid/hardware/scontext/SContextAttribute;
     .end local v1    # "mode":I
     :goto_0
     return-void
 
-    .line 763
+    .line 768
     :cond_1
     iget-object v2, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
@@ -160,7 +160,7 @@
 
     move-result-object v4
 
-    .line 764
+    .line 769
     iget-object v5, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
     invoke-static {v5}, Lcom/android/server/display/AutomaticBrightnessController;->-get12(Lcom/android/server/display/AutomaticBrightnessController;)I
@@ -175,13 +175,13 @@
 
     move-result-object v6
 
-    .line 763
+    .line 768
     invoke-virtual {v2, v3, v4, v5, v6}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z
 
-    .line 765
+    .line 770
     iget-object v2, p0, Lcom/android/server/display/AutomaticBrightnessController$1;->this$0:Lcom/android/server/display/AutomaticBrightnessController;
 
-    invoke-static {v2}, Lcom/android/server/display/AutomaticBrightnessController;->-get22(Lcom/android/server/display/AutomaticBrightnessController;)Lcom/android/server/power/PowerManagerUtil$TimeMeasurement;
+    invoke-static {v2}, Lcom/android/server/display/AutomaticBrightnessController;->-get23(Lcom/android/server/display/AutomaticBrightnessController;)Lcom/android/server/power/PowerManagerUtil$TimeMeasurement;
 
     move-result-object v2
 
