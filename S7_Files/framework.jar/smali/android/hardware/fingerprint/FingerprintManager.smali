@@ -114,6 +114,8 @@
 
 .field public static final FINGERPRINT_REQUEST_GET_VERSION:I = 0x4
 
+.field public static final FINGERPRINT_REQUEST_HAS_FEATURE:I = 0x3ee
+
 .field public static final FINGERPRINT_REQUEST_LOCKOUT:I = 0x3e9
 
 .field public static final FINGERPRINT_REQUEST_PAUSE:I = 0x0
@@ -2634,6 +2636,69 @@
     const-string/jumbo v2, "resetTimeout(): Service not connected!"
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+.end method
+
+.method public semGetTouchCount()I
+    .locals 6
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 1121
+    const/16 v1, 0x3ef
+
+    const/4 v4, 0x0
+
+    move-object v0, p0
+
+    move-object v3, v2
+
+    move-object v5, v2
+
+    invoke-virtual/range {v0 .. v5}, Landroid/hardware/fingerprint/FingerprintManager;->request(I[B[BILandroid/hardware/fingerprint/FingerprintManager$RequestCallback;)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public semHasFeature(I)Z
+    .locals 8
+    .param p1, "feature"    # I
+
+    .prologue
+    const/4 v7, 0x0
+
+    const/4 v2, 0x0
+
+    .line 907
+    const/16 v1, 0x3ee
+
+    move-object v0, p0
+
+    move-object v3, v2
+
+    move v4, p1
+
+    move-object v5, v2
+
+    invoke-virtual/range {v0 .. v5}, Landroid/hardware/fingerprint/FingerprintManager;->request(I[B[BILandroid/hardware/fingerprint/FingerprintManager$RequestCallback;)I
+
+    move-result v6
+
+    .line 908
+    .local v6, "ret":I
+    if-lez v6, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    move v0, v7
 
     goto :goto_0
 .end method
