@@ -2743,4 +2743,5 @@ USB functions may be restricted while Maximum power saving mode enabled."</strin
     <string name="storage_sdcard_insert">SD card has been inserted.</string>
     <string name="charging_connected_via_usb">Charging connected device via USB...</string>
     <string name="config_tspstate_threshold">10,32,768,10,60</string>
+    <string name="tw_ic_do_rebootrecovery">Recovery</string>
 </resources>
