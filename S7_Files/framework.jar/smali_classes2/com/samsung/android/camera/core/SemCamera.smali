@@ -48,6 +48,7 @@
         Lcom/samsung/android/camera/core/SemCamera$Parameters;,
         Lcom/samsung/android/camera/core/SemCamera$PhaseAutoFocusCallback;,
         Lcom/samsung/android/camera/core/SemCamera$PictureCallback;,
+        Lcom/samsung/android/camera/core/SemCamera$PostEventListener;,
         Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;,
         Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;,
         Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;,
@@ -257,6 +258,28 @@
 .field private static final EFFECT_REAR_TOP_FRONT_BOTTOM:I = 0x1
 
 .field private static final ENORES:I = 0x63
+
+.field private static final ERROR_ALREADY_EXISTS:I = 0x2
+
+.field private static final ERROR_CAMERA_IN_USE:I = 0x7
+
+.field private static final ERROR_DEPRECATED_HAL:I = 0x9
+
+.field private static final ERROR_DISABLED:I = 0x6
+
+.field private static final ERROR_DISCONNECTED:I = 0x4
+
+.field private static final ERROR_ILLEGAL_ARGUMENT:I = 0x3
+
+.field private static final ERROR_INVALID_OPERATION:I = 0xa
+
+.field private static final ERROR_MAX_CAMERAS_IN_USE:I = 0x8
+
+.field private static final ERROR_NO_RESOURCE:I = 0x63
+
+.field private static final ERROR_PERMISSION_DENIED:I = 0x1
+
+.field private static final ERROR_TIMED_OUT:I = 0x5
 
 .field public static final ERR_ACCESS:Ljava/lang/String; = "EACCESS"
 
@@ -828,11 +851,11 @@
 
 .field private static final SMILE_SHOT_DETECTION_STOP:I = 0x44e
 
-.field private static final START_SMART_FILTER_PROCESS:I = 0x529
+.field private static final START_SMART_FILTER:I = 0x529
 
 .field private static final STICKER_FACE_ALIGNMENT_DATA:I = 0xf141
 
-.field private static final STOP_SMART_FILTER_PROCESS:I = 0x52a
+.field private static final STOP_SMART_FILTER:I = 0x52a
 
 .field private static final TAG:Ljava/lang/String; = "SemCamera-JNI-Java"
 
@@ -916,7 +939,9 @@
 
 
 # instance fields
-.field private final lock:Ljava/util/concurrent/locks/Lock;
+.field private final irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+.field private final irisPreviewLock:Ljava/util/concurrent/locks/Lock;
 
 .field private mAutoExposureCallback:Lcom/samsung/android/camera/core/SemCamera$AutoExposureCallback;
 
@@ -1014,6 +1039,8 @@
 
 .field private mPhaseAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$PhaseAutoFocusCallback;
 
+.field private mPostEventListener:Lcom/samsung/android/camera/core/SemCamera$PostEventListener;
+
 .field private mPostviewCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
 .field private mPreviewCallback:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
@@ -1086,10 +1113,10 @@
     return-object v0
 .end method
 
-.method static synthetic -get12(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
+.method static synthetic -get12(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$CameraSensorDataListener;
     .locals 1
 
-    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mDepthMapEventListener:Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mCameraSensorDataListener:Lcom/samsung/android/camera/core/SemCamera$CameraSensorDataListener;
 
     return-object v0
 .end method
@@ -1318,18 +1345,18 @@
     return-object v0
 .end method
 
-.method static synthetic -get39(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
+.method static synthetic -get39(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$PostEventListener;
     .locals 1
 
-    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallbackTimeStamp:Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostEventListener:Lcom/samsung/android/camera/core/SemCamera$PostEventListener;
 
     return-object v0
 .end method
 
-.method static synthetic -get4(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$AutoFocusMoveCallback;
+.method static synthetic -get4(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
     .locals 1
 
-    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusMoveCallback:Lcom/samsung/android/camera/core/SemCamera$AutoFocusMoveCallback;
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallbackTimeStamp:Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
 
     return-object v0
 .end method
@@ -1390,7 +1417,15 @@
     return-object v0
 .end method
 
-.method static synthetic -get47(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$SlowMotionEventListener;
+.method static synthetic -get47(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mDepthMapEventListener:Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
+
+    return-object v0
+.end method
+
+.method static synthetic -get48(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$SlowMotionEventListener;
     .locals 1
 
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mSlowMotionEventListener:Lcom/samsung/android/camera/core/SemCamera$SlowMotionEventListener;
@@ -1398,18 +1433,10 @@
     return-object v0
 .end method
 
-.method static synthetic -get48(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;
+.method static synthetic -get49(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;
     .locals 1
 
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mSmartFilterListener:Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;
-
-    return-object v0
-.end method
-
-.method static synthetic -get49(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
-    .locals 1
-
-    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mStickerEventListener:Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
 
     return-object v0
 .end method
@@ -1430,10 +1457,10 @@
     return-object v0
 .end method
 
-.method static synthetic -get51(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
+.method static synthetic -get51(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
     .locals 1
 
-    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mStickerEventListener:Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
 
     return-object v0
 .end method
@@ -1446,7 +1473,15 @@
     return v0
 .end method
 
-.method static synthetic -get53(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$OnZoomChangeListener;
+.method static synthetic -get53(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
+
+    return-object v0
+.end method
+
+.method static synthetic -get54(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$OnZoomChangeListener;
     .locals 1
 
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mZoomListener:Lcom/samsung/android/camera/core/SemCamera$OnZoomChangeListener;
@@ -1454,10 +1489,34 @@
     return-object v0
 .end method
 
-.method static synthetic -get6(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;
+.method static synthetic -get55(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallbackTimeStamp:Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
+
+    return-object v0
+.end method
+
+.method static synthetic -get56(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$AutoFocusCallback;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$AutoFocusCallback;
+
+    return-object v0
+.end method
+
+.method static synthetic -get57(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;
     .locals 1
 
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mBrightnessValueCallback:Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;
+
+    return-object v0
+.end method
+
+.method static synthetic -get6(Lcom/samsung/android/camera/core/SemCamera;)Lcom/samsung/android/camera/core/SemCamera$AutoFocusMoveCallback;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusMoveCallback:Lcom/samsung/android/camera/core/SemCamera$AutoFocusMoveCallback;
 
     return-object v0
 .end method
@@ -1518,12 +1577,11 @@
     .locals 1
 
     .prologue
-    .line 6265
+    .line 6267
     const-string/jumbo v0, "semcamera_jni"
 
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
-    .line 170
     return-void
 .end method
 
@@ -1535,315 +1593,250 @@
 
     const/4 v1, 0x0
 
-    .line 2828
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 209
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrCallbackEnabled:Z
 
-    .line 210
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewCallbackEnabled:Z
 
-    .line 221
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
-    .line 222
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusCallbackLock:Ljava/lang/Object;
 
-    .line 232
+    .line 240
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    iput-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    iput-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
 
-    .line 1170
+    .line 241
+    new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
+
+    invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+
+    iput-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPanoramaEventListener:Lcom/samsung/android/camera/core/SemCamera$PanoramaEventListener;
 
-    .line 1269
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mMotionPanoramaEventListener:Lcom/samsung/android/camera/core/SemCamera$MotionPanoramaEventListener;
 
-    .line 1352
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
 
-    .line 1429
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideMotionSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideMotionSelfieEventListener;
 
-    .line 1466
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mQrCodeDetectionEventListener:Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;
 
-    .line 1539
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mCommonEventListener:Lcom/samsung/android/camera/core/SemCamera$CommonEventListener;
 
-    .line 1564
-    iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mCommonPostEventListener:Lcom/samsung/android/camera/core/SemCamera$CommonPostEventListener;
+    .line 1538
+    iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostEventListener:Lcom/samsung/android/camera/core/SemCamera$PostEventListener;
 
-    .line 1587
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mScreenFlashEventListener:Lcom/samsung/android/camera/core/SemCamera$ScreenFlashEventListener;
 
-    .line 1631
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mBurstEventListener:Lcom/samsung/android/camera/core/SemCamera$BurstEventListener;
 
-    .line 1676
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mHdrEventListener:Lcom/samsung/android/camera/core/SemCamera$HdrEventListener;
 
-    .line 1704
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mMultiFrameEventListener:Lcom/samsung/android/camera/core/SemCamera$MultiFrameEventListener;
 
-    .line 1734
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mHazeRemovalShotEventListener:Lcom/samsung/android/camera/core/SemCamera$HazeRemovalEventListener;
 
-    .line 1859
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mBeautyEventListener:Lcom/samsung/android/camera/core/SemCamera$BeautyEventListener;
 
-    .line 1886
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mRelightEventListener:Lcom/samsung/android/camera/core/SemCamera$RelightEventListener;
 
-    .line 1914
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mStickerEventListener:Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
 
-    .line 1938
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mLightConditionChangedListener:Lcom/samsung/android/camera/core/SemCamera$LightConditionChangedListener;
 
-    .line 1969
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mDualEventListener:Lcom/samsung/android/camera/core/SemCamera$DualEventListener;
 
-    .line 1996
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mImageEffectEventListener:Lcom/samsung/android/camera/core/SemCamera$ImageEffectEventListener;
 
-    .line 2042
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mSelectiveFocusEventListener:Lcom/samsung/android/camera/core/SemCamera$SelectiveFocusEventListener;
 
-    .line 2086
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mShotAndMoreEventListener:Lcom/samsung/android/camera/core/SemCamera$ShotAndMoreEventListener;
 
-    .line 2139
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mInteractiveShotEventListener:Lcom/samsung/android/camera/core/SemCamera$InteractiveShotEventListener;
 
-    .line 2168
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mFoodShotEventListener:Lcom/samsung/android/camera/core/SemCamera$FoodShotEventListener;
 
-    .line 2199
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mDepthMapEventListener:Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
 
-    .line 2238
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mSlowMotionEventListener:Lcom/samsung/android/camera/core/SemCamera$SlowMotionEventListener;
 
-    .line 2312
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPhaseAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$PhaseAutoFocusCallback;
 
-    .line 2348
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mMultiAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$MultiAutoFocusCallback;
 
-    .line 2391
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mObjectTrackingAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$ObjectTrackingAutoFocusCallback;
 
-    .line 2460
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mCameraSensorDataListener:Lcom/samsung/android/camera/core/SemCamera$CameraSensorDataListener;
 
-    .line 2483
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoExposureCallback:Lcom/samsung/android/camera/core/SemCamera$AutoExposureCallback;
 
-    .line 2505
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mBrightnessValueCallback:Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;
 
-    .line 2529
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mBurstShotFpsCallback:Lcom/samsung/android/camera/core/SemCamera$BurstShotFpsCallback;
 
-    .line 3082
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
-    .line 3083
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
-    .line 6302
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mSmartFilterListener:Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;
 
-    .line 2828
     return-void
 .end method
 
 .method private constructor <init>(II)V
-    .locals 3
+    .locals 4
     .param p1, "cameraId"    # I
     .param p2, "halVersion"    # I
 
     .prologue
+    const/4 v3, 0x1
+
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    .line 2685
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 209
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrCallbackEnabled:Z
 
-    .line 210
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewCallbackEnabled:Z
 
-    .line 221
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
-    .line 222
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusCallbackLock:Ljava/lang/Object;
 
-    .line 232
+    .line 240
     new-instance v1, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
 
-    .line 1170
+    .line 241
+    new-instance v1, Ljava/util/concurrent/locks/ReentrantLock;
+
+    invoke-direct {v1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mPanoramaEventListener:Lcom/samsung/android/camera/core/SemCamera$PanoramaEventListener;
 
-    .line 1269
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mMotionPanoramaEventListener:Lcom/samsung/android/camera/core/SemCamera$MotionPanoramaEventListener;
 
-    .line 1352
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
 
-    .line 1429
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideMotionSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideMotionSelfieEventListener;
 
-    .line 1466
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mQrCodeDetectionEventListener:Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;
 
-    .line 1539
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mCommonEventListener:Lcom/samsung/android/camera/core/SemCamera$CommonEventListener;
 
-    .line 1564
-    iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mCommonPostEventListener:Lcom/samsung/android/camera/core/SemCamera$CommonPostEventListener;
+    .line 1538
+    iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostEventListener:Lcom/samsung/android/camera/core/SemCamera$PostEventListener;
 
-    .line 1587
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mScreenFlashEventListener:Lcom/samsung/android/camera/core/SemCamera$ScreenFlashEventListener;
 
-    .line 1631
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mBurstEventListener:Lcom/samsung/android/camera/core/SemCamera$BurstEventListener;
 
-    .line 1676
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mHdrEventListener:Lcom/samsung/android/camera/core/SemCamera$HdrEventListener;
 
-    .line 1704
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mMultiFrameEventListener:Lcom/samsung/android/camera/core/SemCamera$MultiFrameEventListener;
 
-    .line 1734
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mHazeRemovalShotEventListener:Lcom/samsung/android/camera/core/SemCamera$HazeRemovalEventListener;
 
-    .line 1859
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mBeautyEventListener:Lcom/samsung/android/camera/core/SemCamera$BeautyEventListener;
 
-    .line 1886
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mRelightEventListener:Lcom/samsung/android/camera/core/SemCamera$RelightEventListener;
 
-    .line 1914
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mStickerEventListener:Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
 
-    .line 1938
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mLightConditionChangedListener:Lcom/samsung/android/camera/core/SemCamera$LightConditionChangedListener;
 
-    .line 1969
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mDualEventListener:Lcom/samsung/android/camera/core/SemCamera$DualEventListener;
 
-    .line 1996
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mImageEffectEventListener:Lcom/samsung/android/camera/core/SemCamera$ImageEffectEventListener;
 
-    .line 2042
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mSelectiveFocusEventListener:Lcom/samsung/android/camera/core/SemCamera$SelectiveFocusEventListener;
 
-    .line 2086
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mShotAndMoreEventListener:Lcom/samsung/android/camera/core/SemCamera$ShotAndMoreEventListener;
 
-    .line 2139
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mInteractiveShotEventListener:Lcom/samsung/android/camera/core/SemCamera$InteractiveShotEventListener;
 
-    .line 2168
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mFoodShotEventListener:Lcom/samsung/android/camera/core/SemCamera$FoodShotEventListener;
 
-    .line 2199
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mDepthMapEventListener:Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
 
-    .line 2238
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mSlowMotionEventListener:Lcom/samsung/android/camera/core/SemCamera$SlowMotionEventListener;
 
-    .line 2312
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mPhaseAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$PhaseAutoFocusCallback;
 
-    .line 2348
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mMultiAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$MultiAutoFocusCallback;
 
-    .line 2391
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mObjectTrackingAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$ObjectTrackingAutoFocusCallback;
 
-    .line 2460
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mCameraSensorDataListener:Lcom/samsung/android/camera/core/SemCamera$CameraSensorDataListener;
 
-    .line 2483
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoExposureCallback:Lcom/samsung/android/camera/core/SemCamera$AutoExposureCallback;
 
-    .line 2505
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mBrightnessValueCallback:Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;
 
-    .line 2529
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mBurstShotFpsCallback:Lcom/samsung/android/camera/core/SemCamera$BurstShotFpsCallback;
 
-    .line 3082
     new-instance v1, Ljava/util/LinkedList;
 
     invoke-direct {v1}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
-    .line 3083
     new-instance v1, Ljava/util/LinkedList;
 
     invoke-direct {v1}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
-    .line 6302
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mSmartFilterListener:Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;
 
-    .line 2686
-    const/4 v1, 0x1
-
-    invoke-direct {p0, p1, p2, v2, v1}, Lcom/samsung/android/camera/core/SemCamera;->cameraInitVersion(IILandroid/os/Looper;Z)I
+    .line 2665
+    invoke-direct {p0, p1, p2, v2, v3}, Lcom/samsung/android/camera/core/SemCamera;->cameraInitVersion(IILandroid/os/Looper;Z)I
 
     move-result v0
 
-    .line 2687
+    .line 2666
     .local v0, "err":I
     invoke-static {v0}, Lcom/samsung/android/camera/core/SemCamera;->checkInitErrors(I)Z
 
     move-result v1
 
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_a
 
-    .line 2688
     sget v1, Landroid/system/OsConstants;->EACCES:I
 
     neg-int v1, v1
 
     if-ne v0, v1, :cond_0
 
-    .line 2689
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string/jumbo v2, "Fail to connect to camera service"
@@ -1852,7 +1845,6 @@
 
     throw v1
 
-    .line 2690
     :cond_0
     sget v1, Landroid/system/OsConstants;->ENODEV:I
 
@@ -1860,7 +1852,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 2691
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string/jumbo v2, "Camera initialization failed"
@@ -1869,49 +1860,22 @@
 
     throw v1
 
-    .line 2692
     :cond_1
-    sget v1, Landroid/system/OsConstants;->ENOSYS:I
+    if-ne v0, v3, :cond_2
 
-    neg-int v1, v1
-
-    if-ne v0, v1, :cond_2
-
-    .line 2693
     new-instance v1, Ljava/lang/RuntimeException;
 
-    const-string/jumbo v2, "Camera initialization failed because some methods are not implemented"
+    const-string/jumbo v2, "No permission to open camera device"
 
     invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     throw v1
 
-    .line 2695
     :cond_2
-    sget v1, Landroid/system/OsConstants;->EOPNOTSUPP:I
-
-    neg-int v1, v1
+    const/4 v1, 0x3
 
     if-ne v0, v1, :cond_3
 
-    .line 2696
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    const-string/jumbo v2, "Camera initialization failed because the HAL version is not supported by this device"
-
-    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 2698
-    :cond_3
-    sget v1, Landroid/system/OsConstants;->EINVAL:I
-
-    neg-int v1, v1
-
-    if-ne v0, v1, :cond_4
-
-    .line 2699
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string/jumbo v2, "Camera initialization failed because the input arguments are invalid"
@@ -1920,15 +1884,37 @@
 
     throw v1
 
-    .line 2701
+    :cond_3
+    const/4 v1, 0x4
+
+    if-ne v0, v1, :cond_4
+
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    const-string/jumbo v2, "Camera device currently not available"
+
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
     :cond_4
-    sget v1, Landroid/system/OsConstants;->EBUSY:I
+    if-ne v0, v3, :cond_5
 
-    neg-int v1, v1
+    .line 2679
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    if-ne v0, v1, :cond_5
+    const-string/jumbo v2, "No permission to open camera"
 
-    .line 2702
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 2680
+    :cond_5
+    const/4 v1, 0x7
+
+    if-ne v0, v1, :cond_6
+
     new-instance v1, Lcom/samsung/android/camera/core/SemCamera$CameraBusyRuntimeException;
 
     const-string/jumbo v2, "Camera initialization failed because the camera device was already opened"
@@ -1937,15 +1923,12 @@
 
     throw v1
 
-    .line 2704
-    :cond_5
-    sget v1, Landroid/system/OsConstants;->EUSERS:I
+    .line 2683
+    :cond_6
+    const/16 v1, 0x8
 
-    neg-int v1, v1
+    if-ne v0, v1, :cond_7
 
-    if-ne v0, v1, :cond_6
-
-    .line 2705
     new-instance v1, Lcom/samsung/android/camera/core/SemCamera$CameraMaxUsersRuntimeException;
 
     const-string/jumbo v2, "Camera initialization failed because the max number of camera devices were already opened"
@@ -1954,13 +1937,27 @@
 
     throw v1
 
-    .line 2707
-    :cond_6
-    const/16 v1, -0x63
+    .line 2686
+    :cond_7
+    const/16 v1, 0xa
 
-    if-ne v0, v1, :cond_7
+    if-ne v0, v1, :cond_8
 
-    .line 2708
+    .line 2687
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    const-string/jumbo v2, "Camera device currently not available due to invalid operation"
+
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 2688
+    :cond_8
+    const/16 v1, 0x63
+
+    if-ne v0, v1, :cond_9
+
     new-instance v1, Lcom/samsung/android/camera/core/SemCamera$CameraNoResourceException;
 
     const-string/jumbo v2, "Camera initialization failed because the camera resource was already used"
@@ -1969,8 +1966,8 @@
 
     throw v1
 
-    .line 2712
-    :cond_7
+    .line 2693
+    :cond_9
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string/jumbo v2, "Unknown camera error"
@@ -1979,186 +1976,153 @@
 
     throw v1
 
-    .line 2685
-    :cond_8
+    .line 2664
+    :cond_a
     return-void
 .end method
 
 .method constructor <init>(ILandroid/os/Looper;Z)V
-    .locals 3
+    .locals 4
     .param p1, "cameraId"    # I
     .param p2, "_looper"    # Landroid/os/Looper;
     .param p3, "halsetting"    # Z
 
     .prologue
+    const/4 v3, 0x1
+
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    .line 2778
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 209
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrCallbackEnabled:Z
 
-    .line 210
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewCallbackEnabled:Z
 
-    .line 221
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
-    .line 222
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusCallbackLock:Ljava/lang/Object;
 
-    .line 232
     new-instance v1, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
 
-    .line 1170
+    .line 241
+    new-instance v1, Ljava/util/concurrent/locks/ReentrantLock;
+
+    invoke-direct {v1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+
+    iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    .line 1144
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mPanoramaEventListener:Lcom/samsung/android/camera/core/SemCamera$PanoramaEventListener;
 
-    .line 1269
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mMotionPanoramaEventListener:Lcom/samsung/android/camera/core/SemCamera$MotionPanoramaEventListener;
 
-    .line 1352
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
 
-    .line 1429
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideMotionSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideMotionSelfieEventListener;
 
-    .line 1466
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mQrCodeDetectionEventListener:Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;
 
-    .line 1539
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mCommonEventListener:Lcom/samsung/android/camera/core/SemCamera$CommonEventListener;
 
-    .line 1564
-    iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mCommonPostEventListener:Lcom/samsung/android/camera/core/SemCamera$CommonPostEventListener;
+    .line 1538
+    iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostEventListener:Lcom/samsung/android/camera/core/SemCamera$PostEventListener;
 
-    .line 1587
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mScreenFlashEventListener:Lcom/samsung/android/camera/core/SemCamera$ScreenFlashEventListener;
 
-    .line 1631
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mBurstEventListener:Lcom/samsung/android/camera/core/SemCamera$BurstEventListener;
 
-    .line 1676
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mHdrEventListener:Lcom/samsung/android/camera/core/SemCamera$HdrEventListener;
 
-    .line 1704
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mMultiFrameEventListener:Lcom/samsung/android/camera/core/SemCamera$MultiFrameEventListener;
 
-    .line 1734
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mHazeRemovalShotEventListener:Lcom/samsung/android/camera/core/SemCamera$HazeRemovalEventListener;
 
-    .line 1859
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mBeautyEventListener:Lcom/samsung/android/camera/core/SemCamera$BeautyEventListener;
 
-    .line 1886
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mRelightEventListener:Lcom/samsung/android/camera/core/SemCamera$RelightEventListener;
 
-    .line 1914
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mStickerEventListener:Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
 
-    .line 1938
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mLightConditionChangedListener:Lcom/samsung/android/camera/core/SemCamera$LightConditionChangedListener;
 
-    .line 1969
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mDualEventListener:Lcom/samsung/android/camera/core/SemCamera$DualEventListener;
 
-    .line 1996
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mImageEffectEventListener:Lcom/samsung/android/camera/core/SemCamera$ImageEffectEventListener;
 
-    .line 2042
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mSelectiveFocusEventListener:Lcom/samsung/android/camera/core/SemCamera$SelectiveFocusEventListener;
 
-    .line 2086
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mShotAndMoreEventListener:Lcom/samsung/android/camera/core/SemCamera$ShotAndMoreEventListener;
 
-    .line 2139
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mInteractiveShotEventListener:Lcom/samsung/android/camera/core/SemCamera$InteractiveShotEventListener;
 
-    .line 2168
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mFoodShotEventListener:Lcom/samsung/android/camera/core/SemCamera$FoodShotEventListener;
 
-    .line 2199
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mDepthMapEventListener:Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
 
-    .line 2238
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mSlowMotionEventListener:Lcom/samsung/android/camera/core/SemCamera$SlowMotionEventListener;
 
-    .line 2312
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mPhaseAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$PhaseAutoFocusCallback;
 
-    .line 2348
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mMultiAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$MultiAutoFocusCallback;
 
-    .line 2391
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mObjectTrackingAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$ObjectTrackingAutoFocusCallback;
 
-    .line 2460
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mCameraSensorDataListener:Lcom/samsung/android/camera/core/SemCamera$CameraSensorDataListener;
 
-    .line 2483
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoExposureCallback:Lcom/samsung/android/camera/core/SemCamera$AutoExposureCallback;
 
-    .line 2505
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mBrightnessValueCallback:Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;
 
-    .line 2529
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mBurstShotFpsCallback:Lcom/samsung/android/camera/core/SemCamera$BurstShotFpsCallback;
 
-    .line 3082
     new-instance v1, Ljava/util/LinkedList;
 
     invoke-direct {v1}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
-    .line 3083
     new-instance v1, Ljava/util/LinkedList;
 
     invoke-direct {v1}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
-    .line 6302
     iput-object v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mSmartFilterListener:Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;
 
-    .line 2779
     const-string/jumbo v1, "SemCamera-JNI-Java"
 
     const-string/jumbo v2, "Semcamera Version is 2401"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2780
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/camera/core/SemCamera;->cameraInitNormal(ILandroid/os/Looper;Z)I
 
     move-result v0
 
-    .line 2781
+    .line 2762
     .local v0, "err":I
     invoke-static {v0}, Lcom/samsung/android/camera/core/SemCamera;->checkInitErrors(I)Z
 
     move-result v1
 
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_a
 
-    .line 2782
     sget v1, Landroid/system/OsConstants;->EACCES:I
 
     neg-int v1, v1
 
     if-ne v0, v1, :cond_0
 
-    .line 2783
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string/jumbo v2, "Fail to connect to camera service"
@@ -2167,7 +2131,6 @@
 
     throw v1
 
-    .line 2784
     :cond_0
     sget v1, Landroid/system/OsConstants;->ENODEV:I
 
@@ -2175,7 +2138,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 2785
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string/jumbo v2, "Camera initialization failed"
@@ -2184,49 +2146,22 @@
 
     throw v1
 
-    .line 2786
     :cond_1
-    sget v1, Landroid/system/OsConstants;->ENOSYS:I
+    if-ne v0, v3, :cond_2
 
-    neg-int v1, v1
-
-    if-ne v0, v1, :cond_2
-
-    .line 2787
     new-instance v1, Ljava/lang/RuntimeException;
 
-    const-string/jumbo v2, "Camera initialization failed because some methods are not implemented"
+    const-string/jumbo v2, "No permission to open camera device"
 
     invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     throw v1
 
-    .line 2789
     :cond_2
-    sget v1, Landroid/system/OsConstants;->EOPNOTSUPP:I
-
-    neg-int v1, v1
+    const/4 v1, 0x3
 
     if-ne v0, v1, :cond_3
 
-    .line 2790
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    const-string/jumbo v2, "Camera initialization failed because the HAL version is not supported by this device"
-
-    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 2792
-    :cond_3
-    sget v1, Landroid/system/OsConstants;->EINVAL:I
-
-    neg-int v1, v1
-
-    if-ne v0, v1, :cond_4
-
-    .line 2793
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string/jumbo v2, "Camera initialization failed because the input arguments are invalid"
@@ -2235,15 +2170,37 @@
 
     throw v1
 
-    .line 2795
+    :cond_3
+    const/4 v1, 0x4
+
+    if-ne v0, v1, :cond_4
+
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    const-string/jumbo v2, "Camera device currently not available"
+
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
     :cond_4
-    sget v1, Landroid/system/OsConstants;->EBUSY:I
+    if-ne v0, v3, :cond_5
 
-    neg-int v1, v1
+    .line 2775
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    if-ne v0, v1, :cond_5
+    const-string/jumbo v2, "No permission to open camera"
 
-    .line 2796
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 2776
+    :cond_5
+    const/4 v1, 0x7
+
+    if-ne v0, v1, :cond_6
+
     new-instance v1, Lcom/samsung/android/camera/core/SemCamera$CameraBusyRuntimeException;
 
     const-string/jumbo v2, "Camera initialization failed because the camera device was already opened"
@@ -2252,15 +2209,12 @@
 
     throw v1
 
-    .line 2798
-    :cond_5
-    sget v1, Landroid/system/OsConstants;->EUSERS:I
+    .line 2779
+    :cond_6
+    const/16 v1, 0x8
 
-    neg-int v1, v1
+    if-ne v0, v1, :cond_7
 
-    if-ne v0, v1, :cond_6
-
-    .line 2799
     new-instance v1, Lcom/samsung/android/camera/core/SemCamera$CameraMaxUsersRuntimeException;
 
     const-string/jumbo v2, "Camera initialization failed because the max number of camera devices were already opened"
@@ -2269,13 +2223,28 @@
 
     throw v1
 
-    .line 2801
-    :cond_6
-    const/16 v1, -0x63
+    .line 2782
+    :cond_7
+    const/16 v1, 0xa
 
-    if-ne v0, v1, :cond_7
+    if-ne v0, v1, :cond_8
 
-    .line 2802
+    .line 2783
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    const-string/jumbo v2, "Camera device currently not available due to invalid operation"
+
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 2784
+    :cond_8
+    const/16 v1, 0x63
+
+    if-ne v0, v1, :cond_9
+
+    .line 2785
     new-instance v1, Lcom/samsung/android/camera/core/SemCamera$CameraNoResourceException;
 
     const-string/jumbo v2, "Camera initialization failed because the camera resource was already used"
@@ -2284,8 +2253,8 @@
 
     throw v1
 
-    .line 2806
-    :cond_7
+    .line 2789
+    :cond_9
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string/jumbo v2, "Unknown camera error"
@@ -2294,8 +2263,8 @@
 
     throw v1
 
-    .line 2778
-    :cond_8
+    .line 2759
+    :cond_a
     return-void
 .end method
 
@@ -2334,15 +2303,12 @@
 
     if-eq p2, v0, :cond_0
 
-    .line 3444
     const/16 v0, 0x80
 
     if-eq p2, v0, :cond_0
 
-    .line 3445
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    .line 3446
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2361,16 +2327,13 @@
 
     move-result-object v1
 
-    .line 3445
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 3449
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->_addCallbackBuffer([BI)V
 
-    .line 3440
     return-void
 .end method
 
@@ -2381,7 +2344,7 @@
     .param p3, "halsetting"    # Z
 
     .prologue
-    .line 2752
+    .line 2733
     const/4 v0, -0x2
 
     invoke-direct {p0, p1, v0, p2, p3}, Lcom/samsung/android/camera/core/SemCamera;->cameraInitVersion(IILandroid/os/Looper;Z)I
@@ -2403,50 +2366,38 @@
 
     const/4 v3, 0x0
 
-    .line 2718
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mShutterCallback:Lcom/samsung/android/camera/core/SemCamera$ShutterCallback;
 
-    .line 2719
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mRawImageCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 2720
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mJpegCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 2721
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallback:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
 
-    .line 2722
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallbackForGLEffect:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
 
-    .line 2723
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallbackTimeStamp:Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
 
-    .line 2724
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostviewCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 2725
     iput-boolean v5, p0, Lcom/samsung/android/camera/core/SemCamera;->mUsingPreviewAllocation:Z
 
-    .line 2726
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mZoomListener:Lcom/samsung/android/camera/core/SemCamera$OnZoomChangeListener;
 
-    .line 2729
     if-eqz p3, :cond_2
 
-    .line 2731
     new-instance v3, Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     invoke-direct {v3, p0, p0, p3}, Lcom/samsung/android/camera/core/SemCamera$EventHandler;-><init>(Lcom/samsung/android/camera/core/SemCamera;Lcom/samsung/android/camera/core/SemCamera;Landroid/os/Looper;)V
 
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
-    .line 2740
     :goto_0
     invoke-static {}, Landroid/app/ActivityThread;->currentOpPackageName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2741
+    .line 2722
     .local v1, "packageName":Ljava/lang/String;
     invoke-static {}, Landroid/os/Process;->myUid()I
 
@@ -2460,7 +2411,6 @@
 
     const-string/jumbo v1, "android"
 
-    .line 2743
     :cond_0
     new-instance v3, Ljava/lang/ref/WeakReference;
 
@@ -2470,22 +2420,20 @@
 
     move-result v2
 
-    .line 2744
+    .line 2725
     .local v2, "res":I
     if-nez v2, :cond_1
 
-    .line 2745
     if-eqz p4, :cond_1
 
     const/16 v3, 0x5e4
 
     invoke-virtual {p0, v3, v5, v5}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 2747
     :cond_1
     return v2
 
-    .line 2732
+    .line 2713
     .end local v1    # "packageName":Ljava/lang/String;
     .end local v2    # "res":I
     :cond_2
@@ -2496,7 +2444,6 @@
     .local v0, "looper":Landroid/os/Looper;
     if-eqz v0, :cond_3
 
-    .line 2733
     new-instance v3, Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     invoke-direct {v3, p0, p0, v0}, Lcom/samsung/android/camera/core/SemCamera$EventHandler;-><init>(Lcom/samsung/android/camera/core/SemCamera;Lcom/samsung/android/camera/core/SemCamera;Landroid/os/Looper;)V
@@ -2505,7 +2452,6 @@
 
     goto :goto_0
 
-    .line 2734
     :cond_3
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
@@ -2513,7 +2459,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 2735
     new-instance v3, Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     invoke-direct {v3, p0, p0, v0}, Lcom/samsung/android/camera/core/SemCamera$EventHandler;-><init>(Lcom/samsung/android/camera/core/SemCamera;Lcom/samsung/android/camera/core/SemCamera;Landroid/os/Looper;)V
@@ -2522,7 +2467,6 @@
 
     goto :goto_0
 
-    .line 2737
     :cond_4
     iput-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
@@ -2536,7 +2480,6 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 2815
     if-eqz p0, :cond_0
 
     const/4 v0, 0x1
@@ -2554,27 +2497,25 @@
     .param p1, "cameraInfo"    # Lcom/samsung/android/camera/core/SemCamera$CameraInfo;
 
     .prologue
-    .line 349
+    .line 321
     invoke-static {p0, p1}, Lcom/samsung/android/camera/core/SemCamera;->_getCameraInfo(ILcom/samsung/android/camera/core/SemCamera$CameraInfo;)V
 
-    .line 350
     const-string/jumbo v3, "audio"
 
     invoke-static {v3}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v1
 
-    .line 351
+    .line 323
     .local v1, "b":Landroid/os/IBinder;
     invoke-static {v1}, Landroid/media/IAudioService$Stub;->asInterface(Landroid/os/IBinder;)Landroid/media/IAudioService;
 
     move-result-object v0
 
-    .line 353
+    .line 325
     .local v0, "audioService":Landroid/media/IAudioService;
     if-eqz v0, :cond_0
 
-    .line 354
     :try_start_0
     invoke-interface {v0}, Landroid/media/IAudioService;->isCameraSoundForced()Z
 
@@ -2582,23 +2523,20 @@
 
     if-eqz v3, :cond_0
 
-    .line 357
     const/4 v3, 0x0
 
     iput-boolean v3, p1, Lcom/samsung/android/camera/core/SemCamera$CameraInfo;->canDisableShutterSound:Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 348
     :cond_0
     :goto_0
     return-void
 
-    .line 361
     :catch_0
     move-exception v2
 
-    .line 362
+    .line 334
     .local v2, "e":Landroid/os/RemoteException;
     const-string/jumbo v3, "SemCamera-JNI-Java"
 
@@ -2639,18 +2577,17 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 2621
     invoke-static {}, Lcom/samsung/android/camera/core/SemCamera;->getNumberOfCameras()I
 
     move-result v2
 
-    .line 2622
+    .line 2601
     .local v2, "numberOfCameras":I
     new-instance v0, Lcom/samsung/android/camera/core/SemCamera$CameraInfo;
 
     invoke-direct {v0}, Lcom/samsung/android/camera/core/SemCamera$CameraInfo;-><init>()V
 
-    .line 2623
+    .line 2602
     .local v0, "cameraInfo":Lcom/samsung/android/camera/core/SemCamera$CameraInfo;
     const/4 v1, 0x0
 
@@ -2658,15 +2595,12 @@
     :goto_0
     if-ge v1, v2, :cond_1
 
-    .line 2624
     invoke-static {v1, v0}, Lcom/samsung/android/camera/core/SemCamera;->getCameraInfo(ILcom/samsung/android/camera/core/SemCamera$CameraInfo;)V
 
-    .line 2625
     iget v3, v0, Lcom/samsung/android/camera/core/SemCamera$CameraInfo;->facing:I
 
     if-nez v3, :cond_0
 
-    .line 2626
     new-instance v3, Lcom/samsung/android/camera/core/SemCamera;
 
     const/4 v4, 0x1
@@ -2675,13 +2609,11 @@
 
     return-object v3
 
-    .line 2623
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 2629
     :cond_1
     return-object v5
 .end method
@@ -2691,14 +2623,13 @@
     .param p0, "cameraId"    # I
 
     .prologue
-    .line 2573
+    .line 2547
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
     const-string/jumbo v1, "SemCamera.open()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2578
     new-instance v0, Lcom/samsung/android/camera/core/SemCamera;
 
     const/4 v1, 0x0
@@ -2716,14 +2647,13 @@
     .param p1, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 2586
+    .line 2564
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
     const-string/jumbo v1, "SemCamera.open()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2591
     new-instance v0, Lcom/samsung/android/camera/core/SemCamera;
 
     const/4 v1, 0x1
@@ -2740,14 +2670,13 @@
     .param p2, "halsetting"    # Z
 
     .prologue
-    .line 2602
+    .line 2580
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
     const-string/jumbo v1, "SemCamera.open()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2607
     new-instance v0, Lcom/samsung/android/camera/core/SemCamera;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;-><init>(ILandroid/os/Looper;Z)V
@@ -2761,12 +2690,11 @@
     .param p1, "halVersion"    # I
 
     .prologue
-    .line 2671
+    .line 2650
     const/16 v0, 0x100
 
     if-ge p1, v0, :cond_0
 
-    .line 2672
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2791,7 +2719,6 @@
 
     throw v0
 
-    .line 2675
     :cond_0
     new-instance v0, Lcom/samsung/android/camera/core/SemCamera;
 
@@ -2804,7 +2731,7 @@
     .locals 1
 
     .prologue
-    .line 2822
+    .line 2805
     new-instance v0, Lcom/samsung/android/camera/core/SemCamera;
 
     invoke-direct {v0}, Lcom/samsung/android/camera/core/SemCamera;-><init>()V
@@ -2821,7 +2748,7 @@
     .param p4, "obj"    # Ljava/lang/Object;
 
     .prologue
-    .line 4449
+    .line 4442
     const/16 v12, 0x10
 
     move/from16 v0, p1
@@ -2852,7 +2779,6 @@
 
     invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4450
     :cond_0
     new-instance v12, Ljava/lang/StringBuilder;
 
@@ -2884,7 +2810,6 @@
 
     invoke-static {v14, v15, v12}, Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V
 
-    .line 4453
     :try_start_0
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -2895,11 +2820,10 @@
 
     check-cast v4, Lcom/samsung/android/camera/core/SemCamera;
 
-    .line 4454
+    .line 4447
     .local v4, "c":Lcom/samsung/android/camera/core/SemCamera;
     if-nez v4, :cond_1
 
-    .line 4455
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     const-string/jumbo v13, "postEventFromNative : SemCamera is null"
@@ -2908,37 +2832,36 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4534
     const-wide/16 v12, 0x400
 
     invoke-static {v12, v13}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 4456
     return-void
 
-    .line 4459
     :cond_1
     :try_start_1
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
-    if-eqz v12, :cond_a
+    if-eqz v12, :cond_c
 
-    .line 4460
     const/high16 v12, 0x10000
 
     move/from16 v0, p1
 
-    if-ne v0, v12, :cond_5
+    if-ne v0, v12, :cond_6
 
-    .line 4461
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->lock()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4463
     :try_start_2
+    iget-boolean v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrCallbackEnabled:Z
+
+    if-eqz v12, :cond_3
+
+    .line 4458
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
     invoke-interface {v12}, Ljava/util/Queue;->size()I
@@ -2949,7 +2872,6 @@
 
     if-lt v12, v13, :cond_2
 
-    .line 4464
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
     invoke-interface {v12}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -2958,11 +2880,10 @@
 
     check-cast v6, Landroid/os/ParcelFileDescriptor;
 
-    .line 4465
+    .line 4460
     .local v6, "irisIrFd":Landroid/os/ParcelFileDescriptor;
     if-eqz v6, :cond_2
 
-    .line 4466
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     new-instance v13, Ljava/lang/StringBuilder;
@@ -2999,10 +2920,9 @@
 
     invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4467
     invoke-virtual {v6}, Landroid/os/ParcelFileDescriptor;->close()V
 
-    .line 4471
+    .line 4466
     .end local v6    # "irisIrFd":Landroid/os/ParcelFileDescriptor;
     :cond_2
     check-cast p4, Ljava/io/FileDescriptor;
@@ -3012,7 +2932,7 @@
 
     move-result-object v9
 
-    .line 4472
+    .line 4467
     .local v9, "newIrisIrFd":Landroid/os/ParcelFileDescriptor;
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
@@ -3020,11 +2940,10 @@
 
     move-result v11
 
-    .line 4473
+    .line 4468
     .local v11, "ret":Z
-    if-eqz v11, :cond_3
+    if-eqz v11, :cond_4
 
-    .line 4474
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     new-instance v13, Ljava/lang/StringBuilder;
@@ -3072,15 +2991,23 @@
     invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 4486
+    .line 4478
+    .end local v9    # "newIrisIrFd":Landroid/os/ParcelFileDescriptor;
+    .end local v11    # "ret":Z
+    :cond_3
     :try_start_3
+    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 4481
+    :goto_0
     iget-boolean v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrCallbackEnabled:Z
 
-    if-eqz v12, :cond_4
+    if-eqz v12, :cond_5
 
-    .line 4487
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     const/4 v13, 0x0
@@ -3095,36 +3022,27 @@
 
     move-result-object v8
 
-    .line 4488
+    .line 4483
     .local v8, "m":Landroid/os/Message;
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     invoke-virtual {v12, v8}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    .line 4492
-    .end local v8    # "m":Landroid/os/Message;
-    :goto_0
-    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
-
-    invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 4534
-    .end local v9    # "newIrisIrFd":Landroid/os/ParcelFileDescriptor;
-    .end local v11    # "ret":Z
+    .line 4529
+    .end local v8    # "m":Landroid/os/Message;
     :goto_1
     const-wide/16 v12, 0x400
 
     invoke-static {v12, v13}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 4447
     return-void
 
-    .line 4476
+    .line 4471
     .restart local v9    # "newIrisIrFd":Landroid/os/ParcelFileDescriptor;
     .restart local v11    # "ret":Z
-    :cond_3
+    :cond_4
     :try_start_4
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
@@ -3161,104 +3079,110 @@
     move-result-object v13
 
     invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 4477
-    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
-
-    invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_0
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    .line 4534
-    const-wide/16 v12, 0x400
-
-    invoke-static {v12, v13}, Landroid/os/Trace;->traceEnd(J)V
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     .line 4478
-    return-void
-
-    .line 4480
-    .end local v9    # "newIrisIrFd":Landroid/os/ParcelFileDescriptor;
-    .end local v11    # "ret":Z
-    :catch_0
-    move-exception v5
-
-    .line 4481
-    .local v5, "e":Ljava/lang/Exception;
     :try_start_5
-    const-string/jumbo v12, "SemCamera-JNI-Java"
-
-    const-string/jumbo v13, "ParcelFileDescriptor dup exception, so return"
-
-    invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 4482
-    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 4534
     const-wide/16 v12, 0x400
 
     invoke-static {v12, v13}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 4483
     return-void
 
-    .line 4490
-    .end local v5    # "e":Ljava/lang/Exception;
-    .restart local v9    # "newIrisIrFd":Landroid/os/ParcelFileDescriptor;
-    .restart local v11    # "ret":Z
-    :cond_4
+    .line 4475
+    .end local v9    # "newIrisIrFd":Landroid/os/ParcelFileDescriptor;
+    .end local v11    # "ret":Z
+    :catch_0
+    move-exception v5
+
+    .line 4476
+    .local v5, "e":Ljava/lang/Exception;
     :try_start_6
+    const-string/jumbo v12, "SemCamera-JNI-Java"
+
+    const-string/jumbo v13, "ParcelFileDescriptor dup exception, so return"
+
+    invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_1
+
+    .line 4478
+    :try_start_7
+    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_0
+
+    goto :goto_0
+
+    .line 4528
+    .end local v4    # "c":Lcom/samsung/android/camera/core/SemCamera;
+    .end local v5    # "e":Ljava/lang/Exception;
+    :catchall_0
+    move-exception v12
+
+    .line 4529
+    const-wide/16 v14, 0x400
+
+    invoke-static {v14, v15}, Landroid/os/Trace;->traceEnd(J)V
+
+    .line 4528
+    throw v12
+
+    .line 4477
+    .restart local v4    # "c":Lcom/samsung/android/camera/core/SemCamera;
+    :catchall_1
+    move-exception v12
+
+    .line 4478
+    :try_start_8
+    iget-object v13, v4, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v13}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    throw v12
+
+    :cond_5
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     const-string/jumbo v13, "ERROR : check IrisCallback Message"
 
     invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 4533
-    .end local v4    # "c":Lcom/samsung/android/camera/core/SemCamera;
-    .end local v9    # "newIrisIrFd":Landroid/os/ParcelFileDescriptor;
-    .end local v11    # "ret":Z
-    :catchall_0
-    move-exception v12
-
-    .line 4534
-    const-wide/16 v14, 0x400
-
-    invoke-static {v14, v15}, Landroid/os/Trace;->traceEnd(J)V
-
-    .line 4533
-    throw v12
-
-    .line 4493
-    .restart local v4    # "c":Lcom/samsung/android/camera/core/SemCamera;
+    .line 4487
     .restart local p4    # "obj":Ljava/lang/Object;
-    :cond_5
+    :cond_6
     const v12, 0x8000
 
     move/from16 v0, p1
 
-    if-ne v0, v12, :cond_9
+    if-ne v0, v12, :cond_b
 
-    .line 4494
-    :try_start_7
-    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    .line 4488
+    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->lock()V
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_0
+    :try_end_8
+    .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 4496
-    :try_start_8
+    .line 4491
+    :try_start_9
+    iget-boolean v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewCallbackEnabled:Z
+
+    if-eqz v12, :cond_8
+
+    .line 4492
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
     invoke-interface {v12}, Ljava/util/Queue;->size()I
@@ -3267,9 +3191,8 @@
 
     const/4 v13, 0x3
 
-    if-lt v12, v13, :cond_6
+    if-lt v12, v13, :cond_7
 
-    .line 4497
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
     invoke-interface {v12}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -3278,11 +3201,10 @@
 
     check-cast v7, Landroid/os/ParcelFileDescriptor;
 
-    .line 4498
+    .line 4494
     .local v7, "irisPreviewFd":Landroid/os/ParcelFileDescriptor;
-    if-eqz v7, :cond_6
+    if-eqz v7, :cond_7
 
-    .line 4499
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     new-instance v13, Ljava/lang/StringBuilder;
@@ -3319,12 +3241,11 @@
 
     invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4500
     invoke-virtual {v7}, Landroid/os/ParcelFileDescriptor;->close()V
 
-    .line 4504
+    .line 4500
     .end local v7    # "irisPreviewFd":Landroid/os/ParcelFileDescriptor;
-    :cond_6
+    :cond_7
     check-cast p4, Ljava/io/FileDescriptor;
 
     .end local p4    # "obj":Ljava/lang/Object;
@@ -3332,7 +3253,7 @@
 
     move-result-object v10
 
-    .line 4505
+    .line 4501
     .local v10, "newIrisPreviewFd":Landroid/os/ParcelFileDescriptor;
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
@@ -3340,11 +3261,10 @@
 
     move-result v11
 
-    .line 4506
+    .line 4502
     .restart local v11    # "ret":Z
-    if-eqz v11, :cond_7
+    if-eqz v11, :cond_9
 
-    .line 4507
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     new-instance v13, Ljava/lang/StringBuilder;
@@ -3390,17 +3310,25 @@
     move-result-object v13
 
     invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_8
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_1
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
+    :try_end_9
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_1
+    .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
-    .line 4519
-    :try_start_9
+    .line 4512
+    .end local v10    # "newIrisPreviewFd":Landroid/os/ParcelFileDescriptor;
+    .end local v11    # "ret":Z
+    :cond_8
+    :try_start_a
+    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 4515
+    :goto_2
     iget-boolean v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewCallbackEnabled:Z
 
-    if-eqz v12, :cond_8
+    if-eqz v12, :cond_a
 
-    .line 4520
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     const/4 v13, 0x0
@@ -3415,26 +3343,22 @@
 
     move-result-object v8
 
-    .line 4521
+    .line 4517
     .restart local v8    # "m":Landroid/os/Message;
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     invoke-virtual {v12, v8}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    .line 4525
-    .end local v8    # "m":Landroid/os/Message;
-    :goto_2
-    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
-
-    invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_0
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_0
 
     goto/16 :goto_1
 
-    .line 4509
-    :cond_7
-    :try_start_a
+    .line 4505
+    .end local v8    # "m":Landroid/os/Message;
+    .restart local v10    # "newIrisPreviewFd":Landroid/os/ParcelFileDescriptor;
+    .restart local v11    # "ret":Z
+    :cond_9
+    :try_start_b
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     new-instance v13, Ljava/lang/StringBuilder;
@@ -3470,72 +3394,75 @@
     move-result-object v13
 
     invoke-static {v12, v13}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_b
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_1
+    .catchall {:try_start_b .. :try_end_b} :catchall_2
 
-    .line 4510
-    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    .line 4512
+    :try_start_c
+    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
-    :try_end_a
-    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_1
-    .catchall {:try_start_a .. :try_end_a} :catchall_0
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_0
 
-    .line 4534
     const-wide/16 v12, 0x400
 
     invoke-static {v12, v13}, Landroid/os/Trace;->traceEnd(J)V
 
-    .line 4511
     return-void
 
-    .line 4513
+    .line 4509
     .end local v10    # "newIrisPreviewFd":Landroid/os/ParcelFileDescriptor;
     .end local v11    # "ret":Z
     :catch_1
     move-exception v5
 
-    .line 4514
+    .line 4510
     .restart local v5    # "e":Ljava/lang/Exception;
-    :try_start_b
+    :try_start_d
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     const-string/jumbo v13, "ParcelFileDescriptor dup exception, so return"
 
     invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_2
 
-    .line 4515
-    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    .line 4512
+    :try_start_e
+    iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v12}, Ljava/util/concurrent/locks/Lock;->unlock()V
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_0
 
-    .line 4534
-    const-wide/16 v12, 0x400
+    goto :goto_2
 
-    invoke-static {v12, v13}, Landroid/os/Trace;->traceEnd(J)V
-
-    .line 4516
-    return-void
-
-    .line 4523
+    .line 4511
     .end local v5    # "e":Ljava/lang/Exception;
-    .restart local v10    # "newIrisPreviewFd":Landroid/os/ParcelFileDescriptor;
-    .restart local v11    # "ret":Z
-    :cond_8
-    :try_start_c
+    :catchall_2
+    move-exception v12
+
+    .line 4512
+    iget-object v13, v4, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v13}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 4511
+    throw v12
+
+    .line 4519
+    :cond_a
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     const-string/jumbo v13, "ERROR : check IrisPreviewCallback Enabled"
 
     invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_2
+    goto/16 :goto_1
 
-    .line 4527
-    .end local v10    # "newIrisPreviewFd":Landroid/os/ParcelFileDescriptor;
-    .end local v11    # "ret":Z
+    .line 4522
     .restart local p4    # "obj":Ljava/lang/Object;
-    :cond_9
+    :cond_b
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     move/from16 v0, p1
@@ -3550,7 +3477,7 @@
 
     move-result-object v8
 
-    .line 4528
+    .line 4523
     .restart local v8    # "m":Landroid/os/Message;
     iget-object v12, v4, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
@@ -3558,16 +3485,16 @@
 
     goto/16 :goto_1
 
-    .line 4531
+    .line 4526
     .end local v8    # "m":Landroid/os/Message;
-    :cond_a
+    :cond_c
     const-string/jumbo v12, "SemCamera-JNI-Java"
 
     const-string/jumbo v13, "mEventHandler is null"
 
     invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_0
+    :try_end_e
+    .catchall {:try_start_e .. :try_end_e} :catchall_0
 
     goto/16 :goto_1
 .end method
@@ -3590,7 +3517,6 @@
 
     invoke-direct {p0, p1, v0}, Lcom/samsung/android/camera/core/SemCamera;->_addCallbackBuffer([BI)V
 
-    .line 3393
     return-void
 .end method
 
@@ -3604,7 +3530,6 @@
 
     invoke-direct {p0, p1, v0}, Lcom/samsung/android/camera/core/SemCamera;->addCallbackBuffer([BI)V
 
-    .line 3435
     return-void
 .end method
 
@@ -3613,12 +3538,11 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$AutoFocusCallback;
 
     .prologue
-    .line 4622
+    .line 4617
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusCallbackLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 4623
     :try_start_0
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$AutoFocusCallback;
     :try_end_0
@@ -3626,13 +3550,10 @@
 
     monitor-exit v0
 
-    .line 4625
     invoke-direct {p0}, Lcom/samsung/android/camera/core/SemCamera;->native_autoFocus()V
 
-    .line 4620
     return-void
 
-    .line 4622
     :catchall_0
     move-exception v1
 
@@ -3646,7 +3567,7 @@
     .param p1, "cameraId"    # I
 
     .prologue
-    .line 2770
+    .line 2751
     const/4 v0, -0x1
 
     const/4 v1, 0x0
@@ -3664,17 +3585,15 @@
     .locals 2
 
     .prologue
-    .line 4641
+    .line 4636
     invoke-direct {p0}, Lcom/samsung/android/camera/core/SemCamera;->native_cancelAutoFocus()V
 
-    .line 4657
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 4637
     return-void
 .end method
 
@@ -3684,12 +3603,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5886
     const/16 v0, 0x58f
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5884
     return-void
 .end method
 
@@ -3699,12 +3616,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5448
     const/16 v0, 0x5d5
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5447
     return-void
 .end method
 
@@ -3714,12 +3629,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 6197
     const/16 v0, 0x5c0
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6195
     return-void
 .end method
 
@@ -3729,12 +3642,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5957
     const/16 v0, 0x5d9
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5956
     return-void
 .end method
 
@@ -3744,12 +3655,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5922
     const/16 v0, 0x5b7
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5921
     return-void
 .end method
 
@@ -3779,18 +3688,14 @@
     .local v2, "previewSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     new-instance v3, Landroid/renderscript/Type$Builder;
 
-    .line 3486
     sget-object v4, Landroid/renderscript/Element$DataType;->UNSIGNED_8:Landroid/renderscript/Element$DataType;
 
-    .line 3487
     sget-object v5, Landroid/renderscript/Element$DataKind;->PIXEL_YUV:Landroid/renderscript/Element$DataKind;
 
-    .line 3485
     invoke-static {p1, v4, v5}, Landroid/renderscript/Element;->createPixel(Landroid/renderscript/RenderScript;Landroid/renderscript/Element$DataType;Landroid/renderscript/Element$DataKind;)Landroid/renderscript/Element;
 
     move-result-object v4
 
-    .line 3484
     invoke-direct {v3, p1, v4}, Landroid/renderscript/Type$Builder;-><init>(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)V
 
     .line 3490
@@ -3799,29 +3704,23 @@
 
     invoke-virtual {v3, v4}, Landroid/renderscript/Type$Builder;->setYuvFormat(I)Landroid/renderscript/Type$Builder;
 
-    .line 3491
     if-eqz v2, :cond_0
 
-    .line 3492
     iget v4, v2, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
     invoke-virtual {v3, v4}, Landroid/renderscript/Type$Builder;->setX(I)Landroid/renderscript/Type$Builder;
 
-    .line 3493
     iget v4, v2, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     invoke-virtual {v3, v4}, Landroid/renderscript/Type$Builder;->setY(I)Landroid/renderscript/Type$Builder;
 
-    .line 3496
     :cond_0
     invoke-virtual {v3}, Landroid/renderscript/Type$Builder;->create()Landroid/renderscript/Type;
 
     move-result-object v4
 
-    .line 3497
     or-int/lit8 v5, p2, 0x20
 
-    .line 3496
     invoke-static {p1, v4, v5}, Landroid/renderscript/Allocation;->createTyped(Landroid/renderscript/RenderScript;Landroid/renderscript/Type;I)Landroid/renderscript/Allocation;
 
     move-result-object v0
@@ -3837,12 +3736,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1509
     const/16 v0, 0x598
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 1508
     return-void
 .end method
 
@@ -3850,7 +3747,7 @@
     .locals 1
 
     .prologue
-    .line 4951
+    .line 4950
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/samsung/android/camera/core/SemCamera;->_enableShutterSound(Z)Z
@@ -3865,14 +3762,13 @@
     .param p1, "token"    # I
 
     .prologue
-    .line 1501
+    .line 1475
     const/16 v0, 0x597
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 1500
     return-void
 .end method
 
@@ -3881,27 +3777,25 @@
     .param p1, "enabled"    # Z
 
     .prologue
-    .line 4920
+    .line 4919
     if-nez p1, :cond_0
 
-    .line 4921
     const-string/jumbo v3, "audio"
 
     invoke-static {v3}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v1
 
-    .line 4922
+    .line 4921
     .local v1, "b":Landroid/os/IBinder;
     invoke-static {v1}, Landroid/media/IAudioService$Stub;->asInterface(Landroid/os/IBinder;)Landroid/media/IAudioService;
 
     move-result-object v0
 
-    .line 4924
+    .line 4923
     .local v0, "audioService":Landroid/media/IAudioService;
     if-eqz v0, :cond_0
 
-    .line 4925
     :try_start_0
     invoke-interface {v0}, Landroid/media/IAudioService;->isCameraSoundForced()Z
     :try_end_0
@@ -3915,11 +3809,10 @@
 
     return v3
 
-    .line 4927
     :catch_0
     move-exception v2
 
-    .line 4928
+    .line 4927
     .local v2, "e":Landroid/os/RemoteException;
     const-string/jumbo v3, "SemCamera-JNI-Java"
 
@@ -3927,7 +3820,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4931
+    .line 4930
     .end local v0    # "audioService":Landroid/media/IAudioService;
     .end local v1    # "b":Landroid/os/IBinder;
     .end local v2    # "e":Landroid/os/RemoteException;
@@ -3943,10 +3836,9 @@
     .locals 0
 
     .prologue
-    .line 2837
+    .line 2820
     invoke-virtual {p0}, Lcom/samsung/android/camera/core/SemCamera;->release()V
 
-    .line 2836
     return-void
 .end method
 
@@ -3968,7 +3860,6 @@
     .local p1, "map":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     monitor-enter p0
 
-    .line 6325
     if-eqz p1, :cond_0
 
     :try_start_0
@@ -3978,7 +3869,6 @@
 
     if-nez v3, :cond_1
 
-    .line 6326
     :cond_0
     const-string/jumbo v3, ""
     :try_end_0
@@ -3988,7 +3878,6 @@
 
     return-object v3
 
-    .line 6329
     :cond_1
     :try_start_1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -3997,7 +3886,7 @@
 
     invoke-direct {v0, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 6330
+    .line 6332
     .local v0, "flattened":Ljava/lang/StringBuilder;
     invoke-virtual {p1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -4021,16 +3910,14 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 6331
+    .line 6333
     .local v1, "k":Ljava/lang/String;
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6332
     const-string/jumbo v3, "="
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6333
     invoke-virtual {p1, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -4039,7 +3926,6 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6334
     const-string/jumbo v3, ";"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4058,7 +3944,7 @@
 
     throw v3
 
-    .line 6337
+    .line 6339
     .restart local v0    # "flattened":Ljava/lang/StringBuilder;
     .restart local v2    # "k$iterator":Ljava/util/Iterator;
     :cond_2
@@ -4071,7 +3957,6 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
 
-    .line 6338
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -4089,35 +3974,33 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 5328
     new-instance v0, Lcom/samsung/android/camera/core/SemCamera$Parameters;
 
     invoke-direct {v0, p0, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;-><init>(Lcom/samsung/android/camera/core/SemCamera;Lcom/samsung/android/camera/core/SemCamera$Parameters;)V
 
-    .line 5329
+    .line 5331
     .local v0, "p":Lcom/samsung/android/camera/core/SemCamera$Parameters;
     invoke-direct {p0}, Lcom/samsung/android/camera/core/SemCamera;->native_getParameters()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 5330
+    .line 5332
     .local v1, "s":Ljava/lang/String;
     if-eqz v1, :cond_0
 
-    .line 5331
     invoke-virtual {v0, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->unflatten(Ljava/lang/String;)V
 
-    .line 5336
+    .line 5338
     .end local v0    # "p":Lcom/samsung/android/camera/core/SemCamera$Parameters;
     :goto_0
     return-object v0
 
-    .line 5333
+    .line 5335
     .restart local v0    # "p":Lcom/samsung/android/camera/core/SemCamera$Parameters;
     :cond_0
     const/4 v0, 0x0
 
-    .line 5334
+    .line 5336
     .local v0, "p":Lcom/samsung/android/camera/core/SemCamera$Parameters;
     const-string/jumbo v2, "SemCamera-JNI-Java"
 
@@ -4140,12 +4023,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2373
     const/16 v0, 0x6ba
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 2372
     return-void
 .end method
 
@@ -4155,18 +4036,14 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3151
     const/16 v0, 0x713
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 3152
     invoke-virtual {p0}, Lcom/samsung/android/camera/core/SemCamera;->startPreview()V
 
-    .line 3153
     invoke-virtual {p0}, Lcom/samsung/android/camera/core/SemCamera;->stopPreview()V
 
-    .line 3150
     return-void
 .end method
 
@@ -4197,10 +4074,8 @@
 
     const/4 v4, 0x0
 
-    .line 2850
     invoke-direct {p0}, Lcom/samsung/android/camera/core/SemCamera;->native_release()V
 
-    .line 2851
     iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     if-eqz v3, :cond_0
@@ -4209,22 +4084,35 @@
 
     invoke-virtual {v3, v5}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 2852
     :cond_0
     iput-boolean v4, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
-    .line 2854
-    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    .line 2837
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 2855
     iput-boolean v4, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrCallbackEnabled:Z
 
-    .line 2856
+    .line 2839
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 2841
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->lock()V
+
+    .line 2842
     iput-boolean v4, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewCallbackEnabled:Z
 
-    .line 2858
+    .line 2843
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 2845
     const-string/jumbo v3, "SemCamera-JNI-Java"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -4253,8 +4141,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2859
-    :cond_1
+    .line 2846
     :goto_0
     iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
@@ -4264,7 +4151,6 @@
 
     if-lez v3, :cond_2
 
-    .line 2860
     iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
     invoke-interface {v3}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -4273,41 +4159,81 @@
 
     check-cast v1, Landroid/os/ParcelFileDescriptor;
 
-    .line 2861
+    .line 2849
     .local v1, "irisIrFd":Landroid/os/ParcelFileDescriptor;
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->lock()V
+
+    .line 2851
     if-eqz v1, :cond_1
 
-    .line 2863
     :try_start_0
     invoke-virtual {v1}, Landroid/os/ParcelFileDescriptor;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 2857
+    :cond_1
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     goto :goto_0
 
-    .line 2864
     :catch_0
     move-exception v0
 
-    .line 2865
+    .line 2855
     .local v0, "e":Ljava/lang/Exception;
+    :try_start_1
     const-string/jumbo v3, "SemCamera-JNI-Java"
 
     const-string/jumbo v4, "ParcelFileDescriptor irisIrFd close exception."
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 2857
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     goto :goto_0
 
-    .line 2869
+    .line 2856
     .end local v0    # "e":Ljava/lang/Exception;
+    :catchall_0
+    move-exception v3
+
+    .line 2857
+    iget-object v4, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v4}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 2856
+    throw v3
+
+    .line 2860
     .end local v1    # "irisIrFd":Landroid/os/ParcelFileDescriptor;
     :cond_2
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->lock()V
+
+    .line 2861
     iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrQueue:Ljava/util/Queue;
 
     invoke-interface {v3}, Ljava/util/Queue;->clear()V
 
-    .line 2871
+    .line 2862
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisIrLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 2864
     const-string/jumbo v3, "SemCamera-JNI-Java"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -4336,8 +4262,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2872
-    :cond_3
+    .line 2865
     :goto_1
     iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
@@ -4347,7 +4272,6 @@
 
     if-lez v3, :cond_4
 
-    .line 2873
     iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
     invoke-interface {v3}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -4356,46 +4280,81 @@
 
     check-cast v2, Landroid/os/ParcelFileDescriptor;
 
-    .line 2874
+    .line 2868
     .local v2, "irisPreviewFd":Landroid/os/ParcelFileDescriptor;
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->lock()V
+
+    .line 2870
     if-eqz v2, :cond_3
 
-    .line 2876
-    :try_start_1
+    .line 2871
+    :try_start_2
     invoke-virtual {v2}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 2876
+    :cond_3
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     goto :goto_1
 
-    .line 2877
     :catch_1
     move-exception v0
 
-    .line 2878
+    .line 2874
     .restart local v0    # "e":Ljava/lang/Exception;
+    :try_start_3
     const-string/jumbo v3, "SemCamera-JNI-Java"
 
     const-string/jumbo v4, "ParcelFileDescriptor irisPreviewFd close exception."
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    .line 2876
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
     goto :goto_1
 
-    .line 2882
+    .line 2875
     .end local v0    # "e":Ljava/lang/Exception;
+    :catchall_1
+    move-exception v3
+
+    .line 2876
+    iget-object v4, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v4}, Ljava/util/concurrent/locks/Lock;->unlock()V
+
+    .line 2875
+    throw v3
+
+    .line 2881
     .end local v2    # "irisPreviewFd":Landroid/os/ParcelFileDescriptor;
     :cond_4
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
+
+    invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->lock()V
+
+    .line 2882
     iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewQueue:Ljava/util/Queue;
 
     invoke-interface {v3}, Ljava/util/Queue;->clear()V
 
     .line 2883
-    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->lock:Ljava/util/concurrent/locks/Lock;
+    iget-object v3, p0, Lcom/samsung/android/camera/core/SemCamera;->irisPreviewLock:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 2849
     return-void
 .end method
 
@@ -4405,12 +4364,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5496
     const/16 v0, 0x489
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5495
     return-void
 .end method
 
@@ -4420,12 +4377,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2365
     const/16 v0, 0x6b9
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 2364
     return-void
 .end method
 
@@ -4436,10 +4391,9 @@
     .param p3, "codeC"    # I
 
     .prologue
-    .line 6256
+    .line 6258
     invoke-virtual {p0, p1, p2, p3}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6255
     return-void
 .end method
 
@@ -4448,14 +4402,13 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 5858
+    .line 5860
     const/16 v0, 0x5f1
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5856
     return-void
 .end method
 
@@ -4464,14 +4417,13 @@
     .param p1, "level"    # I
 
     .prologue
-    .line 6138
+    .line 6140
     const/16 v0, 0x528
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6136
     return-void
 .end method
 
@@ -4480,10 +4432,9 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$AutoExposureCallback;
 
     .prologue
-    .line 2490
+    .line 2464
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoExposureCallback:Lcom/samsung/android/camera/core/SemCamera$AutoExposureCallback;
 
-    .line 2489
     return-void
 .end method
 
@@ -4492,12 +4443,11 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$AutoFocusCallback;
 
     .prologue
-    .line 4700
+    .line 4695
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusCallbackLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 4701
     :try_start_0
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$AutoFocusCallback;
     :try_end_0
@@ -4505,10 +4455,8 @@
 
     monitor-exit v0
 
-    .line 4698
     return-void
 
-    .line 4700
     :catchall_0
     move-exception v1
 
@@ -4522,10 +4470,9 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$AutoFocusMoveCallback;
 
     .prologue
-    .line 4686
+    .line 4681
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusMoveCallback:Lcom/samsung/android/camera/core/SemCamera$AutoFocusMoveCallback;
 
-    .line 4687
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mAutoFocusMoveCallback:Lcom/samsung/android/camera/core/SemCamera$AutoFocusMoveCallback;
 
     if-eqz v0, :cond_0
@@ -4535,10 +4482,8 @@
     :goto_0
     invoke-direct {p0, v0}, Lcom/samsung/android/camera/core/SemCamera;->enableFocusMoveCallback(I)V
 
-    .line 4685
     return-void
 
-    .line 4687
     :cond_0
     const/4 v0, 0x0
 
@@ -4550,10 +4495,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$BeautyEventListener;
 
     .prologue
-    .line 1867
+    .line 1841
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mBeautyEventListener:Lcom/samsung/android/camera/core/SemCamera$BeautyEventListener;
 
-    .line 1866
     return-void
 .end method
 
@@ -4563,7 +4507,7 @@
     .param p2, "retouchLevel"    # I
 
     .prologue
-    .line 5514
+    .line 5516
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4602,7 +4546,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5515
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -4612,10 +4555,8 @@
 
     invoke-virtual {p0, v1, v0, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5513
     return-void
 
-    .line 5515
     :cond_0
     const/4 v0, 0x0
 
@@ -4627,10 +4568,9 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;
 
     .prologue
-    .line 2513
+    .line 2487
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mBrightnessValueCallback:Lcom/samsung/android/camera/core/SemCamera$BrightnessValueCallback;
 
-    .line 2512
     return-void
 .end method
 
@@ -4643,19 +4583,15 @@
 
     const/4 v1, 0x0
 
-    .line 6099
     if-eqz p1, :cond_0
 
-    .line 6100
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6097
     :goto_0
     return-void
 
-    .line 6102
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -4667,10 +4603,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$BurstEventListener;
 
     .prologue
-    .line 1640
+    .line 1614
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mBurstEventListener:Lcom/samsung/android/camera/core/SemCamera$BurstEventListener;
 
-    .line 1639
     return-void
 .end method
 
@@ -4679,10 +4614,9 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$BurstShotFpsCallback;
 
     .prologue
-    .line 2537
+    .line 2511
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mBurstShotFpsCallback:Lcom/samsung/android/camera/core/SemCamera$BurstShotFpsCallback;
 
-    .line 2536
     return-void
 .end method
 
@@ -4695,19 +4629,15 @@
 
     const/4 v1, 0x0
 
-    .line 6112
     if-eqz p1, :cond_0
 
-    .line 6113
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6110
     :goto_0
     return-void
 
-    .line 6115
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -4719,14 +4649,13 @@
     .param p1, "burstFps"    # I
 
     .prologue
-    .line 5603
+    .line 5605
     const/16 v0, 0x627
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5602
     return-void
 .end method
 
@@ -4736,12 +4665,11 @@
     .param p2, "duration"    # I
 
     .prologue
-    .line 5477
+    .line 5479
     const/16 v0, 0x48c
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5476
     return-void
 .end method
 
@@ -4750,10 +4678,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$CameraSensorDataListener;
 
     .prologue
-    .line 2467
+    .line 2441
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mCameraSensorDataListener:Lcom/samsung/android/camera/core/SemCamera$CameraSensorDataListener;
 
-    .line 2466
     return-void
 .end method
 
@@ -4766,19 +4693,15 @@
 
     const/4 v1, 0x0
 
-    .line 6060
     if-eqz p1, :cond_0
 
-    .line 6061
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6058
     :goto_0
     return-void
 
-    .line 6063
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -4790,14 +4713,13 @@
     .param p1, "usage"    # I
 
     .prologue
-    .line 6214
+    .line 6216
     const/16 v0, 0x71d
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6213
     return-void
 .end method
 
@@ -4805,14 +4727,13 @@
     .locals 3
 
     .prologue
-    .line 5675
+    .line 5677
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
     const-string/jumbo v1, "setCaptureFlipPhotoMode"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5676
     const/16 v0, 0x574
 
     const/4 v1, 0x1
@@ -4821,7 +4742,6 @@
 
     invoke-virtual {p0, v0, v1, v2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5674
     return-void
 .end method
 
@@ -4830,22 +4750,10 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$CommonEventListener;
 
     .prologue
-    .line 1548
+    .line 1522
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mCommonEventListener:Lcom/samsung/android/camera/core/SemCamera$CommonEventListener;
 
-    .line 1547
-    return-void
-.end method
-
-.method public setCommonPostEventListener(Lcom/samsung/android/camera/core/SemCamera$CommonPostEventListener;)V
-    .locals 0
-    .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$CommonPostEventListener;
-
-    .prologue
-    .line 1573
-    iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mCommonPostEventListener:Lcom/samsung/android/camera/core/SemCamera$CommonPostEventListener;
-
-    .line 1572
+    .line 1521
     return-void
 .end method
 
@@ -4854,10 +4762,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
 
     .prologue
-    .line 2208
+    .line 2182
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mDepthMapEventListener:Lcom/samsung/android/camera/core/SemCamera$DepthMapEventListener;
 
-    .line 2207
     return-void
 .end method
 
@@ -4870,12 +4777,11 @@
     .param p2, "height"    # I
 
     .prologue
-    .line 5978
+    .line 5980
     const/16 v0, 0x5b8
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5977
     return-void
 .end method
 
@@ -4885,12 +4791,11 @@
     .param p2, "orientation"    # I
 
     .prologue
-    .line 5987
+    .line 5989
     const/16 v0, 0x5b9
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5986
     return-void
 .end method
 
@@ -4900,12 +4805,11 @@
     .param p2, "bottomRightXY"    # I
 
     .prologue
-    .line 5777
+    .line 5779
     const/16 v0, 0x50d
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5776
     return-void
 .end method
 
@@ -4918,17 +4822,13 @@
 
     const/4 v1, 0x0
 
-    .line 5787
     if-eqz p1, :cond_0
 
-    .line 5788
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5786
     :goto_0
     return-void
 
-    .line 5790
     :cond_0
     const/4 v0, 0x1
 
@@ -4942,10 +4842,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$DualEventListener;
 
     .prologue
-    .line 1978
+    .line 1952
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mDualEventListener:Lcom/samsung/android/camera/core/SemCamera$DualEventListener;
 
-    .line 1977
     return-void
 .end method
 
@@ -4954,14 +4853,13 @@
     .param p1, "mode"    # I
 
     .prologue
-    .line 5848
+    .line 5850
     const/16 v0, 0x607
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5845
     return-void
 .end method
 
@@ -4970,14 +4868,13 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 5832
+    .line 5834
     const/16 v0, 0x510
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5831
     return-void
 .end method
 
@@ -4986,14 +4883,13 @@
     .param p1, "isSaveAsFlipped"    # I
 
     .prologue
-    .line 5737
+    .line 5739
     const/16 v0, 0x512
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5736
     return-void
 .end method
 
@@ -5002,10 +4898,9 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$ErrorCallback;
 
     .prologue
-    .line 5256
+    .line 5255
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mErrorCallback:Lcom/samsung/android/camera/core/SemCamera$ErrorCallback;
 
-    .line 5254
     return-void
 .end method
 
@@ -5014,10 +4909,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$ExtraInfoListener;
 
     .prologue
-    .line 5283
+    .line 5282
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mExtraInfoListener:Lcom/samsung/android/camera/core/SemCamera$ExtraInfoListener;
 
-    .line 5281
     return-void
 .end method
 
@@ -5026,14 +4920,13 @@
     .param p1, "eyeEnlargeLevel"    # I
 
     .prologue
-    .line 5542
+    .line 5544
     const/16 v0, 0x4a0
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5541
     return-void
 .end method
 
@@ -5042,10 +4935,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$FaceDetectionListener;
 
     .prologue
-    .line 5012
+    .line 5011
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceListener:Lcom/samsung/android/camera/core/SemCamera$FaceDetectionListener;
 
-    .line 5010
     return-void
 .end method
 
@@ -5058,18 +4950,15 @@
 
     const/4 v1, 0x0
 
-    .line 5551
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5550
     :goto_0
     return-void
 
-    .line 5552
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5082,12 +4971,11 @@
     .param p2, "yPos"    # I
 
     .prologue
-    .line 5580
+    .line 5582
     const/16 v0, 0x4a5
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5579
     return-void
 .end method
 
@@ -5098,7 +4986,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5561
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -5108,13 +4995,11 @@
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5560
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 5561
     goto :goto_0
 .end method
 
@@ -5123,14 +5008,13 @@
     .param p1, "relightLevel"    # I
 
     .prologue
-    .line 5570
+    .line 5572
     const/16 v0, 0x4a4
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5569
     return-void
 .end method
 
@@ -5143,19 +5027,15 @@
 
     const/4 v1, 0x0
 
-    .line 6073
     if-eqz p1, :cond_0
 
-    .line 6074
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6071
     :goto_0
     return-void
 
-    .line 6076
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5169,7 +5049,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1518
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -5179,13 +5058,11 @@
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 1517
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 1518
     goto :goto_0
 .end method
 
@@ -5194,10 +5071,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$FoodShotEventListener;
 
     .prologue
-    .line 2178
+    .line 2152
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mFoodShotEventListener:Lcom/samsung/android/camera/core/SemCamera$FoodShotEventListener;
 
-    .line 2177
     return-void
 .end method
 
@@ -5206,7 +5082,7 @@
     .param p1, "params"    # Ljava/lang/String;
 
     .prologue
-    .line 5293
+    .line 5292
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -5231,7 +5107,7 @@
 
     move-result-object v0
 
-    .line 5294
+    .line 5293
     .local v0, "mParams":Ljava/lang/String;
     const-string/jumbo v1, "SemCamera-JNI-Java"
 
@@ -5255,10 +5131,8 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5295
     invoke-direct {p0, v0}, Lcom/samsung/android/camera/core/SemCamera;->native_setParameters(Ljava/lang/String;)V
 
-    .line 5292
     return-void
 .end method
 
@@ -5267,14 +5141,13 @@
     .param p1, "mode"    # I
 
     .prologue
-    .line 5767
+    .line 5769
     const/16 v0, 0x541
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5766
     return-void
 .end method
 
@@ -5283,10 +5156,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$HardwareFaceDetectionListener;
 
     .prologue
-    .line 5042
+    .line 5041
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mHardwareFaceDetectionListener:Lcom/samsung/android/camera/core/SemCamera$HardwareFaceDetectionListener;
 
-    .line 5040
     return-void
 .end method
 
@@ -5295,17 +5167,15 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$HazeRemovalEventListener;
 
     .prologue
-    .line 1743
+    .line 1717
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
     const-string/jumbo v1, "setHazeRemovalShotEventListener"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1744
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mHazeRemovalShotEventListener:Lcom/samsung/android/camera/core/SemCamera$HazeRemovalEventListener;
 
-    .line 1742
     return-void
 .end method
 
@@ -5318,19 +5188,15 @@
 
     const/4 v1, 0x0
 
-    .line 6086
     if-eqz p1, :cond_0
 
-    .line 6087
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6084
     :goto_0
     return-void
 
-    .line 6089
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5342,10 +5208,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$HdrEventListener;
 
     .prologue
-    .line 1685
+    .line 1659
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mHdrEventListener:Lcom/samsung/android/camera/core/SemCamera$HdrEventListener;
 
-    .line 1684
     return-void
 .end method
 
@@ -5354,14 +5219,13 @@
     .param p1, "pictureMode"    # I
 
     .prologue
-    .line 5594
+    .line 5596
     const/16 v0, 0x4f8
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5593
     return-void
 .end method
 
@@ -5370,14 +5234,13 @@
     .param p1, "filterId"    # I
 
     .prologue
-    .line 5658
+    .line 5660
     const/16 v0, 0x50b
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5657
     return-void
 .end method
 
@@ -5386,10 +5249,9 @@
     .param p1, "param"    # Ljava/lang/String;
 
     .prologue
-    .line 5667
+    .line 5669
     invoke-virtual {p0, p1}, Lcom/samsung/android/camera/core/SemCamera;->setGenericParameters(Ljava/lang/String;)V
 
-    .line 5666
     return-void
 .end method
 
@@ -5398,10 +5260,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$ImageEffectEventListener;
 
     .prologue
-    .line 2005
+    .line 1979
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mImageEffectEventListener:Lcom/samsung/android/camera/core/SemCamera$ImageEffectEventListener;
 
-    .line 2004
     return-void
 .end method
 
@@ -5414,18 +5275,15 @@
 
     const/4 v1, 0x0
 
-    .line 5822
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5821
     :goto_0
     return-void
 
-    .line 5823
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5437,10 +5295,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$InteractiveShotEventListener;
 
     .prologue
-    .line 2148
+    .line 2122
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mInteractiveShotEventListener:Lcom/samsung/android/camera/core/SemCamera$InteractiveShotEventListener;
 
-    .line 2147
     return-void
 .end method
 
@@ -5452,7 +5309,6 @@
     .line 3329
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisDataCallback:Lcom/samsung/android/camera/core/SemCamera$IrisDataCallback;
 
-    .line 3328
     return-void
 .end method
 
@@ -5465,22 +5321,17 @@
 
     const/4 v1, 0x0
 
-    .line 3338
     if-eqz p1, :cond_0
 
-    .line 3339
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 3343
     :goto_0
     iput-boolean p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisIrCallbackEnabled:Z
 
-    .line 3337
     return-void
 
-    .line 3341
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5496,22 +5347,17 @@
 
     const/4 v1, 0x0
 
-    .line 3352
     if-eqz p1, :cond_0
 
-    .line 3353
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 3357
     :goto_0
     iput-boolean p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mIrisPreviewCallbackEnabled:Z
 
-    .line 3351
     return-void
 
-    .line 3355
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5523,10 +5369,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$LightConditionChangedListener;
 
     .prologue
-    .line 1946
+    .line 1920
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mLightConditionChangedListener:Lcom/samsung/android/camera/core/SemCamera$LightConditionChangedListener;
 
-    .line 1945
     return-void
 .end method
 
@@ -5539,19 +5384,15 @@
 
     const/4 v1, 0x0
 
-    .line 6176
     if-eqz p1, :cond_0
 
-    .line 6177
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6175
     :goto_0
     return-void
 
-    .line 6179
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5567,19 +5408,15 @@
 
     const/4 v1, 0x0
 
-    .line 6147
     if-eqz p1, :cond_0
 
-    .line 6148
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6145
     :goto_0
     return-void
 
-    .line 6150
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5593,7 +5430,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5505
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -5603,13 +5439,11 @@
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5504
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 5505
     goto :goto_0
 .end method
 
@@ -5618,10 +5452,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$MotionPanoramaEventListener;
 
     .prologue
-    .line 1278
+    .line 1252
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mMotionPanoramaEventListener:Lcom/samsung/android/camera/core/SemCamera$MotionPanoramaEventListener;
 
-    .line 1277
     return-void
 .end method
 
@@ -5634,19 +5467,15 @@
 
     const/4 v1, 0x0
 
-    .line 5458
     if-eqz p1, :cond_0
 
-    .line 5459
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5457
     :goto_0
     return-void
 
-    .line 5461
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5658,10 +5487,9 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$MultiAutoFocusCallback;
 
     .prologue
-    .line 2357
+    .line 2331
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mMultiAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$MultiAutoFocusCallback;
 
-    .line 2356
     return-void
 .end method
 
@@ -5674,19 +5502,15 @@
 
     const/4 v1, 0x0
 
-    .line 6048
     if-eqz p1, :cond_0
 
-    .line 6049
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6046
     :goto_0
     return-void
 
-    .line 6051
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -5698,17 +5522,15 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$MultiFrameEventListener;
 
     .prologue
-    .line 1713
+    .line 1687
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
     const-string/jumbo v1, "setMultiFrameShotEventListener"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1714
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mMultiFrameEventListener:Lcom/samsung/android/camera/core/SemCamera$MultiFrameEventListener;
 
-    .line 1712
     return-void
 .end method
 
@@ -5719,7 +5541,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5813
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -5729,13 +5550,11 @@
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5812
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 5813
     goto :goto_0
 .end method
 
@@ -5744,10 +5563,9 @@
     .param p1, "cb"    # Lcom/samsung/android/camera/core/SemCamera$ObjectTrackingAutoFocusCallback;
 
     .prologue
-    .line 2400
+    .line 2374
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mObjectTrackingAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$ObjectTrackingAutoFocusCallback;
 
-    .line 2399
     return-void
 .end method
 
@@ -5760,35 +5578,27 @@
 
     const/4 v1, 0x0
 
-    .line 3221
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallback:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
 
-    .line 3222
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mOneShot:Z
 
-    .line 3223
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWithBuffer:Z
 
-    .line 3224
     if-eqz p1, :cond_0
 
-    .line 3225
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mUsingPreviewAllocation:Z
 
-    .line 3227
     :cond_0
     if-eqz p1, :cond_1
 
     :goto_0
     invoke-direct {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->setHasPreviewCallback(ZZZ)V
 
-    .line 3220
     return-void
 
     :cond_1
     move v0, v1
 
-    .line 3227
     goto :goto_0
 .end method
 
@@ -5802,38 +5612,28 @@
 
     const/4 v1, 0x0
 
-    .line 3246
     if-eqz p2, :cond_0
 
-    .line 3247
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallbackForGLEffect:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
 
-    .line 3248
     const/16 v0, 0x51a
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 3245
     :goto_0
     return-void
 
-    .line 3250
     :cond_0
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallback:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
 
-    .line 3251
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mOneShot:Z
 
-    .line 3252
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWithBuffer:Z
 
-    .line 3253
     if-eqz p1, :cond_1
 
-    .line 3254
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mUsingPreviewAllocation:Z
 
-    .line 3256
     :cond_1
     if-eqz p1, :cond_2
 
@@ -5858,14 +5658,14 @@
     .end annotation
 
     .prologue
-    .line 5999
+    .line 6001
     new-instance v0, Ljava/io/RandomAccessFile;
 
     const-string/jumbo v1, "rw"
 
     invoke-direct {v0, p1, v1}, Ljava/io/RandomAccessFile;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6001
+    .line 6003
     .local v0, "fos":Ljava/io/RandomAccessFile;
     :try_start_0
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->getFD()Ljava/io/FileDescriptor;
@@ -5876,20 +5676,15 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6003
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
 
-    .line 5997
     return-void
 
-    .line 6002
     :catchall_0
     move-exception v1
 
-    .line 6003
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
 
-    .line 6002
     throw v1
 .end method
 
@@ -5903,22 +5698,22 @@
     .end annotation
 
     .prologue
-    .line 6016
+    .line 6018
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6017
+    .line 6019
     .local v3, "fosArray":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/io/RandomAccessFile;>;"
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 6019
+    .line 6021
     .local v2, "fdArrayList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/io/FileDescriptor;>;"
     array-length v5, p1
 
-    .line 6022
+    .line 6024
     .local v5, "sizeOfArray":I
     const/4 v4, 0x0
 
@@ -5926,7 +5721,6 @@
     :goto_0
     if-ge v4, v5, :cond_0
 
-    .line 6023
     new-instance v6, Ljava/io/RandomAccessFile;
 
     aget-object v7, p1, v4
@@ -5937,7 +5731,6 @@
 
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6025
     :try_start_0
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -5953,17 +5746,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6022
     :goto_1
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 6026
     :catch_0
     move-exception v0
 
-    .line 6027
+    .line 6029
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v6, "SemCamera-JNI-Java"
 
@@ -5971,7 +5762,6 @@
 
     invoke-static {v6, v7, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 6028
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
@@ -5982,7 +5772,7 @@
 
     goto :goto_1
 
-    .line 6032
+    .line 6034
     .end local v0    # "e":Ljava/lang/Exception;
     :cond_0
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
@@ -5991,7 +5781,7 @@
 
     new-array v1, v6, [Ljava/io/FileDescriptor;
 
-    .line 6033
+    .line 6035
     .local v1, "fdArray":[Ljava/io/FileDescriptor;
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
@@ -6000,17 +5790,15 @@
     .end local v1    # "fdArray":[Ljava/io/FileDescriptor;
     check-cast v1, [Ljava/io/FileDescriptor;
 
-    .line 6034
+    .line 6036
     .restart local v1    # "fdArray":[Ljava/io/FileDescriptor;
     invoke-direct {p0, v1, v5}, Lcom/samsung/android/camera/core/SemCamera;->_setOutputFileArray([Ljava/io/FileDescriptor;I)V
 
-    .line 6036
     const/4 v4, 0x0
 
     :goto_2
     if-ge v4, v5, :cond_1
 
-    .line 6037
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
@@ -6019,12 +5807,10 @@
 
     invoke-virtual {v6}, Ljava/io/RandomAccessFile;->close()V
 
-    .line 6036
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_2
 
-    .line 6014
     :cond_1
     return-void
 .end method
@@ -6034,10 +5820,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$PanoramaEventListener;
 
     .prologue
-    .line 1179
+    .line 1153
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPanoramaEventListener:Lcom/samsung/android/camera/core/SemCamera$PanoramaEventListener;
 
-    .line 1178
     return-void
 .end method
 
@@ -6048,18 +5833,16 @@
     .prologue
     monitor-enter p0
 
-    .line 5307
     :try_start_0
     iget-boolean v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mUsingPreviewAllocation:Z
 
     if-eqz v2, :cond_1
 
-    .line 5308
     invoke-virtual {p1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->getPreviewSize()Lcom/samsung/android/camera/core/SemCamera$Size;
 
     move-result-object v1
 
-    .line 5309
+    .line 5308
     .local v1, "newPreviewSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     invoke-virtual {p0}, Lcom/samsung/android/camera/core/SemCamera;->getParameters()Lcom/samsung/android/camera/core/SemCamera$Parameters;
 
@@ -6069,7 +5852,7 @@
 
     move-result-object v0
 
-    .line 5310
+    .line 5309
     .local v0, "currentPreviewSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     iget v2, v1, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
@@ -6077,14 +5860,12 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 5311
     iget v2, v1, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     iget v3, v0, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     if-eq v2, v3, :cond_1
 
-    .line 5312
     :cond_0
     new-instance v2, Ljava/lang/IllegalStateException;
 
@@ -6105,7 +5886,6 @@
 
     throw v2
 
-    .line 5317
     :cond_1
     :try_start_1
     invoke-virtual {p1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->flatten()Ljava/lang/String;
@@ -6118,7 +5898,6 @@
 
     monitor-exit p0
 
-    .line 5305
     return-void
 .end method
 
@@ -6133,29 +5912,35 @@
 
     const/4 v1, 0x0
 
-    .line 2320
     if-eqz p1, :cond_0
 
-    .line 2321
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPhaseAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$PhaseAutoFocusCallback;
 
-    .line 2322
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 2319
     :goto_0
     return-void
 
-    .line 2324
     :cond_0
     iput-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mPhaseAutoFocusCallback:Lcom/samsung/android/camera/core/SemCamera$PhaseAutoFocusCallback;
 
-    .line 2325
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
     goto :goto_0
+.end method
+
+.method public setPostEventListener(Lcom/samsung/android/camera/core/SemCamera$PostEventListener;)V
+    .locals 0
+    .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$PostEventListener;
+
+    .prologue
+    .line 1547
+    iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostEventListener:Lcom/samsung/android/camera/core/SemCamera$PostEventListener;
+
+    .line 1546
+    return-void
 .end method
 
 .method public final setPreviewCallback(Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;)V
@@ -6165,22 +5950,16 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3181
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallback:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
 
-    .line 3182
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mOneShot:Z
 
-    .line 3183
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWithBuffer:Z
 
-    .line 3184
     if-eqz p1, :cond_0
 
-    .line 3185
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mUsingPreviewAllocation:Z
 
-    .line 3189
     :cond_0
     if-eqz p1, :cond_1
 
@@ -6189,13 +5968,11 @@
     :goto_0
     invoke-direct {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->setHasPreviewCallback(ZZZ)V
 
-    .line 3180
     return-void
 
     :cond_1
     move v0, v1
 
-    .line 3189
     goto :goto_0
 .end method
 
@@ -6211,14 +5988,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 3550
     const/4 v2, 0x0
 
     .line 3551
     .local v2, "previewSurface":Landroid/view/Surface;
     if-eqz p1, :cond_4
 
-    .line 3552
     invoke-virtual {p0}, Lcom/samsung/android/camera/core/SemCamera;->getParameters()Lcom/samsung/android/camera/core/SemCamera$Parameters;
 
     move-result-object v0
@@ -6243,7 +6018,6 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 3555
     iget v3, v1, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     invoke-virtual {p1}, Landroid/renderscript/Allocation;->getType()Landroid/renderscript/Type;
@@ -6256,11 +6030,9 @@
 
     if-eq v3, v4, :cond_1
 
-    .line 3556
     :cond_0
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
-    .line 3557
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -6271,7 +6043,6 @@
 
     move-result-object v4
 
-    .line 3559
     invoke-virtual {p1}, Landroid/renderscript/Allocation;->getType()Landroid/renderscript/Type;
 
     move-result-object v5
@@ -6280,20 +6051,16 @@
 
     move-result v5
 
-    .line 3557
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 3560
     const-string/jumbo v5, ", "
 
-    .line 3557
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 3561
     invoke-virtual {p1}, Landroid/renderscript/Allocation;->getType()Landroid/renderscript/Type;
 
     move-result-object v5
@@ -6302,39 +6069,30 @@
 
     move-result v5
 
-    .line 3557
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 3562
     const-string/jumbo v5, ". Preview is "
 
-    .line 3557
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 3562
     iget v5, v1, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
-    .line 3557
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 3562
     const-string/jumbo v5, ", "
 
-    .line 3557
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 3563
     iget v5, v1, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
-    .line 3557
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -6343,12 +6101,10 @@
 
     move-result-object v4
 
-    .line 3556
     invoke-direct {v3, v4}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v3
 
-    .line 3565
     :cond_1
     invoke-virtual {p1}, Landroid/renderscript/Allocation;->getUsage()I
 
@@ -6358,18 +6114,14 @@
 
     if-nez v3, :cond_2
 
-    .line 3567
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
-    .line 3568
     const-string/jumbo v4, "Allocation usage does not include USAGE_IO_INPUT"
 
-    .line 3567
     invoke-direct {v3, v4}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v3
 
-    .line 3570
     :cond_2
     invoke-virtual {p1}, Landroid/renderscript/Allocation;->getType()Landroid/renderscript/Type;
 
@@ -6383,24 +6135,18 @@
 
     move-result-object v3
 
-    .line 3571
     sget-object v4, Landroid/renderscript/Element$DataKind;->PIXEL_YUV:Landroid/renderscript/Element$DataKind;
 
-    .line 3570
     if-eq v3, v4, :cond_3
 
-    .line 3572
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
-    .line 3573
     const-string/jumbo v4, "Allocation is not of a YUV type"
 
-    .line 3572
     invoke-direct {v3, v4}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     throw v3
 
-    .line 3575
     :cond_3
     invoke-virtual {p1}, Landroid/renderscript/Allocation;->getSurface()Landroid/view/Surface;
 
@@ -6419,7 +6165,6 @@
     :goto_0
     invoke-direct {p0, v2}, Lcom/samsung/android/camera/core/SemCamera;->setPreviewCallbackSurface(Landroid/view/Surface;)V
 
-    .line 3549
     return-void
 
     .line 3578
@@ -6437,22 +6182,16 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3195
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallbackTimeStamp:Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
 
-    .line 3196
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mOneShot:Z
 
-    .line 3197
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWithBuffer:Z
 
-    .line 3198
     if-eqz p1, :cond_0
 
-    .line 3199
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mUsingPreviewAllocation:Z
 
-    .line 3203
     :cond_0
     if-eqz p1, :cond_1
 
@@ -6461,13 +6200,11 @@
     :goto_0
     invoke-direct {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->setHasPreviewCallback(ZZZ)V
 
-    .line 3194
     return-void
 
     :cond_1
     move v0, v1
 
-    .line 3203
     goto :goto_0
 .end method
 
@@ -6480,22 +6217,16 @@
 
     const/4 v2, 0x0
 
-    .line 3303
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallbackTimeStamp:Lcom/samsung/android/camera/core/SemCamera$PreviewCallbackTimeStamp;
 
-    .line 3304
     iput-boolean v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mOneShot:Z
 
-    .line 3305
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWithBuffer:Z
 
-    .line 3306
     if-eqz p1, :cond_0
 
-    .line 3307
     iput-boolean v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mUsingPreviewAllocation:Z
 
-    .line 3309
     :cond_0
     if-eqz p1, :cond_1
 
@@ -6504,13 +6235,11 @@
     :goto_0
     invoke-direct {p0, v0, v1, v2}, Lcom/samsung/android/camera/core/SemCamera;->setHasPreviewCallback(ZZZ)V
 
-    .line 3302
     return-void
 
     :cond_1
     move v0, v2
 
-    .line 3309
     goto :goto_0
 .end method
 
@@ -6523,22 +6252,16 @@
 
     const/4 v2, 0x0
 
-    .line 3290
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallback:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
 
-    .line 3291
     iput-boolean v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mOneShot:Z
 
-    .line 3292
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWithBuffer:Z
 
-    .line 3293
     if-eqz p1, :cond_0
 
-    .line 3294
     iput-boolean v2, p0, Lcom/samsung/android/camera/core/SemCamera;->mUsingPreviewAllocation:Z
 
-    .line 3296
     :cond_0
     if-eqz p1, :cond_1
 
@@ -6547,13 +6270,11 @@
     :goto_0
     invoke-direct {p0, v0, v1, v2}, Lcom/samsung/android/camera/core/SemCamera;->setHasPreviewCallback(ZZZ)V
 
-    .line 3289
     return-void
 
     :cond_1
     move v0, v2
 
-    .line 3296
     goto :goto_0
 .end method
 
@@ -6566,16 +6287,12 @@
 
     const/4 v1, 0x1
 
-    .line 3317
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPreviewCallback:Lcom/samsung/android/camera/core/SemCamera$PreviewCallback;
 
-    .line 3318
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mOneShot:Z
 
-    .line 3319
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWithBuffer:Z
 
-    .line 3320
     if-eqz p1, :cond_0
 
     move v0, v1
@@ -6583,7 +6300,6 @@
     :cond_0
     invoke-direct {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->setHasPreviewCallback(ZZZ)V
 
-    .line 3316
     return-void
 .end method
 
@@ -6599,21 +6315,17 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 2967
     if-eqz p1, :cond_0
 
-    .line 2968
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->getSurface()Landroid/view/Surface;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/camera/core/SemCamera;->setPreviewSurface(Landroid/view/Surface;)V
 
-    .line 2966
     :goto_0
     return-void
 
-    .line 2970
     :cond_0
     nop
 
@@ -6631,7 +6343,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 6206
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -6641,13 +6352,11 @@
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6204
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 6206
     goto :goto_0
 .end method
 
@@ -6672,10 +6381,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;
 
     .prologue
-    .line 1475
+    .line 1449
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mQrCodeDetectionEventListener:Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;
 
-    .line 1474
     return-void
 .end method
 
@@ -6685,61 +6393,53 @@
     .param p2, "longitude"    # F
 
     .prologue
-    .line 5720
+    .line 5722
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x80
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 5721
+    .line 5723
     .local v0, "flattened":Ljava/lang/StringBuilder;
     const-string/jumbo v1, "loc=1"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5722
     const-string/jumbo v1, ","
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5723
     const-string/jumbo v1, "latitude="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5724
     invoke-static {p1}, Ljava/lang/Float;->toString(F)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5725
     const-string/jumbo v1, ","
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5726
     const-string/jumbo v1, "longitude="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5727
     invoke-static {p2}, Ljava/lang/Float;->toString(F)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5728
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/camera/core/SemCamera;->setGenericParameters(Ljava/lang/String;)V
 
-    .line 5719
     return-void
 .end method
 
@@ -6750,18 +6450,17 @@
     .prologue
     const-wide/32 v6, 0xf4240
 
-    .line 5698
     div-long v4, p1, v6
 
     long-to-int v1, v4
 
-    .line 5699
+    .line 5701
     .local v1, "maxfilesizeH":I
     rem-long v4, p1, v6
 
     long-to-int v2, v4
 
-    .line 5700
+    .line 5702
     .local v2, "maxfilesizeL":I
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6769,54 +6468,46 @@
 
     invoke-direct {v0, v3}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 5701
+    .line 5703
     .local v0, "flattened":Ljava/lang/StringBuilder;
     const-string/jumbo v3, "maxfilesize=1"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5702
     const-string/jumbo v3, ","
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5703
     const-string/jumbo v3, "maxfilesizeh="
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5704
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5705
     const-string/jumbo v3, ","
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5706
     const-string/jumbo v3, "maxfilesizel="
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5707
     invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5708
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {p0, v3}, Lcom/samsung/android/camera/core/SemCamera;->setGenericParameters(Ljava/lang/String;)V
 
-    .line 5697
     return-void
 .end method
 
@@ -6825,14 +6516,13 @@
     .param p1, "recordingMode"    # I
 
     .prologue
-    .line 5804
+    .line 5806
     const/16 v0, 0x573
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5803
     return-void
 .end method
 
@@ -6841,10 +6531,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$RelightEventListener;
 
     .prologue
-    .line 1895
+    .line 1869
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mRelightEventListener:Lcom/samsung/android/camera/core/SemCamera$RelightEventListener;
 
-    .line 1894
     return-void
 .end method
 
@@ -6853,14 +6542,13 @@
     .param p1, "skinColorLevel"    # I
 
     .prologue
-    .line 5524
+    .line 5526
     const/16 v0, 0x4a1
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5523
     return-void
 .end method
 
@@ -6878,24 +6566,18 @@
 
     const/4 v0, 0x0
 
-    .line 5626
     if-eqz p1, :cond_0
 
-    .line 5627
     invoke-virtual {p0, v2, v1, v0}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5628
     invoke-virtual {p0, v3, p2, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5625
     :goto_0
     return-void
 
-    .line 5630
     :cond_0
     invoke-virtual {p0, v2, v0, v0}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5631
     invoke-virtual {p0, v3, p2, v0}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
     goto :goto_0
@@ -6910,19 +6592,15 @@
 
     const/4 v1, 0x0
 
-    .line 6125
     if-eqz p1, :cond_0
 
-    .line 6126
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6123
     :goto_0
     return-void
 
-    .line 6128
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -6934,10 +6612,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$ScreenFlashEventListener;
 
     .prologue
-    .line 1596
+    .line 1570
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mScreenFlashEventListener:Lcom/samsung/android/camera/core/SemCamera$ScreenFlashEventListener;
 
-    .line 1595
     return-void
 .end method
 
@@ -6947,12 +6624,11 @@
     .param p2, "y"    # I
 
     .prologue
-    .line 2219
+    .line 2193
     const/16 v0, 0x579
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 2217
     return-void
 .end method
 
@@ -6961,10 +6637,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$SelectiveFocusEventListener;
 
     .prologue
-    .line 2051
+    .line 2025
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mSelectiveFocusEventListener:Lcom/samsung/android/camera/core/SemCamera$SelectiveFocusEventListener;
 
-    .line 2050
     return-void
 .end method
 
@@ -6975,10 +6650,8 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 5346
     invoke-virtual {p0, p1, v0, v0}, Lcom/samsung/android/camera/core/SemCamera;->setShootingMode(III)V
 
-    .line 5345
     return-void
 .end method
 
@@ -6989,12 +6662,11 @@
     .param p3, "arg2"    # I
 
     .prologue
-    .line 5360
+    .line 5362
     add-int/lit16 v0, p1, 0x3e8
 
     invoke-virtual {p0, v0, p2, p3}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5359
     return-void
 .end method
 
@@ -7005,21 +6677,17 @@
     .param p3, "jpeg"    # Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
     .prologue
-    .line 5404
+    .line 5406
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mShutterCallback:Lcom/samsung/android/camera/core/SemCamera$ShutterCallback;
 
-    .line 5405
     iput-object p2, p0, Lcom/samsung/android/camera/core/SemCamera;->mRawImageCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 5406
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostviewCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 5407
     iput-object p3, p0, Lcom/samsung/android/camera/core/SemCamera;->mJpegCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 5403
     return-void
 .end method
 
@@ -7028,10 +6696,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$ShotAndMoreEventListener;
 
     .prologue
-    .line 2095
+    .line 2069
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mShotAndMoreEventListener:Lcom/samsung/android/camera/core/SemCamera$ShotAndMoreEventListener;
 
-    .line 2094
     return-void
 .end method
 
@@ -7040,25 +6707,22 @@
     .param p1, "mode"    # I
 
     .prologue
-    .line 5373
+    .line 5375
     if-ltz p1, :cond_0
 
     const/4 v0, 0x2
 
     if-gt p1, v0, :cond_0
 
-    .line 5374
     const/16 v0, 0x605
 
     const/4 v1, 0x1
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5372
     :goto_0
     return-void
 
-    .line 5376
     :cond_0
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
@@ -7090,14 +6754,13 @@
     .param p1, "slimFaceLevel"    # I
 
     .prologue
-    .line 5533
+    .line 5535
     const/16 v0, 0x49f
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5532
     return-void
 .end method
 
@@ -7106,10 +6769,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$SlowMotionEventListener;
 
     .prologue
-    .line 2247
+    .line 2221
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mSlowMotionEventListener:Lcom/samsung/android/camera/core/SemCamera$SlowMotionEventListener;
 
-    .line 2246
     return-void
 .end method
 
@@ -7118,10 +6780,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;
 
     .prologue
-    .line 6312
+    .line 6314
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mSmartFilterListener:Lcom/samsung/android/camera/core/SemCamera$SmartFilterListener;
 
-    .line 6310
     return-void
 .end method
 
@@ -7132,7 +6793,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 6242
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -7142,13 +6802,11 @@
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6241
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 6242
     goto :goto_0
 .end method
 
@@ -7157,10 +6815,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
 
     .prologue
-    .line 1923
+    .line 1897
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mStickerEventListener:Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;
 
-    .line 1922
     return-void
 .end method
 
@@ -7169,14 +6826,13 @@
     .param p1, "mask"    # I
 
     .prologue
-    .line 5745
+    .line 5747
     const/16 v0, 0x53d
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5744
     return-void
 .end method
 
@@ -7186,12 +6842,11 @@
     .param p2, "cameraId"    # I
 
     .prologue
-    .line 5754
+    .line 5756
     const/16 v0, 0x53e
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5753
     return-void
 .end method
 
@@ -7202,7 +6857,6 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 6223
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -7212,13 +6866,11 @@
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6222
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 6223
     goto :goto_0
 .end method
 
@@ -7228,12 +6880,11 @@
     .param p2, "yPos"    # I
 
     .prologue
-    .line 6233
+    .line 6235
     const/16 v0, 0x5a2
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6232
     return-void
 .end method
 
@@ -7242,14 +6893,13 @@
     .param p1, "beautyLevel"    # I
 
     .prologue
-    .line 5949
+    .line 5951
     const/16 v0, 0x5da
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5948
     return-void
 .end method
 
@@ -7258,10 +6908,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$WideMotionSelfieEventListener;
 
     .prologue
-    .line 1437
+    .line 1411
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideMotionSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideMotionSelfieEventListener;
 
-    .line 1436
     return-void
 .end method
 
@@ -7274,19 +6923,15 @@
 
     const/4 v1, 0x0
 
-    .line 5966
     if-eqz p1, :cond_0
 
-    .line 5967
     const/4 v0, 0x1
 
     invoke-virtual {p0, v2, v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5965
     :goto_0
     return-void
 
-    .line 5969
     :cond_0
     invoke-virtual {p0, v2, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
@@ -7298,14 +6943,13 @@
     .param p1, "beautyLevel"    # I
 
     .prologue
-    .line 5914
+    .line 5916
     const/16 v0, 0x5bc
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5913
     return-void
 .end method
 
@@ -7314,10 +6958,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
 
     .prologue
-    .line 1360
+    .line 1334
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mWideSelfieEventListener:Lcom/samsung/android/camera/core/SemCamera$WideSelfieEventListener;
 
-    .line 1359
     return-void
 .end method
 
@@ -7326,10 +6969,9 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$OnZoomChangeListener;
 
     .prologue
-    .line 4985
+    .line 4984
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mZoomListener:Lcom/samsung/android/camera/core/SemCamera$OnZoomChangeListener;
 
-    .line 4983
     return-void
 .end method
 
@@ -7339,15 +6981,12 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3161
     const/16 v0, 0x714
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 3162
     invoke-virtual {p0}, Lcom/samsung/android/camera/core/SemCamera;->stopPreview()V
 
-    .line 3160
     return-void
 .end method
 
@@ -7357,12 +6996,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5640
     const/16 v0, 0x60f
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5639
     return-void
 .end method
 
@@ -7370,12 +7007,11 @@
     .locals 2
 
     .prologue
-    .line 5078
+    .line 5077
     iget-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
     if-eqz v0, :cond_0
 
-    .line 5079
     new-instance v0, Ljava/lang/RuntimeException;
 
     const-string/jumbo v1, "Face detection is already running"
@@ -7384,18 +7020,15 @@
 
     throw v0
 
-    .line 5081
     :cond_0
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/samsung/android/camera/core/SemCamera;->_startFaceDetection(I)V
 
-    .line 5082
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
-    .line 5077
     return-void
 .end method
 
@@ -7405,12 +7038,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5868
     const/16 v0, 0x58d
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5866
     return-void
 .end method
 
@@ -7420,12 +7051,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5432
     const/16 v0, 0x5d3
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5431
     return-void
 .end method
 
@@ -7433,7 +7062,7 @@
     .locals 3
 
     .prologue
-    .line 2408
+    .line 2382
     const/16 v0, 0x5e0
 
     const/4 v1, 0x1
@@ -7442,7 +7071,6 @@
 
     invoke-virtual {p0, v0, v1, v2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 2407
     return-void
 .end method
 
@@ -7452,12 +7080,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5415
     const/16 v0, 0x457
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5414
     return-void
 .end method
 
@@ -7469,29 +7095,26 @@
     .param p1, "target"    # I
 
     .prologue
-    .line 1484
+    .line 1458
     const/16 v0, 0x5c9
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, p1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 1483
     return-void
 .end method
 
-.method public startSmartFilterProcess()V
+.method public startSmartFilter()V
     .locals 2
 
     .prologue
     const/4 v1, 0x0
 
-    .line 6274
     const/16 v0, 0x529
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6273
     return-void
 .end method
 
@@ -7502,7 +7125,7 @@
     .locals 3
 
     .prologue
-    .line 5610
+    .line 5612
     const/16 v0, 0x5e1
 
     const/4 v1, 0x1
@@ -7511,7 +7134,6 @@
 
     invoke-virtual {p0, v0, v1, v2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5609
     return-void
 .end method
 
@@ -7521,12 +7143,11 @@
     .param p2, "orientation"    # I
 
     .prologue
-    .line 5932
+    .line 5934
     const/16 v0, 0x5d7
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5931
     return-void
 .end method
 
@@ -7536,12 +7157,11 @@
     .param p2, "orientation"    # I
 
     .prologue
-    .line 5896
+    .line 5898
     const/16 v0, 0x5b5
 
     invoke-virtual {p0, v0, p1, p2}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5895
     return-void
 .end method
 
@@ -7551,12 +7171,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 6159
     const/16 v0, 0x67d
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6158
     return-void
 .end method
 
@@ -7566,12 +7184,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5648
     const/16 v0, 0x610
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5647
     return-void
 .end method
 
@@ -7579,27 +7195,23 @@
     .locals 2
 
     .prologue
-    .line 5091
+    .line 5090
     invoke-direct {p0}, Lcom/samsung/android/camera/core/SemCamera;->_stopFaceDetection()V
 
-    .line 5092
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
-    .line 5093
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     if-eqz v0, :cond_0
 
-    .line 5095
     iget-object v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mEventHandler:Lcom/samsung/android/camera/core/SemCamera$EventHandler;
 
     const/16 v1, 0x400
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 5090
     :cond_0
     return-void
 .end method
@@ -7610,12 +7222,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5877
     const/16 v0, 0x58e
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5875
     return-void
 .end method
 
@@ -7625,12 +7235,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5440
     const/16 v0, 0x5d4
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5439
     return-void
 .end method
 
@@ -7640,12 +7248,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 2416
     const/16 v0, 0x5e0
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 2415
     return-void
 .end method
 
@@ -7655,12 +7261,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5423
     const/16 v0, 0x458
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5422
     return-void
 .end method
 
@@ -7671,19 +7275,16 @@
     .line 3120
     invoke-direct {p0}, Lcom/samsung/android/camera/core/SemCamera;->_stopPreview()V
 
-    .line 3121
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
-    .line 3123
     const-string/jumbo v0, "SemCamera-JNI-Java"
 
     const-string/jumbo v1, "stopPreview"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3119
     return-void
 .end method
 
@@ -7693,27 +7294,23 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1492
     const/16 v0, 0x5ca
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 1491
     return-void
 .end method
 
-.method public stopSmartFilterProcess()V
+.method public stopSmartFilter()V
     .locals 2
 
     .prologue
     const/4 v1, 0x0
 
-    .line 6282
     const/16 v0, 0x52a
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6281
     return-void
 .end method
 
@@ -7726,12 +7323,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 6188
     const/16 v0, 0x5bf
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6186
     return-void
 .end method
 
@@ -7741,12 +7336,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5617
     const/16 v0, 0x5e1
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5616
     return-void
 .end method
 
@@ -7756,12 +7349,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5940
     const/16 v0, 0x5d8
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5939
     return-void
 .end method
 
@@ -7771,12 +7362,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5904
     const/16 v0, 0x5b6
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5903
     return-void
 .end method
 
@@ -7786,12 +7375,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 6167
     const/16 v0, 0x67e
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 6166
     return-void
 .end method
 
@@ -7802,12 +7389,11 @@
     .param p3, "jpeg"    # Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
     .prologue
-    .line 4746
+    .line 4745
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, p2, v0, p3}, Lcom/samsung/android/camera/core/SemCamera;->takePicture(Lcom/samsung/android/camera/core/SemCamera$ShutterCallback;Lcom/samsung/android/camera/core/SemCamera$PictureCallback;Lcom/samsung/android/camera/core/SemCamera$PictureCallback;Lcom/samsung/android/camera/core/SemCamera$PictureCallback;)V
 
-    .line 4745
     return-void
 .end method
 
@@ -7819,67 +7405,53 @@
     .param p4, "jpeg"    # Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
     .prologue
-    .line 4781
+    .line 4780
     iput-object p1, p0, Lcom/samsung/android/camera/core/SemCamera;->mShutterCallback:Lcom/samsung/android/camera/core/SemCamera$ShutterCallback;
 
-    .line 4782
     iput-object p2, p0, Lcom/samsung/android/camera/core/SemCamera;->mRawImageCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 4783
     iput-object p3, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostviewCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 4784
     iput-object p4, p0, Lcom/samsung/android/camera/core/SemCamera;->mJpegCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
-    .line 4787
     const/4 v0, 0x0
 
-    .line 4788
+    .line 4787
     .local v0, "msgType":I
     iget-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mShutterCallback:Lcom/samsung/android/camera/core/SemCamera$ShutterCallback;
 
     if-eqz v1, :cond_0
 
-    .line 4789
     const/4 v0, 0x2
 
-    .line 4791
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mRawImageCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
     if-eqz v1, :cond_1
 
-    .line 4792
     or-int/lit16 v0, v0, 0x80
 
-    .line 4794
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mPostviewCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
     if-eqz v1, :cond_2
 
-    .line 4795
     or-int/lit8 v0, v0, 0x40
 
-    .line 4797
     :cond_2
     iget-object v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mJpegCallback:Lcom/samsung/android/camera/core/SemCamera$PictureCallback;
 
     if-eqz v1, :cond_3
 
-    .line 4798
     or-int/lit16 v0, v0, 0x100
 
-    .line 4801
     :cond_3
     invoke-direct {p0, v0}, Lcom/samsung/android/camera/core/SemCamera;->native_takePicture(I)V
 
-    .line 4802
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/samsung/android/camera/core/SemCamera;->mFaceDetectionRunning:Z
 
-    .line 4780
     return-void
 .end method
 
@@ -7889,12 +7461,10 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5487
     const/16 v0, 0x48b
 
     invoke-virtual {p0, v0, v1, v1}, Lcom/samsung/android/camera/core/SemCamera;->native_sendcommand(III)V
 
-    .line 5486
     return-void
 .end method
 
@@ -7917,13 +7487,12 @@
     .prologue
     monitor-enter p0
 
-    .line 6349
     :try_start_0
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
-    .line 6351
+    .line 6353
     .local v3, "map":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     new-instance v5, Landroid/text/TextUtils$SimpleStringSplitter;
 
@@ -7931,11 +7500,10 @@
 
     invoke-direct {v5, v7}, Landroid/text/TextUtils$SimpleStringSplitter;-><init>(C)V
 
-    .line 6352
+    .line 6354
     .local v5, "splitter":Landroid/text/TextUtils$StringSplitter;
     invoke-interface {v5, p1}, Landroid/text/TextUtils$StringSplitter;->setString(Ljava/lang/String;)V
 
-    .line 6353
     invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -7955,7 +7523,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 6354
+    .line 6356
     .local v1, "kv":Ljava/lang/String;
     const/16 v7, 0x3d
 
@@ -7963,20 +7531,19 @@
 
     move-result v4
 
-    .line 6355
+    .line 6357
     .local v4, "pos":I
     const/4 v7, -0x1
 
     if-eq v4, v7, :cond_0
 
-    .line 6358
     const/4 v7, 0x0
 
     invoke-virtual {v1, v7, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6359
+    .line 6361
     .local v0, "k":Ljava/lang/String;
     add-int/lit8 v7, v4, 0x1
 
@@ -7984,7 +7551,7 @@
 
     move-result-object v6
 
-    .line 6360
+    .line 6362
     .local v6, "v":Ljava/lang/String;
     invoke-virtual {v3, v0, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
@@ -8012,7 +7579,6 @@
     :cond_1
     monitor-exit p0
 
-    .line 6362
     return-object v3
 .end method
 
