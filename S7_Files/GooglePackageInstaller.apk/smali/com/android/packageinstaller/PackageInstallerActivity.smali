@@ -724,7 +724,7 @@
     .locals 3
 
     .prologue
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 360
     invoke-virtual {p0}, Lcom/android/packageinstaller/PackageInstallerActivity;->getContentResolver()Landroid/content/ContentResolver;
