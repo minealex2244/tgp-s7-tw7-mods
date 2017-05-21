@@ -28,7 +28,7 @@
 
 .field private static final RECORDING_MSG_BLINK_INDICATOR_REC_TIME:I = 0x2
 
-.field private static final SLOW_MOTION_RECORDING_BITRATE:I = 0x895440
+.field private static final SLOW_MOTION_RECORDING_BITRATE:I = 0xe4e1c0
 
 .field private static final SLOW_MOTION_RECORDING_FPS:I
 
@@ -1757,7 +1757,7 @@
 
     new-instance v0, Lcom/sec/android/app/camera/interfaces/CameraSettings$RequestedMediaRecorderProfileInfo;
 
-    const v2, 0x895440
+    const v2, 0xe4e1c0
 
     sget v3, Lcom/sec/android/app/camera/shootingmode/SlowMotion;->SLOW_MOTION_RECORDING_FPS:I
 

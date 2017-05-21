@@ -959,11 +959,11 @@
 
 .field public static final QRCODE_DETECTION_ON:I = 0x1
 
-.field public static final QUALITY_FINE:I = 0x1
+.field public static final QUALITY_FINE:I = 0x0
 
-.field public static final QUALITY_FOR_FIXED_BURST:I = 0x3
+.field public static final QUALITY_FOR_FIXED_BURST:I = 0x0
 
-.field public static final QUALITY_NORMAL:I = 0x2
+.field public static final QUALITY_NORMAL:I = 0x0
 
 .field public static final QUALITY_SUPERFINE:I = 0x0
 
