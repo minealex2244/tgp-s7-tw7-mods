@@ -1279,31 +1279,13 @@
 
     .line 5092
     .restart local v134    # "userId":I
-    move-object/from16 v0, p0
+    move-object/from16 v0, v84
 
-    iget-object v4, v0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
-
-    invoke-virtual {v4}, Lcom/android/server/pm/PersonaManagerService;->getForegroundUser()I
-
-    move-result v4
+    iget v4, v0, Lcom/samsung/android/knox/SemPersonaInfo;->id:I
 
     move/from16 v0, v134
 
     if-ne v0, v4, :cond_6
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
-
-    invoke-virtual {v4}, Lcom/android/server/pm/PersonaManagerService;->getForegroundUser()I
-
-    move-result v4
-
-    move-object/from16 v0, v84
-
-    iget v8, v0, Lcom/samsung/android/knox/SemPersonaInfo;->id:I
-
-    if-ne v4, v8, :cond_6
 
     .line 5093
     move-object/from16 v0, p0
@@ -1811,31 +1793,13 @@
     invoke-static {v4, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 5147
-    move-object/from16 v0, p0
+    move-object/from16 v0, v84
 
-    iget-object v4, v0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
-
-    invoke-virtual {v4}, Lcom/android/server/pm/PersonaManagerService;->getForegroundUser()I
-
-    move-result v4
+    iget v4, v0, Lcom/samsung/android/knox/SemPersonaInfo;->id:I
 
     move/from16 v0, v134
 
     if-ne v0, v4, :cond_f
-
-    move-object/from16 v0, p0
-
-    iget-object v4, v0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
-
-    invoke-virtual {v4}, Lcom/android/server/pm/PersonaManagerService;->getForegroundUser()I
-
-    move-result v4
-
-    move-object/from16 v0, v84
-
-    iget v8, v0, Lcom/samsung/android/knox/SemPersonaInfo;->id:I
-
-    if-ne v4, v8, :cond_f
 
     .line 5149
     move-object/from16 v0, p0

@@ -27,16 +27,16 @@
     .param p3, "fadeoutDuration"    # J
 
     .prologue
-    .line 2767
+    .line 2768
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2768
+    .line 2769
     iput-wide p1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$StartKeyguardExitAnimParams;->startTime:J
 
-    .line 2769
+    .line 2770
     iput-wide p3, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$StartKeyguardExitAnimParams;->fadeoutDuration:J
 
-    .line 2767
+    .line 2768
     return-void
 .end method
 

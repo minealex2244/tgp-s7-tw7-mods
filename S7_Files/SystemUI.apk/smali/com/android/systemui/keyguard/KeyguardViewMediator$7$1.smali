@@ -33,7 +33,7 @@
     .param p4, "val$fIntent"    # Landroid/content/Intent;
 
     .prologue
-    .line 2999
+    .line 3000
     iput-object p1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->this$1:Lcom/android/systemui/keyguard/KeyguardViewMediator$7;
 
     iput-object p2, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$pIntent:Landroid/app/PendingIntent;
@@ -53,13 +53,13 @@
     .locals 9
 
     .prologue
-    .line 3003
+    .line 3004
     :try_start_0
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$pIntent:Landroid/app/PendingIntent;
 
     if-eqz v4, :cond_1
 
-    .line 3004
+    .line 3005
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$pIntent:Landroid/app/PendingIntent;
 
     invoke-virtual {v4}, Landroid/app/PendingIntent;->isActivity()Z
@@ -68,27 +68,27 @@
 
     if-eqz v4, :cond_0
 
-    .line 3005
+    .line 3006
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v4
 
     invoke-interface {v4}, Landroid/app/IActivityManager;->keyguardWaitingForActivityDrawn()V
 
-    .line 3007
+    .line 3008
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v4
 
     invoke-interface {v4}, Landroid/app/IActivityManager;->resumeAppSwitches()V
 
-    .line 3009
+    .line 3010
     :cond_0
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$notificationKey:Ljava/lang/String;
 
     if-nez v4, :cond_3
 
-    .line 3010
+    .line 3011
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$pIntent:Landroid/app/PendingIntent;
 
     iget-object v5, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->this$1:Lcom/android/systemui/keyguard/KeyguardViewMediator$7;
@@ -103,7 +103,7 @@
 
     invoke-virtual {v4, v5, v7, v6}, Landroid/app/PendingIntent;->send(Landroid/content/Context;ILandroid/content/Intent;)V
 
-    .line 3014
+    .line 3015
     :goto_0
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$pIntent:Landroid/app/PendingIntent;
 
@@ -113,7 +113,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 3015
+    .line 3016
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->this$1:Lcom/android/systemui/keyguard/KeyguardViewMediator$7;
 
     iget-object v4, v4, Lcom/android/systemui/keyguard/KeyguardViewMediator$7;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
@@ -135,14 +135,14 @@
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 3023
+    .line 3024
     :cond_1
     :goto_1
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$notificationKey:Ljava/lang/String;
 
     if-eqz v4, :cond_2
 
-    .line 3024
+    .line 3025
     const-string/jumbo v4, "KeyguardViewMediator"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -167,19 +167,19 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3026
+    .line 3027
     const-string/jumbo v4, "statusbar"
 
     invoke-static {v4}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v4
 
-    .line 3025
+    .line 3026
     invoke-static {v4}, Lcom/android/internal/statusbar/IStatusBarService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/statusbar/IStatusBarService;
 
     move-result-object v0
 
-    .line 3028
+    .line 3029
     .local v0, "barService":Lcom/android/internal/statusbar/IStatusBarService;
     :try_start_1
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$notificationKey:Ljava/lang/String;
@@ -188,13 +188,13 @@
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 3001
+    .line 3002
     .end local v0    # "barService":Lcom/android/internal/statusbar/IStatusBarService;
     :cond_2
     :goto_2
     return-void
 
-    .line 3012
+    .line 3013
     :cond_3
     :try_start_2
     iget-object v4, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$7$1;->val$pIntent:Landroid/app/PendingIntent;
@@ -212,11 +212,11 @@
 
     goto :goto_0
 
-    .line 3018
+    .line 3019
     :catch_0
     move-exception v1
 
-    .line 3019
+    .line 3020
     .local v1, "e":Landroid/os/RemoteException;
     const-string/jumbo v4, "KeyguardViewMediator"
 
@@ -242,12 +242,12 @@
 
     goto :goto_1
 
-    .line 3020
+    .line 3021
     .end local v1    # "e":Landroid/os/RemoteException;
     :catch_1
     move-exception v2
 
-    .line 3021
+    .line 3022
     .local v2, "e":Ljava/lang/Exception;
     const-string/jumbo v4, "KeyguardViewMediator"
 
@@ -257,7 +257,7 @@
 
     goto :goto_1
 
-    .line 3029
+    .line 3030
     .end local v2    # "e":Ljava/lang/Exception;
     .restart local v0    # "barService":Lcom/android/internal/statusbar/IStatusBarService;
     :catch_2

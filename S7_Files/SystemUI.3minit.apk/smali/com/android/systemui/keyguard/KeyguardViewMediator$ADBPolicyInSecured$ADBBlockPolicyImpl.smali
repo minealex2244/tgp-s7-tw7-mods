@@ -74,43 +74,43 @@
     .param p1, "this$1"    # Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured;
 
     .prologue
-    .line 2848
+    .line 2849
     iput-object p1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->this$1:Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBasicPolicyImpl;-><init>(Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured;Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBasicPolicyImpl;)V
 
-    .line 2846
+    .line 2847
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->mIsUsbAlreadyConnected:Z
 
-    .line 2849
+    .line 2850
     new-instance v0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl$1;
 
     invoke-direct {v0, p0}, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl$1;-><init>(Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;)V
 
     iput-object v0, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->mUSBConnectionReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 2877
+    .line 2878
     iget-object v0, p1, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     iget-object v0, v0, Lcom/android/systemui/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->mUSBConnectionReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 2878
+    .line 2879
     new-instance v2, Landroid/content/IntentFilter;
 
     const-string/jumbo v3, "android.hardware.usb.action.USB_STATE"
 
     invoke-direct {v2, v3}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    .line 2877
+    .line 2878
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 2848
+    .line 2849
     return-void
 .end method
 
@@ -122,7 +122,7 @@
 
     const/4 v1, 0x0
 
-    .line 2894
+    .line 2895
     iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->this$1:Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured;
 
     iget-object v2, v2, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
@@ -155,7 +155,7 @@
     .param p1, "enabled"    # Z
 
     .prologue
-    .line 2898
+    .line 2899
     const-string/jumbo v0, "eng"
 
     sget-object v1, Landroid/os/Build;->TYPE:Ljava/lang/String;
@@ -166,10 +166,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2899
+    .line 2900
     return-void
 
-    .line 2902
+    .line 2903
     :cond_0
     invoke-direct {p0}, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->isAdbEnabled()Z
 
@@ -177,7 +177,7 @@
 
     if-eq v0, p1, :cond_1
 
-    .line 2904
+    .line 2905
     iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->this$1:Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured;
 
     iget-object v0, v0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
@@ -197,11 +197,11 @@
     :goto_0
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 2897
+    .line 2898
     :cond_1
     return-void
 
-    .line 2904
+    .line 2905
     :cond_2
     const/4 v0, 0x0
 
@@ -214,17 +214,17 @@
     .locals 1
 
     .prologue
-    .line 2883
+    .line 2884
     iget-boolean v0, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->mNeedReenableAdbAfterUnlock:Z
 
     if-eqz v0, :cond_0
 
-    .line 2884
+    .line 2885
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->setAdbModeEnabled(Z)V
 
-    .line 2882
+    .line 2883
     :cond_0
     return-void
 .end method
@@ -233,17 +233,17 @@
     .locals 1
 
     .prologue
-    .line 2889
+    .line 2890
     iget-boolean v0, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->mNeedReenableAdbAfterUnlock:Z
 
     if-eqz v0, :cond_0
 
-    .line 2890
+    .line 2891
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/android/systemui/keyguard/KeyguardViewMediator$ADBPolicyInSecured$ADBBlockPolicyImpl;->setAdbModeEnabled(Z)V
 
-    .line 2888
+    .line 2889
     :cond_0
     return-void
 .end method
