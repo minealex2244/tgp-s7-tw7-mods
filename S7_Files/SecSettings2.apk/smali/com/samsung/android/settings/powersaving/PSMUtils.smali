@@ -23,18 +23,18 @@
     .param p4, "colorId"    # I
 
     .prologue
-    .line 617
+    .line 613
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
-    .line 620
+    .line 616
     .local v8, "res":Landroid/content/res/Resources;
     const/4 v10, 0x1
 
     if-ge p1, v10, :cond_0
 
-    .line 621
+    .line 617
     new-instance v9, Landroid/text/SpannableString;
 
     const-string/jumbo v10, "0"
@@ -44,22 +44,22 @@
     .local v9, "s":Landroid/text/SpannableString;
     return-object v9
 
-    .line 623
+    .line 619
     .end local v9    # "s":Landroid/text/SpannableString;
     :cond_0
     div-int/lit8 v4, p1, 0x3c
 
-    .line 624
+    .line 620
     .local v4, "hour":I
     rem-int/lit8 v7, p1, 0x3c
 
-    .line 627
+    .line 623
     .local v7, "mins":I
     if-lez v4, :cond_6
 
     if-gtz v7, :cond_6
 
-    .line 628
+    .line 624
     const/4 v10, 0x1
 
     new-array v10, v10, [Ljava/lang/Object;
@@ -78,25 +78,25 @@
 
     move-result-object v3
 
-    .line 635
+    .line 631
     .local v3, "formatted":Ljava/lang/String;
     :goto_0
     new-instance v2, Ljava/text/DecimalFormat;
 
     invoke-direct {v2}, Ljava/text/DecimalFormat;-><init>()V
 
-    .line 636
+    .line 632
     .local v2, "df":Ljava/text/DecimalFormat;
     const/4 v5, -0x1
 
     .local v5, "hourIndex":I
     const/4 v6, -0x1
 
-    .line 637
+    .line 633
     .local v6, "minIndex":I
     if-lez v4, :cond_1
 
-    .line 638
+    .line 634
     int-to-long v10, v4
 
     invoke-virtual {v2, v10, v11}, Ljava/text/DecimalFormat;->format(J)Ljava/lang/String;
@@ -107,11 +107,11 @@
 
     move-result v5
 
-    .line 639
+    .line 635
     :cond_1
     if-lez v7, :cond_2
 
-    .line 640
+    .line 636
     int-to-long v10, v7
 
     invoke-virtual {v2, v10, v11}, Ljava/text/DecimalFormat;->format(J)Ljava/lang/String;
@@ -122,13 +122,13 @@
 
     move-result v6
 
-    .line 641
+    .line 637
     :cond_2
     new-instance v9, Landroid/text/SpannableString;
 
     invoke-direct {v9, v3}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 642
+    .line 638
     .restart local v9    # "s":Landroid/text/SpannableString;
     const/4 v10, -0x1
 
@@ -136,17 +136,17 @@
 
     if-eq v0, v10, :cond_3
 
-    .line 643
+    .line 639
     new-instance v10, Landroid/text/style/ForegroundColorSpan;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v11
 
-    .line 644
+    .line 640
     const/4 v12, 0x0
 
-    .line 643
+    .line 639
     move/from16 v0, p4
 
     invoke-virtual {v11, v0, v12}, Landroid/content/res/Resources;->getColor(ILandroid/content/res/Resources$Theme;)I
@@ -155,7 +155,7 @@
 
     invoke-direct {v10, v11}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
 
-    .line 644
+    .line 640
     invoke-virtual {v9}, Landroid/text/SpannableString;->length()I
 
     move-result v11
@@ -164,10 +164,10 @@
 
     const/16 v13, 0x21
 
-    .line 643
+    .line 639
     invoke-virtual {v9, v10, v12, v11, v13}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    .line 646
+    .line 642
     :cond_3
     new-instance v10, Landroid/text/style/AbsoluteSizeSpan;
 
@@ -185,7 +185,7 @@
 
     invoke-direct {v10, v11, v12}, Landroid/text/style/AbsoluteSizeSpan;-><init>(IZ)V
 
-    .line 647
+    .line 643
     invoke-virtual {v9}, Landroid/text/SpannableString;->length()I
 
     move-result v11
@@ -194,15 +194,15 @@
 
     const/16 v13, 0x21
 
-    .line 646
+    .line 642
     invoke-virtual {v9, v10, v12, v11, v13}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    .line 649
+    .line 645
     const/4 v10, -0x1
 
     if-eq v5, v10, :cond_4
 
-    .line 651
+    .line 647
     new-instance v10, Landroid/text/style/AbsoluteSizeSpan;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -219,7 +219,7 @@
 
     invoke-direct {v10, v11, v12}, Landroid/text/style/AbsoluteSizeSpan;-><init>(IZ)V
 
-    .line 653
+    .line 649
     int-to-long v12, v4
 
     invoke-virtual {v2, v12, v13}, Ljava/text/DecimalFormat;->format(J)Ljava/lang/String;
@@ -232,19 +232,19 @@
 
     add-int/2addr v11, v5
 
-    .line 654
+    .line 650
     const/16 v12, 0x21
 
-    .line 650
+    .line 646
     invoke-virtual {v9, v10, v5, v11, v12}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    .line 657
+    .line 653
     :cond_4
     const/4 v10, -0x1
 
     if-eq v6, v10, :cond_5
 
-    .line 658
+    .line 654
     new-instance v10, Landroid/text/style/AbsoluteSizeSpan;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -261,7 +261,7 @@
 
     invoke-direct {v10, v11, v12}, Landroid/text/style/AbsoluteSizeSpan;-><init>(IZ)V
 
-    .line 660
+    .line 656
     int-to-long v12, v7
 
     invoke-virtual {v2, v12, v13}, Ljava/text/DecimalFormat;->format(J)Ljava/lang/String;
@@ -274,17 +274,17 @@
 
     add-int/2addr v11, v6
 
-    .line 661
+    .line 657
     const/16 v12, 0x21
 
-    .line 658
+    .line 654
     invoke-virtual {v9, v10, v6, v11, v12}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    .line 665
+    .line 661
     :cond_5
     return-object v9
 
-    .line 629
+    .line 625
     .end local v2    # "df":Ljava/text/DecimalFormat;
     .end local v3    # "formatted":Ljava/lang/String;
     .end local v5    # "hourIndex":I
@@ -293,7 +293,7 @@
     :cond_6
     if-gtz v4, :cond_7
 
-    .line 630
+    .line 626
     const/4 v10, 0x1
 
     new-array v10, v10, [Ljava/lang/Object;
@@ -315,7 +315,7 @@
     .restart local v3    # "formatted":Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 632
+    .line 628
     .end local v3    # "formatted":Ljava/lang/String;
     :cond_7
     const/4 v10, 0x2
@@ -637,12 +637,12 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 685
+    .line 681
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 686
+    .line 682
     .local v0, "value":Landroid/util/TypedValue;
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -652,7 +652,7 @@
 
     invoke-virtual {v1, p1, v0, v2}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
-    .line 687
+    .line 683
     invoke-virtual {v0}, Landroid/util/TypedValue;->getFloat()F
 
     move-result v1
@@ -665,7 +665,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 805
+    .line 801
     const-string/jumbo v2, "last_psm_brightness_value"
 
     const/4 v3, 0x0
@@ -674,7 +674,7 @@
 
     move-result-object v1
 
-    .line 806
+    .line 802
     .local v1, "sharedPref":Landroid/content/SharedPreferences;
     const-string/jumbo v2, "last_psm_brightness_value"
 
@@ -684,7 +684,7 @@
 
     move-result v0
 
-    .line 807
+    .line 803
     .local v0, "result":I
     const-string/jumbo v2, "PSMUtils"
 
@@ -708,7 +708,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 808
+    .line 804
     return v0
 .end method
 
@@ -717,7 +717,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 791
+    .line 787
     const-string/jumbo v1, "last_psm_mode"
 
     const/4 v2, 0x0
@@ -726,7 +726,7 @@
 
     move-result-object v0
 
-    .line 792
+    .line 788
     .local v0, "sharedPref":Landroid/content/SharedPreferences;
     const-string/jumbo v1, "last_psm_mode"
 
@@ -1621,7 +1621,7 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 599
-    if-gez p1, :cond_1
+    if-gez p1, :cond_0
 
     .line 600
     new-array v1, v5, [Ljava/lang/Object;
@@ -1645,38 +1645,11 @@
     .line 607
     .local v0, "result":Ljava/lang/String;
     :goto_0
-    invoke-static {}, Lcom/samsung/android/settings/powersaving/PSMUtils;->isHebrewLanguage()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 608
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v2, "\u200e"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 611
-    :cond_0
     return-object v0
 
     .line 603
     .end local v0    # "result":Ljava/lang/String;
-    :cond_1
+    :cond_0
     new-array v1, v5, [Ljava/lang/Object;
 
     .line 604
@@ -1721,15 +1694,15 @@
 
     const/4 v1, 0x0
 
-    .line 680
+    .line 676
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    .line 681
+    .line 677
     const-string/jumbo v3, "show_button_background"
 
-    .line 680
+    .line 676
     invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v2
@@ -2076,7 +2049,7 @@
     .locals 2
 
     .prologue
-    .line 770
+    .line 766
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
@@ -2085,7 +2058,7 @@
 
     move-result-object v0
 
-    .line 771
+    .line 767
     .local v0, "currentLanguage":Ljava/lang/String;
     const-string/jumbo v1, "he"
 
@@ -2103,13 +2076,13 @@
 
     if-eqz v1, :cond_1
 
-    .line 772
+    .line 768
     :cond_0
     const/4 v1, 0x1
 
     return v1
 
-    .line 774
+    .line 770
     :cond_1
     const/4 v1, 0x0
 
@@ -2123,14 +2096,14 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 691
+    .line 687
     invoke-static {}, Lcom/android/settings/Utils;->isChinaModel()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 692
+    .line 688
     const-string/jumbo v1, "com.sec.EnhancedDataManagement"
 
     invoke-static {p0, v1}, Lcom/android/settings/Utils;->hasPackage(Landroid/content/Context;Ljava/lang/String;)Z
@@ -2145,10 +2118,10 @@
 
     move-result v1
 
-    .line 691
+    .line 687
     if-eqz v1, :cond_1
 
-    .line 693
+    .line 689
     :cond_0
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -2158,7 +2131,7 @@
 
     const/4 v0, 0x1
 
-    .line 691
+    .line 687
     :cond_1
     return v0
 .end method
@@ -2170,22 +2143,22 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 749
+    .line 745
     const-string/jumbo v0, "content://com.sec.knox.provider/RestrictionPolicy4"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 750
+    .line 746
     .local v1, "edmUri":Landroid/net/Uri;
     const/4 v8, 0x1
 
-    .line 751
+    .line 747
     .local v8, "isPowerSavingModeAllowed":Z
     const-string/jumbo v3, "isPowerSavingModeAllowed"
 
-    .line 752
+    .line 748
     .local v3, "selection":Ljava/lang/String;
     const/4 v0, 0x1
 
@@ -2197,7 +2170,7 @@
 
     aput-object v0, v4, v5
 
-    .line 753
+    .line 749
     .local v4, "selectionArgsFalse":[Ljava/lang/String;
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2209,15 +2182,15 @@
 
     move-result-object v7
 
-    .line 754
+    .line 750
     .local v7, "edmCr":Landroid/database/Cursor;
     if-eqz v7, :cond_0
 
-    .line 756
+    .line 752
     :try_start_0
     invoke-interface {v7}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 758
+    .line 754
     invoke-interface {v7, v3}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
@@ -2239,11 +2212,11 @@
 
     const/4 v8, 0x1
 
-    .line 762
+    .line 758
     :goto_0
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
-    .line 765
+    .line 761
     :cond_0
     :goto_1
     const-string/jumbo v0, "PSMUtils"
@@ -2268,20 +2241,20 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 766
+    .line 762
     return v8
 
-    .line 758
+    .line 754
     :cond_1
     const/4 v8, 0x0
 
     goto :goto_0
 
-    .line 759
+    .line 755
     :catch_0
     move-exception v6
 
-    .line 760
+    .line 756
     .local v6, "e":Landroid/database/CursorWindowAllocationException;
     :try_start_1
     const-string/jumbo v0, "PSMUtils"
@@ -2308,20 +2281,20 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 762
+    .line 758
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
     goto :goto_1
 
-    .line 761
+    .line 757
     .end local v6    # "e":Landroid/database/CursorWindowAllocationException;
     :catchall_0
     move-exception v0
 
-    .line 762
+    .line 758
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
-    .line 761
+    .line 757
     throw v0
 .end method
 
@@ -2402,7 +2375,7 @@
     .param p1, "brightness"    # I
 
     .prologue
-    .line 797
+    .line 793
     const-string/jumbo v2, "last_psm_brightness_value"
 
     const/4 v3, 0x0
@@ -2411,22 +2384,22 @@
 
     move-result-object v1
 
-    .line 798
+    .line 794
     .local v1, "sharedPref":Landroid/content/SharedPreferences;
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
-    .line 799
+    .line 795
     .local v0, "editor":Landroid/content/SharedPreferences$Editor;
     const-string/jumbo v2, "last_psm_brightness_value"
 
     invoke-interface {v0, v2, p1}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 800
+    .line 796
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 795
+    .line 791
     return-void
 .end method
 
@@ -2438,24 +2411,24 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 779
+    .line 775
     const-string/jumbo v2, "last_psm_mode"
 
     invoke-virtual {p0, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
-    .line 780
+    .line 776
     .local v1, "sharedPref":Landroid/content/SharedPreferences;
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
-    .line 781
+    .line 777
     .local v0, "editor":Landroid/content/SharedPreferences$Editor;
     if-nez p1, :cond_1
 
-    .line 782
+    .line 778
     const-string/jumbo v2, "last_psm_mode"
 
     invoke-static {p0}, Lcom/samsung/android/settings/powersaving/PSMUtils;->getCurrentPowerSavingMode(Landroid/content/Context;)I
@@ -2464,21 +2437,21 @@
 
     invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 786
+    .line 782
     :cond_0
     :goto_0
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 777
+    .line 773
     return-void
 
-    .line 783
+    .line 779
     :cond_1
     const/4 v2, 0x2
 
     if-ne p1, v2, :cond_0
 
-    .line 784
+    .line 780
     const-string/jumbo v2, "last_psm_mode"
 
     invoke-interface {v0, v2, p1}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
@@ -2492,7 +2465,7 @@
     .param p1, "textView"    # Landroid/widget/TextView;
 
     .prologue
-    .line 670
+    .line 666
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -2503,7 +2476,7 @@
 
     iget v0, v2, Landroid/content/res/Configuration;->fontScale:F
 
-    .line 671
+    .line 667
     .local v0, "fontScale":F
     invoke-virtual {p1}, Landroid/widget/TextView;->getTextSize()F
 
@@ -2521,19 +2494,19 @@
 
     div-float v1, v2, v3
 
-    .line 669
+    .line 665
     .local v1, "fontSize":F
     const v2, 0x3f99999a    # 1.2f
 
-    .line 673
+    .line 669
     cmpl-float v2, v0, v2
 
     if-lez v2, :cond_0
 
-    .line 669
+    .line 665
     const v0, 0x3f99999a    # 1.2f
 
-    .line 676
+    .line 672
     :cond_0
     mul-float v2, v1, v0
 
@@ -2541,7 +2514,7 @@
 
     invoke-virtual {p1, v3, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 668
+    .line 664
     return-void
 .end method
 
@@ -3575,7 +3548,7 @@
     .param p3, "fromWhere"    # Ljava/lang/String;
 
     .prologue
-    .line 698
+    .line 694
     const/4 v0, 0x0
 
     invoke-static {p0, p1, p2, p3, v0}, Lcom/samsung/android/settings/powersaving/PSMUtils;->showTurnOffBoost(Landroid/content/Context;Landroid/app/AlertDialog;ILjava/lang/String;Lcom/samsung/android/settings/powersaving/BrightnessSolutionManager;)Landroid/app/AlertDialog;
@@ -3600,40 +3573,40 @@
 
     const/4 v4, 0x1
 
-    .line 703
+    .line 699
     if-eqz p1, :cond_0
 
-    .line 704
+    .line 700
     invoke-virtual {p1}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 705
+    .line 701
     const/4 p1, 0x0
 
-    .line 708
+    .line 704
     .end local p1    # "mAD":Landroid/app/AlertDialog;
     :cond_0
     if-ne p2, v4, :cond_1
 
-    .line 709
+    .line 705
     const v1, 0x7f0b0a43
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 713
+    .line 709
     .local v0, "mode":Ljava/lang/String;
     :goto_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 714
+    .line 710
     const/4 v2, 0x2
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 715
+    .line 711
     aput-object v0, v2, v5
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -3642,70 +3615,70 @@
 
     aput-object v3, v2, v4
 
-    .line 714
+    .line 710
     const v3, 0x7f0b0a66
 
     invoke-virtual {p0, v3, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 713
+    .line 709
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 716
+    .line 712
     new-array v2, v4, [Ljava/lang/Object;
 
-    .line 717
+    .line 713
     invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     aput-object v3, v2, v5
 
-    .line 716
+    .line 712
     const v3, 0x7f0b0a65
 
     invoke-virtual {p0, v3, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 713
+    .line 709
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 718
+    .line 714
     new-instance v2, Lcom/samsung/android/settings/powersaving/PSMUtils$1;
 
     invoke-direct {v2, p4, p0, p2, p3}, Lcom/samsung/android/settings/powersaving/PSMUtils$1;-><init>(Lcom/samsung/android/settings/powersaving/BrightnessSolutionManager;Landroid/content/Context;ILjava/lang/String;)V
 
     const v3, 0x7f0b0adb
 
-    .line 713
+    .line 709
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 733
+    .line 729
     new-instance v2, Lcom/samsung/android/settings/powersaving/PSMUtils$2;
 
     invoke-direct {v2}, Lcom/samsung/android/settings/powersaving/PSMUtils$2;-><init>()V
 
     const/high16 v3, 0x1040000
 
-    .line 713
+    .line 709
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 737
+    .line 733
     new-instance v2, Lcom/samsung/android/settings/powersaving/PSMUtils$3;
 
     invoke-direct {v2}, Lcom/samsung/android/settings/powersaving/PSMUtils$3;-><init>()V
 
-    .line 713
+    .line 709
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
@@ -3718,14 +3691,14 @@
 
     move-result-object p1
 
-    .line 744
+    .line 740
     .restart local p1    # "mAD":Landroid/app/AlertDialog;
     invoke-virtual {p1}, Landroid/app/AlertDialog;->show()V
 
-    .line 745
+    .line 741
     return-object p1
 
-    .line 711
+    .line 707
     .end local v0    # "mode":Ljava/lang/String;
     .end local p1    # "mAD":Landroid/app/AlertDialog;
     :cond_1

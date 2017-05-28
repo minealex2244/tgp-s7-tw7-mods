@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: 4UNJha5JAD5ugr6Qxf1u5w2TO7MpSwRHpn+AbxTJ36E=
+SHA-256-Digest-Manifest: RFUPqeTjLucOyLXd6TAiF4NBiNrty90eNYnhoxl2exM=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/drawable-xxhdpi-v4/btn_radio_on_holo.png
@@ -829,7 +829,7 @@ Name: res/drawable-xxhdpi-v4/textfield_focused_holo_dark.9.png
 SHA-256-Digest: sLzO8Bbtp07iziwqC456lxwdTSSw6saeAbw98x+07ZE=
 
 Name: AndroidManifest.xml
-SHA-256-Digest: q0OuT32ywSx/iaoVwkwE0w6ga/nRBAJ4ZL6Qi8pV8/s=
+SHA-256-Digest: 0kOu3CQro6fYWU5Qavrb4sB5D2OfbsTeetpgPFf4TXc=
 
 Name: res/drawable-xxhdpi-v4/ic_media_pause.png
 SHA-256-Digest: RisQ8JfMxFY2Q9lK0tAV7A+URtY+d9StkwiFbmhbPXo=
@@ -4969,7 +4969,7 @@ Name: res/drawable-mdpi-v4/tw_btn_radio_to_on_mtrl_011.png
 SHA-256-Digest: 0gJT9cNz+r71VJFm1zpggBuWRGB9K0fOKjsJUi28sXY=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: GsXewe6arB062Ql0pf7Hjv0Cvex4XxcvD4KKC4yXMDU=
+SHA-256-Digest: 7VBwWrq5cj3z+CIxZ8fgFDbM5t6ffcKaA0da9+lCABg=
 
 Name: res/drawable-xxhdpi-v4/rate_star_med_off_holo_dark.png
 SHA-256-Digest: iSgH0YilDyWilLB+ihq83xPOoDG63dnHSP2ef9035vs=

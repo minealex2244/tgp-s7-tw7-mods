@@ -4300,7 +4300,7 @@ Name: res/drawable/sf_finger_setting_img.qmg
 SHA-256-Digest: Bct1yFBuW2xitL+zdB9Ujw7JQ5VsVMwMTafamKnH/xc=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: ycvr1bWsb4jGbPFLBdAgRmPZCIuo9xKpMPWGrsJx8ZE=
+SHA-256-Digest: yOd/DfG3ZdHG1/JTex1blZALEm1tLNt7xzW/zicX0lE=
 
 Name: res/drawable/motion_multi_window_anim.xml
 SHA-256-Digest: taHEuXsWW5fgdp9AE2WkR64DiZ/2tGxCgzgKXN5rpww=

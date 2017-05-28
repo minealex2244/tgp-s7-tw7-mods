@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: BAf1NCwCTDB1G62tKjOz+xJovAG3opsUVKkGjwl8gzQ=
+SHA-256-Digest-Manifest: MrJerskO2AC+hS36V7Me5qdjPvTwvb4QeM2ZzB6P91M=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/layout-sw600dp-land-v13/private_mode_pin.xml
@@ -69,7 +69,7 @@ Name: res/layout-v21/private_mode_pin.xml
 SHA-256-Digest: WrY63pYqxoyjlx4LMIbmvvZGOLtoLkMJlTWrDSWJU3I=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: 0EWPTOIbe5QbsG/KDbHcxV0ICQYNslE2CeoLw1S9R8k=
+SHA-256-Digest: 5bqIOvqr7lPLOc/G6i4nytfuE9+m459y/TH4ZpJnwdE=
 
 Name: res/layout-sw600dp-v13/private_mode_pin.xml
 SHA-256-Digest: YdxG7dxGnTsF1R48FcXdxrBQ6UGvcsTSsP5xwQQxKKg=

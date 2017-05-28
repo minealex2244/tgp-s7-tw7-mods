@@ -36,7 +36,7 @@
     .param p4, "val$fromWhere"    # Ljava/lang/String;
 
     .prologue
-    .line 718
+    .line 714
     iput-object p1, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$bsm:Lcom/samsung/android/settings/powersaving/BrightnessSolutionManager;
 
     iput-object p2, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$mContext:Landroid/content/Context;
@@ -60,19 +60,19 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 720
+    .line 716
     iget-object v0, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$bsm:Lcom/samsung/android/settings/powersaving/BrightnessSolutionManager;
 
     if-eqz v0, :cond_0
 
-    .line 722
+    .line 718
     iget-object v0, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$bsm:Lcom/samsung/android/settings/powersaving/BrightnessSolutionManager;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/powersaving/BrightnessSolutionManager;->setScreenBrightnessForPreview(I)V
 
-    .line 724
+    .line 720
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$mContext:Landroid/content/Context;
 
@@ -80,17 +80,17 @@
 
     invoke-static {v0, v1, v2}, Lcom/samsung/android/settings/boostmode/BoostUtils;->setPerformanceBoosterMode(Landroid/content/Context;IZ)V
 
-    .line 725
+    .line 721
     iget-object v0, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/samsung/android/settings/boostmode/BoostUtils;->dismissPerformanceBoostNotification(Landroid/content/Context;)V
 
-    .line 726
+    .line 722
     iget v0, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$mPowerSavingMode:I
 
     if-ne v0, v2, :cond_1
 
-    .line 727
+    .line 723
     iget-object v0, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$mContext:Landroid/content/Context;
 
     iget v1, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$mPowerSavingMode:I
@@ -99,7 +99,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/samsung/android/settings/powersaving/PSMUtils;->startPSMAnimationActivity(Landroid/content/Context;ILjava/lang/String;)V
 
-    .line 729
+    .line 725
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$mContext:Landroid/content/Context;
 
@@ -107,13 +107,13 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/settings/powersaving/PSMUtils;->setPowerSavingMode(Landroid/content/Context;I)V
 
-    .line 730
+    .line 726
     iget-object v0, p0, Lcom/samsung/android/settings/powersaving/PSMUtils$1;->val$mContext:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 719
+    .line 715
     return-void
 .end method

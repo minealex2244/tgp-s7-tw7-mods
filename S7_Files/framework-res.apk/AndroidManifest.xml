@@ -1187,6 +1187,7 @@
     <protected-broadcast android:name="com.samsung.ssrm.RESOLUTION_CHANGED"/>
     <protected-broadcast android:name="com.samsung.context.hqmbigdata.intent"/>
     <protected-broadcast android:name="com.kddi.agent.action.SCREEN_PINNING_CONDITION"/>
+    <protected-broadcast android:name="com.samsung.android.security.SemSdCardEncryption.UNMOUNT_POLICY"/>
     <permission-group android:name="com.samsung.android.authfw.pass.permission-group.SEM_PASS_AUTHENTICATE"/>
     <permission android:name="com.samsung.android.authfw.pass.permission.SEM_PASS_B2B_USE_PASS" android:permissionGroup="com.samsung.android.authfw.pass.permission-group.SEM_PASS_AUTHENTICATE" android:protectionLevel="system|signature"/>
     <permission android:name="com.samsung.android.authfw.pass.permission.SEM_PASS_B2B_USE_IRIS" android:permissionGroup="com.samsung.android.authfw.pass.permission-group.SEM_PASS_AUTHENTICATE" android:protectionLevel="system|signature"/>
