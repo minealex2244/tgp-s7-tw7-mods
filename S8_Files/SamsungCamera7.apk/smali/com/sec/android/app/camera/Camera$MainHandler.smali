@@ -33,17 +33,17 @@
     .param p1, "activity"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 7900
+    .line 7924
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 7901
+    .line 7925
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->mActivity:Ljava/lang/ref/WeakReference;
 
-    .line 7902
+    .line 7926
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 7906
+    .line 7930
     const-string v1, "Camera7"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -79,7 +79,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7907
+    .line 7931
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$MainHandler;->mActivity:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -88,7 +88,7 @@
 
     check-cast v0, Lcom/sec/android/app/camera/Camera;
 
-    .line 7908
+    .line 7932
     .local v0, "activity":Lcom/sec/android/app/camera/Camera;
     if-eqz v0, :cond_0
 
@@ -98,7 +98,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 7909
+    .line 7933
     :cond_0
     const-string v1, "Camera7"
 
@@ -106,11 +106,11 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7916
+    .line 7940
     :goto_0
     return-void
 
-    .line 7912
+    .line 7936
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -140,14 +140,14 @@
 
     invoke-static {v1}, Lcom/sec/android/app/TraceWrapper;->traceBegin(Ljava/lang/String;)V
 
-    .line 7913
+    .line 7937
     # invokes: Lcom/sec/android/app/camera/Camera;->handleMessage(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/Camera;->access$4200(Lcom/sec/android/app/camera/Camera;Landroid/os/Message;)V
 
-    .line 7914
+    .line 7938
     invoke-static {}, Lcom/sec/android/app/TraceWrapper;->traceEnd()V
 
-    .line 7915
+    .line 7939
     const-string v1, "Camera7"
 
     new-instance v2, Ljava/lang/StringBuilder;

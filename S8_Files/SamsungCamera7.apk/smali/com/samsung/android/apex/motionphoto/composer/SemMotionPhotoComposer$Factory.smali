@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 549
+    .line 550
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,12 +30,12 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 557
+    .line 558
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 558
+    .line 559
     .local v0, "pkg":Ljava/lang/String;
     const-string v1, "com.sec.android.app.apex.service.ApexService"
 
@@ -53,16 +53,16 @@
 
     if-eqz v1, :cond_0
 
-    .line 559
+    .line 560
     new-instance v1, Lcom/samsung/android/apex/motionphoto/composer/LocalComposer;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/apex/motionphoto/composer/LocalComposer;-><init>(Landroid/content/Context;)V
 
-    .line 565
+    .line 566
     :goto_0
     return-object v1
 
-    .line 561
+    .line 562
     :cond_0
     invoke-static {v0}, Lcom/samsung/android/apex/motionphoto/common/SemApexUtils;->isValidClient(Ljava/lang/String;)Z
 
@@ -70,14 +70,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 562
+    .line 563
     new-instance v1, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer;-><init>(Landroid/content/Context;)V
 
     goto :goto_0
 
-    .line 564
+    .line 565
     :cond_1
     sget-object v1, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->TAG:Ljava/lang/String;
 
@@ -101,7 +101,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 565
+    .line 566
     const/4 v1, 0x0
 
     goto :goto_0

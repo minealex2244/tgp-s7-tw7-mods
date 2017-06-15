@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     .prologue
-    .line 265
+    .line 266
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,14 +42,14 @@
     .param p1, "id"    # Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
     .prologue
-    .line 269
+    .line 270
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     const/16 v1, 0x1e78
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->updateCategoryLayout(I)V
 
-    .line 270
+    .line 271
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .param p1, "id"    # Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
     .prologue
-    .line 275
+    .line 276
     return-void
 .end method
 
@@ -67,7 +67,7 @@
     .param p1, "id"    # Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
     .prologue
-    .line 280
+    .line 281
     return-void
 .end method
 
@@ -76,14 +76,14 @@
     .param p1, "id"    # Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
     .prologue
-    .line 285
+    .line 286
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     const/16 v1, 0x1e78
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->updateCategoryLayout(I)V
 
-    .line 286
+    .line 287
     return-void
 .end method
 
@@ -92,6 +92,6 @@
     .param p1, "id"    # Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
     .prologue
-    .line 291
+    .line 292
     return-void
 .end method

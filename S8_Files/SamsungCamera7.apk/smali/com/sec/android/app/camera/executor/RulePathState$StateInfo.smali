@@ -29,21 +29,21 @@
     .param p2, "dimKey"    # I
 
     .prologue
-    .line 939
+    .line 919
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 940
+    .line 920
     iput-object p1, p0, Lcom/sec/android/app/camera/executor/RulePathState$StateInfo;->stateIdName:Ljava/lang/String;
 
-    .line 941
+    .line 921
     iput p2, p0, Lcom/sec/android/app/camera/executor/RulePathState$StateInfo;->dimKey:I
 
-    .line 942
+    .line 922
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/sec/android/app/camera/executor/RulePathState$StateInfo;->nlgLandingStateId:I
 
-    .line 943
+    .line 923
     return-void
 .end method
 
@@ -54,18 +54,18 @@
     .param p3, "nlgLandingStateId"    # I
 
     .prologue
-    .line 933
+    .line 913
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 934
+    .line 914
     iput-object p1, p0, Lcom/sec/android/app/camera/executor/RulePathState$StateInfo;->stateIdName:Ljava/lang/String;
 
-    .line 935
+    .line 915
     iput p2, p0, Lcom/sec/android/app/camera/executor/RulePathState$StateInfo;->dimKey:I
 
-    .line 936
+    .line 916
     iput p3, p0, Lcom/sec/android/app/camera/executor/RulePathState$StateInfo;->nlgLandingStateId:I
 
-    .line 937
+    .line 917
     return-void
 .end method

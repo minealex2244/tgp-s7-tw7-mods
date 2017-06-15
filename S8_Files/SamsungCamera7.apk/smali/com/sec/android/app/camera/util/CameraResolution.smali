@@ -4593,51 +4593,95 @@
 .end method
 
 .method public static getResolutionSubString(Landroid/content/Context;I)Ljava/lang/String;
-    .locals 5
+    .locals 6
     .param p0, "context"    # Landroid/content/Context;
     .param p1, "resolutionId"    # I
 
     .prologue
+    const/4 v2, 0x2
+
+    const/4 v5, 0x1
+
+    const/4 v4, 0x0
+
     .line 1317
+    invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 1318
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
 
     const-string v1, "%dx%d"
 
-    const/4 v2, 0x2
-
     new-array v2, v2, [Ljava/lang/Object;
-
-    const/4 v3, 0x0
-
-    invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntWidth(I)I
-
-    move-result v4
-
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v4
-
-    aput-object v4, v2, v3
-
-    const/4 v3, 0x1
 
     invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntHeight(I)I
 
-    move-result v4
+    move-result v3
 
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v4
+    move-result-object v3
 
-    aput-object v4, v2, v3
+    aput-object v3, v2, v4
+
+    invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntWidth(I)I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v5
 
     invoke-static {v0, v1, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 1320
+    :goto_0
     return-object v0
+
+    :cond_0
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v0
+
+    const-string v1, "%dx%d"
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntWidth(I)I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v4
+
+    invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntHeight(I)I
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v5
+
+    invoke-static {v0, v1, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method
 
 .method public static getVideoSizeFullString(Landroid/content/Context;I)Ljava/lang/String;
@@ -4646,12 +4690,12 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 1329
+    .line 1333
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1330
+    .line 1334
     .local v0, "stringBuilder":Ljava/lang/StringBuilder;
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
@@ -4659,7 +4703,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1331
+    .line 1335
     invoke-static {p0, p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionSubString(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v1
@@ -4680,7 +4724,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1335
+    .line 1339
     :goto_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -4688,7 +4732,7 @@
 
     return-object v1
 
-    .line 1333
+    .line 1337
     :cond_0
     invoke-static {p0, p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getVideoSizeString(Landroid/content/Context;I)Ljava/lang/String;
 
@@ -4719,12 +4763,12 @@
     .param p1, "value"    # I
 
     .prologue
-    const v0, 0x7f0902af
+    const v0, 0x7f0902b2
 
-    .line 1346
+    .line 1350
     sparse-switch p1, :sswitch_data_0
 
-    .line 1367
+    .line 1371
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -4732,29 +4776,9 @@
     :goto_0
     return-object v0
 
-    .line 1348
-    :sswitch_0
-    const v0, 0x7f0902b3
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 1350
-    :sswitch_1
-    const v0, 0x7f0902b1
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
     .line 1352
-    :sswitch_2
-    const v0, 0x7f0902b0
+    :sswitch_0
+    const v0, 0x7f0902b6
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4763,6 +4787,26 @@
     goto :goto_0
 
     .line 1354
+    :sswitch_1
+    const v0, 0x7f0902b4
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 1356
+    :sswitch_2
+    const v0, 0x7f0902b3
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 1358
     :sswitch_3
     const v0, 0x7f09007d
 
@@ -4772,7 +4816,7 @@
 
     goto :goto_0
 
-    .line 1357
+    .line 1361
     :sswitch_4
     const v0, 0x7f09007c
 
@@ -4782,29 +4826,9 @@
 
     goto :goto_0
 
-    .line 1359
-    :sswitch_5
-    const v0, 0x7f0902ae
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 1361
-    :sswitch_6
-    const v0, 0x7f0902b4
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
     .line 1363
-    :sswitch_7
-    const v0, 0x7f0902b2
+    :sswitch_5
+    const v0, 0x7f0902b1
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4813,6 +4837,26 @@
     goto :goto_0
 
     .line 1365
+    :sswitch_6
+    const v0, 0x7f0902b7
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 1367
+    :sswitch_7
+    const v0, 0x7f0902b5
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 1369
     :sswitch_8
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4820,7 +4864,7 @@
 
     goto :goto_0
 
-    .line 1346
+    .line 1350
     :sswitch_data_0
     .sparse-switch
         0xb -> :sswitch_6
@@ -4841,22 +4885,22 @@
     .param p0, "resolutionId"    # I
 
     .prologue
-    .line 1378
+    .line 1382
     sparse-switch p0, :sswitch_data_0
 
-    .line 1402
+    .line 1406
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 1400
+    .line 1404
     :sswitch_0
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 1378
+    .line 1382
     nop
 
     :sswitch_data_0
@@ -4890,23 +4934,23 @@
     .param p0, "resolutionId"    # I
 
     .prologue
-    .line 1413
+    .line 1417
     packed-switch p0, :pswitch_data_0
 
-    .line 1434
+    .line 1438
     :pswitch_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 1432
+    .line 1436
     :pswitch_1
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 1413
+    .line 1417
     nop
 
     :pswitch_data_0
@@ -4956,22 +5000,22 @@
     .param p0, "resolutionId"    # I
 
     .prologue
-    .line 1439
+    .line 1443
     packed-switch p0, :pswitch_data_0
 
-    .line 1443
+    .line 1447
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 1441
+    .line 1445
     :pswitch_0
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 1439
+    .line 1443
     nop
 
     :pswitch_data_0
@@ -4985,12 +5029,12 @@
     .param p0, "resolution"    # I
 
     .prologue
-    .line 1454
+    .line 1458
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMERA_RECORDING:Z
 
     if-eqz v1, :cond_0
 
-    .line 1455
+    .line 1459
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMCORDER_RESOLUTION:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
@@ -4999,29 +5043,29 @@
 
     if-ne p0, v1, :cond_0
 
-    .line 1456
+    .line 1460
     const/4 v1, 0x1
 
-    .line 1465
+    .line 1469
     :goto_0
     return v1
 
-    .line 1460
+    .line 1464
     :cond_0
     invoke-static {p0}, Lcom/sec/android/app/camera/util/CameraResolution;->getBackCamcorderFeature(I)Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 1462
+    .line 1466
     .local v0, "map":Ljava/util/HashMap;
     if-nez v0, :cond_1
 
-    .line 1463
+    .line 1467
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 1465
+    .line 1469
     :cond_1
     const-string v1, "value"
 
@@ -5045,12 +5089,12 @@
     .param p0, "resolution"    # I
 
     .prologue
-    .line 1475
+    .line 1479
     invoke-static {p0}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1476
+    .line 1480
     .local v0, "resolutionString":Ljava/lang/String;
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
@@ -5062,7 +5106,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
-    .line 1477
+    .line 1481
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5071,7 +5115,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
-    .line 1478
+    .line 1482
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5080,7 +5124,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
-    .line 1479
+    .line 1483
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5089,7 +5133,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
-    .line 1480
+    .line 1484
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5098,7 +5142,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
-    .line 1481
+    .line 1485
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5107,7 +5151,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
-    .line 1482
+    .line 1486
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5116,7 +5160,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
-    .line 1483
+    .line 1487
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5125,7 +5169,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
-    .line 1484
+    .line 1488
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5134,7 +5178,7 @@
 
     const-string v1, "4032x1960"
 
-    .line 1485
+    .line 1489
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5158,19 +5202,19 @@
     .param p0, "resolution"    # I
 
     .prologue
-    .line 1495
+    .line 1499
     invoke-static {p0}, Lcom/sec/android/app/camera/util/CameraResolution;->getFrontCamcorderFeature(I)Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 1496
+    .line 1500
     .local v0, "map":Ljava/util/HashMap;
     if-nez v0, :cond_0
 
-    .line 1497
+    .line 1501
     const/4 v1, 0x0
 
-    .line 1499
+    .line 1503
     :goto_0
     return v1
 
@@ -5197,12 +5241,12 @@
     .param p0, "resolution"    # I
 
     .prologue
-    .line 1509
+    .line 1513
     invoke-static {p0}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1510
+    .line 1514
     .local v0, "resolutionString":Ljava/lang/String;
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
@@ -5214,7 +5258,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
-    .line 1511
+    .line 1515
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5223,7 +5267,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
-    .line 1512
+    .line 1516
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5232,7 +5276,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
-    .line 1513
+    .line 1517
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5241,7 +5285,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
-    .line 1514
+    .line 1518
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5250,7 +5294,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
-    .line 1515
+    .line 1519
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5259,7 +5303,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
-    .line 1516
+    .line 1520
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5268,7 +5312,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
-    .line 1517
+    .line 1521
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5277,7 +5321,7 @@
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
-    .line 1518
+    .line 1522
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -5301,23 +5345,23 @@
     .param p0, "resolutionId"    # I
 
     .prologue
-    .line 1528
+    .line 1532
     packed-switch p0, :pswitch_data_0
 
-    .line 1561
+    .line 1565
     :pswitch_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 1559
+    .line 1563
     :pswitch_1
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 1528
+    .line 1532
     nop
 
     :pswitch_data_0

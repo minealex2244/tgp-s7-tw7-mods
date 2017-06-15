@@ -77,7 +77,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 41
-    const v0, 0x7f0a013c
+    const v0, 0x7f0a013f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -88,7 +88,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->PREVIEW_WIDTH:I
 
     .line 42
-    const v0, 0x7f0a013b
+    const v0, 0x7f0a013e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -99,7 +99,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->PREVIEW_HEIGHT:I
 
     .line 43
-    const v0, 0x7f0a014b
+    const v0, 0x7f0a014e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -128,7 +128,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->SELECT_BG_OUTLINE_COLOR:I
 
     .line 46
-    const v0, 0x7f0a0319
+    const v0, 0x7f0a031c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -139,7 +139,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->SELECT_BG_THICKNESS:I
 
     .line 47
-    const v0, 0x7f0a0318
+    const v0, 0x7f0a031b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -204,7 +204,7 @@
     invoke-direct {p0, v0, p2, p3}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 41
-    const v0, 0x7f0a013c
+    const v0, 0x7f0a013f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -215,7 +215,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->PREVIEW_WIDTH:I
 
     .line 42
-    const v0, 0x7f0a013b
+    const v0, 0x7f0a013e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -226,7 +226,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->PREVIEW_HEIGHT:I
 
     .line 43
-    const v0, 0x7f0a014b
+    const v0, 0x7f0a014e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -255,7 +255,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->SELECT_BG_OUTLINE_COLOR:I
 
     .line 46
-    const v0, 0x7f0a0319
+    const v0, 0x7f0a031c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -266,7 +266,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->SELECT_BG_THICKNESS:I
 
     .line 47
-    const v0, 0x7f0a0318
+    const v0, 0x7f0a031b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

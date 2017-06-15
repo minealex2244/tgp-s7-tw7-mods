@@ -27,16 +27,16 @@
     .param p2, "value"    # Ljava/lang/String;
 
     .prologue
-    .line 526
+    .line 514
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 527
+    .line 515
     iput-object p1, p0, Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;->paramName:Ljava/lang/String;
 
-    .line 528
+    .line 516
     iput-object p2, p0, Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;->value:Ljava/lang/String;
 
-    .line 529
+    .line 517
     return-void
 .end method
 
@@ -47,25 +47,25 @@
     .param p1, "obj"    # Ljava/lang/Object;
 
     .prologue
-    .line 533
+    .line 521
     instance-of v1, p1, Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;
 
     if-nez v1, :cond_0
 
-    .line 534
+    .line 522
     const/4 v1, 0x0
 
-    .line 537
+    .line 525
     :goto_0
     return v1
 
     :cond_0
     move-object v0, p1
 
-    .line 536
+    .line 524
     check-cast v0, Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;
 
-    .line 537
+    .line 525
     .local v0, "s":Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;
     iget-object v1, p0, Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;->paramName:Ljava/lang/String;
 
@@ -82,7 +82,7 @@
     .locals 1
 
     .prologue
-    .line 542
+    .line 530
     iget-object v0, p0, Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;->paramName:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I

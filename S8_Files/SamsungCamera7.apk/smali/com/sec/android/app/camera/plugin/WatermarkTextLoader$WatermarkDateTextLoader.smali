@@ -111,7 +111,7 @@
 
     const/4 v4, 0x0
 
-    .line 500
+    .line 502
     const/16 v0, 0xc
 
     new-array v0, v0, [Ljava/lang/String;
@@ -184,7 +184,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->CHINESE_MONTH_NUMBER:[Ljava/lang/String;
 
-    .line 501
+    .line 503
     const/16 v0, 0x96
 
     new-array v0, v0, [J
@@ -193,7 +193,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->LUNAR_INFO:[J
 
-    .line 524
+    .line 526
     new-array v0, v6, [[D
 
     new-array v1, v3, [D
@@ -210,21 +210,21 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->CENTURY_ARRAY:[[D
 
-    .line 527
+    .line 529
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
-    .line 528
+    .line 530
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->DECREASE_OFFSETMAP:Ljava/util/Map;
 
-    .line 535
+    .line 537
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->DECREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->YUSHUI:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -245,7 +245,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 536
+    .line 538
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->CHUNFEN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -266,7 +266,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 537
+    .line 539
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOMAN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -287,7 +287,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 538
+    .line 540
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->MANGZHONG:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -308,7 +308,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 539
+    .line 541
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAZHI:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -329,7 +329,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 540
+    .line 542
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOSHU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -358,7 +358,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 541
+    .line 543
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->DASHU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -379,7 +379,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 542
+    .line 544
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->LIQIU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -400,7 +400,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 543
+    .line 545
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->BAILU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -421,7 +421,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 544
+    .line 546
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->QIUFEN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -442,7 +442,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 545
+    .line 547
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->SHUANGJIANG:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -461,7 +461,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 546
+    .line 548
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->LIDONG:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -480,7 +480,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 547
+    .line 549
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOXUE:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -501,7 +501,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 548
+    .line 550
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->DAXUE:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -522,7 +522,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 549
+    .line 551
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->DECREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->DONGZHI:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -551,7 +551,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 550
+    .line 552
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOHAN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -572,7 +572,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 551
+    .line 553
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->DECREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOHAN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -593,7 +593,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 552
+    .line 554
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->DAHAN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -614,10 +614,10 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 553
+    .line 555
     return-void
 
-    .line 501
+    .line 503
     :array_0
     .array-data 8
         0x4bd8
@@ -772,7 +772,7 @@
         0xada0
     .end array-data
 
-    .line 524
+    .line 526
     :array_1
     .array-data 8
         0x4012849ba5e353f8L    # 4.6295
@@ -836,63 +836,63 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 498
+    .line 500
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 555
+    .line 557
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
-    .line 556
+    .line 558
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mIsWatermarkTextLoaded:Z
 
-    .line 557
+    .line 559
     const-string v0, "4 - 20"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentDate:Ljava/lang/String;
 
-    .line 558
+    .line 560
     const-string v0, "\u661f\u671f\u4e00"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mWeekday:Ljava/lang/String;
 
-    .line 559
+    .line 561
     const-string v0, "\u5e73\u65e5"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mSolarTerm:Ljava/lang/String;
 
-    .line 560
+    .line 562
     const-string v0, "unknown"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mHoliday:Ljava/lang/String;
 
-    .line 561
+    .line 563
     const-string v0, "2016.4.20 23:20"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDateAndTime:Ljava/lang/String;
 
-    .line 562
+    .line 564
     const-string v0, "\u4e19\u7533"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLunarYear:Ljava/lang/String;
 
-    .line 563
+    .line 565
     const/16 v0, 0x7e0
 
     iput v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mYear:I
 
-    .line 564
+    .line 566
     iput v1, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mMonth:I
 
-    .line 565
+    .line 567
     iput v1, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDay:I
 
-    .line 566
+    .line 568
     const/16 v0, 0x7e1
 
     iput v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentYear:I
@@ -905,7 +905,7 @@
     .param p1, "x0"    # Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$1;
 
     .prologue
-    .line 498
+    .line 500
     invoke-direct {p0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;-><init>()V
 
     return-void
@@ -920,14 +920,14 @@
 
     const/4 v12, 0x0
 
-    .line 738
+    .line 740
     new-instance v0, Ljava/util/Date;
 
     const-wide v8, -0x201bca5b800L
 
     invoke-direct {v0, v8, v9}, Ljava/util/Date;-><init>(J)V
 
-    .line 739
+    .line 741
     .local v0, "baseDate":Ljava/util/Date;
     invoke-virtual {p1}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
@@ -949,11 +949,11 @@
 
     long-to-int v6, v8
 
-    .line 740
+    .line 742
     .local v6, "offset":I
     const/4 v2, 0x0
 
-    .line 741
+    .line 743
     .local v2, "daysOfYear":I
     const/16 v4, 0x76c
 
@@ -965,46 +965,46 @@
 
     if-lez v6, :cond_0
 
-    .line 742
+    .line 744
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->yearDays(I)I
 
     move-result v2
 
-    .line 743
+    .line 745
     sub-int/2addr v6, v2
 
-    .line 741
+    .line 743
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 745
+    .line 747
     :cond_0
     if-gez v6, :cond_1
 
-    .line 746
+    .line 748
     add-int/2addr v6, v2
 
-    .line 747
+    .line 749
     add-int/lit8 v4, v4, -0x1
 
-    .line 750
+    .line 752
     :cond_1
     iput v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mYear:I
 
-    .line 751
+    .line 753
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->leapMonth(I)I
 
     move-result v5
 
-    .line 752
+    .line 754
     .local v5, "leapMonth":I
     iput-boolean v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLeap:Z
 
-    .line 753
+    .line 755
     const/4 v1, 0x0
 
-    .line 754
+    .line 756
     .local v1, "daysOfMonth":I
     const/4 v3, 0x1
 
@@ -1016,7 +1016,7 @@
 
     if-lez v6, :cond_4
 
-    .line 755
+    .line 757
     if-lez v5, :cond_3
 
     add-int/lit8 v7, v5, 0x1
@@ -1027,24 +1027,24 @@
 
     if-nez v7, :cond_3
 
-    .line 756
+    .line 758
     add-int/lit8 v3, v3, -0x1
 
-    .line 757
+    .line 759
     iput-boolean v13, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLeap:Z
 
-    .line 758
+    .line 760
     iget v7, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mYear:I
 
     invoke-direct {p0, v7}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->leapDays(I)I
 
     move-result v1
 
-    .line 761
+    .line 763
     :goto_2
     sub-int/2addr v6, v1
 
-    .line 762
+    .line 764
     iget-boolean v7, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLeap:Z
 
     if-eqz v7, :cond_2
@@ -1053,16 +1053,16 @@
 
     if-ne v3, v7, :cond_2
 
-    .line 763
+    .line 765
     iput-boolean v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLeap:Z
 
-    .line 754
+    .line 756
     :cond_2
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 760
+    .line 762
     :cond_3
     iget v7, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mYear:I
 
@@ -1072,7 +1072,7 @@
 
     goto :goto_2
 
-    .line 765
+    .line 767
     :cond_4
     if-nez v6, :cond_5
 
@@ -1082,42 +1082,42 @@
 
     if-ne v3, v7, :cond_5
 
-    .line 766
+    .line 768
     iget-boolean v7, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLeap:Z
 
     if-eqz v7, :cond_7
 
-    .line 767
+    .line 769
     iput-boolean v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLeap:Z
 
-    .line 774
+    .line 776
     :cond_5
     :goto_3
     if-gez v6, :cond_6
 
-    .line 775
+    .line 777
     add-int/2addr v6, v1
 
-    .line 776
+    .line 778
     add-int/lit8 v3, v3, -0x1
 
-    .line 778
+    .line 780
     :cond_6
     iput v3, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mMonth:I
 
-    .line 779
+    .line 781
     add-int/lit8 v7, v6, 0x1
 
     iput v7, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDay:I
 
-    .line 780
+    .line 782
     return-void
 
-    .line 769
+    .line 771
     :cond_7
     iput-boolean v13, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLeap:Z
 
-    .line 770
+    .line 772
     add-int/lit8 v3, v3, -0x1
 
     goto :goto_3
@@ -1137,14 +1137,14 @@
 
     const/4 v5, 0x0
 
-    .line 792
+    .line 794
     iget v3, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mYear:I
 
     add-int/lit16 v3, v3, -0x76c
 
     add-int/lit8 v2, v3, 0x24
 
-    .line 793
+    .line 795
     .local v2, "num":I
     const/16 v3, 0xa
 
@@ -1200,7 +1200,7 @@
 
     aput-object v4, v0, v3
 
-    .line 795
+    .line 797
     .local v0, "Gan":[Ljava/lang/String;
     const/16 v3, 0xc
 
@@ -1268,7 +1268,7 @@
 
     aput-object v4, v1, v3
 
-    .line 797
+    .line 799
     .local v1, "Zhi":[Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1302,7 +1302,7 @@
     .param p1, "day"    # I
 
     .prologue
-    .line 807
+    .line 809
     const/4 v2, 0x4
 
     new-array v0, v2, [Ljava/lang/String;
@@ -1331,7 +1331,7 @@
 
     aput-object v3, v0, v2
 
-    .line 808
+    .line 810
     .local v0, "chineseTen":[Ljava/lang/String;
     rem-int/lit8 v2, p1, 0xa
 
@@ -1339,21 +1339,21 @@
 
     const/16 v1, 0x9
 
-    .line 809
+    .line 811
     .local v1, "n":I
     :goto_0
     const/16 v2, 0x1e
 
     if-le p1, v2, :cond_1
 
-    .line 810
+    .line 812
     const-string v2, ""
 
-    .line 814
+    .line 816
     :goto_1
     return-object v2
 
-    .line 808
+    .line 810
     .end local v1    # "n":I
     :cond_0
     rem-int/lit8 v2, p1, 0xa
@@ -1362,19 +1362,19 @@
 
     goto :goto_0
 
-    .line 811
+    .line 813
     .restart local v1    # "n":I
     :cond_1
     const/16 v2, 0xa
 
     if-ne p1, v2, :cond_2
 
-    .line 812
+    .line 814
     const-string v2, "\u521d\u5341"
 
     goto :goto_1
 
-    .line 814
+    .line 816
     :cond_2
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1389,7 +1389,7 @@
     move-result-object v2
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->CHINESE_NUMBER:[Ljava/lang/String;
-    invoke-static {}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$500()[Ljava/lang/String;
+    invoke-static {}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$600()[Ljava/lang/String;
 
     move-result-object v3
 
@@ -1411,7 +1411,7 @@
     .param p1, "year"    # I
 
     .prologue
-    .line 824
+    .line 826
     add-int/lit8 v2, p1, -0x1
 
     const/16 v3, 0xc
@@ -1420,7 +1420,7 @@
 
     move-result v0
 
-    .line 825
+    .line 827
     .local v0, "days":I
     const/16 v2, 0x1e
 
@@ -1428,12 +1428,12 @@
 
     const-string v1, "\u5341\u4e8c\u6708\u4e09\u5341"
 
-    .line 826
+    .line 828
     .local v1, "eve":Ljava/lang/String;
     :goto_0
     return-object v1
 
-    .line 825
+    .line 827
     .end local v1    # "eve":Ljava/lang/String;
     :cond_0
     const-string v1, "\u5341\u4e8c\u6708\u5eff\u4e5d"
@@ -1446,7 +1446,7 @@
     .param p1, "date"    # Ljava/lang/String;
 
     .prologue
-    .line 836
+    .line 838
     const/4 v0, -0x1
 
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
@@ -1459,7 +1459,7 @@
     :goto_0
     packed-switch v0, :pswitch_data_0
 
-    .line 862
+    .line 864
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mSolarTerm:Ljava/lang/String;
 
     const-string v1, "\u6e05\u660e"
@@ -1470,14 +1470,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 863
+    .line 865
     const-string v0, "\u6e05\u660e\u8282"
 
-    .line 864
+    .line 866
     :goto_1
     return-object v0
 
-    .line 836
+    .line 838
     :sswitch_0
     const-string v1, "01.01"
 
@@ -1634,85 +1634,85 @@
 
     goto/16 :goto_0
 
-    .line 838
+    .line 840
     :pswitch_0
     const-string v0, "\u5143\u65e6"
 
     goto :goto_1
 
-    .line 840
+    .line 842
     :pswitch_1
     const-string v0, "\u60c5\u4eba\u8282"
 
     goto/16 :goto_1
 
-    .line 842
+    .line 844
     :pswitch_2
     const-string v0, "\u5987\u5973\u8282"
 
     goto/16 :goto_1
 
-    .line 844
+    .line 846
     :pswitch_3
     const-string v0, "\u690d\u6811\u8282"
 
     goto/16 :goto_1
 
-    .line 846
+    .line 848
     :pswitch_4
     const-string v0, "\u52b3\u52a8\u8282"
 
     goto/16 :goto_1
 
-    .line 848
+    .line 850
     :pswitch_5
     const-string v0, "\u9752\u5e74\u8282"
 
     goto/16 :goto_1
 
-    .line 850
+    .line 852
     :pswitch_6
     const-string v0, "\u513f\u7ae5\u8282"
 
     goto/16 :goto_1
 
-    .line 852
+    .line 854
     :pswitch_7
     const-string v0, "\u5efa\u515a\u8282"
 
     goto/16 :goto_1
 
-    .line 854
+    .line 856
     :pswitch_8
     const-string v0, "\u5efa\u519b\u8282"
 
     goto/16 :goto_1
 
-    .line 856
+    .line 858
     :pswitch_9
     const-string v0, "\u6559\u5e08\u8282"
 
     goto/16 :goto_1
 
-    .line 858
+    .line 860
     :pswitch_a
     const-string v0, "\u56fd\u5e86\u8282"
 
     goto/16 :goto_1
 
-    .line 860
+    .line 862
     :pswitch_b
     const-string v0, "\u5723\u8bde\u8282"
 
     goto/16 :goto_1
 
-    .line 864
+    .line 866
     :cond_1
     const-string v0, "unknown"
 
     goto/16 :goto_1
 
-    .line 836
+    .line 838
     :sswitch_data_0
     .sparse-switch
         0x2bb610e -> :sswitch_0
@@ -1750,7 +1750,7 @@
     .locals 3
 
     .prologue
-    .line 875
+    .line 877
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1799,10 +1799,10 @@
 
     const/4 v1, 0x0
 
-    .line 885
+    .line 887
     iput-boolean v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mIsLunarFestival:Z
 
-    .line 886
+    .line 888
     const/4 v0, -0x1
 
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
@@ -1815,7 +1815,7 @@
     :goto_0
     packed-switch v0, :pswitch_data_0
 
-    .line 906
+    .line 908
     iget v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentYear:I
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getChineseEveDate(I)Ljava/lang/String;
@@ -1828,14 +1828,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 907
+    .line 909
     const-string v0, "\u9664\u5915"
 
-    .line 910
+    .line 912
     :goto_1
     return-object v0
 
-    .line 886
+    .line 888
     :sswitch_0
     const-string v2, "\u6b63\u6708\u00b7\u521d\u4e00"
 
@@ -1966,64 +1966,64 @@
 
     goto :goto_0
 
-    .line 890
+    .line 892
     :pswitch_0
     const-string v0, "\u6625\u8282"
 
     goto :goto_1
 
-    .line 892
+    .line 894
     :pswitch_1
     const-string v0, "\u5143\u5bb5\u8282"
 
     goto :goto_1
 
-    .line 894
+    .line 896
     :pswitch_2
     const-string v0, "\u7aef\u5348\u8282"
 
     goto :goto_1
 
-    .line 896
+    .line 898
     :pswitch_3
     const-string v0, "\u4e2d\u79cb\u8282"
 
     goto :goto_1
 
-    .line 898
+    .line 900
     :pswitch_4
     const-string v0, "\u91cd\u9633\u8282"
 
     goto :goto_1
 
-    .line 900
+    .line 902
     :pswitch_5
     const-string v0, "\u4e03\u5915\u8282"
 
     goto :goto_1
 
-    .line 902
+    .line 904
     :pswitch_6
     const-string v0, "\u4e2d\u5143\u8282"
 
     goto :goto_1
 
-    .line 904
+    .line 906
     :pswitch_7
     const-string v0, "\u814a\u516b\u8282"
 
     goto :goto_1
 
-    .line 909
+    .line 911
     :cond_1
     iput-boolean v1, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mIsLunarFestival:Z
 
-    .line 910
+    .line 912
     const-string v0, "unknown"
 
     goto/16 :goto_1
 
-    .line 886
+    .line 888
     :sswitch_data_0
     .sparse-switch
         -0x7dce5066 -> :sswitch_4
@@ -2057,7 +2057,7 @@
     .locals 3
 
     .prologue
-    .line 920
+    .line 922
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2147,11 +2147,11 @@
     .end annotation
 
     .prologue
-    .line 924
+    .line 926
     .local p1, "map":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;[Ljava/lang/Integer;>;"
     const/4 v1, 0x0
 
-    .line 925
+    .line 927
     .local v1, "off":I
     invoke-interface {p1, p3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2159,11 +2159,11 @@
 
     check-cast v2, [Ljava/lang/Integer;
 
-    .line 926
+    .line 928
     .local v2, "years":[Ljava/lang/Integer;
     if-eqz v2, :cond_0
 
-    .line 927
+    .line 929
     array-length v4, v2
 
     const/4 v3, 0x0
@@ -2177,19 +2177,19 @@
 
     move-result v0
 
-    .line 928
+    .line 930
     .local v0, "i":I
     if-ne v0, p2, :cond_1
 
-    .line 929
+    .line 931
     move v1, p4
 
-    .line 934
+    .line 936
     .end local v0    # "i":I
     :cond_0
     return v1
 
-    .line 927
+    .line 929
     .restart local v0    # "i":I
     :cond_1
     add-int/lit8 v3, v3, 0x1
@@ -2203,10 +2203,10 @@
     .param p2, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 951
+    .line 953
     const-wide/16 v2, 0x0
 
-    .line 952
+    .line 954
     .local v2, "centuryValue":D
     invoke-virtual {p2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -2218,7 +2218,7 @@
 
     move-result-object p2
 
-    .line 953
+    .line 955
     invoke-static {p2}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->valueOf(Ljava/lang/String;)Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     move-result-object v7
@@ -2227,11 +2227,11 @@
 
     move-result v5
 
-    .line 955
+    .line 957
     .local v5, "ordinal":I
     const/4 v0, -0x1
 
-    .line 956
+    .line 958
     .local v0, "centuryIndex":I
     const/16 v7, 0x76d
 
@@ -2241,10 +2241,10 @@
 
     if-gt p1, v7, :cond_4
 
-    .line 957
+    .line 959
     const/4 v0, 0x0
 
-    .line 963
+    .line 965
     :goto_0
     sget-object v7, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->CENTURY_ARRAY:[[D
 
@@ -2252,14 +2252,14 @@
 
     aget-wide v2, v7, v5
 
-    .line 964
+    .line 966
     const/4 v1, 0x0
 
-    .line 965
+    .line 967
     .local v1, "dateNum":I
     rem-int/lit8 v6, p1, 0x64
 
-    .line 966
+    .line 968
     .local v6, "y":I
     rem-int/lit8 v7, p1, 0x4
 
@@ -2274,7 +2274,7 @@
 
     if-nez v7, :cond_3
 
-    .line 967
+    .line 969
     :cond_1
     sget-object v7, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOHAN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
@@ -2294,7 +2294,7 @@
 
     sget-object v7, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->LICHUN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 968
+    .line 970
     invoke-virtual {v7}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->ordinal()I
 
     move-result v7
@@ -2309,11 +2309,11 @@
 
     if-ne v5, v7, :cond_3
 
-    .line 969
+    .line 971
     :cond_2
     add-int/lit8 v6, v6, -0x1
 
-    .line 972
+    .line 974
     :cond_3
     int-to-double v8, v6
 
@@ -2329,19 +2329,19 @@
 
     sub-int v1, v7, v8
 
-    .line 973
+    .line 975
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getSpecialYearOffset(ILjava/lang/String;)I
 
     move-result v7
 
     add-int/2addr v1, v7
 
-    .line 975
+    .line 977
     const/16 v7, 0xa
 
     if-ge v1, v7, :cond_6
 
-    .line 976
+    .line 978
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -2360,12 +2360,12 @@
 
     move-result-object v4
 
-    .line 980
+    .line 982
     .local v4, "mDay":Ljava/lang/String;
     :goto_1
     return-object v4
 
-    .line 958
+    .line 960
     .end local v1    # "dateNum":I
     .end local v4    # "mDay":Ljava/lang/String;
     .end local v6    # "y":I
@@ -2378,12 +2378,12 @@
 
     if-gt p1, v7, :cond_5
 
-    .line 959
+    .line 961
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 961
+    .line 963
     :cond_5
     new-instance v7, Ljava/lang/RuntimeException;
 
@@ -2415,7 +2415,7 @@
 
     throw v7
 
-    .line 978
+    .line 980
     .restart local v1    # "dateNum":I
     .restart local v6    # "y":I
     :cond_6
@@ -2447,10 +2447,10 @@
     .param p2, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 993
+    .line 995
     const/4 v0, 0x0
 
-    .line 994
+    .line 996
     .local v0, "offset":I
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->DECREASE_OFFSETMAP:Ljava/util/Map;
 
@@ -2462,7 +2462,7 @@
 
     add-int/2addr v0, v1
 
-    .line 995
+    .line 997
     sget-object v1, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->INCREASE_OFFSETMAP:Ljava/util/Map;
 
     const/4 v2, 0x1
@@ -2473,7 +2473,7 @@
 
     add-int/2addr v0, v1
 
-    .line 996
+    .line 998
     return v0
 .end method
 
@@ -2482,7 +2482,7 @@
     .param p1, "date"    # Ljava/lang/String;
 
     .prologue
-    .line 1006
+    .line 1008
     const-string v1, "WatermarkTextLoader"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2505,7 +2505,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1007
+    .line 1009
     iget-object v1, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2514,7 +2514,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 1008
+    .line 1010
     .local v0, "currentTerm":Ljava/lang/String;
     const-string v1, "WatermarkTextLoader"
 
@@ -2538,7 +2538,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1009
+    .line 1011
     const-string v1, "WatermarkTextLoader"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2563,13 +2563,13 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1010
+    .line 1012
     if-nez v0, :cond_0
 
-    .line 1011
+    .line 1013
     const-string v0, "\u5e73\u65e5"
 
-    .line 1013
+    .line 1015
     .end local v0    # "currentTerm":Ljava/lang/String;
     :cond_0
     return-object v0
@@ -2580,7 +2580,7 @@
     .param p1, "year"    # I
 
     .prologue
-    .line 1024
+    .line 1026
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2615,7 +2615,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1025
+    .line 1027
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2650,7 +2650,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1026
+    .line 1028
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2685,7 +2685,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1027
+    .line 1029
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2720,7 +2720,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1028
+    .line 1030
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2755,7 +2755,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1029
+    .line 1031
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2790,7 +2790,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1030
+    .line 1032
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2825,7 +2825,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1031
+    .line 1033
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2860,7 +2860,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1032
+    .line 1034
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2895,7 +2895,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1033
+    .line 1035
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2930,7 +2930,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1034
+    .line 1036
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2965,7 +2965,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1035
+    .line 1037
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3000,7 +3000,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1036
+    .line 1038
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3035,7 +3035,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1037
+    .line 1039
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3070,7 +3070,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1038
+    .line 1040
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3105,7 +3105,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1039
+    .line 1041
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3140,7 +3140,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1040
+    .line 1042
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3175,7 +3175,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1041
+    .line 1043
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3210,7 +3210,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1042
+    .line 1044
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3245,7 +3245,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1043
+    .line 1045
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3280,7 +3280,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1044
+    .line 1046
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3315,7 +3315,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1045
+    .line 1047
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3350,7 +3350,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1046
+    .line 1048
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3385,7 +3385,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1047
+    .line 1049
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->TERMS_MAP:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3420,7 +3420,7 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1048
+    .line 1050
     return-void
 .end method
 
@@ -3433,12 +3433,12 @@
 
     const/4 v6, 0x6
 
-    .line 1057
+    .line 1059
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->strToDate(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object v1
 
-    .line 1058
+    .line 1060
     .local v1, "date":Ljava/util/Date;
     new-array v3, v7, [Ljava/lang/String;
 
@@ -3482,34 +3482,34 @@
 
     aput-object v4, v3, v6
 
-    .line 1059
+    .line 1061
     .local v3, "weeks":[Ljava/lang/String;
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 1060
+    .line 1062
     .local v0, "cal":Ljava/util/Calendar;
     invoke-virtual {v0, v1}, Ljava/util/Calendar;->setTime(Ljava/util/Date;)V
 
-    .line 1061
+    .line 1063
     invoke-virtual {v0, v7}, Ljava/util/Calendar;->get(I)I
 
     move-result v4
 
     add-int/lit8 v2, v4, -0x1
 
-    .line 1062
+    .line 1064
     .local v2, "week_index":I
     if-ltz v2, :cond_0
 
     if-le v2, v6, :cond_1
 
-    .line 1063
+    .line 1065
     :cond_0
     const/4 v2, 0x0
 
-    .line 1065
+    .line 1067
     :cond_1
     aget-object v4, v3, v2
 
@@ -3521,14 +3521,14 @@
     .param p1, "year"    # I
 
     .prologue
-    .line 1075
+    .line 1077
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->leapMonth(I)I
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 1076
+    .line 1078
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->LUNAR_INFO:[J
 
     add-int/lit16 v1, p1, -0x76c
@@ -3545,20 +3545,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 1077
+    .line 1079
     const/16 v0, 0x1e
 
-    .line 1081
+    .line 1083
     :goto_0
     return v0
 
-    .line 1079
+    .line 1081
     :cond_0
     const/16 v0, 0x1d
 
     goto :goto_0
 
-    .line 1081
+    .line 1083
     :cond_1
     const/4 v0, 0x0
 
@@ -3570,7 +3570,7 @@
     .param p1, "year"    # I
 
     .prologue
-    .line 1091
+    .line 1093
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->LUNAR_INFO:[J
 
     add-int/lit16 v1, p1, -0x76c
@@ -3592,7 +3592,7 @@
     .param p2, "month"    # I
 
     .prologue
-    .line 1102
+    .line 1104
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->LUNAR_INFO:[J
 
     add-int/lit16 v1, p1, -0x76c
@@ -3613,10 +3613,10 @@
 
     if-nez v0, :cond_0
 
-    .line 1103
+    .line 1105
     const/16 v0, 0x1d
 
-    .line 1105
+    .line 1107
     :goto_0
     return v0
 
@@ -3631,7 +3631,7 @@
     .param p1, "strDate"    # Ljava/lang/String;
 
     .prologue
-    .line 1115
+    .line 1117
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v2, "yyyy-MM-dd"
@@ -3640,7 +3640,7 @@
 
     invoke-direct {v0, v2, v3}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 1116
+    .line 1118
     .local v0, "formatter":Ljava/text/SimpleDateFormat;
     new-instance v1, Ljava/text/ParsePosition;
 
@@ -3648,7 +3648,7 @@
 
     invoke-direct {v1, v2}, Ljava/text/ParsePosition;-><init>(I)V
 
-    .line 1117
+    .line 1119
     .local v1, "pos":Ljava/text/ParsePosition;
     invoke-virtual {v0, p1, v1}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;
 
@@ -3662,10 +3662,10 @@
     .param p1, "year"    # I
 
     .prologue
-    .line 1127
+    .line 1129
     const/16 v1, 0x15c
 
-    .line 1128
+    .line 1130
     .local v1, "sum":I
     const v0, 0x8000
 
@@ -3675,7 +3675,7 @@
 
     if-le v0, v2, :cond_1
 
-    .line 1129
+    .line 1131
     sget-object v2, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->LUNAR_INFO:[J
 
     add-int/lit16 v3, p1, -0x76c
@@ -3692,16 +3692,16 @@
 
     if-eqz v2, :cond_0
 
-    .line 1130
+    .line 1132
     add-int/lit8 v1, v1, 0x1
 
-    .line 1128
+    .line 1130
     :cond_0
     shr-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1132
+    .line 1134
     :cond_1
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->leapDays(I)I
 
@@ -3718,12 +3718,12 @@
     .locals 1
 
     .prologue
-    .line 571
+    .line 573
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mIsWatermarkTextLoaded:Z
 
-    .line 572
+    .line 574
     return-void
 .end method
 
@@ -3731,7 +3731,7 @@
     .locals 4
 
     .prologue
-    .line 580
+    .line 582
     const-string v0, "%s\u6708%s\u65e5"
 
     const/4 v1, 0x2
@@ -3747,7 +3747,7 @@
     move-result-object v3
 
     # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->getChinaNumString(Ljava/lang/String;)Ljava/lang/String;
-    invoke-static {v3}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$400(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$500(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3762,7 +3762,7 @@
     move-result-object v3
 
     # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->getChinaNumString(Ljava/lang/String;)Ljava/lang/String;
-    invoke-static {v3}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$400(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->access$500(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3779,7 +3779,7 @@
     .locals 4
 
     .prologue
-    .line 589
+    .line 591
     const-string v0, "%s\u6708%s\u65e5"
 
     const/4 v1, 0x2
@@ -3812,7 +3812,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentDate:Ljava/lang/String;
 
-    .line 590
+    .line 592
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentDate:Ljava/lang/String;
 
     return-object v0
@@ -3822,20 +3822,20 @@
     .locals 4
 
     .prologue
-    .line 599
+    .line 601
     new-instance v1, Ljava/text/DateFormatSymbols;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     invoke-direct {v1, v2}, Ljava/text/DateFormatSymbols;-><init>(Ljava/util/Locale;)V
 
-    .line 600
+    .line 602
     .local v1, "dfs":Ljava/text/DateFormatSymbols;
     invoke-virtual {v1}, Ljava/text/DateFormatSymbols;->getWeekdays()[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 601
+    .line 603
     .local v0, "dayList":[Ljava/lang/String;
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -3862,7 +3862,7 @@
     .locals 2
 
     .prologue
-    .line 610
+    .line 612
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3890,7 +3890,7 @@
     .locals 5
 
     .prologue
-    .line 619
+    .line 621
     const-string v0, "%s  \u661f \u671f %c"
 
     const/4 v1, 0x2
@@ -3933,7 +3933,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDateAndTime:Ljava/lang/String;
 
-    .line 620
+    .line 622
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDateAndTime:Ljava/lang/String;
 
     return-object v0
@@ -3944,7 +3944,7 @@
     .param p1, "temperature"    # Ljava/lang/String;
 
     .prologue
-    .line 630
+    .line 632
     const-string v0, "%s - %s ,  %s\u2103"
 
     const/4 v1, 0x3
@@ -3981,7 +3981,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDateAndTime:Ljava/lang/String;
 
-    .line 631
+    .line 633
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDateAndTime:Ljava/lang/String;
 
     return-object v0
@@ -3992,7 +3992,7 @@
     .param p1, "temperature"    # Ljava/lang/String;
 
     .prologue
-    .line 641
+    .line 643
     const-string v0, "%s %s"
 
     const/4 v1, 0x2
@@ -4017,7 +4017,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDateAndTime:Ljava/lang/String;
 
-    .line 642
+    .line 644
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mDateAndTime:Ljava/lang/String;
 
     return-object v0
@@ -4028,12 +4028,12 @@
     .param p1, "format"    # Ljava/lang/String;
 
     .prologue
-    .line 653
+    .line 655
     new-instance v1, Ljava/util/Date;
 
     invoke-direct {v1}, Ljava/util/Date;-><init>()V
 
-    .line 654
+    .line 656
     .local v1, "now":Ljava/util/Date;
     new-instance v0, Ljava/text/SimpleDateFormat;
 
@@ -4041,7 +4041,7 @@
 
     invoke-direct {v0, p1, v2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 655
+    .line 657
     .local v0, "dateFormat":Ljava/text/SimpleDateFormat;
     invoke-virtual {v0, v1}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
@@ -4054,17 +4054,17 @@
     .locals 4
 
     .prologue
-    .line 664
+    .line 666
     iget-boolean v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mIsLunarFestival:Z
 
     if-eqz v0, :cond_0
 
-    .line 665
+    .line 667
     invoke-direct {p0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getLunarDate()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 667
+    .line 669
     :goto_0
     return-object v0
 
@@ -4106,7 +4106,7 @@
     .locals 2
 
     .prologue
-    .line 678
+    .line 680
     invoke-direct {p0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getLunarDate()Ljava/lang/String;
 
     move-result-object v0
@@ -4117,7 +4117,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mHoliday:Ljava/lang/String;
 
-    .line 679
+    .line 681
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mHoliday:Ljava/lang/String;
 
     const-string v1, "unknown"
@@ -4128,7 +4128,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 680
+    .line 682
     const-string v0, "MM.dd"
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getDateTime(Ljava/lang/String;)Ljava/lang/String;
@@ -4141,7 +4141,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mHoliday:Ljava/lang/String;
 
-    .line 681
+    .line 683
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mHoliday:Ljava/lang/String;
 
     const-string v1, "unknown"
@@ -4157,13 +4157,13 @@
     :goto_0
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mHoliday:Ljava/lang/String;
 
-    .line 683
+    .line 685
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mHoliday:Ljava/lang/String;
 
     return-object v0
 
-    .line 681
+    .line 683
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mHoliday:Ljava/lang/String;
 
@@ -4174,7 +4174,7 @@
     .locals 2
 
     .prologue
-    .line 692
+    .line 694
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -4202,7 +4202,7 @@
     .locals 1
 
     .prologue
-    .line 703
+    .line 705
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mSolarTerm:Ljava/lang/String;
 
     return-object v0
@@ -4212,17 +4212,17 @@
     .locals 6
 
     .prologue
-    .line 710
+    .line 712
     iget-boolean v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mIsWatermarkTextLoaded:Z
 
     if-nez v4, :cond_0
 
-    .line 711
+    .line 713
     const/4 v4, 0x1
 
     iput-boolean v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mIsWatermarkTextLoaded:Z
 
-    .line 713
+    .line 715
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v4, "yyyy-MM-dd"
@@ -4231,7 +4231,7 @@
 
     invoke-direct {v0, v4, v5}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 714
+    .line 716
     .local v0, "chineseDateFormat":Ljava/text/SimpleDateFormat;
     const-string v4, "yyyy-MM-dd"
 
@@ -4241,7 +4241,7 @@
 
     iput-object v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentDate:Ljava/lang/String;
 
-    .line 715
+    .line 717
     const-string v4, "yyyy"
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getDateTime(Ljava/lang/String;)Ljava/lang/String;
@@ -4254,14 +4254,14 @@
 
     iput v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentYear:I
 
-    .line 716
+    .line 718
     const-string v4, "MM-dd"
 
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getDateTime(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 717
+    .line 719
     .local v1, "currentDay":Ljava/lang/String;
     iget-object v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentDate:Ljava/lang/String;
 
@@ -4271,24 +4271,24 @@
 
     iput-object v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mWeekday:Ljava/lang/String;
 
-    .line 718
+    .line 720
     iget v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentYear:I
 
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getTermsMap(I)V
 
-    .line 719
+    .line 721
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->getTerms(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     iput-object v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mSolarTerm:Ljava/lang/String;
 
-    .line 720
+    .line 722
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v3
 
-    .line 722
+    .line 724
     .local v3, "today":Ljava/util/Calendar;
     :try_start_0
     iget-object v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mCurrentDate:Ljava/lang/String;
@@ -4301,32 +4301,32 @@
     :try_end_0
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 726
+    .line 728
     :goto_0
     invoke-direct {p0, v3}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->convertLunar(Ljava/util/Calendar;)V
 
-    .line 727
+    .line 729
     invoke-direct {p0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->cyclical()Ljava/lang/String;
 
     move-result-object v4
 
     iput-object v4, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->mLunarYear:Ljava/lang/String;
 
-    .line 729
+    .line 731
     .end local v0    # "chineseDateFormat":Ljava/text/SimpleDateFormat;
     .end local v1    # "currentDay":Ljava/lang/String;
     .end local v3    # "today":Ljava/util/Calendar;
     :cond_0
     return-void
 
-    .line 723
+    .line 725
     .restart local v0    # "chineseDateFormat":Ljava/text/SimpleDateFormat;
     .restart local v1    # "currentDay":Ljava/lang/String;
     .restart local v3    # "today":Ljava/util/Calendar;
     :catch_0
     move-exception v2
 
-    .line 724
+    .line 726
     .local v2, "e":Ljava/text/ParseException;
     invoke-virtual {v2}, Ljava/text/ParseException;->printStackTrace()V
 

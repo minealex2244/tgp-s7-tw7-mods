@@ -53,7 +53,7 @@
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 38
-    const v0, 0x7f0a027b
+    const v0, 0x7f0a027e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -64,7 +64,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectListItem;->EFFECT_TYPE_BUTTON_WIDTH:I
 
     .line 39
-    const v0, 0x7f0a027a
+    const v0, 0x7f0a027d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -75,7 +75,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectListItem;->EFFECT_TYPE_BUTTON_HEIGHT:I
 
     .line 40
-    const v0, 0x7f0a0289
+    const v0, 0x7f0a028c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -86,7 +86,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectListItem;->EFFECT_TYPE_TEXT_Y:I
 
     .line 41
-    const v0, 0x7f0a0288
+    const v0, 0x7f0a028b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -97,7 +97,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectListItem;->EFFECT_TYPE_TEXT_WIDTH:I
 
     .line 42
-    const v0, 0x7f0a0285
+    const v0, 0x7f0a0288
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -114,7 +114,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a0287
+    const v0, 0x7f0a028a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -127,7 +127,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectListItem;->EFFECT_TYPE_TEXT_SIZE:I
 
     .line 45
-    const v0, 0x7f0a0284
+    const v0, 0x7f0a0287
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -138,7 +138,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectListItem;->EFFECT_TYPE_TEXT_BOTTOM_MARGIN:I
 
     .line 46
-    const v0, 0x7f0a0341
+    const v0, 0x7f0a0344
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -158,7 +158,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectListItem;->SELECT_BG_COLOR:I
 
     .line 48
-    const v0, 0x7f0a0283
+    const v0, 0x7f0a0286
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -195,7 +195,7 @@
 
     .line 43
     :cond_0
-    const v0, 0x7f0a0286
+    const v0, 0x7f0a0289
 
     .line 44
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -718,7 +718,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09026a
+    const v4, 0x7f09026d
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -153,7 +153,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->SCREEN_HEIGHT:I
 
     .line 91
-    const v2, 0x7f0a01c5
+    const v2, 0x7f0a01c7
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -164,7 +164,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_BOTTOM_PADDING_LANDSCAPE:I
 
     .line 92
-    const v2, 0x7f0a01c6
+    const v2, 0x7f0a01c8
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -175,7 +175,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_BOTTOM_PADDING_PORTRAIT:I
 
     .line 93
-    const v2, 0x7f0a01c9
+    const v2, 0x7f0a01cb
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -186,7 +186,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_STEP_WIDTH:I
 
     .line 94
-    const v2, 0x7f0a01c8
+    const v2, 0x7f0a01ca
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -197,7 +197,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_STEP_HEIGHT:I
 
     .line 95
-    const v2, 0x7f0a01c7
+    const v2, 0x7f0a01c9
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -208,7 +208,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_STEP_GAP:I
 
     .line 97
-    const v2, 0x7f0a01c3
+    const v2, 0x7f0a01c5
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -217,7 +217,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_WIDTH:F
 
     .line 98
-    const v2, 0x7f0a01c4
+    const v2, 0x7f0a01c6
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -226,7 +226,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_WIDTH_VERITCAL:F
 
     .line 99
-    const v2, 0x7f0a01c1
+    const v2, 0x7f0a01c3
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -235,7 +235,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_HEIGHT:F
 
     .line 100
-    const v2, 0x7f0a01c2
+    const v2, 0x7f0a01c4
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -244,7 +244,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_HEIGHT_VERITCAL:F
 
     .line 101
-    const v2, 0x7f0a0051
+    const v2, 0x7f0a0053
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -287,7 +287,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_POS_Y:F
 
     .line 104
-    const v2, 0x7f0a02a9
+    const v2, 0x7f0a02ad
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -498,24 +498,24 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 582
+    .line 584
     const-string v0, "SelectiveFocus"
 
     const-string v1, "hideCaptureLayout"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 583
+    .line 585
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 584
+    .line 586
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 585
+    .line 587
     return-void
 .end method
 
@@ -523,7 +523,7 @@
     .locals 6
 
     .prologue
-    .line 588
+    .line 590
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -552,7 +552,7 @@
 
     move-result-object v0
 
-    .line 589
+    .line 591
     .local v0, "directory":Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -578,7 +578,7 @@
 
     move-result-object v2
 
-    .line 591
+    .line 593
     .local v2, "filename":Ljava/lang/String;
     :try_start_0
     new-instance v3, Ljava/io/File;
@@ -589,15 +589,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 595
+    .line 597
     :goto_0
     return-void
 
-    .line 592
+    .line 594
     :catch_0
     move-exception v1
 
-    .line 593
+    .line 595
     .local v1, "ex":Ljava/lang/Exception;
     const-string v3, "SelectiveFocus"
 
@@ -632,36 +632,36 @@
     .locals 2
 
     .prologue
-    .line 598
+    .line 600
     const-string v0, "SelectiveFocus"
 
     const-string v1, "reset"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 599
+    .line 601
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureCount:I
 
-    .line 600
+    .line 602
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->hideCaptureLayout()V
 
-    .line 602
+    .line 604
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 603
+    .line 605
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 604
+    .line 606
     return-void
 .end method
 
@@ -674,7 +674,7 @@
 
     const/4 v4, 0x0
 
-    .line 607
+    .line 609
     const-string v1, "SelectiveFocus"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -697,23 +697,23 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 609
+    .line 611
     if-ltz p1, :cond_0
 
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureMaxCount:I
 
     if-le p1, v1, :cond_1
 
-    .line 635
+    .line 637
     :cond_0
     :goto_0
     return-void
 
-    .line 613
+    .line 615
     :cond_1
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureCount:I
 
-    .line 615
+    .line 617
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -726,7 +726,7 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 616
+    .line 618
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureCount:I
 
     if-ge v0, v1, :cond_3
@@ -745,7 +745,7 @@
 
     if-nez v1, :cond_3
 
-    .line 617
+    .line 619
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mProgressStep:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -758,7 +758,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLNinePatch;->setNinePatch(I)V
 
-    .line 618
+    .line 620
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mProgressStep:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -769,7 +769,7 @@
 
     invoke-virtual {v1, v4, v5}, Lcom/samsung/android/glview/GLNinePatch;->setVisibility(IZ)V
 
-    .line 619
+    .line 621
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mIsProgressStepOn:Ljava/util/ArrayList;
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -778,14 +778,14 @@
 
     invoke-virtual {v1, v0, v2}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
-    .line 615
+    .line 617
     :cond_2
     :goto_2
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 620
+    .line 622
     :cond_3
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureCount:I
 
@@ -805,7 +805,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 621
+    .line 623
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mProgressStep:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -818,7 +818,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLNinePatch;->setNinePatch(I)V
 
-    .line 622
+    .line 624
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mProgressStep:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -829,7 +829,7 @@
 
     invoke-virtual {v1, v4, v5}, Lcom/samsung/android/glview/GLNinePatch;->setVisibility(IZ)V
 
-    .line 623
+    .line 625
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mIsProgressStepOn:Ljava/util/ArrayList;
 
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -840,7 +840,7 @@
 
     goto :goto_2
 
-    .line 627
+    .line 629
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -852,21 +852,21 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 628
+    .line 630
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v2, 0x200
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 629
+    .line 631
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v2, -0x181
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 631
+    .line 633
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -875,7 +875,7 @@
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideShootingModeText()V
 
-    .line 633
+    .line 635
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->showCaptureLayout()V
 
     goto/16 :goto_0
@@ -886,7 +886,7 @@
     .param p1, "max"    # I
 
     .prologue
-    .line 639
+    .line 641
     return-void
 .end method
 
@@ -897,7 +897,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 642
+    .line 644
     if-eqz p1, :cond_0
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -908,16 +908,16 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 643
+    .line 645
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->setGestureControlMode(I)V
 
-    .line 647
+    .line 649
     :goto_0
     return-void
 
-    .line 645
+    .line 647
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -933,7 +933,7 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 650
+    .line 652
     if-eqz p1, :cond_0
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -946,16 +946,16 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 651
+    .line 653
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->registerHRMShutterListener(Lcom/sec/android/app/camera/interfaces/CameraContext$HRMShutterListener;)V
 
-    .line 655
+    .line 657
     :goto_0
     return-void
 
-    .line 653
+    .line 655
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -968,14 +968,14 @@
     .locals 5
 
     .prologue
-    .line 658
+    .line 660
     const-string v3, "SelectiveFocus"
 
     const-string v4, "setOutputFile"
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 659
+    .line 661
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1004,13 +1004,13 @@
 
     move-result-object v1
 
-    .line 661
+    .line 663
     .local v1, "directory":Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 662
+    .line 664
     .local v0, "cameraDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -1018,14 +1018,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 663
+    .line 665
     const-string v3, "SelectiveFocus"
 
     const-string v4, "output directory created"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 666
+    .line 668
     :cond_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1051,13 +1051,13 @@
 
     move-result-object v2
 
-    .line 668
+    .line 670
     .local v2, "filename":Ljava/lang/String;
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v3, v2}, Lcom/sec/android/app/camera/interfaces/Engine;->setOutputFile(Ljava/lang/String;)V
 
-    .line 669
+    .line 671
     return-void
 .end method
 
@@ -1067,23 +1067,23 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 672
+    .line 674
     const-string v0, "SelectiveFocus"
 
     const-string v1, "showCaptureLayout"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 673
+    .line 675
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-nez v0, :cond_0
 
-    .line 679
+    .line 681
     :goto_0
     return-void
 
-    .line 676
+    .line 678
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -1093,12 +1093,12 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideShootingModeText()V
 
-    .line 677
+    .line 679
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 678
+    .line 680
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
@@ -1110,7 +1110,7 @@
     .locals 2
 
     .prologue
-    .line 687
+    .line 689
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -1118,7 +1118,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->setHalfShutter(Z)V
 
-    .line 689
+    .line 691
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->isAutoFocusing()Z
@@ -1127,38 +1127,38 @@
 
     if-eqz v0, :cond_0
 
-    .line 690
+    .line 692
     const-string v0, "SelectiveFocus"
 
     const-string v1, "START_AUTO_FOCUS is ignored."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 702
+    .line 704
     :goto_0
     return-void
 
-    .line 695
+    .line 697
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->lockAEAWB()V
 
-    .line 696
+    .line 698
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     const/4 v1, 0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->overrideFocusMode(I)V
 
-    .line 697
+    .line 699
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     const/4 v1, 0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->setFocusMode(I)V
 
-    .line 698
+    .line 700
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleAutoFocus()V
@@ -1167,7 +1167,7 @@
 
     goto :goto_0
 
-    .line 699
+    .line 701
     :catch_0
     move-exception v0
 
@@ -1180,14 +1180,14 @@
     .param p2, "orientation"    # I
 
     .prologue
-    .line 705
+    .line 707
     const-string v26, "SelectiveFocus"
 
     const-string v27, "storeImage"
 
     invoke-static/range {v26 .. v27}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 707
+    .line 709
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -1202,7 +1202,7 @@
 
     move-result-object v10
 
-    .line 708
+    .line 710
     .local v10, "directory":Ljava/lang/String;
     new-instance v26, Ljava/lang/StringBuilder;
 
@@ -1240,7 +1240,7 @@
 
     move-result-object v22
 
-    .line 711
+    .line 713
     .local v22, "tempFilePath":Ljava/lang/String;
     new-instance v17, Ljava/io/File;
 
@@ -1250,13 +1250,13 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 712
+    .line 714
     .local v17, "fromPix":Ljava/io/File;
     invoke-virtual/range {v17 .. v17}, Ljava/io/File;->length()J
 
     move-result-wide v14
 
-    .line 713
+    .line 715
     .local v14, "fileSize":J
     invoke-virtual/range {v17 .. v17}, Ljava/io/File;->exists()Z
 
@@ -1264,7 +1264,7 @@
 
     if-nez v26, :cond_1
 
-    .line 714
+    .line 716
     const-string v26, "SelectiveFocus"
 
     new-instance v27, Ljava/lang/StringBuilder;
@@ -1293,24 +1293,24 @@
 
     invoke-static/range {v26 .. v27}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 814
+    .line 816
     :cond_0
     :goto_0
     return-void
 
-    .line 718
+    .line 720
     :cond_1
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getCurrentTimeInMillis()J
 
     move-result-wide v8
 
-    .line 721
+    .line 723
     .local v8, "dateTaken":J
     invoke-static {v8, v9}, Lcom/sec/android/app/camera/util/ImageUtils;->createName(J)Ljava/lang/String;
 
     move-result-object v19
 
-    .line 723
+    .line 725
     .local v19, "name":Ljava/lang/String;
     new-instance v26, Ljava/lang/StringBuilder;
 
@@ -1334,7 +1334,7 @@
 
     move-result-object v12
 
-    .line 724
+    .line 726
     .local v12, "fileName":Ljava/lang/String;
     new-instance v26, Ljava/lang/StringBuilder;
 
@@ -1362,7 +1362,7 @@
 
     move-result-object v13
 
-    .line 726
+    .line 728
     .local v13, "filePath":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -1376,16 +1376,16 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->setLastContentTitle(Ljava/lang/String;)V
 
-    .line 728
+    .line 730
     const/4 v6, 0x0
 
-    .line 729
+    .line 731
     .local v6, "bMove":Z
     new-instance v11, Ljava/io/File;
 
     invoke-direct {v11, v13}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 730
+    .line 732
     .local v11, "file":Ljava/io/File;
     move-object/from16 v0, v17
 
@@ -1393,7 +1393,7 @@
 
     move-result v6
 
-    .line 732
+    .line 734
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -1404,15 +1404,15 @@
 
     invoke-interface {v0, v8, v9, v11}, Lcom/sec/android/app/camera/interfaces/Engine;->insertUTCToSEF(JLjava/io/File;)V
 
-    .line 734
+    .line 736
     if-eqz v6, :cond_0
 
-    .line 735
+    .line 737
     new-instance v25, Landroid/content/ContentValues;
 
     invoke-direct/range {v25 .. v25}, Landroid/content/ContentValues;-><init>()V
 
-    .line 736
+    .line 738
     .local v25, "values":Landroid/content/ContentValues;
     const-string v26, "title"
 
@@ -1424,7 +1424,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 741
+    .line 743
     const-string v26, "_display_name"
 
     move-object/from16 v0, v25
@@ -1433,7 +1433,7 @@
 
     invoke-virtual {v0, v1, v12}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 742
+    .line 744
     const-string v26, "datetaken"
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -1442,14 +1442,14 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 743
+    .line 745
     const-string v26, "mime_type"
 
     const-string v27, "image/jpeg"
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 744
+    .line 746
     const-string v26, "orientation"
 
     invoke-static/range {p2 .. p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1458,7 +1458,7 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 745
+    .line 747
     const-string v26, "_data"
 
     move-object/from16 v0, v25
@@ -1467,7 +1467,7 @@
 
     invoke-virtual {v0, v1, v13}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 746
+    .line 748
     const-string v26, "height"
 
     move-object/from16 v0, p0
@@ -1490,7 +1490,7 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 747
+    .line 749
     const-string v26, "width"
 
     move-object/from16 v0, p0
@@ -1513,7 +1513,7 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 748
+    .line 750
     const-string v26, "_size"
 
     invoke-static {v14, v15}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -1522,7 +1522,7 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 750
+    .line 752
     const-string v26, "langagecode"
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -1535,7 +1535,7 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 751
+    .line 753
     const-string v26, "addr"
 
     move-object/from16 v0, p0
@@ -1554,7 +1554,7 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 753
+    .line 755
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1569,11 +1569,11 @@
 
     move-result-object v18
 
-    .line 754
+    .line 756
     .local v18, "loc":Landroid/location/Location;
     if-eqz v18, :cond_2
 
-    .line 755
+    .line 757
     const-string v26, "latitude"
 
     invoke-virtual/range {v18 .. v18}, Landroid/location/Location;->getLatitude()D
@@ -1586,7 +1586,7 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Double;)V
 
-    .line 756
+    .line 758
     const-string v26, "longitude"
 
     invoke-virtual/range {v18 .. v18}, Landroid/location/Location;->getLongitude()D
@@ -1599,7 +1599,7 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Double;)V
 
-    .line 758
+    .line 760
     :cond_2
     const-string v26, "date_modified"
 
@@ -1613,10 +1613,10 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 759
+    .line 761
     if-eqz p1, :cond_3
 
-    .line 760
+    .line 762
     const-string v26, "sef_file_type"
 
     const/16 v27, 0x840
@@ -1627,11 +1627,11 @@
 
     invoke-virtual/range {v25 .. v27}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 762
+    .line 764
     :cond_3
     const/16 v16, 0x0
 
-    .line 764
+    .line 766
     .local v16, "fileUri":Landroid/net/Uri;
     :try_start_0
     const-string v26, "SelectiveFocus"
@@ -1640,7 +1640,7 @@
 
     invoke-static/range {v26 .. v27}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 765
+    .line 767
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1667,14 +1667,14 @@
 
     move-result-object v16
 
-    .line 766
+    .line 768
     const-string v26, "SelectiveFocus"
 
     const-string v27, "db insert X"
 
     invoke-static/range {v26 .. v27}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 768
+    .line 770
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1693,7 +1693,7 @@
 
     if-eqz v16, :cond_4
 
-    .line 769
+    .line 771
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1720,18 +1720,18 @@
 
     invoke-virtual/range {v26 .. v27}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 772
+    .line 774
     :cond_4
     if-eqz v16, :cond_6
 
-    .line 774
+    .line 776
     invoke-static {}, Lcom/samsung/android/feature/SemGateConfig;->isGateEnabled()Z
 
     move-result v26
 
     if-eqz v26, :cond_5
 
-    .line 775
+    .line 777
     const-string v26, "GATE"
 
     new-instance v27, Ljava/lang/StringBuilder;
@@ -1762,7 +1762,7 @@
 
     invoke-static/range {v26 .. v27}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 778
+    .line 780
     :cond_5
     move-object/from16 v0, p0
 
@@ -1776,7 +1776,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->setLastContentUri(Landroid/net/Uri;)V
 
-    .line 779
+    .line 781
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -1787,7 +1787,7 @@
 
     invoke-interface {v0, v13}, Lcom/sec/android/app/camera/interfaces/Engine;->setLastContentFilePath(Ljava/lang/String;)V
 
-    .line 780
+    .line 782
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -1802,12 +1802,12 @@
 
     invoke-interface/range {v26 .. v27}, Lcom/sec/android/app/camera/interfaces/Engine$ContentData;->setContentVideoType(Z)V
 
-    .line 783
+    .line 785
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
-    .line 784
+    .line 786
     .local v7, "cvs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     const-string v26, "Z001"
 
@@ -1829,7 +1829,7 @@
 
     invoke-virtual {v7, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 785
+    .line 787
     const-string v26, "G001"
 
     move-object/from16 v0, p0
@@ -1850,7 +1850,7 @@
 
     invoke-virtual {v7, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 786
+    .line 788
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1887,7 +1887,7 @@
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 794
+    .line 796
     .end local v7    # "cvs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     :cond_6
     :goto_1
@@ -1901,7 +1901,7 @@
 
     move-result-object v24
 
-    .line 795
+    .line 797
     .local v24, "thumbnailSize":Landroid/util/Size;
     invoke-virtual/range {v24 .. v24}, Landroid/util/Size;->getWidth()I
 
@@ -1919,7 +1919,7 @@
 
     move-result-object v23
 
-    .line 796
+    .line 798
     .local v23, "thumbnailBitmap":Landroid/graphics/Bitmap;
     move-object/from16 v0, p0
 
@@ -1939,7 +1939,7 @@
 
     invoke-interface {v0, v1, v2, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->updateThumbnailButton(Landroid/graphics/Bitmap;IZ)V
 
-    .line 798
+    .line 800
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -1958,14 +1958,14 @@
 
     if-ne v0, v1, :cond_8
 
-    .line 799
+    .line 801
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->SCREEN_WIDTH:I
 
     move/from16 v20, v0
 
-    .line 800
+    .line 802
     .local v20, "screenWidth":I
     move-object/from16 v0, p0
 
@@ -1983,14 +1983,14 @@
 
     if-eqz v26, :cond_7
 
-    .line 801
+    .line 803
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getNavigatorHeightPixels()I
 
     move-result v26
 
     add-int v20, v20, v26
 
-    .line 804
+    .line 806
     :cond_7
     move-object/from16 v0, p0
 
@@ -2032,12 +2032,12 @@
 
     move-object/from16 v29, v0
 
-    .line 805
+    .line 807
     invoke-interface/range {v29 .. v29}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentUri()Landroid/net/Uri;
 
     move-result-object v29
 
-    .line 804
+    .line 806
     move-object/from16 v0, v26
 
     move-object/from16 v1, v27
@@ -2050,7 +2050,7 @@
 
     invoke-interface {v0, v1, v2, v3, v4}, Lcom/sec/android/app/camera/interfaces/PopupLayoutController;->showReview(Landroid/graphics/Bitmap;ILjava/lang/String;Landroid/net/Uri;)V
 
-    .line 808
+    .line 810
     .end local v20    # "screenWidth":I
     :cond_8
     move-object/from16 v0, p0
@@ -2065,7 +2065,7 @@
 
     if-eqz v26, :cond_9
 
-    .line 809
+    .line 811
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -2078,7 +2078,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->addUriListInSecureCamera(Landroid/net/Uri;)V
 
-    .line 812
+    .line 814
     :cond_9
     move-object/from16 v0, p0
 
@@ -2090,13 +2090,13 @@
 
     goto/16 :goto_0
 
-    .line 789
+    .line 791
     .end local v23    # "thumbnailBitmap":Landroid/graphics/Bitmap;
     .end local v24    # "thumbnailSize":Landroid/util/Size;
     :catch_0
     move-exception v21
 
-    .line 790
+    .line 792
     .local v21, "sfe":Landroid/database/sqlite/SQLiteFullException;
     const-string v26, "SelectiveFocus"
 
@@ -2104,14 +2104,14 @@
 
     invoke-static/range {v26 .. v27}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 791
+    .line 793
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-object/from16 v26, v0
 
-    const v27, 0x7f0901c5
+    const v27, 0x7f0901c8
 
     const/16 v28, 0x0
 
@@ -2136,7 +2136,7 @@
 
     const/high16 v5, 0x40000000    # 2.0f
 
-    .line 817
+    .line 819
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->SCREEN_WIDTH:I
 
     int-to-float v1, v1
@@ -2157,7 +2157,7 @@
 
     sub-float v0, v1, v2
 
-    .line 819
+    .line 821
     .local v0, "ratio_margin":F
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -2187,7 +2187,7 @@
 
     invoke-virtual {v1, v6, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 821
+    .line 823
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mProgressBarWidth:I
@@ -2218,7 +2218,7 @@
 
     invoke-virtual {v1, v8, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 823
+    .line 825
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureGuideText:Lcom/samsung/android/glview/GLText;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_POS_X:F
@@ -2229,7 +2229,7 @@
 
     invoke-virtual {v1, v6, v2, v3}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 824
+    .line 826
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureGuideText:Lcom/samsung/android/glview/GLText;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_WIDTH:F
@@ -2248,17 +2248,17 @@
 
     invoke-virtual {v1, v8, v2, v3}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 826
+    .line 828
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v7}, Lcom/samsung/android/glview/GLViewGroup;->updateLayout(Z)V
 
-    .line 827
+    .line 829
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v1, v7}, Lcom/samsung/android/glview/GLText;->updateLayout(Z)V
 
-    .line 828
+    .line 830
     return-void
 .end method
 
@@ -3304,13 +3304,15 @@
 .end method
 
 .method public onSelectiveFocusComplete(I)V
-    .locals 7
+    .locals 8
     .param p1, "result"    # I
 
     .prologue
-    const/16 v6, 0x1a
+    const/16 v7, 0x1a
 
-    const/4 v5, 0x3
+    const/4 v6, 0x3
+
+    const/4 v5, 0x1
 
     const/4 v4, 0x0
 
@@ -3358,7 +3360,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 471
+    .line 473
     :cond_0
     :goto_0
     return-void
@@ -3382,7 +3384,7 @@
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v1, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isSystemKeyEventRequested(I)Z
+    invoke-interface {v1, v7}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isSystemKeyEventRequested(I)Z
 
     move-result v1
 
@@ -3391,13 +3393,13 @@
     .line 400
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v1, v6, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
+    invoke-interface {v1, v7, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
 
     .line 402
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v1, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isSystemKeyEventRequested(I)Z
+    invoke-interface {v1, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isSystemKeyEventRequested(I)Z
 
     move-result v1
 
@@ -3406,7 +3408,7 @@
     .line 403
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v1, v5, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
+    invoke-interface {v1, v6, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
 
     .line 406
     :cond_4
@@ -3454,24 +3456,39 @@
     :cond_5
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->reset()V
 
+    .line 457
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getReview()I
+
+    move-result v1
+
+    if-eq v1, v5, :cond_6
+
     .line 458
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleSendCompletedMessageToBixby()V
+
+    .line 460
+    :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->updateRemainCounter()V
 
-    .line 459
+    .line 461
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 461
+    .line 463
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->isContinuousAutoFocusSupported()Z
 
     move-result v1
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_7
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mAeAfManager:Lcom/sec/android/app/camera/interfaces/AeAfManager;
 
@@ -3479,14 +3496,14 @@
 
     move-result v1
 
-    if-nez v1, :cond_6
+    if-nez v1, :cond_7
 
-    .line 462
+    .line 464
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->resetOverriddenFocusMode()V
 
-    .line 463
+    .line 465
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -3497,23 +3514,23 @@
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/Engine;->setFocusMode(I)V
 
-    .line 465
-    :cond_6
+    .line 467
+    :cond_7
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mAeAfManager:Lcom/sec/android/app/camera/interfaces/AeAfManager;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/AeAfManager;->resetTouchAfIfNeeded()V
 
-    .line 466
+    .line 468
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->captureCompleted()V
 
-    .line 467
+    .line 469
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->startFaceDetection()V
 
-    .line 468
+    .line 470
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -3522,10 +3539,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 469
-    const/4 v1, 0x1
-
-    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->setGestureControl(Z)V
+    .line 471
+    invoke-direct {p0, v5}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->setGestureControl(Z)V
 
     goto/16 :goto_0
 
@@ -3559,7 +3574,7 @@
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    goto :goto_1
+    goto/16 :goto_1
 
     .line 431
     :pswitch_2
@@ -3611,7 +3626,7 @@
     .param p2, "max"    # I
 
     .prologue
-    .line 475
+    .line 477
     const-string v0, "SelectiveFocus"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3634,7 +3649,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 477
+    .line 479
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -3647,58 +3662,58 @@
 
     if-nez v0, :cond_1
 
-    .line 478
+    .line 480
     const-string v0, "SelectiveFocus"
 
     const-string v1, "ignore front camera SelectiveFocus progress"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 479
+    .line 481
     if-nez p1, :cond_0
 
-    .line 480
+    .line 482
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->hideCaptureLayout()V
 
-    .line 494
+    .line 496
     :cond_0
     :goto_0
     return-void
 
-    .line 485
+    .line 487
     :cond_1
     if-nez p1, :cond_2
 
-    .line 486
+    .line 488
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->hideCaptureLayout()V
 
-    .line 487
+    .line 489
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 488
+    .line 490
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 489
+    .line 491
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->startShutterProgressWheel()V
 
-    .line 490
+    .line 492
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mIsImageProgressing:Z
 
     goto :goto_0
 
-    .line 492
+    .line 494
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -3711,7 +3726,7 @@
     .locals 1
 
     .prologue
-    .line 498
+    .line 500
     const/4 v0, 0x0
 
     return v0
@@ -3721,7 +3736,7 @@
     .locals 2
 
     .prologue
-    .line 503
+    .line 505
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->isRecorderStarting()Z
@@ -3730,7 +3745,7 @@
 
     if-nez v0, :cond_2
 
-    .line 506
+    .line 508
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mAeAfManager:Lcom/sec/android/app/camera/interfaces/AeAfManager;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/AeAfManager;->isTouchAfActive()Z
@@ -3739,7 +3754,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 507
+    .line 509
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->isAutoFocusing()Z
@@ -3758,21 +3773,21 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 508
+    .line 510
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mAeAfManager:Lcom/sec/android/app/camera/interfaces/AeAfManager;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/AeAfManager;->restartTouchAF()V
 
-    .line 515
+    .line 517
     :cond_0
     :goto_0
     const/4 v0, 0x1
 
-    .line 517
+    .line 519
     :goto_1
     return v0
 
-    .line 511
+    .line 513
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -3782,12 +3797,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 512
+    .line 514
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->startAutoFocus()V
 
     goto :goto_0
 
-    .line 517
+    .line 519
     :cond_2
     const/4 v0, 0x0
 
@@ -3801,7 +3816,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 522
+    .line 524
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLViewGroup;->getVisibility()I
@@ -3810,11 +3825,11 @@
 
     if-nez v1, :cond_0
 
-    .line 546
+    .line 548
     :goto_0
     return v0
 
-    .line 525
+    .line 527
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->isCapturing()Z
 
@@ -3822,7 +3837,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 526
+    .line 528
     const-string v1, "SelectiveFocus"
 
     const-string v2, "Return, isCapturing"
@@ -3831,7 +3846,7 @@
 
     goto :goto_0
 
-    .line 530
+    .line 532
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -3845,36 +3860,36 @@
 
     if-eqz v0, :cond_3
 
-    .line 531
+    .line 533
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->setOutputFile()V
 
-    .line 534
+    .line 536
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mSelectiveFocusToast:Landroid/widget/Toast;
 
     if-eqz v0, :cond_4
 
-    .line 535
+    .line 537
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mSelectiveFocusToast:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
-    .line 536
+    .line 538
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mSelectiveFocusToast:Landroid/widget/Toast;
 
-    .line 539
+    .line 541
     :cond_4
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCaptureMethod:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
-    .line 540
+    .line 542
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->handleSingleShutterReleased(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)V
 
-    .line 541
+    .line 543
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isBackCamera()Z
@@ -3883,7 +3898,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 542
+    .line 544
     const-string v0, "1008"
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -3904,13 +3919,13 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 546
+    .line 548
     :goto_1
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 544
+    .line 546
     :cond_5
     const-string v0, "4002"
 
@@ -3940,14 +3955,14 @@
     .param p1, "event"    # I
 
     .prologue
-    .line 551
+    .line 553
     packed-switch p1, :pswitch_data_0
 
-    .line 559
+    .line 561
     :goto_0
     return-void
 
-    .line 554
+    .line 556
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -3957,7 +3972,7 @@
 
     goto :goto_0
 
-    .line 551
+    .line 553
     :pswitch_data_0
     .packed-switch 0x2
         :pswitch_0
@@ -3971,7 +3986,7 @@
     .prologue
     const/16 v3, 0x3d
 
-    .line 563
+    .line 565
     const-string v0, "SelectiveFocus"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3994,7 +4009,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 564
+    .line 566
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->isActive(I)Z
@@ -4003,7 +4018,7 @@
 
     if-nez v0, :cond_0
 
-    .line 565
+    .line 567
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->showMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
@@ -4014,22 +4029,22 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    .line 567
+    .line 569
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
     if-eqz v0, :cond_1
 
-    .line 568
+    .line 570
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->updateTime(I)V
 
-    .line 570
+    .line 572
     :cond_1
     if-nez p1, :cond_2
 
-    .line 571
+    .line 573
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isCapturing()Z
@@ -4038,26 +4053,26 @@
 
     if-eqz v0, :cond_3
 
-    .line 572
+    .line 574
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 573
+    .line 575
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0xc0
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 579
+    .line 581
     :cond_2
     :goto_0
     return-void
 
-    .line 575
+    .line 577
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -4065,7 +4080,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 576
+    .line 578
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x80

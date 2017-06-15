@@ -95,7 +95,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->SCREEN_WIDTH:I
 
     .line 40
-    const v0, 0x7f0a0258
+    const v0, 0x7f0a025b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -106,7 +106,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_BG_WIDTH:I
 
     .line 41
-    const v0, 0x7f0a0257
+    const v0, 0x7f0a025a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -117,7 +117,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_BG_HEIGHT:I
 
     .line 42
-    const v0, 0x7f0a025b
+    const v0, 0x7f0a025e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -128,7 +128,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_Y:I
 
     .line 43
-    const v0, 0x7f0a025a
+    const v0, 0x7f0a025d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -139,7 +139,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_MIC_Y:I
 
     .line 44
-    const v0, 0x7f0a0256
+    const v0, 0x7f0a0259
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -150,7 +150,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_BAND_WIDTH:I
 
     .line 45
-    const v0, 0x7f0a0259
+    const v0, 0x7f0a025c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -161,7 +161,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_MIC_WIDTH:I
 
     .line 46
-    const v0, 0x7f0a0255
+    const v0, 0x7f0a0258
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -172,7 +172,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_BAND_SPACING:I
 
     .line 47
-    const v0, 0x7f0a0254
+    const v0, 0x7f0a0257
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -217,7 +217,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_BAND_POS_X_START:I
 
     .line 51
-    const v0, 0x7f0a00a1
+    const v0, 0x7f0a00a3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -228,7 +228,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_LAND_TOP_MARGIN:I
 
     .line 52
-    const v0, 0x7f0a00a0
+    const v0, 0x7f0a00a2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -239,7 +239,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_LAND_BOTTOM_MARGIN:I
 
     .line 53
-    const v0, 0x7f0a00a2
+    const v0, 0x7f0a00a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -250,7 +250,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->INDICATOR_EQ_BAR_PORT_TOP_MARGIN:I
 
     .line 54
-    const v0, 0x7f0a02b5
+    const v0, 0x7f0a02b9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

@@ -26,12 +26,12 @@
     .param p1, "this$0"    # Lcom/samsung/android/glview/GLContext;
 
     .prologue
-    .line 387
+    .line 388
     iput-object p1, p0, Lcom/samsung/android/glview/GLContext$7;->this$0:Lcom/samsung/android/glview/GLContext;
 
     invoke-direct {p0}, Landroid/view/View$AccessibilityDelegate;-><init>()V
 
-    .line 388
+    .line 389
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
@@ -46,12 +46,12 @@
     .param p1, "host"    # Landroid/view/View;
 
     .prologue
-    .line 392
+    .line 393
     iget-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
 
     if-nez v0, :cond_0
 
-    .line 393
+    .line 394
     new-instance v0, Lcom/samsung/android/glview/GLAccessibilityNodeProvider;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLContext$7;->this$0:Lcom/samsung/android/glview/GLContext;
@@ -67,7 +67,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
 
-    .line 395
+    .line 396
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLContext$7;->mNodeProvider:Landroid/view/accessibility/AccessibilityNodeProvider;
 

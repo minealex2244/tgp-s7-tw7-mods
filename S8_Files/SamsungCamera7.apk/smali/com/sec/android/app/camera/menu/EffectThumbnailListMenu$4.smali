@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     .prologue
-    .line 1033
+    .line 1034
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$4;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 5
 
     .prologue
-    .line 1036
+    .line 1037
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$4;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     iget-object v3, v3, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -60,7 +60,7 @@
 
     add-int/lit8 v0, v3, -0x1
 
-    .line 1037
+    .line 1038
     .local v0, "addedEffectId":I
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$4;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
@@ -74,7 +74,7 @@
 
     move-result-object v1
 
-    .line 1038
+    .line 1039
     .local v1, "libName":Ljava/lang/String;
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$4;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
@@ -88,7 +88,7 @@
 
     move-result-object v2
 
-    .line 1039
+    .line 1040
     .local v2, "pkgName":Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/widget/gl/GLSurfaceTexture;->getSecEffectThumbnailProcessor()Lcom/samsung/android/secimaging/SecEffectThumbnailProcessor;
 
@@ -96,6 +96,6 @@
 
     invoke-virtual {v3, v0, v1, v2}, Lcom/samsung/android/secimaging/SecEffectThumbnailProcessor;->initExternalEffect(ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 1040
+    .line 1041
     return-void
 .end method

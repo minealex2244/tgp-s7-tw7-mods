@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 9229
+    .line 9390
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,12 +53,12 @@
     .prologue
     const/4 v6, 0x6
 
-    .line 9236
+    .line 9397
     sget-boolean v3, Lcom/sec/android/app/camera/util/Util;->DEBUG:Z
 
     if-eqz v3, :cond_1
 
-    .line 9237
+    .line 9398
     const-string v3, "CommonEngine"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -87,12 +87,12 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9242
+    .line 9403
     :goto_0
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1000(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
 
     move-result-object v3
 
@@ -104,17 +104,17 @@
 
     if-ne v3, v4, :cond_2
 
-    .line 9245
+    .line 9406
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->closeCamera()V
 
-    .line 9297
+    .line 9458
     :cond_0
     :goto_1
     return-void
 
-    .line 9239
+    .line 9400
     :cond_1
     const-string v3, "CommonEngine"
 
@@ -146,12 +146,12 @@
 
     goto :goto_0
 
-    .line 9249
+    .line 9410
     :cond_2
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
 
@@ -160,7 +160,7 @@
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
 
@@ -174,22 +174,22 @@
 
     if-nez v3, :cond_0
 
-    .line 9252
+    .line 9413
     const/4 v2, 0x0
 
-    .line 9253
+    .line 9414
     .local v2, "finishOnError":Z
     const/4 v1, 0x0
 
-    .line 9254
+    .line 9415
     .local v1, "errorCode":I
     sparse-switch p1, :sswitch_data_0
 
-    .line 9284
+    .line 9445
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
 
@@ -197,35 +197,35 @@
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 9285
+    .line 9446
     const/4 v1, -0x5
 
-    .line 9286
+    .line 9447
     const/4 v2, 0x1
 
-    .line 9290
+    .line 9451
     :cond_3
     :goto_2
     if-eqz v2, :cond_0
 
-    .line 9291
+    .line 9452
     new-instance v0, Landroid/content/Intent;
 
     const-string v3, "camera.action.ACTION_ERROR_FINISH_CAMERA"
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 9292
+    .line 9453
     .local v0, "actionError":Landroid/content/Intent;
     const-string v3, "error_code"
 
     invoke-virtual {v0, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 9293
+    .line 9454
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
 
@@ -235,7 +235,7 @@
 
     invoke-static {v3, v0}, Lcom/sec/android/app/camera/provider/CameraLocalBroadcastManager;->send(Landroid/content/Context;Landroid/content/Intent;)V
 
-    .line 9295
+    .line 9456
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     sget-object v4, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->SHUTDOWN:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
@@ -244,7 +244,7 @@
 
     goto :goto_1
 
-    .line 9256
+    .line 9417
     .end local v0    # "actionError":Landroid/content/Intent;
     :sswitch_0
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
@@ -257,28 +257,28 @@
 
     if-eqz v3, :cond_3
 
-    .line 9257
+    .line 9418
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v3, v3, Lcom/sec/android/app/camera/engine/CommonEngine;->mRequestQueue:Lcom/sec/android/app/camera/engine/CeRequestQueue;
 
     invoke-virtual {v3, v6}, Lcom/sec/android/app/camera/engine/CeRequestQueue;->removeRequest(I)V
 
-    .line 9258
+    .line 9419
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSingleCaptureEventListener:Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$3900(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4000(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
 
     move-result-object v3
 
     if-eqz v3, :cond_3
 
-    .line 9259
+    .line 9420
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSingleCaptureEventListener:Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$3900(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4000(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
 
     move-result-object v3
 
@@ -286,7 +286,7 @@
 
     goto :goto_2
 
-    .line 9264
+    .line 9425
     :sswitch_1
     const-string v3, "CommonEngine"
 
@@ -296,7 +296,7 @@
 
     goto :goto_2
 
-    .line 9267
+    .line 9428
     :sswitch_2
     const-string v3, "CommonEngine"
 
@@ -304,11 +304,11 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9268
+    .line 9429
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
 
@@ -316,21 +316,21 @@
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 9269
+    .line 9430
     const/16 v1, -0xb
 
-    .line 9270
+    .line 9431
     const/4 v2, 0x1
 
-    .line 9271
+    .line 9432
     goto :goto_2
 
-    .line 9273
+    .line 9434
     :sswitch_3
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
 
@@ -338,16 +338,16 @@
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 9274
+    .line 9435
     const/4 v1, -0x8
 
-    .line 9275
+    .line 9436
     const/4 v2, 0x1
 
-    .line 9276
+    .line 9437
     goto :goto_2
 
-    .line 9278
+    .line 9439
     :sswitch_4
     const-string v3, "CommonEngine"
 
@@ -355,11 +355,11 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9279
+    .line 9440
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v3
 
@@ -367,16 +367,16 @@
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 9280
+    .line 9441
     const/16 v1, -0xe
 
-    .line 9281
+    .line 9442
     const/4 v2, 0x1
 
-    .line 9282
+    .line 9443
     goto/16 :goto_2
 
-    .line 9254
+    .line 9415
     nop
 
     :sswitch_data_0

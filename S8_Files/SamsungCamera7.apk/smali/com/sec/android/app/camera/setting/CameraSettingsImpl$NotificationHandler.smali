@@ -33,17 +33,17 @@
     .param p1, "settings"    # Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     .prologue
-    .line 5073
+    .line 5100
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 5074
+    .line 5101
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl$NotificationHandler;->mSettings:Ljava/lang/ref/WeakReference;
 
-    .line 5075
+    .line 5102
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 5079
+    .line 5106
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl$NotificationHandler;->mSettings:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -63,22 +63,22 @@
 
     check-cast v0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
-    .line 5080
+    .line 5107
     .local v0, "settings":Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
     if-nez v0, :cond_1
 
-    .line 5086
+    .line 5113
     :cond_0
     :goto_0
     return-void
 
-    .line 5083
+    .line 5110
     :cond_1
     iget v1, p1, Landroid/os/Message;->what:I
 
     if-nez v1, :cond_0
 
-    .line 5084
+    .line 5111
     iget v1, p1, Landroid/os/Message;->arg1:I
 
     iget v2, p1, Landroid/os/Message;->arg2:I

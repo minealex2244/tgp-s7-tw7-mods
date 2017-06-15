@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     .prologue
-    .line 354
+    .line 353
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 357
+    .line 356
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
@@ -65,7 +65,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 358
+    .line 357
     :cond_0
     const-string v0, "VirtualShot"
 
@@ -96,11 +96,11 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 375
+    .line 374
     :goto_0
     return v3
 
-    .line 362
+    .line 361
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
@@ -113,20 +113,20 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 363
+    .line 362
     const-string v0, "VirtualShot"
 
     const-string v1, "onClick : stop Virtual shot"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 364
+    .line 363
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopVirtualShot()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$800(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)V
 
-    .line 370
+    .line 369
     :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
@@ -141,14 +141,14 @@
 
     if-nez v0, :cond_3
 
-    .line 371
+    .line 370
     const-string v0, "2602"
 
     invoke-static {v0}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 366
+    .line 365
     :cond_2
     const-string v0, "VirtualShot"
 
@@ -156,7 +156,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 367
+    .line 366
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$2;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
@@ -164,7 +164,7 @@
 
     goto :goto_1
 
-    .line 373
+    .line 372
     :cond_3
     const-string v0, "4221"
 

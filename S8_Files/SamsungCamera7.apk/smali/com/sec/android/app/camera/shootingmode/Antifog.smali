@@ -54,7 +54,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 50
-    const v0, 0x7f0a025f
+    const v0, 0x7f0a0262
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -86,7 +86,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Antifog;->BEAUTY_MENU_BUTTON_POS_X:I
 
     .line 52
-    const v0, 0x7f0a025e
+    const v0, 0x7f0a0261
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

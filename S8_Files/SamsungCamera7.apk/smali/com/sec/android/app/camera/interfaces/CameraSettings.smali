@@ -1006,6 +1006,8 @@
 
 .field public static final SECURE_CAMERA_ON:I = 0x1
 
+.field public static final SEMCAMERA_AUTO_LLS_LITE:I = 0x16
+
 .field public static final SEMCAMERA_SINGLE_EFFECT:I = 0x47
 
 .field public static final SEMCAMERA_SUPER_RESOLUTION_ZOOM:I = 0x41
@@ -1332,7 +1334,7 @@
 
     const/4 v2, 0x0
 
-    .line 532
+    .line 533
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_PREVIEW_FIT_TO_FULL_SCREEN:Z
 
     if-eqz v0, :cond_0
@@ -1342,7 +1344,7 @@
     :goto_0
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_VIEW_MODE:I
 
-    .line 897
+    .line 898
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SHOOTINGMODE_SELFIE:Z
 
     if-eqz v0, :cond_1
@@ -1352,7 +1354,7 @@
     :goto_1
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_FRONT_SHOOTINGMODE:I
 
-    .line 908
+    .line 909
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_DEFAULT_SELF_FLIP:Z
 
     if-eqz v0, :cond_3
@@ -1362,7 +1364,7 @@
     :goto_2
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_SELF_FLIP:I
 
-    .line 920
+    .line 921
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_REAR_RT_HDR:Z
 
     if-eqz v0, :cond_4
@@ -1372,7 +1374,7 @@
     :goto_3
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_REAR_CAMERA_HDR:I
 
-    .line 921
+    .line 922
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_FRONT_RT_HDR:Z
 
     if-eqz v0, :cond_5
@@ -1382,7 +1384,7 @@
     :goto_4
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_FRONT_CAMERA_HDR:I
 
-    .line 929
+    .line 930
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->ACTIVE_KEY:Z
 
     if-eqz v0, :cond_6
@@ -1392,7 +1394,7 @@
     :goto_5
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_VOLUME_KEY_AS:I
 
-    .line 946
+    .line 947
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_MULTI_AF:Z
 
     if-eqz v0, :cond_7
@@ -1405,10 +1407,10 @@
     :cond_0
     move v0, v2
 
-    .line 532
+    .line 533
     goto :goto_0
 
-    .line 897
+    .line 898
     :cond_1
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SHOOTINGMODE_BEAUTY_SHOT:Z
 
@@ -1426,31 +1428,31 @@
     :cond_3
     move v0, v2
 
-    .line 908
+    .line 909
     goto :goto_2
 
     :cond_4
     move v0, v2
 
-    .line 920
+    .line 921
     goto :goto_3
 
     :cond_5
     move v0, v2
 
-    .line 921
+    .line 922
     goto :goto_4
 
     :cond_6
     move v0, v1
 
-    .line 929
+    .line 930
     goto :goto_5
 
     :cond_7
     move v1, v2
 
-    .line 946
+    .line 947
     goto :goto_6
 .end method
 

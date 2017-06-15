@@ -30,18 +30,18 @@
     .param p3, "attrValue"    # Ljava/lang/String;
 
     .prologue
-    .line 551
+    .line 539
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 552
+    .line 540
     iput-object p1, p0, Lcom/sec/android/app/camera/executor/NlgIdMap$ScreenParam;->paramName:Ljava/lang/String;
 
-    .line 553
+    .line 541
     iput-object p2, p0, Lcom/sec/android/app/camera/executor/NlgIdMap$ScreenParam;->attrName:Ljava/lang/String;
 
-    .line 554
+    .line 542
     iput-object p3, p0, Lcom/sec/android/app/camera/executor/NlgIdMap$ScreenParam;->attrValue:Ljava/lang/String;
 
-    .line 555
+    .line 543
     return-void
 .end method

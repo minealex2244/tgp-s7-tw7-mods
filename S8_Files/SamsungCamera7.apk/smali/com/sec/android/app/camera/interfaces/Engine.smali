@@ -88,9 +88,17 @@
 
 .field public static final ERROR_UNKNOWN_EXCEPTION:I = -0xa
 
-.field public static final MULTIFRAME_END:I = 0x0
+.field public static final MULTIFRAME_MODE_AUTO_HDR:I = 0x5
 
-.field public static final MULTIFRAME_START:I = 0x1
+.field public static final MULTIFRAME_MODE_AUTO_LLS:I = 0x4
+
+.field public static final MULTIFRAME_MODE_NIGHT:I = 0x1
+
+.field public static final MULTIFRAME_MODE_NORMAL:I = 0x0
+
+.field public static final MULTIFRAME_MODE_RICHTONE:I = 0x2
+
+.field public static final MULTIFRAME_MODE_SRZOOM:I = 0x3
 
 .field public static final PREVIEW_CALLBACK_FORMAT_NV21:I = 0x0
 
@@ -362,6 +370,9 @@
 .end method
 
 .method public abstract isObjectTrackingAFStarted()Z
+.end method
+
+.method public abstract isPostProcessedThumbnailPictureCallbackAvailable()Z
 .end method
 
 .method public abstract isPreviewStarted()Z

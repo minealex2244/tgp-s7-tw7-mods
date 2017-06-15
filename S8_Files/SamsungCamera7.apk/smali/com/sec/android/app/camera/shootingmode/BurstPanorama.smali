@@ -321,7 +321,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->SCREEN_HEIGHT:I
 
     .line 107
-    const v0, 0x7f0a00ae
+    const v0, 0x7f0a00b1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -343,7 +343,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->INIT_LANDSCAPE_X:F
 
     .line 109
-    const v0, 0x7f0a00af
+    const v0, 0x7f0a00b2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -361,7 +361,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
     .line 111
-    const v0, 0x7f0a00b0
+    const v0, 0x7f0a00b3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -392,7 +392,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->LIVEPREVIEW_PORTRAIT_Y:F
 
     .line 115
-    const v0, 0x7f0a00ad
+    const v0, 0x7f0a00b0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -401,7 +401,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->GUIDE_HELP_TEXT_WIDTH:F
 
     .line 116
-    const v0, 0x7f0a00ab
+    const v0, 0x7f0a00ae
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -434,7 +434,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->GUIDE_HELP_TEXT_POS_Y:F
 
     .line 119
-    const v0, 0x7f0a02a9
+    const v0, 0x7f0a02ad
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -443,7 +443,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->GUIDE_HELP_TEXT_SIZE:F
 
     .line 120
-    const v0, 0x7f0a00ac
+    const v0, 0x7f0a00af
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -452,7 +452,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->GUIDE_TEXT_MARGIN:F
 
     .line 122
-    const v0, 0x7f0a00b2
+    const v0, 0x7f0a00b5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -461,7 +461,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
 
     .line 124
-    const v0, 0x7f0a00b5
+    const v0, 0x7f0a00b8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -470,7 +470,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->WARNING_ARROW_SWING_DISTANCE:F
 
     .line 125
-    const v0, 0x7f0a00b4
+    const v0, 0x7f0a00b7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -479,7 +479,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->WARNING_ARROW_OFFSET:F
 
     .line 127
-    const v0, 0x7f0a00aa
+    const v0, 0x7f0a00ad
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -488,7 +488,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->TRI_WIDTH:F
 
     .line 128
-    const v0, 0x7f0a00a9
+    const v0, 0x7f0a00ac
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -506,7 +506,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->BASEMENU_GROUP_WIDTH:F
 
     .line 132
-    const v0, 0x7f0a0052
+    const v0, 0x7f0a0054
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -515,7 +515,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
     .line 133
-    const v0, 0x7f0a0372
+    const v0, 0x7f0a0375
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -524,7 +524,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->PAGE_NAVIGATOR_GROUP_HEIGHT:F
 
     .line 136
-    const v0, 0x7f0a02a0
+    const v0, 0x7f0a02a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -584,7 +584,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->STOP_BUTTON_POS_Y:I
 
     .line 140
-    const v0, 0x7f0a029f
+    const v0, 0x7f0a02a3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -2053,7 +2053,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0901e1
+    const v7, 0x7f0901e4
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4003,7 +4003,7 @@
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mInitLandscapeSingleX:F
 
     .line 1272
-    const v3, 0x7f0a00b1
+    const v3, 0x7f0a00b4
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4823,7 +4823,7 @@
     :pswitch_1
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mPreviewThumbnailWidth:F
 
-    const v11, 0x7f0a00b3
+    const v11, 0x7f0a00b6
 
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4882,7 +4882,7 @@
 
     sub-float/2addr v0, v11
 
-    const v11, 0x7f0a00b3
+    const v11, 0x7f0a00b6
 
     .line 1405
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -4957,7 +4957,7 @@
 
     .line 1414
     :cond_13
-    const v0, 0x7f0a00b3
+    const v0, 0x7f0a00b6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -5062,7 +5062,7 @@
 
     sub-float/2addr v0, v4
 
-    const v11, 0x7f0a00b3
+    const v11, 0x7f0a00b6
 
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -10054,7 +10054,7 @@
     const/high16 v6, 0x40000000    # 2.0f
 
     .line 2139
-    const v1, 0x7f0a00b3
+    const v1, 0x7f0a00b6
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

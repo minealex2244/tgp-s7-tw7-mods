@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     .prologue
-    .line 132
+    .line 134
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 2
 
     .prologue
-    .line 135
+    .line 137
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->hideShapeCorrectionHelpText()V
 
-    .line 136
+    .line 138
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     const/4 v1, 0x1
@@ -54,6 +54,6 @@
     # setter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mIsShapeCorrectionTextHidedByTimeOut:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$002(Lcom/sec/android/app/camera/menu/BeautyListMenu;Z)Z
 
-    .line 137
+    .line 139
     return-void
 .end method

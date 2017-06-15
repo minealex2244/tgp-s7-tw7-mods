@@ -134,7 +134,7 @@
     invoke-direct/range {v1 .. v9}, Lcom/sec/android/app/camera/menu/AbstractMenu;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;Lcom/sec/android/app/camera/interfaces/Engine;Lcom/sec/android/app/camera/menu/MenuManagerImpl;ILcom/samsung/android/glview/GLViewGroup;Lcom/sec/android/app/camera/menu/MenuResourceDepot;IZ)V
 
     .line 50
-    const v1, 0x7f0a010f
+    const v1, 0x7f0a0112
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -145,7 +145,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/DualEffectListMenu;->EFFECT_MENU_POS_X:I
 
     .line 51
-    const v1, 0x7f0a0110
+    const v1, 0x7f0a0113
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -156,7 +156,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/DualEffectListMenu;->EFFECT_MENU_WIDTH:I
 
     .line 52
-    const v1, 0x7f0a010c
+    const v1, 0x7f0a010f
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -167,7 +167,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/DualEffectListMenu;->EFFECT_MENU_HEIGHT:I
 
     .line 53
-    const v1, 0x7f0a010e
+    const v1, 0x7f0a0111
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -178,7 +178,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/DualEffectListMenu;->EFFECT_ITEM_WIDTH:I
 
     .line 54
-    const v1, 0x7f0a010d
+    const v1, 0x7f0a0110
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

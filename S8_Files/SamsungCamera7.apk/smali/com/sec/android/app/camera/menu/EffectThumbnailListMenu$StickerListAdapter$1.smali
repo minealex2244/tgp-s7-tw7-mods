@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;
 
     .prologue
-    .line 2379
+    .line 2385
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 2382
+    .line 2388
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
@@ -58,7 +58,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2383
+    .line 2389
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
@@ -73,7 +73,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CommandInterface;->onStickerMenuSelect(I)Z
 
-    .line 2385
+    .line 2391
     :cond_0
     const/4 v0, 0x1
 

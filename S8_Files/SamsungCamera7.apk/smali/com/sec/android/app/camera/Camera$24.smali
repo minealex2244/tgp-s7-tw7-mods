@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 5533
+    .line 5549
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$24;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,9 +41,9 @@
     .locals 0
 
     .prologue
-    .line 5536
+    .line 5552
     invoke-static {}, Lcom/sec/android/app/camera/widget/gl/GLSurfaceTexture;->releaseSecEffectThumbnailProcessor()V
 
-    .line 5537
+    .line 5553
     return-void
 .end method

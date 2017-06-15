@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 2190
+    .line 2195
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;
 
     .prologue
-    .line 2190
+    .line 2195
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;-><init>(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;)V
 
     return-void
@@ -52,7 +52,7 @@
     .locals 1
 
     .prologue
-    .line 2193
+    .line 2198
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryResourceData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
@@ -79,10 +79,10 @@
 
     const/4 v2, 0x0
 
-    .line 2198
+    .line 2203
     if-nez p2, :cond_3
 
-    .line 2199
+    .line 2204
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryResourceData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
@@ -94,7 +94,7 @@
 
     move-result-object v6
 
-    .line 2200
+    .line 2205
     .local v6, "itemData":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
@@ -113,11 +113,11 @@
 
     check-cast v0, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
 
-    .line 2201
+    .line 2206
     .local v0, "categoryItem":Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
     if-nez v0, :cond_1
 
-    .line 2202
+    .line 2207
     new-instance v0, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
 
     .end local v0    # "categoryItem":Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
@@ -149,7 +149,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
-    .line 2203
+    .line 2208
     .restart local v0    # "categoryItem":Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
     invoke-virtual {v6}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->getCommandId()I
 
@@ -157,7 +157,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;->setTag(I)V
 
-    .line 2204
+    .line 2209
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryTabList:Lcom/samsung/android/glview/GLGridList;
@@ -167,21 +167,21 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 2205
+    .line 2210
     new-instance v1, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$1;
 
     invoke-direct {v1, p0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$1;-><init>(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;->setCategoryItemSelectListener(Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem$CategoryItemSelectListener;)V
 
-    .line 2217
+    .line 2222
     new-instance v1, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$2;
 
     invoke-direct {v1, p0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$2;-><init>(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;)V
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;->setDeleteClickListener(Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem$DeleteClickListener;)V
 
-    .line 2227
+    .line 2232
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCurrentMode:I
@@ -191,7 +191,7 @@
 
     if-ne v1, v9, :cond_0
 
-    .line 2228
+    .line 2233
     invoke-virtual {v6}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->getCommandId()I
 
     move-result v1
@@ -209,17 +209,17 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 2229
+    .line 2234
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;->getButton()Lcom/samsung/android/glview/GLView;
 
     move-result-object v1
 
     invoke-virtual {v1, v8}, Lcom/samsung/android/glview/GLView;->setClickable(Z)V
 
-    .line 2230
+    .line 2235
     invoke-virtual {v0, v8}, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;->setDeleteButtonVisibility(I)V
 
-    .line 2235
+    .line 2240
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
@@ -235,14 +235,14 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 2239
+    .line 2244
     .end local v0    # "categoryItem":Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
     .end local v6    # "itemData":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     :cond_1
     :goto_1
     return-object v0
 
-    .line 2232
+    .line 2237
     .restart local v0    # "categoryItem":Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
     .restart local v6    # "itemData":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     :cond_2
@@ -255,7 +255,7 @@
     :cond_3
     move-object v0, p2
 
-    .line 2239
+    .line 2244
     goto :goto_1
 .end method
 
@@ -263,7 +263,7 @@
     .locals 1
 
     .prologue
-    .line 2244
+    .line 2249
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCategoryItemList:Landroid/util/SparseArray;
@@ -273,6 +273,6 @@
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
-    .line 2245
+    .line 2250
     return-void
 .end method

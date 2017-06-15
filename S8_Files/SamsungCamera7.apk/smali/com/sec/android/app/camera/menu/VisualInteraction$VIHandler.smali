@@ -34,17 +34,17 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 1643
+    .line 1650
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 1644
+    .line 1651
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$VIHandler;->mVisualInteraction:Ljava/lang/ref/WeakReference;
 
-    .line 1645
+    .line 1652
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 1649
+    .line 1656
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$VIHandler;->mVisualInteraction:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -64,22 +64,22 @@
 
     check-cast v0, Lcom/sec/android/app/camera/menu/VisualInteraction;
 
-    .line 1650
+    .line 1657
     .local v0, "visualInteraction":Lcom/sec/android/app/camera/menu/VisualInteraction;
     if-nez v0, :cond_0
 
-    .line 1651
+    .line 1658
     const-string v1, "Camera7VI"
 
     const-string v2, "handleMessage :: visualInteraction is not running, return."
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1655
+    .line 1662
     :goto_0
     return-void
 
-    .line 1654
+    .line 1661
     :cond_0
     # invokes: Lcom/sec/android/app/camera/menu/VisualInteraction;->handleMessage(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$2100(Lcom/sec/android/app/camera/menu/VisualInteraction;Landroid/os/Message;)V

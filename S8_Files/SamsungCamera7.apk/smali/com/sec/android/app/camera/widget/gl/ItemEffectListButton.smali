@@ -49,7 +49,7 @@
     invoke-direct {p0, v0, p2, p3}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 41
-    const v0, 0x7f0a027b
+    const v0, 0x7f0a027e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -60,7 +60,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->BUTTON_WIDTH:I
 
     .line 42
-    const v0, 0x7f0a027a
+    const v0, 0x7f0a027d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -71,7 +71,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectListButton;->BUTTON_HEIGHT:I
 
     .line 43
-    const v0, 0x7f0a0289
+    const v0, 0x7f0a028c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

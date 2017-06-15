@@ -56,6 +56,8 @@
 
 .field private final BEAUTY_SLIDER_WIDTH:F
 
+.field private final BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
 .field private final HELP_TEXT_BOTTOM_LANDSCAPE_MARGIN:F
 
 .field private final HELP_TEXT_BOTTOM_PORTRAIT_MARGIN:F
@@ -190,7 +192,7 @@
     .param p9, "slideDirection"    # I
 
     .prologue
-    .line 177
+    .line 179
     const/4 v10, 0x1
 
     move-object/from16 v2, p0
@@ -230,7 +232,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SCREEN_HEIGHT:I
 
     .line 74
-    const v2, 0x7f0a0271
+    const v2, 0x7f0a0274
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -263,7 +265,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_MENU_BOTTOM_MARGIN:F
 
     .line 77
-    const v2, 0x7f0a02b8
+    const v2, 0x7f0a02bc
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -274,7 +276,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_MENU_SIDE_MARGIN:F
 
     .line 78
-    const v2, 0x7f0a025d
+    const v2, 0x7f0a0260
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -285,7 +287,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_ITEM_WIDTH:F
 
     .line 79
-    const v2, 0x7f0a025c
+    const v2, 0x7f0a025f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -307,7 +309,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->INDICATOR_TEXT_STROKE_COLOR:I
 
     .line 82
-    const v2, 0x7f0a038a
+    const v2, 0x7f0a038d
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -318,7 +320,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_BOTTOM_LANDSCAPE_MARGIN:F
 
     .line 83
-    const v2, 0x7f0a038b
+    const v2, 0x7f0a038e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -329,7 +331,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_BOTTOM_PORTRAIT_MARGIN:F
 
     .line 84
-    const v2, 0x7f0a038c
+    const v2, 0x7f0a038f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -340,7 +342,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_BOTTOM_PORTRAIT_MARGIN_FOR_MOBILE_KEYBOARD:F
 
     .line 85
-    const v2, 0x7f0a01d3
+    const v2, 0x7f0a01d5
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -351,7 +353,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_WIDTH:F
 
     .line 86
-    const v2, 0x7f0a01d4
+    const v2, 0x7f0a01d6
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -362,7 +364,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_WIDTH_VERTICAL:F
 
     .line 87
-    const v2, 0x7f0a01d0
+    const v2, 0x7f0a01d2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -373,7 +375,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_HEIGHT:F
 
     .line 88
-    const v2, 0x7f0a01d1
+    const v2, 0x7f0a01d3
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -384,7 +386,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_HEIGHT_VERTICAL:F
 
     .line 89
-    const v2, 0x7f0a02ca
+    const v2, 0x7f0a02ce
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -424,7 +426,7 @@
     iput-boolean v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_SET_SHADOW:Z
 
     .line 93
-    const v2, 0x7f0a00a7
+    const v2, 0x7f0a00a9
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -435,7 +437,18 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_SPACE:F
 
     .line 94
-    const v2, 0x7f0a026c
+    const v2, 0x7f0a00aa
+
+    invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v2
+
+    move-object/from16 v0, p0
+
+    iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    .line 96
+    const v2, 0x7f0a026f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -445,8 +458,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_TEXT_WIDTH:F
 
-    .line 95
-    const v2, 0x7f0a02c2
+    .line 97
+    const v2, 0x7f0a02c6
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -456,8 +469,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_TEXT_MARGIN:F
 
-    .line 96
-    const v2, 0x7f0a0267
+    .line 98
+    const v2, 0x7f0a026a
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -467,8 +480,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
 
-    .line 97
-    const v2, 0x7f0a0270
+    .line 99
+    const v2, 0x7f0a0273
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -478,8 +491,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_WIDTH:F
 
-    .line 98
-    const v2, 0x7f0a0268
+    .line 100
+    const v2, 0x7f0a026b
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -489,8 +502,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_HEIGHT:F
 
-    .line 99
-    const v2, 0x7f0a026f
+    .line 101
+    const v2, 0x7f0a0272
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -500,8 +513,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDEBAR_TOUCH_AREA_WIDTH:F
 
-    .line 100
-    const v2, 0x7f0a026e
+    .line 102
+    const v2, 0x7f0a0271
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -511,8 +524,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDEBAR_TOUCH_AREA_HEIGHT:F
 
-    .line 101
-    const v2, 0x7f0a026b
+    .line 103
+    const v2, 0x7f0a026e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -522,7 +535,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_LEVEL_TEXT_SIZE:F
 
-    .line 102
+    .line 104
     const v2, 0x7f0d0011
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
@@ -533,7 +546,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_LEVEL_TEXT_COLOR:I
 
-    .line 103
+    .line 105
     const v2, 0x7f0b0025
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getInteger(I)I
@@ -544,7 +557,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_LEVEL_TEXT_STROKE_WIDTH:I
 
-    .line 104
+    .line 106
     const v2, 0x7f0d0010
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
@@ -555,8 +568,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_LEVEL_TEXT_STROKE_COLOR:I
 
-    .line 105
-    const v2, 0x7f0a02c1
+    .line 107
+    const v2, 0x7f0a02c5
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -566,8 +579,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_SIZE:F
 
-    .line 106
-    const v2, 0x7f0a02be
+    .line 108
+    const v2, 0x7f0a02c2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -577,8 +590,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_DIVIDER_SIZE:F
 
-    .line 107
-    const v2, 0x7f0a02c7
+    .line 109
+    const v2, 0x7f0a02cb
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -588,8 +601,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_IMAGE_MARGIN:F
 
-    .line 108
-    const v2, 0x7f0a02c8
+    .line 110
+    const v2, 0x7f0a02cc
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -599,8 +612,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
 
-    .line 109
-    const v2, 0x7f0a02c0
+    .line 111
+    const v2, 0x7f0a02c4
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -610,8 +623,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
 
-    .line 110
-    const v2, 0x7f0a02bf
+    .line 112
+    const v2, 0x7f0a02c3
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -621,8 +634,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_IMAGE_SIZE:F
 
-    .line 112
-    const v2, 0x7f0a01d2
+    .line 114
+    const v2, 0x7f0a01d4
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -632,7 +645,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->HELP_TEXT_MARGIN_FOR_MOBILE_KEYBOARD:F
 
-    .line 113
+    .line 115
     const v2, 0x7f0a0013
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -643,7 +656,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_MENU_BASEMENU_MARGIN_FOR_MOBILE_KEYBOARD:F
 
-    .line 114
+    .line 116
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SCREEN_WIDTH:I
@@ -656,7 +669,7 @@
 
     sub-float/2addr v2, v3
 
-    const v3, 0x7f0a02c9
+    const v3, 0x7f0a02cd
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -674,8 +687,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->MENU_POS_X_FOR_MOBILE_KEYBOARD:F
 
-    .line 115
-    const v2, 0x7f0a02c9
+    .line 117
+    const v2, 0x7f0a02cd
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -685,8 +698,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_ITEM_POS_X:F
 
-    .line 116
-    const v2, 0x7f0a02bb
+    .line 118
+    const v2, 0x7f0a02bf
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -696,8 +709,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_RIGHT_MARGIN:F
 
-    .line 117
-    const v2, 0x7f0a02ba
+    .line 119
+    const v2, 0x7f0a02be
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -709,8 +722,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_GROUP_WIDTH:I
 
-    .line 118
-    const v2, 0x7f0a02bc
+    .line 120
+    const v2, 0x7f0a02c0
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -722,8 +735,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_WIDTH:I
 
-    .line 119
-    const v2, 0x7f0a02bd
+    .line 121
+    const v2, 0x7f0a02c1
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -735,8 +748,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TEXT_SIZE:I
 
-    .line 120
-    const v2, 0x7f0a02c6
+    .line 122
+    const v2, 0x7f0a02ca
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -748,8 +761,8 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
 
-    .line 121
-    const v2, 0x7f0a02c3
+    .line 123
+    const v2, 0x7f0a02c7
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -761,7 +774,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_HEIGHT:I
 
-    .line 126
+    .line 128
     new-instance v2, Lcom/sec/android/app/camera/menu/BeautyListMenu$BeautySliderHandler;
 
     move-object/from16 v0, p0
@@ -772,14 +785,14 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderHandler:Lcom/sec/android/app/camera/menu/BeautyListMenu$BeautySliderHandler;
 
-    .line 127
+    .line 129
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mIsShapeCorrectionTextHidedByTimeOut:Z
 
-    .line 132
+    .line 134
     new-instance v2, Lcom/sec/android/app/camera/menu/BeautyListMenu$1;
 
     move-object/from16 v0, p0
@@ -790,35 +803,35 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mHideShapeCorrectionText:Ljava/lang/Runnable;
 
-    .line 146
+    .line 148
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 147
+    .line 149
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
 
-    .line 148
+    .line 150
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
 
-    .line 149
+    .line 151
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSmoothText:Lcom/samsung/android/glview/GLText;
 
-    .line 151
+    .line 153
     new-instance v2, Lcom/sec/android/app/camera/menu/BeautyListMenu$MenuAdapter;
 
     const/4 v3, 0x0
@@ -831,7 +844,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mAdapter:Lcom/samsung/android/glview/GLAbsList$Adapter;
 
-    .line 152
+    .line 154
     new-instance v2, Landroid/util/SparseArray;
 
     invoke-direct {v2}, Landroid/util/SparseArray;-><init>()V
@@ -840,7 +853,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mItemList:Landroid/util/SparseArray;
 
-    .line 154
+    .line 156
     new-instance v2, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;
 
     move-object/from16 v0, p0
@@ -851,14 +864,14 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 179
+    .line 181
     move-object/from16 v0, p6
 
     move-object/from16 v1, p0
 
     iput-object v0, v1, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
-    .line 180
+    .line 182
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -873,7 +886,7 @@
 
     if-nez v2, :cond_2
 
-    .line 181
+    .line 183
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-interface/range {p1 .. p1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
@@ -914,7 +927,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyMenuGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 186
+    .line 188
     :goto_1
     move-object/from16 v0, p0
 
@@ -932,7 +945,7 @@
 
     div-float v4, v2, v3
 
-    .line 187
+    .line 189
     .local v4, "helpTextX":F
     move-object/from16 v0, p0
 
@@ -952,7 +965,7 @@
 
     sub-float v5, v2, v3
 
-    .line 189
+    .line 191
     .local v5, "helpTextY":F
     new-instance v2, Lcom/samsung/android/glview/GLText;
 
@@ -994,7 +1007,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
-    .line 190
+    .line 192
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1005,7 +1018,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setShadowVisibility(Z)V
 
-    .line 191
+    .line 193
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1014,7 +1027,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 192
+    .line 194
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1023,7 +1036,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 193
+    .line 195
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1034,7 +1047,7 @@
 
     invoke-virtual {v2, v3, v6}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 194
+    .line 196
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1053,7 +1066,7 @@
 
     invoke-virtual {v2, v3, v6, v7}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 196
+    .line 198
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SCREEN_WIDTH:I
@@ -1080,7 +1093,7 @@
 
     sub-float v18, v2, v3
 
-    .line 198
+    .line 200
     .local v18, "helpTextMargin":F
     move-object/from16 v0, p0
 
@@ -1096,7 +1109,7 @@
 
     if-nez v2, :cond_3
 
-    .line 199
+    .line 201
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1107,7 +1120,7 @@
 
     invoke-virtual {v2, v3, v6, v5}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 200
+    .line 202
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1144,7 +1157,7 @@
 
     invoke-virtual {v2, v3, v6, v7}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 201
+    .line 203
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1173,7 +1186,7 @@
 
     invoke-virtual {v2, v3, v6, v7}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 202
+    .line 204
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1216,7 +1229,7 @@
 
     invoke-virtual {v2, v3, v6, v7}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 210
+    .line 212
     :goto_2
     move-object/from16 v0, p0
 
@@ -1226,7 +1239,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLText;->setOrientationChangeListener(Lcom/samsung/android/glview/GLView$OrientationChangeListener;)V
 
-    .line 211
+    .line 213
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1237,7 +1250,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setOrientation(I)V
 
-    .line 213
+    .line 215
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->getMenuViewGroup()Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v2
@@ -1246,21 +1259,21 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 215
+    .line 217
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->initBeautySliderMenu()V
 
-    .line 216
+    .line 218
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->initSpotLightSliderMenu()V
 
-    .line 218
+    .line 220
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SKINCOLOR:Z
 
     if-eqz v2, :cond_0
 
-    .line 219
+    .line 221
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->initSkinToneSliderMenu()V
 
-    .line 222
+    .line 224
     :cond_0
     move-object/from16 v0, p0
 
@@ -1322,7 +1335,7 @@
 
     div-float v14, v2, v3
 
-    .line 224
+    .line 226
     .local v14, "weight":F
     :goto_3
     new-instance v6, Lcom/samsung/android/glview/GLGridList;
@@ -1365,7 +1378,7 @@
 
     iput-object v6, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
 
-    .line 225
+    .line 227
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
@@ -1376,7 +1389,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLGridList;->setAdapter(Lcom/samsung/android/glview/GLAbsList$Adapter;)V
 
-    .line 226
+    .line 228
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
@@ -1385,7 +1398,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLGridList;->setInternalFocus(Z)V
 
-    .line 227
+    .line 229
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyMenuGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -1396,7 +1409,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 229
+    .line 231
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyMenuGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -1405,7 +1418,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 230
+    .line 232
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1414,7 +1427,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 232
+    .line 234
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1429,7 +1442,7 @@
 
     invoke-interface {v2, v3, v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->registerCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 233
+    .line 235
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1444,7 +1457,7 @@
 
     invoke-interface {v2, v3, v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->registerCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 234
+    .line 236
     return-void
 
     .line 91
@@ -1457,7 +1470,7 @@
 
     goto/16 :goto_0
 
-    .line 183
+    .line 185
     :cond_2
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
@@ -1489,7 +1502,7 @@
 
     goto/16 :goto_1
 
-    .line 204
+    .line 206
     .restart local v4    # "helpTextX":F
     .restart local v5    # "helpTextY":F
     .restart local v18    # "helpTextMargin":F
@@ -1510,7 +1523,7 @@
 
     invoke-virtual {v2, v3, v6, v5}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 205
+    .line 207
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1553,7 +1566,7 @@
 
     invoke-virtual {v2, v3, v6, v7}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 206
+    .line 208
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1588,7 +1601,7 @@
 
     invoke-virtual {v2, v3, v6, v7}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 207
+    .line 209
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
@@ -1631,7 +1644,7 @@
 
     goto/16 :goto_2
 
-    .line 222
+    .line 224
     :cond_4
     move-object/from16 v0, p0
 
@@ -1828,14 +1841,14 @@
     .locals 4
 
     .prologue
-    .line 437
+    .line 439
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
 
     invoke-virtual {v3}, Lcom/samsung/android/glview/GLGridList;->getSize()I
 
     move-result v2
 
-    .line 439
+    .line 441
     .local v2, "size":I
     const/4 v1, 0x0
 
@@ -1843,7 +1856,7 @@
     :goto_0
     if-ge v1, v2, :cond_1
 
-    .line 440
+    .line 442
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
 
     invoke-virtual {v3, v1}, Lcom/samsung/android/glview/GLGridList;->get(I)Lcom/samsung/android/glview/GLView;
@@ -1852,7 +1865,7 @@
 
     check-cast v0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
-    .line 441
+    .line 443
     .local v0, "beautyItem":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     if-eqz v0, :cond_0
 
@@ -1862,19 +1875,19 @@
 
     if-eqz v3, :cond_0
 
-    .line 445
+    .line 447
     .end local v0    # "beautyItem":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     :goto_1
     return-object v0
 
-    .line 439
+    .line 441
     .restart local v0    # "beautyItem":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 445
+    .line 447
     .end local v0    # "beautyItem":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     :cond_1
     const/4 v0, 0x0
@@ -1886,22 +1899,22 @@
     .locals 2
 
     .prologue
-    .line 449
+    .line 451
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-nez v0, :cond_0
 
-    .line 450
+    .line 452
     const-string v0, "BeautyListMenu"
 
     const-string v1, "mCameraContext is null, so return"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 451
+    .line 453
     const/4 v0, 0x1
 
-    .line 454
+    .line 456
     :goto_0
     return v0
 
@@ -1926,30 +1939,30 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 458
+    .line 460
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-nez v1, :cond_0
 
-    .line 459
+    .line 461
     const-string v1, "BeautyListMenu"
 
     const-string v2, "mCameraContext is null, so return"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 472
+    .line 474
     :goto_0
     return v0
 
-    .line 462
+    .line 464
     :cond_0
     packed-switch p1, :pswitch_data_0
 
     :pswitch_0
     goto :goto_0
 
-    .line 464
+    .line 466
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -1963,7 +1976,7 @@
 
     goto :goto_0
 
-    .line 466
+    .line 468
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -1977,7 +1990,7 @@
 
     goto :goto_0
 
-    .line 468
+    .line 470
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -1991,7 +2004,7 @@
 
     goto :goto_0
 
-    .line 470
+    .line 472
     :pswitch_4
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -2005,7 +2018,7 @@
 
     goto :goto_0
 
-    .line 462
+    .line 464
     nop
 
     :pswitch_data_0
@@ -2022,7 +2035,7 @@
     .locals 17
 
     .prologue
-    .line 477
+    .line 479
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_HEIGHT:F
@@ -2039,7 +2052,7 @@
 
     add-float v6, v1, v2
 
-    .line 479
+    .line 481
     .local v6, "beautySliderGroupHeight":F
     new-instance v1, Lcom/samsung/android/glview/GLViewGroup;
 
@@ -2073,6 +2086,16 @@
 
     move-object/from16 v0, p0
 
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    const/high16 v5, 0x40000000    # 2.0f
+
+    div-float/2addr v4, v5
+
+    sub-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
     iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SCREEN_HEIGHT:I
 
     int-to-float v4, v4
@@ -2087,13 +2110,19 @@
 
     iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
 
+    move-object/from16 v0, p0
+
+    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    add-float/2addr v5, v7
+
     invoke-direct/range {v1 .. v6}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     move-object/from16 v0, p0
 
     iput-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 481
+    .line 483
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2102,7 +2131,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setClipping(Z)V
 
-    .line 482
+    .line 484
     new-instance v7, Lcom/samsung/android/glview/GLSlider;
 
     move-object/from16 v0, p0
@@ -2115,7 +2144,13 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    move-object/from16 v0, p0
+
+    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+
+    add-float/2addr v1, v2
 
     move-object/from16 v0, p0
 
@@ -2157,7 +2192,7 @@
 
     iput-object v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
 
-    .line 484
+    .line 486
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
@@ -2170,7 +2205,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setSliderChangeListener(Lcom/samsung/android/glview/GLSlider$SliderChangeListener;)V
 
-    .line 495
+    .line 497
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
@@ -2183,7 +2218,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setTitle(Ljava/lang/String;)V
 
-    .line 496
+    .line 498
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
@@ -2194,7 +2229,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLSlider;->setGaugeMarker(II)V
 
-    .line 497
+    .line 499
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
@@ -2209,7 +2244,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLSlider;->expandTouchAreaFromCenter(FF)V
 
-    .line 498
+    .line 500
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
@@ -2218,7 +2253,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setClickable(Z)V
 
-    .line 499
+    .line 501
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
@@ -2227,7 +2262,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLSlider;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 500
+    .line 502
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
@@ -2236,7 +2271,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setClipping(Z)V
 
-    .line 501
+    .line 503
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
@@ -2245,7 +2280,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setVisibility(I)V
 
-    .line 503
+    .line 505
     new-instance v7, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -2258,7 +2293,13 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    move-object/from16 v0, p0
+
+    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+
+    add-float/2addr v1, v2
 
     move-object/from16 v0, p0
 
@@ -2290,7 +2331,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 504
+    .line 506
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v2
@@ -2313,7 +2354,7 @@
 
     iput-object v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
 
-    .line 505
+    .line 507
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
@@ -2324,7 +2365,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 506
+    .line 508
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
@@ -2343,7 +2384,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 507
+    .line 509
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
@@ -2352,7 +2393,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 508
+    .line 510
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
@@ -2361,7 +2402,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setCenterPivot(Z)V
 
-    .line 509
+    .line 511
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
@@ -2370,7 +2411,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setRotateAnimation(Z)V
 
-    .line 510
+    .line 512
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2381,7 +2422,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 511
+    .line 513
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2392,7 +2433,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 512
+    .line 514
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2401,7 +2442,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 513
+    .line 515
     return-void
 .end method
 
@@ -2409,7 +2450,7 @@
     .locals 24
 
     .prologue
-    .line 516
+    .line 518
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_HEIGHT:F
@@ -2426,7 +2467,7 @@
 
     add-float v6, v1, v2
 
-    .line 518
+    .line 520
     .local v6, "skinToneSliderGroupHeight":F
     new-instance v1, Lcom/samsung/android/glview/GLViewGroup;
 
@@ -2448,19 +2489,13 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_RIGHT_MARGIN:F
-
-    const/high16 v5, 0x40000000    # 2.0f
-
-    mul-float/2addr v4, v5
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
 
     sub-float/2addr v3, v4
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_GROUP_WIDTH:I
-
-    int-to-float v4, v4
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
 
     sub-float/2addr v3, v4
 
@@ -2478,9 +2513,13 @@
 
     move-object/from16 v0, p0
 
-    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_GROUP_WIDTH:I
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
 
-    int-to-float v5, v5
+    move-object/from16 v0, p0
+
+    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    add-float/2addr v5, v7
 
     invoke-direct/range {v1 .. v6}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
@@ -2488,7 +2527,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 520
+    .line 522
     new-instance v7, Lcom/samsung/android/glview/GLSlider;
 
     move-object/from16 v0, p0
@@ -2501,13 +2540,19 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_GROUP_WIDTH:I
-
-    int-to-float v1, v1
+    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_WIDTH:F
+    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+
+    add-float/2addr v1, v2
+
+    move-object/from16 v0, p0
+
+    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_WIDTH:I
+
+    int-to-float v2, v2
 
     sub-float/2addr v1, v2
 
@@ -2547,7 +2592,7 @@
 
     iput-object v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
 
-    .line 522
+    .line 524
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2560,7 +2605,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setSliderChangeListener(Lcom/samsung/android/glview/GLSlider$SliderChangeListener;)V
 
-    .line 529
+    .line 531
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2573,7 +2618,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setTitle(Ljava/lang/String;)V
 
-    .line 530
+    .line 532
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2584,7 +2629,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLSlider;->setGaugeMarker(II)V
 
-    .line 531
+    .line 533
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2593,7 +2638,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setGaugeZeroStep(I)V
 
-    .line 532
+    .line 534
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2602,7 +2647,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setCurrentStep(I)Z
 
-    .line 533
+    .line 535
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2617,7 +2662,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLSlider;->expandTouchAreaFromCenter(FF)V
 
-    .line 534
+    .line 536
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2626,7 +2671,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setClickable(Z)V
 
-    .line 535
+    .line 537
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2635,7 +2680,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLSlider;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 536
+    .line 538
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2644,7 +2689,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setClipping(Z)V
 
-    .line 537
+    .line 539
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
@@ -2653,7 +2698,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLSlider;->setVisibility(I)V
 
-    .line 539
+    .line 541
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -2676,7 +2721,7 @@
 
     move-result-object v13
 
-    .line 540
+    .line 542
     .local v13, "colorText":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -2700,7 +2745,7 @@
 
     move-result-object v20
 
-    .line 541
+    .line 543
     .local v20, "smoothText":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -2716,7 +2761,7 @@
 
     move-result v11
 
-    .line 542
+    .line 544
     .local v11, "colorTextWidth":F
     move-object/from16 v0, p0
 
@@ -2734,7 +2779,7 @@
 
     move-result v18
 
-    .line 544
+    .line 546
     .local v18, "smoothTextWidth":F
     new-instance v7, Lcom/samsung/android/glview/GLText;
 
@@ -2748,9 +2793,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
+    iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    invoke-virtual {v1}, Lcom/samsung/android/glview/GLSlider;->getWidth()F
+    invoke-virtual {v1}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
 
     move-result v1
 
@@ -2762,11 +2807,19 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
+    iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    int-to-float v1, v1
+    invoke-virtual {v1}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
-    add-float v10, v6, v1
+    move-result v1
+
+    move-object/from16 v0, p0
+
+    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
+
+    int-to-float v2, v2
+
+    add-float v10, v1, v2
 
     move-object/from16 v0, p0
 
@@ -2792,24 +2845,7 @@
 
     iput-object v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
 
-    .line 545
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
-
-    const/4 v2, 0x1
-
-    move-object/from16 v0, p0
-
-    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_HEIGHT:I
-
-    int-to-float v3, v3
-
-    sub-float v4, v6, v11
-
-    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
-
-    .line 546
+    .line 547
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
@@ -2818,9 +2854,9 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
+    iget-object v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    invoke-virtual {v3}, Lcom/samsung/android/glview/GLSlider;->getWidth()F
+    invoke-virtual {v3}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
 
     move-result v3
 
@@ -2832,11 +2868,19 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
+    iget-object v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    int-to-float v4, v4
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
-    add-float/2addr v4, v6
+    move-result v4
+
+    move-object/from16 v0, p0
+
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
+
+    int-to-float v5, v5
+
+    add-float/2addr v4, v5
 
     move-object/from16 v0, p0
 
@@ -2848,18 +2892,40 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 547
+    .line 548
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
 
     const/4 v2, 0x3
 
-    const/4 v3, 0x0
+    move-object/from16 v0, p0
 
-    invoke-virtual {v1, v2, v3, v6}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
+    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
 
-    .line 548
+    const/high16 v4, 0x40000000    # 2.0f
+
+    div-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_HEIGHT:I
+
+    int-to-float v4, v4
+
+    sub-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
+
+    move-result v4
+
+    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
+
+    .line 549
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
@@ -2870,7 +2936,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 549
+    .line 550
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
@@ -2889,7 +2955,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 550
+    .line 551
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
@@ -2898,7 +2964,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 551
+    .line 552
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
@@ -2907,7 +2973,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 553
+    .line 554
     new-instance v14, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -2920,23 +2986,19 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_GROUP_WIDTH:I
+    iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    int-to-float v1, v1
+    invoke-virtual {v1}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
 
-    move-object/from16 v0, p0
-
-    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_RIGHT_MARGIN:F
-
-    const/high16 v3, 0x40000000    # 2.0f
-
-    mul-float/2addr v2, v3
-
-    add-float/2addr v1, v2
+    move-result v1
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+    iget-object v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v2}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+
+    move-result v2
 
     sub-float v2, v2, v18
 
@@ -2948,11 +3010,19 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
+    iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    int-to-float v1, v1
+    invoke-virtual {v1}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
-    add-float v17, v6, v1
+    move-result v1
+
+    move-object/from16 v0, p0
+
+    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
+
+    int-to-float v2, v2
+
+    add-float v17, v1, v2
 
     move-object/from16 v0, p0
 
@@ -2984,37 +3054,6 @@
 
     iput-object v14, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSmoothText:Lcom/samsung/android/glview/GLText;
 
-    .line 554
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSmoothText:Lcom/samsung/android/glview/GLText;
-
-    const/4 v2, 0x1
-
-    move-object/from16 v0, p0
-
-    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_GROUP_WIDTH:I
-
-    int-to-float v3, v3
-
-    move-object/from16 v0, p0
-
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_RIGHT_MARGIN:F
-
-    add-float/2addr v3, v4
-
-    move-object/from16 v0, p0
-
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_HEIGHT:I
-
-    int-to-float v4, v4
-
-    add-float/2addr v3, v4
-
-    sub-float v4, v6, v18
-
-    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
-
     .line 555
     move-object/from16 v0, p0
 
@@ -3024,23 +3063,19 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_GROUP_WIDTH:I
+    iget-object v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    int-to-float v3, v3
+    invoke-virtual {v3}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
 
-    move-object/from16 v0, p0
-
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_RIGHT_MARGIN:F
-
-    const/high16 v5, 0x40000000    # 2.0f
-
-    mul-float/2addr v4, v5
-
-    add-float/2addr v3, v4
+    move-result v3
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+    iget-object v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+
+    move-result v4
 
     add-float v4, v4, v18
 
@@ -3052,11 +3087,19 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
+    iget-object v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    int-to-float v4, v4
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
-    add-float/2addr v4, v6
+    move-result v4
+
+    move-object/from16 v0, p0
+
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_TOP_PADDING:I
+
+    int-to-float v5, v5
+
+    add-float/2addr v4, v5
 
     move-object/from16 v0, p0
 
@@ -3077,17 +3120,41 @@
 
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_GROUP_WIDTH:I
-
-    int-to-float v3, v3
+    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SKIN_COLOR_SLIDER_RIGHT_MARGIN:F
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
 
     add-float/2addr v3, v4
 
-    invoke-virtual {v1, v2, v3, v6}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    const/high16 v5, 0x40000000    # 2.0f
+
+    div-float/2addr v4, v5
+
+    add-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDER_TITLE_HEIGHT:I
+
+    int-to-float v4, v4
+
+    sub-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget-object v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
+
+    move-result v4
+
+    invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
     .line 557
     move-object/from16 v0, p0
@@ -3213,26 +3280,8 @@
 
     add-float v6, v1, v2
 
-    .line 571
+    .line 572
     .local v6, "spotLightSliderGroupHeight":F
-    move-object/from16 v0, p0
-
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
-
-    move-object/from16 v0, p0
-
-    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
-
-    add-float/2addr v1, v2
-
-    move-object/from16 v0, p0
-
-    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
-
-    add-float v5, v1, v2
-
-    .line 573
-    .local v5, "spotLightSliderGroupWidth":F
     new-instance v1, Lcom/samsung/android/glview/GLViewGroup;
 
     move-object/from16 v0, p0
@@ -3253,32 +3302,46 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_SPACE:F
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
 
     sub-float/2addr v3, v4
 
-    sub-float/2addr v3, v5
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+
+    sub-float/2addr v3, v4
 
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 574
+    .line 573
     invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getTop()F
 
     move-result v4
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
+    iget-object v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    invoke-virtual {v7}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
+    invoke-virtual {v5}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
-    move-result v7
+    move-result v5
 
-    sub-float v7, v6, v7
+    sub-float v5, v6, v5
 
-    sub-float/2addr v4, v7
+    sub-float/2addr v4, v5
+
+    move-object/from16 v0, p0
+
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+
+    move-object/from16 v0, p0
+
+    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    add-float/2addr v5, v7
 
     invoke-direct/range {v1 .. v6}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
@@ -3286,7 +3349,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 575
+    .line 574
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -3295,7 +3358,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 577
+    .line 576
     new-instance v7, Lcom/sec/android/app/camera/widget/gl/DividedSlider;
 
     move-object/from16 v0, p0
@@ -3308,29 +3371,23 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
-
-    move-object/from16 v0, p0
-
-    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
-
-    add-float/2addr v1, v2
+    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
 
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
 
+    add-float/2addr v1, v2
+
     move-object/from16 v0, p0
 
-    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_WIDTH:F
+    iget v2, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_WIDTH:F
 
-    sub-float/2addr v2, v3
+    sub-float/2addr v1, v2
 
-    const/high16 v3, 0x40000000    # 2.0f
+    const/high16 v2, 0x40000000    # 2.0f
 
-    div-float/2addr v2, v3
-
-    add-float v9, v1, v2
+    div-float v9, v1, v2
 
     move-object/from16 v0, p0
 
@@ -3362,7 +3419,7 @@
 
     iput-object v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
 
-    .line 579
+    .line 578
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3375,7 +3432,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setSliderChangeListener(Lcom/samsung/android/glview/GLSlider$SliderChangeListener;)V
 
-    .line 590
+    .line 589
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3388,7 +3445,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setTitle(Ljava/lang/String;)V
 
-    .line 591
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3425,19 +3482,19 @@
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_DIVIDER_SIZE:F
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_DIVIDER_SIZE:F
 
-    sub-float/2addr v4, v7
+    sub-float/2addr v4, v5
 
-    const/high16 v7, 0x40000000    # 2.0f
+    const/high16 v5, 0x40000000    # 2.0f
 
-    div-float/2addr v4, v7
+    div-float/2addr v4, v5
 
     float-to-int v4, v4
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setDivider(III)V
 
-    .line 592
+    .line 591
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3448,7 +3505,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setGaugeMarker(II)V
 
-    .line 593
+    .line 592
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3457,7 +3514,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setGaugeZeroStep(I)V
 
-    .line 594
+    .line 593
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3466,7 +3523,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setCurrentStep(I)Z
 
-    .line 595
+    .line 594
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3481,7 +3538,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->expandTouchAreaFromCenter(FF)V
 
-    .line 596
+    .line 595
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3490,7 +3547,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setClickable(Z)V
 
-    .line 597
+    .line 596
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3499,7 +3556,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setClipping(Z)V
 
-    .line 598
+    .line 597
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3508,7 +3565,7 @@
 
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 599
+    .line 598
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
@@ -3517,7 +3574,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setVisibility(I)V
 
-    .line 601
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -3526,13 +3583,13 @@
 
     move-result-object v1
 
-    const v2, 0x7f0901b3
+    const v2, 0x7f0901b6
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v13
 
-    .line 602
+    .line 601
     .local v13, "leftText":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -3546,7 +3603,7 @@
 
     move-result v11
 
-    .line 603
+    .line 602
     .local v11, "leftTextWidth":F
     new-instance v7, Lcom/samsung/android/glview/GLText;
 
@@ -3560,7 +3617,11 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
+    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    div-float/2addr v1, v2
 
     sub-float v9, v1, v11
 
@@ -3598,7 +3659,7 @@
 
     iput-object v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorLeft:Lcom/samsung/android/glview/GLText;
 
-    .line 605
+    .line 604
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorLeft:Lcom/samsung/android/glview/GLText;
@@ -3619,15 +3680,15 @@
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDEBAR_TOUCH_AREA_HEIGHT:F
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SLIDEBAR_TOUCH_AREA_HEIGHT:F
 
-    sub-float/2addr v4, v7
+    sub-float/2addr v4, v5
 
     sub-float/2addr v4, v11
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 606
+    .line 605
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorLeft:Lcom/samsung/android/glview/GLText;
@@ -3654,14 +3715,32 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 607
+    .line 606
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorLeft:Lcom/samsung/android/glview/GLText;
 
     const/4 v2, 0x3
 
-    const/4 v3, 0x0
+    move-object/from16 v0, p0
+
+    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    const/high16 v4, 0x40000000    # 2.0f
+
+    div-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
+
+    sub-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
+
+    sub-float/2addr v3, v4
 
     move-object/from16 v0, p0
 
@@ -3673,7 +3752,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 608
+    .line 607
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorLeft:Lcom/samsung/android/glview/GLText;
@@ -3692,7 +3771,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 609
+    .line 608
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorLeft:Lcom/samsung/android/glview/GLText;
@@ -3703,7 +3782,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 610
+    .line 609
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorLeft:Lcom/samsung/android/glview/GLText;
@@ -3712,7 +3791,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 612
+    .line 611
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -3721,13 +3800,13 @@
 
     move-result-object v1
 
-    const v2, 0x7f09020c
+    const v2, 0x7f09020f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v20
 
-    .line 613
+    .line 612
     .local v20, "rightText":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -3743,7 +3822,7 @@
 
     move-result v18
 
-    .line 614
+    .line 613
     .local v18, "rightTextWidth":F
     new-instance v14, Lcom/samsung/android/glview/GLText;
 
@@ -3757,7 +3836,11 @@
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
+    iget v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    div-float/2addr v1, v2
 
     sub-float v16, v1, v18
 
@@ -3797,7 +3880,7 @@
 
     iput-object v14, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorRight:Lcom/samsung/android/glview/GLText;
 
-    .line 616
+    .line 615
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorRight:Lcom/samsung/android/glview/GLText;
@@ -3814,13 +3897,13 @@
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
 
-    add-float/2addr v4, v7
+    add-float/2addr v4, v5
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 617
+    .line 616
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorRight:Lcom/samsung/android/glview/GLText;
@@ -3843,26 +3926,44 @@
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
 
-    add-float/2addr v4, v7
+    add-float/2addr v4, v5
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
 
-    add-float/2addr v4, v7
+    add-float/2addr v4, v5
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 618
+    .line 617
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorRight:Lcom/samsung/android/glview/GLText;
 
     const/4 v2, 0x3
 
-    const/4 v3, 0x0
+    move-object/from16 v0, p0
+
+    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
+
+    const/high16 v4, 0x40000000    # 2.0f
+
+    div-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_SLIDER_TEXT_MARGIN:F
+
+    sub-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_INDICATOR_TEXT_HEIGHT:F
+
+    sub-float/2addr v3, v4
 
     move-object/from16 v0, p0
 
@@ -3870,15 +3971,15 @@
 
     move-object/from16 v0, p0
 
-    iget v7, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_IMAGE_SIZE:F
+    iget v5, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->SPOT_LIGHT_IMAGE_SIZE:F
 
-    add-float/2addr v4, v7
+    add-float/2addr v4, v5
 
     add-float v4, v4, v18
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 619
+    .line 618
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorRight:Lcom/samsung/android/glview/GLText;
@@ -3897,7 +3998,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 620
+    .line 619
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorRight:Lcom/samsung/android/glview/GLText;
@@ -3908,7 +4009,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 621
+    .line 620
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderIndicatorRight:Lcom/samsung/android/glview/GLText;
@@ -3917,7 +4018,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 623
+    .line 622
     new-instance v1, Lcom/samsung/android/glview/GLImage;
 
     move-object/from16 v0, p0
@@ -3930,11 +4031,17 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
+    iget v3, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SPOTLIGHT_SLIDER_SPACE:F
 
-    invoke-virtual {v3}, Lcom/samsung/android/glview/GLViewGroup;->getWidth()F
+    const/high16 v4, 0x40000000    # 2.0f
 
-    move-result v3
+    div-float/2addr v3, v4
+
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->BEAUTY_SLIDER_GROUP_WIDTH:F
+
+    add-float/2addr v3, v4
 
     move-object/from16 v0, p0
 
@@ -3944,15 +4051,15 @@
 
     const/4 v4, 0x0
 
-    const v7, 0x7f020012
+    const v5, 0x7f020012
 
-    invoke-direct {v1, v2, v3, v4, v7}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
+    invoke-direct {v1, v2, v3, v4, v5}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
     move-object/from16 v0, p0
 
     iput-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 624
+    .line 623
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightImage:Lcom/samsung/android/glview/GLImage;
@@ -3961,7 +4068,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setRotatable(Z)V
 
-    .line 625
+    .line 624
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightImage:Lcom/samsung/android/glview/GLImage;
@@ -3970,7 +4077,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setCenterPivot(Z)V
 
-    .line 626
+    .line 625
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightImage:Lcom/samsung/android/glview/GLImage;
@@ -3979,7 +4086,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setRotateAnimation(Z)V
 
-    .line 628
+    .line 627
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -3988,7 +4095,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setClipping(Z)V
 
-    .line 629
+    .line 628
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -3999,7 +4106,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 630
+    .line 629
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4010,7 +4117,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 631
+    .line 630
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4021,7 +4128,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 632
+    .line 631
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4032,7 +4139,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 633
+    .line 632
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4041,7 +4148,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 634
+    .line 633
     return-void
 .end method
 
@@ -4054,88 +4161,88 @@
 
     const/4 v9, 0x0
 
-    .line 637
+    .line 636
     const/4 v4, 0x3
 
     if-ne p1, v4, :cond_1
 
-    .line 638
+    .line 637
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v4, v10}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+
+    .line 638
+    iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v4, v10}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
     .line 639
-    iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    invoke-virtual {v4, v10}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
-
-    .line 640
     sget-boolean v4, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SKINCOLOR:Z
 
     if-eqz v4, :cond_0
 
-    .line 641
+    .line 640
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v4, v10}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 685
+    .line 684
     :cond_0
     :goto_0
     return-void
 
-    .line 644
+    .line 643
     :cond_1
     if-ne p1, v10, :cond_4
 
-    .line 645
+    .line 644
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 646
+    .line 645
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 652
+    .line 651
     :goto_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->findLastSelectedView()Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
     move-result-object v2
 
-    .line 653
+    .line 652
     .local v2, "item":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     if-eqz v2, :cond_2
 
-    .line 654
+    .line 653
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
 
     invoke-virtual {v4, v2}, Lcom/samsung/android/glview/GLSlider;->setNextFocusRightView(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 657
+    .line 656
     :cond_2
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLSlider;->setVisibility(I)V
 
-    .line 658
+    .line 657
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->getCurrentStep(I)I
 
     move-result v1
 
-    .line 659
+    .line 658
     .local v1, "currentStep":I
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySlider:Lcom/samsung/android/glview/GLSlider;
 
     invoke-virtual {v4, v1}, Lcom/samsung/android/glview/GLSlider;->setCurrentStep(I)Z
 
-    .line 660
+    .line 659
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 661
+    .line 660
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -4160,39 +4267,39 @@
 
     invoke-virtual {v4, v5}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 663
+    .line 662
     if-ne p1, v10, :cond_3
 
-    .line 664
+    .line 663
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->getCurrentSpotLightPosition()I
 
     move-result v0
 
-    .line 665
+    .line 664
     .local v0, "currentPosition":I
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->updateSpotLightPosition(I)V
 
-    .line 667
+    .line 666
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
 
     invoke-virtual {v4, v0}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setCurrentStep(I)Z
 
-    .line 668
+    .line 667
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
 
     invoke-virtual {v4, v9}, Lcom/sec/android/app/camera/widget/gl/DividedSlider;->setVisibility(I)V
 
-    .line 671
+    .line 670
     .end local v0    # "currentPosition":I
     :cond_3
     sget-boolean v4, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SKINCOLOR:Z
 
     if-eqz v4, :cond_0
 
-    .line 672
+    .line 671
     if-nez p1, :cond_5
 
-    .line 673
+    .line 672
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4203,35 +4310,35 @@
 
     move-result v3
 
-    .line 674
+    .line 673
     .local v3, "skinColorStep":I
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
 
     invoke-virtual {v4, v3}, Lcom/samsung/android/glview/GLSlider;->setCurrentStep(I)Z
 
-    .line 675
+    .line 674
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLSlider;->setVisibility(I)V
 
-    .line 676
+    .line 675
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 677
+    .line 676
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSmoothText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 678
+    .line 677
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 648
+    .line 647
     .end local v1    # "currentStep":I
     .end local v2    # "item":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     .end local v3    # "skinColorStep":I
@@ -4240,14 +4347,14 @@
 
     invoke-virtual {v4, v9}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 649
+    .line 648
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSliderGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v4, v10}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
     goto :goto_1
 
-    .line 680
+    .line 679
     .restart local v1    # "currentStep":I
     .restart local v2    # "item":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     :cond_5
@@ -4255,12 +4362,12 @@
 
     invoke-virtual {v4, v10}, Lcom/samsung/android/glview/GLSlider;->setVisibility(I)V
 
-    .line 681
+    .line 680
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mColorText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v4, v10}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 682
+    .line 681
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSmoothText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v4, v10}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
@@ -4274,19 +4381,19 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 688
+    .line 687
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderHandler:Lcom/sec/android/app/camera/menu/BeautyListMenu$BeautySliderHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu$BeautySliderHandler;->removeMessages(I)V
 
-    .line 689
+    .line 688
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderHandler:Lcom/sec/android/app/camera/menu/BeautyListMenu$BeautySliderHandler;
 
     const-wide/16 v2, 0x1770
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sec/android/app/camera/menu/BeautyListMenu$BeautySliderHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 690
+    .line 689
     return-void
 .end method
 
@@ -4297,7 +4404,7 @@
     .prologue
     const v3, 0x7f090082
 
-    .line 694
+    .line 693
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4310,11 +4417,11 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 708
+    .line 707
     :pswitch_0
     const-string v0, ""
 
-    .line 711
+    .line 710
     .local v0, "ttsMsg":Ljava/lang/String;
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -4333,10 +4440,10 @@
 
     invoke-virtual {v1, v0, v2, v3}, Landroid/speech/tts/TextToSpeech;->speak(Ljava/lang/String;ILjava/util/HashMap;)I
 
-    .line 712
+    .line 711
     return-void
 
-    .line 696
+    .line 695
     .end local v0    # "ttsMsg":Ljava/lang/String;
     :pswitch_1
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4373,11 +4480,11 @@
 
     move-result-object v0
 
-    .line 697
+    .line 696
     .restart local v0    # "ttsMsg":Ljava/lang/String;
     goto :goto_0
 
-    .line 699
+    .line 698
     .end local v0    # "ttsMsg":Ljava/lang/String;
     :pswitch_2
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4414,11 +4521,11 @@
 
     move-result-object v0
 
-    .line 700
+    .line 699
     .restart local v0    # "ttsMsg":Ljava/lang/String;
     goto :goto_0
 
-    .line 702
+    .line 701
     .end local v0    # "ttsMsg":Ljava/lang/String;
     :pswitch_3
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4455,11 +4562,11 @@
 
     move-result-object v0
 
-    .line 703
+    .line 702
     .restart local v0    # "ttsMsg":Ljava/lang/String;
     goto :goto_0
 
-    .line 705
+    .line 704
     .end local v0    # "ttsMsg":Ljava/lang/String;
     :pswitch_4
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4496,11 +4603,11 @@
 
     move-result-object v0
 
-    .line 706
+    .line 705
     .restart local v0    # "ttsMsg":Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 694
+    .line 693
     nop
 
     :pswitch_data_0
@@ -4522,10 +4629,10 @@
 
     const v3, 0x7f090082
 
-    .line 716
+    .line 715
     packed-switch p1, :pswitch_data_0
 
-    .line 725
+    .line 724
     :pswitch_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -4561,7 +4668,7 @@
 
     move-result-object v0
 
-    .line 728
+    .line 727
     .local v0, "ttsMsg":Ljava/lang/String;
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -4580,10 +4687,10 @@
 
     invoke-virtual {v1, v0, v2, v3}, Landroid/speech/tts/TextToSpeech;->speak(Ljava/lang/String;ILjava/util/HashMap;)I
 
-    .line 729
+    .line 728
     return-void
 
-    .line 718
+    .line 717
     .end local v0    # "ttsMsg":Ljava/lang/String;
     :pswitch_1
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4606,7 +4713,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0901b4
+    const v2, 0x7f0901b7
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -4620,11 +4727,11 @@
 
     move-result-object v0
 
-    .line 719
+    .line 718
     .restart local v0    # "ttsMsg":Ljava/lang/String;
     goto :goto_0
 
-    .line 721
+    .line 720
     .end local v0    # "ttsMsg":Ljava/lang/String;
     :pswitch_2
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4647,7 +4754,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09020d
+    const v2, 0x7f090210
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -4661,11 +4768,11 @@
 
     move-result-object v0
 
-    .line 722
+    .line 721
     .restart local v0    # "ttsMsg":Ljava/lang/String;
     goto :goto_0
 
-    .line 716
+    .line 715
     nop
 
     :pswitch_data_0
@@ -4680,14 +4787,14 @@
     .locals 2
 
     .prologue
-    .line 733
+    .line 732
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautySliderHandler:Lcom/sec/android/app/camera/menu/BeautyListMenu$BeautySliderHandler;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/BeautyListMenu$BeautySliderHandler;->removeMessages(I)V
 
-    .line 734
+    .line 733
     return-void
 .end method
 
@@ -4700,23 +4807,23 @@
 
     const/4 v5, 0x0
 
-    .line 737
+    .line 736
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-nez v0, :cond_0
 
-    .line 738
+    .line 737
     const-string v0, "BeautyListMenu"
 
     const-string v1, "mCameraContext is null, so return"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 761
+    .line 760
     :goto_0
     return-void
 
-    .line 741
+    .line 740
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -4733,7 +4840,7 @@
     :pswitch_0
     goto :goto_0
 
-    .line 743
+    .line 742
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -4743,7 +4850,7 @@
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setBeautyLevel(I)V
 
-    .line 744
+    .line 743
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -4778,7 +4885,7 @@
 
     goto :goto_0
 
-    .line 747
+    .line 746
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -4788,7 +4895,7 @@
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setEyeEnlargeLevel(I)V
 
-    .line 748
+    .line 747
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -4823,7 +4930,7 @@
 
     goto :goto_0
 
-    .line 751
+    .line 750
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -4833,7 +4940,7 @@
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setSlimFaceLevel(I)V
 
-    .line 752
+    .line 751
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -4868,7 +4975,7 @@
 
     goto/16 :goto_0
 
-    .line 755
+    .line 754
     :pswitch_4
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -4878,7 +4985,7 @@
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setSpotlightLevel(I)V
 
-    .line 756
+    .line 755
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mBeautyLevelText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -4913,7 +5020,7 @@
 
     goto/16 :goto_0
 
-    .line 741
+    .line 740
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -4929,7 +5036,7 @@
     .param p1, "step"    # I
 
     .prologue
-    .line 764
+    .line 763
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4938,7 +5045,7 @@
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setSkinColorLevel(I)V
 
-    .line 765
+    .line 764
     return-void
 .end method
 
@@ -4947,7 +5054,7 @@
     .param p1, "step"    # I
 
     .prologue
-    .line 768
+    .line 767
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4956,10 +5063,10 @@
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setSpotlightPosition(I)V
 
-    .line 770
+    .line 769
     packed-switch p1, :pswitch_data_0
 
-    .line 779
+    .line 778
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightImage:Lcom/samsung/android/glview/GLImage;
 
@@ -4967,11 +5074,11 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 782
+    .line 781
     :goto_0
     return-void
 
-    .line 772
+    .line 771
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightImage:Lcom/samsung/android/glview/GLImage;
 
@@ -4981,7 +5088,7 @@
 
     goto :goto_0
 
-    .line 775
+    .line 774
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightImage:Lcom/samsung/android/glview/GLImage;
 
@@ -4991,7 +5098,7 @@
 
     goto :goto_0
 
-    .line 770
+    .line 769
     nop
 
     :pswitch_data_0
@@ -5008,17 +5115,17 @@
     .locals 2
 
     .prologue
-    .line 238
+    .line 240
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mItemList:Landroid/util/SparseArray;
 
     if-eqz v0, :cond_0
 
-    .line 239
+    .line 241
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mItemList:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
-    .line 241
+    .line 243
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -5030,7 +5137,7 @@
 
     invoke-interface {v0, v1, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->unregisterCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 242
+    .line 244
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -5041,10 +5148,10 @@
 
     invoke-interface {v0, v1, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->unregisterCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 243
+    .line 245
     invoke-super {p0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->clear()V
 
-    .line 244
+    .line 246
     return-void
 .end method
 
@@ -5052,23 +5159,23 @@
     .locals 2
 
     .prologue
-    .line 250
+    .line 252
     iget-boolean v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mIsShapeCorrectionTextHidedByTimeOut:Z
 
     if-eqz v0, :cond_1
 
-    .line 256
+    .line 258
     :cond_0
     :goto_0
     return-void
 
-    .line 253
+    .line 255
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_0
 
-    .line 254
+    .line 256
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x4
@@ -5084,37 +5191,37 @@
     .param p2, "modeId"    # I
 
     .prologue
-    .line 260
+    .line 262
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->restartSliderMenuTimer()V
 
-    .line 261
+    .line 263
     const/16 v1, 0x81
 
     if-ne p1, v1, :cond_1
 
-    .line 262
+    .line 264
     invoke-direct {p0, p2}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->refreshSlider(I)V
 
-    .line 263
+    .line 265
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->hideShapeCorrectionHelpText()V
 
-    .line 276
+    .line 278
     :cond_0
     :goto_0
     return-void
 
-    .line 264
+    .line 266
     :cond_1
     const/16 v1, 0x71
 
     if-ne p1, v1, :cond_0
 
-    .line 265
+    .line 267
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->findLastSelectedView()Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
     move-result-object v0
 
-    .line 266
+    .line 268
     .local v0, "item":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     if-eqz v0, :cond_0
 
@@ -5126,20 +5233,20 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 269
+    .line 271
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->hideShapeCorrectionHelpText()V
 
-    .line 270
+    .line 272
     const/4 v1, 0x1
 
     if-ne p2, v1, :cond_0
 
-    .line 271
+    .line 273
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v1, :cond_0
 
-    .line 272
+    .line 274
     const v1, 0x7f090161
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
@@ -5155,7 +5262,7 @@
     .locals 2
 
     .prologue
-    .line 383
+    .line 385
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -5166,10 +5273,10 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/provider/CameraLocalBroadcastManager;->unregister(Landroid/content/Context;Landroid/content/BroadcastReceiver;)V
 
-    .line 384
+    .line 386
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->hideShapeCorrectionHelpText()V
 
-    .line 385
+    .line 387
     return-void
 .end method
 
@@ -5178,7 +5285,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 390
+    .line 392
     return-void
 .end method
 
@@ -5187,7 +5294,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 395
+    .line 397
     return-void
 .end method
 
@@ -5197,10 +5304,10 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 280
+    .line 282
     sparse-switch p1, :sswitch_data_0
 
-    .line 287
+    .line 289
     invoke-super {p0, p1, p2}, Lcom/sec/android/app/camera/menu/AbstractMenu;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
@@ -5208,13 +5315,13 @@
     :goto_0
     return v0
 
-    .line 283
+    .line 285
     :sswitch_0
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 280
+    .line 282
     :sswitch_data_0
     .sparse-switch
         0x4 -> :sswitch_0
@@ -5230,10 +5337,10 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 292
+    .line 294
     sparse-switch p1, :sswitch_data_0
 
-    .line 301
+    .line 303
     invoke-super {p0, p1, p2}, Lcom/sec/android/app/camera/menu/AbstractMenu;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v0
@@ -5242,13 +5349,13 @@
     :sswitch_0
     return v0
 
-    .line 294
+    .line 296
     :sswitch_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->hideMenu()V
 
     goto :goto_0
 
-    .line 292
+    .line 294
     nop
 
     :sswitch_data_0
@@ -5263,7 +5370,7 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 306
+    .line 308
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->getOrientation()I
@@ -5272,11 +5379,11 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 318
+    .line 320
     :goto_0
     return-void
 
-    .line 309
+    .line 311
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
@@ -5288,7 +5395,7 @@
 
     goto :goto_0
 
-    .line 313
+    .line 315
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
@@ -5300,7 +5407,7 @@
 
     goto :goto_0
 
-    .line 306
+    .line 308
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -5314,18 +5421,18 @@
     .locals 5
 
     .prologue
-    .line 399
+    .line 401
     new-instance v2, Landroid/content/IntentFilter;
 
     invoke-direct {v2}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 400
+    .line 402
     .local v2, "intentFilter":Landroid/content/IntentFilter;
     const-string v3, "camera.action.ACTION_BEAUTY_UI_UPDATED"
 
     invoke-virtual {v2, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 401
+    .line 403
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -5336,7 +5443,7 @@
 
     invoke-static {v3, v4, v2}, Lcom/sec/android/app/camera/provider/CameraLocalBroadcastManager;->register(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
-    .line 403
+    .line 405
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -5349,10 +5456,10 @@
 
     invoke-direct {p0, v3}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->refreshSlider(I)V
 
-    .line 404
+    .line 406
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->restartSliderMenuTimer()V
 
-    .line 406
+    .line 408
     const/4 v1, 0x0
 
     .local v1, "i":I
@@ -5365,7 +5472,7 @@
 
     if-ge v1, v3, :cond_2
 
-    .line 407
+    .line 409
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
 
     invoke-virtual {v3, v1}, Lcom/samsung/android/glview/GLGridList;->get(I)Lcom/samsung/android/glview/GLView;
@@ -5374,30 +5481,30 @@
 
     check-cast v0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
-    .line 408
+    .line 410
     .local v0, "beautyItem":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     if-eqz v0, :cond_0
 
-    .line 409
+    .line 411
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->isSelected()Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 410
+    .line 412
     const/4 v3, 0x1
 
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->setSelect(Z)V
 
-    .line 406
+    .line 408
     :cond_0
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 412
+    .line 414
     :cond_1
     const/4 v3, 0x0
 
@@ -5405,7 +5512,7 @@
 
     goto :goto_1
 
-    .line 416
+    .line 418
     .end local v0    # "beautyItem":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     :cond_2
     return-void
@@ -5416,7 +5523,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 420
+    .line 422
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
@@ -5449,20 +5556,20 @@
 
     if-nez v1, :cond_1
 
-    .line 421
+    .line 423
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->findLastSelectedView()Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
     move-result-object v0
 
-    .line 422
+    .line 424
     .local v0, "lastSelectedView":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     if-eqz v0, :cond_1
 
-    .line 423
+    .line 425
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->requestFocus()Z
 
-    .line 426
+    .line 428
     .end local v0    # "lastSelectedView":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     :cond_1
     return-void
@@ -5473,7 +5580,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 431
+    .line 433
     return-void
 .end method
 
@@ -5483,7 +5590,7 @@
     .param p2, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 323
+    .line 325
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v4
@@ -5500,11 +5607,11 @@
 
     if-ne v4, v5, :cond_3
 
-    .line 324
+    .line 326
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->restartSliderMenuTimer()V
 
-    .line 325
+    .line 327
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSkinColorSlider:Lcom/samsung/android/glview/GLSlider;
 
     invoke-virtual {p1, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -5513,7 +5620,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 326
+    .line 328
     const-string v4, "4011"
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -5532,13 +5639,13 @@
 
     invoke-static {v4, v5}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 358
+    .line 360
     :goto_0
     const/4 v4, 0x0
 
     return v4
 
-    .line 327
+    .line 329
     :cond_1
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mSpotLightSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
 
@@ -5548,7 +5655,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 328
+    .line 330
     const-string v4, "4013"
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -5569,7 +5676,7 @@
 
     goto :goto_0
 
-    .line 330
+    .line 332
     :cond_2
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -5586,7 +5693,7 @@
     :pswitch_0
     goto :goto_0
 
-    .line 332
+    .line 334
     :pswitch_1
     const-string v4, "Z075"
 
@@ -5608,7 +5715,7 @@
 
     move-result-object v0
 
-    .line 333
+    .line 335
     .local v0, "cv_beauty_level":Landroid/content/ContentValues;
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -5622,7 +5729,7 @@
 
     invoke-static {v4, v0}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 334
+    .line 336
     const-string v4, "4012"
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -5643,7 +5750,7 @@
 
     goto :goto_0
 
-    .line 337
+    .line 339
     .end local v0    # "cv_beauty_level":Landroid/content/ContentValues;
     :pswitch_2
     const-string v4, "Z072"
@@ -5666,7 +5773,7 @@
 
     move-result-object v1
 
-    .line 338
+    .line 340
     .local v1, "cv_large_eyes":Landroid/content/ContentValues;
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -5680,7 +5787,7 @@
 
     invoke-static {v4, v1}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 339
+    .line 341
     const-string v4, "4016"
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -5701,7 +5808,7 @@
 
     goto/16 :goto_0
 
-    .line 342
+    .line 344
     .end local v1    # "cv_large_eyes":Landroid/content/ContentValues;
     :pswitch_3
     const-string v4, "Z073"
@@ -5724,7 +5831,7 @@
 
     move-result-object v2
 
-    .line 343
+    .line 345
     .local v2, "cv_slim_face":Landroid/content/ContentValues;
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -5738,7 +5845,7 @@
 
     invoke-static {v4, v2}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 344
+    .line 346
     const-string v4, "4015"
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -5759,7 +5866,7 @@
 
     goto/16 :goto_0
 
-    .line 347
+    .line 349
     .end local v2    # "cv_slim_face":Landroid/content/ContentValues;
     :pswitch_4
     const-string v4, "Z074"
@@ -5782,7 +5889,7 @@
 
     move-result-object v3
 
-    .line 348
+    .line 350
     .local v3, "cv_spot_light":Landroid/content/ContentValues;
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -5796,7 +5903,7 @@
 
     invoke-static {v4, v3}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 349
+    .line 351
     const-string v4, "4014"
 
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -5817,14 +5924,14 @@
 
     goto/16 :goto_0
 
-    .line 356
+    .line 358
     .end local v3    # "cv_spot_light":Landroid/content/ContentValues;
     :cond_3
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->stopSliderMenuTimer()V
 
     goto/16 :goto_0
 
-    .line 330
+    .line 332
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -5842,42 +5949,42 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 366
+    .line 368
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_0
 
-    .line 367
+    .line 369
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 369
+    .line 371
     :cond_0
     iput-boolean v1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mIsShapeCorrectionTextHidedByTimeOut:Z
 
-    .line 370
+    .line 372
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v0, :cond_1
 
-    .line 371
+    .line 373
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_1
 
-    .line 372
+    .line 374
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mShapeCorrectionHelpText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 375
+    .line 377
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v0, :cond_2
 
-    .line 376
+    .line 378
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getMainHandler()Landroid/os/Handler;
@@ -5888,7 +5995,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 377
+    .line 379
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getMainHandler()Landroid/os/Handler;
@@ -5901,7 +6008,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 379
+    .line 381
     :cond_2
     return-void
 .end method

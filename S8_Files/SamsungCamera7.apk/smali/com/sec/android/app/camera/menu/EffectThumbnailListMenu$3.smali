@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     .prologue
-    .line 414
+    .line 415
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 1
 
     .prologue
-    .line 417
+    .line 418
     const-string v0, "5056"
 
     invoke-static {v0}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;)V
 
-    .line 418
+    .line 419
     return-void
 .end method
 
@@ -54,6 +54,6 @@
     .locals 0
 
     .prologue
-    .line 423
+    .line 424
     return-void
 .end method

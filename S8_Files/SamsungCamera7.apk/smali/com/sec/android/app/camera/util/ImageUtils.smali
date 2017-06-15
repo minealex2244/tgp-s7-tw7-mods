@@ -47,7 +47,7 @@
 
     .prologue
     .line 88
-    const v0, 0x7f0a0186
+    const v0, 0x7f0a0189
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -58,7 +58,7 @@
     sput v0, Lcom/sec/android/app/camera/util/ImageUtils;->SCREEN_SUPER_WIDE_WIDTH:I
 
     .line 89
-    const v0, 0x7f0a0188
+    const v0, 0x7f0a018b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -69,7 +69,7 @@
     sput v0, Lcom/sec/android/app/camera/util/ImageUtils;->SCREEN_WIDE_WIDTH:I
 
     .line 90
-    const v0, 0x7f0a0187
+    const v0, 0x7f0a018a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -80,7 +80,7 @@
     sput v0, Lcom/sec/android/app/camera/util/ImageUtils;->SCREEN_WIDE_HEIGHT:I
 
     .line 91
-    const v0, 0x7f0a0185
+    const v0, 0x7f0a0188
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -91,7 +91,7 @@
     sput v0, Lcom/sec/android/app/camera/util/ImageUtils;->SCREEN_NORMAL_WIDTH:I
 
     .line 92
-    const v0, 0x7f0a0184
+    const v0, 0x7f0a0187
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

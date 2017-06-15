@@ -93,7 +93,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/FastMotion;->FULL_SCREEN_HEIGHT:I
 
     .line 63
-    const v0, 0x7f0a01b0
+    const v0, 0x7f0a01b2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -104,7 +104,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/FastMotion;->SIDE_MENU_WIDTH:I
 
     .line 64
-    const v0, 0x7f0a01af
+    const v0, 0x7f0a01b1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -133,7 +133,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/FastMotion;->BASEMENU_GROUP_WIDTH:F
 
     .line 69
-    const v0, 0x7f0a0052
+    const v0, 0x7f0a0054
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -142,7 +142,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/FastMotion;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
     .line 70
-    const v0, 0x7f0a0372
+    const v0, 0x7f0a0375
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -151,7 +151,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/FastMotion;->PAGE_NAVIGATOR_GROUP_HEIGHT:F
 
     .line 71
-    const v0, 0x7f0a02a0
+    const v0, 0x7f0a02a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1239,7 +1239,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0901f6
+    const v3, 0x7f0901f9
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1345,7 +1345,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090233
+    const v3, 0x7f090236
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1932,7 +1932,7 @@
     .line 396
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/FastMotion;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f090278
+    const v1, 0x7f09027b
 
     const/4 v2, 0x1
 
@@ -1958,7 +1958,7 @@
     .line 403
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/FastMotion;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f090277
+    const v1, 0x7f09027a
 
     const/4 v2, 0x1
 

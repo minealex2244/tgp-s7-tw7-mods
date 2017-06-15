@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     .prologue
-    .line 579
+    .line 578
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,19 +42,19 @@
     .param p1, "step"    # I
 
     .prologue
-    .line 582
+    .line 581
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->updateSpotLightPosition(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$800(Lcom/sec/android/app/camera/menu/BeautyListMenu;I)V
 
-    .line 583
+    .line 582
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->restartSliderMenuTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$500(Lcom/sec/android/app/camera/menu/BeautyListMenu;)V
 
-    .line 584
+    .line 583
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -87,7 +87,7 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 585
+    .line 584
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -102,13 +102,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 586
+    .line 585
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$5;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->speakSpotLightPosition(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$900(Lcom/sec/android/app/camera/menu/BeautyListMenu;I)V
 
-    .line 588
+    .line 587
     :cond_0
     return-void
 .end method

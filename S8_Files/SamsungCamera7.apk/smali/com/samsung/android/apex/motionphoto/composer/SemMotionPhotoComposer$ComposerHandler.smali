@@ -25,13 +25,13 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 763
+    .line 764
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 764
+    .line 765
     iput-object p1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$ComposerHandler;->mComposer:Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;
 
-    .line 765
+    .line 766
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 770
+    .line 771
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$ComposerHandler;->mComposer:Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;
 
@@ -50,15 +50,15 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 774
+    .line 775
     :goto_0
     return-void
 
-    .line 771
+    .line 772
     :catch_0
     move-exception v0
 
-    .line 772
+    .line 773
     .local v0, "e":Landroid/os/RemoteException;
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
 

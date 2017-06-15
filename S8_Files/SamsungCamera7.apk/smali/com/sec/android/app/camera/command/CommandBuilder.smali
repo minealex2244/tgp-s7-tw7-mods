@@ -203,7 +203,7 @@
 
     if-lt p0, v1, :cond_0
 
-    const/16 v1, 0x2ee0
+    const/16 v1, 0x36b0
 
     if-ge p0, v1, :cond_0
 

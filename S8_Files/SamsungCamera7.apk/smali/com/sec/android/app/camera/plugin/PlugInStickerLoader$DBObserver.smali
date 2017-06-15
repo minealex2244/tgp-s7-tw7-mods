@@ -25,13 +25,13 @@
     .param p2, "handler"    # Landroid/os/Handler;
 
     .prologue
-    .line 386
+    .line 389
     iput-object p1, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader$DBObserver;->this$0:Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;
 
-    .line 387
+    .line 390
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 388
+    .line 391
     return-void
 .end method
 
@@ -49,7 +49,7 @@
 
     const/4 v8, 0x1
 
-    .line 392
+    .line 395
     const-string v5, "PlugInStickerLoader"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -82,7 +82,7 @@
 
     invoke-static {v5, v6}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 394
+    .line 397
     invoke-virtual {p2}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object v5
@@ -93,13 +93,13 @@
 
     move-result-object v3
 
-    .line 395
+    .line 398
     .local v3, "separated":[Ljava/lang/String;
     const/4 v5, 0x0
 
     aget-object v0, v3, v5
 
-    .line 398
+    .line 401
     .local v0, "action":Ljava/lang/String;
     const-string v5, "refreshAll"
 
@@ -109,24 +109,24 @@
 
     if-eqz v5, :cond_1
 
-    .line 399
+    .line 402
     const-string v5, "PlugInStickerLoader"
 
     const-string v6, "Refresh All Stickers"
 
     invoke-static {v5, v6}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 401
+    .line 404
     iget-object v5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader$DBObserver;->this$0:Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;
 
     invoke-virtual {v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->loadStickers()V
 
-    .line 430
+    .line 433
     :cond_0
     :goto_0
     return-void
 
-    .line 402
+    .line 405
     :cond_1
     const-string v5, "uninstall"
 
@@ -136,10 +136,10 @@
 
     if-eqz v5, :cond_2
 
-    .line 403
+    .line 406
     aget-object v4, v3, v8
 
-    .line 406
+    .line 409
     .local v4, "uninstalledPackageName":Ljava/lang/String;
     const-string v5, "PlugInStickerLoader"
 
@@ -163,10 +163,10 @@
 
     invoke-static {v5, v6}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 407
+    .line 410
     invoke-static {v4}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->removeStickerPackage(Ljava/lang/String;)V
 
-    .line 410
+    .line 413
     iget-object v5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader$DBObserver;->this$0:Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -178,30 +178,30 @@
 
     move-result-object v1
 
-    .line 411
+    .line 414
     .local v1, "mHandler":Landroid/os/Handler;
     if-eqz v1, :cond_0
 
-    .line 412
+    .line 415
     new-instance v2, Landroid/os/Message;
 
     invoke-direct {v2}, Landroid/os/Message;-><init>()V
 
-    .line 413
+    .line 416
     .local v2, "msg":Landroid/os/Message;
     const/16 v5, 0x68
 
     iput v5, v2, Landroid/os/Message;->what:I
 
-    .line 414
+    .line 417
     iput-object v4, v2, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 415
+    .line 418
     invoke-virtual {v1, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto :goto_0
 
-    .line 417
+    .line 420
     .end local v1    # "mHandler":Landroid/os/Handler;
     .end local v2    # "msg":Landroid/os/Message;
     .end local v4    # "uninstalledPackageName":Ljava/lang/String;
@@ -214,7 +214,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 418
+    .line 421
     aget-object v5, v3, v8
 
     const-string v6, "true"
@@ -225,7 +225,7 @@
 
     invoke-static {v8, v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->setNewStickerUploadInfo(IZ)V
 
-    .line 419
+    .line 422
     aget-object v5, v3, v9
 
     const-string v6, "true"
@@ -236,7 +236,7 @@
 
     invoke-static {v9, v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->setNewStickerUploadInfo(IZ)V
 
-    .line 420
+    .line 423
     aget-object v5, v3, v10
 
     const-string v6, "true"
@@ -247,7 +247,7 @@
 
     invoke-static {v10, v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->setNewStickerUploadInfo(IZ)V
 
-    .line 423
+    .line 426
     iget-object v5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader$DBObserver;->this$0:Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -259,22 +259,22 @@
 
     move-result-object v1
 
-    .line 424
+    .line 427
     .restart local v1    # "mHandler":Landroid/os/Handler;
     if-eqz v1, :cond_0
 
-    .line 425
+    .line 428
     new-instance v2, Landroid/os/Message;
 
     invoke-direct {v2}, Landroid/os/Message;-><init>()V
 
-    .line 426
+    .line 429
     .restart local v2    # "msg":Landroid/os/Message;
     const/16 v5, 0x69
 
     iput v5, v2, Landroid/os/Message;->what:I
 
-    .line 427
+    .line 430
     invoke-virtual {v1, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     goto/16 :goto_0

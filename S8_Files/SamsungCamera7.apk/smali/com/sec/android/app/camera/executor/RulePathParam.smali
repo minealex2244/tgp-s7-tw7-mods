@@ -12,6 +12,8 @@
 
 .field public static final PARAMETER_TYPE_CAMERA_SETTING:I = 0x3
 
+.field public static final PARAMETER_TYPE_CROSS_SHARE:I = 0x6
+
 .field public static final PARAMETER_TYPE_SHOOTING_MODE:I = 0x1
 
 .field public static final PARAMETER_TYPE_UNKNOWN:I = 0x0
@@ -22,9 +24,9 @@
 
 .field public static final PARAM_ID_AF_AREA:I = 0x32
 
-.field public static final PARAM_ID_ANTI_FOG:I = 0x42
+.field public static final PARAM_ID_ANTI_FOG:I = 0x41
 
-.field public static final PARAM_ID_ANTI_FOG_MODE:I = 0x41
+.field public static final PARAM_ID_ANTI_FOG_MODE:I = 0x40
 
 .field public static final PARAM_ID_ASSISTANT_SHUTTER_MODE:I = 0x1d
 
@@ -32,11 +34,11 @@
 
 .field public static final PARAM_ID_CAPTURE_MODE:I = 0x8
 
-.field public static final PARAM_ID_CHANGE_COMMON_TIMER:I = 0x46
+.field public static final PARAM_ID_CHANGE_COMMON_TIMER:I = 0x20
 
 .field public static final PARAM_ID_CHANGE_MODE:I = 0x7
 
-.field public static final PARAM_ID_COMMON_TIMER:I = 0x47
+.field public static final PARAM_ID_COMMON_TIMER:I = 0x21
 
 .field public static final PARAM_ID_DUAL_CAMERA_MODE:I = 0x1c
 
@@ -56,13 +58,11 @@
 
 .field public static final PARAM_ID_FRONT_RATIO:I = 0x2b
 
-.field public static final PARAM_ID_FRONT_TIMER:I = 0x21
-
 .field public static final PARAM_ID_FRONT_VIDEOSIZE:I = 0x2a
 
 .field public static final PARAM_ID_FRONT_VIDEO_MODE:I = 0x10
 
-.field public static final PARAM_ID_GALLERY_MODE:I = 0x40
+.field public static final PARAM_ID_GALLERY_MODE:I = 0x26
 
 .field public static final PARAM_ID_GRID_LINES:I = 0x2d
 
@@ -82,23 +82,23 @@
 
 .field public static final PARAM_ID_MOTION_PHOTO_MODE:I = 0x5
 
+.field public static final PARAM_ID_PACKAGES:I = 0x23
+
 .field public static final PARAM_ID_PANORAMA_MODE:I = 0x16
 
 .field public static final PARAM_ID_PRO_FILTER:I = 0x36
 
 .field public static final PARAM_ID_PRO_MODE:I = 0x17
 
-.field public static final PARAM_ID_QR_CODE_DETECTION_MODE:I = 0x43
+.field public static final PARAM_ID_QR_CODE_DETECTION_MODE:I = 0x42
 
-.field public static final PARAM_ID_QUICK_LAUNCH_SELECT:I = 0x44
+.field public static final PARAM_ID_QUICK_LAUNCH_SELECT:I = 0x43
 
 .field public static final PARAM_ID_REAR_PICTURE_MODE:I = 0xb
 
 .field public static final PARAM_ID_REAR_PIXEL:I = 0x29
 
 .field public static final PARAM_ID_REAR_RATIO:I = 0x28
-
-.field public static final PARAM_ID_REAR_TIMER:I = 0x20
 
 .field public static final PARAM_ID_REAR_VIDEOSIZE:I = 0x27
 
@@ -142,11 +142,7 @@
 
 .field public static final PARAM_ID_SWITCH_CAMERA_MODE:I = 0x9
 
-.field public static final PARAM_ID_TAKE_COMMON_TIMER:I = 0x48
-
-.field public static final PARAM_ID_TAKE_FRONT_TIMER:I = 0x23
-
-.field public static final PARAM_ID_TAKE_REAR_TIMER:I = 0x22
+.field public static final PARAM_ID_TAKE_COMMON_TIMER:I = 0x22
 
 .field public static final PARAM_ID_TIMER_MODE:I = 0x4
 
@@ -162,7 +158,7 @@
 
 .field public static final PARAM_ID_WB:I = 0x37
 
-.field public static final PARAM_ID_WECHAT_VIDEO_MODE:I = 0x45
+.field public static final PARAM_ID_WECHAT_VIDEO_MODE:I = 0x44
 
 .field public static final PARAM_ID_WIDE_SELFIE_MODE:I = 0x1b
 
@@ -201,7 +197,7 @@
     .locals 1
 
     .prologue
-    .line 126
+    .line 130
     new-instance v0, Lcom/sec/android/app/camera/executor/RulePathParam$1;
 
     invoke-direct {v0}, Lcom/sec/android/app/camera/executor/RulePathParam$1;-><init>()V
@@ -226,7 +222,7 @@
     .param p0, "paramName"    # Ljava/lang/String;
 
     .prologue
-    .line 204
+    .line 205
     const-string v1, "RulePathParam"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -249,129 +245,130 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 205
+    .line 206
     invoke-static {p0}, Lcom/sec/android/app/camera/executor/RulePathParam;->getParamIDbyName(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 206
+    .line 207
     .local v0, "paramId":I
     packed-switch v0, :pswitch_data_0
 
-    .line 285
-    :pswitch_0
+    .line 284
     const/4 v1, 0x0
 
     :goto_0
     return v1
 
-    .line 243
-    :pswitch_1
+    .line 244
+    :pswitch_0
     const/4 v1, 0x1
 
     goto :goto_0
 
-    .line 246
-    :pswitch_2
+    .line 247
+    :pswitch_1
     const/4 v1, 0x2
 
     goto :goto_0
 
-    .line 271
-    :pswitch_3
+    .line 268
+    :pswitch_2
     const/4 v1, 0x3
 
     goto :goto_0
 
-    .line 278
-    :pswitch_4
+    .line 275
+    :pswitch_3
     const/4 v1, 0x5
 
     goto :goto_0
 
-    .line 282
-    :pswitch_5
+    .line 279
+    :pswitch_4
     const/4 v1, 0x4
 
     goto :goto_0
 
-    .line 206
+    .line 281
+    :pswitch_5
+    const/4 v1, 0x6
+
+    goto :goto_0
+
+    .line 207
     nop
 
     :pswitch_data_0
     .packed-switch 0x1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_2
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_5
-        :pswitch_5
         :pswitch_0
-        :pswitch_4
-        :pswitch_4
-        :pswitch_4
-        :pswitch_4
-        :pswitch_4
-        :pswitch_4
-        :pswitch_3
-        :pswitch_3
-        :pswitch_5
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
-        :pswitch_3
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
         :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_1
-        :pswitch_3
-        :pswitch_1
-        :pswitch_3
         :pswitch_1
         :pswitch_2
+        :pswitch_2
+        :pswitch_5
+        :pswitch_4
+        :pswitch_4
+        :pswitch_0
         :pswitch_3
         :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_3
+        :pswitch_2
+        :pswitch_2
+        :pswitch_4
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_2
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_2
+        :pswitch_0
+        :pswitch_2
+        :pswitch_0
     .end packed-switch
 .end method
 
@@ -380,7 +377,7 @@
     .param p0, "id"    # I
 
     .prologue
-    .line 290
+    .line 289
     sget-object v0, Lcom/sec/android/app/camera/executor/RulePathParam;->mStringDepot:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -397,10 +394,10 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 388
+    .line 387
     const/4 v3, -0x1
 
-    .line 389
+    .line 388
     .local v3, "stateID":I
     const/4 v1, 0x0
 
@@ -414,14 +411,14 @@
 
     if-ge v1, v4, :cond_0
 
-    .line 390
+    .line 389
     sget-object v4, Lcom/sec/android/app/camera/executor/RulePathParam;->mStringDepot:Landroid/util/SparseArray;
 
     invoke-virtual {v4, v1}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v2
 
-    .line 391
+    .line 390
     .local v2, "key":I
     sget-object v4, Lcom/sec/android/app/camera/executor/RulePathParam;->mStringDepot:Landroid/util/SparseArray;
 
@@ -431,7 +428,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 392
+    .line 391
     .local v0, "findName":Ljava/lang/String;
     if-eqz v0, :cond_1
 
@@ -441,16 +438,16 @@
 
     if-eqz v4, :cond_1
 
-    .line 393
+    .line 392
     move v3, v2
 
-    .line 397
+    .line 396
     .end local v0    # "findName":Ljava/lang/String;
     .end local v2    # "key":I
     :cond_0
     return v3
 
-    .line 389
+    .line 388
     .restart local v0    # "findName":Ljava/lang/String;
     .restart local v2    # "key":I
     :cond_1
@@ -466,7 +463,7 @@
     .param p2, "isFrontPictureSize"    # Z
 
     .prologue
-    .line 401
+    .line 400
     const-string v0, ""
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -475,14 +472,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 402
+    .line 401
     const-string v0, ""
 
-    .line 443
+    .line 442
     :goto_0
     return-object v0
 
-    .line 403
+    .line 402
     :cond_0
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -492,15 +489,15 @@
 
     move-result-object p1
 
-    .line 404
+    .line 403
     if-eqz p2, :cond_a
 
-    .line 405
+    .line 404
     const-string v0, "large"
 
     if-ne p0, v0, :cond_15
 
-    .line 406
+    .line 405
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -515,7 +512,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 407
+    .line 406
     const-string v0, "8m"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -532,13 +529,13 @@
 
     if-eqz v0, :cond_2
 
-    .line 408
+    .line 407
     :cond_1
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 409
+    .line 408
     :cond_2
     const-string v0, "6m"
 
@@ -556,13 +553,13 @@
 
     if-eqz v0, :cond_15
 
-    .line 411
+    .line 410
     :cond_3
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 414
+    .line 413
     :cond_4
     const-string v0, "5m"
 
@@ -580,13 +577,13 @@
 
     if-eqz v0, :cond_6
 
-    .line 415
+    .line 414
     :cond_5
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 416
+    .line 415
     :cond_6
     const-string v0, "3.8m"
 
@@ -604,13 +601,13 @@
 
     if-eqz v0, :cond_8
 
-    .line 417
+    .line 416
     :cond_7
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 418
+    .line 417
     :cond_8
     const-string v0, "3.7m"
 
@@ -628,19 +625,19 @@
 
     if-eqz v0, :cond_15
 
-    .line 419
+    .line 418
     :cond_9
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 424
+    .line 423
     :cond_a
     const-string v0, "large"
 
     if-ne p0, v0, :cond_e
 
-    .line 425
+    .line 424
     const-string v0, "12m"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -657,13 +654,13 @@
 
     if-eqz v0, :cond_c
 
-    .line 426
+    .line 425
     :cond_b
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 427
+    .line 426
     :cond_c
     const-string v0, "9.1m"
 
@@ -681,19 +678,19 @@
 
     if-eqz v0, :cond_15
 
-    .line 429
+    .line 428
     :cond_d
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 431
+    .line 430
     :cond_e
     const-string v0, "medium"
 
     if-ne p0, v0, :cond_14
 
-    .line 432
+    .line 431
     const-string v0, "6.2m"
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -710,13 +707,13 @@
 
     if-eqz v0, :cond_10
 
-    .line 433
+    .line 432
     :cond_f
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 434
+    .line 433
     :cond_10
     const-string v0, "3.7m"
 
@@ -734,13 +731,13 @@
 
     if-eqz v0, :cond_12
 
-    .line 435
+    .line 434
     :cond_11
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 436
+    .line 435
     :cond_12
     const-string v0, "4.7mb"
 
@@ -758,24 +755,24 @@
 
     if-eqz v0, :cond_15
 
-    .line 437
+    .line 436
     :cond_13
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 439
+    .line 438
     :cond_14
     const-string v0, "super_wide"
 
     if-ne p0, v0, :cond_15
 
-    .line 440
+    .line 439
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_18DOT5BY9:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 443
+    .line 442
     :cond_15
     const-string v0, ""
 
@@ -789,7 +786,7 @@
     .param p2, "isFrontPictureSize"    # Z
 
     .prologue
-    .line 294
+    .line 293
     const-string v1, "RulePathParam"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -822,16 +819,16 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 295
+    .line 294
     invoke-static {p1, p2}, Lcom/sec/android/app/camera/executor/RulePathParam;->getResolutionType(Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 296
+    .line 295
     .local v0, "resolutionType":Ljava/lang/String;
     if-eqz p2, :cond_c
 
-    .line 297
+    .line 296
     const-string v1, "16:9"
 
     invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -840,7 +837,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 298
+    .line 297
     const-string v1, "large"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -849,14 +846,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 299
+    .line 298
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
-    .line 372
+    .line 371
     :goto_0
     return-object v1
 
-    .line 300
+    .line 299
     :cond_0
     const-string v1, "medium"
 
@@ -866,12 +863,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 301
+    .line 300
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 302
+    .line 301
     :cond_1
     const-string v1, "small"
 
@@ -881,12 +878,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 303
+    .line 302
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 304
+    .line 303
     :cond_2
     const-string v1, ""
 
@@ -896,12 +893,12 @@
 
     if-eqz v1, :cond_1b
 
-    .line 305
+    .line 304
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 307
+    .line 306
     :cond_3
     const-string v1, "4:3"
 
@@ -911,7 +908,7 @@
 
     if-eqz v1, :cond_7
 
-    .line 308
+    .line 307
     const-string v1, "large"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -920,12 +917,12 @@
 
     if-eqz v1, :cond_4
 
-    .line 309
+    .line 308
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 310
+    .line 309
     :cond_4
     const-string v1, "medium"
 
@@ -935,12 +932,12 @@
 
     if-eqz v1, :cond_5
 
-    .line 311
+    .line 310
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 312
+    .line 311
     :cond_5
     const-string v1, "small"
 
@@ -950,12 +947,12 @@
 
     if-eqz v1, :cond_6
 
-    .line 313
+    .line 312
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 314
+    .line 313
     :cond_6
     const-string v1, ""
 
@@ -965,12 +962,12 @@
 
     if-eqz v1, :cond_1b
 
-    .line 315
+    .line 314
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 317
+    .line 316
     :cond_7
     const-string v1, "1:1"
 
@@ -980,7 +977,7 @@
 
     if-eqz v1, :cond_b
 
-    .line 318
+    .line 317
     const-string v1, "large"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -989,12 +986,12 @@
 
     if-eqz v1, :cond_8
 
-    .line 319
+    .line 318
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 320
+    .line 319
     :cond_8
     const-string v1, "medium"
 
@@ -1004,12 +1001,12 @@
 
     if-eqz v1, :cond_9
 
-    .line 321
+    .line 320
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 322
+    .line 321
     :cond_9
     const-string v1, "small"
 
@@ -1019,12 +1016,12 @@
 
     if-eqz v1, :cond_a
 
-    .line 323
+    .line 322
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 324
+    .line 323
     :cond_a
     const-string v1, ""
 
@@ -1034,12 +1031,12 @@
 
     if-eqz v1, :cond_1b
 
-    .line 325
+    .line 324
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 327
+    .line 326
     :cond_b
     const-string v1, ""
 
@@ -1049,14 +1046,14 @@
 
     if-eqz v1, :cond_1b
 
-    .line 328
+    .line 327
     invoke-static {v0, p1, p2}, Lcom/sec/android/app/camera/executor/RulePathParam;->getResolutionByResolutionType(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v1
 
     goto/16 :goto_0
 
-    .line 331
+    .line 330
     :cond_c
     const-string v1, "16:9"
 
@@ -1066,7 +1063,7 @@
 
     if-eqz v1, :cond_10
 
-    .line 332
+    .line 331
     const-string v1, "large"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1075,12 +1072,12 @@
 
     if-eqz v1, :cond_d
 
-    .line 333
+    .line 332
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 334
+    .line 333
     :cond_d
     const-string v1, "medium"
 
@@ -1090,12 +1087,12 @@
 
     if-eqz v1, :cond_e
 
-    .line 335
+    .line 334
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 336
+    .line 335
     :cond_e
     const-string v1, "small"
 
@@ -1105,12 +1102,12 @@
 
     if-eqz v1, :cond_f
 
-    .line 337
+    .line 336
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 338
+    .line 337
     :cond_f
     const-string v1, ""
 
@@ -1120,12 +1117,12 @@
 
     if-eqz v1, :cond_1b
 
-    .line 339
+    .line 338
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 341
+    .line 340
     :cond_10
     const-string v1, "4:3"
 
@@ -1135,7 +1132,7 @@
 
     if-eqz v1, :cond_14
 
-    .line 342
+    .line 341
     const-string v1, "large"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1144,12 +1141,12 @@
 
     if-eqz v1, :cond_11
 
-    .line 343
+    .line 342
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 344
+    .line 343
     :cond_11
     const-string v1, "medium"
 
@@ -1159,12 +1156,12 @@
 
     if-eqz v1, :cond_12
 
-    .line 345
+    .line 344
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 346
+    .line 345
     :cond_12
     const-string v1, "small"
 
@@ -1174,12 +1171,12 @@
 
     if-eqz v1, :cond_13
 
-    .line 347
+    .line 346
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 348
+    .line 347
     :cond_13
     const-string v1, ""
 
@@ -1189,12 +1186,12 @@
 
     if-eqz v1, :cond_1b
 
-    .line 349
+    .line 348
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 351
+    .line 350
     :cond_14
     const-string v1, "1:1"
 
@@ -1204,7 +1201,7 @@
 
     if-eqz v1, :cond_18
 
-    .line 352
+    .line 351
     const-string v1, "large"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1213,12 +1210,12 @@
 
     if-eqz v1, :cond_15
 
-    .line 353
+    .line 352
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 354
+    .line 353
     :cond_15
     const-string v1, "medium"
 
@@ -1228,12 +1225,12 @@
 
     if-eqz v1, :cond_16
 
-    .line 355
+    .line 354
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 356
+    .line 355
     :cond_16
     const-string v1, "small"
 
@@ -1243,12 +1240,12 @@
 
     if-eqz v1, :cond_17
 
-    .line 357
+    .line 356
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 358
+    .line 357
     :cond_17
     const-string v1, ""
 
@@ -1258,12 +1255,12 @@
 
     if-eqz v1, :cond_1b
 
-    .line 359
+    .line 358
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 361
+    .line 360
     :cond_18
     const-string v1, "18.5:9"
 
@@ -1273,7 +1270,7 @@
 
     if-eqz v1, :cond_1a
 
-    .line 362
+    .line 361
     const-string v1, "super_wide"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1282,12 +1279,12 @@
 
     if-eqz v1, :cond_19
 
-    .line 363
+    .line 362
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_18DOT5BY9:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 364
+    .line 363
     :cond_19
     const-string v1, ""
 
@@ -1297,12 +1294,12 @@
 
     if-eqz v1, :cond_1b
 
-    .line 365
+    .line 364
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_18DOT5BY9:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 367
+    .line 366
     :cond_1a
     const-string v1, ""
 
@@ -1312,14 +1309,14 @@
 
     if-eqz v1, :cond_1b
 
-    .line 368
+    .line 367
     invoke-static {v0, p1, p2}, Lcom/sec/android/app/camera/executor/RulePathParam;->getResolutionByResolutionType(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v1
 
     goto/16 :goto_0
 
-    .line 371
+    .line 370
     :cond_1b
     const-string v1, "RulePathParam"
 
@@ -1327,7 +1324,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 372
+    .line 371
     const-string v1, ""
 
     goto/16 :goto_0
@@ -1339,7 +1336,7 @@
     .param p1, "isFrontPictureSize"    # Z
 
     .prologue
-    .line 448
+    .line 447
     const-string v0, "large"
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1364,13 +1361,13 @@
 
     if-eqz v0, :cond_1
 
-    .line 473
+    .line 472
     .end local p0    # "pixel":Ljava/lang/String;
     :cond_0
     :goto_0
     return-object p0
 
-    .line 451
+    .line 450
     .restart local p0    # "pixel":Ljava/lang/String;
     :cond_1
     const-string v0, ""
@@ -1381,12 +1378,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 452
+    .line 451
     const-string p0, ""
 
     goto :goto_0
 
-    .line 453
+    .line 452
     :cond_2
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -1396,10 +1393,10 @@
 
     move-result-object p0
 
-    .line 454
+    .line 453
     if-eqz p1, :cond_6
 
-    .line 455
+    .line 454
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -1414,7 +1411,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 456
+    .line 455
     const-string v0, "6m"
 
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1447,13 +1444,13 @@
 
     if-eqz v0, :cond_c
 
-    .line 457
+    .line 456
     :cond_3
     const-string p0, "large"
 
     goto :goto_0
 
-    .line 460
+    .line 459
     :cond_4
     const-string v0, "5m"
 
@@ -1503,13 +1500,13 @@
 
     if-eqz v0, :cond_c
 
-    .line 461
+    .line 460
     :cond_5
     const-string p0, "large"
 
     goto :goto_0
 
-    .line 465
+    .line 464
     :cond_6
     const-string v0, "12m"
 
@@ -1559,13 +1556,13 @@
 
     if-eqz v0, :cond_8
 
-    .line 466
+    .line 465
     :cond_7
     const-string p0, "large"
 
     goto/16 :goto_0
 
-    .line 467
+    .line 466
     :cond_8
     const-string v0, "6.2m"
 
@@ -1615,13 +1612,13 @@
 
     if-eqz v0, :cond_a
 
-    .line 468
+    .line 467
     :cond_9
     const-string p0, "medium"
 
     goto/16 :goto_0
 
-    .line 469
+    .line 468
     :cond_a
     const-string v0, "7.9m"
 
@@ -1639,13 +1636,13 @@
 
     if-eqz v0, :cond_c
 
-    .line 470
+    .line 469
     :cond_b
     const-string p0, "super_wide"
 
     goto/16 :goto_0
 
-    .line 473
+    .line 472
     :cond_c
     const-string p0, "NONE"
 
@@ -1657,10 +1654,10 @@
     .param p0, "modeName"    # Ljava/lang/String;
 
     .prologue
-    .line 376
+    .line 375
     move-object v0, p0
 
-    .line 377
+    .line 376
     .local v0, "newModeName":Ljava/lang/String;
     const-string v1, "Front "
 
@@ -1670,7 +1667,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 378
+    .line 377
     const-string v1, "Front "
 
     const-string v2, ""
@@ -1679,7 +1676,7 @@
 
     move-result-object v0
 
-    .line 381
+    .line 380
     :cond_0
     :goto_0
     const-string v1, "_unsupported"
@@ -1690,7 +1687,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 382
+    .line 381
     const-string v1, "_unsupported"
 
     const-string v2, ""
@@ -1699,11 +1696,11 @@
 
     move-result-object v0
 
-    .line 384
+    .line 383
     :cond_1
     return-object v0
 
-    .line 379
+    .line 378
     :cond_2
     const-string v1, "Rear "
 
@@ -1713,7 +1710,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 380
+    .line 379
     const-string v1, "Rear "
 
     const-string v2, ""

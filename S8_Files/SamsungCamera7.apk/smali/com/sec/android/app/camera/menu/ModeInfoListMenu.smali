@@ -142,7 +142,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->SCREEN_HEIGHT:F
 
     .line 66
-    const v2, 0x7f0a0350
+    const v2, 0x7f0a0353
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -153,7 +153,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_ACTION_BAR_ICON_SIZE:F
 
     .line 67
-    const v2, 0x7f0a016a
+    const v2, 0x7f0a016d
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -164,7 +164,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_ACTION_BAR_ICON_TOP_MARGIN:F
 
     .line 68
-    const v2, 0x7f0a0169
+    const v2, 0x7f0a016c
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -209,7 +209,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_ACTION_BAR_HEIGHT:F
 
     .line 71
-    const v2, 0x7f0a028b
+    const v2, 0x7f0a028e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -231,7 +231,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_ACTION_BAR_FONT_COLOR:I
 
     .line 73
-    const v2, 0x7f0a0175
+    const v2, 0x7f0a0178
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -242,7 +242,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_LIST_START_POS_Y:F
 
     .line 74
-    const v2, 0x7f0a0172
+    const v2, 0x7f0a0175
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -567,7 +567,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901d0
+    const v4, 0x7f0901d3
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

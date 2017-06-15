@@ -90,7 +90,7 @@
 
     const/4 v3, 0x0
 
-    .line 1139
+    .line 1141
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "LICHUN"
@@ -99,7 +99,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->LICHUN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1140
+    .line 1142
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "YUSHUI"
@@ -108,7 +108,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->YUSHUI:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1141
+    .line 1143
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "JINGZHE"
@@ -117,7 +117,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->JINGZHE:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1142
+    .line 1144
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "CHUNFEN"
@@ -126,7 +126,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->CHUNFEN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1143
+    .line 1145
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "QINGMING"
@@ -135,7 +135,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->QINGMING:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1144
+    .line 1146
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "GUYU"
@@ -146,7 +146,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->GUYU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1145
+    .line 1147
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "LIXIA"
@@ -157,7 +157,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->LIXIA:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1146
+    .line 1148
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "XIAOMAN"
@@ -168,7 +168,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOMAN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1147
+    .line 1149
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "MANGZHONG"
@@ -179,7 +179,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->MANGZHONG:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1148
+    .line 1150
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "XIAZHI"
@@ -190,7 +190,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAZHI:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1149
+    .line 1151
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "XIAOSHU"
@@ -201,7 +201,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOSHU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1150
+    .line 1152
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "DASHU"
@@ -212,7 +212,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->DASHU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1151
+    .line 1153
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "LIQIU"
@@ -223,7 +223,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->LIQIU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1152
+    .line 1154
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "CHUSHU"
@@ -234,7 +234,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->CHUSHU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1153
+    .line 1155
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "BAILU"
@@ -245,7 +245,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->BAILU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1154
+    .line 1156
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "QIUFEN"
@@ -256,7 +256,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->QIUFEN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1155
+    .line 1157
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "HANLU"
@@ -267,7 +267,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->HANLU:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1156
+    .line 1158
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "SHUANGJIANG"
@@ -278,7 +278,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->SHUANGJIANG:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1157
+    .line 1159
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "LIDONG"
@@ -289,7 +289,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->LIDONG:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1158
+    .line 1160
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "XIAOXUE"
@@ -300,7 +300,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOXUE:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1159
+    .line 1161
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "DAXUE"
@@ -311,7 +311,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->DAXUE:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1160
+    .line 1162
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "DONGZHI"
@@ -322,7 +322,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->DONGZHI:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1161
+    .line 1163
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "XIAOHAN"
@@ -333,7 +333,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->XIAOHAN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1162
+    .line 1164
     new-instance v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     const-string v1, "DAHAN"
@@ -344,7 +344,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->DAHAN:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
-    .line 1138
+    .line 1140
     const/16 v0, 0x18
 
     new-array v0, v0, [Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
@@ -497,7 +497,7 @@
     .end annotation
 
     .prologue
-    .line 1138
+    .line 1140
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -508,7 +508,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 1138
+    .line 1140
     const-class v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -524,7 +524,7 @@
     .locals 1
 
     .prologue
-    .line 1138
+    .line 1140
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->$VALUES:[Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;
 
     invoke-virtual {v0}, [Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader$SolarTermsEnum;->clone()Ljava/lang/Object;

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;
 
     .prologue
-    .line 831
+    .line 851
     iput-object p1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor$1;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 834
+    .line 854
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor$1;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;
 
     # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->lastTask:Ljava/util/concurrent/atomic/AtomicReference;
@@ -57,14 +57,14 @@
 
     check-cast v0, Ljava/lang/Runnable;
 
-    .line 835
+    .line 855
     .local v0, "task":Ljava/lang/Runnable;
     if-eqz v0, :cond_0
 
-    .line 836
+    .line 856
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 838
+    .line 858
     :cond_0
     return-void
 .end method

@@ -128,7 +128,7 @@
 
     .prologue
     .line 85
-    const v0, 0x7f0a0369
+    const v0, 0x7f0a036c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -137,7 +137,7 @@
     sput v0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HORIZONTAL_ARROW_ANIMATION_OFFSET:F
 
     .line 86
-    const v0, 0x7f0a036b
+    const v0, 0x7f0a036e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -146,7 +146,7 @@
     sput v0, Lcom/sec/android/app/camera/menu/OverlayHelp;->VERTICAL_ARROW_ANIMATION_OFFSET:F
 
     .line 87
-    const v0, 0x7f0a0392
+    const v0, 0x7f0a0395
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -165,11 +165,11 @@
     .param p4, "height"    # F
 
     .prologue
-    const v4, 0x7f0a0370
+    const v4, 0x7f0a0373
 
-    const v3, 0x7f0a036e
+    const v3, 0x7f0a0371
 
-    const v2, 0x7f0a036d
+    const v2, 0x7f0a0370
 
     const/4 v1, 0x0
 
@@ -181,7 +181,7 @@
     invoke-direct {p0, v0, p3, p4}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 89
-    const v0, 0x7f0a0371
+    const v0, 0x7f0a0374
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -192,7 +192,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HELP_TITLE_TOP_MARGIN_PORT:I
 
     .line 90
-    const v0, 0x7f0a003f
+    const v0, 0x7f0a0041
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -203,7 +203,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HELP_TITLE_TOP_MARGIN_LAND:I
 
     .line 91
-    const v0, 0x7f0a0366
+    const v0, 0x7f0a0369
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -225,7 +225,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_PAGER_LAYOUT_TOP_MARGIN_PORT:I
 
     .line 94
-    const v0, 0x7f0a036f
+    const v0, 0x7f0a0372
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -254,7 +254,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_PAGER_LAYOUT_TOP_MARGIN_LAND:I
 
     .line 98
-    const v0, 0x7f0a036c
+    const v0, 0x7f0a036f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -285,7 +285,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_MENU_BAR_BOTTOM_MARGIN_PORT:I
 
     .line 102
-    const v0, 0x7f0a036a
+    const v0, 0x7f0a036d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -296,7 +296,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_MENU_BAR_BOTTOM_MARGIN_LAND:I
 
     .line 104
-    const v0, 0x7f0a003d
+    const v0, 0x7f0a003f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -307,7 +307,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_LAYOUT_TOP_MARGIN_PORT:I
 
     .line 105
-    const v0, 0x7f0a0365
+    const v0, 0x7f0a0368
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -336,7 +336,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_LAYOUT_TOP_MARGIN_LAND:I
 
     .line 109
-    const v0, 0x7f0a0362
+    const v0, 0x7f0a0365
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -356,7 +356,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_LAYOUT_SIDE_MARGIN_LAND:I
 
     .line 112
-    const v0, 0x7f0a0361
+    const v0, 0x7f0a0364
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -367,7 +367,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_BUTTON_BOTTOM_MARGIN_PORT:I
 
     .line 113
-    const v0, 0x7f0a035f
+    const v0, 0x7f0a0362
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -378,7 +378,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_BUTTON_BOTTOM_MARGIN_LAND:I
 
     .line 115
-    const v0, 0x7f0a0364
+    const v0, 0x7f0a0367
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -389,7 +389,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_MAIN_LAYOUT_TOP_MARGIN_FOR_MOBILE_KEYBOARD:I
 
     .line 116
-    const v0, 0x7f0a0363
+    const v0, 0x7f0a0366
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -400,7 +400,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_MAIN_LAYOUT_BOTTOM_MARGIN_FOR_MOBILE_KEYBOARD:I
 
     .line 117
-    const v0, 0x7f0a0360
+    const v0, 0x7f0a0363
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

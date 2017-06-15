@@ -77,7 +77,7 @@
     invoke-direct {v0, v3, v1, v2}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 57
-    const v3, 0x7f0a01a9
+    const v3, 0x7f0a01ab
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -88,7 +88,7 @@
     iput v3, v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->QR_BUTTON_TEXT_FONT_SIZE:F
 
     .line 58
-    const v3, 0x7f0a01aa
+    const v3, 0x7f0a01ac
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -99,7 +99,7 @@
     iput v3, v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->QR_BUTTON_TEXT_TOP_MARGIN:F
 
     .line 59
-    const v3, 0x7f0a01a8
+    const v3, 0x7f0a01aa
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -127,7 +127,7 @@
 
     int-to-float v3, v3
 
-    const v4, 0x7f0a01a7
+    const v4, 0x7f0a01a9
 
     invoke-static {v4}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -139,7 +139,7 @@
 
     sub-float/2addr v3, v4
 
-    const v4, 0x7f0a01a6
+    const v4, 0x7f0a01a8
 
     invoke-static {v4}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -156,7 +156,7 @@
     iput v3, v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->QR_BUTTON_MAX_TEXT_WIDTH:F
 
     .line 62
-    const v3, 0x7f0a01a7
+    const v3, 0x7f0a01a9
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -167,7 +167,7 @@
     iput v3, v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->QR_BUTTON_SIDE_PADDING:F
 
     .line 63
-    const v3, 0x7f0a01a2
+    const v3, 0x7f0a01a4
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -178,7 +178,7 @@
     iput v3, v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->QR_BUTTON_ICON_MARGIN:F
 
     .line 64
-    const v3, 0x7f0a01a3
+    const v3, 0x7f0a01a5
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -189,7 +189,7 @@
     iput v3, v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->QR_BUTTON_ICON_WIDTH:F
 
     .line 65
-    const v3, 0x7f0a01a4
+    const v3, 0x7f0a01a6
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -200,7 +200,7 @@
     iput v3, v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->QR_BUTTON_LANDSCAPE_OFFSET_Y:F
 
     .line 66
-    const v3, 0x7f0a01a5
+    const v3, 0x7f0a01a7
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -211,7 +211,7 @@
     iput v3, v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->QR_BUTTON_PORTRAIT_OFFSET_Y:F
 
     .line 67
-    const v3, 0x7f0a02ed
+    const v3, 0x7f0a02f1
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -277,7 +277,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901e9
+    const v4, 0x7f0901ec
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -293,7 +293,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901ea
+    const v4, 0x7f0901ed
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

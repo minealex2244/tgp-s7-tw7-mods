@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     .prologue
-    .line 1573
+    .line 1575
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 1576
+    .line 1578
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
@@ -51,7 +51,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090230
+    const v2, 0x7f090233
 
     const/4 v3, 0x0
 
@@ -62,7 +62,7 @@
     # setter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mStickerToast:Landroid/widget/Toast;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$1202(Lcom/sec/android/app/camera/shootingmode/Selfie;Landroid/widget/Toast;)Landroid/widget/Toast;
 
-    .line 1577
+    .line 1579
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mStickerToast:Landroid/widget/Toast;
@@ -72,7 +72,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1578
+    .line 1580
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mStickerToast:Landroid/widget/Toast;
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1579
+    .line 1581
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     const/4 v1, 0x1
@@ -90,7 +90,7 @@
     # setter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mIsAlreadyShowStickerToast:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$1302(Lcom/sec/android/app/camera/shootingmode/Selfie;Z)Z
 
-    .line 1582
+    .line 1584
     :cond_0
     return-void
 .end method

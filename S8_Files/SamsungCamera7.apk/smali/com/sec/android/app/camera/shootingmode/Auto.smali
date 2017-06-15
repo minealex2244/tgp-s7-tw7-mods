@@ -180,7 +180,7 @@
     sput-object v0, Lcom/sec/android/app/camera/shootingmode/Auto;->URL_PREFIX:[Ljava/lang/String;
 
     .line 91
-    const v0, 0x7f0a029c
+    const v0, 0x7f0a02a0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -189,7 +189,7 @@
     sput v0, Lcom/sec/android/app/camera/shootingmode/Auto;->LIVE_BEAUTY_FACE_OFF_IMAGE_POS_X:F
 
     .line 92
-    const v0, 0x7f0a0053
+    const v0, 0x7f0a0055
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -208,7 +208,7 @@
     .prologue
     const v6, 0x7f0a0016
 
-    const v5, 0x7f0a025e
+    const v5, 0x7f0a0261
 
     const v4, 0x7f0a0012
 
@@ -220,7 +220,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 95
-    const v0, 0x7f0a0326
+    const v0, 0x7f0a0329
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -229,7 +229,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->FACE_DETECTION_GROUP_WIDTH:F
 
     .line 96
-    const v0, 0x7f0a032b
+    const v0, 0x7f0a032e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -238,7 +238,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->FACE_DETECTION_TEXT_WIDTH:F
 
     .line 97
-    const v0, 0x7f0a0328
+    const v0, 0x7f0a032b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -247,7 +247,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->FACE_DETECTION_TEXT_HEIGHT:F
 
     .line 98
-    const v0, 0x7f0a0327
+    const v0, 0x7f0a032a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -256,7 +256,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->FACE_DETECTION_IMAGE_WIDTH:F
 
     .line 99
-    const v0, 0x7f0a0329
+    const v0, 0x7f0a032c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -265,7 +265,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->FACE_DETECTION_TEXT_MARGIN_FROM_IMAGE:F
 
     .line 100
-    const v0, 0x7f0a032a
+    const v0, 0x7f0a032d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -274,7 +274,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->FACE_DETECTION_TEXT_SIZE:F
 
     .line 101
-    const v0, 0x7f0a039e
+    const v0, 0x7f0a03a1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -292,7 +292,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->BUTTON_FONT_COLOR:I
 
     .line 104
-    const v0, 0x7f0a025f
+    const v0, 0x7f0a0262
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -337,7 +337,7 @@
 
     float-to-int v0, v0
 
-    const v1, 0x7f0a03aa
+    const v1, 0x7f0a03ad
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -347,7 +347,7 @@
 
     add-int/2addr v0, v1
 
-    const v1, 0x7f0a03a8
+    const v1, 0x7f0a03ab
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -379,7 +379,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->BEAUTY_MENU_BUTTON_POS_X_FOR_MOBILE_KEYBOARD:I
 
     .line 109
-    const v0, 0x7f0a025f
+    const v0, 0x7f0a0262
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -437,7 +437,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->VISION_INTELLIGENCE_BUTTON_POS_X_FOR_MOBILE_KEYBOARD:I
 
     .line 115
-    const v0, 0x7f0a03aa
+    const v0, 0x7f0a03ad
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -467,7 +467,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->STICKER_SHORTCUT_BUTTON_POS_X:I
 
     .line 118
-    const v0, 0x7f0a03a9
+    const v0, 0x7f0a03ac
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -718,7 +718,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1123
+    .line 1125
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isPausing()Z
@@ -727,18 +727,18 @@
 
     if-eqz v1, :cond_0
 
-    .line 1124
+    .line 1126
     const-string v1, "Auto"
 
     const-string v2, "checkQRDetectCondition return isPausing"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1139
+    .line 1141
     :goto_0
     return v0
 
-    .line 1127
+    .line 1129
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -748,7 +748,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1128
+    .line 1130
     const-string v1, "Auto"
 
     const-string v2, "checkQRDetectCondition return isStartPreview"
@@ -757,7 +757,7 @@
 
     goto :goto_0
 
-    .line 1131
+    .line 1133
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -767,7 +767,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 1132
+    .line 1134
     const-string v1, "Auto"
 
     const-string v2, "checkQRDetectCondition return shutter key is already pressed"
@@ -776,7 +776,7 @@
 
     goto :goto_0
 
-    .line 1135
+    .line 1137
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -794,7 +794,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 1136
+    .line 1138
     :cond_3
     const-string v1, "Auto"
 
@@ -804,7 +804,7 @@
 
     goto :goto_0
 
-    .line 1139
+    .line 1141
     :cond_4
     const/4 v0, 0x1
 
@@ -815,26 +815,26 @@
     .locals 2
 
     .prologue
-    .line 1143
+    .line 1145
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBeautySupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 1144
+    .line 1146
     const-string v0, "Auto"
 
     const-string v1, "hideBeautyMenuButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1145
+    .line 1147
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1147
+    .line 1149
     :cond_0
     return-void
 .end method
@@ -843,7 +843,7 @@
     .locals 1
 
     .prologue
-    .line 1150
+    .line 1152
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     if-eqz v0, :cond_0
@@ -856,12 +856,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1151
+    .line 1153
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->hideQRButton()V
 
-    .line 1153
+    .line 1155
     :cond_0
     return-void
 .end method
@@ -870,36 +870,36 @@
     .locals 2
 
     .prologue
-    .line 1156
+    .line 1158
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isShowingQRErrorToast()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1157
+    .line 1159
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
 
     if-eqz v0, :cond_0
 
-    .line 1158
+    .line 1160
     const-string v0, "Auto"
 
     const-string v1, "onQRErrorToast cancel"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1159
+    .line 1161
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
-    .line 1160
+    .line 1162
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
 
-    .line 1163
+    .line 1165
     :cond_0
     return-void
 .end method
@@ -908,19 +908,19 @@
     .locals 2
 
     .prologue
-    .line 1166
+    .line 1168
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsStickerShortcutSupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 1167
+    .line 1169
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1169
+    .line 1171
     :cond_0
     return-void
 .end method
@@ -929,19 +929,19 @@
     .locals 2
 
     .prologue
-    .line 1172
+    .line 1174
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 1173
+    .line 1175
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1175
+    .line 1177
     :cond_0
     return-void
 .end method
@@ -950,22 +950,22 @@
     .locals 1
 
     .prologue
-    .line 1178
+    .line 1180
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
 
     if-eqz v0, :cond_0
 
-    .line 1179
+    .line 1181
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
-    .line 1180
+    .line 1182
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
 
-    .line 1182
+    .line 1184
     :cond_0
     return-void
 .end method
@@ -974,7 +974,7 @@
     .locals 2
 
     .prologue
-    .line 1185
+    .line 1187
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsVisionIntelligenceSupported:Z
 
     if-eqz v0, :cond_0
@@ -987,21 +987,21 @@
 
     if-nez v0, :cond_0
 
-    .line 1186
+    .line 1188
     const-string v0, "Auto"
 
     const-string v1, "hideVisionIntelligenceButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1187
+    .line 1189
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1189
+    .line 1191
     :cond_0
     return-void
 .end method
@@ -1010,19 +1010,19 @@
     .locals 2
 
     .prologue
-    .line 1192
+    .line 1194
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsVisionIntelligenceSupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 1193
+    .line 1195
     const-string v0, "Auto"
 
     const-string v1, "hideVisionIntelligenceEffect"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1194
+    .line 1196
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -1031,7 +1031,7 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideVisionIntelligenceEffect()V
 
-    .line 1196
+    .line 1198
     :cond_0
     return-void
 .end method
@@ -1040,7 +1040,7 @@
     .locals 1
 
     .prologue
-    .line 1199
+    .line 1201
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isSingleEffect()Z
@@ -1065,11 +1065,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 1200
+    .line 1202
     :cond_0
     const/4 v0, 0x0
 
-    .line 1202
+    .line 1204
     :goto_0
     return v0
 
@@ -1085,7 +1085,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1206
+    .line 1208
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isStickerMode()Z
@@ -1094,7 +1094,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1209
+    .line 1211
     :cond_0
     :goto_0
     return v0
@@ -1121,7 +1121,7 @@
     .locals 1
 
     .prologue
-    .line 1213
+    .line 1215
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
 
     if-eqz v0, :cond_1
@@ -1167,7 +1167,7 @@
 
     const/4 v0, 0x0
 
-    .line 1217
+    .line 1219
     sget-object v2, Lcom/sec/android/app/camera/shootingmode/Auto;->URL_PREFIX:[Ljava/lang/String;
 
     aget-object v2, v2, v0
@@ -1201,17 +1201,17 @@
     .param p2, "deltaY"    # F
 
     .prologue
-    .line 1221
+    .line 1223
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 1222
+    .line 1224
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, p1, p2}, Lcom/samsung/android/glview/GLViewGroup;->translate(FF)V
 
-    .line 1224
+    .line 1226
     :cond_0
     return-void
 .end method
@@ -1223,25 +1223,25 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1227
+    .line 1229
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->checkQRDetectCondition()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 1256
+    .line 1258
     :goto_0
     return-void
 
-    .line 1230
+    .line 1232
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideQRErrorToast()V
 
-    .line 1231
+    .line 1233
     packed-switch p1, :pswitch_data_0
 
-    .line 1248
+    .line 1250
     :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -1257,8 +1257,36 @@
 
     goto :goto_0
 
-    .line 1233
+    .line 1235
     :pswitch_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    const v1, 0x7f0901ee
+
+    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
+
+    goto :goto_1
+
+    .line 1242
+    :pswitch_1
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    const v1, 0x7f0901ea
+
+    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
+
+    goto :goto_1
+
+    .line 1245
+    :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const v1, 0x7f0901eb
@@ -1271,35 +1299,7 @@
 
     goto :goto_1
 
-    .line 1240
-    :pswitch_1
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    const v1, 0x7f0901e7
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
-
-    goto :goto_1
-
-    .line 1243
-    :pswitch_2
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    const v1, 0x7f0901e8
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
-
-    goto :goto_1
-
-    .line 1231
+    .line 1233
     nop
 
     :pswitch_data_0
@@ -1319,28 +1319,28 @@
     .param p1, "stickerId"    # I
 
     .prologue
-    .line 1259
+    .line 1261
     const/4 v13, 0x0
 
-    .line 1260
+    .line 1262
     .local v13, "isMouthEvent":Z
     const/4 v12, 0x0
 
-    .line 1261
+    .line 1263
     .local v12, "isBlinkEvent":Z
     const/4 v7, 0x0
 
-    .line 1262
+    .line 1264
     .local v7, "outputString":Ljava/lang/String;
     const/4 v11, 0x0
 
-    .line 1263
+    .line 1265
     .local v11, "eventString":Ljava/lang/String;
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->getStickerInfo(I)Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;
 
     move-result-object v17
 
-    .line 1264
+    .line 1266
     .local v17, "stickerInfo":Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;
     move-object/from16 v0, v17
 
@@ -1348,7 +1348,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1265
+    .line 1267
     check-cast v17, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$FaceARInfo;
 
     .end local v17    # "stickerInfo":Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;
@@ -1356,31 +1356,31 @@
 
     iget-object v11, v0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$FaceARInfo;->sceneType:Ljava/lang/String;
 
-    .line 1268
+    .line 1270
     :cond_0
     if-eqz v11, :cond_1
 
-    .line 1269
+    .line 1271
     const-string v1, "open_mouth"
 
     invoke-virtual {v11, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v13
 
-    .line 1270
+    .line 1272
     const-string v1, "wink"
 
     invoke-virtual {v11, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v12
 
-    .line 1273
+    .line 1275
     :cond_1
     if-eqz v13, :cond_3
 
     if-nez v12, :cond_3
 
-    .line 1274
+    .line 1276
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1389,13 +1389,13 @@
 
     move-result-object v1
 
-    const v2, 0x7f09022e
+    const v2, 0x7f090231
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 1283
+    .line 1285
     :goto_0
     move-object/from16 v0, p0
 
@@ -1403,7 +1403,7 @@
 
     if-nez v1, :cond_6
 
-    .line 1284
+    .line 1286
     new-instance v1, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -1434,7 +1434,7 @@
 
     iget-object v9, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 1286
+    .line 1288
     invoke-interface {v9}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
 
     move-result v9
@@ -1453,7 +1453,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
 
-    .line 1287
+    .line 1289
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1464,7 +1464,7 @@
 
     iget v15, v1, Landroid/graphics/Rect;->left:I
 
-    .line 1288
+    .line 1290
     .local v15, "previewLeft":I
     move-object/from16 v0, p0
 
@@ -1478,7 +1478,7 @@
 
     move/from16 v16, v0
 
-    .line 1289
+    .line 1291
     .local v16, "previewRight":I
     move-object/from16 v0, p0
 
@@ -1490,7 +1490,7 @@
 
     iget v14, v1, Landroid/graphics/Rect;->bottom:I
 
-    .line 1291
+    .line 1293
     .local v14, "previewBottom":I
     move-object/from16 v0, p0
 
@@ -1502,7 +1502,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setTextFont(Landroid/graphics/Typeface;)V
 
-    .line 1292
+    .line 1294
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
@@ -1525,7 +1525,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1294
+    .line 1296
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
@@ -1540,7 +1540,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setSize(FF)V
 
-    .line 1295
+    .line 1297
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
@@ -1549,7 +1549,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 1296
+    .line 1298
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
@@ -1560,7 +1560,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 1297
+    .line 1299
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
@@ -1595,7 +1595,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1298
+    .line 1300
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
@@ -1630,7 +1630,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1299
+    .line 1301
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
@@ -1665,14 +1665,14 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1301
+    .line 1303
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAlwaysVisibleOverLayViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-nez v1, :cond_2
 
-    .line 1302
+    .line 1304
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -1689,7 +1689,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAlwaysVisibleOverLayViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1304
+    .line 1306
     :cond_2
     move-object/from16 v0, p0
 
@@ -1701,7 +1701,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1308
+    .line 1310
     .end local v14    # "previewBottom":I
     .end local v15    # "previewLeft":I
     .end local v16    # "previewRight":I
@@ -1714,44 +1714,21 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1309
+    .line 1311
     const/4 v1, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowStickerGuideText:Z
 
-    .line 1310
+    .line 1312
     return-void
 
-    .line 1275
+    .line 1277
     :cond_3
     if-eqz v12, :cond_4
 
     if-nez v13, :cond_4
-
-    .line 1276
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    const v2, 0x7f09022d
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v7
-
-    goto/16 :goto_0
-
-    .line 1277
-    :cond_4
-    if-eqz v13, :cond_5
-
-    if-eqz v12, :cond_5
 
     .line 1278
     move-object/from16 v0, p0
@@ -1762,7 +1739,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09022f
+    const v2, 0x7f090230
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1770,13 +1747,36 @@
 
     goto/16 :goto_0
 
+    .line 1279
+    :cond_4
+    if-eqz v13, :cond_5
+
+    if-eqz v12, :cond_5
+
     .line 1280
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const v2, 0x7f090232
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    goto/16 :goto_0
+
+    .line 1282
     :cond_5
     const-string v7, " "
 
     goto/16 :goto_0
 
-    .line 1306
+    .line 1308
     :cond_6
     move-object/from16 v0, p0
 
@@ -1791,34 +1791,34 @@
     .locals 2
 
     .prologue
-    .line 1313
+    .line 1315
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAlwaysVisibleOverLayViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 1314
+    .line 1316
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAlwaysVisibleOverLayViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1315
+    .line 1317
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 1316
+    .line 1318
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLViewGroup;->clear()V
 
-    .line 1317
+    .line 1319
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1320
+    .line 1322
     :cond_0
     return-void
 .end method
@@ -1827,34 +1827,34 @@
     .locals 2
 
     .prologue
-    .line 1323
+    .line 1325
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAlwaysVisibleOverLayViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 1324
+    .line 1326
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAlwaysVisibleOverLayViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1325
+    .line 1327
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_0
 
-    .line 1326
+    .line 1328
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->clear()V
 
-    .line 1327
+    .line 1329
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
 
-    .line 1330
+    .line 1332
     :cond_0
     return-void
 .end method
@@ -1864,17 +1864,17 @@
     .param p1, "level"    # I
 
     .prologue
-    .line 1333
+    .line 1335
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBeautySupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 1334
+    .line 1336
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->setFaceRetouchLevelSync(I)V
 
-    .line 1336
+    .line 1338
     :cond_0
     return-void
 .end method
@@ -1883,26 +1883,26 @@
     .locals 2
 
     .prologue
-    .line 1339
+    .line 1341
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBeautySupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 1340
+    .line 1342
     const-string v0, "Auto"
 
     const-string v1, "showBeautyMenuButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1341
+    .line 1343
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1343
+    .line 1345
     :cond_0
     return-void
 .end method
@@ -1911,7 +1911,7 @@
     .locals 19
 
     .prologue
-    .line 1346
+    .line 1348
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1924,7 +1924,7 @@
 
     move/from16 v17, v0
 
-    .line 1347
+    .line 1349
     .local v17, "previewLeft":I
     move-object/from16 v0, p0
 
@@ -1938,7 +1938,7 @@
 
     move/from16 v18, v0
 
-    .line 1348
+    .line 1350
     .local v18, "previewRight":I
     move-object/from16 v0, p0
 
@@ -1952,7 +1952,7 @@
 
     move/from16 v16, v0
 
-    .line 1349
+    .line 1351
     .local v16, "previewBottom":I
     add-int v1, v17, v18
 
@@ -1968,7 +1968,7 @@
 
     div-float v15, v1, v2
 
-    .line 1351
+    .line 1353
     .local v15, "faceDetectionIndicatorPosX":F
     move-object/from16 v0, p0
 
@@ -1986,7 +1986,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 1352
+    .line 1354
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionIndicatorPosX:F
@@ -1999,12 +1999,12 @@
 
     invoke-direct {v0, v1, v2}, Lcom/sec/android/app/camera/shootingmode/Auto;->moveFaceDetectionIndicator(FF)V
 
-    .line 1353
+    .line 1355
     move-object/from16 v0, p0
 
     iput v15, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionIndicatorPosX:F
 
-    .line 1358
+    .line 1360
     :goto_0
     move/from16 v0, v16
 
@@ -2020,7 +2020,7 @@
 
     div-float v4, v1, v2
 
-    .line 1360
+    .line 1362
     .local v4, "mFaceDetectionIndicatorPosY":F
     move-object/from16 v0, p0
 
@@ -2028,7 +2028,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1362
+    .line 1364
     new-instance v1, Lcom/samsung/android/glview/GLViewGroup;
 
     move-object/from16 v0, p0
@@ -2057,7 +2057,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1365
+    .line 1367
     new-instance v1, Lcom/samsung/android/glview/GLImage;
 
     move-object/from16 v0, p0
@@ -2104,7 +2104,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 1368
+    .line 1370
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionImage:Lcom/samsung/android/glview/GLImage;
@@ -2113,7 +2113,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setRotatable(Z)V
 
-    .line 1369
+    .line 1371
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionImage:Lcom/samsung/android/glview/GLImage;
@@ -2122,7 +2122,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setCenterPivot(Z)V
 
-    .line 1370
+    .line 1372
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2133,7 +2133,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1372
+    .line 1374
     new-instance v5, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -2160,7 +2160,7 @@
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 1373
+    .line 1375
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -2179,7 +2179,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 1374
+    .line 1376
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
 
     move-result v2
@@ -2198,7 +2198,7 @@
 
     iput-object v5, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
 
-    .line 1375
+    .line 1377
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
@@ -2209,7 +2209,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setTextFont(Landroid/graphics/Typeface;)V
 
-    .line 1376
+    .line 1378
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
@@ -2232,7 +2232,7 @@
 
     invoke-virtual {v1, v2, v3, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1379
+    .line 1381
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
@@ -2243,7 +2243,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 1380
+    .line 1382
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
@@ -2296,7 +2296,7 @@
 
     invoke-virtual {v1, v2, v3, v5}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1382
+    .line 1384
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
@@ -2343,7 +2343,7 @@
 
     invoke-virtual {v1, v2, v3, v5}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1384
+    .line 1386
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
@@ -2390,7 +2390,7 @@
 
     invoke-virtual {v1, v2, v3, v5}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1387
+    .line 1389
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
@@ -2405,7 +2405,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setSize(FF)V
 
-    .line 1388
+    .line 1390
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionText:Lcom/samsung/android/glview/GLText;
@@ -2414,7 +2414,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 1390
+    .line 1392
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2425,7 +2425,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1391
+    .line 1393
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mFaceDetectionGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2434,14 +2434,14 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1393
+    .line 1395
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAlwaysVisibleOverLayViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-nez v1, :cond_0
 
-    .line 1394
+    .line 1396
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -2458,7 +2458,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAlwaysVisibleOverLayViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1396
+    .line 1398
     :cond_0
     move-object/from16 v0, p0
 
@@ -2470,7 +2470,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1398
+    .line 1400
     :cond_1
     move-object/from16 v0, p0
 
@@ -2480,10 +2480,10 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1399
+    .line 1401
     return-void
 
-    .line 1355
+    .line 1357
     .end local v4    # "mFaceDetectionIndicatorPosY":F
     :cond_2
     move-object/from16 v0, p0
@@ -2499,19 +2499,19 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 1402
+    .line 1404
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_0
 
-    .line 1403
+    .line 1405
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1405
+    .line 1407
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAutoMsgHandler:Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;
 
@@ -2521,12 +2521,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 1406
+    .line 1408
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAutoMsgHandler:Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;->removeMessages(I)V
 
-    .line 1408
+    .line 1410
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAutoMsgHandler:Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;
 
@@ -2534,10 +2534,10 @@
 
     invoke-virtual {v0, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1409
+    .line 1411
     iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowStickerGuideText:Z
 
-    .line 1410
+    .line 1412
     return-void
 .end method
 
@@ -2545,19 +2545,19 @@
     .locals 2
 
     .prologue
-    .line 1413
+    .line 1415
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsStickerShortcutSupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 1414
+    .line 1416
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1416
+    .line 1418
     :cond_0
     return-void
 .end method
@@ -2566,7 +2566,7 @@
     .locals 2
 
     .prologue
-    .line 1419
+    .line 1421
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getActivity()Landroid/app/Activity;
@@ -2579,7 +2579,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 1430
+    .line 1432
     return-void
 .end method
 
@@ -2587,7 +2587,7 @@
     .locals 2
 
     .prologue
-    .line 1433
+    .line 1435
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsVisionIntelligenceSupported:Z
 
     if-eqz v0, :cond_0
@@ -2602,21 +2602,21 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1434
+    .line 1436
     const-string v0, "Auto"
 
     const-string v1, "showVisionIntelligenceButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1435
+    .line 1437
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1437
+    .line 1439
     :cond_0
     return-void
 .end method
@@ -2625,7 +2625,7 @@
     .locals 9
 
     .prologue
-    .line 1440
+    .line 1442
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsVisionIntelligenceSupported:Z
 
     if-eqz v0, :cond_0
@@ -2640,21 +2640,21 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1441
+    .line 1443
     const-string v0, "Auto"
 
     const-string v1, "showVisionIntelligenceButtonWithAnimation"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1442
+    .line 1444
     new-instance v8, Landroid/view/animation/AnimationSet;
 
     const/4 v0, 0x0
 
     invoke-direct {v8, v0}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 1443
+    .line 1445
     .local v8, "animationset":Landroid/view/animation/AnimationSet;
     const/high16 v0, 0x3f800000    # 1.0f
 
@@ -2688,7 +2688,7 @@
 
     invoke-virtual {v8, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1444
+    .line 1446
     const/high16 v0, 0x3f800000    # 1.0f
 
     const v1, 0x3f428f5c    # 0.76f
@@ -2725,29 +2725,29 @@
 
     invoke-virtual {v8, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1445
+    .line 1447
     const/4 v0, 0x1
 
     invoke-virtual {v8, v0}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1446
+    .line 1448
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v8}, Lcom/samsung/android/glview/GLButton;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1447
+    .line 1449
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1448
+    .line 1450
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->startAnimation()V
 
-    .line 1450
+    .line 1452
     .end local v8    # "animationset":Landroid/view/animation/AnimationSet;
     :cond_0
     return-void
@@ -2757,7 +2757,7 @@
     .locals 2
 
     .prologue
-    .line 1453
+    .line 1455
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsVisionIntelligenceSupported:Z
 
     if-eqz v0, :cond_0
@@ -2774,14 +2774,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1454
+    .line 1456
     const-string v0, "Auto"
 
     const-string v1, "showVisionIntelligencePopup"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1455
+    .line 1457
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getPopupLayoutController()Lcom/sec/android/app/camera/interfaces/PopupLayoutController;
@@ -2792,7 +2792,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/PopupLayoutController;->showPopup(Lcom/sec/android/app/camera/interfaces/PopupLayoutController$PopupID;)V
 
-    .line 1457
+    .line 1459
     :cond_0
     return-void
 .end method
@@ -2993,7 +2993,7 @@
 
     invoke-interface {v2, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableHdrAutoCallback(Z)V
 
-    .line 222
+    .line 224
     :goto_3
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -3001,7 +3001,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_16
+    if-nez v2, :cond_17
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -3009,44 +3009,44 @@
 
     move-result v2
 
-    if-ne v2, v4, :cond_16
+    if-ne v2, v4, :cond_17
 
-    .line 223
+    .line 225
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableTimerInterval(Z)V
 
-    .line 228
+    .line 230
     :goto_4
     iput-boolean v5, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBurstCapturing:Z
 
-    .line 229
+    .line 231
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setBurstCaptureEventListener(Lcom/sec/android/app/camera/interfaces/Engine$BurstCaptureEventListener;)V
 
-    .line 231
+    .line 233
     iget-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsQRCodeDetectionEnabled:Z
 
     if-eqz v2, :cond_3
 
-    .line 232
+    .line 234
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setQRCodeDetectEventListener(Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;)V
 
-    .line 233
+    .line 235
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->startQRCodeDetection()V
 
-    .line 236
+    .line 238
     :cond_3
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_GPU_EFFECT:Z
 
     if-eqz v2, :cond_5
 
-    .line 237
+    .line 239
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     const/16 v3, 0x7f
@@ -3057,7 +3057,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 238
+    .line 240
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     const/16 v3, 0x7f
@@ -3068,7 +3068,7 @@
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 241
+    .line 243
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
@@ -3080,7 +3080,7 @@
 
     if-eqz v2, :cond_5
 
-    .line 242
+    .line 244
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     const/16 v3, 0x232f
@@ -3091,7 +3091,7 @@
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 246
+    .line 248
     :cond_5
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -3099,19 +3099,19 @@
 
     invoke-interface {v2, v3, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->registerCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 247
+    .line 249
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     const/16 v3, 0x137
 
     invoke-interface {v2, v3, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->registerCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 249
+    .line 251
     iget-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBeautySupported:Z
 
     if-eqz v2, :cond_8
 
-    .line 250
+    .line 252
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v2, v8}, Lcom/sec/android/app/camera/interfaces/MenuManager;->exists(I)Z
@@ -3120,21 +3120,21 @@
 
     if-eqz v2, :cond_6
 
-    .line 251
+    .line 253
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v2, v8}, Lcom/sec/android/app/camera/interfaces/MenuManager;->getMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
 
     move-result-object v0
 
-    .line 252
+    .line 254
     .local v0, "menu":Lcom/sec/android/app/camera/interfaces/MenuBase;
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 253
+    .line 255
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 256
+    .line 258
     .end local v0    # "menu":Lcom/sec/android/app/camera/interfaces/MenuBase;
     :cond_6
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
@@ -3147,7 +3147,7 @@
 
     if-eqz v2, :cond_7
 
-    .line 257
+    .line 259
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     const/16 v3, 0x71
@@ -3158,26 +3158,26 @@
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 260
+    .line 262
     :cond_7
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2, v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setBeautyMode(I)V
 
-    .line 261
+    .line 263
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setBeautyListener(Lcom/samsung/android/camera/core/SemCamera$BeautyEventListener;)V
 
-    .line 264
+    .line 266
     :cond_8
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v2
 
-    if-eqz v2, :cond_17
+    if-eqz v2, :cond_18
 
-    .line 265
+    .line 267
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
@@ -3186,10 +3186,10 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 266
+    .line 268
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
-    .line 267
+    .line 269
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getBackBeautyLevel()I
@@ -3198,22 +3198,22 @@
 
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/Auto;->setBeautyLevel(I)V
 
-    .line 268
+    .line 270
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showEffectLayout(Z)V
 
-    .line 277
+    .line 279
     :cond_9
     :goto_5
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_STICKER:Z
 
     if-eqz v2, :cond_c
 
-    .line 278
+    .line 280
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerShortcutButton()V
 
-    .line 279
+    .line 281
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v2, v6}, Lcom/sec/android/app/camera/interfaces/MenuManager;->exists(I)Z
@@ -3222,21 +3222,21 @@
 
     if-eqz v2, :cond_a
 
-    .line 280
+    .line 282
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v2, v6}, Lcom/sec/android/app/camera/interfaces/MenuManager;->getMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
 
     move-result-object v0
 
-    .line 281
+    .line 283
     .restart local v0    # "menu":Lcom/sec/android/app/camera/interfaces/MenuBase;
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 282
+    .line 284
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 285
+    .line 287
     .end local v0    # "menu":Lcom/sec/android/app/camera/interfaces/MenuBase;
     :cond_a
     new-instance v2, Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;
@@ -3245,22 +3245,22 @@
 
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mAutoMsgHandler:Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;
 
-    .line 286
+    .line 288
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->sendOrientationInfoToHAL()V
 
-    .line 287
+    .line 289
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setEngineStateListener(Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;)V
 
-    .line 288
+    .line 290
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setStickerEventListener(Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;)V
 
-    .line 289
+    .line 291
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStickerType()I
@@ -3269,7 +3269,7 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 316
+    .line 318
     :cond_b
     :goto_6
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -3278,13 +3278,13 @@
 
     invoke-interface {v2, v3, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->registerCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 318
+    .line 320
     :cond_c
     iget-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsVisionIntelligenceSupported:Z
 
     if-eqz v2, :cond_10
 
-    .line 319
+    .line 321
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -3293,7 +3293,7 @@
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->setVisionIntelligenceEffectAnimationListener(Lcom/sec/android/app/camera/interfaces/OverlayLayoutController$VisionIntelligenceEffectAnimationListener;)V
 
-    .line 320
+    .line 322
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -3321,7 +3321,7 @@
 
     if-eqz v2, :cond_10
 
-    .line 321
+    .line 323
     :cond_e
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -3337,7 +3337,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-    .line 322
+    .line 324
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getPopupLayoutController()Lcom/sec/android/app/camera/interfaces/PopupLayoutController;
 
     move-result-object v2
@@ -3350,17 +3350,17 @@
 
     if-nez v2, :cond_10
 
-    .line 323
+    .line 325
     :cond_f
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligenceButton()V
 
-    .line 327
+    .line 329
     :cond_10
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setImageContentsLoggingListener(Lcom/sec/android/app/camera/interfaces/Engine$ImageContentsLoggingListener;)V
 
-    .line 328
+    .line 330
     return-void
 
     .line 181
@@ -3425,27 +3425,40 @@
 
     goto/16 :goto_2
 
-    .line 219
+    .line 218
     :cond_15
+    sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_AUTO_HDR_LITE:Z
+
+    if-eqz v2, :cond_16
+
+    .line 219
+    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v2, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableHdrAutoCallback(Z)V
+
+    goto/16 :goto_3
+
+    .line 221
+    :cond_16
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, v5}, Lcom/sec/android/app/camera/interfaces/Engine;->enableHdrAutoCallback(Z)V
 
     goto/16 :goto_3
 
-    .line 225
-    :cond_16
+    .line 227
+    :cond_17
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, v5}, Lcom/sec/android/app/camera/interfaces/Engine;->enableTimerInterval(Z)V
 
     goto/16 :goto_4
 
-    .line 270
-    :cond_17
+    .line 272
+    :cond_18
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
 
-    .line 271
+    .line 273
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getDefaultBackBeautyLevel()I
@@ -3454,40 +3467,40 @@
 
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/Auto;->setBeautyLevel(I)V
 
-    .line 272
+    .line 274
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isEffectEditEnabled()Z
 
     move-result v2
 
     if-eqz v2, :cond_9
 
-    .line 273
+    .line 275
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showEffectLayout(Z)V
 
     goto/16 :goto_5
 
-    .line 291
+    .line 293
     :pswitch_0
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFaceAR(Z)V
 
-    .line 292
+    .line 294
     iget-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowFaceDetection:Z
 
-    if-eqz v2, :cond_18
+    if-eqz v2, :cond_19
 
     iget-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyHideFaceDetection:Z
 
-    if-nez v2, :cond_18
-
-    .line 293
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerFaceDetectionIndicator()V
+    if-nez v2, :cond_19
 
     .line 295
-    :cond_18
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerFaceDetectionIndicator()V
+
+    .line 297
+    :cond_19
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStickerId()I
@@ -3498,28 +3511,7 @@
 
     if-eq v2, v3, :cond_b
 
-    .line 296
-    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStickerId()I
-
-    move-result v2
-
-    const/16 v3, 0x232d
-
-    if-ne v2, v3, :cond_19
-
-    .line 297
-    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
-
-    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
-
-    move-result-object v2
-
-    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->showRandomStickerButton()V
-
-    .line 299
-    :cond_19
+    .line 298
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStickerId()I
@@ -3530,22 +3522,43 @@
 
     if-ne v2, v3, :cond_1a
 
+    .line 299
+    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->showRandomStickerButton()V
+
+    .line 301
+    :cond_1a
+    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStickerId()I
+
+    move-result v2
+
+    const/16 v3, 0x232d
+
+    if-ne v2, v3, :cond_1b
+
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getRandomStickerId()I
 
     move-result v1
 
-    .line 300
+    .line 302
     .local v1, "stickerId":I
     :goto_8
     invoke-static {v1}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->isSoundFaceARSticker(I)Z
 
     move-result v2
 
-    if-eqz v2, :cond_1b
+    if-eqz v2, :cond_1c
 
-    .line 301
+    .line 303
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -3554,15 +3567,15 @@
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->showStickerSoundMuteButton()V
 
-    .line 305
+    .line 307
     :goto_9
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->prepareStickerGuideText(I)V
 
     goto/16 :goto_6
 
-    .line 299
+    .line 301
     .end local v1    # "stickerId":I
-    :cond_1a
+    :cond_1b
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStickerId()I
@@ -3571,9 +3584,9 @@
 
     goto :goto_8
 
-    .line 303
+    .line 305
     .restart local v1    # "stickerId":I
-    :cond_1b
+    :cond_1c
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -3584,14 +3597,14 @@
 
     goto :goto_9
 
-    .line 310
+    .line 312
     .end local v1    # "stickerId":I
     :pswitch_1
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, v5}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFaceAR(Z)V
 
-    .line 311
+    .line 313
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -3602,7 +3615,9 @@
 
     goto/16 :goto_6
 
-    .line 289
+    .line 291
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -3631,30 +3646,30 @@
     .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 332
+    .line 334
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 344
+    .line 346
     :cond_0
     :goto_0
     const/4 v0, 0x0
 
     return v0
 
-    .line 334
+    .line 336
     :pswitch_0
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsQRCodeDetectionEnabled:Z
 
     if-eqz v0, :cond_1
 
-    .line 335
+    .line 337
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideQRButton()V
 
-    .line 337
+    .line 339
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -3676,7 +3691,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 338
+    .line 340
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -3690,7 +3705,7 @@
 
     goto :goto_0
 
-    .line 332
+    .line 334
     nop
 
     :pswitch_data_0
@@ -3704,7 +3719,7 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 349
+    .line 351
     const-string v0, "Auto"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3727,17 +3742,17 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 350
+    .line 352
     if-nez p1, :cond_0
 
-    .line 352
+    .line 354
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/16 v1, 0x3e8
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->acquireDVFS(I)V
 
-    .line 354
+    .line 356
     :cond_0
     return-void
 .end method
@@ -3748,63 +3763,63 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 358
+    .line 360
     const-string v0, "Auto"
 
     const-string v1, "onBurstCaptureCompleted"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 359
+    .line 361
     iput-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBurstCapturing:Z
 
-    .line 361
+    .line 363
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideCaptureProgressText()V
 
-    .line 362
+    .line 364
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setCapturingProgress(I)V
 
-    .line 364
+    .line 366
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showOneHandZoomGuide()V
 
-    .line 365
+    .line 367
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 366
+    .line 368
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x276
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 369
+    .line 371
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 370
+    .line 372
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 371
+    .line 373
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
-    .line 372
+    .line 374
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getBackBeautyLevel()I
@@ -3813,24 +3828,24 @@
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->setBeautyLevel(I)V
 
-    .line 374
+    .line 376
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligenceButton()V
 
-    .line 375
+    .line 377
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerShortcutButton()V
 
-    .line 377
+    .line 379
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsQRCodeDetectionEnabled:Z
 
     if-eqz v0, :cond_1
 
-    .line 378
+    .line 380
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->startQRCodeDetection()V
 
-    .line 380
+    .line 382
     :cond_1
     return-void
 .end method
@@ -3840,7 +3855,7 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 384
+    .line 386
     const-string v0, "Auto"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3863,21 +3878,21 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 385
+    .line 387
     if-nez p1, :cond_0
 
-    .line 386
+    .line 388
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showCaptureProgressText()V
 
-    .line 388
+    .line 390
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setCapturingProgress(I)V
 
-    .line 389
+    .line 391
     return-void
 .end method
 
@@ -3885,38 +3900,38 @@
     .locals 2
 
     .prologue
-    .line 393
+    .line 395
     const-string v0, "Auto"
 
     const-string v1, "onBurstCaptureStarted"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 394
+    .line 396
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBurstCapturing:Z
 
-    .line 395
+    .line 397
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideOneHandZoomGuide()V
 
-    .line 396
+    .line 398
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 397
+    .line 399
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x276
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 399
+    .line 401
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -3925,44 +3940,44 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideTouchEVSlider()V
 
-    .line 401
+    .line 403
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 402
+    .line 404
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 403
+    .line 405
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
 
-    .line 405
+    .line 407
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceButton()V
 
-    .line 406
+    .line 408
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideShortcutStickerButton()V
 
-    .line 408
+    .line 410
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsQRCodeDetectionEnabled:Z
 
     if-eqz v0, :cond_1
 
-    .line 409
+    .line 411
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->stopQRCodeDetection()V
 
-    .line 410
+    .line 412
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideQRButton()V
 
-    .line 412
+    .line 414
     :cond_1
     return-void
 .end method
@@ -3972,7 +3987,7 @@
     .param p1, "lastImageNum"    # I
 
     .prologue
-    .line 416
+    .line 418
     const/4 v0, 0x0
 
     return v0
@@ -3984,21 +3999,21 @@
     .param p2, "orientation"    # I
 
     .prologue
-    .line 421
+    .line 423
     const-string v0, "Auto"
 
     const-string v1, "onBurstCaptureThumbnailTaken"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 422
+    .line 424
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, p1, p2, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->updateThumbnailButton(Landroid/graphics/Bitmap;IZ)V
 
-    .line 423
+    .line 425
     return-void
 .end method
 
@@ -4007,7 +4022,7 @@
     .param p1, "data"    # [B
 
     .prologue
-    .line 427
+    .line 429
     const/4 v0, 0x0
 
     return v0
@@ -4023,15 +4038,15 @@
 
     const/4 v3, 0x0
 
-    .line 432
+    .line 434
     sparse-switch p1, :sswitch_data_0
 
-    .line 502
+    .line 504
     :cond_0
     :goto_0
     return-void
 
-    .line 435
+    .line 437
     :sswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -4041,7 +4056,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 436
+    .line 438
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getDefaultBeautyLevel()I
@@ -4052,7 +4067,7 @@
 
     goto :goto_0
 
-    .line 438
+    .line 440
     :cond_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
@@ -4060,7 +4075,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 439
+    .line 441
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getBackBeautyLevel()I
@@ -4071,21 +4086,21 @@
 
     goto :goto_0
 
-    .line 444
+    .line 446
     :sswitch_1
     if-nez p2, :cond_0
 
-    .line 445
+    .line 447
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 446
+    .line 448
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
-    .line 447
+    .line 449
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getBackBeautyLevel()I
@@ -4094,13 +4109,13 @@
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->setBeautyLevel(I)V
 
-    .line 449
+    .line 451
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligenceButton()V
 
     goto :goto_0
 
-    .line 453
+    .line 455
     :sswitch_2
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowStickerToast:Z
 
@@ -4114,14 +4129,14 @@
 
     if-eqz v1, :cond_3
 
-    .line 454
+    .line 456
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerToast()V
 
-    .line 456
+    .line 458
     :cond_3
     if-ne p2, v4, :cond_5
 
-    .line 457
+    .line 459
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -4130,7 +4145,7 @@
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->showRandomStickerButton()V
 
-    .line 461
+    .line 463
     :goto_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -4142,23 +4157,23 @@
 
     goto :goto_0
 
-    .line 463
+    .line 465
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFaceAR(Z)V
 
-    .line 464
+    .line 466
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 465
+    .line 467
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
-    .line 466
+    .line 468
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getBackBeautyLevel()I
@@ -4167,14 +4182,14 @@
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->setBeautyLevel(I)V
 
-    .line 468
+    .line 470
     :cond_4
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowStickerToast:Z
 
-    .line 469
+    .line 471
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideStickerFaceDetectionIndicator()V
 
-    .line 470
+    .line 472
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -4183,7 +4198,7 @@
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideStickerRectHandler(Z)V
 
-    .line 471
+    .line 473
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -4194,7 +4209,7 @@
 
     goto/16 :goto_0
 
-    .line 459
+    .line 461
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -4206,7 +4221,7 @@
 
     goto :goto_1
 
-    .line 474
+    .line 476
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -4214,12 +4229,12 @@
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFaceAR(Z)V
 
-    .line 475
+    .line 477
     const/4 v1, 0x5
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->setBeautyLevel(I)V
 
-    .line 476
+    .line 478
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -4228,7 +4243,7 @@
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideStickerRectHandler(Z)V
 
-    .line 477
+    .line 479
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStickerId()I
@@ -4243,21 +4258,21 @@
 
     move-result v0
 
-    .line 478
+    .line 480
     .local v0, "stickerId":I
     :goto_2
     const/16 v1, 0x2710
 
     if-eq v0, v1, :cond_0
 
-    .line 479
+    .line 481
     invoke-static {v0}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->isSoundFaceARSticker(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_7
 
-    .line 480
+    .line 482
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -4266,13 +4281,13 @@
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->showStickerSoundMuteButton()V
 
-    .line 484
+    .line 486
     :goto_3
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->prepareStickerGuideText(I)V
 
     goto/16 :goto_0
 
-    .line 477
+    .line 479
     .end local v0    # "stickerId":I
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4283,7 +4298,7 @@
 
     goto :goto_2
 
-    .line 482
+    .line 484
     .restart local v0    # "stickerId":I
     :cond_7
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -4296,14 +4311,14 @@
 
     goto :goto_3
 
-    .line 489
+    .line 491
     .end local v0    # "stickerId":I
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFaceAR(Z)V
 
-    .line 490
+    .line 492
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getDefaultBeautyLevel()I
@@ -4312,10 +4327,10 @@
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->setBeautyLevel(I)V
 
-    .line 491
+    .line 493
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideStickerFaceDetectionIndicator()V
 
-    .line 492
+    .line 494
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -4324,7 +4339,7 @@
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideStickerSoundMuteButton()V
 
-    .line 493
+    .line 495
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -4341,7 +4356,7 @@
 
     goto/16 :goto_0
 
-    .line 432
+    .line 434
     :sswitch_data_0
     .sparse-switch
         0x8 -> :sswitch_0
@@ -4349,7 +4364,7 @@
         0x137 -> :sswitch_1
     .end sparse-switch
 
-    .line 461
+    .line 463
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -4372,7 +4387,7 @@
 
     const/4 v3, 0x1
 
-    .line 506
+    .line 508
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_GPU_EFFECT:Z
 
     if-eqz v1, :cond_3
@@ -4393,13 +4408,13 @@
 
     if-eqz v1, :cond_3
 
-    .line 508
+    .line 510
     :cond_0
     invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraParameters;->getEffectFpsRange(Lcom/samsung/android/camera/core/SemCamera$Parameters;)[I
 
     move-result-object v0
 
-    .line 509
+    .line 511
     .local v0, "effectPreviewFPSRange":[I
     aget v1, v0, v4
 
@@ -4407,37 +4422,37 @@
 
     invoke-virtual {p1, v1, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
-    .line 510
+    .line 512
     const-string v1, "effect_hint"
 
     invoke-virtual {p1, v1, v3}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;I)V
 
-    .line 511
+    .line 513
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_PHASE_AF:Z
 
     if-eqz v1, :cond_1
 
-    .line 512
+    .line 514
     const-string v1, "phase-af"
 
     const-string v2, "on"
 
     invoke-virtual {p1, v1, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 514
+    .line 516
     :cond_1
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DYNAMIC_RANGE_CONTROL:Z
 
     if-eqz v1, :cond_2
 
-    .line 515
+    .line 517
     const-string v1, "dynamic-range-control"
 
     const-string v2, "off"
 
     invoke-virtual {p1, v1, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 542
+    .line 544
     .end local v0    # "effectPreviewFPSRange":[I
     :cond_2
     :goto_0
@@ -4453,11 +4468,15 @@
 
     invoke-virtual {p1, v1, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;I)V
 
-    .line 543
+    .line 545
     return-void
 
-    .line 518
+    .line 520
     :cond_3
+    sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_AUTO_LLS_LITE:Z
+
+    if-nez v1, :cond_6
+
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getAutoNightDetectionMode()I
@@ -4466,7 +4485,7 @@
 
     if-ne v1, v3, :cond_6
 
-    .line 519
+    .line 521
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isBackCamera()Z
@@ -4475,36 +4494,36 @@
 
     if-eqz v1, :cond_5
 
-    .line 520
+    .line 522
     const/16 v1, 0x2710
 
     invoke-virtual {p1, v1, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
-    .line 532
+    .line 534
     :goto_1
     const-string v1, "effect_hint"
 
     invoke-virtual {p1, v1, v4}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;I)V
 
-    .line 534
+    .line 536
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_PHASE_AF:Z
 
     if-eqz v1, :cond_4
 
-    .line 535
+    .line 537
     const-string v1, "phase-af"
 
     const-string v2, "on"
 
     invoke-virtual {p1, v1, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 537
+    .line 539
     :cond_4
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DYNAMIC_RANGE_CONTROL:Z
 
     if-eqz v1, :cond_2
 
-    .line 538
+    .line 540
     const-string v1, "dynamic-range-control"
 
     const-string v2, "on"
@@ -4513,13 +4532,13 @@
 
     goto :goto_0
 
-    .line 522
+    .line 524
     :cond_5
     invoke-virtual {p1, v5, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
     goto :goto_1
 
-    .line 526
+    .line 528
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -4529,14 +4548,14 @@
 
     if-eqz v1, :cond_7
 
-    .line 527
+    .line 529
     const/16 v1, 0x3a98
 
     invoke-virtual {p1, v1, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
     goto :goto_1
 
-    .line 529
+    .line 531
     :cond_7
     invoke-virtual {p1, v5, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
@@ -4552,13 +4571,13 @@
     .param p5, "menuManager"    # Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     .prologue
-    .line 547
+    .line 549
     iput-object p4, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-    .line 548
+    .line 550
     iput-object p5, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
-    .line 550
+    .line 552
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -4588,12 +4607,12 @@
     :goto_0
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsQRCodeDetectionEnabled:Z
 
-    .line 552
+    .line 554
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsQRCodeDetectionEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 553
+    .line 555
     new-instance v0, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -4606,19 +4625,19 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
-    .line 554
+    .line 556
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->setVisibility(I)V
 
-    .line 555
+    .line 557
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     invoke-virtual {p2, v0}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 558
+    .line 560
     :cond_0
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY:Z
 
@@ -4653,12 +4672,12 @@
     :goto_1
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBeautySupported:Z
 
-    .line 559
+    .line 561
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBeautySupported:Z
 
     if-eqz v0, :cond_1
 
-    .line 560
+    .line 562
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -4677,47 +4696,47 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 562
+    .line 564
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setCenterPivot(Z)V
 
-    .line 563
+    .line 565
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setRotatable(Z)V
 
-    .line 564
+    .line 566
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setOrientation(I)V
 
-    .line 565
+    .line 567
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setRotateAnimation(Z)V
 
-    .line 566
+    .line 568
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 567
+    .line 569
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mLiveBeautyFaceOffImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {p3, v0}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 569
+    .line 571
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4730,7 +4749,7 @@
 
     if-nez v0, :cond_8
 
-    .line 570
+    .line 572
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->BEAUTY_MENU_BUTTON_POS_X:I
@@ -4768,7 +4787,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 576
+    .line 578
     :goto_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
@@ -4780,56 +4799,56 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 577
+    .line 579
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     const/16 v1, 0x82
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTag(I)V
 
-    .line 578
+    .line 580
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 579
+    .line 581
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 580
+    .line 582
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 581
+    .line 583
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 582
+    .line 584
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    .line 583
+    .line 585
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 587
+    .line 589
     :goto_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
@@ -4839,12 +4858,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 601
+    .line 603
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {p2, v0}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 604
+    .line 606
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -4870,7 +4889,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 605
+    .line 607
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isResizableCamera()Z
 
     move-result v0
@@ -4906,12 +4925,12 @@
     :goto_5
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsVisionIntelligenceSupported:Z
 
-    .line 607
+    .line 609
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsVisionIntelligenceSupported:Z
 
     if-eqz v0, :cond_3
 
-    .line 608
+    .line 610
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4924,7 +4943,7 @@
 
     if-nez v0, :cond_b
 
-    .line 609
+    .line 611
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->VISION_INTELLIGENCE_BUTTON_POS_X:I
@@ -4957,11 +4976,11 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 615
+    .line 617
     :goto_6
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f09027f
+    const v1, 0x7f090282
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -4969,49 +4988,49 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 616
+    .line 618
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 617
+    .line 619
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 618
+    .line 620
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 619
+    .line 621
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 620
+    .line 622
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 621
+    .line 623
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 622
+    .line 624
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/Auto$2;
@@ -5020,7 +5039,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 645
+    .line 647
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isCoverCamera()Z
@@ -5029,20 +5048,20 @@
 
     if-eqz v0, :cond_2
 
-    .line 646
+    .line 648
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 649
+    .line 651
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mVisionIntelligenceButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {p2, v0}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 652
+    .line 654
     :cond_3
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_STICKER:Z
 
@@ -5066,7 +5085,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 653
+    .line 655
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isKeyboardCoverCamera()Z
 
     move-result v0
@@ -5096,12 +5115,12 @@
     :goto_7
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsStickerShortcutSupported:Z
 
-    .line 654
+    .line 656
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsStickerShortcutSupported:Z
 
     if-eqz v0, :cond_4
 
-    .line 655
+    .line 657
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -5136,7 +5155,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 657
+    .line 659
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     const v1, 0x7f090168
@@ -5147,35 +5166,35 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 658
+    .line 660
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 659
+    .line 661
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 660
+    .line 662
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 661
+    .line 663
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     const/16 v1, 0x2331
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTag(I)V
 
-    .line 662
+    .line 664
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/Auto$3;
@@ -5184,35 +5203,35 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 672
+    .line 674
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 673
+    .line 675
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerShortcutButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {p2, v0}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 675
+    .line 677
     :cond_4
     return-void
 
-    .line 550
+    .line 552
     :cond_5
     const/4 v0, 0x0
 
     goto/16 :goto_0
 
-    .line 558
+    .line 560
     :cond_6
     const/4 v0, 0x0
 
     goto/16 :goto_1
 
-    .line 570
+    .line 572
     :cond_7
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->BEAUTY_MENU_BUTTON_POS_Y:I
 
@@ -5220,7 +5239,7 @@
 
     goto/16 :goto_2
 
-    .line 573
+    .line 575
     :cond_8
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
@@ -5256,7 +5275,7 @@
 
     goto/16 :goto_3
 
-    .line 585
+    .line 587
     :cond_9
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBeautyLevelSliderMenuButton:Lcom/samsung/android/glview/GLButton;
 
@@ -5266,13 +5285,13 @@
 
     goto/16 :goto_4
 
-    .line 605
+    .line 607
     :cond_a
     const/4 v0, 0x0
 
     goto/16 :goto_5
 
-    .line 612
+    .line 614
     :cond_b
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
@@ -5308,7 +5327,7 @@
 
     goto/16 :goto_6
 
-    .line 653
+    .line 655
     :cond_c
     const/4 v0, 0x0
 
@@ -5322,12 +5341,12 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 679
+    .line 681
     sget-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->STARTING_PREVIEW:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     if-ne p1, v0, :cond_0
 
-    .line 680
+    .line 682
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStickerType()I
@@ -5336,12 +5355,12 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 693
+    .line 695
     :cond_0
     :goto_0
     return-void
 
-    .line 682
+    .line 684
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -5351,13 +5370,13 @@
 
     goto :goto_0
 
-    .line 686
+    .line 688
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFaceAR(Z)V
 
-    .line 687
+    .line 689
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -5368,7 +5387,7 @@
 
     goto :goto_0
 
-    .line 680
+    .line 682
     nop
 
     :pswitch_data_0
@@ -5386,10 +5405,10 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 697
+    .line 699
     const/4 v1, 0x0
 
-    .line 698
+    .line 700
     .local v1, "index":I
     add-int/lit8 v2, v1, 0x1
 
@@ -5435,7 +5454,7 @@
 
     or-int v0, v3, v4
 
-    .line 700
+    .line 702
     .local v0, "faceCount":I
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -5445,12 +5464,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 720
+    .line 722
     :cond_0
     :goto_0
     return-void
 
-    .line 704
+    .line 706
     :cond_1
     if-lez v0, :cond_2
 
@@ -5458,10 +5477,10 @@
 
     if-nez v3, :cond_2
 
-    .line 705
+    .line 707
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerGuideText()V
 
-    .line 708
+    .line 710
     :cond_2
     if-lez v0, :cond_4
 
@@ -5473,13 +5492,13 @@
 
     if-nez v3, :cond_4
 
-    .line 709
+    .line 711
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideStickerFaceDetectionIndicator()V
 
-    .line 710
+    .line 712
     iput-boolean v5, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyHideFaceDetection:Z
 
-    .line 716
+    .line 718
     :cond_3
     :goto_1
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -5490,17 +5509,17 @@
 
     if-ne v3, v5, :cond_0
 
-    .line 717
+    .line 719
     iput-boolean v5, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowFaceDetection:Z
 
-    .line 718
+    .line 720
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v3, v5, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->setEffectParameter(I[B)V
 
     goto :goto_0
 
-    .line 711
+    .line 713
     :cond_4
     if-nez v0, :cond_3
 
@@ -5508,10 +5527,10 @@
 
     if-nez v3, :cond_3
 
-    .line 712
+    .line 714
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerFaceDetectionIndicator()V
 
-    .line 713
+    .line 715
     iput-boolean v5, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowFaceDetection:Z
 
     goto :goto_1
@@ -5528,19 +5547,19 @@
 
     const/4 v3, 0x1
 
-    .line 724
+    .line 726
     invoke-interface {p1}, Lcom/sec/android/app/camera/interfaces/MenuBase;->getMenuId()I
 
     move-result v1
 
     sparse-switch v1, :sswitch_data_0
 
-    .line 783
+    .line 785
     :cond_0
     :goto_0
     return-void
 
-    .line 726
+    .line 728
     :sswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -5550,7 +5569,7 @@
 
     if-ne v1, v3, :cond_0
 
-    .line 727
+    .line 729
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowFaceDetection:Z
 
     if-eqz v1, :cond_0
@@ -5559,18 +5578,18 @@
 
     if-nez v1, :cond_0
 
-    .line 728
+    .line 730
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerFaceDetectionIndicator()V
 
     goto :goto_0
 
-    .line 733
+    .line 735
     :sswitch_1
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_GPU_EFFECT:Z
 
     if-eqz v1, :cond_0
 
-    .line 734
+    .line 736
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraSingleEffect()I
@@ -5581,46 +5600,46 @@
 
     if-eq v1, v2, :cond_1
 
-    .line 735
+    .line 737
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->stopAutoFilter()V
 
-    .line 737
+    .line 739
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->stopThumbnailPreviewCallback()V
 
-    .line 739
+    .line 741
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 740
+    .line 742
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
     goto :goto_0
 
-    .line 742
+    .line 744
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
 
-    .line 743
+    .line 745
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isEffectEditEnabled()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 744
+    .line 746
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showEffectLayout(Z)V
 
-    .line 748
+    .line 750
     :goto_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -5642,7 +5661,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 749
+    .line 751
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -5654,7 +5673,7 @@
 
     goto :goto_0
 
-    .line 746
+    .line 748
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -5662,7 +5681,7 @@
 
     goto :goto_1
 
-    .line 755
+    .line 757
     :sswitch_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
@@ -5670,19 +5689,19 @@
 
     if-eqz v1, :cond_5
 
-    .line 756
+    .line 758
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
-    .line 758
+    .line 760
     :cond_5
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligenceButton()V
 
-    .line 759
+    .line 761
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerShortcutButton()V
 
     goto :goto_0
 
-    .line 762
+    .line 764
     :sswitch_3
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
@@ -5690,20 +5709,20 @@
 
     if-eqz v1, :cond_7
 
-    .line 763
+    .line 765
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
-    .line 777
+    .line 779
     :cond_6
     :goto_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligenceButton()V
 
-    .line 778
+    .line 780
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerShortcutButton()V
 
     goto/16 :goto_0
 
-    .line 765
+    .line 767
     :cond_7
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isEffectEditEnabled()Z
 
@@ -5711,14 +5730,14 @@
 
     if-eqz v1, :cond_8
 
-    .line 766
+    .line 768
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showEffectLayout(Z)V
 
     goto :goto_2
 
-    .line 768
+    .line 770
     :cond_8
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -5728,7 +5747,7 @@
 
     if-ne v1, v2, :cond_9
 
-    .line 769
+    .line 771
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -5737,7 +5756,7 @@
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->showRandomStickerButton()V
 
-    .line 771
+    .line 773
     :cond_9
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -5753,7 +5772,7 @@
 
     move-result v0
 
-    .line 772
+    .line 774
     .local v0, "stickerId":I
     :goto_3
     const/16 v1, 0x2710
@@ -5766,7 +5785,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 773
+    .line 775
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -5777,7 +5796,7 @@
 
     goto :goto_2
 
-    .line 771
+    .line 773
     .end local v0    # "stickerId":I
     :cond_a
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -5788,7 +5807,7 @@
 
     goto :goto_3
 
-    .line 724
+    .line 726
     nop
 
     :sswitch_data_0
@@ -5804,7 +5823,7 @@
     .locals 1
 
     .prologue
-    .line 787
+    .line 789
     const/4 v0, 0x0
 
     return v0
@@ -5824,56 +5843,56 @@
 
     const/4 v3, 0x0
 
-    .line 792
+    .line 794
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->removeSideQuickSettingItems()V
 
-    .line 794
+    .line 796
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBurstCapturing:Z
 
     if-eqz v1, :cond_0
 
-    .line 795
+    .line 797
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelBurstCapture()V
 
-    .line 796
+    .line 798
     iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBurstCapturing:Z
 
-    .line 799
+    .line 801
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceButton()V
 
-    .line 800
+    .line 802
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceEffect()V
 
-    .line 802
+    .line 804
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsQRCodeDetectionEnabled:Z
 
     if-eqz v1, :cond_1
 
-    .line 803
+    .line 805
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->stopQRCodeDetection()V
 
-    .line 804
+    .line 806
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideQRButton()V
 
-    .line 805
+    .line 807
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setQRCodeDetectEventListener(Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;)V
 
-    .line 808
+    .line 810
     :cond_1
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_GPU_EFFECT:Z
 
     if-eqz v1, :cond_3
 
-    .line 809
+    .line 811
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     const/16 v2, 0x7f
@@ -5884,7 +5903,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 810
+    .line 812
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     const/16 v2, 0x7f
@@ -5895,7 +5914,7 @@
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 812
+    .line 814
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
@@ -5907,7 +5926,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 813
+    .line 815
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     const/16 v2, 0x232f
@@ -5918,7 +5937,7 @@
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 817
+    .line 819
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -5926,24 +5945,24 @@
 
     invoke-interface {v1, v2, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->unregisterCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 818
+    .line 820
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     const/16 v2, 0x137
 
     invoke-interface {v1, v2, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->unregisterCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 819
+    .line 821
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/MenuManager;->unregisterMenuCreateListener(Lcom/sec/android/app/camera/interfaces/MenuManager$MenuCreateListener;)V
 
-    .line 821
+    .line 823
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBeautySupported:Z
 
     if-eqz v1, :cond_5
 
-    .line 822
+    .line 824
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getDefaultBackBeautyLevel()I
@@ -5952,7 +5971,7 @@
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->setBeautyLevel(I)V
 
-    .line 823
+    .line 825
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v1, v7}, Lcom/sec/android/app/camera/interfaces/MenuManager;->exists(I)Z
@@ -5961,7 +5980,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 824
+    .line 826
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v1, v7}, Lcom/sec/android/app/camera/interfaces/MenuManager;->getMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
@@ -5970,13 +5989,13 @@
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 826
+    .line 828
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setBeautyListener(Lcom/samsung/android/camera/core/SemCamera$BeautyEventListener;)V
 
-    .line 828
+    .line 830
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v1, v6}, Lcom/sec/android/app/camera/interfaces/MenuManager;->exists(I)Z
@@ -5985,34 +6004,34 @@
 
     if-eqz v1, :cond_5
 
-    .line 829
+    .line 831
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v1, v6}, Lcom/sec/android/app/camera/interfaces/MenuManager;->getMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
 
     move-result-object v0
 
-    .line 830
+    .line 832
     .local v0, "menu":Lcom/sec/android/app/camera/interfaces/MenuBase;
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 831
+    .line 833
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 834
+    .line 836
     .end local v0    # "menu":Lcom/sec/android/app/camera/interfaces/MenuBase;
     :cond_5
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
 
-    .line 836
+    .line 838
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_STICKER:Z
 
     if-eqz v1, :cond_7
 
-    .line 837
+    .line 839
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideShortcutStickerButton()V
 
-    .line 838
+    .line 840
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v1, v5}, Lcom/sec/android/app/camera/interfaces/MenuManager;->exists(I)Z
@@ -6021,62 +6040,44 @@
 
     if-eqz v1, :cond_6
 
-    .line 839
+    .line 841
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v1, v5}, Lcom/sec/android/app/camera/interfaces/MenuManager;->getMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
 
     move-result-object v0
 
-    .line 840
+    .line 842
     .restart local v0    # "menu":Lcom/sec/android/app/camera/interfaces/MenuBase;
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 841
+    .line 843
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 844
+    .line 846
     .end local v0    # "menu":Lcom/sec/android/app/camera/interfaces/MenuBase;
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->resetOverriddenCamcorderResolution()V
 
-    .line 845
+    .line 847
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFaceAR(Z)V
 
-    .line 846
+    .line 848
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setEngineStateListener(Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;)V
 
-    .line 847
+    .line 849
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setStickerEventListener(Lcom/samsung/android/camera/core/SemCamera$StickerEventListener;)V
 
-    .line 848
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideStickerToast()V
-
-    .line 849
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
-
-    move-result-object v1
-
-    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideStickerRectHandler(Z)V
-
     .line 850
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
-
-    move-result-object v1
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideRandomStickerButton()V
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideStickerToast()V
 
     .line 851
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -6085,56 +6086,74 @@
 
     move-result-object v1
 
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideStickerSoundMuteButton()V
+    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideStickerRectHandler(Z)V
 
     .line 852
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->removeStickerGuideText()V
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideRandomStickerButton()V
 
     .line 853
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->removeStickerFaceDetection()V
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideStickerSoundMuteButton()V
 
     .line 854
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->removeStickerGuideText()V
+
+    .line 855
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->removeStickerFaceDetection()V
+
+    .line 856
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     const/16 v2, 0xbe
 
     invoke-interface {v1, v2, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->unregisterCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 857
+    .line 859
     :cond_7
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideQRErrorToast()V
-
-    .line 860
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-
-    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableLightConditionDetect(Z)V
-
-    .line 861
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-
-    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFlashAutoCallback(Z)V
 
     .line 862
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
-    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableHdrAutoCallback(Z)V
+    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableLightConditionDetect(Z)V
+
+    .line 863
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFlashAutoCallback(Z)V
 
     .line 864
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
-    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableTimerInterval(Z)V
+    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableHdrAutoCallback(Z)V
 
     .line 866
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
+    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableTimerInterval(Z)V
+
+    .line 868
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setBurstCaptureEventListener(Lcom/sec/android/app/camera/interfaces/Engine$BurstCaptureEventListener;)V
 
-    .line 867
+    .line 869
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setImageContentsLoggingListener(Lcom/sec/android/app/camera/interfaces/Engine$ImageContentsLoggingListener;)V
 
-    .line 868
+    .line 870
     return-void
 .end method
 
@@ -6144,7 +6163,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 872
+    .line 874
     const/4 v0, 0x0
 
     return v0
@@ -6156,28 +6175,28 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 877
+    .line 879
     packed-switch p1, :pswitch_data_0
 
-    .line 885
+    .line 887
     :cond_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 879
+    .line 881
     :pswitch_0
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBurstCapturing:Z
 
     if-eqz v0, :cond_0
 
-    .line 880
+    .line 882
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 877
+    .line 879
     nop
 
     :pswitch_data_0
@@ -6192,61 +6211,61 @@
     .param p2, "menu"    # Lcom/sec/android/app/camera/interfaces/MenuBase;
 
     .prologue
-    .line 890
+    .line 892
     sparse-switch p1, :sswitch_data_0
 
-    .line 915
+    .line 917
     :cond_0
     :goto_0
     return-void
 
-    .line 892
+    .line 894
     :sswitch_0
     invoke-interface {p2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 893
+    .line 895
     invoke-interface {p2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
     goto :goto_0
 
-    .line 896
+    .line 898
     :sswitch_1
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_GPU_EFFECT:Z
 
     if-eqz v0, :cond_0
 
-    .line 897
+    .line 899
     invoke-interface {p2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
     goto :goto_0
 
-    .line 901
+    .line 903
     :sswitch_2
     invoke-interface {p2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
     goto :goto_0
 
-    .line 904
+    .line 906
     :sswitch_3
     invoke-interface {p2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
     goto :goto_0
 
-    .line 907
+    .line 909
     :sswitch_4
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBeautySupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 908
+    .line 910
     invoke-interface {p2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 909
+    .line 911
     invoke-interface {p2, p0}, Lcom/sec/android/app/camera/interfaces/MenuBase;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
     goto :goto_0
 
-    .line 890
+    .line 892
     :sswitch_data_0
     .sparse-switch
         0x2 -> :sswitch_0
@@ -6263,7 +6282,7 @@
     .param p2, "modeId"    # I
 
     .prologue
-    .line 919
+    .line 921
     const/4 v0, 0x0
 
     return v0
@@ -6285,7 +6304,7 @@
     .local p1, "values":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     const/4 v4, 0x0
 
-    .line 924
+    .line 926
     const-string v0, "Z028"
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -6306,7 +6325,7 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 925
+    .line 927
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getAeAfManager()Lcom/sec/android/app/camera/interfaces/AeAfManager;
@@ -6321,7 +6340,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 926
+    .line 928
     const-string v0, "Z068"
 
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/util/ContextProviderUtils;->getSettingsSet(Ljava/lang/String;Ljava/lang/String;)Landroid/content/ContentValues;
@@ -6330,7 +6349,7 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 928
+    .line 930
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -6340,7 +6359,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 929
+    .line 931
     const-string v0, "Z069"
 
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/util/ContextProviderUtils;->getSettingsSet(Ljava/lang/String;Ljava/lang/String;)Landroid/content/ContentValues;
@@ -6349,7 +6368,7 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 931
+    .line 933
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -6359,7 +6378,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 932
+    .line 934
     const-string v0, "Z030"
 
     const-string v1, "Photo"
@@ -6370,7 +6389,7 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 934
+    .line 936
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -6380,7 +6399,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 935
+    .line 937
     const-string v0, "G016"
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -6395,7 +6414,7 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 937
+    .line 939
     :cond_3
     return-void
 .end method
@@ -6408,28 +6427,28 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 941
+    .line 943
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->checkQRDetectCondition()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 942
+    .line 944
     const-string v1, "Auto"
 
     const-string v2, "onQrCodeDetection can\'t display QR button"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 943
+    .line 945
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideQRButton()V
 
-    .line 967
+    .line 969
     :goto_0
     return-void
 
-    .line 946
+    .line 948
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -6439,31 +6458,31 @@
 
     if-eqz v1, :cond_1
 
-    .line 947
+    .line 949
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->stopQRCodeDetection()V
 
-    .line 948
+    .line 950
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->showQRButton(Z)V
 
-    .line 949
+    .line 951
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/Engine;->setQRCodeDetectEventListener(Lcom/samsung/android/camera/core/SemCamera$QrCodeDetectionEventListener;)V
 
-    .line 950
+    .line 952
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsQRCodeDetectionEnabled:Z
 
     goto :goto_0
 
-    .line 953
+    .line 955
     :cond_1
     const-string v1, "Auto"
 
@@ -6471,7 +6490,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 955
+    .line 957
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -6480,7 +6499,7 @@
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideTouchEVSlider()V
 
-    .line 957
+    .line 959
     new-instance v0, Ljava/lang/String;
 
     invoke-static {}, Ljava/nio/charset/Charset;->defaultCharset()Ljava/nio/charset/Charset;
@@ -6489,7 +6508,7 @@
 
     invoke-direct {v0, p1, v1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
-    .line 959
+    .line 961
     .local v0, "URL":Ljava/lang/String;
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -6505,27 +6524,27 @@
 
     if-nez v1, :cond_2
 
-    .line 960
+    .line 962
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isSupportQRCode(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 961
+    .line 963
     const/4 v1, -0x3
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->onQRErrorToast(I)V
 
     goto :goto_0
 
-    .line 965
+    .line 967
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->setUri(Ljava/lang/String;)V
 
-    .line 966
+    .line 968
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     invoke-virtual {v1, v3}, Lcom/sec/android/app/camera/widget/gl/QRCodeReader;->showQRButton(Z)V
@@ -6538,14 +6557,14 @@
     .param p1, "error"    # I
 
     .prologue
-    .line 971
+    .line 973
     const-string v0, "Auto"
 
     const-string v1, "onQrCodeDetectionError"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 972
+    .line 974
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mQRCodeReader:Lcom/sec/android/app/camera/widget/gl/QRCodeReader;
 
     if-eqz v0, :cond_0
@@ -6560,10 +6579,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 973
+    .line 975
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/Auto;->onQRErrorToast(I)V
 
-    .line 975
+    .line 977
     :cond_0
     return-void
 .end method
@@ -6572,7 +6591,7 @@
     .locals 1
 
     .prologue
-    .line 979
+    .line 981
     const/4 v0, 0x0
 
     return v0
@@ -6582,12 +6601,12 @@
     .locals 1
 
     .prologue
-    .line 984
+    .line 986
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->switchToRecordingMode()V
 
-    .line 985
+    .line 987
     const/4 v0, 0x0
 
     return v0
@@ -6597,7 +6616,7 @@
     .locals 1
 
     .prologue
-    .line 990
+    .line 992
     const/4 v0, 0x0
 
     return v0
@@ -6608,19 +6627,19 @@
     .param p1, "menu"    # Lcom/sec/android/app/camera/interfaces/MenuBase;
 
     .prologue
-    .line 995
+    .line 997
     invoke-interface {p1}, Lcom/sec/android/app/camera/interfaces/MenuBase;->getMenuId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 1018
+    .line 1020
     :cond_0
     :goto_0
     return-void
 
-    .line 997
+    .line 999
     :sswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -6632,7 +6651,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 998
+    .line 1000
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowFaceDetection:Z
 
     if-eqz v0, :cond_0
@@ -6641,38 +6660,38 @@
 
     if-nez v0, :cond_0
 
-    .line 999
+    .line 1001
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideStickerFaceDetectionIndicator()V
 
     goto :goto_0
 
-    .line 1004
+    .line 1006
     :sswitch_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
 
     goto :goto_0
 
-    .line 1007
+    .line 1009
     :sswitch_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
 
-    .line 1008
+    .line 1010
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceButton()V
 
-    .line 1009
+    .line 1011
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceEffect()V
 
-    .line 1010
+    .line 1012
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideShortcutStickerButton()V
 
-    .line 1011
+    .line 1013
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showEffectLayout(Z)V
 
-    .line 1012
+    .line 1014
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -6681,7 +6700,7 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideRandomStickerButton()V
 
-    .line 1013
+    .line 1015
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -6692,7 +6711,7 @@
 
     goto :goto_0
 
-    .line 995
+    .line 997
     :sswitch_data_0
     .sparse-switch
         0x2 -> :sswitch_0
@@ -6707,7 +6726,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1022
+    .line 1024
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LOW_PERFORMANCE_CONTINUOUS:Z
 
     if-nez v1, :cond_0
@@ -6720,7 +6739,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1023
+    .line 1025
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->isBurstCaptureAvailableFPS()Z
@@ -6737,28 +6756,28 @@
 
     if-nez v1, :cond_1
 
-    .line 1024
+    .line 1026
     const-string v0, "startBurstCapture"
 
     invoke-static {v0}, Lcom/sec/android/app/TraceWrapper;->traceBegin(Ljava/lang/String;)V
 
-    .line 1025
+    .line 1027
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->handleBurstShutterPressed()V
 
-    .line 1026
+    .line 1028
     invoke-static {}, Lcom/sec/android/app/TraceWrapper;->traceEnd()V
 
-    .line 1027
+    .line 1029
     const/4 v0, 0x1
 
-    .line 1033
+    .line 1035
     :cond_0
     :goto_0
     return v0
 
-    .line 1029
+    .line 1031
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -6777,7 +6796,7 @@
     .locals 1
 
     .prologue
-    .line 1038
+    .line 1040
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LOW_PERFORMANCE_CONTINUOUS:Z
 
     if-nez v0, :cond_0
@@ -6806,12 +6825,12 @@
     .param p1, "captureMethod"    # Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
     .prologue
-    .line 1043
+    .line 1045
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mIsBurstCapturing:Z
 
     if-eqz v0, :cond_1
 
-    .line 1044
+    .line 1046
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isShutterPressed()Z
@@ -6820,26 +6839,26 @@
 
     if-nez v0, :cond_0
 
-    .line 1045
+    .line 1047
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->handleBurstShutterReleased(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)V
 
-    .line 1047
+    .line 1049
     :cond_0
     const/4 v0, 0x1
 
-    .line 1051
+    .line 1053
     :goto_0
     return v0
 
-    .line 1049
+    .line 1051
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->handleSingleShutterReleased(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)V
 
-    .line 1051
+    .line 1053
     const/4 v0, 0x0
 
     goto :goto_0
@@ -6850,16 +6869,16 @@
     .param p1, "event"    # I
 
     .prologue
-    .line 1056
+    .line 1058
     packed-switch p1, :pswitch_data_0
 
-    .line 1086
+    .line 1088
     :cond_0
     :goto_0
     :pswitch_0
     return-void
 
-    .line 1058
+    .line 1060
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -6869,18 +6888,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 1059
+    .line 1061
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
 
-    .line 1060
+    .line 1062
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceButton()V
 
-    .line 1061
+    .line 1063
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideShortcutStickerButton()V
 
     goto :goto_0
 
-    .line 1065
+    .line 1067
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -6890,45 +6909,45 @@
 
     if-eqz v0, :cond_0
 
-    .line 1066
+    .line 1068
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelIntervalCapture()V
 
-    .line 1067
+    .line 1069
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x2c0
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 1068
+    .line 1070
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 1069
+    .line 1071
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 1070
+    .line 1072
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
-    .line 1072
+    .line 1074
     :cond_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligenceButton()V
 
-    .line 1073
+    .line 1075
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerShortcutButton()V
 
     goto :goto_0
 
-    .line 1077
+    .line 1079
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -6940,26 +6959,26 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1078
+    .line 1080
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->isBeautyEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 1079
+    .line 1081
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showBeautyMenuButton()V
 
-    .line 1081
+    .line 1083
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligenceButton()V
 
-    .line 1082
+    .line 1084
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showStickerShortcutButton()V
 
     goto :goto_0
 
-    .line 1056
+    .line 1058
     nop
 
     :pswitch_data_0
@@ -6978,7 +6997,7 @@
     .prologue
     const/16 v3, 0x3d
 
-    .line 1090
+    .line 1092
     const-string v0, "Auto"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -7001,7 +7020,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1091
+    .line 1093
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->isActive(I)Z
@@ -7010,7 +7029,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1092
+    .line 1094
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->showMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
@@ -7021,22 +7040,22 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    .line 1094
+    .line 1096
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
     if-eqz v0, :cond_1
 
-    .line 1095
+    .line 1097
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->updateTime(I)V
 
-    .line 1097
+    .line 1099
     :cond_1
     if-nez p1, :cond_3
 
-    .line 1098
+    .line 1100
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isCapturing()Z
@@ -7045,7 +7064,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 1099
+    .line 1101
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getIntervalCaptureCount()I
@@ -7064,7 +7083,7 @@
 
     if-lt v0, v1, :cond_3
 
-    .line 1100
+    .line 1102
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -7072,19 +7091,19 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 1101
+    .line 1103
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x2c0
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 1113
+    .line 1115
     :cond_3
     :goto_0
     return-void
 
-    .line 1104
+    .line 1106
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -7092,27 +7111,27 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 1106
+    .line 1108
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x80
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 1107
+    .line 1109
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showEffectLayout(Z)V
 
-    .line 1108
+    .line 1110
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideBeautyMenuButton()V
 
-    .line 1109
+    .line 1111
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideVisionIntelligenceButton()V
 
-    .line 1110
+    .line 1112
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->hideShortcutStickerButton()V
 
     goto :goto_0
@@ -7122,19 +7141,19 @@
     .locals 2
 
     .prologue
-    .line 1117
+    .line 1119
     const-string v0, "Auto"
 
     const-string v1, "onVisionIntelligenceEffectAnimationComplete()"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1118
+    .line 1120
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligenceButtonWithAnimation()V
 
-    .line 1119
+    .line 1121
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Auto;->showVisionIntelligencePopup()V
 
-    .line 1120
+    .line 1122
     return-void
 .end method

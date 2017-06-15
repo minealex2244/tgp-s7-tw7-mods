@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 6637
+    .line 6726
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$20;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,16 +41,16 @@
     .locals 1
 
     .prologue
-    .line 6640
+    .line 6729
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$20;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->onSwitchCameraCompleted()V
 
-    .line 6641
+    .line 6730
     return-void
 .end method

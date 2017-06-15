@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     .prologue
-    .line 2175
+    .line 2174
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 2181
+    .line 2180
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCurrentOrientation:I
@@ -65,15 +65,15 @@
 
     if-ne v2, v3, :cond_2
 
-    .line 2182
+    .line 2181
     :cond_0
     const/4 v0, 0x0
 
-    .line 2183
+    .line 2182
     .local v0, "first":I
     const/4 v1, 0x6
 
-    .line 2189
+    .line 2188
     .local v1, "last":I
     :goto_0
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
@@ -87,13 +87,13 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 2190
+    .line 2189
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # setter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2, v0}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1002(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;I)I
 
-    .line 2192
+    .line 2191
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
@@ -115,7 +115,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2193
+    .line 2192
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationDirection:Z
@@ -125,7 +125,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 2194
+    .line 2193
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
@@ -135,13 +135,13 @@
 
     if-eq v2, v0, :cond_3
 
-    .line 2195
+    .line 2194
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # operator-- for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1010(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
-    .line 2208
+    .line 2207
     :goto_1
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
@@ -168,7 +168,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 2209
+    .line 2208
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideArrow:[Lcom/samsung/android/glview/GLImage;
@@ -187,7 +187,7 @@
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 2210
+    .line 2209
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideArrow:[Lcom/samsung/android/glview/GLImage;
@@ -206,7 +206,7 @@
 
     invoke-virtual {v2, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2211
+    .line 2210
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
@@ -219,30 +219,30 @@
     # invokes: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->showGuideRect(I)V
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1400(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;I)V
 
-    .line 2212
+    .line 2211
     return-void
 
-    .line 2185
+    .line 2184
     .end local v0    # "first":I
     .end local v1    # "last":I
     :cond_2
     const/4 v0, 0x7
 
-    .line 2186
+    .line 2185
     .restart local v0    # "first":I
     const/16 v1, 0xd
 
     .restart local v1    # "last":I
     goto :goto_0
 
-    .line 2197
+    .line 2196
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # operator++ for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1008(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
-    .line 2198
+    .line 2197
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # setter for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationDirection:Z
@@ -250,7 +250,7 @@
 
     goto :goto_1
 
-    .line 2201
+    .line 2200
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
@@ -261,7 +261,7 @@
 
     if-eq v2, v1, :cond_5
 
-    .line 2202
+    .line 2201
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # operator++ for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
@@ -269,14 +269,14 @@
 
     goto :goto_1
 
-    .line 2204
+    .line 2203
     :cond_5
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     # operator-- for: Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGuideAnimationIndex:I
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->access$1010(Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;)I
 
-    .line 2205
+    .line 2204
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     const/4 v3, 0x1
@@ -292,7 +292,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 2216
+    .line 2215
     return-void
 .end method
 
@@ -301,6 +301,6 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 2220
+    .line 2219
     return-void
 .end method

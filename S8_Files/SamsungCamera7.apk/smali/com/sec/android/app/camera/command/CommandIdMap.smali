@@ -1180,7 +1180,13 @@
 
 .field public static final SPOT_LIGHT_LEVEL_MIN:I = 0x1db7
 
-.field public static final STICKER_END:I = 0x2ee0
+.field public static final STICKER_END:I = 0x36b0
+
+.field public static final STICKER_FIRST_FACE_AR:I = 0x2af8
+
+.field public static final STICKER_FIRST_STAMP:I = 0x2ee0
+
+.field public static final STICKER_FIRST_WATERMARK:I = 0x32c8
 
 .field public static final STICKER_NONE:I = 0x2710
 
@@ -1300,778 +1306,778 @@
 
     const/4 v3, 0x1
 
-    .line 877
+    .line 880
     new-instance v0, Landroid/util/SparseIntArray;
 
     invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
     sput-object v0, Lcom/sec/android/app/camera/command/CommandIdMap;->mCommandIdArray:Landroid/util/SparseIntArray;
 
-    .line 882
+    .line 885
     new-instance v0, Landroid/util/SparseIntArray;
 
     invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
     sput-object v0, Lcom/sec/android/app/camera/command/CommandIdMap;->mCombinedKeyArray:Landroid/util/SparseIntArray;
 
-    .line 885
+    .line 888
     invoke-static {v5, v2, v3}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 886
+    .line 889
     const/4 v0, 0x2
 
     invoke-static {v3, v2, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 887
+    .line 890
     const/4 v0, 0x3
 
     const/4 v1, 0x3
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 888
+    .line 891
     invoke-static {v4, v2, v4}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 889
+    .line 892
     const/4 v0, 0x5
 
     const/4 v1, 0x5
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 890
+    .line 893
     const/4 v0, 0x6
 
     const/4 v1, 0x6
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 891
+    .line 894
     const/16 v0, 0x7f
 
     const/16 v1, 0x6c
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 892
+    .line 895
     invoke-static {v6, v2, v6}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 893
+    .line 896
     const/16 v0, 0x8
 
     const/16 v1, 0x8
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 894
+    .line 897
     const/16 v0, 0x9
 
     const/16 v1, 0x9
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 895
+    .line 898
     const/16 v0, 0xa
 
     const/16 v1, 0xa
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 896
+    .line 899
     const/16 v0, 0x1f
 
     const/16 v1, 0xe
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 897
+    .line 900
     const/16 v0, 0xe
 
     const/16 v1, 0x77
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 898
+    .line 901
     const/16 v0, 0xb
 
     const/16 v1, 0xb
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 899
+    .line 902
     const/16 v0, 0x17
 
     const/16 v1, 0x18
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 900
+    .line 903
     const/16 v0, 0x138
 
     const/16 v1, 0x17
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 901
+    .line 904
     const/16 v0, 0xc
 
     const/16 v1, 0xc
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 902
+    .line 905
     const/16 v0, 0x11
 
     const/16 v1, 0x11
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 903
+    .line 906
     const/16 v0, 0x2a
 
     const/16 v1, 0x1e
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 904
+    .line 907
     const/16 v0, 0x12
 
     const/16 v1, 0x12
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 905
+    .line 908
     const/16 v0, 0x13
 
     const/16 v1, 0x13
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 906
+    .line 909
     const/16 v0, 0x14
 
     const/16 v1, 0x14
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 907
+    .line 910
     const/16 v0, 0x26
 
     const/16 v1, 0x33
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 908
+    .line 911
     const/16 v0, 0x28
 
     const/16 v1, 0x28
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 909
+    .line 912
     const/16 v0, 0x15
 
     const/16 v1, 0x15
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 910
+    .line 913
     const/16 v0, 0x16
 
     const/16 v1, 0x16
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 911
+    .line 914
     const/16 v0, 0x1c
 
     const/16 v1, 0x1c
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 912
+    .line 915
     const/16 v0, 0x1d
 
     const/16 v1, 0x1d
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 913
+    .line 916
     const/16 v0, 0x20
 
     const/16 v1, 0x20
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 914
+    .line 917
     const/16 v0, 0x21
 
     const/16 v1, 0x21
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 915
+    .line 918
     const/16 v0, 0x24
 
     const/16 v1, 0x24
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 916
+    .line 919
     const/16 v0, 0x78
 
     const/16 v1, 0x78
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 917
+    .line 920
     const/16 v0, 0x7c
 
     const/16 v1, 0x24
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 918
+    .line 921
     const/16 v0, 0x79
 
     const/16 v1, 0x79
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 919
+    .line 922
     const/16 v0, 0x41
 
     const/16 v1, 0x41
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 920
+    .line 923
     const/16 v0, 0x47
 
     const/16 v1, 0x47
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 921
+    .line 924
     const/16 v0, 0x22
 
     const/16 v1, 0x22
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 922
+    .line 925
     const/16 v0, 0x49
 
     const/16 v1, 0x48
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 923
+    .line 926
     const/16 v0, 0x4d
 
     const/16 v1, 0x4d
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 924
+    .line 927
     const/16 v0, 0x6b
 
     const/16 v1, 0xbc3
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 925
+    .line 928
     const/16 v0, 0x6d
 
     const/16 v1, 0x6d
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 926
+    .line 929
     const/16 v0, 0x6e
 
     const/16 v1, 0x6e
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 927
+    .line 930
     const/16 v0, 0x6f
 
     const/16 v1, 0x6f
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 928
+    .line 931
     const/16 v0, 0x70
 
     const/16 v1, 0x70
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 929
+    .line 932
     const/16 v0, 0x71
 
     const/16 v1, 0xac
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 930
+    .line 933
     const/16 v0, 0xb4
 
     const/16 v1, 0x71
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 931
+    .line 934
     const/16 v0, 0x72
 
     const/16 v1, 0x72
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 932
+    .line 935
     const/16 v0, 0x7d
 
     const/16 v1, 0x54
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 933
+    .line 936
     const/16 v0, 0x74
 
     const/16 v1, 0x89
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 934
+    .line 937
     const/16 v0, 0x73
 
     const/16 v1, 0x88
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 935
+    .line 938
     const/16 v0, 0x18
 
     const/16 v1, 0x51
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 936
+    .line 939
     const/16 v0, 0x1a
 
     const/16 v1, 0x23
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 937
+    .line 940
     const/16 v0, 0x75
 
     const/16 v1, 0x75
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 938
+    .line 941
     const/16 v0, 0x83
 
     const/16 v1, 0x83
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 939
+    .line 942
     const/16 v0, 0x84
 
     const/16 v1, 0x84
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 940
+    .line 943
     const/16 v0, 0x13b
 
     const/16 v1, 0x86
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 941
+    .line 944
     const/16 v0, 0x81
 
     const/16 v1, 0x81
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 942
+    .line 945
     const/16 v0, 0x82
 
     const/16 v1, 0x82
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 943
+    .line 946
     const/16 v0, 0x76
 
     const/16 v1, 0x80
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 944
+    .line 947
     const/16 v0, 0x8d
 
     const/16 v1, 0x8d
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 945
+    .line 948
     const/16 v0, 0x87
 
     const/16 v1, 0x87
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 946
+    .line 949
     const/16 v0, 0xad
 
     const/16 v1, 0xad
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 947
+    .line 950
     const/16 v0, 0x13c
 
     const/16 v1, 0x90
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 948
+    .line 951
     const/16 v0, 0x91
 
     const/16 v1, 0x91
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 949
+    .line 952
     const/16 v0, 0x33
 
     const/16 v1, 0x92
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 950
+    .line 953
     const/16 v0, 0x170d
 
     const/16 v1, 0x96
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 951
+    .line 954
     const/16 v0, 0xaa
 
     const/16 v1, 0xaa
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 952
+    .line 955
     const/16 v0, 0xb5
 
     const/16 v1, 0xb0
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 953
+    .line 956
     const/16 v0, 0xb6
 
     const/16 v1, 0xb1
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 956
+    .line 959
     const/16 v0, 0xbb9
 
     const/16 v1, 0xbb9
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 957
+    .line 960
     const/16 v0, 0xbba
 
     const/16 v1, 0xbba
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 958
+    .line 961
     const/16 v0, 0xbbb
 
     const/16 v1, 0xbbb
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 959
+    .line 962
     const/16 v0, 0xbbf
 
     const/16 v1, 0xbbf
 
     invoke-static {v0, v2, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 962
+    .line 965
     const/16 v0, 0x24
 
     const/16 v1, 0xc8
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 963
+    .line 966
     const/16 v0, 0x24
 
     const/16 v1, 0xc9
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 966
+    .line 969
     const/16 v0, 0x12c
 
     invoke-static {v3, v5, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 967
+    .line 970
     const/16 v0, 0x12d
 
     invoke-static {v3, v3, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 968
+    .line 971
     const/4 v0, 0x2
 
     const/16 v1, 0x12e
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 969
+    .line 972
     const/16 v0, 0x133
 
     invoke-static {v3, v6, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 970
+    .line 973
     const/16 v0, 0xe
 
     const/16 v1, 0x13a
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 971
+    .line 974
     const/16 v0, 0x11
 
     const/16 v1, 0x13d
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 972
+    .line 975
     const/16 v0, 0x17
 
     const/16 v1, 0x13f
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 973
+    .line 976
     const/16 v0, 0x23
 
     const/16 v1, 0x149
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 974
+    .line 977
     const/16 v0, 0x27
 
     const/16 v1, 0x14d
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 975
+    .line 978
     const/16 v0, 0x28
 
     const/16 v1, 0x14e
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 976
+    .line 979
     const/16 v0, 0x2a
 
     const/16 v1, 0x14f
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 977
+    .line 980
     const/16 v0, 0x2f
 
     const/16 v1, 0x150
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 978
+    .line 981
     const/16 v0, 0x2d
 
     const/16 v1, 0x151
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 979
+    .line 982
     const/16 v0, 0x2e
 
     const/16 v1, 0x152
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 980
+    .line 983
     const/16 v0, 0x37
 
     const/16 v1, 0x154
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 981
+    .line 984
     const/16 v0, 0x38
 
     const/16 v1, 0x157
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 982
+    .line 985
     const/16 v0, 0x34
 
     const/16 v1, 0x156
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 983
+    .line 986
     const/16 v0, 0x4e
 
     const/16 v1, 0x167
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 984
+    .line 987
     const/16 v0, 0x3b
 
     const/16 v1, 0x158
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 985
+    .line 988
     const/16 v0, 0x3f
 
     const/16 v1, 0x15a
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 986
+    .line 989
     const/16 v0, 0x3e
 
     const/16 v1, 0x15b
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 987
+    .line 990
     const/16 v0, 0x40
 
     const/16 v1, 0x15c
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 988
+    .line 991
     const/16 v0, 0x3a
 
     const/16 v1, 0x15d
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 989
+    .line 992
     const/16 v0, 0x31
 
     const/16 v1, 0x15e
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 990
+    .line 993
     const/16 v0, 0x44
 
     const/16 v1, 0x161
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 991
+    .line 994
     const/16 v0, 0x43
 
     const/16 v1, 0x15f
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 992
+    .line 995
     const/16 v0, 0x45
 
     const/16 v1, 0x160
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 993
+    .line 996
     const/16 v0, 0x48
 
     const/16 v1, 0x162
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 994
+    .line 997
     const/16 v0, 0x4a
 
     const/16 v1, 0x163
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 995
+    .line 998
     const/16 v0, 0x32
 
     const/16 v1, 0x155
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 996
+    .line 999
     const/16 v0, 0x4b
 
     const/16 v1, 0x164
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 997
+    .line 1000
     const/16 v0, 0x46
 
     const/16 v1, 0x165
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 998
+    .line 1001
     const/16 v0, 0x4d
 
     const/16 v1, 0x166
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 999
+    .line 1002
     const/16 v0, 0x4f
 
     const/16 v1, 0x168
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1002
+    .line 1005
     const/16 v0, 0x7e
 
     const/16 v1, 0x74
 
     invoke-static {v3, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1005
+    .line 1008
     const/4 v0, 0x3
 
     const/16 v1, 0x258
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1006
+    .line 1009
     const/4 v0, 0x3
 
     const/4 v1, 0x2
@@ -2080,21 +2086,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1007
+    .line 1010
     const/4 v0, 0x3
 
     const/16 v1, 0x25a
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1010
+    .line 1013
     const/16 v0, 0xaa
 
     const/16 v1, 0x26c
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1011
+    .line 1014
     const/16 v0, 0xaa
 
     const/4 v1, 0x2
@@ -2103,35 +2109,35 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1012
+    .line 1015
     const/16 v0, 0xaa
 
     const/16 v1, 0x26e
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1015
+    .line 1018
     const/4 v0, 0x5
 
     const/16 v1, 0x2bc
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1016
+    .line 1019
     const/4 v0, 0x5
 
     const/16 v1, 0x2bd
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1017
+    .line 1020
     const/4 v0, 0x5
 
     const/16 v1, 0x2be
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1018
+    .line 1021
     const/4 v0, 0x5
 
     const/4 v1, 0x3
@@ -2140,21 +2146,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1021
+    .line 1024
     const/4 v0, 0x6
 
     const/16 v1, 0x320
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1022
+    .line 1025
     const/4 v0, 0x6
 
     const/16 v1, 0x321
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1023
+    .line 1026
     const/4 v0, 0x6
 
     const/4 v1, 0x2
@@ -2163,7 +2169,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1024
+    .line 1027
     const/4 v0, 0x6
 
     const/4 v1, 0x3
@@ -2172,28 +2178,28 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1026
+    .line 1029
     const/16 v0, 0x7f
 
     const/16 v1, 0x76c
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1027
+    .line 1030
     const/16 v0, 0x7f
 
     const/16 v1, 0x76d
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1030
+    .line 1033
     const/16 v0, 0x9
 
     const/16 v1, 0x384
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1031
+    .line 1034
     const/16 v0, 0x9
 
     const/4 v1, 0x3
@@ -2202,7 +2208,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1032
+    .line 1035
     const/16 v0, 0x9
 
     const/4 v1, 0x2
@@ -2211,7 +2217,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1033
+    .line 1036
     const/16 v0, 0x9
 
     const/4 v1, 0x5
@@ -2220,35 +2226,35 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1034
+    .line 1037
     const/16 v0, 0x9
 
     const/16 v1, 0x388
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1035
+    .line 1038
     const/16 v0, 0x9
 
     const/16 v1, 0x389
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1038
+    .line 1041
     const/16 v0, 0x8
 
     const/16 v1, 0x3e8
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1039
+    .line 1042
     const/16 v0, 0x8
 
     const/16 v1, 0x3eb
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1040
+    .line 1043
     const/16 v0, 0x8
 
     const/4 v1, 0x2
@@ -2257,7 +2263,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1041
+    .line 1044
     const/16 v0, 0x8
 
     const/4 v1, 0x3
@@ -2266,7 +2272,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1042
+    .line 1045
     const/16 v0, 0x5a
 
     const/16 v1, 0x28
@@ -2275,7 +2281,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1043
+    .line 1046
     const/16 v0, 0x5a
 
     const/16 v1, 0x29
@@ -2284,7 +2290,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1044
+    .line 1047
     const/16 v0, 0x5a
 
     const/16 v1, 0x2e
@@ -2293,7 +2299,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1045
+    .line 1048
     const/16 v0, 0x5a
 
     const/16 v1, 0x2a
@@ -2302,7 +2308,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1046
+    .line 1049
     const/16 v0, 0x5a
 
     const/16 v1, 0x2b
@@ -2311,7 +2317,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1047
+    .line 1050
     const/16 v0, 0x5a
 
     const/16 v1, 0x2f
@@ -2320,7 +2326,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1048
+    .line 1051
     const/16 v0, 0x5a
 
     const/16 v1, 0x2c
@@ -2329,7 +2335,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1049
+    .line 1052
     const/16 v0, 0x5a
 
     const/16 v1, 0x2d
@@ -2338,7 +2344,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1050
+    .line 1053
     const/16 v0, 0x5a
 
     const/16 v1, 0x30
@@ -2347,7 +2353,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1051
+    .line 1054
     const/16 v0, 0x8
 
     const/16 v1, 0x1f40
@@ -2356,7 +2362,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1052
+    .line 1055
     const/16 v0, 0x8
 
     const/16 v1, 0x1fa4
@@ -2365,7 +2371,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1053
+    .line 1056
     const/16 v0, 0x8
 
     const/16 v1, 0x2008
@@ -2374,7 +2380,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1054
+    .line 1057
     const/16 v0, 0x8
 
     const/16 v1, 0x232a
@@ -2383,7 +2389,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1055
+    .line 1058
     const/16 v0, 0x8
 
     const/16 v1, 0x19
@@ -2392,7 +2398,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1056
+    .line 1059
     const/16 v0, 0x8
 
     const/16 v1, 0x1a
@@ -2401,7 +2407,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1057
+    .line 1060
     const/16 v0, 0x8
 
     const/16 v1, 0x1b
@@ -2410,7 +2416,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1058
+    .line 1061
     const/16 v0, 0x8
 
     const/16 v1, 0x1c
@@ -2419,7 +2425,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1059
+    .line 1062
     const/16 v0, 0x8
 
     const/16 v1, 0x1d
@@ -2428,7 +2434,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1060
+    .line 1063
     const/16 v0, 0x8
 
     const/16 v1, 0x1e
@@ -2437,7 +2443,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1061
+    .line 1064
     const/16 v0, 0x8
 
     const/16 v1, 0x1f
@@ -2446,7 +2452,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1062
+    .line 1065
     const/16 v0, 0x8
 
     const/16 v1, 0x18
@@ -2455,21 +2461,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1065
+    .line 1068
     const/16 v0, 0x1f
 
     const/16 v1, 0xf3c
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1066
+    .line 1069
     const/16 v0, 0x1f
 
     const/16 v1, 0xf3d
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1067
+    .line 1070
     const/16 v0, 0x1f
 
     const/4 v1, 0x2
@@ -2478,7 +2484,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1068
+    .line 1071
     const/16 v0, 0x1f
 
     const/4 v1, 0x3
@@ -2487,14 +2493,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1069
+    .line 1072
     const/16 v0, 0x1f
 
     const/16 v1, 0xf40
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1070
+    .line 1073
     const/16 v0, 0x1f
 
     const/4 v1, 0x5
@@ -2503,7 +2509,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1071
+    .line 1074
     const/16 v0, 0x1f
 
     const/4 v1, 0x6
@@ -2512,14 +2518,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1072
+    .line 1075
     const/16 v0, 0x1f
 
     const/16 v1, 0xf43
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1073
+    .line 1076
     const/16 v0, 0x1f
 
     const/16 v1, 0x8
@@ -2528,7 +2534,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1074
+    .line 1077
     const/16 v0, 0x1f
 
     const/16 v1, 0x9
@@ -2537,7 +2543,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1075
+    .line 1078
     const/16 v0, 0x1f
 
     const/16 v1, 0xa
@@ -2546,7 +2552,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1076
+    .line 1079
     const/16 v0, 0x1f
 
     const/16 v1, 0xb
@@ -2555,7 +2561,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1077
+    .line 1080
     const/16 v0, 0x1f
 
     const/16 v1, 0xc
@@ -2564,7 +2570,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1078
+    .line 1081
     const/16 v0, 0x1f
 
     const/16 v1, 0xd
@@ -2573,7 +2579,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1079
+    .line 1082
     const/16 v0, 0x1f
 
     const/16 v1, 0xe
@@ -2582,7 +2588,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1080
+    .line 1083
     const/16 v0, 0x1f
 
     const/16 v1, 0xf
@@ -2591,7 +2597,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1081
+    .line 1084
     const/16 v0, 0x1f
 
     const/16 v1, 0x10
@@ -2600,7 +2606,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1082
+    .line 1085
     const/16 v0, 0x1f
 
     const/16 v1, 0x11
@@ -2609,7 +2615,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1083
+    .line 1086
     const/16 v0, 0x1f
 
     const/16 v1, 0x12
@@ -2618,7 +2624,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1084
+    .line 1087
     const/16 v0, 0x1f
 
     const/16 v1, 0x13
@@ -2627,7 +2633,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1085
+    .line 1088
     const/16 v0, 0x1f
 
     const/16 v1, 0x14
@@ -2636,7 +2642,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1086
+    .line 1089
     const/16 v0, 0x1f
 
     const/16 v1, 0x15
@@ -2645,7 +2651,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1087
+    .line 1090
     const/16 v0, 0x1f
 
     const/16 v1, 0x16
@@ -2654,7 +2660,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1088
+    .line 1091
     const/16 v0, 0x1f
 
     const/16 v1, 0x17
@@ -2663,7 +2669,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1089
+    .line 1092
     const/16 v0, 0x1f
 
     const/16 v1, 0x18
@@ -2672,7 +2678,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1090
+    .line 1093
     const/16 v0, 0x1f
 
     const/16 v1, 0x19
@@ -2681,7 +2687,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1091
+    .line 1094
     const/16 v0, 0x1f
 
     const/16 v1, 0x1a
@@ -2690,7 +2696,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1092
+    .line 1095
     const/16 v0, 0x1f
 
     const/16 v1, 0x1b
@@ -2699,7 +2705,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1093
+    .line 1096
     const/16 v0, 0x1f
 
     const/16 v1, 0x1c
@@ -2708,7 +2714,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1094
+    .line 1097
     const/16 v0, 0x1f
 
     const/16 v1, 0x1d
@@ -2717,7 +2723,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1095
+    .line 1098
     const/16 v0, 0x1f
 
     const/16 v1, 0x1e
@@ -2726,7 +2732,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1096
+    .line 1099
     const/16 v0, 0x1f
 
     const/16 v1, 0x1f
@@ -2735,7 +2741,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1097
+    .line 1100
     const/16 v0, 0x1f
 
     const/16 v1, 0x20
@@ -2744,7 +2750,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1098
+    .line 1101
     const/16 v0, 0x1f
 
     const/16 v1, 0x21
@@ -2753,7 +2759,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1099
+    .line 1102
     const/16 v0, 0x1f
 
     const/16 v1, 0x22
@@ -2762,21 +2768,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1102
+    .line 1105
     const/16 v0, 0xa
 
     const/16 v1, 0x44c
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1103
+    .line 1106
     const/16 v0, 0xa
 
     const/16 v1, 0x44d
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1104
+    .line 1107
     const/16 v0, 0xa
 
     const/4 v1, 0x2
@@ -2785,7 +2791,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1105
+    .line 1108
     const/16 v0, 0xa
 
     const/4 v1, 0x3
@@ -2794,14 +2800,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1106
+    .line 1109
     const/16 v0, 0xa
 
     const/16 v1, 0x450
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1107
+    .line 1110
     const/16 v0, 0xa
 
     const/4 v1, 0x5
@@ -2810,7 +2816,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1108
+    .line 1111
     const/16 v0, 0xa
 
     const/4 v1, 0x6
@@ -2819,14 +2825,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1109
+    .line 1112
     const/16 v0, 0xa
 
     const/16 v1, 0x453
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1110
+    .line 1113
     const/16 v0, 0xa
 
     const/16 v1, 0x8
@@ -2835,7 +2841,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1111
+    .line 1114
     const/16 v0, 0xa
 
     const/16 v1, 0x9
@@ -2844,7 +2850,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1112
+    .line 1115
     const/16 v0, 0xa
 
     const/16 v1, 0xb
@@ -2853,7 +2859,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1113
+    .line 1116
     const/16 v0, 0xa
 
     const/16 v1, 0xa
@@ -2862,7 +2868,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1114
+    .line 1117
     const/16 v0, 0xa
 
     const/16 v1, 0xc
@@ -2871,7 +2877,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1115
+    .line 1118
     const/16 v0, 0xa
 
     const/16 v1, 0xd
@@ -2880,21 +2886,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1118
+    .line 1121
     const/16 v0, 0x18
 
     const/16 v1, 0x5dc
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1119
+    .line 1122
     const/16 v0, 0x18
 
     const/16 v1, 0x5dd
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1120
+    .line 1123
     const/16 v0, 0x18
 
     const/4 v1, 0x2
@@ -2903,21 +2909,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1123
+    .line 1126
     const/16 v0, 0xe
 
     const/16 v1, 0xfa0
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1124
+    .line 1127
     const/16 v0, 0xe
 
     const/16 v1, 0xfa1
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1125
+    .line 1128
     const/16 v0, 0xe
 
     const/4 v1, 0x2
@@ -2926,7 +2932,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1126
+    .line 1129
     const/16 v0, 0xe
 
     const/4 v1, 0x3
@@ -2935,14 +2941,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1127
+    .line 1130
     const/16 v0, 0xe
 
     const/16 v1, 0xfa4
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1128
+    .line 1131
     const/16 v0, 0xe
 
     const/4 v1, 0x5
@@ -2951,7 +2957,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1129
+    .line 1132
     const/16 v0, 0xe
 
     const/4 v1, 0x6
@@ -2960,28 +2966,28 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1130
+    .line 1133
     const/16 v0, 0xe
 
     const/16 v1, 0xfa7
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1133
+    .line 1136
     const/16 v0, 0xb
 
     const/16 v1, 0x4b0
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1134
+    .line 1137
     const/16 v0, 0xb
 
     const/16 v1, 0x4b1
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1135
+    .line 1138
     const/16 v0, 0xb
 
     const/4 v1, 0x2
@@ -2990,21 +2996,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1138
+    .line 1141
     const/16 v0, 0xc
 
     const/16 v1, 0x514
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1139
+    .line 1142
     const/16 v0, 0xc
 
     const/16 v1, 0x515
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1140
+    .line 1143
     const/16 v0, 0xc
 
     const/4 v1, 0x2
@@ -3013,49 +3019,49 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1143
+    .line 1146
     const/16 v0, 0x138
 
     const/16 v1, 0x640
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1144
+    .line 1147
     const/16 v0, 0x138
 
     const/16 v1, 0x641
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1147
+    .line 1150
     const/16 v0, 0x16
 
     const/16 v1, 0x898
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1148
+    .line 1151
     const/16 v0, 0x16
 
     const/16 v1, 0x899
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1151
+    .line 1154
     const/16 v0, 0x13
 
     const/16 v1, 0x8a2
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1152
+    .line 1155
     const/16 v0, 0x13
 
     const/16 v1, 0x8a3
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1153
+    .line 1156
     const/16 v0, 0x13
 
     const/4 v1, 0x2
@@ -3064,419 +3070,419 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1156
+    .line 1159
     const/16 v0, 0xbbf
 
     const/16 v1, 0x8ac
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1157
+    .line 1160
     const/16 v0, 0xbbf
 
     const/16 v1, 0x8ad
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1160
+    .line 1163
     const/16 v0, 0x2c
 
     const/16 v1, 0x91f
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1161
+    .line 1164
     const/16 v0, 0x31
 
     const/16 v1, 0x924
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1162
+    .line 1165
     const/16 v0, 0x20
 
     const/16 v1, 0x8fc
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1163
+    .line 1166
     const/16 v0, 0x21
 
     const/16 v1, 0x8fd
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1164
+    .line 1167
     const/16 v0, 0x1e
 
     const/16 v1, 0x8fe
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1165
+    .line 1168
     const/16 v0, 0x24
 
     const/16 v1, 0x8ff
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1166
+    .line 1169
     const/16 v0, 0x2d
 
     const/16 v1, 0x920
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1167
+    .line 1170
     const/16 v0, 0x32
 
     const/16 v1, 0x925
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1168
+    .line 1171
     const/16 v0, 0x900
 
     invoke-static {v4, v5, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1169
+    .line 1172
     const/16 v0, 0x901
 
     invoke-static {v4, v3, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1170
+    .line 1173
     const/16 v0, 0x14
 
     const/16 v1, 0x902
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1171
+    .line 1174
     const/4 v0, 0x2
 
     const/16 v1, 0x903
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1172
+    .line 1175
     const/4 v0, 0x3
 
     const/16 v1, 0x904
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1173
+    .line 1176
     const/16 v0, 0x2e
 
     const/16 v1, 0x921
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1174
+    .line 1177
     const/16 v0, 0x33
 
     const/16 v1, 0x926
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1175
+    .line 1178
     const/16 v0, 0x19
 
     const/16 v1, 0x905
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1176
+    .line 1179
     const/16 v0, 0x906
 
     invoke-static {v4, v4, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1177
+    .line 1180
     const/4 v0, 0x5
 
     const/16 v1, 0x907
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1178
+    .line 1181
     const/16 v0, 0x15
 
     const/16 v1, 0x908
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1179
+    .line 1182
     const/4 v0, 0x6
 
     const/16 v1, 0x909
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1180
+    .line 1183
     const/16 v0, 0x90a
 
     invoke-static {v4, v6, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1181
+    .line 1184
     const/16 v0, 0x17
 
     const/16 v1, 0x90b
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1182
+    .line 1185
     const/16 v0, 0x1a
 
     const/16 v1, 0x90c
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1183
+    .line 1186
     const/16 v0, 0xd
 
     const/16 v1, 0x90d
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1184
+    .line 1187
     const/16 v0, 0x8
 
     const/16 v1, 0x90e
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1185
+    .line 1188
     const/16 v0, 0x9
 
     const/16 v1, 0x90f
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1186
+    .line 1189
     const/16 v0, 0x47
 
     const/16 v1, 0x931
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1187
+    .line 1190
     const/16 v0, 0x48
 
     const/16 v1, 0x932
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1188
+    .line 1191
     const/16 v0, 0x1b
 
     const/16 v1, 0x910
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1189
+    .line 1192
     const/16 v0, 0x1c
 
     const/16 v1, 0x911
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1190
+    .line 1193
     const/16 v0, 0x18
 
     const/16 v1, 0x912
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1191
+    .line 1194
     const/16 v0, 0x1f
 
     const/16 v1, 0x913
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1192
+    .line 1195
     const/16 v0, 0xa
 
     const/16 v1, 0x914
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1193
+    .line 1196
     const/16 v0, 0xe
 
     const/16 v1, 0x915
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1194
+    .line 1197
     const/16 v0, 0x1d
 
     const/16 v1, 0x916
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1195
+    .line 1198
     const/16 v0, 0x26
 
     const/16 v1, 0x91c
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1196
+    .line 1199
     const/16 v0, 0xc
 
     const/16 v1, 0x917
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1197
+    .line 1200
     const/16 v0, 0x23
 
     const/16 v1, 0x918
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1198
+    .line 1201
     const/16 v0, 0xb
 
     const/16 v1, 0x919
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1199
+    .line 1202
     const/16 v0, 0x29
 
     const/16 v1, 0x91e
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1200
+    .line 1203
     const/16 v0, 0x12
 
     const/16 v1, 0x91a
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1201
+    .line 1204
     const/16 v0, 0x25
 
     const/16 v1, 0x91b
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1202
+    .line 1205
     const/16 v0, 0x27
 
     const/16 v1, 0x91d
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1203
+    .line 1206
     const/16 v0, 0x2f
 
     const/16 v1, 0x922
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1204
+    .line 1207
     const/16 v0, 0x30
 
     const/16 v1, 0x923
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1205
+    .line 1208
     const/16 v0, 0x3b
 
     const/16 v1, 0x927
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1206
+    .line 1209
     const/16 v0, 0x3d
 
     const/16 v1, 0x928
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1207
+    .line 1210
     const/16 v0, 0x3f
 
     const/16 v1, 0x929
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1208
+    .line 1211
     const/16 v0, 0x37
 
     const/16 v1, 0x92a
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1209
+    .line 1212
     const/16 v0, 0x3a
 
     const/16 v1, 0x92b
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1210
+    .line 1213
     const/16 v0, 0x40
 
     const/16 v1, 0x92c
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1211
+    .line 1214
     const/16 v0, 0x41
 
     const/16 v1, 0x92d
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1212
+    .line 1215
     const/16 v0, 0x42
 
     const/16 v1, 0x92e
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1213
+    .line 1216
     const/16 v0, 0x43
 
     const/16 v1, 0x92f
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1214
+    .line 1217
     const/16 v0, 0x44
 
     const/16 v1, 0x930
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1215
+    .line 1218
     const/16 v0, 0x4b
 
     const/16 v1, 0x933
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1216
+    .line 1219
     const/16 v0, 0x4e
 
     const/16 v1, 0x934
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1217
+    .line 1220
     const/16 v0, 0x4f
 
     const/16 v1, 0x935
 
     invoke-static {v4, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1219
+    .line 1222
     const/16 v0, 0xbb9
 
     const/16 v1, 0x28
@@ -3485,7 +3491,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1220
+    .line 1223
     const/16 v0, 0xbb9
 
     const/16 v1, 0x15
@@ -3494,7 +3500,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1221
+    .line 1224
     const/16 v0, 0xbb9
 
     const/16 v1, 0xd
@@ -3503,7 +3509,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1222
+    .line 1225
     const/16 v0, 0xbb9
 
     const/16 v1, 0x2a
@@ -3512,7 +3518,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1223
+    .line 1226
     const/16 v0, 0xbb9
 
     const/16 v1, 0x1f
@@ -3521,7 +3527,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1224
+    .line 1227
     const/16 v0, 0xbb9
 
     const/16 v1, 0xe
@@ -3530,7 +3536,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1225
+    .line 1228
     const/16 v0, 0xbb9
 
     const/16 v1, 0x22
@@ -3539,7 +3545,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1226
+    .line 1229
     const/16 v0, 0xbb9
 
     const/16 v1, 0x23
@@ -3548,7 +3554,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1227
+    .line 1230
     const/16 v0, 0xbb9
 
     const/16 v1, 0xf
@@ -3557,7 +3563,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1228
+    .line 1231
     const/16 v0, 0xbb9
 
     const/16 v1, 0xb
@@ -3566,7 +3572,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1229
+    .line 1232
     const/16 v0, 0xbb9
 
     const/16 v1, 0x29
@@ -3575,7 +3581,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1230
+    .line 1233
     const/16 v0, 0xbb9
 
     const/16 v1, 0x10
@@ -3584,7 +3590,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1231
+    .line 1234
     const/16 v0, 0xbb9
 
     const/16 v1, 0x12
@@ -3593,7 +3599,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1232
+    .line 1235
     const/16 v0, 0xbb9
 
     const/16 v1, 0x13
@@ -3602,350 +3608,350 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1235
+    .line 1238
     const/16 v0, -0x14
 
     const/16 v1, 0xe10
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1236
+    .line 1239
     const/16 v0, -0x13
 
     const/16 v1, 0xe11
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1237
+    .line 1240
     const/16 v0, -0x12
 
     const/16 v1, 0xe12
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1238
+    .line 1241
     const/16 v0, -0x11
 
     const/16 v1, 0xe13
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1239
+    .line 1242
     const/16 v0, -0x10
 
     const/16 v1, 0xe14
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1240
+    .line 1243
     const/16 v0, -0xf
 
     const/16 v1, 0xe15
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1241
+    .line 1244
     const/16 v0, -0xe
 
     const/16 v1, 0xe16
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1242
+    .line 1245
     const/16 v0, -0xd
 
     const/16 v1, 0xe17
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1243
+    .line 1246
     const/16 v0, -0xc
 
     const/16 v1, 0xe18
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1244
+    .line 1247
     const/16 v0, -0xb
 
     const/16 v1, 0xe19
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1245
+    .line 1248
     const/16 v0, -0xa
 
     const/16 v1, 0xe1a
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1246
+    .line 1249
     const/16 v0, -0x9
 
     const/16 v1, 0xe1b
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1247
+    .line 1250
     const/4 v0, -0x8
 
     const/16 v1, 0xe1c
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1248
+    .line 1251
     const/4 v0, -0x7
 
     const/16 v1, 0xe1d
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1249
+    .line 1252
     const/4 v0, -0x6
 
     const/16 v1, 0xe1e
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1250
+    .line 1253
     const/4 v0, -0x5
 
     const/16 v1, 0xe1f
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1251
+    .line 1254
     const/4 v0, -0x4
 
     const/16 v1, 0xe20
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1252
+    .line 1255
     const/4 v0, -0x3
 
     const/16 v1, 0xe21
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1253
+    .line 1256
     const/4 v0, -0x2
 
     const/16 v1, 0xe22
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1254
+    .line 1257
     const/4 v0, -0x1
 
     const/16 v1, 0xe23
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1255
+    .line 1258
     const/16 v0, 0xe24
 
     invoke-static {v6, v5, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1256
+    .line 1259
     const/16 v0, 0xe25
 
     invoke-static {v6, v3, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1257
+    .line 1260
     const/4 v0, 0x2
 
     const/16 v1, 0xe26
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1258
+    .line 1261
     const/4 v0, 0x3
 
     const/16 v1, 0xe27
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1259
+    .line 1262
     const/16 v0, 0xe28
 
     invoke-static {v6, v4, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1260
+    .line 1263
     const/4 v0, 0x5
 
     const/16 v1, 0xe29
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1261
+    .line 1264
     const/4 v0, 0x6
 
     const/16 v1, 0xe2a
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1262
+    .line 1265
     const/16 v0, 0xe2b
 
     invoke-static {v6, v6, v0}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1263
+    .line 1266
     const/16 v0, 0x8
 
     const/16 v1, 0xe2c
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1264
+    .line 1267
     const/16 v0, 0x9
 
     const/16 v1, 0xe2d
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1265
+    .line 1268
     const/16 v0, 0xa
 
     const/16 v1, 0xe2e
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1266
+    .line 1269
     const/16 v0, 0xb
 
     const/16 v1, 0xe2f
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1267
+    .line 1270
     const/16 v0, 0xc
 
     const/16 v1, 0xe30
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1268
+    .line 1271
     const/16 v0, 0xd
 
     const/16 v1, 0xe31
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1269
+    .line 1272
     const/16 v0, 0xe
 
     const/16 v1, 0xe32
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1270
+    .line 1273
     const/16 v0, 0xf
 
     const/16 v1, 0xe33
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1271
+    .line 1274
     const/16 v0, 0x10
 
     const/16 v1, 0xe34
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1272
+    .line 1275
     const/16 v0, 0x11
 
     const/16 v1, 0xe35
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1273
+    .line 1276
     const/16 v0, 0x12
 
     const/16 v1, 0xe36
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1274
+    .line 1277
     const/16 v0, 0x13
 
     const/16 v1, 0xe37
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1275
+    .line 1278
     const/16 v0, 0x14
 
     const/16 v1, 0xe38
 
     invoke-static {v6, v0, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1278
+    .line 1281
     const/16 v0, 0x6d
 
     const/16 v1, 0x19ca
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1279
+    .line 1282
     const/16 v0, 0x6d
 
     const/16 v1, 0x19cb
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1280
+    .line 1283
     const/16 v0, 0x6d
 
     const/4 v1, 0x2
 
     const/16 v2, 0x19cc
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
-
-    .line 1281
-    const/16 v0, 0x6d
-
-    const/4 v1, 0x3
-
-    const/16 v2, 0x19cd
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
-
-    .line 1282
-    const/16 v0, 0x6d
-
-    const/16 v1, 0x19ce
-
-    invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
-
-    .line 1283
-    const/16 v0, 0x6d
-
-    const/4 v1, 0x5
-
-    const/16 v2, 0x19cf
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
     .line 1284
     const/16 v0, 0x6d
 
-    const/4 v1, 0x6
+    const/4 v1, 0x3
 
-    const/16 v2, 0x19d0
+    const/16 v2, 0x19cd
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
     .line 1285
     const/16 v0, 0x6d
 
+    const/16 v1, 0x19ce
+
+    invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
+
+    .line 1286
+    const/16 v0, 0x6d
+
+    const/4 v1, 0x5
+
+    const/16 v2, 0x19cf
+
+    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
+
+    .line 1287
+    const/16 v0, 0x6d
+
+    const/4 v1, 0x6
+
+    const/16 v2, 0x19d0
+
+    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
+
+    .line 1288
+    const/16 v0, 0x6d
+
     const/16 v1, 0x19d1
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1286
+    .line 1289
     const/16 v0, 0x6d
 
     const/16 v1, 0x8
@@ -3954,21 +3960,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1289
+    .line 1292
     const/16 v0, 0xb4
 
     const/16 v1, 0x19ca
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1290
+    .line 1293
     const/16 v0, 0xb4
 
     const/16 v1, 0x19cb
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1291
+    .line 1294
     const/16 v0, 0xb4
 
     const/4 v1, 0x2
@@ -3977,7 +3983,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1292
+    .line 1295
     const/16 v0, 0xb4
 
     const/4 v1, 0x3
@@ -3986,14 +3992,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1293
+    .line 1296
     const/16 v0, 0xb4
 
     const/16 v1, 0x19ce
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1294
+    .line 1297
     const/16 v0, 0xb4
 
     const/4 v1, 0x5
@@ -4002,7 +4008,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1295
+    .line 1298
     const/16 v0, 0xb4
 
     const/4 v1, 0x6
@@ -4011,14 +4017,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1296
+    .line 1299
     const/16 v0, 0xb4
 
     const/16 v1, 0x19d1
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1297
+    .line 1300
     const/16 v0, 0xb4
 
     const/16 v1, 0x8
@@ -4027,21 +4033,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1300
+    .line 1303
     const/16 v0, 0x6e
 
     const/16 v1, 0x1a2e
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1301
+    .line 1304
     const/16 v0, 0x6e
 
     const/16 v1, 0x1a2f
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1302
+    .line 1305
     const/16 v0, 0x6e
 
     const/4 v1, 0x2
@@ -4050,7 +4056,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1303
+    .line 1306
     const/16 v0, 0x6e
 
     const/4 v1, 0x3
@@ -4059,14 +4065,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1304
+    .line 1307
     const/16 v0, 0x6e
 
     const/16 v1, 0x1a32
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1305
+    .line 1308
     const/16 v0, 0x6e
 
     const/4 v1, 0x5
@@ -4075,7 +4081,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1306
+    .line 1309
     const/16 v0, 0x6e
 
     const/4 v1, 0x6
@@ -4084,14 +4090,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1307
+    .line 1310
     const/16 v0, 0x6e
 
     const/16 v1, 0x1a35
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1308
+    .line 1311
     const/16 v0, 0x6e
 
     const/16 v1, 0x8
@@ -4100,21 +4106,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1311
+    .line 1314
     const/16 v0, 0x70
 
     const/16 v1, 0x1a92
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1312
+    .line 1315
     const/16 v0, 0x70
 
     const/16 v1, 0x1a93
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1313
+    .line 1316
     const/16 v0, 0x70
 
     const/4 v1, 0x2
@@ -4123,7 +4129,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1314
+    .line 1317
     const/16 v0, 0x70
 
     const/4 v1, 0x3
@@ -4132,14 +4138,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1315
+    .line 1318
     const/16 v0, 0x70
 
     const/16 v1, 0x1a96
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1316
+    .line 1319
     const/16 v0, 0x70
 
     const/4 v1, 0x5
@@ -4148,7 +4154,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1317
+    .line 1320
     const/16 v0, 0x70
 
     const/4 v1, 0x6
@@ -4157,14 +4163,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1318
+    .line 1321
     const/16 v0, 0x70
 
     const/16 v1, 0x1a99
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1319
+    .line 1322
     const/16 v0, 0x70
 
     const/16 v1, 0x8
@@ -4173,21 +4179,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1322
+    .line 1325
     const/16 v0, 0x6f
 
     const/16 v1, 0x1c84
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1323
+    .line 1326
     const/16 v0, 0x6f
 
     const/16 v1, 0x1c85
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1324
+    .line 1327
     const/16 v0, 0x6f
 
     const/4 v1, 0x2
@@ -4196,7 +4202,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1325
+    .line 1328
     const/16 v0, 0x6f
 
     const/4 v1, 0x3
@@ -4205,14 +4211,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1326
+    .line 1329
     const/16 v0, 0x6f
 
     const/16 v1, 0x1c88
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1327
+    .line 1330
     const/16 v0, 0x6f
 
     const/4 v1, 0x5
@@ -4221,7 +4227,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1328
+    .line 1331
     const/16 v0, 0x6f
 
     const/4 v1, 0x6
@@ -4230,14 +4236,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1329
+    .line 1332
     const/16 v0, 0x6f
 
     const/16 v1, 0x1c8b
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1330
+    .line 1333
     const/16 v0, 0x6f
 
     const/16 v1, 0x8
@@ -4246,35 +4252,35 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1333
+    .line 1336
     const/16 v0, 0x71
 
     const/16 v1, 0x1ce9
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1334
+    .line 1337
     const/16 v0, 0x71
 
     const/16 v1, 0x1ce8
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1337
+    .line 1340
     const/16 v0, 0x81
 
     const/16 v1, 0x1964
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1338
+    .line 1341
     const/16 v0, 0x81
 
     const/16 v1, 0x1965
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1339
+    .line 1342
     const/16 v0, 0x81
 
     const/4 v1, 0x2
@@ -4283,7 +4289,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1340
+    .line 1343
     const/16 v0, 0x81
 
     const/4 v1, 0x3
@@ -4292,28 +4298,28 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1341
+    .line 1344
     const/16 v0, 0x81
 
     const/16 v1, 0x1968
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1344
+    .line 1347
     const/16 v0, 0x75
 
     const/16 v1, 0x1af6
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1345
+    .line 1348
     const/16 v0, 0x75
 
     const/16 v1, 0x1af7
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1346
+    .line 1349
     const/16 v0, 0x75
 
     const/4 v1, 0x2
@@ -4322,7 +4328,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1347
+    .line 1350
     const/16 v0, 0x75
 
     const/4 v1, 0x3
@@ -4331,14 +4337,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1348
+    .line 1351
     const/16 v0, 0x75
 
     const/16 v1, 0x1afa
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1349
+    .line 1352
     const/16 v0, 0x75
 
     const/4 v1, 0x5
@@ -4347,7 +4353,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1350
+    .line 1353
     const/16 v0, 0x75
 
     const/4 v1, 0x6
@@ -4356,14 +4362,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1351
+    .line 1354
     const/16 v0, 0x75
 
     const/16 v1, 0x1afd
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1352
+    .line 1355
     const/16 v0, 0x75
 
     const/16 v1, 0x8
@@ -4372,7 +4378,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1353
+    .line 1356
     const/16 v0, 0x75
 
     const/16 v1, 0x9
@@ -4381,35 +4387,35 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1356
+    .line 1359
     const/16 v0, 0x22
 
     const/16 v1, 0x12c0
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1357
+    .line 1360
     const/16 v0, 0x22
 
     const/16 v1, 0x12c1
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1360
+    .line 1363
     const/16 v0, 0x49
 
     const/16 v1, 0x1388
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1361
+    .line 1364
     const/16 v0, 0x49
 
     const/16 v1, 0x1389
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1362
+    .line 1365
     const/16 v0, 0x49
 
     const/4 v1, 0x2
@@ -4418,7 +4424,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1363
+    .line 1366
     const/16 v0, 0x49
 
     const/4 v1, 0x3
@@ -4427,105 +4433,105 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1366
+    .line 1369
     const/16 v0, 0x4d
 
     const/16 v1, 0x1450
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1367
+    .line 1370
     const/16 v0, 0x4d
 
     const/16 v1, 0x1451
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1370
+    .line 1373
     const/16 v0, 0x57
 
     const/16 v1, 0x15e0
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1371
+    .line 1374
     const/16 v0, 0x57
 
     const/16 v1, 0x15e1
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1374
+    .line 1377
     const/16 v0, 0x7d
 
     const/16 v1, 0x157c
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1375
+    .line 1378
     const/16 v0, 0x7d
 
     const/16 v1, 0x157d
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1378
+    .line 1381
     const/16 v0, 0x73
 
     const/16 v1, 0x1586
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1379
+    .line 1382
     const/16 v0, 0x73
 
     const/16 v1, 0x1587
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1382
+    .line 1385
     const/16 v0, 0x74
 
     const/16 v1, 0x1590
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1383
+    .line 1386
     const/16 v0, 0x74
 
     const/16 v1, 0x1591
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1386
+    .line 1389
     const/16 v0, 0x17
 
     const/16 v1, 0x708
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1387
+    .line 1390
     const/16 v0, 0x17
 
     const/16 v1, 0x709
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1390
+    .line 1393
     const/16 v0, 0x1a
 
     const/16 v1, 0x16da
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1391
+    .line 1394
     const/16 v0, 0x1a
 
     const/16 v1, 0x16db
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1392
+    .line 1395
     const/16 v0, 0x1a
 
     const/4 v1, 0x2
@@ -4534,7 +4540,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1393
+    .line 1396
     const/16 v0, 0x1a
 
     const/4 v1, 0x3
@@ -4543,98 +4549,98 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1396
+    .line 1399
     const/16 v0, 0x47
 
     const/16 v1, 0x173e
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1397
+    .line 1400
     const/16 v0, 0x47
 
     const/16 v1, 0x173f
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1400
+    .line 1403
     const/16 v0, 0x26
 
     const/16 v1, 0x1748
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1401
+    .line 1404
     const/16 v0, 0x26
 
     const/16 v1, 0x1749
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1404
+    .line 1407
     const/16 v0, 0x15
 
     const/16 v1, 0x834
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1405
+    .line 1408
     const/16 v0, 0x15
 
     const/16 v1, 0x835
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1408
+    .line 1411
     const/16 v0, 0x14
 
     const/16 v1, 0x1752
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1409
+    .line 1412
     const/16 v0, 0x14
 
     const/16 v1, 0x1753
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1412
+    .line 1415
     const/16 v0, 0x11
 
     const/16 v1, 0x175c
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1413
+    .line 1416
     const/16 v0, 0x11
 
     const/16 v1, 0x175d
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1416
+    .line 1419
     const/16 v0, 0x2a
 
     const/16 v1, 0x1766
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1417
+    .line 1420
     const/16 v0, 0x2a
 
     const/16 v1, 0x1767
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1420
+    .line 1423
     const/16 v0, 0x83
 
     const/16 v1, 0x1838
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1421
+    .line 1424
     const/16 v0, 0x83
 
     const/4 v1, 0x2
@@ -4643,7 +4649,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1422
+    .line 1425
     const/16 v0, 0x83
 
     const/4 v1, 0x3
@@ -4652,14 +4658,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1423
+    .line 1426
     const/16 v0, 0x83
 
     const/16 v1, 0x1842
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1424
+    .line 1427
     const/16 v0, 0x83
 
     const/4 v1, 0x5
@@ -4668,7 +4674,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1425
+    .line 1428
     const/16 v0, 0x83
 
     const/4 v1, 0x6
@@ -4677,14 +4683,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1426
+    .line 1429
     const/16 v0, 0x83
 
     const/16 v1, 0x184d
 
     invoke-static {v0, v6, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1427
+    .line 1430
     const/16 v0, 0x83
 
     const/16 v1, 0x8
@@ -4693,7 +4699,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1428
+    .line 1431
     const/16 v0, 0x83
 
     const/16 v1, 0x9
@@ -4702,7 +4708,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1429
+    .line 1432
     const/16 v0, 0x83
 
     const/16 v1, 0xa
@@ -4711,7 +4717,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1430
+    .line 1433
     const/16 v0, 0x83
 
     const/16 v1, 0xb
@@ -4720,7 +4726,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1431
+    .line 1434
     const/16 v0, 0x83
 
     const/16 v1, 0xc
@@ -4729,7 +4735,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1432
+    .line 1435
     const/16 v0, 0x83
 
     const/16 v1, 0xd
@@ -4738,21 +4744,21 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1435
+    .line 1438
     const/16 v0, 0x84
 
     const/16 v1, 0x1860
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1436
+    .line 1439
     const/16 v0, 0x84
 
     const/16 v1, 0x1861
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1437
+    .line 1440
     const/16 v0, 0x84
 
     const/4 v1, 0x2
@@ -4761,7 +4767,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1438
+    .line 1441
     const/16 v0, 0x84
 
     const/4 v1, 0x3
@@ -4770,119 +4776,119 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1441
+    .line 1444
     const/16 v0, 0x13b
 
     const/16 v1, 0x6a4
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1442
+    .line 1445
     const/16 v0, 0x13b
 
     const/16 v1, 0x6a5
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1445
+    .line 1448
     const/16 v0, 0x87
 
     const/16 v1, 0x189c
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1446
+    .line 1449
     const/16 v0, 0x87
 
     const/16 v1, 0x189d
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1449
+    .line 1452
     const/16 v0, 0xad
 
     const/16 v1, 0x187e
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1450
+    .line 1453
     const/16 v0, 0xad
 
     const/16 v1, 0x187f
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1453
+    .line 1456
     const/16 v0, 0x8d
 
     const/16 v1, 0x1ac2
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1454
+    .line 1457
     const/16 v0, 0x8d
 
     const/16 v1, 0x1ac3
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1457
+    .line 1460
     const/16 v0, 0x13c
 
     const/16 v1, 0x18ba
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1458
+    .line 1461
     const/16 v0, 0x13c
 
     const/16 v1, 0x18bb
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1461
+    .line 1464
     const/16 v0, 0x91
 
     const/16 v1, 0x18a6
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1462
+    .line 1465
     const/16 v0, 0x91
 
     const/16 v1, 0x18a7
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1465
+    .line 1468
     const/16 v0, 0x33
 
     const/16 v1, 0x18b0
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1466
+    .line 1469
     const/16 v0, 0x33
 
     const/16 v1, 0x18b1
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1469
+    .line 1472
     const/16 v0, 0x170d
 
     const/16 v1, 0x1900
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1470
+    .line 1473
     const/16 v0, 0x170d
 
     const/16 v1, 0x1901
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1471
+    .line 1474
     const/16 v0, 0x170d
 
     const/4 v1, 0x2
@@ -4891,7 +4897,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1472
+    .line 1475
     const/16 v0, 0x170d
 
     const/4 v1, 0x3
@@ -4900,35 +4906,35 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1473
+    .line 1476
     const/16 v0, 0x170d
 
     const/16 v1, 0x1904
 
     invoke-static {v0, v4, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1476
+    .line 1479
     const/16 v0, 0xb6
 
     const/16 v1, 0x1e14
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1477
+    .line 1480
     const/16 v0, 0xb6
 
     const/16 v1, 0x1e15
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1479
+    .line 1482
     const/16 v0, 0x77
 
     const/16 v1, 0x1a5e
 
     invoke-static {v0, v5, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1480
+    .line 1483
     const/16 v0, 0x77
 
     const/4 v1, 0x2
@@ -4937,14 +4943,14 @@
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1481
+    .line 1484
     const/16 v0, 0x77
 
     const/16 v1, 0x1a60
 
     invoke-static {v0, v3, v1}, Lcom/sec/android/app/camera/command/CommandIdMap;->add(III)V
 
-    .line 1482
+    .line 1485
     return-void
 .end method
 
@@ -4952,10 +4958,10 @@
     .locals 0
 
     .prologue
-    .line 1487
+    .line 1490
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1488
+    .line 1491
     return-void
 .end method
 
@@ -4966,7 +4972,7 @@
     .param p2, "commandId"    # I
 
     .prologue
-    .line 1559
+    .line 1562
     sget-object v0, Lcom/sec/android/app/camera/command/CommandIdMap;->mCommandIdArray:Landroid/util/SparseIntArray;
 
     invoke-static {p0, p1}, Lcom/sec/android/app/camera/command/CommandIdMap$CombinedKey;->getKey(II)I
@@ -4975,7 +4981,7 @@
 
     invoke-virtual {v0, v1, p2}, Landroid/util/SparseIntArray;->append(II)V
 
-    .line 1560
+    .line 1563
     sget-object v0, Lcom/sec/android/app/camera/command/CommandIdMap;->mCombinedKeyArray:Landroid/util/SparseIntArray;
 
     invoke-static {p0, p1}, Lcom/sec/android/app/camera/command/CommandIdMap$CombinedKey;->getKey(II)I
@@ -4984,7 +4990,7 @@
 
     invoke-virtual {v0, p2, v1}, Landroid/util/SparseIntArray;->append(II)V
 
-    .line 1561
+    .line 1564
     return-void
 .end method
 
@@ -4993,7 +4999,7 @@
     .param p0, "menuId"    # I
 
     .prologue
-    .line 1497
+    .line 1500
     sget-object v0, Lcom/sec/android/app/camera/command/CommandIdMap;->mCommandIdArray:Landroid/util/SparseIntArray;
 
     const/16 v1, 0x7fff
@@ -5017,7 +5023,7 @@
     .param p1, "modeId"    # I
 
     .prologue
-    .line 1508
+    .line 1511
     sget-object v0, Lcom/sec/android/app/camera/command/CommandIdMap;->mCommandIdArray:Landroid/util/SparseIntArray;
 
     invoke-static {p0, p1}, Lcom/sec/android/app/camera/command/CommandIdMap$CombinedKey;->getKey(II)I
@@ -5040,7 +5046,7 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1518
+    .line 1521
     const/16 v1, 0x1f40
 
     if-lt p0, v1, :cond_0
@@ -5054,15 +5060,15 @@
 
     if-ne p0, v1, :cond_2
 
-    .line 1519
+    .line 1522
     :cond_1
     const/16 v1, 0x8
 
-    .line 1528
+    .line 1531
     :goto_0
     return v1
 
-    .line 1522
+    .line 1525
     :cond_2
     sget-object v1, Lcom/sec/android/app/camera/command/CommandIdMap;->mCombinedKeyArray:Landroid/util/SparseIntArray;
 
@@ -5070,16 +5076,16 @@
 
     move-result v0
 
-    .line 1524
+    .line 1527
     .local v0, "combinedKey":I
     if-ne v0, v2, :cond_3
 
-    .line 1525
+    .line 1528
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 1528
+    .line 1531
     :cond_3
     invoke-static {v0}, Lcom/sec/android/app/camera/command/CommandIdMap$CombinedKey;->getMenuId(I)I
 
@@ -5095,7 +5101,7 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1538
+    .line 1541
     const/16 v1, 0x1f40
 
     if-lt p0, v1, :cond_1
@@ -5104,14 +5110,14 @@
 
     if-ge p0, v1, :cond_1
 
-    .line 1552
+    .line 1555
     .end local p0    # "commandId":I
     .local v0, "combinedKey":I
     :cond_0
     :goto_0
     return p0
 
-    .line 1542
+    .line 1545
     .end local v0    # "combinedKey":I
     .restart local p0    # "commandId":I
     :cond_1
@@ -5119,23 +5125,23 @@
 
     if-eq p0, v1, :cond_0
 
-    .line 1546
+    .line 1549
     sget-object v1, Lcom/sec/android/app/camera/command/CommandIdMap;->mCombinedKeyArray:Landroid/util/SparseIntArray;
 
     invoke-virtual {v1, p0, v2}, Landroid/util/SparseIntArray;->get(II)I
 
     move-result v0
 
-    .line 1548
+    .line 1551
     .restart local v0    # "combinedKey":I
     if-ne v0, v2, :cond_2
 
-    .line 1549
+    .line 1552
     const/4 p0, 0x0
 
     goto :goto_0
 
-    .line 1552
+    .line 1555
     :cond_2
     invoke-static {v0}, Lcom/sec/android/app/camera/command/CommandIdMap$CombinedKey;->getModeId(I)I
 

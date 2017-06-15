@@ -60,7 +60,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 33
-    const v0, 0x7f0a0373
+    const v0, 0x7f0a0376
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -73,7 +73,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PageNavigator;->PAGE_NAVIGATOR_ITEM_SIZE:F
 
     .line 34
-    const v0, 0x7f0a0181
+    const v0, 0x7f0a0184
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

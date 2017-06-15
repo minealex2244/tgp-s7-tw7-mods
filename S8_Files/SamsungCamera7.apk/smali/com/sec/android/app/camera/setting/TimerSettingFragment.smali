@@ -223,7 +223,7 @@
     .prologue
     const/4 v13, 0x0
 
-    const v12, 0x7f0a01cd
+    const v12, 0x7f0a01cf
 
     const/4 v3, 0x1
 
@@ -1057,7 +1057,7 @@
     .line 134
     :cond_6
     :goto_4
-    const v1, 0x7f090222
+    const v1, 0x7f090225
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/TimerSettingFragment;->getString(I)Ljava/lang/String;
 

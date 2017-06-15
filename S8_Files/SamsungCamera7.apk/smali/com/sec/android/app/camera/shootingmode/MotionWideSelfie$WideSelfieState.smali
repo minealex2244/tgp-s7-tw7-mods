@@ -48,7 +48,7 @@
 
     const/4 v2, 0x0
 
-    .line 2805
+    .line 2804
     new-instance v0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$WideSelfieState;
 
     const-string v1, "STATE_IDLE"
@@ -81,7 +81,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$WideSelfieState;->STATE_STOPPING:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$WideSelfieState;
 
-    .line 2804
+    .line 2803
     const/4 v0, 0x4
 
     new-array v0, v0, [Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$WideSelfieState;
@@ -116,7 +116,7 @@
     .end annotation
 
     .prologue
-    .line 2804
+    .line 2803
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -127,7 +127,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 2804
+    .line 2803
     const-class v0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$WideSelfieState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -143,7 +143,7 @@
     .locals 1
 
     .prologue
-    .line 2804
+    .line 2803
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$WideSelfieState;->$VALUES:[Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$WideSelfieState;
 
     invoke-virtual {v0}, [Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$WideSelfieState;->clone()Ljava/lang/Object;

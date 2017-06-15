@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;
 
     .prologue
-    .line 2388
+    .line 2394
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 2391
+    .line 2397
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$StickerListAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
@@ -67,6 +67,6 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setStickerPackageId(I)V
 
-    .line 2392
+    .line 2398
     return-void
 .end method

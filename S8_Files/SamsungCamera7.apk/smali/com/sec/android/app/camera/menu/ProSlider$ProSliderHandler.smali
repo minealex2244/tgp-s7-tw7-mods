@@ -33,17 +33,17 @@
     .param p1, "proSlider"    # Lcom/sec/android/app/camera/menu/ProSlider;
 
     .prologue
-    .line 740
+    .line 749
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 741
+    .line 750
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderHandler;->mProSlider:Ljava/lang/ref/WeakReference;
 
-    .line 742
+    .line 751
     return-void
 .end method
 
@@ -53,12 +53,12 @@
     .locals 1
 
     .prologue
-    .line 745
+    .line 754
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderHandler;->mProSlider:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->clear()V
 
-    .line 746
+    .line 755
     return-void
 .end method
 
@@ -67,7 +67,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 750
+    .line 759
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderHandler;->mProSlider:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -76,16 +76,16 @@
 
     check-cast v0, Lcom/sec/android/app/camera/menu/ProSlider;
 
-    .line 751
+    .line 760
     .local v0, "proSlider":Lcom/sec/android/app/camera/menu/ProSlider;
     if-nez v0, :cond_1
 
-    .line 769
+    .line 778
     :cond_0
     :goto_0
     return-void
 
-    .line 755
+    .line 764
     :cond_1
     iget v1, p1, Landroid/os/Message;->what:I
 
@@ -93,16 +93,16 @@
 
     goto :goto_0
 
-    .line 763
+    .line 772
     :pswitch_0
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->stopSliderMenuTimer()V
 
-    .line 764
+    .line 773
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->hideSlider()V
 
     goto :goto_0
 
-    .line 757
+    .line 766
     :pswitch_1
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mIsManualFocusAssistPressed:Z
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1000(Lcom/sec/android/app/camera/menu/ProSlider;)Z
@@ -111,17 +111,17 @@
 
     if-eqz v1, :cond_0
 
-    .line 758
+    .line 767
     # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->startManualFocusAssist()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1100(Lcom/sec/android/app/camera/menu/ProSlider;)V
 
-    .line 759
+    .line 768
     # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->stopManualFocusAssistPressTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$1200(Lcom/sec/android/app/camera/menu/ProSlider;)V
 
     goto :goto_0
 
-    .line 755
+    .line 764
     nop
 
     :pswitch_data_0

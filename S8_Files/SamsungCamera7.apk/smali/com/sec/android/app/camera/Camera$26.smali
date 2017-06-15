@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 6089
+    .line 6104
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .locals 2
 
     .prologue
-    .line 6092
+    .line 6107
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$26;->this$0:Lcom/sec/android/app/camera/Camera;
 
     const/16 v1, 0x7d0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->acquireDVFSMax(I)V
 
-    .line 6093
+    .line 6108
     return-void
 .end method

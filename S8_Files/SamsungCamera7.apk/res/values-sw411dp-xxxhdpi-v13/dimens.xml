@@ -5,9 +5,9 @@
     <dimen name="side_quick_setting_width">51.0dip</dimen>
     <dimen name="square_ratio_preview_left">124.0dip</dimen>
     <dimen name="wide_ratio_preview_left">0.0dip</dimen>
-    <dimen name="basemenu_group_width">145.0dip</dimen>
+    <dimen name="basemenu_group_width">144.0dip</dimen>
     <dimen name="basemenu_group_width_multiwindow">89.099976dip</dimen>
-    <dimen name="beauty_level_slider_bottom_margin_for_keyboard_cover">160.0dip</dimen>
+    <dimen name="beauty_level_slider_bottom_margin_for_keyboard_cover">130.0dip</dimen>
     <dimen name="beauty_menu_bottom_margin">135.0dip</dimen>
     <dimen name="beauty_menu_button_pos_x_for_mobile_keyboard">148.0dip</dimen>
     <dimen name="burst_panoramashot_livepreview_landscape_width">590.0dip</dimen>
@@ -18,6 +18,8 @@
     <dimen name="dualshot_splitview_normal_ratio_width">273.59375dip</dimen>
     <dimen name="dualshot_splitview_start_posy">103.0dip</dimen>
     <dimen name="dualshot_splitview_width">366.0dip</dimen>
+    <dimen name="effect_bottom_area_width">52.0dip</dimen>
+    <dimen name="effect_category_area_width">45.69998dip</dimen>
     <dimen name="item_dual_effect_type_text_height">28.5dip</dimen>
     <dimen name="item_dual_effect_type_text_pos_y">109.399994dip</dimen>
     <dimen name="mode_back_icon_margin">5.0dip</dimen>
@@ -67,7 +69,7 @@
     <dimen name="shootingmode_helptext_bottom_margin_portrait_for_burstpanorama">312.0dip</dimen>
     <dimen name="shootingmode_helptext_bottom_margin_portrait_for_wideselfie">60.0dip</dimen>
     <dimen name="shootingmode_helptext_side_margin">141.0dip</dimen>
-    <dimen name="shutter_button_gap_with_navigator">14.0dip</dimen>
+    <dimen name="shutter_button_gap_with_navigator">20.0dip</dimen>
     <dimen name="side_quick_setting_pos_y">24.0dip</dimen>
     <dimen name="sticker_rect_max_size">342.0dip</dimen>
     <dimen name="touch_ev_level_icon_margin">9.0dip</dimen>
@@ -135,8 +137,9 @@
     <dimen name="audio_record_indicator_eqbar_port_top_margin">117.0dip</dimen>
     <dimen name="autoportrait_handler_width">13.0px</dimen>
     <dimen name="basemenu_floating_camera_button_pos_y">37.0dip</dimen>
-    <dimen name="beauty_level_slider_bottom_margin">207.0dip</dimen>
-    <dimen name="beauty_slider_space">16.0dip</dimen>
+    <dimen name="beauty_level_slider_bottom_margin">177.0dip</dimen>
+    <dimen name="beauty_slider_space">27.0dip</dimen>
+    <dimen name="beauty_spotlight_slider_space">65.0dip</dimen>
     <dimen name="blur_image_width">384.0px</dimen>
     <dimen name="burst_panoramashot_capturetri_height">34.0dip</dimen>
     <dimen name="burst_panoramashot_capturetri_width">34.0dip</dimen>
@@ -283,7 +286,7 @@
     <dimen name="effect_level_text_y_margin">22.0dip</dimen>
     <dimen name="effect_level_touch_area_height">18.0dip</dimen>
     <dimen name="effect_level_touch_area_width">44.0dip</dimen>
-    <dimen name="effect_level_width_interval">39.0dip</dimen>
+    <dimen name="effect_level_width_interval">48.0dip</dimen>
     <dimen name="effect_thumbnail_preview_height">134.0dip</dimen>
     <dimen name="effect_thumbnail_preview_width">180.0dip</dimen>
     <dimen name="food_color_tune_button_top_margin">8.0dip</dimen>
@@ -365,7 +368,6 @@
     <dimen name="pro_colortune_list_right_margin">209.0dip</dimen>
     <dimen name="pro_item_left_margin">22.0dip</dimen>
     <dimen name="pro_item_text_bottom_margin">4.0dip</dimen>
-    <dimen name="pro_item_text_font_size">11.0dip</dimen>
     <dimen name="pro_item_top_margin">14.0dip</dimen>
     <dimen name="pro_long_ev_shot_progress_text_top_margin">14.0dip</dimen>
     <dimen name="pro_long_ev_shot_progress_title_height">20.0dip</dimen>
@@ -464,6 +466,7 @@
     <dimen name="shot_and_more_progressbar_width">300.0dip</dimen>
     <dimen name="sidemenu_shutter_button_expand_area">10.0dip</dimen>
     <dimen name="slidermenu_anti_fog_slide_group_width">45.0dip</dimen>
+    <dimen name="slidermenu_anti_fog_slider_bottom_margin">207.0dip</dimen>
     <dimen name="slidermenu_anti_fog_slider_height">228.0dip</dimen>
     <dimen name="slidermenu_anti_fog_slider_width">3.0dip</dimen>
     <dimen name="slidermenu_food_color_tune_slider_height">282.0dip</dimen>

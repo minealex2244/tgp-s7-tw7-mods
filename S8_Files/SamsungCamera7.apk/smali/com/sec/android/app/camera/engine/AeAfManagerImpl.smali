@@ -311,9 +311,9 @@
     .param p2, "posY"    # I
 
     .prologue
-    const v3, 0x7f0a02b3
+    const v3, 0x7f0a02b7
 
-    const v2, 0x7f0a02b2
+    const v2, 0x7f0a02b6
 
     .line 830
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/AeAfManagerImpl;->mLastTouchAfPt:Landroid/graphics/Point;
@@ -400,9 +400,9 @@
     .param p2, "posY"    # I
 
     .prologue
-    const v3, 0x7f0a02b3
+    const v3, 0x7f0a02b7
 
-    const v2, 0x7f0a02b2
+    const v2, 0x7f0a02b6
 
     .line 839
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/AeAfManagerImpl;->mLastTouchAePt:Landroid/graphics/Point;
@@ -799,7 +799,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0375
+    const v3, 0x7f0a0378
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -819,7 +819,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0374
+    const v3, 0x7f0a0377
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -850,7 +850,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a02e6
+    const v3, 0x7f0a02ea
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -870,7 +870,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a02e5
+    const v3, 0x7f0a02e9
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2153,7 +2153,7 @@
     .param p3, "update"    # Z
 
     .prologue
-    const v2, 0x7f0a0224
+    const v2, 0x7f0a0227
 
     const/4 v4, 0x1
 
@@ -2451,7 +2451,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f0a0375
+    const v8, 0x7f0a0378
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2471,7 +2471,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f0a0374
+    const v8, 0x7f0a0377
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2578,7 +2578,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f0a02e6
+    const v8, 0x7f0a02ea
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -2598,7 +2598,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f0a02e5
+    const v8, 0x7f0a02e9
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -4926,7 +4926,7 @@
 
     iget v2, v2, Landroid/graphics/Rect;->left:I
 
-    const v3, 0x7f0a0106
+    const v3, 0x7f0a0109
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4947,7 +4947,7 @@
 
     iget v2, v2, Landroid/graphics/Rect;->top:I
 
-    const v3, 0x7f0a0105
+    const v3, 0x7f0a0108
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -5444,7 +5444,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f0a0375
+    const v8, 0x7f0a0378
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -5464,7 +5464,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f0a0374
+    const v8, 0x7f0a0377
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -5594,7 +5594,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f0a02e6
+    const v8, 0x7f0a02ea
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -5614,7 +5614,7 @@
 
     move-result-object v1
 
-    const v8, 0x7f0a02e5
+    const v8, 0x7f0a02e9
 
     invoke-virtual {v1, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -5828,7 +5828,7 @@
     .param p3, "update"    # Z
 
     .prologue
-    const v4, 0x7f0a0224
+    const v4, 0x7f0a0227
 
     const/4 v2, 0x1
 

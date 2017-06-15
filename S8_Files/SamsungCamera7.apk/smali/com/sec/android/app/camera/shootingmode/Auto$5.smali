@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/Auto;
 
     .prologue
-    .line 1419
+    .line 1421
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 1422
+    .line 1424
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
@@ -51,7 +51,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090230
+    const v2, 0x7f090233
 
     const/4 v3, 0x0
 
@@ -62,7 +62,7 @@
     # setter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$902(Lcom/sec/android/app/camera/shootingmode/Auto;Landroid/widget/Toast;)Landroid/widget/Toast;
 
-    .line 1423
+    .line 1425
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
@@ -72,7 +72,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1424
+    .line 1426
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerToast:Landroid/widget/Toast;
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1425
+    .line 1427
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$5;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     const/4 v1, 0x1
@@ -90,7 +90,7 @@
     # setter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mIsAlreadyShowStickerToast:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$1002(Lcom/sec/android/app/camera/shootingmode/Auto;Z)Z
 
-    .line 1428
+    .line 1430
     :cond_0
     return-void
 .end method

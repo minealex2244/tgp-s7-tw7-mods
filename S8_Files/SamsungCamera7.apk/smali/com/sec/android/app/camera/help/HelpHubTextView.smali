@@ -616,7 +616,7 @@
 
     .line 169
     :cond_1
-    const v6, 0x7f0a033c
+    const v6, 0x7f0a033f
 
     invoke-virtual {v3, v6}, Landroid/content/res/Resources;->getDimension(I)F
 

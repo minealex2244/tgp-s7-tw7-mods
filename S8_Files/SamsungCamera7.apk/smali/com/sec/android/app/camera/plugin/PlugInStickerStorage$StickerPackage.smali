@@ -54,38 +54,38 @@
     .param p7, "commandId"    # I
 
     .prologue
-    .line 406
+    .line 427
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 395
+    .line 416
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
 
-    .line 407
+    .line 428
     iput p1, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerType:I
 
-    .line 408
+    .line 429
     iput-object p2, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->packageName:Ljava/lang/String;
 
-    .line 409
+    .line 430
     iput-boolean p3, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->isPreloaded:Z
 
-    .line 410
+    .line 431
     iput p4, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->representativeNormalResourceId:I
 
-    .line 411
+    .line 432
     iput p5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->representativePressedResourceId:I
 
-    .line 412
+    .line 433
     iput p6, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->mainOrder:I
 
-    .line 413
+    .line 434
     iput p7, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->commandId:I
 
-    .line 414
+    .line 435
     return-void
 .end method
 
@@ -94,7 +94,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
     .prologue
-    .line 387
+    .line 408
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
 
     return-object v0
@@ -108,7 +108,7 @@
     .param p2, "info"    # Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;
 
     .prologue
-    .line 417
+    .line 438
     # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->mStickerPackageMap:Ljava/util/LinkedHashMap;
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->access$100()Ljava/util/LinkedHashMap;
 
@@ -116,19 +116,19 @@
 
     monitor-enter v1
 
-    .line 418
+    .line 439
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 419
+    .line 440
     monitor-exit v1
 
-    .line 420
+    .line 441
     return-void
 
-    .line 419
+    .line 440
     :catchall_0
     move-exception v0
 
@@ -153,7 +153,7 @@
     .end annotation
 
     .prologue
-    .line 423
+    .line 444
     # getter for: Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->mStickerPackageMap:Ljava/util/LinkedHashMap;
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->access$100()Ljava/util/LinkedHashMap;
 
@@ -161,7 +161,7 @@
 
     monitor-enter v1
 
-    .line 424
+    .line 445
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->stickerList:Ljava/util/LinkedHashMap;
 
@@ -169,7 +169,7 @@
 
     return-object v0
 
-    .line 425
+    .line 446
     :catchall_0
     move-exception v0
 

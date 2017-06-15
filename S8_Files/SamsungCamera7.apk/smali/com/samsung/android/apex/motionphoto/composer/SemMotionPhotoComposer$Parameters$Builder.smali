@@ -35,10 +35,10 @@
     .locals 1
 
     .prologue
-    .line 595
+    .line 596
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 596
+    .line 597
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -54,31 +54,31 @@
     .locals 3
 
     .prologue
-    .line 728
+    .line 729
     new-instance v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;-><init>(Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$1;)V
 
-    .line 730
+    .line 731
     .local v0, "p":Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mFlattenParam:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 731
+    .line 732
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mFlattenParam:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;->unflatten(Ljava/lang/String;)V
 
-    .line 734
+    .line 735
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;->put(Ljava/util/Map;)V
 
-    .line 736
+    .line 737
     const-string v1, "buffering-mode"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;->get(Ljava/lang/String;)Ljava/lang/Object;
@@ -87,14 +87,14 @@
 
     if-nez v1, :cond_1
 
-    .line 737
+    .line 738
     const-string v1, "buffering-mode"
 
     const-string v2, "front"
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;->set(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 740
+    .line 741
     :cond_1
     const-string v1, "on"
 
@@ -110,14 +110,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 741
+    .line 742
     const-string v1, "preview-format"
 
     const-string v2, "android-opaque"
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;->set(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 744
+    .line 745
     :cond_2
     return-object v0
 .end method
@@ -128,12 +128,12 @@
     .param p2, "val"    # Ljava/lang/Object;
 
     .prologue
-    .line 718
+    .line 719
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 719
+    .line 720
     return-object p0
 .end method
 
@@ -142,7 +142,7 @@
     .param p1, "isFrontBuffering"    # Z
 
     .prologue
-    .line 617
+    .line 618
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v2, "buffering-mode"
@@ -154,10 +154,10 @@
     :goto_0
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 618
+    .line 619
     return-object p0
 
-    .line 617
+    .line 618
     :cond_0
     const-string v0, "back"
 
@@ -169,7 +169,7 @@
     .param p1, "effectRecording"    # Z
 
     .prologue
-    .line 628
+    .line 629
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v2, "effect-mode"
@@ -181,10 +181,10 @@
     :goto_0
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 629
+    .line 630
     return-object p0
 
-    .line 628
+    .line 629
     :cond_0
     const-string v0, "off"
 
@@ -196,10 +196,10 @@
     .param p1, "p"    # Ljava/lang/String;
 
     .prologue
-    .line 606
+    .line 607
     iput-object p1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mFlattenParam:Ljava/lang/String;
 
-    .line 607
+    .line 608
     return-object p0
 .end method
 
@@ -208,7 +208,7 @@
     .param p1, "factor"    # I
 
     .prologue
-    .line 672
+    .line 673
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v1, "fps-factor"
@@ -219,7 +219,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 673
+    .line 674
     return-object p0
 .end method
 
@@ -228,14 +228,14 @@
     .param p1, "fpsRange"    # [I
 
     .prologue
-    .line 706
+    .line 707
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v1, "fps-range"
 
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 707
+    .line 708
     return-object p0
 .end method
 
@@ -245,7 +245,7 @@
     .param p2, "height"    # I
 
     .prologue
-    .line 695
+    .line 696
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v1, "preview-size"
@@ -274,7 +274,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 696
+    .line 697
     return-object p0
 .end method
 
@@ -283,14 +283,14 @@
     .param p1, "size"    # Ljava/lang/String;
 
     .prologue
-    .line 683
+    .line 684
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v1, "preview-size"
 
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 684
+    .line 685
     return-object p0
 .end method
 
@@ -299,7 +299,7 @@
     .param p1, "saveAsFlipped"    # Z
 
     .prologue
-    .line 650
+    .line 651
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v1, "save-as-flipped"
@@ -310,7 +310,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 651
+    .line 652
     return-object p0
 .end method
 
@@ -319,7 +319,7 @@
     .param p1, "useIntrinsicTimestamp"    # Z
 
     .prologue
-    .line 639
+    .line 640
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v1, "use-intrinsic-timestamp"
@@ -330,7 +330,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 640
+    .line 641
     return-object p0
 .end method
 
@@ -339,7 +339,7 @@
     .param p1, "fps"    # I
 
     .prologue
-    .line 661
+    .line 662
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters$Builder;->mMap:Ljava/util/HashMap;
 
     const-string v1, "frame-rate"
@@ -350,6 +350,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 662
+    .line 663
     return-object p0
 .end method

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 7999
+    .line 8023
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/Camera$1;
 
     .prologue
-    .line 7999
+    .line 8023
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;-><init>(Lcom/sec/android/app/camera/Camera;)V
 
     return-void
@@ -59,7 +59,7 @@
 
     const/4 v4, 0x0
 
-    .line 8002
+    .line 8026
     const-string v1, "Camera7"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -84,10 +84,10 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 8003
+    .line 8027
     const/4 v0, -0x1
 
-    .line 8004
+    .line 8028
     .local v0, "result":I
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -98,7 +98,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 8005
+    .line 8029
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mBargeInRecognizer:Lcom/samsung/android/speech/SemSpeechRecognizer;
@@ -110,7 +110,7 @@
 
     move-result v0
 
-    .line 8007
+    .line 8031
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -130,21 +130,21 @@
 
     if-nez v1, :cond_2
 
-    .line 8060
+    .line 8084
     :cond_1
     :goto_0
     return-void
 
-    .line 8010
+    .line 8034
     :cond_2
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_6
 
-    .line 8011
+    .line 8035
     packed-switch v0, :pswitch_data_0
 
-    .line 8054
+    .line 8078
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mBaseMenu:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
@@ -160,7 +160,7 @@
 
     goto :goto_0
 
-    .line 8016
+    .line 8040
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -172,7 +172,7 @@
 
     if-nez v1, :cond_1
 
-    .line 8019
+    .line 8043
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
@@ -188,7 +188,7 @@
 
     if-nez v1, :cond_1
 
-    .line 8022
+    .line 8046
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mShootingMode:Lcom/sec/android/app/camera/interfaces/ShootingModeProvider;
@@ -202,7 +202,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 8023
+    .line 8047
     const-string v1, "Camera7"
 
     const-string v2, "ignored voice recognition during capturing"
@@ -211,13 +211,13 @@
 
     goto :goto_0
 
-    .line 8026
+    .line 8050
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->restartInactivityTimer()V
 
-    .line 8027
+    .line 8051
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mBaseMenu:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
@@ -231,7 +231,7 @@
 
     invoke-virtual {v1, v5}, Lcom/sec/android/app/camera/menu/Indicators;->setVoiceStatus(I)V
 
-    .line 8029
+    .line 8053
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->VOICE_COMMAND:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
@@ -239,7 +239,7 @@
     # invokes: Lcom/sec/android/app/camera/Camera;->handleShutterKeyReleased(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/Camera;->access$5000(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)Z
 
-    .line 8030
+    .line 8054
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -253,7 +253,7 @@
 
     if-nez v1, :cond_4
 
-    .line 8031
+    .line 8055
     const-string v1, "1013"
 
     const-string v2, "3"
@@ -262,7 +262,7 @@
 
     goto :goto_0
 
-    .line 8033
+    .line 8057
     :cond_4
     const-string v1, "4001"
 
@@ -272,7 +272,7 @@
 
     goto :goto_0
 
-    .line 8037
+    .line 8061
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -284,7 +284,7 @@
 
     if-nez v1, :cond_1
 
-    .line 8040
+    .line 8064
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
@@ -300,7 +300,7 @@
 
     if-nez v1, :cond_1
 
-    .line 8043
+    .line 8067
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mShootingMode:Lcom/sec/android/app/camera/interfaces/ShootingModeProvider;
@@ -314,7 +314,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 8044
+    .line 8068
     const-string v1, "Camera7"
 
     const-string v2, "ignored voice recognition during capturing"
@@ -323,13 +323,13 @@
 
     goto/16 :goto_0
 
-    .line 8047
+    .line 8071
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->restartInactivityTimer()V
 
-    .line 8048
+    .line 8072
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mBaseMenu:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
@@ -343,13 +343,13 @@
 
     invoke-virtual {v1, v5}, Lcom/sec/android/app/camera/menu/Indicators;->setVoiceStatus(I)V
 
-    .line 8050
+    .line 8074
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # invokes: Lcom/sec/android/app/camera/Camera;->handleRecordKeyPressed()V
     invoke-static {v1}, Lcom/sec/android/app/camera/Camera;->access$5100(Lcom/sec/android/app/camera/Camera;)V
 
-    .line 8051
+    .line 8075
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
     sget-object v2, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->VOICE_COMMAND:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
@@ -359,7 +359,7 @@
 
     goto/16 :goto_0
 
-    .line 8058
+    .line 8082
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -376,7 +376,7 @@
 
     goto/16 :goto_0
 
-    .line 8011
+    .line 8035
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

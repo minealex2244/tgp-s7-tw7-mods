@@ -26,18 +26,18 @@
     .param p1, "settingsValue"    # I
 
     .prologue
-    .line 1346
+    .line 1344
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1344
+    .line 1342
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
-    .line 1347
+    .line 1345
     iput p1, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mSettingValue:I
 
-    .line 1348
+    .line 1346
     return-void
 .end method
 
@@ -47,21 +47,21 @@
     .param p2, "referenceCount"    # I
 
     .prologue
-    .line 1350
+    .line 1348
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1344
+    .line 1342
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
-    .line 1351
+    .line 1349
     iput p1, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mSettingValue:I
 
-    .line 1352
+    .line 1350
     iput p2, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
-    .line 1353
+    .line 1351
     return-void
 .end method
 
@@ -71,19 +71,19 @@
     .locals 3
 
     .prologue
-    .line 1356
+    .line 1354
     iget v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
     if-lez v0, :cond_0
 
-    .line 1357
+    .line 1355
     iget v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
     add-int/lit8 v0, v0, -0x1
 
     iput v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
-    .line 1359
+    .line 1357
     :cond_0
     const-string v0, "DimController"
 
@@ -109,7 +109,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1360
+    .line 1358
     return-void
 .end method
 
@@ -117,7 +117,7 @@
     .locals 1
 
     .prologue
-    .line 1363
+    .line 1361
     iget v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
     return v0
@@ -127,7 +127,7 @@
     .locals 1
 
     .prologue
-    .line 1367
+    .line 1365
     iget v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mSettingValue:I
 
     return v0
@@ -137,14 +137,14 @@
     .locals 3
 
     .prologue
-    .line 1371
+    .line 1369
     iget v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/sec/android/app/camera/DimController$SettingValueReference;->mReferenceCount:I
 
-    .line 1372
+    .line 1370
     const-string v0, "DimController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -169,6 +169,6 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1373
+    .line 1371
     return-void
 .end method

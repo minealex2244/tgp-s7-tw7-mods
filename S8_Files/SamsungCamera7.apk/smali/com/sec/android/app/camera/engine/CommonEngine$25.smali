@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 7275
+    .line 7366
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 14
 
     .prologue
-    .line 7279
+    .line 7370
     :try_start_0
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -53,7 +53,7 @@
 
     if-nez v11, :cond_6
 
-    .line 7280
+    .line 7371
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v11, v11, Lcom/sec/android/app/camera/engine/CommonEngine;->mBackUpBurstDBUpdateStack:Ljava/util/Stack;
@@ -64,11 +64,11 @@
 
     check-cast v10, Landroid/content/ContentValues;
 
-    .line 7281
+    .line 7372
     .local v10, "values":Landroid/content/ContentValues;
     if-eqz v10, :cond_5
 
-    .line 7283
+    .line 7374
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v11, v11, Lcom/sec/android/app/camera/engine/CommonEngine;->mBackUpBurstDBUpdateStack:Ljava/util/Stack;
@@ -79,7 +79,7 @@
 
     if-nez v11, :cond_4
 
-    .line 7284
+    .line 7375
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v11, v11, Lcom/sec/android/app/camera/engine/CommonEngine;->mBackUpBurstDBUpdateStack:Ljava/util/Stack;
@@ -100,7 +100,7 @@
 
     check-cast v6, [Landroid/content/ContentValues;
 
-    .line 7285
+    .line 7376
     .local v6, "imageValues":[Landroid/content/ContentValues;
     const-string v11, "CommonEngine"
 
@@ -108,13 +108,13 @@
 
     invoke-static {v11, v12}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7286
+    .line 7377
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v12, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v12
 
@@ -133,23 +133,23 @@
     move-result v12
 
     # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mBurstNumBulkInsert:I
-    invoke-static {v11, v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4202(Lcom/sec/android/app/camera/engine/CommonEngine;I)I
+    invoke-static {v11, v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4302(Lcom/sec/android/app/camera/engine/CommonEngine;I)I
 
-    .line 7287
+    .line 7378
     const-string v11, "CommonEngine"
 
     const-string v12, "db insert X"
 
     invoke-static {v11, v12}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7290
+    .line 7381
     const-string v11, "CommonEngine"
 
     const-string v12, "SEF insert E"
 
     invoke-static {v11, v12}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7291
+    .line 7382
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v11, v11, Lcom/sec/android/app/camera/engine/CommonEngine;->mBackUpBurstDBUpdateStack:Ljava/util/Stack;
@@ -158,7 +158,7 @@
 
     move-result v4
 
-    .line 7292
+    .line 7383
     .local v4, "idx":I
     const-string v11, "_data"
 
@@ -166,7 +166,7 @@
 
     move-result-object v1
 
-    .line 7293
+    .line 7384
     .local v1, "filePath":Ljava/lang/String;
     const-string v11, "datetaken"
 
@@ -174,29 +174,29 @@
 
     move-result-object v8
 
-    .line 7294
+    .line 7385
     .local v8, "tempDataTaken":Ljava/lang/Long;
     const-wide/16 v2, 0x0
 
-    .line 7295
+    .line 7386
     .local v2, "dateTaken":J
     if-eqz v8, :cond_0
 
-    .line 7296
+    .line 7387
     invoke-virtual {v8}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
 
-    .line 7298
+    .line 7389
     :cond_0
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->insertBurstInfoToSEF(Ljava/lang/String;J)V
-    invoke-static {v11, v1, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4300(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;J)V
+    invoke-static {v11, v1, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;J)V
 
     move v5, v4
 
-    .line 7299
+    .line 7390
     .end local v4    # "idx":I
     .local v5, "idx":I
     :goto_0
@@ -206,7 +206,7 @@
     .restart local v4    # "idx":I
     if-lez v5, :cond_3
 
-    .line 7300
+    .line 7391
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v11, v11, Lcom/sec/android/app/camera/engine/CommonEngine;->mBackUpBurstDBUpdateStack:Ljava/util/Stack;
@@ -217,18 +217,18 @@
 
     check-cast v9, Landroid/content/ContentValues;
 
-    .line 7301
+    .line 7392
     .local v9, "v":Landroid/content/ContentValues;
     if-eqz v9, :cond_1
 
-    .line 7302
+    .line 7393
     const-string v11, "_data"
 
     invoke-virtual {v9, v11}, Landroid/content/ContentValues;->getAsString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 7303
+    .line 7394
     .local v0, "burstFile":Ljava/lang/String;
     const-string v11, "datetaken"
 
@@ -236,31 +236,31 @@
 
     move-result-object v8
 
-    .line 7304
+    .line 7395
     if-eqz v8, :cond_2
 
-    .line 7305
+    .line 7396
     invoke-virtual {v8}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
 
-    .line 7309
+    .line 7400
     :goto_1
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->insertBurstInfoToSEF(Ljava/lang/String;J)V
-    invoke-static {v11, v0, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4300(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;J)V
+    invoke-static {v11, v0, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;J)V
 
     .end local v0    # "burstFile":Ljava/lang/String;
     :cond_1
     move v5, v4
 
-    .line 7311
+    .line 7402
     .end local v4    # "idx":I
     .restart local v5    # "idx":I
     goto :goto_0
 
-    .line 7307
+    .line 7398
     .end local v5    # "idx":I
     .restart local v0    # "burstFile":Ljava/lang/String;
     .restart local v4    # "idx":I
@@ -269,7 +269,7 @@
 
     goto :goto_1
 
-    .line 7312
+    .line 7403
     .end local v0    # "burstFile":Ljava/lang/String;
     .end local v9    # "v":Landroid/content/ContentValues;
     :cond_3
@@ -279,7 +279,7 @@
 
     invoke-static {v11, v12}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7314
+    .line 7405
     .end local v1    # "filePath":Ljava/lang/String;
     .end local v2    # "dateTaken":J
     .end local v4    # "idx":I
@@ -289,9 +289,9 @@
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->lastImageUpdate(Landroid/content/ContentValues;)V
-    invoke-static {v11, v10}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;Landroid/content/ContentValues;)V
+    invoke-static {v11, v10}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4500(Lcom/sec/android/app/camera/engine/CommonEngine;Landroid/content/ContentValues;)V
 
-    .line 7316
+    .line 7407
     :cond_5
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -299,7 +299,7 @@
 
     invoke-virtual {v11}, Ljava/util/Stack;->removeAllElements()V
 
-    .line 7320
+    .line 7411
     .end local v10    # "values":Landroid/content/ContentValues;
     :goto_2
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
@@ -307,13 +307,13 @@
     const/4 v12, 0x0
 
     # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mBurstDBupdateThread:Ljava/lang/Thread;
-    invoke-static {v11, v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4502(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/Thread;)Ljava/lang/Thread;
+    invoke-static {v11, v12}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4602(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/Thread;)Ljava/lang/Thread;
 
-    .line 7325
+    .line 7416
     :goto_3
     return-void
 
-    .line 7318
+    .line 7409
     :cond_6
     const-string v11, "CommonEngine"
 
@@ -325,11 +325,11 @@
 
     goto :goto_2
 
-    .line 7321
+    .line 7412
     :catch_0
     move-exception v7
 
-    .line 7322
+    .line 7413
     .local v7, "sfe":Landroid/database/sqlite/SQLiteFullException;
     const-string v11, "CommonEngine"
 
@@ -337,15 +337,15 @@
 
     invoke-static {v11, v12}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7323
+    .line 7414
     iget-object v11, p0, Lcom/sec/android/app/camera/engine/CommonEngine$25;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v11}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v11}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v11
 
-    const v12, 0x7f0901c5
+    const v12, 0x7f0901c8
 
     const/4 v13, 0x0
 

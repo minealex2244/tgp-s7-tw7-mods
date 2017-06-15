@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/Auto;
 
     .prologue
-    .line 662
+    .line 664
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/Auto$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +42,12 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 665
+    .line 667
     const-string v0, "1017"
 
     invoke-static {v0}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;)V
 
-    .line 666
+    .line 668
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -67,7 +67,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 667
+    .line 669
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -79,7 +79,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->onPageSelected(I)V
 
-    .line 669
+    .line 671
     :cond_0
     const/4 v0, 0x0
 

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 5623
+    .line 5643
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 5626
+    .line 5646
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mIsFirstStartingAfterCreate:Z
@@ -51,14 +51,14 @@
 
     if-nez v0, :cond_0
 
-    .line 5627
+    .line 5647
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
     const/16 v1, 0x7d0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->acquireDVFSMax(I)V
 
-    .line 5630
+    .line 5650
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -69,7 +69,7 @@
 
     if-nez v0, :cond_1
 
-    .line 5631
+    .line 5651
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -87,7 +87,7 @@
     # setter for: Lcom/sec/android/app/camera/Camera;->mDvfsManagerForeMMC:Lcom/samsung/android/os/SemDvfsManager;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camera;->access$3402(Lcom/sec/android/app/camera/Camera;Lcom/samsung/android/os/SemDvfsManager;)Lcom/samsung/android/os/SemDvfsManager;
 
-    .line 5633
+    .line 5653
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$25;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -98,6 +98,6 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/os/SemDvfsManager;->acquire()V
 
-    .line 5634
+    .line 5654
     return-void
 .end method

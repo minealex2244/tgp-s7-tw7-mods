@@ -149,7 +149,7 @@
     invoke-direct {p0}, Lcom/sec/android/app/camera/setting/QuickLaunchSettingFragment;->dismissAllDialog()V
 
     .line 192
-    const v2, 0x7f09026c
+    const v2, 0x7f09026f
 
     new-array v3, v7, [Ljava/lang/Object;
 
@@ -169,7 +169,7 @@
 
     .line 193
     .local v1, "popup_title":Ljava/lang/String;
-    const v2, 0x7f09026b
+    const v2, 0x7f09026e
 
     const/4 v3, 0x2
 
@@ -225,7 +225,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09026d
+    const v4, 0x7f090270
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

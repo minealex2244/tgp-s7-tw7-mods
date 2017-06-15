@@ -25,7 +25,7 @@
     .param p2, "x0"    # Landroid/content/Context;
 
     .prologue
-    .line 2171
+    .line 2172
     iput-object p1, p0, Lcom/samsung/android/glview/GLContext$8;->this$0:Lcom/samsung/android/glview/GLContext;
 
     invoke-direct {p0, p2}, Landroid/view/OrientationEventListener;-><init>(Landroid/content/Context;)V
@@ -40,23 +40,23 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 2174
+    .line 2175
     const/4 v0, -0x1
 
     if-ne p1, v0, :cond_0
 
-    .line 2175
+    .line 2176
     const-string v0, "GLContext"
 
     const-string v1, "android onOrientationChanged - ORIENTATION_UNKNOWN"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2180
+    .line 2181
     :goto_0
     return-void
 
-    .line 2179
+    .line 2180
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLContext$8;->this$0:Lcom/samsung/android/glview/GLContext;
 

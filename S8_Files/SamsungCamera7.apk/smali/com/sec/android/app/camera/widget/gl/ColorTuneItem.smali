@@ -68,7 +68,7 @@
     .param p7, "commandId"    # I
 
     .prologue
-    const v6, 0x7f0a02d3
+    const v6, 0x7f0a02d7
 
     .line 59
     invoke-interface {p1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
@@ -88,7 +88,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 39
-    const v0, 0x7f0a00f3
+    const v0, 0x7f0a00f6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -99,7 +99,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->ITEM_WIDTH:I
 
     .line 40
-    const v0, 0x7f0a02d4
+    const v0, 0x7f0a02d8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -128,7 +128,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->BUTTON_HEIGHT:I
 
     .line 43
-    const v0, 0x7f0a00f1
+    const v0, 0x7f0a00f4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -139,7 +139,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->TEXT_HEIGHT:I
 
     .line 44
-    const v0, 0x7f0a00f2
+    const v0, 0x7f0a00f5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -150,7 +150,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->TEXT_TOP_MARGIN:I
 
     .line 45
-    const v0, 0x7f0a00ef
+    const v0, 0x7f0a00f2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -161,7 +161,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->FONT_SIZE:I
 
     .line 46
-    const v0, 0x7f0a00f0
+    const v0, 0x7f0a00f3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -172,7 +172,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->LINE_WIDTH:I
 
     .line 47
-    const v0, 0x7f0a02d5
+    const v0, 0x7f0a02d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

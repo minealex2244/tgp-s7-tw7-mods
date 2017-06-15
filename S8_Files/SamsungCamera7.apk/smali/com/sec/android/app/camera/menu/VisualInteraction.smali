@@ -163,7 +163,7 @@
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mHideSwitchingAnimationLock:Ljava/lang/Object;
 
     .line 79
-    const v0, 0x7f0a0388
+    const v0, 0x7f0a038b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -174,7 +174,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->SCREEN_FLASH_ITEM_WIDTH:I
 
     .line 80
-    const v0, 0x7f0a0387
+    const v0, 0x7f0a038a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -3102,7 +3102,7 @@
 
     iget-object v7, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v8, 0x7f0a0105
+    const v8, 0x7f0a0108
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -3122,7 +3122,7 @@
 
     iget-object v8, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v9, 0x7f0a0106
+    const v9, 0x7f0a0109
 
     .line 1157
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimension(I)F
@@ -3137,7 +3137,7 @@
 
     iget-object v9, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v11, 0x7f0a0105
+    const v11, 0x7f0a0108
 
     invoke-virtual {v9, v11}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -3909,7 +3909,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a00a8
+    const v5, 0x7f0a00ab
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -4154,7 +4154,7 @@
 
     if-eq v4, v5, :cond_1
 
-    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isFixedOrientation()Z
+    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isGLSurfaceOrientationFixed()Z
 
     move-result v4
 
@@ -4183,7 +4183,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a0214
+    const v5, 0x7f0a0217
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -4418,7 +4418,7 @@
 
     if-eq v4, v5, :cond_2
 
-    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isFixedOrientation()Z
+    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isGLSurfaceOrientationFixed()Z
 
     move-result v4
 
@@ -4447,7 +4447,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a0214
+    const v5, 0x7f0a0217
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -5666,7 +5666,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a0214
+    const v5, 0x7f0a0217
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -5729,7 +5729,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a0214
+    const v5, 0x7f0a0217
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -5785,7 +5785,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a0214
+    const v5, 0x7f0a0217
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -5846,7 +5846,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a0214
+    const v5, 0x7f0a0217
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -5909,7 +5909,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a0214
+    const v5, 0x7f0a0217
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -5965,7 +5965,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0a0214
+    const v5, 0x7f0a0217
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -6006,12 +6006,36 @@
     goto/16 :goto_5
 .end method
 
+.method private startMultiWindowRecordingStopAnimation()V
+    .locals 2
+
+    .prologue
+    .line 1518
+    iget-boolean v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsPreviewChangingAnimationRunning:Z
+
+    if-eqz v0, :cond_0
+
+    .line 1519
+    invoke-direct {p0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->cancelPreviewChangingAnimation()V
+
+    .line 1521
+    :cond_0
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->showBlackOverlay(FLcom/samsung/android/glview/GLViewGroup;)V
+
+    .line 1522
+    return-void
+.end method
+
 .method private startPreviewAngleChangingAnimation([B)V
     .locals 18
     .param p1, "data"    # [B
 
     .prologue
-    .line 1518
+    .line 1525
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -6022,18 +6046,18 @@
 
     if-eqz v1, :cond_0
 
-    .line 1519
+    .line 1526
     const-string v1, "Camera7VI"
 
     const-string v3, "Camera is pausing. Skip the preview angle changing Animation"
 
     invoke-static {v1, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1596
+    .line 1603
     :goto_0
     return-void
 
-    .line 1522
+    .line 1529
     :cond_0
     const-string v1, "Camera7VI"
 
@@ -6041,14 +6065,14 @@
 
     invoke-static {v1, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1524
+    .line 1531
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewAngleChangeAnimationFlagLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 1525
+    .line 1532
     const/4 v1, 0x1
 
     :try_start_0
@@ -6056,22 +6080,22 @@
 
     iput-boolean v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsPreviewAngleChangingAnimationRunning:Z
 
-    .line 1526
+    .line 1533
     monitor-exit v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1529
+    .line 1536
     invoke-direct/range {p0 .. p1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->preparePreviewImage([B)V
 
-    .line 1532
+    .line 1539
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mCurrentPreviewAnimation:I
 
     if-nez v1, :cond_1
 
-    .line 1533
+    .line 1540
     const-string v1, "Camera7VI"
 
     const-string v3, "Return, startPreviewAngleChangingAnimation"
@@ -6080,7 +6104,7 @@
 
     goto :goto_0
 
-    .line 1526
+    .line 1533
     :catchall_0
     move-exception v1
 
@@ -6091,7 +6115,7 @@
 
     throw v1
 
-    .line 1537
+    .line 1544
     :cond_1
     move-object/from16 v0, p0
 
@@ -6103,7 +6127,7 @@
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1538
+    .line 1545
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuideParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -6114,7 +6138,7 @@
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1540
+    .line 1547
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenHeightPixels()I
 
     move-result v1
@@ -6133,11 +6157,11 @@
 
     div-float v2, v1, v3
 
-    .line 1541
+    .line 1548
     .local v2, "scale":F
     const v13, 0x7f0b0012
 
-    .line 1544
+    .line 1551
     .local v13, "duration":I
     const/high16 v1, 0x3f800000    # 1.0f
 
@@ -6151,7 +6175,7 @@
 
     invoke-direct {v6}, Lcom/sec/android/app/camera/util/interpolator/SineInOut33;-><init>()V
 
-    .line 1545
+    .line 1552
     invoke-static {v13}, Lcom/samsung/android/glview/GLContext;->getInteger(I)I
 
     move-result v7
@@ -6160,12 +6184,12 @@
 
     move v4, v2
 
-    .line 1544
+    .line 1551
     invoke-static/range {v1 .. v8}, Lcom/sec/android/app/camera/util/AnimationUtil;->getScaleAnimation(FFFFLcom/samsung/android/glview/GLView;Landroid/view/animation/Interpolator;II)Landroid/view/animation/Animation;
 
     move-result-object v16
 
-    .line 1546
+    .line 1553
     .local v16, "scaleAnim":Landroid/view/animation/Animation;
     const/4 v3, 0x0
 
@@ -6183,7 +6207,7 @@
 
     iget-object v7, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuideParentViewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1547
+    .line 1554
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
     move-result v8
@@ -6200,12 +6224,12 @@
 
     move-result v11
 
-    .line 1546
+    .line 1553
     invoke-static/range {v3 .. v11}, Lcom/sec/android/app/camera/util/AnimationUtil;->getTranslationAnimation(FFFFLcom/samsung/android/glview/GLView;IILandroid/view/animation/Interpolator;I)Landroid/view/animation/Animation;
 
     move-result-object v17
 
-    .line 1548
+    .line 1555
     .local v17, "translateAnimation":Landroid/view/animation/Animation;
     const/4 v1, 0x0
 
@@ -6223,41 +6247,41 @@
 
     move-result-object v12
 
-    .line 1549
+    .line 1556
     .local v12, "alphaAnimation":Landroid/view/animation/Animation;
     const/4 v1, 0x1
 
     invoke-virtual {v12, v1}, Landroid/view/animation/Animation;->setFillAfter(Z)V
 
-    .line 1552
+    .line 1559
     new-instance v15, Landroid/view/animation/AnimationSet;
 
     const/4 v1, 0x1
 
     invoke-direct {v15, v1}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 1553
+    .line 1560
     .local v15, "previewAnimationSet":Landroid/view/animation/AnimationSet;
     const/4 v1, 0x1
 
     invoke-virtual {v15, v1}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1554
+    .line 1561
     invoke-virtual/range {v15 .. v16}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1555
+    .line 1562
     move-object/from16 v0, v17
 
     invoke-virtual {v15, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1557
+    .line 1564
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1, v15}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1558
+    .line 1565
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
@@ -6270,33 +6294,33 @@
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLImage;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
 
-    .line 1581
+    .line 1588
     new-instance v14, Landroid/view/animation/AnimationSet;
 
     const/4 v1, 0x1
 
     invoke-direct {v14, v1}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 1582
+    .line 1589
     .local v14, "fovGuideAnimationSet":Landroid/view/animation/AnimationSet;
     const/4 v1, 0x1
 
     invoke-virtual {v14, v1}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1583
+    .line 1590
     move-object/from16 v0, v16
 
     invoke-virtual {v14, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1584
+    .line 1591
     move-object/from16 v0, v17
 
     invoke-virtual {v14, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1585
+    .line 1592
     invoke-virtual {v14, v12}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1587
+    .line 1594
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuide:Lcom/sec/android/app/camera/widget/gl/FOVGuide;
@@ -6307,14 +6331,14 @@
 
     invoke-virtual {v1, v3}, Lcom/sec/android/app/camera/widget/gl/FOVGuide;->setGuideRect(Landroid/graphics/Rect;)V
 
-    .line 1588
+    .line 1595
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuide:Lcom/sec/android/app/camera/widget/gl/FOVGuide;
 
     invoke-virtual {v1, v14}, Lcom/sec/android/app/camera/widget/gl/FOVGuide;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1589
+    .line 1596
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuide:Lcom/sec/android/app/camera/widget/gl/FOVGuide;
@@ -6323,21 +6347,21 @@
 
     invoke-virtual {v1, v3}, Lcom/sec/android/app/camera/widget/gl/FOVGuide;->setVisibility(I)V
 
-    .line 1592
+    .line 1599
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1593
+    .line 1600
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mRecordingFOVGuide:Lcom/sec/android/app/camera/widget/gl/FOVGuide;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/widget/gl/FOVGuide;->startAnimation()V
 
-    .line 1595
+    .line 1602
     const-string v1, "Camera7VI"
 
     const-string v3, "startPreviewAngleChangingAnimation - X"
@@ -6354,14 +6378,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1606
+    .line 1613
     const-string v0, "Camera7VI"
 
     const-string v1, "startPreviewChangingAnimation - E"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1608
+    .line 1615
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v0, :cond_0
@@ -6374,27 +6398,27 @@
 
     if-nez v0, :cond_0
 
-    .line 1609
+    .line 1616
     const-string v0, "Camera7VI"
 
     const-string v1, "Previous animation is not finished yet, return startPreviewChangingAnimation()"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1637
+    .line 1644
     :goto_0
     return-void
 
-    .line 1612
+    .line 1619
     :cond_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsPreviewChangingAnimationRunning:Z
 
-    .line 1613
+    .line 1620
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->preparePreviewImage([B)V
 
-    .line 1614
+    .line 1621
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mMenuManager:Lcom/sec/android/app/camera/menu/MenuManagerImpl;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/MenuManagerImpl;->getVisualInteractionRoot()Lcom/samsung/android/glview/GLViewGroup;
@@ -6405,12 +6429,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1617
+    .line 1624
     iget v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mCurrentPreviewAnimation:I
 
     if-nez v0, :cond_1
 
-    .line 1618
+    .line 1625
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mMenuManager:Lcom/sec/android/app/camera/menu/MenuManagerImpl;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/MenuManagerImpl;->getVisualInteractionRoot()Lcom/samsung/android/glview/GLViewGroup;
@@ -6421,22 +6445,22 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1619
+    .line 1626
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1620
+    .line 1627
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->clear()V
 
-    .line 1621
+    .line 1628
     iput-object v2, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 1622
+    .line 1629
     const-string v0, "Camera7VI"
 
     const-string v1, "Return, startPreviewChangingAnimation"
@@ -6445,20 +6469,20 @@
 
     goto :goto_0
 
-    .line 1626
+    .line 1633
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->bringToFront()V
 
-    .line 1627
+    .line 1634
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1628
+    .line 1635
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewImage:Lcom/samsung/android/glview/GLImage;
 
     new-instance v1, Lcom/sec/android/app/camera/menu/VisualInteraction$10;
@@ -6467,12 +6491,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setLoadListener(Lcom/samsung/android/glview/GLView$LoadListener;)V
 
-    .line 1634
+    .line 1641
     const/high16 v0, 0x3f800000    # 1.0f
 
     invoke-virtual {p0, v0, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->showBlackOverlay(FLcom/samsung/android/glview/GLViewGroup;)V
 
-    .line 1636
+    .line 1643
     const-string v0, "Camera7VI"
 
     const-string v1, "startPreviewChangingAnimation - X"
@@ -8139,11 +8163,7 @@
 
     .line 556
     :pswitch_2
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    const/4 v1, 0x0
-
-    invoke-virtual {p0, v0, v1}, Lcom/sec/android/app/camera/menu/VisualInteraction;->showBlackOverlay(FLcom/samsung/android/glview/GLViewGroup;)V
+    invoke-direct {p0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->startMultiWindowRecordingStopAnimation()V
 
     goto :goto_0
 
@@ -8154,8 +8174,6 @@
     goto :goto_0
 
     .line 548
-    nop
-
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

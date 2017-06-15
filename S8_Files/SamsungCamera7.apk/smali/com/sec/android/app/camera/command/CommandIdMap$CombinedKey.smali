@@ -31,7 +31,7 @@
     .locals 0
 
     .prologue
-    .line 1566
+    .line 1569
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,10 +45,10 @@
     .prologue
     const v2, 0xffff
 
-    .line 1588
+    .line 1591
     if-gez p1, :cond_0
 
-    .line 1589
+    .line 1592
     and-int/lit16 v0, p0, 0x7fff
 
     shl-int/lit8 v0, v0, 0x10
@@ -59,7 +59,7 @@
 
     add-int/2addr v0, v1
 
-    .line 1591
+    .line 1594
     :goto_0
     return v0
 
@@ -80,7 +80,7 @@
     .param p0, "combinedKey"    # I
 
     .prologue
-    .line 1595
+    .line 1598
     shr-int/lit8 v0, p0, 0x10
 
     return v0
@@ -93,19 +93,19 @@
     .prologue
     const v2, 0xffff
 
-    .line 1599
+    .line 1602
     and-int v0, p0, v2
 
     const/16 v1, 0x7fff
 
     if-le v0, v1, :cond_0
 
-    .line 1600
+    .line 1603
     and-int v0, p0, v2
 
     rsub-int v0, v0, 0x7fff
 
-    .line 1602
+    .line 1605
     :goto_0
     return v0
 

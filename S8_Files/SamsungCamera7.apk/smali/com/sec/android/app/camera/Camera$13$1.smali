@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/Camera$13;
 
     .prologue
-    .line 1825
+    .line 1827
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$13$1;->this$1:Lcom/sec/android/app/camera/Camera$13;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 1828
+    .line 1830
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13$1;->this$1:Lcom/sec/android/app/camera/Camera$13;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -49,7 +49,7 @@
     # invokes: Lcom/sec/android/app/camera/Camera;->showLocationTagDialog()V
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$2500(Lcom/sec/android/app/camera/Camera;)V
 
-    .line 1829
+    .line 1831
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13$1;->this$1:Lcom/sec/android/app/camera/Camera$13;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -60,14 +60,14 @@
 
     if-nez v0, :cond_0
 
-    .line 1830
+    .line 1832
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13$1;->this$1:Lcom/sec/android/app/camera/Camera$13;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->showVisionIntelligenceEffect()V
 
-    .line 1832
+    .line 1834
     :cond_0
     return-void
 .end method

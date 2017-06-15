@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     .prologue
-    .line 1935
+    .line 1936
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$8;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     iput-object p2, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$8;->val$outList:Lcom/samsung/android/glview/GLGridList;
@@ -54,33 +54,33 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1938
+    .line 1939
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$8;->val$outList:Lcom/samsung/android/glview/GLGridList;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLGridList;->setVisibility(I)V
 
-    .line 1939
+    .line 1940
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$8;->val$inList:Lcom/samsung/android/glview/GLGridList;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$8;->val$showInAnim:Landroid/view/animation/Animation;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLGridList;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1940
+    .line 1941
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$8;->val$inList:Lcom/samsung/android/glview/GLGridList;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLGridList;->startAnimation()V
 
-    .line 1941
+    .line 1942
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$8;->val$inList:Lcom/samsung/android/glview/GLGridList;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLGridList;->setVisibility(I)V
 
-    .line 1942
+    .line 1943
     return-void
 .end method
 
@@ -89,7 +89,7 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1946
+    .line 1947
     return-void
 .end method
 
@@ -98,6 +98,6 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1950
+    .line 1951
     return-void
 .end method

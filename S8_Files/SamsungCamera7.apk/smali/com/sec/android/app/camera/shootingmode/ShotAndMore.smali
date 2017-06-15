@@ -109,7 +109,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 77
-    const v0, 0x7f0a01e8
+    const v0, 0x7f0a01ea
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -124,7 +124,7 @@
 
     new-array v0, v0, [I
 
-    const v1, 0x7f0a01e0
+    const v1, 0x7f0a01e2
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -134,7 +134,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0a01e3
+    const v1, 0x7f0a01e5
 
     .line 80
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -145,7 +145,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0a01e1
+    const v1, 0x7f0a01e3
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -155,7 +155,7 @@
 
     aput v1, v0, v5
 
-    const v1, 0x7f0a01e2
+    const v1, 0x7f0a01e4
 
     .line 81
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -173,7 +173,7 @@
 
     new-array v0, v0, [I
 
-    const v1, 0x7f0a01e4
+    const v1, 0x7f0a01e6
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -183,7 +183,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0a01e7
+    const v1, 0x7f0a01e9
 
     .line 83
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -194,7 +194,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0a01e5
+    const v1, 0x7f0a01e7
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -204,7 +204,7 @@
 
     aput v1, v0, v5
 
-    const v1, 0x7f0a01e6
+    const v1, 0x7f0a01e8
 
     .line 84
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -218,7 +218,7 @@
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->CAPTURE_PROGRESS_Y:[I
 
     .line 85
-    const v0, 0x7f0a01ee
+    const v0, 0x7f0a01f0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -229,7 +229,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->CAPTURE_PROGRESS_WIDTH:I
 
     .line 86
-    const v0, 0x7f0a01eb
+    const v0, 0x7f0a01ed
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -240,7 +240,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->CAPTURE_PROGRESS_HEIGHT:I
 
     .line 88
-    const v0, 0x7f0a01ed
+    const v0, 0x7f0a01ef
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -251,7 +251,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESSBAR_TEXT_HEIGHT:I
 
     .line 89
-    const v0, 0x7f0a01ec
+    const v0, 0x7f0a01ee
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -262,7 +262,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESSBAR_TEXT_BOTTOM_PADDING:I
 
     .line 90
-    const v0, 0x7f0a038f
+    const v0, 0x7f0a0392
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -271,7 +271,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESSBAR_TEXT_SIZE:F
 
     .line 91
-    const v0, 0x7f0a01ea
+    const v0, 0x7f0a01ec
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -282,7 +282,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESS_TEXT_WIDTH:I
 
     .line 92
-    const v0, 0x7f0a01e9
+    const v0, 0x7f0a01eb
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

@@ -33,7 +33,7 @@
 手振れ補正"</string>
     <string name="Abb_Title_VoiceCapture">音声​コントロール</string>
     <string name="Abb_Title_WhiteBalance">ホワイト​バランス</string>
-    <string name="AnimatedGif_Helptext">アニメーション画像を作成するには、カメラボタンを押し続けてください。</string>
+    <string name="AnimatedGif_Helptext">写真を連写するには、カメラボタンを長押ししてください。</string>
     <string name="COLOR_TONE_EDIT">色調を編集</string>
     <string name="COLOR_TONE_NONE">標準</string>
     <string name="COLOR_TUNE_BREEZE">さわやか</string>
@@ -192,7 +192,7 @@
     <string name="SM_SPORTS">スポーツ</string>
     <string name="SM_SPORTS_SCENE_description">動きの速い被写体をより鮮明に撮影します。</string>
     <string name="SM_STORY">ｻｳﾝﾄﾞ&amp;ｼｮｯﾄ</string>
-    <string name="SM_STORY_description">周囲の音を数秒間録音することで、臨場感のある写真を撮影します。</string>
+    <string name="SM_STORY_description">撮影前または撮影後に周囲の音を録音して、写真に取り込みます。</string>
     <string name="SM_ULTRA_WIDE_SHOT">ワイド自分撮り</string>
     <string name="SM_ULTRA_WIDE_SHOT_description">広角で自分撮りすることで、大人数での撮影ができます。</string>
     <string name="SM_WECHAT_VIDEO">WeChat動画</string>
@@ -432,25 +432,28 @@
     <string name="info">詳細</string>
     <string name="info_tts">情報</string>
     <string name="insert_mmc_msg">外部SDカードを挿入してカメラを使用してください。</string>
-    <string name="interaction_help_description">新しいモードを選択するには、右にスワイプし、別のフィルターを選択するには、左にスワイプします。カメラを切り替えるには、上下にスワイプします。</string>
+    <string name="interaction_help_description">新しいモードを選択するには、右にスワイプし、別のエフェクトを適用するには、左にスワイプします。カメラを切り替えるには、上下にスワイプします。</string>
     <string name="interaction_help_effects">エフェクト</string>
     <string name="interaction_help_front">フロント</string>
     <string name="interaction_help_modes">モード</string>
     <string name="interaction_help_page_indicator">%2$dページ中%1$dページ</string>
     <string name="interaction_help_rear">リア</string>
-    <string name="interaction_help_title">モード、フィルター、およびカメラを選択</string>
+    <string name="interaction_help_title">スワイプして切り替え</string>
     <string name="interactive_error_capture_warning">正しい方向で撮影された写真が保存されました。</string>
-    <string name="interactive_error_device_not_moved">端末が移動していないため、バーチャルショットで写真を撮影できません。</string>
-    <string name="interactive_error_not_enough_frames">十分な写真の枚数がないため、バーチャルショットを保存できません。</string>
+    <string name="interactive_error_device_not_moved">バーチャルショットを撮影するには、被写体を一周するように端末を動かしてください。</string>
+    <string name="interactive_error_not_enough_frames">バーチャルショットを保存する前に、さらに写真を撮影してください。</string>
     <string name="interactive_helptext">カメラボタンをタップし、被写体をフレームの中央に収めた状態で、周囲を回り込みながら撮影してください。</string>
     <string name="interval_summary">タイマーが0になると、連続で%d枚の写真を撮影します。自動、プロ、および自分撮りモードのみがこの機能に対応しています。</string>
-    <string name="invalid_device_version_title">カメラを更新</string>
-    <string name="invalid_shooting_mode_version_title">カメラモードを更新</string>
+    <string name="invalid_device_version_msg">%sモードで写真を撮影するには、カメラアプリを更新する必要があります。</string>
+    <string name="invalid_device_version_title">カメラを更新しますか？</string>
+    <string name="invalid_shooting_mode_version_msg">%1$sモードで写真を撮影するには、%2$sでカメラモードを更新する必要があります。</string>
+    <string name="invalid_shooting_mode_version_title">カメラモードを更新しますか？</string>
+    <string name="invalid_version_update">更新</string>
     <string name="left">左</string>
     <string name="left_tts">左</string>
     <string name="lens_dirt_notification_popup_description">"レンズの汚れを取ると、きれいに撮影できます。
 
-いつもきれいに撮影できるように、カメラのレンズを清掃してください。"</string>
+いつもきれいに撮影できるように、カメラのレンズを拭いてください。"</string>
     <string name="loading_gallery_images">ギャラリー​画像​を​読み込み中…</string>
     <string name="location_tag_dialog_message_GPS_only_condition">位置情報の検出方法を[%s]に設定します。</string>
     <string name="location_tag_dialog_message_chn">位置情報タグを有効にします。</string>
@@ -520,7 +523,7 @@
     <string name="recording_call_rinning_msg">着信に応答すると、録画を停止し、応答直前までの部分を保存します。</string>
     <string name="recording_fail_lack_of_hw_resource">他のアプリケーションでビデオコーデックを使用中です。[タスクマネージャー]で実行中の他のビデオアプリケーションを終了し、再度実行してください。</string>
     <string name="recording_failed_msg">録画に失敗しました。</string>
-    <string name="recording_help_popup_description">録画する前にアスペクト比をプレビューするには、録画ボタンを長押しします。</string>
+    <string name="recording_help_popup_description">録画する前に縦横比をプレビューするには、録画ボタンを長押しします。</string>
     <string name="recording_help_popup_title">動画をプレビュー</string>
     <string name="recording_using_earphone_mic">ヘッドセットで音声を録音しています。</string>
     <string name="remove_effect">ｴﾌｪｸﾄを削除</string>
@@ -549,13 +552,13 @@
     <string name="secured_lock_in_download_effect">新しいエフェクトをダウンロードするには、端末のロックを解除する必要があります。</string>
     <string name="secured_lock_in_download_shootingmode">新しいモードをダウンロードするには、端末のロックを解除する必要があります。</string>
     <string name="secured_lock_in_shootingmode_separated">%sを使用するには、端末のロックを解除する必要があります。</string>
-    <string name="selective_focus_error_af">保存した写真にフォーカスコントラストエフェクトを適用できませんでした。焦点を合わせる範囲を選択し、再度お試しください。</string>
-    <string name="selective_focus_error_inf">保存した写真にフォーカスコントラストエフェクトを適用できませんでした。被写体との距離が離れすぎています。</string>
-    <string name="selective_focus_error_segmentation">保存した写真にフォーカスコントラストエフェクトを適用できませんでした。被写体が検出できません。</string>
+    <string name="selective_focus_error_af">フォーカスコントラストを適用できません。被写体にピントが合っていません。</string>
+    <string name="selective_focus_error_inf">フォーカスコントラストを適用できません。被写体との距離が離れすぎています。</string>
+    <string name="selective_focus_error_segmentation">フォーカスコントラストを適用できません。被写体を検出できませんでした。</string>
     <string name="self_recording_end_popup">端末が閉じられたため、録画が停止しました。</string>
     <string name="self_shot_flip_open_warning_popup">折りたたみ式携帯電話を開いているときのみ、自分撮りが可能です。</string>
     <string name="self_shot_open_warning_popup">電話が開いているときは、自分撮り（写真）のみ使用できます。</string>
-    <string name="selfie_alarm_help_text">写真の中で顔を写す位置にフレームをドラッグしてください。選択したエリアに%d秒間顔を収めると、写真が撮影されます。</string>
+    <string name="selfie_alarm_help_text">写真の中で顔を写す位置を選択してください。選択したエリアに顔を%d秒間収めると、写真が撮影されます。</string>
     <string name="selfie_mode_palm">手のひらで撮影</string>
     <string name="sensorcapture_help_msg_with_palm">顔を認識させると、心拍数センサーをタップする自分撮りや、手のひらをカメラに向ける時間差での自分撮りをすることができます。</string>
     <string name="sensorcapture_title">簡単に自分撮り</string>
@@ -564,8 +567,8 @@
     <string name="shadow">シャドウ</string>
     <string name="share">共有</string>
     <string name="shutter">シャッター</string>
-    <string name="sound_and_shot_add_voice_guidetext">カメラボタンをタップした後、最長%d秒まで周囲の音を録音できます。</string>
-    <string name="sound_and_shot_auto_guidetext">撮影​前​に​録音​された​%d秒​間​の​音​が​写真​と​一緒​に​保存​され​ます。​連続​して​写真​を​撮影​でき​ます。</string>
+    <string name="sound_and_shot_add_voice_guidetext">写真を撮影後、周囲の音を最大%d秒間録音するには、カメラボタンをタップしてください。</string>
+    <string name="sound_and_shot_auto_guidetext">続けてもう1枚写真を撮影してください。それぞれの写真には、撮影する直前に録音された最大%d秒間の周囲の音が埋め込まれます。</string>
     <string name="sound_and_shot_mode_auto">撮影前</string>
     <string name="sound_and_shot_mode_manual">撮影後</string>
     <string name="sound_and_shot_recording_time_unit">秒</string>
@@ -640,7 +643,7 @@
     <string name="turnoff_btn">OFF</string>
     <string name="turnon_btn">ON</string>
     <string name="unable_to_record_video_due_to_not_enough_space">動画を撮影できません。添付ファイルに十分な空き容量がありません。</string>
-    <string name="unable_to_record_video_with_effect">%sではエフェクトを適用して録画できません。[設定]で動画のサイズを変更してください。</string>
+    <string name="unable_to_record_video_with_effect">%sで動画を撮影中は、エフェクトを適用できません。</string>
     <string name="uninstall">アンインストール</string>
     <string name="unknown_error_callback_msg">不明なエラーが発生しました。</string>
     <string name="unlock">端末のロックを解除しますか？</string>
@@ -648,7 +651,7 @@
     <string name="video_play">再生</string>
     <string name="video_reach_4g_and_restart_recording">最大ファイルサイズ(%s)に達しました。動画を保存して、新しいファイルで録画を続行します。</string>
     <string name="video_reach_file_size_limit">録画サイズが最大に達しました。</string>
-    <string name="video_reach_size_limit">最大録画時間に達しました。</string>
+    <string name="video_reach_size_limit">最大録画時間に達したため、録画を停止しました。</string>
     <string name="video_size_option_and">および</string>
     <string name="video_size_option_comma">、</string>
     <string name="viewmode_fullmview">全画面</string>
@@ -672,11 +675,11 @@
     <string name="voice_guide_tilt_phone_up">端末を上に傾けてください。</string>
     <string name="warning_msg">警告</string>
     <string name="wideselfie_error_blurred_result_image">写真の合成中にエラーが発生しましたが、写真は保存されました。</string>
-    <string name="wideselfie_error_tracing">端末を動かすのが速すぎます。ワイド自分撮りモードで写真を撮影することができません。</string>
-    <string name="wideselfie_guide_start">端末を左または右にゆっくりと動かしてください。</string>
-    <string name="wideselfie_guide_swivel_left">端末を左にゆっくりと動かしてください。</string>
-    <string name="wideselfie_guide_swivel_right">端末を右にゆっくりと動かしてください。</string>
-    <string name="wideselfie_no_direction">ワイド自分撮りモードでの写真撮影に失敗しました。被写体を認識できませんでした。</string>
+    <string name="wideselfie_error_tracing">自分撮りできませんでした。端末をゆっくり動かしてください。</string>
+    <string name="wideselfie_guide_start">端末を左または右にゆっくり動かしてください。</string>
+    <string name="wideselfie_guide_swivel_left">端末を左に動かしてください。</string>
+    <string name="wideselfie_guide_swivel_right">端末を右にゆっくり動かしてください。</string>
+    <string name="wideselfie_no_direction">自分撮りができません。被写体を検出できませんでした。</string>
     <string name="wideselfie_warning_text_down">端末を前方に傾けてください。</string>
     <string name="wideselfie_warning_text_left">端末を左に動かしてください。</string>
     <string name="wideselfie_warning_text_right">端末を右に動かしてください。</string>

@@ -85,7 +85,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 43
-    const v0, 0x7f0a029b
+    const v0, 0x7f0a029f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -96,7 +96,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/SimpleSideQuickSetting;->ITEM_WIDTH:I
 
     .line 44
-    const v0, 0x7f0a029a
+    const v0, 0x7f0a029e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -107,7 +107,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/SimpleSideQuickSetting;->ITEM_HEIGHT:I
 
     .line 45
-    const v0, 0x7f0a012e
+    const v0, 0x7f0a0131
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

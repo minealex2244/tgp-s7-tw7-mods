@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/Auto;
 
     .prologue
-    .line 1248
+    .line 1250
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/Auto$4;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 1251
+    .line 1253
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$4;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1252
+    .line 1254
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$4;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mErrorToast:Landroid/widget/Toast;
@@ -61,7 +61,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1254
+    .line 1256
     :cond_0
     return-void
 .end method

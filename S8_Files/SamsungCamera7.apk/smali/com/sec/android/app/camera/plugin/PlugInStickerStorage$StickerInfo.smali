@@ -36,24 +36,24 @@
     .param p5, "commandId"    # I
 
     .prologue
-    .line 378
+    .line 399
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 379
+    .line 400
     iput-object p1, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;->packageName:Ljava/lang/String;
 
-    .line 380
+    .line 401
     iput-object p2, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;->stickerName:Ljava/lang/String;
 
-    .line 381
+    .line 402
     iput p3, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;->thumbnailResourceId:I
 
-    .line 382
+    .line 403
     iput p4, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;->subOrder:I
 
-    .line 383
+    .line 404
     iput p5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;->commandId:I
 
-    .line 384
+    .line 405
     return-void
 .end method

@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 64
+    .line 65
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
     .param p1, "source"    # Landroid/os/Parcel;
 
     .prologue
-    .line 67
+    .line 68
     sget-object v0, Lcom/sec/android/app/camera/Camera;->mSetting:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     return-object v0
@@ -55,7 +55,7 @@
     .locals 1
 
     .prologue
-    .line 64
+    .line 65
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl$1;->createFromParcel(Landroid/os/Parcel;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v0
@@ -68,7 +68,7 @@
     .param p1, "size"    # I
 
     .prologue
-    .line 72
+    .line 73
     new-array v0, p1, [Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     return-object v0
@@ -78,7 +78,7 @@
     .locals 1
 
     .prologue
-    .line 64
+    .line 65
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl$1;->newArray(I)[Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v0

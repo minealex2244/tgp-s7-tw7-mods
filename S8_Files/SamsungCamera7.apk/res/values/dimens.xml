@@ -20,7 +20,7 @@
     <dimen name="wide_ratio_preview_left">0.0dip</dimen>
     <dimen name="basemenu_group_width">117.0dip</dimen>
     <dimen name="basemenu_group_width_multiwindow">78.0dip</dimen>
-    <dimen name="beauty_level_slider_bottom_margin_for_keyboard_cover">140.0dip</dimen>
+    <dimen name="beauty_level_slider_bottom_margin_for_keyboard_cover">110.0dip</dimen>
     <dimen name="beauty_menu_bottom_margin">110.0dip</dimen>
     <dimen name="beauty_menu_button_pos_x_for_mobile_keyboard">130.0dip</dimen>
     <dimen name="burst_panoramashot_livepreview_landscape_width">517.0dip</dimen>
@@ -31,6 +31,8 @@
     <dimen name="dualshot_splitview_normal_ratio_width">240.0dip</dimen>
     <dimen name="dualshot_splitview_start_posy">90.0dip</dimen>
     <dimen name="dualshot_splitview_width">320.0dip</dimen>
+    <dimen name="effect_bottom_area_width">40.0dip</dimen>
+    <dimen name="effect_category_area_width">40.0dip</dimen>
     <dimen name="item_dual_effect_type_item_text_size">13.0dip</dimen>
     <dimen name="item_dual_effect_type_text_height">25.0dip</dimen>
     <dimen name="item_dual_effect_type_text_pos_y">92.0dip</dimen>
@@ -151,8 +153,9 @@
     <dimen name="audio_record_indicator_eqbar_port_top_margin">97.0dip</dimen>
     <dimen name="autoportrait_handler_width">13.0px</dimen>
     <dimen name="basemenu_floating_camera_button_pos_y">32.0dip</dimen>
-    <dimen name="beauty_level_slider_bottom_margin">181.0dip</dimen>
-    <dimen name="beauty_slider_space">14.0dip</dimen>
+    <dimen name="beauty_level_slider_bottom_margin">151.0dip</dimen>
+    <dimen name="beauty_slider_space">23.0dip</dimen>
+    <dimen name="beauty_spotlight_slider_space">57.0dip</dimen>
     <dimen name="blur_image_width">384.0px</dimen>
     <dimen name="burst_panoramashot_capturetri_height">34.0dip</dimen>
     <dimen name="burst_panoramashot_capturetri_width">34.0dip</dimen>
@@ -381,7 +384,6 @@
     <dimen name="pro_colortune_list_right_margin">183.0dip</dimen>
     <dimen name="pro_item_left_margin">17.0dip</dimen>
     <dimen name="pro_item_text_bottom_margin">4.0dip</dimen>
-    <dimen name="pro_item_text_font_size">10.0dip</dimen>
     <dimen name="pro_item_top_margin">12.0dip</dimen>
     <dimen name="pro_long_ev_shot_progress_text_top_margin">14.0dip</dimen>
     <dimen name="pro_long_ev_shot_progress_title_height">20.0dip</dimen>
@@ -480,6 +482,7 @@
     <dimen name="shot_and_more_progressbar_width">300.0dip</dimen>
     <dimen name="sidemenu_shutter_button_expand_area">5.0dip</dimen>
     <dimen name="slidermenu_anti_fog_slide_group_width">20.0dip</dimen>
+    <dimen name="slidermenu_anti_fog_slider_bottom_margin">181.0dip</dimen>
     <dimen name="slidermenu_anti_fog_slider_height">210.0dip</dimen>
     <dimen name="slidermenu_anti_fog_slider_width">2.0dip</dimen>
     <dimen name="slidermenu_food_color_tune_slider_height">282.0dip</dimen>
@@ -604,7 +607,7 @@
     <dimen name="beauty_slider_level_text_size">21.0dip</dimen>
     <dimen name="beauty_slider_level_text_width">18.0dip</dimen>
     <dimen name="beauty_slider_touch_area_height">18.0dip</dimen>
-    <dimen name="beauty_slider_touch_area_width">17.0dip</dimen>
+    <dimen name="beauty_slider_touch_area_width">40.0dip</dimen>
     <dimen name="beauty_slider_width">2.0dip</dimen>
     <dimen name="beauty_sub_menu_group_width">48.0dip</dimen>
     <dimen name="continuous_progress_text_height">32.0dip</dimen>
@@ -635,6 +638,7 @@
     <dimen name="mode_info_action_bar_text_size">18.0dip</dimen>
     <dimen name="mode_info_description_font_size">17.0dip</dimen>
     <dimen name="mode_info_menu_item_title_font_size">15.0dip</dimen>
+    <dimen name="pro_item_text_font_size">10.0dip</dimen>
     <dimen name="pro_item_text_height">17.0dip</dimen>
     <dimen name="pro_item_text_pos_y">28.0dip</dimen>
     <dimen name="pro_item_width">48.0dip</dimen>
@@ -744,7 +748,6 @@
     <dimen name="effectThumbnaillist_line_thickness">1.0dip</dimen>
     <dimen name="effectThumbnaillist_menu_side_margin">2.0dip</dimen>
     <dimen name="effect_button_height">48.0dip</dimen>
-    <dimen name="effect_category_area_width">40.0dip</dimen>
     <dimen name="effect_category_button_width">32.0dip</dimen>
     <dimen name="effect_category_limit_spacing">8.0dip</dimen>
     <dimen name="effect_category_scroll_margin">14.0dip</dimen>

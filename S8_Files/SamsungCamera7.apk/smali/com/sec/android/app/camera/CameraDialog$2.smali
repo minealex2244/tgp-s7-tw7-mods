@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/CameraDialog;
 
     .prologue
-    .line 525
+    .line 526
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$2;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "arg0"    # Landroid/view/View;
 
     .prologue
-    .line 528
+    .line 529
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$2;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     sget-object v1, Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;->GPS_EULA:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
@@ -50,6 +50,6 @@
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->showCameraDialog(Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/CameraDialog;->access$300(Lcom/sec/android/app/camera/CameraDialog;Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
 
-    .line 529
+    .line 530
     return-void
 .end method

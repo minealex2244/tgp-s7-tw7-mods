@@ -96,7 +96,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->SCREEN_HEIGHT:I
 
     .line 46
-    const v2, 0x7f0a03c3
+    const v2, 0x7f0a03c6
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -107,7 +107,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->TITLE_FONT_SIZE:F
 
     .line 47
-    const v2, 0x7f0a03c2
+    const v2, 0x7f0a03c5
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -118,7 +118,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->TITLE_BOTTOM_MARGIN:F
 
     .line 48
-    const v2, 0x7f0a03b7
+    const v2, 0x7f0a03ba
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -129,7 +129,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->DESCRIPTION_FONT_SIZE:F
 
     .line 49
-    const v2, 0x7f0a03b8
+    const v2, 0x7f0a03bb
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -140,7 +140,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->DESCRIPTION_LINE_SPACING:F
 
     .line 51
-    const v2, 0x7f0a03b5
+    const v2, 0x7f0a03b8
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -151,7 +151,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/widget/gl/TextBalloon;->CLOSE_BUTTON_PADDING:F
 
     .line 52
-    const v2, 0x7f0a03c1
+    const v2, 0x7f0a03c4
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

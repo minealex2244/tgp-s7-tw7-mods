@@ -72,7 +72,7 @@
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 42
-    const v0, 0x7f0a014b
+    const v0, 0x7f0a014e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -89,7 +89,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0a014d
+    const v0, 0x7f0a0150
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -102,7 +102,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_TYPE_TEXT_SIZE:I
 
     .line 45
-    const v0, 0x7f0a0342
+    const v0, 0x7f0a0345
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -113,7 +113,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_TYPE_TEXT_MARGIN:I
 
     .line 46
-    const v0, 0x7f0a014a
+    const v0, 0x7f0a014d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -124,7 +124,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_BADGE_IMAGE_WIDTH:I
 
     .line 47
-    const v0, 0x7f0a0149
+    const v0, 0x7f0a014c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -135,7 +135,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_BADGE_IMAGE_HEIGHT:I
 
     .line 48
-    const v0, 0x7f0a030b
+    const v0, 0x7f0a030e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -144,7 +144,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_DELETE_ICON_WIDTH:F
 
     .line 49
-    const v0, 0x7f0a030a
+    const v0, 0x7f0a030d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -153,7 +153,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_DELETE_ICON_TOP_MARGIN:F
 
     .line 50
-    const v0, 0x7f0a0309
+    const v0, 0x7f0a030c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -265,7 +265,7 @@
 
     .line 43
     :cond_0
-    const v0, 0x7f0a014c
+    const v0, 0x7f0a014f
 
     .line 44
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -1035,7 +1035,7 @@
     .line 315
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f090271
+    const v1, 0x7f090274
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

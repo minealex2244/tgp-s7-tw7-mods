@@ -166,7 +166,7 @@
     invoke-direct/range {v0 .. v10}, Lcom/sec/android/app/camera/menu/AbstractMenu;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;Lcom/sec/android/app/camera/interfaces/Engine;Lcom/sec/android/app/camera/menu/MenuManagerImpl;ILcom/samsung/android/glview/GLViewGroup;FFLcom/sec/android/app/camera/menu/MenuResourceDepot;IZ)V
 
     .line 59
-    const v0, 0x7f0a03d1
+    const v0, 0x7f0a03d4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -177,7 +177,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_NUMBER_POS_X:I
 
     .line 60
-    const v0, 0x7f0a03d2
+    const v0, 0x7f0a03d5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -188,7 +188,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_NUMBER_POS_Y:I
 
     .line 61
-    const v0, 0x7f0a03d3
+    const v0, 0x7f0a03d6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -199,7 +199,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_PROGRESS_WHEEL_POS_X:I
 
     .line 62
-    const v0, 0x7f0a03d4
+    const v0, 0x7f0a03d7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -210,7 +210,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_PROGRESS_WHEEL_POS_Y:I
 
     .line 63
-    const v0, 0x7f0a03d5
+    const v0, 0x7f0a03d8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -221,7 +221,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->PROGRESS_TIMER_WIDTH:I
 
     .line 64
-    const v0, 0x7f0a03cf
+    const v0, 0x7f0a03d2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -238,7 +238,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0a03cb
+    const v2, 0x7f0a03ce
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -250,7 +250,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f0a03cc
+    const v2, 0x7f0a03cf
 
     .line 66
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -263,7 +263,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f0a03cd
+    const v2, 0x7f0a03d0
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -276,7 +276,7 @@
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_INTERVAL_COUNT_POS_Y:[I
 
     .line 67
-    const v0, 0x7f0a03d0
+    const v0, 0x7f0a03d3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -287,7 +287,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_INTERVAL_COUNT_WIDTH:I
 
     .line 68
-    const v0, 0x7f0a03ce
+    const v0, 0x7f0a03d1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

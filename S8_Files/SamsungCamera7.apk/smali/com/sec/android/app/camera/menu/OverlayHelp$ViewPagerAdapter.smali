@@ -498,7 +498,7 @@
     .param p2, "position"    # I
 
     .prologue
-    const v12, 0x7f09029b
+    const v12, 0x7f09029e
 
     const v11, 0x7f0901ab
 
@@ -1061,7 +1061,7 @@
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->startOneHandZoomAnimation()V
 
     .line 1017
-    const v0, 0x7f09029c
+    const v0, 0x7f09029f
 
     invoke-virtual {v8, v0}, Landroid/widget/TextView;->setText(I)V
 
@@ -1077,7 +1077,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v2, 0x7f09029c
+    const v2, 0x7f09029f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

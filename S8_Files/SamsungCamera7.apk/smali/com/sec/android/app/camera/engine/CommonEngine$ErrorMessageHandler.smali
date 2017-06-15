@@ -33,17 +33,17 @@
     .param p1, "engine"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 9076
+    .line 9237
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 9077
+    .line 9238
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorMessageHandler;->mEngine:Ljava/lang/ref/WeakReference;
 
-    .line 9078
+    .line 9239
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 9082
+    .line 9243
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorMessageHandler;->mEngine:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -63,15 +63,15 @@
 
     check-cast v0, Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    .line 9083
+    .line 9244
     .local v0, "engine":Lcom/sec/android/app/camera/engine/CommonEngine;
     if-nez v0, :cond_0
 
-    .line 9089
+    .line 9250
     :goto_0
     return-void
 
-    .line 9086
+    .line 9247
     :cond_0
     const-string v1, "CommonEngine"
 
@@ -103,9 +103,9 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9088
+    .line 9249
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v1
 

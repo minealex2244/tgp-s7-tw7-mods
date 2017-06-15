@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 7334
+    .line 7347
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$29;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iput-boolean p2, p0, Lcom/sec/android/app/camera/Camera$29;->val$isStart:Z
@@ -45,23 +45,23 @@
     .locals 3
 
     .prologue
-    .line 7337
+    .line 7350
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 7338
+    .line 7351
     .local v0, "intent":Landroid/content/Intent;
     iget-boolean v1, p0, Lcom/sec/android/app/camera/Camera$29;->val$isStart:Z
 
     if-eqz v1, :cond_1
 
-    .line 7339
+    .line 7352
     const-string v1, "com.sec.android.app.camera.ACTION_CAMERA_START"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 7340
+    .line 7353
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$29;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->getApplicationContext()Landroid/content/Context;
@@ -74,23 +74,23 @@
 
     if-eqz v1, :cond_0
 
-    .line 7341
+    .line 7354
     const-string v1, "secure-camera"
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 7348
+    .line 7361
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$29;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/Camera;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 7349
+    .line 7362
     return-void
 
-    .line 7343
+    .line 7356
     :cond_0
     const-string v1, "secure-camera"
 
@@ -100,7 +100,7 @@
 
     goto :goto_0
 
-    .line 7346
+    .line 7359
     :cond_1
     const-string v1, "com.sec.android.app.camera.ACTION_CAMERA_STOP"
 

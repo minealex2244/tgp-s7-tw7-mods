@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/CameraDialog;
 
     .prologue
-    .line 538
+    .line 539
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$3;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,13 +43,13 @@
     .param p2, "checked"    # Z
 
     .prologue
-    .line 541
+    .line 542
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$3;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->setDialogCheckBoxValueForLocationTag(Z)V
     invoke-static {v0, p2}, Lcom/sec/android/app/camera/CameraDialog;->access$400(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
-    .line 542
+    .line 543
     const-string v2, "9054"
 
     if-eqz p2, :cond_0
@@ -59,10 +59,10 @@
     :goto_0
     invoke-static {v2, v0, v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;J)V
 
-    .line 543
+    .line 544
     return-void
 
-    .line 542
+    .line 543
     :cond_0
     const-wide/16 v0, 0x0
 

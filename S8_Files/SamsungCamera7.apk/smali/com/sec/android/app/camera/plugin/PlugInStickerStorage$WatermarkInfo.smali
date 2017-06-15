@@ -41,7 +41,7 @@
     .param p10, "commandId"    # I
 
     .prologue
-    .line 449
+    .line 470
     move-object v0, p0
 
     move-object v1, p1
@@ -56,21 +56,21 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
-    .line 451
+    .line 472
     iput p4, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;->previewResourceId:I
 
-    .line 452
+    .line 473
     iput p5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;->previewResourceWidth:I
 
-    .line 453
+    .line 474
     iput p6, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;->previewResourceHeight:I
 
-    .line 454
+    .line 475
     iput p7, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;->captureResourceId:I
 
-    .line 455
+    .line 476
     iput-object p8, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;->watermarkTextInfo:[Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
 
-    .line 456
+    .line 477
     return-void
 .end method

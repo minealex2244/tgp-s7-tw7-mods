@@ -52,7 +52,7 @@
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 38
-    const v0, 0x7f0a010e
+    const v0, 0x7f0a0111
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -63,7 +63,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/DualEffectItem;->EFFECT_TYPE_BUTTON_WIDTH:I
 
     .line 39
-    const v0, 0x7f0a010d
+    const v0, 0x7f0a0110
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -74,7 +74,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/DualEffectItem;->EFFECT_TYPE_BUTTON_HEIGHT:I
 
     .line 40
-    const v0, 0x7f0a0021
+    const v0, 0x7f0a0023
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -85,7 +85,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/DualEffectItem;->EFFECT_TYPE_TEXT_Y:I
 
     .line 41
-    const v0, 0x7f0a0147
+    const v0, 0x7f0a014a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -96,7 +96,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/DualEffectItem;->EFFECT_TYPE_TEXT_MARGIN:I
 
     .line 42
-    const v0, 0x7f0a0148
+    const v0, 0x7f0a014b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -107,7 +107,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/DualEffectItem;->EFFECT_TYPE_TEXT_WIDTH:I
 
     .line 43
-    const v0, 0x7f0a0020
+    const v0, 0x7f0a0022
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -118,7 +118,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/DualEffectItem;->EFFECT_TYPE_TEXT_HEIGHT:I
 
     .line 44
-    const v0, 0x7f0a001f
+    const v0, 0x7f0a0021
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

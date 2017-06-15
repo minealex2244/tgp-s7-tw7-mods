@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/ProSlider;
 
     .prologue
-    .line 484
+    .line 493
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "step"    # I
 
     .prologue
-    .line 487
+    .line 496
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProSliderValueSelectListener:Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;
@@ -58,7 +58,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;->onKelvinValueMenuSelect(I)V
 
-    .line 488
+    .line 497
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
@@ -72,12 +72,12 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider;->updateKelvinSliderValue(I)V
 
-    .line 489
+    .line 498
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->restartSliderMenuTimer()V
 
-    .line 490
+    .line 499
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->isTtsEnabled()Z
@@ -87,7 +87,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 491
+    .line 500
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$1;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -131,7 +131,7 @@
     # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->speakTtsString(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$900(Lcom/sec/android/app/camera/menu/ProSlider;Ljava/lang/String;)V
 
-    .line 493
+    .line 502
     :cond_0
     return-void
 .end method

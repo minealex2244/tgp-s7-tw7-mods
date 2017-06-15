@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 3950
+    .line 3966
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,19 +41,19 @@
     .locals 6
 
     .prologue
-    .line 3953
+    .line 3969
     const-string v2, "Camera7"
 
     const-string v3, "updateLatestMedia : updateLatestMedia***start"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3954
+    .line 3970
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 3955
+    .line 3971
     .local v0, "startTime":J
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -64,7 +64,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3956
+    .line 3972
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     new-instance v3, Lcom/sec/android/app/camera/LatestMediaContent;
@@ -84,7 +84,7 @@
     # setter for: Lcom/sec/android/app/camera/Camera;->mLatestMedia:Lcom/sec/android/app/camera/LatestMediaContent;
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/Camera;->access$3002(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/LatestMediaContent;)Lcom/sec/android/app/camera/LatestMediaContent;
 
-    .line 3958
+    .line 3974
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -95,7 +95,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 3959
+    .line 3975
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -109,14 +109,14 @@
 
     if-eqz v2, :cond_2
 
-    .line 3960
+    .line 3976
     const-string v2, "Camera7"
 
     const-string v3, "updateLatestMedia: Last shot is Recording"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3961
+    .line 3977
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mLatestMedia:Lcom/sec/android/app/camera/LatestMediaContent;
@@ -148,7 +148,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/sec/android/app/camera/LatestMediaContent;->updateLatestVideo(ZZ)V
 
-    .line 3967
+    .line 3983
     :goto_0
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -163,7 +163,7 @@
 
     if-nez v2, :cond_3
 
-    .line 3968
+    .line 3984
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -184,7 +184,7 @@
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setLastContentOrientation(I)V
 
-    .line 3972
+    .line 3988
     :goto_1
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -206,7 +206,7 @@
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setLastContentUri(Landroid/net/Uri;)V
 
-    .line 3974
+    .line 3990
     :cond_1
     const-string v2, "Camera7"
 
@@ -242,10 +242,10 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3975
+    .line 3991
     return-void
 
-    .line 3963
+    .line 3979
     :cond_2
     const-string v2, "Camera7"
 
@@ -253,7 +253,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3964
+    .line 3980
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mLatestMedia:Lcom/sec/android/app/camera/LatestMediaContent;
@@ -287,7 +287,7 @@
 
     goto :goto_0
 
-    .line 3970
+    .line 3986
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 

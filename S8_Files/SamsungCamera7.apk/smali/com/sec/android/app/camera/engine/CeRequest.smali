@@ -122,6 +122,8 @@
 
 .field protected static final CE_START_MOTION_WIDE_SELFIE_COMPLETED:I = 0x16
 
+.field protected static final CE_START_MULTIFRMAE_MODE:I = 0x32
+
 .field protected static final CE_START_MULTI_TRACK_RECORDING:I = 0x79
 
 .field protected static final CE_START_PANORAMA:I = 0x10
@@ -147,8 +149,6 @@
 .field protected static final CE_START_SHUTTER_TIMER:I = 0x9
 
 .field protected static final CE_START_SHUTTER_TIMER_COPMLETED:I = 0x4
-
-.field protected static final CE_START_SR_ZOOM_CAPTURE:I = 0x32
 
 .field protected static final CE_START_VIDEO_RECORDING:I = 0x66
 

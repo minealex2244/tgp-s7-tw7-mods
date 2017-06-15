@@ -314,9 +314,9 @@
     .param p3, "height"    # I
 
     .prologue
-    const v6, 0x7f0a02aa
+    const v6, 0x7f0a02ae
 
-    const v5, 0x7f0a029e
+    const v5, 0x7f0a02a2
 
     const/4 v4, 0x2
 
@@ -375,7 +375,7 @@
     if-ne v1, v2, :cond_3
 
     .line 607
-    const v1, 0x7f0a02a8
+    const v1, 0x7f0a02ac
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -393,7 +393,7 @@
     iput v3, p0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu;->mSimpleQuickSettingY:I
 
     .line 614
-    const v1, 0x7f0a02a0
+    const v1, 0x7f0a02a4
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -458,7 +458,7 @@
 
     .line 631
     :goto_1
-    const v1, 0x7f0a01ef
+    const v1, 0x7f0a01f1
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -469,7 +469,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu;->mShutterButtonExpandArea:I
 
     .line 632
-    const v1, 0x7f0a02a1
+    const v1, 0x7f0a02a5
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -489,7 +489,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu;->mRecordingButtonWidth:I
 
     .line 634
-    const v1, 0x7f0a029d
+    const v1, 0x7f0a02a1
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -696,7 +696,7 @@
     .line 609
     .end local v0    # "baseMenuWeight":I
     :cond_3
-    const v1, 0x7f0a02a7
+    const v1, 0x7f0a02ab
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -885,7 +885,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0901f6
+    const v2, 0x7f0901f9
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1022,7 +1022,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090226
+    const v2, 0x7f090229
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1228,7 +1228,7 @@
     .param p3, "height"    # I
 
     .prologue
-    const v5, 0x7f0a02aa
+    const v5, 0x7f0a02ae
 
     .line 722
     iget v2, p0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu;->mScreenOrientation:I

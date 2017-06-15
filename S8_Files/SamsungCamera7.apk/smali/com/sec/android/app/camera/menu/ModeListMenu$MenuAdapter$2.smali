@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     .prologue
-    .line 1633
+    .line 1634
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 1636
+    .line 1637
     check-cast p1, Lcom/sec/android/app/camera/widget/gl/ModeItem;
 
     .end local p1    # "view":Lcom/samsung/android/glview/GLView;
@@ -68,16 +68,16 @@
 
     move-result-object v0
 
-    .line 1637
+    .line 1638
     .local v0, "modeDetail":Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 1638
+    .line 1639
     const-string v1, "1202"
 
     invoke-static {v1, v0}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1640
+    .line 1641
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
@@ -88,7 +88,7 @@
     # setter for: Lcom/sec/android/app/camera/menu/ModeListMenu;->mIsNeedShowBaseMenu:Z
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/menu/ModeListMenu;->access$702(Lcom/sec/android/app/camera/menu/ModeListMenu;Z)Z
 
-    .line 1641
+    .line 1642
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeListMenu;
@@ -104,13 +104,13 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/menu/ModeListMenu;->setOneTimeHideAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1642
+    .line 1643
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$2;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeListMenu;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/menu/ModeListMenu;->hideMenu()V
 
-    .line 1643
+    .line 1644
     return-void
 .end method

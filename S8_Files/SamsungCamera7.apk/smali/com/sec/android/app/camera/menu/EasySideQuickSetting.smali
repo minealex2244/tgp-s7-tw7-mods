@@ -15,6 +15,8 @@
 
 .field private final MENU_HEIGHT:I
 
+.field private final NORMAL_RATIO_PREVIEW_LEFT:I
+
 .field private mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
 .field private mCurrentAddItemList:Ljava/util/ArrayList;
@@ -58,7 +60,7 @@
     .param p5, "height"    # F
 
     .prologue
-    .line 57
+    .line 58
     invoke-interface/range {p1 .. p1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v3
@@ -76,7 +78,7 @@
     invoke-direct/range {v2 .. v7}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 42
-    const v2, 0x7f0a029b
+    const v2, 0x7f0a029f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -89,7 +91,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->ITEM_WIDTH:I
 
     .line 43
-    const v2, 0x7f0a029a
+    const v2, 0x7f0a029e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -102,7 +104,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->ITEM_HEIGHT:I
 
     .line 44
-    const v2, 0x7f0a012e
+    const v2, 0x7f0a0055
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -131,7 +133,20 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->MENU_HEIGHT:I
 
-    .line 47
+    .line 46
+    const v2, 0x7f0a000c
+
+    invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v2
+
+    float-to-int v2, v2
+
+    move-object/from16 v0, p0
+
+    iput v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->NORMAL_RATIO_PREVIEW_LEFT:I
+
+    .line 48
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -140,7 +155,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
-    .line 48
+    .line 49
     new-instance v2, Landroid/util/SparseArray;
 
     invoke-direct {v2}, Landroid/util/SparseArray;-><init>()V
@@ -149,21 +164,21 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mQuickMenuItemList:Landroid/util/SparseArray;
 
-    .line 59
+    .line 60
     move-object/from16 v0, p1
 
     move-object/from16 v1, p0
 
     iput-object v0, v1, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 62
+    .line 63
     const/4 v2, 0x3
 
     invoke-static {v2}, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->get(I)Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
     move-result-object v34
 
-    .line 63
+    .line 64
     .local v34, "resIDsFlash":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     new-instance v8, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
@@ -217,7 +232,7 @@
 
     invoke-direct {v8, v2}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;-><init>([I)V
 
-    .line 65
+    .line 66
     .local v8, "bundleFlash":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     const/4 v2, 0x3
 
@@ -233,7 +248,7 @@
 
     move-result-object v9
 
-    .line 67
+    .line 68
     .local v9, "cmdFlash":Lcom/sec/android/app/camera/command/MenuCommand;
     new-instance v2, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
@@ -241,7 +256,21 @@
 
     iget-object v3, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const/4 v4, 0x0
+    move-object/from16 v0, p0
+
+    iget v4, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->NORMAL_RATIO_PREVIEW_LEFT:I
+
+    move-object/from16 v0, p0
+
+    iget v5, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->ITEM_HEIGHT:I
+
+    sub-int/2addr v4, v5
+
+    int-to-float v4, v4
+
+    const/high16 v5, 0x40000000    # 2.0f
+
+    div-float/2addr v4, v5
 
     const/4 v5, 0x0
 
@@ -263,7 +292,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mFlashButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
-    .line 68
+    .line 69
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mFlashButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
@@ -272,7 +301,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setVisibility(I)V
 
-    .line 69
+    .line 70
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mQuickMenuItemList:Landroid/util/SparseArray;
@@ -287,14 +316,14 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 71
+    .line 72
     const/16 v2, 0xaa
 
     invoke-static {v2}, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->get(I)Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
     move-result-object v35
 
-    .line 72
+    .line 73
     .local v35, "resIDsFrontFlash":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     new-instance v16, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
@@ -350,7 +379,7 @@
 
     invoke-direct {v0, v2}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;-><init>([I)V
 
-    .line 73
+    .line 74
     .local v16, "bundleFrontFlash":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     const/16 v2, 0xaa
 
@@ -366,7 +395,7 @@
 
     move-result-object v17
 
-    .line 75
+    .line 76
     .local v17, "cmdFrontFlash":Lcom/sec/android/app/camera/command/MenuCommand;
     new-instance v10, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
@@ -374,7 +403,21 @@
 
     iget-object v11, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const/4 v12, 0x0
+    move-object/from16 v0, p0
+
+    iget v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->NORMAL_RATIO_PREVIEW_LEFT:I
+
+    move-object/from16 v0, p0
+
+    iget v3, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->ITEM_HEIGHT:I
+
+    sub-int/2addr v2, v3
+
+    int-to-float v2, v2
+
+    const/high16 v3, 0x40000000    # 2.0f
+
+    div-float v12, v2, v3
 
     const/4 v13, 0x0
 
@@ -396,7 +439,7 @@
 
     iput-object v10, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mFrontFlashButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
-    .line 76
+    .line 77
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mFrontFlashButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
@@ -405,7 +448,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setVisibility(I)V
 
-    .line 77
+    .line 78
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mQuickMenuItemList:Landroid/util/SparseArray;
@@ -420,7 +463,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 80
+    .line 81
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -453,14 +496,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 81
+    .line 82
     const/16 v2, 0xbc3
 
     invoke-static {v2}, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->get(I)Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
     move-result-object v36
 
-    .line 82
+    .line 83
     .local v36, "resIDsHelp":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     new-instance v24, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
@@ -516,7 +559,7 @@
 
     invoke-direct {v0, v2}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;-><init>([I)V
 
-    .line 85
+    .line 86
     .local v24, "bundleHelp":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     const/16 v2, 0xbc3
 
@@ -532,7 +575,7 @@
 
     move-result-object v25
 
-    .line 86
+    .line 87
     .local v25, "cmdHelp":Lcom/sec/android/app/camera/command/MenuCommand;
     new-instance v18, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
@@ -542,7 +585,21 @@
 
     move-object/from16 v19, v0
 
-    const/16 v20, 0x0
+    move-object/from16 v0, p0
+
+    iget v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->NORMAL_RATIO_PREVIEW_LEFT:I
+
+    move-object/from16 v0, p0
+
+    iget v3, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->ITEM_HEIGHT:I
+
+    sub-int/2addr v2, v3
+
+    int-to-float v2, v2
+
+    const/high16 v3, 0x40000000    # 2.0f
+
+    div-float v20, v2, v3
 
     move-object/from16 v0, p0
 
@@ -584,7 +641,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mHelpButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
-    .line 87
+    .line 88
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mHelpButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
@@ -593,7 +650,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setVisibility(I)V
 
-    .line 91
+    .line 92
     .end local v24    # "bundleHelp":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     .end local v25    # "cmdHelp":Lcom/sec/android/app/camera/command/MenuCommand;
     .end local v36    # "resIDsHelp":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
@@ -604,7 +661,7 @@
 
     move-result-object v37
 
-    .line 92
+    .line 93
     .local v37, "resIDsSwitchCamera":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     new-instance v32, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
@@ -660,7 +717,7 @@
 
     invoke-direct {v0, v2}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;-><init>([I)V
 
-    .line 93
+    .line 94
     .local v32, "bundleSwitchCamera":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     const/16 v2, 0x24
 
@@ -676,7 +733,7 @@
 
     move-result-object v33
 
-    .line 95
+    .line 96
     .local v33, "cmdSwitchCamera":Lcom/sec/android/app/camera/command/MenuCommand;
     new-instance v26, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
@@ -686,7 +743,21 @@
 
     move-object/from16 v27, v0
 
-    const/16 v28, 0x0
+    move-object/from16 v0, p0
+
+    iget v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->NORMAL_RATIO_PREVIEW_LEFT:I
+
+    move-object/from16 v0, p0
+
+    iget v3, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->ITEM_HEIGHT:I
+
+    sub-int/2addr v2, v3
+
+    int-to-float v2, v2
+
+    const/high16 v3, 0x40000000    # 2.0f
+
+    div-float v28, v2, v3
 
     move-object/from16 v0, p0
 
@@ -726,7 +797,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mSwitchCameraButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
-    .line 96
+    .line 97
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mSwitchCameraButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
@@ -735,7 +806,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setVisibility(I)V
 
-    .line 97
+    .line 98
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -744,7 +815,7 @@
 
     invoke-interface {v2, v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->registerExtraInfoChangeListener(Lcom/sec/android/app/camera/interfaces/CameraContext$ExtraInfoChangedListener;)V
 
-    .line 98
+    .line 99
     return-void
 .end method
 
@@ -752,7 +823,7 @@
     .locals 3
 
     .prologue
-    .line 167
+    .line 168
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -765,7 +836,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 168
+    .line 169
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -778,7 +849,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setAlpha(F)V
 
-    .line 169
+    .line 170
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -791,12 +862,12 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setVisibility(I)V
 
-    .line 167
+    .line 168
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 171
+    .line 172
     :cond_0
     return-void
 .end method
@@ -807,20 +878,20 @@
     .locals 1
 
     .prologue
-    .line 102
-    invoke-super {p0}, Lcom/samsung/android/glview/GLViewGroup;->clear()V
-
     .line 103
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    if-eqz v0, :cond_0
+    invoke-super {p0}, Lcom/samsung/android/glview/GLViewGroup;->clear()V
 
     .line 104
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
+    if-eqz v0, :cond_0
+
+    .line 105
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->unregisterExtraInfoChangedListener(Lcom/sec/android/app/camera/interfaces/CameraContext$ExtraInfoChangedListener;)V
 
-    .line 106
+    .line 107
     :cond_0
     return-void
 .end method
@@ -829,7 +900,7 @@
     .locals 3
 
     .prologue
-    .line 109
+    .line 110
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->isEmpty()Z
@@ -838,7 +909,7 @@
 
     if-nez v2, :cond_1
 
-    .line 110
+    .line 111
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -851,7 +922,7 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 111
+    .line 112
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -860,23 +931,23 @@
 
     check-cast v1, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
-    .line 112
+    .line 113
     .local v1, "previousItem":Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 110
+    .line 111
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 114
+    .line 115
     .end local v1    # "previousItem":Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    .line 116
+    .line 117
     .end local v0    # "i":I
     :cond_1
     return-void
@@ -894,7 +965,7 @@
 
     const/4 v3, 0x1
 
-    .line 119
+    .line 120
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mQuickMenuItemList:Landroid/util/SparseArray;
 
     invoke-static {p1}, Lcom/sec/android/app/camera/command/CommandIdMap;->getCommandId(I)I
@@ -907,7 +978,7 @@
 
     check-cast v0, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
-    .line 120
+    .line 121
     .local v0, "item":Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
     if-eqz v0, :cond_0
 
@@ -917,12 +988,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 138
+    .line 139
     :cond_0
     :goto_0
     return-void
 
-    .line 123
+    .line 124
     :cond_1
     const/4 v1, 0x3
 
@@ -932,44 +1003,44 @@
 
     if-ne p1, v1, :cond_5
 
-    .line 124
+    .line 125
     :cond_2
     if-ne p2, v5, :cond_4
 
-    .line 125
+    .line 126
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setSelected(Z)V
 
-    .line 136
+    .line 137
     :cond_3
     :goto_1
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->resetTint()V
 
-    .line 137
+    .line 138
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->updateLayout(Z)V
 
     goto :goto_0
 
-    .line 127
+    .line 128
     :cond_4
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setSelected(Z)V
 
     goto :goto_1
 
-    .line 129
+    .line 130
     :cond_5
     const/16 v1, 0xc
 
     if-ne p1, v1, :cond_3
 
-    .line 130
+    .line 131
     if-ne p2, v5, :cond_6
 
-    .line 131
+    .line 132
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setSelected(Z)V
 
     goto :goto_1
 
-    .line 133
+    .line 134
     :cond_6
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setSelected(Z)V
 
@@ -981,10 +1052,10 @@
     .param p1, "ids"    # [I
 
     .prologue
-    .line 142
+    .line 143
     move-object v1, p1
 
-    .line 144
+    .line 145
     .local v1, "commandIDs":[I
     array-length v4, v1
 
@@ -995,7 +1066,7 @@
 
     aget v0, v1, v3
 
-    .line 145
+    .line 146
     .local v0, "commandID":I
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mQuickMenuItemList:Landroid/util/SparseArray;
 
@@ -1005,35 +1076,35 @@
 
     check-cast v2, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
-    .line 146
+    .line 147
     .local v2, "item":Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
     if-eqz v2, :cond_0
 
-    .line 147
+    .line 148
     invoke-virtual {v2}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->refreshItem()V
 
-    .line 148
+    .line 149
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
 
     move-result v5
 
     invoke-virtual {v2, v5}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setOrientation(I)V
 
-    .line 149
+    .line 150
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 150
+    .line 151
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 144
+    .line 145
     :cond_0
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 154
+    .line 155
     .end local v0    # "commandID":I
     .end local v2    # "item":Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
     :cond_1
@@ -1065,7 +1136,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 155
+    .line 156
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -1078,19 +1149,19 @@
 
     if-nez v3, :cond_2
 
-    .line 156
+    .line 157
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mHelpButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 157
+    .line 158
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mHelpButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 160
+    .line 161
     :cond_2
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
@@ -1098,14 +1169,14 @@
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 161
+    .line 162
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mSwitchCameraButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 163
+    .line 164
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->showQuickMenuItems()V
 
-    .line 164
+    .line 165
     return-void
 .end method

@@ -141,8 +141,6 @@
 
 .field public static final NLG_STRING_PICTURE_SIZE:Ljava/lang/String; = "PictureSize"
 
-.field public static final NLG_STRING_PRO_FILTER:Ljava/lang/String; = "Profilter"
-
 .field public static final NLG_STRING_PRO_SETTING:Ljava/lang/String; = "ProSetting"
 
 .field public static final NLG_STRING_QUICK_LAUNCH_SELECT_SETTING:Ljava/lang/String; = "QuickLaunchSelectSetting"
@@ -152,8 +150,6 @@
 .field public static final NLG_STRING_REAR_MODE:Ljava/lang/String; = "RearMode"
 
 .field public static final NLG_STRING_SELFIE_MODE:Ljava/lang/String; = "SelfieMode"
-
-.field public static final NLG_STRING_SETTING:Ljava/lang/String; = "Setting"
 
 .field public static final NLG_STRING_TIMER_SETTING:Ljava/lang/String; = "TimerSetting"
 
@@ -254,14 +250,14 @@
     .locals 4
 
     .prologue
-    .line 161
+    .line 158
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     sput-object v0, Lcom/sec/android/app/camera/executor/NlgIdMap;->mNlgScreenParamDepot:Landroid/util/SparseArray;
 
-    .line 165
+    .line 162
     const/4 v0, 0x1
 
     const-string v1, "Mode"
@@ -272,7 +268,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 166
+    .line 163
     const/4 v0, 0x2
 
     const-string v1, "Mode"
@@ -283,7 +279,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 167
+    .line 164
     const/4 v0, 0x4
 
     const-string v1, "Mode"
@@ -294,7 +290,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 168
+    .line 165
     const/4 v0, 0x5
 
     const-string v1, "Mode"
@@ -305,7 +301,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 169
+    .line 166
     const/4 v0, 0x6
 
     const-string v1, "Mode"
@@ -316,7 +312,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 170
+    .line 167
     const/4 v0, 0x7
 
     const-string v1, "Mode"
@@ -327,7 +323,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 171
+    .line 168
     const/16 v0, 0x8
 
     const-string v1, "Mode"
@@ -338,7 +334,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 172
+    .line 169
     const/16 v0, 0x9
 
     const-string v1, "Mode"
@@ -349,7 +345,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 173
+    .line 170
     const/16 v0, 0xa
 
     const-string v1, "CurrentMode"
@@ -360,7 +356,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 174
+    .line 171
     const/16 v0, 0xb
 
     const-string v1, "CurrentMode"
@@ -371,7 +367,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 175
+    .line 172
     const/16 v0, 0xc
 
     const-string v1, "Mode"
@@ -382,7 +378,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 176
+    .line 173
     const/16 v0, 0xd
 
     const-string v1, "Mode"
@@ -393,7 +389,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 177
+    .line 174
     const/4 v0, 0x3
 
     const-string v1, "Mode"
@@ -404,7 +400,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 178
+    .line 175
     const/16 v0, 0xe
 
     const-string v1, "CurrentMode"
@@ -415,7 +411,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 179
+    .line 176
     const/16 v0, 0xf
 
     const-string v1, "CurrentMode"
@@ -426,7 +422,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 180
+    .line 177
     const/16 v0, 0x10
 
     const-string v1, "CameraMode"
@@ -437,7 +433,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 181
+    .line 178
     const/16 v0, 0x11
 
     const-string v1, "CameraMode"
@@ -448,7 +444,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 183
+    .line 180
     const/16 v0, 0x12
 
     const-string v1, "Filter"
@@ -459,7 +455,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 184
+    .line 181
     const/16 v0, 0x13
 
     const-string v1, "Filter"
@@ -470,7 +466,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 185
+    .line 182
     const/16 v0, 0x14
 
     const-string v1, "Filter"
@@ -481,7 +477,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 186
+    .line 183
     const/16 v0, 0x15
 
     const-string v1, "Filter"
@@ -492,7 +488,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 188
+    .line 185
     const/16 v0, 0x2a
 
     const-string v1, "ProSetting"
@@ -503,7 +499,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 189
+    .line 186
     const/16 v0, 0x2b
 
     const-string v1, "ProSetting"
@@ -514,7 +510,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 190
+    .line 187
     const/16 v0, 0x2c
 
     const-string v1, "ProSetting"
@@ -525,7 +521,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 191
+    .line 188
     const/16 v0, 0x2d
 
     const-string v1, "ProSetting"
@@ -536,7 +532,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 192
+    .line 189
     const/16 v0, 0x2e
 
     const-string v1, "ProSetting"
@@ -547,7 +543,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 194
+    .line 191
     const/16 v0, 0x17
 
     const-string v1, "CurrentFilter"
@@ -558,7 +554,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 195
+    .line 192
     const/16 v0, 0x16
 
     const-string v1, "CurrentFilter"
@@ -569,7 +565,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 196
+    .line 193
     const/16 v0, 0x18
 
     const-string v1, "CurrentFilter"
@@ -580,7 +576,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 197
+    .line 194
     const/16 v0, 0x19
 
     const-string v1, "CurrentFilter"
@@ -591,7 +587,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 199
+    .line 196
     const/16 v0, 0x1a
 
     const-string v1, "PictureSize"
@@ -602,7 +598,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 200
+    .line 197
     const/16 v0, 0x1b
 
     const-string v1, "PictureSize"
@@ -613,7 +609,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 201
+    .line 198
     const/16 v0, 0x1c
 
     const-string v1, "PictureSize"
@@ -624,7 +620,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 202
+    .line 199
     const/16 v0, 0x1d
 
     const-string v1, "PictureSize"
@@ -635,7 +631,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 203
+    .line 200
     const/16 v0, 0x1e
 
     const-string v1, "PictureSize"
@@ -646,7 +642,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 205
+    .line 202
     const/16 v0, 0x1f
 
     const-string v1, "VideoSize"
@@ -657,7 +653,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 206
+    .line 203
     const/16 v0, 0x20
 
     const-string v1, "VideoSize"
@@ -668,7 +664,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 207
+    .line 204
     const/16 v0, 0x21
 
     const-string v1, "VideoSize"
@@ -679,7 +675,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 208
+    .line 205
     const/16 v0, 0x22
 
     const-string v1, "VideoSize"
@@ -690,7 +686,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 209
+    .line 206
     const/16 v0, 0x2f
 
     const-string v1, "VideoSize"
@@ -701,7 +697,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 211
+    .line 208
     const/16 v0, 0x23
 
     const-string v1, "CameraMode"
@@ -712,7 +708,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 212
+    .line 209
     const/16 v0, 0x24
 
     const-string v1, "CameraMode"
@@ -723,7 +719,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 213
+    .line 210
     const/16 v0, 0x25
 
     const-string v1, "FrontMode"
@@ -734,7 +730,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 214
+    .line 211
     const/16 v0, 0x26
 
     const-string v1, "FrontMode"
@@ -745,7 +741,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 215
+    .line 212
     const/16 v0, 0x28
 
     const-string v1, "RearMode"
@@ -756,7 +752,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 216
+    .line 213
     const/16 v0, 0x27
 
     const-string v1, "RearMode"
@@ -767,7 +763,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 218
+    .line 215
     const/16 v0, 0x29
 
     const-string v1, "MemoryCard"
@@ -778,7 +774,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 220
+    .line 217
     const/16 v0, 0x30
 
     const-string v1, "SelfieMode"
@@ -789,7 +785,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 221
+    .line 218
     const/16 v0, 0x31
 
     const-string v1, "SelfieMode"
@@ -800,7 +796,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/sec/android/app/camera/executor/NlgIdMap;->add(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 223
+    .line 220
     return-void
 .end method
 
@@ -822,7 +818,7 @@
     .param p3, "attrValue"    # Ljava/lang/String;
 
     .prologue
-    .line 519
+    .line 507
     sget-object v0, Lcom/sec/android/app/camera/executor/NlgIdMap;->mNlgScreenParamDepot:Landroid/util/SparseArray;
 
     new-instance v1, Lcom/sec/android/app/camera/executor/NlgIdMap$ScreenParam;
@@ -831,7 +827,7 @@
 
     invoke-virtual {v0, p0, v1}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
-    .line 520
+    .line 508
     return-void
 .end method
 
@@ -840,7 +836,7 @@
     .param p0, "stateID"    # I
 
     .prologue
-    .line 226
+    .line 223
     const-string v0, "NlgIdMap"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -863,95 +859,95 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 227
+    .line 224
     packed-switch p0, :pswitch_data_0
 
-    .line 391
+    .line 378
     :pswitch_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 229
+    .line 226
     :pswitch_1
     const/4 v0, 0x3
 
     goto :goto_0
 
-    .line 231
+    .line 228
     :pswitch_2
     const/16 v0, 0xd
 
     goto :goto_0
 
-    .line 268
+    .line 265
     :pswitch_3
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 326
+    .line 317
     :pswitch_4
     const/4 v0, 0x2
 
     goto :goto_0
 
-    .line 351
+    .line 338
     :pswitch_5
     const/16 v0, 0xc
 
     goto :goto_0
 
-    .line 365
+    .line 352
     :pswitch_6
     const/4 v0, 0x4
 
     goto :goto_0
 
-    .line 369
+    .line 356
     :pswitch_7
     const/4 v0, 0x5
 
     goto :goto_0
 
-    .line 372
+    .line 359
     :pswitch_8
     const/4 v0, 0x6
 
     goto :goto_0
 
-    .line 376
+    .line 363
     :pswitch_9
     const/4 v0, 0x7
 
     goto :goto_0
 
-    .line 380
+    .line 367
     :pswitch_a
     const/16 v0, 0xa
 
     goto :goto_0
 
-    .line 383
+    .line 370
     :pswitch_b
     const/16 v0, 0x9
 
     goto :goto_0
 
-    .line 386
+    .line 373
     :pswitch_c
     const/16 v0, 0x8
 
     goto :goto_0
 
-    .line 389
+    .line 376
     :pswitch_d
     const/16 v0, 0xb
 
     goto :goto_0
 
-    .line 227
+    .line 224
     nop
 
     :pswitch_data_0
@@ -1019,20 +1015,20 @@
         :pswitch_4
         :pswitch_4
         :pswitch_4
-        :pswitch_5
-        :pswitch_5
         :pswitch_4
+        :pswitch_4
+        :pswitch_6
+        :pswitch_8
+        :pswitch_8
+        :pswitch_6
+        :pswitch_5
+        :pswitch_5
+        :pswitch_5
         :pswitch_4
         :pswitch_4
         :pswitch_4
         :pswitch_0
         :pswitch_0
-        :pswitch_5
-        :pswitch_5
-        :pswitch_6
-        :pswitch_8
-        :pswitch_8
-        :pswitch_6
         :pswitch_6
         :pswitch_0
         :pswitch_6
@@ -1077,10 +1073,10 @@
         :pswitch_9
         :pswitch_9
         :pswitch_7
-        :pswitch_4
-        :pswitch_4
-        :pswitch_4
-        :pswitch_4
+        :pswitch_0
+        :pswitch_0
+        :pswitch_3
+        :pswitch_0
         :pswitch_4
         :pswitch_4
         :pswitch_5
@@ -1122,10 +1118,6 @@
         :pswitch_6
         :pswitch_3
         :pswitch_3
-        :pswitch_0
-        :pswitch_0
-        :pswitch_3
-        :pswitch_0
         :pswitch_3
         :pswitch_0
         :pswitch_5
@@ -1136,12 +1128,6 @@
         :pswitch_5
         :pswitch_0
         :pswitch_3
-        :pswitch_5
-        :pswitch_5
-        :pswitch_5
-        :pswitch_4
-        :pswitch_4
-        :pswitch_4
     .end packed-switch
 .end method
 
@@ -1150,7 +1136,7 @@
     .param p0, "id"    # I
 
     .prologue
-    .line 396
+    .line 383
     sget-object v0, Lcom/sec/android/app/camera/executor/NlgIdMap;->mNlgScreenParamDepot:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -1163,25 +1149,29 @@
 .end method
 
 .method public static getNlgResultParam(Landroid/content/Context;Ljava/lang/String;II)Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;
-    .locals 4
+    .locals 7
     .param p0, "context"    # Landroid/content/Context;
     .param p1, "paramName"    # Ljava/lang/String;
     .param p2, "menuId"    # I
     .param p3, "modeId"    # I
 
     .prologue
-    .line 400
+    const/4 v6, 0x0
+
+    const/4 v5, 0x1
+
+    .line 387
     invoke-static {p2, p3}, Lcom/sec/android/app/camera/command/CommandIdMap;->getCommandId(II)I
 
     move-result v0
 
-    .line 401
+    .line 388
     .local v0, "commandId":I
     invoke-static {v0}, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->get(I)Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
     move-result-object v1
 
-    .line 402
+    .line 389
     .local v1, "idSet":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     iget v3, v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
@@ -1189,13 +1179,60 @@
 
     move-result-object v2
 
-    .line 404
+    .line 390
     .local v2, "value":Ljava/lang/String;
+    const/16 v3, 0xfa6
+
+    if-ne v0, v3, :cond_1
+
+    .line 391
+    iget v3, v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
+
+    new-array v4, v5, [Ljava/lang/Object;
+
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    aput-object v5, v4, v6
+
+    invoke-virtual {p0, v3, v4}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 396
+    :cond_0
+    :goto_0
     new-instance v3, Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;
 
     invoke-direct {v3, p1, v2}, Lcom/sec/android/app/camera/executor/NlgIdMap$ResultParam;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v3
+
+    .line 392
+    :cond_1
+    const/16 v3, 0xfa7
+
+    if-ne v0, v3, :cond_0
+
+    .line 393
+    iget v3, v1, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
+
+    new-array v4, v5, [Ljava/lang/Object;
+
+    const/4 v5, 0x2
+
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    aput-object v5, v4, v6
+
+    invoke-virtual {p0, v3, v4}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    goto :goto_0
 .end method
 
 .method public static getNlgScreenParamByParamName(Ljava/lang/String;I)Lcom/sec/android/app/camera/executor/NlgIdMap$ScreenParam;
@@ -1204,32 +1241,32 @@
     .param p1, "nlg_type"    # I
 
     .prologue
-    .line 410
+    .line 402
     sparse-switch p1, :sswitch_data_0
 
-    .line 432
+    .line 424
     const-string v2, "NlgIdMap"
 
     const-string v3, "return type match none..."
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 433
+    .line 425
     const/4 v2, 0x0
 
-    .line 436
+    .line 428
     :goto_0
     return-object v2
 
-    .line 412
+    .line 404
     :sswitch_0
     const-string v0, "AlreadySet"
 
-    .line 413
+    .line 405
     .local v0, "attrName":Ljava/lang/String;
     const-string v1, "yes"
 
-    .line 436
+    .line 428
     .local v1, "attrValue":Ljava/lang/String;
     :goto_1
     new-instance v2, Lcom/sec/android/app/camera/executor/NlgIdMap$ScreenParam;
@@ -1238,11 +1275,39 @@
 
     goto :goto_0
 
-    .line 416
+    .line 408
     .end local v0    # "attrName":Ljava/lang/String;
     .end local v1    # "attrValue":Ljava/lang/String;
     :sswitch_1
     const-string v0, "Exist"
+
+    .line 409
+    .restart local v0    # "attrName":Ljava/lang/String;
+    const-string v1, "no"
+
+    .line 410
+    .restart local v1    # "attrValue":Ljava/lang/String;
+    goto :goto_1
+
+    .line 412
+    .end local v0    # "attrName":Ljava/lang/String;
+    .end local v1    # "attrValue":Ljava/lang/String;
+    :sswitch_2
+    const-string v0, "Valid"
+
+    .line 413
+    .restart local v0    # "attrName":Ljava/lang/String;
+    const-string v1, "no"
+
+    .line 414
+    .restart local v1    # "attrValue":Ljava/lang/String;
+    goto :goto_1
+
+    .line 416
+    .end local v0    # "attrName":Ljava/lang/String;
+    .end local v1    # "attrValue":Ljava/lang/String;
+    :sswitch_3
+    const-string v0, "Available"
 
     .line 417
     .restart local v0    # "attrName":Ljava/lang/String;
@@ -1255,8 +1320,8 @@
     .line 420
     .end local v0    # "attrName":Ljava/lang/String;
     .end local v1    # "attrValue":Ljava/lang/String;
-    :sswitch_2
-    const-string v0, "Valid"
+    :sswitch_4
+    const-string v0, "AlreadySet"
 
     .line 421
     .restart local v0    # "attrName":Ljava/lang/String;
@@ -1266,35 +1331,7 @@
     .restart local v1    # "attrValue":Ljava/lang/String;
     goto :goto_1
 
-    .line 424
-    .end local v0    # "attrName":Ljava/lang/String;
-    .end local v1    # "attrValue":Ljava/lang/String;
-    :sswitch_3
-    const-string v0, "Available"
-
-    .line 425
-    .restart local v0    # "attrName":Ljava/lang/String;
-    const-string v1, "no"
-
-    .line 426
-    .restart local v1    # "attrValue":Ljava/lang/String;
-    goto :goto_1
-
-    .line 428
-    .end local v0    # "attrName":Ljava/lang/String;
-    .end local v1    # "attrValue":Ljava/lang/String;
-    :sswitch_4
-    const-string v0, "AlreadySet"
-
-    .line 429
-    .restart local v0    # "attrName":Ljava/lang/String;
-    const-string v1, "no"
-
-    .line 430
-    .restart local v1    # "attrValue":Ljava/lang/String;
-    goto :goto_1
-
-    .line 410
+    .line 402
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_1
@@ -1313,30 +1350,30 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 444
+    .line 436
     sparse-switch p0, :sswitch_data_0
 
-    .line 486
+    .line 474
     const-string v4, "NlgIdMap"
 
     const-string v5, "return type match none..."
 
     invoke-static {v4, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 515
+    .line 503
     :goto_0
     return-object v3
 
-    .line 446
+    .line 438
     :sswitch_0
     const-string v2, "QuickLaunchSelectSetting"
 
-    .line 489
+    .line 477
     .local v2, "paramName":Ljava/lang/String;
     :goto_1
     sparse-switch p1, :sswitch_data_1
 
-    .line 511
+    .line 499
     const-string v4, "NlgIdMap"
 
     const-string v5, "return type match none..."
@@ -1345,78 +1382,78 @@
 
     goto :goto_0
 
-    .line 449
+    .line 441
     .end local v2    # "paramName":Ljava/lang/String;
     :sswitch_1
     const-string v2, "AntiFogSetting"
 
-    .line 450
+    .line 442
     .restart local v2    # "paramName":Ljava/lang/String;
     goto :goto_1
 
-    .line 452
+    .line 444
     .end local v2    # "paramName":Ljava/lang/String;
     :sswitch_2
     const-string v2, "VolumekeyFunctionSetting"
 
-    .line 453
+    .line 445
     .restart local v2    # "paramName":Ljava/lang/String;
     goto :goto_1
 
-    .line 455
+    .line 447
     .end local v2    # "paramName":Ljava/lang/String;
     :sswitch_3
     const-string v2, "GridlinesSetting"
 
-    .line 456
+    .line 448
     .restart local v2    # "paramName":Ljava/lang/String;
     goto :goto_1
 
-    .line 458
+    .line 450
     .end local v2    # "paramName":Ljava/lang/String;
     :sswitch_4
     const-string v2, "HyperLapseSetting"
 
-    .line 459
+    .line 451
     .restart local v2    # "paramName":Ljava/lang/String;
     goto :goto_1
 
-    .line 465
+    .line 457
     .end local v2    # "paramName":Ljava/lang/String;
     :sswitch_5
     const-string v2, "BeautySetting"
 
-    .line 466
+    .line 458
     .restart local v2    # "paramName":Ljava/lang/String;
     goto :goto_1
 
-    .line 474
+    .line 466
     .end local v2    # "paramName":Ljava/lang/String;
     :sswitch_6
     const-string v2, "ProSetting"
 
-    .line 475
+    .line 467
     .restart local v2    # "paramName":Ljava/lang/String;
     goto :goto_1
 
-    .line 483
+    .line 471
     .end local v2    # "paramName":Ljava/lang/String;
     :sswitch_7
     const-string v2, "TimerSetting"
 
-    .line 484
+    .line 472
     .restart local v2    # "paramName":Ljava/lang/String;
     goto :goto_1
 
-    .line 491
+    .line 479
     :sswitch_8
     const-string v0, "AlreadySet"
 
-    .line 492
+    .line 480
     .local v0, "attrName":Ljava/lang/String;
     const-string v1, "yes"
 
-    .line 515
+    .line 503
     .local v1, "attrValue":Ljava/lang/String;
     :goto_2
     new-instance v3, Lcom/sec/android/app/camera/executor/NlgIdMap$ScreenParam;
@@ -1425,11 +1462,53 @@
 
     goto :goto_0
 
-    .line 495
+    .line 483
     .end local v0    # "attrName":Ljava/lang/String;
     .end local v1    # "attrValue":Ljava/lang/String;
     :sswitch_9
     const-string v0, "Exist"
+
+    .line 484
+    .restart local v0    # "attrName":Ljava/lang/String;
+    const-string v1, "no"
+
+    .line 485
+    .restart local v1    # "attrValue":Ljava/lang/String;
+    goto :goto_2
+
+    .line 487
+    .end local v0    # "attrName":Ljava/lang/String;
+    .end local v1    # "attrValue":Ljava/lang/String;
+    :sswitch_a
+    const-string v0, "Valid"
+
+    .line 488
+    .restart local v0    # "attrName":Ljava/lang/String;
+    const-string v1, "no"
+
+    .line 489
+    .restart local v1    # "attrValue":Ljava/lang/String;
+    goto :goto_2
+
+    .line 491
+    .end local v0    # "attrName":Ljava/lang/String;
+    .end local v1    # "attrValue":Ljava/lang/String;
+    :sswitch_b
+    const-string v0, "Available"
+
+    .line 492
+    .restart local v0    # "attrName":Ljava/lang/String;
+    const-string v1, "no"
+
+    .line 493
+    .restart local v1    # "attrValue":Ljava/lang/String;
+    goto :goto_2
+
+    .line 495
+    .end local v0    # "attrName":Ljava/lang/String;
+    .end local v1    # "attrValue":Ljava/lang/String;
+    :sswitch_c
+    const-string v0, "AlreadySet"
 
     .line 496
     .restart local v0    # "attrName":Ljava/lang/String;
@@ -1439,55 +1518,12 @@
     .restart local v1    # "attrValue":Ljava/lang/String;
     goto :goto_2
 
-    .line 499
-    .end local v0    # "attrName":Ljava/lang/String;
-    .end local v1    # "attrValue":Ljava/lang/String;
-    :sswitch_a
-    const-string v0, "Valid"
-
-    .line 500
-    .restart local v0    # "attrName":Ljava/lang/String;
-    const-string v1, "no"
-
-    .line 501
-    .restart local v1    # "attrValue":Ljava/lang/String;
-    goto :goto_2
-
-    .line 503
-    .end local v0    # "attrName":Ljava/lang/String;
-    .end local v1    # "attrValue":Ljava/lang/String;
-    :sswitch_b
-    const-string v0, "Available"
-
-    .line 504
-    .restart local v0    # "attrName":Ljava/lang/String;
-    const-string v1, "no"
-
-    .line 505
-    .restart local v1    # "attrValue":Ljava/lang/String;
-    goto :goto_2
-
-    .line 507
-    .end local v0    # "attrName":Ljava/lang/String;
-    .end local v1    # "attrValue":Ljava/lang/String;
-    :sswitch_c
-    const-string v0, "AlreadySet"
-
-    .line 508
-    .restart local v0    # "attrName":Ljava/lang/String;
-    const-string v1, "no"
-
-    .line 509
-    .restart local v1    # "attrValue":Ljava/lang/String;
-    goto :goto_2
-
-    .line 444
+    .line 436
     :sswitch_data_0
     .sparse-switch
-        0x41 -> :sswitch_7
-        0x42 -> :sswitch_7
+        0x47 -> :sswitch_7
+        0x48 -> :sswitch_7
         0x49 -> :sswitch_7
-        0x4a -> :sswitch_7
         0x6a -> :sswitch_3
         0x71 -> :sswitch_2
         0x81 -> :sswitch_4
@@ -1503,14 +1539,11 @@
         0x98 -> :sswitch_5
         0x99 -> :sswitch_5
         0x9a -> :sswitch_5
-        0xae -> :sswitch_1
-        0xb3 -> :sswitch_0
-        0xb6 -> :sswitch_7
-        0xb7 -> :sswitch_7
-        0xb8 -> :sswitch_7
+        0xaa -> :sswitch_1
+        0xaf -> :sswitch_0
     .end sparse-switch
 
-    .line 489
+    .line 477
     :sswitch_data_1
     .sparse-switch
         0x1 -> :sswitch_9

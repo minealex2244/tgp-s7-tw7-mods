@@ -137,7 +137,7 @@
     invoke-direct {p0, v0, v2, v2}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 77
-    const v0, 0x7f0a03a2
+    const v0, 0x7f0a03a5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -148,7 +148,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->HANDLE_SIZE:I
 
     .line 78
-    const v0, 0x7f0a03a1
+    const v0, 0x7f0a03a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -159,7 +159,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
 
     .line 79
-    const v0, 0x7f0a039f
+    const v0, 0x7f0a03a2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -170,7 +170,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->BOUND_RECT_THICKNESS:I
 
     .line 80
-    const v0, 0x7f0a03a0
+    const v0, 0x7f0a03a3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -181,7 +181,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->OUTER_BOUND_RECT_THICKNESS:I
 
     .line 81
-    const v0, 0x7f0a03a6
+    const v0, 0x7f0a03a9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -192,7 +192,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->STICKER_RECT_DEFAULT_POSITION_LEFT_MARGIN:I
 
     .line 82
-    const v0, 0x7f0a03a5
+    const v0, 0x7f0a03a8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -203,7 +203,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->STICKER_RECT_DEFAULT_POSITION_BOTTOM_MARGIN:I
 
     .line 83
-    const v0, 0x7f0a03a7
+    const v0, 0x7f0a03aa
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -214,7 +214,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->STICKER_RECT_MIN_SIZE:I
 
     .line 84
-    const v0, 0x7f0a0054
+    const v0, 0x7f0a0056
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -856,619 +856,654 @@
     return-object v0
 .end method
 
-.method private checkRectBoundary(Landroid/graphics/Rect;Landroid/graphics/Point;I)Z
-    .locals 21
+.method private calcRectBoundary(Landroid/graphics/Rect;Landroid/graphics/Point;I)Landroid/graphics/Point;
+    .locals 12
     .param p1, "rect"    # Landroid/graphics/Rect;
     .param p2, "delta"    # Landroid/graphics/Point;
     .param p3, "angle"    # I
 
     .prologue
+    const/4 v11, 0x0
+
+    .line 443
+    new-instance v2, Landroid/graphics/Point;
+
+    invoke-direct {v2, p2}, Landroid/graphics/Point;-><init>(Landroid/graphics/Point;)V
+
     .line 444
-    const v17, 0x7f0a0222
+    .local v2, "deltaPt":Landroid/graphics/Point;
+    iget v7, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mOrientation:I
 
-    invoke-static/range {v17 .. v17}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+    iget v8, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mDefaultOrientation:I
 
-    move-result v17
+    add-int/2addr v7, v8
 
-    move/from16 v0, v17
+    rem-int/lit8 v7, v7, 0x4
 
-    float-to-int v12, v0
+    mul-int/lit8 v7, v7, 0x5a
+
+    add-int v1, v7, p3
 
     .line 445
-    .local v12, "quickSettingWidth":I
-    const v17, 0x7f0a0012
+    .local v1, "degree":I
+    iget v7, p1, Landroid/graphics/Rect;->left:I
 
-    invoke-static/range {v17 .. v17}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+    int-to-float v7, v7
 
-    move-result v17
+    iget v8, p1, Landroid/graphics/Rect;->top:I
 
-    move/from16 v0, v17
+    int-to-float v8, v8
 
-    float-to-int v4, v0
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v9
+
+    int-to-float v9, v9
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v10
+
+    int-to-float v10, v10
+
+    invoke-static {v7, v8, v1, v9, v10}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
+
+    move-result-object v4
+
+    .line 446
+    .local v4, "leftTop":Landroid/graphics/PointF;
+    iget v7, p1, Landroid/graphics/Rect;->left:I
+
+    int-to-float v7, v7
+
+    iget v8, p1, Landroid/graphics/Rect;->bottom:I
+
+    int-to-float v8, v8
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v9
+
+    int-to-float v9, v9
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v10
+
+    int-to-float v10, v10
+
+    invoke-static {v7, v8, v1, v9, v10}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
+
+    move-result-object v3
 
     .line 447
-    .local v4, "baseMenuWidth":I
-    move-object/from16 v0, p0
+    .local v3, "leftBottom":Landroid/graphics/PointF;
+    iget v7, p1, Landroid/graphics/Rect;->right:I
 
-    iget v0, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mOrientation:I
+    int-to-float v7, v7
 
-    move/from16 v17, v0
+    iget v8, p1, Landroid/graphics/Rect;->top:I
 
-    move-object/from16 v0, p0
+    int-to-float v8, v8
 
-    iget v0, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mDefaultOrientation:I
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
 
-    move/from16 v18, v0
+    move-result v9
 
-    add-int v17, v17, v18
+    int-to-float v9, v9
 
-    rem-int/lit8 v17, v17, 0x4
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
 
-    mul-int/lit8 v17, v17, 0x5a
+    move-result v10
 
-    add-int v7, v17, p3
+    int-to-float v10, v10
+
+    invoke-static {v7, v8, v1, v9, v10}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
+
+    move-result-object v6
 
     .line 448
-    .local v7, "degree":I
-    move-object/from16 v0, p1
+    .local v6, "rightTop":Landroid/graphics/PointF;
+    iget v7, p1, Landroid/graphics/Rect;->right:I
 
-    iget v0, v0, Landroid/graphics/Rect;->left:I
+    int-to-float v7, v7
 
-    move/from16 v17, v0
+    iget v8, p1, Landroid/graphics/Rect;->bottom:I
 
-    move/from16 v0, v17
+    int-to-float v8, v8
 
-    int-to-float v0, v0
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
 
-    move/from16 v17, v0
+    move-result v9
 
-    move-object/from16 v0, p1
+    int-to-float v9, v9
 
-    iget v0, v0, Landroid/graphics/Rect;->top:I
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
 
-    move/from16 v18, v0
+    move-result v10
 
-    move/from16 v0, v18
+    int-to-float v10, v10
 
-    int-to-float v0, v0
+    invoke-static {v7, v8, v1, v9, v10}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
 
-    move/from16 v18, v0
-
-    invoke-virtual/range {p1 .. p1}, Landroid/graphics/Rect;->centerX()I
-
-    move-result v19
-
-    move/from16 v0, v19
-
-    int-to-float v0, v0
-
-    move/from16 v19, v0
-
-    invoke-virtual/range {p1 .. p1}, Landroid/graphics/Rect;->centerY()I
-
-    move-result v20
-
-    move/from16 v0, v20
-
-    int-to-float v0, v0
-
-    move/from16 v20, v0
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    move/from16 v2, v19
-
-    move/from16 v3, v20
-
-    invoke-static {v0, v1, v7, v2, v3}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
-
-    move-result-object v10
-
-    .line 449
-    .local v10, "leftTop":Landroid/graphics/PointF;
-    move-object/from16 v0, p1
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    move/from16 v17, v0
-
-    move/from16 v0, v17
-
-    int-to-float v0, v0
-
-    move/from16 v17, v0
-
-    move-object/from16 v0, p1
-
-    iget v0, v0, Landroid/graphics/Rect;->bottom:I
-
-    move/from16 v18, v0
-
-    move/from16 v0, v18
-
-    int-to-float v0, v0
-
-    move/from16 v18, v0
-
-    invoke-virtual/range {p1 .. p1}, Landroid/graphics/Rect;->centerX()I
-
-    move-result v19
-
-    move/from16 v0, v19
-
-    int-to-float v0, v0
-
-    move/from16 v19, v0
-
-    invoke-virtual/range {p1 .. p1}, Landroid/graphics/Rect;->centerY()I
-
-    move-result v20
-
-    move/from16 v0, v20
-
-    int-to-float v0, v0
-
-    move/from16 v20, v0
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    move/from16 v2, v19
-
-    move/from16 v3, v20
-
-    invoke-static {v0, v1, v7, v2, v3}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
-
-    move-result-object v8
+    move-result-object v5
 
     .line 450
-    .local v8, "leftBottom":Landroid/graphics/PointF;
-    move-object/from16 v0, p1
+    .local v5, "rightBottom":Landroid/graphics/PointF;
+    invoke-direct {p0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getControlAreaRect()Landroid/graphics/Rect;
 
-    iget v0, v0, Landroid/graphics/Rect;->right:I
-
-    move/from16 v17, v0
-
-    move/from16 v0, v17
-
-    int-to-float v0, v0
-
-    move/from16 v17, v0
-
-    move-object/from16 v0, p1
-
-    iget v0, v0, Landroid/graphics/Rect;->top:I
-
-    move/from16 v18, v0
-
-    move/from16 v0, v18
-
-    int-to-float v0, v0
-
-    move/from16 v18, v0
-
-    invoke-virtual/range {p1 .. p1}, Landroid/graphics/Rect;->centerX()I
-
-    move-result v19
-
-    move/from16 v0, v19
-
-    int-to-float v0, v0
-
-    move/from16 v19, v0
-
-    invoke-virtual/range {p1 .. p1}, Landroid/graphics/Rect;->centerY()I
-
-    move-result v20
-
-    move/from16 v0, v20
-
-    int-to-float v0, v0
-
-    move/from16 v20, v0
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    move/from16 v2, v19
-
-    move/from16 v3, v20
-
-    invoke-static {v0, v1, v7, v2, v3}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
-
-    move-result-object v15
+    move-result-object v0
 
     .line 451
-    .local v15, "rightTop":Landroid/graphics/PointF;
-    move-object/from16 v0, p1
+    .local v0, "controlAreaRect":Landroid/graphics/Rect;
+    iget v7, v4, Landroid/graphics/PointF;->x:F
 
-    iget v0, v0, Landroid/graphics/Rect;->right:I
+    float-to-int v7, v7
 
-    move/from16 v17, v0
+    iget v8, p2, Landroid/graphics/Point;->x:I
 
-    move/from16 v0, v17
+    add-int/2addr v7, v8
 
-    int-to-float v0, v0
+    iget v8, v4, Landroid/graphics/PointF;->y:F
 
-    move/from16 v17, v0
+    float-to-int v8, v8
 
-    move-object/from16 v0, p1
+    invoke-virtual {v0, v7, v8}, Landroid/graphics/Rect;->contains(II)Z
 
-    iget v0, v0, Landroid/graphics/Rect;->bottom:I
+    move-result v7
 
-    move/from16 v18, v0
+    if-eqz v7, :cond_0
 
-    move/from16 v0, v18
+    iget v7, v3, Landroid/graphics/PointF;->x:F
 
-    int-to-float v0, v0
+    float-to-int v7, v7
 
-    move/from16 v18, v0
+    iget v8, p2, Landroid/graphics/Point;->x:I
 
-    invoke-virtual/range {p1 .. p1}, Landroid/graphics/Rect;->centerX()I
+    add-int/2addr v7, v8
 
-    move-result v19
+    iget v8, v3, Landroid/graphics/PointF;->y:F
 
-    move/from16 v0, v19
+    float-to-int v8, v8
 
-    int-to-float v0, v0
+    invoke-virtual {v0, v7, v8}, Landroid/graphics/Rect;->contains(II)Z
 
-    move/from16 v19, v0
+    move-result v7
 
-    invoke-virtual/range {p1 .. p1}, Landroid/graphics/Rect;->centerY()I
+    if-eqz v7, :cond_0
 
-    move-result v20
+    iget v7, v6, Landroid/graphics/PointF;->x:F
 
-    move/from16 v0, v20
+    float-to-int v7, v7
 
-    int-to-float v0, v0
+    iget v8, p2, Landroid/graphics/Point;->x:I
 
-    move/from16 v20, v0
+    add-int/2addr v7, v8
 
-    move/from16 v0, v17
+    iget v8, v6, Landroid/graphics/PointF;->y:F
 
-    move/from16 v1, v18
+    float-to-int v8, v8
 
-    move/from16 v2, v19
+    .line 452
+    invoke-virtual {v0, v7, v8}, Landroid/graphics/Rect;->contains(II)Z
 
-    move/from16 v3, v20
+    move-result v7
 
-    invoke-static {v0, v1, v7, v2, v3}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
+    if-eqz v7, :cond_0
 
-    move-result-object v13
+    iget v7, v5, Landroid/graphics/PointF;->x:F
+
+    float-to-int v7, v7
+
+    iget v8, p2, Landroid/graphics/Point;->x:I
+
+    add-int/2addr v7, v8
+
+    iget v8, v5, Landroid/graphics/PointF;->y:F
+
+    float-to-int v8, v8
+
+    invoke-virtual {v0, v7, v8}, Landroid/graphics/Rect;->contains(II)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1
 
     .line 453
-    .local v13, "rightBottom":Landroid/graphics/PointF;
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    move-object/from16 v17, v0
-
-    invoke-interface/range {v17 .. v17}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getPreviewSurfaceRect()Landroid/graphics/Rect;
-
-    move-result-object v11
-
-    .line 454
-    .local v11, "previewRect":Landroid/graphics/Rect;
-    new-instance v6, Landroid/graphics/Rect;
-
-    invoke-direct {v6}, Landroid/graphics/Rect;-><init>()V
+    :cond_0
+    iput v11, v2, Landroid/graphics/Point;->x:I
 
     .line 455
-    .local v6, "controlAreaRect":Landroid/graphics/Rect;
-    iget v0, v11, Landroid/graphics/Rect;->left:I
+    :cond_1
+    iget v7, v4, Landroid/graphics/PointF;->x:F
 
-    move/from16 v17, v0
+    float-to-int v7, v7
 
-    move/from16 v0, v17
+    iget v8, v4, Landroid/graphics/PointF;->y:F
 
-    if-lt v0, v12, :cond_1
+    float-to-int v8, v8
+
+    iget v9, p2, Landroid/graphics/Point;->y:I
+
+    add-int/2addr v8, v9
+
+    invoke-virtual {v0, v7, v8}, Landroid/graphics/Rect;->contains(II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    iget v7, v3, Landroid/graphics/PointF;->x:F
+
+    float-to-int v7, v7
+
+    iget v8, v3, Landroid/graphics/PointF;->y:F
+
+    float-to-int v8, v8
+
+    iget v9, p2, Landroid/graphics/Point;->y:I
+
+    add-int/2addr v8, v9
+
+    invoke-virtual {v0, v7, v8}, Landroid/graphics/Rect;->contains(II)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_2
+
+    iget v7, v6, Landroid/graphics/PointF;->x:F
+
+    float-to-int v7, v7
+
+    iget v8, v6, Landroid/graphics/PointF;->y:F
+
+    float-to-int v8, v8
+
+    iget v9, p2, Landroid/graphics/Point;->y:I
+
+    add-int/2addr v8, v9
 
     .line 456
-    iget v9, v11, Landroid/graphics/Rect;->left:I
+    invoke-virtual {v0, v7, v8}, Landroid/graphics/Rect;->contains(II)Z
 
-    .line 460
-    .local v9, "leftMargin":I
-    :goto_0
-    move-object/from16 v0, p0
+    move-result v7
 
-    iget v0, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
+    if-eqz v7, :cond_2
 
-    move/from16 v17, v0
+    iget v7, v5, Landroid/graphics/PointF;->x:F
 
-    add-int v9, v9, v17
+    float-to-int v7, v7
 
-    .line 461
-    iget v0, v11, Landroid/graphics/Rect;->right:I
+    iget v8, v5, Landroid/graphics/PointF;->y:F
 
-    move/from16 v17, v0
+    float-to-int v8, v8
 
-    invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
+    iget v9, p2, Landroid/graphics/Point;->y:I
 
-    move-result v18
+    add-int/2addr v8, v9
 
-    sub-int v18, v18, v4
+    invoke-virtual {v0, v7, v8}, Landroid/graphics/Rect;->contains(II)Z
 
-    move/from16 v0, v17
+    move-result v7
 
-    move/from16 v1, v18
+    if-nez v7, :cond_3
 
-    if-gt v0, v1, :cond_2
+    .line 457
+    :cond_2
+    iput v11, v2, Landroid/graphics/Point;->y:I
 
-    .line 462
-    iget v14, v11, Landroid/graphics/Rect;->right:I
+    .line 459
+    :cond_3
+    return-object v2
+.end method
 
-    .line 466
-    .local v14, "rightMargin":I
-    :goto_1
-    move-object/from16 v0, p0
+.method private checkRectBoundary(Landroid/graphics/Rect;Landroid/graphics/Point;I)Z
+    .locals 10
+    .param p1, "rect"    # Landroid/graphics/Rect;
+    .param p2, "delta"    # Landroid/graphics/Point;
+    .param p3, "angle"    # I
 
-    iget v0, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
+    .prologue
+    .line 463
+    iget v6, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mOrientation:I
 
-    move/from16 v17, v0
+    iget v7, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mDefaultOrientation:I
 
-    sub-int v14, v14, v17
+    add-int/2addr v6, v7
 
-    .line 467
-    iget v0, v11, Landroid/graphics/Rect;->top:I
+    rem-int/lit8 v6, v6, 0x4
 
-    move/from16 v17, v0
+    mul-int/lit8 v6, v6, 0x5a
 
-    move-object/from16 v0, p0
-
-    iget v0, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
-
-    move/from16 v18, v0
-
-    add-int v16, v17, v18
-
-    .line 468
-    .local v16, "topMargin":I
-    iget v0, v11, Landroid/graphics/Rect;->bottom:I
-
-    move/from16 v17, v0
-
-    move-object/from16 v0, p0
-
-    iget v0, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
-
-    move/from16 v18, v0
-
-    sub-int v5, v17, v18
-
-    .line 469
-    .local v5, "bottomMargin":I
-    move/from16 v0, v16
-
-    invoke-virtual {v6, v9, v0, v14, v5}, Landroid/graphics/Rect;->set(IIII)V
-
-    .line 471
-    iget v0, v10, Landroid/graphics/PointF;->x:F
-
-    move/from16 v17, v0
-
-    move/from16 v0, v17
-
-    float-to-int v0, v0
-
-    move/from16 v17, v0
-
-    move-object/from16 v0, p2
-
-    iget v0, v0, Landroid/graphics/Point;->x:I
-
-    move/from16 v18, v0
-
-    add-int v17, v17, v18
-
-    iget v0, v10, Landroid/graphics/PointF;->y:F
-
-    move/from16 v18, v0
-
-    move/from16 v0, v18
-
-    float-to-int v0, v0
-
-    move/from16 v18, v0
-
-    move-object/from16 v0, p2
-
-    iget v0, v0, Landroid/graphics/Point;->y:I
-
-    move/from16 v19, v0
-
-    add-int v18, v18, v19
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    invoke-virtual {v6, v0, v1}, Landroid/graphics/Rect;->contains(II)Z
-
-    move-result v17
-
-    if-eqz v17, :cond_0
-
-    iget v0, v8, Landroid/graphics/PointF;->x:F
-
-    move/from16 v17, v0
-
-    move/from16 v0, v17
-
-    float-to-int v0, v0
-
-    move/from16 v17, v0
-
-    move-object/from16 v0, p2
-
-    iget v0, v0, Landroid/graphics/Point;->x:I
-
-    move/from16 v18, v0
-
-    add-int v17, v17, v18
-
-    iget v0, v8, Landroid/graphics/PointF;->y:F
-
-    move/from16 v18, v0
-
-    move/from16 v0, v18
-
-    float-to-int v0, v0
-
-    move/from16 v18, v0
-
-    move-object/from16 v0, p2
-
-    iget v0, v0, Landroid/graphics/Point;->y:I
-
-    move/from16 v19, v0
-
-    add-int v18, v18, v19
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    invoke-virtual {v6, v0, v1}, Landroid/graphics/Rect;->contains(II)Z
-
-    move-result v17
-
-    if-eqz v17, :cond_0
-
-    iget v0, v15, Landroid/graphics/PointF;->x:F
-
-    move/from16 v17, v0
-
-    move/from16 v0, v17
-
-    float-to-int v0, v0
-
-    move/from16 v17, v0
-
-    move-object/from16 v0, p2
-
-    iget v0, v0, Landroid/graphics/Point;->x:I
-
-    move/from16 v18, v0
-
-    add-int v17, v17, v18
-
-    iget v0, v15, Landroid/graphics/PointF;->y:F
-
-    move/from16 v18, v0
-
-    move/from16 v0, v18
-
-    float-to-int v0, v0
-
-    move/from16 v18, v0
-
-    move-object/from16 v0, p2
-
-    iget v0, v0, Landroid/graphics/Point;->y:I
-
-    move/from16 v19, v0
-
-    add-int v18, v18, v19
-
-    .line 472
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    invoke-virtual {v6, v0, v1}, Landroid/graphics/Rect;->contains(II)Z
-
-    move-result v17
-
-    if-eqz v17, :cond_0
-
-    iget v0, v13, Landroid/graphics/PointF;->x:F
-
-    move/from16 v17, v0
-
-    move/from16 v0, v17
-
-    float-to-int v0, v0
-
-    move/from16 v17, v0
-
-    move-object/from16 v0, p2
-
-    iget v0, v0, Landroid/graphics/Point;->x:I
-
-    move/from16 v18, v0
-
-    add-int v17, v17, v18
-
-    iget v0, v13, Landroid/graphics/PointF;->y:F
-
-    move/from16 v18, v0
-
-    move/from16 v0, v18
-
-    float-to-int v0, v0
-
-    move/from16 v18, v0
-
-    move-object/from16 v0, p2
-
-    iget v0, v0, Landroid/graphics/Point;->y:I
-
-    move/from16 v19, v0
-
-    add-int v18, v18, v19
-
-    move/from16 v0, v17
-
-    move/from16 v1, v18
-
-    invoke-virtual {v6, v0, v1}, Landroid/graphics/Rect;->contains(II)Z
-
-    move-result v17
-
-    if-nez v17, :cond_3
-
-    .line 473
-    :cond_0
-    const/16 v17, 0x0
-
-    .line 475
-    :goto_2
-    return v17
-
-    .line 458
-    .end local v5    # "bottomMargin":I
-    .end local v9    # "leftMargin":I
-    .end local v14    # "rightMargin":I
-    .end local v16    # "topMargin":I
-    :cond_1
-    move v9, v12
-
-    .restart local v9    # "leftMargin":I
-    goto/16 :goto_0
+    add-int v1, v6, p3
 
     .line 464
-    :cond_2
+    .local v1, "degree":I
+    iget v6, p1, Landroid/graphics/Rect;->left:I
+
+    int-to-float v6, v6
+
+    iget v7, p1, Landroid/graphics/Rect;->top:I
+
+    int-to-float v7, v7
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v8
+
+    int-to-float v8, v8
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v9
+
+    int-to-float v9, v9
+
+    invoke-static {v6, v7, v1, v8, v9}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
+
+    move-result-object v3
+
+    .line 465
+    .local v3, "leftTop":Landroid/graphics/PointF;
+    iget v6, p1, Landroid/graphics/Rect;->left:I
+
+    int-to-float v6, v6
+
+    iget v7, p1, Landroid/graphics/Rect;->bottom:I
+
+    int-to-float v7, v7
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v8
+
+    int-to-float v8, v8
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v9
+
+    int-to-float v9, v9
+
+    invoke-static {v6, v7, v1, v8, v9}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
+
+    move-result-object v2
+
+    .line 466
+    .local v2, "leftBottom":Landroid/graphics/PointF;
+    iget v6, p1, Landroid/graphics/Rect;->right:I
+
+    int-to-float v6, v6
+
+    iget v7, p1, Landroid/graphics/Rect;->top:I
+
+    int-to-float v7, v7
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v8
+
+    int-to-float v8, v8
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v9
+
+    int-to-float v9, v9
+
+    invoke-static {v6, v7, v1, v8, v9}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
+
+    move-result-object v5
+
+    .line 467
+    .local v5, "rightTop":Landroid/graphics/PointF;
+    iget v6, p1, Landroid/graphics/Rect;->right:I
+
+    int-to-float v6, v6
+
+    iget v7, p1, Landroid/graphics/Rect;->bottom:I
+
+    int-to-float v7, v7
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
+
+    move-result v8
+
+    int-to-float v8, v8
+
+    invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
+
+    move-result v9
+
+    int-to-float v9, v9
+
+    invoke-static {v6, v7, v1, v8, v9}, Lcom/samsung/android/glview/GLUtil;->rotatePoint(FFIFF)Landroid/graphics/PointF;
+
+    move-result-object v4
+
+    .line 469
+    .local v4, "rightBottom":Landroid/graphics/PointF;
+    invoke-direct {p0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getControlAreaRect()Landroid/graphics/Rect;
+
+    move-result-object v0
+
+    .line 470
+    .local v0, "controlAreaRect":Landroid/graphics/Rect;
+    iget v6, v3, Landroid/graphics/PointF;->x:F
+
+    float-to-int v6, v6
+
+    iget v7, p2, Landroid/graphics/Point;->x:I
+
+    add-int/2addr v6, v7
+
+    iget v7, v3, Landroid/graphics/PointF;->y:F
+
+    float-to-int v7, v7
+
+    iget v8, p2, Landroid/graphics/Point;->y:I
+
+    add-int/2addr v7, v8
+
+    invoke-virtual {v0, v6, v7}, Landroid/graphics/Rect;->contains(II)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    iget v6, v2, Landroid/graphics/PointF;->x:F
+
+    float-to-int v6, v6
+
+    iget v7, p2, Landroid/graphics/Point;->x:I
+
+    add-int/2addr v6, v7
+
+    iget v7, v2, Landroid/graphics/PointF;->y:F
+
+    float-to-int v7, v7
+
+    iget v8, p2, Landroid/graphics/Point;->y:I
+
+    add-int/2addr v7, v8
+
+    invoke-virtual {v0, v6, v7}, Landroid/graphics/Rect;->contains(II)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    iget v6, v5, Landroid/graphics/PointF;->x:F
+
+    float-to-int v6, v6
+
+    iget v7, p2, Landroid/graphics/Point;->x:I
+
+    add-int/2addr v6, v7
+
+    iget v7, v5, Landroid/graphics/PointF;->y:F
+
+    float-to-int v7, v7
+
+    iget v8, p2, Landroid/graphics/Point;->y:I
+
+    add-int/2addr v7, v8
+
+    .line 471
+    invoke-virtual {v0, v6, v7}, Landroid/graphics/Rect;->contains(II)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    iget v6, v4, Landroid/graphics/PointF;->x:F
+
+    float-to-int v6, v6
+
+    iget v7, p2, Landroid/graphics/Point;->x:I
+
+    add-int/2addr v6, v7
+
+    iget v7, v4, Landroid/graphics/PointF;->y:F
+
+    float-to-int v7, v7
+
+    iget v8, p2, Landroid/graphics/Point;->y:I
+
+    add-int/2addr v7, v8
+
+    invoke-virtual {v0, v6, v7}, Landroid/graphics/Rect;->contains(II)Z
+
+    move-result v6
+
+    if-nez v6, :cond_1
+
+    .line 472
+    :cond_0
+    const/4 v6, 0x0
+
+    .line 474
+    :goto_0
+    return v6
+
+    :cond_1
+    const/4 v6, 0x1
+
+    goto :goto_0
+.end method
+
+.method private getControlAreaRect()Landroid/graphics/Rect;
+    .locals 9
+
+    .prologue
+    .line 479
+    const v7, 0x7f0a0225
+
+    invoke-static {v7}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v7
+
+    float-to-int v4, v7
+
+    .line 480
+    .local v4, "quickSettingWidth":I
+    const v7, 0x7f0a0012
+
+    invoke-static {v7}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v7
+
+    float-to-int v0, v7
+
+    .line 482
+    .local v0, "baseMenuWidth":I
+    iget-object v7, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v7}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getPreviewSurfaceRect()Landroid/graphics/Rect;
+
+    move-result-object v3
+
+    .line 483
+    .local v3, "previewRect":Landroid/graphics/Rect;
+    iget v7, v3, Landroid/graphics/Rect;->left:I
+
+    if-lt v7, v4, :cond_0
+
+    .line 484
+    iget v2, v3, Landroid/graphics/Rect;->left:I
+
+    .line 488
+    .local v2, "leftMargin":I
+    :goto_0
+    iget v7, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
+
+    add-int/2addr v2, v7
+
+    .line 489
+    iget v7, v3, Landroid/graphics/Rect;->right:I
+
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
-    move-result v17
+    move-result v8
 
-    sub-int v14, v17, v4
+    sub-int/2addr v8, v0
 
-    .restart local v14    # "rightMargin":I
-    goto/16 :goto_1
+    if-gt v7, v8, :cond_1
 
-    .line 475
-    .restart local v5    # "bottomMargin":I
-    .restart local v16    # "topMargin":I
-    :cond_3
-    const/16 v17, 0x1
+    .line 490
+    iget v5, v3, Landroid/graphics/Rect;->right:I
 
-    goto :goto_2
+    .line 494
+    .local v5, "rightMargin":I
+    :goto_1
+    iget v7, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
+
+    sub-int/2addr v5, v7
+
+    .line 495
+    iget v7, v3, Landroid/graphics/Rect;->top:I
+
+    iget v8, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
+
+    add-int v6, v7, v8
+
+    .line 496
+    .local v6, "topMargin":I
+    iget v7, v3, Landroid/graphics/Rect;->bottom:I
+
+    iget v8, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->RESIZE_HANDLE_SIZE:I
+
+    sub-int v1, v7, v8
+
+    .line 497
+    .local v1, "bottomMargin":I
+    new-instance v7, Landroid/graphics/Rect;
+
+    invoke-direct {v7, v2, v6, v5, v1}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    return-object v7
+
+    .line 486
+    .end local v1    # "bottomMargin":I
+    .end local v2    # "leftMargin":I
+    .end local v5    # "rightMargin":I
+    .end local v6    # "topMargin":I
+    :cond_0
+    move v2, v4
+
+    .restart local v2    # "leftMargin":I
+    goto :goto_0
+
+    .line 492
+    :cond_1
+    invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
+
+    move-result v7
+
+    sub-int v5, v7, v0
+
+    .restart local v5    # "rightMargin":I
+    goto :goto_1
 .end method
 
 .method private getRotateAngle(II)I
@@ -1477,7 +1512,7 @@
     .param p2, "posY"    # I
 
     .prologue
-    .line 480
+    .line 502
     iget-object v10, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
 
     invoke-virtual {v10}, Landroid/graphics/Rect;->centerX()I
@@ -1486,7 +1521,7 @@
 
     sub-int v4, p1, v10
 
-    .line 481
+    .line 503
     .local v4, "dx":I
     iget-object v10, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
 
@@ -1496,7 +1531,7 @@
 
     sub-int v5, p2, v10
 
-    .line 482
+    .line 504
     .local v5, "dy":I
     iget-object v10, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
 
@@ -1510,7 +1545,7 @@
 
     sub-int v8, v10, v11
 
-    .line 483
+    .line 505
     .local v8, "refDx":I
     iget-object v10, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
 
@@ -1524,7 +1559,7 @@
 
     sub-int v9, v10, v11
 
-    .line 485
+    .line 507
     .local v9, "refDy":I
     int-to-double v10, v9
 
@@ -1534,13 +1569,13 @@
 
     move-result-wide v6
 
-    .line 486
+    .line 508
     .local v6, "refAngle":D
     invoke-static {v6, v7}, Ljava/lang/Math;->toDegrees(D)D
 
     move-result-wide v6
 
-    .line 488
+    .line 510
     int-to-double v10, v5
 
     int-to-double v12, v4
@@ -1549,13 +1584,13 @@
 
     move-result-wide v0
 
-    .line 489
+    .line 511
     .local v0, "angle":D
     invoke-static {v0, v1}, Ljava/lang/Math;->toDegrees(D)D
 
     move-result-wide v0
 
-    .line 491
+    .line 513
     sub-double v10, v0, v6
 
     const-wide v12, 0x4076800000000000L    # 360.0
@@ -1566,19 +1601,19 @@
 
     rem-double v2, v10, v12
 
-    .line 493
+    .line 515
     .local v2, "diffAngle":D
     iget v10, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mOrientation:I
 
     packed-switch v10, :pswitch_data_0
 
-    .line 506
+    .line 528
     :goto_0
     double-to-int v10, v2
 
     return v10
 
-    .line 495
+    .line 517
     :pswitch_0
     const-wide v10, 0x4070e00000000000L    # 270.0
 
@@ -1588,10 +1623,10 @@
 
     rem-double v2, v10, v12
 
-    .line 496
+    .line 518
     goto :goto_0
 
-    .line 498
+    .line 520
     :pswitch_1
     const-wide v10, 0x4066800000000000L    # 180.0
 
@@ -1601,10 +1636,10 @@
 
     rem-double v2, v10, v12
 
-    .line 499
+    .line 521
     goto :goto_0
 
-    .line 501
+    .line 523
     :pswitch_2
     const-wide v10, 0x4056800000000000L    # 90.0
 
@@ -1614,10 +1649,10 @@
 
     rem-double v2, v10, v12
 
-    .line 502
+    .line 524
     goto :goto_0
 
-    .line 493
+    .line 515
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -1635,37 +1670,37 @@
     .param p5, "degree"    # I
 
     .prologue
-    .line 510
+    .line 532
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getPreviewSurfaceRect()Landroid/graphics/Rect;
 
     move-result-object v1
 
-    .line 511
+    .line 533
     .local v1, "previewRect":Landroid/graphics/Rect;
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
 
     move-result v2
 
-    .line 512
+    .line 534
     .local v2, "previewWidth":I
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
 
     move-result v0
 
-    .line 513
+    .line 535
     .local v0, "previewHeight":I
     iget v3, v1, Landroid/graphics/Rect;->left:I
 
     sub-int/2addr p1, v3
 
-    .line 514
+    .line 536
     iget v3, v1, Landroid/graphics/Rect;->top:I
 
     sub-int/2addr p2, v3
 
-    .line 515
+    .line 537
     sget-object v3, Ljava/util/Locale;->UK:Ljava/util/Locale;
 
     const-string v4, "stamp,left=%d,top=%d,right=%d,bottom=%d,rotate=%d,surfaceWidth=%d,surfaceHeight=%d"
@@ -1676,7 +1711,7 @@
 
     const/4 v6, 0x0
 
-    .line 516
+    .line 538
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
@@ -1735,7 +1770,7 @@
 
     aput-object v7, v5, v6
 
-    .line 515
+    .line 537
     invoke-static {v3, v4, v5}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
@@ -1749,29 +1784,29 @@
     .param p2, "watermarkInfo"    # Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
 
     .prologue
-    .line 521
+    .line 543
     const/high16 v8, 0x3f800000    # 1.0f
 
-    .line 522
+    .line 544
     .local v8, "scale":F
     new-instance v13, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v13}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 523
+    .line 545
     .local v13, "options":Landroid/graphics/BitmapFactory$Options;
     const/4 v1, 0x0
 
     iput-boolean v1, v13, Landroid/graphics/BitmapFactory$Options;->inPremultiplied:Z
 
-    .line 525
+    .line 547
     const/4 v1, 0x2
 
     move/from16 v0, p1
 
     if-ne v0, v1, :cond_1
 
-    .line 526
+    .line 548
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1796,32 +1831,32 @@
 
     move-result-object v10
 
-    .line 532
+    .line 554
     .local v10, "bitmap":Landroid/graphics/Bitmap;
     :goto_0
     if-eqz v10, :cond_4
 
-    .line 533
+    .line 555
     new-instance v5, Landroid/graphics/Canvas;
 
     invoke-direct {v5, v10}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 534
+    .line 556
     .local v5, "canvas":Landroid/graphics/Canvas;
     new-instance v6, Landroid/graphics/Paint;
 
     invoke-direct {v6}, Landroid/graphics/Paint;-><init>()V
 
-    .line 535
+    .line 557
     .local v6, "paint":Landroid/graphics/Paint;
     const/4 v1, 0x1
 
     invoke-virtual {v6, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 536
+    .line 558
     invoke-virtual {v5}, Landroid/graphics/Canvas;->save()I
 
-    .line 538
+    .line 560
     const/4 v12, 0x0
 
     .local v12, "i":I
@@ -1834,7 +1869,7 @@
 
     if-ge v12, v1, :cond_2
 
-    .line 539
+    .line 561
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
@@ -1847,7 +1882,7 @@
 
     if-nez v1, :cond_0
 
-    .line 540
+    .line 562
     invoke-static {}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->getInstance()Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;
 
     move-result-object v1
@@ -1878,13 +1913,13 @@
 
     invoke-virtual/range {v1 .. v8}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->drawText(Landroid/content/Context;Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;Landroid/graphics/Canvas;Landroid/graphics/Paint;FF)V
 
-    .line 538
+    .line 560
     :cond_0
     add-int/lit8 v12, v12, 0x1
 
     goto :goto_1
 
-    .line 528
+    .line 550
     .end local v5    # "canvas":Landroid/graphics/Canvas;
     .end local v6    # "paint":Landroid/graphics/Paint;
     .end local v10    # "bitmap":Landroid/graphics/Bitmap;
@@ -1916,7 +1951,7 @@
 
     div-float v8, v1, v2
 
-    .line 529
+    .line 551
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1948,14 +1983,14 @@
     .restart local v10    # "bitmap":Landroid/graphics/Bitmap;
     goto :goto_0
 
-    .line 543
+    .line 565
     .restart local v5    # "canvas":Landroid/graphics/Canvas;
     .restart local v6    # "paint":Landroid/graphics/Paint;
     .restart local v12    # "i":I
     :cond_2
     invoke-virtual {v5}, Landroid/graphics/Canvas;->restore()V
 
-    .line 545
+    .line 567
     :try_start_0
     new-instance v14, Ljava/io/ByteArrayOutputStream;
 
@@ -1966,7 +2001,7 @@
     .local v14, "outputStream":Ljava/io/ByteArrayOutputStream;
     const/4 v2, 0x0
 
-    .line 546
+    .line 568
     :try_start_1
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -1978,12 +2013,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 547
+    .line 569
     invoke-virtual {v14}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v9
 
-    .line 548
+    .line 570
     .local v9, "array":[B
     const/4 v1, 0x0
 
@@ -1996,7 +2031,7 @@
 
     move-result-object v10
 
-    .line 550
+    .line 572
     .end local v9    # "array":[B
     :cond_3
     if-eqz v14, :cond_4
@@ -2009,7 +2044,7 @@
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 554
+    .line 576
     .end local v5    # "canvas":Landroid/graphics/Canvas;
     .end local v6    # "paint":Landroid/graphics/Paint;
     .end local v12    # "i":I
@@ -2018,7 +2053,7 @@
     :goto_2
     return-object v10
 
-    .line 550
+    .line 572
     .restart local v5    # "canvas":Landroid/graphics/Canvas;
     .restart local v6    # "paint":Landroid/graphics/Paint;
     .restart local v12    # "i":I
@@ -2037,7 +2072,7 @@
     :catch_1
     move-exception v11
 
-    .line 551
+    .line 573
     .local v11, "e":Ljava/io/IOException;
     const-string v1, "StickerRectHandler"
 
@@ -2067,7 +2102,7 @@
 
     goto :goto_2
 
-    .line 550
+    .line 572
     .end local v11    # "e":Ljava/io/IOException;
     .restart local v14    # "outputStream":Ljava/io/ByteArrayOutputStream;
     :cond_5
@@ -2078,7 +2113,7 @@
 
     goto :goto_2
 
-    .line 545
+    .line 567
     :catch_2
     move-exception v1
 
@@ -2087,7 +2122,7 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 550
+    .line 572
     :catchall_0
     move-exception v2
 
@@ -2141,7 +2176,7 @@
     .prologue
     const/4 v8, 0x1
 
-    .line 559
+    .line 581
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mDragPoint:Landroid/graphics/Point;
 
     iget v3, v3, Landroid/graphics/Point;->x:I
@@ -2188,11 +2223,11 @@
 
     move-result-object v2
 
-    .line 561
+    .line 583
     .local v2, "rotatedPoint":Landroid/graphics/PointF;
     if-ne p2, v8, :cond_2
 
-    .line 562
+    .line 584
     iget v3, v2, Landroid/graphics/PointF;->x:F
 
     iget v4, p1, Landroid/graphics/Rect;->right:I
@@ -2205,7 +2240,7 @@
 
     move-result v0
 
-    .line 563
+    .line 585
     .local v0, "dx":F
     iget v3, v2, Landroid/graphics/PointF;->y:F
 
@@ -2219,7 +2254,7 @@
 
     move-result v1
 
-    .line 569
+    .line 591
     .local v1, "dy":F
     :goto_0
     if-ne p2, v8, :cond_0
@@ -2267,7 +2302,7 @@
 
     if-lez v3, :cond_4
 
-    .line 571
+    .line 593
     :cond_1
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mAspectRatio:F
 
@@ -2277,7 +2312,7 @@
 
     if-gez v3, :cond_3
 
-    .line 572
+    .line 594
     iget v3, p1, Landroid/graphics/Rect;->left:I
 
     int-to-float v3, v3
@@ -2298,7 +2333,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->left:I
 
-    .line 573
+    .line 595
     iget v3, p1, Landroid/graphics/Rect;->right:I
 
     int-to-float v3, v3
@@ -2319,7 +2354,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->right:I
 
-    .line 574
+    .line 596
     iget v3, p1, Landroid/graphics/Rect;->top:I
 
     int-to-float v3, v3
@@ -2334,7 +2369,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->top:I
 
-    .line 575
+    .line 597
     iget v3, p1, Landroid/graphics/Rect;->bottom:I
 
     int-to-float v3, v3
@@ -2349,11 +2384,11 @@
 
     iput v3, p1, Landroid/graphics/Rect;->bottom:I
 
-    .line 595
+    .line 617
     :goto_1
     return-object p1
 
-    .line 565
+    .line 587
     .end local v0    # "dx":F
     .end local v1    # "dy":F
     :cond_2
@@ -2369,7 +2404,7 @@
 
     move-result v0
 
-    .line 566
+    .line 588
     .restart local v0    # "dx":F
     iget v3, v2, Landroid/graphics/PointF;->y:F
 
@@ -2386,7 +2421,7 @@
     .restart local v1    # "dy":F
     goto :goto_0
 
-    .line 577
+    .line 599
     :cond_3
     iget v3, p1, Landroid/graphics/Rect;->left:I
 
@@ -2402,7 +2437,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->left:I
 
-    .line 578
+    .line 600
     iget v3, p1, Landroid/graphics/Rect;->right:I
 
     int-to-float v3, v3
@@ -2417,7 +2452,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->right:I
 
-    .line 579
+    .line 601
     iget v3, p1, Landroid/graphics/Rect;->top:I
 
     int-to-float v3, v3
@@ -2438,7 +2473,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->top:I
 
-    .line 580
+    .line 602
     iget v3, p1, Landroid/graphics/Rect;->bottom:I
 
     int-to-float v3, v3
@@ -2461,7 +2496,7 @@
 
     goto :goto_1
 
-    .line 583
+    .line 605
     :cond_4
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mAspectRatio:F
 
@@ -2471,7 +2506,7 @@
 
     if-gez v3, :cond_5
 
-    .line 584
+    .line 606
     iget v3, p1, Landroid/graphics/Rect;->left:I
 
     int-to-float v3, v3
@@ -2492,7 +2527,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->left:I
 
-    .line 585
+    .line 607
     iget v3, p1, Landroid/graphics/Rect;->right:I
 
     int-to-float v3, v3
@@ -2513,7 +2548,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->right:I
 
-    .line 586
+    .line 608
     iget v3, p1, Landroid/graphics/Rect;->top:I
 
     int-to-float v3, v3
@@ -2528,7 +2563,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->top:I
 
-    .line 587
+    .line 609
     iget v3, p1, Landroid/graphics/Rect;->bottom:I
 
     int-to-float v3, v3
@@ -2545,7 +2580,7 @@
 
     goto/16 :goto_1
 
-    .line 589
+    .line 611
     :cond_5
     iget v3, p1, Landroid/graphics/Rect;->left:I
 
@@ -2561,7 +2596,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->left:I
 
-    .line 590
+    .line 612
     iget v3, p1, Landroid/graphics/Rect;->right:I
 
     int-to-float v3, v3
@@ -2576,7 +2611,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->right:I
 
-    .line 591
+    .line 613
     iget v3, p1, Landroid/graphics/Rect;->top:I
 
     int-to-float v3, v3
@@ -2597,7 +2632,7 @@
 
     iput v3, p1, Landroid/graphics/Rect;->top:I
 
-    .line 592
+    .line 614
     iget v3, p1, Landroid/graphics/Rect;->bottom:I
 
     int-to-float v3, v3
@@ -2626,39 +2661,31 @@
     .param p1, "delta"    # Landroid/graphics/Point;
 
     .prologue
-    const/4 v1, 0x0
-
-    .line 599
+    .line 621
     new-instance v6, Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
 
     invoke-direct {v6, v0}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
 
-    .line 600
+    .line 622
     .local v6, "rect":Landroid/graphics/Rect;
     invoke-virtual {p0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getRotateDegree()I
 
     move-result v0
 
-    invoke-direct {p0, v6, p1, v0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->checkRectBoundary(Landroid/graphics/Rect;Landroid/graphics/Point;I)Z
+    invoke-direct {p0, v6, p1, v0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->calcRectBoundary(Landroid/graphics/Rect;Landroid/graphics/Point;I)Landroid/graphics/Point;
 
-    move-result v0
+    move-result-object p1
 
-    if-nez v0, :cond_0
-
-    .line 601
-    invoke-virtual {p1, v1, v1}, Landroid/graphics/Point;->set(II)V
-
-    .line 603
-    :cond_0
+    .line 623
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     iget v1, p1, Landroid/graphics/Point;->y:I
 
     invoke-virtual {v6, v0, v1}, Landroid/graphics/Rect;->offset(II)V
 
-    .line 604
+    .line 624
     iget v1, v6, Landroid/graphics/Rect;->left:I
 
     iget v2, v6, Landroid/graphics/Rect;->top:I
@@ -2683,7 +2710,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->setPosition(IIIII)V
 
-    .line 605
+    .line 625
     return-void
 .end method
 
@@ -2691,14 +2718,14 @@
     .locals 22
 
     .prologue
-    .line 608
+    .line 628
     const-string v2, "StickerRectHandler"
 
     const-string v3, "relocatePosition"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 609
+    .line 629
     const/4 v12, 0x0
 
     .local v12, "deltaL":I
@@ -2710,9 +2737,9 @@
     .local v14, "deltaT":I
     const/4 v11, 0x0
 
-    .line 611
+    .line 631
     .local v11, "deltaB":I
-    const v2, 0x7f0a0222
+    const v2, 0x7f0a0225
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -2722,7 +2749,7 @@
 
     move/from16 v17, v0
 
-    .line 612
+    .line 632
     .local v17, "quickSettingWidth":I
     const v2, 0x7f0a0012
 
@@ -2732,7 +2759,7 @@
 
     float-to-int v8, v2
 
-    .line 614
+    .line 634
     .local v8, "baseMenuWidth":I
     move-object/from16 v0, p0
 
@@ -2742,13 +2769,13 @@
 
     move-result-object v16
 
-    .line 615
+    .line 635
     .local v16, "previewRect":Landroid/graphics/Rect;
     new-instance v10, Landroid/graphics/Rect;
 
     invoke-direct {v10}, Landroid/graphics/Rect;-><init>()V
 
-    .line 616
+    .line 636
     .local v10, "controlAreaRect":Landroid/graphics/Rect;
     move-object/from16 v0, v16
 
@@ -2758,12 +2785,12 @@
 
     if-lt v2, v0, :cond_5
 
-    .line 617
+    .line 637
     move-object/from16 v0, v16
 
     iget v15, v0, Landroid/graphics/Rect;->left:I
 
-    .line 621
+    .line 641
     .local v15, "leftMargin":I
     :goto_0
     move-object/from16 v0, p0
@@ -2772,7 +2799,7 @@
 
     add-int/2addr v15, v2
 
-    .line 622
+    .line 642
     move-object/from16 v0, v16
 
     iget v2, v0, Landroid/graphics/Rect;->right:I
@@ -2785,14 +2812,14 @@
 
     if-gt v2, v3, :cond_6
 
-    .line 623
+    .line 643
     move-object/from16 v0, v16
 
     iget v0, v0, Landroid/graphics/Rect;->right:I
 
     move/from16 v19, v0
 
-    .line 627
+    .line 647
     .local v19, "rightMargin":I
     :goto_1
     move-object/from16 v0, p0
@@ -2801,7 +2828,7 @@
 
     sub-int v19, v19, v2
 
-    .line 628
+    .line 648
     move-object/from16 v0, v16
 
     iget v2, v0, Landroid/graphics/Rect;->top:I
@@ -2812,7 +2839,7 @@
 
     add-int v21, v2, v3
 
-    .line 629
+    .line 649
     .local v21, "topMargin":I
     move-object/from16 v0, v16
 
@@ -2824,7 +2851,7 @@
 
     sub-int v9, v2, v3
 
-    .line 630
+    .line 650
     .local v9, "bottomMargin":I
     move/from16 v0, v21
 
@@ -2832,12 +2859,12 @@
 
     invoke-virtual {v10, v15, v0, v1, v9}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 632
+    .line 652
     new-instance v20, Landroid/graphics/Rect;
 
     invoke-direct/range {v20 .. v20}, Landroid/graphics/Rect;-><init>()V
 
-    .line 633
+    .line 653
     .local v20, "rotatedRect":Landroid/graphics/Rect;
     move-object/from16 v0, p0
 
@@ -2855,7 +2882,7 @@
 
     if-ne v2, v3, :cond_7
 
-    .line 634
+    .line 654
     :cond_0
     move-object/from16 v0, p0
 
@@ -2941,7 +2968,7 @@
 
     invoke-virtual {v0, v2, v3, v4, v5}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 638
+    .line 658
     :goto_2
     move-object/from16 v0, v20
 
@@ -2951,7 +2978,7 @@
 
     if-le v2, v3, :cond_1
 
-    .line 639
+    .line 659
     move-object/from16 v0, v20
 
     iget v2, v0, Landroid/graphics/Rect;->bottom:I
@@ -2960,7 +2987,7 @@
 
     sub-int v11, v2, v3
 
-    .line 641
+    .line 661
     :cond_1
     move-object/from16 v0, v20
 
@@ -2970,7 +2997,7 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 642
+    .line 662
     iget v2, v10, Landroid/graphics/Rect;->top:I
 
     move-object/from16 v0, v20
@@ -2979,7 +3006,7 @@
 
     sub-int v14, v2, v3
 
-    .line 644
+    .line 664
     :cond_2
     move-object/from16 v0, v20
 
@@ -2989,7 +3016,7 @@
 
     if-ge v2, v3, :cond_3
 
-    .line 645
+    .line 665
     iget v2, v10, Landroid/graphics/Rect;->left:I
 
     move-object/from16 v0, v20
@@ -2998,7 +3025,7 @@
 
     sub-int v12, v2, v3
 
-    .line 647
+    .line 667
     :cond_3
     move-object/from16 v0, v20
 
@@ -3008,7 +3035,7 @@
 
     if-le v2, v3, :cond_4
 
-    .line 648
+    .line 668
     move-object/from16 v0, v20
 
     iget v2, v0, Landroid/graphics/Rect;->right:I
@@ -3017,7 +3044,7 @@
 
     sub-int v13, v2, v3
 
-    .line 650
+    .line 670
     :cond_4
     new-instance v18, Landroid/graphics/Rect;
 
@@ -3085,7 +3112,7 @@
 
     invoke-direct {v0, v2, v3, v4, v5}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 651
+    .line 671
     .local v18, "rect":Landroid/graphics/Rect;
     move-object/from16 v0, v18
 
@@ -3119,10 +3146,10 @@
 
     invoke-direct/range {v2 .. v7}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->setPosition(IIIII)V
 
-    .line 652
+    .line 672
     return-void
 
-    .line 619
+    .line 639
     .end local v9    # "bottomMargin":I
     .end local v15    # "leftMargin":I
     .end local v18    # "rect":Landroid/graphics/Rect;
@@ -3135,7 +3162,7 @@
     .restart local v15    # "leftMargin":I
     goto/16 :goto_0
 
-    .line 625
+    .line 645
     :cond_6
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
@@ -3146,7 +3173,7 @@
     .restart local v19    # "rightMargin":I
     goto/16 :goto_1
 
-    .line 636
+    .line 656
     .restart local v9    # "bottomMargin":I
     .restart local v20    # "rotatedRect":Landroid/graphics/Rect;
     .restart local v21    # "topMargin":I
@@ -3167,20 +3194,20 @@
     .param p1, "button"    # I
 
     .prologue
-    .line 655
+    .line 675
     new-instance v6, Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
 
     invoke-direct {v6, v0}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
 
-    .line 657
+    .line 677
     .local v6, "rect":Landroid/graphics/Rect;
     invoke-direct {p0, v6, p1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->growBy(Landroid/graphics/Rect;I)Landroid/graphics/Rect;
 
     move-result-object v6
 
-    .line 658
+    .line 678
     invoke-virtual {v6}, Landroid/graphics/Rect;->width()I
 
     move-result v0
@@ -3197,7 +3224,7 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 659
+    .line 679
     invoke-virtual {v6}, Landroid/graphics/Rect;->height()I
 
     move-result v0
@@ -3214,12 +3241,12 @@
 
     if-le v0, v1, :cond_1
 
-    .line 666
+    .line 686
     :cond_0
     :goto_0
     return-void
 
-    .line 662
+    .line 682
     :cond_1
     new-instance v0, Landroid/graphics/Point;
 
@@ -3235,7 +3262,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 665
+    .line 685
     iget v1, v6, Landroid/graphics/Rect;->left:I
 
     iget v2, v6, Landroid/graphics/Rect;->top:I
@@ -3269,26 +3296,26 @@
     .prologue
     const/4 v4, 0x2
 
-    .line 669
+    .line 689
     const-string v0, "StickerRectHandler"
 
     const-string v1, "restartHideRectHandlerTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 670
+    .line 690
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 671
+    .line 691
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0xbb8
 
     invoke-virtual {v0, v4, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 672
+    .line 692
     return-void
 .end method
 
@@ -3301,7 +3328,7 @@
 
     const/4 v5, 0x0
 
-    .line 675
+    .line 695
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -3312,7 +3339,7 @@
 
     if-ge v0, v1, :cond_3
 
-    .line 676
+    .line 696
     aget-object v1, p1, v0
 
     iget v1, v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->textWidth:F
@@ -3329,7 +3356,7 @@
 
     if-nez v1, :cond_1
 
-    .line 677
+    .line 697
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
 
@@ -3339,13 +3366,13 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 675
+    .line 695
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 679
+    .line 699
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkText:[Ljava/lang/String;
 
@@ -3359,11 +3386,11 @@
 
     iget-object v1, v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->defaultText:Ljava/lang/String;
 
-    .line 680
+    .line 700
     :goto_2
     aput-object v1, v2, v0
 
-    .line 681
+    .line 701
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
 
     aget-object v1, v1, v0
@@ -3402,7 +3429,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLRectangle;->moveLayoutAbsolute(FF)V
 
-    .line 682
+    .line 702
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
 
     aget-object v1, v1, v0
@@ -3425,7 +3452,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 683
+    .line 703
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
 
     aget-object v1, v1, v0
@@ -3436,7 +3463,7 @@
 
     goto :goto_1
 
-    .line 680
+    .line 700
     :cond_2
     invoke-static {}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->getInstance()Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;
 
@@ -3452,7 +3479,7 @@
 
     goto :goto_2
 
-    .line 686
+    .line 706
     :cond_3
     return-void
 .end method
@@ -3470,7 +3497,7 @@
 
     const/high16 v7, 0x40000000    # 2.0f
 
-    .line 696
+    .line 716
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRect:Landroid/graphics/Rect;
 
     add-int v3, p1, p3
@@ -3479,7 +3506,7 @@
 
     invoke-virtual {v2, p1, p2, v3, v4}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 698
+    .line 718
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mStickerTouchOverlay:Lcom/samsung/android/glview/GLImage;
 
     int-to-float v3, p3
@@ -3488,7 +3515,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLImage;->setSize(FF)V
 
-    .line 699
+    .line 719
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mStickerTouchOverlay:Lcom/samsung/android/glview/GLImage;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->HANDLE_SIZE:I
@@ -3505,7 +3532,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLImage;->moveLayoutAbsolute(FF)V
 
-    .line 701
+    .line 721
     iget v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->HANDLE_SIZE:I
 
     add-int/2addr v2, p3
@@ -3520,7 +3547,7 @@
 
     invoke-virtual {p0, v2, v3}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->setSize(FF)V
 
-    .line 702
+    .line 722
     int-to-float v2, p1
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->HANDLE_SIZE:I
@@ -3543,7 +3570,7 @@
 
     invoke-virtual {p0, v2, v3}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->moveLayoutAbsolute(FF)V
 
-    .line 703
+    .line 723
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mBoundRectImage:Lcom/samsung/android/glview/GLRectangle;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->OUTER_BOUND_RECT_THICKNESS:I
@@ -3588,19 +3615,19 @@
 
     invoke-virtual {v2, v3, v4, v5, v6}, Lcom/samsung/android/glview/GLRectangle;->setRect(FFFF)V
 
-    .line 705
+    .line 725
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mLResizeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2, v8, v8}, Lcom/samsung/android/glview/GLButton;->moveLayoutAbsolute(FF)V
 
-    .line 706
+    .line 726
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     int-to-float v3, p3
 
     invoke-virtual {v2, v3, v8}, Lcom/samsung/android/glview/GLButton;->moveLayoutAbsolute(FF)V
 
-    .line 707
+    .line 727
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRResizeButton:Lcom/samsung/android/glview/GLButton;
 
     int-to-float v3, p3
@@ -3609,14 +3636,14 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLButton;->moveLayoutAbsolute(FF)V
 
-    .line 708
+    .line 728
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mRotateButton:Lcom/samsung/android/glview/GLButton;
 
     int-to-float v3, p4
 
     invoke-virtual {v2, v8, v3}, Lcom/samsung/android/glview/GLButton;->moveLayoutAbsolute(FF)V
 
-    .line 710
+    .line 730
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3633,7 +3660,7 @@
 
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->savePreferences(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 712
+    .line 732
     iget v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mStickerType:I
 
     const/4 v3, 0x3
@@ -3644,7 +3671,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 713
+    .line 733
     int-to-float v2, p3
 
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mOriginalRect:Landroid/graphics/Rect;
@@ -3657,7 +3684,7 @@
 
     div-float v1, v2, v3
 
-    .line 714
+    .line 734
     .local v1, "scale":F
     const/4 v0, 0x0
 
@@ -3669,7 +3696,7 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 715
+    .line 735
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
 
     aget-object v2, v2, v0
@@ -3680,7 +3707,7 @@
 
     if-nez v2, :cond_0
 
-    .line 716
+    .line 736
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
 
     aget-object v2, v2, v0
@@ -3731,7 +3758,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLRectangle;->moveLayoutAbsolute(FF)V
 
-    .line 717
+    .line 737
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkTextEditBG:[Lcom/samsung/android/glview/GLRectangle;
 
     aget-object v2, v2, v0
@@ -3766,13 +3793,13 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 714
+    .line 734
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 722
+    .line 742
     .end local v0    # "i":I
     .end local v1    # "scale":F
     :cond_1
@@ -3780,7 +3807,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 723
+    .line 743
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mStickerCoordinateUpdateListener:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$StickerCoordinateUpdateListener;
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getStickerEffectParameterString(IIIII)Ljava/lang/String;
@@ -3789,7 +3816,7 @@
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$StickerCoordinateUpdateListener;->onStickerCoordinateUpdate(Ljava/lang/String;)V
 
-    .line 725
+    .line 745
     :cond_2
     return-void
 .end method
@@ -3798,20 +3825,20 @@
     .locals 6
 
     .prologue
-    .line 728
+    .line 748
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mUpdateWatermarkCaptureImageThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
     invoke-virtual {v2}, Ljava/util/concurrent/ThreadPoolExecutor;->shutdown()V
 
-    .line 729
+    .line 749
     const/4 v1, 0x0
 
-    .line 730
+    .line 750
     .local v1, "terminated":Z
     :goto_0
     if-nez v1, :cond_0
 
-    .line 732
+    .line 752
     :try_start_0
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mUpdateWatermarkCaptureImageThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
@@ -3827,11 +3854,11 @@
 
     goto :goto_0
 
-    .line 733
+    .line 753
     :catch_0
     move-exception v0
 
-    .line 734
+    .line 754
     .local v0, "e":Ljava/lang/InterruptedException;
     const-string v2, "StickerRectHandler"
 
@@ -3841,7 +3868,7 @@
 
     goto :goto_0
 
-    .line 737
+    .line 757
     .end local v0    # "e":Ljava/lang/InterruptedException;
     :cond_0
     return-void
@@ -3855,59 +3882,59 @@
 
     const/4 v1, 0x0
 
-    .line 740
+    .line 760
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 741
+    .line 761
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 742
+    .line 762
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x0
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 743
+    .line 763
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x1f4
 
     invoke-virtual {v0, v4, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 744
+    .line 764
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x258
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 745
+    .line 765
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x384
 
     invoke-virtual {v0, v4, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 746
+    .line 766
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x3e8
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 747
+    .line 767
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x514
 
     invoke-virtual {v0, v4, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 748
+    .line 768
     return-void
 .end method
 
@@ -3915,21 +3942,21 @@
     .locals 2
 
     .prologue
-    .line 751
+    .line 771
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 752
+    .line 772
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 753
+    .line 773
     return-void
 .end method
 
@@ -3937,21 +3964,21 @@
     .locals 2
 
     .prologue
-    .line 756
+    .line 776
     const-string v0, "StickerRectHandler"
 
     const-string v1, "stopHideRectHandlerTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 757
+    .line 777
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 758
+    .line 778
     return-void
 .end method
 
@@ -3963,19 +3990,19 @@
 
     const/4 v2, 0x1
 
-    .line 761
+    .line 781
     const-string v0, "StickerRectHandler"
 
     const-string v1, "updateWatermarkImage start"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 762
+    .line 782
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkInfo:Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
 
     if-eqz v0, :cond_2
 
-    .line 763
+    .line 783
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkInfo:Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
 
     invoke-direct {p0, v5, v0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getWatermarkImage(ILcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;)Landroid/graphics/Bitmap;
@@ -3984,7 +4011,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkPreviewBitmap:Landroid/graphics/Bitmap;
 
-    .line 764
+    .line 784
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkImageUpdateListener:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$WatermarkImageUpdateListener;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkPreviewBitmap:Landroid/graphics/Bitmap;
@@ -4003,7 +4030,7 @@
 
     invoke-interface {v0, v5, v1, v3, v4}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$WatermarkImageUpdateListener;->onWatermarkImageUpdate(ILjava/lang/Object;II)V
 
-    .line 766
+    .line 786
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mUpdateWatermarkCaptureImageThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
     if-eqz v0, :cond_0
@@ -4024,13 +4051,13 @@
 
     if-eqz v0, :cond_1
 
-    .line 767
+    .line 787
     :cond_0
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mUpdateWatermarkCaptureImageThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
-    .line 768
+    .line 788
     new-instance v1, Ljava/util/concurrent/ThreadPoolExecutor;
 
     const-wide/16 v4, 0xa
@@ -4047,7 +4074,7 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mUpdateWatermarkCaptureImageThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
 
-    .line 769
+    .line 789
     new-instance v0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mUpdateWatermarkCaptureImageThreadPool:Ljava/util/concurrent/ThreadPoolExecutor;
@@ -4056,7 +4083,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mLastestTaskExecutor:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;
 
-    .line 771
+    .line 791
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mLastestTaskExecutor:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;
 
@@ -4066,7 +4093,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->execute(Ljava/lang/Runnable;)V
 
-    .line 782
+    .line 802
     :cond_2
     return-void
 .end method
@@ -4511,13 +4538,9 @@
 
     invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
 
-    invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->getRotateDegree()I
-
-    move-result v3
-
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v1, v2, v3}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->checkRectBoundary(Landroid/graphics/Rect;Landroid/graphics/Point;I)Z
+    invoke-direct {v0, v1, v2, v7}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->checkRectBoundary(Landroid/graphics/Rect;Landroid/graphics/Point;I)Z
 
     move-result v1
 
@@ -5014,7 +5037,7 @@
 
     .line 356
     .local v4, "height":I
-    const v0, 0x7f0a0222
+    const v0, 0x7f0a0225
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

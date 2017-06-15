@@ -17,21 +17,21 @@
     .param p1, "cameraContext"    # Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     .prologue
-    .line 37
+    .line 38
     const v0, 0x7f0900ca
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;-><init>(I)V
 
-    .line 39
+    .line 40
     iput-object p1, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 40
+    .line 41
     invoke-direct {p0}, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->initCommandIdList()V
 
-    .line 41
+    .line 42
     invoke-direct {p0}, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->initMenuResource()V
 
-    .line 42
+    .line 43
     return-void
 .end method
 
@@ -39,7 +39,7 @@
     .locals 2
 
     .prologue
-    .line 58
+    .line 59
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
     const/16 v1, 0x1e78
@@ -50,7 +50,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 59
+    .line 60
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
     const/16 v1, 0x1e79
@@ -61,12 +61,12 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 60
+    .line 61
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_STICKER:Z
 
     if-eqz v0, :cond_0
 
-    .line 61
+    .line 62
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
     const/16 v1, 0x2711
@@ -77,13 +77,13 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 63
+    .line 64
     :cond_0
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_WATERMARK:Z
 
     if-eqz v0, :cond_1
 
-    .line 64
+    .line 65
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
     const/16 v1, 0x2712
@@ -94,13 +94,13 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 66
+    .line 67
     :cond_1
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_STICKER:Z
 
     if-eqz v0, :cond_2
 
-    .line 67
+    .line 68
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
     const/16 v1, 0x2713
@@ -111,7 +111,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 69
+    .line 70
     :cond_2
     return-void
 .end method
@@ -130,7 +130,7 @@
 
     const/4 v9, 0x0
 
-    .line 72
+    .line 73
     iget-object v6, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
     invoke-virtual {v6}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -154,13 +154,13 @@
 
     move-result v1
 
-    .line 73
+    .line 74
     .local v1, "commandId":I
     invoke-static {v1}, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->get(I)Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
 
     move-result-object v2
 
-    .line 74
+    .line 75
     .local v2, "resIDs":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     new-instance v0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
@@ -188,7 +188,7 @@
 
     invoke-direct {v0, v6}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;-><init>([I)V
 
-    .line 75
+    .line 76
     .local v0, "bundle":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     iget-object v6, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mMenuResource:Ljava/util/ArrayList;
 
@@ -196,7 +196,7 @@
 
     goto :goto_0
 
-    .line 78
+    .line 79
     .end local v0    # "bundle":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     .end local v1    # "commandId":I
     .end local v2    # "resIDs":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
@@ -209,19 +209,23 @@
 
     if-eqz v6, :cond_3
 
-    .line 79
-    :cond_1
-    invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->getAllStickers()Ljava/util/LinkedHashMap;
-
-    move-result-object v3
-
     .line 80
-    .local v3, "stickerModes":Ljava/util/LinkedHashMap;, "Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
-    invoke-virtual {v3}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
+    :cond_1
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->getAllStickers()Ljava/util/LinkedHashMap;
 
     move-result-object v6
 
-    invoke-interface {v6}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v6}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
+
+    move-result-object v6
+
+    invoke-direct {v4, v6}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 81
+    .local v4, "stickerPackageList":Ljava/util/List;, "Ljava/util/List<Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
+    invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
 
@@ -235,24 +239,24 @@
 
     invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v3
 
-    check-cast v4, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
+    check-cast v3, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    .line 81
-    .local v4, "stickerPackage":Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
-    iget-boolean v7, v4, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->isPreloaded:Z
+    .line 82
+    .local v3, "stickerPackage":Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
+    iget-boolean v7, v3, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->isPreloaded:Z
 
     if-nez v7, :cond_2
 
-    .line 82
+    .line 83
     iget-object v7, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v7}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v7
 
-    iget-object v8, v4, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->packageName:Ljava/lang/String;
+    iget-object v8, v3, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->packageName:Ljava/lang/String;
 
     invoke-static {v7, v8}, Lcom/sec/android/app/camera/util/Util;->isPkgExist(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -260,8 +264,8 @@
 
     if-eqz v7, :cond_2
 
-    .line 86
-    iget-object v7, v4, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->packageName:Ljava/lang/String;
+    .line 87
+    iget-object v7, v3, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->packageName:Ljava/lang/String;
 
     invoke-static {v7}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->getStickerType(Ljava/lang/String;)I
 
@@ -269,10 +273,10 @@
 
     packed-switch v7, :pswitch_data_0
 
-    .line 97
+    .line 98
     const/4 v5, -0x1
 
-    .line 100
+    .line 101
     .local v5, "titleResId":I
     :goto_2
     new-instance v0, Lcom/sec/android/app/camera/resourcedata/StickerMenuResourceBundle;
@@ -281,17 +285,17 @@
 
     new-array v7, v7, [I
 
-    iget v8, v4, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->representativeNormalResourceId:I
+    iget v8, v3, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->representativeNormalResourceId:I
 
     aput v8, v7, v9
 
-    iget v8, v4, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->representativePressedResourceId:I
+    iget v8, v3, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->representativePressedResourceId:I
 
     aput v8, v7, v10
 
     aput v9, v7, v11
 
-    iget v8, v4, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->commandId:I
+    iget v8, v3, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->commandId:I
 
     aput v8, v7, v12
 
@@ -299,57 +303,55 @@
 
     invoke-direct {v0, v7}, Lcom/sec/android/app/camera/resourcedata/StickerMenuResourceBundle;-><init>([I)V
 
-    .line 101
+    .line 102
     .local v0, "bundle":Lcom/sec/android/app/camera/resourcedata/StickerMenuResourceBundle;
-    iget-object v7, v4, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->packageName:Ljava/lang/String;
+    iget-object v7, v3, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->packageName:Ljava/lang/String;
 
     invoke-virtual {v0, v7}, Lcom/sec/android/app/camera/resourcedata/StickerMenuResourceBundle;->setPackage(Ljava/lang/String;)V
 
-    .line 102
+    .line 103
     iget-object v7, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mMenuResource:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 88
+    .line 89
     .end local v0    # "bundle":Lcom/sec/android/app/camera/resourcedata/StickerMenuResourceBundle;
     .end local v5    # "titleResId":I
     :pswitch_0
     const v5, 0x7f090168
 
-    .line 89
+    .line 90
     .restart local v5    # "titleResId":I
     goto :goto_2
 
-    .line 91
+    .line 92
     .end local v5    # "titleResId":I
     :pswitch_1
     const v5, 0x7f090038
 
-    .line 92
+    .line 93
     .restart local v5    # "titleResId":I
     goto :goto_2
-
-    .line 94
-    .end local v5    # "titleResId":I
-    :pswitch_2
-    const v5, 0x7f09022c
 
     .line 95
+    .end local v5    # "titleResId":I
+    :pswitch_2
+    const v5, 0x7f09022f
+
+    .line 96
     .restart local v5    # "titleResId":I
     goto :goto_2
 
-    .line 106
-    .end local v3    # "stickerModes":Ljava/util/LinkedHashMap;, "Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
-    .end local v4    # "stickerPackage":Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
+    .line 107
+    .end local v3    # "stickerPackage":Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
+    .end local v4    # "stickerPackageList":Ljava/util/List;, "Ljava/util/List<Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
     .end local v5    # "titleResId":I
     :cond_3
     return-void
 
-    .line 86
-    nop
-
+    .line 87
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -364,17 +366,17 @@
     .locals 1
 
     .prologue
-    .line 46
+    .line 47
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mMenuResource:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 47
+    .line 48
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mCommandIdList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 48
+    .line 49
     return-void
 .end method
 
@@ -382,21 +384,21 @@
     .locals 2
 
     .prologue
-    .line 51
+    .line 52
     const-string v0, "EffectStickerCategoryResourceData"
 
     const-string v1, "refreshMenuResource"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 53
+    .line 54
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->mMenuResource:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 54
+    .line 55
     invoke-direct {p0}, Lcom/sec/android/app/camera/resourcedata/EffectStickerCategoryResourceData;->initMenuResource()V
 
-    .line 55
+    .line 56
     return-void
 .end method

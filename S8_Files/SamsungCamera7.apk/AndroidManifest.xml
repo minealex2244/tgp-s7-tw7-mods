@@ -177,7 +177,7 @@
                 <action android:name="com.samsung.android.sdk.bixby.APP_SERVICE"/>
             </intent-filter>
         </service>
-        <meta-data android:name="SPDE.build.signature" android:value="3671685/11662421/SEP81-release/SamsungCamera-701100-7.0.68"/>
+        <meta-data android:name="SPDE.build.signature" android:value="3859797/12657514/SEP81-release/SamsungCamera-701100-7.0.75"/>
         <meta-data android:name="SPDE.env.version" android:value="2.2.3/L24.3.7/24.3.3"/>
     </application>
 </manifest>

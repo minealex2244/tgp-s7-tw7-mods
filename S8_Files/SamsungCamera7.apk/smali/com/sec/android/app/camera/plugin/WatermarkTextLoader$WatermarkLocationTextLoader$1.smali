@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     .prologue
-    .line 1272
+    .line 1274
     iput-object p1, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +51,7 @@
     .locals 0
 
     .prologue
-    .line 1272
+    .line 1274
     check-cast p1, Lorg/json/JSONObject;
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->onResponse(Lorg/json/JSONObject;)V
@@ -64,19 +64,19 @@
     .param p1, "arg0"    # Lorg/json/JSONObject;
 
     .prologue
-    .line 1275
+    .line 1277
     const-string v10, "WatermarkTextLoader"
 
     const-string v11, "onResponse"
 
     invoke-static {v10, v11}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1277
+    .line 1279
     invoke-virtual {p1}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v3
 
-    .line 1278
+    .line 1280
     .local v3, "it":Ljava/util/Iterator;, "Ljava/util/Iterator<Ljava/lang/String;>;"
     :cond_0
     :goto_0
@@ -86,14 +86,14 @@
 
     if-eqz v10, :cond_4
 
-    .line 1279
+    .line 1281
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/lang/String;
 
-    .line 1280
+    .line 1282
     .local v4, "key":Ljava/lang/String;
     const-string v10, "WatermarkTextLoader"
 
@@ -117,7 +117,7 @@
 
     invoke-static {v10, v11}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1281
+    .line 1283
     const-string v10, "LocalizedName"
 
     invoke-virtual {v4, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -126,13 +126,13 @@
 
     if-eqz v10, :cond_1
 
-    .line 1283
+    .line 1285
     :try_start_0
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1284
+    .line 1286
     .local v1, "dist":Ljava/lang/String;
     if-eqz v1, :cond_1
 
@@ -142,13 +142,13 @@
 
     if-nez v10, :cond_1
 
-    .line 1285
+    .line 1287
     iget-object v10, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # setter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mDist:Ljava/lang/String;
-    invoke-static {v10, v1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$602(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10, v1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$702(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1286
+    .line 1288
     const-string v10, "WatermarkTextLoader"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -164,7 +164,7 @@
     iget-object v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mDist:Ljava/lang/String;
-    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$600(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$700(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -180,7 +180,7 @@
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 1292
+    .line 1294
     .end local v1    # "dist":Ljava/lang/String;
     :cond_1
     :goto_1
@@ -192,7 +192,7 @@
 
     if-eqz v10, :cond_2
 
-    .line 1294
+    .line 1296
     :try_start_1
     const-string v10, "SupplementalAdminAreas"
 
@@ -200,7 +200,7 @@
 
     move-result-object v0
 
-    .line 1295
+    .line 1297
     .local v0, "Area":Lorg/json/JSONArray;
     if-eqz v0, :cond_2
 
@@ -210,7 +210,7 @@
 
     if-eqz v10, :cond_2
 
-    .line 1296
+    .line 1298
     new-instance v8, Lorg/json/JSONObject;
 
     const/4 v10, 0x0
@@ -221,7 +221,7 @@
 
     invoke-direct {v8, v10}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 1297
+    .line 1299
     .local v8, "myJsonObject":Lorg/json/JSONObject;
     const-string v10, "LocalizedName"
 
@@ -229,7 +229,7 @@
 
     move-result-object v6
 
-    .line 1298
+    .line 1300
     .local v6, "mCityFromJson":Ljava/lang/String;
     if-eqz v6, :cond_2
 
@@ -239,7 +239,7 @@
 
     if-nez v10, :cond_2
 
-    .line 1299
+    .line 1301
     iget-object v10, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     const/4 v11, 0x0
@@ -255,9 +255,9 @@
     move-result-object v11
 
     # setter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mCity:Ljava/lang/String;
-    invoke-static {v10, v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$702(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10, v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$802(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1300
+    .line 1302
     const-string v10, "WatermarkTextLoader"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -273,7 +273,7 @@
     iget-object v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mCity:Ljava/lang/String;
-    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$700(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$800(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -289,7 +289,7 @@
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 1308
+    .line 1310
     .end local v0    # "Area":Lorg/json/JSONArray;
     .end local v6    # "mCityFromJson":Ljava/lang/String;
     .end local v8    # "myJsonObject":Lorg/json/JSONObject;
@@ -302,7 +302,7 @@
 
     move-result-object v9
 
-    .line 1313
+    .line 1315
     .local v9, "obj":Lorg/json/JSONObject;
     const-string v10, "Country"
 
@@ -312,7 +312,7 @@
 
     if-eqz v10, :cond_3
 
-    .line 1315
+    .line 1317
     :try_start_3
     const-string v10, "LocalizedName"
 
@@ -320,7 +320,7 @@
 
     move-result-object v5
 
-    .line 1316
+    .line 1318
     .local v5, "localizedName":Ljava/lang/String;
     if-eqz v5, :cond_3
 
@@ -330,13 +330,13 @@
 
     if-nez v10, :cond_3
 
-    .line 1317
+    .line 1319
     iget-object v10, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # setter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mCountry:Ljava/lang/String;
-    invoke-static {v10, v5}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$802(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10, v5}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$902(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1318
+    .line 1320
     const-string v10, "WatermarkTextLoader"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -352,7 +352,7 @@
     iget-object v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mCountry:Ljava/lang/String;
-    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$800(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -368,7 +368,7 @@
     :try_end_3
     .catch Lorg/json/JSONException; {:try_start_3 .. :try_end_3} :catch_4
 
-    .line 1324
+    .line 1326
     .end local v5    # "localizedName":Ljava/lang/String;
     :cond_3
     :goto_3
@@ -380,7 +380,7 @@
 
     if-eqz v10, :cond_0
 
-    .line 1326
+    .line 1328
     :try_start_4
     iget-object v10, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
@@ -391,9 +391,9 @@
     move-result-object v11
 
     # setter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v10, v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$902(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10, v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1002(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1327
+    .line 1329
     const-string v10, "WatermarkTextLoader"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -409,7 +409,7 @@
     iget-object v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1000(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -423,11 +423,11 @@
 
     invoke-static {v10, v11}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1328
+    .line 1330
     iget-object v10, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v10}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1000(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -436,7 +436,7 @@
     iget-object v10, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v10}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1000(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -446,18 +446,18 @@
 
     if-nez v10, :cond_0
 
-    .line 1329
+    .line 1331
     iget-object v10, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v10}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1000(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v10
 
     iget-object v11, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1000(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -470,7 +470,7 @@
     iget-object v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1000(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -482,7 +482,7 @@
 
     move-result-object v7
 
-    .line 1330
+    .line 1332
     .local v7, "mProv":Ljava/lang/String;
     if-eqz v7, :cond_0
 
@@ -494,13 +494,13 @@
 
     if-eqz v10, :cond_0
 
-    .line 1331
+    .line 1333
     iget-object v10, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     iget-object v11, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1000(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -509,7 +509,7 @@
     iget-object v13, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mProvince:Ljava/lang/String;
-    invoke-static {v13}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$900(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v13}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$1000(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v13
 
@@ -524,9 +524,9 @@
     move-result-object v11
 
     # setter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mCity:Ljava/lang/String;
-    invoke-static {v10, v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$702(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10, v11}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$802(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1332
+    .line 1334
     const-string v10, "WatermarkTextLoader"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -542,7 +542,7 @@
     iget-object v12, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$1;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     # getter for: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->mCity:Ljava/lang/String;
-    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$700(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
+    invoke-static {v12}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->access$800(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -560,12 +560,12 @@
 
     goto/16 :goto_0
 
-    .line 1335
+    .line 1337
     .end local v7    # "mProv":Ljava/lang/String;
     :catch_0
     move-exception v2
 
-    .line 1336
+    .line 1338
     .local v2, "e":Lorg/json/JSONException;
     const-string v10, "WatermarkTextLoader"
 
@@ -595,13 +595,13 @@
 
     goto/16 :goto_0
 
-    .line 1288
+    .line 1290
     .end local v2    # "e":Lorg/json/JSONException;
     .end local v9    # "obj":Lorg/json/JSONObject;
     :catch_1
     move-exception v2
 
-    .line 1289
+    .line 1291
     .restart local v2    # "e":Lorg/json/JSONException;
     const-string v10, "WatermarkTextLoader"
 
@@ -631,12 +631,12 @@
 
     goto/16 :goto_1
 
-    .line 1303
+    .line 1305
     .end local v2    # "e":Lorg/json/JSONException;
     :catch_2
     move-exception v2
 
-    .line 1304
+    .line 1306
     .restart local v2    # "e":Lorg/json/JSONException;
     const-string v10, "WatermarkTextLoader"
 
@@ -666,12 +666,12 @@
 
     goto/16 :goto_2
 
-    .line 1309
+    .line 1311
     .end local v2    # "e":Lorg/json/JSONException;
     :catch_3
     move-exception v2
 
-    .line 1310
+    .line 1312
     .restart local v2    # "e":Lorg/json/JSONException;
     const-string v10, "WatermarkTextLoader"
 
@@ -701,13 +701,13 @@
 
     goto/16 :goto_0
 
-    .line 1320
+    .line 1322
     .end local v2    # "e":Lorg/json/JSONException;
     .restart local v9    # "obj":Lorg/json/JSONObject;
     :catch_4
     move-exception v2
 
-    .line 1321
+    .line 1323
     .restart local v2    # "e":Lorg/json/JSONException;
     const-string v10, "WatermarkTextLoader"
 
@@ -737,7 +737,7 @@
 
     goto/16 :goto_3
 
-    .line 1340
+    .line 1342
     .end local v2    # "e":Lorg/json/JSONException;
     .end local v4    # "key":Ljava/lang/String;
     .end local v9    # "obj":Lorg/json/JSONObject;

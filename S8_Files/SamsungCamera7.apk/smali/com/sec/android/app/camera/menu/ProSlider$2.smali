@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/ProSlider;
 
     .prologue
-    .line 495
+    .line 504
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ProSlider$2;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 498
+    .line 507
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -60,26 +60,26 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 499
+    .line 508
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$2;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->restartSliderMenuTimer()V
 
-    .line 500
+    .line 509
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$2;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProSliderLoggingListener:Lcom/sec/android/app/camera/menu/ProSlider$ProSliderLoggingListener;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderLoggingListener;->onKelvinSliderLoggingEvent()V
 
-    .line 504
+    .line 513
     :goto_0
     const/4 v0, 0x0
 
     return v0
 
-    .line 502
+    .line 511
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$2;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 

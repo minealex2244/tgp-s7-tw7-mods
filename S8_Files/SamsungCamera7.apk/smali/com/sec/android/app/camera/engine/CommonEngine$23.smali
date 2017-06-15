@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 6850
+    .line 6941
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$23;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,21 +43,21 @@
     .param p2, "camera"    # Lcom/samsung/android/camera/core/SemCamera;
 
     .prologue
-    .line 6853
+    .line 6944
     const-string v1, "TakePicture as Video SnapShot Wait Callback"
 
     const/4 v2, 0x0
 
     invoke-static {v1, v2}, Lcom/sec/android/app/TraceWrapper;->asyncTraceEnd(Ljava/lang/String;I)V
 
-    .line 6855
+    .line 6946
     const-string v1, "CommonEngine"
 
     const-string v2, "Video SnapShot Jpeg Image callback"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6857
+    .line 6948
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;
@@ -66,15 +66,15 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 6971
+    .line 7062
     .local v0, "savingThread":Ljava/lang/Thread;
     const-string v1, "savingThread"
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 6972
+    .line 7063
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 6973
+    .line 7064
     return-void
 .end method

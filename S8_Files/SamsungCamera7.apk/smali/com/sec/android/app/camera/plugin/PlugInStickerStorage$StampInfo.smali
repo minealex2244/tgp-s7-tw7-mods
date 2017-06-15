@@ -32,7 +32,7 @@
     .param p7, "commandId"    # I
 
     .prologue
-    .line 357
+    .line 378
     move-object v0, p0
 
     move-object v1, p1
@@ -47,12 +47,12 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
-    .line 359
+    .line 380
     iput p4, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StampInfo;->previewResourceWidth:I
 
-    .line 360
+    .line 381
     iput p5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StampInfo;->previewResourceHeight:I
 
-    .line 361
+    .line 382
     return-void
 .end method

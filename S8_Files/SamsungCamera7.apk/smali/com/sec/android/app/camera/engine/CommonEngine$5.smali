@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 4610
+    .line 4665
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$5;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,28 +41,28 @@
     .locals 2
 
     .prologue
-    .line 4613
+    .line 4668
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$5;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mEngineStateListener:Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$900(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1000(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 4614
+    .line 4669
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$5;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mEngineStateListener:Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$900(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1000(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$5;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1000(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/engine/AbstractCeState;
 
     move-result-object v1
 
@@ -72,7 +72,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine$EngineStateListener;->onEngineStateChanged(Lcom/sec/android/app/camera/interfaces/Engine$CeState;)V
 
-    .line 4616
+    .line 4671
     :cond_0
     return-void
 .end method

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     .prologue
-    .line 154
+    .line 156
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 157
+    .line 159
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v3
@@ -57,12 +57,12 @@
     :goto_0
     packed-switch v2, :pswitch_data_1
 
-    .line 172
+    .line 174
     :cond_1
     :goto_1
     return-void
 
-    .line 157
+    .line 159
     :pswitch_0
     const-string v4, "camera.action.ACTION_BEAUTY_UI_UPDATED"
 
@@ -76,7 +76,7 @@
 
     goto :goto_0
 
-    .line 159
+    .line 161
     :pswitch_1
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
@@ -90,19 +90,19 @@
 
     move-result v0
 
-    .line 160
+    .line 162
     .local v0, "beautyMode":I
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->refreshSlider(I)V
     invoke-static {v2, v0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$200(Lcom/sec/android/app/camera/menu/BeautyListMenu;I)V
 
-    .line 161
+    .line 163
     const/4 v2, 0x3
 
     if-ne v0, v2, :cond_1
 
-    .line 162
+    .line 164
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/BeautyListMenu;->mItemList:Landroid/util/SparseArray;
@@ -118,23 +118,23 @@
 
     check-cast v1, Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
-    .line 163
+    .line 165
     .local v1, "shapeCorrectionItem":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     if-eqz v1, :cond_1
 
-    .line 164
+    .line 166
     const/16 v2, 0x71
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->updateToggleButton(I)V
 
-    .line 165
+    .line 167
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->setSelectedToggleImage(Z)V
 
     goto :goto_1
 
-    .line 157
+    .line 159
     :pswitch_data_0
     .packed-switch 0x79e1b9b9
         :pswitch_0

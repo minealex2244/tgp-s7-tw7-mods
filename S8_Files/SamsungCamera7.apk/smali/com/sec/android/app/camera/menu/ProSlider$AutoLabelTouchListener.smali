@@ -27,7 +27,7 @@
     .locals 0
 
     .prologue
-    .line 772
+    .line 781
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/menu/ProSlider$1;
 
     .prologue
-    .line 772
+    .line 781
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;-><init>(Lcom/sec/android/app/camera/menu/ProSlider;)V
 
     return-void
@@ -54,7 +54,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 800
+    .line 809
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
@@ -64,7 +64,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 801
+    .line 810
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
@@ -81,7 +81,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLView;->setTint(I)V
 
-    .line 802
+    .line 811
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSelectedLabel:Lcom/samsung/android/glview/GLView;
@@ -93,7 +93,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLView;->setShaderProgram(I)V
 
-    .line 805
+    .line 814
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
@@ -104,7 +104,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 823
+    .line 832
     :goto_0
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
@@ -123,7 +123,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTint(I)V
 
-    .line 824
+    .line 833
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mAutoButton:Lcom/samsung/android/glview/GLButton;
@@ -135,7 +135,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setSelected(Z)V
 
-    .line 825
+    .line 834
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSlider:Lcom/sec/android/app/camera/widget/gl/TickSlider;
@@ -147,21 +147,21 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/TickSlider;->setMarkerVisible(I)V
 
-    .line 827
+    .line 836
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->hideValueText()V
 
-    .line 828
+    .line 837
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->restartSliderMenuTimer()V
 
-    .line 829
+    .line 838
     :cond_1
     return-void
 
-    .line 807
+    .line 816
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
@@ -169,7 +169,7 @@
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;->onShutterSpeedValueMenuSelect(I)V
 
-    .line 808
+    .line 817
     const-string v0, "2027"
 
     const-string v1, "1"
@@ -184,7 +184,7 @@
 
     goto :goto_0
 
-    .line 811
+    .line 820
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
@@ -199,14 +199,14 @@
 
     if-nez v0, :cond_1
 
-    .line 814
+    .line 823
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProSliderValueSelectListener:Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;->onISOValueMenuSelect(I)V
 
-    .line 815
+    .line 824
     const-string v0, "2021"
 
     const-string v1, "1"
@@ -221,7 +221,7 @@
 
     goto :goto_0
 
-    .line 818
+    .line 827
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
@@ -231,7 +231,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;->onManualFocusValueMenuSelect(I)V
 
-    .line 819
+    .line 828
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProSliderLoggingListener:Lcom/sec/android/app/camera/menu/ProSlider$ProSliderLoggingListener;
@@ -242,7 +242,7 @@
 
     goto :goto_0
 
-    .line 805
+    .line 814
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -260,7 +260,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 775
+    .line 784
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
@@ -269,13 +269,13 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 776
+    .line 785
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->handleTouchEvent(Lcom/samsung/android/glview/GLView;)V
 
-    .line 777
+    .line 786
     const/4 v0, 0x1
 
-    .line 779
+    .line 788
     :goto_0
     return v0
 
@@ -291,7 +291,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 785
+    .line 794
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
@@ -319,17 +319,17 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 790
+    .line 799
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
     if-ne v0, v2, :cond_0
 
-    .line 791
+    .line 800
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->handleTouchEvent(Lcom/samsung/android/glview/GLView;)V
 
-    .line 792
+    .line 801
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProSliderLoggingListener:Lcom/sec/android/app/camera/menu/ProSlider$ProSliderLoggingListener;
@@ -343,11 +343,11 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderLoggingListener;->onProSliderLoggingEvent(I)V
 
-    .line 796
+    .line 805
     :goto_0
     return v2
 
-    .line 794
+    .line 803
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$AutoLabelTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 

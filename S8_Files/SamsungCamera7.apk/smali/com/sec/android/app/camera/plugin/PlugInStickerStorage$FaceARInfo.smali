@@ -29,7 +29,7 @@
     .param p6, "commandId"    # I
 
     .prologue
-    .line 336
+    .line 357
     move-object v0, p0
 
     move-object v1, p1
@@ -44,9 +44,9 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
-    .line 338
+    .line 359
     iput-object p4, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$FaceARInfo;->sceneType:Ljava/lang/String;
 
-    .line 339
+    .line 360
     return-void
 .end method

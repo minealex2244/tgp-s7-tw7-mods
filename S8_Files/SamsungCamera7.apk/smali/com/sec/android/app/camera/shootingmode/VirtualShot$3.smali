@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     .prologue
-    .line 540
+    .line 539
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     iput p2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->val$warn_state:I
@@ -47,17 +47,17 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 543
+    .line 542
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->val$warn_state:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 561
+    .line 560
     :cond_0
     :goto_0
     return-void
 
-    .line 546
+    .line 545
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
@@ -68,7 +68,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 547
+    .line 546
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
@@ -80,7 +80,7 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 548
+    .line 547
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -96,7 +96,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 549
+    .line 548
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopVirtualShot()V
@@ -104,7 +104,7 @@
 
     goto :goto_0
 
-    .line 551
+    .line 550
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
@@ -121,7 +121,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 552
+    .line 551
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$3;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
@@ -129,7 +129,7 @@
 
     goto :goto_0
 
-    .line 543
+    .line 542
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

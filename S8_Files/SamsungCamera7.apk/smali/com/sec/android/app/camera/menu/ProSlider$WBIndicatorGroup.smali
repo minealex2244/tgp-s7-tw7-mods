@@ -41,7 +41,7 @@
     .param p8, "settingId"    # I
 
     .prologue
-    .line 1059
+    .line 1070
     move-object/from16 v0, p1
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorGroup;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
@@ -58,17 +58,17 @@
 
     move/from16 v6, p6
 
-    .line 1060
+    .line 1071
     invoke-direct/range {v1 .. v6}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
-    .line 1057
+    .line 1066
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v2, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorGroup;->mList:Ljava/util/ArrayList;
 
-    .line 1062
+    .line 1073
     const/4 v11, 0x0
 
     .local v11, "i":I
@@ -79,7 +79,7 @@
 
     if-ge v11, v2, :cond_0
 
-    .line 1063
+    .line 1074
     move/from16 v0, p8
 
     invoke-static {v0, v11}, Lcom/sec/android/app/camera/command/CommandIdMap;->getCommandId(II)I
@@ -90,7 +90,7 @@
 
     move-result-object v14
 
-    .line 1065
+    .line 1076
     .local v14, "res":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     new-instance v1, Lcom/samsung/android/glview/GLButton;
 
@@ -127,7 +127,7 @@
 
     invoke-direct/range {v1 .. v10}, Lcom/samsung/android/glview/GLButton;-><init>(Lcom/samsung/android/glview/GLContext;FFFFIIII)V
 
-    .line 1066
+    .line 1077
     .local v1, "wbIndicator":Lcom/samsung/android/glview/GLButton;
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$2400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -146,37 +146,37 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1067
+    .line 1078
     aget v2, p7, v11
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setTag(I)V
 
-    .line 1068
+    .line 1079
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1069
+    .line 1080
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1070
+    .line 1081
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1071
+    .line 1082
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setClickable(Z)V
 
-    .line 1072
+    .line 1083
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setFocusable(Z)V
 
-    .line 1073
+    .line 1084
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBIndicatorTouchListener:Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;
 
@@ -184,7 +184,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 1074
+    .line 1085
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBIndicatorTouchListener:Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3400(Lcom/sec/android/app/camera/menu/ProSlider;)Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;
 
@@ -192,7 +192,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    .line 1076
+    .line 1087
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->WB_LABEL_GROUP_HEIGHT:F
     invoke-static/range {p1 .. p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3500(Lcom/sec/android/app/camera/menu/ProSlider;)F
 
@@ -222,7 +222,7 @@
 
     div-float v12, v2, v3
 
-    .line 1077
+    .line 1088
     .local v12, "offset":F
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLButton;->getHeight()F
 
@@ -234,30 +234,51 @@
 
     mul-float v13, v2, v3
 
-    .line 1078
+    .line 1089
     .local v13, "posY":F
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2, v13}, Lcom/samsung/android/glview/GLButton;->moveBaseLayout(FF)V
 
-    .line 1080
+    .line 1091
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorGroup;->mList:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1081
+    .line 1092
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1062
+    .line 1073
     add-int/lit8 v11, v11, 0x1
 
     goto/16 :goto_0
 
-    .line 1083
+    .line 1094
     .end local v1    # "wbIndicator":Lcom/samsung/android/glview/GLButton;
     .end local v12    # "offset":F
     .end local v13    # "posY":F
     .end local v14    # "res":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     :cond_0
     return-void
+.end method
+
+
+# virtual methods
+.method public getList()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/samsung/android/glview/GLView;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    .line 1068
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorGroup;->mList:Ljava/util/ArrayList;
+
+    return-object v0
 .end method

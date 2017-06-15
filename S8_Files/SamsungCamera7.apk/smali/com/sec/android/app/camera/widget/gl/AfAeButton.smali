@@ -98,7 +98,7 @@
     invoke-direct {p0, v2, p2, p3}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 43
-    const v2, 0x7f0a02b4
+    const v2, 0x7f0a02b8
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -107,7 +107,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->AFAE_CIRCLE_THICKNESS:F
 
     .line 44
-    const v2, 0x7f0a0225
+    const v2, 0x7f0a0228
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -116,7 +116,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->AFAE_TEXT_SIZE:F
 
     .line 45
-    const v2, 0x7f0a0227
+    const v2, 0x7f0a022a
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -125,7 +125,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->AFAE_TEXT_WIDTH:F
 
     .line 46
-    const v2, 0x7f0a0226
+    const v2, 0x7f0a0229
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -134,7 +134,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->AFAE_TEXT_HEIGHT:F
 
     .line 47
-    const v2, 0x7f0a0223
+    const v2, 0x7f0a0226
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -143,7 +143,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->AFAE_FOCUS_MARGIN:F
 
     .line 48
-    const v2, 0x7f0a02b3
+    const v2, 0x7f0a02b7
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -154,7 +154,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->AFAE_BASE_WIDTH:I
 
     .line 49
-    const v2, 0x7f0a02b2
+    const v2, 0x7f0a02b6
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -165,7 +165,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/AfAeButton;->AFAE_BASE_HEIGHT:I
 
     .line 50
-    const v2, 0x7f0a0224
+    const v2, 0x7f0a0227
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

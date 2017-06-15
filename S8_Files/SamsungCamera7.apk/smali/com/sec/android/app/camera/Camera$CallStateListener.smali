@@ -23,13 +23,13 @@
     .locals 0
 
     .prologue
-    .line 7923
+    .line 7947
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    .line 7924
+    .line 7948
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
-    .line 7925
+    .line 7949
     return-void
 .end method
 
@@ -38,16 +38,16 @@
     .param p2, "subscriptionID"    # I
 
     .prologue
-    .line 7927
+    .line 7951
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    .line 7928
+    .line 7952
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
-    .line 7929
+    .line 7953
     invoke-virtual {p0, p2}, Lcom/sec/android/app/camera/Camera$CallStateListener;->semSetSubscriptionId(I)V
 
-    .line 7930
+    .line 7954
     return-void
 .end method
 
@@ -65,7 +65,7 @@
 
     const/4 v4, 0x0
 
-    .line 7934
+    .line 7958
     const-string v0, "Camera7"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -88,10 +88,10 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7936
+    .line 7960
     packed-switch p1, :pswitch_data_0
 
-    .line 7975
+    .line 7999
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-static {v0}, Lcom/sec/android/app/camera/util/CallState;->isOtherVTCallOngoing(Landroid/content/Context;)Z
@@ -100,7 +100,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 7976
+    .line 8000
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
@@ -110,7 +110,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 7977
+    .line 8001
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
@@ -120,7 +120,7 @@
 
     invoke-virtual {v0, v5}, Lcom/sec/android/app/camera/Camera$MainHandler;->removeMessages(I)V
 
-    .line 7978
+    .line 8002
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
@@ -132,7 +132,7 @@
 
     invoke-virtual {v0, v5, v2, v3}, Lcom/sec/android/app/camera/Camera$MainHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 7990
+    .line 8014
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -153,23 +153,23 @@
 
     if-nez v0, :cond_1
 
-    .line 7991
+    .line 8015
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # setter for: Lcom/sec/android/app/camera/Camera;->mStartAttachActivityOnResume:Z
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4402(Lcom/sec/android/app/camera/Camera;Z)Z
 
-    .line 7992
+    .line 8016
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->startAttachActivity()V
 
-    .line 7996
+    .line 8020
     :cond_1
     :goto_1
     return-void
 
-    .line 7938
+    .line 7962
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -192,7 +192,7 @@
 
     if-nez v0, :cond_5
 
-    .line 7939
+    .line 7963
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -207,7 +207,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 7940
+    .line 7964
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->isAttachMode()Z
@@ -216,20 +216,20 @@
 
     if-eqz v0, :cond_3
 
-    .line 7941
+    .line 7965
     const-string v0, "Camera7"
 
     const-string v1, "set flag to launch cropImage after phone call.."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7942
+    .line 7966
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # setter for: Lcom/sec/android/app/camera/Camera;->mStartAttachActivityOnResume:Z
     invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4402(Lcom/sec/android/app/camera/Camera;Z)Z
 
-    .line 7958
+    .line 7982
     :cond_3
     :goto_2
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -248,7 +248,7 @@
 
     goto :goto_1
 
-    .line 7944
+    .line 7968
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -258,7 +258,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 7945
+    .line 7969
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -270,7 +270,7 @@
 
     goto :goto_2
 
-    .line 7948
+    .line 7972
     :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -285,7 +285,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 7949
+    .line 7973
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     new-instance v1, Lcom/sec/android/app/camera/Camera$CallStateListener$1;
@@ -296,7 +296,7 @@
 
     goto :goto_2
 
-    .line 7961
+    .line 7985
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -307,19 +307,19 @@
 
     if-nez v0, :cond_1
 
-    .line 7964
+    .line 7988
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # setter for: Lcom/sec/android/app/camera/Camera;->mIsCalling:Z
     invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4502(Lcom/sec/android/app/camera/Camera;Z)Z
 
-    .line 7965
+    .line 7989
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # invokes: Lcom/sec/android/app/camera/Camera;->finishTimerCount()V
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$4600(Lcom/sec/android/app/camera/Camera;)V
 
-    .line 7967
+    .line 7991
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -329,7 +329,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 7968
+    .line 7992
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -339,13 +339,13 @@
 
     invoke-interface {v0, v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setCallStatus(IZ)V
 
-    .line 7969
+    .line 7993
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # invokes: Lcom/sec/android/app/camera/Camera;->setBaseMenuRecordButtonDim(Z)V
     invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$4700(Lcom/sec/android/app/camera/Camera;Z)V
 
-    .line 7972
+    .line 7996
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -363,7 +363,7 @@
 
     goto/16 :goto_1
 
-    .line 7980
+    .line 8004
     :cond_7
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -373,7 +373,7 @@
 
     if-nez v0, :cond_0
 
-    .line 7981
+    .line 8005
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -383,7 +383,7 @@
 
     if-eqz v0, :cond_8
 
-    .line 7982
+    .line 8006
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -393,20 +393,20 @@
 
     invoke-interface {v0, v4, v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setCallStatus(IZ)V
 
-    .line 7983
+    .line 8007
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # invokes: Lcom/sec/android/app/camera/Camera;->setBaseMenuRecordButtonDim(Z)V
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4700(Lcom/sec/android/app/camera/Camera;Z)V
 
-    .line 7985
+    .line 8009
     :cond_8
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # setter for: Lcom/sec/android/app/camera/Camera;->mIsCalling:Z
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$4502(Lcom/sec/android/app/camera/Camera;Z)Z
 
-    .line 7987
+    .line 8011
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->getContext()Landroid/content/Context;
@@ -423,7 +423,7 @@
 
     goto/16 :goto_0
 
-    .line 7936
+    .line 7960
     nop
 
     :pswitch_data_0

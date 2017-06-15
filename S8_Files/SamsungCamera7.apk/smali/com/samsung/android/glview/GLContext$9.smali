@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/glview/GLContext;
 
     .prologue
-    .line 2189
+    .line 2190
     iput-object p1, p0, Lcom/samsung/android/glview/GLContext$9;->this$0:Lcom/samsung/android/glview/GLContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 2
 
     .prologue
-    .line 2192
+    .line 2193
     iget-object v0, p0, Lcom/samsung/android/glview/GLContext$9;->this$0:Lcom/samsung/android/glview/GLContext;
 
     invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
@@ -51,6 +51,6 @@
     # setter for: Lcom/samsung/android/glview/GLContext;->mChoreographer:Landroid/view/Choreographer;
     invoke-static {v0, v1}, Lcom/samsung/android/glview/GLContext;->access$902(Lcom/samsung/android/glview/GLContext;Landroid/view/Choreographer;)Landroid/view/Choreographer;
 
-    .line 2193
+    .line 2194
     return-void
 .end method

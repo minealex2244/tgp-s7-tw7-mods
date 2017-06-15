@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     .prologue
-    .line 1341
+    .line 1343
     iput-object p1, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader$2;->this$0:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,13 +42,13 @@
     .param p1, "arg0"    # Lcom/android/volley/VolleyError;
 
     .prologue
-    .line 1344
+    .line 1346
     const-string v0, "WatermarkTextLoader"
 
     const-string v1, "getLocationInfo onErrorResponse"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1345
+    .line 1347
     return-void
 .end method

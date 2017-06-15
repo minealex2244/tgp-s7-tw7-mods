@@ -743,9 +743,9 @@
     .param p1, "pos"    # I
 
     .prologue
-    const v4, 0x7f09028c
+    const v4, 0x7f09028f
 
-    const v3, 0x7f09028b
+    const v3, 0x7f09028e
 
     .line 415
     const-string v1, "FaceAreaManager"
@@ -883,7 +883,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028d
+    const v2, 0x7f090290
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -902,7 +902,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090284
+    const v2, 0x7f090287
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -921,7 +921,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f09028a
+    const v2, 0x7f09028d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -991,7 +991,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f090283
+    const v2, 0x7f090286
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

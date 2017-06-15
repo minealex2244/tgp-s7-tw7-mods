@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;
 
     .prologue
-    .line 2205
+    .line 2210
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "commandId"    # I
 
     .prologue
-    .line 2208
+    .line 2213
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
@@ -59,7 +59,7 @@
 
     if-eq v1, p2, :cond_0
 
-    .line 2209
+    .line 2214
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
@@ -69,7 +69,7 @@
     # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->updateCategoryLayout(II)V
     invoke-static {v1, p2, v2}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$700(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;II)V
 
-    .line 2211
+    .line 2216
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$CategoryMenuAdapter;
 
@@ -86,7 +86,7 @@
 
     check-cast v0, Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
 
-    .line 2212
+    .line 2217
     .local v0, "categoryItem":Lcom/sec/android/app/camera/widget/gl/EffectStickerCategoryItem;
     if-eqz v0, :cond_1
 
@@ -96,14 +96,14 @@
 
     if-nez v1, :cond_1
 
-    .line 2213
+    .line 2218
     invoke-static {p2}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogIdMap;->getEventIdByCommandId(I)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v1}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;)V
 
-    .line 2215
+    .line 2220
     :cond_1
     return-void
 .end method

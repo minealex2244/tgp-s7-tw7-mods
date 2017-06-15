@@ -64,7 +64,7 @@
 
     .prologue
     .line 40
-    const v0, 0x7f0a03ad
+    const v0, 0x7f0a03b0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -73,7 +73,7 @@
     sput v0, Lcom/sec/android/app/camera/provider/CameraGestureManager;->SWIPE_THRESHOLD_DISTANCE:F
 
     .line 44
-    const v0, 0x7f0a0389
+    const v0, 0x7f0a038c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -82,7 +82,7 @@
     sput v0, Lcom/sec/android/app/camera/provider/CameraGestureManager;->SCROLL_THRESHOLD_DISTANCE:F
 
     .line 48
-    const v0, 0x7f0a0212
+    const v0, 0x7f0a0215
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -91,7 +91,7 @@
     sput v0, Lcom/sec/android/app/camera/provider/CameraGestureManager;->SWIPE_THRESHOLD_VELOCITY:F
 
     .line 52
-    const v0, 0x7f0a0213
+    const v0, 0x7f0a0216
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -100,7 +100,7 @@
     sput v0, Lcom/sec/android/app/camera/provider/CameraGestureManager;->SWIPE_THRESHOLD_VELOCITY_PORTRAIT:F
 
     .line 56
-    const v0, 0x7f0a03ac
+    const v0, 0x7f0a03af
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -109,7 +109,7 @@
     sput v0, Lcom/sec/android/app/camera/provider/CameraGestureManager;->SWIPE_IGNORE_AREA_PORTRAIT:F
 
     .line 60
-    const v0, 0x7f0a03ab
+    const v0, 0x7f0a03ae
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -467,7 +467,7 @@
 
     .line 175
     .local v6, "orientation":I
-    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isFixedOrientation()Z
+    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isGLSurfaceOrientationFixed()Z
 
     move-result v3
 
@@ -989,7 +989,7 @@
 
     .line 295
     .local v6, "orientation":I
-    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isFixedOrientation()Z
+    invoke-static {}, Lcom/samsung/android/glview/GLContext;->isGLSurfaceOrientationFixed()Z
 
     move-result v3
 

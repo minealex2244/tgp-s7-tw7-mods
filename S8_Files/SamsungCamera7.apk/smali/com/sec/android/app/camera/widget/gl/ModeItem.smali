@@ -99,7 +99,7 @@
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 47
-    const v0, 0x7f0a0033
+    const v0, 0x7f0a0035
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -108,7 +108,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_MENU_ITEM_WIDTH:F
 
     .line 48
-    const v0, 0x7f0a0032
+    const v0, 0x7f0a0034
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -117,7 +117,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_MENU_ITEM_HEIGHT:F
 
     .line 49
-    const v0, 0x7f0a0027
+    const v0, 0x7f0a0029
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -126,7 +126,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_TITLE_HEIGHT:F
 
     .line 50
-    const v0, 0x7f0a008f
+    const v0, 0x7f0a0091
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -148,7 +148,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_ICON_POS_X:F
 
     .line 52
-    const v0, 0x7f0a0025
+    const v0, 0x7f0a0027
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -157,7 +157,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_ICON_POS_Y:F
 
     .line 53
-    const v0, 0x7f0a0168
+    const v0, 0x7f0a016b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -166,7 +166,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_DOWNLOAD_ICON_HEIGHT:F
 
     .line 54
-    const v0, 0x7f0a0179
+    const v0, 0x7f0a017c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -175,7 +175,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_DELETE_ICON_WIDTH:F
 
     .line 55
-    const v0, 0x7f0a0024
+    const v0, 0x7f0a0026
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -184,7 +184,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_DELETE_ICON_TOP_MARGIN:F
 
     .line 56
-    const v0, 0x7f0a0023
+    const v0, 0x7f0a0025
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -193,7 +193,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_DELETE_ICON_LEFT_MARGIN:F
 
     .line 57
-    const v0, 0x7f0a0026
+    const v0, 0x7f0a0028
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -220,7 +220,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_TITLE_SELECTED_FONT_COLOR:I
 
     .line 60
-    const v0, 0x7f0a0351
+    const v0, 0x7f0a0354
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -231,7 +231,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_ITEM_SHORTCUT_SIZE:I
 
     .line 61
-    const v0, 0x7f0a003b
+    const v0, 0x7f0a003d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -240,7 +240,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->MODE_SHORTCUT_OFFSET_Y:F
 
     .line 65
-    const v0, 0x7f0a0028
+    const v0, 0x7f0a002a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1027,7 +1027,7 @@
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v2, 0x7f090271
+    const v2, 0x7f090274
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

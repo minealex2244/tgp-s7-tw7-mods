@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/Auto;
 
     .prologue
-    .line 622
+    .line 624
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/Auto$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,12 +44,12 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 625
+    .line 627
     const-string v2, "1005"
 
     invoke-static {v2}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;)V
 
-    .line 627
+    .line 629
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -65,7 +65,7 @@
 
     invoke-interface {v2, v3, v5}, Lcom/sec/android/app/camera/interfaces/PopupLayoutController;->setPopupEnabled(Lcom/sec/android/app/camera/interfaces/PopupLayoutController$PopupID;Z)V
 
-    .line 629
+    .line 631
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -96,7 +96,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 630
+    .line 632
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -108,11 +108,11 @@
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showCameraDialog(Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
 
-    .line 642
+    .line 644
     :goto_0
     return v5
 
-    .line 633
+    .line 635
     :cond_0
     new-instance v1, Landroid/content/Intent;
 
@@ -120,18 +120,18 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 634
+    .line 636
     .local v1, "intent":Landroid/content/Intent;
     const-string v2, "LAUNCH_MODE"
 
     invoke-virtual {v1, v2, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 635
+    .line 637
     const-string v2, "INTELLIGENT_MODE"
 
     invoke-virtual {v1, v2, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 637
+    .line 639
     :try_start_0
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
@@ -146,7 +146,7 @@
 
     invoke-virtual {v2, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 638
+    .line 640
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Auto$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Auto;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -168,11 +168,11 @@
 
     goto :goto_0
 
-    .line 639
+    .line 641
     :catch_0
     move-exception v0
 
-    .line 640
+    .line 642
     .local v0, "ex":Landroid/content/ActivityNotFoundException;
     const-string v2, "Auto"
 

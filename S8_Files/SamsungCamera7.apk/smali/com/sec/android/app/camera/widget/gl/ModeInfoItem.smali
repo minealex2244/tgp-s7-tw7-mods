@@ -107,7 +107,7 @@
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 46
-    const v0, 0x7f0a0173
+    const v0, 0x7f0a0176
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -116,7 +116,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_POS_X:F
 
     .line 47
-    const v0, 0x7f0a0174
+    const v0, 0x7f0a0177
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -125,7 +125,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_WIDTH:F
 
     .line 48
-    const v0, 0x7f0a016d
+    const v0, 0x7f0a0170
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -134,7 +134,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_BUTTON_WIDTH:F
 
     .line 49
-    const v0, 0x7f0a016b
+    const v0, 0x7f0a016e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -143,7 +143,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_BUTTON_HEIGHT:F
 
     .line 50
-    const v0, 0x7f0a016c
+    const v0, 0x7f0a016f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -152,7 +152,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_BUTTON_LEFT_MARGIN:F
 
     .line 51
-    const v0, 0x7f0a0168
+    const v0, 0x7f0a016b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -161,7 +161,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_DOWNLOAD_ICON_HEIGHT:F
 
     .line 52
-    const v0, 0x7f0a0178
+    const v0, 0x7f0a017b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -170,7 +170,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_TITLE_WIDTH:F
 
     .line 53
-    const v0, 0x7f0a0176
+    const v0, 0x7f0a0179
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_TITLE_TEXT_HEIGHT:F
 
     .line 54
-    const v0, 0x7f0a0177
+    const v0, 0x7f0a017a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -197,7 +197,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_TITLE_FONT_COLOR:I
 
     .line 56
-    const v0, 0x7f0a028d
+    const v0, 0x7f0a0290
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -224,7 +224,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_DIVIDER_COLOR:I
 
     .line 59
-    const v0, 0x7f0a0171
+    const v0, 0x7f0a0174
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -233,7 +233,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_DIVIDER_POS_X:F
 
     .line 60
-    const v0, 0x7f0a0172
+    const v0, 0x7f0a0175
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -248,7 +248,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ITEM_HEIGHT:F
 
     .line 61
-    const v0, 0x7f0a016e
+    const v0, 0x7f0a0171
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -257,7 +257,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_MARGIN:F
 
     .line 62
-    const v0, 0x7f0a016f
+    const v0, 0x7f0a0172
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -266,7 +266,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_PADDING:F
 
     .line 63
-    const v0, 0x7f0a0170
+    const v0, 0x7f0a0173
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -335,7 +335,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_DIVIDER_WIDTH_LANDSCAPE:F
 
     .line 68
-    const v0, 0x7f0a02ed
+    const v0, 0x7f0a02f1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -344,7 +344,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_LINE_SPACING:F
 
     .line 69
-    const v0, 0x7f0a028c
+    const v0, 0x7f0a028f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

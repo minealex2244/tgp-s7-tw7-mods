@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 5068
+    .line 5128
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$8;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,16 +41,16 @@
     .locals 4
 
     .prologue
-    .line 5072
+    .line 5132
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$8;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->initializeMultiTrackRecording()V
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1200(Lcom/sec/android/app/camera/engine/CommonEngine;)V
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$1300(Lcom/sec/android/app/camera/engine/CommonEngine;)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5077
+    .line 5137
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$8;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/engine/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;
@@ -59,15 +59,15 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 5078
+    .line 5138
     :goto_0
     return-void
 
-    .line 5073
+    .line 5133
     :catch_0
     move-exception v0
 
-    .line 5074
+    .line 5134
     .local v0, "e":Ljava/lang/NullPointerException;
     const-string v1, "CommonEngine"
 

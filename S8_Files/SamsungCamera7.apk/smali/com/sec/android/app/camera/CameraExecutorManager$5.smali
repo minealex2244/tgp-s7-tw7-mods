@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/CameraExecutorManager;
 
     .prologue
-    .line 2297
+    .line 2258
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraExecutorManager$5;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
     iput-object p2, p0, Lcom/sec/android/app/camera/CameraExecutorManager$5;->val$frontCameraMenu:Lcom/sec/android/app/camera/menu/ModeListMenu;
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 2300
+    .line 2261
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraExecutorManager$5;->this$0:Lcom/sec/android/app/camera/CameraExecutorManager;
 
     # getter for: Lcom/sec/android/app/camera/CameraExecutorManager;->mCameraContext:Lcom/sec/android/app/camera/Camera;
@@ -63,6 +63,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 2307
+    .line 2268
     return-void
 .end method

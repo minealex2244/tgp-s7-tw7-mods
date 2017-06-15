@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     .prologue
-    .line 612
+    .line 614
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 615
+    .line 617
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SPOTLIGHT:Z
 
     if-eqz v0, :cond_1
@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 616
+    .line 618
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
@@ -65,13 +65,13 @@
 
     invoke-interface {v0, v1, v2}, Lcom/sec/android/app/camera/interfaces/MenuManager;->showMenu(IZ)Lcom/sec/android/app/camera/interfaces/MenuBase;
 
-    .line 617
+    .line 619
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideBeautyMenuButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$400(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
-    .line 618
+    .line 620
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -87,7 +87,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 619
+    .line 621
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     const/4 v1, 0x1
@@ -95,13 +95,13 @@
     # setter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mIsActivatedSpotLightSlider:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$602(Lcom/sec/android/app/camera/shootingmode/Selfie;Z)Z
 
-    .line 620
+    .line 622
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->updateSpotLightVI()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$700(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
-    .line 626
+    .line 628
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
@@ -109,27 +109,27 @@
     # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideVisionIntelligenceButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$800(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
-    .line 627
+    .line 629
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideVisionIntelligenceEffect()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$900(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
-    .line 628
+    .line 630
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideStickerShortcutButton()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Selfie;->access$1000(Lcom/sec/android/app/camera/shootingmode/Selfie;)V
 
-    .line 629
+    .line 631
     const-string v0, "1006"
 
     invoke-static {v0}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;)V
 
-    .line 630
+    .line 632
     return v2
 
-    .line 623
+    .line 625
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
@@ -142,7 +142,7 @@
 
     invoke-interface {v0, v1, v2}, Lcom/sec/android/app/camera/interfaces/MenuManager;->showMenu(IZ)Lcom/sec/android/app/camera/interfaces/MenuBase;
 
-    .line 624
+    .line 626
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$2;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/Selfie;->hideBeautyMenuButton()V

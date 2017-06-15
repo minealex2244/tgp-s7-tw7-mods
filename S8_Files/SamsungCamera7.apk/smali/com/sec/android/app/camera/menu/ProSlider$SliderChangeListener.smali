@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1026
+    .line 1035
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ProSlider$SliderChangeListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/menu/ProSlider$1;
 
     .prologue
-    .line 1026
+    .line 1035
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProSlider$SliderChangeListener;-><init>(Lcom/sec/android/app/camera/menu/ProSlider;)V
 
     return-void
@@ -53,12 +53,12 @@
     .param p1, "step"    # I
 
     .prologue
-    .line 1029
+    .line 1038
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$SliderChangeListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->setChangedStep(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3000(Lcom/sec/android/app/camera/menu/ProSlider;I)V
 
-    .line 1030
+    .line 1039
     return-void
 .end method

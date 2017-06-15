@@ -27,16 +27,16 @@
     .param p2, "modeid"    # I
 
     .prologue
-    .line 5093
+    .line 5120
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5094
+    .line 5121
     iput p1, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl$SettingValue;->mMenuid:I
 
-    .line 5095
+    .line 5122
     iput p2, p0, Lcom/sec/android/app/camera/setting/CameraSettingsImpl$SettingValue;->mModeid:I
 
-    .line 5096
+    .line 5123
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .param p3, "x2"    # Lcom/sec/android/app/camera/setting/CameraSettingsImpl$1;
 
     .prologue
-    .line 5089
+    .line 5116
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl$SettingValue;-><init>(II)V
 
     return-void

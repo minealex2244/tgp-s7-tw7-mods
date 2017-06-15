@@ -35,10 +35,10 @@
     .locals 0
 
     .prologue
-    .line 580
+    .line 581
     invoke-direct {p0}, Lcom/samsung/android/apex/motionphoto/SemApexParameters;-><init>()V
 
-    .line 581
+    .line 582
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .param p1, "x0"    # Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$1;
 
     .prologue
-    .line 573
+    .line 574
     invoke-direct {p0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;-><init>()V
 
     return-void
@@ -58,12 +58,12 @@
     .param p1, "paramters"    # Ljava/lang/String;
 
     .prologue
-    .line 588
+    .line 589
     invoke-direct {p0}, Lcom/samsung/android/apex/motionphoto/SemApexParameters;-><init>()V
 
-    .line 589
+    .line 590
     invoke-virtual {p0, p1}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$Parameters;->unflatten(Ljava/lang/String;)V
 
-    .line 590
+    .line 591
     return-void
 .end method

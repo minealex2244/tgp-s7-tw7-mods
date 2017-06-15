@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
     .prologue
-    .line 771
+    .line 791
     iput-object p1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$2;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .prologue
     const/4 v4, 0x3
 
-    .line 774
+    .line 794
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$2;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
     # getter for: Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;->mWatermarkInfo:Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
@@ -53,7 +53,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 775
+    .line 795
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$2;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$2;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    .line 776
+    .line 796
     .local v0, "captureBitmap":Landroid/graphics/Bitmap;
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$2;->this$0:Lcom/sec/android/app/camera/widget/gl/StickerRectHandler;
 
@@ -87,14 +87,14 @@
 
     invoke-interface {v1, v4, v0, v2, v3}, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$WatermarkImageUpdateListener;->onWatermarkImageUpdate(ILjava/lang/Object;II)V
 
-    .line 777
+    .line 797
     const-string v1, "StickerRectHandler"
 
     const-string v2, "updateWatermarkImage end"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 779
+    .line 799
     .end local v0    # "captureBitmap":Landroid/graphics/Bitmap;
     :cond_0
     return-void

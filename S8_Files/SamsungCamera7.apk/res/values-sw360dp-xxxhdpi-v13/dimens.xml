@@ -6,7 +6,7 @@
     <dimen name="wide_ratio_preview_left">0.0dip</dimen>
     <dimen name="basemenu_group_width">117.0dip</dimen>
     <dimen name="basemenu_group_width_multiwindow">78.0dip</dimen>
-    <dimen name="beauty_level_slider_bottom_margin_for_keyboard_cover">140.0dip</dimen>
+    <dimen name="beauty_level_slider_bottom_margin_for_keyboard_cover">110.0dip</dimen>
     <dimen name="beauty_menu_bottom_margin">110.0dip</dimen>
     <dimen name="beauty_menu_button_pos_x_for_mobile_keyboard">130.0dip</dimen>
     <dimen name="burst_panoramashot_livepreview_landscape_width">517.0dip</dimen>
@@ -17,6 +17,8 @@
     <dimen name="dualshot_splitview_normal_ratio_width">240.0dip</dimen>
     <dimen name="dualshot_splitview_start_posy">90.0dip</dimen>
     <dimen name="dualshot_splitview_width">320.0dip</dimen>
+    <dimen name="effect_bottom_area_width">40.0dip</dimen>
+    <dimen name="effect_category_area_width">40.0dip</dimen>
     <dimen name="item_dual_effect_type_item_text_size">13.0dip</dimen>
     <dimen name="item_dual_effect_type_text_height">25.0dip</dimen>
     <dimen name="item_dual_effect_type_text_pos_y">92.0dip</dimen>

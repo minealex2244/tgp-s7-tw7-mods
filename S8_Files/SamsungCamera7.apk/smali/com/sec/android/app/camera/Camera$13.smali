@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 1807
+    .line 1809
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,17 +43,17 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 1810
+    .line 1812
     const-string v0, "BaseMenu-loading"
 
     invoke-static {v0, v4}, Lcom/sec/android/app/TraceWrapper;->asyncTraceBegin(Ljava/lang/String;I)V
 
-    .line 1811
+    .line 1813
     const-string v0, "Add View"
 
     invoke-static {v0, v4}, Lcom/sec/android/app/TraceWrapper;->asyncTraceBegin(Ljava/lang/String;I)V
 
-    .line 1814
+    .line 1816
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -86,7 +86,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1815
+    .line 1817
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -100,7 +100,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1816
+    .line 1818
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -121,7 +121,7 @@
     # setter for: Lcom/sec/android/app/camera/Camera;->mBaseMenu:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
     invoke-static {v1, v0}, Lcom/sec/android/app/camera/Camera;->access$2402(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/menu/AbstractBaseMenu;)Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
 
-    .line 1823
+    .line 1825
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -138,7 +138,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1824
+    .line 1826
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mBaseMenu:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
@@ -154,7 +154,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/OverlayHelpController;->showHelp(I)V
 
-    .line 1825
+    .line 1827
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mBaseMenu:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
@@ -172,7 +172,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/OverlayHelpController;->setOverlayHelpHideListener(Lcom/sec/android/app/camera/interfaces/OverlayHelpController$OverlayHelpHideListener;)V
 
-    .line 1837
+    .line 1839
     :cond_0
     const-string v0, "AXLOG"
 
@@ -206,7 +206,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1839
+    .line 1841
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -239,12 +239,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1840
+    .line 1842
     const-string v0, "BaseMenu-loading"
 
     invoke-static {v0, v4}, Lcom/sec/android/app/TraceWrapper;->asyncTraceEnd(Ljava/lang/String;I)V
 
-    .line 1841
+    .line 1843
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mIsDestroying:Z
@@ -254,11 +254,11 @@
 
     if-eqz v0, :cond_3
 
-    .line 1851
+    .line 1853
     :goto_1
     return-void
 
-    .line 1817
+    .line 1819
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -273,7 +273,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1818
+    .line 1820
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -296,7 +296,7 @@
 
     goto/16 :goto_0
 
-    .line 1820
+    .line 1822
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -318,7 +318,7 @@
 
     goto/16 :goto_0
 
-    .line 1844
+    .line 1846
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -328,7 +328,7 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/VisualInteractionProvider;->setPreviewRect()V
 
-    .line 1845
+    .line 1847
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mLaunchCheckLock:Ljava/lang/Object;
@@ -338,7 +338,7 @@
 
     monitor-enter v1
 
-    .line 1846
+    .line 1848
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -349,19 +349,19 @@
 
     if-eqz v0, :cond_4
 
-    .line 1847
+    .line 1849
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # invokes: Lcom/sec/android/app/camera/Camera;->onCameraEnterCompleted()V
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$2800(Lcom/sec/android/app/camera/Camera;)V
 
-    .line 1849
+    .line 1851
     :cond_4
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1850
+    .line 1852
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$13;->this$0:Lcom/sec/android/app/camera/Camera;
 
     const/4 v1, 0x0
@@ -371,7 +371,7 @@
 
     goto :goto_1
 
-    .line 1849
+    .line 1851
     :catchall_0
     move-exception v0
 

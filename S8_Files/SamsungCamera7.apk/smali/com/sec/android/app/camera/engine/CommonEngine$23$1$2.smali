@@ -27,7 +27,7 @@
     .param p1, "this$2"    # Lcom/sec/android/app/camera/engine/CommonEngine$23$1;
 
     .prologue
-    .line 6951
+    .line 7042
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1$2;->this$2:Lcom/sec/android/app/camera/engine/CommonEngine$23$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 6954
+    .line 7045
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1$2;->this$2:Lcom/sec/android/app/camera/engine/CommonEngine$23$1;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -49,7 +49,7 @@
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
@@ -63,6 +63,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 6955
+    .line 7046
     return-void
 .end method

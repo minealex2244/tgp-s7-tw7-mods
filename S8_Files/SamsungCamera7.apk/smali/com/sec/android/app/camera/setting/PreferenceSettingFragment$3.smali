@@ -391,7 +391,7 @@
 
     move-object/from16 v19, v0
 
-    const v20, 0x7f0901ed
+    const v20, 0x7f0901f0
 
     invoke-virtual/range {v19 .. v20}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -1290,17 +1290,26 @@
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->getContext()Landroid/content/Context;
+    # getter for: Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
+    invoke-static/range {v19 .. v19}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->access$000(Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;)Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     move-result-object v19
 
-    const-string v20, "pref_camera_dual_rear_resolution_key"
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment$3;->this$0:Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;
+
+    move-object/from16 v20, v0
+
+    invoke-virtual/range {v20 .. v20}, Lcom/sec/android/app/camera/setting/PreferenceSettingFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v20
 
     move-object/from16 v0, v19
 
     move-object/from16 v1, v20
 
-    invoke-static {v0, v1, v14}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->savePreferences(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-virtual {v0, v1, v14}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->saveDualCameraRearResolution(Landroid/content/Context;I)V
 
     .line 303
     move-object/from16 v0, p0

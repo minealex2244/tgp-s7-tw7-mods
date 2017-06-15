@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     .prologue
-    .line 228
+    .line 229
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,7 +49,7 @@
 
     const/4 v2, 0x0
 
-    .line 231
+    .line 232
     rem-int/lit8 v3, p2, 0x2
 
     if-eqz v3, :cond_0
@@ -66,15 +66,15 @@
     :cond_0
     move v1, v2
 
-    .line 250
+    .line 251
     :goto_0
     return v1
 
-    .line 235
+    .line 236
     :cond_1
     if-nez p1, :cond_3
 
-    .line 236
+    .line 237
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->getCategoryItemIndex()I
@@ -101,7 +101,7 @@
 
     move-result v0
 
-    .line 237
+    .line 238
     .local v0, "nextCategoryIndex":I
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
@@ -127,7 +127,7 @@
 
     if-eq v2, v3, :cond_2
 
-    .line 238
+    .line 239
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
@@ -144,7 +144,7 @@
     # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->updateCategoryLayout(II)V
     invoke-static {v2, v3, v5}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$700(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;II)V
 
-    .line 240
+    .line 241
     :cond_2
     const-string v2, "5055"
 
@@ -152,12 +152,12 @@
 
     goto :goto_0
 
-    .line 242
+    .line 243
     .end local v0    # "nextCategoryIndex":I
     :cond_3
     if-ne p1, v1, :cond_5
 
-    .line 243
+    .line 244
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->getCategoryItemIndex()I
@@ -184,7 +184,7 @@
 
     move-result v0
 
-    .line 244
+    .line 245
     .restart local v0    # "nextCategoryIndex":I
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
@@ -210,7 +210,7 @@
 
     if-eq v2, v3, :cond_4
 
-    .line 245
+    .line 246
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
@@ -227,7 +227,7 @@
     # invokes: Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->updateCategoryLayout(II)V
     invoke-static {v2, v3, v5}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->access$700(Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;II)V
 
-    .line 247
+    .line 248
     :cond_4
     const-string v2, "5055"
 
@@ -239,7 +239,7 @@
     :cond_5
     move v1, v2
 
-    .line 250
+    .line 251
     goto/16 :goto_0
 .end method
 
@@ -249,7 +249,7 @@
     .param p2, "orientation"    # I
 
     .prologue
-    .line 255
+    .line 256
     invoke-virtual {p0, p1, p2}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$1;->onFlingDirection(II)Z
 
     move-result v0

@@ -109,7 +109,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->SCREEN_HEIGHT:I
 
     .line 53
-    const v0, 0x7f0a005c
+    const v0, 0x7f0a005e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -118,7 +118,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->VIDEO_PREVIEW_POPUP_WIDTH:F
 
     .line 54
-    const v0, 0x7f0a005b
+    const v0, 0x7f0a005d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -127,7 +127,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->VIDEO_PREVIEW_POPUP_BOTTOM_MARGIN:F
 
     .line 56
-    const v0, 0x7f0a03e1
+    const v0, 0x7f0a03e4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -136,7 +136,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->VISION_INTELLIGENCE_POPUP_WIDTH:F
 
     .line 57
-    const v0, 0x7f0a03e2
+    const v0, 0x7f0a03e5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -145,7 +145,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->VISION_INTELLIGENC_POPUP_BOTTOM_MARGIN:F
 
     .line 59
-    const v0, 0x7f0a03bf
+    const v0, 0x7f0a03c2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -154,7 +154,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->POPUP_GROUP_RIGHT_GAP:F
 
     .line 61
-    const v0, 0x7f0a02a0
+    const v0, 0x7f0a02a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -170,7 +170,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->BASEMENU_GROUP_WIDTH:F
 
     .line 63
-    const v0, 0x7f0a0372
+    const v0, 0x7f0a0375
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->PAGE_NAVIGATOR_GROUP_HEIGHT:F
 
     .line 64
-    const v0, 0x7f0a0052
+    const v0, 0x7f0a0054
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -188,7 +188,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
     .line 65
-    const v0, 0x7f0a029e
+    const v0, 0x7f0a02a2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -197,7 +197,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->RECORDING_BUTTON_WIDTH:F
 
     .line 66
-    const v0, 0x7f0a0320
+    const v0, 0x7f0a0323
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -218,7 +218,7 @@
 
     sub-int/2addr v0, v1
 
-    const v1, 0x7f0a025f
+    const v1, 0x7f0a0262
 
     .line 68
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -793,9 +793,9 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->VIDEO_PREVIEW_POPUP_BOTTOM_MARGIN:F
 
-    const v6, 0x7f0901fc
+    const v6, 0x7f0901ff
 
-    const v7, 0x7f0901fb
+    const v7, 0x7f0901fe
 
     const v8, 0x7f0201f1
 
@@ -846,9 +846,9 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/menu/PopupLayout;->VISION_INTELLIGENC_POPUP_BOTTOM_MARGIN:F
 
-    const v6, 0x7f09027f
+    const v6, 0x7f090282
 
-    const v7, 0x7f09027e
+    const v7, 0x7f090281
 
     const v8, 0x7f0201f0
 

@@ -201,7 +201,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->SCREEN_HEIGHT:I
 
     .line 112
-    const v0, 0x7f0a013d
+    const v0, 0x7f0a0140
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -212,7 +212,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->FOOD_COLOR_TUNE_BUTTON_TOP_MARGIN:I
 
     .line 113
-    const v0, 0x7f0a032c
+    const v0, 0x7f0a032f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -311,7 +311,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->CIRCLE_EFFECT_GUIDE_FRAME_POS_Y:F
 
     .line 127
-    const v0, 0x7f0a032e
+    const v0, 0x7f0a0331
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1178,7 +1178,7 @@
 
     .line 724
     .local v3, "upperLimit":I
-    const v5, 0x7f0a02a0
+    const v5, 0x7f0a02a4
 
     invoke-static {v5}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1186,7 +1186,7 @@
 
     .line 725
     .local v2, "shutterButtonWidth":F
-    const v5, 0x7f0a0390
+    const v5, 0x7f0a0393
 
     invoke-static {v5}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -2024,7 +2024,7 @@
 
     .prologue
     .line 898
-    const v6, 0x7f0a032d
+    const v6, 0x7f0a0330
 
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

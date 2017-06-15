@@ -33,6 +33,8 @@
 
 .field public static final TEXT_TYPE_CHN_TEMPERATURE:I = 0x13
 
+.field public static final TEXT_TYPE_CHN_WEATHER_TEMPERATURE:I = 0x15
+
 .field public static final TEXT_TYPE_CITY_NAME:I = 0x14
 
 .field public static final TEXT_TYPE_CURRENT_DATE:I = 0x4
@@ -118,48 +120,48 @@
     .param p13, "vAlign"    # I
 
     .prologue
-    .line 526
+    .line 548
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 527
+    .line 549
     iput p1, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->textLeft:F
 
-    .line 528
+    .line 550
     iput p2, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->textTop:F
 
-    .line 529
+    .line 551
     iput p3, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->textWidth:F
 
-    .line 530
+    .line 552
     iput p4, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->textHeight:F
 
-    .line 531
+    .line 553
     iput-boolean p5, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->isEditable:Z
 
-    .line 532
+    .line 554
     iput-boolean p6, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->isVertical:Z
 
-    .line 533
+    .line 555
     iput-object p7, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->defaultText:Ljava/lang/String;
 
-    .line 534
+    .line 556
     iput p8, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->textType:I
 
-    .line 535
+    .line 557
     iput p9, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->fontSize:F
 
-    .line 536
+    .line 558
     iput p10, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->textFont:I
 
-    .line 537
+    .line 559
     iput p11, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->textColor:I
 
-    .line 538
+    .line 560
     iput p12, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->hAlign:I
 
-    .line 539
+    .line 561
     iput p13, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;->vAlign:I
 
-    .line 540
+    .line 562
     return-void
 .end method

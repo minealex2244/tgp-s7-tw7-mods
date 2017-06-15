@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 6811
+    .line 6826
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/samsung/android/sdk/cover/ScoverManager$StateListener;-><init>()V
@@ -43,7 +43,7 @@
 
     const/4 v3, 0x1
 
-    .line 6814
+    .line 6829
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mIsPausing:Z
@@ -53,7 +53,7 @@
 
     if-nez v0, :cond_1
 
-    .line 6815
+    .line 6830
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
@@ -65,7 +65,7 @@
 
     move-result-object p1
 
-    .line 6816
+    .line 6831
     if-eqz p1, :cond_0
 
     invoke-virtual {p1}, Lcom/samsung/android/sdk/cover/ScoverState;->isFakeCover()Z
@@ -74,7 +74,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 6817
+    .line 6832
     :cond_0
     const-string v0, "Camera7"
 
@@ -82,12 +82,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6846
+    .line 6861
     :cond_1
     :goto_0
     return-void
 
-    .line 6820
+    .line 6835
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -98,7 +98,7 @@
     # setter for: Lcom/sec/android/app/camera/Camera;->mCoverType:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camera;->access$3602(Lcom/sec/android/app/camera/Camera;I)I
 
-    .line 6821
+    .line 6836
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_HEART_RATE_SENSOR_SHUTTER:Z
 
     if-eqz v0, :cond_3
@@ -127,7 +127,7 @@
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    .line 6822
+    .line 6837
     # getter for: Lcom/sec/android/app/camera/Camera;->mCoverType:I
     invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3600(Lcom/sec/android/app/camera/Camera;)I
 
@@ -137,7 +137,7 @@
 
     if-eq v0, v1, :cond_3
 
-    .line 6824
+    .line 6839
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mIsCoverAttached:Z
@@ -153,7 +153,7 @@
 
     if-ne v0, v3, :cond_4
 
-    .line 6825
+    .line 6840
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->getContext()Landroid/content/Context;
@@ -168,7 +168,7 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/provider/CameraLocalBroadcastManager;->send(Landroid/content/Context;Landroid/content/Intent;)V
 
-    .line 6833
+    .line 6848
     :cond_3
     :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -180,7 +180,7 @@
     # setter for: Lcom/sec/android/app/camera/Camera;->mIsCoverAttached:Z
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camera;->access$3702(Lcom/sec/android/app/camera/Camera;Z)Z
 
-    .line 6834
+    .line 6849
     const-string v0, "Camera7"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -227,27 +227,27 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6836
+    .line 6851
     invoke-virtual {p1}, Lcom/samsung/android/sdk/cover/ScoverState;->getSwitchState()Z
 
     move-result v0
 
     if-ne v0, v3, :cond_5
 
-    .line 6837
+    .line 6852
     const-string v0, "Camera7"
 
     const-string v1, "State Cover Open"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6838
+    .line 6853
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # setter for: Lcom/sec/android/app/camera/Camera;->mIsCoverOpen:Z
     invoke-static {v0, v3}, Lcom/sec/android/app/camera/Camera;->access$3802(Lcom/sec/android/app/camera/Camera;Z)Z
 
-    .line 6839
+    .line 6854
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # invokes: Lcom/sec/android/app/camera/Camera;->setCoverModeChanged(Z)V
@@ -255,7 +255,7 @@
 
     goto/16 :goto_0
 
-    .line 6828
+    .line 6843
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -272,7 +272,7 @@
 
     if-nez v0, :cond_3
 
-    .line 6829
+    .line 6844
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->getContext()Landroid/content/Context;
@@ -289,7 +289,7 @@
 
     goto :goto_1
 
-    .line 6841
+    .line 6856
     :cond_5
     const-string v0, "Camera7"
 
@@ -297,13 +297,13 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6842
+    .line 6857
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # setter for: Lcom/sec/android/app/camera/Camera;->mIsCoverOpen:Z
     invoke-static {v0, v4}, Lcom/sec/android/app/camera/Camera;->access$3802(Lcom/sec/android/app/camera/Camera;Z)Z
 
-    .line 6843
+    .line 6858
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$27;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # invokes: Lcom/sec/android/app/camera/Camera;->setCoverModeChanged(Z)V

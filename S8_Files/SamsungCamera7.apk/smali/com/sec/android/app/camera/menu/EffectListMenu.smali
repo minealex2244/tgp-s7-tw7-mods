@@ -128,7 +128,7 @@
 
     .prologue
     .line 81
-    const v1, 0x7f0a027c
+    const v1, 0x7f0a027f
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -138,7 +138,7 @@
 
     int-to-float v7, v1
 
-    const v1, 0x7f0a027d
+    const v1, 0x7f0a0280
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -169,7 +169,7 @@
     invoke-direct/range {v1 .. v11}, Lcom/sec/android/app/camera/menu/AbstractMenu;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;Lcom/sec/android/app/camera/interfaces/Engine;Lcom/sec/android/app/camera/menu/MenuManagerImpl;ILcom/samsung/android/glview/GLViewGroup;FFLcom/sec/android/app/camera/menu/MenuResourceDepot;IZ)V
 
     .line 52
-    const v1, 0x7f0a027e
+    const v1, 0x7f0a0281
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -180,7 +180,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_MENU_WIDTH:I
 
     .line 53
-    const v1, 0x7f0a0279
+    const v1, 0x7f0a027c
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -191,7 +191,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_MENU_HEIGHT:I
 
     .line 54
-    const v1, 0x7f0a027b
+    const v1, 0x7f0a027e
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -202,7 +202,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_ITEM_WIDTH:I
 
     .line 55
-    const v1, 0x7f0a027a
+    const v1, 0x7f0a027d
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -213,7 +213,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_ITEM_HEIGHT:I
 
     .line 56
-    const v1, 0x7f0a0278
+    const v1, 0x7f0a027b
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -224,7 +224,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/menu/EffectListMenu;->EFFECT_LINE_THICKNESS:I
 
     .line 57
-    const v1, 0x7f0a027f
+    const v1, 0x7f0a0282
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

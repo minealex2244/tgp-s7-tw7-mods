@@ -33,17 +33,17 @@
     .param p1, "auto"    # Lcom/sec/android/app/camera/shootingmode/Auto;
 
     .prologue
-    .line 1462
+    .line 1464
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 1463
+    .line 1465
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;->mAuto:Ljava/lang/ref/WeakReference;
 
-    .line 1464
+    .line 1466
     return-void
 .end method
 
@@ -51,12 +51,12 @@
     .locals 1
 
     .prologue
-    .line 1487
+    .line 1489
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;->mAuto:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->clear()V
 
-    .line 1488
+    .line 1490
     return-void
 .end method
 
@@ -67,7 +67,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 1468
+    .line 1470
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Auto$AutoHandler;->mAuto:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -76,16 +76,16 @@
 
     check-cast v0, Lcom/sec/android/app/camera/shootingmode/Auto;
 
-    .line 1470
+    .line 1472
     .local v0, "auto":Lcom/sec/android/app/camera/shootingmode/Auto;
     if-nez v0, :cond_1
 
-    .line 1484
+    .line 1486
     :cond_0
     :goto_0
     return-void
 
-    .line 1474
+    .line 1476
     :cond_1
     iget v1, p1, Landroid/os/Message;->what:I
 
@@ -93,7 +93,7 @@
 
     goto :goto_0
 
-    .line 1476
+    .line 1478
     :pswitch_0
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$1100(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/samsung/android/glview/GLText;
@@ -102,7 +102,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1477
+    .line 1479
     # getter for: Lcom/sec/android/app/camera/shootingmode/Auto;->mStickerGuideText:Lcom/samsung/android/glview/GLText;
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/Auto;->access$1100(Lcom/sec/android/app/camera/shootingmode/Auto;)Lcom/samsung/android/glview/GLText;
 
@@ -114,7 +114,7 @@
 
     goto :goto_0
 
-    .line 1474
+    .line 1476
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

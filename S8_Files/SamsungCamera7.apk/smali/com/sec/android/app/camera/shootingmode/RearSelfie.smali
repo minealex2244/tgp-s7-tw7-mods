@@ -136,7 +136,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 103
-    const v0, 0x7f0a01cb
+    const v0, 0x7f0a01cd
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -145,7 +145,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->SELFIE_GUIDE_WIDTH:F
 
     .line 104
-    const v0, 0x7f0a01ca
+    const v0, 0x7f0a01cc
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -184,7 +184,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->SELFIE_GUIDE_POS_Y:F
 
     .line 108
-    const v0, 0x7f0a01cc
+    const v0, 0x7f0a01ce
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

@@ -56,7 +56,7 @@
 
     const/4 v3, 0x0
 
-    .line 1357
+    .line 1369
     new-instance v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     const-string v1, "IDLE"
@@ -65,7 +65,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->IDLE:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
-    .line 1361
+    .line 1373
     new-instance v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     const-string v1, "INITIALIZING"
@@ -74,7 +74,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->INITIALIZING:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
-    .line 1365
+    .line 1377
     new-instance v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     const-string v1, "INITIALIZED"
@@ -83,7 +83,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->INITIALIZED:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
-    .line 1369
+    .line 1381
     new-instance v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     const-string v1, "STARTING_PREVIEW"
@@ -92,7 +92,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->STARTING_PREVIEW:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
-    .line 1373
+    .line 1385
     new-instance v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     const-string v1, "PREVIEWING"
@@ -101,7 +101,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->PREVIEWING:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
-    .line 1377
+    .line 1389
     new-instance v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     const-string v1, "RECORDING"
@@ -112,7 +112,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->RECORDING:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
-    .line 1381
+    .line 1393
     new-instance v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     const-string v1, "SHUTDOWN"
@@ -123,7 +123,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->SHUTDOWN:Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
-    .line 1353
+    .line 1365
     const/4 v0, 0x7
 
     new-array v0, v0, [Lcom/sec/android/app/camera/interfaces/Engine$CeState;
@@ -174,7 +174,7 @@
     .end annotation
 
     .prologue
-    .line 1353
+    .line 1365
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -185,7 +185,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 1353
+    .line 1365
     const-class v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -201,7 +201,7 @@
     .locals 1
 
     .prologue
-    .line 1353
+    .line 1365
     sget-object v0, Lcom/sec/android/app/camera/interfaces/Engine$CeState;->$VALUES:[Lcom/sec/android/app/camera/interfaces/Engine$CeState;
 
     invoke-virtual {v0}, [Lcom/sec/android/app/camera/interfaces/Engine$CeState;->clone()Ljava/lang/Object;

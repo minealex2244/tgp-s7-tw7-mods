@@ -192,7 +192,7 @@
     return-void
 .end method
 
-.method static synthetic access$400(Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$500(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
     .param p0, "x0"    # Ljava/lang/String;
 
@@ -205,7 +205,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$500()[Ljava/lang/String;
+.method static synthetic access$600()[Ljava/lang/String;
     .locals 1
 
     .prologue
@@ -494,111 +494,111 @@
     .param p2, "textFont"    # I
 
     .prologue
-    .line 439
+    .line 441
     packed-switch p2, :pswitch_data_0
 
-    .line 491
+    .line 493
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoLightTypeface:Landroid/graphics/Typeface;
 
     if-nez v2, :cond_0
 
-    .line 492
+    .line 494
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoLightFont()Landroid/graphics/Typeface;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoLightTypeface:Landroid/graphics/Typeface;
 
-    .line 494
+    .line 496
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoLightTypeface:Landroid/graphics/Typeface;
 
     :goto_0
     return-object v2
 
-    .line 441
+    .line 443
     :pswitch_0
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoRegularTypeface:Landroid/graphics/Typeface;
 
     if-nez v2, :cond_1
 
-    .line 442
+    .line 444
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoRegular()Landroid/graphics/Typeface;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoRegularTypeface:Landroid/graphics/Typeface;
 
-    .line 444
+    .line 446
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoRegularTypeface:Landroid/graphics/Typeface;
 
     goto :goto_0
 
-    .line 446
+    .line 448
     :pswitch_1
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoBlackTypeface:Landroid/graphics/Typeface;
 
     if-nez v2, :cond_2
 
-    .line 447
+    .line 449
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoBlack()Landroid/graphics/Typeface;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoBlackTypeface:Landroid/graphics/Typeface;
 
-    .line 449
+    .line 451
     :cond_2
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoBlackTypeface:Landroid/graphics/Typeface;
 
     goto :goto_0
 
-    .line 451
+    .line 453
     :pswitch_2
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoLightTypeface:Landroid/graphics/Typeface;
 
     if-nez v2, :cond_3
 
-    .line 452
+    .line 454
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoLightFont()Landroid/graphics/Typeface;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoLightTypeface:Landroid/graphics/Typeface;
 
-    .line 454
+    .line 456
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mRobotoLightTypeface:Landroid/graphics/Typeface;
 
     goto :goto_0
 
-    .line 456
+    .line 458
     :pswitch_3
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mHansRegularTypeface:Landroid/graphics/Typeface;
 
     if-nez v2, :cond_4
 
-    .line 457
+    .line 459
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getHansRegular()Landroid/graphics/Typeface;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mHansRegularTypeface:Landroid/graphics/Typeface;
 
-    .line 459
+    .line 461
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mHansRegularTypeface:Landroid/graphics/Typeface;
 
     goto :goto_0
 
-    .line 461
+    .line 463
     :pswitch_4
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mShaonvTypeface:Landroid/graphics/Typeface;
 
     if-nez v2, :cond_5
 
-    .line 463
+    .line 465
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -614,7 +614,7 @@
 
     move-result-object v0
 
-    .line 464
+    .line 466
     .local v0, "am":Landroid/content/res/AssetManager;
     const-string v2, "fonts/Shaonv.ttf"
 
@@ -626,7 +626,7 @@
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 469
+    .line 471
     .end local v0    # "am":Landroid/content/res/AssetManager;
     :cond_5
     :goto_1
@@ -634,11 +634,11 @@
 
     goto :goto_0
 
-    .line 465
+    .line 467
     :catch_0
     move-exception v1
 
-    .line 466
+    .line 468
     .local v1, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoLightFont()Landroid/graphics/Typeface;
 
@@ -648,14 +648,14 @@
 
     goto :goto_1
 
-    .line 471
+    .line 473
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     :pswitch_5
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mKaitiTypeface:Landroid/graphics/Typeface;
 
     if-nez v2, :cond_6
 
-    .line 473
+    .line 475
     :try_start_1
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -671,7 +671,7 @@
 
     move-result-object v0
 
-    .line 474
+    .line 476
     .restart local v0    # "am":Landroid/content/res/AssetManager;
     const-string v2, "fonts/Kaiti.ttf"
 
@@ -683,7 +683,7 @@
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 479
+    .line 481
     .end local v0    # "am":Landroid/content/res/AssetManager;
     :cond_6
     :goto_2
@@ -691,11 +691,11 @@
 
     goto :goto_0
 
-    .line 475
+    .line 477
     :catch_1
     move-exception v1
 
-    .line 476
+    .line 478
     .restart local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoLightFont()Landroid/graphics/Typeface;
 
@@ -705,14 +705,14 @@
 
     goto :goto_2
 
-    .line 481
+    .line 483
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     :pswitch_6
     iget-object v2, p0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mMiaoTypeface:Landroid/graphics/Typeface;
 
     if-nez v2, :cond_7
 
-    .line 483
+    .line 485
     :try_start_2
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -728,7 +728,7 @@
 
     move-result-object v0
 
-    .line 484
+    .line 486
     .restart local v0    # "am":Landroid/content/res/AssetManager;
     const-string v2, "fonts/Miao.ttf"
 
@@ -740,7 +740,7 @@
     :try_end_2
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 489
+    .line 491
     .end local v0    # "am":Landroid/content/res/AssetManager;
     :cond_7
     :goto_3
@@ -748,11 +748,11 @@
 
     goto/16 :goto_0
 
-    .line 485
+    .line 487
     :catch_2
     move-exception v1
 
-    .line 486
+    .line 488
     .restart local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoLightFont()Landroid/graphics/Typeface;
 
@@ -762,7 +762,7 @@
 
     goto :goto_3
 
-    .line 439
+    .line 441
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -2526,7 +2526,7 @@
     .line 369
     packed-switch p1, :pswitch_data_0
 
-    .line 413
+    .line 415
     :goto_0
     :pswitch_0
     return-object v0
@@ -2749,6 +2749,17 @@
 
     goto/16 :goto_0
 
+    .line 413
+    :pswitch_15
+    sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mWatermarkWeatherTextLoader:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;
+
+    # invokes: Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->getWeatherAndTemperature()Ljava/lang/String;
+    invoke-static {v0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->access$400(Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto/16 :goto_0
+
     .line 369
     nop
 
@@ -2775,6 +2786,7 @@
         :pswitch_12
         :pswitch_13
         :pswitch_14
+        :pswitch_15
     .end packed-switch
 .end method
 
@@ -2784,25 +2796,25 @@
     .param p2, "loc"    # Landroid/location/Location;
 
     .prologue
-    .line 424
+    .line 426
     if-eqz p2, :cond_0
 
-    .line 425
+    .line 427
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mWatermarkLocationTextLoader:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;
 
     invoke-virtual {v0, p1, p2}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkLocationTextLoader;->loadWatermarkLocationText(Landroid/content/Context;Landroid/location/Location;)V
 
-    .line 427
+    .line 429
     :cond_0
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mWatermarkWeatherTextLoader:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkWeatherTextLoader;->loadWatermarkWeatherText(Landroid/content/Context;)V
 
-    .line 428
+    .line 430
     sget-object v0, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader;->mWatermarkDateTextLoader:Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/plugin/WatermarkTextLoader$WatermarkDateTextLoader;->loadWatermarkDateText()V
 
-    .line 429
+    .line 431
     return-void
 .end method

@@ -228,30 +228,30 @@
     .locals 3
 
     .prologue
-    .line 372
+    .line 375
     const-string v1, "PlugInStickerLoader"
 
     const-string v2, "checkUploadedStickerList"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 374
+    .line 377
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 375
+    .line 378
     .local v0, "serviceIntent":Landroid/content/Intent;
     const-string v1, "com.samsung.android.provider.stickerprovider.action.CHECK_UPLOADED_STICKER_LIST"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 376
+    .line 379
     const-string v1, "com.samsung.android.provider.stickerprovider"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 377
+    .line 380
     iget-object v1, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -260,7 +260,7 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 378
+    .line 381
     return-void
 .end method
 
@@ -347,17 +347,17 @@
     .param p1, "arg0"    # [Ljava/lang/Void;
 
     .prologue
-    .line 359
+    .line 362
     invoke-virtual {p0}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->loadStickers()V
 
-    .line 360
+    .line 363
     const/4 v0, 0x0
 
     return-object v0
 .end method
 
 .method public declared-synchronized loadStickers()V
-    .locals 53
+    .locals 59
 
     .prologue
     .line 163
@@ -371,22 +371,14 @@
     invoke-static {v1, v9}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 165
-    new-instance v51, Ljava/util/LinkedHashMap;
+    new-instance v53, Ljava/util/LinkedHashMap;
 
-    invoke-direct/range {v51 .. v51}, Ljava/util/LinkedHashMap;-><init>()V
+    invoke-direct/range {v53 .. v53}, Ljava/util/LinkedHashMap;-><init>()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
     .line 166
-    .local v51, "stickerPackageMap":Ljava/util/LinkedHashMap;, "Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
-    const/16 v50, 0x0
-
-    .line 167
-    .local v50, "stickerCount":I
-    const/16 v8, 0x2710
-
-    .line 168
-    .local v8, "stickerCommandId":I
+    .local v53, "stickerPackageMap":Ljava/util/LinkedHashMap;, "Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
     :try_start_1
     move-object/from16 v0, p0
 
@@ -427,10 +419,10 @@
     .local v46, "cursor":Landroid/database/Cursor;
     const/16 v17, 0x0
 
-    .line 169
+    .line 167
     if-nez v46, :cond_a
 
-    .line 170
+    .line 168
     :try_start_2
     const-string v1, "PlugInStickerLoader"
 
@@ -454,7 +446,7 @@
     .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_8
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
-    .line 347
+    .line 350
     .end local v46    # "cursor":Landroid/database/Cursor;
     :cond_0
     :goto_0
@@ -538,22 +530,30 @@
     const/16 v16, 0x0
 
     .line 234
+    const/16 v50, 0x0
+
+    .local v50, "stickerFaceARCount":I
+    move/from16 v51, v50
+
+    .line 235
+    .end local v50    # "stickerFaceARCount":I
+    .local v51, "stickerFaceARCount":I
     :goto_2
     :try_start_7
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_1a
+    if-eqz v1, :cond_1b
 
-    .line 235
+    .line 236
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->isCancelled()Z
 
     move-result v1
 
-    if-eqz v1, :cond_19
+    if-eqz v1, :cond_1a
 
-    .line 236
+    .line 237
     new-instance v1, Ljava/lang/IllegalStateException;
 
     invoke-direct {v1}, Ljava/lang/IllegalStateException;-><init>()V
@@ -561,31 +561,37 @@
     throw v1
     :try_end_7
     .catch Ljava/lang/Throwable; {:try_start_7 .. :try_end_7} :catch_2
-    .catchall {:try_start_7 .. :try_end_7} :catchall_6
+    .catchall {:try_start_7 .. :try_end_7} :catchall_8
 
     .line 233
     :catch_2
     move-exception v1
 
+    move/from16 v50, v51
+
+    .end local v51    # "stickerFaceARCount":I
+    .restart local v50    # "stickerFaceARCount":I
+    :goto_3
     :try_start_8
     throw v1
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 248
+    .line 249
     :catchall_0
     move-exception v9
 
-    move-object/from16 v52, v9
+    move-object/from16 v58, v9
 
     move-object v9, v1
 
-    move-object/from16 v1, v52
+    move-object/from16 v1, v58
 
-    :goto_3
+    .end local v50    # "stickerFaceARCount":I
+    :goto_4
     if-eqz v46, :cond_2
 
-    if-eqz v9, :cond_1c
+    if-eqz v9, :cond_1d
 
     :try_start_9
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
@@ -596,7 +602,7 @@
     .catchall {:try_start_9 .. :try_end_9} :catchall_3
 
     :cond_2
-    :goto_4
+    :goto_5
     :try_start_a
     throw v1
     :try_end_a
@@ -608,7 +614,7 @@
     :catch_3
     move-exception v47
 
-    .line 249
+    .line 250
     .restart local v47    # "e":Ljava/lang/NullPointerException;
     :try_start_b
     const-string v1, "PlugInStickerLoader"
@@ -619,10 +625,10 @@
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_3
 
-    .line 254
+    .line 255
     .end local v47    # "e":Ljava/lang/NullPointerException;
     :cond_3
-    :goto_5
+    :goto_6
     :try_start_c
     move-object/from16 v0, p0
 
@@ -663,23 +669,31 @@
     .restart local v46    # "cursor":Landroid/database/Cursor;
     const/4 v9, 0x0
 
-    .line 255
-    :goto_6
+    .line 256
+    const/16 v54, 0x0
+
+    .local v54, "stickerStampCount":I
+    move/from16 v55, v54
+
+    .line 257
+    .end local v54    # "stickerStampCount":I
+    .local v55, "stickerStampCount":I
+    :goto_7
     :try_start_d
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_1e
+    if-eqz v1, :cond_1f
 
-    .line 256
+    .line 258
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->isCancelled()Z
 
     move-result v1
 
-    if-eqz v1, :cond_1d
+    if-eqz v1, :cond_1e
 
-    .line 257
+    .line 259
     new-instance v1, Ljava/lang/IllegalStateException;
 
     invoke-direct {v1}, Ljava/lang/IllegalStateException;-><init>()V
@@ -689,29 +703,35 @@
     .catch Ljava/lang/Throwable; {:try_start_d .. :try_end_d} :catch_4
     .catchall {:try_start_d .. :try_end_d} :catchall_7
 
-    .line 254
+    .line 255
     :catch_4
     move-exception v1
 
+    move/from16 v54, v55
+
+    .end local v55    # "stickerStampCount":I
+    .restart local v54    # "stickerStampCount":I
+    :goto_8
     :try_start_e
     throw v1
     :try_end_e
     .catchall {:try_start_e .. :try_end_e} :catchall_1
 
-    .line 270
+    .line 272
     :catchall_1
     move-exception v9
 
-    move-object/from16 v52, v9
+    move-object/from16 v58, v9
 
     move-object v9, v1
 
-    move-object/from16 v1, v52
+    move-object/from16 v1, v58
 
-    :goto_7
+    .end local v54    # "stickerStampCount":I
+    :goto_9
     if-eqz v46, :cond_4
 
-    if-eqz v9, :cond_20
+    if-eqz v9, :cond_21
 
     :try_start_f
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
@@ -722,7 +742,7 @@
     .catchall {:try_start_f .. :try_end_f} :catchall_3
 
     :cond_4
-    :goto_8
+    :goto_a
     :try_start_10
     throw v1
     :try_end_10
@@ -734,7 +754,7 @@
     :catch_5
     move-exception v47
 
-    .line 271
+    .line 273
     .restart local v47    # "e":Ljava/lang/NullPointerException;
     :try_start_11
     const-string v1, "PlugInStickerLoader"
@@ -745,10 +765,10 @@
     :try_end_11
     .catchall {:try_start_11 .. :try_end_11} :catchall_3
 
-    .line 276
+    .line 278
     .end local v47    # "e":Ljava/lang/NullPointerException;
     :cond_5
-    :goto_9
+    :goto_b
     :try_start_12
     move-object/from16 v0, p0
 
@@ -789,23 +809,31 @@
     .restart local v46    # "cursor":Landroid/database/Cursor;
     const/4 v9, 0x0
 
-    .line 277
-    :goto_a
+    .line 279
+    const/16 v56, 0x0
+
+    .local v56, "stickerWatermarkCount":I
+    move/from16 v57, v56
+
+    .line 280
+    .end local v56    # "stickerWatermarkCount":I
+    .local v57, "stickerWatermarkCount":I
+    :goto_c
     :try_start_13
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_26
+    if-eqz v1, :cond_27
 
-    .line 278
+    .line 281
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->isCancelled()Z
 
     move-result v1
 
-    if-eqz v1, :cond_21
+    if-eqz v1, :cond_22
 
-    .line 279
+    .line 282
     new-instance v1, Ljava/lang/IllegalStateException;
 
     invoke-direct {v1}, Ljava/lang/IllegalStateException;-><init>()V
@@ -813,31 +841,37 @@
     throw v1
     :try_end_13
     .catch Ljava/lang/Throwable; {:try_start_13 .. :try_end_13} :catch_6
-    .catchall {:try_start_13 .. :try_end_13} :catchall_8
+    .catchall {:try_start_13 .. :try_end_13} :catchall_6
 
-    .line 276
+    .line 278
     :catch_6
     move-exception v1
 
+    move/from16 v56, v57
+
+    .end local v57    # "stickerWatermarkCount":I
+    .restart local v56    # "stickerWatermarkCount":I
+    :goto_d
     :try_start_14
     throw v1
     :try_end_14
     .catchall {:try_start_14 .. :try_end_14} :catchall_2
 
-    .line 331
+    .line 334
     :catchall_2
     move-exception v9
 
-    move-object/from16 v52, v9
+    move-object/from16 v58, v9
 
     move-object v9, v1
 
-    move-object/from16 v1, v52
+    move-object/from16 v1, v58
 
-    :goto_b
+    .end local v56    # "stickerWatermarkCount":I
+    :goto_e
     if-eqz v46, :cond_6
 
-    if-eqz v9, :cond_28
+    if-eqz v9, :cond_29
 
     :try_start_15
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
@@ -848,7 +882,7 @@
     .catchall {:try_start_15 .. :try_end_15} :catchall_3
 
     :cond_6
-    :goto_c
+    :goto_f
     :try_start_16
     throw v1
     :try_end_16
@@ -860,7 +894,7 @@
     :catch_7
     move-exception v47
 
-    .line 332
+    .line 335
     .restart local v47    # "e":Ljava/lang/NullPointerException;
     :try_start_17
     const-string v1, "PlugInStickerLoader"
@@ -869,13 +903,13 @@
 
     invoke-static {v1, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 338
+    .line 341
     .end local v47    # "e":Ljava/lang/NullPointerException;
     :cond_7
-    :goto_d
-    invoke-static/range {v51 .. v51}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->refreshAllStickers(Ljava/util/LinkedHashMap;)V
+    :goto_10
+    invoke-static/range {v53 .. v53}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage;->refreshAllStickers(Ljava/util/LinkedHashMap;)V
 
-    .line 341
+    .line 344
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -884,18 +918,18 @@
 
     move-result-object v48
 
-    .line 342
+    .line 345
     .local v48, "mHandler":Landroid/os/Handler;
     if-eqz v48, :cond_8
 
-    .line 343
+    .line 346
     const/16 v1, 0x67
 
     move-object/from16 v0, v48
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 346
+    .line 349
     :cond_8
     const-string v1, "PlugInStickerLoader"
 
@@ -908,10 +942,8 @@
     goto/16 :goto_0
 
     .line 163
-    .end local v8    # "stickerCommandId":I
     .end local v48    # "mHandler":Landroid/os/Handler;
-    .end local v50    # "stickerCount":I
-    .end local v51    # "stickerPackageMap":Ljava/util/LinkedHashMap;, "Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
+    .end local v53    # "stickerPackageMap":Ljava/util/LinkedHashMap;, "Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
     :catchall_3
     move-exception v1
 
@@ -920,10 +952,8 @@
     throw v1
 
     .line 227
-    .restart local v8    # "stickerCommandId":I
     .restart local v46    # "cursor":Landroid/database/Cursor;
-    .restart local v50    # "stickerCount":I
-    .restart local v51    # "stickerPackageMap":Ljava/util/LinkedHashMap;, "Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
+    .restart local v53    # "stickerPackageMap":Ljava/util/LinkedHashMap;, "Ljava/util/LinkedHashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;>;"
     :cond_9
     :try_start_18
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
@@ -952,7 +982,7 @@
 
     goto/16 :goto_1
 
-    .line 174
+    .line 172
     .end local v47    # "e":Ljava/lang/RuntimeException;
     .restart local v46    # "cursor":Landroid/database/Cursor;
     :cond_a
@@ -963,19 +993,19 @@
 
     if-nez v1, :cond_c
 
-    .line 175
+    .line 173
     const-string v1, "PlugInStickerLoader"
 
     const-string v9, "Sticker DB is empty. Start service. Return."
 
     invoke-static {v1, v9}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 176
+    .line 174
     new-instance v49, Landroid/content/Intent;
 
     invoke-direct/range {v49 .. v49}, Landroid/content/Intent;-><init>()V
 
-    .line 177
+    .line 175
     .local v49, "serviceIntent":Landroid/content/Intent;
     const-string v1, "com.samsung.android.provider.stickerprovider.action.REFRESH_STICKERS"
 
@@ -983,14 +1013,14 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 178
+    .line 176
     const-string v1, "com.samsung.android.provider.stickerprovider"
 
     move-object/from16 v0, v49
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 179
+    .line 177
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1040,7 +1070,7 @@
 
     goto/16 :goto_0
 
-    .line 183
+    .line 181
     .end local v49    # "serviceIntent":Landroid/content/Intent;
     :cond_c
     :try_start_1d
@@ -1062,25 +1092,34 @@
 
     if-eqz v1, :cond_e
 
-    .line 184
+    .line 182
     :cond_d
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->checkUploadedStickerList()V
 
-    .line 188
+    .line 186
     :cond_e
-    :goto_e
+    const/16 v52, 0x0
+
+    .line 187
+    .local v52, "stickerPackageCount":I
+    const/16 v8, 0x2710
+
+    .line 188
+    .local v8, "stickerPackageCommandId":I
+    :cond_f
+    :goto_11
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v1
 
-    if-eqz v1, :cond_16
+    if-eqz v1, :cond_17
 
     .line 189
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->isCancelled()Z
 
     move-result v1
 
-    if-eqz v1, :cond_10
+    if-eqz v1, :cond_11
 
     .line 190
     new-instance v1, Ljava/lang/IllegalStateException;
@@ -1092,7 +1131,9 @@
     .catch Ljava/lang/Throwable; {:try_start_1d .. :try_end_1d} :catch_a
     .catchall {:try_start_1d .. :try_end_1d} :catchall_5
 
-    .line 168
+    .line 166
+    .end local v8    # "stickerPackageCommandId":I
+    .end local v52    # "stickerPackageCount":I
     :catch_a
     move-exception v1
 
@@ -1105,16 +1146,16 @@
     :catchall_4
     move-exception v9
 
-    move-object/from16 v52, v9
+    move-object/from16 v58, v9
 
     move-object v9, v1
 
-    move-object/from16 v1, v52
+    move-object/from16 v1, v58
 
-    :goto_f
-    if-eqz v46, :cond_f
+    :goto_12
+    if-eqz v46, :cond_10
 
-    if-eqz v9, :cond_18
+    if-eqz v9, :cond_19
 
     :try_start_1f
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
@@ -1124,8 +1165,8 @@
     .catch Ljava/lang/RuntimeException; {:try_start_1f .. :try_end_1f} :catch_8
     .catchall {:try_start_1f .. :try_end_1f} :catchall_3
 
-    :cond_f
-    :goto_10
+    :cond_10
+    :goto_13
     :try_start_20
     throw v1
     :try_end_20
@@ -1134,7 +1175,9 @@
     .catchall {:try_start_20 .. :try_end_20} :catchall_3
 
     .line 193
-    :cond_10
+    .restart local v8    # "stickerPackageCommandId":I
+    .restart local v52    # "stickerPackageCount":I
+    :cond_11
     const/4 v1, 0x0
 
     :try_start_21
@@ -1160,13 +1203,13 @@
 
     move-result v1
 
-    if-eqz v1, :cond_12
+    if-eqz v1, :cond_13
 
     const/4 v4, 0x1
 
     .line 195
     .local v4, "isPreloaded":Z
-    :goto_11
+    :goto_14
     const/4 v1, 0x2
 
     move-object/from16 v0, v46
@@ -1203,33 +1246,33 @@
 
     move-result v1
 
-    if-eqz v1, :cond_13
+    if-eqz v1, :cond_14
 
     .line 201
     const/4 v2, 0x1
 
     .line 202
     .local v2, "stickerType":I
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_12
 
     .line 203
     const/16 v8, 0x2713
 
     .line 219
-    :cond_11
-    :goto_12
-    if-eqz v4, :cond_15
+    :cond_12
+    :goto_15
+    if-eqz v4, :cond_16
 
     .line 220
     new-instance v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
     invoke-direct/range {v1 .. v8}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;-><init>(ILjava/lang/String;ZIIII)V
 
-    move-object/from16 v0, v51
+    move-object/from16 v0, v53
 
     invoke-virtual {v0, v3, v1}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    goto :goto_e
+    goto :goto_11
 
     .line 227
     .end local v2    # "stickerType":I
@@ -1238,76 +1281,80 @@
     .end local v5    # "representativeNormalResId":I
     .end local v6    # "representativePressedResId":I
     .end local v7    # "mainOrder":I
+    .end local v8    # "stickerPackageCommandId":I
+    .end local v52    # "stickerPackageCount":I
     :catchall_5
     move-exception v1
 
     move-object/from16 v9, v17
 
-    goto :goto_f
+    goto :goto_12
 
     .line 194
     .restart local v3    # "packageName":Ljava/lang/String;
-    :cond_12
+    .restart local v8    # "stickerPackageCommandId":I
+    .restart local v52    # "stickerPackageCount":I
+    :cond_13
     const/4 v4, 0x0
 
-    goto :goto_11
+    goto :goto_14
 
     .line 205
     .restart local v4    # "isPreloaded":Z
     .restart local v5    # "representativeNormalResId":I
     .restart local v6    # "representativePressedResId":I
     .restart local v7    # "mainOrder":I
-    :cond_13
+    :cond_14
     const-string v1, "com.samsung.android.app.camera.sticker.stamp"
 
     invoke-virtual {v3, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_14
+    if-eqz v1, :cond_15
 
     .line 206
     const/4 v2, 0x2
 
     .line 207
     .restart local v2    # "stickerType":I
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_12
 
     .line 208
     const/16 v8, 0x2711
 
-    goto :goto_12
+    goto :goto_15
 
     .line 210
     .end local v2    # "stickerType":I
-    :cond_14
+    :cond_15
     const-string v1, "com.samsung.android.app.camera.sticker.watermark"
 
     invoke-virtual {v3, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_f
 
     .line 211
     const/4 v2, 0x3
 
     .line 212
     .restart local v2    # "stickerType":I
-    if-eqz v4, :cond_11
+    if-eqz v4, :cond_12
 
     .line 213
     const/16 v8, 0x2712
 
-    goto :goto_12
+    goto :goto_15
 
     .line 223
-    :cond_15
+    :cond_16
     new-instance v9, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
-    add-int/lit8 v50, v50, 0x1
+    add-int/lit8 v52, v52, 0x1
 
-    add-int v16, v8, v50
+    add-int v16, v8, v52
 
     move v10, v2
 
@@ -1323,14 +1370,14 @@
 
     invoke-direct/range {v9 .. v16}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;-><init>(ILjava/lang/String;ZIIII)V
 
-    move-object/from16 v0, v51
+    move-object/from16 v0, v53
 
     invoke-virtual {v0, v3, v9}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_21
     .catch Ljava/lang/Throwable; {:try_start_21 .. :try_end_21} :catch_a
     .catchall {:try_start_21 .. :try_end_21} :catchall_5
 
-    goto/16 :goto_e
+    goto/16 :goto_11
 
     .line 227
     .end local v2    # "stickerType":I
@@ -1339,10 +1386,10 @@
     .end local v5    # "representativeNormalResId":I
     .end local v6    # "representativePressedResId":I
     .end local v7    # "mainOrder":I
-    :cond_16
+    :cond_17
     if-eqz v46, :cond_1
 
-    if-eqz v17, :cond_17
+    if-eqz v17, :cond_18
 
     :try_start_22
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
@@ -1364,29 +1411,32 @@
 
     goto/16 :goto_1
 
-    :cond_17
+    :cond_18
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
 
     goto/16 :goto_1
 
+    .end local v8    # "stickerPackageCommandId":I
+    .end local v52    # "stickerPackageCount":I
     :catch_c
     move-exception v10
 
     invoke-virtual {v9, v10}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    goto/16 :goto_10
+    goto/16 :goto_13
 
-    :cond_18
+    :cond_19
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
     :try_end_23
     .catch Ljava/lang/NullPointerException; {:try_start_23 .. :try_end_23} :catch_1
     .catch Ljava/lang/RuntimeException; {:try_start_23 .. :try_end_23} :catch_8
     .catchall {:try_start_23 .. :try_end_23} :catchall_3
 
-    goto/16 :goto_10
+    goto/16 :goto_13
 
-    .line 239
-    :cond_19
+    .line 240
+    .restart local v51    # "stickerFaceARCount":I
+    :cond_1a
     const/4 v1, 0x0
 
     :try_start_24
@@ -1396,7 +1446,7 @@
 
     move-result-object v3
 
-    .line 240
+    .line 241
     .restart local v3    # "packageName":Ljava/lang/String;
     const/4 v1, 0x1
 
@@ -1406,7 +1456,7 @@
 
     move-result-object v11
 
-    .line 241
+    .line 242
     .local v11, "stickerName":Ljava/lang/String;
     const/4 v1, 0x2
 
@@ -1416,7 +1466,7 @@
 
     move-result v12
 
-    .line 242
+    .line 243
     .local v12, "thumbnailResId":I
     const/4 v1, 0x3
 
@@ -1426,7 +1476,7 @@
 
     move-result-object v13
 
-    .line 243
+    .line 244
     .local v13, "sceneType":Ljava/lang/String;
     const/4 v1, 0x4
 
@@ -1436,9 +1486,9 @@
 
     move-result v14
 
-    .line 245
+    .line 246
     .local v14, "subOrder":I
-    move-object/from16 v0, v51
+    move-object/from16 v0, v53
 
     invoke-virtual {v0, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1447,119 +1497,129 @@
     check-cast v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
     new-instance v9, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$FaceARInfo;
+    :try_end_24
+    .catch Ljava/lang/Throwable; {:try_start_24 .. :try_end_24} :catch_2
+    .catchall {:try_start_24 .. :try_end_24} :catchall_8
 
-    add-int/lit8 v50, v50, 0x1
+    add-int/lit8 v50, v51, 0x1
 
-    add-int v15, v8, v50
+    .end local v51    # "stickerFaceARCount":I
+    .restart local v50    # "stickerFaceARCount":I
+    move/from16 v0, v51
+
+    add-int/lit16 v15, v0, 0x2af8
 
     move-object v10, v3
 
+    :try_start_25
     invoke-direct/range {v9 .. v15}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$FaceARInfo;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;II)V
 
     invoke-virtual {v1, v11, v9}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->addSticker(Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;)V
-    :try_end_24
-    .catch Ljava/lang/Throwable; {:try_start_24 .. :try_end_24} :catch_2
-    .catchall {:try_start_24 .. :try_end_24} :catchall_6
+    :try_end_25
+    .catch Ljava/lang/Throwable; {:try_start_25 .. :try_end_25} :catch_18
+    .catchall {:try_start_25 .. :try_end_25} :catchall_8
 
-    goto/16 :goto_2
+    move/from16 v51, v50
 
     .line 248
+    .end local v50    # "stickerFaceARCount":I
+    .restart local v51    # "stickerFaceARCount":I
+    goto/16 :goto_2
+
+    .line 249
     .end local v3    # "packageName":Ljava/lang/String;
     .end local v11    # "stickerName":Ljava/lang/String;
     .end local v12    # "thumbnailResId":I
     .end local v13    # "sceneType":Ljava/lang/String;
     .end local v14    # "subOrder":I
-    :catchall_6
-    move-exception v1
-
-    move-object/from16 v9, v16
-
-    goto/16 :goto_3
-
-    :cond_1a
+    :cond_1b
     if-eqz v46, :cond_3
 
-    if-eqz v16, :cond_1b
-
-    :try_start_25
-    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
-    :try_end_25
-    .catch Ljava/lang/Throwable; {:try_start_25 .. :try_end_25} :catch_d
-    .catch Ljava/lang/NullPointerException; {:try_start_25 .. :try_end_25} :catch_3
-    .catch Ljava/lang/RuntimeException; {:try_start_25 .. :try_end_25} :catch_e
-    .catchall {:try_start_25 .. :try_end_25} :catchall_3
-
-    goto/16 :goto_5
-
-    :catch_d
-    move-exception v1
+    if-eqz v16, :cond_1c
 
     :try_start_26
-    move-object/from16 v0, v16
-
-    invoke-virtual {v0, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
     :try_end_26
+    .catch Ljava/lang/Throwable; {:try_start_26 .. :try_end_26} :catch_d
     .catch Ljava/lang/NullPointerException; {:try_start_26 .. :try_end_26} :catch_3
     .catch Ljava/lang/RuntimeException; {:try_start_26 .. :try_end_26} :catch_e
     .catchall {:try_start_26 .. :try_end_26} :catchall_3
 
-    goto/16 :goto_5
+    goto/16 :goto_6
 
-    .line 250
+    :catch_d
+    move-exception v1
+
+    :try_start_27
+    move-object/from16 v0, v16
+
+    invoke-virtual {v0, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_end_27
+    .catch Ljava/lang/NullPointerException; {:try_start_27 .. :try_end_27} :catch_3
+    .catch Ljava/lang/RuntimeException; {:try_start_27 .. :try_end_27} :catch_e
+    .catchall {:try_start_27 .. :try_end_27} :catchall_3
+
+    goto/16 :goto_6
+
+    .line 251
     .end local v46    # "cursor":Landroid/database/Cursor;
+    .end local v51    # "stickerFaceARCount":I
     :catch_e
     move-exception v47
 
-    .line 251
+    .line 252
     .restart local v47    # "e":Ljava/lang/RuntimeException;
-    :try_start_27
+    :try_start_28
     const-string v1, "PlugInStickerLoader"
 
     const-string v9, "loading face AR is cancelled"
 
     invoke-static {v1, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_27
-    .catchall {:try_start_27 .. :try_end_27} :catchall_3
+    :try_end_28
+    .catchall {:try_start_28 .. :try_end_28} :catchall_3
 
-    goto/16 :goto_5
+    goto/16 :goto_6
 
-    .line 248
+    .line 249
     .end local v47    # "e":Ljava/lang/RuntimeException;
     .restart local v46    # "cursor":Landroid/database/Cursor;
-    :cond_1b
-    :try_start_28
+    .restart local v51    # "stickerFaceARCount":I
+    :cond_1c
+    :try_start_29
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
 
-    goto/16 :goto_5
+    goto/16 :goto_6
 
+    .end local v51    # "stickerFaceARCount":I
     :catch_f
     move-exception v10
 
     invoke-virtual {v9, v10}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
-    :cond_1c
-    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
-    :try_end_28
-    .catch Ljava/lang/NullPointerException; {:try_start_28 .. :try_end_28} :catch_3
-    .catch Ljava/lang/RuntimeException; {:try_start_28 .. :try_end_28} :catch_e
-    .catchall {:try_start_28 .. :try_end_28} :catchall_3
-
-    goto/16 :goto_4
-
-    .line 260
     :cond_1d
+    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
+    :try_end_29
+    .catch Ljava/lang/NullPointerException; {:try_start_29 .. :try_end_29} :catch_3
+    .catch Ljava/lang/RuntimeException; {:try_start_29 .. :try_end_29} :catch_e
+    .catchall {:try_start_29 .. :try_end_29} :catchall_3
+
+    goto/16 :goto_5
+
+    .line 262
+    .restart local v55    # "stickerStampCount":I
+    :cond_1e
     const/4 v1, 0x0
 
-    :try_start_29
+    :try_start_2a
     move-object/from16 v0, v46
 
     invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 261
+    .line 263
     .restart local v3    # "packageName":Ljava/lang/String;
     const/4 v1, 0x1
 
@@ -1569,7 +1629,7 @@
 
     move-result-object v11
 
-    .line 262
+    .line 264
     .restart local v11    # "stickerName":Ljava/lang/String;
     const/4 v1, 0x2
 
@@ -1579,7 +1639,7 @@
 
     move-result v12
 
-    .line 263
+    .line 265
     .restart local v12    # "thumbnailResId":I
     const/4 v1, 0x3
 
@@ -1589,7 +1649,7 @@
 
     move-result v19
 
-    .line 264
+    .line 266
     .local v19, "previewResWidth":I
     const/4 v1, 0x4
 
@@ -1599,7 +1659,7 @@
 
     move-result v20
 
-    .line 265
+    .line 267
     .local v20, "previewResHeight":I
     const/4 v1, 0x5
 
@@ -1609,9 +1669,9 @@
 
     move-result v14
 
-    .line 267
+    .line 269
     .restart local v14    # "subOrder":I
-    move-object/from16 v0, v51
+    move-object/from16 v0, v53
 
     invoke-virtual {v0, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1620,10 +1680,19 @@
     check-cast v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
     new-instance v15, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StampInfo;
+    :try_end_2a
+    .catch Ljava/lang/Throwable; {:try_start_2a .. :try_end_2a} :catch_4
+    .catchall {:try_start_2a .. :try_end_2a} :catchall_7
 
-    add-int/lit8 v50, v50, 0x1
+    add-int/lit8 v54, v55, 0x1
 
-    add-int v22, v8, v50
+    .end local v55    # "stickerStampCount":I
+    .restart local v54    # "stickerStampCount":I
+    move/from16 v0, v55
+
+    add-int/lit16 v0, v0, 0x2ee0
+
+    move/from16 v22, v0
 
     move-object/from16 v16, v3
 
@@ -1633,102 +1702,107 @@
 
     move/from16 v21, v14
 
+    :try_start_2b
     invoke-direct/range {v15 .. v22}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StampInfo;-><init>(Ljava/lang/String;Ljava/lang/String;IIIII)V
 
     invoke-virtual {v1, v11, v15}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->addSticker(Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;)V
-    :try_end_29
-    .catch Ljava/lang/Throwable; {:try_start_29 .. :try_end_29} :catch_4
-    .catchall {:try_start_29 .. :try_end_29} :catchall_7
+    :try_end_2b
+    .catch Ljava/lang/Throwable; {:try_start_2b .. :try_end_2b} :catch_17
+    .catchall {:try_start_2b .. :try_end_2b} :catchall_7
 
-    goto/16 :goto_6
+    move/from16 v55, v54
 
-    .line 270
+    .line 271
+    .end local v54    # "stickerStampCount":I
+    .restart local v55    # "stickerStampCount":I
+    goto/16 :goto_7
+
+    .line 272
     .end local v3    # "packageName":Ljava/lang/String;
     .end local v11    # "stickerName":Ljava/lang/String;
     .end local v12    # "thumbnailResId":I
     .end local v14    # "subOrder":I
     .end local v19    # "previewResWidth":I
     .end local v20    # "previewResHeight":I
-    :catchall_7
-    move-exception v1
-
-    goto/16 :goto_7
-
-    :cond_1e
+    :cond_1f
     if-eqz v46, :cond_5
 
-    if-eqz v9, :cond_1f
+    if-eqz v9, :cond_20
 
-    :try_start_2a
+    :try_start_2c
     invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
-    :try_end_2a
-    .catch Ljava/lang/Throwable; {:try_start_2a .. :try_end_2a} :catch_10
-    .catch Ljava/lang/NullPointerException; {:try_start_2a .. :try_end_2a} :catch_5
-    .catch Ljava/lang/RuntimeException; {:try_start_2a .. :try_end_2a} :catch_11
-    .catchall {:try_start_2a .. :try_end_2a} :catchall_3
+    :try_end_2c
+    .catch Ljava/lang/Throwable; {:try_start_2c .. :try_end_2c} :catch_10
+    .catch Ljava/lang/NullPointerException; {:try_start_2c .. :try_end_2c} :catch_5
+    .catch Ljava/lang/RuntimeException; {:try_start_2c .. :try_end_2c} :catch_11
+    .catchall {:try_start_2c .. :try_end_2c} :catchall_3
 
-    goto/16 :goto_9
+    goto/16 :goto_b
 
     :catch_10
     move-exception v1
 
-    :try_start_2b
-    invoke-virtual {v9, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-    :try_end_2b
-    .catch Ljava/lang/NullPointerException; {:try_start_2b .. :try_end_2b} :catch_5
-    .catch Ljava/lang/RuntimeException; {:try_start_2b .. :try_end_2b} :catch_11
-    .catchall {:try_start_2b .. :try_end_2b} :catchall_3
-
-    goto/16 :goto_9
-
-    .line 272
-    .end local v46    # "cursor":Landroid/database/Cursor;
-    :catch_11
-    move-exception v47
-
-    .line 273
-    .restart local v47    # "e":Ljava/lang/RuntimeException;
-    :try_start_2c
-    const-string v1, "PlugInStickerLoader"
-
-    const-string v9, "loading stamp is cancelled"
-
-    invoke-static {v1, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_2c
-    .catchall {:try_start_2c .. :try_end_2c} :catchall_3
-
-    goto/16 :goto_9
-
-    .line 270
-    .end local v47    # "e":Ljava/lang/RuntimeException;
-    .restart local v46    # "cursor":Landroid/database/Cursor;
-    :cond_1f
     :try_start_2d
-    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
-
-    goto/16 :goto_9
-
-    :catch_12
-    move-exception v10
-
-    invoke-virtual {v9, v10}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
-    goto/16 :goto_8
-
-    :cond_20
-    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
+    invoke-virtual {v9, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
     :try_end_2d
     .catch Ljava/lang/NullPointerException; {:try_start_2d .. :try_end_2d} :catch_5
     .catch Ljava/lang/RuntimeException; {:try_start_2d .. :try_end_2d} :catch_11
     .catchall {:try_start_2d .. :try_end_2d} :catchall_3
 
-    goto/16 :goto_8
+    goto/16 :goto_b
 
-    .line 282
+    .line 274
+    .end local v46    # "cursor":Landroid/database/Cursor;
+    .end local v55    # "stickerStampCount":I
+    :catch_11
+    move-exception v47
+
+    .line 275
+    .restart local v47    # "e":Ljava/lang/RuntimeException;
+    :try_start_2e
+    const-string v1, "PlugInStickerLoader"
+
+    const-string v9, "loading stamp is cancelled"
+
+    invoke-static {v1, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_2e
+    .catchall {:try_start_2e .. :try_end_2e} :catchall_3
+
+    goto/16 :goto_b
+
+    .line 272
+    .end local v47    # "e":Ljava/lang/RuntimeException;
+    .restart local v46    # "cursor":Landroid/database/Cursor;
+    .restart local v55    # "stickerStampCount":I
+    :cond_20
+    :try_start_2f
+    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
+
+    goto/16 :goto_b
+
+    .end local v55    # "stickerStampCount":I
+    :catch_12
+    move-exception v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto/16 :goto_a
+
     :cond_21
+    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
+    :try_end_2f
+    .catch Ljava/lang/NullPointerException; {:try_start_2f .. :try_end_2f} :catch_5
+    .catch Ljava/lang/RuntimeException; {:try_start_2f .. :try_end_2f} :catch_11
+    .catchall {:try_start_2f .. :try_end_2f} :catchall_3
+
+    goto/16 :goto_a
+
+    .line 285
+    .restart local v57    # "stickerWatermarkCount":I
+    :cond_22
     const/4 v1, 0x2
 
-    :try_start_2e
+    :try_start_30
     new-array v0, v1, [Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
 
     move-object/from16 v43, v0
@@ -1745,7 +1819,7 @@
 
     aput-object v10, v43, v1
 
-    .line 284
+    .line 287
     .local v43, "watermarkTextInfo":[Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
     const/4 v1, 0x0
 
@@ -1755,7 +1829,7 @@
 
     move-result-object v3
 
-    .line 285
+    .line 288
     .restart local v3    # "packageName":Ljava/lang/String;
     const/4 v1, 0x1
 
@@ -1765,7 +1839,7 @@
 
     move-result-object v11
 
-    .line 286
+    .line 289
     .restart local v11    # "stickerName":Ljava/lang/String;
     const/4 v1, 0x2
 
@@ -1775,7 +1849,7 @@
 
     move-result v12
 
-    .line 287
+    .line 290
     .restart local v12    # "thumbnailResId":I
     const/4 v1, 0x3
 
@@ -1785,7 +1859,7 @@
 
     move-result v39
 
-    .line 288
+    .line 291
     .local v39, "previewResId":I
     const/4 v1, 0x4
 
@@ -1795,7 +1869,7 @@
 
     move-result v19
 
-    .line 289
+    .line 292
     .restart local v19    # "previewResWidth":I
     const/4 v1, 0x5
 
@@ -1805,7 +1879,7 @@
 
     move-result v20
 
-    .line 290
+    .line 293
     .restart local v20    # "previewResHeight":I
     const/4 v1, 0x6
 
@@ -1815,7 +1889,7 @@
 
     move-result v42
 
-    .line 292
+    .line 295
     .local v42, "captureResId":I
     const/4 v1, 0x7
 
@@ -1825,7 +1899,7 @@
 
     move-result v22
 
-    .line 293
+    .line 296
     .local v22, "textLeft":F
     const/16 v1, 0x8
 
@@ -1835,7 +1909,7 @@
 
     move-result v23
 
-    .line 294
+    .line 297
     .local v23, "textTop":F
     const/16 v1, 0x9
 
@@ -1845,7 +1919,7 @@
 
     move-result v24
 
-    .line 295
+    .line 298
     .local v24, "textWidth":F
     const/16 v1, 0xa
 
@@ -1855,7 +1929,7 @@
 
     move-result v25
 
-    .line 296
+    .line 299
     .local v25, "textHeight":F
     const/16 v1, 0xb
 
@@ -1871,150 +1945,14 @@
 
     move-result v1
 
-    if-eqz v1, :cond_22
+    if-eqz v1, :cond_23
 
     const/16 v26, 0x1
 
-    .line 297
-    .local v26, "isEditable":Z
-    :goto_13
-    const/16 v1, 0xc
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v10, "true"
-
-    invoke-virtual {v1, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_23
-
-    const/16 v27, 0x1
-
-    .line 298
-    .local v27, "isVertical":Z
-    :goto_14
-    const/16 v1, 0xd
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v28
-
-    .line 299
-    .local v28, "defaultText":Ljava/lang/String;
-    const/16 v1, 0xe
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v29
-
     .line 300
-    .local v29, "textType":I
-    const/16 v1, 0xf
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
-
-    move-result v30
-
-    .line 301
-    .local v30, "fontSize":F
-    const/16 v1, 0x10
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v31
-
-    .line 302
-    .local v31, "textFont":I
-    const/16 v1, 0x11
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v32
-
-    .line 303
-    .local v32, "textColor":I
-    const/16 v1, 0x12
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v33
-
-    .line 304
-    .local v33, "hAlign":I
-    const/16 v1, 0x13
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
-
-    move-result v34
-
-    .line 306
-    .local v34, "vAlign":I
-    const/4 v1, 0x0
-
-    new-instance v21, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
-
-    invoke-direct/range {v21 .. v34}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;-><init>(FFFFZZLjava/lang/String;IFIIII)V
-
-    aput-object v21, v43, v1
-
-    .line 309
-    const/16 v1, 0x14
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
-
-    move-result v22
-
-    .line 310
-    const/16 v1, 0x15
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
-
-    move-result v23
-
-    .line 311
-    const/16 v1, 0x16
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
-
-    move-result v24
-
-    .line 312
-    const/16 v1, 0x17
-
-    move-object/from16 v0, v46
-
-    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
-
-    move-result v25
-
-    .line 313
-    const/16 v1, 0x18
+    .local v26, "isEditable":Z
+    :goto_16
+    const/16 v1, 0xc
 
     move-object/from16 v0, v46
 
@@ -2030,11 +1968,127 @@
 
     if-eqz v1, :cond_24
 
-    const/16 v26, 0x1
+    const/16 v27, 0x1
+
+    .line 301
+    .local v27, "isVertical":Z
+    :goto_17
+    const/16 v1, 0xd
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v28
+
+    .line 302
+    .local v28, "defaultText":Ljava/lang/String;
+    const/16 v1, 0xe
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v29
+
+    .line 303
+    .local v29, "textType":I
+    const/16 v1, 0xf
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
+
+    move-result v30
+
+    .line 304
+    .local v30, "fontSize":F
+    const/16 v1, 0x10
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v31
+
+    .line 305
+    .local v31, "textFont":I
+    const/16 v1, 0x11
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v32
+
+    .line 306
+    .local v32, "textColor":I
+    const/16 v1, 0x12
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v33
+
+    .line 307
+    .local v33, "hAlign":I
+    const/16 v1, 0x13
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v34
+
+    .line 309
+    .local v34, "vAlign":I
+    const/4 v1, 0x0
+
+    new-instance v21, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
+
+    invoke-direct/range {v21 .. v34}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;-><init>(FFFFZZLjava/lang/String;IFIIII)V
+
+    aput-object v21, v43, v1
+
+    .line 312
+    const/16 v1, 0x14
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
+
+    move-result v22
+
+    .line 313
+    const/16 v1, 0x15
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
+
+    move-result v23
 
     .line 314
-    :goto_15
-    const/16 v1, 0x19
+    const/16 v1, 0x16
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
+
+    move-result v24
+
+    .line 315
+    const/16 v1, 0x17
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getFloat(I)F
+
+    move-result v25
+
+    .line 316
+    const/16 v1, 0x18
 
     move-object/from16 v0, v46
 
@@ -2050,10 +2104,30 @@
 
     if-eqz v1, :cond_25
 
+    const/16 v26, 0x1
+
+    .line 317
+    :goto_18
+    const/16 v1, 0x19
+
+    move-object/from16 v0, v46
+
+    invoke-interface {v0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v10, "true"
+
+    invoke-virtual {v1, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_26
+
     const/16 v27, 0x1
 
-    .line 315
-    :goto_16
+    .line 318
+    :goto_19
     const/16 v1, 0x1a
 
     move-object/from16 v0, v46
@@ -2062,7 +2136,7 @@
 
     move-result-object v28
 
-    .line 316
+    .line 319
     const/16 v1, 0x1b
 
     move-object/from16 v0, v46
@@ -2071,7 +2145,7 @@
 
     move-result v29
 
-    .line 317
+    .line 320
     const/16 v1, 0x1c
 
     move-object/from16 v0, v46
@@ -2080,7 +2154,7 @@
 
     move-result v30
 
-    .line 318
+    .line 321
     const/16 v1, 0x1d
 
     move-object/from16 v0, v46
@@ -2089,7 +2163,7 @@
 
     move-result v31
 
-    .line 319
+    .line 322
     const/16 v1, 0x1e
 
     move-object/from16 v0, v46
@@ -2098,7 +2172,7 @@
 
     move-result v32
 
-    .line 320
+    .line 323
     const/16 v1, 0x1f
 
     move-object/from16 v0, v46
@@ -2107,7 +2181,7 @@
 
     move-result v33
 
-    .line 321
+    .line 324
     const/16 v1, 0x20
 
     move-object/from16 v0, v46
@@ -2116,7 +2190,7 @@
 
     move-result v34
 
-    .line 323
+    .line 326
     const/4 v1, 0x1
 
     new-instance v21, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
@@ -2125,7 +2199,7 @@
 
     aput-object v21, v43, v1
 
-    .line 326
+    .line 329
     const/16 v1, 0x21
 
     move-object/from16 v0, v46
@@ -2134,9 +2208,9 @@
 
     move-result v14
 
-    .line 328
+    .line 331
     .restart local v14    # "subOrder":I
-    move-object/from16 v0, v51
+    move-object/from16 v0, v53
 
     invoke-virtual {v0, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2145,10 +2219,19 @@
     check-cast v1, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;
 
     new-instance v35, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;
+    :try_end_30
+    .catch Ljava/lang/Throwable; {:try_start_30 .. :try_end_30} :catch_6
+    .catchall {:try_start_30 .. :try_end_30} :catchall_6
 
-    add-int/lit8 v50, v50, 0x1
+    add-int/lit8 v56, v57, 0x1
 
-    add-int v45, v8, v50
+    .end local v57    # "stickerWatermarkCount":I
+    .restart local v56    # "stickerWatermarkCount":I
+    move/from16 v0, v57
+
+    add-int/lit16 v0, v0, 0x32c8
+
+    move/from16 v45, v0
 
     move-object/from16 v36, v3
 
@@ -2162,18 +2245,196 @@
 
     move/from16 v44, v14
 
+    :try_start_31
     invoke-direct/range {v35 .. v45}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkInfo;-><init>(Ljava/lang/String;Ljava/lang/String;IIIII[Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;II)V
 
     move-object/from16 v0, v35
 
     invoke-virtual {v1, v11, v0}, Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerPackage;->addSticker(Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$StickerInfo;)V
-    :try_end_2e
-    .catch Ljava/lang/Throwable; {:try_start_2e .. :try_end_2e} :catch_6
-    .catchall {:try_start_2e .. :try_end_2e} :catchall_8
+    :try_end_31
+    .catch Ljava/lang/Throwable; {:try_start_31 .. :try_end_31} :catch_16
+    .catchall {:try_start_31 .. :try_end_31} :catchall_6
 
-    goto/16 :goto_a
+    move/from16 v57, v56
 
-    .line 331
+    .line 333
+    .end local v56    # "stickerWatermarkCount":I
+    .restart local v57    # "stickerWatermarkCount":I
+    goto/16 :goto_c
+
+    .line 299
+    .end local v14    # "subOrder":I
+    .end local v26    # "isEditable":Z
+    .end local v27    # "isVertical":Z
+    .end local v28    # "defaultText":Ljava/lang/String;
+    .end local v29    # "textType":I
+    .end local v30    # "fontSize":F
+    .end local v31    # "textFont":I
+    .end local v32    # "textColor":I
+    .end local v33    # "hAlign":I
+    .end local v34    # "vAlign":I
+    :cond_23
+    const/16 v26, 0x0
+
+    goto/16 :goto_16
+
+    .line 300
+    .restart local v26    # "isEditable":Z
+    :cond_24
+    const/16 v27, 0x0
+
+    goto/16 :goto_17
+
+    .line 316
+    .restart local v27    # "isVertical":Z
+    .restart local v28    # "defaultText":Ljava/lang/String;
+    .restart local v29    # "textType":I
+    .restart local v30    # "fontSize":F
+    .restart local v31    # "textFont":I
+    .restart local v32    # "textColor":I
+    .restart local v33    # "hAlign":I
+    .restart local v34    # "vAlign":I
+    :cond_25
+    const/16 v26, 0x0
+
+    goto/16 :goto_18
+
+    .line 317
+    :cond_26
+    const/16 v27, 0x0
+
+    goto :goto_19
+
+    .line 334
+    .end local v3    # "packageName":Ljava/lang/String;
+    .end local v11    # "stickerName":Ljava/lang/String;
+    .end local v12    # "thumbnailResId":I
+    .end local v19    # "previewResWidth":I
+    .end local v20    # "previewResHeight":I
+    .end local v22    # "textLeft":F
+    .end local v23    # "textTop":F
+    .end local v24    # "textWidth":F
+    .end local v25    # "textHeight":F
+    .end local v26    # "isEditable":Z
+    .end local v27    # "isVertical":Z
+    .end local v28    # "defaultText":Ljava/lang/String;
+    .end local v29    # "textType":I
+    .end local v30    # "fontSize":F
+    .end local v31    # "textFont":I
+    .end local v32    # "textColor":I
+    .end local v33    # "hAlign":I
+    .end local v34    # "vAlign":I
+    .end local v39    # "previewResId":I
+    .end local v42    # "captureResId":I
+    .end local v43    # "watermarkTextInfo":[Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
+    :cond_27
+    if-eqz v46, :cond_7
+
+    if-eqz v9, :cond_28
+
+    :try_start_32
+    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
+    :try_end_32
+    .catch Ljava/lang/Throwable; {:try_start_32 .. :try_end_32} :catch_13
+    .catch Ljava/lang/NullPointerException; {:try_start_32 .. :try_end_32} :catch_7
+    .catch Ljava/lang/RuntimeException; {:try_start_32 .. :try_end_32} :catch_14
+    .catchall {:try_start_32 .. :try_end_32} :catchall_3
+
+    goto/16 :goto_10
+
+    :catch_13
+    move-exception v1
+
+    :try_start_33
+    invoke-virtual {v9, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+    :try_end_33
+    .catch Ljava/lang/NullPointerException; {:try_start_33 .. :try_end_33} :catch_7
+    .catch Ljava/lang/RuntimeException; {:try_start_33 .. :try_end_33} :catch_14
+    .catchall {:try_start_33 .. :try_end_33} :catchall_3
+
+    goto/16 :goto_10
+
+    .line 336
+    .end local v46    # "cursor":Landroid/database/Cursor;
+    .end local v57    # "stickerWatermarkCount":I
+    :catch_14
+    move-exception v47
+
+    .line 337
+    .restart local v47    # "e":Ljava/lang/RuntimeException;
+    :try_start_34
+    const-string v1, "PlugInStickerLoader"
+
+    const-string v9, "loading watermark is cancelled"
+
+    invoke-static {v1, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_34
+    .catchall {:try_start_34 .. :try_end_34} :catchall_3
+
+    goto/16 :goto_10
+
+    .line 334
+    .end local v47    # "e":Ljava/lang/RuntimeException;
+    .restart local v46    # "cursor":Landroid/database/Cursor;
+    .restart local v57    # "stickerWatermarkCount":I
+    :cond_28
+    :try_start_35
+    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
+
+    goto/16 :goto_10
+
+    .end local v57    # "stickerWatermarkCount":I
+    :catch_15
+    move-exception v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
+
+    goto/16 :goto_f
+
+    :cond_29
+    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
+    :try_end_35
+    .catch Ljava/lang/NullPointerException; {:try_start_35 .. :try_end_35} :catch_7
+    .catch Ljava/lang/RuntimeException; {:try_start_35 .. :try_end_35} :catch_14
+    .catchall {:try_start_35 .. :try_end_35} :catchall_3
+
+    goto/16 :goto_f
+
+    :catchall_6
+    move-exception v1
+
+    goto/16 :goto_e
+
+    .line 278
+    .restart local v3    # "packageName":Ljava/lang/String;
+    .restart local v11    # "stickerName":Ljava/lang/String;
+    .restart local v12    # "thumbnailResId":I
+    .restart local v14    # "subOrder":I
+    .restart local v19    # "previewResWidth":I
+    .restart local v20    # "previewResHeight":I
+    .restart local v22    # "textLeft":F
+    .restart local v23    # "textTop":F
+    .restart local v24    # "textWidth":F
+    .restart local v25    # "textHeight":F
+    .restart local v26    # "isEditable":Z
+    .restart local v27    # "isVertical":Z
+    .restart local v28    # "defaultText":Ljava/lang/String;
+    .restart local v29    # "textType":I
+    .restart local v30    # "fontSize":F
+    .restart local v31    # "textFont":I
+    .restart local v32    # "textColor":I
+    .restart local v33    # "hAlign":I
+    .restart local v34    # "vAlign":I
+    .restart local v39    # "previewResId":I
+    .restart local v42    # "captureResId":I
+    .restart local v43    # "watermarkTextInfo":[Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
+    .restart local v56    # "stickerWatermarkCount":I
+    :catch_16
+    move-exception v1
+
+    goto/16 :goto_d
+
+    .line 272
     .end local v3    # "packageName":Ljava/lang/String;
     .end local v11    # "stickerName":Ljava/lang/String;
     .end local v12    # "thumbnailResId":I
@@ -2196,147 +2457,51 @@
     .end local v39    # "previewResId":I
     .end local v42    # "captureResId":I
     .end local v43    # "watermarkTextInfo":[Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
-    :catchall_8
+    .end local v56    # "stickerWatermarkCount":I
+    :catchall_7
     move-exception v1
 
-    goto/16 :goto_b
+    goto/16 :goto_9
 
-    .line 296
+    .line 255
     .restart local v3    # "packageName":Ljava/lang/String;
     .restart local v11    # "stickerName":Ljava/lang/String;
     .restart local v12    # "thumbnailResId":I
+    .restart local v14    # "subOrder":I
     .restart local v19    # "previewResWidth":I
     .restart local v20    # "previewResHeight":I
-    .restart local v22    # "textLeft":F
-    .restart local v23    # "textTop":F
-    .restart local v24    # "textWidth":F
-    .restart local v25    # "textHeight":F
-    .restart local v39    # "previewResId":I
-    .restart local v42    # "captureResId":I
-    .restart local v43    # "watermarkTextInfo":[Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
-    :cond_22
-    const/16 v26, 0x0
+    .restart local v54    # "stickerStampCount":I
+    :catch_17
+    move-exception v1
 
-    goto/16 :goto_13
+    goto/16 :goto_8
 
-    .line 297
-    .restart local v26    # "isEditable":Z
-    :cond_23
-    const/16 v27, 0x0
-
-    goto/16 :goto_14
-
-    .line 313
-    .restart local v27    # "isVertical":Z
-    .restart local v28    # "defaultText":Ljava/lang/String;
-    .restart local v29    # "textType":I
-    .restart local v30    # "fontSize":F
-    .restart local v31    # "textFont":I
-    .restart local v32    # "textColor":I
-    .restart local v33    # "hAlign":I
-    .restart local v34    # "vAlign":I
-    :cond_24
-    const/16 v26, 0x0
-
-    goto/16 :goto_15
-
-    .line 314
-    :cond_25
-    const/16 v27, 0x0
-
-    goto :goto_16
-
-    .line 331
+    .line 249
     .end local v3    # "packageName":Ljava/lang/String;
     .end local v11    # "stickerName":Ljava/lang/String;
     .end local v12    # "thumbnailResId":I
+    .end local v14    # "subOrder":I
     .end local v19    # "previewResWidth":I
     .end local v20    # "previewResHeight":I
-    .end local v22    # "textLeft":F
-    .end local v23    # "textTop":F
-    .end local v24    # "textWidth":F
-    .end local v25    # "textHeight":F
-    .end local v26    # "isEditable":Z
-    .end local v27    # "isVertical":Z
-    .end local v28    # "defaultText":Ljava/lang/String;
-    .end local v29    # "textType":I
-    .end local v30    # "fontSize":F
-    .end local v31    # "textFont":I
-    .end local v32    # "textColor":I
-    .end local v33    # "hAlign":I
-    .end local v34    # "vAlign":I
-    .end local v39    # "previewResId":I
-    .end local v42    # "captureResId":I
-    .end local v43    # "watermarkTextInfo":[Lcom/sec/android/app/camera/plugin/PlugInStickerStorage$WatermarkTextInfo;
-    :cond_26
-    if-eqz v46, :cond_7
-
-    if-eqz v9, :cond_27
-
-    :try_start_2f
-    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
-    :try_end_2f
-    .catch Ljava/lang/Throwable; {:try_start_2f .. :try_end_2f} :catch_13
-    .catch Ljava/lang/NullPointerException; {:try_start_2f .. :try_end_2f} :catch_7
-    .catch Ljava/lang/RuntimeException; {:try_start_2f .. :try_end_2f} :catch_14
-    .catchall {:try_start_2f .. :try_end_2f} :catchall_3
-
-    goto/16 :goto_d
-
-    :catch_13
+    .end local v54    # "stickerStampCount":I
+    :catchall_8
     move-exception v1
 
-    :try_start_30
-    invoke-virtual {v9, v1}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-    :try_end_30
-    .catch Ljava/lang/NullPointerException; {:try_start_30 .. :try_end_30} :catch_7
-    .catch Ljava/lang/RuntimeException; {:try_start_30 .. :try_end_30} :catch_14
-    .catchall {:try_start_30 .. :try_end_30} :catchall_3
+    move-object/from16 v9, v16
 
-    goto/16 :goto_d
+    goto/16 :goto_4
 
-    .line 333
-    .end local v46    # "cursor":Landroid/database/Cursor;
-    :catch_14
-    move-exception v47
+    .line 233
+    .restart local v3    # "packageName":Ljava/lang/String;
+    .restart local v11    # "stickerName":Ljava/lang/String;
+    .restart local v12    # "thumbnailResId":I
+    .restart local v13    # "sceneType":Ljava/lang/String;
+    .restart local v14    # "subOrder":I
+    .restart local v50    # "stickerFaceARCount":I
+    :catch_18
+    move-exception v1
 
-    .line 334
-    .restart local v47    # "e":Ljava/lang/RuntimeException;
-    :try_start_31
-    const-string v1, "PlugInStickerLoader"
-
-    const-string v9, "loading watermark is cancelled"
-
-    invoke-static {v1, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_31
-    .catchall {:try_start_31 .. :try_end_31} :catchall_3
-
-    goto/16 :goto_d
-
-    .line 331
-    .end local v47    # "e":Ljava/lang/RuntimeException;
-    .restart local v46    # "cursor":Landroid/database/Cursor;
-    :cond_27
-    :try_start_32
-    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
-
-    goto/16 :goto_d
-
-    :catch_15
-    move-exception v10
-
-    invoke-virtual {v9, v10}, Ljava/lang/Throwable;->addSuppressed(Ljava/lang/Throwable;)V
-
-    goto/16 :goto_c
-
-    :cond_28
-    invoke-interface/range {v46 .. v46}, Landroid/database/Cursor;->close()V
-    :try_end_32
-    .catch Ljava/lang/NullPointerException; {:try_start_32 .. :try_end_32} :catch_7
-    .catch Ljava/lang/RuntimeException; {:try_start_32 .. :try_end_32} :catch_14
-    .catchall {:try_start_32 .. :try_end_32} :catchall_3
-
-    goto/16 :goto_c
+    goto/16 :goto_3
 .end method
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
@@ -2356,7 +2521,7 @@
     .param p1, "aVoid"    # Ljava/lang/Void;
 
     .prologue
-    .line 365
+    .line 368
     return-void
 .end method
 
@@ -2377,7 +2542,7 @@
     .param p1, "values"    # [Ljava/lang/Void;
 
     .prologue
-    .line 369
+    .line 372
     return-void
 .end method
 
@@ -2385,7 +2550,7 @@
     .locals 4
 
     .prologue
-    .line 350
+    .line 353
     monitor-enter p0
 
     :try_start_0
@@ -2409,12 +2574,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 351
+    .line 354
     monitor-exit p0
 
     return-void
 
-    .line 350
+    .line 353
     :catchall_0
     move-exception v0
 
@@ -2427,7 +2592,7 @@
     .locals 2
 
     .prologue
-    .line 354
+    .line 357
     iget-object v0, p0, Lcom/sec/android/app/camera/plugin/PlugInStickerLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -2442,6 +2607,6 @@
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 355
+    .line 358
     return-void
 .end method

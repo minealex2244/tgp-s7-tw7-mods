@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 4020
+    .line 4036
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,19 +41,19 @@
     .locals 6
 
     .prologue
-    .line 4023
+    .line 4039
     const-string v2, "Camera7"
 
     const-string v3, "updateThumbnail : updateThumbnailButton***start"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4024
+    .line 4040
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 4025
+    .line 4041
     .local v0, "startTime":J
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -63,11 +63,11 @@
 
     if-eqz v2, :cond_0
 
-    .line 4032
+    .line 4048
     :goto_0
     return-void
 
-    .line 4028
+    .line 4044
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -78,7 +78,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 4029
+    .line 4045
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mBaseMenu:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
@@ -88,7 +88,7 @@
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/menu/AbstractBaseMenu;->updateThumbnailButton()V
 
-    .line 4031
+    .line 4047
     :cond_1
     const-string v2, "Camera7"
 

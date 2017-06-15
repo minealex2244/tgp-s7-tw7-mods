@@ -216,7 +216,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->SCREEN_HEIGHT:I
 
     .line 139
-    const v0, 0x7f0a021d
+    const v0, 0x7f0a0220
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -225,7 +225,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_TEXT_WIDTH:F
 
     .line 140
-    const v0, 0x7f0a021a
+    const v0, 0x7f0a021d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -234,7 +234,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_TEXT_HEIGHT:F
 
     .line 141
-    const v0, 0x7f0a021b
+    const v0, 0x7f0a021e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -243,7 +243,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_TEXT_RIGHT_MARGIN:F
 
     .line 142
-    const v0, 0x7f0a0219
+    const v0, 0x7f0a021c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -252,7 +252,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_TEXT_BOTTOM_MARGIN:F
 
     .line 143
-    const v0, 0x7f0a0215
+    const v0, 0x7f0a0218
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -261,7 +261,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_ICON_WIDTH:F
 
     .line 144
-    const v0, 0x7f0a0217
+    const v0, 0x7f0a021a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -270,7 +270,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_PORTRAIT_MARGIN:F
 
     .line 145
-    const v0, 0x7f0a0216
+    const v0, 0x7f0a0219
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -279,7 +279,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_LANDSCAPE_MARGIN:F
 
     .line 146
-    const v0, 0x7f0a0218
+    const v0, 0x7f0a021b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -310,7 +310,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_GROUP_HEIGHT:I
 
     .line 149
-    const v0, 0x7f0a021c
+    const v0, 0x7f0a021f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -3164,7 +3164,7 @@
     .locals 9
 
     .prologue
-    const v3, 0x7f0901bb
+    const v3, 0x7f0901be
 
     const v8, 0x7f09019b
 
@@ -3188,7 +3188,7 @@
     .line 886
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f090240
+    const v1, 0x7f090243
 
     invoke-static {v0, v1, v5}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -3274,7 +3274,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901b9
+    const v4, 0x7f0901bc
 
     new-array v5, v5, [Ljava/lang/Object;
 
@@ -3348,7 +3348,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901b7
+    const v4, 0x7f0901ba
 
     new-array v5, v5, [Ljava/lang/Object;
 

@@ -94,7 +94,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 42
-    const v0, 0x7f0a0290
+    const v0, 0x7f0a0294
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -105,7 +105,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList;->PRO_ITEM_WIDTH:I
 
     .line 43
-    const v0, 0x7f0a0042
+    const v0, 0x7f0a0044
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -131,7 +131,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList;->PRO_LIST_GROUP_WIDTH:I
 
     .line 45
-    const v0, 0x7f0a00f3
+    const v0, 0x7f0a00f6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -142,7 +142,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_ITEM_WIDTH:I
 
     .line 46
-    const v0, 0x7f0a02d4
+    const v0, 0x7f0a02d8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -153,7 +153,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProColorTuneList;->COLORTUNE_LIST_CENTER_ITEM_HEIGHT:I
 
     .line 47
-    const v0, 0x7f0a02d5
+    const v0, 0x7f0a02d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

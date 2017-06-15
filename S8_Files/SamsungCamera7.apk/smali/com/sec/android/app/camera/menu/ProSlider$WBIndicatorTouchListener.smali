@@ -27,7 +27,7 @@
     .locals 0
 
     .prologue
-    .line 1086
+    .line 1097
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/menu/ProSlider$1;
 
     .prologue
-    .line 1086
+    .line 1097
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;-><init>(Lcom/sec/android/app/camera/menu/ProSlider;)V
 
     return-void
@@ -52,7 +52,7 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 1121
+    .line 1132
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getTag()I
 
     move-result v1
@@ -66,7 +66,7 @@
 
     add-int v0, v1, v2
 
-    .line 1123
+    .line 1134
     .local v0, "value":I
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
@@ -74,7 +74,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1124
+    .line 1135
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mSliderId:I
@@ -86,26 +86,26 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 1125
+    .line 1136
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/menu/ProSlider;->mProSliderValueSelectListener:Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;
 
     invoke-interface {v1, v0}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderValueSelectListener;->onWBValueMenuSelect(I)V
 
-    .line 1127
+    .line 1138
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # invokes: Lcom/sec/android/app/camera/menu/ProSlider;->setValueText(I)V
     invoke-static {v1, v0}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3900(Lcom/sec/android/app/camera/menu/ProSlider;I)V
 
-    .line 1128
+    .line 1139
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/menu/ProSlider;->restartSliderMenuTimer()V
 
-    .line 1130
+    .line 1141
     :cond_1
     return-void
 .end method
@@ -118,7 +118,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 1089
+    .line 1100
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
@@ -127,13 +127,13 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1090
+    .line 1101
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->handleIndicatorTouchEvent(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1091
+    .line 1102
     const/4 v0, 0x1
 
-    .line 1093
+    .line 1104
     :goto_0
     return v0
 
@@ -149,7 +149,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 1099
+    .line 1110
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
@@ -177,7 +177,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 1104
+    .line 1115
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBSelectedIndicator:Lcom/samsung/android/glview/GLView;
@@ -187,7 +187,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1105
+    .line 1116
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBSelectedIndicator:Lcom/samsung/android/glview/GLView;
@@ -199,7 +199,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->resetTint()V
 
-    .line 1107
+    .line 1118
     :cond_0
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -207,7 +207,7 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 1108
+    .line 1119
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # getter for: Lcom/sec/android/app/camera/menu/ProSlider;->LABEL_SELECTED_COLOR:I
@@ -217,16 +217,16 @@
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/glview/GLView;->setTint(I)V
 
-    .line 1109
+    .line 1120
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     # setter for: Lcom/sec/android/app/camera/menu/ProSlider;->mWBSelectedIndicator:Lcom/samsung/android/glview/GLView;
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/ProSlider;->access$3602(Lcom/sec/android/app/camera/menu/ProSlider;Lcom/samsung/android/glview/GLView;)Lcom/samsung/android/glview/GLView;
 
-    .line 1110
+    .line 1121
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->handleIndicatorTouchEvent(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1111
+    .line 1122
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProSliderLoggingListener:Lcom/sec/android/app/camera/menu/ProSlider$ProSliderLoggingListener;
@@ -240,11 +240,11 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/menu/ProSlider$ProSliderLoggingListener;->onProSliderLoggingEvent(I)V
 
-    .line 1116
+    .line 1127
     :goto_0
     return v2
 
-    .line 1113
+    .line 1124
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
@@ -255,7 +255,7 @@
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/glview/GLView;->setTint(I)V
 
-    .line 1114
+    .line 1125
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ProSlider$WBIndicatorTouchListener;->this$0:Lcom/sec/android/app/camera/menu/ProSlider;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ProSlider;->stopSliderMenuTimer()V

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     .prologue
-    .line 172
+    .line 173
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -44,12 +44,12 @@
 
     const/4 v3, 0x1
 
-    .line 175
+    .line 176
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 176
+    .line 177
     .local v0, "action":Ljava/lang/String;
     const-string v1, "VirtualShot"
 
@@ -73,7 +73,7 @@
 
     invoke-static {v1, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 178
+    .line 179
     const/4 v1, -0x1
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -86,12 +86,12 @@
     :goto_0
     packed-switch v1, :pswitch_data_0
 
-    .line 204
+    .line 205
     :cond_1
     :goto_1
     return-void
 
-    .line 178
+    .line 179
     :sswitch_0
     const-string v4, "camera.action.COVER_DETACHED"
 
@@ -131,7 +131,7 @@
 
     goto :goto_0
 
-    .line 180
+    .line 181
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
@@ -146,7 +146,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 181
+    .line 182
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setHRMSensor(Z)V
@@ -154,7 +154,7 @@
 
     goto :goto_1
 
-    .line 185
+    .line 186
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
@@ -169,7 +169,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 186
+    .line 187
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -189,7 +189,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 187
+    .line 188
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -210,7 +210,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f09028e
+    const v5, 0x7f090291
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -218,7 +218,7 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
-    .line 188
+    .line 189
     # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
     invoke-static {v5}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$200(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -234,10 +234,10 @@
 
     move-result-object v5
 
-    .line 187
+    .line 188
     invoke-interface {v1, v3, v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showCameraDialog(Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 191
+    .line 192
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
@@ -246,7 +246,7 @@
 
     goto/16 :goto_1
 
-    .line 195
+    .line 196
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
@@ -257,7 +257,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 196
+    .line 197
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -278,14 +278,14 @@
 
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/provider/CameraLocalBroadcastManager;->unregister(Landroid/content/Context;Landroid/content/BroadcastReceiver;)V
 
-    .line 198
+    .line 199
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->unregisterCameraOrientationListener()V
     invoke-static {v1}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->access$400(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)V
 
-    .line 199
+    .line 200
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;->this$0:Lcom/sec/android/app/camera/shootingmode/VirtualShot;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot;->clearMessageHandler()V
@@ -293,7 +293,7 @@
 
     goto/16 :goto_1
 
-    .line 178
+    .line 179
     nop
 
     :sswitch_data_0

@@ -30,39 +30,39 @@
     .prologue
     const/16 v3, 0x25
 
-    .line 1381
+    .line 1379
     iput-object p1, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1379
+    .line 1377
     new-array v1, v3, [Z
 
     iput-object v1, p0, Lcom/sec/android/app/camera/DimController$DimArray;->mDimArray:[Z
 
-    .line 1382
+    .line 1380
     iput p2, p0, Lcom/sec/android/app/camera/DimController$DimArray;->mMenuId:I
 
-    .line 1383
+    .line 1381
     const/4 v0, 0x0
 
     .local v0, "i":I
     :goto_0
     if-ge v0, v3, :cond_0
 
-    .line 1384
+    .line 1382
     iget-object v1, p0, Lcom/sec/android/app/camera/DimController$DimArray;->mDimArray:[Z
 
     const/4 v2, 0x0
 
     aput-boolean v2, v1, v0
 
-    .line 1383
+    .line 1381
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1386
+    .line 1384
     :cond_0
     return-void
 .end method
@@ -73,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 1389
+    .line 1387
     iget-object v0, p0, Lcom/sec/android/app/camera/DimController$DimArray;->mDimArray:[Z
 
     return-object v0
@@ -83,7 +83,7 @@
     .locals 1
 
     .prologue
-    .line 1393
+    .line 1391
     iget v0, p0, Lcom/sec/android/app/camera/DimController$DimArray;->mMenuId:I
 
     return v0
@@ -93,7 +93,7 @@
     .locals 3
 
     .prologue
-    .line 1397
+    .line 1395
     const/4 v0, 0x0
 
     .local v0, "key":I
@@ -102,20 +102,20 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 1398
+    .line 1396
     iget-object v1, p0, Lcom/sec/android/app/camera/DimController$DimArray;->mDimArray:[Z
 
     aget-boolean v1, v1, v0
 
     if-nez v1, :cond_0
 
-    .line 1397
+    .line 1395
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1401
+    .line 1399
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -126,7 +126,7 @@
 
     goto :goto_1
 
-    .line 1403
+    .line 1401
     :cond_1
     return-void
 .end method
@@ -138,7 +138,7 @@
     .prologue
     const/4 v7, 0x1
 
-    .line 1406
+    .line 1404
     array-length v3, p1
 
     const/4 v2, 0x0
@@ -148,7 +148,7 @@
 
     aget v1, p1, v2
 
-    .line 1408
+    .line 1406
     .local v1, "index":I
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -161,7 +161,7 @@
 
     move-result-object v0
 
-    .line 1410
+    .line 1408
     .local v0, "cs":Lcom/sec/android/app/camera/interfaces/CameraSettings;
     if-eqz v0, :cond_0
 
@@ -171,19 +171,19 @@
 
     if-lt v1, v4, :cond_1
 
-    .line 1530
+    .line 1528
     .end local v0    # "cs":Lcom/sec/android/app/camera/interfaces/CameraSettings;
     .end local v1    # "index":I
     :cond_0
     return-void
 
-    .line 1414
+    .line 1412
     .restart local v0    # "cs":Lcom/sec/android/app/camera/interfaces/CameraSettings;
     .restart local v1    # "index":I
     :cond_1
     packed-switch v1, :pswitch_data_0
 
-    .line 1406
+    .line 1404
     :cond_2
     :goto_1
     :pswitch_0
@@ -191,7 +191,7 @@
 
     goto :goto_0
 
-    .line 1416
+    .line 1414
     :pswitch_1
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -206,7 +206,7 @@
 
     goto :goto_1
 
-    .line 1419
+    .line 1417
     :pswitch_2
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -219,7 +219,7 @@
     # invokes: Lcom/sec/android/app/camera/DimController;->saveSetting(II)Z
     invoke-static {v4, v5, v6}, Lcom/sec/android/app/camera/DimController;->access$200(Lcom/sec/android/app/camera/DimController;II)Z
 
-    .line 1420
+    .line 1418
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     const/16 v5, 0x5a
@@ -233,7 +233,7 @@
 
     goto :goto_1
 
-    .line 1423
+    .line 1421
     :pswitch_3
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -248,7 +248,7 @@
 
     goto :goto_1
 
-    .line 1426
+    .line 1424
     :pswitch_4
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -263,7 +263,7 @@
 
     goto :goto_1
 
-    .line 1429
+    .line 1427
     :pswitch_5
     sget-boolean v4, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FRONT_FLASH:Z
 
@@ -273,7 +273,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 1430
+    .line 1428
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     const/16 v5, 0xaa
@@ -287,7 +287,7 @@
 
     goto :goto_1
 
-    .line 1434
+    .line 1432
     :pswitch_6
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -302,7 +302,7 @@
 
     goto :goto_1
 
-    .line 1437
+    .line 1435
     :pswitch_7
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -317,7 +317,7 @@
 
     goto :goto_1
 
-    .line 1440
+    .line 1438
     :pswitch_8
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
 
@@ -325,7 +325,7 @@
 
     if-ne v4, v7, :cond_2
 
-    .line 1441
+    .line 1439
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     const/16 v5, 0x7d
@@ -339,7 +339,7 @@
 
     goto :goto_1
 
-    .line 1445
+    .line 1443
     :pswitch_9
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -354,7 +354,7 @@
 
     goto/16 :goto_1
 
-    .line 1448
+    .line 1446
     :pswitch_a
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -369,7 +369,7 @@
 
     goto/16 :goto_1
 
-    .line 1451
+    .line 1449
     :pswitch_b
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -384,7 +384,7 @@
 
     goto/16 :goto_1
 
-    .line 1454
+    .line 1452
     :pswitch_c
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -399,7 +399,7 @@
 
     goto/16 :goto_1
 
-    .line 1457
+    .line 1455
     :pswitch_d
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -414,7 +414,7 @@
 
     goto/16 :goto_1
 
-    .line 1460
+    .line 1458
     :pswitch_e
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -429,7 +429,7 @@
 
     goto/16 :goto_1
 
-    .line 1463
+    .line 1461
     :pswitch_f
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
 
@@ -437,7 +437,7 @@
 
     if-nez v4, :cond_2
 
-    .line 1464
+    .line 1462
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     const/16 v5, 0x17
@@ -451,7 +451,7 @@
 
     goto/16 :goto_1
 
-    .line 1468
+    .line 1466
     :pswitch_10
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -466,7 +466,7 @@
 
     goto/16 :goto_1
 
-    .line 1471
+    .line 1469
     :pswitch_11
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -481,7 +481,7 @@
 
     goto/16 :goto_1
 
-    .line 1474
+    .line 1472
     :pswitch_12
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
 
@@ -489,7 +489,7 @@
 
     if-ne v4, v7, :cond_2
 
-    .line 1475
+    .line 1473
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     const/16 v5, 0x26
@@ -503,7 +503,7 @@
 
     goto/16 :goto_1
 
-    .line 1479
+    .line 1477
     :pswitch_13
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -518,7 +518,7 @@
 
     goto/16 :goto_1
 
-    .line 1482
+    .line 1480
     :pswitch_14
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -533,7 +533,7 @@
 
     goto/16 :goto_1
 
-    .line 1485
+    .line 1483
     :pswitch_15
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -548,7 +548,7 @@
 
     goto/16 :goto_1
 
-    .line 1488
+    .line 1486
     :pswitch_16
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -563,7 +563,7 @@
 
     goto/16 :goto_1
 
-    .line 1491
+    .line 1489
     :pswitch_17
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -578,7 +578,7 @@
 
     goto/16 :goto_1
 
-    .line 1494
+    .line 1492
     :pswitch_18
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -593,7 +593,7 @@
 
     goto/16 :goto_1
 
-    .line 1497
+    .line 1495
     :pswitch_19
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -608,7 +608,7 @@
 
     goto/16 :goto_1
 
-    .line 1500
+    .line 1498
     :pswitch_1a
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
 
@@ -616,7 +616,7 @@
 
     if-ne v4, v7, :cond_2
 
-    .line 1501
+    .line 1499
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     const/16 v5, 0x73
@@ -630,7 +630,7 @@
 
     goto/16 :goto_1
 
-    .line 1505
+    .line 1503
     :pswitch_1b
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
 
@@ -638,7 +638,7 @@
 
     if-ne v4, v7, :cond_2
 
-    .line 1506
+    .line 1504
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     const/16 v5, 0x74
@@ -652,7 +652,7 @@
 
     goto/16 :goto_1
 
-    .line 1510
+    .line 1508
     :pswitch_1c
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -667,7 +667,7 @@
 
     goto/16 :goto_1
 
-    .line 1513
+    .line 1511
     :pswitch_1d
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
 
@@ -675,7 +675,7 @@
 
     if-nez v4, :cond_2
 
-    .line 1514
+    .line 1512
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
     const/16 v5, 0x33
@@ -689,7 +689,7 @@
 
     goto/16 :goto_1
 
-    .line 1518
+    .line 1516
     :pswitch_1e
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -704,7 +704,7 @@
 
     goto/16 :goto_1
 
-    .line 1521
+    .line 1519
     :pswitch_1f
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -719,7 +719,7 @@
 
     goto/16 :goto_1
 
-    .line 1524
+    .line 1522
     :pswitch_20
     iget-object v4, p0, Lcom/sec/android/app/camera/DimController$DimArray;->this$0:Lcom/sec/android/app/camera/DimController;
 
@@ -734,7 +734,7 @@
 
     goto/16 :goto_1
 
-    .line 1414
+    .line 1412
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -782,23 +782,23 @@
     .param p2, "dimmed"    # Z
 
     .prologue
-    .line 1533
+    .line 1531
     if-ltz p1, :cond_0
 
     const/16 v0, 0x25
 
     if-lt p1, v0, :cond_1
 
-    .line 1540
+    .line 1538
     :cond_0
     :goto_0
     return-void
 
-    .line 1537
+    .line 1535
     :cond_1
     if-eqz p2, :cond_0
 
-    .line 1538
+    .line 1536
     iget-object v0, p0, Lcom/sec/android/app/camera/DimController$DimArray;->mDimArray:[Z
 
     const/4 v1, 0x1
@@ -813,7 +813,7 @@
     .param p1, "indices"    # [I
 
     .prologue
-    .line 1543
+    .line 1541
     array-length v2, p1
 
     const/4 v1, 0x0
@@ -823,18 +823,18 @@
 
     aget v0, p1, v1
 
-    .line 1544
+    .line 1542
     .local v0, "index":I
     const/4 v3, 0x1
 
     invoke-virtual {p0, v0, v3}, Lcom/sec/android/app/camera/DimController$DimArray;->set(IZ)V
 
-    .line 1543
+    .line 1541
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1546
+    .line 1544
     .end local v0    # "index":I
     :cond_0
     return-void

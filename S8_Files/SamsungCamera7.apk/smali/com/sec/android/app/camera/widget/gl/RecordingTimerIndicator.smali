@@ -139,7 +139,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->SCREEN_HEIGHT:I
 
     .line 51
-    const v2, 0x7f0a0144
+    const v2, 0x7f0a0147
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -150,7 +150,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_REC_TIME_GROUP_HEIGHT:I
 
     .line 52
-    const v2, 0x7f0a0143
+    const v2, 0x7f0a0146
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -174,7 +174,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_REC_TIME_GROUP_POS_Y:I
 
     .line 54
-    const v2, 0x7f0a0141
+    const v2, 0x7f0a0144
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -185,7 +185,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_REC_TIME_GROUP_1_1_RATIO_MARGIN:I
 
     .line 55
-    const v2, 0x7f0a0142
+    const v2, 0x7f0a0145
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -196,7 +196,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_REC_TIME_GROUP_4_3_RATIO_MARGIN:I
 
     .line 56
-    const v2, 0x7f0a0145
+    const v2, 0x7f0a0148
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -207,7 +207,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_REC_TIME_GROUP_RATIO_BOTTOM_MARGIN:I
 
     .line 57
-    const v2, 0x7f0a01be
+    const v2, 0x7f0a01c0
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -218,7 +218,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_REC_ICON_WIDTH:I
 
     .line 58
-    const v2, 0x7f0a01c0
+    const v2, 0x7f0a01c2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -229,7 +229,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_REC_TIME_TEXT_POS_X:I
 
     .line 59
-    const v2, 0x7f0a01bf
+    const v2, 0x7f0a01c1
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -258,7 +258,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_REC_TIME_TEXT_STROKE_COLOR:I
 
     .line 62
-    const v2, 0x7f0a02b0
+    const v2, 0x7f0a02b4
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -288,7 +288,7 @@
     iput-boolean v0, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->RECORDING_MODE_TEXT_SHADOW:Z
 
     .line 65
-    const v0, 0x7f0a02eb
+    const v0, 0x7f0a02ef
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -299,7 +299,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->COVER_REC_ICON_WIDTH:I
 
     .line 66
-    const v0, 0x7f0a0277
+    const v0, 0x7f0a027a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -310,7 +310,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->COVER_RECORDING_INDICATOR_GROUP_HEIGHT:I
 
     .line 67
-    const v0, 0x7f0a0101
+    const v0, 0x7f0a0104
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -321,7 +321,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/RecordingTimerIndicator;->COVER_INDICATOR_POS_X:I
 
     .line 68
-    const v0, 0x7f0a02e9
+    const v0, 0x7f0a02ed
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

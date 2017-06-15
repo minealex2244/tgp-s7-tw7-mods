@@ -5,7 +5,7 @@ Name: res/drawable-xxxhdpi-v4/weather_ic_hot.qio
 SHA-256-Digest: RngXnfU/Zddr4/C1TTISd7D5rxfski+mN08JQYEfyR0=
 
 Name: res/layout/timer_list_item.xml
-SHA-256-Digest: 3ygHOkBGbH+0Cz4N/X7FeEvjxZW2H2NnPdZLYuGVSOc=
+SHA-256-Digest: uGw4OXaNfTxwcL5NWgPsKz5Sp3RQ2l3VScWS40zxSPk=
 
 Name: res/drawable/camera_dual_thumbnail_selected.bmp
 SHA-256-Digest: 8EQHXV+5T4QpNLDzvU9n5SJFja1jFH69a2sT1jeA2KU=
@@ -199,7 +199,7 @@ Name: res/drawable/camera_main_btn_pause_08.bmp
 SHA-256-Digest: aJueiJCz53puXZapLtqerOncpZplfZD5vpehoSQrgD0=
 
 Name: res/drawable/camera_edge_small_selfie_icon.xml
-SHA-256-Digest: cEaH0re67SpOe1IG46Fj5Ga2Zx7JhfocRwycLMiQY1w=
+SHA-256-Digest: l+uKimYObPBmOwR6T+2wTbCRUqA8INWBn2KNYpX/Xu0=
 
 Name: res/drawable/camera_main_btn_02_image_error.bmp
 SHA-256-Digest: JSgmg2TpTa8HvLGt5UcYSNWAx4rKO443RjHwzn7uf4U=
@@ -274,7 +274,7 @@ Name: res/interpolator/sine_out_70.xml
 SHA-256-Digest: qYaXzdHQlP/G8oJ6h3ZMrYCR0HtqBD/DsGfh4FejcWU=
 
 Name: res/layout-port/interaction_overlay_help_pager_layout.xml
-SHA-256-Digest: LU5EsV3//3BT90FlqyTjC+WZi9gJeEQKQycIkLE3m9I=
+SHA-256-Digest: 0y5ZRnTgz6A+03RFhw1aY3rzuT+vllNoWACq/xbN5/Q=
 
 Name: res/drawable-xxxhdpi-v4/tw_btn_radio_to_off_mtrl_000.qio
 SHA-256-Digest: uQEDhruqf6JlY1yUjJUkmHQs6hc9D+x9kEPijQnrYH0=
@@ -302,7 +302,7 @@ Name: res/drawable/camera_pro_mode_ic_pro.bmp
 SHA-256-Digest: dD91COHbPZJumoo2IcUMjJ7tVSl6dRzMNSYBHZwzD/M=
 
 Name: res/layout/attach.xml
-SHA-256-Digest: LBmb47stHZAm6qsMH/tjH1zvjvRyjJXCSoN5hmBB5Hg=
+SHA-256-Digest: ZA2ekFCUkeqJn5HH5SocY1A3CUtGnPlxMagjlmUtwdA=
 
 Name: res/drawable-xxxhdpi-v4/camera_pro_color_thumbnail_nostalgia.qmg
 SHA-256-Digest: Ca2El3dLhWm7IUhqmznLxhKI4J1+cgnXVx8VcyIbfDo=
@@ -413,7 +413,7 @@ Name: res/drawable/camera_panorama_warningarrow_down.bmp
 SHA-256-Digest: a0thW9HuoBS6blj5PodNrw9ag8wZLtsKG0uj83HjgwE=
 
 Name: res/layout-land/interaction_overlay_help_pager_layout.xml
-SHA-256-Digest: LsBmj7I70xFNlqV694YjKz2TOBb3xt1WJMCZ1d9aUes=
+SHA-256-Digest: wZ6GM6nja5R1aXlFpUcEdbpC191l5KOioFAQOoq0Yx8=
 
 Name: res/drawable/camera_timer_no6.bmp
 SHA-256-Digest: UxL7J49zql87a2ea+ZsG0/vvDGD0Jg2HKlR5v53kJSc=
@@ -440,7 +440,7 @@ Name: res/drawable/photo_crop_handler_rotate.bmp
 SHA-256-Digest: Ps9uTWPFu1lXOxBlQy68Y2dRxfwJFuCq+hngaibRDVo=
 
 Name: res/layout/resolution_list_item.xml
-SHA-256-Digest: O9R0Q610ZbhaVF4e2ZHE9OJ5Hx8ziSVDeqMQzzi2uUQ=
+SHA-256-Digest: Y3QvVCTNDWhAA9MMFlnjIAVeBjjVUXL1UF7Xv+8bVZ8=
 
 Name: res/drawable/camera_quick_menu_ic_collage_1by1_3_1.bmp
 SHA-256-Digest: u4/F80dpZuFasPywD/shByhoH7Ltjel8XrkOuuwBjsQ=
@@ -489,7 +489,7 @@ Name: res/interpolator/elastic_20.xml
 SHA-256-Digest: YUJ4FlhBSTBZha1OKd5cENf92xPL6LuweyvlNUtUAKA=
 
 Name: res/layout-land/hrm_sensor_capture_overlay_help_layout.xml
-SHA-256-Digest: hStvO2lHcoj0cx0iViQZQ8uFMjouVXarVH9Ru8An6j8=
+SHA-256-Digest: 86BMpevrp0tkue82aQjMInK2iDJdBP8sUAVJmUgvhoo=
 
 Name: res/raw/panorama_warning.ogg
 SHA-256-Digest: wPOS/k1j+f0MqafSrrfZ88V+BDenoqeWI8juC4p38Wc=
@@ -582,7 +582,7 @@ Name: res/drawable-xhdpi-v4/camera_effect_control_text_bg.9.png
 SHA-256-Digest: guacJQ8JrJ1O6SKAYpdpLgAkEBmx/lLtHzhQCCzLzLw=
 
 Name: res/layout/resolution_spinner_item.xml
-SHA-256-Digest: R+LsgYymoLgHkO170lIFRu0QioqVEzQe1rrCphw4Bik=
+SHA-256-Digest: yXbjAqwHcl9N5nICCVaaZwvjlm1+a/Jp+Uvf54DPDUc=
 
 Name: res/drawable/camera_main_btn_02_recorder_freeform.bmp
 SHA-256-Digest: ffq0nT1QcW3XjuEL8u4PpVHzp1NJKPMKJpyFFrg0xGY=
@@ -640,7 +640,7 @@ Name: res/raw/selfie_2sec_timer.ogg
 SHA-256-Digest: EOKbOA2IhGFuqbjIugwxGjqX3DX2fDk2P79JCzUJLtg=
 
 Name: AndroidManifest.xml
-SHA-256-Digest: OEz+ssIV62pkBA0Bkq8tJfDMf2XBMHYdamaaWKIteYo=
+SHA-256-Digest: xDQgSckER+Wfoyhsr7XhoKzDrsCM9i9EL4YXaF6wP+I=
 
 Name: res/drawable-xxhdpi-v4/camera_dual_thumbnail_heart.qmg
 SHA-256-Digest: DLn0UQpD9PCmqrim70EEl4EEU9Ltg92go4CPcrWSgr4=
@@ -713,7 +713,7 @@ Name: res/drawable/camera_pro_mode_wb_ic_daylight_normal.bmp
 SHA-256-Digest: CXFzPdk27eBq9bUYoj5Oz5ADuVmPlDyvPh/zn8djJTU=
 
 Name: res/layout/permission_item.xml
-SHA-256-Digest: tMNUHhV9JUb1QKmLjJNkX3nRhN5o4IGY1vtw2iyNbBw=
+SHA-256-Digest: LHoydokA3qxWApPF/WnkSF56G7yuQo2vvEa28QmSRZY=
 
 Name: res/drawable-xhdpi-v4/camera_wideselfie_arrow_left02_v.qmg
 SHA-256-Digest: 2pC4fJU+w28YYm/afDH1wxV//7DQ0CTQSLffFFpgcoY=
@@ -789,7 +789,7 @@ Name: res/drawable/sem_btn_check_to_on_mtrl_000.xml
 SHA-256-Digest: fGmcnLzmil0bhVaC9gmq1rYMPZtptjS/5g+XawzE5iQ=
 
 Name: res/layout/lens_dirt_notification_popup_layout.xml
-SHA-256-Digest: mVZWycDMexLGzBNwq8NY4ZhaxZA0a9NwvuyW2cMNlIE=
+SHA-256-Digest: GDB8TZHpVk67DHfbbRM4EurwMVc2ByhFTE+f+JZEGL8=
 
 Name: res/drawable/camera_record_ic_rec.bmp
 SHA-256-Digest: jql9ylawM4pxue+WNEJ/lfuyL2KPnrvum4I4dOigBo4=
@@ -878,7 +878,7 @@ Name: res/drawable/camera_popup_ic_timer_3sec.bmp
 SHA-256-Digest: dybYa44PmAlDAhKy3ZUkJ/azfnsbVDbyYM8BawPBS3o=
 
 Name: res/layout/starting_window_keyboard_cover_layout.xml
-SHA-256-Digest: CA2L0qrMYff5JKh6FWP5dmMngYBQX+2nMfrDLdK5M3E=
+SHA-256-Digest: NiVC1IiywEtQsxsX/certF4hotbAY7OLJrkEBNvLKaM=
 
 Name: res/drawable/camera_main_btn_02_undo.bmp
 SHA-256-Digest: guBn/rOgyce70Hgii50KXWANiFwmYv1Tt8HHwX1C89Q=
@@ -935,7 +935,7 @@ Name: res/drawable/camera_popup_ic_timer_15sec.bmp
 SHA-256-Digest: Yfe5PkgFErFdTxvv9zlJxQG58d//ZlAj0a5X5nYoCSU=
 
 Name: res/layout-port/interaction_overlay_help_pager_item.xml
-SHA-256-Digest: DcOo50svG3IfTe2c0mU/kbUkEPxQ7sjBPh5hmtVA5u0=
+SHA-256-Digest: PTsnJiGqwV1gfhBJnOjeGdOsgDKwGhKxZi3jLX3OmBw=
 
 Name: res/drawable/camera_effect_ic_beauty.bmp
 SHA-256-Digest: ShyuKh0lRqKmJEoVGWqOBfqNPYciC8ZSlvowFaLPaJc=
@@ -947,7 +947,7 @@ Name: res/drawable/camera_popup_ic_hyperlapse_32x.bmp
 SHA-256-Digest: atU9nSuRAgHBxU62V3lJd0wxdfCpsOQHdJ6+ja2+1Gg=
 
 Name: res/xml/setting.xml
-SHA-256-Digest: lY6BXQqheAc3bBlCFFDZeLGP9AtT/Rkr+U5+pF/8RqM=
+SHA-256-Digest: d/t9ps7yNZde/6XsNevKQ3u45b34Y/x4vBmUSZSEh+0=
 
 Name: res/drawable-xxxhdpi-v4/ic_launcher_camera_record.qmg
 SHA-256-Digest: V2Ra/qEaHP/kaM6CgzHlDsSgirFlOoInPdvFIdBgZiU=
@@ -987,7 +987,7 @@ Name: res/drawable/ripple_effect_for_textview.xml
 SHA-256-Digest: /VToylVTJ4CILtJVbAJ4YbDOkgNIljml/eMjpgDOJc8=
 
 Name: res/layout/help_change_mode.xml
-SHA-256-Digest: RJlKPhJ2Rg9a4XvE598wGBAtHsyAFjjFH44xF4if+GM=
+SHA-256-Digest: u5CGWELfLwV9umh3z+JbpC/Nq4R1edq372qnGLnLmqw=
 
 Name: res/drawable/camera_quick_menu_ic_food_color.bmp
 SHA-256-Digest: ycCeNUwCXpyZxmA2Ux/yoLEhbzbq0+t6Eb5vgsj2E8Y=
@@ -1008,7 +1008,7 @@ Name: res/drawable-nodpi-v4/overscroll_landscape_right.qio
 SHA-256-Digest: I1gBYrk9H5hGmq7/wRJpW7oCvv09KuUWmXiFE+vSIOQ=
 
 Name: res/layout/permission_dialog.xml
-SHA-256-Digest: ImDYqGlmT10nDnUOo1Frtr6nEk3nLRECdGP7AwvEp2U=
+SHA-256-Digest: 0W46Hn8gBz/WSat7ixPiVXbMIAImmpE30DnKLIWBkU8=
 
 Name: res/drawable/camera_frame_left01_v_02.bmp
 SHA-256-Digest: 6reumJGMrdumAOF9O7kAQran7ucVVGPtvTZnejqvSO8=
@@ -1051,13 +1051,16 @@ Name: res/drawable/camera_af_control.bmp
 SHA-256-Digest: jDjx0hxMmHph+0D0NT3YzxEiVtdLXZRtcmM4OekYSfM=
 
 Name: res/layout/switch_item.xml
-SHA-256-Digest: T0lZhuXnZ45gzwgmjgcjXYaSRTT0dqfv70q0orS3lok=
+SHA-256-Digest: O/+LI5aEf/2NzgwMDRAJNDqZ+3Fg0vF7mH4w5CSRK/Q=
 
 Name: res/layout/help_take_picture.xml
-SHA-256-Digest: nE3PB5Y41XtF6sYj2/uZu58hcE7PWfAvZW3/0YXy7XM=
+SHA-256-Digest: RAssMWeYXMzMgrfqY1VS7fNxtCWVYGnJOnX1c2XCYTI=
 
 Name: res/drawable/camera_btn_af_pressed.bmp
 SHA-256-Digest: dfQTHh9RGNWEaPq1EpLZdrVGM97965zZMbPOgttXEbM=
+
+Name: res/drawable-ko/camera_pro_mode_wb_ic_auto_normal.bmp
+SHA-256-Digest: rvXQehTwyQlMxrpHSRolfXdNMxQ3bhjR/3pBllEER2M=
 
 Name: res/drawable/camera_main_btn_pause_05.bmp
 SHA-256-Digest: sIVkTOukZnjdFiuz5ST5AL6si4rnL8wiStpQ0xrAEXY=
@@ -1078,7 +1081,7 @@ Name: res/drawable-xxxhdpi-v4/camera_wideselfie_arrow_right02_v.qmg
 SHA-256-Digest: 4aapJd2NsY8FktRhO+HSM6ycjyqqlpQRLEQ52iCY/+4=
 
 Name: res/layout/interaction_overlay_help_arrow_animation_item.xml
-SHA-256-Digest: pqVgltEtFimhFUoIWCKwLJJ68r9SdAjHNw/4NNCrEac=
+SHA-256-Digest: bbF1L2WDqBa95IGD1k4Li4I2awicGG3XGcDdDWmwbYk=
 
 Name: res/interpolator/elastic_80.xml
 SHA-256-Digest: 1hsyCBRP/1krKGvnGR2sfiSd6nOwCN6kM2OozJEU1Mg=
@@ -1140,7 +1143,7 @@ Name: res/drawable/camera_main_btn_shutter_to_stop_11.bmp
 SHA-256-Digest: f60RvkuKUxwXrRS6M4HeLK73tkFnXrFiL/6Qdq1gIf4=
 
 Name: classes.dex
-SHA-256-Digest: h2w37i7u076nV/7prY3pPf9KS221sCErQ0oCGz9E1zM=
+SHA-256-Digest: /CnwppcDZyj+LJWdqYaHWayClE0xT7e5KLY4jtXJvOI=
 
 Name: res/drawable/camera_caf_w.bmp
 SHA-256-Digest: thFTln1GHKsGPdxSvp4NITaO2rt9IHKUrsuetEyKG3Q=
@@ -1191,7 +1194,7 @@ Name: res/drawable/camera_timer_interval_no1_dark.bmp
 SHA-256-Digest: HLoJEZhbBmHeJPkgDBsjk13P5lLC6C7Yp+zfQ4XZsG0=
 
 Name: res/layout/camera_setting_root.xml
-SHA-256-Digest: O4XM+JEwR4B5M4zM07Tb1DV+R4CtE/HAmLtKX1UIwio=
+SHA-256-Digest: L/bIKUL2Rwvk71lakXbCHCF1uZoluTnmm0qrarrDwlU=
 
 Name: res/drawable/soundshot_rec_eq_bar_03.bmp
 SHA-256-Digest: M7fWRiCJt4XxVsgY4aRJsRsMsDKTMZ/ueL/m0sn5POw=
@@ -1239,7 +1242,7 @@ Name: res/drawable/camera_panorama_arrow_up.bmp
 SHA-256-Digest: TSq2E9GDIKSB0BQgvur6RhYJ0EeTYolm4XXIg/MnB2c=
 
 Name: resources.arsc
-SHA-256-Digest: V898FgRNCawCNWKBNUkSyAnSfyu3xhDVphnmd90pj5k=
+SHA-256-Digest: eJfxnavmM7R2RfcyPbLOEP3m9SwNdBdwe2xfGmhX7Sk=
 
 Name: res/drawable/beauty_face_spotlight_lighting_right.bmp
 SHA-256-Digest: yKOEemknK74sbynEhfxORE326Sdt1je7zfxhn/hReJI=
@@ -1323,7 +1326,7 @@ Name: res/drawable/camera_mode_ic_wechat_video.bmp
 SHA-256-Digest: r5cQPDisBMcJD68BIgrLDVLfhOPxnmaC0Om5RQkUfUE=
 
 Name: res/drawable/list_divider_for_settings_landscape.xml
-SHA-256-Digest: Mrk8YLkJw3PQawnl1s42Hu9fSqy4WX6FAC/2UtxIcfc=
+SHA-256-Digest: wTe38igytY59qBxhQP6zqwjjQEFFrYlRg+DZo0MuHh8=
 
 Name: res/drawable/home_ic_sound_and_shot_pressed.bmp
 SHA-256-Digest: Ot49fM4Sa1LzmWyWKpfpFqEpSNjTJUkxho/w/BYzLqw=
@@ -1400,7 +1403,7 @@ Name: res/drawable/sticker_sound_pressed.bmp
 SHA-256-Digest: q6cJGVo4HplgyUkYBUuiVng09zITyDMS+Jt6uzjIPCE=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: Ue+KP+KXjAC4jjMyv9UqNbuDETQO//whv28SC484ano=
+SHA-256-Digest: brzW5MjyjPmaG8uvpIcko2ooE0RVLaVqxtr85eAprDg=
 
 Name: res/drawable/camera_pro_mode_icon_bg.bmp
 SHA-256-Digest: ymfKRSKF+ZrxqvZzPO39sd+jfsdxc9gDIK7EIguIRBY=
@@ -1452,13 +1455,13 @@ Name: res/drawable/camera_clip_movie_collage_4by3_3_2.bmp
 SHA-256-Digest: GfvPn5mcfGVZkAbTuSnQmga+roGGyHdSeKZwUiXnkFQ=
 
 Name: res/layout/custom_cancel_done.xml
-SHA-256-Digest: 0ZLA7ap4ZbC12sCjCWT8W2WPp5yjB0OM0OmkmDsbVXA=
+SHA-256-Digest: nCa4u3F9y01+5yAcLLhgSfcDb6VLdXx7LFQvdkKmVfk=
 
 Name: res/layout/help_viewing_pics_and_videos.xml
-SHA-256-Digest: UbehCunH7oRflrw8d1hZCLmxu+vLERJ2KlqVoEp9Alo=
+SHA-256-Digest: vETyI4koZ2wsPF1efVXMwfkFfQGQsfmV8nzrLhbVsu8=
 
 Name: res/layout/network_permission_dialog.xml
-SHA-256-Digest: Pa9OL6Q9fQAJfnlgc2usZZy5TZTbVabBiLJk/ds5SzU=
+SHA-256-Digest: V2coiXG9pr0jO2y6PHFtcCQg8qfmCjvGHa1TYaDfIJ0=
 
 Name: res/drawable-xxhdpi-v4/tw_noti_badge_mtrl.9.png
 SHA-256-Digest: 0Z5KQw8jn8278rF7qaxruQ6Yozc7JZBHrZrbAlWo33g=
@@ -1485,7 +1488,7 @@ Name: res/drawable/camera_main_btn_02_capture.bmp
 SHA-256-Digest: 5s0jk1hXwXN4lmhuAzcZVmwmslr8WkXPvrntFGIa2RQ=
 
 Name: res/xml/executable.xml
-SHA-256-Digest: rggp52vCK8sisDRNzzn5kOe9pO4z7/I8gBOxjDqFPFk=
+SHA-256-Digest: UYGnSlSHh/BUg0MCBm1NbZrzAnyAC8ZgjU2Qz/t2kno=
 
 Name: res/drawable-xxxhdpi-v4/camera_interactive_shot_rear_right_2.qio
 SHA-256-Digest: ZOZy4rwxXudePX2YA3xBSYm9IrGRY9ngWwBc7vNhMyQ=
@@ -1539,7 +1542,7 @@ Name: res/drawable-xxhdpi-v4/camera_dual_thumbnail_split.qmg
 SHA-256-Digest: 9/adJbUUVVH7EG7FkZpw9rjL7oS6wVjHcaJQShbsLsQ=
 
 Name: res/layout/help_record_video.xml
-SHA-256-Digest: tibvGUD4cYkCUFXFsHT6DJHgGQGyFAeAZvIwu/8ztPA=
+SHA-256-Digest: DuyhUlTzMxKTQ5MA+UnKk52Whl5CwILnkPuiBf9NYkU=
 
 Name: res/drawable/camera_mode_ic_shot_and_more.bmp
 SHA-256-Digest: NMA6Anpn8Am87K3QSNSL9mu4/r61NyUC8qzwxeMOlUo=
@@ -1570,7 +1573,7 @@ Name: res/drawable-xxxhdpi-v4/weather_ic_partlysunnywithflurries.qmg
 SHA-256-Digest: GorUOR0iRkXEIgC10637siCc9ebCw7GHYngth18gfbA=
 
 Name: res/layout/left_checkbox_preference_layout.xml
-SHA-256-Digest: xJ5c/gX0dhze6YwyvI5smv02rQIxfFC5pMXfMOu6UQk=
+SHA-256-Digest: QRGez5E8rkfC9YwmNzWvNOwdWc8+dwi7+vGN2ZELhdw=
 
 Name: res/drawable-xxxhdpi-v4/camera_interactive_shot_front_device4.qm
  g
@@ -1700,7 +1703,7 @@ Name: res/drawable-xxxhdpi-v4/weather_ic_ice.qio
 SHA-256-Digest: Fs0gTZhYwRPdPNM0rPKVkdZhKQdEaP9eEgFGNTqgbD0=
 
 Name: res/xml/shooting_method.xml
-SHA-256-Digest: XkgR/GV6orW86ctFUXpD6pH9jnXDi5JnuEJJeQCt7t0=
+SHA-256-Digest: 5vIIIjAWIh1TeKmyBe71n5zMsXdGG/bQDZF2G81y3hs=
 
 Name: res/drawable-xxxhdpi-v4/camera_effect_control_text_bg.9.png
 SHA-256-Digest: rtfHBceh3QLDZUJzKK2UA4xrb98S0gCVPrJJPDXrE9U=
@@ -1712,13 +1715,13 @@ Name: res/drawable/camera_timer_interval_no3_dark.bmp
 SHA-256-Digest: mjXkCC2yA0+ZZ96qrDul9++mrIbBaUPKyvA1p5N/l04=
 
 Name: res/layout/camcorder_description.xml
-SHA-256-Digest: ULJ7AYBrxJfLvdAQADSGsAuvbaPiTNiQ41LYOEfUP+o=
+SHA-256-Digest: 7/vIz4P9MukiNgKe20eTaPHQi7eTrr8J5xKYgKeOHmM=
 
 Name: res/drawable/camera_quick_menu_ic_effect.bmp
 SHA-256-Digest: FcaTQb9A1sxtbGbPUX39f2QYmGqcEBkqKOUKhzH5u2M=
 
 Name: res/drawable/camera_edge_small_auto_icon.xml
-SHA-256-Digest: cw4CkrJwUEz28MJ6L7VT4xRngnGYyoDsIupTmHO07ss=
+SHA-256-Digest: 7WeqnW5INsYhJxRGo/7AZjDGbuhfVOA+WOz0jkZTQGY=
 
 Name: res/drawable/camera_effect_ic_stamp_pressed.bmp
 SHA-256-Digest: p6o4s0rtwGMa1yBrxOMWHEYUC4UlffeJ5K9LUhR8Oqc=
@@ -1812,7 +1815,7 @@ Name: res/drawable/soundshot_rec_sec_progress_01.bmp
 SHA-256-Digest: PESt8IV5ZFEKKGw3qb/4vp8DaI+8zLHjg6to8j0kA54=
 
 Name: res/layout-port/hrm_sensor_capture_overlay_help_layout.xml
-SHA-256-Digest: MjiWdi6/GV/0UAW41m1yINstIsIEwEamWPnA3EFihjU=
+SHA-256-Digest: 6nQEtM3CpFplQixCAsvG5SOLkY9afZbMhsDGNI8OM3k=
 
 Name: res/raw/camera_timer.ogg
 SHA-256-Digest: 6hwvtcraj5hI/usg/IsKCe4m2bkFxL6Q0UoOUiwy8UI=
@@ -1993,7 +1996,7 @@ Name: res/drawable/camera_cover_view_main_btn_02_pause.bmp
 SHA-256-Digest: inpJmp72WjRhmlJtcWP3Oxq5cJUiSz1Y3AyS52lT7z0=
 
 Name: res/xml/assistant.xml
-SHA-256-Digest: K5Xqu/RdsPoi504ewJhoCJnMb9OA8FrwfoJgsVRxrP4=
+SHA-256-Digest: 2z9vfKL3+HGXeFwQgcsurd0US7m1Pmn10gcajWeNeGg=
 
 Name: res/drawable/camera_quick_menu_ic_collage_1by1_4.bmp
 SHA-256-Digest: kZgbvjezWqyZusdYxMDsppXi5FuixlxWNbEuNiFyXLM=
@@ -2075,7 +2078,7 @@ Name: res/drawable-xhdpi-v4/effect_yellowredpoint.qmg
 SHA-256-Digest: uYrLV2D5gjTJUe5rpxeIWnDkw6u2oM8HUJCza3l0J8M=
 
 Name: res/layout/quick_launch_summary_text_view.xml
-SHA-256-Digest: 42qPeeZL7gR5U4VaaXkVS7Ul3K2gNS87fUX89lCw/Y4=
+SHA-256-Digest: 2xnf9BS2giFtqWOZPqeCKfW1TQCrMEuLt13EPusNNZw=
 
 Name: res/drawable/camera_clip_movie_ratio_1by1_3_1_selected_1.bmp
 SHA-256-Digest: PPByVyH8Ovyfs3r8NE8Nsfm8Mf1uAfv9H4CHqZB7tEc=
@@ -2117,7 +2120,7 @@ Name: res/drawable/camera_clip_movie_ratio_4by3_4_line3.bmp
 SHA-256-Digest: +PL/vVgt8JlnFKVhC6/f15PtgBZvkZ7l4TBeQMubh48=
 
 Name: res/layout-land/interaction_overlay_help_pager_item.xml
-SHA-256-Digest: jSeV9u+tP3cuy8MbwXwH5cFpE7OJZZtc3Qhn6cROWvw=
+SHA-256-Digest: IgBTI31MOFhl0SujCG4R8Gxqfe9F6zk/lIIh83b1nxE=
 
 Name: res/drawable/beauty_face_mode_icon_bg.bmp
 SHA-256-Digest: 9TDOtQolunJGHjsG0+H3xw4f+82RFv7autljTaw0A5Y=
@@ -2389,7 +2392,7 @@ Name: res/drawable/camera_clip_movie_ratio_4by3_4_line1.bmp
 SHA-256-Digest: YuP9vp7WxR9gU2eGhsqCDGUCQg4pF2obcVuzWnZOw2g=
 
 Name: res/layout/location_guide_dialog.xml
-SHA-256-Digest: pjLF2Xn73pFOPh5kVHzT2WqBtSYrtgqJlGf88V/J0QE=
+SHA-256-Digest: kBxPgOPlzVVxYd3OCYloHZlhrTpNvh1tCI3dEOPGGjI=
 
 Name: res/drawable/photo_crop_handler_delete.bmp
 SHA-256-Digest: JQr/tRqUz815nY63ag4nmAuJdOHrEBvKrOqOyDx84mE=

@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->SCREEN_HEIGHT:I
 
     .line 59
-    const v0, 0x7f0a0042
+    const v0, 0x7f0a0044
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -188,7 +188,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->PRO_SLIDE_RIGHT_MARGIN:F
 
     .line 60
-    const v0, 0x7f0a0190
+    const v0, 0x7f0a0192
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -206,7 +206,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->PRO_SLIDE_RECORDING_SLIDER_OFFSET_X:F
 
     .line 62
-    const v0, 0x7f0a0295
+    const v0, 0x7f0a0299
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -215,7 +215,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->VALUE_TEXT_WIDTH:F
 
     .line 63
-    const v0, 0x7f0a0382
+    const v0, 0x7f0a0385
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -224,7 +224,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->VALUE_TEXT_HEIGHT:F
 
     .line 64
-    const v0, 0x7f0a01a0
+    const v0, 0x7f0a01a2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -233,7 +233,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->VALUE_TEXT_MARGIN:F
 
     .line 65
-    const v0, 0x7f0a0294
+    const v0, 0x7f0a0298
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -271,7 +271,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->INDICATOR_TEXT_COLOR:I
 
     .line 71
-    const v0, 0x7f0a037b
+    const v0, 0x7f0a037e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -280,7 +280,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->SLIDER_TOP_MARGIN:F
 
     .line 72
-    const v0, 0x7f0a037f
+    const v0, 0x7f0a0382
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -304,7 +304,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->WB_LABEL_GROUP_HEIGHT:F
 
     .line 74
-    const v0, 0x7f0a037c
+    const v0, 0x7f0a037f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -328,7 +328,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->SLIDER_HEIGHT:F
 
     .line 76
-    const v0, 0x7f0a03c9
+    const v0, 0x7f0a03cc
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -337,7 +337,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->TICK_BAR_HEIGHT:F
 
     .line 77
-    const v0, 0x7f0a03c7
+    const v0, 0x7f0a03ca
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -346,7 +346,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TEXT_HEIGHT:F
 
     .line 78
-    const v0, 0x7f0a03c8
+    const v0, 0x7f0a03cb
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -372,7 +372,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->LABEL_TOP_MARGIN:F
 
     .line 80
-    const v0, 0x7f0a03c5
+    const v0, 0x7f0a03c8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -381,7 +381,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->AUTO_LABEL_WIDTH:F
 
     .line 81
-    const v0, 0x7f0a0379
+    const v0, 0x7f0a037c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -390,7 +390,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->AUTO_LABEL_MARGIN:F
 
     .line 82
-    const v0, 0x7f0a037a
+    const v0, 0x7f0a037d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -399,7 +399,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProLiteSlider;->INDICATOR_RIGHT_MARGIN:F
 
     .line 83
-    const v0, 0x7f0a0293
+    const v0, 0x7f0a0297
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -986,7 +986,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090334
+    const v3, 0x7f090335
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1019,7 +1019,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090333
+    const v3, 0x7f090334
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1052,7 +1052,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090336
+    const v3, 0x7f090337
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1085,7 +1085,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f090335
+    const v3, 0x7f090336
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

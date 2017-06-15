@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     .prologue
-    .line 2484
+    .line 2483
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$4;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
     iput p2, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$4;->val$error:I
@@ -47,17 +47,17 @@
     .prologue
     const/4 v6, 0x1
 
-    .line 2487
+    .line 2486
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$4;->val$error:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 2504
+    .line 2503
     :goto_0
     :pswitch_0
     return-void
 
-    .line 2489
+    .line 2488
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$4;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
@@ -76,7 +76,7 @@
 
     goto :goto_0
 
-    .line 2492
+    .line 2491
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$4;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
@@ -85,7 +85,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090294
+    const v1, 0x7f090297
 
     invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -95,7 +95,7 @@
 
     goto :goto_0
 
-    .line 2495
+    .line 2494
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$4;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
@@ -104,7 +104,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f090290
+    const v1, 0x7f090293
 
     invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -114,7 +114,7 @@
 
     goto :goto_0
 
-    .line 2498
+    .line 2497
     :pswitch_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$4;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
@@ -123,7 +123,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f09028f
+    const v1, 0x7f090292
 
     invoke-static {v0, v1, v6}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -133,7 +133,7 @@
 
     goto :goto_0
 
-    .line 2501
+    .line 2500
     :pswitch_5
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie$4;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;
 
@@ -153,7 +153,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0901d8
+    const v2, 0x7f0901db
 
     new-array v3, v6, [Ljava/lang/Object;
 
@@ -184,7 +184,7 @@
 
     goto :goto_0
 
-    .line 2487
+    .line 2486
     nop
 
     :pswitch_data_0

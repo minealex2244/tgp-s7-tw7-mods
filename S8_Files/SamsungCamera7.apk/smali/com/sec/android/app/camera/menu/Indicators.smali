@@ -80,7 +80,7 @@
     invoke-direct {p0, v0}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;)V
 
     .line 50
-    const v0, 0x7f0a0281
+    const v0, 0x7f0a0284
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -91,7 +91,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_WIDTH:I
 
     .line 51
-    const v0, 0x7f0a0280
+    const v0, 0x7f0a0283
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -102,7 +102,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_HEIGHT:I
 
     .line 52
-    const v0, 0x7f0a013f
+    const v0, 0x7f0a0142
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -113,7 +113,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_POS_X:I
 
     .line 53
-    const v0, 0x7f0a0140
+    const v0, 0x7f0a0143
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -124,7 +124,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_POS_Y:I
 
     .line 54
-    const v0, 0x7f0a033d
+    const v0, 0x7f0a0340
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -135,7 +135,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_ITEM_PADDING:I
 
     .line 55
-    const v0, 0x7f0a033f
+    const v0, 0x7f0a0342
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -146,7 +146,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_PORTRAIT_X_PADDING:I
 
     .line 56
-    const v0, 0x7f0a033e
+    const v0, 0x7f0a0341
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -157,7 +157,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_LANDSCAPE_X_PADDING:I
 
     .line 57
-    const v0, 0x7f0a0340
+    const v0, 0x7f0a0343
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -195,7 +195,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_TEXT_STROKE_COLOR:I
 
     .line 61
-    const v0, 0x7f0a0282
+    const v0, 0x7f0a0285
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

@@ -116,7 +116,7 @@
     .line 51
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/Trapezoid;->mPaint:Landroid/graphics/Paint;
 
-    const v1, 0x7f0a0229
+    const v1, 0x7f0a022c
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -446,7 +446,7 @@
 
     aget v2, p3, v2
 
-    const v3, 0x7f0a0228
+    const v3, 0x7f0a022b
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

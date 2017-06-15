@@ -143,7 +143,6 @@
     <dimen name="preview_wide_width">1280.0dip</dimen>
     <dimen name="pro_colortune_list_right_margin">209.0dip</dimen>
     <dimen name="pro_item_text_bottom_margin">2.0dip</dimen>
-    <dimen name="pro_item_text_font_size">16.0dip</dimen>
     <dimen name="pro_item_top_margin">211.0dip</dimen>
     <dimen name="pro_long_ev_shot_progress_text_top_margin">14.0dip</dimen>
     <dimen name="pro_long_ev_shot_progress_title_height">20.0dip</dimen>
@@ -338,6 +337,7 @@
     <dimen name="mode_info_action_bar_text_size">20.0dip</dimen>
     <dimen name="mode_info_description_font_size">18.0dip</dimen>
     <dimen name="mode_info_menu_item_title_font_size">16.0dip</dimen>
+    <dimen name="pro_item_text_font_size">16.0dip</dimen>
     <dimen name="pro_item_text_height">24.0dip</dimen>
     <dimen name="pro_item_text_pos_y">43.0dip</dimen>
     <dimen name="pro_item_width">70.0dip</dimen>

@@ -38,20 +38,20 @@
     .param p1, "executor"    # Ljava/util/concurrent/Executor;
 
     .prologue
-    .line 824
+    .line 844
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 820
+    .line 840
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->lastTask:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 825
+    .line 845
     iput-object p1, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->executor:Ljava/util/concurrent/Executor;
 
-    .line 826
+    .line 846
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;
 
     .prologue
-    .line 819
+    .line 839
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->lastTask:Ljava/util/concurrent/atomic/AtomicReference;
 
     return-object v0
@@ -73,12 +73,12 @@
     .param p1, "command"    # Ljava/lang/Runnable;
 
     .prologue
-    .line 830
+    .line 850
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->lastTask:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    .line 831
+    .line 851
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor;->executor:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lcom/sec/android/app/camera/widget/gl/StickerRectHandler$LatestTaskExecutor$1;
@@ -87,6 +87,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 840
+    .line 860
     return-void
 .end method

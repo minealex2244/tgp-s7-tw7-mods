@@ -67,7 +67,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->BASEMENU_GROUP_WIDTH:F
 
     .line 52
-    const v0, 0x7f0a0052
+    const v0, 0x7f0a0054
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -76,7 +76,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
     .line 53
-    const v0, 0x7f0a0372
+    const v0, 0x7f0a0375
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -85,7 +85,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->PAGE_NAVIGATOR_GROUP_HEIGHT:F
 
     .line 55
-    const v0, 0x7f0a0274
+    const v0, 0x7f0a0277
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -94,7 +94,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->CAPTURE_PROGRESS_TEXT_WIDTH:F
 
     .line 56
-    const v0, 0x7f0a0272
+    const v0, 0x7f0a0275
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -117,7 +117,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->SCREEN_HEIGHT:I
 
     .line 59
-    const v0, 0x7f0a02a0
+    const v0, 0x7f0a02a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -126,7 +126,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->SHUTTER_BUTTON_WIDTH:F
 
     .line 60
-    const v0, 0x7f0a0273
+    const v0, 0x7f0a0276
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -252,7 +252,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0901da
+    const v1, 0x7f0901dd
 
     const/4 v2, 0x1
 

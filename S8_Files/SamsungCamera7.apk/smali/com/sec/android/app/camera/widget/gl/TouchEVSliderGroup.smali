@@ -90,7 +90,7 @@
     invoke-direct {p0, v0}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;)V
 
     .line 42
-    const v0, 0x7f0a03df
+    const v0, 0x7f0a03e2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -101,7 +101,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_SLIDE_GROUP_WIDTH:I
 
     .line 43
-    const v0, 0x7f0a0056
+    const v0, 0x7f0a0058
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -120,7 +120,7 @@
 
     sub-int/2addr v0, v1
 
-    const v1, 0x7f0a0057
+    const v1, 0x7f0a0059
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -146,7 +146,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_SLIDE_GROUP_POS_Y:I
 
     .line 46
-    const v0, 0x7f0a03e0
+    const v0, 0x7f0a03e3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -157,7 +157,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_SLIDEBAR_WIDTH:I
 
     .line 47
-    const v0, 0x7f0a0059
+    const v0, 0x7f0a005b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -168,7 +168,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_SLIDEBAR_HEIGHT:I
 
     .line 48
-    const v0, 0x7f0a0058
+    const v0, 0x7f0a005a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_SLIDEBAR_EMPTY_SPACE_HEIGHT:I
 
     .line 49
-    const v0, 0x7f0a03dd
+    const v0, 0x7f0a03e0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -209,7 +209,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_SLIDEBAR_POS_X:I
 
     .line 51
-    const v0, 0x7f0a03de
+    const v0, 0x7f0a03e1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -220,7 +220,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_ICON_PADDING:I
 
     .line 52
-    const v0, 0x7f0a0055
+    const v0, 0x7f0a0057
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -240,7 +240,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_LEVEL_ICON_POS_X:I
 
     .line 54
-    const v0, 0x7f0a03dc
+    const v0, 0x7f0a03df
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -251,7 +251,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_CONTROL_ICON_WIDTH:I
 
     .line 55
-    const v0, 0x7f0a03db
+    const v0, 0x7f0a03de
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -280,7 +280,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/TouchEVSliderGroup;->TOUCH_EV_OFFSET:I
 
     .line 58
-    const v0, 0x7f0a005a
+    const v0, 0x7f0a005c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

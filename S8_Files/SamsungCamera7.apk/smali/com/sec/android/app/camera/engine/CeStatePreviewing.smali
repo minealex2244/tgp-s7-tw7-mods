@@ -1250,9 +1250,19 @@
     :pswitch_2d
     invoke-virtual {p0}, Lcom/sec/android/app/camera/engine/CeStatePreviewing;->getEngine()Lcom/sec/android/app/camera/engine/CommonEngine;
 
+    move-result-object v2
+
+    invoke-virtual {p1}, Lcom/sec/android/app/camera/engine/CeRequest;->getParam()Ljava/lang/Object;
+
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->startSRZoomCapture()V
+    check-cast v0, Ljava/lang/Integer;
+
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    move-result v0
+
+    invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->startMultiFrameCapture(I)V
 
     .line 275
     invoke-virtual {p0}, Lcom/sec/android/app/camera/engine/CeStatePreviewing;->getRequestQueue()Lcom/sec/android/app/camera/engine/CeRequestQueue;

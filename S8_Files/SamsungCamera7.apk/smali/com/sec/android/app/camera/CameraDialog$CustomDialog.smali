@@ -30,13 +30,13 @@
     .param p2, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1122
+    .line 1123
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    .line 1123
+    .line 1124
     invoke-direct {p0, p2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 1124
+    .line 1125
     return-void
 .end method
 
@@ -45,7 +45,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/CameraDialog$CustomDialog;
 
     .prologue
-    .line 1117
+    .line 1118
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mDialogID:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
     return-object v0
@@ -56,7 +56,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/CameraDialog$CustomDialog;
 
     .prologue
-    .line 1117
+    .line 1118
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
     return-object v0
@@ -67,7 +67,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/CameraDialog$CustomDialog;
 
     .prologue
-    .line 1117
+    .line 1118
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
     return-object v0
@@ -80,10 +80,10 @@
     .param p1, "id"    # Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
     .prologue
-    .line 1127
+    .line 1128
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mDialogID:Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;
 
-    .line 1128
+    .line 1129
     return-void
 .end method
 
@@ -93,10 +93,10 @@
     .param p2, "listener"    # Landroid/content/DialogInterface$OnClickListener;
 
     .prologue
-    .line 1132
+    .line 1133
     iput-object p2, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 1134
+    .line 1135
     new-instance v0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$1;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$1;-><init>(Lcom/sec/android/app/camera/CameraDialog$CustomDialog;)V
@@ -114,10 +114,10 @@
     .param p2, "listener"    # Landroid/content/DialogInterface$OnClickListener;
 
     .prologue
-    .line 1151
+    .line 1152
     iput-object p2, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 1153
+    .line 1154
     new-instance v0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$2;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$2;-><init>(Lcom/sec/android/app/camera/CameraDialog$CustomDialog;)V
@@ -135,10 +135,10 @@
     .param p2, "listener"    # Landroid/content/DialogInterface$OnClickListener;
 
     .prologue
-    .line 1170
+    .line 1171
     iput-object p2, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 1172
+    .line 1173
     new-instance v0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$3;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$3;-><init>(Lcom/sec/android/app/camera/CameraDialog$CustomDialog;)V
@@ -156,10 +156,10 @@
     .param p2, "listener"    # Landroid/content/DialogInterface$OnClickListener;
 
     .prologue
-    .line 1189
+    .line 1190
     iput-object p2, p0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
-    .line 1191
+    .line 1192
     new-instance v0, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$4;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/CameraDialog$CustomDialog$4;-><init>(Lcom/sec/android/app/camera/CameraDialog$CustomDialog;)V

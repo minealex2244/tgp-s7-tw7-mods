@@ -1318,7 +1318,7 @@
 
     move-object/from16 v30, v0
 
-    const v31, 0x7f0901c5
+    const v31, 0x7f0901c8
 
     const/16 v32, 0x0
 

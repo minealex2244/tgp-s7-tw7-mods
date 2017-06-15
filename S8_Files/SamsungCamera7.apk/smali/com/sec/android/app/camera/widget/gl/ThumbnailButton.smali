@@ -66,7 +66,7 @@
     invoke-direct {p0, v0, p2, p3}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 50
-    const v0, 0x7f0a02a4
+    const v0, 0x7f0a02a8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -77,7 +77,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->THUMBNAIL_FRAME_WIDTH:I
 
     .line 51
-    const v0, 0x7f0a02a3
+    const v0, 0x7f0a02a7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -88,7 +88,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->THUMBNAIL_FRAME_HEIGHT:I
 
     .line 52
-    const v0, 0x7f0a02a6
+    const v0, 0x7f0a02aa
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -103,7 +103,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->THUMBNAIL_IMAGE_WIDTH:I
 
     .line 53
-    const v0, 0x7f0a02a5
+    const v0, 0x7f0a02a9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

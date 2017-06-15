@@ -93,6 +93,8 @@
 
 .field private final CENTER_OBJECT_REAR_Y:F
 
+.field private final NORMAL_RATIO_PREVIEW_LEFT:F
+
 .field private final PAGE_NAVIGATOR_GROUP_HEIGHT:F
 
 .field private final PROGRESS_FRONT_X:F
@@ -247,11 +249,11 @@
 
     const/4 v2, 0x0
 
-    .line 207
+    .line 208
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 112
-    const v0, 0x7f0a022f
+    const v0, 0x7f0a0232
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -260,7 +262,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_W:F
 
     .line 113
-    const v0, 0x7f0a022e
+    const v0, 0x7f0a0231
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -269,7 +271,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_H:F
 
     .line 114
-    const v0, 0x7f0a022c
+    const v0, 0x7f0a022f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -278,7 +280,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_REAR_X:F
 
     .line 115
-    const v0, 0x7f0a022d
+    const v0, 0x7f0a0230
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -287,7 +289,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_REAR_Y:F
 
     .line 116
-    const v0, 0x7f0a022a
+    const v0, 0x7f0a022d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -296,7 +298,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_FRONT_X:F
 
     .line 117
-    const v0, 0x7f0a022b
+    const v0, 0x7f0a022e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -305,7 +307,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_FRONT_Y:F
 
     .line 118
-    const v0, 0x7f0a0232
+    const v0, 0x7f0a0235
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -314,7 +316,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_REAR_X:F
 
     .line 119
-    const v0, 0x7f0a0233
+    const v0, 0x7f0a0236
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -323,7 +325,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_REAR_Y:F
 
     .line 120
-    const v0, 0x7f0a0230
+    const v0, 0x7f0a0233
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -332,7 +334,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_FRONT_X:F
 
     .line 121
-    const v0, 0x7f0a0231
+    const v0, 0x7f0a0234
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -345,7 +347,7 @@
 
     new-array v0, v0, [F
 
-    const v1, 0x7f0a005d
+    const v1, 0x7f0a005f
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -353,7 +355,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0a005e
+    const v1, 0x7f0a0060
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -361,7 +363,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0a005f
+    const v1, 0x7f0a0061
 
     .line 123
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -370,7 +372,7 @@
 
     aput v1, v0, v5
 
-    const v1, 0x7f0a0060
+    const v1, 0x7f0a0062
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -385,7 +387,7 @@
 
     new-array v0, v0, [F
 
-    const v1, 0x7f0a0061
+    const v1, 0x7f0a0063
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -393,7 +395,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0a0062
+    const v1, 0x7f0a0064
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -401,7 +403,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0a0063
+    const v1, 0x7f0a0065
 
     .line 125
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -410,7 +412,7 @@
 
     aput v1, v0, v5
 
-    const v1, 0x7f0a0064
+    const v1, 0x7f0a0066
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -430,7 +432,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->BASEMENU_GROUP_WIDTH:F
 
     .line 129
-    const v0, 0x7f0a0052
+    const v0, 0x7f0a0054
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -439,7 +441,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
     .line 130
-    const v0, 0x7f0a0372
+    const v0, 0x7f0a0375
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -447,22 +449,31 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PAGE_NAVIGATOR_GROUP_HEIGHT:F
 
-    .line 133
+    .line 131
+    const v0, 0x7f0a000c
+
+    invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
+
+    move-result v0
+
+    iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->NORMAL_RATIO_PREVIEW_LEFT:F
+
+    .line 134
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SCREEN_WIDTH:I
 
-    .line 134
+    .line 135
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenHeightPixels()I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SCREEN_HEIGHT:I
 
-    .line 135
-    const v0, 0x7f0a02a0
+    .line 136
+    const v0, 0x7f0a02a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -470,8 +481,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SHUTTER_BUTTON_WIDTH:F
 
-    .line 136
-    const v0, 0x7f0a0390
+    .line 137
+    const v0, 0x7f0a0393
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -479,7 +490,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SHUTTER_BUTTON_PORTRAIT_BOTTOM_PADDING:F
 
-    .line 137
+    .line 138
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->BASEMENU_GROUP_WIDTH:F
 
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PAGE_NAVIGATOR_GROUP_HEIGHT:F
@@ -500,7 +511,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->BASE_MENU_WEIGHT_VALUE:F
 
-    .line 138
+    .line 139
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SCREEN_WIDTH:I
 
     int-to-float v0, v0
@@ -517,7 +528,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->STOP_BUTTON_POS_X:I
 
-    .line 139
+    .line 140
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SCREEN_HEIGHT:I
 
     int-to-float v0, v0
@@ -534,8 +545,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->STOP_BUTTON_POS_Y:I
 
-    .line 140
-    const v0, 0x7f0a029f
+    .line 141
+    const v0, 0x7f0a02a3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -545,48 +556,48 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->STOP_BUTTON_DIAMETER:I
 
-    .line 142
+    .line 143
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 143
+    .line 144
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
-    .line 144
+    .line 145
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 145
+    .line 146
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-    .line 146
+    .line 147
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
-    .line 147
+    .line 148
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    .line 148
+    .line 149
     const-string v0, ".virtualshot.temp"
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mTempFileName:Ljava/lang/String;
 
-    .line 149
+    .line 150
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
 
-    .line 150
+    .line 151
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
 
-    .line 151
+    .line 152
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureDirection:I
 
-    .line 152
+    .line 153
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentGuideAni:I
 
-    .line 153
+    .line 154
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeInAni:I
 
-    .line 154
+    .line 155
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeOutAni:I
 
-    .line 160
+    .line 161
     const/4 v0, 0x6
 
     new-array v0, v0, [Lcom/samsung/android/glview/GLImage;
@@ -609,7 +620,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
-    .line 161
+    .line 162
     const/4 v0, 0x5
 
     new-array v0, v0, [Lcom/samsung/android/glview/GLImage;
@@ -628,45 +639,45 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
-    .line 162
+    .line 163
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 163
+    .line 164
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mArrowAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 164
+    .line 165
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeInAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 165
+    .line 166
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeOutAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 166
+    .line 167
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotStatus:I
 
-    .line 169
+    .line 170
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mNotSupportOrientation:Z
 
-    .line 172
+    .line 173
     new-instance v0, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$1;-><init>(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 208
+    .line 209
     const-string v0, "VirtualShot"
 
     const-string v1, "VirtualShot() - create"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 209
+    .line 210
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 210
+    .line 211
     iput-object p2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 211
+    .line 212
     return-void
 .end method
 
@@ -894,12 +905,12 @@
 
     const/4 v1, 0x6
 
-    .line 822
+    .line 821
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     if-eqz v0, :cond_1
 
-    .line 823
+    .line 822
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->hasMessages(I)Z
@@ -908,12 +919,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 824
+    .line 823
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeMessages(I)V
 
-    .line 826
+    .line 825
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
@@ -923,12 +934,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 827
+    .line 826
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeMessages(I)V
 
-    .line 830
+    .line 829
     :cond_1
     return-void
 .end method
@@ -937,14 +948,14 @@
     .locals 2
 
     .prologue
-    .line 836
+    .line 835
     const-string v0, "VirtualShot"
 
     const-string v1, "cancelVirtualShot"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 838
+    .line 837
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v0, :cond_0
@@ -953,12 +964,12 @@
 
     if-nez v0, :cond_1
 
-    .line 865
+    .line 864
     :cond_0
     :goto_0
     return-void
 
-    .line 842
+    .line 841
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -968,16 +979,16 @@
 
     if-eqz v0, :cond_2
 
-    .line 843
+    .line 842
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->endShutterProgressWheel()V
 
-    .line 845
+    .line 844
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->hideStopButton()V
 
-    .line 847
+    .line 846
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
     move-result v0
@@ -992,22 +1003,22 @@
 
     if-eq v0, v1, :cond_3
 
-    .line 848
+    .line 847
     const-string v0, "VirtualShot"
 
     const-string v1, "cancelVirtualShot : cancelCaptureForVirtualShot"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 849
+    .line 848
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelTakePicture()V
 
-    .line 851
+    .line 850
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setStopVirtualShot()V
 
-    .line 853
+    .line 852
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFlashMode()I
@@ -1016,7 +1027,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 854
+    .line 853
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -1031,28 +1042,28 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->setFlashMode(Ljava/lang/String;)V
 
-    .line 857
+    .line 856
     :cond_3
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->removeTempFile()V
 
-    .line 859
+    .line 858
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->reset()V
 
-    .line 861
+    .line 860
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 862
+    .line 861
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 864
+    .line 863
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->startFaceDetection()V
@@ -1066,35 +1077,35 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 868
+    .line 867
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 869
+    .line 868
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->access$1100(Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;)V
 
-    .line 870
+    .line 869
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
-    .line 871
+    .line 870
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 872
+    .line 871
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->access$1000(Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;)V
 
-    .line 873
+    .line 872
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
-    .line 874
+    .line 873
     return-void
 .end method
 
@@ -1102,7 +1113,7 @@
     .locals 1
 
     .prologue
-    .line 882
+    .line 881
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureDirection:I
 
     return v0
@@ -1112,7 +1123,7 @@
     .locals 1
 
     .prologue
-    .line 891
+    .line 890
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mTempFileName:Ljava/lang/String;
 
     return-object v0
@@ -1122,7 +1133,7 @@
     .locals 1
 
     .prologue
-    .line 895
+    .line 894
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotStatus:I
 
     return v0
@@ -1132,28 +1143,28 @@
     .locals 2
 
     .prologue
-    .line 907
+    .line 906
     const-string v0, "VirtualShot"
 
     const-string v1, "hideStopButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 908
+    .line 907
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 909
+    .line 908
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, 0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->requestFocus(I)V
 
-    .line 910
+    .line 909
     return-void
 .end method
 
@@ -1162,14 +1173,14 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 913
+    .line 912
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 914
+    .line 913
     const-string v0, "VirtualShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1198,14 +1209,14 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 915
+    .line 914
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, p1
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->cancelAnimation()V
 
-    .line 916
+    .line 915
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, p1
@@ -1214,7 +1225,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 918
+    .line 917
     :cond_0
     return-void
 .end method
@@ -1225,23 +1236,23 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 921
+    .line 920
     const-string v0, "VirtualShot"
 
     const-string v1, "initDeviceAnimation"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 922
+    .line 921
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentGuideAni:I
 
-    .line 923
+    .line 922
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeInAni:I
 
-    .line 924
+    .line 923
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeOutAni:I
 
-    .line 925
+    .line 924
     return-void
 .end method
 
@@ -1249,7 +1260,7 @@
     .locals 2
 
     .prologue
-    .line 933
+    .line 932
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
     move-result v0
@@ -1273,14 +1284,14 @@
     .locals 6
 
     .prologue
-    .line 941
+    .line 940
     const-string v3, "VirtualShot"
 
     const-string v4, "removeTempFile"
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 942
+    .line 941
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStorage()I
@@ -1291,7 +1302,7 @@
 
     move-result-object v0
 
-    .line 943
+    .line 942
     .local v0, "directory":Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1317,7 +1328,7 @@
 
     move-result-object v2
 
-    .line 945
+    .line 944
     .local v2, "filename":Ljava/lang/String;
     :try_start_0
     new-instance v3, Ljava/io/File;
@@ -1330,7 +1341,7 @@
 
     if-nez v3, :cond_0
 
-    .line 946
+    .line 945
     const-string v3, "VirtualShot"
 
     const-string v4, "removeTempFile - failed to delete"
@@ -1339,16 +1350,16 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 951
+    .line 950
     :cond_0
     :goto_0
     return-void
 
-    .line 948
+    .line 947
     :catch_0
     move-exception v1
 
-    .line 949
+    .line 948
     .local v1, "ex":Ljava/lang/Exception;
     const-string v3, "VirtualShot"
 
@@ -1385,49 +1396,49 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 958
+    .line 957
     const-string v0, "VirtualShot"
 
     const-string v1, "reset"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 959
+    .line 958
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
 
-    .line 960
+    .line 959
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
 
-    .line 961
+    .line 960
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureDirection:I
 
-    .line 962
+    .line 961
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopCaptureExpireTimer()V
 
-    .line 963
+    .line 962
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopAnimationTimer()V
 
-    .line 964
+    .line 963
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->initDeviceAnimation()V
 
-    .line 965
+    .line 964
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelHandlerMessages()V
 
-    .line 966
+    .line 965
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->resetProgressView()V
 
-    .line 967
+    .line 966
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->resetCaptureGuideRect()V
 
-    .line 968
+    .line 967
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setVirtualShotStatus(I)V
 
-    .line 970
+    .line 969
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->updateRemainCounter()V
 
-    .line 971
+    .line 970
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isTouchToCaptureStarted()Z
@@ -1436,12 +1447,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 972
+    .line 971
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setTouchToCaptureStarted(Z)V
 
-    .line 974
+    .line 973
     :cond_0
     return-void
 .end method
@@ -1456,26 +1467,26 @@
 
     const/4 v2, 0x0
 
-    .line 977
+    .line 976
     const-string v0, "VirtualShot"
 
     const-string v1, "resetCaptureGuideRect"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 979
+    .line 978
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 980
+    .line 979
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setAlpha(F)V
 
-    .line 981
+    .line 980
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -1484,44 +1495,44 @@
 
     if-eqz v0, :cond_0
 
-    .line 982
+    .line 981
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 983
+    .line 982
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 988
+    .line 987
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 989
+    .line 988
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 990
+    .line 989
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 991
+    .line 990
     return-void
 
-    .line 985
+    .line 984
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 986
+    .line 985
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
@@ -1535,19 +1546,19 @@
     .prologue
     const/4 v3, 0x4
 
-    .line 994
+    .line 993
     const-string v1, "VirtualShot"
 
     const-string v2, "resetProgressView"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 996
+    .line 995
     const/4 v1, 0x0
 
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentGuideAni:I
 
-    .line 997
+    .line 996
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -1556,19 +1567,19 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 999
+    .line 998
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 997
+    .line 996
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1001
+    .line 1000
     :cond_0
     const/4 v0, 0x0
 
@@ -1577,19 +1588,19 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 1003
+    .line 1002
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1001
+    .line 1000
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 1005
+    .line 1004
     :cond_1
     return-void
 .end method
@@ -1600,15 +1611,15 @@
     .param p2, "bAnimate"    # Z
 
     .prologue
-    .line 1009
+    .line 1008
     if-eqz p2, :cond_1
 
-    .line 1010
+    .line 1009
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mArrowAnimation:Landroid/view/animation/AlphaAnimation;
 
     if-nez v0, :cond_0
 
-    .line 1011
+    .line 1010
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     const/4 v1, 0x0
@@ -1619,41 +1630,41 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mArrowAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 1012
+    .line 1011
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mArrowAnimation:Landroid/view/animation/AlphaAnimation;
 
     const-wide/16 v2, 0xfa
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 1013
+    .line 1012
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mArrowAnimation:Landroid/view/animation/AlphaAnimation;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setRepeatCount(I)V
 
-    .line 1014
+    .line 1013
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mArrowAnimation:Landroid/view/animation/AlphaAnimation;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setRepeatMode(I)V
 
-    .line 1016
+    .line 1015
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mArrowAnimation:Landroid/view/animation/AlphaAnimation;
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/glview/GLView;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1017
+    .line 1016
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->startAnimation()V
 
-    .line 1021
+    .line 1020
     :goto_0
     return-void
 
-    .line 1019
+    .line 1018
     :cond_1
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->cancelAnimation()V
 
@@ -1664,32 +1675,32 @@
     .locals 2
 
     .prologue
-    .line 1027
+    .line 1026
     const-string v0, "VirtualShot"
 
     const-string v1, "setCapturingShot"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1028
+    .line 1027
     const/4 v0, 0x3
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setVirtualShotStatus(I)V
 
-    .line 1030
+    .line 1029
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopAnimationTimer()V
 
-    .line 1031
+    .line 1030
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->initDeviceAnimation()V
 
-    .line 1032
+    .line 1031
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getCaptureDirection()I
 
     move-result v0
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->updateCaptureLayout(I)V
 
-    .line 1033
+    .line 1032
     return-void
 .end method
 
@@ -1708,7 +1719,7 @@
 
     const/4 v4, 0x0
 
-    .line 1036
+    .line 1035
     const-string v1, "VirtualShot"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1731,36 +1742,36 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1038
+    .line 1037
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v1, :cond_2
 
-    .line 1039
+    .line 1038
     if-eqz p1, :cond_3
 
-    .line 1040
+    .line 1039
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x7f0200cd
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1041
+    .line 1040
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x7f0200ce
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1042
+    .line 1041
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x7f0200d1
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1044
+    .line 1043
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_FRONT_X:F
@@ -1769,7 +1780,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1045
+    .line 1044
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_FRONT_X:F
@@ -1778,7 +1789,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1046
+    .line 1045
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_FRONT_X:F
@@ -1787,7 +1798,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1047
+    .line 1046
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_FRONT_X:F
@@ -1796,7 +1807,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1048
+    .line 1047
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -1805,7 +1816,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 1049
+    .line 1048
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
@@ -1816,12 +1827,12 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1048
+    .line 1047
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1051
+    .line 1050
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
@@ -1831,7 +1842,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1052
+    .line 1051
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v5
@@ -1840,7 +1851,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1053
+    .line 1052
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v6
@@ -1849,7 +1860,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1054
+    .line 1053
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v7
@@ -1858,7 +1869,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1055
+    .line 1054
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v8
@@ -1867,7 +1878,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1056
+    .line 1055
     const/4 v0, 0x0
 
     :goto_1
@@ -1875,7 +1886,7 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 1057
+    .line 1056
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
@@ -1886,12 +1897,12 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1056
+    .line 1055
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 1060
+    .line 1059
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
@@ -1899,12 +1910,12 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1083
+    .line 1082
     .end local v0    # "i":I
     :cond_2
     return-void
 
-    .line 1062
+    .line 1061
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
@@ -1912,21 +1923,21 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1063
+    .line 1062
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x7f0200e3
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1064
+    .line 1063
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x7f0200e6
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1066
+    .line 1065
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_REAR_X:F
@@ -1935,7 +1946,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1067
+    .line 1066
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_REAR_X:F
@@ -1944,7 +1955,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1068
+    .line 1067
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_REAR_X:F
@@ -1953,7 +1964,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1069
+    .line 1068
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_REAR_X:F
@@ -1962,7 +1973,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1070
+    .line 1069
     const/4 v0, 0x0
 
     .restart local v0    # "i":I
@@ -1971,7 +1982,7 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 1071
+    .line 1070
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
@@ -1982,12 +1993,12 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1070
+    .line 1069
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_2
 
-    .line 1073
+    .line 1072
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
@@ -1997,7 +2008,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1074
+    .line 1073
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v5
@@ -2006,7 +2017,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1075
+    .line 1074
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v6
@@ -2015,7 +2026,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1076
+    .line 1075
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v7
@@ -2024,7 +2035,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1077
+    .line 1076
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v8
@@ -2033,7 +2044,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1078
+    .line 1077
     const/4 v0, 0x0
 
     :goto_3
@@ -2041,7 +2052,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 1079
+    .line 1078
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
@@ -2052,7 +2063,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1078
+    .line 1077
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_3
@@ -2063,7 +2074,7 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 1086
+    .line 1085
     if-eqz p1, :cond_0
 
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -2076,16 +2087,16 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1087
+    .line 1086
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->registerHRMShutterListener(Lcom/sec/android/app/camera/interfaces/CameraContext$HRMShutterListener;)V
 
-    .line 1091
+    .line 1090
     :goto_0
     return-void
 
-    .line 1089
+    .line 1088
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -2098,25 +2109,25 @@
     .locals 6
 
     .prologue
-    .line 1097
+    .line 1096
     const-string v3, "VirtualShot"
 
     const-string v4, "setOutputFile"
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1098
+    .line 1097
     invoke-static {}, Lcom/sec/android/app/camera/util/StorageUtils;->getExternalStoragePath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1100
+    .line 1099
     .local v1, "directory":Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1101
+    .line 1100
     .local v0, "cameraDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -2124,14 +2135,14 @@
 
     if-nez v3, :cond_0
 
-    .line 1102
+    .line 1101
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 1103
+    .line 1102
     const-string v3, "VirtualShot"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -2154,7 +2165,7 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1107
+    .line 1106
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -2166,13 +2177,13 @@
 
     move-result-object v1
 
-    .line 1109
+    .line 1108
     new-instance v0, Ljava/io/File;
 
     .end local v0    # "cameraDir":Ljava/io/File;
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1110
+    .line 1109
     .restart local v0    # "cameraDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -2180,14 +2191,14 @@
 
     if-nez v3, :cond_1
 
-    .line 1111
+    .line 1110
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 1112
+    .line 1111
     const-string v3, "VirtualShot"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -2210,18 +2221,18 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1113
+    .line 1112
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/16 v4, -0xa
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 1121
+    .line 1120
     :goto_0
     return-void
 
-    .line 1118
+    .line 1117
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2247,7 +2258,7 @@
 
     move-result-object v2
 
-    .line 1120
+    .line 1119
     .local v2, "filename":Ljava/lang/String;
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -2264,17 +2275,17 @@
 
     const v2, 0x7f0200db
 
-    .line 1127
+    .line 1126
     const-string v0, "VirtualShot"
 
     const-string v1, "setStartVirtualShot"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1128
+    .line 1127
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->startCaptureExpireTimer()V
 
-    .line 1129
+    .line 1128
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -2283,21 +2294,21 @@
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setFrontMode(Z)V
 
-    .line 1130
+    .line 1129
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 1131
+    .line 1130
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, -0x181
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 1133
+    .line 1132
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -2306,12 +2317,12 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideShootingModeText()V
 
-    .line 1135
+    .line 1134
     const/4 v0, 0x2
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setVirtualShotStatus(I)V
 
-    .line 1137
+    .line 1136
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -2320,17 +2331,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 1138
+    .line 1137
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1139
+    .line 1138
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1145
+    .line 1144
     :goto_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getCaptureDirection()I
 
@@ -2338,19 +2349,19 @@
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->updateCaptureLayout(I)V
 
-    .line 1146
+    .line 1145
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->startGuideDeviceNextAnimation()V
 
-    .line 1147
+    .line 1146
     return-void
 
-    .line 1141
+    .line 1140
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1142
+    .line 1141
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
@@ -2362,19 +2373,19 @@
     .locals 2
 
     .prologue
-    .line 1153
+    .line 1152
     const-string v0, "VirtualShot"
 
     const-string v1, "setStopVirtualShot"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1155
+    .line 1154
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 1156
+    .line 1155
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getAeAfManager()Lcom/sec/android/app/camera/interfaces/AeAfManager;
@@ -2383,7 +2394,7 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/AeAfManager;->resetTouchAfIfNeeded()V
 
-    .line 1157
+    .line 1156
     return-void
 .end method
 
@@ -2392,7 +2403,7 @@
     .param p1, "status"    # I
 
     .prologue
-    .line 899
+    .line 898
     const-string v0, "VirtualShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2419,19 +2430,19 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 900
+    .line 899
     if-ltz p1, :cond_0
 
     const/4 v0, 0x4
 
     if-le p1, v0, :cond_1
 
-    .line 904
+    .line 903
     :cond_0
     :goto_0
     return-void
 
-    .line 903
+    .line 902
     :cond_1
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotStatus:I
 
@@ -2442,33 +2453,33 @@
     .locals 2
 
     .prologue
-    .line 1160
+    .line 1159
     const-string v0, "VirtualShot"
 
     const-string v1, "showStopButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1161
+    .line 1160
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x100
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 1162
+    .line 1161
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1163
+    .line 1162
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
-    .line 1164
+    .line 1163
     return-void
 .end method
 
@@ -2479,15 +2490,15 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 1167
+    .line 1166
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 1168
+    .line 1167
     if-eqz p1, :cond_1
 
-    .line 1169
+    .line 1168
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLViewGroup;->getVisibility()I
@@ -2496,26 +2507,26 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 1170
+    .line 1169
     const-string v0, "VirtualShot"
 
     const-string v1, "showVirtualShotGuideGroup : will be visible"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1171
+    .line 1170
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1180
+    .line 1179
     :cond_0
     :goto_0
     return-void
 
-    .line 1174
+    .line 1173
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -2525,14 +2536,14 @@
 
     if-nez v0, :cond_0
 
-    .line 1175
+    .line 1174
     const-string v0, "VirtualShot"
 
     const-string v1, "showVirtualShotGuideGroup : will be invisible"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1176
+    .line 1175
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
@@ -2546,19 +2557,19 @@
     .prologue
     const/4 v4, 0x7
 
-    .line 1183
+    .line 1182
     const-string v0, "VirtualShot"
 
     const-string v1, "startCaptureExpireTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1184
+    .line 1183
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     if-eqz v0, :cond_1
 
-    .line 1185
+    .line 1184
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->hasMessages(I)Z
@@ -2567,12 +2578,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1186
+    .line 1185
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->removeMessages(I)V
 
-    .line 1188
+    .line 1187
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
@@ -2580,7 +2591,7 @@
 
     invoke-virtual {v0, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1190
+    .line 1189
     :cond_1
     return-void
 .end method
@@ -2591,19 +2602,19 @@
     .prologue
     const/4 v4, 0x2
 
-    .line 1193
+    .line 1192
     const-string v0, "VirtualShot"
 
     const-string v1, "startFadeInAnimationTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1194
+    .line 1193
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     if-eqz v0, :cond_1
 
-    .line 1195
+    .line 1194
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->hasMessages(I)Z
@@ -2612,12 +2623,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1196
+    .line 1195
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeMessages(I)V
 
-    .line 1199
+    .line 1198
     :cond_0
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeInAni:I
 
@@ -2625,19 +2636,19 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 1200
+    .line 1199
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     const-wide/16 v2, 0x44c
 
     invoke-virtual {v0, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1205
+    .line 1204
     :cond_1
     :goto_0
     return-void
 
-    .line 1202
+    .line 1201
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
@@ -2654,19 +2665,19 @@
     .prologue
     const/4 v4, 0x3
 
-    .line 1208
+    .line 1207
     const-string v0, "VirtualShot"
 
     const-string v1, "startFadeOutAnimationTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1209
+    .line 1208
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     if-eqz v0, :cond_1
 
-    .line 1210
+    .line 1209
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->hasMessages(I)Z
@@ -2675,12 +2686,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1211
+    .line 1210
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeMessages(I)V
 
-    .line 1213
+    .line 1212
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
@@ -2688,7 +2699,7 @@
 
     invoke-virtual {v0, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1215
+    .line 1214
     :cond_1
     return-void
 .end method
@@ -2697,7 +2708,7 @@
     .locals 2
 
     .prologue
-    .line 1218
+    .line 1217
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentGuideAni:I
@@ -2706,14 +2717,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 1219
+    .line 1218
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentGuideAni:I
 
     const/4 v1, 0x1
 
     invoke-direct {p0, v0, v1}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->virtualShotGuideDeviceAnimation(IZ)V
 
-    .line 1222
+    .line 1221
     :cond_0
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentGuideAni:I
 
@@ -2725,12 +2736,12 @@
 
     if-le v0, v1, :cond_1
 
-    .line 1223
+    .line 1222
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentGuideAni:I
 
-    .line 1225
+    .line 1224
     :cond_1
     return-void
 .end method
@@ -2741,19 +2752,19 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 1228
+    .line 1227
     const-string v0, "VirtualShot"
 
     const-string v1, "startNextAnimationTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1229
+    .line 1228
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     if-eqz v0, :cond_1
 
-    .line 1230
+    .line 1229
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->hasMessages(I)Z
@@ -2762,12 +2773,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1231
+    .line 1230
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeMessages(I)V
 
-    .line 1233
+    .line 1232
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
@@ -2775,7 +2786,7 @@
 
     invoke-virtual {v0, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1235
+    .line 1234
     :cond_1
     return-void
 .end method
@@ -2790,19 +2801,19 @@
 
     const/4 v2, 0x1
 
-    .line 1238
+    .line 1237
     const-string v0, "VirtualShot"
 
     const-string v1, "stopAnimationTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1239
+    .line 1238
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     if-eqz v0, :cond_2
 
-    .line 1240
+    .line 1239
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->hasMessages(I)Z
@@ -2811,12 +2822,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1241
+    .line 1240
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeMessages(I)V
 
-    .line 1243
+    .line 1242
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
@@ -2826,12 +2837,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 1244
+    .line 1243
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeMessages(I)V
 
-    .line 1246
+    .line 1245
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
@@ -2841,12 +2852,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 1247
+    .line 1246
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->removeMessages(I)V
 
-    .line 1250
+    .line 1249
     :cond_2
     return-void
 .end method
@@ -2857,14 +2868,14 @@
     .prologue
     const/4 v2, 0x7
 
-    .line 1253
+    .line 1252
     const-string v0, "VirtualShot"
 
     const-string v1, "stopCancelTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1254
+    .line 1253
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     if-eqz v0, :cond_0
@@ -2877,12 +2888,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1255
+    .line 1254
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->removeMessages(I)V
 
-    .line 1257
+    .line 1256
     :cond_0
     return-void
 .end method
@@ -2893,14 +2904,14 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 1260
+    .line 1259
     const-string v0, "VirtualShot"
 
     const-string v1, "stopVirtualShot"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1262
+    .line 1261
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
     move-result v0
@@ -2913,7 +2924,7 @@
 
     if-eq v0, v2, :cond_0
 
-    .line 1263
+    .line 1262
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v0, :cond_0
@@ -2922,23 +2933,23 @@
 
     if-eqz v0, :cond_0
 
-    .line 1264
+    .line 1263
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleStopVirtualShot()V
 
-    .line 1265
+    .line 1264
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setStopVirtualShot()V
 
-    .line 1266
+    .line 1265
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setVirtualShotStatus(I)V
 
-    .line 1267
+    .line 1266
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->showVirtualShotGuideGroup(Z)V
 
-    .line 1271
+    .line 1270
     :cond_0
     return-void
 .end method
@@ -2947,7 +2958,7 @@
     .locals 1
 
     .prologue
-    .line 1274
+    .line 1273
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -2960,7 +2971,7 @@
 
     invoke-virtual {v0, p0}, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->unregisterListener(Lcom/sec/android/app/camera/provider/CameraOrientationEventManager$CameraOrientationEventListener;)V
 
-    .line 1275
+    .line 1274
     return-void
 .end method
 
@@ -2979,7 +2990,7 @@
 
     const/4 v4, 0x4
 
-    .line 1278
+    .line 1277
     const-string v1, "VirtualShot"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3008,29 +3019,29 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1280
+    .line 1279
     if-ne p1, v4, :cond_3
 
-    .line 1281
+    .line 1280
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x3ecccccd    # 0.4f
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setAlpha(F)V
 
-    .line 1282
+    .line 1281
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1283
+    .line 1282
     const/4 v0, 0x0
 
     .local v0, "i":I
     :goto_0
     if-ge v0, v5, :cond_1
 
-    .line 1284
+    .line 1283
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
@@ -3041,20 +3052,20 @@
 
     if-nez v1, :cond_0
 
-    .line 1285
+    .line 1284
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1283
+    .line 1282
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1288
+    .line 1287
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -3064,14 +3075,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 1289
+    .line 1288
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x7f0200db
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1290
+    .line 1289
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v7
@@ -3080,7 +3091,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1291
+    .line 1290
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v8
@@ -3089,7 +3100,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1292
+    .line 1291
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v2, 0x2
@@ -3100,7 +3111,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1293
+    .line 1292
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v6
@@ -3109,7 +3120,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1294
+    .line 1293
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v4
@@ -3118,7 +3129,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1295
+    .line 1294
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v5
@@ -3127,12 +3138,12 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1334
+    .line 1333
     .end local v0    # "i":I
     :goto_1
     return-void
 
-    .line 1297
+    .line 1296
     .restart local v0    # "i":I
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
@@ -3141,7 +3152,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1298
+    .line 1297
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v7
@@ -3150,7 +3161,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1299
+    .line 1298
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v8
@@ -3159,7 +3170,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1300
+    .line 1299
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v2, 0x2
@@ -3170,7 +3181,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1301
+    .line 1300
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v6
@@ -3179,7 +3190,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1302
+    .line 1301
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v4
@@ -3188,7 +3199,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1303
+    .line 1302
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v5
@@ -3199,31 +3210,31 @@
 
     goto :goto_1
 
-    .line 1305
+    .line 1304
     .end local v0    # "i":I
     :cond_3
     if-ne p1, v6, :cond_7
 
-    .line 1306
+    .line 1305
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x3ecccccd    # 0.4f
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setAlpha(F)V
 
-    .line 1307
+    .line 1306
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1308
+    .line 1307
     const/4 v0, 0x0
 
     .restart local v0    # "i":I
     :goto_2
     if-ge v0, v5, :cond_5
 
-    .line 1309
+    .line 1308
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
@@ -3234,20 +3245,20 @@
 
     if-nez v1, :cond_4
 
-    .line 1310
+    .line 1309
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1308
+    .line 1307
     :cond_4
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_2
 
-    .line 1313
+    .line 1312
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -3257,14 +3268,14 @@
 
     if-eqz v1, :cond_6
 
-    .line 1314
+    .line 1313
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     const v2, 0x7f0200d4
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1315
+    .line 1314
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v7
@@ -3273,7 +3284,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1316
+    .line 1315
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v8
@@ -3282,7 +3293,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1317
+    .line 1316
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v2, 0x2
@@ -3293,7 +3304,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1318
+    .line 1317
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v6
@@ -3302,7 +3313,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1319
+    .line 1318
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v4
@@ -3311,7 +3322,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1320
+    .line 1319
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v5
@@ -3322,7 +3333,7 @@
 
     goto/16 :goto_1
 
-    .line 1322
+    .line 1321
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
@@ -3330,7 +3341,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1323
+    .line 1322
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v7
@@ -3339,7 +3350,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1324
+    .line 1323
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v8
@@ -3348,7 +3359,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1325
+    .line 1324
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v2, 0x2
@@ -3359,7 +3370,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1326
+    .line 1325
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v6
@@ -3368,7 +3379,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1327
+    .line 1326
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v4
@@ -3377,7 +3388,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1328
+    .line 1327
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v5
@@ -3388,7 +3399,7 @@
 
     goto/16 :goto_1
 
-    .line 1331
+    .line 1330
     .end local v0    # "i":I
     :cond_7
     const-string v1, "VirtualShot"
@@ -3397,7 +3408,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1332
+    .line 1331
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
@@ -3417,14 +3428,14 @@
 
     const/4 v3, 0x0
 
-    .line 1337
+    .line 1336
     const-string v0, "VirtualShot"
 
     const-string v1, "startGuideDeviceAnimation"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1339
+    .line 1338
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     if-eqz v0, :cond_2
@@ -3435,10 +3446,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 1340
+    .line 1339
     if-eqz p2, :cond_3
 
-    .line 1341
+    .line 1340
     const-string v0, "VirtualShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3467,24 +3478,24 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1342
+    .line 1341
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeInAnimation:Landroid/view/animation/AlphaAnimation;
 
     if-nez v0, :cond_0
 
-    .line 1343
+    .line 1342
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     invoke-direct {v0, v3, v4}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeInAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 1344
+    .line 1343
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeInAnimation:Landroid/view/animation/AlphaAnimation;
 
     invoke-virtual {v0, v6, v7}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 1346
+    .line 1345
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
@@ -3494,14 +3505,14 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1347
+    .line 1346
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, p1
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1348
+    .line 1347
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, p1
@@ -3514,7 +3525,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 1349
+    .line 1348
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, p1
@@ -3523,19 +3534,19 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1350
+    .line 1349
     :cond_1
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeInAni:I
 
-    .line 1352
+    .line 1351
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->startFadeInAnimationTimer()V
 
-    .line 1367
+    .line 1366
     :cond_2
     :goto_0
     return-void
 
-    .line 1354
+    .line 1353
     :cond_3
     const-string v0, "VirtualShot"
 
@@ -3565,31 +3576,31 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1355
+    .line 1354
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeOutAnimation:Landroid/view/animation/AlphaAnimation;
 
     if-nez v0, :cond_4
 
-    .line 1356
+    .line 1355
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     invoke-direct {v0, v4, v3}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeOutAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 1357
+    .line 1356
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeOutAnimation:Landroid/view/animation/AlphaAnimation;
 
     invoke-virtual {v0, v6, v7}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 1358
+    .line 1357
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeOutAnimation:Landroid/view/animation/AlphaAnimation;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
 
-    .line 1360
+    .line 1359
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
@@ -3599,20 +3610,20 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1361
+    .line 1360
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, p1
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1362
+    .line 1361
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCurrentFadeOutAni:I
 
-    .line 1363
+    .line 1362
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->startFadeOutAnimationTimer()V
 
-    .line 1364
+    .line 1363
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->startNextAnimationTimer()V
 
     goto :goto_0
@@ -3624,7 +3635,7 @@
     .locals 1
 
     .prologue
-    .line 220
+    .line 221
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
     move-result v0
@@ -3646,7 +3657,7 @@
     .locals 1
 
     .prologue
-    .line 225
+    .line 226
     const/4 v0, 0x0
 
     return v0
@@ -3656,7 +3667,7 @@
     .locals 1
 
     .prologue
-    .line 230
+    .line 231
     const/4 v0, 0x0
 
     return v0
@@ -3671,59 +3682,59 @@
 
     const/4 v3, 0x0
 
-    .line 235
+    .line 236
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
-    .line 236
+    .line 237
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     new-array v2, v3, [I
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setSideQuickSettingItems([I)V
 
-    .line 237
+    .line 238
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v2, -0x1
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 239
+    .line 240
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     invoke-direct {v1, p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;-><init>(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
-    .line 240
+    .line 241
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     invoke-direct {v1, p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;-><init>(Lcom/sec/android/app/camera/shootingmode/VirtualShot;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
-    .line 242
+    .line 243
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 243
+    .line 244
     .local v0, "intentFilter":Landroid/content/IntentFilter;
     const-string v1, "camera.action.COVER_ATTACHED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 244
+    .line 245
     const-string v1, "camera.action.COVER_DETACHED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 245
+    .line 246
     const-string v1, "camera.action.ACTION_ERROR_FINISH_CAMERA"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 246
+    .line 247
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3734,7 +3745,7 @@
 
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/provider/CameraLocalBroadcastManager;->register(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
-    .line 247
+    .line 248
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3747,7 +3758,7 @@
 
     invoke-virtual {v1, p0}, Lcom/sec/android/app/camera/provider/CameraOrientationEventManager;->registerListener(Lcom/sec/android/app/camera/provider/CameraOrientationEventManager$CameraOrientationEventListener;)V
 
-    .line 249
+    .line 250
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -3756,31 +3767,31 @@
 
     if-eqz v1, :cond_0
 
-    .line 250
+    .line 251
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setHRMSensor(Z)V
 
-    .line 253
+    .line 254
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setVirtualShotListener(Lcom/samsung/android/camera/core/SemCamera$InteractiveShotEventListener;)V
 
-    .line 254
+    .line 255
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setPrepareDBUpdateListener(Lcom/sec/android/app/camera/interfaces/Engine$DBUpdateListener;)V
 
-    .line 255
+    .line 256
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setStartVirtualShotListener(Lcom/sec/android/app/camera/interfaces/Engine$StartVirtualShotListener;)V
 
-    .line 256
+    .line 257
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->sendOrientationInfoToHAL()V
 
-    .line 258
+    .line 259
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
     move-result v1
@@ -3789,7 +3800,7 @@
 
     if-eq v1, v2, :cond_1
 
-    .line 259
+    .line 260
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -3798,7 +3809,7 @@
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setFrontMode(Z)V
 
-    .line 261
+    .line 262
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getVisualInteractionProvider()Lcom/sec/android/app/camera/interfaces/VisualInteractionProvider;
@@ -3811,15 +3822,15 @@
 
     if-eqz v1, :cond_2
 
-    .line 262
+    .line 263
     invoke-direct {p0, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->showVirtualShotGuideGroup(Z)V
 
-    .line 263
+    .line 264
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     if-eqz v1, :cond_1
 
-    .line 264
+    .line 265
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     const/4 v2, 0x6
@@ -3828,12 +3839,12 @@
 
     invoke-virtual {v1, v2, v4, v5}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 269
+    .line 270
     :cond_1
     :goto_0
     return-void
 
-    .line 266
+    .line 267
     :cond_2
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->showVirtualShotGuideGroup(Z)V
 
@@ -3845,7 +3856,7 @@
     .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 274
+    .line 275
     const/4 v0, 0x0
 
     return v0
@@ -3858,21 +3869,21 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 279
+    .line 280
     invoke-static {p1}, Lcom/samsung/android/glview/GLUtil;->getGLOrientationBySystemOrientation(I)I
 
     move-result v0
 
     if-ne v0, v1, :cond_0
 
-    .line 280
+    .line 281
     iput-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mNotSupportOrientation:Z
 
-    .line 284
+    .line 285
     :goto_0
     return-void
 
-    .line 282
+    .line 283
     :cond_0
     const/4 v0, 0x0
 
@@ -3888,22 +3899,22 @@
     .prologue
     const/16 v2, 0x7530
 
-    .line 291
+    .line 292
     const-string v0, "picture-size"
 
     const-string v1, "1280x720"
 
     invoke-virtual {p1, v0, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 292
+    .line 293
     invoke-virtual {p1, v2, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
-    .line 293
+    .line 294
     return-void
 .end method
 
 .method public onCreateView(Lcom/samsung/android/glview/GLContext;Lcom/samsung/android/glview/GLViewGroup;Lcom/samsung/android/glview/GLViewGroup;Lcom/sec/android/app/camera/interfaces/BaseMenuController;Lcom/sec/android/app/camera/interfaces/MenuManager;)V
-    .locals 10
+    .locals 9
     .param p1, "glContext"    # Lcom/samsung/android/glview/GLContext;
     .param p2, "viewLayout"    # Lcom/samsung/android/glview/GLViewGroup;
     .param p3, "controllerLayout"    # Lcom/samsung/android/glview/GLViewGroup;
@@ -3911,25 +3922,13 @@
     .param p5, "menuManager"    # Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     .prologue
-    .line 297
+    .line 298
     iput-object p4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-    .line 298
+    .line 299
     iput-object p5, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
-    .line 300
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getPreviewSurfaceRect()Landroid/graphics/Rect;
-
-    move-result-object v0
-
-    iget v0, v0, Landroid/graphics/Rect;->left:I
-
-    int-to-float v9, v0
-
-    .line 302
-    .local v9, "previewSurfaceX":F
+    .line 301
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_X:[F
@@ -3938,7 +3937,9 @@
 
     aget v1, v1, v2
 
-    add-float v2, v1, v9
+    iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->NORMAL_RATIO_PREVIEW_LEFT:F
+
+    add-float/2addr v2, v1
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_Y:[F
 
@@ -3956,21 +3957,21 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 303
+    .line 302
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 304
+    .line 303
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setClipping(Z)V
 
-    .line 306
+    .line 305
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x0
@@ -3983,7 +3984,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCenterObjBG:Lcom/samsung/android/glview/GLImage;
 
-    .line 307
+    .line 306
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x0
@@ -3996,7 +3997,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
-    .line 308
+    .line 307
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x0
@@ -4009,14 +4010,14 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
-    .line 309
+    .line 308
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 310
+    .line 309
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x0
@@ -4029,7 +4030,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
-    .line 312
+    .line 311
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x0
@@ -4046,7 +4047,7 @@
 
     aput-object v2, v0, v1
 
-    .line 313
+    .line 312
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x1
@@ -4063,7 +4064,7 @@
 
     aput-object v2, v0, v1
 
-    .line 314
+    .line 313
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x2
@@ -4080,7 +4081,7 @@
 
     aput-object v2, v0, v1
 
-    .line 315
+    .line 314
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x3
@@ -4097,7 +4098,7 @@
 
     aput-object v2, v0, v1
 
-    .line 316
+    .line 315
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x4
@@ -4114,7 +4115,7 @@
 
     aput-object v2, v0, v1
 
-    .line 317
+    .line 316
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x5
@@ -4131,7 +4132,7 @@
 
     aput-object v2, v0, v1
 
-    .line 318
+    .line 317
     const/4 v8, 0x0
 
     .local v8, "i":I
@@ -4140,7 +4141,7 @@
 
     if-ge v8, v0, :cond_0
 
-    .line 319
+    .line 318
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, v8
@@ -4149,12 +4150,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 318
+    .line 317
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_0
 
-    .line 322
+    .line 321
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
@@ -4172,7 +4173,7 @@
 
     aput-object v2, v0, v1
 
-    .line 323
+    .line 322
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x1
@@ -4189,7 +4190,7 @@
 
     aput-object v2, v0, v1
 
-    .line 324
+    .line 323
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x2
@@ -4206,7 +4207,7 @@
 
     aput-object v2, v0, v1
 
-    .line 325
+    .line 324
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x3
@@ -4223,7 +4224,7 @@
 
     aput-object v2, v0, v1
 
-    .line 326
+    .line 325
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x4
@@ -4240,7 +4241,7 @@
 
     aput-object v2, v0, v1
 
-    .line 327
+    .line 326
     const/4 v8, 0x0
 
     :goto_1
@@ -4248,7 +4249,7 @@
 
     if-ge v8, v0, :cond_1
 
-    .line 328
+    .line 327
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, v8
@@ -4257,12 +4258,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 327
+    .line 326
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_1
 
-    .line 331
+    .line 330
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -4270,28 +4271,28 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 332
+    .line 331
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 333
+    .line 332
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureAniGuideArrow:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 334
+    .line 333
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureGuideDevice:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 335
+    .line 334
     const/4 v8, 0x0
 
     :goto_2
@@ -4299,7 +4300,7 @@
 
     if-ge v8, v0, :cond_2
 
-    .line 336
+    .line 335
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
@@ -4308,12 +4309,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 335
+    .line 334
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_2
 
-    .line 338
+    .line 337
     :cond_2
     const/4 v8, 0x0
 
@@ -4322,7 +4323,7 @@
 
     if-ge v8, v0, :cond_3
 
-    .line 339
+    .line 338
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationGuideDevice:[Lcom/samsung/android/glview/GLImage;
@@ -4331,12 +4332,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 338
+    .line 337
     add-int/lit8 v8, v8, 0x1
 
     goto :goto_3
 
-    .line 341
+    .line 340
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -4344,7 +4345,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 343
+    .line 342
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x1
@@ -4355,7 +4356,9 @@
 
     aget v2, v2, v3
 
-    add-float/2addr v2, v9
+    iget v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->NORMAL_RATIO_PREVIEW_LEFT:F
+
+    add-float/2addr v2, v3
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_Y:[F
 
@@ -4365,7 +4368,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 344
+    .line 343
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x2
@@ -4376,7 +4379,9 @@
 
     aget v2, v2, v3
 
-    add-float/2addr v2, v9
+    iget v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->NORMAL_RATIO_PREVIEW_LEFT:F
+
+    add-float/2addr v2, v3
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_Y:[F
 
@@ -4386,7 +4391,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 345
+    .line 344
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x3
@@ -4397,7 +4402,9 @@
 
     aget v2, v2, v3
 
-    add-float/2addr v2, v9
+    iget v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->NORMAL_RATIO_PREVIEW_LEFT:F
+
+    add-float/2addr v2, v3
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_Y:[F
 
@@ -4407,12 +4414,12 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 347
+    .line 346
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotGuideGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {p2, v0}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 349
+    .line 348
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->STOP_BUTTON_POS_X:I
@@ -4437,14 +4444,14 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 350
+    .line 349
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 351
+    .line 350
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -4461,21 +4468,21 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 352
+    .line 351
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 353
+    .line 352
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 354
+    .line 353
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/VirtualShot$2;
@@ -4484,14 +4491,14 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 378
+    .line 377
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setFocusable(Z)V
 
-    .line 379
+    .line 378
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->STOP_BUTTON_DIAMETER:I
@@ -4500,19 +4507,19 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 380
+    .line 379
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 382
+    .line 381
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {p3, v0}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 383
+    .line 382
     return-void
 .end method
 
@@ -4522,7 +4529,7 @@
     .param p2, "file"    # Ljava/io/File;
 
     .prologue
-    .line 388
+    .line 387
     const-string v0, "sef_file_type"
 
     const/16 v1, 0x8d0
@@ -4533,7 +4540,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 389
+    .line 388
     const-string v0, "height"
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4552,7 +4559,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 390
+    .line 389
     const-string v0, "width"
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4571,7 +4578,7 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 392
+    .line 391
     const/4 v0, 0x0
 
     return v0
@@ -4581,34 +4588,34 @@
     .locals 2
 
     .prologue
-    .line 397
+    .line 396
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 398
+    .line 397
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
 
     const/4 v1, 0x5
 
     if-lt v0, v1, :cond_0
 
-    .line 399
+    .line 398
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopVirtualShot()V
 
-    .line 406
+    .line 405
     :goto_0
     return-void
 
-    .line 401
+    .line 400
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
 
     goto :goto_0
 
-    .line 404
+    .line 403
     :cond_1
     sget-object v0, Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;->HRM_SHUTTER:Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;
 
@@ -4621,7 +4628,7 @@
     .locals 1
 
     .prologue
-    .line 410
+    .line 409
     const/4 v0, 0x0
 
     return v0
@@ -4635,17 +4642,17 @@
 
     const/4 v2, 0x0
 
-    .line 415
+    .line 414
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->removeSideQuickSettingItems()V
 
-    .line 417
+    .line 416
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_0
 
-    .line 418
+    .line 417
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -4656,7 +4663,7 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/provider/CameraLocalBroadcastManager;->unregister(Landroid/content/Context;Landroid/content/BroadcastReceiver;)V
 
-    .line 421
+    .line 420
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -4666,10 +4673,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 422
+    .line 421
     invoke-direct {p0, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setHRMSensor(Z)V
 
-    .line 425
+    .line 424
     :cond_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
@@ -4677,82 +4684,82 @@
 
     if-eqz v0, :cond_2
 
-    .line 426
+    .line 425
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
 
-    .line 429
+    .line 428
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/Engine;->setVirtualShotListener(Lcom/samsung/android/camera/core/SemCamera$InteractiveShotEventListener;)V
 
-    .line 430
+    .line 429
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/Engine;->setPrepareDBUpdateListener(Lcom/sec/android/app/camera/interfaces/Engine$DBUpdateListener;)V
 
-    .line 431
+    .line 430
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/Engine;->setStartVirtualShotListener(Lcom/sec/android/app/camera/interfaces/Engine$StartVirtualShotListener;)V
 
-    .line 432
+    .line 431
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->unregisterCameraOrientationListener()V
 
-    .line 434
+    .line 433
     invoke-direct {p0, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->showVirtualShotGuideGroup(Z)V
 
-    .line 435
+    .line 434
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopCaptureExpireTimer()V
 
-    .line 436
+    .line 435
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->reset()V
 
-    .line 437
+    .line 436
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mArrowAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 438
+    .line 437
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeInAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 439
+    .line 438
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mDeviceFadeOutAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 440
+    .line 439
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopAnimationTimer()V
 
-    .line 441
+    .line 440
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->initDeviceAnimation()V
 
-    .line 443
+    .line 442
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     if-eqz v0, :cond_3
 
-    .line 444
+    .line 443
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;->access$1000(Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;)V
 
-    .line 445
+    .line 444
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mVirtualShotHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$VirtualShotHandler;
 
-    .line 448
+    .line 447
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     if-eqz v0, :cond_4
 
-    .line 449
+    .line 448
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;->access$1100(Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;)V
 
-    .line 450
+    .line 449
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mAnimationHandler:Lcom/sec/android/app/camera/shootingmode/VirtualShot$AnimationHandler;
 
-    .line 453
+    .line 452
     :cond_4
     return-void
 .end method
@@ -4767,7 +4774,7 @@
 
     const/4 v5, 0x0
 
-    .line 457
+    .line 456
     const-string v2, "VirtualShot"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -4800,41 +4807,41 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 459
+    .line 458
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 460
+    .line 459
     const-string v2, "VirtualShot"
 
     const-string v3, "onInteractiveCaptureProgressed - wrong state, callback is returned."
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 514
+    .line 513
     :cond_0
     :goto_0
     return-void
 
-    .line 464
+    .line 463
     :cond_1
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
 
-    .line 465
+    .line 464
     iput p2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
 
-    .line 467
+    .line 466
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
 
     if-nez v2, :cond_2
 
-    .line 468
+    .line 467
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->showStopButton()V
 
-    .line 471
+    .line 470
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getCaptureDirection()I
 
@@ -4852,7 +4859,7 @@
 
     if-ne v2, v3, :cond_b
 
-    .line 474
+    .line 473
     :cond_3
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
 
@@ -4864,10 +4871,10 @@
 
     if-gt v2, v3, :cond_5
 
-    .line 475
+    .line 474
     const/4 v1, 0x0
 
-    .line 488
+    .line 487
     .local v1, "progressLevel":I
     :goto_1
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
@@ -4880,7 +4887,7 @@
 
     if-eqz v2, :cond_a
 
-    .line 489
+    .line 488
     const-string v2, "VirtualShot"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -4909,14 +4916,14 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 490
+    .line 489
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v2, v2, v1
 
     invoke-virtual {v2, v5}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 491
+    .line 490
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v2, v2, v1
@@ -4925,10 +4932,10 @@
 
     invoke-direct {p0, v2, v3}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setAlphaArrow(Lcom/samsung/android/glview/GLView;Z)V
 
-    .line 493
+    .line 492
     if-lez v1, :cond_a
 
-    .line 494
+    .line 493
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     add-int/lit8 v3, v1, -0x1
@@ -4937,7 +4944,7 @@
 
     invoke-direct {p0, v2, v5}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setAlphaArrow(Lcom/samsung/android/glview/GLView;Z)V
 
-    .line 495
+    .line 494
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     add-int/lit8 v3, v1, -0x1
@@ -4946,14 +4953,14 @@
 
     invoke-virtual {v2, v5}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 497
+    .line 496
     const/4 v0, 0x0
 
     .local v0, "i":I
     :goto_2
     if-ge v0, v1, :cond_a
 
-    .line 498
+    .line 497
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v2, v2, v0
@@ -4964,7 +4971,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 499
+    .line 498
     const-string v2, "VirtualShot"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -4993,20 +5000,20 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 500
+    .line 499
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v2, v2, v0
 
     invoke-virtual {v2, v5}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 497
+    .line 496
     :cond_4
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_2
 
-    .line 476
+    .line 475
     .end local v0    # "i":I
     .end local v1    # "progressLevel":I
     :cond_5
@@ -5016,13 +5023,13 @@
 
     if-gt v2, v3, :cond_6
 
-    .line 477
+    .line 476
     const/4 v1, 0x1
 
     .restart local v1    # "progressLevel":I
     goto/16 :goto_1
 
-    .line 478
+    .line 477
     .end local v1    # "progressLevel":I
     :cond_6
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
@@ -5031,13 +5038,13 @@
 
     if-gt v2, v3, :cond_7
 
-    .line 479
+    .line 478
     const/4 v1, 0x2
 
     .restart local v1    # "progressLevel":I
     goto/16 :goto_1
 
-    .line 480
+    .line 479
     .end local v1    # "progressLevel":I
     :cond_7
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
@@ -5046,13 +5053,13 @@
 
     if-gt v2, v3, :cond_8
 
-    .line 481
+    .line 480
     const/4 v1, 0x3
 
     .restart local v1    # "progressLevel":I
     goto/16 :goto_1
 
-    .line 482
+    .line 481
     .end local v1    # "progressLevel":I
     :cond_8
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
@@ -5061,13 +5068,13 @@
 
     if-gt v2, v3, :cond_9
 
-    .line 483
+    .line 482
     const/4 v1, 0x4
 
     .restart local v1    # "progressLevel":I
     goto/16 :goto_1
 
-    .line 485
+    .line 484
     .end local v1    # "progressLevel":I
     :cond_9
     const/4 v1, 0x5
@@ -5075,27 +5082,27 @@
     .restart local v1    # "progressLevel":I
     goto/16 :goto_1
 
-    .line 506
+    .line 505
     :cond_a
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
 
     if-ne v2, v6, :cond_b
 
-    .line 507
+    .line 506
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgressGuideFG:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v2, v2, v1
 
     invoke-direct {p0, v2, v5}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setAlphaArrow(Lcom/samsung/android/glview/GLView;Z)V
 
-    .line 511
+    .line 510
     .end local v1    # "progressLevel":I
     :cond_b
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mProgress:I
 
     if-ne v2, v6, :cond_0
 
-    .line 512
+    .line 511
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopVirtualShot()V
 
     goto/16 :goto_0
@@ -5107,7 +5114,7 @@
     .param p2, "value"    # I
 
     .prologue
-    .line 518
+    .line 517
     const-string v0, "VirtualShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -5140,26 +5147,26 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 520
+    .line 519
     packed-switch p1, :pswitch_data_0
 
-    .line 535
+    .line 534
     :goto_0
     return-void
 
-    .line 523
+    .line 522
     :pswitch_0
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCaptureDirection:I
 
-    .line 524
+    .line 523
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopCaptureExpireTimer()V
 
-    .line 525
+    .line 524
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setCapturingVirtualShot()V
 
     goto :goto_0
 
-    .line 520
+    .line 519
     nop
 
     :pswitch_data_0
@@ -5174,7 +5181,7 @@
     .param p1, "warn_state"    # I
 
     .prologue
-    .line 539
+    .line 538
     const-string v0, "VirtualShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -5197,7 +5204,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 540
+    .line 539
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getActivity()Landroid/app/Activity;
@@ -5210,7 +5217,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 563
+    .line 562
     return-void
 .end method
 
@@ -5218,14 +5225,14 @@
     .locals 7
 
     .prologue
-    .line 567
+    .line 566
     const-string v4, "VirtualShot"
 
     const-string v5, "onInteractiveProcessCompleted"
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 569
+    .line 568
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v4, :cond_0
@@ -5234,12 +5241,12 @@
 
     if-nez v4, :cond_1
 
-    .line 617
+    .line 616
     :cond_0
     :goto_0
     return-void
 
-    .line 573
+    .line 572
     :cond_1
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -5249,16 +5256,16 @@
 
     if-eqz v4, :cond_2
 
-    .line 574
+    .line 573
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->endShutterProgressWheel()V
 
-    .line 576
+    .line 575
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->hideStopButton()V
 
-    .line 579
+    .line 578
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getTempFileName()Ljava/lang/String;
@@ -5269,11 +5276,11 @@
 
     move-result-object v1
 
-    .line 580
+    .line 579
     .local v1, "outputFileName":Ljava/lang/String;
     if-eqz v1, :cond_5
 
-    .line 581
+    .line 580
     const-string v4, "VirtualShot"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -5296,14 +5303,14 @@
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 583
+    .line 582
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/Engine;->getCurrentThumbnailSize()Landroid/util/Size;
 
     move-result-object v3
 
-    .line 584
+    .line 583
     .local v3, "thumbnailSize":Landroid/util/Size;
     invoke-virtual {v3}, Landroid/util/Size;->getWidth()I
 
@@ -5317,7 +5324,7 @@
 
     move-result-object v2
 
-    .line 585
+    .line 584
     .local v2, "thumbnailBitmap":Landroid/graphics/Bitmap;
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -5331,7 +5338,7 @@
 
     move-result v0
 
-    .line 586
+    .line 585
     .local v0, "orientation":I
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -5339,7 +5346,7 @@
 
     invoke-interface {v4, v2, v0, v5}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->updateThumbnailButton(Landroid/graphics/Bitmap;IZ)V
 
-    .line 592
+    .line 591
     .end local v0    # "orientation":I
     .end local v2    # "thumbnailBitmap":Landroid/graphics/Bitmap;
     .end local v3    # "thumbnailSize":Landroid/util/Size;
@@ -5352,7 +5359,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 593
+    .line 592
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -5367,23 +5374,23 @@
 
     invoke-interface {v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->addUriListInSecureCamera(Landroid/net/Uri;)V
 
-    .line 596
+    .line 595
     :cond_3
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->updateRemainCounter()V
 
-    .line 597
+    .line 596
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->updateLatestMedia()V
 
-    .line 598
+    .line 597
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 600
+    .line 599
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/Engine;->getAeAfManager()Lcom/sec/android/app/camera/interfaces/AeAfManager;
@@ -5392,29 +5399,29 @@
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/AeAfManager;->resetTouchAfIfNeeded()V
 
-    .line 602
+    .line 601
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->reset()V
 
-    .line 603
+    .line 602
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v5, 0x200
 
     invoke-interface {v4, v5}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 604
+    .line 603
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v5, -0x1
 
     invoke-interface {v4, v5}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 606
+    .line 605
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/Engine;->startFaceDetection()V
 
-    .line 608
+    .line 607
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getVisualInteractionProvider()Lcom/sec/android/app/camera/interfaces/VisualInteractionProvider;
@@ -5427,12 +5434,12 @@
 
     if-nez v4, :cond_4
 
-    .line 609
+    .line 608
     const/4 v4, 0x1
 
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->showVirtualShotGuideGroup(Z)V
 
-    .line 612
+    .line 611
     :cond_4
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -5442,14 +5449,14 @@
 
     if-eqz v4, :cond_6
 
-    .line 613
+    .line 612
     const-string v4, "421"
 
     invoke-static {v4}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->setSAScreenId(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 589
+    .line 588
     :cond_5
     const-string v4, "VirtualShot"
 
@@ -5459,7 +5466,7 @@
 
     goto :goto_1
 
-    .line 615
+    .line 614
     :cond_6
     const-string v4, "261"
 
@@ -5474,7 +5481,7 @@
     .param p2, "max"    # I
 
     .prologue
-    .line 621
+    .line 620
     const-string v0, "VirtualShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -5507,24 +5514,24 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 623
+    .line 622
     if-nez p1, :cond_0
 
-    .line 624
+    .line 623
     const/4 v0, 0x4
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setVirtualShotStatus(I)V
 
-    .line 625
+    .line 624
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->startShutterProgressWheel()V
 
-    .line 629
+    .line 628
     :goto_0
     return-void
 
-    .line 627
+    .line 626
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -5541,17 +5548,17 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 633
+    .line 632
     sparse-switch p1, :sswitch_data_0
 
-    .line 653
+    .line 652
     :cond_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 637
+    .line 636
     :sswitch_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->isCapturing()Z
 
@@ -5559,14 +5566,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 638
+    .line 637
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->isVirtualShotSavingAllowed()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 639
+    .line 638
     const-string v1, "VirtualShot"
 
     const-string v2, "onKeyDown : Ignore - VirtualShot can be saved (too short)"
@@ -5575,7 +5582,7 @@
 
     goto :goto_0
 
-    .line 645
+    .line 644
     :sswitch_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->isCapturing()Z
 
@@ -5583,7 +5590,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 646
+    .line 645
     const-string v1, "VirtualShot"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -5612,7 +5619,7 @@
 
     goto :goto_0
 
-    .line 633
+    .line 632
     nop
 
     :sswitch_data_0
@@ -5638,29 +5645,29 @@
 
     const/4 v0, 0x1
 
-    .line 658
+    .line 657
     sparse-switch p1, :sswitch_data_0
 
     :cond_0
     :goto_0
     move v0, v1
 
-    .line 709
+    .line 708
     :goto_1
     return v0
 
-    .line 660
+    .line 659
     :sswitch_0
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
 
     if-lt v2, v3, :cond_1
 
-    .line 661
+    .line 660
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopVirtualShot()V
 
     goto :goto_1
 
-    .line 662
+    .line 661
     :cond_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
@@ -5668,12 +5675,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 663
+    .line 662
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
 
     goto :goto_1
 
-    .line 671
+    .line 670
     :sswitch_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->isCapturing()Z
 
@@ -5681,14 +5688,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 672
+    .line 671
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->isVirtualShotSavingAllowed()Z
 
     move-result v2
 
     if-eqz v2, :cond_5
 
-    .line 673
+    .line 672
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
     move-result v0
@@ -5701,7 +5708,7 @@
 
     if-ne v0, v4, :cond_3
 
-    .line 674
+    .line 673
     :cond_2
     const-string v0, "VirtualShot"
 
@@ -5731,28 +5738,28 @@
 
     move v0, v1
 
-    .line 675
+    .line 674
     goto :goto_1
 
-    .line 677
+    .line 676
     :cond_3
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
 
     if-lt v0, v3, :cond_4
 
-    .line 678
+    .line 677
     const-string v0, "VirtualShot"
 
     const-string v2, "onKeyUp : stop Virtual shot"
 
     invoke-static {v0, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 679
+    .line 678
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopVirtualShot()V
 
     goto :goto_0
 
-    .line 681
+    .line 680
     :cond_4
     const-string v0, "VirtualShot"
 
@@ -5760,12 +5767,12 @@
 
     invoke-static {v0, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 682
+    .line 681
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
 
     goto :goto_0
 
-    .line 686
+    .line 685
     :cond_5
     const-string v1, "VirtualShot"
 
@@ -5775,7 +5782,7 @@
 
     goto :goto_1
 
-    .line 692
+    .line 691
     :sswitch_2
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->isCapturing()Z
 
@@ -5783,7 +5790,7 @@
 
     if-eqz v2, :cond_6
 
-    .line 693
+    .line 692
     const-string v1, "VirtualShot"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -5812,7 +5819,7 @@
 
     goto/16 :goto_1
 
-    .line 696
+    .line 695
     :cond_6
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->getVirtualShotStatus()I
 
@@ -5826,24 +5833,24 @@
 
     if-eq v0, v4, :cond_0
 
-    .line 697
+    .line 696
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mFrames:I
 
     if-lt v0, v3, :cond_7
 
-    .line 698
+    .line 697
     const-string v0, "VirtualShot"
 
     const-string v2, "onKeyUp : stop Virtual shot"
 
     invoke-static {v0, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 699
+    .line 698
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->stopVirtualShot()V
 
     goto/16 :goto_0
 
-    .line 701
+    .line 700
     :cond_7
     const-string v0, "VirtualShot"
 
@@ -5851,12 +5858,12 @@
 
     invoke-static {v0, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 702
+    .line 701
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
 
     goto/16 :goto_0
 
-    .line 658
+    .line 657
     nop
 
     :sswitch_data_0
@@ -5875,7 +5882,7 @@
     .param p2, "modeId"    # I
 
     .prologue
-    .line 715
+    .line 714
     const/4 v0, 0x0
 
     return v0
@@ -5885,7 +5892,7 @@
     .locals 1
 
     .prologue
-    .line 720
+    .line 719
     const/4 v0, 0x0
 
     return v0
@@ -5895,12 +5902,12 @@
     .locals 1
 
     .prologue
-    .line 725
+    .line 724
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->switchToRecordingMode()V
 
-    .line 726
+    .line 725
     const/4 v0, 0x0
 
     return v0
@@ -5910,7 +5917,7 @@
     .locals 1
 
     .prologue
-    .line 731
+    .line 730
     const/4 v0, 0x0
 
     return v0
@@ -5920,7 +5927,7 @@
     .locals 1
 
     .prologue
-    .line 736
+    .line 735
     const/4 v0, 0x0
 
     return v0
@@ -5930,7 +5937,7 @@
     .locals 1
 
     .prologue
-    .line 741
+    .line 740
     const/4 v0, 0x0
 
     return v0
@@ -5945,31 +5952,31 @@
 
     const/4 v0, 0x1
 
-    .line 746
+    .line 745
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->isCapturing()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 747
+    .line 746
     const-string v1, "VirtualShot"
 
     const-string v2, "Return, isCapturing"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 775
+    .line 774
     :goto_0
     return v0
 
-    .line 751
+    .line 750
     :cond_0
     iget-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mNotSupportOrientation:Z
 
     if-eqz v2, :cond_1
 
-    .line 752
+    .line 751
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -5978,7 +5985,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0901d8
+    const v4, 0x7f0901db
 
     new-array v5, v0, [Ljava/lang/Object;
 
@@ -6002,18 +6009,18 @@
 
     goto :goto_0
 
-    .line 756
+    .line 755
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->lockAEAWB()V
 
-    .line 757
+    .line 756
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->stopFaceDetection()V
 
-    .line 759
+    .line 758
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->isContinuousAutoFocusSupported()Z
@@ -6042,18 +6049,18 @@
 
     if-nez v2, :cond_2
 
-    .line 760
+    .line 759
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleAutoFocus()V
 
-    .line 763
+    .line 762
     :cond_2
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->handleTimer(Lcom/sec/android/app/camera/interfaces/CameraContext$CaptureMethod;)Z
 
-    .line 765
+    .line 764
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -6062,18 +6069,18 @@
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideShootingModeText()V
 
-    .line 766
+    .line 765
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setOutputFile()V
 
-    .line 767
+    .line 766
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setVirtualShotStatus(I)V
 
-    .line 768
+    .line 767
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleStartVirtualShot()V
 
-    .line 770
+    .line 769
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
@@ -6082,7 +6089,7 @@
 
     if-nez v0, :cond_3
 
-    .line 771
+    .line 770
     const-string v0, "1008"
 
     invoke-static {v0}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;)V
@@ -6090,10 +6097,10 @@
     :goto_1
     move v0, v1
 
-    .line 775
+    .line 774
     goto :goto_0
 
-    .line 773
+    .line 772
     :cond_3
     const-string v0, "4002"
 
@@ -6107,7 +6114,7 @@
     .param p1, "event"    # I
 
     .prologue
-    .line 780
+    .line 779
     const-string v0, "VirtualShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -6130,20 +6137,20 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 781
+    .line 780
     packed-switch p1, :pswitch_data_0
 
-    .line 788
+    .line 787
     :goto_0
     return-void
 
-    .line 783
+    .line 782
     :pswitch_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->cancelVirtualShot()V
 
     goto :goto_0
 
-    .line 781
+    .line 780
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -6154,7 +6161,7 @@
     .locals 1
 
     .prologue
-    .line 792
+    .line 791
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->isTimerCounting()Z
@@ -6163,10 +6170,10 @@
 
     if-nez v0, :cond_0
 
-    .line 793
+    .line 792
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setStartVirtualShot()V
 
-    .line 795
+    .line 794
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -6176,16 +6183,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 796
+    .line 795
     const-string v0, "422"
 
     invoke-static {v0}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->setSAScreenId(Ljava/lang/String;)V
 
-    .line 800
+    .line 799
     :goto_0
     return-void
 
-    .line 798
+    .line 797
     :cond_1
     const-string v0, "262"
 
@@ -6201,7 +6208,7 @@
     .prologue
     const/16 v3, 0x3d
 
-    .line 804
+    .line 803
     const-string v0, "VirtualShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -6224,7 +6231,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 805
+    .line 804
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->isActive(I)Z
@@ -6233,7 +6240,7 @@
 
     if-nez v0, :cond_0
 
-    .line 806
+    .line 805
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/MenuManager;->showMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
@@ -6244,22 +6251,22 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
-    .line 808
+    .line 807
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
     if-eqz v0, :cond_1
 
-    .line 809
+    .line 808
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mTimerMenu:Lcom/sec/android/app/camera/menu/TimerCountingMenu;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->updateTime(I)V
 
-    .line 811
+    .line 810
     :cond_1
     if-nez p1, :cond_2
 
-    .line 812
+    .line 811
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isCapturing()Z
@@ -6268,10 +6275,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 813
+    .line 812
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->setStartVirtualShot()V
 
-    .line 817
+    .line 816
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -6279,11 +6286,11 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 819
+    .line 818
     :cond_2
     return-void
 
-    .line 815
+    .line 814
     :cond_3
     const/4 v0, 0x0
 

@@ -114,7 +114,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/SideQuickSetting;->SCREEN_HEIGHT:I
 
     .line 46
-    const v0, 0x7f0a0053
+    const v0, 0x7f0a0055
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -125,7 +125,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/SideQuickSetting;->SIDE_QUICK_SETTING_POS_Y:I
 
     .line 47
-    const v0, 0x7f0a029b
+    const v0, 0x7f0a029f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -136,7 +136,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/SideQuickSetting;->SIDE_QUICK_SETTING_ITEM_WIDTH:I
 
     .line 48
-    const v0, 0x7f0a029a
+    const v0, 0x7f0a029e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -169,7 +169,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/SideQuickSetting;->NORMAL_RATIO_PREVIEW_LEFT:I
 
     .line 51
-    const v0, 0x7f0a015d
+    const v0, 0x7f0a0160
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -180,7 +180,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/SideQuickSetting;->ANCHOR_WIDTH:I
 
     .line 52
-    const v0, 0x7f0a0159
+    const v0, 0x7f0a015c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -191,7 +191,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/SideQuickSetting;->ANCHOR_HEIGHT:I
 
     .line 53
-    const v0, 0x7f0a015a
+    const v0, 0x7f0a015d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

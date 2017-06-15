@@ -49,7 +49,7 @@
 
     .prologue
     .line 33
-    const v0, 0x7f0a02a6
+    const v0, 0x7f0a02aa
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -60,7 +60,7 @@
     sput v0, Lcom/sec/android/app/camera/engine/LastContentData;->THUMBNAIL_IMAGE_WIDTH:I
 
     .line 34
-    const v0, 0x7f0a02a5
+    const v0, 0x7f0a02a9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

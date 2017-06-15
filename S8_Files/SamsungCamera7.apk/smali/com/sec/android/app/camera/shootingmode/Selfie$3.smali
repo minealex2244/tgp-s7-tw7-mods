@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     .prologue
-    .line 654
+    .line 656
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,12 +44,12 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 657
+    .line 659
     const-string v2, "1005"
 
     invoke-static {v2}, Lcom/sec/android/app/camera/logging/SamsungAnalyticsLogUtil;->sendSALog(Ljava/lang/String;)V
 
-    .line 659
+    .line 661
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -65,7 +65,7 @@
 
     invoke-interface {v2, v3, v5}, Lcom/sec/android/app/camera/interfaces/PopupLayoutController;->setPopupEnabled(Lcom/sec/android/app/camera/interfaces/PopupLayoutController$PopupID;Z)V
 
-    .line 661
+    .line 663
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -96,7 +96,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 662
+    .line 664
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -108,11 +108,11 @@
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showCameraDialog(Lcom/sec/android/app/camera/interfaces/CameraContext$DialogID;)V
 
-    .line 674
+    .line 676
     :goto_0
     return v5
 
-    .line 665
+    .line 667
     :cond_0
     new-instance v1, Landroid/content/Intent;
 
@@ -120,18 +120,18 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 666
+    .line 668
     .local v1, "intent":Landroid/content/Intent;
     const-string v2, "LAUNCH_MODE"
 
     invoke-virtual {v1, v2, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 667
+    .line 669
     const-string v2, "INTELLIGENT_MODE"
 
     invoke-virtual {v1, v2, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 669
+    .line 671
     :try_start_0
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
@@ -146,7 +146,7 @@
 
     invoke-virtual {v2, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 670
+    .line 672
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Selfie$3;->this$0:Lcom/sec/android/app/camera/shootingmode/Selfie;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/Selfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -168,11 +168,11 @@
 
     goto :goto_0
 
-    .line 671
+    .line 673
     :catch_0
     move-exception v0
 
-    .line 672
+    .line 674
     .local v0, "ex":Landroid/content/ActivityNotFoundException;
     const-string v2, "Selfie"
 

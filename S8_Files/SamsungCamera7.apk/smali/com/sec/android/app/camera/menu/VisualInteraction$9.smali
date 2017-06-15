@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     .prologue
-    .line 1558
+    .line 1565
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1561
+    .line 1568
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mPreviewAngleChangeAnimationFlagLock:Ljava/lang/Object;
@@ -53,7 +53,7 @@
 
     monitor-enter v1
 
-    .line 1562
+    .line 1569
     :try_start_0
     const-string v0, "Camera7VI"
 
@@ -84,7 +84,7 @@
 
     invoke-static {v0, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1564
+    .line 1571
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     const/4 v2, 0x0
@@ -92,7 +92,7 @@
     # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsPreviewAngleChangingAnimationRunning:Z
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1902(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
-    .line 1565
+    .line 1572
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsRecordingFOVGuideHideAnimationRequested:Z
@@ -102,7 +102,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1566
+    .line 1573
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     const/4 v2, 0x0
@@ -110,20 +110,20 @@
     # setter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mIsRecordingFOVGuideHideAnimationRequested:Z
     invoke-static {v0, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$1802(Lcom/sec/android/app/camera/menu/VisualInteraction;Z)Z
 
-    .line 1567
+    .line 1574
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     # invokes: Lcom/sec/android/app/camera/menu/VisualInteraction;->hidePreviewAngleChangingAnimation()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/VisualInteraction;->access$2000(Lcom/sec/android/app/camera/menu/VisualInteraction;)V
 
-    .line 1569
+    .line 1576
     :cond_0
     monitor-exit v1
 
-    .line 1570
+    .line 1577
     return-void
 
-    .line 1569
+    .line 1576
     :catchall_0
     move-exception v0
 
@@ -140,14 +140,14 @@
     .param p2, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1574
+    .line 1581
     const-string v0, "Camera7VI"
 
     const-string v1, "startPreviewAngleChangingAnimation mPreviewImage onAnimationStart"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1575
+    .line 1582
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     const/high16 v1, 0x3f800000    # 1.0f
@@ -156,7 +156,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/android/app/camera/menu/VisualInteraction;->showBlackOverlay(FLcom/samsung/android/glview/GLViewGroup;)V
 
-    .line 1576
+    .line 1583
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$9;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -166,6 +166,6 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->completeWaitAsync()V
 
-    .line 1577
+    .line 1584
     return-void
 .end method

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     .prologue
-    .line 1628
+    .line 1635
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$10;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 1631
+    .line 1638
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VisualInteraction$10;->this$0:Lcom/sec/android/app/camera/menu/VisualInteraction;
 
     # getter for: Lcom/sec/android/app/camera/menu/VisualInteraction;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -51,6 +51,6 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->completeWaitAsync()V
 
-    .line 1632
+    .line 1639
     return-void
 .end method

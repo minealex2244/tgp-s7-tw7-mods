@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/Camera$CallStateListener;
 
     .prologue
-    .line 7949
+    .line 7973
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$CallStateListener$1;->this$1:Lcom/sec/android/app/camera/Camera$CallStateListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 3
 
     .prologue
-    .line 7952
+    .line 7976
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$CallStateListener$1;->this$1:Lcom/sec/android/app/camera/Camera$CallStateListener;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$CallStateListener;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v1, 0x7f0901f8
+    const v1, 0x7f0901fb
 
     const/4 v2, 0x0
 
@@ -56,6 +56,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 7953
+    .line 7977
     return-void
 .end method

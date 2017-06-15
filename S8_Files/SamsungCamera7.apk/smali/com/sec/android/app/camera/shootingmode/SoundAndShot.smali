@@ -292,7 +292,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SCREEN_HEIGHT:I
 
     .line 94
-    const v0, 0x7f0a0211
+    const v0, 0x7f0a0214
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -303,7 +303,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_WIDTH:I
 
     .line 95
-    const v0, 0x7f0a0210
+    const v0, 0x7f0a0213
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -314,7 +314,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_SPACING:I
 
     .line 96
-    const v0, 0x7f0a020e
+    const v0, 0x7f0a0211
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -325,7 +325,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_AND_TIMER_PADDING:I
 
     .line 97
-    const v0, 0x7f0a020f
+    const v0, 0x7f0a0212
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -336,7 +336,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_POS_Y:I
 
     .line 98
-    const v0, 0x7f0a020b
+    const v0, 0x7f0a020e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -347,7 +347,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_HEIGHT:I
 
     .line 99
-    const v0, 0x7f0a020c
+    const v0, 0x7f0a020f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -358,7 +358,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_MARGIN_0_180:I
 
     .line 100
-    const v0, 0x7f0a020d
+    const v0, 0x7f0a0210
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -369,7 +369,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_MARGIN_90_270:I
 
     .line 101
-    const v0, 0x7f0a0206
+    const v0, 0x7f0a0209
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -380,7 +380,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_GROUP_WIDTH:I
 
     .line 102
-    const v0, 0x7f0a0205
+    const v0, 0x7f0a0208
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -391,7 +391,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_GROUP_HEIGHT:I
 
     .line 103
-    const v0, 0x7f0a0200
+    const v0, 0x7f0a0203
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -411,7 +411,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->BASEMENU_GROUP_WIDTH:F
 
     .line 105
-    const v0, 0x7f0a0052
+    const v0, 0x7f0a0054
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -420,7 +420,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
     .line 106
-    const v0, 0x7f0a0372
+    const v0, 0x7f0a0375
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -429,7 +429,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PAGE_NAVIGATOR_GROUP_HEIGHT:F
 
     .line 107
-    const v0, 0x7f0a02a0
+    const v0, 0x7f0a02a4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -489,7 +489,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->STOP_BUTTON_POS_Y:I
 
     .line 111
-    const v0, 0x7f0a01fe
+    const v0, 0x7f0a0201
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -500,7 +500,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_POS_X_START:I
 
     .line 112
-    const v0, 0x7f0a01ff
+    const v0, 0x7f0a0202
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -511,7 +511,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_POS_Y:I
 
     .line 113
-    const v0, 0x7f0a01fc
+    const v0, 0x7f0a01ff
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -522,7 +522,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_BAND_WIDTH:I
 
     .line 114
-    const v0, 0x7f0a01fb
+    const v0, 0x7f0a01fe
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -533,7 +533,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_BAND_SPACING:I
 
     .line 115
-    const v0, 0x7f0a01fa
+    const v0, 0x7f0a01fd
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -544,7 +544,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_BAND_AND_MIC_PADDING:I
 
     .line 116
-    const v0, 0x7f0a01fd
+    const v0, 0x7f0a0200
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -555,7 +555,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_MIC_WIDTH:I
 
     .line 117
-    const v0, 0x7f0a0202
+    const v0, 0x7f0a0205
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -566,7 +566,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_ADD_VOICE_POS_Y:I
 
     .line 118
-    const v0, 0x7f0a0201
+    const v0, 0x7f0a0204
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -577,7 +577,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_ADD_VOICE_HEIGHT:I
 
     .line 119
-    const v0, 0x7f0a0204
+    const v0, 0x7f0a0207
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -588,7 +588,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_ADD_VOICE_SEQ_WIDTH:I
 
     .line 120
-    const v0, 0x7f0a0203
+    const v0, 0x7f0a0206
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -599,7 +599,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_ADD_VOICE_SEQ_SPACING:I
 
     .line 121
-    const v0, 0x7f0a0209
+    const v0, 0x7f0a020c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -610,7 +610,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_TEXT_POS_Y:I
 
     .line 122
-    const v0, 0x7f0a0207
+    const v0, 0x7f0a020a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -621,7 +621,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_TEXT_FONT_SIZE:I
 
     .line 123
-    const v0, 0x7f0a020a
+    const v0, 0x7f0a020d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -632,7 +632,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_TEXT_WIDTH:I
 
     .line 124
-    const v0, 0x7f0a0208
+    const v0, 0x7f0a020b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1591,7 +1591,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09022b
+    const v4, 0x7f09022e
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2243,7 +2243,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f09022b
+    const v4, 0x7f09022e
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3117,7 +3117,7 @@
     .line 1167
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0901fd
+    const v1, 0x7f090200
 
     invoke-static {v0, v1, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -5655,7 +5655,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f09022b
+    const v9, 0x7f09022e
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

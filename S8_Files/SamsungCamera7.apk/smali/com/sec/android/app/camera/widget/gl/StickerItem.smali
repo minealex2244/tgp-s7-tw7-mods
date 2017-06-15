@@ -59,7 +59,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerItem;->SELECT_BG_COLOR:I
 
     .line 43
-    const v0, 0x7f0a0319
+    const v0, 0x7f0a031c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
