@@ -31,7 +31,7 @@
     .param p1, "this$1"    # Lcom/android/launcher3/home/HomeLoader$15;
 
     .prologue
-    .line 1909
+    .line 1945
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$15$2;->this$1:Lcom/android/launcher3/home/HomeLoader$15;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$15$2;->val$moveShortcut:Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -49,17 +49,17 @@
     .locals 4
 
     .prologue
-    .line 1911
+    .line 1947
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$15$2;->this$1:Lcom/android/launcher3/home/HomeLoader$15;
 
     iget-object v1, v1, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 1912
+    .line 1948
     .local v0, "cb":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-eqz v0, :cond_1
 
@@ -69,12 +69,12 @@
 
     if-ne v1, v0, :cond_1
 
-    .line 1913
+    .line 1949
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$15$2;->val$moveShortcut:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     if-eqz v1, :cond_0
 
-    .line 1914
+    .line 1950
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$15$2;->this$1:Lcom/android/launcher3/home/HomeLoader$15;
 
     iget-object v1, v1, Lcom/android/launcher3/home/HomeLoader$15;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
@@ -85,7 +85,7 @@
 
     invoke-interface {v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindItem(Lcom/android/launcher3/common/base/item/ItemInfo;Z)V
 
-    .line 1916
+    .line 1952
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$15$2;->this$1:Lcom/android/launcher3/home/HomeLoader$15;
 
@@ -95,7 +95,7 @@
 
     invoke-interface {v1, v2}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindAppsButton(Ljava/util/ArrayList;)V
 
-    .line 1918
+    .line 1954
     :cond_1
     return-void
 .end method

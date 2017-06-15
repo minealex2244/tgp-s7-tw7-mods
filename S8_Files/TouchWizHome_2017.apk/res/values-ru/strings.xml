@@ -34,7 +34,7 @@
     <string name="default_scroll_format">Страница %1$d из %2$d.</string>
     <string name="disable_message">%1$s и все связанные функции будут отключены. Чтобы включить это приложение, перейдите в меню “Настройки” > “Приложения” и выберите %2$s.</string>
     <string name="disable_message_vzw">%s и все связанные функции отключатся. Чтобы снова включить их, перейдите в меню “Настройки” > “Приложения” > “Диспетчер приложений”.</string>
-    <string name="discard">Удалить</string>
+    <string name="discard">Сбросить</string>
     <string name="do_not_show_again">Больше не показывать</string>
     <string name="drag_here_to_move_from_folder">Перетащите сюда, чтобы переместить из папки.</string>
     <string name="duplcation_widget_instance_allowed_differ_type">Виджет, содержащий информацию о погоде, уже добавлен на домашнюю страницу. Удалите %s и повторите попытку.</string>

@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 218
+    .line 303
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$5;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$5;->val$index:Ljava/lang/String;
@@ -45,17 +45,17 @@
     .locals 4
 
     .prologue
-    .line 221
+    .line 306
     sget-object v2, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
     if-nez v2, :cond_1
 
-    .line 228
+    .line 313
     :cond_0
     :goto_0
     return-void
 
-    .line 223
+    .line 308
     :cond_1
     sget-object v2, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
@@ -69,7 +69,7 @@
 
     move-result-object v1
 
-    .line 224
+    .line 309
     .local v1, "screenID":Ljava/lang/String;
     sget-object v2, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
@@ -83,13 +83,13 @@
 
     move-result-object v0
 
-    .line 225
+    .line 310
     .local v0, "eventID":Ljava/lang/String;
     if-eqz v1, :cond_0
 
     if-eqz v0, :cond_0
 
-    .line 226
+    .line 311
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$5;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$5;->val$index:Ljava/lang/String;

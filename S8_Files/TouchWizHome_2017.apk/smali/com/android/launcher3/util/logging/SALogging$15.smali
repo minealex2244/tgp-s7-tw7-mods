@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 647
+    .line 731
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$15;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$15;->val$launcher:Lcom/android/launcher3/Launcher;
@@ -53,22 +53,22 @@
 
     const/4 v5, 0x1
 
-    .line 650
+    .line 734
     sget-object v4, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 651
+    .line 735
     .local v1, "res":Landroid/content/res/Resources;
     const/4 v2, 0x0
 
-    .line 652
+    .line 736
     .local v2, "screenId":Ljava/lang/String;
     const/4 v0, 0x0
 
-    .line 653
+    .line 737
     .local v0, "eventId":Ljava/lang/String;
     iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$15;->val$launcher:Lcom/android/launcher3/Launcher;
 
@@ -76,23 +76,23 @@
 
     move-result v3
 
-    .line 654
+    .line 738
     .local v3, "secondTopStage":I
     iget-boolean v4, p0, Lcom/android/launcher3/util/logging/SALogging$15;->val$isMultiSelect:Z
 
     if-eqz v4, :cond_3
 
-    .line 655
+    .line 739
     if-ne v3, v5, :cond_2
 
-    .line 656
+    .line 740
     const v4, 0x7f080187
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 660
+    .line 744
     :cond_0
     :goto_0
     const v4, 0x7f080110
@@ -101,26 +101,26 @@
 
     move-result-object v0
 
-    .line 669
+    .line 753
     :goto_1
     if-eqz v2, :cond_1
 
     if-eqz v0, :cond_1
 
-    .line 670
+    .line 754
     iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$15;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     invoke-virtual {v4, v2, v0}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 672
+    .line 756
     :cond_1
     return-void
 
-    .line 657
+    .line 741
     :cond_2
     if-ne v3, v6, :cond_0
 
-    .line 658
+    .line 742
     const v4, 0x7f08017b
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -129,18 +129,18 @@
 
     goto :goto_0
 
-    .line 662
+    .line 746
     :cond_3
     if-ne v3, v5, :cond_5
 
-    .line 663
+    .line 747
     const v4, 0x7f080188
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 667
+    .line 751
     :cond_4
     :goto_2
     const v4, 0x7f080113
@@ -151,11 +151,11 @@
 
     goto :goto_1
 
-    .line 664
+    .line 748
     :cond_5
     if-ne v3, v6, :cond_4
 
-    .line 665
+    .line 749
     const v4, 0x7f08017c
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

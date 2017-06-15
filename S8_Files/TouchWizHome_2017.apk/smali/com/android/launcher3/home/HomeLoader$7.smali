@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 1612
+    .line 1648
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$7;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$7;->val$tmpItems:Ljava/util/ArrayList;
@@ -45,7 +45,7 @@
     .locals 3
 
     .prologue
-    .line 1615
+    .line 1651
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$7;->val$tmpItems:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -65,13 +65,13 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1616
+    .line 1652
     .local v0, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     invoke-virtual {v0}, Lcom/android/launcher3/common/base/item/ItemInfo;->unbind()V
 
     goto :goto_0
 
-    .line 1618
+    .line 1654
     .end local v0    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_0
     return-void

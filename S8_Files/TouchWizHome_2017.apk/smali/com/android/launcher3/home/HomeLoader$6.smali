@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 1228
+    .line 1264
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$6;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$6;->val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
@@ -53,7 +53,7 @@
     .locals 4
 
     .prologue
-    .line 1230
+    .line 1266
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$6;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$6;->val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
@@ -61,20 +61,20 @@
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$6;->val$task:Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->tryGetCallbacks(Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader;->access$4000(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader;->access$4200(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 1231
+    .line 1267
     .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-eqz v0, :cond_0
 
-    .line 1232
+    .line 1268
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$6;->val$widget:Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     invoke-interface {v0, v1}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindAppWidget(Lcom/android/launcher3/home/LauncherAppWidgetInfo;)V
 
-    .line 1234
+    .line 1270
     :cond_0
     return-void
 .end method

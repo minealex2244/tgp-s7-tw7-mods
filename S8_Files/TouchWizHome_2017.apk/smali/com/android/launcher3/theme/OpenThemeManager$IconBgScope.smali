@@ -48,7 +48,7 @@
 
     const/4 v2, 0x0
 
-    .line 687
+    .line 693
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
     const-string v1, "ALL"
@@ -57,7 +57,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->ALL:Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
-    .line 688
+    .line 694
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
     const-string v1, "UNASSIGNED"
@@ -66,7 +66,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->UNASSIGNED:Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
-    .line 689
+    .line 695
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
     const-string v1, "NOTHING"
@@ -75,7 +75,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->NOTHING:Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
-    .line 686
+    .line 692
     const/4 v0, 0x3
 
     new-array v0, v0, [Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
@@ -107,13 +107,13 @@
     .end annotation
 
     .prologue
-    .line 693
+    .line 699
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 694
+    .line 700
     iput p3, p0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->value:I
 
-    .line 695
+    .line 701
     return-void
 .end method
 
@@ -122,7 +122,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 686
+    .line 692
     const-class v0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -138,7 +138,7 @@
     .locals 1
 
     .prologue
-    .line 686
+    .line 692
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->$VALUES:[Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
     invoke-virtual {v0}, [Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->clone()Ljava/lang/Object;
@@ -156,7 +156,7 @@
     .locals 1
 
     .prologue
-    .line 698
+    .line 704
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->value:I
 
     return v0

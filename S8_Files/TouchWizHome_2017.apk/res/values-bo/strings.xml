@@ -32,10 +32,10 @@
     <string name="cancel">རྩིས་མེད།</string>
     <string name="default_page">默认页面</string>
     <string name="default_scroll_format">ཤོག་གྲངས་ %1$d པའི %2$d</string>
-    <string name="disable_message">将禁用 %1$s 和与其相关的所有功能。若要重新启用应用程序，请进入【设置】>【应用程序】，然后选择 %2$s。</string>
+    <string name="disable_message">%1$sདང་དེ་དང་འབྲེལ་ཡོད་ཀྱི་ཕན་ནུས་ཚང་མ་བཀག་སྲིད།གལ་སྲིད་ཉེར་སྤྱོད་བྱ་རིམ་འདི་ཁ་ཕྱེ་ཚེ།༼སྒྲིག་འགོད་༽>༼ཉེར་སྤྱོད་བྱ་རིམ་༽ནང་ཞུགས་པ་དང་དེ་རྗེས་%2$sའདེམས་དགོས།</string>
     <string name="disable_message_vzw">%sདང་དེའི་འབྲེལ་ཡོད་ནུས་པ་ཡོད་ཚད་བཀག་སྲིད། གལ་སྲིད་ཡང་བསྐྱར་ཁ་ཕྱེ་དགོས་ཚེ།༼སྒྲིག་འགོད།༽>༼ཉེར་སྤྱོད་བྱ་རིམ་༽>༼ཉེར་སྤྱོད་བྱ་རིམ་དོ་དམ་ཡོ་བྱད།༽ནང་ཞུགས་དགོས།</string>
     <string name="discard">སྐྱུར་བ།</string>
-    <string name="do_not_show_again">不再显示</string>
+    <string name="do_not_show_again">ཡང་བསྐྱར་མི་གསལ་བ།</string>
     <string name="drag_here_to_move_from_folder">拖动至此处以从文件夹中移出。</string>
     <string name="duplcation_widget_instance_allowed_differ_type">包含天气信息的小组件已添加至主屏幕。请移除 %s 并重试。</string>
     <string name="enabled">སྤྱོད་ཁ་ཕྱེ་ཟིན།</string>
@@ -98,7 +98,7 @@
     <string name="multi_select_secure_folder_notice_one">%1$s ནས་ %2$s བར་སྣོན་མ་ཐུབ།</string>
     <string name="multi_select_secure_folder_notice_other">%3$s ལས་གཞན་པའི་ %1$s དང་ %2$d སྣོན་མ་ཐུབ།</string>
     <string name="multi_select_secure_folder_notice_two">%1$s དང་གཞན་ 1 དེ་གཉིས་ %2$s ལ་སྣོན་མི་ཐུབ།</string>
-    <string name="multi_select_uninstall">卸载</string>
+    <string name="multi_select_uninstall">ཕབ་དོར།</string>
     <string name="multi_select_uninstall_app_notice_one">%s བཤིག་འདོན་མི་ཐུབ།</string>
     <string name="new_item">རྣམ་གྲངས་གསར་པ་1</string>
     <string name="new_items">%d ཡོ་བྱས་གསར་པོ</string>
@@ -140,13 +140,13 @@
     <string name="quick_option_select">选择多个项目</string>
     <string name="quick_option_sleep">མལ་འདུག།</string>
     <string name="quick_option_sleep_alert">ཉེར་སྤྱོད་བྱ་རིམ་འདི་མལ་འདུག་ཏུ་སྒྲིག་ཏེ་དེས་རྒྱབ་སྟེགས་ནས་གློག་རྫས་ཟད་གྲོན་གཏོང་རྒྱུ་འགོག་དགོས།ཉེར་སྤྱོད་བྱ་རིམ་མལ་འདུག་བྱས་ཚེ་གསར་བརྗེས་མི་ཐུབ་པ་དང་བརྡ་ཐོ་གཏོང་མི་ཐུབ།ཡིན་ཡང་ཁྱེད་ནས་དེ་དག་ཁ་ཕྱེ་སྐབས་དེ་ཡང་ཁ་ཕྱེ་སྲིད།</string>
-    <string name="quick_option_uninstall">卸载</string>
+    <string name="quick_option_uninstall">ཕབ་དོར།</string>
     <string name="quick_option_unlock">མ་བསྡམ་པ་ཞིག</string>
     <string name="remove_popup_msg">ཤོག་ལྷེ་དོར་དགོས་སམ།</string>
     <string name="remove_popup_positive">བསུབ་འདོར།</string>
     <string name="screen_grid_explain_text">"ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་ཁྱབ་བཀོད་དེ་
 %1$d x %2$dལ་སྒྱུར་ནས་བརྙན་ཡོལ་མ་ངོས་ཁྱབ་བཀོད་དང་མཐུན་པ་བྱེད་སྲིད།"</string>
-    <string name="search_for_widgets">搜索小组件</string>
+    <string name="search_for_widgets">ལྷུ་ཤས་འཚོལ་བ།</string>
     <string name="selected">བདམས་ཟིན།</string>
     <string name="setting_apps_screen_grid">ཉེར་སྤྱོད་བྱ་རིམ་བརྙན་ཡོལ་དྲ་མིག</string>
     <string name="shortcut_duplicate">མྱུར་མགྱོགས་འགྲོས་ཐབས་ %s སྔོན་ནས་ཡོད་པ།</string>

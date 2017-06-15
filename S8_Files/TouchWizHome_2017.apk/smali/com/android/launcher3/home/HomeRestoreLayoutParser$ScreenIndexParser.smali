@@ -29,15 +29,15 @@
     .param p2, "container"    # Ljava/lang/String;
 
     .prologue
-    .line 445
+    .line 441
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ScreenIndexParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 446
+    .line 442
     iput-object p2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ScreenIndexParser;->mContainer:Ljava/lang/String;
 
-    .line 447
+    .line 443
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .end annotation
 
     .prologue
-    .line 452
+    .line 448
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v1
@@ -64,7 +64,7 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 453
+    .line 449
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v1
@@ -73,11 +73,11 @@
 
     move-result v0
 
-    .line 454
+    .line 450
     .local v0, "screenIndex":I
     if-gez v0, :cond_0
 
-    .line 455
+    .line 451
     const-string v1, "Launcher.HomeRestore"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -100,10 +100,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 456
+    .line 452
     const/4 v0, 0x0
 
-    .line 458
+    .line 454
     :cond_0
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ScreenIndexParser;->mContainer:Ljava/lang/String;
 
@@ -119,7 +119,7 @@
     :goto_0
     packed-switch v1, :pswitch_data_0
 
-    .line 468
+    .line 464
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ScreenIndexParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
@@ -131,7 +131,7 @@
 
     invoke-static {v1, v0, v2}, Lcom/android/launcher3/Utilities;->setHomeDefaultPageKey(Landroid/content/Context;ILjava/lang/String;)V
 
-    .line 472
+    .line 468
     :goto_1
     const-string v1, "Launcher.HomeRestore"
 
@@ -155,14 +155,14 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 474
+    .line 470
     .end local v0    # "screenIndex":I
     :cond_2
     const-wide/16 v2, 0x0
 
     return-wide v2
 
-    .line 458
+    .line 454
     .restart local v0    # "screenIndex":I
     :sswitch_0
     const-string v3, "home_easy"
@@ -190,7 +190,7 @@
 
     goto :goto_0
 
-    .line 460
+    .line 456
     :pswitch_0
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ScreenIndexParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -205,7 +205,7 @@
 
     goto :goto_1
 
-    .line 464
+    .line 460
     :pswitch_1
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ScreenIndexParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -220,7 +220,7 @@
 
     goto :goto_1
 
-    .line 458
+    .line 454
     nop
 
     :sswitch_data_0

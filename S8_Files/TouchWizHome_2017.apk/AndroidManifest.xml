@@ -133,12 +133,13 @@
         <meta-data android:name="backup_content_uri" android:value="content://com.sec.android.app.launcher.backup"/>
         <meta-data android:name="com.samsung.android.bixby.pathRuleAppName" android:value="Home"/>
         <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <meta-data android:name="com.samsung.android.non_immersive" android:value="true"/>
         <service android:enabled="false" android:exported="true" android:name="com.samsung.android.sdk.bixby.BixbyAppService" android:permission="com.samsung.android.bixby.agent.permission.APP_SERVICE">
             <intent-filter>
                 <action android:name="com.samsung.android.sdk.bixby.APP_SERVICE"/>
             </intent-filter>
         </service>
-        <meta-data android:name="SPDE.build.signature" android:value="3830878/12380778/2017-release/TouchWizHome-601000-6.1.01"/>
-        <meta-data android:name="SPDE.env.version" android:value="2.1.3/L24.3.7/24.3.3"/>
+        <meta-data android:name="SPDE.build.signature" android:value="3945397/13345158/2017-release/TouchWizHome-601000-6.1.07"/>
+        <meta-data android:name="SPDE.env.version" android:value="2.1.3/L24.3.7/24.3.4"/>
     </application>
 </manifest>

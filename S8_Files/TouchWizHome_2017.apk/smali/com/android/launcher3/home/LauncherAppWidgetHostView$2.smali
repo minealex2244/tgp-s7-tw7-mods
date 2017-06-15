@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     .prologue
-    .line 445
+    .line 446
     iput-object p1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$2;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     iput-object p2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$2;->val$origView:Landroid/appwidget/AppWidgetHostView;
@@ -50,7 +50,7 @@
     .param p1, "animator"    # Landroid/animation/Animator;
 
     .prologue
-    .line 453
+    .line 454
     return-void
 .end method
 
@@ -59,7 +59,7 @@
     .param p1, "animator"    # Landroid/animation/Animator;
 
     .prologue
-    .line 448
+    .line 449
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$2;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$2;->val$origView:Landroid/appwidget/AppWidgetHostView;
@@ -69,7 +69,7 @@
     # invokes: Lcom/android/launcher3/home/LauncherAppWidgetHostView;->initWidgetAnimation(Landroid/view/View;Landroid/view/View;)V
     invoke-static {v0, v1, v2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$300(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Landroid/view/View;Landroid/view/View;)V
 
-    .line 449
+    .line 450
     return-void
 .end method
 
@@ -78,7 +78,7 @@
     .param p1, "animator"    # Landroid/animation/Animator;
 
     .prologue
-    .line 457
+    .line 458
     return-void
 .end method
 
@@ -87,6 +87,6 @@
     .param p1, "animator"    # Landroid/animation/Animator;
 
     .prologue
-    .line 461
+    .line 462
     return-void
 .end method

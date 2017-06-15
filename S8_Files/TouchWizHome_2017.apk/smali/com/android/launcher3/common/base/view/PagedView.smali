@@ -902,7 +902,7 @@
 
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 2804
+    .line 2807
     return-void
 
     .line 2784
@@ -2879,7 +2879,7 @@
     .locals 2
 
     .prologue
-    .line 2807
+    .line 2810
     iget v0, p0, Lcom/android/launcher3/common/base/view/PagedView;->mScrollState:I
 
     const/4 v1, 0x4
@@ -2941,7 +2941,7 @@
     .prologue
     const/4 v2, 0x2
 
-    .line 2815
+    .line 2818
     iget v0, p0, Lcom/android/launcher3/common/base/view/PagedView;->mTouchState:I
 
     const/4 v1, 0x1
@@ -2952,29 +2952,29 @@
 
     if-ne v0, v2, :cond_2
 
-    .line 2816
+    .line 2819
     :cond_0
     iget v0, p0, Lcom/android/launcher3/common/base/view/PagedView;->mTouchState:I
 
     if-ne v0, v2, :cond_1
 
-    .line 2817
+    .line 2820
     invoke-virtual {p0}, Lcom/android/launcher3/common/base/view/PagedView;->endReordering()V
 
-    .line 2819
+    .line 2822
     :cond_1
     invoke-virtual {p0}, Lcom/android/launcher3/common/base/view/PagedView;->snapToDestination()V
 
-    .line 2821
+    .line 2824
     :cond_2
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/launcher3/common/base/view/PagedView;->mTouchState:I
 
-    .line 2822
+    .line 2825
     invoke-direct {p0}, Lcom/android/launcher3/common/base/view/PagedView;->releaseVelocityTracker()V
 
-    .line 2823
+    .line 2826
     return-void
 .end method
 
@@ -4772,7 +4772,7 @@
     .locals 1
 
     .prologue
-    .line 2842
+    .line 2845
     const/4 v0, 0x0
 
     return v0
@@ -5451,7 +5451,7 @@
     .locals 1
 
     .prologue
-    .line 2846
+    .line 2849
     const/4 v0, 0x0
 
     return v0
@@ -5988,17 +5988,17 @@
     .param p3, "pageCount"    # I
 
     .prologue
-    .line 2836
+    .line 2839
     iget-object v0, p0, Lcom/android/launcher3/common/base/view/PagedView;->mPageScrollListener:Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;
 
     if-eqz v0, :cond_0
 
-    .line 2837
+    .line 2840
     iget-object v0, p0, Lcom/android/launcher3/common/base/view/PagedView;->mPageScrollListener:Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;
 
     invoke-interface {v0, p1, p2, p3}, Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;->onPageChange(III)V
 
-    .line 2839
+    .line 2842
     :cond_0
     return-void
 .end method
@@ -6012,12 +6012,12 @@
     .param p5, "pageCount"    # I
 
     .prologue
-    .line 2830
+    .line 2833
     iget-object v0, p0, Lcom/android/launcher3/common/base/view/PagedView;->mPageScrollListener:Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;
 
     if-eqz v0, :cond_0
 
-    .line 2831
+    .line 2834
     iget-object v0, p0, Lcom/android/launcher3/common/base/view/PagedView;->mPageScrollListener:Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;
 
     move v1, p1
@@ -6032,7 +6032,7 @@
 
     invoke-interface/range {v0 .. v5}, Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;->onPageScroll(IIIII)V
 
-    .line 2833
+    .line 2836
     :cond_0
     return-void
 .end method
@@ -10606,10 +10606,10 @@
     .param p1, "pageScrollListener"    # Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;
 
     .prologue
-    .line 2826
+    .line 2829
     iput-object p1, p0, Lcom/android/launcher3/common/base/view/PagedView;->mPageScrollListener:Lcom/android/launcher3/common/base/view/PagedView$PageScrollListener;
 
-    .line 2827
+    .line 2830
     return-void
 .end method
 
@@ -11448,7 +11448,7 @@
     .locals 1
 
     .prologue
-    .line 2811
+    .line 2814
     const/4 v0, 0x1
 
     return v0

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/Launcher;
 
     .prologue
-    .line 2634
+    .line 2637
     iput-object p1, p0, Lcom/android/launcher3/Launcher$15;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 2636
+    .line 2639
     iget-object v0, p0, Lcom/android/launcher3/Launcher$15;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mPaused:Z
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2637
+    .line 2640
     iget-object v0, p0, Lcom/android/launcher3/Launcher$15;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mTiltWallpaperScroller:Lcom/android/launcher3/common/wallpaperscroller/WallpaperScroller;
@@ -61,13 +61,13 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/wallpaperscroller/WallpaperScroller;->shutdown()V
 
-    .line 2638
+    .line 2641
     iget-object v0, p0, Lcom/android/launcher3/Launcher$15;->this$0:Lcom/android/launcher3/Launcher;
 
     # invokes: Lcom/android/launcher3/Launcher;->resetWallpaperOffsets()V
     invoke-static {v0}, Lcom/android/launcher3/Launcher;->access$1300(Lcom/android/launcher3/Launcher;)V
 
-    .line 2640
+    .line 2643
     :cond_0
     return-void
 .end method

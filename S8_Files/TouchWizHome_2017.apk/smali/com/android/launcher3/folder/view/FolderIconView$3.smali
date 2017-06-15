@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderIconView;
 
     .prologue
-    .line 1083
+    .line 1088
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     iput-boolean p2, p0, Lcom/android/launcher3/folder/view/FolderIconView$3;->val$reverse:Z
@@ -62,7 +62,7 @@
     .param p1, "animation"    # Landroid/animation/ValueAnimator;
 
     .prologue
-    .line 1085
+    .line 1090
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -73,18 +73,18 @@
 
     move-result v0
 
-    .line 1086
+    .line 1091
     .local v0, "progress":F
     iget-boolean v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$3;->val$reverse:Z
 
     if-eqz v1, :cond_0
 
-    .line 1087
+    .line 1092
     const/high16 v1, 0x3f800000    # 1.0f
 
     sub-float v0, v1, v0
 
-    .line 1088
+    .line 1093
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderIconView;->mPreviewBackground:Landroid/widget/ImageView;
@@ -94,7 +94,7 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 1091
+    .line 1096
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
@@ -119,7 +119,7 @@
 
     iput v2, v1, Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;->transX:F
 
-    .line 1092
+    .line 1097
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderIconView;->mAnimParams:Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;
@@ -143,7 +143,7 @@
 
     iput v2, v1, Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;->transY:F
 
-    .line 1093
+    .line 1098
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderIconView;->mAnimParams:Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;
@@ -167,11 +167,11 @@
 
     iput v2, v1, Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;->scale:F
 
-    .line 1094
+    .line 1099
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     invoke-virtual {v1}, Lcom/android/launcher3/folder/view/FolderIconView;->invalidate()V
 
-    .line 1095
+    .line 1100
     return-void
 .end method

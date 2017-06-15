@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/Launcher;
 
     .prologue
-    .line 1084
+    .line 1087
     iput-object p1, p0, Lcom/android/launcher3/Launcher$5;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 2
 
     .prologue
-    .line 1087
+    .line 1090
     iget-object v0, p0, Lcom/android/launcher3/Launcher$5;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mHomeController:Lcom/android/launcher3/home/HomeController;
@@ -51,7 +51,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1088
+    .line 1091
     iget-object v0, p0, Lcom/android/launcher3/Launcher$5;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mHomeController:Lcom/android/launcher3/home/HomeController;
@@ -63,7 +63,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeController;->enterScreenGridState(Z)V
 
-    .line 1089
+    .line 1092
     iget-object v0, p0, Lcom/android/launcher3/Launcher$5;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mHomeController:Lcom/android/launcher3/home/HomeController;
@@ -73,7 +73,7 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/home/HomeController;->backupOriginalData()V
 
-    .line 1091
+    .line 1094
     :cond_0
     return-void
 .end method

@@ -128,7 +128,7 @@
 
     const/4 v4, 0x0
 
-    .line 544
+    .line 549
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "ICON_BG_RANGE"
@@ -137,7 +137,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ICON_BG_RANGE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 545
+    .line 550
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "ICON_SCALE"
@@ -146,7 +146,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ICON_SCALE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 546
+    .line 551
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "GRID_X"
@@ -155,7 +155,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->GRID_X:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 547
+    .line 552
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "GRID_Y"
@@ -164,7 +164,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->GRID_Y:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 548
+    .line 553
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "PAGEINDICATOR_HOME"
@@ -173,7 +173,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->PAGEINDICATOR_HOME:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 549
+    .line 554
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "PAGEINDICATOR_DEFAULT"
@@ -186,7 +186,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->PAGEINDICATOR_DEFAULT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 550
+    .line 555
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "PAGEINDICATOR_HEADLINE"
@@ -199,7 +199,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->PAGEINDICATOR_HEADLINE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 551
+    .line 556
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "SHADOW"
@@ -212,7 +212,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->SHADOW:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 552
+    .line 557
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "APPTITLE_ONOFF"
@@ -225,7 +225,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->APPTITLE_ONOFF:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 553
+    .line 558
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "FONT"
@@ -238,7 +238,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->FONT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 554
+    .line 559
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "TITLE_BACKGROUND"
@@ -251,7 +251,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TITLE_BACKGROUND:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 555
+    .line 560
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "HOME_TEXT_COLOR"
@@ -264,7 +264,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->HOME_TEXT_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 556
+    .line 561
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "APPS_TEXT_COLOR"
@@ -277,7 +277,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->APPS_TEXT_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 557
+    .line 562
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "ALL_APPS_ICON"
@@ -290,7 +290,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ALL_APPS_ICON:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 558
+    .line 563
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "ICON_TRAY"
@@ -303,7 +303,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ICON_TRAY:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 559
+    .line 564
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "APPS_TRAY_BG"
@@ -316,7 +316,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->APPS_TRAY_BG:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 560
+    .line 565
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "TRANSITON_EFFECT"
@@ -329,7 +329,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TRANSITON_EFFECT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 561
+    .line 566
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "TEXT_HIGHLIGHT"
@@ -342,7 +342,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TEXT_HIGHLIGHT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 562
+    .line 567
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "BADGE_BG"
@@ -355,7 +355,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->BADGE_BG:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 563
+    .line 568
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "BADGE_BG_COLOR"
@@ -368,7 +368,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->BADGE_BG_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 564
+    .line 569
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "BADGE_TEXT_COLOR"
@@ -381,7 +381,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->BADGE_TEXT_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 565
+    .line 570
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "TEXT_SHADOW"
@@ -394,7 +394,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TEXT_SHADOW:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 566
+    .line 571
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "TEXT_SHADOW_COLOR"
@@ -407,7 +407,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TEXT_SHADOW_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 569
+    .line 574
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_ICON1"
@@ -420,7 +420,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_ICON1:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 570
+    .line 575
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_ICON2"
@@ -433,7 +433,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_ICON2:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 571
+    .line 576
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_ICON3"
@@ -446,7 +446,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_ICON3:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 572
+    .line 577
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_ICON4"
@@ -459,7 +459,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_ICON4:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 573
+    .line 578
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_ICON5"
@@ -472,7 +472,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_ICON5:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 576
+    .line 581
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_TYPE"
@@ -485,7 +485,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_TYPE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 577
+    .line 582
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_SHAPE"
@@ -498,7 +498,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_SHAPE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 578
+    .line 583
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_COLOR1"
@@ -511,7 +511,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_COLOR1:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 579
+    .line 584
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_COLOR2"
@@ -524,7 +524,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_COLOR2:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 580
+    .line 585
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_COLOR3"
@@ -537,7 +537,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_COLOR3:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 581
+    .line 586
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_COLOR4"
@@ -550,7 +550,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_COLOR4:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 582
+    .line 587
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "CLOSE_FOLDER_COLOR5"
@@ -563,7 +563,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->CLOSE_FOLDER_COLOR5:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 585
+    .line 590
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "OPEN_FOLDER_TYPE"
@@ -576,7 +576,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->OPEN_FOLDER_TYPE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 586
+    .line 591
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "OPEN_FOLDER_BG"
@@ -589,7 +589,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->OPEN_FOLDER_BG:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 589
+    .line 594
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "OPEN_FOLDER_BG_COLOR"
@@ -602,7 +602,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->OPEN_FOLDER_BG_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 592
+    .line 597
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "OPEN_FOLDER_TITLE_COLOR"
@@ -615,7 +615,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->OPEN_FOLDER_TITLE_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 593
+    .line 598
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "OPEN_FOLDER_TEXT_COLOR"
@@ -628,7 +628,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->OPEN_FOLDER_TEXT_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 595
+    .line 600
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     const-string v1, "PAGEINDICATOR_FESTIVAL"
@@ -641,7 +641,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->PAGEINDICATOR_FESTIVAL:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 543
+    .line 548
     const/16 v0, 0x29
 
     new-array v0, v0, [Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
@@ -897,13 +897,13 @@
     .end annotation
 
     .prologue
-    .line 599
+    .line 604
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 600
+    .line 605
     iput p3, p0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value:I
 
-    .line 601
+    .line 606
     return-void
 .end method
 
@@ -912,7 +912,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 543
+    .line 548
     const-class v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -928,7 +928,7 @@
     .locals 1
 
     .prologue
-    .line 543
+    .line 548
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->$VALUES:[Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     invoke-virtual {v0}, [Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->clone()Ljava/lang/Object;
@@ -946,7 +946,7 @@
     .locals 1
 
     .prologue
-    .line 604
+    .line 609
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value:I
 
     return v0

@@ -58,7 +58,7 @@
 
     const/4 v4, 0x0
 
-    .line 668
+    .line 674
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     const-string v1, "DEFAULT"
@@ -67,7 +67,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->DEFAULT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
-    .line 669
+    .line 675
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     const-string v1, "HOME"
@@ -76,7 +76,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->HOME:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
-    .line 670
+    .line 676
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     const-string v1, "APP_ICON"
@@ -85,7 +85,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->APP_ICON:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
-    .line 671
+    .line 677
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     const-string v1, "EVENT"
@@ -94,7 +94,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->EVENT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
-    .line 672
+    .line 678
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     const-string v1, "WINSET"
@@ -103,7 +103,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->WINSET:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
-    .line 673
+    .line 679
     new-instance v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     const-string v1, "BADGE"
@@ -116,7 +116,7 @@
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->BADGE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
-    .line 667
+    .line 673
     const/4 v0, 0x6
 
     new-array v0, v0, [Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
@@ -162,13 +162,13 @@
     .end annotation
 
     .prologue
-    .line 677
+    .line 683
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 678
+    .line 684
     iput p3, p0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->value:I
 
-    .line 679
+    .line 685
     return-void
 .end method
 
@@ -177,7 +177,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     .prologue
-    .line 667
+    .line 673
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->value:I
 
     return v0
@@ -188,7 +188,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 667
+    .line 673
     const-class v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -204,7 +204,7 @@
     .locals 1
 
     .prologue
-    .line 667
+    .line 673
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->$VALUES:[Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     invoke-virtual {v0}, [Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->clone()Ljava/lang/Object;
@@ -222,7 +222,7 @@
     .locals 1
 
     .prologue
-    .line 682
+    .line 688
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->value:I
 
     return v0

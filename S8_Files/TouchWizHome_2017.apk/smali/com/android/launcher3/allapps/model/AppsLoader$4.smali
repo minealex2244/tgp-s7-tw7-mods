@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 581
+    .line 582
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$4;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$4;->val$heuristic:Lcom/android/launcher3/home/ManagedProfileHeuristic;
@@ -49,13 +49,13 @@
     .locals 2
 
     .prologue
-    .line 584
+    .line 585
     iget-object v0, p0, Lcom/android/launcher3/allapps/model/AppsLoader$4;->val$heuristic:Lcom/android/launcher3/home/ManagedProfileHeuristic;
 
     iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$4;->val$apps:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/home/ManagedProfileHeuristic;->processUserApps(Ljava/util/List;)V
 
-    .line 585
+    .line 586
     return-void
 .end method

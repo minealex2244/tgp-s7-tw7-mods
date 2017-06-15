@@ -26,7 +26,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderIconView;
 
     .prologue
-    .line 1097
+    .line 1102
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$4;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     iput-object p2, p0, Lcom/android/launcher3/folder/view/FolderIconView$4;->val$onCompleteRunnable:Ljava/lang/Runnable;
@@ -43,7 +43,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 1105
+    .line 1110
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$4;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     const/4 v1, 0x0
@@ -51,17 +51,17 @@
     # setter for: Lcom/android/launcher3/folder/view/FolderIconView;->mAnimating:Z
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderIconView;->access$602(Lcom/android/launcher3/folder/view/FolderIconView;Z)Z
 
-    .line 1106
+    .line 1111
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$4;->val$onCompleteRunnable:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
-    .line 1107
+    .line 1112
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$4;->val$onCompleteRunnable:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 1109
+    .line 1114
     :cond_0
     return-void
 .end method
@@ -71,7 +71,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 1100
+    .line 1105
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$4;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     const/4 v1, 0x1
@@ -79,6 +79,6 @@
     # setter for: Lcom/android/launcher3/folder/view/FolderIconView;->mAnimating:Z
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderIconView;->access$602(Lcom/android/launcher3/folder/view/FolderIconView;Z)Z
 
-    .line 1101
+    .line 1106
     return-void
 .end method

@@ -29,15 +29,15 @@
     .param p2, "object"    # Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
     .prologue
-    .line 2505
+    .line 2520
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollFinishedListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2506
+    .line 2521
     iput-object p2, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollFinishedListener;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
-    .line 2507
+    .line 2522
     return-void
 .end method
 
@@ -48,7 +48,7 @@
     .param p1, "alarm"    # Lcom/android/launcher3/util/alarm/Alarm;
 
     .prologue
-    .line 2515
+    .line 2530
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollFinishedListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollFinishedListener;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
@@ -58,6 +58,6 @@
     # invokes: Lcom/android/launcher3/folder/view/FolderView;->onDragOver(Lcom/android/launcher3/common/drag/DropTarget$DragObject;I)V
     invoke-static {v0, v1, v2}, Lcom/android/launcher3/folder/view/FolderView;->access$2100(Lcom/android/launcher3/folder/view/FolderView;Lcom/android/launcher3/common/drag/DropTarget$DragObject;I)V
 
-    .line 2516
+    .line 2531
     return-void
 .end method

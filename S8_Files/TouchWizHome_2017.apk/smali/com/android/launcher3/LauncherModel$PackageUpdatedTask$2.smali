@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
 
     .prologue
-    .line 1127
+    .line 1131
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$2;->this$1:Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
 
     iput-object p2, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$2;->val$callbacks:Lcom/android/launcher3/LauncherModel$Callbacks;
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 1129
+    .line 1133
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$2;->this$1:Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
 
     iget-object v1, v1, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;->this$0:Lcom/android/launcher3/LauncherModel;
@@ -54,7 +54,7 @@
 
     move-result-object v0
 
-    .line 1130
+    .line 1134
     .local v0, "cb":Lcom/android/launcher3/LauncherModel$Callbacks;
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$2;->val$callbacks:Lcom/android/launcher3/LauncherModel$Callbacks;
 
@@ -62,12 +62,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 1131
+    .line 1135
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$2;->val$callbacks:Lcom/android/launcher3/LauncherModel$Callbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/LauncherModel$Callbacks;->dumpLogsToLocalData()V
 
-    .line 1133
+    .line 1137
     :cond_0
     return-void
 .end method

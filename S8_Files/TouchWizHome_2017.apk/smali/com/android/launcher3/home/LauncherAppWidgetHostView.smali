@@ -189,7 +189,7 @@
     .line 117
     iput-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingDown:Z
 
-    .line 356
+    .line 357
     new-instance v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$1;
 
     invoke-direct {v0, p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView$1;-><init>(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)V
@@ -429,35 +429,35 @@
     .param p3, "height"    # I
 
     .prologue
-    .line 616
+    .line 617
     new-instance v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
 
     invoke-direct {v5}, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;-><init>()V
 
-    .line 617
+    .line 618
     .local v5, "result":Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
     const/4 v9, 0x0
 
     iput-boolean v9, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->forceToResize:Z
 
-    .line 618
+    .line 619
     const/high16 v9, 0x3f800000    # 1.0f
 
     iput v9, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F
 
-    .line 619
+    .line 620
     iput p2, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->width:I
 
-    .line 620
+    .line 621
     iput p3, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->height:I
 
-    .line 621
+    .line 622
     iput p2, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->visibleWidth:I
 
-    .line 622
+    .line 623
     iput p3, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->visibleHeight:I
 
-    .line 624
+    .line 625
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v9
@@ -466,7 +466,7 @@
 
     move-result-object v2
 
-    .line 625
+    .line 626
     .local v2, "profile":Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
     iget-object v9, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
 
@@ -474,7 +474,7 @@
 
     move-result v1
 
-    .line 626
+    .line 627
     .local v1, "cellSpacingWidth":I
     iget-object v9, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
 
@@ -482,7 +482,7 @@
 
     move-result v0
 
-    .line 628
+    .line 629
     .local v0, "cellSpacingHeight":I
     iget v9, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->defaultCellWidth:I
 
@@ -499,11 +499,11 @@
     :goto_0
     add-int v4, v10, v9
 
-    .line 632
+    .line 633
     .local v4, "requiredWidth":I
     const/high16 v6, 0x3f800000    # 1.0f
 
-    .line 633
+    .line 634
     .local v6, "scaleForMobileKeyboard":F
     invoke-static {}, Lcom/android/launcher3/Utilities;->isMobileKeyboardMode()Z
 
@@ -511,10 +511,10 @@
 
     if-eqz v9, :cond_0
 
-    .line 634
+    .line 635
     const v6, 0x3f333333    # 0.7f
 
-    .line 637
+    .line 638
     :cond_0
     iget v9, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->defaultCellHeight:I
 
@@ -537,37 +537,37 @@
 
     float-to-int v3, v9
 
-    .line 640
+    .line 641
     .local v3, "requiredHeight":I
     if-ge p2, v4, :cond_1
 
-    .line 641
+    .line 642
     const/4 v9, 0x1
 
     iput-boolean v9, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->forceToResize:Z
 
-    .line 642
+    .line 643
     iput v4, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->width:I
 
-    .line 644
+    .line 645
     :cond_1
     if-ge p3, v3, :cond_2
 
-    .line 645
+    .line 646
     const/4 v9, 0x1
 
     iput-boolean v9, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->forceToResize:Z
 
-    .line 646
+    .line 647
     iput v3, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->height:I
 
-    .line 649
+    .line 650
     :cond_2
     iget-boolean v9, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->forceToResize:Z
 
     if-eqz v9, :cond_4
 
-    .line 650
+    .line 651
     int-to-float v9, p2
 
     iget v10, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->width:I
@@ -576,7 +576,7 @@
 
     div-float v7, v9, v10
 
-    .line 651
+    .line 652
     .local v7, "sx":F
     int-to-float v9, p3
 
@@ -586,7 +586,7 @@
 
     div-float v8, v9, v10
 
-    .line 656
+    .line 657
     .local v8, "sy":F
     const/high16 v9, 0x3f800000    # 1.0f
 
@@ -600,16 +600,16 @@
 
     if-eqz v9, :cond_4
 
-    .line 657
+    .line 658
     :cond_3
     cmpg-float v9, v7, v8
 
     if-gez v9, :cond_7
 
-    .line 658
+    .line 659
     iput v7, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F
 
-    .line 662
+    .line 663
     :goto_2
     int-to-float v9, p2
 
@@ -625,7 +625,7 @@
 
     iput v9, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->width:I
 
-    .line 663
+    .line 664
     int-to-float v9, p3
 
     const/high16 v10, 0x3f800000    # 1.0f
@@ -640,13 +640,13 @@
 
     iput v9, v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->height:I
 
-    .line 667
+    .line 668
     .end local v7    # "sx":F
     .end local v8    # "sy":F
     :cond_4
     return-object v5
 
-    .line 628
+    .line 629
     .end local v3    # "requiredHeight":I
     .end local v4    # "requiredWidth":I
     .end local v6    # "scaleForMobileKeyboard":F
@@ -655,7 +655,7 @@
 
     goto :goto_0
 
-    .line 637
+    .line 638
     .restart local v4    # "requiredWidth":I
     .restart local v6    # "scaleForMobileKeyboard":F
     :cond_6
@@ -663,7 +663,7 @@
 
     goto :goto_1
 
-    .line 660
+    .line 661
     .restart local v3    # "requiredHeight":I
     .restart local v7    # "sx":F
     .restart local v8    # "sy":F
@@ -679,7 +679,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 540
+    .line 541
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -700,7 +700,7 @@
 
     move-result-object v6
 
-    .line 541
+    .line 542
     .local v6, "c":Landroid/database/Cursor;
     if-eqz v6, :cond_0
 
@@ -712,7 +712,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 542
+    .line 543
     :cond_0
     const/4 v0, 0x0
 
@@ -720,7 +720,7 @@
 
     iput-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
 
-    .line 546
+    .line 547
     :goto_0
     if-eqz v6, :cond_1
 
@@ -730,14 +730,14 @@
 
     if-nez v0, :cond_1
 
-    .line 547
+    .line 548
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 548
+    .line 549
     :cond_1
     return-void
 
-    .line 544
+    .line 545
     :cond_2
     const/4 v0, 0x1
 
@@ -755,23 +755,23 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 395
+    .line 396
     if-nez p1, :cond_0
 
-    .line 413
+    .line 414
     :goto_0
     return-object v1
 
-    .line 399
+    .line 400
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->buildDrawingCache()V
 
-    .line 400
+    .line 401
     invoke-virtual {p1}, Landroid/view/View;->getDrawingCache()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 401
+    .line 402
     .local v0, "cacheBitmap":Landroid/graphics/Bitmap;
     if-eqz v0, :cond_1
 
@@ -781,7 +781,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 402
+    .line 403
     :cond_1
     sget-object v5, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->TAG:Ljava/lang/String;
 
@@ -791,7 +791,7 @@
 
     goto :goto_0
 
-    .line 405
+    .line 406
     :cond_2
     new-instance v1, Landroid/widget/FrameLayout;
 
@@ -801,7 +801,7 @@
 
     invoke-direct {v1, v5}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
-    .line 406
+    .line 407
     .local v1, "fl":Landroid/widget/FrameLayout;
     new-instance v4, Landroid/widget/ImageView;
 
@@ -811,31 +811,31 @@
 
     invoke-direct {v4, v5}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 407
+    .line 408
     .local v4, "prvHostView":Landroid/widget/ImageView;
     invoke-virtual {v4, v0}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 408
+    .line 409
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v3
 
     check-cast v3, Lcom/android/launcher3/common/base/view/CellLayoutChildren;
 
-    .line 409
+    .line 410
     .local v3, "parent":Lcom/android/launcher3/common/base/view/CellLayoutChildren;
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
 
-    .line 410
+    .line 411
     .local v2, "layoutParams":Landroid/view/ViewGroup$LayoutParams;
     invoke-virtual {v3, v1, v2}, Lcom/android/launcher3/common/base/view/CellLayoutChildren;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 411
+    .line 412
     invoke-virtual {v1, v4}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
-    .line 412
+    .line 413
     const-string v5, "previous_hostView"
 
     invoke-virtual {v1, v5}, Landroid/widget/FrameLayout;->setTag(Ljava/lang/Object;)V
@@ -853,23 +853,23 @@
 
     const/4 v2, 0x0
 
-    .line 483
+    .line 484
     iput-boolean v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingUp:Z
 
-    .line 484
+    .line 485
     iput-boolean v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingDown:Z
 
-    .line 485
+    .line 486
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mPrvHostView:Landroid/widget/FrameLayout;
 
     if-eqz v1, :cond_1
 
-    .line 502
+    .line 503
     :cond_0
     :goto_0
     return v2
 
-    .line 489
+    .line 490
     :cond_1
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->createPrvView(Landroid/view/View;)Landroid/widget/FrameLayout;
 
@@ -877,17 +877,17 @@
 
     iput-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mPrvHostView:Landroid/widget/FrameLayout;
 
-    .line 490
+    .line 491
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mPrvHostView:Landroid/widget/FrameLayout;
 
     if-eqz v1, :cond_0
 
-    .line 493
+    .line 494
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 494
+    .line 495
     .local v0, "opts":Landroid/os/Bundle;
     const-string v4, "fling"
 
@@ -898,31 +898,31 @@
     :goto_1
     invoke-virtual {v0, v4, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 495
+    .line 496
     invoke-virtual {p1, v0}, Landroid/appwidget/AppWidgetHostView;->updateAppWidgetOptions(Landroid/os/Bundle;)V
 
-    .line 497
+    .line 498
     iget-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsWeatherCityOneMore:Z
 
     if-eqz v1, :cond_3
 
-    .line 498
+    .line 499
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mPrvHostView:Landroid/widget/FrameLayout;
 
     invoke-direct {p0, p1, v1, p2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->startWidgetAnimation(Landroid/appwidget/AppWidgetHostView;Landroid/widget/FrameLayout;Z)V
 
     move v2, v3
 
-    .line 499
+    .line 500
     goto :goto_0
 
     :cond_2
     move v1, v3
 
-    .line 494
+    .line 495
     goto :goto_1
 
-    .line 501
+    .line 502
     :cond_3
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mPrvHostView:Landroid/widget/FrameLayout;
 
@@ -940,17 +940,17 @@
 
     const/4 v2, 0x0
 
-    .line 324
+    .line 325
     iget-boolean v4, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsAllowSwipe:Z
 
     if-eqz v4, :cond_1
 
-    .line 340
+    .line 341
     :cond_0
     :goto_0
     return v2
 
-    .line 328
+    .line 329
     :cond_1
     if-eqz p1, :cond_0
 
@@ -958,7 +958,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 331
+    .line 332
     instance-of v4, p1, Landroid/widget/StackView;
 
     if-nez v4, :cond_2
@@ -974,16 +974,16 @@
     :cond_2
     move v2, v3
 
-    .line 332
+    .line 333
     goto :goto_0
 
     :cond_3
     move-object v1, p1
 
-    .line 334
+    .line 335
     check-cast v1, Landroid/view/ViewGroup;
 
-    .line 335
+    .line 336
     .local v1, "vg":Landroid/view/ViewGroup;
     const/4 v0, 0x0
 
@@ -995,7 +995,7 @@
 
     if-ge v0, v4, :cond_0
 
-    .line 336
+    .line 337
     invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
@@ -1008,10 +1008,10 @@
 
     move v2, v3
 
-    .line 337
+    .line 338
     goto :goto_0
 
-    .line 335
+    .line 336
     :cond_4
     add-int/lit8 v0, v0, 0x1
 
@@ -1028,33 +1028,33 @@
 
     const/4 v2, 0x0
 
-    .line 471
+    .line 472
     invoke-virtual {p1}, Landroid/view/View;->destroyDrawingCache()V
 
-    .line 472
+    .line 473
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/launcher3/common/base/view/CellLayoutChildren;
 
-    .line 473
+    .line 474
     .local v0, "parent":Lcom/android/launcher3/common/base/view/CellLayoutChildren;
     if-eqz v0, :cond_0
 
-    .line 474
+    .line 475
     invoke-virtual {v0, p2}, Lcom/android/launcher3/common/base/view/CellLayoutChildren;->removeView(Landroid/view/View;)V
 
-    .line 476
+    .line 477
     :cond_0
     iput-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mPrvHostView:Landroid/widget/FrameLayout;
 
-    .line 477
+    .line 478
     iput-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mAnimationSet:Landroid/animation/AnimatorSet;
 
     move-object v1, p1
 
-    .line 478
+    .line 479
     check-cast v1, Landroid/appwidget/AppWidgetHostView;
 
     invoke-virtual {v1, v2}, Landroid/appwidget/AppWidgetHostView;->getChildAt(I)Landroid/view/View;
@@ -1063,7 +1063,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 479
+    .line 480
     check-cast p1, Landroid/appwidget/AppWidgetHostView;
 
     .end local p1    # "origView":Landroid/view/View;
@@ -1075,7 +1075,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setAlpha(F)V
 
-    .line 480
+    .line 481
     :cond_1
     return-void
 .end method
@@ -1090,7 +1090,7 @@
 
     const/4 v10, 0x0
 
-    .line 675
+    .line 676
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1099,7 +1099,7 @@
 
     move-result-object v0
 
-    .line 676
+    .line 677
     .local v0, "cp":Landroid/content/ContentResolver;
     new-array v2, v9, [Ljava/lang/String;
 
@@ -1107,7 +1107,7 @@
 
     aput-object v1, v2, v10
 
-    .line 679
+    .line 680
     .local v2, "projection":[Ljava/lang/String;
     sget-object v1, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->WETHER_SETTING_INFO_URI:Landroid/net/Uri;
 
@@ -1119,15 +1119,15 @@
 
     move-result-object v6
 
-    .line 680
+    .line 681
     .local v6, "cursor":Landroid/database/Cursor;
     const/4 v8, 0x0
 
-    .line 681
+    .line 682
     .local v8, "value":I
     if-eqz v6, :cond_1
 
-    .line 683
+    .line 684
     :try_start_0
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -1135,7 +1135,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 686
+    .line 687
     const/4 v1, 0x0
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getInt(I)I
@@ -1145,11 +1145,11 @@
 
     move-result v8
 
-    .line 691
+    .line 692
     :cond_0
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 694
+    .line 695
     :cond_1
     :goto_0
     if-eq v8, v9, :cond_2
@@ -1159,11 +1159,11 @@
     :goto_1
     return v1
 
-    .line 688
+    .line 689
     :catch_0
     move-exception v7
 
-    .line 689
+    .line 690
     .local v7, "e":Ljava/lang/Exception;
     :try_start_1
     sget-object v1, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->TAG:Ljava/lang/String;
@@ -1194,7 +1194,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 691
+    .line 692
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
     goto :goto_0
@@ -1210,7 +1210,7 @@
     :cond_2
     move v1, v10
 
-    .line 694
+    .line 695
     goto :goto_1
 .end method
 
@@ -1269,12 +1269,12 @@
     .param p3, "isUp"    # Z
 
     .prologue
-    .line 419
+    .line 420
     invoke-virtual {p1}, Landroid/appwidget/AppWidgetHostView;->getScaleY()F
 
     move-result v1
 
-    .line 420
+    .line 421
     .local v1, "currentScaleY":F
     invoke-virtual {p1}, Landroid/appwidget/AppWidgetHostView;->getHeight()I
 
@@ -1284,32 +1284,32 @@
 
     mul-float v0, v6, v1
 
-    .line 422
+    .line 423
     .local v0, "currentHeight":F
     const/4 v6, 0x0
 
     invoke-virtual {p2, v6}, Landroid/widget/FrameLayout;->setPivotX(F)V
 
-    .line 423
+    .line 424
     const/4 v6, 0x0
 
     invoke-virtual {p2, v6}, Landroid/widget/FrameLayout;->setPivotY(F)V
-
-    .line 424
-    iget-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
-
-    iget v6, v6, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F
-
-    invoke-virtual {p2, v6}, Landroid/widget/FrameLayout;->setScaleX(F)V
 
     .line 425
     iget-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
 
     iget v6, v6, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F
 
+    invoke-virtual {p2, v6}, Landroid/widget/FrameLayout;->setScaleX(F)V
+
+    .line 426
+    iget-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
+
+    iget v6, v6, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F
+
     invoke-virtual {p2, v6}, Landroid/widget/FrameLayout;->setScaleY(F)V
 
-    .line 427
+    .line 428
     const/4 v6, 0x0
 
     invoke-virtual {p2, v6}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
@@ -1343,32 +1343,32 @@
     :goto_0
     aput v6, v11, v12
 
-    .line 428
+    .line 429
     invoke-static {v10, v11}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
     move-result-object v6
 
     aput-object v6, v8, v9
 
-    .line 427
+    .line 428
     invoke-static {v7, v8}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object v6
 
     const-wide/16 v8, 0xfa
 
-    .line 429
+    .line 430
     invoke-virtual {v6, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     move-result-object v5
 
-    .line 430
+    .line 431
     .local v5, "prvTransAni":Landroid/animation/Animator;
     iget-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mSineInOut33:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v5, v6}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 432
+    .line 433
     const/4 v6, 0x0
 
     invoke-virtual {p1, v6}, Landroid/appwidget/AppWidgetHostView;->getChildAt(I)Landroid/view/View;
@@ -1401,32 +1401,32 @@
 
     aput v12, v10, v11
 
-    .line 433
+    .line 434
     invoke-static {v9, v10}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
     move-result-object v9
 
     aput-object v9, v7, v8
 
-    .line 432
+    .line 433
     invoke-static {v6, v7}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object v6
 
     const-wide/16 v8, 0xfa
 
-    .line 434
+    .line 435
     invoke-virtual {v6, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     move-result-object v3
 
-    .line 435
+    .line 436
     .local v3, "origTransAni":Landroid/animation/Animator;
     iget-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mSineInOut33:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v3, v6}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 437
+    .line 438
     const/4 v6, 0x0
 
     invoke-virtual {p2, v6}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
@@ -1447,32 +1447,32 @@
 
     fill-array-data v10, :array_0
 
-    .line 438
+    .line 439
     invoke-static {v9, v10}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
     move-result-object v9
 
     aput-object v9, v7, v8
 
-    .line 437
+    .line 438
     invoke-static {v6, v7}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object v6
 
     const-wide/16 v8, 0xfa
 
-    .line 438
+    .line 439
     invoke-virtual {v6, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     move-result-object v4
 
-    .line 439
+    .line 440
     .local v4, "prvAlphaAni":Landroid/animation/Animator;
     iget-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mSineInOut80:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v4, v6}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 441
+    .line 442
     const/4 v6, 0x0
 
     invoke-virtual {p1, v6}, Landroid/appwidget/AppWidgetHostView;->getChildAt(I)Landroid/view/View;
@@ -1493,39 +1493,39 @@
 
     fill-array-data v10, :array_1
 
-    .line 442
+    .line 443
     invoke-static {v9, v10}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
     move-result-object v9
 
     aput-object v9, v7, v8
 
-    .line 441
+    .line 442
     invoke-static {v6, v7}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object v6
 
     const-wide/16 v8, 0xfa
 
-    .line 442
+    .line 443
     invoke-virtual {v6, v8, v9}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     move-result-object v2
 
-    .line 443
+    .line 444
     .local v2, "origAlphaAni":Landroid/animation/Animator;
     iget-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mSineInOut80:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v2, v6}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 445
+    .line 446
     new-instance v6, Lcom/android/launcher3/home/LauncherAppWidgetHostView$2;
 
     invoke-direct {v6, p0, p1, p2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView$2;-><init>(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Landroid/appwidget/AppWidgetHostView;Landroid/widget/FrameLayout;)V
 
     invoke-virtual {v3, v6}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 464
+    .line 465
     const/4 v6, 0x0
 
     invoke-virtual {p1, v6}, Landroid/appwidget/AppWidgetHostView;->getChildAt(I)Landroid/view/View;
@@ -1536,14 +1536,14 @@
 
     invoke-virtual {v6, v7}, Landroid/view/View;->setAlpha(F)V
 
-    .line 466
+    .line 467
     new-instance v6, Landroid/animation/AnimatorSet;
 
     invoke-direct {v6}, Landroid/animation/AnimatorSet;-><init>()V
 
     iput-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mAnimationSet:Landroid/animation/AnimatorSet;
 
-    .line 467
+    .line 468
     iget-object v6, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mAnimationSet:Landroid/animation/AnimatorSet;
 
     const/4 v7, 0x4
@@ -1568,7 +1568,7 @@
 
     invoke-virtual {v6, v7}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
 
-    .line 468
+    .line 469
     return-void
 
     .end local v2    # "origAlphaAni":Landroid/animation/Animator;
@@ -1579,17 +1579,17 @@
     :cond_0
     move v6, v0
 
-    .line 427
+    .line 428
     goto/16 :goto_0
 
-    .line 432
+    .line 433
     .restart local v5    # "prvTransAni":Landroid/animation/Animator;
     :cond_1
     neg-float v0, v0
 
     goto/16 :goto_1
 
-    .line 437
+    .line 438
     nop
 
     :array_0
@@ -1598,7 +1598,7 @@
         0x0
     .end array-data
 
-    .line 441
+    .line 442
     :array_1
     .array-data 4
         0x0
@@ -1612,15 +1612,15 @@
     .locals 1
 
     .prologue
-    .line 560
+    .line 561
     invoke-super {p0}, Landroid/appwidget/AppWidgetHostView;->cancelLongPress()V
 
-    .line 561
+    .line 562
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mLongPressHelper:Lcom/android/launcher3/util/event/CheckLongPressHelper;
 
     invoke-virtual {v0}, Lcom/android/launcher3/util/event/CheckLongPressHelper;->cancelLongPress()V
 
-    .line 562
+    .line 563
     return-void
 .end method
 
@@ -1631,7 +1631,7 @@
     .param p3, "drawingTime"    # J
 
     .prologue
-    .line 276
+    .line 277
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mAnimationSet:Landroid/animation/AnimatorSet;
 
     if-eqz v0, :cond_0
@@ -1644,12 +1644,12 @@
 
     if-nez v0, :cond_0
 
-    .line 277
+    .line 278
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mAnimationSet:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
 
-    .line 279
+    .line 280
     :cond_0
     invoke-super {p0, p1, p2, p3, p4}, Landroid/appwidget/AppWidgetHostView;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
 
@@ -1662,12 +1662,12 @@
     .locals 3
 
     .prologue
-    .line 566
+    .line 567
     invoke-super {p0}, Landroid/appwidget/AppWidgetHostView;->getAppWidgetInfo()Landroid/appwidget/AppWidgetProviderInfo;
 
     move-result-object v0
 
-    .line 567
+    .line 568
     .local v0, "info":Landroid/appwidget/AppWidgetProviderInfo;
     if-eqz v0, :cond_0
 
@@ -1675,7 +1675,7 @@
 
     if-nez v1, :cond_0
 
-    .line 568
+    .line 569
     new-instance v1, Ljava/lang/IllegalStateException;
 
     const-string v2, "Launcher widget must have LauncherAppWidgetProviderInfo"
@@ -1684,7 +1684,7 @@
 
     throw v1
 
-    .line 571
+    .line 572
     :cond_0
     return-object v0
 .end method
@@ -1693,7 +1693,7 @@
     .locals 1
 
     .prologue
-    .line 589
+    .line 590
     const/high16 v0, 0x60000
 
     return v0
@@ -1721,7 +1721,7 @@
     .locals 1
 
     .prologue
-    .line 555
+    .line 556
     iget-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsGSB:Z
 
     return v0
@@ -1731,7 +1731,7 @@
     .locals 1
 
     .prologue
-    .line 551
+    .line 552
     iget-boolean v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsSetFlingOption:Z
 
     return v0
@@ -1741,7 +1741,7 @@
     .locals 1
 
     .prologue
-    .line 575
+    .line 576
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getAppWidgetInfo()Landroid/appwidget/AppWidgetProviderInfo;
 
     move-result-object v0
@@ -1755,7 +1755,7 @@
     .locals 1
 
     .prologue
-    .line 671
+    .line 672
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
 
     return-object v0
@@ -1801,10 +1801,10 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 284
+    .line 285
     invoke-super {p0}, Landroid/appwidget/AppWidgetHostView;->onAttachedToWindow()V
 
-    .line 285
+    .line 286
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1821,14 +1821,14 @@
 
     iput v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mSlop:F
 
-    .line 286
+    .line 287
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
-    .line 287
+    .line 288
     .local v1, "item":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     if-eqz v1, :cond_1
 
@@ -1846,12 +1846,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 288
+    .line 289
     iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
     if-nez v2, :cond_1
 
-    .line 289
+    .line 290
     new-instance v2, Landroid/view/GestureDetector;
 
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getContext()Landroid/content/Context;
@@ -1864,19 +1864,19 @@
 
     iput-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
-    .line 290
+    .line 291
     iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWeatherCityAddObserver:Landroid/database/ContentObserver;
 
     if-nez v2, :cond_0
 
-    .line 291
+    .line 292
     new-instance v2, Lcom/android/launcher3/home/LauncherAppWidgetHostView$WeatherCityAddObserver;
 
     invoke-direct {v2, p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView$WeatherCityAddObserver;-><init>(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)V
 
     iput-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWeatherCityAddObserver:Landroid/database/ContentObserver;
 
-    .line 292
+    .line 293
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1891,14 +1891,14 @@
 
     invoke-virtual {v2, v3, v5, v4}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 294
+    .line 295
     :cond_0
     invoke-direct {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->checkWeatherCount()V
 
-    .line 295
+    .line 296
     iput-boolean v5, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsSetFlingOption:Z
 
-    .line 299
+    .line 300
     :cond_1
     if-eqz v1, :cond_2
 
@@ -1916,10 +1916,10 @@
 
     if-eqz v2, :cond_2
 
-    .line 300
+    .line 301
     iput-boolean v5, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsAllowSwipe:Z
 
-    .line 303
+    .line 304
     :cond_2
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportGSAPreWarming()Z
 
@@ -1927,7 +1927,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 304
+    .line 305
     if-eqz v1, :cond_3
 
     const-string v2, "com.google.android.googlequicksearchbox"
@@ -1944,14 +1944,14 @@
 
     if-eqz v2, :cond_3
 
-    .line 305
+    .line 306
     iput-boolean v5, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsGSB:Z
 
-    .line 310
+    .line 311
     :cond_3
     if-eqz v1, :cond_4
 
-    .line 311
+    .line 312
     :try_start_0
     iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -1962,7 +1962,7 @@
     :goto_0
     iput-boolean v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
 
-    .line 312
+    .line 313
     iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
     if-nez v2, :cond_4
@@ -1975,19 +1975,19 @@
 
     if-nez v2, :cond_4
 
-    .line 313
+    .line 314
     new-instance v2, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;
 
     invoke-direct {v2, p0, p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;-><init>(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Lcom/android/launcher3/home/LauncherAppWidgetHostView;)V
 
     iput-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHierarchyChangeListener:Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;
 
-    .line 314
+    .line 315
     iget-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHierarchyChangeListener:Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;
 
     invoke-virtual {p0, v2}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
 
-    .line 315
+    .line 316
     sget-object v2, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -2012,12 +2012,12 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 321
+    .line 322
     :cond_4
     :goto_1
     return-void
 
-    .line 311
+    .line 312
     :cond_5
     invoke-direct {p0, p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->findScrollView(Landroid/view/View;)Z
     :try_end_0
@@ -2027,11 +2027,11 @@
 
     goto :goto_0
 
-    .line 318
+    .line 319
     :catch_0
     move-exception v0
 
-    .line 319
+    .line 320
     .local v0, "e":Ljava/lang/Exception;
     sget-object v2, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->TAG:Ljava/lang/String;
 
@@ -2050,23 +2050,23 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 345
+    .line 346
     invoke-super {p0}, Landroid/appwidget/AppWidgetHostView;->onDetachedFromWindow()V
 
-    .line 347
+    .line 348
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
     if-eqz v0, :cond_0
 
-    .line 348
+    .line 349
     iput-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mGestureDetector:Landroid/view/GestureDetector;
 
-    .line 349
+    .line 350
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWeatherCityAddObserver:Landroid/database/ContentObserver;
 
     if-eqz v0, :cond_0
 
-    .line 350
+    .line 351
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2079,10 +2079,10 @@
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 351
+    .line 352
     iput-object v2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mWeatherCityAddObserver:Landroid/database/ContentObserver;
 
-    .line 354
+    .line 355
     :cond_0
     return-void
 .end method
@@ -2117,7 +2117,7 @@
 
     move v6, v2
 
-    .line 254
+    .line 255
     :cond_0
     :goto_0
     return v6
@@ -2318,14 +2318,21 @@
 
     invoke-virtual/range {v1 .. v6}, Lcom/android/launcher3/util/logging/GSIMLogging;->insertLogging(Ljava/lang/String;Ljava/lang/String;JZ)V
 
-    .line 236
+    .line 233
+    invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/launcher3/util/logging/SALogging;->insertGoogleSearchLaunchCount()V
+
+    .line 237
     :cond_8
     :pswitch_2
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mLongPressHelper:Lcom/android/launcher3/util/event/CheckLongPressHelper;
 
     invoke-virtual {v1}, Lcom/android/launcher3/util/event/CheckLongPressHelper;->cancelLongPress()V
 
-    .line 237
+    .line 238
     iget-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingUp:Z
 
     if-nez v1, :cond_9
@@ -2334,7 +2341,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 238
+    .line 239
     :cond_9
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getTag()Ljava/lang/Object;
 
@@ -2342,11 +2349,11 @@
 
     check-cast v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
-    .line 239
+    .line 240
     .local v0, "item":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     iget-object v8, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->hostView:Landroid/appwidget/AppWidgetHostView;
 
-    .line 240
+    .line 241
     .local v8, "origView":Landroid/appwidget/AppWidgetHostView;
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mAnimationSet:Landroid/animation/AnimatorSet;
 
@@ -2360,12 +2367,12 @@
 
     if-eqz v1, :cond_a
 
-    .line 241
+    .line 242
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mAnimationSet:Landroid/animation/AnimatorSet;
 
     invoke-virtual {v1}, Landroid/animation/AnimatorSet;->cancel()V
 
-    .line 243
+    .line 244
     :cond_a
     iget-boolean v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingUp:Z
 
@@ -2375,7 +2382,7 @@
 
     goto/16 :goto_0
 
-    .line 247
+    .line 248
     .end local v0    # "item":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     .end local v8    # "origView":Landroid/appwidget/AppWidgetHostView;
     :pswitch_3
@@ -2395,7 +2402,7 @@
 
     if-nez v1, :cond_0
 
-    .line 248
+    .line 249
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mLongPressHelper:Lcom/android/launcher3/util/event/CheckLongPressHelper;
 
     invoke-virtual {v1}, Lcom/android/launcher3/util/event/CheckLongPressHelper;->cancelLongPress()V
@@ -2403,6 +2410,8 @@
     goto/16 :goto_0
 
     .line 210
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -2416,7 +2425,7 @@
     .locals 1
 
     .prologue
-    .line 580
+    .line 581
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mLongPressHelper:Lcom/android/launcher3/util/event/CheckLongPressHelper;
 
     invoke-virtual {v0}, Lcom/android/launcher3/util/event/CheckLongPressHelper;->hasPerformedLongPress()Z
@@ -2425,12 +2434,12 @@
 
     if-nez v0, :cond_0
 
-    .line 583
+    .line 584
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mLongPressHelper:Lcom/android/launcher3/util/event/CheckLongPressHelper;
 
     invoke-virtual {v0}, Lcom/android/launcher3/util/event/CheckLongPressHelper;->cancelLongPress()V
 
-    .line 585
+    .line 586
     :cond_0
     return-void
 .end method
@@ -2440,21 +2449,21 @@
     .param p1, "ev"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 260
+    .line 261
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 271
+    .line 272
     :cond_0
     :goto_0
     const/4 v0, 0x0
 
     return v0
 
-    .line 263
+    .line 264
     :pswitch_0
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mLongPressHelper:Lcom/android/launcher3/util/event/CheckLongPressHelper;
 
@@ -2462,7 +2471,7 @@
 
     goto :goto_0
 
-    .line 266
+    .line 267
     :pswitch_1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -2480,14 +2489,14 @@
 
     if-nez v0, :cond_0
 
-    .line 267
+    .line 268
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mLongPressHelper:Lcom/android/launcher3/util/event/CheckLongPressHelper;
 
     invoke-virtual {v0}, Lcom/android/launcher3/util/event/CheckLongPressHelper;->cancelLongPress()V
 
     goto :goto_0
 
-    .line 260
+    .line 261
     nop
 
     :pswitch_data_0
@@ -2505,10 +2514,10 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 603
+    .line 604
     iput-object p1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
 
-    .line 604
+    .line 605
     sget-object v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2563,7 +2572,7 @@
 
     move-result-object v1
 
-    .line 607
+    .line 608
     invoke-virtual {p0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->getAppWidgetId()I
 
     move-result v2
@@ -2582,30 +2591,30 @@
 
     move-result-object v1
 
-    .line 604
+    .line 605
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 609
+    .line 610
     invoke-virtual {p0, v3}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setPivotX(F)V
 
-    .line 610
-    invoke-virtual {p0, v3}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setPivotY(F)V
-
     .line 611
-    iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
-
-    iget v0, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F
-
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setScaleX(F)V
+    invoke-virtual {p0, v3}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setPivotY(F)V
 
     .line 612
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
 
     iget v0, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F
 
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setScaleY(F)V
+    invoke-virtual {p0, v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setScaleX(F)V
 
     .line 613
+    iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mResizeResult:Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;
+
+    iget v0, v0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$ResizeResult;->scaleToResize:F
+
+    invoke-virtual {p0, v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->setScaleY(F)V
+
+    .line 614
     return-void
 .end method
 

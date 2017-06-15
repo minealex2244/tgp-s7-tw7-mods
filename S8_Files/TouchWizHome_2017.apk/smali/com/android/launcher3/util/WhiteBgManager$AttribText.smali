@@ -33,16 +33,16 @@
 
     const/4 v0, 0x0
 
-    .line 136
+    .line 144
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sRadius:F
 
-    .line 137
+    .line 145
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sDy:F
 
-    .line 138
+    .line 146
     sput v1, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sShadowColor:I
 
-    .line 139
+    .line 147
     sput v1, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sColor:I
 
     return-void
@@ -52,7 +52,7 @@
     .locals 0
 
     .prologue
-    .line 135
+    .line 143
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,10 +65,10 @@
     .param p2, "isFollowingTheme"    # Z
 
     .prologue
-    .line 142
+    .line 150
     if-eqz p1, :cond_0
 
-    .line 143
+    .line 151
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -83,7 +83,7 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sRadius:F
 
-    .line 144
+    .line 152
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -98,7 +98,7 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sDy:F
 
-    .line 145
+    .line 153
     const v0, 0x7f0d0030
 
     invoke-static {p0, v0}, Landroid/support/v4/content/ContextCompat;->getColor(Landroid/content/Context;I)I
@@ -107,7 +107,7 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sShadowColor:I
 
-    .line 146
+    .line 154
     const v0, 0x7f0d002e
 
     invoke-static {p0, v0}, Landroid/support/v4/content/ContextCompat;->getColor(Landroid/content/Context;I)I
@@ -116,11 +116,11 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sColor:I
 
-    .line 158
+    .line 166
     :goto_0
     return-void
 
-    .line 148
+    .line 156
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -136,7 +136,7 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sRadius:F
 
-    .line 149
+    .line 157
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -151,10 +151,10 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sDy:F
 
-    .line 150
+    .line 158
     if-eqz p2, :cond_1
 
-    .line 151
+    .line 159
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
     move-result-object v0
@@ -171,7 +171,7 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sShadowColor:I
 
-    .line 152
+    .line 160
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
     move-result-object v0
@@ -190,7 +190,7 @@
 
     goto :goto_0
 
-    .line 154
+    .line 162
     :cond_1
     const v0, 0x7f0d002f
 
@@ -200,7 +200,7 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribText;->sShadowColor:I
 
-    .line 155
+    .line 163
     const v0, 0x7f0d002d
 
     invoke-static {p0, v0}, Landroid/support/v4/content/ContextCompat;->getColor(Landroid/content/Context;I)I

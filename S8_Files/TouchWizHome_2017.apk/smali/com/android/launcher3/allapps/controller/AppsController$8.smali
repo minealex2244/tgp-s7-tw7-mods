@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1119
+    .line 1127
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$8;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$8;->val$updates:Ljava/util/HashSet;
@@ -56,7 +56,7 @@
 
     const/4 v5, 0x0
 
-    .line 1122
+    .line 1130
     instance-of v6, p1, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v6, :cond_0
@@ -67,7 +67,7 @@
 
     iget-object v6, p0, Lcom/android/launcher3/allapps/controller/AppsController$8;->val$updates:Ljava/util/HashSet;
 
-    .line 1123
+    .line 1131
     invoke-virtual {v6, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
     move-result v6
@@ -76,22 +76,22 @@
 
     move-object v0, p1
 
-    .line 1124
+    .line 1132
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
     .local v0, "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     move-object v1, p2
 
-    .line 1125
+    .line 1133
     check-cast v1, Lcom/android/launcher3/common/view/IconView;
 
-    .line 1126
+    .line 1134
     .local v1, "iconView":Lcom/android/launcher3/common/view/IconView;
     invoke-virtual {v1}, Lcom/android/launcher3/common/view/IconView;->getIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
-    .line 1127
+    .line 1135
     .local v2, "oldIcon":Landroid/graphics/drawable/Drawable;
     instance-of v6, v2, Lcom/android/launcher3/common/drawable/PreloadIconDrawable;
 
@@ -99,7 +99,7 @@
 
     check-cast v2, Lcom/android/launcher3/common/drawable/PreloadIconDrawable;
 
-    .line 1128
+    .line 1136
     .end local v2    # "oldIcon":Landroid/graphics/drawable/Drawable;
     invoke-virtual {v2}, Lcom/android/launcher3/common/drawable/PreloadIconDrawable;->hasNotCompleted()Z
 
@@ -109,7 +109,7 @@
 
     move v3, v4
 
-    .line 1129
+    .line 1137
     .local v3, "oldPromiseState":Z
     :goto_0
     invoke-virtual {v0}, Lcom/android/launcher3/common/base/item/IconInfo;->isPromise()Z
@@ -121,7 +121,7 @@
     :goto_1
     invoke-virtual {v1, v0, v4}, Lcom/android/launcher3/common/view/IconView;->applyFromApplicationInfo(Lcom/android/launcher3/common/base/item/IconInfo;Z)V
 
-    .line 1131
+    .line 1139
     instance-of v4, p3, Lcom/android/launcher3/folder/view/FolderIconView;
 
     if-eqz v4, :cond_0
@@ -134,14 +134,14 @@
 
     iget-object v4, p0, Lcom/android/launcher3/allapps/controller/AppsController$8;->val$folderIconsToRefresh:Ljava/util/ArrayList;
 
-    .line 1133
+    .line 1141
     invoke-virtual {v4, p3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 1134
+    .line 1142
     iget-object v4, p0, Lcom/android/launcher3/allapps/controller/AppsController$8;->val$folderIconsToRefresh:Ljava/util/ArrayList;
 
     check-cast p3, Lcom/android/launcher3/folder/view/FolderIconView;
@@ -149,7 +149,7 @@
     .end local p3    # "parent":Landroid/view/View;
     invoke-virtual {v4, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1137
+    .line 1145
     .end local v0    # "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     .end local v1    # "iconView":Lcom/android/launcher3/common/view/IconView;
     .end local v3    # "oldPromiseState":Z
@@ -162,13 +162,13 @@
     :cond_1
     move v3, v5
 
-    .line 1128
+    .line 1136
     goto :goto_0
 
     .restart local v3    # "oldPromiseState":Z
     :cond_2
     move v4, v5
 
-    .line 1129
+    .line 1137
     goto :goto_1
 .end method

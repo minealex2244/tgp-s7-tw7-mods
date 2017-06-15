@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     .prologue
-    .line 228
+    .line 237
     iput-object p1, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$2;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     iput-boolean p2, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$2;->val$needNeutralButton:Z
@@ -47,25 +47,25 @@
     .param p2, "arg1"    # I
 
     .prologue
-    .line 231
+    .line 240
     iget-boolean v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$2;->val$needNeutralButton:Z
 
     if-eqz v0, :cond_0
 
-    .line 232
+    .line 241
     invoke-static {}, Lcom/android/launcher3/common/model/FavoritesProvider;->getInstance()Lcom/android/launcher3/common/model/FavoritesProvider;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/model/FavoritesProvider;->copyFavoritesForHomeOnly()V
 
-    .line 234
+    .line 243
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$2;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     # invokes: Lcom/android/launcher3/home/HomeModeChangeActivity;->setHomeScreenMode()V
     invoke-static {v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->access$300(Lcom/android/launcher3/home/HomeModeChangeActivity;)V
 
-    .line 235
+    .line 244
     return-void
 .end method

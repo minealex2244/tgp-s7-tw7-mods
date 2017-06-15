@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderIconView;
 
     .prologue
-    .line 598
+    .line 603
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$2;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     iput-object p2, p0, Lcom/android/launcher3/folder/view/FolderIconView$2;->val$item:Lcom/android/launcher3/common/base/item/IconInfo;
@@ -49,7 +49,7 @@
     .locals 2
 
     .prologue
-    .line 600
+    .line 605
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$2;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderIconView;->mHiddenItems:Ljava/util/ArrayList;
@@ -61,23 +61,23 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 602
+    .line 607
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$2;->this$0:Lcom/android/launcher3/folder/view/FolderIconView;
 
     # invokes: Lcom/android/launcher3/folder/view/FolderIconView;->drawPreviews()V
     invoke-static {v0}, Lcom/android/launcher3/folder/view/FolderIconView;->access$300(Lcom/android/launcher3/folder/view/FolderIconView;)V
 
-    .line 603
+    .line 608
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$2;->val$postDropRunnable:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
-    .line 604
+    .line 609
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$2;->val$postDropRunnable:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 606
+    .line 611
     :cond_0
     return-void
 .end method

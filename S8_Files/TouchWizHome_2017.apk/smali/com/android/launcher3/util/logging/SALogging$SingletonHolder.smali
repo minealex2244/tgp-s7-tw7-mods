@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 94
+    .line 105
     new-instance v0, Lcom/android/launcher3/util/logging/SALogging;
 
     invoke-direct {v0}, Lcom/android/launcher3/util/logging/SALogging;-><init>()V
@@ -37,7 +37,7 @@
     .locals 0
 
     .prologue
-    .line 92
+    .line 103
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +47,7 @@
     .locals 1
 
     .prologue
-    .line 92
+    .line 103
     sget-object v0, Lcom/android/launcher3/util/logging/SALogging$SingletonHolder;->sSALoggingInstance:Lcom/android/launcher3/util/logging/SALogging;
 
     return-object v0

@@ -22,14 +22,14 @@
     .line 13
     packed-switch p0, :pswitch_data_0
 
-    .line 84
+    .line 87
     sget-object v1, Lcom/android/launcher3/executor/ExecutorState;->NONE:Lcom/android/launcher3/executor/ExecutorState;
 
     invoke-virtual {v1}, Lcom/android/launcher3/executor/ExecutorState;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 88
+    .line 91
     .local v0, "stateId":Ljava/lang/String;
     :goto_0
     return-object v0
@@ -333,6 +333,19 @@
     .restart local v0    # "stateId":Ljava/lang/String;
     goto/16 :goto_0
 
+    .line 84
+    .end local v0    # "stateId":Ljava/lang/String;
+    :pswitch_17
+    sget-object v1, Lcom/android/launcher3/executor/ExecutorState;->HOME_SETTINGS_APPS_GRID_SETTING_VIEW:Lcom/android/launcher3/executor/ExecutorState;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/executor/ExecutorState;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 85
+    .restart local v0    # "stateId":Ljava/lang/String;
+    goto/16 :goto_0
+
     .line 13
     :pswitch_data_0
     .packed-switch 0x1
@@ -359,5 +372,6 @@
         :pswitch_15
         :pswitch_16
         :pswitch_10
+        :pswitch_17
     .end packed-switch
 .end method

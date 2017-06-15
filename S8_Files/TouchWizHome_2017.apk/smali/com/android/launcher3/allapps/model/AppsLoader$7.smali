@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 638
+    .line 639
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$7;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$7;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
@@ -49,7 +49,7 @@
     .locals 4
 
     .prologue
-    .line 640
+    .line 641
     iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$7;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iget-object v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$7;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
@@ -61,14 +61,14 @@
 
     move-result-object v0
 
-    .line 641
+    .line 642
     .local v0, "callbacks":Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
     if-eqz v0, :cond_0
 
-    .line 642
+    .line 643
     invoke-interface {v0}, Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;->startBinding()V
 
-    .line 644
+    .line 645
     :cond_0
     return-void
 .end method

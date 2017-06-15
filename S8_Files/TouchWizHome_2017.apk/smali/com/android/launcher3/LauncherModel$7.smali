@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/LauncherModel;
 
     .prologue
-    .line 1233
+    .line 1237
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$7;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iput-object p2, p0, Lcom/android/launcher3/LauncherModel$7;->val$updateItems:Ljava/util/ArrayList;
@@ -47,7 +47,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1236
+    .line 1240
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$7;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
@@ -56,6 +56,6 @@
 
     invoke-virtual {v0, v1, v2, v2}, Lcom/android/launcher3/allapps/model/AppsLoader;->addViewAndUpdateItemInfoToDb(Ljava/util/ArrayList;ZZ)V
 
-    .line 1237
+    .line 1241
     return-void
 .end method

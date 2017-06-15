@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1499
+    .line 1507
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$12;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 2
 
     .prologue
-    .line 1502
+    .line 1510
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$12;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     # getter for: Lcom/android/launcher3/allapps/controller/AppsController;->mAppsPagedView:Lcom/android/launcher3/allapps/view/AppsPagedView;
@@ -64,6 +64,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/allapps/view/AppsPagedView;->snapToPageImmediately(I)V
 
-    .line 1503
+    .line 1511
     return-void
 .end method

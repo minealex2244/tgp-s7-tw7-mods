@@ -159,7 +159,7 @@
 
     const/4 v1, 0x2
 
-    .line 2078
+    .line 2081
     const/4 v0, 0x7
 
     new-array v0, v0, [I
@@ -168,14 +168,14 @@
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->AppOrder:[I
 
-    .line 2188
+    .line 2191
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->Extra:[I
 
-    .line 2257
+    .line 2260
     const/16 v0, 0xf
 
     new-array v0, v0, [I
@@ -184,28 +184,28 @@
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->Favorite:[I
 
-    .line 2477
+    .line 2480
     new-array v0, v1, [I
 
     fill-array-data v0, :array_3
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->Hotseat:[I
 
-    .line 2520
+    .line 2523
     new-array v0, v1, [I
 
     fill-array-data v0, :array_4
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->IconView:[I
 
-    .line 2576
+    .line 2579
     new-array v0, v1, [I
 
     fill-array-data v0, :array_5
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->Include:[I
 
-    .line 2609
+    .line 2612
     new-array v0, v3, [I
 
     const v1, 0x7f010016
@@ -214,7 +214,7 @@
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->InsettableFrameLayout_Layout:[I
 
-    .line 2636
+    .line 2639
     new-array v0, v3, [I
 
     const v1, 0x7f010017
@@ -223,14 +223,14 @@
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->PageIndicator:[I
 
-    .line 2667
+    .line 2670
     new-array v0, v4, [I
 
     fill-array-data v0, :array_6
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->PagedView:[I
 
-    .line 2742
+    .line 2745
     const/16 v0, 0xb
 
     new-array v0, v0, [I
@@ -239,7 +239,7 @@
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->RecyclerView:[I
 
-    .line 2885
+    .line 2888
     const/4 v0, 0x4
 
     new-array v0, v0, [I
@@ -248,7 +248,7 @@
 
     sput-object v0, Lcom/sec/android/app/launcher/R$styleable;->WidgetPageLayout:[I
 
-    .line 2966
+    .line 2969
     new-array v0, v4, [I
 
     fill-array-data v0, :array_9
@@ -257,7 +257,7 @@
 
     return-void
 
-    .line 2078
+    .line 2081
     nop
 
     :array_0
@@ -271,14 +271,14 @@
         0x7f010011
     .end array-data
 
-    .line 2188
+    .line 2191
     :array_1
     .array-data 4
         0x7f010001
         0x7f010002
     .end array-data
 
-    .line 2257
+    .line 2260
     :array_2
     .array-data 4
         0x7f010003
@@ -298,28 +298,28 @@
         0x7f010011
     .end array-data
 
-    .line 2477
+    .line 2480
     :array_3
     .array-data 4
         0x7f010029
         0x7f01002a
     .end array-data
 
-    .line 2520
+    .line 2523
     :array_4
     .array-data 4
         0x7f010012
         0x7f010013
     .end array-data
 
-    .line 2576
+    .line 2579
     :array_5
     .array-data 4
         0x7f010014
         0x7f010015
     .end array-data
 
-    .line 2667
+    .line 2670
     :array_6
     .array-data 4
         0x7f010018
@@ -327,7 +327,7 @@
         0x7f01001a
     .end array-data
 
-    .line 2742
+    .line 2745
     :array_7
     .array-data 4
         0x10100c4
@@ -343,7 +343,7 @@
         0x7f010023
     .end array-data
 
-    .line 2885
+    .line 2888
     :array_8
     .array-data 4
         0x7f010024
@@ -352,7 +352,7 @@
         0x7f010027
     .end array-data
 
-    .line 2966
+    .line 2969
     :array_9
     .array-data 4
         0x7f010028
@@ -365,7 +365,7 @@
     .locals 0
 
     .prologue
-    .line 2055
+    .line 2058
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

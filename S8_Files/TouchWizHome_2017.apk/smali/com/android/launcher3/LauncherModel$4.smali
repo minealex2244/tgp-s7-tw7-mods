@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/LauncherModel;
 
     .prologue
-    .line 1170
+    .line 1174
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$4;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iput-boolean p2, p0, Lcom/android/launcher3/LauncherModel$4;->val$enabled:Z
@@ -45,7 +45,7 @@
     .locals 3
 
     .prologue
-    .line 1173
+    .line 1177
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v0
@@ -54,12 +54,12 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/LauncherAppState;->setCloneItemEnabled(Z)V
 
-    .line 1174
+    .line 1178
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$4;->val$enabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 1175
+    .line 1179
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$4;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
@@ -75,11 +75,11 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/allapps/model/AppsLoader;->bindRemainedItems(Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 1179
+    .line 1183
     :goto_0
     return-void
 
-    .line 1177
+    .line 1181
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$4;->this$0:Lcom/android/launcher3/LauncherModel;
 

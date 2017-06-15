@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     .prologue
-    .line 356
+    .line 357
     iput-object p1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$1;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "arg0"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 390
+    .line 391
     const/4 v0, 0x0
 
     return v0
@@ -56,7 +56,7 @@
     .param p4, "velocityY"    # F
 
     .prologue
-    .line 359
+    .line 360
     const/4 v0, 0x0
 
     return v0
@@ -67,7 +67,7 @@
     .param p1, "arg0"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 386
+    .line 387
     return-void
 .end method
 
@@ -83,7 +83,7 @@
 
     const/4 v2, 0x0
 
-    .line 373
+    .line 374
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v0
@@ -105,12 +105,12 @@
 
     if-gez v0, :cond_1
 
-    .line 381
+    .line 382
     :cond_0
     :goto_0
     return v2
 
-    .line 377
+    .line 378
     :cond_1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
@@ -132,7 +132,7 @@
 
     if-lez v0, :cond_0
 
-    .line 378
+    .line 379
     iget-object v3, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$1;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
@@ -157,7 +157,7 @@
     # setter for: Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mIsScrollingUp:Z
     invoke-static {v3, v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$102(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
 
-    .line 379
+    .line 380
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$1;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     iget-object v3, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$1;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
@@ -178,13 +178,13 @@
     :cond_2
     move v0, v2
 
-    .line 378
+    .line 379
     goto :goto_1
 
     :cond_3
     move v1, v2
 
-    .line 379
+    .line 380
     goto :goto_2
 .end method
 
@@ -193,7 +193,7 @@
     .param p1, "arg0"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 369
+    .line 370
     return-void
 .end method
 
@@ -202,7 +202,7 @@
     .param p1, "arg0"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 364
+    .line 365
     const/4 v0, 0x0
 
     return v0

@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 2085
+    .line 2102
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$18;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
@@ -49,15 +49,15 @@
     .locals 6
 
     .prologue
-    .line 2087
+    .line 2104
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$18;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 2088
+    .line 2105
     .local v0, "cb":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
@@ -65,29 +65,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2089
-    iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
-
-    instance-of v2, v2, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
-
-    if-eqz v2, :cond_1
-
-    .line 2090
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-
-    iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
-
-    check-cast v2, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
-
-    invoke-interface {v3, v2}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindAppWidget(Lcom/android/launcher3/home/LauncherAppWidgetInfo;)V
-
-    .line 2104
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 2092
-    :cond_1
+    .line 2106
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     iget-wide v2, v2, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
@@ -96,9 +74,9 @@
 
     cmp-long v2, v2, v4
 
-    if-lez v2, :cond_3
+    if-lez v2, :cond_2
 
-    .line 2093
+    .line 2107
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$18;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -109,19 +87,19 @@
 
     move-result-object v1
 
-    .line 2094
+    .line 2108
     .local v1, "folder":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v2, v1, Lcom/android/launcher3/folder/FolderInfo;
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_1
 
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     instance-of v2, v2, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_1
 
-    .line 2095
+    .line 2109
     check-cast v1, Lcom/android/launcher3/folder/FolderInfo;
 
     .end local v1    # "folder":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -131,11 +109,14 @@
 
     invoke-virtual {v1, v2}, Lcom/android/launcher3/folder/FolderInfo;->add(Lcom/android/launcher3/common/base/item/IconInfo;)V
 
-    goto :goto_0
+    .line 2117
+    :cond_0
+    :goto_0
+    return-void
 
-    .line 2097
+    .line 2111
     .restart local v1    # "folder":Lcom/android/launcher3/common/base/item/ItemInfo;
-    :cond_2
+    :cond_1
     const-string v2, "HomeLoader"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -166,14 +147,14 @@
 
     goto :goto_0
 
-    .line 2100
+    .line 2114
     .end local v1    # "folder":Lcom/android/launcher3/common/base/item/ItemInfo;
-    :cond_3
+    :cond_2
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$18;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    const/4 v4, 0x0
+    const/4 v4, 0x1
 
     invoke-interface {v2, v3, v4}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindItem(Lcom/android/launcher3/common/base/item/ItemInfo;Z)V
 

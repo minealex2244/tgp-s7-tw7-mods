@@ -35,21 +35,21 @@
     .param p4, "overlayAlpha"    # I
 
     .prologue
-    .line 779
+    .line 784
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 780
+    .line 785
     iput p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;->transX:F
 
-    .line 781
+    .line 786
     iput p2, p0, Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;->transY:F
 
-    .line 782
+    .line 787
     iput p3, p0, Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;->scale:F
 
-    .line 783
+    .line 788
     iput p4, p0, Lcom/android/launcher3/folder/view/FolderIconView$PreviewItemDrawingParams;->overlayAlpha:I
 
-    .line 784
+    .line 789
     return-void
 .end method

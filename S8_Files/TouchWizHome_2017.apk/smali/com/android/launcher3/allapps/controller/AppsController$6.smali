@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1081
+    .line 1089
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$6;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$6;->val$updates:Ljava/util/HashSet;
@@ -48,7 +48,7 @@
     .param p3, "parent"    # Landroid/view/View;
 
     .prologue
-    .line 1084
+    .line 1092
     instance-of v1, p1, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v1, :cond_2
@@ -61,10 +61,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 1085
+    .line 1093
     move-object v0, p2
 
-    .line 1086
+    .line 1094
     .local v0, "iconView":Landroid/view/View;
     iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$6;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
@@ -74,7 +74,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1087
+    .line 1095
     iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$6;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iget-wide v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
@@ -83,31 +83,31 @@
 
     move-result-object v0
 
-    .line 1089
+    .line 1097
     :cond_0
     instance-of v1, v0, Lcom/android/launcher3/common/view/IconView;
 
     if-eqz v1, :cond_1
 
-    .line 1090
+    .line 1098
     check-cast v0, Lcom/android/launcher3/common/view/IconView;
 
     .end local v0    # "iconView":Landroid/view/View;
     invoke-virtual {v0}, Lcom/android/launcher3/common/view/IconView;->refreshBadge()V
 
-    .line 1092
+    .line 1100
     :cond_1
     instance-of v1, p3, Lcom/android/launcher3/folder/view/FolderIconView;
 
     if-eqz v1, :cond_2
 
-    .line 1093
+    .line 1101
     check-cast p3, Lcom/android/launcher3/folder/view/FolderIconView;
 
     .end local p3    # "parent":Landroid/view/View;
     invoke-virtual {p3}, Lcom/android/launcher3/folder/view/FolderIconView;->refreshBadge()V
 
-    .line 1097
+    .line 1105
     :cond_2
     const/4 v1, 0x0
 

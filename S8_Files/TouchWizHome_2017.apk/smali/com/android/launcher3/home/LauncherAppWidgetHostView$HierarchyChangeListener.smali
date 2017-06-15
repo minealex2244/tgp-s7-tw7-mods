@@ -29,15 +29,15 @@
     .param p2, "hostView"    # Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     .prologue
-    .line 509
+    .line 510
     iput-object p1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 510
+    .line 511
     iput-object p2, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->mHostView:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    .line 511
+    .line 512
     return-void
 .end method
 
@@ -49,7 +49,7 @@
     .param p2, "child"    # Landroid/view/View;
 
     .prologue
-    .line 515
+    .line 516
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     # getter for: Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
@@ -59,7 +59,7 @@
 
     if-nez v0, :cond_0
 
-    .line 516
+    .line 517
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
@@ -72,7 +72,7 @@
     # setter for: Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
     invoke-static {v0, v1}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$402(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
 
-    .line 518
+    .line 519
     :cond_0
     return-void
 .end method
@@ -83,7 +83,7 @@
     .param p2, "child"    # Landroid/view/View;
 
     .prologue
-    .line 522
+    .line 523
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     # getter for: Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
@@ -93,7 +93,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 523
+    .line 524
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     iget-object v1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$HierarchyChangeListener;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
@@ -108,7 +108,7 @@
     # setter for: Lcom/android/launcher3/home/LauncherAppWidgetHostView;->mHasScrollView:Z
     invoke-static {v0, v1}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$402(Lcom/android/launcher3/home/LauncherAppWidgetHostView;Z)Z
 
-    .line 525
+    .line 526
     :cond_0
     return-void
 .end method

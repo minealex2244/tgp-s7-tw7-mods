@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 105
+    .line 114
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$1;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$1;->val$application:Landroid/app/Application;
@@ -42,45 +42,89 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 4
 
     .prologue
-    .line 108
-    const-string v0, "Launcher.SALogging"
+    .line 117
+    const-string v1, "Launcher.SALogging"
 
-    const-string v1, "init SALog"
+    const-string v2, "init SALog"
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 109
-    iget-object v0, p0, Lcom/android/launcher3/util/logging/SALogging$1;->val$application:Landroid/app/Application;
+    .line 119
+    :try_start_0
+    iget-object v1, p0, Lcom/android/launcher3/util/logging/SALogging$1;->val$application:Landroid/app/Application;
 
-    new-instance v1, Lcom/samsung/context/sdk/samsunganalytics/Configuration;
+    new-instance v2, Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
-    invoke-direct {v1}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;-><init>()V
+    invoke-direct {v2}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;-><init>()V
 
-    const-string v2, "401-399-1029810"
+    const-string v3, "401-399-1029810"
 
-    .line 110
-    invoke-virtual {v1, v2}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->setTrackingId(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
+    .line 120
+    invoke-virtual {v2, v3}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->setTrackingId(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
-    move-result-object v1
+    move-result-object v2
 
-    const-string v2, "8.11"
+    const-string v3, "8.12"
 
-    .line 111
-    invoke-virtual {v1, v2}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->setVersion(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
+    .line 121
+    invoke-virtual {v2, v3}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->setVersion(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 112
-    invoke-virtual {v1}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->enableAutoDeviceId()Lcom/samsung/context/sdk/samsunganalytics/Configuration;
+    .line 122
+    invoke-virtual {v2}, Lcom/samsung/context/sdk/samsunganalytics/Configuration;->enableAutoDeviceId()Lcom/samsung/context/sdk/samsunganalytics/Configuration;
 
-    move-result-object v1
+    move-result-object v2
 
-    .line 109
-    invoke-static {v0, v1}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->setConfiguration(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
+    .line 119
+    invoke-static {v1, v2}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->setConfiguration(Landroid/app/Application;Lcom/samsung/context/sdk/samsunganalytics/Configuration;)V
 
-    .line 113
+    .line 123
+    iget-object v1, p0, Lcom/android/launcher3/util/logging/SALogging$1;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    # invokes: Lcom/android/launcher3/util/logging/SALogging;->registerStatusPref()V
+    invoke-static {v1}, Lcom/android/launcher3/util/logging/SALogging;->access$100(Lcom/android/launcher3/util/logging/SALogging;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 127
+    :goto_0
     return-void
+
+    .line 124
+    :catch_0
+    move-exception v0
+
+    .line 125
+    .local v0, "e":Ljava/lang/Exception;
+    const-string v1, "Launcher.SALogging"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "init : Exception "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
 .end method

@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/LauncherModel;
 
     .prologue
-    .line 1208
+    .line 1212
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$6;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iput-object p2, p0, Lcom/android/launcher3/LauncherModel$6;->val$updateItems:Ljava/util/ArrayList;
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 1211
+    .line 1215
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$6;->val$updateItems:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -54,14 +54,14 @@
 
     if-nez v0, :cond_1
 
-    .line 1212
+    .line 1216
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1213
+    .line 1217
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v0
@@ -72,7 +72,7 @@
 
     if-nez v0, :cond_2
 
-    .line 1214
+    .line 1218
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$6;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -82,12 +82,12 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/allapps/model/AppsLoader;->updateItemsOnlyDB(Ljava/util/ArrayList;)V
 
-    .line 1219
+    .line 1223
     :cond_1
     :goto_0
     return-void
 
-    .line 1216
+    .line 1220
     :cond_2
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$6;->this$0:Lcom/android/launcher3/LauncherModel;
 

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 962
+    .line 1026
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$17;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 3
 
     .prologue
-    .line 965
+    .line 1029
     iget-object v0, p0, Lcom/android/launcher3/util/logging/SALogging$17;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     sget-object v1, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
@@ -58,14 +58,14 @@
 
     sget-object v2, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
-    .line 966
+    .line 1030
     invoke-static {v2}, Lcom/android/launcher3/Utilities;->getHomeDefaultPageKey(Landroid/content/Context;)I
 
     move-result v2
 
-    .line 965
+    .line 1029
     invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
 
-    .line 967
+    .line 1031
     return-void
 .end method

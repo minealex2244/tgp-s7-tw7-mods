@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 926
+    .line 941
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$14;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 929
+    .line 944
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$14;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     const/4 v1, 0x0
@@ -47,12 +47,12 @@
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mViewState:I
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$102(Lcom/android/launcher3/folder/view/FolderView;I)I
 
-    .line 930
+    .line 945
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$14;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-virtual {v0}, Lcom/android/launcher3/folder/view/FolderView;->onCloseComplete()V
 
-    .line 931
+    .line 946
     return-void
 .end method
 
@@ -61,14 +61,14 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 935
+    .line 950
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$14;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     const/16 v1, 0x20
 
     iget-object v2, p0, Lcom/android/launcher3/folder/view/FolderView$14;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
-    .line 936
+    .line 951
     invoke-virtual {v2}, Lcom/android/launcher3/folder/view/FolderView;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -79,11 +79,11 @@
 
     move-result-object v2
 
-    .line 935
+    .line 950
     # invokes: Lcom/android/launcher3/folder/view/FolderView;->sendCustomAccessibilityEvent(ILjava/lang/String;)V
     invoke-static {v0, v1, v2}, Lcom/android/launcher3/folder/view/FolderView;->access$1000(Lcom/android/launcher3/folder/view/FolderView;ILjava/lang/String;)V
 
-    .line 937
+    .line 952
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$14;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     const/4 v1, 0x1
@@ -91,6 +91,6 @@
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mViewState:I
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$102(Lcom/android/launcher3/folder/view/FolderView;I)I
 
-    .line 938
+    .line 953
     return-void
 .end method

@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 2571
+    .line 2579
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$22;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$22;->val$data:Lcom/android/launcher3/common/stage/StageEntry;
@@ -45,7 +45,7 @@
     .locals 3
 
     .prologue
-    .line 2574
+    .line 2582
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$22;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     # getter for: Lcom/android/launcher3/allapps/controller/AppsController;->mLauncher:Lcom/android/launcher3/Launcher;
@@ -63,6 +63,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/stage/StageManager;->startStage(ILcom/android/launcher3/common/stage/StageEntry;)V
 
-    .line 2575
+    .line 2583
     return-void
 .end method

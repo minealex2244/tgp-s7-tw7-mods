@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     .prologue
-    .line 377
+    .line 382
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$2;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     iput p2, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$2;->val$previewSize:I
@@ -48,7 +48,7 @@
     .prologue
     const/high16 v4, 0x3f800000    # 1.0f
 
-    .line 379
+    .line 384
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -59,7 +59,7 @@
 
     move-result v0
 
-    .line 380
+    .line 385
     .local v0, "percent":F
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$2;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
@@ -79,21 +79,21 @@
 
     iput v2, v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mInnerRingSize:F
 
-    .line 381
+    .line 386
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$2;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     iget-object v1, v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     if-eqz v1, :cond_0
 
-    .line 382
+    .line 387
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$2;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     iget-object v1, v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/CellLayout;->invalidate()V
 
-    .line 384
+    .line 389
     :cond_0
     return-void
 .end method

@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/android/launcher3/LauncherModel$8;
 
     .prologue
-    .line 1301
+    .line 1305
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$8$1;->this$1:Lcom/android/launcher3/LauncherModel$8;
 
     iput-object p2, p0, Lcom/android/launcher3/LauncherModel$8$1;->val$badgeItems:Ljava/util/ArrayList;
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 1304
+    .line 1308
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$8$1;->this$1:Lcom/android/launcher3/LauncherModel$8;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel$8;->this$0:Lcom/android/launcher3/LauncherModel;
@@ -54,6 +54,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/LauncherModel;->onBadgeBindingCompleted(Ljava/util/ArrayList;)V
 
-    .line 1305
+    .line 1309
     return-void
 .end method

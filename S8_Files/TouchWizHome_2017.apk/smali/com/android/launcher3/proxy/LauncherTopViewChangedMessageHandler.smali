@@ -14,6 +14,8 @@
 
 .field public static final LAUNCHER_VIEW_APPS_FOLDER_ADD_ICON_SEARCH_VIEW:I = 0xe
 
+.field public static final LAUNCHER_VIEW_APPS_GRID_CHANGE:I = 0x18
+
 .field public static final LAUNCHER_VIEW_APPS_TIDY_UP_PREVIEW_VIEW:I = 0xa
 
 .field public static final LAUNCHER_VIEW_HIDE_APPS:I = 0x8
@@ -71,17 +73,17 @@
     .locals 1
 
     .prologue
-    .line 34
+    .line 35
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 32
+    .line 33
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->mOnLauncherTopViewChangedListeners:Ljava/util/ArrayList;
 
-    .line 35
+    .line 36
     return-void
 .end method
 
@@ -92,12 +94,12 @@
     .param p1, "l"    # Lcom/android/launcher3/proxy/OnLauncherTopViewChangedListener;
 
     .prologue
-    .line 44
+    .line 45
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->mOnLauncherTopViewChangedListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 45
+    .line 46
     return-void
 .end method
 
@@ -106,7 +108,7 @@
     .param p1, "topViewId"    # I
 
     .prologue
-    .line 38
+    .line 39
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->mOnLauncherTopViewChangedListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -126,13 +128,13 @@
 
     check-cast v0, Lcom/android/launcher3/proxy/OnLauncherTopViewChangedListener;
 
-    .line 39
+    .line 40
     .local v0, "l":Lcom/android/launcher3/proxy/OnLauncherTopViewChangedListener;
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/OnLauncherTopViewChangedListener;->onLauncherTopViewChanged(I)V
 
     goto :goto_0
 
-    .line 41
+    .line 42
     .end local v0    # "l":Lcom/android/launcher3/proxy/OnLauncherTopViewChangedListener;
     :cond_0
     return-void
@@ -143,11 +145,11 @@
     .param p1, "l"    # Lcom/android/launcher3/proxy/OnLauncherTopViewChangedListener;
 
     .prologue
-    .line 48
+    .line 49
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->mOnLauncherTopViewChangedListeners:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 49
+    .line 50
     return-void
 .end method

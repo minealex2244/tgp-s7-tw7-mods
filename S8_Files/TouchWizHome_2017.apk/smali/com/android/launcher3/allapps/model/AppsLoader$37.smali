@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/allapps/model/AppsLoader;->updateAppsGridInfo(II)V
+    value = Lcom/android/launcher3/allapps/model/AppsLoader;->titleUpdate()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,27 +20,23 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
-.field final synthetic val$gridX:I
-
-.field final synthetic val$gridY:I
+.field final synthetic val$needUpdateItems:Ljava/util/ArrayList;
 
 .field final synthetic val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/allapps/model/AppsLoader;Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;II)V
+.method constructor <init>(Lcom/android/launcher3/allapps/model/AppsLoader;Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;Ljava/util/ArrayList;)V
     .locals 0
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 2772
+    .line 2756
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
 
-    iput p3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$gridX:I
-
-    iput p4, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$gridY:I
+    iput-object p3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$needUpdateItems:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,52 +49,37 @@
     .locals 5
 
     .prologue
-    .line 2775
-    iget-object v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
+    const/4 v4, 0x0
 
-    iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
+    .line 2758
+    iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
-    .line 2776
+    iget-object v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
+
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->sLauncherModel:Lcom/android/launcher3/LauncherModel;
-    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$4300()Lcom/android/launcher3/LauncherModel;
+    invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$4700()Lcom/android/launcher3/LauncherModel;
 
-    move-result-object v4
+    move-result-object v3
 
-    invoke-virtual {v4}, Lcom/android/launcher3/LauncherModel;->getLoaderTask()Lcom/android/launcher3/LauncherModel$LoaderTask;
+    invoke-virtual {v3}, Lcom/android/launcher3/LauncherModel;->getLoaderTask()Lcom/android/launcher3/LauncherModel$LoaderTask;
 
-    move-result-object v4
+    move-result-object v3
 
-    .line 2775
     # invokes: Lcom/android/launcher3/allapps/model/AppsLoader;->tryGetCallbacks(Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
-    invoke-static {v2, v3, v4}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$1400(Lcom/android/launcher3/allapps/model/AppsLoader;Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
+    invoke-static {v1, v2, v3}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$1400(Lcom/android/launcher3/allapps/model/AppsLoader;Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
 
     move-result-object v0
 
-    .line 2777
+    .line 2759
     .local v0, "callbacks":Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lcom/android/launcher3/LauncherAppState;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
-
-    move-result-object v1
-
-    .line 2778
-    .local v1, "dp":Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
-    iget v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$gridX:I
-
-    iget v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$gridY:I
-
-    invoke-virtual {v1, v2, v3}, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->setAppsCurrentGrid(II)V
-
-    .line 2780
     if-eqz v0, :cond_0
 
-    .line 2781
-    invoke-interface {v0}, Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;->updateGridInfo()V
+    .line 2760
+    iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$37;->val$needUpdateItems:Ljava/util/ArrayList;
 
-    .line 2783
+    invoke-interface {v0, v1, v4, v4}, Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;->bindAppsChanged(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
+
+    .line 2762
     :cond_0
     return-void
 .end method

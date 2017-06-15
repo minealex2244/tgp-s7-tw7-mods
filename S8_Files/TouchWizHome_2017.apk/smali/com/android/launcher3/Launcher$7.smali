@@ -29,12 +29,12 @@
     .param p1, "this$0"    # Lcom/android/launcher3/Launcher;
 
     .prologue
-    .line 1683
+    .line 1686
     iput-object p1, p0, Lcom/android/launcher3/Launcher$7;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1684
+    .line 1687
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/launcher3/Launcher$7;->mStarted:Z
@@ -48,17 +48,17 @@
     .locals 6
 
     .prologue
-    .line 1687
+    .line 1690
     iget-boolean v2, p0, Lcom/android/launcher3/Launcher$7;->mStarted:Z
 
     if-eqz v2, :cond_1
 
-    .line 1706
+    .line 1709
     :cond_0
     :goto_0
     return-void
 
-    .line 1688
+    .line 1691
     :cond_1
     iget-object v2, p0, Lcom/android/launcher3/Launcher$7;->this$0:Lcom/android/launcher3/Launcher;
 
@@ -69,12 +69,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 1690
+    .line 1693
     const/4 v2, 0x1
 
     iput-boolean v2, p0, Lcom/android/launcher3/Launcher$7;->mStarted:Z
 
-    .line 1696
+    .line 1699
     iget-object v2, p0, Lcom/android/launcher3/Launcher$7;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mHomeController:Lcom/android/launcher3/home/HomeController;
@@ -86,7 +86,7 @@
 
     move-result-object v1
 
-    .line 1697
+    .line 1700
     .local v1, "view":Landroid/view/View;
     iget-object v2, p0, Lcom/android/launcher3/Launcher$7;->this$0:Lcom/android/launcher3/Launcher;
 
@@ -99,10 +99,10 @@
 
     invoke-virtual {v1, v2, v4, v5}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 1698
+    .line 1701
     move-object v0, p0
 
-    .line 1699
+    .line 1702
     .local v0, "listener":Landroid/view/ViewTreeObserver$OnDrawListener;
     new-instance v2, Lcom/android/launcher3/Launcher$7$1;
 

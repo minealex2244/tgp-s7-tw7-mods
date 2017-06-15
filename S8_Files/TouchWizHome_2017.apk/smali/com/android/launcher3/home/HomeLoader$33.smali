@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeLoader;->updateFolderTitle(Lcom/android/launcher3/common/base/item/ItemInfo;)V
+    value = Lcom/android/launcher3/home/HomeLoader;->removeUnRestoredItems()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,23 +20,23 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeLoader;
 
-.field final synthetic val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
+.field final synthetic val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
-.field final synthetic val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+.field final synthetic val$removeItems:Ljava/util/ArrayList;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/base/item/ItemInfo;)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
     .locals 0
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 3411
+    .line 3125
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$33;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
-    iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$33;->val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$33;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
-    iput-object p3, p0, Lcom/android/launcher3/home/HomeLoader$33;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
+    iput-object p3, p0, Lcom/android/launcher3/home/HomeLoader$33;->val$removeItems:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,28 +49,28 @@
     .locals 2
 
     .prologue
-    .line 3414
+    .line 3127
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$33;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 3415
-    .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    .line 3128
+    .local v0, "cb":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$33;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+
+    if-ne v1, v0, :cond_0
+
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$33;->val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    .line 3129
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$33;->val$removeItems:Ljava/util/ArrayList;
 
-    if-ne v0, v1, :cond_0
+    invoke-interface {v0, v1}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindItemsRemoved(Ljava/util/ArrayList;)V
 
-    .line 3416
-    iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$33;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
-
-    invoke-interface {v0, v1}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindFolderTitle(Lcom/android/launcher3/common/base/item/ItemInfo;)V
-
-    .line 3418
+    .line 3131
     :cond_0
     return-void
 .end method

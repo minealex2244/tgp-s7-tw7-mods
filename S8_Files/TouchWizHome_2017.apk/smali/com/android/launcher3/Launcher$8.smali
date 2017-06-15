@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/Launcher;
 
     .prologue
-    .line 2107
+    .line 2110
     iput-object p1, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,12 +42,12 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 2110
+    .line 2113
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2111
+    .line 2114
     .local v0, "action":Ljava/lang/String;
     const-string v5, "android.intent.action.SCREEN_OFF"
 
@@ -57,7 +57,7 @@
 
     if-eqz v5, :cond_1
 
-    .line 2112
+    .line 2115
     iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mHomeBindController:Lcom/android/launcher3/home/HomeBindController;
@@ -67,7 +67,7 @@
 
     invoke-virtual {v5, v6}, Lcom/android/launcher3/home/HomeBindController;->setUserPresent(Z)V
 
-    .line 2113
+    .line 2116
     iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mHomeController:Lcom/android/launcher3/home/HomeController;
@@ -76,45 +76,6 @@
     move-result-object v5
 
     invoke-virtual {v5, v6}, Lcom/android/launcher3/home/HomeController;->exitResizeState(Z)V
-
-    .line 2114
-    iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
-
-    # getter for: Lcom/android/launcher3/Launcher;->mHomeBindController:Lcom/android/launcher3/home/HomeBindController;
-    invoke-static {v5}, Lcom/android/launcher3/Launcher;->access$300(Lcom/android/launcher3/Launcher;)Lcom/android/launcher3/home/HomeBindController;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Lcom/android/launcher3/home/HomeBindController;->updateAutoAdvanceState()V
-
-    .line 2141
-    .end local p1    # "context":Landroid/content/Context;
-    :cond_0
-    :goto_0
-    return-void
-
-    .line 2115
-    .restart local p1    # "context":Landroid/content/Context;
-    :cond_1
-    const-string v5, "android.intent.action.USER_PRESENT"
-
-    invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_2
-
-    .line 2116
-    iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
-
-    # getter for: Lcom/android/launcher3/Launcher;->mHomeBindController:Lcom/android/launcher3/home/HomeBindController;
-    invoke-static {v5}, Lcom/android/launcher3/Launcher;->access$300(Lcom/android/launcher3/Launcher;)Lcom/android/launcher3/home/HomeBindController;
-
-    move-result-object v5
-
-    const/4 v6, 0x1
-
-    invoke-virtual {v5, v6}, Lcom/android/launcher3/home/HomeBindController;->setUserPresent(Z)V
 
     .line 2117
     iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
@@ -126,7 +87,46 @@
 
     invoke-virtual {v5}, Lcom/android/launcher3/home/HomeBindController;->updateAutoAdvanceState()V
 
+    .line 2144
+    .end local p1    # "context":Landroid/content/Context;
+    :cond_0
+    :goto_0
+    return-void
+
     .line 2118
+    .restart local p1    # "context":Landroid/content/Context;
+    :cond_1
+    const-string v5, "android.intent.action.USER_PRESENT"
+
+    invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    .line 2119
+    iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
+
+    # getter for: Lcom/android/launcher3/Launcher;->mHomeBindController:Lcom/android/launcher3/home/HomeBindController;
+    invoke-static {v5}, Lcom/android/launcher3/Launcher;->access$300(Lcom/android/launcher3/Launcher;)Lcom/android/launcher3/home/HomeBindController;
+
+    move-result-object v5
+
+    const/4 v6, 0x1
+
+    invoke-virtual {v5, v6}, Lcom/android/launcher3/home/HomeBindController;->setUserPresent(Z)V
+
+    .line 2120
+    iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
+
+    # getter for: Lcom/android/launcher3/Launcher;->mHomeBindController:Lcom/android/launcher3/home/HomeBindController;
+    invoke-static {v5}, Lcom/android/launcher3/Launcher;->access$300(Lcom/android/launcher3/Launcher;)Lcom/android/launcher3/home/HomeBindController;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Lcom/android/launcher3/home/HomeBindController;->updateAutoAdvanceState()V
+
+    .line 2121
     iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mModel:Lcom/android/launcher3/LauncherModel;
@@ -138,7 +138,7 @@
 
     goto :goto_0
 
-    .line 2119
+    .line 2122
     :cond_2
     const-string v5, "com.sec.android.intent.action.SET_ZERO_PAGE"
 
@@ -148,21 +148,21 @@
 
     if-eqz v5, :cond_3
 
-    .line 2120
+    .line 2123
     invoke-static {}, Lcom/android/launcher3/home/ZeroPageController;->supportVirtualScreen()Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
-    .line 2121
+    .line 2124
     const-string v5, "zeroapp_package_name"
 
     invoke-virtual {p2, v5}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 2122
+    .line 2125
     .local v3, "packageName":Ljava/lang/String;
     const-string v5, "zeroapp_class_name"
 
@@ -170,7 +170,7 @@
 
     move-result-object v1
 
-    .line 2123
+    .line 2126
     .local v1, "className":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
 
@@ -183,18 +183,18 @@
 
     move-result-object v4
 
-    .line 2124
+    .line 2127
     .local v4, "zeroPageController":Lcom/android/launcher3/home/ZeroPageController;
     if-eqz v4, :cond_0
 
-    .line 2125
+    .line 2128
     new-instance v5, Landroid/content/ComponentName;
 
     invoke-direct {v5, v3, v1}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v4, v5}, Lcom/android/launcher3/home/ZeroPageController;->changeZeroPage(Landroid/content/ComponentName;)V
 
-    .line 2126
+    .line 2129
     const-string v5, "Launcher"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -239,7 +239,7 @@
 
     goto :goto_0
 
-    .line 2129
+    .line 2132
     .end local v1    # "className":Ljava/lang/String;
     .end local v3    # "packageName":Ljava/lang/String;
     .end local v4    # "zeroPageController":Lcom/android/launcher3/home/ZeroPageController;
@@ -252,14 +252,14 @@
 
     if-eqz v5, :cond_0
 
-    .line 2130
+    .line 2133
     const-string v5, "reason"
 
     invoke-virtual {p2, v5}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 2131
+    .line 2134
     .local v2, "extra":Ljava/lang/String;
     const-string v5, "homekey"
 
@@ -269,7 +269,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 2132
+    .line 2135
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportQuickOption()Z
 
     move-result v5
@@ -289,7 +289,7 @@
 
     if-eqz v5, :cond_4
 
-    .line 2133
+    .line 2136
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v5
@@ -303,7 +303,7 @@
 
     invoke-virtual {v5, v6, p1, v7}, Lcom/android/launcher3/util/logging/SALogging;->insertQuickOptionEventLog(ILcom/android/launcher3/Launcher;Ljava/lang/String;)V
 
-    .line 2136
+    .line 2139
     :cond_4
     iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
 
@@ -327,7 +327,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 2137
+    .line 2140
     iget-object v5, p0, Lcom/android/launcher3/Launcher$8;->this$0:Lcom/android/launcher3/Launcher;
 
     # getter for: Lcom/android/launcher3/Launcher;->mMultiSelectManager:Lcom/android/launcher3/common/multiselect/MultiSelectManager;

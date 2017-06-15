@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 233
+    .line 234
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$1;->val$parentFolderIconView:Lcom/android/launcher3/folder/view/FolderIconView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,7 +49,7 @@
     .param p9, "oldBottom"    # I
 
     .prologue
-    .line 237
+    .line 238
     if-ne p3, p7, :cond_0
 
     if-eq p5, p9, :cond_1
@@ -59,7 +59,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 238
+    .line 239
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$1;->val$parentFolderIconView:Lcom/android/launcher3/folder/view/FolderIconView;
 
     const/4 v1, 0x1
@@ -67,7 +67,7 @@
     # setter for: Lcom/android/launcher3/folder/view/FolderIconView;->mPreviewFactorChanged:Z
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderIconView;->access$002(Lcom/android/launcher3/folder/view/FolderIconView;Z)Z
 
-    .line 240
+    .line 241
     :cond_1
     return-void
 .end method

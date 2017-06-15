@@ -45,15 +45,15 @@
     .prologue
     const/4 v1, -0x1
 
-    .line 313
+    .line 314
     const/4 v0, 0x0
 
     sput-object v0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sSharedInnerRingDrawable:[Landroid/graphics/drawable/Drawable;
 
-    .line 314
+    .line 315
     sput v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sPreviewSize:I
 
-    .line 316
+    .line 317
     sput v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sIconSize:I
 
     return-void
@@ -76,21 +76,21 @@
 
     const/4 v5, 0x0
 
-    .line 322
+    .line 323
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 312
+    .line 313
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mFolderIconView:Lcom/android/launcher3/folder/view/FolderIconView;
 
-    .line 323
+    .line 324
     iput-object p2, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mFolderIconView:Lcom/android/launcher3/folder/view/FolderIconView;
 
-    .line 324
+    .line 325
     sput p3, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sPreviewSize:I
 
-    .line 328
+    .line 329
     # getter for: Lcom/android/launcher3/folder/view/FolderIconView;->sStaticValuesDirty:Z
     invoke-static {}, Lcom/android/launcher3/folder/view/FolderIconView;->access$100()Z
 
@@ -98,7 +98,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 329
+    .line 330
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v1
@@ -109,7 +109,7 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 330
+    .line 331
     new-instance v1, Ljava/lang/RuntimeException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -122,7 +122,7 @@
 
     move-result-object v2
 
-    .line 331
+    .line 332
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v3
@@ -139,11 +139,11 @@
 
     throw v1
 
-    .line 334
+    .line 335
     :cond_0
     sput p3, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sIconSize:I
 
-    .line 335
+    .line 336
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
     move-result-object v1
@@ -152,7 +152,7 @@
 
     move-result-object v0
 
-    .line 336
+    .line 337
     .local v0, "fs":Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;
     const/4 v1, 0x5
 
@@ -160,10 +160,10 @@
 
     sput-object v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sSharedInnerRingDrawable:[Landroid/graphics/drawable/Drawable;
 
-    .line 338
+    .line 339
     if-eqz v0, :cond_1
 
-    .line 339
+    .line 340
     sget-object v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sSharedInnerRingDrawable:[Landroid/graphics/drawable/Drawable;
 
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
@@ -180,7 +180,7 @@
 
     aput-object v2, v1, v5
 
-    .line 340
+    .line 341
     sget-object v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sSharedInnerRingDrawable:[Landroid/graphics/drawable/Drawable;
 
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
@@ -197,7 +197,7 @@
 
     aput-object v2, v1, v6
 
-    .line 341
+    .line 342
     sget-object v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sSharedInnerRingDrawable:[Landroid/graphics/drawable/Drawable;
 
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
@@ -214,7 +214,7 @@
 
     aput-object v2, v1, v7
 
-    .line 342
+    .line 343
     sget-object v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sSharedInnerRingDrawable:[Landroid/graphics/drawable/Drawable;
 
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
@@ -231,7 +231,7 @@
 
     aput-object v2, v1, v8
 
-    .line 343
+    .line 344
     sget-object v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sSharedInnerRingDrawable:[Landroid/graphics/drawable/Drawable;
 
     new-instance v2, Landroid/graphics/drawable/BitmapDrawable;
@@ -248,12 +248,12 @@
 
     aput-object v2, v1, v9
 
-    .line 345
+    .line 346
     :cond_1
     # setter for: Lcom/android/launcher3/folder/view/FolderIconView;->sStaticValuesDirty:Z
     invoke-static {v5}, Lcom/android/launcher3/folder/view/FolderIconView;->access$102(Z)Z
 
-    .line 347
+    .line 348
     .end local v0    # "fs":Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;
     :cond_2
     return-void
@@ -262,20 +262,34 @@
 
 # virtual methods
 .method public animateToAcceptState()V
-    .locals 4
+    .locals 1
 
     .prologue
-    .line 350
+    .line 351
+    sget v0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sPreviewSize:I
+
+    invoke-virtual {p0, v0}, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->animateToAcceptState(I)V
+
+    .line 352
+    return-void
+.end method
+
+.method public animateToAcceptState(I)V
+    .locals 4
+    .param p1, "iconSize"    # I
+
+    .prologue
+    .line 355
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mNeutralAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v1, :cond_0
 
-    .line 351
+    .line 356
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mNeutralAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v1}, Landroid/animation/ValueAnimator;->cancel()V
 
-    .line 353
+    .line 358
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
@@ -291,17 +305,19 @@
 
     iput-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mAcceptAnimator:Landroid/animation/ValueAnimator;
 
-    .line 354
+    .line 359
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mAcceptAnimator:Landroid/animation/ValueAnimator;
 
     const-wide/16 v2, 0x64
 
     invoke-virtual {v1, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 356
-    sget v0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sPreviewSize:I
+    .line 361
+    sput p1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sPreviewSize:I
 
-    .line 357
+    move v0, p1
+
+    .line 362
     .local v0, "previewSize":I
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mAcceptAnimator:Landroid/animation/ValueAnimator;
 
@@ -311,15 +327,17 @@
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 366
+    .line 371
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mAcceptAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v1}, Landroid/animation/ValueAnimator;->start()V
 
-    .line 367
+    .line 372
     return-void
 
-    .line 353
+    .line 358
+    nop
+
     :array_0
     .array-data 4
         0x0
@@ -331,17 +349,17 @@
     .locals 4
 
     .prologue
-    .line 370
+    .line 375
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mAcceptAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v1, :cond_0
 
-    .line 371
+    .line 376
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mAcceptAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v1}, Landroid/animation/ValueAnimator;->cancel()V
 
-    .line 373
+    .line 378
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
@@ -357,17 +375,17 @@
 
     iput-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mNeutralAnimator:Landroid/animation/ValueAnimator;
 
-    .line 374
+    .line 379
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mNeutralAnimator:Landroid/animation/ValueAnimator;
 
     const-wide/16 v2, 0x64
 
     invoke-virtual {v1, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 376
+    .line 381
     sget v0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sPreviewSize:I
 
-    .line 377
+    .line 382
     .local v0, "previewSize":I
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mNeutralAnimator:Landroid/animation/ValueAnimator;
 
@@ -377,7 +395,7 @@
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 386
+    .line 391
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mNeutralAnimator:Landroid/animation/ValueAnimator;
 
     new-instance v2, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$3;
@@ -386,15 +404,15 @@
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 394
+    .line 399
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mNeutralAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v1}, Landroid/animation/ValueAnimator;->start()V
 
-    .line 395
+    .line 400
     return-void
 
-    .line 373
+    .line 378
     :array_0
     .array-data 4
         0x0
@@ -407,21 +425,21 @@
     .param p1, "loc"    # [I
 
     .prologue
-    .line 399
+    .line 404
     const/4 v0, 0x0
 
     iget v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellX:I
 
     aput v1, p1, v0
 
-    .line 400
+    .line 405
     const/4 v0, 0x1
 
     iget v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellY:I
 
     aput v1, p1, v0
 
-    .line 401
+    .line 406
     return-void
 .end method
 
@@ -429,10 +447,10 @@
     .locals 3
 
     .prologue
-    .line 414
+    .line 419
     const/4 v0, 0x0
 
-    .line 415
+    .line 420
     .local v0, "color":I
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mFolderIconView:Lcom/android/launcher3/folder/view/FolderIconView;
 
@@ -440,7 +458,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mFolderIconView:Lcom/android/launcher3/folder/view/FolderIconView;
 
-    .line 416
+    .line 421
     invoke-virtual {v1}, Lcom/android/launcher3/folder/view/FolderIconView;->getFolderInfo()Lcom/android/launcher3/folder/FolderInfo;
 
     move-result-object v1
@@ -451,7 +469,7 @@
 
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mFolderIconView:Lcom/android/launcher3/folder/view/FolderIconView;
 
-    .line 417
+    .line 422
     invoke-virtual {v1}, Lcom/android/launcher3/folder/view/FolderIconView;->getFolderInfo()Lcom/android/launcher3/folder/FolderInfo;
 
     move-result-object v1
@@ -464,7 +482,7 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 418
+    .line 423
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mFolderIconView:Lcom/android/launcher3/folder/view/FolderIconView;
 
     invoke-virtual {v1}, Lcom/android/launcher3/folder/view/FolderIconView;->getFolderInfo()Lcom/android/launcher3/folder/FolderInfo;
@@ -473,7 +491,7 @@
 
     iget v0, v1, Lcom/android/launcher3/folder/FolderInfo;->color:I
 
-    .line 420
+    .line 425
     :cond_0
     sget-object v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->sSharedInnerRingDrawable:[Landroid/graphics/drawable/Drawable;
 
@@ -486,7 +504,7 @@
     .locals 1
 
     .prologue
-    .line 424
+    .line 429
     iget v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mInnerRingSize:F
 
     return v0
@@ -498,13 +516,13 @@
     .param p2, "y"    # I
 
     .prologue
-    .line 405
+    .line 410
     iput p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellX:I
 
-    .line 406
+    .line 411
     iput p2, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellY:I
 
-    .line 407
+    .line 412
     return-void
 .end method
 
@@ -513,9 +531,9 @@
     .param p1, "layout"    # Lcom/android/launcher3/common/base/view/CellLayout;
 
     .prologue
-    .line 410
+    .line 415
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
-    .line 411
+    .line 416
     return-void
 .end method

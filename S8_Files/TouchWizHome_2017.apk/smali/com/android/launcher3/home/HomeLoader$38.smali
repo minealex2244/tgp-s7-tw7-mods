@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeLoader;->titleUpdate()V
+    value = Lcom/android/launcher3/home/HomeLoader;->updateShortcutIcons()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,7 +22,7 @@
 
 .field final synthetic val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
-.field final synthetic val$finalUpdateItems:Ljava/util/ArrayList;
+.field final synthetic val$updatedIcons:Ljava/util/ArrayList;
 
 
 # direct methods
@@ -31,12 +31,12 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 3996
+    .line 3928
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$38;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$38;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
-    iput-object p3, p0, Lcom/android/launcher3/home/HomeLoader$38;->val$finalUpdateItems:Ljava/util/ArrayList;
+    iput-object p3, p0, Lcom/android/launcher3/home/HomeLoader$38;->val$updatedIcons:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,33 +46,31 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 3
 
     .prologue
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
-    .line 3999
+    .line 3930
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$38;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 4000
+    .line 3931
     .local v0, "cb":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$38;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     if-ne v1, v0, :cond_0
 
-    .line 4001
-    iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$38;->val$callbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    .line 3932
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$38;->val$updatedIcons:Ljava/util/ArrayList;
 
-    iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$38;->val$finalUpdateItems:Ljava/util/ArrayList;
+    invoke-interface {v0, v1, v2, v2}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindShortcutsChanged(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
-    invoke-interface {v1, v2, v3, v3}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindShortcutsChanged(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
-
-    .line 4003
+    .line 3934
     :cond_0
     return-void
 .end method

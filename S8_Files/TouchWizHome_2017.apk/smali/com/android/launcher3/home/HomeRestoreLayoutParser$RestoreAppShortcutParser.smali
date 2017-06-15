@@ -23,17 +23,17 @@
     .locals 1
 
     .prologue
-    .line 530
+    .line 526
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppShortcutParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeDefaultLayoutParser$DefaultAppShortcutParser;-><init>(Lcom/android/launcher3/home/HomeDefaultLayoutParser;)V
 
-    .line 531
+    .line 527
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppShortcutParser;->mIsRestore:Z
 
-    .line 532
+    .line 528
     return-void
 .end method
 
@@ -43,7 +43,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 529
+    .line 525
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppShortcutParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -58,18 +58,18 @@
     .param p3, "className"    # Ljava/lang/String;
 
     .prologue
-    .line 537
+    .line 533
     const-string v2, "restored"
 
     invoke-static {p1, v2}, Lcom/android/launcher3/common/model/DefaultLayoutParser;->getAttributeValue(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 538
+    .line 534
     .local v1, "restoredStr":Ljava/lang/String;
     const/4 v0, 0x0
 
-    .line 539
+    .line 535
     .local v0, "restored":I
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -77,12 +77,12 @@
 
     if-nez v2, :cond_0
 
-    .line 540
+    .line 536
     invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 541
+    .line 537
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppShortcutParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
@@ -98,7 +98,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 543
+    .line 539
     :cond_0
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppShortcutParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -119,7 +119,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 544
+    .line 540
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppShortcutParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;

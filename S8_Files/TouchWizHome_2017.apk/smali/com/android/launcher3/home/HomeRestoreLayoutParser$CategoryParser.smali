@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 299
+    .line 295
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 299
+    .line 295
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -57,7 +57,7 @@
 
     const/4 v5, 0x0
 
-    .line 335
+    .line 331
     const/4 v0, -0x1
 
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
@@ -70,7 +70,7 @@
     :goto_0
     packed-switch v0, :pswitch_data_0
 
-    .line 356
+    .line 352
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -88,7 +88,7 @@
 
     invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 357
+    .line 353
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -106,7 +106,7 @@
 
     invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 358
+    .line 354
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -126,7 +126,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 360
+    .line 356
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -146,7 +146,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 362
+    .line 358
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -158,7 +158,7 @@
 
     invoke-virtual {v0, v1, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 363
+    .line 359
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -170,11 +170,11 @@
 
     invoke-virtual {v0, v1, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 366
+    .line 362
     :goto_1
     return-void
 
-    .line 335
+    .line 331
     :sswitch_0
     const-string v3, "home_easy"
 
@@ -201,7 +201,7 @@
 
     goto :goto_0
 
-    .line 337
+    .line 333
     :pswitch_0
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -222,7 +222,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 339
+    .line 335
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -242,7 +242,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 341
+    .line 337
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -254,7 +254,7 @@
 
     invoke-virtual {v0, v1, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 342
+    .line 338
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -268,7 +268,7 @@
 
     goto :goto_1
 
-    .line 345
+    .line 341
     :pswitch_1
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -287,7 +287,7 @@
 
     invoke-virtual {v0, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 346
+    .line 342
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -305,7 +305,7 @@
 
     invoke-virtual {v0, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 347
+    .line 343
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -325,7 +325,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 349
+    .line 345
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -345,7 +345,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 351
+    .line 347
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -357,7 +357,7 @@
 
     invoke-virtual {v0, v1, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 352
+    .line 348
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -369,7 +369,7 @@
 
     invoke-virtual {v0, v1, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 353
+    .line 349
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -389,7 +389,7 @@
 
     goto/16 :goto_1
 
-    .line 335
+    .line 331
     :sswitch_data_0
     .sparse-switch
         -0x1cfcfed5 -> :sswitch_1
@@ -419,7 +419,7 @@
     .prologue
     const/4 v8, 0x0
 
-    .line 303
+    .line 299
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v4
@@ -428,12 +428,12 @@
 
     if-ne v4, v5, :cond_4
 
-    .line 304
+    .line 300
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 305
+    .line 301
     .local v1, "categoryText":Ljava/lang/String;
     const-string v4, "Launcher.HomeRestore"
 
@@ -457,12 +457,12 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 306
+    .line 302
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 307
+    .line 303
     .local v0, "category":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     if-eqz v1, :cond_0
 
@@ -472,14 +472,14 @@
 
     if-nez v4, :cond_0
 
-    .line 308
+    .line 304
     const-string v4, ","
 
     invoke-virtual {v1, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v3
 
-    .line 309
+    .line 305
     .local v3, "items":[Ljava/lang/String;
     const/4 v2, 0x0
 
@@ -489,17 +489,17 @@
 
     if-ge v2, v4, :cond_0
 
-    .line 310
+    .line 306
     aget-object v4, v3, v2
 
     invoke-virtual {v0, v4, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 309
+    .line 305
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 314
+    .line 310
     .end local v2    # "i":I
     .end local v3    # "items":[Ljava/lang/String;
     :cond_0
@@ -511,12 +511,12 @@
 
     if-eqz v4, :cond_1
 
-    .line 315
+    .line 311
     const-string v4, "home"
 
     invoke-direct {p0, v4}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->addTag(Ljava/lang/String;)V
 
-    .line 318
+    .line 314
     :cond_1
     const-string v4, "zeroPage"
 
@@ -526,7 +526,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 319
+    .line 315
     iget-object v4, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
@@ -544,7 +544,7 @@
 
     invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 322
+    .line 318
     :cond_2
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
@@ -554,19 +554,19 @@
 
     const-string v4, "homeOnly"
 
-    .line 323
+    .line 319
     invoke-virtual {v0, v4}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_3
 
-    .line 324
+    .line 320
     const-string v4, "homeOnly"
 
     invoke-direct {p0, v4}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->addTag(Ljava/lang/String;)V
 
-    .line 327
+    .line 323
     :cond_3
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportEasyModeChange()Z
 
@@ -574,12 +574,12 @@
 
     if-eqz v4, :cond_4
 
-    .line 328
+    .line 324
     const-string v4, "home_easy"
 
     invoke-direct {p0, v4}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$CategoryParser;->addTag(Ljava/lang/String;)V
 
-    .line 331
+    .line 327
     .end local v0    # "category":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     .end local v1    # "categoryText":Ljava/lang/String;
     :cond_4

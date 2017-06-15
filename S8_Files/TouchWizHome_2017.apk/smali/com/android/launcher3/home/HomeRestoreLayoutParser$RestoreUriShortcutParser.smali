@@ -23,17 +23,17 @@
     .locals 1
 
     .prologue
-    .line 549
+    .line 545
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreUriShortcutParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeDefaultLayoutParser$UriShortcutParser;-><init>(Lcom/android/launcher3/home/HomeDefaultLayoutParser;)V
 
-    .line 550
+    .line 546
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreUriShortcutParser;->mIsRestore:Z
 
-    .line 551
+    .line 547
     return-void
 .end method
 
@@ -43,7 +43,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 548
+    .line 544
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreUriShortcutParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -57,14 +57,14 @@
     .param p2, "tableName"    # Ljava/lang/String;
 
     .prologue
-    .line 555
+    .line 551
     const-string v3, "restored"
 
     invoke-static {p1, v3}, Lcom/android/launcher3/common/model/DefaultLayoutParser;->getAttributeValue(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 556
+    .line 552
     .local v2, "restored":Ljava/lang/String;
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -72,7 +72,7 @@
 
     if-nez v3, :cond_0
 
-    .line 557
+    .line 553
     iget-object v3, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreUriShortcutParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
@@ -92,7 +92,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 559
+    .line 555
     :cond_0
     iget-object v3, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreUriShortcutParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -113,12 +113,12 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 560
+    .line 556
     invoke-super {p0, p1, p2}, Lcom/android/launcher3/home/HomeDefaultLayoutParser$UriShortcutParser;->parseAndAdd(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)J
 
     move-result-wide v0
 
-    .line 561
+    .line 557
     .local v0, "id":J
     iget-object v3, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreUriShortcutParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -131,7 +131,7 @@
     # invokes: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->restoreContactShortcut(Ljava/lang/String;J)V
     invoke-static {v3, v4, v0, v1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->access$3100(Lcom/android/launcher3/home/HomeRestoreLayoutParser;Ljava/lang/String;J)V
 
-    .line 562
+    .line 558
     return-wide v0
 .end method
 
@@ -142,10 +142,10 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 567
+    .line 563
     const/4 v2, 0x0
 
-    .line 570
+    .line 566
     .local v2, "uri":Ljava/lang/String;
     :try_start_0
     const-string v4, "uri"
@@ -154,7 +154,7 @@
 
     move-result-object v2
 
-    .line 571
+    .line 567
     const/4 v4, 0x0
 
     invoke-static {v2, v4}, Landroid/content/Intent;->parseUri(Ljava/lang/String;I)Landroid/content/Intent;
@@ -163,7 +163,7 @@
 
     move-result-object v1
 
-    .line 577
+    .line 573
     .local v1, "intent":Landroid/content/Intent;
     if-eqz v1, :cond_0
 
@@ -175,7 +175,7 @@
 
     const-string v4, "com.samsung.knox.rcp.components"
 
-    .line 579
+    .line 575
     invoke-virtual {v1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v5
@@ -192,17 +192,17 @@
 
     move-object v1, v3
 
-    .line 582
+    .line 578
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_0
     :goto_0
     return-object v1
 
-    .line 572
+    .line 568
     :catch_0
     move-exception v0
 
-    .line 573
+    .line 569
     .local v0, "e":Ljava/net/URISyntaxException;
     const-string v4, "Launcher.HomeRestore"
 
@@ -228,6 +228,6 @@
 
     move-object v1, v3
 
-    .line 574
+    .line 570
     goto :goto_0
 .end method

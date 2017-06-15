@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1201
+    .line 1209
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$10;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,23 +41,23 @@
     .locals 3
 
     .prologue
-    .line 1204
+    .line 1212
     iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$10;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-virtual {v1}, Lcom/android/launcher3/allapps/controller/AppsController;->removeEmptyPagesAndUpdateAllItemsInfo()Z
 
     move-result v0
 
-    .line 1205
+    .line 1213
     .local v0, "dirtyItemUpdated":Z
     if-nez v0, :cond_0
 
-    .line 1206
+    .line 1214
     iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$10;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-virtual {v1}, Lcom/android/launcher3/allapps/controller/AppsController;->updateDirtyItems()V
 
-    .line 1208
+    .line 1216
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$10;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
@@ -66,6 +66,6 @@
     # setter for: Lcom/android/launcher3/allapps/controller/AppsController;->mRemoveInProgress:Z
     invoke-static {v1, v2}, Lcom/android/launcher3/allapps/controller/AppsController;->access$202(Lcom/android/launcher3/allapps/controller/AppsController;Z)Z
 
-    .line 1209
+    .line 1217
     return-void
 .end method

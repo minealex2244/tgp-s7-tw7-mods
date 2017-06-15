@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 2368
+    .line 2383
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$21;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     iput-object p2, p0, Lcom/android/launcher3/folder/view/FolderView$21;->val$targetView:Landroid/view/View;
@@ -50,12 +50,12 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 2375
+    .line 2390
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$21;->val$targetView:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    .line 2376
+    .line 2391
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderView$21;->val$targetView:Landroid/view/View;
 
     iget-boolean v0, p0, Lcom/android/launcher3/folder/view/FolderView$21;->val$keepLayout:Z
@@ -67,11 +67,11 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 2378
+    .line 2393
     :cond_0
     return-void
 
-    .line 2376
+    .line 2391
     :cond_1
     const/16 v0, 0x8
 
@@ -83,7 +83,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 2382
+    .line 2397
     return-void
 .end method
 
@@ -92,6 +92,6 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 2371
+    .line 2386
     return-void
 .end method

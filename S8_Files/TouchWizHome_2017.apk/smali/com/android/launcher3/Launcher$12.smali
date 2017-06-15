@@ -25,7 +25,7 @@
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
-    .line 2178
+    .line 2181
     iput-object p1, p0, Lcom/android/launcher3/Launcher$12;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,12 +40,12 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 2181
+    .line 2184
     const/4 v0, 0x1
 
     # setter for: Lcom/android/launcher3/Launcher;->sNeedCheckEasyMode:Z
     invoke-static {v0}, Lcom/android/launcher3/Launcher;->access$902(Z)Z
 
-    .line 2182
+    .line 2185
     return-void
 .end method

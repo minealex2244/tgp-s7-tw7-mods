@@ -29,15 +29,15 @@
     .param p2, "object"    # Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
     .prologue
-    .line 2474
+    .line 2489
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2475
+    .line 2490
     iput-object p2, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->mDragObject:Lcom/android/launcher3/common/drag/DropTarget$DragObject;
 
-    .line 2476
+    .line 2491
     return-void
 .end method
 
@@ -50,7 +50,7 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 2483
+    .line 2498
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mCurrentScrollDir:I
@@ -60,7 +60,7 @@
 
     if-nez v0, :cond_1
 
-    .line 2484
+    .line 2499
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mContent:Lcom/android/launcher3/folder/view/FolderPagedView;
@@ -70,20 +70,20 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/folder/view/FolderPagedView;->scrollLeft()V
 
-    .line 2485
+    .line 2500
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mScrollHintDir:I
     invoke-static {v0, v2}, Lcom/android/launcher3/folder/view/FolderView;->access$1902(Lcom/android/launcher3/folder/view/FolderView;I)I
 
-    .line 2493
+    .line 2508
     :goto_0
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mCurrentScrollDir:I
     invoke-static {v0, v2}, Lcom/android/launcher3/folder/view/FolderView;->access$1802(Lcom/android/launcher3/folder/view/FolderView;I)I
 
-    .line 2496
+    .line 2511
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mScrollPauseAlarm:Lcom/android/launcher3/util/alarm/Alarm;
@@ -101,7 +101,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/util/alarm/Alarm;->setOnAlarmListener(Lcom/android/launcher3/util/alarm/OnAlarmListener;)V
 
-    .line 2497
+    .line 2512
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mScrollPauseAlarm:Lcom/android/launcher3/util/alarm/Alarm;
@@ -115,11 +115,11 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/android/launcher3/util/alarm/Alarm;->setAlarm(J)V
 
-    .line 2498
+    .line 2513
     :cond_0
     return-void
 
-    .line 2486
+    .line 2501
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
@@ -132,7 +132,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2487
+    .line 2502
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mContent:Lcom/android/launcher3/folder/view/FolderPagedView;
@@ -142,7 +142,7 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/folder/view/FolderPagedView;->scrollRight()V
 
-    .line 2488
+    .line 2503
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$OnScrollHintListener;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mScrollHintDir:I

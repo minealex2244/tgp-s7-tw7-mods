@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 516
+    .line 512
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$HomeScreenContentParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 516
+    .line 512
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$HomeScreenContentParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -60,7 +60,7 @@
     .end annotation
 
     .prologue
-    .line 520
+    .line 516
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v1
@@ -69,7 +69,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 521
+    .line 517
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v1
@@ -78,7 +78,7 @@
 
     move-result v0
 
-    .line 522
+    .line 518
     .local v0, "homeScreenContent":Z
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -86,7 +86,7 @@
 
     invoke-virtual {v1, v0}, Lcom/android/launcher3/LauncherAppState;->writeHomeOnlyModeEnabled(Z)V
 
-    .line 523
+    .line 519
     const-string v1, "Launcher.HomeRestore"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -109,7 +109,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 525
+    .line 521
     .end local v0    # "homeScreenContent":Z
     :cond_0
     const-wide/16 v2, 0x0

@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1544
+    .line 1552
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->val$iconInfo:Lcom/android/launcher3/common/base/item/IconInfo;
@@ -45,7 +45,7 @@
     .locals 4
 
     .prologue
-    .line 1547
+    .line 1555
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     # getter for: Lcom/android/launcher3/allapps/controller/AppsController;->mLauncher:Lcom/android/launcher3/Launcher;
@@ -55,7 +55,7 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->closeFolder()V
 
-    .line 1548
+    .line 1556
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$13;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     # getter for: Lcom/android/launcher3/allapps/controller/AppsController;->mAppsPagedView:Lcom/android/launcher3/allapps/view/AppsPagedView;
@@ -71,6 +71,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/allapps/view/AppsPagedView;->snapToPageImmediately(I)V
 
-    .line 1549
+    .line 1557
     return-void
 .end method

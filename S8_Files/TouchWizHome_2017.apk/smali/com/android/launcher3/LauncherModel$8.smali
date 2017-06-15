@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/LauncherModel;
 
     .prologue
-    .line 1291
+    .line 1295
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$8;->this$0:Lcom/android/launcher3/LauncherModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 5
 
     .prologue
-    .line 1294
+    .line 1298
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$8;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
@@ -53,7 +53,7 @@
 
     move-result-object v1
 
-    .line 1295
+    .line 1299
     .local v1, "badges":Ljava/util/Map;, "Ljava/util/Map<Lcom/android/launcher3/common/model/BadgeCache$CacheKey;Ljava/lang/Integer;>;"
     invoke-interface {v1}, Ljava/util/Map;->isEmpty()Z
 
@@ -61,7 +61,7 @@
 
     if-nez v2, :cond_0
 
-    .line 1296
+    .line 1300
     const-string v2, "Launcher.Model"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -88,12 +88,12 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1299
+    .line 1303
     invoke-static {v1}, Lcom/android/launcher3/common/model/DataLoader;->updateBadgeCounts(Ljava/util/Map;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 1300
+    .line 1304
     .local v0, "badgeItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -101,7 +101,7 @@
 
     if-nez v2, :cond_0
 
-    .line 1301
+    .line 1305
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$8;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mHandler:Lcom/android/launcher3/common/model/DeferredHandler;
@@ -115,7 +115,7 @@
 
     invoke-virtual {v2, v3}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 1310
+    .line 1314
     .end local v0    # "badgeItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_0
     return-void

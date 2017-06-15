@@ -13,13 +13,15 @@
 
 .field private mName:Ljava/lang/String;
 
+.field private mOrdinalNumber:I
+
 
 # direct methods
 .method constructor <init>()V
     .locals 1
 
     .prologue
-    .line 31
+    .line 32
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 29
@@ -27,7 +29,12 @@
 
     iput-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mComponentName:Landroid/content/ComponentName;
 
-    .line 33
+    .line 30
+    const/16 v0, -0x3e7
+
+    iput v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mOrdinalNumber:I
+
+    .line 34
     return-void
 .end method
 
@@ -39,16 +46,16 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 60
+    .line 66
     iput-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mName:Ljava/lang/String;
 
-    .line 61
+    .line 67
     iput-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 62
+    .line 68
     iput-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mComponentName:Landroid/content/ComponentName;
 
-    .line 63
+    .line 69
     return-void
 .end method
 
@@ -56,7 +63,7 @@
     .locals 1
 
     .prologue
-    .line 51
+    .line 52
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mComponentName:Landroid/content/ComponentName;
 
     return-object v0
@@ -66,7 +73,7 @@
     .locals 1
 
     .prologue
-    .line 56
+    .line 57
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     return-object v0
@@ -76,7 +83,7 @@
     .locals 2
 
     .prologue
-    .line 38
+    .line 39
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mName:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -95,11 +102,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 39
+    .line 40
     :cond_0
     const-string v0, "\u00a0"
 
-    .line 41
+    .line 42
     :goto_0
     return-object v0
 
@@ -109,11 +116,21 @@
     goto :goto_0
 .end method
 
+.method public getOrdinalNumber()I
+    .locals 1
+
+    .prologue
+    .line 62
+    iget v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mOrdinalNumber:I
+
+    return v0
+.end method
+
 .method isValid()Z
     .locals 2
 
     .prologue
-    .line 97
+    .line 107
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mName:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -133,10 +150,10 @@
 
     if-nez v0, :cond_1
 
-    .line 98
+    .line 108
     const/4 v0, 0x0
 
-    .line 101
+    .line 111
     :goto_0
     return v0
 
@@ -151,12 +168,12 @@
     .param p1, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 67
+    .line 77
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/android/launcher3/executor/StateAppInfo;->mComponentName:Landroid/content/ComponentName;
 
-    .line 68
+    .line 78
     if-eqz p1, :cond_1
 
     const-string v1, "_"
@@ -167,14 +184,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 69
+    .line 79
     const-string v1, "_"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 70
+    .line 80
     .local v0, "cnList":[Ljava/lang/String;
     array-length v1, v0
 
@@ -182,7 +199,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 71
+    .line 81
     const/4 v1, 0x1
 
     aget-object v1, v0, v1
@@ -197,19 +214,19 @@
 
     iput-object v1, p0, Lcom/android/launcher3/executor/StateAppInfo;->mComponentName:Landroid/content/ComponentName;
 
-    .line 78
+    .line 88
     .end local v0    # "cnList":[Ljava/lang/String;
     :goto_0
     return-void
 
-    .line 73
+    .line 83
     .restart local v0    # "cnList":[Ljava/lang/String;
     :cond_0
     iput-object p1, p0, Lcom/android/launcher3/executor/StateAppInfo;->mName:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 76
+    .line 86
     .end local v0    # "cnList":[Ljava/lang/String;
     :cond_1
     iput-object p1, p0, Lcom/android/launcher3/executor/StateAppInfo;->mName:Ljava/lang/String;
@@ -222,10 +239,10 @@
     .param p1, "itemInfo"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 81
+    .line 91
     iput-object p1, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 83
+    .line 93
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     if-eqz v0, :cond_2
@@ -244,7 +261,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 87
+    .line 97
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
@@ -254,7 +271,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 88
+    .line 98
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     iget-object v1, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -269,7 +286,7 @@
 
     iput-object v1, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 90
+    .line 100
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
@@ -277,7 +294,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 91
+    .line 101
     iget-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mItemInfo:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     iget-object v0, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
@@ -288,7 +305,7 @@
 
     iput-object v0, p0, Lcom/android/launcher3/executor/StateAppInfo;->mName:Ljava/lang/String;
 
-    .line 94
+    .line 104
     :cond_2
     return-void
 .end method
@@ -298,9 +315,21 @@
     .param p1, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 46
+    .line 47
     iput-object p1, p0, Lcom/android/launcher3/executor/StateAppInfo;->mName:Ljava/lang/String;
 
-    .line 47
+    .line 48
+    return-void
+.end method
+
+.method setOrdinalNumber(I)V
+    .locals 0
+    .param p1, "num"    # I
+
+    .prologue
+    .line 72
+    iput p1, p0, Lcom/android/launcher3/executor/StateAppInfo;->mOrdinalNumber:I
+
+    .line 73
     return-void
 .end method

@@ -12,6 +12,8 @@
 
 
 # static fields
+.field public static final INVALID_VALUE:I = -0x3e7
+
 .field public static final LAUNCHER_PROXY_NOT_READY:I = -0x1
 
 .field public static final LAUNCHER_PROXY_NOT_SUPPORTED_STATE:I = -0x2
@@ -27,8 +29,6 @@
 .field public static final PAGE_MOVE_EMPTY:I = 0x0
 
 .field public static final PAGE_MOVE_FIRST:I = -0x4
-
-.field public static final PAGE_MOVE_INVALID:I = -0x3e7
 
 .field public static final PAGE_MOVE_LAST:I = -0x5
 
@@ -76,10 +76,10 @@
     .locals 0
 
     .prologue
-    .line 80
+    .line 82
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 81
+    .line 83
     return-void
 .end method
 
@@ -103,15 +103,15 @@
 
     const/16 v2, -0x66
 
-    .line 128
+    .line 130
     if-nez p1, :cond_1
 
-    .line 139
+    .line 141
     :cond_0
     :goto_0
     return-object v0
 
-    .line 132
+    .line 134
     :cond_1
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -119,19 +119,19 @@
 
     if-eqz v1, :cond_2
 
-    .line 134
+    .line 136
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v0
 
-    .line 133
+    .line 135
     invoke-direct {p0, v0, v2}, Lcom/android/launcher3/proxy/LauncherProxy;->getItemsInfoByComponentName(Landroid/content/ComponentName;I)Ljava/util/List;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 135
+    .line 137
     :cond_2
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
@@ -139,7 +139,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 136
+    .line 138
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -168,7 +168,7 @@
     .end annotation
 
     .prologue
-    .line 1585
+    .line 1587
     invoke-static {}, Lcom/android/launcher3/common/compat/UserHandleCompat;->myUserHandle()Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     move-result-object v7
@@ -179,31 +179,31 @@
 
     move-result-object v0
 
-    .line 1586
+    .line 1588
     .local v0, "componentFilteredItems":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {v0}, Lcom/android/launcher3/proxy/ItemListHelper;->getUnhiddenItemList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v6
 
-    .line 1587
+    .line 1589
     .local v6, "unhiddenAndComponentFilteredItemList":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {v6, p2}, Lcom/android/launcher3/proxy/ItemListHelper;->getContainerIdMatchedItemList(Ljava/util/List;I)Ljava/util/List;
 
     move-result-object v5
 
-    .line 1590
+    .line 1592
     .local v5, "resultFilteredList":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {v6}, Lcom/android/launcher3/proxy/ItemListHelper;->getFolderItemList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v2
 
-    .line 1591
+    .line 1593
     .local v2, "folderItemList":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {}, Lcom/android/launcher3/proxy/ItemListHelper;->getAllItemMap()Ljava/util/Map;
 
     move-result-object v4
 
-    .line 1592
+    .line 1594
     .local v4, "itemMap":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/Long;Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -223,7 +223,7 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1593
+    .line 1595
     .local v1, "folderItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v8, v1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -237,7 +237,7 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1594
+    .line 1596
     .local v3, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     if-eqz v3, :cond_0
 
@@ -249,12 +249,12 @@
 
     if-nez v8, :cond_0
 
-    .line 1595
+    .line 1597
     invoke-interface {v5, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1599
+    .line 1601
     .end local v1    # "folderItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v3    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
@@ -278,18 +278,18 @@
     .end annotation
 
     .prologue
-    .line 1603
+    .line 1605
     invoke-static {}, Lcom/android/launcher3/common/model/DataLoader;->getItemList()Ljava/util/List;
 
     move-result-object v2
 
-    .line 1604
+    .line 1606
     .local v2, "allItems":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {v2}, Lcom/android/launcher3/proxy/ItemListHelper;->getUnhiddenItemList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v9
 
-    .line 1605
+    .line 1607
     .local v9, "unhiddenItemList":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     move-object/from16 v0, p1
 
@@ -297,7 +297,7 @@
 
     move-result-object v8
 
-    .line 1606
+    .line 1608
     .local v8, "unhiddenAndTitleFilteredList":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     move/from16 v0, p2
 
@@ -305,19 +305,19 @@
 
     move-result-object v7
 
-    .line 1609
+    .line 1611
     .local v7, "resultFilteredList":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {v8}, Lcom/android/launcher3/proxy/ItemListHelper;->getFolderItemList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v4
 
-    .line 1610
+    .line 1612
     .local v4, "folderItemList":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {}, Lcom/android/launcher3/proxy/ItemListHelper;->getAllItemMap()Ljava/util/Map;
 
     move-result-object v6
 
-    .line 1611
+    .line 1613
     .local v6, "itemMap":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/Long;Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -337,7 +337,7 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1612
+    .line 1614
     .local v3, "folderItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v12, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -351,7 +351,7 @@
 
     check-cast v5, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1613
+    .line 1615
     .local v5, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     if-eqz v5, :cond_0
 
@@ -365,12 +365,12 @@
 
     if-nez v11, :cond_0
 
-    .line 1614
+    .line 1616
     invoke-interface {v7, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1618
+    .line 1620
     .end local v3    # "folderItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v5    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
@@ -385,7 +385,7 @@
     .prologue
     const/4 v3, 0x6
 
-    .line 678
+    .line 680
     if-eqz p1, :cond_0
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getItemInfo()Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -394,15 +394,15 @@
 
     if-nez v1, :cond_1
 
-    .line 679
+    .line 681
     :cond_0
     const/4 v1, -0x3
 
-    .line 695
+    .line 697
     :goto_0
     return v1
 
-    .line 681
+    .line 683
     :cond_1
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
@@ -412,20 +412,20 @@
 
     if-ne v1, v3, :cond_2
 
-    .line 682
+    .line 684
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v3, v2}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->finishStage(ILcom/android/launcher3/common/stage/StageEntry;)V
 
-    .line 686
+    .line 688
     :cond_2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 687
+    .line 689
     .local v0, "hideItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getItemInfo()Lcom/android/launcher3/common/base/item/ItemInfo;
 
@@ -433,21 +433,21 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 689
+    .line 691
     if-eqz p2, :cond_3
 
-    .line 690
+    .line 692
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->hideApps(Ljava/util/ArrayList;)V
 
-    .line 695
+    .line 697
     :goto_1
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 692
+    .line 694
     :cond_3
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
@@ -467,15 +467,15 @@
 
     const/4 v6, 0x6
 
-    .line 1425
+    .line 1427
     if-nez p1, :cond_1
 
-    .line 1452
+    .line 1454
     :cond_0
     :goto_0
     return v3
 
-    .line 1428
+    .line 1430
     :cond_1
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
@@ -489,7 +489,7 @@
 
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
-    .line 1429
+    .line 1431
     invoke-interface {v4}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
 
     move-result v4
@@ -501,13 +501,13 @@
 
     if-nez v4, :cond_4
 
-    .line 1431
+    .line 1433
     :cond_3
     const/4 v3, -0x1
 
     goto :goto_0
 
-    .line 1434
+    .line 1436
     :cond_4
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
@@ -517,28 +517,28 @@
 
     if-ne v4, v6, :cond_5
 
-    .line 1435
+    .line 1437
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     const/4 v5, 0x0
 
     invoke-interface {v4, v6, v5}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->finishStage(ILcom/android/launcher3/common/stage/StageEntry;)V
 
-    .line 1438
+    .line 1440
     :cond_5
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v2
 
-    .line 1439
+    .line 1441
     .local v2, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     const/4 v1, 0x0
 
-    .line 1440
+    .line 1442
     .local v1, "itemAdded":Z
     if-eqz v2, :cond_7
 
-    .line 1441
+    .line 1443
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -557,7 +557,7 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1443
+    .line 1445
     .local v0, "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v6, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -567,22 +567,22 @@
 
     if-gez v5, :cond_6
 
-    .line 1444
+    .line 1446
     iget-object v5, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v5, v0}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->addFolderItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1445
+    .line 1447
     const/4 v1, 0x1
 
     goto :goto_1
 
-    .line 1449
+    .line 1451
     .end local v0    # "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_7
     if-eqz v1, :cond_0
 
-    .line 1450
+    .line 1452
     const/4 v3, 0x0
 
     goto :goto_0
@@ -595,17 +595,17 @@
     .prologue
     const/4 v5, 0x6
 
-    .line 1456
+    .line 1458
     if-nez p1, :cond_0
 
-    .line 1457
+    .line 1459
     const/4 v3, -0x3
 
-    .line 1478
+    .line 1480
     :goto_0
     return v3
 
-    .line 1459
+    .line 1461
     :cond_0
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
@@ -619,7 +619,7 @@
 
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
-    .line 1460
+    .line 1462
     invoke-interface {v3}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
 
     move-result v3
@@ -631,13 +631,13 @@
 
     if-nez v3, :cond_3
 
-    .line 1462
+    .line 1464
     :cond_2
     const/4 v3, -0x1
 
     goto :goto_0
 
-    .line 1465
+    .line 1467
     :cond_3
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
@@ -647,24 +647,24 @@
 
     if-ne v3, v5, :cond_4
 
-    .line 1466
+    .line 1468
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     const/4 v4, 0x0
 
     invoke-interface {v3, v5, v4}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->finishStage(ILcom/android/launcher3/common/stage/StageEntry;)V
 
-    .line 1469
+    .line 1471
     :cond_4
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v2
 
-    .line 1470
+    .line 1472
     .local v2, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v2, :cond_6
 
-    .line 1471
+    .line 1473
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -683,13 +683,13 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1472
+    .line 1474
     .local v0, "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v4, :cond_5
 
-    .line 1473
+    .line 1475
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
     .end local v0    # "i":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -697,7 +697,7 @@
 
     move-result-object v1
 
-    .line 1474
+    .line 1476
     .local v1, "item":Lcom/android/launcher3/common/base/item/IconInfo;
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
@@ -705,7 +705,7 @@
 
     goto :goto_1
 
-    .line 1478
+    .line 1480
     .end local v1    # "item":Lcom/android/launcher3/common/base/item/IconInfo;
     :cond_6
     const/4 v3, 0x0
@@ -723,30 +723,30 @@
     .prologue
     const/4 v0, -0x3
 
-    .line 919
+    .line 921
     if-nez p1, :cond_1
 
-    .line 930
+    .line 932
     :cond_0
     :goto_0
     return v0
 
-    .line 922
+    .line 924
     :cond_1
     if-lez p2, :cond_2
 
-    .line 923
+    .line 925
     invoke-virtual {p0, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->isHomeValidPage(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 929
+    .line 931
     :cond_2
     invoke-virtual {p0, p1, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->createHomeAppShortcut(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;I)I
 
-    .line 930
+    .line 932
     const/4 v0, 0x0
 
     goto :goto_0
@@ -756,12 +756,12 @@
     .locals 1
 
     .prologue
-    .line 821
+    .line 823
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->addNewHomePageInOverViewMode()V
 
-    .line 822
+    .line 824
     const/4 v0, 0x0
 
     return v0
@@ -771,12 +771,12 @@
     .locals 1
 
     .prologue
-    .line 816
+    .line 818
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->addNewPage()V
 
-    .line 817
+    .line 819
     const/4 v0, 0x0
 
     return v0
@@ -786,12 +786,12 @@
     .locals 1
 
     .prologue
-    .line 783
+    .line 785
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;->addResultApps()V
 
-    .line 785
+    .line 787
     const/4 v0, 0x0
 
     return v0
@@ -804,23 +804,23 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1355
+    .line 1357
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-nez v3, :cond_1
 
-    .line 1366
+    .line 1368
     :cond_0
     :goto_0
     return v2
 
-    .line 1358
+    .line 1360
     :cond_1
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 1359
+    .line 1361
     .local v1, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v1, :cond_0
 
@@ -830,7 +830,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 1362
+    .line 1364
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -848,7 +848,7 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1363
+    .line 1365
     .local v0, "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
@@ -856,14 +856,14 @@
 
     goto :goto_1
 
-    .line 1365
+    .line 1367
     .end local v0    # "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v2}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->startSecureFolder()V
 
-    .line 1366
+    .line 1368
     const/4 v2, 0x0
 
     goto :goto_0
@@ -873,25 +873,25 @@
     .locals 2
 
     .prologue
-    .line 934
+    .line 936
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/proxy/WidgetProxyCallbacks;->getWidgetResultItem()Lcom/android/launcher3/common/base/item/PendingAddItemInfo;
 
     move-result-object v0
 
-    .line 935
+    .line 937
     .local v0, "widget":Lcom/android/launcher3/common/base/item/PendingAddItemInfo;
     if-nez v0, :cond_0
 
-    .line 936
+    .line 938
     const/4 v1, -0x3
 
-    .line 944
+    .line 946
     :goto_0
     return v1
 
-    .line 939
+    .line 941
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -901,15 +901,15 @@
 
     if-eqz v1, :cond_1
 
-    .line 940
+    .line 942
     invoke-virtual {p0}, Lcom/android/launcher3/proxy/LauncherProxy;->goHome()I
 
-    .line 941
+    .line 943
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 944
+    .line 946
     :cond_1
     const/4 v1, -0x2
 
@@ -922,12 +922,12 @@
     .param p2, "isTop"    # Z
 
     .prologue
-    .line 831
+    .line 833
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1, p2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->alignHomeIcon(IZ)V
 
-    .line 832
+    .line 834
     const/4 v0, 0x0
 
     return v0
@@ -937,25 +937,25 @@
     .locals 1
 
     .prologue
-    .line 1213
+    .line 1215
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 1214
+    .line 1216
     const/4 v0, -0x1
 
-    .line 1218
+    .line 1220
     :goto_0
     return v0
 
-    .line 1217
+    .line 1219
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->tidyUpPages()V
 
-    .line 1218
+    .line 1220
     const/4 v0, 0x0
 
     goto :goto_0
@@ -968,23 +968,23 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1341
+    .line 1343
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-nez v2, :cond_1
 
-    .line 1351
+    .line 1353
     :cond_0
     :goto_0
     return v1
 
-    .line 1345
+    .line 1347
     :cond_1
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 1347
+    .line 1349
     .local v0, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_0
 
@@ -994,7 +994,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1351
+    .line 1353
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1015,17 +1015,17 @@
     .param p1, "newTitle"    # Ljava/lang/String;
 
     .prologue
-    .line 722
+    .line 724
     if-nez p1, :cond_0
 
-    .line 723
+    .line 725
     const/4 v0, -0x3
 
-    .line 733
+    .line 735
     :goto_0
     return v0
 
-    .line 725
+    .line 727
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
@@ -1033,39 +1033,39 @@
 
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
-    .line 726
+    .line 728
     invoke-interface {v0}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->getOpenedFolder()Lcom/android/launcher3/folder/FolderInfo;
 
     move-result-object v0
 
     if-nez v0, :cond_2
 
-    .line 727
+    .line 729
     :cond_1
     const/4 v0, -0x1
 
     goto :goto_0
 
-    .line 730
+    .line 732
     :cond_2
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
-    .line 731
+    .line 733
     invoke-interface {v1}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->getOpenedFolder()Lcom/android/launcher3/folder/FolderInfo;
 
     move-result-object v1
 
-    .line 730
+    .line 732
     invoke-interface {v0, v1, p1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->changeFolderTitle(Lcom/android/launcher3/common/base/item/ItemInfo;Ljava/lang/String;)V
 
-    .line 732
+    .line 734
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->changeTitle(Ljava/lang/String;)V
 
-    .line 733
+    .line 735
     const/4 v0, 0x0
 
     goto :goto_0
@@ -1076,12 +1076,12 @@
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    .line 864
+    .line 866
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->changeScreengrid(Ljava/lang/String;)V
 
-    .line 865
+    .line 867
     const/4 v0, 0x0
 
     return v0
@@ -1091,28 +1091,28 @@
     .locals 2
 
     .prologue
-    .line 1176
+    .line 1178
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 1177
+    .line 1179
     const/4 v0, -0x1
 
-    .line 1182
+    .line 1184
     :goto_0
     return v0
 
-    .line 1180
+    .line 1182
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     sget-object v1, Lcom/android/launcher3/allapps/controller/AppsController$ViewType;->ALPHABETIC_GRID:Lcom/android/launcher3/allapps/controller/AppsController$ViewType;
 
-    .line 1181
+    .line 1183
     invoke-interface {v0, v1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->setViewType(Lcom/android/launcher3/allapps/controller/AppsController$ViewType;)V
 
-    .line 1182
+    .line 1184
     const/4 v0, 0x0
 
     goto :goto_0
@@ -1122,19 +1122,19 @@
     .locals 2
 
     .prologue
-    .line 1186
+    .line 1188
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 1187
+    .line 1189
     const/4 v0, -0x1
 
-    .line 1191
+    .line 1193
     :goto_0
     return v0
 
-    .line 1190
+    .line 1192
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
@@ -1142,7 +1142,7 @@
 
     invoke-interface {v0, v1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->setViewType(Lcom/android/launcher3/allapps/controller/AppsController$ViewType;)V
 
-    .line 1191
+    .line 1193
     const/4 v0, 0x0
 
     goto :goto_0
@@ -1153,17 +1153,17 @@
     .param p1, "newTitle"    # Ljava/lang/String;
 
     .prologue
-    .line 707
+    .line 709
     if-nez p1, :cond_0
 
-    .line 708
+    .line 710
     const/4 v0, -0x3
 
-    .line 718
+    .line 720
     :goto_0
     return v0
 
-    .line 710
+    .line 712
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
@@ -1171,39 +1171,39 @@
 
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
-    .line 711
+    .line 713
     invoke-interface {v0}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->getOpenedFolder()Lcom/android/launcher3/folder/FolderInfo;
 
     move-result-object v0
 
     if-nez v0, :cond_2
 
-    .line 712
+    .line 714
     :cond_1
     const/4 v0, -0x1
 
     goto :goto_0
 
-    .line 715
+    .line 717
     :cond_2
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
-    .line 716
+    .line 718
     invoke-interface {v1}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->getOpenedFolder()Lcom/android/launcher3/folder/FolderInfo;
 
     move-result-object v1
 
-    .line 715
+    .line 717
     invoke-interface {v0, v1, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->changeFolderTitle(Lcom/android/launcher3/common/base/item/ItemInfo;Ljava/lang/String;)V
 
-    .line 717
+    .line 719
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->changeTitle(Ljava/lang/String;)V
 
-    .line 718
+    .line 720
     const/4 v0, 0x0
 
     goto :goto_0
@@ -1215,12 +1215,12 @@
     .param p2, "toPage"    # I
 
     .prologue
-    .line 811
+    .line 813
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1, p2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->changeHomePageOrder(II)V
 
-    .line 812
+    .line 814
     const/4 v0, 0x0
 
     return v0
@@ -1231,12 +1231,12 @@
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    .line 859
+    .line 861
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->changeScreengrid(Ljava/lang/String;)V
 
-    .line 860
+    .line 862
     const/4 v0, 0x0
 
     return v0
@@ -1247,12 +1247,12 @@
     .param p1, "homeOnlyMode"    # Z
 
     .prologue
-    .line 1257
+    .line 1259
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->changeHomeStyle(Z)V
 
-    .line 1258
+    .line 1260
     const/4 v0, 0x0
 
     return v0
@@ -1264,7 +1264,7 @@
     .param p2, "isUpward"    # Z
 
     .prologue
-    .line 1556
+    .line 1558
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1, p2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->checkAbleAlignIcon(IZ)Z
@@ -1279,7 +1279,7 @@
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    .line 881
+    .line 883
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->checkMatchGridOption(Ljava/lang/String;)Z
@@ -1294,7 +1294,7 @@
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    .line 877
+    .line 879
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->checkMatchGridOption(Ljava/lang/String;)Z
@@ -1308,7 +1308,7 @@
     .locals 1
 
     .prologue
-    .line 1552
+    .line 1554
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->checkNeedDisplayAutoalignDialog()Z
@@ -1323,7 +1323,7 @@
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    .line 873
+    .line 875
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->checkValidGridOption(Ljava/lang/String;)Z
@@ -1338,7 +1338,7 @@
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    .line 869
+    .line 871
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->checkValidGridOption(Ljava/lang/String;)Z
@@ -1355,23 +1355,23 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1370
+    .line 1372
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-nez v3, :cond_1
 
-    .line 1380
+    .line 1382
     :cond_0
     :goto_0
     return v2
 
-    .line 1373
+    .line 1375
     :cond_1
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 1374
+    .line 1376
     .local v1, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v1, :cond_0
 
@@ -1381,7 +1381,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 1377
+    .line 1379
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1399,7 +1399,7 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1378
+    .line 1380
     .local v0, "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
@@ -1407,7 +1407,7 @@
 
     goto :goto_1
 
-    .line 1380
+    .line 1382
     .end local v0    # "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     const/4 v2, 0x0
@@ -1422,17 +1422,17 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1384
+    .line 1386
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-nez v3, :cond_1
 
-    .line 1397
+    .line 1399
     :cond_0
     :goto_0
     return v2
 
-    .line 1387
+    .line 1389
     :cond_1
     instance-of v3, p1, Lcom/android/launcher3/folder/FolderInfo;
 
@@ -1440,10 +1440,10 @@
 
     move-object v0, p1
 
-    .line 1388
+    .line 1390
     check-cast v0, Lcom/android/launcher3/folder/FolderInfo;
 
-    .line 1389
+    .line 1391
     .local v0, "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     iget-object v2, v0, Lcom/android/launcher3/folder/FolderInfo;->contents:Ljava/util/ArrayList;
 
@@ -1465,20 +1465,20 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    .line 1390
+    .line 1392
     .local v1, "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     iget v3, v1, Lcom/android/launcher3/common/base/item/IconInfo;->mBadgeCount:I
 
     if-eqz v3, :cond_2
 
-    .line 1391
+    .line 1393
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v3, v1}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->clearBadge(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
     goto :goto_1
 
-    .line 1397
+    .line 1399
     .end local v1    # "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     :cond_3
     const/4 v2, 0x0
@@ -1490,7 +1490,7 @@
     .locals 2
 
     .prologue
-    .line 242
+    .line 244
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -1501,20 +1501,20 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 243
+    .line 245
     const/4 v0, -0x1
 
-    .line 247
+    .line 249
     :goto_0
     return v0
 
-    .line 246
+    .line 248
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->closeFolder()V
 
-    .line 247
+    .line 249
     const/4 v0, 0x0
 
     goto :goto_0
@@ -1524,20 +1524,20 @@
     .locals 1
 
     .prologue
-    .line 222
+    .line 224
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v0
 
-    .line 223
+    .line 225
     invoke-virtual {v0}, Lcom/android/launcher3/LauncherAppState;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 222
+    .line 224
     invoke-static {v0}, Lcom/android/launcher3/Utilities;->startContactUsActivity(Landroid/content/Context;)V
 
-    .line 224
+    .line 226
     const/4 v0, 0x0
 
     return v0
@@ -1553,23 +1553,23 @@
 
     const/4 v2, 0x0
 
-    .line 650
+    .line 652
     if-nez p1, :cond_0
 
-    .line 651
+    .line 653
     const/4 v1, -0x3
 
-    .line 662
+    .line 664
     :goto_0
     return v1
 
-    .line 653
+    .line 655
     :cond_0
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 654
+    .line 656
     .local v0, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_1
 
@@ -1579,7 +1579,7 @@
 
     if-lez v1, :cond_1
 
-    .line 655
+    .line 657
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1594,10 +1594,10 @@
 
     invoke-interface {p1, v1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->setName(Ljava/lang/String;)V
 
-    .line 656
+    .line 658
     if-ltz p2, :cond_2
 
-    .line 657
+    .line 659
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1620,10 +1620,10 @@
     :goto_1
     move v1, v2
 
-    .line 662
+    .line 664
     goto :goto_0
 
-    .line 659
+    .line 661
     :cond_2
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -1653,18 +1653,18 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 666
+    .line 668
     if-nez p1, :cond_1
 
-    .line 667
+    .line 669
     const/4 v2, -0x3
 
-    .line 674
+    .line 676
     :cond_0
     :goto_0
     return v2
 
-    .line 669
+    .line 671
     :cond_1
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
@@ -1676,18 +1676,18 @@
 
     move-result-object v1
 
-    .line 670
+    .line 672
     .local v1, "view":Landroid/view/View;
     if-eqz v1, :cond_0
 
-    .line 671
+    .line 673
     invoke-virtual {v1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 672
+    .line 674
     .local v0, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     if-eqz v0, :cond_0
 
@@ -1705,7 +1705,7 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 1664
+    .line 1667
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->enableAllAppsBadge(Z)Z
@@ -1714,10 +1714,10 @@
 
     if-nez v0, :cond_0
 
-    .line 1665
+    .line 1668
     const/4 v0, -0x1
 
-    .line 1667
+    .line 1670
     :goto_0
     return v0
 
@@ -1732,44 +1732,44 @@
     .param p1, "show"    # Z
 
     .prologue
-    .line 1262
+    .line 1264
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 1263
+    .line 1265
     const/4 v0, -0x1
 
-    .line 1275
+    .line 1277
     :goto_0
     return v0
 
-    .line 1266
+    .line 1268
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 1267
+    .line 1269
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->showAppsButton()V
 
-    .line 1272
+    .line 1274
     :goto_1
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->exitSettingsView()V
 
-    .line 1273
+    .line 1275
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->exitSubState()V
 
-    .line 1275
+    .line 1277
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 1269
+    .line 1271
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
@@ -1784,7 +1784,7 @@
     .param p2, "enable"    # Z
 
     .prologue
-    .line 1671
+    .line 1674
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0, p1, p2}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->enableSingleAppBadge(Ljava/lang/String;Z)Z
@@ -1793,10 +1793,10 @@
 
     if-nez v0, :cond_0
 
-    .line 1672
+    .line 1675
     const/4 v0, -0x1
 
-    .line 1674
+    .line 1677
     :goto_0
     return v0
 
@@ -1813,21 +1813,21 @@
     .prologue
     const/4 v2, -0x3
 
-    .line 754
+    .line 756
     if-nez p1, :cond_1
 
-    .line 767
+    .line 769
     :cond_0
     :goto_0
     return v2
 
-    .line 758
+    .line 760
     :cond_1
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 759
+    .line 761
     .local v1, "name":Ljava/lang/String;
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
@@ -1835,13 +1835,13 @@
 
     move-result-object v0
 
-    .line 761
+    .line 763
     .local v0, "iv":Lcom/android/launcher3/common/view/IconView;
     instance-of v3, v0, Lcom/android/launcher3/folder/view/FolderIconView;
 
     if-eqz v3, :cond_0
 
-    .line 762
+    .line 764
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     check-cast v0, Lcom/android/launcher3/folder/view/FolderIconView;
@@ -1849,7 +1849,7 @@
     .end local v0    # "iv":Lcom/android/launcher3/common/view/IconView;
     invoke-interface {v2, v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->enterFolderAddAppsView(Lcom/android/launcher3/folder/view/FolderIconView;)V
 
-    .line 767
+    .line 769
     const/4 v2, 0x0
 
     goto :goto_0
@@ -1859,12 +1859,12 @@
     .locals 1
 
     .prologue
-    .line 1659
+    .line 1662
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->enterBadgeManagementView()V
 
-    .line 1660
+    .line 1663
     const/4 v0, 0x0
 
     return v0
@@ -1874,12 +1874,12 @@
     .locals 1
 
     .prologue
-    .line 841
+    .line 843
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->enterHideAppsView()V
 
-    .line 842
+    .line 844
     const/4 v0, 0x0
 
     return v0
@@ -1889,12 +1889,12 @@
     .locals 1
 
     .prologue
-    .line 798
+    .line 800
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->enterHomeEditView()V
 
-    .line 799
+    .line 801
     const/4 v0, 0x0
 
     return v0
@@ -1907,21 +1907,21 @@
     .prologue
     const/4 v2, -0x3
 
-    .line 737
+    .line 739
     if-nez p1, :cond_1
 
-    .line 750
+    .line 752
     :cond_0
     :goto_0
     return v2
 
-    .line 741
+    .line 743
     :cond_1
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 742
+    .line 744
     .local v1, "name":Ljava/lang/String;
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -1929,13 +1929,13 @@
 
     move-result-object v0
 
-    .line 744
+    .line 746
     .local v0, "iv":Lcom/android/launcher3/common/view/IconView;
     instance-of v3, v0, Lcom/android/launcher3/folder/view/FolderIconView;
 
     if-eqz v3, :cond_0
 
-    .line 745
+    .line 747
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     check-cast v0, Lcom/android/launcher3/folder/view/FolderIconView;
@@ -1943,7 +1943,7 @@
     .end local v0    # "iv":Lcom/android/launcher3/common/view/IconView;
     invoke-interface {v2, v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->enterFolderAddAppsView(Lcom/android/launcher3/folder/view/FolderIconView;)V
 
-    .line 750
+    .line 752
     const/4 v2, 0x0
 
     goto :goto_0
@@ -1953,17 +1953,17 @@
     .locals 1
 
     .prologue
-    .line 852
+    .line 854
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->exitSettingsView()V
 
-    .line 853
+    .line 855
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->showAppsGridSettingView()V
 
-    .line 855
+    .line 857
     const/4 v0, 0x0
 
     return v0
@@ -1973,17 +1973,17 @@
     .locals 1
 
     .prologue
-    .line 846
+    .line 848
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->exitSettingsView()V
 
-    .line 847
+    .line 849
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->enterHomeSettingGridSettingView()V
 
-    .line 848
+    .line 850
     const/4 v0, 0x0
 
     return v0
@@ -1993,12 +1993,12 @@
     .locals 1
 
     .prologue
-    .line 1252
+    .line 1254
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->enterHomeSettingChangeModeView()V
 
-    .line 1253
+    .line 1255
     const/4 v0, 0x0
 
     return v0
@@ -2008,12 +2008,12 @@
     .locals 1
 
     .prologue
-    .line 1247
+    .line 1249
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->enterHomeSettingView()V
 
-    .line 1248
+    .line 1250
     const/4 v0, 0x0
 
     return v0
@@ -2023,12 +2023,12 @@
     .locals 1
 
     .prologue
-    .line 836
+    .line 838
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->enterWidgetListView()V
 
-    .line 837
+    .line 839
     const/4 v0, 0x0
 
     return v0
@@ -2043,15 +2043,15 @@
 
     const/4 v4, -0x2
 
-    .line 628
+    .line 630
     instance-of v6, p1, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     if-nez v6, :cond_1
 
-    .line 629
+    .line 631
     const/4 v4, -0x3
 
-    .line 646
+    .line 648
     :cond_0
     :goto_0
     return v4
@@ -2059,21 +2059,21 @@
     :cond_1
     move-object v2, p1
 
-    .line 631
+    .line 633
     check-cast v2, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
-    .line 632
+    .line 634
     .local v2, "widget":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     iget-object v0, v2, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
-    .line 633
+    .line 635
     .local v0, "cn":Landroid/content/ComponentName;
     if-eqz v0, :cond_0
 
-    .line 637
+    .line 639
     iget-object v6, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 638
+    .line 640
     invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v7
@@ -2082,7 +2082,7 @@
 
     move-result-object v3
 
-    .line 639
+    .line 641
     .local v3, "widgets":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -2100,7 +2100,7 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 640
+    .line 642
     .local v1, "w":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-object v6, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -2112,14 +2112,14 @@
 
     move v4, v5
 
-    .line 641
+    .line 643
     goto :goto_0
 
     .end local v1    # "w":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     move v4, v5
 
-    .line 646
+    .line 648
     goto :goto_0
 .end method
 
@@ -2127,7 +2127,7 @@
     .locals 2
 
     .prologue
-    .line 893
+    .line 895
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -2138,20 +2138,20 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 894
+    .line 896
     const/4 v0, -0x2
 
-    .line 897
+    .line 899
     :goto_0
     return v0
 
-    .line 896
+    .line 898
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/WidgetProxyCallbacks;->enterSearchState()V
 
-    .line 897
+    .line 899
     const/4 v0, 0x0
 
     goto :goto_0
@@ -2161,7 +2161,7 @@
     .locals 2
 
     .prologue
-    .line 901
+    .line 903
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -2172,20 +2172,20 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 902
+    .line 904
     const/4 v0, -0x2
 
-    .line 905
+    .line 907
     :goto_0
     return v0
 
-    .line 904
+    .line 906
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/WidgetProxyCallbacks;->enterUninstallState()V
 
-    .line 905
+    .line 907
     const/4 v0, 0x0
 
     goto :goto_0
@@ -2196,19 +2196,19 @@
     .param p1, "appInfo"    # Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;
 
     .prologue
-    .line 1639
+    .line 1642
     invoke-virtual {p0}, Lcom/android/launcher3/proxy/LauncherProxy;->isHomeOnlyMode()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 1640
+    .line 1643
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getHomeItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 1645
+    .line 1648
     .local v1, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :goto_0
     if-eqz v1, :cond_1
@@ -2219,7 +2219,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 1646
+    .line 1649
     const/4 v2, 0x0
 
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2228,28 +2228,28 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1647
+    .line 1650
     .local v0, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     if-eqz v0, :cond_1
 
-    .line 1648
+    .line 1651
     instance-of v2, v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v2, :cond_1
 
-    .line 1649
+    .line 1652
     iget-object v2, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
 
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1654
+    .line 1657
     .end local v0    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :goto_1
     return-object v2
 
-    .line 1642
+    .line 1645
     .end local v1    # "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_0
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
@@ -2259,7 +2259,7 @@
     .restart local v1    # "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     goto :goto_0
 
-    .line 1654
+    .line 1657
     :cond_1
     const-string v2, ""
 
@@ -2282,7 +2282,7 @@
     .end annotation
 
     .prologue
-    .line 949
+    .line 951
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v0
@@ -2294,7 +2294,7 @@
     .locals 1
 
     .prologue
-    .line 279
+    .line 281
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->getPageCount()I
@@ -2308,7 +2308,7 @@
     .locals 1
 
     .prologue
-    .line 1544
+    .line 1546
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -2334,19 +2334,19 @@
     .end annotation
 
     .prologue
-    .line 162
+    .line 164
     iget-object v5, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     if-nez v5, :cond_1
 
-    .line 163
+    .line 165
     const/4 v4, 0x0
 
-    .line 187
+    .line 189
     :cond_0
     return-object v4
 
-    .line 165
+    .line 167
     :cond_1
     iget-object v5, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
@@ -2354,17 +2354,17 @@
 
     move-result-object v1
 
-    .line 166
+    .line 168
     .local v1, "folderIconView":Lcom/android/launcher3/folder/view/FolderIconView;
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 168
+    .line 170
     .local v4, "itemList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v1, :cond_0
 
-    .line 169
+    .line 171
     invoke-virtual {v1}, Lcom/android/launcher3/folder/view/FolderIconView;->getFolderView()Lcom/android/launcher3/folder/view/FolderView;
 
     move-result-object v5
@@ -2373,7 +2373,7 @@
 
     move-result-object v2
 
-    .line 171
+    .line 173
     .local v2, "folderItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/view/View;>;"
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -2393,7 +2393,7 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 172
+    .line 174
     .local v0, "child":Landroid/view/View;
     invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -2401,7 +2401,7 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 173
+    .line 175
     .local v3, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -2409,14 +2409,14 @@
 
     if-eqz v6, :cond_3
 
-    .line 174
+    .line 176
     iget-object v6, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
     if-eqz v6, :cond_2
 
     iget-object v6, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 175
+    .line 177
     invoke-virtual {v6}, Landroid/content/ComponentName;->toString()Ljava/lang/String;
 
     move-result-object v6
@@ -2435,12 +2435,12 @@
 
     if-eqz v6, :cond_2
 
-    .line 176
+    .line 178
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 178
+    .line 180
     :cond_3
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
@@ -2448,14 +2448,14 @@
 
     if-eqz v6, :cond_2
 
-    .line 179
+    .line 181
     iget-object v6, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
 
     if-eqz v6, :cond_2
 
     iget-object v6, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
 
-    .line 180
+    .line 182
     invoke-interface {v6}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v6
@@ -2486,7 +2486,7 @@
 
     if-nez v6, :cond_2
 
-    .line 181
+    .line 183
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -2497,7 +2497,7 @@
     .param p1, "folderName"    # Ljava/lang/String;
 
     .prologue
-    .line 203
+    .line 205
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getFolderItemViewByTitle(Ljava/lang/String;)Lcom/android/launcher3/folder/view/FolderIconView;
@@ -2511,14 +2511,14 @@
     .locals 2
 
     .prologue
-    .line 474
+    .line 476
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v0
 
-    .line 475
+    .line 477
     .local v0, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     invoke-virtual {v0}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 
@@ -2532,7 +2532,7 @@
     .param p1, "folderName"    # Ljava/lang/String;
 
     .prologue
-    .line 207
+    .line 209
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getFolderItemCountByTitle(Ljava/lang/String;)I
@@ -2562,15 +2562,15 @@
 
     const/16 v2, -0x64
 
-    .line 113
+    .line 115
     if-nez p1, :cond_1
 
-    .line 124
+    .line 126
     :cond_0
     :goto_0
     return-object v0
 
-    .line 117
+    .line 119
     :cond_1
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -2578,19 +2578,19 @@
 
     if-eqz v1, :cond_2
 
-    .line 119
+    .line 121
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v0
 
-    .line 118
+    .line 120
     invoke-direct {p0, v0, v2}, Lcom/android/launcher3/proxy/LauncherProxy;->getItemsInfoByComponentName(Landroid/content/ComponentName;I)Ljava/util/List;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 120
+    .line 122
     :cond_2
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
@@ -2598,7 +2598,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 121
+    .line 123
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -2614,27 +2614,27 @@
     .locals 3
 
     .prologue
-    .line 445
+    .line 447
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v1
 
-    .line 446
+    .line 448
     .local v1, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     const/4 v0, 0x1
 
-    .line 447
+    .line 449
     .local v0, "pages":I
     if-eqz v1, :cond_0
 
-    .line 448
+    .line 450
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
     move-result v0
 
-    .line 451
+    .line 453
     :cond_0
     return v0
 .end method
@@ -2643,14 +2643,14 @@
     .locals 3
 
     .prologue
-    .line 456
+    .line 458
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v1
 
-    .line 457
+    .line 459
     .local v1, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
@@ -2658,7 +2658,7 @@
 
     add-int/lit8 v0, v2, -0x1
 
-    .line 458
+    .line 460
     .local v0, "pageCount":I
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -2668,10 +2668,10 @@
 
     if-eqz v2, :cond_0
 
-    .line 459
+    .line 461
     add-int/lit8 v0, v0, -0x1
 
-    .line 462
+    .line 464
     :cond_0
     return v0
 .end method
@@ -2681,7 +2681,7 @@
     .param p1, "screenId"    # J
 
     .prologue
-    .line 1726
+    .line 1729
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1, p2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPageIndexForScreenId(J)I
@@ -2709,15 +2709,15 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 423
+    .line 425
     if-nez p1, :cond_1
 
-    .line 434
+    .line 436
     :cond_0
     :goto_0
     return-object v0
 
-    .line 426
+    .line 428
     :cond_1
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -2725,22 +2725,22 @@
 
     if-eqz v1, :cond_2
 
-    .line 427
+    .line 429
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 429
+    .line 431
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    .line 428
+    .line 430
     invoke-interface {v0, v1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getWidgetItemsInfoByComponentName(Landroid/content/ComponentName;)Ljava/util/ArrayList;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 430
+    .line 432
     :cond_2
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
@@ -2748,15 +2748,15 @@
 
     if-eqz v1, :cond_0
 
-    .line 431
+    .line 433
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 432
+    .line 434
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 431
+    .line 433
     invoke-interface {v0, v1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getWidgetItemsInfoByTitle(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -2765,29 +2765,52 @@
 .end method
 
 .method public final getItemInfoInHideApps(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Lcom/android/launcher3/common/base/item/ItemInfo;
-    .locals 2
+    .locals 3
     .param p1, "appInfo"    # Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;
 
     .prologue
     const/4 v0, 0x0
 
-    .line 1622
+    .line 1624
     if-nez p1, :cond_1
 
-    .line 1632
+    .line 1635
     :cond_0
     :goto_0
     return-object v0
 
-    .line 1626
+    .line 1628
     :cond_1
+    invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getOrdinalNumber()I
+
+    move-result v1
+
+    const/16 v2, -0x3e7
+
+    if-eq v1, v2, :cond_2
+
+    .line 1629
+    iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
+
+    invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getOrdinalNumber()I
+
+    move-result v1
+
+    invoke-interface {v0, v1}, Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;->getItem(I)Lcom/android/launcher3/common/base/item/ItemInfo;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 1630
+    :cond_2
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_3
 
-    .line 1627
+    .line 1631
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
@@ -2800,15 +2823,15 @@
 
     goto :goto_0
 
-    .line 1628
-    :cond_2
+    .line 1632
+    :cond_3
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1629
+    .line 1633
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -2827,16 +2850,16 @@
     .param p1, "appInfo"    # Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;
 
     .prologue
-    .line 1106
+    .line 1108
     const/4 v1, -0x1
 
-    .line 1108
+    .line 1110
     .local v1, "result":I
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 1109
+    .line 1111
     .local v0, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_0
 
@@ -2846,7 +2869,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1110
+    .line 1112
     const/4 v2, 0x0
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2859,7 +2882,7 @@
 
     long-to-int v1, v2
 
-    .line 1113
+    .line 1115
     :cond_0
     return v1
 .end method
@@ -2869,7 +2892,7 @@
     .param p1, "cn"    # Landroid/content/ComponentName;
 
     .prologue
-    .line 199
+    .line 201
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getItemViewByComponentName(Landroid/content/ComponentName;)Landroid/view/View;
@@ -2884,7 +2907,7 @@
     .param p1, "itemName"    # Ljava/lang/String;
 
     .prologue
-    .line 195
+    .line 197
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getItemViewByTitle(Ljava/lang/String;)Lcom/android/launcher3/common/view/IconView;
@@ -2898,23 +2921,23 @@
     .locals 4
 
     .prologue
-    .line 153
+    .line 155
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->getOpenedFolder()Lcom/android/launcher3/folder/FolderInfo;
 
     move-result-object v0
 
-    .line 155
+    .line 157
     .local v0, "folder":Lcom/android/launcher3/folder/FolderInfo;
     if-eqz v0, :cond_0
 
-    .line 156
+    .line 158
     iget-wide v2, v0, Lcom/android/launcher3/folder/FolderInfo;->screenId:J
 
     long-to-int v1, v2
 
-    .line 158
+    .line 160
     :goto_0
     return v1
 
@@ -2928,7 +2951,7 @@
     .locals 1
 
     .prologue
-    .line 283
+    .line 285
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     if-eqz v0, :cond_0
@@ -2941,7 +2964,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 284
+    .line 286
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
@@ -2952,7 +2975,7 @@
 
     move-result v0
 
-    .line 286
+    .line 288
     :goto_0
     return v0
 
@@ -2966,25 +2989,25 @@
     .locals 6
 
     .prologue
-    .line 143
+    .line 145
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v2}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->getOpenedFolderIconView()Lcom/android/launcher3/folder/view/FolderIconView;
 
     move-result-object v0
 
-    .line 145
+    .line 147
     .local v0, "folderIconView":Lcom/android/launcher3/folder/view/FolderIconView;
     if-eqz v0, :cond_0
 
-    .line 146
+    .line 148
     invoke-virtual {v0}, Lcom/android/launcher3/folder/view/FolderIconView;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 147
+    .line 149
     .local v1, "itemInfo":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -2994,7 +3017,7 @@
 
     move-result v2
 
-    .line 149
+    .line 151
     .end local v1    # "itemInfo":Lcom/android/launcher3/common/base/item/ItemInfo;
     :goto_0
     return v2
@@ -3010,18 +3033,18 @@
     .param p1, "pageNumber"    # I
 
     .prologue
-    .line 357
+    .line 359
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v0
 
-    .line 359
+    .line 361
     .local v0, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     if-gez p1, :cond_0
 
-    .line 360
+    .line 362
     invoke-virtual {v0}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 
     move-result v1
@@ -3030,7 +3053,7 @@
 
     move-result p1
 
-    .line 363
+    .line 365
     .end local p1    # "pageNumber":I
     :cond_0
     return p1
@@ -3042,7 +3065,7 @@
     .param p2, "pageDirection"    # I
 
     .prologue
-    .line 368
+    .line 370
     sget-object v3, Lcom/android/launcher3/proxy/LauncherProxy;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -3065,14 +3088,14 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 369
+    .line 371
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v3}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->neededToAdjustZeroPage()Z
 
     move-result v0
 
-    .line 370
+    .line 372
     .local v0, "hasZeropage":Z
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -3080,22 +3103,22 @@
 
     move-result-object v2
 
-    .line 371
+    .line 373
     .local v2, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     invoke-virtual {v2}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 
     move-result v1
 
-    .line 373
+    .line 375
     .local v1, "page":I
     packed-switch p2, :pswitch_data_0
 
-    .line 399
+    .line 401
     if-eqz v0, :cond_1
 
     move v1, p1
 
-    .line 403
+    .line 405
     :goto_0
     sget-object v3, Lcom/android/launcher3/proxy/LauncherProxy;->TAG:Ljava/lang/String;
 
@@ -3119,26 +3142,26 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 404
+    .line 406
     return v1
 
-    .line 375
+    .line 377
     :pswitch_0
     if-eqz v0, :cond_0
 
     const/4 v1, 0x1
 
-    .line 376
+    .line 378
     :goto_1
     goto :goto_0
 
-    .line 375
+    .line 377
     :cond_0
     const/4 v1, 0x0
 
     goto :goto_1
 
-    .line 379
+    .line 381
     :pswitch_1
     invoke-virtual {v2}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
@@ -3146,33 +3169,33 @@
 
     add-int/lit8 v1, v3, -0x2
 
-    .line 380
+    .line 382
     goto :goto_0
 
-    .line 383
+    .line 385
     :pswitch_2
     add-int/lit8 v1, v1, -0x1
 
-    .line 384
+    .line 386
     goto :goto_0
 
-    .line 387
+    .line 389
     :pswitch_3
     add-int/lit8 v1, v1, 0x1
 
-    .line 388
+    .line 390
     goto :goto_0
 
-    .line 391
+    .line 393
     :pswitch_4
     invoke-virtual {v2}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 
     move-result v1
 
-    .line 392
+    .line 394
     goto :goto_0
 
-    .line 395
+    .line 397
     :pswitch_5
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -3180,16 +3203,16 @@
 
     move-result v1
 
-    .line 396
+    .line 398
     goto :goto_0
 
-    .line 399
+    .line 401
     :cond_1
     add-int/lit8 v1, p1, -0x1
 
     goto :goto_0
 
-    .line 373
+    .line 375
     nop
 
     :pswitch_data_0
@@ -3209,7 +3232,7 @@
     .param p2, "pageNumber"    # I
 
     .prologue
-    .line 320
+    .line 322
     sget-object v2, Lcom/android/launcher3/proxy/LauncherProxy;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -3232,34 +3255,34 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 322
+    .line 324
     invoke-interface {p1}, Lcom/android/launcher3/proxy/BaseProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v1
 
-    .line 323
+    .line 325
     .local v1, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 
     move-result v0
 
-    .line 325
+    .line 327
     .local v0, "page":I
     const/4 v2, -0x4
 
     if-ne v2, p2, :cond_2
 
-    .line 326
+    .line 328
     const/4 v0, 0x0
 
-    .line 345
+    .line 347
     :goto_0
     if-gez v0, :cond_0
 
-    .line 346
+    .line 348
     const/4 v0, 0x0
 
-    .line 348
+    .line 350
     :cond_0
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
@@ -3267,14 +3290,14 @@
 
     if-lt v0, v2, :cond_1
 
-    .line 349
+    .line 351
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
     move-result v2
 
     add-int/lit8 v0, v2, -0x1
 
-    .line 352
+    .line 354
     :cond_1
     sget-object v2, Lcom/android/launcher3/proxy/LauncherProxy;->TAG:Ljava/lang/String;
 
@@ -3298,16 +3321,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 353
+    .line 355
     return v0
 
-    .line 327
+    .line 329
     :cond_2
     const/4 v2, -0x5
 
     if-ne v2, p2, :cond_3
 
-    .line 328
+    .line 330
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
     move-result v2
@@ -3316,40 +3339,40 @@
 
     goto :goto_0
 
-    .line 329
+    .line 331
     :cond_3
     const/4 v2, -0x1
 
     if-ne v2, p2, :cond_4
 
-    .line 330
+    .line 332
     add-int/lit8 v0, v0, -0x1
 
     goto :goto_0
 
-    .line 331
+    .line 333
     :cond_4
     const/4 v2, -0x2
 
     if-ne v2, p2, :cond_5
 
-    .line 332
+    .line 334
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 333
+    .line 335
     :cond_5
     const/4 v2, -0x6
 
     if-ne v2, p2, :cond_7
 
-    .line 334
+    .line 336
     instance-of v2, p1, Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     if-eqz v2, :cond_6
 
-    .line 335
+    .line 337
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getDefaultPage()I
@@ -3358,26 +3381,26 @@
 
     goto :goto_0
 
-    .line 337
+    .line 339
     :cond_6
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 339
+    .line 341
     :cond_7
     const/4 v2, -0x3
 
     if-ne v2, p2, :cond_8
 
-    .line 340
+    .line 342
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 
     move-result v0
 
     goto :goto_0
 
-    .line 342
+    .line 344
     :cond_8
     add-int/lit8 v0, p2, -0x1
 
@@ -3388,7 +3411,7 @@
     .locals 1
 
     .prologue
-    .line 789
+    .line 791
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;->getSearchResultListCount()I
@@ -3402,7 +3425,7 @@
     .locals 1
 
     .prologue
-    .line 793
+    .line 795
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;->getSearchResultSingleAppInfo()Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -3416,7 +3439,7 @@
     .locals 1
 
     .prologue
-    .line 1548
+    .line 1550
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getSecondTopStageMode()I
@@ -3444,15 +3467,15 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 408
+    .line 410
     if-nez p1, :cond_1
 
-    .line 419
+    .line 421
     :cond_0
     :goto_0
     return-object v0
 
-    .line 411
+    .line 413
     :cond_1
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -3460,22 +3483,22 @@
 
     if-eqz v1, :cond_2
 
-    .line 413
+    .line 415
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
-    .line 414
+    .line 416
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    .line 413
+    .line 415
     invoke-interface {v0, v1}, Lcom/android/launcher3/proxy/WidgetProxyCallbacks;->getWidgetItemsInfoByComponentName(Landroid/content/ComponentName;)Ljava/util/ArrayList;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 415
+    .line 417
     :cond_2
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
@@ -3483,15 +3506,15 @@
 
     if-eqz v1, :cond_0
 
-    .line 416
+    .line 418
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
-    .line 417
+    .line 419
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 416
+    .line 418
     invoke-interface {v0, v1}, Lcom/android/launcher3/proxy/WidgetProxyCallbacks;->getWidgetItemsInfoByTitle(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
@@ -3504,7 +3527,7 @@
     .param p1, "cn"    # Landroid/content/ComponentName;
 
     .prologue
-    .line 191
+    .line 193
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getWidgetView(Landroid/content/ComponentName;)Landroid/view/View;
@@ -3518,30 +3541,30 @@
     .locals 1
 
     .prologue
-    .line 1401
+    .line 1403
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 1402
+    .line 1404
     const/4 v0, -0x1
 
-    .line 1406
+    .line 1408
     :goto_0
     return v0
 
-    .line 1404
+    .line 1406
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->goHome()V
 
-    .line 1405
+    .line 1407
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->exitSubState()V
 
-    .line 1406
+    .line 1408
     const/4 v0, 0x0
 
     goto :goto_0
@@ -3553,21 +3576,21 @@
     .param p2, "pageDirection"    # I
 
     .prologue
-    .line 497
+    .line 499
     move v0, p1
 
-    .line 498
+    .line 500
     .local v0, "p":I
     if-gtz v0, :cond_0
 
-    .line 499
+    .line 501
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-virtual {p0, v1, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result v0
 
-    .line 501
+    .line 503
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
@@ -3585,24 +3608,24 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 961
+    .line 963
     if-nez p1, :cond_1
 
-    .line 966
+    .line 968
     :cond_0
     :goto_0
     return v1
 
-    .line 964
+    .line 966
     :cond_1
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
-    .line 965
+    .line 967
     invoke-interface {v2, p1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->getFolderItemViewByTitle(Ljava/lang/String;)Lcom/android/launcher3/folder/view/FolderIconView;
 
     move-result-object v0
 
-    .line 966
+    .line 968
     .local v0, "iv":Lcom/android/launcher3/folder/view/FolderIconView;
     if-eqz v0, :cond_0
 
@@ -3618,24 +3641,24 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 524
+    .line 526
     if-nez p1, :cond_1
 
-    .line 529
+    .line 531
     :cond_0
     :goto_0
     return v1
 
-    .line 527
+    .line 529
     :cond_1
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 528
+    .line 530
     invoke-interface {v2, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getFolderItemViewByTitle(Ljava/lang/String;)Lcom/android/launcher3/folder/view/FolderIconView;
 
     move-result-object v0
 
-    .line 529
+    .line 531
     .local v0, "iv":Lcom/android/launcher3/folder/view/FolderIconView;
     if-eqz v0, :cond_0
 
@@ -3652,21 +3675,21 @@
     .param p4, "spanY"    # I
 
     .prologue
-    .line 480
+    .line 482
     move v0, p1
 
-    .line 481
+    .line 483
     .local v0, "p":I
     if-gtz v0, :cond_0
 
-    .line 482
+    .line 484
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-virtual {p0, v1, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result v0
 
-    .line 484
+    .line 486
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -3684,21 +3707,21 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 953
+    .line 955
     if-nez p1, :cond_1
 
-    .line 957
+    .line 959
     :cond_0
     :goto_0
     return v1
 
-    .line 956
+    .line 958
     :cond_1
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 957
+    .line 959
     .local v0, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_0
 
@@ -3720,21 +3743,21 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 533
+    .line 535
     if-nez p1, :cond_1
 
-    .line 537
+    .line 539
     :cond_0
     :goto_0
     return v1
 
-    .line 536
+    .line 538
     :cond_1
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getFolderItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 537
+    .line 539
     .local v0, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_0
 
@@ -3756,21 +3779,21 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 515
+    .line 517
     if-nez p1, :cond_1
 
-    .line 520
+    .line 522
     :cond_0
     :goto_0
     return v1
 
-    .line 519
+    .line 521
     :cond_1
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getHomeItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 520
+    .line 522
     .local v0, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_0
 
@@ -3790,7 +3813,7 @@
     .param p1, "page"    # I
 
     .prologue
-    .line 466
+    .line 468
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->hasPageDeleteButton(I)Z
@@ -3805,7 +3828,7 @@
     .param p1, "appInfo"    # Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;
 
     .prologue
-    .line 699
+    .line 701
     const/4 v0, 0x1
 
     invoke-direct {p0, p1, v0}, Lcom/android/launcher3/proxy/LauncherProxy;->hideOrUnHideApps(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;Z)I
@@ -3822,23 +3845,23 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1309
+    .line 1311
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-eqz v2, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 1319
+    .line 1321
     :cond_0
     :goto_0
     return v1
 
-    .line 1312
+    .line 1314
     :cond_1
     const/4 v0, 0x0
 
-    .line 1313
+    .line 1315
     .local v0, "packageName":Ljava/lang/String;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getItemInfo()Lcom/android/launcher3/common/base/item/ItemInfo;
 
@@ -3846,7 +3869,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 1314
+    .line 1316
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getItemInfo()Lcom/android/launcher3/common/base/item/ItemInfo;
 
     move-result-object v2
@@ -3857,11 +3880,11 @@
 
     move-result-object v0
 
-    .line 1316
+    .line 1318
     :cond_2
     if-eqz v0, :cond_0
 
-    .line 1317
+    .line 1319
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->isAlreadySleepMode(Ljava/lang/String;)Z
@@ -3876,20 +3899,20 @@
     .param p1, "pageNumber"    # I
 
     .prologue
-    .line 970
+    .line 972
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v2}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v1
 
-    .line 971
+    .line 973
     .local v1, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
     move-result v0
 
-    .line 973
+    .line 975
     .local v0, "pageCount":I
     if-ltz p1, :cond_0
 
@@ -3912,21 +3935,21 @@
     .param p2, "pageDirection"    # I
 
     .prologue
-    .line 977
+    .line 979
     move v0, p1
 
-    .line 978
+    .line 980
     .local v0, "p":I
     if-gtz v0, :cond_0
 
-    .line 979
+    .line 981
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-virtual {p0, v1, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result v0
 
-    .line 982
+    .line 984
     :cond_0
     invoke-virtual {p0, v0}, Lcom/android/launcher3/proxy/LauncherProxy;->isAppsValidPage(I)Z
 
@@ -3939,15 +3962,15 @@
     .locals 2
 
     .prologue
-    .line 986
+    .line 988
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 987
+    .line 989
     const/4 v0, 0x0
 
-    .line 990
+    .line 992
     :goto_0
     return v0
 
@@ -3974,23 +3997,23 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1295
+    .line 1297
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-eqz v2, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 1305
+    .line 1307
     :cond_0
     :goto_0
     return v1
 
-    .line 1298
+    .line 1300
     :cond_1
     const/4 v0, 0x0
 
-    .line 1299
+    .line 1301
     .local v0, "packageName":Ljava/lang/String;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getItemInfo()Lcom/android/launcher3/common/base/item/ItemInfo;
 
@@ -3998,7 +4021,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 1300
+    .line 1302
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getItemInfo()Lcom/android/launcher3/common/base/item/ItemInfo;
 
     move-result-object v2
@@ -4009,11 +4032,11 @@
 
     move-result-object v0
 
-    .line 1302
+    .line 1304
     :cond_2
     if-eqz v0, :cond_0
 
-    .line 1303
+    .line 1305
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->isAvailableSleepMode(Ljava/lang/String;)Z
@@ -4028,10 +4051,10 @@
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 1521
+    .line 1523
     const/4 v0, 0x1
 
-    .line 1522
+    .line 1524
     .local v0, "result":Z
     iget-object v1, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
@@ -4039,14 +4062,14 @@
 
     iget-object v1, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 1523
+    .line 1525
     invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1524
+    .line 1526
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v1
@@ -4057,22 +4080,22 @@
 
     iget-object v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 1525
+    .line 1527
     invoke-virtual {v2}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1524
+    .line 1526
     invoke-static {v1, v2}, Lcom/android/launcher3/Utilities;->canDisable(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 1526
+    .line 1528
     const/4 v0, 0x0
 
-    .line 1530
+    .line 1532
     :cond_0
     return v0
 .end method
@@ -4082,7 +4105,7 @@
     .param p1, "page"    # I
 
     .prologue
-    .line 470
+    .line 472
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->isEmptyPage(I)Z
@@ -4096,15 +4119,15 @@
     .locals 1
 
     .prologue
-    .line 1287
+    .line 1289
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 1288
+    .line 1290
     const/4 v0, 0x0
 
-    .line 1291
+    .line 1293
     :goto_0
     return v0
 
@@ -4125,29 +4148,29 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 505
+    .line 507
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v3}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v1
 
-    .line 506
+    .line 508
     .local v1, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     if-nez v1, :cond_1
 
-    .line 511
+    .line 513
     :cond_0
     :goto_0
     return v2
 
-    .line 509
+    .line 511
     :cond_1
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
     move-result v0
 
-    .line 511
+    .line 513
     .local v0, "pageCount":I
     if-ltz p1, :cond_0
 
@@ -4162,15 +4185,15 @@
     .locals 1
 
     .prologue
-    .line 1279
+    .line 1281
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 1280
+    .line 1282
     const/4 v0, 0x0
 
-    .line 1283
+    .line 1285
     :goto_0
     return v0
 
@@ -4189,20 +4212,20 @@
     .param p1, "pageNumber"    # I
 
     .prologue
-    .line 438
+    .line 440
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v1
 
-    .line 439
+    .line 441
     .local v1, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
     move-result v0
 
-    .line 441
+    .line 443
     .local v0, "pageCount":I
     if-ltz p1, :cond_0
 
@@ -4229,20 +4252,20 @@
 
     const/4 v4, 0x0
 
-    .line 489
+    .line 491
     iget-object v5, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v5}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v2
 
-    .line 490
+    .line 492
     .local v2, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     invoke-virtual {v2}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
     move-result v1
 
-    .line 492
+    .line 494
     .local v1, "pageCount":I
     iget-object v5, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -4256,7 +4279,7 @@
 
     move v0, v3
 
-    .line 493
+    .line 495
     .local v0, "firstPage":I
     :goto_0
     if-lt p1, v0, :cond_1
@@ -4272,14 +4295,14 @@
     :cond_0
     move v0, v4
 
-    .line 492
+    .line 494
     goto :goto_0
 
     .restart local v0    # "firstPage":I
     :cond_1
     move v3, v4
 
-    .line 493
+    .line 495
     goto :goto_1
 .end method
 
@@ -4287,7 +4310,7 @@
     .locals 1
 
     .prologue
-    .line 1337
+    .line 1339
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->isSecureFolderSetup()Z
@@ -4302,10 +4325,10 @@
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 1508
+    .line 1510
     const/4 v0, 0x1
 
-    .line 1509
+    .line 1511
     .local v0, "result":Z
     iget-object v1, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
@@ -4313,14 +4336,14 @@
 
     iget-object v1, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 1510
+    .line 1512
     invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 1511
+    .line 1513
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v1
@@ -4331,22 +4354,22 @@
 
     iget-object v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 1512
+    .line 1514
     invoke-virtual {v2}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1511
+    .line 1513
     invoke-static {v1, v2}, Lcom/android/launcher3/Utilities;->canUninstall(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 1513
+    .line 1515
     const/4 v0, 0x0
 
-    .line 1517
+    .line 1519
     :cond_0
     return v0
 .end method
@@ -4358,12 +4381,12 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1678
+    .line 1681
     instance-of v1, p1, Lcom/android/launcher3/folder/FolderInfo;
 
     if-eqz v1, :cond_1
 
-    .line 1679
+    .line 1682
     invoke-static {}, Lcom/android/launcher3/folder/folderlock/FolderLock;->getInstance()Lcom/android/launcher3/folder/folderlock/FolderLock;
 
     move-result-object v0
@@ -4371,7 +4394,7 @@
     .local v0, "folderLock":Lcom/android/launcher3/folder/folderlock/FolderLock;
     move-object v1, p1
 
-    .line 1680
+    .line 1683
     check-cast v1, Lcom/android/launcher3/folder/FolderInfo;
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->isLockedFolder(Lcom/android/launcher3/folder/FolderInfo;)Z
@@ -4382,20 +4405,20 @@
 
     move v1, v2
 
-    .line 1687
+    .line 1690
     .end local v0    # "folderLock":Lcom/android/launcher3/folder/folderlock/FolderLock;
     :goto_0
     return v1
 
-    .line 1683
+    .line 1686
     .restart local v0    # "folderLock":Lcom/android/launcher3/folder/folderlock/FolderLock;
     :cond_0
     invoke-virtual {v0, p1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->setBackupInfo(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1684
+    .line 1687
     invoke-virtual {v0, p1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->startLockVerifyActivity(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1685
+    .line 1688
     const/4 v1, 0x0
 
     goto :goto_0
@@ -4404,7 +4427,7 @@
     :cond_1
     move v1, v2
 
-    .line 1687
+    .line 1690
     goto :goto_0
 .end method
 
@@ -4413,12 +4436,12 @@
     .param p1, "itemInfo"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 1706
+    .line 1709
     invoke-static {}, Lcom/android/launcher3/folder/folderlock/FolderLock;->getInstance()Lcom/android/launcher3/folder/folderlock/FolderLock;
 
     move-result-object v0
 
-    .line 1707
+    .line 1710
     .local v0, "folderLock":Lcom/android/launcher3/folder/folderlock/FolderLock;
     instance-of v1, p1, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -4434,22 +4457,22 @@
 
     if-eqz v1, :cond_1
 
-    .line 1708
+    .line 1711
     :cond_0
     const/4 v1, -0x1
 
-    .line 1712
+    .line 1715
     :goto_0
     return v1
 
-    .line 1710
+    .line 1713
     :cond_1
     invoke-virtual {v0, p1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->setBackupInfo(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1711
+    .line 1714
     invoke-virtual {v0, p1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->startLockVerifyActivity(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1712
+    .line 1715
     const/4 v1, 0x0
 
     goto :goto_0
@@ -4462,32 +4485,32 @@
     .param p3, "isHome"    # Z
 
     .prologue
-    .line 290
+    .line 292
     const/4 v2, -0x1
 
-    .line 291
+    .line 293
     .local v2, "toPage":I
     if-eqz p3, :cond_1
 
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 292
+    .line 294
     .local v0, "cb":Lcom/android/launcher3/proxy/BaseProxyCallbacks;
     :goto_0
     invoke-interface {v0}, Lcom/android/launcher3/proxy/BaseProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v1
 
-    .line 293
+    .line 295
     .local v1, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     packed-switch p2, :pswitch_data_0
 
-    .line 315
+    .line 317
     :cond_0
     :goto_1
     return v2
 
-    .line 291
+    .line 293
     .end local v0    # "cb":Lcom/android/launcher3/proxy/BaseProxyCallbacks;
     .end local v1    # "pv":Lcom/android/launcher3/common/base/view/PagedView;
     :cond_1
@@ -4495,16 +4518,16 @@
 
     goto :goto_0
 
-    .line 295
+    .line 297
     .restart local v0    # "cb":Lcom/android/launcher3/proxy/BaseProxyCallbacks;
     .restart local v1    # "pv":Lcom/android/launcher3/common/base/view/PagedView;
     :pswitch_0
     const/4 v2, 0x0
 
-    .line 296
+    .line 298
     goto :goto_1
 
-    .line 298
+    .line 300
     :pswitch_1
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getPageCount()I
 
@@ -4512,28 +4535,28 @@
 
     add-int/lit8 v2, v3, -0x1
 
-    .line 299
+    .line 301
     goto :goto_1
 
-    .line 301
+    .line 303
     :pswitch_2
     add-int/lit8 v2, p1, -0x1
 
-    .line 302
+    .line 304
     goto :goto_1
 
-    .line 304
+    .line 306
     :pswitch_3
     add-int/lit8 v2, p1, 0x1
 
-    .line 305
+    .line 307
     goto :goto_1
 
-    .line 307
+    .line 309
     :pswitch_4
     if-eqz p3, :cond_0
 
-    .line 308
+    .line 310
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v3}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getDefaultPage()I
@@ -4542,7 +4565,7 @@
 
     goto :goto_1
 
-    .line 312
+    .line 314
     :pswitch_5
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 
@@ -4550,7 +4573,7 @@
 
     goto :goto_1
 
-    .line 293
+    .line 295
     nop
 
     :pswitch_data_0
@@ -4574,30 +4597,30 @@
     .prologue
     const/4 v1, -0x3
 
-    .line 1060
+    .line 1062
     if-nez p1, :cond_1
 
-    .line 1080
+    .line 1082
     :cond_0
     :goto_0
     return v1
 
-    .line 1064
+    .line 1066
     :cond_1
     if-gez p2, :cond_2
 
-    .line 1065
+    .line 1067
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-virtual {p0, v2, p3}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result p2
 
-    .line 1067
+    .line 1069
     :cond_2
     const/4 v0, 0x0
 
-    .line 1068
+    .line 1070
     .local v0, "iv":Landroid/view/View;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -4605,10 +4628,10 @@
 
     if-eqz v2, :cond_4
 
-    .line 1069
+    .line 1071
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
-    .line 1070
+    .line 1072
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v3
@@ -4617,12 +4640,12 @@
 
     move-result-object v0
 
-    .line 1075
+    .line 1077
     :cond_3
     :goto_1
     if-eqz v0, :cond_0
 
-    .line 1079
+    .line 1081
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     check-cast v0, Lcom/android/launcher3/common/view/IconView;
@@ -4630,12 +4653,12 @@
     .end local v0    # "iv":Landroid/view/View;
     invoke-interface {v1, v0, p2}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->moveItem(Lcom/android/launcher3/common/view/IconView;I)V
 
-    .line 1080
+    .line 1082
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 1071
+    .line 1073
     .restart local v0    # "iv":Landroid/view/View;
     :cond_4
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -4644,7 +4667,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 1072
+    .line 1074
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -4667,34 +4690,34 @@
     .prologue
     const/4 v2, -0x3
 
-    .line 1084
+    .line 1086
     move v1, p2
 
-    .line 1086
+    .line 1088
     .local v1, "targetPage":I
     if-nez p1, :cond_1
 
-    .line 1102
+    .line 1104
     :cond_0
     :goto_0
     return v2
 
-    .line 1090
+    .line 1092
     :cond_1
     if-gez p2, :cond_2
 
-    .line 1091
+    .line 1093
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-virtual {p0, v3, p3}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result v1
 
-    .line 1094
+    .line 1096
     :cond_2
     const/4 v0, 0x0
 
-    .line 1095
+    .line 1097
     .local v0, "iv":Landroid/view/View;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
@@ -4702,7 +4725,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 1096
+    .line 1098
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -4713,11 +4736,11 @@
 
     move-result-object v0
 
-    .line 1098
+    .line 1100
     :cond_3
     if-eqz v0, :cond_0
 
-    .line 1102
+    .line 1104
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     check-cast v0, Lcom/android/launcher3/common/view/IconView;
@@ -4739,34 +4762,34 @@
     .prologue
     const/4 v3, -0x3
 
-    .line 1030
+    .line 1032
     move v2, p2
 
-    .line 1032
+    .line 1034
     .local v2, "targetPage":I
     if-nez p1, :cond_1
 
-    .line 1055
+    .line 1057
     :cond_0
     :goto_0
     return v3
 
-    .line 1036
+    .line 1038
     :cond_1
     if-gez p2, :cond_2
 
-    .line 1037
+    .line 1039
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-virtual {p0, v4, p3}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result v2
 
-    .line 1040
+    .line 1042
     :cond_2
     const/4 v1, 0x0
 
-    .line 1041
+    .line 1043
     .local v1, "iv":Landroid/view/View;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -4774,10 +4797,10 @@
 
     if-eqz v4, :cond_5
 
-    .line 1042
+    .line 1044
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
-    .line 1043
+    .line 1045
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v5
@@ -4786,26 +4809,26 @@
 
     move-result-object v1
 
-    .line 1047
+    .line 1049
     :cond_3
     :goto_1
     if-eqz v1, :cond_0
 
-    .line 1050
+    .line 1052
     invoke-virtual {p0}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsPageCount()I
 
     move-result v3
 
     if-lt v2, v3, :cond_4
 
-    .line 1051
+    .line 1053
     invoke-virtual {v1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1052
+    .line 1054
     .local v0, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
@@ -4813,7 +4836,7 @@
 
     add-int/lit8 v2, v3, 0x1
 
-    .line 1055
+    .line 1057
     .end local v0    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_4
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
@@ -4827,7 +4850,7 @@
 
     goto :goto_0
 
-    .line 1044
+    .line 1046
     .restart local v1    # "iv":Landroid/view/View;
     :cond_5
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -4836,7 +4859,7 @@
 
     if-eqz v4, :cond_3
 
-    .line 1045
+    .line 1047
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -4860,30 +4883,30 @@
     .prologue
     const/4 v1, -0x3
 
-    .line 1006
+    .line 1008
     if-nez p1, :cond_1
 
-    .line 1026
+    .line 1028
     :cond_0
     :goto_0
     return v1
 
-    .line 1010
+    .line 1012
     :cond_1
     if-gez p2, :cond_2
 
-    .line 1011
+    .line 1013
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-virtual {p0, v2, p3}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result p2
 
-    .line 1013
+    .line 1015
     :cond_2
     const/4 v0, 0x0
 
-    .line 1014
+    .line 1016
     .local v0, "iv":Landroid/view/View;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -4891,10 +4914,10 @@
 
     if-eqz v2, :cond_4
 
-    .line 1015
+    .line 1017
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
-    .line 1016
+    .line 1018
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v3
@@ -4903,12 +4926,12 @@
 
     move-result-object v0
 
-    .line 1021
+    .line 1023
     :cond_3
     :goto_1
     if-eqz v0, :cond_0
 
-    .line 1025
+    .line 1027
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     check-cast v0, Lcom/android/launcher3/common/view/IconView;
@@ -4916,12 +4939,12 @@
     .end local v0    # "iv":Landroid/view/View;
     invoke-interface {v1, v0, p2}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->moveItem(Lcom/android/launcher3/common/view/IconView;I)V
 
-    .line 1026
+    .line 1028
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 1017
+    .line 1019
     .restart local v0    # "iv":Landroid/view/View;
     :cond_4
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -4930,7 +4953,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 1018
+    .line 1020
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -4950,21 +4973,21 @@
     .param p2, "pageDirection"    # I
 
     .prologue
-    .line 1195
+    .line 1197
     move v0, p1
 
-    .line 1196
+    .line 1198
     .local v0, "p":I
     if-gtz v0, :cond_0
 
-    .line 1197
+    .line 1199
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-virtual {p0, v1, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result v0
 
-    .line 1200
+    .line 1202
     :cond_0
     invoke-virtual {p0, p1, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->isAppsValidPage(II)Z
 
@@ -4972,20 +4995,20 @@
 
     if-nez v1, :cond_1
 
-    .line 1201
+    .line 1203
     const/4 v1, -0x3
 
-    .line 1204
+    .line 1206
     :goto_0
     return v1
 
-    .line 1203
+    .line 1205
     :cond_1
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->movePage(I)V
 
-    .line 1204
+    .line 1206
     const/4 v1, 0x0
 
     goto :goto_0
@@ -4997,7 +5020,7 @@
     .param p2, "pageDirection"    # I
 
     .prologue
-    .line 262
+    .line 264
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -5012,30 +5035,30 @@
 
     if-nez v1, :cond_1
 
-    .line 264
+    .line 266
     :cond_0
     const/4 v1, -0x1
 
-    .line 275
+    .line 277
     :goto_0
     return v1
 
-    .line 266
+    .line 268
     :cond_1
     move v0, p1
 
-    .line 267
+    .line 269
     .local v0, "p":I
     if-gtz v0, :cond_2
 
-    .line 268
+    .line 270
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-virtual {p0, v1, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result v0
 
-    .line 271
+    .line 273
     :cond_2
     invoke-virtual {p0, v0}, Lcom/android/launcher3/proxy/LauncherProxy;->isFolderValidPage(I)Z
 
@@ -5043,18 +5066,18 @@
 
     if-nez v1, :cond_3
 
-    .line 272
+    .line 274
     const/4 v1, -0x3
 
     goto :goto_0
 
-    .line 274
+    .line 276
     :cond_3
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->movePage(I)V
 
-    .line 275
+    .line 277
     const/4 v1, 0x0
 
     goto :goto_0
@@ -5068,17 +5091,17 @@
     .param p4, "detailDirection"    # I
 
     .prologue
-    .line 584
+    .line 586
     if-gtz p2, :cond_0
 
-    .line 585
+    .line 587
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-virtual {p0, v0, p3}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result p2
 
-    .line 588
+    .line 590
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -5096,12 +5119,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 565
+    .line 567
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getHomeItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 566
+    .line 568
     .local v0, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_0
 
@@ -5111,7 +5134,7 @@
 
     if-lez v1, :cond_0
 
-    .line 567
+    .line 569
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -5124,7 +5147,7 @@
 
     move v1, v2
 
-    .line 570
+    .line 572
     :goto_0
     return v1
 
@@ -5141,12 +5164,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 574
+    .line 576
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getHomeWidgetItemInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 575
+    .line 577
     .local v0, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_0
 
@@ -5156,7 +5179,7 @@
 
     if-lez v1, :cond_0
 
-    .line 576
+    .line 578
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -5169,7 +5192,7 @@
 
     move v1, v2
 
-    .line 579
+    .line 581
     :goto_0
     return v1
 
@@ -5188,20 +5211,20 @@
     .prologue
     const/4 v1, -0x3
 
-    .line 1117
+    .line 1119
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     if-nez v2, :cond_1
 
-    .line 1118
+    .line 1120
     const/4 v1, -0x1
 
-    .line 1142
+    .line 1144
     :cond_0
     :goto_0
     return v1
 
-    .line 1120
+    .line 1122
     :cond_1
     if-eqz p1, :cond_0
 
@@ -5211,21 +5234,21 @@
 
     if-eqz v2, :cond_0
 
-    .line 1123
+    .line 1125
     if-lez p2, :cond_2
 
-    .line 1124
+    .line 1126
     invoke-virtual {p0, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->isAppsValidPage(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 1129
+    .line 1131
     :cond_2
     const/4 v0, 0x0
 
-    .line 1130
+    .line 1132
     .local v0, "iv":Landroid/view/View;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -5233,10 +5256,10 @@
 
     if-eqz v2, :cond_4
 
-    .line 1131
+    .line 1133
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
-    .line 1132
+    .line 1134
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v3
@@ -5245,12 +5268,12 @@
 
     move-result-object v0
 
-    .line 1137
+    .line 1139
     :cond_3
     :goto_1
     if-eqz v0, :cond_0
 
-    .line 1141
+    .line 1143
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     check-cast v0, Lcom/android/launcher3/common/view/IconView;
@@ -5258,12 +5281,12 @@
     .end local v0    # "iv":Landroid/view/View;
     invoke-interface {v1, v0, p2, p3}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->moveItemInFolder(Lcom/android/launcher3/common/view/IconView;II)V
 
-    .line 1142
+    .line 1144
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 1133
+    .line 1135
     .restart local v0    # "iv":Landroid/view/View;
     :cond_4
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -5272,7 +5295,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 1134
+    .line 1136
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -5291,12 +5314,12 @@
     .param p1, "pageNumber"    # I
 
     .prologue
-    .line 560
+    .line 562
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->movePage(I)V
 
-    .line 561
+    .line 563
     const/4 v0, 0x0
 
     return v0
@@ -5308,21 +5331,21 @@
     .param p2, "pageDirection"    # I
 
     .prologue
-    .line 541
+    .line 543
     move v0, p1
 
-    .line 542
+    .line 544
     .local v0, "p":I
     if-gtz v0, :cond_0
 
-    .line 543
+    .line 545
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-virtual {p0, v1, p2}, Lcom/android/launcher3/proxy/LauncherProxy;->getPageNumberToMove(Lcom/android/launcher3/proxy/BaseProxyCallbacks;I)I
 
     move-result v0
 
-    .line 546
+    .line 548
     :cond_0
     const/16 v1, -0x3e7
 
@@ -5330,17 +5353,17 @@
 
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 547
+    .line 549
     invoke-interface {v1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->neededToAdjustZeroPage()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 548
+    .line 550
     add-int/lit8 v0, v0, 0x1
 
-    .line 551
+    .line 553
     :cond_1
     invoke-virtual {p0, v0}, Lcom/android/launcher3/proxy/LauncherProxy;->isHomeValidPage(I)Z
 
@@ -5348,20 +5371,20 @@
 
     if-nez v1, :cond_2
 
-    .line 552
+    .line 554
     const/4 v1, -0x3
 
-    .line 556
+    .line 558
     :goto_0
     return v1
 
-    .line 555
+    .line 557
     :cond_2
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->movePage(I)V
 
-    .line 556
+    .line 558
     const/4 v1, 0x0
 
     goto :goto_0
@@ -5373,14 +5396,14 @@
     .param p2, "pf"    # Lcom/samsung/android/sdk/bixby/data/ParamFilling;
 
     .prologue
-    .line 1567
+    .line 1569
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     if-eqz v0, :cond_0
 
     const-string v0, "AppsFolderView"
 
-    .line 1568
+    .line 1570
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -5390,27 +5413,27 @@
     :cond_0
     const-string v0, "HomeFolderView"
 
-    .line 1569
+    .line 1571
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 1570
+    .line 1572
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v0, p2}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->onParamFillingReceived(Lcom/samsung/android/sdk/bixby/data/ParamFilling;)Z
 
-    .line 1581
+    .line 1583
     :cond_2
     :goto_0
     const/4 v0, 0x1
 
     return v0
 
-    .line 1571
+    .line 1573
     :cond_3
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
@@ -5418,7 +5441,7 @@
 
     const-string v0, "AppsFolderAddIconSearchView"
 
-    .line 1572
+    .line 1574
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -5428,7 +5451,7 @@
     :cond_4
     const-string v0, "HomeFolderAddIconSearchView"
 
-    .line 1573
+    .line 1575
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -5437,14 +5460,14 @@
 
     const-string v0, "HomeSettingsHideAppsView"
 
-    .line 1574
+    .line 1576
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_6
 
-    .line 1575
+    .line 1577
     :cond_5
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
@@ -5452,7 +5475,7 @@
 
     goto :goto_0
 
-    .line 1576
+    .line 1578
     :cond_6
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
@@ -5460,14 +5483,14 @@
 
     const-string v0, "HomePageWidgetSearchView"
 
-    .line 1577
+    .line 1579
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 1578
+    .line 1580
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
     invoke-interface {v0, p2}, Lcom/android/launcher3/proxy/WidgetProxyCallbacks;->onParamFillingReceived(Lcom/samsung/android/sdk/bixby/data/ParamFilling;)Z
@@ -5480,35 +5503,35 @@
     .param p1, "folderName"    # Ljava/lang/String;
 
     .prologue
-    .line 994
+    .line 996
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
-    .line 995
+    .line 997
     invoke-interface {v1, p1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->getFolderItemViewByTitle(Ljava/lang/String;)Lcom/android/launcher3/folder/view/FolderIconView;
 
     move-result-object v0
 
-    .line 996
+    .line 998
     .local v0, "iv":Lcom/android/launcher3/folder/view/FolderIconView;
     if-eqz p1, :cond_0
 
     if-nez v0, :cond_1
 
-    .line 997
+    .line 999
     :cond_0
     const/4 v1, -0x3
 
-    .line 1001
+    .line 1003
     :goto_0
     return v1
 
-    .line 1000
+    .line 1002
     :cond_1
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->openFolder(Lcom/android/launcher3/folder/view/FolderIconView;)V
 
-    .line 1001
+    .line 1003
     const/4 v1, 0x0
 
     goto :goto_0
@@ -5518,25 +5541,25 @@
     .locals 1
 
     .prologue
-    .line 1167
+    .line 1169
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     if-nez v0, :cond_0
 
-    .line 1168
+    .line 1170
     const/4 v0, -0x1
 
-    .line 1172
+    .line 1174
     :goto_0
     return v0
 
-    .line 1171
+    .line 1173
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->openAppsTray()V
 
-    .line 1172
+    .line 1174
     const/4 v0, 0x0
 
     goto :goto_0
@@ -5546,7 +5569,7 @@
     .locals 3
 
     .prologue
-    .line 1410
+    .line 1412
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -5561,15 +5584,15 @@
 
     if-nez v1, :cond_1
 
-    .line 1412
+    .line 1414
     :cond_0
     const/4 v1, -0x1
 
-    .line 1421
+    .line 1423
     :goto_0
     return v1
 
-    .line 1415
+    .line 1417
     :cond_1
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
@@ -5577,22 +5600,22 @@
 
     move-result-object v0
 
-    .line 1416
+    .line 1418
     .local v0, "iv":Lcom/android/launcher3/folder/view/FolderIconView;
     if-nez v0, :cond_2
 
-    .line 1417
+    .line 1419
     const/4 v1, -0x2
 
     goto :goto_0
 
-    .line 1420
+    .line 1422
     :cond_2
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->openFolderAddIconView(Lcom/android/launcher3/folder/view/FolderIconView;)V
 
-    .line 1421
+    .line 1423
     const/4 v1, 0x0
 
     goto :goto_0
@@ -5602,7 +5625,7 @@
     .locals 2
 
     .prologue
-    .line 251
+    .line 253
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -5617,21 +5640,21 @@
 
     if-nez v0, :cond_1
 
-    .line 253
+    .line 255
     :cond_0
     const/4 v0, -0x1
 
-    .line 257
+    .line 259
     :goto_0
     return v0
 
-    .line 256
+    .line 258
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/FolderProxyCallbacks;->openBackgroundColorView()V
 
-    .line 257
+    .line 259
     const/4 v0, 0x0
 
     goto :goto_0
@@ -5644,33 +5667,33 @@
     .prologue
     const/4 v1, -0x3
 
-    .line 228
+    .line 230
     if-nez p1, :cond_1
 
-    .line 238
+    .line 240
     :cond_0
     :goto_0
     return v1
 
-    .line 231
+    .line 233
     :cond_1
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 232
+    .line 234
     invoke-interface {v2, p1}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getFolderItemViewByTitle(Ljava/lang/String;)Lcom/android/launcher3/folder/view/FolderIconView;
 
     move-result-object v0
 
-    .line 233
+    .line 235
     .local v0, "iv":Lcom/android/launcher3/folder/view/FolderIconView;
     if-eqz v0, :cond_0
 
-    .line 237
+    .line 239
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v1, v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->openFolder(Lcom/android/launcher3/folder/view/FolderIconView;)V
 
-    .line 238
+    .line 240
     const/4 v1, 0x0
 
     goto :goto_0
@@ -5680,7 +5703,7 @@
     .locals 1
 
     .prologue
-    .line 1504
+    .line 1506
     const/4 v0, 0x0
 
     return v0
@@ -5693,23 +5716,23 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1323
+    .line 1325
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     if-nez v3, :cond_1
 
-    .line 1333
+    .line 1335
     :cond_0
     :goto_0
     return v2
 
-    .line 1326
+    .line 1328
     :cond_1
     invoke-direct {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getAppsItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 1327
+    .line 1329
     .local v1, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v1, :cond_0
 
@@ -5719,7 +5742,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 1330
+    .line 1332
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -5737,7 +5760,7 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1331
+    .line 1333
     .local v0, "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
@@ -5745,7 +5768,7 @@
 
     goto :goto_1
 
-    .line 1333
+    .line 1335
     .end local v0    # "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     const/4 v2, 0x0
@@ -5758,12 +5781,12 @@
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 1539
+    .line 1541
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->uninstallOrDisableApp(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1540
+    .line 1542
     const/4 v0, 0x0
 
     return v0
@@ -5778,15 +5801,15 @@
 
     const/4 v1, -0x3
 
-    .line 1482
+    .line 1484
     if-nez p1, :cond_1
 
-    .line 1499
+    .line 1501
     :cond_0
     :goto_0
     return v1
 
-    .line 1485
+    .line 1487
     :cond_1
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
@@ -5802,13 +5825,13 @@
 
     if-nez v3, :cond_3
 
-    .line 1487
+    .line 1489
     :cond_2
     const/4 v1, -0x1
 
     goto :goto_0
 
-    .line 1489
+    .line 1491
     :cond_3
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->hasItemInFolder(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Z
 
@@ -5816,12 +5839,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 1493
+    .line 1495
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getFolderItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 1494
+    .line 1496
     .local v0, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz v0, :cond_0
 
@@ -5831,7 +5854,7 @@
 
     if-nez v3, :cond_0
 
-    .line 1496
+    .line 1498
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -5844,7 +5867,7 @@
 
     move v1, v2
 
-    .line 1497
+    .line 1499
     goto :goto_0
 .end method
 
@@ -5852,12 +5875,12 @@
     .locals 1
 
     .prologue
-    .line 826
+    .line 828
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->removeCurrentPage()V
 
-    .line 827
+    .line 829
     const/4 v0, 0x0
 
     return v0
@@ -5868,32 +5891,32 @@
     .param p1, "appInfo"    # Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;
 
     .prologue
-    .line 592
+    .line 594
     if-nez p1, :cond_0
 
-    .line 593
+    .line 595
     const/4 v2, -0x3
 
-    .line 604
+    .line 606
     :goto_0
     return v2
 
-    .line 596
+    .line 598
     :cond_0
     invoke-virtual {p0, p1}, Lcom/android/launcher3/proxy/LauncherProxy;->getHomeItemInfoByStateAppInfo(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 597
+    .line 599
     .local v1, "items":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-nez v1, :cond_1
 
-    .line 598
+    .line 600
     const/4 v2, -0x2
 
     goto :goto_0
 
-    .line 600
+    .line 602
     :cond_1
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -5912,7 +5935,7 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 601
+    .line 603
     .local v0, "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -5920,7 +5943,7 @@
 
     goto :goto_1
 
-    .line 604
+    .line 606
     .end local v0    # "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     const/4 v2, 0x0
@@ -5933,42 +5956,42 @@
     .param p1, "itemInfo"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 608
+    .line 610
     instance-of v4, p1, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     if-nez v4, :cond_0
 
-    .line 609
+    .line 611
     const/4 v4, -0x3
 
-    .line 624
+    .line 626
     :goto_0
     return v4
 
     :cond_0
     move-object v2, p1
 
-    .line 612
+    .line 614
     check-cast v2, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
-    .line 613
+    .line 615
     .local v2, "widget":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     iget-object v0, v2, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
-    .line 614
+    .line 616
     .local v0, "cn":Landroid/content/ComponentName;
     if-nez v0, :cond_1
 
-    .line 615
+    .line 617
     const/4 v4, -0x2
 
     goto :goto_0
 
-    .line 618
+    .line 620
     :cond_1
     iget-object v4, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 619
+    .line 621
     invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v5
@@ -5977,7 +6000,7 @@
 
     move-result-object v3
 
-    .line 620
+    .line 622
     .local v3, "widgets":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -5996,7 +6019,7 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 621
+    .line 623
     .local v1, "w":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-object v5, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
@@ -6004,7 +6027,7 @@
 
     goto :goto_1
 
-    .line 624
+    .line 626
     .end local v1    # "w":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     const/4 v4, 0x0
@@ -6019,10 +6042,10 @@
     .prologue
     const/4 v1, -0x3
 
-    .line 1146
+    .line 1148
     const/4 v0, 0x0
 
-    .line 1148
+    .line 1150
     .local v0, "iv":Landroid/view/View;
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -6030,7 +6053,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 1149
+    .line 1151
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
@@ -6041,17 +6064,17 @@
 
     move-result-object v0
 
-    .line 1154
+    .line 1156
     :cond_0
     :goto_0
     if-nez v0, :cond_3
 
-    .line 1163
+    .line 1165
     :cond_1
     :goto_1
     return v1
 
-    .line 1150
+    .line 1152
     :cond_2
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
@@ -6059,7 +6082,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1151
+    .line 1153
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
@@ -6072,7 +6095,7 @@
 
     goto :goto_0
 
-    .line 1158
+    .line 1160
     :cond_3
     invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -6088,7 +6111,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 1159
+    .line 1161
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
@@ -6099,7 +6122,7 @@
 
     invoke-interface {v2, v1}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->removeItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1160
+    .line 1162
     const/4 v1, 0x0
 
     goto :goto_1
@@ -6110,7 +6133,7 @@
     .param p1, "keyword"    # Ljava/lang/String;
 
     .prologue
-    .line 885
+    .line 887
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v1}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -6121,14 +6144,14 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 886
+    .line 888
     const/4 v0, -0x2
 
-    .line 889
+    .line 891
     :goto_0
     return v0
 
-    .line 888
+    .line 890
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
@@ -6136,7 +6159,7 @@
 
     move-result v0
 
-    .line 889
+    .line 891
     .local v0, "result":I
     goto :goto_0
 .end method
@@ -6146,17 +6169,17 @@
     .param p1, "searchText"    # Ljava/lang/String;
 
     .prologue
-    .line 771
+    .line 773
     if-nez p1, :cond_0
 
-    .line 772
+    .line 774
     const/4 v0, -0x3
 
-    .line 779
+    .line 781
     :goto_0
     return v0
 
-    .line 775
+    .line 777
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
@@ -6166,12 +6189,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 776
+    .line 778
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 779
+    .line 781
     :cond_1
     const/4 v0, -0x1
 
@@ -6183,10 +6206,10 @@
     .param p1, "appsPickerProxyCallback"    # Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
     .prologue
-    .line 104
+    .line 106
     iput-object p1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsPickerProxyCallback:Lcom/android/launcher3/proxy/AppsPickerProxyCallbacks;
 
-    .line 105
+    .line 107
     return-void
 .end method
 
@@ -6195,10 +6218,10 @@
     .param p1, "appsProxyCallback"    # Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     .prologue
-    .line 92
+    .line 94
     iput-object p1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
-    .line 93
+    .line 95
     return-void
 .end method
 
@@ -6207,10 +6230,10 @@
     .param p1, "folderProxyCallback"    # Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
     .prologue
-    .line 96
+    .line 98
     iput-object p1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mFolderProxyCallbacks:Lcom/android/launcher3/proxy/FolderProxyCallbacks;
 
-    .line 97
+    .line 99
     return-void
 .end method
 
@@ -6218,26 +6241,26 @@
     .locals 3
 
     .prologue
-    .line 803
+    .line 805
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v2}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->getPagedView()Lcom/android/launcher3/common/base/view/PagedView;
 
     move-result-object v1
 
-    .line 804
+    .line 806
     .local v1, "pv":Lcom/android/launcher3/common/base/view/PagedView;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/PagedView;->getCurrentPage()I
 
     move-result v0
 
-    .line 805
+    .line 807
     .local v0, "page":I
     iget-object v2, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     invoke-interface {v2, v0}, Lcom/android/launcher3/proxy/HomeProxyCallbacks;->setAsMainPage(I)V
 
-    .line 807
+    .line 809
     const/4 v2, 0x0
 
     return v2
@@ -6248,10 +6271,10 @@
     .param p1, "homeProxyCallback"    # Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
     .prologue
-    .line 88
+    .line 90
     iput-object p1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mHomeProxyCallbacks:Lcom/android/launcher3/proxy/HomeProxyCallbacks;
 
-    .line 89
+    .line 91
     return-void
 .end method
 
@@ -6260,10 +6283,10 @@
     .param p1, "launcherActivityProxyCallback"    # Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     .prologue
-    .line 84
+    .line 86
     iput-object p1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
-    .line 85
+    .line 87
     return-void
 .end method
 
@@ -6272,10 +6295,10 @@
     .param p1, "stageManagerProxyCallback"    # Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     .prologue
-    .line 109
+    .line 111
     iput-object p1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
-    .line 110
+    .line 112
     return-void
 .end method
 
@@ -6284,10 +6307,10 @@
     .param p1, "widgetProxyCallback"    # Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
     .prologue
-    .line 100
+    .line 102
     iput-object p1, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
 
-    .line 101
+    .line 103
     return-void
 .end method
 
@@ -6297,17 +6320,17 @@
     .param p2, "user"    # Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     .prologue
-    .line 211
+    .line 213
     if-nez p1, :cond_0
 
-    .line 212
+    .line 214
     const/4 v1, -0x3
 
-    .line 218
+    .line 220
     :goto_0
     return v1
 
-    .line 215
+    .line 217
     :cond_0
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -6321,11 +6344,11 @@
 
     move-result-object v0
 
-    .line 216
+    .line 218
     .local v0, "launcherApps":Lcom/android/launcher3/common/compat/LauncherAppsCompat;
     invoke-virtual {v0, p1, p2}, Lcom/android/launcher3/common/compat/LauncherAppsCompat;->showAppDetailsForProfile(Landroid/content/ComponentName;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
-    .line 218
+    .line 220
     const/4 v1, 0x0
 
     goto :goto_0
@@ -6340,19 +6363,19 @@
 
     const/16 v4, -0x66
 
-    .line 1222
+    .line 1224
     const/4 v1, 0x0
 
-    .line 1224
+    .line 1226
     .local v1, "infos":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-nez p1, :cond_1
 
-    .line 1242
+    .line 1244
     :cond_0
     :goto_0
     return v2
 
-    .line 1226
+    .line 1228
     :cond_1
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
@@ -6360,7 +6383,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 1227
+    .line 1229
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getName()Ljava/lang/String;
 
     move-result-object v3
@@ -6369,12 +6392,12 @@
 
     move-result-object v1
 
-    .line 1232
+    .line 1234
     :cond_2
     :goto_1
     if-eqz v1, :cond_0
 
-    .line 1233
+    .line 1235
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -6393,13 +6416,13 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1234
+    .line 1236
     .local v0, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v3, v0, Lcom/android/launcher3/folder/FolderInfo;
 
     if-eqz v3, :cond_3
 
-    .line 1235
+    .line 1237
     iget-object v3, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     check-cast v0, Lcom/android/launcher3/folder/FolderInfo;
@@ -6409,7 +6432,7 @@
 
     goto :goto_2
 
-    .line 1228
+    .line 1230
     :cond_4
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
@@ -6417,7 +6440,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 1229
+    .line 1231
     invoke-interface {p1}, Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v3
@@ -6428,7 +6451,7 @@
 
     goto :goto_1
 
-    .line 1242
+    .line 1244
     :cond_5
     const/4 v2, 0x0
 
@@ -6439,12 +6462,12 @@
     .locals 1
 
     .prologue
-    .line 1208
+    .line 1210
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mAppsProxyCallbacks:Lcom/android/launcher3/proxy/AppsProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/AppsProxyCallbacks;->showTidyUpPreview()V
 
-    .line 1209
+    .line 1211
     const/4 v0, 0x0
 
     return v0
@@ -6455,7 +6478,7 @@
     .param p1, "appInfo"    # Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;
 
     .prologue
-    .line 703
+    .line 705
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/android/launcher3/proxy/LauncherProxy;->hideOrUnHideApps(Lcom/android/launcher3/proxy/LauncherProxy$AppInfo;Z)I
@@ -6470,12 +6493,12 @@
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 1534
+    .line 1536
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mLauncherActivityProxyCallbacks:Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;
 
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/LauncherActivityProxyCallbacks;->uninstallOrDisableApp(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1535
+    .line 1537
     const/4 v0, 0x0
 
     return v0
@@ -6486,7 +6509,7 @@
     .param p1, "info"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 909
+    .line 911
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mStageManagerProxyCallbacks:Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;
 
     invoke-interface {v0}, Lcom/android/launcher3/proxy/StageManagerProxyCallbacks;->getTopStageMode()I
@@ -6501,16 +6524,16 @@
 
     if-nez v0, :cond_1
 
-    .line 911
+    .line 913
     :cond_0
     const/4 v0, -0x2
 
-    .line 914
+    .line 916
     .end local p1    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :goto_0
     return v0
 
-    .line 913
+    .line 915
     .restart local p1    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/proxy/LauncherProxy;->mWidgetProxyCallbacks:Lcom/android/launcher3/proxy/WidgetProxyCallbacks;
@@ -6520,7 +6543,7 @@
     .end local p1    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     invoke-interface {v0, p1}, Lcom/android/launcher3/proxy/WidgetProxyCallbacks;->uninstallWidget(Lcom/android/launcher3/common/base/item/PendingAddItemInfo;)V
 
-    .line 914
+    .line 916
     const/4 v0, 0x0
 
     goto :goto_0
@@ -6533,12 +6556,12 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 1692
+    .line 1695
     instance-of v1, p1, Lcom/android/launcher3/folder/FolderInfo;
 
     if-eqz v1, :cond_1
 
-    .line 1693
+    .line 1696
     invoke-static {}, Lcom/android/launcher3/folder/folderlock/FolderLock;->getInstance()Lcom/android/launcher3/folder/folderlock/FolderLock;
 
     move-result-object v0
@@ -6546,7 +6569,7 @@
     .local v0, "folderLock":Lcom/android/launcher3/folder/folderlock/FolderLock;
     move-object v1, p1
 
-    .line 1694
+    .line 1697
     check-cast v1, Lcom/android/launcher3/folder/FolderInfo;
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->isLockedFolder(Lcom/android/launcher3/folder/FolderInfo;)Z
@@ -6557,20 +6580,20 @@
 
     move v1, v2
 
-    .line 1701
+    .line 1704
     .end local v0    # "folderLock":Lcom/android/launcher3/folder/folderlock/FolderLock;
     :goto_0
     return v1
 
-    .line 1697
+    .line 1700
     .restart local v0    # "folderLock":Lcom/android/launcher3/folder/folderlock/FolderLock;
     :cond_0
     invoke-virtual {v0, p1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->setBackupInfo(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1698
+    .line 1701
     invoke-virtual {v0, p1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->startUnlockVerifyActivity(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1699
+    .line 1702
     const/4 v1, 0x0
 
     goto :goto_0
@@ -6579,7 +6602,7 @@
     :cond_1
     move v1, v2
 
-    .line 1701
+    .line 1704
     goto :goto_0
 .end method
 
@@ -6588,12 +6611,12 @@
     .param p1, "itemInfo"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 1716
+    .line 1719
     invoke-static {}, Lcom/android/launcher3/folder/folderlock/FolderLock;->getInstance()Lcom/android/launcher3/folder/folderlock/FolderLock;
 
     move-result-object v0
 
-    .line 1717
+    .line 1720
     .local v0, "folderLock":Lcom/android/launcher3/folder/folderlock/FolderLock;
     instance-of v1, p1, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -6609,22 +6632,22 @@
 
     if-nez v1, :cond_1
 
-    .line 1718
+    .line 1721
     :cond_0
     const/4 v1, -0x1
 
-    .line 1722
+    .line 1725
     :goto_0
     return v1
 
-    .line 1720
+    .line 1723
     :cond_1
     invoke-virtual {v0, p1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->setBackupInfo(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1721
+    .line 1724
     invoke-virtual {v0, p1}, Lcom/android/launcher3/folder/folderlock/FolderLock;->startUnlockVerifyActivity(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1722
+    .line 1725
     const/4 v1, 0x0
 
     goto :goto_0

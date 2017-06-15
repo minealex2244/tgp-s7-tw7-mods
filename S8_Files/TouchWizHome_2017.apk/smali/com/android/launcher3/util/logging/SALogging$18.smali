@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 972
+    .line 1036
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$18;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,14 +41,14 @@
     .locals 4
 
     .prologue
-    .line 975
+    .line 1039
     sget-object v1, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 976
+    .line 1040
     .local v0, "res":Landroid/content/res/Resources;
     iget-object v1, p0, Lcom/android/launcher3/util/logging/SALogging$18;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
@@ -66,7 +66,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
 
-    .line 978
+    .line 1042
     iget-object v1, p0, Lcom/android/launcher3/util/logging/SALogging$18;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     const v2, 0x7f0801a9
@@ -77,14 +77,14 @@
 
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$18;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    .line 979
+    .line 1043
     invoke-virtual {v3}, Lcom/android/launcher3/util/logging/SALogging;->getHomeEmptyPageCount()I
 
     move-result v3
 
-    .line 978
+    .line 1042
     invoke-virtual {v1, v2, v3}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
 
-    .line 981
+    .line 1045
     return-void
 .end method

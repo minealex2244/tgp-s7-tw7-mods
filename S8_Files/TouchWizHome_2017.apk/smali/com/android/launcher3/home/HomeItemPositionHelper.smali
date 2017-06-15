@@ -75,7 +75,7 @@
     .end annotation
 
     .prologue
-    .line 402
+    .line 406
     .local p1, "q":Ljava/util/Queue;, "Ljava/util/Queue<Ljava/lang/Integer;>;"
     const/4 v4, 0x1
 
@@ -88,7 +88,7 @@
     :cond_0
     const/4 v3, 0x1
 
-    .line 404
+    .line 408
     .local v3, "needCheckSpan":Z
     :goto_0
     invoke-direct {p0, p4, p5, p8, p9}, Lcom/android/launcher3/home/HomeItemPositionHelper;->in(IIII)Z
@@ -97,14 +97,14 @@
 
     if-eqz v4, :cond_9
 
-    .line 405
+    .line 409
     aget-object v4, p2, p4
 
     aget v4, v4, p5
 
     if-nez v4, :cond_9
 
-    .line 406
+    .line 410
     aget-object v4, p10, p4
 
     aget-boolean v4, v4, p5
@@ -113,14 +113,14 @@
 
     const/4 v0, 0x1
 
-    .line 407
+    .line 411
     .local v0, "available":Z
     :goto_1
     if-eqz v0, :cond_2
 
     if-eqz v3, :cond_2
 
-    .line 408
+    .line 412
     add-int v4, p4, p6
 
     if-gt v4, p8, :cond_1
@@ -129,47 +129,47 @@
 
     if-le v4, p9, :cond_5
 
-    .line 409
+    .line 413
     :cond_1
     const/4 v0, 0x0
 
-    .line 422
+    .line 426
     :cond_2
     if-eqz v0, :cond_8
 
-    .line 423
+    .line 427
     const/4 v4, 0x0
 
     aput p4, p3, v4
 
-    .line 424
+    .line 428
     const/4 v4, 0x1
 
     aput p5, p3, v4
 
-    .line 425
+    .line 429
     const/4 v4, 0x1
 
-    .line 434
+    .line 438
     .end local v0    # "available":Z
     :goto_2
     return v4
 
-    .line 402
+    .line 406
     .end local v3    # "needCheckSpan":Z
     :cond_3
     const/4 v3, 0x0
 
     goto :goto_0
 
-    .line 406
+    .line 410
     .restart local v3    # "needCheckSpan":Z
     :cond_4
     const/4 v0, 0x0
 
     goto :goto_1
 
-    .line 412
+    .line 416
     .restart local v0    # "available":Z
     :cond_5
     move v1, p4
@@ -182,7 +182,7 @@
 
     if-ge v1, p8, :cond_2
 
-    .line 413
+    .line 417
     move v2, p5
 
     .local v2, "j":I
@@ -193,7 +193,7 @@
 
     if-ge v2, p9, :cond_7
 
-    .line 414
+    .line 418
     if-eqz v0, :cond_6
 
     aget-object v4, p10, v1
@@ -204,28 +204,28 @@
 
     const/4 v0, 0x1
 
-    .line 415
+    .line 419
     :goto_5
     if-eqz v0, :cond_2
 
-    .line 413
+    .line 417
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_4
 
-    .line 414
+    .line 418
     :cond_6
     const/4 v0, 0x0
 
     goto :goto_5
 
-    .line 412
+    .line 416
     :cond_7
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_3
 
-    .line 427
+    .line 431
     .end local v1    # "i":I
     .end local v2    # "j":I
     :cond_8
@@ -235,21 +235,21 @@
 
     invoke-interface {p1, v4}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
-    .line 428
+    .line 432
     invoke-static {p5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
     invoke-interface {p1, v4}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
-    .line 429
+    .line 433
     aget-object v4, p2, p4
 
     const/4 v5, 0x1
 
     aput v5, v4, p5
 
-    .line 434
+    .line 438
     .end local v0    # "available":Z
     :cond_9
     const/4 v4, 0x0
@@ -329,21 +329,21 @@
     .param p6, "occupied"    # [[Z
 
     .prologue
-    .line 313
+    .line 317
     monitor-enter p0
 
     if-nez p6, :cond_0
 
-    .line 314
+    .line 318
     const/4 v6, 0x0
 
-    .line 346
+    .line 350
     :goto_0
     monitor-exit p0
 
     return v6
 
-    .line 315
+    .line 319
     :cond_0
     :try_start_0
     array-length v6, p6
@@ -362,7 +362,7 @@
 
     if-eq v6, p5, :cond_2
 
-    .line 316
+    .line 320
     :cond_1
     const-string v6, "HomeItemPositionHelper"
 
@@ -424,16 +424,16 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 319
+    .line 323
     const/4 v6, 0x0
 
     goto :goto_0
 
-    .line 322
+    .line 326
     :cond_2
     const/4 v3, 0x0
 
-    .line 323
+    .line 327
     .local v3, "vacantSize":I
     const/4 v5, 0x0
 
@@ -441,14 +441,14 @@
     :goto_1
     if-ge v5, p5, :cond_a
 
-    .line 324
+    .line 328
     const/4 v4, 0x0
 
     .local v4, "x":I
     :goto_2
     if-ge v4, p4, :cond_9
 
-    .line 325
+    .line 329
     aget-object v6, p6, v4
 
     aget-boolean v6, v6, v5
@@ -457,12 +457,12 @@
 
     const/4 v0, 0x1
 
-    .line 326
+    .line 330
     .local v0, "available":Z
     :goto_3
     const/4 v3, 0x0
 
-    .line 327
+    .line 331
     move v1, v4
 
     .local v1, "i":I
@@ -473,7 +473,7 @@
 
     if-ge v1, p4, :cond_3
 
-    .line 328
+    .line 332
     move v2, v5
 
     .local v2, "j":I
@@ -484,7 +484,7 @@
 
     if-ge v2, p5, :cond_7
 
-    .line 329
+    .line 333
     if-eqz v0, :cond_5
 
     aget-object v6, p6, v1
@@ -495,41 +495,41 @@
 
     const/4 v0, 0x1
 
-    .line 330
+    .line 334
     :goto_6
     add-int/lit8 v3, v3, 0x1
 
-    .line 331
+    .line 335
     if-nez v0, :cond_6
 
-    .line 332
+    .line 336
     const/4 v3, 0x0
 
-    .line 338
+    .line 342
     .end local v2    # "j":I
     :cond_3
     mul-int v6, p2, p3
 
     if-ne v3, v6, :cond_8
 
-    .line 339
+    .line 343
     const/4 v6, 0x0
 
     aput v4, p1, v6
 
-    .line 340
+    .line 344
     const/4 v6, 0x1
 
     aput v5, p1, v6
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 341
+    .line 345
     const/4 v6, 0x1
 
     goto/16 :goto_0
 
-    .line 325
+    .line 329
     .end local v0    # "available":Z
     .end local v1    # "i":I
     :cond_4
@@ -537,7 +537,7 @@
 
     goto :goto_3
 
-    .line 329
+    .line 333
     .restart local v0    # "available":Z
     .restart local v1    # "i":I
     .restart local v2    # "j":I
@@ -546,26 +546,26 @@
 
     goto :goto_6
 
-    .line 328
+    .line 332
     :cond_6
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_5
 
-    .line 327
+    .line 331
     :cond_7
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_4
 
-    .line 324
+    .line 328
     .end local v2    # "j":I
     :cond_8
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_2
 
-    .line 323
+    .line 327
     .end local v0    # "available":Z
     .end local v1    # "i":I
     :cond_9
@@ -573,14 +573,14 @@
 
     goto :goto_1
 
-    .line 346
+    .line 350
     .end local v4    # "x":I
     :cond_a
     const/4 v6, 0x0
 
     goto/16 :goto_0
 
-    .line 313
+    .line 317
     .end local v3    # "vacantSize":I
     .end local v5    # "y":I
     :catchall_0
@@ -602,54 +602,54 @@
     .param p7, "lastPosition"    # Z
 
     .prologue
-    .line 251
+    .line 255
     const/4 v6, 0x0
 
     const/4 v7, 0x0
 
     aput v7, p1, v6
 
-    .line 252
+    .line 256
     const/4 v6, 0x1
 
     const/4 v7, 0x0
 
     aput v7, p1, v6
 
-    .line 253
+    .line 257
     const/4 v3, 0x0
 
-    .line 255
+    .line 259
     .local v3, "offsetY":I
     if-eqz p7, :cond_9
 
-    .line 257
+    .line 261
     add-int/lit8 v5, p5, -0x1
 
     .local v5, "y":I
     :goto_0
     if-ltz v5, :cond_0
 
-    .line 258
+    .line 262
     add-int/lit8 v4, p4, -0x1
 
     .local v4, "x":I
     :goto_1
     if-ltz v4, :cond_8
 
-    .line 260
+    .line 264
     aget-object v6, p6, v4
 
     aget-boolean v6, v6, v5
 
     if-eqz v6, :cond_7
 
-    .line 261
+    .line 265
     const/4 v6, 0x1
 
     if-le p2, v6, :cond_4
 
-    .line 262
+    .line 266
     const/4 v7, 0x0
 
     add-int v6, v4, p2
@@ -661,7 +661,7 @@
     :goto_2
     aput v6, p1, v7
 
-    .line 263
+    .line 267
     const/4 v7, 0x1
 
     add-int v6, v4, p2
@@ -673,7 +673,7 @@
     :goto_3
     aput v6, p1, v7
 
-    .line 272
+    .line 276
     .end local v4    # "x":I
     :cond_0
     :goto_4
@@ -681,10 +681,10 @@
 
     if-le p3, v6, :cond_1
 
-    .line 273
+    .line 277
     add-int/lit8 v3, p3, -0x1
 
-    .line 297
+    .line 301
     :cond_1
     if-eqz p7, :cond_11
 
@@ -701,7 +701,7 @@
     :goto_5
     return v6
 
-    .line 262
+    .line 266
     .restart local v4    # "x":I
     :cond_2
     add-int/lit8 v6, v4, 0x1
@@ -711,10 +711,10 @@
     :cond_3
     move v6, v5
 
-    .line 263
+    .line 267
     goto :goto_3
 
-    .line 265
+    .line 269
     :cond_4
     const/4 v7, 0x0
 
@@ -727,7 +727,7 @@
     :goto_6
     aput v6, p1, v7
 
-    .line 266
+    .line 270
     const/4 v7, 0x1
 
     add-int/lit8 v6, v4, 0x1
@@ -741,7 +741,7 @@
 
     goto :goto_4
 
-    .line 265
+    .line 269
     :cond_5
     add-int/lit8 v6, v4, 0x1
 
@@ -750,22 +750,22 @@
     :cond_6
     move v6, v5
 
-    .line 266
+    .line 270
     goto :goto_7
 
-    .line 258
+    .line 262
     :cond_7
     add-int/lit8 v4, v4, -0x1
 
     goto :goto_1
 
-    .line 257
+    .line 261
     :cond_8
     add-int/lit8 v5, v5, -0x1
 
     goto :goto_0
 
-    .line 276
+    .line 280
     .end local v4    # "x":I
     .end local v5    # "y":I
     :cond_9
@@ -777,7 +777,7 @@
 
     if-gt v6, p5, :cond_1
 
-    .line 277
+    .line 281
     const/4 v4, 0x0
 
     .restart local v4    # "x":I
@@ -786,7 +786,7 @@
 
     if-gt v6, p4, :cond_10
 
-    .line 278
+    .line 282
     aget-object v6, p6, v4
 
     aget-boolean v6, v6, v5
@@ -795,7 +795,7 @@
 
     const/4 v0, 0x1
 
-    .line 281
+    .line 285
     .local v0, "available":Z
     :goto_a
     move v1, v4
@@ -806,7 +806,7 @@
 
     if-ge v1, v6, :cond_a
 
-    .line 282
+    .line 286
     move v2, v5
 
     .local v2, "j":I
@@ -815,7 +815,7 @@
 
     if-ge v2, v6, :cond_e
 
-    .line 283
+    .line 287
     if-eqz v0, :cond_c
 
     aget-object v6, p6, v1
@@ -826,31 +826,31 @@
 
     const/4 v0, 0x1
 
-    .line 284
+    .line 288
     :goto_d
     if-nez v0, :cond_d
 
-    .line 288
+    .line 292
     .end local v2    # "j":I
     :cond_a
     if-eqz v0, :cond_f
 
-    .line 289
+    .line 293
     const/4 v6, 0x0
 
     aput v4, p1, v6
 
-    .line 290
+    .line 294
     const/4 v6, 0x1
 
     aput v5, p1, v6
 
-    .line 291
+    .line 295
     const/4 v6, 0x1
 
     goto :goto_5
 
-    .line 278
+    .line 282
     .end local v0    # "available":Z
     .end local v1    # "i":I
     :cond_b
@@ -858,7 +858,7 @@
 
     goto :goto_a
 
-    .line 283
+    .line 287
     .restart local v0    # "available":Z
     .restart local v1    # "i":I
     .restart local v2    # "j":I
@@ -867,26 +867,26 @@
 
     goto :goto_d
 
-    .line 282
+    .line 286
     :cond_d
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_c
 
-    .line 281
+    .line 285
     :cond_e
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_b
 
-    .line 277
+    .line 281
     .end local v2    # "j":I
     :cond_f
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_9
 
-    .line 276
+    .line 280
     .end local v0    # "available":Z
     .end local v1    # "i":I
     :cond_10
@@ -894,7 +894,7 @@
 
     goto :goto_8
 
-    .line 297
+    .line 301
     .end local v4    # "x":I
     :cond_11
     const/4 v6, 0x0
@@ -969,7 +969,7 @@
 
     aput-object v6, v4, v5
 
-    const-string v5, "container=? and screen=?"
+    const-string v5, "container=? and screen=? and hidden=0"
 
     const/4 v6, 0x2
 
@@ -977,7 +977,7 @@
 
     const/4 v7, 0x0
 
-    .line 207
+    .line 208
     invoke-static/range {p1 .. p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v16
@@ -999,17 +999,17 @@
 
     move-result-object v8
 
-    .line 210
-    if-eqz v8, :cond_1
-
     .line 211
+    if-eqz v8, :cond_4
+
+    .line 212
     const-string v2, "cellX"
 
     invoke-interface {v8, v2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
     move-result v9
 
-    .line 212
+    .line 213
     .local v9, "cellXIndex":I
     const-string v2, "cellY"
 
@@ -1017,7 +1017,7 @@
 
     move-result v10
 
-    .line 213
+    .line 214
     .local v10, "cellYIndex":I
     const-string v2, "spanX"
 
@@ -1025,7 +1025,7 @@
 
     move-result v14
 
-    .line 214
+    .line 215
     .local v14, "spanXIndex":I
     const-string v2, "spanY"
 
@@ -1033,53 +1033,53 @@
 
     move-result v15
 
-    .line 216
+    .line 217
     .local v15, "spanYIndex":I
     :goto_0
     invoke-interface {v8}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_4
 
-    .line 217
+    .line 218
     new-instance v12, Lcom/android/launcher3/common/base/item/ItemInfo;
 
     invoke-direct {v12}, Lcom/android/launcher3/common/base/item/ItemInfo;-><init>()V
 
-    .line 218
+    .line 219
     .local v12, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-wide/from16 v0, p1
 
     iput-wide v0, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 219
+    .line 220
     move-wide/from16 v0, p3
 
     iput-wide v0, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 220
+    .line 221
     invoke-interface {v8, v9}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
 
     iput v2, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 221
+    .line 222
     invoke-interface {v8, v10}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
 
     iput v2, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 222
+    .line 223
     invoke-interface {v8, v14}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
 
     iput v2, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
 
-    .line 223
+    .line 224
     invoke-interface {v8, v15}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
@@ -1087,14 +1087,62 @@
     iput v2, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
 
     .line 225
-    invoke-virtual {v13, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    iget v2, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
+
+    const/4 v3, -0x1
+
+    if-eq v2, v3, :cond_0
+
+    iget v2, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
+
+    const/4 v3, -0x1
+
+    if-ne v2, v3, :cond_2
+
+    .line 226
+    :cond_0
+    const-string v2, "HomeItemPositionHelper"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Need handling an occupied item which has wrong coordinates cellX : "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    iget v4, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, " cellY : "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    iget v4, v12, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_0
 
-    .line 228
+    .line 232
     .end local v9    # "cellXIndex":I
     .end local v10    # "cellYIndex":I
     .end local v12    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -1103,12 +1151,12 @@
     :catch_0
     move-exception v11
 
-    .line 229
+    .line 233
     .local v11, "e":Ljava/lang/Exception;
     :try_start_1
     invoke-virtual {v13}, Ljava/util/ArrayList;->clear()V
 
-    .line 230
+    .line 234
     const-string v2, "HomeItemPositionHelper"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1137,38 +1185,58 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 232
-    if-eqz v8, :cond_0
-
-    .line 233
-    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+    .line 236
+    if-eqz v8, :cond_1
 
     .line 237
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+
+    .line 241
     .end local v11    # "e":Ljava/lang/Exception;
-    :cond_0
+    :cond_1
     :goto_1
     return-object v13
 
-    .line 232
-    :cond_1
-    if-eqz v8, :cond_0
+    .line 229
+    .restart local v9    # "cellXIndex":I
+    .restart local v10    # "cellYIndex":I
+    .restart local v12    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
+    .restart local v14    # "spanXIndex":I
+    .restart local v15    # "spanYIndex":I
+    :cond_2
+    :try_start_2
+    invoke-virtual {v13, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 233
-    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+    goto/16 :goto_0
 
-    goto :goto_1
-
-    .line 232
+    .line 236
+    .end local v9    # "cellXIndex":I
+    .end local v10    # "cellYIndex":I
+    .end local v12    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
+    .end local v14    # "spanXIndex":I
+    .end local v15    # "spanYIndex":I
     :catchall_0
     move-exception v2
 
-    if-eqz v8, :cond_2
+    if-eqz v8, :cond_3
 
-    .line 233
+    .line 237
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    :cond_2
+    :cond_3
     throw v2
+
+    .line 236
+    :cond_4
+    if-eqz v8, :cond_1
+
+    .line 237
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+
+    goto :goto_1
 .end method
 
 .method private getOccupiedTable(JII)[[Z
@@ -1480,7 +1548,7 @@
     .param p4, "yCount"    # I
 
     .prologue
-    .line 438
+    .line 442
     if-ltz p1, :cond_0
 
     if-ge p1, p3, :cond_0
@@ -1817,7 +1885,7 @@
     .param p8, "occupied"    # [[Z
 
     .prologue
-    .line 351
+    .line 355
     monitor-enter p0
 
     if-ltz p2, :cond_0
@@ -1836,17 +1904,17 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 352
+    .line 356
     :cond_0
     const/4 v2, 0x0
 
-    .line 395
+    .line 399
     :goto_0
     monitor-exit p0
 
     return v2
 
-    .line 355
+    .line 359
     :cond_1
     if-eqz p8, :cond_2
 
@@ -1875,13 +1943,13 @@
 
     if-eq v2, v0, :cond_3
 
-    .line 357
+    .line 361
     :cond_2
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 360
+    .line 364
     :cond_3
     filled-new-array/range {p6 .. p7}, [I
 
@@ -1895,7 +1963,7 @@
 
     check-cast v4, [[I
 
-    .line 361
+    .line 365
     .local v4, "visit":[[I
     const/16 v20, 0x0
 
@@ -1907,7 +1975,7 @@
 
     if-ge v0, v1, :cond_5
 
-    .line 362
+    .line 366
     const/16 v21, 0x0
 
     .local v21, "j":I
@@ -1918,25 +1986,25 @@
 
     if-ge v0, v1, :cond_4
 
-    .line 363
+    .line 367
     aget-object v2, v4, v20
 
     const/4 v5, 0x0
 
     aput v5, v2, v21
 
-    .line 362
+    .line 366
     add-int/lit8 v21, v21, 0x1
 
     goto :goto_2
 
-    .line 361
+    .line 365
     :cond_4
     add-int/lit8 v20, v20, 0x1
 
     goto :goto_1
 
-    .line 367
+    .line 371
     .end local v21    # "j":I
     :cond_5
     aget-object v2, v4, p2
@@ -1945,12 +2013,12 @@
 
     aput v5, v2, p3
 
-    .line 368
+    .line 372
     new-instance v3, Ljava/util/LinkedList;
 
     invoke-direct {v3}, Ljava/util/LinkedList;-><init>()V
 
-    .line 369
+    .line 373
     .local v3, "q":Ljava/util/Queue;, "Ljava/util/Queue<Ljava/lang/Integer;>;"
     invoke-static/range {p2 .. p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1958,14 +2026,14 @@
 
     invoke-interface {v3, v2}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
-    .line 370
+    .line 374
     invoke-static/range {p3 .. p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
     invoke-interface {v3, v2}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
-    .line 372
+    .line 376
     :cond_6
     invoke-interface {v3}, Ljava/util/Queue;->isEmpty()Z
 
@@ -1973,7 +2041,7 @@
 
     if-nez v2, :cond_a
 
-    .line 373
+    .line 377
     invoke-interface {v3}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
     move-result-object v2
@@ -1984,7 +2052,7 @@
 
     move-result v19
 
-    .line 374
+    .line 378
     .local v19, "front_x":I
     invoke-interface {v3}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -1996,7 +2064,7 @@
 
     move-result v7
 
-    .line 376
+    .line 380
     .local v7, "front_y":I
     add-int/lit8 v6, v19, -0x1
 
@@ -2020,12 +2088,12 @@
 
     if-eqz v2, :cond_7
 
-    .line 378
+    .line 382
     const/4 v2, 0x1
 
     goto/16 :goto_0
 
-    .line 380
+    .line 384
     :cond_7
     add-int/lit8 v6, v19, 0x1
 
@@ -2049,12 +2117,12 @@
 
     if-eqz v2, :cond_8
 
-    .line 382
+    .line 386
     const/4 v2, 0x1
 
     goto/16 :goto_0
 
-    .line 384
+    .line 388
     :cond_8
     add-int/lit8 v13, v7, -0x1
 
@@ -2084,12 +2152,12 @@
 
     if-eqz v2, :cond_9
 
-    .line 386
+    .line 390
     const/4 v2, 0x1
 
     goto/16 :goto_0
 
-    .line 388
+    .line 392
     :cond_9
     add-int/lit8 v13, v7, 0x1
 
@@ -2121,12 +2189,12 @@
 
     if-eqz v2, :cond_6
 
-    .line 390
+    .line 394
     const/4 v2, 0x1
 
     goto/16 :goto_0
 
-    .line 395
+    .line 399
     .end local v7    # "front_y":I
     .end local v19    # "front_x":I
     :cond_a
@@ -2134,7 +2202,7 @@
 
     goto/16 :goto_0
 
-    .line 351
+    .line 355
     .end local v3    # "q":Ljava/util/Queue;, "Ljava/util/Queue<Ljava/lang/Integer;>;"
     .end local v4    # "visit":[[I
     .end local v20    # "i":I

@@ -334,7 +334,7 @@
     .locals 1
 
     .prologue
-    .line 306
+    .line 308
     iget-object v0, p0, Lcom/android/launcher3/folder/FolderInfo;->contents:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -500,6 +500,9 @@
     .line 302
     .end local v0    # "icon":Lcom/android/launcher3/common/base/item/IconInfo;
     :cond_1
+    invoke-virtual {v1}, Lcom/android/launcher3/folder/FolderInfo;->sortContents()V
+
+    .line 304
     return-object v1
 .end method
 

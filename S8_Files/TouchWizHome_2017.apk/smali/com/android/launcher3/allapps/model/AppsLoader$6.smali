@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 603
+    .line 604
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$6;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +53,7 @@
     .param p2, "info2"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 606
+    .line 607
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->sCollator:Ljava/text/Collator;
     invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$800()Ljava/text/Collator;
 
@@ -82,7 +82,7 @@
     .locals 1
 
     .prologue
-    .line 603
+    .line 604
     check-cast p1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
     check-cast p2, Lcom/android/launcher3/common/base/item/ItemInfo;

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/home/HomeLoader;->updateContainerForDexSync(ZLcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/item/IconInfo;)V
+    value = Lcom/android/launcher3/home/HomeLoader;->updateFolderTitle(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,31 +20,23 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/launcher3/home/HomeLoader;
 
-.field final synthetic val$addToFolder:Z
-
-.field final synthetic val$folder:Lcom/android/launcher3/folder/FolderInfo;
-
-.field final synthetic val$item:Lcom/android/launcher3/common/base/item/IconInfo;
+.field final synthetic val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
 
 .field final synthetic val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;ZLcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/item/IconInfo;)V
+.method constructor <init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/base/item/ItemInfo;)V
     .locals 0
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 3426
+    .line 3451
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$34;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
-    iput-boolean p3, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$addToFolder:Z
-
-    iput-object p4, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$folder:Lcom/android/launcher3/folder/FolderInfo;
-
-    iput-object p5, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$item:Lcom/android/launcher3/common/base/item/IconInfo;
+    iput-object p3, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,18 +46,18 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 2
 
     .prologue
-    .line 3429
+    .line 3454
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$34;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 3430
+    .line 3455
     .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-eqz v0, :cond_0
 
@@ -73,16 +65,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3431
-    iget-boolean v1, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$addToFolder:Z
+    .line 3456
+    iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$item:Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$folder:Lcom/android/launcher3/folder/FolderInfo;
+    invoke-interface {v0, v1}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindFolderTitle(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$34;->val$item:Lcom/android/launcher3/common/base/item/IconInfo;
-
-    invoke-interface {v0, v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindUpdateContainer(ZLcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/item/IconInfo;)V
-
-    .line 3433
+    .line 3458
     :cond_0
     return-void
 .end method

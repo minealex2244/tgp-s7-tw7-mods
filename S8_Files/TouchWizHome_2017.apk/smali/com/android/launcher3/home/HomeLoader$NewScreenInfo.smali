@@ -27,15 +27,15 @@
     .param p3, "index"    # I
 
     .prologue
-    .line 3768
+    .line 3808
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3769
+    .line 3809
     iput-wide p1, p0, Lcom/android/launcher3/home/HomeLoader$NewScreenInfo;->originalScreenId:J
 
-    .line 3770
+    .line 3810
     iput p3, p0, Lcom/android/launcher3/home/HomeLoader$NewScreenInfo;->plusIndex:I
 
-    .line 3771
+    .line 3811
     return-void
 .end method

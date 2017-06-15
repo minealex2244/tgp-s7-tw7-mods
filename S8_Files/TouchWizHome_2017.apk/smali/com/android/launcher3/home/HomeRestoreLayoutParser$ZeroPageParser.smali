@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 478
+    .line 474
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ZeroPageParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 478
+    .line 474
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ZeroPageParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -60,7 +60,7 @@
     .end annotation
 
     .prologue
-    .line 482
+    .line 478
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v1
@@ -69,7 +69,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 483
+    .line 479
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v1
@@ -78,7 +78,7 @@
 
     move-result v0
 
-    .line 484
+    .line 480
     .local v0, "zeroPageEnable":Z
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ZeroPageParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -89,7 +89,7 @@
 
     invoke-static {v1, v0}, Lcom/android/launcher3/home/ZeroPageController;->setZeroPageActiveState(Landroid/content/Context;Z)V
 
-    .line 485
+    .line 481
     const-string v1, "Launcher.HomeRestore"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -112,7 +112,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 487
+    .line 483
     .end local v0    # "zeroPageEnable":Z
     :cond_0
     const-wide/16 v2, 0x0

@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     .prologue
-    .line 605
+    .line 607
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask$2;->this$1:Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 6
 
     .prologue
-    .line 607
+    .line 609
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask$2;->this$1:Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     monitor-enter v1
 
-    .line 608
+    .line 610
     :try_start_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask$2;->this$1:Lcom/android/launcher3/LauncherModel$LoaderTask;
 
@@ -55,14 +55,14 @@
     # setter for: Lcom/android/launcher3/LauncherModel$LoaderTask;->mLoadAndBindStepFinished:Z
     invoke-static {v0, v2}, Lcom/android/launcher3/LauncherModel$LoaderTask;->access$802(Lcom/android/launcher3/LauncherModel$LoaderTask;Z)Z
 
-    .line 610
+    .line 612
     const-string v0, "Launcher.Model"
 
     const-string v2, "done with previous binding step"
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 612
+    .line 614
     const-string v0, "Launcher.Model"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -89,18 +89,18 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 613
+    .line 615
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask$2;->this$1:Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     invoke-virtual {v0}, Ljava/lang/Object;->notify()V
 
-    .line 614
+    .line 616
     monitor-exit v1
 
-    .line 615
+    .line 617
     return-void
 
-    .line 614
+    .line 616
     :catchall_0
     move-exception v0
 

@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 138
+    .line 223
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$2;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$launcher:Lcom/android/launcher3/Launcher;
@@ -55,18 +55,18 @@
 
     const/4 v8, 0x1
 
-    .line 141
+    .line 226
     const-string v5, ""
 
-    .line 142
+    .line 227
     .local v5, "title":Ljava/lang/String;
     const/4 v2, 0x0
 
-    .line 143
+    .line 228
     .local v2, "screenID":Ljava/lang/String;
     const/4 v0, 0x0
 
-    .line 144
+    .line 229
     .local v0, "eventID":Ljava/lang/String;
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$launcher:Lcom/android/launcher3/Launcher;
 
@@ -74,7 +74,7 @@
 
     move-result-object v1
 
-    .line 145
+    .line 230
     .local v1, "res":Landroid/content/res/Resources;
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$launcher:Lcom/android/launcher3/Launcher;
 
@@ -82,40 +82,40 @@
 
     move-result v4
 
-    .line 146
+    .line 231
     .local v4, "stageMode":I
-    if-ne v4, v8, :cond_4
+    if-ne v4, v8, :cond_5
 
-    .line 147
+    .line 232
     const v6, 0x7f08018d
 
     invoke-virtual {v1, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 148
+    .line 233
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     instance-of v6, v6, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v6, :cond_3
 
-    .line 149
+    .line 234
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iget-object v7, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->getPackageAndTitleString(Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
-    invoke-static {v6, v7}, Lcom/android/launcher3/util/logging/SALogging;->access$100(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
+    invoke-static {v6, v7}, Lcom/android/launcher3/util/logging/SALogging;->access$200(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 150
+    .line 235
     invoke-virtual {v1, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 172
+    .line 258
     :cond_0
     :goto_0
     if-nez v5, :cond_1
@@ -140,7 +140,7 @@
 
     if-nez v6, :cond_1
 
-    .line 173
+    .line 259
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     iget-object v6, v6, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
@@ -149,22 +149,22 @@
 
     move-result-object v5
 
-    .line 175
+    .line 261
     :cond_1
     if-eqz v2, :cond_2
 
     if-eqz v0, :cond_2
 
-    .line 176
+    .line 262
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     invoke-virtual {v6, v2, v0, v5}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 178
+    .line 264
     :cond_2
     return-void
 
-    .line 151
+    .line 236
     :cond_3
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
 
@@ -172,20 +172,28 @@
 
     if-eqz v6, :cond_0
 
-    .line 152
-    sget-object v7, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
-
+    .line 237
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     check-cast v6, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     iget-object v6, v6, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
-    invoke-static {v7, v6}, Lcom/android/launcher3/util/logging/SALogUtils;->getDetailAppNameByComponentName(Landroid/content/Context;Landroid/content/ComponentName;)Ljava/lang/String;
+    if-eqz v6, :cond_4
+
+    .line 238
+    iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
+
+    check-cast v6, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
+
+    iget-object v6, v6, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
+
+    invoke-virtual {v6}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 154
+    .line 240
+    :cond_4
     const v6, 0x7f08013a
 
     invoke-virtual {v1, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -194,77 +202,77 @@
 
     goto :goto_0
 
-    .line 156
-    :cond_4
-    if-ne v4, v9, :cond_5
+    .line 242
+    :cond_5
+    if-ne v4, v9, :cond_6
 
-    .line 157
+    .line 243
     const v6, 0x7f08017f
 
     invoke-virtual {v1, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 158
+    .line 244
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     instance-of v6, v6, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v6, :cond_0
 
-    .line 159
+    .line 245
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iget-object v7, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->getPackageAndTitleString(Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
-    invoke-static {v6, v7}, Lcom/android/launcher3/util/logging/SALogging;->access$100(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
+    invoke-static {v6, v7}, Lcom/android/launcher3/util/logging/SALogging;->access$200(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 160
+    .line 246
     invoke-virtual {v1, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 162
-    :cond_5
+    .line 248
+    :cond_6
     const/4 v6, 0x5
 
     if-ne v4, v6, :cond_0
 
-    .line 163
+    .line 249
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iget-object v7, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$info:Lcom/android/launcher3/common/base/item/ItemInfo;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->getPackageAndTitleString(Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
-    invoke-static {v6, v7}, Lcom/android/launcher3/util/logging/SALogging;->access$100(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
+    invoke-static {v6, v7}, Lcom/android/launcher3/util/logging/SALogging;->access$200(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/common/base/item/ItemInfo;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 164
+    .line 250
     iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$2;->val$launcher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v6}, Lcom/android/launcher3/Launcher;->getSecondTopStageMode()I
 
     move-result v3
 
-    .line 165
+    .line 251
     .local v3, "secondTopStage":I
-    if-ne v3, v8, :cond_7
+    if-ne v3, v8, :cond_8
 
-    .line 166
+    .line 252
     const v6, 0x7f080185
 
     invoke-virtual {v1, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 170
-    :cond_6
+    .line 256
+    :cond_7
     :goto_1
     const v6, 0x7f080107
 
@@ -272,13 +280,13 @@
 
     move-result-object v0
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 167
-    :cond_7
-    if-ne v3, v9, :cond_6
+    .line 253
+    :cond_8
+    if-ne v3, v9, :cond_7
 
-    .line 168
+    .line 254
     const v6, 0x7f080179
 
     invoke-virtual {v1, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

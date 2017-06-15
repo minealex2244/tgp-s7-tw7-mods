@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 858
+    .line 859
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$14;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$14;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
@@ -53,7 +53,7 @@
     .locals 4
 
     .prologue
-    .line 860
+    .line 861
     iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$14;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iget-object v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$14;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
@@ -65,16 +65,16 @@
 
     move-result-object v0
 
-    .line 861
+    .line 862
     .local v0, "callbacks":Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
     if-eqz v0, :cond_0
 
-    .line 862
+    .line 863
     iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$14;->val$remainedItemsInFolder:Ljava/util/ArrayList;
 
     invoke-interface {v0, v1}, Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;->bindItemsInFolder(Ljava/util/ArrayList;)V
 
-    .line 864
+    .line 865
     :cond_0
     return-void
 .end method

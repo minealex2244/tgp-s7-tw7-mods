@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/controller/FolderController;
 
     .prologue
-    .line 228
+    .line 231
     iput-object p1, p0, Lcom/android/launcher3/folder/controller/FolderController$2;->this$0:Lcom/android/launcher3/folder/controller/FolderController;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -41,13 +41,13 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 231
+    .line 234
     iget-object v0, p0, Lcom/android/launcher3/folder/controller/FolderController$2;->this$0:Lcom/android/launcher3/folder/controller/FolderController;
 
     # invokes: Lcom/android/launcher3/folder/controller/FolderController;->setupFolderBgLayout()Z
     invoke-static {v0}, Lcom/android/launcher3/folder/controller/FolderController;->access$100(Lcom/android/launcher3/folder/controller/FolderController;)Z
 
-    .line 232
+    .line 235
     iget-object v0, p0, Lcom/android/launcher3/folder/controller/FolderController$2;->this$0:Lcom/android/launcher3/folder/controller/FolderController;
 
     # getter for: Lcom/android/launcher3/folder/controller/FolderController;->mFolderBgView:Lcom/android/launcher3/folder/view/FolderBgView;
@@ -64,6 +64,6 @@
 
     invoke-virtual {v0, v2, v1, v2}, Lcom/android/launcher3/folder/view/FolderBgView;->showHelpForEdit(ZIZ)V
 
-    .line 233
+    .line 236
     return-void
 .end method

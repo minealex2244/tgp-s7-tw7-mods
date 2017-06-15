@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 2675
+    .line 2678
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +33,7 @@
     .param p1, "x0"    # Lcom/android/launcher3/Launcher$1;
 
     .prologue
-    .line 2675
+    .line 2678
     invoke-direct {p0}, Lcom/android/launcher3/Launcher$GSAPrewamingClientCallbacks;-><init>()V
 
     return-void
@@ -46,7 +46,7 @@
     .param p1, "progress"    # F
 
     .prologue
-    .line 2680
+    .line 2683
     return-void
 .end method
 
@@ -56,6 +56,6 @@
     .param p2, "hotwordActive"    # Z
 
     .prologue
-    .line 2685
+    .line 2688
     return-void
 .end method

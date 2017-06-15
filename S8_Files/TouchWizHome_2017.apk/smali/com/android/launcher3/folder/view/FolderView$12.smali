@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 819
+    .line 834
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$12;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 2
 
     .prologue
-    .line 821
+    .line 836
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$12;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-virtual {v0}, Lcom/android/launcher3/folder/view/FolderView;->getItemCount()I
@@ -60,13 +60,13 @@
 
     if-nez v0, :cond_0
 
-    .line 822
+    .line 837
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$12;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # invokes: Lcom/android/launcher3/folder/view/FolderView;->replaceFolderWithFinalItem()V
     invoke-static {v0}, Lcom/android/launcher3/folder/view/FolderView;->access$800(Lcom/android/launcher3/folder/view/FolderView;)V
 
-    .line 824
+    .line 839
     :cond_0
     return-void
 .end method

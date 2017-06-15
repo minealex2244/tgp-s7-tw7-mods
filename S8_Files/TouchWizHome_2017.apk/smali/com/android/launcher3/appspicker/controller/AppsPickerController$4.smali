@@ -26,7 +26,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     .prologue
-    .line 296
+    .line 306
     iput-object p1, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     iput-object p2, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->val$data:Lcom/android/launcher3/common/stage/StageEntry;
@@ -43,10 +43,10 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 312
+    .line 322
     invoke-virtual {p0, p1}, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->onAnimationEnd(Landroid/animation/Animator;)V
 
-    .line 313
+    .line 323
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 299
+    .line 309
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;
@@ -65,7 +65,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 300
+    .line 310
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;
@@ -77,7 +77,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->setVisibility(I)V
 
-    .line 301
+    .line 311
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;
@@ -87,7 +87,7 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->reset()V
 
-    .line 303
+    .line 313
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
@@ -98,7 +98,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 304
+    .line 314
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mAppsToHideForAllApps:Ljava/util/ArrayList;
@@ -108,7 +108,7 @@
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 306
+    .line 316
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
@@ -119,12 +119,12 @@
     # invokes: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->setBackgroundAndStatusbar(ZLcom/android/launcher3/common/stage/StageEntry;)V
     invoke-static {v0, v1, v2}, Lcom/android/launcher3/appspicker/controller/AppsPickerController;->access$400(Lcom/android/launcher3/appspicker/controller/AppsPickerController;ZLcom/android/launcher3/common/stage/StageEntry;)V
 
-    .line 307
+    .line 317
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$4;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # invokes: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->detachViewFromDragLayer()V
     invoke-static {v0}, Lcom/android/launcher3/appspicker/controller/AppsPickerController;->access$500(Lcom/android/launcher3/appspicker/controller/AppsPickerController;)V
 
-    .line 308
+    .line 318
     return-void
 .end method

@@ -23,7 +23,7 @@
     .locals 1
 
     .prologue
-    .line 162
+    .line 170
     const/4 v0, 0x0
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribImage;->sColorFilter:I
@@ -35,7 +35,7 @@
     .locals 0
 
     .prologue
-    .line 161
+    .line 169
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,10 +47,10 @@
     .param p1, "whiteBg"    # Z
 
     .prologue
-    .line 165
+    .line 173
     if-eqz p1, :cond_0
 
-    .line 166
+    .line 174
     const v0, 0x7f0d0010
 
     invoke-static {p0, v0}, Landroid/support/v4/content/ContextCompat;->getColor(Landroid/content/Context;I)I
@@ -59,11 +59,11 @@
 
     sput v0, Lcom/android/launcher3/util/WhiteBgManager$AttribImage;->sColorFilter:I
 
-    .line 170
+    .line 178
     :goto_0
     return-void
 
-    .line 168
+    .line 176
     :cond_0
     const/4 v0, 0x0
 

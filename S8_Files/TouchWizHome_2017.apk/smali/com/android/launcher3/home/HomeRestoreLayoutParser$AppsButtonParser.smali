@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 491
+    .line 487
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$AppsButtonParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 491
+    .line 487
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$AppsButtonParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -62,17 +62,17 @@
     .prologue
     const/4 v8, 0x1
 
-    .line 495
+    .line 491
     const-string v3, "Launcher.HomeRestore"
 
     const-string v4, "restore apps button"
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 497
+    .line 493
     const/4 v2, 0x0
 
-    .line 498
+    .line 494
     .local v2, "isEasyModeValue":Z
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -82,7 +82,7 @@
 
     move-result v1
 
-    .line 499
+    .line 495
     .local v1, "isEasyModeEnable":Z
     if-eqz v1, :cond_0
 
@@ -99,18 +99,18 @@
 
     const-string v3, "favorites_easy"
 
-    .line 500
+    .line 496
     invoke-virtual {v3, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 501
+    .line 497
     :cond_1
     const/4 v2, 0x1
 
-    .line 503
+    .line 499
     :cond_2
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -118,7 +118,7 @@
 
     invoke-virtual {v3, v8, v2}, Lcom/android/launcher3/LauncherAppState;->setAppsButtonEnabled(ZZ)V
 
-    .line 505
+    .line 501
     iget-object v3, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$AppsButtonParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
@@ -136,7 +136,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 506
+    .line 502
     iget-object v3, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$AppsButtonParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
@@ -154,7 +154,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 508
+    .line 504
     iget-object v3, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$AppsButtonParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
@@ -174,14 +174,14 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 510
+    .line 506
     new-instance v0, Landroid/content/Intent;
 
     const-string v3, "com.sec.launcher.action.SHOW_APPS_VIEW"
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 511
+    .line 507
     .local v0, "intent":Landroid/content/Intent;
     iget-object v3, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$AppsButtonParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -190,7 +190,7 @@
     # invokes: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->addShortcut(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;I)J
     invoke-static {v3, p2, v4, v0, v8}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->access$2500(Lcom/android/launcher3/home/HomeRestoreLayoutParser;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;I)J
 
-    .line 512
+    .line 508
     const-wide/16 v4, 0x0
 
     return-wide v4

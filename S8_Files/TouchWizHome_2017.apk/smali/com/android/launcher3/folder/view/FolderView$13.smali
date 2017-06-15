@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 869
+    .line 884
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$13;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 879
+    .line 894
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$13;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     const/4 v1, 0x2
@@ -47,7 +47,7 @@
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mViewState:I
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$102(Lcom/android/launcher3/folder/view/FolderView;I)I
 
-    .line 880
+    .line 895
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$13;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mContent:Lcom/android/launcher3/folder/view/FolderPagedView;
@@ -57,7 +57,7 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/folder/view/FolderPagedView;->setFocusOnFirstChild()V
 
-    .line 881
+    .line 896
     return-void
 .end method
 
@@ -66,14 +66,14 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 872
+    .line 887
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$13;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     const/16 v1, 0x20
 
     iget-object v2, p0, Lcom/android/launcher3/folder/view/FolderView$13;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
-    .line 873
+    .line 888
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mContent:Lcom/android/launcher3/folder/view/FolderPagedView;
     invoke-static {v2}, Lcom/android/launcher3/folder/view/FolderView;->access$900(Lcom/android/launcher3/folder/view/FolderView;)Lcom/android/launcher3/folder/view/FolderPagedView;
 
@@ -83,11 +83,11 @@
 
     move-result-object v2
 
-    .line 872
+    .line 887
     # invokes: Lcom/android/launcher3/folder/view/FolderView;->sendCustomAccessibilityEvent(ILjava/lang/String;)V
     invoke-static {v0, v1, v2}, Lcom/android/launcher3/folder/view/FolderView;->access$1000(Lcom/android/launcher3/folder/view/FolderView;ILjava/lang/String;)V
 
-    .line 874
+    .line 889
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$13;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     const/4 v1, 0x1
@@ -95,6 +95,6 @@
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mViewState:I
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$102(Lcom/android/launcher3/folder/view/FolderView;I)I
 
-    .line 875
+    .line 890
     return-void
 .end method

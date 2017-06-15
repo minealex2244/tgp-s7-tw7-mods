@@ -91,71 +91,20 @@
 .end method
 
 .method public changeScreengrid(Ljava/lang/String;)V
-    .locals 6
+    .locals 1
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    const/4 v3, 0x2
-
-    const/4 v4, 0x1
-
-    const/4 v5, 0x0
-
     .line 327
-    new-array v1, v3, [I
+    iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsProxyCallbacksImpl;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
 
-    .line 329
-    .local v1, "xy":[I
-    if-eqz p1, :cond_0
-
-    .line 330
-    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 331
-    const-string v2, "x"
-
-    invoke-virtual {p1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->getAppsScreenGridPanel()Lcom/android/launcher3/allapps/AppsScreenGridPanel;
 
     move-result-object v0
 
-    .line 333
-    .local v0, "splitStr":[Ljava/lang/String;
-    array-length v2, v0
+    invoke-virtual {v0, p1}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->setScreenGridProxy(Ljava/lang/String;)V
 
-    if-ne v2, v3, :cond_0
-
-    .line 334
-    aget-object v2, v0, v5
-
-    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v2
-
-    aput v2, v1, v5
-
-    .line 335
-    aget-object v2, v0, v4
-
-    invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    move-result v2
-
-    aput v2, v1, v4
-
-    .line 337
-    iget-object v2, p0, Lcom/android/launcher3/allapps/controller/AppsProxyCallbacksImpl;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
-
-    aget v3, v1, v5
-
-    aget v4, v1, v4
-
-    invoke-virtual {v2, v5, v3, v4}, Lcom/android/launcher3/allapps/controller/AppsController;->changeScreenGrid(ZII)Z
-
-    .line 341
-    .end local v0    # "splitStr":[Ljava/lang/String;
-    :cond_0
+    .line 342
     return-void
 .end method
 
@@ -164,12 +113,12 @@
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    .line 364
+    .line 365
     const/4 v3, 0x2
 
     new-array v2, v3, [I
 
-    .line 366
+    .line 367
     .local v2, "xy":[I
     iget-object v3, p0, Lcom/android/launcher3/allapps/controller/AppsProxyCallbacksImpl;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
 
@@ -179,7 +128,7 @@
 
     invoke-static {v3, v2}, Lcom/android/launcher3/util/ScreenGridUtilities;->loadCurrentAppsGridSize(Landroid/content/Context;[I)V
 
-    .line 367
+    .line 368
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -210,7 +159,7 @@
 
     move-result-object v0
 
-    .line 369
+    .line 370
     .local v0, "currentGrid":Ljava/lang/String;
     invoke-virtual {v0, p1}, Ljava/lang/String;->compareToIgnoreCase(Ljava/lang/String;)I
 
@@ -218,15 +167,15 @@
 
     if-nez v3, :cond_0
 
-    .line 370
+    .line 371
     const/4 v1, 0x1
 
-    .line 375
+    .line 376
     .local v1, "result":Z
     :goto_0
     return v1
 
-    .line 372
+    .line 373
     .end local v1    # "result":Z
     :cond_0
     const/4 v1, 0x0
@@ -240,10 +189,10 @@
     .param p1, "gridOption"    # Ljava/lang/String;
 
     .prologue
-    .line 345
+    .line 346
     const/4 v1, 0x0
 
-    .line 347
+    .line 348
     .local v1, "result":Z
     iget-object v3, p0, Lcom/android/launcher3/allapps/controller/AppsProxyCallbacksImpl;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
 
@@ -257,18 +206,18 @@
 
     const v4, 0x7f0a0004
 
-    .line 348
+    .line 349
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 350
+    .line 351
     .local v0, "mScreenGridButtonMap":[Ljava/lang/String;
     if-eqz v0, :cond_1
 
     if-eqz p1, :cond_1
 
-    .line 351
+    .line 352
     array-length v4, v0
 
     const/4 v3, 0x0
@@ -278,7 +227,7 @@
 
     aget-object v2, v0, v3
 
-    .line 352
+    .line 353
     .local v2, "supportGrid":Ljava/lang/String;
     invoke-virtual {v2, p1}, Ljava/lang/String;->compareToIgnoreCase(Ljava/lang/String;)I
 
@@ -286,16 +235,16 @@
 
     if-nez v5, :cond_0
 
-    .line 353
+    .line 354
     const/4 v1, 0x1
 
-    .line 351
+    .line 352
     :cond_0
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 358
+    .line 359
     .end local v2    # "supportGrid":Ljava/lang/String;
     :cond_1
     return v1
@@ -1468,7 +1417,7 @@
     .param p1, "pf"    # Lcom/samsung/android/sdk/bixby/data/ParamFilling;
 
     .prologue
-    .line 381
+    .line 382
     const/4 v0, 0x0
 
     return v0

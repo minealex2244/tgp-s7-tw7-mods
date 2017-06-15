@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 369
+    .line 365
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RowsParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 369
+    .line 365
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RowsParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -60,7 +60,7 @@
     .end annotation
 
     .prologue
-    .line 373
+    .line 369
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v0
@@ -69,7 +69,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 374
+    .line 370
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RowsParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
@@ -83,7 +83,7 @@
     # setter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRows:I
     invoke-static {v0, v1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->access$1202(Lcom/android/launcher3/home/HomeRestoreLayoutParser;I)I
 
-    .line 375
+    .line 371
     const-string v0, "Launcher.HomeRestore"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -113,7 +113,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 377
+    .line 373
     :cond_0
     const-wide/16 v0, 0x0
 

@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/android/launcher3/home/HomeLoader$20;
 
     .prologue
-    .line 2184
+    .line 2168
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$20$1;->this$1:Lcom/android/launcher3/home/HomeLoader$20;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$20$1;->val$removeItems:Ljava/util/ArrayList;
@@ -45,17 +45,17 @@
     .locals 2
 
     .prologue
-    .line 2186
+    .line 2170
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$20$1;->this$1:Lcom/android/launcher3/home/HomeLoader$20;
 
     iget-object v1, v1, Lcom/android/launcher3/home/HomeLoader$20;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 2187
+    .line 2171
     .local v0, "cb":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$20$1;->this$1:Lcom/android/launcher3/home/HomeLoader$20;
 
@@ -65,12 +65,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2188
+    .line 2172
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$20$1;->val$removeItems:Ljava/util/ArrayList;
 
     invoke-interface {v0, v1}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindItemsRemoved(Ljava/util/ArrayList;)V
 
-    .line 2190
+    .line 2174
     :cond_0
     return-void
 .end method

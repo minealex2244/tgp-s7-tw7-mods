@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     .prologue
-    .line 283
+    .line 292
     iput-object p1, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$5;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$5;->val$settingActivity:Landroid/app/Activity;
@@ -45,17 +45,17 @@
     .locals 1
 
     .prologue
-    .line 286
+    .line 295
     iget-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$5;->val$settingActivity:Landroid/app/Activity;
 
     if-eqz v0, :cond_0
 
-    .line 287
+    .line 296
     iget-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$5;->val$settingActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 289
+    .line 298
     :cond_0
     return-void
 .end method

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 2509
+    .line 2517
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$21;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,18 +41,18 @@
     .locals 2
 
     .prologue
-    .line 2512
+    .line 2520
     const-string v0, "Launcher.AppsController"
 
     const-string v1, "remove empty screen"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2513
+    .line 2521
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$21;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->removeEmptyPagesAndUpdateAllItemsInfo()Z
 
-    .line 2514
+    .line 2522
     return-void
 .end method

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     .prologue
-    .line 230
+    .line 239
     iput-object p1, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$3;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 240
+    .line 249
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$3;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;
@@ -51,7 +51,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->setAlpha(F)V
 
-    .line 241
+    .line 250
     return-void
 .end method
 
@@ -60,7 +60,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 233
+    .line 242
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$3;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;
@@ -72,7 +72,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->setAlpha(F)V
 
-    .line 234
+    .line 243
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$3;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;
@@ -84,7 +84,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->setVisibility(I)V
 
-    .line 235
+    .line 244
     iget-object v0, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$3;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;
@@ -94,6 +94,6 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->setScrollIndexer()V
 
-    .line 236
+    .line 245
     return-void
 .end method

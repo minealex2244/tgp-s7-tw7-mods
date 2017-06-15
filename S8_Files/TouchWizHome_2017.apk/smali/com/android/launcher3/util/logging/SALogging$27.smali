@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 1287
+    .line 1346
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$27;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$27;->val$eventID:Ljava/lang/String;
@@ -49,17 +49,17 @@
     .locals 5
 
     .prologue
-    .line 1290
+    .line 1349
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$27;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$27;->val$eventID:Ljava/lang/String;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->changeIdByMode(Ljava/lang/String;)Ljava/lang/String;
-    invoke-static {v2, v3}, Lcom/android/launcher3/util/logging/SALogging;->access$900(Lcom/android/launcher3/util/logging/SALogging;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/android/launcher3/util/logging/SALogging;->access$1400(Lcom/android/launcher3/util/logging/SALogging;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1292
+    .line 1351
     .local v0, "changedEventID":Ljava/lang/String;
     :try_start_0
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
@@ -72,37 +72,37 @@
 
     iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$27;->val$screenID:Ljava/lang/String;
 
-    .line 1293
+    .line 1352
     invoke-virtual {v2, v4}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setScreenView(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$LogBuilder;
 
     move-result-object v2
 
     check-cast v2, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
 
-    .line 1294
+    .line 1353
     invoke-virtual {v2, v0}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setEventName(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
 
     move-result-object v2
 
-    .line 1295
+    .line 1354
     invoke-virtual {v2}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->build()Ljava/util/Map;
 
     move-result-object v2
 
-    .line 1292
+    .line 1351
     invoke-virtual {v3, v2}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->sendLog(Ljava/util/Map;)I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1299
+    .line 1358
     :goto_0
     return-void
 
-    .line 1296
+    .line 1355
     :catch_0
     move-exception v1
 
-    .line 1297
+    .line 1356
     .local v1, "e":Ljava/lang/Exception;
     const-string v2, "Launcher.SALogging"
 

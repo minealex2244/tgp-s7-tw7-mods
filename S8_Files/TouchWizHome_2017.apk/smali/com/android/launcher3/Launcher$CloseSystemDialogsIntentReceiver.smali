@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/Launcher;
 
     .prologue
-    .line 2253
+    .line 2256
     iput-object p1, p0, Lcom/android/launcher3/Launcher$CloseSystemDialogsIntentReceiver;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 2256
+    .line 2259
     iget-object v0, p0, Lcom/android/launcher3/Launcher$CloseSystemDialogsIntentReceiver;->this$0:Lcom/android/launcher3/Launcher;
 
     # invokes: Lcom/android/launcher3/Launcher;->closeSystemDialogs()V
     invoke-static {v0}, Lcom/android/launcher3/Launcher;->access$1000(Lcom/android/launcher3/Launcher;)V
 
-    .line 2257
+    .line 2260
     return-void
 .end method

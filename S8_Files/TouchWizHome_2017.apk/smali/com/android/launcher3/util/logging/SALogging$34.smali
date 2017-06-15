@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 1461
+    .line 1528
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$34;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$34;->val$from:Landroid/graphics/Point;
@@ -57,14 +57,14 @@
     .locals 5
 
     .prologue
-    .line 1464
+    .line 1531
     sget-object v3, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    .line 1465
+    .line 1532
     .local v2, "res":Landroid/content/res/Resources;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -132,20 +132,20 @@
 
     move-result-object v0
 
-    .line 1467
+    .line 1534
     .local v0, "detail":Ljava/lang/String;
     iget v3, p0, Lcom/android/launcher3/util/logging/SALogging$34;->val$level:I
 
     if-nez v3, :cond_0
 
-    .line 1468
+    .line 1535
     const v3, 0x7f080117
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1472
+    .line 1539
     .local v1, "eventId":Ljava/lang/String;
     :goto_0
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
@@ -160,10 +160,10 @@
 
     invoke-virtual {v3, v4, v1, v0}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1474
+    .line 1541
     return-void
 
-    .line 1470
+    .line 1537
     .end local v1    # "eventId":Ljava/lang/String;
     :cond_0
     const v3, 0x7f080118

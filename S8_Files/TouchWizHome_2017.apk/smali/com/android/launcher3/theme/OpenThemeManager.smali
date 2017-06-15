@@ -108,7 +108,7 @@
     .line 60
     iput-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTitleBGDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 465
+    .line 470
     const/16 v0, 0x29
 
     new-array v0, v0, [Ljava/lang/String;
@@ -449,18 +449,18 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 389
+    .line 394
     sget-object v3, Lcom/android/launcher3/theme/OpenThemeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 390
+    .line 395
     .local v0, "r":Landroid/content/res/Resources;
     if-eqz v0, :cond_0
 
-    .line 392
+    .line 397
     const-string v3, "drawable"
 
     iget-object v4, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
@@ -473,17 +473,17 @@
 
     move-result v1
 
-    .line 393
+    .line 398
     .local v1, "resId":I
     if-nez v1, :cond_1
 
-    .line 399
+    .line 404
     .end local v1    # "resId":I
     :cond_0
     :goto_0
     return-object v2
 
-    .line 397
+    .line 402
     .restart local v1    # "resId":I
     :cond_1
     invoke-static {v0, v1}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
@@ -498,14 +498,14 @@
     .param p1, "intId"    # Ljava/lang/String;
 
     .prologue
-    .line 609
+    .line 614
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->DEFAULT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->value()I
 
     move-result v0
 
-    .line 610
+    .line 615
     .local v0, "type":I
     const/4 v1, -0x1
 
@@ -519,11 +519,11 @@
     :goto_0
     packed-switch v1, :pswitch_data_0
 
-    .line 664
+    .line 670
     :goto_1
     return v0
 
-    .line 610
+    .line 615
     :sswitch_0
     const-string v2, "icon_bg_range"
 
@@ -785,7 +785,7 @@
     goto/16 :goto_0
 
     :sswitch_14
-    const-string v2, "homescreen_menu_page_navi_home_f"
+    const-string v2, "enable_text_shadow"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -798,7 +798,7 @@
     goto/16 :goto_0
 
     :sswitch_15
-    const-string v2, "homescreen_menu_page_navi_default_f"
+    const-string v2, "homescreen_menu_page_navi_home_f"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -811,7 +811,7 @@
     goto/16 :goto_0
 
     :sswitch_16
-    const-string v2, "homescreen_menu_page_navi_headlines_f"
+    const-string v2, "homescreen_menu_page_navi_default_f"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -824,7 +824,7 @@
     goto/16 :goto_0
 
     :sswitch_17
-    const-string v2, "title_background"
+    const-string v2, "homescreen_menu_page_navi_headlines_f"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -837,7 +837,7 @@
     goto/16 :goto_0
 
     :sswitch_18
-    const-string v2, "homescreen_ic_folder_default"
+    const-string v2, "title_background"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -850,7 +850,7 @@
     goto/16 :goto_0
 
     :sswitch_19
-    const-string v2, "home_folder_bg_default"
+    const-string v2, "homescreen_ic_folder_default"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -863,7 +863,7 @@
     goto/16 :goto_0
 
     :sswitch_1a
-    const-string v2, "ic_allapps"
+    const-string v2, "home_folder_bg_default"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -876,7 +876,7 @@
     goto/16 :goto_0
 
     :sswitch_1b
-    const-string v2, "ic_icon_bg"
+    const-string v2, "ic_allapps"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -889,7 +889,7 @@
     goto/16 :goto_0
 
     :sswitch_1c
-    const-string v2, "counter_bubble"
+    const-string v2, "ic_icon_bg"
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -901,7 +901,20 @@
 
     goto/16 :goto_0
 
-    .line 614
+    :sswitch_1d
+    const-string v2, "counter_bubble"
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    const/16 v1, 0x1d
+
+    goto/16 :goto_0
+
+    .line 619
     :pswitch_0
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->APP_ICON:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
@@ -909,10 +922,10 @@
 
     move-result v0
 
-    .line 615
+    .line 620
     goto/16 :goto_1
 
-    .line 620
+    .line 625
     :pswitch_1
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->HOME:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
@@ -920,10 +933,10 @@
 
     move-result v0
 
-    .line 621
+    .line 626
     goto/16 :goto_1
 
-    .line 634
+    .line 639
     :pswitch_2
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->HOME:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
@@ -931,23 +944,12 @@
 
     move-result v0
 
-    .line 635
-    goto/16 :goto_1
-
-    .line 638
-    :pswitch_3
-    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->BADGE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
-
-    invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->value()I
-
-    move-result v0
-
-    .line 639
+    .line 640
     goto/16 :goto_1
 
     .line 643
-    :pswitch_4
-    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->HOME:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
+    :pswitch_3
+    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->BADGE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
     invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->value()I
 
@@ -956,7 +958,18 @@
     .line 644
     goto/16 :goto_1
 
-    .line 652
+    .line 649
+    :pswitch_4
+    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->HOME:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->value()I
+
+    move-result v0
+
+    .line 650
+    goto/16 :goto_1
+
+    .line 658
     :pswitch_5
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->HOME:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
@@ -964,10 +977,10 @@
 
     move-result v0
 
-    .line 653
+    .line 659
     goto/16 :goto_1
 
-    .line 656
+    .line 662
     :pswitch_6
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->APP_ICON:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
@@ -975,10 +988,10 @@
 
     move-result v0
 
-    .line 657
+    .line 663
     goto/16 :goto_1
 
-    .line 659
+    .line 665
     :pswitch_7
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;->BADGE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeType;
 
@@ -986,10 +999,10 @@
 
     move-result v0
 
-    .line 660
+    .line 666
     goto/16 :goto_1
 
-    .line 610
+    .line 615
     :sswitch_data_0
     .sparse-switch
         -0x676dda0a -> :sswitch_4
@@ -1001,26 +1014,27 @@
         -0x4928bbe5 -> :sswitch_f
         -0x4928bbe4 -> :sswitch_10
         -0x3cc8375c -> :sswitch_3
-        -0x3bffbea8 -> :sswitch_19
+        -0x3bffbea8 -> :sswitch_1a
         -0x38b8cf80 -> :sswitch_a
-        -0x3174feed -> :sswitch_15
-        -0x2ddf9e45 -> :sswitch_14
+        -0x3174feed -> :sswitch_16
+        -0x2ddf9e45 -> :sswitch_15
         -0x25136bfb -> :sswitch_11
-        -0x21327a92 -> :sswitch_1a
+        -0x21327a92 -> :sswitch_1b
         -0x20697ef3 -> :sswitch_9
-        -0x1b507bff -> :sswitch_18
+        -0x1b507bff -> :sswitch_19
         -0x162ee473 -> :sswitch_b
         -0x143370a4 -> :sswitch_6
-        0x36a2175 -> :sswitch_17
-        0x3e0e82f -> :sswitch_1c
+        0x36a2175 -> :sswitch_18
+        0x3e0e82f -> :sswitch_1d
         0x4867bc6 -> :sswitch_7
         0xef38dc9 -> :sswitch_0
-        0x1c26f9b1 -> :sswitch_16
+        0x1c26f9b1 -> :sswitch_17
+        0x2949cbb6 -> :sswitch_14
         0x38c9f60b -> :sswitch_2
         0x3b2e6956 -> :sswitch_8
         0x4b15a75c -> :sswitch_13
         0x6333a7ed -> :sswitch_12
-        0x76d3afa6 -> :sswitch_1b
+        0x76d3afa6 -> :sswitch_1c
     .end sparse-switch
 
     :pswitch_data_0
@@ -1045,6 +1059,7 @@
         :pswitch_3
         :pswitch_3
         :pswitch_4
+        :pswitch_4
         :pswitch_5
         :pswitch_5
         :pswitch_5
@@ -1063,10 +1078,10 @@
     .param p2, "height"    # I
 
     .prologue
-    .line 180
+    .line 185
     const/4 v1, 0x0
 
-    .line 181
+    .line 186
     .local v1, "newIcon":Landroid/graphics/Bitmap;
     sget-object v2, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ICON_TRAY:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
@@ -1078,96 +1093,122 @@
 
     move-result-object v0
 
-    .line 182
+    .line 187
     .local v0, "icon":Landroid/graphics/drawable/Drawable;
     if-eqz v0, :cond_0
 
-    .line 183
+    .line 188
     invoke-virtual {p0, v0, p1, p2}, Lcom/android/launcher3/theme/OpenThemeManager;->getBitmapWithSizeForTheme(Landroid/graphics/drawable/Drawable;II)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    .line 185
+    .line 190
     :cond_0
     return-object v1
 .end method
 
 .method private preloadColor()V
-    .locals 1
+    .locals 3
 
     .prologue
     .line 100
-    sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->HOME_TEXT_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
+    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->HOME_TEXT_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
+    invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
 
-    move-result v0
+    move-result v1
 
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/theme/OpenThemeManager;->getColor(I)I
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/theme/OpenThemeManager;->getColor(I)I
 
-    move-result v0
+    move-result v1
 
-    iput v0, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextColor:I
+    iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextColor:I
 
     .line 101
-    sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TEXT_HIGHLIGHT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
+    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TEXT_HIGHLIGHT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
+    invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
 
-    move-result v0
+    move-result v1
 
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/theme/OpenThemeManager;->getColor(I)I
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/theme/OpenThemeManager;->getColor(I)I
 
-    move-result v0
+    move-result v1
 
-    iput v0, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextHighlightColor:I
+    iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextHighlightColor:I
 
     .line 102
-    sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TEXT_SHADOW_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
+    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TEXT_SHADOW:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    invoke-virtual {v0}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
+    invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {p0, v1, v2}, Lcom/android/launcher3/theme/OpenThemeManager;->getBoolean(IZ)Z
 
     move-result v0
-
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/theme/OpenThemeManager;->getColor(I)I
-
-    move-result v0
-
-    iput v0, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextShadowColor:I
 
     .line 103
-    sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->BADGE_TEXT_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
-
-    invoke-virtual {v0}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
-
-    move-result v0
-
-    invoke-virtual {p0, v0}, Lcom/android/launcher3/theme/OpenThemeManager;->getColor(I)I
-
-    move-result v0
-
-    iput v0, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadBadgeTextColor:I
+    .local v0, "enableTextShadow":Z
+    if-eqz v0, :cond_0
 
     .line 104
+    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TEXT_SHADOW_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/theme/OpenThemeManager;->getColor(I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextShadowColor:I
+
+    .line 108
+    :goto_0
+    sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->BADGE_TEXT_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
+
+    invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
+
+    move-result v1
+
+    invoke-virtual {p0, v1}, Lcom/android/launcher3/theme/OpenThemeManager;->getColor(I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadBadgeTextColor:I
+
+    .line 109
     return-void
+
+    .line 106
+    :cond_0
+    const v1, 0x1ffffff
+
+    iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextShadowColor:I
+
+    goto :goto_0
 .end method
 
 .method private preloadDrawable()V
     .locals 2
 
     .prologue
-    .line 140
+    .line 145
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 141
+    .line 146
     .local v0, "r":Landroid/content/res/Resources;
     if-eqz v0, :cond_0
 
-    .line 143
+    .line 148
     const v1, 0x7f0200b9
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -1176,14 +1217,14 @@
 
     iput-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadIconShadowDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 145
+    .line 150
     invoke-virtual {p0}, Lcom/android/launcher3/theme/OpenThemeManager;->preloadBadgeDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadBadgeDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 147
+    .line 152
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->PAGEINDICATOR_DEFAULT:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
@@ -1196,7 +1237,7 @@
 
     iput-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadPageIndicatorDefaultDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 148
+    .line 153
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->PAGEINDICATOR_HOME:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
@@ -1209,7 +1250,7 @@
 
     iput-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadPageIndicatorHomeDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 149
+    .line 154
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->PAGEINDICATOR_FESTIVAL:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
@@ -1222,7 +1263,7 @@
 
     iput-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadPageIndicatorFestivalDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 150
+    .line 155
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->PAGEINDICATOR_HEADLINE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     invoke-virtual {v1}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
@@ -1235,7 +1276,7 @@
 
     iput-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadPageIndicatorHeadlineDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 152
+    .line 157
     :cond_0
     sget-object v1, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->TITLE_BACKGROUND:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
@@ -1249,7 +1290,7 @@
 
     iput-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTitleBGDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 153
+    .line 158
     return-void
 .end method
 
@@ -1296,30 +1337,30 @@
     .param p3, "dstHeight"    # I
 
     .prologue
-    .line 189
+    .line 194
     if-nez p1, :cond_1
 
-    .line 190
+    .line 195
     const/4 v0, 0x0
 
-    .line 216
+    .line 221
     :cond_0
     :goto_0
     return-object v0
 
-    .line 192
+    .line 197
     :cond_1
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v7
 
-    .line 193
+    .line 198
     .local v7, "srcWidth":I
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v6
 
-    .line 195
+    .line 200
     .local v6, "srcHeight":I
     int-to-float v8, p2
 
@@ -1327,7 +1368,7 @@
 
     div-float v4, v8, v9
 
-    .line 196
+    .line 201
     .local v4, "rationX":F
     int-to-float v8, p3
 
@@ -1335,13 +1376,13 @@
 
     div-float v5, v8, v9
 
-    .line 197
+    .line 202
     .local v5, "rationY":F
     invoke-static {v4, v5}, Ljava/lang/Math;->min(FF)F
 
     move-result v3
 
-    .line 199
+    .line 204
     .local v3, "ratio":F
     sget-object v8, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -1349,20 +1390,20 @@
 
     move-result-object v0
 
-    .line 201
+    .line 206
     .local v0, "bmp":Landroid/graphics/Bitmap;
     if-eqz v0, :cond_0
 
-    .line 202
+    .line 207
     new-instance v1, Landroid/graphics/Canvas;
 
     invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 203
+    .line 208
     .local v1, "c":Landroid/graphics/Canvas;
     if-le v7, v6, :cond_3
 
-    .line 204
+    .line 209
     const/4 v8, 0x0
 
     int-to-float v9, p3
@@ -1379,17 +1420,17 @@
 
     invoke-virtual {v1, v8, v9}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 209
+    .line 214
     :cond_2
     :goto_1
     invoke-virtual {v1, v3, v3}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 210
+    .line 215
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->copyBounds()Landroid/graphics/Rect;
 
     move-result-object v2
 
-    .line 211
+    .line 216
     .local v2, "oldBounds":Landroid/graphics/Rect;
     const/4 v8, 0x0
 
@@ -1397,25 +1438,25 @@
 
     invoke-virtual {p1, v8, v9, v7, v6}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 212
+    .line 217
     invoke-virtual {p1, v1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 213
+    .line 218
     invoke-virtual {p1, v2}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 214
+    .line 219
     const/4 v8, 0x0
 
     invoke-virtual {v1, v8}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
 
     goto :goto_0
 
-    .line 205
+    .line 210
     .end local v2    # "oldBounds":Landroid/graphics/Rect;
     :cond_3
     if-le v6, v7, :cond_2
 
-    .line 206
+    .line 211
     int-to-float v8, p2
 
     int-to-float v9, v7
@@ -1435,12 +1476,13 @@
     goto :goto_1
 .end method
 
-.method public getBoolean(I)Z
+.method public getBoolean(IZ)Z
     .locals 8
     .param p1, "boolId"    # I
+    .param p2, "defValue"    # Z
 
     .prologue
-    .line 305
+    .line 310
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -1449,7 +1491,7 @@
 
     move-result v4
 
-    .line 306
+    .line 311
     .local v4, "themeType":I
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -1457,11 +1499,11 @@
 
     move-result-object v1
 
-    .line 307
+    .line 312
     .local v1, "packageName":Ljava/lang/String;
-    const/4 v0, 0x0
+    move v0, p2
 
-    .line 308
+    .line 313
     .local v0, "bool":Z
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -1469,11 +1511,11 @@
 
     move-result-object v2
 
-    .line 309
+    .line 314
     .local v2, "r":Landroid/content/res/Resources;
     if-eqz v2, :cond_2
 
-    .line 311
+    .line 316
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -1484,11 +1526,11 @@
 
     move-result v3
 
-    .line 312
+    .line 317
     .local v3, "resId":I
     if-nez v3, :cond_1
 
-    .line 313
+    .line 318
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
     iget-object v6, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
@@ -1501,10 +1543,10 @@
 
     move-result-object v2
 
-    .line 314
+    .line 319
     if-eqz v2, :cond_0
 
-    .line 315
+    .line 320
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -1521,17 +1563,17 @@
 
     move-result v3
 
-    .line 316
+    .line 321
     if-nez v3, :cond_1
 
     move v5, v0
 
-    .line 327
+    .line 332
     .end local v3    # "resId":I
     :goto_0
     return v5
 
-    .line 319
+    .line 324
     .restart local v3    # "resId":I
     :cond_0
     const-string v5, "OpenThemeManager"
@@ -1556,12 +1598,12 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 320
+    .line 325
     const/4 v5, 0x0
 
     goto :goto_0
 
-    .line 323
+    .line 328
     :cond_1
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1571,10 +1613,10 @@
     :goto_1
     move v5, v0
 
-    .line 327
+    .line 332
     goto :goto_0
 
-    .line 325
+    .line 330
     :cond_2
     const-string v5, "OpenThemeManager"
 
@@ -1606,7 +1648,7 @@
     .param p1, "colorId"    # I
 
     .prologue
-    .line 246
+    .line 251
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -1615,7 +1657,7 @@
 
     move-result v4
 
-    .line 247
+    .line 252
     .local v4, "themeType":I
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -1623,7 +1665,7 @@
 
     move-result-object v1
 
-    .line 248
+    .line 253
     .local v1, "packageName":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -1631,15 +1673,15 @@
 
     move-result-object v2
 
-    .line 249
+    .line 254
     .local v2, "r":Landroid/content/res/Resources;
     const v0, 0x1ffffff
 
-    .line 250
+    .line 255
     .local v0, "color":I
     if-eqz v2, :cond_1
 
-    .line 252
+    .line 257
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -1650,11 +1692,11 @@
 
     move-result v3
 
-    .line 253
+    .line 258
     .local v3, "resId":I
     if-nez v3, :cond_0
 
-    .line 254
+    .line 259
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -1663,12 +1705,12 @@
 
     move-result v0
 
-    .line 262
+    .line 267
     .end local v3    # "resId":I
     :goto_0
     return v0
 
-    .line 256
+    .line 261
     .restart local v3    # "resId":I
     :cond_0
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getColor(I)I
@@ -1677,7 +1719,7 @@
 
     goto :goto_0
 
-    .line 259
+    .line 264
     .end local v3    # "resId":I
     :cond_1
     const-string v5, "OpenThemeManager"
@@ -1710,7 +1752,7 @@
     .param p1, "drawableId"    # I
 
     .prologue
-    .line 331
+    .line 336
     iget-object v6, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v6, v6, p1
@@ -1719,7 +1761,7 @@
 
     move-result v5
 
-    .line 332
+    .line 337
     .local v5, "themeType":I
     iget-object v6, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -1727,11 +1769,11 @@
 
     move-result-object v2
 
-    .line 333
+    .line 338
     .local v2, "packageName":Ljava/lang/String;
     const/4 v0, 0x0
 
-    .line 334
+    .line 339
     .local v0, "drawable":Landroid/graphics/drawable/Drawable;
     iget-object v6, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -1739,11 +1781,11 @@
 
     move-result-object v3
 
-    .line 335
+    .line 340
     .local v3, "r":Landroid/content/res/Resources;
     if-eqz v3, :cond_1
 
-    .line 337
+    .line 342
     iget-object v6, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v6, v6, p1
@@ -1754,11 +1796,11 @@
 
     move-result v4
 
-    .line 339
+    .line 344
     .local v4, "resId":I
     if-nez v4, :cond_0
 
-    .line 340
+    .line 345
     :try_start_0
     iget-object v6, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
@@ -1768,12 +1810,12 @@
 
     move-result-object v0
 
-    .line 350
+    .line 355
     .end local v4    # "resId":I
     :goto_0
     return-object v0
 
-    .line 342
+    .line 347
     .restart local v4    # "resId":I
     :cond_0
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -1784,17 +1826,17 @@
 
     goto :goto_0
 
-    .line 344
+    .line 349
     :catch_0
     move-exception v1
 
-    .line 345
+    .line 350
     .local v1, "e":Ljava/lang/OutOfMemoryError;
     invoke-virtual {v1}, Ljava/lang/OutOfMemoryError;->printStackTrace()V
 
     goto :goto_0
 
-    .line 348
+    .line 353
     .end local v1    # "e":Ljava/lang/OutOfMemoryError;
     .end local v4    # "resId":I
     :cond_1
@@ -1827,7 +1869,7 @@
     .locals 1
 
     .prologue
-    .line 462
+    .line 467
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mFolderStyle:Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;
 
     return-object v0
@@ -1840,14 +1882,14 @@
     .param p3, "isThemeIcon"    # Z
 
     .prologue
-    .line 157
+    .line 162
     const/4 v2, 0x0
 
-    .line 160
+    .line 165
     .local v2, "newIcon":Landroid/graphics/Bitmap;
     if-eqz p1, :cond_1
 
-    .line 161
+    .line 166
     sget-object v3, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ICON_BG_RANGE:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     invoke-virtual {v3}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
@@ -1858,7 +1900,7 @@
 
     move-result v1
 
-    .line 162
+    .line 167
     .local v1, "icon_bg_range":I
     sget-object v3, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->UNASSIGNED:Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
 
@@ -1868,35 +1910,35 @@
 
     if-ne v1, v3, :cond_2
 
-    .line 163
+    .line 168
     if-nez p3, :cond_0
 
-    .line 164
+    .line 169
     invoke-direct {p0, p2, p2}, Lcom/android/launcher3/theme/OpenThemeManager;->load3rdPartyIconTray(II)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 165
+    .line 170
     .local v0, "iconTrayBitmap":Landroid/graphics/Bitmap;
     invoke-static {p1, v0, p2, p2}, Lcom/android/launcher3/theme/ThemeUtils;->integrateIconAndTray(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 172
+    .line 177
     .end local v0    # "iconTrayBitmap":Landroid/graphics/Bitmap;
     :cond_0
     :goto_0
     if-nez v2, :cond_1
 
-    .line 173
+    .line 178
     move-object v2, p1
 
-    .line 176
+    .line 181
     .end local v1    # "icon_bg_range":I
     :cond_1
     return-object v2
 
-    .line 168
+    .line 173
     .restart local v1    # "icon_bg_range":I
     :cond_2
     sget-object v3, Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;->ALL:Lcom/android/launcher3/theme/OpenThemeManager$IconBgScope;
@@ -1907,12 +1949,12 @@
 
     if-ne v1, v3, :cond_0
 
-    .line 169
+    .line 174
     invoke-direct {p0, p2, p2}, Lcom/android/launcher3/theme/OpenThemeManager;->load3rdPartyIconTray(II)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 170
+    .line 175
     .restart local v0    # "iconTrayBitmap":Landroid/graphics/Bitmap;
     invoke-static {p1, v0, p2, p2}, Lcom/android/launcher3/theme/ThemeUtils;->integrateIconAndTray(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
@@ -1926,7 +1968,7 @@
     .param p1, "intId"    # I
 
     .prologue
-    .line 220
+    .line 225
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -1935,7 +1977,7 @@
 
     move-result v4
 
-    .line 221
+    .line 226
     .local v4, "themeType":I
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -1943,7 +1985,7 @@
 
     move-result-object v1
 
-    .line 222
+    .line 227
     .local v1, "packageName":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -1951,15 +1993,15 @@
 
     move-result-object v2
 
-    .line 223
+    .line 228
     .local v2, "r":Landroid/content/res/Resources;
     const/4 v0, -0x1
 
-    .line 224
+    .line 229
     .local v0, "integer":I
     if-eqz v2, :cond_2
 
-    .line 226
+    .line 231
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -1970,11 +2012,11 @@
 
     move-result v3
 
-    .line 227
+    .line 232
     .local v3, "resId":I
     if-nez v3, :cond_1
 
-    .line 228
+    .line 233
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
     iget-object v6, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
@@ -1987,10 +2029,10 @@
 
     move-result-object v2
 
-    .line 229
+    .line 234
     if-eqz v2, :cond_0
 
-    .line 230
+    .line 235
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2007,17 +2049,17 @@
 
     move-result v3
 
-    .line 231
+    .line 236
     if-nez v3, :cond_1
 
     move v5, v0
 
-    .line 242
+    .line 247
     .end local v3    # "resId":I
     :goto_0
     return v5
 
-    .line 234
+    .line 239
     .restart local v3    # "resId":I
     :cond_0
     const-string v5, "OpenThemeManager"
@@ -2042,12 +2084,12 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 235
+    .line 240
     const/4 v5, -0x1
 
     goto :goto_0
 
-    .line 238
+    .line 243
     :cond_1
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2057,10 +2099,10 @@
     :goto_1
     move v5, v0
 
-    .line 242
+    .line 247
     goto :goto_0
 
-    .line 240
+    .line 245
     :cond_2
     const-string v5, "OpenThemeManager"
 
@@ -2092,7 +2134,7 @@
     .param p1, "bitmapId"    # I
 
     .prologue
-    .line 372
+    .line 377
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2101,7 +2143,7 @@
 
     move-result v4
 
-    .line 373
+    .line 378
     .local v4, "themeType":I
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -2109,11 +2151,11 @@
 
     move-result-object v1
 
-    .line 374
+    .line 379
     .local v1, "packageName":Ljava/lang/String;
     const/4 v0, 0x0
 
-    .line 375
+    .line 380
     .local v0, "bitmap":Landroid/graphics/Bitmap;
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -2121,11 +2163,11 @@
 
     move-result-object v2
 
-    .line 376
+    .line 381
     .local v2, "r":Landroid/content/res/Resources;
     if-eqz v2, :cond_0
 
-    .line 378
+    .line 383
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2136,11 +2178,11 @@
 
     move-result v3
 
-    .line 379
+    .line 384
     .local v3, "resId":I
     if-nez v3, :cond_1
 
-    .line 380
+    .line 385
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2149,13 +2191,13 @@
 
     move-result-object v0
 
-    .line 385
+    .line 390
     .end local v3    # "resId":I
     :cond_0
     :goto_0
     return-object v0
 
-    .line 382
+    .line 387
     .restart local v3    # "resId":I
     :cond_1
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
@@ -2172,18 +2214,18 @@
     .prologue
     const v2, 0x1ffffff
 
-    .line 266
+    .line 271
     sget-object v3, Lcom/android/launcher3/theme/OpenThemeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 267
+    .line 272
     .local v0, "r":Landroid/content/res/Resources;
     if-eqz v0, :cond_0
 
-    .line 269
+    .line 274
     const-string v3, "color"
 
     iget-object v4, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
@@ -2196,17 +2238,17 @@
 
     move-result v1
 
-    .line 270
+    .line 275
     .local v1, "resId":I
     if-nez v1, :cond_1
 
-    .line 275
+    .line 280
     .end local v1    # "resId":I
     :cond_0
     :goto_0
     return v2
 
-    .line 273
+    .line 278
     .restart local v1    # "resId":I
     :cond_1
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
@@ -2223,18 +2265,18 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 354
+    .line 359
     sget-object v3, Lcom/android/launcher3/theme/OpenThemeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 355
+    .line 360
     .local v0, "r":Landroid/content/res/Resources;
     if-eqz v0, :cond_0
 
-    .line 357
+    .line 362
     const-string v3, "drawable"
 
     iget-object v4, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
@@ -2247,17 +2289,17 @@
 
     move-result v1
 
-    .line 358
+    .line 363
     .local v1, "resId":I
     if-nez v1, :cond_1
 
-    .line 363
+    .line 368
     .end local v1    # "resId":I
     :cond_0
     :goto_0
     return-object v2
 
-    .line 361
+    .line 366
     .restart local v1    # "resId":I
     :cond_1
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -2272,12 +2314,12 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 510
+    .line 515
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v0, v1, p1
 
-    .line 511
+    .line 516
     .local v0, "key":Ljava/lang/String;
     const-string v1, "home_title_color"
 
@@ -2287,14 +2329,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 512
+    .line 517
     iget v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextColor:I
 
-    .line 520
+    .line 525
     :goto_0
     return v1
 
-    .line 513
+    .line 518
     :cond_0
     const-string v1, "material_blue_grey_900"
 
@@ -2304,12 +2346,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 514
+    .line 519
     iget v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextHighlightColor:I
 
     goto :goto_0
 
-    .line 515
+    .line 520
     :cond_1
     const-string v1, "text_shadow_color"
 
@@ -2319,12 +2361,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 516
+    .line 521
     iget v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTextShadowColor:I
 
     goto :goto_0
 
-    .line 517
+    .line 522
     :cond_2
     const-string v1, "badge_text_color"
 
@@ -2334,12 +2376,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 518
+    .line 523
     iget v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadBadgeTextColor:I
 
     goto :goto_0
 
-    .line 520
+    .line 525
     :cond_3
     const v1, 0x1ffffff
 
@@ -2351,12 +2393,12 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 524
+    .line 529
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v0, v1, p1
 
-    .line 525
+    .line 530
     .local v0, "key":Ljava/lang/String;
     const-string v1, "enable_shadow"
 
@@ -2366,14 +2408,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 526
+    .line 531
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadIconShadowDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 540
+    .line 545
     :goto_0
     return-object v1
 
-    .line 527
+    .line 532
     :cond_0
     const-string v1, "counter_bubble"
 
@@ -2383,12 +2425,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 528
+    .line 533
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadBadgeDrawable:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
-    .line 529
+    .line 534
     :cond_1
     const-string v1, "homescreen_menu_page_navi_home_f"
 
@@ -2398,12 +2440,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 530
+    .line 535
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadPageIndicatorHomeDrawable:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
-    .line 531
+    .line 536
     :cond_2
     const-string v1, "homescreen_menu_page_navi_default_f"
 
@@ -2413,12 +2455,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 532
+    .line 537
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadPageIndicatorDefaultDrawable:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
-    .line 533
+    .line 538
     :cond_3
     const-string v1, "homescreen_menu_page_navi_festival"
 
@@ -2428,12 +2470,12 @@
 
     if-eqz v1, :cond_4
 
-    .line 534
+    .line 539
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadPageIndicatorFestivalDrawable:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
-    .line 535
+    .line 540
     :cond_4
     const-string v1, "homescreen_menu_page_navi_headlines_f"
 
@@ -2443,12 +2485,12 @@
 
     if-eqz v1, :cond_5
 
-    .line 536
+    .line 541
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadPageIndicatorHeadlineDrawable:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
-    .line 537
+    .line 542
     :cond_5
     const-string v1, "title_background"
 
@@ -2458,12 +2500,12 @@
 
     if-eqz v1, :cond_6
 
-    .line 538
+    .line 543
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mPreloadTitleBGDrawable:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
-    .line 540
+    .line 545
     :cond_6
     const/4 v1, 0x0
 
@@ -2475,7 +2517,7 @@
     .param p1, "stringId"    # I
 
     .prologue
-    .line 279
+    .line 284
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2484,7 +2526,7 @@
 
     move-result v4
 
-    .line 280
+    .line 285
     .local v4, "themeType":I
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -2492,11 +2534,11 @@
 
     move-result-object v0
 
-    .line 281
+    .line 286
     .local v0, "packageName":Ljava/lang/String;
     const/4 v3, 0x0
 
-    .line 282
+    .line 287
     .local v3, "string":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -2504,11 +2546,11 @@
 
     move-result-object v1
 
-    .line 283
+    .line 288
     .local v1, "r":Landroid/content/res/Resources;
     if-eqz v1, :cond_2
 
-    .line 285
+    .line 290
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2519,11 +2561,11 @@
 
     move-result v2
 
-    .line 286
+    .line 291
     .local v2, "resId":I
     if-nez v2, :cond_1
 
-    .line 287
+    .line 292
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
     iget-object v6, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
@@ -2536,10 +2578,10 @@
 
     move-result-object v1
 
-    .line 288
+    .line 293
     if-eqz v1, :cond_0
 
-    .line 289
+    .line 294
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2556,17 +2598,17 @@
 
     move-result v2
 
-    .line 290
+    .line 295
     if-nez v2, :cond_1
 
     move-object v5, v3
 
-    .line 301
+    .line 306
     .end local v2    # "resId":I
     :goto_0
     return-object v5
 
-    .line 293
+    .line 298
     .restart local v2    # "resId":I
     :cond_0
     const-string v5, "OpenThemeManager"
@@ -2591,12 +2633,12 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 294
+    .line 299
     const/4 v5, 0x0
 
     goto :goto_0
 
-    .line 297
+    .line 302
     :cond_1
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2606,10 +2648,10 @@
     :goto_1
     move-object v5, v3
 
-    .line 301
+    .line 306
     goto :goto_0
 
-    .line 299
+    .line 304
     :cond_2
     const-string v5, "OpenThemeManager"
 
@@ -2640,7 +2682,7 @@
     .locals 6
 
     .prologue
-    .line 443
+    .line 448
     sget-object v4, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ALL_APPS_ICON:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
     invoke-virtual {v4}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
@@ -2651,7 +2693,7 @@
 
     move-result-object v1
 
-    .line 444
+    .line 449
     .local v1, "d":Landroid/graphics/drawable/Drawable;
     sget-object v4, Lcom/android/launcher3/theme/OpenThemeManager;->mContext:Landroid/content/Context;
 
@@ -2659,34 +2701,34 @@
 
     move-result-object v0
 
-    .line 445
+    .line 450
     .local v0, "bitmap":Landroid/graphics/Bitmap;
     sget-object v4, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ALL_APPS_ICON:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 446
+    .line 451
     invoke-virtual {v4}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
 
     move-result v4
 
     const-string v5, "drawable"
 
-    .line 445
+    .line 450
     invoke-virtual {p0, v4, v5}, Lcom/android/launcher3/theme/OpenThemeManager;->isFromThemeResources(ILjava/lang/String;)Z
 
     move-result v3
 
-    .line 448
+    .line 453
     .local v3, "isThemeAppIcon":Z
     invoke-static {}, Lcom/android/launcher3/util/BitmapUtils;->getIconBitmapSize()I
 
     move-result v4
 
-    .line 447
+    .line 452
     invoke-virtual {p0, v0, v4, v3}, Lcom/android/launcher3/theme/OpenThemeManager;->getIconWithTrayIfNeeded(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 449
+    .line 454
     .local v2, "iconBitmapWithTrayIfNeeded":Landroid/graphics/Bitmap;
     return-object v2
 .end method
@@ -2695,33 +2737,33 @@
     .locals 2
 
     .prologue
-    .line 454
+    .line 459
     invoke-virtual {p0}, Lcom/android/launcher3/theme/OpenThemeManager;->isThemeChanged()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 455
+    .line 460
     const-string v0, "OpenThemeManager"
 
     const-string v1, "Theme changed, clear mIconDB."
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 456
+    .line 461
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/model/IconCache;->clearDB()V
 
-    .line 457
+    .line 462
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/theme/OpenThemeLoader;->setIsThemeChanged(Z)V
 
-    .line 459
+    .line 464
     :cond_0
     return-void
 .end method
@@ -2730,14 +2772,14 @@
     .locals 4
 
     .prologue
-    .line 403
+    .line 408
     const/4 v2, 0x0
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    .line 404
+    .line 409
     .local v1, "ret":Ljava/lang/Boolean;
     iget-object v2, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -2752,7 +2794,7 @@
 
     move-result-object v0
 
-    .line 406
+    .line 411
     .local v0, "currentThemePackageName":Ljava/lang/String;
     sget-object v2, Lcom/android/launcher3/theme/OpenThemeManager;->mContext:Landroid/content/Context;
 
@@ -2766,14 +2808,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 407
+    .line 412
     const/4 v2, 0x1
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    .line 409
+    .line 414
     :cond_0
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -2790,7 +2832,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 427
+    .line 432
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2799,7 +2841,7 @@
 
     move-result v3
 
-    .line 428
+    .line 433
     .local v3, "themeType":I
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -2807,7 +2849,7 @@
 
     move-result-object v0
 
-    .line 429
+    .line 434
     .local v0, "packageName":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -2815,11 +2857,11 @@
 
     move-result-object v1
 
-    .line 430
+    .line 435
     .local v1, "r":Landroid/content/res/Resources;
     if-eqz v1, :cond_0
 
-    .line 432
+    .line 437
     iget-object v5, p0, Lcom/android/launcher3/theme/OpenThemeManager;->themeKey:[Ljava/lang/String;
 
     aget-object v5, v5, p1
@@ -2828,17 +2870,17 @@
 
     move-result v2
 
-    .line 434
+    .line 439
     .local v2, "resId":I
     if-nez v2, :cond_1
 
-    .line 439
+    .line 444
     .end local v2    # "resId":I
     :cond_0
     :goto_0
     return v4
 
-    .line 437
+    .line 442
     .restart local v2    # "resId":I
     :cond_1
     const/4 v4, 0x1
@@ -2850,14 +2892,14 @@
     .locals 4
 
     .prologue
-    .line 413
+    .line 418
     const/4 v2, 0x0
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    .line 414
+    .line 419
     .local v1, "ret":Ljava/lang/Boolean;
     iget-object v2, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
@@ -2872,7 +2914,7 @@
 
     move-result-object v0
 
-    .line 416
+    .line 421
     .local v0, "currentThemePackageName":Ljava/lang/String;
     const-string v2, "com.sec.Pink.common.home"
 
@@ -2882,14 +2924,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 417
+    .line 422
     const/4 v2, 0x1
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    .line 419
+    .line 424
     :cond_0
     invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -2902,7 +2944,7 @@
     .locals 1
 
     .prologue
-    .line 423
+    .line 428
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager;->mThemeLoader:Lcom/android/launcher3/theme/OpenThemeLoader;
 
     invoke-virtual {v0}, Lcom/android/launcher3/theme/OpenThemeLoader;->isThemeChanged()Z
@@ -2920,25 +2962,25 @@
 
     const v7, 0x7f020087
 
-    .line 107
+    .line 112
     sget-object v6, Lcom/android/launcher3/theme/OpenThemeManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    .line 108
+    .line 113
     .local v4, "r":Landroid/content/res/Resources;
     if-nez v4, :cond_0
 
-    .line 109
+    .line 114
     const/4 v3, 0x0
 
-    .line 136
+    .line 141
     :goto_0
     return-object v3
 
-    .line 112
+    .line 117
     :cond_0
     sget-object v6, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->BADGE_BG:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
@@ -2950,7 +2992,7 @@
 
     move-result-object v3
 
-    .line 113
+    .line 118
     .local v3, "preloadBadgeDrawable":Landroid/graphics/drawable/Drawable;
     sget-object v6, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->BADGE_BG_COLOR:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
@@ -2962,16 +3004,16 @@
 
     move-result v0
 
-    .line 115
+    .line 120
     .local v0, "badgeBgColor":I
     if-nez v3, :cond_3
 
-    .line 116
+    .line 121
     const v6, 0x1ffffff
 
     if-eq v0, v6, :cond_2
 
-    .line 119
+    .line 124
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v6
@@ -2982,37 +3024,37 @@
 
     if-eqz v6, :cond_1
 
-    .line 120
+    .line 125
     invoke-virtual {v4, v8}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 121
+    .line 126
     .local v1, "drawable":Landroid/graphics/drawable/Drawable;
     invoke-static {v4, v8}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
-    .line 126
+    .line 131
     .local v5, "small":Landroid/graphics/Bitmap;
     :goto_1
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 127
+    .line 132
     .local v2, "padding":Landroid/graphics/Rect;
     invoke-virtual {v1, v2}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
 
-    .line 128
+    .line 133
     invoke-static {v5, v0, v2}, Lcom/android/launcher3/theme/ThemeUtils;->getNinepatchWithColor(Landroid/graphics/Bitmap;ILandroid/graphics/Rect;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
-    .line 130
+    .line 135
     goto :goto_0
 
-    .line 123
+    .line 128
     .end local v1    # "drawable":Landroid/graphics/drawable/Drawable;
     .end local v2    # "padding":Landroid/graphics/Rect;
     .end local v5    # "small":Landroid/graphics/Bitmap;
@@ -3021,7 +3063,7 @@
 
     move-result-object v1
 
-    .line 124
+    .line 129
     .restart local v1    # "drawable":Landroid/graphics/drawable/Drawable;
     invoke-static {v4, v7}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -3030,7 +3072,7 @@
     .restart local v5    # "small":Landroid/graphics/Bitmap;
     goto :goto_1
 
-    .line 131
+    .line 136
     .end local v1    # "drawable":Landroid/graphics/drawable/Drawable;
     .end local v5    # "small":Landroid/graphics/Bitmap;
     :cond_2
@@ -3042,7 +3084,7 @@
 
     goto :goto_0
 
-    .line 134
+    .line 139
     :cond_3
     const-string v6, "OpenThemeManager"
 

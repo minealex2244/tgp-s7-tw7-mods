@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 2105
+    .line 2113
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$18;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$18;->val$folder:Lcom/android/launcher3/folder/view/FolderIconView;
@@ -45,12 +45,12 @@
     .locals 3
 
     .prologue
-    .line 2108
+    .line 2116
     new-instance v0, Lcom/android/launcher3/common/stage/StageEntry;
 
     invoke-direct {v0}, Lcom/android/launcher3/common/stage/StageEntry;-><init>()V
 
-    .line 2109
+    .line 2117
     .local v0, "data":Lcom/android/launcher3/common/stage/StageEntry;
     const-string v1, "KEY_FOLDER_ICON_VIEW"
 
@@ -58,7 +58,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/common/stage/StageEntry;->putExtras(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 2110
+    .line 2118
     iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$18;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     # invokes: Lcom/android/launcher3/allapps/controller/AppsController;->getStageManager()Lcom/android/launcher3/common/stage/StageManager;
@@ -70,6 +70,6 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/android/launcher3/common/stage/StageManager;->startStage(ILcom/android/launcher3/common/stage/StageEntry;)V
 
-    .line 2111
+    .line 2119
     return-void
 .end method

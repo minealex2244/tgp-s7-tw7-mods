@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 761
+    .line 762
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$10;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$10;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
@@ -49,7 +49,7 @@
     .locals 4
 
     .prologue
-    .line 763
+    .line 764
     iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$10;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iget-object v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$10;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
@@ -61,11 +61,11 @@
 
     move-result-object v0
 
-    .line 764
+    .line 765
     .local v0, "callbacks":Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
     if-eqz v0, :cond_0
 
-    .line 765
+    .line 766
     iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$10;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mTotalPageNumber:I
@@ -75,7 +75,7 @@
 
     invoke-interface {v0, v1}, Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;->finishBindingItems(I)V
 
-    .line 767
+    .line 768
     :cond_0
     return-void
 .end method

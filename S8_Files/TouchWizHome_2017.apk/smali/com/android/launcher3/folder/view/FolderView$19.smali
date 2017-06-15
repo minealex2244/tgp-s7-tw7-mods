@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 2144
+    .line 2159
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$19;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     iput-object p2, p0, Lcom/android/launcher3/folder/view/FolderView$19;->val$item:Lcom/android/launcher3/common/base/item/IconInfo;
@@ -48,7 +48,7 @@
     .param p3, "parent"    # Landroid/view/View;
 
     .prologue
-    .line 2148
+    .line 2163
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$19;->val$item:Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-ne p1, v0, :cond_0

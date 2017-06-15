@@ -25,7 +25,7 @@
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
-    .line 2164
+    .line 2167
     iput-object p1, p0, Lcom/android/launcher3/Launcher$11;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,17 +40,33 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 2167
+    .line 2170
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
-    .line 2168
+    .line 2171
     const-string v0, "Launcher"
 
-    const-string v1, "need_dark_navigationbar is changed!!"
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "need_dark_navigationbar is changed!!"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2169
+    .line 2172
     iget-object v0, p0, Lcom/android/launcher3/Launcher$11;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->getApplicationContext()Landroid/content/Context;
@@ -59,7 +75,7 @@
 
     invoke-static {v0}, Lcom/android/launcher3/util/WhiteBgManager;->setupForNavigationBar(Landroid/content/Context;)V
 
-    .line 2170
+    .line 2173
     iget-object v0, p0, Lcom/android/launcher3/Launcher$11;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-static {}, Lcom/android/launcher3/util/WhiteBgManager;->isWhiteNavigationBar()Z
@@ -68,7 +84,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/Launcher;->changeNavigationBarColor(Z)V
 
-    .line 2173
+    .line 2176
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportNavigationBar()Z
 
     move-result v0
@@ -84,7 +100,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2174
+    .line 2177
     iget-object v0, p0, Lcom/android/launcher3/Launcher$11;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->getWindowManager()Landroid/view/WindowManager;
@@ -113,7 +129,7 @@
 
     invoke-interface {v0, v1, v2}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 2176
+    .line 2179
     :cond_0
     return-void
 .end method

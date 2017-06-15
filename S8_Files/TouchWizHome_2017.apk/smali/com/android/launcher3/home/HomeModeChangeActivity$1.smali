@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     .prologue
-    .line 184
+    .line 193
     iput-object p1, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$1;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,15 +40,15 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 187
+    .line 196
     if-nez p2, :cond_1
 
-    .line 197
+    .line 206
     :cond_0
     :goto_0
     return-void
 
-    .line 191
+    .line 200
     :cond_1
     const-string v1, "com.android.launcher.action.CHANGE_HOMEONLYMODE"
 
@@ -62,7 +62,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 192
+    .line 201
     # getter for: Lcom/android/launcher3/home/HomeModeChangeActivity;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/launcher3/home/HomeModeChangeActivity;->access$000()Ljava/lang/String;
 
@@ -72,7 +72,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 193
+    .line 202
     const-string v1, "homeOnlyeMode"
 
     const/4 v2, 0x0
@@ -81,14 +81,14 @@
 
     move-result v0
 
-    .line 194
+    .line 203
     .local v0, "homeOnlyMode":Z
     iget-object v1, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$1;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     # invokes: Lcom/android/launcher3/home/HomeModeChangeActivity;->preformOnClick(Z)V
     invoke-static {v1, v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->access$100(Lcom/android/launcher3/home/HomeModeChangeActivity;Z)V
 
-    .line 195
+    .line 204
     iget-object v1, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$1;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     # invokes: Lcom/android/launcher3/home/HomeModeChangeActivity;->askConfirmation()V

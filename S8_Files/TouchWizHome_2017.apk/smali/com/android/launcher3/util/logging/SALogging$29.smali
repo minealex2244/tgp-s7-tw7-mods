@@ -33,14 +33,14 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 1325
+    .line 1384
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$29;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$eventID:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$screenID:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$detail:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$detail:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$screenID:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,111 +50,105 @@
 
 # virtual methods
 .method public run()V
-    .locals 5
+    .locals 6
 
     .prologue
-    .line 1328
-    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$29;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    .line 1387
+    iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$29;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$eventID:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$eventID:Ljava/lang/String;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->changeIdByMode(Ljava/lang/String;)Ljava/lang/String;
-    invoke-static {v2, v3}, Lcom/android/launcher3/util/logging/SALogging;->access$900(Lcom/android/launcher3/util/logging/SALogging;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->access$1400(Lcom/android/launcher3/util/logging/SALogging;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 1388
+    .local v1, "changedEventID":Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$29;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$detail:Ljava/lang/String;
+
+    # invokes: Lcom/android/launcher3/util/logging/SALogging;->changeEmptyDetail(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->access$1500(Lcom/android/launcher3/util/logging/SALogging;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1330
-    .local v0, "changedEventID":Ljava/lang/String;
+    .line 1390
+    .local v0, "changedDetail":Ljava/lang/String;
     :try_start_0
     invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
 
-    move-result-object v3
-
-    new-instance v2, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
-    invoke-direct {v2}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;-><init>()V
-
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$screenID:Ljava/lang/String;
-
-    .line 1331
-    invoke-virtual {v2, v4}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setScreenView(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$LogBuilder;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
-    .line 1332
-    invoke-virtual {v2, v0}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setEventName(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
     move-result-object v4
 
-    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$detail:Ljava/lang/String;
+    new-instance v3, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
 
-    .line 1333
-    invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
+    invoke-direct {v3}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;-><init>()V
 
-    move-result v2
+    iget-object v5, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$screenID:Ljava/lang/String;
 
-    if-eqz v2, :cond_0
+    .line 1391
+    invoke-virtual {v3, v5}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setScreenView(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$LogBuilder;
 
-    const-string v2, " "
+    move-result-object v3
 
-    :goto_0
-    invoke-virtual {v4, v2}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setEventDetail(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
+    check-cast v3, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
 
-    move-result-object v2
+    .line 1392
+    invoke-virtual {v3, v1}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setEventName(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
 
-    .line 1334
-    invoke-virtual {v2}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->build()Ljava/util/Map;
+    move-result-object v3
 
-    move-result-object v2
+    .line 1393
+    invoke-virtual {v3, v0}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setEventDetail(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
 
-    .line 1330
-    invoke-virtual {v3, v2}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->sendLog(Ljava/util/Map;)I
+    move-result-object v3
 
-    .line 1338
-    :goto_1
-    return-void
+    .line 1394
+    invoke-virtual {v3}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->build()Ljava/util/Map;
 
-    .line 1333
-    :cond_0
-    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$29;->val$detail:Ljava/lang/String;
+    move-result-object v3
+
+    .line 1390
+    invoke-virtual {v4, v3}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->sendLog(Ljava/util/Map;)I
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_0
+    .line 1398
+    :goto_0
+    return-void
 
-    .line 1335
+    .line 1395
     :catch_0
-    move-exception v1
+    move-exception v2
 
-    .line 1336
-    .local v1, "e":Ljava/lang/Exception;
-    const-string v2, "Launcher.SALogging"
+    .line 1396
+    .local v2, "e":Ljava/lang/Exception;
+    const-string v3, "Launcher.SALogging"
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "insertEventLog : Exception "
+    const-string v5, "insertEventLog : Exception "
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v5
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v4
 
-    invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    goto :goto_1
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
 .end method

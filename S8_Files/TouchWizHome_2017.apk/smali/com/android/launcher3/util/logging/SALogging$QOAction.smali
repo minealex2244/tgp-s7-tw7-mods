@@ -27,15 +27,15 @@
     .param p2, "itemType"    # I
 
     .prologue
-    .line 1367
+    .line 1428
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1368
+    .line 1429
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$QOAction;->mName:Ljava/lang/String;
 
-    .line 1369
+    .line 1430
     iput p2, p0, Lcom/android/launcher3/util/logging/SALogging$QOAction;->mItemType:I
 
-    .line 1370
+    .line 1431
     return-void
 .end method

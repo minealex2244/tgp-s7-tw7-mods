@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 762
+    .line 764
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$4;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +42,11 @@
     .param p1, "viewType"    # Lcom/android/launcher3/allapps/controller/AppsController$ViewType;
 
     .prologue
-    .line 765
+    .line 767
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$4;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-virtual {v0, p1}, Lcom/android/launcher3/allapps/controller/AppsController;->setViewType(Lcom/android/launcher3/allapps/controller/AppsController$ViewType;)V
 
-    .line 766
+    .line 768
     return-void
 .end method

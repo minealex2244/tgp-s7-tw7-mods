@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 1469
+    .line 1484
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$17;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +42,11 @@
     .param p1, "alarm"    # Lcom/android/launcher3/util/alarm/Alarm;
 
     .prologue
-    .line 1471
+    .line 1486
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$17;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-virtual {v0}, Lcom/android/launcher3/folder/view/FolderView;->completeDragExit()V
 
-    .line 1472
+    .line 1487
     return-void
 .end method

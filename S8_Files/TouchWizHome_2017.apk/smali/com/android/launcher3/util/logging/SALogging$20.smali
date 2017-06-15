@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 1022
+    .line 1086
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$20;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$launcher:Lcom/android/launcher3/Launcher;
@@ -59,10 +59,10 @@
     .prologue
     const/4 v7, 0x2
 
-    .line 1025
+    .line 1089
     const/4 v1, 0x0
 
-    .line 1026
+    .line 1090
     .local v1, "screenID":Ljava/lang/String;
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$launcher:Lcom/android/launcher3/Launcher;
 
@@ -74,7 +74,7 @@
 
     if-ne v3, v6, :cond_2
 
-    .line 1027
+    .line 1091
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$launcher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v3}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
@@ -87,7 +87,7 @@
 
     move-result-object v1
 
-    .line 1038
+    .line 1102
     :cond_0
     :goto_0
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->this$0:Lcom/android/launcher3/util/logging/SALogging;
@@ -99,11 +99,11 @@
     iget-object v8, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$btnText:Ljava/lang/String;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->getEventIDForMutliSelect(ILcom/android/launcher3/Launcher;Ljava/lang/String;)Ljava/lang/String;
-    invoke-static {v3, v6, v7, v8}, Lcom/android/launcher3/util/logging/SALogging;->access$1000(Lcom/android/launcher3/util/logging/SALogging;ILcom/android/launcher3/Launcher;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v6, v7, v8}, Lcom/android/launcher3/util/logging/SALogging;->access$1300(Lcom/android/launcher3/util/logging/SALogging;ILcom/android/launcher3/Launcher;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1039
+    .line 1103
     .local v0, "eventID":Ljava/lang/String;
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$mCheckedAppsViewList:Ljava/util/ArrayList;
 
@@ -113,22 +113,22 @@
 
     int-to-long v4, v3
 
-    .line 1040
+    .line 1104
     .local v4, "value":J
     if-eqz v1, :cond_1
 
     if-eqz v0, :cond_1
 
-    .line 1041
+    .line 1105
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     invoke-virtual {v3, v1, v0, v4, v5}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;J)V
 
-    .line 1043
+    .line 1107
     :cond_1
     return-void
 
-    .line 1028
+    .line 1092
     .end local v0    # "eventID":Ljava/lang/String;
     .end local v4    # "value":J
     :cond_2
@@ -140,7 +140,7 @@
 
     if-ne v3, v7, :cond_3
 
-    .line 1029
+    .line 1093
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$launcher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v3}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
@@ -155,7 +155,7 @@
 
     goto :goto_0
 
-    .line 1030
+    .line 1094
     :cond_3
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$launcher:Lcom/android/launcher3/Launcher;
 
@@ -167,18 +167,18 @@
 
     if-ne v3, v6, :cond_0
 
-    .line 1031
+    .line 1095
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$launcher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v3}, Lcom/android/launcher3/Launcher;->getSecondTopStageMode()I
 
     move-result v2
 
-    .line 1032
+    .line 1096
     .local v2, "secondStageMode":I
     if-ne v2, v7, :cond_4
 
-    .line 1033
+    .line 1097
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$launcher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v3}, Lcom/android/launcher3/Launcher;->getResources()Landroid/content/res/Resources;
@@ -193,7 +193,7 @@
 
     goto :goto_0
 
-    .line 1035
+    .line 1099
     :cond_4
     iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$20;->val$launcher:Lcom/android/launcher3/Launcher;
 

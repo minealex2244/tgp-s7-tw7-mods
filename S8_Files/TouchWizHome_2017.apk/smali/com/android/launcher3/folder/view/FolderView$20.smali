@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 2171
+    .line 2186
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$20;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .param p3, "parent"    # Landroid/view/View;
 
     .prologue
-    .line 2175
+    .line 2190
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$20;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mItemsInReadingOrder:Ljava/util/ArrayList;
@@ -54,7 +54,7 @@
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2176
+    .line 2191
     const/4 v0, 0x0
 
     return v0

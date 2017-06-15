@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 1375
+    .line 1390
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$15;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     iput-object p2, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$urgentItems:Ljava/util/ArrayList;
@@ -63,7 +63,7 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 1378
+    .line 1393
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$urgentItems:Ljava/util/ArrayList;
 
     iget-object v4, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$dropItem:Lcom/android/launcher3/folder/view/FolderView$DropItem;
@@ -74,14 +74,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 1379
+    .line 1394
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$urgentItems:Ljava/util/ArrayList;
 
     iget-object v4, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$dropItem:Lcom/android/launcher3/folder/view/FolderView$DropItem;
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 1382
+    .line 1397
     :cond_0
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$iconView:Landroid/view/View;
 
@@ -89,19 +89,19 @@
 
     if-nez v3, :cond_2
 
-    .line 1383
+    .line 1398
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$page:Lcom/android/launcher3/common/base/view/CellLayout;
 
     if-eqz v3, :cond_1
 
-    .line 1384
+    .line 1399
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$page:Lcom/android/launcher3/common/base/view/CellLayout;
 
     iget-object v4, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$iconView:Landroid/view/View;
 
     invoke-virtual {v3, v4}, Lcom/android/launcher3/common/base/view/CellLayout;->removeView(Landroid/view/View;)V
 
-    .line 1386
+    .line 1401
     :cond_1
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$iconView:Landroid/view/View;
 
@@ -111,7 +111,7 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    .line 1387
+    .line 1402
     .local v1, "info":Lcom/android/launcher3/common/base/item/IconInfo;
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
@@ -124,7 +124,7 @@
 
     move-result-object v2
 
-    .line 1388
+    .line 1403
     .local v2, "view":Landroid/view/View;
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
@@ -137,13 +137,13 @@
 
     invoke-virtual {v3, v2, v1, v4}, Lcom/android/launcher3/folder/view/FolderPagedView;->addViewForRank(Landroid/view/View;Lcom/android/launcher3/common/base/item/IconInfo;I)V
 
-    .line 1389
+    .line 1404
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mItemsInvalidated:Z
     invoke-static {v3, v5}, Lcom/android/launcher3/folder/view/FolderView;->access$1202(Lcom/android/launcher3/folder/view/FolderView;Z)Z
 
-    .line 1392
+    .line 1407
     .end local v1    # "info":Lcom/android/launcher3/common/base/item/IconInfo;
     .end local v2    # "view":Landroid/view/View;
     :cond_2
@@ -161,7 +161,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 1393
+    .line 1408
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->val$items:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -181,13 +181,13 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    .line 1394
+    .line 1409
     .local v0, "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     iput-boolean v5, v0, Lcom/android/launcher3/common/base/item/IconInfo;->mDirty:Z
 
     goto :goto_0
 
-    .line 1396
+    .line 1411
     .end local v0    # "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     :cond_3
     const-string v3, "Launcher.Folder"
@@ -196,12 +196,12 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1397
+    .line 1412
     iget-object v3, p0, Lcom/android/launcher3/folder/view/FolderView$15;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-virtual {v3}, Lcom/android/launcher3/folder/view/FolderView;->notifyFolderItemsChanged()V
 
-    .line 1399
+    .line 1414
     :cond_4
     return-void
 .end method

@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 1740
+    .line 1776
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$12;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$12;->val$packageName:Ljava/lang/String;
@@ -45,23 +45,23 @@
     .locals 11
 
     .prologue
-    .line 1743
+    .line 1779
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1744
+    .line 1780
     .local v5, "updates":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     invoke-static {}, Lcom/android/launcher3/common/compat/UserHandleCompat;->myUserHandle()Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     move-result-object v6
 
-    .line 1745
+    .line 1781
     .local v6, "user":Lcom/android/launcher3/common/compat/UserHandleCompat;
     iget-object v7, p0, Lcom/android/launcher3/home/HomeLoader$12;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getAllItemInHome()Ljava/util/ArrayList;
-    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$5500(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$5700(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
 
     move-result-object v7
 
@@ -83,7 +83,7 @@
 
     check-cast v2, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1746
+    .line 1782
     .local v2, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v8, v2, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -91,16 +91,16 @@
 
     move-object v1, v2
 
-    .line 1747
+    .line 1783
     check-cast v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    .line 1748
+    .line 1784
     .local v1, "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v0
 
-    .line 1749
+    .line 1785
     .local v0, "cn":Landroid/content/ComponentName;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/item/IconInfo;->isPromise()Z
 
@@ -112,7 +112,7 @@
 
     iget-object v8, p0, Lcom/android/launcher3/home/HomeLoader$12;->val$packageName:Ljava/lang/String;
 
-    .line 1750
+    .line 1786
     invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v9
@@ -123,7 +123,7 @@
 
     if-eqz v8, :cond_0
 
-    .line 1751
+    .line 1787
     const/4 v8, 0x2
 
     invoke-virtual {v1, v8}, Lcom/android/launcher3/common/base/item/IconInfo;->hasStatusFlag(I)Z
@@ -132,30 +132,30 @@
 
     if-eqz v8, :cond_2
 
-    .line 1753
+    .line 1789
     # getter for: Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$5700()Lcom/android/launcher3/common/model/IconCache;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$5900()Lcom/android/launcher3/common/model/IconCache;
 
     move-result-object v8
 
     iget-object v9, v1, Lcom/android/launcher3/common/base/item/IconInfo;->promisedIntent:Landroid/content/Intent;
 
-    .line 1755
+    .line 1791
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/item/IconInfo;->shouldUseLowResIcon()Z
 
     move-result v10
 
-    .line 1753
+    .line 1789
     invoke-virtual {v8, v1, v9, v6, v10}, Lcom/android/launcher3/common/model/IconCache;->getTitleAndIcon(Lcom/android/launcher3/common/base/item/IconInfo;Landroid/content/Intent;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
 
-    .line 1764
+    .line 1800
     :cond_1
     :goto_1
     invoke-virtual {v5, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1756
+    .line 1792
     :cond_2
     const/16 v8, 0x24
 
@@ -165,9 +165,9 @@
 
     if-nez v8, :cond_1
 
-    .line 1762
+    .line 1798
     # getter for: Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$5800()Lcom/android/launcher3/common/model/IconCache;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$6000()Lcom/android/launcher3/common/model/IconCache;
 
     move-result-object v8
 
@@ -175,7 +175,7 @@
 
     goto :goto_1
 
-    .line 1769
+    .line 1805
     .end local v0    # "cn":Landroid/content/ComponentName;
     .end local v1    # "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     .end local v2    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -186,30 +186,30 @@
 
     if-nez v7, :cond_4
 
-    .line 1771
+    .line 1807
     iget-object v7, p0, Lcom/android/launcher3/home/HomeLoader$12;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v3
 
-    .line 1772
+    .line 1808
     .local v3, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     new-instance v4, Lcom/android/launcher3/home/HomeLoader$12$1;
 
     invoke-direct {v4, p0, v3, v5, v6}, Lcom/android/launcher3/home/HomeLoader$12$1;-><init>(Lcom/android/launcher3/home/HomeLoader$12;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
-    .line 1780
+    .line 1816
     .local v4, "r":Ljava/lang/Runnable;
     # getter for: Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$5900()Lcom/android/launcher3/common/model/DeferredHandler;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$6100()Lcom/android/launcher3/common/model/DeferredHandler;
 
     move-result-object v7
 
     invoke-virtual {v7, v4}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 1782
+    .line 1818
     .end local v3    # "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     .end local v4    # "r":Ljava/lang/Runnable;
     :cond_4

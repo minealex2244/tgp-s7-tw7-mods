@@ -1,8 +1,24 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: TouchWizHome_2016C.apk
+apkFileName: TouchWizHome_2017.apk
 compressionType: false
 doNotCompress:
 - arsc
+- res/drawable-sw320dp-xxhdpi-v13/homescreen_badge.9.qmg
+- res/drawable-sw320dp-xxhdpi-v13/homescreen_badge_easymode.9.qmg
+- res/drawable-sw320dp-xxhdpi-v13/homescreen_ic_shortcut.9.qmg
+- res/drawable-sw360dp-xxhdpi-v13/homescreen_badge.9.qmg
+- res/drawable-sw360dp-xxhdpi-v13/homescreen_ic_shortcut.9.qmg
+- res/drawable-sw411dp-xxhdpi-v13/homescreen_badge.9.qmg
+- res/drawable-sw411dp-xxhdpi-v13/homescreen_ic_shortcut.9.qmg
+- qio
+- qmg
+- res/drawable-xxhdpi-v4/help_bubble_bg.9.qmg
+- res/drawable-xxhdpi-v4/homescreen_apptray_btn_bg.9.qmg
+- res/drawable-xxhdpi-v4/homescreen_badge.9.qmg
+- res/drawable-xxhdpi-v4/homescreen_btn_bg.9.qmg
+- res/drawable-xxhdpi-v4/quantum_panel_dark_bitmap.9.qmg
+- res/drawable-xxhdpi-v4/quick_option_popup_bg.9.qmg
+- res/drawable-xxxhdpi-v4/quantum_panel_dark_bitmap.9.qmg
 isFrameworkApk: false
 packageInfo:
   forcedPackageId: '127'
@@ -20,5 +36,5 @@ usesFramework:
   tag: null
 version: 2.2.2
 versionInfo:
-  versionCode: '610101000'
-  versionName: 6.1.01
+  versionCode: '610701000'
+  versionName: 6.1.07

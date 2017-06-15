@@ -69,7 +69,7 @@
     <string name="home_screen_mode_only_home">Apenas a Tela inicial</string>
     <string name="home_screen_screengrid">Grade da Tela inicial</string>
     <string name="home_screen_settings_hide_apps">Ocultar aplicativos</string>
-    <string name="homes_screen_settings">Config. da tela de início</string>
+    <string name="homes_screen_settings">Config. da Tela inicial</string>
     <string name="homesetting_easymode_close">Fechar</string>
     <string name="homesetting_easymode_summary">Você pode desativar o Modo Fácil nas Configurações.</string>
     <string name="homesetting_easymode_title">Modo Fácil ativado</string>
@@ -150,11 +150,11 @@ p/ igualar a aparência da Tela inicial"</string>
     <string name="selected">Selecionado</string>
     <string name="setting_apps_screen_grid">Grade da Tela de aplicações</string>
     <string name="shortcut_duplicate">O atalho %s já existe.</string>
-    <string name="shortcut_installed">Atalho para %s adicionado na tela de início.</string>
+    <string name="shortcut_installed">Atalho para %s adicionado na Tela inicial.</string>
     <string name="shortcut_moved_to_game_launcher">O ícone de jogo foi movido para o Game Launcher.</string>
     <string name="shortcut_uninstalled">Atalho %s removido.</string>
     <string name="speak_now">Fale agora</string>
-    <string name="swipe_up_for_more_apps">Deslizar para cima ou para baixo para ver todos os aplicativos</string>
+    <string name="swipe_up_for_more_apps">Deslize para cima ou para baixo para ver todos os aplicativos</string>
     <string name="swipe_up_for_more_apps_att">Deslizar para cima ou para baixo na tela para todos os aplicativos</string>
     <string name="swipe_up_for_more_apps_with_two_fingers">Deslize para cima ou para baixo com dois dedos para todos os aplicativos.</string>
     <string name="talkback_checked">Selecionado</string>

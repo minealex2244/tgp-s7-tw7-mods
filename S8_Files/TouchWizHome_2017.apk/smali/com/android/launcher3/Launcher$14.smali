@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/Launcher;
 
     .prologue
-    .line 2526
+    .line 2529
     iput-object p1, p0, Lcom/android/launcher3/Launcher$14;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,12 +36,12 @@
     .locals 4
 
     .prologue
-    .line 2553
+    .line 2556
     invoke-static {}, Lcom/android/launcher3/common/view/LiveIconManager;->getCalendarPackages()Ljava/util/List;
 
     move-result-object v0
 
-    .line 2554
+    .line 2557
     .local v0, "calendarPackageNames":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -60,13 +60,13 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 2555
+    .line 2558
     .local v1, "pkgName":Ljava/lang/String;
     invoke-static {v1}, Lcom/android/launcher3/common/view/LiveIconManager;->clearLiveIconCache(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 2557
+    .line 2560
     .end local v1    # "pkgName":Ljava/lang/String;
     :cond_0
     iget-object v2, p0, Lcom/android/launcher3/Launcher$14;->this$0:Lcom/android/launcher3/Launcher;
@@ -77,7 +77,7 @@
 
     invoke-static {v2}, Lcom/android/launcher3/common/view/LiveIconManager;->setCalendarAlarm(Landroid/content/Context;)V
 
-    .line 2558
+    .line 2561
     return-void
 .end method
 
@@ -85,16 +85,16 @@
     .locals 2
 
     .prologue
-    .line 2561
+    .line 2564
     invoke-static {}, Lcom/android/launcher3/Utilities;->getClockPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2562
+    .line 2565
     .local v0, "clockPackageName":Ljava/lang/String;
     invoke-static {v0}, Lcom/android/launcher3/common/view/LiveIconManager;->clearLiveIconCache(Ljava/lang/String;)V
 
-    .line 2563
+    .line 2566
     iget-object v1, p0, Lcom/android/launcher3/Launcher$14;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v1}, Lcom/android/launcher3/Launcher;->getApplicationContext()Landroid/content/Context;
@@ -103,7 +103,7 @@
 
     invoke-static {v1}, Lcom/android/launcher3/common/view/LiveIconManager;->setClockAlarm(Landroid/content/Context;)V
 
-    .line 2564
+    .line 2567
     return-void
 .end method
 
@@ -115,25 +115,25 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 2529
+    .line 2532
     if-nez p2, :cond_1
 
-    .line 2550
+    .line 2553
     :cond_0
     :goto_0
     return-void
 
-    .line 2530
+    .line 2533
     :cond_1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2531
+    .line 2534
     .local v0, "action":Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 2533
+    .line 2536
     const-string v1, "Launcher"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -156,7 +156,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2535
+    .line 2538
     const/4 v1, -0x1
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -169,7 +169,7 @@
     :goto_1
     packed-switch v1, :pswitch_data_0
 
-    .line 2549
+    .line 2552
     :goto_2
     iget-object v1, p0, Lcom/android/launcher3/Launcher$14;->this$0:Lcom/android/launcher3/Launcher;
 
@@ -182,7 +182,7 @@
 
     goto :goto_0
 
-    .line 2535
+    .line 2538
     :sswitch_0
     const-string v2, "android.intent.action.DATE_CHANGED"
 
@@ -248,28 +248,28 @@
 
     goto :goto_1
 
-    .line 2539
+    .line 2542
     :pswitch_0
     invoke-direct {p0}, Lcom/android/launcher3/Launcher$14;->refreshCalendar()V
 
-    .line 2540
+    .line 2543
     invoke-direct {p0}, Lcom/android/launcher3/Launcher$14;->refreshClock()V
 
     goto :goto_2
 
-    .line 2543
+    .line 2546
     :pswitch_1
     invoke-direct {p0}, Lcom/android/launcher3/Launcher$14;->refreshCalendar()V
 
     goto :goto_2
 
-    .line 2546
+    .line 2549
     :pswitch_2
     invoke-direct {p0}, Lcom/android/launcher3/Launcher$14;->refreshClock()V
 
     goto :goto_2
 
-    .line 2535
+    .line 2538
     nop
 
     :sswitch_data_0

@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 1109
+    .line 1174
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$21;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-boolean p2, p0, Lcom/android/launcher3/util/logging/SALogging$21;->val$isHomeGrid:Z
@@ -65,14 +65,14 @@
 
     const/4 v6, 0x5
 
-    .line 1112
+    .line 1177
     sget-object v5, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    .line 1113
+    .line 1178
     .local v2, "res":Landroid/content/res/Resources;
     iget-boolean v5, p0, Lcom/android/launcher3/util/logging/SALogging$21;->val$isHomeGrid:Z
 
@@ -84,7 +84,7 @@
 
     move-result-object v3
 
-    .line 1115
+    .line 1180
     .local v3, "screenID":Ljava/lang/String;
     :goto_0
     iget-boolean v5, p0, Lcom/android/launcher3/util/logging/SALogging$21;->val$isHomeGrid:Z
@@ -97,7 +97,7 @@
 
     move-result-object v1
 
-    .line 1117
+    .line 1182
     .local v1, "eventID":Ljava/lang/String;
     :goto_1
     iget-boolean v5, p0, Lcom/android/launcher3/util/logging/SALogging$21;->val$isHomeGrid:Z
@@ -110,7 +110,7 @@
 
     move-result-object v4
 
-    .line 1119
+    .line 1184
     .local v4, "statusID":Ljava/lang/String;
     :goto_2
     iget-boolean v5, p0, Lcom/android/launcher3/util/logging/SALogging$21;->val$isHomeGrid:Z
@@ -127,7 +127,7 @@
 
     const-string v0, "1"
 
-    .line 1122
+    .line 1187
     .local v0, "detail":Ljava/lang/String;
     :cond_0
     :goto_3
@@ -135,21 +135,21 @@
 
     invoke-virtual {v5, v4, v0}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1123
+    .line 1188
     iget-boolean v5, p0, Lcom/android/launcher3/util/logging/SALogging$21;->val$statusLogOnly:Z
 
     if-nez v5, :cond_1
 
-    .line 1124
+    .line 1189
     iget-object v5, p0, Lcom/android/launcher3/util/logging/SALogging$21;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     invoke-virtual {v5, v3, v1, v0}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1126
+    .line 1191
     :cond_1
     return-void
 
-    .line 1113
+    .line 1178
     .end local v0    # "detail":Ljava/lang/String;
     .end local v1    # "eventID":Ljava/lang/String;
     .end local v3    # "screenID":Ljava/lang/String;
@@ -157,38 +157,38 @@
     :cond_2
     const v5, 0x7f08017e
 
-    .line 1114
+    .line 1179
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     goto :goto_0
 
-    .line 1115
+    .line 1180
     .restart local v3    # "screenID":Ljava/lang/String;
     :cond_3
     const v5, 0x7f08014b
 
-    .line 1116
+    .line 1181
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     goto :goto_1
 
-    .line 1117
+    .line 1182
     .restart local v1    # "eventID":Ljava/lang/String;
     :cond_4
     const v5, 0x7f08019b
 
-    .line 1118
+    .line 1183
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
     goto :goto_2
 
-    .line 1119
+    .line 1184
     .restart local v4    # "statusID":Ljava/lang/String;
     :cond_5
     iget v5, p0, Lcom/android/launcher3/util/logging/SALogging$21;->val$x:I

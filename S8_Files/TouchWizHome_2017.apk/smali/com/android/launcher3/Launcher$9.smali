@@ -25,7 +25,7 @@
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
-    .line 2144
+    .line 2147
     iput-object p1, p0, Lcom/android/launcher3/Launcher$9;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -36,21 +36,37 @@
 
 # virtual methods
 .method public onChange(Z)V
-    .locals 2
+    .locals 3
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 2147
+    .line 2150
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
-    .line 2148
+    .line 2151
     const-string v0, "Launcher"
 
-    const-string v1, "need_dark_font is changed!!"
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "need_dark_font is changed!!"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2149
+    .line 2152
     iget-object v0, p0, Lcom/android/launcher3/Launcher$9;->this$0:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v0}, Lcom/android/launcher3/Launcher;->getApplicationContext()Landroid/content/Context;
@@ -59,12 +75,12 @@
 
     invoke-static {v0}, Lcom/android/launcher3/util/WhiteBgManager;->setup(Landroid/content/Context;)V
 
-    .line 2150
+    .line 2153
     iget-object v0, p0, Lcom/android/launcher3/Launcher$9;->this$0:Lcom/android/launcher3/Launcher;
 
     # invokes: Lcom/android/launcher3/Launcher;->changeColorForBg()V
     invoke-static {v0}, Lcom/android/launcher3/Launcher;->access$700(Lcom/android/launcher3/Launcher;)V
 
-    .line 2151
+    .line 2154
     return-void
 .end method

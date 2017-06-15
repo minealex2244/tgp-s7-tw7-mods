@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/LauncherModel;
 
     .prologue
-    .line 416
+    .line 417
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$1;->this$0:Lcom/android/launcher3/LauncherModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 2
 
     .prologue
-    .line 419
+    .line 420
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 421
+    .line 422
     .local v0, "packagesToIgnore":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$1;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -54,7 +54,7 @@
 
     invoke-virtual {v1, v0}, Lcom/android/launcher3/home/HomeLoader;->getIgnorePackage(Ljava/util/HashSet;)V
 
-    .line 422
+    .line 423
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$1;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
@@ -64,13 +64,13 @@
 
     invoke-virtual {v1, v0}, Lcom/android/launcher3/common/model/IconCache;->updateDbIcons(Ljava/util/Set;)V
 
-    .line 425
+    .line 426
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$1;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v1, v1, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
     invoke-virtual {v1}, Lcom/android/launcher3/home/HomeLoader;->updateShortcutIcons()V
 
-    .line 426
+    .line 427
     return-void
 .end method

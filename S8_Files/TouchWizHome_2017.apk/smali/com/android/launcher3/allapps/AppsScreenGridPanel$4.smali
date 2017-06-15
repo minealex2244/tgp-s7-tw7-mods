@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/AppsScreenGridPanel;
 
     .prologue
-    .line 383
+    .line 403
     iput-object p1, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel$4;->this$0:Lcom/android/launcher3/allapps/AppsScreenGridPanel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +52,7 @@
 
     const/4 v4, 0x0
 
-    .line 386
+    .line 406
     if-eq p2, v7, :cond_0
 
     if-ne p2, v8, :cond_2
@@ -60,7 +60,7 @@
     :cond_0
     move v1, v5
 
-    .line 389
+    .line 409
     .local v1, "consume":Z
     :goto_0
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
@@ -71,7 +71,7 @@
 
     if-nez v1, :cond_3
 
-    .line 435
+    .line 455
     :cond_1
     :goto_1
     return v1
@@ -80,15 +80,15 @@
     :cond_2
     move v1, v4
 
-    .line 386
+    .line 406
     goto :goto_0
 
-    .line 394
+    .line 414
     .restart local v1    # "consume":Z
     :cond_3
     const/4 v2, 0x0
 
-    .line 396
+    .line 416
     .local v2, "gridBtnLayout":Landroid/widget/LinearLayout;
     iget-object v5, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel$4;->this$0:Lcom/android/launcher3/allapps/AppsScreenGridPanel;
 
@@ -112,7 +112,7 @@
 
     if-eqz v5, :cond_4
 
-    .line 397
+    .line 417
     iget-object v5, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel$4;->this$0:Lcom/android/launcher3/allapps/AppsScreenGridPanel;
 
     # getter for: Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mAppsController:Lcom/android/launcher3/allapps/controller/AppsController;
@@ -128,69 +128,69 @@
 
     move-result-object v2
 
-    .line 400
+    .line 420
     :cond_4
     if-eqz v2, :cond_1
 
-    .line 404
+    .line 424
     sget-boolean v5, Lcom/android/launcher3/Utilities;->sIsRtl:Z
 
     if-eqz v5, :cond_5
 
-    .line 405
+    .line 425
     if-ne p2, v7, :cond_6
 
-    .line 406
+    .line 426
     const/16 p2, 0x16
 
-    .line 412
+    .line 432
     :cond_5
     :goto_2
     invoke-virtual {v2, p1}, Landroid/widget/LinearLayout;->indexOfChild(Landroid/view/View;)I
 
     move-result v3
 
-    .line 414
+    .line 434
     .local v3, "index":I
     packed-switch p2, :pswitch_data_0
 
     goto :goto_1
 
-    .line 416
+    .line 436
     :pswitch_0
     if-eqz v3, :cond_1
 
-    .line 417
+    .line 437
     add-int/lit8 v5, v3, -0x1
 
     invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 418
+    .line 438
     .local v0, "childView":Landroid/view/View;
     if-eqz v0, :cond_1
 
-    .line 419
+    .line 439
     invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
 
-    .line 420
+    .line 440
     invoke-virtual {v0, v4}, Landroid/view/View;->playSoundEffect(I)V
 
     goto :goto_1
 
-    .line 407
+    .line 427
     .end local v0    # "childView":Landroid/view/View;
     .end local v3    # "index":I
     :cond_6
     if-ne p2, v8, :cond_5
 
-    .line 408
+    .line 428
     const/16 p2, 0x15
 
     goto :goto_2
 
-    .line 425
+    .line 445
     .restart local v3    # "index":I
     :pswitch_1
     add-int/lit8 v5, v3, 0x1
@@ -199,19 +199,19 @@
 
     move-result-object v0
 
-    .line 426
+    .line 446
     .restart local v0    # "childView":Landroid/view/View;
     if-eqz v0, :cond_1
 
-    .line 427
+    .line 447
     invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
 
-    .line 428
+    .line 448
     invoke-virtual {v0, v4}, Landroid/view/View;->playSoundEffect(I)V
 
     goto :goto_1
 
-    .line 414
+    .line 434
     :pswitch_data_0
     .packed-switch 0x15
         :pswitch_0

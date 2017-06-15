@@ -33,7 +33,7 @@
     .locals 0
 
     .prologue
-    .line 102
+    .line 103
     .local p0, "this":Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer;, "Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer<TT;>;"
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +60,7 @@
     .end annotation
 
     .prologue
-    .line 133
+    .line 134
     .local p0, "this":Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer;, "Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer<TT;>;"
     .local p1, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<*>;"
     new-instance v4, Ljava/util/ArrayList;
@@ -78,10 +78,10 @@
 
     move v5, p4
 
-    .line 134
+    .line 135
     invoke-virtual/range {v0 .. v5}, Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer;->normalize(Ljava/util/ArrayList;IZLjava/util/ArrayList;I)I
 
-    .line 135
+    .line 136
     return-object v4
 .end method
 
@@ -98,7 +98,7 @@
     .end annotation
 
     .prologue
-    .line 122
+    .line 123
     .local p0, "this":Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer;, "Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer<TT;>;"
     .local p1, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<*>;"
     const-string v0, "AppsLoader"
@@ -107,10 +107,10 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 123
+    .line 124
     const/4 v6, -0x1
 
-    .line 124
+    .line 125
     .local v6, "num":I
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mNormalizeLock:Ljava/lang/Object;
     invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$000()Ljava/lang/Object;
@@ -119,7 +119,7 @@
 
     monitor-enter v7
 
-    .line 125
+    .line 126
     const/4 v4, 0x0
 
     const/4 v5, 0x0
@@ -137,22 +137,22 @@
 
     move-result v6
 
-    .line 126
+    .line 127
     monitor-exit v7
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 127
+    .line 128
     const-string v0, "AppsLoader"
 
     const-string v1, "normalize end"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 128
+    .line 129
     return v6
 
-    .line 126
+    .line 127
     :catchall_0
     move-exception v0
 

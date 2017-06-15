@@ -24,9 +24,9 @@
     <string name="autoalign_popup_message">Po wyrōwnaniu nniy idzie wrōcić do przodziyjszyj aranżacyji.</string>
     <string name="autoalign_popup_title">Wyrōwnać dingsy na zajcie?</string>
     <string name="available_galaxyapps">Dostympne w Galaxy Apps</string>
-    <string name="badge_manage_explain">Wybierz, czy odznaczenia poszczególnych aplikacji mają być wyświetlane.</string>
-    <string name="badge_manage_summary">Wybierz, czy odznaczenia poszczególnych aplikacji mają być wyświetlane.</string>
-    <string name="badge_manage_title">Zarządzaj odznaczeniami aplikacji</string>
+    <string name="badge_manage_explain">Ôbier, eli ôznŏczynia kŏżdyj jednyj aplikacyji majōm być pokŏzywane.</string>
+    <string name="badge_manage_summary">Ôbier, eli ôznŏczynia kŏżdyj jednyj aplikacyji majōm być pokŏzywane.</string>
+    <string name="badge_manage_title">Reskyruj ôdznŏczyniami aplikacyje</string>
     <string name="badge_select_all_app">Wszyjske</string>
     <string name="button">Knefel</string>
     <string name="cancel">Pociep</string>
@@ -122,7 +122,7 @@ Microsoft"</string>
     <string name="permdesc_install_widget">Ta aplikacyjo dozwŏlo na przidowanie widgetōw do ekranu sztartowego.</string>
     <string name="permlab_install_widget">Przidej widgety</string>
     <string name="quick_option_add_apps">Przidej aplikacyje</string>
-    <string name="quick_option_add_shortcut_to_home">Dodaj skr. do ekr. start.</string>
+    <string name="quick_option_add_shortcut_to_home">Dodej skrōt do ekr.dōmow.</string>
     <string name="quick_option_add_to_personal">Dod.do ôsob.</string>
     <string name="quick_option_app_info">Info ô aplikacyji</string>
     <string name="quick_option_cant_disable">Niy idzie wyłōnczyć aplikacyji %s.</string>
@@ -191,8 +191,8 @@ Microsoft"</string>
     <string name="widget_button_text">Widgety</string>
     <string name="work_folder_name">Robota</string>
     <string name="zeropage_briefing_title">Skrót informacji</string>
-    <string name="zeropage_download">Pobierz</string>
-    <string name="zeropage_download_msg">Do korzystania z tej funkcji należy zainstalować aplikację %1$s. Dotknij opcji POBIERZ, aby pobrać i zainstalować %2$s.</string>
+    <string name="zeropage_download">Zebiyr</string>
+    <string name="zeropage_download_msg">Do używaniŏ tyj fōnkcyji trza zainsztalować aplikacyjŏ %1$s. Tyknij ôpcyji ZEBIYR, coby zebrać i zainsztalować %2$s.</string>
     <string name="zeropage_hellobixby_title">Hello Bixby</string>
     <string name="zeropage_sohu_title">Wiadomości Sohu</string>
 </resources>

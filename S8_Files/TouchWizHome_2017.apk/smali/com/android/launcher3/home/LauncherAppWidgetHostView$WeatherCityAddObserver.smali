@@ -23,17 +23,17 @@
     .locals 1
 
     .prologue
-    .line 529
+    .line 530
     iput-object p1, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$WeatherCityAddObserver;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
-    .line 530
+    .line 531
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 531
+    .line 532
     return-void
 .end method
 
@@ -44,12 +44,12 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 535
+    .line 536
     iget-object v0, p0, Lcom/android/launcher3/home/LauncherAppWidgetHostView$WeatherCityAddObserver;->this$0:Lcom/android/launcher3/home/LauncherAppWidgetHostView;
 
     # invokes: Lcom/android/launcher3/home/LauncherAppWidgetHostView;->checkWeatherCount()V
     invoke-static {v0}, Lcom/android/launcher3/home/LauncherAppWidgetHostView;->access$600(Lcom/android/launcher3/home/LauncherAppWidgetHostView;)V
 
-    .line 536
+    .line 537
     return-void
 .end method

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 193
+    .line 194
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$1;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,11 +41,11 @@
     .locals 1
 
     .prologue
-    .line 196
+    .line 197
     iget-object v0, p0, Lcom/android/launcher3/allapps/model/AppsLoader$1;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-virtual {v0}, Lcom/android/launcher3/allapps/model/AppsLoader;->updateDirtyItems()V
 
-    .line 197
+    .line 198
     return-void
 .end method

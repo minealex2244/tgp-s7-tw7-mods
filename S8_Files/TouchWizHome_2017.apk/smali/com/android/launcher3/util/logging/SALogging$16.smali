@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 921
+    .line 1001
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
@@ -50,260 +50,105 @@
 
 # virtual methods
 .method public run()V
-    .locals 7
+    .locals 5
 
     .prologue
-    .line 924
-    const/4 v2, 0x0
+    .line 1004
+    const/4 v0, 0x0
 
-    .line 925
-    .local v2, "eventID":Ljava/lang/String;
-    const/4 v3, 0x0
+    .line 1005
+    .local v0, "eventID":Ljava/lang/String;
+    const/4 v1, 0x0
 
-    .line 926
-    .local v3, "screenID":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    .line 1006
+    .local v1, "screenID":Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->isBixbyRunning()Z
-    invoke-static {v4}, Lcom/android/launcher3/util/logging/SALogging;->access$400(Lcom/android/launcher3/util/logging/SALogging;)Z
+    invoke-static {v2}, Lcom/android/launcher3/util/logging/SALogging;->access$800(Lcom/android/launcher3/util/logging/SALogging;)Z
 
-    move-result v4
+    move-result v2
 
-    if-eqz v4, :cond_1
+    if-eqz v2, :cond_1
 
-    .line 927
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    .line 1007
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    iget-object v5, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
+    iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->getBixbyScreenID(Lcom/android/launcher3/Launcher;)Ljava/lang/String;
-    invoke-static {v4, v5}, Lcom/android/launcher3/util/logging/SALogging;->access$500(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/Launcher;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/android/launcher3/util/logging/SALogging;->access$900(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/Launcher;)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    .line 928
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    .line 1008
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    iget v5, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$option:I
+    iget v3, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$option:I
 
-    iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
+    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->getBixbyEventID(ILcom/android/launcher3/Launcher;)Ljava/lang/String;
-    invoke-static {v4, v5, v6}, Lcom/android/launcher3/util/logging/SALogging;->access$600(Lcom/android/launcher3/util/logging/SALogging;ILcom/android/launcher3/Launcher;)Ljava/lang/String;
+    invoke-static {v2, v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->access$1000(Lcom/android/launcher3/util/logging/SALogging;ILcom/android/launcher3/Launcher;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v0
 
-    .line 933
+    .line 1013
     :goto_0
-    if-eqz v3, :cond_0
+    if-eqz v1, :cond_0
 
-    if-nez v2, :cond_2
+    if-nez v0, :cond_2
 
-    .line 957
+    .line 1021
     :cond_0
     :goto_1
     return-void
 
-    .line 930
+    .line 1010
     :cond_1
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    iget-object v5, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
+    iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->getQuickOptionScreenID(Lcom/android/launcher3/Launcher;)Ljava/lang/String;
-    invoke-static {v4, v5}, Lcom/android/launcher3/util/logging/SALogging;->access$700(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/Launcher;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lcom/android/launcher3/util/logging/SALogging;->access$1100(Lcom/android/launcher3/util/logging/SALogging;Lcom/android/launcher3/Launcher;)Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v1
 
-    .line 931
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    .line 1011
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    iget v5, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$option:I
+    iget v3, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$option:I
 
-    iget-object v6, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
+    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$activity:Lcom/android/launcher3/Launcher;
 
     # invokes: Lcom/android/launcher3/util/logging/SALogging;->getQuickOptionEventID(ILcom/android/launcher3/Launcher;)Ljava/lang/String;
-    invoke-static {v4, v5, v6}, Lcom/android/launcher3/util/logging/SALogging;->access$800(Lcom/android/launcher3/util/logging/SALogging;ILcom/android/launcher3/Launcher;)Ljava/lang/String;
-
-    move-result-object v2
-
-    goto :goto_0
-
-    .line 936
-    :cond_2
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
-
-    # invokes: Lcom/android/launcher3/util/logging/SALogging;->changeIdByMode(Ljava/lang/String;)Ljava/lang/String;
-    invoke-static {v4, v2}, Lcom/android/launcher3/util/logging/SALogging;->access$900(Lcom/android/launcher3/util/logging/SALogging;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->access$1200(Lcom/android/launcher3/util/logging/SALogging;ILcom/android/launcher3/Launcher;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 937
-    .local v0, "changedEventID":Ljava/lang/String;
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$detail:Ljava/lang/String;
+    goto :goto_0
 
-    if-eqz v4, :cond_4
+    .line 1016
+    :cond_2
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$detail:Ljava/lang/String;
 
-    .line 939
-    :try_start_0
-    invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
+    if-eqz v2, :cond_3
 
-    move-result-object v5
+    .line 1017
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    new-instance v4, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
+    iget-object v3, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$detail:Ljava/lang/String;
 
-    invoke-direct {v4}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;-><init>()V
-
-    .line 940
-    invoke-virtual {v4, v3}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setScreenView(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$LogBuilder;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
-    .line 941
-    invoke-virtual {v4, v0}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setEventName(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
-    move-result-object v6
-
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$detail:Ljava/lang/String;
-
-    .line 942
-    invoke-virtual {v4}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_3
-
-    const-string v4, " "
-
-    :goto_2
-    invoke-virtual {v6, v4}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setEventDetail(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
-    move-result-object v4
-
-    .line 943
-    invoke-virtual {v4}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->build()Ljava/util/Map;
-
-    move-result-object v4
-
-    .line 939
-    invoke-virtual {v5, v4}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->sendLog(Ljava/util/Map;)I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v2, v1, v0, v3}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 944
-    :catch_0
-    move-exception v1
-
-    .line 945
-    .local v1, "e":Ljava/lang/Exception;
-    const-string v4, "Launcher.SALogging"
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "insertQuickOptionEventLog : Exception "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
-
-    .line 942
-    .end local v1    # "e":Ljava/lang/Exception;
+    .line 1019
     :cond_3
-    :try_start_1
-    iget-object v4, p0, Lcom/android/launcher3/util/logging/SALogging$16;->val$detail:Ljava/lang/String;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$16;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    goto :goto_2
+    invoke-virtual {v2, v1, v0}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 949
-    :cond_4
-    :try_start_2
-    invoke-static {}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->getInstance()Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;
-
-    move-result-object v5
-
-    new-instance v4, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
-    invoke-direct {v4}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;-><init>()V
-
-    .line 950
-    invoke-virtual {v4, v3}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setScreenView(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$LogBuilder;
-
-    move-result-object v4
-
-    check-cast v4, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
-    .line 951
-    invoke-virtual {v4, v0}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->setEventName(Ljava/lang/String;)Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;
-
-    move-result-object v4
-
-    .line 952
-    invoke-virtual {v4}, Lcom/samsung/context/sdk/samsunganalytics/LogBuilders$EventBuilder;->build()Ljava/util/Map;
-
-    move-result-object v4
-
-    .line 949
-    invoke-virtual {v5, v4}, Lcom/samsung/context/sdk/samsunganalytics/SamsungAnalytics;->sendLog(Ljava/util/Map;)I
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
-
-    goto/16 :goto_1
-
-    .line 953
-    :catch_1
-    move-exception v1
-
-    .line 954
-    .restart local v1    # "e":Ljava/lang/Exception;
-    const-string v4, "Launcher.SALogging"
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v6, "insertQuickOptionEventLog : Exception "
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v4, v5}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto/16 :goto_1
+    goto :goto_1
 .end method

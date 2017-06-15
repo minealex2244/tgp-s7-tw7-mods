@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1103
+    .line 1111
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$7;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$7;->val$updates:Ljava/util/HashSet;
@@ -50,7 +50,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1106
+    .line 1114
     instance-of v0, p1, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v0, :cond_0
@@ -61,20 +61,20 @@
 
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$7;->val$updates:Ljava/util/HashSet;
 
-    .line 1107
+    .line 1115
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1108
+    .line 1116
     check-cast p2, Lcom/android/launcher3/common/view/IconView;
 
     .end local p2    # "v":Landroid/view/View;
     invoke-virtual {p2, v1}, Lcom/android/launcher3/common/view/IconView;->applyState(Z)V
 
-    .line 1110
+    .line 1118
     :cond_0
     return v1
 .end method

@@ -31,7 +31,7 @@
     .param p1, "this$1"    # Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
 
     .prologue
-    .line 1074
+    .line 1078
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$1;->this$1:Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
 
     iput-object p2, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$1;->val$gameHomeManager:Lcom/android/launcher3/gamehome/GameHomeManager;
@@ -49,7 +49,7 @@
     .locals 5
 
     .prologue
-    .line 1077
+    .line 1081
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$1;->val$gameHomeManager:Lcom/android/launcher3/gamehome/GameHomeManager;
 
     invoke-virtual {v2}, Lcom/android/launcher3/gamehome/GameHomeManager;->isGameHomeHidden()Z
@@ -58,12 +58,12 @@
 
     if-eqz v2, :cond_2
 
-    .line 1078
+    .line 1082
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1079
+    .line 1083
     .local v0, "gameApps":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$1;->val$currentItems:Ljava/util/ArrayList;
 
@@ -85,7 +85,7 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1080
+    .line 1084
     .local v1, "iteminfo":Lcom/android/launcher3/common/base/item/ItemInfo;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/item/ItemInfo;->isGameApp()Z
 
@@ -93,12 +93,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 1081
+    .line 1085
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1084
+    .line 1088
     .end local v1    # "iteminfo":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$PackageUpdatedTask$1;->this$1:Lcom/android/launcher3/LauncherModel$PackageUpdatedTask;
@@ -113,14 +113,14 @@
 
     invoke-virtual {v2, v3, v0, v4}, Lcom/android/launcher3/LauncherModel;->updateItemInfo(Ljava/util/ArrayList;Ljava/util/ArrayList;Z)V
 
-    .line 1085
+    .line 1089
     invoke-static {}, Lcom/android/launcher3/gamehome/GameHomeManager;->getInstance()Lcom/android/launcher3/gamehome/GameHomeManager;
 
     move-result-object v2
 
     invoke-virtual {v2}, Lcom/android/launcher3/gamehome/GameHomeManager;->resetGameHomeHiddenValue()V
 
-    .line 1087
+    .line 1091
     .end local v0    # "gameApps":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_2
     return-void

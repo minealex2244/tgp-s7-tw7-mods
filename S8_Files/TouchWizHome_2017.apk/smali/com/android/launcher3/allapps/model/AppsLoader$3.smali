@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 324
+    .line 325
     invoke-direct {p0}, Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer;-><init>()V
 
     return-void
@@ -42,14 +42,14 @@
     .prologue
     const/4 v6, 0x1
 
-    .line 353
+    .line 354
     iget-object v5, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
 
     invoke-interface {v5}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 354
+    .line 355
     .local v0, "info1Title":Ljava/lang/String;
     iget-object v5, p2, Lcom/android/launcher3/common/base/item/ItemInfo;->title:Ljava/lang/CharSequence;
 
@@ -57,7 +57,7 @@
 
     move-result-object v1
 
-    .line 355
+    .line 356
     .local v1, "info2Title":Ljava/lang/String;
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
@@ -67,7 +67,7 @@
 
     move-object v3, v0
 
-    .line 356
+    .line 357
     .local v3, "section1":Ljava/lang/String;
     :goto_0
     invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
@@ -78,7 +78,7 @@
 
     move-object v4, v1
 
-    .line 357
+    .line 358
     .local v4, "section2":Ljava/lang/String;
     :goto_1
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->sCollator:Ljava/text/Collator;
@@ -90,11 +90,11 @@
 
     move-result v2
 
-    .line 358
+    .line 359
     .local v2, "result":I
     if-nez v2, :cond_0
 
-    .line 359
+    .line 360
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->sCollator:Ljava/text/Collator;
     invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$800()Ljava/text/Collator;
 
@@ -104,11 +104,11 @@
 
     move-result v2
 
-    .line 361
+    .line 362
     :cond_0
     return v2
 
-    .line 355
+    .line 356
     .end local v2    # "result":I
     .end local v3    # "section1":Ljava/lang/String;
     .end local v4    # "section2":Ljava/lang/String;
@@ -123,7 +123,7 @@
 
     goto :goto_0
 
-    .line 356
+    .line 357
     .restart local v3    # "section1":Ljava/lang/String;
     :cond_2
     invoke-static {}, Lcom/android/launcher3/util/locale/LocaleUtils;->getInstance()Lcom/android/launcher3/util/locale/LocaleUtils;
@@ -145,23 +145,23 @@
     .param p2, "obj2"    # Ljava/lang/Object;
 
     .prologue
-    .line 329
+    .line 330
     instance-of v3, p1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
     if-eqz v3, :cond_0
 
     move-object v0, p1
 
-    .line 330
+    .line 331
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .local v0, "a":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object v1, p2
 
-    .line 331
+    .line 332
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 336
+    .line 337
     .end local p1    # "obj1":Ljava/lang/Object;
     .end local p2    # "obj2":Ljava/lang/Object;
     .local v1, "b":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -172,21 +172,21 @@
 
     if-eq v3, v4, :cond_2
 
-    .line 337
+    .line 338
     iget v3, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
 
     const/4 v4, 0x2
 
     if-ne v3, v4, :cond_1
 
-    .line 338
+    .line 339
     const/4 v2, -0x1
 
-    .line 349
+    .line 350
     :goto_1
     return v2
 
-    .line 333
+    .line 334
     .end local v0    # "a":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v1    # "b":Lcom/android/launcher3/common/base/item/ItemInfo;
     .restart local p1    # "obj1":Ljava/lang/Object;
@@ -201,7 +201,7 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 334
+    .line 335
     .restart local v0    # "a":Lcom/android/launcher3/common/base/item/ItemInfo;
     check-cast p2, Landroid/view/View;
 
@@ -215,13 +215,13 @@
     .restart local v1    # "b":Lcom/android/launcher3/common/base/item/ItemInfo;
     goto :goto_0
 
-    .line 340
+    .line 341
     :cond_1
     const/4 v2, 0x1
 
     goto :goto_1
 
-    .line 344
+    .line 345
     :cond_2
     invoke-static {}, Lcom/android/launcher3/util/locale/LocaleUtils;->isChinesePinyinSortingOnApps()Z
 
@@ -229,7 +229,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 345
+    .line 346
     invoke-direct {p0, v0, v1}, Lcom/android/launcher3/allapps/model/AppsLoader$3;->compareChineseTitle(Lcom/android/launcher3/common/base/item/ItemInfo;Lcom/android/launcher3/common/base/item/ItemInfo;)I
 
     move-result v2
@@ -237,7 +237,7 @@
     .local v2, "result":I
     goto :goto_1
 
-    .line 347
+    .line 348
     .end local v2    # "result":I
     :cond_3
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->sCollator:Ljava/text/Collator;
@@ -283,19 +283,19 @@
     .end annotation
 
     .prologue
-    .line 367
+    .line 368
     .local p1, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<*>;"
     .local p4, "viewsOfScreen":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/view/View;>;"
     invoke-static {p1, p0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 369
+    .line 370
     const/4 v3, 0x0
 
-    .line 370
+    .line 371
     .local v3, "targetScreen":I
     const/4 v2, 0x0
 
-    .line 373
+    .line 374
     .local v2, "targetCell":I
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -312,7 +312,7 @@
 
     move-result-object v1
 
-    .line 374
+    .line 375
     .local v1, "o":Ljava/lang/Object;
     instance-of v4, v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
@@ -320,21 +320,21 @@
 
     move-object v0, v1
 
-    .line 375
+    .line 376
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 379
+    .line 380
     .local v0, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :goto_1
     if-ne v2, p2, :cond_0
 
-    .line 380
+    .line 381
     add-int/lit8 v3, v3, 0x1
 
-    .line 381
+    .line 382
     const/4 v2, 0x0
 
-    .line 385
+    .line 386
     :cond_0
     if-eqz p4, :cond_3
 
@@ -342,16 +342,16 @@
 
     if-eqz v4, :cond_3
 
-    .line 386
+    .line 387
     if-ne p5, v3, :cond_1
 
-    .line 387
+    .line 388
     check-cast v1, Landroid/view/View;
 
     .end local v1    # "o":Ljava/lang/Object;
     invoke-virtual {p4, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 389
+    .line 390
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
@@ -362,7 +362,7 @@
     :cond_2
     move-object v4, v1
 
-    .line 377
+    .line 378
     check-cast v4, Landroid/view/View;
 
     invoke-virtual {v4}, Landroid/view/View;->getTag()Ljava/lang/Object;
@@ -374,16 +374,16 @@
     .restart local v0    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     goto :goto_1
 
-    .line 391
+    .line 392
     :cond_3
     int-to-long v6, v3
 
     iput-wide v6, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 392
+    .line 393
     iput v2, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->rank:I
 
-    .line 393
+    .line 394
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mCellCountX:I
     invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$900()I
 
@@ -393,7 +393,7 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 394
+    .line 395
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mCellCountX:I
     invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$900()I
 
@@ -403,12 +403,12 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 395
+    .line 396
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 398
+    .line 399
     .end local v0    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v1    # "o":Ljava/lang/Object;
     :cond_4
@@ -419,7 +419,7 @@
     .locals 1
 
     .prologue
-    .line 403
+    .line 404
     const-string v0, "MENU_ALPHA_NORMALIZER"
 
     return-object v0

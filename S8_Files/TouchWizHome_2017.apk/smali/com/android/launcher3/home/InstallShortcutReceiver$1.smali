@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/InstallShortcutReceiver;
 
     .prologue
-    .line 122
+    .line 125
     iput-object p1, p0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->this$0:Lcom/android/launcher3/home/InstallShortcutReceiver;
 
     iput-object p2, p0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$data:Landroid/content/Intent;
@@ -57,7 +57,7 @@
     .locals 23
 
     .prologue
-    .line 126
+    .line 129
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$data:Landroid/content/Intent;
@@ -85,7 +85,7 @@
 
     const-class v20, Landroid/content/Intent$ShortcutIconResource;
 
-    .line 127
+    .line 130
     # invokes: Lcom/android/launcher3/home/InstallShortcutReceiver;->isValidExtraType(Landroid/content/Intent;Ljava/lang/String;Ljava/lang/Class;)Z
     invoke-static/range {v18 .. v20}, Lcom/android/launcher3/home/InstallShortcutReceiver;->access$000(Landroid/content/Intent;Ljava/lang/String;Ljava/lang/Class;)Z
 
@@ -103,7 +103,7 @@
 
     const-class v20, Landroid/graphics/Bitmap;
 
-    .line 129
+    .line 132
     # invokes: Lcom/android/launcher3/home/InstallShortcutReceiver;->isValidExtraType(Landroid/content/Intent;Ljava/lang/String;Ljava/lang/Class;)Z
     invoke-static/range {v18 .. v20}, Lcom/android/launcher3/home/InstallShortcutReceiver;->access$000(Landroid/content/Intent;Ljava/lang/String;Ljava/lang/Class;)Z
 
@@ -111,7 +111,7 @@
 
     if-nez v18, :cond_2
 
-    .line 130
+    .line 133
     :cond_0
     const-string v18, "InstallShortcutReceiver"
 
@@ -119,12 +119,12 @@
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 268
+    .line 271
     :cond_1
     :goto_0
     return-void
 
-    .line 134
+    .line 137
     :cond_2
     new-instance v8, Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;
 
@@ -150,7 +150,7 @@
 
     invoke-direct {v8, v0, v1, v2, v3}, Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;-><init>(Landroid/content/Intent;Landroid/content/Context;J)V
 
-    .line 135
+    .line 138
     .local v8, "info":Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;
     iget-object v0, v8, Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;->launchIntent:Landroid/content/Intent;
 
@@ -164,7 +164,7 @@
 
     if-nez v18, :cond_4
 
-    .line 136
+    .line 139
     :cond_3
     const-string v18, "InstallShortcutReceiver"
 
@@ -174,7 +174,7 @@
 
     goto :goto_0
 
-    .line 141
+    .line 144
     :cond_4
     move-object/from16 v0, p0
 
@@ -207,7 +207,7 @@
 
     if-eqz v18, :cond_5
 
-    .line 142
+    .line 145
     const-string v18, "InstallShortcutReceiver"
 
     const-string v19, "updateContactShortcut true"
@@ -216,7 +216,7 @@
 
     goto :goto_0
 
-    .line 146
+    .line 149
     :cond_5
     invoke-virtual {v8}, Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;->isLuncherActivity()Z
 
@@ -224,7 +224,7 @@
 
     if-nez v18, :cond_6
 
-    .line 148
+    .line 151
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
@@ -243,7 +243,7 @@
 
     if-nez v18, :cond_6
 
-    .line 151
+    .line 154
     const-string v18, "InstallShortcutReceiver"
 
     new-instance v19, Ljava/lang/StringBuilder;
@@ -278,7 +278,7 @@
 
     goto/16 :goto_0
 
-    .line 158
+    .line 161
     :cond_6
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
@@ -298,7 +298,7 @@
 
     if-eqz v18, :cond_11
 
-    .line 159
+    .line 162
     const-string v18, "android.intent.action.MAIN"
 
     iget-object v0, v8, Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;->launchIntent:Landroid/content/Intent;
@@ -315,14 +315,14 @@
 
     if-eqz v18, :cond_10
 
-    .line 160
+    .line 163
     const/4 v12, 0x0
 
-    .line 161
+    .line 164
     .local v12, "isKnoxShortcut":Z
     iget-object v9, v8, Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;->launchIntent:Landroid/content/Intent;
 
-    .line 162
+    .line 165
     .local v9, "intent":Landroid/content/Intent;
     invoke-virtual {v9}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -332,7 +332,7 @@
 
     const-string v18, "com.samsung.knox.rcp.components"
 
-    .line 163
+    .line 166
     invoke-virtual {v9}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v19
@@ -347,7 +347,7 @@
 
     if-eqz v18, :cond_7
 
-    .line 165
+    .line 168
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$data:Landroid/content/Intent;
@@ -360,10 +360,10 @@
 
     invoke-virtual/range {v18 .. v20}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 166
+    .line 169
     const/4 v12, 0x1
 
-    .line 169
+    .line 172
     :cond_7
     if-nez v12, :cond_a
 
@@ -373,7 +373,7 @@
 
     if-eqz v18, :cond_a
 
-    .line 170
+    .line 173
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->this$0:Lcom/android/launcher3/home/InstallShortcutReceiver;
@@ -397,14 +397,14 @@
 
     if-eqz v18, :cond_9
 
-    .line 171
+    .line 174
     invoke-static {v9}, Lcom/android/launcher3/Utilities;->isLauncherAppTarget(Landroid/content/Intent;)Z
 
     move-result v18
 
     if-eqz v18, :cond_8
 
-    .line 172
+    .line 175
     const-string v18, "InstallShortcutReceiver"
 
     const-string v19, "This shortcut is same with application!"
@@ -413,7 +413,7 @@
 
     goto/16 :goto_0
 
-    .line 174
+    .line 177
     :cond_8
     move-object/from16 v0, p0
 
@@ -438,7 +438,7 @@
 
     if-eqz v18, :cond_a
 
-    .line 175
+    .line 178
     const-string v18, "InstallShortcutReceiver"
 
     new-instance v19, Ljava/lang/StringBuilder;
@@ -473,7 +473,7 @@
 
     goto/16 :goto_0
 
-    .line 178
+    .line 181
     :cond_9
     const-string v18, "com.samsung.android.themestore"
 
@@ -491,7 +491,7 @@
 
     if-nez v18, :cond_a
 
-    .line 179
+    .line 182
     const-string v18, "InstallShortcutReceiver"
 
     new-instance v19, Ljava/lang/StringBuilder;
@@ -524,14 +524,14 @@
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 180
+    .line 183
     const-string v18, "android.intent.action.VIEW"
 
     move-object/from16 v0, v18
 
     invoke-virtual {v9, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 192
+    .line 195
     .end local v9    # "intent":Landroid/content/Intent;
     .end local v12    # "isKnoxShortcut":Z
     :cond_a
@@ -540,7 +540,7 @@
 
     move-result-object v8
 
-    .line 193
+    .line 196
     iget-object v0, v8, Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;->activityInfo:Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
 
     move-object/from16 v18, v0
@@ -557,7 +557,7 @@
 
     if-nez v18, :cond_b
 
-    .line 194
+    .line 197
     iget-object v0, v8, Lcom/android/launcher3/home/InstallShortcutReceiver$PendingInstallShortcutInfo;->launchIntent:Landroid/content/Intent;
 
     move-object/from16 v18, v0
@@ -566,19 +566,19 @@
 
     invoke-virtual/range {v18 .. v19}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 196
+    .line 199
     :cond_b
     const/16 v16, 0x0
 
-    .line 197
+    .line 200
     .local v16, "showDuplicateToast":Z
     const/4 v4, 0x1
 
-    .line 198
+    .line 201
     .local v4, "addQueue":Z
     const/16 v17, 0x0
 
-    .line 199
+    .line 202
     .local v17, "skipToastPopup":Z
     move-object/from16 v0, p0
 
@@ -602,7 +602,7 @@
 
     if-eqz v18, :cond_13
 
-    .line 200
+    .line 203
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->this$0:Lcom/android/launcher3/home/InstallShortcutReceiver;
@@ -626,7 +626,7 @@
 
     if-eqz v18, :cond_12
 
-    .line 201
+    .line 204
     const-string v18, "InstallShortcutReceiver"
 
     new-instance v19, Ljava/lang/StringBuilder;
@@ -659,10 +659,10 @@
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 202
+    .line 205
     const/4 v4, 0x0
 
-    .line 212
+    .line 215
     :cond_c
     :goto_1
     invoke-static {}, Lcom/android/launcher3/Utilities;->isKnoxMode()Z
@@ -671,7 +671,7 @@
 
     if-nez v18, :cond_15
 
-    .line 213
+    .line 216
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
@@ -682,23 +682,23 @@
 
     move-result-object v14
 
-    .line 214
+    .line 217
     .local v14, "pm":Landroid/content/pm/PackageManager;
     new-instance v11, Ljava/util/ArrayList;
 
     invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
 
-    .line 215
+    .line 218
     .local v11, "intentList":Ljava/util/List;, "Ljava/util/List<Landroid/content/IntentFilter;>;"
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 217
+    .line 220
     .local v5, "componentList":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
     if-eqz v14, :cond_d
 
-    .line 218
+    .line 221
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
@@ -713,7 +713,7 @@
 
     invoke-virtual {v14, v11, v5, v0}, Landroid/content/pm/PackageManager;->getPreferredActivities(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I
 
-    .line 221
+    .line 224
     :cond_d
     invoke-interface {v5}, Ljava/util/List;->size()I
 
@@ -721,7 +721,7 @@
 
     if-gtz v18, :cond_15
 
-    .line 222
+    .line 225
     new-instance v10, Landroid/content/Intent;
 
     const-string v18, "android.intent.action.MAIN"
@@ -730,7 +730,7 @@
 
     invoke-direct {v10, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 223
+    .line 226
     .local v10, "intentHome":Landroid/content/Intent;
     const-string v18, "android.intent.category.HOME"
 
@@ -738,7 +738,7 @@
 
     invoke-virtual {v10, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 224
+    .line 227
     const/16 v18, 0x0
 
     move/from16 v0, v18
@@ -747,20 +747,20 @@
 
     move-result-object v7
 
-    .line 226
+    .line 229
     .local v7, "homeAppList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
     const/4 v6, 0x0
 
-    .line 227
+    .line 230
     .local v6, "homeAppCount":I
     if-eqz v7, :cond_14
 
-    .line 228
+    .line 231
     invoke-interface {v7}, Ljava/util/List;->size()I
 
     move-result v6
 
-    .line 230
+    .line 233
     invoke-interface {v7}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v18
@@ -779,7 +779,7 @@
 
     check-cast v15, Landroid/content/pm/ResolveInfo;
 
-    .line 231
+    .line 234
     .local v15, "ri":Landroid/content/pm/ResolveInfo;
     iget-object v0, v15, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -799,7 +799,7 @@
 
     move-object/from16 v20, v0
 
-    .line 232
+    .line 235
     invoke-virtual/range {v19 .. v20}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v19
@@ -818,20 +818,20 @@
 
     move-object/from16 v20, v0
 
-    .line 233
+    .line 236
     invoke-virtual/range {v19 .. v20}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v19
 
     if-eqz v19, :cond_e
 
-    .line 234
+    .line 237
     :cond_f
     add-int/lit8 v6, v6, -0x1
 
     goto :goto_2
 
-    .line 183
+    .line 186
     .end local v4    # "addQueue":Z
     .end local v5    # "componentList":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
     .end local v6    # "homeAppCount":I
@@ -870,7 +870,7 @@
 
     if-eqz v18, :cond_a
 
-    .line 184
+    .line 187
     const-string v18, "InstallShortcutReceiver"
 
     new-instance v19, Ljava/lang/StringBuilder;
@@ -905,7 +905,7 @@
 
     goto/16 :goto_0
 
-    .line 187
+    .line 190
     :cond_11
     move-object/from16 v0, p0
 
@@ -929,7 +929,7 @@
 
     if-eqz v18, :cond_a
 
-    .line 188
+    .line 191
     const-string v18, "InstallShortcutReceiver"
 
     const-string v19, "This shortcut is same with application!!"
@@ -938,7 +938,7 @@
 
     goto/16 :goto_0
 
-    .line 204
+    .line 207
     .restart local v4    # "addQueue":Z
     .restart local v16    # "showDuplicateToast":Z
     .restart local v17    # "skipToastPopup":Z
@@ -975,12 +975,12 @@
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 205
+    .line 208
     const/16 v16, 0x1
 
     goto/16 :goto_1
 
-    .line 207
+    .line 210
     :cond_13
     move-object/from16 v0, p0
 
@@ -1005,7 +1005,7 @@
 
     if-eqz v18, :cond_c
 
-    .line 208
+    .line 211
     const-string v18, "InstallShortcutReceiver"
 
     new-instance v19, Ljava/lang/StringBuilder;
@@ -1038,12 +1038,12 @@
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 209
+    .line 212
     const/16 v16, 0x1
 
     goto/16 :goto_1
 
-    .line 239
+    .line 242
     .restart local v5    # "componentList":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
     .restart local v6    # "homeAppCount":I
     .restart local v7    # "homeAppList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
@@ -1075,17 +1075,17 @@
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 240
+    .line 243
     const/16 v18, 0x1
 
     move/from16 v0, v18
 
     if-le v6, v0, :cond_15
 
-    .line 241
+    .line 244
     const/16 v17, 0x1
 
-    .line 246
+    .line 249
     .end local v5    # "componentList":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
     .end local v6    # "homeAppCount":I
     .end local v7    # "homeAppList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
@@ -1095,7 +1095,7 @@
     :cond_15
     if-eqz v16, :cond_17
 
-    .line 247
+    .line 250
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$app:Lcom/android/launcher3/LauncherAppState;
@@ -1122,7 +1122,7 @@
 
     move-object/from16 v18, v0
 
-    .line 248
+    .line 251
     invoke-static {}, Lcom/samsung/android/desktopmode/SemDesktopModeManager;->isDesktopMode()Z
 
     move-result v18
@@ -1132,7 +1132,7 @@
     :cond_16
     if-nez v17, :cond_1
 
-    .line 249
+    .line 252
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
@@ -1161,7 +1161,7 @@
 
     move-result-object v13
 
-    .line 250
+    .line 253
     .local v13, "msg":Ljava/lang/String;
     new-instance v18, Landroid/view/ContextThemeWrapper;
 
@@ -1185,17 +1185,17 @@
 
     move-result-object v18
 
-    .line 251
+    .line 254
     invoke-virtual/range {v18 .. v18}, Landroid/widget/Toast;->show()V
 
     goto/16 :goto_0
 
-    .line 256
+    .line 259
     .end local v13    # "msg":Ljava/lang/String;
     :cond_17
     if-eqz v4, :cond_18
 
-    .line 257
+    .line 260
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
@@ -1214,7 +1214,7 @@
 
     invoke-static {v8, v0, v1}, Lcom/android/launcher3/home/ExternalRequestQueue;->queueExternalRequestInfo(Lcom/android/launcher3/home/ExternalRequestInfo;Landroid/content/Context;Lcom/android/launcher3/LauncherAppState;)V
 
-    .line 260
+    .line 263
     :cond_18
     move-object/from16 v0, p0
 
@@ -1239,7 +1239,7 @@
     :cond_19
     if-nez v17, :cond_1
 
-    .line 264
+    .line 267
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/InstallShortcutReceiver$1;->val$context:Landroid/content/Context;
@@ -1268,7 +1268,7 @@
 
     move-result-object v13
 
-    .line 265
+    .line 268
     .restart local v13    # "msg":Ljava/lang/String;
     new-instance v18, Landroid/view/ContextThemeWrapper;
 
@@ -1292,10 +1292,10 @@
 
     move-result-object v18
 
-    .line 266
+    .line 269
     invoke-virtual/range {v18 .. v18}, Landroid/widget/Toast;->show()V
 
-    .line 267
+    .line 270
     const-string v18, "InstallShortcutReceiver"
 
     move-object/from16 v0, v18

@@ -28,7 +28,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/common/view/IconView;
 
     .prologue
-    .line 968
+    .line 979
     iput-object p1, p0, Lcom/android/launcher3/common/view/IconView$2;->this$0:Lcom/android/launcher3/common/view/IconView;
 
     iput-boolean p2, p0, Lcom/android/launcher3/common/view/IconView$2;->val$visible:Z
@@ -47,19 +47,19 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 978
+    .line 989
     iget-boolean v0, p0, Lcom/android/launcher3/common/view/IconView$2;->val$visible:Z
 
     if-nez v0, :cond_0
 
-    .line 979
+    .line 990
     iget-object v0, p0, Lcom/android/launcher3/common/view/IconView$2;->val$view:Landroid/view/View;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 981
+    .line 992
     :cond_0
     return-void
 .end method
@@ -69,19 +69,19 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 971
+    .line 982
     iget-boolean v0, p0, Lcom/android/launcher3/common/view/IconView$2;->val$visible:Z
 
     if-eqz v0, :cond_0
 
-    .line 972
+    .line 983
     iget-object v0, p0, Lcom/android/launcher3/common/view/IconView$2;->val$view:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 974
+    .line 985
     :cond_0
     return-void
 .end method

@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 693
+    .line 689
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreHomeFolderParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeDefaultLayoutParser$DefaultHomeFolderParser;-><init>(Lcom/android/launcher3/home/HomeDefaultLayoutParser;)V
@@ -37,7 +37,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 693
+    .line 689
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreHomeFolderParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -57,7 +57,7 @@
     .end annotation
 
     .prologue
-    .line 697
+    .line 693
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreHomeFolderParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
@@ -77,7 +77,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 698
+    .line 694
     invoke-super {p0, p1, p2}, Lcom/android/launcher3/home/HomeDefaultLayoutParser$DefaultHomeFolderParser;->parseAndAdd(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)J
 
     move-result-wide v0

@@ -14,7 +14,7 @@
     <string name="appsPicker_add_button">ДОБАВЯНЕ</string>
     <string name="appsPicker_apps">Приложения</string>
     <string name="appsPicker_search_result_found">%d намерен</string>
-    <string name="apps_button_hide">Бутон скриване приложения</string>
+    <string name="apps_button_hide">Скриване бутон приложения</string>
     <string name="apps_button_label">Прилож.</string>
     <string name="apps_button_setting_guide_text">Когато бутонът за приложения е включен, елементът отдясно ще се премести от текущата позиция на началния екран.</string>
     <string name="apps_button_show">Показ. бутон приложения</string>

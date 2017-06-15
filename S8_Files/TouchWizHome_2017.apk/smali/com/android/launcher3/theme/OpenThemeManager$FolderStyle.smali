@@ -91,21 +91,21 @@
     .prologue
     const/4 v1, 0x5
 
-    .line 732
+    .line 738
     new-array v0, v1, [I
 
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mDefaultFolderTitleColor:[I
 
-    .line 733
+    .line 739
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mDefaultCloseFolderColor:[I
 
-    .line 735
+    .line 741
     new-array v0, v1, [I
 
     fill-array-data v0, :array_2
@@ -114,7 +114,7 @@
 
     return-void
 
-    .line 732
+    .line 738
     nop
 
     :array_0
@@ -126,7 +126,7 @@
         -0x5829c9
     .end array-data
 
-    .line 733
+    .line 739
     :array_1
     .array-data 4
         -0x70813
@@ -136,7 +136,7 @@
         -0xc1e73
     .end array-data
 
-    .line 735
+    .line 741
     :array_2
     .array-data 4
         0x7f02009c
@@ -158,39 +158,39 @@
 
     const/4 v1, 0x0
 
-    .line 853
+    .line 859
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 739
+    .line 745
     iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
-    .line 740
+    .line 746
     iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mOpenFolderType:I
 
-    .line 741
+    .line 747
     const v1, 0x1ffffff
 
     iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFirstCloseFolderIconColor:I
 
-    .line 849
+    .line 855
     new-array v1, v3, [Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
     iput-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
-    .line 850
+    .line 856
     iput-object v4, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mThemeManager:Lcom/android/launcher3/theme/OpenThemeManager;
 
-    .line 855
+    .line 861
     iput-object p1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mThemeManager:Lcom/android/launcher3/theme/OpenThemeManager;
 
-    .line 857
+    .line 863
     const/4 v0, 0x0
 
     .local v0, "i":I
     :goto_0
     if-ge v0, v3, :cond_0
 
-    .line 858
+    .line 864
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
     new-instance v2, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
@@ -199,12 +199,12 @@
 
     aput-object v2, v1, v0
 
-    .line 857
+    .line 863
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 860
+    .line 866
     :cond_0
     return-void
 .end method
@@ -214,7 +214,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;
 
     .prologue
-    .line 702
+    .line 708
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mThemeManager:Lcom/android/launcher3/theme/OpenThemeManager;
 
     return-object v0
@@ -224,7 +224,7 @@
     .locals 1
 
     .prologue
-    .line 702
+    .line 708
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderShapeRes:[I
 
     return-object v0
@@ -236,7 +236,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 863
+    .line 869
     const/4 v6, 0x0
 
     .local v6, "i":I
@@ -245,7 +245,7 @@
 
     if-ge v6, v0, :cond_0
 
-    .line 864
+    .line 870
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
     aget-object v0, v0, v6
@@ -265,16 +265,16 @@
     # invokes: Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->set(IIIII)V
     invoke-static/range {v0 .. v5}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->access$700(Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;IIIII)V
 
-    .line 863
+    .line 869
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
-    .line 867
+    .line 873
     :cond_0
     iput v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
-    .line 868
+    .line 874
     return-void
 .end method
 
@@ -289,21 +289,21 @@
     .prologue
     const v9, 0x1ffffff
 
-    .line 954
+    .line 960
     const/4 v8, 0x0
 
-    .line 955
+    .line 961
     .local v8, "usefolderColorTitle":Z
     if-ne p4, v9, :cond_0
 
-    .line 956
+    .line 962
     const/4 v8, 0x1
 
-    .line 958
+    .line 964
     :cond_0
     const v6, 0x1ffffff
 
-    .line 959
+    .line 965
     .local v6, "color":I
     const/4 v7, 0x0
 
@@ -313,50 +313,50 @@
 
     if-ge v7, v0, :cond_7
 
-    .line 961
+    .line 967
     aget v0, p2, v7
 
     if-ne v0, v9, :cond_1
 
-    .line 962
+    .line 968
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mDefaultCloseFolderColor:[I
 
     aget v0, v0, v7
 
     aput v0, p2, v7
 
-    .line 965
+    .line 971
     :cond_1
     if-eqz v8, :cond_2
 
-    .line 966
+    .line 972
     if-nez v7, :cond_5
 
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFirstCloseFolderIconColor:I
 
     if-ne v0, v9, :cond_5
 
-    .line 967
+    .line 973
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mDefaultFolderTitleColor:[I
 
     aget p4, v0, v7
 
-    .line 972
+    .line 978
     :cond_2
     :goto_1
     if-ne p5, v9, :cond_3
 
-    .line 973
+    .line 979
     const/high16 p5, -0x1000000
 
-    .line 976
+    .line 982
     :cond_3
     if-ne p3, v9, :cond_4
 
-    .line 977
+    .line 983
     const p3, -0x50506
 
-    .line 980
+    .line 986
     :cond_4
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
@@ -375,44 +375,44 @@
     # invokes: Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->set(IIIII)V
     invoke-static/range {v0 .. v5}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->access$700(Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;IIIII)V
 
-    .line 981
+    .line 987
     aget v0, p2, v7
 
     if-eq v6, v0, :cond_6
 
     if-lez v7, :cond_6
 
-    .line 982
+    .line 988
     const v6, 0x1ffffff
 
-    .line 959
+    .line 965
     :goto_2
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_0
 
-    .line 969
+    .line 975
     :cond_5
     aget p4, p2, v7
 
     goto :goto_1
 
-    .line 984
+    .line 990
     :cond_6
     aget v6, p2, v7
 
     goto :goto_2
 
-    .line 988
+    .line 994
     :cond_7
     if-eq v6, v9, :cond_8
 
-    .line 989
+    .line 995
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
-    .line 991
+    .line 997
     :cond_8
     return-void
 .end method
@@ -428,10 +428,10 @@
     .prologue
     const v8, 0x1ffffff
 
-    .line 1026
+    .line 1032
     const v6, 0x1ffffff
 
-    .line 1027
+    .line 1033
     .local v6, "color":I
     const/4 v7, 0x0
 
@@ -441,35 +441,35 @@
 
     if-ge v7, v0, :cond_4
 
-    .line 1029
+    .line 1035
     aget v0, p2, v7
 
     if-ne v0, v8, :cond_0
 
-    .line 1030
+    .line 1036
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mDefaultCloseFolderColor:[I
 
     aget v0, v0, v7
 
     aput v0, p2, v7
 
-    .line 1033
+    .line 1039
     :cond_0
     if-ne p4, v8, :cond_1
 
-    .line 1034
+    .line 1040
     const/4 v0, 0x0
 
     aget p4, p2, v0
 
-    .line 1037
+    .line 1043
     :cond_1
     if-ne p5, v8, :cond_2
 
-    .line 1038
+    .line 1044
     const/high16 p5, -0x1000000
 
-    .line 1041
+    .line 1047
     :cond_2
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
@@ -488,38 +488,38 @@
     # invokes: Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->set(IILandroid/graphics/drawable/Drawable;II)V
     invoke-static/range {v0 .. v5}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->access$1000(Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;IILandroid/graphics/drawable/Drawable;II)V
 
-    .line 1042
+    .line 1048
     aget v0, p2, v7
 
     if-eq v6, v0, :cond_3
 
     if-lez v7, :cond_3
 
-    .line 1043
+    .line 1049
     const v6, 0x1ffffff
 
-    .line 1027
+    .line 1033
     :goto_1
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_0
 
-    .line 1045
+    .line 1051
     :cond_3
     aget v6, p2, v7
 
     goto :goto_1
 
-    .line 1049
+    .line 1055
     :cond_4
     if-eq v6, v8, :cond_5
 
-    .line 1050
+    .line 1056
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
-    .line 1052
+    .line 1058
     :cond_5
     return-void
 .end method
@@ -536,29 +536,29 @@
 
     const v1, 0x1ffffff
 
-    .line 1008
+    .line 1014
     if-ne p3, v1, :cond_0
 
-    .line 1010
+    .line 1016
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mDefaultFolderTitleColor:[I
 
     aget p3, v0, v2
 
-    .line 1013
+    .line 1019
     :cond_0
     if-ne p4, v1, :cond_1
 
-    .line 1014
+    .line 1020
     const/high16 p4, -0x1000000
 
-    .line 1017
+    .line 1023
     :cond_1
     if-ne p2, v1, :cond_2
 
-    .line 1018
+    .line 1024
     const p4, -0x50506
 
-    .line 1021
+    .line 1027
     :cond_2
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
@@ -567,7 +567,7 @@
     # invokes: Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->set(Landroid/graphics/drawable/Drawable;III)V
     invoke-static {v0, p1, p2, p3, p4}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->access$900(Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;Landroid/graphics/drawable/Drawable;III)V
 
-    .line 1022
+    .line 1028
     return-void
 .end method
 
@@ -583,22 +583,22 @@
 
     const/4 v1, 0x0
 
-    .line 995
+    .line 1001
     if-ne p3, v2, :cond_0
 
-    .line 997
+    .line 1003
     sget-object v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mDefaultFolderTitleColor:[I
 
     aget p3, v0, v1
 
-    .line 1000
+    .line 1006
     :cond_0
     if-ne p4, v2, :cond_1
 
-    .line 1001
+    .line 1007
     const/high16 p4, -0x1000000
 
-    .line 1003
+    .line 1009
     :cond_1
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
@@ -607,7 +607,7 @@
     # invokes: Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->set(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;II)V
     invoke-static {v0, p1, p2, p3, p4}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;->access$800(Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;II)V
 
-    .line 1004
+    .line 1010
     return-void
 .end method
 
@@ -622,15 +622,15 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 1055
+    .line 1061
     iget v2, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
     if-ne v2, v3, :cond_1
 
-    .line 1056
+    .line 1062
     const/4 p1, 0x0
 
-    .line 1062
+    .line 1068
     :cond_0
     :goto_0
     iget-object v2, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
@@ -642,17 +642,17 @@
 
     move-result-object v0
 
-    .line 1064
+    .line 1070
     .local v0, "foldeIcon":Landroid/graphics/Bitmap;
     invoke-static {v0, p2, p3, v3}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    .line 1066
+    .line 1072
     .local v1, "resizedfoldeIcon":Landroid/graphics/Bitmap;
     return-object v1
 
-    .line 1058
+    .line 1064
     .end local v0    # "foldeIcon":Landroid/graphics/Bitmap;
     .end local v1    # "resizedfoldeIcon":Landroid/graphics/Bitmap;
     :cond_1
@@ -662,7 +662,7 @@
 
     if-lt p1, v2, :cond_0
 
-    .line 1059
+    .line 1065
     :cond_2
     const/4 p1, 0x0
 
@@ -674,17 +674,17 @@
     .param p1, "colorIndex"    # I
 
     .prologue
-    .line 1113
+    .line 1119
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_1
 
-    .line 1114
+    .line 1120
     const/4 p1, 0x0
 
-    .line 1120
+    .line 1126
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
@@ -698,7 +698,7 @@
 
     return v0
 
-    .line 1116
+    .line 1122
     :cond_1
     if-ltz p1, :cond_2
 
@@ -706,7 +706,7 @@
 
     if-lt p1, v0, :cond_0
 
-    .line 1117
+    .line 1123
     :cond_2
     const/4 p1, 0x0
 
@@ -718,17 +718,17 @@
     .param p1, "colorIndex"    # I
 
     .prologue
-    .line 1070
+    .line 1076
     iget v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_1
 
-    .line 1071
+    .line 1077
     const/4 p1, 0x0
 
-    .line 1077
+    .line 1083
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
@@ -740,11 +740,11 @@
 
     move-result-object v0
 
-    .line 1078
+    .line 1084
     .local v0, "foldeIcon":Landroid/graphics/Bitmap;
     return-object v0
 
-    .line 1073
+    .line 1079
     .end local v0    # "foldeIcon":Landroid/graphics/Bitmap;
     :cond_1
     if-ltz p1, :cond_2
@@ -753,7 +753,7 @@
 
     if-lt p1, v1, :cond_0
 
-    .line 1074
+    .line 1080
     :cond_2
     const/4 p1, 0x0
 
@@ -764,7 +764,7 @@
     .locals 1
 
     .prologue
-    .line 1132
+    .line 1138
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFirstCloseFolderIconColor:I
 
     return v0
@@ -774,7 +774,7 @@
     .locals 1
 
     .prologue
-    .line 1124
+    .line 1130
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
     return v0
@@ -785,7 +785,7 @@
     .param p1, "colorIndex"    # I
 
     .prologue
-    .line 1082
+    .line 1088
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
 
     const/4 v2, 0x0
@@ -797,7 +797,7 @@
 
     move-result-object v0
 
-    .line 1084
+    .line 1090
     .local v0, "foldeIcon":Landroid/graphics/drawable/Drawable;
     return-object v0
 .end method
@@ -806,7 +806,7 @@
     .locals 1
 
     .prologue
-    .line 1128
+    .line 1134
     iget v0, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mOpenFolderType:I
 
     return v0
@@ -817,17 +817,17 @@
     .param p1, "colorIndex"    # I
 
     .prologue
-    .line 1101
+    .line 1107
     iget v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_1
 
-    .line 1102
+    .line 1108
     const/4 p1, 0x0
 
-    .line 1108
+    .line 1114
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
@@ -839,11 +839,11 @@
 
     move-result v0
 
-    .line 1109
+    .line 1115
     .local v0, "textColor":I
     return v0
 
-    .line 1104
+    .line 1110
     .end local v0    # "textColor":I
     :cond_1
     if-ltz p1, :cond_2
@@ -852,7 +852,7 @@
 
     if-lt p1, v1, :cond_0
 
-    .line 1105
+    .line 1111
     :cond_2
     const/4 p1, 0x0
 
@@ -864,17 +864,17 @@
     .param p1, "colorIndex"    # I
 
     .prologue
-    .line 1088
+    .line 1094
     iget v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_1
 
-    .line 1089
+    .line 1095
     const/4 p1, 0x0
 
-    .line 1095
+    .line 1101
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderAttr:[Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle$FolderAttr;
@@ -886,11 +886,11 @@
 
     move-result v0
 
-    .line 1097
+    .line 1103
     .local v0, "titleColor":I
     return v0
 
-    .line 1091
+    .line 1097
     .end local v0    # "titleColor":I
     :cond_1
     if-ltz p1, :cond_2
@@ -899,7 +899,7 @@
 
     if-lt p1, v1, :cond_0
 
-    .line 1092
+    .line 1098
     :cond_2
     const/4 p1, 0x0
 
@@ -910,15 +910,15 @@
     .locals 18
 
     .prologue
-    .line 871
+    .line 877
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->init()V
 
-    .line 873
+    .line 879
     const/4 v2, 0x5
 
     new-array v4, v2, [I
 
-    .line 883
+    .line 889
     .local v4, "folderColor":[I
     move-object/from16 v0, p0
 
@@ -938,7 +938,7 @@
 
     iput v2, v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
 
-    .line 884
+    .line 890
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mThemeManager:Lcom/android/launcher3/theme/OpenThemeManager;
@@ -953,7 +953,7 @@
 
     move-result v6
 
-    .line 885
+    .line 891
     .local v6, "openFolderTitleColor":I
     move-object/from16 v0, p0
 
@@ -969,7 +969,7 @@
 
     move-result v7
 
-    .line 886
+    .line 892
     .local v7, "openFolderTextColor":I
     move-object/from16 v0, p0
 
@@ -985,7 +985,7 @@
 
     move-result-object v5
 
-    .line 887
+    .line 893
     .local v5, "openFolderBg":Landroid/graphics/drawable/Drawable;
     move-object/from16 v0, p0
 
@@ -1001,7 +1001,7 @@
 
     move-result v11
 
-    .line 888
+    .line 894
     .local v11, "openFolderBgColor":I
     move-object/from16 v0, p0
 
@@ -1017,7 +1017,7 @@
 
     move-result v17
 
-    .line 889
+    .line 895
     .local v17, "openFolderType":I
     move-object/from16 v0, p0
 
@@ -1033,13 +1033,13 @@
 
     move-result-object v14
 
-    .line 891
+    .line 897
     .local v14, "folderImage":Landroid/graphics/drawable/Drawable;
     instance-of v2, v5, Landroid/graphics/drawable/NinePatchDrawable;
 
     if-eqz v2, :cond_0
 
-    .line 892
+    .line 898
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mThemeManager:Lcom/android/launcher3/theme/OpenThemeManager;
@@ -1054,14 +1054,14 @@
 
     move-result-object v16
 
-    .line 893
+    .line 899
     .local v16, "openBg":Landroid/graphics/Bitmap;
     if-eqz v16, :cond_0
 
-    .line 894
+    .line 900
     invoke-virtual/range {v16 .. v16}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 898
+    .line 904
     .end local v16    # "openBg":Landroid/graphics/Bitmap;
     :cond_0
     const/4 v2, -0x1
@@ -1070,19 +1070,19 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 899
+    .line 905
     const/16 v17, 0x0
 
-    .line 901
+    .line 907
     :cond_1
     const v2, 0x1ffffff
 
     if-ne v6, v2, :cond_2
 
-    .line 902
+    .line 908
     const v6, -0x414142
 
-    .line 904
+    .line 910
     :cond_2
     move/from16 v0, v17
 
@@ -1090,7 +1090,7 @@
 
     iput v0, v1, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mOpenFolderType:I
 
-    .line 906
+    .line 912
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFolderType:I
@@ -1101,7 +1101,7 @@
 
     if-eqz v14, :cond_6
 
-    .line 907
+    .line 913
     const/4 v2, 0x2
 
     move/from16 v0, v17
@@ -1110,16 +1110,16 @@
 
     if-eqz v5, :cond_3
 
-    .line 908
+    .line 914
     move-object/from16 v0, p0
 
     invoke-direct {v0, v14, v5, v6, v7}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->setFolder(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;II)V
 
-    .line 950
+    .line 956
     :goto_0
     return-void
 
-    .line 910
+    .line 916
     :cond_3
     if-eqz v17, :cond_4
 
@@ -1135,20 +1135,20 @@
 
     if-nez v5, :cond_5
 
-    .line 913
+    .line 919
     :cond_4
     const v11, -0x50506
 
-    .line 914
+    .line 920
     if-nez v17, :cond_5
 
-    .line 915
+    .line 921
     const v6, 0x1ffffff
 
-    .line 916
+    .line 922
     const/high16 v7, -0x1000000
 
-    .line 920
+    .line 926
     :cond_5
     move-object/from16 v0, p0
 
@@ -1156,7 +1156,7 @@
 
     goto :goto_0
 
-    .line 923
+    .line 929
     :cond_6
     move-object/from16 v0, p0
 
@@ -1172,7 +1172,7 @@
 
     move-result v3
 
-    .line 924
+    .line 930
     .local v3, "closeFolderShape":I
     const/4 v2, -0x1
 
@@ -1188,11 +1188,11 @@
 
     if-nez v14, :cond_8
 
-    .line 926
+    .line 932
     :cond_7
     const/4 v3, 0x0
 
-    .line 929
+    .line 935
     :cond_8
     const/4 v15, 0x0
 
@@ -1202,7 +1202,7 @@
 
     if-ge v15, v2, :cond_9
 
-    .line 930
+    .line 936
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mThemeManager:Lcom/android/launcher3/theme/OpenThemeManager;
@@ -1221,12 +1221,12 @@
 
     aput v2, v4, v15
 
-    .line 929
+    .line 935
     add-int/lit8 v15, v15, 0x1
 
     goto :goto_1
 
-    .line 933
+    .line 939
     :cond_9
     move-object/from16 v0, p0
 
@@ -1246,7 +1246,7 @@
 
     iput v2, v0, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->mFirstCloseFolderIconColor:I
 
-    .line 935
+    .line 941
     const/4 v2, 0x2
 
     move/from16 v0, v17
@@ -1257,12 +1257,12 @@
 
     move-object/from16 v2, p0
 
-    .line 936
+    .line 942
     invoke-direct/range {v2 .. v7}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->setFolder(I[ILandroid/graphics/drawable/Drawable;II)V
 
     goto :goto_0
 
-    .line 938
+    .line 944
     :cond_a
     if-eqz v17, :cond_b
 
@@ -1278,17 +1278,17 @@
 
     if-nez v5, :cond_c
 
-    .line 941
+    .line 947
     :cond_b
     const v11, -0x50506
 
-    .line 942
+    .line 948
     if-nez v17, :cond_c
 
-    .line 943
+    .line 949
     const v6, 0x1ffffff
 
-    .line 944
+    .line 950
     const/high16 v7, -0x1000000
 
     :cond_c
@@ -1302,7 +1302,7 @@
 
     move v13, v7
 
-    .line 947
+    .line 953
     invoke-direct/range {v8 .. v13}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->setFolder(I[IIII)V
 
     goto/16 :goto_0

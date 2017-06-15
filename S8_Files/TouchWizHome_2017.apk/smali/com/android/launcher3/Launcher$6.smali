@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/Launcher;
 
     .prologue
-    .line 1220
+    .line 1223
     iput-object p1, p0, Lcom/android/launcher3/Launcher$6;->this$0:Lcom/android/launcher3/Launcher;
 
     iput-object p2, p0, Lcom/android/launcher3/Launcher$6;->val$workspace:Lcom/android/launcher3/home/Workspace;
@@ -45,19 +45,19 @@
     .locals 2
 
     .prologue
-    .line 1223
+    .line 1226
     iget-object v0, p0, Lcom/android/launcher3/Launcher$6;->val$workspace:Lcom/android/launcher3/home/Workspace;
 
     if-eqz v0, :cond_0
 
-    .line 1224
+    .line 1227
     iget-object v0, p0, Lcom/android/launcher3/Launcher$6;->val$workspace:Lcom/android/launcher3/home/Workspace;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/home/Workspace;->moveToDefaultScreen(Z)V
 
-    .line 1226
+    .line 1229
     :cond_0
     return-void
 .end method

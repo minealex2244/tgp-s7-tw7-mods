@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 1681
+    .line 1717
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$11;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$11;->val$installInfo:Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;
@@ -45,12 +45,12 @@
     .locals 10
 
     .prologue
-    .line 1684
+    .line 1720
     new-instance v5, Ljava/util/HashSet;
 
     invoke-direct {v5}, Ljava/util/HashSet;-><init>()V
 
-    .line 1686
+    .line 1722
     .local v5, "updates":Ljava/util/HashSet;, "Ljava/util/HashSet<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     iget-object v7, p0, Lcom/android/launcher3/home/HomeLoader$11;->val$installInfo:Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;
 
@@ -58,17 +58,17 @@
 
     if-nez v7, :cond_1
 
-    .line 1727
+    .line 1763
     :cond_0
     :goto_0
     return-void
 
-    .line 1691
+    .line 1727
     :cond_1
     iget-object v7, p0, Lcom/android/launcher3/home/HomeLoader$11;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getAllItemInHome()Ljava/util/ArrayList;
-    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$5500(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$5700(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
 
     move-result-object v7
 
@@ -90,7 +90,7 @@
 
     check-cast v2, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1692
+    .line 1728
     .local v2, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v8, v2, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -98,16 +98,16 @@
 
     move-object v1, v2
 
-    .line 1693
+    .line 1729
     check-cast v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    .line 1694
+    .line 1730
     .local v1, "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v0
 
-    .line 1695
+    .line 1731
     .local v0, "cn":Landroid/content/ComponentName;
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/item/IconInfo;->isPromise()Z
 
@@ -121,7 +121,7 @@
 
     iget-object v8, v8, Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;->packageName:Ljava/lang/String;
 
-    .line 1696
+    .line 1732
     invoke-virtual {v0}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v9
@@ -132,14 +132,14 @@
 
     if-eqz v8, :cond_2
 
-    .line 1697
+    .line 1733
     iget-object v8, p0, Lcom/android/launcher3/home/HomeLoader$11;->val$installInfo:Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;
 
     iget v8, v8, Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;->progress:I
 
     invoke-virtual {v1, v8}, Lcom/android/launcher3/common/base/item/IconInfo;->setInstallProgress(I)V
 
-    .line 1699
+    .line 1735
     iget-object v8, p0, Lcom/android/launcher3/home/HomeLoader$11;->val$installInfo:Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;
 
     iget v8, v8, Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;->state:I
@@ -148,20 +148,20 @@
 
     if-ne v8, v9, :cond_3
 
-    .line 1701
+    .line 1737
     iget v8, v1, Lcom/android/launcher3/common/base/item/IconInfo;->status:I
 
     and-int/lit8 v8, v8, -0x9
 
     iput v8, v1, Lcom/android/launcher3/common/base/item/IconInfo;->status:I
 
-    .line 1703
+    .line 1739
     :cond_3
     invoke-virtual {v5, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 1705
+    .line 1741
     .end local v0    # "cn":Landroid/content/ComponentName;
     .end local v1    # "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     :cond_4
@@ -171,10 +171,10 @@
 
     move-object v6, v2
 
-    .line 1706
+    .line 1742
     check-cast v6, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
-    .line 1707
+    .line 1743
     .local v6, "widget":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     iget-object v8, v6, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
@@ -192,19 +192,19 @@
 
     if-eqz v8, :cond_2
 
-    .line 1708
+    .line 1744
     iget-object v8, p0, Lcom/android/launcher3/home/HomeLoader$11;->val$installInfo:Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;
 
     iget v8, v8, Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;->progress:I
 
     iput v8, v6, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->installProgress:I
 
-    .line 1709
+    .line 1745
     invoke-virtual {v5, v6}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 1714
+    .line 1750
     .end local v2    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v6    # "widget":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     :cond_5
@@ -214,24 +214,24 @@
 
     if-nez v7, :cond_0
 
-    .line 1716
+    .line 1752
     iget-object v7, p0, Lcom/android/launcher3/home/HomeLoader$11;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v7}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v3
 
-    .line 1717
+    .line 1753
     .local v3, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     new-instance v4, Lcom/android/launcher3/home/HomeLoader$11$1;
 
     invoke-direct {v4, p0, v3, v5}, Lcom/android/launcher3/home/HomeLoader$11$1;-><init>(Lcom/android/launcher3/home/HomeLoader$11;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/HashSet;)V
 
-    .line 1725
+    .line 1761
     .local v4, "r":Ljava/lang/Runnable;
     # getter for: Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$5600()Lcom/android/launcher3/common/model/DeferredHandler;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$5800()Lcom/android/launcher3/common/model/DeferredHandler;
 
     move-result-object v7
 

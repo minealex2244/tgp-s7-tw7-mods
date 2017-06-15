@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 1164
+    .line 1200
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$3;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$3;->val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
@@ -55,7 +55,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 1167
+    .line 1203
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$3;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$3;->val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
@@ -63,15 +63,15 @@
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader$3;->val$task:Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->tryGetCallbacks(Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader;->access$4000(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader;->access$4200(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 1168
+    .line 1204
     .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-eqz v0, :cond_0
 
-    .line 1169
+    .line 1205
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$3;->val$hotseatShortcuts:Ljava/util/ArrayList;
 
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader$3;->val$hotseatShortcuts:Ljava/util/ArrayList;
@@ -82,7 +82,7 @@
 
     invoke-interface {v0, v1, v4, v2, v4}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindItems(Ljava/util/ArrayList;IIZ)V
 
-    .line 1171
+    .line 1207
     :cond_0
     return-void
 .end method

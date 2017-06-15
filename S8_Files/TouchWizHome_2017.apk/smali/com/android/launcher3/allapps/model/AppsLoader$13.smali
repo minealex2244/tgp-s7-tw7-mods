@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 841
+    .line 842
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$13;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$13;->val$task:Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
@@ -47,7 +47,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 844
+    .line 845
     iget-object v0, p0, Lcom/android/launcher3/allapps/model/AppsLoader$13;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     const/4 v1, 0x1
@@ -56,6 +56,6 @@
 
     invoke-virtual {v0, v3, v3, v1, v2}, Lcom/android/launcher3/allapps/model/AppsLoader;->startAppsLoaderTask(IZZLcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 845
+    .line 846
     return-void
 .end method

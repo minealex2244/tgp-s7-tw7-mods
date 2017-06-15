@@ -21,11 +21,11 @@
 
 .field public static final apps_bottom_lighting_on:I = 0x7f020002
 
-.field public static final apps_top_lighting_off:I = 0x7f020003
+.field public static final apps_dim:I = 0x7f020003
 
-.field public static final apps_top_lighting_on:I = 0x7f020004
+.field public static final apps_top_lighting_off:I = 0x7f020004
 
-.field public static final apps_vignetting_bg:I = 0x7f020005
+.field public static final apps_top_lighting_on:I = 0x7f020005
 
 .field public static final btn_check_bg:I = 0x7f020006
 
@@ -555,25 +555,31 @@
 
 .field public static final tw_ic_voice_search_api_mtrl_alpha:I = 0x7f02010d
 
-.field public static final tw_tab_unselected_bar_holo:I = 0x7f02010e
+.field public static final tw_item_background_material:I = 0x7f02010e
 
-.field public static final widget_resize_frame:I = 0x7f02010f
+.field public static final tw_tab_unselected_bar_holo:I = 0x7f02010f
 
-.field public static final widget_resize_frame_invalid:I = 0x7f020110
+.field public static final tw_text_action_btn_background:I = 0x7f020110
 
-.field public static final widget_resize_handle:I = 0x7f020111
+.field public static final tw_text_action_btn_material_light:I = 0x7f020111
 
-.field public static final widget_resize_handle_invalid:I = 0x7f020112
+.field public static final widget_resize_frame:I = 0x7f020112
 
-.field public static final widget_searchbar_background:I = 0x7f020113
+.field public static final widget_resize_frame_invalid:I = 0x7f020113
 
-.field public static final widget_searchbar_more_right_rounded_background:I = 0x7f020114
+.field public static final widget_resize_handle:I = 0x7f020114
 
-.field public static final widget_tile:I = 0x7f020115
+.field public static final widget_resize_handle_invalid:I = 0x7f020115
 
-.field public static final widgets_row_divider:I = 0x7f020116
+.field public static final widget_searchbar_background:I = 0x7f020116
 
-.field public static final winset_card_type_background:I = 0x7f020117
+.field public static final widget_searchbar_more_right_rounded_background:I = 0x7f020117
+
+.field public static final widget_tile:I = 0x7f020118
+
+.field public static final widgets_row_divider:I = 0x7f020119
+
+.field public static final winset_card_type_background:I = 0x7f02011a
 
 
 # direct methods

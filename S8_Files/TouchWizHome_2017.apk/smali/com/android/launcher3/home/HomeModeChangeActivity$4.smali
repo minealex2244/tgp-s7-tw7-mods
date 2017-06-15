@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     .prologue
-    .line 249
+    .line 258
     iput-object p1, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$4;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
-    .line 252
+    .line 261
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v0
@@ -55,6 +55,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/proxy/LauncherTopViewChangedMessageHandler;->sendMessage(I)V
 
-    .line 254
+    .line 263
     return-void
 .end method

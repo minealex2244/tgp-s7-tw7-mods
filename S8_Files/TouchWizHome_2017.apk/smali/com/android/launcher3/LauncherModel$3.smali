@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/LauncherModel;
 
     .prologue
-    .line 1142
+    .line 1146
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$3;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iput-boolean p2, p0, Lcom/android/launcher3/LauncherModel$3;->val$refresh:Z
@@ -45,7 +45,7 @@
     .locals 2
 
     .prologue
-    .line 1145
+    .line 1149
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$3;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-boolean v1, p0, Lcom/android/launcher3/LauncherModel$3;->val$refresh:Z
@@ -53,6 +53,6 @@
     # invokes: Lcom/android/launcher3/LauncherModel;->updateWidgetsProviders(Z)V
     invoke-static {v0, v1}, Lcom/android/launcher3/LauncherModel;->access$1800(Lcom/android/launcher3/LauncherModel;Z)V
 
-    .line 1146
+    .line 1150
     return-void
 .end method

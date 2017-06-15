@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 1856
+    .line 1892
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$15;->val$context:Landroid/content/Context;
@@ -53,16 +53,16 @@
     .locals 20
 
     .prologue
-    .line 1859
+    .line 1895
     new-instance v8, Ljava/util/ArrayList;
 
     invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1860
+    .line 1896
     .local v8, "addedItemsFinal":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     const/4 v14, 0x0
 
-    .line 1861
+    .line 1897
     .local v14, "replaceItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, p0
 
@@ -78,16 +78,16 @@
 
     move-result v12
 
-    .line 1862
+    .line 1898
     .local v12, "maxCount":I
     # getter for: Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$6300()Ljava/lang/Object;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$6500()Ljava/lang/Object;
 
     move-result-object v15
 
     monitor-enter v15
 
-    .line 1863
+    .line 1899
     :try_start_0
     move-object/from16 v0, p0
 
@@ -98,7 +98,7 @@
     iget-object v5, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
-    invoke-static {v5}, Lcom/android/launcher3/home/HomeLoader;->access$6100(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+    invoke-static {v5}, Lcom/android/launcher3/home/HomeLoader;->access$6300(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
 
     move-result-object v5
 
@@ -110,13 +110,13 @@
 
     iput-wide v6, v2, Lcom/android/launcher3/common/base/item/IconInfo;->screenId:J
 
-    .line 1864
+    .line 1900
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6100(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6300(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -126,7 +126,7 @@
 
     if-ne v2, v12, :cond_2
 
-    .line 1865
+    .line 1901
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->val$appsButton:Lcom/android/launcher3/common/base/item/IconInfo;
@@ -139,13 +139,13 @@
 
     iput-wide v6, v2, Lcom/android/launcher3/common/base/item/IconInfo;->screenId:J
 
-    .line 1867
+    .line 1903
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6100(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6300(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
 
     move-result-object v2
 
@@ -166,7 +166,7 @@
 
     check-cast v11, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1868
+    .line 1904
     .local v11, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v6, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
@@ -182,44 +182,44 @@
 
     if-nez v5, :cond_0
 
-    .line 1869
+    .line 1905
     move-object v14, v11
 
-    .line 1870
+    .line 1906
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
-    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6400(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6600(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     move-result-object v2
 
     invoke-virtual {v2, v11}, Lcom/android/launcher3/common/model/FavoritesUpdater;->deleteItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1874
+    .line 1910
     .end local v11    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
     if-eqz v14, :cond_2
 
-    .line 1875
+    .line 1911
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1876
+    .line 1912
     .local v4, "addedWorkspaceScreensFinal":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     # getter for: Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
-    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$6500()Lcom/android/launcher3/common/model/FavoritesProvider;
+    invoke-static {}, Lcom/android/launcher3/home/HomeLoader;->access$6700()Lcom/android/launcher3/common/model/FavoritesProvider;
 
     move-result-object v2
 
-    .line 1877
+    .line 1913
     invoke-virtual {v2}, Lcom/android/launcher3/common/model/FavoritesProvider;->loadScreensFromDb()Ljava/util/ArrayList;
 
     move-result-object v3
 
-    .line 1879
+    .line 1915
     .local v3, "workspaceScreens":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     move-object/from16 v0, p0
 
@@ -232,11 +232,11 @@
     const/4 v7, 0x0
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->findSpaceForItem(Ljava/util/ArrayList;Ljava/util/ArrayList;IIZ)Landroid/util/Pair;
-    invoke-static/range {v2 .. v7}, Lcom/android/launcher3/home/HomeLoader;->access$6600(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;Ljava/util/ArrayList;IIZ)Landroid/util/Pair;
+    invoke-static/range {v2 .. v7}, Lcom/android/launcher3/home/HomeLoader;->access$6800(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;Ljava/util/ArrayList;IIZ)Landroid/util/Pair;
 
     move-result-object v10
 
-    .line 1882
+    .line 1918
     .local v10, "coords":Landroid/util/Pair;, "Landroid/util/Pair<Ljava/lang/Long;[I>;"
     iget-object v2, v10, Landroid/util/Pair;->first:Ljava/lang/Object;
 
@@ -246,56 +246,56 @@
 
     move-result-wide v16
 
-    .line 1883
+    .line 1919
     .local v16, "screenId":J
     iget-object v9, v10, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v9, [I
 
-    .line 1884
+    .line 1920
     .local v9, "coordinates":[I
     const-wide/16 v6, -0x64
 
     iput-wide v6, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 1885
+    .line 1921
     move-wide/from16 v0, v16
 
     iput-wide v0, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 1886
+    .line 1922
     const/4 v2, 0x0
 
     aget v2, v9, v2
 
     iput v2, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 1887
+    .line 1923
     const/4 v2, 0x1
 
     aget v2, v9, v2
 
     iput v2, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 1888
+    .line 1924
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
-    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     move-result-object v2
 
     invoke-virtual {v2, v14}, Lcom/android/launcher3/common/model/FavoritesUpdater;->addItem(Lcom/android/launcher3/common/base/item/ItemInfo;)J
 
-    .line 1890
+    .line 1926
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
-    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6800(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$7000(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     move-result-object v2
 
@@ -305,14 +305,14 @@
 
     invoke-virtual {v2, v5, v3}, Lcom/android/launcher3/common/model/FavoritesUpdater;->updateScreenOrder(Landroid/content/Context;Ljava/util/ArrayList;)V
 
-    .line 1891
+    .line 1927
     invoke-virtual {v4}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    .line 1892
+    .line 1928
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
@@ -324,9 +324,9 @@
     invoke-direct {v5, v0, v4}, Lcom/android/launcher3/home/HomeLoader$15$1;-><init>(Lcom/android/launcher3/home/HomeLoader$15;Ljava/util/ArrayList;)V
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
-    invoke-static {v2, v5}, Lcom/android/launcher3/home/HomeLoader;->access$6900(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+    invoke-static {v2, v5}, Lcom/android/launcher3/home/HomeLoader;->access$7100(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
 
-    .line 1903
+    .line 1939
     .end local v3    # "workspaceScreens":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     .end local v4    # "addedWorkspaceScreensFinal":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     .end local v9    # "coordinates":[I
@@ -350,13 +350,13 @@
     long-to-int v6, v6
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCellXFromHotseatOrder(I)I
-    invoke-static {v5, v6}, Lcom/android/launcher3/home/HomeLoader;->access$7000(Lcom/android/launcher3/home/HomeLoader;I)I
+    invoke-static {v5, v6}, Lcom/android/launcher3/home/HomeLoader;->access$7200(Lcom/android/launcher3/home/HomeLoader;I)I
 
     move-result v5
 
     iput v5, v2, Lcom/android/launcher3/common/base/item/IconInfo;->cellX:I
 
-    .line 1904
+    .line 1940
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->val$appsButton:Lcom/android/launcher3/common/base/item/IconInfo;
@@ -374,19 +374,19 @@
     long-to-int v6, v6
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCellYFromHotseatOrder(I)I
-    invoke-static {v5, v6}, Lcom/android/launcher3/home/HomeLoader;->access$7100(Lcom/android/launcher3/home/HomeLoader;I)I
+    invoke-static {v5, v6}, Lcom/android/launcher3/home/HomeLoader;->access$7300(Lcom/android/launcher3/home/HomeLoader;I)I
 
     move-result v5
 
     iput v5, v2, Lcom/android/launcher3/common/base/item/IconInfo;->cellY:I
 
-    .line 1905
+    .line 1941
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
-    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$7200(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$7400(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     move-result-object v2
 
@@ -396,27 +396,27 @@
 
     invoke-virtual {v2, v5}, Lcom/android/launcher3/common/model/FavoritesUpdater;->addItem(Lcom/android/launcher3/common/base/item/ItemInfo;)J
 
-    .line 1906
+    .line 1942
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader$15;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
-    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6100(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+    invoke-static {v2}, Lcom/android/launcher3/home/HomeLoader;->access$6300(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
 
     move-result-object v2
 
     invoke-virtual {v8, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1907
+    .line 1943
     monitor-exit v15
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1908
+    .line 1944
     move-object v13, v14
 
-    .line 1909
+    .line 1945
     .local v13, "moveShortcut":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, p0
 
@@ -429,12 +429,12 @@
     invoke-direct {v5, v0, v13, v8}, Lcom/android/launcher3/home/HomeLoader$15$2;-><init>(Lcom/android/launcher3/home/HomeLoader$15;Lcom/android/launcher3/common/base/item/ItemInfo;Ljava/util/ArrayList;)V
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
-    invoke-static {v2, v5}, Lcom/android/launcher3/home/HomeLoader;->access$7300(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+    invoke-static {v2, v5}, Lcom/android/launcher3/home/HomeLoader;->access$7500(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
 
-    .line 1920
+    .line 1956
     return-void
 
-    .line 1907
+    .line 1943
     .end local v13    # "moveShortcut":Lcom/android/launcher3/common/base/item/ItemInfo;
     :catchall_0
     move-exception v2

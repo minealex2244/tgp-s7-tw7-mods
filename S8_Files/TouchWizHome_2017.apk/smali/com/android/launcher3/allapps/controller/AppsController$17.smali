@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1902
+    .line 1910
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$17;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-wide p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$17;->val$id:J
@@ -48,7 +48,7 @@
     .param p3, "parent"    # Landroid/view/View;
 
     .prologue
-    .line 1906
+    .line 1914
     if-eqz p1, :cond_0
 
     iget-wide v0, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J

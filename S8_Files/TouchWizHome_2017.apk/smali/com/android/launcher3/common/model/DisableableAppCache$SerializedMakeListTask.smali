@@ -47,16 +47,16 @@
     .end annotation
 
     .prologue
-    .line 320
+    .line 324
     .local p2, "appsToMakeList":Ljava/util/Stack;, "Ljava/util/Stack<Landroid/content/pm/ResolveInfo;>;"
     iput-object p1, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->this$0:Lcom/android/launcher3/common/model/DisableableAppCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 321
+    .line 325
     iput-object p2, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->mAppsToMakeList:Ljava/util/Stack;
 
-    .line 322
+    .line 326
     return-void
 .end method
 
@@ -66,7 +66,7 @@
     .locals 12
 
     .prologue
-    .line 326
+    .line 330
     iget-object v9, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->mAppsToMakeList:Ljava/util/Stack;
 
     invoke-virtual {v9}, Ljava/util/Stack;->isEmpty()Z
@@ -75,7 +75,7 @@
 
     if-nez v9, :cond_2
 
-    .line 327
+    .line 331
     iget-object v9, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->mAppsToMakeList:Ljava/util/Stack;
 
     invoke-virtual {v9}, Ljava/util/Stack;->pop()Ljava/lang/Object;
@@ -84,7 +84,7 @@
 
     check-cast v5, Landroid/content/pm/ResolveInfo;
 
-    .line 329
+    .line 333
     .local v5, "resolveInfo":Landroid/content/pm/ResolveInfo;
     :try_start_0
     iget-object v9, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->this$0:Lcom/android/launcher3/common/model/DisableableAppCache;
@@ -104,19 +104,19 @@
 
     move-result-object v2
 
-    .line 330
+    .line 334
     .local v2, "info":Landroid/content/pm/ApplicationInfo;
     iget-object v4, v2, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
-    .line 331
+    .line 335
     .local v4, "md":Landroid/os/Bundle;
     const/4 v8, 0x0
 
-    .line 332
+    .line 336
     .local v8, "unblock":Z
     const/4 v0, 0x0
 
-    .line 333
+    .line 337
     .local v0, "block":Z
     if-eqz v4, :cond_0
 
@@ -124,21 +124,21 @@
 
     if-eqz v9, :cond_0
 
-    .line 334
+    .line 338
     const-string v9, "com.sec.android.app.unblockdisabling"
 
     invoke-virtual {v4, v9}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result v8
 
-    .line 335
+    .line 339
     const-string v9, "com.sec.android.app.blockdisabling"
 
     invoke-virtual {v4, v9}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 337
+    .line 341
     :cond_0
     sget-object v9, Lcom/android/launcher3/common/model/DisableableAppCache;->mDisableBlockedItems:Ljava/util/ArrayList;
 
@@ -150,10 +150,10 @@
 
     if-nez v9, :cond_1
 
-    .line 338
+    .line 342
     if-eqz v0, :cond_3
 
-    .line 339
+    .line 343
     sget-object v9, Lcom/android/launcher3/common/model/DisableableAppCache;->mDisableBlockedItems:Ljava/util/ArrayList;
 
     iget-object v10, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
@@ -162,7 +162,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 362
+    .line 366
     .end local v0    # "block":Z
     .end local v2    # "info":Landroid/content/pm/ApplicationInfo;
     .end local v4    # "md":Landroid/os/Bundle;
@@ -171,12 +171,12 @@
     :goto_0
     invoke-virtual {p0}, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->scheduleNext()V
 
-    .line 364
+    .line 368
     .end local v5    # "resolveInfo":Landroid/content/pm/ResolveInfo;
     :cond_2
     return-void
 
-    .line 341
+    .line 345
     .restart local v0    # "block":Z
     .restart local v2    # "info":Landroid/content/pm/ApplicationInfo;
     .restart local v4    # "md":Landroid/os/Bundle;
@@ -185,7 +185,7 @@
     :cond_3
     if-eqz v8, :cond_4
 
-    .line 342
+    .line 346
     :try_start_1
     sget-object v9, Lcom/android/launcher3/common/model/DisableableAppCache;->mDisableableItems:Ljava/util/ArrayList;
 
@@ -197,7 +197,7 @@
 
     if-nez v9, :cond_1
 
-    .line 343
+    .line 347
     sget-object v9, Lcom/android/launcher3/common/model/DisableableAppCache;->mDisableableItems:Ljava/util/ArrayList;
 
     iget-object v10, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
@@ -208,7 +208,7 @@
 
     goto :goto_0
 
-    .line 359
+    .line 363
     .end local v0    # "block":Z
     .end local v2    # "info":Landroid/content/pm/ApplicationInfo;
     .end local v4    # "md":Landroid/os/Bundle;
@@ -216,7 +216,7 @@
     :catch_0
     move-exception v1
 
-    .line 360
+    .line 364
     .local v1, "e":Ljava/lang/Exception;
     const-string v9, "DisableableAppCache"
 
@@ -246,7 +246,7 @@
 
     goto :goto_0
 
-    .line 347
+    .line 351
     .end local v1    # "e":Ljava/lang/Exception;
     .restart local v0    # "block":Z
     .restart local v2    # "info":Landroid/content/pm/ApplicationInfo;
@@ -269,7 +269,7 @@
 
     move-result-object v7
 
-    .line 348
+    .line 352
     .local v7, "sys":Landroid/content/pm/PackageInfo;
     iget-object v9, v7, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
@@ -277,7 +277,7 @@
 
     aget-object v6, v9, v10
 
-    .line 349
+    .line 353
     .local v6, "signature":Landroid/content/pm/Signature;
     iget-object v9, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->this$0:Lcom/android/launcher3/common/model/DisableableAppCache;
 
@@ -294,7 +294,7 @@
 
     move-result-object v3
 
-    .line 351
+    .line 355
     .local v3, "itemPkgInfo":Landroid/content/pm/PackageInfo;
     iget-object v9, v3, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
@@ -308,7 +308,7 @@
 
     if-nez v9, :cond_1
 
-    .line 352
+    .line 356
     sget-object v9, Lcom/android/launcher3/common/model/DisableableAppCache;->mDisableableItems:Ljava/util/ArrayList;
 
     iget-object v10, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
@@ -319,7 +319,7 @@
 
     if-nez v9, :cond_1
 
-    .line 353
+    .line 357
     sget-object v9, Lcom/android/launcher3/common/model/DisableableAppCache;->mDisableableItems:Ljava/util/ArrayList;
 
     iget-object v10, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
@@ -335,7 +335,7 @@
     .locals 6
 
     .prologue
-    .line 367
+    .line 371
     iget-object v0, p0, Lcom/android/launcher3/common/model/DisableableAppCache$SerializedMakeListTask;->this$0:Lcom/android/launcher3/common/model/DisableableAppCache;
 
     # getter for: Lcom/android/launcher3/common/model/DisableableAppCache;->mWorkerHandler:Landroid/os/Handler;
@@ -358,6 +358,6 @@
 
     invoke-virtual {v0, p0, v1, v2, v3}, Landroid/os/Handler;->postAtTime(Ljava/lang/Runnable;Ljava/lang/Object;J)Z
 
-    .line 368
+    .line 372
     return-void
 .end method

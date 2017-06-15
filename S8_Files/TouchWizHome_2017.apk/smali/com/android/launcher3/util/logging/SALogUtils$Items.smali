@@ -27,15 +27,15 @@
     .param p2, "shortcuts"    # Ljava/lang/String;
 
     .prologue
-    .line 265
+    .line 261
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 266
+    .line 262
     iput p1, p0, Lcom/android/launcher3/util/logging/SALogUtils$Items;->itemcount:I
 
-    .line 267
+    .line 263
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogUtils$Items;->itemNames:Ljava/lang/String;
 
-    .line 268
+    .line 264
     return-void
 .end method

@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 587
+    .line 588
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$5;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$5;->val$r:Ljava/lang/Runnable;
@@ -45,7 +45,7 @@
     .locals 3
 
     .prologue
-    .line 592
+    .line 593
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->sIsLoadingAndBindingWorkspace:Z
     invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$1000()Z
 
@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 593
+    .line 594
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->sBindCompleteRunnables:Ljava/util/ArrayList;
     invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$1100()Ljava/util/ArrayList;
 
@@ -61,7 +61,7 @@
 
     monitor-enter v1
 
-    .line 594
+    .line 595
     :try_start_0
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->sBindCompleteRunnables:Ljava/util/ArrayList;
     invoke-static {}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$1200()Ljava/util/ArrayList;
@@ -72,14 +72,14 @@
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 595
+    .line 596
     monitor-exit v1
 
-    .line 599
+    .line 600
     :goto_0
     return-void
 
-    .line 595
+    .line 596
     :catchall_0
     move-exception v0
 
@@ -89,7 +89,7 @@
 
     throw v0
 
-    .line 597
+    .line 598
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/allapps/model/AppsLoader$5;->val$r:Ljava/lang/Runnable;
 

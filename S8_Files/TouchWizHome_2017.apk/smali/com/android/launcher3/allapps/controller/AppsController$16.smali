@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1888
+    .line 1896
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$16;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$16;->val$operator:Lcom/android/launcher3/common/base/item/ItemOperator;
@@ -54,7 +54,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1891
+    .line 1899
     iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$16;->val$operator:Lcom/android/launcher3/common/base/item/ItemOperator;
 
     invoke-interface {v1, p1, p2, p3}, Lcom/android/launcher3/common/base/item/ItemOperator;->evaluate(Lcom/android/launcher3/common/base/item/ItemInfo;Landroid/view/View;Landroid/view/View;)Z
@@ -63,15 +63,15 @@
 
     if-eqz v1, :cond_0
 
-    .line 1892
+    .line 1900
     iget-object v1, p0, Lcom/android/launcher3/allapps/controller/AppsController$16;->val$value:[Landroid/view/View;
 
     aput-object p2, v1, v0
 
-    .line 1893
+    .line 1901
     const/4 v0, 0x1
 
-    .line 1895
+    .line 1903
     :cond_0
     return v0
 .end method

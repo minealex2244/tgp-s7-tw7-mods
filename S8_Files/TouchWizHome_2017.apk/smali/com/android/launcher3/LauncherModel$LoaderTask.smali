@@ -37,23 +37,23 @@
     .param p3, "rank"    # I
 
     .prologue
-    .line 549
+    .line 551
     iput-object p1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 547
+    .line 549
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mHighRankedPage:I
 
-    .line 550
+    .line 552
     iput-object p2, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mContext:Landroid/content/Context;
 
-    .line 551
+    .line 553
     iput p3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mHighRankedPage:I
 
-    .line 552
+    .line 554
     return-void
 .end method
 
@@ -62,7 +62,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     .prologue
-    .line 542
+    .line 544
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     return v0
@@ -73,7 +73,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     .prologue
-    .line 542
+    .line 544
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->updateIconCache()V
 
     return-void
@@ -84,7 +84,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/LauncherModel$LoaderTask;
 
     .prologue
-    .line 542
+    .line 544
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->endLoaderTask()V
 
     return-void
@@ -96,7 +96,7 @@
     .param p1, "x1"    # Z
 
     .prologue
-    .line 542
+    .line 544
     iput-boolean p1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mLoadAndBindStepFinished:Z
 
     return p1
@@ -108,17 +108,17 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 748
+    .line 750
     const-string v1, "Launcher.Model"
 
     const-string v2, "endLoaderTask"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 751
+    .line 753
     iput-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mContext:Landroid/content/Context;
 
-    .line 753
+    .line 755
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mLock:Ljava/lang/Object;
@@ -128,7 +128,7 @@
 
     monitor-enter v2
 
-    .line 755
+    .line 757
     :try_start_0
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -139,7 +139,7 @@
 
     if-ne v1, p0, :cond_0
 
-    .line 756
+    .line 758
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     const/4 v3, 0x0
@@ -147,7 +147,7 @@
     # setter for: Lcom/android/launcher3/LauncherModel;->mLoaderTask:Lcom/android/launcher3/LauncherModel$LoaderTask;
     invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1302(Lcom/android/launcher3/LauncherModel;Lcom/android/launcher3/LauncherModel$LoaderTask;)Lcom/android/launcher3/LauncherModel$LoaderTask;
 
-    .line 758
+    .line 760
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -156,7 +156,7 @@
     # setter for: Lcom/android/launcher3/LauncherModel;->mIsLoaderTaskRunning:Z
     invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1102(Lcom/android/launcher3/LauncherModel;Z)Z
 
-    .line 759
+    .line 761
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     const/4 v3, 0x1
@@ -164,7 +164,7 @@
     # setter for: Lcom/android/launcher3/LauncherModel;->mHasLoaderCompletedOnce:Z
     invoke-static {v1, v3}, Lcom/android/launcher3/LauncherModel;->access$1402(Lcom/android/launcher3/LauncherModel;Z)Z
 
-    .line 761
+    .line 763
     # getter for: Lcom/android/launcher3/LauncherModel;->sPackageChangeRunnables:Ljava/util/ArrayList;
     invoke-static {}, Lcom/android/launcher3/LauncherModel;->access$1500()Ljava/util/ArrayList;
 
@@ -176,14 +176,14 @@
 
     if-nez v1, :cond_2
 
-    .line 762
+    .line 764
     const-string v1, "Launcher.Model"
 
     const-string v3, "endLoaderTask, run sPackageChangeRunnables"
 
     invoke-static {v1, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 763
+    .line 765
     # getter for: Lcom/android/launcher3/LauncherModel;->sPackageChangeRunnables:Ljava/util/ArrayList;
     invoke-static {}, Lcom/android/launcher3/LauncherModel;->access$1500()Ljava/util/ArrayList;
 
@@ -206,13 +206,13 @@
 
     check-cast v0, Ljava/lang/Runnable;
 
-    .line 764
+    .line 766
     .local v0, "r":Ljava/lang/Runnable;
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     goto :goto_0
 
-    .line 768
+    .line 770
     .end local v0    # "r":Ljava/lang/Runnable;
     :catchall_0
     move-exception v1
@@ -223,7 +223,7 @@
 
     throw v1
 
-    .line 766
+    .line 768
     :cond_1
     :try_start_1
     # getter for: Lcom/android/launcher3/LauncherModel;->sPackageChangeRunnables:Ljava/util/ArrayList;
@@ -233,13 +233,13 @@
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    .line 768
+    .line 770
     :cond_2
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 769
+    .line 771
     return-void
 .end method
 
@@ -251,7 +251,7 @@
 
     const/4 v3, 0x0
 
-    .line 812
+    .line 814
     const-string v0, "Launcher.Model"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -281,7 +281,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 815
+    .line 817
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mAllAppsLoaded:Z
@@ -291,38 +291,38 @@
 
     if-nez v0, :cond_6
 
-    .line 816
+    .line 818
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-nez v0, :cond_0
 
-    .line 817
+    .line 819
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-virtual {v0, p0}, Lcom/android/launcher3/allapps/model/AppsLoader;->setup(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 819
+    .line 821
     :cond_0
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-nez v0, :cond_1
 
-    .line 820
+    .line 822
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-virtual {v0, v3, v4, v3, p0}, Lcom/android/launcher3/allapps/model/AppsLoader;->startAppsLoaderTask(IZZLcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 822
+    .line 824
     :cond_1
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-nez v0, :cond_2
 
-    .line 823
+    .line 825
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
@@ -331,20 +331,20 @@
 
     invoke-virtual {v0, v1, p0}, Lcom/android/launcher3/allapps/model/AppsLoader;->bindRemainedItems(Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 825
+    .line 827
     :cond_2
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-nez v0, :cond_4
 
-    .line 826
+    .line 828
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-virtual {v0, p0}, Lcom/android/launcher3/allapps/model/AppsLoader;->finishBind(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 828
+    .line 830
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mWorkspaceLoaded:Z
@@ -354,10 +354,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 829
+    .line 831
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->updateIconCache()V
 
-    .line 830
+    .line 832
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mDisableableAppCache:Lcom/android/launcher3/common/model/DisableableAppCache;
@@ -367,18 +367,18 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/model/DisableableAppCache;->makeDisableableAppList()V
 
-    .line 831
+    .line 833
     invoke-static {}, Lcom/android/launcher3/gamehome/GameHomeManager;->getInstance()Lcom/android/launcher3/gamehome/GameHomeManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/android/launcher3/gamehome/GameHomeManager;->updateGameAppsVisibility()V
 
-    .line 833
+    .line 835
     :cond_3
     monitor-enter p0
 
-    .line 834
+    .line 836
     :try_start_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -387,12 +387,12 @@
     # setter for: Lcom/android/launcher3/LauncherModel;->mAllAppsLoaded:Z
     invoke-static {v0, v1}, Lcom/android/launcher3/LauncherModel;->access$302(Lcom/android/launcher3/LauncherModel;Z)Z
 
-    .line 835
+    .line 837
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 842
+    .line 844
     :cond_4
     :goto_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
@@ -404,14 +404,14 @@
 
     if-eqz v0, :cond_5
 
-    .line 843
+    .line 845
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->endLoaderTask()V
 
-    .line 845
+    .line 847
     :cond_5
     return-void
 
-    .line 835
+    .line 837
     :catchall_0
     move-exception v0
 
@@ -422,13 +422,13 @@
 
     throw v0
 
-    .line 838
+    .line 840
     :cond_6
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-nez v0, :cond_4
 
-    .line 839
+    .line 841
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
@@ -450,12 +450,12 @@
 
     const/4 v4, -0x1
 
-    .line 555
+    .line 557
     const/4 v1, 0x1
 
     invoke-static {v1}, Lcom/android/launcher3/common/model/DataLoader;->setLoadingAndBindingWorkspace(Z)V
 
-    .line 558
+    .line 560
     const-string v1, "Launcher.Model"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -485,7 +485,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 561
+    .line 563
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mWorkspaceLoaded:Z
@@ -495,20 +495,20 @@
 
     if-nez v1, :cond_0
 
-    .line 562
+    .line 564
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v1, v1, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
     invoke-virtual {v1, p0}, Lcom/android/launcher3/home/HomeLoader;->setup(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 563
+    .line 565
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # setter for: Lcom/android/launcher3/LauncherModel;->mAllAppsLoaded:Z
     invoke-static {v1, v5}, Lcom/android/launcher3/LauncherModel;->access$302(Lcom/android/launcher3/LauncherModel;Z)Z
 
-    .line 565
+    .line 567
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v1, v1, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
@@ -525,19 +525,19 @@
 
     invoke-virtual {v1, v2, v0, p0}, Lcom/android/launcher3/home/HomeLoader;->bindPageItems(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 566
+    .line 568
     iput v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mHighRankedPage:I
 
-    .line 569
+    .line 571
     new-instance v0, Lcom/android/launcher3/LauncherModel$LoaderTask$1;
 
     invoke-direct {v0, p0}, Lcom/android/launcher3/LauncherModel$LoaderTask$1;-><init>(Lcom/android/launcher3/LauncherModel$LoaderTask;)V
 
-    .line 594
+    .line 596
     :goto_0
     return-object v0
 
-    .line 592
+    .line 594
     :cond_0
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -545,7 +545,7 @@
 
     invoke-virtual {v1, v4, p0}, Lcom/android/launcher3/home/HomeLoader;->bindItemsSync(ILcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 593
+    .line 595
     invoke-static {v5}, Lcom/android/launcher3/common/model/DataLoader;->setLoadingAndBindingWorkspace(Z)V
 
     goto :goto_0
@@ -555,12 +555,12 @@
     .locals 2
 
     .prologue
-    .line 849
+    .line 851
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 850
+    .line 852
     .local v0, "packagesToIgnore":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -568,7 +568,7 @@
 
     invoke-virtual {v1, v0}, Lcom/android/launcher3/home/HomeLoader;->getIgnorePackage(Ljava/util/HashSet;)V
 
-    .line 851
+    .line 853
     iget-object v1, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mIconCache:Lcom/android/launcher3/common/model/IconCache;
@@ -578,7 +578,7 @@
 
     invoke-virtual {v1, v0}, Lcom/android/launcher3/common/model/IconCache;->updateDbIcons(Ljava/util/Set;)V
 
-    .line 852
+    .line 854
     return-void
 .end method
 
@@ -586,16 +586,16 @@
     .locals 6
 
     .prologue
-    .line 602
+    .line 604
     monitor-enter p0
 
-    .line 603
+    .line 605
     :try_start_0
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    .line 605
+    .line 607
     .local v0, "workspaceWaitTime":J
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -610,7 +610,7 @@
 
     invoke-virtual {v2, v3}, Lcom/android/launcher3/common/model/DeferredHandler;->postIdle(Ljava/lang/Runnable;)V
 
-    .line 618
+    .line 620
     :goto_0
     iget-boolean v2, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
@@ -622,7 +622,7 @@
 
     if-nez v2, :cond_0
 
-    .line 622
+    .line 624
     const-wide/16 v2, 0x3e8
 
     :try_start_1
@@ -633,13 +633,13 @@
 
     goto :goto_0
 
-    .line 623
+    .line 625
     :catch_0
     move-exception v2
 
     goto :goto_0
 
-    .line 628
+    .line 630
     :cond_0
     :try_start_2
     const-string v2, "Launcher.Model"
@@ -654,7 +654,7 @@
 
     move-result-object v3
 
-    .line 629
+    .line 631
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v4
@@ -675,16 +675,16 @@
 
     move-result-object v3
 
-    .line 628
+    .line 630
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 632
+    .line 634
     monitor-exit p0
 
-    .line 633
+    .line 635
     return-void
 
-    .line 632
+    .line 634
     .end local v0    # "workspaceWaitTime":J
     :catchall_0
     move-exception v2
@@ -702,7 +702,7 @@
     .locals 3
 
     .prologue
-    .line 855
+    .line 857
     const-string v0, "Launcher.Model"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -727,7 +727,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 856
+    .line 858
     const-string v0, "Launcher.Model"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -752,14 +752,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 857
+    .line 859
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
     invoke-virtual {v0}, Lcom/android/launcher3/home/HomeLoader;->dumpState()V
 
-    .line 858
+    .line 860
     return-void
 .end method
 
@@ -767,7 +767,7 @@
     .locals 1
 
     .prologue
-    .line 862
+    .line 864
     iget-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     return v0
@@ -781,7 +781,7 @@
 
     const/4 v7, 0x0
 
-    .line 677
+    .line 679
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mLock:Ljava/lang/Object;
@@ -791,7 +791,7 @@
 
     monitor-enter v5
 
-    .line 678
+    .line 680
     :try_start_0
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
@@ -799,11 +799,11 @@
 
     monitor-exit v5
 
-    .line 745
+    .line 747
     :goto_0
     return-void
 
-    .line 679
+    .line 681
     :cond_0
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -812,20 +812,20 @@
     # setter for: Lcom/android/launcher3/LauncherModel;->mIsLoaderTaskRunning:Z
     invoke-static {v4, v6}, Lcom/android/launcher3/LauncherModel;->access$1102(Lcom/android/launcher3/LauncherModel;Z)Z
 
-    .line 680
+    .line 682
     monitor-exit v5
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 686
+    .line 688
     invoke-static {}, Lcom/android/launcher3/common/model/DataLoader;->loadDefaultLayoutIfNecessary()V
 
-    .line 687
+    .line 689
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mContext:Landroid/content/Context;
 
     invoke-static {v4}, Lcom/android/launcher3/common/model/DataLoader;->setInstallingPackage(Landroid/content/Context;)V
 
-    .line 689
+    .line 691
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mApp:Lcom/android/launcher3/LauncherAppState;
@@ -837,19 +837,19 @@
 
     move-result-object v4
 
-    .line 690
+    .line 692
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v5
 
     const/4 v6, 0x0
 
-    .line 689
+    .line 691
     invoke-virtual {v4, v5, v6}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v2
 
-    .line 692
+    .line 694
     .local v2, "prefs":Landroid/content/SharedPreferences;
     const-string v4, "com.sec.android.app.launcher.hideapps.prefs"
 
@@ -859,41 +859,41 @@
 
     if-eqz v4, :cond_2
 
-    .line 693
+    .line 695
     const-string v4, "com.sec.android.app.launcher.hideapps.prefs"
 
-    .line 694
+    .line 696
     invoke-interface {v2, v4, v7}, Landroid/content/SharedPreferences;->getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
 
     move-result-object v0
 
-    .line 695
+    .line 697
     .local v0, "hiddenItems":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
     if-eqz v0, :cond_1
 
-    .line 696
+    .line 698
     invoke-static {}, Lcom/android/launcher3/common/model/FavoritesProvider;->getInstance()Lcom/android/launcher3/common/model/FavoritesProvider;
 
     move-result-object v4
 
     invoke-virtual {v4, v0}, Lcom/android/launcher3/common/model/FavoritesProvider;->applyHideItem(Ljava/util/Set;)V
 
-    .line 699
+    .line 701
     :cond_1
     invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v3
 
-    .line 700
+    .line 702
     .local v3, "prefsEditor":Landroid/content/SharedPreferences$Editor;
     const-string v4, "com.sec.android.app.launcher.hideapps.prefs"
 
     invoke-interface {v3, v4}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 701
+    .line 703
     invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 704
+    .line 706
     .end local v0    # "hiddenItems":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
     .end local v3    # "prefsEditor":Landroid/content/SharedPreferences$Editor;
     :cond_2
@@ -903,18 +903,18 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 705
+    .line 707
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->loadAndBindWorkspace()Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
 
     move-result-object v1
 
-    .line 707
+    .line 709
     .local v1, "loaderCallback":Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-eqz v4, :cond_3
 
-    .line 708
+    .line 710
     const-string v4, "Launcher.Model"
 
     const-string v5, "before waitForIdle : if stop, no need next steps."
@@ -923,7 +923,7 @@
 
     goto :goto_0
 
-    .line 680
+    .line 682
     .end local v1    # "loaderCallback":Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
     .end local v2    # "prefs":Landroid/content/SharedPreferences;
     :catchall_0
@@ -936,18 +936,18 @@
 
     throw v4
 
-    .line 711
+    .line 713
     .restart local v1    # "loaderCallback":Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
     .restart local v2    # "prefs":Landroid/content/SharedPreferences;
     :cond_3
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->waitForIdle()V
 
-    .line 713
+    .line 715
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-eqz v4, :cond_4
 
-    .line 714
+    .line 716
     const-string v4, "Launcher.Model"
 
     const-string v5, "after waitForIdle : if stop, no need next steps."
@@ -956,31 +956,31 @@
 
     goto :goto_0
 
-    .line 717
+    .line 719
     :cond_4
     if-eqz v1, :cond_5
 
-    .line 718
+    .line 720
     const-string v4, "Launcher.Model"
 
     const-string v5, "step 1-1: loading other workspace pages"
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 719
+    .line 721
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v4, v4, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
     invoke-virtual {v4, v1}, Lcom/android/launcher3/home/HomeLoader;->executeLoaderTask(Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;)V
 
-    .line 722
+    .line 724
     :cond_5
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-eqz v4, :cond_6
 
-    .line 723
+    .line 725
     const-string v4, "Launcher.Model"
 
     const-string v5, "step 1-2 : if stop, no need next steps."
@@ -989,7 +989,7 @@
 
     goto/16 :goto_0
 
-    .line 727
+    .line 729
     :cond_6
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
@@ -997,7 +997,7 @@
 
     if-eqz v4, :cond_8
 
-    .line 728
+    .line 730
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v4
@@ -1008,27 +1008,27 @@
 
     if-eqz v4, :cond_8
 
-    .line 729
+    .line 731
     const-string v4, "Launcher.Model"
 
     const-string v5, "step 2: HomeOnlyMode. skip loading all apps"
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 730
+    .line 732
     if-nez v1, :cond_7
 
-    .line 731
+    .line 733
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->endLoaderTask()V
 
-    .line 738
+    .line 740
     :cond_7
     :goto_1
     iget-boolean v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-eqz v4, :cond_9
 
-    .line 739
+    .line 741
     const-string v4, "Launcher.Model"
 
     const-string v5, "step 2-1 : if stop, no need next steps."
@@ -1037,7 +1037,7 @@
 
     goto/16 :goto_0
 
-    .line 734
+    .line 736
     :cond_8
     const-string v4, "Launcher.Model"
 
@@ -1045,12 +1045,12 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 735
+    .line 737
     invoke-direct {p0}, Lcom/android/launcher3/LauncherModel$LoaderTask;->loadAndBindAllApps()V
 
     goto :goto_1
 
-    .line 742
+    .line 744
     :cond_9
     const-string v4, "Launcher.Model"
 
@@ -1058,7 +1058,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 743
+    .line 745
     iget-object v4, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # invokes: Lcom/android/launcher3/LauncherModel;->loadWidgets([Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
@@ -1074,12 +1074,12 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 636
+    .line 638
     const/16 v0, -0x3e9
 
     if-ne p1, v0, :cond_0
 
-    .line 638
+    .line 640
     new-instance v0, Ljava/lang/RuntimeException;
 
     const-string v1, "Should not call runBindSynchronousPage() without valid page index"
@@ -1088,7 +1088,7 @@
 
     throw v0
 
-    .line 641
+    .line 643
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -1108,7 +1108,7 @@
 
     if-nez v0, :cond_2
 
-    .line 644
+    .line 646
     :cond_1
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -1118,7 +1118,7 @@
 
     throw v0
 
-    .line 646
+    .line 648
     :cond_2
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -1129,7 +1129,7 @@
 
     monitor-enter v1
 
-    .line 647
+    .line 649
     :try_start_0
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -1140,7 +1140,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 650
+    .line 652
     new-instance v0, Ljava/lang/RuntimeException;
 
     const-string v2, "Error! Background loading is already running"
@@ -1149,7 +1149,7 @@
 
     throw v0
 
-    .line 652
+    .line 654
     :catchall_0
     move-exception v0
 
@@ -1165,7 +1165,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 661
+    .line 663
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mHandler:Lcom/android/launcher3/common/model/DeferredHandler;
@@ -1175,14 +1175,14 @@
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/model/DeferredHandler;->flush()V
 
-    .line 666
+    .line 668
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
 
     invoke-virtual {v0, p1, v2}, Lcom/android/launcher3/home/HomeLoader;->bindItemsSync(ILcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 669
+    .line 671
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     const/4 v1, 0x1
@@ -1190,14 +1190,14 @@
     # invokes: Lcom/android/launcher3/LauncherModel;->loadWidgets([Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
     invoke-static {v0, v2, v2, v1}, Lcom/android/launcher3/LauncherModel;->access$100(Lcom/android/launcher3/LauncherModel;[Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)V
 
-    .line 673
+    .line 675
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mAppsLoader:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-virtual {v0, p1, v2}, Lcom/android/launcher3/allapps/model/AppsLoader;->bindItemsSync(ILcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 674
+    .line 676
     return-void
 .end method
 
@@ -1205,16 +1205,16 @@
     .locals 2
 
     .prologue
-    .line 772
+    .line 774
     monitor-enter p0
 
-    .line 773
+    .line 775
     const/4 v0, 0x1
 
     :try_start_0
     iput-boolean v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
-    .line 774
+    .line 776
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mHomeLoader:Lcom/android/launcher3/home/HomeLoader;
@@ -1223,7 +1223,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeLoader;->setLoaderTaskStop(Z)V
 
-    .line 775
+    .line 777
     iget-object v0, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     iget-object v0, v0, Lcom/android/launcher3/LauncherModel;->mWidgetLoader:Lcom/android/launcher3/widget/model/WidgetLoader;
@@ -1232,16 +1232,16 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/widget/model/WidgetLoader;->setLoaderTaskStop(Z)V
 
-    .line 776
+    .line 778
     invoke-virtual {p0}, Ljava/lang/Object;->notify()V
 
-    .line 777
+    .line 779
     monitor-exit p0
 
-    .line 778
+    .line 780
     return-void
 
-    .line 777
+    .line 779
     :catchall_0
     move-exception v0
 
@@ -1259,7 +1259,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 788
+    .line 790
     iget-object v2, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
     # getter for: Lcom/android/launcher3/LauncherModel;->mLock:Ljava/lang/Object;
@@ -1269,22 +1269,22 @@
 
     monitor-enter v2
 
-    .line 789
+    .line 791
     :try_start_0
     iget-boolean v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->mStopped:Z
 
     if-eqz v3, :cond_0
 
-    .line 790
+    .line 792
     monitor-exit v2
 
     move-object v0, v1
 
-    .line 806
+    .line 808
     :goto_0
     return-object v0
 
-    .line 793
+    .line 795
     :cond_0
     iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -1295,14 +1295,14 @@
 
     if-nez v3, :cond_1
 
-    .line 794
+    .line 796
     monitor-exit v2
 
     move-object v0, v1
 
     goto :goto_0
 
-    .line 797
+    .line 799
     :cond_1
     iget-object v3, p0, Lcom/android/launcher3/LauncherModel$LoaderTask;->this$0:Lcom/android/launcher3/LauncherModel;
 
@@ -1317,42 +1317,42 @@
 
     check-cast v0, Lcom/android/launcher3/LauncherModel$Callbacks;
 
-    .line 798
+    .line 800
     .local v0, "callbacks":Lcom/android/launcher3/LauncherModel$Callbacks;
     if-eq v0, p1, :cond_2
 
-    .line 799
+    .line 801
     monitor-exit v2
 
     move-object v0, v1
 
     goto :goto_0
 
-    .line 801
+    .line 803
     :cond_2
     if-nez v0, :cond_3
 
-    .line 802
+    .line 804
     const-string v3, "Launcher.Model"
 
     const-string v4, "no mCallbacks"
 
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 803
+    .line 805
     monitor-exit v2
 
     move-object v0, v1
 
     goto :goto_0
 
-    .line 806
+    .line 808
     :cond_3
     monitor-exit v2
 
     goto :goto_0
 
-    .line 807
+    .line 809
     .end local v0    # "callbacks":Lcom/android/launcher3/LauncherModel$Callbacks;
     :catchall_0
     move-exception v1

@@ -25,12 +25,12 @@
     .locals 1
 
     .prologue
-    .line 624
+    .line 620
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeDefaultLayoutParser$DefaultAppWidgetParser;-><init>(Lcom/android/launcher3/home/HomeDefaultLayoutParser;)V
 
-    .line 625
+    .line 621
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;->mRestoreWidgetId:I
@@ -44,7 +44,7 @@
     .param p2, "x1"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser$1;
 
     .prologue
-    .line 624
+    .line 620
     invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;-><init>(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)V
 
     return-void
@@ -60,7 +60,7 @@
     .param p5, "tableName"    # Ljava/lang/String;
 
     .prologue
-    .line 657
+    .line 653
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
@@ -72,13 +72,13 @@
 
     move-result-object v0
 
-    .line 659
+    .line 655
     .local v0, "appWidgetManager":Landroid/appwidget/AppWidgetManager;
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 660
+    .line 656
     .local v1, "options":Landroid/os/Bundle;
     const-string v2, "appWidgetIdForceAllocMode"
 
@@ -86,24 +86,24 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 661
+    .line 657
     const-string v2, "appWidgetIdForceAllocHostId"
 
     const/16 v3, 0x400
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 662
+    .line 658
     const-string v2, "Old_WidgetId"
 
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 663
+    .line 659
     const-string v2, "New_WidgetId"
 
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 665
+    .line 661
     iget v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;->mRestoreWidgetId:I
 
     invoke-virtual {v0, v2, p2, v1}, Landroid/appwidget/AppWidgetManager;->bindAppWidgetIdIfAllowed(ILandroid/content/ComponentName;Landroid/os/Bundle;)Z
@@ -112,14 +112,14 @@
 
     if-nez v2, :cond_0
 
-    .line 666
+    .line 662
     const-string v2, "Launcher.HomeRestore"
 
     const-string v3, "bindAppWidgetIdIfAllowed() return false"
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 667
+    .line 663
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoreAppWidgetId:Ljava/util/HashMap;
@@ -145,7 +145,7 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 670
+    .line 666
     :cond_0
     const/4 v2, 0x1
 
@@ -156,7 +156,7 @@
     .locals 1
 
     .prologue
-    .line 651
+    .line 647
     iget v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;->mRestoreWidgetId:I
 
     return v0
@@ -168,32 +168,32 @@
     .param p2, "className"    # Ljava/lang/String;
 
     .prologue
-    .line 637
+    .line 633
     invoke-super {p0, p1, p2}, Lcom/android/launcher3/home/HomeDefaultLayoutParser$DefaultAppWidgetParser;->getWidgetComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/ComponentName;
 
     move-result-object v1
 
-    .line 638
+    .line 634
     .local v1, "cn":Landroid/content/ComponentName;
     if-nez v1, :cond_0
 
-    .line 639
+    .line 635
     new-instance v1, Landroid/content/ComponentName;
 
     .end local v1    # "cn":Landroid/content/ComponentName;
     invoke-direct {v1, p1, p2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 640
+    .line 636
     .restart local v1    # "cn":Landroid/content/ComponentName;
     invoke-static {v1}, Lcom/android/launcher3/common/bnr/LauncherBnrHelper;->getChangedWidgetComponent(Landroid/content/ComponentName;)Landroid/content/ComponentName;
 
     move-result-object v0
 
-    .line 641
+    .line 637
     .local v0, "changedComponent":Landroid/content/ComponentName;
     if-eqz v0, :cond_0
 
-    .line 646
+    .line 642
     .end local v0    # "changedComponent":Landroid/content/ComponentName;
     :goto_0
     return-object v0
@@ -216,7 +216,7 @@
     .end annotation
 
     .prologue
-    .line 630
+    .line 626
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
@@ -236,7 +236,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 631
+    .line 627
     const-string v0, "appWidgetID"
 
     invoke-static {p1, v0}, Lcom/android/launcher3/common/model/DefaultLayoutParser;->getAttributeValue(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
@@ -249,7 +249,7 @@
 
     iput v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;->mRestoreWidgetId:I
 
-    .line 632
+    .line 628
     invoke-super {p0, p1, p2}, Lcom/android/launcher3/home/HomeDefaultLayoutParser$DefaultAppWidgetParser;->parseAndAdd(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)J
 
     move-result-wide v0

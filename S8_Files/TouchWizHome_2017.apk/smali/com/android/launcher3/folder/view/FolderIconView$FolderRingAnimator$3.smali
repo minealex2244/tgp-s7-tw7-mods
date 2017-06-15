@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     .prologue
-    .line 386
+    .line 391
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -39,14 +39,14 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 389
+    .line 394
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     iget-object v0, v0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     if-eqz v0, :cond_0
 
-    .line 390
+    .line 395
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$3;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     iget-object v0, v0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
@@ -55,7 +55,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/common/base/view/CellLayout;->hideFolderAccept(Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;)V
 
-    .line 392
+    .line 397
     :cond_0
     return-void
 .end method

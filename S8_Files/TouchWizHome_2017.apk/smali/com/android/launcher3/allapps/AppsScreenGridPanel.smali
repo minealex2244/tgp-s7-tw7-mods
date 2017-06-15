@@ -118,7 +118,7 @@
 
     iput-object v0, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mCancleButtonClickListener:Landroid/view/View$OnClickListener;
 
-    .line 383
+    .line 403
     new-instance v0, Lcom/android/launcher3/allapps/AppsScreenGridPanel$4;
 
     invoke-direct {v0, p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel$4;-><init>(Lcom/android/launcher3/allapps/AppsScreenGridPanel;)V
@@ -190,7 +190,7 @@
 
     const/4 v8, 0x0
 
-    .line 330
+    .line 350
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getContext()Landroid/content/Context;
 
     move-result-object v6
@@ -199,7 +199,7 @@
 
     move-result v0
 
-    .line 331
+    .line 351
     .local v0, "isEnableBtnBg":Z
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getResources()Landroid/content/res/Resources;
 
@@ -211,7 +211,7 @@
 
     move-result v3
 
-    .line 332
+    .line 352
     .local v3, "padding":I
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getResources()Landroid/content/res/Resources;
 
@@ -223,7 +223,7 @@
 
     move-result v2
 
-    .line 334
+    .line 354
     .local v2, "margin":I
     new-instance v5, Landroid/widget/TextView;
 
@@ -231,55 +231,55 @@
 
     invoke-direct {v5, v6}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 335
+    .line 355
     .local v5, "screenGridButton":Landroid/widget/TextView;
     invoke-direct {p0, p1}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getButtonResId(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 337
+    .line 357
     .local v4, "resId":I
     invoke-virtual {v5, p1}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 338
+    .line 358
     invoke-virtual {v5, v8, v4, v8, v8}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
-    .line 339
+    .line 359
     const v6, 0x7f10000c
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setTextAppearance(I)V
 
-    .line 340
+    .line 360
     iget-object v6, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridButtonClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 341
+    .line 361
     iget-object v6, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mAppsScreenGridPanelKeyListener:Landroid/view/View$OnKeyListener;
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    .line 342
+    .line 362
     const v6, 0x7f02006f
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
-    .line 344
+    .line 364
     if-eqz v0, :cond_0
 
-    .line 345
+    .line 365
     const v6, 0x7f0200d0
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
-    .line 346
+    .line 366
     invoke-virtual {v5, v3, v3, v3, v3}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 349
+    .line 369
     :cond_0
     invoke-direct {p0, v5, p1}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->setGridBtnText(Landroid/widget/TextView;Ljava/lang/String;)V
 
-    .line 351
+    .line 371
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
@@ -292,7 +292,7 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setWidth(I)V
 
-    .line 352
+    .line 372
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
@@ -305,59 +305,59 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setHeight(I)V
 
-    .line 353
+    .line 373
     const/16 v6, 0x31
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setGravity(I)V
 
-    .line 354
+    .line 374
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setSelected(Z)V
 
-    .line 355
+    .line 375
     const/4 v6, 0x1
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setFocusable(Z)V
 
-    .line 357
+    .line 377
     new-instance v1, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v1, v9, v9}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 358
+    .line 378
     .local v1, "llp":Landroid/widget/LinearLayout$LayoutParams;
     invoke-virtual {v1, v2, v8, v2, v8}, Landroid/widget/LinearLayout$LayoutParams;->setMargins(IIII)V
 
-    .line 360
+    .line 380
     invoke-virtual {v5, v1}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 362
+    .line 382
     iget-object v6, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v6, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 363
+    .line 383
     iget-object v6, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
     if-nez v6, :cond_1
 
-    .line 364
+    .line 384
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v6, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
-    .line 366
+    .line 386
     :cond_1
     iget-object v6, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 367
+    .line 387
     return-void
 .end method
 
@@ -415,7 +415,7 @@
     .param p2, "buttonName"    # Ljava/lang/String;
 
     .prologue
-    .line 370
+    .line 390
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -428,7 +428,7 @@
 
     move-result-object v1
 
-    .line 372
+    .line 392
     .local v1, "currentLanguage":Ljava/lang/String;
     const-string v2, "ar"
 
@@ -446,7 +446,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 374
+    .line 394
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -478,7 +478,7 @@
 
     const/4 v3, 0x0
 
-    .line 376
+    .line 396
     invoke-virtual {p2, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -487,7 +487,7 @@
 
     move-result-object v3
 
-    .line 375
+    .line 395
     invoke-static {v3, v1}, Lcom/android/launcher3/Utilities;->toArabicDigits(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -500,16 +500,16 @@
 
     move-result-object v0
 
-    .line 377
+    .line 397
     .local v0, "arabicButtonName":Ljava/lang/String;
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 381
+    .line 401
     .end local v0    # "arabicButtonName":Ljava/lang/String;
     :goto_0
     return-void
 
-    .line 379
+    .line 399
     :cond_1
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -522,12 +522,12 @@
     .param p2, "setSelected"    # Z
 
     .prologue
-    .line 244
+    .line 264
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 245
+    .line 265
     .local v1, "res":Landroid/content/res/Resources;
     const v4, 0x7f080092
 
@@ -535,7 +535,7 @@
 
     move-result-object v3
 
-    .line 246
+    .line 266
     .local v3, "selected":Ljava/lang/String;
     const v4, 0x7f080068
 
@@ -543,13 +543,13 @@
 
     move-result-object v0
 
-    .line 247
+    .line 267
     .local v0, "notSelected":Ljava/lang/String;
     if-eqz p2, :cond_0
 
     move-object v2, v3
 
-    .line 249
+    .line 269
     .local v2, "selectTTS":Ljava/lang/String;
     :goto_0
     new-instance v4, Ljava/lang/StringBuilder;
@@ -582,14 +582,14 @@
 
     iput-object v4, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mSpanDescriptionFormat:Ljava/lang/String;
 
-    .line 250
+    .line 270
     return-void
 
     .end local v2    # "selectTTS":Ljava/lang/String;
     :cond_0
     move-object v2, v0
 
-    .line 247
+    .line 267
     goto :goto_0
 .end method
 
@@ -717,13 +717,13 @@
     .param p1, "button"    # Landroid/widget/TextView;
 
     .prologue
-    .line 284
+    .line 304
     if-eqz p1, :cond_0
 
-    .line 285
+    .line 305
     const/4 v0, 0x0
 
-    .line 286
+    .line 306
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -734,10 +734,10 @@
 
     move-result v1
 
-    .line 285
+    .line 305
     invoke-virtual {p1, v0, v1}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 288
+    .line 308
     :cond_0
     return-void
 .end method
@@ -763,7 +763,7 @@
     .locals 1
 
     .prologue
-    .line 291
+    .line 311
     iget-object v0, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnLayout:Landroid/widget/LinearLayout;
 
     return-object v0
@@ -773,7 +773,7 @@
     .locals 1
 
     .prologue
-    .line 263
+    .line 283
     iget-object v0, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mScreenGridTopContainer:Landroid/view/View;
 
     return-object v0
@@ -890,14 +890,14 @@
     .locals 5
 
     .prologue
-    .line 267
+    .line 287
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
 
     check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    .line 268
+    .line 288
     .local v2, "marginLp":Landroid/view/ViewGroup$MarginLayoutParams;
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getResources()Landroid/content/res/Resources;
 
@@ -905,35 +905,35 @@
 
     const v4, 0x7f09004c
 
-    .line 269
+    .line 289
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     move-result v3
 
     iput v3, v2, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
-    .line 270
+    .line 290
     invoke-virtual {p0, v2}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 272
+    .line 292
     iget-object v3, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mLauncher:Lcom/android/launcher3/Launcher;
 
     const v4, 0x7f0f007a
 
-    .line 273
+    .line 293
     invoke-virtual {v3, v4}, Lcom/android/launcher3/Launcher;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    .line 274
+    .line 294
     .local v0, "buttonLayout":Landroid/widget/LinearLayout;
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
-    .line 275
+    .line 295
     .local v1, "buttonLayoutLp":Landroid/view/ViewGroup$LayoutParams;
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getResources()Landroid/content/res/Resources;
 
@@ -941,31 +941,31 @@
 
     const v4, 0x7f09004d
 
-    .line 276
+    .line 296
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     move-result v3
 
     iput v3, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 277
+    .line 297
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 279
+    .line 299
     iget-object v3, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mApplyView:Landroid/view/View;
 
     check-cast v3, Landroid/widget/TextView;
 
     invoke-direct {p0, v3}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->updateTextSize(Landroid/widget/TextView;)V
 
-    .line 280
+    .line 300
     iget-object v3, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mCancelView:Landroid/view/View;
 
     check-cast v3, Landroid/widget/TextView;
 
     invoke-direct {p0, v3}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->updateTextSize(Landroid/widget/TextView;)V
 
-    .line 281
+    .line 301
     return-void
 .end method
 
@@ -1276,20 +1276,113 @@
     goto :goto_0
 .end method
 
+.method public setScreenGridProxy(Ljava/lang/String;)V
+    .locals 11
+    .param p1, "gridOption"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v7, 0x0
+
+    .line 244
+    if-nez p1, :cond_1
+
+    .line 261
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 247
+    :cond_1
+    const/4 v4, 0x0
+
+    .line 248
+    .local v4, "child":I
+    invoke-virtual {p1, v7}, Ljava/lang/String;->charAt(I)C
+
+    move-result v2
+
+    .line 249
+    .local v2, "cellX":I
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v6
+
+    add-int/lit8 v6, v6, -0x1
+
+    invoke-virtual {p1, v6}, Ljava/lang/String;->charAt(I)C
+
+    move-result v3
+
+    .line 250
+    .local v3, "cellY":I
+    iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mAppsGridButtonMap:[Ljava/lang/String;
+
+    array-length v9, v8
+
+    move v6, v7
+
+    :goto_1
+    if-ge v6, v9, :cond_0
+
+    aget-object v5, v8, v6
+
+    .line 251
+    .local v5, "map":Ljava/lang/String;
+    invoke-virtual {v5, v7}, Ljava/lang/String;->charAt(I)C
+
+    move-result v0
+
+    .line 252
+    .local v0, "appsX":I
+    const/4 v10, 0x2
+
+    invoke-virtual {v5, v10}, Ljava/lang/String;->charAt(I)C
+
+    move-result v1
+
+    .line 254
+    .local v1, "appsY":I
+    if-ne v2, v0, :cond_2
+
+    if-ne v3, v1, :cond_2
+
+    .line 255
+    iget-object v6, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridButtonClickListener:Landroid/view/View$OnClickListener;
+
+    iget-object v7, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnLayout:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v7, v4}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v7
+
+    invoke-interface {v6, v7}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
+
+    goto :goto_0
+
+    .line 258
+    :cond_2
+    add-int/lit8 v4, v4, 0x1
+
+    .line 250
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_1
+.end method
+
 .method public updateButtonStatus()V
     .locals 5
 
     .prologue
     const/4 v4, 0x0
 
-    .line 253
+    .line 273
     iget-object v2, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mLauncher:Lcom/android/launcher3/Launcher;
 
     invoke-virtual {v2}, Lcom/android/launcher3/Launcher;->getDeviceProfile()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
     move-result-object v1
 
-    .line 254
+    .line 274
     .local v1, "grid":Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1325,28 +1418,28 @@
 
     move-result-object v0
 
-    .line 256
+    .line 276
     .local v0, "currentGrid":Ljava/lang/String;
     invoke-direct {p0, v0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->updateBtnForScreenGrid(Ljava/lang/String;)V
 
-    .line 257
+    .line 277
     iget-object v2, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mApplyView:Landroid/view/View;
 
     invoke-virtual {v2, v4}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 258
+    .line 278
     iget-object v2, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mApplyView:Landroid/view/View;
 
     const v3, 0x3ecccccd    # 0.4f
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setAlpha(F)V
 
-    .line 259
+    .line 279
     iget-object v2, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mApplyView:Landroid/view/View;
 
     invoke-virtual {p0, v2, v4}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->setApplyDescription(Landroid/view/View;Z)V
 
-    .line 260
+    .line 280
     return-void
 .end method
 
@@ -1354,7 +1447,7 @@
     .locals 12
 
     .prologue
-    .line 295
+    .line 315
     invoke-virtual {p0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->getContext()Landroid/content/Context;
 
     move-result-object v8
@@ -1363,7 +1456,7 @@
 
     move-result-object v2
 
-    .line 296
+    .line 316
     .local v2, "gridSet":Ljava/lang/String;
     const-string v8, "AppsScreenGridPanel"
 
@@ -1387,7 +1480,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 297
+    .line 317
     if-eqz v2, :cond_0
 
     invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
@@ -1396,7 +1489,7 @@
 
     if-nez v8, :cond_0
 
-    .line 298
+    .line 318
     const-string v8, "\\|"
 
     invoke-virtual {v2, v8}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -1405,7 +1498,7 @@
 
     iput-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mScreenGridButtonMap:[Ljava/lang/String;
 
-    .line 303
+    .line 323
     :goto_0
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mLauncher:Lcom/android/launcher3/Launcher;
 
@@ -1413,7 +1506,7 @@
 
     move-result-object v1
 
-    .line 304
+    .line 324
     .local v1, "deviceProfile":Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -1449,7 +1542,7 @@
 
     move-result-object v0
 
-    .line 306
+    .line 326
     .local v0, "currentGrid":Ljava/lang/String;
     const/4 v4, 0x0
 
@@ -1463,7 +1556,7 @@
 
     if-ge v4, v8, :cond_1
 
-    .line 307
+    .line 327
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1478,7 +1571,7 @@
 
     invoke-direct {p0, v8, v9}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->setGridBtnText(Landroid/widget/TextView;Ljava/lang/String;)V
 
-    .line 308
+    .line 328
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1493,12 +1586,12 @@
 
     invoke-virtual {v8, v9}, Landroid/widget/TextView;->setTag(Ljava/lang/Object;)V
 
-    .line 306
+    .line 326
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
-    .line 300
+    .line 320
     .end local v0    # "currentGrid":Ljava/lang/String;
     .end local v1    # "deviceProfile":Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
     .end local v4    # "i":I
@@ -1517,7 +1610,7 @@
 
     goto :goto_0
 
-    .line 310
+    .line 330
     .restart local v0    # "currentGrid":Ljava/lang/String;
     .restart local v1    # "deviceProfile":Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
     .restart local v4    # "i":I
@@ -1534,7 +1627,7 @@
 
     if-ge v8, v9, :cond_4
 
-    .line 311
+    .line 331
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
     iget-object v9, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mScreenGridButtonMap:[Ljava/lang/String;
@@ -1543,7 +1636,7 @@
 
     iget-object v10, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
-    .line 312
+    .line 332
     invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
 
     move-result v10
@@ -1554,12 +1647,12 @@
 
     sub-int/2addr v10, v11
 
-    .line 311
+    .line 331
     invoke-virtual {v8, v9, v10}, Ljava/util/ArrayList;->subList(II)Ljava/util/List;
 
     move-result-object v7
 
-    .line 313
+    .line 333
     .local v7, "views":Ljava/util/List;, "Ljava/util/List<Landroid/widget/TextView;>;"
     invoke-interface {v7}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1578,36 +1671,36 @@
 
     check-cast v5, Landroid/widget/TextView;
 
-    .line 314
+    .line 334
     .local v5, "view":Landroid/widget/TextView;
     iget-object v9, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v9, v5}, Landroid/widget/LinearLayout;->removeView(Landroid/view/View;)V
 
-    .line 315
+    .line 335
     iget-object v9, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
     invoke-virtual {v9, v5}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 317
+    .line 337
     .end local v5    # "view":Landroid/widget/TextView;
     :cond_2
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnLayout:Landroid/widget/LinearLayout;
 
     invoke-virtual {v8}, Landroid/widget/LinearLayout;->invalidate()V
 
-    .line 326
+    .line 346
     .end local v7    # "views":Ljava/util/List;, "Ljava/util/List<Landroid/widget/TextView;>;"
     :cond_3
     :goto_3
     invoke-direct {p0, v0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->updateBtnForScreenGrid(Ljava/lang/String;)V
 
-    .line 327
+    .line 347
     return-void
 
-    .line 318
+    .line 338
     :cond_4
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mScreenGridButtonMap:[Ljava/lang/String;
 
@@ -1621,39 +1714,39 @@
 
     if-le v8, v9, :cond_3
 
-    .line 319
+    .line 339
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnTextViews:Ljava/util/ArrayList;
 
     invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
 
     move-result v6
 
-    .line 320
+    .line 340
     .local v6, "viewSize":I
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mScreenGridButtonMap:[Ljava/lang/String;
 
     array-length v3, v8
 
-    .line 321
+    .line 341
     .local v3, "gridSize":I
     move v4, v6
 
     :goto_4
     if-ge v4, v3, :cond_5
 
-    .line 322
+    .line 342
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mScreenGridButtonMap:[Ljava/lang/String;
 
     aget-object v8, v8, v4
 
     invoke-direct {p0, v8, v0}, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->addGridButton(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 321
+    .line 341
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_4
 
-    .line 324
+    .line 344
     :cond_5
     iget-object v8, p0, Lcom/android/launcher3/allapps/AppsScreenGridPanel;->mGridBtnLayout:Landroid/widget/LinearLayout;
 

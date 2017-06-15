@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 444
+    .line 532
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$12;->val$context:Landroid/content/Context;
@@ -42,310 +42,596 @@
 
 # virtual methods
 .method public run()V
-    .locals 14
+    .locals 27
 
     .prologue
-    .line 447
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->val$context:Landroid/content/Context;
+    .line 535
+    move-object/from16 v0, p0
 
-    const-string v10, "SASettingPref"
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->val$context:Landroid/content/Context;
 
-    const/4 v11, 0x0
+    move-object/from16 v19, v0
 
-    invoke-virtual {v9, v10, v11}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual/range {v19 .. v19}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v7
+    move-result-object v16
 
-    .line 449
-    .local v7, "saPrefs":Landroid/content/SharedPreferences;
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->val$context:Landroid/content/Context;
+    .line 536
+    .local v16, "res":Landroid/content/res/Resources;
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
-    invoke-virtual {v9}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    move-result-object v19
+
+    invoke-virtual/range {v19 .. v19}, Lcom/android/launcher3/LauncherAppState;->isEasyModeEnabled()Z
+
+    move-result v19
+
+    if-eqz v19, :cond_1
+
+    const/16 v5, 0x35
+
+    .line 539
+    .local v5, "currentMode":C
+    :goto_0
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    # getter for: Lcom/android/launcher3/util/logging/SALogging;->mModeList:[C
+    invoke-static/range {v19 .. v19}, Lcom/android/launcher3/util/logging/SALogging;->access$300(Lcom/android/launcher3/util/logging/SALogging;)[C
+
+    move-result-object v21
+
+    move-object/from16 v0, v21
+
+    array-length v0, v0
+
+    move/from16 v22, v0
+
+    const/16 v19, 0x0
+
+    move/from16 v20, v19
+
+    :goto_1
+    move/from16 v0, v20
+
+    move/from16 v1, v22
+
+    if-ge v0, v1, :cond_8
+
+    aget-char v11, v21, v20
+
+    .line 540
+    .local v11, "mode":C
+    if-ne v5, v11, :cond_5
+
+    .line 541
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    const/16 v23, -0x66
+
+    const/16 v24, 0x1
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, v23
+
+    move/from16 v2, v24
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/util/logging/SALogging;->getItemCountByContainer(IZ)I
+
+    move-result v7
+
+    .line 543
+    .local v7, "folderCount":I
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    const v23, 0x7f080198
+
+    move-object/from16 v0, v16
+
+    move/from16 v1, v23
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v23
+
+    invoke-virtual {v0, v1, v7}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
+
+    .line 545
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    invoke-virtual/range {v19 .. v19}, Lcom/android/launcher3/util/logging/SALogging;->getAppsPageCount()I
+
+    move-result v13
+
+    .line 546
+    .local v13, "pageCount":I
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    const v23, 0x7f08019a
+
+    move-object/from16 v0, v16
+
+    move/from16 v1, v23
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v23
+
+    invoke-virtual {v0, v1, v13}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
+
+    .line 548
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    const/16 v23, -0x66
+
+    const/16 v24, 0x0
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, v23
+
+    move/from16 v2, v24
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/util/logging/SALogging;->getItemCountByContainer(IZ)I
+
+    move-result v9
+
+    .line 550
+    .local v9, "iconCount":I
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    const v23, 0x7f080195
+
+    move-object/from16 v0, v16
+
+    move/from16 v1, v23
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v23
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v23
+
+    invoke-virtual {v0, v1, v9}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
+
+    .line 552
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    const v23, 0x7f080199
+
+    move-object/from16 v0, v16
+
+    move/from16 v1, v23
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v23
+
+    sget-object v24, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
+
+    const/16 v25, 0x0
+
+    .line 553
+    invoke-static/range {v24 .. v25}, Lcom/android/launcher3/util/logging/SALogUtils;->countFolderColorNotDefault(Landroid/content/Context;Z)I
+
+    move-result v24
+
+    .line 552
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v23
+
+    move/from16 v2, v24
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
+
+    .line 555
+    sget-object v19, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
+
+    .line 556
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
+
+    move-result-object v23
+
+    const/16 v24, 0x0
+
+    .line 555
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v23
+
+    move/from16 v2, v24
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v15
+
+    .line 557
+    .local v15, "prefs":Landroid/content/SharedPreferences;
+    const-string v19, "AppsController.ViewType"
+
+    const/16 v23, 0x0
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v23
+
+    invoke-interface {v15, v0, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v18
+
+    .line 558
+    .local v18, "viewType":Ljava/lang/String;
+    if-eqz v18, :cond_0
+
+    const-string v19, "CUSTOM_GRID"
+
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v19
+
+    if-eqz v19, :cond_3
+
+    :cond_0
+    const/4 v10, 0x1
+
+    .line 559
+    .local v10, "isCustom":Z
+    :goto_2
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v23, v0
+
+    const v19, 0x7f08019c
+
+    move-object/from16 v0, v16
+
+    move/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v24
+
+    if-eqz v10, :cond_4
+
+    const/16 v19, 0x1
+
+    :goto_3
+    move-object/from16 v0, v23
+
+    move-object/from16 v1, v24
+
+    move/from16 v2, v19
+
+    invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
+
+    .line 562
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    const/16 v23, 0x2
+
+    move-object/from16 v0, v19
+
+    move/from16 v1, v23
+
+    # invokes: Lcom/android/launcher3/util/logging/SALogging;->getFolderAppsCountAndColorDetail(I)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/launcher3/util/logging/SALogging;->access$400(Lcom/android/launcher3/util/logging/SALogging;I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 450
-    .local v6, "res":Landroid/content/res/Resources;
-    const v9, 0x7f080198
+    .line 563
+    .local v6, "detail":Ljava/lang/String;
+    move-object/from16 v0, p0
 
-    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    move-result-object v9
+    move-object/from16 v19, v0
 
-    invoke-interface {v7, v9}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    const v23, 0x7f080197
 
-    move-result v9
+    move-object/from16 v0, v16
 
-    if-nez v9, :cond_0
+    move/from16 v1, v23
 
-    .line 451
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
-    const/16 v10, -0x66
+    move-result-object v23
 
-    const/4 v11, 0x1
+    move-object/from16 v0, v19
 
-    invoke-virtual {v9, v10, v11}, Lcom/android/launcher3/util/logging/SALogging;->getItemCountByContainer(IZ)I
+    move-object/from16 v1, v23
 
-    move-result v1
+    invoke-virtual {v0, v1, v6}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 453
-    .local v1, "folderCount":I
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    .line 565
+    const/16 v19, 0x2
 
-    const v10, 0x7f080198
+    move/from16 v0, v19
 
-    invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    new-array v8, v0, [I
 
-    move-result-object v10
+    .line 566
+    .local v8, "gridXY":[I
+    sget-object v19, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
 
-    invoke-virtual {v9, v10, v1}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
+    move-object/from16 v0, v19
 
-    .line 455
-    .end local v1    # "folderCount":I
-    :cond_0
-    const v9, 0x7f08019a
+    invoke-static {v0, v8}, Lcom/android/launcher3/util/ScreenGridUtilities;->loadCurrentAppsGridSize(Landroid/content/Context;[I)V
 
-    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 567
+    move-object/from16 v0, p0
 
-    move-result-object v9
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    invoke-interface {v7, v9}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    move-object/from16 v19, v0
 
-    move-result v9
+    const/16 v23, 0x0
 
-    if-nez v9, :cond_1
+    aget v23, v8, v23
 
-    .line 456
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    const/16 v24, 0x1
 
-    invoke-virtual {v9}, Lcom/android/launcher3/util/logging/SALogging;->getAppsPageCount()I
+    aget v24, v8, v24
 
-    move-result v4
+    const/16 v25, 0x1
 
-    .line 457
-    .local v4, "pageCount":I
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    const/16 v26, 0x0
 
-    const v10, 0x7f08019a
+    move-object/from16 v0, v19
 
-    invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    move/from16 v1, v23
 
-    move-result-object v10
+    move/from16 v2, v24
 
-    invoke-virtual {v9, v10, v4}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
+    move/from16 v3, v25
 
-    .line 459
-    .end local v4    # "pageCount":I
+    move/from16 v4, v26
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->insertChangeGridLog(IIZZ)V
+
+    .line 539
+    .end local v6    # "detail":Ljava/lang/String;
+    .end local v7    # "folderCount":I
+    .end local v8    # "gridXY":[I
+    .end local v9    # "iconCount":I
+    .end local v10    # "isCustom":Z
+    .end local v13    # "pageCount":I
+    .end local v15    # "prefs":Landroid/content/SharedPreferences;
+    .end local v18    # "viewType":Ljava/lang/String;
+    :goto_4
+    add-int/lit8 v19, v20, 0x1
+
+    move/from16 v20, v19
+
+    goto/16 :goto_1
+
+    .line 537
+    .end local v5    # "currentMode":C
+    .end local v11    # "mode":C
     :cond_1
-    const v9, 0x7f080195
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
-    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    move-result-object v19
 
-    move-result-object v9
+    invoke-virtual/range {v19 .. v19}, Lcom/android/launcher3/LauncherAppState;->isHomeOnlyModeEnabled()Z
 
-    invoke-interface {v7, v9}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    move-result v19
 
-    move-result v9
+    if-eqz v19, :cond_2
 
-    if-nez v9, :cond_2
+    const/16 v5, 0x33
 
-    .line 460
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    goto/16 :goto_0
 
-    const/16 v10, -0x66
-
-    const/4 v11, 0x0
-
-    invoke-virtual {v9, v10, v11}, Lcom/android/launcher3/util/logging/SALogging;->getItemCountByContainer(IZ)I
-
-    move-result v3
-
-    .line 462
-    .local v3, "iconCount":I
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
-
-    const v10, 0x7f080195
-
-    invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v9, v10, v3}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
-
-    .line 464
-    .end local v3    # "iconCount":I
     :cond_2
-    const v9, 0x7f080199
+    const/16 v5, 0x30
 
-    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    goto/16 :goto_0
 
-    move-result-object v9
-
-    invoke-interface {v7, v9}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
-    move-result v9
-
-    if-nez v9, :cond_3
-
-    .line 465
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
-
-    const v10, 0x7f080199
-
-    invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v10
-
-    sget-object v11, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
-
-    const/4 v12, 0x0
-
-    .line 466
-    invoke-static {v11, v12}, Lcom/android/launcher3/util/logging/SALogUtils;->countFolderColorNotDefault(Landroid/content/Context;Z)I
-
-    move-result v11
-
-    .line 465
-    invoke-virtual {v9, v10, v11}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
-
-    .line 468
+    .line 558
+    .restart local v5    # "currentMode":C
+    .restart local v7    # "folderCount":I
+    .restart local v9    # "iconCount":I
+    .restart local v11    # "mode":C
+    .restart local v13    # "pageCount":I
+    .restart local v15    # "prefs":Landroid/content/SharedPreferences;
+    .restart local v18    # "viewType":Ljava/lang/String;
     :cond_3
-    const v9, 0x7f08019c
-
-    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-interface {v7, v9}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
-    move-result v9
-
-    if-nez v9, :cond_4
-
-    .line 469
-    sget-object v9, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
-
-    .line 470
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
-
-    move-result-object v10
-
-    const/4 v11, 0x0
-
-    .line 469
-    invoke-virtual {v9, v10, v11}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v5
-
-    .line 471
-    .local v5, "prefs":Landroid/content/SharedPreferences;
-    const-string v9, "AppsController.ViewType"
-
     const/4 v10, 0x0
 
-    invoke-interface {v5, v9, v10}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    goto/16 :goto_2
 
-    move-result-object v8
-
-    .line 472
-    .local v8, "viewType":Ljava/lang/String;
-    if-eqz v8, :cond_4
-
-    .line 473
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
-
-    const v10, 0x7f08019c
-
-    invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v9, v10, v8}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 476
-    .end local v5    # "prefs":Landroid/content/SharedPreferences;
-    .end local v8    # "viewType":Ljava/lang/String;
+    .line 559
+    .restart local v10    # "isCustom":Z
     :cond_4
-    const v9, 0x7f080197
+    const/16 v19, 0x0
 
-    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    goto :goto_3
 
-    move-result-object v9
-
-    invoke-interface {v7, v9}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
-    move-result v9
-
-    if-nez v9, :cond_5
-
-    .line 477
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
-
-    const/4 v10, 0x2
-
-    # invokes: Lcom/android/launcher3/util/logging/SALogging;->getFolderAppsCountAndColorDetail(I)Ljava/lang/String;
-    invoke-static {v9, v10}, Lcom/android/launcher3/util/logging/SALogging;->access$200(Lcom/android/launcher3/util/logging/SALogging;I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 478
-    .local v0, "detail":Ljava/lang/String;
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
-
-    const v10, 0x7f080197
-
-    invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v9, v10, v0}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 480
-    .end local v0    # "detail":Ljava/lang/String;
+    .line 569
+    .end local v7    # "folderCount":I
+    .end local v9    # "iconCount":I
+    .end local v10    # "isCustom":Z
+    .end local v13    # "pageCount":I
+    .end local v15    # "prefs":Landroid/content/SharedPreferences;
+    .end local v18    # "viewType":Ljava/lang/String;
     :cond_5
-    const v9, 0x7f08019b
+    move-object/from16 v0, p0
 
-    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->val$context:Landroid/content/Context;
 
-    move-result-object v9
+    move-object/from16 v19, v0
 
-    invoke-interface {v7, v9}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
+    const-string v23, "SASettingPref"
 
-    move-result v9
+    const/16 v24, 0x0
 
-    if-nez v9, :cond_6
+    move-object/from16 v0, v19
 
-    .line 481
-    const/4 v9, 0x2
+    move-object/from16 v1, v23
 
-    new-array v2, v9, [I
+    move/from16 v2, v24
 
-    .line 482
-    .local v2, "gridXY":[I
-    sget-object v9, Lcom/android/launcher3/util/logging/Logging;->sContext:Landroid/content/Context;
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    invoke-static {v9, v2}, Lcom/android/launcher3/util/ScreenGridUtilities;->loadCurrentAppsGridSize(Landroid/content/Context;[I)V
+    move-result-object v19
 
-    .line 483
-    iget-object v9, p0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+    .line 570
+    invoke-interface/range {v19 .. v19}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    const/4 v10, 0x0
+    move-result-object v14
 
-    aget v10, v2, v10
+    .line 571
+    .local v14, "prefEditor":Landroid/content/SharedPreferences$Editor;
+    move-object/from16 v0, p0
 
-    const/4 v11, 0x1
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
-    aget v11, v2, v11
+    move-object/from16 v19, v0
 
-    const/4 v12, 0x1
+    # getter for: Lcom/android/launcher3/util/logging/SALogging;->mStatusIDMap:Ljava/util/HashMap;
+    invoke-static/range {v19 .. v19}, Lcom/android/launcher3/util/logging/SALogging;->access$500(Lcom/android/launcher3/util/logging/SALogging;)Ljava/util/HashMap;
 
-    const/4 v13, 0x0
+    move-result-object v19
 
-    invoke-virtual {v9, v10, v11, v12, v13}, Lcom/android/launcher3/util/logging/SALogging;->insertChangeGridLog(IIZZ)V
+    invoke-virtual/range {v19 .. v19}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
-    .line 485
-    .end local v2    # "gridXY":[I
+    move-result-object v19
+
+    invoke-interface/range {v19 .. v19}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v23
+
     :cond_6
+    :goto_5
+    invoke-interface/range {v23 .. v23}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v19
+
+    if-eqz v19, :cond_7
+
+    invoke-interface/range {v23 .. v23}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v17
+
+    check-cast v17, Ljava/lang/String;
+
+    .line 572
+    .local v17, "statusID":Ljava/lang/String;
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    # getter for: Lcom/android/launcher3/util/logging/SALogging;->mStatusIDMap:Ljava/util/HashMap;
+    invoke-static/range {v19 .. v19}, Lcom/android/launcher3/util/logging/SALogging;->access$500(Lcom/android/launcher3/util/logging/SALogging;)Ljava/util/HashMap;
+
+    move-result-object v19
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v17
+
+    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v19
+
+    check-cast v19, Ljava/lang/String;
+
+    const-string v24, "status_apps"
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v24
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v19
+
+    if-eqz v19, :cond_6
+
+    .line 573
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/launcher3/util/logging/SALogging$12;->this$0:Lcom/android/launcher3/util/logging/SALogging;
+
+    move-object/from16 v19, v0
+
+    move-object/from16 v0, v19
+
+    move-object/from16 v1, v17
+
+    # invokes: Lcom/android/launcher3/util/logging/SALogging;->changeIdByMode(Ljava/lang/String;C)Ljava/lang/String;
+    invoke-static {v0, v1, v11}, Lcom/android/launcher3/util/logging/SALogging;->access$600(Lcom/android/launcher3/util/logging/SALogging;Ljava/lang/String;C)Ljava/lang/String;
+
+    move-result-object v12
+
+    .line 574
+    .local v12, "otherModeID":Ljava/lang/String;
+    invoke-interface {v14, v12}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    goto :goto_5
+
+    .line 577
+    .end local v12    # "otherModeID":Ljava/lang/String;
+    .end local v17    # "statusID":Ljava/lang/String;
+    :cond_7
+    invoke-interface {v14}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    goto/16 :goto_4
+
+    .line 580
+    .end local v11    # "mode":C
+    .end local v14    # "prefEditor":Landroid/content/SharedPreferences$Editor;
+    :cond_8
     return-void
 .end method

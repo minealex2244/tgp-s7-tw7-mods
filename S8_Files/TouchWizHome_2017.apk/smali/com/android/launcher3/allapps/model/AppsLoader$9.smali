@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 699
+    .line 700
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$9;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$9;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
@@ -57,7 +57,7 @@
     .locals 4
 
     .prologue
-    .line 702
+    .line 703
     iget-object v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$9;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iget-object v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$9;->val$oldCallbacks:Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
@@ -69,18 +69,18 @@
 
     move-result-object v0
 
-    .line 703
+    .line 704
     .local v0, "callbacks":Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;
     if-eqz v0, :cond_0
 
-    .line 704
+    .line 705
     iget v1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$9;->val$page:I
 
     iget v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$9;->val$itemNum:I
 
     invoke-interface {v0, v1, v2}, Lcom/android/launcher3/allapps/model/AppsLoader$AppsCallbacks;->removeUnusedItems(II)V
 
-    .line 706
+    .line 707
     :cond_0
     return-void
 .end method

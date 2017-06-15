@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1602
+    .line 1610
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$14;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,11 +41,11 @@
     .locals 1
 
     .prologue
-    .line 1605
+    .line 1613
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$14;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->setAlphabeticList()V
 
-    .line 1606
+    .line 1614
     return-void
 .end method

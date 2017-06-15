@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->animateToAcceptState()V
+    value = Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->animateToAcceptState(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     .prologue
-    .line 357
+    .line 362
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$1;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     iput p2, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$1;->val$previewSize:I
@@ -46,7 +46,7 @@
     .param p1, "animation"    # Landroid/animation/ValueAnimator;
 
     .prologue
-    .line 359
+    .line 364
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -57,7 +57,7 @@
 
     move-result v0
 
-    .line 360
+    .line 365
     .local v0, "percent":F
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$1;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
@@ -77,21 +77,21 @@
 
     iput v2, v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mInnerRingSize:F
 
-    .line 361
+    .line 366
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$1;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     iget-object v1, v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     if-eqz v1, :cond_0
 
-    .line 362
+    .line 367
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator$1;->this$0:Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;
 
     iget-object v1, v1, Lcom/android/launcher3/folder/view/FolderIconView$FolderRingAnimator;->mCellLayout:Lcom/android/launcher3/common/base/view/CellLayout;
 
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/view/CellLayout;->invalidate()V
 
-    .line 364
+    .line 369
     :cond_0
     return-void
 .end method

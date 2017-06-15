@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 1838
+    .line 1874
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$14;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$14;->val$appsButton:Lcom/android/launcher3/common/base/item/IconInfo;
@@ -49,11 +49,11 @@
     .locals 2
 
     .prologue
-    .line 1840
+    .line 1876
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader$14;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # getter for: Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
-    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->access$6000(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->access$6200(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/common/model/FavoritesUpdater;->deleteItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1841
+    .line 1877
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader$14;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     new-instance v1, Lcom/android/launcher3/home/HomeLoader$14$1;
@@ -69,8 +69,8 @@
     invoke-direct {v1, p0}, Lcom/android/launcher3/home/HomeLoader$14$1;-><init>(Lcom/android/launcher3/home/HomeLoader$14;)V
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
-    invoke-static {v0, v1}, Lcom/android/launcher3/home/HomeLoader;->access$6200(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+    invoke-static {v0, v1}, Lcom/android/launcher3/home/HomeLoader;->access$6400(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
 
-    .line 1849
+    .line 1885
     return-void
 .end method

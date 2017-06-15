@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/controller/FolderController;
 
     .prologue
-    .line 249
+    .line 252
     iput-object p1, p0, Lcom/android/launcher3/folder/controller/FolderController$3;->this$0:Lcom/android/launcher3/folder/controller/FolderController;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -39,10 +39,10 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 252
+    .line 255
     invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
 
-    .line 253
+    .line 256
     iget-object v1, p0, Lcom/android/launcher3/folder/controller/FolderController$3;->this$0:Lcom/android/launcher3/folder/controller/FolderController;
 
     # getter for: Lcom/android/launcher3/folder/controller/FolderController;->mLauncher:Lcom/android/launcher3/Launcher;
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    .line 254
+    .line 257
     .local v0, "opened":Ljava/lang/String;
     sget-object v1, Lcom/android/launcher3/util/Talk;->INSTANCE:Lcom/android/launcher3/util/Talk;
 
@@ -107,6 +107,6 @@
 
     invoke-virtual {v1, v2}, Lcom/android/launcher3/util/Talk;->say(Ljava/lang/String;)V
 
-    .line 255
+    .line 258
     return-void
 .end method

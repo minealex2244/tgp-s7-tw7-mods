@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     .prologue
-    .line 240
+    .line 249
     iput-object p1, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$3;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +43,12 @@
     .param p2, "arg1"    # I
 
     .prologue
-    .line 243
+    .line 252
     iget-object v0, p0, Lcom/android/launcher3/home/HomeModeChangeActivity$3;->this$0:Lcom/android/launcher3/home/HomeModeChangeActivity;
 
     # invokes: Lcom/android/launcher3/home/HomeModeChangeActivity;->setHomeScreenMode()V
     invoke-static {v0}, Lcom/android/launcher3/home/HomeModeChangeActivity;->access$300(Lcom/android/launcher3/home/HomeModeChangeActivity;)V
 
-    .line 244
+    .line 253
     return-void
 .end method

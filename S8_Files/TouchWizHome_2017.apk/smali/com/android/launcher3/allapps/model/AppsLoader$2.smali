@@ -35,7 +35,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/model/AppsLoader;
 
     .prologue
-    .line 204
+    .line 205
     iput-object p1, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iput p2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->val$startPage:I
@@ -59,14 +59,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 207
+    .line 208
     const-string v3, "AppsLoader"
 
     const-string v4, "startAppsLoaderTask start"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 208
+    .line 209
     iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iget-object v4, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
@@ -83,13 +83,13 @@
 
     iget-object v6, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
-    .line 209
+    .line 210
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mMaxItemsPerPage:I
     invoke-static {v6}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$200(Lcom/android/launcher3/allapps/model/AppsLoader;)I
 
     move-result v6
 
-    .line 208
+    .line 209
     invoke-virtual {v4, v5, v6, v2}, Lcom/android/launcher3/allapps/model/AppsLoader$Normalizer;->normalize(Ljava/util/ArrayList;IZ)I
 
     move-result v4
@@ -99,7 +99,7 @@
     # setter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mTotalPageNumber:I
     invoke-static {v3, v4}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$102(Lcom/android/launcher3/allapps/model/AppsLoader;I)I
 
-    .line 210
+    .line 211
     iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iget-object v4, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
@@ -114,7 +114,7 @@
     # setter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mIsPageLoaded:[Z
     invoke-static {v3, v4}, Lcom/android/launcher3/allapps/model/AppsLoader;->access$302(Lcom/android/launcher3/allapps/model/AppsLoader;[Z)[Z
 
-    .line 212
+    .line 213
     iget v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->val$startPage:I
 
     iget-object v4, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
@@ -130,16 +130,16 @@
 
     iget v2, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->val$startPage:I
 
-    .line 213
+    .line 214
     .local v2, "startIndex":I
     :cond_0
     move v0, v2
 
-    .line 215
+    .line 216
     .local v0, "index":I
     const/4 v1, 0x0
 
-    .line 216
+    .line 217
     .local v1, "mAllPageLoaded":Z
     :cond_1
     :goto_0
@@ -156,7 +156,7 @@
 
     if-nez v3, :cond_4
 
-    .line 217
+    .line 218
     iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mIsPageLoaded:[Z
@@ -168,7 +168,7 @@
 
     if-nez v3, :cond_2
 
-    .line 218
+    .line 219
     iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iget-object v4, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
@@ -185,11 +185,11 @@
 
     invoke-virtual {v3, v4, v5, v6}, Lcom/android/launcher3/allapps/model/AppsLoader;->bindPageItems(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 220
+    .line 221
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
-    .line 221
+    .line 222
     iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     # getter for: Lcom/android/launcher3/allapps/model/AppsLoader;->mIsPageLoaded:[Z
@@ -201,43 +201,43 @@
 
     if-lt v0, v3, :cond_3
 
-    .line 222
+    .line 223
     const/4 v0, 0x0
 
-    .line 224
+    .line 225
     :cond_3
     if-ne v0, v2, :cond_1
 
-    .line 225
+    .line 226
     const/4 v1, 0x1
 
     goto :goto_0
 
-    .line 229
+    .line 230
     :cond_4
     iget-boolean v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->val$bindFinished:Z
 
     if-eqz v3, :cond_5
 
-    .line 230
+    .line 231
     iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     iget-object v4, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->val$task:Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
 
     invoke-virtual {v3, v4}, Lcom/android/launcher3/allapps/model/AppsLoader;->finishBind(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 233
+    .line 234
     :cond_5
     iget-boolean v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->val$needDBUpdate:Z
 
     if-eqz v3, :cond_6
 
-    .line 234
+    .line 235
     iget-object v3, p0, Lcom/android/launcher3/allapps/model/AppsLoader$2;->this$0:Lcom/android/launcher3/allapps/model/AppsLoader;
 
     invoke-virtual {v3}, Lcom/android/launcher3/allapps/model/AppsLoader;->updateDirtyItems()V
 
-    .line 236
+    .line 237
     :cond_6
     const-string v3, "AppsLoader"
 
@@ -245,6 +245,6 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 237
+    .line 238
     return-void
 .end method

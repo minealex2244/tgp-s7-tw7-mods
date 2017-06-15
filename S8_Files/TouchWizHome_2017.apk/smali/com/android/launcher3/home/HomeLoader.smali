@@ -135,10 +135,10 @@
 
     sput-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetLock:Ljava/lang/Object;
 
-    .line 2979
-    new-instance v0, Lcom/android/launcher3/home/HomeLoader$31;
+    .line 3019
+    new-instance v0, Lcom/android/launcher3/home/HomeLoader$32;
 
-    invoke-direct {v0}, Lcom/android/launcher3/home/HomeLoader$31;-><init>()V
+    invoke-direct {v0}, Lcom/android/launcher3/home/HomeLoader$32;-><init>()V
 
     sput-object v0, Lcom/android/launcher3/home/HomeLoader;->HOTSEAT_COMPARATOR:Ljava/util/Comparator;
 
@@ -270,15 +270,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$1000(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+.method static synthetic access$1000()Lcom/android/launcher3/common/compat/LauncherAppsCompat;
     .locals 1
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
     .line 101
-    invoke-virtual {p0}, Lcom/android/launcher3/home/HomeLoader;->getAllApps()Ljava/util/ArrayList;
-
-    move-result-object v0
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
 
     return-object v0
 .end method
@@ -305,7 +302,40 @@
     return-object v0
 .end method
 
-.method static synthetic access$1200(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;)V
+.method static synthetic access$1200()Landroid/content/Context;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1300(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+
+    .prologue
+    .line 101
+    invoke-virtual {p0}, Lcom/android/launcher3/home/HomeLoader;->getAllApps()Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic access$1400()Landroid/content/Context;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1500(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;)V
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Ljava/util/ArrayList;
@@ -317,7 +347,7 @@
     return-void
 .end method
 
-.method static synthetic access$1300()Landroid/content/Context;
+.method static synthetic access$1600()Landroid/content/Context;
     .locals 1
 
     .prologue
@@ -327,7 +357,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1400()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+.method static synthetic access$1700()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
     .locals 1
 
     .prologue
@@ -337,7 +367,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$1500()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+.method static synthetic access$1800()Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
     .locals 1
 
     .prologue
@@ -347,47 +377,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$1600()Landroid/content/ContentResolver;
+.method static synthetic access$1900()Landroid/content/ContentResolver;
     .locals 1
 
     .prologue
     .line 101
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1700(Lcom/android/launcher3/home/HomeLoader;Ljava/util/HashMap;Ljava/util/ArrayList;)V
-    .locals 0
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-    .param p1, "x1"    # Ljava/util/HashMap;
-    .param p2, "x2"    # Ljava/util/ArrayList;
-
-    .prologue
-    .line 101
-    invoke-direct {p0, p1, p2}, Lcom/android/launcher3/home/HomeLoader;->doHandlingItems(Ljava/util/HashMap;Ljava/util/ArrayList;)V
-
-    return-void
-.end method
-
-.method static synthetic access$1800(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/HashMap;
-    .locals 1
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-
-    .prologue
-    .line 101
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mExtraItemsAfterGridChanged:Ljava/util/HashMap;
-
-    return-object v0
-.end method
-
-.method static synthetic access$1900(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/HashMap;
-    .locals 1
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-
-    .prologue
-    .line 101
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mNewPageIdsAfterGridChanged:Ljava/util/HashMap;
 
     return-object v0
 .end method
@@ -403,7 +398,42 @@
     return-object v0
 .end method
 
-.method static synthetic access$2000(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+.method static synthetic access$2000(Lcom/android/launcher3/home/HomeLoader;Ljava/util/HashMap;Ljava/util/ArrayList;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+    .param p1, "x1"    # Ljava/util/HashMap;
+    .param p2, "x2"    # Ljava/util/ArrayList;
+
+    .prologue
+    .line 101
+    invoke-direct {p0, p1, p2}, Lcom/android/launcher3/home/HomeLoader;->doHandlingItems(Ljava/util/HashMap;Ljava/util/ArrayList;)V
+
+    return-void
+.end method
+
+.method static synthetic access$2100(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/HashMap;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+
+    .prologue
+    .line 101
+    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mExtraItemsAfterGridChanged:Ljava/util/HashMap;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2200(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/HashMap;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+
+    .prologue
+    .line 101
+    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mNewPageIdsAfterGridChanged:Ljava/util/HashMap;
+
+    return-object v0
+.end method
+
+.method static synthetic access$2300(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -414,7 +444,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2100()Landroid/content/Context;
+.method static synthetic access$2400()Landroid/content/Context;
     .locals 1
 
     .prologue
@@ -424,7 +454,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2200()Landroid/content/ContentResolver;
+.method static synthetic access$2500()Landroid/content/ContentResolver;
     .locals 1
 
     .prologue
@@ -434,7 +464,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2300()Ljava/lang/Object;
+.method static synthetic access$2600()Ljava/lang/Object;
     .locals 1
 
     .prologue
@@ -444,7 +474,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2400()Lcom/android/launcher3/util/LongArrayMap;
+.method static synthetic access$2700()Lcom/android/launcher3/util/LongArrayMap;
     .locals 1
 
     .prologue
@@ -454,7 +484,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$2500(Lcom/android/launcher3/home/HomeLoader;)Z
+.method static synthetic access$2800(Lcom/android/launcher3/home/HomeLoader;)Z
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -467,7 +497,7 @@
     return v0
 .end method
 
-.method static synthetic access$2600(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+.method static synthetic access$2900(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -478,30 +508,6 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method static synthetic access$2700(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/LauncherAppWidgetInfo;)V
-    .locals 0
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-    .param p1, "x1"    # Lcom/android/launcher3/home/LauncherAppWidgetInfo;
-
-    .prologue
-    .line 101
-    invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->checkAppWidgetSingleInstanceList(Lcom/android/launcher3/home/LauncherAppWidgetInfo;)V
-
-    return-void
-.end method
-
-.method static synthetic access$2800(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
-    .locals 0
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-    .param p1, "x1"    # Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
-
-    .prologue
-    .line 101
-    invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->bindFestivalPageIfNecessary(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
-
-    return-void
 .end method
 
 .method static synthetic access$300(Lcom/android/launcher3/home/HomeLoader;)[Z
@@ -515,7 +521,31 @@
     return-object v0
 .end method
 
-.method static synthetic access$3000(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
+.method static synthetic access$3000(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/LauncherAppWidgetInfo;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+    .param p1, "x1"    # Lcom/android/launcher3/home/LauncherAppWidgetInfo;
+
+    .prologue
+    .line 101
+    invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->checkAppWidgetSingleInstanceList(Lcom/android/launcher3/home/LauncherAppWidgetInfo;)V
+
+    return-void
+.end method
+
+.method static synthetic access$3100(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+    .param p1, "x1"    # Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
+
+    .prologue
+    .line 101
+    invoke-direct {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->bindFestivalPageIfNecessary(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
+
+    return-void
+.end method
+
+.method static synthetic access$3300(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -526,7 +556,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3100(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
+.method static synthetic access$3400(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -537,7 +567,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3300(Lcom/android/launcher3/home/HomeLoader;)Z
+.method static synthetic access$3600(Lcom/android/launcher3/home/HomeLoader;)Z
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -548,7 +578,7 @@
     return v0
 .end method
 
-.method static synthetic access$3400()Ljava/util/HashMap;
+.method static synthetic access$3700()Ljava/util/HashMap;
     .locals 1
 
     .prologue
@@ -558,7 +588,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3500()Landroid/os/Handler;
+.method static synthetic access$3800()Landroid/os/Handler;
     .locals 1
 
     .prologue
@@ -568,7 +598,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3600()Landroid/content/Context;
+.method static synthetic access$3900()Landroid/content/Context;
     .locals 1
 
     .prologue
@@ -578,7 +608,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$3702(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
+.method static synthetic access$4002(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;)Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
@@ -588,45 +618,6 @@
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader;->mLoaderCallback:Lcom/android/launcher3/common/model/DataLoader$DataLoaderCallback;
 
     return-object p1
-.end method
-
-.method static synthetic access$3800(Ljava/lang/Runnable;)V
-    .locals 0
-    .param p0, "x0"    # Ljava/lang/Runnable;
-
-    .prologue
-    .line 101
-    invoke-static {p0}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method static synthetic access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    .locals 1
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-
-    .prologue
-    .line 101
-    invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method static synthetic access$4000(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    .locals 1
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-    .param p1, "x1"    # Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    .param p2, "x2"    # Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
-
-    .prologue
-    .line 101
-    invoke-direct {p0, p1, p2}, Lcom/android/launcher3/home/HomeLoader;->tryGetCallbacks(Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-
-    move-result-object v0
-
-    return-object v0
 .end method
 
 .method static synthetic access$402(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;)Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;
@@ -641,7 +632,33 @@
     return-object p1
 .end method
 
-.method static synthetic access$4102(Z)Z
+.method static synthetic access$4100(Ljava/lang/Runnable;)V
+    .locals 0
+    .param p0, "x0"    # Ljava/lang/Runnable;
+
+    .prologue
+    .line 101
+    invoke-static {p0}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method static synthetic access$4200(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+    .param p1, "x1"    # Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    .param p2, "x2"    # Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
+
+    .prologue
+    .line 101
+    invoke-direct {p0, p1, p2}, Lcom/android/launcher3/home/HomeLoader;->tryGetCallbacks(Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic access$4302(Z)Z
     .locals 0
     .param p0, "x0"    # Z
 
@@ -652,7 +669,7 @@
     return p0
 .end method
 
-.method static synthetic access$4200(Lcom/android/launcher3/home/HomeLoader;)V
+.method static synthetic access$4400(Lcom/android/launcher3/home/HomeLoader;)V
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -663,7 +680,7 @@
     return-void
 .end method
 
-.method static synthetic access$4302(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;)Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;
+.method static synthetic access$4502(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;)Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;
@@ -675,7 +692,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$4400(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+.method static synthetic access$4600(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Ljava/lang/Runnable;
@@ -687,7 +704,7 @@
     return-void
 .end method
 
-.method static synthetic access$4500()Ljava/lang/Object;
+.method static synthetic access$4700()Ljava/lang/Object;
     .locals 1
 
     .prologue
@@ -697,32 +714,12 @@
     return-object v0
 .end method
 
-.method static synthetic access$4600()Ljava/util/HashMap;
+.method static synthetic access$4800()Ljava/util/HashMap;
     .locals 1
 
     .prologue
     .line 101
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sPendingPackages:Ljava/util/HashMap;
-
-    return-object v0
-.end method
-
-.method static synthetic access$4700()Lcom/android/launcher3/common/compat/LauncherAppsCompat;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
-
-    return-object v0
-.end method
-
-.method static synthetic access$4800()Landroid/content/pm/PackageManager;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sPackageManager:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
@@ -748,22 +745,22 @@
     return-object v0
 .end method
 
-.method static synthetic access$5000()Lcom/android/launcher3/LauncherModel;
+.method static synthetic access$5000()Landroid/content/pm/PackageManager;
     .locals 1
 
     .prologue
     .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherModel:Lcom/android/launcher3/LauncherModel;
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sPackageManager:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
 
-.method static synthetic access$5100()Lcom/android/launcher3/LauncherModel;
+.method static synthetic access$5100()Lcom/android/launcher3/common/compat/LauncherAppsCompat;
     .locals 1
 
     .prologue
     .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherModel:Lcom/android/launcher3/LauncherModel;
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
 
     return-object v0
 .end method
@@ -788,7 +785,27 @@
     return-object v0
 .end method
 
-.method static synthetic access$5400()Ljava/util/HashMap;
+.method static synthetic access$5400()Lcom/android/launcher3/LauncherModel;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherModel:Lcom/android/launcher3/LauncherModel;
+
+    return-object v0
+.end method
+
+.method static synthetic access$5500()Lcom/android/launcher3/LauncherModel;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherModel:Lcom/android/launcher3/LauncherModel;
+
+    return-object v0
+.end method
+
+.method static synthetic access$5600()Ljava/util/HashMap;
     .locals 1
 
     .prologue
@@ -798,7 +815,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$5500(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+.method static synthetic access$5700(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -811,7 +828,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$5600()Lcom/android/launcher3/common/model/DeferredHandler;
+.method static synthetic access$5800()Lcom/android/launcher3/common/model/DeferredHandler;
     .locals 1
 
     .prologue
@@ -821,7 +838,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$5700()Lcom/android/launcher3/common/model/IconCache;
+.method static synthetic access$5900()Lcom/android/launcher3/common/model/IconCache;
     .locals 1
 
     .prologue
@@ -831,37 +848,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$5800()Lcom/android/launcher3/common/model/IconCache;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
-
-    return-object v0
-.end method
-
-.method static synthetic access$5900()Lcom/android/launcher3/common/model/DeferredHandler;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
-
-    return-object v0
-.end method
-
-.method static synthetic access$600()Landroid/content/Context;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method static synthetic access$6000(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+.method static synthetic access$600(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -872,7 +859,38 @@
     return-object v0
 .end method
 
-.method static synthetic access$6100(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
+.method static synthetic access$6000()Lcom/android/launcher3/common/model/IconCache;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
+
+    return-object v0
+.end method
+
+.method static synthetic access$6100()Lcom/android/launcher3/common/model/DeferredHandler;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
+
+    return-object v0
+.end method
+
+.method static synthetic access$6200(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+
+    .prologue
+    .line 101
+    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
+
+    return-object v0
+.end method
+
+.method static synthetic access$6300(Lcom/android/launcher3/home/HomeLoader;)Ljava/util/ArrayList;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -883,7 +901,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$6200(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+.method static synthetic access$6400(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Ljava/lang/Runnable;
@@ -895,7 +913,7 @@
     return-void
 .end method
 
-.method static synthetic access$6300()Ljava/lang/Object;
+.method static synthetic access$6500()Ljava/lang/Object;
     .locals 1
 
     .prologue
@@ -905,7 +923,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$6400(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+.method static synthetic access$6600(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -916,7 +934,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$6500()Lcom/android/launcher3/common/model/FavoritesProvider;
+.method static synthetic access$6700()Lcom/android/launcher3/common/model/FavoritesProvider;
     .locals 1
 
     .prologue
@@ -926,7 +944,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$6600(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;Ljava/util/ArrayList;IIZ)Landroid/util/Pair;
+.method static synthetic access$6800(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;Ljava/util/ArrayList;IIZ)Landroid/util/Pair;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Ljava/util/ArrayList;
@@ -944,7 +962,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$6700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+.method static synthetic access$6900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -955,7 +973,20 @@
     return-object v0
 .end method
 
-.method static synthetic access$6800(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+.method static synthetic access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+
+    .prologue
+    .line 101
+    invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method static synthetic access$7000(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -966,7 +997,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$6900(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+.method static synthetic access$7100(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Ljava/lang/Runnable;
@@ -978,17 +1009,7 @@
     return-void
 .end method
 
-.method static synthetic access$700()Lcom/android/launcher3/common/compat/LauncherAppsCompat;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
-
-    return-object v0
-.end method
-
-.method static synthetic access$7000(Lcom/android/launcher3/home/HomeLoader;I)I
+.method static synthetic access$7200(Lcom/android/launcher3/home/HomeLoader;I)I
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # I
@@ -1002,7 +1023,7 @@
     return v0
 .end method
 
-.method static synthetic access$7100(Lcom/android/launcher3/home/HomeLoader;I)I
+.method static synthetic access$7300(Lcom/android/launcher3/home/HomeLoader;I)I
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # I
@@ -1016,7 +1037,7 @@
     return v0
 .end method
 
-.method static synthetic access$7200(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+.method static synthetic access$7400(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -1027,7 +1048,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$7300(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+.method static synthetic access$7500(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Ljava/lang/Runnable;
@@ -1039,7 +1060,28 @@
     return-void
 .end method
 
-.method static synthetic access$7400()Lcom/android/launcher3/common/model/FavoritesProvider;
+.method static synthetic access$7600(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+
+    .prologue
+    .line 101
+    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
+
+    return-object v0
+.end method
+
+.method static synthetic access$7700()Landroid/content/Context;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$7800()Lcom/android/launcher3/common/model/FavoritesProvider;
     .locals 1
 
     .prologue
@@ -1049,7 +1091,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$7500()Ljava/lang/Object;
+.method static synthetic access$7900()Ljava/lang/Object;
     .locals 1
 
     .prologue
@@ -1059,7 +1101,19 @@
     return-object v0
 .end method
 
-.method static synthetic access$7600(Lcom/android/launcher3/home/HomeLoader;Landroid/content/Intent;Lcom/android/launcher3/common/compat/UserHandleCompat;)Z
+.method static synthetic access$800(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+    .param p1, "x1"    # Ljava/lang/Runnable;
+
+    .prologue
+    .line 101
+    invoke-virtual {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method static synthetic access$8000(Lcom/android/launcher3/home/HomeLoader;Landroid/content/Intent;Lcom/android/launcher3/common/compat/UserHandleCompat;)Z
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Landroid/content/Intent;
@@ -1074,7 +1128,7 @@
     return v0
 .end method
 
-.method static synthetic access$7700()Lcom/android/launcher3/util/LongArrayMap;
+.method static synthetic access$8100()Lcom/android/launcher3/util/LongArrayMap;
     .locals 1
 
     .prologue
@@ -1084,7 +1138,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$7800(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+.method static synthetic access$8200(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -1095,66 +1149,13 @@
     return-object v0
 .end method
 
-.method static synthetic access$7900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+.method static synthetic access$8300(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
     .line 101
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
-
-    return-object v0
-.end method
-
-.method static synthetic access$800()Landroid/content/Context;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8000(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
-    .locals 1
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-
-    .prologue
-    .line 101
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8100(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
-    .locals 0
-    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
-    .param p1, "x1"    # Ljava/lang/Runnable;
-
-    .prologue
-    .line 101
-    invoke-virtual {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
-
-    return-void
-.end method
-
-.method static synthetic access$8200()Ljava/lang/Object;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method static synthetic access$8300()Lcom/android/launcher3/util/LongArrayMap;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
     return-object v0
 .end method
@@ -1192,7 +1193,17 @@
     return-object v0
 .end method
 
-.method static synthetic access$8700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+.method static synthetic access$8700()Lcom/android/launcher3/util/LongArrayMap;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
+
+    return-object v0
+.end method
+
+.method static synthetic access$8800(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
     .locals 1
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
 
@@ -1203,7 +1214,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$8800(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+.method static synthetic access$8900(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
     .locals 0
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
     .param p1, "x1"    # Ljava/lang/Runnable;
@@ -1213,16 +1224,6 @@
     invoke-virtual {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
     return-void
-.end method
-
-.method static synthetic access$8900()Ljava/lang/Object;
-    .locals 1
-
-    .prologue
-    .line 101
-    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
-
-    return-object v0
 .end method
 
 .method static synthetic access$900()Landroid/content/Context;
@@ -1235,7 +1236,50 @@
     return-object v0
 .end method
 
-.method static synthetic access$9000()Lcom/android/launcher3/util/LongArrayMap;
+.method static synthetic access$9000()Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method static synthetic access$9100(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/common/model/FavoritesUpdater;
+    .locals 1
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+
+    .prologue
+    .line 101
+    iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
+
+    return-object v0
+.end method
+
+.method static synthetic access$9200(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+    .locals 0
+    .param p0, "x0"    # Lcom/android/launcher3/home/HomeLoader;
+    .param p1, "x1"    # Ljava/lang/Runnable;
+
+    .prologue
+    .line 101
+    invoke-virtual {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
+
+    return-void
+.end method
+
+.method static synthetic access$9300()Ljava/lang/Object;
+    .locals 1
+
+    .prologue
+    .line 101
+    sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method static synthetic access$9400()Lcom/android/launcher3/util/LongArrayMap;
     .locals 1
 
     .prologue
@@ -1245,7 +1289,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$9100()Z
+.method static synthetic access$9500()Z
     .locals 1
 
     .prologue
@@ -1255,7 +1299,7 @@
     return v0
 .end method
 
-.method static synthetic access$9200()Ljava/util/ArrayList;
+.method static synthetic access$9600()Ljava/util/ArrayList;
     .locals 1
 
     .prologue
@@ -1265,7 +1309,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$9300()Ljava/util/ArrayList;
+.method static synthetic access$9700()Ljava/util/ArrayList;
     .locals 1
 
     .prologue
@@ -1275,7 +1319,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$9400(Ljava/lang/Runnable;)V
+.method static synthetic access$9800(Ljava/lang/Runnable;)V
     .locals 0
     .param p0, "x0"    # Ljava/lang/Runnable;
 
@@ -1290,20 +1334,20 @@
     .locals 6
 
     .prologue
-    .line 3833
+    .line 3873
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/android/launcher3/Utilities;->createAppsButton(Landroid/content/Context;)Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-result-object v0
 
-    .line 3835
+    .line 3875
     .local v0, "appsButton":Lcom/android/launcher3/common/base/item/IconInfo;
     new-instance v1, Landroid/content/ContentValues;
 
     invoke-direct {v1}, Landroid/content/ContentValues;-><init>()V
 
-    .line 3836
+    .line 3876
     .local v1, "values":Landroid/content/ContentValues;
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -1313,12 +1357,12 @@
 
     invoke-virtual {v2, v3}, Lcom/android/launcher3/LauncherAppState;->setAppsButtonEnabled(Z)V
 
-    .line 3837
+    .line 3877
     const-wide/16 v2, 0x2
 
     iput-wide v2, v0, Lcom/android/launcher3/common/base/item/IconInfo;->screenId:J
 
-    .line 3838
+    .line 3878
     iget-wide v2, v0, Lcom/android/launcher3/common/base/item/IconInfo;->screenId:J
 
     long-to-int v2, v2
@@ -1331,12 +1375,12 @@
 
     iput v2, v0, Lcom/android/launcher3/common/base/item/IconInfo;->cellX:I
 
-    .line 3840
+    .line 3880
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {v0, v2, v1}, Lcom/android/launcher3/common/base/item/IconInfo;->onAddToDatabase(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 3841
+    .line 3881
     iget-wide v2, v0, Lcom/android/launcher3/common/base/item/IconInfo;->id:J
 
     const-wide/16 v4, -0x1
@@ -1345,7 +1389,7 @@
 
     if-nez v2, :cond_0
 
-    .line 3842
+    .line 3882
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     invoke-virtual {v2}, Lcom/android/launcher3/common/model/FavoritesProvider;->generateNewItemId()J
@@ -1354,7 +1398,7 @@
 
     iput-wide v2, v0, Lcom/android/launcher3/common/base/item/IconInfo;->id:J
 
-    .line 3843
+    .line 3883
     const-string v2, "_id"
 
     iget-wide v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->id:J
@@ -1365,18 +1409,18 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 3848
+    .line 3888
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
     sget-object v3, Lcom/android/launcher3/common/model/LauncherSettings$Favorites;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v2, v3, v1}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
-    .line 3849
+    .line 3889
     :goto_0
     return-void
 
-    .line 3845
+    .line 3885
     :cond_0
     const-string v2, "HomeLoader"
 
@@ -1405,7 +1449,7 @@
     .end annotation
 
     .prologue
-    .line 3738
+    .line 3778
     .local p1, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -1415,7 +1459,7 @@
 
     move-result v7
 
-    .line 3739
+    .line 3779
     .local v7, "countX":I
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -1425,13 +1469,13 @@
 
     move-result v8
 
-    .line 3740
+    .line 3780
     .local v8, "countY":I
     new-instance v18, Ljava/util/ArrayList;
 
     invoke-direct/range {v18 .. v18}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3741
+    .line 3781
     .local v18, "againMoveItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     filled-new-array {v7, v8}, [I
 
@@ -1445,13 +1489,13 @@
 
     check-cast v9, [[Z
 
-    .line 3742
+    .line 3782
     .local v9, "occupied":[[Z
     const/4 v3, 0x2
 
     new-array v4, v3, [I
 
-    .line 3744
+    .line 3784
     .local v4, "tmpXY":[I
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1470,7 +1514,7 @@
 
     check-cast v19, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3745
+    .line 3785
     .local v19, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-wide/from16 v0, p2
 
@@ -1478,7 +1522,7 @@
 
     iput-wide v0, v2, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 3747
+    .line 3787
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/launcher3/home/HomeLoader;->mItemPositionHelper:Lcom/android/launcher3/home/HomeItemPositionHelper;
@@ -1497,7 +1541,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 3749
+    .line 3789
     const/4 v3, 0x0
 
     aget v3, v4, v3
@@ -1506,7 +1550,7 @@
 
     iput v3, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3750
+    .line 3790
     const/4 v3, 0x1
 
     aget v3, v4, v3
@@ -1515,7 +1559,7 @@
 
     iput v3, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 3751
+    .line 3791
     move-object/from16 v0, v19
 
     iget v13, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
@@ -1546,13 +1590,13 @@
 
     goto :goto_0
 
-    .line 3753
+    .line 3793
     :cond_0
     invoke-virtual/range {v18 .. v19}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 3757
+    .line 3797
     .end local v19    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
     invoke-virtual/range {v18 .. v18}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1572,7 +1616,7 @@
 
     check-cast v19, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3758
+    .line 3798
     .restart local v19    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, p1
 
@@ -1582,7 +1626,7 @@
 
     goto :goto_1
 
-    .line 3761
+    .line 3801
     .end local v19    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     return-object v18
@@ -1593,33 +1637,33 @@
     .param p1, "task"    # Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
 
     .prologue
-    .line 1658
+    .line 1694
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 1659
+    .line 1695
     .local v0, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v0, :cond_0
 
-    .line 1660
+    .line 1696
     const-string v2, "HomeLoader"
 
     const-string v3, "bindFestivalPageIfNecessary failed with no launcher"
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1674
+    .line 1710
     :goto_0
     return-void
 
-    .line 1664
+    .line 1700
     :cond_0
     new-instance v1, Lcom/android/launcher3/home/HomeLoader$10;
 
     invoke-direct {v1, p0, v0, p1}, Lcom/android/launcher3/home/HomeLoader$10;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 1673
+    .line 1709
     .local v1, "r":Ljava/lang/Runnable;
     invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
@@ -1644,17 +1688,17 @@
     .end annotation
 
     .prologue
-    .line 1626
+    .line 1662
     .local p2, "orderedScreens":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     new-instance v0, Lcom/android/launcher3/home/HomeLoader$8;
 
     invoke-direct {v0, p0, p1, p3, p2}, Lcom/android/launcher3/home/HomeLoader$8;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;Ljava/util/ArrayList;)V
 
-    .line 1635
+    .line 1671
     .local v0, "r":Ljava/lang/Runnable;
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 1636
+    .line 1672
     return-void
 .end method
 
@@ -1677,14 +1721,14 @@
     .local p4, "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     const/4 v4, 0x0
 
-    .line 3582
+    .line 3622
     move v1, p2
 
-    .line 3583
+    .line 3623
     .local v1, "pageItemsMaxX":I
     move v2, p3
 
-    .line 3585
+    .line 3625
     .local v2, "pageItemsMaxY":I
     invoke-virtual {p4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -1703,7 +1747,7 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3586
+    .line 3626
     .local v0, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget v5, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
@@ -1719,7 +1763,7 @@
 
     add-int v1, v5, v6
 
-    .line 3588
+    .line 3628
     :cond_0
     iget v5, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
@@ -1735,11 +1779,11 @@
 
     add-int v2, v5, v6
 
-    .line 3590
+    .line 3630
     :cond_1
     goto :goto_0
 
-    .line 3592
+    .line 3632
     .end local v0    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     if-le v1, p2, :cond_4
@@ -1749,7 +1793,7 @@
     :goto_1
     aput v3, p1, v4
 
-    .line 3593
+    .line 3633
     const/4 v3, 0x1
 
     if-le v2, p3, :cond_3
@@ -1759,13 +1803,13 @@
     :cond_3
     aput v4, p1, v3
 
-    .line 3594
+    .line 3634
     return-void
 
     :cond_4
     move v3, v4
 
-    .line 3592
+    .line 3632
     goto :goto_1
 .end method
 
@@ -1773,47 +1817,47 @@
     .locals 18
 
     .prologue
-    .line 3214
+    .line 3254
     const-string v0, "HomeLoader"
 
     const-string v1, "changeDialerAppOnLoadDefaultLayout : OEM -> T phone app"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3215
+    .line 3255
     new-instance v9, Landroid/content/ComponentName;
 
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
-    .line 3216
+    .line 3256
     invoke-static {v0}, Lcom/android/launcher3/LauncherFeature;->getOemDialerPackageName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3217
+    .line 3257
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->getOemDialerClassName()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-direct {v9, v0, v1}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3218
+    .line 3258
     .local v9, "oemDialerCN":Landroid/content/ComponentName;
     new-instance v7, Landroid/content/ComponentName;
 
-    .line 3219
+    .line 3259
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->getCustomerDialerPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3220
+    .line 3260
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->getCustomerDialerClassName()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-direct {v7, v0, v1}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3221
+    .line 3261
     .local v7, "customerDialerCN":Landroid/content/ComponentName;
     new-instance v0, Landroid/content/Intent;
 
@@ -1825,24 +1869,24 @@
 
     const-string v1, "android.intent.category.LAUNCHER"
 
-    .line 3222
+    .line 3262
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 3223
+    .line 3263
     invoke-virtual {v0, v9}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     move-result-object v0
 
     const/high16 v1, 0x10200000
 
-    .line 3224
+    .line 3264
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     move-result-object v14
 
-    .line 3225
+    .line 3265
     .local v14, "oemDialerIntent":Landroid/content/Intent;
     new-instance v0, Landroid/content/Intent;
 
@@ -1854,28 +1898,28 @@
 
     const-string v1, "android.intent.category.LAUNCHER"
 
-    .line 3226
+    .line 3266
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 3227
+    .line 3267
     invoke-virtual {v0, v7}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     move-result-object v0
 
     const/high16 v1, 0x10200000
 
-    .line 3228
+    .line 3268
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     move-result-object v8
 
-    .line 3232
+    .line 3272
     .local v8, "customerDialerIntent":Landroid/content/Intent;
     const-string v3, "container=? AND intent=?"
 
-    .line 3233
+    .line 3273
     .local v3, "selection":Ljava/lang/String;
     const/4 v0, 0x2
 
@@ -1895,14 +1939,14 @@
 
     const/4 v1, 0x0
 
-    .line 3234
+    .line 3274
     invoke-virtual {v14, v1}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
     move-result-object v1
 
     aput-object v1, v4, v0
 
-    .line 3236
+    .line 3276
     .local v4, "selectionArg":[Ljava/lang/String;
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
@@ -1924,11 +1968,11 @@
 
     move-result-object v6
 
-    .line 3239
+    .line 3279
     .local v6, "cursor":Landroid/database/Cursor;
     if-eqz v6, :cond_1
 
-    .line 3241
+    .line 3281
     :try_start_0
     invoke-interface {v6}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -1936,20 +1980,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 3242
+    .line 3282
     const/4 v0, 0x0
 
     invoke-interface {v6, v0}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v12
 
-    .line 3243
+    .line 3283
     .local v12, "id":J
     new-instance v15, Landroid/content/ContentValues;
 
     invoke-direct {v15}, Landroid/content/ContentValues;-><init>()V
 
-    .line 3244
+    .line 3284
     .local v15, "values":Landroid/content/ContentValues;
     const-string v0, "intent"
 
@@ -1961,7 +2005,7 @@
 
     invoke-virtual {v15, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3245
+    .line 3285
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
     invoke-static {v12, v13}, Lcom/android/launcher3/common/model/LauncherSettings$Favorites;->getContentUri(J)Landroid/net/Uri;
@@ -1976,13 +2020,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3250
+    .line 3290
     .end local v12    # "id":J
     .end local v15    # "values":Landroid/content/ContentValues;
     :goto_0
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 3257
+    .line 3297
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v0
@@ -1993,10 +2037,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 3258
+    .line 3298
     const-string v3, "container=? AND intent=?"
 
-    .line 3259
+    .line 3299
     const/4 v0, 0x2
 
     new-array v4, v0, [Ljava/lang/String;
@@ -2016,14 +2060,14 @@
 
     const/4 v1, 0x0
 
-    .line 3260
+    .line 3300
     invoke-virtual {v8, v1}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
     move-result-object v1
 
     aput-object v1, v4, v0
 
-    .line 3269
+    .line 3309
     .restart local v4    # "selectionArg":[Ljava/lang/String;
     :goto_1
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
@@ -2046,10 +2090,10 @@
 
     move-result-object v6
 
-    .line 3272
+    .line 3312
     if-eqz v6, :cond_4
 
-    .line 3274
+    .line 3314
     :try_start_1
     invoke-interface {v6}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -2057,7 +2101,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 3275
+    .line 3315
     const/4 v0, 0x0
 
     invoke-interface {v6, v0}, Landroid/database/Cursor;->getLong(I)J
@@ -2068,13 +2112,13 @@
 
     move-result-object v12
 
-    .line 3276
+    .line 3316
     .local v12, "id":Ljava/lang/Long;
     new-instance v15, Landroid/content/ContentValues;
 
     invoke-direct {v15}, Landroid/content/ContentValues;-><init>()V
 
-    .line 3277
+    .line 3317
     .restart local v15    # "values":Landroid/content/ContentValues;
     const-string v0, "intent"
 
@@ -2086,7 +2130,7 @@
 
     invoke-virtual {v15, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3278
+    .line 3318
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
     invoke-virtual {v12}, Ljava/lang/Long;->longValue()J
@@ -2105,17 +2149,17 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 3283
+    .line 3323
     .end local v12    # "id":Ljava/lang/Long;
     .end local v15    # "values":Landroid/content/ContentValues;
     :goto_2
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 3288
+    .line 3328
     :goto_3
     return-void
 
-    .line 3247
+    .line 3287
     :cond_0
     :try_start_2
     const-string v0, "HomeLoader"
@@ -2128,7 +2172,7 @@
 
     goto :goto_0
 
-    .line 3250
+    .line 3290
     :catchall_0
     move-exception v0
 
@@ -2136,7 +2180,7 @@
 
     throw v0
 
-    .line 3253
+    .line 3293
     :cond_1
     const-string v0, "HomeLoader"
 
@@ -2146,7 +2190,7 @@
 
     goto :goto_3
 
-    .line 3262
+    .line 3302
     :cond_2
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
@@ -2154,11 +2198,11 @@
 
     move-result-wide v10
 
-    .line 3263
+    .line 3303
     .local v10, "customerPage":J
     const-string v3, "container=? AND intent=? AND screen=?"
 
-    .line 3265
+    .line 3305
     const/4 v0, 0x3
 
     new-array v4, v0, [Ljava/lang/String;
@@ -2178,7 +2222,7 @@
 
     const/4 v1, 0x0
 
-    .line 3266
+    .line 3306
     invoke-virtual {v8, v1}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
     move-result-object v1
@@ -2196,7 +2240,7 @@
     .restart local v4    # "selectionArg":[Ljava/lang/String;
     goto :goto_1
 
-    .line 3280
+    .line 3320
     .end local v10    # "customerPage":J
     :cond_3
     :try_start_3
@@ -2210,7 +2254,7 @@
 
     goto :goto_2
 
-    .line 3283
+    .line 3323
     :catchall_1
     move-exception v0
 
@@ -2218,7 +2262,7 @@
 
     throw v0
 
-    .line 3286
+    .line 3326
     :cond_4
     const-string v0, "HomeLoader"
 
@@ -2236,7 +2280,7 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 3334
+    .line 3374
     sget-object v2, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetList:Ljava/util/HashMap;
 
     iget-object v3, p1, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
@@ -2251,7 +2295,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 3335
+    .line 3375
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sUserManager:Lcom/android/launcher3/common/compat/UserManagerCompat;
 
     iget-object v3, p1, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
@@ -2264,25 +2308,25 @@
 
     move-result-object v0
 
-    .line 3336
+    .line 3376
     .local v0, "profileId":Ljava/lang/Long;
     sget-object v2, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetList:Ljava/util/HashMap;
 
     iget-object v3, p1, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
-    .line 3337
+    .line 3377
     invoke-virtual {v3}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 3336
+    .line 3376
     invoke-virtual {v2, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/util/LongSparseArray;
 
-    .line 3338
+    .line 3378
     .local v1, "userMap":Landroid/util/LongSparseArray;, "Landroid/util/LongSparseArray<Ljava/lang/Integer;>;"
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
@@ -2294,7 +2338,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/util/LongSparseArray;->put(JLjava/lang/Object;)V
 
-    .line 3341
+    .line 3381
     .end local v0    # "profileId":Ljava/lang/Long;
     .end local v1    # "userMap":Landroid/util/LongSparseArray;, "Landroid/util/LongSparseArray<Ljava/lang/Integer;>;"
     :cond_0
@@ -2312,7 +2356,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 3342
+    .line 3382
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sUserManager:Lcom/android/launcher3/common/compat/UserManagerCompat;
 
     iget-object v3, p1, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
@@ -2325,25 +2369,25 @@
 
     move-result-object v0
 
-    .line 3343
+    .line 3383
     .restart local v0    # "profileId":Ljava/lang/Long;
     sget-object v2, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetPackageList:Ljava/util/HashMap;
 
     iget-object v3, p1, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
-    .line 3344
+    .line 3384
     invoke-virtual {v3}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 3343
+    .line 3383
     invoke-virtual {v2, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/util/LongSparseArray;
 
-    .line 3345
+    .line 3385
     .restart local v1    # "userMap":Landroid/util/LongSparseArray;, "Landroid/util/LongSparseArray<Ljava/lang/Integer;>;"
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
@@ -2355,7 +2399,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/util/LongSparseArray;->put(JLjava/lang/Object;)V
 
-    .line 3347
+    .line 3387
     .end local v0    # "profileId":Ljava/lang/Long;
     .end local v1    # "userMap":Landroid/util/LongSparseArray;, "Landroid/util/LongSparseArray<Ljava/lang/Integer;>;"
     :cond_1
@@ -2382,7 +2426,7 @@
     .end annotation
 
     .prologue
-    .line 1383
+    .line 1419
     .local p3, "needHandlingItems":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/Integer;Ljava/util/ArrayList<+Ljava/lang/Object;>;>;"
     sget-object v11, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -2392,7 +2436,7 @@
 
     move-result v4
 
-    .line 1384
+    .line 1420
     .local v4, "countX":I
     sget-object v11, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -2402,7 +2446,7 @@
 
     move-result v5
 
-    .line 1386
+    .line 1422
     .local v5, "countY":I
     const/4 v11, 0x4
 
@@ -2418,7 +2462,7 @@
 
     check-cast v8, Ljava/util/ArrayList;
 
-    .line 1387
+    .line 1423
     .local v8, "overlapItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     const/4 v11, 0x3
 
@@ -2434,13 +2478,13 @@
 
     check-cast v7, Ljava/util/ArrayList;
 
-    .line 1389
+    .line 1425
     .local v7, "outsideItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     move-object/from16 v0, p2
 
     iget-wide v2, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 1390
+    .line 1426
     .local v2, "containerIndex":J
     move-object/from16 v0, p2
 
@@ -2452,7 +2496,7 @@
 
     if-nez v11, :cond_2
 
-    .line 1393
+    .line 1429
     sget-object v11, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {v11}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -2465,7 +2509,7 @@
 
     move-result v6
 
-    .line 1394
+    .line 1430
     .local v6, "hotseatCount":I
     move-object/from16 v0, p2
 
@@ -2477,7 +2521,7 @@
 
     if-ltz v11, :cond_0
 
-    .line 1395
+    .line 1431
     const-string v11, "HomeLoader"
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -2534,15 +2578,15 @@
 
     invoke-static {v11, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1399
+    .line 1435
     const/4 v11, 0x0
 
-    .line 1445
+    .line 1481
     .end local v6    # "hotseatCount":I
     :goto_0
     return v11
 
-    .line 1402
+    .line 1438
     .restart local v6    # "hotseatCount":I
     :cond_0
     move-object/from16 v0, p2
@@ -2559,7 +2603,7 @@
 
     if-eqz v11, :cond_1
 
-    .line 1403
+    .line 1439
     const-string v11, "HomeLoader"
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -2648,12 +2692,12 @@
 
     invoke-static {v11, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1407
+    .line 1443
     const/4 v11, 0x0
 
     goto :goto_0
 
-    .line 1409
+    .line 1445
     :cond_1
     move-object/from16 v0, p2
 
@@ -2667,12 +2711,12 @@
 
     aput-object p2, v11, v12
 
-    .line 1410
+    .line 1446
     const/4 v11, 0x1
 
     goto :goto_0
 
-    .line 1412
+    .line 1448
     .end local v6    # "hotseatCount":I
     :cond_2
     move-object/from16 v0, p2
@@ -2685,7 +2729,7 @@
 
     if-nez v11, :cond_a
 
-    .line 1413
+    .line 1449
     move-object/from16 v0, p2
 
     iget v11, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
@@ -2722,7 +2766,7 @@
 
     if-le v11, v5, :cond_4
 
-    .line 1415
+    .line 1451
     :cond_3
     const-string v11, "HomeLoader"
 
@@ -2826,7 +2870,7 @@
 
     invoke-static {v11, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1419
+    .line 1455
     move-object/from16 v0, p2
 
     iget-wide v12, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
@@ -2837,12 +2881,12 @@
 
     invoke-virtual {v7, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1420
+    .line 1456
     const/4 v11, 0x1
 
     goto/16 :goto_0
 
-    .line 1424
+    .line 1460
     :cond_4
     move-object/from16 v0, p2
 
@@ -2862,7 +2906,7 @@
 
     if-ge v9, v11, :cond_7
 
-    .line 1425
+    .line 1461
     move-object/from16 v0, p2
 
     iget v10, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
@@ -2881,14 +2925,14 @@
 
     if-ge v10, v11, :cond_6
 
-    .line 1426
+    .line 1462
     aget-object v11, p1, v9
 
     aget-object v11, v11, v10
 
     if-eqz v11, :cond_5
 
-    .line 1427
+    .line 1463
     const-string v11, "HomeLoader"
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -2971,29 +3015,29 @@
 
     invoke-static {v11, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1432
+    .line 1468
     move-object/from16 v0, p2
 
     invoke-virtual {v8, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1433
+    .line 1469
     const/4 v11, 0x1
 
     goto/16 :goto_0
 
-    .line 1425
+    .line 1461
     :cond_5
     add-int/lit8 v10, v10, 0x1
 
     goto :goto_2
 
-    .line 1424
+    .line 1460
     :cond_6
     add-int/lit8 v9, v9, 0x1
 
     goto/16 :goto_1
 
-    .line 1437
+    .line 1473
     .end local v10    # "y":I
     :cond_7
     move-object/from16 v0, p2
@@ -3013,7 +3057,7 @@
 
     if-ge v9, v11, :cond_9
 
-    .line 1438
+    .line 1474
     move-object/from16 v0, p2
 
     iget v10, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
@@ -3032,30 +3076,30 @@
 
     if-ge v10, v11, :cond_8
 
-    .line 1439
+    .line 1475
     aget-object v11, p1, v9
 
     aput-object p2, v11, v10
 
-    .line 1438
+    .line 1474
     add-int/lit8 v10, v10, 0x1
 
     goto :goto_4
 
-    .line 1437
+    .line 1473
     :cond_8
     add-int/lit8 v9, v9, 0x1
 
     goto :goto_3
 
-    .line 1442
+    .line 1478
     .end local v10    # "y":I
     :cond_9
     const/4 v11, 0x1
 
     goto/16 :goto_0
 
-    .line 1445
+    .line 1481
     .end local v9    # "x":I
     :cond_a
     const/4 v11, 0x1
@@ -3070,27 +3114,27 @@
     .param p2, "needToRefresh"    # Z
 
     .prologue
-    .line 1558
+    .line 1594
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 1559
+    .line 1595
     :try_start_0
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetProviders:Ljava/util/HashMap;
 
     if-eqz v2, :cond_1
 
-    .line 1560
+    .line 1596
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
-    .line 1561
+    .line 1597
     .local v1, "pkgSet":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     invoke-static {v1, p0}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
-    .line 1563
+    .line 1599
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetProviders:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
@@ -3114,7 +3158,7 @@
 
     check-cast v0, Lcom/android/launcher3/util/ComponentKey;
 
-    .line 1564
+    .line 1600
     .local v0, "key":Lcom/android/launcher3/util/ComponentKey;
     iget-object v2, v0, Lcom/android/launcher3/util/ComponentKey;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
@@ -3126,7 +3170,7 @@
 
     iget-object v2, v0, Lcom/android/launcher3/util/ComponentKey;->componentName:Landroid/content/ComponentName;
 
-    .line 1565
+    .line 1601
     invoke-virtual {v2}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
@@ -3142,16 +3186,16 @@
     :goto_1
     or-int/2addr p2, v2
 
-    .line 1566
+    .line 1602
     goto :goto_0
 
-    .line 1565
+    .line 1601
     :cond_0
     const/4 v2, 0x0
 
     goto :goto_1
 
-    .line 1568
+    .line 1604
     .end local v0    # "key":Lcom/android/launcher3/util/ComponentKey;
     .end local v1    # "pkgSet":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     :cond_1
@@ -3159,7 +3203,7 @@
 
     return p2
 
-    .line 1569
+    .line 1605
     :catchall_0
     move-exception v2
 
@@ -3193,7 +3237,7 @@
     .end annotation
 
     .prologue
-    .line 803
+    .line 839
     .local p3, "needHandlingItems":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/Integer;Ljava/util/ArrayList<*>;>;"
     .local p4, "occupied":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<[[Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     move-object/from16 v0, p2
@@ -3204,7 +3248,7 @@
 
     move-result-wide v4
 
-    .line 804
+    .line 840
     .local v4, "id":J
     move-object/from16 v0, p2
 
@@ -3214,7 +3258,7 @@
 
     move-result v2
 
-    .line 805
+    .line 841
     .local v2, "container":I
     move-object/from16 v0, p2
 
@@ -3228,18 +3272,18 @@
 
     const/4 v7, 0x1
 
-    .line 807
+    .line 843
     .local v7, "restored":Z
     :goto_0
     const/4 v9, 0x0
 
-    .line 808
+    .line 844
     .local v9, "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     sget-object v11, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v11
 
-    .line 809
+    .line 845
     :try_start_0
     sget-object v10, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -3249,13 +3293,13 @@
 
     check-cast v3, Lcom/android/launcher3/folder/FolderInfo;
 
-    .line 810
+    .line 846
     .local v3, "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     monitor-exit v11
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 812
+    .line 848
     const/4 v10, 0x1
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -3270,7 +3314,7 @@
 
     check-cast v6, Ljava/util/ArrayList;
 
-    .line 813
+    .line 849
     .local v6, "itemsToRemove":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     const/4 v10, 0x2
 
@@ -3286,17 +3330,17 @@
 
     check-cast v8, Ljava/util/ArrayList;
 
-    .line 815
+    .line 851
     .local v8, "restoredRows":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     if-nez v3, :cond_0
 
-    .line 816
+    .line 852
     new-instance v3, Lcom/android/launcher3/folder/FolderInfo;
 
     .end local v3    # "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     invoke-direct {v3}, Lcom/android/launcher3/folder/FolderInfo;-><init>()V
 
-    .line 820
+    .line 856
     .restart local v3    # "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     :cond_0
     move-object/from16 v0, p2
@@ -3309,15 +3353,15 @@
 
     iput-object v10, v3, Lcom/android/launcher3/folder/FolderInfo;->title:Ljava/lang/CharSequence;
 
-    .line 821
+    .line 857
     iput-wide v4, v3, Lcom/android/launcher3/folder/FolderInfo;->id:J
 
-    .line 822
+    .line 858
     int-to-long v10, v2
 
     iput-wide v10, v3, Lcom/android/launcher3/folder/FolderInfo;->container:J
 
-    .line 823
+    .line 859
     move-object/from16 v0, p2
 
     iget v10, v0, Lcom/android/launcher3/common/model/CursorInfo;->screenIndex:I
@@ -3330,7 +3374,7 @@
 
     iput-wide v10, v3, Lcom/android/launcher3/folder/FolderInfo;->screenId:J
 
-    .line 824
+    .line 860
     move-object/from16 v0, p2
 
     iget v10, v0, Lcom/android/launcher3/common/model/CursorInfo;->cellXIndex:I
@@ -3341,7 +3385,7 @@
 
     iput v10, v3, Lcom/android/launcher3/folder/FolderInfo;->cellX:I
 
-    .line 825
+    .line 861
     move-object/from16 v0, p2
 
     iget v10, v0, Lcom/android/launcher3/common/model/CursorInfo;->cellYIndex:I
@@ -3352,17 +3396,17 @@
 
     iput v10, v3, Lcom/android/launcher3/folder/FolderInfo;->cellY:I
 
-    .line 826
+    .line 862
     const/4 v10, 0x1
 
     iput v10, v3, Lcom/android/launcher3/folder/FolderInfo;->spanX:I
 
-    .line 827
+    .line 863
     const/4 v10, 0x1
 
     iput v10, v3, Lcom/android/launcher3/folder/FolderInfo;->spanY:I
 
-    .line 828
+    .line 864
     move-object/from16 v0, p2
 
     iget v10, v0, Lcom/android/launcher3/common/model/CursorInfo;->optionsIndex:I
@@ -3373,7 +3417,7 @@
 
     iput v10, v3, Lcom/android/launcher3/folder/FolderInfo;->options:I
 
-    .line 829
+    .line 865
     move-object/from16 v0, p2
 
     iget v10, v0, Lcom/android/launcher3/common/model/CursorInfo;->colorIndex:I
@@ -3384,7 +3428,7 @@
 
     iput v10, v3, Lcom/android/launcher3/folder/FolderInfo;->color:I
 
-    .line 832
+    .line 868
     iget-wide v10, v3, Lcom/android/launcher3/folder/FolderInfo;->container:J
 
     const-wide/16 v12, -0x65
@@ -3412,21 +3456,21 @@
 
     if-nez v10, :cond_3
 
-    .line 834
+    .line 870
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v10
 
     invoke-virtual {v6, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 835
+    .line 871
     const/4 v10, 0x0
 
-    .line 851
+    .line 887
     :goto_2
     return-object v10
 
-    .line 805
+    .line 841
     .end local v3    # "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     .end local v6    # "itemsToRemove":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     .end local v7    # "restored":Z
@@ -3437,7 +3481,7 @@
 
     goto/16 :goto_0
 
-    .line 810
+    .line 846
     .restart local v7    # "restored":Z
     .restart local v9    # "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     :catchall_0
@@ -3450,7 +3494,7 @@
 
     throw v10
 
-    .line 832
+    .line 868
     .restart local v3    # "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     .restart local v6    # "itemsToRemove":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     .restart local v8    # "restoredRows":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
@@ -3459,40 +3503,40 @@
 
     goto :goto_1
 
-    .line 838
+    .line 874
     :cond_3
     packed-switch v2, :pswitch_data_0
 
-    .line 846
+    .line 882
     :goto_3
     if-eqz v7, :cond_4
 
-    .line 848
+    .line 884
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v10
 
     invoke-virtual {v8, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 850
+    .line 886
     :cond_4
     invoke-virtual {p0, v3}, Lcom/android/launcher3/home/HomeLoader;->putItemToIdMap(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
     move-object v10, v9
 
-    .line 851
+    .line 887
     goto :goto_2
 
-    .line 841
+    .line 877
     :pswitch_0
     invoke-virtual {p0, v3}, Lcom/android/launcher3/home/HomeLoader;->addPagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 842
+    .line 878
     move-object v9, v3
 
     goto :goto_3
 
-    .line 838
+    .line 874
     nop
 
     :pswitch_data_0
@@ -3535,13 +3579,13 @@
     .end annotation
 
     .prologue
-    .line 647
+    .line 683
     .local p3, "needHandlingItems":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/Integer;Ljava/util/ArrayList<*>;>;"
     .local p4, "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .local p5, "occupied":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<[[Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     const/4 v1, 0x0
 
-    .line 648
+    .line 684
     .local v1, "folders":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_0
     :goto_0
@@ -3557,7 +3601,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 650
+    .line 686
     :try_start_0
     iget v5, p2, Lcom/android/launcher3/common/model/CursorInfo;->itemTypeIndex:I
 
@@ -3565,15 +3609,15 @@
 
     move-result v4
 
-    .line 651
+    .line 687
     .local v4, "itemType":I
     const/4 v3, 0x0
 
-    .line 652
+    .line 688
     .local v3, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     packed-switch v4, :pswitch_data_0
 
-    .line 671
+    .line 707
     :cond_1
     :goto_1
     :pswitch_0
@@ -3583,20 +3627,20 @@
 
     if-nez v5, :cond_0
 
-    .line 672
+    .line 708
     invoke-virtual {p4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 674
+    .line 710
     .end local v3    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v4    # "itemType":I
     :catch_0
     move-exception v0
 
-    .line 675
+    .line 711
     .local v0, "e":Ljava/lang/Exception;
     const-string v5, "HomeLoader"
 
@@ -3608,7 +3652,7 @@
 
     goto :goto_0
 
-    .line 655
+    .line 691
     .end local v0    # "e":Ljava/lang/Exception;
     .restart local v3    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .restart local v4    # "itemType":I
@@ -3618,22 +3662,22 @@
 
     move-result-object v3
 
-    .line 656
+    .line 692
     goto :goto_1
 
-    .line 658
+    .line 694
     :pswitch_2
     invoke-direct {p0, p1, p2, p3, p5}, Lcom/android/launcher3/home/HomeLoader;->createFolderItem(Landroid/database/Cursor;Lcom/android/launcher3/common/model/CursorInfo;Ljava/util/HashMap;Lcom/android/launcher3/util/LongArrayMap;)Lcom/android/launcher3/common/base/item/ItemInfo;
 
     move-result-object v3
 
-    .line 659
+    .line 695
     if-eqz v3, :cond_1
 
-    .line 660
+    .line 696
     if-nez v1, :cond_2
 
-    .line 661
+    .line 697
     new-instance v2, Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-direct {v2}, Lcom/android/launcher3/util/LongArrayMap;-><init>()V
@@ -3642,7 +3686,7 @@
     .local v2, "folders":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     move-object v1, v2
 
-    .line 663
+    .line 699
     .end local v2    # "folders":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .restart local v1    # "folders":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_2
@@ -3652,7 +3696,7 @@
 
     goto :goto_1
 
-    .line 668
+    .line 704
     :pswitch_3
     invoke-direct {p0, p1, p2, p3, p5}, Lcom/android/launcher3/home/HomeLoader;->createWidgetItem(Landroid/database/Cursor;Lcom/android/launcher3/common/model/CursorInfo;Ljava/util/HashMap;Lcom/android/launcher3/util/LongArrayMap;)Lcom/android/launcher3/common/base/item/ItemInfo;
     :try_end_1
@@ -3662,13 +3706,13 @@
 
     goto :goto_1
 
-    .line 678
+    .line 714
     .end local v3    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v4    # "itemType":I
     :cond_3
     return-object v1
 
-    .line 652
+    .line 688
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -3703,7 +3747,7 @@
     .end annotation
 
     .prologue
-    .line 685
+    .line 721
     .local p3, "needHandlingItems":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/Integer;Ljava/util/ArrayList<*>;>;"
     .local p4, "occupied":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<[[Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     move-object/from16 v0, p2
@@ -3720,7 +3764,7 @@
 
     move-result v7
 
-    .line 686
+    .line 722
     .local v7, "container":I
     move-object/from16 v0, p2
 
@@ -3736,7 +3780,7 @@
 
     move-result v14
 
-    .line 687
+    .line 723
     .local v14, "itemType":I
     const/16 v29, 0x5
 
@@ -3746,7 +3790,7 @@
 
     const/4 v8, 0x1
 
-    .line 689
+    .line 725
     .local v8, "customWidget":Z
     :goto_0
     move-object/from16 v0, p2
@@ -3763,7 +3807,7 @@
 
     move-result v4
 
-    .line 690
+    .line 726
     .local v4, "appWidgetId":I
     move-object/from16 v0, p2
 
@@ -3785,7 +3829,7 @@
 
     move-wide/from16 v22, v0
 
-    .line 691
+    .line 727
     .local v22, "serialNumber":J
     move-object/from16 v0, p2
 
@@ -3801,7 +3845,7 @@
 
     move-result-object v21
 
-    .line 692
+    .line 728
     .local v21, "savedProvider":Ljava/lang/String;
     move-object/from16 v0, p2
 
@@ -3817,7 +3861,7 @@
 
     move-result-wide v10
 
-    .line 693
+    .line 729
     .local v10, "id":J
     move-object/from16 v0, p0
 
@@ -3835,7 +3879,7 @@
 
     check-cast v25, Lcom/android/launcher3/common/compat/UserHandleCompat;
 
-    .line 697
+    .line 733
     .local v25, "user":Lcom/android/launcher3/common/compat/UserHandleCompat;
     const/16 v29, 0x1
 
@@ -3853,11 +3897,11 @@
 
     check-cast v15, Ljava/util/ArrayList;
 
-    .line 699
+    .line 735
     .local v15, "itemsToRemove":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     if-nez v25, :cond_1
 
-    .line 700
+    .line 736
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v29
@@ -3866,14 +3910,14 @@
 
     invoke-virtual {v15, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 701
+    .line 737
     const/16 v20, 0x0
 
-    .line 797
+    .line 833
     :goto_1
     return-object v20
 
-    .line 687
+    .line 723
     .end local v4    # "appWidgetId":I
     .end local v8    # "customWidget":Z
     .end local v10    # "id":J
@@ -3886,7 +3930,7 @@
 
     goto :goto_0
 
-    .line 704
+    .line 740
     .restart local v4    # "appWidgetId":I
     .restart local v8    # "customWidget":Z
     .restart local v10    # "id":J
@@ -3899,7 +3943,7 @@
 
     move-result-object v6
 
-    .line 706
+    .line 742
     .local v6, "component":Landroid/content/ComponentName;
     move-object/from16 v0, p2
 
@@ -3915,7 +3959,7 @@
 
     move-result v19
 
-    .line 707
+    .line 743
     .local v19, "restoreStatus":I
     and-int/lit8 v29, v19, 0x1
 
@@ -3923,7 +3967,7 @@
 
     const/4 v12, 0x1
 
-    .line 708
+    .line 744
     .local v12, "isIdValid":Z
     :goto_2
     and-int/lit8 v29, v19, 0x2
@@ -3932,7 +3976,7 @@
 
     const/16 v27, 0x1
 
-    .line 710
+    .line 746
     .local v27, "wasProviderReady":Z
     :goto_3
     sget-object v29, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
@@ -3941,7 +3985,7 @@
 
     move-result-object v28
 
-    .line 711
+    .line 747
     .local v28, "wm":Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;
     if-lez v4, :cond_4
 
@@ -3951,14 +3995,14 @@
 
     move-result-object v17
 
-    .line 714
+    .line 750
     .local v17, "provider":Landroid/appwidget/AppWidgetProviderInfo;
     :goto_4
     invoke-static/range {v17 .. v17}, Lcom/android/launcher3/LauncherModel;->isValidProvider(Landroid/appwidget/AppWidgetProviderInfo;)Z
 
     move-result v13
 
-    .line 715
+    .line 751
     .local v13, "isProviderReady":Z
     sget-boolean v29, Lcom/android/launcher3/home/HomeLoader;->sIsSafeMode:Z
 
@@ -3970,7 +4014,7 @@
 
     if-nez v13, :cond_5
 
-    .line 716
+    .line 752
     new-instance v29, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v29 .. v29}, Ljava/lang/StringBuilder;-><init>()V
@@ -4003,7 +4047,7 @@
 
     move-result-object v16
 
-    .line 719
+    .line 755
     .local v16, "log":Ljava/lang/String;
     const-string v29, "HomeLoader"
 
@@ -4013,7 +4057,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 720
+    .line 756
     const-string v29, "HomeLoader"
 
     const/16 v30, 0x0
@@ -4026,7 +4070,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/android/launcher3/Launcher;->addDumpLog(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 721
+    .line 757
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v29
@@ -4035,12 +4079,12 @@
 
     invoke-virtual {v15, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 722
+    .line 758
     const/16 v20, 0x0
 
     goto :goto_1
 
-    .line 707
+    .line 743
     .end local v12    # "isIdValid":Z
     .end local v13    # "isProviderReady":Z
     .end local v16    # "log":Ljava/lang/String;
@@ -4052,20 +4096,20 @@
 
     goto :goto_2
 
-    .line 708
+    .line 744
     .restart local v12    # "isIdValid":Z
     :cond_3
     const/16 v27, 0x0
 
     goto :goto_3
 
-    .line 711
+    .line 747
     .restart local v27    # "wasProviderReady":Z
     .restart local v28    # "wm":Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;
     :cond_4
     sget-object v29, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
-    .line 712
+    .line 748
     invoke-static/range {v21 .. v21}, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
 
     move-result-object v30
@@ -4082,13 +4126,13 @@
 
     goto :goto_4
 
-    .line 724
+    .line 760
     .restart local v13    # "isProviderReady":Z
     .restart local v17    # "provider":Landroid/appwidget/AppWidgetProviderInfo;
     :cond_5
     if-eqz v13, :cond_8
 
-    .line 725
+    .line 761
     new-instance v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     move-object/from16 v0, v17
@@ -4101,33 +4145,33 @@
 
     invoke-direct {v5, v4, v0}, Lcom/android/launcher3/home/LauncherAppWidgetInfo;-><init>(ILandroid/content/ComponentName;)V
 
-    .line 730
+    .line 766
     .local v5, "appWidgetInfo":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     and-int/lit8 v24, v19, -0x9
 
-    .line 731
+    .line 767
     .local v24, "status":I
     if-nez v27, :cond_6
 
-    .line 736
+    .line 772
     if-eqz v12, :cond_7
 
-    .line 737
+    .line 773
     const/16 v24, 0x4
 
-    .line 742
+    .line 778
     :cond_6
     :goto_5
     move/from16 v0, v24
 
     iput v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->restoreStatus:I
 
-    .line 762
+    .line 798
     .end local v24    # "status":I
     :goto_6
     iput-wide v10, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->id:J
 
-    .line 763
+    .line 799
     move-object/from16 v0, p2
 
     iget v0, v0, Lcom/android/launcher3/common/model/CursorInfo;->screenIndex:I
@@ -4152,7 +4196,7 @@
 
     iput-wide v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->screenId:J
 
-    .line 764
+    .line 800
     move-object/from16 v0, p2
 
     iget v0, v0, Lcom/android/launcher3/common/model/CursorInfo;->cellXIndex:I
@@ -4171,7 +4215,7 @@
 
     iput v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->cellX:I
 
-    .line 765
+    .line 801
     move-object/from16 v0, p2
 
     iget v0, v0, Lcom/android/launcher3/common/model/CursorInfo;->cellYIndex:I
@@ -4190,7 +4234,7 @@
 
     iput v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->cellY:I
 
-    .line 766
+    .line 802
     move-object/from16 v0, p2
 
     iget v0, v0, Lcom/android/launcher3/common/model/CursorInfo;->spanXIndex:I
@@ -4209,7 +4253,7 @@
 
     iput v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->spanX:I
 
-    .line 767
+    .line 803
     move-object/from16 v0, p2
 
     iget v0, v0, Lcom/android/launcher3/common/model/CursorInfo;->spanYIndex:I
@@ -4228,12 +4272,12 @@
 
     iput v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->spanY:I
 
-    .line 768
+    .line 804
     move-object/from16 v0, v25
 
     iput-object v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
-    .line 770
+    .line 806
     const/16 v29, -0x64
 
     move/from16 v0, v29
@@ -4246,14 +4290,14 @@
 
     if-eq v7, v0, :cond_e
 
-    .line 772
+    .line 808
     const-string v29, "HomeLoader"
 
     const-string v30, "Widget found where container != CONTAINER_DESKTOP nor CONTAINER_HOTSEAT - ignoring!"
 
     invoke-static/range {v29 .. v30}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 773
+    .line 809
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v29
@@ -4262,19 +4306,19 @@
 
     invoke-virtual {v15, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 774
+    .line 810
     const/16 v20, 0x0
 
     goto/16 :goto_1
 
-    .line 739
+    .line 775
     .restart local v24    # "status":I
     :cond_7
     and-int/lit8 v24, v24, -0x3
 
     goto/16 :goto_5
 
-    .line 744
+    .line 780
     .end local v5    # "appWidgetInfo":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     .end local v24    # "status":I
     :cond_8
@@ -4328,32 +4372,32 @@
 
     invoke-static/range {v29 .. v30}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 745
+    .line 781
     new-instance v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     invoke-direct {v5, v4, v6}, Lcom/android/launcher3/home/LauncherAppWidgetInfo;-><init>(ILandroid/content/ComponentName;)V
 
-    .line 746
+    .line 782
     .restart local v5    # "appWidgetInfo":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     move/from16 v0, v19
 
     iput v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->restoreStatus:I
 
-    .line 747
+    .line 783
     sget-object v29, Lcom/android/launcher3/home/HomeLoader;->sInstallingPkgs:Ljava/util/HashMap;
 
     if-nez v29, :cond_a
 
     const/4 v9, 0x0
 
-    .line 749
+    .line 785
     .local v9, "installProgress":Ljava/lang/Integer;
     :goto_7
     and-int/lit8 v29, v19, 0x8
 
     if-eqz v29, :cond_b
 
-    .line 759
+    .line 795
     :cond_9
     :goto_8
     if-nez v9, :cond_d
@@ -4367,7 +4411,7 @@
 
     goto/16 :goto_6
 
-    .line 747
+    .line 783
     .end local v9    # "installProgress":Ljava/lang/Integer;
     :cond_a
     sget-object v29, Lcom/android/launcher3/home/HomeLoader;->sInstallingPkgs:Ljava/util/HashMap;
@@ -4386,12 +4430,12 @@
 
     goto :goto_7
 
-    .line 751
+    .line 787
     .restart local v9    # "installProgress":Ljava/lang/Integer;
     :cond_b
     if-eqz v9, :cond_c
 
-    .line 753
+    .line 789
     iget v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->restoreStatus:I
 
     move/from16 v29, v0
@@ -4404,13 +4448,13 @@
 
     goto :goto_8
 
-    .line 754
+    .line 790
     :cond_c
     sget-boolean v29, Lcom/android/launcher3/home/HomeLoader;->sIsSafeMode:Z
 
     if-nez v29, :cond_9
 
-    .line 755
+    .line 791
     const-string v29, "HomeLoader"
 
     new-instance v30, Ljava/lang/StringBuilder;
@@ -4437,7 +4481,7 @@
 
     invoke-static/range {v29 .. v31}, Lcom/android/launcher3/Launcher;->addDumpLog(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 756
+    .line 792
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v29
@@ -4446,12 +4490,12 @@
 
     invoke-virtual {v15, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 757
+    .line 793
     const/16 v20, 0x0
 
     goto/16 :goto_1
 
-    .line 759
+    .line 795
     :cond_d
     invoke-virtual {v9}, Ljava/lang/Integer;->intValue()I
 
@@ -4459,7 +4503,7 @@
 
     goto :goto_9
 
-    .line 777
+    .line 813
     .end local v9    # "installProgress":Ljava/lang/Integer;
     :cond_e
     int-to-long v0, v7
@@ -4470,7 +4514,7 @@
 
     iput-wide v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->container:J
 
-    .line 779
+    .line 815
     const-wide/16 v30, 0x0
 
     move-object/from16 v0, p4
@@ -4495,7 +4539,7 @@
 
     if-nez v29, :cond_f
 
-    .line 780
+    .line 816
     invoke-static {v10, v11}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v29
@@ -4504,16 +4548,16 @@
 
     invoke-virtual {v15, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 781
+    .line 817
     const/16 v20, 0x0
 
     goto/16 :goto_1
 
-    .line 784
+    .line 820
     :cond_f
     if-nez v8, :cond_11
 
-    .line 785
+    .line 821
     iget-object v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
     move-object/from16 v29, v0
@@ -4522,7 +4566,7 @@
 
     move-result-object v18
 
-    .line 786
+    .line 822
     .local v18, "providerName":Ljava/lang/String;
     move-object/from16 v0, v18
 
@@ -4544,13 +4588,13 @@
 
     if-eq v0, v1, :cond_11
 
-    .line 787
+    .line 823
     :cond_10
     new-instance v26, Landroid/content/ContentValues;
 
     invoke-direct/range {v26 .. v26}, Landroid/content/ContentValues;-><init>()V
 
-    .line 788
+    .line 824
     .local v26, "values":Landroid/content/ContentValues;
     const-string v29, "appWidgetProvider"
 
@@ -4562,7 +4606,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 789
+    .line 825
     const-string v29, "restored"
 
     iget v0, v5, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->restoreStatus:I
@@ -4581,14 +4625,14 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 790
+    .line 826
     move-object/from16 v0, p0
 
     move-object/from16 v1, v26
 
     invoke-virtual {v0, v10, v11, v1}, Lcom/android/launcher3/home/HomeLoader;->updateItem(JLandroid/content/ContentValues;)V
 
-    .line 793
+    .line 829
     .end local v18    # "providerName":Ljava/lang/String;
     .end local v26    # "values":Landroid/content/ContentValues;
     :cond_11
@@ -4596,15 +4640,15 @@
 
     invoke-virtual {v0, v5}, Lcom/android/launcher3/home/HomeLoader;->putItemToIdMap(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 794
+    .line 830
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v5}, Lcom/android/launcher3/home/HomeLoader;->addPagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 795
+    .line 831
     move-object/from16 v20, v5
 
-    .line 797
+    .line 833
     .local v20, "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     goto/16 :goto_1
 .end method
@@ -4627,7 +4671,7 @@
     .end annotation
 
     .prologue
-    .line 590
+    .line 626
     .local p1, "needHandlingItems":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/Integer;Ljava/util/ArrayList<*>;>;"
     .local p2, "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     const/4 v9, 0x1
@@ -4648,12 +4692,12 @@
 
     if-lez v9, :cond_0
 
-    .line 592
+    .line 628
     const-string v10, "_id"
 
     const/4 v9, 0x1
 
-    .line 593
+    .line 629
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v9
@@ -4664,12 +4708,12 @@
 
     check-cast v9, Ljava/lang/Iterable;
 
-    .line 592
+    .line 628
     invoke-static {v10, v9}, Lcom/android/launcher3/Utilities;->createDbSelectionQuery(Ljava/lang/String;Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 594
+    .line 630
     .local v8, "where":Ljava/lang/String;
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
@@ -4679,7 +4723,7 @@
 
     invoke-virtual {v9, v10, v8, v11}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 595
+    .line 631
     const-string v9, "HomeLoader"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -4702,7 +4746,7 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 598
+    .line 634
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     invoke-virtual {v9}, Lcom/android/launcher3/common/model/FavoritesProvider;->deleteEmptyFolders()Ljava/util/List;
@@ -4730,13 +4774,13 @@
 
     move-result-wide v2
 
-    .line 599
+    .line 635
     .local v2, "folderId":J
     sget-object v11, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v11
 
-    .line 600
+    .line 636
     :try_start_0
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -4746,24 +4790,24 @@
 
     check-cast v6, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 601
+    .line 637
     .local v6, "removeFolderItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     invoke-virtual {p0, v6}, Lcom/android/launcher3/home/HomeLoader;->removePagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 602
+    .line 638
     invoke-virtual {p2, v6}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 603
+    .line 639
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-virtual {v9, v2, v3}, Lcom/android/launcher3/util/LongArrayMap;->remove(J)V
 
-    .line 604
+    .line 640
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-virtual {v9, v2, v3}, Lcom/android/launcher3/util/LongArrayMap;->remove(J)V
 
-    .line 605
+    .line 641
     monitor-exit v11
 
     goto :goto_0
@@ -4778,7 +4822,7 @@
 
     throw v9
 
-    .line 610
+    .line 646
     .end local v2    # "folderId":J
     .end local v8    # "where":Ljava/lang/String;
     :cond_0
@@ -4800,18 +4844,18 @@
 
     if-lez v9, :cond_1
 
-    .line 612
+    .line 648
     new-instance v7, Landroid/content/ContentValues;
 
     invoke-direct {v7}, Landroid/content/ContentValues;-><init>()V
 
-    .line 613
+    .line 649
     .local v7, "values":Landroid/content/ContentValues;
     const-string v10, "_id"
 
     const/4 v9, 0x2
 
-    .line 614
+    .line 650
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v9
@@ -4822,12 +4866,12 @@
 
     check-cast v9, Ljava/lang/Iterable;
 
-    .line 613
+    .line 649
     invoke-static {v10, v9}, Lcom/android/launcher3/Utilities;->createDbSelectionQuery(Ljava/lang/String;Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 615
+    .line 651
     .restart local v8    # "where":Ljava/lang/String;
     const-string v9, "restored"
 
@@ -4839,7 +4883,7 @@
 
     invoke-virtual {v7, v9, v10}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 616
+    .line 652
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
     sget-object v10, Lcom/android/launcher3/common/model/LauncherSettings$Favorites;->CONTENT_URI:Landroid/net/Uri;
@@ -4848,7 +4892,7 @@
 
     invoke-virtual {v9, v10, v7, v8, v11}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 617
+    .line 653
     const-string v9, "HomeLoader"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -4871,7 +4915,7 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 621
+    .line 657
     .end local v7    # "values":Landroid/content/ContentValues;
     .end local v8    # "where":Ljava/lang/String;
     :cond_1
@@ -4893,7 +4937,7 @@
 
     if-lez v9, :cond_2
 
-    .line 622
+    .line 658
     const/4 v9, 0x4
 
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -4906,7 +4950,7 @@
 
     check-cast v5, Ljava/util/ArrayList;
 
-    .line 623
+    .line 659
     .local v5, "overlapItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -4916,7 +4960,7 @@
 
     move-result v0
 
-    .line 624
+    .line 660
     .local v0, "countX":I
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -4926,7 +4970,7 @@
 
     move-result v1
 
-    .line 626
+    .line 662
     .local v1, "countY":I
     invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -4945,14 +4989,14 @@
 
     check-cast v4, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 627
+    .line 663
     .local v4, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     iput v0, v4, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 628
+    .line 664
     iput v1, v4, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 629
+    .line 665
     const-string v10, "HomeLoader"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -4981,7 +5025,7 @@
 
     goto :goto_1
 
-    .line 634
+    .line 670
     .end local v0    # "countX":I
     .end local v1    # "countY":I
     .end local v4    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -5007,7 +5051,7 @@
 
     const/4 v9, 0x3
 
-    .line 635
+    .line 671
     invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v9
@@ -5024,11 +5068,11 @@
 
     if-lez v9, :cond_4
 
-    .line 636
+    .line 672
     :cond_3
     invoke-direct {p0, p2}, Lcom/android/launcher3/home/HomeLoader;->handleOutsideItems(Ljava/util/ArrayList;)V
 
-    .line 637
+    .line 673
     const-string v10, "HomeLoader"
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -5067,7 +5111,7 @@
 
     invoke-static {v10, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 639
+    .line 675
     :cond_4
     return-void
 .end method
@@ -5083,7 +5127,7 @@
     .param p7, "occupied"    # [[Z
 
     .prologue
-    .line 3571
+    .line 3611
     if-ltz p3, :cond_0
 
     if-ltz p4, :cond_0
@@ -5096,11 +5140,11 @@
 
     if-le v2, p2, :cond_1
 
-    .line 3579
+    .line 3619
     :cond_0
     return-void
 
-    .line 3574
+    .line 3614
     :cond_1
     move v0, p3
 
@@ -5112,7 +5156,7 @@
 
     if-ge v0, p1, :cond_0
 
-    .line 3575
+    .line 3615
     move v1, p4
 
     .local v1, "y":I
@@ -5123,19 +5167,19 @@
 
     if-ge v1, p2, :cond_2
 
-    .line 3576
+    .line 3616
     aget-object v2, p7, v0
 
     const/4 v3, 0x1
 
     aput-boolean v3, v2, v1
 
-    .line 3575
+    .line 3615
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 3574
+    .line 3614
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
@@ -5166,20 +5210,20 @@
     .end annotation
 
     .prologue
-    .line 2207
+    .line 2247
     .local p1, "workspaceScreens":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     .local p2, "addedWorkspaceScreensFinal":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     new-instance v18, Landroid/util/LongSparseArray;
 
     invoke-direct/range {v18 .. v18}, Landroid/util/LongSparseArray;-><init>()V
 
-    .line 2210
+    .line 2250
     .local v18, "screenItems":Landroid/util/LongSparseArray;, "Landroid/util/LongSparseArray<Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;>;"
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 2211
+    .line 2251
     :try_start_0
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -5201,7 +5245,7 @@
 
     check-cast v13, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2212
+    .line 2252
     .local v13, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v8, v13, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -5215,7 +5259,7 @@
 
     if-nez v7, :cond_0
 
-    .line 2213
+    .line 2253
     iget-wide v8, v13, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
     move-object/from16 v0, v18
@@ -5226,17 +5270,17 @@
 
     check-cast v14, Ljava/util/ArrayList;
 
-    .line 2214
+    .line 2254
     .local v14, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-nez v14, :cond_1
 
-    .line 2215
+    .line 2255
     new-instance v14, Ljava/util/ArrayList;
 
     .end local v14    # "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2216
+    .line 2256
     .restart local v14    # "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     iget-wide v8, v13, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
@@ -5244,13 +5288,13 @@
 
     invoke-virtual {v0, v8, v9, v14}, Landroid/util/LongSparseArray;->put(JLjava/lang/Object;)V
 
-    .line 2218
+    .line 2258
     :cond_1
     invoke-virtual {v14, v13}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 2221
+    .line 2261
     .end local v13    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v14    # "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :catchall_0
@@ -5268,16 +5312,16 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2224
+    .line 2264
     const-wide/16 v4, 0x0
 
-    .line 2225
+    .line 2265
     .local v4, "screenId":J
     const/4 v2, 0x2
 
     new-array v6, v2, [I
 
-    .line 2226
+    .line 2266
     .local v6, "coordinates":[I
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
@@ -5285,21 +5329,21 @@
 
     move-result v10
 
-    .line 2227
+    .line 2267
     .local v10, "defaultScreenIndex":I
     const/4 v15, 0x0
 
-    .line 2229
+    .line 2269
     .local v15, "needNewScreen":Z
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->size()I
 
     move-result v17
 
-    .line 2230
+    .line 2270
     .local v17, "screenCount":I
     if-eqz p5, :cond_7
 
-    .line 2231
+    .line 2271
     add-int/lit8 v12, v17, -0x1
 
     .local v12, "i":I
@@ -5308,7 +5352,7 @@
 
     if-le v12, v2, :cond_3
 
-    .line 2232
+    .line 2272
     move-object/from16 v0, p1
 
     invoke-virtual {v0, v12}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -5321,7 +5365,7 @@
 
     move-result-wide v4
 
-    .line 2233
+    .line 2273
     move-object/from16 v0, v18
 
     invoke-virtual {v0, v4, v5}, Landroid/util/LongSparseArray;->get(J)Ljava/lang/Object;
@@ -5330,17 +5374,17 @@
 
     if-eqz v2, :cond_6
 
-    .line 2251
+    .line 2291
     .end local v12    # "i":I
     :cond_3
     :goto_2
     const/4 v11, 0x0
 
-    .line 2253
+    .line 2293
     .local v11, "found":Z
     if-nez v15, :cond_5
 
-    .line 2254
+    .line 2294
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader;->mItemPositionHelper:Lcom/android/launcher3/home/HomeItemPositionHelper;
@@ -5363,19 +5407,19 @@
 
     move-result v11
 
-    .line 2257
+    .line 2297
     if-nez v11, :cond_5
 
-    .line 2258
+    .line 2298
     add-int/lit8 v10, v10, 0x1
 
     move/from16 v16, v10
 
-    .line 2259
+    .line 2299
     .local v16, "screen":I
     if-eqz p5, :cond_4
 
-    .line 2260
+    .line 2300
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
@@ -5388,7 +5432,7 @@
 
     add-int/lit8 v16, v2, 0x1
 
-    .line 2263
+    .line 2303
     :cond_4
     :goto_3
     move/from16 v0, v16
@@ -5397,7 +5441,7 @@
 
     if-ge v0, v1, :cond_5
 
-    .line 2264
+    .line 2304
     move-object/from16 v0, p1
 
     move/from16 v1, v16
@@ -5412,12 +5456,12 @@
 
     move-result-wide v4
 
-    .line 2265
+    .line 2305
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader;->mItemPositionHelper:Lcom/android/launcher3/home/HomeItemPositionHelper;
 
-    .line 2266
+    .line 2306
     move-object/from16 v0, v18
 
     invoke-virtual {v0, v4, v5}, Landroid/util/LongSparseArray;->get(J)Ljava/lang/Object;
@@ -5432,22 +5476,22 @@
 
     move/from16 v9, p5
 
-    .line 2265
+    .line 2305
     invoke-virtual/range {v2 .. v9}, Lcom/android/launcher3/home/HomeItemPositionHelper;->findNextAvailableIconSpaceInScreen(Ljava/util/ArrayList;J[IIIZ)Z
 
     move-result v2
 
     if-eqz v2, :cond_a
 
-    .line 2268
+    .line 2308
     const/4 v11, 0x1
 
-    .line 2275
+    .line 2315
     .end local v16    # "screen":I
     :cond_5
     if-nez v11, :cond_b
 
-    .line 2277
+    .line 2317
     invoke-static {}, Lcom/android/launcher3/common/model/FavoritesProvider;->getInstance()Lcom/android/launcher3/common/model/FavoritesProvider;
 
     move-result-object v2
@@ -5456,7 +5500,7 @@
 
     move-result-wide v4
 
-    .line 2280
+    .line 2320
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
@@ -5465,7 +5509,7 @@
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2281
+    .line 2321
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
@@ -5474,12 +5518,12 @@
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2284
+    .line 2324
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader;->mItemPositionHelper:Lcom/android/launcher3/home/HomeItemPositionHelper;
 
-    .line 2285
+    .line 2325
     move-object/from16 v0, v18
 
     invoke-virtual {v0, v4, v5}, Landroid/util/LongSparseArray;->get(J)Ljava/lang/Object;
@@ -5494,14 +5538,14 @@
 
     move/from16 v9, p5
 
-    .line 2284
+    .line 2324
     invoke-virtual/range {v2 .. v9}, Lcom/android/launcher3/home/HomeItemPositionHelper;->findNextAvailableIconSpaceInScreen(Ljava/util/ArrayList;J[IIIZ)Z
 
     move-result v2
 
     if-nez v2, :cond_b
 
-    .line 2286
+    .line 2326
     new-instance v2, Ljava/lang/RuntimeException;
 
     const-string v3, "Can\'t find space to add the item"
@@ -5510,7 +5554,7 @@
 
     throw v2
 
-    .line 2231
+    .line 2271
     .end local v11    # "found":Z
     .restart local v12    # "i":I
     :cond_6
@@ -5518,28 +5562,28 @@
 
     goto/16 :goto_1
 
-    .line 2240
+    .line 2280
     .end local v12    # "i":I
     :cond_7
     add-int/lit8 v10, v10, 0x1
 
-    .line 2241
+    .line 2281
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
     if-lt v10, v2, :cond_8
 
-    .line 2242
+    .line 2282
     const/4 v15, 0x1
 
     goto/16 :goto_2
 
-    .line 2244
+    .line 2284
     :cond_8
     if-gez v10, :cond_9
 
-    .line 2245
+    .line 2285
     const-string v2, "HomeLoader"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -5562,10 +5606,10 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2246
+    .line 2286
     const/4 v10, 0x0
 
-    .line 2248
+    .line 2288
     :cond_9
     move-object/from16 v0, p1
 
@@ -5581,7 +5625,7 @@
 
     goto/16 :goto_2
 
-    .line 2263
+    .line 2303
     .restart local v11    # "found":Z
     .restart local v16    # "screen":I
     :cond_a
@@ -5589,7 +5633,7 @@
 
     goto/16 :goto_3
 
-    .line 2289
+    .line 2329
     .end local v16    # "screen":I
     :cond_b
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -5620,24 +5664,24 @@
 
     const-wide/16 v8, -0x65
 
-    .line 3492
+    .line 3532
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3493
+    .line 3533
     .local v3, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3494
+    .line 3534
     .local v0, "folderIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     sget-object v5, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 3495
+    .line 3535
     :try_start_0
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -5659,7 +5703,7 @@
 
     check-cast v1, Lcom/android/launcher3/folder/FolderInfo;
 
-    .line 3496
+    .line 3536
     .local v1, "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     iget-wide v6, v1, Lcom/android/launcher3/folder/FolderInfo;->container:J
 
@@ -5673,7 +5717,7 @@
 
     if-nez v6, :cond_0
 
-    .line 3498
+    .line 3538
     :cond_1
     iget-wide v6, v1, Lcom/android/launcher3/folder/FolderInfo;->id:J
 
@@ -5685,7 +5729,7 @@
 
     goto :goto_0
 
-    .line 3507
+    .line 3547
     .end local v1    # "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     :catchall_0
     move-exception v4
@@ -5696,7 +5740,7 @@
 
     throw v4
 
-    .line 3500
+    .line 3540
     :cond_2
     :try_start_1
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
@@ -5719,7 +5763,7 @@
 
     check-cast v2, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3501
+    .line 3541
     .local v2, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v6, v2, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -5735,7 +5779,7 @@
 
     iget-wide v6, v2, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 3503
+    .line 3543
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v6
@@ -5746,20 +5790,20 @@
 
     if-eqz v6, :cond_3
 
-    .line 3504
+    .line 3544
     :cond_4
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 3507
+    .line 3547
     .end local v2    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_5
     monitor-exit v5
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3508
+    .line 3548
     return-object v3
 .end method
 
@@ -5777,32 +5821,32 @@
 
     const/4 v1, 0x0
 
-    .line 1275
+    .line 1311
     if-nez p2, :cond_1
 
-    .line 1276
+    .line 1312
     const-string v0, "HomeLoader"
 
     const-string v4, "Null user found in getShortcutInfo"
 
     invoke-static {v0, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1322
+    .line 1358
     :cond_0
     :goto_0
     return-object v1
 
-    .line 1280
+    .line 1316
     :cond_1
     invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v2
 
-    .line 1281
+    .line 1317
     .local v2, "componentName":Landroid/content/ComponentName;
     if-nez v2, :cond_2
 
-    .line 1282
+    .line 1318
     const-string v0, "HomeLoader"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -5827,7 +5871,7 @@
 
     goto :goto_0
 
-    .line 1286
+    .line 1322
     :cond_2
     new-instance v8, Landroid/content/Intent;
 
@@ -5837,29 +5881,29 @@
 
     invoke-direct {v8, v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 1287
+    .line 1323
     .local v8, "newIntent":Landroid/content/Intent;
     const-string v0, "android.intent.category.LAUNCHER"
 
     invoke-virtual {v8, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1288
+    .line 1324
     invoke-virtual {v8, v2}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 1289
+    .line 1325
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
 
     invoke-virtual {v0, v8, p2}, Lcom/android/launcher3/common/compat/LauncherAppsCompat;->resolveActivity(Landroid/content/Intent;Lcom/android/launcher3/common/compat/UserHandleCompat;)Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
 
     move-result-object v3
 
-    .line 1290
+    .line 1326
     .local v3, "lai":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     if-nez v3, :cond_3
 
     if-nez p5, :cond_3
 
-    .line 1291
+    .line 1327
     const-string v0, "HomeLoader"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -5884,13 +5928,13 @@
 
     goto :goto_0
 
-    .line 1295
+    .line 1331
     :cond_3
     new-instance v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
     invoke-direct {v1}, Lcom/android/launcher3/common/base/item/IconInfo;-><init>()V
 
-    .line 1296
+    .line 1332
     .local v1, "info":Lcom/android/launcher3/common/base/item/IconInfo;
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
@@ -5900,7 +5944,7 @@
 
     invoke-virtual/range {v0 .. v6}, Lcom/android/launcher3/common/model/IconCache;->getTitleAndIcon(Lcom/android/launcher3/common/base/item/IconInfo;Landroid/content/ComponentName;Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;Lcom/android/launcher3/common/compat/UserHandleCompat;ZZ)V
 
-    .line 1297
+    .line 1333
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
@@ -5917,7 +5961,7 @@
 
     if-eqz p3, :cond_5
 
-    .line 1298
+    .line 1334
     iget v0, p4, Lcom/android/launcher3/common/model/CursorInfo;->iconIndex:I
 
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
@@ -5926,7 +5970,7 @@
 
     move-result-object v7
 
-    .line 1299
+    .line 1335
     .local v7, "icon":Landroid/graphics/Bitmap;
     if-nez v7, :cond_4
 
@@ -5940,7 +5984,7 @@
     :cond_4
     invoke-virtual {v1, v7}, Lcom/android/launcher3/common/base/item/IconInfo;->setIcon(Landroid/graphics/Bitmap;)V
 
-    .line 1302
+    .line 1338
     :cond_5
     if-eqz v3, :cond_6
 
@@ -5954,12 +5998,12 @@
 
     if-eqz v0, :cond_6
 
-    .line 1303
+    .line 1339
     const/4 v0, 0x4
 
     iput v0, v1, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
-    .line 1307
+    .line 1343
     :cond_6
     iget-object v0, v1, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
@@ -5971,7 +6015,7 @@
 
     if-eqz p3, :cond_7
 
-    .line 1308
+    .line 1344
     iget v0, p4, Lcom/android/launcher3/common/model/CursorInfo;->titleIndex:I
 
     invoke-interface {p3, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -5984,27 +6028,27 @@
 
     iput-object v0, v1, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
-    .line 1312
+    .line 1348
     :cond_7
     iget-object v0, v1, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_8
 
-    .line 1313
+    .line 1349
     invoke-virtual {v2}, Landroid/content/ComponentName;->getClassName()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, v1, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
-    .line 1316
+    .line 1352
     :cond_8
     iput v5, v1, Lcom/android/launcher3/common/base/item/IconInfo;->itemType:I
 
-    .line 1317
+    .line 1353
     iput-object p2, v1, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
-    .line 1318
+    .line 1354
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sUserManager:Lcom/android/launcher3/common/compat/UserManagerCompat;
 
     iget-object v4, v1, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
@@ -6017,10 +6061,10 @@
 
     iput-object v0, v1, Lcom/android/launcher3/common/base/item/IconInfo;->contentDescription:Ljava/lang/CharSequence;
 
-    .line 1319
+    .line 1355
     if-eqz v3, :cond_0
 
-    .line 1320
+    .line 1356
     invoke-static {v3}, Lcom/android/launcher3/common/base/item/IconInfo;->initFlags(Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;)I
 
     move-result v0
@@ -6034,12 +6078,12 @@
     .locals 2
 
     .prologue
-    .line 2293
+    .line 2333
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 2294
+    .line 2334
     :try_start_0
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mCallbacks:Ljava/lang/ref/WeakReference;
 
@@ -6063,7 +6107,7 @@
 
     goto :goto_0
 
-    .line 2295
+    .line 2335
     :catchall_0
     move-exception v0
 
@@ -6079,7 +6123,7 @@
     .param p1, "rank"    # I
 
     .prologue
-    .line 3776
+    .line 3816
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->isVerticalBarLayout()Z
@@ -6100,7 +6144,7 @@
     .param p1, "rank"    # I
 
     .prologue
-    .line 3780
+    .line 3820
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->isVerticalBarLayout()Z
@@ -6134,7 +6178,7 @@
     .locals 6
 
     .prologue
-    .line 3097
+    .line 3137
     new-instance v0, Lcom/android/launcher3/home/HomeDefaultLayoutParser;
 
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
@@ -6149,7 +6193,7 @@
 
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
-    .line 3098
+    .line 3138
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -6168,23 +6212,23 @@
     .param p2, "user"    # Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     .prologue
-    .line 1507
+    .line 1543
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 1508
+    .line 1544
     :try_start_0
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetProviders:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
-    .line 1509
+    .line 1545
     const/4 v0, 0x0
 
     invoke-static {p0, v0}, Lcom/android/launcher3/home/HomeLoader;->getWidgetProviders(Landroid/content/Context;Z)Ljava/util/List;
 
-    .line 1511
+    .line 1547
     :cond_0
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetProviders:Ljava/util/HashMap;
 
@@ -6202,7 +6246,7 @@
 
     return-object v0
 
-    .line 1512
+    .line 1548
     :catchall_0
     move-exception v0
 
@@ -6224,19 +6268,19 @@
     .prologue
     const/4 v7, 0x1
 
-    .line 1330
+    .line 1366
     new-instance v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
     invoke-direct {v1}, Lcom/android/launcher3/common/base/item/IconInfo;-><init>()V
 
-    .line 1331
+    .line 1367
     .local v1, "info":Lcom/android/launcher3/common/base/item/IconInfo;
     iput-object p4, v1, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
-    .line 1332
+    .line 1368
     iput v7, v1, Lcom/android/launcher3/common/base/item/IconInfo;->itemType:I
 
-    .line 1334
+    .line 1370
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v4
@@ -6255,10 +6299,10 @@
 
     if-eqz v4, :cond_1
 
-    .line 1336
+    .line 1372
     iput-boolean v7, v1, Lcom/android/launcher3/common/base/item/IconInfo;->isAppsButton:Z
 
-    .line 1337
+    .line 1373
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -6273,19 +6317,19 @@
 
     iput-object v4, v1, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
-    .line 1338
+    .line 1374
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v4
 
     invoke-virtual {v4, v7}, Lcom/android/launcher3/LauncherAppState;->setAppsButtonEnabled(Z)V
 
-    .line 1377
+    .line 1413
     :cond_0
     :goto_0
     return-object v1
 
-    .line 1340
+    .line 1376
     :cond_1
     iget v4, p3, Lcom/android/launcher3/common/model/CursorInfo;->titleIndex:I
 
@@ -6299,18 +6343,18 @@
 
     iput-object v4, v1, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
-    .line 1342
+    .line 1378
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {p3, p2, v1, v4}, Lcom/android/launcher3/common/model/CursorInfo;->loadIcon(Landroid/database/Cursor;Lcom/android/launcher3/common/base/item/IconInfo;Landroid/content/Context;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 1344
+    .line 1380
     .local v0, "icon":Landroid/graphics/Bitmap;
     if-nez v0, :cond_2
 
-    .line 1345
+    .line 1381
     const-string v4, "HomeLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -6335,7 +6379,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1346
+    .line 1382
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     iget-object v5, v1, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
@@ -6344,10 +6388,10 @@
 
     move-result-object v0
 
-    .line 1347
+    .line 1383
     iput-boolean v7, v1, Lcom/android/launcher3/common/base/item/IconInfo;->usingFallbackIcon:Z
 
-    .line 1350
+    .line 1386
     :cond_2
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
@@ -6359,20 +6403,20 @@
 
     if-eqz v4, :cond_3
 
-    .line 1351
+    .line 1387
     invoke-virtual {v1, v0}, Lcom/android/launcher3/common/base/item/IconInfo;->setOriginalIcon(Landroid/graphics/Bitmap;)V
 
-    .line 1352
+    .line 1388
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-static {v4, v0, p5}, Lcom/android/launcher3/util/ShortcutTray;->getIcon(Landroid/content/Context;Landroid/graphics/Bitmap;Landroid/content/ComponentName;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 1353
+    .line 1389
     iput-boolean v7, v1, Lcom/android/launcher3/common/base/item/IconInfo;->customIcon:Z
 
-    .line 1356
+    .line 1392
     :cond_3
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
@@ -6390,18 +6434,18 @@
 
     if-eqz v4, :cond_5
 
-    .line 1357
+    .line 1393
     iget-boolean v4, v1, Lcom/android/launcher3/common/base/item/IconInfo;->customIcon:Z
 
     if-nez v4, :cond_4
 
-    .line 1358
+    .line 1394
     iput-boolean v7, v1, Lcom/android/launcher3/common/base/item/IconInfo;->customIcon:Z
 
-    .line 1359
+    .line 1395
     invoke-virtual {v1, v0}, Lcom/android/launcher3/common/base/item/IconInfo;->setOriginalIcon(Landroid/graphics/Bitmap;)V
 
-    .line 1361
+    .line 1397
     :cond_4
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
@@ -6409,7 +6453,7 @@
 
     iget-object v5, v5, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
 
-    .line 1362
+    .line 1398
     invoke-virtual {v5}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getIconSize()I
 
     move-result v5
@@ -6420,22 +6464,22 @@
 
     move-result-object v6
 
-    .line 1361
+    .line 1397
     invoke-static {v4, v0, v5, v6}, Lcom/android/launcher3/util/DualAppUtils;->makeUserBadgedIcon(Landroid/content/Context;Landroid/graphics/Bitmap;ILandroid/os/UserHandle;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 1365
+    .line 1401
     :cond_5
     invoke-virtual {v1, v0}, Lcom/android/launcher3/common/base/item/IconInfo;->setIcon(Landroid/graphics/Bitmap;)V
 
-    .line 1367
+    .line 1403
     if-eqz p5, :cond_0
 
-    .line 1368
+    .line 1404
     iput-object p5, v1, Lcom/android/launcher3/common/base/item/IconInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 1369
+    .line 1405
     new-instance v3, Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -6446,22 +6490,22 @@
 
     invoke-direct {v3, v4, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 1370
+    .line 1406
     .local v3, "newIntent":Landroid/content/Intent;
     invoke-virtual {v3, p5}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 1371
+    .line 1407
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
 
     invoke-virtual {v4, v3, p4}, Lcom/android/launcher3/common/compat/LauncherAppsCompat;->resolveActivity(Landroid/content/Intent;Lcom/android/launcher3/common/compat/UserHandleCompat;)Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
 
     move-result-object v2
 
-    .line 1372
+    .line 1408
     .local v2, "lai":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     if-eqz v2, :cond_0
 
-    .line 1373
+    .line 1409
     invoke-static {v2}, Lcom/android/launcher3/common/base/item/IconInfo;->initFlags(Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;)I
 
     move-result v4
@@ -6488,12 +6532,12 @@
     .end annotation
 
     .prologue
-    .line 1516
+    .line 1552
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1518
+    .line 1554
     .local v3, "results":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;>;"
     :try_start_0
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetLock:Ljava/lang/Object;
@@ -6502,7 +6546,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1519
+    .line 1555
     :try_start_1
     sget-object v8, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetProviders:Ljava/util/HashMap;
 
@@ -6510,25 +6554,25 @@
 
     if-eqz p1, :cond_3
 
-    .line 1520
+    .line 1556
     :cond_0
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
-    .line 1522
+    .line 1558
     .local v4, "tmpWidgetProviders":Ljava/util/HashMap;, "Ljava/util/HashMap<Lcom/android/launcher3/util/ComponentKey;Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;>;"
     invoke-static {p0}, Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;->getInstance(Landroid/content/Context;)Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;
 
     move-result-object v7
 
-    .line 1525
+    .line 1561
     .local v7, "wm":Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;
     invoke-virtual {v7}, Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;->getAllProviders()Ljava/util/List;
 
     move-result-object v6
 
-    .line 1526
+    .line 1562
     .local v6, "widgets":Ljava/util/List;, "Ljava/util/List<Landroid/appwidget/AppWidgetProviderInfo;>;"
     invoke-interface {v6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -6547,19 +6591,19 @@
 
     check-cast v2, Landroid/appwidget/AppWidgetProviderInfo;
 
-    .line 1527
+    .line 1563
     .local v2, "pInfo":Landroid/appwidget/AppWidgetProviderInfo;
     invoke-static {p0, v2}, Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;->fromProviderInfo(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;)Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;
 
     move-result-object v1
 
-    .line 1528
+    .line 1564
     .local v1, "info":Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;
     invoke-virtual {v7, v1}, Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;->getUser(Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;)Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     move-result-object v5
 
-    .line 1529
+    .line 1565
     .local v5, "user":Lcom/android/launcher3/common/compat/UserHandleCompat;
     new-instance v10, Lcom/android/launcher3/util/ComponentKey;
 
@@ -6571,7 +6615,7 @@
 
     goto :goto_0
 
-    .line 1538
+    .line 1574
     .end local v1    # "info":Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;
     .end local v2    # "pInfo":Landroid/appwidget/AppWidgetProviderInfo;
     .end local v4    # "tmpWidgetProviders":Ljava/util/HashMap;, "Ljava/util/HashMap<Lcom/android/launcher3/util/ComponentKey;Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;>;"
@@ -6590,11 +6634,11 @@
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 1539
+    .line 1575
     :catch_0
     move-exception v0
 
-    .line 1540
+    .line 1576
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->getCause()Ljava/lang/Throwable;
 
@@ -6604,18 +6648,18 @@
 
     if-eqz v8, :cond_4
 
-    .line 1545
+    .line 1581
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetLock:Ljava/lang/Object;
 
     monitor-enter v9
 
-    .line 1546
+    .line 1582
     :try_start_3
     sget-object v8, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetProviders:Ljava/util/HashMap;
 
     if-eqz v8, :cond_1
 
-    .line 1547
+    .line 1583
     sget-object v8, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetProviders:Ljava/util/HashMap;
 
     invoke-virtual {v8}, Ljava/util/HashMap;->values()Ljava/util/Collection;
@@ -6624,7 +6668,7 @@
 
     invoke-virtual {v3, v8}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1549
+    .line 1585
     :cond_1
     monitor-exit v9
     :try_end_3
@@ -6634,7 +6678,7 @@
     :goto_1
     return-object v3
 
-    .line 1534
+    .line 1570
     .restart local v4    # "tmpWidgetProviders":Ljava/util/HashMap;, "Ljava/util/HashMap<Lcom/android/launcher3/util/ComponentKey;Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;>;"
     .restart local v6    # "widgets":Ljava/util/List;, "Ljava/util/List<Landroid/appwidget/AppWidgetProviderInfo;>;"
     .restart local v7    # "wm":Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;
@@ -6642,7 +6686,7 @@
     :try_start_4
     sput-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgWidgetProviders:Ljava/util/HashMap;
 
-    .line 1536
+    .line 1572
     .end local v4    # "tmpWidgetProviders":Ljava/util/HashMap;, "Ljava/util/HashMap<Lcom/android/launcher3/util/ComponentKey;Lcom/android/launcher3/common/model/LauncherAppWidgetProviderInfo;>;"
     .end local v6    # "widgets":Ljava/util/List;, "Ljava/util/List<Landroid/appwidget/AppWidgetProviderInfo;>;"
     .end local v7    # "wm":Lcom/android/launcher3/common/compat/AppWidgetManagerCompat;
@@ -6655,14 +6699,14 @@
 
     invoke-virtual {v3, v8}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1537
+    .line 1573
     monitor-exit v9
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     goto :goto_1
 
-    .line 1550
+    .line 1586
     .restart local v0    # "e":Ljava/lang/Exception;
     :catchall_1
     move-exception v8
@@ -6674,7 +6718,7 @@
 
     throw v8
 
-    .line 1552
+    .line 1588
     :cond_4
     throw v0
 .end method
@@ -6692,18 +6736,18 @@
     .end annotation
 
     .prologue
-    .line 3350
+    .line 3390
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3351
+    .line 3391
     .local v1, "widgets":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/home/LauncherAppWidgetInfo;>;"
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 3352
+    .line 3392
     :try_start_0
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -6725,7 +6769,7 @@
 
     check-cast v0, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3353
+    .line 3393
     .local v0, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
 
@@ -6733,7 +6777,7 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 3354
+    .line 3394
     check-cast v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     .end local v0    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -6741,7 +6785,7 @@
 
     goto :goto_0
 
-    .line 3357
+    .line 3397
     :catchall_0
     move-exception v2
 
@@ -6757,7 +6801,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3358
+    .line 3398
     return-object v1
 .end method
 
@@ -6774,7 +6818,7 @@
     .end annotation
 
     .prologue
-    .line 3512
+    .line 3552
     .local p1, "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-eqz p1, :cond_0
 
@@ -6784,7 +6828,7 @@
 
     if-eqz v18, :cond_2
 
-    .line 3513
+    .line 3553
     :cond_0
     const-string v18, "HomeLoader"
 
@@ -6792,17 +6836,17 @@
 
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3567
+    .line 3607
     :cond_1
     return-void
 
-    .line 3516
+    .line 3556
     :cond_2
     new-instance v15, Ljava/util/ArrayList;
 
     invoke-direct {v15}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3518
+    .line 3558
     .local v15, "reArrangeItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -6822,7 +6866,7 @@
 
     check-cast v6, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3519
+    .line 3559
     .local v6, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v0, v6, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -6834,12 +6878,12 @@
 
     if-nez v19, :cond_3
 
-    .line 3520
+    .line 3560
     invoke-virtual {v15, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 3524
+    .line 3564
     .end local v6    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_4
     move-object/from16 v0, p0
@@ -6848,7 +6892,7 @@
 
     move-result-object v12
 
-    .line 3527
+    .line 3567
     .local v12, "outsideItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v12}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -6867,27 +6911,27 @@
 
     check-cast v6, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3528
+    .line 3568
     .restart local v6    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, p1
 
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 3529
+    .line 3569
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v6}, Lcom/android/launcher3/home/HomeLoader;->removePagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
     goto :goto_1
 
-    .line 3533
+    .line 3573
     .end local v6    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_5
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3534
+    .line 3574
     .local v7, "ops":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentProviderOperation;>;"
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -6907,7 +6951,7 @@
 
     check-cast v6, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3536
+    .line 3576
     .restart local v6    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v0, v6, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -6919,22 +6963,22 @@
 
     if-eqz v19, :cond_6
 
-    .line 3539
+    .line 3579
     iget-wide v8, v6, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
 
-    .line 3540
+    .line 3580
     .local v8, "itemId":J
     invoke-static {v8, v9}, Lcom/android/launcher3/common/model/LauncherSettings$Favorites;->getContentUri(J)Landroid/net/Uri;
 
     move-result-object v16
 
-    .line 3541
+    .line 3581
     .local v16, "uri":Landroid/net/Uri;
     new-instance v17, Landroid/content/ContentValues;
 
     invoke-direct/range {v17 .. v17}, Landroid/content/ContentValues;-><init>()V
 
-    .line 3542
+    .line 3582
     .local v17, "values":Landroid/content/ContentValues;
     const-string v19, "cellX"
 
@@ -6954,7 +6998,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3543
+    .line 3583
     const-string v19, "cellY"
 
     iget v0, v6, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
@@ -6973,7 +7017,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3544
+    .line 3584
     const-string v19, "spanX"
 
     iget v0, v6, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
@@ -6992,7 +7036,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3545
+    .line 3585
     const-string v19, "spanY"
 
     iget v0, v6, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
@@ -7011,7 +7055,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3547
+    .line 3587
     invoke-static/range {v16 .. v16}, Landroid/content/ContentProviderOperation;->newUpdate(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
 
     move-result-object v19
@@ -7034,7 +7078,7 @@
 
     goto/16 :goto_2
 
-    .line 3550
+    .line 3590
     .end local v6    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v8    # "itemId":J
     .end local v16    # "uri":Landroid/net/Uri;
@@ -7054,14 +7098,14 @@
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Landroid/content/OperationApplicationException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 3558
+    .line 3598
     :goto_3
     const/4 v13, 0x1
 
     .local v13, "plusIndex":I
     move v14, v13
 
-    .line 3559
+    .line 3599
     .end local v13    # "plusIndex":I
     .local v14, "plusIndex":I
     :goto_4
@@ -7073,10 +7117,10 @@
 
     if-nez v18, :cond_1
 
-    .line 3560
+    .line 3600
     move-object v4, v12
 
-    .line 3561
+    .line 3601
     .local v4, "arrangedItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {}, Lcom/android/launcher3/common/model/FavoritesProvider;->getInstance()Lcom/android/launcher3/common/model/FavoritesProvider;
 
@@ -7086,7 +7130,7 @@
 
     move-result-wide v10
 
-    .line 3562
+    .line 3602
     .local v10, "newScreenId":J
     move-object/from16 v0, p0
 
@@ -7102,7 +7146,7 @@
 
     const/16 v18, 0x0
 
-    .line 3563
+    .line 3603
     move/from16 v0, v18
 
     invoke-virtual {v12, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -7127,17 +7171,17 @@
 
     invoke-direct {v0, v1, v2, v14}, Lcom/android/launcher3/home/HomeLoader$NewScreenInfo;-><init>(JI)V
 
-    .line 3562
+    .line 3602
     invoke-virtual/range {v19 .. v21}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3564
+    .line 3604
     move-object/from16 v0, p0
 
     invoke-direct {v0, v12, v10, v11}, Lcom/android/launcher3/home/HomeLoader;->arrangeItemToNewScreen(Ljava/util/ArrayList;J)Ljava/util/ArrayList;
 
     move-result-object v12
 
-    .line 3565
+    .line 3605
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/HomeLoader;->mExtraItemsAfterGridChanged:Ljava/util/HashMap;
@@ -7156,19 +7200,19 @@
 
     move v14, v13
 
-    .line 3566
+    .line 3606
     .end local v13    # "plusIndex":I
     .restart local v14    # "plusIndex":I
     goto :goto_4
 
-    .line 3551
+    .line 3591
     .end local v4    # "arrangedItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .end local v10    # "newScreenId":J
     .end local v14    # "plusIndex":I
     :catch_0
     move-exception v5
 
-    .line 3552
+    .line 3592
     .local v5, "e":Landroid/os/RemoteException;
     const-string v18, "HomeLoader"
 
@@ -7198,12 +7242,12 @@
 
     goto :goto_3
 
-    .line 3553
+    .line 3593
     .end local v5    # "e":Landroid/os/RemoteException;
     :catch_1
     move-exception v5
 
-    .line 3554
+    .line 3594
     .local v5, "e":Landroid/content/OperationApplicationException;
     const-string v18, "HomeLoader"
 
@@ -7217,7 +7261,7 @@
 
     move-result-object v19
 
-    .line 3555
+    .line 3595
     invoke-virtual {v5}, Landroid/content/OperationApplicationException;->getMessage()Ljava/lang/String;
 
     move-result-object v20
@@ -7230,7 +7274,7 @@
 
     move-result-object v19
 
-    .line 3554
+    .line 3594
     invoke-static/range {v18 .. v19}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_3
@@ -7241,33 +7285,33 @@
     .param p1, "task"    # Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
 
     .prologue
-    .line 1639
+    .line 1675
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 1640
+    .line 1676
     .local v0, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v0, :cond_0
 
-    .line 1641
+    .line 1677
     const-string v2, "HomeLoader"
 
     const-string v3, "initFestivalPageIfNecessary failed with no launcher"
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1655
+    .line 1691
     :goto_0
     return-void
 
-    .line 1645
+    .line 1681
     :cond_0
     new-instance v1, Lcom/android/launcher3/home/HomeLoader$9;
 
     invoke-direct {v1, p0, v0, p1}, Lcom/android/launcher3/home/HomeLoader$9;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 1654
+    .line 1690
     .local v1, "r":Ljava/lang/Runnable;
     invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
@@ -7283,38 +7327,38 @@
 
     const/4 v2, 0x1
 
-    .line 3439
+    .line 3479
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3440
+    .line 3480
     .local v0, "folderIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 3441
+    .line 3481
     :try_start_0
     iget v4, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
 
     if-nez v4, :cond_3
 
-    .line 3442
+    .line 3482
     iget-wide v4, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
     cmp-long v4, v4, v8
 
     if-nez v4, :cond_0
 
-    .line 3443
+    .line 3483
     monitor-exit v3
 
-    .line 3456
+    .line 3496
     :goto_0
     return v2
 
-    .line 3445
+    .line 3485
     :cond_0
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -7336,7 +7380,7 @@
 
     check-cast v1, Lcom/android/launcher3/folder/FolderInfo;
 
-    .line 3446
+    .line 3486
     .local v1, "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     iget-wide v6, v1, Lcom/android/launcher3/folder/FolderInfo;->container:J
 
@@ -7344,7 +7388,7 @@
 
     if-nez v5, :cond_1
 
-    .line 3447
+    .line 3487
     iget-wide v6, v1, Lcom/android/launcher3/folder/FolderInfo;->id:J
 
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -7355,7 +7399,7 @@
 
     goto :goto_1
 
-    .line 3455
+    .line 3495
     .end local v1    # "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     :catchall_0
     move-exception v2
@@ -7366,7 +7410,7 @@
 
     throw v2
 
-    .line 3450
+    .line 3490
     :cond_2
     :try_start_1
     iget-wide v4, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
@@ -7381,18 +7425,18 @@
 
     if-eqz v4, :cond_3
 
-    .line 3451
+    .line 3491
     monitor-exit v3
 
     goto :goto_0
 
-    .line 3455
+    .line 3495
     :cond_3
     monitor-exit v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3456
+    .line 3496
     const/4 v2, 0x0
 
     goto :goto_0
@@ -7404,24 +7448,24 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 3306
+    .line 3346
     sget-object v6, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetList:Ljava/util/HashMap;
 
     invoke-virtual {v6}, Ljava/util/HashMap;->clear()V
 
-    .line 3307
+    .line 3347
     sget-object v6, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetPackageList:Ljava/util/HashMap;
 
     invoke-virtual {v6}, Ljava/util/HashMap;->clear()V
 
-    .line 3308
+    .line 3348
     sget-object v6, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
-    .line 3309
+    .line 3349
     .local v2, "pm":Landroid/content/pm/PackageManager;
     new-instance v3, Landroid/content/Intent;
 
@@ -7429,13 +7473,13 @@
 
     invoke-direct {v3, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 3310
+    .line 3350
     .local v3, "singleInstanceIntent":Landroid/content/Intent;
     invoke-virtual {v2, v3, v5}, Landroid/content/pm/PackageManager;->queryBroadcastReceivers(Landroid/content/Intent;I)Ljava/util/List;
 
     move-result-object v4
 
-    .line 3312
+    .line 3352
     .local v4, "singleInstanceList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
     invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -7455,7 +7499,7 @@
 
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
-    .line 3313
+    .line 3353
     .local v0, "info":Landroid/content/pm/ResolveInfo;
     new-instance v1, Landroid/content/ComponentName;
 
@@ -7469,7 +7513,7 @@
 
     invoke-direct {v1, v7, v8}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3314
+    .line 3354
     .local v1, "mComponentName":Landroid/content/ComponentName;
     sget-object v7, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetList:Ljava/util/HashMap;
 
@@ -7483,7 +7527,7 @@
 
     if-nez v7, :cond_0
 
-    .line 3315
+    .line 3355
     const-string v7, "HomeLoader"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -7510,7 +7554,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3316
+    .line 3356
     sget-object v7, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetList:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
@@ -7525,7 +7569,7 @@
 
     goto :goto_0
 
-    .line 3320
+    .line 3360
     .end local v0    # "info":Landroid/content/pm/ResolveInfo;
     .end local v1    # "mComponentName":Landroid/content/ComponentName;
     :cond_1
@@ -7533,12 +7577,12 @@
 
     invoke-virtual {v3, v6}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3321
+    .line 3361
     invoke-virtual {v2, v3, v5}, Landroid/content/pm/PackageManager;->queryBroadcastReceivers(Landroid/content/Intent;I)Ljava/util/List;
 
     move-result-object v4
 
-    .line 3322
+    .line 3362
     invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
@@ -7557,7 +7601,7 @@
 
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
-    .line 3323
+    .line 3363
     .restart local v0    # "info":Landroid/content/pm/ResolveInfo;
     sget-object v7, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetPackageList:Ljava/util/HashMap;
 
@@ -7571,7 +7615,7 @@
 
     if-nez v7, :cond_2
 
-    .line 3324
+    .line 3364
     const-string v7, "HomeLoader"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -7598,7 +7642,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3325
+    .line 3365
     sget-object v7, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetPackageList:Ljava/util/HashMap;
 
     iget-object v8, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
@@ -7613,7 +7657,7 @@
 
     goto :goto_1
 
-    .line 3329
+    .line 3369
     .end local v0    # "info":Landroid/content/pm/ResolveInfo;
     :cond_3
     sget-object v6, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetPackageList:Ljava/util/HashMap;
@@ -7626,7 +7670,7 @@
 
     sget-object v6, Lcom/android/launcher3/home/HomeController;->sSingleInstanceAppWidgetList:Ljava/util/HashMap;
 
-    .line 3330
+    .line 3370
     invoke-virtual {v6}, Ljava/util/HashMap;->isEmpty()Z
 
     move-result v6
@@ -7657,13 +7701,13 @@
     .end annotation
 
     .prologue
-    .line 3598
+    .line 3638
     .local p1, "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v27, Ljava/util/ArrayList;
 
     invoke-direct/range {v27 .. v27}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3600
+    .line 3640
     .local v27, "outSideItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -7673,7 +7717,7 @@
 
     move-result v4
 
-    .line 3601
+    .line 3641
     .local v4, "countX":I
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -7683,7 +7727,7 @@
 
     move-result v5
 
-    .line 3602
+    .line 3642
     .local v5, "countY":I
     filled-new-array {v4, v5}, [I
 
@@ -7697,7 +7741,7 @@
 
     check-cast v10, [[Z
 
-    .line 3603
+    .line 3643
     .local v10, "occupied":[[Z
     const/4 v3, 0x2
 
@@ -7705,7 +7749,7 @@
 
     move-object/from16 v22, v0
 
-    .line 3604
+    .line 3644
     .local v22, "diffXY":[I
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -7725,7 +7769,7 @@
 
     check-cast v24, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3605
+    .line 3645
     .local v24, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, v24
 
@@ -7739,20 +7783,20 @@
 
     if-gez v6, :cond_0
 
-    .line 3606
+    .line 3646
     :cond_1
     move-object/from16 v0, v24
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3607
+    .line 3647
     move-object/from16 v0, v24
 
     iput v5, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
     goto :goto_0
 
-    .line 3610
+    .line 3650
     .end local v24    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     move-object/from16 v0, p0
@@ -7763,7 +7807,7 @@
 
     invoke-direct {v0, v1, v4, v5, v2}, Lcom/android/launcher3/home/HomeLoader;->calculateDiffXY([IIILjava/util/ArrayList;)V
 
-    .line 3611
+    .line 3651
     const/4 v3, 0x0
 
     aget v3, v22, v3
@@ -7776,7 +7820,7 @@
 
     add-int/lit8 v20, v3, -0x1
 
-    .line 3612
+    .line 3652
     .local v20, "diffIndexX":I
     :goto_1
     const/4 v3, 0x1
@@ -7791,7 +7835,7 @@
 
     add-int/lit8 v21, v3, -0x1
 
-    .line 3614
+    .line 3654
     .local v21, "diffIndexY":I
     :goto_2
     move-object/from16 v0, p1
@@ -7804,7 +7848,7 @@
 
     move-result v28
 
-    .line 3616
+    .line 3656
     .local v28, "position":I
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->size()I
 
@@ -7820,7 +7864,7 @@
 
     if-le v0, v3, :cond_17
 
-    .line 3617
+    .line 3657
     move-object/from16 v0, p1
 
     move/from16 v1, v23
@@ -7831,18 +7875,18 @@
 
     check-cast v25, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3618
+    .line 3658
     .local v25, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     if-eqz v25, :cond_16
 
-    .line 3619
+    .line 3659
     move-object/from16 v0, v25
 
     iget v0, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
     move/from16 v30, v0
 
-    .line 3620
+    .line 3660
     .local v30, "x":I
     move-object/from16 v0, v25
 
@@ -7850,7 +7894,7 @@
 
     move/from16 v31, v0
 
-    .line 3622
+    .line 3662
     .local v31, "y":I
     move-object/from16 v0, v25
 
@@ -7858,12 +7902,12 @@
 
     if-le v3, v4, :cond_4
 
-    .line 3623
+    .line 3663
     move-object/from16 v0, v25
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
 
-    .line 3625
+    .line 3665
     const/4 v3, 0x1
 
     move/from16 v0, v28
@@ -7876,7 +7920,7 @@
 
     if-ne v0, v3, :cond_4
 
-    .line 3627
+    .line 3667
     :cond_3
     const/4 v3, 0x0
 
@@ -7884,7 +7928,7 @@
 
     add-int v30, v30, v3
 
-    .line 3630
+    .line 3670
     :cond_4
     move-object/from16 v0, v25
 
@@ -7892,12 +7936,12 @@
 
     if-le v3, v5, :cond_6
 
-    .line 3631
+    .line 3671
     move-object/from16 v0, v25
 
     iput v5, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
 
-    .line 3633
+    .line 3673
     const/4 v3, 0x2
 
     move/from16 v0, v28
@@ -7910,7 +7954,7 @@
 
     if-ne v0, v3, :cond_6
 
-    .line 3635
+    .line 3675
     :cond_5
     const/4 v3, 0x1
 
@@ -7918,13 +7962,13 @@
 
     add-int v31, v31, v3
 
-    .line 3639
+    .line 3679
     :cond_6
     move-object/from16 v0, v25
 
     iget v15, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
 
-    .line 3640
+    .line 3680
     .local v15, "spanX":I
     move-object/from16 v0, v25
 
@@ -7932,11 +7976,11 @@
 
     move/from16 v16, v0
 
-    .line 3642
+    .line 3682
     .local v16, "spanY":I
     if-nez v28, :cond_b
 
-    .line 3643
+    .line 3683
     add-int v3, v30, v15
 
     if-gt v3, v4, :cond_7
@@ -7945,7 +7989,7 @@
 
     if-le v3, v5, :cond_e
 
-    .line 3644
+    .line 3684
     :cond_7
     move-object/from16 v0, v27
 
@@ -7953,7 +7997,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 3616
+    .line 3656
     .end local v15    # "spanX":I
     .end local v16    # "spanY":I
     .end local v30    # "x":I
@@ -7964,7 +8008,7 @@
 
     goto :goto_3
 
-    .line 3611
+    .line 3651
     .end local v20    # "diffIndexX":I
     .end local v21    # "diffIndexY":I
     .end local v23    # "i":I
@@ -7975,14 +8019,14 @@
 
     goto/16 :goto_1
 
-    .line 3612
+    .line 3652
     .restart local v20    # "diffIndexX":I
     :cond_a
     const/16 v21, 0x0
 
     goto/16 :goto_2
 
-    .line 3647
+    .line 3687
     .restart local v15    # "spanX":I
     .restart local v16    # "spanY":I
     .restart local v21    # "diffIndexY":I
@@ -7998,7 +8042,7 @@
 
     if-ne v0, v3, :cond_10
 
-    .line 3648
+    .line 3688
     move/from16 v0, v30
 
     move/from16 v1, v20
@@ -8009,7 +8053,7 @@
 
     if-le v3, v5, :cond_d
 
-    .line 3649
+    .line 3689
     :cond_c
     move-object/from16 v0, v27
 
@@ -8019,7 +8063,7 @@
 
     goto :goto_4
 
-    .line 3652
+    .line 3692
     :cond_d
     const/4 v3, 0x0
 
@@ -8027,7 +8071,7 @@
 
     sub-int v30, v30, v3
 
-    .line 3671
+    .line 3711
     :cond_e
     :goto_5
     move-object/from16 v0, v25
@@ -8046,7 +8090,7 @@
 
     if-eq v3, v0, :cond_8
 
-    .line 3672
+    .line 3712
     :cond_f
     move/from16 v0, v30
 
@@ -8054,7 +8098,7 @@
 
     iput v0, v1, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3673
+    .line 3713
     move/from16 v0, v31
 
     move-object/from16 v1, v25
@@ -8063,7 +8107,7 @@
 
     goto :goto_4
 
-    .line 3654
+    .line 3694
     :cond_10
     const/4 v3, 0x2
 
@@ -8071,7 +8115,7 @@
 
     if-ne v0, v3, :cond_13
 
-    .line 3655
+    .line 3695
     add-int v3, v30, v15
 
     if-gt v3, v4, :cond_11
@@ -8082,7 +8126,7 @@
 
     if-gt v0, v1, :cond_12
 
-    .line 3656
+    .line 3696
     :cond_11
     move-object/from16 v0, v27
 
@@ -8092,7 +8136,7 @@
 
     goto :goto_4
 
-    .line 3659
+    .line 3699
     :cond_12
     const/4 v3, 0x1
 
@@ -8102,7 +8146,7 @@
 
     goto :goto_5
 
-    .line 3661
+    .line 3701
     :cond_13
     const/4 v3, 0x3
 
@@ -8110,7 +8154,7 @@
 
     if-ne v0, v3, :cond_e
 
-    .line 3662
+    .line 3702
     move/from16 v0, v30
 
     move/from16 v1, v20
@@ -8123,7 +8167,7 @@
 
     if-gt v0, v1, :cond_15
 
-    .line 3663
+    .line 3703
     :cond_14
     move-object/from16 v0, v27
 
@@ -8133,7 +8177,7 @@
 
     goto :goto_4
 
-    .line 3666
+    .line 3706
     :cond_15
     const/4 v3, 0x0
 
@@ -8141,7 +8185,7 @@
 
     sub-int v30, v30, v3
 
-    .line 3667
+    .line 3707
     const/4 v3, 0x1
 
     aget v3, v22, v3
@@ -8150,7 +8194,7 @@
 
     goto :goto_5
 
-    .line 3676
+    .line 3716
     .end local v15    # "spanX":I
     .end local v16    # "spanY":I
     .end local v30    # "x":I
@@ -8164,7 +8208,7 @@
 
     goto/16 :goto_4
 
-    .line 3680
+    .line 3720
     .end local v25    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_17
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -8185,7 +8229,7 @@
 
     check-cast v25, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3681
+    .line 3721
     .restart local v25    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, v27
 
@@ -8197,7 +8241,7 @@
 
     if-nez v3, :cond_18
 
-    .line 3682
+    .line 3722
     move-object/from16 v0, v25
 
     iget v6, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
@@ -8220,7 +8264,7 @@
 
     goto :goto_6
 
-    .line 3687
+    .line 3727
     .end local v25    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_19
     const-string v3, "HomeLoader"
@@ -8229,7 +8273,7 @@
 
     invoke-static {v3, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3689
+    .line 3729
     const/16 v31, 0x0
 
     .restart local v31    # "y":I
@@ -8238,10 +8282,10 @@
 
     if-ge v0, v5, :cond_1d
 
-    .line 3690
+    .line 3730
     const-string v26, ""
 
-    .line 3691
+    .line 3731
     .local v26, "line":Ljava/lang/String;
     const/16 v30, 0x0
 
@@ -8251,7 +8295,7 @@
 
     if-ge v0, v4, :cond_1c
 
-    .line 3692
+    .line 3732
     array-length v3, v10
 
     move/from16 v0, v30
@@ -8266,7 +8310,7 @@
 
     if-ge v0, v3, :cond_1b
 
-    .line 3693
+    .line 3733
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -8294,19 +8338,19 @@
 
     move-result-object v26
 
-    .line 3691
+    .line 3731
     :goto_a
     add-int/lit8 v30, v30, 0x1
 
     goto :goto_8
 
-    .line 3693
+    .line 3733
     :cond_1a
     const-string v3, "."
 
     goto :goto_9
 
-    .line 3695
+    .line 3735
     :cond_1b
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -8330,7 +8374,7 @@
 
     goto :goto_a
 
-    .line 3698
+    .line 3738
     :cond_1c
     const-string v3, "HomeLoader"
 
@@ -8362,23 +8406,23 @@
 
     invoke-static {v3, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3689
+    .line 3729
     add-int/lit8 v31, v31, 0x1
 
     goto :goto_7
 
-    .line 3702
+    .line 3742
     .end local v26    # "line":Ljava/lang/String;
     .end local v30    # "x":I
     :cond_1d
     invoke-static/range {v27 .. v28}, Lcom/android/launcher3/util/ScreenGridUtilities;->getOutSideItems(Ljava/util/List;I)Ljava/util/List;
 
-    .line 3703
+    .line 3743
     new-instance v29, Ljava/util/ArrayList;
 
     invoke-direct/range {v29 .. v29}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3704
+    .line 3744
     .local v29, "removeFromOutSideItems":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual/range {v27 .. v27}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -8398,25 +8442,25 @@
 
     check-cast v25, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3705
+    .line 3745
     .restart local v25    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     const/4 v3, 0x2
 
     new-array v12, v3, [I
 
-    .line 3707
+    .line 3747
     .local v12, "tmpXY":[I
     move-object/from16 v0, v25
 
     iget v13, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3708
+    .line 3748
     .local v13, "correctedX":I
     move-object/from16 v0, v25
 
     iget v14, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 3709
+    .line 3749
     .local v14, "correctedY":I
     move-object/from16 v0, v25
 
@@ -8428,7 +8472,7 @@
 
     iget v15, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
 
-    .line 3710
+    .line 3750
     .restart local v15    # "spanX":I
     :goto_c
     move-object/from16 v0, v25
@@ -8443,34 +8487,34 @@
 
     move/from16 v16, v0
 
-    .line 3712
+    .line 3752
     .restart local v16    # "spanY":I
     :goto_d
     add-int/lit8 v3, v4, -0x1
 
     if-le v13, v3, :cond_1f
 
-    .line 3713
+    .line 3753
     const/4 v3, 0x0
 
     aget v3, v22, v3
 
     sub-int/2addr v13, v3
 
-    .line 3716
+    .line 3756
     :cond_1f
     add-int/lit8 v3, v5, -0x1
 
     if-le v14, v3, :cond_20
 
-    .line 3717
+    .line 3757
     const/4 v3, 0x1
 
     aget v3, v22, v3
 
     sub-int/2addr v14, v3
 
-    .line 3720
+    .line 3760
     :cond_20
     move-object/from16 v0, p0
 
@@ -8488,7 +8532,7 @@
 
     if-eqz v3, :cond_1e
 
-    .line 3722
+    .line 3762
     const-string v3, "HomeLoader"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -8543,7 +8587,7 @@
 
     invoke-static {v3, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3723
+    .line 3763
     const/4 v3, 0x0
 
     aget v3, v12, v3
@@ -8552,7 +8596,7 @@
 
     iput v3, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3724
+    .line 3764
     const/4 v3, 0x1
 
     aget v3, v12, v3
@@ -8561,7 +8605,7 @@
 
     iput v3, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 3725
+    .line 3765
     move-object/from16 v0, v25
 
     iget v6, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
@@ -8578,7 +8622,7 @@
 
     invoke-direct/range {v3 .. v10}, Lcom/android/launcher3/home/HomeLoader;->fillOccupied(IIIIII[[Z)V
 
-    .line 3726
+    .line 3766
     move-object/from16 v0, v29
 
     move-object/from16 v1, v25
@@ -8587,7 +8631,7 @@
 
     goto/16 :goto_b
 
-    .line 3709
+    .line 3749
     .end local v15    # "spanX":I
     .end local v16    # "spanY":I
     :cond_21
@@ -8595,14 +8639,14 @@
 
     goto/16 :goto_c
 
-    .line 3710
+    .line 3750
     .restart local v15    # "spanX":I
     :cond_22
     const/16 v16, 0x1
 
     goto/16 :goto_d
 
-    .line 3730
+    .line 3770
     .end local v12    # "tmpXY":[I
     .end local v13    # "correctedX":I
     .end local v14    # "correctedY":I
@@ -8626,7 +8670,7 @@
 
     check-cast v25, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3731
+    .line 3771
     .restart local v25    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, v27
 
@@ -8636,7 +8680,7 @@
 
     goto :goto_e
 
-    .line 3734
+    .line 3774
     .end local v25    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_24
     return-object v27
@@ -8655,13 +8699,13 @@
     .end annotation
 
     .prologue
-    .line 2943
+    .line 2983
     .local p1, "homeItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2945
+    .line 2985
     .local v2, "hotseatItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -8681,7 +8725,7 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2946
+    .line 2986
     .local v3, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -8691,12 +8735,12 @@
 
     if-nez v7, :cond_0
 
-    .line 2947
+    .line 2987
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 2951
+    .line 2991
     .end local v3    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
@@ -8705,15 +8749,15 @@
 
     if-lez v6, :cond_6
 
-    .line 2952
+    .line 2992
     sget-object v6, Lcom/android/launcher3/home/HomeLoader;->HOTSEAT_COMPARATOR:Ljava/util/Comparator;
 
     invoke-static {v2, v6}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 2953
+    .line 2993
     const/4 v4, 0x0
 
-    .line 2954
+    .line 2994
     .local v4, "itemPosition":I
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -8732,13 +8776,13 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2955
+    .line 2995
     .restart local v3    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     new-instance v5, Landroid/content/ContentValues;
 
     invoke-direct {v5}, Landroid/content/ContentValues;-><init>()V
 
-    .line 2956
+    .line 2996
     .local v5, "values":Landroid/content/ContentValues;
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
@@ -8748,12 +8792,12 @@
 
     if-eqz v7, :cond_2
 
-    .line 2957
+    .line 2997
     int-to-long v8, v4
 
     iput-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 2958
+    .line 2998
     const-string v7, "screen"
 
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
@@ -8764,7 +8808,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 2961
+    .line 3001
     :cond_2
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
@@ -8774,7 +8818,7 @@
 
     move-result v0
 
-    .line 2962
+    .line 3002
     .local v0, "calculatedCellX":I
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
@@ -8784,7 +8828,7 @@
 
     move-result v1
 
-    .line 2963
+    .line 3003
     .local v1, "calculatedCellY":I
     iget v7, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
@@ -8794,14 +8838,14 @@
 
     if-eq v7, v1, :cond_4
 
-    .line 2964
+    .line 3004
     :cond_3
     iput v0, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 2965
+    .line 3005
     iput v1, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 2967
+    .line 3007
     const-string v7, "cellX"
 
     iget v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
@@ -8812,7 +8856,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 2968
+    .line 3008
     const-string v7, "cellY"
 
     iget v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
@@ -8823,7 +8867,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 2971
+    .line 3011
     :cond_4
     invoke-virtual {v5}, Landroid/content/ContentValues;->size()I
 
@@ -8831,19 +8875,19 @@
 
     if-lez v7, :cond_5
 
-    .line 2972
+    .line 3012
     iget-object v7, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     invoke-virtual {v7, v5, v3}, Lcom/android/launcher3/common/model/FavoritesUpdater;->updateItem(Landroid/content/ContentValues;Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 2974
+    .line 3014
     :cond_5
     add-int/lit8 v4, v4, 0x1
 
-    .line 2975
+    .line 3015
     goto :goto_1
 
-    .line 2977
+    .line 3017
     .end local v0    # "calculatedCellX":I
     .end local v1    # "calculatedCellY":I
     .end local v3    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -8854,7 +8898,7 @@
 .end method
 
 .method private restoreStkPositionIfNecessary(Ljava/util/ArrayList;)V
-    .locals 25
+    .locals 28
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8866,7 +8910,7 @@
     .end annotation
 
     .prologue
-    .line 3901
+    .line 3941
     .local p1, "addList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -8880,84 +8924,84 @@
 
     if-eqz p1, :cond_0
 
-    .line 3902
+    .line 3942
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 3970
+    .line 4013
     :cond_0
     return-void
 
-    .line 3906
+    .line 3946
     :cond_1
-    const/16 v18, 0x0
+    const/16 v21, 0x0
 
-    .line 3907
-    .local v18, "prefs":Landroid/content/SharedPreferences;
-    sget-object v22, Lcom/android/launcher3/home/HomeLoader;->STK_PKG_LIST:[Ljava/lang/String;
+    .line 3947
+    .local v21, "prefs":Landroid/content/SharedPreferences;
+    sget-object v25, Lcom/android/launcher3/home/HomeLoader;->STK_PKG_LIST:[Ljava/lang/String;
 
-    move-object/from16 v0, v22
+    move-object/from16 v0, v25
 
     array-length v0, v0
 
-    move/from16 v23, v0
+    move/from16 v26, v0
 
     const/4 v2, 0x0
 
-    move/from16 v21, v2
+    move/from16 v24, v2
 
     :goto_0
-    move/from16 v0, v21
+    move/from16 v0, v24
 
-    move/from16 v1, v23
+    move/from16 v1, v26
 
     if-ge v0, v1, :cond_0
 
-    aget-object v20, v22, v21
+    aget-object v23, v25, v24
 
-    .line 3908
-    .local v20, "stkPkg":Ljava/lang/String;
+    .line 3948
+    .local v23, "stkPkg":Ljava/lang/String;
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v24
+    move-result-object v27
 
     :cond_2
     :goto_1
-    invoke-interface/range {v24 .. v24}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface/range {v27 .. v27}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_b
 
-    invoke-interface/range {v24 .. v24}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface/range {v27 .. v27}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v16
+    move-result-object v18
 
-    check-cast v16, Lcom/android/launcher3/common/base/item/ItemInfo;
+    check-cast v18, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3909
-    .local v16, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
-    if-eqz v16, :cond_2
+    .line 3949
+    .local v18, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
+    if-eqz v18, :cond_2
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, v18
 
     iget-object v2, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
     if-eqz v2, :cond_2
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, v18
 
     iget-object v2, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 3910
+    .line 3950
     invoke-virtual {v2}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
-    move-object/from16 v0, v20
+    move-object/from16 v0, v23
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -8965,84 +9009,84 @@
 
     if-eqz v2, :cond_2
 
-    .line 3912
+    .line 3952
     const-wide/16 v12, -0x64
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, v18
 
     iput-wide v12, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 3913
+    .line 3953
     .local v12, "container":J
     const-wide/16 v4, -0x1
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, v18
 
     iput-wide v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 3914
+    .line 3954
     .local v4, "screen":J
     const/4 v9, -0x1
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, v18
 
     iput v9, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3915
+    .line 3955
     .local v9, "cellX":I
     const/4 v10, -0x1
 
-    move-object/from16 v0, v16
+    move-object/from16 v0, v18
 
     iput v10, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 3917
+    .line 3957
     .local v10, "cellY":I
-    if-nez v18, :cond_3
+    if-nez v21, :cond_3
 
-    .line 3918
+    .line 3958
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
-    .line 3919
+    .line 3959
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v3
 
     const/4 v6, 0x0
 
-    .line 3918
+    .line 3958
     invoke-virtual {v2, v3, v6}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
-    move-result-object v18
+    move-result-object v21
 
-    .line 3921
+    .line 3961
     :cond_3
     const/4 v2, 0x0
 
-    move-object/from16 v0, v18
+    move-object/from16 v0, v21
 
-    move-object/from16 v1, v20
+    move-object/from16 v1, v23
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v19
+    move-result-object v22
 
-    .line 3922
-    .local v19, "savedInfo":Ljava/lang/String;
-    if-eqz v19, :cond_2
+    .line 3962
+    .local v22, "savedInfo":Ljava/lang/String;
+    if-eqz v22, :cond_2
 
-    invoke-virtual/range {v19 .. v19}, Ljava/lang/String;->isEmpty()Z
+    invoke-virtual/range {v22 .. v22}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    .line 3925
-    invoke-interface/range {v18 .. v18}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    .line 3965
+    invoke-interface/range {v21 .. v21}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v2
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v22
 
     invoke-interface {v2, v0}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
@@ -9050,36 +9094,36 @@
 
     invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 3927
+    .line 3967
     const-string v2, ";"
 
-    move-object/from16 v0, v19
+    move-object/from16 v0, v22
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    move-result-object v11
+    move-result-object v15
 
-    .line 3928
-    .local v11, "data":[Ljava/lang/String;
-    array-length v2, v11
+    .line 3968
+    .local v15, "data":[Ljava/lang/String;
+    array-length v2, v15
 
     const/4 v3, 0x4
 
     if-ne v2, v3, :cond_2
 
-    .line 3929
+    .line 3969
     const/4 v2, 0x0
 
-    aget-object v2, v11, v2
+    aget-object v2, v15, v2
 
     invoke-static {v2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
     move-result-wide v12
 
-    .line 3930
+    .line 3970
     const/4 v2, 0x1
 
-    aget-object v2, v11, v2
+    aget-object v2, v15, v2
 
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
@@ -9087,41 +9131,41 @@
 
     int-to-long v4, v2
 
-    .line 3931
+    .line 3971
     const/4 v2, 0x2
 
-    aget-object v2, v11, v2
+    aget-object v2, v15, v2
 
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v9
 
-    .line 3932
+    .line 3972
     const/4 v2, 0x3
 
-    aget-object v2, v11, v2
+    aget-object v2, v15, v2
 
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v10
 
-    .line 3937
+    .line 3977
     const-wide/16 v2, 0x0
 
     cmp-long v2, v12, v2
 
     if-lez v2, :cond_7
 
-    .line 3938
+    .line 3978
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 3939
-    const/4 v15, 0x0
+    .line 3979
+    const/16 v17, 0x0
 
-    .line 3940
-    .local v15, "folder":Lcom/android/launcher3/folder/FolderInfo;
+    .line 3980
+    .local v17, "folder":Lcom/android/launcher3/folder/FolderInfo;
     :try_start_0
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -9139,49 +9183,51 @@
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v14
+    move-result-object v16
 
-    check-cast v14, Lcom/android/launcher3/folder/FolderInfo;
+    check-cast v16, Lcom/android/launcher3/folder/FolderInfo;
 
-    .line 3941
-    .local v14, "fInfo":Lcom/android/launcher3/folder/FolderInfo;
-    iget-wide v6, v14, Lcom/android/launcher3/folder/FolderInfo;->id:J
+    .line 3981
+    .local v16, "fInfo":Lcom/android/launcher3/folder/FolderInfo;
+    move-object/from16 v0, v16
+
+    iget-wide v6, v0, Lcom/android/launcher3/folder/FolderInfo;->id:J
 
     cmp-long v6, v6, v12
 
     if-nez v6, :cond_4
 
-    .line 3942
-    move-object v15, v14
+    .line 3982
+    move-object/from16 v17, v16
 
     goto :goto_2
 
-    .line 3945
-    .end local v14    # "fInfo":Lcom/android/launcher3/folder/FolderInfo;
+    .line 3985
+    .end local v16    # "fInfo":Lcom/android/launcher3/folder/FolderInfo;
     :cond_5
-    if-eqz v15, :cond_6
+    if-eqz v17, :cond_6
 
-    .line 3946
-    move-object/from16 v0, v16
+    .line 3986
+    move-object/from16 v0, v18
 
     iput-wide v12, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 3947
-    move-object/from16 v0, v16
+    .line 3987
+    move-object/from16 v0, v18
 
     iput-wide v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 3948
-    move-object/from16 v0, v16
+    .line 3988
+    move-object/from16 v0, v18
 
     iput v9, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3949
-    move-object/from16 v0, v16
+    .line 3989
+    move-object/from16 v0, v18
 
     iput v10, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 3951
+    .line 3991
     :cond_6
     monitor-exit v3
 
@@ -9196,8 +9242,8 @@
 
     throw v2
 
-    .line 3952
-    .end local v15    # "folder":Lcom/android/launcher3/folder/FolderInfo;
+    .line 3992
+    .end local v17    # "folder":Lcom/android/launcher3/folder/FolderInfo;
     :cond_7
     const-wide/16 v2, -0x65
 
@@ -9205,7 +9251,7 @@
 
     if-nez v2, :cond_8
 
-    .line 3953
+    .line 3993
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -9216,11 +9262,11 @@
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
-    move-result v17
+    move-result v20
 
-    .line 3954
-    .local v17, "maxHotseatCount":I
-    move/from16 v0, v17
+    .line 3994
+    .local v20, "maxHotseatCount":I
+    move/from16 v0, v20
 
     int-to-long v2, v0
 
@@ -9236,34 +9282,34 @@
 
     move-result v2
 
-    move/from16 v0, v17
+    move/from16 v0, v20
 
     if-eq v2, v0, :cond_2
 
-    .line 3955
-    move-object/from16 v0, v16
+    .line 3995
+    move-object/from16 v0, v18
 
     iput-wide v12, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 3956
-    move-object/from16 v0, v16
+    .line 3996
+    move-object/from16 v0, v18
 
     iput-wide v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 3957
-    move-object/from16 v0, v16
+    .line 3997
+    move-object/from16 v0, v18
 
     iput v9, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3958
-    move-object/from16 v0, v16
+    .line 3998
+    move-object/from16 v0, v18
 
     iput v10, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
     goto/16 :goto_1
 
-    .line 3960
-    .end local v17    # "maxHotseatCount":I
+    .line 4000
+    .end local v20    # "maxHotseatCount":I
     :cond_8
     const-wide/16 v2, -0x64
 
@@ -9271,7 +9317,43 @@
 
     if-nez v2, :cond_2
 
-    .line 3961
+    .line 4001
+    sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+
+    iget-object v2, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
+
+    invoke-virtual {v2}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getCellCountX()I
+
+    move-result v11
+
+    .line 4002
+    .local v11, "countX":I
+    sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+
+    iget-object v2, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
+
+    invoke-virtual {v2}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getCellCountY()I
+
+    move-result v14
+
+    .line 4003
+    .local v14, "countY":I
+    if-ltz v9, :cond_9
+
+    if-ltz v10, :cond_9
+
+    if-ge v9, v11, :cond_9
+
+    if-lt v10, v14, :cond_a
+
+    :cond_9
+    const/16 v19, 0x1
+
+    .line 4004
+    .local v19, "isOutSide":Z
+    :goto_3
+    if-nez v19, :cond_2
+
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader;->mItemPositionHelper:Lcom/android/launcher3/home/HomeItemPositionHelper;
@@ -9300,35 +9382,44 @@
 
     if-eqz v2, :cond_2
 
-    .line 3962
-    move-object/from16 v0, v16
+    .line 4005
+    move-object/from16 v0, v18
 
     iput-wide v4, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 3963
-    move-object/from16 v0, v16
+    .line 4006
+    move-object/from16 v0, v18
 
     iput v9, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 3964
-    move-object/from16 v0, v16
+    .line 4007
+    move-object/from16 v0, v18
 
     iput v10, v0, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
     goto/16 :goto_1
 
-    .line 3907
+    .line 4003
+    .end local v19    # "isOutSide":Z
+    :cond_a
+    const/16 v19, 0x0
+
+    goto :goto_3
+
+    .line 3947
     .end local v4    # "screen":J
     .end local v9    # "cellX":I
     .end local v10    # "cellY":I
-    .end local v11    # "data":[Ljava/lang/String;
+    .end local v11    # "countX":I
     .end local v12    # "container":J
-    .end local v16    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
-    .end local v19    # "savedInfo":Ljava/lang/String;
-    :cond_9
-    add-int/lit8 v2, v21, 0x1
+    .end local v14    # "countY":I
+    .end local v15    # "data":[Ljava/lang/String;
+    .end local v18    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
+    .end local v22    # "savedInfo":Ljava/lang/String;
+    :cond_b
+    add-int/lit8 v2, v24, 0x1
 
-    move/from16 v21, v2
+    move/from16 v24, v2
 
     goto/16 :goto_0
 .end method
@@ -9337,7 +9428,7 @@
     .locals 4
 
     .prologue
-    .line 2905
+    .line 2945
     const-string v1, "HomeLoader"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -9366,7 +9457,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2906
+    .line 2946
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sBindCompleteRunnables:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
@@ -9375,12 +9466,12 @@
 
     if-nez v1, :cond_1
 
-    .line 2907
+    .line 2947
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sBindCompleteRunnables:Ljava/util/ArrayList;
 
     monitor-enter v2
 
-    .line 2908
+    .line 2948
     :try_start_0
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sBindCompleteRunnables:Ljava/util/ArrayList;
 
@@ -9401,13 +9492,13 @@
 
     check-cast v0, Ljava/lang/Runnable;
 
-    .line 2909
+    .line 2949
     .local v0, "r":Ljava/lang/Runnable;
     invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
     goto :goto_0
 
-    .line 2912
+    .line 2952
     .end local v0    # "r":Ljava/lang/Runnable;
     :catchall_0
     move-exception v1
@@ -9418,19 +9509,19 @@
 
     throw v1
 
-    .line 2911
+    .line 2951
     :cond_0
     :try_start_1
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sBindCompleteRunnables:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    .line 2912
+    .line 2952
     monitor-exit v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2914
+    .line 2954
     :cond_1
     return-void
 .end method
@@ -9445,22 +9536,22 @@
 
     const/4 v13, 0x0
 
-    .line 3179
+    .line 3219
     new-instance v7, Landroid/content/ComponentName;
 
-    .line 3180
+    .line 3220
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->getCustomerDialerPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3181
+    .line 3221
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->getCustomerDialerClassName()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-direct {v7, v0, v1}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3182
+    .line 3222
     .local v7, "customerDialerCN":Landroid/content/ComponentName;
     new-instance v0, Landroid/content/Intent;
 
@@ -9470,28 +9561,28 @@
 
     const-string v1, "android.intent.category.LAUNCHER"
 
-    .line 3183
+    .line 3223
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 3184
+    .line 3224
     invoke-virtual {v0, v7}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     move-result-object v0
 
     const/high16 v1, 0x10200000
 
-    .line 3185
+    .line 3225
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     move-result-object v8
 
-    .line 3187
+    .line 3227
     .local v8, "customerDialerIntent":Landroid/content/Intent;
     const-string v3, "container=? AND intent=?"
 
-    .line 3188
+    .line 3228
     .local v3, "selection":Ljava/lang/String;
     const/4 v0, 0x2
 
@@ -9505,14 +9596,14 @@
 
     aput-object v0, v4, v13
 
-    .line 3189
+    .line 3229
     invoke-virtual {v8, v13}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
     move-result-object v0
 
     aput-object v0, v4, v2
 
-    .line 3191
+    .line 3231
     .local v4, "selectionArg":[Ljava/lang/String;
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
@@ -9528,11 +9619,11 @@
 
     move-result-object v6
 
-    .line 3194
+    .line 3234
     .local v6, "cursor":Landroid/database/Cursor;
     if-eqz v6, :cond_1
 
-    .line 3196
+    .line 3236
     :try_start_0
     invoke-interface {v6}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -9540,30 +9631,30 @@
 
     if-eqz v0, :cond_0
 
-    .line 3197
+    .line 3237
     const/4 v0, 0x0
 
     invoke-interface {v6, v0}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v10
 
-    .line 3198
+    .line 3238
     .local v10, "screenId":J
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
-    .line 3199
+    .line 3239
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 3198
+    .line 3238
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v9
 
-    .line 3200
+    .line 3240
     .local v9, "prefs":Landroid/content/SharedPreferences;
     invoke-interface {v9}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -9577,7 +9668,7 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 3201
+    .line 3241
     const-string v0, "HomeLoader"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -9602,17 +9693,17 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3206
+    .line 3246
     .end local v9    # "prefs":Landroid/content/SharedPreferences;
     .end local v10    # "screenId":J
     :goto_0
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 3211
+    .line 3251
     :goto_1
     return-void
 
-    .line 3203
+    .line 3243
     :cond_0
     :try_start_1
     const-string v0, "HomeLoader"
@@ -9625,7 +9716,7 @@
 
     goto :goto_0
 
-    .line 3206
+    .line 3246
     :catchall_0
     move-exception v0
 
@@ -9633,7 +9724,7 @@
 
     throw v0
 
-    .line 3209
+    .line 3249
     :cond_1
     const-string v0, "HomeLoader"
 
@@ -9652,14 +9743,14 @@
     .prologue
     const/4 v8, 0x0
 
-    .line 4044
+    .line 4087
     invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v9
 
     if-eqz v9, :cond_4
 
-    .line 4047
+    .line 4090
     invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v9
@@ -9668,7 +9759,7 @@
 
     move-result-object v5
 
-    .line 4048
+    .line 4091
     .local v5, "packageName":Ljava/lang/String;
     invoke-virtual {p1}, Landroid/content/Intent;->getPackage()Ljava/lang/String;
 
@@ -9676,12 +9767,12 @@
 
     if-eqz v9, :cond_3
 
-    .line 4049
+    .line 4092
     invoke-virtual {p1, v8}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4050
+    .line 4093
     .local v1, "intentWithPkg":Ljava/lang/String;
     new-instance v9, Landroid/content/Intent;
 
@@ -9697,7 +9788,7 @@
 
     move-result-object v2
 
-    .line 4060
+    .line 4103
     .end local v5    # "packageName":Ljava/lang/String;
     .local v2, "intentWithoutPkg":Ljava/lang/String;
     :goto_0
@@ -9705,7 +9796,7 @@
 
     move-result-object v4
 
-    .line 4062
+    .line 4105
     .local v4, "itemList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -9724,7 +9815,7 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 4063
+    .line 4106
     .local v3, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v10, v3, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -9732,10 +9823,10 @@
 
     move-object v0, v3
 
-    .line 4064
+    .line 4107
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    .line 4065
+    .line 4108
     .local v0, "info":Lcom/android/launcher3/common/base/item/IconInfo;
     iget-object v10, v0, Lcom/android/launcher3/common/base/item/IconInfo;->promisedIntent:Landroid/content/Intent;
 
@@ -9743,7 +9834,7 @@
 
     iget-object v7, v0, Lcom/android/launcher3/common/base/item/IconInfo;->intent:Landroid/content/Intent;
 
-    .line 4067
+    .line 4110
     .local v7, "targetIntent":Landroid/content/Intent;
     :goto_1
     if-eqz v7, :cond_0
@@ -9758,12 +9849,12 @@
 
     if-eqz v10, :cond_0
 
-    .line 4068
+    .line 4111
     invoke-virtual {v7, v8}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 4069
+    .line 4112
     .local v6, "strIntent":Ljava/lang/String;
     invoke-virtual {v1, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -9777,7 +9868,7 @@
 
     if-eqz v10, :cond_0
 
-    .line 4070
+    .line 4113
     :cond_1
     const-string v8, "HomeLoader"
 
@@ -9805,10 +9896,10 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4071
+    .line 4114
     const/4 v8, 0x1
 
-    .line 4076
+    .line 4119
     .end local v0    # "info":Lcom/android/launcher3/common/base/item/IconInfo;
     .end local v3    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v6    # "strIntent":Ljava/lang/String;
@@ -9816,7 +9907,7 @@
     :cond_2
     return v8
 
-    .line 4052
+    .line 4095
     .end local v1    # "intentWithPkg":Ljava/lang/String;
     .end local v2    # "intentWithoutPkg":Ljava/lang/String;
     .end local v4    # "itemList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
@@ -9834,7 +9925,7 @@
 
     move-result-object v1
 
-    .line 4053
+    .line 4096
     .restart local v1    # "intentWithPkg":Ljava/lang/String;
     invoke-virtual {p1, v8}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
@@ -9843,7 +9934,7 @@
     .restart local v2    # "intentWithoutPkg":Ljava/lang/String;
     goto :goto_0
 
-    .line 4056
+    .line 4099
     .end local v1    # "intentWithPkg":Ljava/lang/String;
     .end local v2    # "intentWithoutPkg":Ljava/lang/String;
     .end local v5    # "packageName":Ljava/lang/String;
@@ -9852,7 +9943,7 @@
 
     move-result-object v1
 
-    .line 4057
+    .line 4100
     .restart local v1    # "intentWithPkg":Ljava/lang/String;
     invoke-virtual {p1, v8}, Landroid/content/Intent;->toUri(I)Ljava/lang/String;
 
@@ -9861,7 +9952,7 @@
     .restart local v2    # "intentWithoutPkg":Ljava/lang/String;
     goto :goto_0
 
-    .line 4065
+    .line 4108
     .restart local v0    # "info":Lcom/android/launcher3/common/base/item/IconInfo;
     .restart local v3    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     .restart local v4    # "itemList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
@@ -9879,12 +9970,12 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1580
+    .line 1616
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 1581
+    .line 1617
     :try_start_0
     invoke-virtual {p0, p2}, Lcom/android/launcher3/home/HomeLoader;->isStopped(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Z
 
@@ -9892,29 +9983,29 @@
 
     if-eqz v3, :cond_0
 
-    .line 1582
+    .line 1618
     monitor-exit v2
 
     move-object v0, v1
 
-    .line 1597
+    .line 1633
     :goto_0
     return-object v0
 
-    .line 1585
+    .line 1621
     :cond_0
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader;->mCallbacks:Ljava/lang/ref/WeakReference;
 
     if-nez v3, :cond_1
 
-    .line 1586
+    .line 1622
     monitor-exit v2
 
     move-object v0, v1
 
     goto :goto_0
 
-    .line 1589
+    .line 1625
     :cond_1
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader;->mCallbacks:Ljava/lang/ref/WeakReference;
 
@@ -9924,42 +10015,42 @@
 
     check-cast v0, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
-    .line 1590
+    .line 1626
     .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-eq v0, p1, :cond_2
 
-    .line 1591
+    .line 1627
     monitor-exit v2
 
     move-object v0, v1
 
     goto :goto_0
 
-    .line 1593
+    .line 1629
     :cond_2
     if-nez v0, :cond_3
 
-    .line 1594
+    .line 1630
     const-string v3, "HomeLoader"
 
     const-string v4, "no mCallbacks"
 
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1595
+    .line 1631
     monitor-exit v2
 
     move-object v0, v1
 
     goto :goto_0
 
-    .line 1597
+    .line 1633
     :cond_3
     monitor-exit v2
 
     goto :goto_0
 
-    .line 1598
+    .line 1634
     .end local v0    # "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     :catchall_0
     move-exception v1
@@ -9985,13 +10076,13 @@
     .end annotation
 
     .prologue
-    .line 2501
+    .line 2541
     .local p1, "updateItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2503
+    .line 2543
     .local v4, "addedWorkspaceScreensFinal":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
@@ -9999,13 +10090,13 @@
 
     move-result-object v3
 
-    .line 2504
+    .line 2544
     .local v3, "workspaceScreens":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2506
+    .line 2546
     .local v10, "contentValuesList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -10024,18 +10115,18 @@
 
     check-cast v14, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2507
+    .line 2547
     .local v14, "itemInfo":Lcom/android/launcher3/common/base/item/ItemInfo;
     const-wide/16 v6, -0x64
 
     iput-wide v6, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 2508
+    .line 2548
     const-wide/16 v6, -0x1
 
     iput-wide v6, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 2510
+    .line 2550
     iget v5, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->spanX:I
 
     iget v6, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->spanY:I
@@ -10048,7 +10139,7 @@
 
     move-result-object v12
 
-    .line 2512
+    .line 2552
     .local v12, "coords":Landroid/util/Pair;, "Landroid/util/Pair<Ljava/lang/Long;[I>;"
     iget-object v2, v12, Landroid/util/Pair;->first:Ljava/lang/Object;
 
@@ -10058,38 +10149,38 @@
 
     move-result-wide v16
 
-    .line 2513
+    .line 2553
     .local v16, "screenId":J
     iget-object v11, v12, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v11, [I
 
-    .line 2515
+    .line 2555
     .local v11, "coordinates":[I
     move-wide/from16 v0, v16
 
     iput-wide v0, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
-    .line 2516
+    .line 2556
     const/4 v2, 0x0
 
     aget v2, v11, v2
 
     iput v2, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
 
-    .line 2517
+    .line 2557
     const/4 v2, 0x1
 
     aget v2, v11, v2
 
     iput v2, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
 
-    .line 2518
+    .line 2558
     if-eqz p2, :cond_0
 
     const/4 v13, 0x4
 
-    .line 2519
+    .line 2559
     .local v13, "hiddenFlag":I
     :goto_1
     invoke-virtual {v14, v13}, Lcom/android/launcher3/common/base/item/ItemInfo;->setUnHidden(I)I
@@ -10098,12 +10189,12 @@
 
     iput v2, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->hidden:I
 
-    .line 2521
+    .line 2561
     new-instance v9, Landroid/content/ContentValues;
 
     invoke-direct {v9}, Landroid/content/ContentValues;-><init>()V
 
-    .line 2522
+    .line 2562
     .local v9, "contentValues":Landroid/content/ContentValues;
     const-string v2, "container"
 
@@ -10115,7 +10206,7 @@
 
     invoke-virtual {v9, v2, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 2523
+    .line 2563
     const-string v2, "cellX"
 
     iget v5, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
@@ -10126,7 +10217,7 @@
 
     invoke-virtual {v9, v2, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 2524
+    .line 2564
     const-string v2, "cellY"
 
     iget v5, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
@@ -10137,7 +10228,7 @@
 
     invoke-virtual {v9, v2, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 2525
+    .line 2565
     const-string v2, "screen"
 
     iget-wide v6, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
@@ -10148,7 +10239,7 @@
 
     invoke-virtual {v9, v2, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 2526
+    .line 2566
     const-string v2, "hidden"
 
     iget v5, v14, Lcom/android/launcher3/common/base/item/ItemInfo;->hidden:I
@@ -10159,12 +10250,12 @@
 
     invoke-virtual {v9, v2, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 2527
+    .line 2567
     invoke-virtual {v10, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 2518
+    .line 2558
     .end local v9    # "contentValues":Landroid/content/ContentValues;
     .end local v13    # "hiddenFlag":I
     :cond_0
@@ -10172,7 +10263,7 @@
 
     goto :goto_1
 
-    .line 2530
+    .line 2570
     .end local v11    # "coordinates":[I
     .end local v12    # "coords":Landroid/util/Pair;, "Landroid/util/Pair<Ljava/lang/Long;[I>;"
     .end local v14    # "itemInfo":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -10188,7 +10279,7 @@
 
     invoke-virtual {v2, v5, v10, v0}, Lcom/android/launcher3/common/model/FavoritesUpdater;->updateItemsInDatabaseHelper(Landroid/content/Context;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
-    .line 2532
+    .line 2572
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
@@ -10197,26 +10288,26 @@
 
     invoke-virtual {v2, v5, v3}, Lcom/android/launcher3/common/model/FavoritesUpdater;->updateScreenOrder(Landroid/content/Context;Ljava/util/ArrayList;)V
 
-    .line 2534
+    .line 2574
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v8
 
-    .line 2535
+    .line 2575
     .local v8, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
-    new-instance v5, Lcom/android/launcher3/home/HomeLoader$23;
+    new-instance v5, Lcom/android/launcher3/home/HomeLoader$24;
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, p1
 
-    invoke-direct {v5, v0, v8, v4, v1}, Lcom/android/launcher3/home/HomeLoader$23;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    invoke-direct {v5, v0, v8, v4, v1}, Lcom/android/launcher3/home/HomeLoader$24;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     invoke-virtual {v2, v5}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 2543
+    .line 2583
     return-void
 .end method
 
@@ -10234,31 +10325,31 @@
     .end annotation
 
     .prologue
-    .line 2546
+    .line 2586
     .local p1, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2547
+    .line 2587
     .local v9, "contentValues":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2548
+    .line 2588
     .local v7, "hideItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2549
+    .line 2589
     .local v6, "itemsInFolder":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2551
+    .line 2591
     .local v5, "folderInfos":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/folder/FolderInfo;>;"
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -10278,24 +10369,24 @@
 
     check-cast v11, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2552
+    .line 2592
     .local v11, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-object v8, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 2553
+    .line 2593
     .local v8, "componentName":Landroid/content/ComponentName;
     if-nez v8, :cond_1
 
     move-object v2, v11
 
-    .line 2554
+    .line 2594
     check-cast v2, Lcom/android/launcher3/common/base/item/IconInfo;
 
     invoke-virtual {v2}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v8
 
-    .line 2557
+    .line 2597
     :cond_1
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
@@ -10303,7 +10394,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 2558
+    .line 2598
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v2
@@ -10314,12 +10405,12 @@
 
     if-eqz v2, :cond_4
 
-    .line 2559
+    .line 2599
     if-eqz p2, :cond_2
 
     const/4 v10, 0x4
 
-    .line 2560
+    .line 2600
     .local v10, "hiddenFlag":I
     :goto_1
     invoke-virtual {v11, v10}, Lcom/android/launcher3/common/base/item/ItemInfo;->setHidden(I)I
@@ -10328,12 +10419,12 @@
 
     iput v2, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->hidden:I
 
-    .line 2561
+    .line 2601
     new-instance v14, Landroid/content/ContentValues;
 
     invoke-direct {v14}, Landroid/content/ContentValues;-><init>()V
 
-    .line 2562
+    .line 2602
     .local v14, "values":Landroid/content/ContentValues;
     const-string v2, "hidden"
 
@@ -10345,7 +10436,7 @@
 
     invoke-virtual {v14, v2, v15}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 2563
+    .line 2603
     const-string v2, "screen"
 
     const/4 v15, -0x1
@@ -10356,7 +10447,7 @@
 
     invoke-virtual {v14, v2, v15}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 2565
+    .line 2605
     iget-wide v0, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
     move-wide/from16 v16, v0
@@ -10377,12 +10468,12 @@
 
     if-eqz v2, :cond_3
 
-    .line 2567
+    .line 2607
     sget-object v15, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v15
 
-    .line 2568
+    .line 2608
     :try_start_0
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -10398,22 +10489,22 @@
 
     invoke-virtual {v5, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2569
+    .line 2609
     monitor-exit v15
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2570
+    .line 2610
     invoke-virtual {v6, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2571
+    .line 2611
     const-wide/16 v16, -0x64
 
     move-wide/from16 v0, v16
 
     iput-wide v0, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 2572
+    .line 2612
     const-string v2, "container"
 
     iget-wide v0, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
@@ -10426,13 +10517,13 @@
 
     invoke-virtual {v14, v2, v15}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 2577
+    .line 2617
     :goto_2
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 2559
+    .line 2599
     .end local v10    # "hiddenFlag":I
     .end local v14    # "values":Landroid/content/ContentValues;
     :cond_2
@@ -10440,7 +10531,7 @@
 
     goto :goto_1
 
-    .line 2569
+    .line 2609
     .restart local v10    # "hiddenFlag":I
     .restart local v14    # "values":Landroid/content/ContentValues;
     :catchall_0
@@ -10453,34 +10544,34 @@
 
     throw v2
 
-    .line 2574
+    .line 2614
     :cond_3
     invoke-virtual {v7, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2575
+    .line 2615
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v11}, Lcom/android/launcher3/home/HomeLoader;->removePagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
     goto :goto_2
 
-    .line 2579
+    .line 2619
     .end local v10    # "hiddenFlag":I
     .end local v14    # "values":Landroid/content/ContentValues;
     :cond_4
     invoke-virtual {v7, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2581
+    .line 2621
     iget-object v2, v11, Lcom/android/launcher3/common/base/item/ItemInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     const/4 v15, 0x1
 
-    .line 2582
+    .line 2622
     invoke-static {v8, v2, v15}, Lcom/android/launcher3/home/HomeLoader;->getItemInfoByComponentName(Landroid/content/ComponentName;Lcom/android/launcher3/common/compat/UserHandleCompat;Z)Ljava/util/ArrayList;
 
     move-result-object v13
 
-    .line 2583
+    .line 2623
     .local v13, "itemsByComponentName":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v13}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -10500,7 +10591,7 @@
 
     check-cast v12, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2584
+    .line 2624
     .local v12, "itemByComponentName":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, p0
 
@@ -10510,10 +10601,10 @@
 
     if-nez v15, :cond_5
 
-    .line 2585
+    .line 2625
     invoke-virtual {v7, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2586
+    .line 2626
     move-object/from16 v0, p0
 
     iget-object v15, v0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
@@ -10522,7 +10613,7 @@
 
     goto :goto_3
 
-    .line 2592
+    .line 2632
     .end local v8    # "componentName":Landroid/content/ComponentName;
     .end local v11    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v12    # "itemByComponentName":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -10534,7 +10625,7 @@
 
     if-eqz v2, :cond_7
 
-    .line 2593
+    .line 2633
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v2
@@ -10545,7 +10636,7 @@
 
     if-eqz v2, :cond_7
 
-    .line 2594
+    .line 2634
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
@@ -10556,25 +10647,25 @@
 
     invoke-virtual {v2, v3, v9, v0}, Lcom/android/launcher3/common/model/FavoritesUpdater;->updateItemsInDatabaseHelper(Landroid/content/Context;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
-    .line 2597
+    .line 2637
     :cond_7
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v4
 
-    .line 2598
+    .line 2638
     .local v4, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     sget-object v15, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
-    new-instance v2, Lcom/android/launcher3/home/HomeLoader$24;
+    new-instance v2, Lcom/android/launcher3/home/HomeLoader$25;
 
     move-object/from16 v3, p0
 
-    invoke-direct/range {v2 .. v7}, Lcom/android/launcher3/home/HomeLoader$24;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    invoke-direct/range {v2 .. v7}, Lcom/android/launcher3/home/HomeLoader$25;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     invoke-virtual {v15, v2}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 2607
+    .line 2647
     return-void
 .end method
 
@@ -10596,13 +10687,13 @@
     .end annotation
 
     .prologue
-    .line 1940
+    .line 1980
     .local p2, "workspaceApps":Ljava/util/ArrayList;, "Ljava/util/ArrayList<+Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v5
 
-    .line 1941
+    .line 1981
     .local v5, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     invoke-virtual {p2}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -10610,13 +10701,13 @@
 
     if-eqz v1, :cond_0
 
-    .line 2028
+    .line 2068
     :goto_0
     return-void
 
-    .line 1945
+    .line 1985
     :cond_0
-    new-instance v0, Lcom/android/launcher3/home/HomeLoader$16;
+    new-instance v0, Lcom/android/launcher3/home/HomeLoader$17;
 
     move-object v1, p0
 
@@ -10626,9 +10717,9 @@
 
     move-object v4, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/launcher3/home/HomeLoader$16;-><init>(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;ZLandroid/content/Context;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/launcher3/home/HomeLoader$17;-><init>(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;ZLandroid/content/Context;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;)V
 
-    .line 2027
+    .line 2067
     .local v0, "r":Ljava/lang/Runnable;
     invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -10641,22 +10732,22 @@
     .param p2, "appsButton"    # Lcom/android/launcher3/common/base/item/IconInfo;
 
     .prologue
-    .line 1855
+    .line 1891
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 1856
+    .line 1892
     .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     new-instance v1, Lcom/android/launcher3/home/HomeLoader$15;
 
     invoke-direct {v1, p0, p1, p2, v0}, Lcom/android/launcher3/home/HomeLoader$15;-><init>(Lcom/android/launcher3/home/HomeLoader;Landroid/content/Context;Lcom/android/launcher3/common/base/item/IconInfo;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;)V
 
-    .line 1922
+    .line 1958
     .local v1, "r":Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
-    .line 1923
+    .line 1959
     return-void
 .end method
 
@@ -10683,26 +10774,26 @@
     .end annotation
 
     .prologue
-    .line 2321
+    .line 2361
     .local p2, "addedList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     .local p3, "addedOrUpdatedApps":Ljava/util/HashMap;, "Ljava/util/HashMap<Landroid/content/ComponentName;Lcom/android/launcher3/common/base/item/IconInfo;>;"
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2322
+    .line 2362
     .local v5, "updatedIcons":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2323
+    .line 2363
     .local v6, "removedIcons":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     new-instance v24, Ljava/util/ArrayList;
 
     invoke-direct/range {v24 .. v24}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2325
+    .line 2365
     .local v24, "widgets":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/home/LauncherAppWidgetInfo;>;"
     new-instance v20, Ljava/util/HashSet;
 
@@ -10714,19 +10805,19 @@
 
     invoke-direct {v0, v2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    .line 2326
+    .line 2366
     .local v20, "packageSet":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 2327
+    .line 2367
     :try_start_0
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->getAllItemInHome()Ljava/util/ArrayList;
 
     move-result-object v9
 
-    .line 2328
+    .line 2368
     .local v9, "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v9}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -10746,7 +10837,7 @@
 
     check-cast v16, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2329
+    .line 2369
     .local v16, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     move-object/from16 v0, v16
 
@@ -10766,22 +10857,22 @@
 
     if-eqz v7, :cond_e
 
-    .line 2330
+    .line 2370
     move-object/from16 v0, v16
 
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-object v14, v0
 
-    .line 2331
+    .line 2371
     .local v14, "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     const/16 v17, 0x0
 
-    .line 2332
+    .line 2372
     .local v17, "infoUpdated":Z
     const/4 v15, 0x0
 
-    .line 2335
+    .line 2375
     .local v15, "iconUpdated":Z
     iget-object v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->iconResource:Landroid/content/Intent$ShortcutIconResource;
 
@@ -10791,7 +10882,7 @@
 
     iget-object v7, v7, Landroid/content/Intent$ShortcutIconResource;->packageName:Ljava/lang/String;
 
-    .line 2336
+    .line 2376
     move-object/from16 v0, v20
 
     invoke-virtual {v0, v7}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
@@ -10800,7 +10891,7 @@
 
     if-eqz v7, :cond_1
 
-    .line 2337
+    .line 2377
     iget-object v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->iconResource:Landroid/content/Intent$ShortcutIconResource;
 
     iget-object v7, v7, Landroid/content/Intent$ShortcutIconResource;->packageName:Ljava/lang/String;
@@ -10825,14 +10916,14 @@
 
     move-result-object v13
 
-    .line 2340
+    .line 2380
     .local v13, "icon":Landroid/graphics/Bitmap;
     if-eqz v13, :cond_1
 
-    .line 2341
+    .line 2381
     invoke-virtual {v14, v13}, Lcom/android/launcher3/common/base/item/IconInfo;->setOriginalIcon(Landroid/graphics/Bitmap;)V
 
-    .line 2342
+    .line 2382
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     iget-object v0, v14, Lcom/android/launcher3/common/base/item/IconInfo;->componentName:Landroid/content/ComponentName;
@@ -10845,30 +10936,30 @@
 
     move-result-object v13
 
-    .line 2343
+    .line 2383
     const/4 v7, 0x1
 
     iput-boolean v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->customIcon:Z
 
-    .line 2345
+    .line 2385
     invoke-virtual {v14, v13}, Lcom/android/launcher3/common/base/item/IconInfo;->setIcon(Landroid/graphics/Bitmap;)V
 
-    .line 2346
+    .line 2386
     const/4 v7, 0x0
 
     iput-boolean v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->usingFallbackIcon:Z
 
-    .line 2347
+    .line 2387
     const/16 v17, 0x1
 
-    .line 2351
+    .line 2391
     .end local v13    # "icon":Landroid/graphics/Bitmap;
     :cond_1
     invoke-virtual {v14}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v12
 
-    .line 2352
+    .line 2392
     .local v12, "cn":Landroid/content/ComponentName;
     if-eqz v12, :cond_9
 
@@ -10884,7 +10975,7 @@
 
     if-eqz v7, :cond_9
 
-    .line 2353
+    .line 2393
     move-object/from16 v0, p3
 
     invoke-virtual {v0, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -10893,7 +10984,7 @@
 
     check-cast v10, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    .line 2354
+    .line 2394
     .local v10, "appInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     invoke-virtual {v14}, Lcom/android/launcher3/common/base/item/IconInfo;->isPromise()Z
 
@@ -10901,10 +10992,10 @@
 
     if-eqz v7, :cond_c
 
-    .line 2355
+    .line 2395
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
 
-    .line 2356
+    .line 2396
     invoke-virtual {v12}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v25
@@ -10917,7 +11008,7 @@
 
     move-result-object v11
 
-    .line 2357
+    .line 2397
     .local v11, "apps":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;>;"
     move-object/from16 v0, p4
 
@@ -10925,7 +11016,7 @@
 
     move-result-object v8
 
-    .line 2358
+    .line 2398
     .local v8, "activityInfo":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     const/16 v7, 0x26
 
@@ -10935,14 +11026,14 @@
 
     if-eqz v7, :cond_3
 
-    .line 2361
+    .line 2401
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v21
 
-    .line 2362
+    .line 2402
     .local v21, "pm":Landroid/content/pm/PackageManager;
     new-instance v7, Landroid/content/Intent;
 
@@ -10952,7 +11043,7 @@
 
     invoke-direct {v7, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 2364
+    .line 2404
     invoke-virtual {v7, v12}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     move-result-object v7
@@ -10967,7 +11058,7 @@
 
     const/high16 v25, 0x10000
 
-    .line 2362
+    .line 2402
     move-object/from16 v0, v21
 
     move/from16 v1, v25
@@ -10976,11 +11067,11 @@
 
     move-result-object v19
 
-    .line 2366
+    .line 2406
     .local v19, "matched":Landroid/content/pm/ResolveInfo;
     if-nez v19, :cond_3
 
-    .line 2368
+    .line 2408
     invoke-virtual {v12}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v7
@@ -10991,16 +11082,16 @@
 
     move-result-object v18
 
-    .line 2370
+    .line 2410
     .local v18, "intent":Landroid/content/Intent;
     if-nez v18, :cond_2
 
-    .line 2371
+    .line 2411
     invoke-virtual {v6, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 2450
+    .line 2490
     .end local v8    # "activityInfo":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     .end local v9    # "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .end local v10    # "appInfo":Lcom/android/launcher3/common/base/item/IconInfo;
@@ -11022,7 +11113,7 @@
 
     throw v2
 
-    .line 2374
+    .line 2414
     .restart local v8    # "activityInfo":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     .restart local v9    # "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .restart local v10    # "appInfo":Lcom/android/launcher3/common/base/item/IconInfo;
@@ -11041,7 +11132,7 @@
 
     iput-object v0, v14, Lcom/android/launcher3/common/base/item/IconInfo;->promisedIntent:Landroid/content/Intent;
 
-    .line 2378
+    .line 2418
     .end local v18    # "intent":Landroid/content/Intent;
     .end local v19    # "matched":Landroid/content/pm/ResolveInfo;
     .end local v21    # "pm":Landroid/content/pm/PackageManager;
@@ -11064,7 +11155,7 @@
 
     iget-object v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->intent:Landroid/content/Intent;
 
-    .line 2380
+    .line 2420
     invoke-static {v7}, Lcom/android/launcher3/Utilities;->isLauncherAppTarget(Landroid/content/Intent;)Z
 
     move-result v7
@@ -11073,7 +11164,7 @@
 
     if-eqz v8, :cond_5
 
-    .line 2382
+    .line 2422
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v7
@@ -11084,7 +11175,7 @@
 
     if-eqz v7, :cond_4
 
-    .line 2383
+    .line 2423
     const-string v7, "HomeLoader"
 
     new-instance v25, Ljava/lang/StringBuilder;
@@ -11113,12 +11204,12 @@
 
     invoke-static {v7, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2384
+    .line 2424
     invoke-virtual {v6, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_0
 
-    .line 2387
+    .line 2427
     :cond_4
     const-string v7, "HomeLoader"
 
@@ -11148,58 +11239,58 @@
 
     invoke-static {v7, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2388
+    .line 2428
     const/4 v7, 0x0
 
     iput v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->itemType:I
 
-    .line 2392
+    .line 2432
     :cond_5
     if-eqz v8, :cond_6
 
-    .line 2393
+    .line 2433
     invoke-static {v8}, Lcom/android/launcher3/common/base/item/IconInfo;->initFlags(Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;)I
 
     move-result v7
 
     iput v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->flags:I
 
-    .line 2396
+    .line 2436
     :cond_6
     iget-object v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->promisedIntent:Landroid/content/Intent;
 
     iput-object v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->intent:Landroid/content/Intent;
 
-    .line 2397
+    .line 2437
     const/4 v7, 0x0
 
     iput-object v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->promisedIntent:Landroid/content/Intent;
 
-    .line 2398
+    .line 2438
     const/4 v7, 0x0
 
     iput v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->status:I
 
-    .line 2399
+    .line 2439
     iget v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->itemType:I
 
     if-nez v7, :cond_7
 
-    .line 2400
+    .line 2440
     const/4 v7, 0x0
 
     iput-boolean v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->customIcon:Z
 
-    .line 2402
+    .line 2442
     :cond_7
     const/16 v17, 0x1
 
-    .line 2403
+    .line 2443
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     invoke-virtual {v14, v7}, Lcom/android/launcher3/common/base/item/IconInfo;->updateIcon(Lcom/android/launcher3/common/model/IconCache;)V
 
-    .line 2411
+    .line 2451
     .end local v8    # "activityInfo":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     .end local v11    # "apps":Ljava/util/List;, "Ljava/util/List<Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;>;"
     :cond_8
@@ -11210,17 +11301,17 @@
 
     if-eqz v7, :cond_d
 
-    .line 2413
+    .line 2453
     iget v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
     and-int/lit8 v7, v7, -0x3
 
     iput v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
-    .line 2414
+    .line 2454
     const/4 v15, 0x1
 
-    .line 2421
+    .line 2461
     .end local v10    # "appInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     :cond_9
     :goto_2
@@ -11228,20 +11319,20 @@
 
     if-eqz v15, :cond_b
 
-    .line 2422
+    .line 2462
     :cond_a
     invoke-virtual {v5, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2425
+    .line 2465
     :cond_b
     if-eqz v17, :cond_0
 
-    .line 2426
+    .line 2466
     new-instance v22, Landroid/content/ContentValues;
 
     invoke-direct/range {v22 .. v22}, Landroid/content/ContentValues;-><init>()V
 
-    .line 2427
+    .line 2467
     .local v22, "values":Landroid/content/ContentValues;
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
@@ -11249,7 +11340,7 @@
 
     invoke-virtual {v14, v7, v0}, Lcom/android/launcher3/common/base/item/IconInfo;->onAddToDatabase(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 2428
+    .line 2468
     move-object/from16 v0, p0
 
     iget-object v7, v0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
@@ -11260,7 +11351,7 @@
 
     goto/16 :goto_0
 
-    .line 2404
+    .line 2444
     .end local v22    # "values":Landroid/content/ContentValues;
     .restart local v10    # "appInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     :cond_c
@@ -11288,22 +11379,22 @@
 
     if-nez v7, :cond_8
 
-    .line 2406
+    .line 2446
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     invoke-virtual {v14, v7}, Lcom/android/launcher3/common/base/item/IconInfo;->updateIcon(Lcom/android/launcher3/common/model/IconCache;)V
 
-    .line 2407
+    .line 2447
     iget-object v7, v10, Lcom/android/launcher3/common/base/item/IconInfo;->contentDescription:Ljava/lang/CharSequence;
 
     iput-object v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->contentDescription:Ljava/lang/CharSequence;
 
-    .line 2408
+    .line 2448
     const/16 v17, 0x1
 
     goto :goto_1
 
-    .line 2415
+    .line 2455
     :cond_d
     iget v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
@@ -11311,19 +11402,19 @@
 
     if-eqz v7, :cond_9
 
-    .line 2416
+    .line 2456
     iget v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
     and-int/lit8 v7, v7, -0x21
 
     iput v7, v14, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
-    .line 2417
+    .line 2457
     const/4 v15, 0x1
 
     goto :goto_2
 
-    .line 2430
+    .line 2470
     .end local v10    # "appInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     .end local v12    # "cn":Landroid/content/ComponentName;
     .end local v14    # "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
@@ -11336,14 +11427,14 @@
 
     if-eqz v7, :cond_0
 
-    .line 2431
+    .line 2471
     move-object/from16 v0, v16
 
     check-cast v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     move-object/from16 v23, v0
 
-    .line 2432
+    .line 2472
     .local v23, "widgetInfo":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     move-object/from16 v0, v23
 
@@ -11359,7 +11450,7 @@
 
     const/4 v7, 0x2
 
-    .line 2433
+    .line 2473
     move-object/from16 v0, v23
 
     invoke-virtual {v0, v7}, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->hasRestoreFlag(I)Z
@@ -11372,7 +11463,7 @@
 
     iget-object v7, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
-    .line 2434
+    .line 2474
     invoke-virtual {v7}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v7
@@ -11385,7 +11476,7 @@
 
     if-eqz v7, :cond_0
 
-    .line 2435
+    .line 2475
     move-object/from16 v0, v23
 
     iget v7, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->restoreStatus:I
@@ -11396,7 +11487,7 @@
 
     iput v7, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->restoreStatus:I
 
-    .line 2441
+    .line 2481
     move-object/from16 v0, v23
 
     iget v7, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->restoreStatus:I
@@ -11407,19 +11498,19 @@
 
     iput v7, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->restoreStatus:I
 
-    .line 2443
+    .line 2483
     move-object/from16 v0, v24
 
     move-object/from16 v1, v23
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2444
+    .line 2484
     new-instance v22, Landroid/content/ContentValues;
 
     invoke-direct/range {v22 .. v22}, Landroid/content/ContentValues;-><init>()V
 
-    .line 2445
+    .line 2485
     .restart local v22    # "values":Landroid/content/ContentValues;
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
@@ -11429,7 +11520,7 @@
 
     invoke-virtual {v0, v7, v1}, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->onAddToDatabase(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 2446
+    .line 2486
     move-object/from16 v0, p0
 
     iget-object v7, v0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
@@ -11442,7 +11533,7 @@
 
     goto/16 :goto_0
 
-    .line 2450
+    .line 2490
     .end local v16    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v22    # "values":Landroid/content/ContentValues;
     .end local v23    # "widgetInfo":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
@@ -11451,28 +11542,28 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2452
+    .line 2492
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v4
 
-    .line 2453
+    .line 2493
     .local v4, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v4, :cond_11
 
-    .line 2454
+    .line 2494
     const-string v2, "HomeLoader"
 
     const-string v3, "addOrUpdater. Nobody to tell about the new app.  Launcher is probably loading."
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2490
+    .line 2530
     :cond_10
     :goto_3
     return-void
 
-    .line 2459
+    .line 2499
     :cond_11
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
@@ -11480,7 +11571,7 @@
 
     if-eqz v2, :cond_12
 
-    .line 2460
+    .line 2500
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v2
@@ -11493,14 +11584,14 @@
 
     if-eqz p2, :cond_12
 
-    .line 2461
+    .line 2501
     invoke-virtual/range {p2 .. p2}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_12
 
-    .line 2462
+    .line 2502
     new-instance v2, Ljava/util/ArrayList;
 
     move-object/from16 v0, p2
@@ -11511,7 +11602,7 @@
 
     invoke-direct {v0, v2}, Lcom/android/launcher3/home/HomeLoader;->restoreStkPositionIfNecessary(Ljava/util/ArrayList;)V
 
-    .line 2463
+    .line 2503
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     const/4 v3, 0x0
@@ -11522,7 +11613,7 @@
 
     invoke-virtual {v0, v2, v1, v3}, Lcom/android/launcher3/home/HomeLoader;->addAndBindAddedWorkspaceItems(Landroid/content/Context;Ljava/util/ArrayList;Z)V
 
-    .line 2466
+    .line 2506
     :cond_12
     invoke-virtual {v5}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -11536,37 +11627,37 @@
 
     if-nez v2, :cond_14
 
-    .line 2467
+    .line 2507
     :cond_13
     sget-object v25, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
-    new-instance v2, Lcom/android/launcher3/home/HomeLoader$21;
+    new-instance v2, Lcom/android/launcher3/home/HomeLoader$22;
 
     move-object/from16 v3, p0
 
     move-object/from16 v7, p4
 
-    invoke-direct/range {v2 .. v7}, Lcom/android/launcher3/home/HomeLoader$21;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
+    invoke-direct/range {v2 .. v7}, Lcom/android/launcher3/home/HomeLoader$22;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
     move-object/from16 v0, v25
 
     invoke-virtual {v0, v2}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 2475
+    .line 2515
     invoke-virtual {v6}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_14
 
-    .line 2476
+    .line 2516
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     invoke-virtual {v2, v6}, Lcom/android/launcher3/common/model/FavoritesUpdater;->deleteItemsFromDatabase(Ljava/util/ArrayList;)V
 
-    .line 2480
+    .line 2520
     :cond_14
     invoke-virtual/range {v24 .. v24}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -11574,16 +11665,16 @@
 
     if-nez v2, :cond_10
 
-    .line 2481
+    .line 2521
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
-    new-instance v3, Lcom/android/launcher3/home/HomeLoader$22;
+    new-instance v3, Lcom/android/launcher3/home/HomeLoader$23;
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, v24
 
-    invoke-direct {v3, v0, v4, v1}, Lcom/android/launcher3/home/HomeLoader$22;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
+    invoke-direct {v3, v0, v4, v1}, Lcom/android/launcher3/home/HomeLoader$23;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
 
     invoke-virtual {v2, v3}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
@@ -11595,7 +11686,7 @@
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 3000
+    .line 3040
     iget-wide v0, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
     const-wide/16 v2, 0x0
@@ -11608,12 +11699,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 3014
+    .line 3054
     :cond_0
     :goto_0
     return-void
 
-    .line 3002
+    .line 3042
     :cond_1
     iget-wide v0, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -11623,12 +11714,12 @@
 
     if-nez v0, :cond_2
 
-    .line 3003
+    .line 3043
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 3004
+    .line 3044
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v0
@@ -11637,7 +11728,7 @@
 
     goto :goto_0
 
-    .line 3005
+    .line 3045
     :cond_2
     iget-wide v0, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -11647,7 +11738,7 @@
 
     if-nez v0, :cond_4
 
-    .line 3006
+    .line 3046
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
     iget-wide v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
@@ -11662,7 +11753,7 @@
 
     if-nez v0, :cond_3
 
-    .line 3007
+    .line 3047
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
     iget-wide v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
@@ -11677,7 +11768,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3009
+    .line 3049
     :cond_3
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
@@ -11695,7 +11786,7 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 3010
+    .line 3050
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v0
@@ -11704,7 +11795,7 @@
 
     goto :goto_0
 
-    .line 3012
+    .line 3052
     :cond_4
     const-string v0, "HomeLoader"
 
@@ -11734,41 +11825,20 @@
 .end method
 
 .method bindItemAfterChangePosition(Lcom/android/launcher3/common/base/item/ItemInfo;)V
-    .locals 4
+    .locals 1
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 1926
-    invoke-virtual {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->removePagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
+    .line 1962
+    new-instance v0, Lcom/android/launcher3/home/HomeLoader$16;
 
-    .line 1927
-    const/4 v1, -0x1
+    invoke-direct {v0, p0, p1}, Lcom/android/launcher3/home/HomeLoader$16;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    iput v1, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->cellY:I
+    .line 1971
+    .local v0, "r":Ljava/lang/Runnable;
+    invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
-    iput v1, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->cellX:I
-
-    int-to-long v2, v1
-
-    iput-wide v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
-
-    .line 1928
-    new-instance v0, Ljava/util/ArrayList;
-
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 1929
-    .local v0, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 1931
-    sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {p0, v1, v0, v2}, Lcom/android/launcher3/home/HomeLoader;->addAndBindAddedWorkspaceItems(Landroid/content/Context;Ljava/util/ArrayList;Z)V
-
-    .line 1932
+    .line 1972
     return-void
 .end method
 
@@ -11785,13 +11855,13 @@
     .end annotation
 
     .prologue
-    .line 2031
+    .line 2071
     .local p1, "addedItemsFinal":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v2
 
-    .line 2033
+    .line 2073
     .local v2, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     invoke-virtual {p1}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -11799,31 +11869,31 @@
 
     if-nez v8, :cond_8
 
-    .line 2034
+    .line 2074
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2035
+    .line 2075
     .local v0, "addAnimated":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2037
+    .line 2077
     .local v1, "addNotAnimated":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     const/4 v3, 0x0
 
-    .line 2038
+    .line 2078
     .local v3, "currentScreenIndex":I
     if-eqz v2, :cond_0
 
-    .line 2039
+    .line 2079
     invoke-interface {v2}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->getCurrentWorkspaceScreen()I
 
     move-result v3
 
-    .line 2041
+    .line 2081
     :cond_0
     iget-object v8, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
@@ -11833,7 +11903,7 @@
 
     if-lt v3, v8, :cond_1
 
-    .line 2042
+    .line 2082
     iget-object v8, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
     invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
@@ -11842,11 +11912,11 @@
 
     add-int/lit8 v3, v8, -0x1
 
-    .line 2044
+    .line 2084
     :cond_1
     if-gez v3, :cond_2
 
-    .line 2045
+    .line 2085
     const-string v8, "HomeLoader"
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -11871,7 +11941,7 @@
 
     iget-object v10, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
-    .line 2046
+    .line 2086
     invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
 
     move-result v10
@@ -11884,13 +11954,13 @@
 
     move-result-object v9
 
-    .line 2045
+    .line 2085
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2047
+    .line 2087
     const/4 v3, 0x0
 
-    .line 2049
+    .line 2089
     :cond_2
     iget-object v8, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
@@ -11904,7 +11974,7 @@
 
     move-result-wide v4
 
-    .line 2050
+    .line 2090
     .local v4, "currentScreenId":J
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -11923,7 +11993,7 @@
 
     check-cast v6, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2051
+    .line 2091
     .local v6, "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v10, v6, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
@@ -11935,18 +12005,18 @@
 
     if-nez v9, :cond_3
 
-    .line 2052
+    .line 2092
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 2054
+    .line 2094
     :cond_3
     invoke-virtual {v1, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 2058
+    .line 2098
     .end local v6    # "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_4
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -11966,7 +12036,7 @@
 
     check-cast v7, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2059
+    .line 2099
     .local v7, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v8, v7, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -11974,24 +12044,24 @@
 
     move-object v8, v7
 
-    .line 2060
+    .line 2100
     check-cast v8, Lcom/android/launcher3/common/base/item/IconInfo;
 
     sget-object v10, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     invoke-virtual {v8, v10}, Lcom/android/launcher3/common/base/item/IconInfo;->getIcon(Lcom/android/launcher3/common/model/IconCache;)Landroid/graphics/Bitmap;
 
-    .line 2062
+    .line 2102
     :cond_5
-    new-instance v8, Lcom/android/launcher3/home/HomeLoader$17;
+    new-instance v8, Lcom/android/launcher3/home/HomeLoader$18;
 
-    invoke-direct {v8, p0, v2, v7}, Lcom/android/launcher3/home/HomeLoader$17;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/base/item/ItemInfo;)V
+    invoke-direct {v8, p0, v2, v7}, Lcom/android/launcher3/home/HomeLoader$18;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
     invoke-virtual {p0, v8}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
     goto :goto_1
 
-    .line 2081
+    .line 2121
     .end local v7    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_6
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -12011,7 +12081,7 @@
 
     check-cast v7, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2082
+    .line 2122
     .restart local v7    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v8, v7, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -12019,24 +12089,24 @@
 
     move-object v8, v7
 
-    .line 2083
+    .line 2123
     check-cast v8, Lcom/android/launcher3/common/base/item/IconInfo;
 
     sget-object v10, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     invoke-virtual {v8, v10}, Lcom/android/launcher3/common/base/item/IconInfo;->getIcon(Lcom/android/launcher3/common/model/IconCache;)Landroid/graphics/Bitmap;
 
-    .line 2085
+    .line 2125
     :cond_7
-    new-instance v8, Lcom/android/launcher3/home/HomeLoader$18;
+    new-instance v8, Lcom/android/launcher3/home/HomeLoader$19;
 
-    invoke-direct {v8, p0, v2, v7}, Lcom/android/launcher3/home/HomeLoader$18;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/base/item/ItemInfo;)V
+    invoke-direct {v8, p0, v2, v7}, Lcom/android/launcher3/home/HomeLoader$19;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
     invoke-virtual {p0, v8}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
     goto :goto_2
 
-    .line 2108
+    .line 2148
     .end local v0    # "addAnimated":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .end local v1    # "addNotAnimated":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .end local v3    # "currentScreenIndex":I
@@ -12052,27 +12122,27 @@
     .param p2, "task"    # Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;
 
     .prologue
-    .line 2670
+    .line 2710
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v8
 
-    .line 2671
+    .line 2711
     .local v8, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v8, :cond_0
 
-    .line 2673
+    .line 2713
     const-string v14, "HomeLoader"
 
     const-string v15, "bindItemsSync running with no launcher"
 
     invoke-static {v14, v15}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2755
+    .line 2795
     :goto_0
     return-void
 
-    .line 2677
+    .line 2717
     :cond_0
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportFestivalPage()Z
 
@@ -12080,26 +12150,26 @@
 
     if-eqz v14, :cond_1
 
-    .line 2678
+    .line 2718
     move-object/from16 v0, p0
 
     move-object/from16 v1, p2
 
     invoke-direct {v0, v1}, Lcom/android/launcher3/home/HomeLoader;->initFestivalPageIfNecessary(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 2681
+    .line 2721
     :cond_1
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2682
+    .line 2722
     .local v9, "orderedScreenIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     sget-object v15, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v15
 
-    .line 2683
+    .line 2723
     :try_start_0
     move-object/from16 v0, p0
 
@@ -12107,12 +12177,12 @@
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 2684
+    .line 2724
     monitor-exit v15
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2685
+    .line 2725
     const/16 v14, -0x3e9
 
     move/from16 v0, p1
@@ -12121,14 +12191,14 @@
 
     const/4 v7, 0x1
 
-    .line 2686
+    .line 2726
     .local v7, "isLoadingSynchronously":Z
     :goto_1
     if-eqz v7, :cond_4
 
     move/from16 v2, p1
 
-    .line 2687
+    .line 2727
     .local v2, "currScreen":I
     :goto_2
     invoke-virtual {v9}, Ljava/util/ArrayList;->size()I
@@ -12137,42 +12207,42 @@
 
     if-lt v2, v14, :cond_2
 
-    .line 2688
+    .line 2728
     const/16 v2, -0x3e9
 
-    .line 2690
+    .line 2730
     :cond_2
     move v3, v2
 
-    .line 2691
+    .line 2731
     .local v3, "currentScreen":I
     if-gez v3, :cond_5
 
     const-wide/16 v4, -0x1
 
-    .line 2693
+    .line 2733
     .local v4, "currentScreenId":J
     :goto_3
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->unbindItemsOnMainThread()V
 
-    .line 2695
+    .line 2735
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2696
+    .line 2736
     .local v6, "currentWorkspaceItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2697
+    .line 2737
     .local v10, "otherWorkspaceItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     sget-object v15, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v15
 
-    .line 2698
+    .line 2738
     :try_start_1
     move-object/from16 v0, p0
 
@@ -12203,13 +12273,13 @@
 
     move-result-wide v12
 
-    .line 2699
+    .line 2739
     .local v12, "screenId":J
     cmp-long v14, v12, v4
 
     if-nez v14, :cond_6
 
-    .line 2700
+    .line 2740
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
@@ -12230,7 +12300,7 @@
 
     goto :goto_4
 
-    .line 2705
+    .line 2745
     .end local v12    # "screenId":J
     :catchall_0
     move-exception v14
@@ -12241,7 +12311,7 @@
 
     throw v14
 
-    .line 2684
+    .line 2724
     .end local v2    # "currScreen":I
     .end local v3    # "currentScreen":I
     .end local v4    # "currentScreenId":J
@@ -12258,13 +12328,13 @@
 
     throw v14
 
-    .line 2685
+    .line 2725
     :cond_3
     const/4 v7, 0x0
 
     goto :goto_1
 
-    .line 2686
+    .line 2726
     .restart local v7    # "isLoadingSynchronously":Z
     :cond_4
     invoke-interface {v8}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->getCurrentWorkspaceScreen()I
@@ -12273,7 +12343,7 @@
 
     goto :goto_2
 
-    .line 2691
+    .line 2731
     .restart local v2    # "currScreen":I
     .restart local v3    # "currentScreen":I
     :cond_5
@@ -12289,7 +12359,7 @@
 
     goto :goto_3
 
-    .line 2702
+    .line 2742
     .restart local v4    # "currentScreenId":J
     .restart local v6    # "currentWorkspaceItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .restart local v10    # "otherWorkspaceItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
@@ -12316,36 +12386,36 @@
 
     goto :goto_4
 
-    .line 2705
+    .line 2745
     .end local v12    # "screenId":J
     :cond_7
     monitor-exit v15
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 2707
-    new-instance v11, Lcom/android/launcher3/home/HomeLoader$26;
+    .line 2747
+    new-instance v11, Lcom/android/launcher3/home/HomeLoader$27;
 
     move-object/from16 v0, p0
 
     move-object/from16 v1, p2
 
-    invoke-direct {v11, v0, v8, v1}, Lcom/android/launcher3/home/HomeLoader$26;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
+    invoke-direct {v11, v0, v8, v1}, Lcom/android/launcher3/home/HomeLoader$27;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 2715
+    .line 2755
     .local v11, "r":Ljava/lang/Runnable;
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v11}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 2717
+    .line 2757
     move-object/from16 v0, p0
 
     move-object/from16 v1, p2
 
     invoke-direct {v0, v8, v9, v1}, Lcom/android/launcher3/home/HomeLoader;->bindWorkspaceScreens(Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 2718
+    .line 2758
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
@@ -12358,7 +12428,7 @@
 
     invoke-virtual {v0, v14, v15, v1}, Lcom/android/launcher3/home/HomeLoader;->bindPageItems(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 2719
+    .line 2759
     const/4 v14, 0x0
 
     move-object/from16 v0, p0
@@ -12367,26 +12437,26 @@
 
     invoke-virtual {v0, v6, v14, v1}, Lcom/android/launcher3/home/HomeLoader;->bindPageItems(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 2721
-    new-instance v11, Lcom/android/launcher3/home/HomeLoader$27;
+    .line 2761
+    new-instance v11, Lcom/android/launcher3/home/HomeLoader$28;
 
     .end local v11    # "r":Ljava/lang/Runnable;
     move-object/from16 v0, p0
 
     move-object/from16 v1, p2
 
-    invoke-direct {v11, v0, v8, v1, v3}, Lcom/android/launcher3/home/HomeLoader$27;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;I)V
+    invoke-direct {v11, v0, v8, v1, v3}, Lcom/android/launcher3/home/HomeLoader$28;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;I)V
 
-    .line 2729
+    .line 2769
     .restart local v11    # "r":Ljava/lang/Runnable;
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v11}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 2731
+    .line 2771
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->clearDeferredBindRunnable()V
 
-    .line 2732
+    .line 2772
     move-object/from16 v0, p0
 
     iget-object v14, v0, Lcom/android/launcher3/home/HomeLoader;->mDeferredBindRunnables:Ljava/util/ArrayList;
@@ -12397,31 +12467,14 @@
 
     invoke-virtual {v0, v10, v14, v1}, Lcom/android/launcher3/home/HomeLoader;->bindPageItems(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 2734
+    .line 2774
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportFestivalPage()Z
 
     move-result v14
 
     if-eqz v14, :cond_8
 
-    .line 2735
-    new-instance v11, Lcom/android/launcher3/home/HomeLoader$28;
-
-    .end local v11    # "r":Ljava/lang/Runnable;
-    move-object/from16 v0, p0
-
-    move-object/from16 v1, p2
-
-    invoke-direct {v11, v0, v1}, Lcom/android/launcher3/home/HomeLoader$28;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
-
-    .line 2740
-    .restart local v11    # "r":Ljava/lang/Runnable;
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v11}, Lcom/android/launcher3/home/HomeLoader;->addDeferredBindRunnable(Ljava/lang/Runnable;)V
-
-    .line 2743
-    :cond_8
+    .line 2775
     new-instance v11, Lcom/android/launcher3/home/HomeLoader$29;
 
     .end local v11    # "r":Ljava/lang/Runnable;
@@ -12429,9 +12482,26 @@
 
     move-object/from16 v1, p2
 
-    invoke-direct {v11, v0, v8, v1}, Lcom/android/launcher3/home/HomeLoader$29;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
+    invoke-direct {v11, v0, v1}, Lcom/android/launcher3/home/HomeLoader$29;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 2754
+    .line 2780
+    .restart local v11    # "r":Ljava/lang/Runnable;
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v11}, Lcom/android/launcher3/home/HomeLoader;->addDeferredBindRunnable(Ljava/lang/Runnable;)V
+
+    .line 2783
+    :cond_8
+    new-instance v11, Lcom/android/launcher3/home/HomeLoader$30;
+
+    .end local v11    # "r":Ljava/lang/Runnable;
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    invoke-direct {v11, v0, v8, v1}, Lcom/android/launcher3/home/HomeLoader$30;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
+
+    .line 2794
     .restart local v11    # "r":Ljava/lang/Runnable;
     move-object/from16 v0, p0
 
@@ -12460,7 +12530,7 @@
     .end annotation
 
     .prologue
-    .line 1100
+    .line 1136
     .local p1, "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .local p2, "deferredBindRunnables":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Runnable;>;"
     move-object/from16 v0, p0
@@ -12473,29 +12543,29 @@
 
     if-eqz v3, :cond_1
 
-    .line 1101
+    .line 1137
     const-string v3, "HomeLoader"
 
     const-string v5, "bindPageItems task is stopped"
 
     invoke-static {v3, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1244
+    .line 1280
     :cond_0
     :goto_0
     return-void
 
-    .line 1105
+    .line 1141
     :cond_1
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v4
 
-    .line 1106
+    .line 1142
     .local v4, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v4, :cond_2
 
-    .line 1107
+    .line 1143
     const-string v3, "HomeLoader"
 
     const-string v5, "bindPageItems running with no launcher"
@@ -12504,7 +12574,7 @@
 
     goto :goto_0
 
-    .line 1111
+    .line 1147
     :cond_2
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportFestivalPage()Z
 
@@ -12512,14 +12582,14 @@
 
     if-eqz v3, :cond_3
 
-    .line 1112
+    .line 1148
     move-object/from16 v0, p0
 
     move-object/from16 v1, p3
 
     invoke-direct {v0, v1}, Lcom/android/launcher3/home/HomeLoader;->initFestivalPageIfNecessary(Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 1115
+    .line 1151
     :cond_3
     move-object/from16 v0, p0
 
@@ -12527,7 +12597,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 1116
+    .line 1152
     new-instance v2, Lcom/android/launcher3/home/HomeLoader$2;
 
     move-object/from16 v0, p0
@@ -12536,24 +12606,24 @@
 
     invoke-direct {v2, v0, v4, v1}, Lcom/android/launcher3/home/HomeLoader$2;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 1124
+    .line 1160
     .local v2, "r":Ljava/lang/Runnable;
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v2}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 1126
+    .line 1162
     new-instance v14, Ljava/util/ArrayList;
 
     invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1127
+    .line 1163
     .local v14, "orderedScreenIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     sget-object v5, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 1128
+    .line 1164
     :try_start_0
     move-object/from16 v0, p0
 
@@ -12561,26 +12631,26 @@
 
     invoke-virtual {v14, v3}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1129
+    .line 1165
     monitor-exit v5
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1130
+    .line 1166
     move-object/from16 v0, p0
 
     move-object/from16 v1, p3
 
     invoke-direct {v0, v4, v14, v1}, Lcom/android/launcher3/home/HomeLoader;->bindWorkspaceScreens(Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
 
-    .line 1131
+    .line 1167
     const/4 v3, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v3, v0, Lcom/android/launcher3/home/HomeLoader;->mIsFirstBind:Z
 
-    .line 1134
+    .line 1170
     .end local v2    # "r":Ljava/lang/Runnable;
     .end local v14    # "orderedScreenIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     :cond_4
@@ -12592,7 +12662,7 @@
 
     if-eqz v3, :cond_6
 
-    .line 1135
+    .line 1171
     :cond_5
     const-string v3, "HomeLoader"
 
@@ -12602,7 +12672,7 @@
 
     goto :goto_0
 
-    .line 1129
+    .line 1165
     .restart local v2    # "r":Ljava/lang/Runnable;
     .restart local v14    # "orderedScreenIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     :catchall_0
@@ -12615,7 +12685,7 @@
 
     throw v3
 
-    .line 1139
+    .line 1175
     .end local v2    # "r":Ljava/lang/Runnable;
     .end local v14    # "orderedScreenIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     :cond_6
@@ -12623,25 +12693,25 @@
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1140
+    .line 1176
     .local v6, "shortcuts":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v16, Ljava/util/ArrayList;
 
     invoke-direct/range {v16 .. v16}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1141
+    .line 1177
     .local v16, "widgets":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v11, Ljava/util/ArrayList;
 
     invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1142
+    .line 1178
     .local v11, "hotseatShortcuts":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v10, Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-direct {v10}, Lcom/android/launcher3/util/LongArrayMap;-><init>()V
 
-    .line 1143
+    .line 1179
     .local v10, "folders":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<Lcom/android/launcher3/folder/FolderInfo;>;"
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -12660,7 +12730,7 @@
 
     check-cast v13, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1144
+    .line 1180
     .local v13, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget v3, v13, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
 
@@ -12669,7 +12739,7 @@
     :pswitch_0
     goto :goto_1
 
-    .line 1149
+    .line 1185
     :goto_2
     :pswitch_1
     iget-wide v0, v13, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
@@ -12682,12 +12752,12 @@
 
     if-nez v3, :cond_7
 
-    .line 1150
+    .line 1186
     invoke-virtual {v11, v13}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 1146
+    .line 1182
     :pswitch_2
     iget-wide v0, v13, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
 
@@ -12703,13 +12773,13 @@
 
     goto :goto_2
 
-    .line 1152
+    .line 1188
     :cond_7
     invoke-virtual {v6, v13}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 1157
+    .line 1193
     :pswitch_3
     move-object/from16 v0, v16
 
@@ -12717,7 +12787,7 @@
 
     goto :goto_1
 
-    .line 1163
+    .line 1199
     .end local v13    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_8
     invoke-virtual {v11}, Ljava/util/ArrayList;->size()I
@@ -12726,7 +12796,7 @@
 
     if-lez v3, :cond_9
 
-    .line 1164
+    .line 1200
     new-instance v2, Lcom/android/launcher3/home/HomeLoader$3;
 
     move-object/from16 v0, p0
@@ -12735,25 +12805,25 @@
 
     invoke-direct {v2, v0, v4, v1, v11}, Lcom/android/launcher3/home/HomeLoader$3;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;Ljava/util/ArrayList;)V
 
-    .line 1173
+    .line 1209
     .restart local v2    # "r":Ljava/lang/Runnable;
     if-eqz p2, :cond_a
 
-    .line 1174
+    .line 1210
     monitor-enter p2
 
-    .line 1175
+    .line 1211
     :try_start_2
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1176
+    .line 1212
     monitor-exit p2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 1183
+    .line 1219
     .end local v2    # "r":Ljava/lang/Runnable;
     :cond_9
     :goto_3
@@ -12761,7 +12831,7 @@
 
     move-result v9
 
-    .line 1184
+    .line 1220
     .local v9, "N":I
     const/4 v12, 0x0
 
@@ -12769,10 +12839,10 @@
     :goto_4
     if-ge v12, v9, :cond_d
 
-    .line 1185
+    .line 1221
     move v7, v12
 
-    .line 1186
+    .line 1222
     .local v7, "start":I
     add-int/lit8 v3, v12, 0x6
 
@@ -12780,7 +12850,7 @@
 
     const/4 v8, 0x6
 
-    .line 1187
+    .line 1223
     .local v8, "chunkSize":I
     :goto_5
     new-instance v2, Lcom/android/launcher3/home/HomeLoader$4;
@@ -12791,31 +12861,31 @@
 
     invoke-direct/range {v2 .. v8}, Lcom/android/launcher3/home/HomeLoader$4;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;Ljava/util/ArrayList;II)V
 
-    .line 1196
+    .line 1232
     .restart local v2    # "r":Ljava/lang/Runnable;
     if-eqz p2, :cond_c
 
-    .line 1197
+    .line 1233
     monitor-enter p2
 
-    .line 1198
+    .line 1234
     :try_start_3
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1199
+    .line 1235
     monitor-exit p2
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 1184
+    .line 1220
     :goto_6
     add-int/lit8 v12, v12, 0x6
 
     goto :goto_4
 
-    .line 1176
+    .line 1212
     .end local v7    # "start":I
     .end local v8    # "chunkSize":I
     .end local v9    # "N":I
@@ -12830,7 +12900,7 @@
 
     throw v3
 
-    .line 1178
+    .line 1214
     :cond_a
     move-object/from16 v0, p0
 
@@ -12838,7 +12908,7 @@
 
     goto :goto_3
 
-    .line 1186
+    .line 1222
     .end local v2    # "r":Ljava/lang/Runnable;
     .restart local v7    # "start":I
     .restart local v9    # "N":I
@@ -12848,7 +12918,7 @@
 
     goto :goto_5
 
-    .line 1199
+    .line 1235
     .restart local v2    # "r":Ljava/lang/Runnable;
     .restart local v8    # "chunkSize":I
     :catchall_2
@@ -12861,7 +12931,7 @@
 
     throw v3
 
-    .line 1201
+    .line 1237
     :cond_c
     move-object/from16 v0, p0
 
@@ -12869,7 +12939,7 @@
 
     goto :goto_6
 
-    .line 1206
+    .line 1242
     .end local v2    # "r":Ljava/lang/Runnable;
     .end local v7    # "start":I
     .end local v8    # "chunkSize":I
@@ -12880,7 +12950,7 @@
 
     if-nez v3, :cond_e
 
-    .line 1207
+    .line 1243
     new-instance v2, Lcom/android/launcher3/home/HomeLoader$5;
 
     move-object/from16 v0, p0
@@ -12889,25 +12959,25 @@
 
     invoke-direct {v2, v0, v4, v1, v10}, Lcom/android/launcher3/home/HomeLoader$5;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;Lcom/android/launcher3/util/LongArrayMap;)V
 
-    .line 1215
+    .line 1251
     .restart local v2    # "r":Ljava/lang/Runnable;
     if-eqz p2, :cond_f
 
-    .line 1216
+    .line 1252
     monitor-enter p2
 
-    .line 1217
+    .line 1253
     :try_start_6
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1218
+    .line 1254
     monitor-exit p2
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
-    .line 1225
+    .line 1261
     .end local v2    # "r":Ljava/lang/Runnable;
     :cond_e
     :goto_7
@@ -12915,13 +12985,13 @@
 
     move-result v9
 
-    .line 1226
+    .line 1262
     const/4 v12, 0x0
 
     :goto_8
     if-ge v12, v9, :cond_0
 
-    .line 1227
+    .line 1263
     move-object/from16 v0, v16
 
     invoke-virtual {v0, v12}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -12930,7 +13000,7 @@
 
     check-cast v15, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
-    .line 1228
+    .line 1264
     .local v15, "widget":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     new-instance v2, Lcom/android/launcher3/home/HomeLoader$6;
 
@@ -12940,31 +13010,31 @@
 
     invoke-direct {v2, v0, v4, v1, v15}, Lcom/android/launcher3/home/HomeLoader$6;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;Lcom/android/launcher3/home/LauncherAppWidgetInfo;)V
 
-    .line 1236
+    .line 1272
     .restart local v2    # "r":Ljava/lang/Runnable;
     if-eqz p2, :cond_10
 
-    .line 1237
+    .line 1273
     monitor-enter p2
 
-    .line 1238
+    .line 1274
     :try_start_7
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1239
+    .line 1275
     monitor-exit p2
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_4
 
-    .line 1226
+    .line 1262
     :goto_9
     add-int/lit8 v12, v12, 0x1
 
     goto :goto_8
 
-    .line 1218
+    .line 1254
     .end local v15    # "widget":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     :catchall_3
     move-exception v3
@@ -12976,7 +13046,7 @@
 
     throw v3
 
-    .line 1220
+    .line 1256
     :cond_f
     move-object/from16 v0, p0
 
@@ -12984,7 +13054,7 @@
 
     goto :goto_7
 
-    .line 1239
+    .line 1275
     .restart local v15    # "widget":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     :catchall_4
     move-exception v3
@@ -12996,7 +13066,7 @@
 
     throw v3
 
-    .line 1241
+    .line 1277
     :cond_10
     move-object/from16 v0, p0
 
@@ -13004,7 +13074,7 @@
 
     goto :goto_9
 
-    .line 1144
+    .line 1180
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -13020,7 +13090,7 @@
     .locals 6
 
     .prologue
-    .line 2805
+    .line 2845
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader;->mDeferredBindRunnables:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->isEmpty()Z
@@ -13029,29 +13099,29 @@
 
     if-nez v3, :cond_0
 
-    .line 2806
+    .line 2846
     const/4 v1, 0x0
 
-    .line 2807
+    .line 2847
     .local v1, "deferredBindRunnables":[Ljava/lang/Runnable;
     iget-object v4, p0, Lcom/android/launcher3/home/HomeLoader;->mDeferredBindRunnables:Ljava/util/ArrayList;
 
     monitor-enter v4
 
-    .line 2808
+    .line 2848
     :try_start_0
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader;->mDeferredBindRunnables:Ljava/util/ArrayList;
 
     iget-object v5, p0, Lcom/android/launcher3/home/HomeLoader;->mDeferredBindRunnables:Ljava/util/ArrayList;
 
-    .line 2809
+    .line 2849
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
     move-result v5
 
     new-array v5, v5, [Ljava/lang/Runnable;
 
-    .line 2808
+    .line 2848
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v3
@@ -13062,17 +13132,17 @@
 
     move-object v1, v0
 
-    .line 2810
+    .line 2850
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader;->mDeferredBindRunnables:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
-    .line 2811
+    .line 2851
     monitor-exit v4
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2812
+    .line 2852
     array-length v4, v1
 
     const/4 v3, 0x0
@@ -13082,18 +13152,18 @@
 
     aget-object v2, v1, v3
 
-    .line 2813
+    .line 2853
     .local v2, "r":Ljava/lang/Runnable;
     sget-object v5, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
     invoke-virtual {v5, v2}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 2812
+    .line 2852
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 2811
+    .line 2851
     .end local v2    # "r":Ljava/lang/Runnable;
     :catchall_0
     move-exception v3
@@ -13105,7 +13175,7 @@
 
     throw v3
 
-    .line 2816
+    .line 2856
     .end local v1    # "deferredBindRunnables":[Ljava/lang/Runnable;
     :cond_0
     return-void
@@ -13118,7 +13188,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3291
+    .line 3331
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
     if-eqz v2, :cond_0
@@ -13131,12 +13201,12 @@
 
     if-nez v2, :cond_1
 
-    .line 3302
+    .line 3342
     :cond_0
     :goto_0
     return-object v1
 
-    .line 3295
+    .line 3335
     :cond_1
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getWidgetsInHome()Ljava/util/ArrayList;
 
@@ -13159,7 +13229,7 @@
 
     check-cast v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
-    .line 3296
+    .line 3336
     .local v0, "item":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     iget-object v3, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
@@ -13179,7 +13249,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 3297
+    .line 3337
     iget-object v3, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
     iget-object v4, p1, Lcom/android/launcher3/common/base/item/PendingAddItemInfo;->componentName:Landroid/content/ComponentName;
@@ -13190,7 +13260,7 @@
 
     if-nez v3, :cond_2
 
-    .line 3298
+    .line 3338
     iget-object v1, v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->hostView:Landroid/appwidget/AppWidgetHostView;
 
     invoke-virtual {v1}, Landroid/appwidget/AppWidgetHostView;->getAppWidgetInfo()Landroid/appwidget/AppWidgetProviderInfo;
@@ -13221,71 +13291,71 @@
     .locals 2
 
     .prologue
-    .line 1454
+    .line 1490
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 1455
+    .line 1491
     :try_start_0
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    .line 1456
+    .line 1492
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-virtual {v0}, Lcom/android/launcher3/util/LongArrayMap;->clear()V
 
-    .line 1457
+    .line 1493
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-virtual {v0}, Lcom/android/launcher3/util/LongArrayMap;->clear()V
 
-    .line 1458
+    .line 1494
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 1459
+    .line 1495
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 1460
+    .line 1496
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->added:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 1461
+    .line 1497
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->modified:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 1462
+    .line 1498
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->removed:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 1463
+    .line 1499
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1464
+    .line 1500
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mNewPageIdsAfterGridChanged:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    .line 1465
+    .line 1501
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mExtraItemsAfterGridChanged:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    .line 1466
+    .line 1502
     return-void
 
-    .line 1463
+    .line 1499
     :catchall_0
     move-exception v0
 
@@ -13304,7 +13374,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 3059
+    .line 3099
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -13313,11 +13383,11 @@
 
     if-eqz v2, :cond_0
 
-    .line 3068
+    .line 3108
     :goto_0
     return v1
 
-    .line 3062
+    .line 3102
     :cond_0
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
@@ -13342,7 +13412,7 @@
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 3063
+    .line 3103
     .local v0, "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -13352,7 +13422,7 @@
 
     goto :goto_0
 
-    .line 3068
+    .line 3108
     .end local v0    # "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_2
     const/4 v1, 0x0
@@ -13365,12 +13435,12 @@
     .param p1, "isStopped"    # Z
 
     .prologue
-    .line 1262
+    .line 1298
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeLoader;->setLoaderTaskStop(Z)V
 
-    .line 1263
+    .line 1299
     const-string v0, "HomeLoader"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -13393,14 +13463,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1264
+    .line 1300
     new-instance v0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;
 
     invoke-direct {v0, p0, p1}, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;-><init>(Lcom/android/launcher3/home/HomeLoader;Z)V
 
     iput-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mPageLoaderTask:Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;
 
-    .line 1265
+    .line 1301
     return-void
 .end method
 
@@ -13427,7 +13497,7 @@
     .end annotation
 
     .prologue
-    .line 858
+    .line 894
     .local p3, "needHandlingItems":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/Integer;Ljava/util/ArrayList<*>;>;"
     .local p4, "occupied":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<[[Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     move-object/from16 v0, p2
@@ -13440,7 +13510,7 @@
 
     move-result-object v28
 
-    .line 859
+    .line 895
     .local v28, "intentDescription":Ljava/lang/String;
     move-object/from16 v0, p2
 
@@ -13452,7 +13522,7 @@
 
     move-result v20
 
-    .line 860
+    .line 896
     .local v20, "container":I
     move-object/from16 v0, p2
 
@@ -13464,7 +13534,7 @@
 
     move-result-wide v24
 
-    .line 861
+    .line 897
     .local v24, "id":J
     move-object/from16 v0, p2
 
@@ -13480,7 +13550,7 @@
 
     move-wide/from16 v36, v0
 
-    .line 863
+    .line 899
     .local v36, "serialNumber":J
     move-object/from16 v0, p0
 
@@ -13494,7 +13564,7 @@
 
     check-cast v17, Lcom/android/launcher3/common/compat/UserHandleCompat;
 
-    .line 865
+    .line 901
     .local v17, "user":Lcom/android/launcher3/common/compat/UserHandleCompat;
     move-object/from16 v0, p2
 
@@ -13506,22 +13576,22 @@
 
     move-result v32
 
-    .line 866
+    .line 902
     .local v32, "promiseType":I
     if-eqz v32, :cond_0
 
     const/16 v33, 0x1
 
-    .line 867
+    .line 903
     .local v33, "restored":Z
     :goto_0
     const/16 v19, 0x0
 
-    .line 869
+    .line 905
     .local v19, "allowMissingTarget":Z
     const/16 v21, 0x0
 
-    .line 871
+    .line 907
     .local v21, "disabledState":I
     move-object/from16 v0, p2
 
@@ -13533,7 +13603,7 @@
 
     move-result v29
 
-    .line 873
+    .line 909
     .local v29, "itemType":I
     const/4 v4, 0x1
 
@@ -13549,7 +13619,7 @@
 
     check-cast v30, Ljava/util/ArrayList;
 
-    .line 874
+    .line 910
     .local v30, "itemsToRemove":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     const/4 v4, 0x2
 
@@ -13565,11 +13635,11 @@
 
     check-cast v34, Ljava/util/ArrayList;
 
-    .line 876
+    .line 912
     .local v34, "restoredRows":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     if-nez v17, :cond_1
 
-    .line 878
+    .line 914
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -13578,18 +13648,18 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 879
+    .line 915
     const/16 v35, 0x0
 
     move/from16 v11, v19
 
-    .line 1093
+    .line 1129
     .end local v19    # "allowMissingTarget":Z
     .local v11, "allowMissingTarget":Z
     :goto_1
     return-object v35
 
-    .line 866
+    .line 902
     .end local v11    # "allowMissingTarget":Z
     .end local v21    # "disabledState":I
     .end local v29    # "itemType":I
@@ -13601,7 +13671,7 @@
 
     goto :goto_0
 
-    .line 882
+    .line 918
     .restart local v19    # "allowMissingTarget":Z
     .restart local v21    # "disabledState":I
     .restart local v29    # "itemType":I
@@ -13611,11 +13681,11 @@
     :cond_1
     const/16 v35, 0x0
 
-    .line 885
+    .line 921
     .local v35, "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     if-nez v29, :cond_6
 
-    .line 886
+    .line 922
     const/4 v4, 0x0
 
     :try_start_0
@@ -13628,7 +13698,7 @@
     .local v7, "intent":Landroid/content/Intent;
     move-object/from16 v27, v7
 
-    .line 890
+    .line 926
     .end local v7    # "intent":Landroid/content/Intent;
     .local v27, "intent":Landroid/content/Intent;
     :goto_2
@@ -13636,7 +13706,7 @@
 
     move-result-object v18
 
-    .line 891
+    .line 927
     .local v18, "cn":Landroid/content/ComponentName;
     if-eqz v18, :cond_17
 
@@ -13646,7 +13716,7 @@
 
     if-eqz v4, :cond_17
 
-    .line 892
+    .line 928
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
 
     invoke-virtual/range {v18 .. v18}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
@@ -13659,7 +13729,7 @@
 
     move-result v39
 
-    .line 893
+    .line 929
     .local v39, "validPkg":Z
     if-eqz v39, :cond_7
 
@@ -13677,25 +13747,25 @@
 
     const/16 v38, 0x1
 
-    .line 894
+    .line 930
     .local v38, "validComponent":Z
     :goto_3
     if-eqz v38, :cond_a
 
-    .line 895
+    .line 931
     if-eqz v33, :cond_3
 
-    .line 896
+    .line 932
     and-int/lit8 v4, v32, 0x20
 
     if-eqz v4, :cond_8
 
-    .line 897
+    .line 933
     new-instance v41, Landroid/content/ContentValues;
 
     invoke-direct/range {v41 .. v41}, Landroid/content/ContentValues;-><init>()V
 
-    .line 898
+    .line 934
     .local v41, "values":Landroid/content/ContentValues;
     const-string v4, "title"
 
@@ -13705,7 +13775,7 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 899
+    .line 935
     const-string v5, "icon"
 
     const/4 v4, 0x0
@@ -13716,7 +13786,7 @@
 
     invoke-virtual {v0, v5, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;[B)V
 
-    .line 900
+    .line 936
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v24
@@ -13725,7 +13795,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader;->updateItem(JLandroid/content/ContentValues;)V
 
-    .line 916
+    .line 952
     .end local v41    # "values":Landroid/content/ContentValues;
     :cond_2
     :goto_4
@@ -13737,10 +13807,10 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 917
+    .line 953
     const/16 v33, 0x0
 
-    .line 919
+    .line 955
     :cond_3
     move-object/from16 v0, p0
 
@@ -13762,7 +13832,7 @@
 
     if-eqz v4, :cond_24
 
-    .line 920
+    .line 956
     const/16 v21, 0x8
 
     move/from16 v11, v19
@@ -13771,7 +13841,7 @@
     .restart local v11    # "allowMissingTarget":Z
     move-object/from16 v7, v27
 
-    .line 1005
+    .line 1041
     .end local v27    # "intent":Landroid/content/Intent;
     .end local v38    # "validComponent":Z
     .end local v39    # "validPkg":Z
@@ -13795,12 +13865,12 @@
 
     const/4 v12, 0x1
 
-    .line 1006
+    .line 1042
     .local v12, "useLowResIcon":Z
     :goto_6
     if-eqz v33, :cond_1a
 
-    .line 1007
+    .line 1043
     invoke-static {}, Lcom/android/launcher3/common/compat/UserHandleCompat;->myUserHandle()Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     move-result-object v4
@@ -13813,7 +13883,7 @@
 
     if-eqz v4, :cond_19
 
-    .line 1008
+    .line 1044
     const-string v4, "HomeLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -13850,12 +13920,12 @@
 
     move-object/from16 v9, p2
 
-    .line 1009
+    .line 1045
     invoke-virtual/range {v4 .. v9}, Lcom/android/launcher3/home/HomeLoader;->getRestoredItemInfo(Landroid/database/Cursor;Landroid/content/ComponentName;Landroid/content/Intent;ILcom/android/launcher3/common/model/CursorInfo;)Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-result-object v26
 
-    .line 1010
+    .line 1046
     .local v26, "info":Lcom/android/launcher3/common/base/item/IconInfo;
     move-object/from16 v0, p0
 
@@ -13865,23 +13935,23 @@
 
     move-result-object v7
 
-    .line 1022
+    .line 1058
     :goto_7
     if-eqz v26, :cond_23
 
-    .line 1023
+    .line 1059
     move-wide/from16 v0, v24
 
     move-object/from16 v2, v26
 
     iput-wide v0, v2, Lcom/android/launcher3/common/base/item/IconInfo;->id:J
 
-    .line 1024
+    .line 1060
     move-object/from16 v0, v26
 
     iput-object v7, v0, Lcom/android/launcher3/common/base/item/IconInfo;->intent:Landroid/content/Intent;
 
-    .line 1025
+    .line 1061
     move/from16 v0, v20
 
     int-to-long v4, v0
@@ -13890,7 +13960,7 @@
 
     iput-wide v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->container:J
 
-    .line 1026
+    .line 1062
     move-object/from16 v0, p2
 
     iget v4, v0, Lcom/android/launcher3/common/model/CursorInfo;->screenIndex:I
@@ -13907,7 +13977,7 @@
 
     iput-wide v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->screenId:J
 
-    .line 1027
+    .line 1063
     move-object/from16 v0, p2
 
     iget v4, v0, Lcom/android/launcher3/common/model/CursorInfo;->cellXIndex:I
@@ -13922,7 +13992,7 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->cellX:I
 
-    .line 1028
+    .line 1064
     move-object/from16 v0, p2
 
     iget v4, v0, Lcom/android/launcher3/common/model/CursorInfo;->cellYIndex:I
@@ -13937,7 +14007,7 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->cellY:I
 
-    .line 1029
+    .line 1065
     move-object/from16 v0, p2
 
     iget v4, v0, Lcom/android/launcher3/common/model/CursorInfo;->rankIndex:I
@@ -13952,21 +14022,21 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->rank:I
 
-    .line 1030
+    .line 1066
     const/4 v4, 0x1
 
     move-object/from16 v0, v26
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->spanX:I
 
-    .line 1031
+    .line 1067
     const/4 v4, 0x1
 
     move-object/from16 v0, v26
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->spanY:I
 
-    .line 1032
+    .line 1068
     move-object/from16 v0, p2
 
     iget v4, v0, Lcom/android/launcher3/common/model/CursorInfo;->hiddenIndex:I
@@ -13981,7 +14051,7 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->hidden:I
 
-    .line 1034
+    .line 1070
     move-object/from16 v0, v26
 
     iget v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->itemType:I
@@ -13990,7 +14060,7 @@
 
     if-eq v4, v5, :cond_4
 
-    .line 1035
+    .line 1071
     move-object/from16 v0, v26
 
     iget-object v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->intent:Landroid/content/Intent;
@@ -14001,14 +14071,14 @@
 
     invoke-virtual {v4, v5, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;J)Landroid/content/Intent;
 
-    .line 1036
+    .line 1072
     move-object/from16 v0, v26
 
     iget-object v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->promisedIntent:Landroid/content/Intent;
 
     if-eqz v4, :cond_4
 
-    .line 1037
+    .line 1073
     move-object/from16 v0, v26
 
     iget-object v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->promisedIntent:Landroid/content/Intent;
@@ -14019,7 +14089,7 @@
 
     invoke-virtual {v4, v5, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;J)Landroid/content/Intent;
 
-    .line 1040
+    .line 1076
     :cond_4
     move-object/from16 v0, v26
 
@@ -14031,7 +14101,7 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
-    .line 1041
+    .line 1077
     sget-boolean v4, Lcom/android/launcher3/home/HomeLoader;->sIsSafeMode:Z
 
     if-eqz v4, :cond_5
@@ -14044,7 +14114,7 @@
 
     if-nez v4, :cond_5
 
-    .line 1042
+    .line 1078
     move-object/from16 v0, v26
 
     iget v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
@@ -14055,7 +14125,7 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
-    .line 1046
+    .line 1082
     :cond_5
     move-object/from16 v0, v26
 
@@ -14075,7 +14145,7 @@
 
     const-wide/16 v4, 0x1
 
-    .line 1047
+    .line 1083
     :goto_8
     move-object/from16 v0, p4
 
@@ -14097,7 +14167,7 @@
 
     if-nez v4, :cond_1d
 
-    .line 1049
+    .line 1085
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -14106,12 +14176,12 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1050
+    .line 1086
     const/16 v35, 0x0
 
     goto/16 :goto_1
 
-    .line 888
+    .line 924
     .end local v7    # "intent":Landroid/content/Intent;
     .end local v11    # "allowMissingTarget":Z
     .end local v12    # "useLowResIcon":Z
@@ -14135,7 +14205,7 @@
     .restart local v27    # "intent":Landroid/content/Intent;
     goto/16 :goto_2
 
-    .line 893
+    .line 929
     .restart local v18    # "cn":Landroid/content/ComponentName;
     .restart local v39    # "validPkg":Z
     :cond_7
@@ -14143,7 +14213,7 @@
 
     goto/16 :goto_3
 
-    .line 901
+    .line 937
     .restart local v38    # "validComponent":Z
     :cond_8
     and-int/lit8 v4, v32, 0x4
@@ -14156,14 +14226,14 @@
 
     if-ne v0, v4, :cond_2
 
-    .line 903
+    .line 939
     invoke-static/range {v27 .. v27}, Lcom/android/launcher3/Utilities;->isLauncherAppTarget(Landroid/content/Intent;)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 904
+    .line 940
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v4
@@ -14174,7 +14244,7 @@
 
     if-eqz v4, :cond_9
 
-    .line 905
+    .line 941
     const-string v4, "HomeLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -14199,7 +14269,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 906
+    .line 942
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -14208,7 +14278,7 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 907
+    .line 943
     const/16 v35, 0x0
 
     .end local v35    # "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -14218,7 +14288,7 @@
     .restart local v11    # "allowMissingTarget":Z
     goto/16 :goto_1
 
-    .line 909
+    .line 945
     .end local v11    # "allowMissingTarget":Z
     .restart local v19    # "allowMissingTarget":Z
     .restart local v35    # "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -14247,12 +14317,12 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 910
+    .line 946
     new-instance v41, Landroid/content/ContentValues;
 
     invoke-direct/range {v41 .. v41}, Landroid/content/ContentValues;-><init>()V
 
-    .line 911
+    .line 947
     .restart local v41    # "values":Landroid/content/ContentValues;
     const-string v4, "itemType"
 
@@ -14266,7 +14336,7 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 912
+    .line 948
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v24
@@ -14275,20 +14345,20 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader;->updateItem(JLandroid/content/ContentValues;)V
 
-    .line 913
+    .line 949
     const/16 v29, 0x0
 
     goto/16 :goto_4
 
-    .line 922
+    .line 958
     .end local v41    # "values":Landroid/content/ContentValues;
     :cond_a
     if-eqz v39, :cond_10
 
-    .line 923
+    .line 959
     const/16 v40, 0x0
 
-    .line 924
+    .line 960
     .local v40, "validPkgIntent":Landroid/content/Intent;
     and-int/lit8 v4, v32, 0x2
 
@@ -14298,7 +14368,7 @@
 
     if-eqz v4, :cond_c
 
-    .line 927
+    .line 963
     :cond_b
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sPackageManager:Landroid/content/pm/PackageManager;
 
@@ -14310,15 +14380,15 @@
 
     move-result-object v40
 
-    .line 928
+    .line 964
     if-eqz v40, :cond_c
 
-    .line 929
+    .line 965
     new-instance v41, Landroid/content/ContentValues;
 
     invoke-direct/range {v41 .. v41}, Landroid/content/ContentValues;-><init>()V
 
-    .line 930
+    .line 966
     .restart local v41    # "values":Landroid/content/ContentValues;
     const-string v4, "intent"
 
@@ -14334,7 +14404,7 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 931
+    .line 967
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v24
@@ -14343,12 +14413,12 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader;->updateItem(JLandroid/content/ContentValues;)V
 
-    .line 935
+    .line 971
     .end local v41    # "values":Landroid/content/ContentValues;
     :cond_c
     if-nez v40, :cond_e
 
-    .line 937
+    .line 973
     invoke-virtual/range {v18 .. v18}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v5
@@ -14361,7 +14431,7 @@
 
     iget v4, v0, Lcom/android/launcher3/common/model/CursorInfo;->screenIndex:I
 
-    .line 938
+    .line 974
     move-object/from16 v0, p1
 
     invoke-interface {v0, v4}, Landroid/database/Cursor;->getInt(I)I
@@ -14374,7 +14444,7 @@
 
     iget v4, v0, Lcom/android/launcher3/common/model/CursorInfo;->cellXIndex:I
 
-    .line 939
+    .line 975
     move-object/from16 v0, p1
 
     invoke-interface {v0, v4}, Landroid/database/Cursor;->getInt(I)I
@@ -14385,7 +14455,7 @@
 
     iget v4, v0, Lcom/android/launcher3/common/model/CursorInfo;->cellYIndex:I
 
-    .line 940
+    .line 976
     move-object/from16 v0, p1
 
     invoke-interface {v0, v4}, Landroid/database/Cursor;->getInt(I)I
@@ -14394,15 +14464,15 @@
 
     move-object/from16 v4, p0
 
-    .line 937
+    .line 973
     invoke-virtual/range {v4 .. v11}, Lcom/android/launcher3/home/HomeLoader;->backupStkPositionIfNecessary(Ljava/lang/String;JJII)V
 
-    .line 942
+    .line 978
     and-int/lit8 v4, v32, 0x20
 
     if-eqz v4, :cond_d
 
-    .line 943
+    .line 979
     const-string v4, "HomeLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -14436,12 +14506,12 @@
     :goto_9
     move/from16 v11, v19
 
-    .line 960
+    .line 996
     .end local v19    # "allowMissingTarget":Z
     .restart local v11    # "allowMissingTarget":Z
     goto/16 :goto_5
 
-    .line 945
+    .line 981
     .end local v7    # "intent":Landroid/content/Intent;
     .end local v11    # "allowMissingTarget":Z
     .restart local v19    # "allowMissingTarget":Z
@@ -14473,7 +14543,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/android/launcher3/Launcher;->addDumpLog(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 946
+    .line 982
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -14482,7 +14552,7 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 947
+    .line 983
     const/16 v35, 0x0
 
     .end local v35    # "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -14492,26 +14562,26 @@
     .restart local v11    # "allowMissingTarget":Z
     goto/16 :goto_1
 
-    .line 950
+    .line 986
     .end local v11    # "allowMissingTarget":Z
     .restart local v19    # "allowMissingTarget":Z
     .restart local v35    # "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_e
     move-object/from16 v7, v40
 
-    .line 951
+    .line 987
     .end local v27    # "intent":Landroid/content/Intent;
     .restart local v7    # "intent":Landroid/content/Intent;
     and-int/lit8 v4, v32, 0x20
 
     if-eqz v4, :cond_f
 
-    .line 952
+    .line 988
     new-instance v41, Landroid/content/ContentValues;
 
     invoke-direct/range {v41 .. v41}, Landroid/content/ContentValues;-><init>()V
 
-    .line 953
+    .line 989
     .restart local v41    # "values":Landroid/content/ContentValues;
     const-string v4, "title"
 
@@ -14521,7 +14591,7 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 954
+    .line 990
     const-string v5, "icon"
 
     const/4 v4, 0x0
@@ -14532,7 +14602,7 @@
 
     invoke-virtual {v0, v5, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;[B)V
 
-    .line 955
+    .line 991
     move-object/from16 v0, p0
 
     move-wide/from16 v1, v24
@@ -14541,7 +14611,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader;->updateItem(JLandroid/content/ContentValues;)V
 
-    .line 957
+    .line 993
     .end local v41    # "values":Landroid/content/ContentValues;
     :cond_f
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -14552,19 +14622,19 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 958
+    .line 994
     const/16 v33, 0x0
 
     goto :goto_9
 
-    .line 960
+    .line 996
     .end local v7    # "intent":Landroid/content/Intent;
     .end local v40    # "validPkgIntent":Landroid/content/Intent;
     .restart local v27    # "intent":Landroid/content/Intent;
     :cond_10
     if-eqz v33, :cond_13
 
-    .line 962
+    .line 998
     const-string v4, "HomeLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -14591,7 +14661,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/android/launcher3/Launcher;->addDumpLog(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 964
+    .line 1000
     and-int/lit8 v4, v32, 0x2
 
     if-nez v4, :cond_11
@@ -14600,7 +14670,7 @@
 
     if-eqz v4, :cond_24
 
-    .line 966
+    .line 1002
     :cond_11
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sInstallingPkgs:Ljava/util/HashMap;
 
@@ -14618,7 +14688,7 @@
 
     if-nez v4, :cond_24
 
-    .line 967
+    .line 1003
     :cond_12
     const-string v4, "HomeLoader"
 
@@ -14646,7 +14716,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/android/launcher3/Launcher;->addDumpLog(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 968
+    .line 1004
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -14655,7 +14725,7 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 969
+    .line 1005
     const/16 v35, 0x0
 
     .end local v35    # "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -14665,7 +14735,7 @@
     .restart local v11    # "allowMissingTarget":Z
     goto/16 :goto_1
 
-    .line 972
+    .line 1008
     .end local v11    # "allowMissingTarget":Z
     .restart local v19    # "allowMissingTarget":Z
     .restart local v35    # "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -14684,10 +14754,10 @@
 
     if-eqz v4, :cond_14
 
-    .line 974
+    .line 1010
     const/4 v11, 0x1
 
-    .line 975
+    .line 1011
     .end local v19    # "allowMissingTarget":Z
     .restart local v11    # "allowMissingTarget":Z
     const/16 v21, 0x2
@@ -14698,7 +14768,7 @@
     .restart local v7    # "intent":Landroid/content/Intent;
     goto/16 :goto_5
 
-    .line 976
+    .line 1012
     .end local v7    # "intent":Landroid/content/Intent;
     .end local v11    # "allowMissingTarget":Z
     .restart local v19    # "allowMissingTarget":Z
@@ -14710,7 +14780,7 @@
 
     if-nez v4, :cond_15
 
-    .line 979
+    .line 1015
     const-string v4, "HomeLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -14743,7 +14813,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/android/launcher3/Launcher;->addDumpLog(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 980
+    .line 1016
     invoke-virtual/range {v18 .. v18}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v4
@@ -14754,7 +14824,7 @@
 
     invoke-virtual {v0, v4, v1}, Lcom/android/launcher3/home/HomeLoader;->addAppToPendingPackages(Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
-    .line 981
+    .line 1017
     const/4 v11, 0x1
 
     .end local v19    # "allowMissingTarget":Z
@@ -14765,7 +14835,7 @@
     .restart local v7    # "intent":Landroid/content/Intent;
     goto/16 :goto_5
 
-    .line 983
+    .line 1019
     .end local v7    # "intent":Landroid/content/Intent;
     .end local v11    # "allowMissingTarget":Z
     .restart local v19    # "allowMissingTarget":Z
@@ -14787,7 +14857,7 @@
 
     const-string v4, "com.samsung.android.da.daagent"
 
-    .line 985
+    .line 1021
     invoke-virtual/range {v18 .. v18}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v5
@@ -14798,7 +14868,7 @@
 
     if-eqz v4, :cond_16
 
-    .line 986
+    .line 1022
     const-string v4, "HomeLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -14839,7 +14909,7 @@
     .restart local v7    # "intent":Landroid/content/Intent;
     goto/16 :goto_5
 
-    .line 990
+    .line 1026
     .end local v7    # "intent":Landroid/content/Intent;
     .end local v11    # "allowMissingTarget":Z
     .restart local v19    # "allowMissingTarget":Z
@@ -14871,7 +14941,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/android/launcher3/Launcher;->addDumpLog(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 991
+    .line 1027
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -14880,7 +14950,7 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 992
+    .line 1028
     const/16 v35, 0x0
 
     .end local v35    # "returnItem":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -14890,7 +14960,7 @@
     .restart local v11    # "allowMissingTarget":Z
     goto/16 :goto_1
 
-    .line 994
+    .line 1030
     .end local v11    # "allowMissingTarget":Z
     .end local v38    # "validComponent":Z
     .end local v39    # "validPkg":Z
@@ -14899,7 +14969,7 @@
     :cond_17
     if-nez v18, :cond_24
 
-    .line 996
+    .line 1032
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -14910,7 +14980,7 @@
     :try_end_1
     .catch Ljava/net/URISyntaxException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 997
+    .line 1033
     const/16 v33, 0x0
 
     move/from16 v11, v19
@@ -14923,7 +14993,7 @@
     .restart local v7    # "intent":Landroid/content/Intent;
     goto/16 :goto_5
 
-    .line 999
+    .line 1035
     .end local v7    # "intent":Landroid/content/Intent;
     .end local v11    # "allowMissingTarget":Z
     .end local v18    # "cn":Landroid/content/ComponentName;
@@ -14931,7 +15001,7 @@
     :catch_0
     move-exception v22
 
-    .line 1000
+    .line 1036
     .local v22, "e":Ljava/net/URISyntaxException;
     const-string v4, "HomeLoader"
 
@@ -14959,7 +15029,7 @@
 
     invoke-static {v4, v5, v6}, Lcom/android/launcher3/Launcher;->addDumpLog(Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 1001
+    .line 1037
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
@@ -14968,7 +15038,7 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1002
+    .line 1038
     const/16 v35, 0x0
 
     move/from16 v11, v19
@@ -14977,7 +15047,7 @@
     .restart local v11    # "allowMissingTarget":Z
     goto/16 :goto_1
 
-    .line 1005
+    .line 1041
     .end local v22    # "e":Ljava/net/URISyntaxException;
     .restart local v7    # "intent":Landroid/content/Intent;
     .restart local v18    # "cn":Landroid/content/ComponentName;
@@ -14986,7 +15056,7 @@
 
     goto/16 :goto_6
 
-    .line 1013
+    .line 1049
     .restart local v12    # "useLowResIcon":Z
     :cond_19
     invoke-static/range {v24 .. v25}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -14997,12 +15067,12 @@
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1014
+    .line 1050
     const/16 v35, 0x0
 
     goto/16 :goto_1
 
-    .line 1016
+    .line 1052
     :cond_1a
     if-nez v29, :cond_1b
 
@@ -15014,7 +15084,7 @@
 
     move-object/from16 v10, p2
 
-    .line 1017
+    .line 1053
     invoke-direct/range {v6 .. v12}, Lcom/android/launcher3/home/HomeLoader;->getAppShortcutInfo(Landroid/content/Intent;Lcom/android/launcher3/common/compat/UserHandleCompat;Landroid/database/Cursor;Lcom/android/launcher3/common/model/CursorInfo;ZZ)Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-result-object v26
@@ -15032,7 +15102,7 @@
 
     move-object/from16 v16, p2
 
-    .line 1019
+    .line 1055
     invoke-direct/range {v13 .. v18}, Lcom/android/launcher3/home/HomeLoader;->getShortcutInfo(Landroid/content/Intent;Landroid/database/Cursor;Lcom/android/launcher3/common/model/CursorInfo;Lcom/android/launcher3/common/compat/UserHandleCompat;Landroid/content/ComponentName;)Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-result-object v26
@@ -15040,25 +15110,25 @@
     .restart local v26    # "info":Lcom/android/launcher3/common/base/item/IconInfo;
     goto/16 :goto_7
 
-    .line 1046
+    .line 1082
     :cond_1c
     const-wide/16 v4, 0x0
 
     goto/16 :goto_8
 
-    .line 1053
+    .line 1089
     :cond_1d
     if-eqz v7, :cond_1e
 
-    .line 1054
+    .line 1090
     invoke-virtual/range {v26 .. v26}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v18
 
-    .line 1055
+    .line 1091
     if-eqz v18, :cond_1e
 
-    .line 1056
+    .line 1092
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
 
     new-instance v5, Lcom/android/launcher3/common/model/BadgeCache$CacheKey;
@@ -15077,31 +15147,31 @@
 
     iput v4, v0, Lcom/android/launcher3/common/base/item/IconInfo;->mBadgeCount:I
 
-    .line 1060
+    .line 1096
     :cond_1e
     if-eqz v33, :cond_1f
 
-    .line 1061
+    .line 1097
     invoke-virtual/range {v26 .. v26}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v18
 
-    .line 1062
+    .line 1098
     if-eqz v18, :cond_1f
 
-    .line 1063
+    .line 1099
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sInstallingPkgs:Ljava/util/HashMap;
 
     if-nez v4, :cond_21
 
     const/16 v31, 0x0
 
-    .line 1064
+    .line 1100
     .local v31, "progress":Ljava/lang/Integer;
     :goto_a
     if-eqz v31, :cond_22
 
-    .line 1065
+    .line 1101
     invoke-virtual/range {v31 .. v31}, Ljava/lang/Integer;->intValue()I
 
     move-result v4
@@ -15110,18 +15180,18 @@
 
     invoke-virtual {v0, v4}, Lcom/android/launcher3/common/base/item/IconInfo;->setInstallProgress(I)V
 
-    .line 1072
+    .line 1108
     .end local v31    # "progress":Ljava/lang/Integer;
     :cond_1f
     :goto_b
     packed-switch v20, :pswitch_data_0
 
-    .line 1081
+    .line 1117
     sget-object v5, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 1082
+    .line 1118
     :try_start_2
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -15135,23 +15205,23 @@
 
     check-cast v23, Lcom/android/launcher3/folder/FolderInfo;
 
-    .line 1083
+    .line 1119
     .local v23, "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     monitor-exit v5
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 1084
+    .line 1120
     if-eqz v23, :cond_20
 
-    .line 1085
+    .line 1121
     move-object/from16 v0, v23
 
     move-object/from16 v1, v26
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/folder/FolderInfo;->add(Lcom/android/launcher3/common/base/item/IconInfo;)V
 
-    .line 1089
+    .line 1125
     .end local v23    # "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     :cond_20
     :goto_c
@@ -15163,7 +15233,7 @@
 
     goto/16 :goto_1
 
-    .line 1063
+    .line 1099
     :cond_21
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sInstallingPkgs:Ljava/util/HashMap;
 
@@ -15181,7 +15251,7 @@
 
     goto :goto_a
 
-    .line 1067
+    .line 1103
     .restart local v31    # "progress":Ljava/lang/Integer;
     :cond_22
     move-object/from16 v0, v26
@@ -15196,7 +15266,7 @@
 
     goto :goto_b
 
-    .line 1075
+    .line 1111
     .end local v31    # "progress":Ljava/lang/Integer;
     :pswitch_0
     move-object/from16 v0, p0
@@ -15205,13 +15275,13 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeLoader;->addPagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 1076
+    .line 1112
     move-object/from16 v35, v26
 
-    .line 1077
+    .line 1113
     goto :goto_c
 
-    .line 1083
+    .line 1119
     :catchall_0
     move-exception v4
 
@@ -15222,7 +15292,7 @@
 
     throw v4
 
-    .line 1091
+    .line 1127
     :cond_23
     new-instance v4, Ljava/lang/RuntimeException;
 
@@ -15249,7 +15319,7 @@
     .restart local v7    # "intent":Landroid/content/Intent;
     goto/16 :goto_5
 
-    .line 1072
+    .line 1108
     :pswitch_data_0
     .packed-switch -0x65
         :pswitch_0
@@ -15261,12 +15331,12 @@
     .locals 4
 
     .prologue
-    .line 2308
+    .line 2348
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 2309
+    .line 2349
     :try_start_0
     const-string v0, "HomeLoader"
 
@@ -15292,7 +15362,7 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2310
+    .line 2350
     const-string v2, "HomeLoader"
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -15311,7 +15381,7 @@
 
     const-string v0, "task null "
 
-    .line 2311
+    .line 2351
     :goto_0
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -15321,10 +15391,10 @@
 
     move-result-object v0
 
-    .line 2310
+    .line 2350
     invoke-static {v2, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2312
+    .line 2352
     const-string v0, "HomeLoader"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -15353,7 +15423,7 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2313
+    .line 2353
     const-string v0, "HomeLoader"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -15382,19 +15452,19 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2314
+    .line 2354
     monitor-exit v1
 
-    .line 2315
+    .line 2355
     return-void
 
-    .line 2310
+    .line 2350
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mPageLoaderTask:Lcom/android/launcher3/common/model/DataLoader$PageLoaderTask;
 
     check-cast v0, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;
 
-    .line 2311
+    .line 2351
     invoke-virtual {v0}, Lcom/android/launcher3/home/HomeLoader$HomeLoaderTask;->isStopped()Z
 
     move-result v0
@@ -15405,7 +15475,7 @@
 
     goto :goto_0
 
-    .line 2314
+    .line 2354
     :catchall_0
     move-exception v0
 
@@ -15438,7 +15508,7 @@
     .end annotation
 
     .prologue
-    .line 2763
+    .line 2803
     .local p3, "allWorkspaceItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .local p4, "currentScreenItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .local p5, "otherScreenItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
@@ -15446,7 +15516,7 @@
 
     move-result-object v5
 
-    .line 2764
+    .line 2804
     .local v5, "iter":Ljava/util/Iterator;, "Ljava/util/Iterator<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_0
     :goto_0
@@ -15456,40 +15526,40 @@
 
     if-eqz v6, :cond_1
 
-    .line 2765
+    .line 2805
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2766
+    .line 2806
     .local v2, "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     if-nez v2, :cond_0
 
-    .line 2767
+    .line 2807
     invoke-interface {v5}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 2774
+    .line 2814
     .end local v2    # "i":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
     new-instance v4, Ljava/util/HashSet;
 
     invoke-direct {v4}, Ljava/util/HashSet;-><init>()V
 
-    .line 2775
+    .line 2815
     .local v4, "itemsOnScreen":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Long;>;"
-    new-instance v6, Lcom/android/launcher3/home/HomeLoader$30;
+    new-instance v6, Lcom/android/launcher3/home/HomeLoader$31;
 
-    invoke-direct {v6, p0}, Lcom/android/launcher3/home/HomeLoader$30;-><init>(Lcom/android/launcher3/home/HomeLoader;)V
+    invoke-direct {v6, p0}, Lcom/android/launcher3/home/HomeLoader$31;-><init>(Lcom/android/launcher3/home/HomeLoader;)V
 
     move-object/from16 v0, p3
 
     invoke-static {v0, v6}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 2781
+    .line 2821
     invoke-virtual/range {p3 .. p3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
@@ -15507,7 +15577,7 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2782
+    .line 2822
     .local v3, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -15517,19 +15587,19 @@
 
     if-nez v7, :cond_3
 
-    .line 2783
+    .line 2823
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->screenId:J
 
     cmp-long v7, v8, p1
 
     if-nez v7, :cond_2
 
-    .line 2784
+    .line 2824
     move-object/from16 v0, p4
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2785
+    .line 2825
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -15540,7 +15610,7 @@
 
     goto :goto_1
 
-    .line 2787
+    .line 2827
     :cond_2
     move-object/from16 v0, p5
 
@@ -15548,7 +15618,7 @@
 
     goto :goto_1
 
-    .line 2789
+    .line 2829
     :cond_3
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -15558,12 +15628,12 @@
 
     if-nez v7, :cond_4
 
-    .line 2790
+    .line 2830
     move-object/from16 v0, p4
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2791
+    .line 2831
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -15574,7 +15644,7 @@
 
     goto :goto_1
 
-    .line 2793
+    .line 2833
     :cond_4
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -15588,12 +15658,12 @@
 
     if-eqz v7, :cond_5
 
-    .line 2794
+    .line 2834
     move-object/from16 v0, p4
 
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2795
+    .line 2835
     iget-wide v8, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->id:J
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -15604,7 +15674,7 @@
 
     goto :goto_1
 
-    .line 2797
+    .line 2837
     :cond_5
     move-object/from16 v0, p5
 
@@ -15612,7 +15682,7 @@
 
     goto :goto_1
 
-    .line 2801
+    .line 2841
     .end local v3    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_6
     return-void
@@ -15623,12 +15693,12 @@
     .param p1, "folderId"    # Ljava/lang/Long;
 
     .prologue
-    .line 2302
+    .line 2342
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 2303
+    .line 2343
     :try_start_0
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -15646,7 +15716,7 @@
 
     return-object v0
 
-    .line 2304
+    .line 2344
     :catchall_0
     move-exception v0
 
@@ -15674,24 +15744,24 @@
 
     const-wide/16 v8, -0x65
 
-    .line 3362
+    .line 3402
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3363
+    .line 3403
     .local v0, "apps":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3364
+    .line 3404
     .local v1, "folderIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     sget-object v5, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 3365
+    .line 3405
     :try_start_0
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgFolders:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -15713,7 +15783,7 @@
 
     check-cast v2, Lcom/android/launcher3/folder/FolderInfo;
 
-    .line 3366
+    .line 3406
     .local v2, "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     iget-wide v6, v2, Lcom/android/launcher3/folder/FolderInfo;->container:J
 
@@ -15727,7 +15797,7 @@
 
     if-nez v6, :cond_0
 
-    .line 3368
+    .line 3408
     :cond_1
     iget-wide v6, v2, Lcom/android/launcher3/folder/FolderInfo;->id:J
 
@@ -15739,7 +15809,7 @@
 
     goto :goto_0
 
-    .line 3384
+    .line 3424
     .end local v2    # "folderInfo":Lcom/android/launcher3/folder/FolderInfo;
     :catchall_0
     move-exception v4
@@ -15750,7 +15820,7 @@
 
     throw v4
 
-    .line 3371
+    .line 3411
     :cond_2
     :try_start_1
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
@@ -15773,7 +15843,7 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3372
+    .line 3412
     .local v3, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget v6, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->itemType:I
 
@@ -15794,7 +15864,7 @@
     :cond_4
     iget-wide v6, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
-    .line 3375
+    .line 3415
     invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v6
@@ -15805,13 +15875,13 @@
 
     if-eqz v6, :cond_3
 
-    .line 3376
+    .line 3416
     :cond_5
     iget-object v6, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
     if-nez v6, :cond_6
 
-    .line 3377
+    .line 3417
     invoke-virtual {v3}, Lcom/android/launcher3/common/base/item/ItemInfo;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
@@ -15822,25 +15892,25 @@
 
     iput-object v6, v3, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 3378
+    .line 3418
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 3380
+    .line 3420
     :cond_6
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 3384
+    .line 3424
     .end local v3    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_7
     monitor-exit v5
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3385
+    .line 3425
     return-object v0
 .end method
 
@@ -15848,12 +15918,12 @@
     .locals 5
 
     .prologue
-    .line 3784
+    .line 3824
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 3785
+    .line 3825
     :try_start_0
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
@@ -15874,7 +15944,7 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3786
+    .line 3826
     .local v1, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v2, v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -15890,26 +15960,26 @@
 
     if-eqz v2, :cond_0
 
-    .line 3787
+    .line 3827
     check-cast v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
     .end local v1    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     monitor-exit v3
 
-    .line 3791
+    .line 3831
     :goto_0
     return-object v1
 
-    .line 3790
+    .line 3830
     :cond_1
     monitor-exit v3
 
-    .line 3791
+    .line 3831
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 3790
+    .line 3830
     :catchall_0
     move-exception v2
 
@@ -15924,7 +15994,7 @@
     .locals 1
 
     .prologue
-    .line 2939
+    .line 2979
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     invoke-virtual {v0}, Lcom/android/launcher3/common/model/FavoritesProvider;->loadHotseatCount()I
@@ -15947,13 +16017,13 @@
     .end annotation
 
     .prologue
-    .line 1815
+    .line 1851
     .local p1, "packagesToIgnore":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     sget-object v5, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v5
 
-    .line 1816
+    .line 1852
     :try_start_0
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -15975,20 +16045,20 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1817
+    .line 1853
     .local v1, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v6, v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v6, :cond_1
 
-    .line 1818
+    .line 1854
     move-object v0, v1
 
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-object v3, v0
 
-    .line 1819
+    .line 1855
     .local v3, "si":Lcom/android/launcher3/common/base/item/IconInfo;
     invoke-virtual {v3}, Lcom/android/launcher3/common/base/item/IconInfo;->isPromise()Z
 
@@ -16002,7 +16072,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 1820
+    .line 1856
     invoke-virtual {v3}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v6
@@ -16015,7 +16085,7 @@
 
     goto :goto_0
 
-    .line 1829
+    .line 1865
     .end local v1    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v3    # "si":Lcom/android/launcher3/common/base/item/IconInfo;
     :catchall_0
@@ -16027,7 +16097,7 @@
 
     throw v4
 
-    .line 1822
+    .line 1858
     .restart local v1    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
     :try_start_1
@@ -16035,14 +16105,14 @@
 
     if-eqz v6, :cond_0
 
-    .line 1823
+    .line 1859
     move-object v0, v1
 
     check-cast v0, Lcom/android/launcher3/home/LauncherAppWidgetInfo;
 
     move-object v2, v0
 
-    .line 1824
+    .line 1860
     .local v2, "lawi":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     const/4 v6, 0x2
 
@@ -16052,7 +16122,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 1825
+    .line 1861
     iget-object v6, v2, Lcom/android/launcher3/home/LauncherAppWidgetInfo;->providerName:Landroid/content/ComponentName;
 
     invoke-virtual {v6}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
@@ -16063,7 +16133,7 @@
 
     goto :goto_0
 
-    .line 1829
+    .line 1865
     .end local v1    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v2    # "lawi":Lcom/android/launcher3/home/LauncherAppWidgetInfo;
     :cond_2
@@ -16071,7 +16141,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1830
+    .line 1866
     return-void
 .end method
 
@@ -16080,12 +16150,12 @@
     .param p1, "key"    # J
 
     .prologue
-    .line 2661
+    .line 2701
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 2662
+    .line 2702
     :try_start_0
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -16099,7 +16169,7 @@
 
     return-object v0
 
-    .line 2663
+    .line 2703
     :catchall_0
     move-exception v0
 
@@ -16135,18 +16205,18 @@
     .prologue
     const-wide/16 v10, -0x66
 
-    .line 3389
+    .line 3429
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3390
+    .line 3430
     .local v0, "apps":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 3391
+    .line 3431
     :try_start_0
     sget-object v3, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -16168,7 +16238,7 @@
 
     check-cast v2, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3392
+    .line 3432
     .local v2, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     iget-wide v6, v2, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -16178,14 +16248,14 @@
 
     if-lez v5, :cond_1
 
-    .line 3394
+    .line 3434
     iget-wide v6, v2, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
     invoke-virtual {p0, v6, v7}, Lcom/android/launcher3/home/HomeLoader;->getItemById(J)Lcom/android/launcher3/common/base/item/ItemInfo;
 
     move-result-object v1
 
-    .line 3395
+    .line 3435
     .local v1, "folder":Lcom/android/launcher3/common/base/item/ItemInfo;
     if-eqz v1, :cond_0
 
@@ -16195,12 +16265,12 @@
 
     if-eqz v5, :cond_0
 
-    .line 3396
+    .line 3436
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 3405
+    .line 3445
     .end local v1    # "folder":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v2    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :catchall_0
@@ -16212,7 +16282,7 @@
 
     throw v3
 
-    .line 3399
+    .line 3439
     .restart local v2    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_1
     :try_start_1
@@ -16228,19 +16298,19 @@
 
     if-eq v5, v6, :cond_0
 
-    .line 3401
+    .line 3441
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 3405
+    .line 3445
     .end local v2    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     :cond_2
     monitor-exit v4
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3406
+    .line 3446
     return-object v0
 .end method
 
@@ -16248,7 +16318,7 @@
     .locals 1
 
     .prologue
-    .line 2918
+    .line 2958
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     return-object v0
@@ -16259,7 +16329,7 @@
     .param p1, "serialNumber"    # J
 
     .prologue
-    .line 3829
+    .line 3869
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mAllUsers:Landroid/util/LongSparseArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/util/LongSparseArray;->get(J)Ljava/lang/Object;
@@ -16275,7 +16345,7 @@
     .locals 2
 
     .prologue
-    .line 2922
+    .line 2962
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -16284,7 +16354,7 @@
 
     if-nez v0, :cond_0
 
-    .line 2923
+    .line 2963
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
@@ -16295,7 +16365,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 2926
+    .line 2966
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
@@ -16311,24 +16381,24 @@
     .param p1, "rank"    # I
 
     .prologue
-    .line 2930
+    .line 2970
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeLoader;->getWorkspaceScreenCount()I
 
     move-result v0
 
     if-ge v0, p1, :cond_0
 
-    .line 2931
+    .line 2971
     const-string v0, "HomeLoader"
 
     const-string v1, "wrong rank value for screen requested"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2932
+    .line 2972
     const-wide/16 v0, -0x1
 
-    .line 2935
+    .line 2975
     :goto_0
     return-wide v0
 
@@ -16362,11 +16432,11 @@
     .end annotation
 
     .prologue
-    .line 2497
+    .line 2537
     .local p1, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-direct {p0, p1, p2}, Lcom/android/launcher3/home/HomeLoader;->updateHideItems(Ljava/util/ArrayList;Z)V
 
-    .line 2498
+    .line 2538
     return-void
 .end method
 
@@ -16376,7 +16446,7 @@
     .param p2, "data"    # Landroid/content/Intent;
 
     .prologue
-    .line 2819
+    .line 2859
     const-string v20, "android.intent.extra.shortcut.INTENT"
 
     move-object/from16 v0, p2
@@ -16389,7 +16459,7 @@
 
     check-cast v10, Landroid/content/Intent;
 
-    .line 2820
+    .line 2860
     .local v10, "intent":Landroid/content/Intent;
     const-string v20, "android.intent.extra.shortcut.NAME"
 
@@ -16401,7 +16471,7 @@
 
     move-result-object v13
 
-    .line 2821
+    .line 2861
     .local v13, "name":Ljava/lang/String;
     const-string v20, "android.intent.extra.shortcut.ICON"
 
@@ -16413,7 +16483,7 @@
 
     move-result-object v4
 
-    .line 2823
+    .line 2863
     .local v4, "bitmap":Landroid/os/Parcelable;
     invoke-static/range {p1 .. p1}, Lcom/android/launcher3/util/DualAppUtils;->supportDualApp(Landroid/content/Context;)Z
 
@@ -16425,48 +16495,48 @@
 
     move-result-object v11
 
-    .line 2825
+    .line 2865
     .local v11, "intentUser":Lcom/android/launcher3/common/compat/UserHandleCompat;
     :goto_0
     if-nez v10, :cond_1
 
-    .line 2827
+    .line 2867
     const-string v20, "HomeLoader"
 
     const-string v21, "Can\'t construct ShorcutInfo with null intent"
 
     invoke-static/range {v20 .. v21}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2828
+    .line 2868
     const/4 v9, 0x0
 
-    .line 2901
+    .line 2941
     .end local v4    # "bitmap":Landroid/os/Parcelable;
     .end local v11    # "intentUser":Lcom/android/launcher3/common/compat/UserHandleCompat;
     :goto_1
     return-object v9
 
-    .line 2823
+    .line 2863
     .restart local v4    # "bitmap":Landroid/os/Parcelable;
     :cond_0
     const/4 v11, 0x0
 
     goto :goto_0
 
-    .line 2831
+    .line 2871
     .restart local v11    # "intentUser":Lcom/android/launcher3/common/compat/UserHandleCompat;
     :cond_1
     const/4 v7, 0x0
 
-    .line 2832
+    .line 2872
     .local v7, "icon":Landroid/graphics/Bitmap;
     const/4 v5, 0x0
 
-    .line 2833
+    .line 2873
     .local v5, "customIcon":Z
     const/4 v8, 0x0
 
-    .line 2835
+    .line 2875
     .local v8, "iconResource":Landroid/content/Intent$ShortcutIconResource;
     instance-of v0, v4, Landroid/graphics/Bitmap;
 
@@ -16474,7 +16544,7 @@
 
     if-eqz v20, :cond_8
 
-    .line 2836
+    .line 2876
     check-cast v4, Landroid/graphics/Bitmap;
 
     .end local v4    # "bitmap":Landroid/os/Parcelable;
@@ -16484,14 +16554,14 @@
 
     move-result-object v7
 
-    .line 2846
+    .line 2886
     :cond_2
     :goto_2
     new-instance v9, Lcom/android/launcher3/common/base/item/IconInfo;
 
     invoke-direct {v9}, Lcom/android/launcher3/common/base/item/IconInfo;-><init>()V
 
-    .line 2847
+    .line 2887
     .local v9, "info":Lcom/android/launcher3/common/base/item/IconInfo;
     const/16 v20, 0x1
 
@@ -16499,16 +16569,16 @@
 
     iput v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->itemType:I
 
-    .line 2849
+    .line 2889
     if-eqz v7, :cond_3
 
-    .line 2850
+    .line 2890
     invoke-virtual {v9, v7}, Lcom/android/launcher3/common/base/item/IconInfo;->setOriginalIcon(Landroid/graphics/Bitmap;)V
 
-    .line 2851
+    .line 2891
     const/4 v5, 0x1
 
-    .line 2854
+    .line 2894
     :cond_3
     if-eqz v11, :cond_9
 
@@ -16516,7 +16586,7 @@
     :goto_3
     iput-object v11, v9, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
-    .line 2855
+    .line 2895
     const-string v20, "HomeLoader"
 
     new-instance v21, Ljava/lang/StringBuilder;
@@ -16547,14 +16617,14 @@
 
     invoke-static/range {v20 .. v21}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2856
+    .line 2896
     invoke-static {v10}, Lcom/android/launcher3/common/view/IconView;->isKnoxShortcut(Landroid/content/Intent;)Z
 
     move-result v20
 
     if-eqz v20, :cond_4
 
-    .line 2857
+    .line 2897
     sget-object v20, Lcom/android/launcher3/home/HomeLoader;->sUserManager:Lcom/android/launcher3/common/compat/UserManagerCompat;
 
     iget-object v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
@@ -16565,7 +16635,7 @@
 
     move-result-wide v16
 
-    .line 2858
+    .line 2898
     .local v16, "userDefaultSerial":J
     const-string v20, "userid"
 
@@ -16589,7 +16659,7 @@
 
     move-wide/from16 v18, v0
 
-    .line 2861
+    .line 2901
     .local v18, "userSerial":J
     const-wide/16 v20, 0x64
 
@@ -16597,7 +16667,7 @@
 
     if-ltz v20, :cond_4
 
-    .line 2862
+    .line 2902
     sget-object v20, Lcom/android/launcher3/home/HomeLoader;->sUserManager:Lcom/android/launcher3/common/compat/UserManagerCompat;
 
     move-object/from16 v0, v20
@@ -16612,13 +16682,13 @@
 
     iput-object v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
-    .line 2866
+    .line 2906
     .end local v16    # "userDefaultSerial":J
     .end local v18    # "userSerial":J
     :cond_4
     if-nez v7, :cond_5
 
-    .line 2867
+    .line 2907
     sget-object v20, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     iget-object v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
@@ -16629,18 +16699,18 @@
 
     move-result-object v7
 
-    .line 2868
+    .line 2908
     const/16 v20, 0x1
 
     move/from16 v0, v20
 
     iput-boolean v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->usingFallbackIcon:Z
 
-    .line 2871
+    .line 2911
     :cond_5
     if-eqz v5, :cond_6
 
-    .line 2872
+    .line 2912
     invoke-virtual {v10}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v20
@@ -16653,7 +16723,7 @@
 
     move-result-object v7
 
-    .line 2873
+    .line 2913
     invoke-static/range {p1 .. p1}, Lcom/android/launcher3/util/DualAppUtils;->supportDualApp(Landroid/content/Context;)Z
 
     move-result v20
@@ -16670,7 +16740,7 @@
 
     if-eqz v20, :cond_6
 
-    .line 2874
+    .line 2914
     sget-object v20, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
     move-object/from16 v0, v20
@@ -16679,7 +16749,7 @@
 
     move-object/from16 v20, v0
 
-    .line 2875
+    .line 2915
     invoke-virtual/range {v20 .. v20}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getIconSize()I
 
     move-result v20
@@ -16692,7 +16762,7 @@
 
     move-result-object v21
 
-    .line 2874
+    .line 2914
     move-object/from16 v0, p1
 
     move/from16 v1, v20
@@ -16703,11 +16773,11 @@
 
     move-result-object v7
 
-    .line 2878
+    .line 2918
     :cond_6
     invoke-virtual {v9, v7}, Lcom/android/launcher3/common/base/item/IconInfo;->setIcon(Landroid/graphics/Bitmap;)V
 
-    .line 2880
+    .line 2920
     invoke-virtual {v10}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v20
@@ -16720,14 +16790,14 @@
 
     if-nez v20, :cond_7
 
-    .line 2881
+    .line 2921
     sget-object v20, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual/range {v20 .. v20}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v14
 
-    .line 2882
+    .line 2922
     .local v14, "pm":Landroid/content/pm/PackageManager;
     const/16 v20, 0x0
 
@@ -16737,25 +16807,25 @@
 
     move-result-object v15
 
-    .line 2884
+    .line 2924
     .local v15, "resolveInfo":Landroid/content/pm/ResolveInfo;
     if-eqz v15, :cond_7
 
-    .line 2886
+    .line 2926
     sget-object v20, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
-    .line 2887
+    .line 2927
     move-object/from16 v0, v20
 
     invoke-static {v15, v0}, Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;->fromResolveInfo(Landroid/content/pm/ResolveInfo;Landroid/content/Context;)Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
 
     move-result-object v12
 
-    .line 2888
+    .line 2928
     .local v12, "launcherInfo":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     if-eqz v12, :cond_7
 
-    .line 2889
+    .line 2929
     invoke-static {v12}, Lcom/android/launcher3/common/base/item/IconInfo;->initFlags(Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;)I
 
     move-result v20
@@ -16764,7 +16834,7 @@
 
     iput v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->flags:I
 
-    .line 2894
+    .line 2934
     .end local v12    # "launcherInfo":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     .end local v14    # "pm":Landroid/content/pm/PackageManager;
     .end local v15    # "resolveInfo":Landroid/content/pm/ResolveInfo;
@@ -16777,7 +16847,7 @@
 
     iput-object v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->componentName:Landroid/content/ComponentName;
 
-    .line 2895
+    .line 2935
     invoke-static {v13}, Lcom/android/launcher3/Utilities;->trim(Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v20
@@ -16786,7 +16856,7 @@
 
     iput-object v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
-    .line 2896
+    .line 2936
     sget-object v20, Lcom/android/launcher3/home/HomeLoader;->sUserManager:Lcom/android/launcher3/common/compat/UserManagerCompat;
 
     iget-object v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
@@ -16805,18 +16875,18 @@
 
     iput-object v0, v9, Lcom/android/launcher3/common/base/item/IconInfo;->contentDescription:Ljava/lang/CharSequence;
 
-    .line 2897
+    .line 2937
     iput-object v10, v9, Lcom/android/launcher3/common/base/item/IconInfo;->intent:Landroid/content/Intent;
 
-    .line 2898
+    .line 2938
     iput-boolean v5, v9, Lcom/android/launcher3/common/base/item/IconInfo;->customIcon:Z
 
-    .line 2899
+    .line 2939
     iput-object v8, v9, Lcom/android/launcher3/common/base/item/IconInfo;->iconResource:Landroid/content/Intent$ShortcutIconResource;
 
     goto/16 :goto_1
 
-    .line 2838
+    .line 2878
     .end local v9    # "info":Lcom/android/launcher3/common/base/item/IconInfo;
     .restart local v4    # "bitmap":Landroid/os/Parcelable;
     .restart local v11    # "intentUser":Lcom/android/launcher3/common/compat/UserHandleCompat;
@@ -16831,7 +16901,7 @@
 
     move-result-object v6
 
-    .line 2839
+    .line 2879
     .local v6, "extra":Landroid/os/Parcelable;
     instance-of v0, v6, Landroid/content/Intent$ShortcutIconResource;
 
@@ -16841,10 +16911,10 @@
 
     move-object v8, v6
 
-    .line 2840
+    .line 2880
     check-cast v8, Landroid/content/Intent$ShortcutIconResource;
 
-    .line 2841
+    .line 2881
     iget-object v0, v8, Landroid/content/Intent$ShortcutIconResource;->packageName:Ljava/lang/String;
 
     move-object/from16 v20, v0
@@ -16865,7 +16935,7 @@
 
     goto/16 :goto_2
 
-    .line 2854
+    .line 2894
     .end local v4    # "bitmap":Landroid/os/Parcelable;
     .end local v6    # "extra":Landroid/os/Parcelable;
     .restart local v9    # "info":Lcom/android/launcher3/common/base/item/IconInfo;
@@ -16886,14 +16956,14 @@
     .prologue
     const-wide/16 v4, -0x1
 
-    .line 3460
+    .line 3500
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     invoke-virtual {v1}, Lcom/android/launcher3/common/model/FavoritesProvider;->loadScreensFromDb()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 3462
+    .line 3502
     .local v0, "workspaceScreens":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -16901,25 +16971,25 @@
 
     if-ge v1, p2, :cond_1
 
-    .line 3463
+    .line 3503
     const-string v1, "HomeLoader"
 
     const-string v2, "insert page should be less than total workspace screen count."
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3487
+    .line 3527
     :cond_0
     :goto_0
     return-wide v4
 
-    .line 3467
+    .line 3507
     :cond_1
     cmp-long v1, p3, v4
 
     if-nez v1, :cond_2
 
-    .line 3468
+    .line 3508
     invoke-static {}, Lcom/android/launcher3/common/model/FavoritesProvider;->getInstance()Lcom/android/launcher3/common/model/FavoritesProvider;
 
     move-result-object v1
@@ -16928,7 +16998,7 @@
 
     move-result-wide v4
 
-    .line 3470
+    .line 3510
     .local v4, "screenId":J
     :goto_1
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -16937,32 +17007,32 @@
 
     invoke-virtual {v0, p2, v1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 3473
+    .line 3513
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     invoke-virtual {v1, p1, v0}, Lcom/android/launcher3/common/model/FavoritesUpdater;->updateScreenOrder(Landroid/content/Context;Ljava/util/ArrayList;)V
 
-    .line 3475
+    .line 3515
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 3476
+    .line 3516
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v3
 
-    .line 3477
+    .line 3517
     .local v3, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    new-instance v1, Lcom/android/launcher3/home/HomeLoader$35;
+    new-instance v1, Lcom/android/launcher3/home/HomeLoader$36;
 
     move-object v2, p0
 
     move v6, p2
 
-    invoke-direct/range {v1 .. v6}, Lcom/android/launcher3/home/HomeLoader$35;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;JI)V
+    invoke-direct/range {v1 .. v6}, Lcom/android/launcher3/home/HomeLoader$36;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;JI)V
 
     invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
@@ -16973,7 +17043,7 @@
     :cond_2
     move-wide v4, p3
 
-    .line 3468
+    .line 3508
     goto :goto_1
 .end method
 
@@ -16989,26 +17059,26 @@
 
     const/4 v7, 0x1
 
-    .line 3103
+    .line 3143
     const/4 v0, 0x0
 
-    .line 3104
+    .line 3144
     .local v0, "parser":Lcom/android/launcher3/home/HomeDefaultLayoutParser;
     if-eqz p1, :cond_0
 
-    .line 3105
+    .line 3145
     const-string v1, "HomeLoader"
 
     const-string v2, "use auto install layout for home"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3106
+    .line 3146
     invoke-virtual {p1}, Lcom/android/launcher3/common/model/AutoInstallsLayout;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    .line 3107
+    .line 3147
     .local v4, "res":Landroid/content/res/Resources;
     const-string v1, "default_workspace"
 
@@ -17022,11 +17092,11 @@
 
     move-result v5
 
-    .line 3109
+    .line 3149
     .local v5, "workspaceResId":I
     if-eqz v5, :cond_7
 
-    .line 3110
+    .line 3150
     new-instance v0, Lcom/android/launcher3/home/HomeDefaultLayoutParser;
 
     .end local v0    # "parser":Lcom/android/launcher3/home/HomeDefaultLayoutParser;
@@ -17042,7 +17112,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/android/launcher3/home/HomeDefaultLayoutParser;-><init>(Landroid/content/Context;Landroid/appwidget/AppWidgetHost;Lcom/android/launcher3/common/model/DefaultLayoutParser$LayoutParserCallback;Landroid/content/res/Resources;I)V
 
-    .line 3118
+    .line 3158
     .end local v4    # "res":Landroid/content/res/Resources;
     .end local v5    # "workspaceResId":I
     .restart local v0    # "parser":Lcom/android/launcher3/home/HomeDefaultLayoutParser;
@@ -17052,35 +17122,35 @@
 
     move v6, v7
 
-    .line 3119
+    .line 3159
     .local v6, "usingExternallyProvidedLayout":Z
     :goto_1
     if-nez v0, :cond_1
 
-    .line 3120
+    .line 3160
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getDefaultLayoutParser()Lcom/android/launcher3/home/HomeDefaultLayoutParser;
 
     move-result-object v0
 
-    .line 3125
+    .line 3165
     :cond_1
     if-nez p2, :cond_3
 
-    .line 3126
+    .line 3166
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getLauncherProvider()Lcom/android/launcher3/LauncherProvider;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lcom/android/launcher3/LauncherProvider;->createEmptyDB()V
 
-    .line 3129
+    .line 3169
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 3130
+    .line 3170
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v1
@@ -17091,12 +17161,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 3131
+    .line 3171
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     invoke-virtual {v1, v7, v7}, Lcom/android/launcher3/common/model/FavoritesProvider;->switchTable(IZ)Z
 
-    .line 3133
+    .line 3173
     :cond_2
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportEasyModeChange()Z
 
@@ -17104,7 +17174,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 3134
+    .line 3174
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v1
@@ -17115,12 +17185,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 3135
+    .line 3175
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     invoke-virtual {v1, v9, v7}, Lcom/android/launcher3/common/model/FavoritesProvider;->switchTable(IZ)Z
 
-    .line 3140
+    .line 3180
     :cond_3
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
@@ -17130,27 +17200,27 @@
 
     if-gtz v1, :cond_6
 
-    .line 3141
+    .line 3181
     if-eqz v6, :cond_6
 
-    .line 3143
+    .line 3183
     if-nez p2, :cond_5
 
-    .line 3144
+    .line 3184
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getLauncherProvider()Lcom/android/launcher3/LauncherProvider;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lcom/android/launcher3/LauncherProvider;->createEmptyDB()V
 
-    .line 3147
+    .line 3187
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportHomeModeChange()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 3148
+    .line 3188
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v1
@@ -17161,12 +17231,12 @@
 
     if-eqz v1, :cond_4
 
-    .line 3149
+    .line 3189
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     invoke-virtual {v1, v7, v7}, Lcom/android/launcher3/common/model/FavoritesProvider;->switchTable(IZ)Z
 
-    .line 3151
+    .line 3191
     :cond_4
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportEasyModeChange()Z
 
@@ -17174,7 +17244,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 3152
+    .line 3192
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v1
@@ -17185,12 +17255,12 @@
 
     if-eqz v1, :cond_5
 
-    .line 3153
+    .line 3193
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     invoke-virtual {v1, v9, v7}, Lcom/android/launcher3/common/model/FavoritesProvider;->switchTable(IZ)Z
 
-    .line 3156
+    .line 3196
     :cond_5
     sget-object v1, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
@@ -17200,11 +17270,11 @@
 
     invoke-virtual {v1, v2}, Lcom/android/launcher3/common/model/FavoritesProvider;->loadFavorites(Lcom/android/launcher3/common/model/DefaultLayoutParser;)I
 
-    .line 3159
+    .line 3199
     :cond_6
     return-void
 
-    .line 3113
+    .line 3153
     .end local v6    # "usingExternallyProvidedLayout":Z
     .restart local v4    # "res":Landroid/content/res/Resources;
     .restart local v5    # "workspaceResId":I
@@ -17221,7 +17291,7 @@
 
     move-result-object v2
 
-    .line 3114
+    .line 3154
     invoke-virtual {p1}, Lcom/android/launcher3/common/model/AutoInstallsLayout;->getPackageName()Ljava/lang/String;
 
     move-result-object v3
@@ -17234,7 +17304,7 @@
 
     move-result-object v2
 
-    .line 3113
+    .line 3153
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
@@ -17244,7 +17314,7 @@
     :cond_8
     move v6, v8
 
-    .line 3118
+    .line 3158
     goto/16 :goto_1
 .end method
 
@@ -17252,17 +17322,17 @@
     .locals 3
 
     .prologue
-    .line 3163
+    .line 3203
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportCustomerDialerChange()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3165
+    .line 3205
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->saveCustomerPageKey()V
 
-    .line 3167
+    .line 3207
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "skt_phone20_settings"
@@ -17277,10 +17347,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3168
+    .line 3208
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->changeDialerAppOnLoadDefaultLayout()V
 
-    .line 3172
+    .line 3212
     :cond_0
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportEasyModeChange()Z
 
@@ -17288,7 +17358,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 3173
+    .line 3213
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v0
@@ -17299,10 +17369,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 3174
+    .line 3214
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->addAppsButtonForEasy()V
 
-    .line 3176
+    .line 3216
     :cond_1
     return-void
 .end method
@@ -17324,31 +17394,31 @@
     .end annotation
 
     .prologue
-    .line 459
+    .line 495
     invoke-direct/range {p0 .. p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v25
 
-    .line 460
+    .line 496
     .local v25, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v25, :cond_1
 
-    .line 461
+    .line 497
     const-string v2, "HomeLoader"
 
     const-string v7, "loadPageItems running with no launcher"
 
     invoke-static {v2, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 462
+    .line 498
     const/4 v11, 0x0
 
-    .line 584
+    .line 620
     :cond_0
     :goto_0
     return-object v11
 
-    .line 465
+    .line 501
     :cond_1
     move-object/from16 v0, p0
 
@@ -17360,29 +17430,29 @@
 
     if-eqz v2, :cond_2
 
-    .line 466
+    .line 502
     const-string v2, "HomeLoader"
 
     const-string v7, "loadPageItems running with no screen : mBgOrderedScreens.isEmpty()"
 
     invoke-static {v2, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 467
+    .line 503
     const/4 v11, 0x0
 
     goto :goto_0
 
-    .line 470
+    .line 506
     :cond_2
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v30
 
-    .line 471
+    .line 507
     .local v30, "t":J
     if-gez p1, :cond_3
 
-    .line 472
+    .line 508
     invoke-interface/range {v25 .. v25}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->getCurrentWorkspaceScreen()I
 
     move-result v2
@@ -17401,7 +17471,7 @@
 
     move-result p1
 
-    .line 474
+    .line 510
     :cond_3
     if-ltz p1, :cond_4
 
@@ -17417,7 +17487,7 @@
 
     if-lt v0, v2, :cond_5
 
-    .line 475
+    .line 511
     :cond_4
     const-string v2, "HomeLoader"
 
@@ -17443,12 +17513,12 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 476
+    .line 512
     const/4 v11, 0x0
 
     goto :goto_0
 
-    .line 479
+    .line 515
     :cond_5
     move-object/from16 v0, p0
 
@@ -17466,19 +17536,19 @@
 
     move-result-wide v28
 
-    .line 480
+    .line 516
     .local v28, "screen":J
     new-instance v11, Ljava/util/ArrayList;
 
     invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
 
-    .line 481
+    .line 517
     .local v11, "pageItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v10, Ljava/util/HashMap;
 
     invoke-direct {v10}, Ljava/util/HashMap;-><init>()V
 
-    .line 482
+    .line 518
     .local v10, "needHandlingItems":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/Integer;Ljava/util/ArrayList<*>;>;"
     const/4 v2, 0x4
 
@@ -17492,7 +17562,7 @@
 
     invoke-virtual {v10, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 483
+    .line 519
     const/4 v2, 0x3
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -17505,7 +17575,7 @@
 
     invoke-virtual {v10, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 484
+    .line 520
     const/4 v2, 0x1
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -17518,7 +17588,7 @@
 
     invoke-virtual {v10, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 485
+    .line 521
     const/4 v2, 0x2
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -17531,24 +17601,24 @@
 
     invoke-virtual {v10, v2, v7}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 488
+    .line 524
     sget-object v3, Lcom/android/launcher3/common/model/LauncherSettings$Favorites;->CONTENT_URI:Landroid/net/Uri;
 
-    .line 489
+    .line 525
     .local v3, "contentUri":Landroid/net/Uri;
     const/4 v4, 0x0
 
-    .line 492
+    .line 528
     .local v4, "projection":[Ljava/lang/String;
     const/16 v23, 0x0
 
-    .line 493
+    .line 529
     .local v23, "isReArrangeHotseatData":Z
     new-instance v12, Lcom/android/launcher3/util/LongArrayMap;
 
     invoke-direct {v12}, Lcom/android/launcher3/util/LongArrayMap;-><init>()V
 
-    .line 494
+    .line 530
     .local v12, "occupied":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<[[Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     const-wide/16 v14, 0x0
 
@@ -17566,7 +17636,7 @@
 
     iget-object v7, v7, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
 
-    .line 495
+    .line 531
     invoke-virtual {v7}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getCellCountY()I
 
     move-result v7
@@ -17585,16 +17655,16 @@
 
     check-cast v2, [[Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 494
+    .line 530
     invoke-virtual {v12, v14, v15, v2}, Lcom/android/launcher3/util/LongArrayMap;->put(JLjava/lang/Object;)V
 
-    .line 496
+    .line 532
     if-nez p1, :cond_6
 
-    .line 497
+    .line 533
     const-string v5, "(screen=? AND container=?) OR (container=?)"
 
-    .line 499
+    .line 535
     .local v5, "selection":Ljava/lang/String;
     const/4 v2, 0x3
 
@@ -17622,18 +17692,18 @@
 
     const/16 v7, -0x65
 
-    .line 500
+    .line 536
     invoke-static {v7}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v7
 
     aput-object v7, v6, v2
 
-    .line 501
+    .line 537
     .local v6, "selectionArg":[Ljava/lang/String;
     const/16 v23, 0x1
 
-    .line 502
+    .line 538
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -17646,7 +17716,7 @@
 
     move-result v22
 
-    .line 503
+    .line 539
     .local v22, "hotseatCount":I
     const-wide/16 v14, 0x1
 
@@ -17668,7 +17738,7 @@
 
     invoke-virtual {v12, v14, v15, v2}, Lcom/android/launcher3/util/LongArrayMap;->put(JLjava/lang/Object;)V
 
-    .line 509
+    .line 545
     .end local v22    # "hotseatCount":I
     :goto_1
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
@@ -17679,23 +17749,23 @@
 
     move-result-object v8
 
-    .line 514
+    .line 550
     .local v8, "c":Landroid/database/Cursor;
     if-nez v8, :cond_7
 
-    .line 515
+    .line 551
     const/4 v11, 0x0
 
     goto/16 :goto_0
 
-    .line 505
+    .line 541
     .end local v5    # "selection":Ljava/lang/String;
     .end local v6    # "selectionArg":[Ljava/lang/String;
     .end local v8    # "c":Landroid/database/Cursor;
     :cond_6
     const-string v5, "screen=? AND container=?"
 
-    .line 506
+    .line 542
     .restart local v5    # "selection":Ljava/lang/String;
     const/4 v2, 0x2
 
@@ -17722,7 +17792,7 @@
     .restart local v6    # "selectionArg":[Ljava/lang/String;
     goto :goto_1
 
-    .line 518
+    .line 554
     .restart local v8    # "c":Landroid/database/Cursor;
     :cond_7
     new-instance v9, Lcom/android/launcher3/common/model/CursorInfo;
@@ -17734,7 +17804,7 @@
 
     move-object/from16 v13, p2
 
-    .line 521
+    .line 557
     :try_start_0
     invoke-direct/range {v7 .. v13}, Lcom/android/launcher3/home/HomeLoader;->createItems(Landroid/database/Cursor;Lcom/android/launcher3/common/model/CursorInfo;Ljava/util/HashMap;Ljava/util/ArrayList;Lcom/android/launcher3/util/LongArrayMap;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/util/LongArrayMap;
     :try_end_0
@@ -17742,7 +17812,7 @@
 
     move-result-object v21
 
-    .line 523
+    .line 559
     .local v21, "folders":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-interface {v8}, Landroid/database/Cursor;->isClosed()Z
 
@@ -17750,10 +17820,10 @@
 
     if-nez v2, :cond_8
 
-    .line 524
+    .line 560
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 527
+    .line 563
     :cond_8
     move-object/from16 v0, p0
 
@@ -17765,12 +17835,12 @@
 
     if-eqz v2, :cond_a
 
-    .line 528
+    .line 564
     const/4 v11, 0x0
 
     goto/16 :goto_0
 
-    .line 523
+    .line 559
     .end local v21    # "folders":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :catchall_0
     move-exception v2
@@ -17781,13 +17851,13 @@
 
     if-nez v7, :cond_9
 
-    .line 524
+    .line 560
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
     :cond_9
     throw v2
 
-    .line 531
+    .line 567
     .restart local v21    # "folders":Lcom/android/launcher3/util/LongArrayMap;, "Lcom/android/launcher3/util/LongArrayMap<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_a
     if-eqz v21, :cond_b
@@ -17798,7 +17868,7 @@
 
     if-lez v2, :cond_b
 
-    .line 532
+    .line 568
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -17831,7 +17901,7 @@
 
     move-result-object v5
 
-    .line 533
+    .line 569
     sget-object v13, Lcom/android/launcher3/home/HomeLoader;->sContentResolver:Landroid/content/ContentResolver;
 
     const/16 v17, 0x0
@@ -17848,30 +17918,30 @@
 
     move-result-object v8
 
-    .line 535
+    .line 571
     if-eqz v8, :cond_d
 
     move-object/from16 v7, p0
 
     move-object/from16 v13, p2
 
-    .line 537
+    .line 573
     :try_start_1
     invoke-direct/range {v7 .. v13}, Lcom/android/launcher3/home/HomeLoader;->createItems(Landroid/database/Cursor;Lcom/android/launcher3/common/model/CursorInfo;Ljava/util/HashMap;Ljava/util/ArrayList;Lcom/android/launcher3/util/LongArrayMap;Lcom/android/launcher3/common/model/DataLoader$DataLoaderState;)Lcom/android/launcher3/util/LongArrayMap;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 539
+    .line 575
     invoke-interface {v8}, Landroid/database/Cursor;->isClosed()Z
 
     move-result v2
 
     if-nez v2, :cond_b
 
-    .line 540
+    .line 576
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 548
+    .line 584
     :cond_b
     :goto_2
     move-object/from16 v0, p0
@@ -17884,12 +17954,12 @@
 
     if-eqz v2, :cond_e
 
-    .line 549
+    .line 585
     const/4 v11, 0x0
 
     goto/16 :goto_0
 
-    .line 539
+    .line 575
     :catchall_1
     move-exception v2
 
@@ -17899,13 +17969,13 @@
 
     if-nez v7, :cond_c
 
-    .line 540
+    .line 576
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
     :cond_c
     throw v2
 
-    .line 544
+    .line 580
     :cond_d
     const-string v2, "HomeLoader"
 
@@ -17935,28 +18005,28 @@
 
     goto :goto_2
 
-    .line 553
+    .line 589
     :cond_e
     move-object/from16 v0, p0
 
     invoke-direct {v0, v10, v11}, Lcom/android/launcher3/home/HomeLoader;->doHandlingItems(Ljava/util/HashMap;Ljava/util/ArrayList;)V
 
-    .line 556
+    .line 592
     move-object/from16 v0, p0
 
     move-object/from16 v1, v21
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/home/HomeLoader;->sortItemsInFolder(Lcom/android/launcher3/util/LongArrayMap;)V
 
-    .line 558
+    .line 594
     if-eqz v23, :cond_f
 
-    .line 559
+    .line 595
     move-object/from16 v0, p0
 
     invoke-direct {v0, v11}, Lcom/android/launcher3/home/HomeLoader;->reArrangeHotseatData(Ljava/util/ArrayList;)V
 
-    .line 563
+    .line 599
     :cond_f
     const-string v2, "HomeLoader"
 
@@ -17992,14 +18062,14 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 564
+    .line 600
     const-string v2, "HomeLoader"
 
     const-string v7, "workspace layout: "
 
     invoke-static {v2, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 565
+    .line 601
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
     iget-object v2, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
@@ -18008,7 +18078,7 @@
 
     move-result v19
 
-    .line 566
+    .line 602
     .local v19, "countX":I
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
@@ -18018,7 +18088,7 @@
 
     move-result v20
 
-    .line 568
+    .line 604
     .local v20, "countY":I
     const/16 v32, 0x0
 
@@ -18030,10 +18100,10 @@
 
     if-ge v0, v1, :cond_13
 
-    .line 569
+    .line 605
     const-string v24, ""
 
-    .line 570
+    .line 606
     .local v24, "line":Ljava/lang/String;
     const-wide/16 v14, 0x0
 
@@ -18043,7 +18113,7 @@
 
     check-cast v26, [[Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 571
+    .line 607
     .local v26, "page":[[Lcom/android/launcher3/common/base/item/ItemInfo;
     const/16 v27, 0x0
 
@@ -18055,7 +18125,7 @@
 
     if-ge v0, v1, :cond_12
 
-    .line 572
+    .line 608
     move-object/from16 v0, v26
 
     array-length v2, v0
@@ -18072,7 +18142,7 @@
 
     if-ge v0, v2, :cond_11
 
-    .line 573
+    .line 609
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -18100,19 +18170,19 @@
 
     move-result-object v24
 
-    .line 571
+    .line 607
     :goto_6
     add-int/lit8 v27, v27, 0x1
 
     goto :goto_4
 
-    .line 573
+    .line 609
     :cond_10
     const-string v2, "."
 
     goto :goto_5
 
-    .line 575
+    .line 611
     :cond_11
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -18136,7 +18206,7 @@
 
     goto :goto_6
 
-    .line 578
+    .line 614
     :cond_12
     const-string v2, "HomeLoader"
 
@@ -18168,19 +18238,19 @@
 
     invoke-static {v2, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 568
+    .line 604
     add-int/lit8 v32, v32, 0x1
 
     goto :goto_3
 
-    .line 581
+    .line 617
     .end local v24    # "line":Ljava/lang/String;
     .end local v26    # "page":[[Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v27    # "x":I
     :cond_13
     if-ltz p1, :cond_0
 
-    .line 582
+    .line 618
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/android/launcher3/home/HomeLoader;->mIsPageLoaded:[Z
@@ -18197,12 +18267,12 @@
     .param p1, "callbacks"    # Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     .prologue
-    .line 446
+    .line 482
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 447
+    .line 483
     :try_start_0
     new-instance v0, Ljava/lang/ref/WeakReference;
 
@@ -18210,13 +18280,13 @@
 
     iput-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mCallbacks:Ljava/lang/ref/WeakReference;
 
-    .line 448
+    .line 484
     monitor-exit v1
 
-    .line 449
+    .line 485
     return-void
 
-    .line 448
+    .line 484
     :catchall_0
     move-exception v0
 
@@ -18232,33 +18302,33 @@
     .param p1, "appsButton"    # Lcom/android/launcher3/common/base/item/IconInfo;
 
     .prologue
-    .line 1833
+    .line 1869
     if-nez p1, :cond_0
 
-    .line 1834
+    .line 1870
     const-string v2, "HomeLoader"
 
     const-string v3, "removeAppsButton but apps button is null!!"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1852
+    .line 1888
     :goto_0
     return-void
 
-    .line 1837
+    .line 1873
     :cond_0
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 1838
+    .line 1874
     .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     new-instance v1, Lcom/android/launcher3/home/HomeLoader$14;
 
     invoke-direct {v1, p0, p1, v0}, Lcom/android/launcher3/home/HomeLoader$14;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/base/item/IconInfo;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;)V
 
-    .line 1851
+    .line 1887
     .local v1, "r":Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -18290,24 +18360,24 @@
     .end annotation
 
     .prologue
-    .line 2621
+    .line 2661
     .local p1, "removedPackageNames":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     .local p2, "removedApps":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     new-instance v4, Ljava/util/HashSet;
 
     invoke-direct {v4}, Ljava/util/HashSet;-><init>()V
 
-    .line 2622
+    .line 2662
     .local v4, "removedComponents":Ljava/util/HashSet;, "Ljava/util/HashSet<Landroid/content/ComponentName;>;"
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2623
+    .line 2663
     .local v10, "removedAppsInfos":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     if-nez p4, :cond_1
 
-    .line 2625
+    .line 2665
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -18325,7 +18395,7 @@
 
     check-cast v9, Ljava/lang/String;
 
-    .line 2626
+    .line 2666
     .local v9, "pn":Ljava/lang/String;
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
 
@@ -18333,7 +18403,7 @@
 
     goto :goto_0
 
-    .line 2629
+    .line 2669
     .end local v9    # "pn":Ljava/lang/String;
     :cond_0
     invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -18353,7 +18423,7 @@
 
     check-cast v7, Lcom/android/launcher3/common/base/item/IconInfo;
 
-    .line 2630
+    .line 2670
     .local v7, "a":Lcom/android/launcher3/common/base/item/IconInfo;
     iget-object v1, v7, Lcom/android/launcher3/common/base/item/IconInfo;->componentName:Landroid/content/ComponentName;
 
@@ -18363,23 +18433,23 @@
 
     move-result-object v8
 
-    .line 2631
+    .line 2671
     .local v8, "infos":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     invoke-virtual {v1, v8}, Lcom/android/launcher3/common/model/FavoritesUpdater;->deleteItemsFromDatabase(Ljava/util/ArrayList;)V
 
-    .line 2632
+    .line 2672
     iget-object v1, v7, Lcom/android/launcher3/common/base/item/IconInfo;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v4, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 2633
+    .line 2673
     invoke-virtual {v10, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 2638
+    .line 2678
     .end local v7    # "a":Lcom/android/launcher3/common/base/item/IconInfo;
     .end local v8    # "infos":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_1
@@ -18387,31 +18457,31 @@
 
     invoke-static {v0, p1, p3}, Lcom/android/launcher3/home/ExternalRequestQueue;->removeFromExternalRequestQueue(Landroid/content/Context;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
-    .line 2640
+    .line 2680
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v2
 
-    .line 2641
+    .line 2681
     .local v2, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v2, :cond_2
 
-    .line 2642
+    .line 2682
     const-string v0, "HomeLoader"
 
     const-string v1, "removePackagesAndComponents Nobody to tell about the new app.  Launcher is probably loading."
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2657
+    .line 2697
     :goto_2
     return-object v10
 
-    .line 2647
+    .line 2687
     :cond_2
     sget-object v11, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
-    new-instance v0, Lcom/android/launcher3/home/HomeLoader$25;
+    new-instance v0, Lcom/android/launcher3/home/HomeLoader$26;
 
     move-object v1, p0
 
@@ -18421,7 +18491,7 @@
 
     move/from16 v6, p4
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/launcher3/home/HomeLoader$25;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Ljava/util/HashSet;Lcom/android/launcher3/common/compat/UserHandleCompat;I)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/launcher3/home/HomeLoader$26;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Ljava/util/HashSet;Lcom/android/launcher3/common/compat/UserHandleCompat;I)V
 
     invoke-virtual {v11, v0}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
@@ -18433,7 +18503,7 @@
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 3018
+    .line 3058
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -18442,24 +18512,24 @@
 
     if-eqz v1, :cond_1
 
-    .line 3019
+    .line 3059
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 3020
+    .line 3060
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lcom/android/launcher3/util/logging/SALogging;->updateLogValuesForHomeItems()V
 
-    .line 3030
+    .line 3070
     :cond_0
     :goto_0
     return-void
 
-    .line 3022
+    .line 3062
     :cond_1
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
@@ -18484,7 +18554,7 @@
 
     check-cast v0, Ljava/lang/Long;
 
-    .line 3023
+    .line 3063
     .local v0, "screenId":Ljava/lang/Long;
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
@@ -18500,7 +18570,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 3024
+    .line 3064
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -18511,7 +18581,7 @@
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 3025
+    .line 3065
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v1
@@ -18525,7 +18595,7 @@
     .locals 3
 
     .prologue
-    .line 3079
+    .line 3119
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getAllItemInHome()Ljava/util/ArrayList;
 
     move-result-object v2
@@ -18534,7 +18604,7 @@
 
     move-result-object v1
 
-    .line 3081
+    .line 3121
     .local v1, "removeItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -18542,25 +18612,25 @@
 
     if-nez v2, :cond_0
 
-    .line 3082
+    .line 3122
     iget-object v2, p0, Lcom/android/launcher3/home/HomeLoader;->mFavoritesUpdater:Lcom/android/launcher3/common/model/FavoritesUpdater;
 
     invoke-virtual {v2, v1}, Lcom/android/launcher3/common/model/FavoritesUpdater;->deleteItemsFromDatabase(Ljava/util/ArrayList;)V
 
-    .line 3084
+    .line 3124
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 3085
+    .line 3125
     .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    new-instance v2, Lcom/android/launcher3/home/HomeLoader$32;
+    new-instance v2, Lcom/android/launcher3/home/HomeLoader$33;
 
-    invoke-direct {v2, p0, v0, v1}, Lcom/android/launcher3/home/HomeLoader$32;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
+    invoke-direct {v2, p0, v0, v1}, Lcom/android/launcher3/home/HomeLoader$33;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
 
     invoke-virtual {p0, v2}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 3094
+    .line 3134
     .end local v0    # "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     :cond_0
     return-void
@@ -18579,23 +18649,23 @@
     .end annotation
 
     .prologue
-    .line 2111
+    .line 2151
     .local p1, "workspaceApps":Ljava/util/ArrayList;, "Ljava/util/ArrayList<+Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 2113
+    .line 2153
     .local v0, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    new-instance v1, Lcom/android/launcher3/home/HomeLoader$19;
+    new-instance v1, Lcom/android/launcher3/home/HomeLoader$20;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/android/launcher3/home/HomeLoader$19;-><init>(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;)V
+    invoke-direct {v1, p0, p1, v0}, Lcom/android/launcher3/home/HomeLoader$20;-><init>(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;)V
 
-    .line 2139
+    .line 2179
     .local v1, "r":Ljava/lang/Runnable;
     invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
-    .line 2140
+    .line 2180
     return-void
 .end method
 
@@ -18608,12 +18678,12 @@
     .param p5, "duplicate"    # Z
 
     .prologue
-    .line 2144
+    .line 2184
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v8
 
-    .line 2145
+    .line 2185
     .local v8, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -18623,9 +18693,9 @@
 
     move-result v5
 
-    .line 2147
+    .line 2187
     .local v5, "isHomeOnlyMode":Z
-    new-instance v0, Lcom/android/launcher3/home/HomeLoader$20;
+    new-instance v0, Lcom/android/launcher3/home/HomeLoader$21;
 
     move-object v1, p0
 
@@ -18639,13 +18709,13 @@
 
     move v7, p5
 
-    invoke-direct/range {v0 .. v8}, Lcom/android/launcher3/home/HomeLoader$20;-><init>(Lcom/android/launcher3/home/HomeLoader;ZLjava/lang/String;IZLandroid/content/Intent;ZLcom/android/launcher3/home/HomeLoader$HomeCallbacks;)V
+    invoke-direct/range {v0 .. v8}, Lcom/android/launcher3/home/HomeLoader$21;-><init>(Lcom/android/launcher3/home/HomeLoader;ZLjava/lang/String;IZLandroid/content/Intent;ZLcom/android/launcher3/home/HomeLoader$HomeCallbacks;)V
 
-    .line 2195
+    .line 2235
     .local v0, "r":Ljava/lang/Runnable;
     invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
-    .line 2196
+    .line 2236
     return-void
 .end method
 
@@ -18662,18 +18732,18 @@
     .end annotation
 
     .prologue
-    .line 3073
+    .line 3113
     .local p1, "screen":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 3074
+    .line 3114
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 3075
+    .line 3115
     return-void
 .end method
 
@@ -18682,25 +18752,25 @@
     .param p1, "installInfo"    # Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;
 
     .prologue
-    .line 1677
+    .line 1713
     if-eqz p1, :cond_0
 
     iget-object v1, p1, Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;->packageName:Ljava/lang/String;
 
     if-nez v1, :cond_1
 
-    .line 1730
+    .line 1766
     :cond_0
     :goto_0
     return-void
 
-    .line 1681
+    .line 1717
     :cond_1
     new-instance v0, Lcom/android/launcher3/home/HomeLoader$11;
 
     invoke-direct {v0, p0, p1}, Lcom/android/launcher3/home/HomeLoader$11;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/common/compat/PackageInstallerCompat$PackageInstallInfo;)V
 
-    .line 1729
+    .line 1765
     .local v0, "updateRunnable":Ljava/lang/Runnable;
     invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -18714,13 +18784,13 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 1248
+    .line 1284
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeLoader;->unbindItemsOnMainThread()V
 
-    .line 1250
+    .line 1286
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeLoader;->clearSBgDataStructures()V
 
-    .line 1252
+    .line 1288
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
     sget-object v2, Lcom/android/launcher3/home/HomeLoader;->sFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
@@ -18731,7 +18801,7 @@
 
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1253
+    .line 1289
     iget-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mBgOrderedScreens:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -18742,10 +18812,10 @@
 
     iput-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mIsPageLoaded:[Z
 
-    .line 1254
+    .line 1290
     iput-boolean v1, p0, Lcom/android/launcher3/home/HomeLoader;->mIsFirstBind:Z
 
-    .line 1256
+    .line 1292
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     const/4 v2, 0x0
@@ -18767,7 +18837,7 @@
     :goto_0
     iput-boolean v0, p0, Lcom/android/launcher3/home/HomeLoader;->mIsSdCardReady:Z
 
-    .line 1257
+    .line 1293
     sget-object v0, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/launcher3/Utilities;->isExistSdCard(Landroid/content/Context;)Z
@@ -18781,10 +18851,10 @@
     :cond_0
     iput-boolean v1, p0, Lcom/android/launcher3/home/HomeLoader;->mIsSdCardReady:Z
 
-    .line 1258
+    .line 1294
     return-void
 
-    .line 1256
+    .line 1292
     :cond_1
     const/4 v0, 0x0
 
@@ -18805,11 +18875,11 @@
     .end annotation
 
     .prologue
-    .line 2493
+    .line 2533
     .local p1, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-direct {p0, p1, p2}, Lcom/android/launcher3/home/HomeLoader;->updateAndBindItems(Ljava/util/ArrayList;Z)V
 
-    .line 2494
+    .line 2534
     return-void
 .end method
 
@@ -18817,7 +18887,7 @@
     .locals 8
 
     .prologue
-    .line 3974
+    .line 4017
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeLoader;->getAllAppItemInHome()Ljava/util/ArrayList;
 
     move-result-object v5
@@ -18826,7 +18896,7 @@
 
     move-result-object v4
 
-    .line 3975
+    .line 4018
     .local v4, "needUpdateItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -18838,16 +18908,16 @@
 
     if-eqz v5, :cond_0
 
-    .line 3976
+    .line 4019
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeLoader;->getAppsButton()Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-result-object v0
 
-    .line 3977
+    .line 4020
     .local v0, "apps":Lcom/android/launcher3/common/base/item/IconInfo;
     if-eqz v0, :cond_0
 
-    .line 3978
+    .line 4021
     sget-object v5, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -18862,44 +18932,44 @@
 
     iput-object v5, v0, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
-    .line 3979
+    .line 4022
     invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 3983
+    .line 4026
     .end local v0    # "apps":Lcom/android/launcher3/common/base/item/IconInfo;
     :cond_0
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v1
 
-    .line 3984
+    .line 4027
     .local v1, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v1, :cond_1
 
-    .line 3985
+    .line 4028
     const-string v5, "HomeLoader"
 
     const-string v6, "titleUpdate. Nobody to tell about the new app. Launcher is probably loading."
 
     invoke-static {v5, v6}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4005
+    .line 4048
     :goto_0
     return-void
 
-    .line 3990
+    .line 4033
     :cond_1
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3991
+    .line 4034
     .local v2, "finalUpdateItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     sget-object v6, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v6
 
-    .line 3992
+    .line 4035
     :try_start_0
     invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -18918,7 +18988,7 @@
 
     check-cast v3, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3993
+    .line 4036
     .local v3, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     check-cast v3, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -18927,7 +18997,7 @@
 
     goto :goto_1
 
-    .line 3995
+    .line 4038
     :catchall_0
     move-exception v5
 
@@ -18943,10 +19013,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3996
-    new-instance v5, Lcom/android/launcher3/home/HomeLoader$38;
+    .line 4039
+    new-instance v5, Lcom/android/launcher3/home/HomeLoader$39;
 
-    invoke-direct {v5, p0, v1, v2}, Lcom/android/launcher3/home/HomeLoader$38;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
+    invoke-direct {v5, p0, v1, v2}, Lcom/android/launcher3/home/HomeLoader$39;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
 
     invoke-virtual {p0, v5}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
@@ -18957,12 +19027,12 @@
     .locals 3
 
     .prologue
-    .line 452
+    .line 488
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 453
+    .line 489
     :try_start_0
     new-instance v0, Ljava/lang/ref/WeakReference;
 
@@ -18972,13 +19042,13 @@
 
     iput-object v0, p0, Lcom/android/launcher3/home/HomeLoader;->mCallbacks:Ljava/lang/ref/WeakReference;
 
-    .line 454
+    .line 490
     monitor-exit v1
 
-    .line 455
+    .line 491
     return-void
 
-    .line 454
+    .line 490
     :catchall_0
     move-exception v0
 
@@ -18993,24 +19063,24 @@
     .locals 6
 
     .prologue
-    .line 1606
+    .line 1642
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1607
+    .line 1643
     .local v2, "tmpItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     sget-object v4, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 1608
+    .line 1644
     :try_start_0
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 1609
+    .line 1645
     iget-object v3, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/util/HashMap;->values()Ljava/util/Collection;
@@ -19034,13 +19104,13 @@
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 1610
+    .line 1646
     .local v0, "infos":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     goto :goto_0
 
-    .line 1611
+    .line 1647
     .end local v0    # "infos":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :catchall_0
     move-exception v3
@@ -19057,16 +19127,16 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1612
+    .line 1648
     new-instance v1, Lcom/android/launcher3/home/HomeLoader$7;
 
     invoke-direct {v1, p0, v2}, Lcom/android/launcher3/home/HomeLoader$7;-><init>(Lcom/android/launcher3/home/HomeLoader;Ljava/util/ArrayList;)V
 
-    .line 1620
+    .line 1656
     .local v1, "r":Ljava/lang/Runnable;
     invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 1621
+    .line 1657
     return-void
 .end method
 
@@ -19076,20 +19146,20 @@
     .param p3, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 4008
-    new-instance v0, Lcom/android/launcher3/home/HomeLoader$39;
+    .line 4051
+    new-instance v0, Lcom/android/launcher3/home/HomeLoader$40;
 
-    invoke-direct {v0, p0, p1, p2, p3}, Lcom/android/launcher3/home/HomeLoader$39;-><init>(Lcom/android/launcher3/home/HomeLoader;JLandroid/content/Intent;)V
+    invoke-direct {v0, p0, p1, p2, p3}, Lcom/android/launcher3/home/HomeLoader$40;-><init>(Lcom/android/launcher3/home/HomeLoader;JLandroid/content/Intent;)V
 
-    .line 4022
+    .line 4065
     .local v0, "r":Ljava/lang/Runnable;
-    new-instance v1, Lcom/android/launcher3/home/HomeLoader$40;
+    new-instance v1, Lcom/android/launcher3/home/HomeLoader$41;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/launcher3/home/HomeLoader$40;-><init>(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/launcher3/home/HomeLoader$41;-><init>(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/Runnable;)V
 
     invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 4036
+    .line 4079
     return-void
 .end method
 
@@ -19100,14 +19170,14 @@
     .param p3, "item"    # Lcom/android/launcher3/common/base/item/IconInfo;
 
     .prologue
-    .line 3425
+    .line 3465
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v2
 
-    .line 3426
+    .line 3466
     .local v2, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    new-instance v0, Lcom/android/launcher3/home/HomeLoader$34;
+    new-instance v0, Lcom/android/launcher3/home/HomeLoader$35;
 
     move-object v1, p0
 
@@ -19117,13 +19187,13 @@
 
     move-object v5, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/launcher3/home/HomeLoader$34;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;ZLcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/item/IconInfo;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/launcher3/home/HomeLoader$35;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;ZLcom/android/launcher3/folder/FolderInfo;Lcom/android/launcher3/common/base/item/IconInfo;)V
 
-    .line 3435
+    .line 3475
     .local v0, "r":Ljava/lang/Runnable;
     invoke-virtual {p0, v0}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 3436
+    .line 3476
     return-void
 .end method
 
@@ -19132,22 +19202,22 @@
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 3410
+    .line 3450
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 3411
+    .line 3451
     .local v0, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    new-instance v1, Lcom/android/launcher3/home/HomeLoader$33;
+    new-instance v1, Lcom/android/launcher3/home/HomeLoader$34;
 
-    invoke-direct {v1, p0, v0, p1}, Lcom/android/launcher3/home/HomeLoader$33;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/base/item/ItemInfo;)V
+    invoke-direct {v1, p0, v0, p1}, Lcom/android/launcher3/home/HomeLoader$34;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 3420
+    .line 3460
     .local v1, "r":Ljava/lang/Runnable;
     invoke-virtual {p0, v1}, Lcom/android/launcher3/home/HomeLoader;->runOnMainThread(Ljava/lang/Runnable;)V
 
-    .line 3421
+    .line 3461
     return-void
 .end method
 
@@ -19164,13 +19234,13 @@
     .end annotation
 
     .prologue
-    .line 2610
+    .line 2650
     .local p1, "items":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2611
+    .line 2651
     .local v0, "contentValues":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -19189,13 +19259,13 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 2612
+    .line 2652
     .local v1, "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     new-instance v2, Landroid/content/ContentValues;
 
     invoke-direct {v2}, Landroid/content/ContentValues;-><init>()V
 
-    .line 2613
+    .line 2653
     .local v2, "values":Landroid/content/ContentValues;
     const-string v4, "hidden"
 
@@ -19207,12 +19277,12 @@
 
     invoke-virtual {v2, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 2614
+    .line 2654
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 2616
+    .line 2656
     .end local v1    # "item":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v2    # "values":Landroid/content/ContentValues;
     :cond_0
@@ -19222,7 +19292,7 @@
 
     invoke-virtual {v3, v4, v0, p1}, Lcom/android/launcher3/common/model/FavoritesUpdater;->updateItemsInDatabaseHelper(Landroid/content/Context;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
-    .line 2617
+    .line 2657
     return-void
 .end method
 
@@ -19233,12 +19303,12 @@
     .param p3, "flagOp"    # Lcom/android/launcher3/util/FlagOp;
 
     .prologue
-    .line 3796
+    .line 3836
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3798
+    .line 3838
     .local v7, "updatedShortcuts":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     const-string v8, ""
 
@@ -19248,7 +19318,7 @@
 
     if-eqz v8, :cond_0
 
-    .line 3799
+    .line 3839
     iget-object v9, p0, Lcom/android/launcher3/home/HomeLoader;->mQuietModeUsers:Landroid/util/LongSparseArray;
 
     sget-object v8, Lcom/android/launcher3/home/HomeLoader;->sUserManager:Lcom/android/launcher3/common/compat/UserManagerCompat;
@@ -19259,7 +19329,7 @@
 
     const/16 v8, 0x8
 
-    .line 3800
+    .line 3840
     invoke-virtual {p3, v8}, Lcom/android/launcher3/util/FlagOp;->apply(I)I
 
     move-result v8
@@ -19273,22 +19343,22 @@
 
     move-result-object v8
 
-    .line 3799
+    .line 3839
     invoke-virtual {v9, v10, v11, v8}, Landroid/util/LongSparseArray;->put(JLjava/lang/Object;)V
 
-    .line 3802
+    .line 3842
     :cond_0
     sget-object v9, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v9
 
-    .line 3803
+    .line 3843
     :try_start_0
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getAllItemInHome()Ljava/util/ArrayList;
 
     move-result-object v2
 
-    .line 3804
+    .line 3844
     .local v2, "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -19308,26 +19378,26 @@
 
     check-cast v5, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3805
+    .line 3845
     .local v5, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v10, v5, Lcom/android/launcher3/common/base/item/IconInfo;
 
     if-eqz v10, :cond_1
 
-    .line 3806
+    .line 3846
     move-object v0, v5
 
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-object v4, v0
 
-    .line 3807
+    .line 3847
     .local v4, "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
     invoke-virtual {v4}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v3
 
-    .line 3808
+    .line 3848
     .local v3, "cn":Landroid/content/ComponentName;
     iget-object v10, v4, Lcom/android/launcher3/common/base/item/IconInfo;->user:Lcom/android/launcher3/common/compat/UserHandleCompat;
 
@@ -19339,7 +19409,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 3809
+    .line 3849
     invoke-virtual {v3}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v10
@@ -19350,7 +19420,7 @@
 
     if-eqz v10, :cond_1
 
-    .line 3810
+    .line 3850
     iget v10, v4, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
     invoke-virtual {p3, v10}, Lcom/android/launcher3/util/FlagOp;->apply(I)I
@@ -19359,12 +19429,12 @@
 
     iput v10, v4, Lcom/android/launcher3/common/base/item/IconInfo;->isDisabled:I
 
-    .line 3811
+    .line 3851
     invoke-virtual {v7, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 3815
+    .line 3855
     .end local v2    # "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .end local v3    # "cn":Landroid/content/ComponentName;
     .end local v4    # "iconInfo":Lcom/android/launcher3/common/base/item/IconInfo;
@@ -19378,13 +19448,13 @@
 
     throw v8
 
-    .line 3800
+    .line 3840
     :cond_2
     const/4 v8, 0x0
 
     goto :goto_0
 
-    .line 3815
+    .line 3855
     .restart local v2    # "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_3
     :try_start_1
@@ -19392,22 +19462,22 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3817
+    .line 3857
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v6
 
-    .line 3818
+    .line 3858
     .local v6, "oldCallback":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     sget-object v8, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
-    new-instance v9, Lcom/android/launcher3/home/HomeLoader$36;
+    new-instance v9, Lcom/android/launcher3/home/HomeLoader$37;
 
-    invoke-direct {v9, p0, v6, v7, p2}, Lcom/android/launcher3/home/HomeLoader$36;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
+    invoke-direct {v9, p0, v6, v7, p2}, Lcom/android/launcher3/home/HomeLoader$37;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
     invoke-virtual {v8, v9}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 3826
+    .line 3866
     return-void
 .end method
 
@@ -19416,7 +19486,7 @@
     .param p1, "item"    # Lcom/android/launcher3/common/base/item/ItemInfo;
 
     .prologue
-    .line 3034
+    .line 3074
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -19425,29 +19495,29 @@
 
     if-eqz v1, :cond_2
 
-    .line 3035
+    .line 3075
     iget v1, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->hidden:I
 
     if-eqz v1, :cond_1
 
-    .line 3036
+    .line 3076
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 3037
+    .line 3077
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v1
 
     invoke-virtual {v1}, Lcom/android/launcher3/util/logging/SALogging;->updateLogValuesForHomeItems()V
 
-    .line 3055
+    .line 3095
     :cond_0
     :goto_0
     return-void
 
-    .line 3038
+    .line 3078
     :cond_1
     iget-wide v2, p1, Lcom/android/launcher3/common/base/item/ItemInfo;->container:J
 
@@ -19457,15 +19527,15 @@
 
     if-eqz v1, :cond_0
 
-    .line 3039
+    .line 3079
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgHotseatItems:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 3040
+    .line 3080
     invoke-virtual {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->addPagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 3041
+    .line 3081
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v1
@@ -19474,7 +19544,7 @@
 
     goto :goto_0
 
-    .line 3044
+    .line 3084
     :cond_2
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
@@ -19499,7 +19569,7 @@
 
     check-cast v0, Ljava/lang/Long;
 
-    .line 3045
+    .line 3085
     .local v0, "screenId":Ljava/lang/Long;
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
@@ -19515,7 +19585,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 3046
+    .line 3086
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -19532,9 +19602,9 @@
 
     cmp-long v1, v2, v4
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_5
 
-    .line 3047
+    .line 3087
     :cond_4
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader;->mBgPagesItems:Ljava/util/HashMap;
 
@@ -19546,10 +19616,11 @@
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 3048
+    .line 3088
     invoke-virtual {p0, p1}, Lcom/android/launcher3/home/HomeLoader;->addPagesItem(Lcom/android/launcher3/common/base/item/ItemInfo;)V
 
-    .line 3049
+    .line 3090
+    :cond_5
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v1
@@ -19564,20 +19635,20 @@
     .param p1, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 1736
+    .line 1772
     if-nez p1, :cond_0
 
-    .line 1785
+    .line 1821
     :goto_0
     return-void
 
-    .line 1740
+    .line 1776
     :cond_0
     new-instance v0, Lcom/android/launcher3/home/HomeLoader$12;
 
     invoke-direct {v0, p0, p1}, Lcom/android/launcher3/home/HomeLoader$12;-><init>(Lcom/android/launcher3/home/HomeLoader;Ljava/lang/String;)V
 
-    .line 1784
+    .line 1820
     .local v0, "updateRunnable":Ljava/lang/Runnable;
     invoke-static {v0}, Lcom/android/launcher3/home/HomeLoader;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -19600,19 +19671,19 @@
     .end annotation
 
     .prologue
-    .line 1788
+    .line 1824
     .local p1, "updatedPackages":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1789
+    .line 1825
     .local v5, "updatedShortcuts":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v7
 
-    .line 1790
+    .line 1826
     :try_start_0
     sget-object v6, Lcom/android/launcher3/home/HomeLoader;->sBgItemsIdMap:Lcom/android/launcher3/util/LongArrayMap;
 
@@ -19634,7 +19705,7 @@
 
     check-cast v2, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 1791
+    .line 1827
     .local v2, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v8, v2, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -19652,20 +19723,20 @@
 
     if-nez v8, :cond_0
 
-    .line 1793
+    .line 1829
     move-object v0, v2
 
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
 
     move-object v4, v0
 
-    .line 1794
+    .line 1830
     .local v4, "si":Lcom/android/launcher3/common/base/item/IconInfo;
     invoke-virtual {v4}, Lcom/android/launcher3/common/base/item/IconInfo;->getTargetComponent()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    .line 1795
+    .line 1831
     .local v1, "cn":Landroid/content/ComponentName;
     if-eqz v1, :cond_0
 
@@ -19679,17 +19750,17 @@
 
     if-eqz v8, :cond_0
 
-    .line 1796
+    .line 1832
     sget-object v8, Lcom/android/launcher3/home/HomeLoader;->sIconCache:Lcom/android/launcher3/common/model/IconCache;
 
     invoke-virtual {v4, v8}, Lcom/android/launcher3/common/base/item/IconInfo;->updateIcon(Lcom/android/launcher3/common/model/IconCache;)V
 
-    .line 1797
+    .line 1833
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1801
+    .line 1837
     .end local v1    # "cn":Landroid/content/ComponentName;
     .end local v2    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v4    # "si":Lcom/android/launcher3/common/base/item/IconInfo;
@@ -19708,12 +19779,12 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1803
+    .line 1839
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v3
 
-    .line 1804
+    .line 1840
     .local v3, "oldCallbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     sget-object v6, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
@@ -19723,7 +19794,7 @@
 
     invoke-virtual {v6, v7}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 1812
+    .line 1848
     return-void
 .end method
 
@@ -19731,24 +19802,24 @@
     .locals 12
 
     .prologue
-    .line 3858
+    .line 3898
     sget-object v8, Lcom/android/launcher3/home/HomeLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v8
 
-    .line 3859
+    .line 3899
     :try_start_0
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getAllItemInHome()Ljava/util/ArrayList;
 
     move-result-object v1
 
-    .line 3860
+    .line 3900
     .local v1, "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3861
+    .line 3901
     .local v6, "updatedIcons":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -19768,7 +19839,7 @@
 
     check-cast v4, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 3862
+    .line 3902
     .local v4, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v7, v4, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -19790,7 +19861,7 @@
 
     if-ne v7, v10, :cond_0
 
-    .line 3864
+    .line 3904
     move-object v0, v4
 
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
@@ -19801,14 +19872,14 @@
 
     move-result-object v5
 
-    .line 3865
+    .line 3905
     .local v5, "originalIcon":Landroid/graphics/Bitmap;
     if-eqz v5, :cond_0
 
-    .line 3866
+    .line 3906
     move-object v3, v5
 
-    .line 3867
+    .line 3907
     .local v3, "icon":Landroid/graphics/Bitmap;
     invoke-static {}, Lcom/android/launcher3/util/ShortcutTray;->isIconTrayEnabled()Z
 
@@ -19816,7 +19887,7 @@
 
     if-eqz v7, :cond_1
 
-    .line 3868
+    .line 3908
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     iget-object v10, v4, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
@@ -19825,7 +19896,7 @@
 
     move-result-object v3
 
-    .line 3871
+    .line 3911
     :cond_1
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
@@ -19843,14 +19914,14 @@
 
     if-eqz v7, :cond_2
 
-    .line 3872
+    .line 3912
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sContext:Landroid/content/Context;
 
     sget-object v10, Lcom/android/launcher3/home/HomeLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
     iget-object v10, v10, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
 
-    .line 3873
+    .line 3913
     invoke-virtual {v10}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getIconSize()I
 
     move-result v10
@@ -19861,12 +19932,12 @@
 
     move-result-object v11
 
-    .line 3872
+    .line 3912
     invoke-static {v7, v3, v10, v11}, Lcom/android/launcher3/util/DualAppUtils;->makeUserBadgedIcon(Landroid/content/Context;Landroid/graphics/Bitmap;ILandroid/os/UserHandle;)Landroid/graphics/Bitmap;
 
     move-result-object v3
 
-    .line 3875
+    .line 3915
     :cond_2
     move-object v0, v4
 
@@ -19876,7 +19947,7 @@
 
     invoke-virtual {v7, v3}, Lcom/android/launcher3/common/base/item/IconInfo;->setIcon(Landroid/graphics/Bitmap;)V
 
-    .line 3876
+    .line 3916
     check-cast v4, Lcom/android/launcher3/common/base/item/IconInfo;
 
     .end local v4    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
@@ -19884,7 +19955,7 @@
 
     goto :goto_0
 
-    .line 3897
+    .line 3937
     .end local v1    # "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .end local v3    # "icon":Landroid/graphics/Bitmap;
     .end local v5    # "originalIcon":Landroid/graphics/Bitmap;
@@ -19898,7 +19969,7 @@
 
     throw v7
 
-    .line 3881
+    .line 3921
     .restart local v1    # "allItemInHome":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     .restart local v6    # "updatedIcons":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/IconInfo;>;"
     :cond_3
@@ -19909,42 +19980,42 @@
 
     if-nez v7, :cond_5
 
-    .line 3882
+    .line 3922
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v2
 
-    .line 3883
+    .line 3923
     .local v2, "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-nez v2, :cond_4
 
-    .line 3884
+    .line 3924
     const-string v7, "HomeLoader"
 
     const-string v9, "updateShortcutIcons. Nobody to tell about the new app. Launcher is probably loading."
 
     invoke-static {v7, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3886
+    .line 3926
     monitor-exit v8
 
-    .line 3898
+    .line 3938
     .end local v2    # "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     :goto_1
     return-void
 
-    .line 3888
+    .line 3928
     .restart local v2    # "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     :cond_4
     sget-object v7, Lcom/android/launcher3/home/HomeLoader;->sHandler:Lcom/android/launcher3/common/model/DeferredHandler;
 
-    new-instance v9, Lcom/android/launcher3/home/HomeLoader$37;
+    new-instance v9, Lcom/android/launcher3/home/HomeLoader$38;
 
-    invoke-direct {v9, p0, v2, v6}, Lcom/android/launcher3/home/HomeLoader$37;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
+    invoke-direct {v9, p0, v2, v6}, Lcom/android/launcher3/home/HomeLoader$38;-><init>(Lcom/android/launcher3/home/HomeLoader;Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;Ljava/util/ArrayList;)V
 
     invoke-virtual {v7, v9}, Lcom/android/launcher3/common/model/DeferredHandler;->post(Ljava/lang/Runnable;)V
 
-    .line 3897
+    .line 3937
     .end local v2    # "callbacks":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     :cond_5
     monitor-exit v8
@@ -19961,6 +20032,6 @@
     .param p3, "reason"    # I
 
     .prologue
-    .line 3855
+    .line 3895
     return-void
 .end method

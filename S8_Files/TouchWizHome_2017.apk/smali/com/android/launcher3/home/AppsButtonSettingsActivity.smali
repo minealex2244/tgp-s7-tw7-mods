@@ -76,14 +76,14 @@
     .local p1, "iconDrawables":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/graphics/drawable/Drawable;>;"
     const/4 v6, -0x2
 
-    .line 178
+    .line 186
     if-eqz p1, :cond_1
 
     iget-object v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mPreview:Landroid/widget/LinearLayout;
 
     if-eqz v4, :cond_1
 
-    .line 179
+    .line 187
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -101,59 +101,59 @@
 
     check-cast v0, Landroid/graphics/drawable/Drawable;
 
-    .line 180
+    .line 188
     .local v0, "d":Landroid/graphics/drawable/Drawable;
     new-instance v1, Landroid/widget/ImageView;
 
     invoke-direct {v1, p0}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 181
+    .line 189
     .local v1, "icon":Landroid/widget/ImageView;
     new-instance v3, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v3, v6, v6}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 183
+    .line 191
     .local v3, "params":Landroid/widget/LinearLayout$LayoutParams;
     const/high16 v5, 0x3f800000    # 1.0f
 
     iput v5, v3, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
-    .line 184
+    .line 192
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 185
+    .line 193
     iget-object v5, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mPreview:Landroid/widget/LinearLayout;
 
     invoke-virtual {v5, v1, v3}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_0
 
-    .line 187
+    .line 195
     .end local v0    # "d":Landroid/graphics/drawable/Drawable;
     .end local v1    # "icon":Landroid/widget/ImageView;
     .end local v3    # "params":Landroid/widget/LinearLayout$LayoutParams;
     :cond_0
     invoke-direct {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getAllAppsIcon()V
 
-    .line 188
+    .line 196
     iget-boolean v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mEnabledAppsButton:Z
 
     if-eqz v4, :cond_2
 
-    .line 189
+    .line 197
     iget-object v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mPreview:Landroid/widget/LinearLayout;
 
     iget-object v5, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mAppsIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 198
+    .line 206
     :cond_1
     :goto_1
     return-void
 
-    .line 191
+    .line 199
     :cond_2
     invoke-virtual {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
@@ -165,7 +165,7 @@
 
     move-result v2
 
-    .line 192
+    .line 200
     .local v2, "maxCount":I
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -173,7 +173,7 @@
 
     if-ne v4, v2, :cond_1
 
-    .line 193
+    .line 201
     iget-object v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mPreview:Landroid/widget/LinearLayout;
 
     add-int/lit8 v5, v2, -0x1
@@ -186,7 +186,7 @@
 
     iput-object v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mLastIcon:Landroid/widget/ImageView;
 
-    .line 194
+    .line 202
     iget-object v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mHelpText:Landroid/widget/TextView;
 
     const/4 v5, 0x0
@@ -201,16 +201,16 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 406
+    .line 414
     iget-boolean v1, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mEnabledAppsButton:Z
 
     if-ne v1, p1, :cond_0
 
-    .line 421
+    .line 429
     :goto_0
     return-void
 
-    .line 409
+    .line 417
     :cond_0
     sget-object v1, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->TAG:Ljava/lang/String;
 
@@ -234,18 +234,18 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 410
+    .line 418
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 411
+    .line 419
     .local v0, "extras":Landroid/os/Bundle;
     const-string v1, "value"
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    .line 412
+    .line 420
     invoke-virtual {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -258,12 +258,12 @@
 
     invoke-virtual {v1, v2, v3, v4, v0}, Landroid/content/ContentResolver;->call(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
 
-    .line 415
+    .line 423
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v2
 
-    .line 416
+    .line 424
     invoke-virtual {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -274,7 +274,7 @@
 
     move-result-object v3
 
-    .line 417
+    .line 425
     invoke-virtual {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -289,16 +289,16 @@
 
     const-string v1, "1"
 
-    .line 415
+    .line 423
     :goto_1
     invoke-virtual {v2, v3, v4, v1}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 419
+    .line 427
     invoke-static {}, Lcom/android/launcher3/util/logging/SALogging;->getInstance()Lcom/android/launcher3/util/logging/SALogging;
 
     move-result-object v2
 
-    .line 420
+    .line 428
     invoke-virtual {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -313,19 +313,19 @@
 
     const/4 v1, 0x1
 
-    .line 419
+    .line 427
     :goto_2
     invoke-virtual {v2, v3, v1}, Lcom/android/launcher3/util/logging/SALogging;->insertStatusLog(Ljava/lang/String;I)V
 
     goto :goto_0
 
-    .line 417
+    .line 425
     :cond_1
     const-string v1, "2"
 
     goto :goto_1
 
-    .line 420
+    .line 428
     :cond_2
     const/4 v1, 0x0
 
@@ -338,7 +338,7 @@
     .param p2, "folderColor"    # I
 
     .prologue
-    .line 344
+    .line 352
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v20
@@ -353,12 +353,12 @@
 
     move-object/from16 v20, v0
 
-    .line 345
+    .line 353
     invoke-virtual/range {v20 .. v20}, Lcom/android/launcher3/common/deviceprofile/GridIconInfo;->getIconSize()I
 
     move-result v10
 
-    .line 347
+    .line 355
     .local v10, "iconSize":I
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
@@ -368,11 +368,11 @@
 
     move-result-object v8
 
-    .line 348
+    .line 356
     .local v8, "fs":Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;
     if-eqz v8, :cond_0
 
-    .line 349
+    .line 357
     move/from16 v0, p2
 
     invoke-virtual {v8, v0}, Lcom/android/launcher3/theme/OpenThemeManager$FolderStyle;->getCloseFolderImage(I)Landroid/graphics/Bitmap;
@@ -389,7 +389,7 @@
 
     move-result-object v7
 
-    .line 355
+    .line 363
     .local v7, "folderIcon":Landroid/graphics/Bitmap;
     :goto_0
     new-instance v17, Landroid/graphics/Canvas;
@@ -398,11 +398,11 @@
 
     invoke-direct {v0, v7}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 357
+    .line 365
     .local v17, "previewCanvas":Landroid/graphics/Canvas;
     const/4 v13, 0x3
 
-    .line 358
+    .line 366
     .local v13, "miniIconCol":I
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
@@ -414,7 +414,7 @@
 
     move-result v14
 
-    .line 359
+    .line 367
     .local v14, "miniIconGap":I
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
@@ -426,13 +426,13 @@
 
     move-result v18
 
-    .line 360
+    .line 368
     .local v18, "previewPadding":I
     mul-int/lit8 v20, v18, 0x2
 
     sub-int v3, v10, v20
 
-    .line 361
+    .line 369
     .local v3, "availableSpaceInPreview":I
     mul-int/lit8 v20, v14, 0x2
 
@@ -440,7 +440,7 @@
 
     div-int v5, v20, v13
 
-    .line 363
+    .line 371
     .local v5, "baselineIconSize":I
     int-to-float v0, v5
 
@@ -452,13 +452,13 @@
 
     div-float v4, v20, v21
 
-    .line 367
+    .line 375
     .local v4, "baselineIconScale":F
     new-instance v12, Landroid/graphics/Rect;
 
     invoke-direct {v12}, Landroid/graphics/Rect;-><init>()V
 
-    .line 370
+    .line 378
     .local v12, "mOldBounds":Landroid/graphics/Rect;
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->size()I
 
@@ -470,7 +470,7 @@
     :goto_1
     if-ltz v9, :cond_2
 
-    .line 371
+    .line 379
     move-object/from16 v0, p1
 
     invoke-virtual {v0, v9}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -479,7 +479,7 @@
 
     check-cast v6, Landroid/graphics/drawable/Drawable;
 
-    .line 372
+    .line 380
     .local v6, "d":Landroid/graphics/drawable/Drawable;
     sget-boolean v20, Lcom/android/launcher3/Utilities;->sIsRtl:Z
 
@@ -489,16 +489,16 @@
 
     rsub-int/lit8 v15, v20, 0x2
 
-    .line 373
+    .line 381
     .local v15, "posX":I
     :goto_2
     div-int v16, v9, v13
 
-    .line 374
+    .line 382
     .local v16, "posY":I
     invoke-virtual/range {v17 .. v17}, Landroid/graphics/Canvas;->save()I
 
-    .line 375
+    .line 383
     invoke-virtual {v6}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v20
@@ -507,14 +507,14 @@
 
     invoke-virtual {v12, v0}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
-    .line 376
+    .line 384
     add-int v20, v5, v14
 
     mul-int v20, v20, v15
 
     add-int v11, v20, v18
 
-    .line 377
+    .line 385
     .local v11, "l":I
     add-int v20, v5, v14
 
@@ -522,7 +522,7 @@
 
     add-int v19, v20, v18
 
-    .line 378
+    .line 386
     .local v19, "t":I
     invoke-virtual {v6}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -544,7 +544,7 @@
 
     add-int v20, v20, v11
 
-    .line 379
+    .line 387
     invoke-virtual {v6}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v21
@@ -565,7 +565,7 @@
 
     add-int v21, v21, v19
 
-    .line 378
+    .line 386
     move/from16 v0, v19
 
     move/from16 v1, v20
@@ -574,23 +574,23 @@
 
     invoke-virtual {v6, v11, v0, v1, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 380
+    .line 388
     move-object/from16 v0, v17
 
     invoke-virtual {v6, v0}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 381
+    .line 389
     invoke-virtual {v6}, Landroid/graphics/drawable/Drawable;->clearColorFilter()V
 
-    .line 382
+    .line 390
     invoke-virtual/range {v17 .. v17}, Landroid/graphics/Canvas;->restore()V
 
-    .line 370
+    .line 378
     add-int/lit8 v9, v9, -0x1
 
     goto :goto_1
 
-    .line 352
+    .line 360
     .end local v3    # "availableSpaceInPreview":I
     .end local v4    # "baselineIconScale":F
     .end local v5    # "baselineIconSize":I
@@ -626,7 +626,7 @@
     .restart local v7    # "folderIcon":Landroid/graphics/Bitmap;
     goto/16 :goto_0
 
-    .line 372
+    .line 380
     .restart local v3    # "availableSpaceInPreview":I
     .restart local v4    # "baselineIconScale":F
     .restart local v5    # "baselineIconSize":I
@@ -642,7 +642,7 @@
 
     goto :goto_2
 
-    .line 384
+    .line 392
     .end local v6    # "d":Landroid/graphics/drawable/Drawable;
     :cond_2
     return-object v7
@@ -654,35 +654,35 @@
     .prologue
     const/4 v8, -0x2
 
-    .line 388
+    .line 396
     new-instance v7, Landroid/widget/ImageView;
 
     invoke-direct {v7, p0}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
     iput-object v7, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mAppsIcon:Landroid/widget/ImageView;
 
-    .line 390
+    .line 398
     new-instance v4, Landroid/widget/LinearLayout$LayoutParams;
 
     invoke-direct {v4, v8, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 392
+    .line 400
     .local v4, "params":Landroid/widget/LinearLayout$LayoutParams;
     const/high16 v7, 0x3f800000    # 1.0f
 
     iput v7, v4, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
-    .line 393
+    .line 401
     iget-object v7, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mAppsIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v7, v4}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 394
+    .line 402
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
     move-result-object v6
 
-    .line 395
+    .line 403
     .local v6, "themeManager":Lcom/android/launcher3/theme/OpenThemeManager;
     sget-object v7, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ALL_APPS_ICON:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
@@ -694,7 +694,7 @@
 
     move-result-object v2
 
-    .line 396
+    .line 404
     .local v2, "d":Landroid/graphics/drawable/Drawable;
     invoke-virtual {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
@@ -706,29 +706,29 @@
 
     move-result v5
 
-    .line 397
+    .line 405
     .local v5, "size":I
     invoke-static {v2, v5, v5}, Lcom/android/launcher3/util/BitmapUtils;->getBitmap(Landroid/graphics/drawable/Drawable;II)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 398
+    .line 406
     .local v0, "appsButtonBitmap":Landroid/graphics/Bitmap;
     sget-object v7, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->ALL_APPS_ICON:Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;
 
-    .line 399
+    .line 407
     invoke-virtual {v7}, Lcom/android/launcher3/theme/OpenThemeManager$ThemeItems;->value()I
 
     move-result v7
 
     const-string v8, "drawable"
 
-    .line 398
+    .line 406
     invoke-virtual {v6, v7, v8}, Lcom/android/launcher3/theme/OpenThemeManager;->isFromThemeResources(ILjava/lang/String;)Z
 
     move-result v3
 
-    .line 400
+    .line 408
     .local v3, "isThemeAppIcon":Z
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
@@ -738,13 +738,13 @@
 
     move-result-object v1
 
-    .line 402
+    .line 410
     .local v1, "bitmap":Landroid/graphics/Bitmap;
     iget-object v7, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mAppsIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v7, v1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 403
+    .line 411
     return-void
 .end method
 
@@ -754,7 +754,7 @@
     .param p3, "folderColor"    # I
 
     .prologue
-    .line 256
+    .line 264
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -793,11 +793,11 @@
 
     move-result-object v5
 
-    .line 258
+    .line 266
     .local v5, "where":Ljava/lang/String;
     const-string v7, "rank"
 
-    .line 259
+    .line 267
     .local v7, "sortOrder":Ljava/lang/String;
     const/4 v2, 0x3
 
@@ -821,7 +821,7 @@
 
     aput-object v3, v4, v2
 
-    .line 263
+    .line 271
     .local v4, "projection":[Ljava/lang/String;
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -835,13 +835,13 @@
 
     move-result-object v9
 
-    .line 265
+    .line 273
     .local v9, "cursor":Landroid/database/Cursor;
     new-instance v12, Ljava/util/ArrayList;
 
     invoke-direct {v12}, Ljava/util/ArrayList;-><init>()V
 
-    .line 266
+    .line 274
     .local v12, "folderItemDawables":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/graphics/drawable/Drawable;>;"
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -853,16 +853,16 @@
 
     iget-object v2, v2, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->hotseatGridIcon:Lcom/android/launcher3/common/deviceprofile/GridIconInfo;
 
-    .line 267
+    .line 275
     invoke-virtual {v2}, Lcom/android/launcher3/common/deviceprofile/GridIconInfo;->getIconSize()I
 
     move-result v14
 
-    .line 268
+    .line 276
     .local v14, "iconSize":I
     if-eqz v9, :cond_1
 
-    .line 269
+    .line 277
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v2
@@ -871,13 +871,13 @@
 
     move-result-object v13
 
-    .line 270
+    .line 278
     .local v13, "iconCache":Lcom/android/launcher3/common/model/IconCache;
     invoke-static {}, Lcom/android/launcher3/common/compat/UserHandleCompat;->myUserHandle()Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     move-result-object v15
 
-    .line 273
+    .line 281
     .local v15, "myUserHandle":Lcom/android/launcher3/common/compat/UserHandleCompat;
     :goto_0
     :try_start_0
@@ -890,7 +890,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 275
+    .line 283
     :try_start_1
     move-object/from16 v0, p0
 
@@ -898,7 +898,7 @@
 
     move-result-object v8
 
-    .line 276
+    .line 284
     .local v8, "bitmap":Landroid/graphics/Bitmap;
     new-instance v10, Landroid/graphics/drawable/BitmapDrawable;
 
@@ -908,14 +908,14 @@
 
     const/4 v3, 0x1
 
-    .line 277
+    .line 285
     invoke-static {v8, v14, v14, v3}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
     move-result-object v3
 
     invoke-direct {v10, v2, v3}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 278
+    .line 286
     .local v10, "d":Landroid/graphics/drawable/Drawable;
     invoke-virtual {v12, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_1
@@ -924,17 +924,17 @@
 
     goto :goto_0
 
-    .line 279
+    .line 287
     .end local v8    # "bitmap":Landroid/graphics/Bitmap;
     .end local v10    # "d":Landroid/graphics/drawable/Drawable;
     :catch_0
     move-exception v11
 
-    .line 286
+    .line 294
     :cond_0
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
-    .line 289
+    .line 297
     .end local v13    # "iconCache":Lcom/android/launcher3/common/model/IconCache;
     .end local v15    # "myUserHandle":Lcom/android/launcher3/common/compat/UserHandleCompat;
     :cond_1
@@ -949,13 +949,13 @@
 
     return-object v2
 
-    .line 283
+    .line 291
     .restart local v13    # "iconCache":Lcom/android/launcher3/common/model/IconCache;
     .restart local v15    # "myUserHandle":Lcom/android/launcher3/common/compat/UserHandleCompat;
     :catch_1
     move-exception v11
 
-    .line 284
+    .line 292
     .local v11, "e":Ljava/lang/Exception;
     :try_start_2
     sget-object v2, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->TAG:Ljava/lang/String;
@@ -986,7 +986,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 286
+    .line 294
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
 
     goto :goto_1
@@ -1013,12 +1013,12 @@
     .end annotation
 
     .prologue
-    .line 201
+    .line 209
     new-instance v14, Ljava/util/ArrayList;
 
     invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
 
-    .line 202
+    .line 210
     .local v14, "iconDrawables":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/graphics/drawable/Drawable;>;"
     const/4 v2, 0x5
 
@@ -1054,15 +1054,15 @@
 
     aput-object v3, v4, v2
 
-    .line 207
+    .line 215
     .local v4, "projection":[Ljava/lang/String;
     const-string v5, "container=-101"
 
-    .line 209
+    .line 217
     .local v5, "where":Ljava/lang/String;
     const-string v7, "screen"
 
-    .line 210
+    .line 218
     .local v7, "sortOrder":Ljava/lang/String;
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1076,11 +1076,11 @@
 
     move-result-object v10
 
-    .line 212
+    .line 220
     .local v10, "cursor":Landroid/database/Cursor;
     if-eqz v10, :cond_3
 
-    .line 214
+    .line 222
     :try_start_0
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -1090,13 +1090,13 @@
 
     move-result-object v13
 
-    .line 215
+    .line 223
     .local v13, "iconCache":Lcom/android/launcher3/common/model/IconCache;
     invoke-static {}, Lcom/android/launcher3/common/compat/UserHandleCompat;->myUserHandle()Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     move-result-object v19
 
-    .line 216
+    .line 224
     .local v19, "myUserHandle":Lcom/android/launcher3/common/compat/UserHandleCompat;
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
@@ -1104,12 +1104,12 @@
 
     const v3, 0x7f09009f
 
-    .line 217
+    .line 225
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v20
 
-    .line 218
+    .line 226
     .local v20, "previewIconSize":I
     const-string v2, "intent"
 
@@ -1117,7 +1117,7 @@
 
     move-result v17
 
-    .line 219
+    .line 227
     .local v17, "intentIndex":I
     const-string v2, "_id"
 
@@ -1125,7 +1125,7 @@
 
     move-result v16
 
-    .line 222
+    .line 230
     .local v16, "idIndex":I
     :cond_0
     :goto_0
@@ -1138,7 +1138,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 224
+    .line 232
     :try_start_1
     move/from16 v0, v17
 
@@ -1146,7 +1146,7 @@
 
     move-result-object v18
 
-    .line 225
+    .line 233
     .local v18, "intentString":Ljava/lang/String;
     move/from16 v0, v16
 
@@ -1158,19 +1158,19 @@
 
     move-result-object v15
 
-    .line 228
+    .line 236
     .local v15, "id":Ljava/lang/Long;
     if-nez v18, :cond_2
 
-    .line 229
+    .line 237
     const-string v2, "color"
 
-    .line 230
+    .line 238
     invoke-interface {v10, v2}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
     move-result v9
 
-    .line 231
+    .line 239
     .local v9, "colorIndex":I
     invoke-virtual {v15}, Ljava/lang/Long;->longValue()J
 
@@ -1186,13 +1186,13 @@
 
     move-result-object v8
 
-    .line 236
+    .line 244
     .end local v9    # "colorIndex":I
     .local v8, "bitmap":Landroid/graphics/Bitmap;
     :goto_1
     if-eqz v8, :cond_0
 
-    .line 237
+    .line 245
     new-instance v11, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
@@ -1211,7 +1211,7 @@
 
     invoke-direct {v11, v2, v3}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 239
+    .line 247
     .local v11, "d":Landroid/graphics/drawable/Drawable;
     invoke-virtual {v14, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_1
@@ -1220,7 +1220,7 @@
 
     goto :goto_0
 
-    .line 241
+    .line 249
     .end local v8    # "bitmap":Landroid/graphics/Bitmap;
     .end local v11    # "d":Landroid/graphics/drawable/Drawable;
     .end local v15    # "id":Ljava/lang/Long;
@@ -1228,11 +1228,11 @@
     :catch_0
     move-exception v12
 
-    .line 249
+    .line 257
     :cond_1
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 252
+    .line 260
     .end local v13    # "iconCache":Lcom/android/launcher3/common/model/IconCache;
     .end local v14    # "iconDrawables":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/graphics/drawable/Drawable;>;"
     .end local v16    # "idIndex":I
@@ -1242,7 +1242,7 @@
     :goto_2
     return-object v14
 
-    .line 233
+    .line 241
     .restart local v13    # "iconCache":Lcom/android/launcher3/common/model/IconCache;
     .restart local v14    # "iconDrawables":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/graphics/drawable/Drawable;>;"
     .restart local v15    # "id":Ljava/lang/Long;
@@ -1267,7 +1267,7 @@
     .restart local v8    # "bitmap":Landroid/graphics/Bitmap;
     goto :goto_1
 
-    .line 246
+    .line 254
     .end local v8    # "bitmap":Landroid/graphics/Bitmap;
     .end local v13    # "iconCache":Lcom/android/launcher3/common/model/IconCache;
     .end local v15    # "id":Ljava/lang/Long;
@@ -1279,7 +1279,7 @@
     :catch_1
     move-exception v12
 
-    .line 247
+    .line 255
     .local v12, "e":Ljava/lang/Exception;
     :try_start_3
     sget-object v2, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->TAG:Ljava/lang/String;
@@ -1310,17 +1310,17 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 249
+    .line 257
     invoke-interface {v10}, Landroid/database/Cursor;->close()V
 
-    .line 252
+    .line 260
     .end local v12    # "e":Ljava/lang/Exception;
     :cond_3
     const/4 v14, 0x0
 
     goto :goto_2
 
-    .line 249
+    .line 257
     :catchall_0
     move-exception v2
 
@@ -1336,10 +1336,10 @@
     .param p3, "myUserHandle"    # Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     .prologue
-    .line 294
+    .line 302
     const/4 v2, 0x0
 
-    .line 296
+    .line 304
     .local v2, "bitmap":Landroid/graphics/Bitmap;
     :try_start_0
     const-string v12, "intent"
@@ -1350,7 +1350,7 @@
 
     move-result v6
 
-    .line 297
+    .line 305
     .local v6, "intentIndex":I
     const-string v12, "icon"
 
@@ -1360,7 +1360,7 @@
 
     move-result v4
 
-    .line 298
+    .line 306
     .local v4, "iconIndex":I
     const-string v12, "itemType"
 
@@ -1370,7 +1370,7 @@
 
     move-result v11
 
-    .line 299
+    .line 307
     .local v11, "typeIndex":I
     move-object/from16 v0, p1
 
@@ -1378,7 +1378,7 @@
 
     move-result v10
 
-    .line 300
+    .line 308
     .local v10, "type":I
     move-object/from16 v0, p1
 
@@ -1386,7 +1386,7 @@
 
     move-result-object v7
 
-    .line 301
+    .line 309
     .local v7, "intentString":Ljava/lang/String;
     const/4 v12, 0x0
 
@@ -1394,20 +1394,20 @@
 
     move-result-object v5
 
-    .line 302
+    .line 310
     .local v5, "intent":Landroid/content/Intent;
     const/4 v12, 0x1
 
     if-ne v10, v12, :cond_5
 
-    .line 303
+    .line 311
     invoke-virtual {v5}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v12
 
     if-eqz v12, :cond_0
 
-    .line 304
+    .line 312
     invoke-virtual {v5}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v12
@@ -1420,10 +1420,10 @@
 
     if-eqz v12, :cond_0
 
-    .line 305
+    .line 313
     const/4 v12, 0x0
 
-    .line 340
+    .line 348
     .end local v4    # "iconIndex":I
     .end local v5    # "intent":Landroid/content/Intent;
     .end local v6    # "intentIndex":I
@@ -1433,7 +1433,7 @@
     :goto_0
     return-object v12
 
-    .line 307
+    .line 315
     .restart local v4    # "iconIndex":I
     .restart local v5    # "intent":Landroid/content/Intent;
     .restart local v6    # "intentIndex":I
@@ -1447,15 +1447,15 @@
 
     move-result-object v2
 
-    .line 308
+    .line 316
     if-nez v2, :cond_3
 
-    .line 309
+    .line 317
     invoke-virtual/range {p2 .. p3}, Lcom/android/launcher3/common/model/IconCache;->getDefaultIcon(Lcom/android/launcher3/common/compat/UserHandleCompat;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 324
+    .line 332
     :goto_1
     invoke-virtual {v5}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -1463,7 +1463,7 @@
 
     if-eqz v12, :cond_2
 
-    .line 325
+    .line 333
     invoke-virtual {v5}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v12
@@ -1474,7 +1474,7 @@
 
     if-eqz v12, :cond_6
 
-    .line 326
+    .line 334
     invoke-virtual {v5}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v12
@@ -1483,7 +1483,7 @@
 
     move-result-object v8
 
-    .line 327
+    .line 335
     .local v8, "packageName":Ljava/lang/String;
     :goto_2
     invoke-static {v8}, Lcom/android/launcher3/common/view/LiveIconManager;->isLiveIconPackage(Ljava/lang/String;)Z
@@ -1492,14 +1492,14 @@
 
     if-eqz v12, :cond_1
 
-    .line 328
+    .line 336
     move-object/from16 v0, p3
 
     invoke-static {p0, v8, v0}, Lcom/android/launcher3/common/view/LiveIconManager;->getLiveIcon(Landroid/content/Context;Ljava/lang/String;Lcom/android/launcher3/common/compat/UserHandleCompat;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 330
+    .line 338
     :cond_1
     invoke-static {v5}, Lcom/android/launcher3/common/view/LiveIconManager;->isKnoxLiveIcon(Landroid/content/Intent;)Z
 
@@ -1507,17 +1507,17 @@
 
     if-eqz v12, :cond_2
 
-    .line 331
+    .line 339
     const-string v12, "liveicon_cmpname"
 
-    .line 332
+    .line 340
     invoke-virtual {v5, v12}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v12
 
     const-string v13, "/"
 
-    .line 333
+    .line 341
     invoke-virtual {v12, v13}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v12
@@ -1526,7 +1526,7 @@
 
     aget-object v9, v12, v13
 
-    .line 334
+    .line 342
     .local v9, "pkgName":Ljava/lang/String;
     move-object/from16 v0, p3
 
@@ -1546,10 +1546,10 @@
     :goto_3
     move-object v12, v2
 
-    .line 340
+    .line 348
     goto :goto_0
 
-    .line 311
+    .line 319
     .restart local v4    # "iconIndex":I
     .restart local v5    # "intent":Landroid/content/Intent;
     .restart local v6    # "intentIndex":I
@@ -1565,56 +1565,56 @@
 
     move-result-object v2
 
-    .line 312
+    .line 320
     invoke-static {p0}, Lcom/android/launcher3/util/DualAppUtils;->supportDualApp(Landroid/content/Context;)Z
 
     move-result v12
 
     if-eqz v12, :cond_4
 
-    .line 313
+    .line 321
     invoke-static/range {p3 .. p3}, Lcom/android/launcher3/util/DualAppUtils;->isDualAppId(Lcom/android/launcher3/common/compat/UserHandleCompat;)Z
 
     move-result v12
 
     if-eqz v12, :cond_4
 
-    .line 314
+    .line 322
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v12
 
-    .line 315
+    .line 323
     invoke-virtual/range {p3 .. p3}, Lcom/android/launcher3/common/compat/UserHandleCompat;->getUser()Landroid/os/UserHandle;
 
     move-result-object v13
 
-    .line 314
+    .line 322
     invoke-static {p0, v2, v12, v13}, Lcom/android/launcher3/util/DualAppUtils;->makeUserBadgedIcon(Landroid/content/Context;Landroid/graphics/Bitmap;ILandroid/os/UserHandle;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 317
+    .line 325
     :cond_4
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
     move-result-object v12
 
-    .line 318
+    .line 326
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v13
 
     const/4 v14, 0x0
 
-    .line 317
+    .line 325
     invoke-virtual {v12, v2, v13, v14}, Lcom/android/launcher3/theme/OpenThemeManager;->getIconWithTrayIfNeeded(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
     goto :goto_1
 
-    .line 321
+    .line 329
     :cond_5
     move-object/from16 v0, p2
 
@@ -1628,13 +1628,13 @@
 
     goto :goto_1
 
-    .line 326
+    .line 334
     :cond_6
     const/4 v8, 0x0
 
     goto :goto_2
 
-    .line 337
+    .line 345
     .end local v4    # "iconIndex":I
     .end local v5    # "intent":Landroid/content/Intent;
     .end local v6    # "intentIndex":I
@@ -1644,7 +1644,7 @@
     :catch_0
     move-exception v3
 
-    .line 338
+    .line 346
     .local v3, "e":Ljava/lang/Exception;
     sget-object v12, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->TAG:Ljava/lang/String;
 
@@ -1676,83 +1676,83 @@
 .end method
 
 .method private initActionBar()V
-    .locals 4
+    .locals 6
 
     .prologue
     .line 146
     invoke-virtual {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getActionBar()Landroid/app/ActionBar;
 
-    move-result-object v1
+    move-result-object v3
 
     .line 147
-    .local v1, "mActionBar":Landroid/app/ActionBar;
-    if-eqz v1, :cond_0
+    .local v3, "mActionBar":Landroid/app/ActionBar;
+    if-eqz v3, :cond_0
 
     .line 148
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setDisplayShowCustomEnabled(Z)V
+    invoke-virtual {v3, v4}, Landroid/app/ActionBar;->setDisplayShowCustomEnabled(Z)V
 
     .line 149
-    const v2, 0x7f03001f
+    const v4, 0x7f03001f
 
-    invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setCustomView(I)V
+    invoke-virtual {v3, v4}, Landroid/app/ActionBar;->setCustomView(I)V
 
     .line 150
-    invoke-virtual {v1}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
+    invoke-virtual {v3}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v4
 
-    const v3, 0x7f0f0013
+    const v5, 0x7f0f0013
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v4, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 151
-    invoke-virtual {v1}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
+    invoke-virtual {v3}, Landroid/app/ActionBar;->getCustomView()Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v4
 
-    const v3, 0x7f0f0059
+    const v5, 0x7f0f0059
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    move-result-object v2
+    move-result-object v4
 
-    check-cast v2, Landroid/widget/TextView;
+    check-cast v4, Landroid/widget/TextView;
 
-    iput-object v2, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mApplyButton:Landroid/widget/TextView;
+    iput-object v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mApplyButton:Landroid/widget/TextView;
 
     .line 152
-    iget-object v2, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mApplyButton:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mApplyButton:Landroid/widget/TextView;
 
-    invoke-virtual {v2, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v4, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 153
-    iget-object v2, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mApplyButton:Landroid/widget/TextView;
+    iget-object v4, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mApplyButton:Landroid/widget/TextView;
 
-    const/4 v3, 0x0
+    const/4 v5, 0x0
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 154
     invoke-static {}, Lcom/android/launcher3/theme/OpenThemeManager;->getInstance()Lcom/android/launcher3/theme/OpenThemeManager;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2}, Lcom/android/launcher3/theme/OpenThemeManager;->isDefaultTheme()Z
+    invoke-virtual {v4}, Lcom/android/launcher3/theme/OpenThemeManager;->isDefaultTheme()Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_0
+    if-eqz v4, :cond_0
 
     .line 155
-    const v2, 0x7f0f0058
+    const v4, 0x7f0f0058
 
-    invoke-virtual {p0, v2}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1762,18 +1762,54 @@
     .local v0, "headerBar":Landroid/widget/LinearLayout;
     invoke-virtual {p0}, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v4
 
-    const v3, 0x7f020069
+    const v5, 0x7f020069
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
     .line 159
+    invoke-static {p0}, Lcom/android/launcher3/Utilities;->isEnableBtnBg(Landroid/content/Context;)Z
+
+    move-result v2
+
+    .line 160
+    .local v2, "isEnableBtnBg":Z
+    if-eqz v2, :cond_0
+
+    .line 161
+    const/4 v1, 0x0
+
+    .local v1, "index":I
+    :goto_0
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
+
+    move-result v4
+
+    if-ge v1, v4, :cond_0
+
+    .line 162
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v4
+
+    const v5, 0x7f020111
+
+    invoke-virtual {v4, v5}, Landroid/view/View;->setBackgroundResource(I)V
+
+    .line 161
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 167
     .end local v0    # "headerBar":Landroid/widget/LinearLayout;
+    .end local v1    # "index":I
+    .end local v2    # "isEnableBtnBg":Z
     :cond_0
     return-void
 .end method
@@ -1939,10 +1975,10 @@
     .param p1, "isShowAppsChecked"    # Z
 
     .prologue
-    .line 162
+    .line 170
     if-eqz p1, :cond_3
 
-    .line 163
+    .line 171
     iget-object v1, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mApplyButton:Landroid/widget/TextView;
 
     iget-boolean v0, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mEnabledAppsButton:Z
@@ -1954,19 +1990,19 @@
     :goto_0
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 164
+    .line 172
     iget-object v0, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mLastIcon:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
-    .line 165
+    .line 173
     iget-object v0, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mPreview:Landroid/widget/LinearLayout;
 
     iget-object v1, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mLastIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->removeView(Landroid/view/View;)V
 
-    .line 167
+    .line 175
     :cond_0
     iget-object v0, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mPreview:Landroid/widget/LinearLayout;
 
@@ -1974,18 +2010,18 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 175
+    .line 183
     :cond_1
     :goto_1
     return-void
 
-    .line 163
+    .line 171
     :cond_2
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 169
+    .line 177
     :cond_3
     iget-object v0, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mApplyButton:Landroid/widget/TextView;
 
@@ -1993,19 +2029,19 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    .line 170
+    .line 178
     iget-object v0, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mPreview:Landroid/widget/LinearLayout;
 
     iget-object v1, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mAppsIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->removeView(Landroid/view/View;)V
 
-    .line 171
+    .line 179
     iget-object v0, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mLastIcon:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_1
 
-    .line 172
+    .line 180
     iget-object v0, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mPreview:Landroid/widget/LinearLayout;
 
     iget-object v1, p0, Lcom/android/launcher3/home/AppsButtonSettingsActivity;->mLastIcon:Landroid/widget/ImageView;

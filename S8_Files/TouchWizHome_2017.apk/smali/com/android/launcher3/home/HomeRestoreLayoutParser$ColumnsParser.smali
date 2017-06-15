@@ -29,15 +29,15 @@
     .param p2, "isHomeOnlyData"    # Z
 
     .prologue
-    .line 384
+    .line 380
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 385
+    .line 381
     iput-boolean p2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ColumnsParser;->mIsHomeOnlyData:Z
 
-    .line 386
+    .line 382
     return-void
 .end method
 
@@ -55,7 +55,7 @@
     .end annotation
 
     .prologue
-    .line 391
+    .line 387
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v1
@@ -64,7 +64,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 392
+    .line 388
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
@@ -78,7 +78,7 @@
     # setter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mColumns:I
     invoke-static {v1, v2}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->access$1302(Lcom/android/launcher3/home/HomeRestoreLayoutParser;I)I
 
-    .line 393
+    .line 389
     const-string v1, "Launcher.HomeRestore"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -108,19 +108,19 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 395
+    .line 391
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportFlexibleGrid()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 396
+    .line 392
     const/4 v1, 0x2
 
     new-array v0, v1, [I
 
-    .line 397
+    .line 393
     .local v0, "restoreGridSize":[I
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -131,7 +131,7 @@
 
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
-    .line 398
+    .line 394
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mColumns:I
     invoke-static {v2}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->access$1300(Lcom/android/launcher3/home/HomeRestoreLayoutParser;)I
 
@@ -144,14 +144,14 @@
 
     move-result v3
 
-    .line 397
+    .line 393
     invoke-static {v1, v0, v2, v3}, Lcom/android/launcher3/util/ScreenGridUtilities;->findNearestGridSize(Landroid/content/Context;[III)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 399
+    .line 395
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$ColumnsParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
@@ -171,7 +171,7 @@
 
     invoke-static {v1, v2, v3, v4}, Lcom/android/launcher3/util/ScreenGridUtilities;->storeGridLayoutPreference(Landroid/content/Context;IIZ)V
 
-    .line 404
+    .line 400
     .end local v0    # "restoreGridSize":[I
     :cond_0
     const-wide/16 v2, 0x0

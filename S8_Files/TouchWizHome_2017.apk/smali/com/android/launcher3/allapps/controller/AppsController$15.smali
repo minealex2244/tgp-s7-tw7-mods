@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 1814
+    .line 1822
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$15;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,12 +41,12 @@
     .locals 3
 
     .prologue
-    .line 1817
+    .line 1825
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$15;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     invoke-virtual {v0}, Lcom/android/launcher3/allapps/controller/AppsController;->searchSettingCheck()V
 
-    .line 1821
+    .line 1829
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$15;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     const/4 v1, 0x3
@@ -55,6 +55,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/launcher3/allapps/controller/AppsController;->changeState(IZ)Z
 
-    .line 1822
+    .line 1830
     return-void
 .end method

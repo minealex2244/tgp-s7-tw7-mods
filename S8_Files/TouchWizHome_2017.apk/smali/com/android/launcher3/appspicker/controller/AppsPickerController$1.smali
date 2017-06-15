@@ -62,6 +62,63 @@
     return-void
 .end method
 
+.method public getItem(I)Lcom/android/launcher3/common/base/item/ItemInfo;
+    .locals 2
+    .param p1, "index"    # I
+
+    .prologue
+    .line 151
+    add-int/lit8 v0, p1, -0x1
+
+    .line 152
+    .local v0, "indexOnList":I
+    if-ltz v0, :cond_0
+
+    iget-object v1, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$1;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
+
+    # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mAllApps:Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;
+    invoke-static {v1}, Lcom/android/launcher3/appspicker/controller/AppsPickerController;->access$100(Lcom/android/launcher3/appspicker/controller/AppsPickerController;)Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;->getApps()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    if-ge v0, v1, :cond_0
+
+    .line 153
+    iget-object v1, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$1;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
+
+    # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mAllApps:Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;
+    invoke-static {v1}, Lcom/android/launcher3/appspicker/controller/AppsPickerController;->access$100(Lcom/android/launcher3/appspicker/controller/AppsPickerController;)Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/android/launcher3/appspicker/AppsPickerAlphabeticalAppsList;->getApps()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
+
+    .line 155
+    :goto_0
+    return-object v1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    goto :goto_0
+.end method
+
 .method public getItem(Landroid/content/ComponentName;)Lcom/android/launcher3/common/base/item/ItemInfo;
     .locals 3
     .param p1, "name"    # Landroid/content/ComponentName;
@@ -293,7 +350,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 151
+    .line 160
     invoke-virtual {p1}, Lcom/samsung/android/sdk/bixby/data/ParamFilling;->getScreenParamMap()Ljava/util/Map;
 
     move-result-object v0
@@ -306,7 +363,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 152
+    .line 161
     invoke-virtual {p1}, Lcom/samsung/android/sdk/bixby/data/ParamFilling;->getScreenParamMap()Ljava/util/Map;
 
     move-result-object v0
@@ -327,11 +384,11 @@
 
     move v0, v1
 
-    .line 158
+    .line 167
     :goto_0
     return v0
 
-    .line 154
+    .line 163
     :cond_0
     invoke-virtual {p1}, Lcom/samsung/android/sdk/bixby/data/ParamFilling;->getScreenParamMap()Ljava/util/Map;
 
@@ -345,7 +402,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 155
+    .line 164
     invoke-virtual {p1}, Lcom/samsung/android/sdk/bixby/data/ParamFilling;->getScreenParamMap()Ljava/util/Map;
 
     move-result-object v0
@@ -366,10 +423,10 @@
 
     move v0, v1
 
-    .line 156
+    .line 165
     goto :goto_0
 
-    .line 158
+    .line 167
     :cond_1
     const/4 v0, 0x0
 

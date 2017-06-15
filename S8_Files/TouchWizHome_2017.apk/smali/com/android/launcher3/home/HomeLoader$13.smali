@@ -33,7 +33,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/home/HomeLoader;
 
     .prologue
-    .line 1804
+    .line 1840
     iput-object p1, p0, Lcom/android/launcher3/home/HomeLoader$13;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     iput-object p2, p0, Lcom/android/launcher3/home/HomeLoader$13;->val$oldCallbacks:Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
@@ -53,15 +53,15 @@
     .locals 4
 
     .prologue
-    .line 1806
+    .line 1842
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$13;->this$0:Lcom/android/launcher3/home/HomeLoader;
 
     # invokes: Lcom/android/launcher3/home/HomeLoader;->getCallback()Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
-    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$3900(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
+    invoke-static {v1}, Lcom/android/launcher3/home/HomeLoader;->access$700(Lcom/android/launcher3/home/HomeLoader;)Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
 
     move-result-object v0
 
-    .line 1807
+    .line 1843
     .local v0, "cb":Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;
     if-eqz v0, :cond_0
 
@@ -69,7 +69,7 @@
 
     if-ne v1, v0, :cond_0
 
-    .line 1808
+    .line 1844
     iget-object v1, p0, Lcom/android/launcher3/home/HomeLoader$13;->val$updatedShortcuts:Ljava/util/ArrayList;
 
     new-instance v2, Ljava/util/ArrayList;
@@ -80,7 +80,7 @@
 
     invoke-interface {v0, v1, v2, v3}, Lcom/android/launcher3/home/HomeLoader$HomeCallbacks;->bindShortcutsChanged(Ljava/util/ArrayList;Ljava/util/ArrayList;Lcom/android/launcher3/common/compat/UserHandleCompat;)V
 
-    .line 1810
+    .line 1846
     :cond_0
     return-void
 .end method

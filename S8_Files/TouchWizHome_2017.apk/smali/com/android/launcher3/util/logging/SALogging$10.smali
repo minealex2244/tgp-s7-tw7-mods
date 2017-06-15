@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/util/logging/SALogging;
 
     .prologue
-    .line 385
+    .line 473
     iput-object p1, p0, Lcom/android/launcher3/util/logging/SALogging$10;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     iput-object p2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->val$launcher:Lcom/android/launcher3/Launcher;
@@ -51,17 +51,17 @@
     .prologue
     const v4, 0x7f0800cf
 
-    .line 388
+    .line 476
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->val$launcher:Lcom/android/launcher3/Launcher;
 
     if-nez v2, :cond_1
 
-    .line 409
+    .line 497
     :cond_0
     :goto_0
     return-void
 
-    .line 390
+    .line 478
     :cond_1
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->val$launcher:Lcom/android/launcher3/Launcher;
 
@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    .line 391
+    .line 479
     .local v0, "res":Landroid/content/res/Resources;
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->val$launcher:Lcom/android/launcher3/Launcher;
 
@@ -77,18 +77,18 @@
 
     move-result v1
 
-    .line 392
+    .line 480
     .local v1, "stageMode":I
     const/4 v2, 0x1
 
     if-ne v1, v2, :cond_3
 
-    .line 393
+    .line 481
     iget-boolean v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->val$isMultiSelect:Z
 
     if-eqz v2, :cond_2
 
-    .line 394
+    .line 482
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     const v3, 0x7f08018f
@@ -97,17 +97,17 @@
 
     move-result-object v3
 
-    .line 395
+    .line 483
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 394
+    .line 482
     invoke-virtual {v2, v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 397
+    .line 485
     :cond_2
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
@@ -117,28 +117,28 @@
 
     move-result-object v3
 
-    .line 398
+    .line 486
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 397
+    .line 485
     invoke-virtual {v2, v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 400
+    .line 488
     :cond_3
     const/4 v2, 0x2
 
     if-ne v1, v2, :cond_0
 
-    .line 401
+    .line 489
     iget-boolean v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->val$isMultiSelect:Z
 
     if-eqz v2, :cond_4
 
-    .line 402
+    .line 490
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
     const v3, 0x7f080182
@@ -147,17 +147,17 @@
 
     move-result-object v3
 
-    .line 403
+    .line 491
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 402
+    .line 490
     invoke-virtual {v2, v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 405
+    .line 493
     :cond_4
     iget-object v2, p0, Lcom/android/launcher3/util/logging/SALogging$10;->this$0:Lcom/android/launcher3/util/logging/SALogging;
 
@@ -167,12 +167,12 @@
 
     move-result-object v3
 
-    .line 406
+    .line 494
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 405
+    .line 493
     invoke-virtual {v2, v3, v4}, Lcom/android/launcher3/util/logging/SALogging;->insertEventLog(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0

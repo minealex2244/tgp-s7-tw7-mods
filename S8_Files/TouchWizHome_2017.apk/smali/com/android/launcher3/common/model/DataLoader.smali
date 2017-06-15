@@ -1763,7 +1763,7 @@
     .param p2, "user"    # Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     .prologue
-    .line 861
+    .line 868
     monitor-enter p0
 
     :try_start_0
@@ -1775,34 +1775,34 @@
 
     check-cast v0, Ljava/util/HashSet;
 
-    .line 862
+    .line 869
     .local v0, "pkgs":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     if-nez v0, :cond_0
 
-    .line 863
+    .line 870
     new-instance v0, Ljava/util/HashSet;
 
     .end local v0    # "pkgs":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 864
+    .line 871
     .restart local v0    # "pkgs":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     sget-object v1, Lcom/android/launcher3/common/model/DataLoader;->sPendingPackages:Ljava/util/HashMap;
 
     invoke-virtual {v1, p2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 866
+    .line 873
     :cond_0
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 867
+    .line 874
     monitor-exit p0
 
     return-void
 
-    .line 861
+    .line 868
     .end local v0    # "pkgs":Ljava/util/HashSet;, "Ljava/util/HashSet<Ljava/lang/String;>;"
     :catchall_0
     move-exception v1
@@ -1849,7 +1849,7 @@
 .end method
 
 .method protected backupStkPositionIfNecessary(Ljava/lang/String;JJII)V
-    .locals 8
+    .locals 10
     .param p1, "pkgName"    # Ljava/lang/String;
     .param p2, "container"    # J
     .param p4, "screen"    # J
@@ -1857,133 +1857,215 @@
     .param p7, "cellY"    # I
 
     .prologue
-    const/4 v4, 0x0
-
     .line 815
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
-    move-result-object v3
+    move-result-object v6
 
-    invoke-virtual {v3}, Lcom/android/launcher3/LauncherAppState;->isHomeOnlyModeEnabled()Z
+    invoke-virtual {v6}, Lcom/android/launcher3/LauncherAppState;->isHomeOnlyModeEnabled()Z
 
-    move-result v3
+    move-result v6
 
-    if-nez v3, :cond_1
+    if-nez v6, :cond_1
 
-    .line 832
+    .line 839
     :cond_0
     :goto_0
     return-void
 
     .line 819
     :cond_1
-    const/4 v0, 0x0
+    const/4 v3, 0x0
 
     .line 820
-    .local v0, "needToBackupPosition":Z
-    sget-object v5, Lcom/android/launcher3/common/model/DataLoader;->STK_PKG_LIST:[Ljava/lang/String;
+    .local v3, "needToBackupPosition":Z
+    sget-object v7, Lcom/android/launcher3/common/model/DataLoader;->STK_PKG_LIST:[Ljava/lang/String;
 
-    array-length v6, v5
+    array-length v8, v7
 
-    move v3, v4
+    const/4 v6, 0x0
 
     :goto_1
-    if-ge v3, v6, :cond_2
+    if-ge v6, v8, :cond_2
 
-    aget-object v2, v5, v3
+    aget-object v5, v7, v6
 
     .line 821
-    .local v2, "s":Ljava/lang/String;
-    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .local v5, "s":Ljava/lang/String;
+    invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v7
+    move-result v9
 
-    if-eqz v7, :cond_3
+    if-eqz v9, :cond_4
 
     .line 822
-    const/4 v0, 0x1
+    const/4 v3, 0x1
 
     .line 826
-    .end local v2    # "s":Ljava/lang/String;
+    .end local v5    # "s":Ljava/lang/String;
     :cond_2
-    if-eqz v0, :cond_0
+    if-eqz v3, :cond_0
 
     .line 827
-    sget-object v3, Lcom/android/launcher3/common/model/DataLoader;->sContext:Landroid/content/Context;
+    sget-object v6, Lcom/android/launcher3/common/model/DataLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
+
+    iget-object v6, v6, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
+
+    invoke-virtual {v6}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getCellCountX()I
+
+    move-result v1
 
     .line 828
-    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
+    .local v1, "countX":I
+    sget-object v6, Lcom/android/launcher3/common/model/DataLoader;->sProfile:Lcom/android/launcher3/common/deviceprofile/DeviceProfile;
 
-    move-result-object v5
+    iget-object v6, v6, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->homeGrid:Lcom/android/launcher3/common/deviceprofile/GridInfo;
 
-    .line 827
-    invoke-virtual {v3, v5, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v6}, Lcom/android/launcher3/common/deviceprofile/GridInfo;->getCellCountY()I
 
-    move-result-object v3
-
-    .line 828
-    invoke-interface {v3}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v1
+    move-result v2
 
     .line 829
-    .local v1, "prefs":Landroid/content/SharedPreferences$Editor;
-    new-instance v3, Ljava/lang/StringBuilder;
+    .local v2, "countY":I
+    if-ltz p6, :cond_3
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    if-ltz p7, :cond_3
 
-    invoke-virtual {v3, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move/from16 v0, p6
 
-    move-result-object v3
+    if-ge v0, v1, :cond_3
 
-    const-string v4, ";"
+    move/from16 v0, p7
 
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, ";"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, ";"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-interface {v1, p1, v3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    if-lt v0, v2, :cond_5
 
     .line 830
-    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
+    :cond_3
+    const-string v6, "DataLoader"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v8, "Stk outside position cellX : "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move/from16 v0, p6
+
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v8, " cellY : "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    move/from16 v0, p7
+
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
     .line 820
-    .end local v1    # "prefs":Landroid/content/SharedPreferences$Editor;
-    .restart local v2    # "s":Ljava/lang/String;
-    :cond_3
-    add-int/lit8 v3, v3, 0x1
+    .end local v1    # "countX":I
+    .end local v2    # "countY":I
+    .restart local v5    # "s":Ljava/lang/String;
+    :cond_4
+    add-int/lit8 v6, v6, 0x1
 
     goto :goto_1
+
+    .line 834
+    .end local v5    # "s":Ljava/lang/String;
+    .restart local v1    # "countX":I
+    .restart local v2    # "countY":I
+    :cond_5
+    sget-object v6, Lcom/android/launcher3/common/model/DataLoader;->sContext:Landroid/content/Context;
+
+    .line 835
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
+
+    move-result-object v7
+
+    const/4 v8, 0x0
+
+    .line 834
+    invoke-virtual {v6, v7, v8}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v6
+
+    .line 835
+    invoke-interface {v6}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v4
+
+    .line 836
+    .local v4, "prefs":Landroid/content/SharedPreferences$Editor;
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v6, p2, p3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, ";"
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, p4, p5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, ";"
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    move/from16 v0, p6
+
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, ";"
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    move/from16 v0, p7
+
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-interface {v4, p1, v6}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 837
+    invoke-interface {v4}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    goto/16 :goto_0
 .end method
 
 .method public abstract bindItemsSync(ILcom/android/launcher3/common/model/DataLoader$DataLoaderState;)V
@@ -2174,7 +2256,7 @@
     .param p2, "user"    # Lcom/android/launcher3/common/compat/UserHandleCompat;
 
     .prologue
-    .line 857
+    .line 864
     sget-object v0, Lcom/android/launcher3/common/model/DataLoader;->sBadgeCache:Lcom/android/launcher3/common/model/BadgeCache;
 
     new-instance v1, Lcom/android/launcher3/common/model/BadgeCache$CacheKey;
@@ -2205,19 +2287,19 @@
     .end annotation
 
     .prologue
-    .line 835
+    .line 842
     .local p1, "allItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     sget-object v7, Lcom/android/launcher3/common/model/DataLoader;->sBgLock:Ljava/lang/Object;
 
     monitor-enter v7
 
-    .line 836
+    .line 843
     :try_start_0
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 837
+    .line 844
     .local v3, "needUpdateItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -2237,7 +2319,7 @@
 
     check-cast v1, Lcom/android/launcher3/common/base/item/ItemInfo;
 
-    .line 838
+    .line 845
     .local v1, "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     instance-of v5, v1, Lcom/android/launcher3/common/base/item/IconInfo;
 
@@ -2257,7 +2339,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 840
+    .line 847
     new-instance v4, Landroid/content/Intent;
 
     move-object v0, v1
@@ -2276,18 +2358,18 @@
 
     invoke-direct {v4, v5, v6}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 841
+    .line 848
     .local v4, "newIntent":Landroid/content/Intent;
     const-string v5, "android.intent.category.LAUNCHER"
 
     invoke-virtual {v4, v5}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 842
+    .line 849
     iget-object v5, v1, Lcom/android/launcher3/common/base/item/ItemInfo;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v4, v5}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 843
+    .line 850
     sget-object v5, Lcom/android/launcher3/common/model/DataLoader;->sLauncherApps:Lcom/android/launcher3/common/compat/LauncherAppsCompat;
 
     invoke-virtual {v1}, Lcom/android/launcher3/common/base/item/ItemInfo;->getUserHandle()Lcom/android/launcher3/common/compat/UserHandleCompat;
@@ -2298,11 +2380,11 @@
 
     move-result-object v2
 
-    .line 844
+    .line 851
     .local v2, "lai":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     if-eqz v2, :cond_0
 
-    .line 845
+    .line 852
     move-object v0, v1
 
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
@@ -2321,7 +2403,7 @@
 
     iput-object v6, v5, Lcom/android/launcher3/common/base/item/IconInfo;->title:Ljava/lang/CharSequence;
 
-    .line 846
+    .line 853
     move-object v0, v1
 
     check-cast v0, Lcom/android/launcher3/common/base/item/IconInfo;
@@ -2352,12 +2434,12 @@
 
     iput-object v6, v5, Lcom/android/launcher3/common/base/item/IconInfo;->contentDescription:Ljava/lang/CharSequence;
 
-    .line 848
+    .line 855
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 853
+    .line 860
     .end local v1    # "info":Lcom/android/launcher3/common/base/item/ItemInfo;
     .end local v2    # "lai":Lcom/android/launcher3/common/compat/LauncherActivityInfoCompat;
     .end local v3    # "needUpdateItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
@@ -2371,7 +2453,7 @@
 
     throw v5
 
-    .line 852
+    .line 859
     .restart local v3    # "needUpdateItems":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/android/launcher3/common/base/item/ItemInfo;>;"
     :cond_1
     :try_start_1

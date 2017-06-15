@@ -31,7 +31,7 @@
     .param p1, "this$1"    # Lcom/android/launcher3/Launcher$7;
 
     .prologue
-    .line 1699
+    .line 1702
     iput-object p1, p0, Lcom/android/launcher3/Launcher$7$1;->this$1:Lcom/android/launcher3/Launcher$7;
 
     iput-object p2, p0, Lcom/android/launcher3/Launcher$7$1;->val$view:Landroid/view/View;
@@ -49,7 +49,7 @@
     .locals 2
 
     .prologue
-    .line 1701
+    .line 1704
     iget-object v0, p0, Lcom/android/launcher3/Launcher$7$1;->val$view:Landroid/view/View;
 
     if-eqz v0, :cond_0
@@ -62,7 +62,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1702
+    .line 1705
     iget-object v0, p0, Lcom/android/launcher3/Launcher$7$1;->val$view:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -73,7 +73,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
 
-    .line 1704
+    .line 1707
     :cond_0
     return-void
 .end method

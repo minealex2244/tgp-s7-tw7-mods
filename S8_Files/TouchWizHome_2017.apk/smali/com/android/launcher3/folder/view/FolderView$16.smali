@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/view/FolderView;
 
     .prologue
-    .line 1433
+    .line 1448
     iput-object p1, p0, Lcom/android/launcher3/folder/view/FolderView$16;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "alarm"    # Lcom/android/launcher3/util/alarm/Alarm;
 
     .prologue
-    .line 1435
+    .line 1450
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$16;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     # getter for: Lcom/android/launcher3/folder/view/FolderView;->mContent:Lcom/android/launcher3/folder/view/FolderPagedView;
@@ -68,7 +68,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/android/launcher3/folder/view/FolderPagedView;->realTimeReorder(IIZ)V
 
-    .line 1436
+    .line 1451
     iget-object v0, p0, Lcom/android/launcher3/folder/view/FolderView$16;->this$0:Lcom/android/launcher3/folder/view/FolderView;
 
     iget-object v1, p0, Lcom/android/launcher3/folder/view/FolderView$16;->this$0:Lcom/android/launcher3/folder/view/FolderView;
@@ -81,6 +81,6 @@
     # setter for: Lcom/android/launcher3/folder/view/FolderView;->mEmptyCellRank:I
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/view/FolderView;->access$1302(Lcom/android/launcher3/folder/view/FolderView;I)I
 
-    .line 1437
+    .line 1452
     return-void
 .end method

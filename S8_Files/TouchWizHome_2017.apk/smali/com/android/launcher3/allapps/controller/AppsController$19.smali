@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/allapps/controller/AppsController;
 
     .prologue
-    .line 2273
+    .line 2281
     iput-object p1, p0, Lcom/android/launcher3/allapps/controller/AppsController$19;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     iput-object p2, p0, Lcom/android/launcher3/allapps/controller/AppsController$19;->val$folderItem:Lcom/android/launcher3/folder/FolderInfo;
@@ -45,7 +45,7 @@
     .locals 4
 
     .prologue
-    .line 2276
+    .line 2284
     iget-object v0, p0, Lcom/android/launcher3/allapps/controller/AppsController$19;->this$0:Lcom/android/launcher3/allapps/controller/AppsController;
 
     # getter for: Lcom/android/launcher3/allapps/controller/AppsController;->mAppsPagedView:Lcom/android/launcher3/allapps/view/AppsPagedView;
@@ -61,6 +61,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/allapps/view/AppsPagedView;->snapToPageImmediately(I)V
 
-    .line 2277
+    .line 2285
     return-void
 .end method

@@ -26,7 +26,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/folder/controller/FolderController;
 
     .prologue
-    .line 318
+    .line 321
     iput-object p1, p0, Lcom/android/launcher3/folder/controller/FolderController$4;->this$0:Lcom/android/launcher3/folder/controller/FolderController;
 
     iput-object p2, p0, Lcom/android/launcher3/folder/controller/FolderController$4;->val$closedFolder:Lcom/android/launcher3/folder/view/FolderView;
@@ -43,10 +43,10 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 327
+    .line 330
     invoke-virtual {p0, p1}, Lcom/android/launcher3/folder/controller/FolderController$4;->onAnimationEnd(Landroid/animation/Animator;)V
 
-    .line 328
+    .line 331
     return-void
 .end method
 
@@ -55,14 +55,14 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 321
+    .line 324
     sget-object v0, Lcom/android/launcher3/util/Talk;->INSTANCE:Lcom/android/launcher3/util/Talk;
 
     const v1, 0x7f080029
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/util/Talk;->say(I)V
 
-    .line 322
+    .line 325
     iget-object v0, p0, Lcom/android/launcher3/folder/controller/FolderController$4;->this$0:Lcom/android/launcher3/folder/controller/FolderController;
 
     iget-object v1, p0, Lcom/android/launcher3/folder/controller/FolderController$4;->val$closedFolder:Lcom/android/launcher3/folder/view/FolderView;
@@ -70,6 +70,6 @@
     # invokes: Lcom/android/launcher3/folder/controller/FolderController;->onCloseComplete(Lcom/android/launcher3/folder/view/FolderView;)V
     invoke-static {v0, v1}, Lcom/android/launcher3/folder/controller/FolderController;->access$600(Lcom/android/launcher3/folder/controller/FolderController;Lcom/android/launcher3/folder/view/FolderView;)V
 
-    .line 323
+    .line 326
     return-void
 .end method

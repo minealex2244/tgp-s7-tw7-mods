@@ -29,15 +29,15 @@
     .param p2, "container"    # Ljava/lang/String;
 
     .prologue
-    .line 411
+    .line 407
     iput-object p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 412
+    .line 408
     iput-object p2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->mContainer:Ljava/lang/String;
 
-    .line 413
+    .line 409
     return-void
 .end method
 
@@ -47,7 +47,7 @@
     .param p2, "screenTableName"    # Ljava/lang/String;
 
     .prologue
-    .line 429
+    .line 425
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
@@ -57,7 +57,7 @@
 
     invoke-virtual {v2, p1}, Lcom/android/launcher3/common/model/FavoritesProvider;->deleteWidgetIds(Ljava/lang/String;)V
 
-    .line 430
+    .line 426
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
@@ -67,7 +67,7 @@
 
     invoke-virtual {v2, p1}, Lcom/android/launcher3/common/model/FavoritesProvider;->deleteTable(Ljava/lang/String;)V
 
-    .line 431
+    .line 427
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
@@ -77,7 +77,7 @@
 
     invoke-virtual {v2, p2}, Lcom/android/launcher3/common/model/FavoritesProvider;->deleteTable(Ljava/lang/String;)V
 
-    .line 432
+    .line 428
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoredTable:Ljava/util/ArrayList;
@@ -91,7 +91,7 @@
 
     if-nez v2, :cond_0
 
-    .line 433
+    .line 429
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
@@ -103,7 +103,7 @@
 
     move-result-wide v0
 
-    .line 434
+    .line 430
     .local v0, "maxId":J
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -114,7 +114,7 @@
 
     invoke-virtual {v2, v0, v1}, Lcom/android/launcher3/common/model/FavoritesProvider;->setMaxItemId(J)V
 
-    .line 436
+    .line 432
     .end local v0    # "maxId":J
     :cond_0
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
@@ -128,7 +128,7 @@
 
     move-result-wide v0
 
-    .line 437
+    .line 433
     .restart local v0    # "maxId":J
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
@@ -139,7 +139,7 @@
 
     invoke-virtual {v2, v0, v1}, Lcom/android/launcher3/common/model/FavoritesProvider;->setMaxScreenId(J)V
 
-    .line 438
+    .line 434
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoredTable:Ljava/util/ArrayList;
@@ -149,7 +149,7 @@
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 439
+    .line 435
     return-void
 .end method
 
@@ -167,7 +167,7 @@
     .end annotation
 
     .prologue
-    .line 418
+    .line 414
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v2
@@ -176,7 +176,7 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 419
+    .line 415
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v2
@@ -185,7 +185,7 @@
 
     move-result v0
 
-    .line 420
+    .line 416
     .local v0, "pageCount":I
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->mContainer:Ljava/lang/String;
 
@@ -193,11 +193,11 @@
 
     move-result-object v1
 
-    .line 421
+    .line 417
     .local v1, "screenTableName":Ljava/lang/String;
     invoke-direct {p0, p2, v1}, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->clearTable(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 422
+    .line 418
     iget-object v2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser$PageCountParser;->this$0:Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     # getter for: Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
@@ -207,7 +207,7 @@
 
     invoke-virtual {v2, v0, v1}, Lcom/android/launcher3/common/model/FavoritesProvider;->restoreScreens(ILjava/lang/String;)V
 
-    .line 423
+    .line 419
     const-string v2, "Launcher.HomeRestore"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -230,7 +230,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 425
+    .line 421
     .end local v0    # "pageCount":I
     .end local v1    # "screenTableName":Ljava/lang/String;
     :cond_0

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     .prologue
-    .line 175
+    .line 184
     iput-object p1, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$2;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 6
 
     .prologue
-    .line 178
+    .line 187
     iget-object v4, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$2;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;
@@ -51,25 +51,25 @@
 
     if-nez v4, :cond_1
 
-    .line 179
+    .line 188
     const-string v4, "AppsPickerController"
 
     const-string v5, "onGlobalLayout mContainerview is null, so return"
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 191
+    .line 200
     :cond_0
     :goto_0
     return-void
 
-    .line 182
+    .line 191
     :cond_1
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 183
+    .line 192
     .local v2, "r":Landroid/graphics/Rect;
     iget-object v4, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$2;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
@@ -86,7 +86,7 @@
 
     move-result v3
 
-    .line 184
+    .line 193
     .local v3, "screenHeight":I
     iget-object v4, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$2;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
@@ -97,12 +97,12 @@
 
     invoke-virtual {v4, v2}, Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
 
-    .line 185
+    .line 194
     iget v4, v2, Landroid/graphics/Rect;->bottom:I
 
     sub-int v0, v3, v4
 
-    .line 186
+    .line 195
     .local v0, "heightDiff":I
     iget-object v4, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$2;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
@@ -115,7 +115,7 @@
 
     move-result-object v1
 
-    .line 187
+    .line 196
     .local v1, "lp":Landroid/view/ViewGroup$LayoutParams;
     iget v4, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
@@ -123,12 +123,12 @@
 
     if-eq v4, v5, :cond_0
 
-    .line 188
+    .line 197
     sub-int v4, v3, v0
 
     iput v4, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 189
+    .line 198
     iget-object v4, p0, Lcom/android/launcher3/appspicker/controller/AppsPickerController$2;->this$0:Lcom/android/launcher3/appspicker/controller/AppsPickerController;
 
     # getter for: Lcom/android/launcher3/appspicker/controller/AppsPickerController;->mContainerView:Lcom/android/launcher3/appspicker/view/AppsPickerContainerView;

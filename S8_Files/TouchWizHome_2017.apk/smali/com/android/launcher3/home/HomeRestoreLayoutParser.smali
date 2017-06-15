@@ -25,10 +25,6 @@
 
 
 # static fields
-.field private static final BNR_PERMISSION:Ljava/lang/String; = "com.sec.permission.BACKUP_RESTORE_HOMESCREEN"
-
-.field private static final REQUEST_RESTORE_CONTACT_SHORTCUT:Ljava/lang/String; = "com.sec.android.intent.action.REQUEST_RESTORE_CONTACT_SHORTCUT"
-
 .field private static final TAG:Ljava/lang/String; = "Launcher.HomeRestore"
 
 .field private static final VCF_RESTORE_PATH:Ljava/lang/String;
@@ -38,8 +34,6 @@
 .field private mColumns:I
 
 .field private mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
-
-.field private mIsRestoreVcf:Z
 
 .field private mParser:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -93,12 +87,12 @@
     .locals 2
 
     .prologue
-    .line 73
+    .line 75
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 74
+    .line 76
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v1
@@ -123,7 +117,7 @@
 
     sput-object v0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->VCF_RESTORE_PATH:Ljava/lang/String;
 
-    .line 73
+    .line 75
     return-void
 .end method
 
@@ -146,13 +140,13 @@
     .end annotation
 
     .prologue
-    .line 82
+    .line 80
     .local p4, "restoredTable":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     invoke-virtual {p2}, Lcom/android/launcher3/common/model/FavoritesProvider;->getAppWidgetHost()Landroid/appwidget/AppWidgetHost;
 
     move-result-object v2
 
-    .line 83
+    .line 81
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
@@ -167,33 +161,33 @@
 
     move-object v3, p2
 
-    .line 82
+    .line 80
     invoke-direct/range {v0 .. v6}, Lcom/android/launcher3/home/HomeDefaultLayoutParser;-><init>(Landroid/content/Context;Landroid/appwidget/AppWidgetHost;Lcom/android/launcher3/common/model/DefaultLayoutParser$LayoutParserCallback;Landroid/content/res/Resources;ILjava/lang/String;)V
-
-    .line 68
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
 
     .line 71
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
+    iput-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
+
+    .line 73
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
     iput-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoreAppWidgetId:Ljava/util/HashMap;
 
-    .line 85
+    .line 83
     iput-object p2, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
-    .line 86
+    .line 84
     iput-object p4, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoredTable:Ljava/util/ArrayList;
 
-    .line 87
+    .line 85
     iput-object p3, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
-    .line 88
+    .line 86
     return-void
 .end method
 
@@ -202,7 +196,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRows:I
 
     return v0
@@ -214,7 +208,7 @@
     .param p1, "x1"    # I
 
     .prologue
-    .line 60
+    .line 63
     iput p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRows:I
 
     return p1
@@ -225,7 +219,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mColumns:I
 
     return v0
@@ -237,7 +231,7 @@
     .param p1, "x1"    # I
 
     .prologue
-    .line 60
+    .line 63
     iput p1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mColumns:I
 
     return p1
@@ -248,7 +242,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -259,7 +253,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -270,7 +264,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mFavoritesProvider:Lcom/android/launcher3/common/model/FavoritesProvider;
 
     return-object v0
@@ -281,7 +275,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoredTable:Ljava/util/ArrayList;
 
     return-object v0
@@ -292,7 +286,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -303,7 +297,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -314,7 +308,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -325,7 +319,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -336,7 +330,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -347,7 +341,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -358,7 +352,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -373,7 +367,7 @@
     .param p4, "x4"    # I
 
     .prologue
-    .line 60
+    .line 63
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->addShortcut(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;I)J
 
     move-result-wide v0
@@ -386,7 +380,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -397,7 +391,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -408,7 +402,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -419,7 +413,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -430,7 +424,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -443,7 +437,7 @@
     .param p2, "x2"    # J
 
     .prologue
-    .line 60
+    .line 63
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->restoreContactShortcut(Ljava/lang/String;J)V
 
     return-void
@@ -454,7 +448,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -465,7 +459,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -476,7 +470,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -487,7 +481,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -498,7 +492,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoreAppWidgetId:Ljava/util/HashMap;
 
     return-object v0
@@ -509,7 +503,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -520,7 +514,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -531,7 +525,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -542,7 +536,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mValues:Landroid/content/ContentValues;
 
     return-object v0
@@ -553,7 +547,7 @@
     .param p0, "x0"    # Lcom/android/launcher3/home/HomeRestoreLayoutParser;
 
     .prologue
-    .line 60
+    .line 63
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
 
     return-object v0
@@ -563,7 +557,7 @@
     .locals 24
 
     .prologue
-    .line 231
+    .line 227
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoreAppWidgetId:Ljava/util/HashMap;
@@ -576,18 +570,18 @@
 
     if-gtz v20, :cond_0
 
-    .line 232
+    .line 228
     const-string v20, "Launcher.HomeRestore"
 
     const-string v21, "mRestoreAppWidgetId is empty"
 
     invoke-static/range {v20 .. v21}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 297
+    .line 293
     :goto_0
     return-void
 
-    .line 236
+    .line 232
     :cond_0
     move-object/from16 v0, p0
 
@@ -599,7 +593,7 @@
 
     move-result-object v8
 
-    .line 237
+    .line 233
     .local v8, "appWidgetManager":Landroid/appwidget/AppWidgetManager;
     new-instance v6, Landroid/appwidget/AppWidgetHost;
 
@@ -617,13 +611,13 @@
 
     invoke-direct {v6, v0, v1}, Landroid/appwidget/AppWidgetHost;-><init>(Landroid/content/Context;I)V
 
-    .line 242
+    .line 238
     .local v6, "appWidgetHost":Landroid/appwidget/AppWidgetHost;
     new-instance v19, Landroid/content/ContentValues;
 
     invoke-direct/range {v19 .. v19}, Landroid/content/ContentValues;-><init>()V
 
-    .line 243
+    .line 239
     .local v19, "values":Landroid/content/ContentValues;
     move-object/from16 v0, p0
 
@@ -657,7 +651,7 @@
 
     move-result-wide v10
 
-    .line 244
+    .line 240
     .local v10, "dbId":J
     move-object/from16 v0, p0
 
@@ -679,13 +673,13 @@
 
     check-cast v15, Landroid/util/Pair;
 
-    .line 245
+    .line 241
     .local v15, "pairInfo":Landroid/util/Pair;, "Landroid/util/Pair<Landroid/util/Pair<Ljava/lang/Integer;Landroid/content/ComponentName;>;Ljava/lang/String;>;"
     iget-object v12, v15, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v12, Landroid/util/Pair;
 
-    .line 247
+    .line 243
     .local v12, "info":Landroid/util/Pair;, "Landroid/util/Pair<Ljava/lang/Integer;Landroid/content/ComponentName;>;"
     iget-object v0, v12, Landroid/util/Pair;->first:Ljava/lang/Object;
 
@@ -697,13 +691,13 @@
 
     move-result v13
 
-    .line 248
+    .line 244
     .local v13, "oldWidgetId":I
     iget-object v9, v12, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v9, Landroid/content/ComponentName;
 
-    .line 249
+    .line 245
     .local v9, "componentName":Landroid/content/ComponentName;
     iget-object v0, v15, Landroid/util/Pair;->second:Ljava/lang/Object;
 
@@ -711,24 +705,24 @@
 
     check-cast v17, Ljava/lang/String;
 
-    .line 251
+    .line 247
     .local v17, "tableName":Ljava/lang/String;
     if-eqz v9, :cond_1
 
     if-eqz v17, :cond_1
 
-    .line 255
+    .line 251
     invoke-virtual {v6}, Landroid/appwidget/AppWidgetHost;->allocateAppWidgetId()I
 
     move-result v7
 
-    .line 256
+    .line 252
     .local v7, "appWidgetId":I
     new-instance v14, Landroid/os/Bundle;
 
     invoke-direct {v14}, Landroid/os/Bundle;-><init>()V
 
-    .line 257
+    .line 253
     .local v14, "options":Landroid/os/Bundle;
     const-string v20, "Old_WidgetId"
 
@@ -736,14 +730,14 @@
 
     invoke-virtual {v14, v0, v13}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 258
+    .line 254
     const-string v20, "New_WidgetId"
 
     move-object/from16 v0, v20
 
     invoke-virtual {v14, v0, v7}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 260
+    .line 256
     const-string v20, "Launcher.HomeRestore"
 
     new-instance v22, Ljava/lang/StringBuilder;
@@ -784,7 +778,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 265
+    .line 261
     const/16 v20, -0x1
 
     invoke-virtual/range {v17 .. v17}, Ljava/lang/String;->hashCode()I
@@ -797,12 +791,12 @@
     :goto_2
     packed-switch v20, :pswitch_data_0
 
-    .line 279
+    .line 275
     invoke-static {v10, v11}, Lcom/android/launcher3/common/model/LauncherSettings$Favorites;->getContentUri(J)Landroid/net/Uri;
 
     move-result-object v18
 
-    .line 283
+    .line 279
     .local v18, "uri":Landroid/net/Uri;
     :goto_3
     invoke-virtual {v8, v7, v9, v14}, Landroid/appwidget/AppWidgetManager;->bindAppWidgetIdIfAllowed(ILandroid/content/ComponentName;Landroid/os/Bundle;)Z
@@ -811,10 +805,10 @@
 
     if-eqz v20, :cond_3
 
-    .line 284
+    .line 280
     invoke-virtual/range {v19 .. v19}, Landroid/content/ContentValues;->clear()V
 
-    .line 285
+    .line 281
     const-string v20, "appWidgetId"
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -829,7 +823,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 287
+    .line 283
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getLauncherProvider()Lcom/android/launcher3/LauncherProvider;
 
     move-result-object v20
@@ -852,7 +846,7 @@
 
     move-result v16
 
-    .line 288
+    .line 284
     .local v16, "result":I
     const-string v20, "Launcher.HomeRestore"
 
@@ -886,7 +880,7 @@
 
     goto/16 :goto_1
 
-    .line 265
+    .line 261
     .end local v16    # "result":I
     .end local v18    # "uri":Landroid/net/Uri;
     :sswitch_0
@@ -957,54 +951,54 @@
 
     goto/16 :goto_2
 
-    .line 267
+    .line 263
     :pswitch_0
     invoke-static {v10, v11}, Lcom/android/launcher3/common/model/LauncherSettings$Favorites_Standard;->getContentUri(J)Landroid/net/Uri;
 
     move-result-object v18
 
-    .line 268
+    .line 264
     .restart local v18    # "uri":Landroid/net/Uri;
     goto/16 :goto_3
 
-    .line 270
+    .line 266
     .end local v18    # "uri":Landroid/net/Uri;
     :pswitch_1
     invoke-static {v10, v11}, Lcom/android/launcher3/common/model/LauncherSettings$Favorites_Easy;->getContentUri(J)Landroid/net/Uri;
 
     move-result-object v18
 
-    .line 271
+    .line 267
     .restart local v18    # "uri":Landroid/net/Uri;
     goto/16 :goto_3
 
-    .line 273
+    .line 269
     .end local v18    # "uri":Landroid/net/Uri;
     :pswitch_2
     invoke-static {v10, v11}, Lcom/android/launcher3/common/model/LauncherSettings$Favorites_HomeOnly;->getContentUri(J)Landroid/net/Uri;
 
     move-result-object v18
 
-    .line 274
+    .line 270
     .restart local v18    # "uri":Landroid/net/Uri;
     goto/16 :goto_3
 
-    .line 276
+    .line 272
     .end local v18    # "uri":Landroid/net/Uri;
     :pswitch_3
     invoke-static {v10, v11}, Lcom/android/launcher3/common/model/LauncherSettings$Favorites_HomeApps;->getContentUri(J)Landroid/net/Uri;
 
     move-result-object v18
 
-    .line 277
+    .line 273
     .restart local v18    # "uri":Landroid/net/Uri;
     goto/16 :goto_3
 
-    .line 290
+    .line 286
     :cond_3
     invoke-virtual {v6, v7}, Landroid/appwidget/AppWidgetHost;->deleteAppWidgetId(I)V
 
-    .line 291
+    .line 287
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getLauncherProvider()Lcom/android/launcher3/LauncherProvider;
 
     move-result-object v20
@@ -1025,7 +1019,7 @@
 
     move-result v16
 
-    .line 292
+    .line 288
     .restart local v16    # "result":I
     const-string v20, "Launcher.HomeRestore"
 
@@ -1071,7 +1065,7 @@
 
     goto/16 :goto_1
 
-    .line 296
+    .line 292
     .end local v7    # "appWidgetId":I
     .end local v9    # "componentName":Landroid/content/ComponentName;
     .end local v10    # "dbId":J
@@ -1093,7 +1087,7 @@
 
     goto/16 :goto_0
 
-    .line 265
+    .line 261
     nop
 
     :sswitch_data_0
@@ -1114,440 +1108,518 @@
 .end method
 
 .method private restoreContactShortcut(Ljava/lang/String;J)V
-    .locals 12
+    .locals 16
     .param p1, "vcf"    # Ljava/lang/String;
     .param p2, "id"    # J
 
     .prologue
-    .line 192
+    .line 182
     if-eqz p1, :cond_0
 
-    const-wide/16 v8, 0x0
+    const-wide/16 v12, 0x0
 
-    cmp-long v7, p2, v8
+    cmp-long v11, p2, v12
 
-    if-gez v7, :cond_2
+    if-gez v11, :cond_2
 
-    .line 193
+    .line 183
     :cond_0
-    const-string v7, "Launcher.HomeRestore"
+    const-string v11, "Launcher.HomeRestore"
 
-    const-string v8, "vcf is null or id < 0"
+    const-string v12, "vcf is null or id < 0"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v11, v12}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 228
+    .line 224
     :cond_1
     :goto_0
     return-void
 
-    .line 197
+    .line 187
     :cond_2
-    const/4 v5, 0x0
+    const/4 v9, 0x0
+
+    .line 189
+    .local v9, "writer":Ljava/io/Writer;
+    :try_start_0
+    new-instance v2, Ljava/io/File;
+
+    sget-object v11, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->VCF_RESTORE_PATH:Ljava/lang/String;
+
+    invoke-direct {v2, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 190
+    .local v2, "dir":Ljava/io/File;
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v11
+
+    if-nez v11, :cond_3
+
+    .line 191
+    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
+
+    .line 194
+    :cond_3
+    new-instance v4, Ljava/lang/StringBuffer;
+
+    invoke-direct {v4}, Ljava/lang/StringBuffer;-><init>()V
+
+    .line 195
+    .local v4, "filePath":Ljava/lang/StringBuffer;
+    const-string v11, "file://"
+
+    invoke-virtual {v4, v11}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v11
+
+    sget-object v12, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->VCF_RESTORE_PATH:Ljava/lang/String;
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    move-result-object v11
+
+    const/16 v12, 0x2f
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
+
+    move-result-object v11
+
+    move-wide/from16 v0, p2
+
+    invoke-virtual {v11, v0, v1}, Ljava/lang/StringBuffer;->append(J)Ljava/lang/StringBuffer;
+
+    move-result-object v11
+
+    const-string v12, ".vcf"
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    .line 196
+    invoke-virtual {v4}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v11}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v7
+
+    .line 197
+    .local v7, "uri":Landroid/net/Uri;
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v11}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v11
+
+    invoke-virtual {v11, v7}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
+
+    move-result-object v5
+
+    .line 198
+    .local v5, "outputStream":Ljava/io/OutputStream;
+    if-eqz v5, :cond_4
 
     .line 199
-    .local v5, "writer":Ljava/io/Writer;
-    :try_start_0
-    new-instance v0, Ljava/io/File;
+    new-instance v10, Ljava/io/BufferedWriter;
 
-    sget-object v7, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->VCF_RESTORE_PATH:Ljava/lang/String;
+    new-instance v11, Ljava/io/OutputStreamWriter;
 
-    invoke-direct {v0, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v11, v5}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
 
-    .line 200
-    .local v0, "dir":Ljava/io/File;
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    move-result v7
-
-    if-nez v7, :cond_3
-
-    .line 201
-    invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
-
-    .line 204
-    :cond_3
-    new-instance v2, Ljava/lang/StringBuffer;
-
-    invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
-
-    .line 205
-    .local v2, "filePath":Ljava/lang/StringBuffer;
-    const-string v7, "file://"
-
-    invoke-virtual {v2, v7}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v7
-
-    sget-object v8, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->VCF_RESTORE_PATH:Ljava/lang/String;
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    move-result-object v7
-
-    const/16 v8, 0x2f
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
-
-    move-result-object v7
-
-    invoke-virtual {v7, p2, p3}, Ljava/lang/StringBuffer;->append(J)Ljava/lang/StringBuffer;
-
-    move-result-object v7
-
-    const-string v8, ".vcf"
-
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
-
-    .line 206
-    invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-static {v7}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v4
-
-    .line 207
-    .local v4, "uri":Landroid/net/Uri;
-    iget-object v7, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v7
-
-    invoke-virtual {v7, v4}, Landroid/content/ContentResolver;->openOutputStream(Landroid/net/Uri;)Ljava/io/OutputStream;
-
-    move-result-object v3
-
-    .line 208
-    .local v3, "outputStream":Ljava/io/OutputStream;
-    if-eqz v3, :cond_4
-
-    .line 209
-    new-instance v6, Ljava/io/BufferedWriter;
-
-    new-instance v7, Ljava/io/OutputStreamWriter;
-
-    invoke-direct {v7, v3}, Ljava/io/OutputStreamWriter;-><init>(Ljava/io/OutputStream;)V
-
-    invoke-direct {v6, v7}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
+    invoke-direct {v10, v11}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 210
-    .end local v5    # "writer":Ljava/io/Writer;
-    .local v6, "writer":Ljava/io/Writer;
+    .line 200
+    .end local v9    # "writer":Ljava/io/Writer;
+    .local v10, "writer":Ljava/io/Writer;
     :try_start_1
-    invoke-virtual {v6, p1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
+    move-object/from16 v0, p1
 
-    .line 212
-    const-string v7, "Launcher.HomeRestore"
+    invoke-virtual {v10, v0}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    .line 202
+    const-string v11, "Launcher.HomeRestore"
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v12, Ljava/lang/StringBuilder;
 
-    const-string v9, "restoreContactShortcut vcf file : "
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v13, "restoreContactShortcut vcf file : "
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v4}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v11, v12}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 204
+    move-object/from16 v0, p0
+
+    iget-object v11, v0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
+
+    .line 205
+    invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getSharedPreferencesKey()Ljava/lang/String;
+
+    move-result-object v12
+
+    const/4 v13, 0x0
+
+    .line 204
+    invoke-virtual {v11, v12, v13}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v6
+
+    .line 206
+    .local v6, "prefs":Landroid/content/SharedPreferences;
+    const-string v11, "contact_shortcut_ids"
+
+    new-instance v12, Ljava/util/HashSet;
+
+    invoke-direct {v12}, Ljava/util/HashSet;-><init>()V
+
+    invoke-interface {v6, v11, v12}, Landroid/content/SharedPreferences;->getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
 
     move-result-object v8
 
-    invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+    .line 207
+    .local v8, "userApps":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
+    invoke-static/range {p2 .. p3}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v11
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-interface {v8, v11}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    move-result-object v8
+    .line 208
+    invoke-interface {v6}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v11
 
-    move-result-object v8
+    const-string v12, "contact_shortcut_ids"
 
-    invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-interface {v11, v12, v8}, Landroid/content/SharedPreferences$Editor;->putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
 
-    .line 213
-    const/4 v7, 0x1
+    move-result-object v11
 
-    iput-boolean v7, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mIsRestoreVcf:Z
+    invoke-interface {v11}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    .line 209
+    const-string v11, "Launcher.HomeRestore"
+
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v13, "restoreContactShortcut id add to prefs "
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    move-wide/from16 v0, p2
+
+    invoke-virtual {v12, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v11, v12}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_1
     .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_7
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_6
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    move-object v5, v6
+    move-object v9, v10
 
-    .line 220
-    .end local v6    # "writer":Ljava/io/Writer;
-    .restart local v5    # "writer":Ljava/io/Writer;
+    .line 216
+    .end local v6    # "prefs":Landroid/content/SharedPreferences;
+    .end local v8    # "userApps":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
+    .end local v10    # "writer":Ljava/io/Writer;
+    .restart local v9    # "writer":Ljava/io/Writer;
     :cond_4
-    if-eqz v5, :cond_1
+    if-eqz v9, :cond_1
 
-    .line 222
+    .line 218
     :try_start_2
-    invoke-virtual {v5}, Ljava/io/Writer;->close()V
+    invoke-virtual {v9}, Ljava/io/Writer;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 223
+    .line 219
     :catch_0
-    move-exception v1
+    move-exception v3
 
-    .line 224
-    .local v1, "e":Ljava/io/IOException;
-    const-string v7, "Launcher.HomeRestore"
+    .line 220
+    .local v3, "e":Ljava/io/IOException;
+    const-string v11, "Launcher.HomeRestore"
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v12, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "restoreContactShortcut, IOException : "
+    const-string v13, "restoreContactShortcut, IOException : "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v11, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    .line 215
-    .end local v0    # "dir":Ljava/io/File;
-    .end local v1    # "e":Ljava/io/IOException;
-    .end local v2    # "filePath":Ljava/lang/StringBuffer;
-    .end local v3    # "outputStream":Ljava/io/OutputStream;
-    .end local v4    # "uri":Landroid/net/Uri;
+    .line 211
+    .end local v2    # "dir":Ljava/io/File;
+    .end local v3    # "e":Ljava/io/IOException;
+    .end local v4    # "filePath":Ljava/lang/StringBuffer;
+    .end local v5    # "outputStream":Ljava/io/OutputStream;
+    .end local v7    # "uri":Landroid/net/Uri;
     :catch_1
-    move-exception v1
+    move-exception v3
 
-    .line 216
-    .local v1, "e":Ljava/io/FileNotFoundException;
+    .line 212
+    .local v3, "e":Ljava/io/FileNotFoundException;
     :goto_1
     :try_start_3
-    const-string v7, "Launcher.HomeRestore"
+    const-string v11, "Launcher.HomeRestore"
 
-    const-string v8, "restoreContactShortcut, FileNotFoundException : "
+    const-string v12, "restoreContactShortcut, FileNotFoundException : "
 
-    invoke-static {v7, v8, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v11, v12, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 220
-    if-eqz v5, :cond_1
+    .line 216
+    if-eqz v9, :cond_1
 
-    .line 222
+    .line 218
     :try_start_4
-    invoke-virtual {v5}, Ljava/io/Writer;->close()V
+    invoke-virtual {v9}, Ljava/io/Writer;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_2
 
     goto/16 :goto_0
 
-    .line 223
+    .line 219
     :catch_2
-    move-exception v1
+    move-exception v3
 
-    .line 224
-    .local v1, "e":Ljava/io/IOException;
-    const-string v7, "Launcher.HomeRestore"
+    .line 220
+    .local v3, "e":Ljava/io/IOException;
+    const-string v11, "Launcher.HomeRestore"
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v12, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "restoreContactShortcut, IOException : "
+    const-string v13, "restoreContactShortcut, IOException : "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v11, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    .line 217
-    .end local v1    # "e":Ljava/io/IOException;
+    .line 213
+    .end local v3    # "e":Ljava/io/IOException;
     :catch_3
-    move-exception v1
+    move-exception v3
 
-    .line 218
-    .restart local v1    # "e":Ljava/io/IOException;
+    .line 214
+    .restart local v3    # "e":Ljava/io/IOException;
     :goto_2
     :try_start_5
-    const-string v7, "Launcher.HomeRestore"
+    const-string v11, "Launcher.HomeRestore"
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v12, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "restoreContactShortcut, IOException : "
+    const-string v13, "restoreContactShortcut, IOException : "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v11, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 220
-    if-eqz v5, :cond_1
+    .line 216
+    if-eqz v9, :cond_1
 
-    .line 222
+    .line 218
     :try_start_6
-    invoke-virtual {v5}, Ljava/io/Writer;->close()V
+    invoke-virtual {v9}, Ljava/io/Writer;->close()V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
 
     goto/16 :goto_0
 
-    .line 223
+    .line 219
     :catch_4
-    move-exception v1
+    move-exception v3
 
-    .line 224
-    const-string v7, "Launcher.HomeRestore"
+    .line 220
+    const-string v11, "Launcher.HomeRestore"
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v12, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "restoreContactShortcut, IOException : "
+    const-string v13, "restoreContactShortcut, IOException : "
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-virtual {v8, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v12, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v12
 
-    invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v11, v12}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_0
 
-    .line 220
-    .end local v1    # "e":Ljava/io/IOException;
+    .line 216
+    .end local v3    # "e":Ljava/io/IOException;
     :catchall_0
-    move-exception v7
+    move-exception v11
 
     :goto_3
-    if-eqz v5, :cond_5
+    if-eqz v9, :cond_5
 
-    .line 222
+    .line 218
     :try_start_7
-    invoke-virtual {v5}, Ljava/io/Writer;->close()V
+    invoke-virtual {v9}, Ljava/io/Writer;->close()V
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_5
 
-    .line 225
+    .line 221
     :cond_5
     :goto_4
-    throw v7
+    throw v11
 
-    .line 223
+    .line 219
     :catch_5
-    move-exception v1
+    move-exception v3
 
-    .line 224
-    .restart local v1    # "e":Ljava/io/IOException;
-    const-string v8, "Launcher.HomeRestore"
+    .line 220
+    .restart local v3    # "e":Ljava/io/IOException;
+    const-string v12, "Launcher.HomeRestore"
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v13, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v10, "restoreContactShortcut, IOException : "
+    const-string v14, "restoreContactShortcut, IOException : "
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v13, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v13
 
-    invoke-virtual {v9, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v13, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-result-object v13
 
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v13}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v13
 
-    invoke-static {v8, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v12, v13}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_4
 
-    .line 220
-    .end local v1    # "e":Ljava/io/IOException;
-    .end local v5    # "writer":Ljava/io/Writer;
-    .restart local v0    # "dir":Ljava/io/File;
-    .restart local v2    # "filePath":Ljava/lang/StringBuffer;
-    .restart local v3    # "outputStream":Ljava/io/OutputStream;
-    .restart local v4    # "uri":Landroid/net/Uri;
-    .restart local v6    # "writer":Ljava/io/Writer;
+    .line 216
+    .end local v3    # "e":Ljava/io/IOException;
+    .end local v9    # "writer":Ljava/io/Writer;
+    .restart local v2    # "dir":Ljava/io/File;
+    .restart local v4    # "filePath":Ljava/lang/StringBuffer;
+    .restart local v5    # "outputStream":Ljava/io/OutputStream;
+    .restart local v7    # "uri":Landroid/net/Uri;
+    .restart local v10    # "writer":Ljava/io/Writer;
     :catchall_1
-    move-exception v7
+    move-exception v11
 
-    move-object v5, v6
+    move-object v9, v10
 
-    .end local v6    # "writer":Ljava/io/Writer;
-    .restart local v5    # "writer":Ljava/io/Writer;
+    .end local v10    # "writer":Ljava/io/Writer;
+    .restart local v9    # "writer":Ljava/io/Writer;
     goto :goto_3
 
-    .line 217
-    .end local v5    # "writer":Ljava/io/Writer;
-    .restart local v6    # "writer":Ljava/io/Writer;
+    .line 213
+    .end local v9    # "writer":Ljava/io/Writer;
+    .restart local v10    # "writer":Ljava/io/Writer;
     :catch_6
-    move-exception v1
+    move-exception v3
 
-    move-object v5, v6
+    move-object v9, v10
 
-    .end local v6    # "writer":Ljava/io/Writer;
-    .restart local v5    # "writer":Ljava/io/Writer;
+    .end local v10    # "writer":Ljava/io/Writer;
+    .restart local v9    # "writer":Ljava/io/Writer;
     goto :goto_2
 
-    .line 215
-    .end local v5    # "writer":Ljava/io/Writer;
-    .restart local v6    # "writer":Ljava/io/Writer;
+    .line 211
+    .end local v9    # "writer":Ljava/io/Writer;
+    .restart local v10    # "writer":Ljava/io/Writer;
     :catch_7
-    move-exception v1
+    move-exception v3
 
-    move-object v5, v6
+    move-object v9, v10
 
-    .end local v6    # "writer":Ljava/io/Writer;
-    .restart local v5    # "writer":Ljava/io/Writer;
+    .end local v10    # "writer":Ljava/io/Writer;
+    .restart local v9    # "writer":Ljava/io/Writer;
     goto/16 :goto_1
 .end method
 
@@ -1569,12 +1641,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 92
+    .line 90
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 93
+    .line 91
     .local v0, "parsers":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;>;"
     const-string v1, "favorite"
 
@@ -1584,7 +1656,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 94
+    .line 92
     const-string v1, "shortcut"
 
     new-instance v2, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreShortcutParser;
@@ -1593,7 +1665,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 95
+    .line 93
     return-object v0
 .end method
 
@@ -1613,12 +1685,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 100
+    .line 98
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 101
+    .line 99
     .local v0, "parsers":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;>;"
     const-string v1, "favorite"
 
@@ -1628,7 +1700,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 102
+    .line 100
     const-string v1, "appwidget"
 
     new-instance v2, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreAppWidgetParser;
@@ -1637,7 +1709,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 103
+    .line 101
     const-string v1, "shortcut"
 
     new-instance v2, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreUriShortcutParser;
@@ -1646,7 +1718,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 104
+    .line 102
     const-string v1, "folder"
 
     new-instance v2, Lcom/android/launcher3/home/HomeRestoreLayoutParser$RestoreHomeFolderParser;
@@ -1655,7 +1727,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 105
+    .line 103
     const-string v1, "appsbutton"
 
     new-instance v2, Lcom/android/launcher3/home/HomeRestoreLayoutParser$AppsButtonParser;
@@ -1664,12 +1736,12 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 106
+    .line 104
     return-object v0
 .end method
 
 .method protected parseLayout(Ljava/util/ArrayList;)I
-    .locals 15
+    .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1681,18 +1753,13 @@
     .end annotation
 
     .prologue
-    .line 111
+    .line 109
     .local p1, "screenIds":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/Long;>;"
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mIsRestoreVcf:Z
-
-    .line 112
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    .line 113
+    .line 110
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
 
     const-string v1, "category"
@@ -1705,30 +1772,30 @@
 
     invoke-virtual {v0, v1, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 114
+    .line 111
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mRestoreAppWidgetId:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
-    .line 117
-    const/4 v8, 0x0
+    .line 114
+    const/4 v7, 0x0
 
-    .line 119
-    .local v8, "count":I
+    .line 116
+    .local v7, "count":I
     :try_start_0
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
-    move-result v9
+    move-result v8
 
-    .line 121
-    .local v9, "depth":I
+    .line 118
+    .local v8, "depth":I
     invoke-virtual {p0}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->getLayoutElementsMap()Ljava/util/HashMap;
 
     move-result-object v3
 
-    .line 123
+    .line 120
     .local v3, "tagParserMap":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;>;"
     :cond_0
     :goto_0
@@ -1736,52 +1803,52 @@
 
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
-    move-result v14
+    move-result v13
 
-    .local v14, "type":I
+    .local v13, "type":I
     const/4 v0, 0x3
 
-    if-ne v14, v0, :cond_1
+    if-ne v13, v0, :cond_1
 
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
-    .line 124
+    .line 121
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
     move-result v0
 
-    if-le v0, v9, :cond_4
+    if-le v0, v8, :cond_4
 
     :cond_1
     const/4 v0, 0x1
 
-    if-eq v14, v0, :cond_4
+    if-eq v13, v0, :cond_4
 
-    .line 125
+    .line 122
     const/4 v0, 0x2
 
-    if-ne v14, v0, :cond_0
+    if-ne v13, v0, :cond_0
 
-    .line 129
+    .line 126
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
-    move-result-object v12
+    move-result-object v11
 
-    .line 130
-    .local v12, "name":Ljava/lang/String;
+    .line 127
+    .local v11, "name":Ljava/lang/String;
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
 
-    invoke-virtual {v0, v12}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v11}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
-    move-result v11
+    move-result v10
 
-    .line 131
-    .local v11, "existTag":Z
-    if-eqz v11, :cond_0
+    .line 128
+    .local v10, "existTag":Z
+    if-eqz v10, :cond_0
 
-    .line 135
+    .line 132
     const-string v0, "Launcher.HomeRestore"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1794,7 +1861,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -1804,16 +1871,16 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 136
-    invoke-static {v12}, Lcom/android/launcher3/common/bnr/LauncherBnrHelper;->getFavoritesTable(Ljava/lang/String;)Ljava/lang/String;
+    .line 133
+    invoke-static {v11}, Lcom/android/launcher3/common/bnr/LauncherBnrHelper;->getFavoritesTable(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 137
+    .line 134
     .local v2, "tableName":Ljava/lang/String;
     const/4 v0, -0x1
 
-    invoke-virtual {v12}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v11}, Ljava/lang/String;->hashCode()I
 
     move-result v1
 
@@ -1823,20 +1890,20 @@
     :goto_1
     packed-switch v0, :pswitch_data_0
 
-    .line 158
+    .line 155
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mTagParserMap:Ljava/util/HashMap;
 
-    invoke-virtual {v0, v12}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, v11}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v13
+    move-result-object v12
 
-    check-cast v13, Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
+    check-cast v12, Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
 
-    .line 159
-    .local v13, "tagParser":Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
-    if-nez v13, :cond_3
+    .line 156
+    .local v12, "tagParser":Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
+    if-nez v12, :cond_3
 
-    .line 160
+    .line 157
     const-string v0, "Launcher.HomeRestore"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1849,7 +1916,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -1859,31 +1926,31 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 161
+    .line 158
     const/4 v0, -0x1
 
-    .line 188
+    .line 178
     .end local v2    # "tableName":Ljava/lang/String;
     .end local v3    # "tagParserMap":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;>;"
-    .end local v9    # "depth":I
-    .end local v11    # "existTag":Z
-    .end local v12    # "name":Ljava/lang/String;
-    .end local v13    # "tagParser":Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
-    .end local v14    # "type":I
+    .end local v8    # "depth":I
+    .end local v10    # "existTag":Z
+    .end local v11    # "name":Ljava/lang/String;
+    .end local v12    # "tagParser":Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
+    .end local v13    # "type":I
     :goto_2
     return v0
 
-    .line 137
+    .line 134
     .restart local v2    # "tableName":Ljava/lang/String;
     .restart local v3    # "tagParserMap":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;>;"
-    .restart local v9    # "depth":I
-    .restart local v11    # "existTag":Z
-    .restart local v12    # "name":Ljava/lang/String;
-    .restart local v14    # "type":I
+    .restart local v8    # "depth":I
+    .restart local v10    # "existTag":Z
+    .restart local v11    # "name":Ljava/lang/String;
+    .restart local v13    # "type":I
     :sswitch_0
     const-string v1, "home"
 
-    invoke-virtual {v12, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1896,7 +1963,7 @@
     :sswitch_1
     const-string v1, "homeOnly"
 
-    invoke-virtual {v12, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1909,7 +1976,7 @@
     :sswitch_2
     const-string v1, "home_easy"
 
-    invoke-virtual {v12, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1922,7 +1989,7 @@
     :sswitch_3
     const-string v1, "hotseat"
 
-    invoke-virtual {v12, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1935,7 +2002,7 @@
     :sswitch_4
     const-string v1, "hotseat_homeOnly"
 
-    invoke-virtual {v12, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1948,7 +2015,7 @@
     :sswitch_5
     const-string v1, "hotseat_easy"
 
-    invoke-virtual {v12, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v11, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1958,7 +2025,7 @@
 
     goto :goto_1
 
-    .line 141
+    .line 138
     :pswitch_0
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -1966,18 +2033,18 @@
 
     move-object v0, p0
 
-    move-object/from16 v4, p1
+    move-object v4, p1
 
     invoke-virtual/range {v0 .. v5}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->defaultHomeParseAndAddNode(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;Ljava/util/HashMap;Ljava/util/ArrayList;I)I
 
     move-result v0
 
-    add-int/2addr v8, v0
+    add-int/2addr v7, v0
 
-    .line 143
+    .line 140
     goto/16 :goto_0
 
-    .line 146
+    .line 143
     :pswitch_1
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -1987,7 +2054,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/LauncherAppState;->removeAppsButtonPref(Z)V
 
-    .line 148
+    .line 145
     :pswitch_2
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -2001,12 +2068,12 @@
 
     move-result v0
 
-    add-int/2addr v8, v0
+    add-int/2addr v7, v0
 
-    .line 150
+    .line 147
     goto/16 :goto_0
 
-    .line 152
+    .line 149
     :pswitch_3
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
@@ -2016,7 +2083,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/launcher3/LauncherAppState;->removeAppsButtonPref(Z)V
 
-    .line 153
+    .line 150
     iget-object v1, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
     const/4 v4, 0x0
@@ -2029,44 +2096,44 @@
 
     move-result v0
 
-    add-int/2addr v8, v0
+    add-int/2addr v7, v0
 
-    .line 155
+    .line 152
     goto/16 :goto_0
 
-    .line 164
-    .restart local v13    # "tagParser":Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
+    .line 161
+    .restart local v12    # "tagParser":Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
     :cond_3
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
-    invoke-interface {v13, v0, v2}, Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;->parseAndAdd(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)J
+    invoke-interface {v12, v0, v2}, Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;->parseAndAdd(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)J
     :try_end_0
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
     goto/16 :goto_0
 
-    .line 167
+    .line 164
     .end local v2    # "tableName":Ljava/lang/String;
     .end local v3    # "tagParserMap":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;>;"
-    .end local v9    # "depth":I
-    .end local v11    # "existTag":Z
-    .end local v12    # "name":Ljava/lang/String;
-    .end local v13    # "tagParser":Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
-    .end local v14    # "type":I
+    .end local v8    # "depth":I
+    .end local v10    # "existTag":Z
+    .end local v11    # "name":Ljava/lang/String;
+    .end local v12    # "tagParser":Lcom/android/launcher3/common/model/DefaultLayoutParser$TagParser;
+    .end local v13    # "type":I
     :catch_0
-    move-exception v10
+    move-exception v9
 
-    .line 168
-    .local v10, "e":Lorg/xmlpull/v1/XmlPullParserException;
+    .line 165
+    .local v9, "e":Lorg/xmlpull/v1/XmlPullParserException;
     const-string v0, "Launcher.HomeRestore"
 
     const-string v1, "Got exception parsing restore favorites."
 
-    invoke-static {v0, v1, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v0, v1, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 173
-    .end local v10    # "e":Lorg/xmlpull/v1/XmlPullParserException;
+    .line 170
+    .end local v9    # "e":Lorg/xmlpull/v1/XmlPullParserException;
     :cond_4
     :goto_3
     invoke-static {}, Lcom/android/launcher3/LauncherFeature;->supportFlexibleGrid()Z
@@ -2079,18 +2146,18 @@
 
     if-nez v0, :cond_5
 
-    .line 174
+    .line 171
     const/4 v0, 0x2
 
     new-array v6, v0, [I
 
-    .line 175
+    .line 172
     .local v6, "cellXY":[I
     iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v6}, Lcom/android/launcher3/Utilities;->loadCurrentGridSize(Landroid/content/Context;[I)V
 
-    .line 176
+    .line 173
     invoke-static {}, Lcom/android/launcher3/LauncherAppState;->getInstance()Lcom/android/launcher3/LauncherAppState;
 
     move-result-object v0
@@ -2109,67 +2176,31 @@
 
     invoke-virtual {v0, v1, v4}, Lcom/android/launcher3/common/deviceprofile/DeviceProfile;->setCurrentGrid(II)V
 
-    .line 179
+    .line 176
     .end local v6    # "cellXY":[I
     :cond_5
-    iget-boolean v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mIsRestoreVcf:Z
-
-    if-eqz v0, :cond_6
-
-    .line 180
-    const-string v0, "Launcher.HomeRestore"
-
-    const-string v1, "there is vcf file"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 181
-    new-instance v7, Landroid/content/Intent;
-
-    const-string v0, "com.sec.android.intent.action.REQUEST_RESTORE_CONTACT_SHORTCUT"
-
-    invoke-direct {v7, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 182
-    .local v7, "contactIntent":Landroid/content/Intent;
-    const-string v0, "FILE_PATH"
-
-    sget-object v1, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->VCF_RESTORE_PATH:Ljava/lang/String;
-
-    invoke-virtual {v7, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 183
-    iget-object v0, p0, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->mContext:Landroid/content/Context;
-
-    const-string v1, "com.sec.permission.BACKUP_RESTORE_HOMESCREEN"
-
-    invoke-virtual {v0, v7, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
-
-    .line 186
-    .end local v7    # "contactIntent":Landroid/content/Intent;
-    :cond_6
     invoke-direct {p0}, Lcom/android/launcher3/home/HomeRestoreLayoutParser;->restoreAppWidgetIds()V
 
-    move v0, v8
+    move v0, v7
 
-    .line 188
+    .line 178
     goto/16 :goto_2
 
-    .line 169
+    .line 166
     :catch_1
-    move-exception v10
+    move-exception v9
 
-    .line 170
-    .local v10, "e":Ljava/io/IOException;
+    .line 167
+    .local v9, "e":Ljava/io/IOException;
     const-string v0, "Launcher.HomeRestore"
 
     const-string v1, "Got exception parsing restore favorites."
 
-    invoke-static {v0, v1, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+    invoke-static {v0, v1, v9}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_3
 
-    .line 137
+    .line 134
     :sswitch_data_0
     .sparse-switch
         -0x3236c3b1 -> :sswitch_5

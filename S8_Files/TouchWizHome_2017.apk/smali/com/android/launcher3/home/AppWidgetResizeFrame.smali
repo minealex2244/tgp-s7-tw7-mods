@@ -212,7 +212,7 @@
 
     .line 127
     .local v6, "res":Landroid/content/res/Resources;
-    const v9, 0x7f02010f
+    const v9, 0x7f020112
 
     const/4 v10, 0x0
 
@@ -223,7 +223,7 @@
     iput-object v9, p0, Lcom/android/launcher3/home/AppWidgetResizeFrame;->mBackground:Landroid/graphics/drawable/Drawable;
 
     .line 128
-    const v9, 0x7f020110
+    const v9, 0x7f020113
 
     const/4 v10, 0x0
 
@@ -263,7 +263,7 @@
     invoke-virtual {p0, v9, v10, v11, v12}, Lcom/android/launcher3/home/AppWidgetResizeFrame;->setPadding(IIII)V
 
     .line 134
-    const v9, 0x7f020111
+    const v9, 0x7f020114
 
     const/4 v10, 0x0
 
@@ -340,7 +340,7 @@
     .line 141
     iget-object v9, p0, Lcom/android/launcher3/home/AppWidgetResizeFrame;->mLeftHandle:Landroid/widget/ImageView;
 
-    const v10, 0x7f020111
+    const v10, 0x7f020114
 
     invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -459,7 +459,7 @@
     .line 153
     iget-object v9, p0, Lcom/android/launcher3/home/AppWidgetResizeFrame;->mRightHandle:Landroid/widget/ImageView;
 
-    const v10, 0x7f020111
+    const v10, 0x7f020114
 
     invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -538,7 +538,7 @@
     .line 161
     iget-object v9, p0, Lcom/android/launcher3/home/AppWidgetResizeFrame;->mTopHandle:Landroid/widget/ImageView;
 
-    const v10, 0x7f020111
+    const v10, 0x7f020114
 
     invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -617,7 +617,7 @@
     .line 169
     iget-object v9, p0, Lcom/android/launcher3/home/AppWidgetResizeFrame;->mBottomHandle:Landroid/widget/ImageView;
 
-    const v10, 0x7f020111
+    const v10, 0x7f020114
 
     invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2286,7 +2286,7 @@
     .locals 2
 
     .prologue
-    const v1, 0x7f020112
+    const v1, 0x7f020115
 
     .line 672
     const/4 v0, 0x1
@@ -2321,7 +2321,7 @@
     .locals 2
 
     .prologue
-    const v1, 0x7f020111
+    const v1, 0x7f020114
 
     .line 664
     const/4 v0, 0x0
