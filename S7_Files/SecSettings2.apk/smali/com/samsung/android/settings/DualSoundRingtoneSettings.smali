@@ -916,7 +916,7 @@
     .param p2, "ringtoneType"    # I
 
     .prologue
-    const v7, 0x7f0b09e7
+    const v7, 0x7f0b09ea
 
     const/4 v6, 0x0
 

@@ -45,29 +45,29 @@
     .locals 1
 
     .prologue
-    .line 3661
+    .line 3680
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3662
+    .line 3681
     const-string/jumbo v0, ""
 
     iput-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationPackageInfo;->packageName:Ljava/lang/String;
 
-    .line 3663
+    .line 3682
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationPackageInfo;->permissions:Ljava/util/List;
 
-    .line 3664
+    .line 3683
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationPackageInfo;->signatures:Ljava/util/List;
 
-    .line 3661
+    .line 3680
     return-void
 .end method
 
@@ -77,7 +77,7 @@
     .locals 2
 
     .prologue
-    .line 3667
+    .line 3686
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -106,18 +106,18 @@
 
     move-result-object v0
 
-    .line 3668
+    .line 3687
     const-string/jumbo v1, "signatures : "
 
-    .line 3667
+    .line 3686
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 3668
+    .line 3687
     iget-object v1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationPackageInfo;->signatures:Ljava/util/List;
 
-    .line 3667
+    .line 3686
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0

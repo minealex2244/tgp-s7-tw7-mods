@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     .prologue
-    .line 177
+    .line 180
     iput-object p1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -44,12 +44,12 @@
 
     const/4 v7, 0x0
 
-    .line 179
+    .line 182
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 180
+    .line 183
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v4, "android.intent.extra.user_handle"
 
@@ -57,7 +57,7 @@
 
     move-result v3
 
-    .line 182
+    .line 185
     .local v3, "userId":I
     invoke-static {}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-get0()Z
 
@@ -65,7 +65,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 183
+    .line 186
     const-string/jumbo v4, "AppWidgetServiceImpl"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -98,7 +98,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 186
+    .line 189
     :cond_0
     const-string/jumbo v4, "android.intent.action.CONFIGURATION_CHANGED"
 
@@ -108,17 +108,17 @@
 
     if-eqz v4, :cond_2
 
-    .line 187
+    .line 190
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     invoke-static {v4}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap10(Lcom/android/server/appwidget/AppWidgetServiceImpl;)V
 
-    .line 178
+    .line 181
     :cond_1
     :goto_0
     return-void
 
-    .line 188
+    .line 191
     :cond_2
     const-string/jumbo v4, "android.intent.action.MANAGED_PROFILE_AVAILABLE"
 
@@ -128,27 +128,27 @@
 
     if-nez v4, :cond_3
 
-    .line 189
+    .line 192
     const-string/jumbo v4, "android.intent.action.MANAGED_PROFILE_UNAVAILABLE"
 
     invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    .line 188
+    .line 191
     if-eqz v4, :cond_4
 
-    .line 190
+    .line 193
     :cond_3
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
-    invoke-static {v4}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-get6(Lcom/android/server/appwidget/AppWidgetServiceImpl;)Ljava/lang/Object;
+    invoke-static {v4}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-get7(Lcom/android/server/appwidget/AppWidgetServiceImpl;)Ljava/lang/Object;
 
     move-result-object v5
 
     monitor-enter v5
 
-    .line 191
+    .line 194
     :try_start_0
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
@@ -160,7 +160,7 @@
 
     goto :goto_0
 
-    .line 190
+    .line 193
     :catchall_0
     move-exception v4
 
@@ -168,7 +168,7 @@
 
     throw v4
 
-    .line 193
+    .line 196
     :cond_4
     const-string/jumbo v4, "android.intent.action.PACKAGES_SUSPENDED"
 
@@ -178,14 +178,14 @@
 
     if-eqz v4, :cond_5
 
-    .line 194
+    .line 197
     const-string/jumbo v4, "android.intent.extra.changed_package_list"
 
     invoke-virtual {p2, v4}, Landroid/content/Intent;->getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
-    .line 195
+    .line 198
     .local v1, "packages":[Ljava/lang/String;
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
@@ -195,11 +195,11 @@
 
     const/4 v6, 0x1
 
-    invoke-static {v4, v1, v6, v5}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap22(Lcom/android/server/appwidget/AppWidgetServiceImpl;[Ljava/lang/String;ZI)V
+    invoke-static {v4, v1, v6, v5}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap23(Lcom/android/server/appwidget/AppWidgetServiceImpl;[Ljava/lang/String;ZI)V
 
     goto :goto_0
 
-    .line 196
+    .line 199
     .end local v1    # "packages":[Ljava/lang/String;
     :cond_5
     const-string/jumbo v4, "android.intent.action.PACKAGES_UNSUSPENDED"
@@ -210,14 +210,14 @@
 
     if-eqz v4, :cond_6
 
-    .line 197
+    .line 200
     const-string/jumbo v4, "android.intent.extra.changed_package_list"
 
     invoke-virtual {p2, v4}, Landroid/content/Intent;->getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
-    .line 198
+    .line 201
     .restart local v1    # "packages":[Ljava/lang/String;
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
@@ -225,11 +225,11 @@
 
     move-result v5
 
-    invoke-static {v4, v1, v7, v5}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap22(Lcom/android/server/appwidget/AppWidgetServiceImpl;[Ljava/lang/String;ZI)V
+    invoke-static {v4, v1, v7, v5}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap23(Lcom/android/server/appwidget/AppWidgetServiceImpl;[Ljava/lang/String;ZI)V
 
     goto :goto_0
 
-    .line 199
+    .line 202
     .end local v1    # "packages":[Ljava/lang/String;
     :cond_6
     const-string/jumbo v4, "com.sec.knox.UPDATE_WIDGET"
@@ -240,7 +240,7 @@
 
     if-eqz v4, :cond_7
 
-    .line 200
+    .line 203
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     const-string/jumbo v5, "android.intent.extra.user_handle"
@@ -253,7 +253,7 @@
 
     goto :goto_0
 
-    .line 202
+    .line 205
     :cond_7
     const-string/jumbo v4, "com.samsung.intent.action.EMERGENCY_STATE_CHANGED"
 
@@ -263,45 +263,71 @@
 
     if-eqz v4, :cond_9
 
-    .line 203
+    .line 206
     invoke-static {}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-get1()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 204
+    .line 207
     const-string/jumbo v4, "reason"
 
     invoke-virtual {p2, v4, v7}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 205
+    .line 208
     .local v2, "reason":I
     if-ltz v2, :cond_8
 
-    .line 206
+    .line 209
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     invoke-static {v4, v2}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-set0(Lcom/android/server/appwidget/AppWidgetServiceImpl;I)I
 
-    .line 209
+    .line 212
     :cond_8
     const/4 v4, 0x5
 
     if-ne v2, v4, :cond_1
 
-    .line 210
+    .line 213
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     invoke-static {v4, v7}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap11(Lcom/android/server/appwidget/AppWidgetServiceImpl;I)V
 
     goto/16 :goto_0
 
-    .line 214
+    .line 216
     .end local v2    # "reason":I
     :cond_9
+    const-string/jumbo v4, "sec.app.policy.UPDATE.AppWidget"
+
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_a
+
+    const-string/jumbo v4, "android.intent.action.BOOT_COMPLETED"
+
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_b
+
+    .line 217
+    :cond_a
+    iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
+
+    invoke-static {v4}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap22(Lcom/android/server/appwidget/AppWidgetServiceImpl;)V
+
+    goto/16 :goto_0
+
+    .line 219
+    :cond_b
     iget-object v4, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$1;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     invoke-static {v4, p2, v3}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap13(Lcom/android/server/appwidget/AppWidgetServiceImpl;Landroid/content/Intent;I)V

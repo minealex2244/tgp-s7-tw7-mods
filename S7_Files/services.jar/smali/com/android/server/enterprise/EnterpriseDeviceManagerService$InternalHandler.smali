@@ -31,13 +31,13 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 548
+    .line 549
     iput-object p1, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$InternalHandler;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
-    .line 549
+    .line 550
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 548
+    .line 549
     return-void
 .end method
 
@@ -48,7 +48,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 554
+    .line 555
     const-string/jumbo v1, "EnterpriseDeviceManagerService"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -97,26 +97,26 @@
 
     invoke-static {v1, v2}, Lcom/android/server/enterprise/log/Log;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 556
+    .line 557
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 553
+    .line 554
     :goto_0
     return-void
 
-    .line 559
+    .line 560
     :pswitch_0
     invoke-static {}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->updateAdminPermissions()V
 
     goto :goto_0
 
-    .line 563
+    .line 564
     :pswitch_1
     iget v0, p1, Landroid/os/Message;->arg2:I
 
-    .line 564
+    .line 565
     .local v0, "userId":I
     const-string/jumbo v1, "EnterpriseDeviceManagerService"
 
@@ -146,7 +146,7 @@
 
     invoke-static {v1, v2}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 565
+    .line 566
     iget-object v2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$InternalHandler;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -157,7 +157,7 @@
 
     goto :goto_0
 
-    .line 556
+    .line 557
     nop
 
     :pswitch_data_0

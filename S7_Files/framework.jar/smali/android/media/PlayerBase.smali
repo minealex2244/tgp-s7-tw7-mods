@@ -3,6 +3,20 @@
 .source "PlayerBase.java"
 
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/media/PlayerBase$IAppOpsCallbackWrapper;
+    }
+.end annotation
+
+
+# static fields
+.field private static final DEBUG_APP_OPS:Z = false
+
+.field private static final TAG:Ljava/lang/String; = "PlayerBase"
+
+
 # instance fields
 .field private final mAppOps:Lcom/android/internal/app/IAppOpsService;
 
@@ -22,12 +36,12 @@
 
 
 # direct methods
-.method static synthetic -get0(Landroid/media/PlayerBase;)Ljava/lang/Object;
-    .locals 1
+.method static synthetic -wrap0(Landroid/media/PlayerBase;)V
+    .locals 0
 
-    iget-object v0, p0, Landroid/media/PlayerBase;->mAppOpsLock:Ljava/lang/Object;
+    invoke-direct {p0}, Landroid/media/PlayerBase;->updateAppOpsPlayAudio()V
 
-    return-object v0
+    return-void
 .end method
 
 .method constructor <init>(Landroid/media/AudioAttributes;)V
@@ -37,36 +51,36 @@
     .prologue
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 59
+    .line 62
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 44
+    .line 46
     iput v2, p0, Landroid/media/PlayerBase;->mLeftVolume:F
 
-    .line 45
+    .line 47
     iput v2, p0, Landroid/media/PlayerBase;->mRightVolume:F
 
-    .line 46
+    .line 48
     const/4 v2, 0x0
 
     iput v2, p0, Landroid/media/PlayerBase;->mAuxEffectSendLevel:F
 
-    .line 51
+    .line 53
     const/4 v2, 0x1
 
     iput-boolean v2, p0, Landroid/media/PlayerBase;->mHasAppOpsPlayAudio:Z
 
-    .line 52
+    .line 54
     new-instance v2, Ljava/lang/Object;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     iput-object v2, p0, Landroid/media/PlayerBase;->mAppOpsLock:Ljava/lang/Object;
 
-    .line 60
+    .line 63
     if-nez p1, :cond_0
 
-    .line 61
+    .line 64
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v3, "Illegal null AudioAttributes"
@@ -75,18 +89,18 @@
 
     throw v2
 
-    .line 63
+    .line 66
     :cond_0
     iput-object p1, p0, Landroid/media/PlayerBase;->mAttributes:Landroid/media/AudioAttributes;
 
-    .line 64
+    .line 67
     const-string/jumbo v2, "appops"
 
     invoke-static {v2}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v0
 
-    .line 65
+    .line 68
     .local v0, "b":Landroid/os/IBinder;
     invoke-static {v0}, Lcom/android/internal/app/IAppOpsService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/app/IAppOpsService;
 
@@ -94,49 +108,78 @@
 
     iput-object v2, p0, Landroid/media/PlayerBase;->mAppOps:Lcom/android/internal/app/IAppOpsService;
 
-    .line 67
-    invoke-virtual {p0}, Landroid/media/PlayerBase;->updateAppOpsPlayAudio_sync()V
-
     .line 69
-    new-instance v2, Landroid/media/PlayerBase$1;
+    invoke-direct {p0}, Landroid/media/PlayerBase;->updateAppOpsPlayAudio()V
 
-    invoke-direct {v2, p0}, Landroid/media/PlayerBase$1;-><init>(Landroid/media/PlayerBase;)V
+    .line 71
+    new-instance v2, Landroid/media/PlayerBase$IAppOpsCallbackWrapper;
+
+    invoke-direct {v2, p0}, Landroid/media/PlayerBase$IAppOpsCallbackWrapper;-><init>(Landroid/media/PlayerBase;)V
 
     iput-object v2, p0, Landroid/media/PlayerBase;->mAppOpsCallback:Lcom/android/internal/app/IAppOpsCallback;
 
-    .line 79
+    .line 73
     :try_start_0
     iget-object v2, p0, Landroid/media/PlayerBase;->mAppOps:Lcom/android/internal/app/IAppOpsService;
 
-    .line 80
+    .line 74
     invoke-static {}, Landroid/app/ActivityThread;->currentPackageName()Ljava/lang/String;
 
     move-result-object v3
 
     iget-object v4, p0, Landroid/media/PlayerBase;->mAppOpsCallback:Lcom/android/internal/app/IAppOpsCallback;
 
-    .line 79
+    .line 73
     const/16 v5, 0x1c
 
     invoke-interface {v2, v5, v3, v4}, Lcom/android/internal/app/IAppOpsService;->startWatchingMode(ILjava/lang/String;Lcom/android/internal/app/IAppOpsCallback;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 59
+    .line 62
     :goto_0
     return-void
 
-    .line 81
+    .line 75
     :catch_0
     move-exception v1
 
-    .line 82
+    .line 76
     .local v1, "e":Landroid/os/RemoteException;
     const/4 v2, 0x0
 
     iput-boolean v2, p0, Landroid/media/PlayerBase;->mHasAppOpsPlayAudio:Z
 
     goto :goto_0
+.end method
+
+.method private updateAppOpsPlayAudio()V
+    .locals 2
+
+    .prologue
+    .line 125
+    iget-object v0, p0, Landroid/media/PlayerBase;->mAppOpsLock:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 126
+    :try_start_0
+    invoke-virtual {p0}, Landroid/media/PlayerBase;->updateAppOpsPlayAudio_sync()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit v0
+
+    .line 124
+    return-void
+
+    .line 125
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+
+    throw v1
 .end method
 
 
@@ -153,7 +196,7 @@
 
     invoke-interface {v1, v2}, Lcom/android/internal/app/IAppOpsService;->stopWatchingMode(Lcom/android/internal/app/IAppOpsCallback;)V
     :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 134
     :goto_0
@@ -163,7 +206,7 @@
     :catch_0
     move-exception v0
 
-    .local v0, "e":Landroid/os/RemoteException;
+    .local v0, "e":Ljava/lang/Exception;
     goto :goto_0
 .end method
 
@@ -172,16 +215,16 @@
     .param p1, "level"    # F
 
     .prologue
-    .line 121
+    .line 115
     iget-object v1, p0, Landroid/media/PlayerBase;->mAppOpsLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 122
+    .line 116
     :try_start_0
     iput p1, p0, Landroid/media/PlayerBase;->mAuxEffectSendLevel:F
 
-    .line 123
+    .line 117
     invoke-virtual {p0}, Landroid/media/PlayerBase;->isRestricted_sync()Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -190,7 +233,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 124
+    .line 118
     const/4 v0, 0x0
 
     monitor-exit v1
@@ -200,14 +243,14 @@
     :cond_0
     monitor-exit v1
 
-    .line 127
+    .line 121
     invoke-virtual {p0, p1}, Landroid/media/PlayerBase;->playerSetAuxEffectSendLevel(F)I
 
     move-result v0
 
     return v0
 
-    .line 121
+    .line 115
     :catchall_0
     move-exception v0
 
@@ -222,19 +265,19 @@
     .param p2, "rightVolume"    # F
 
     .prologue
-    .line 110
+    .line 104
     iget-object v1, p0, Landroid/media/PlayerBase;->mAppOpsLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 111
+    .line 105
     :try_start_0
     iput p1, p0, Landroid/media/PlayerBase;->mLeftVolume:F
 
-    .line 112
+    .line 106
     iput p2, p0, Landroid/media/PlayerBase;->mRightVolume:F
 
-    .line 113
+    .line 107
     invoke-virtual {p0}, Landroid/media/PlayerBase;->isRestricted_sync()Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -245,19 +288,19 @@
 
     monitor-exit v1
 
-    .line 114
+    .line 108
     return-void
 
     :cond_0
     monitor-exit v1
 
-    .line 117
+    .line 111
     invoke-virtual {p0, p1, p2}, Landroid/media/PlayerBase;->playerSetVolume(FF)V
 
-    .line 109
+    .line 103
     return-void
 
-    .line 110
+    .line 104
     :catchall_0
     move-exception v0
 
@@ -270,12 +313,12 @@
     .locals 3
 
     .prologue
-    .line 102
+    .line 96
     iget-object v1, p0, Landroid/media/PlayerBase;->mAppOpsLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 103
+    .line 97
     :try_start_0
     invoke-virtual {p0}, Landroid/media/PlayerBase;->isRestricted_sync()Z
 
@@ -283,7 +326,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 104
+    .line 98
     const/4 v0, 0x0
 
     const/4 v2, 0x0
@@ -295,10 +338,10 @@
     :cond_0
     monitor-exit v1
 
-    .line 101
+    .line 95
     return-void
 
-    .line 102
+    .line 96
     :catchall_0
     move-exception v0
 
@@ -312,10 +355,10 @@
     .param p1, "attr"    # Landroid/media/AudioAttributes;
 
     .prologue
-    .line 92
+    .line 86
     if-nez p1, :cond_0
 
-    .line 93
+    .line 87
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v1, "Illegal null AudioAttributes"
@@ -324,27 +367,27 @@
 
     throw v0
 
-    .line 95
+    .line 89
     :cond_0
     iget-object v1, p0, Landroid/media/PlayerBase;->mAppOpsLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 96
+    .line 90
     :try_start_0
     iput-object p1, p0, Landroid/media/PlayerBase;->mAttributes:Landroid/media/AudioAttributes;
 
-    .line 97
+    .line 91
     invoke-virtual {p0}, Landroid/media/PlayerBase;->updateAppOpsPlayAudio_sync()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit v1
 
-    .line 91
+    .line 85
     return-void
 
-    .line 95
+    .line 89
     :catchall_0
     move-exception v0
 

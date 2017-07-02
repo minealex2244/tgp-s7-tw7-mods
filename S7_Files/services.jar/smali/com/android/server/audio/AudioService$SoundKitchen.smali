@@ -52,25 +52,25 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 12334
+    .line 12445
     iput-object p1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12335
+    .line 12446
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
-    .line 12336
+    .line 12447
     iput v1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mPinnedDevices:I
 
-    .line 12337
+    .line 12448
     invoke-virtual {p0, v1}, Lcom/android/server/audio/AudioService$SoundKitchen;->setState(Z)V
 
-    .line 12334
+    .line 12445
     return-void
 .end method
 
@@ -80,7 +80,7 @@
     .param p2, "device"    # I
 
     .prologue
-    .line 12562
+    .line 12673
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -95,26 +95,26 @@
 
     move-result-object v0
 
-    .line 12563
+    .line 12674
     const-string/jumbo v1, ";"
 
-    .line 12562
+    .line 12673
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 12564
+    .line 12675
     const-string/jumbo v1, "multisound_setdevice_device"
 
-    .line 12562
+    .line 12673
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 12564
+    .line 12675
     const-string/jumbo v1, "="
 
-    .line 12562
+    .line 12673
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
@@ -129,7 +129,7 @@
 
     invoke-static {v0}, Landroid/media/AudioSystem;->setParameters(Ljava/lang/String;)I
 
-    .line 12561
+    .line 12672
     return-void
 .end method
 
@@ -138,7 +138,7 @@
     .param p1, "state"    # Z
 
     .prologue
-    .line 12557
+    .line 12668
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -159,7 +159,7 @@
 
     invoke-static {v0}, Landroid/media/AudioSystem;->setParameters(Ljava/lang/String;)I
 
-    .line 12556
+    .line 12667
     return-void
 .end method
 
@@ -169,7 +169,7 @@
     .param p2, "ratio"    # I
 
     .prologue
-    .line 12568
+    .line 12679
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -184,26 +184,26 @@
 
     move-result-object v0
 
-    .line 12569
+    .line 12680
     const-string/jumbo v1, ";"
 
-    .line 12568
+    .line 12679
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 12570
+    .line 12681
     const-string/jumbo v1, "multisound_setvolume_volume"
 
-    .line 12568
+    .line 12679
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 12570
+    .line 12681
     const-string/jumbo v1, "="
 
-    .line 12568
+    .line 12679
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
@@ -218,7 +218,7 @@
 
     invoke-static {v0}, Landroid/media/AudioSystem;->setParameters(Ljava/lang/String;)I
 
-    .line 12567
+    .line 12678
     return-void
 .end method
 
@@ -229,7 +229,7 @@
     .param p1, "pw"    # Ljava/io/PrintWriter;
 
     .prologue
-    .line 12535
+    .line 12646
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -268,14 +268,14 @@
 
     invoke-virtual {p1, v8}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 12536
+    .line 12647
     iget-object v8, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-virtual {v8}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
     move-result-object v6
 
-    .line 12537
+    .line 12648
     .local v6, "set":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;>;"
     invoke-interface {v6}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -295,7 +295,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 12538
+    .line 12649
     .local v2, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -307,7 +307,7 @@
 
     move-result v7
 
-    .line 12539
+    .line 12650
     .local v7, "uid":I
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -321,7 +321,7 @@
 
     move-result v0
 
-    .line 12540
+    .line 12651
     .local v0, "device":I
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -333,11 +333,11 @@
 
     move-result v5
 
-    .line 12541
+    .line 12652
     .local v5, "ratio":I
     const-string/jumbo v4, ""
 
-    .line 12543
+    .line 12654
     .local v4, "packageName":Ljava/lang/String;
     :try_start_0
     iget-object v8, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->this$0:Lcom/android/server/audio/AudioService;
@@ -378,7 +378,7 @@
 
     move-result-object v4
 
-    .line 12547
+    .line 12658
     :goto_1
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -436,11 +436,11 @@
 
     goto/16 :goto_0
 
-    .line 12544
+    .line 12655
     :catch_0
     move-exception v1
 
-    .line 12545
+    .line 12656
     .local v1, "e":Ljava/lang/Exception;
     const-string/jumbo v8, "AudioService"
 
@@ -450,7 +450,7 @@
 
     goto :goto_1
 
-    .line 12549
+    .line 12660
     .end local v0    # "device":I
     .end local v1    # "e":Ljava/lang/Exception;
     .end local v2    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
@@ -484,7 +484,7 @@
 
     invoke-virtual {p1, v8}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 12550
+    .line 12661
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -499,7 +499,7 @@
 
     const/4 v10, 0x3
 
-    invoke-static {v9, v10}, Lcom/android/server/audio/AudioService;->-wrap10(Lcom/android/server/audio/AudioService;I)I
+    invoke-static {v9, v10}, Lcom/android/server/audio/AudioService;->-wrap11(Lcom/android/server/audio/AudioService;I)I
 
     move-result v9
 
@@ -517,7 +517,7 @@
 
     invoke-virtual {p1, v8}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 12552
+    .line 12663
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -546,7 +546,7 @@
 
     invoke-virtual {p1, v8}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 12553
+    .line 12664
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -575,7 +575,7 @@
 
     invoke-virtual {p1, v8}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 12534
+    .line 12645
     return-void
 .end method
 
@@ -584,10 +584,10 @@
     .param p1, "uid"    # I
 
     .prologue
-    .line 12428
+    .line 12539
     const/4 v0, 0x0
 
-    .line 12430
+    .line 12541
     .local v0, "device":I
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
@@ -601,7 +601,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 12431
+    .line 12542
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -620,21 +620,21 @@
 
     move-result v0
 
-    .line 12433
+    .line 12544
     :cond_0
     const v1, 0x8000
 
     if-eq v0, v1, :cond_1
 
-    .line 12434
+    .line 12545
     iget-boolean v1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mState:Z
 
     if-nez v1, :cond_1
 
-    .line 12435
+    .line 12546
     const/4 v0, 0x0
 
-    .line 12438
+    .line 12549
     :cond_1
     return v0
 .end method
@@ -644,14 +644,14 @@
     .param p1, "device"    # I
 
     .prologue
-    .line 12495
+    .line 12606
     iget-object v4, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-virtual {v4}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
     move-result-object v3
 
-    .line 12496
+    .line 12607
     .local v3, "set":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;>;"
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -672,7 +672,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 12497
+    .line 12608
     .local v1, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -688,7 +688,7 @@
 
     if-ne v4, p1, :cond_0
 
-    .line 12499
+    .line 12610
     :try_start_0
     iget-object v4, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -740,11 +740,11 @@
 
     return-object v4
 
-    .line 12500
+    .line 12611
     :catch_0
     move-exception v0
 
-    .line 12501
+    .line 12612
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v4, "AudioService"
 
@@ -754,7 +754,7 @@
 
     goto :goto_0
 
-    .line 12505
+    .line 12616
     .end local v0    # "e":Ljava/lang/Exception;
     .end local v1    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     :cond_1
@@ -767,12 +767,12 @@
     .locals 2
 
     .prologue
-    .line 12488
+    .line 12599
     iget-boolean v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mState:Z
 
     if-eqz v0, :cond_0
 
-    .line 12489
+    .line 12600
     iget v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mPinnedDevices:I
 
     const v1, -0x8001
@@ -781,7 +781,7 @@
 
     return v0
 
-    .line 12491
+    .line 12602
     :cond_0
     const/4 v0, 0x0
 
@@ -792,7 +792,7 @@
     .locals 1
 
     .prologue
-    .line 12364
+    .line 12475
     iget-boolean v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mState:Z
 
     return v0
@@ -806,7 +806,7 @@
 
     const/4 v6, 0x0
 
-    .line 12465
+    .line 12576
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-virtual {v5}, Ljava/util/HashMap;->size()I
@@ -815,11 +815,11 @@
 
     new-array v3, v5, [I
 
-    .line 12467
+    .line 12578
     .local v3, "list":[I
     const/4 v2, 0x0
 
-    .line 12468
+    .line 12579
     .local v2, "i":I
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
@@ -827,7 +827,7 @@
 
     move-result-object v4
 
-    .line 12469
+    .line 12580
     .local v4, "set":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;>;"
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -847,7 +847,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 12470
+    .line 12581
     .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -861,7 +861,7 @@
 
     if-ne v5, v7, :cond_0
 
-    .line 12471
+    .line 12582
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v5
@@ -874,10 +874,10 @@
 
     aput v5, v3, v2
 
-    .line 12472
+    .line 12583
     const/4 v2, 0x1
 
-    .line 12477
+    .line 12588
     .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     :cond_1
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -898,7 +898,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 12478
+    .line 12589
     .restart local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -912,7 +912,7 @@
 
     if-eq v5, v7, :cond_2
 
-    .line 12479
+    .line 12590
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v5
@@ -925,12 +925,12 @@
 
     aput v5, v3, v2
 
-    .line 12480
+    .line 12591
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 12484
+    .line 12595
     .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     :cond_3
     return-object v3
@@ -941,7 +941,7 @@
     .param p1, "uid"    # I
 
     .prologue
-    .line 12458
+    .line 12569
     iget-object v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -954,7 +954,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 12459
+    .line 12570
     iget-object v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -973,7 +973,7 @@
 
     return v0
 
-    .line 12461
+    .line 12572
     :cond_0
     const/16 v0, 0x64
 
@@ -984,21 +984,21 @@
     .locals 8
 
     .prologue
-    .line 12509
+    .line 12620
     const-string/jumbo v6, "AudioService"
 
     const-string/jumbo v7, "initByAudiosServerDied"
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12511
+    .line 12622
     iget-object v6, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-virtual {v6}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
     move-result-object v4
 
-    .line 12512
+    .line 12623
     .local v4, "set":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;>;"
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1018,7 +1018,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 12513
+    .line 12624
     .local v1, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -1030,7 +1030,7 @@
 
     move-result v5
 
-    .line 12514
+    .line 12625
     .local v5, "uid":I
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -1044,7 +1044,7 @@
 
     move-result v0
 
-    .line 12515
+    .line 12626
     .local v0, "device":I
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -1056,16 +1056,16 @@
 
     move-result v3
 
-    .line 12516
+    .line 12627
     .local v3, "ratio":I
     invoke-direct {p0, v5, v0}, Lcom/android/server/audio/AudioService$SoundKitchen;->setDeviceToNative(II)V
 
-    .line 12517
+    .line 12628
     invoke-direct {p0, v5, v3}, Lcom/android/server/audio/AudioService$SoundKitchen;->setVolumeToNative(II)V
 
     goto :goto_0
 
-    .line 12520
+    .line 12631
     .end local v0    # "device":I
     .end local v1    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     .end local v3    # "ratio":I
@@ -1075,7 +1075,7 @@
 
     invoke-direct {p0, v6}, Lcom/android/server/audio/AudioService$SoundKitchen;->setStateToNative(Z)V
 
-    .line 12508
+    .line 12619
     return-void
 .end method
 
@@ -1086,7 +1086,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 12524
+    .line 12635
     const-string/jumbo v0, "AudioService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1109,7 +1109,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12525
+    .line 12636
     iget-object v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1122,7 +1122,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 12526
+    .line 12637
     iget-object v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1131,20 +1131,20 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12527
+    .line 12638
     invoke-direct {p0, p1, v3}, Lcom/android/server/audio/AudioService$SoundKitchen;->setDeviceToNative(II)V
 
-    .line 12528
+    .line 12639
     const/16 v0, 0x64
 
     invoke-direct {p0, p1, v0}, Lcom/android/server/audio/AudioService$SoundKitchen;->setVolumeToNative(II)V
 
-    .line 12529
+    .line 12640
     const/4 v0, 0x1
 
     return v0
 
-    .line 12531
+    .line 12642
     :cond_0
     return v3
 .end method
@@ -1163,7 +1163,7 @@
 
     const/4 v8, 0x0
 
-    .line 12368
+    .line 12479
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1176,7 +1176,7 @@
 
     check-cast v3, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
 
-    .line 12370
+    .line 12481
     .local v3, "item":Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
     if-eqz v3, :cond_0
 
@@ -1186,30 +1186,30 @@
 
     if-ne v5, p2, :cond_0
 
-    .line 12371
+    .line 12482
     const-string/jumbo v5, "AudioService"
 
     const-string/jumbo v6, "same device pin."
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12372
+    .line 12483
     return-void
 
-    .line 12375
+    .line 12486
     :cond_0
     if-eqz p2, :cond_3
 
     if-eq p2, v11, :cond_3
 
-    .line 12377
+    .line 12488
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-virtual {v5}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
     move-result-object v4
 
-    .line 12378
+    .line 12489
     .local v4, "set":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;>;"
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1230,7 +1230,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 12379
+    .line 12490
     .local v1, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -1244,7 +1244,7 @@
 
     if-eq v5, v11, :cond_1
 
-    .line 12382
+    .line 12493
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v5
@@ -1257,7 +1257,7 @@
 
     if-eq p1, v5, :cond_1
 
-    .line 12383
+    .line 12494
     iget-object v6, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -1270,9 +1270,9 @@
 
     move-result v5
 
-    invoke-static {v6, v5}, Lcom/android/server/audio/AudioService;->-wrap51(Lcom/android/server/audio/AudioService;I)V
+    invoke-static {v6, v5}, Lcom/android/server/audio/AudioService;->-wrap52(Lcom/android/server/audio/AudioService;I)V
 
-    .line 12385
+    .line 12496
     const-wide/16 v6, 0xc8
 
     :try_start_0
@@ -1280,7 +1280,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12389
+    .line 12500
     :goto_1
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -1290,7 +1290,7 @@
 
     invoke-virtual {v5, v8}, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->setDevice(I)V
 
-    .line 12391
+    .line 12502
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -1315,7 +1315,7 @@
 
     if-ne v5, v10, :cond_2
 
-    .line 12392
+    .line 12503
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -1324,7 +1324,7 @@
 
     invoke-virtual {v5, v6}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12394
+    .line 12505
     :cond_2
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -1338,7 +1338,7 @@
 
     invoke-direct {p0, v5, v8}, Lcom/android/server/audio/AudioService$SoundKitchen;->setDeviceToNative(II)V
 
-    .line 12396
+    .line 12507
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v5}, Lcom/android/server/audio/AudioService;->-get43(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/MediaFocusControl;
@@ -1359,11 +1359,11 @@
 
     goto/16 :goto_0
 
-    .line 12386
+    .line 12497
     :catch_0
     move-exception v0
 
-    .line 12387
+    .line 12498
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v5, "AudioService"
 
@@ -1389,7 +1389,7 @@
 
     goto :goto_1
 
-    .line 12402
+    .line 12513
     .end local v0    # "e":Ljava/lang/Exception;
     .end local v1    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     .end local v2    # "entry$iterator":Ljava/util/Iterator;
@@ -1397,13 +1397,13 @@
     :cond_3
     if-nez v3, :cond_6
 
-    .line 12403
+    .line 12514
     new-instance v3, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
 
     .end local v3    # "item":Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
     invoke-direct {v3, p0, p2, v10}, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;-><init>(Lcom/android/server/audio/AudioService$SoundKitchen;II)V
 
-    .line 12407
+    .line 12518
     .restart local v3    # "item":Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
     :goto_2
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
@@ -1414,7 +1414,7 @@
 
     invoke-virtual {v5, v6, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12409
+    .line 12520
     invoke-virtual {v3, v9}, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->getDevice(Z)I
 
     move-result v5
@@ -1427,7 +1427,7 @@
 
     if-ne v5, v10, :cond_4
 
-    .line 12410
+    .line 12521
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1436,18 +1436,18 @@
 
     invoke-virtual {v5, v6}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12412
+    .line 12523
     :cond_4
     iput v8, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mPinnedDevices:I
 
-    .line 12414
+    .line 12525
     iget-object v5, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-virtual {v5}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
     move-result-object v4
 
-    .line 12415
+    .line 12526
     .restart local v4    # "set":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;>;"
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1468,7 +1468,7 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 12416
+    .line 12527
     .restart local v1    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -1482,7 +1482,7 @@
 
     if-eqz v5, :cond_5
 
-    .line 12417
+    .line 12528
     iget v6, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mPinnedDevices:I
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1501,7 +1501,7 @@
 
     goto :goto_3
 
-    .line 12405
+    .line 12516
     .end local v1    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;"
     .end local v2    # "entry$iterator":Ljava/util/Iterator;
     .end local v4    # "set":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;>;"
@@ -1510,20 +1510,20 @@
 
     goto :goto_2
 
-    .line 12420
+    .line 12531
     .restart local v2    # "entry$iterator":Ljava/util/Iterator;
     .restart local v4    # "set":Ljava/util/Set;, "Ljava/util/Set<Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;>;>;"
     :cond_7
     if-eqz p2, :cond_8
 
-    .line 12421
+    .line 12532
     invoke-direct {p0, p1, p2}, Lcom/android/server/audio/AudioService$SoundKitchen;->setDeviceToNative(II)V
 
-    .line 12367
+    .line 12478
     :goto_4
     return-void
 
-    .line 12423
+    .line 12534
     :cond_8
     invoke-direct {p0, p1, v8}, Lcom/android/server/audio/AudioService$SoundKitchen;->setDeviceToNative(II)V
 
@@ -1535,20 +1535,20 @@
     .param p1, "state"    # Z
 
     .prologue
-    .line 12341
+    .line 12452
     iget-boolean v3, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mState:Z
 
     if-eq p1, v3, :cond_2
 
-    .line 12342
+    .line 12453
     iput-boolean p1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mState:Z
 
-    .line 12344
+    .line 12455
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$SoundKitchen;->getUidList()[I
 
     move-result-object v2
 
-    .line 12346
+    .line 12457
     .local v2, "list":[I
     const/4 v1, 0x0
 
@@ -1558,10 +1558,10 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 12347
+    .line 12458
     if-nez p1, :cond_0
 
-    .line 12348
+    .line 12459
     iget-object v3, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v3}, Lcom/android/server/audio/AudioService;->-get63(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/AudioService$SoundKitchen;
@@ -1578,14 +1578,14 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 12349
+    .line 12460
     iget-object v3, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->this$0:Lcom/android/server/audio/AudioService;
 
     aget v4, v2, v1
 
-    invoke-static {v3, v4}, Lcom/android/server/audio/AudioService;->-wrap51(Lcom/android/server/audio/AudioService;I)V
+    invoke-static {v3, v4}, Lcom/android/server/audio/AudioService;->-wrap52(Lcom/android/server/audio/AudioService;I)V
 
-    .line 12351
+    .line 12462
     :cond_0
     iget-object v3, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -1597,12 +1597,12 @@
 
     invoke-virtual {v3, v4}, Lcom/android/server/audio/MediaFocusControl;->updateFocusRequester(I)V
 
-    .line 12346
+    .line 12457
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 12355
+    .line 12466
     :cond_1
     const-wide/16 v4, 0xc8
 
@@ -1611,23 +1611,23 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12359
+    .line 12470
     :goto_1
     invoke-direct {p0, p1}, Lcom/android/server/audio/AudioService$SoundKitchen;->setStateToNative(Z)V
 
-    .line 12340
+    .line 12451
     .end local v1    # "i":I
     .end local v2    # "list":[I
     :cond_2
     return-void
 
-    .line 12356
+    .line 12467
     .restart local v1    # "i":I
     .restart local v2    # "list":[I
     :catch_0
     move-exception v0
 
-    .line 12357
+    .line 12468
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v3, "AudioService"
 
@@ -1662,7 +1662,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 12442
+    .line 12553
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1675,17 +1675,17 @@
 
     check-cast v0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
 
-    .line 12444
+    .line 12555
     .local v0, "item":Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
     if-nez v0, :cond_1
 
-    .line 12445
+    .line 12556
     new-instance v0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
 
     .end local v0    # "item":Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
     invoke-direct {v0, p0, v3, p2}, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;-><init>(Lcom/android/server/audio/AudioService$SoundKitchen;II)V
 
-    .line 12449
+    .line 12560
     .restart local v0    # "item":Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;
     :goto_0
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
@@ -1696,7 +1696,7 @@
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12451
+    .line 12562
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->getDevice(Z)I
@@ -1713,7 +1713,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 12452
+    .line 12563
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundKitchen;->mList:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1722,14 +1722,14 @@
 
     invoke-virtual {v1, v2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12454
+    .line 12565
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/android/server/audio/AudioService$SoundKitchen;->setVolumeToNative(II)V
 
-    .line 12441
+    .line 12552
     return-void
 
-    .line 12447
+    .line 12558
     :cond_1
     invoke-virtual {v0, p2}, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->setVolume(I)V
 

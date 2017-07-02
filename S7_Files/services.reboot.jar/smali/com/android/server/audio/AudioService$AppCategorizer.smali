@@ -90,62 +90,62 @@
 
     const/4 v4, 0x0
 
-    .line 9696
+    .line 9752
     iput-object p1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9680
+    .line 9736
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sNewbiesList:Ljava/util/ArrayList;
 
-    .line 9681
+    .line 9737
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sAppList:Ljava/util/Hashtable;
 
-    .line 9685
+    .line 9741
     iput-object v4, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mGameManagerService:Lcom/samsung/android/game/IGameManagerService;
 
-    .line 9686
+    .line 9742
     iput v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->MSG_PACKAGE_ADDED:I
 
-    .line 9687
+    .line 9743
     iput v2, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->MSG_CHECK_GOOGLE_SERVER:I
 
-    .line 9688
+    .line 9744
     const/16 v0, 0x2710
 
     iput v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->REVIEW_DURATION:I
 
-    .line 9693
+    .line 9749
     const-string/jumbo v0, "https://play.google.com/store/apps/details?id="
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->GOOGLE_PLAY_SITE:Ljava/lang/String;
 
-    .line 9882
+    .line 9938
     new-instance v0, Lcom/android/server/audio/AudioService$AppCategorizer$1;
 
     invoke-direct {v0, p0}, Lcom/android/server/audio/AudioService$AppCategorizer$1;-><init>(Lcom/android/server/audio/AudioService$AppCategorizer;)V
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 9697
+    .line 9753
     iput-object p2, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mContext:Landroid/content/Context;
 
-    .line 9698
+    .line 9754
     invoke-static {p1}, Lcom/android/server/audio/AudioService;->-get59(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sDatabase:Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;
 
-    .line 9699
+    .line 9755
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -154,7 +154,7 @@
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mPackageManager:Landroid/content/pm/PackageManager;
 
-    .line 9702
+    .line 9758
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string/jumbo v1, "Category Thread"
@@ -163,12 +163,12 @@
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mCategoryThread:Landroid/os/HandlerThread;
 
-    .line 9703
+    .line 9759
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mCategoryThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 9704
+    .line 9760
     new-instance v0, Lcom/android/server/audio/AudioService$AppCategorizer$2;
 
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mCategoryThread:Landroid/os/HandlerThread;
@@ -181,10 +181,10 @@
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mHandler:Landroid/os/Handler;
 
-    .line 9728
+    .line 9784
     const-string/jumbo v12, "SELECT * FROM category_packages"
 
-    .line 9729
+    .line 9785
     .local v12, "query":Ljava/lang/String;
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sDatabase:Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;
 
@@ -192,13 +192,13 @@
 
     move-result-object v9
 
-    .line 9731
+    .line 9787
     .local v9, "db":Landroid/database/sqlite/SQLiteDatabase;
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sAppList:Ljava/util/Hashtable;
 
     monitor-enter v1
 
-    .line 9732
+    .line 9788
     const/4 v0, 0x0
 
     :try_start_0
@@ -206,18 +206,18 @@
 
     move-result-object v8
 
-    .line 9733
+    .line 9789
     .local v8, "cursor":Landroid/database/Cursor;
     if-eqz v8, :cond_2
 
-    .line 9734
+    .line 9790
     invoke-interface {v8}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 9736
+    .line 9792
     :cond_0
     const/4 v0, 0x1
 
@@ -225,7 +225,7 @@
 
     move-result-object v11
 
-    .line 9737
+    .line 9793
     .local v11, "packageName":Ljava/lang/String;
     const/4 v0, 0x2
 
@@ -233,20 +233,20 @@
 
     move-result-object v7
 
-    .line 9738
+    .line 9794
     .local v7, "category":Ljava/lang/String;
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sAppList:Ljava/util/Hashtable;
 
     invoke-virtual {v0, v11, v7}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 9739
+    .line 9795
     invoke-interface {v8}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 9741
+    .line 9797
     .end local v7    # "category":Ljava/lang/String;
     .end local v11    # "packageName":Ljava/lang/String;
     :cond_1
@@ -257,23 +257,23 @@
     :cond_2
     monitor-exit v1
 
-    .line 9746
+    .line 9802
     new-instance v3, Landroid/content/IntentFilter;
 
     invoke-direct {v3}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 9747
+    .line 9803
     .local v3, "filter":Landroid/content/IntentFilter;
     const-string/jumbo v0, "android.intent.action.PACKAGE_ADDED"
 
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 9748
+    .line 9804
     const-string/jumbo v0, "package"
 
     invoke-virtual {v3, v0}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
-    .line 9749
+    .line 9805
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     sget-object v2, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
@@ -284,24 +284,24 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/content/Context;->registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    .line 9752
+    .line 9808
     :try_start_1
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mGameManagerService:Lcom/samsung/android/game/IGameManagerService;
 
     if-nez v0, :cond_3
 
-    .line 9753
+    .line 9809
     const-string/jumbo v0, "gamemanager"
 
     invoke-static {v0}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
     move-result-object v6
 
-    .line 9754
+    .line 9810
     .local v6, "b":Landroid/os/IBinder;
     if-eqz v6, :cond_3
 
-    .line 9755
+    .line 9811
     invoke-static {v6}, Lcom/samsung/android/game/IGameManagerService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/samsung/android/game/IGameManagerService;
 
     move-result-object v0
@@ -310,13 +310,13 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 9696
+    .line 9752
     .end local v6    # "b":Landroid/os/IBinder;
     :cond_3
     :goto_0
     return-void
 
-    .line 9731
+    .line 9787
     .end local v3    # "filter":Landroid/content/IntentFilter;
     .end local v8    # "cursor":Landroid/database/Cursor;
     :catchall_0
@@ -326,13 +326,13 @@
 
     throw v0
 
-    .line 9758
+    .line 9814
     .restart local v3    # "filter":Landroid/content/IntentFilter;
     .restart local v8    # "cursor":Landroid/database/Cursor;
     :catch_0
     move-exception v10
 
-    .line 9759
+    .line 9815
     .local v10, "e":Ljava/lang/Exception;
     invoke-virtual {v10}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -345,7 +345,7 @@
     .locals 6
 
     .prologue
-    .line 9764
+    .line 9820
     new-instance v3, Landroid/content/Intent;
 
     const-string/jumbo v4, "android.intent.action.MAIN"
@@ -354,13 +354,13 @@
 
     invoke-direct {v3, v4, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 9765
+    .line 9821
     .local v3, "intent":Landroid/content/Intent;
     const-string/jumbo v4, "android.intent.category.LAUNCHER"
 
     invoke-virtual {v3, v4}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 9766
+    .line 9822
     iget-object v4, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -373,7 +373,7 @@
 
     move-result-object v0
 
-    .line 9768
+    .line 9824
     .local v0, "AppInfos":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
     const/4 v1, 0x0
 
@@ -385,7 +385,7 @@
 
     if-ge v1, v4, :cond_0
 
-    .line 9769
+    .line 9825
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -396,7 +396,7 @@
 
     iget-object v2, v4, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    .line 9770
+    .line 9826
     .local v2, "info":Landroid/content/pm/ApplicationInfo;
     iget-object v4, v2, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -404,12 +404,12 @@
 
     invoke-virtual {p0, v4, v5}, Lcom/android/server/audio/AudioService$AppCategorizer;->addToJobQueue(Ljava/lang/String;Z)V
 
-    .line 9768
+    .line 9824
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 9763
+    .line 9819
     .end local v2    # "info":Landroid/content/pm/ApplicationInfo;
     :cond_0
     return-void
@@ -421,19 +421,19 @@
     .param p2, "skipCheck"    # Z
 
     .prologue
-    .line 9864
+    .line 9920
     if-nez p1, :cond_0
 
-    .line 9865
+    .line 9921
     return-void
 
-    .line 9867
+    .line 9923
     :cond_0
     iget-object v2, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sAppList:Ljava/util/Hashtable;
 
     monitor-enter v2
 
-    .line 9868
+    .line 9924
     :try_start_0
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sNewbiesList:Ljava/util/ArrayList;
 
@@ -451,7 +451,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 9869
+    .line 9925
     :cond_1
     const-string/jumbo v1, "AudioService"
 
@@ -479,10 +479,10 @@
 
     monitor-exit v2
 
-    .line 9870
+    .line 9926
     return-void
 
-    .line 9872
+    .line 9928
     :cond_2
     :try_start_1
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sNewbiesList:Ljava/util/ArrayList;
@@ -493,33 +493,33 @@
 
     monitor-exit v2
 
-    .line 9875
+    .line 9931
     if-nez p2, :cond_3
 
-    .line 9876
+    .line 9932
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 9877
+    .line 9933
     .local v0, "msg":Landroid/os/Message;
     const/4 v1, 0x2
 
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 9878
+    .line 9934
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 9863
+    .line 9919
     .end local v0    # "msg":Landroid/os/Message;
     :cond_3
     return-void
 
-    .line 9867
+    .line 9923
     :catchall_0
     move-exception v1
 
@@ -532,10 +532,10 @@
     .locals 24
 
     .prologue
-    .line 9781
+    .line 9837
     const/4 v14, 0x0
 
-    .line 9782
+    .line 9838
     .local v14, "packageName":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -545,7 +545,7 @@
 
     monitor-enter v21
 
-    .line 9783
+    .line 9839
     :try_start_0
     move-object/from16 v0, p0
 
@@ -559,7 +559,7 @@
 
     if-nez v20, :cond_0
 
-    .line 9784
+    .line 9840
     const-string/jumbo v20, "AudioService"
 
     const-string/jumbo v22, "checkGoogleServer: work queue is empty."
@@ -574,10 +574,10 @@
 
     monitor-exit v21
 
-    .line 9785
+    .line 9841
     return-void
 
-    .line 9787
+    .line 9843
     :cond_0
     :try_start_1
     move-object/from16 v0, p0
@@ -604,14 +604,14 @@
     .local v14, "packageName":Ljava/lang/String;
     monitor-exit v21
 
-    .line 9789
+    .line 9845
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/audio/AudioService$AppCategorizer;->isOnline()Z
 
     move-result v20
 
     if-nez v20, :cond_1
 
-    .line 9790
+    .line 9846
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/audio/AudioService$AppCategorizer;->mHandler:Landroid/os/Handler;
@@ -624,7 +624,7 @@
 
     move-result-object v13
 
-    .line 9791
+    .line 9847
     .local v13, "msg":Landroid/os/Message;
     move-object/from16 v0, p0
 
@@ -640,17 +640,17 @@
 
     invoke-virtual {v0, v13, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 9792
+    .line 9848
     const-string/jumbo v20, "AudioService"
 
     const-string/jumbo v21, "checkGoogleServer: it is offline."
 
     invoke-static/range {v20 .. v21}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9793
+    .line 9849
     return-void
 
-    .line 9782
+    .line 9838
     .end local v13    # "msg":Landroid/os/Message;
     .end local v14    # "packageName":Ljava/lang/String;
     :catchall_0
@@ -660,7 +660,7 @@
 
     throw v20
 
-    .line 9796
+    .line 9852
     .restart local v14    # "packageName":Ljava/lang/String;
     :cond_1
     new-instance v20, Ljava/lang/StringBuilder;
@@ -683,29 +683,29 @@
 
     move-result-object v19
 
-    .line 9798
+    .line 9854
     .local v19, "uri":Ljava/lang/String;
     new-instance v9, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     invoke-direct {v9}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V
 
-    .line 9799
+    .line 9855
     .local v9, "httpclient":Lorg/apache/http/client/HttpClient;
     const/16 v16, 0x0
 
-    .line 9800
+    .line 9856
     .local v16, "response":Lorg/apache/http/HttpResponse;
     const/16 v17, 0x0
 
-    .line 9801
+    .line 9857
     .local v17, "responseString":Ljava/lang/String;
     const/4 v4, 0x0
 
-    .line 9802
+    .line 9858
     .local v4, "br":Ljava/io/BufferedReader;
     const/4 v10, 0x0
 
-    .line 9804
+    .line 9860
     .local v10, "is":Ljava/io/InputStream;
     :try_start_2
     new-instance v20, Lorg/apache/http/client/methods/HttpGet;
@@ -722,13 +722,13 @@
 
     move-result-object v16
 
-    .line 9805
+    .line 9861
     .local v16, "response":Lorg/apache/http/HttpResponse;
     invoke-interface/range {v16 .. v16}, Lorg/apache/http/HttpResponse;->getStatusLine()Lorg/apache/http/StatusLine;
 
     move-result-object v18
 
-    .line 9806
+    .line 9862
     .local v18, "statusLine":Lorg/apache/http/StatusLine;
     invoke-interface/range {v16 .. v16}, Lorg/apache/http/HttpResponse;->getEntity()Lorg/apache/http/HttpEntity;
 
@@ -738,7 +738,7 @@
 
     move-result-object v10
 
-    .line 9807
+    .line 9863
     .local v10, "is":Ljava/io/InputStream;
     invoke-interface/range {v18 .. v18}, Lorg/apache/http/StatusLine;->getStatusCode()I
 
@@ -752,7 +752,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 9808
+    .line 9864
     new-instance v5, Ljava/io/BufferedReader;
 
     new-instance v20, Ljava/io/InputStreamReader;
@@ -768,18 +768,18 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 9810
+    .line 9866
     .end local v4    # "br":Ljava/io/BufferedReader;
     .local v5, "br":Ljava/io/BufferedReader;
     :try_start_3
     const-string/jumbo v20, "class=\"document-subtitle category\"\\shref=\"/store/apps/category/(\\w+)"
 
-    .line 9809
+    .line 9865
     invoke-static/range {v20 .. v20}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v15
 
-    .line 9812
+    .line 9868
     .local v15, "pattern":Ljava/util/regex/Pattern;
     :cond_2
     invoke-virtual {v5}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -789,12 +789,12 @@
     .local v11, "line":Ljava/lang/String;
     if-eqz v11, :cond_c
 
-    .line 9813
+    .line 9869
     invoke-virtual {v15, v11}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v12
 
-    .line 9814
+    .line 9870
     .local v12, "m":Ljava/util/regex/Matcher;
     invoke-virtual {v12}, Ljava/util/regex/Matcher;->find()Z
 
@@ -802,7 +802,7 @@
 
     if-eqz v20, :cond_2
 
-    .line 9815
+    .line 9871
     const/16 v20, 0x1
 
     move/from16 v0, v20
@@ -817,7 +817,7 @@
     .local v17, "responseString":Ljava/lang/String;
     move-object v4, v5
 
-    .line 9823
+    .line 9879
     .end local v5    # "br":Ljava/io/BufferedReader;
     .end local v11    # "line":Ljava/lang/String;
     .end local v12    # "m":Ljava/util/regex/Matcher;
@@ -827,24 +827,24 @@
     :goto_0
     if-eqz v4, :cond_4
 
-    .line 9825
+    .line 9881
     :try_start_4
     invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
 
-    .line 9830
+    .line 9886
     :cond_4
     :goto_1
     if-eqz v10, :cond_5
 
-    .line 9832
+    .line 9888
     :try_start_5
     invoke-virtual {v10}, Ljava/io/InputStream;->close()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
 
-    .line 9837
+    .line 9893
     :cond_5
     :goto_2
     invoke-interface {v9}, Lorg/apache/http/client/HttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
@@ -853,7 +853,7 @@
 
     invoke-interface/range {v20 .. v20}, Lorg/apache/http/conn/ClientConnectionManager;->shutdown()V
 
-    .line 9840
+    .line 9896
     .end local v10    # "is":Ljava/io/InputStream;
     .end local v16    # "response":Lorg/apache/http/HttpResponse;
     .end local v18    # "statusLine":Lorg/apache/http/StatusLine;
@@ -866,7 +866,7 @@
 
     monitor-enter v21
 
-    .line 9841
+    .line 9897
     :try_start_6
     move-object/from16 v0, p0
 
@@ -880,7 +880,7 @@
 
     if-lez v20, :cond_6
 
-    .line 9842
+    .line 9898
     const-string/jumbo v20, "AudioService"
 
     new-instance v22, Ljava/lang/StringBuilder;
@@ -923,7 +923,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9843
+    .line 9899
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/audio/AudioService$AppCategorizer;->sNewbiesList:Ljava/util/ArrayList;
@@ -943,10 +943,10 @@
     :cond_6
     monitor-exit v21
 
-    .line 9846
+    .line 9902
     move-object/from16 v6, v17
 
-    .line 9848
+    .line 9904
     .local v6, "category":Ljava/lang/String;
     if-eqz v6, :cond_b
 
@@ -962,7 +962,7 @@
 
     if-gt v0, v1, :cond_b
 
-    .line 9849
+    .line 9905
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/audio/AudioService$AppCategorizer;->sAppList:Ljava/util/Hashtable;
@@ -971,7 +971,7 @@
 
     monitor-enter v21
 
-    .line 9850
+    .line 9906
     :try_start_7
     move-object/from16 v0, p0
 
@@ -987,7 +987,7 @@
 
     monitor-exit v21
 
-    .line 9852
+    .line 9908
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/audio/AudioService$AppCategorizer;->sDatabase:Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;
@@ -998,7 +998,7 @@
 
     invoke-virtual {v0, v14, v6}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->setCategory(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9859
+    .line 9915
     :goto_4
     move-object/from16 v0, p0
 
@@ -1012,7 +1012,7 @@
 
     move-result-object v13
 
-    .line 9860
+    .line 9916
     .restart local v13    # "msg":Landroid/os/Message;
     move-object/from16 v0, p0
 
@@ -1024,10 +1024,10 @@
 
     invoke-virtual {v0, v13}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 9780
+    .line 9836
     return-void
 
-    .line 9826
+    .line 9882
     .end local v6    # "category":Ljava/lang/String;
     .end local v13    # "msg":Landroid/os/Message;
     .restart local v10    # "is":Ljava/io/InputStream;
@@ -1036,24 +1036,24 @@
     :catch_0
     move-exception v7
 
-    .line 9827
+    .line 9883
     .local v7, "e":Ljava/io/IOException;
     invoke-virtual {v7}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_1
 
-    .line 9833
+    .line 9889
     .end local v7    # "e":Ljava/io/IOException;
     :catch_1
     move-exception v7
 
-    .line 9834
+    .line 9890
     .restart local v7    # "e":Ljava/io/IOException;
     invoke-virtual {v7}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_2
 
-    .line 9820
+    .line 9876
     .end local v7    # "e":Ljava/io/IOException;
     .end local v10    # "is":Ljava/io/InputStream;
     .end local v16    # "response":Lorg/apache/http/HttpResponse;
@@ -1063,7 +1063,7 @@
     :catch_2
     move-exception v8
 
-    .line 9821
+    .line 9877
     .end local v4    # "br":Ljava/io/BufferedReader;
     .local v8, "e":Ljava/lang/Exception;
     :goto_5
@@ -1072,27 +1072,27 @@
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_1
 
-    .line 9823
+    .line 9879
     if-eqz v4, :cond_7
 
-    .line 9825
+    .line 9881
     :try_start_9
     invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_3
 
-    .line 9830
+    .line 9886
     :cond_7
     :goto_6
     if-eqz v10, :cond_8
 
-    .line 9832
+    .line 9888
     :try_start_a
     invoke-virtual {v10}, Ljava/io/InputStream;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_4
 
-    .line 9837
+    .line 9893
     :cond_8
     :goto_7
     invoke-interface {v9}, Lorg/apache/http/client/HttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
@@ -1103,55 +1103,55 @@
 
     goto/16 :goto_3
 
-    .line 9826
+    .line 9882
     :catch_3
     move-exception v7
 
-    .line 9827
+    .line 9883
     .restart local v7    # "e":Ljava/io/IOException;
     invoke-virtual {v7}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_6
 
-    .line 9833
+    .line 9889
     .end local v7    # "e":Ljava/io/IOException;
     :catch_4
     move-exception v7
 
-    .line 9834
+    .line 9890
     .restart local v7    # "e":Ljava/io/IOException;
     invoke-virtual {v7}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_7
 
-    .line 9822
+    .line 9878
     .end local v7    # "e":Ljava/io/IOException;
     .end local v8    # "e":Ljava/lang/Exception;
     :catchall_1
     move-exception v20
 
-    .line 9823
+    .line 9879
     :goto_8
     if-eqz v4, :cond_9
 
-    .line 9825
+    .line 9881
     :try_start_b
     invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_b
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_5
 
-    .line 9830
+    .line 9886
     :cond_9
     :goto_9
     if-eqz v10, :cond_a
 
-    .line 9832
+    .line 9888
     :try_start_c
     invoke-virtual {v10}, Ljava/io/InputStream;->close()V
     :try_end_c
     .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_6
 
-    .line 9837
+    .line 9893
     :cond_a
     :goto_a
     invoke-interface {v9}, Lorg/apache/http/client/HttpClient;->getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
@@ -1160,31 +1160,31 @@
 
     invoke-interface/range {v21 .. v21}, Lorg/apache/http/conn/ClientConnectionManager;->shutdown()V
 
-    .line 9822
+    .line 9878
     throw v20
 
-    .line 9826
+    .line 9882
     :catch_5
     move-exception v7
 
-    .line 9827
+    .line 9883
     .restart local v7    # "e":Ljava/io/IOException;
     invoke-virtual {v7}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_9
 
-    .line 9833
+    .line 9889
     .end local v7    # "e":Ljava/io/IOException;
     :catch_6
     move-exception v7
 
-    .line 9834
+    .line 9890
     .restart local v7    # "e":Ljava/io/IOException;
     invoke-virtual {v7}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_a
 
-    .line 9840
+    .line 9896
     .end local v7    # "e":Ljava/io/IOException;
     .end local v17    # "responseString":Ljava/lang/String;
     :catchall_2
@@ -1194,7 +1194,7 @@
 
     throw v20
 
-    .line 9849
+    .line 9905
     .restart local v6    # "category":Ljava/lang/String;
     :catchall_3
     move-exception v20
@@ -1203,7 +1203,7 @@
 
     throw v20
 
-    .line 9854
+    .line 9910
     :cond_b
     move-object/from16 v0, p0
 
@@ -1213,7 +1213,7 @@
 
     monitor-enter v21
 
-    .line 9855
+    .line 9911
     :try_start_d
     move-object/from16 v0, p0
 
@@ -1233,7 +1233,7 @@
 
     monitor-exit v21
 
-    .line 9857
+    .line 9913
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/server/audio/AudioService$AppCategorizer;->sDatabase:Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;
@@ -1250,7 +1250,7 @@
 
     goto/16 :goto_4
 
-    .line 9854
+    .line 9910
     :catchall_4
     move-exception v20
 
@@ -1258,7 +1258,7 @@
 
     throw v20
 
-    .line 9822
+    .line 9878
     .end local v6    # "category":Ljava/lang/String;
     .restart local v5    # "br":Ljava/io/BufferedReader;
     .restart local v10    # "is":Ljava/io/InputStream;
@@ -1274,7 +1274,7 @@
     .local v4, "br":Ljava/io/BufferedReader;
     goto :goto_8
 
-    .line 9820
+    .line 9876
     .end local v4    # "br":Ljava/io/BufferedReader;
     .restart local v5    # "br":Ljava/io/BufferedReader;
     :catch_7
@@ -1305,12 +1305,12 @@
     .param p1, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 9901
+    .line 9957
     iget-object v2, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sAppList:Ljava/util/Hashtable;
 
     monitor-enter v2
 
-    .line 9902
+    .line 9958
     :try_start_0
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->sAppList:Ljava/util/Hashtable;
 
@@ -1325,10 +1325,10 @@
     .local v0, "category":Ljava/lang/String;
     monitor-exit v2
 
-    .line 9904
+    .line 9960
     return-object v0
 
-    .line 9901
+    .line 9957
     .end local v0    # "category":Ljava/lang/String;
     :catchall_0
     move-exception v1
@@ -1342,26 +1342,26 @@
     .locals 4
 
     .prologue
-    .line 9893
+    .line 9949
     iget-object v2, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mContext:Landroid/content/Context;
 
-    .line 9894
+    .line 9950
     const-string/jumbo v3, "connectivity"
 
-    .line 9893
+    .line 9949
     invoke-virtual {v2, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 9895
+    .line 9951
     .local v0, "cm":Landroid/net/ConnectivityManager;
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v1
 
-    .line 9896
+    .line 9952
     .local v1, "netInfo":Landroid/net/NetworkInfo;
     if-eqz v1, :cond_0
 
@@ -1382,24 +1382,24 @@
     .locals 2
 
     .prologue
-    .line 9775
+    .line 9831
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 9776
+    .line 9832
     .local v0, "msg":Landroid/os/Message;
     const/4 v1, 0x2
 
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 9777
+    .line 9833
     iget-object v1, p0, Lcom/android/server/audio/AudioService$AppCategorizer;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 9774
+    .line 9830
     return-void
 .end method

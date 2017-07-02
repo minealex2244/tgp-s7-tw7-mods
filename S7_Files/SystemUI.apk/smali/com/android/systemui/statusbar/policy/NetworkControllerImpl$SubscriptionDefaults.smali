@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 1549
+    .line 1585
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,7 +31,7 @@
     .locals 1
 
     .prologue
-    .line 1555
+    .line 1591
     invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultDataSubscriptionId()I
 
     move-result v0
@@ -43,7 +43,7 @@
     .locals 1
 
     .prologue
-    .line 1560
+    .line 1596
     invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultVoicePhoneId()I
 
     move-result v0
@@ -55,7 +55,7 @@
     .locals 1
 
     .prologue
-    .line 1551
+    .line 1587
     invoke-static {}, Landroid/telephony/SubscriptionManager;->getDefaultVoiceSubscriptionId()I
 
     move-result v0

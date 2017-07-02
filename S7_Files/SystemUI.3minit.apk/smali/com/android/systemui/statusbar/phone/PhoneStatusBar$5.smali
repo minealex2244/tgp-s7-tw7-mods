@@ -69,7 +69,7 @@
 
     .line 673
     .local v1, "isTwoPhoneMode":Z
-    const v2, 0x7f0206c0
+    const v2, 0x7f0206c7
 
     .line 674
     .local v2, "modeIconId":I
@@ -373,7 +373,7 @@
     if-eqz v3, :cond_8
 
     .line 703
-    const v2, 0x7f0206be
+    const v2, 0x7f0206c5
 
     .line 707
     :goto_5
@@ -394,7 +394,7 @@
 
     .line 705
     :cond_8
-    const v2, 0x7f0206bf
+    const v2, 0x7f0206c6
 
     goto :goto_5
 

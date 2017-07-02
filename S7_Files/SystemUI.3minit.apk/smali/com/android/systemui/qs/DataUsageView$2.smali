@@ -38,7 +38,7 @@
     .locals 11
 
     .prologue
-    const v10, 0x7f0f0678
+    const v10, 0x7f0f067a
 
     .line 81
     iget-object v3, p0, Lcom/android/systemui/qs/DataUsageView$2;->this$0:Lcom/android/systemui/qs/DataUsageView;

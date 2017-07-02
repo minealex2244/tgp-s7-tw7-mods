@@ -40,24 +40,24 @@
     .param p1, "this$0"    # Lcom/android/server/audio/AudioService;
 
     .prologue
-    .line 4431
+    .line 4448
     iput-object p1, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4434
+    .line 4451
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->mStatus:I
 
-    .line 4435
+    .line 4452
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->mSamples:Ljava/util/List;
 
-    .line 4431
+    .line 4448
     return-void
 .end method
 
@@ -80,7 +80,7 @@
     .param p3, "status"    # I
 
     .prologue
-    .line 4451
+    .line 4468
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v1}, Lcom/android/server/audio/AudioService;->-get62(Lcom/android/server/audio/AudioService;)Ljava/lang/Object;
@@ -89,7 +89,7 @@
 
     monitor-enter v2
 
-    .line 4452
+    .line 4469
     :try_start_0
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->mSamples:Ljava/util/List;
 
@@ -101,16 +101,16 @@
 
     move-result v0
 
-    .line 4453
+    .line 4470
     .local v0, "i":I
     if-ltz v0, :cond_0
 
-    .line 4454
+    .line 4471
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->mSamples:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 4456
+    .line 4473
     :cond_0
     if-nez p3, :cond_1
 
@@ -122,11 +122,11 @@
 
     if-eqz v1, :cond_2
 
-    .line 4457
+    .line 4474
     :cond_1
     iput p3, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->mStatus:I
 
-    .line 4458
+    .line 4475
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v1}, Lcom/android/server/audio/AudioService;->-get62(Lcom/android/server/audio/AudioService;)Ljava/lang/Object;
@@ -140,10 +140,10 @@
     :cond_2
     monitor-exit v2
 
-    .line 4450
+    .line 4467
     return-void
 
-    .line 4451
+    .line 4468
     .end local v0    # "i":I
     :catchall_0
     move-exception v1
@@ -158,7 +158,7 @@
     .param p1, "samples"    # [I
 
     .prologue
-    .line 4442
+    .line 4459
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -167,12 +167,12 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 4444
+    .line 4461
     aget v1, p1, v0
 
     if-lez v1, :cond_0
 
-    .line 4445
+    .line 4462
     iget-object v1, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->mSamples:Ljava/util/List;
 
     aget v2, p1, v0
@@ -183,13 +183,13 @@
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4442
+    .line 4459
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 4441
+    .line 4458
     :cond_1
     return-void
 .end method
@@ -198,7 +198,7 @@
     .locals 1
 
     .prologue
-    .line 4438
+    .line 4455
     iget v0, p0, Lcom/android/server/audio/AudioService$SoundPoolCallback;->mStatus:I
 
     return v0

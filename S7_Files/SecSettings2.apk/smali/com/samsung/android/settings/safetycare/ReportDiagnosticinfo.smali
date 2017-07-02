@@ -255,7 +255,7 @@
 
     .line 70
     .local v7, "p":Lcom/android/internal/app/AlertController$AlertParams;
-    const v11, 0x7f0b04df
+    const v11, 0x7f0b04e0
 
     invoke-virtual {p0, v11}, Lcom/samsung/android/settings/safetycare/ReportDiagnosticinfo;->getText(I)Ljava/lang/CharSequence;
 

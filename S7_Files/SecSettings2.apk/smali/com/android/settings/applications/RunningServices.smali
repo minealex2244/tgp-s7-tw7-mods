@@ -146,7 +146,7 @@
     iput-object p1, p0, Lcom/android/settings/applications/RunningServices;->mOptionsMenu:Landroid/view/Menu;
 
     .line 68
-    const v0, 0x7f0b1516
+    const v0, 0x7f0b1524
 
     invoke-interface {p1, v2, v1, v1, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -155,7 +155,7 @@
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
     .line 70
-    const v0, 0x7f0b1517
+    const v0, 0x7f0b1525
 
     invoke-interface {p1, v2, v3, v3, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 

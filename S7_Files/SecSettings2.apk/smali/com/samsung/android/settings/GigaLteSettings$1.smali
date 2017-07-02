@@ -25,7 +25,7 @@
     .param p2, "$anonymous0"    # Landroid/os/Handler;
 
     .prologue
-    .line 103
+    .line 107
     iput-object p1, p0, Lcom/samsung/android/settings/GigaLteSettings$1;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,14 +40,10 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 106
+    .line 110
     iget-object v0, p0, Lcom/samsung/android/settings/GigaLteSettings$1;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
-    invoke-static {v0}, Lcom/samsung/android/settings/GigaLteSettings;->-get3(Lcom/samsung/android/settings/GigaLteSettings;)Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/android/settings/Utils;->isRoaming(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/samsung/android/settings/GigaLteSettings;->-wrap1(Lcom/samsung/android/settings/GigaLteSettings;)Z
 
     move-result v0
 
@@ -55,7 +51,7 @@
 
     iget-object v0, p0, Lcom/samsung/android/settings/GigaLteSettings$1;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
-    invoke-static {v0}, Lcom/samsung/android/settings/GigaLteSettings;->-wrap1(Lcom/samsung/android/settings/GigaLteSettings;)Z
+    invoke-static {v0}, Lcom/samsung/android/settings/GigaLteSettings;->-wrap2(Lcom/samsung/android/settings/GigaLteSettings;)Z
 
     move-result v0
 
@@ -63,7 +59,7 @@
 
     iget-object v0, p0, Lcom/samsung/android/settings/GigaLteSettings$1;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
-    invoke-static {v0}, Lcom/samsung/android/settings/GigaLteSettings;->-wrap2(Lcom/samsung/android/settings/GigaLteSettings;)Z
+    invoke-static {v0}, Lcom/samsung/android/settings/GigaLteSettings;->-wrap3(Lcom/samsung/android/settings/GigaLteSettings;)Z
 
     move-result v0
 
@@ -72,7 +68,7 @@
     :cond_0
     return-void
 
-    .line 107
+    .line 111
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/settings/GigaLteSettings$1;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
@@ -97,10 +93,10 @@
     :goto_0
     invoke-virtual {v1, v0}, Lcom/android/settings/widget/SwitchBar;->setEnabled(Z)V
 
-    .line 105
+    .line 109
     return-void
 
-    .line 107
+    .line 111
     :cond_2
     const/4 v0, 0x1
 

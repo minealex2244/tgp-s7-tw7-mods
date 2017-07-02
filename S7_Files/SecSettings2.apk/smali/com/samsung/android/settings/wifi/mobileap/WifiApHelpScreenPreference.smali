@@ -37,7 +37,7 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    const v9, 0x7f0b0cfe
+    const v9, 0x7f0b0d0d
 
     const/4 v7, 0x1
 
@@ -179,7 +179,7 @@
     if-eqz v4, :cond_3
 
     .line 76
-    const v4, 0x7f0b0cff
+    const v4, 0x7f0b0d0e
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -227,7 +227,7 @@
     if-nez v4, :cond_5
 
     .line 82
-    const v4, 0x7f0b0df8
+    const v4, 0x7f0b0e07
 
     invoke-static {v4}, Lcom/samsung/android/settings/WifiApUtils;->getStringID(I)I
 
@@ -288,7 +288,7 @@
     .line 84
     .end local v1    # "maxClientNum":Ljava/lang/String;
     :cond_5
-    const v4, 0x7f0b0df6
+    const v4, 0x7f0b0e05
 
     invoke-static {v4}, Lcom/samsung/android/settings/WifiApUtils;->getStringID(I)I
 
@@ -305,7 +305,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b0df3
+    const v5, 0x7f0b0e02
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

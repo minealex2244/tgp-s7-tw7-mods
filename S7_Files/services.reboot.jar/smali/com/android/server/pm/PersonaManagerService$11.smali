@@ -27,7 +27,7 @@
     .param p2, "val$info"    # Lcom/samsung/android/knox/SemPersonaInfo;
 
     .prologue
-    .line 10382
+    .line 10391
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$11;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iput-object p2, p0, Lcom/android/server/pm/PersonaManagerService$11;->val$info:Lcom/samsung/android/knox/SemPersonaInfo;
@@ -44,21 +44,21 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 10405
+    .line 10414
     const-string/jumbo v0, "PersonaManagerService"
 
     const-string/jumbo v1, " abort"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10406
+    .line 10415
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$11;->val$info:Lcom/samsung/android/knox/SemPersonaInfo;
 
     const/4 v1, 0x0
 
     iput-boolean v1, v0, Lcom/samsung/android/knox/SemPersonaInfo;->isRestarting:Z
 
-    .line 10407
+    .line 10416
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$11;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get18(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
@@ -67,7 +67,7 @@
 
     monitor-enter v1
 
-    .line 10408
+    .line 10417
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$11;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -79,10 +79,10 @@
 
     monitor-exit v1
 
-    .line 10404
+    .line 10413
     return-void
 
-    .line 10407
+    .line 10416
     :catchall_0
     move-exception v0
 
@@ -98,24 +98,24 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 10386
+    .line 10395
     const-string/jumbo v2, "PersonaManagerService"
 
     const-string/jumbo v3, " user stopped"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10387
+    .line 10396
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$11;->val$info:Lcom/samsung/android/knox/SemPersonaInfo;
 
     iput-boolean v4, v2, Lcom/samsung/android/knox/SemPersonaInfo;->isRestarting:Z
 
-    .line 10388
+    .line 10397
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$11;->val$info:Lcom/samsung/android/knox/SemPersonaInfo;
 
     iput-boolean v4, v2, Lcom/samsung/android/knox/SemPersonaInfo;->needsRestart:Z
 
-    .line 10389
+    .line 10398
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$11;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get18(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
@@ -124,7 +124,7 @@
 
     monitor-enter v3
 
-    .line 10390
+    .line 10399
     :try_start_0
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$11;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -136,14 +136,14 @@
 
     monitor-exit v3
 
-    .line 10393
+    .line 10402
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$11;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     sget-object v3, Landroid/content/pm/PersonaNewEvent;->USER_LOCK:Landroid/content/pm/PersonaNewEvent;
 
     invoke-virtual {v2, v3, p1}, Lcom/android/server/pm/PersonaManagerService;->fireEvent(Landroid/content/pm/PersonaNewEvent;I)Lcom/samsung/android/knox/SemPersonaState;
 
-    .line 10396
+    .line 10405
     :try_start_1
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -155,11 +155,11 @@
 
     move-result v1
 
-    .line 10384
+    .line 10393
     :goto_0
     return-void
 
-    .line 10389
+    .line 10398
     :catchall_0
     move-exception v2
 
@@ -167,11 +167,11 @@
 
     throw v2
 
-    .line 10397
+    .line 10406
     :catch_0
     move-exception v0
 
-    .line 10398
+    .line 10407
     .local v0, "e":Landroid/os/RemoteException;
     const-string/jumbo v2, "PersonaManagerService"
 

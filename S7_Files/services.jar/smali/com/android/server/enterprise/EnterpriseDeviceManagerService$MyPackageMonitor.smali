@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     .prologue
-    .line 449
+    .line 450
     iput-object p1, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-direct {p0}, Lcom/android/internal/content/PackageMonitor;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "uid"    # I
 
     .prologue
-    .line 496
+    .line 497
     const-string/jumbo v6, "EnterpriseDeviceManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -57,10 +57,10 @@
 
     move-result-object v7
 
-    .line 497
+    .line 498
     const-string/jumbo v8, ", uid: "
 
-    .line 496
+    .line 497
     invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
@@ -75,15 +75,15 @@
 
     invoke-static {v6, v7}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 498
+    .line 499
     iget-object v7, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     monitor-enter v7
 
-    .line 499
+    .line 500
     const/4 v5, 0x0
 
-    .line 500
+    .line 501
     .local v5, "updatedAdmin":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     :try_start_0
     iget-object v6, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
@@ -112,7 +112,7 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 502
+    .line 503
     .local v2, "admin":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;>;"
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
 
     if-nez v6, :cond_0
 
-    .line 505
+    .line 506
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -147,7 +147,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 506
+    .line 507
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -164,14 +164,14 @@
 
     if-ne p2, v6, :cond_0
 
-    .line 507
+    .line 508
     const-string/jumbo v6, "EnterpriseDeviceManagerService"
 
     const-string/jumbo v8, "Admin found on map with same package name!"
 
     invoke-static {v6, v8}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 508
+    .line 509
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -184,16 +184,16 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 513
+    .line 514
     .end local v2    # "admin":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<Ljava/lang/Integer;Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;>;"
     .end local v5    # "updatedAdmin":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     :cond_1
     if-eqz v5, :cond_3
 
-    .line 514
+    .line 515
     const/4 v1, 0x0
 
-    .line 516
+    .line 517
     .local v1, "admin":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     :try_start_1
     iget-object v6, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
@@ -213,12 +213,12 @@
 
     move-result-object v1
 
-    .line 520
+    .line 521
     .end local v1    # "admin":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     :goto_0
     if-nez v1, :cond_2
 
-    .line 521
+    .line 522
     :try_start_2
     const-string/jumbo v6, "EnterpriseDeviceManagerService"
 
@@ -226,7 +226,7 @@
 
     invoke-static {v6, v8}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 523
+    .line 524
     iget-object v6, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     new-instance v8, Lcom/samsung/android/knox/ContextInfo;
@@ -247,15 +247,15 @@
 
     invoke-virtual {v6, v8, v9, v10}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->setAdminRemovable(Lcom/samsung/android/knox/ContextInfo;ZLjava/lang/String;)Z
 
-    .line 524
+    .line 525
     iget-object v6, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
-    .line 525
+    .line 526
     invoke-virtual {v5}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v8
 
-    .line 526
+    .line 527
     invoke-virtual {v5}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
     move-result-object v9
@@ -268,28 +268,28 @@
 
     move-result v9
 
-    .line 524
+    .line 525
     invoke-static {v6, v8, v9}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->-wrap5(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;Landroid/content/ComponentName;I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     monitor-exit v7
 
-    .line 527
+    .line 528
     return-void
 
-    .line 517
+    .line 518
     .restart local v1    # "admin":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     :catch_0
     move-exception v4
 
-    .line 518
+    .line 519
     .local v4, "e":Ljava/lang/IllegalArgumentException;
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 529
+    .line 530
     .end local v1    # "admin":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     .end local v4    # "e":Ljava/lang/IllegalArgumentException;
     :cond_2
@@ -300,7 +300,7 @@
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 530
+    .line 531
     iget-object v6, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     iget-object v6, v6, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminMap:Ljava/util/HashMap;
@@ -319,14 +319,14 @@
 
     invoke-virtual {v6, v8}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 532
+    .line 533
     iget-object v6, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     iget-object v6, v6, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminList:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 533
+    .line 534
     iget-object v6, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     iget-object v6, v6, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminMap:Ljava/util/HashMap;
@@ -350,13 +350,13 @@
     :cond_3
     monitor-exit v7
 
-    .line 539
+    .line 540
     invoke-static {}, Lcom/android/server/enterprise/license/EnterpriseLicenseService;->updateAdminPermissions()V
 
-    .line 495
+    .line 496
     return-void
 
-    .line 498
+    .line 499
     .end local v3    # "admin$iterator":Ljava/util/Iterator;
     :catchall_0
     move-exception v6
@@ -370,18 +370,18 @@
     .locals 12
 
     .prologue
-    .line 452
+    .line 453
     iget-object v8, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     monitor-enter v8
 
-    .line 453
+    .line 454
     :try_start_0
     invoke-virtual {p0}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->getChangingUserId()I
 
     move-result v6
 
-    .line 454
+    .line 455
     .local v6, "userId":I
     const-string/jumbo v7, "EnterpriseDeviceManagerService"
 
@@ -405,7 +405,7 @@
 
     invoke-static {v7, v9}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 456
+    .line 457
     iget-object v7, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     iget-object v7, v7, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminList:Ljava/util/ArrayList;
@@ -420,7 +420,7 @@
     :goto_0
     if-ltz v3, :cond_4
 
-    .line 457
+    .line 458
     iget-object v7, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     iget-object v7, v7, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminList:Ljava/util/ArrayList;
@@ -431,7 +431,7 @@
 
     check-cast v0, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
 
-    .line 459
+    .line 460
     .local v0, "adm":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     invoke-virtual {v0}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->isProxy()Z
 
@@ -439,7 +439,7 @@
 
     if-nez v7, :cond_0
 
-    .line 460
+    .line 461
     invoke-virtual {v0}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->getActivityInfo()Landroid/content/pm/ActivityInfo;
 
     move-result-object v7
@@ -454,20 +454,20 @@
 
     if-eq v7, v6, :cond_1
 
-    .line 456
+    .line 457
     :cond_0
     :goto_1
     add-int/lit8 v3, v3, -0x1
 
     goto :goto_0
 
-    .line 463
+    .line 464
     :cond_1
     invoke-virtual {v0}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->getPackageName()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 464
+    .line 465
     .local v5, "packageName":Ljava/lang/String;
     const-string/jumbo v7, "EnterpriseDeviceManagerService"
 
@@ -491,12 +491,12 @@
 
     invoke-static {v7, v9}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 466
+    .line 467
     invoke-virtual {p0, v5}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->isPackageDisappearing(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 467
+    .line 468
     .local v1, "change":I
     const/4 v7, 0x3
 
@@ -506,7 +506,7 @@
 
     if-ne v1, v7, :cond_3
 
-    .line 468
+    .line 469
     :cond_2
     const-string/jumbo v7, "EnterpriseDeviceManagerService"
 
@@ -534,7 +534,7 @@
 
     invoke-static {v7, v9}, Lcom/android/server/enterprise/log/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 470
+    .line 471
     iget-object v7, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     new-instance v9, Lcom/samsung/android/knox/ContextInfo;
@@ -555,7 +555,7 @@
 
     invoke-virtual {v7, v9, v10, v11}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->setAdminRemovable(Lcom/samsung/android/knox/ContextInfo;ZLjava/lang/String;)Z
 
-    .line 471
+    .line 472
     iget-object v7, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-virtual {v0}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
@@ -568,7 +568,7 @@
 
     goto :goto_1
 
-    .line 452
+    .line 453
     .end local v0    # "adm":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     .end local v1    # "change":I
     .end local v3    # "i":I
@@ -581,7 +581,7 @@
 
     throw v7
 
-    .line 472
+    .line 473
     .restart local v0    # "adm":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
     .restart local v1    # "change":I
     .restart local v3    # "i":I
@@ -597,10 +597,10 @@
 
     if-eqz v7, :cond_0
 
-    .line 473
+    .line 474
     const/4 v4, 0x0
 
-    .line 475
+    .line 476
     .local v4, "info":Landroid/content/pm/ActivityInfo;
     :try_start_2
     iget-object v7, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
@@ -620,16 +620,16 @@
 
     move-result-object v4
 
-    .line 482
+    .line 483
     .end local v4    # "info":Landroid/content/pm/ActivityInfo;
     :goto_2
     if-nez v4, :cond_0
 
-    .line 483
+    .line 484
     :try_start_3
     const-string/jumbo v7, "EnterpriseDeviceManagerService"
 
-    .line 484
+    .line 485
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -652,10 +652,10 @@
 
     move-result-object v9
 
-    .line 483
+    .line 484
     invoke-static {v7, v9}, Lcom/android/server/enterprise/log/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 486
+    .line 487
     iget-object v7, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     new-instance v9, Lcom/samsung/android/knox/ContextInfo;
@@ -676,7 +676,7 @@
 
     invoke-virtual {v7, v9, v10, v11}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->setAdminRemovable(Lcom/samsung/android/knox/ContextInfo;ZLjava/lang/String;)Z
 
-    .line 487
+    .line 488
     iget-object v7, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$MyPackageMonitor;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-virtual {v0}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
@@ -687,16 +687,16 @@
 
     goto/16 :goto_1
 
-    .line 476
+    .line 477
     .restart local v4    # "info":Landroid/content/pm/ActivityInfo;
     :catch_0
     move-exception v2
 
-    .line 477
+    .line 478
     .local v2, "e":Ljava/lang/Exception;
     const-string/jumbo v7, "EnterpriseDeviceManagerService"
 
-    .line 478
+    .line 479
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -719,12 +719,12 @@
 
     move-result-object v9
 
-    .line 477
+    .line 478
     invoke-static {v7, v9}, Lcom/android/server/enterprise/log/Log;->w(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 479
+    .line 480
     const/4 v4, 0x0
 
     goto :goto_2
@@ -737,6 +737,6 @@
     :cond_4
     monitor-exit v8
 
-    .line 451
+    .line 452
     return-void
 .end method

@@ -24,7 +24,7 @@
     .param p1, "this$1"    # Lcom/android/server/pm/PackageManagerService$FileInstallArgs;
 
     .prologue
-    .line 17436
+    .line 17440
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$FileInstallArgs$1;->this$1:Lcom/android/server/pm/PackageManagerService$FileInstallArgs;
 
     invoke-direct {p0}, Lcom/android/internal/os/IParcelFileDescriptorFactory$Stub;-><init>()V
@@ -45,14 +45,14 @@
     .end annotation
 
     .prologue
-    .line 17439
+    .line 17443
     invoke-static {p1}, Landroid/os/FileUtils;->isValidExtFilename(Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 17440
+    .line 17444
     new-instance v3, Ljava/lang/IllegalArgumentException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -77,7 +77,7 @@
 
     throw v3
 
-    .line 17443
+    .line 17447
     :cond_0
     :try_start_0
     new-instance v2, Ljava/io/File;
@@ -90,13 +90,13 @@
 
     invoke-direct {v2, v3, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 17444
+    .line 17448
     .local v2, "file":Ljava/io/File;
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 17445
+    .line 17449
     sget v4, Landroid/system/OsConstants;->O_RDWR:I
 
     sget v5, Landroid/system/OsConstants;->O_CREAT:I
@@ -105,12 +105,12 @@
 
     const/16 v5, 0x1a4
 
-    .line 17444
+    .line 17448
     invoke-static {v3, v4, v5}, Landroid/system/Os;->open(Ljava/lang/String;II)Ljava/io/FileDescriptor;
 
     move-result-object v1
 
-    .line 17446
+    .line 17450
     .local v1, "fd":Ljava/io/FileDescriptor;
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -120,7 +120,7 @@
 
     invoke-static {v3, v4}, Landroid/system/Os;->chmod(Ljava/lang/String;I)V
 
-    .line 17447
+    .line 17451
     new-instance v3, Landroid/os/ParcelFileDescriptor;
 
     invoke-direct {v3, v1}, Landroid/os/ParcelFileDescriptor;-><init>(Ljava/io/FileDescriptor;)V
@@ -129,13 +129,13 @@
 
     return-object v3
 
-    .line 17448
+    .line 17452
     .end local v1    # "fd":Ljava/io/FileDescriptor;
     .end local v2    # "file":Ljava/io/File;
     :catch_0
     move-exception v0
 
-    .line 17449
+    .line 17453
     .local v0, "e":Landroid/system/ErrnoException;
     new-instance v3, Landroid/os/RemoteException;
 

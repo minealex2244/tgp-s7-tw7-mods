@@ -91,7 +91,7 @@
 
     .prologue
     .line 521
-    const v0, 0x7f0b16f1    # 1.848818E38f
+    const v0, 0x7f0b16ff
 
     return v0
 .end method

@@ -278,18 +278,18 @@
     .param p2, "uri"    # Landroid/net/Uri;
 
     .prologue
-    .line 671
+    .line 672
     invoke-static {p2}, Landroid/media/RingtoneManager;->getDefaultType(Landroid/net/Uri;)I
 
     move-result v1
 
-    .line 673
+    .line 674
     .local v1, "ringtoneType":I
     const/4 v2, -0x1
 
     if-eq v1, v2, :cond_1
 
-    .line 674
+    .line 675
     const-string/jumbo v2, "Ringtone"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -312,14 +312,14 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 675
+    .line 676
     iget-object v2, p0, Landroid/media/Ringtone;->mContext:Landroid/content/Context;
 
     invoke-static {v2, v1}, Landroid/media/RingtoneManager;->getActualDefaultRingtoneUri(Landroid/content/Context;I)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 676
+    .line 677
     .local v0, "ActualUri":Landroid/net/Uri;
     const-string/jumbo v2, "Ringtone"
 
@@ -353,17 +353,17 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 677
+    .line 678
     if-nez v0, :cond_0
 
     move-object v0, p2
 
-    .line 683
+    .line 684
     :cond_0
     :goto_0
     return-object v0
 
-    .line 679
+    .line 680
     .end local v0    # "ActualUri":Landroid/net/Uri;
     :cond_1
     const-string/jumbo v2, "Ringtone"
@@ -372,7 +372,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 680
+    .line 681
     move-object v0, p2
 
     .restart local v0    # "ActualUri":Landroid/net/Uri;
@@ -1827,7 +1827,7 @@
     .locals 1
 
     .prologue
-    .line 660
+    .line 661
     iget-boolean v0, p0, Landroid/media/Ringtone;->mUriStatus:Z
 
     return v0
@@ -2607,17 +2607,17 @@
     .param p2, "leftVol"    # F
 
     .prologue
-    .line 648
+    .line 649
     iget-object v0, p0, Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
 
     if-eqz v0, :cond_0
 
-    .line 649
+    .line 650
     iget-object v0, p0, Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
 
     invoke-virtual {v0, p1, p2}, Landroid/media/MediaPlayer;->setVolume(FF)V
 
-    .line 647
+    .line 648
     :cond_0
     return-void
 .end method

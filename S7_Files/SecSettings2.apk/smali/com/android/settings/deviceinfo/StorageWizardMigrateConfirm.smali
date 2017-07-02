@@ -108,14 +108,14 @@
 
     aput-object v2, v3, v5
 
-    const v4, 0x7f0b13f9
+    const v4, 0x7f0b1407
 
     invoke-virtual {p0, v4, v3}, Lcom/android/settings/deviceinfo/StorageWizardMigrateConfirm;->setHeaderText(I[Ljava/lang/String;)V
 
     .line 59
     new-array v3, v5, [Ljava/lang/String;
 
-    const v4, 0x7f0b139c
+    const v4, 0x7f0b13aa
 
     invoke-virtual {p0, v4, v3}, Lcom/android/settings/deviceinfo/StorageWizardMigrateConfirm;->setBodyText(I[Ljava/lang/String;)V
 
@@ -124,7 +124,7 @@
 
     aput-object v2, v3, v5
 
-    const v4, 0x7f0b13fd
+    const v4, 0x7f0b140b
 
     invoke-virtual {p0, v4, v3}, Lcom/android/settings/deviceinfo/StorageWizardMigrateConfirm;->setSecondaryBodyText(I[Ljava/lang/String;)V
 
@@ -156,7 +156,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b13fb
+    const v4, 0x7f0b1409
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -225,7 +225,7 @@
 
     .line 97
     .local v1, "e":Ljava/lang/IllegalStateException;
-    const v5, 0x7f0b1546
+    const v5, 0x7f0b1554
 
     invoke-virtual {p0, v5}, Lcom/android/settings/deviceinfo/StorageWizardMigrateConfirm;->getString(I)Ljava/lang/String;
 

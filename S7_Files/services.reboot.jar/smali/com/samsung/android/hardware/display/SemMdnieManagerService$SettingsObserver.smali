@@ -24,17 +24,17 @@
     .param p1, "this$0"    # Lcom/samsung/android/hardware/display/SemMdnieManagerService;
 
     .prologue
-    .line 254
+    .line 250
     iput-object p1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$SettingsObserver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
 
-    .line 255
+    .line 251
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 254
+    .line 250
     return-void
 .end method
 
@@ -46,11 +46,11 @@
     .param p2, "uri"    # Landroid/net/Uri;
 
     .prologue
-    .line 260
+    .line 256
     iget-object v0, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$SettingsObserver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
 
     invoke-static {v0}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-wrap0(Lcom/samsung/android/hardware/display/SemMdnieManagerService;)V
 
-    .line 259
+    .line 255
     return-void
 .end method

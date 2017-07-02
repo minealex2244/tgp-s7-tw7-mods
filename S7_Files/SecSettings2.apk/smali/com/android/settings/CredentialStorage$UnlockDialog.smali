@@ -70,7 +70,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b170a
+    const v4, 0x7f0b1718
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -131,7 +131,7 @@
     move-result-object v3
 
     .line 832
-    const v4, 0x7f0b1709
+    const v4, 0x7f0b1717
 
     .line 830
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -197,7 +197,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b170e
+    const v4, 0x7f0b171c
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -220,7 +220,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b170f
+    const v4, 0x7f0b171d
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -244,7 +244,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0b1710
+    const v4, 0x7f0b171e
 
     invoke-virtual {p1, v4, v3}, Lcom/android/settings/CredentialStorage;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -413,7 +413,7 @@
     iget-object v1, p0, Lcom/android/settings/CredentialStorage$UnlockDialog;->this$0:Lcom/android/settings/CredentialStorage;
 
     .line 865
-    const v2, 0x7f0b1713
+    const v2, 0x7f0b1721
 
     .line 864
     invoke-static {v1, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
@@ -447,7 +447,7 @@
     iget-object v1, p0, Lcom/android/settings/CredentialStorage$UnlockDialog;->this$0:Lcom/android/settings/CredentialStorage;
 
     .line 873
-    const v2, 0x7f0b1711
+    const v2, 0x7f0b171f
 
     .line 872
     invoke-static {v1, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;

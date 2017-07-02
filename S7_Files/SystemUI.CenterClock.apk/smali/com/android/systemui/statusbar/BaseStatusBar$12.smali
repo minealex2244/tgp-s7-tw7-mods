@@ -42,7 +42,7 @@
     .param p6, "val$n"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 1364
+    .line 1366
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$12;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$12;->val$_pkg:Ljava/lang/String;
@@ -67,7 +67,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1368
+    .line 1370
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$12;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mContext:Landroid/content/Context;
@@ -78,10 +78,10 @@
 
     move-result-object v1
 
-    .line 1367
+    .line 1369
     invoke-virtual {p1, v1}, Landroid/view/View;->announceForAccessibility(Ljava/lang/CharSequence;)V
 
-    .line 1370
+    .line 1372
     :try_start_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$12;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -97,12 +97,12 @@
 
     invoke-interface {v1, v2, v3, v4, v5}, Lcom/android/internal/statusbar/IStatusBarService;->onNotificationClear(Ljava/lang/String;Ljava/lang/String;II)V
 
-    .line 1371
+    .line 1373
     sget-boolean v1, Lcom/android/systemui/statusbar/BaseStatusBar;->FORCE_REMOTE_INPUT_HISTORY:Z
 
     if-eqz v1, :cond_0
 
-    .line 1372
+    .line 1374
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$12;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mKeysKeptForRemoteInput:Landroid/util/ArraySet;
@@ -117,10 +117,10 @@
 
     move-result v1
 
-    .line 1371
+    .line 1373
     if-eqz v1, :cond_0
 
-    .line 1373
+    .line 1375
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$12;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$12;->val$n:Landroid/service/notification/StatusBarNotification;
@@ -133,7 +133,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/systemui/statusbar/BaseStatusBar;->removeNotification(Ljava/lang/String;Landroid/service/notification/NotificationListenerService$RankingMap;)V
 
-    .line 1374
+    .line 1376
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$12;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mKeysKeptForRemoteInput:Landroid/util/ArraySet;
@@ -148,12 +148,12 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1365
+    .line 1367
     :cond_0
     :goto_0
     return-void
 
-    .line 1377
+    .line 1379
     :catch_0
     move-exception v0
 

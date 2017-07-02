@@ -272,59 +272,59 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1351
+    .line 1371
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1340
+    .line 1360
     const-string/jumbo v0, ""
 
     iput-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->previousNetwork:Ljava/lang/String;
 
-    .line 1341
+    .line 1361
     const-string/jumbo v0, ""
 
     iput-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->currentNetwork:Ljava/lang/String;
 
-    .line 1342
+    .line 1362
     new-instance v0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker$NetworkDatausageHandler;
 
     invoke-direct {v0, p0, v1}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker$NetworkDatausageHandler;-><init>(Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker$NetworkDatausageHandler;)V
 
     iput-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->datausageHandler:Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker$NetworkDatausageHandler;
 
-    .line 1343
+    .line 1363
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
 
-    .line 1344
+    .line 1364
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMapTemp:Ljava/util/Hashtable;
 
-    .line 1346
+    .line 1366
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->MOBILE:I
 
-    .line 1347
+    .line 1367
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->NONMOBILE:I
 
-    .line 1349
+    .line 1369
     iput-object v1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->connectionChangeIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 1352
+    .line 1372
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->registerNetworkChangeReceiver()V
 
-    .line 1351
+    .line 1371
     return-void
 .end method
 
@@ -352,12 +352,12 @@
     .end annotation
 
     .prologue
-    .line 1654
+    .line 1674
     .local p1, "updatedMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     .local p2, "previousMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     const/4 v8, 0x0
 
-    .line 1656
+    .line 1676
     .local v8, "returnMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :try_start_0
     invoke-virtual/range {p2 .. p2}, Ljava/util/Hashtable;->isEmpty()Z
@@ -366,10 +366,10 @@
 
     if-eqz v11, :cond_0
 
-    .line 1657
+    .line 1677
     return-object p1
 
-    .line 1658
+    .line 1678
     :cond_0
     invoke-virtual/range {p1 .. p1}, Ljava/util/Hashtable;->isEmpty()Z
 
@@ -377,12 +377,12 @@
 
     if-eqz v11, :cond_1
 
-    .line 1659
+    .line 1679
     const/4 v11, 0x0
 
     return-object v11
 
-    .line 1660
+    .line 1680
     :cond_1
     new-instance v9, Ljava/util/Hashtable;
 
@@ -390,7 +390,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 1661
+    .line 1681
     .local v9, "returnMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :try_start_1
     invoke-virtual/range {p1 .. p1}, Ljava/util/Hashtable;->keySet()Ljava/util/Set;
@@ -398,7 +398,7 @@
     .end local v8    # "returnMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     move-result-object v5
 
-    .line 1662
+    .line 1682
     .local v5, "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
     invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -418,7 +418,7 @@
 
     check-cast v3, Ljava/lang/Integer;
 
-    .line 1663
+    .line 1683
     .local v3, "key":Ljava/lang/Integer;
     move-object/from16 v0, p2
 
@@ -428,7 +428,7 @@
 
     if-eqz v11, :cond_2
 
-    .line 1664
+    .line 1684
     move-object/from16 v0, p1
 
     invoke-virtual {v0, v3}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -437,7 +437,7 @@
 
     check-cast v10, Lcom/samsung/android/knox/application/NetworkStats;
 
-    .line 1665
+    .line 1685
     .local v10, "updatedNetworkStats":Lcom/samsung/android/knox/application/NetworkStats;
     move-object/from16 v0, p2
 
@@ -447,65 +447,65 @@
 
     check-cast v7, Lcom/samsung/android/knox/application/NetworkStats;
 
-    .line 1666
+    .line 1686
     .local v7, "previousNetworkStats":Lcom/samsung/android/knox/application/NetworkStats;
     new-instance v6, Lcom/samsung/android/knox/application/NetworkStats;
 
     invoke-direct {v6}, Lcom/samsung/android/knox/application/NetworkStats;-><init>()V
 
-    .line 1667
+    .line 1687
     .local v6, "networkStats":Lcom/samsung/android/knox/application/NetworkStats;
     iget-wide v12, v10, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
-    .line 1668
+    .line 1688
     iget-wide v14, v7, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
-    .line 1667
+    .line 1687
     sub-long/2addr v12, v14
 
     iput-wide v12, v6, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
-    .line 1669
+    .line 1689
     iget-wide v12, v10, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
-    .line 1670
+    .line 1690
     iget-wide v14, v7, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
-    .line 1669
+    .line 1689
     sub-long/2addr v12, v14
 
     iput-wide v12, v6, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
-    .line 1671
+    .line 1691
     iget-wide v12, v10, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
-    .line 1672
+    .line 1692
     iget-wide v14, v7, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
-    .line 1671
+    .line 1691
     sub-long/2addr v12, v14
 
     iput-wide v12, v6, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
-    .line 1673
+    .line 1693
     iget-wide v12, v10, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
-    .line 1674
+    .line 1694
     iget-wide v14, v7, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
-    .line 1673
+    .line 1693
     sub-long/2addr v12, v14
 
     iput-wide v12, v6, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
-    .line 1675
+    .line 1695
     invoke-virtual {v9, v3, v6}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 
-    .line 1682
+    .line 1702
     .end local v3    # "key":Ljava/lang/Integer;
     .end local v4    # "key$iterator":Ljava/util/Iterator;
     .end local v5    # "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
@@ -518,17 +518,17 @@
     .local v2, "e":Ljava/lang/Exception;
     move-object v8, v9
 
-    .line 1683
+    .line 1703
     .end local v9    # "returnMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :goto_1
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 1685
+    .line 1705
     .end local v2    # "e":Ljava/lang/Exception;
     :goto_2
     return-object v8
 
-    .line 1677
+    .line 1697
     .restart local v3    # "key":Ljava/lang/Integer;
     .restart local v4    # "key$iterator":Ljava/util/Iterator;
     .restart local v5    # "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
@@ -543,7 +543,7 @@
 
     check-cast v10, Lcom/samsung/android/knox/application/NetworkStats;
 
-    .line 1678
+    .line 1698
     .restart local v10    # "updatedNetworkStats":Lcom/samsung/android/knox/application/NetworkStats;
     invoke-virtual {v9, v3, v10}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_2
@@ -560,7 +560,7 @@
     .local v8, "returnMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     goto :goto_2
 
-    .line 1682
+    .line 1702
     .end local v4    # "key$iterator":Ljava/util/Iterator;
     .end local v5    # "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
     .local v8, "returnMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
@@ -595,21 +595,21 @@
     .end annotation
 
     .prologue
-    .line 1589
+    .line 1609
     .local p1, "mapFromDb":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     .local p2, "updatedMinusPrevious":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     new-instance v10, Ljava/util/Hashtable;
 
     invoke-direct {v10}, Ljava/util/Hashtable;-><init>()V
 
-    .line 1591
+    .line 1611
     .local v10, "returnMap":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :try_start_0
     invoke-virtual/range {p1 .. p1}, Ljava/util/Hashtable;->keySet()Ljava/util/Set;
 
     move-result-object v5
 
-    .line 1592
+    .line 1612
     .local v5, "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
     invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -629,7 +629,7 @@
 
     check-cast v3, Ljava/lang/Integer;
 
-    .line 1593
+    .line 1613
     .local v3, "key":Ljava/lang/Integer;
     move-object/from16 v0, p2
 
@@ -639,7 +639,7 @@
 
     if-eqz v13, :cond_1
 
-    .line 1594
+    .line 1614
     move-object/from16 v0, p1
 
     invoke-virtual {v0, v3}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -648,7 +648,7 @@
 
     check-cast v8, Lcom/samsung/android/knox/application/NetworkStats;
 
-    .line 1595
+    .line 1615
     .local v8, "networkStatsFromDb":Lcom/samsung/android/knox/application/NetworkStats;
     move-object/from16 v0, p2
 
@@ -658,13 +658,13 @@
 
     check-cast v11, Lcom/samsung/android/knox/application/NetworkStats;
 
-    .line 1596
+    .line 1616
     .local v11, "updatedNetworkStats":Lcom/samsung/android/knox/application/NetworkStats;
     new-instance v7, Lcom/samsung/android/knox/application/NetworkStats;
 
     invoke-direct {v7}, Lcom/samsung/android/knox/application/NetworkStats;-><init>()V
 
-    .line 1597
+    .line 1617
     .local v7, "networkStats":Lcom/samsung/android/knox/application/NetworkStats;
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
@@ -672,66 +672,66 @@
 
     iput v13, v7, Lcom/samsung/android/knox/application/NetworkStats;->uid:I
 
-    .line 1598
+    .line 1618
     iget-wide v14, v8, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
-    .line 1599
+    .line 1619
     iget-wide v0, v11, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
     move-wide/from16 v16, v0
 
-    .line 1598
+    .line 1618
     add-long v14, v14, v16
 
     iput-wide v14, v7, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
-    .line 1600
+    .line 1620
     iget-wide v14, v8, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
-    .line 1601
+    .line 1621
     iget-wide v0, v11, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
     move-wide/from16 v16, v0
 
-    .line 1600
+    .line 1620
     add-long v14, v14, v16
 
     iput-wide v14, v7, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
-    .line 1602
+    .line 1622
     iget-wide v14, v8, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
-    .line 1603
+    .line 1623
     iget-wide v0, v11, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
     move-wide/from16 v16, v0
 
-    .line 1602
+    .line 1622
     add-long v14, v14, v16
 
     iput-wide v14, v7, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
-    .line 1604
+    .line 1624
     iget-wide v14, v8, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
-    .line 1605
+    .line 1625
     iget-wide v0, v11, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
     move-wide/from16 v16, v0
 
-    .line 1604
+    .line 1624
     add-long v14, v14, v16
 
     iput-wide v14, v7, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
-    .line 1606
+    .line 1626
     invoke-virtual {v10, v3, v7}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 1622
+    .line 1642
     .end local v3    # "key":Ljava/lang/Integer;
     .end local v4    # "key$iterator":Ljava/util/Iterator;
     .end local v5    # "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
@@ -741,16 +741,16 @@
     :catch_0
     move-exception v2
 
-    .line 1623
+    .line 1643
     .local v2, "e":Ljava/lang/Exception;
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 1625
+    .line 1645
     .end local v2    # "e":Ljava/lang/Exception;
     :cond_0
     return-object v10
 
-    .line 1609
+    .line 1629
     .restart local v3    # "key":Ljava/lang/Integer;
     .restart local v4    # "key$iterator":Ljava/util/Iterator;
     .restart local v5    # "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
@@ -764,13 +764,13 @@
 
     check-cast v9, Lcom/samsung/android/knox/application/NetworkStats;
 
-    .line 1610
+    .line 1630
     .local v9, "previousValue":Lcom/samsung/android/knox/application/NetworkStats;
     invoke-virtual {v10, v3, v9}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 1614
+    .line 1634
     .end local v3    # "key":Ljava/lang/Integer;
     .end local v9    # "previousValue":Lcom/samsung/android/knox/application/NetworkStats;
     :cond_2
@@ -778,7 +778,7 @@
 
     move-result-object v6
 
-    .line 1616
+    .line 1636
     .local v6, "keySet1":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
     invoke-interface {v6}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -798,7 +798,7 @@
 
     check-cast v3, Ljava/lang/Integer;
 
-    .line 1617
+    .line 1637
     .restart local v3    # "key":Ljava/lang/Integer;
     move-object/from16 v0, p1
 
@@ -808,7 +808,7 @@
 
     if-nez v13, :cond_3
 
-    .line 1618
+    .line 1638
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v3}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -817,7 +817,7 @@
 
     check-cast v12, Lcom/samsung/android/knox/application/NetworkStats;
 
-    .line 1619
+    .line 1639
     .local v12, "updatedValue":Lcom/samsung/android/knox/application/NetworkStats;
     invoke-virtual {v10, v3, v12}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
@@ -830,10 +830,10 @@
     .locals 4
 
     .prologue
-    .line 1506
+    .line 1526
     const/4 v2, 0x0
 
-    .line 1508
+    .line 1528
     .local v2, "uid":[Ljava/lang/String;
     :try_start_0
     new-instance v1, Ljava/io/File;
@@ -842,7 +842,7 @@
 
     invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1509
+    .line 1529
     .local v1, "file":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
 
@@ -850,26 +850,26 @@
 
     if-eqz v3, :cond_0
 
-    .line 1510
+    .line 1530
     invoke-virtual {v1}, Ljava/io/File;->list()[Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v2
 
-    .line 1515
+    .line 1535
     .end local v1    # "file":Ljava/io/File;
     .end local v2    # "uid":[Ljava/lang/String;
     :cond_0
     :goto_0
     return-object v2
 
-    .line 1511
+    .line 1531
     .restart local v2    # "uid":[Ljava/lang/String;
     :catch_0
     move-exception v0
 
-    .line 1512
+    .line 1532
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -881,10 +881,10 @@
     .param p1, "state"    # Landroid/net/NetworkInfo$State;
 
     .prologue
-    .line 1356
+    .line 1376
     const-string/jumbo v0, "Unknown"
 
-    .line 1358
+    .line 1378
     .local v0, "stateString":Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->-getandroid-net-NetworkInfo$StateSwitchesValues()[I
 
@@ -898,26 +898,26 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 1366
+    .line 1386
     const-string/jumbo v0, "Unknown"
 
-    .line 1370
+    .line 1390
     :goto_0
     return-object v0
 
-    .line 1360
+    .line 1380
     :pswitch_0
     const-string/jumbo v0, "Connected"
 
     goto :goto_0
 
-    .line 1363
+    .line 1383
     :pswitch_1
     const-string/jumbo v0, "Disconnected"
 
     goto :goto_0
 
-    .line 1358
+    .line 1378
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -931,7 +931,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 1464
+    .line 1484
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-static {v9}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-get5(Lcom/android/server/enterprise/application/ApplicationPolicy;)Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter;
@@ -944,11 +944,11 @@
 
     move-result-object v3
 
-    .line 1465
+    .line 1485
     .local v3, "packages":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ApplicationInfo;>;"
     if-eqz v3, :cond_5
 
-    .line 1466
+    .line 1486
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -968,23 +968,23 @@
 
     check-cast v1, Landroid/content/pm/ApplicationInfo;
 
-    .line 1467
+    .line 1487
     .local v1, "packageInfo":Landroid/content/pm/ApplicationInfo;
     iget v8, v1, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    .line 1468
+    .line 1488
     .local v8, "uid":I
     invoke-static {v8}, Landroid/net/TrafficStats;->getUidTxBytes(I)J
 
     move-result-wide v6
 
-    .line 1469
+    .line 1489
     .local v6, "totalUsageTxPkg":J
     invoke-static {v8}, Landroid/net/TrafficStats;->getUidRxBytes(I)J
 
     move-result-wide v4
 
-    .line 1470
+    .line 1490
     .local v4, "totalUsageRxPkg":J
     const-wide/16 v10, 0x0
 
@@ -998,7 +998,7 @@
 
     if-lez v9, :cond_0
 
-    .line 1471
+    .line 1491
     :cond_1
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
 
@@ -1012,87 +1012,87 @@
 
     if-eqz v9, :cond_3
 
-    .line 1472
+    .line 1492
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
 
-    .line 1473
+    .line 1493
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v10
 
-    .line 1472
+    .line 1492
     invoke-virtual {v9, v10}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/samsung/android/knox/application/NetworkStats;
 
-    .line 1474
+    .line 1494
     .local v0, "networkStats":Lcom/samsung/android/knox/application/NetworkStats;
     const/4 v9, 0x1
 
     if-ne p1, v9, :cond_2
 
-    .line 1476
+    .line 1496
     iget-wide v10, v0, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
-    .line 1475
+    .line 1495
     sub-long v10, v6, v10
 
     iput-wide v10, v0, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
-    .line 1478
+    .line 1498
     iget-wide v10, v0, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
-    .line 1477
+    .line 1497
     sub-long v10, v4, v10
 
     iput-wide v10, v0, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
     goto :goto_0
 
-    .line 1481
+    .line 1501
     :cond_2
     iget-wide v10, v0, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
-    .line 1480
+    .line 1500
     sub-long v10, v6, v10
 
     iput-wide v10, v0, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
-    .line 1483
+    .line 1503
     iget-wide v10, v0, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
-    .line 1482
+    .line 1502
     sub-long v10, v4, v10
 
     iput-wide v10, v0, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
     goto :goto_0
 
-    .line 1486
+    .line 1506
     .end local v0    # "networkStats":Lcom/samsung/android/knox/application/NetworkStats;
     :cond_3
     new-instance v0, Lcom/samsung/android/knox/application/NetworkStats;
 
     invoke-direct {v0}, Lcom/samsung/android/knox/application/NetworkStats;-><init>()V
 
-    .line 1487
+    .line 1507
     .restart local v0    # "networkStats":Lcom/samsung/android/knox/application/NetworkStats;
     iput v8, v0, Lcom/samsung/android/knox/application/NetworkStats;->uid:I
 
-    .line 1488
+    .line 1508
     const/4 v9, 0x1
 
     if-ne p1, v9, :cond_4
 
-    .line 1489
+    .line 1509
     iput-wide v6, v0, Lcom/samsung/android/knox/application/NetworkStats;->mobileTxBytes:J
 
-    .line 1490
+    .line 1510
     iput-wide v4, v0, Lcom/samsung/android/knox/application/NetworkStats;->mobileRxBytes:J
 
-    .line 1491
+    .line 1511
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1103,14 +1103,14 @@
 
     goto :goto_0
 
-    .line 1493
+    .line 1513
     :cond_4
     iput-wide v6, v0, Lcom/samsung/android/knox/application/NetworkStats;->wifiTxBytes:J
 
-    .line 1494
+    .line 1514
     iput-wide v4, v0, Lcom/samsung/android/knox/application/NetworkStats;->wifiRxBytes:J
 
-    .line 1495
+    .line 1515
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
 
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1121,7 +1121,7 @@
 
     goto :goto_0
 
-    .line 1463
+    .line 1483
     .end local v0    # "networkStats":Lcom/samsung/android/knox/application/NetworkStats;
     .end local v1    # "packageInfo":Landroid/content/pm/ApplicationInfo;
     .end local v2    # "packageInfo$iterator":Ljava/util/Iterator;
@@ -1136,46 +1136,46 @@
     .locals 6
 
     .prologue
-    .line 1520
+    .line 1540
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 1521
+    .line 1541
     .local v2, "token1":J
     iget-object v4, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     iget-object v4, v4, Lcom/android/server/enterprise/application/ApplicationPolicy;->mContext:Landroid/content/Context;
 
-    .line 1522
+    .line 1542
     const-string/jumbo v5, "connectivity"
 
-    .line 1521
+    .line 1541
     invoke-virtual {v4, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/net/ConnectivityManager;
 
-    .line 1523
+    .line 1543
     .local v1, "conMan":Landroid/net/ConnectivityManager;
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v0
 
-    .line 1524
+    .line 1544
     .local v0, "activeNetInfo":Landroid/net/NetworkInfo;
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 1525
+    .line 1545
     if-eqz v0, :cond_0
 
-    .line 1526
+    .line 1546
     const/4 v4, 0x1
 
     return v4
 
-    .line 1527
+    .line 1547
     :cond_0
     const/4 v4, 0x0
 
@@ -1187,7 +1187,7 @@
     .param p1, "network"    # Ljava/lang/String;
 
     .prologue
-    .line 1374
+    .line 1394
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v0
@@ -1205,29 +1205,29 @@
     .locals 4
 
     .prologue
-    .line 1378
+    .line 1398
     const-string/jumbo v2, "ApplicationPolicy"
 
     const-string/jumbo v3, "registerNetworkChangeReceiver"
 
     invoke-static {v2, v3}, Lcom/android/server/enterprise/log/Log;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1380
+    .line 1400
     :try_start_0
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->connectionChangeIntentReceiver:Landroid/content/BroadcastReceiver;
 
     if-nez v2, :cond_0
 
-    .line 1381
+    .line 1401
     new-instance v1, Landroid/content/IntentFilter;
 
-    .line 1382
+    .line 1402
     const-string/jumbo v2, "android.net.conn.CONNECTIVITY_CHANGE"
 
-    .line 1381
+    .line 1401
     invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    .line 1383
+    .line 1403
     .local v1, "intentFilter":Landroid/content/IntentFilter;
     new-instance v2, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker$1;
 
@@ -1235,7 +1235,7 @@
 
     iput-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->connectionChangeIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 1412
+    .line 1432
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     iget-object v2, v2, Lcom/android/server/enterprise/application/ApplicationPolicy;->mContext:Landroid/content/Context;
@@ -1244,7 +1244,7 @@
 
     invoke-virtual {v2, v3, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 1413
+    .line 1433
     const-string/jumbo v2, "ApplicationPolicy"
 
     const-string/jumbo v3, "registerNetworkChangeReceiver() : Done"
@@ -1253,17 +1253,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1377
+    .line 1397
     .end local v1    # "intentFilter":Landroid/content/IntentFilter;
     :cond_0
     :goto_0
     return-void
 
-    .line 1415
+    .line 1435
     :catch_0
     move-exception v0
 
-    .line 1416
+    .line 1436
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -1276,19 +1276,19 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 1442
+    .line 1462
     const-string/jumbo v5, "ApplicationPolicy"
 
     const-string/jumbo v6, "updateDataUsageMap"
 
     invoke-static {v5, v6}, Lcom/android/server/enterprise/log/Log;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1444
+    .line 1464
     const/4 v5, -0x1
 
     if-ne p2, v5, :cond_1
 
-    .line 1445
+    .line 1465
     :try_start_0
     iget-object v5, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
@@ -1302,20 +1302,20 @@
 
     check-cast v3, Landroid/os/UserManager;
 
-    .line 1446
+    .line 1466
     .local v3, "userManager":Landroid/os/UserManager;
     if-eqz v3, :cond_0
 
-    .line 1447
+    .line 1467
     invoke-virtual {v3}, Landroid/os/UserManager;->getUsers()Ljava/util/List;
 
     move-result-object v4
 
-    .line 1448
+    .line 1468
     .local v4, "userlist":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/UserInfo;>;"
     if-eqz v4, :cond_0
 
-    .line 1449
+    .line 1469
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1334,7 +1334,7 @@
 
     check-cast v1, Landroid/content/pm/UserInfo;
 
-    .line 1450
+    .line 1470
     .local v1, "user":Landroid/content/pm/UserInfo;
     iget v5, v1, Landroid/content/pm/UserInfo;->id:I
 
@@ -1344,7 +1344,7 @@
 
     goto :goto_0
 
-    .line 1458
+    .line 1478
     .end local v1    # "user":Landroid/content/pm/UserInfo;
     .end local v2    # "user$iterator":Ljava/util/Iterator;
     .end local v3    # "userManager":Landroid/os/UserManager;
@@ -1352,17 +1352,17 @@
     :catch_0
     move-exception v0
 
-    .line 1459
+    .line 1479
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 1441
+    .line 1461
     .end local v0    # "e":Ljava/lang/Exception;
     :cond_0
     :goto_1
     return-void
 
-    .line 1455
+    .line 1475
     :cond_1
     :try_start_1
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->getUserUpdateDataUsageMap(II)V
@@ -1388,27 +1388,27 @@
     .end annotation
 
     .prologue
-    .line 1539
+    .line 1559
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1540
+    .line 1560
     .local v4, "retlist":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Lcom/samsung/android/knox/application/NetworkStats;>;"
     invoke-virtual {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->getDataUsagePerUid(I)Ljava/util/Hashtable;
 
     move-result-object v0
 
-    .line 1541
+    .line 1561
     .local v0, "hashTable":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     if-eqz v0, :cond_1
 
-    .line 1542
+    .line 1562
     invoke-virtual {v0}, Ljava/util/Hashtable;->keySet()Ljava/util/Set;
 
     move-result-object v3
 
-    .line 1543
+    .line 1563
     .local v3, "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1429,7 +1429,7 @@
 
     check-cast v1, Ljava/lang/Integer;
 
-    .line 1544
+    .line 1564
     .local v1, "key":Ljava/lang/Integer;
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
@@ -1441,7 +1441,7 @@
 
     if-ne v5, p1, :cond_0
 
-    .line 1547
+    .line 1567
     invoke-virtual {v0, v1}, Ljava/util/Hashtable;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
@@ -1452,7 +1452,7 @@
 
     goto :goto_0
 
-    .line 1550
+    .line 1570
     .end local v1    # "key":Ljava/lang/Integer;
     .end local v2    # "key$iterator":Ljava/util/Iterator;
     .end local v3    # "keySet":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Integer;>;"
@@ -1477,14 +1477,14 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 1555
+    .line 1575
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->isAnyNetworkConnected()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 1556
+    .line 1576
     iget-object v4, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->currentNetwork:Ljava/lang/String;
 
     invoke-direct {p0, v4}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->isMobileNetwork(Ljava/lang/String;)Z
@@ -1493,12 +1493,12 @@
 
     if-eqz v4, :cond_1
 
-    .line 1557
+    .line 1577
     const/4 v4, 0x1
 
     invoke-direct {p0, v4, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->updateDataUsageMap(II)V
 
-    .line 1562
+    .line 1582
     :cond_0
     :goto_0
     new-instance v0, Lcom/android/server/enterprise/application/NetworkDataUsageDb;
@@ -1509,36 +1509,36 @@
 
     invoke-direct {v0, v4}, Lcom/android/server/enterprise/application/NetworkDataUsageDb;-><init>(Landroid/content/Context;)V
 
-    .line 1563
+    .line 1583
     .local v0, "appDb":Lcom/android/server/enterprise/application/NetworkDataUsageDb;
     const/4 v3, 0x0
 
-    .line 1565
+    .line 1585
     .local v3, "mapFromDb":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :try_start_0
     invoke-virtual {v0}, Lcom/android/server/enterprise/application/NetworkDataUsageDb;->getMobileDataUsage()Ljava/util/Hashtable;
 
     move-result-object v3
 
-    .line 1566
+    .line 1586
     .local v3, "mapFromDb":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     if-eqz v3, :cond_4
 
-    .line 1567
+    .line 1587
     invoke-virtual {v3}, Ljava/util/Hashtable;->isEmpty()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 1568
+    .line 1588
     iget-object v4, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object v4
 
-    .line 1559
+    .line 1579
     .end local v0    # "appDb":Lcom/android/server/enterprise/application/NetworkDataUsageDb;
     .end local v3    # "mapFromDb":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :cond_1
@@ -1548,7 +1548,7 @@
 
     goto :goto_0
 
-    .line 1571
+    .line 1591
     .restart local v0    # "appDb":Lcom/android/server/enterprise/application/NetworkDataUsageDb;
     .restart local v3    # "mapFromDb":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :cond_2
@@ -1557,27 +1557,27 @@
 
     iget-object v5, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMapTemp:Ljava/util/Hashtable;
 
-    .line 1570
+    .line 1590
     invoke-direct {p0, v4, v5}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->calculateDiffOfMapAndTempMap(Ljava/util/Hashtable;Ljava/util/Hashtable;)Ljava/util/Hashtable;
 
     move-result-object v2
 
-    .line 1572
+    .line 1592
     .local v2, "map":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     if-eqz v2, :cond_3
 
-    .line 1573
+    .line 1593
     invoke-direct {p0, v3, v2}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->calculateTotalUsage(Ljava/util/Hashtable;Ljava/util/Hashtable;)Ljava/util/Hashtable;
 
     move-result-object v4
 
     return-object v4
 
-    .line 1575
+    .line 1595
     :cond_3
     return-object v3
 
-    .line 1577
+    .line 1597
     .end local v2    # "map":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :cond_4
     iget-object v4, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
@@ -1586,16 +1586,16 @@
 
     return-object v4
 
-    .line 1579
+    .line 1599
     .end local v3    # "mapFromDb":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :catch_0
     move-exception v1
 
-    .line 1580
+    .line 1600
     .local v1, "e":Ljava/lang/Exception;
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 1583
+    .line 1603
     return-object v6
 .end method
 
@@ -1605,7 +1605,7 @@
     .prologue
     const/4 v3, -0x1
 
-    .line 1634
+    .line 1654
     new-instance v1, Lcom/android/server/enterprise/application/NetworkDataUsageDb;
 
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
@@ -1614,7 +1614,7 @@
 
     invoke-direct {v1, v2}, Lcom/android/server/enterprise/application/NetworkDataUsageDb;-><init>(Landroid/content/Context;)V
 
-    .line 1635
+    .line 1655
     .local v1, "networkDb":Lcom/android/server/enterprise/application/NetworkDataUsageDb;
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->isAnyNetworkConnected()Z
 
@@ -1622,7 +1622,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 1636
+    .line 1656
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->currentNetwork:Ljava/lang/String;
 
     invoke-direct {p0, v2}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->isMobileNetwork(Ljava/lang/String;)Z
@@ -1631,12 +1631,12 @@
 
     if-eqz v2, :cond_2
 
-    .line 1637
+    .line 1657
     const/4 v2, 0x1
 
     invoke-direct {p0, v2, v3}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->updateDataUsageMap(II)V
 
-    .line 1642
+    .line 1662
     :cond_0
     :goto_0
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
@@ -1647,24 +1647,24 @@
 
     if-nez v2, :cond_1
 
-    .line 1644
+    .line 1664
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMap:Ljava/util/Hashtable;
 
     iget-object v3, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMapTemp:Ljava/util/Hashtable;
 
-    .line 1643
+    .line 1663
     invoke-direct {p0, v2, v3}, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->calculateDiffOfMapAndTempMap(Ljava/util/Hashtable;Ljava/util/Hashtable;)Ljava/util/Hashtable;
 
     move-result-object v0
 
-    .line 1645
+    .line 1665
     .local v0, "map":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     if-eqz v0, :cond_1
 
-    .line 1646
+    .line 1666
     invoke-virtual {v1, v0}, Lcom/android/server/enterprise/application/NetworkDataUsageDb;->updateDataUsage(Ljava/util/Hashtable;)Z
 
-    .line 1648
+    .line 1668
     .end local v0    # "map":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/Integer;Lcom/samsung/android/knox/application/NetworkStats;>;"
     :cond_1
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationNetworkStatsTracker;->networkDataUsageMapTemp:Ljava/util/Hashtable;
@@ -1673,10 +1673,10 @@
 
     invoke-virtual {v2, v3}, Ljava/util/Hashtable;->putAll(Ljava/util/Map;)V
 
-    .line 1632
+    .line 1652
     return-void
 
-    .line 1639
+    .line 1659
     :cond_2
     const/4 v2, 0x0
 

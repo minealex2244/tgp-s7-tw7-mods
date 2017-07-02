@@ -262,7 +262,7 @@
     if-ne v2, v3, :cond_d
 
     .line 239
-    const v2, 0x7f0b0a61
+    const v2, 0x7f0b0a64
 
     move-object/from16 v0, p0
 
@@ -289,7 +289,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b0a64
+    const v3, 0x7f0b0a67
 
     move-object/from16 v0, p0
 
@@ -533,7 +533,7 @@
     .line 304
     if-nez v19, :cond_f
 
-    const v2, 0x7f0b0849
+    const v2, 0x7f0b084c
 
     move-object/from16 v0, p0
 
@@ -644,7 +644,7 @@
     packed-switch v20, :pswitch_data_0
 
     .line 328
-    const v2, 0x7f0b0597
+    const v2, 0x7f0b0598
 
     move-object/from16 v0, p0
 
@@ -655,7 +655,7 @@
     .line 331
     .local v21, "resolutionStr":Ljava/lang/String;
     :goto_2
-    const v2, 0x7f0b0a71
+    const v2, 0x7f0b0a74
 
     move-object/from16 v0, p0
 
@@ -708,7 +708,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b0a72
+    const v3, 0x7f0b0a75
 
     move-object/from16 v0, p0
 
@@ -728,7 +728,7 @@
     :cond_5
     new-instance v2, Lcom/samsung/android/settings/boostmode/BoostModeChangeDialogActivity$DetailedItem;
 
-    const v3, 0x7f0b0592
+    const v3, 0x7f0b0593
 
     move-object/from16 v0, p0
 
@@ -836,7 +836,7 @@
 
     if-ne v0, v2, :cond_10
 
-    const v2, 0x7f0b0a28
+    const v2, 0x7f0b0a2b
 
     :goto_3
     move-object/from16 v0, p0
@@ -905,7 +905,7 @@
     new-instance v3, Lcom/samsung/android/settings/boostmode/BoostModeChangeDialogActivity$DetailedItem;
 
     .line 362
-    const v2, 0x7f0b0974
+    const v2, 0x7f0b0977
 
     move-object/from16 v0, p0
 
@@ -914,7 +914,7 @@
     move-result-object v4
 
     .line 363
-    const v2, 0x7f0b0975
+    const v2, 0x7f0b0978
 
     move-object/from16 v0, p0
 
@@ -929,7 +929,7 @@
 
     if-ne v0, v2, :cond_11
 
-    const v2, 0x7f0b0a28
+    const v2, 0x7f0b0a2b
 
     :goto_4
     move-object/from16 v0, p0
@@ -1010,7 +1010,7 @@
     new-instance v3, Lcom/samsung/android/settings/boostmode/BoostModeChangeDialogActivity$DetailedItem;
 
     .line 375
-    const v2, 0x7f0b0a75
+    const v2, 0x7f0b0a78
 
     move-object/from16 v0, p0
 
@@ -1019,7 +1019,7 @@
     move-result-object v4
 
     .line 376
-    const v2, 0x7f0b0a76
+    const v2, 0x7f0b0a79
 
     move-object/from16 v0, p0
 
@@ -1032,7 +1032,7 @@
 
     if-ne v12, v2, :cond_12
 
-    const v2, 0x7f0b0a28
+    const v2, 0x7f0b0a2b
 
     move-object/from16 v0, p0
 
@@ -1101,7 +1101,7 @@
     new-instance v3, Lcom/samsung/android/settings/boostmode/BoostModeChangeDialogActivity$DetailedItem;
 
     .line 385
-    const v2, 0x7f0b0a77
+    const v2, 0x7f0b0a7a
 
     move-object/from16 v0, p0
 
@@ -1110,7 +1110,7 @@
     move-result-object v4
 
     .line 386
-    const v2, 0x7f0b0a78
+    const v2, 0x7f0b0a7b
 
     move-object/from16 v0, p0
 
@@ -1123,7 +1123,7 @@
 
     if-ne v13, v2, :cond_13
 
-    const v2, 0x7f0b0a28
+    const v2, 0x7f0b0a2b
 
     move-object/from16 v0, p0
 
@@ -1372,7 +1372,7 @@
     if-ne v2, v3, :cond_e
 
     .line 241
-    const v2, 0x7f0b0a63
+    const v2, 0x7f0b0a66
 
     move-object/from16 v0, p0
 
@@ -1386,7 +1386,7 @@
     .line 243
     .end local v24    # "summaryText":Ljava/lang/String;
     :cond_e
-    const v2, 0x7f0b0a5f
+    const v2, 0x7f0b0a62
 
     move-object/from16 v0, p0
 
@@ -1411,7 +1411,7 @@
     .line 321
     .restart local v20    # "resolutionStatus":I
     :pswitch_0
-    const v2, 0x7f0b0595
+    const v2, 0x7f0b0596
 
     move-object/from16 v0, p0
 
@@ -1425,7 +1425,7 @@
     .line 324
     .end local v21    # "resolutionStr":Ljava/lang/String;
     :pswitch_1
-    const v2, 0x7f0b0596
+    const v2, 0x7f0b0597
 
     move-object/from16 v0, p0
 
@@ -1441,14 +1441,14 @@
     .end local v21    # "resolutionStr":Ljava/lang/String;
     .restart local v26    # "videoEnhancerStatus":I
     :cond_10
-    const v2, 0x7f0b0a29
+    const v2, 0x7f0b0a2c
 
     goto/16 :goto_3
 
     .line 364
     .restart local v25    # "uhqUpscalerStatus":I
     :cond_11
-    const v2, 0x7f0b0a29
+    const v2, 0x7f0b0a2c
 
     goto/16 :goto_4
 
@@ -1457,7 +1457,7 @@
     .end local v26    # "videoEnhancerStatus":I
     .restart local v12    # "gameLauncherStatus":I
     :cond_12
-    const v2, 0x7f0b0a29
+    const v2, 0x7f0b0a2c
 
     move-object/from16 v0, p0
 
@@ -1470,7 +1470,7 @@
     .line 387
     .restart local v13    # "gameToolsStatus":I
     :cond_13
-    const v2, 0x7f0b0a29
+    const v2, 0x7f0b0a2c
 
     move-object/from16 v0, p0
 
@@ -1554,7 +1554,7 @@
 
     iget-object v2, v0, Lcom/samsung/android/settings/boostmode/BoostModeChangeDialogActivity;->mCancel:Lcom/samsung/android/settings/widget/RoundButtonView;
 
-    const v3, 0x7f0b10f5
+    const v3, 0x7f0b1102
 
     move-object/from16 v0, p0
 

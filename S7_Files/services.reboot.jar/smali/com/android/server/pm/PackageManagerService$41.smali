@@ -39,7 +39,7 @@
     .param p5, "val$pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 32777
+    .line 32789
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$41;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iput p2, p0, Lcom/android/server/pm/PackageManagerService$41;->val$userId:I
@@ -63,7 +63,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 32780
+    .line 32792
     iget v4, p0, Lcom/android/server/pm/PackageManagerService$41;->val$userId:I
 
     iget v5, p0, Lcom/android/server/pm/PackageManagerService$41;->val$appId:I
@@ -72,23 +72,23 @@
 
     move-result v2
 
-    .line 32781
+    .line 32793
     .local v2, "appUid":I
     iget-object v4, p0, Lcom/android/server/pm/PackageManagerService$41;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v4, v4, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
-    .line 32782
+    .line 32794
     const-class v5, Landroid/app/AppOpsManager;
 
-    .line 32781
+    .line 32793
     invoke-virtual {v4, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/app/AppOpsManager;
 
-    .line 32783
+    .line 32795
     .local v1, "appOps":Landroid/app/AppOpsManager;
     iget v4, p0, Lcom/android/server/pm/PackageManagerService$41;->val$appOp:I
 
@@ -96,13 +96,13 @@
 
     if-eq v4, v5, :cond_2
 
-    .line 32784
+    .line 32796
     iget v4, p0, Lcom/android/server/pm/PackageManagerService$41;->val$appOp:I
 
-    .line 32785
+    .line 32797
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$41;->val$pkgName:Ljava/lang/String;
 
-    .line 32784
+    .line 32796
     invoke-virtual {v1, v4, v2, v5}, Landroid/app/AppOpsManager;->checkOp(IILjava/lang/String;)I
 
     move-result v4
@@ -111,17 +111,17 @@
 
     const/4 v0, 0x1
 
-    .line 32788
+    .line 32800
     .local v0, "appOpAllowed":Z
     :goto_0
     if-nez v0, :cond_0
 
-    .line 32789
+    .line 32801
     iget v4, p0, Lcom/android/server/pm/PackageManagerService$41;->val$appOp:I
 
     invoke-virtual {v1, v4, v2, v3}, Landroid/app/AppOpsManager;->setUidMode(III)V
 
-    .line 32791
+    .line 32803
     iget-object v3, p0, Lcom/android/server/pm/PackageManagerService$41;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget v4, p0, Lcom/android/server/pm/PackageManagerService$41;->val$appId:I
@@ -132,7 +132,7 @@
 
     invoke-static {v3, v4, v5, v6}, Lcom/android/server/pm/PackageManagerService;->-wrap34(Lcom/android/server/pm/PackageManagerService;IILjava/lang/String;)V
 
-    .line 32779
+    .line 32791
     :cond_0
     return-void
 
@@ -140,12 +140,12 @@
     :cond_1
     move v0, v3
 
-    .line 32784
+    .line 32796
     goto :goto_0
 
     :cond_2
     move v0, v3
 
-    .line 32783
+    .line 32795
     goto :goto_0
 .end method

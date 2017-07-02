@@ -32,20 +32,20 @@
     .param p3, "remoteInputs"    # [Landroid/app/RemoteInput;
 
     .prologue
-    .line 2473
+    .line 2474
     iput-object p1, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 2474
+    .line 2475
     iput p2, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->viewId:I
 
-    .line 2475
+    .line 2476
     iput-object p3, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->remoteInputs:[Landroid/os/Parcelable;
 
-    .line 2473
+    .line 2474
     return-void
 .end method
 
@@ -55,21 +55,21 @@
     .param p2, "parcel"    # Landroid/os/Parcel;
 
     .prologue
-    .line 2478
+    .line 2479
     iput-object p1, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 2479
+    .line 2480
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->viewId:I
 
-    .line 2480
+    .line 2481
     sget-object v0, Landroid/app/RemoteInput;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->createTypedArray(Landroid/os/Parcelable$Creator;)[Ljava/lang/Object;
@@ -80,7 +80,7 @@
 
     iput-object v0, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->remoteInputs:[Landroid/os/Parcelable;
 
-    .line 2478
+    .line 2479
     return-void
 .end method
 
@@ -93,7 +93,7 @@
     .param p3, "handler"    # Landroid/widget/RemoteViews$OnClickHandler;
 
     .prologue
-    .line 2491
+    .line 2492
     iget v1, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->viewId:I
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -102,13 +102,13 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 2492
+    .line 2493
     .local v0, "target":Landroid/widget/TextView;
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2494
+    .line 2495
     :cond_0
     iget-object v1, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->remoteInputs:[Landroid/os/Parcelable;
 
@@ -116,7 +116,7 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/widget/TextView;->setTagInternal(ILjava/lang/Object;)V
 
-    .line 2490
+    .line 2491
     return-void
 .end method
 
@@ -124,7 +124,7 @@
     .locals 1
 
     .prologue
-    .line 2498
+    .line 2499
     const-string/jumbo v0, "SetRemoteInputsAction"
 
     return-object v0
@@ -136,21 +136,21 @@
     .param p2, "flags"    # I
 
     .prologue
-    .line 2484
+    .line 2485
     const/16 v0, 0x12
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2485
+    .line 2486
     iget v0, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->viewId:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2486
+    .line 2487
     iget-object v0, p0, Landroid/widget/RemoteViews$SetRemoteInputsAction;->remoteInputs:[Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeTypedArray([Landroid/os/Parcelable;I)V
 
-    .line 2483
+    .line 2484
     return-void
 .end method

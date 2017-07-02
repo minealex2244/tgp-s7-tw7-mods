@@ -38,27 +38,27 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1136
+    .line 1135
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1129
+    .line 1128
     iput-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->sourceSocket:Ljava/net/Socket;
 
-    .line 1130
+    .line 1129
     iput-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->requestLine:Ljava/lang/String;
 
-    .line 1131
+    .line 1130
     iput-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->urlStringForAuth:Ljava/lang/String;
 
-    .line 1132
+    .line 1131
     iput-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->httpVersion:Ljava/lang/String;
 
-    .line 1133
+    .line 1132
     iput-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->hostName:Ljava/lang/String;
 
-    .line 1136
+    .line 1135
     return-void
 .end method
 
@@ -68,7 +68,7 @@
     .locals 2
 
     .prologue
-    .line 1170
+    .line 1169
     new-instance v0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$AuthenticationStateCache;
 
     iget-object v1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer;
@@ -83,10 +83,10 @@
     .param p1, "hostName"    # Ljava/lang/String;
 
     .prologue
-    .line 1160
+    .line 1159
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->hostName:Ljava/lang/String;
 
-    .line 1161
+    .line 1160
     return-object p0
 .end method
 
@@ -95,10 +95,10 @@
     .param p1, "httpVersion"    # Ljava/lang/String;
 
     .prologue
-    .line 1155
+    .line 1154
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->httpVersion:Ljava/lang/String;
 
-    .line 1156
+    .line 1155
     return-object p0
 .end method
 
@@ -107,10 +107,10 @@
     .param p1, "port"    # I
 
     .prologue
-    .line 1165
+    .line 1164
     iput p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->port:I
 
-    .line 1166
+    .line 1165
     return-object p0
 .end method
 
@@ -119,10 +119,10 @@
     .param p1, "requestLine"    # Ljava/lang/String;
 
     .prologue
-    .line 1145
+    .line 1144
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->requestLine:Ljava/lang/String;
 
-    .line 1146
+    .line 1145
     return-object p0
 .end method
 
@@ -131,10 +131,10 @@
     .param p1, "sourceSocket"    # Ljava/net/Socket;
 
     .prologue
-    .line 1140
+    .line 1139
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->sourceSocket:Ljava/net/Socket;
 
-    .line 1141
+    .line 1140
     return-object p0
 .end method
 
@@ -143,9 +143,9 @@
     .param p1, "urlStringForAuth"    # Ljava/lang/String;
 
     .prologue
-    .line 1150
+    .line 1149
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$Builder;->urlStringForAuth:Ljava/lang/String;
 
-    .line 1151
+    .line 1150
     return-object p0
 .end method

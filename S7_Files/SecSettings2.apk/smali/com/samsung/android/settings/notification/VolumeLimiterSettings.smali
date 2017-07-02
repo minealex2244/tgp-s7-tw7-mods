@@ -439,7 +439,7 @@
     aput-object v6, v4, v5
 
     .line 378
-    const v6, 0x7f0b11b5
+    const v6, 0x7f0b11c2
 
     invoke-virtual {p0, v6, v4}, Lcom/samsung/android/settings/notification/VolumeLimiterSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -500,7 +500,7 @@
     :cond_2
     iget-object v5, p0, Lcom/samsung/android/settings/notification/VolumeLimiterSettings;->mHeaderText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b083a
+    const v6, 0x7f0b083d
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -563,7 +563,7 @@
     aput-object v1, v0, v2
 
     .line 313
-    const v1, 0x7f0b11b5
+    const v1, 0x7f0b11c2
 
     invoke-virtual {p0, v1, v0}, Lcom/samsung/android/settings/notification/VolumeLimiterSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -594,7 +594,7 @@
     aput-object v1, v0, v2
 
     .line 317
-    const v1, 0x7f0b11b8
+    const v1, 0x7f0b11c5
 
     invoke-virtual {p0, v1, v0}, Lcom/samsung/android/settings/notification/VolumeLimiterSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1424,7 +1424,7 @@
     invoke-direct {v4, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 284
-    const v5, 0x7f0b14a9
+    const v5, 0x7f0b14b7
 
     .line 283
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;

@@ -30,7 +30,7 @@
     .param p2, "val$parentToCancelFinal"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 2718
+    .line 2720
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1$1;->this$4:Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1$1;->val$parentToCancelFinal:Landroid/service/notification/StatusBarNotification;
@@ -46,7 +46,7 @@
     .locals 3
 
     .prologue
-    .line 2721
+    .line 2723
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1$1;->this$4:Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;->this$3:Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1;
@@ -59,12 +59,12 @@
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1$1;->val$parentToCancelFinal:Landroid/service/notification/StatusBarNotification;
 
-    .line 2722
+    .line 2724
     const/4 v2, 0x1
 
-    .line 2721
+    .line 2723
     invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/BaseStatusBar;->performRemoveNotification(Landroid/service/notification/StatusBarNotification;Z)V
 
-    .line 2720
+    .line 2722
     return-void
 .end method

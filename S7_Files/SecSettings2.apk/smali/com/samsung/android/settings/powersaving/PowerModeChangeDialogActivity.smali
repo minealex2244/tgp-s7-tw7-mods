@@ -507,7 +507,7 @@
     if-nez v26, :cond_12
 
     .line 302
-    const v2, 0x7f0b0849
+    const v2, 0x7f0b084c
 
     move-object/from16 v0, p0
 
@@ -650,7 +650,7 @@
     packed-switch v30, :pswitch_data_0
 
     .line 330
-    const v2, 0x7f0b0597
+    const v2, 0x7f0b0598
 
     move-object/from16 v0, p0
 
@@ -684,7 +684,7 @@
     :cond_7
     new-instance v3, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity$DetailedItem;
 
-    const v2, 0x7f0b0592
+    const v2, 0x7f0b0593
 
     move-object/from16 v0, p0
 
@@ -695,7 +695,7 @@
     .line 338
     if-eqz v19, :cond_14
 
-    const v2, 0x7f0b0a72
+    const v2, 0x7f0b0a75
 
     move-object/from16 v0, p0
 
@@ -783,7 +783,7 @@
     new-instance v3, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity$DetailedItem;
 
     .line 351
-    const v2, 0x7f0b0a31
+    const v2, 0x7f0b0a34
 
     move-object/from16 v0, p0
 
@@ -792,7 +792,7 @@
     move-result-object v4
 
     .line 352
-    const v2, 0x7f0b0a38
+    const v2, 0x7f0b0a3b
 
     move-object/from16 v0, p0
 
@@ -807,7 +807,7 @@
 
     if-ne v0, v2, :cond_15
 
-    const v2, 0x7f0b0a28
+    const v2, 0x7f0b0a2b
 
     move-object/from16 v0, p0
 
@@ -858,7 +858,7 @@
     if-ne v13, v2, :cond_17
 
     .line 366
-    const v2, 0x7f0b0a3b
+    const v2, 0x7f0b0a3e
 
     move-object/from16 v0, p0
 
@@ -872,7 +872,7 @@
     new-instance v3, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity$DetailedItem;
 
     .line 375
-    const v2, 0x7f0b0a32
+    const v2, 0x7f0b0a35
 
     move-object/from16 v0, p0
 
@@ -885,7 +885,7 @@
 
     if-ne v13, v2, :cond_19
 
-    const v2, 0x7f0b0a29
+    const v2, 0x7f0b0a2c
 
     move-object/from16 v0, p0
 
@@ -1017,7 +1017,7 @@
 
     if-ne v2, v5, :cond_1d
 
-    const v2, 0x7f0b0a29
+    const v2, 0x7f0b0a2c
 
     move-object/from16 v0, p0
 
@@ -1141,7 +1141,7 @@
 
     iget-object v2, v0, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity;->mApply:Lcom/samsung/android/settings/widget/RoundButtonView;
 
-    const v3, 0x7f0b1509
+    const v3, 0x7f0b1517
 
     move-object/from16 v0, p0
 
@@ -1249,7 +1249,7 @@
 
     iget-object v2, v0, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity;->mCancel:Lcom/samsung/android/settings/widget/RoundButtonView;
 
-    const v3, 0x7f0b10f5
+    const v3, 0x7f0b1102
 
     move-object/from16 v0, p0
 
@@ -1306,7 +1306,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v3, 0x7f0b0a40
+    const v3, 0x7f0b0a43
 
     move-object/from16 v0, p0
 
@@ -1318,7 +1318,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b0a41
+    const v3, 0x7f0b0a44
 
     move-object/from16 v0, p0
 
@@ -1467,7 +1467,7 @@
 
     .line 308
     :cond_13
-    const v2, 0x7f0b0a6f
+    const v2, 0x7f0b0a72
 
     move-object/from16 v0, p0
 
@@ -1481,7 +1481,7 @@
     .restart local v30    # "resolutionStatus":I
     .local v31, "resolutionStr":Ljava/lang/String;
     :pswitch_0
-    const v2, 0x7f0b0595
+    const v2, 0x7f0b0596
 
     move-object/from16 v0, p0
 
@@ -1495,7 +1495,7 @@
     .line 326
     .local v31, "resolutionStr":Ljava/lang/String;
     :pswitch_1
-    const v2, 0x7f0b0596
+    const v2, 0x7f0b0597
 
     move-object/from16 v0, p0
 
@@ -1519,7 +1519,7 @@
     .end local v31    # "resolutionStr":Ljava/lang/String;
     .restart local v27    # "performanceStatus":I
     :cond_15
-    const v2, 0x7f0b0a29
+    const v2, 0x7f0b0a2c
 
     move-object/from16 v0, p0
 
@@ -1559,7 +1559,7 @@
     if-eqz v2, :cond_18
 
     .line 369
-    const v2, 0x7f0b0a3c
+    const v2, 0x7f0b0a3f
 
     .line 368
     :goto_10
@@ -1575,14 +1575,14 @@
     .line 370
     .end local v14    # "dataSummary":Ljava/lang/String;
     :cond_18
-    const v2, 0x7f0b0a3a
+    const v2, 0x7f0b0a3d
 
     goto :goto_10
 
     .line 377
     .restart local v14    # "dataSummary":Ljava/lang/String;
     :cond_19
-    const v2, 0x7f0b0a28
+    const v2, 0x7f0b0a2b
 
     move-object/from16 v0, p0
 
@@ -1655,7 +1655,7 @@
     new-instance v3, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity$DetailedItem;
 
     .line 388
-    const v2, 0x7f0b0a3d
+    const v2, 0x7f0b0a40
 
     move-object/from16 v0, p0
 
@@ -1664,7 +1664,7 @@
     move-result-object v4
 
     .line 389
-    const v2, 0x7f0b0a3a
+    const v2, 0x7f0b0a3d
 
     move-object/from16 v0, p0
 
@@ -1677,7 +1677,7 @@
 
     if-ne v13, v2, :cond_1c
 
-    const v2, 0x7f0b0a28
+    const v2, 0x7f0b0a2b
 
     move-object/from16 v0, p0
 
@@ -1695,7 +1695,7 @@
 
     .line 390
     :cond_1c
-    const v2, 0x7f0b0a29
+    const v2, 0x7f0b0a2c
 
     move-object/from16 v0, p0
 
@@ -1708,7 +1708,7 @@
     .line 406
     .end local v13    # "dataStatus":I
     :cond_1d
-    const v2, 0x7f0b0a28
+    const v2, 0x7f0b0a2b
 
     move-object/from16 v0, p0
 
@@ -1734,7 +1734,7 @@
 
     iget-object v2, v0, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity;->mApply:Lcom/samsung/android/settings/widget/RoundButtonView;
 
-    const v3, 0x7f0b0a36
+    const v3, 0x7f0b0a39
 
     move-object/from16 v0, p0
 
@@ -1785,7 +1785,7 @@
     aput-object v33, v2, v3
 
     .line 493
-    const v3, 0x7f0b0a47
+    const v3, 0x7f0b0a4a
 
     move-object/from16 v0, p0
 
@@ -1802,7 +1802,7 @@
     aput-object v3, v2, v4
 
     .line 491
-    const v3, 0x7f0b0a45
+    const v3, 0x7f0b0a48
 
     move-object/from16 v0, p0
 
@@ -1818,7 +1818,7 @@
 
     .line 495
     :cond_21
-    const v2, 0x7f0b0a46
+    const v2, 0x7f0b0a49
 
     move-object/from16 v0, p0
 
@@ -1914,7 +1914,7 @@
     if-ne v2, v3, :cond_4
 
     .line 175
-    const v2, 0x7f0b0a43
+    const v2, 0x7f0b0a46
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity;->getString(I)Ljava/lang/String;
 
@@ -1988,7 +1988,7 @@
     .line 178
     .restart local v1    # "p":Lcom/android/internal/app/AlertController$AlertParams;
     :cond_4
-    const v2, 0x7f0b0a44
+    const v2, 0x7f0b0a47
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/powersaving/PowerModeChangeDialogActivity;->getString(I)Ljava/lang/String;
 

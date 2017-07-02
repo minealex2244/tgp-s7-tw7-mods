@@ -25,13 +25,13 @@
     .param p2, "handler"    # Landroid/os/Handler;
 
     .prologue
-    .line 444
+    .line 427
     iput-object p1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$SettingsObserver;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
-    .line 445
+    .line 428
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 444
+    .line 427
     return-void
 .end method
 
@@ -43,7 +43,7 @@
     .param p2, "uri"    # Landroid/net/Uri;
 
     .prologue
-    .line 450
+    .line 433
     iget-object v0, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$SettingsObserver;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-static {v0}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-get0(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;)Z
@@ -52,7 +52,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 451
+    .line 434
     const-string/jumbo v0, "AdaptiveDisplayColorService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -75,12 +75,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 454
+    .line 437
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$SettingsObserver;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-static {v0}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-wrap10(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;)V
 
-    .line 449
+    .line 432
     return-void
 .end method

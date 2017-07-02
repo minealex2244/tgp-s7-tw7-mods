@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 501
+    .line 507
     invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
@@ -43,24 +43,24 @@
     .end annotation
 
     .prologue
-    .line 533
+    .line 539
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
-    .line 535
+    .line 541
     .local v9, "result":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v7
 
-    .line 536
+    .line 542
     .local v7, "myUserId":I
     if-eqz v7, :cond_18
 
     const/4 v4, 0x1
 
-    .line 540
+    .line 546
     .local v4, "isSecondaryUser":Z
     :goto_0
     invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isVzwVoLTEFeatureEnabled(Landroid/content/Context;)Z
@@ -69,21 +69,21 @@
 
     if-eqz v14, :cond_0
 
-    .line 541
+    .line 547
     invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isSupportGraceUXForVZW(Landroid/content/Context;)Z
 
     move-result v14
 
-    .line 540
+    .line 546
     if-eqz v14, :cond_1
 
-    .line 542
+    .line 548
     :cond_0
     const-string/jumbo v14, "vzw_provision_volte"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 546
+    .line 552
     :cond_1
     if-nez v4, :cond_2
 
@@ -93,13 +93,13 @@
 
     if-eqz v14, :cond_3
 
-    .line 547
+    .line 553
     :cond_2
     const-string/jumbo v14, "mobile_network_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 550
+    .line 556
     :cond_3
     invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isHideMobileNetworks(Landroid/content/Context;)Z
 
@@ -107,19 +107,19 @@
 
     if-eqz v14, :cond_19
 
-    .line 551
+    .line 557
     const-string/jumbo v14, "mobile_network_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 564
+    .line 570
     :cond_4
     :goto_1
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v8
 
-    .line 567
+    .line 573
     .local v8, "pm":Landroid/content/pm/PackageManager;
     const-string/jumbo v14, "android.hardware.type.television"
 
@@ -129,12 +129,12 @@
 
     if-eqz v14, :cond_5
 
-    .line 568
+    .line 574
     const-string/jumbo v14, "toggle_airplane"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 572
+    .line 578
     :cond_5
     invoke-static {}, Lcom/android/settings/Utils;->isMultisimModel()Z
 
@@ -150,13 +150,13 @@
 
     if-eqz v14, :cond_7
 
-    .line 573
+    .line 579
     :cond_6
     const-string/jumbo v14, "simcard_management"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 577
+    .line 583
     :cond_7
     invoke-static {}, Lcom/android/settings/Utils;->isDomesticKTTModel()Z
 
@@ -176,32 +176,32 @@
 
     if-nez v14, :cond_9
 
-    .line 578
+    .line 584
     :cond_8
     invoke-static {}, Lcom/android/settings/Utils;->isDisasterSafetyModel()Z
 
     move-result v14
 
-    .line 577
+    .line 583
     if-nez v14, :cond_9
 
-    .line 578
+    .line 584
     invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isContainerOnlyMode(Landroid/content/Context;)Z
 
     move-result v14
 
-    .line 577
+    .line 583
     if-nez v14, :cond_9
 
     if-eqz v4, :cond_a
 
-    .line 579
+    .line 585
     :cond_9
     const-string/jumbo v14, "kt_roaming_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 583
+    .line 589
     :cond_a
     invoke-static {}, Lcom/android/settings/Utils;->isDomesticLGTModel()Z
 
@@ -217,13 +217,13 @@
 
     if-eqz v4, :cond_c
 
-    .line 584
+    .line 590
     :cond_b
     const-string/jumbo v14, "global_roaming_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 588
+    .line 594
     :cond_c
     if-nez v4, :cond_1a
 
@@ -233,45 +233,45 @@
 
     if-eqz v14, :cond_1a
 
-    .line 591
+    .line 597
     invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isSupportGraceUXHeroView(Landroid/content/Context;)Z
 
     move-result v14
 
     if-eqz v14, :cond_d
 
-    .line 592
+    .line 598
     const-string/jumbo v14, "device_visibility_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 597
+    .line 603
     :cond_d
     :goto_2
     const-string/jumbo v14, "android.hardware.nfc"
 
-    .line 596
+    .line 602
     invoke-virtual {v8, v14}, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
 
     move-result v14
 
     if-nez v14, :cond_1b
 
-    .line 598
+    .line 604
     const-string/jumbo v14, "nfc_osaifukeitai_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 599
+    .line 605
     const-string/jumbo v14, "nfc_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 607
+    .line 613
     :goto_3
     const/4 v5, 0x1
 
-    .line 608
+    .line 614
     .local v5, "isWifiCallingOn":Z
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
@@ -297,27 +297,27 @@
 
     if-eqz v14, :cond_1d
 
-    .line 609
+    .line 615
     invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isEnabledWifiCallingActivity(Landroid/content/Context;)Z
 
     move-result v14
 
     if-nez v14, :cond_e
 
-    .line 610
+    .line 616
     const/4 v5, 0x0
 
-    .line 617
+    .line 623
     :cond_e
     :goto_4
     if-nez v5, :cond_f
 
-    .line 618
+    .line 624
     const-string/jumbo v14, "wifi_calling_settings_open"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 622
+    .line 628
     :cond_f
     invoke-static {}, Lcom/android/settings/Utils;->isSupportMptcp()Z
 
@@ -331,13 +331,27 @@
 
     if-eqz v14, :cond_1e
 
-    .line 626
+    .line 633
     :goto_5
+    invoke-static {}, Lcom/android/settings/Utils;->isSupportMptcp()Z
+
+    move-result v14
+
+    if-eqz v14, :cond_1f
+
+    invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isAisSIMValid(Landroid/content/Context;)Z
+
+    move-result v14
+
+    if-eqz v14, :cond_1f
+
+    .line 637
+    :goto_6
     invoke-static {}, Lcom/android/settings/Utils;->readSalesCode()Ljava/lang/String;
 
     move-result-object v10
 
-    .line 629
+    .line 640
     .local v10, "sSalesCode":Ljava/lang/String;
     const-string/jumbo v14, "connectivity"
 
@@ -349,7 +363,7 @@
 
     check-cast v3, Landroid/net/ConnectivityManager;
 
-    .line 630
+    .line 641
     .local v3, "cm":Landroid/net/ConnectivityManager;
     const-string/jumbo v14, "user"
 
@@ -361,7 +375,7 @@
 
     check-cast v13, Landroid/os/UserManager;
 
-    .line 632
+    .line 643
     .local v13, "um":Landroid/os/UserManager;
     const-string/jumbo v14, "persist.sys.tether_data"
 
@@ -371,7 +385,7 @@
 
     move-result v6
 
-    .line 633
+    .line 644
     .local v6, "mTetheredData":I
     const-string/jumbo v14, "ConnectionsSettings"
 
@@ -395,7 +409,7 @@
 
     invoke-static {v14, v15}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 635
+    .line 646
     if-nez v4, :cond_12
 
     invoke-virtual {v3}, Landroid/net/ConnectivityManager;->isTetheringSupported()Z
@@ -410,7 +424,7 @@
 
     if-nez v14, :cond_12
 
-    .line 636
+    .line 647
     invoke-static {}, Lcom/android/settings/Utils;->isTablet()Z
 
     move-result v14
@@ -423,10 +437,10 @@
 
     move-result v14
 
-    .line 635
+    .line 646
     if-nez v14, :cond_12
 
-    .line 636
+    .line 647
     :cond_10
     invoke-static {}, Lcom/android/settings/Utils;->isTablet()Z
 
@@ -440,10 +454,10 @@
 
     move-result v14
 
-    .line 635
+    .line 646
     if-nez v14, :cond_12
 
-    .line 637
+    .line 648
     :cond_11
     const-string/jumbo v14, "SBM"
 
@@ -451,18 +465,18 @@
 
     move-result v14
 
-    .line 635
-    if-eqz v14, :cond_1f
+    .line 646
+    if-eqz v14, :cond_20
 
-    .line 638
+    .line 649
     :cond_12
     const-string/jumbo v14, "tethering_and_hotspot"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 644
+    .line 655
     :cond_13
-    :goto_6
+    :goto_7
     const/4 v14, 0x1
 
     invoke-static {v14}, Lcom/android/settings/Utils;->checkKnoxCustomSettingsHiddenItem(I)Z
@@ -471,12 +485,12 @@
 
     if-eqz v14, :cond_14
 
-    .line 645
+    .line 656
     const-string/jumbo v14, "wifi_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 647
+    .line 658
     :cond_14
     const/4 v14, 0x2
 
@@ -486,12 +500,12 @@
 
     if-eqz v14, :cond_15
 
-    .line 648
+    .line 659
     const-string/jumbo v14, "bluetooth_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 650
+    .line 661
     :cond_15
     const/4 v14, 0x4
 
@@ -501,12 +515,12 @@
 
     if-eqz v14, :cond_16
 
-    .line 651
+    .line 662
     const-string/jumbo v14, "toggle_airplane"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 653
+    .line 664
     :cond_16
     const/16 v14, 0x400
 
@@ -516,16 +530,16 @@
 
     if-eqz v14, :cond_17
 
-    .line 654
+    .line 665
     const-string/jumbo v14, "location_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 658
+    .line 669
     :cond_17
     return-object v9
 
-    .line 536
+    .line 542
     .end local v3    # "cm":Landroid/net/ConnectivityManager;
     .end local v4    # "isSecondaryUser":Z
     .end local v5    # "isWifiCallingOn":Z
@@ -539,7 +553,7 @@
     .restart local v4    # "isSecondaryUser":Z
     goto/16 :goto_0
 
-    .line 552
+    .line 558
     :cond_19
     const-string/jumbo v14, "CDMA"
 
@@ -549,7 +563,7 @@
 
     if-eqz v14, :cond_4
 
-    .line 553
+    .line 559
     const-string/jumbo v14, "gsm.sim.currentcardstatus"
 
     const-string/jumbo v15, "9"
@@ -562,7 +576,7 @@
 
     move-result-object v1
 
-    .line 554
+    .line 560
     .local v1, "cardStatus1":Ljava/lang/String;
     const-string/jumbo v14, "gsm.sim.currentcardstatus"
 
@@ -576,19 +590,19 @@
 
     move-result-object v2
 
-    .line 555
+    .line 561
     .local v2, "cardStatus2":Ljava/lang/String;
     invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v11
 
-    .line 556
+    .line 562
     .local v11, "simState1":I
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v12
 
-    .line 559
+    .line 565
     .local v12, "simState2":I
     const/4 v14, 0x3
 
@@ -598,14 +612,14 @@
 
     if-eq v12, v14, :cond_4
 
-    .line 560
+    .line 566
     const-string/jumbo v14, "mobile_network_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_1
 
-    .line 589
+    .line 595
     .end local v1    # "cardStatus1":Ljava/lang/String;
     .end local v2    # "cardStatus2":Ljava/lang/String;
     .end local v11    # "simState1":I
@@ -618,7 +632,7 @@
 
     goto/16 :goto_2
 
-    .line 601
+    .line 607
     :cond_1b
     invoke-static {}, Lcom/samsung/android/settings/ConnectionsSettings;->-get0()Z
 
@@ -626,14 +640,14 @@
 
     if-eqz v14, :cond_1c
 
-    .line 602
+    .line 608
     const-string/jumbo v14, "nfc_osaifukeitai_settings"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_3
 
-    .line 604
+    .line 610
     :cond_1c
     const-string/jumbo v14, "nfc_settings"
 
@@ -641,7 +655,7 @@
 
     goto/16 :goto_3
 
-    .line 613
+    .line 619
     .restart local v5    # "isWifiCallingOn":Z
     :cond_1d
     invoke-static/range {p1 .. p1}, Lcom/android/settings/Utils;->isSupportWifiCalling(Landroid/content/Context;)Z
@@ -650,12 +664,12 @@
 
     if-nez v14, :cond_e
 
-    .line 614
+    .line 620
     const/4 v5, 0x0
 
     goto/16 :goto_4
 
-    .line 623
+    .line 629
     :cond_1e
     const-string/jumbo v14, "avea_mptcp"
 
@@ -663,24 +677,32 @@
 
     goto/16 :goto_5
 
-    .line 639
+    .line 634
+    :cond_1f
+    const-string/jumbo v14, "ais_mptcp"
+
+    invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto/16 :goto_6
+
+    .line 650
     .restart local v3    # "cm":Landroid/net/ConnectivityManager;
     .restart local v6    # "mTetheredData":I
     .restart local v10    # "sSalesCode":Ljava/lang/String;
     .restart local v13    # "um":Landroid/os/UserManager;
-    :cond_1f
+    :cond_20
     invoke-static {}, Lcom/android/settings/Utils;->isSprModel()Z
 
     move-result v14
 
     if-eqz v14, :cond_13
 
-    .line 640
+    .line 651
     const-string/jumbo v14, "tethering_and_hotspot"
 
     invoke-virtual {v9, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto/16 :goto_6
+    goto/16 :goto_7
 .end method
 
 .method public getRawDataToIndex(Landroid/content/Context;Z)Ljava/util/List;
@@ -700,24 +722,24 @@
     .end annotation
 
     .prologue
-    .line 514
+    .line 520
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 515
+    .line 521
     .local v2, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/search/SearchIndexableRaw;>;"
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 516
+    .line 522
     .local v1, "res":Landroid/content/res/Resources;
     new-instance v0, Lcom/android/settings/search/SearchIndexableRaw;
 
     invoke-direct {v0, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    .line 517
+    .line 523
     .local v0, "data":Lcom/android/settings/search/SearchIndexableRaw;
     invoke-static {}, Lcom/android/settings/Utils;->isJapanModel()Z
 
@@ -725,12 +747,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 518
+    .line 524
     const-string/jumbo v3, "tethering_and_hotspot"
 
     iput-object v3, v0, Lcom/android/settings/search/SearchIndexableRaw;->key:Ljava/lang/String;
 
-    .line 519
+    .line 525
     const v3, 0x7f0b0078
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -739,31 +761,31 @@
 
     iput-object v3, v0, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
-    .line 520
+    .line 526
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 523
+    .line 529
     :cond_0
     new-instance v0, Lcom/android/settings/search/SearchIndexableRaw;
 
     .end local v0    # "data":Lcom/android/settings/search/SearchIndexableRaw;
     invoke-direct {v0, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    .line 524
+    .line 530
     .restart local v0    # "data":Lcom/android/settings/search/SearchIndexableRaw;
     const-string/jumbo v3, "wifi_calling_settings_open"
 
     iput-object v3, v0, Lcom/android/settings/search/SearchIndexableRaw;->key:Ljava/lang/String;
 
-    .line 525
+    .line 531
     const/4 v3, 0x3
 
     iput v3, v0, Lcom/android/settings/search/SearchIndexableRaw;->menu_type:I
 
-    .line 526
+    .line 532
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 528
+    .line 534
     return-object v2
 .end method
 
@@ -784,12 +806,12 @@
     .end annotation
 
     .prologue
-    .line 505
+    .line 511
     new-instance v0, Landroid/provider/SearchIndexableResource;
 
     invoke-direct {v0, p1}, Landroid/provider/SearchIndexableResource;-><init>(Landroid/content/Context;)V
 
-    .line 506
+    .line 512
     .local v0, "sir":Landroid/provider/SearchIndexableResource;
     const-class v1, Lcom/samsung/android/settings/ConnectionsSettings;
 
@@ -799,12 +821,12 @@
 
     iput-object v1, v0, Landroid/provider/SearchIndexableResource;->className:Ljava/lang/String;
 
-    .line 507
+    .line 513
     const v1, 0x7f080044
 
     iput v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 
-    .line 508
+    .line 514
     const/4 v1, 0x1
 
     new-array v1, v1, [Landroid/provider/SearchIndexableResource;

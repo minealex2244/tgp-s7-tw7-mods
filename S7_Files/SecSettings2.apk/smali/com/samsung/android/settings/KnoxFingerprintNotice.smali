@@ -309,7 +309,7 @@
     if-gt v0, v9, :cond_8
 
     .line 249
-    const v9, 0x7f0b1184
+    const v9, 0x7f0b1191
 
     invoke-virtual {p0, v9}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -352,7 +352,7 @@
 
     aput-object v10, v9, v12
 
-    const v10, 0x7f0b0ae0
+    const v10, 0x7f0b0ae3
 
     invoke-virtual {p0, v10, v9}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -379,7 +379,7 @@
 
     aput-object v8, v10, v12
 
-    const v11, 0x7f0b0eb5
+    const v11, 0x7f0b0ec4
 
     invoke-virtual {p0, v11, v10}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -406,7 +406,7 @@
 
     aput-object v10, v9, v12
 
-    const v10, 0x7f0b07a8
+    const v10, 0x7f0b07ab
 
     invoke-virtual {p0, v10, v9}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -433,7 +433,7 @@
 
     aput-object v8, v10, v12
 
-    const v11, 0x7f0b0eb6
+    const v11, 0x7f0b0ec5
 
     invoke-virtual {p0, v11, v10}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -470,7 +470,7 @@
 
     aput-object v11, v10, v12
 
-    const v11, 0x7f0b0eb8
+    const v11, 0x7f0b0ec7
 
     invoke-virtual {p0, v11, v10}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -522,7 +522,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b0ec0
+    const v10, 0x7f0b0ecf
 
     invoke-virtual {v9, v10}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -559,7 +559,7 @@
     if-ge v0, v9, :cond_9
 
     .line 251
-    const v9, 0x7f0b1186
+    const v9, 0x7f0b1193
 
     invoke-virtual {p0, v9}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -571,7 +571,7 @@
     .line 253
     .local v8, "strLockType":Ljava/lang/String;
     :cond_9
-    const v9, 0x7f0b1188
+    const v9, 0x7f0b1195
 
     invoke-virtual {p0, v9}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -588,7 +588,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b0ec1
+    const v10, 0x7f0b0ed0
 
     invoke-virtual {v9, v10}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -610,9 +610,9 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v12, 0x7f0b0eb2
+    const v12, 0x7f0b0ec1
 
-    const v11, 0x7f0b0eb9
+    const v11, 0x7f0b0ec8
 
     const/16 v10, 0xb
 
@@ -907,7 +907,7 @@
     iget-object v5, p0, Lcom/samsung/android/settings/KnoxFingerprintNotice;->mFingerprintHelpText:Landroid/widget/TextView;
 
     .line 137
-    const v6, 0x7f0b0eb3
+    const v6, 0x7f0b0ec2
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -915,7 +915,7 @@
 
     new-array v7, v8, [Ljava/lang/Object;
 
-    const v8, 0x7f0b1184
+    const v8, 0x7f0b1191
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1029,7 +1029,7 @@
 
     new-array v7, v8, [Ljava/lang/Object;
 
-    const v8, 0x7f0b1184
+    const v8, 0x7f0b1191
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1061,7 +1061,7 @@
     iget-object v5, p0, Lcom/samsung/android/settings/KnoxFingerprintNotice;->mFingerprintHelpText:Landroid/widget/TextView;
 
     .line 145
-    const v6, 0x7f0b0eb3
+    const v6, 0x7f0b0ec2
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1069,7 +1069,7 @@
 
     new-array v7, v8, [Ljava/lang/Object;
 
-    const v8, 0x7f0b1186
+    const v8, 0x7f0b1193
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1097,7 +1097,7 @@
 
     new-array v7, v8, [Ljava/lang/Object;
 
-    const v8, 0x7f0b1186
+    const v8, 0x7f0b1193
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1124,7 +1124,7 @@
     iget-object v5, p0, Lcom/samsung/android/settings/KnoxFingerprintNotice;->mFingerprintHelpText:Landroid/widget/TextView;
 
     .line 153
-    const v6, 0x7f0b0eb3
+    const v6, 0x7f0b0ec2
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1132,7 +1132,7 @@
 
     new-array v7, v8, [Ljava/lang/Object;
 
-    const v8, 0x7f0b1188
+    const v8, 0x7f0b1195
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1160,7 +1160,7 @@
 
     new-array v7, v8, [Ljava/lang/Object;
 
-    const v8, 0x7f0b1188
+    const v8, 0x7f0b1195
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1223,7 +1223,7 @@
     .line 176
     iget-object v5, p0, Lcom/samsung/android/settings/KnoxFingerprintNotice;->mPasswordText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b0ebc
+    const v6, 0x7f0b0ecb
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1246,7 +1246,7 @@
     .line 180
     iget-object v5, p0, Lcom/samsung/android/settings/KnoxFingerprintNotice;->mFingerprintText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b0ea6
+    const v6, 0x7f0b0eb5
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1257,7 +1257,7 @@
     .line 181
     iget-object v5, p0, Lcom/samsung/android/settings/KnoxFingerprintNotice;->mPasswordText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b0ebc
+    const v6, 0x7f0b0ecb
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1280,7 +1280,7 @@
     .line 185
     iget-object v5, p0, Lcom/samsung/android/settings/KnoxFingerprintNotice;->mFingerprintText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b0ea6
+    const v6, 0x7f0b0eb5
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 
@@ -1291,7 +1291,7 @@
     .line 186
     iget-object v5, p0, Lcom/samsung/android/settings/KnoxFingerprintNotice;->mPasswordText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b0ebc
+    const v6, 0x7f0b0ecb
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/KnoxFingerprintNotice;->getString(I)Ljava/lang/String;
 

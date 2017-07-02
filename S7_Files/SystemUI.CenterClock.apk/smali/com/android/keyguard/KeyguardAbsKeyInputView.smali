@@ -291,7 +291,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 711
+    .line 714
     new-instance v0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;
 
     invoke-static {p1}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
@@ -302,11 +302,11 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;-><init>(Lcom/android/keyguard/KeyguardAbsKeyInputView;Landroid/accounts/AccountManager;Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;)V
 
-    .line 712
+    .line 715
     .local v0, "accountAnalyzer":Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;
     invoke-virtual {v0}, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->start()V
 
-    .line 708
+    .line 711
     return-void
 .end method
 
@@ -314,22 +314,22 @@
     .locals 3
 
     .prologue
-    .line 718
+    .line 721
     const-string/jumbo v0, "KeyguardAbsKeyInputView"
 
     const-string/jumbo v1, "disableDevicePermanently start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 719
+    .line 722
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->setPasswordEntryEnabled(Z)V
 
-    .line 720
+    .line 723
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
-    .line 721
+    .line 724
     iget-object v1, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mContext:Landroid/content/Context;
 
     const v2, 0x10409c3
@@ -340,10 +340,10 @@
 
     const/4 v2, 0x1
 
-    .line 720
+    .line 723
     invoke-interface {v0, v1, v2}, Lcom/android/keyguard/SecurityMessageDisplay;->setMessage(Ljava/lang/CharSequence;Z)V
 
-    .line 717
+    .line 720
     return-void
 .end method
 
@@ -352,15 +352,15 @@
     .param p1, "mode"    # Lcom/android/keyguard/EmergencyCarrierArea$FooterMode;
 
     .prologue
-    .line 640
+    .line 643
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mForgotPatternButton:Landroid/widget/Button;
 
     if-nez v0, :cond_0
 
-    .line 641
+    .line 644
     return-void
 
-    .line 643
+    .line 646
     :cond_0
     invoke-static {}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->-getcom-android-keyguard-EmergencyCarrierArea$FooterModeSwitchesValues()[I
 
@@ -374,7 +374,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 654
+    .line 657
     :goto_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mEcaView:Landroid/view/View;
 
@@ -382,18 +382,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 655
+    .line 658
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mEcaView:Landroid/view/View;
 
     check-cast v0, Lcom/android/keyguard/EmergencyCarrierArea;
 
     invoke-virtual {v0}, Lcom/android/keyguard/EmergencyCarrierArea;->resizeFooter()V
 
-    .line 639
+    .line 642
     :cond_1
     return-void
 
-    .line 645
+    .line 648
     :pswitch_0
     const-string/jumbo v0, "KeyguardAbsKeyInputView"
 
@@ -401,7 +401,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 646
+    .line 649
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mForgotPatternButton:Landroid/widget/Button;
 
     const/16 v1, 0x8
@@ -410,7 +410,7 @@
 
     goto :goto_0
 
-    .line 649
+    .line 652
     :pswitch_1
     const-string/jumbo v0, "KeyguardAbsKeyInputView"
 
@@ -418,7 +418,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 650
+    .line 653
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mForgotPatternButton:Landroid/widget/Button;
 
     const/4 v1, 0x0
@@ -427,7 +427,7 @@
 
     goto :goto_0
 
-    .line 643
+    .line 646
     nop
 
     :pswitch_data_0
@@ -443,21 +443,21 @@
     .locals 2
 
     .prologue
-    .line 621
+    .line 624
     iget-boolean v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mEnableHaptics:Z
 
     if-eqz v0, :cond_0
 
-    .line 622
+    .line 625
     const/4 v0, 0x1
 
-    .line 623
+    .line 626
     const/4 v1, 0x3
 
-    .line 622
+    .line 625
     invoke-virtual {p0, v0, v1}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->performHapticFeedback(II)Z
 
-    .line 620
+    .line 623
     :cond_0
     return-void
 .end method
@@ -469,7 +469,7 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 491
+    .line 494
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -478,31 +478,31 @@
 
     move-result-object v0
 
-    .line 492
+    .line 495
     .local v0, "msg":Ljava/lang/String;
     iget v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mMaxCountdownTimes:I
 
-    .line 493
+    .line 496
     iget-object v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
 
     move-result-object v3
 
-    .line 494
+    .line 497
     invoke-static {}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getCurrentUser()I
 
     move-result v4
 
-    .line 493
+    .line 496
     invoke-virtual {v3, v4}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getFailedUnlockAttempts(I)I
 
     move-result v3
 
-    .line 492
+    .line 495
     sub-int v1, v2, v3
 
-    .line 495
+    .line 498
     .local v1, "remaining":I
     iget v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mMaxCountdownTimes:I
 
@@ -510,7 +510,7 @@
 
     if-lez v1, :cond_0
 
-    .line 496
+    .line 499
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -533,22 +533,22 @@
 
     move-result-object v3
 
-    .line 497
+    .line 500
     sget v4, Lcom/android/keyguard/R$string;->kg_remaining_attempts:I
 
-    .line 496
+    .line 499
     const/4 v5, 0x1
 
     new-array v5, v5, [Ljava/lang/Object;
 
-    .line 497
+    .line 500
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
 
     aput-object v6, v5, v7
 
-    .line 496
+    .line 499
     invoke-virtual {v3, v4, v5}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
@@ -561,7 +561,7 @@
 
     move-result-object v0
 
-    .line 499
+    .line 502
     :cond_0
     return-object v0
 .end method
@@ -590,28 +590,28 @@
     .param p1, "elapsedRealtimeDeadline"    # J
 
     .prologue
-    .line 426
+    .line 429
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->setPasswordEntryEnabled(Z)V
 
-    .line 427
+    .line 430
     sget-boolean v0, Lcom/android/keyguard/KeyguardRune;->SUPPORT_SAMSUNG_ACCOUNT_RECOVERY:Z
 
     if-eqz v0, :cond_0
 
-    .line 428
+    .line 431
     sget-object v0, Lcom/android/keyguard/EmergencyCarrierArea$FooterMode;->Normal:Lcom/android/keyguard/EmergencyCarrierArea$FooterMode;
 
     invoke-direct {p0, v0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->updateFooter(Lcom/android/keyguard/EmergencyCarrierArea$FooterMode;)V
 
-    .line 434
+    .line 437
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v6
 
-    .line 438
+    .line 441
     .local v6, "elapsedRealtime":J
     new-instance v0, Lcom/android/keyguard/KeyguardAbsKeyInputView$5;
 
@@ -629,7 +629,7 @@
 
     iput-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCountdownTimer:Landroid/os/CountDownTimer;
 
-    .line 425
+    .line 428
     return-void
 .end method
 
@@ -637,7 +637,7 @@
     .locals 1
 
     .prologue
-    .line 520
+    .line 523
     const/4 v0, 0x0
 
     return v0
@@ -905,10 +905,10 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 514
+    .line 517
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->onUserInput()V
 
-    .line 515
+    .line 518
     const/4 v0, 0x0
 
     return v0
@@ -931,14 +931,14 @@
 
     move/from16 v1, p1
 
-    if-ne v0, v1, :cond_2
+    if-ne v0, v1, :cond_3
 
     const/4 v7, 0x1
 
     .line 322
     .local v7, "dismissKeyguard":Z
     :goto_0
-    if-eqz p2, :cond_3
+    if-eqz p2, :cond_4
 
     .line 324
     move-object/from16 v0, p0
@@ -1200,7 +1200,26 @@
     .line 416
     :cond_1
     :goto_2
-    if-eqz p2, :cond_a
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mEntry:Ljava/lang/String;
+
+    move-object/from16 v19, v0
+
+    if-eqz v19, :cond_2
+
+    .line 417
+    move-object/from16 v0, p0
+
+    iget-object v0, v0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mEntry:Ljava/lang/String;
+
+    move-object/from16 v19, v0
+
+    invoke-virtual/range {v19 .. v19}, Ljava/lang/String;->clear()V
+
+    .line 419
+    :cond_2
+    if-eqz p2, :cond_b
 
     const/16 v19, 0x0
 
@@ -1220,7 +1239,7 @@
 
     .line 321
     .end local v7    # "dismissKeyguard":Z
-    :cond_2
+    :cond_3
     const/4 v7, 0x0
 
     .restart local v7    # "dismissKeyguard":Z
@@ -1270,14 +1289,14 @@
     .end local v14    # "maxLength":I
     .end local v15    # "minLength":I
     .end local v17    # "quality":I
-    :cond_3
+    :cond_4
     move-object/from16 v0, p0
 
     iget-boolean v0, v0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mEnableHaptics:Z
 
     move/from16 v19, v0
 
-    if-eqz v19, :cond_4
+    if-eqz v19, :cond_5
 
     .line 356
     move-object/from16 v0, p0
@@ -1309,12 +1328,12 @@
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/os/SystemVibrator;->semVibrate(IILandroid/media/AudioAttributes;Landroid/os/Vibrator$SemMagnitudeTypes;)V
 
     .line 359
-    :cond_4
+    :cond_5
     const-wide/16 v8, 0x0
 
     .line 360
     .local v8, "deadline":J
-    if-eqz p4, :cond_7
+    if-eqz p4, :cond_8
 
     .line 361
     move-object/from16 v0, p0
@@ -1374,16 +1393,16 @@
 
     move/from16 v0, v19
 
-    if-eq v6, v0, :cond_5
+    if-eq v6, v0, :cond_6
 
     const/16 v19, 0x9
 
     move/from16 v0, v19
 
-    if-le v6, v0, :cond_7
+    if-le v6, v0, :cond_8
 
-    :cond_5
-    if-eqz v18, :cond_7
+    :cond_6
+    if-eqz v18, :cond_8
 
     .line 367
     move-object/from16 v0, p0
@@ -1436,7 +1455,7 @@
 
     move/from16 v1, v20
 
-    if-ne v0, v1, :cond_6
+    if-ne v0, v1, :cond_7
 
     .line 374
     move-object/from16 v0, p0
@@ -1452,7 +1471,7 @@
     invoke-virtual/range {v19 .. v19}, Lcom/android/keyguard/KeyguardUpdateMonitor;->updateFingerprintListeningState()V
 
     .line 383
-    :cond_6
+    :cond_7
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mContext:Landroid/content/Context;
@@ -1468,7 +1487,7 @@
     move-result v19
 
     .line 382
-    if-eqz v19, :cond_8
+    if-eqz v19, :cond_9
 
     .line 384
     invoke-direct/range {p0 .. p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->disableDevicePermanently()V
@@ -1476,7 +1495,7 @@
     .line 397
     .end local v6    # "attempts":I
     .end local v18    # "remainingAttemptsBeforeWipe":I
-    :cond_7
+    :cond_8
     :goto_4
     const-wide/16 v20, 0x0
 
@@ -1519,7 +1538,7 @@
 
     .line 401
     .local v16, "msg":Ljava/lang/String;
-    if-lez v12, :cond_9
+    if-lez v12, :cond_a
 
     .line 402
     move-object/from16 v0, p0
@@ -1619,7 +1638,7 @@
     .end local v16    # "msg":Ljava/lang/String;
     .restart local v6    # "attempts":I
     .restart local v18    # "remainingAttemptsBeforeWipe":I
-    :cond_8
+    :cond_9
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v8, v9}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->handleAttemptLockout(J)V
@@ -1631,7 +1650,7 @@
     .end local v18    # "remainingAttemptsBeforeWipe":I
     .restart local v12    # "mAddRemainingAttempt":I
     .restart local v16    # "msg":Ljava/lang/String;
-    :cond_9
+    :cond_a
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
@@ -1650,11 +1669,11 @@
 
     goto :goto_5
 
-    .line 416
+    .line 419
     .end local v8    # "deadline":J
     .end local v12    # "mAddRemainingAttempt":I
     .end local v16    # "msg":Ljava/lang/String;
-    :cond_a
+    :cond_b
     const/16 v19, 0x1
 
     goto/16 :goto_3
@@ -1666,36 +1685,36 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 525
+    .line 528
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPendingLockCheck:Landroid/os/AsyncTask;
 
     if-eqz v0, :cond_0
 
-    .line 526
+    .line 529
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPendingLockCheck:Landroid/os/AsyncTask;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->cancel(Z)Z
 
-    .line 527
+    .line 530
     iput-object v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mPendingLockCheck:Landroid/os/AsyncTask;
 
-    .line 530
+    .line 533
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCountdownTimer:Landroid/os/CountDownTimer;
 
     if-eqz v0, :cond_1
 
-    .line 531
+    .line 534
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCountdownTimer:Landroid/os/CountDownTimer;
 
     invoke-virtual {v0}, Landroid/os/CountDownTimer;->cancel()V
 
-    .line 532
+    .line 535
     iput-object v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCountdownTimer:Landroid/os/CountDownTimer;
 
-    .line 524
+    .line 527
     :cond_1
     return-void
 .end method
@@ -1705,10 +1724,10 @@
     .param p1, "reason"    # I
 
     .prologue
-    .line 539
+    .line 542
     invoke-virtual {p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->reset()V
 
-    .line 538
+    .line 541
     return-void
 .end method
 
@@ -1718,17 +1737,17 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 503
+    .line 506
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
     if-eqz v0, :cond_0
 
-    .line 504
+    .line 507
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mCallback:Lcom/android/keyguard/KeyguardSecurityCallback;
 
     invoke-interface {v0}, Lcom/android/keyguard/KeyguardSecurityCallback;->userActivity()V
 
-    .line 506
+    .line 509
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
@@ -1736,12 +1755,12 @@
 
     invoke-interface {v0, v1, v2}, Lcom/android/keyguard/SecurityMessageDisplay;->setMessage(Ljava/lang/CharSequence;Z)V
 
-    .line 508
+    .line 511
     const/4 v0, -0x1
 
     invoke-virtual {p0, v2, v2, v0}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->setSubSecurityMessage(IZI)V
 
-    .line 502
+    .line 505
     return-void
 .end method
 
@@ -1907,12 +1926,12 @@
 
     const/4 v3, 0x0
 
-    .line 597
+    .line 600
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSubSecurityMessage:Lcom/android/keyguard/KeyguardMessageArea;
 
     if-eqz v0, :cond_0
 
-    .line 598
+    .line 601
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/keyguard/KnoxStateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KnoxStateMonitor;
@@ -1925,39 +1944,39 @@
 
     if-eqz v0, :cond_1
 
-    .line 599
+    .line 602
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSubSecurityMessage:Lcom/android/keyguard/KeyguardMessageArea;
 
     const-string/jumbo v1, ""
 
     invoke-virtual {v0, v1, v3}, Lcom/android/keyguard/KeyguardMessageArea;->setMessage(Ljava/lang/CharSequence;Z)V
 
-    .line 600
+    .line 603
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSubSecurityMessage:Lcom/android/keyguard/KeyguardMessageArea;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Lcom/android/keyguard/KeyguardMessageArea;->setVisibility(I)V
 
-    .line 596
+    .line 599
     :cond_0
     :goto_0
     return-void
 
-    .line 602
+    .line 605
     :cond_1
     if-ltz p3, :cond_2
 
-    .line 603
+    .line 606
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSubSecurityMessage:Lcom/android/keyguard/KeyguardMessageArea;
 
     invoke-virtual {v0, p3}, Lcom/android/keyguard/KeyguardMessageArea;->setTimeout(I)V
 
-    .line 605
+    .line 608
     :cond_2
     if-nez p1, :cond_3
 
-    .line 606
+    .line 609
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSubSecurityMessage:Lcom/android/keyguard/KeyguardMessageArea;
 
     const-string/jumbo v1, ""
@@ -1966,13 +1985,13 @@
 
     goto :goto_0
 
-    .line 608
+    .line 611
     :cond_3
     iget v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mDpmMinimumPasswordLength:I
 
     if-lez v0, :cond_4
 
-    .line 609
+    .line 612
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSubSecurityMessage:Lcom/android/keyguard/KeyguardMessageArea;
 
     new-array v1, v1, [Ljava/lang/Object;
@@ -1989,7 +2008,7 @@
 
     goto :goto_0
 
-    .line 611
+    .line 614
     :cond_4
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSubSecurityMessage:Lcom/android/keyguard/KeyguardMessageArea;
 
@@ -2037,24 +2056,24 @@
     .param p2, "color"    # I
 
     .prologue
-    .line 579
+    .line 582
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
     invoke-interface {v0, p2}, Lcom/android/keyguard/SecurityMessageDisplay;->setNextMessageColor(I)V
 
-    .line 580
+    .line 583
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
     const/4 v1, 0x1
 
     invoke-interface {v0, p1, v1}, Lcom/android/keyguard/SecurityMessageDisplay;->setMessage(Ljava/lang/CharSequence;Z)V
 
-    .line 582
+    .line 585
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
     invoke-interface {v0}, Lcom/android/keyguard/SecurityMessageDisplay;->displayFailedAnimation()V
 
-    .line 578
+    .line 581
     return-void
 .end method
 
@@ -2067,7 +2086,7 @@
 
     const/4 v6, 0x0
 
-    .line 550
+    .line 553
     iget-object v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/KeyguardUpdateMonitor;
@@ -2080,21 +2099,21 @@
 
     if-eqz v3, :cond_1
 
-    .line 551
+    .line 554
     iget-object v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
     invoke-interface {v3, v6}, Lcom/android/keyguard/SecurityMessageDisplay;->setTimeout(I)V
 
-    .line 548
+    .line 551
     :cond_0
     :goto_0
     return-void
 
-    .line 553
+    .line 556
     :cond_1
     if-eqz p1, :cond_3
 
-    .line 554
+    .line 557
     iget-object v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-static {}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getCurrentUser()I
@@ -2105,7 +2124,7 @@
 
     move-result-wide v0
 
-    .line 555
+    .line 558
     .local v0, "deadline":J
     const-wide/16 v4, 0x0
 
@@ -2113,32 +2132,32 @@
 
     if-lez v3, :cond_2
 
-    .line 556
+    .line 559
     return-void
 
-    .line 558
+    .line 561
     :cond_2
     iget-object v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
     invoke-interface {v3, v6}, Lcom/android/keyguard/SecurityMessageDisplay;->setTimeout(I)V
 
-    .line 559
+    .line 562
     invoke-virtual {p0, p1}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->getPromptReasonStringRes(I)I
 
     move-result v2
 
-    .line 560
+    .line 563
     .local v2, "promptReasonStringRes":I
     if-nez v2, :cond_0
 
-    .line 561
+    .line 564
     iget-object v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView;->mSecurityMessageDisplay:Lcom/android/keyguard/SecurityMessageDisplay;
 
     invoke-interface {v3, v7}, Lcom/android/keyguard/SecurityMessageDisplay;->setTimeout(I)V
 
     goto :goto_0
 
-    .line 564
+    .line 567
     .end local v0    # "deadline":J
     .end local v2    # "promptReasonStringRes":I
     :cond_3
@@ -2154,7 +2173,7 @@
     .param p1, "finishRunnable"    # Ljava/lang/Runnable;
 
     .prologue
-    .line 630
+    .line 633
     const/4 v0, 0x0
 
     return v0
@@ -2164,7 +2183,7 @@
     .locals 0
 
     .prologue
-    .line 635
+    .line 638
     return-void
 .end method
 

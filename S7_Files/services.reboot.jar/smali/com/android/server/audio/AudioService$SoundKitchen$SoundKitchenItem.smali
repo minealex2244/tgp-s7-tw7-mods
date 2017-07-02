@@ -30,18 +30,18 @@
     .param p3, "ratio"    # I
 
     .prologue
-    .line 12577
+    .line 12688
     iput-object p1, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->this$1:Lcom/android/server/audio/AudioService$SoundKitchen;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12578
+    .line 12689
     iput p2, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->mDevice:I
 
-    .line 12579
+    .line 12690
     iput p3, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->mRatio:I
 
-    .line 12577
+    .line 12688
     return-void
 .end method
 
@@ -52,7 +52,7 @@
     .param p1, "force"    # Z
 
     .prologue
-    .line 12587
+    .line 12698
     if-nez p1, :cond_0
 
     iget-object v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->this$1:Lcom/android/server/audio/AudioService$SoundKitchen;
@@ -61,19 +61,19 @@
 
     iget v1, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->mDevice:I
 
-    invoke-static {v0, v1}, Lcom/android/server/audio/AudioService;->-wrap1(Lcom/android/server/audio/AudioService;I)Z
+    invoke-static {v0, v1}, Lcom/android/server/audio/AudioService;->-wrap2(Lcom/android/server/audio/AudioService;I)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 12588
+    .line 12699
     :cond_0
     iget v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->mDevice:I
 
     return v0
 
-    .line 12590
+    .line 12701
     :cond_1
     const/4 v0, 0x0
 
@@ -84,7 +84,7 @@
     .locals 1
 
     .prologue
-    .line 12598
+    .line 12709
     iget v0, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->mRatio:I
 
     return v0
@@ -95,10 +95,10 @@
     .param p1, "device"    # I
 
     .prologue
-    .line 12583
+    .line 12694
     iput p1, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->mDevice:I
 
-    .line 12582
+    .line 12693
     return-void
 .end method
 
@@ -107,9 +107,9 @@
     .param p1, "ratio"    # I
 
     .prologue
-    .line 12594
+    .line 12705
     iput p1, p0, Lcom/android/server/audio/AudioService$SoundKitchen$SoundKitchenItem;->mRatio:I
 
-    .line 12593
+    .line 12704
     return-void
 .end method

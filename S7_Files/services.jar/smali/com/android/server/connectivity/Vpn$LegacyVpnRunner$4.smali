@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     .prologue
-    .line 2650
+    .line 2644
     iput-object p1, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner$4;->this$1:Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,14 +41,14 @@
     .locals 4
 
     .prologue
-    .line 2653
+    .line 2647
     const-string/jumbo v2, "LegacyVpnRunner"
 
     const-string/jumbo v3, "stopDeamon Thread started "
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2654
+    .line 2648
     const/4 v1, 0x0
 
     .local v1, "i":I
@@ -63,7 +63,7 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 2655
+    .line 2649
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner$4;->this$1:Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     invoke-static {v2}, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->-get0(Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)[Ljava/lang/String;
@@ -72,7 +72,7 @@
 
     aget-object v0, v2, v1
 
-    .line 2656
+    .line 2650
     .local v0, "daemon":Ljava/lang/String;
     const-string/jumbo v2, "charon"
 
@@ -82,7 +82,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 2657
+    .line 2651
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner$4;->this$1:Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     invoke-static {v2}, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->-get3(Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)[Landroid/net/LocalSocket;
@@ -93,7 +93,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 2658
+    .line 2652
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner$4;->this$1:Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     invoke-static {v2}, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->-get3(Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)[Landroid/net/LocalSocket;
@@ -106,10 +106,10 @@
 
     move-result v2
 
-    .line 2656
+    .line 2650
     if-eqz v2, :cond_0
 
-    .line 2659
+    .line 2653
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner$4;->this$1:Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     invoke-static {v2}, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->-get3(Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)[Landroid/net/LocalSocket;
@@ -120,16 +120,16 @@
 
     invoke-static {v2}, Llibcore/io/IoUtils;->closeQuietly(Ljava/lang/AutoCloseable;)V
 
-    .line 2661
+    .line 2655
     :cond_0
     invoke-static {v0}, Landroid/os/SystemService;->stop(Ljava/lang/String;)V
 
-    .line 2654
+    .line 2648
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 2652
+    .line 2646
     .end local v0    # "daemon":Ljava/lang/String;
     :cond_1
     return-void

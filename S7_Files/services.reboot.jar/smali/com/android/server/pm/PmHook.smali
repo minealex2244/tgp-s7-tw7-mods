@@ -14,7 +14,7 @@
     .locals 0
 
     .prologue
-    .line 21
+    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,12 +26,12 @@
     .param p1, "userIdentifier"    # I
 
     .prologue
-    .line 115
+    .line 116
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v3
 
-    .line 116
+    .line 117
     const-string/jumbo v4, "PackageManagerService"
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -58,7 +58,7 @@
 
     move-result-object v5
 
-    .line 115
+    .line 116
     const/4 v0, 0x3
 
     const/4 v1, 0x5
@@ -69,7 +69,7 @@
 
     invoke-static/range {v0 .. v6}, Landroid/sec/enterprise/auditlog/AuditLog;->logAsUser(IIZILjava/lang/String;Ljava/lang/String;I)V
 
-    .line 113
+    .line 114
     return-void
 .end method
 
@@ -83,14 +83,14 @@
 
     const/4 v2, 0x1
 
-    .line 41
+    .line 42
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v3
 
     const-string/jumbo v4, "PackageManagerService"
 
-    .line 42
+    .line 43
     const-string/jumbo v1, "Starting to install Application %s version %s"
 
     const/4 v5, 0x2
@@ -115,10 +115,10 @@
 
     move v6, p1
 
-    .line 39
+    .line 40
     invoke-static/range {v0 .. v6}, Landroid/sec/enterprise/auditlog/AuditLog;->logAsUser(IIZILjava/lang/String;Ljava/lang/String;I)V
 
-    .line 37
+    .line 38
     return-void
 .end method
 
@@ -131,7 +131,7 @@
 
     const/4 v4, 0x0
 
-    .line 136
+    .line 137
     invoke-virtual {p0}, Landroid/content/pm/PackageParser$Package;->isSystemApp()Z
 
     move-result v3
@@ -144,11 +144,11 @@
 
     if-eqz v3, :cond_1
 
-    .line 149
+    .line 150
     :cond_0
     return v4
 
-    .line 137
+    .line 138
     :cond_1
     const/4 v3, 0x2
 
@@ -182,7 +182,7 @@
 
     aput-object v3, v1, v4
 
-    .line 138
+    .line 139
     new-instance v3, Ljava/io/File;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -211,7 +211,7 @@
 
     aput-object v3, v1, v10
 
-    .line 139
+    .line 140
     .local v1, "armPaths":[Ljava/io/File;
     array-length v6, v1
 
@@ -222,7 +222,7 @@
 
     aget-object v0, v1, v5
 
-    .line 140
+    .line 141
     .local v0, "armPath":Ljava/io/File;
     if-eqz v0, :cond_3
 
@@ -232,7 +232,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 141
+    .line 142
     invoke-virtual {v0}, Ljava/io/File;->list()[Ljava/lang/String;
 
     move-result-object v7
@@ -246,7 +246,7 @@
 
     aget-object v2, v7, v3
 
-    .line 142
+    .line 143
     .local v2, "path":Ljava/lang/String;
     if-eqz v2, :cond_2
 
@@ -258,16 +258,16 @@
 
     if-eqz v9, :cond_2
 
-    .line 143
+    .line 144
     return v10
 
-    .line 141
+    .line 142
     :cond_2
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 139
+    .line 140
     .end local v2    # "path":Ljava/lang/String;
     :cond_3
     add-int/lit8 v3, v5, 0x1
@@ -275,6 +275,143 @@
     move v5, v3
 
     goto :goto_0
+.end method
+
+.method static final enableDisableApplicationLog(Ljava/lang/String;II)V
+    .locals 10
+    .param p0, "packageName"    # Ljava/lang/String;
+    .param p1, "newState"    # I
+    .param p2, "userId"    # I
+
+    .prologue
+    const/4 v0, 0x1
+
+    .line 155
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    move-result-wide v8
+
+    .line 157
+    .local v8, "psToken":J
+    if-ne p1, v0, :cond_1
+
+    .line 159
+    :try_start_0
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v3
+
+    const-string/jumbo v4, "PackageManagerService"
+
+    .line 160
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v1, "Application "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string/jumbo v1, " has been enabled."
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 158
+    const/4 v0, 0x5
+
+    const/4 v1, 0x5
+
+    const/4 v2, 0x1
+
+    move v6, p2
+
+    invoke-static/range {v0 .. v6}, Landroid/sec/enterprise/auditlog/AuditLog;->logAsUser(IIZILjava/lang/String;Ljava/lang/String;I)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 169
+    :cond_0
+    :goto_0
+    invoke-static {v8, v9}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    .line 153
+    return-void
+
+    .line 162
+    :cond_1
+    const/4 v0, 0x2
+
+    if-ne p1, v0, :cond_0
+
+    .line 164
+    :try_start_1
+    invoke-static {}, Landroid/os/Process;->myPid()I
+
+    move-result v3
+
+    const-string/jumbo v4, "PackageManagerService"
+
+    .line 165
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v1, "Application "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string/jumbo v1, " has been disabled."
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 163
+    const/4 v0, 0x5
+
+    const/4 v1, 0x5
+
+    const/4 v2, 0x1
+
+    move v6, p2
+
+    invoke-static/range {v0 .. v6}, Landroid/sec/enterprise/auditlog/AuditLog;->logAsUser(IIZILjava/lang/String;Ljava/lang/String;I)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    .line 168
+    :catchall_0
+    move-exception v0
+
+    .line 169
+    invoke-static {v8, v9}, Landroid/os/Binder;->restoreCallingIdentity(J)V
+
+    .line 168
+    throw v0
 .end method
 
 .method static final installFailLog(Landroid/content/Context;Landroid/content/pm/PackageInfoLite;Ljava/lang/String;I)V
@@ -285,15 +422,15 @@
     .param p3, "userId"    # I
 
     .prologue
-    .line 70
+    .line 71
     iget-object v0, p1, Landroid/content/pm/PackageInfoLite;->packageName:Ljava/lang/String;
 
     invoke-static {v0, p3}, Lcom/android/server/pm/PmHook;->auditLogInstallFail(Ljava/lang/String;I)V
 
-    .line 71
+    .line 72
     invoke-static {p0, p1, p2}, Lcom/android/server/pm/PmHook;->sendInstallFailLogToContextware(Landroid/content/Context;Landroid/content/pm/PackageInfoLite;Ljava/lang/String;)V
 
-    .line 69
+    .line 70
     return-void
 .end method
 
@@ -305,15 +442,15 @@
     .param p3, "userId"    # I
 
     .prologue
-    .line 75
+    .line 76
     iget-object v0, p1, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
 
     invoke-static {v0, p3}, Lcom/android/server/pm/PmHook;->auditLogInstallFail(Ljava/lang/String;I)V
 
-    .line 76
+    .line 77
     invoke-static {p0, p1, p2}, Lcom/android/server/pm/PmHook;->sendInstallFailLogToContextware(Landroid/content/Context;Landroid/content/pm/PackageParser$Package;Ljava/lang/String;)V
 
-    .line 74
+    .line 75
     return-void
 .end method
 
@@ -325,15 +462,15 @@
     .prologue
     const/4 v0, 0x5
 
-    .line 62
+    .line 63
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v3
 
-    .line 63
+    .line 64
     const-string/jumbo v4, "PackageManagerService"
 
-    .line 64
+    .line 65
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -358,17 +495,17 @@
 
     move-result-object v5
 
-    .line 61
+    .line 62
     const/4 v2, 0x1
 
     move v1, v0
 
     move v6, p1
 
-    .line 60
+    .line 61
     invoke-static/range {v0 .. v6}, Landroid/sec/enterprise/auditlog/AuditLog;->logAsUser(IIZILjava/lang/String;Ljava/lang/String;I)V
 
-    .line 58
+    .line 59
     return-void
 .end method
 
@@ -389,7 +526,7 @@
     .end annotation
 
     .prologue
-    .line 123
+    .line 124
     .local p0, "sortedPkgs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/pm/PackageParser$Package;>;"
     .local p1, "pkgs":Landroid/util/ArraySet;, "Landroid/util/ArraySet<Landroid/content/pm/PackageParser$Package;>;"
     const/4 v4, 0x1
@@ -402,13 +539,13 @@
 
     aput-object v4, v0, v5
 
-    .line 124
+    .line 125
     .local v0, "forceDexoptPkgNames":[Ljava/lang/String;
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 125
+    .line 126
     .local v1, "forcePkgNamesList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-virtual {p1}, Landroid/util/ArraySet;->iterator()Ljava/util/Iterator;
 
@@ -423,14 +560,14 @@
 
     if-eqz v4, :cond_1
 
-    .line 126
+    .line 127
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroid/content/pm/PackageParser$Package;
 
-    .line 127
+    .line 128
     .local v3, "pkg":Landroid/content/pm/PackageParser$Package;
     iget-object v4, v3, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
 
@@ -440,7 +577,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 128
+    .line 129
     const-string/jumbo v4, "PM_HOOK"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -479,15 +616,15 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 129
+    .line 130
     invoke-virtual {p0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 130
+    .line 131
     invoke-interface {v2}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 122
+    .line 123
     .end local v3    # "pkg":Landroid/content/pm/PackageParser$Package;
     :cond_1
     return-void
@@ -500,25 +637,25 @@
     .param p2, "installer"    # Ljava/lang/String;
 
     .prologue
-    .line 80
+    .line 81
     const-string/jumbo v1, "android.intent.action.PACKAGE_INSTALL_FAILED"
 
-    .line 81
+    .line 82
     iget-object v2, p1, Landroid/content/pm/PackageInfoLite;->packageName:Ljava/lang/String;
 
     iget v3, p1, Landroid/content/pm/PackageInfoLite;->versionCode:I
 
-    .line 82
+    .line 83
     const/4 v4, 0x0
 
     move-object v0, p0
 
     move-object v5, p2
 
-    .line 80
+    .line 81
     invoke-static/range {v0 .. v5}, Lcom/android/server/pm/PmHook;->sendLogToContextware(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 79
+    .line 80
     return-void
 .end method
 
@@ -529,25 +666,25 @@
     .param p2, "installer"    # Ljava/lang/String;
 
     .prologue
-    .line 86
+    .line 87
     const-string/jumbo v1, "android.intent.action.PACKAGE_INSTALL_FAILED"
 
-    .line 87
+    .line 88
     iget-object v2, p1, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
 
     iget v3, p1, Landroid/content/pm/PackageParser$Package;->mVersionCode:I
 
-    .line 88
+    .line 89
     iget-object v4, p1, Landroid/content/pm/PackageParser$Package;->mVersionName:Ljava/lang/String;
 
     move-object v0, p0
 
     move-object v5, p2
 
-    .line 86
+    .line 87
     invoke-static/range {v0 .. v5}, Lcom/android/server/pm/PmHook;->sendLogToContextware(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 85
+    .line 86
     return-void
 .end method
 
@@ -561,7 +698,7 @@
     .param p5, "installer"    # Ljava/lang/String;
 
     .prologue
-    .line 91
+    .line 92
     return-void
 .end method
 
@@ -572,14 +709,14 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 30
+    .line 31
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v3
 
     const-string/jumbo v4, "PackageManagerService"
 
-    .line 31
+    .line 32
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -604,18 +741,18 @@
 
     move-result-object v0
 
-    .line 32
+    .line 33
     const-string/jumbo v1, " failed"
 
-    .line 31
+    .line 32
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 32
+    .line 33
     const-string/jumbo v1, " because of signature verification failure"
 
-    .line 31
+    .line 32
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
@@ -624,20 +761,20 @@
 
     move-result-object v5
 
-    .line 28
+    .line 29
     const/4 v0, 0x3
 
-    .line 29
+    .line 30
     const/4 v1, 0x5
 
     const/4 v2, 0x0
 
     move v6, p2
 
-    .line 28
+    .line 29
     invoke-static/range {v0 .. v6}, Landroid/sec/enterprise/auditlog/AuditLog;->logAsUser(IIZILjava/lang/String;Ljava/lang/String;I)V
 
-    .line 26
+    .line 27
     return-void
 .end method
 
@@ -650,12 +787,12 @@
     .prologue
     const/4 v0, 0x5
 
-    .line 51
+    .line 52
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v3
 
-    .line 52
+    .line 53
     const-string/jumbo v4, "PackageManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -672,12 +809,12 @@
 
     move-result-object v2
 
-    .line 53
+    .line 54
     if-eqz p1, :cond_0
 
     const-string/jumbo v1, " succeeded"
 
-    .line 52
+    .line 53
     :goto_0
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -687,20 +824,20 @@
 
     move-result-object v5
 
-    .line 50
+    .line 51
     const/4 v2, 0x1
 
     move v1, v0
 
     move v6, p2
 
-    .line 49
+    .line 50
     invoke-static/range {v0 .. v6}, Landroid/sec/enterprise/auditlog/AuditLog;->logAsUser(IIZILjava/lang/String;Ljava/lang/String;I)V
 
-    .line 47
+    .line 48
     return-void
 
-    .line 53
+    .line 54
     :cond_0
     const-string/jumbo v1, " failed"
 

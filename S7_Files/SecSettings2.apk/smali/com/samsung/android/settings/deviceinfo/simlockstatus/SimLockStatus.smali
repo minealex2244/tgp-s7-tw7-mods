@@ -234,7 +234,7 @@
     .line 384
     iget-object v1, p0, Lcom/samsung/android/settings/deviceinfo/simlockstatus/SimLockStatus;->mRes:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b0504
+    const v2, 0x7f0b0505
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -275,7 +275,7 @@
     .line 388
     iget-object v1, p0, Lcom/samsung/android/settings/deviceinfo/simlockstatus/SimLockStatus;->mRes:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b19fe
+    const v2, 0x7f0b1a0c
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -298,7 +298,7 @@
     .line 390
     iget-object v1, p0, Lcom/samsung/android/settings/deviceinfo/simlockstatus/SimLockStatus;->mRes:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b1023
+    const v2, 0x7f0b1030
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -708,7 +708,7 @@
     .param p1, "dialogId"    # I
 
     .prologue
-    const v9, 0x7f0b04fd
+    const v9, 0x7f0b04fe
 
     const v8, 0x7f0b01cb
 
@@ -778,7 +778,7 @@
 
     iget-object v5, p0, Lcom/samsung/android/settings/deviceinfo/simlockstatus/SimLockStatus;->mRes:Landroid/content/res/Resources;
 
-    const v6, 0x7f0b04fe
+    const v6, 0x7f0b04ff
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -804,7 +804,7 @@
     move-result-object v4
 
     .line 265
-    const v5, 0x7f0b04ff
+    const v5, 0x7f0b0500
 
     .line 264
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -817,7 +817,7 @@
     invoke-direct {v5, p0}, Lcom/samsung/android/settings/deviceinfo/simlockstatus/SimLockStatus$8;-><init>(Lcom/samsung/android/settings/deviceinfo/simlockstatus/SimLockStatus;)V
 
     .line 266
-    const v6, 0x7f0b0500
+    const v6, 0x7f0b0501
 
     .line 264
     invoke-virtual {v4, v6, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -851,7 +851,7 @@
     move-result-object v4
 
     .line 279
-    const v5, 0x7f0b0501
+    const v5, 0x7f0b0502
 
     .line 278
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -878,12 +878,12 @@
 
     .line 283
     .local v2, "mAlertDialog":Landroid/app/AlertDialog$Builder;
-    const v4, 0x7f0b0502
+    const v4, 0x7f0b0503
 
     invoke-virtual {v2, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 284
-    const v4, 0x7f0b0503
+    const v4, 0x7f0b0504
 
     invoke-virtual {v2, v4}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -1014,7 +1014,7 @@
     invoke-virtual {v3, v0}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     .line 310
-    const v4, 0x7f0b18e6
+    const v4, 0x7f0b18f4
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 

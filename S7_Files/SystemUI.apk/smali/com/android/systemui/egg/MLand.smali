@@ -3788,7 +3788,7 @@
 
     .line 416
     .local v22, "sun":Lcom/android/systemui/egg/MLand$Star;
-    const v25, 0x7f0206f4
+    const v25, 0x7f0206fb
 
     move-object/from16 v0, v22
 

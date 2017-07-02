@@ -30,9 +30,9 @@
     .prologue
     const/4 v0, 0x0
 
-    const v1, 0x7f0b1959
+    const v1, 0x7f0b1967
 
-    const v2, 0x7f0b194f
+    const v2, 0x7f0b195d
 
     .line 67
     invoke-static {v0}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
@@ -118,7 +118,7 @@
     const-string/jumbo v3, "extra_prefs_set_next_text"
 
     .line 79
-    const v4, 0x7f0b1980
+    const v4, 0x7f0b198e
 
     .line 78
     invoke-virtual {p0, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;

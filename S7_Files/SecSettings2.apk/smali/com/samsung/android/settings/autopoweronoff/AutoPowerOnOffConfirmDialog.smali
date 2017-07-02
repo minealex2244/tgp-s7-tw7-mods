@@ -207,7 +207,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0b0b35
+    const v4, 0x7f0b0b38
 
     invoke-virtual {v2, v4, v3}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -342,7 +342,7 @@
 
     iget-object v1, p0, Lcom/samsung/android/settings/autopoweronoff/AutoPowerOnOffConfirmDialog;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0b0b36
+    const v2, 0x7f0b0b39
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -387,7 +387,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f0b0b35
+    const v3, 0x7f0b0b38
 
     invoke-virtual {v1, v3, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -494,7 +494,7 @@
 
     .line 74
     .local v0, "p":Lcom/android/internal/app/AlertController$AlertParams;
-    const v2, 0x7f0b0b34
+    const v2, 0x7f0b0b37
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/autopoweronoff/AutoPowerOnOffConfirmDialog;->getString(I)Ljava/lang/String;
 

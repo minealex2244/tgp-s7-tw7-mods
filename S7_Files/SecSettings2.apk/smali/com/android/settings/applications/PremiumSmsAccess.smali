@@ -101,7 +101,7 @@
 
     .line 104
     :cond_1
-    const v4, 0x7f0b1527
+    const v4, 0x7f0b1535
 
     invoke-virtual {p0, v4}, Lcom/android/settings/applications/PremiumSmsAccess;->setEmptyText(I)V
 
@@ -188,7 +188,7 @@
     invoke-virtual {v3, v6}, Lcom/android/settings/DividerPreference;->setSelectable(Z)V
 
     .line 119
-    const v4, 0x7f0b1b41
+    const v4, 0x7f0b1b4f
 
     invoke-virtual {v3, v4}, Lcom/android/settings/DividerPreference;->setSummary(I)V
 

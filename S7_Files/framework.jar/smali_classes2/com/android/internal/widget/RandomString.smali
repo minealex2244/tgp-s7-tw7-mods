@@ -8,7 +8,7 @@
     .locals 0
 
     .prologue
-    .line 3144
+    .line 3220
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,31 +20,31 @@
     .param p1, "hi"    # I
 
     .prologue
-    .line 3166
+    .line 3242
     new-instance v2, Ljava/util/Random;
 
     invoke-direct {v2}, Ljava/util/Random;-><init>()V
 
-    .line 3167
+    .line 3243
     .local v2, "rn":Ljava/util/Random;
     sub-int v3, p1, p0
 
     add-int/lit8 v1, v3, 0x1
 
-    .line 3168
+    .line 3244
     .local v1, "n":I
     invoke-virtual {v2, v1}, Ljava/util/Random;->nextInt(I)I
 
     move-result v0
 
-    .line 3169
+    .line 3245
     .local v0, "i":I
     if-gez v0, :cond_0
 
-    .line 3170
+    .line 3246
     neg-int v0, v0
 
-    .line 3171
+    .line 3247
     :cond_0
     add-int v3, p0, v0
 
@@ -55,7 +55,7 @@
     .locals 2
 
     .prologue
-    .line 3179
+    .line 3255
     const/4 v0, 0x5
 
     const/16 v1, 0xa
@@ -75,16 +75,16 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 3153
+    .line 3229
     invoke-static {p0, p1}, Lcom/android/internal/widget/RandomString;->rand(II)I
 
     move-result v2
 
-    .line 3154
+    .line 3230
     .local v2, "n":I
     new-array v0, v2, [B
 
-    .line 3155
+    .line 3231
     .local v0, "b":[B
     const/4 v1, 0x0
 
@@ -92,7 +92,7 @@
     :goto_0
     if-ge v1, v2, :cond_1
 
-    .line 3156
+    .line 3232
     const/16 v3, 0xa
 
     invoke-static {v5, v3}, Lcom/android/internal/widget/RandomString;->rand(II)I
@@ -103,7 +103,7 @@
 
     if-nez v3, :cond_0
 
-    .line 3157
+    .line 3233
     const/16 v3, 0x30
 
     const/16 v4, 0x39
@@ -116,13 +116,13 @@
 
     aput-byte v3, v0, v1
 
-    .line 3155
+    .line 3231
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 3159
+    .line 3235
     :cond_0
     const/16 v3, 0x61
 
@@ -138,7 +138,7 @@
 
     goto :goto_1
 
-    .line 3162
+    .line 3238
     :cond_1
     new-instance v3, Ljava/lang/String;
 

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     .prologue
-    .line 5919
+    .line 6046
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$7;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,14 +40,14 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 5921
+    .line 6048
     const-string/jumbo v9, "ApplicationPolicy"
 
     const-string/jumbo v10, "User switched"
 
     invoke-static {v9, v10}, Lcom/android/server/enterprise/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5923
+    .line 6050
     invoke-static {}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-get0()Ljava/util/Map;
 
     move-result-object v9
@@ -64,11 +64,11 @@
 
     if-eqz v9, :cond_1
 
-    .line 5924
+    .line 6051
     :cond_0
     return-void
 
-    .line 5926
+    .line 6053
     :cond_1
     const-string/jumbo v9, "android.intent.extra.user_handle"
 
@@ -78,7 +78,7 @@
 
     move-result v8
 
-    .line 5927
+    .line 6054
     .local v8, "userId":I
     invoke-static {}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-get0()Ljava/util/Map;
 
@@ -88,7 +88,7 @@
 
     move-result-object v3
 
-    .line 5929
+    .line 6056
     .local v3, "adminLuids":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/Long;>;"
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -113,13 +113,13 @@
 
     move-result-wide v0
 
-    .line 5930
+    .line 6057
     .local v0, "adminLuid":J
     invoke-static {v0, v1}, Lcom/android/server/enterprise/storage/EdmStorageProvider;->getAdminUidFromLUID(J)I
 
     move-result v4
 
-    .line 5931
+    .line 6058
     .local v4, "adminUid":I
     invoke-static {v4}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -127,10 +127,10 @@
 
     if-ne v8, v9, :cond_2
 
-    .line 5933
+    .line 6060
     const/4 v6, 0x0
 
-    .line 5934
+    .line 6061
     .local v6, "persInfo":Lcom/samsung/android/knox/SemPersonaInfo;
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$7;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
@@ -142,7 +142,7 @@
 
     move-result-object v6
 
-    .line 5935
+    .line 6062
     .local v6, "persInfo":Lcom/samsung/android/knox/SemPersonaInfo;
     if-eqz v6, :cond_6
 
@@ -158,7 +158,7 @@
 
     if-eqz v9, :cond_6
 
-    .line 5937
+    .line 6064
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$7;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-static {v9}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-get6(Lcom/android/server/enterprise/application/ApplicationPolicy;)Lcom/android/server/enterprise/adapterlayer/PersonaManagerAdapter;
@@ -171,7 +171,7 @@
 
     if-nez v9, :cond_3
 
-    .line 5938
+    .line 6065
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$7;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-static {v9}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-get6(Lcom/android/server/enterprise/application/ApplicationPolicy;)Lcom/android/server/enterprise/adapterlayer/PersonaManagerAdapter;
@@ -184,7 +184,7 @@
 
     if-eqz v9, :cond_4
 
-    .line 5948
+    .line 6075
     :cond_3
     const-string/jumbo v9, "ApplicationPolicy"
 
@@ -192,7 +192,7 @@
 
     invoke-static {v9, v10}, Lcom/android/server/enterprise/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5949
+    .line 6076
     invoke-static {}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-get0()Ljava/util/Map;
 
     move-result-object v9
@@ -203,14 +203,14 @@
 
     invoke-interface {v9, v10}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5950
+    .line 6077
     return-void
 
-    .line 5940
+    .line 6067
     :cond_4
     iget v7, v6, Lcom/samsung/android/knox/SemPersonaInfo;->id:I
 
-    .line 5941
+    .line 6068
     .local v7, "personaId":I
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$7;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
@@ -228,7 +228,7 @@
 
     if-nez v9, :cond_5
 
-    .line 5942
+    .line 6069
     new-instance v5, Lcom/android/server/enterprise/application/ApplicationPolicy$PersonaObserver;
 
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$7;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
@@ -241,7 +241,7 @@
 
     invoke-direct {v5, v9, v10, v7, v11}, Lcom/android/server/enterprise/application/ApplicationPolicy$PersonaObserver;-><init>(Lcom/android/server/enterprise/application/ApplicationPolicy;Landroid/content/Context;II)V
 
-    .line 5943
+    .line 6070
     .local v5, "observer":Lcom/android/server/enterprise/application/ApplicationPolicy$PersonaObserver;
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$7;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
@@ -255,7 +255,7 @@
 
     invoke-virtual {v9, v10, v5}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5945
+    .line 6072
     .end local v5    # "observer":Lcom/android/server/enterprise/application/ApplicationPolicy$PersonaObserver;
     :cond_5
     const-string/jumbo v9, "ApplicationPolicy"
@@ -264,19 +264,19 @@
 
     invoke-static {v9, v10}, Lcom/android/server/enterprise/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5946
+    .line 6073
     return-void
 
-    .line 5954
+    .line 6081
     .end local v7    # "personaId":I
     :cond_6
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$7;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
-    invoke-static {v9, v0, v1, v4}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-wrap15(Lcom/android/server/enterprise/application/ApplicationPolicy;JI)V
+    invoke-static {v9, v0, v1, v4}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-wrap17(Lcom/android/server/enterprise/application/ApplicationPolicy;JI)V
 
     goto/16 :goto_0
 
-    .line 5920
+    .line 6047
     .end local v0    # "adminLuid":J
     .end local v4    # "adminUid":I
     .end local v6    # "persInfo":Lcom/samsung/android/knox/SemPersonaInfo;

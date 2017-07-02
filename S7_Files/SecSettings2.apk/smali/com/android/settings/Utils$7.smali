@@ -27,7 +27,7 @@
     .param p1, "val$context"    # Landroid/content/Context;
 
     .prologue
-    .line 7336
+    .line 7370
     iput-object p1, p0, Lcom/android/settings/Utils$7;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 7340
+    .line 7374
     iget-object v0, p0, Lcom/android/settings/Utils$7;->val$context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/settings/search/SecIndex;->getInstance(Landroid/content/Context;)Lcom/android/settings/search/SecIndex;
@@ -50,6 +50,6 @@
 
     invoke-virtual {v0}, Lcom/android/settings/search/SecIndex;->init()V
 
-    .line 7338
+    .line 7372
     return-void
 .end method

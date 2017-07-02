@@ -39,7 +39,7 @@
     .param p5, "val$v"    # Landroid/view/View;
 
     .prologue
-    .line 1558
+    .line 1560
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$15;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15$1;->val$sbn:Landroid/service/notification/StatusBarNotification;
@@ -61,7 +61,7 @@
     .locals 5
 
     .prologue
-    .line 1561
+    .line 1563
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$15;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar$15;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -76,7 +76,7 @@
 
     invoke-static {v0, v1, v2, v3, v4}, Lcom/android/systemui/statusbar/BaseStatusBar;->-wrap1(Lcom/android/systemui/statusbar/BaseStatusBar;Landroid/service/notification/StatusBarNotification;Lcom/android/systemui/statusbar/ExpandableNotificationRow;Lcom/android/systemui/statusbar/NotificationGuts;Landroid/view/View;)V
 
-    .line 1562
+    .line 1564
     const/4 v0, 0x1
 
     return v0

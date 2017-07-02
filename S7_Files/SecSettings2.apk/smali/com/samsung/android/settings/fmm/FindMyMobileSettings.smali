@@ -13,7 +13,8 @@
         Lcom/samsung/android/settings/fmm/FindMyMobileSettings$1;,
         Lcom/samsung/android/settings/fmm/FindMyMobileSettings$2;,
         Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;,
-        Lcom/samsung/android/settings/fmm/FindMyMobileSettings$4;
+        Lcom/samsung/android/settings/fmm/FindMyMobileSettings$4;,
+        Lcom/samsung/android/settings/fmm/FindMyMobileSettings$5;
     }
 .end annotation
 
@@ -53,6 +54,8 @@
 
 .field private mIsSupportLMM:Z
 
+.field private mLastLocationObserver:Landroid/database/ContentObserver;
+
 .field private mReactivationLock:Landroid/preference/SwitchPreference;
 
 .field private mReactivationLockDialog:Landroid/app/AlertDialog;
@@ -73,9 +76,9 @@
 
 .field private mSendFinalLocationInfo:Landroid/preference/SwitchPreference;
 
-.field private mSimChangeAlert:Landroid/preference/PreferenceScreen;
+.field private mSendLastLocation:Landroid/preference/SwitchPreference;
 
-.field private mSwitchState:Z
+.field private mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
 
 # direct methods
@@ -111,6 +114,14 @@
     return-object v0
 .end method
 
+.method static synthetic -get4(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)Landroid/preference/SwitchPreference;
+    .locals 1
+
+    iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    return-object v0
+.end method
+
 .method static synthetic -set0(I)I
     .locals 0
 
@@ -129,7 +140,19 @@
     return-object v0
 .end method
 
-.method static synthetic -wrap1(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
+.method static synthetic -wrap1(Landroid/content/Context;)Z
+    .locals 1
+    .param p0, "context"    # Landroid/content/Context;
+
+    .prologue
+    invoke-static {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->isSupportSendLastLocation(Landroid/content/Context;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static synthetic -wrap2(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->onCancelPressed()V
@@ -137,7 +160,7 @@
     return-void
 .end method
 
-.method static synthetic -wrap2(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
+.method static synthetic -wrap3(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->updateSimChangeAlert()V
@@ -149,14 +172,14 @@
     .locals 1
 
     .prologue
-    .line 758
-    new-instance v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$4;
+    .line 841
+    new-instance v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$5;
 
-    invoke-direct {v0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$4;-><init>()V
+    invoke-direct {v0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$5;-><init>()V
 
     sput-object v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SEARCH_INDEX_DATA_PROVIDER:Lcom/android/settings/search/Indexable$SearchIndexProvider;
 
-    .line 78
+    .line 81
     return-void
 .end method
 
@@ -166,33 +189,30 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 78
+    .line 81
     invoke-direct {p0}, Lcom/samsung/android/settings/SecSettingsPreferenceFragment;-><init>()V
 
-    .line 124
+    .line 135
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
-    .line 132
+    .line 143
     iput-boolean v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasSamsungAccount:Z
 
-    .line 134
+    .line 145
     iput-boolean v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIsShopDemo:Z
 
-    .line 136
+    .line 147
     iput-boolean v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIsSupportLMM:Z
 
-    .line 138
+    .line 149
     iput-boolean v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasFMMDMClient:Z
 
-    .line 145
+    .line 156
     iput-boolean v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mFirstLogin:Z
 
-    .line 146
-    iput-boolean v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSwitchState:Z
-
-    .line 161
+    .line 171
     new-instance v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$1;
 
     new-instance v1, Landroid/os/Handler;
@@ -203,7 +223,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControlsObserver:Landroid/database/ContentObserver;
 
-    .line 174
+    .line 184
     new-instance v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$2;
 
     new-instance v1, Landroid/os/Handler;
@@ -214,14 +234,25 @@
 
     iput-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockObserver:Landroid/database/ContentObserver;
 
-    .line 187
+    .line 197
     new-instance v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;
 
-    invoke-direct {v0, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
+    new-instance v1, Landroid/os/Handler;
+
+    invoke-direct {v1}, Landroid/os/Handler;-><init>()V
+
+    invoke-direct {v0, p0, v1}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;Landroid/os/Handler;)V
+
+    iput-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mLastLocationObserver:Landroid/database/ContentObserver;
+
+    .line 205
+    new-instance v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$4;
+
+    invoke-direct {v0, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$4;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
 
     iput-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 78
+    .line 81
     return-void
 .end method
 
@@ -229,10 +260,10 @@
     .locals 5
 
     .prologue
-    .line 651
+    .line 734
     const/4 v1, 0x0
 
-    .line 652
+    .line 735
     .local v1, "ret":Z
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
@@ -248,23 +279,23 @@
 
     if-eqz v2, :cond_0
 
-    .line 653
+    .line 736
     sget-object v2, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->rsm:Lcom/samsung/android/service/reactive/ReactiveServiceManager;
 
     invoke-virtual {v2}, Lcom/samsung/android/service/reactive/ReactiveServiceManager;->getStatus()I
 
     move-result v0
 
-    .line 654
+    .line 737
     .local v0, "lmmFlag":I
     const/4 v2, 0x1
 
     if-ne v0, v2, :cond_1
 
-    .line 655
+    .line 738
     const/4 v1, 0x1
 
-    .line 660
+    .line 743
     :goto_0
     const-string/jumbo v2, "FindMyMobileSettings"
 
@@ -288,12 +319,12 @@
 
     invoke-static {v2, v3}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 663
+    .line 746
     .end local v0    # "lmmFlag":I
     :cond_0
     return v1
 
-    .line 658
+    .line 741
     .restart local v0    # "lmmFlag":I
     :cond_1
     const/4 v1, 0x0
@@ -301,17 +332,232 @@
     goto :goto_0
 .end method
 
+.method private static isSupportSendLastLocation(Landroid/content/Context;)Z
+    .locals 7
+    .param p0, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 276
+    const/4 v3, 0x0
+
+    .line 280
+    .local v3, "result":Z
+    :try_start_0
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v4
+
+    const-string/jumbo v5, "com.samsung.android.fmm"
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v4, v5, v6}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v2
+
+    .line 281
+    .local v2, "i":Landroid/content/pm/PackageInfo;
+    iget v0, v2, Landroid/content/pm/PackageInfo;->versionCode:I
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 278
+    .local v0, "curVer":I
+    const v4, 0x25ad14a0
+
+    .line 282
+    if-gt v4, v0, :cond_0
+
+    .line 283
+    const/4 v3, 0x1
+
+    .line 287
+    .end local v0    # "curVer":I
+    .end local v2    # "i":Landroid/content/pm/PackageInfo;
+    :cond_0
+    :goto_0
+    return v3
+
+    .line 285
+    :catch_0
+    move-exception v1
+
+    .local v1, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
+    goto :goto_0
+.end method
+
+.method private moveToFMMActivity(Z)V
+    .locals 10
+    .param p1, "isChecked"    # Z
+
+    .prologue
+    const/4 v6, 0x0
+
+    .line 581
+    new-instance v1, Landroid/content/Intent;
+
+    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+
+    .line 582
+    .local v1, "intent":Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v5
+
+    const-string/jumbo v7, "login_state"
+
+    invoke-static {v5, v7, v6}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v4
+
+    .line 583
+    .local v4, "login_state":I
+    const-string/jumbo v5, "login_state"
+
+    invoke-virtual {v1, v5, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+
+    .line 584
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 585
+    .local v3, "locale":Ljava/lang/String;
+    const-string/jumbo v5, "ko"
+
+    invoke-virtual {v5, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    const/4 v5, 0x1
+
+    :goto_0
+    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v2
+
+    .line 586
+    .local v2, "isDomestic":Ljava/lang/Boolean;
+    const-string/jumbo v5, "FindMyMobileSettings"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "isDomestic : "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v5, v7}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 587
+    const-string/jumbo v5, "isDomestic"
+
+    invoke-virtual {v1, v5, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
+
+    .line 588
+    const-string/jumbo v5, "switch_state"
+
+    invoke-virtual {v1, v5, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    .line 589
+    const-string/jumbo v5, "com.samsung.android.fmm"
+
+    const-string/jumbo v7, "com.sec.dsm.system.FMMAgreement"
+
+    invoke-virtual {v1, v5, v7}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 590
+    const-string/jumbo v5, "FindMyMobileSettings"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "mSendLastLocation change : "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v8
+
+    const-string/jumbo v9, "login_state"
+
+    invoke-static {v8, v9, v6}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v6
+
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v5, v6}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 592
+    const/16 v5, 0x3eb
+
+    :try_start_0
+    invoke-virtual {p0, v1, v5}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 580
+    :goto_1
+    return-void
+
+    .end local v2    # "isDomestic":Ljava/lang/Boolean;
+    :cond_0
+    move v5, v6
+
+    .line 585
+    goto :goto_0
+
+    .line 593
+    .restart local v2    # "isDomestic":Ljava/lang/Boolean;
+    :catch_0
+    move-exception v0
+
+    .line 594
+    .local v0, "e":Landroid/content/ActivityNotFoundException;
+    invoke-virtual {v0}, Landroid/content/ActivityNotFoundException;->printStackTrace()V
+
+    goto :goto_1
+.end method
+
 .method private moveToLoginPage(I)V
     .locals 4
     .param p1, "requestCode"    # I
 
     .prologue
-    .line 505
+    .line 570
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 506
+    .line 571
     .local v1, "intent":Landroid/content/Intent;
     const-string/jumbo v2, "com.osp.app.signin"
 
@@ -319,28 +565,28 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 507
+    .line 572
     const-string/jumbo v2, "MODE"
 
     const-string/jumbo v3, "REMOTE_CONTROLS"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 509
+    .line 574
     :try_start_0
     invoke-virtual {p0, v1, p1}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 504
+    .line 569
     :goto_0
     return-void
 
-    .line 510
+    .line 575
     :catch_0
     move-exception v0
 
-    .line 511
+    .line 576
     .local v0, "e":Landroid/content/ActivityNotFoundException;
     invoke-virtual {v0}, Landroid/content/ActivityNotFoundException;->printStackTrace()V
 
@@ -355,7 +601,7 @@
 
     const/4 v2, 0x0
 
-    .line 604
+    .line 687
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -372,16 +618,16 @@
 
     if-ne v0, v3, :cond_0
 
-    .line 605
+    .line 688
     iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 603
+    .line 686
     :goto_0
     return-void
 
-    .line 607
+    .line 690
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
@@ -396,20 +642,20 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 517
+    .line 600
     iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    .line 518
+    .line 601
     iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 519
+    .line 602
     iput-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
-    .line 522
+    .line 605
     :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -419,52 +665,52 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 523
-    const v1, 0x7f0b072b
+    .line 606
+    const v1, 0x7f0b072c
 
-    .line 522
+    .line 605
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 523
-    const v1, 0x7f0b0729
+    .line 606
+    const v1, 0x7f0b072a
 
-    .line 522
+    .line 605
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 524
-    new-instance v1, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$5;
-
-    invoke-direct {v1, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$5;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
-
-    const v2, 0x7f0b152e
-
-    .line 522
-    invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v0
-
-    .line 537
+    .line 607
     new-instance v1, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$6;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$6;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
 
-    const v2, 0x7f0b10f5
+    const v2, 0x7f0b153c
 
-    .line 522
-    invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    .line 605
+    invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 541
+    .line 620
     new-instance v1, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$7;
 
     invoke-direct {v1, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$7;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
 
-    .line 522
+    const v2, 0x7f0b1102
+
+    .line 605
+    invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    .line 624
+    new-instance v1, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$8;
+
+    invoke-direct {v1, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$8;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
+
+    .line 605
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
@@ -475,7 +721,7 @@
 
     iput-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
-    .line 515
+    .line 598
     return-void
 .end method
 
@@ -485,28 +731,28 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 557
+    .line 640
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
     if-eqz v2, :cond_0
 
-    .line 558
+    .line 641
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v2}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 559
+    .line 642
     iput-object v3, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
-    .line 562
+    .line 645
     :cond_0
-    const v0, 0x7f0b071c
+    const v0, 0x7f0b071d
 
-    .line 563
+    .line 646
     .local v0, "bodyTextResID":I
-    const v1, 0x7f0b071b
+    const v1, 0x7f0b071c
 
-    .line 565
+    .line 648
     .local v1, "titleTextResId":I
     const-string/jumbo v2, "VZW"
 
@@ -520,13 +766,13 @@
 
     if-eqz v2, :cond_1
 
-    .line 566
-    const v0, 0x7f0b071e
+    .line 649
+    const v0, 0x7f0b071f
 
-    .line 567
-    const v1, 0x7f0b071d
+    .line 650
+    const v1, 0x7f0b071e
 
-    .line 570
+    .line 653
     :cond_1
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
@@ -544,36 +790,36 @@
 
     move-result-object v2
 
-    .line 571
-    new-instance v3, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$8;
-
-    invoke-direct {v3, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$8;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
-
-    const v4, 0x7f0b152e
-
-    .line 570
-    invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v2
-
-    .line 585
+    .line 654
     new-instance v3, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$9;
 
     invoke-direct {v3, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$9;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
 
-    const v4, 0x7f0b10f5
+    const v4, 0x7f0b153c
 
-    .line 570
-    invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    .line 653
+    invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
 
-    .line 589
+    .line 668
     new-instance v3, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$10;
 
     invoke-direct {v3, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$10;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
 
-    .line 570
+    const v4, 0x7f0b1102
+
+    .line 653
+    invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v2
+
+    .line 672
+    new-instance v3, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$11;
+
+    invoke-direct {v3, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$11;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
+
+    .line 653
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v2
@@ -584,7 +830,7 @@
 
     iput-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockDialog:Landroid/app/AlertDialog;
 
-    .line 555
+    .line 638
     return-void
 .end method
 
@@ -594,7 +840,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 684
+    .line 767
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -603,7 +849,7 @@
 
     move-result-object v0
 
-    .line 685
+    .line 768
     .local v0, "manager":Landroid/accounts/AccountManager;
     const-string/jumbo v2, "com.osp.app.signin"
 
@@ -611,7 +857,7 @@
 
     move-result-object v1
 
-    .line 686
+    .line 769
     .local v1, "samsungAccnts":[Landroid/accounts/Account;
     array-length v2, v1
 
@@ -622,17 +868,17 @@
     :goto_0
     iput-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasSamsungAccount:Z
 
-    .line 687
+    .line 770
     iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasSamsungAccount:Z
 
     if-eqz v2, :cond_1
 
-    .line 688
+    .line 771
     aget-object v2, v1, v3
 
     iput-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccount:Landroid/accounts/Account;
 
-    .line 689
+    .line 772
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
     aget-object v4, v1, v3
@@ -641,7 +887,7 @@
 
     invoke-virtual {v2, v4}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 690
+    .line 773
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
     iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountContext:Landroid/content/Context;
@@ -650,42 +896,42 @@
 
     move-result-object v4
 
-    .line 691
+    .line 774
     iget-object v5, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountDescription:Landroid/accounts/AuthenticatorDescription;
 
     iget v5, v5, Landroid/accounts/AuthenticatorDescription;->labelId:I
 
-    .line 690
+    .line 773
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v2, v4}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 692
+    .line 775
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setWidgetLayoutResource(I)V
 
-    .line 683
+    .line 766
     :goto_1
     return-void
 
     :cond_0
     move v2, v3
 
-    .line 686
+    .line 769
     goto :goto_0
 
-    .line 695
+    .line 778
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
-    const v3, 0x7f0b1764
+    const v3, 0x7f0b1772
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setTitle(I)V
 
-    .line 696
+    .line 779
     iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIsSupportLMM:Z
 
     if-eqz v2, :cond_2
@@ -694,15 +940,15 @@
 
     if-eqz v2, :cond_3
 
-    .line 700
+    .line 783
     :cond_2
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
-    const v3, 0x7f0b072c
+    const v3, 0x7f0b072d
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setSummary(I)V
 
-    .line 702
+    .line 785
     :goto_2
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
@@ -712,14 +958,14 @@
 
     goto :goto_1
 
-    .line 697
+    .line 780
     :cond_3
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
-    .line 698
-    const v3, 0x7f0b072d
+    .line 781
+    const v3, 0x7f0b072e
 
-    .line 697
+    .line 780
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setSummary(I)V
 
     goto :goto_2
@@ -733,7 +979,7 @@
 
     const/4 v2, 0x0
 
-    .line 613
+    .line 696
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -746,20 +992,20 @@
 
     move-result v0
 
-    .line 615
+    .line 698
     .local v0, "isAirplaneMode":Z
     iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     if-eqz v1, :cond_0
 
-    .line 616
+    .line 699
     invoke-static {}, Lcom/android/settings/Utils;->isMultisimModel()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 617
+    .line 700
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -774,12 +1020,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 618
+    .line 701
     iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    .line 640
+    .line 723
     :goto_0
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
@@ -797,14 +1043,14 @@
 
     if-ne v1, v3, :cond_9
 
-    .line 641
+    .line 724
     iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    const v4, 0x7f0b19ca
+    const v4, 0x7f0b19d8
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -812,30 +1058,30 @@
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 645
+    .line 728
     :goto_1
     iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v1, v3}, Landroid/preference/PreferenceScreen;->semSetSummaryColorToColorPrimaryDark(Z)V
 
-    .line 611
+    .line 694
     :cond_0
     return-void
 
-    .line 620
+    .line 703
     :cond_1
     iget-boolean v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasSamsungAccount:Z
 
     if-nez v1, :cond_2
 
-    .line 621
+    .line 704
     iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 623
+    .line 706
     :cond_2
     iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
@@ -853,7 +1099,7 @@
 
     goto :goto_2
 
-    .line 627
+    .line 710
     :cond_4
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -865,7 +1111,7 @@
 
     if-eq v1, v3, :cond_5
 
-    .line 628
+    .line 711
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
     move-result-object v1
@@ -876,7 +1122,7 @@
 
     if-nez v1, :cond_6
 
-    .line 630
+    .line 713
     :cond_5
     iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
@@ -884,7 +1130,7 @@
 
     goto :goto_0
 
-    .line 629
+    .line 712
     :cond_6
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -898,19 +1144,19 @@
 
     if-eq v1, v4, :cond_5
 
-    .line 632
+    .line 715
     iget-boolean v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasSamsungAccount:Z
 
     if-nez v1, :cond_7
 
-    .line 633
+    .line 716
     iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     goto :goto_0
 
-    .line 635
+    .line 718
     :cond_7
     iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
@@ -928,7 +1174,7 @@
 
     goto :goto_3
 
-    .line 643
+    .line 726
     :cond_9
     iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
@@ -936,7 +1182,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f0b19cb
+    const v4, 0x7f0b19d9
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -953,7 +1199,7 @@
     .locals 2
 
     .prologue
-    .line 157
+    .line 167
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -966,406 +1212,400 @@
 
     sput v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM:I
 
-    .line 158
+    .line 168
     sget v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM:I
 
     return v0
 .end method
 
 .method public onActivityResult(IILandroid/content/Intent;)V
-    .locals 9
+    .locals 11
     .param p1, "requestCode"    # I
     .param p2, "resultCode"    # I
     .param p3, "data"    # Landroid/content/Intent;
 
     .prologue
-    const v6, 0x7f1001df
+    const/4 v10, -0x1
 
-    const/4 v8, -0x1
+    const/4 v5, 0x1
 
-    const/16 v3, 0x3e8
+    const/4 v6, 0x0
 
-    const/4 v7, 0x1
-
-    const/4 v4, 0x0
-
-    .line 453
+    .line 515
     invoke-super {p0, p1, p2, p3}, Lcom/samsung/android/settings/SecSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
-    .line 454
-    const/16 v2, 0x3e9
+    .line 516
+    const/16 v4, 0x3e9
 
-    if-ne p1, v2, :cond_2
+    if-ne p1, v4, :cond_0
 
-    .line 455
-    if-ne p2, v8, :cond_2
+    .line 517
+    if-ne p2, v10, :cond_0
 
-    .line 456
+    .line 518
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string/jumbo v5, "login_state"
+    const-string/jumbo v7, "login_state"
 
-    invoke-static {v2, v5, v7}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v4, v7, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 457
-    const-string/jumbo v2, "FindMyMobileSettings"
+    .line 519
+    const-string/jumbo v4, "FindMyMobileSettings"
 
-    const-string/jumbo v5, "RemoteControlRequestCode complete"
+    const-string/jumbo v7, "RemoteControlRequestCode complete"
 
-    invoke-static {v2, v5}, Landroid/util/secutil/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v7}, Landroid/util/secutil/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 458
-    iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
+    .line 520
+    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
 
-    iget-boolean v5, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSwitchState:Z
+    invoke-virtual {v4, v6}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    invoke-virtual {v2, v5}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    .line 459
-    iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSwitchState:Z
-
-    if-eqz v2, :cond_6
-
-    .line 460
-    const-string/jumbo v2, "CHM"
-
-    invoke-static {}, Lcom/android/settings/Utils;->readSalesCode()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    const-string/jumbo v2, "CHU"
-
-    invoke-static {}, Lcom/android/settings/Utils;->readSalesCode()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    const-string/jumbo v2, "CTC"
-
-    .line 461
-    invoke-static {}, Lcom/android/settings/Utils;->readSalesCode()Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 460
-    invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 461
-    :cond_0
-    sget-boolean v2, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->chkboxFlag:Z
-
-    if-eqz v2, :cond_4
-
-    .line 464
-    :cond_1
+    .line 521
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getInteger(I)I
+    const v7, 0x7f1001df
 
-    move-result v2
+    invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
-    sput v2, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
+    move-result v4
 
-    .line 465
-    iget-object v5, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
+    sput v4, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
 
-    sget v6, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
+    .line 522
+    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
-    iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSwitchState:Z
+    sget v7, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
 
-    if-eqz v2, :cond_5
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move v2, v3
+    move-result-object v8
 
-    :goto_0
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v4, v7, v8}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
 
-    move-result-object v2
-
-    invoke-static {v5, v6, v2}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
-
-    .line 466
+    .line 523
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string/jumbo v5, "remote_control"
+    const-string/jumbo v7, "remote_control"
 
-    invoke-static {v2, v5, v7}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v4, v7, v6}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 467
+    .line 524
     new-instance v0, Landroid/content/Intent;
 
-    const-string/jumbo v2, "android.settings.remotecontrol_on"
+    const-string/jumbo v4, "android.settings.remotecontrol_off"
 
-    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 468
+    .line 525
     .local v0, "intent":Landroid/content/Intent;
-    const-string/jumbo v2, "FindMyMobileSettings"
+    const-string/jumbo v4, "FindMyMobileSettings"
 
-    const-string/jumbo v5, " onCheckedChanged[remotecontrol_on]"
+    const-string/jumbo v7, " onCheckedChanged[remotecontrol_off]"
 
-    invoke-static {v2, v5}, Landroid/util/secutil/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v7}, Landroid/util/secutil/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 469
+    .line 526
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v4, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 481
+    .line 529
     .end local v0    # "intent":Landroid/content/Intent;
+    :cond_0
+    const/16 v4, 0x3ea
+
+    if-ne p1, v4, :cond_1
+
+    .line 530
+    if-ne p2, v10, :cond_1
+
+    .line 531
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string/jumbo v7, "login_state"
+
+    invoke-static {v4, v7, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    .line 532
+    invoke-direct {p0, v6}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->moveToFMMActivity(Z)V
+
+    .line 535
+    :cond_1
+    const/16 v4, 0x3eb
+
+    if-ne p1, v4, :cond_3
+
+    .line 536
+    if-ne p2, v10, :cond_2
+
+    .line 537
+    const-string/jumbo v4, "FindMyMobileSettings"
+
+    const-string/jumbo v7, "FMMAgreement RESULT_OK"
+
+    invoke-static {v4, v7}, Landroid/util/secutil/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 538
+    const-string/jumbo v4, "switch_state"
+
+    invoke-virtual {p3, v4, v6}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+
+    move-result v4
+
+    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v3
+
+    .line 539
+    .local v3, "switch_state":Ljava/lang/Boolean;
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v7
+
+    const-string/jumbo v8, "send_last_location"
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_5
+
+    move v4, v5
+
+    :goto_0
+    invoke-static {v7, v8, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    .line 540
+    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v7
+
+    invoke-virtual {v4, v7}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    .line 542
+    .end local v3    # "switch_state":Ljava/lang/Boolean;
     :cond_2
-    :goto_1
-    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
+    const-string/jumbo v4, "login_state"
 
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-static {v2}, Lcom/android/settings/Utils;->isSupportLMM(Landroid/content/Context;)Z
+    invoke-virtual {p3, v4, v6}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
 
-    if-eqz v2, :cond_3
+    .line 543
+    .local v2, "login_state":I
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    .line 482
-    if-ne p1, v3, :cond_3
+    move-result-object v4
 
-    .line 483
-    if-ne p2, v8, :cond_9
+    const-string/jumbo v7, "login_state"
 
-    .line 484
+    invoke-static {v4, v7, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    .line 544
+    const-string/jumbo v4, "FindMyMobileSettings"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "FMMAgreement : "
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v8
+
+    const-string/jumbo v9, "login_state"
+
+    invoke-static {v8, v9, v6}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v4, v7}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 546
+    .end local v2    # "login_state":I
+    :cond_3
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lcom/android/settings/Utils;->isSupportLMM(Landroid/content/Context;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    .line 547
+    const/16 v4, 0x3e8
+
+    if-ne p1, v4, :cond_4
+
+    .line 548
+    if-ne p2, v10, :cond_7
+
+    .line 549
     invoke-direct {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->checkReactivationLock()Z
 
     move-result v1
 
-    .line 485
+    .line 550
     .local v1, "isReactivationLock":Z
-    const-string/jumbo v2, "FindMyMobileSettings"
+    const-string/jumbo v4, "FindMyMobileSettings"
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v5, "Reactivation lock is "
+    const-string/jumbo v8, "Reactivation lock is "
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v7
 
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v3
+    move-result-object v7
 
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v3
+    move-result-object v7
 
-    invoke-static {v2, v3}, Landroid/util/secutil/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v7}, Landroid/util/secutil/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 486
-    if-eqz v1, :cond_8
+    .line 551
+    if-eqz v1, :cond_6
 
-    .line 487
+    .line 552
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v4
 
-    const-string/jumbo v3, "lock_my_mobile"
+    const-string/jumbo v6, "lock_my_mobile"
 
-    invoke-static {v2, v3, v7}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v4, v6, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 488
+    .line 553
     new-instance v0, Landroid/content/Intent;
 
-    const-string/jumbo v2, "android.settings.reactivationlock_on"
+    const-string/jumbo v4, "android.settings.reactivationlock_on"
 
-    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 489
+    .line 554
     .restart local v0    # "intent":Landroid/content/Intent;
-    const-string/jumbo v2, "FindMyMobileSettings"
+    const-string/jumbo v4, "FindMyMobileSettings"
 
-    const-string/jumbo v3, " onActivityResult[reactivationlock_on]"
+    const-string/jumbo v6, " onActivityResult[reactivationlock_on]"
 
-    invoke-static {v2, v3}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v6}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 490
+    .line 555
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
-    move-result-object v2
+    move-result-object v4
 
-    invoke-virtual {v2, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v4, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 491
-    iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
+    .line 556
+    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {v2, v7}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+    invoke-virtual {v4, v5}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 452
+    .line 514
     .end local v0    # "intent":Landroid/content/Intent;
     .end local v1    # "isReactivationLock":Z
-    :cond_3
-    :goto_2
+    :cond_4
+    :goto_1
     return-void
 
-    .line 462
-    :cond_4
-    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->showNotificationChargeDialog()V
+    .restart local v3    # "switch_state":Ljava/lang/Boolean;
+    :cond_5
+    move v4, v6
+
+    .line 539
+    goto/16 :goto_0
+
+    .line 558
+    .end local v3    # "switch_state":Ljava/lang/Boolean;
+    .restart local v1    # "isReactivationLock":Z
+    :cond_6
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string/jumbo v5, "lock_my_mobile"
+
+    invoke-static {v4, v5, v6}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    .line 559
+    new-instance v0, Landroid/content/Intent;
+
+    const-string/jumbo v4, "android.settings.reactivationlock_off"
+
+    invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 560
+    .restart local v0    # "intent":Landroid/content/Intent;
+    const-string/jumbo v4, "FindMyMobileSettings"
+
+    const-string/jumbo v5, " onActivityResult[reactivationlock_off]"
+
+    invoke-static {v4, v5}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 561
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
+
+    .line 562
+    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v4, v6}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     goto :goto_1
 
-    :cond_5
-    move v2, v4
-
-    .line 465
-    goto/16 :goto_0
-
-    .line 472
-    :cond_6
-    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v2
-
-    sput v2, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
-
-    .line 473
-    iget-object v5, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
-
-    sget v6, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
-
-    iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSwitchState:Z
-
-    if-eqz v2, :cond_7
-
-    move v2, v3
-
-    :goto_3
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    invoke-static {v5, v6, v2}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
-
-    .line 474
-    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v2
-
-    const-string/jumbo v5, "remote_control"
-
-    invoke-static {v2, v5, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    .line 475
-    new-instance v0, Landroid/content/Intent;
-
-    const-string/jumbo v2, "android.settings.remotecontrol_off"
-
-    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 476
-    .restart local v0    # "intent":Landroid/content/Intent;
-    const-string/jumbo v2, "FindMyMobileSettings"
-
-    const-string/jumbo v5, " onCheckedChanged[remotecontrol_off]"
-
-    invoke-static {v2, v5}, Landroid/util/secutil/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 477
-    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
-
-    goto/16 :goto_1
-
-    .end local v0    # "intent":Landroid/content/Intent;
-    :cond_7
-    move v2, v4
-
-    .line 473
-    goto :goto_3
-
-    .line 493
-    .restart local v1    # "isReactivationLock":Z
-    :cond_8
-    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v2
-
-    const-string/jumbo v3, "lock_my_mobile"
-
-    invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    .line 494
-    new-instance v0, Landroid/content/Intent;
-
-    const-string/jumbo v2, "android.settings.reactivationlock_off"
-
-    invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 495
-    .restart local v0    # "intent":Landroid/content/Intent;
-    const-string/jumbo v2, "FindMyMobileSettings"
-
-    const-string/jumbo v3, " onActivityResult[reactivationlock_off]"
-
-    invoke-static {v2, v3}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 496
-    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
-
-    .line 497
-    iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
-
-    invoke-virtual {v2, v4}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    goto :goto_2
-
-    .line 500
+    .line 565
     .end local v0    # "intent":Landroid/content/Intent;
     .end local v1    # "isReactivationLock":Z
-    :cond_9
-    const-string/jumbo v2, "FindMyMobileSettings"
+    :cond_7
+    const-string/jumbo v4, "FindMyMobileSettings"
 
-    const-string/jumbo v3, "Reactivation lock onActivityResult is not RESULT_OK!!!"
+    const-string/jumbo v5, "Reactivation lock onActivityResult is not RESULT_OK!!!"
 
-    invoke-static {v2, v3}, Landroid/util/secutil/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v4, v5}, Landroid/util/secutil/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_2
+    goto :goto_1
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
@@ -1373,15 +1613,15 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 196
+    .line 214
     invoke-super {p0, p1}, Lcom/samsung/android/settings/SecSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 197
+    .line 215
     const v7, 0x7f080073
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->addPreferencesFromResource(I)V
 
-    .line 199
+    .line 217
     const-string/jumbo v7, "go_to_samsungdive"
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1392,7 +1632,7 @@
 
     iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoToDive:Lcom/samsung/android/settings/fmm/MultipleLineTitlePreference;
 
-    .line 200
+    .line 218
     const-string/jumbo v7, "samsung_account"
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1401,7 +1641,7 @@
 
     iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
-    .line 201
+    .line 219
     const-string/jumbo v7, "remote_controls"
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1412,7 +1652,7 @@
 
     iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
 
-    .line 202
+    .line 220
     const-string/jumbo v7, "google_location_service"
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1423,7 +1663,7 @@
 
     iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
 
-    .line 203
+    .line 221
     const-string/jumbo v7, "send_final_location_info"
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1434,12 +1674,12 @@
 
     iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendFinalLocationInfo:Landroid/preference/SwitchPreference;
 
-    .line 204
+    .line 222
     const-string/jumbo v7, "send_final_location_info"
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
-    .line 205
+    .line 223
     const-string/jumbo v7, "sim_change_alert"
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1450,7 +1690,7 @@
 
     iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
-    .line 206
+    .line 224
     iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
@@ -1465,10 +1705,10 @@
 
     move-result-object v8
 
-    .line 207
-    const v9, 0x7f0b0724
+    .line 225
+    const v9, 0x7f0b0725
 
-    .line 206
+    .line 224
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v8
@@ -1479,7 +1719,7 @@
 
     invoke-virtual {v7, v8}, Landroid/preference/PreferenceScreen;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 208
+    .line 226
     const-string/jumbo v7, "reactivation_lock"
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -1490,43 +1730,59 @@
 
     iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
-    .line 210
+    .line 227
+    const-string/jumbo v7, "send_last_location"
+
+    invoke-virtual {p0, v7}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v7
+
+    check-cast v7, Landroid/preference/SwitchPreference;
+
+    iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    .line 229
     iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v7, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 211
+    .line 230
     iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v7, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 212
+    .line 231
     iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v7, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    .line 214
+    .line 232
+    iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v7, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+
+    .line 234
     invoke-static {}, Lcom/android/settings/Utils;->isChinaModel()Z
 
     move-result v7
 
     if-eqz v7, :cond_0
 
-    .line 215
+    .line 235
     iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
 
-    const v8, 0x7f0b1483
+    const v8, 0x7f0b1491
 
     invoke-virtual {v7, v8}, Landroid/preference/SwitchPreference;->setTitle(I)V
 
-    .line 216
+    .line 236
     iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
 
     const/4 v8, 0x0
 
     invoke-virtual {v7, v8}, Landroid/preference/SwitchPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    .line 220
+    .line 240
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
@@ -1542,7 +1798,7 @@
 
     move-result v3
 
-    .line 221
+    .line 241
     .local v3, "hasSAPackage":Z
     const-string/jumbo v7, "FindMyMobileSettings"
 
@@ -1566,10 +1822,10 @@
 
     invoke-static {v7, v8}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 222
+    .line 242
     if-eqz v3, :cond_4
 
-    .line 223
+    .line 243
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
@@ -1582,7 +1838,7 @@
 
     move-result-object v0
 
-    .line 225
+    .line 245
     .local v0, "desc":[Landroid/accounts/AuthenticatorDescription;
     const/4 v4, 0x0
 
@@ -1592,7 +1848,7 @@
 
     if-ge v4, v7, :cond_1
 
-    .line 226
+    .line 246
     aget-object v7, v0, v4
 
     iget-object v7, v7, Landroid/accounts/AuthenticatorDescription;->type:Ljava/lang/String;
@@ -1605,26 +1861,26 @@
 
     if-eqz v7, :cond_3
 
-    .line 227
+    .line 247
     aget-object v7, v0, v4
 
     iput-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountDescription:Landroid/accounts/AuthenticatorDescription;
 
-    .line 232
+    .line 252
     :cond_1
     :try_start_0
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
-    .line 233
+    .line 253
     iget-object v8, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountDescription:Landroid/accounts/AuthenticatorDescription;
 
     iget-object v8, v8, Landroid/accounts/AuthenticatorDescription;->packageName:Ljava/lang/String;
 
     const/4 v9, 0x0
 
-    .line 232
+    .line 252
     invoke-virtual {v7, v8, v9}, Landroid/app/Activity;->createPackageContext(Ljava/lang/String;I)Landroid/content/Context;
 
     move-result-object v7
@@ -1634,7 +1890,7 @@
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 240
+    .line 260
     :goto_1
     new-instance v6, Lcom/samsung/android/settings/IconResizer;
 
@@ -1644,16 +1900,16 @@
 
     invoke-direct {v6, v7}, Lcom/samsung/android/settings/IconResizer;-><init>(Landroid/content/Context;)V
 
-    .line 241
+    .line 261
     .local v6, "iconResizer":Lcom/samsung/android/settings/IconResizer;
     const v7, 0x7f0a001a
 
     invoke-virtual {v6, v7}, Lcom/samsung/android/settings/IconResizer;->setIconSize(I)V
 
-    .line 242
+    .line 262
     const/4 v5, 0x0
 
-    .line 243
+    .line 263
     .local v5, "icon":Landroid/graphics/drawable/Drawable;
     iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountContext:Landroid/content/Context;
 
@@ -1661,12 +1917,12 @@
 
     move-result-object v7
 
-    .line 244
+    .line 264
     iget-object v8, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountDescription:Landroid/accounts/AuthenticatorDescription;
 
     iget v8, v8, Landroid/accounts/AuthenticatorDescription;->iconId:I
 
-    .line 243
+    .line 263
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v7
@@ -1675,13 +1931,13 @@
 
     move-result-object v5
 
-    .line 245
+    .line 265
     .local v5, "icon":Landroid/graphics/drawable/Drawable;
     iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
     invoke-virtual {v7, v5}, Landroid/preference/Preference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 250
+    .line 270
     .end local v0    # "desc":[Landroid/accounts/AuthenticatorDescription;
     .end local v4    # "i":I
     .end local v5    # "icon":Landroid/graphics/drawable/Drawable;
@@ -1701,7 +1957,7 @@
 
     if-eqz v7, :cond_2
 
-    .line 251
+    .line 271
     new-instance v7, Lcom/samsung/android/service/reactive/ReactiveServiceManager;
 
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
@@ -1716,11 +1972,11 @@
 
     sput-object v7, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->rsm:Lcom/samsung/android/service/reactive/ReactiveServiceManager;
 
-    .line 195
+    .line 213
     :cond_2
     return-void
 
-    .line 225
+    .line 245
     .restart local v0    # "desc":[Landroid/accounts/AuthenticatorDescription;
     .restart local v4    # "i":I
     :cond_3
@@ -1728,22 +1984,22 @@
 
     goto :goto_0
 
-    .line 236
+    .line 256
     :catch_0
     move-exception v2
 
-    .line 237
+    .line 257
     .local v2, "e":Ljava/lang/NullPointerException;
     invoke-virtual {v2}, Ljava/lang/NullPointerException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 234
+    .line 254
     .end local v2    # "e":Ljava/lang/NullPointerException;
     :catch_1
     move-exception v1
 
-    .line 235
+    .line 255
     .local v1, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     const-string/jumbo v7, "FindMyMobileSettings"
 
@@ -1753,7 +2009,7 @@
 
     goto :goto_1
 
-    .line 247
+    .line 267
     .end local v0    # "desc":[Landroid/accounts/AuthenticatorDescription;
     .end local v1    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     .end local v4    # "i":I
@@ -1766,13 +2022,15 @@
 .end method
 
 .method public onPause()V
-    .locals 3
+    .locals 5
 
     .prologue
-    .line 353
+    const/4 v4, 0x0
+
+    .line 401
     invoke-super {p0}, Lcom/samsung/android/settings/SecSettingsPreferenceFragment;->onPause()V
 
-    .line 355
+    .line 403
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -1781,7 +2039,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 356
+    .line 404
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -1790,12 +2048,21 @@
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
-    .line 358
+    .line 405
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mLastLocationObserver:Landroid/database/ContentObserver;
+
+    invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
+
+    .line 406
     iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_0
 
-    .line 359
+    .line 407
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1804,25 +2071,56 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 361
+    .line 409
     :cond_0
     iget-boolean v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mFirstLogin:Z
 
     if-nez v0, :cond_1
 
-    .line 362
+    .line 410
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string/jumbo v1, "login_state"
 
-    const/4 v2, 0x0
+    invoke-static {v0, v1, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
-
-    .line 352
+    .line 411
     :cond_1
+    const-string/jumbo v0, "FindMyMobileSettings"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v2, "onPause : "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "login_state"
+
+    invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 400
     return-void
 .end method
 
@@ -1832,160 +2130,146 @@
     .param p2, "objValue"    # Ljava/lang/Object;
 
     .prologue
-    const v8, 0x7f1001df
+    const v9, 0x7f1001df
 
-    const/4 v9, 0x1
+    const/16 v4, 0x3e8
 
-    const/16 v5, 0x3e8
+    const/4 v8, 0x1
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    move-object v4, p2
-
-    .line 401
-    check-cast v4, Ljava/lang/Boolean;
-
-    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    .line 402
-    .local v1, "isChecked":Z
-    const/4 v2, 0x1
-
-    .line 403
-    .local v2, "result":Z
-    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v4
-
-    const-string/jumbo v7, "login_state"
-
-    invoke-static {v4, v7, v6}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v4
-
-    if-ne v4, v9, :cond_3
-
-    const/4 v3, 0x1
-
-    .line 404
-    .local v3, "stateResult":Z
-    :goto_0
+    .line 453
     check-cast p2, Ljava/lang/Boolean;
 
     .end local p2    # "objValue":Ljava/lang/Object;
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result v4
+    move-result v1
 
-    iput-boolean v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSwitchState:Z
+    .line 454
+    .local v1, "isChecked":Z
+    const/4 v2, 0x1
 
-    .line 406
-    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
+    .line 455
+    .local v2, "result":Z
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    invoke-virtual {p1, v4}, Landroid/preference/Preference;->equals(Ljava/lang/Object;)Z
+    move-result-object v6
 
-    move-result v4
+    const-string/jumbo v7, "login_state"
 
-    if-eqz v4, :cond_9
+    invoke-static {v6, v7, v5}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    .line 407
-    if-eqz v3, :cond_8
+    move-result v6
 
-    .line 408
+    if-ne v6, v8, :cond_3
+
+    const/4 v3, 0x1
+
+    .line 457
+    .local v3, "stateResult":Z
+    :goto_0
+    iget-object v6, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {p1, v6}, Landroid/preference/Preference;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_9
+
+    .line 458
     if-eqz v1, :cond_6
 
-    .line 409
-    const-string/jumbo v4, "CHM"
+    .line 459
+    const-string/jumbo v6, "CHM"
 
     invoke-static {}, Lcom/android/settings/Utils;->readSalesCode()Ljava/lang/String;
 
     move-result-object v7
 
-    invoke-virtual {v4, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v6
 
-    if-nez v4, :cond_0
+    if-nez v6, :cond_0
 
-    const-string/jumbo v4, "CHU"
+    const-string/jumbo v6, "CHU"
 
     invoke-static {}, Lcom/android/settings/Utils;->readSalesCode()Ljava/lang/String;
 
     move-result-object v7
 
-    invoke-virtual {v4, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v6
 
-    if-nez v4, :cond_0
+    if-nez v6, :cond_0
 
-    const-string/jumbo v4, "CTC"
+    .line 460
+    const-string/jumbo v6, "CTC"
 
-    .line 410
     invoke-static {}, Lcom/android/settings/Utils;->readSalesCode()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 409
-    invoke-virtual {v4, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v4
+    move-result v6
 
-    if-eqz v4, :cond_1
+    .line 459
+    if-eqz v6, :cond_1
 
-    .line 410
+    .line 460
     :cond_0
-    sget-boolean v4, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->chkboxFlag:Z
+    sget-boolean v6, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->chkboxFlag:Z
 
-    if-eqz v4, :cond_4
+    if-eqz v6, :cond_4
 
-    .line 413
+    .line 463
     :cond_1
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v4, v8}, Landroid/content/res/Resources;->getInteger(I)I
+    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getInteger(I)I
 
-    move-result v4
+    move-result v6
 
-    sput v4, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
+    sput v6, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
 
-    .line 414
-    iget-object v7, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
+    .line 465
+    iget-object v6, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
-    sget v8, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
+    sget v7, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
 
+    .line 466
     if-eqz v1, :cond_5
-
-    move v4, v5
 
     :goto_1
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    invoke-static {v7, v8, v4}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
+    .line 465
+    invoke-static {v6, v7, v4}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
 
-    .line 415
+    .line 467
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
     const-string/jumbo v5, "remote_control"
 
-    invoke-static {v4, v5, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v4, v5, v8}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 416
+    .line 468
     new-instance v0, Landroid/content/Intent;
 
     const-string/jumbo v4, "android.settings.remotecontrol_on"
 
     invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 417
+    .line 469
     .local v0, "intent":Landroid/content/Intent;
     const-string/jumbo v4, "FindMyMobileSettings"
 
@@ -1993,84 +2277,87 @@
 
     invoke-static {v4, v5}, Landroid/util/secutil/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 418
+    .line 470
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     invoke-virtual {v4, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 448
+    .line 510
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_2
     :goto_2
     return v2
 
-    .line 403
+    .line 455
     .end local v3    # "stateResult":Z
-    .restart local p2    # "objValue":Ljava/lang/Object;
     :cond_3
     const/4 v3, 0x0
 
     .restart local v3    # "stateResult":Z
     goto :goto_0
 
-    .line 411
-    .end local p2    # "objValue":Ljava/lang/Object;
+    .line 461
     :cond_4
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->showNotificationChargeDialog()V
 
     goto :goto_2
 
     :cond_5
-    move v4, v6
+    move v4, v5
 
-    .line 414
+    .line 466
     goto :goto_1
 
-    .line 421
+    .line 473
     :cond_6
+    if-eqz v3, :cond_8
+
+    .line 474
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v4, v8}, Landroid/content/res/Resources;->getInteger(I)I
+    invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getInteger(I)I
 
-    move-result v4
+    move-result v6
 
-    sput v4, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
+    sput v6, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
 
-    .line 422
-    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
+    .line 476
+    iget-object v6, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
     sget v7, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_REMOTECONTROL:I
 
+    .line 477
     if-eqz v1, :cond_7
 
     :goto_3
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-static {v4, v7, v5}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
+    .line 476
+    invoke-static {v6, v7, v4}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
 
-    .line 423
+    .line 478
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
-    const-string/jumbo v5, "remote_control"
+    const-string/jumbo v6, "remote_control"
 
-    invoke-static {v4, v5, v6}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v4, v6, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 424
+    .line 479
     new-instance v0, Landroid/content/Intent;
 
     const-string/jumbo v4, "android.settings.remotecontrol_off"
 
     invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 425
+    .line 480
     .restart local v0    # "intent":Landroid/content/Intent;
     const-string/jumbo v4, "FindMyMobileSettings"
 
@@ -2078,7 +2365,7 @@
 
     invoke-static {v4, v5}, Landroid/util/secutil/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 426
+    .line 481
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
@@ -2089,12 +2376,12 @@
 
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_7
-    move v5, v6
+    move v4, v5
 
-    .line 422
+    .line 477
     goto :goto_3
 
-    .line 429
+    .line 483
     :cond_8
     const/16 v4, 0x3e9
 
@@ -2102,44 +2389,44 @@
 
     goto :goto_2
 
-    .line 431
+    .line 486
     :cond_9
-    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
+    iget-object v6, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
 
-    if-ne p1, v4, :cond_b
+    if-ne p1, v6, :cond_b
 
-    .line 432
+    .line 487
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v4
+    move-result-object v6
 
-    .line 433
+    .line 488
     const v7, 0x7f1001e0
 
-    .line 432
-    invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getInteger(I)I
+    .line 487
+    invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
-    move-result v4
+    move-result v6
 
-    sput v4, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_LOCATIONSERVICE:I
+    sput v6, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_LOCATIONSERVICE:I
 
-    .line 434
-    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
+    .line 489
+    iget-object v6, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
     sget v7, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_LOCATIONSERVICE:I
 
-    .line 435
+    .line 490
     if-eqz v1, :cond_a
 
     :goto_4
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v5
+    move-result-object v4
 
-    .line 434
-    invoke-static {v4, v7, v5}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
+    .line 489
+    invoke-static {v6, v7, v4}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;ILjava/lang/Object;)V
 
-    .line 436
+    .line 491
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
@@ -2148,22 +2435,51 @@
 
     move-result-object v4
 
-    .line 437
+    .line 492
     const-string/jumbo v5, "network"
 
-    .line 436
+    .line 491
     invoke-static {v4, v5, v1}, Landroid/provider/Settings$Secure;->setLocationProviderEnabled(Landroid/content/ContentResolver;Ljava/lang/String;Z)V
 
     goto :goto_2
 
     :cond_a
-    move v5, v6
+    move v4, v5
 
-    .line 435
+    .line 490
     goto :goto_4
 
-    .line 438
+    .line 493
     :cond_b
+    iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {p1, v4}, Landroid/preference/Preference;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_e
+
+    .line 494
+    if-nez v1, :cond_c
+
+    if-eqz v3, :cond_d
+
+    .line 497
+    :cond_c
+    invoke-direct {p0, v1}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->moveToFMMActivity(Z)V
+
+    goto/16 :goto_2
+
+    .line 495
+    :cond_d
+    const/16 v4, 0x3ea
+
+    invoke-direct {p0, v4}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->moveToLoginPage(I)V
+
+    goto/16 :goto_2
+
+    .line 499
+    :cond_e
     iget-object v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {p1, v4}, Landroid/preference/Preference;->equals(Ljava/lang/Object;)Z
@@ -2172,16 +2488,19 @@
 
     if-eqz v4, :cond_2
 
-    .line 439
-    if-eqz v1, :cond_c
+    .line 500
+    iput-boolean v8, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mFirstLogin:Z
 
-    .line 440
+    .line 501
+    if-eqz v1, :cond_f
+
+    .line 502
     invoke-direct {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->showReactivationLockDialog()V
 
-    .line 441
+    .line 503
     const/4 v2, 0x0
 
-    .line 446
+    .line 508
     :goto_5
     const-string/jumbo v4, "FindMyMobileSettings"
 
@@ -2211,11 +2530,11 @@
 
     goto/16 :goto_2
 
-    .line 443
-    :cond_c
+    .line 505
+    :cond_f
     invoke-direct {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->showReactivationLockDisableDialog()V
 
-    .line 444
+    .line 506
     const/4 v2, 0x0
 
     goto :goto_5
@@ -2231,21 +2550,34 @@
 
     const/4 v4, 0x0
 
-    .line 367
+    const/4 v1, 0x1
+
+    .line 416
     iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSamsungAccountPref:Landroid/preference/Preference;
 
     invoke-virtual {p2, v0}, Landroid/preference/Preference;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
-    .line 368
-    iget-boolean v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasSamsungAccount:Z
+    .line 417
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->isResumed()Z
+
+    move-result v0
 
     if-nez v0, :cond_0
 
-    .line 369
+    .line 418
+    return v1
+
+    .line 420
+    :cond_0
+    iget-boolean v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasSamsungAccount:Z
+
+    if-nez v0, :cond_1
+
+    .line 421
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -2258,14 +2590,14 @@
 
     sput v0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_ADD_ACCOUNT:I
 
-    .line 370
+    .line 422
     iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
     sget v1, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->SETTINGS_FMM_ADD_ACCOUNT:I
 
     invoke-static {v0, v1}, Lcom/android/settings/Utils;->insertEventLog(Landroid/content/Context;I)V
 
-    .line 372
+    .line 424
     :try_start_0
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2277,7 +2609,7 @@
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 373
+    .line 425
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -2288,17 +2620,17 @@
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 374
+    .line 426
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mFirstLogin:Z
 
-    .line 375
+    .line 427
     new-instance v8, Landroid/content/Intent;
 
     invoke-direct {v8}, Landroid/content/Intent;-><init>()V
 
-    .line 376
+    .line 428
     .local v8, "mIntent":Landroid/content/Intent;
     const-string/jumbo v0, "com.osp.app.signin"
 
@@ -2306,21 +2638,21 @@
 
     invoke-virtual {v8, v0, v1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 377
+    .line 429
     const-string/jumbo v0, "MODE"
 
     const-string/jumbo v1, "REMOTE_CONTROLS"
 
     invoke-virtual {v8, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 378
+    .line 430
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 395
+    .line 447
     .end local v8    # "mIntent":Landroid/content/Intent;
-    :cond_0
+    :cond_1
     :goto_0
     invoke-super {p0, p1, p2}, Lcom/samsung/android/settings/SecSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
@@ -2328,42 +2660,42 @@
 
     return v0
 
-    .line 379
+    .line 431
     :catch_0
     move-exception v7
 
-    .line 380
+    .line 432
     .local v7, "e":Landroid/content/ActivityNotFoundException;
     invoke-virtual {v7}, Landroid/content/ActivityNotFoundException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 383
+    .line 435
     .end local v7    # "e":Landroid/content/ActivityNotFoundException;
-    :cond_1
+    :cond_2
     iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {p2, v0}, Landroid/preference/Preference;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 384
+    .line 436
     invoke-static {}, Lcom/android/settings/Utils;->isChinaCTCModel()Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
-    .line 385
+    .line 437
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/settings/SettingsActivity;
 
-    .line 386
+    .line 438
     const-class v1, Lcom/samsung/android/settings/fmm/SimChangeAlert;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -2374,25 +2706,25 @@
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    .line 387
-    const v3, 0x7f0b0728
+    .line 439
+    const v3, 0x7f0b0729
 
     move-object v5, v4
 
-    .line 385
+    .line 437
     invoke-virtual/range {v0 .. v6}, Lcom/android/settings/SettingsActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 
-    .line 389
-    :cond_2
+    .line 441
+    :cond_3
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/settings/SettingsActivity;
 
-    .line 390
+    .line 442
     const-class v1, Lcom/samsung/android/settings/fmm/SimChangeAlert;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -2403,12 +2735,12 @@
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    .line 391
-    const v3, 0x7f0b0724
+    .line 443
+    const v3, 0x7f0b0725
 
     move-object v5, v4
 
-    .line 389
+    .line 441
     invoke-virtual/range {v0 .. v6}, Lcom/android/settings/SettingsActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
@@ -2424,17 +2756,17 @@
 
     const/4 v4, 0x0
 
-    .line 257
+    .line 292
     invoke-super {p0}, Lcom/samsung/android/settings/SecSettingsPreferenceFragment;->onResume()V
 
-    .line 259
+    .line 294
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
-    .line 261
+    .line 296
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2445,14 +2777,14 @@
 
     move-result v2
 
-    if-eqz v2, :cond_9
+    if-eqz v2, :cond_a
 
     move v2, v3
 
     :goto_0
     iput-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIsShopDemo:Z
 
-    .line 262
+    .line 297
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/android/settings/Utils;->isSupportLMM(Landroid/content/Context;)Z
@@ -2467,10 +2799,10 @@
 
     if-nez v2, :cond_0
 
-    .line 263
+    .line 298
     iput-boolean v3, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIsSupportLMM:Z
 
-    .line 266
+    .line 301
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
@@ -2480,16 +2812,16 @@
 
     iput-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasFMMDMClient:Z
 
-    .line 270
+    .line 305
     iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIsSupportLMM:Z
 
     if-eqz v2, :cond_1
 
     iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasFMMDMClient:Z
 
-    if-eqz v2, :cond_a
+    if-eqz v2, :cond_b
 
-    .line 274
+    .line 309
     :cond_1
     :goto_1
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
@@ -2506,22 +2838,22 @@
 
     move-result v2
 
-    if-ne v2, v3, :cond_b
+    if-ne v2, v3, :cond_c
 
-    .line 275
+    .line 310
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 280
+    .line 315
     :goto_2
     invoke-direct {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->checkReactivationLock()Z
 
     move-result v2
 
-    if-eqz v2, :cond_c
+    if-eqz v2, :cond_d
 
-    .line 281
+    .line 316
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2530,7 +2862,7 @@
 
     invoke-static {v2, v5, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 286
+    .line 321
     :goto_3
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
@@ -2546,15 +2878,38 @@
 
     move-result v2
 
-    if-ne v2, v3, :cond_d
+    if-ne v2, v3, :cond_e
 
-    .line 287
+    .line 322
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 292
+    .line 327
     :goto_4
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v5, "send_last_location"
+
+    invoke-static {v2, v5, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v2
+
+    if-ne v2, v3, :cond_f
+
+    .line 328
+    iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    .line 333
+    :goto_5
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
 
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
@@ -2565,17 +2920,17 @@
 
     move-result-object v5
 
-    .line 293
+    .line 334
     const-string/jumbo v6, "network"
 
-    .line 292
+    .line 333
     invoke-static {v5, v6}, Landroid/provider/Settings$Secure;->isLocationProviderEnabled(Landroid/content/ContentResolver;Ljava/lang/String;)Z
 
     move-result v5
 
     invoke-virtual {v2, v5}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 295
+    .line 336
     iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIsSupportLMM:Z
 
     if-eqz v2, :cond_2
@@ -2584,13 +2939,13 @@
 
     if-eqz v2, :cond_3
 
-    .line 296
+    .line 337
     :cond_2
     const-string/jumbo v2, "reactivation_lock"
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
-    .line 299
+    .line 340
     :cond_3
     iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasFMMDMClient:Z
 
@@ -2598,32 +2953,37 @@
 
     iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mIsShopDemo:Z
 
-    if-eqz v2, :cond_e
+    if-eqz v2, :cond_10
 
-    .line 300
+    .line 341
     :cond_4
     const-string/jumbo v2, "google_location_service"
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
-    .line 301
+    .line 342
     const-string/jumbo v2, "remote_controls"
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
-    .line 302
+    .line 343
     const-string/jumbo v2, "go_to_samsungdive"
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
-    .line 303
+    .line 344
     const-string/jumbo v2, "sim_change_alert"
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
-    .line 308
+    .line 345
+    const-string/jumbo v2, "send_last_location"
+
+    invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
+
+    .line 350
     :cond_5
-    :goto_5
+    :goto_6
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
     const-string/jumbo v5, "com.sec.android.app.mt"
@@ -2632,7 +2992,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_f
+    if-eqz v2, :cond_11
 
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
@@ -2640,10 +3000,10 @@
 
     move-result v2
 
-    if-eqz v2, :cond_f
+    if-eqz v2, :cond_11
 
-    .line 312
-    :goto_6
+    .line 354
+    :goto_7
     const-string/jumbo v2, "USC"
 
     invoke-static {}, Lcom/android/settings/Utils;->readSalesCode()Ljava/lang/String;
@@ -2656,12 +3016,12 @@
 
     if-eqz v2, :cond_6
 
-    .line 313
+    .line 355
     const-string/jumbo v2, "sim_change_alert"
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
-    .line 316
+    .line 358
     :cond_6
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
@@ -2671,13 +3031,28 @@
 
     if-eqz v2, :cond_7
 
-    .line 317
+    .line 359
     const-string/jumbo v2, "sim_change_alert"
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
-    .line 320
+    .line 362
     :cond_7
+    iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
+
+    invoke-static {v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->isSupportSendLastLocation(Landroid/content/Context;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_8
+
+    .line 363
+    const-string/jumbo v2, "send_last_location"
+
+    invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
+
+    .line 366
+    :cond_8
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -2692,20 +3067,20 @@
 
     move-result v1
 
-    .line 321
+    .line 367
     .local v1, "hasSAPackage":Z
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_9
 
-    .line 322
+    .line 368
     invoke-direct {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->updateAccountInformation()V
 
-    .line 324
-    :cond_8
+    .line 370
+    :cond_9
     iget-boolean v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mHasSamsungAccount:Z
 
-    if-eqz v2, :cond_10
+    if-eqz v2, :cond_12
 
-    .line 325
+    .line 371
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2714,45 +3089,50 @@
 
     invoke-static {v2, v5, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 326
+    .line 372
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
-    .line 327
+    .line 373
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
-    .line 328
+    .line 374
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
-    .line 329
+    .line 375
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    .line 338
-    :goto_7
+    .line 376
+    iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
+
+    .line 386
+    :goto_8
     iput-boolean v4, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mFirstLogin:Z
 
-    .line 339
+    .line 387
     invoke-direct {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->updateSimChangeAlert()V
 
-    .line 341
+    .line 389
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 342
+    .line 390
     .local v0, "filter":Landroid/content/IntentFilter;
     const-string/jumbo v2, "android.intent.action.AIRPLANE_MODE"
 
     invoke-virtual {v0, v2}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 343
+    .line 391
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -2761,7 +3141,7 @@
 
     invoke-virtual {v2, v3, v0, v7, v7}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    .line 344
+    .line 392
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2772,13 +3152,13 @@
 
     move-result-object v3
 
-    .line 345
+    .line 393
     iget-object v5, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControlsObserver:Landroid/database/ContentObserver;
 
-    .line 344
+    .line 392
     invoke-virtual {v2, v3, v4, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 346
+    .line 394
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2789,25 +3169,40 @@
 
     move-result-object v3
 
-    .line 347
+    .line 395
     iget-object v5, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLockObserver:Landroid/database/ContentObserver;
 
-    .line 346
+    .line 394
     invoke-virtual {v2, v3, v4, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 256
+    .line 396
+    invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "send_last_location"
+
+    invoke-static {v3}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    iget-object v5, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mLastLocationObserver:Landroid/database/ContentObserver;
+
+    invoke-virtual {v2, v3, v4, v5}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+
+    .line 291
     return-void
 
     .end local v0    # "filter":Landroid/content/IntentFilter;
     .end local v1    # "hasSAPackage":Z
-    :cond_9
+    :cond_a
     move v2, v4
 
-    .line 261
+    .line 296
     goto/16 :goto_0
 
-    .line 271
-    :cond_a
+    .line 306
+    :cond_b
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -2816,22 +3211,22 @@
 
     move-result-object v2
 
-    const v5, 0x7f0b0729
+    const v5, 0x7f0b072a
 
     invoke-virtual {v2, v5}, Landroid/app/ActionBar;->setTitle(I)V
 
     goto/16 :goto_1
 
-    .line 277
-    :cond_b
+    .line 312
+    :cond_c
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v4}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     goto/16 :goto_2
 
-    .line 283
-    :cond_c
+    .line 318
+    :cond_d
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2842,16 +3237,24 @@
 
     goto/16 :goto_3
 
-    .line 289
-    :cond_d
+    .line 324
+    :cond_e
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v4}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     goto/16 :goto_4
 
-    .line 304
-    :cond_e
+    .line 330
+    :cond_f
+    iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v2, v4}, Landroid/preference/SwitchPreference;->setChecked(Z)V
+
+    goto/16 :goto_5
+
+    .line 346
+    :cond_10
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mContext:Landroid/content/Context;
 
     const-string/jumbo v5, "com.google.android.gms"
@@ -2868,24 +3271,24 @@
 
     if-nez v2, :cond_5
 
-    .line 305
+    .line 347
     const-string/jumbo v2, "google_location_service"
-
-    invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
-
-    goto/16 :goto_5
-
-    .line 309
-    :cond_f
-    const-string/jumbo v2, "sim_change_alert"
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
 
     goto/16 :goto_6
 
-    .line 331
+    .line 351
+    :cond_11
+    const-string/jumbo v2, "sim_change_alert"
+
+    invoke-virtual {p0, v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->removePreference(Ljava/lang/String;)V
+
+    goto/16 :goto_7
+
+    .line 378
     .restart local v1    # "hasSAPackage":Z
-    :cond_10
+    :cond_12
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2894,7 +3297,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 332
+    .line 379
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -2903,34 +3306,39 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 333
+    .line 380
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mRemoteControls:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v4}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
-    .line 334
+    .line 381
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mGoogleLocationService:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v4}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
-    .line 335
+    .line 382
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mReactivationLock:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2, v4}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
-    .line 336
+    .line 383
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSimChangeAlert:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    goto/16 :goto_7
+    .line 384
+    iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->mSendLastLocation:Landroid/preference/SwitchPreference;
+
+    invoke-virtual {v2, v4}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
+
+    goto/16 :goto_8
 .end method
 
 .method public showNotificationChargeDialog()V
     .locals 6
 
     .prologue
-    .line 707
+    .line 790
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -2939,17 +3347,17 @@
 
     move-result-object v3
 
-    .line 708
+    .line 791
     const v4, 0x7f0401a1
 
     const/4 v5, 0x0
 
-    .line 707
+    .line 790
     invoke-virtual {v3, v4, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v2
 
-    .line 709
+    .line 792
     .local v2, "mDialogLayout":Landroid/view/View;
     const v3, 0x7f1104ce
 
@@ -2959,15 +3367,15 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    .line 710
+    .line 793
     .local v0, "chkbox":Landroid/widget/CheckBox;
-    new-instance v3, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$11;
+    new-instance v3, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$12;
 
-    invoke-direct {v3, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$11;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
+    invoke-direct {v3, p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$12;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 714
+    .line 797
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->getActivity()Landroid/app/Activity;
@@ -2976,10 +3384,10 @@
 
     invoke-direct {v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 715
+    .line 798
     const v4, 0x7f0b0439
 
-    .line 714
+    .line 797
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
@@ -2988,26 +3396,26 @@
 
     move-result-object v3
 
-    .line 717
-    new-instance v4, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$12;
-
-    invoke-direct {v4, p0, v0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$12;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;Landroid/widget/CheckBox;)V
-
-    const v5, 0x104000a
-
-    .line 714
-    invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    move-result-object v3
-
-    .line 732
+    .line 800
     new-instance v4, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$13;
 
     invoke-direct {v4, p0, v0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$13;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;Landroid/widget/CheckBox;)V
 
+    const v5, 0x104000a
+
+    .line 797
+    invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v3
+
+    .line 815
+    new-instance v4, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$14;
+
+    invoke-direct {v4, p0, v0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$14;-><init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;Landroid/widget/CheckBox;)V
+
     const/high16 v5, 0x1040000
 
-    .line 714
+    .line 797
     invoke-virtual {v3, v5, v4}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v3
@@ -3016,7 +3424,7 @@
 
     move-result-object v1
 
-    .line 706
+    .line 789
     .local v1, "dialog":Landroid/app/Dialog;
     return-void
 .end method

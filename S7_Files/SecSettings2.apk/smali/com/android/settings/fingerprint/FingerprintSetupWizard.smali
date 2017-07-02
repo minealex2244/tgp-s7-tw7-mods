@@ -467,7 +467,7 @@
 
     .prologue
     .line 216
-    const v1, 0x7f0b0673
+    const v1, 0x7f0b0674
 
     .line 218
     .local v1, "stringID":I
@@ -484,7 +484,7 @@
     if-eqz v2, :cond_0
 
     .line 219
-    const v1, 0x7f0b0674
+    const v1, 0x7f0b0675
 
     .line 222
     :cond_0
@@ -493,7 +493,7 @@
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 223
-    const v3, 0x7f0b0671
+    const v3, 0x7f0b0672
 
     .line 222
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -858,7 +858,7 @@
 
     new-array v1, v2, [Ljava/lang/Object;
 
-    const v2, 0x7f0b066c
+    const v2, 0x7f0b066d
 
     invoke-virtual {p0, v2}, Lcom/android/settings/fingerprint/FingerprintSetupWizard;->getString(I)Ljava/lang/String;
 
@@ -866,7 +866,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0b0700
+    const v2, 0x7f0b0701
 
     invoke-virtual {p0, v2, v1}, Lcom/android/settings/fingerprint/FingerprintSetupWizard;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1121,7 +1121,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v4, 0x7f0b06bc
+    const v4, 0x7f0b06bd
 
     invoke-virtual {p0, v4}, Lcom/android/settings/fingerprint/FingerprintSetupWizard;->getString(I)Ljava/lang/String;
 

@@ -30,7 +30,7 @@
     .param p2, "val$personaHandle"    # I
 
     .prologue
-    .line 7503
+    .line 7508
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$9;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iput p2, p0, Lcom/android/server/pm/PersonaManagerService$9;->val$personaHandle:I
@@ -46,7 +46,7 @@
     .locals 3
 
     .prologue
-    .line 7506
+    .line 7511
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$9;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get18(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
@@ -55,7 +55,7 @@
 
     monitor-enter v1
 
-    .line 7507
+    .line 7512
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$9;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -71,10 +71,10 @@
 
     monitor-exit v1
 
-    .line 7505
+    .line 7510
     return-void
 
-    .line 7506
+    .line 7511
     :catchall_0
     move-exception v0
 

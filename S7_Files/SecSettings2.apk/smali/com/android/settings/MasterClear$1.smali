@@ -107,12 +107,12 @@
 
     .line 212
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
-    const v3, 0x7f0b0eca
+    const v3, 0x7f0b0ed9
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 213
-    const v3, 0x7f0b0ecb
+    const v3, 0x7f0b0eda
 
     invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -145,7 +145,7 @@
 
     invoke-direct {v3, p0, v1}, Lcom/android/settings/MasterClear$1$1;-><init>(Lcom/android/settings/MasterClear$1;Landroid/widget/EditText;)V
 
-    const v4, 0x7f0b152e
+    const v4, 0x7f0b153c
 
     invoke-virtual {v0, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -154,7 +154,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/settings/MasterClear$1$2;-><init>(Lcom/android/settings/MasterClear$1;)V
 
-    const v4, 0x7f0b152f
+    const v4, 0x7f0b153d
 
     invoke-virtual {v0, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

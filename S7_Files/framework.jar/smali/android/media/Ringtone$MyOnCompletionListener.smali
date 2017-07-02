@@ -63,6 +63,11 @@
 
     monitor-exit v1
 
+    .line 640
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Landroid/media/MediaPlayer;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
+
     .line 635
     return-void
 

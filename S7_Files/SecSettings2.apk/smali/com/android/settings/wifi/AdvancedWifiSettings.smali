@@ -2111,7 +2111,7 @@
     .locals 8
 
     .prologue
-    const v7, 0x7f0b1394
+    const v7, 0x7f0b13a2
 
     const/4 v2, 0x0
 
@@ -2263,12 +2263,12 @@
 
     .line 1204
     .local v0, "dialog":Landroid/app/AlertDialog$Builder;
-    const v2, 0x7f0b0c96
+    const v2, 0x7f0b0ca5
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 1205
-    const v2, 0x7f0b0c62
+    const v2, 0x7f0b0c71
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -2286,7 +2286,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/settings/wifi/AdvancedWifiSettings$7;-><init>(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
 
-    const v3, 0x7f0b10f5
+    const v3, 0x7f0b1102
 
     invoke-virtual {v0, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2408,7 +2408,7 @@
     .line 778
     iget-object v4, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b04a2
+    const v5, 0x7f0b04a3
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2439,7 +2439,7 @@
     .line 780
     iget-object v4, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b04a3
+    const v5, 0x7f0b04a4
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2632,7 +2632,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0c9b
+    const v2, 0x7f0b0caa
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -2660,7 +2660,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b0c9d
+    const v2, 0x7f0b0cac
 
     invoke-virtual {v0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -2677,7 +2677,7 @@
 
     move-result-object v0
 
-    const v2, 0x7f0b0c9c
+    const v2, 0x7f0b0cab
 
     invoke-virtual {v0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -3064,7 +3064,7 @@
     .locals 10
 
     .prologue
-    const v3, 0x7f0b0c92
+    const v3, 0x7f0b0ca1
 
     .line 817
     new-instance v2, Landroid/os/Bundle;
@@ -3642,7 +3642,7 @@
 
     .line 969
     .local v5, "e":Ljava/lang/NumberFormatException;
-    const v18, 0x7f0b0c63
+    const v18, 0x7f0b0c72
 
     .line 970
     const/16 v19, 0x0
@@ -3936,7 +3936,7 @@
 
     .line 1029
     .restart local v5    # "e":Ljava/lang/NumberFormatException;
-    const v18, 0x7f0b123d
+    const v18, 0x7f0b124b
 
     .line 1030
     const/16 v19, 0x0
@@ -4109,7 +4109,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f0b0c61
+    const v19, 0x7f0b0c70
 
     const/16 v20, 0x1
 
@@ -4138,7 +4138,7 @@
 
     move-object/from16 v18, v0
 
-    const v19, 0x7f0b122d
+    const v19, 0x7f0b123b
 
     .line 1052
     const/16 v20, 0x0
@@ -5102,7 +5102,7 @@
     move-result-object v1
 
     .line 1235
-    const v3, 0x7f0b0cae
+    const v3, 0x7f0b0cbd
 
     const/4 v4, 0x0
 
@@ -5133,7 +5133,7 @@
     move-result-object v5
 
     .line 1240
-    const v6, 0x7f0b0c92
+    const v6, 0x7f0b0ca1
 
     const/4 v7, -0x1
 

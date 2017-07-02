@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     .prologue
-    .line 677
+    .line 660
     iput-object p1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,10 +44,10 @@
     .prologue
     const/4 v8, 0x2
 
-    .line 679
+    .line 662
     iget-object v1, p1, Landroid/hardware/scontext/SContextEvent;->scontext:Landroid/hardware/scontext/SContext;
 
-    .line 680
+    .line 663
     .local v1, "scontext":Landroid/hardware/scontext/SContext;
     invoke-virtual {v1}, Landroid/hardware/scontext/SContext;->getType()I
 
@@ -57,12 +57,12 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 681
+    .line 664
     invoke-virtual {p1}, Landroid/hardware/scontext/SContextEvent;->getEnvironmentAdaptiveDisplayContext()Landroid/hardware/scontext/SContextEnvironmentAdaptiveDisplay;
 
     move-result-object v0
 
-    .line 682
+    .line 665
     .local v0, "environmentAdaptiveDisplay":Landroid/hardware/scontext/SContextEnvironmentAdaptiveDisplay;
     iget-object v4, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -72,7 +72,7 @@
 
     invoke-static {v4, v5}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set3(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;F)F
 
-    .line 683
+    .line 666
     iget-object v4, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-virtual {v0}, Landroid/hardware/scontext/SContextEnvironmentAdaptiveDisplay;->getGreen()F
@@ -81,7 +81,7 @@
 
     invoke-static {v4, v5}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set2(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;F)F
 
-    .line 684
+    .line 667
     iget-object v4, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-virtual {v0}, Landroid/hardware/scontext/SContextEnvironmentAdaptiveDisplay;->getBlue()F
@@ -90,37 +90,37 @@
 
     invoke-static {v4, v5}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set1(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;F)F
 
-    .line 685
+    .line 668
     iget-object v4, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-virtual {v0}, Landroid/hardware/scontext/SContextEnvironmentAdaptiveDisplay;->getLux()J
 
     move-result-wide v6
 
-    invoke-static {v4, v6, v7}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set11(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;J)J
+    invoke-static {v4, v6, v7}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set10(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;J)J
 
-    .line 686
+    .line 669
     iget-object v4, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-virtual {v0}, Landroid/hardware/scontext/SContextEnvironmentAdaptiveDisplay;->getCCT()I
 
     move-result v5
 
-    invoke-static {v4, v5}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set10(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;I)I
+    invoke-static {v4, v5}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set9(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;I)I
 
-    .line 687
+    .line 670
     iget-object v4, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     const/4 v5, 0x1
 
     invoke-static {v4, v5}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set4(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;I)I
 
-    .line 689
+    .line 672
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v2
 
-    .line 690
+    .line 673
     .local v2, "time":J
     iget-object v4, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -130,7 +130,7 @@
 
     invoke-virtual {v4, v8}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->removeMessages(I)V
 
-    .line 691
+    .line 674
     iget-object v4, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$3;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-static {v4}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-get3(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;)Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;
@@ -139,7 +139,7 @@
 
     invoke-virtual {v4, v8, v2, v3}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->sendEmptyMessageAtTime(IJ)Z
 
-    .line 678
+    .line 661
     .end local v0    # "environmentAdaptiveDisplay":Landroid/hardware/scontext/SContextEnvironmentAdaptiveDisplay;
     .end local v2    # "time":J
     :cond_0

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     .prologue
-    .line 11694
+    .line 11840
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$3;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 11697
+    .line 11843
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 11698
+    .line 11844
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v2, "android.intent.action.USER_REMOVED"
 
@@ -55,7 +55,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 11699
+    .line 11845
     const-string/jumbo v2, "android.intent.extra.user_handle"
 
     const/4 v3, 0x0
@@ -64,13 +64,13 @@
 
     move-result v1
 
-    .line 11700
+    .line 11846
     .local v1, "userId":I
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$3;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-static {v2, v1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-wrap12(Lcom/android/server/enterprise/application/ApplicationPolicy;I)V
 
-    .line 11696
+    .line 11842
     .end local v1    # "userId":I
     :cond_0
     return-void

@@ -530,7 +530,7 @@
     :pswitch_0
     iget-object v2, p0, Lcom/android/systemui/volume/ZenModePanel;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0f0477
+    const v3, 0x7f0f0479
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -559,7 +559,7 @@
     aput-object v4, v3, v5
 
     .line 737
-    const v4, 0x7f0f04be
+    const v4, 0x7f0f04c0
 
     invoke-virtual {v2, v4, v3}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -575,7 +575,7 @@
     :pswitch_1
     iget-object v2, p0, Lcom/android/systemui/volume/ZenModePanel;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0f0476
+    const v3, 0x7f0f0478
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -589,7 +589,7 @@
     :pswitch_2
     iget-object v2, p0, Lcom/android/systemui/volume/ZenModePanel;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0f0478
+    const v3, 0x7f0f047a
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1542,7 +1542,7 @@
 
     .line 455
     :cond_2
-    const v13, 0x7f0f04fd
+    const v13, 0x7f0f04ff
 
     .line 462
     :cond_3
@@ -1583,7 +1583,7 @@
     if-gez v16, :cond_3
 
     .line 459
-    const v13, 0x7f0f04fe
+    const v13, 0x7f0f0500
 
     goto :goto_0
 
@@ -1648,7 +1648,7 @@
     .local v2, "formattedTime":Ljava/lang/CharSequence;
     if-eqz v10, :cond_a
 
-    const v12, 0x7f0f04ff
+    const v12, 0x7f0f0501
 
     .line 471
     .local v12, "templateRes":I
@@ -1747,7 +1747,7 @@
     .restart local v2    # "formattedTime":Ljava/lang/CharSequence;
     .restart local v8    # "pattern":Ljava/lang/String;
     :cond_a
-    const v12, 0x7f0f0500
+    const v12, 0x7f0f0502
 
     .restart local v12    # "templateRes":I
     goto :goto_3
@@ -3967,7 +3967,7 @@
 
     if-eqz v3, :cond_a
 
-    const v5, 0x7f0f046a
+    const v5, 0x7f0f046c
 
     :goto_5
     invoke-virtual {v8, v5}, Landroid/widget/TextView;->setText(I)V
@@ -4056,13 +4056,13 @@
 
     if-eqz v5, :cond_b
 
-    const v5, 0x7f0f046c
+    const v5, 0x7f0f046e
 
     goto :goto_5
 
     .line 436
     :cond_b
-    const v5, 0x7f0f046d
+    const v5, 0x7f0f046f
 
     goto :goto_5
 
@@ -4108,10 +4108,10 @@
     move-result-object v1
 
     .line 155
-    const v2, 0x7f0f0479
+    const v2, 0x7f0f047b
 
     .line 156
-    const v3, 0x7f0f0475
+    const v3, 0x7f0f0477
 
     .line 155
     invoke-virtual {v0, v2, v3, v1}, Lcom/android/systemui/volume/SegmentedButtons;->addButton(IILjava/lang/Object;)V
@@ -4127,10 +4127,10 @@
     move-result-object v1
 
     .line 158
-    const v2, 0x7f0f047b
+    const v2, 0x7f0f047d
 
     .line 159
-    const v3, 0x7f0f0478
+    const v3, 0x7f0f047a
 
     .line 158
     invoke-virtual {v0, v2, v3, v1}, Lcom/android/systemui/volume/SegmentedButtons;->addButton(IILjava/lang/Object;)V
@@ -4146,10 +4146,10 @@
     move-result-object v1
 
     .line 161
-    const v2, 0x7f0f047a
+    const v2, 0x7f0f047c
 
     .line 162
-    const v3, 0x7f0f0477
+    const v3, 0x7f0f0479
 
     .line 161
     invoke-virtual {v0, v2, v3, v1}, Lcom/android/systemui/volume/SegmentedButtons;->addButton(IILjava/lang/Object;)V

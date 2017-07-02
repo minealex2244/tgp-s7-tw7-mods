@@ -49,40 +49,40 @@
     .param p8, "blendingOpacity"    # F
 
     .prologue
-    .line 2169
+    .line 2170
     iput-object p1, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 2218
+    .line 2219
     const-string/jumbo v0, "addLinearGradientTextEffect"
 
     iput-object v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->methodName:Ljava/lang/String;
 
-    .line 2170
+    .line 2171
     iput p2, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
-    .line 2171
+    .line 2172
     iput p3, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->angle:F
 
-    .line 2172
+    .line 2173
     iput p4, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->scale:F
 
-    .line 2173
+    .line 2174
     iput-object p5, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->colors:[I
 
-    .line 2174
+    .line 2175
     iput-object p6, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->alphas:[F
 
-    .line 2175
+    .line 2176
     iput-object p7, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->positions:[F
 
-    .line 2176
+    .line 2177
     iput p8, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->blendingOpacity:F
 
-    .line 2169
+    .line 2170
     return-void
 .end method
 
@@ -92,68 +92,68 @@
     .param p2, "parcel"    # Landroid/os/Parcel;
 
     .prologue
-    .line 2179
+    .line 2180
     iput-object p1, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 2218
+    .line 2219
     const-string/jumbo v0, "addLinearGradientTextEffect"
 
     iput-object v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->methodName:Ljava/lang/String;
 
-    .line 2180
+    .line 2181
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
-    .line 2181
+    .line 2182
     invoke-virtual {p2}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->angle:F
 
-    .line 2182
+    .line 2183
     invoke-virtual {p2}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->scale:F
 
-    .line 2183
+    .line 2184
     invoke-virtual {p2}, Landroid/os/Parcel;->createIntArray()[I
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->colors:[I
 
-    .line 2184
+    .line 2185
     invoke-virtual {p2}, Landroid/os/Parcel;->createFloatArray()[F
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->alphas:[F
 
-    .line 2185
+    .line 2186
     invoke-virtual {p2}, Landroid/os/Parcel;->createFloatArray()[F
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->positions:[F
 
-    .line 2186
+    .line 2187
     invoke-virtual {p2}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->blendingOpacity:F
 
-    .line 2179
+    .line 2180
     return-void
 .end method
 
@@ -166,7 +166,7 @@
     .param p3, "handler"    # Landroid/widget/RemoteViews$OnClickHandler;
 
     .prologue
-    .line 2202
+    .line 2203
     iget v1, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -175,13 +175,13 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 2203
+    .line 2204
     .local v0, "target":Landroid/widget/TextView;
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2204
+    .line 2205
     :cond_0
     iget v1, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->angle:F
 
@@ -197,7 +197,7 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/widget/TextView;->semAddLinearGradientTextEffect(FF[I[F[FF)I
 
-    .line 2201
+    .line 2202
     return-void
 .end method
 
@@ -205,7 +205,7 @@
     .locals 1
 
     .prologue
-    .line 2208
+    .line 2209
     const-string/jumbo v0, "AddLinearGradientAction"
 
     return-object v0
@@ -217,46 +217,46 @@
     .param p2, "flags"    # I
 
     .prologue
-    .line 2190
+    .line 2191
     const/16 v0, 0x2d
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2191
+    .line 2192
     iget v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2192
+    .line 2193
     iget v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->angle:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2193
+    .line 2194
     iget v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->scale:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2194
+    .line 2195
     iget-object v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->colors:[I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeIntArray([I)V
 
-    .line 2195
+    .line 2196
     iget-object v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->alphas:[F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloatArray([F)V
 
-    .line 2196
+    .line 2197
     iget-object v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->positions:[F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloatArray([F)V
 
-    .line 2197
+    .line 2198
     iget v0, p0, Landroid/widget/RemoteViews$AddLinearGradientAction;->blendingOpacity:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2189
+    .line 2190
     return-void
 .end method

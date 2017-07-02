@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     .prologue
-    .line 1162
+    .line 1164
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct {p0}, Lcom/android/keyguard/KnoxStateMonitorCallback;-><init>()V
@@ -39,22 +39,22 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 1173
+    .line 1175
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput p1, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mCurrentUserId:I
 
-    .line 1174
+    .line 1176
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->-wrap3(Lcom/android/systemui/statusbar/BaseStatusBar;)V
 
-    .line 1175
+    .line 1177
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateNotifications()V
 
-    .line 1172
+    .line 1174
     return-void
 .end method
 
@@ -62,12 +62,12 @@
     .locals 1
 
     .prologue
-    .line 1165
+    .line 1167
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateNotifications()V
 
-    .line 1164
+    .line 1166
     return-void
 .end method
 
@@ -75,12 +75,12 @@
     .locals 1
 
     .prologue
-    .line 1169
+    .line 1171
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateNotifications()V
 
-    .line 1168
+    .line 1170
     return-void
 .end method
 
@@ -88,12 +88,12 @@
     .locals 1
 
     .prologue
-    .line 1183
+    .line 1185
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateQuickSettingPanelVisibility()V
 
-    .line 1182
+    .line 1184
     return-void
 .end method
 
@@ -101,14 +101,14 @@
     .locals 2
 
     .prologue
-    .line 1179
+    .line 1181
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateQuickSettingPanel(Z)V
 
-    .line 1178
+    .line 1180
     return-void
 .end method
 
@@ -116,12 +116,12 @@
     .locals 1
 
     .prologue
-    .line 1187
+    .line 1189
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateStatusBarHidden()V
 
-    .line 1186
+    .line 1188
     return-void
 .end method
 
@@ -129,12 +129,12 @@
     .locals 1
 
     .prologue
-    .line 1191
+    .line 1193
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateStatusBarIcons()V
 
-    .line 1190
+    .line 1192
     return-void
 .end method
 
@@ -142,11 +142,11 @@
     .locals 1
 
     .prologue
-    .line 1195
+    .line 1197
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$10;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateKnoxCustomStatusBarText()V
 
-    .line 1194
+    .line 1196
     return-void
 .end method

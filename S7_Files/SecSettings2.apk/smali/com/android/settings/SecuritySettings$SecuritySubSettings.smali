@@ -219,7 +219,7 @@
     aput-object v10, v9, v7
 
     .line 1087
-    const v10, 0x7f0b14d8
+    const v10, 0x7f0b14e6
 
     .line 1086
     invoke-virtual {p0, v10, v9}, Lcom/android/settings/SecuritySettings$SecuritySubSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -879,7 +879,7 @@
 
     .line 1182
     :cond_2
-    const v0, 0x7f0b112e
+    const v0, 0x7f0b113b
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SecuritySettings$SecuritySubSettings;->getString(I)Ljava/lang/String;
 

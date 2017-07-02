@@ -63,14 +63,14 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 2242
+    .line 2266
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
 
     invoke-direct {p0, p1, v0}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;-><init>(Landroid/content/Context;Landroid/os/Looper;)V
 
-    .line 2241
+    .line 2265
     return-void
 .end method
 
@@ -80,38 +80,38 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 2250
+    .line 2274
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2237
+    .line 2261
     new-instance v0, Landroid/util/SparseIntArray;
 
     invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
     iput-object v0, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mStrongAuthRequiredForUser:Landroid/util/SparseIntArray;
 
-    .line 2319
+    .line 2343
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker$1;
 
     invoke-direct {v0, p0}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker$1;-><init>(Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;)V
 
     iput-object v0, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mStub:Landroid/app/trust/IStrongAuthTracker$Stub;
 
-    .line 2251
+    .line 2275
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker$H;
 
     invoke-direct {v0, p0, p2}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker$H;-><init>(Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;Landroid/os/Looper;)V
 
     iput-object v0, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mHandler:Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker$H;
 
-    .line 2252
+    .line 2276
     invoke-static {p1}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->getDefaultFlags(Landroid/content/Context;)I
 
     move-result v0
 
     iput v0, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mDefaultStrongAuthFlags:I
 
-    .line 2250
+    .line 2274
     return-void
 .end method
 
@@ -120,20 +120,20 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 2256
+    .line 2280
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 2257
+    .line 2281
     const v2, 0x11200af
 
-    .line 2256
+    .line 2280
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 
     move-result v0
 
-    .line 2258
+    .line 2282
     .local v0, "strongAuthRequired":Z
     if-eqz v0, :cond_0
 
@@ -155,7 +155,7 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 2269
+    .line 2293
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mStrongAuthRequiredForUser:Landroid/util/SparseIntArray;
 
     iget v1, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mDefaultStrongAuthFlags:I
@@ -173,34 +173,34 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 2307
+    .line 2331
     invoke-virtual {p0, p2}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->getStrongAuthForUser(I)I
 
     move-result v0
 
-    .line 2308
+    .line 2332
     .local v0, "oldValue":I
     if-eq p1, v0, :cond_0
 
-    .line 2309
+    .line 2333
     iget v1, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mDefaultStrongAuthFlags:I
 
     if-ne p1, v1, :cond_1
 
-    .line 2310
+    .line 2334
     iget-object v1, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mStrongAuthRequiredForUser:Landroid/util/SparseIntArray;
 
     invoke-virtual {v1, p2}, Landroid/util/SparseIntArray;->delete(I)V
 
-    .line 2314
+    .line 2338
     :goto_0
     invoke-virtual {p0, p2}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->onStrongAuthRequiredChanged(I)V
 
-    .line 2306
+    .line 2330
     :cond_0
     return-void
 
-    .line 2312
+    .line 2336
     :cond_1
     iget-object v1, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->mStrongAuthRequiredForUser:Landroid/util/SparseIntArray;
 
@@ -216,7 +216,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 2296
+    .line 2320
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->getStrongAuthForUser(I)I
 
     move-result v1
@@ -238,7 +238,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 2287
+    .line 2311
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->getStrongAuthForUser(I)I
 
     move-result v1
@@ -262,7 +262,7 @@
 
     const/4 v1, 0x0
 
-    .line 2277
+    .line 2301
     invoke-static {p1}, Lcom/samsung/android/knox/SemPersonaManager;->isKnoxId(I)Z
 
     move-result v2
@@ -271,7 +271,7 @@
 
     return v0
 
-    .line 2278
+    .line 2302
     :cond_0
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->getStrongAuthForUser(I)I
 
@@ -293,6 +293,6 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 2302
+    .line 2326
     return-void
 .end method

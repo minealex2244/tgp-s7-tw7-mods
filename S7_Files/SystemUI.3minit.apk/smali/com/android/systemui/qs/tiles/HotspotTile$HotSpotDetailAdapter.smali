@@ -384,7 +384,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0f03de
+    const v0, 0x7f0f03df
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -399,13 +399,13 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f0f03dd
+    const v0, 0x7f0f03de
 
     goto :goto_0
 
     .line 491
     :cond_1
-    const v0, 0x7f0f03dc
+    const v0, 0x7f0f03dd
 
     goto :goto_0
 .end method
@@ -537,7 +537,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/HotspotTile$HotSpotDetailAdapter;->this$0:Lcom/android/systemui/qs/tiles/HotspotTile;
 
-    const v1, 0x7f0f03db
+    const v1, 0x7f0f03dc
 
     invoke-static {v0, v1}, Lcom/android/systemui/qs/tiles/HotspotTile;->-wrap3(Lcom/android/systemui/qs/tiles/HotspotTile;I)V
 
@@ -856,7 +856,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0f03df
+    const v3, 0x7f0f03e0
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -889,7 +889,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0f03e1
+    const v3, 0x7f0f03e2
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

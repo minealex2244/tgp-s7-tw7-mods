@@ -1974,7 +1974,7 @@
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/settings/PrivacySettings;->mConfigure:Landroid/preference/PreferenceScreen;
 
-    const v1, 0x7f0b1723
+    const v1, 0x7f0b1731
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
@@ -2087,7 +2087,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b1726
+    const v2, 0x7f0b1734
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -2114,7 +2114,7 @@
     move-result-object v1
 
     .line 530
-    const v2, 0x7f0b1724
+    const v2, 0x7f0b1732
 
     .line 529
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -2157,7 +2157,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b1725
+    const v2, 0x7f0b1733
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -2202,7 +2202,7 @@
     .param p1, "state"    # Z
 
     .prologue
-    const v0, 0x7f0b19ca
+    const v0, 0x7f0b19d8
 
     .line 639
     invoke-static {}, Lcom/android/settings/Utils;->isSupportGraceUX()Z
@@ -2259,7 +2259,7 @@
 
     .line 644
     :cond_2
-    const v0, 0x7f0b19cb
+    const v0, 0x7f0b19d9
 
     goto :goto_2
 .end method
@@ -2675,7 +2675,7 @@
     if-eqz v1, :cond_9
 
     .line 718
-    const v13, 0x7f0b19ca
+    const v13, 0x7f0b19d8
 
     .line 717
     :goto_8
@@ -2717,7 +2717,7 @@
     .restart local v8    # "manageLabel":Ljava/lang/String;
     .restart local v10    # "transport":Ljava/lang/String;
     :cond_9
-    const v13, 0x7f0b19cb
+    const v13, 0x7f0b19d9
 
     goto :goto_8
 
@@ -2863,7 +2863,7 @@
 
     .prologue
     .line 779
-    const v0, 0x7f0b189a
+    const v0, 0x7f0b18a8
 
     return v0
 .end method
@@ -2926,7 +2926,7 @@
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
     .line 600
-    const v3, 0x7f0b143b
+    const v3, 0x7f0b1449
 
     move-object v5, v4
 
@@ -3558,7 +3558,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f0b0bba
+    const v23, 0x7f0b0bc9
 
     move-object/from16 v0, p0
 
@@ -3950,7 +3950,7 @@
     if-eqz v4, :cond_c
 
     .line 284
-    const v22, 0x7f0b0a89
+    const v22, 0x7f0b0a8c
 
     move/from16 v0, v22
 

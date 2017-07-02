@@ -283,7 +283,7 @@
 
     iput-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 402
+    .line 412
     new-instance v3, Lcom/android/systemui/qs/tiles/WifiCallingTile$2;
 
     new-instance v4, Landroid/os/Handler;
@@ -294,14 +294,14 @@
 
     iput-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mWifiCallingObserver:Landroid/database/ContentObserver;
 
-    .line 553
+    .line 563
     new-instance v3, Lcom/android/systemui/qs/tiles/WifiCallingTile$3;
 
     invoke-direct {v3, p0}, Lcom/android/systemui/qs/tiles/WifiCallingTile$3;-><init>(Lcom/android/systemui/qs/tiles/WifiCallingTile;)V
 
     iput-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mPhoneStateListener:Landroid/telephony/PhoneStateListener;
 
-    .line 589
+    .line 599
     new-instance v3, Lcom/android/systemui/qs/tiles/WifiCallingTile$4;
 
     new-instance v4, Landroid/os/Handler;
@@ -570,7 +570,7 @@
 
     if-eqz v0, :cond_4
 
-    const v0, 0x7f0f03f7
+    const v0, 0x7f0f03f8
 
     :goto_0
     invoke-virtual {v2, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -603,7 +603,7 @@
 
     .line 279
     :cond_4
-    const v0, 0x7f0f03f6
+    const v0, 0x7f0f03f7
 
     goto :goto_0
 
@@ -620,30 +620,30 @@
     .param p1, "keyPressType"    # I
 
     .prologue
-    .line 579
+    .line 589
     iget-object v2, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->TAG:Ljava/lang/String;
 
     const-string/jumbo v3, "Launch provisioning"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 580
+    .line 590
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 581
+    .line 591
     .local v1, "intent":Landroid/content/Intent;
     const-string/jumbo v2, "com.samsung.intent.action.ACTIVATE_WIFI_CALLING"
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 582
+    .line 592
     const-string/jumbo v2, "qs"
 
     invoke-virtual {v1, v2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 583
+    .line 593
     new-instance v0, Landroid/content/ComponentName;
 
     const-string/jumbo v2, "com.samsung.android.nsdsvowifi"
@@ -652,11 +652,11 @@
 
     invoke-direct {v0, v2, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 584
+    .line 594
     .local v0, "component":Landroid/content/ComponentName;
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 585
+    .line 595
     return-object v1
 .end method
 
@@ -699,12 +699,12 @@
 
     const/4 v3, 0x0
 
-    .line 363
+    .line 373
     sget-boolean v4, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_TMOWFC:Z
 
     if-eqz v4, :cond_1
 
-    .line 364
+    .line 374
     iget-object v4, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -715,7 +715,7 @@
 
     move-result-object v0
 
-    .line 365
+    .line 375
     .local v0, "registerStatus":Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;
     sget-object v4, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;->REGISTER:Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;
 
@@ -729,7 +729,7 @@
 
     goto :goto_0
 
-    .line 367
+    .line 377
     .end local v0    # "registerStatus":Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;
     :cond_1
     iget-object v4, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
@@ -740,13 +740,13 @@
 
     move-result v1
 
-    .line 369
+    .line 379
     .local v1, "wfcEnabled":I
     sget-boolean v4, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_ATTWFC:Z
 
     if-eqz v4, :cond_3
 
-    .line 370
+    .line 380
     invoke-virtual {p0}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->isEnhanced4gLTEEnabled()Z
 
     move-result v4
@@ -760,7 +760,7 @@
     :cond_2
     return v3
 
-    .line 373
+    .line 383
     :cond_3
     if-ne v1, v2, :cond_4
 
@@ -782,12 +782,12 @@
 
     const/4 v4, 0x1
 
-    .line 378
+    .line 388
     sget-boolean v3, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_TMOWFC:Z
 
     if-eqz v3, :cond_2
 
-    .line 379
+    .line 389
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -810,45 +810,45 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 380
+    .line 390
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
-    .line 381
+    .line 391
     if-eqz p1, :cond_1
 
     sget-object v3, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;->REGISTER:Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;
 
-    .line 380
+    .line 390
     :goto_0
     invoke-static {v4, v3}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->setRegister(Landroid/content/ContentResolver;Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;)V
 
-    .line 377
+    .line 387
     :cond_0
     :goto_1
     return-void
 
-    .line 382
+    .line 392
     :cond_1
     sget-object v3, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;->DONT_REGISTER:Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegisterContract$State;
 
     goto :goto_0
 
-    .line 383
+    .line 393
     :cond_2
     sget-boolean v3, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_ATTWFC:Z
 
     if-eqz v3, :cond_3
 
-    .line 384
+    .line 394
     invoke-direct {p0, v4}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->getATTVoWifiIntent(I)Landroid/content/Intent;
 
     move-result-object v1
 
-    .line 386
+    .line 396
     .local v1, "wfcIntentATT":Landroid/content/Intent;
     :try_start_0
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mHost:Lcom/android/systemui/qs/QSTile$Host;
@@ -859,11 +859,11 @@
 
     goto :goto_1
 
-    .line 387
+    .line 397
     :catch_0
     move-exception v0
 
-    .line 388
+    .line 398
     .local v0, "e":Landroid/content/ActivityNotFoundException;
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->TAG:Ljava/lang/String;
 
@@ -889,37 +889,37 @@
 
     goto :goto_1
 
-    .line 391
+    .line 401
     .end local v0    # "e":Landroid/content/ActivityNotFoundException;
     .end local v1    # "wfcIntentATT":Landroid/content/Intent;
     :cond_3
     iget-object v6, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
-    .line 392
+    .line 402
     const-string/jumbo v7, "wifi_call_enable"
 
-    .line 393
+    .line 403
     if-eqz p1, :cond_4
 
     move v3, v4
 
-    .line 391
+    .line 401
     :goto_2
     invoke-static {v6, v7, v3}, Lcom/android/systemui/statusbar/policy/WifiCallingDBController;->setInt(Landroid/content/Context;Ljava/lang/String;I)V
 
-    .line 394
+    .line 404
     sget-boolean v3, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_RJILWFC:Z
 
     if-eqz v3, :cond_0
 
-    .line 395
+    .line 405
     new-instance v2, Landroid/content/Intent;
 
     const-string/jumbo v3, "action_wifi_call_enable_broadcast"
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 396
+    .line 406
     .local v2, "wificall":Landroid/content/Intent;
     const-string/jumbo v3, "wifi_call_enable"
 
@@ -928,7 +928,7 @@
     :goto_3
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 397
+    .line 407
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3, v2}, Landroid/content/Context;->sendStickyBroadcast(Landroid/content/Intent;)V
@@ -939,14 +939,14 @@
     :cond_4
     move v3, v5
 
-    .line 393
+    .line 403
     goto :goto_2
 
     .restart local v2    # "wificall":Landroid/content/Intent;
     :cond_5
     move v4, v5
 
-    .line 396
+    .line 406
     goto :goto_3
 .end method
 
@@ -962,7 +962,7 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 481
+    .line 491
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     if-eqz v3, :cond_0
@@ -975,10 +975,10 @@
 
     if-eqz v3, :cond_0
 
-    .line 482
+    .line 492
     return-void
 
-    .line 485
+    .line 495
     :cond_0
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
@@ -992,7 +992,7 @@
 
     move-result-object v2
 
-    .line 486
+    .line 496
     .local v2, "popupEntryView":Landroid/view/View;
     const v3, 0x7f1300ca
 
@@ -1002,67 +1002,67 @@
 
     check-cast v1, Landroid/widget/CheckBox;
 
-    .line 488
+    .line 498
     .local v1, "disableAlertCheckBox":Landroid/widget/CheckBox;
     new-instance v3, Lcom/android/systemui/qs/tiles/WifiCallingTile$9;
 
     invoke-direct {v3, p0, v1}, Lcom/android/systemui/qs/tiles/WifiCallingTile$9;-><init>(Lcom/android/systemui/qs/tiles/WifiCallingTile;Landroid/widget/CheckBox;)V
 
-    .line 487
+    .line 497
     invoke-virtual {v1, v3}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 500
+    .line 510
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 501
+    .line 511
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
     if-eqz p1, :cond_1
 
-    .line 502
+    .line 512
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 503
+    .line 513
     :cond_1
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
-    .line 505
+    .line 515
     invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 506
+    .line 516
     if-eqz p3, :cond_2
 
     if-eqz p4, :cond_2
 
-    .line 507
+    .line 517
     invoke-virtual {v0, p3, p4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 508
+    .line 518
     :cond_2
     if-eqz p5, :cond_3
 
     if-eqz p6, :cond_3
 
-    .line 509
+    .line 519
     invoke-virtual {v0, p5, p6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 510
+    .line 520
     :cond_3
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mHost:Lcom/android/systemui/qs/QSTile$Host;
 
     invoke-interface {v3}, Lcom/android/systemui/qs/QSTile$Host;->collapsePanels()V
 
-    .line 512
+    .line 522
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v3
 
     iput-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
-    .line 513
+    .line 523
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     new-instance v4, Lcom/android/systemui/qs/tiles/WifiCallingTile$10;
@@ -1071,17 +1071,17 @@
 
     invoke-virtual {v3, v4}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 518
+    .line 528
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {p0, v3}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->setDialogWindowType(Landroid/app/AlertDialog;)V
 
-    .line 519
+    .line 529
     iget-object v3, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v3}, Landroid/app/AlertDialog;->show()V
 
-    .line 479
+    .line 489
     return-void
 .end method
 
@@ -1095,7 +1095,7 @@
     .param p6, "negListener"    # Landroid/content/DialogInterface$OnClickListener;
 
     .prologue
-    .line 528
+    .line 538
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     if-eqz v1, :cond_0
@@ -1108,10 +1108,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 529
+    .line 539
     return-void
 
-    .line 532
+    .line 542
     :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1119,48 +1119,48 @@
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 533
+    .line 543
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
     if-eqz p1, :cond_1
 
-    .line 534
+    .line 544
     invoke-virtual {v0, p1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 536
+    .line 546
     :cond_1
     invoke-virtual {v0, p2}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    .line 537
+    .line 547
     if-eqz p3, :cond_2
 
     if-eqz p4, :cond_2
 
-    .line 538
+    .line 548
     invoke-virtual {v0, p3, p4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 539
+    .line 549
     :cond_2
     if-eqz p5, :cond_3
 
     if-eqz p6, :cond_3
 
-    .line 540
+    .line 550
     invoke-virtual {v0, p5, p6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 541
+    .line 551
     :cond_3
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mHost:Lcom/android/systemui/qs/QSTile$Host;
 
     invoke-interface {v1}, Lcom/android/systemui/qs/QSTile$Host;->collapsePanels()V
 
-    .line 543
+    .line 553
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
-    .line 544
+    .line 554
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     new-instance v2, Lcom/android/systemui/qs/tiles/WifiCallingTile$11;
@@ -1169,17 +1169,17 @@
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 549
+    .line 559
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->setDialogWindowType(Landroid/app/AlertDialog;)V
 
-    .line 550
+    .line 560
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
-    .line 526
+    .line 536
     return-void
 .end method
 
@@ -1189,7 +1189,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 449
+    .line 459
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     if-eqz v1, :cond_0
@@ -1202,10 +1202,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 450
+    .line 460
     return-void
 
-    .line 453
+    .line 463
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
@@ -1219,7 +1219,7 @@
 
     move-result-object v0
 
-    .line 455
+    .line 465
     .local v0, "layout":Landroid/view/View;
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -1227,22 +1227,22 @@
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 456
-    const v2, 0x7f0f0698
+    .line 466
+    const v2, 0x7f0f069b
 
-    .line 455
+    .line 465
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 457
+    .line 467
     new-instance v2, Lcom/android/systemui/qs/tiles/WifiCallingTile$7;
 
     invoke-direct {v2, p0}, Lcom/android/systemui/qs/tiles/WifiCallingTile$7;-><init>(Lcom/android/systemui/qs/tiles/WifiCallingTile;)V
 
-    const v3, 0x7f0f069f
+    const v3, 0x7f0f06a2
 
-    .line 455
+    .line 465
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
@@ -1257,7 +1257,7 @@
 
     iput-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
-    .line 465
+    .line 475
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     new-instance v2, Lcom/android/systemui/qs/tiles/WifiCallingTile$8;
@@ -1266,22 +1266,22 @@
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    .line 470
+    .line 480
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mHost:Lcom/android/systemui/qs/QSTile$Host;
 
     invoke-interface {v1}, Lcom/android/systemui/qs/QSTile$Host;->collapsePanels()V
 
-    .line 471
+    .line 481
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->setDialogWindowType(Landroid/app/AlertDialog;)V
 
-    .line 472
+    .line 482
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mAlertDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
-    .line 448
+    .line 458
     return-void
 .end method
 
@@ -1400,7 +1400,7 @@
     .locals 1
 
     .prologue
-    .line 359
+    .line 369
     const/16 v0, 0x1f4
 
     return v0
@@ -1411,6 +1411,23 @@
 
     .prologue
     .line 337
+    sget-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_NON_TRANSLATABLE_WFC_TITLE:Z
+
+    if-eqz v0, :cond_0
+
+    .line 338
+    iget-object v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f0f03bb
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 340
+    :cond_0
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
     const v1, 0x7f0f03ba
@@ -1637,14 +1654,62 @@
     .param p2, "arg"    # Ljava/lang/Object;
 
     .prologue
-    .line 342
+    .line 346
     invoke-direct {p0}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->isWfcEnabled()Z
 
     move-result v0
 
     iput-boolean v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->value:Z
 
-    .line 343
+    .line 348
+    sget-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_NON_TRANSLATABLE_WFC_TITLE:Z
+
+    if-eqz v0, :cond_0
+
+    .line 349
+    iget-object v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
+
+    const v1, 0x7f0f03bb
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->label:Ljava/lang/CharSequence;
+
+    .line 354
+    :goto_0
+    sget-boolean v0, Lcom/android/systemui/SystemUIRune;->IS_TMB_ICON:Z
+
+    if-eqz v0, :cond_1
+
+    .line 355
+    const v0, 0x7f0203f8
+
+    invoke-static {v0}, Lcom/android/systemui/qs/QSTile$ResourceIcon;->get(I)Lcom/android/systemui/qs/QSTile$Icon;
+
+    move-result-object v0
+
+    iput-object v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->icon:Lcom/android/systemui/qs/QSTile$Icon;
+
+    .line 363
+    :goto_1
+    invoke-virtual {p0}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->supportWFCStateUpdate()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    const/4 v0, 0x0
+
+    :goto_2
+    iput-boolean v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->dim:Z
+
+    .line 345
+    return-void
+
+    .line 351
+    :cond_0
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
     const v1, 0x7f0f03ba
@@ -1655,43 +1720,15 @@
 
     iput-object v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->label:Ljava/lang/CharSequence;
 
-    .line 344
-    sget-boolean v0, Lcom/android/systemui/SystemUIRune;->IS_TMB_ICON:Z
+    goto :goto_0
 
-    if-eqz v0, :cond_0
-
-    .line 345
-    const v0, 0x7f0203f8
-
-    invoke-static {v0}, Lcom/android/systemui/qs/QSTile$ResourceIcon;->get(I)Lcom/android/systemui/qs/QSTile$Icon;
-
-    move-result-object v0
-
-    iput-object v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->icon:Lcom/android/systemui/qs/QSTile$Icon;
-
-    .line 353
-    :goto_0
-    invoke-virtual {p0}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->supportWFCStateUpdate()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    const/4 v0, 0x0
-
-    :goto_1
-    iput-boolean v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->dim:Z
-
-    .line 341
-    return-void
-
-    .line 346
-    :cond_0
+    .line 356
+    :cond_1
     sget-boolean v0, Lcom/android/systemui/SystemUIRune;->IS_MTR_ICON:Z
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
-    .line 347
+    .line 357
     const v0, 0x7f02039c
 
     invoke-static {v0}, Lcom/android/systemui/qs/QSTile$ResourceIcon;->get(I)Lcom/android/systemui/qs/QSTile$Icon;
@@ -1700,15 +1737,15 @@
 
     iput-object v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->icon:Lcom/android/systemui/qs/QSTile$Icon;
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 348
-    :cond_1
+    .line 358
+    :cond_2
     sget-boolean v0, Lcom/android/systemui/SystemUIRune;->IS_VZW_ICON:Z
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_3
 
-    .line 349
+    .line 359
     const v0, 0x7f0203ff
 
     invoke-static {v0}, Lcom/android/systemui/qs/QSTile$ResourceIcon;->get(I)Lcom/android/systemui/qs/QSTile$Icon;
@@ -1717,10 +1754,10 @@
 
     iput-object v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->icon:Lcom/android/systemui/qs/QSTile$Icon;
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 351
-    :cond_2
+    .line 361
+    :cond_3
     const v0, 0x7f020400
 
     invoke-static {v0}, Lcom/android/systemui/qs/QSTile$ResourceIcon;->get(I)Lcom/android/systemui/qs/QSTile$Icon;
@@ -1729,13 +1766,13 @@
 
     iput-object v0, p1, Lcom/android/systemui/qs/QSTile$BooleanState;->icon:Lcom/android/systemui/qs/QSTile$Icon;
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 353
-    :cond_3
+    .line 363
+    :cond_4
     const/4 v0, 0x1
 
-    goto :goto_1
+    goto :goto_2
 .end method
 
 .method protected bridge synthetic handleUpdateState(Lcom/android/systemui/qs/QSTile$State;Ljava/lang/Object;)V
@@ -1744,7 +1781,7 @@
     .param p2, "arg"    # Ljava/lang/Object;
 
     .prologue
-    .line 341
+    .line 345
     check-cast p1, Lcom/android/systemui/qs/QSTile$BooleanState;
 
     .end local p1    # "state":Lcom/android/systemui/qs/QSTile$State;
@@ -1914,7 +1951,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 445
+    .line 455
     iget-object v1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -2048,17 +2085,17 @@
 
     const/4 v2, 0x0
 
-    .line 417
+    .line 427
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 418
+    .line 428
     const-string/jumbo v3, "vowifi_menu_enable"
 
-    .line 417
+    .line 427
     invoke-static {v0, v3, v2}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
@@ -2070,26 +2107,26 @@
     :goto_0
     iput-boolean v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mIsWifiCallingMenuEnabled:Z
 
-    .line 419
+    .line 429
     sget-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_ATTWFC:Z
 
     if-eqz v0, :cond_3
 
-    .line 420
+    .line 430
     iget-boolean v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mInWifiCall:Z
 
     if-eqz v0, :cond_1
 
-    .line 421
+    .line 431
     return v2
 
     :cond_0
     move v0, v2
 
-    .line 417
+    .line 427
     goto :goto_0
 
-    .line 424
+    .line 434
     :cond_1
     iget-boolean v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mActProcessATT:Z
 
@@ -2103,7 +2140,7 @@
 
     goto :goto_1
 
-    .line 427
+    .line 437
     :cond_3
     sget-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_TMOWFC:Z
 
@@ -2113,41 +2150,41 @@
 
     if-eqz v0, :cond_4
 
-    .line 428
+    .line 438
     return v2
 
-    .line 431
+    .line 441
     :cond_4
     sget-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_RJILWFC:Z
 
     if-eqz v0, :cond_5
 
-    .line 432
+    .line 442
     invoke-static {}, Lcom/android/systemui/statusbar/phone/VoWiFiStatusController;->isRJIOSimInserted()Z
 
     move-result v0
 
     return v0
 
-    .line 435
+    .line 445
     :cond_5
     sget-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_ROGERSWFC:Z
 
     if-eqz v0, :cond_6
 
-    .line 436
+    .line 446
     return v1
 
-    .line 438
+    .line 448
     :cond_6
     iget-boolean v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile;->mIsWifiCallingMenuEnabled:Z
 
     if-eqz v0, :cond_7
 
-    .line 439
+    .line 449
     return v1
 
-    .line 441
+    .line 451
     :cond_7
     return v2
 .end method

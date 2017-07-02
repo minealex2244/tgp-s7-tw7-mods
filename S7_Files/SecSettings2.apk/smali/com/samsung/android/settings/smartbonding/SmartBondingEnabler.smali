@@ -277,7 +277,7 @@
     if-eqz v1, :cond_1
 
     .line 300
-    const v0, 0x7f0b0bcd
+    const v0, 0x7f0b0bdc
 
     .line 311
     :cond_0
@@ -313,13 +313,13 @@
     if-nez v1, :cond_4
 
     .line 305
-    const v0, 0x7f0b0bcf
+    const v0, 0x7f0b0bde
 
     goto :goto_0
 
     .line 303
     :cond_3
-    const v0, 0x7f0b0bd0
+    const v0, 0x7f0b0bdf
 
     .line 302
     goto :goto_0
@@ -335,7 +335,7 @@
     if-nez v1, :cond_0
 
     .line 307
-    const v0, 0x7f0b0bce
+    const v0, 0x7f0b0bdd
 
     goto :goto_0
 .end method
@@ -345,7 +345,7 @@
 
     .prologue
     .line 265
-    const v0, 0x7f0b0bc3
+    const v0, 0x7f0b0bd2
 
     .line 267
     .local v0, "popupMsgId":I
@@ -362,7 +362,7 @@
     if-eqz v1, :cond_0
 
     .line 268
-    const v0, 0x7f0b0bc2
+    const v0, 0x7f0b0bd1
 
     .line 271
     :cond_0
@@ -375,7 +375,7 @@
     if-eqz v1, :cond_2
 
     .line 272
-    const v0, 0x7f0b0bca
+    const v0, 0x7f0b0bd9
 
     .line 293
     :cond_1
@@ -424,7 +424,7 @@
     if-eqz v1, :cond_6
 
     .line 281
-    const v0, 0x7f0b0bc6
+    const v0, 0x7f0b0bd5
 
     goto :goto_0
 
@@ -443,19 +443,19 @@
     if-eqz v1, :cond_5
 
     .line 275
-    const v0, 0x7f0b0bc8
+    const v0, 0x7f0b0bd7
 
     goto :goto_0
 
     .line 277
     :cond_5
-    const v0, 0x7f0b0bc9
+    const v0, 0x7f0b0bd8
 
     goto :goto_0
 
     .line 283
     :cond_6
-    const v0, 0x7f0b0bc7
+    const v0, 0x7f0b0bd6
 
     goto :goto_0
 
@@ -483,13 +483,13 @@
     if-eqz v1, :cond_8
 
     .line 287
-    const v0, 0x7f0b0bc4
+    const v0, 0x7f0b0bd3
 
     goto :goto_0
 
     .line 289
     :cond_8
-    const v0, 0x7f0b0bc5
+    const v0, 0x7f0b0bd4
 
     goto :goto_0
 .end method
@@ -498,10 +498,10 @@
     .locals 2
 
     .prologue
-    .line 408
+    .line 412
     const/4 v0, 0x0
 
-    .line 409
+    .line 413
     .local v0, "isDim":Z
     iget-object v1, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
@@ -517,12 +517,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 413
+    .line 417
     :cond_0
     :goto_0
     return v0
 
-    .line 410
+    .line 414
     :cond_1
     const/4 v0, 0x1
 
@@ -533,7 +533,7 @@
     .locals 1
 
     .prologue
-    .line 417
+    .line 421
     iget-object v0, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/settings/Utils;->isMobileNetworkEnabled(Landroid/content/Context;)Z
@@ -558,281 +558,319 @@
 .end method
 
 .method private onWidgetChanged(Z)Z
-    .locals 8
+    .locals 10
     .param p1, "isChecked"    # Z
 
     .prologue
-    const/4 v4, 0x1
+    const v9, 0x7f0b0bcd
 
-    const/4 v3, 0x0
+    const/4 v5, 0x1
+
+    const/4 v4, 0x0
 
     .line 349
-    iget-object v5, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v6, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v2
+    move-result-object v3
 
-    const v6, 0x7f1000bc
+    const v7, 0x7f1000bc
 
-    invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getInteger(I)I
-
-    move-result v6
-
-    .line 350
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
-
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const v7, 0x7f1000bd
-
-    invoke-virtual {v2, v7}, Landroid/content/res/Resources;->getInteger(I)I
+    invoke-virtual {v3, v7}, Landroid/content/res/Resources;->getInteger(I)I
 
     move-result v7
 
+    .line 350
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v8, 0x7f1000bd
+
+    invoke-virtual {v3, v8}, Landroid/content/res/Resources;->getInteger(I)I
+
+    move-result v8
+
     if-eqz p1, :cond_0
 
-    const/16 v2, 0x3e8
+    const/16 v3, 0x3e8
 
     :goto_0
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v2
+    move-result-object v3
 
     .line 349
-    invoke-static {v5, v6, v7, v2}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;IILjava/lang/Object;)V
+    invoke-static {v6, v7, v8, v3}, Lcom/android/settings/Utils;->insertEventwithDetailLog(Landroid/content/Context;IILjava/lang/Object;)V
 
     .line 351
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v3
 
-    const-string/jumbo v5, "smart_bonding"
+    const-string/jumbo v6, "smart_bonding"
 
-    invoke-static {v2, v5, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v3, v6, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_1
+    if-eqz v3, :cond_1
 
-    const/4 v1, 0x1
+    const/4 v2, 0x1
 
     .line 353
-    .local v1, "smartBondingState":Z
+    .local v2, "smartBondingState":Z
     :goto_1
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isNoSIM(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/android/settings/Utils;->isNoSIM(Landroid/content/Context;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_2
+    if-eqz v3, :cond_2
 
     .line 354
     invoke-direct {p0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->showNotificationDialog()Z
 
-    move-result v2
+    move-result v3
 
-    return v2
+    return v3
 
-    .end local v1    # "smartBondingState":Z
+    .end local v2    # "smartBondingState":Z
     :cond_0
-    move v2, v3
+    move v3, v4
 
     .line 350
     goto :goto_0
 
     .line 351
     :cond_1
-    const/4 v1, 0x0
+    const/4 v2, 0x0
 
-    .restart local v1    # "smartBondingState":Z
+    .restart local v2    # "smartBondingState":Z
     goto :goto_1
 
     .line 356
     :cond_2
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v3
 
-    const-string/jumbo v5, "mptcp_value"
+    const-string/jumbo v6, "mptcp_value"
 
-    invoke-static {v2, v5, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v3, v6, v4}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_3
+    if-eqz v3, :cond_3
 
     if-eqz p1, :cond_3
 
     .line 357
-    if-eqz v1, :cond_6
+    if-eqz v2, :cond_6
 
-    .line 387
+    .line 391
     :cond_3
     if-eqz p1, :cond_4
 
-    if-eqz v1, :cond_a
+    if-eqz v2, :cond_b
 
-    .line 394
+    .line 398
     :cond_4
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v3
 
-    const-string/jumbo v5, "smart_bonding"
+    const-string/jumbo v6, "smart_bonding"
 
     if-eqz p1, :cond_5
 
-    move v3, v4
+    move v4, v5
 
     :cond_5
-    invoke-static {v2, v5, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v3, v6, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 397
+    .line 401
     :goto_2
-    return v4
+    return v5
 
     .line 358
     :cond_6
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 359
     .local v0, "mAlertDialog":Landroid/app/AlertDialog$Builder;
-    const v2, 0x7f0b0bbe
-
-    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v9}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 360
-    const v2, 0x7f0b0b91
+    const v3, 0x7f0b0b94
 
-    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 361
     invoke-static {}, Lcom/android/settings/Utils;->isDomesticSKTModel()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_8
+    if-eqz v3, :cond_8
 
     .line 362
-    const v2, 0x7f0b0b9f
+    const v3, 0x7f0b0ba2
 
-    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
-    .line 366
+    .line 370
     :cond_7
     :goto_3
-    new-instance v2, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$10;
+    new-instance v3, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$10;
 
-    invoke-direct {v2, p0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$10;-><init>(Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;)V
+    invoke-direct {v3, p0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$10;-><init>(Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;)V
 
-    const v5, 0x104000a
+    const v6, 0x104000a
 
-    invoke-virtual {v0, v5, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v6, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 372
-    new-instance v2, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;
+    .line 376
+    new-instance v3, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;
 
-    invoke-direct {v2, p0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;-><init>(Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;)V
+    invoke-direct {v3, p0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;-><init>(Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;)V
 
-    const/high16 v5, 0x1040000
+    const/high16 v6, 0x1040000
 
-    invoke-virtual {v0, v5, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v6, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 382
-    invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
+    .line 386
+    invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    .line 383
+    .line 387
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
-    .line 384
-    return v4
+    .line 388
+    return v5
 
     .line 363
     :cond_8
     invoke-static {}, Lcom/android/settings/Utils;->isDomesticLGTModel()Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_9
+    if-nez v3, :cond_9
 
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isAveaSIMValid(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/android/settings/Utils;->isAveaSIMValid(Landroid/content/Context;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_7
+    if-eqz v3, :cond_a
 
     .line 364
     :cond_9
-    const v2, 0x7f0b0ba8
+    const v3, 0x7f0b0bab
 
-    invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
+    invoke-virtual {v0, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     goto :goto_3
 
-    .line 388
-    .end local v0    # "mAlertDialog":Landroid/app/AlertDialog$Builder;
+    .line 365
     :cond_a
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isRoaming(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/android/settings/Utils;->isAisSIMValid(Landroid/content/Context;)Z
 
-    move-result v2
+    move-result v3
 
-    if-nez v2, :cond_b
+    if-eqz v3, :cond_7
+
+    .line 366
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+
+    new-array v6, v5, [Ljava/lang/Object;
+
+    .line 367
+    iget-object v7, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v7, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    aput-object v7, v6, v4
+
+    .line 366
+    const v7, 0x7f0b0bc4
+
+    invoke-virtual {v3, v7, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 368
+    .local v1, "message":Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    goto :goto_3
+
+    .line 392
+    .end local v0    # "mAlertDialog":Landroid/app/AlertDialog$Builder;
+    .end local v1    # "message":Ljava/lang/String;
+    :cond_b
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+
+    invoke-static {v3}, Lcom/android/settings/Utils;->isRoaming(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_c
 
     invoke-direct {p0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->isWifiAndMobileNetworkEnabled()Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_b
+    if-eqz v3, :cond_c
 
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-static {v2}, Lcom/android/settings/Utils;->isAirplaneModeEnabled(Landroid/content/Context;)Z
+    invoke-static {v3}, Lcom/android/settings/Utils;->isAirplaneModeEnabled(Landroid/content/Context;)Z
 
-    move-result v2
+    move-result v3
 
-    if-eqz v2, :cond_c
+    if-eqz v3, :cond_d
 
-    .line 389
-    :cond_b
+    .line 393
+    :cond_c
     invoke-direct {p0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->showNotificationDialog()Z
 
-    move-result v2
+    move-result v3
 
-    return v2
+    return v3
 
-    .line 391
-    :cond_c
-    iget-object v2, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
+    .line 395
+    :cond_d
+    iget-object v3, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v2
+    move-result-object v3
 
-    const-string/jumbo v3, "smart_bonding"
+    const-string/jumbo v4, "smart_bonding"
 
-    invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v3, v4, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    goto :goto_2
+    goto/16 :goto_2
 .end method
 
 .method private registerForToddlerStatus()V
@@ -913,30 +951,30 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 401
+    .line 405
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 402
+    .line 406
     .local v0, "mptcpStateIntent":Landroid/content/Intent;
     const-string/jumbo v1, "com.samsung.android.mptcp.MPTCP_START"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 403
+    .line 407
     const-string/jumbo v1, "mptcp_start"
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 404
+    .line 408
     iget-object v1, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 400
+    .line 404
     return-void
 .end method
 
@@ -944,7 +982,7 @@
     .locals 11
 
     .prologue
-    const v10, 0x7f0b10fc
+    const v10, 0x7f0b1109
 
     const v9, 0x104000a
 
@@ -997,7 +1035,7 @@
 
     .line 181
     .local v2, "res":Landroid/content/res/Resources;
-    const v4, 0x7f0b0bd1
+    const v4, 0x7f0b0be0
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1072,7 +1110,7 @@
     invoke-direct {v4, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 191
-    const v5, 0x7f0b0bca
+    const v5, 0x7f0b0bd9
 
     .line 190
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -1080,7 +1118,7 @@
     move-result-object v4
 
     .line 192
-    const v5, 0x7f0b0bbe
+    const v5, 0x7f0b0bcd
 
     .line 190
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -1156,7 +1194,7 @@
     move-result-object v5
 
     .line 208
-    const v6, 0x7f0b0bcc
+    const v6, 0x7f0b0bdb
 
     .line 207
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1173,7 +1211,7 @@
     move-result-object v4
 
     .line 209
-    const v5, 0x7f0b0bcb
+    const v5, 0x7f0b0bda
 
     .line 206
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -1228,7 +1266,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 224
-    const v4, 0x7f0b0bbf
+    const v4, 0x7f0b0bce
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1622,7 +1660,7 @@
     .line 145
     iget-object v1, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mSwitchPref:Landroid/preference/SwitchPreference;
 
-    const v2, 0x7f0b19ca
+    const v2, 0x7f0b19d8
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -1653,7 +1691,7 @@
     :cond_7
     iget-object v1, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->mSwitchPref:Landroid/preference/SwitchPreference;
 
-    const v2, 0x7f0b19cb
+    const v2, 0x7f0b19d9
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setSummary(I)V
 

@@ -30,7 +30,7 @@
     .param p2, "val$context"    # Landroid/content/Context;
 
     .prologue
-    .line 5088
+    .line 5092
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$8;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iput-object p2, p0, Lcom/android/server/InputMethodManagerService$8;->val$context:Landroid/content/Context;
@@ -47,7 +47,7 @@
     .param p1, "dialog"    # Landroid/content/DialogInterface;
 
     .prologue
-    .line 5092
+    .line 5096
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService$8;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-static {v3}, Lcom/android/server/InputMethodManagerService;->-get17(Lcom/android/server/InputMethodManagerService;)Landroid/app/AlertDialog;
@@ -56,7 +56,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 5093
+    .line 5097
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService$8;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-static {v3}, Lcom/android/server/InputMethodManagerService;->-get17(Lcom/android/server/InputMethodManagerService;)Landroid/app/AlertDialog;
@@ -69,7 +69,7 @@
 
     move-result-object v2
 
-    .line 5095
+    .line 5099
     .local v2, "positiveButton":Landroid/widget/Button;
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService$8;->val$context:Landroid/content/Context;
 
@@ -83,7 +83,7 @@
 
     iget v0, v3, Landroid/content/res/Configuration;->fontScale:F
 
-    .line 5096
+    .line 5100
     .local v0, "fontScale":F
     invoke-virtual {v2}, Landroid/widget/Button;->getTextSize()F
 
@@ -103,19 +103,19 @@
 
     div-float v1, v3, v4
 
-    .line 5094
+    .line 5098
     .local v1, "fontsize":F
     const v3, 0x3f99999a    # 1.2f
 
-    .line 5098
+    .line 5102
     cmpl-float v3, v0, v3
 
     if-lez v3, :cond_0
 
-    .line 5094
+    .line 5098
     const v0, 0x3f99999a    # 1.2f
 
-    .line 5101
+    .line 5105
     :cond_0
     mul-float v3, v1, v0
 
@@ -123,7 +123,7 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/widget/Button;->setTextSize(IF)V
 
-    .line 5091
+    .line 5095
     .end local v0    # "fontScale":F
     .end local v1    # "fontsize":F
     .end local v2    # "positiveButton":Landroid/widget/Button;

@@ -96,7 +96,7 @@
     .param p3, "parent"    # Landroid/view/ViewGroup;
 
     .prologue
-    const v7, 0x7f0f043b
+    const v7, 0x7f0f043c
 
     const/4 v10, 0x4
 
@@ -276,7 +276,7 @@
 
     aput-object v7, v6, v5
 
-    const v7, 0x7f0f043d
+    const v7, 0x7f0f043e
 
     invoke-virtual {v4, v7, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -398,7 +398,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0f03c5
+    const v1, 0x7f0f03c6
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

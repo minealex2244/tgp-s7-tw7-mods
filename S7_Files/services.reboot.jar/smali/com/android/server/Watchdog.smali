@@ -458,7 +458,7 @@
     .param p1, "c"    # C
 
     .prologue
-    .line 607
+    .line 606
     :try_start_0
     new-instance v1, Ljava/io/FileWriter;
 
@@ -466,25 +466,25 @@
 
     invoke-direct {v1, v2}, Ljava/io/FileWriter;-><init>(Ljava/lang/String;)V
 
-    .line 608
+    .line 607
     .local v1, "sysrq_trigger":Ljava/io/FileWriter;
     invoke-virtual {v1, p1}, Ljava/io/FileWriter;->write(I)V
 
-    .line 609
+    .line 608
     invoke-virtual {v1}, Ljava/io/FileWriter;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 605
+    .line 604
     .end local v1    # "sysrq_trigger":Ljava/io/FileWriter;
     :goto_0
     return-void
 
-    .line 610
+    .line 609
     :catch_0
     move-exception v0
 
-    .line 611
+    .line 610
     .local v0, "e":Ljava/io/IOException;
     const-string/jumbo v2, "Watchdog"
 
@@ -501,14 +501,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 616
+    .line 615
     const-string/jumbo v1, "dalvik.vm.stack-trace-file"
 
     invoke-static {v1, v2}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 617
+    .line 616
     .local v0, "tracesPath":Ljava/lang/String;
     if-eqz v0, :cond_0
 
@@ -518,15 +518,15 @@
 
     if-nez v1, :cond_1
 
-    .line 618
+    .line 617
     :cond_0
     return-object v2
 
-    .line 621
+    .line 620
     :cond_1
     invoke-direct {p0, v0}, Lcom/android/server/Watchdog;->native_dumpKernelStacks(Ljava/lang/String;)V
 
-    .line 622
+    .line 621
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -1223,9 +1223,15 @@
     invoke-static/range {v37 .. v38}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 391
-    const-string/jumbo v37, "-a -z -o /data/log/dumpstate_sys_emfile"
+    const-string/jumbo v37, "bugreportsem"
 
-    invoke-static/range {v37 .. v37}, Landroid/os/Debug;->saveDumpstate(Ljava/lang/String;)V
+    const/16 v38, 0x0
+
+    move-object/from16 v0, v38
+
+    move-object/from16 v1, v37
+
+    invoke-static {v0, v1}, Landroid/os/Debug;->saveDump(Landroid/content/pm/ApplicationInfo;Ljava/lang/String;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1743,7 +1749,7 @@
 
     invoke-static/range {v37 .. v38}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 601
+    .line 600
     :goto_9
     const/16 v36, 0x0
 
@@ -2179,16 +2185,11 @@
     invoke-static {v0, v1}, Landroid/os/Debug;->saveDump(Landroid/content/pm/ApplicationInfo;Ljava/lang/String;)V
 
     .line 597
-    invoke-static {}, Landroid/os/Process;->myPid()I
+    const-string/jumbo v37, "sys.sf.restart"
 
-    move-result v37
+    const-string/jumbo v38, "1"
 
-    invoke-static/range {v37 .. v37}, Landroid/os/Process;->killProcess(I)V
-
-    .line 598
-    const/16 v37, 0xa
-
-    invoke-static/range {v37 .. v37}, Ljava/lang/System;->exit(I)V
+    invoke-static/range {v37 .. v38}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_9
 

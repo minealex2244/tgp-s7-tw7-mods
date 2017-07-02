@@ -1126,7 +1126,7 @@
     .param p3, "withOffFunctions"    # Z
 
     .prologue
-    const v9, 0x7f0b0c01
+    const v9, 0x7f0b0c10
 
     .line 390
     new-instance v0, Landroid/view/ContextThemeWrapper;
@@ -1217,7 +1217,7 @@
 
     invoke-direct {v7, p0}, Lcom/samsung/android/settings/spen/DirectPenInputSettings$9;-><init>(Lcom/samsung/android/settings/spen/DirectPenInputSettings;)V
 
-    const v8, 0x7f0b0be3
+    const v8, 0x7f0b0bf2
 
     .line 403
     invoke-virtual {v6, v8, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

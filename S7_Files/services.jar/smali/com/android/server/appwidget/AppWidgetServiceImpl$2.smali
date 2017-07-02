@@ -30,7 +30,7 @@
     .param p2, "val$intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 1976
+    .line 1998
     iput-object p1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$2;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     iput-object p2, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$2;->val$intent:Landroid/content/Intent;
@@ -48,12 +48,12 @@
     .param p2, "service"    # Landroid/os/IBinder;
 
     .prologue
-    .line 1979
+    .line 2001
     invoke-static {p2}, Lcom/android/internal/widget/IRemoteViewsFactory$Stub;->asInterface(Landroid/os/IBinder;)Lcom/android/internal/widget/IRemoteViewsFactory;
 
     move-result-object v0
 
-    .line 1981
+    .line 2003
     .local v0, "cb":Lcom/android/internal/widget/IRemoteViewsFactory;
     :try_start_0
     iget-object v2, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$2;->val$intent:Landroid/content/Intent;
@@ -62,24 +62,24 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1985
+    .line 2007
     :goto_0
     iget-object v2, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$2;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
-    invoke-static {v2}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-get3(Lcom/android/server/appwidget/AppWidgetServiceImpl;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-get4(Lcom/android/server/appwidget/AppWidgetServiceImpl;)Landroid/content/Context;
 
     move-result-object v2
 
     invoke-virtual {v2, p0}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 1978
+    .line 2000
     return-void
 
-    .line 1982
+    .line 2004
     :catch_0
     move-exception v1
 
-    .line 1983
+    .line 2005
     .local v1, "re":Landroid/os/RemoteException;
     const-string/jumbo v2, "AppWidgetServiceImpl"
 
@@ -95,6 +95,6 @@
     .param p1, "name"    # Landroid/content/ComponentName;
 
     .prologue
-    .line 1989
+    .line 2011
     return-void
 .end method

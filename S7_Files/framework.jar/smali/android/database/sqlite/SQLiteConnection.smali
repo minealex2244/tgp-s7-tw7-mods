@@ -2149,6 +2149,7 @@
     invoke-virtual {p0, v5, v6, v7}, Landroid/database/sqlite/SQLiteConnection;->execute(Ljava/lang/String;[Ljava/lang/Object;Landroid/os/CancellationSignal;)V
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteDatabaseCorruptException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 448
@@ -2238,6 +2239,7 @@
     throw v5
     :try_end_2
     .catch Landroid/database/sqlite/SQLiteDatabaseCorruptException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_1
 
     .line 458
@@ -2247,7 +2249,7 @@
     move-exception v0
 
     .line 459
-    .local v0, "ex":Landroid/database/sqlite/SQLiteDatabaseCorruptException;
+    .local v0, "ex":Landroid/database/sqlite/SQLiteException;
     const-string/jumbo v5, "SQLiteConnection"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -2298,7 +2300,7 @@
     throw v0
 
     .line 456
-    .end local v0    # "ex":Landroid/database/sqlite/SQLiteDatabaseCorruptException;
+    .end local v0    # "ex":Landroid/database/sqlite/SQLiteException;
     .restart local v3    # "oldLocale":Ljava/lang/String;
     .restart local v4    # "success":Z
     :cond_4
@@ -2306,6 +2308,7 @@
     const-string/jumbo v6, "ROLLBACK"
     :try_end_3
     .catch Landroid/database/sqlite/SQLiteDatabaseCorruptException; {:try_start_3 .. :try_end_3} :catch_0
+    .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_1
 
     goto :goto_1

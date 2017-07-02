@@ -30,7 +30,7 @@
     .param p3, "val$apkFile"    # Ljava/io/File;
 
     .prologue
-    .line 2114
+    .line 2137
     iput-object p1, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$4;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     iput-object p2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$4;->val$admins:[Ljava/lang/String;
@@ -52,13 +52,13 @@
     .prologue
     const/4 v6, 0x1
 
-    .line 2116
+    .line 2139
     monitor-enter p0
 
-    .line 2117
+    .line 2140
     if-ne p2, v6, :cond_0
 
-    .line 2118
+    .line 2141
     :try_start_0
     const-string/jumbo v3, "EnterpriseDeviceManagerService"
 
@@ -66,7 +66,7 @@
 
     invoke-static {v3, v4}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2119
+    .line 2142
     const-string/jumbo v3, "EnterpriseDeviceManagerService"
 
     const-string/jumbo v4, "Activate Admin for new apk"
@@ -75,7 +75,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2122
+    .line 2145
     :try_start_1
     iget-object v3, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$4;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
@@ -90,12 +90,12 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 2129
+    .line 2152
     :cond_0
     :goto_0
     const/4 v0, 0x0
 
-    .line 2130
+    .line 2153
     .local v0, "compNames":Ljava/lang/String;
     :try_start_2
     iget-object v3, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$4;->val$admins:[Ljava/lang/String;
@@ -104,14 +104,14 @@
 
     if-le v3, v6, :cond_1
 
-    .line 2131
+    .line 2154
     iget-object v3, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$4;->val$admins:[Ljava/lang/String;
 
     const/4 v4, 0x1
 
     aget-object v0, v3, v4
 
-    .line 2132
+    .line 2155
     .local v0, "compNames":Ljava/lang/String;
     const/4 v2, 0x2
 
@@ -123,7 +123,7 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 2133
+    .line 2156
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -150,18 +150,18 @@
 
     move-result-object v0
 
-    .line 2132
+    .line 2155
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 2124
+    .line 2147
     .end local v0    # "compNames":Ljava/lang/String;
     .end local v2    # "i":I
     :catch_0
     move-exception v1
 
-    .line 2125
+    .line 2148
     .local v1, "e":Ljava/lang/Exception;
     const-string/jumbo v3, "EnterpriseDeviceManagerService"
 
@@ -173,7 +173,7 @@
 
     goto :goto_0
 
-    .line 2116
+    .line 2139
     .end local v1    # "e":Ljava/lang/Exception;
     :catchall_0
     move-exception v3
@@ -182,34 +182,34 @@
 
     throw v3
 
-    .line 2136
+    .line 2159
     .local v0, "compNames":Ljava/lang/String;
     :cond_1
     const/4 v0, 0x0
 
-    .line 2139
+    .line 2162
     .end local v0    # "compNames":Ljava/lang/String;
     :cond_2
     :try_start_3
     const-string/jumbo v3, "self_update_admin_component"
 
-    .line 2140
+    .line 2163
     const-string/jumbo v4, "/data/system/selfUpdateAdmin.conf"
 
-    .line 2139
+    .line 2162
     invoke-static {v3, v0, v4}, Lcom/android/server/enterprise/utils/Utils;->writePropertyValue(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 2142
+    .line 2165
     iget-object v3, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$4;->val$apkFile:Ljava/io/File;
 
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
-    .line 2144
+    .line 2167
     const/4 v3, 0x0
 
     invoke-static {v3}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->-set2(Landroid/content/ComponentName;)Landroid/content/ComponentName;
 
-    .line 2146
+    .line 2169
     iget-object v3, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$4;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-static {v3}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->-wrap6(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;)V
@@ -218,6 +218,6 @@
 
     monitor-exit p0
 
-    .line 2115
+    .line 2138
     return-void
 .end method

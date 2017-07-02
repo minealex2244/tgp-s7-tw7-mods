@@ -40,31 +40,31 @@
     .param p5, "blendingOpacity"    # F
 
     .prologue
-    .line 2226
+    .line 2227
     iput-object p1, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 2263
+    .line 2264
     const-string/jumbo v0, "addOuterGlowTextEffect"
 
     iput-object v0, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->methodName:Ljava/lang/String;
 
-    .line 2227
+    .line 2228
     iput p2, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
-    .line 2228
+    .line 2229
     iput p3, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->size:F
 
-    .line 2229
+    .line 2230
     iput p4, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->color:I
 
-    .line 2230
+    .line 2231
     iput p5, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->blendingOpacity:F
 
-    .line 2226
+    .line 2227
     return-void
 .end method
 
@@ -74,47 +74,47 @@
     .param p2, "parcel"    # Landroid/os/Parcel;
 
     .prologue
-    .line 2233
+    .line 2234
     iput-object p1, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 2263
+    .line 2264
     const-string/jumbo v0, "addOuterGlowTextEffect"
 
     iput-object v0, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->methodName:Ljava/lang/String;
 
-    .line 2234
+    .line 2235
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
-    .line 2235
+    .line 2236
     invoke-virtual {p2}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->size:F
 
-    .line 2236
+    .line 2237
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->color:I
 
-    .line 2237
+    .line 2238
     invoke-virtual {p2}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->blendingOpacity:F
 
-    .line 2233
+    .line 2234
     return-void
 .end method
 
@@ -127,7 +127,7 @@
     .param p3, "handler"    # Landroid/widget/RemoteViews$OnClickHandler;
 
     .prologue
-    .line 2250
+    .line 2251
     iget v1, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -136,13 +136,13 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 2251
+    .line 2252
     .local v0, "target":Landroid/widget/TextView;
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2252
+    .line 2253
     :cond_0
     iget v1, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->size:F
 
@@ -152,7 +152,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/widget/TextView;->semAddOuterGlowTextEffect(FIF)I
 
-    .line 2249
+    .line 2250
     return-void
 .end method
 
@@ -160,7 +160,7 @@
     .locals 1
 
     .prologue
-    .line 2256
+    .line 2257
     const-string/jumbo v0, "AddOuterGlowAction"
 
     return-object v0
@@ -172,31 +172,31 @@
     .param p2, "flags"    # I
 
     .prologue
-    .line 2241
+    .line 2242
     const/16 v0, 0x2e
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2242
+    .line 2243
     iget v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2243
+    .line 2244
     iget v0, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->size:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2244
+    .line 2245
     iget v0, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->color:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2245
+    .line 2246
     iget v0, p0, Landroid/widget/RemoteViews$AddOuterGlowAction;->blendingOpacity:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2240
+    .line 2241
     return-void
 .end method

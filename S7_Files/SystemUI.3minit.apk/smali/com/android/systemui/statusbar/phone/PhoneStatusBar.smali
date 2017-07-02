@@ -24821,7 +24821,7 @@
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 5020
-    const v2, 0x7f0206c0
+    const v2, 0x7f0206c7
 
     .line 5021
     .local v2, "modeIconId":I
@@ -24842,7 +24842,7 @@
     if-eqz v3, :cond_4
 
     .line 5023
-    const v2, 0x7f0206be
+    const v2, 0x7f0206c5
 
     .line 5028
     :cond_1
@@ -24883,7 +24883,7 @@
     .restart local v1    # "isTwoPhoneMode":Z
     .restart local v2    # "modeIconId":I
     :cond_4
-    const v2, 0x7f0206bf
+    const v2, 0x7f0206c6
 
     goto :goto_0
 .end method

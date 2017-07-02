@@ -30,7 +30,7 @@
     .param p2, "val$parentToCancelFinal"    # Landroid/service/notification/StatusBarNotification;
 
     .prologue
-    .line 2715
+    .line 2717
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;->this$3:Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;->val$parentToCancelFinal:Landroid/service/notification/StatusBarNotification;
@@ -46,14 +46,14 @@
     .locals 2
 
     .prologue
-    .line 2718
+    .line 2720
     new-instance v0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1$1;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;->val$parentToCancelFinal:Landroid/service/notification/StatusBarNotification;
 
     invoke-direct {v0, p0, v1}, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1$1;-><init>(Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;Landroid/service/notification/StatusBarNotification;)V
 
-    .line 2725
+    .line 2727
     .local v0, "removeRunnable":Ljava/lang/Runnable;
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;->this$3:Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1;
 
@@ -69,7 +69,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 2728
+    .line 2730
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1$1;->this$3:Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2$1;->this$2:Lcom/android/systemui/statusbar/BaseStatusBar$NotificationClicker$2;
@@ -80,11 +80,11 @@
 
     invoke-virtual {v1, v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->addPostCollapseAction(Ljava/lang/Runnable;)V
 
-    .line 2717
+    .line 2719
     :goto_0
     return-void
 
-    .line 2730
+    .line 2732
     :cond_0
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 

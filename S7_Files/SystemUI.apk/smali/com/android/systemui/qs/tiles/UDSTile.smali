@@ -378,7 +378,7 @@
     .line 211
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/UDSTile;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0f03c0
+    const v1, 0x7f0f03c1
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -482,7 +482,7 @@
     .line 149
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/UDSTile;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0f03c1
+    const v1, 0x7f0f03c2
 
     invoke-static {v0, v1, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -580,7 +580,7 @@
     :cond_5
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/UDSTile;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0f03e2
+    const v1, 0x7f0f03e3
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -589,7 +589,7 @@
     .line 166
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/UDSTile;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0f03e3
+    const v2, 0x7f0f03e4
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -668,7 +668,7 @@
     .line 202
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/UDSTile;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0f03c1
+    const v1, 0x7f0f03c2
 
     const/4 v2, 0x0
 
@@ -721,7 +721,7 @@
     .line 217
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/UDSTile;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0f03c0
+    const v1, 0x7f0f03c1
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

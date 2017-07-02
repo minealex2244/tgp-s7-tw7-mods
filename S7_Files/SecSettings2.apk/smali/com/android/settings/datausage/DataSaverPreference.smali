@@ -56,20 +56,22 @@
     .line 58
     if-eqz p1, :cond_0
 
-    const v0, 0x7f0b19ca
+    const v0, 0x7f0b19d8
 
     :goto_0
     invoke-virtual {p0, v0}, Lcom/android/settings/datausage/DataSaverPreference;->setSummary(I)V
 
     .line 59
-    invoke-virtual {p0, p1}, Lcom/android/settings/datausage/DataSaverPreference;->semSetSummaryColorToColorPrimaryDark(Z)V
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/android/settings/datausage/DataSaverPreference;->semSetSummaryColorToColorPrimaryDark(Z)V
 
     .line 57
     return-void
 
     .line 58
     :cond_0
-    const v0, 0x7f0b19cb
+    const v0, 0x7f0b19d9
 
     goto :goto_0
 .end method

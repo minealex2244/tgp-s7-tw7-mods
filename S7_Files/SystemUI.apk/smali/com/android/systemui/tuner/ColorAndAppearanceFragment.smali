@@ -276,7 +276,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0f0534
+    const v2, 0x7f0f0536
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->setTitle(I)V
 
@@ -298,7 +298,7 @@
     if-eqz v1, :cond_0
 
     .line 65
-    const v1, 0x7f0f0537
+    const v1, 0x7f0f0539
 
     .line 64
     :goto_0
@@ -309,7 +309,7 @@
 
     .line 65
     :cond_0
-    const v1, 0x7f0f0538
+    const v1, 0x7f0f053a
 
     goto :goto_0
 .end method

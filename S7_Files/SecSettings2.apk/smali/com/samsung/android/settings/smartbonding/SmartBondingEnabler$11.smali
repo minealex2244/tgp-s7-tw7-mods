@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;
 
     .prologue
-    .line 372
+    .line 376
     iput-object p1, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;->this$0:Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +45,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 374
+    .line 378
     iget-object v0, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;->this$0:Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;
 
     invoke-static {v0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->-get1(Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;)Lcom/android/settings/widget/SwitchBar;
@@ -54,7 +54,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 375
+    .line 379
     iget-object v0, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;->this$0:Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;
 
     invoke-static {v0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->-get1(Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;)Lcom/android/settings/widget/SwitchBar;
@@ -78,7 +78,7 @@
     :goto_0
     invoke-virtual {v2, v0}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
 
-    .line 377
+    .line 381
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;->this$0:Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;
 
@@ -88,7 +88,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 378
+    .line 382
     iget-object v0, p0, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler$11;->this$0:Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;
 
     invoke-static {v0}, Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;->-get2(Lcom/samsung/android/settings/smartbonding/SmartBondingEnabler;)Landroid/preference/SwitchPreference;
@@ -97,11 +97,11 @@
 
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 373
+    .line 377
     :cond_1
     return-void
 
-    .line 375
+    .line 379
     :cond_2
     const/4 v0, 0x1
 

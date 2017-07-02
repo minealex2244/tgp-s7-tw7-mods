@@ -3304,7 +3304,7 @@
     .param p1, "level"    # I
 
     .prologue
-    const v6, 0x7f0f05fa
+    const v6, 0x7f0f05fc
 
     const/4 v5, 0x1
 

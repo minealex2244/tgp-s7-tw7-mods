@@ -352,7 +352,7 @@
     invoke-virtual {v4, v10}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 404
-    const v10, 0x7f0b17cd
+    const v10, 0x7f0b17db
 
     invoke-virtual {v0, v10}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -363,7 +363,7 @@
     move-result-object v10
 
     .line 406
-    const v11, 0x7f0b17cf
+    const v11, 0x7f0b17dd
 
     .line 404
     invoke-virtual {v10, v11, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

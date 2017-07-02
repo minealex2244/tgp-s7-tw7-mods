@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/audio/AudioService;
 
     .prologue
-    .line 834
+    .line 837
     iput-object p1, p0, Lcom/android/server/audio/AudioService$2;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-direct {p0}, Landroid/app/IProcessObserver$Stub;-><init>()V
@@ -41,15 +41,15 @@
     .param p3, "foregroundActivityes"    # Z
 
     .prologue
-    .line 837
+    .line 840
     if-eqz p3, :cond_0
 
-    .line 838
+    .line 841
     iget-object v0, p0, Lcom/android/server/audio/AudioService$2;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0, p2}, Lcom/android/server/audio/AudioService;->-set14(Lcom/android/server/audio/AudioService;I)I
 
-    .line 839
+    .line 842
     const-string/jumbo v0, "AudioService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -110,7 +110,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 836
+    .line 839
     :cond_0
     return-void
 .end method
@@ -121,7 +121,7 @@
     .param p2, "uid"    # I
 
     .prologue
-    .line 848
+    .line 851
     return-void
 .end method
 
@@ -132,6 +132,6 @@
     .param p3, "procState"    # I
 
     .prologue
-    .line 844
+    .line 847
     return-void
 .end method

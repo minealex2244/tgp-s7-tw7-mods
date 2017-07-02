@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/net/NetworkPolicyManagerService;
 
     .prologue
-    .line 5193
+    .line 5204
     iput-object p1, p0, Lcom/android/server/net/NetworkPolicyManagerService$MyPackageMonitor;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Lcom/android/internal/content/PackageMonitor;-><init>()V
@@ -50,7 +50,7 @@
     .param p2, "uid"    # I
 
     .prologue
-    .line 5200
+    .line 5211
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$MyPackageMonitor;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-static {v2}, Lcom/android/server/net/NetworkPolicyManagerService;->-get3(Lcom/android/server/net/NetworkPolicyManagerService;)Landroid/content/Context;
@@ -61,13 +61,13 @@
 
     move-result-object v1
 
-    .line 5201
+    .line 5212
     .local v1, "pm":Landroid/content/pm/PackageManager;
     invoke-virtual {v1, p2}, Landroid/content/pm/PackageManager;->getPackagesForUid(I)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5203
+    .line 5214
     .local v0, "packages":[Ljava/lang/String;
     if-eqz v0, :cond_0
 
@@ -75,7 +75,7 @@
 
     if-lez v2, :cond_0
 
-    .line 5204
+    .line 5215
     const-string/jumbo v2, "NetworkPolicy"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -104,11 +104,11 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5196
+    .line 5207
     :goto_0
     return-void
 
-    .line 5206
+    .line 5217
     :cond_0
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$MyPackageMonitor;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
@@ -116,7 +116,7 @@
 
     monitor-enter v3
 
-    .line 5207
+    .line 5218
     :try_start_0
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$MyPackageMonitor;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
@@ -126,7 +126,7 @@
 
     invoke-static {v2, p2, v4, v5}, Lcom/android/server/net/NetworkPolicyManagerService;->-wrap3(Lcom/android/server/net/NetworkPolicyManagerService;IZZ)Z
 
-    .line 5208
+    .line 5219
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$MyPackageMonitor;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-static {v2, p2}, Lcom/android/server/net/NetworkPolicyManagerService;->-wrap21(Lcom/android/server/net/NetworkPolicyManagerService;I)V
@@ -137,7 +137,7 @@
 
     goto :goto_0
 
-    .line 5206
+    .line 5217
     :catchall_0
     move-exception v2
 

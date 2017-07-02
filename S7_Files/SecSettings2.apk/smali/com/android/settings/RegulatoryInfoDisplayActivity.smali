@@ -160,7 +160,7 @@
     invoke-direct {v11, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 59
-    const v12, 0x7f0b1497    # 1.848696E38f
+    const v12, 0x7f0b14a5
 
     .line 58
     invoke-virtual {v11, v12}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -214,7 +214,7 @@
     .end local v1    # "d":Landroid/graphics/drawable/Drawable;
     :cond_1
     :goto_0
-    const v11, 0x7f0b18cd
+    const v11, 0x7f0b18db
 
     invoke-virtual {v9, v11}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

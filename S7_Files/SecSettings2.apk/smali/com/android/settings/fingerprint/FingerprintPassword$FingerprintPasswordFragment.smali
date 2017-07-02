@@ -690,7 +690,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b06b4
+    const v5, 0x7f0b06b5
 
     invoke-virtual {p0, v5}, Lcom/android/settings/fingerprint/FingerprintPassword$FingerprintPasswordFragment;->getString(I)Ljava/lang/String;
 
@@ -950,9 +950,9 @@
     .locals 11
 
     .prologue
-    const v10, 0x7f0b0705
+    const v10, 0x7f0b0706
 
-    const v9, 0x7f0b0687
+    const v9, 0x7f0b0688
 
     const/4 v4, 0x1
 
@@ -1004,7 +1004,7 @@
     .line 881
     iget-object v6, p0, Lcom/android/settings/fingerprint/FingerprintPassword$FingerprintPasswordFragment;->mCancelButton:Landroid/widget/Button;
 
-    const v7, 0x7f0b11c2
+    const v7, 0x7f0b11cf
 
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
@@ -1088,7 +1088,7 @@
     :cond_2
     iget-object v6, p0, Lcom/android/settings/fingerprint/FingerprintPassword$FingerprintPasswordFragment;->mCancelButton:Landroid/widget/Button;
 
-    const v7, 0x7f0b06fc
+    const v7, 0x7f0b06fd
 
     invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
@@ -1120,7 +1120,7 @@
     :cond_4
     iget-object v5, p0, Lcom/android/settings/fingerprint/FingerprintPassword$FingerprintPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b083a
+    const v6, 0x7f0b083d
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1283,7 +1283,7 @@
     if-eqz v28, :cond_0
 
     .line 563
-    const v28, 0x7f0b06f0
+    const v28, 0x7f0b06f1
 
     move-object/from16 v0, p0
 
@@ -1304,7 +1304,7 @@
     if-eqz v28, :cond_1
 
     .line 567
-    const v28, 0x7f0b070b
+    const v28, 0x7f0b070c
 
     move-object/from16 v0, p0
 
@@ -1357,7 +1357,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b11b4
+    const v29, 0x7f0b11c1
 
     move-object/from16 v0, p0
 
@@ -1412,7 +1412,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b11b7
+    const v29, 0x7f0b11c4
 
     move-object/from16 v0, p0
 
@@ -1491,7 +1491,7 @@
 
     .line 593
     :cond_4
-    const v28, 0x7f0b11bb
+    const v28, 0x7f0b11c8
 
     move-object/from16 v0, p0
 
@@ -1608,7 +1608,7 @@
 
     .line 615
     :cond_a
-    const v28, 0x7f0b11b9
+    const v28, 0x7f0b11c6
 
     move-object/from16 v0, p0
 
@@ -2099,7 +2099,7 @@
     if-nez v19, :cond_15
 
     .line 649
-    const v28, 0x7f0b11bc
+    const v28, 0x7f0b11c9
 
     move-object/from16 v0, p0
 
@@ -2134,7 +2134,7 @@
     if-nez v22, :cond_16
 
     .line 653
-    const v28, 0x7f0b11bd
+    const v28, 0x7f0b11ca
 
     move-object/from16 v0, p0
 
@@ -2468,7 +2468,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b087a
+    const v29, 0x7f0b087d
 
     move-object/from16 v0, p0
 
@@ -2525,7 +2525,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b0879
+    const v29, 0x7f0b087c
 
     move-object/from16 v0, p0
 
@@ -2564,7 +2564,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b087c
+    const v29, 0x7f0b087f
 
     move-object/from16 v0, p0
 
@@ -2587,7 +2587,7 @@
     if-ne v13, v0, :cond_1d
 
     .line 698
-    const v28, 0x7f0b087b
+    const v28, 0x7f0b087e
 
     move-object/from16 v0, p0
 
@@ -2626,7 +2626,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b087d
+    const v29, 0x7f0b0880
 
     move-object/from16 v0, p0
 
@@ -2645,7 +2645,7 @@
     if-nez v18, :cond_19
 
     .line 704
-    const v28, 0x7f0b087e
+    const v28, 0x7f0b0881
 
     move-object/from16 v0, p0
 
@@ -3677,7 +3677,7 @@
 
     iget-object v12, v0, Lcom/android/settings/fingerprint/FingerprintPassword$FingerprintPasswordFragment;->mPasswordDesc:Landroid/widget/TextView;
 
-    const v13, 0x7f0b06ef
+    const v13, 0x7f0b06f0
 
     invoke-virtual {v12, v13}, Landroid/widget/TextView;->setText(I)V
 
@@ -4042,7 +4042,7 @@
     if-eqz v12, :cond_c
 
     .line 428
-    const v9, 0x7f0b06b3
+    const v9, 0x7f0b06b4
 
     .line 433
     :goto_4
@@ -4248,7 +4248,7 @@
     .restart local v7    # "preferenceActivity":Landroid/preference/PreferenceActivity;
     .restart local v9    # "titleid":I
     :cond_c
-    const v9, 0x7f0b0686
+    const v9, 0x7f0b0687
 
     goto/16 :goto_4
 .end method

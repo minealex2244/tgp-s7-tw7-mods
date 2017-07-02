@@ -27,15 +27,15 @@
     .locals 1
 
     .prologue
-    .line 2341
+    .line 2361
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2343
+    .line 2363
     const/4 v0, 0x1
 
     iput v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$InstallData;->mStatusCode:I
 
-    .line 2341
+    .line 2361
     return-void
 .end method
 

@@ -298,7 +298,7 @@
 
     .line 312
     .local v1, "preference":Landroid/preference/Preference;
-    const v2, 0x7f0b1641
+    const v2, 0x7f0b164f
 
     invoke-virtual {v1, v2}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -438,7 +438,7 @@
 
     .prologue
     .line 120
-    const v0, 0x7f0b188d
+    const v0, 0x7f0b189b
 
     return v0
 .end method
@@ -802,7 +802,7 @@
 
     .line 198
     .local v2, "textView":Landroid/widget/TextView;
-    const v3, 0x7f0b163b
+    const v3, 0x7f0b1649
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 

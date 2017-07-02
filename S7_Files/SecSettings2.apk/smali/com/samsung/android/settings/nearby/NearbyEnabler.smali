@@ -1806,7 +1806,7 @@
 
     .line 1004
     .local v1, "builder":Landroid/app/AlertDialog$Builder;
-    const v7, 0x7f0b0c3c
+    const v7, 0x7f0b0c4b
 
     invoke-virtual {v1, v7}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 

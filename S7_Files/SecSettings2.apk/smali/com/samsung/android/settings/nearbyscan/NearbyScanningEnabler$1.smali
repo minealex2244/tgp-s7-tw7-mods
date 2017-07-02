@@ -110,7 +110,7 @@
 
     if-ne v0, v2, :cond_1
 
-    const v1, 0x7f0b19ca
+    const v1, 0x7f0b19d8
 
     :goto_0
     invoke-virtual {v4, v1}, Lcom/samsung/android/settings/SettingsSwitchPreference;->setSummary(I)V
@@ -136,7 +136,7 @@
 
     .line 180
     :cond_1
-    const v1, 0x7f0b19cb
+    const v1, 0x7f0b19d9
 
     goto :goto_0
 

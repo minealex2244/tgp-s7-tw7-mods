@@ -25,15 +25,15 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 1004
+    .line 987
     iput-object p1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
-    .line 1005
+    .line 988
     const/4 v0, 0x0
 
     invoke-direct {p0, p2, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
-    .line 1004
+    .line 987
     return-void
 .end method
 
@@ -44,17 +44,17 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 1010
+    .line 993
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 1009
+    .line 992
     :cond_0
     :goto_0
     return-void
 
-    .line 1012
+    .line 995
     :pswitch_0
     iget-object v2, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -70,7 +70,7 @@
 
     goto :goto_0
 
-    .line 1016
+    .line 999
     :pswitch_1
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
@@ -89,11 +89,11 @@
 
     goto :goto_0
 
-    .line 1017
+    .line 1000
     :catch_0
     move-exception v0
 
-    .line 1018
+    .line 1001
     .local v0, "e":Landroid/os/RemoteException;
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -103,7 +103,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1019
+    .line 1002
     const-string/jumbo v1, "AdaptiveDisplayColorService"
 
     const-string/jumbo v2, "failed to onForegroundActivitiesChanged"
@@ -112,7 +112,7 @@
 
     goto :goto_0
 
-    .line 1024
+    .line 1007
     .end local v0    # "e":Landroid/os/RemoteException;
     :pswitch_2
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
@@ -121,7 +121,7 @@
 
     goto :goto_0
 
-    .line 1027
+    .line 1010
     :pswitch_3
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -129,7 +129,7 @@
 
     goto :goto_0
 
-    .line 1030
+    .line 1013
     :pswitch_4
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -137,7 +137,7 @@
 
     goto :goto_0
 
-    .line 1033
+    .line 1016
     :pswitch_5
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -145,7 +145,7 @@
 
     goto :goto_0
 
-    .line 1036
+    .line 1019
     :pswitch_6
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -153,7 +153,7 @@
 
     goto :goto_0
 
-    .line 1039
+    .line 1022
     :pswitch_7
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -161,7 +161,7 @@
 
     goto :goto_0
 
-    .line 1042
+    .line 1025
     :pswitch_8
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -169,7 +169,7 @@
 
     goto :goto_0
 
-    .line 1045
+    .line 1028
     :pswitch_9
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
@@ -179,7 +179,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1046
+    .line 1029
     iget-object v1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$ScrControlHandler;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-static {v1}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-get10(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;)Landroid/hardware/SensorManager;
@@ -210,7 +210,7 @@
 
     goto :goto_0
 
-    .line 1010
+    .line 993
     nop
 
     :pswitch_data_0

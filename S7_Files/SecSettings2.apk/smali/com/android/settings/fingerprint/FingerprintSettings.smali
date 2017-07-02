@@ -2074,7 +2074,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b06e7
+    const v4, 0x7f0b06e8
 
     invoke-virtual {p0, v4}, Lcom/android/settings/fingerprint/FingerprintSettings;->getString(I)Ljava/lang/String;
 
@@ -2834,7 +2834,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0b06d7
+    const v8, 0x7f0b06d8
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2846,7 +2846,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b06d6
+    const v10, 0x7f0b06d7
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3354,7 +3354,7 @@
     move-result-object v7
 
     .line 923
-    const v8, 0x7f0b06de
+    const v8, 0x7f0b06df
 
     invoke-virtual {p0, v8}, Lcom/android/settings/fingerprint/FingerprintSettings;->getString(I)Ljava/lang/String;
 
@@ -3366,7 +3366,7 @@
     move-result-object v7
 
     .line 924
-    const v8, 0x7f0b06df
+    const v8, 0x7f0b06e0
 
     invoke-virtual {p0, v8}, Lcom/android/settings/fingerprint/FingerprintSettings;->getString(I)Ljava/lang/String;
 
@@ -3544,7 +3544,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    const v3, 0x7f0b066c
+    const v3, 0x7f0b066d
 
     invoke-virtual {p0, v3}, Lcom/android/settings/fingerprint/FingerprintSettings;->getString(I)Ljava/lang/String;
 
@@ -3552,7 +3552,7 @@
 
     aput-object v3, v2, v4
 
-    const v3, 0x7f0b0700
+    const v3, 0x7f0b0701
 
     invoke-virtual {p0, v3, v2}, Lcom/android/settings/fingerprint/FingerprintSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3925,7 +3925,7 @@
 
     const-string/jumbo v1, "com.android.settings.fingerprint.FingerprintSettings_MultiSelect"
 
-    const v3, 0x7f0b066c
+    const v3, 0x7f0b066d
 
     const/4 v4, 0x0
 
@@ -3950,7 +3950,7 @@
 
     const/16 v4, 0x3ef
 
-    const v5, 0x7f0b066c
+    const v5, 0x7f0b066d
 
     const/4 v6, 0x0
 
@@ -4079,7 +4079,7 @@
     invoke-virtual {v3, v5}, Landroid/preference/Preference;->setKey(Ljava/lang/String;)V
 
     .line 716
-    const v5, 0x7f0b06b8
+    const v5, 0x7f0b06b9
 
     invoke-virtual {v3, v5}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -4300,7 +4300,7 @@
     invoke-virtual {v4, v5}, Landroid/preference/Preference;->setKey(Ljava/lang/String;)V
 
     .line 728
-    const v5, 0x7f0b06b3
+    const v5, 0x7f0b06b4
 
     invoke-virtual {v4, v5}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -5239,7 +5239,7 @@
 
     .prologue
     .line 1214
-    const v0, 0x7f0b18a2
+    const v0, 0x7f0b18b0
 
     return v0
 .end method

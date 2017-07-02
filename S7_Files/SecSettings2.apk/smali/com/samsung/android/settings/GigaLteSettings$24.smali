@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/settings/GigaLteSettings;
 
     .prologue
-    .line 551
+    .line 610
     iput-object p1, p0, Lcom/samsung/android/settings/GigaLteSettings$24;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "which"    # I
 
     .prologue
-    .line 553
+    .line 612
     iget-object v0, p0, Lcom/samsung/android/settings/GigaLteSettings$24;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
     invoke-static {v0}, Lcom/samsung/android/settings/GigaLteSettings;->-get6(Lcom/samsung/android/settings/GigaLteSettings;)Lcom/android/settings/widget/SwitchBar;
@@ -54,6 +54,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
 
-    .line 552
+    .line 611
     return-void
 .end method

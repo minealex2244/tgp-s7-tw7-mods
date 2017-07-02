@@ -206,7 +206,7 @@
     .line 226
     iget-object v2, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b1341
+    const v3, 0x7f0b134f
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -219,7 +219,7 @@
     .line 227
     iget-object v2, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b1340
+    const v3, 0x7f0b134e
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -232,7 +232,7 @@
     .line 228
     iget-object v2, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b133f
+    const v3, 0x7f0b134d
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -272,7 +272,7 @@
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 237
-    const v3, 0x7f0b1344
+    const v3, 0x7f0b1352
 
     .line 236
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -369,7 +369,7 @@
     if-nez v1, :cond_0
 
     .line 299
-    const v2, 0x7f0b1342
+    const v2, 0x7f0b1350
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -565,7 +565,7 @@
 
     .prologue
     .line 78
-    const v0, 0x7f0b189c
+    const v0, 0x7f0b18aa
 
     return v0
 .end method
@@ -700,7 +700,7 @@
     if-nez v6, :cond_0
 
     .line 144
-    const v6, 0x7f0b0ac8
+    const v6, 0x7f0b0acb
 
     invoke-virtual {v0, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -739,7 +739,7 @@
     .line 146
     .end local v5    # "sa":Lcom/android/settings/SettingsActivity;
     :cond_0
-    const v6, 0x7f0b0ac7
+    const v6, 0x7f0b0aca
 
     invoke-virtual {v0, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -912,7 +912,7 @@
     invoke-direct {v5, p0}, Lcom/android/settings/DreamSettings$1;-><init>(Lcom/android/settings/DreamSettings;)V
 
     .line 168
-    const v2, 0x7f0b1345
+    const v2, 0x7f0b1353
 
     move-object v0, p0
 
@@ -961,7 +961,7 @@
     invoke-direct {v10, p0}, Lcom/android/settings/DreamSettings$2;-><init>(Lcom/android/settings/DreamSettings;)V
 
     .line 186
-    const v7, 0x7f0b1344
+    const v7, 0x7f0b1352
 
     .line 187
     const/4 v8, 0x0

@@ -831,7 +831,7 @@
 
     aput-object v1, v0, v6
 
-    const v1, 0x7f0f0459
+    const v1, 0x7f0f045b
 
     invoke-virtual {v7, v1, v0}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1734,7 +1734,7 @@
 
     .line 698
     .local v0, "msg":Landroid/widget/TextView;
-    const v2, 0x7f0f045b
+    const v2, 0x7f0f045d
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 

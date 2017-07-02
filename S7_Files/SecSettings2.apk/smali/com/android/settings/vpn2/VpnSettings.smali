@@ -939,7 +939,7 @@
 
     .prologue
     .line 398
-    const v0, 0x7f0b1895
+    const v0, 0x7f0b18a3
 
     return v0
 .end method
@@ -1858,7 +1858,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b180b
+    const v3, 0x7f0b1819
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 

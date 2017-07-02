@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     .prologue
-    .line 696
+    .line 679
     iput-object p1, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$4;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-direct {p0}, Lcom/samsung/android/cover/CoverManager$StateListener;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "state"    # Lcom/samsung/android/cover/CoverState;
 
     .prologue
-    .line 699
+    .line 682
     iget-object v0, p0, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService$4;->this$0:Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;
 
     invoke-virtual {p1}, Lcom/samsung/android/cover/CoverState;->getSwitchState()Z
@@ -48,6 +48,6 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;->-set5(Lcom/samsung/android/hardware/display/AdaptiveDisplayColorService;Z)Z
 
-    .line 698
+    .line 681
     return-void
 .end method

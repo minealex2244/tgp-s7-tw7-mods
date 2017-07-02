@@ -25,7 +25,7 @@
     .param p2, "$anonymous0"    # Landroid/os/Handler;
 
     .prologue
-    .line 14958
+    .line 14967
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -46,7 +46,7 @@
 
     const/4 v6, 0x0
 
-    .line 14961
+    .line 14970
     const-string/jumbo v3, "PersonaManagerService"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -89,7 +89,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 14962
+    .line 14971
     const-string/jumbo v3, "hide_secure_folder_flag"
 
     invoke-static {v3}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -102,13 +102,13 @@
 
     if-eqz v3, :cond_1
 
-    .line 14963
+    .line 14972
     if-nez p3, :cond_1
 
-    .line 14964
+    .line 14973
     const/4 v0, 0x0
 
-    .line 14965
+    .line 14974
     .local v0, "hideSecureFolderFlag":I
     iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -120,15 +120,15 @@
 
     move-result-object v3
 
-    .line 14966
+    .line 14975
     const-string/jumbo v4, "hide_secure_folder_flag"
 
-    .line 14965
+    .line 14974
     invoke-static {v3, v4, v6, v6}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
     move-result v0
 
-    .line 14967
+    .line 14976
     iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v3}, Lcom/android/server/pm/PersonaManagerService;->-get24(Lcom/android/server/pm/PersonaManagerService;)I
@@ -137,18 +137,18 @@
 
     if-eq v3, v7, :cond_0
 
-    .line 14968
+    .line 14977
     iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v3, v0}, Lcom/android/server/pm/PersonaManagerService;->-wrap54(Lcom/android/server/pm/PersonaManagerService;I)V
 
-    .line 14960
+    .line 14969
     .end local v0    # "hideSecureFolderFlag":I
     :cond_0
     :goto_0
     return-void
 
-    .line 14970
+    .line 14979
     :cond_1
     const-string/jumbo v3, "secure_folder_name"
 
@@ -162,63 +162,8 @@
 
     if-eqz v3, :cond_2
 
-    .line 14971
-    if-nez p3, :cond_2
-
-    .line 14973
-    iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
-
-    invoke-static {v3}, Lcom/android/server/pm/PersonaManagerService;->-get3(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v3
-
-    .line 14974
-    const-string/jumbo v4, "secure_folder_name"
-
-    .line 14972
-    invoke-static {v3, v4, v6}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 14975
-    .local v2, "mSecureFolderName":Ljava/lang/String;
-    iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
-
-    invoke-static {v3}, Lcom/android/server/pm/PersonaManagerService;->-get24(Lcom/android/server/pm/PersonaManagerService;)I
-
-    move-result v3
-
-    if-eq v3, v7, :cond_0
-
-    .line 14976
-    iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
-
-    invoke-static {v3, v2}, Lcom/android/server/pm/PersonaManagerService;->-wrap23(Lcom/android/server/pm/PersonaManagerService;Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 14979
-    .end local v2    # "mSecureFolderName":Ljava/lang/String;
-    :cond_2
-    const-string/jumbo v3, "secure_folder_image_name"
-
-    .line 14978
-    invoke-static {v3}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v3
-
-    invoke-virtual {p2, v3}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
     .line 14980
-    if-nez p3, :cond_0
+    if-nez p3, :cond_2
 
     .line 14982
     iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
@@ -231,14 +176,69 @@
 
     move-result-object v3
 
-    const-string/jumbo v4, "secure_folder_image_name"
+    .line 14983
+    const-string/jumbo v4, "secure_folder_name"
 
     .line 14981
     invoke-static {v3, v4, v6}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
     .line 14984
+    .local v2, "mSecureFolderName":Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
+
+    invoke-static {v3}, Lcom/android/server/pm/PersonaManagerService;->-get24(Lcom/android/server/pm/PersonaManagerService;)I
+
+    move-result v3
+
+    if-eq v3, v7, :cond_0
+
+    .line 14985
+    iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
+
+    invoke-static {v3, v2}, Lcom/android/server/pm/PersonaManagerService;->-wrap23(Lcom/android/server/pm/PersonaManagerService;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 14988
+    .end local v2    # "mSecureFolderName":Ljava/lang/String;
+    :cond_2
+    const-string/jumbo v3, "secure_folder_image_name"
+
+    .line 14987
+    invoke-static {v3}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v3
+
+    invoke-virtual {p2, v3}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    .line 14989
+    if-nez p3, :cond_0
+
+    .line 14991
+    iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
+
+    invoke-static {v3}, Lcom/android/server/pm/PersonaManagerService;->-get3(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v3
+
+    const-string/jumbo v4, "secure_folder_image_name"
+
+    .line 14990
+    invoke-static {v3, v4, v6}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 14993
     .local v1, "mSecureFolderImageName":Ljava/lang/String;
     iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -250,14 +250,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 14985
+    .line 14994
     invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 14986
+    .line 14995
     iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$4;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v3, v1}, Lcom/android/server/pm/PersonaManagerService;->-wrap22(Lcom/android/server/pm/PersonaManagerService;Ljava/lang/String;)V

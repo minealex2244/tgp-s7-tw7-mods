@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/usb/UsbDeviceManager;
 
     .prologue
-    .line 2394
+    .line 2402
     iput-object p1, p0, Lcom/android/server/usb/UsbDeviceManager$4;->this$0:Lcom/android/server/usb/UsbDeviceManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 2396
+    .line 2404
     const-string/jumbo v0, "UsbDeviceManager"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -69,7 +69,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2397
+    .line 2405
     iget-object v0, p0, Lcom/android/server/usb/UsbDeviceManager$4;->this$0:Lcom/android/server/usb/UsbDeviceManager;
 
     invoke-static {v0}, Lcom/android/server/usb/UsbDeviceManager;->-get12(Lcom/android/server/usb/UsbDeviceManager;)Lcom/android/server/usb/UsbDeviceManager$UsbHandler;
@@ -78,6 +78,6 @@
 
     invoke-static {v0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->-wrap4(Lcom/android/server/usb/UsbDeviceManager$UsbHandler;)V
 
-    .line 2395
+    .line 2403
     return-void
 .end method

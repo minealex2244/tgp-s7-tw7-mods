@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/audio/AudioService;
 
     .prologue
-    .line 1348
+    .line 1350
     iput-object p1, p0, Lcom/android/server/audio/AudioService$7;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-direct {p0}, Lcom/samsung/android/vr/IGearVrStateCallbacks$Stub;-><init>()V
@@ -44,7 +44,7 @@
     .end annotation
 
     .prologue
-    .line 1351
+    .line 1353
     const-string/jumbo v0, "AudioService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -67,10 +67,10 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1352
+    .line 1354
     sparse-switch p1, :sswitch_data_0
 
-    .line 1373
+    .line 1375
     const-string/jumbo v0, "AudioService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -93,11 +93,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1350
+    .line 1352
     :goto_0
     return-void
 
-    .line 1354
+    .line 1356
     :sswitch_0
     const-string/jumbo v0, "AudioService"
 
@@ -105,12 +105,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1355
+    .line 1357
     const-string/jumbo v0, "hmtState=dock"
 
     invoke-static {v0}, Landroid/media/AudioSystem;->setParameters(Ljava/lang/String;)I
 
-    .line 1356
+    .line 1358
     iget-object v0, p0, Lcom/android/server/audio/AudioService$7;->this$0:Lcom/android/server/audio/AudioService;
 
     const/4 v1, 0x1
@@ -119,7 +119,7 @@
 
     goto :goto_0
 
-    .line 1360
+    .line 1362
     :sswitch_1
     const-string/jumbo v0, "AudioService"
 
@@ -127,12 +127,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1361
+    .line 1363
     const-string/jumbo v0, "hmtState=off"
 
     invoke-static {v0}, Landroid/media/AudioSystem;->setParameters(Ljava/lang/String;)I
 
-    .line 1362
+    .line 1364
     iget-object v0, p0, Lcom/android/server/audio/AudioService$7;->this$0:Lcom/android/server/audio/AudioService;
 
     const/4 v1, 0x0
@@ -141,7 +141,7 @@
 
     goto :goto_0
 
-    .line 1365
+    .line 1367
     :sswitch_2
     const-string/jumbo v0, "AudioService"
 
@@ -149,14 +149,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1366
+    .line 1368
     const-string/jumbo v0, "hmtState=mount"
 
     invoke-static {v0}, Landroid/media/AudioSystem;->setParameters(Ljava/lang/String;)I
 
     goto :goto_0
 
-    .line 1369
+    .line 1371
     :sswitch_3
     const-string/jumbo v0, "AudioService"
 
@@ -164,14 +164,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1370
+    .line 1372
     const-string/jumbo v0, "hmtState=unmount"
 
     invoke-static {v0}, Landroid/media/AudioSystem;->setParameters(Ljava/lang/String;)I
 
     goto :goto_0
 
-    .line 1352
+    .line 1354
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0

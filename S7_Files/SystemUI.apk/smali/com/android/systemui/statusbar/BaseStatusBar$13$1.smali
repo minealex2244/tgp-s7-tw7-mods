@@ -36,7 +36,7 @@
     .param p4, "val$intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 1465
+    .line 1467
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$13;
 
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13$1;->val$keyguardShowing:Z
@@ -56,20 +56,20 @@
     .locals 5
 
     .prologue
-    .line 1468
+    .line 1470
     :try_start_0
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13$1;->val$keyguardShowing:Z
 
     if-eqz v2, :cond_0
 
-    .line 1469
+    .line 1471
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
     move-result-object v2
 
     invoke-interface {v2}, Landroid/app/IActivityManager;->keyguardWaitingForActivityDrawn()V
 
-    .line 1473
+    .line 1475
     :cond_0
     iget v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13$1;->val$appUid:I
 
@@ -77,14 +77,14 @@
 
     move-result v1
 
-    .line 1475
+    .line 1477
     .local v1, "userId":I
     if-nez v1, :cond_1
 
-    .line 1476
+    .line 1478
     const/4 v1, -0x2
 
-    .line 1479
+    .line 1481
     :cond_1
     iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13$1;->val$intent:Landroid/content/Intent;
 
@@ -92,7 +92,7 @@
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 1480
+    .line 1482
     iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$13;
 
     iget-object v2, v2, Lcom/android/systemui/statusbar/BaseStatusBar$13;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -107,7 +107,7 @@
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Context;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 1487
+    .line 1489
     iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$13;
 
     iget-object v2, v2, Lcom/android/systemui/statusbar/BaseStatusBar$13;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -118,12 +118,12 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1466
+    .line 1468
     .end local v1    # "userId":I
     :goto_0
     return-void
 
-    .line 1488
+    .line 1490
     :catch_0
     move-exception v0
 

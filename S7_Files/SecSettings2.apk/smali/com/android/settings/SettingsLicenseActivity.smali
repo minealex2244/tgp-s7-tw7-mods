@@ -19,7 +19,7 @@
 
     .prologue
     .line 87
-    const v0, 0x7f0b14a1
+    const v0, 0x7f0b14af
 
     const/4 v1, 0x1
 
@@ -175,7 +175,7 @@
     .line 73
     const-string/jumbo v4, "android.intent.extra.TITLE"
 
-    const v5, 0x7f0b14a0
+    const v5, 0x7f0b14ae
 
     invoke-virtual {p0, v5}, Lcom/android/settings/SettingsLicenseActivity;->getString(I)Ljava/lang/String;
 

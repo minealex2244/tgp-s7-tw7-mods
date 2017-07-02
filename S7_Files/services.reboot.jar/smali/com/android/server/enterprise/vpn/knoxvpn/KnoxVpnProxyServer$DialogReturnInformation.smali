@@ -32,24 +32,24 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1191
+    .line 1190
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$DialogReturnInformation;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1188
+    .line 1187
     iput-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$DialogReturnInformation;->intent:Landroid/content/Intent;
 
-    .line 1189
+    .line 1188
     iput-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$DialogReturnInformation;->callback:Lcom/samsung/android/knox/net/vpn/ICredentialStatusCallback;
 
-    .line 1192
+    .line 1191
     iput-object p2, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$DialogReturnInformation;->intent:Landroid/content/Intent;
 
-    .line 1193
+    .line 1192
     iput-object p3, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$DialogReturnInformation;->callback:Lcom/samsung/android/knox/net/vpn/ICredentialStatusCallback;
 
-    .line 1191
+    .line 1190
     return-void
 .end method
 
@@ -59,7 +59,7 @@
     .locals 1
 
     .prologue
-    .line 1201
+    .line 1200
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$DialogReturnInformation;->callback:Lcom/samsung/android/knox/net/vpn/ICredentialStatusCallback;
 
     return-object v0
@@ -69,7 +69,7 @@
     .locals 1
 
     .prologue
-    .line 1197
+    .line 1196
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$DialogReturnInformation;->intent:Landroid/content/Intent;
 
     return-object v0

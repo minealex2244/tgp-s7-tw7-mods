@@ -25,7 +25,7 @@
     const/4 v3, 0x0
 
     .line 29
-    const/16 v0, 0x1d
+    const/16 v0, 0x1e
 
     new-array v0, v0, [[Ljava/lang/String;
 
@@ -315,7 +315,7 @@
 
     aput-object v2, v1, v3
 
-    const-string/jumbo v2, "No available space in disk."
+    const-string/jumbo v2, "Write or fstat to the shm file is failed."
 
     aput-object v2, v1, v4
 
@@ -458,6 +458,21 @@
 
     aput-object v1, v0, v2
 
+    .line 59
+    new-array v1, v5, [Ljava/lang/String;
+
+    const-string/jumbo v2, "SQLITE_IOERR_SHMSIZE_FULL"
+
+    aput-object v2, v1, v3
+
+    const-string/jumbo v2, "No available space in disk.(ENOSPC)"
+
+    aput-object v2, v1, v4
+
+    const/16 v2, 0x1d
+
+    aput-object v1, v0, v2
+
     .line 29
     sput-object v0, Landroid/database/sqlite/SQLiteDiskIOException;->errString:[[Ljava/lang/String;
 
@@ -469,7 +484,7 @@
     .locals 0
 
     .prologue
-    .line 65
+    .line 66
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteException;-><init>()V
 
     return-void
@@ -480,7 +495,7 @@
     .param p1, "error"    # Ljava/lang/String;
 
     .prologue
-    .line 68
+    .line 69
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -503,7 +518,7 @@
 
     invoke-direct {p0, v0}, Landroid/database/sqlite/SQLiteException;-><init>(Ljava/lang/String;)V
 
-    .line 67
+    .line 68
     return-void
 .end method
 
@@ -512,7 +527,7 @@
     .param p0, "errMessage"    # Ljava/lang/String;
 
     .prologue
-    .line 72
+    .line 73
     if-eqz p0, :cond_0
 
     const-string/jumbo v0, "(code "
@@ -523,12 +538,12 @@
 
     if-lez v0, :cond_0
 
-    .line 73
+    .line 74
     const-string/jumbo v0, ""
 
     return-object v0
 
-    .line 74
+    .line 75
     :cond_0
     const-string/jumbo v0, " (code 10)"
 
@@ -542,10 +557,10 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 79
+    .line 80
     const-string/jumbo v0, ""
 
-    .line 80
+    .line 81
     .local v0, "caused":Ljava/lang/String;
     sget-object v1, Landroid/database/sqlite/SQLiteDiskIOException;->errString:[[Ljava/lang/String;
 
@@ -563,7 +578,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 81
+    .line 82
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -594,11 +609,11 @@
 
     move-result-object v0
 
-    .line 84
+    .line 85
     :goto_0
     return-object v0
 
-    .line 83
+    .line 84
     :cond_0
     sget-object v1, Landroid/database/sqlite/SQLiteDiskIOException;->errString:[[Ljava/lang/String;
 

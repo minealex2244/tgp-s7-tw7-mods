@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/hardware/display/SemMdnieManagerService;
 
     .prologue
-    .line 231
+    .line 227
     iput-object p1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -50,24 +50,22 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    const/4 v1, 0x0
-
-    .line 234
+    .line 230
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 236
+    .line 232
     .local v0, "action":Ljava/lang/String;
-    const-string/jumbo v2, "android.intent.action.BOOT_COMPLETED"
+    const-string/jumbo v1, "android.intent.action.BOOT_COMPLETED"
 
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v2
+    move-result v1
 
-    if-eqz v2, :cond_0
+    if-eqz v1, :cond_0
 
-    .line 237
+    .line 233
     iget-object v2, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
 
     iget-object v1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
@@ -86,88 +84,72 @@
 
     invoke-static {v2, v1}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set2(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Landroid/os/PowerManager;)Landroid/os/PowerManager;
 
-    .line 238
+    .line 234
     return-void
 
-    .line 240
+    .line 236
     :cond_0
-    const-string/jumbo v2, "android.intent.action.SCREEN_ON"
+    const-string/jumbo v1, "android.intent.action.SCREEN_ON"
 
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 237
+    iget-object v1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
+
+    const/4 v2, 0x1
+
+    invoke-static {v1, v2}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set0(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Z)Z
+
+    .line 238
+    iget-object v1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
+
+    iget-object v2, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
+
+    invoke-static {v2}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-get1(Lcom/samsung/android/hardware/display/SemMdnieManagerService;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_2
+    invoke-static {v1, v2}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set1(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Z)Z
+
+    .line 239
+    return-void
 
     .line 241
-    iget-object v2, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
+    :cond_1
+    const-string/jumbo v1, "android.intent.action.SCREEN_OFF"
 
-    const/4 v3, 0x1
-
-    invoke-static {v2, v3}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set0(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Z)Z
-
-    .line 242
-    iget-object v2, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
-
-    iget-object v3, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
-
-    invoke-static {v3}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-get1(Lcom/samsung/android/hardware/display/SemMdnieManagerService;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    iget-object v1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
-
-    invoke-static {v1}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-get2(Lcom/samsung/android/hardware/display/SemMdnieManagerService;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    :cond_1
-    invoke-static {v2, v1}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set1(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Z)Z
+    if-eqz v1, :cond_2
+
+    .line 242
+    iget-object v1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
+
+    const/4 v2, 0x0
+
+    invoke-static {v1, v2}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set0(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Z)Z
 
     .line 243
-    return-void
+    iget-object v1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
 
-    .line 245
-    :cond_2
-    const-string/jumbo v2, "android.intent.action.SCREEN_OFF"
+    iget-object v2, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
 
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {v2}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-get1(Lcom/samsung/android/hardware/display/SemMdnieManagerService;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    invoke-static {v1, v2}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set1(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Z)Z
 
-    .line 246
-    iget-object v2, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
-
-    invoke-static {v2, v1}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set0(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Z)Z
-
-    .line 247
-    iget-object v2, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
-
-    iget-object v3, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
-
-    invoke-static {v3}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-get1(Lcom/samsung/android/hardware/display/SemMdnieManagerService;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_3
-
-    iget-object v1, p0, Lcom/samsung/android/hardware/display/SemMdnieManagerService$ScreenWatchingReceiver;->this$0:Lcom/samsung/android/hardware/display/SemMdnieManagerService;
-
-    invoke-static {v1}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-get2(Lcom/samsung/android/hardware/display/SemMdnieManagerService;)Z
-
-    move-result v1
-
-    :cond_3
-    invoke-static {v2, v1}, Lcom/samsung/android/hardware/display/SemMdnieManagerService;->-set1(Lcom/samsung/android/hardware/display/SemMdnieManagerService;Z)Z
-
-    .line 248
+    .line 244
     return-void
 
-    .line 233
-    :cond_4
+    .line 229
+    :cond_2
     return-void
 .end method

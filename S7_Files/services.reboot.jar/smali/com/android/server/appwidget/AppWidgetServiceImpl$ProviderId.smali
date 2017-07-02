@@ -27,16 +27,16 @@
     .param p2, "componentName"    # Landroid/content/ComponentName;
 
     .prologue
-    .line 4300
+    .line 4480
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4301
+    .line 4481
     iput p1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->uid:I
 
-    .line 4302
+    .line 4482
     iput-object p2, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->componentName:Landroid/content/ComponentName;
 
-    .line 4300
+    .line 4480
     return-void
 .end method
 
@@ -62,20 +62,20 @@
 
     const/4 v3, 0x0
 
-    .line 4307
+    .line 4487
     if-ne p0, p1, :cond_0
 
-    .line 4308
+    .line 4488
     return v4
 
-    .line 4310
+    .line 4490
     :cond_0
     if-nez p1, :cond_1
 
-    .line 4311
+    .line 4491
     return v3
 
-    .line 4313
+    .line 4493
     :cond_1
     invoke-virtual {p0}, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->getClass()Ljava/lang/Class;
 
@@ -87,16 +87,16 @@
 
     if-eq v1, v2, :cond_2
 
-    .line 4314
+    .line 4494
     return v3
 
     :cond_2
     move-object v0, p1
 
-    .line 4316
+    .line 4496
     check-cast v0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;
 
-    .line 4317
+    .line 4497
     .local v0, "other":Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;
     iget v1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->uid:I
 
@@ -104,24 +104,24 @@
 
     if-eq v1, v2, :cond_3
 
-    .line 4318
+    .line 4498
     return v3
 
-    .line 4320
+    .line 4500
     :cond_3
     iget-object v1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->componentName:Landroid/content/ComponentName;
 
     if-nez v1, :cond_4
 
-    .line 4321
+    .line 4501
     iget-object v1, v0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->componentName:Landroid/content/ComponentName;
 
     if-eqz v1, :cond_5
 
-    .line 4322
+    .line 4502
     return v3
 
-    .line 4324
+    .line 4504
     :cond_4
     iget-object v1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->componentName:Landroid/content/ComponentName;
 
@@ -133,10 +133,10 @@
 
     if-nez v1, :cond_5
 
-    .line 4325
+    .line 4505
     return v3
 
-    .line 4327
+    .line 4507
     :cond_5
     return v4
 .end method
@@ -145,10 +145,10 @@
     .locals 3
 
     .prologue
-    .line 4332
+    .line 4512
     iget v0, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->uid:I
 
-    .line 4333
+    .line 4513
     .local v0, "result":I
     mul-int/lit8 v2, v0, 0x1f
 
@@ -156,21 +156,21 @@
 
     if-eqz v1, :cond_0
 
-    .line 4334
+    .line 4514
     iget-object v1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v1}, Landroid/content/ComponentName;->hashCode()I
 
     move-result v1
 
-    .line 4333
+    .line 4513
     :goto_0
     add-int v0, v2, v1
 
-    .line 4335
+    .line 4515
     return v0
 
-    .line 4334
+    .line 4514
     :cond_0
     const/4 v1, 0x0
 
@@ -181,7 +181,7 @@
     .locals 2
 
     .prologue
-    .line 4340
+    .line 4520
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -208,38 +208,38 @@
 
     move-result-object v0
 
-    .line 4341
+    .line 4521
     iget v1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->uid:I
 
     invoke-static {v1}, Landroid/os/UserHandle;->getAppId(I)I
 
     move-result v1
 
-    .line 4340
+    .line 4520
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 4341
+    .line 4521
     const-string/jumbo v1, ", cmp:"
 
-    .line 4340
+    .line 4520
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 4341
+    .line 4521
     iget-object v1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$ProviderId;->componentName:Landroid/content/ComponentName;
 
-    .line 4340
+    .line 4520
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 4341
+    .line 4521
     const/16 v1, 0x7d
 
-    .line 4340
+    .line 4520
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-result-object v0

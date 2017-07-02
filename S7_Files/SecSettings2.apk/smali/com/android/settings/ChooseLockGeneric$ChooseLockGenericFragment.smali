@@ -727,7 +727,7 @@
 
     .line 1566
     :sswitch_0
-    const v2, 0x7f0b1184
+    const v2, 0x7f0b1191
 
     invoke-virtual {p0, v2}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -737,7 +737,7 @@
 
     .line 1571
     :sswitch_1
-    const v2, 0x7f0b1186
+    const v2, 0x7f0b1193
 
     invoke-virtual {p0, v2}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -747,7 +747,7 @@
 
     .line 1577
     :sswitch_2
-    const v2, 0x7f0b1188
+    const v2, 0x7f0b1195
 
     invoke-virtual {p0, v2}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -2276,7 +2276,7 @@
     invoke-static {v2, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 2859
-    const v2, 0x7f0b0673
+    const v2, 0x7f0b0674
 
     move-object/from16 v0, p0
 
@@ -2291,7 +2291,7 @@
     .end local v16    # "isHWdetected":Z
     .end local v26    # "status":I
     :cond_2c
-    const v2, 0x7f0b0673
+    const v2, 0x7f0b0674
 
     move-object/from16 v0, p0
 
@@ -2348,7 +2348,7 @@
     if-eqz v1, :cond_0
 
     .line 3245
-    const v2, 0x7f0b08ab
+    const v2, 0x7f0b08ae
 
     .line 3252
     .local v2, "resourceId":I
@@ -2361,7 +2361,7 @@
     if-eqz v0, :cond_1
 
     .line 3247
-    const v2, 0x7f0b08a9
+    const v2, 0x7f0b08ac
 
     .restart local v2    # "resourceId":I
     goto :goto_0
@@ -2369,7 +2369,7 @@
     .line 3249
     .end local v2    # "resourceId":I
     :cond_1
-    const v2, 0x7f0b08aa
+    const v2, 0x7f0b08ad
 
     .restart local v2    # "resourceId":I
     goto :goto_0
@@ -2398,14 +2398,14 @@
     .local v0, "isProfile":Z
     if-eqz v0, :cond_0
 
-    const v1, 0x7f0b1198
+    const v1, 0x7f0b11a5
 
     :goto_0
     return v1
 
     .line 2997
     :cond_0
-    const v1, 0x7f0b1197
+    const v1, 0x7f0b11a4
 
     goto :goto_0
 .end method
@@ -3257,7 +3257,7 @@
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 2913
-    const v2, 0x7f0b08ac
+    const v2, 0x7f0b08af
 
     .line 2912
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -3265,7 +3265,7 @@
     move-result-object v1
 
     .line 2914
-    const v2, 0x7f0b08ad
+    const v2, 0x7f0b08b0
 
     .line 2912
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -3571,11 +3571,11 @@
     .param p1, "prefScreen"    # Landroid/preference/PreferenceScreen;
 
     .prologue
-    const v11, 0x7f0b1184
+    const v11, 0x7f0b1191
 
-    const v10, 0x7f0b0822
+    const v10, 0x7f0b0825
 
-    const v9, 0x7f0b0ecc
+    const v9, 0x7f0b0edb
 
     const/4 v8, 0x0
 
@@ -3750,7 +3750,7 @@
     .line 1614
     new-array v4, v7, [Ljava/lang/Object;
 
-    const v5, 0x7f0b1186
+    const v5, 0x7f0b1193
 
     invoke-virtual {p0, v5}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -3768,7 +3768,7 @@
 
     .line 1616
     :cond_3
-    const v4, 0x7f0b1186
+    const v4, 0x7f0b1193
 
     invoke-virtual {p0, v4}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -3816,7 +3816,7 @@
     :cond_4
     new-array v4, v7, [Ljava/lang/Object;
 
-    const v5, 0x7f0b1188
+    const v5, 0x7f0b1195
 
     invoke-virtual {p0, v5}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -3857,7 +3857,7 @@
 
     .line 1639
     :cond_6
-    const v4, 0x7f0b1188
+    const v4, 0x7f0b1195
 
     invoke-virtual {p0, v4}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -3916,7 +3916,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0ecd
+    const v1, 0x7f0b0edc
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setTitle(I)V
 
@@ -4490,7 +4490,7 @@
 
     new-array v1, v2, [Ljava/lang/Object;
 
-    const v2, 0x7f0b066c
+    const v2, 0x7f0b066d
 
     invoke-virtual {p0, v2}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -4498,7 +4498,7 @@
 
     aput-object v2, v1, v11
 
-    const v2, 0x7f0b0680
+    const v2, 0x7f0b0681
 
     invoke-virtual {p0, v2, v1}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -4646,7 +4646,7 @@
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 3444
-    const v2, 0x7f0b06ed
+    const v2, 0x7f0b06ee
 
     .line 3443
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -4654,7 +4654,7 @@
     move-result-object v1
 
     .line 3445
-    const v2, 0x7f0b0719
+    const v2, 0x7f0b071a
 
     .line 3443
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -4713,7 +4713,7 @@
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 3467
-    const v2, 0x7f0b076a
+    const v2, 0x7f0b076d
 
     .line 3466
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -4721,7 +4721,7 @@
     move-result-object v1
 
     .line 3468
-    const v2, 0x7f0b076b
+    const v2, 0x7f0b076e
 
     .line 3466
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -4772,7 +4772,7 @@
 
     .prologue
     .line 2888
-    const v1, 0x7f0b0673
+    const v1, 0x7f0b0674
 
     if-ne p1, v1, :cond_0
 
@@ -4791,7 +4791,7 @@
     if-eqz v1, :cond_0
 
     .line 2890
-    const p1, 0x7f0b0674
+    const p1, 0x7f0b0675
 
     .line 2893
     :cond_0
@@ -4804,7 +4804,7 @@
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 2894
-    const v2, 0x7f0b0671
+    const v2, 0x7f0b0672
 
     .line 2893
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -4991,7 +4991,7 @@
     invoke-static {v3, v4}, Landroid/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 3058
-    const v3, 0x7f0b0673
+    const v3, 0x7f0b0674
 
     invoke-direct {p0, v3}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->showSensorErrorDialog(I)V
 
@@ -5027,7 +5027,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b06e7
+    const v4, 0x7f0b06e8
 
     invoke-virtual {p0, v4}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -5068,7 +5068,7 @@
 
     new-array v4, v5, [Ljava/lang/Object;
 
-    const v5, 0x7f0b066c
+    const v5, 0x7f0b066d
 
     invoke-virtual {p0, v5}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -5076,7 +5076,7 @@
 
     aput-object v5, v4, v6
 
-    const v5, 0x7f0b0680
+    const v5, 0x7f0b0681
 
     invoke-virtual {p0, v5, v4}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -5399,7 +5399,7 @@
 
     move-result-object v22
 
-    const v23, 0x7f0b0ece
+    const v23, 0x7f0b0edd
 
     invoke-virtual/range {v22 .. v23}, Landroid/app/Activity;->setTitle(I)V
 
@@ -5736,7 +5736,7 @@
     if-eqz v14, :cond_9
 
     .line 1469
-    const v22, 0x7f0b0ecf
+    const v22, 0x7f0b0ede
 
     move-object/from16 v0, p0
 
@@ -5872,7 +5872,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 1494
-    const v22, 0x7f0b118f
+    const v22, 0x7f0b119c
 
     move-object/from16 v0, v19
 
@@ -5991,7 +5991,7 @@
 
     .line 1519
     .local v11, "knoxName":Ljava/lang/String;
-    const v22, 0x7f0b0ac2
+    const v22, 0x7f0b0ac5
 
     move-object/from16 v0, p0
 
@@ -6009,7 +6009,7 @@
 
     move-object/from16 v23, v0
 
-    const v24, 0x7f0b0822
+    const v24, 0x7f0b0825
 
     move-object/from16 v0, p0
 
@@ -6226,7 +6226,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
     .line 1488
-    const v22, 0x7f0b118f
+    const v22, 0x7f0b119c
 
     move-object/from16 v0, v19
 
@@ -6317,7 +6317,7 @@
     if-eqz v22, :cond_1c
 
     .line 1541
-    const v22, 0x7f0b0ac3
+    const v22, 0x7f0b0ac6
 
     move-object/from16 v0, p0
 
@@ -6335,7 +6335,7 @@
 
     move-object/from16 v23, v0
 
-    const v24, 0x7f0b0822
+    const v24, 0x7f0b0825
 
     move-object/from16 v0, p0
 
@@ -6416,7 +6416,7 @@
     if-eqz v22, :cond_19
 
     .line 1543
-    const v22, 0x7f0b0ac4
+    const v22, 0x7f0b0ac7
 
     move-object/from16 v0, p0
 
@@ -6434,7 +6434,7 @@
 
     move-object/from16 v23, v0
 
-    const v24, 0x7f0b0822
+    const v24, 0x7f0b0825
 
     move-object/from16 v0, p0
 
@@ -7215,7 +7215,7 @@
     if-eqz v43, :cond_1f
 
     .line 1756
-    const v43, 0x7f0b0778
+    const v43, 0x7f0b077b
 
     move-object/from16 v0, v41
 
@@ -7325,7 +7325,7 @@
     if-eqz v43, :cond_21
 
     .line 1773
-    const v43, 0x7f0b0778
+    const v43, 0x7f0b077b
 
     move-object/from16 v0, v41
 
@@ -10377,7 +10377,7 @@
 
     .line 2401
     :cond_3c
-    const v19, 0x7f0b118f
+    const v19, 0x7f0b119c
 
     move-object/from16 v0, v16
 
@@ -10448,7 +10448,7 @@
 
     .prologue
     .line 3181
-    const v0, 0x7f0b1899
+    const v0, 0x7f0b18a7
 
     return v0
 .end method
@@ -13629,7 +13629,7 @@
 
     move-result-object v6
 
-    const v9, 0x7f0b06ed
+    const v9, 0x7f0b06ee
 
     invoke-virtual {v6, v9}, Landroid/app/Activity;->setTitle(I)V
 
@@ -13700,7 +13700,7 @@
 
     move-result-object v6
 
-    const v9, 0x7f0b076a
+    const v9, 0x7f0b076d
 
     invoke-virtual {v6, v9}, Landroid/app/Activity;->setTitle(I)V
 
@@ -13763,7 +13763,7 @@
     iput-boolean v8, p0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->mIdentifyBiometrics:Z
 
     .line 578
-    const v6, 0x7f0b0a07
+    const v6, 0x7f0b0a0a
 
     invoke-virtual {p0, v6}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getText(I)Ljava/lang/CharSequence;
 
@@ -13964,7 +13964,7 @@
 
     move-result-object v6
 
-    const v9, 0x7f0b1176
+    const v9, 0x7f0b1183
 
     invoke-virtual {v6, v9}, Landroid/app/Activity;->setTitle(I)V
 
@@ -14282,7 +14282,7 @@
     if-nez v3, :cond_1b
 
     .line 648
-    const v6, 0x7f0b117b
+    const v6, 0x7f0b1188
 
     invoke-virtual {p0, v6}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getString(I)Ljava/lang/String;
 
@@ -14842,7 +14842,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b06e2
+    const v6, 0x7f0b06e3
 
     invoke-static {v5, v6, v8}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -15241,12 +15241,12 @@
     invoke-virtual {v2, v9}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 685
-    const v9, 0x7f0b077d
+    const v9, 0x7f0b0780
 
     invoke-virtual {v4, v9}, Landroid/widget/TextView;->setText(I)V
 
     .line 686
-    const v9, 0x7f0b077e
+    const v9, 0x7f0b0781
 
     invoke-virtual {v5, v9}, Landroid/widget/TextView;->setText(I)V
 
@@ -15262,7 +15262,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b076a
+    const v10, 0x7f0b076d
 
     invoke-virtual {v9, v10}, Landroid/app/Activity;->setTitle(I)V
 

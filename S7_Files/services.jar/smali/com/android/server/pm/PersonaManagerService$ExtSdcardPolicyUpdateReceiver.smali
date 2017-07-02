@@ -158,9 +158,51 @@
     if-eqz v6, :cond_2
 
     .line 4891
-    iput-boolean v9, v4, Lcom/samsung/android/knox/SemPersonaInfo;->needsRestart:Z
+    const-string/jumbo v6, "PersonaManagerService"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "PersonaManagerService.ExtSdcardPolicyUpdateReceiver pi.canUseExtSdcard="
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    iget-boolean v8, v4, Lcom/samsung/android/knox/SemPersonaInfo;->canUseExtSdcard:Z
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string/jumbo v8, " source="
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 4892
+    new-instance v6, Ljava/lang/Exception;
+
+    invoke-direct {v6}, Ljava/lang/Exception;-><init>()V
+
+    invoke-virtual {v6}, Ljava/lang/Exception;->printStackTrace()V
+
+    .line 4893
+    iput-boolean v9, v4, Lcom/samsung/android/knox/SemPersonaInfo;->needsRestart:Z
+
+    .line 4894
     iget-object v6, p0, Lcom/android/server/pm/PersonaManagerService$ExtSdcardPolicyUpdateReceiver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v6}, Lcom/android/server/pm/PersonaManagerService;->-get18(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
@@ -169,7 +211,7 @@
 
     monitor-enter v7
 
-    .line 4893
+    .line 4895
     :try_start_0
     iget-object v6, p0, Lcom/android/server/pm/PersonaManagerService$ExtSdcardPolicyUpdateReceiver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -179,12 +221,12 @@
 
     monitor-exit v7
 
-    .line 4895
+    .line 4897
     iget-object v6, p0, Lcom/android/server/pm/PersonaManagerService$ExtSdcardPolicyUpdateReceiver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v6, v2}, Lcom/android/server/pm/PersonaManagerService;->-wrap42(Lcom/android/server/pm/PersonaManagerService;I)V
 
-    .line 4896
+    .line 4898
     const-string/jumbo v6, "PersonaManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -215,7 +257,7 @@
     :goto_0
     return-void
 
-    .line 4892
+    .line 4894
     .restart local v2    # "personaId":I
     .restart local v4    # "pi":Lcom/samsung/android/knox/SemPersonaInfo;
     .restart local v5    # "source":I
@@ -226,7 +268,7 @@
 
     throw v6
 
-    .line 4898
+    .line 4900
     :cond_2
     const-string/jumbo v6, "PersonaManagerService"
 
@@ -258,19 +300,19 @@
 
     goto :goto_0
 
-    .line 4901
+    .line 4903
     .end local v4    # "pi":Lcom/samsung/android/knox/SemPersonaInfo;
     :cond_3
     if-ne v5, v9, :cond_1
 
-    .line 4903
+    .line 4905
     iget-object v6, p0, Lcom/android/server/pm/PersonaManagerService$ExtSdcardPolicyUpdateReceiver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-virtual {v6, v9}, Lcom/android/server/pm/PersonaManagerService;->getPersonas(Z)Ljava/util/List;
 
     move-result-object v3
 
-    .line 4904
+    .line 4906
     .local v3, "personas":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/knox/SemPersonaInfo;>;"
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -291,19 +333,61 @@
 
     check-cast v0, Lcom/samsung/android/knox/SemPersonaInfo;
 
-    .line 4905
+    .line 4907
     .local v0, "pInfo":Lcom/samsung/android/knox/SemPersonaInfo;
     if-eqz v0, :cond_4
 
-    .line 4906
+    .line 4908
     iget-boolean v6, v0, Lcom/samsung/android/knox/SemPersonaInfo;->canUseExtSdcard:Z
 
     if-eqz v6, :cond_5
 
-    .line 4907
+    .line 4909
+    const-string/jumbo v6, "PersonaManagerService"
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v8, "PersonaManagerService.ExtSdcardPolicyUpdateReceiver pInfo.canUseExtSdcard="
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    iget-boolean v8, v0, Lcom/samsung/android/knox/SemPersonaInfo;->canUseExtSdcard:Z
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string/jumbo v8, " source="
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-static {v6, v7}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 4910
+    new-instance v6, Ljava/lang/Exception;
+
+    invoke-direct {v6}, Ljava/lang/Exception;-><init>()V
+
+    invoke-virtual {v6}, Ljava/lang/Exception;->printStackTrace()V
+
+    .line 4911
     iput-boolean v9, v0, Lcom/samsung/android/knox/SemPersonaInfo;->needsRestart:Z
 
-    .line 4908
+    .line 4912
     iget-object v6, p0, Lcom/android/server/pm/PersonaManagerService$ExtSdcardPolicyUpdateReceiver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v6}, Lcom/android/server/pm/PersonaManagerService;->-get18(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
@@ -312,7 +396,7 @@
 
     monitor-enter v7
 
-    .line 4909
+    .line 4913
     :try_start_1
     iget-object v6, p0, Lcom/android/server/pm/PersonaManagerService$ExtSdcardPolicyUpdateReceiver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -322,14 +406,14 @@
 
     monitor-exit v7
 
-    .line 4911
+    .line 4915
     iget-object v6, p0, Lcom/android/server/pm/PersonaManagerService$ExtSdcardPolicyUpdateReceiver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iget v7, v0, Lcom/samsung/android/knox/SemPersonaInfo;->id:I
 
     invoke-static {v6, v7}, Lcom/android/server/pm/PersonaManagerService;->-wrap42(Lcom/android/server/pm/PersonaManagerService;I)V
 
-    .line 4912
+    .line 4916
     const-string/jumbo v6, "PersonaManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -356,7 +440,7 @@
 
     goto :goto_1
 
-    .line 4908
+    .line 4912
     :catchall_1
     move-exception v6
 
@@ -364,7 +448,7 @@
 
     throw v6
 
-    .line 4914
+    .line 4918
     :cond_5
     const-string/jumbo v6, "PersonaManagerService"
 
@@ -396,5 +480,5 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_1
+    goto/16 :goto_1
 .end method

@@ -31,19 +31,19 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1566
+    .line 1602
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1567
+    .line 1603
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->showAtLeast3G:Z
 
-    .line 1568
+    .line 1604
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->alwaysShowCdmaRssi:Z
 
-    .line 1569
+    .line 1605
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->show4gForLte:Z
 
-    .line 1566
+    .line 1602
     return-void
 .end method
 
@@ -52,18 +52,18 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1573
+    .line 1609
     new-instance v0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;
 
     invoke-direct {v0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;-><init>()V
 
-    .line 1574
+    .line 1610
     .local v0, "config":Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 1576
+    .line 1612
     .local v1, "res":Landroid/content/res/Resources;
     const v2, 0x7f12000d
 
@@ -73,17 +73,17 @@
 
     iput-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->showAtLeast3G:Z
 
-    .line 1578
+    .line 1614
     const v2, 0x1120068
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 
     move-result v2
 
-    .line 1577
+    .line 1613
     iput-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->alwaysShowCdmaRssi:Z
 
-    .line 1579
+    .line 1615
     const v2, 0x7f120014
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
@@ -92,16 +92,16 @@
 
     iput-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->show4gForLte:Z
 
-    .line 1581
+    .line 1617
     const v2, 0x7f12000a
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 
     move-result v2
 
-    .line 1580
+    .line 1616
     iput-boolean v2, v0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$Config;->hspaDataDistinguishable:Z
 
-    .line 1582
+    .line 1618
     return-object v0
 .end method

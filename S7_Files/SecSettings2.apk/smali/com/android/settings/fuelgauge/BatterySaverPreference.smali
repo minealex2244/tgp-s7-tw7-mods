@@ -82,7 +82,7 @@
     .local v2, "mode":Z
     if-eqz v2, :cond_0
 
-    const v1, 0x7f0b1b11
+    const v1, 0x7f0b1b1f
 
     .line 68
     .local v1, "format":I
@@ -103,7 +103,7 @@
     .local v3, "percent":I
     if-lez v3, :cond_1
 
-    const v4, 0x7f0b1b14
+    const v4, 0x7f0b1b22
 
     .line 72
     .local v4, "percentFormat":I
@@ -140,7 +140,7 @@
     .end local v3    # "percent":I
     .end local v4    # "percentFormat":I
     :cond_0
-    const v1, 0x7f0b1b12
+    const v1, 0x7f0b1b20
 
     .restart local v1    # "format":I
     goto :goto_0
@@ -148,7 +148,7 @@
     .line 71
     .restart local v3    # "percent":I
     :cond_1
-    const v4, 0x7f0b1b13
+    const v4, 0x7f0b1b21
 
     .restart local v4    # "percentFormat":I
     goto :goto_1

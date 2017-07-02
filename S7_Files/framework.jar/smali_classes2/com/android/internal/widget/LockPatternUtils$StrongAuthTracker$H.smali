@@ -29,13 +29,13 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 2331
+    .line 2355
     iput-object p1, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker$H;->this$1:Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;
 
-    .line 2332
+    .line 2356
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 2331
+    .line 2355
     return-void
 .end method
 
@@ -46,16 +46,16 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 2337
+    .line 2361
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 2336
+    .line 2360
     :goto_0
     return-void
 
-    .line 2339
+    .line 2363
     :pswitch_0
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker$H;->this$1:Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;
 
@@ -67,7 +67,7 @@
 
     goto :goto_0
 
-    .line 2337
+    .line 2361
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

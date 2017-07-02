@@ -36,7 +36,7 @@
     .param p4, "val$installerPackage"    # Ljava/lang/String;
 
     .prologue
-    .line 16242
+    .line 16246
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$13;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iput-object p2, p0, Lcom/android/server/pm/PackageManagerService$13;->val$pkgName:Ljava/lang/String;
@@ -56,7 +56,7 @@
     .locals 9
 
     .prologue
-    .line 16245
+    .line 16249
     const/4 v1, 0x0
 
     .local v1, "i":I
@@ -71,7 +71,7 @@
 
     if-ge v1, v3, :cond_3
 
-    .line 16246
+    .line 16250
     iget-object v3, p0, Lcom/android/server/pm/PackageManagerService$13;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v3, v3, Lcom/android/server/pm/PackageManagerService;->mRunningInstalls:Landroid/util/SparseArray;
@@ -82,7 +82,7 @@
 
     check-cast v0, Lcom/android/server/pm/PackageManagerService$PostInstallData;
 
-    .line 16248
+    .line 16252
     .local v0, "data":Lcom/android/server/pm/PackageManagerService$PostInstallData;
     iget-object v3, v0, Lcom/android/server/pm/PackageManagerService$PostInstallData;->res:Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
@@ -90,13 +90,13 @@
 
     if-nez v3, :cond_1
 
-    .line 16245
+    .line 16249
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 16252
+    .line 16256
     :cond_1
     iget-object v3, p0, Lcom/android/server/pm/PackageManagerService$13;->val$pkgName:Ljava/lang/String;
 
@@ -114,7 +114,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 16254
+    .line 16258
     const/4 v2, 0x0
 
     .local v2, "uIndex":I
@@ -127,7 +127,7 @@
 
     if-ge v2, v3, :cond_0
 
-    .line 16255
+    .line 16259
     iget v3, p0, Lcom/android/server/pm/PackageManagerService$13;->val$userId:I
 
     iget-object v4, v0, Lcom/android/server/pm/PackageManagerService$PostInstallData;->res:Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
@@ -138,16 +138,16 @@
 
     if-ne v3, v4, :cond_2
 
-    .line 16260
+    .line 16264
     return-void
 
-    .line 16254
+    .line 16258
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 16269
+    .line 16273
     .end local v0    # "data":Lcom/android/server/pm/PackageManagerService$PostInstallData;
     .end local v2    # "uIndex":I
     :cond_3
@@ -169,6 +169,6 @@
 
     invoke-static {v3, v4, v5, v6}, Lcom/android/server/pm/PackageManagerService;->-wrap47(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;Ljava/lang/String;[I)V
 
-    .line 16244
+    .line 16248
     return-void
 .end method

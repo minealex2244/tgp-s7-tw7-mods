@@ -708,29 +708,29 @@
     .param p2, "block"    # Z
 
     .prologue
-    .line 2746
+    .line 2740
     invoke-static {}, Lcom/samsung/android/security/CCManager;->isMdfEnforced()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 2747
+    .line 2741
     const-string/jumbo v2, "Vpn"
 
     const-string/jumbo v3, "CC Mode is enforced"
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2748
+    .line 2742
     if-eqz p2, :cond_1
 
-    .line 2749
+    .line 2743
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     if-eqz v2, :cond_0
 
-    .line 2751
+    .line 2745
     :try_start_0
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
@@ -738,7 +738,7 @@
 
     invoke-interface {v2, v3}, Landroid/os/INetworkManagementService;->setFirewallEnabled(Z)V
 
-    .line 2752
+    .line 2746
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const/16 v3, 0x1f4
@@ -747,7 +747,7 @@
 
     invoke-interface {v2, p1, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressDestRule(Ljava/lang/String;IZ)V
 
-    .line 2753
+    .line 2747
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const/16 v3, 0x1194
@@ -756,7 +756,7 @@
 
     invoke-interface {v2, p1, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressDestRule(Ljava/lang/String;IZ)V
 
-    .line 2754
+    .line 2748
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const/16 v3, 0x6a5
@@ -765,7 +765,7 @@
 
     invoke-interface {v2, p1, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressDestRule(Ljava/lang/String;IZ)V
 
-    .line 2755
+    .line 2749
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const-string/jumbo v3, "ipsec0"
@@ -774,7 +774,7 @@
 
     invoke-interface {v2, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallInterfaceRule(Ljava/lang/String;Z)V
 
-    .line 2756
+    .line 2750
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     iget-object v3, p0, Lcom/android/server/connectivity/Vpn;->mLegacyAddress:Ljava/lang/String;
@@ -783,7 +783,7 @@
 
     invoke-interface {v2, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressSourceRule(Ljava/lang/String;Z)V
 
-    .line 2757
+    .line 2751
     const-string/jumbo v2, "Vpn"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -806,12 +806,12 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2760
+    .line 2754
     invoke-virtual {p0, p1}, Lcom/android/server/connectivity/Vpn;->clatIpv4to6(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2761
+    .line 2755
     .local v0, "clatIpv6addr":Ljava/lang/String;
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
@@ -821,7 +821,7 @@
 
     invoke-interface {v2, v0, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressDestRule(Ljava/lang/String;IZ)V
 
-    .line 2762
+    .line 2756
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const/16 v3, 0x1194
@@ -830,7 +830,7 @@
 
     invoke-interface {v2, v0, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressDestRule(Ljava/lang/String;IZ)V
 
-    .line 2763
+    .line 2757
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const/16 v3, 0x6a5
@@ -839,7 +839,7 @@
 
     invoke-interface {v2, v0, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressDestRule(Ljava/lang/String;IZ)V
 
-    .line 2764
+    .line 2758
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const-string/jumbo v3, "fe80::/64"
@@ -848,7 +848,7 @@
 
     invoke-interface {v2, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressSourceRule(Ljava/lang/String;Z)V
 
-    .line 2765
+    .line 2759
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const-string/jumbo v3, "2000::/4"
@@ -857,7 +857,7 @@
 
     invoke-interface {v2, v3, v4}, Landroid/os/INetworkManagementService;->setFirewallEgressSourceRule(Ljava/lang/String;Z)V
 
-    .line 2766
+    .line 2760
     const-string/jumbo v2, "Vpn"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -882,17 +882,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2745
+    .line 2739
     .end local v0    # "clatIpv6addr":Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 2767
+    .line 2761
     :catch_0
     move-exception v1
 
-    .line 2768
+    .line 2762
     .local v1, "e":Ljava/lang/Exception;
     const-string/jumbo v2, "Vpn"
 
@@ -902,7 +902,7 @@
 
     goto :goto_0
 
-    .line 2774
+    .line 2768
     .end local v1    # "e":Ljava/lang/Exception;
     :cond_1
     :try_start_1
@@ -910,14 +910,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 2775
+    .line 2769
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn;->mNetd:Landroid/os/INetworkManagementService;
 
     const/4 v3, 0x0
 
     invoke-interface {v2, v3}, Landroid/os/INetworkManagementService;->setFirewallEnabled(Z)V
 
-    .line 2776
+    .line 2770
     const-string/jumbo v2, "Vpn"
 
     const-string/jumbo v3, "SetFirewallForVPN_CCMode disabled"
@@ -928,11 +928,11 @@
 
     goto :goto_0
 
-    .line 2778
+    .line 2772
     :catch_1
     move-exception v1
 
-    .line 2779
+    .line 2773
     .restart local v1    # "e":Ljava/lang/Exception;
     const-string/jumbo v2, "Vpn"
 
@@ -1541,63 +1541,63 @@
     .param p1, "type"    # I
 
     .prologue
-    .line 2798
+    .line 2792
     packed-switch p1, :pswitch_data_0
 
-    .line 2816
+    .line 2810
     const-string/jumbo v0, ""
 
     return-object v0
 
-    .line 2800
+    .line 2794
     :pswitch_0
     const-string/jumbo v0, "PPTP"
 
     return-object v0
 
-    .line 2802
+    .line 2796
     :pswitch_1
     const-string/jumbo v0, "L2TP_IPSEC_RSA"
 
     return-object v0
 
-    .line 2804
+    .line 2798
     :pswitch_2
     const-string/jumbo v0, "L2TP_IPSEC_PSK"
 
     return-object v0
 
-    .line 2806
+    .line 2800
     :pswitch_3
     const-string/jumbo v0, "IPSEC_XAUTH_RSA"
 
     return-object v0
 
-    .line 2808
+    .line 2802
     :pswitch_4
     const-string/jumbo v0, "IPSEC_XAUTH_PSK"
 
     return-object v0
 
-    .line 2810
+    .line 2804
     :pswitch_5
     const-string/jumbo v0, "IPSEC_IKEV2_RSA"
 
     return-object v0
 
-    .line 2812
+    .line 2806
     :pswitch_6
     const-string/jumbo v0, "IPSEC_IKEV2_PSK"
 
     return-object v0
 
-    .line 2814
+    .line 2808
     :pswitch_7
     const-string/jumbo v0, "IPSEC_HYBRID_RSA"
 
     return-object v0
 
-    .line 2798
+    .line 2792
     nop
 
     :pswitch_data_0
@@ -1782,19 +1782,19 @@
     .param p1, "racoon"    # [Ljava/lang/String;
 
     .prologue
-    .line 2730
+    .line 2724
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
     move-result-wide v2
 
-    .line 2731
+    .line 2725
     .local v2, "token":J
     iget-object v1, p0, Lcom/android/server/connectivity/Vpn;->mContext:Landroid/content/Context;
 
-    .line 2732
+    .line 2726
     const-string/jumbo v4, "enterprise_policy_new"
 
-    .line 2731
+    .line 2725
     invoke-virtual {v1, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
@@ -1803,16 +1803,16 @@
 
     iput-object v1, p0, Lcom/android/server/connectivity/Vpn;->mEDM:Lcom/samsung/android/knox/EnterpriseDeviceManager;
 
-    .line 2733
+    .line 2727
     const/4 v0, 0x1
 
-    .line 2734
+    .line 2728
     .local v0, "result":Z
     iget-object v1, p0, Lcom/android/server/connectivity/Vpn;->mEDM:Lcom/samsung/android/knox/EnterpriseDeviceManager;
 
     if-eqz v1, :cond_0
 
-    .line 2735
+    .line 2729
     iget-object v1, p0, Lcom/android/server/connectivity/Vpn;->mEDM:Lcom/samsung/android/knox/EnterpriseDeviceManager;
 
     invoke-virtual {v1}, Lcom/samsung/android/knox/EnterpriseDeviceManager;->getVpnPolicy()Lcom/samsung/android/knox/net/vpn/VpnPolicy;
@@ -1821,25 +1821,25 @@
 
     iput-object v1, p0, Lcom/android/server/connectivity/Vpn;->mVpnPolicy:Lcom/samsung/android/knox/net/vpn/VpnPolicy;
 
-    .line 2737
+    .line 2731
     :cond_0
     iget-object v1, p0, Lcom/android/server/connectivity/Vpn;->mVpnPolicy:Lcom/samsung/android/knox/net/vpn/VpnPolicy;
 
     if-eqz v1, :cond_1
 
-    .line 2738
+    .line 2732
     iget-object v1, p0, Lcom/android/server/connectivity/Vpn;->mVpnPolicy:Lcom/samsung/android/knox/net/vpn/VpnPolicy;
 
     invoke-virtual {v1, p1}, Lcom/samsung/android/knox/net/vpn/VpnPolicy;->checkRacoonSecurity([Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 2740
+    .line 2734
     .end local v0    # "result":Z
     :cond_1
     invoke-static {v2, v3}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
-    .line 2741
+    .line 2735
     return v0
 .end method
 
@@ -2778,7 +2778,7 @@
     .locals 1
 
     .prologue
-    .line 2823
+    .line 2817
     sget-object v0, Lcom/android/server/connectivity/Vpn;->mSecurityManager:Lcom/samsung/android/service/SecurityManager/ISecurityManagerService;
 
     if-eqz v0, :cond_0
@@ -3197,10 +3197,10 @@
     .locals 6
 
     .prologue
-    .line 2827
+    .line 2821
     const/4 v1, 0x0
 
-    .line 2829
+    .line 2823
     .local v1, "integrityTestPassed":Z
     :try_start_0
     const-string/jumbo v3, "Vpn"
@@ -3209,7 +3209,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2831
+    .line 2825
     invoke-direct {p0}, Lcom/android/server/connectivity/Vpn;->securityManagerReady()Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
@@ -3218,10 +3218,10 @@
 
     if-eqz v3, :cond_1
 
-    .line 2832
+    .line 2826
     const/4 v2, -0x1
 
-    .line 2834
+    .line 2828
     .local v2, "verifyResult":I
     :try_start_1
     sget-object v3, Lcom/android/server/connectivity/Vpn;->mSecurityManager:Lcom/samsung/android/service/SecurityManager/ISecurityManagerService;
@@ -3232,7 +3232,7 @@
 
     move-result v2
 
-    .line 2838
+    .line 2832
     :goto_0
     :try_start_2
     const-string/jumbo v3, "Vpn"
@@ -3257,22 +3257,22 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2840
+    .line 2834
     if-nez v2, :cond_0
 
     const/4 v1, 0x1
 
-    .line 2847
+    .line 2841
     .end local v2    # "verifyResult":I
     :goto_1
     return v1
 
-    .line 2835
+    .line 2829
     .restart local v2    # "verifyResult":I
     :catch_0
     move-exception v0
 
-    .line 2836
+    .line 2830
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v3, "Vpn"
 
@@ -3284,13 +3284,13 @@
 
     goto :goto_0
 
-    .line 2844
+    .line 2838
     .end local v0    # "e":Ljava/lang/Exception;
     .end local v2    # "verifyResult":I
     :catch_1
     move-exception v0
 
-    .line 2845
+    .line 2839
     .restart local v0    # "e":Ljava/lang/Exception;
     const-string/jumbo v3, "Vpn"
 
@@ -3316,7 +3316,7 @@
 
     goto :goto_1
 
-    .line 2840
+    .line 2834
     .end local v0    # "e":Ljava/lang/Exception;
     .restart local v2    # "verifyResult":I
     :cond_0
@@ -3324,7 +3324,7 @@
 
     goto :goto_1
 
-    .line 2842
+    .line 2836
     .end local v2    # "verifyResult":I
     :cond_1
     :try_start_3
@@ -4323,14 +4323,14 @@
     .param p1, "ip"    # Ljava/lang/String;
 
     .prologue
-    .line 2786
+    .line 2780
     new-instance v0, Ljava/lang/StringBuffer;
 
     const-string/jumbo v3, "64:ff9b::"
 
     invoke-direct {v0, v3}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    .line 2787
+    .line 2781
     .local v0, "clatIpv6addr":Ljava/lang/StringBuffer;
     const-string/jumbo v3, "\\."
 
@@ -4338,7 +4338,7 @@
 
     move-result-object v2
 
-    .line 2789
+    .line 2783
     .local v2, "octets":[Ljava/lang/String;
     const/4 v1, 0x0
 
@@ -4348,7 +4348,7 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 2790
+    .line 2784
     aget-object v3, v2, v1
 
     invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -4361,23 +4361,23 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 2791
+    .line 2785
     const/4 v3, 0x1
 
     if-ne v1, v3, :cond_0
 
-    .line 2792
+    .line 2786
     const-string/jumbo v3, ":"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 2789
+    .line 2783
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 2794
+    .line 2788
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 

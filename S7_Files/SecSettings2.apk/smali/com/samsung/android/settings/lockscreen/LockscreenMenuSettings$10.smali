@@ -30,7 +30,7 @@
     .param p2, "val$mUserId"    # I
 
     .prologue
-    .line 2025
+    .line 1997
     iput-object p1, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$10;->this$0:Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;
 
     iput p2, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$10;->val$mUserId:I
@@ -47,12 +47,12 @@
     .param p1, "arg0"    # Landroid/preference/Preference;
 
     .prologue
-    .line 2029
+    .line 2001
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 2030
+    .line 2002
     .local v1, "mIntent":Landroid/content/Intent;
     const-string/jumbo v2, "android.intent.extra.USER_ID"
 
@@ -60,21 +60,21 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 2031
+    .line 2003
     const-string/jumbo v2, "isAfw"
 
     const/4 v3, 0x1
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 2032
+    .line 2004
     const-string/jumbo v2, "com.android.settings"
 
     const-string/jumbo v3, "com.android.settings.fingerprint.FingerprintEntry"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 2035
+    .line 2007
     :try_start_0
     iget-object v2, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$10;->this$0:Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;
 
@@ -82,17 +82,17 @@
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2040
+    .line 2012
     :goto_0
     const/4 v2, 0x0
 
     return v2
 
-    .line 2036
+    .line 2008
     :catch_0
     move-exception v0
 
-    .line 2037
+    .line 2009
     .local v0, "e":Landroid/content/ActivityNotFoundException;
     invoke-virtual {v0}, Landroid/content/ActivityNotFoundException;->printStackTrace()V
 

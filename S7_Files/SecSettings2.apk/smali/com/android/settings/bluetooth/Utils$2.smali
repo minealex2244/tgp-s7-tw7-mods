@@ -50,11 +50,47 @@
 
     .prologue
     .line 176
-    const v0, 0x7f0b11de
+    const v0, 0x7f0b11ec
 
     invoke-static {p1, p2, v0}, Lcom/android/settings/bluetooth/Utils;->showError(Landroid/content/Context;Ljava/lang/String;I)V
 
     .line 175
+    return-void
+.end method
+
+.method public showHIDConnectingError(Landroid/content/Context;Ljava/lang/String;)V
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "name"    # Ljava/lang/String;
+
+    .prologue
+    .line 181
+    const-string/jumbo v0, ""
+
+    .line 182
+    .local v0, "message":Ljava/lang/String;
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    aput-object p2, v1, v2
+
+    const/4 v2, 0x1
+
+    aput-object p2, v1, v2
+
+    const v2, 0x7f0b11eb
+
+    invoke-virtual {p1, v2, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 184
+    invoke-static {p1, v0}, Lcom/android/settings/bluetooth/Utils;->showError(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 180
     return-void
 .end method
 
@@ -69,7 +105,7 @@
 
     const/4 v3, 0x0
 
-    .line 181
+    .line 189
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -94,14 +130,14 @@
 
     move-result-object p2
 
-    .line 183
+    .line 191
     const-string/jumbo v0, ""
 
-    .line 185
+    .line 193
     .local v0, "message":Ljava/lang/String;
     if-eqz p3, :cond_0
 
-    .line 186
+    .line 194
     new-array v1, v4, [Ljava/lang/Object;
 
     aput-object p2, v1, v3
@@ -112,14 +148,14 @@
 
     move-result-object v0
 
-    .line 191
+    .line 199
     :goto_0
     invoke-static {p1, v0}, Lcom/android/settings/bluetooth/Utils;->showError(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 180
+    .line 188
     return-void
 
-    .line 188
+    .line 196
     :cond_0
     const/4 v1, 0x2
 

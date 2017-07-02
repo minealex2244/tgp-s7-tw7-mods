@@ -340,7 +340,7 @@
 
     .line 108
     .local v1, "alertDialogBuilder":Landroid/app/AlertDialog$Builder;
-    const v7, 0x7f0b0e21
+    const v7, 0x7f0b0e30
 
     invoke-virtual {v1, v7}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -349,7 +349,7 @@
 
     invoke-direct {v7, p0}, Lcom/android/settings/wfd/WfdHelpActivity$3;-><init>(Lcom/android/settings/wfd/WfdHelpActivity;)V
 
-    const v8, 0x7f0b152f
+    const v8, 0x7f0b153d
 
     invoke-virtual {v1, v8, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

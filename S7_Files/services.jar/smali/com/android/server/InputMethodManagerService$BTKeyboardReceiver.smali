@@ -26,17 +26,17 @@
     .param p1, "this$0"    # Lcom/android/server/InputMethodManagerService;
 
     .prologue
-    .line 6072
+    .line 6076
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
-    .line 6073
+    .line 6077
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->mIsBTConnect:Z
 
-    .line 6072
+    .line 6076
     return-void
 .end method
 
@@ -48,12 +48,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 6077
+    .line 6081
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 6078
+    .line 6082
     .local v2, "intentAction":Ljava/lang/String;
     const-string/jumbo v6, "InputMethodManagerService"
 
@@ -77,7 +77,7 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6079
+    .line 6083
     const-string/jumbo v6, "android.bluetooth.adapter.action.STATE_CHANGED"
 
     invoke-virtual {v6, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -86,7 +86,7 @@
 
     if-eqz v6, :cond_4
 
-    .line 6080
+    .line 6084
     const-string/jumbo v6, "android.bluetooth.adapter.extra.STATE"
 
     const/4 v7, -0x1
@@ -95,7 +95,7 @@
 
     move-result v5
 
-    .line 6082
+    .line 6086
     .local v5, "state":I
     const-string/jumbo v6, "InputMethodManagerService"
 
@@ -119,20 +119,20 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6083
+    .line 6087
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get0()I
 
     move-result v6
 
     and-int/lit8 v0, v6, 0x2
 
-    .line 6085
+    .line 6089
     .local v0, "checkBTKeyboard":I
     const/16 v6, 0xa
 
     if-ne v5, v6, :cond_3
 
-    .line 6086
+    .line 6090
     const-string/jumbo v6, "InputMethodManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -175,12 +175,12 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6087
+    .line 6091
     const/4 v6, 0x2
 
     if-ne v0, v6, :cond_1
 
-    .line 6088
+    .line 6092
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get0()I
 
     move-result v6
@@ -189,7 +189,7 @@
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set0(I)I
 
-    .line 6089
+    .line 6093
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get20()I
 
     move-result v6
@@ -198,7 +198,7 @@
 
     if-ne v6, v7, :cond_0
 
-    .line 6090
+    .line 6094
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v6, v6, Lcom/android/server/InputMethodManagerService;->mContentResolver:Landroid/content/ContentResolver;
@@ -211,36 +211,36 @@
 
     invoke-static {v6, v7, v8}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 6092
+    .line 6096
     :cond_0
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v6}, Lcom/android/server/InputMethodManagerService;->hideKeyboardDialog()V
 
-    .line 6093
+    .line 6097
     const/4 v6, 0x0
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set7(I)I
 
-    .line 6095
+    .line 6099
     :cond_1
     const/4 v6, 0x0
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set2(I)I
 
-    .line 6096
+    .line 6100
     const/4 v6, 0x0
 
     iput-boolean v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->mIsBTConnect:Z
 
-    .line 6076
+    .line 6080
     .end local v0    # "checkBTKeyboard":I
     .end local v5    # "state":I
     :cond_2
     :goto_0
     return-void
 
-    .line 6097
+    .line 6101
     .restart local v0    # "checkBTKeyboard":I
     .restart local v5    # "state":I
     :cond_3
@@ -248,7 +248,7 @@
 
     if-ne v5, v6, :cond_2
 
-    .line 6098
+    .line 6102
     const-string/jumbo v6, "InputMethodManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -291,14 +291,14 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6099
+    .line 6103
     const/4 v6, 0x1
 
     iput-boolean v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->mIsBTConnect:Z
 
     goto :goto_0
 
-    .line 6101
+    .line 6105
     .end local v0    # "checkBTKeyboard":I
     .end local v5    # "state":I
     :cond_4
@@ -310,7 +310,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 6103
+    .line 6107
     const-string/jumbo v6, "android.bluetooth.profile.extra.STATE"
 
     const/4 v7, -0x1
@@ -319,7 +319,7 @@
 
     move-result v1
 
-    .line 6104
+    .line 6108
     .local v1, "extra":I
     const-string/jumbo v6, "android.bluetooth.profile.extra.isKeyboard"
 
@@ -329,7 +329,7 @@
 
     move-result v3
 
-    .line 6105
+    .line 6109
     .local v3, "isKeyboard":Z
     const-string/jumbo v6, "android.bluetooth.profile.extra.PREVIOUS_STATE"
 
@@ -339,7 +339,7 @@
 
     move-result v4
 
-    .line 6107
+    .line 6111
     .local v4, "prevState":I
     const-string/jumbo v6, "InputMethodManagerService"
 
@@ -363,18 +363,18 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6108
+    .line 6112
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get0()I
 
     move-result v6
 
     and-int/lit8 v0, v6, 0x2
 
-    .line 6111
+    .line 6115
     .restart local v0    # "checkBTKeyboard":I
     if-eqz v3, :cond_2
 
-    .line 6112
+    .line 6116
     const-string/jumbo v6, "InputMethodManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -407,24 +407,24 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6113
+    .line 6117
     const/4 v6, 0x2
 
     if-ne v1, v6, :cond_a
 
-    .line 6114
+    .line 6118
     const/4 v6, 0x1
 
     iput-boolean v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->mIsBTConnect:Z
 
-    .line 6115
+    .line 6119
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get4()I
 
     move-result v6
 
     if-gez v6, :cond_5
 
-    .line 6116
+    .line 6120
     const-string/jumbo v6, "InputMethodManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -457,12 +457,12 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6117
+    .line 6121
     const/4 v6, 0x0
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set2(I)I
 
-    .line 6119
+    .line 6123
     :cond_5
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get4()I
 
@@ -472,7 +472,7 @@
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set2(I)I
 
-    .line 6120
+    .line 6124
     const-string/jumbo v6, "InputMethodManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -499,7 +499,7 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6121
+    .line 6125
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get0()I
 
     move-result v6
@@ -508,7 +508,7 @@
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set0(I)I
 
-    .line 6122
+    .line 6126
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-wrap3(Lcom/android/server/InputMethodManagerService;)Z
@@ -517,18 +517,18 @@
 
     if-eqz v6, :cond_6
 
-    .line 6123
+    .line 6127
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v6}, Lcom/android/server/InputMethodManagerService;->setDefaultIMEforJapaneseKeyboard()V
 
-    .line 6129
+    .line 6133
     :goto_1
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v6}, Lcom/android/server/InputMethodManagerService;->hideKeyboardDialog()V
 
-    .line 6130
+    .line 6134
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     const/4 v7, 0x0
@@ -537,7 +537,7 @@
 
     invoke-virtual {v6, v7, v8}, Lcom/android/server/InputMethodManagerService;->hideCurrentInputLocked(ILandroid/os/ResultReceiver;)Z
 
-    .line 6131
+    .line 6135
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v6
@@ -552,14 +552,14 @@
 
     if-nez v6, :cond_9
 
-    .line 6132
+    .line 6136
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get5()Ljava/lang/String;
 
     move-result-object v6
 
     if-eqz v6, :cond_2
 
-    .line 6133
+    .line 6137
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get5()Ljava/lang/String;
 
     move-result-object v6
@@ -574,7 +574,7 @@
 
     if-nez v6, :cond_8
 
-    .line 6134
+    .line 6138
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     const/4 v7, 0x2
@@ -583,7 +583,7 @@
 
     goto/16 :goto_0
 
-    .line 6124
+    .line 6128
     :cond_6
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -603,14 +603,14 @@
 
     if-eqz v6, :cond_7
 
-    .line 6125
+    .line 6129
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v6}, Lcom/android/server/InputMethodManagerService;->setDefaultIMEforChineseKeyboard()V
 
     goto :goto_1
 
-    .line 6127
+    .line 6131
     :cond_7
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -618,7 +618,7 @@
 
     goto :goto_1
 
-    .line 6138
+    .line 6142
     :cond_8
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -626,7 +626,7 @@
 
     goto/16 :goto_0
 
-    .line 6143
+    .line 6147
     :cond_9
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -634,13 +634,13 @@
 
     goto/16 :goto_0
 
-    .line 6146
+    .line 6150
     :cond_a
     const/4 v6, 0x2
 
     if-ne v4, v6, :cond_2
 
-    .line 6147
+    .line 6151
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get4()I
 
     move-result v6
@@ -649,7 +649,7 @@
 
     if-ge v6, v7, :cond_b
 
-    .line 6148
+    .line 6152
     const-string/jumbo v6, "InputMethodManagerService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -682,12 +682,12 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6149
+    .line 6153
     const/4 v6, 0x1
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set2(I)I
 
-    .line 6151
+    .line 6155
     :cond_b
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get4()I
 
@@ -715,7 +715,7 @@
 
     if-ne v6, v7, :cond_e
 
-    .line 6152
+    .line 6156
     :cond_c
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get0()I
 
@@ -725,7 +725,7 @@
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set0(I)I
 
-    .line 6153
+    .line 6157
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get20()I
 
     move-result v6
@@ -734,7 +734,7 @@
 
     if-ne v6, v7, :cond_d
 
-    .line 6154
+    .line 6158
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v6, v6, Lcom/android/server/InputMethodManagerService;->mContentResolver:Landroid/content/ContentResolver;
@@ -747,18 +747,18 @@
 
     invoke-static {v6, v7, v8}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 6156
+    .line 6160
     :cond_d
     iget-object v6, p0, Lcom/android/server/InputMethodManagerService$BTKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v6}, Lcom/android/server/InputMethodManagerService;->hideKeyboardDialog()V
 
-    .line 6157
+    .line 6161
     const/4 v6, 0x0
 
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set7(I)I
 
-    .line 6159
+    .line 6163
     :cond_e
     const-string/jumbo v6, "InputMethodManagerService"
 

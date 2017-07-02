@@ -229,7 +229,7 @@
     const-string/jumbo v3, "title"
 
     .line 349
-    const v4, 0x7f0b15f2
+    const v4, 0x7f0b1600
 
     .line 348
     invoke-virtual {p0, v4}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
@@ -250,7 +250,7 @@
     move-result-object v4
 
     .line 351
-    const v5, 0x7f0b15f4
+    const v5, 0x7f0b1602
 
     .line 350
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
@@ -387,7 +387,7 @@
     const-string/jumbo v3, "title"
 
     .line 338
-    const v4, 0x7f0b15f5
+    const v4, 0x7f0b1603
 
     .line 337
     invoke-virtual {p0, v4}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
@@ -400,7 +400,7 @@
     const-string/jumbo v3, "summary"
 
     .line 340
-    const v4, 0x7f0b15f8
+    const v4, 0x7f0b1606
 
     .line 339
     invoke-virtual {p0, v4}, Lcom/android/settings/accessibility/AccessibilitySettings;->getString(I)Ljava/lang/String;
@@ -1083,7 +1083,7 @@
     if-nez v1, :cond_1
 
     .line 629
-    const v2, 0x7f0b160a
+    const v2, 0x7f0b1618
 
     invoke-virtual {p1, v2}, Landroid/support/v7/preference/Preference;->setSummary(I)V
 
@@ -1157,7 +1157,7 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    const v1, 0x7f0b1609
+    const v1, 0x7f0b1617
 
     :goto_1
     invoke-virtual {p2, v1}, Landroid/support/v7/preference/Preference;->setSummary(I)V
@@ -1175,7 +1175,7 @@
     .line 622
     .restart local v0    # "enabled":Z
     :cond_1
-    const v1, 0x7f0b160a
+    const v1, 0x7f0b1618
 
     goto :goto_1
 .end method
@@ -1541,7 +1541,7 @@
     if-eqz v18, :cond_5
 
     .line 487
-    const v23, 0x7f0b1609
+    const v23, 0x7f0b1617
 
     move-object/from16 v0, p0
 
@@ -1675,7 +1675,7 @@
     if-eqz v23, :cond_1
 
     .line 521
-    const v23, 0x7f0b1637
+    const v23, 0x7f0b1645
 
     move-object/from16 v0, p0
 
@@ -1710,7 +1710,7 @@
     const-string/jumbo v23, "settings_title"
 
     .line 528
-    const v24, 0x7f0b1608
+    const v24, 0x7f0b1616
 
     move-object/from16 v0, p0
 
@@ -1832,7 +1832,7 @@
     .line 489
     .restart local v18    # "serviceEnabled":Z
     :cond_5
-    const v23, 0x7f0b160a
+    const v23, 0x7f0b1618
 
     move-object/from16 v0, p0
 
@@ -1988,7 +1988,7 @@
     move-object/from16 v23, v0
 
     .line 547
-    const v24, 0x7f0b1636
+    const v24, 0x7f0b1644
 
     move-object/from16 v0, p0
 
@@ -2283,7 +2283,7 @@
     iget-object v6, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mGlobalGesturePreferenceScreen:Landroid/support/v7/preference/PreferenceScreen;
 
     .line 612
-    const v7, 0x7f0b15f6
+    const v7, 0x7f0b1604
 
     .line 611
     invoke-virtual {v6, v7}, Landroid/support/v7/preference/PreferenceScreen;->setSummary(I)V
@@ -2345,7 +2345,7 @@
     iget-object v6, p0, Lcom/android/settings/accessibility/AccessibilitySettings;->mGlobalGesturePreferenceScreen:Landroid/support/v7/preference/PreferenceScreen;
 
     .line 615
-    const v7, 0x7f0b15f7
+    const v7, 0x7f0b1605
 
     .line 614
     invoke-virtual {v6, v7}, Landroid/support/v7/preference/PreferenceScreen;->setSummary(I)V
@@ -2360,7 +2360,7 @@
 
     .prologue
     .line 209
-    const v0, 0x7f0b188c
+    const v0, 0x7f0b189a
 
     return v0
 .end method

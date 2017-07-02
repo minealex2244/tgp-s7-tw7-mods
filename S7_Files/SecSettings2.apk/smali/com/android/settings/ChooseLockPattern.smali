@@ -886,7 +886,7 @@
 
     .line 213
     :cond_2
-    const v3, 0x7f0b09f4
+    const v3, 0x7f0b09f7
 
     invoke-virtual {p0, v3}, Lcom/android/settings/ChooseLockPattern;->getText(I)Ljava/lang/CharSequence;
 
@@ -921,7 +921,7 @@
 
     .line 219
     :cond_5
-    const v3, 0x7f0b14a8
+    const v3, 0x7f0b14b6
 
     invoke-virtual {p0, v3}, Lcom/android/settings/ChooseLockPattern;->getText(I)Ljava/lang/CharSequence;
 
@@ -939,7 +939,7 @@
 
     aput-object v4, v3, v5
 
-    const v4, 0x7f0b07af
+    const v4, 0x7f0b07b2
 
     invoke-virtual {p0, v4, v3}, Lcom/android/settings/ChooseLockPattern;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

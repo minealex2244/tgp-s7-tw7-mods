@@ -3,7 +3,7 @@
 .source "FindMyMobileSettings.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnKeyListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
 
     .prologue
-    .line 589
+    .line 668
     iput-object p1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$10;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,43 +37,17 @@
 
 
 # virtual methods
-.method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
-    .locals 3
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
     .param p1, "dialog"    # Landroid/content/DialogInterface;
-    .param p2, "keyCode"    # I
-    .param p3, "event"    # Landroid/view/KeyEvent;
+    .param p2, "which"    # I
 
     .prologue
-    .line 591
-    const/4 v0, 0x0
+    .line 670
+    iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$10;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
 
-    .line 592
-    .local v0, "ret":Z
-    const/4 v1, 0x4
+    invoke-static {v0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->-wrap2(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
 
-    if-ne p2, v1, :cond_0
-
-    .line 593
-    invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
-
-    move-result v1
-
-    const/4 v2, 0x1
-
-    if-ne v1, v2, :cond_0
-
-    .line 594
-    iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$10;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
-
-    invoke-static {v1}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->-wrap1(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
-
-    .line 595
-    invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
-
-    .line 596
-    const/4 v0, 0x1
-
-    .line 598
-    :cond_0
-    return v0
+    .line 669
+    return-void
 .end method

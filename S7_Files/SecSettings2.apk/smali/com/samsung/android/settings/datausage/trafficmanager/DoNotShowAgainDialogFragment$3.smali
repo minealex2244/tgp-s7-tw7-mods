@@ -294,7 +294,7 @@
     const/4 v2, 0x0
 
     .line 128
-    const v3, 0x7f0b0efb
+    const v3, 0x7f0b0f0a
 
     const/4 v4, 0x0
 
@@ -337,7 +337,7 @@
     const/4 v3, 0x0
 
     .line 132
-    const v4, 0x7f0b0efb
+    const v4, 0x7f0b0f0a
 
     const/4 v5, 0x0
 

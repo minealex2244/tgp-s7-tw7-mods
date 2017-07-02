@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer;
 
     .prologue
-    .line 1505
+    .line 1514
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer$NoCredentialAuthenticator;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnProxyServer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 1517
+    .line 1526
     const/4 v0, 0x0
 
     return-object v0
@@ -59,7 +59,7 @@
     .end annotation
 
     .prologue
-    .line 1513
+    .line 1522
     const/4 v0, 0x0
 
     return-object v0
@@ -77,7 +77,7 @@
     .end annotation
 
     .prologue
-    .line 1509
+    .line 1518
     const/4 v0, 0x0
 
     return v0

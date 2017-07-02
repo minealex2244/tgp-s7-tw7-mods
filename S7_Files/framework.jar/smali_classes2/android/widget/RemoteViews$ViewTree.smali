@@ -51,13 +51,13 @@
     .param p1, "root"    # Landroid/view/View;
 
     .prologue
-    .line 4223
+    .line 4207
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4224
+    .line 4208
     iput-object p1, p0, Landroid/widget/RemoteViews$ViewTree;->mRoot:Landroid/view/View;
 
-    .line 4223
+    .line 4207
     return-void
 .end method
 
@@ -76,28 +76,28 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 4279
+    .line 4263
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result v5
 
     if-eqz v5, :cond_0
 
-    .line 4280
+    .line 4264
     new-instance v3, Landroid/widget/RemoteViews$ViewTree;
 
     invoke-direct {v3, p1}, Landroid/widget/RemoteViews$ViewTree;-><init>(Landroid/view/View;)V
 
-    .line 4281
+    .line 4265
     .local v3, "tree":Landroid/widget/RemoteViews$ViewTree;
     iget-object v5, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 4282
+    .line 4266
     move-object v2, v3
 
-    .line 4287
+    .line 4271
     .end local v3    # "tree":Landroid/widget/RemoteViews$ViewTree;
     .local v2, "target":Landroid/widget/RemoteViews$ViewTree;
     :goto_0
@@ -111,12 +111,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 4288
+    .line 4272
     iget-object v5, v2, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
     if-nez v5, :cond_1
 
-    .line 4289
+    .line 4273
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
@@ -125,18 +125,18 @@
 
     move-object v4, p1
 
-    .line 4290
+    .line 4274
     nop
 
     nop
 
-    .line 4291
+    .line 4275
     .local v4, "vg":Landroid/view/ViewGroup;
     invoke-virtual {v4}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
-    .line 4292
+    .line 4276
     .local v0, "count":I
     const/4 v1, 0x0
 
@@ -144,19 +144,19 @@
     :goto_1
     if-ge v1, v0, :cond_1
 
-    .line 4293
+    .line 4277
     invoke-virtual {v4, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
 
     invoke-direct {v2, v5}, Landroid/widget/RemoteViews$ViewTree;->addViewChild(Landroid/view/View;)V
 
-    .line 4292
+    .line 4276
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 4284
+    .line 4268
     .end local v0    # "count":I
     .end local v1    # "i":I
     .end local v2    # "target":Landroid/widget/RemoteViews$ViewTree;
@@ -167,7 +167,7 @@
     .restart local v2    # "target":Landroid/widget/RemoteViews$ViewTree;
     goto :goto_0
 
-    .line 4274
+    .line 4258
     :cond_1
     return-void
 .end method
@@ -179,28 +179,28 @@
     .param p1, "child"    # Landroid/widget/RemoteViews$ViewTree;
 
     .prologue
-    .line 4267
+    .line 4251
     iget-object v0, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
 
-    .line 4268
+    .line 4252
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
-    .line 4270
+    .line 4254
     :cond_0
     invoke-virtual {p1}, Landroid/widget/RemoteViews$ViewTree;->createTree()V
 
-    .line 4271
+    .line 4255
     iget-object v0, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 4266
+    .line 4250
     return-void
 .end method
 
@@ -208,15 +208,15 @@
     .locals 4
 
     .prologue
-    .line 4228
+    .line 4212
     iget-object v3, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
     if-eqz v3, :cond_0
 
-    .line 4229
+    .line 4213
     return-void
 
-    .line 4232
+    .line 4216
     :cond_0
     new-instance v3, Ljava/util/ArrayList;
 
@@ -224,7 +224,7 @@
 
     iput-object v3, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
-    .line 4233
+    .line 4217
     iget-object v3, p0, Landroid/widget/RemoteViews$ViewTree;->mRoot:Landroid/view/View;
 
     instance-of v3, v3, Landroid/view/ViewGroup;
@@ -239,18 +239,18 @@
 
     if-eqz v3, :cond_1
 
-    .line 4234
+    .line 4218
     iget-object v2, p0, Landroid/widget/RemoteViews$ViewTree;->mRoot:Landroid/view/View;
 
     check-cast v2, Landroid/view/ViewGroup;
 
-    .line 4235
+    .line 4219
     .local v2, "vg":Landroid/view/ViewGroup;
     invoke-virtual {v2}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
 
-    .line 4236
+    .line 4220
     .local v0, "count":I
     const/4 v1, 0x0
 
@@ -258,19 +258,19 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 4237
+    .line 4221
     invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
     invoke-direct {p0, v3}, Landroid/widget/RemoteViews$ViewTree;->addViewChild(Landroid/view/View;)V
 
-    .line 4236
+    .line 4220
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 4227
+    .line 4211
     .end local v0    # "count":I
     .end local v1    # "i":I
     .end local v2    # "vg":Landroid/view/ViewGroup;
@@ -285,12 +285,12 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 4259
+    .line 4243
     iget-object v2, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
     if-nez v2, :cond_0
 
-    .line 4260
+    .line 4244
     iget-object v1, p0, Landroid/widget/RemoteViews$ViewTree;->mRoot:Landroid/view/View;
 
     invoke-virtual {v1, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -299,13 +299,13 @@
 
     return-object v1
 
-    .line 4262
+    .line 4246
     :cond_0
     invoke-virtual {p0, p1}, Landroid/widget/RemoteViews$ViewTree;->findViewTreeById(I)Landroid/widget/RemoteViews$ViewTree;
 
     move-result-object v0
 
-    .line 4263
+    .line 4247
     .local v0, "tree":Landroid/widget/RemoteViews$ViewTree;
     if-nez v0, :cond_1
 
@@ -325,7 +325,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 4243
+    .line 4227
     iget-object v3, p0, Landroid/widget/RemoteViews$ViewTree;->mRoot:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getId()I
@@ -334,19 +334,19 @@
 
     if-ne v3, p1, :cond_0
 
-    .line 4244
+    .line 4228
     return-object p0
 
-    .line 4246
+    .line 4230
     :cond_0
     iget-object v3, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
     if-nez v3, :cond_1
 
-    .line 4247
+    .line 4231
     return-object v4
 
-    .line 4249
+    .line 4233
     :cond_1
     iget-object v3, p0, Landroid/widget/RemoteViews$ViewTree;->mChildren:Ljava/util/ArrayList;
 
@@ -368,20 +368,20 @@
 
     check-cast v1, Landroid/widget/RemoteViews$ViewTree;
 
-    .line 4250
+    .line 4234
     .local v1, "tree":Landroid/widget/RemoteViews$ViewTree;
     invoke-virtual {v1, p1}, Landroid/widget/RemoteViews$ViewTree;->findViewTreeById(I)Landroid/widget/RemoteViews$ViewTree;
 
     move-result-object v0
 
-    .line 4251
+    .line 4235
     .local v0, "result":Landroid/widget/RemoteViews$ViewTree;
     if-eqz v0, :cond_2
 
-    .line 4252
+    .line 4236
     return-object v0
 
-    .line 4255
+    .line 4239
     .end local v0    # "result":Landroid/widget/RemoteViews$ViewTree;
     .end local v1    # "tree":Landroid/widget/RemoteViews$ViewTree;
     :cond_3

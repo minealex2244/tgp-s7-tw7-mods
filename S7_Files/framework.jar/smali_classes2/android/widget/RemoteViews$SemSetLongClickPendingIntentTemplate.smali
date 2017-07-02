@@ -32,20 +32,20 @@
     .param p3, "pendingIntentTemplate"    # Landroid/app/PendingIntent;
 
     .prologue
-    .line 4381
+    .line 4365
     iput-object p1, p0, Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 4382
+    .line 4366
     iput p2, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
-    .line 4383
+    .line 4367
     iput-object p3, p0, Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate;->pendingIntentTemplate:Landroid/app/PendingIntent;
 
-    .line 4381
+    .line 4365
     return-void
 .end method
 
@@ -55,28 +55,28 @@
     .param p2, "parcel"    # Landroid/os/Parcel;
 
     .prologue
-    .line 4386
+    .line 4370
     iput-object p1, p0, Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 4387
+    .line 4371
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
-    .line 4388
+    .line 4372
     invoke-static {p2}, Landroid/app/PendingIntent;->readPendingIntentOrNullFromParcel(Landroid/os/Parcel;)Landroid/app/PendingIntent;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate;->pendingIntentTemplate:Landroid/app/PendingIntent;
 
-    .line 4386
+    .line 4370
     return-void
 .end method
 
@@ -89,21 +89,21 @@
     .param p3, "handler"    # Landroid/widget/RemoteViews$OnClickHandler;
 
     .prologue
-    .line 4400
+    .line 4384
     iget v3, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 4401
+    .line 4385
     .local v2, "target":Landroid/view/View;
     if-nez v2, :cond_0
 
-    .line 4402
+    .line 4386
     return-void
 
-    .line 4407
+    .line 4391
     :cond_0
     instance-of v3, v2, Landroid/widget/AdapterView;
 
@@ -111,30 +111,30 @@
 
     move-object v0, v2
 
-    .line 4408
+    .line 4392
     nop
 
     nop
 
-    .line 4410
+    .line 4394
     .local v0, "av":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     new-instance v1, Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate$1;
 
     invoke-direct {v1, p0, p3}, Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate$1;-><init>(Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate;Landroid/widget/RemoteViews$OnClickHandler;)V
 
-    .line 4448
+    .line 4432
     .local v1, "listener":Landroid/widget/AdapterView$OnItemLongClickListener;
     invoke-virtual {v0, v1}, Landroid/widget/AdapterView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
-    .line 4449
+    .line 4433
     iget-object v3, p0, Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate;->pendingIntentTemplate:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 4399
+    .line 4383
     return-void
 
-    .line 4451
+    .line 4435
     .end local v0    # "av":Landroid/widget/AdapterView;, "Landroid/widget/AdapterView<*>;"
     .end local v1    # "listener":Landroid/widget/AdapterView$OnItemLongClickListener;
     :cond_1
@@ -150,18 +150,18 @@
 
     move-result-object v4
 
-    .line 4452
+    .line 4436
     iget v5, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
-    .line 4451
+    .line 4435
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
-    .line 4452
+    .line 4436
     const-string/jumbo v5, ")"
 
-    .line 4451
+    .line 4435
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
@@ -172,7 +172,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4453
+    .line 4437
     return-void
 .end method
 
@@ -180,7 +180,7 @@
     .locals 1
 
     .prologue
-    .line 4459
+    .line 4443
     const-string/jumbo v0, "SetLongClickPendingIntentTemplate"
 
     return-object v0
@@ -192,23 +192,23 @@
     .param p2, "flags"    # I
 
     .prologue
-    .line 4393
+    .line 4377
     const/16 v0, 0x14
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 4394
+    .line 4378
     iget v0, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 4395
+    .line 4379
     iget-object v0, p0, Landroid/widget/RemoteViews$SemSetLongClickPendingIntentTemplate;->pendingIntentTemplate:Landroid/app/PendingIntent;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, v1}, Landroid/app/PendingIntent;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 4392
+    .line 4376
     return-void
 .end method

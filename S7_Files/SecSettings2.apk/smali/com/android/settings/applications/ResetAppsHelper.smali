@@ -237,7 +237,7 @@
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 101
-    const v1, 0x7f0b151b
+    const v1, 0x7f0b1529
 
     .line 100
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -245,7 +245,7 @@
     move-result-object v0
 
     .line 102
-    const v1, 0x7f0b151c
+    const v1, 0x7f0b152a
 
     .line 100
     invoke-virtual {v0, v1, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -257,7 +257,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/settings/applications/ResetAppsHelper$1;-><init>(Lcom/android/settings/applications/ResetAppsHelper;)V
 
-    const v2, 0x7f0b10f5
+    const v2, 0x7f0b1102
 
     .line 100
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

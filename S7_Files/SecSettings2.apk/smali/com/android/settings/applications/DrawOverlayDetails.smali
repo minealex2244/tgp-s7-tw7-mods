@@ -75,7 +75,7 @@
     if-eqz v0, :cond_0
 
     .line 192
-    const v0, 0x7f0b19ca
+    const v0, 0x7f0b19d8
 
     .line 191
     :goto_0
@@ -87,7 +87,7 @@
 
     .line 192
     :cond_0
-    const v0, 0x7f0b19cb
+    const v0, 0x7f0b19d9
 
     goto :goto_0
 .end method
@@ -322,14 +322,14 @@
     .line 90
     iget-object v1, p0, Lcom/android/settings/applications/DrawOverlayDetails;->mOverlayPrefs:Landroid/preference/Preference;
 
-    const v2, 0x7f0b1a91
+    const v2, 0x7f0b1a9f
 
     invoke-virtual {v1, v2}, Landroid/preference/Preference;->setTitle(I)V
 
     .line 91
     iget-object v1, p0, Lcom/android/settings/applications/DrawOverlayDetails;->mOverlayDesc:Lcom/samsung/android/settings/UnclickablePreference;
 
-    const v2, 0x7f0b1a92
+    const v2, 0x7f0b1aa0
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/settings/UnclickablePreference;->setTitle(I)V
 

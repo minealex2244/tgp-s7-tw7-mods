@@ -30,16 +30,16 @@
     .param p2, "summaryLoader"    # Lcom/android/settings/dashboard/SummaryLoader;
 
     .prologue
-    .line 2136
+    .line 2108
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2137
+    .line 2109
     iput-object p1, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
-    .line 2138
+    .line 2110
     iput-object p2, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$SummaryProvider;->mSummaryLoader:Lcom/android/settings/dashboard/SummaryLoader;
 
-    .line 2136
+    .line 2108
     return-void
 .end method
 
@@ -50,19 +50,19 @@
     .param p1, "listening"    # Z
 
     .prologue
-    .line 2144
+    .line 2116
     if-eqz p1, :cond_3
 
-    .line 2145
+    .line 2117
     iget-object v1, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0b0562
+    const v2, 0x7f0b0563
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2146
+    .line 2118
     .local v0, "summary":Ljava/lang/String;
     iget-object v1, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
@@ -72,7 +72,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 2147
+    .line 2119
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -93,7 +93,7 @@
 
     iget-object v2, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b066c
+    const v3, 0x7f0b066d
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -107,7 +107,7 @@
 
     move-result-object v0
 
-    .line 2149
+    .line 2121
     :cond_0
     invoke-static {}, Lcom/android/settings/Utils;->isSupportIris()Z
 
@@ -123,7 +123,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 2152
+    .line 2124
     :cond_1
     :goto_0
     invoke-static {}, Lcom/android/settings/Utils;->isSprModel()Z
@@ -144,19 +144,19 @@
 
     if-eqz v1, :cond_5
 
-    .line 2155
+    .line 2127
     :cond_2
     :goto_1
     iget-object v1, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$SummaryProvider;->mSummaryLoader:Lcom/android/settings/dashboard/SummaryLoader;
 
     invoke-virtual {v1, p0, v0}, Lcom/android/settings/dashboard/SummaryLoader;->setSummary(Lcom/android/settings/dashboard/SummaryLoader$SummaryProvider;Ljava/lang/CharSequence;)V
 
-    .line 2143
+    .line 2115
     .end local v0    # "summary":Ljava/lang/String;
     :cond_3
     return-void
 
-    .line 2150
+    .line 2122
     .restart local v0    # "summary":Ljava/lang/String;
     :cond_4
     new-instance v1, Ljava/lang/StringBuilder;
@@ -179,7 +179,7 @@
 
     iget-object v2, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b0749
+    const v3, 0x7f0b074c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -195,7 +195,7 @@
 
     goto :goto_0
 
-    .line 2153
+    .line 2125
     :cond_5
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -217,7 +217,7 @@
 
     iget-object v2, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$SummaryProvider;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b0721
+    const v3, 0x7f0b0722
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

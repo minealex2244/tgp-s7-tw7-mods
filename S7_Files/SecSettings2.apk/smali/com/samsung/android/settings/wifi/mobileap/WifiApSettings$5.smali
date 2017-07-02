@@ -265,12 +265,12 @@
 
     .line 1662
     .local v1, "configDialog":Landroid/app/AlertDialog$Builder;
-    const v2, 0x7f0b0d1b
+    const v2, 0x7f0b0d2a
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 1663
-    const v2, 0x7f0b0d1c
+    const v2, 0x7f0b0d2b
 
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -291,7 +291,7 @@
 
     invoke-direct {v2, p0}, Lcom/samsung/android/settings/wifi/mobileap/WifiApSettings$5$2;-><init>(Lcom/samsung/android/settings/wifi/mobileap/WifiApSettings$5;)V
 
-    const v3, 0x7f0b10f5
+    const v3, 0x7f0b1102
 
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

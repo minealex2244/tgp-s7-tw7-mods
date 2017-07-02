@@ -181,7 +181,7 @@
     <string name="launch_defaults_some">Some defaults set</string>
     <string name="launch_defaults_none">No defaults set</string>
     <string name="tts_settings">Text-to-speech settings</string>
-    <string name="tts_settings_title">Text-to-speech output</string>
+    <string name="tts_settings_title">Text-to-speech</string>
     <string name="tts_default_rate_title">Speech rate</string>
     <string name="tts_default_rate_summary">Speed at which the text is spoken</string>
     <string name="tts_default_pitch_title">Pitch</string>
@@ -928,6 +928,8 @@ data"</string>
     <string name="quick_settings_volte_label">VoLTE</string>
     <string name="quick_settings_wificalling_label">"Wifi
 Calling"</string>
+    <string name="quick_settings_wificalling_label_non_translatable">"Wifi
+Calling"</string>
     <string name="quick_settings_personal_mode_label">"Private
 mode"</string>
     <string name="quick_settings_data_roaming_label">"Data
@@ -1103,6 +1105,7 @@ The Wi-Fi calling icon will appear in the notification panel as shown below whil
     <string name="quick_settings_dual_label_content_description">%s, Button label, Double tap to view relevant quick settings.</string>
     <string name="accessibility_button">Button</string>
     <string name="quick_settings_brightness_auto_brightness">Auto brightness</string>
+    <string name="quick_settings_brightness_auto_brightness_summary">Adjust the screen brightness automatically based on the lighting conditions.</string>
     <string name="quick_settings_brightness_quick_access">Show control on top</string>
     <string name="quick_settings_brightness_quick_access_summary">Show the brightness control above the notification panel.</string>
     <string name="quick_settings_brightness_detail_level">Level</string>
@@ -1801,6 +1804,7 @@ upscaler"</string>
     <string name="dcm_lockscreen_unlock_help_text_fingerprints_iris">Use fingerprint to unlock device or tap Lock icon to use irises instead</string>
     <string name="dcm_lockscreen_bouncer_instructions">Touch again to open</string>
     <string name="dcm_lockscreen_bouncer_instructions_fingerprints">Use fingerprint or Touch again to open</string>
+    <string name="remote_input_toast_text_on_sview_cover">Unable to use Quick reply function while S view cover closed.</string>
     <string name="wfc_enable_dialog_opv_title">WELCOME TO WI-FI CALLING SERVICE</string>
     <string name="wfc_enable_dialog_opv_body0">"Wi-Fi Calling is a service of your mobile operator, Orange Polska S.A.
 Please read the description of the service provided by your operator:"</string>
@@ -2347,6 +2351,6 @@ Try again in 1 second"</string>
     <string name="theme_clockfont_effect_type" />
     <string name="kg_wallpaper_preview_title">Lock screen</string>
     <string name="kg_wallpaper_preview_button">Set as wallpaper</string>
-    <item type="string" name="APKTOOL_DUMMY_6a5">false</item>
-    <item type="string" name="APKTOOL_DUMMY_6a6">false</item>
+    <item type="string" name="APKTOOL_DUMMY_6a8">false</item>
+    <item type="string" name="APKTOOL_DUMMY_6a9">false</item>
 </resources>

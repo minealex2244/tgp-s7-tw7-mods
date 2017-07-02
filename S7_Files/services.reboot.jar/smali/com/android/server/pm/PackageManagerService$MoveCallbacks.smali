@@ -83,24 +83,24 @@
     .param p1, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 27101
+    .line 27113
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 27096
+    .line 27108
     new-instance v0, Landroid/os/RemoteCallbackList;
 
     invoke-direct {v0}, Landroid/os/RemoteCallbackList;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mCallbacks:Landroid/os/RemoteCallbackList;
 
-    .line 27098
+    .line 27110
     new-instance v0, Landroid/util/SparseIntArray;
 
     invoke-direct {v0}, Landroid/util/SparseIntArray;-><init>()V
 
     iput-object v0, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mLastStatus:Landroid/util/SparseIntArray;
 
-    .line 27100
+    .line 27112
     return-void
 .end method
 
@@ -116,14 +116,14 @@
     .end annotation
 
     .prologue
-    .line 27129
+    .line 27141
     packed-switch p2, :pswitch_data_0
 
-    .line 27128
+    .line 27140
     :goto_0
     return-void
 
-    .line 27131
+    .line 27143
     :pswitch_0
     iget v1, p3, Lcom/android/internal/os/SomeArgs;->argi1:I
 
@@ -135,7 +135,7 @@
 
     goto :goto_0
 
-    .line 27135
+    .line 27147
     :pswitch_1
     iget v1, p3, Lcom/android/internal/os/SomeArgs;->argi1:I
 
@@ -153,7 +153,7 @@
 
     goto :goto_0
 
-    .line 27129
+    .line 27141
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -167,7 +167,7 @@
     .param p2, "extras"    # Landroid/os/Bundle;
 
     .prologue
-    .line 27142
+    .line 27154
     const-string/jumbo v1, "PackageManager"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -204,19 +204,19 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 27144
+    .line 27156
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
     move-result-object v0
 
-    .line 27145
+    .line 27157
     .local v0, "args":Lcom/android/internal/os/SomeArgs;
     iput p1, v0, Lcom/android/internal/os/SomeArgs;->argi1:I
 
-    .line 27146
+    .line 27158
     iput-object p2, v0, Lcom/android/internal/os/SomeArgs;->arg2:Ljava/lang/Object;
 
-    .line 27147
+    .line 27159
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1, v0}, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
@@ -225,7 +225,7 @@
 
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 27141
+    .line 27153
     return-void
 .end method
 
@@ -235,12 +235,12 @@
     .param p2, "status"    # I
 
     .prologue
-    .line 27151
+    .line 27163
     const-wide/16 v0, -0x1
 
     invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->notifyStatusChanged(IIJ)V
 
-    .line 27150
+    .line 27162
     return-void
 .end method
 
@@ -251,7 +251,7 @@
     .param p3, "estMillis"    # J
 
     .prologue
-    .line 27155
+    .line 27167
     const-string/jumbo v1, "PackageManager"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -284,26 +284,26 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 27157
+    .line 27169
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
     move-result-object v0
 
-    .line 27158
+    .line 27170
     .local v0, "args":Lcom/android/internal/os/SomeArgs;
     iput p1, v0, Lcom/android/internal/os/SomeArgs;->argi1:I
 
-    .line 27159
+    .line 27171
     iput p2, v0, Lcom/android/internal/os/SomeArgs;->argi2:I
 
-    .line 27160
+    .line 27172
     invoke-static {p3, p4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v1
 
     iput-object v1, v0, Lcom/android/internal/os/SomeArgs;->arg3:Ljava/lang/Object;
 
-    .line 27161
+    .line 27173
     const/4 v1, 0x2
 
     invoke-virtual {p0, v1, v0}, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
@@ -312,12 +312,12 @@
 
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 27163
+    .line 27175
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mLastStatus:Landroid/util/SparseIntArray;
 
     monitor-enter v2
 
-    .line 27164
+    .line 27176
     :try_start_0
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mLastStatus:Landroid/util/SparseIntArray;
 
@@ -327,10 +327,10 @@
 
     monitor-exit v2
 
-    .line 27154
+    .line 27166
     return-void
 
-    .line 27163
+    .line 27175
     :catchall_0
     move-exception v1
 
@@ -346,12 +346,12 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 27114
+    .line 27126
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/android/internal/os/SomeArgs;
 
-    .line 27115
+    .line 27127
     .local v0, "args":Lcom/android/internal/os/SomeArgs;
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mCallbacks:Landroid/os/RemoteCallbackList;
 
@@ -359,7 +359,7 @@
 
     move-result v4
 
-    .line 27116
+    .line 27128
     .local v4, "n":I
     const/4 v2, 0x0
 
@@ -367,7 +367,7 @@
     :goto_0
     if-ge v2, v4, :cond_0
 
-    .line 27117
+    .line 27129
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mCallbacks:Landroid/os/RemoteCallbackList;
 
     invoke-virtual {v5, v2}, Landroid/os/RemoteCallbackList;->getBroadcastItem(I)Landroid/os/IInterface;
@@ -376,7 +376,7 @@
 
     check-cast v1, Landroid/content/pm/IPackageMoveObserver;
 
-    .line 27119
+    .line 27131
     .local v1, "callback":Landroid/content/pm/IPackageMoveObserver;
     :try_start_0
     iget v5, p1, Landroid/os/Message;->what:I
@@ -385,26 +385,26 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 27116
+    .line 27128
     :goto_1
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 27123
+    .line 27135
     .end local v1    # "callback":Landroid/content/pm/IPackageMoveObserver;
     :cond_0
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mCallbacks:Landroid/os/RemoteCallbackList;
 
     invoke-virtual {v5}, Landroid/os/RemoteCallbackList;->finishBroadcast()V
 
-    .line 27124
+    .line 27136
     invoke-virtual {v0}, Lcom/android/internal/os/SomeArgs;->recycle()V
 
-    .line 27113
+    .line 27125
     return-void
 
-    .line 27120
+    .line 27132
     .restart local v1    # "callback":Landroid/content/pm/IPackageMoveObserver;
     :catch_0
     move-exception v3
@@ -418,12 +418,12 @@
     .param p1, "callback"    # Landroid/content/pm/IPackageMoveObserver;
 
     .prologue
-    .line 27105
+    .line 27117
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mCallbacks:Landroid/os/RemoteCallbackList;
 
     invoke-virtual {v0, p1}, Landroid/os/RemoteCallbackList;->register(Landroid/os/IInterface;)Z
 
-    .line 27104
+    .line 27116
     return-void
 .end method
 
@@ -432,11 +432,11 @@
     .param p1, "callback"    # Landroid/content/pm/IPackageMoveObserver;
 
     .prologue
-    .line 27109
+    .line 27121
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$MoveCallbacks;->mCallbacks:Landroid/os/RemoteCallbackList;
 
     invoke-virtual {v0, p1}, Landroid/os/RemoteCallbackList;->unregister(Landroid/os/IInterface;)Z
 
-    .line 27108
+    .line 27120
     return-void
 .end method

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     .prologue
-    .line 572
+    .line 573
     iput-object p1, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$1;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 575
+    .line 576
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 576
+    .line 577
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v2, "android.intent.action.BOOT_COMPLETED"
 
@@ -55,24 +55,24 @@
 
     if-eqz v2, :cond_1
 
-    .line 577
+    .line 578
     const-string/jumbo v2, "EnterpriseDeviceManagerService"
 
     const-string/jumbo v3, "android.intent.action.BOOT_COMPLETED"
 
     invoke-static {v2, v3}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 578
+    .line 579
     iget-object v2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$1;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-static {v2}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->-wrap6(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;)V
 
-    .line 574
+    .line 575
     :cond_0
     :goto_0
     return-void
 
-    .line 580
+    .line 581
     :cond_1
     const-string/jumbo v2, "android.intent.action.USER_REMOVED"
 
@@ -82,7 +82,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 581
+    .line 582
     const-string/jumbo v2, "android.intent.extra.user_handle"
 
     const/4 v3, -0x1
@@ -91,22 +91,22 @@
 
     move-result v1
 
-    .line 582
+    .line 583
     .local v1, "userId":I
     const/4 v2, 0x1
 
     if-ge v1, v2, :cond_2
 
-    .line 583
+    .line 584
     return-void
 
-    .line 584
+    .line 585
     :cond_2
     iget-object v2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$1;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-virtual {v2, v1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->deactivateProxyAdminsForUser(I)V
 
-    .line 585
+    .line 586
     iget-object v2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService$1;->this$0:Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-static {v2, v1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->-wrap2(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;I)V

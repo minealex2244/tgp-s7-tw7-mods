@@ -25,7 +25,7 @@
     .param p2, "$anonymous0"    # Landroid/os/Handler;
 
     .prologue
-    .line 161
+    .line 171
     iput-object p1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$1;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -44,7 +44,7 @@
 
     const/4 v0, 0x0
 
-    .line 164
+    .line 174
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$1;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
 
     invoke-static {v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->-wrap0(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)Landroid/content/ContentResolver;
@@ -61,12 +61,12 @@
 
     move v0, v1
 
-    .line 167
+    .line 177
     .local v0, "Enabled":Z
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 168
+    .line 178
     const-string/jumbo v2, "FindMyMobileSettings"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -89,7 +89,7 @@
 
     invoke-static {v2, v3}, Landroid/util/secutil/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 169
+    .line 179
     iget-object v2, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$1;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
 
     invoke-static {v2}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->-get3(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)Landroid/preference/SwitchPreference;
@@ -98,7 +98,7 @@
 
     invoke-virtual {v2, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
-    .line 163
+    .line 173
     :cond_1
     return-void
 .end method

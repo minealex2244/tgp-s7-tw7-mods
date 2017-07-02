@@ -800,7 +800,7 @@
 
     .prologue
     .line 468
-    const v0, 0x7f0b1885    # 1.8489E38f
+    const v0, 0x7f0b1893
 
     return v0
 .end method
@@ -1074,7 +1074,7 @@
     if-eqz v10, :cond_8
 
     .line 181
-    const v6, 0x7f0b19d6
+    const v6, 0x7f0b19e4
 
     .line 192
     .local v6, "rotateLockedResourceId":I
@@ -1084,7 +1084,7 @@
     new-array v10, v10, [Ljava/lang/CharSequence;
 
     .line 193
-    const v11, 0x7f0b19d3
+    const v11, 0x7f0b19e1
 
     invoke-virtual {v0, v11}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1172,7 +1172,7 @@
     new-array v10, v10, [Ljava/lang/CharSequence;
 
     .line 217
-    const v11, 0x7f0b1974
+    const v11, 0x7f0b1982
 
     invoke-virtual {v0, v11}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1183,7 +1183,7 @@
     aput-object v11, v10, v12
 
     .line 218
-    const v11, 0x7f0b1975
+    const v11, 0x7f0b1983
 
     invoke-virtual {v0, v11}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1372,7 +1372,7 @@
     if-ne v10, v11, :cond_9
 
     .line 186
-    const v6, 0x7f0b19d4
+    const v6, 0x7f0b19e2
 
     .line 185
     .restart local v6    # "rotateLockedResourceId":I
@@ -1381,7 +1381,7 @@
     .line 189
     .end local v6    # "rotateLockedResourceId":I
     :cond_9
-    const v6, 0x7f0b19d5
+    const v6, 0x7f0b19e3
 
     .line 188
     .restart local v6    # "rotateLockedResourceId":I

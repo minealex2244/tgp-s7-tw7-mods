@@ -465,7 +465,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b05cc
+    const v3, 0x7f0b05cd
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -480,7 +480,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b05cb
+    const v3, 0x7f0b05cc
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -495,7 +495,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b05cd
+    const v3, 0x7f0b05ce
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -510,7 +510,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b05ce
+    const v3, 0x7f0b05cf
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -525,7 +525,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b05c7
+    const v3, 0x7f0b05c8
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -603,7 +603,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b05a4
+    const v2, 0x7f0b05a5
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -629,7 +629,7 @@
     iput-object p0, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 127
-    const v1, 0x7f0b10f5
+    const v1, 0x7f0b1102
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/ModePreviewTablet;->getString(I)Ljava/lang/String;
 
@@ -638,7 +638,7 @@
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence;
 
     .line 128
-    const v1, 0x7f0b152e
+    const v1, 0x7f0b153c
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/ModePreviewTablet;->getString(I)Ljava/lang/String;
 

@@ -175,7 +175,7 @@
 
     if-eqz v0, :cond_2
 
-    const v1, 0x7f0b19ca
+    const v1, 0x7f0b19d8
 
     :goto_1
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceScreen;->setSummary(I)V
@@ -194,7 +194,7 @@
 
     .line 160
     :cond_2
-    const v1, 0x7f0b19cb
+    const v1, 0x7f0b19d9
 
     goto :goto_1
 .end method
@@ -547,7 +547,7 @@
     if-nez v4, :cond_1
 
     .line 119
-    const v4, 0x7f0b0482
+    const v4, 0x7f0b0483
 
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -578,7 +578,7 @@
     .line 121
     .end local v0    # "ani":Landroid/graphics/drawable/AnimationDrawable;
     :cond_1
-    const v4, 0x7f0b0481
+    const v4, 0x7f0b0482
 
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(I)V
 

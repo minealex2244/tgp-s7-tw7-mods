@@ -38,39 +38,39 @@
     .prologue
     const-wide/16 v2, 0x1388
 
-    .line 5231
+    .line 5232
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
-    .line 5225
+    .line 5226
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->profileName:Ljava/lang/String;
 
-    .line 5226
+    .line 5227
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->requiredState:I
 
-    .line 5227
+    .line 5228
     const-wide/16 v0, -0x1
 
     iput-wide v0, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->threadStartTime:J
 
-    .line 5228
+    .line 5229
     iput-wide v2, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->idleStateSleepTime:J
 
-    .line 5229
+    .line 5230
     iput-wide v2, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->connectingStateSleepTime:J
 
-    .line 5232
+    .line 5233
     iput-object p2, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->profileName:Ljava/lang/String;
 
-    .line 5234
+    .line 5235
     iput p3, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->requiredState:I
 
-    .line 5231
+    .line 5232
     return-void
 .end method
 
@@ -80,7 +80,7 @@
     .param p2, "delay"    # J
 
     .prologue
-    .line 5275
+    .line 5276
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
     move-result v6
@@ -109,12 +109,12 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5277
+    .line 5278
     :cond_0
     :try_start_0
     invoke-static {p2, p3}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->sleep(J)V
 
-    .line 5278
+    .line 5279
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
     move-result v6
@@ -147,7 +147,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5280
+    .line 5281
     :cond_1
     iget-object v6, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;
 
@@ -155,11 +155,11 @@
 
     move-result-object v5
 
-    .line 5281
+    .line 5282
     .local v5, "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     if-eqz v5, :cond_3
 
-    .line 5282
+    .line 5283
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
     move-result v6
@@ -192,7 +192,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5283
+    .line 5284
     :cond_2
     invoke-interface {v5, p1}, Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;->getState(Ljava/lang/String;)I
 
@@ -200,14 +200,14 @@
 
     packed-switch v6, :pswitch_data_0
 
-    .line 5274
+    .line 5275
     .end local v5    # "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     :cond_3
     :goto_0
     :pswitch_0
     return-void
 
-    .line 5287
+    .line 5288
     .restart local v5    # "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     :pswitch_1
     iget-object v6, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;
@@ -220,11 +220,11 @@
 
     move-result-object v3
 
-    .line 5288
+    .line 5289
     .local v3, "profileEntry":Lcom/android/server/enterprise/vpn/knoxvpn/profile/VpnProfileInfo;
     if-eqz v3, :cond_3
 
-    .line 5289
+    .line 5290
     iget-object v6, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;
 
     invoke-static {v6}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get3(Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;)Ljava/util/concurrent/ConcurrentHashMap;
@@ -247,14 +247,14 @@
 
     invoke-virtual {v6, v7, v8}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5290
+    .line 5291
     iget-object v6, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;
 
     invoke-static {v6, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-wrap4(Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;Ljava/lang/String;)I
 
     move-result v4
 
-    .line 5291
+    .line 5292
     .local v4, "result":I
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
@@ -288,14 +288,14 @@
 
     goto :goto_0
 
-    .line 5311
+    .line 5312
     .end local v3    # "profileEntry":Lcom/android/server/enterprise/vpn/knoxvpn/profile/VpnProfileInfo;
     .end local v4    # "result":I
     .end local v5    # "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     :catch_0
     move-exception v2
 
-    .line 5312
+    .line 5313
     .local v2, "e":Ljava/lang/Exception;
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
@@ -331,7 +331,7 @@
 
     goto :goto_0
 
-    .line 5296
+    .line 5297
     .end local v2    # "e":Ljava/lang/Exception;
     .restart local v5    # "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     :pswitch_2
@@ -340,7 +340,7 @@
 
     move-result-wide v0
 
-    .line 5297
+    .line 5298
     .local v0, "currentTime":J
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
@@ -370,7 +370,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5298
+    .line 5299
     :cond_4
     iget-wide v6, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->threadStartTime:J
 
@@ -382,7 +382,7 @@
 
     if-gtz v6, :cond_6
 
-    .line 5299
+    .line 5300
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
     move-result v6
@@ -411,7 +411,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5300
+    .line 5301
     :cond_5
     iget-wide v6, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->connectingStateSleepTime:J
 
@@ -419,7 +419,7 @@
 
     goto/16 :goto_0
 
-    .line 5302
+    .line 5303
     :cond_6
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
@@ -453,7 +453,7 @@
 
     goto/16 :goto_0
 
-    .line 5283
+    .line 5284
     :pswitch_data_0
     .packed-switch -0x1
         :pswitch_1
@@ -472,10 +472,10 @@
     .locals 0
 
     .prologue
-    .line 5271
+    .line 5272
     invoke-virtual {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->interrupt()V
 
-    .line 5270
+    .line 5271
     return-void
 .end method
 
@@ -483,7 +483,7 @@
     .locals 8
 
     .prologue
-    .line 5240
+    .line 5241
     :try_start_0
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -491,7 +491,7 @@
 
     iput-wide v4, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->threadStartTime:J
 
-    .line 5241
+    .line 5242
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
     move-result v3
@@ -522,7 +522,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5242
+    .line 5243
     :cond_0
     iget-object v3, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->this$0:Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;
 
@@ -532,11 +532,11 @@
 
     move-result-object v2
 
-    .line 5243
+    .line 5244
     .local v2, "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     if-nez v2, :cond_2
 
-    .line 5244
+    .line 5245
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
     move-result v3
@@ -549,11 +549,11 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5245
+    .line 5246
     :cond_1
     return-void
 
-    .line 5247
+    .line 5248
     :cond_2
     iget-object v3, p0, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService$ChainingStateMachine;->profileName:Ljava/lang/String;
 
@@ -561,7 +561,7 @@
 
     move-result v0
 
-    .line 5248
+    .line 5249
     .local v0, "currentState":I
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
@@ -591,11 +591,11 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5249
+    .line 5250
     :cond_3
     packed-switch v0, :pswitch_data_0
 
-    .line 5264
+    .line 5265
     :goto_0
     :pswitch_0
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
@@ -630,14 +630,14 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5238
+    .line 5239
     .end local v0    # "currentState":I
     .end local v2    # "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     :cond_4
     :goto_1
     return-void
 
-    .line 5253
+    .line 5254
     .restart local v0    # "currentState":I
     .restart local v2    # "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     :pswitch_1
@@ -651,13 +651,13 @@
 
     goto :goto_0
 
-    .line 5265
+    .line 5266
     .end local v0    # "currentState":I
     .end local v2    # "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
     :catch_0
     move-exception v1
 
-    .line 5266
+    .line 5267
     .local v1, "e":Ljava/lang/Exception;
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->-get0()Z
 
@@ -693,7 +693,7 @@
 
     goto :goto_1
 
-    .line 5257
+    .line 5258
     .end local v1    # "e":Ljava/lang/Exception;
     .restart local v0    # "currentState":I
     .restart local v2    # "vpnInterface":Lcom/sec/enterprise/mdm/services/vpn/knoxvpn/IKnoxVpnService;
@@ -709,7 +709,7 @@
 
     goto :goto_0
 
-    .line 5249
+    .line 5250
     :pswitch_data_0
     .packed-switch -0x1
         :pswitch_1

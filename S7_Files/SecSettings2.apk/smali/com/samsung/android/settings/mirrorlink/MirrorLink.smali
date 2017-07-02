@@ -498,7 +498,7 @@
     .line 699
     iget-object v5, p0, Lcom/samsung/android/settings/mirrorlink/MirrorLink;->mUsbTether:Landroid/preference/SwitchPreference;
 
-    const v6, 0x7f0b1457
+    const v6, 0x7f0b1465
 
     invoke-virtual {v5, v6}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -783,7 +783,7 @@
 
     move-object/from16 v17, v0
 
-    const v18, 0x7f0b08ec
+    const v18, 0x7f0b08ef
 
     move-object/from16 v0, p0
 
@@ -797,7 +797,7 @@
 
     aput-object v18, v17, v19
 
-    const v18, 0x7f0b08ee
+    const v18, 0x7f0b08f1
 
     move-object/from16 v0, p0
 
@@ -898,7 +898,7 @@
     invoke-virtual/range {v15 .. v16}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 442
-    const v16, 0x7f0b08ea
+    const v16, 0x7f0b08ed
 
     move-object/from16 v0, p0
 
@@ -1608,7 +1608,7 @@
 
     iget-object v14, v0, Lcom/samsung/android/settings/mirrorlink/MirrorLink;->mUsbTether:Landroid/preference/SwitchPreference;
 
-    const v15, 0x7f0b08f7
+    const v15, 0x7f0b08fa
 
     invoke-virtual {v14, v15}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -1740,7 +1740,7 @@
 
     iget-object v9, v0, Lcom/samsung/android/settings/mirrorlink/MirrorLink;->mUsbTether:Landroid/preference/SwitchPreference;
 
-    const v10, 0x7f0b08f3
+    const v10, 0x7f0b08f6
 
     invoke-virtual {v9, v10}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -1822,7 +1822,7 @@
 
     iget-object v9, v0, Lcom/samsung/android/settings/mirrorlink/MirrorLink;->mUsbTether:Landroid/preference/SwitchPreference;
 
-    const v10, 0x7f0b08f3
+    const v10, 0x7f0b08f6
 
     invoke-virtual {v9, v10}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -1887,7 +1887,7 @@
 
     iget-object v9, v0, Lcom/samsung/android/settings/mirrorlink/MirrorLink;->mUsbTether:Landroid/preference/SwitchPreference;
 
-    const v10, 0x7f0b1457
+    const v10, 0x7f0b1465
 
     invoke-virtual {v9, v10}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -1925,7 +1925,7 @@
 
     iget-object v9, v0, Lcom/samsung/android/settings/mirrorlink/MirrorLink;->mUsbTether:Landroid/preference/SwitchPreference;
 
-    const v10, 0x7f0b1454
+    const v10, 0x7f0b1462
 
     invoke-virtual {v9, v10}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -1975,7 +1975,7 @@
 
     iget-object v9, v0, Lcom/samsung/android/settings/mirrorlink/MirrorLink;->mUsbTether:Landroid/preference/SwitchPreference;
 
-    const v10, 0x7f0b1455
+    const v10, 0x7f0b1463
 
     invoke-virtual {v9, v10}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -2216,7 +2216,7 @@
     const/4 v1, 0x0
 
     .line 239
-    const v0, 0x7f0b08f6
+    const v0, 0x7f0b08f9
 
     invoke-interface {p1, v1, v2, v1, v0}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -2293,7 +2293,7 @@
 
     move-result-object v1
 
-    const v3, 0x7f0b08f6
+    const v3, 0x7f0b08f9
 
     const/4 v6, 0x0
 

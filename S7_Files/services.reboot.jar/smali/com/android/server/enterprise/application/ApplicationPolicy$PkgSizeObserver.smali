@@ -32,18 +32,18 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 5209
+    .line 5336
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$PkgSizeObserver;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageStatsObserver$Stub;-><init>()V
 
-    .line 5210
+    .line 5337
     iput-boolean v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$PkgSizeObserver;->finished:Z
 
-    .line 5212
+    .line 5339
     iput-boolean v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$PkgSizeObserver;->result:Z
 
-    .line 5209
+    .line 5336
     return-void
 .end method
 
@@ -55,32 +55,32 @@
     .param p2, "succeeded"    # Z
 
     .prologue
-    .line 5215
+    .line 5342
     monitor-enter p0
 
-    .line 5216
+    .line 5343
     :try_start_0
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$PkgSizeObserver;->mPkgStats:Landroid/content/pm/PackageStats;
 
-    .line 5217
+    .line 5344
     iput-boolean p2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$PkgSizeObserver;->result:Z
 
-    .line 5218
+    .line 5345
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$PkgSizeObserver;->finished:Z
 
-    .line 5219
+    .line 5346
     invoke-virtual {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy$PkgSizeObserver;->notifyAll()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     monitor-exit p0
 
-    .line 5214
+    .line 5341
     return-void
 
-    .line 5215
+    .line 5342
     :catchall_0
     move-exception v0
 

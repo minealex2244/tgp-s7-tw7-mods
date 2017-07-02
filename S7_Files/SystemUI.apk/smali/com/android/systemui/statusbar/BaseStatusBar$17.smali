@@ -36,7 +36,7 @@
     .param p4, "val$intent"    # Landroid/app/PendingIntent;
 
     .prologue
-    .line 2527
+    .line 2529
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17;->val$keyguardShowing:Z
@@ -58,7 +58,7 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 2529
+    .line 2531
     new-instance v0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;
 
     iget-boolean v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17;->val$keyguardShowing:Z
@@ -71,20 +71,20 @@
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->start()V
 
-    .line 2563
+    .line 2565
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1, v4, v4}, Lcom/android/systemui/statusbar/BaseStatusBar;->animateCollapsePanels(IZZ)V
 
-    .line 2565
+    .line 2567
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/BaseStatusBar;->visibilityChanged(Z)V
 
-    .line 2567
+    .line 2569
     return v4
 .end method

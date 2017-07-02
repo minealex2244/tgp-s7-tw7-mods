@@ -84,7 +84,7 @@
 
     .line 455
     .local v6, "minLimitBytes":J
-    const v9, 0x7f0b049d
+    const v9, 0x7f0b049e
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -229,7 +229,7 @@
     invoke-direct {v2, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 476
-    const v3, 0x7f0b049c
+    const v3, 0x7f0b049d
 
     .line 475
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;

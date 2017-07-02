@@ -57,10 +57,10 @@
     .param p2, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 12621
+    .line 12732
     iput-object p1, p0, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->this$0:Lcom/android/server/audio/AudioService;
 
-    .line 12622
+    .line 12733
     const-string/jumbo v0, "audioservice_sec.db"
 
     const/4 v1, 0x0
@@ -69,7 +69,7 @@
 
     invoke-direct {p0, p2, v0, v1, v2}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
-    .line 12621
+    .line 12732
     return-void
 .end method
 
@@ -81,20 +81,20 @@
     .param p4, "columnIndex"    # I
 
     .prologue
-    .line 12682
+    .line 12793
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 12683
+    .line 12794
     .local v0, "db":Landroid/database/sqlite/SQLiteDatabase;
     const/4 v8, 0x0
 
-    .line 12684
+    .line 12795
     .local v8, "cursor":Landroid/database/Cursor;
     const/4 v10, -0x1
 
-    .line 12686
+    .line 12797
     .local v10, "result":I
     const/4 v4, 0x0
 
@@ -115,7 +115,7 @@
 
     move-result-object v8
 
-    .line 12687
+    .line 12798
     .local v8, "cursor":Landroid/database/Cursor;
     if-eqz v8, :cond_0
 
@@ -127,10 +127,10 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 12688
+    .line 12799
     invoke-interface {v8}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 12689
+    .line 12800
     invoke-interface {v8, p4}, Landroid/database/Cursor;->getInt(I)I
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
@@ -138,23 +138,23 @@
 
     move-result v10
 
-    .line 12694
+    .line 12805
     :cond_0
     if-eqz v8, :cond_1
 
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 12696
+    .line 12807
     .end local v8    # "cursor":Landroid/database/Cursor;
     :cond_1
     :goto_0
     return v10
 
-    .line 12691
+    .line 12802
     :catch_0
     move-exception v9
 
-    .line 12692
+    .line 12803
     .local v9, "e":Landroid/database/sqlite/SQLiteException;
     :try_start_1
     const-string/jumbo v1, "AudioService.DB"
@@ -165,24 +165,24 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 12694
+    .line 12805
     if-eqz v8, :cond_1
 
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
     goto :goto_0
 
-    .line 12693
+    .line 12804
     .end local v9    # "e":Landroid/database/sqlite/SQLiteException;
     :catchall_0
     move-exception v1
 
-    .line 12694
+    .line 12805
     if-eqz v8, :cond_2
 
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 12693
+    .line 12804
     :cond_2
     throw v1
 .end method
@@ -193,16 +193,16 @@
     .param p2, "selection"    # Ljava/lang/String;
 
     .prologue
-    .line 12712
+    .line 12823
     const/4 v2, 0x0
 
-    .line 12713
+    .line 12824
     .local v2, "ret":I
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 12715
+    .line 12826
     .local v0, "db":Landroid/database/sqlite/SQLiteDatabase;
     const/4 v3, 0x0
 
@@ -213,15 +213,15 @@
 
     move-result v2
 
-    .line 12719
+    .line 12830
     :goto_0
     return v2
 
-    .line 12716
+    .line 12827
     :catch_0
     move-exception v1
 
-    .line 12717
+    .line 12828
     .local v1, "e":Landroid/database/sqlite/SQLiteException;
     const-string/jumbo v3, "AudioService.DB"
 
@@ -239,12 +239,12 @@
     .param p3, "selection"    # Ljava/lang/String;
 
     .prologue
-    .line 12700
+    .line 12811
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 12702
+    .line 12813
     .local v0, "db":Landroid/database/sqlite/SQLiteDatabase;
     const/4 v3, 0x0
 
@@ -253,28 +253,28 @@
 
     move-result v2
 
-    .line 12703
+    .line 12814
     .local v2, "updateResult":I
     if-gtz v2, :cond_0
 
-    .line 12704
+    .line 12815
     const/4 v3, 0x0
 
     invoke-virtual {v0, p1, v3, p2}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12699
+    .line 12810
     .end local v2    # "updateResult":I
     :cond_0
     :goto_0
     return-void
 
-    .line 12706
+    .line 12817
     :catch_0
     move-exception v1
 
-    .line 12707
+    .line 12818
     .local v1, "e":Landroid/database/sqlite/SQLiteException;
     const-string/jumbo v3, "AudioService.DB"
 
@@ -294,7 +294,7 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 12768
+    .line 12879
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -319,7 +319,7 @@
 
     move-result-object v0
 
-    .line 12769
+    .line 12880
     .local v0, "selection":Ljava/lang/String;
     const-string/jumbo v1, "app_volume"
 
@@ -351,7 +351,7 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 12755
+    .line 12866
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -376,7 +376,7 @@
 
     move-result-object v0
 
-    .line 12756
+    .line 12867
     .local v0, "selection":Ljava/lang/String;
     const-string/jumbo v1, "device_addr"
 
@@ -410,7 +410,7 @@
 
     const/4 v2, 0x0
 
-    .line 12723
+    .line 12834
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -435,7 +435,7 @@
 
     move-result-object v1
 
-    .line 12724
+    .line 12835
     .local v1, "selection":Ljava/lang/String;
     const-string/jumbo v4, "audio_settings"
 
@@ -455,7 +455,7 @@
 
     move-result v0
 
-    .line 12725
+    .line 12836
     .local v0, "ret":I
     if-gtz v0, :cond_0
 
@@ -475,7 +475,7 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 12729
+    .line 12840
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -500,7 +500,7 @@
 
     move-result-object v0
 
-    .line 12730
+    .line 12841
     .local v0, "selection":Ljava/lang/String;
     const-string/jumbo v1, "audio_settings"
 
@@ -539,22 +539,22 @@
     .end annotation
 
     .prologue
-    .line 12804
+    .line 12915
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 12805
+    .line 12916
     .local v0, "db":Landroid/database/sqlite/SQLiteDatabase;
     new-instance v11, Ljava/util/Hashtable;
 
     invoke-direct {v11}, Ljava/util/Hashtable;-><init>()V
 
-    .line 12806
+    .line 12917
     .local v11, "packageList":Ljava/util/Hashtable;, "Ljava/util/Hashtable<Ljava/lang/String;Ljava/lang/String;>;"
     const/4 v9, 0x0
 
-    .line 12809
+    .line 12920
     .local v9, "cursor":Landroid/database/Cursor;
     :try_start_0
     const-string/jumbo v1, "category_packages"
@@ -589,18 +589,18 @@
 
     move-result-object v9
 
-    .line 12810
+    .line 12921
     .local v9, "cursor":Landroid/database/Cursor;
     if-eqz v9, :cond_2
 
-    .line 12811
+    .line 12922
     invoke-interface {v9}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 12813
+    .line 12924
     :cond_0
     const/4 v1, 0x1
 
@@ -608,7 +608,7 @@
 
     move-result-object v12
 
-    .line 12814
+    .line 12925
     .local v12, "packageName":Ljava/lang/String;
     const/4 v1, 0x2
 
@@ -616,18 +616,18 @@
 
     move-result-object v8
 
-    .line 12815
+    .line 12926
     .local v8, "category":Ljava/lang/String;
     invoke-virtual {v11, v12, v8}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12816
+    .line 12927
     invoke-interface {v9}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 12818
+    .line 12929
     .end local v8    # "category":Ljava/lang/String;
     .end local v12    # "packageName":Ljava/lang/String;
     :cond_1
@@ -635,17 +635,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12824
+    .line 12935
     .end local v9    # "cursor":Landroid/database/Cursor;
     :cond_2
     :goto_0
     return-object v11
 
-    .line 12820
+    .line 12931
     :catch_0
     move-exception v10
 
-    .line 12821
+    .line 12932
     .local v10, "e":Ljava/lang/Exception;
     const-string/jumbo v1, "AudioService.DB"
 
@@ -653,7 +653,7 @@
 
     invoke-static {v1, v2, v10}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 12822
+    .line 12933
     if-eqz v9, :cond_2
 
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
@@ -677,22 +677,22 @@
     .end annotation
 
     .prologue
-    .line 12786
+    .line 12897
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 12787
+    .line 12898
     .local v0, "db":Landroid/database/sqlite/SQLiteDatabase;
     const/4 v8, 0x0
 
-    .line 12788
+    .line 12899
     .local v8, "cursor":Landroid/database/Cursor;
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
 
-    .line 12789
+    .line 12900
     .local v10, "packageList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -718,7 +718,7 @@
 
     move-result-object v3
 
-    .line 12791
+    .line 12902
     .local v3, "selection":Ljava/lang/String;
     :try_start_0
     const-string/jumbo v1, "category_packages"
@@ -751,7 +751,7 @@
 
     move-result-object v8
 
-    .line 12792
+    .line 12903
     .local v8, "cursor":Landroid/database/Cursor;
     :goto_0
     invoke-interface {v8}, Landroid/database/Cursor;->moveToNext()Z
@@ -760,7 +760,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 12793
+    .line 12904
     const/4 v1, 0x0
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
@@ -774,12 +774,12 @@
 
     goto :goto_0
 
-    .line 12795
+    .line 12906
     .end local v8    # "cursor":Landroid/database/Cursor;
     :catch_0
     move-exception v9
 
-    .line 12796
+    .line 12907
     .local v9, "e":Landroid/database/sqlite/SQLiteException;
     :try_start_1
     const-string/jumbo v1, "AudioService.DB"
@@ -790,18 +790,18 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 12798
+    .line 12909
     if-eqz v8, :cond_0
 
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 12800
+    .line 12911
     .end local v9    # "e":Landroid/database/sqlite/SQLiteException;
     :cond_0
     :goto_1
     return-object v10
 
-    .line 12798
+    .line 12909
     .restart local v8    # "cursor":Landroid/database/Cursor;
     :cond_1
     if-eqz v8, :cond_0
@@ -810,17 +810,17 @@
 
     goto :goto_1
 
-    .line 12797
+    .line 12908
     .end local v8    # "cursor":Landroid/database/Cursor;
     :catchall_0
     move-exception v1
 
-    .line 12798
+    .line 12909
     if-eqz v8, :cond_2
 
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    .line 12797
+    .line 12908
     :cond_2
     throw v1
 .end method
@@ -830,38 +830,38 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 12628
+    .line 12739
     :try_start_0
     const-string/jumbo v1, "CREATE TABLE audio_settings (_id INTEGER PRIMARY KEY AUTOINCREMENT, _key TEXT UNIQUE, _value INTEGER);"
 
     invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12636
+    .line 12747
     const-string/jumbo v1, "CREATE TABLE device_addr (_id INTEGER PRIMARY KEY AUTOINCREMENT, _addr TEXT UNIQUE, _index INTEGER);"
 
     invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12644
+    .line 12755
     const-string/jumbo v1, "CREATE TABLE app_volume (_id INTEGER PRIMARY KEY AUTOINCREMENT, _uid INTEGER UNIQUE, _index INTEGER);"
 
     invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12652
+    .line 12763
     const-string/jumbo v1, "CREATE TABLE category_packages (_id INTEGER PRIMARY KEY AUTOINCREMENT, _package TEXT, _category TEXT);"
 
     invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/database/SQLException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 12626
+    .line 12737
     :goto_0
     return-void
 
-    .line 12659
+    .line 12770
     :catch_0
     move-exception v0
 
-    .line 12660
+    .line 12771
     .local v0, "ex":Landroid/database/SQLException;
     const-string/jumbo v1, "AudioService.DB"
 
@@ -879,30 +879,30 @@
     .param p3, "newVersion"    # I
 
     .prologue
-    .line 12666
+    .line 12777
     const-string/jumbo v0, "DROP TABLE IF EXISTS audio_settings"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12667
+    .line 12778
     const-string/jumbo v0, "DROP TABLE IF EXISTS device_addr"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12668
+    .line 12779
     const-string/jumbo v0, "DROP TABLE IF EXISTS app_volume"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12669
+    .line 12780
     const-string/jumbo v0, "DROP TABLE IF EXISTS category_packages"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12670
+    .line 12781
     invoke-virtual {p0, p1}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 12665
+    .line 12776
     return-void
 .end method
 
@@ -911,7 +911,7 @@
     .param p1, "uid"    # I
 
     .prologue
-    .line 12781
+    .line 12892
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -936,7 +936,7 @@
 
     move-result-object v0
 
-    .line 12782
+    .line 12893
     .local v0, "selection":Ljava/lang/String;
     const-string/jumbo v1, "app_volume"
 
@@ -952,7 +952,7 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 12750
+    .line 12861
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -977,7 +977,7 @@
 
     move-result-object v0
 
-    .line 12751
+    .line 12862
     .local v0, "selection":Ljava/lang/String;
     const-string/jumbo v1, "audio_settings"
 
@@ -992,33 +992,33 @@
     .locals 2
 
     .prologue
-    .line 12674
+    .line 12785
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 12675
+    .line 12786
     .local v0, "db":Landroid/database/sqlite/SQLiteDatabase;
     const-string/jumbo v1, "delete from audio_settings"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12676
+    .line 12787
     const-string/jumbo v1, "delete from device_addr"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12677
+    .line 12788
     const-string/jumbo v1, "delete from app_volume"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12678
+    .line 12789
     const-string/jumbo v1, "delete from category_packages"
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 12673
+    .line 12784
     return-void
 .end method
 
@@ -1028,12 +1028,12 @@
     .param p2, "index"    # I
 
     .prologue
-    .line 12773
+    .line 12884
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
-    .line 12774
+    .line 12885
     .local v0, "cv":Landroid/content/ContentValues;
     const-string/jumbo v2, "_uid"
 
@@ -1043,7 +1043,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 12775
+    .line 12886
     const-string/jumbo v2, "_index"
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1052,7 +1052,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 12776
+    .line 12887
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1077,13 +1077,13 @@
 
     move-result-object v1
 
-    .line 12777
+    .line 12888
     .local v1, "selection":Ljava/lang/String;
     const-string/jumbo v2, "app_volume"
 
     invoke-direct {p0, v2, v0, v1}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->set(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
-    .line 12772
+    .line 12883
     return-void
 .end method
 
@@ -1093,18 +1093,18 @@
     .param p2, "index"    # I
 
     .prologue
-    .line 12760
+    .line 12871
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
-    .line 12761
+    .line 12872
     .local v0, "cv":Landroid/content/ContentValues;
     const-string/jumbo v2, "_addr"
 
     invoke-virtual {v0, v2, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12762
+    .line 12873
     const-string/jumbo v2, "_index"
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1113,7 +1113,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 12763
+    .line 12874
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1138,13 +1138,13 @@
 
     move-result-object v1
 
-    .line 12764
+    .line 12875
     .local v1, "selection":Ljava/lang/String;
     const-string/jumbo v2, "device_addr"
 
     invoke-direct {p0, v2, v0, v1}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->set(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
-    .line 12759
+    .line 12870
     return-void
 .end method
 
@@ -1154,18 +1154,18 @@
     .param p2, "enabled"    # Z
 
     .prologue
-    .line 12734
+    .line 12845
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
-    .line 12735
+    .line 12846
     .local v0, "cv":Landroid/content/ContentValues;
     const-string/jumbo v2, "_key"
 
     invoke-virtual {v0, v2, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12736
+    .line 12847
     const-string/jumbo v3, "_value"
 
     if-eqz p2, :cond_0
@@ -1179,7 +1179,7 @@
 
     invoke-virtual {v0, v3, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 12737
+    .line 12848
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1204,16 +1204,16 @@
 
     move-result-object v1
 
-    .line 12738
+    .line 12849
     .local v1, "selection":Ljava/lang/String;
     const-string/jumbo v2, "audio_settings"
 
     invoke-direct {p0, v2, v0, v1}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->set(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
-    .line 12733
+    .line 12844
     return-void
 
-    .line 12736
+    .line 12847
     .end local v1    # "selection":Ljava/lang/String;
     :cond_0
     const/4 v2, 0x0
@@ -1227,23 +1227,23 @@
     .param p2, "category"    # Ljava/lang/String;
 
     .prologue
-    .line 12828
+    .line 12939
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
-    .line 12829
+    .line 12940
     .local v0, "cv":Landroid/content/ContentValues;
     const-string/jumbo v2, "_package"
 
     invoke-virtual {v0, v2, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12830
+    .line 12941
     const-string/jumbo v2, "_category"
 
     invoke-virtual {v0, v2, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12831
+    .line 12942
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1268,13 +1268,13 @@
 
     move-result-object v1
 
-    .line 12832
+    .line 12943
     .local v1, "selection":Ljava/lang/String;
     const-string/jumbo v2, "category_packages"
 
     invoke-direct {p0, v2, v0, v1}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->set(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
-    .line 12827
+    .line 12938
     return-void
 .end method
 
@@ -1284,18 +1284,18 @@
     .param p2, "value"    # I
 
     .prologue
-    .line 12742
+    .line 12853
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
-    .line 12743
+    .line 12854
     .local v0, "cv":Landroid/content/ContentValues;
     const-string/jumbo v2, "_key"
 
     invoke-virtual {v0, v2, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12744
+    .line 12855
     const-string/jumbo v2, "_value"
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1304,7 +1304,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 12745
+    .line 12856
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1329,12 +1329,12 @@
 
     move-result-object v1
 
-    .line 12746
+    .line 12857
     .local v1, "selection":Ljava/lang/String;
     const-string/jumbo v2, "audio_settings"
 
     invoke-direct {p0, v2, v0, v1}, Lcom/android/server/audio/AudioService$AudioSettingsDBHelper;->set(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
-    .line 12741
+    .line 12852
     return-void
 .end method

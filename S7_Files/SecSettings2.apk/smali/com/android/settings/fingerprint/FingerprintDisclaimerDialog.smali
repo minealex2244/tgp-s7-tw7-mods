@@ -154,7 +154,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0688
+    const v4, 0x7f0b0689
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -197,7 +197,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b06a8
+    const v4, 0x7f0b06a9
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -235,7 +235,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b06ae
+    const v4, 0x7f0b06af
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -277,7 +277,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0704
+    const v4, 0x7f0b0705
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -326,7 +326,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b06d4
+    const v4, 0x7f0b06d5
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -526,7 +526,7 @@
     if-nez v8, :cond_1
 
     .line 105
-    const v8, 0x7f0b0708
+    const v8, 0x7f0b0709
 
     invoke-virtual {v6, v8}, Landroid/widget/TextView;->setText(I)V
 
@@ -541,7 +541,7 @@
 
     .line 108
     .local v7, "mVzwDisclaimerMsg":Landroid/widget/TextView;
-    const v8, 0x7f0b0706
+    const v8, 0x7f0b0707
 
     invoke-virtual {p0, v8}, Lcom/android/settings/fingerprint/FingerprintDisclaimerDialog;->getString(I)Ljava/lang/String;
 
@@ -569,7 +569,7 @@
 
     .line 115
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
-    const v8, 0x7f0b066f
+    const v8, 0x7f0b0670
 
     invoke-virtual {v0, v8}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -581,7 +581,7 @@
 
     invoke-direct {v8, p0}, Lcom/android/settings/fingerprint/FingerprintDisclaimerDialog$2;-><init>(Lcom/android/settings/fingerprint/FingerprintDisclaimerDialog;)V
 
-    const v9, 0x7f0b06fb
+    const v9, 0x7f0b06fc
 
     invoke-virtual {v0, v9, v8}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

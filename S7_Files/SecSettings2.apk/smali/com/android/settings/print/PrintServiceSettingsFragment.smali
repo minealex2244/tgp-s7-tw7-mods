@@ -322,9 +322,9 @@
     .locals 10
 
     .prologue
-    const v9, 0x7f0b1645
+    const v9, 0x7f0b1653
 
-    const v8, 0x7f0b163c
+    const v8, 0x7f0b164a
 
     const v7, 0x7f0400e6
 

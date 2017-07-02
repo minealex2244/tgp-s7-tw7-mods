@@ -131,7 +131,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b06bf
+    const v1, 0x7f0b06c0
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -150,7 +150,7 @@
 
     if-eqz v0, :cond_1
 
-    const v0, 0x7f0b06cb
+    const v0, 0x7f0b06cc
 
     :goto_0
     invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -205,7 +205,7 @@
     invoke-direct {v1, p0}, Lcom/android/settings/fingerprint/FingerprintLockSettings$FingerprintLockSettingsDialog$2;-><init>(Lcom/android/settings/fingerprint/FingerprintLockSettings$FingerprintLockSettingsDialog;)V
 
     .line 742
-    const v2, 0x7f0b06bc
+    const v2, 0x7f0b06bd
 
     .line 685
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -220,7 +220,7 @@
 
     .line 677
     :cond_1
-    const v0, 0x7f0b06ca
+    const v0, 0x7f0b06cb
 
     goto :goto_0
 
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b06c0
+    const v1, 0x7f0b06c1
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

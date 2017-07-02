@@ -80,7 +80,7 @@
     invoke-virtual {p0, v4}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
 
     .line 41
-    const v4, 0x7f0b1156
+    const v4, 0x7f0b1163
 
     invoke-virtual {p0, v4}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->setHeaderText(I)V
 

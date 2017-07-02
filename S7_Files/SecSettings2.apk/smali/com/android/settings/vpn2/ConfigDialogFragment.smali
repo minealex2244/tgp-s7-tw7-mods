@@ -79,7 +79,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b1810
+    const v2, 0x7f0b181e
 
     const/4 v3, 0x1
 
@@ -255,7 +255,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b180f
+    const v2, 0x7f0b181d
 
     .line 244
     const/4 v3, 0x1

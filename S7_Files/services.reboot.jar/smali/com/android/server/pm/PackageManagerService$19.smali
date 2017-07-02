@@ -36,7 +36,7 @@
     .param p4, "val$observer"    # Landroid/content/pm/IPackageDataObserver;
 
     .prologue
-    .line 21758
+    .line 21767
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iput-object p2, p0, Lcom/android/server/pm/PackageManagerService$19;->val$packageName:Ljava/lang/String;
@@ -58,14 +58,14 @@
     .prologue
     const/4 v10, 0x0
 
-    .line 21760
+    .line 21769
     iget-object v9, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v9, v9, Lcom/android/server/pm/PackageManagerService;->mHandler:Lcom/android/server/pm/PackageManagerService$PackageHandler;
 
     invoke-virtual {v9, p0}, Lcom/android/server/pm/PackageManagerService$PackageHandler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 21762
+    .line 21771
     const/4 v2, 0x0
 
     .local v2, "freezer":Lcom/android/server/pm/PackageManagerService$PackageFreezer;
@@ -74,15 +74,15 @@
 
     iget-object v11, p0, Lcom/android/server/pm/PackageManagerService$19;->val$packageName:Ljava/lang/String;
 
-    .line 21763
+    .line 21772
     const-string/jumbo v12, "clearApplicationUserData"
 
-    .line 21762
+    .line 21771
     invoke-virtual {v9, v11, v12}, Lcom/android/server/pm/PackageManagerService;->freezePackage(Ljava/lang/String;Ljava/lang/String;)Lcom/android/server/pm/PackageManagerService$PackageFreezer;
 
     move-result-object v2
 
-    .line 21764
+    .line 21773
     .local v2, "freezer":Lcom/android/server/pm/PackageManagerService$PackageFreezer;
     iget-object v9, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -93,7 +93,7 @@
     .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 21765
+    .line 21774
     :try_start_1
     iget-object v9, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -111,7 +111,7 @@
     :try_start_2
     monitor-exit v11
 
-    .line 21767
+    .line 21776
     iget-object v9, p0, Lcom/android/server/pm/PackageManagerService$19;->this$0:Lcom/android/server/pm/PackageManagerService;
 
     iget-object v11, p0, Lcom/android/server/pm/PackageManagerService$19;->val$packageName:Ljava/lang/String;
@@ -125,7 +125,7 @@
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 21768
+    .line 21777
     if-eqz v2, :cond_0
 
     :try_start_3
@@ -139,7 +139,7 @@
 
     throw v10
 
-    .line 21764
+    .line 21773
     .end local v8    # "succeeded":Z
     :catchall_0
     move-exception v9
@@ -152,7 +152,7 @@
     .catch Ljava/lang/Throwable; {:try_start_4 .. :try_end_4} :catch_0
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 21768
+    .line 21777
     .end local v2    # "freezer":Lcom/android/server/pm/PackageManagerService$PackageFreezer;
     :catch_0
     move-exception v9
@@ -213,7 +213,7 @@
     :cond_3
     throw v9
 
-    .line 21771
+    .line 21780
     .restart local v2    # "freezer":Lcom/android/server/pm/PackageManagerService$PackageFreezer;
     .restart local v8    # "succeeded":Z
     :cond_4
@@ -229,7 +229,7 @@
 
     move-result-object v5
 
-    .line 21772
+    .line 21781
     .local v5, "sdpAppInfo":Landroid/content/pm/ApplicationInfo;
     if-eqz v5, :cond_5
 
@@ -237,10 +237,10 @@
 
     if-eqz v9, :cond_5
 
-    .line 21773
+    .line 21782
     iget-object v3, v5, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
-    .line 21774
+    .line 21783
     .local v3, "infoBundle":Landroid/os/Bundle;
     if-eqz v3, :cond_5
 
@@ -252,14 +252,14 @@
 
     if-eqz v9, :cond_5
 
-    .line 21775
+    .line 21784
     const-string/jumbo v9, "sdp"
 
     invoke-virtual {v3, v9}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 21776
+    .line 21785
     .local v6, "sdpMetadata":Ljava/lang/String;
     const-string/jumbo v9, "enabled"
 
@@ -269,7 +269,7 @@
 
     if-eqz v9, :cond_5
 
-    .line 21779
+    .line 21788
     :try_start_7
     const-string/jumbo v9, "sdp"
 
@@ -281,7 +281,7 @@
 
     move-result-object v7
 
-    .line 21780
+    .line 21789
     .local v7, "sdpService":Landroid/os/ISdpManagerService;
     iget v9, p0, Lcom/android/server/pm/PackageManagerService$19;->val$userId:I
 
@@ -293,7 +293,7 @@
 
     if-nez v9, :cond_5
 
-    .line 21781
+    .line 21790
     const-string/jumbo v9, "PackageManager"
 
     const-string/jumbo v10, "Failed to clear data for enc pkg.."
@@ -302,7 +302,7 @@
     :try_end_7
     .catch Landroid/os/RemoteException; {:try_start_7 .. :try_end_7} :catch_3
 
-    .line 21791
+    .line 21800
     .end local v3    # "infoBundle":Landroid/os/Bundle;
     .end local v6    # "sdpMetadata":Ljava/lang/String;
     .end local v7    # "sdpService":Landroid/os/ISdpManagerService;
@@ -310,31 +310,31 @@
     :goto_3
     if-eqz v8, :cond_6
 
-    .line 21794
+    .line 21803
     const-class v9, Lcom/android/server/storage/DeviceStorageMonitorInternal;
 
-    .line 21793
+    .line 21802
     invoke-static {v9}, Lcom/android/server/LocalServices;->getService(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/server/storage/DeviceStorageMonitorInternal;
 
-    .line 21795
+    .line 21804
     .local v0, "dsm":Lcom/android/server/storage/DeviceStorageMonitorInternal;
     if-eqz v0, :cond_6
 
-    .line 21796
+    .line 21805
     invoke-interface {v0}, Lcom/android/server/storage/DeviceStorageMonitorInternal;->checkMemory()V
 
-    .line 21799
+    .line 21808
     .end local v0    # "dsm":Lcom/android/server/storage/DeviceStorageMonitorInternal;
     :cond_6
     iget-object v9, p0, Lcom/android/server/pm/PackageManagerService$19;->val$observer:Landroid/content/pm/IPackageDataObserver;
 
     if-eqz v9, :cond_7
 
-    .line 21801
+    .line 21810
     :try_start_8
     iget-object v9, p0, Lcom/android/server/pm/PackageManagerService$19;->val$observer:Landroid/content/pm/IPackageDataObserver;
 
@@ -344,18 +344,18 @@
     :try_end_8
     .catch Landroid/os/RemoteException; {:try_start_8 .. :try_end_8} :catch_4
 
-    .line 21759
+    .line 21768
     :cond_7
     :goto_4
     return-void
 
-    .line 21783
+    .line 21792
     .restart local v3    # "infoBundle":Landroid/os/Bundle;
     .restart local v6    # "sdpMetadata":Ljava/lang/String;
     :catch_3
     move-exception v4
 
-    .line 21784
+    .line 21793
     .local v4, "re":Landroid/os/RemoteException;
     const-string/jumbo v9, "PackageManager"
 
@@ -365,14 +365,14 @@
 
     goto :goto_3
 
-    .line 21802
+    .line 21811
     .end local v3    # "infoBundle":Landroid/os/Bundle;
     .end local v4    # "re":Landroid/os/RemoteException;
     .end local v6    # "sdpMetadata":Ljava/lang/String;
     :catch_4
     move-exception v1
 
-    .line 21803
+    .line 21812
     .local v1, "e":Landroid/os/RemoteException;
     const-string/jumbo v9, "PackageManager"
 
@@ -382,7 +382,7 @@
 
     goto :goto_4
 
-    .line 21768
+    .line 21777
     .end local v1    # "e":Landroid/os/RemoteException;
     .end local v2    # "freezer":Lcom/android/server/pm/PackageManagerService$PackageFreezer;
     .end local v5    # "sdpAppInfo":Landroid/content/pm/ApplicationInfo;

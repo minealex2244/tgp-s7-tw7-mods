@@ -56,7 +56,7 @@
 
     sput-object v0, Lcom/android/settings/bluetooth/Utils;->mSemErrorListener:Lcom/android/settingslib/bluetooth/Utils$SemErrorListener;
 
-    .line 195
+    .line 203
     new-instance v0, Lcom/android/settings/bluetooth/Utils$3;
 
     invoke-direct {v0}, Lcom/android/settings/bluetooth/Utils$3;-><init>()V
@@ -83,25 +83,25 @@
     .param p1, "number"    # Ljava/lang/String;
 
     .prologue
-    .line 319
+    .line 327
     const/4 v7, 0x0
 
-    .line 320
+    .line 328
     .local v7, "phones":Landroid/database/Cursor;
     const/4 v8, 0x0
 
-    .line 322
+    .line 330
     .local v8, "uriString":Ljava/lang/String;
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 323
+    .line 331
     .local v0, "cr":Landroid/content/ContentResolver;
     if-eqz v0, :cond_0
 
-    .line 324
+    .line 332
     sget-object v2, Landroid/provider/ContactsContract$PhoneLookup;->CONTENT_FILTER_URI:Landroid/net/Uri;
 
     invoke-static {p1}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
@@ -112,32 +112,32 @@
 
     move-result-object v1
 
-    .line 325
+    .line 333
     .local v1, "uri":Landroid/net/Uri;
     const/4 v2, 0x1
 
     new-array v2, v2, [Ljava/lang/String;
 
-    .line 326
+    .line 334
     const-string/jumbo v3, "photo_uri"
 
     const/4 v4, 0x0
 
     aput-object v3, v2, v4
 
-    .line 327
+    .line 335
     const/4 v3, 0x0
 
     const/4 v4, 0x0
 
     const/4 v5, 0x0
 
-    .line 325
+    .line 333
     invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v7
 
-    .line 328
+    .line 336
     .local v7, "phones":Landroid/database/Cursor;
     if-eqz v7, :cond_0
 
@@ -147,7 +147,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 329
+    .line 337
     const-string/jumbo v2, "photo_uri"
 
     invoke-interface {v7, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -165,54 +165,54 @@
 
     move-result-object v8
 
-    .line 335
+    .line 343
     .end local v1    # "uri":Landroid/net/Uri;
     .end local v7    # "phones":Landroid/database/Cursor;
     .end local v8    # "uriString":Ljava/lang/String;
     :cond_0
     if-eqz v7, :cond_1
 
-    .line 336
+    .line 344
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
-    .line 339
+    .line 347
     .end local v0    # "cr":Landroid/content/ContentResolver;
     :cond_1
     :goto_0
     return-object v8
 
-    .line 332
+    .line 340
     .restart local v8    # "uriString":Ljava/lang/String;
     :catch_0
     move-exception v6
 
-    .line 333
+    .line 341
     .local v6, "e":Ljava/lang/Exception;
     :try_start_1
     invoke-virtual {v6}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 335
+    .line 343
     if-eqz v7, :cond_1
 
-    .line 336
+    .line 344
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
     goto :goto_0
 
-    .line 334
+    .line 342
     .end local v6    # "e":Ljava/lang/Exception;
     :catchall_0
     move-exception v2
 
-    .line 335
+    .line 343
     if-eqz v7, :cond_2
 
-    .line 336
+    .line 344
     invoke-interface {v7}, Landroid/database/Cursor;->close()V
 
-    .line 334
+    .line 342
     :cond_2
     throw v2
 .end method
@@ -238,7 +238,7 @@
     .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
 
     .prologue
-    .line 264
+    .line 272
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
@@ -251,15 +251,15 @@
 
     float-to-int v6, v14
 
-    .line 265
+    .line 273
     .local v6, "iconSize":I
     const/4 v3, 0x0
 
-    .line 266
+    .line 274
     .local v3, "bitmap":Landroid/graphics/Bitmap;
     const/4 v12, 0x0
 
-    .line 268
+    .line 276
     .local v12, "scaledSource":Landroid/graphics/Bitmap;
     move-object/from16 v0, p1
 
@@ -267,7 +267,7 @@
 
     if-eqz v14, :cond_0
 
-    .line 269
+    .line 277
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
@@ -282,7 +282,7 @@
 
     invoke-virtual {v0, v14}, Landroid/graphics/drawable/Drawable;->setTint(I)V
 
-    .line 270
+    .line 278
     check-cast p1, Lcom/samsung/android/graphics/spr/SemPathRenderingDrawable;
 
     .end local p1    # "drawable":Landroid/graphics/drawable/Drawable;
@@ -290,12 +290,12 @@
 
     move-result-object v3
 
-    .line 276
+    .line 284
     .local v3, "bitmap":Landroid/graphics/Bitmap;
     :goto_0
     if-eqz v3, :cond_1
 
-    .line 277
+    .line 285
     sget-object v14, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     const/4 v15, 0x1
@@ -304,7 +304,7 @@
 
     move-result-object v12
 
-    .line 278
+    .line 286
     .local v12, "scaledSource":Landroid/graphics/Bitmap;
     const/4 v14, 0x1
 
@@ -312,7 +312,7 @@
 
     move-result-object v3
 
-    .line 283
+    .line 291
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
@@ -323,7 +323,7 @@
 
     move-result v1
 
-    .line 285
+    .line 293
     .local v1, "appSize":F
     float-to-int v14, v1
 
@@ -335,13 +335,13 @@
 
     move-result-object v2
 
-    .line 286
+    .line 294
     .local v2, "background":Landroid/graphics/Bitmap;
     new-instance v5, Landroid/graphics/Canvas;
 
     invoke-direct {v5, v2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 288
+    .line 296
     .local v5, "canvas":Landroid/graphics/Canvas;
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -359,7 +359,7 @@
 
     div-float v10, v14, v15
 
-    .line 290
+    .line 298
     .local v10, "radius":F
     new-instance v9, Landroid/graphics/Paint;
 
@@ -367,18 +367,18 @@
 
     invoke-direct {v9, v14}, Landroid/graphics/Paint;-><init>(I)V
 
-    .line 291
+    .line 299
     .local v9, "paint":Landroid/graphics/Paint;
     const/4 v14, 0x1
 
     invoke-virtual {v9, v14}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 292
+    .line 300
     sget-object v14, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v9, v14}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 293
+    .line 301
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
@@ -391,7 +391,7 @@
 
     invoke-virtual {v9, v14}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 295
+    .line 303
     const/high16 v14, 0x40000000    # 2.0f
 
     div-float v14, v1, v14
@@ -408,17 +408,17 @@
 
     invoke-virtual {v5, v14, v15, v0, v9}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 297
+    .line 305
     sget-object v14, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v9, v14}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 298
+    .line 306
     const/high16 v14, 0x40000000    # 2.0f
 
     invoke-virtual {v9, v14}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 299
+    .line 307
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v14
@@ -431,7 +431,7 @@
 
     invoke-virtual {v9, v14}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 301
+    .line 309
     const/high16 v14, 0x40000000    # 2.0f
 
     div-float v14, v1, v14
@@ -448,10 +448,10 @@
 
     invoke-virtual {v5, v14, v15, v0, v9}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 303
+    .line 311
     sget-object v7, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
 
-    .line 304
+    .line 312
     .local v7, "mode":Landroid/graphics/PorterDuff$Mode;
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -463,7 +463,7 @@
 
     move-result v13
 
-    .line 305
+    .line 313
     .local v13, "tint":I
     new-instance v14, Landroid/graphics/PorterDuffColorFilter;
 
@@ -471,7 +471,7 @@
 
     invoke-virtual {v9, v14}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
-    .line 307
+    .line 315
     const/high16 v14, 0x40000000    # 2.0f
 
     div-float v14, v1, v14
@@ -510,28 +510,28 @@
 
     invoke-virtual {v5, v3, v14, v15, v9}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 309
+    .line 317
     new-instance v8, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v8}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 310
+    .line 318
     .local v8, "opts":Landroid/graphics/BitmapFactory$Options;
     const/4 v14, 0x1
 
     iput-boolean v14, v8, Landroid/graphics/BitmapFactory$Options;->inPurgeable:Z
 
-    .line 311
+    .line 319
     const/16 v14, 0x32
 
     iput v14, v8, Landroid/graphics/BitmapFactory$Options;->outHeight:I
 
-    .line 312
+    .line 320
     const/16 v14, 0x32
 
     iput v14, v8, Landroid/graphics/BitmapFactory$Options;->outWidth:I
 
-    .line 313
+    .line 321
     new-instance v11, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -540,7 +540,7 @@
 
     invoke-direct {v11, v14, v2}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 315
+    .line 323
     .local v11, "retDrawable":Landroid/graphics/drawable/Drawable;
     return-object v11
 
@@ -559,10 +559,10 @@
     :cond_0
     move-object/from16 v4, p1
 
-    .line 272
+    .line 280
     check-cast v4, Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 273
+    .line 281
     .local v4, "bitmapDrawable":Landroid/graphics/drawable/BitmapDrawable;
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -576,7 +576,7 @@
 
     invoke-virtual {v4, v14}, Landroid/graphics/drawable/BitmapDrawable;->setTint(I)V
 
-    .line 274
+    .line 282
     invoke-virtual {v4}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object v3
@@ -584,7 +584,7 @@
     .local v3, "bitmap":Landroid/graphics/Bitmap;
     goto/16 :goto_0
 
-    .line 280
+    .line 288
     .end local v4    # "bitmapDrawable":Landroid/graphics/drawable/BitmapDrawable;
     .end local p1    # "drawable":Landroid/graphics/drawable/Drawable;
     :cond_1
@@ -598,7 +598,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 245
+    .line 253
     :try_start_0
     const-string/jumbo v4, "audio"
 
@@ -608,7 +608,7 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    .line 246
+    .line 254
     .local v0, "audioManager":Landroid/media/AudioManager;
     const/4 v4, 0x2
 
@@ -616,22 +616,22 @@
 
     move-result-object v2
 
-    .line 247
+    .line 255
     .local v2, "notification":Landroid/net/Uri;
     invoke-static {p0, v2}, Landroid/media/RingtoneManager;->getRingtone(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/Ringtone;
 
     move-result-object v3
 
-    .line 248
+    .line 256
     .local v3, "r":Landroid/media/Ringtone;
     const/4 v4, 0x5
 
     invoke-virtual {v3, v4}, Landroid/media/Ringtone;->setStreamType(I)V
 
-    .line 249
+    .line 257
     invoke-virtual {v3}, Landroid/media/Ringtone;->play()V
 
-    .line 250
+    .line 258
     invoke-virtual {v0}, Landroid/media/AudioManager;->getRingerMode()I
 
     move-result v4
@@ -640,12 +640,12 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 251
+    .line 259
     invoke-static {p0}, Lcom/android/settings/bluetooth/Utils;->makeVibrate(Landroid/content/Context;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 243
+    .line 251
     .end local v0    # "audioManager":Landroid/media/AudioManager;
     .end local v2    # "notification":Landroid/net/Uri;
     .end local v3    # "r":Landroid/media/Ringtone;
@@ -653,11 +653,11 @@
     :goto_0
     return-void
 
-    .line 253
+    .line 261
     :catch_0
     move-exception v1
 
-    .line 254
+    .line 262
     .local v1, "e":Ljava/lang/Exception;
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
@@ -669,7 +669,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 259
+    .line 267
     const-string/jumbo v1, "vibrator"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -678,13 +678,13 @@
 
     check-cast v0, Landroid/os/Vibrator;
 
-    .line 260
+    .line 268
     .local v0, "v":Landroid/os/Vibrator;
     const-wide/16 v2, 0x3e8
 
     invoke-virtual {v0, v2, v3}, Landroid/os/Vibrator;->vibrate(J)V
 
-    .line 258
+    .line 266
     return-void
 .end method
 

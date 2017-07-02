@@ -34,20 +34,20 @@
     .param p3, "pendingIntent"    # Landroid/app/PendingIntent;
 
     .prologue
-    .line 4842
+    .line 4826
     iput-object p1, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 4843
+    .line 4827
     iput p2, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->viewId:I
 
-    .line 4844
+    .line 4828
     iput-object p3, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->pendingIntent:Landroid/app/PendingIntent;
 
-    .line 4842
+    .line 4826
     return-void
 .end method
 
@@ -57,28 +57,28 @@
     .param p2, "parcel"    # Landroid/os/Parcel;
 
     .prologue
-    .line 4847
+    .line 4831
     iput-object p1, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->this$0:Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$Action;-><init>(Landroid/widget/RemoteViews$Action;)V
 
-    .line 4848
+    .line 4832
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->viewId:I
 
-    .line 4849
+    .line 4833
     invoke-static {p2}, Landroid/app/PendingIntent;->readPendingIntentOrNullFromParcel(Landroid/os/Parcel;)Landroid/app/PendingIntent;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->pendingIntent:Landroid/app/PendingIntent;
 
-    .line 4847
+    .line 4831
     return-void
 .end method
 
@@ -91,7 +91,7 @@
     .param p3, "handler"    # Landroid/widget/RemoteViews$OnClickHandler;
 
     .prologue
-    .line 4860
+    .line 4844
     iget v2, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->viewId:I
 
     invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -100,7 +100,7 @@
 
     check-cast v1, Landroid/widget/CompoundButton;
 
-    .line 4861
+    .line 4845
     .local v1, "target":Landroid/widget/CompoundButton;
     if-eqz v1, :cond_0
 
@@ -108,16 +108,16 @@
 
     if-eqz v2, :cond_0
 
-    .line 4862
+    .line 4846
     new-instance v0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent$1;
 
     invoke-direct {v0, p0}, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent$1;-><init>(Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;)V
 
-    .line 4875
+    .line 4859
     .local v0, "checkListener":Landroid/widget/CompoundButton$OnCheckedChangeListener;
     invoke-virtual {v1, v0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 4859
+    .line 4843
     .end local v0    # "checkListener":Landroid/widget/CompoundButton$OnCheckedChangeListener;
     :cond_0
     return-void
@@ -127,7 +127,7 @@
     .locals 1
 
     .prologue
-    .line 4880
+    .line 4864
     const-string/jumbo v0, "semSetOnCheckedChangedPendingIntent"
 
     return-object v0
@@ -139,23 +139,23 @@
     .param p2, "flags"    # I
 
     .prologue
-    .line 4853
+    .line 4837
     const/16 v0, 0x21
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 4854
+    .line 4838
     iget v0, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->viewId:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 4855
+    .line 4839
     iget-object v0, p0, Landroid/widget/RemoteViews$semSetOnCheckedChangedPendingIntent;->pendingIntent:Landroid/app/PendingIntent;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, v1}, Landroid/app/PendingIntent;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 4852
+    .line 4836
     return-void
 .end method

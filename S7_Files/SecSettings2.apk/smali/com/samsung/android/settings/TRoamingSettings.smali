@@ -1220,7 +1220,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0a97
+    const v2, 0x7f0b0a9a
 
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1368,7 +1368,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0ab6
+    const v2, 0x7f0b0ab9
 
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -2147,12 +2147,12 @@
 
     .line 546
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
-    const v6, 0x7f0b0ab7
+    const v6, 0x7f0b0aba
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 547
-    const v6, 0x7f0b0ab8
+    const v6, 0x7f0b0abb
 
     invoke-virtual {v0, v6}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -2408,14 +2408,14 @@
     .line 305
     iget-object v2, p0, Lcom/samsung/android/settings/TRoamingSettings;->mMobileTRoaming:Landroid/preference/Preference;
 
-    const v3, 0x7f0b1aa6
+    const v3, 0x7f0b1ab4
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 306
     iget-object v2, p0, Lcom/samsung/android/settings/TRoamingSettings;->mUseDataRoaming:Landroid/preference/SwitchPreference;
 
-    const v3, 0x7f0b0e76
+    const v3, 0x7f0b0e85
 
     invoke-virtual {v2, v3}, Landroid/preference/SwitchPreference;->setTitle(I)V
 

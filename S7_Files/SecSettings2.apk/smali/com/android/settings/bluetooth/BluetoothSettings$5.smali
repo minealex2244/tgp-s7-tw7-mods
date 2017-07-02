@@ -1354,7 +1354,7 @@
     move-result-object v1
 
     .line 1538
-    const v3, 0x7f0b11ff
+    const v3, 0x7f0b120d
 
     const/4 v4, 0x0
 
@@ -1423,7 +1423,7 @@
     move-result-object v1
 
     .line 1542
-    const v3, 0x7f0b11ff
+    const v3, 0x7f0b120d
 
     const/4 v4, 0x0
 

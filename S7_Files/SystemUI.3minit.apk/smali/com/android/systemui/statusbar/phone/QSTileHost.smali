@@ -497,20 +497,20 @@
     .param p1, "tileList"    # Ljava/lang/String;
 
     .prologue
-    .line 903
+    .line 907
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 904
+    .line 908
     .local v3, "tiles":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     const-string/jumbo v0, ""
 
-    .line 906
+    .line 910
     .local v0, "convertedList":Ljava/lang/String;
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/QSTileHost;->makeCustomTileNameTable()V
 
-    .line 908
+    .line 912
     const-string/jumbo v4, ","
 
     invoke-virtual {p1, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -526,11 +526,11 @@
 
     aget-object v1, v5, v4
 
-    .line 909
+    .line 913
     .local v1, "tile":Ljava/lang/String;
     move-object v2, v1
 
-    .line 910
+    .line 914
     .local v2, "tileName":Ljava/lang/String;
     const-string/jumbo v7, "custom("
 
@@ -540,7 +540,7 @@
 
     if-eqz v7, :cond_0
 
-    .line 911
+    .line 915
     invoke-static {v1}, Lcom/android/systemui/qs/external/CustomTile;->getComponentFromSpec(Ljava/lang/String;)Landroid/content/ComponentName;
 
     move-result-object v7
@@ -551,25 +551,25 @@
 
     if-eqz v7, :cond_0
 
-    .line 912
+    .line 916
     invoke-direct {p0, v1}, Lcom/android/systemui/statusbar/phone/QSTileHost;->getCustomTileNameFromSpec(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 915
+    .line 919
     :cond_0
     if-eqz v2, :cond_1
 
-    .line 916
+    .line 920
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 908
+    .line 912
     :cond_1
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 919
+    .line 923
     .end local v1    # "tile":Ljava/lang/String;
     .end local v2    # "tileName":Ljava/lang/String;
     :cond_2
@@ -587,10 +587,10 @@
     .param p1, "spec"    # Ljava/lang/String;
 
     .prologue
-    .line 893
+    .line 897
     const-string/jumbo v0, ""
 
-    .line 894
+    .line 898
     .local v0, "componentName":Ljava/lang/String;
     const-string/jumbo v1, "com.samsung.android.sm/.ui.booster.PerformanceTile"
 
@@ -600,12 +600,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 895
+    .line 899
     const-string/jumbo v1, "Performance"
 
     return-object v1
 
-    .line 898
+    .line 902
     :cond_0
     invoke-static {p1}, Lcom/android/systemui/qs/external/CustomTile;->getComponentFromSpec(Ljava/lang/String;)Landroid/content/ComponentName;
 
@@ -615,7 +615,7 @@
 
     move-result-object v0
 
-    .line 899
+    .line 903
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mTileNameTable:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -634,10 +634,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 867
+    .line 871
     const-string/jumbo v0, ""
 
-    .line 868
+    .line 872
     .local v0, "customTileComponentName":Ljava/lang/String;
     sget-boolean v1, Lcom/android/systemui/SystemUIRune;->SUPPORT_CHN_SMART_MANAGER:Z
 
@@ -651,10 +651,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 869
+    .line 873
     const-string/jumbo p1, "PerformanceCHN"
 
-    .line 872
+    .line 876
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mComponentNameTable:Ljava/util/Map;
 
@@ -665,11 +665,11 @@
     .end local v0    # "customTileComponentName":Ljava/lang/String;
     check-cast v0, Ljava/lang/String;
 
-    .line 873
+    .line 877
     .restart local v0    # "customTileComponentName":Ljava/lang/String;
     if-eqz v0, :cond_1
 
-    .line 874
+    .line 878
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -696,7 +696,7 @@
 
     return-object v1
 
-    .line 876
+    .line 880
     :cond_1
     return-object v2
 .end method
@@ -801,36 +801,36 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 937
+    .line 941
     const-string/jumbo v7, "QSTileHost"
 
     const-string/jumbo v8, "getRecalculatedTileListForFota "
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 939
+    .line 943
     if-nez p1, :cond_0
 
-    .line 940
+    .line 944
     return-object p2
 
-    .line 942
+    .line 946
     :cond_0
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 943
+    .line 947
     .local v4, "oldLists":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 944
+    .line 948
     .local v3, "newLists":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     const-string/jumbo v5, ""
 
-    .line 945
+    .line 949
     .local v5, "temp":Ljava/lang/String;
     const-string/jumbo v7, ","
 
@@ -847,32 +847,32 @@
 
     aget-object v2, v8, v7
 
-    .line 946
+    .line 950
     .local v2, "list":Ljava/lang/String;
     invoke-virtual {v2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 947
+    .line 951
     invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
 
     move-result v10
 
     if-eqz v10, :cond_1
 
-    .line 945
+    .line 949
     :goto_1
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_0
 
-    .line 948
+    .line 952
     :cond_1
     invoke-virtual {v4, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 950
+    .line 954
     .end local v2    # "list":Ljava/lang/String;
     :cond_2
     const-string/jumbo v7, "QSTileHost"
@@ -897,7 +897,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 952
+    .line 956
     const-string/jumbo v7, ","
 
     invoke-virtual {p2, v7}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -911,32 +911,32 @@
 
     aget-object v2, v7, v6
 
-    .line 953
+    .line 957
     .restart local v2    # "list":Ljava/lang/String;
     invoke-virtual {v2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 954
+    .line 958
     invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
 
     move-result v9
 
     if-eqz v9, :cond_3
 
-    .line 952
+    .line 956
     :goto_3
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_2
 
-    .line 955
+    .line 959
     :cond_3
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    .line 957
+    .line 961
     .end local v2    # "list":Ljava/lang/String;
     :cond_4
     const-string/jumbo v6, "QSTileHost"
@@ -961,7 +961,7 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 960
+    .line 964
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -972,10 +972,10 @@
 
     if-ge v0, v6, :cond_6
 
-    .line 961
+    .line 965
     const/4 v1, 0x0
 
-    .line 962
+    .line 966
     .local v1, "index":I
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -987,7 +987,7 @@
 
     if-nez v6, :cond_5
 
-    .line 963
+    .line 967
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
@@ -996,7 +996,7 @@
 
     move-result v1
 
-    .line 964
+    .line 968
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
@@ -1005,7 +1005,7 @@
 
     invoke-virtual {v4, v1, v6}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 965
+    .line 969
     const-string/jumbo v7, "QSTileHost"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -1038,13 +1038,13 @@
 
     invoke-static {v7, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 960
+    .line 964
     :cond_5
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_4
 
-    .line 969
+    .line 973
     .end local v1    # "index":I
     :cond_6
     const/4 v0, 0x0
@@ -1056,10 +1056,10 @@
 
     if-ge v0, v6, :cond_9
 
-    .line 970
+    .line 974
     const/4 v1, 0x0
 
-    .line 971
+    .line 975
     .restart local v1    # "index":I
     invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1070,68 +1070,6 @@
     move-result v6
 
     if-eqz v6, :cond_8
-
-    .line 972
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v7
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/String;
-
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    const-string/jumbo v7, ","
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 973
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v6
-
-    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
-
-    move-result v1
-
-    .line 974
-    invoke-virtual {v3, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
-
-    .line 969
-    :cond_7
-    :goto_6
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_5
-
-    .line 975
-    :cond_8
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v6
-
-    check-cast v6, Ljava/lang/String;
-
-    invoke-virtual {p0, v6}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isNonDefaultCustomTile(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_7
 
     .line 976
     new-instance v6, Ljava/lang/StringBuilder;
@@ -1162,9 +1100,71 @@
 
     move-result-object v5
 
-    goto :goto_6
+    .line 977
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
+
+    move-result v1
+
+    .line 978
+    invoke-virtual {v3, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    .line 973
+    :cond_7
+    :goto_6
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_5
 
     .line 979
+    :cond_8
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/String;
+
+    invoke-virtual {p0, v6}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isNonDefaultCustomTile(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_7
+
+    .line 980
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v6, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Ljava/lang/String;
+
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string/jumbo v7, ","
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    goto :goto_6
+
+    .line 983
     .end local v1    # "index":I
     :cond_9
     return-object v5
@@ -1179,7 +1179,7 @@
 
     const/4 v4, 0x0
 
-    .line 793
+    .line 797
     const-string/jumbo v5, "Performance"
 
     invoke-virtual {v5, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1188,7 +1188,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 794
+    .line 798
     invoke-static {}, Lcom/samsung/android/feature/SemFloatingFeature;->getInstance()Lcom/samsung/android/feature/SemFloatingFeature;
 
     move-result-object v5
@@ -1201,17 +1201,17 @@
 
     if-nez v5, :cond_e
 
-    .line 795
+    .line 799
     const-string/jumbo v3, "QSTileHost"
 
     const-string/jumbo v5, "isAvailableCustomTile : PerformanceTile is removed "
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 796
+    .line 800
     return v4
 
-    .line 798
+    .line 802
     :cond_0
     const-string/jumbo v5, "Aod"
 
@@ -1221,22 +1221,22 @@
 
     if-eqz v5, :cond_1
 
-    .line 799
+    .line 803
     sget-boolean v5, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_ALWAYS_ON_DISPLAY:Z
 
     if-nez v5, :cond_e
 
-    .line 800
+    .line 804
     const-string/jumbo v3, "QSTileHost"
 
     const-string/jumbo v5, "isAvailableCustomTile : AodTile is removed "
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 801
+    .line 805
     return v4
 
-    .line 803
+    .line 807
     :cond_1
     const-string/jumbo v5, "PersonalMode"
 
@@ -1246,7 +1246,7 @@
 
     if-eqz v5, :cond_3
 
-    .line 805
+    .line 809
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
     move-result v5
@@ -1255,27 +1255,27 @@
 
     move v5, v3
 
-    .line 804
+    .line 808
     :goto_0
     if-nez v5, :cond_e
 
-    .line 806
+    .line 810
     const-string/jumbo v3, "QSTileHost"
 
     const-string/jumbo v5, "isAvailableCustomTile : PersonalModeTile is removed "
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 807
+    .line 811
     return v4
 
     :cond_2
     move v5, v4
 
-    .line 805
+    .line 809
     goto :goto_0
 
-    .line 809
+    .line 813
     :cond_3
     const-string/jumbo v5, "AllShareCast"
 
@@ -1285,7 +1285,7 @@
 
     if-eqz v5, :cond_4
 
-    .line 810
+    .line 814
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     const-string/jumbo v6, "display"
@@ -1296,30 +1296,30 @@
 
     check-cast v0, Landroid/hardware/display/DisplayManager;
 
-    .line 811
+    .line 815
     .local v0, "displayManager":Landroid/hardware/display/DisplayManager;
     invoke-virtual {v0}, Landroid/hardware/display/DisplayManager;->semCheckScreenSharingSupported()I
 
     move-result v1
 
-    .line 812
+    .line 816
     .local v1, "feature":I
     if-eq v1, v3, :cond_e
 
-    .line 813
+    .line 817
     if-eqz v1, :cond_e
 
-    .line 814
+    .line 818
     const-string/jumbo v3, "QSTileHost"
 
     const-string/jumbo v5, "isAvailableCustomTile : AllShareCastTile is removed "
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 815
+    .line 819
     return v4
 
-    .line 817
+    .line 821
     .end local v0    # "displayManager":Landroid/hardware/display/DisplayManager;
     .end local v1    # "feature":I
     :cond_4
@@ -1331,7 +1331,7 @@
 
     if-eqz v5, :cond_6
 
-    .line 818
+    .line 822
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -1346,15 +1346,15 @@
 
     if-eqz v5, :cond_5
 
-    .line 819
+    .line 823
     invoke-static {}, Lcom/android/systemui/statusbar/DeviceState;->isTablet()Z
 
     move-result v5
 
-    .line 818
+    .line 822
     if-eqz v5, :cond_e
 
-    .line 820
+    .line 824
     :cond_5
     const-string/jumbo v3, "QSTileHost"
 
@@ -1362,10 +1362,10 @@
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 821
+    .line 825
     return v4
 
-    .line 823
+    .line 827
     :cond_6
     const-string/jumbo v5, "DeviceVisibility"
 
@@ -1375,7 +1375,7 @@
 
     if-eqz v5, :cond_8
 
-    .line 824
+    .line 828
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     invoke-static {v5}, Lcom/android/systemui/statusbar/DeviceState;->isQuickConnectSupported(Landroid/content/Context;)Z
@@ -1384,14 +1384,14 @@
 
     if-eqz v5, :cond_7
 
-    .line 825
+    .line 829
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
     move-result v5
 
     if-eqz v5, :cond_e
 
-    .line 826
+    .line 830
     :cond_7
     const-string/jumbo v3, "QSTileHost"
 
@@ -1399,10 +1399,10 @@
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 827
+    .line 831
     return v4
 
-    .line 829
+    .line 833
     :cond_8
     const-string/jumbo v5, "SecureFolder"
 
@@ -1412,7 +1412,7 @@
 
     if-eqz v5, :cond_b
 
-    .line 830
+    .line 834
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     const-string/jumbo v6, "persona"
@@ -1423,11 +1423,11 @@
 
     check-cast v2, Lcom/samsung/android/knox/SemPersonaManager;
 
-    .line 831
+    .line 835
     .local v2, "mPersonaManager":Lcom/samsung/android/knox/SemPersonaManager;
     if-eqz v2, :cond_a
 
-    .line 832
+    .line 836
     invoke-virtual {v2}, Lcom/samsung/android/knox/SemPersonaManager;->isUserManaged()Z
 
     move-result v5
@@ -1448,11 +1448,11 @@
 
     goto :goto_1
 
-    .line 834
+    .line 838
     :cond_a
     return v4
 
-    .line 838
+    .line 842
     .end local v2    # "mPersonaManager":Lcom/samsung/android/knox/SemPersonaManager;
     :cond_b
     const-string/jumbo v5, "com.android.settings/com.samsung.android.settings.qstile.BluelightFilterTiles"
@@ -1463,17 +1463,17 @@
 
     if-eqz v5, :cond_c
 
-    .line 839
+    .line 843
     const-string/jumbo v3, "QSTileHost"
 
     const-string/jumbo v5, "isAvailableCustomTile : BluelightFilterTiles is removed"
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 840
+    .line 844
     return v4
 
-    .line 841
+    .line 845
     :cond_c
     const-string/jumbo v5, "com.samsung.android.sm/.ui.booster.PerformanceTile"
 
@@ -1483,17 +1483,17 @@
 
     if-eqz v5, :cond_d
 
-    .line 842
+    .line 846
     const-string/jumbo v3, "QSTileHost"
 
     const-string/jumbo v5, "isAvailableCustomTile : old PerformanceTile is removed"
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 843
+    .line 847
     return v4
 
-    .line 844
+    .line 848
     :cond_d
     const-string/jumbo v5, "com.android.settings/.accounts.SecAccountTiles"
 
@@ -1503,17 +1503,17 @@
 
     if-eqz v5, :cond_e
 
-    .line 845
+    .line 849
     const-string/jumbo v3, "QSTileHost"
 
     const-string/jumbo v5, "isAvailableCustomTile : old SyncTile is removed"
 
     invoke-static {v3, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 846
+    .line 850
     return v4
 
-    .line 849
+    .line 853
     :cond_e
     return v3
 .end method
@@ -1524,14 +1524,14 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 853
+    .line 857
     iget-object v6, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    .line 854
+    .line 858
     .local v3, "res":Landroid/content/res/Resources;
     const v6, 0x7f0f022a
 
@@ -1539,7 +1539,7 @@
 
     move-result-object v1
 
-    .line 856
+    .line 860
     .local v1, "customTileComponentNameList":Ljava/lang/String;
     new-instance v6, Ljava/util/HashMap;
 
@@ -1547,7 +1547,7 @@
 
     iput-object v6, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mComponentNameTable:Ljava/util/Map;
 
-    .line 857
+    .line 861
     const-string/jumbo v6, ","
 
     invoke-virtual {v1, v6}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -1563,7 +1563,7 @@
 
     aget-object v5, v8, v6
 
-    .line 858
+    .line 862
     .local v5, "temp":Ljava/lang/String;
     const-string/jumbo v10, ":"
 
@@ -1571,13 +1571,13 @@
 
     move-result v4
 
-    .line 859
+    .line 863
     .local v4, "seperatorIndex":I
     invoke-virtual {v5, v7, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 860
+    .line 864
     .local v2, "customTileName":Ljava/lang/String;
     add-int/lit8 v10, v4, 0x1
 
@@ -1589,13 +1589,13 @@
 
     move-result-object v0
 
-    .line 861
+    .line 865
     .local v0, "componentName":Ljava/lang/String;
     iget-object v10, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mComponentNameTable:Ljava/util/Map;
 
     invoke-interface {v10, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 862
+    .line 866
     const-string/jumbo v10, "QSTileHost"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -1628,12 +1628,12 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 857
+    .line 861
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
-    .line 852
+    .line 856
     .end local v0    # "componentName":Ljava/lang/String;
     .end local v2    # "customTileName":Ljava/lang/String;
     .end local v4    # "seperatorIndex":I
@@ -1648,14 +1648,14 @@
     .prologue
     const/4 v7, 0x0
 
-    .line 880
+    .line 884
     iget-object v6, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     invoke-virtual {v6}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    .line 881
+    .line 885
     .local v3, "res":Landroid/content/res/Resources;
     const v6, 0x7f0f022a
 
@@ -1663,7 +1663,7 @@
 
     move-result-object v1
 
-    .line 883
+    .line 887
     .local v1, "customTileComponentNameList":Ljava/lang/String;
     new-instance v6, Ljava/util/HashMap;
 
@@ -1671,7 +1671,7 @@
 
     iput-object v6, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mTileNameTable:Ljava/util/Map;
 
-    .line 884
+    .line 888
     const-string/jumbo v6, ","
 
     invoke-virtual {v1, v6}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -1687,7 +1687,7 @@
 
     aget-object v5, v8, v6
 
-    .line 885
+    .line 889
     .local v5, "temp":Ljava/lang/String;
     const-string/jumbo v10, ":"
 
@@ -1695,13 +1695,13 @@
 
     move-result v4
 
-    .line 886
+    .line 890
     .local v4, "seperatorIndex":I
     invoke-virtual {v5, v7, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 887
+    .line 891
     .local v2, "customTileName":Ljava/lang/String;
     add-int/lit8 v10, v4, 0x1
 
@@ -1713,18 +1713,18 @@
 
     move-result-object v0
 
-    .line 888
+    .line 892
     .local v0, "componentName":Ljava/lang/String;
     iget-object v10, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mTileNameTable:Ljava/util/Map;
 
     invoke-interface {v10, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 884
+    .line 888
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
-    .line 879
+    .line 883
     .end local v0    # "componentName":Ljava/lang/String;
     .end local v2    # "customTileName":Ljava/lang/String;
     .end local v4    # "seperatorIndex":I
@@ -1872,7 +1872,7 @@
     .param p1, "tileName"    # Ljava/lang/String;
 
     .prologue
-    .line 983
+    .line 987
     const-string/jumbo v0, "WIFIHOTSPOT"
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -1887,15 +1887,15 @@
 
     if-eqz v0, :cond_1
 
-    .line 984
+    .line 988
     const-string/jumbo p1, "Hotspot"
 
-    .line 1001
+    .line 1005
     :cond_0
     :goto_0
     return-object p1
 
-    .line 985
+    .line 989
     :cond_1
     const-string/jumbo v0, "AUTOROTATE"
 
@@ -1911,12 +1911,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 986
+    .line 990
     const-string/jumbo p1, "RotationLock"
 
     goto :goto_0
 
-    .line 987
+    .line 991
     :cond_2
     const-string/jumbo v0, "SFINDER"
 
@@ -1932,12 +1932,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 988
+    .line 992
     const-string/jumbo p1, "SFinder"
 
     goto :goto_0
 
-    .line 989
+    .line 993
     :cond_3
     const-string/jumbo v0, "TORCHLIGHT"
 
@@ -1953,12 +1953,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 990
+    .line 994
     const-string/jumbo p1, "Flashlight"
 
     goto :goto_0
 
-    .line 991
+    .line 995
     :cond_4
     const-string/jumbo v0, "SILENTMODE"
 
@@ -1988,13 +1988,13 @@
 
     if-eqz v0, :cond_6
 
-    .line 992
+    .line 996
     :cond_5
     const-string/jumbo p1, "SoundMode"
 
     goto :goto_0
 
-    .line 993
+    .line 997
     :cond_6
     const-string/jumbo v0, "DND"
 
@@ -2024,13 +2024,13 @@
 
     if-eqz v0, :cond_8
 
-    .line 994
+    .line 998
     :cond_7
     const-string/jumbo p1, "Dnd"
 
     goto :goto_0
 
-    .line 995
+    .line 999
     :cond_8
     const-string/jumbo v0, "WIFICALLING"
 
@@ -2050,12 +2050,12 @@
 
     if-eqz v0, :cond_9
 
-    .line 996
+    .line 1000
     const-string/jumbo p1, "WifiCallingSpr"
 
     goto/16 :goto_0
 
-    .line 997
+    .line 1001
     :cond_9
     const-string/jumbo v0, "RJILWIFICALLING"
 
@@ -2075,7 +2075,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 998
+    .line 1002
     const-string/jumbo p1, "WifiCalling"
 
     goto/16 :goto_0
@@ -2508,20 +2508,20 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1048
+    .line 1052
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mScreenGridDialog:Lcom/android/systemui/qs/QSScreenGridDialog;
 
     if-eqz v0, :cond_0
 
-    .line 1049
+    .line 1053
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mScreenGridDialog:Lcom/android/systemui/qs/QSScreenGridDialog;
 
     invoke-virtual {v0}, Lcom/android/systemui/qs/QSScreenGridDialog;->dismiss()V
 
-    .line 1050
+    .line 1054
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mScreenGridDialog:Lcom/android/systemui/qs/QSScreenGridDialog;
 
-    .line 1047
+    .line 1051
     :cond_0
     return-void
 .end method
@@ -2531,12 +2531,12 @@
     .param p1, "pw"    # Ljava/io/PrintWriter;
 
     .prologue
-    .line 1093
+    .line 1097
     const-string/jumbo v0, "QsTileHost state:"
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1094
+    .line 1098
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2559,7 +2559,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1095
+    .line 1099
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2582,7 +2582,7 @@
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1092
+    .line 1096
     return-void
 .end method
 
@@ -2843,14 +2843,14 @@
     .param p1, "componentName"    # Landroid/content/ComponentName;
 
     .prologue
-    .line 923
+    .line 927
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 924
+    .line 928
     .local v1, "res":Landroid/content/res/Resources;
     const v2, 0x7f0f022a
 
@@ -2858,7 +2858,7 @@
 
     move-result-object v0
 
-    .line 926
+    .line 930
     .local v0, "customTileComponentNameList":Ljava/lang/String;
     invoke-virtual {p1}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
@@ -2878,7 +2878,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 930
+    .line 934
     const-string/jumbo v1, "custom("
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -2887,7 +2887,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 931
+    .line 935
     invoke-static {p1}, Lcom/android/systemui/qs/external/CustomTile;->getComponentFromSpec(Ljava/lang/String;)Landroid/content/ComponentName;
 
     move-result-object v1
@@ -2906,7 +2906,7 @@
 
     goto :goto_0
 
-    .line 933
+    .line 937
     :cond_1
     return v0
 .end method
@@ -2918,30 +2918,30 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1079
+    .line 1083
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    .line 1080
+    .line 1084
     const-string/jumbo v4, "sysui_removed_qs_tiles"
 
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
     move-result v5
 
-    .line 1079
+    .line 1083
     invoke-static {v2, v4, v5}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1081
+    .line 1085
     .local v0, "removedTileList":Ljava/lang/String;
     if-eqz v0, :cond_1
 
-    .line 1082
+    .line 1086
     const-string/jumbo v2, ","
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -2957,7 +2957,7 @@
 
     aget-object v1, v4, v2
 
-    .line 1083
+    .line 1087
     .local v1, "spec":Ljava/lang/String;
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2965,18 +2965,18 @@
 
     if-eqz v6, :cond_0
 
-    .line 1084
+    .line 1088
     const/4 v2, 0x1
 
     return v2
 
-    .line 1082
+    .line 1086
     :cond_0
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 1088
+    .line 1092
     .end local v1    # "spec":Ljava/lang/String;
     :cond_1
     return v3
@@ -2987,12 +2987,12 @@
     .param p1, "tileName"    # Ljava/lang/String;
 
     .prologue
-    .line 781
+    .line 785
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/phone/QSTileHost;->changeOldOSTileNameToNewName(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 784
+    .line 788
     :try_start_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -3024,18 +3024,18 @@
 
     move-result-object v1
 
-    .line 789
+    .line 793
     .local v1, "tempClass":Ljava/lang/Class;
     const/4 v2, 0x1
 
     return v2
 
-    .line 785
+    .line 789
     .end local v1    # "tempClass":Ljava/lang/Class;
     :catch_0
     move-exception v0
 
-    .line 786
+    .line 790
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v2, "QSTileHost"
 
@@ -3063,7 +3063,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 787
+    .line 791
     const/4 v2, 0x0
 
     return v2
@@ -3244,7 +3244,7 @@
 .end method
 
 .method protected loadTileSpecsFromCscFeature(Ljava/lang/String;Z)Ljava/util/List;
-    .locals 11
+    .locals 14
     .param p1, "tileList"    # Ljava/lang/String;
     .param p2, "isFotaUpdate"    # Z
     .annotation system Ldalvik/annotation/Signature;
@@ -3260,26 +3260,24 @@
     .end annotation
 
     .prologue
-    const/4 v10, 0x0
-
     .line 721
-    new-instance v6, Ljava/util/ArrayList;
+    new-instance v9, Ljava/util/ArrayList;
 
-    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
     .line 722
-    .local v6, "tiles":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
-    iget-object v7, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
+    .local v9, "tiles":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
+    iget-object v10, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v7}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v10}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    move-result-object v4
+    move-result-object v6
 
     .line 723
-    .local v4, "res":Landroid/content/res/Resources;
-    const v7, 0x7f0f0228
+    .local v6, "res":Landroid/content/res/Resources;
+    const v10, 0x7f0f0228
 
-    invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-virtual {v6, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3287,226 +3285,311 @@
     .local v2, "defaultTileList":Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
-    move-result-object v7
+    move-result-object v10
 
     .line 725
-    const-string/jumbo v8, "CscFeature_SystemUI_ConfigDefQuickSettingItem"
+    const-string/jumbo v11, "CscFeature_SystemUI_ConfigDefQuickSettingItem"
 
     .line 724
-    invoke-virtual {v7, v8, v2}, Lcom/samsung/android/feature/SemCscFeature;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v10, v11, v2}, Lcom/samsung/android/feature/SemCscFeature;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 731
+    .line 727
     .local v0, "cscTileList":Ljava/lang/String;
-    sget-boolean v7, Lcom/android/systemui/statusbar/phone/QSTileHost;->DEBUG:Z
+    if-eqz p1, :cond_0
 
-    if-eqz v7, :cond_0
+    .line 728
+    invoke-static {}, Lcom/samsung/android/knox/custom/PrivateCustomDeviceManager;->getInstance()Lcom/samsung/android/knox/custom/PrivateCustomDeviceManager;
 
-    const-string/jumbo v7, "QSTileHost"
+    move-result-object v4
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    .line 729
+    .local v4, "privateCustomDeviceManager":Lcom/samsung/android/knox/custom/PrivateCustomDeviceManager;
+    iget-object v10, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v10}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    const-string/jumbo v9, "Loaded tile specs from csc: "
+    move-result-object v10
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 730
+    const-string/jumbo v11, "sysui_removed_qs_tiles"
+
+    invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
+
+    move-result v12
+
+    .line 729
+    invoke-static {v10, v11, v12}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 731
+    .local v5, "removedTileList":Ljava/lang/String;
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v10, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v10
+
+    const-string/jumbo v11, ","
+
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v10
+
+    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v8
 
-    invoke-virtual {v8, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    .line 732
+    .local v8, "tileListForKnox":Ljava/lang/String;
+    invoke-virtual {v4, v8}, Lcom/samsung/android/knox/custom/PrivateCustomDeviceManager;->setKnoxCustomQSTileList(Ljava/lang/String;)Z
 
     .line 733
+    const-string/jumbo v10, "QSTileHost"
+
+    new-instance v11, Ljava/lang/StringBuilder;
+
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string/jumbo v12, "setKnoxCustomQSTileList: "
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 735
+    .end local v4    # "privateCustomDeviceManager":Lcom/samsung/android/knox/custom/PrivateCustomDeviceManager;
+    .end local v5    # "removedTileList":Ljava/lang/String;
+    .end local v8    # "tileListForKnox":Ljava/lang/String;
     :cond_0
-    const-string/jumbo v7, ""
+    sget-boolean v10, Lcom/android/systemui/statusbar/phone/QSTileHost;->DEBUG:Z
 
-    invoke-virtual {v7, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-eqz v10, :cond_1
 
-    move-result v7
+    const-string/jumbo v10, "QSTileHost"
 
-    if-eqz v7, :cond_1
+    new-instance v11, Ljava/lang/StringBuilder;
 
-    .line 734
-    return-object v10
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 736
+    const-string/jumbo v12, "Loaded tile specs from csc: "
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 737
     :cond_1
-    move-object v3, v0
+    const-string/jumbo v10, ""
+
+    invoke-virtual {v10, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v10
+
+    if-eqz v10, :cond_2
 
     .line 738
-    .local v3, "loadedTileList":Ljava/lang/String;
-    if-eqz p2, :cond_3
+    const/4 v10, 0x0
 
-    .line 739
-    if-eqz p1, :cond_2
+    return-object v10
 
     .line 740
+    :cond_2
+    move-object v3, v0
+
+    .line 742
+    .local v3, "loadedTileList":Ljava/lang/String;
+    if-eqz p2, :cond_4
+
+    .line 743
+    if-eqz p1, :cond_3
+
+    .line 744
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/QSTileHost;->convertDefaultCustomComponetToTileName(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 742
-    :cond_2
+    .line 746
+    :cond_3
     invoke-direct {p0, p1, v0}, Lcom/android/systemui/statusbar/phone/QSTileHost;->getRecalculatedTileListForFota(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 745
-    :cond_3
-    sget-boolean v7, Lcom/android/systemui/statusbar/phone/QSTileHost;->DEBUG:Z
-
-    if-eqz v7, :cond_4
-
-    const-string/jumbo v7, "QSTileHost"
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string/jumbo v9, "loadTileSpecsFromCscFeature : loadedTileList = "
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v8
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 748
+    .line 749
     :cond_4
-    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/QSTileHost;->makeCustomTileComponentNameTable()V
+    sget-boolean v10, Lcom/android/systemui/statusbar/phone/QSTileHost;->DEBUG:Z
 
-    .line 750
-    const-string/jumbo v7, ","
+    if-eqz v10, :cond_5
 
-    invoke-virtual {v3, v7}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+    const-string/jumbo v10, "QSTileHost"
 
-    move-result-object v8
+    new-instance v11, Ljava/lang/StringBuilder;
 
-    const/4 v7, 0x0
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
-    array-length v9, v8
+    const-string/jumbo v12, "loadTileSpecsFromCscFeature : loadedTileList = "
 
-    :goto_0
-    if-ge v7, v9, :cond_8
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget-object v5, v8, v7
+    move-result-object v11
 
-    .line 751
-    .local v5, "tile":Ljava/lang/String;
-    invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isSystemTile(Ljava/lang/String;)Z
+    invoke-virtual {v11, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v10
+    move-result-object v11
 
-    if-eqz v10, :cond_6
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 752
-    invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isRemovedTileList(Ljava/lang/String;)Z
-
-    move-result v10
-
-    if-nez v10, :cond_5
-
-    .line 753
-    invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 750
     :cond_5
+    invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/QSTileHost;->makeCustomTileComponentNameTable()V
+
+    .line 754
+    const-string/jumbo v10, ","
+
+    invoke-virtual {v3, v10}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v11
+
+    const/4 v10, 0x0
+
+    array-length v12, v11
+
+    :goto_0
+    if-ge v10, v12, :cond_9
+
+    aget-object v7, v11, v10
+
+    .line 755
+    .local v7, "tile":Ljava/lang/String;
+    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isSystemTile(Ljava/lang/String;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_7
+
+    .line 756
+    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isRemovedTileList(Ljava/lang/String;)Z
+
+    move-result v13
+
+    if-nez v13, :cond_6
+
+    .line 757
+    invoke-virtual {v9, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 754
+    :cond_6
     :goto_1
-    add-int/lit8 v7, v7, 0x1
+    add-int/lit8 v10, v10, 0x1
 
     goto :goto_0
 
-    .line 756
-    :cond_6
-    invoke-direct {p0, v5}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isAvailableCustomTile(Ljava/lang/String;)Z
+    .line 760
+    :cond_7
+    invoke-direct {p0, v7}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isAvailableCustomTile(Ljava/lang/String;)Z
 
-    move-result v10
+    move-result v13
 
-    if-eqz v10, :cond_5
+    if-eqz v13, :cond_6
 
-    .line 757
-    invoke-direct {p0, v5}, Lcom/android/systemui/statusbar/phone/QSTileHost;->getCustomTileSpecFromTileName(Ljava/lang/String;)Ljava/lang/String;
+    .line 761
+    invoke-direct {p0, v7}, Lcom/android/systemui/statusbar/phone/QSTileHost;->getCustomTileSpecFromTileName(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 758
-    .local v1, "customSpec":Ljava/lang/String;
-    if-eqz v1, :cond_7
-
-    .line 759
-    invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isRemovedTileList(Ljava/lang/String;)Z
-
-    move-result v10
-
-    if-nez v10, :cond_5
-
-    .line 760
-    invoke-virtual {v6, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_1
-
     .line 762
-    :cond_7
-    if-eqz p2, :cond_5
-
-    invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isNonDefaultCustomTile(Ljava/lang/String;)Z
-
-    move-result v10
-
-    if-eqz v10, :cond_5
+    .local v1, "customSpec":Ljava/lang/String;
+    if-eqz v1, :cond_8
 
     .line 763
-    invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isRemovedTileList(Ljava/lang/String;)Z
+
+    move-result v13
+
+    if-nez v13, :cond_6
+
+    .line 764
+    invoke-virtual {v9, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 774
-    .end local v1    # "customSpec":Ljava/lang/String;
-    .end local v5    # "tile":Ljava/lang/String;
+    .line 766
     :cond_8
+    if-eqz p2, :cond_6
+
+    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/phone/QSTileHost;->isNonDefaultCustomTile(Ljava/lang/String;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_6
+
+    .line 767
+    invoke-virtual {v9, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    .line 778
+    .end local v1    # "customSpec":Ljava/lang/String;
+    .end local v7    # "tile":Ljava/lang/String;
+    :cond_9
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/QSTileHost;->getContext()Landroid/content/Context;
 
-    move-result-object v7
+    move-result-object v10
 
-    invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v10}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v7
+    move-result-object v10
 
-    const-string/jumbo v8, "sysui_qs_tiles"
+    const-string/jumbo v11, "sysui_qs_tiles"
 
-    .line 775
-    const-string/jumbo v9, ","
+    .line 779
+    const-string/jumbo v12, ","
 
-    invoke-static {v9, v6}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+    invoke-static {v12, v9}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v12
 
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
-    move-result v10
+    move-result v13
 
-    .line 774
-    invoke-static {v7, v8, v9, v10}, Landroid/provider/Settings$Secure;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
+    .line 778
+    invoke-static {v10, v11, v12, v13}, Landroid/provider/Settings$Secure;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    .line 777
-    return-object v6
+    .line 781
+    return-object v9
 .end method
 
 .method protected loadTileSpecsUPSM(Landroid/content/Context;)Ljava/util/List;
@@ -3678,7 +3761,7 @@
     .end annotation
 
     .prologue
-    .line 1021
+    .line 1025
     .local p1, "tile":Lcom/android/systemui/qs/QSTile;, "Lcom/android/systemui/qs/QSTile<*>;"
     const/4 v0, 0x0
 
@@ -3701,11 +3784,11 @@
     .end annotation
 
     .prologue
-    .line 1025
+    .line 1029
     .local p1, "tile":Lcom/android/systemui/qs/QSTile;, "Lcom/android/systemui/qs/QSTile<*>;"
     const/4 v1, 0x0
 
-    .line 1027
+    .line 1031
     .local v1, "ret":Z
     :try_start_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mStatusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
@@ -3714,11 +3797,11 @@
 
     move-result v1
 
-    .line 1028
+    .line 1032
     .local v1, "ret":Z
     if-eqz v1, :cond_0
 
-    .line 1029
+    .line 1033
     const-string/jumbo v2, "QSTileHost"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -3753,17 +3836,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1033
+    .line 1037
     .end local v1    # "ret":Z
     :cond_0
     :goto_0
     return v1
 
-    .line 1030
+    .line 1034
     :catch_0
     move-exception v0
 
-    .line 1031
+    .line 1035
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v2, "QSTileHost"
 
@@ -3782,7 +3865,7 @@
 
     const/4 v3, 0x0
 
-    .line 1011
+    .line 1015
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/keyguard/util/SettingsHelper;->getInstance(Landroid/content/Context;)Lcom/android/keyguard/util/SettingsHelper;
@@ -3795,7 +3878,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1012
+    .line 1016
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/systemui/tuner/TunerService;->get(Landroid/content/Context;)Lcom/android/systemui/tuner/TunerService;
@@ -3810,11 +3893,11 @@
 
     invoke-virtual {v0, p0, v1}, Lcom/android/systemui/tuner/TunerService;->addTunable(Lcom/android/systemui/tuner/TunerService$Tunable;[Ljava/lang/String;)V
 
-    .line 1010
+    .line 1014
     :goto_0
     return-void
 
-    .line 1014
+    .line 1018
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
@@ -4828,12 +4911,12 @@
     .locals 1
 
     .prologue
-    .line 1006
+    .line 1010
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mStatusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->setQsExpansionHeight()V
 
-    .line 1005
+    .line 1009
     return-void
 .end method
 
@@ -4944,7 +5027,7 @@
     .locals 2
 
     .prologue
-    .line 1042
+    .line 1046
     new-instance v0, Lcom/android/systemui/qs/QSScreenGridDialog;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
@@ -4953,17 +5036,17 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mScreenGridDialog:Lcom/android/systemui/qs/QSScreenGridDialog;
 
-    .line 1043
+    .line 1047
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mScreenGridDialog:Lcom/android/systemui/qs/QSScreenGridDialog;
 
     invoke-virtual {v0, p0}, Lcom/android/systemui/qs/QSScreenGridDialog;->setHost(Lcom/android/systemui/statusbar/phone/QSTileHost;)V
 
-    .line 1044
+    .line 1048
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mScreenGridDialog:Lcom/android/systemui/qs/QSScreenGridDialog;
 
     invoke-virtual {v0}, Lcom/android/systemui/qs/QSScreenGridDialog;->show()V
 
-    .line 1041
+    .line 1045
     return-void
 .end method
 
@@ -5017,12 +5100,12 @@
     .param p2, "tileIsAdded"    # Z
 
     .prologue
-    .line 1056
+    .line 1060
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1057
+    .line 1061
     .local v2, "specs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
 
@@ -5030,19 +5113,19 @@
 
     move-result-object v3
 
-    .line 1058
+    .line 1062
     const-string/jumbo v4, "sysui_removed_qs_tiles"
 
     invoke-static {}, Landroid/app/ActivityManager;->getCurrentUser()I
 
     move-result v5
 
-    .line 1057
+    .line 1061
     invoke-static {v3, v4, v5}, Landroid/provider/Settings$Secure;->getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1059
+    .line 1063
     .local v0, "removedTileList":Ljava/lang/String;
     const-string/jumbo v3, "QSTileHost"
 
@@ -5076,10 +5159,10 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1060
+    .line 1064
     if-eqz v0, :cond_0
 
-    .line 1061
+    .line 1065
     const-string/jumbo v3, ","
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -5095,31 +5178,31 @@
 
     aget-object v1, v4, v3
 
-    .line 1062
+    .line 1066
     .local v1, "spec":Ljava/lang/String;
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 1061
+    .line 1065
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 1065
+    .line 1069
     .end local v1    # "spec":Ljava/lang/String;
     :cond_0
     if-eqz p2, :cond_2
 
-    .line 1066
+    .line 1070
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 1067
+    .line 1071
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 1074
+    .line 1078
     :cond_1
     :goto_1
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/QSTileHost;->mContext:Landroid/content/Context;
@@ -5130,7 +5213,7 @@
 
     const-string/jumbo v4, "sysui_removed_qs_tiles"
 
-    .line 1075
+    .line 1079
     const-string/jumbo v5, ","
 
     invoke-static {v5, v2}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
@@ -5141,13 +5224,13 @@
 
     move-result v6
 
-    .line 1074
+    .line 1078
     invoke-static {v3, v4, v5, v6}, Landroid/provider/Settings$Secure;->putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    .line 1055
+    .line 1059
     return-void
 
-    .line 1070
+    .line 1074
     :cond_2
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -5155,7 +5238,7 @@
 
     if-nez v3, :cond_1
 
-    .line 1071
+    .line 1075
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1

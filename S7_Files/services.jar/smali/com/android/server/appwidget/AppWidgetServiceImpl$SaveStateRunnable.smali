@@ -30,15 +30,15 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 4545
+    .line 4755
     iput-object p1, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$SaveStateRunnable;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4546
+    .line 4756
     iput p2, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$SaveStateRunnable;->mUserId:I
 
-    .line 4545
+    .line 4755
     return-void
 .end method
 
@@ -48,16 +48,16 @@
     .locals 4
 
     .prologue
-    .line 4551
+    .line 4761
     iget-object v0, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$SaveStateRunnable;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
-    invoke-static {v0}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-get6(Lcom/android/server/appwidget/AppWidgetServiceImpl;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-get7(Lcom/android/server/appwidget/AppWidgetServiceImpl;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 4554
+    .line 4764
     :try_start_0
     iget-object v0, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$SaveStateRunnable;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
@@ -67,7 +67,7 @@
 
     invoke-static {v0, v2, v3}, Lcom/android/server/appwidget/AppWidgetServiceImpl;->-wrap4(Lcom/android/server/appwidget/AppWidgetServiceImpl;IZ)V
 
-    .line 4555
+    .line 4765
     iget-object v0, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$SaveStateRunnable;->this$0:Lcom/android/server/appwidget/AppWidgetServiceImpl;
 
     iget v2, p0, Lcom/android/server/appwidget/AppWidgetServiceImpl$SaveStateRunnable;->mUserId:I
@@ -78,10 +78,10 @@
 
     monitor-exit v1
 
-    .line 4550
+    .line 4760
     return-void
 
-    .line 4551
+    .line 4761
     :catchall_0
     move-exception v0
 

@@ -24,15 +24,15 @@
     .param p1, "r"    # Ljava/lang/Runnable;
 
     .prologue
-    .line 1643
+    .line 1644
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/widget/RemoteViews$RuntimeAction;-><init>(Landroid/widget/RemoteViews$RuntimeAction;)V
 
-    .line 1644
+    .line 1645
     iput-object p1, p0, Landroid/widget/RemoteViews$RunnableAction;->mRunnable:Ljava/lang/Runnable;
 
-    .line 1643
+    .line 1644
     return-void
 .end method
 
@@ -45,11 +45,11 @@
     .param p3, "handler"    # Landroid/widget/RemoteViews$OnClickHandler;
 
     .prologue
-    .line 1649
+    .line 1650
     iget-object v0, p0, Landroid/widget/RemoteViews$RunnableAction;->mRunnable:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 1648
+    .line 1649
     return-void
 .end method

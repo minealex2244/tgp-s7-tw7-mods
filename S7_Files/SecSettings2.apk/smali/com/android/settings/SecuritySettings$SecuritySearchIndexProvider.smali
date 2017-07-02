@@ -224,7 +224,7 @@
 
     .line 892
     .local v9, "res":Landroid/content/res/Resources;
-    const v15, 0x7f0b1137
+    const v15, 0x7f0b1144
 
     invoke-virtual {v9, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -269,7 +269,7 @@
     if-eqz v15, :cond_4
 
     .line 902
-    const v10, 0x7f0b1133
+    const v10, 0x7f0b1140
 
     .line 904
     .local v10, "resId":I
@@ -328,7 +328,7 @@
 
     .line 916
     .restart local v3    # "data":Lcom/android/settings/search/SearchIndexableRaw;
-    const v15, 0x7f0b113c
+    const v15, 0x7f0b1149
 
     invoke-virtual {v9, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -352,7 +352,7 @@
 
     .line 921
     .restart local v3    # "data":Lcom/android/settings/search/SearchIndexableRaw;
-    const v15, 0x7f0b113d
+    const v15, 0x7f0b114a
 
     invoke-virtual {v9, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -429,7 +429,7 @@
 
     .line 935
     .restart local v3    # "data":Lcom/android/settings/search/SearchIndexableRaw;
-    const v15, 0x7f0b14e0
+    const v15, 0x7f0b14ee
 
     invoke-virtual {v9, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -467,7 +467,7 @@
     if-eqz v15, :cond_5
 
     .line 946
-    const v13, 0x7f0b1706
+    const v13, 0x7f0b1714
 
     .line 949
     .local v13, "storageSummaryRes":I
@@ -578,7 +578,7 @@
     .end local v7    # "lockPatternUtils":Lcom/android/internal/widget/LockPatternUtils;
     .end local v8    # "profileUserId":I
     :cond_4
-    const v10, 0x7f0b1131
+    const v10, 0x7f0b113e
 
     .restart local v10    # "resId":I
     goto/16 :goto_0
@@ -590,7 +590,7 @@
     .restart local v7    # "lockPatternUtils":Lcom/android/internal/widget/LockPatternUtils;
     .restart local v8    # "profileUserId":I
     :cond_5
-    const v13, 0x7f0b1707
+    const v13, 0x7f0b1715
 
     .restart local v13    # "storageSummaryRes":I
     goto :goto_1

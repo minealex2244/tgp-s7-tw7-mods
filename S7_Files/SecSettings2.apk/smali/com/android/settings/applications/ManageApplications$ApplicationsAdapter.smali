@@ -1253,7 +1253,7 @@
     if-eqz v2, :cond_2
 
     .line 1864
-    const v2, 0x7f0b19ca
+    const v2, 0x7f0b19d8
 
     .line 1863
     :goto_1
@@ -1263,7 +1263,7 @@
 
     .line 1865
     :cond_2
-    const v2, 0x7f0b19cb
+    const v2, 0x7f0b19d9
 
     goto :goto_1
 
@@ -2217,7 +2217,7 @@
     .line 1824
     iget-object v2, v1, Lcom/android/settings/applications/AppViewHolder;->disabled:Landroid/widget/TextView;
 
-    const v3, 0x7f0b1526
+    const v3, 0x7f0b1534
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
     :try_end_0
@@ -2265,7 +2265,7 @@
     .line 1827
     iget-object v2, v1, Lcom/android/settings/applications/AppViewHolder;->disabled:Landroid/widget/TextView;
 
-    const v3, 0x7f0b1525
+    const v3, 0x7f0b1533
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
     :try_end_1
@@ -2803,37 +2803,22 @@
     .line 1536
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mBaseEntries:Ljava/util/ArrayList;
 
-    if-eqz v2, :cond_3
-
-    .line 1537
-    iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mCurFilterPrefix:Ljava/lang/CharSequence;
-
-    iget-object v3, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mBaseEntries:Ljava/util/ArrayList;
-
-    invoke-virtual {p0, v2, v3}, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->applyPrefixFilter(Ljava/lang/CharSequence;Ljava/util/ArrayList;)Ljava/util/ArrayList;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mEntries:Ljava/util/ArrayList;
+    if-eqz v2, :cond_6
 
     .line 1538
-    invoke-direct {p0}, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->rebuildSections()V
-
-    .line 1545
-    :goto_0
     const/4 v0, 0x0
 
     .local v0, "i":I
-    :goto_1
+    :goto_0
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mBaseEntries:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
-    if-ge v0, v2, :cond_5
+    if-ge v0, v2, :cond_4
 
-    .line 1546
+    .line 1539
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mBaseEntries:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2850,72 +2835,70 @@
 
     move-result v1
 
-    .line 1547
+    .line 1540
     .local v1, "userId":I
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
     move-result v2
 
-    if-lt v2, v5, :cond_4
+    if-lt v2, v5, :cond_3
 
-    .line 1548
+    .line 1541
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
     move-result v2
 
     if-eq v1, v2, :cond_2
 
-    .line 1549
+    .line 1542
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mBaseEntries:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 1550
+    .line 1543
     add-int/lit8 v0, v0, -0x1
 
-    .line 1545
+    .line 1538
     :cond_2
-    :goto_2
+    :goto_1
     add-int/lit8 v0, v0, 0x1
-
-    goto :goto_1
-
-    .line 1540
-    .end local v0    # "i":I
-    .end local v1    # "userId":I
-    :cond_3
-    iput-object v3, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mEntries:Ljava/util/ArrayList;
-
-    .line 1541
-    sget-object v2, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->EMPTY_SECTIONS:[Lcom/android/settings/applications/ManageApplications$SectionInfo;
-
-    iput-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mSections:[Lcom/android/settings/applications/ManageApplications$SectionInfo;
-
-    .line 1542
-    iput-object v3, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mPositionToSectionIndex:[I
 
     goto :goto_0
 
-    .line 1554
-    .restart local v0    # "i":I
-    .restart local v1    # "userId":I
-    :cond_4
+    .line 1547
+    :cond_3
     if-lt v1, v5, :cond_2
 
-    .line 1555
+    .line 1548
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mBaseEntries:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 1556
+    .line 1549
     add-int/lit8 v0, v0, -0x1
 
-    .line 1557
-    goto :goto_2
+    .line 1550
+    goto :goto_1
+
+    .line 1555
+    .end local v1    # "userId":I
+    :cond_4
+    iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mCurFilterPrefix:Ljava/lang/CharSequence;
+
+    iget-object v3, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mBaseEntries:Ljava/util/ArrayList;
+
+    invoke-virtual {p0, v2, v3}, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->applyPrefixFilter(Ljava/lang/CharSequence;Ljava/util/ArrayList;)Ljava/util/ArrayList;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mEntries:Ljava/util/ArrayList;
+
+    .line 1556
+    invoke-direct {p0}, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->rebuildSections()V
 
     .line 1563
-    .end local v1    # "userId":I
-    :cond_5
+    .end local v0    # "i":I
+    :goto_2
     invoke-virtual {p0}, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->notifyDataSetChanged()V
 
     .line 1565
@@ -2929,7 +2912,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_5
 
     .line 1566
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mManageApplications:Lcom/android/settings/applications/ManageApplications;
@@ -2942,7 +2925,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_6
+    if-eqz v2, :cond_5
 
     .line 1567
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mManageApplications:Lcom/android/settings/applications/ManageApplications;
@@ -2962,7 +2945,7 @@
     invoke-static {v2, v3, v4, v4}, Lcom/android/settings/Utils;->handleLoadingContainer(Landroid/view/View;Landroid/view/View;ZZ)V
 
     .line 1571
-    :cond_6
+    :cond_5
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mManageApplications:Lcom/android/settings/applications/ManageApplications;
 
     iget v2, v2, Lcom/android/settings/applications/ManageApplications;->mListType:I
@@ -2973,6 +2956,20 @@
 
     .line 1573
     return-void
+
+    .line 1558
+    :cond_6
+    iput-object v3, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mEntries:Ljava/util/ArrayList;
+
+    .line 1559
+    sget-object v2, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->EMPTY_SECTIONS:[Lcom/android/settings/applications/ManageApplications$SectionInfo;
+
+    iput-object v2, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mSections:[Lcom/android/settings/applications/ManageApplications$SectionInfo;
+
+    .line 1560
+    iput-object v3, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mPositionToSectionIndex:[I
+
+    goto :goto_2
 
     .line 1576
     :cond_7

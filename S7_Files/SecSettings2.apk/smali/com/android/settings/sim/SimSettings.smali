@@ -369,7 +369,7 @@
 
     .line 202
     .local v0, "allPhoneAccounts":Ljava/util/List;, "Ljava/util/List<Landroid/telecom/PhoneAccountHandle;>;"
-    const v4, 0x7f0b1101
+    const v4, 0x7f0b110e
 
     invoke-virtual {v2, v4}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -383,7 +383,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f0b18f2
+    const v6, 0x7f0b1900
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -454,7 +454,7 @@
 
     .line 177
     .local v3, "sir":Landroid/telephony/SubscriptionInfo;
-    const v6, 0x7f0b1100
+    const v6, 0x7f0b110d
 
     invoke-virtual {v2, v6}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -516,7 +516,7 @@
     if-nez v3, :cond_1
 
     .line 188
-    const v6, 0x7f0b18f3
+    const v6, 0x7f0b1901
 
     invoke-virtual {v2, v6}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -619,7 +619,7 @@
 
     .line 162
     .local v1, "sir":Landroid/telephony/SubscriptionInfo;
-    const v4, 0x7f0b1102
+    const v4, 0x7f0b110f
 
     invoke-virtual {v0, v4}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -661,7 +661,7 @@
     if-nez v1, :cond_0
 
     .line 169
-    const v4, 0x7f0b18f3
+    const v4, 0x7f0b1901
 
     invoke-virtual {v0, v4}, Landroid/preference/Preference;->setSummary(I)V
 

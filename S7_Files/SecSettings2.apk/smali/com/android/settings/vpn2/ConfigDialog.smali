@@ -570,7 +570,7 @@
 
     .line 691
     .local v3, "context":Landroid/content/Context;
-    const v7, 0x7f0b127e
+    const v7, 0x7f0b128c
 
     invoke-virtual {v3, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2986,7 +2986,7 @@
 
     move-object/from16 v27, v0
 
-    const v28, 0x7f0b17f4
+    const v28, 0x7f0b1802
 
     .line 300
     move-object/from16 v0, p0
@@ -3023,7 +3023,7 @@
 
     move-object/from16 v27, v0
 
-    const v28, 0x7f0b17f5
+    const v28, 0x7f0b1803
 
     .line 302
     move-object/from16 v0, p0
@@ -3375,7 +3375,7 @@
 
     if-eqz v25, :cond_12
 
-    const v25, 0x7f0b17fb
+    const v25, 0x7f0b1809
 
     :goto_6
     move-object/from16 v0, p0
@@ -3500,7 +3500,7 @@
     if-eqz v25, :cond_4
 
     .line 372
-    const v25, 0x7f0b17fc
+    const v25, 0x7f0b180a
 
     move/from16 v0, v25
 
@@ -3606,7 +3606,7 @@
     invoke-virtual/range {v17 .. v17}, Landroid/widget/EditText;->requestFocus()Z
 
     .line 386
-    const v25, 0x7f0b17f8
+    const v25, 0x7f0b1806
 
     move/from16 v0, v25
 
@@ -3639,7 +3639,7 @@
     .end local v20    # "server":Ljava/lang/String;
     .end local v21    # "serverEdit":Landroid/widget/EditText;
     :goto_8
-    const v25, 0x7f0b17f6
+    const v25, 0x7f0b1804
 
     move/from16 v0, v25
 
@@ -4475,7 +4475,7 @@
 
     .line 345
     :cond_12
-    const v25, 0x7f0b0c1c
+    const v25, 0x7f0b0c2b
 
     goto/16 :goto_6
 
@@ -4583,7 +4583,7 @@
 
     aput-object v26, v25, v27
 
-    const v26, 0x7f0b17fd
+    const v26, 0x7f0b180b
 
     move/from16 v0, v26
 
@@ -4600,7 +4600,7 @@
     invoke-virtual {v0, v1}, Lcom/android/settings/vpn2/ConfigDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 392
-    const v25, 0x7f0b17f9
+    const v25, 0x7f0b1807
 
     move/from16 v0, v25
 
@@ -4769,7 +4769,7 @@
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->ipsecCaCert:Ljava/lang/String;
 
-    const v4, 0x7f0b17f4
+    const v4, 0x7f0b1802
 
     .line 496
     invoke-direct {p0, v1, v2, v4, v3}, Lcom/android/settings/vpn2/ConfigDialog;->loadCertificates(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V

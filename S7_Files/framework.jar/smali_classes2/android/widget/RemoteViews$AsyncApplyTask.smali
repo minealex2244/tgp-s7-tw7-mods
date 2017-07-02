@@ -71,33 +71,33 @@
     .param p7, "result"    # Landroid/view/View;
 
     .prologue
-    .line 3940
+    .line 3924
     iput-object p1, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->this$0:Landroid/widget/RemoteViews;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 3943
+    .line 3927
     iput-object p2, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mRV:Landroid/widget/RemoteViews;
 
-    .line 3944
+    .line 3928
     iput-object p3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mParent:Landroid/view/ViewGroup;
 
-    .line 3945
+    .line 3929
     iput-object p4, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mContext:Landroid/content/Context;
 
-    .line 3946
+    .line 3930
     iput-object p5, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mListener:Landroid/widget/RemoteViews$OnViewAppliedListener;
 
-    .line 3947
+    .line 3931
     iput-object p6, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mHandler:Landroid/widget/RemoteViews$OnClickHandler;
 
-    .line 3949
+    .line 3933
     iput-object p7, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mResult:Landroid/view/View;
 
-    .line 3950
+    .line 3934
     invoke-static {p4, p6}, Landroid/widget/RemoteViews;->-wrap7(Landroid/content/Context;Landroid/widget/RemoteViews$OnClickHandler;)V
 
-    .line 3942
+    .line 3926
     return-void
 .end method
 
@@ -126,13 +126,13 @@
     .prologue
     const/4 v8, 0x0
 
-    .line 3956
+    .line 3940
     :try_start_0
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mResult:Landroid/view/View;
 
     if-nez v3, :cond_0
 
-    .line 3957
+    .line 3941
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->this$0:Landroid/widget/RemoteViews;
 
     iget-object v4, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mContext:Landroid/content/Context;
@@ -147,7 +147,7 @@
 
     iput-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mResult:Landroid/view/View;
 
-    .line 3960
+    .line 3944
     :cond_0
     new-instance v3, Landroid/widget/RemoteViews$ViewTree;
 
@@ -159,7 +159,7 @@
 
     iput-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mTree:Landroid/widget/RemoteViews$ViewTree;
 
-    .line 3961
+    .line 3945
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mRV:Landroid/widget/RemoteViews;
 
     invoke-static {v3}, Landroid/widget/RemoteViews;->-get2(Landroid/widget/RemoteViews;)Ljava/util/ArrayList;
@@ -168,7 +168,7 @@
 
     if-eqz v3, :cond_3
 
-    .line 3962
+    .line 3946
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mRV:Landroid/widget/RemoteViews;
 
     invoke-static {v3}, Landroid/widget/RemoteViews;->-get2(Landroid/widget/RemoteViews;)Ljava/util/ArrayList;
@@ -179,13 +179,13 @@
 
     move-result v0
 
-    .line 3963
+    .line 3947
     .local v0, "count":I
     new-array v3, v0, [Landroid/widget/RemoteViews$Action;
 
     iput-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mActions:[Landroid/widget/RemoteViews$Action;
 
-    .line 3964
+    .line 3948
     const/4 v2, 0x0
 
     .local v2, "i":I
@@ -198,7 +198,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 3971
+    .line 3955
     .end local v0    # "count":I
     .end local v2    # "i":I
     :cond_1
@@ -207,7 +207,7 @@
 
     return-object v3
 
-    .line 3966
+    .line 3950
     .restart local v0    # "count":I
     .restart local v2    # "i":I
     :cond_2
@@ -237,12 +237,12 @@
 
     aput-object v3, v4, v2
 
-    .line 3964
+    .line 3948
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 3969
+    .line 3953
     .end local v0    # "count":I
     .end local v2    # "i":I
     :cond_3
@@ -254,15 +254,15 @@
 
     goto :goto_1
 
-    .line 3972
+    .line 3956
     :catch_0
     move-exception v1
 
-    .line 3973
+    .line 3957
     .local v1, "e":Ljava/lang/Exception;
     iput-object v1, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mError:Ljava/lang/Exception;
 
-    .line 3974
+    .line 3958
     return-object v8
 .end method
 
@@ -271,7 +271,7 @@
     .param p1, "params"    # [Ljava/lang/Object;
 
     .prologue
-    .line 3954
+    .line 3938
     check-cast p1, [Ljava/lang/Void;
 
     .end local p1    # "params":[Ljava/lang/Object;
@@ -286,12 +286,12 @@
     .locals 1
 
     .prologue
-    .line 4011
+    .line 3995
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Landroid/os/AsyncTask;->cancel(Z)Z
 
-    .line 4010
+    .line 3994
     return-void
 .end method
 
@@ -300,28 +300,28 @@
     .param p1, "viewTree"    # Landroid/widget/RemoteViews$ViewTree;
 
     .prologue
-    .line 3980
+    .line 3964
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mError:Ljava/lang/Exception;
 
     if-nez v3, :cond_1
 
-    .line 3982
+    .line 3966
     :try_start_0
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mActions:[Landroid/widget/RemoteViews$Action;
 
     if-eqz v3, :cond_1
 
-    .line 3983
+    .line 3967
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mHandler:Landroid/widget/RemoteViews$OnClickHandler;
 
     if-nez v3, :cond_0
 
-    .line 3984
+    .line 3968
     invoke-static {}, Landroid/widget/RemoteViews;->-get1()Landroid/widget/RemoteViews$OnClickHandler;
 
     move-result-object v2
 
-    .line 3985
+    .line 3969
     .local v2, "handler":Landroid/widget/RemoteViews$OnClickHandler;
     :goto_0
     iget-object v4, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mActions:[Landroid/widget/RemoteViews$Action;
@@ -335,7 +335,7 @@
 
     aget-object v0, v4, v3
 
-    .line 3986
+    .line 3970
     .local v0, "a":Landroid/widget/RemoteViews$Action;
     invoke-static {p1}, Landroid/widget/RemoteViews$ViewTree;->-get0(Landroid/widget/RemoteViews$ViewTree;)Landroid/view/View;
 
@@ -345,12 +345,12 @@
 
     invoke-virtual {v0, v6, v7, v2}, Landroid/widget/RemoteViews$Action;->apply(Landroid/view/View;Landroid/view/ViewGroup;Landroid/widget/RemoteViews$OnClickHandler;)V
 
-    .line 3985
+    .line 3969
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 3984
+    .line 3968
     .end local v0    # "a":Landroid/widget/RemoteViews$Action;
     .end local v2    # "handler":Landroid/widget/RemoteViews$OnClickHandler;
     :cond_0
@@ -361,40 +361,40 @@
     .restart local v2    # "handler":Landroid/widget/RemoteViews$OnClickHandler;
     goto :goto_0
 
-    .line 3989
+    .line 3973
     .end local v2    # "handler":Landroid/widget/RemoteViews$OnClickHandler;
     :catch_0
     move-exception v1
 
-    .line 3990
+    .line 3974
     .local v1, "e":Ljava/lang/Exception;
     iput-object v1, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mError:Ljava/lang/Exception;
 
-    .line 3994
+    .line 3978
     .end local v1    # "e":Ljava/lang/Exception;
     :cond_1
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mListener:Landroid/widget/RemoteViews$OnViewAppliedListener;
 
     if-eqz v3, :cond_4
 
-    .line 3995
+    .line 3979
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mError:Ljava/lang/Exception;
 
     if-eqz v3, :cond_3
 
-    .line 3996
+    .line 3980
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mListener:Landroid/widget/RemoteViews$OnViewAppliedListener;
 
     iget-object v4, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mError:Ljava/lang/Exception;
 
     invoke-interface {v3, v4}, Landroid/widget/RemoteViews$OnViewAppliedListener;->onError(Ljava/lang/Exception;)V
 
-    .line 3979
+    .line 3963
     :cond_2
     :goto_2
     return-void
 
-    .line 3998
+    .line 3982
     :cond_3
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mListener:Landroid/widget/RemoteViews$OnViewAppliedListener;
 
@@ -406,27 +406,27 @@
 
     goto :goto_2
 
-    .line 4000
+    .line 3984
     :cond_4
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mError:Ljava/lang/Exception;
 
     if-eqz v3, :cond_2
 
-    .line 4001
+    .line 3985
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mError:Ljava/lang/Exception;
 
     instance-of v3, v3, Landroid/widget/RemoteViews$ActionException;
 
     if-eqz v3, :cond_5
 
-    .line 4002
+    .line 3986
     iget-object v3, p0, Landroid/widget/RemoteViews$AsyncApplyTask;->mError:Ljava/lang/Exception;
 
     check-cast v3, Landroid/widget/RemoteViews$ActionException;
 
     throw v3
 
-    .line 4004
+    .line 3988
     :cond_5
     new-instance v3, Landroid/widget/RemoteViews$ActionException;
 
@@ -442,7 +442,7 @@
     .param p1, "viewTree"    # Ljava/lang/Object;
 
     .prologue
-    .line 3979
+    .line 3963
     check-cast p1, Landroid/widget/RemoteViews$ViewTree;
 
     .end local p1    # "viewTree":Ljava/lang/Object;

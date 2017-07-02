@@ -37589,7 +37589,7 @@
     move-result v25
 
     .line 22790
-    if-eqz v25, :cond_14
+    if-eqz v25, :cond_13
 
     .line 22795
     new-instance v3, Ljava/lang/StringBuilder;
@@ -38346,7 +38346,7 @@
     .line 22930
     and-int/lit8 v3, v25, 0x4
 
-    if-eqz v3, :cond_14
+    if-eqz v3, :cond_13
 
     .line 22935
     const-class v3, Landroid/content/pm/ShortcutServiceInternal;
@@ -38380,19 +38380,16 @@
     invoke-virtual {v6, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 22942
+    if-nez p3, :cond_15
+
     move-object/from16 v0, p0
 
     iget-boolean v3, v0, Lcom/android/server/am/ActivityManagerService;->mProcessesReady:Z
 
-    if-nez v3, :cond_13
-
-    .line 22943
-    const/high16 v3, 0x40000000    # 2.0f
-
-    invoke-virtual {v6, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+    if-eqz v3, :cond_15
 
     .line 22947
-    :cond_13
+    :goto_8
     sget v17, Lcom/android/server/am/ActivityManagerService;->MY_PID:I
 
     .line 22945
@@ -38439,21 +38436,21 @@
     .end local v29    # "isDensityChange":Z
     .end local v30    # "isSizeChange":Z
     .end local v38    # "shortcutService":Landroid/content/pm/ShortcutServiceInternal;
-    :cond_14
+    :cond_13
     sget-boolean v3, Lcom/samsung/android/framework/feature/MultiWindowFeatures;->SNAP_VIEW_SUPPORT:Z
 
-    if-eqz v3, :cond_15
+    if-eqz v3, :cond_14
 
     sget-boolean v3, Lcom/samsung/android/framework/feature/MultiWindowFeatures;->SNAP_VIEW_DYNAMIC_ENABLED:Z
 
-    if-eqz v3, :cond_15
+    if-eqz v3, :cond_14
 
     .line 22958
     move/from16 v0, v25
 
     and-int/lit16 v3, v0, 0x80
 
-    if-eqz v3, :cond_15
+    if-eqz v3, :cond_14
 
     .line 22959
     move-object/from16 v0, p0
@@ -38463,7 +38460,7 @@
     iget-boolean v3, v3, Lcom/android/server/am/ActivityStackSupervisor;->mSnapViewRunning:Z
 
     .line 22957
-    if-eqz v3, :cond_15
+    if-eqz v3, :cond_14
 
     .line 22960
     move-object/from16 v0, p0
@@ -38479,7 +38476,7 @@
     invoke-interface {v3, v5, v7, v4}, Lcom/android/server/am/IMultiWindowManagerServiceBridge;->setSnapViewLocked(ZLandroid/graphics/Rect;Ljava/lang/String;)V
 
     .line 22968
-    :cond_15
+    :cond_14
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/am/ActivityManagerService;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
@@ -38510,7 +38507,7 @@
 
     array-length v4, v0
 
-    :goto_8
+    :goto_9
     if-ge v3, v4, :cond_16
 
     aget v8, v37, v3
@@ -38555,13 +38552,35 @@
     .line 22971
     add-int/lit8 v3, v3, 0x1
 
+    goto :goto_9
+
+    .line 22943
+    .end local v8    # "stackId":I
+    .end local v9    # "newBounds":Landroid/graphics/Rect;
+    .end local v37    # "resizedStacks":[I
+    .restart local v6    # "intent":Landroid/content/Intent;
+    .restart local v20    # "ac":Lcom/android/server/AttributeCache;
+    .restart local v26    # "configCopy":Landroid/content/res/Configuration;
+    .restart local v28    # "i":I
+    .restart local v29    # "isDensityChange":Z
+    .restart local v30    # "isSizeChange":Z
+    .restart local v38    # "shortcutService":Landroid/content/pm/ShortcutServiceInternal;
+    :cond_15
+    const/high16 v3, 0x40000000    # 2.0f
+
+    invoke-virtual {v6, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
     goto :goto_8
 
     .line 22985
-    .end local v8    # "stackId":I
-    .end local v9    # "newBounds":Landroid/graphics/Rect;
+    .end local v6    # "intent":Landroid/content/Intent;
+    .end local v20    # "ac":Lcom/android/server/AttributeCache;
+    .end local v26    # "configCopy":Landroid/content/res/Configuration;
+    .end local v28    # "i":I
+    .end local v29    # "isDensityChange":Z
+    .end local v30    # "isSizeChange":Z
     .end local v35    # "newConfig":Landroid/content/res/Configuration;
-    .end local v37    # "resizedStacks":[I
+    .end local v38    # "shortcutService":Landroid/content/pm/ShortcutServiceInternal;
     :cond_16
     const/16 v31, 0x1
 

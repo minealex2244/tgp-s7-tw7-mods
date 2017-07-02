@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/InputMethodManagerService;
 
     .prologue
-    .line 1978
+    .line 1982
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$4;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Landroid/content/pm/ISystemPersonaObserver$Stub;-><init>()V
@@ -39,12 +39,12 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1990
+    .line 1994
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$4;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v0}, Lcom/android/server/InputMethodManagerService;->hideInputMethodMenu()V
 
-    .line 1988
+    .line 1992
     return-void
 .end method
 
@@ -53,7 +53,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1980
+    .line 1984
     return-void
 .end method
 
@@ -62,7 +62,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1994
+    .line 1998
     return-void
 .end method
 
@@ -71,7 +71,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 1998
+    .line 2002
     return-void
 .end method
 
@@ -82,6 +82,6 @@
     .param p3, "newState"    # Lcom/samsung/android/knox/SemPersonaState;
 
     .prologue
-    .line 2002
+    .line 2006
     return-void
 .end method

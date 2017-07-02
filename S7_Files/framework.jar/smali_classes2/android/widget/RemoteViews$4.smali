@@ -28,7 +28,7 @@
     .param p3, "val$contextForResources"    # Landroid/content/Context;
 
     .prologue
-    .line 3835
+    .line 3819
     iput-object p1, p0, Landroid/widget/RemoteViews$4;->this$0:Landroid/widget/RemoteViews;
 
     iput-object p3, p0, Landroid/widget/RemoteViews$4;->val$contextForResources:Landroid/content/Context;
@@ -44,7 +44,7 @@
     .locals 1
 
     .prologue
-    .line 3846
+    .line 3830
     iget-object v0, p0, Landroid/widget/RemoteViews$4;->val$contextForResources:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -58,7 +58,7 @@
     .locals 1
 
     .prologue
-    .line 3838
+    .line 3822
     iget-object v0, p0, Landroid/widget/RemoteViews$4;->val$contextForResources:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -72,7 +72,7 @@
     .locals 1
 
     .prologue
-    .line 3842
+    .line 3826
     iget-object v0, p0, Landroid/widget/RemoteViews$4;->val$contextForResources:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;

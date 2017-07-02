@@ -484,7 +484,7 @@
 
     .prologue
     .line 200
-    const v2, 0x7f0b1952
+    const v2, 0x7f0b1960
 
     if-eq p1, v2, :cond_0
 
@@ -493,7 +493,7 @@
     .line 201
     .local v0, "enabled":Z
     :goto_0
-    const v2, 0x7f0b1950
+    const v2, 0x7f0b195e
 
     if-ne p1, v2, :cond_1
 
@@ -1030,7 +1030,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b0883
+    const v10, 0x7f0b0886
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1391,7 +1391,7 @@
     invoke-virtual {v8, v11}, Lcom/samsung/android/settings/lockscreen/LockNotiRestrictedPreference;->semSetSummaryColorToColorPrimaryDark(Z)V
 
     .line 229
-    const v8, 0x7f0b1950
+    const v8, 0x7f0b195e
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/lockscreen/LockscreenNotificationApplist;->getString(I)Ljava/lang/String;
 
@@ -1417,7 +1417,7 @@
     invoke-direct {p0, v4, v5, v8}, Lcom/samsung/android/settings/lockscreen/LockscreenNotificationApplist;->setRestrictedIfNotificationFeaturesDisabled(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)V
 
     .line 236
-    const v8, 0x7f0b1951
+    const v8, 0x7f0b195f
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/lockscreen/LockscreenNotificationApplist;->getString(I)Ljava/lang/String;
 
@@ -1443,7 +1443,7 @@
     invoke-direct {p0, v2, v3, v8}, Lcom/samsung/android/settings/lockscreen/LockscreenNotificationApplist;->setRestrictedIfNotificationFeaturesDisabled(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)V
 
     .line 243
-    const v8, 0x7f0b1952
+    const v8, 0x7f0b1960
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/lockscreen/LockscreenNotificationApplist;->getString(I)Ljava/lang/String;
 
@@ -1571,7 +1571,7 @@
     .local v0, "allowPrivate":Z
     if-nez v1, :cond_1
 
-    const v2, 0x7f0b1952
+    const v2, 0x7f0b1960
 
     :goto_0
     iput v2, p0, Lcom/samsung/android/settings/lockscreen/LockscreenNotificationApplist;->mLockOptionResID:I
@@ -1605,13 +1605,13 @@
     :cond_1
     if-eqz v0, :cond_2
 
-    const v2, 0x7f0b1950
+    const v2, 0x7f0b195e
 
     goto :goto_0
 
     .line 333
     :cond_2
-    const v2, 0x7f0b1951
+    const v2, 0x7f0b195f
 
     goto :goto_0
 .end method

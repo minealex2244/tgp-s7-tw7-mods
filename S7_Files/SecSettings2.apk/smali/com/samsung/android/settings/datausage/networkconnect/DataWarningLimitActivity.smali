@@ -1505,7 +1505,7 @@
     .locals 12
 
     .prologue
-    const v11, 0x7f0b0c40
+    const v11, 0x7f0b0c4f
 
     const/4 v6, 0x1
 
@@ -1736,7 +1736,7 @@
 
     if-eqz v0, :cond_4
 
-    const v6, 0x7f0b19ca
+    const v6, 0x7f0b19d8
 
     :goto_3
     invoke-virtual {v7, v6}, Landroid/widget/TextView;->setText(I)V
@@ -1830,7 +1830,7 @@
     .end local v1    # "e":Landroid/os/RemoteException;
     .restart local v4    # "now":J
     :cond_4
-    const v6, 0x7f0b19cb
+    const v6, 0x7f0b19d9
 
     goto :goto_3
 .end method
