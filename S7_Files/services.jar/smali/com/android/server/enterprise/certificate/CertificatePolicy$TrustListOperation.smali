@@ -45,41 +45,41 @@
     .param p2, "action"    # I
 
     .prologue
-    .line 2441
+    .line 2443
     iput-object p1, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2442
+    .line 2444
     iput p2, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mAction:I
 
-    .line 2443
+    .line 2445
     packed-switch p2, :pswitch_data_0
 
-    .line 2441
+    .line 2443
     :goto_0
     return-void
 
-    .line 2446
+    .line 2448
     :pswitch_0
     const-string/jumbo v0, "Admin %d has added a certificate to the trusted DB. Subject : %s, Issuer : %s"
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mAuditMessageFormat:Ljava/lang/String;
 
-    .line 2447
-    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get5(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
+    .line 2449
+    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get6(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mKeyStore:Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
-    .line 2448
+    .line 2450
     const-string/jumbo v0, "trustedCaList"
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mDbColumn:Ljava/lang/String;
 
-    .line 2449
-    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get4(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/CertificateCache;
+    .line 2451
+    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get5(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/CertificateCache;
 
     move-result-object v0
 
@@ -87,26 +87,26 @@
 
     goto :goto_0
 
-    .line 2452
+    .line 2454
     :pswitch_1
     const-string/jumbo v0, "Admin %d has removed a certificate from the trusted DB. Subject : %s, Issuer : %s"
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mAuditMessageFormat:Ljava/lang/String;
 
-    .line 2453
-    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get5(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
+    .line 2455
+    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get6(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mKeyStore:Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
-    .line 2454
+    .line 2456
     const-string/jumbo v0, "trustedCaList"
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mDbColumn:Ljava/lang/String;
 
-    .line 2455
-    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get4(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/CertificateCache;
+    .line 2457
+    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get5(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/CertificateCache;
 
     move-result-object v0
 
@@ -114,26 +114,26 @@
 
     goto :goto_0
 
-    .line 2459
+    .line 2461
     :pswitch_2
     const-string/jumbo v0, "Admin %d has added a certificate to the untrusted DB. Subject : %s, Issuer : %s"
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mAuditMessageFormat:Ljava/lang/String;
 
-    .line 2460
-    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get7(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
+    .line 2462
+    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get8(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mKeyStore:Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
-    .line 2461
+    .line 2463
     const-string/jumbo v0, "untrustedCertsList"
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mDbColumn:Ljava/lang/String;
 
-    .line 2462
-    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get6(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/CertificateCache;
+    .line 2464
+    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get7(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/CertificateCache;
 
     move-result-object v0
 
@@ -141,26 +141,26 @@
 
     goto :goto_0
 
-    .line 2465
+    .line 2467
     :pswitch_3
     const-string/jumbo v0, "Admin %d has removed a certificate from the untrusted DB. Subject : %s, Issuer : %s"
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mAuditMessageFormat:Ljava/lang/String;
 
-    .line 2466
-    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get7(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
+    .line 2468
+    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get8(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mKeyStore:Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
-    .line 2467
+    .line 2469
     const-string/jumbo v0, "untrustedCertsList"
 
     iput-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mDbColumn:Ljava/lang/String;
 
-    .line 2468
-    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get6(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/CertificateCache;
+    .line 2470
+    invoke-static {p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get7(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/CertificateCache;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
 
     goto :goto_0
 
-    .line 2443
+    .line 2445
     nop
 
     :pswitch_data_0
@@ -188,7 +188,7 @@
     .locals 1
 
     .prologue
-    .line 2486
+    .line 2488
     iget v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mAction:I
 
     return v0
@@ -198,7 +198,7 @@
     .locals 1
 
     .prologue
-    .line 2490
+    .line 2492
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mAuditMessageFormat:Ljava/lang/String;
 
     return-object v0
@@ -208,7 +208,7 @@
     .locals 1
 
     .prologue
-    .line 2474
+    .line 2476
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mCache:Lcom/android/server/enterprise/certificate/CertificateCache;
 
     return-object v0
@@ -218,7 +218,7 @@
     .locals 1
 
     .prologue
-    .line 2478
+    .line 2480
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mDbColumn:Ljava/lang/String;
 
     return-object v0
@@ -228,7 +228,7 @@
     .locals 1
 
     .prologue
-    .line 2482
+    .line 2484
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustListOperation;->mKeyStore:Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
     return-object v0

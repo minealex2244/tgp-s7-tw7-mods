@@ -27,7 +27,7 @@
     .param p2, "val$userHandle"    # I
 
     .prologue
-    .line 7067
+    .line 7075
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$8$1;->this$1:Lcom/android/server/pm/PersonaManagerService$8;
 
     iput p2, p0, Lcom/android/server/pm/PersonaManagerService$8$1;->val$userHandle:I
@@ -43,7 +43,7 @@
     .locals 3
 
     .prologue
-    .line 7069
+    .line 7077
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$8$1;->this$1:Lcom/android/server/pm/PersonaManagerService$8;
 
     iget-object v0, v0, Lcom/android/server/pm/PersonaManagerService$8;->this$0:Lcom/android/server/pm/PersonaManagerService;
@@ -52,18 +52,18 @@
 
     invoke-static {v0, v1}, Lcom/android/server/pm/PersonaManagerService;->-wrap47(Lcom/android/server/pm/PersonaManagerService;I)V
 
-    .line 7070
+    .line 7078
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$8$1;->this$1:Lcom/android/server/pm/PersonaManagerService$8;
 
     iget-object v0, v0, Lcom/android/server/pm/PersonaManagerService$8;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get18(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get19(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 7071
+    .line 7079
     :try_start_0
     const-string/jumbo v0, "PersonaManagerService"
 
@@ -71,7 +71,7 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7072
+    .line 7080
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$8$1;->this$1:Lcom/android/server/pm/PersonaManagerService$8;
 
     iget-object v0, v0, Lcom/android/server/pm/PersonaManagerService$8;->this$0:Lcom/android/server/pm/PersonaManagerService;
@@ -84,10 +84,10 @@
 
     monitor-exit v1
 
-    .line 7068
+    .line 7076
     return-void
 
-    .line 7070
+    .line 7078
     :catchall_0
     move-exception v0
 

@@ -32,7 +32,7 @@
     .locals 0
 
     .prologue
-    .line 4291
+    .line 4292
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,16 +45,16 @@
     .param p1, "parcel"    # Landroid/os/Parcel;
 
     .prologue
-    .line 4294
+    .line 4295
     invoke-static {}, Landroid/view/accessibility/AccessibilityNodeInfo;->obtain()Landroid/view/accessibility/AccessibilityNodeInfo;
 
     move-result-object v0
 
-    .line 4295
+    .line 4296
     .local v0, "info":Landroid/view/accessibility/AccessibilityNodeInfo;
     invoke-static {v0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->-wrap1(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/os/Parcel;)V
 
-    .line 4296
+    .line 4297
     return-object v0
 .end method
 
@@ -63,7 +63,7 @@
     .param p1, "parcel"    # Landroid/os/Parcel;
 
     .prologue
-    .line 4293
+    .line 4294
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo$1;->createFromParcel(Landroid/os/Parcel;)Landroid/view/accessibility/AccessibilityNodeInfo;
 
     move-result-object v0
@@ -76,7 +76,7 @@
     .param p1, "size"    # I
 
     .prologue
-    .line 4301
+    .line 4302
     new-array v0, p1, [Landroid/view/accessibility/AccessibilityNodeInfo;
 
     return-object v0
@@ -87,7 +87,7 @@
     .param p1, "size"    # I
 
     .prologue
-    .line 4300
+    .line 4301
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo$1;->newArray(I)[Landroid/view/accessibility/AccessibilityNodeInfo;
 
     move-result-object v0

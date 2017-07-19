@@ -30,7 +30,7 @@
     .param p2, "val$personaHandle"    # I
 
     .prologue
-    .line 7508
+    .line 7516
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$9;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iput p2, p0, Lcom/android/server/pm/PersonaManagerService$9;->val$personaHandle:I
@@ -46,20 +46,20 @@
     .locals 3
 
     .prologue
-    .line 7511
+    .line 7519
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$9;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get18(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get19(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 7512
+    .line 7520
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$9;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get23(Lcom/android/server/pm/PersonaManagerService;)Landroid/util/SparseBooleanArray;
+    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get24(Lcom/android/server/pm/PersonaManagerService;)Landroid/util/SparseBooleanArray;
 
     move-result-object v0
 
@@ -71,10 +71,10 @@
 
     monitor-exit v1
 
-    .line 7510
+    .line 7518
     return-void
 
-    .line 7511
+    .line 7519
     :catchall_0
     move-exception v0
 

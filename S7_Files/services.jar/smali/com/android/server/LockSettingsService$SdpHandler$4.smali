@@ -30,7 +30,7 @@
     .param p2, "val$userId"    # I
 
     .prologue
-    .line 2809
+    .line 2870
     iput-object p1, p0, Lcom/android/server/LockSettingsService$SdpHandler$4;->this$1:Lcom/android/server/LockSettingsService$SdpHandler;
 
     iput p2, p0, Lcom/android/server/LockSettingsService$SdpHandler$4;->val$userId:I
@@ -46,7 +46,7 @@
     .locals 6
 
     .prologue
-    .line 2812
+    .line 2873
     const-string/jumbo v3, "LockSettingsService.SdpHandler"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -71,7 +71,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2813
+    .line 2874
     iget v3, p0, Lcom/android/server/LockSettingsService$SdpHandler$4;->val$userId:I
 
     invoke-static {v3}, Lcom/samsung/android/knox/sdp/SdpUtil;->isKnoxWorkspace(I)Z
@@ -80,14 +80,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 2814
+    .line 2875
     return-void
 
-    .line 2816
+    .line 2877
     :cond_0
     const/4 v0, 0x0
 
-    .line 2818
+    .line 2879
     .local v0, "alias":Ljava/lang/String;
     :try_start_0
     invoke-static {}, Lcom/samsung/android/knox/sdp/SdpUtil;->getInstance()Lcom/samsung/android/knox/sdp/SdpUtil;
@@ -98,11 +98,11 @@
 
     move-result-object v2
 
-    .line 2819
+    .line 2880
     .local v2, "info":Lcom/samsung/android/knox/sdp/core/SdpEngineInfo;
     if-eqz v2, :cond_1
 
-    .line 2820
+    .line 2881
     invoke-static {}, Lcom/samsung/android/knox/sdp/core/SdpEngine;->getInstance()Lcom/samsung/android/knox/sdp/core/SdpEngine;
 
     move-result-object v3
@@ -111,7 +111,7 @@
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/knox/sdp/core/SdpEngine;->lock(Ljava/lang/String;)V
 
-    .line 2821
+    .line 2882
     const-string/jumbo v3, "LockSettingsService.SdpHandler"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -138,17 +138,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2811
+    .line 2872
     .end local v2    # "info":Lcom/samsung/android/knox/sdp/core/SdpEngineInfo;
     :cond_1
     :goto_0
     return-void
 
-    .line 2823
+    .line 2884
     :catch_0
     move-exception v1
 
-    .line 2824
+    .line 2885
     .local v1, "e":Ljava/lang/Exception;
     const-string/jumbo v3, "LockSettingsService.SdpHandler"
 
@@ -174,7 +174,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2825
+    .line 2886
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0

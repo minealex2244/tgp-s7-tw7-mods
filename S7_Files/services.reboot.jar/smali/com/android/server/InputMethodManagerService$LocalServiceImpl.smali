@@ -27,13 +27,13 @@
     .param p1, "handler"    # Landroid/os/Handler;
 
     .prologue
-    .line 5788
+    .line 5828
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5789
+    .line 5829
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$LocalServiceImpl;->mHandler:Landroid/os/Handler;
 
-    .line 5788
+    .line 5828
     return-void
 .end method
 
@@ -45,17 +45,17 @@
     .prologue
     const/16 v1, 0x40b
 
-    .line 5808
+    .line 5848
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$LocalServiceImpl;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 5809
+    .line 5849
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$LocalServiceImpl;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 5807
+    .line 5847
     return-void
 .end method
 
@@ -66,17 +66,17 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5795
+    .line 5835
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$LocalServiceImpl;->mHandler:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService$LocalServiceImpl;->mHandler:Landroid/os/Handler;
 
-    .line 5796
+    .line 5836
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
 
-    .line 5795
+    .line 5835
     :goto_0
     const/16 v4, 0xbd6
 
@@ -86,13 +86,13 @@
 
     invoke-virtual {v2, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 5793
+    .line 5833
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 5796
+    .line 5836
     goto :goto_0
 .end method
 
@@ -103,17 +103,17 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5802
+    .line 5842
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$LocalServiceImpl;->mHandler:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService$LocalServiceImpl;->mHandler:Landroid/os/Handler;
 
-    .line 5803
+    .line 5843
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
 
-    .line 5802
+    .line 5842
     :goto_0
     const/16 v4, 0xbea
 
@@ -123,12 +123,12 @@
 
     invoke-virtual {v2, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 5800
+    .line 5840
     return-void
 
     :cond_0
     move v0, v1
 
-    .line 5803
+    .line 5843
     goto :goto_0
 .end method

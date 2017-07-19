@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/settings/accounts/ManageAccountsSettings;->updatePreferenceIntents(Landroid/preference/PreferenceScreen;)V
+    value = Lcom/android/settings/accounts/ManageAccountsSettings;->updatePreferenceIntents(Landroid/preference/PreferenceGroup;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -30,7 +30,7 @@
     .param p2, "val$pm"    # Landroid/content/pm/PackageManager;
 
     .prologue
-    .line 710
+    .line 715
     iput-object p1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
 
     iput-object p2, p0, Lcom/android/settings/accounts/ManageAccountsSettings$2;->val$pm:Landroid/content/pm/PackageManager;
@@ -47,12 +47,12 @@
     .param p1, "preference"    # Landroid/preference/Preference;
 
     .prologue
-    .line 713
+    .line 718
     invoke-virtual {p1}, Landroid/preference/Preference;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 721
+    .line 726
     .local v0, "prefIntent":Landroid/content/Intent;
     iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
 
@@ -64,7 +64,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 722
+    .line 727
     iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$2;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
 
     invoke-virtual {v1}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
@@ -77,22 +77,22 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/app/Activity;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 729
+    .line 734
     :goto_0
     const/4 v1, 0x1
 
     return v1
 
-    .line 724
+    .line 729
     :cond_0
     const-string/jumbo v1, "AccountSettings"
 
-    .line 725
+    .line 730
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string/jumbo v3, "Refusing to launch authenticator intent becauseit exploits Settings permissions: "
+    const-string/jumbo v3, "Refusing to launch authenticator intent because it exploits Settings permissions: "
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -106,7 +106,7 @@
 
     move-result-object v2
 
-    .line 724
+    .line 729
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0

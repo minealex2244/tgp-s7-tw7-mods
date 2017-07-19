@@ -33,7 +33,7 @@
     .param p3, "val$userId"    # I
 
     .prologue
-    .line 2729
+    .line 2790
     iput-object p1, p0, Lcom/android/server/LockSettingsService$SdpHandler$1;->this$1:Lcom/android/server/LockSettingsService$SdpHandler;
 
     iput-object p2, p0, Lcom/android/server/LockSettingsService$SdpHandler$1;->val$newPassword:Ljava/lang/String;
@@ -51,14 +51,14 @@
     .locals 4
 
     .prologue
-    .line 2732
+    .line 2793
     invoke-static {}, Lcom/android/server/LockSettingsService;->-get0()Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 2733
+    .line 2794
     :try_start_0
     iget-object v0, p0, Lcom/android/server/LockSettingsService$SdpHandler$1;->this$1:Lcom/android/server/LockSettingsService$SdpHandler;
 
@@ -68,7 +68,7 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/android/server/LockSettingsService$SdpHandler;->setPasswordInternal(Ljava/lang/String;I)V
 
-    .line 2734
+    .line 2795
     iget-object v0, p0, Lcom/android/server/LockSettingsService$SdpHandler$1;->this$1:Lcom/android/server/LockSettingsService$SdpHandler;
 
     iget-object v0, v0, Lcom/android/server/LockSettingsService$SdpHandler;->this$0:Lcom/android/server/LockSettingsService;
@@ -81,10 +81,10 @@
 
     monitor-exit v1
 
-    .line 2731
+    .line 2792
     return-void
 
-    .line 2732
+    .line 2793
     :catchall_0
     move-exception v0
 

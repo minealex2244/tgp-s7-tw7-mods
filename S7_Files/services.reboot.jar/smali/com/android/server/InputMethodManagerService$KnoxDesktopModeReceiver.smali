@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/InputMethodManagerService;
 
     .prologue
-    .line 1206
+    .line 1209
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,7 +36,7 @@
     .locals 5
 
     .prologue
-    .line 1210
+    .line 1213
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-static {v1}, Lcom/android/server/InputMethodManagerService;->-get14(Lcom/android/server/InputMethodManagerService;)Ljava/lang/String;
@@ -45,17 +45,17 @@
 
     if-nez v1, :cond_0
 
-    .line 1211
+    .line 1214
     const-string/jumbo v1, "InputMethodManagerService"
 
     const-string/jumbo v2, "Failed to return the previous IME becuase the stored info is null"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1212
+    .line 1215
     return-void
 
-    .line 1215
+    .line 1218
     :cond_0
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -71,7 +71,7 @@
 
     if-nez v1, :cond_1
 
-    .line 1216
+    .line 1219
     const-string/jumbo v1, "InputMethodManagerService"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -100,10 +100,10 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1217
+    .line 1220
     return-void
 
-    .line 1220
+    .line 1223
     :cond_1
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -119,7 +119,7 @@
 
     move-result-object v0
 
-    .line 1221
+    .line 1224
     .local v0, "currentIME":Ljava/lang/String;
     if-eqz v0, :cond_2
 
@@ -135,12 +135,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 1208
+    .line 1211
     :cond_2
     :goto_0
     return-void
 
-    .line 1223
+    .line 1226
     :cond_3
     const-string/jumbo v1, "InputMethodManagerService"
 
@@ -148,7 +148,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1224
+    .line 1227
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
@@ -157,7 +157,7 @@
 
     move-result-object v2
 
-    .line 1225
+    .line 1228
     iget-object v3, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v3, v3, Lcom/android/server/InputMethodManagerService;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
@@ -172,7 +172,7 @@
 
     move-result v3
 
-    .line 1224
+    .line 1227
     invoke-virtual {v1, v2, v3}, Lcom/android/server/InputMethodManagerService;->setInputMethodLocked(Ljava/lang/String;I)V
 
     goto :goto_0
@@ -186,7 +186,7 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 1232
+    .line 1235
     if-eqz p2, :cond_0
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -195,12 +195,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 1233
+    .line 1236
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1234
+    .line 1237
     .local v0, "intentAction":Ljava/lang/String;
     sget-object v1, Landroid/app/UiModeManager;->SEM_ACTION_ENTER_KNOX_DESKTOP_MODE:Ljava/lang/String;
 
@@ -210,14 +210,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 1235
+    .line 1238
     const-string/jumbo v1, "InputMethodManagerService"
 
     const-string/jumbo v2, "KnoxDesktop Connected"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1237
+    .line 1240
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
@@ -226,30 +226,30 @@
 
     iget-object v3, v3, Lcom/android/server/InputMethodManagerService;->mContext:Landroid/content/Context;
 
-    .line 1238
+    .line 1241
     iget-object v4, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v4, v4, Lcom/android/server/InputMethodManagerService;->mContentResolver:Landroid/content/ContentResolver;
 
-    .line 1237
+    .line 1240
     invoke-static {v2, v3, v4}, Lcom/android/server/InputMethodManagerService;->-wrap4(Lcom/android/server/InputMethodManagerService;Landroid/content/Context;Landroid/content/ContentResolver;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-static {v1, v2}, Lcom/android/server/InputMethodManagerService;->-set4(Lcom/android/server/InputMethodManagerService;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1239
+    .line 1242
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-static {v1}, Lcom/android/server/InputMethodManagerService;->-wrap8(Lcom/android/server/InputMethodManagerService;)V
 
-    .line 1231
+    .line 1234
     .end local v0    # "intentAction":Ljava/lang/String;
     :cond_0
     :goto_0
     return-void
 
-    .line 1241
+    .line 1244
     .restart local v0    # "intentAction":Ljava/lang/String;
     :cond_1
     sget-object v1, Landroid/app/UiModeManager;->SEM_ACTION_EXIT_KNOX_DESKTOP_MODE:Ljava/lang/String;
@@ -260,14 +260,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 1243
+    .line 1246
     const-string/jumbo v1, "InputMethodManagerService"
 
     const-string/jumbo v2, "KnoxDesktop Disconnected"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1244
+    .line 1247
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService$KnoxDesktopModeReceiver;->restorePreviousUsedInputMethod()V
 
     goto :goto_0

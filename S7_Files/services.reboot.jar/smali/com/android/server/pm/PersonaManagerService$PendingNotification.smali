@@ -36,23 +36,23 @@
     .param p5, "notificationKey"    # Ljava/lang/String;
 
     .prologue
-    .line 15405
+    .line 15413
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$PendingNotification;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15406
+    .line 15414
     iput p2, p0, Lcom/android/server/pm/PersonaManagerService$PendingNotification;->userId:I
 
-    .line 15407
+    .line 15415
     iput-object p3, p0, Lcom/android/server/pm/PersonaManagerService$PendingNotification;->pendingIntent:Landroid/app/PendingIntent;
 
-    .line 15408
+    .line 15416
     iput-object p4, p0, Lcom/android/server/pm/PersonaManagerService$PendingNotification;->activityOptions:Landroid/os/Bundle;
 
-    .line 15409
+    .line 15417
     iput-object p5, p0, Lcom/android/server/pm/PersonaManagerService$PendingNotification;->notificationKey:Ljava/lang/String;
 
-    .line 15405
+    .line 15413
     return-void
 .end method

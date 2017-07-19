@@ -501,8 +501,6 @@
 
 .method private showStrainWarningPopup()V
     .locals 4
-    
-    goto :goto_td
 
     .prologue
     .line 441
@@ -610,7 +608,6 @@
     invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     .line 440
-    :goto_td
     return-void
 .end method
 

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/LockSettingsService;
 
     .prologue
-    .line 2350
+    .line 2355
     iput-object p1, p0, Lcom/android/server/LockSettingsService$5;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 2361
+    .line 2366
     iget-object v0, p0, Lcom/android/server/LockSettingsService$5;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v0}, Lcom/android/server/LockSettingsService;->-get4(Lcom/android/server/LockSettingsService;)Lcom/android/server/LockSettingsService$KeystoreUtil;
@@ -63,7 +63,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 2355
+    .line 2360
     iget-object v0, p0, Lcom/android/server/LockSettingsService$5;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v0}, Lcom/android/server/LockSettingsService;->-get4(Lcom/android/server/LockSettingsService;)Lcom/android/server/LockSettingsService$KeystoreUtil;
@@ -83,7 +83,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 2358
+    .line 2363
     iget-object v0, p0, Lcom/android/server/LockSettingsService$5;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v0}, Lcom/android/server/LockSettingsService;->-get4(Lcom/android/server/LockSettingsService;)Lcom/android/server/LockSettingsService$KeystoreUtil;
@@ -103,7 +103,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 2352
+    .line 2357
     iget-object v0, p0, Lcom/android/server/LockSettingsService$5;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v0}, Lcom/android/server/LockSettingsService;->-get4(Lcom/android/server/LockSettingsService;)Lcom/android/server/LockSettingsService$KeystoreUtil;
@@ -121,7 +121,7 @@
     .locals 1
 
     .prologue
-    .line 2364
+    .line 2369
     const/4 v0, 0x1
 
     return v0

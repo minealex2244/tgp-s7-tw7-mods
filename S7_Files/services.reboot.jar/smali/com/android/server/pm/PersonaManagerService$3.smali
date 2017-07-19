@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PersonaManagerService;
 
     .prologue
-    .line 12601
+    .line 12609
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$3;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 12604
+    .line 12612
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 12606
+    .line 12614
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v2, "com.samsung.intent.action.EMERGENCY_STATE_CHANGED"
 
@@ -55,16 +55,16 @@
 
     if-eqz v2, :cond_1
 
-    .line 12608
+    .line 12616
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$3;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get5(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
+    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get6(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
 
     move-result-object v3
 
     monitor-enter v3
 
-    .line 12609
+    .line 12617
     :try_start_0
     const-string/jumbo v2, "reason"
 
@@ -74,7 +74,7 @@
 
     move-result v1
 
-    .line 12610
+    .line 12618
     .local v1, "reason":I
     const-string/jumbo v2, "PersonaManagerService"
 
@@ -98,59 +98,59 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12612
+    .line 12620
     const/4 v2, 0x2
 
     if-eq v1, v2, :cond_0
 
-    .line 12613
+    .line 12621
     const/4 v2, 0x3
 
     if-ne v1, v2, :cond_2
 
-    .line 12615
+    .line 12623
     :cond_0
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$3;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     const/4 v4, 0x1
 
-    invoke-static {v2, v4}, Lcom/android/server/pm/PersonaManagerService;->-set3(Lcom/android/server/pm/PersonaManagerService;Z)Z
+    invoke-static {v2, v4}, Lcom/android/server/pm/PersonaManagerService;->-set4(Lcom/android/server/pm/PersonaManagerService;Z)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :goto_0
     monitor-exit v3
 
-    .line 12603
+    .line 12611
     .end local v1    # "reason":I
     :cond_1
     return-void
 
-    .line 12614
+    .line 12622
     .restart local v1    # "reason":I
     :cond_2
     const/4 v2, 0x4
 
     if-eq v1, v2, :cond_0
 
-    .line 12616
+    .line 12624
     const/4 v2, 0x5
 
     if-ne v1, v2, :cond_3
 
-    .line 12617
+    .line 12625
     :try_start_1
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$3;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     const/4 v4, 0x0
 
-    invoke-static {v2, v4}, Lcom/android/server/pm/PersonaManagerService;->-set3(Lcom/android/server/pm/PersonaManagerService;Z)Z
+    invoke-static {v2, v4}, Lcom/android/server/pm/PersonaManagerService;->-set4(Lcom/android/server/pm/PersonaManagerService;Z)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_0
 
-    .line 12608
+    .line 12616
     .end local v1    # "reason":I
     :catchall_0
     move-exception v2
@@ -159,7 +159,7 @@
 
     throw v2
 
-    .line 12619
+    .line 12627
     .restart local v1    # "reason":I
     :cond_3
     :try_start_2
@@ -169,12 +169,12 @@
 
     invoke-static {v2, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12620
+    .line 12628
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$3;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     const/4 v4, 0x0
 
-    invoke-static {v2, v4}, Lcom/android/server/pm/PersonaManagerService;->-set3(Lcom/android/server/pm/PersonaManagerService;Z)Z
+    invoke-static {v2, v4}, Lcom/android/server/pm/PersonaManagerService;->-set4(Lcom/android/server/pm/PersonaManagerService;Z)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

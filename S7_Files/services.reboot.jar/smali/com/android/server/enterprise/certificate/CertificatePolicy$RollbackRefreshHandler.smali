@@ -55,7 +55,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshHandler;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
-    invoke-static {v0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get3(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/RollbackRefreshOperation;
+    invoke-static {v0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get4(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/RollbackRefreshOperation;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshHandler;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
-    invoke-static {v0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get3(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/RollbackRefreshOperation;
+    invoke-static {v0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get4(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/RollbackRefreshOperation;
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshHandler;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
-    invoke-static {v0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get3(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/RollbackRefreshOperation;
+    invoke-static {v0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-get4(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/RollbackRefreshOperation;
 
     move-result-object v0
 

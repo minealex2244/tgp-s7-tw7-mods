@@ -24,17 +24,17 @@
     .param p1, "this$0"    # Lcom/android/server/InputMethodManagerService;
 
     .prologue
-    .line 6709
+    .line 6749
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$AccessControlKeyboardEnableChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
-    .line 6710
+    .line 6750
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 6709
+    .line 6749
     return-void
 .end method
 
@@ -45,7 +45,7 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 6715
+    .line 6755
     :try_start_0
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$AccessControlKeyboardEnableChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -73,7 +73,7 @@
 
     const/4 v1, 0x1
 
-    .line 6717
+    .line 6757
     .local v1, "isAccessControlKeyboardBlockEnable":Z
     :goto_0
     const-string/jumbo v2, "InputMethodManagerService"
@@ -120,31 +120,31 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6718
+    .line 6758
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$AccessControlKeyboardEnableChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v2, v1}, Lcom/android/server/InputMethodManagerService;->setisAccessControlKeyboardBlockEnable(Z)V
     :try_end_0
     .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6712
+    .line 6752
     .end local v1    # "isAccessControlKeyboardBlockEnable":Z
     :goto_1
     return-void
 
-    .line 6715
+    .line 6755
     :cond_0
     const/4 v1, 0x0
 
     .restart local v1    # "isAccessControlKeyboardBlockEnable":Z
     goto :goto_0
 
-    .line 6719
+    .line 6759
     .end local v1    # "isAccessControlKeyboardBlockEnable":Z
     :catch_0
     move-exception v0
 
-    .line 6720
+    .line 6760
     .local v0, "e":Landroid/provider/Settings$SettingNotFoundException;
     const-string/jumbo v2, "InputMethodManagerService"
 

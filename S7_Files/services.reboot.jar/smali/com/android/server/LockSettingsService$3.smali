@@ -30,7 +30,7 @@
     .param p2, "val$userId"    # I
 
     .prologue
-    .line 1255
+    .line 1256
     iput-object p1, p0, Lcom/android/server/LockSettingsService$3;->this$0:Lcom/android/server/LockSettingsService;
 
     iput p2, p0, Lcom/android/server/LockSettingsService$3;->val$userId:I
@@ -46,7 +46,7 @@
     .locals 3
 
     .prologue
-    .line 1258
+    .line 1259
     iget-object v0, p0, Lcom/android/server/LockSettingsService$3;->this$0:Lcom/android/server/LockSettingsService;
 
     iget v1, p0, Lcom/android/server/LockSettingsService$3;->val$userId:I
@@ -55,6 +55,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/server/LockSettingsService;->tieManagedProfileLockIfNecessary(ILjava/lang/String;)V
 
-    .line 1257
+    .line 1258
     return-void
 .end method

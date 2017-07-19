@@ -36,7 +36,7 @@
     .param p4, "val$type"    # I
 
     .prologue
-    .line 2832
+    .line 2893
     iput-object p1, p0, Lcom/android/server/LockSettingsService$SdpHandler$5;->this$1:Lcom/android/server/LockSettingsService$SdpHandler;
 
     iput p2, p0, Lcom/android/server/LockSettingsService$SdpHandler$5;->val$userId:I
@@ -56,14 +56,14 @@
     .locals 6
 
     .prologue
-    .line 2835
+    .line 2896
     invoke-static {}, Lcom/android/server/LockSettingsService;->-get0()Ljava/lang/Object;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 2836
+    .line 2897
     :try_start_0
     iget-object v0, p0, Lcom/android/server/LockSettingsService$SdpHandler$5;->this$1:Lcom/android/server/LockSettingsService$SdpHandler;
 
@@ -87,7 +87,7 @@
 
     invoke-virtual {v0, v2, v3, v4}, Lcom/android/server/LockSettingsService$SdpHandler;->enrollInternal(ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 2837
+    .line 2898
     iget-object v0, p0, Lcom/android/server/LockSettingsService$SdpHandler$5;->this$1:Lcom/android/server/LockSettingsService$SdpHandler;
 
     iget-object v0, v0, Lcom/android/server/LockSettingsService$SdpHandler;->this$0:Lcom/android/server/LockSettingsService;
@@ -100,10 +100,10 @@
 
     monitor-exit v1
 
-    .line 2834
+    .line 2895
     return-void
 
-    .line 2835
+    .line 2896
     :catchall_0
     move-exception v0
 

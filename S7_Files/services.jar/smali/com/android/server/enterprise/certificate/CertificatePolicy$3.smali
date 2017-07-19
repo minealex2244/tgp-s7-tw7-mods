@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     .prologue
-    .line 1372
+    .line 1374
     iput-object p1, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$3;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,23 +42,23 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1375
+    .line 1377
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1376
+    .line 1378
     .local v0, "action":Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 1377
+    .line 1379
     const-string/jumbo v2, "android.intent.extra.user_handle"
 
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    .line 1378
+    .line 1380
     .local v1, "userId":I
     const-string/jumbo v2, "android.intent.action.USER_SWITCHED"
 
@@ -68,18 +68,18 @@
 
     if-eqz v2, :cond_1
 
-    .line 1379
+    .line 1381
     iget-object v2, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$3;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     invoke-static {v2, v1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-wrap5(Lcom/android/server/enterprise/certificate/CertificatePolicy;I)V
 
-    .line 1374
+    .line 1376
     .end local v1    # "userId":I
     :cond_0
     :goto_0
     return-void
 
-    .line 1380
+    .line 1382
     .restart local v1    # "userId":I
     :cond_1
     const-string/jumbo v2, "android.intent.action.USER_REMOVED"
@@ -90,17 +90,17 @@
 
     if-eqz v2, :cond_2
 
-    .line 1381
+    .line 1383
     if-eqz v1, :cond_0
 
-    .line 1382
+    .line 1384
     iget-object v2, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$3;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     invoke-static {v2, v1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-wrap4(Lcom/android/server/enterprise/certificate/CertificatePolicy;I)V
 
     goto :goto_0
 
-    .line 1384
+    .line 1386
     :cond_2
     const-string/jumbo v2, "android.intent.action.USER_ADDED"
 
@@ -110,21 +110,21 @@
 
     if-eqz v2, :cond_0
 
-    .line 1387
+    .line 1389
     invoke-static {v1}, Lcom/android/server/enterprise/adapterlayer/PersonaManagerAdapter;->isValidKnoxId(I)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 1388
+    .line 1390
     const-string/jumbo v2, "CertificatePolicy"
 
     const-string/jumbo v3, "Reloading cache for new user"
 
     invoke-static {v2, v3}, Lcom/android/server/enterprise/log/Log;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1389
+    .line 1391
     iget-object v2, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$3;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     invoke-static {v2}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->-wrap3(Lcom/android/server/enterprise/certificate/CertificatePolicy;)V

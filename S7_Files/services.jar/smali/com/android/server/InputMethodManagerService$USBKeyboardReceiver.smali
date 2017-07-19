@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/InputMethodManagerService;
 
     .prologue
-    .line 6014
+    .line 6054
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -46,12 +46,12 @@
 
     const/4 v5, 0x0
 
-    .line 6017
+    .line 6057
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 6018
+    .line 6058
     .local v1, "intentAction":Ljava/lang/String;
     const-string/jumbo v2, "InputMethodManagerService"
 
@@ -75,7 +75,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6019
+    .line 6059
     const-string/jumbo v2, "android.intent.action.USBHID_KEYBOARD_EVENT"
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -84,7 +84,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 6021
+    .line 6061
     const-string/jumbo v2, "android.intent.extra.device_state"
 
     const/4 v3, -0x1
@@ -93,7 +93,7 @@
 
     move-result v0
 
-    .line 6022
+    .line 6062
     .local v0, "extra":I
     const-string/jumbo v2, "InputMethodManagerService"
 
@@ -117,17 +117,17 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6023
+    .line 6063
     if-ne v0, v6, :cond_4
 
-    .line 6024
+    .line 6064
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get19()I
 
     move-result v2
 
     if-gez v2, :cond_0
 
-    .line 6025
+    .line 6065
     const-string/jumbo v2, "InputMethodManagerService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -160,10 +160,10 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6026
+    .line 6066
     invoke-static {v5}, Lcom/android/server/InputMethodManagerService;->-set6(I)I
 
-    .line 6028
+    .line 6068
     :cond_0
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get19()I
 
@@ -173,7 +173,7 @@
 
     invoke-static {v2}, Lcom/android/server/InputMethodManagerService;->-set6(I)I
 
-    .line 6029
+    .line 6069
     const-string/jumbo v2, "InputMethodManagerService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -200,7 +200,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6030
+    .line 6070
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get0()I
 
     move-result v2
@@ -209,7 +209,7 @@
 
     invoke-static {v2}, Lcom/android/server/InputMethodManagerService;->-set0(I)I
 
-    .line 6032
+    .line 6072
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-static {v2}, Lcom/android/server/InputMethodManagerService;->-wrap3(Lcom/android/server/InputMethodManagerService;)Z
@@ -218,23 +218,23 @@
 
     if-eqz v2, :cond_2
 
-    .line 6033
+    .line 6073
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v2}, Lcom/android/server/InputMethodManagerService;->setDefaultIMEforJapaneseKeyboard()V
 
-    .line 6038
+    .line 6078
     :goto_0
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v2}, Lcom/android/server/InputMethodManagerService;->hideKeyboardDialog()V
 
-    .line 6039
+    .line 6079
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v2, v5, v7}, Lcom/android/server/InputMethodManagerService;->hideCurrentInputLocked(ILandroid/os/ResultReceiver;)Z
 
-    .line 6040
+    .line 6080
     invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
 
     move-result-object v2
@@ -247,14 +247,14 @@
 
     if-nez v2, :cond_1
 
-    .line 6041
+    .line 6081
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get5()Ljava/lang/String;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 6042
+    .line 6082
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get5()Ljava/lang/String;
 
     move-result-object v2
@@ -269,14 +269,14 @@
 
     if-nez v2, :cond_1
 
-    .line 6043
+    .line 6083
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     const/4 v3, 0x4
 
     invoke-virtual {v2, v3}, Lcom/android/server/InputMethodManagerService;->showKeyboardNotiDailog(I)V
 
-    .line 6072
+    .line 6112
     .end local v0    # "extra":I
     :cond_1
     :goto_1
@@ -306,10 +306,10 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6016
+    .line 6056
     return-void
 
-    .line 6034
+    .line 6074
     .restart local v0    # "extra":I
     :cond_2
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
@@ -330,14 +330,14 @@
 
     if-eqz v2, :cond_3
 
-    .line 6035
+    .line 6075
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v2}, Lcom/android/server/InputMethodManagerService;->setDefaultIMEforChineseKeyboard()V
 
     goto :goto_0
 
-    .line 6037
+    .line 6077
     :cond_3
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -345,7 +345,7 @@
 
     goto :goto_0
 
-    .line 6055
+    .line 6095
     :cond_4
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get19()I
 
@@ -353,7 +353,7 @@
 
     if-ge v2, v6, :cond_5
 
-    .line 6056
+    .line 6096
     const-string/jumbo v2, "InputMethodManagerService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -386,10 +386,10 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6057
+    .line 6097
     invoke-static {v6}, Lcom/android/server/InputMethodManagerService;->-set6(I)I
 
-    .line 6059
+    .line 6099
     :cond_5
     const-string/jumbo v2, "InputMethodManagerService"
 
@@ -417,7 +417,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6060
+    .line 6100
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get19()I
 
     move-result v2
@@ -430,7 +430,7 @@
 
     if-nez v2, :cond_1
 
-    .line 6061
+    .line 6101
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get0()I
 
     move-result v2
@@ -439,14 +439,14 @@
 
     invoke-static {v2}, Lcom/android/server/InputMethodManagerService;->-set0(I)I
 
-    .line 6063
+    .line 6103
     invoke-static {}, Lcom/android/server/InputMethodManagerService;->-get20()I
 
     move-result v2
 
     if-ne v2, v6, :cond_6
 
-    .line 6064
+    .line 6104
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v2, v2, Lcom/android/server/InputMethodManagerService;->mContentResolver:Landroid/content/ContentResolver;
@@ -459,13 +459,13 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 6066
+    .line 6106
     :cond_6
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$USBKeyboardReceiver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-virtual {v2}, Lcom/android/server/InputMethodManagerService;->hideKeyboardDialog()V
 
-    .line 6067
+    .line 6107
     invoke-static {v5}, Lcom/android/server/InputMethodManagerService;->-set7(I)I
 
     goto/16 :goto_1

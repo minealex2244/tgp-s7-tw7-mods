@@ -29,7 +29,7 @@
     .param p3, "val$personaId"    # I
 
     .prologue
-    .line 2956
+    .line 2957
     .local p2, "val$packages":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$5;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -48,7 +48,7 @@
     .locals 4
 
     .prologue
-    .line 2958
+    .line 2959
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$5;->val$packages:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -69,11 +69,11 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2959
+    .line 2960
     .local v0, "pkg":Ljava/lang/String;
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$5;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get21(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PackageManagerService;
+    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get22(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PackageManagerService;
 
     move-result-object v2
 
@@ -83,7 +83,7 @@
 
     goto :goto_0
 
-    .line 2957
+    .line 2958
     .end local v0    # "pkg":Ljava/lang/String;
     :cond_0
     return-void

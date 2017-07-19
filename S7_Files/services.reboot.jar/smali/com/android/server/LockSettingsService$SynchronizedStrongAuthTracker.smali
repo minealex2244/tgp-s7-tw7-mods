@@ -25,13 +25,13 @@
     .param p2, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1043
+    .line 1044
     iput-object p1, p0, Lcom/android/server/LockSettingsService$SynchronizedStrongAuthTracker;->this$0:Lcom/android/server/LockSettingsService;
 
-    .line 1044
+    .line 1045
     invoke-direct {p0, p2}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;-><init>(Landroid/content/Context;)V
 
-    .line 1043
+    .line 1044
     return-void
 .end method
 
@@ -42,10 +42,10 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 1056
+    .line 1057
     monitor-enter p0
 
-    .line 1057
+    .line 1058
     :try_start_0
     invoke-super {p0, p1}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->getStrongAuthForUser(I)I
     :try_end_0
@@ -57,7 +57,7 @@
 
     return v0
 
-    .line 1056
+    .line 1057
     :catchall_0
     move-exception v0
 
@@ -72,10 +72,10 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 1049
+    .line 1050
     monitor-enter p0
 
-    .line 1050
+    .line 1051
     :try_start_0
     invoke-super {p0, p1, p2}, Lcom/android/internal/widget/LockPatternUtils$StrongAuthTracker;->handleStrongAuthRequiredChanged(II)V
     :try_end_0
@@ -83,10 +83,10 @@
 
     monitor-exit p0
 
-    .line 1048
+    .line 1049
     return-void
 
-    .line 1049
+    .line 1050
     :catchall_0
     move-exception v0
 
@@ -99,7 +99,7 @@
     .locals 2
 
     .prologue
-    .line 1062
+    .line 1063
     iget-object v0, p0, Lcom/android/server/LockSettingsService$SynchronizedStrongAuthTracker;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v0}, Lcom/android/server/LockSettingsService;->-get7(Lcom/android/server/LockSettingsService;)Lcom/android/server/LockSettingsStrongAuth;
@@ -110,6 +110,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/LockSettingsStrongAuth;->registerStrongAuthTracker(Landroid/app/trust/IStrongAuthTracker;)V
 
-    .line 1061
+    .line 1062
     return-void
 .end method

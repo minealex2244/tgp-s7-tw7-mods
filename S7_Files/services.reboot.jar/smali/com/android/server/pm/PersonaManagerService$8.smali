@@ -27,7 +27,7 @@
     .param p2, "val$userHandle"    # I
 
     .prologue
-    .line 7061
+    .line 7069
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$8;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iput p2, p0, Lcom/android/server/pm/PersonaManagerService$8;->val$userHandle:I
@@ -45,10 +45,10 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 7064
+    .line 7072
     const-string/jumbo v0, "PersonaManagerService"
 
-    .line 7065
+    .line 7073
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -59,10 +59,10 @@
 
     move-result-object v1
 
-    .line 7066
+    .line 7074
     iget v2, p0, Lcom/android/server/pm/PersonaManagerService$8;->val$userHandle:I
 
-    .line 7065
+    .line 7073
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -71,10 +71,10 @@
 
     move-result-object v1
 
-    .line 7064
+    .line 7072
     invoke-static {v0, v1}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7067
+    .line 7075
     new-instance v0, Lcom/android/server/pm/PersonaManagerService$8$1;
 
     iget v1, p0, Lcom/android/server/pm/PersonaManagerService$8;->val$userHandle:I
@@ -83,6 +83,6 @@
 
     invoke-virtual {v0}, Lcom/android/server/pm/PersonaManagerService$8$1;->start()V
 
-    .line 7063
+    .line 7071
     return-void
 .end method

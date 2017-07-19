@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/settings/accounts/ManageAccountsSettings;
 
     .prologue
-    .line 777
+    .line 788
     iput-object p1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$1;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,11 +40,11 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 780
+    .line 791
     iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings$1;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
 
     invoke-static {v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->-wrap1(Lcom/android/settings/accounts/ManageAccountsSettings;)V
 
-    .line 779
+    .line 790
     return-void
 .end method

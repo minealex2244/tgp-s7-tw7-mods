@@ -48,17 +48,17 @@
     .locals 2
 
     .prologue
-    .line 4134
+    .line 4135
     new-instance v0, Landroid/util/Pools$SynchronizedPool;
 
     const/16 v1, 0x14
 
     invoke-direct {v0, v1}, Landroid/util/Pools$SynchronizedPool;-><init>(I)V
 
-    .line 4133
+    .line 4134
     sput-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->sPool:Landroid/util/Pools$SynchronizedPool;
 
-    .line 4130
+    .line 4131
     return-void
 .end method
 
@@ -72,28 +72,28 @@
     .param p6, "selected"    # Z
 
     .prologue
-    .line 4204
+    .line 4205
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4206
+    .line 4207
     iput p1, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowIndex:I
 
-    .line 4207
+    .line 4208
     iput p2, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowSpan:I
 
-    .line 4208
+    .line 4209
     iput p3, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnIndex:I
 
-    .line 4209
+    .line 4210
     iput p4, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnSpan:I
 
-    .line 4210
+    .line 4211
     iput-boolean p5, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mHeading:Z
 
-    .line 4211
+    .line 4212
     iput-boolean p6, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mSelected:Z
 
-    .line 4205
+    .line 4206
     return-void
 .end method
 
@@ -103,25 +103,25 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 4278
+    .line 4279
     iput v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnIndex:I
 
-    .line 4279
+    .line 4280
     iput v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnSpan:I
 
-    .line 4280
+    .line 4281
     iput v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowIndex:I
 
-    .line 4281
+    .line 4282
     iput v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowSpan:I
 
-    .line 4282
+    .line 4283
     iput-boolean v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mHeading:Z
 
-    .line 4283
+    .line 4284
     iput-boolean v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mSelected:Z
 
-    .line 4277
+    .line 4278
     return-void
 .end method
 
@@ -134,7 +134,7 @@
     .param p4, "heading"    # Z
 
     .prologue
-    .line 4158
+    .line 4159
     const/4 v5, 0x0
 
     move v0, p0
@@ -164,7 +164,7 @@
     .param p5, "selected"    # Z
 
     .prologue
-    .line 4173
+    .line 4174
     sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->sPool:Landroid/util/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Landroid/util/Pools$SynchronizedPool;->acquire()Ljava/lang/Object;
@@ -173,11 +173,11 @@
 
     check-cast v7, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;
 
-    .line 4174
+    .line 4175
     .local v7, "info":Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;
     if-nez v7, :cond_0
 
-    .line 4175
+    .line 4176
     new-instance v0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;
 
     move v1, p0
@@ -196,26 +196,26 @@
 
     return-object v0
 
-    .line 4179
+    .line 4180
     :cond_0
     iput p0, v7, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowIndex:I
 
-    .line 4180
+    .line 4181
     iput p1, v7, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowSpan:I
 
-    .line 4181
+    .line 4182
     iput p2, v7, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnIndex:I
 
-    .line 4182
+    .line 4183
     iput p3, v7, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnSpan:I
 
-    .line 4183
+    .line 4184
     iput-boolean p4, v7, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mHeading:Z
 
-    .line 4184
+    .line 4185
     iput-boolean p5, v7, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mSelected:Z
 
-    .line 4185
+    .line 4186
     return-object v7
 .end method
 
@@ -224,21 +224,21 @@
     .param p0, "other"    # Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;
 
     .prologue
-    .line 4143
+    .line 4144
     iget v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowIndex:I
 
     iget v1, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowSpan:I
 
     iget v2, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnIndex:I
 
-    .line 4144
+    .line 4145
     iget v3, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnSpan:I
 
     iget-boolean v4, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mHeading:Z
 
     iget-boolean v5, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mSelected:Z
 
-    .line 4143
+    .line 4144
     invoke-static/range {v0 .. v5}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->obtain(IIIIZZ)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;
 
     move-result-object v0
@@ -252,7 +252,7 @@
     .locals 1
 
     .prologue
-    .line 4220
+    .line 4221
     iget v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnIndex:I
 
     return v0
@@ -262,7 +262,7 @@
     .locals 1
 
     .prologue
-    .line 4238
+    .line 4239
     iget v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mColumnSpan:I
 
     return v0
@@ -272,7 +272,7 @@
     .locals 1
 
     .prologue
-    .line 4229
+    .line 4230
     iget v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowIndex:I
 
     return v0
@@ -282,7 +282,7 @@
     .locals 1
 
     .prologue
-    .line 4247
+    .line 4248
     iget v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mRowSpan:I
 
     return v0
@@ -292,7 +292,7 @@
     .locals 1
 
     .prologue
-    .line 4257
+    .line 4258
     iget-boolean v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mHeading:Z
 
     return v0
@@ -302,7 +302,7 @@
     .locals 1
 
     .prologue
-    .line 4266
+    .line 4267
     iget-boolean v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->mSelected:Z
 
     return v0
@@ -312,14 +312,14 @@
     .locals 1
 
     .prologue
-    .line 4273
+    .line 4274
     invoke-direct {p0}, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->clear()V
 
-    .line 4274
+    .line 4275
     sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;->sPool:Landroid/util/Pools$SynchronizedPool;
 
     invoke-virtual {v0, p0}, Landroid/util/Pools$SynchronizedPool;->release(Ljava/lang/Object;)Z
 
-    .line 4272
+    .line 4273
     return-void
 .end method

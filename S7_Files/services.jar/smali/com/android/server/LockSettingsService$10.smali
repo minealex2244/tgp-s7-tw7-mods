@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/server/LockSettingsService;->doVerifyBackupPassword(Ljava/lang/String;ZJI)Lcom/android/internal/widget/VerifyCredentialResponse;
+    value = Lcom/android/server/LockSettingsService;->doVerifyRecoveryPassword(Ljava/lang/String;ZJI)Lcom/android/internal/widget/VerifyCredentialResponse;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/LockSettingsService;
 
     .prologue
-    .line 3221
+    .line 3191
     iput-object p1, p0, Lcom/android/server/LockSettingsService$10;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "password"    # Ljava/lang/String;
 
     .prologue
-    .line 3235
+    .line 3205
     return-object p1
 .end method
 
@@ -50,7 +50,7 @@
     .locals 1
 
     .prologue
-    .line 3241
+    .line 3210
     const/4 v0, 0x4
 
     return v0
@@ -68,12 +68,12 @@
     .end annotation
 
     .prologue
-    .line 3225
+    .line 3195
     iget-object v0, p0, Lcom/android/server/LockSettingsService$10;->this$0:Lcom/android/server/LockSettingsService;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/server/LockSettingsService;->setLockBackupPassword(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/server/LockSettingsService;->setLockRecoveryPassword(Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 3224
+    .line 3194
     return-void
 .end method
 
@@ -83,7 +83,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 3230
+    .line 3200
     iget-object v0, p0, Lcom/android/server/LockSettingsService$10;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v0}, Lcom/android/server/LockSettingsService;->-get5(Lcom/android/server/LockSettingsService;)Lcom/android/internal/widget/LockPatternUtils;

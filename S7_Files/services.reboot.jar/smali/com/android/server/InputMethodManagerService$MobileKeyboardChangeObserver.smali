@@ -24,17 +24,17 @@
     .param p1, "this$0"    # Lcom/android/server/InputMethodManagerService;
 
     .prologue
-    .line 6646
+    .line 6686
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
-    .line 6647
+    .line 6687
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 6646
+    .line 6686
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .locals 6
 
     .prologue
-    .line 6672
+    .line 6712
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     invoke-static {v2}, Lcom/android/server/InputMethodManagerService;->-get15(Lcom/android/server/InputMethodManagerService;)Ljava/lang/String;
@@ -51,17 +51,17 @@
 
     if-nez v2, :cond_0
 
-    .line 6673
+    .line 6713
     const-string/jumbo v2, "InputMethodManagerService"
 
     const-string/jumbo v3, "Failed to return the previous IME becuase the stored info is null"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6674
+    .line 6714
     return-void
 
-    .line 6676
+    .line 6716
     :cond_0
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -79,7 +79,7 @@
 
     check-cast v1, Landroid/view/inputmethod/InputMethodInfo;
 
-    .line 6677
+    .line 6717
     .local v1, "info":Landroid/view/inputmethod/InputMethodInfo;
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    .line 6678
+    .line 6718
     .local v0, "currentIME":Ljava/lang/String;
     const-string/jumbo v2, "InputMethodManagerService"
 
@@ -145,7 +145,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6679
+    .line 6719
     if-eqz v1, :cond_1
 
     if-eqz v0, :cond_1
@@ -162,12 +162,12 @@
 
     if-eqz v2, :cond_2
 
-    .line 6670
+    .line 6710
     :cond_1
     :goto_0
     return-void
 
-    .line 6681
+    .line 6721
     :cond_2
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -177,7 +177,7 @@
 
     move-result-object v3
 
-    .line 6682
+    .line 6722
     iget-object v4, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v4, v4, Lcom/android/server/InputMethodManagerService;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
@@ -192,7 +192,7 @@
 
     move-result v4
 
-    .line 6681
+    .line 6721
     invoke-virtual {v2, v3, v4}, Lcom/android/server/InputMethodManagerService;->setInputMethodLocked(Ljava/lang/String;I)V
 
     goto :goto_0
@@ -202,7 +202,7 @@
     .locals 4
 
     .prologue
-    .line 6665
+    .line 6705
     const-string/jumbo v0, "com.sec.android.inputmethod/.SamsungKeypad"
 
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
@@ -215,7 +215,7 @@
 
     if-nez v0, :cond_0
 
-    .line 6666
+    .line 6706
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     const-string/jumbo v1, "com.sec.android.inputmethod/.SamsungKeypad"
@@ -232,7 +232,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/server/InputMethodManagerService;->setInputMethodLocked(Ljava/lang/String;I)V
 
-    .line 6664
+    .line 6704
     :cond_0
     return-void
 .end method
@@ -246,7 +246,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 6652
+    .line 6692
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v1, v1, Lcom/android/server/InputMethodManagerService;->mContext:Landroid/content/Context;
@@ -265,7 +265,7 @@
 
     const/4 v0, 0x1
 
-    .line 6654
+    .line 6694
     .local v0, "isMobileKeyboard":Z
     :goto_0
     const-string/jumbo v1, "InputMethodManagerService"
@@ -294,10 +294,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6655
+    .line 6695
     if-eqz v0, :cond_1
 
-    .line 6656
+    .line 6696
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v2, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
@@ -316,10 +316,10 @@
 
     invoke-static {v1, v2}, Lcom/android/server/InputMethodManagerService;->-set5(Lcom/android/server/InputMethodManagerService;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 6657
+    .line 6697
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->setDefaultMobileKeyboardInputMethod()V
 
-    .line 6658
+    .line 6698
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->this$0:Lcom/android/server/InputMethodManagerService;
 
     iget-object v1, v1, Lcom/android/server/InputMethodManagerService;->mSettings:Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;
@@ -328,11 +328,11 @@
 
     invoke-virtual {v1, v2}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->setShowImeWithHardKeyboard(Z)V
 
-    .line 6650
+    .line 6690
     :goto_1
     return-void
 
-    .line 6652
+    .line 6692
     .end local v0    # "isMobileKeyboard":Z
     :cond_0
     const/4 v0, 0x0
@@ -340,7 +340,7 @@
     .restart local v0    # "isMobileKeyboard":Z
     goto :goto_0
 
-    .line 6660
+    .line 6700
     :cond_1
     invoke-direct {p0}, Lcom/android/server/InputMethodManagerService$MobileKeyboardChangeObserver;->restorePreviousUsedInputMethod()V
 

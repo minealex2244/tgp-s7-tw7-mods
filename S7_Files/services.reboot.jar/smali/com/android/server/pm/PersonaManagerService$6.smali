@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PersonaManagerService;
 
     .prologue
-    .line 4555
+    .line 4556
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$6;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,79 +41,79 @@
     .locals 5
 
     .prologue
-    .line 4558
+    .line 4559
     const-string/jumbo v1, "PersonaManagerService"
 
     const-string/jumbo v2, "registerReceiver for ACTION_USER_SWITCHED"
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4559
+    .line 4560
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 4560
+    .line 4561
     .local v0, "filter":Landroid/content/IntentFilter;
     const-string/jumbo v1, "android.intent.action.USER_SWITCHED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4561
+    .line 4562
     const-string/jumbo v1, "android.intent.action.USER_ADDED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4563
+    .line 4564
     const-string/jumbo v1, "android.intent.action.SCREEN_ON"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4564
+    .line 4565
     const-string/jumbo v1, "com.samsung.android.intent.action.FINGERPRINT_ADDED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4565
+    .line 4566
     const-string/jumbo v1, "com.samsung.android.intent.action.FINGERPRINT_PASSWORD_UPDATED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4566
+    .line 4567
     const-string/jumbo v1, "com.samsung.android.intent.action.FINGERPRINT_REMOVED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4567
+    .line 4568
     const-string/jumbo v1, "com.samsung.android.intent.action.FINGERPRINT_RESET"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4568
+    .line 4569
     const-string/jumbo v1, "com.samsung.android.intent.action.IRIS_ADDED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4569
+    .line 4570
     const-string/jumbo v1, "com.sec.knox.container.INTENT_KNOX_SDP_ACTIVATED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4571
+    .line 4572
     const-string/jumbo v1, "com.sec.knox.container.INTENT_ACTION_RESET_PWD_TIMEOUT"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 4572
+    .line 4573
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService$6;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v1}, Lcom/android/server/pm/PersonaManagerService;->-get3(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/server/pm/PersonaManagerService;->-get4(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$6;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get22(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/BroadcastReceiver;
+    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get23(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/BroadcastReceiver;
 
     move-result-object v2
 
@@ -123,19 +123,19 @@
 
     invoke-virtual {v1, v2, v0, v3, v4}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    .line 4573
+    .line 4574
     const-string/jumbo v1, "sys.knox.store"
 
     const-string/jumbo v2, "0"
 
     invoke-static {v1, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4574
+    .line 4575
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService$6;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$6;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get3(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get4(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
 
     move-result-object v2
 
@@ -143,6 +143,6 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/server/pm/PersonaManagerService;->-wrap52(Lcom/android/server/pm/PersonaManagerService;Landroid/content/Context;I)V
 
-    .line 4557
+    .line 4558
     return-void
 .end method

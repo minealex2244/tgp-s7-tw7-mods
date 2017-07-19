@@ -39,22 +39,22 @@
     .param p4, "_pid"    # I
 
     .prologue
-    .line 520
+    .line 523
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 522
+    .line 525
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$ClientState;->client:Lcom/android/internal/view/IInputMethodClient;
 
-    .line 523
+    .line 526
     iput-object p2, p0, Lcom/android/server/InputMethodManagerService$ClientState;->inputContext:Lcom/android/internal/view/IInputContext;
 
-    .line 524
+    .line 527
     iput p3, p0, Lcom/android/server/InputMethodManagerService$ClientState;->uid:I
 
-    .line 525
+    .line 528
     iput p4, p0, Lcom/android/server/InputMethodManagerService$ClientState;->pid:I
 
-    .line 526
+    .line 529
     new-instance v0, Landroid/view/inputmethod/InputBinding;
 
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$ClientState;->inputContext:Lcom/android/internal/view/IInputContext;
@@ -73,7 +73,7 @@
 
     iput-object v0, p0, Lcom/android/server/InputMethodManagerService$ClientState;->binding:Landroid/view/inputmethod/InputBinding;
 
-    .line 521
+    .line 524
     return-void
 .end method
 
@@ -83,7 +83,7 @@
     .locals 2
 
     .prologue
-    .line 515
+    .line 518
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -94,12 +94,12 @@
 
     move-result-object v0
 
-    .line 516
+    .line 519
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v1
 
-    .line 515
+    .line 518
     invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -108,42 +108,42 @@
 
     move-result-object v0
 
-    .line 516
+    .line 519
     const-string/jumbo v1, " uid "
 
-    .line 515
+    .line 518
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 516
+    .line 519
     iget v1, p0, Lcom/android/server/InputMethodManagerService$ClientState;->uid:I
 
-    .line 515
+    .line 518
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 517
+    .line 520
     const-string/jumbo v1, " pid "
 
-    .line 515
+    .line 518
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 517
+    .line 520
     iget v1, p0, Lcom/android/server/InputMethodManagerService$ClientState;->pid:I
 
-    .line 515
+    .line 518
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
-    .line 517
+    .line 520
     const-string/jumbo v1, "}"
 
-    .line 515
+    .line 518
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0

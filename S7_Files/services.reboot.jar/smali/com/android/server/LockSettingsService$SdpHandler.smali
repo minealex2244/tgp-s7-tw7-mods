@@ -36,17 +36,17 @@
     .param p1, "this$0"    # Lcom/android/server/LockSettingsService;
 
     .prologue
-    .line 2725
+    .line 2786
     iput-object p1, p0, Lcom/android/server/LockSettingsService$SdpHandler;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2726
+    .line 2787
     const-string/jumbo v0, "LockSettingsService.SdpHandler"
 
     iput-object v0, p0, Lcom/android/server/LockSettingsService$SdpHandler;->LOG_TAG:Ljava/lang/String;
 
-    .line 2725
+    .line 2786
     return-void
 .end method
 
@@ -64,48 +64,48 @@
     .locals 6
 
     .prologue
-    .line 2882
+    .line 2943
     iget-object v3, p0, Lcom/android/server/LockSettingsService$SdpHandler;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v3}, Lcom/android/server/LockSettingsService;->-get1(Lcom/android/server/LockSettingsService;)Landroid/content/Context;
 
     move-result-object v3
 
-    .line 2883
+    .line 2944
     const-string/jumbo v4, "enterprise_policy_new"
 
-    .line 2882
+    .line 2943
     invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/samsung/android/knox/EnterpriseDeviceManager;
 
-    .line 2884
+    .line 2945
     .local v0, "edm":Lcom/samsung/android/knox/EnterpriseDeviceManager;
     invoke-virtual {v0}, Lcom/samsung/android/knox/EnterpriseDeviceManager;->getPasswordPolicy()Lcom/samsung/android/knox/devicesecurity/PasswordPolicy;
 
     move-result-object v2
 
-    .line 2886
+    .line 2947
     .local v2, "mPwdPolicy":Lcom/samsung/android/knox/devicesecurity/PasswordPolicy;
     const/4 v1, 0x0
 
-    .line 2887
+    .line 2948
     .local v1, "isPwdChangeRequested":Z
     if-eqz v2, :cond_0
 
-    .line 2888
+    .line 2949
     invoke-virtual {v2}, Lcom/samsung/android/knox/devicesecurity/PasswordPolicy;->isChangeRequested()I
 
     move-result v3
 
     if-lez v3, :cond_0
 
-    .line 2889
+    .line 2950
     const/4 v1, 0x1
 
-    .line 2891
+    .line 2952
     :cond_0
     const-string/jumbo v3, "LockSettingsService.SdpHandler"
 
@@ -129,7 +129,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2892
+    .line 2953
     return v1
 .end method
 
@@ -142,7 +142,7 @@
     .param p3, "type"    # I
 
     .prologue
-    .line 2832
+    .line 2893
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/android/server/LockSettingsService$SdpHandler$5;
@@ -153,7 +153,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 2831
+    .line 2892
     return-void
 .end method
 
@@ -164,7 +164,7 @@
     .param p3, "type"    # Ljava/lang/String;
 
     .prologue
-    .line 2844
+    .line 2905
     const-string/jumbo v2, "LockSettingsService.SdpHandler"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -187,7 +187,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2845
+    .line 2906
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -200,15 +200,15 @@
 
     if-eqz v2, :cond_1
 
-    .line 2846
+    .line 2907
     :cond_0
     return-void
 
-    .line 2848
+    .line 2909
     :cond_1
     const/4 v0, 0x0
 
-    .line 2850
+    .line 2911
     .local v0, "alias":Ljava/lang/String;
     :try_start_0
     invoke-static {}, Lcom/sec/sdp/internal/SdpAuthenticator;->getInstance()Lcom/sec/sdp/internal/SdpAuthenticator;
@@ -219,15 +219,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2843
+    .line 2904
     :goto_0
     return-void
 
-    .line 2851
+    .line 2912
     :catch_0
     move-exception v1
 
-    .line 2852
+    .line 2913
     .local v1, "e":Ljava/lang/Exception;
     const-string/jumbo v2, "LockSettingsService.SdpHandler"
 
@@ -251,7 +251,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2853
+    .line 2914
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
@@ -262,7 +262,7 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 2809
+    .line 2870
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/android/server/LockSettingsService$SdpHandler$4;
@@ -273,7 +273,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 2808
+    .line 2869
     return-void
 .end method
 
@@ -283,20 +283,20 @@
     .param p2, "type"    # I
 
     .prologue
-    .line 2862
+    .line 2923
     packed-switch p2, :pswitch_data_0
 
-    .line 2861
+    .line 2922
     :goto_0
     return-void
 
-    .line 2864
+    .line 2925
     :pswitch_0
     invoke-virtual {p0, p1, p2}, Lcom/android/server/LockSettingsService$SdpHandler;->removeKeyPair(II)V
 
     goto :goto_0
 
-    .line 2862
+    .line 2923
     :pswitch_data_0
     .packed-switch 0x5
         :pswitch_0
@@ -309,7 +309,7 @@
     .param p2, "type"    # Ljava/lang/String;
 
     .prologue
-    .line 2858
+    .line 2919
     iget-object v0, p0, Lcom/android/server/LockSettingsService$SdpHandler;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v0}, Lcom/android/server/LockSettingsService;->-get3(Lcom/android/server/LockSettingsService;)Lcom/sec/knox/container/util/KeyManagementUtil;
@@ -322,7 +322,7 @@
 
     invoke-virtual {p0, p1, v0}, Lcom/android/server/LockSettingsService$SdpHandler;->notifyVerified(II)V
 
-    .line 2857
+    .line 2918
     return-void
 .end method
 
@@ -332,10 +332,10 @@
     .param p2, "type"    # I
 
     .prologue
-    .line 2872
+    .line 2933
     const/4 v0, 0x0
 
-    .line 2873
+    .line 2934
     .local v0, "res":Z
     iget-object v1, p0, Lcom/android/server/LockSettingsService$SdpHandler;->this$0:Lcom/android/server/LockSettingsService;
 
@@ -345,7 +345,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 2874
+    .line 2935
     const-string/jumbo v1, "LockSettingsService.SdpHandler"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -378,7 +378,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2875
+    .line 2936
     iget-object v1, p0, Lcom/android/server/LockSettingsService$SdpHandler;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v1}, Lcom/android/server/LockSettingsService;->-get3(Lcom/android/server/LockSettingsService;)Lcom/sec/knox/container/util/KeyManagementUtil;
@@ -391,7 +391,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 2876
+    .line 2937
     iget-object v1, p0, Lcom/android/server/LockSettingsService$SdpHandler;->this$0:Lcom/android/server/LockSettingsService;
 
     invoke-static {v1}, Lcom/android/server/LockSettingsService;->-get3(Lcom/android/server/LockSettingsService;)Lcom/sec/knox/container/util/KeyManagementUtil;
@@ -402,7 +402,7 @@
 
     move-result v0
 
-    .line 2878
+    .line 2939
     .end local v0    # "res":Z
     :cond_0
     :goto_0
@@ -428,10 +428,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2871
+    .line 2932
     return-void
 
-    .line 2875
+    .line 2936
     .restart local v0    # "res":Z
     :cond_1
     const/4 v0, 0x0
@@ -445,7 +445,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 2729
+    .line 2790
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/android/server/LockSettingsService$SdpHandler$1;
@@ -456,7 +456,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 2728
+    .line 2789
     return-void
 .end method
 
@@ -466,7 +466,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 2741
+    .line 2802
     const-string/jumbo v3, "LockSettingsService.SdpHandler"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -489,21 +489,21 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2742
+    .line 2803
     invoke-static {p2}, Lcom/samsung/android/knox/sdp/SdpUtil;->isKnoxWorkspace(I)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 2743
+    .line 2804
     return-void
 
-    .line 2745
+    .line 2806
     :cond_0
     const/4 v0, 0x0
 
-    .line 2747
+    .line 2808
     .local v0, "alias":Ljava/lang/String;
     :try_start_0
     invoke-static {}, Lcom/samsung/android/knox/sdp/SdpUtil;->getInstance()Lcom/samsung/android/knox/sdp/SdpUtil;
@@ -514,18 +514,18 @@
 
     move-result-object v2
 
-    .line 2748
+    .line 2809
     .local v2, "info":Lcom/samsung/android/knox/sdp/core/SdpEngineInfo;
     if-eqz v2, :cond_1
 
-    .line 2749
+    .line 2810
     invoke-static {}, Lcom/samsung/android/knox/sdp/core/SdpEngine;->getInstance()Lcom/samsung/android/knox/sdp/core/SdpEngine;
 
     move-result-object v3
 
     invoke-virtual {v3, v0, p1}, Lcom/samsung/android/knox/sdp/core/SdpEngine;->setPassword(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2750
+    .line 2811
     const-string/jumbo v3, "LockSettingsService.SdpHandler"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -550,17 +550,17 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2740
+    .line 2801
     .end local v2    # "info":Lcom/samsung/android/knox/sdp/core/SdpEngineInfo;
     :cond_1
     :goto_0
     return-void
 
-    .line 2752
+    .line 2813
     :catch_0
     move-exception v1
 
-    .line 2753
+    .line 2814
     .local v1, "e":Ljava/lang/Exception;
     const-string/jumbo v3, "LockSettingsService.SdpHandler"
 
@@ -584,7 +584,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2754
+    .line 2815
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
@@ -597,7 +597,7 @@
     .param p3, "type"    # I
 
     .prologue
-    .line 2759
+    .line 2820
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/android/server/LockSettingsService$SdpHandler$2;
@@ -608,7 +608,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 2758
+    .line 2819
     return-void
 .end method
 
@@ -618,7 +618,7 @@
     .param p2, "userId"    # I
 
     .prologue
-    .line 2786
+    .line 2847
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/android/server/LockSettingsService$SdpHandler$3;
@@ -629,7 +629,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 2785
+    .line 2846
     return-void
 .end method
 
@@ -640,7 +640,7 @@
     .param p3, "type"    # Ljava/lang/String;
 
     .prologue
-    .line 2771
+    .line 2832
     const-string/jumbo v2, "LockSettingsService.SdpHandler"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -673,7 +673,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2772
+    .line 2833
     invoke-direct {p0}, Lcom/android/server/LockSettingsService$SdpHandler;->isPwdChangeRequested()Z
 
     move-result v2
@@ -686,15 +686,15 @@
 
     if-eqz v2, :cond_1
 
-    .line 2773
+    .line 2834
     :cond_0
     return-void
 
-    .line 2775
+    .line 2836
     :cond_1
     const/4 v0, 0x0
 
-    .line 2777
+    .line 2838
     .local v0, "alias":Ljava/lang/String;
     :try_start_0
     invoke-static {}, Lcom/sec/sdp/internal/SdpAuthenticator;->getInstance()Lcom/sec/sdp/internal/SdpAuthenticator;
@@ -703,20 +703,20 @@
 
     invoke-virtual {v2, v0, p2, p3}, Lcom/sec/sdp/internal/SdpAuthenticator;->verify(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2778
+    .line 2839
     invoke-virtual {p0, p1, p3}, Lcom/android/server/LockSettingsService$SdpHandler;->notifyVerified(ILjava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2770
+    .line 2831
     :goto_0
     return-void
 
-    .line 2779
+    .line 2840
     :catch_0
     move-exception v1
 
-    .line 2780
+    .line 2841
     .local v1, "e":Ljava/lang/Exception;
     const-string/jumbo v2, "LockSettingsService.SdpHandler"
 
@@ -740,7 +740,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2781
+    .line 2842
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0

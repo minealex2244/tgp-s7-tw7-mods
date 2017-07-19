@@ -4968,7 +4968,7 @@ Name: res/drawable-mdpi-v4/tw_btn_radio_to_on_mtrl_011.png
 SHA-256-Digest: sSsFwY/mbRFictSHZGWZ8UM5McNmQYjw/rs4HpRkS18=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: GcQYAlHKA//edr2d98/feNPineLAO5iAxKCCJTXsVKY=
+SHA-256-Digest: RDhuM5UmyrXxHb8jlMEQhat+EhLkdqgwGeoQuWu4zNQ=
 
 Name: res/drawable-xxhdpi-v4/rate_star_med_off_holo_dark.png
 SHA-256-Digest: v0HP8RDV428fRAodZ69n96SG8qb0k1bb8bhoUHQOhG8=

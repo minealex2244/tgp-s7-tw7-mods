@@ -27,7 +27,7 @@
     .param p2, "val$latch"    # Ljava/util/concurrent/CountDownLatch;
 
     .prologue
-    .line 1747
+    .line 1748
     iput-object p1, p0, Lcom/android/server/LockSettingsService$4;->this$0:Lcom/android/server/LockSettingsService;
 
     iput-object p2, p0, Lcom/android/server/LockSettingsService$4;->val$latch:Ljava/util/concurrent/CountDownLatch;
@@ -50,19 +50,19 @@
     .end annotation
 
     .prologue
-    .line 1760
+    .line 1761
     const-string/jumbo v0, "LockSettingsService"
 
     const-string/jumbo v1, "unlockUser finished"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1761
+    .line 1762
     iget-object v0, p0, Lcom/android/server/LockSettingsService$4;->val$latch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 1759
+    .line 1760
     return-void
 .end method
 
@@ -78,7 +78,7 @@
     .end annotation
 
     .prologue
-    .line 1755
+    .line 1756
     const-string/jumbo v0, "LockSettingsService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -101,7 +101,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1754
+    .line 1755
     return-void
 .end method
 
@@ -116,13 +116,13 @@
     .end annotation
 
     .prologue
-    .line 1750
+    .line 1751
     const-string/jumbo v0, "LockSettingsService"
 
     const-string/jumbo v1, "unlockUser started"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1749
+    .line 1750
     return-void
 .end method

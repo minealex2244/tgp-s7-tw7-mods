@@ -33,18 +33,18 @@
     .param p3, "title"    # I
 
     .prologue
-    .line 648
+    .line 649
     iput-object p1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 649
+    .line 650
     iput-object p2, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
 
-    .line 650
+    .line 651
     iput p3, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mTitleRes:I
 
-    .line 648
+    .line 649
     return-void
 .end method
 
@@ -57,7 +57,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 655
+    .line 656
     iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
 
     invoke-virtual {v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
@@ -66,7 +66,7 @@
 
     check-cast v0, Lcom/android/settings/SettingsActivity;
 
-    .line 656
+    .line 657
     iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
 
     iget v3, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mTitleRes:I
@@ -77,10 +77,10 @@
 
     move-object v5, v2
 
-    .line 655
+    .line 656
     invoke-virtual/range {v0 .. v6}, Lcom/android/settings/SettingsActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
-    .line 659
+    .line 660
     iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->mClass:Ljava/lang/String;
 
     const-class v1, Lcom/android/settings/location/LocationSettings;
@@ -95,14 +95,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 660
+    .line 661
     new-instance v7, Landroid/content/Intent;
 
     const-string/jumbo v0, "com.android.settings.accounts.LAUNCHING_LOCATION_SETTINGS"
 
     invoke-direct {v7, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 661
+    .line 662
     .local v7, "intent":Landroid/content/Intent;
     iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;->this$0:Lcom/android/settings/accounts/ManageAccountsSettings;
 
@@ -110,13 +110,13 @@
 
     move-result-object v0
 
-    .line 662
+    .line 663
     const-string/jumbo v1, "android.permission.WRITE_SECURE_SETTINGS"
 
-    .line 661
+    .line 662
     invoke-virtual {v0, v7, v1}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
-    .line 664
+    .line 665
     .end local v7    # "intent":Landroid/content/Intent;
     :cond_0
     const/4 v0, 0x1
