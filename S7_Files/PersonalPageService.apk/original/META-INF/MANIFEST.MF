@@ -68,7 +68,7 @@ Name: res/layout-v21/private_mode_pin.xml
 SHA-256-Digest: bxu02YoUHY7skiftVhjtzavP9na+qPGMetmbVo45O70=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: 9o/SVsCwKKeDd+5eNX5YbwRPtWnjTT/c3uuk4mt78vE=
+SHA-256-Digest: DBMLGl2FW4AkzZOqHgufibQb2OGVJLMICQYqocUmmgI=
 
 Name: res/layout-sw600dp-v13/private_mode_pin.xml
 SHA-256-Digest: ajbcSoxCsUavNuq/BGUj8BnBXBaf5EglJYsHL3WlLVc=

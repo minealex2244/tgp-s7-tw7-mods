@@ -34,7 +34,7 @@
     .locals 0
 
     .prologue
-    .line 348
+    .line 353
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
     return-void
@@ -45,7 +45,7 @@
     .param p0, "parent"    # Lcom/android/settings/datausage/BillingCycleSettings;
 
     .prologue
-    .line 354
+    .line 359
     invoke-virtual {p0}, Lcom/android/settings/datausage/BillingCycleSettings;->isAdded()Z
 
     move-result v2
@@ -54,13 +54,13 @@
 
     return-void
 
-    .line 356
+    .line 361
     :cond_0
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 357
+    .line 362
     .local v0, "args":Landroid/os/Bundle;
     const-string/jumbo v2, "template"
 
@@ -70,21 +70,21 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 359
+    .line 364
     new-instance v1, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;
 
     invoke-direct {v1}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;-><init>()V
 
-    .line 360
+    .line 365
     .local v1, "dialog":Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;
     invoke-virtual {v1, v0}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->setArguments(Landroid/os/Bundle;)V
 
-    .line 361
+    .line 366
     const/4 v2, 0x0
 
     invoke-virtual {v1, p0, v2}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
-    .line 362
+    .line 367
     invoke-virtual {p0}, Lcom/android/settings/datausage/BillingCycleSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
@@ -93,7 +93,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
-    .line 353
+    .line 358
     return-void
 .end method
 
@@ -105,7 +105,7 @@
     .param p2, "which"    # I
 
     .prologue
-    .line 418
+    .line 424
     invoke-virtual {p0}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v5
@@ -118,7 +118,7 @@
 
     check-cast v4, Landroid/net/NetworkTemplate;
 
-    .line 419
+    .line 425
     .local v4, "template":Landroid/net/NetworkTemplate;
     invoke-virtual {p0}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->getTargetFragment()Landroid/app/Fragment;
 
@@ -126,26 +126,26 @@
 
     check-cast v3, Lcom/android/settings/datausage/BillingCycleSettings;
 
-    .line 420
+    .line 426
     .local v3, "target":Lcom/android/settings/datausage/BillingCycleSettings;
     iget-object v5, v3, Lcom/android/settings/datausage/BillingCycleSettings;->services:Lcom/android/settings/datausage/TemplatePreference$NetworkServices;
 
     iget-object v2, v5, Lcom/android/settings/datausage/TemplatePreference$NetworkServices;->mPolicyEditor:Lcom/android/settingslib/NetworkPolicyEditor;
 
-    .line 423
+    .line 429
     .local v2, "editor":Lcom/android/settingslib/NetworkPolicyEditor;
     iget-object v5, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
 
     invoke-virtual {v5}, Lcom/samsung/android/widget/SemNumberPicker;->clearFocus()V
 
-    .line 425
+    .line 431
     iget-object v5, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
 
     invoke-virtual {v5}, Lcom/samsung/android/widget/SemNumberPicker;->getValue()I
 
     move-result v0
 
-    .line 426
+    .line 432
     .local v0, "cycleDay":I
     new-instance v5, Landroid/text/format/Time;
 
@@ -153,32 +153,28 @@
 
     iget-object v1, v5, Landroid/text/format/Time;->timezone:Ljava/lang/String;
 
-    .line 427
+    .line 433
     .local v1, "cycleTimezone":Ljava/lang/String;
     invoke-virtual {v2, v4, v0, v1}, Lcom/android/settingslib/NetworkPolicyEditor;->setPolicyCycleDay(Landroid/net/NetworkTemplate;ILjava/lang/String;)V
 
-    .line 428
+    .line 434
     invoke-static {v3}, Lcom/android/settings/datausage/BillingCycleSettings;->-wrap1(Lcom/android/settings/datausage/BillingCycleSettings;)V
 
-    .line 417
+    .line 423
     return-void
 .end method
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
-    .locals 14
+    .locals 13
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const/4 v12, 0x0
-
-    const/4 v13, 0x1
-
-    .line 367
+    .line 372
     invoke-virtual {p0}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    .line 368
+    .line 373
     .local v1, "context":Landroid/content/Context;
     invoke-virtual {p0}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->getTargetFragment()Landroid/app/Fragment;
 
@@ -186,19 +182,19 @@
 
     check-cast v6, Lcom/android/settings/datausage/BillingCycleSettings;
 
-    .line 369
+    .line 374
     .local v6, "target":Lcom/android/settings/datausage/BillingCycleSettings;
     iget-object v10, v6, Lcom/android/settings/datausage/BillingCycleSettings;->services:Lcom/android/settings/datausage/TemplatePreference$NetworkServices;
 
     iget-object v5, v10, Lcom/android/settings/datausage/TemplatePreference$NetworkServices;->mPolicyEditor:Lcom/android/settingslib/NetworkPolicyEditor;
 
-    .line 371
+    .line 376
     .local v5, "editor":Lcom/android/settingslib/NetworkPolicyEditor;
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 372
+    .line 377
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->getContext()Landroid/content/Context;
 
@@ -208,17 +204,19 @@
 
     move-result-object v3
 
-    .line 374
+    .line 379
     .local v3, "dialogInflater":Landroid/view/LayoutInflater;
     const v10, 0x7f0400a4
 
     const/4 v11, 0x0
 
-    invoke-virtual {v3, v10, v12, v11}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    const/4 v12, 0x0
+
+    invoke-virtual {v3, v10, v11, v12}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v9
 
-    .line 375
+    .line 380
     .local v9, "view":Landroid/view/View;
     const v10, 0x7f110256
 
@@ -230,7 +228,7 @@
 
     iput-object v10, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
 
-    .line 377
+    .line 382
     const v10, 0x7f110255
 
     invoke-virtual {v9, v10}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -239,7 +237,7 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    .line 378
+    .line 383
     .local v8, "textView":Landroid/widget/TextView;
     new-instance v10, Landroid/text/method/ScrollingMovementMethod;
 
@@ -247,7 +245,7 @@
 
     invoke-virtual {v8, v10}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
-    .line 380
+    .line 385
     invoke-virtual {p0}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v10
@@ -260,7 +258,7 @@
 
     check-cast v7, Landroid/net/NetworkTemplate;
 
-    .line 382
+    .line 387
     .local v7, "template":Landroid/net/NetworkTemplate;
     if-eqz p1, :cond_0
 
@@ -270,7 +268,7 @@
 
     move-result v2
 
-    .line 385
+    .line 390
     .local v2, "cycleDay":I
     :goto_0
     const-string/jumbo v10, "BillingCycleSettings"
@@ -305,29 +303,33 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 387
+    .line 392
     iget-object v10, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
 
-    invoke-virtual {v10, v13}, Lcom/samsung/android/widget/SemNumberPicker;->setMinValue(I)V
+    const/4 v11, 0x1
 
-    .line 388
+    invoke-virtual {v10, v11}, Lcom/samsung/android/widget/SemNumberPicker;->setMinValue(I)V
+
+    .line 393
     iget-object v10, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
 
     const/16 v11, 0x1f
 
     invoke-virtual {v10, v11}, Lcom/samsung/android/widget/SemNumberPicker;->setMaxValue(I)V
 
-    .line 389
+    .line 394
     iget-object v10, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
 
     invoke-virtual {v10, v2}, Lcom/samsung/android/widget/SemNumberPicker;->setValue(I)V
 
-    .line 390
+    .line 395
     iget-object v10, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
 
-    invoke-virtual {v10, v13}, Lcom/samsung/android/widget/SemNumberPicker;->setWrapSelectorWheel(Z)V
+    const/4 v11, 0x1
 
-    .line 391
+    invoke-virtual {v10, v11}, Lcom/samsung/android/widget/SemNumberPicker;->setWrapSelectorWheel(Z)V
+
+    .line 396
     iget-object v10, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
 
     const v11, 0x102044b
@@ -338,20 +340,20 @@
 
     check-cast v4, Landroid/widget/EditText;
 
-    .line 392
+    .line 397
     .local v4, "editText":Landroid/widget/EditText;
     const/4 v10, 0x6
 
     invoke-virtual {v4, v10}, Landroid/widget/EditText;->setImeOptions(I)V
 
-    .line 393
+    .line 398
     new-instance v10, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment$1;
 
     invoke-direct {v10, p0}, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment$1;-><init>(Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;)V
 
     invoke-virtual {v4, v10}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
-    .line 404
+    .line 409
     const v10, 0x7f0b17db
 
     invoke-virtual {v0, v10}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -362,11 +364,21 @@
 
     move-result-object v10
 
-    .line 406
+    .line 411
     const v11, 0x7f0b17dd
 
-    .line 404
+    .line 409
     invoke-virtual {v10, v11, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v10
+
+    .line 412
+    const/high16 v11, 0x1040000
+
+    const/4 v12, 0x0
+
+    .line 409
+    invoke-virtual {v10, v11, v12}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v10
 
@@ -376,7 +388,7 @@
 
     return-object v10
 
-    .line 383
+    .line 388
     .end local v2    # "cycleDay":I
     .end local v4    # "editText":Landroid/widget/EditText;
     :cond_0
@@ -393,10 +405,10 @@
     .param p1, "outState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 412
+    .line 418
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    .line 413
+    .line 419
     const-string/jumbo v0, "CYCLE_DAY"
 
     iget-object v1, p0, Lcom/android/settings/datausage/BillingCycleSettings$CycleEditorFragment;->mCycleDayPicker:Lcom/samsung/android/widget/SemNumberPicker;
@@ -407,6 +419,6 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 411
+    .line 417
     return-void
 .end method

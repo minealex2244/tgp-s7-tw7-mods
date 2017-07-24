@@ -6992,8 +6992,6 @@
     .locals 7
 
     .prologue
-    const/4 v6, 0x1
-
     .line 1064
     new-instance v3, Landroid/content/Intent;
 
@@ -7031,7 +7029,11 @@
     .line 1070
     const-string/jumbo v4, "unlocked"
 
-    invoke-virtual {v3, v4, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->isUsbTransferAllowed()Z
+
+    move-result v5
+
+    invoke-virtual {v3, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 1072
     iget-object v4, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->mCurrentFunctions:Ljava/lang/String;
@@ -7078,7 +7080,9 @@
 
     .line 1079
     :cond_0
-    invoke-virtual {v3, v0, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    const/4 v4, 0x1
+
+    invoke-virtual {v3, v0, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     goto :goto_1
 
