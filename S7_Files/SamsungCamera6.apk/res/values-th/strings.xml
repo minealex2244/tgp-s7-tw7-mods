@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">บันทึกวิดีโอที่อัตราเฟรมสูงสำหรับการดูแบบเคลื่อนไหวช้า คุณสามารถเล่นส่วนที่ต้องการของแต่ละวิดีโอแบบเคลื่อนไหวช้าได้ หลังจากบันทึกวิดีโอแล้ว</string>
     <string name="SM_SMART_SELFSHOT">เซลฟี่กล้องหลัง</string>
     <string name="SM_SMART_SELFSHOT_description">กล้องหลังจะตรวจจับและโฟกัสใบหน้าของคุณ โดยอัตโนมัติเมื่อคุณถ่ายภาพตัวเอง</string>
+    <string name="SM_SOCIAL">สังคม</string>
+    <string name="SM_SOCIAL_description">ถ่ายภาพและแชร์อย่างง่ายดายบนเครือข่ายสังคม</string>
     <string name="SM_SPORTS">กีฬา</string>
     <string name="SM_SPORTS_SCENE_description">ถ่ายภาพวัตถุที่เคลื่อนไหวเร็วได้ชัดขึ้น</string>
     <string name="SM_STORY">เสียง &amp; ช็อต</string>
@@ -262,7 +264,7 @@
     <string name="Title_Voice_Capture">"ควบคุม
 ด้วยเสียง"</string>
     <string name="Title_Voice_guide">เสียงคำแนะนำ</string>
-    <string name="Title_Volume_Key_As">หน้าที่​ปุ่ม​กด​ระดับ​เสียง</string>
+    <string name="Title_Volume_Key_As">ฟังก์ชั่นปุ่มเสียง</string>
     <string name="Title_WhiteBalance">สมดุลสีขาว</string>
     <string name="Title_common">ทั่วไป</string>
     <string name="Title_front">กล้อง​ด้าน​หน้า</string>
@@ -279,9 +281,9 @@
     <string name="activity_not_found_exception">ไม่สามารถหาแอพพลิเคชั่นเพื่อดำเนินการนี้ได้</string>
     <string name="add_shortcut_on_home_screen">เพิ่มทางลัดบนหน้าจอหลัก</string>
     <string name="add_shortcut_on_home_screen_tts">เพิ่มทางลัดบนหน้าจอหลัก</string>
-    <string name="ae_lock">ล็อค AE</string>
-    <string name="af_ae_lock">ล็อค AF/AE</string>
-    <string name="af_lock">ล็อคโฟกัสอัตโนมัติ</string>
+    <string name="ae_lock">ล็อก AE</string>
+    <string name="af_ae_lock">ล็อก AF/AE</string>
+    <string name="af_lock">ล็อกโฟกัสอัตโนมัติ</string>
     <string name="alert_title">การ​เตือน</string>
     <string name="app_name">กล้องถ่ายรูป</string>
     <string name="application_disable_toast_message">ไม่สามารถเปิด %s ได้ ในโหมดประหยัดพลังงานสูงสุดจะสามารถใช้เฉพาะแอพที่เพิ่มไว้ในหน้าหลักเท่านั้น</string>
@@ -357,8 +359,8 @@
     <string name="close_camera_for_unmounted_memory">ปิด​ที่​เก็บข้อมูล USB ​ก่อน​ใช้​กล้อง</string>
     <string name="contrast">ความเข้ม</string>
     <string name="cover_runtime_permission_message">ไม่สามารถเปิด %1$s ขณะที่ S View Cover ปิดอยู่ เปิดฝาครอบ เปิด %2$s แล้วให้อนุญาตรายการที่เกี่ยวข้อง</string>
-    <string name="cover_runtime_permission_message_for_location">ไม่สามารถใช้แท็กสถานที่ขณะที่ S View Cover ปิดอยู่ได้ ปลดล็อคอุปกรณ์ เปิดกล้อง จากนั้นทำการอนุญาตรายการที่เกี่ยวข้องแล้วลองอีกครั้ง</string>
-    <string name="cover_runtime_permission_message_secure_lock">ไม่สามารถเปิดกล้องขณะที่ S View Cover ปิดอยู่ได้ เปิดฝาปิด ปลดล็อคอุปกรณ์และเปิดกล้อง จากนั้นทำการอนุญาตรายการที่เกี่ยวข้อง</string>
+    <string name="cover_runtime_permission_message_for_location">ไม่สามารถใช้แท็กสถานที่ขณะที่ S View Cover ปิดอยู่ได้ ปลดล็อกอุปกรณ์ เปิดกล้อง จากนั้นทำการอนุญาตรายการที่เกี่ยวข้องแล้วลองอีกครั้ง</string>
+    <string name="cover_runtime_permission_message_secure_lock">ไม่สามารถเปิดกล้องขณะที่ S View Cover ปิดอยู่ได้ เปิดฝาปิด ปลดล็อกอุปกรณ์และเปิดกล้อง จากนั้นทำการอนุญาตรายการที่เกี่ยวข้อง</string>
     <string name="delete">ลบ</string>
     <string name="detach_keyboard_cover_popup">ถอดฝาปิดแป้นพิมพ์ออกจากเครื่อง เพื่อเปิด %s</string>
     <string name="disable">ไม่ทำงาน</string>
@@ -391,10 +393,13 @@
     <string name="gps_wifi_and_mobile_networks">ความถูกต้องสูง</string>
     <string name="gps_wifi_or_wifi_only">GPS และ Wi-Fi</string>
     <string name="guideline_3by3">3 x 3</string>
-    <string name="guideline_square">Square</string>
+    <string name="guideline_square">จตุรัส</string>
     <string name="help_change_mode_tip_1">ปัดไปทางขวาเพื่อดูโหมดกล้องที่ใช้ได้</string>
     <string name="help_change_mode_tip_2">เลือกโหมดที่คุณต้องการใช้</string>
+    <string name="help_change_mode_tip_3">ใช้ได้เฉพาะโหมดกล้องอัตโนมัติและโหมดเซลฟี่ ขณะเปิดใช้งานโหมดใช้ง่าย</string>
     <string name="help_changing_the_camera_mode">การเลือกโหมดกล้อง</string>
+    <string name="help_changing_the_camera_mode_header">การเลือกโหมดกล้อง</string>
+    <string name="help_changing_the_camera_mode_title">การเปลี่ยนโหมดกล้อง</string>
     <string name="help_recording_videos">การบันทึกวิดีโอ</string>
     <string name="help_recording_videos_tip_1">แตะ %s</string>
     <string name="help_recording_videos_tip_1_tts">แตะปุ่มกล้องวิดีโอ</string>
@@ -402,7 +407,7 @@
     <string name="help_recording_videos_tip_2_tts">แตะปุ่มหยุดเพื่อหยุดบันทึก</string>
     <string name="help_recording_videos_tip_snapshot">แตะ %s เพื่อถ่ายภาพขณะบันทึกวีดีโอ</string>
     <string name="help_recording_videos_tip_snapshot_tts">แตะปุ่มกล้องเพื่อถ่ายภาพขณะบันทึกวิดีโอ</string>
-    <string name="help_section_summary">ถ่ายภาพหรือบันทึกวิดีโอโดยใช้เอฟเฟ็กต์หลากหลายเพื่อให้เหมาะกับทุกโอกาส ใช้ได้เฉพาะโหมดกล้องอัตโนมัติและโหมดเซลฟี่ และไม่สามารถใช้เอฟเฟ็กต์ใดได้ในขณะที่เปิดใช้งานโหมดใช้ง่าย</string>
+    <string name="help_section_summary">ถ่ายภาพหรือบันทึกวิดีโอโดยใช้เอฟเฟ็กต์หลากหลาย เพื่อให้เหมาะกับทุกโอกาส</string>
     <string name="help_selecting_camera_mode">การเลือกโหมดกล้อง</string>
     <string name="help_taking_pictures">การถ่ายภาพ</string>
     <string name="help_taking_pictures_tip_1">แตะวัตถุที่ต้องการให้อยู่ในโฟกัส</string>
@@ -417,6 +422,7 @@
     <string name="help_text_wideselfie">แตะปุ่มกล้องแล้วหมุนอุปกรณ์ช้าๆ ไปทางเดียว</string>
     <string name="help_viewing_pics_and_videos_tip_1">แตะ %s เพื่อดูรูปภาพหรือวิดีโอของคุณทันทีหลังจากถ่ายภาพหรือบันทึก</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">แตะปุ่ม มุมมองอย่างรวดเร็ว เพื่อดูภาพถ่ายหรือวิดีโอของคุณทันที หลังจากถ่ายหรือบันทึกวิดีโอเสร็จ</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">การดูรูปภาพและวิดีโอ</string>
     <string name="high_resolution_video_description">เมื่อบันทึกในความละเอียด %s จะไม่สามารถ:</string>
     <string name="highlight">ไฮไลต์</string>
@@ -496,7 +502,7 @@
     <string name="qrcode_code_error">รหัส QR ไม่ถูกต้อง</string>
     <string name="qrcode_code_not_supported">ไม่รองรับรหัส QR</string>
     <string name="qrcode_read">อ่าน QR Code แล้ว</string>
-    <string name="qrcode_read_secured_lock">ไม่สามารถดูคอนเทนท์ QR Code และบาร์โค้ดขณะที่หน้าจอถูกล็อคด้วยประเภทการล็อคหน้าจอที่ปลอดภัยได้ ปลดล็อคหน้าจอแล้วลองใหม่อีกครั้งเพื่อดูคอนเทนท์</string>
+    <string name="qrcode_read_secured_lock">ไม่สามารถดูคอนเทนท์ QR Code และบาร์โค้ดขณะที่หน้าจอถูกล็อกด้วยประเภทการล็อกหน้าจอที่ปลอดภัยได้ ปลดล็อกหน้าจอแล้วลองใหม่อีกครั้งเพื่อดูคอนเทนท์</string>
     <string name="qrcode_scan_error">การอ่านรหัส QR ล้มเหลว ลองอีกครั้ง</string>
     <string name="quick_launch_confirm_guide">กล้องถูกเปิดด้วย เริ่มด่วน</string>
     <string name="quick_launch_dialog_btn">เปิดใช้งานต่อไป</string>
@@ -514,8 +520,8 @@
 ​ผิด​พลาด"</string>
     <string name="recording_using_earphone_mic">การบันทึกด้วยไมค์หูฟัง</string>
     <string name="request_runtime_permission_message">ไม่สามารถเปิด %s ได้ แตะ “การตั้งค่า” แล้วไปที่ ข้อมูลแอพพลิเคชั่น > สิทธิ์ จากนั้นอนุญาตสิทธิ์ต่อไปนี้แล้วลองใหม่อีกครั้ง:</string>
-    <string name="request_runtime_permission_message_for_location_secure_lock">ไม่สามารถใช้แท็กสถานที่ได้ ปลดล็อคอุปกรณ์ เปิดกล้อง จากนั้นทำการอนุญาตรายการที่เกี่ยวข้องแล้วลองอีกครั้ง</string>
-    <string name="request_runtime_permission_message_secure_lock">ไม่สามารถเปิดกล้องได้จากหน้าจอล็อค ปลดล็อคอุปกรณ์ของคุณ, เปิดกล้อง, และให้อนุญาตรายการที่เกี่ยวข้อง</string>
+    <string name="request_runtime_permission_message_for_location_secure_lock">ไม่สามารถใช้แท็กสถานที่ได้ ปลดล็อกอุปกรณ์ เปิดกล้อง จากนั้นทำการอนุญาตรายการที่เกี่ยวข้องแล้วลองอีกครั้ง</string>
+    <string name="request_runtime_permission_message_secure_lock">ไม่สามารถเปิดกล้องได้จากหน้าจอล็อก ปลดล็อกอุปกรณ์ของคุณ, เปิดกล้อง, และให้อนุญาตรายการที่เกี่ยวข้อง</string>
     <string name="reset">ตั้ง​​ใหม่</string>
     <string name="reset_message">การตั้งค่ากล้องจะถูกตั้งค่าใหม่</string>
     <string name="reset_title">ตั้งค่าใหม่</string>
@@ -529,15 +535,15 @@
     <string name="right">ทางขวา</string>
     <string name="right_tts">ขวา</string>
     <string name="runtime_permission_message_for_location">ไม่สามารถใช้ %s ได้ แตะ “การตั้งค่า” แล้วไปที่ ข้อมูลแอพพลิเคชั่น > สิทธิ์ จากนั้นอนุญาตสิทธิ์ต่อไปนี้แล้วลองใหม่อีกครั้ง:</string>
-    <string name="runtime_permission_secure_lock_in_video_collage">ไม่สามารถสร้างคอลลาจวิดีโอ ปลดล็อคอุปกรณ์ของคุณ แล้วให้อนุญาตรายการที่เกี่ยวข้อง</string>
+    <string name="runtime_permission_secure_lock_in_video_collage">ไม่สามารถสร้างคอลลาจวิดีโอ ปลดล็อกอุปกรณ์ของคุณ แล้วให้อนุญาตรายการที่เกี่ยวข้อง</string>
     <string name="saturation">ระดับสี</string>
     <string name="save">บันทึก</string>
     <string name="save_as_flipped_summary">บันทึกทุกภาพที่คุณถ่ายตามที่แสดงในตัวอย่าง ไม่ใช่เป็นภาพกลับด้าน</string>
     <string name="save_burst_in_device_storage_message">ช็อตปะทุจะถูกบันทึกไว้ในพื้นที่จัดเก็บภายในเครื่อง</string>
-    <string name="secured_lock_in_contact_us">แตะ “ตกลง” เพื่อปลดล็อคอุปกรณ์และติดต่อเรา</string>
-    <string name="secured_lock_in_download_effect">แตะ “ตกลง” เพื่อปลดล็อคอุปกรณ์ของคุณ เพื่อดาวน์โหลดเอฟเฟ็กต์ใหม่</string>
-    <string name="secured_lock_in_download_shootingmode">แตะ “ตกลง” เพื่อปลดล็อคอุปกรณ์ของคุณเพื่อดาวน์โหลดโหมดใหม่</string>
-    <string name="secured_lock_in_shootingmode_separated">แตะ “ตกลง” เพื่อปลดล็อคอุปกรณ์และใช้ %s</string>
+    <string name="secured_lock_in_contact_us">แตะ “ตกลง” เพื่อปลดล็อกอุปกรณ์และติดต่อเรา</string>
+    <string name="secured_lock_in_download_effect">แตะ “ตกลง” เพื่อปลดล็อกอุปกรณ์ของคุณ เพื่อดาวน์โหลดเอฟเฟ็กต์ใหม่</string>
+    <string name="secured_lock_in_download_shootingmode">แตะ “ตกลง” เพื่อปลดล็อกอุปกรณ์ของคุณเพื่อดาวน์โหลดโหมดใหม่</string>
+    <string name="secured_lock_in_shootingmode_separated">แตะ “ตกลง” เพื่อปลดล็อกอุปกรณ์และใช้ %s</string>
     <string name="selective_focus_error_af">บันทึกรูปภาพแล้ว แต่ไม่สามารถใช้เอฟเฟ็กต์ความเข้มโฟกัสได้ เลือกพื้นที่เพื่อโฟกัส และลองอีกครั้ง</string>
     <string name="selective_focus_error_inf">บันทึกรูปภาพแล้ว แต่ไม่สามารถใช้เอฟเฟ็กต์ ความเข้มโฟกัสได้ วัตถุอยู่ไกลเกินไป</string>
     <string name="selective_focus_error_segmentation">บันทึกรูปภาพแล้ว แต่ไม่สามารถใช้เอฟเฟ็กต์ความเข้มโฟกัสได้ ตรวจไม่พบวัตถุ</string>
@@ -626,7 +632,7 @@
     <string name="unable_to_record_video_with_effect">ไม่สามารถบันทึกวิดีโอที่มีเอฟเฟ็กต์ใน %s ได้ เปลี่ยนขนาดวิดีโอในการตั้งค่า</string>
     <string name="uninstall">ถอนการติดตั้ง</string>
     <string name="unknown_error_callback_msg">เกิด​ข้อ​ผิด​พลาด​ที่​ไม่​รู้จัก</string>
-    <string name="unlock">ปลดล็อค</string>
+    <string name="unlock">ปลดล็อก</string>
     <string name="unticked">ไม่ทำเครื่องหมาย</string>
     <string name="video_play">แสดง</string>
     <string name="video_reach_4g_and_restart_recording">ถึงขนาดไฟล์สูงสุด (%s) แล้ว บันทึกวิดีโอแล้ว จะทำการบันทึกต่อในไฟล์ใหม่</string>

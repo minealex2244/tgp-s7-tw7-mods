@@ -190,6 +190,8 @@ Seat peanála: Gabh cuma ghluaisne agus pictiúir d'oibiachtaí gluaiseachta á 
     <string name="SM_SLOW_VIDEO_description">Taifead físeáin ag ardráta frámaí le hamharc orthu i mallghluaisne. Beidh tú in ann cuid ar leith de gach físeán a sheinm i mallghluaisne tar éis a dtaifeadta.</string>
     <string name="SM_SMART_SELFSHOT">Féinphic cúlcheamara</string>
     <string name="SM_SMART_SELFSHOT_description">"Braithfidh an ceamara cúil d'aghaidh go huathoibríoch agus déanfaidh fócasú air agus pictiúir féinphortráide á nglacadh agat."</string>
+    <string name="SM_SOCIAL">Sóisialta</string>
+    <string name="SM_SOCIAL_description">Glac pictiúir agus comhroinn go héasca iad ar líonraí sóisialta.</string>
     <string name="SM_SPORTS">Spóirt</string>
     <string name="SM_SPORTS_SCENE_description">Glac pictiúir níos soiléire de shuibiachtaí ar mearghluaiseacht.</string>
     <string name="SM_STORY">Fuaim &amp; seat</string>
@@ -261,7 +263,7 @@ Seat peanála: Gabh cuma ghluaisne agus pictiúir d'oibiachtaí gluaiseachta á 
     <string name="Title_Viewmode">Amh. lánscáileáin (16:9)</string>
     <string name="Title_Voice_Capture">Rialú gutha</string>
     <string name="Title_Voice_guide">Treoir ghutha</string>
-    <string name="Title_Volume_Key_As">Feidhm eochrach airde</string>
+    <string name="Title_Volume_Key_As">Feidhm na heochrach airde</string>
     <string name="Title_WhiteBalance">Leibhéal bán</string>
     <string name="Title_common">Coiteann</string>
     <string name="Title_front">Ceamara tosaigh</string>
@@ -393,7 +395,10 @@ crutha"</string>
     <string name="guideline_square">Cearnóg</string>
     <string name="help_change_mode_tip_1">Svaidhpeáil ar dheis le hamharc ar na móid cheamara atá ar fáil.</string>
     <string name="help_change_mode_tip_2">Roghnaigh an mód is mian leat a úsáid.</string>
+    <string name="help_change_mode_tip_3">Ní bhíonn ach na móid cheamara Uathmhód agus Féinphic ar fáil agus Mód éasca cumasaithe.</string>
     <string name="help_changing_the_camera_mode">Móid cheamara a roghnú</string>
+    <string name="help_changing_the_camera_mode_header">Mód ceamara a roghnú</string>
+    <string name="help_changing_the_camera_mode_title">An mód ceamara a athrú</string>
     <string name="help_recording_videos">Físeáin a thaifeadadh</string>
     <string name="help_recording_videos_tip_1">Tapáil %s.</string>
     <string name="help_recording_videos_tip_1_tts">Tapáil an cnaipe Ceamthaifeadán.</string>
@@ -401,7 +406,7 @@ crutha"</string>
     <string name="help_recording_videos_tip_2_tts">Tapáil an cnaipe Stop le taifeadadh a scor.</string>
     <string name="help_recording_videos_tip_snapshot">Tapáil %s le pictiúir a ghlacadh le linn físeán a thaifeadadh.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Tapáil an cnaipe Ceamara le pictiúir a ghlacadh le linn físeán a thaifeadadh.</string>
-    <string name="help_section_summary">Glac pictiúir nó taifead físeáin le réimse maisíochtaí difriúla a bheidh oiriúnach do gach ócáid. Ní bhíonn ach Uathmhód agus Mód féinphic ar fáil, agus ní féidir aon mhaisíochtaí a chur i bhfeidhm, agus Mód éasca cumasaithe.</string>
+    <string name="help_section_summary">Glac pictiúir nó taifead físeáin le héagsúlacht maisíochtaí difriúla, a oireann gach ócáid.</string>
     <string name="help_selecting_camera_mode">Móid cheamara a roghnú</string>
     <string name="help_taking_pictures">Pictiúir a ghlacadh</string>
     <string name="help_taking_pictures_tip_1">Tapáil an oibiacht ar mian leat fócasú uirthi.</string>
@@ -416,6 +421,7 @@ crutha"</string>
     <string name="help_text_wideselfie">Tapáil an cnaipe Ceamara agus tiontaigh do ghléas go mall i dtreo amháin.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Tapáil %s le hamharc ar phictiúir nó ar fhíseáin díreach tar éis duit iad a ghlacadh nó a thaifeadadh.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Tapáil an cnaipe Mearamharc le hamharc ar phictiúir nó ar fhíseáin díreach tar éis duit iad a ghlacadh nó a thaifeadadh.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Amharc ar phictiúir/fhíseáin</string>
     <string name="high_resolution_video_description">Ní bheidh na nithe seo a leanas ar fáil agus taifeadadh ar bun i dtaifigh %s:</string>
     <string name="highlight">Gealáin</string>
@@ -494,7 +500,7 @@ crutha"</string>
     <string name="qrcode_code_error">Níl an cód QR bailí.</string>
     <string name="qrcode_code_not_supported">Níl tacú ann don chód QR.</string>
     <string name="qrcode_read">Cód QR léite</string>
-    <string name="qrcode_read_secured_lock">Ní féidir amharc ar an gcód QR ná ar inneachar barrachóid agus an scáileán glasáilte le cineál glais slán. Díghlasáil an scáileán agus triail arís le hamharc ar inneachar.</string>
+    <string name="qrcode_read_secured_lock">Amharc dodhéanta ar an gcód QR ná ar inneachar barrachóid agus an scáileán glasáilte le cineál glais slán. Díghlasáil an scáileán agus triail arís le hamharc ar inneachar.</string>
     <string name="qrcode_scan_error">Theip ar léamh an chóid QR. Triail arís.</string>
     <string name="quick_launch_confirm_guide">Ceamara oscailte trí Mhearlainseáil.</string>
     <string name="quick_launch_dialog_btn">Coinnigh cumasaithe</string>
@@ -672,7 +678,7 @@ féinphic"</string>
     <string name="weather_state_16">Dallcairt sneachta</string>
     <string name="weather_state_17">Stoirm sneachta</string>
     <string name="weather_state_18">Ceomhar</string>
-    <string name="weather_state_19">Báisteach oighir</string>
+    <string name="weather_state_19">Flichshneachta</string>
     <string name="weather_state_20">Stoirm dheannaigh</string>
     <string name="weather_state_21">Báisteach: éadrom go measartha</string>
     <string name="weather_state_22">Báisteach: measartha go trom</string>

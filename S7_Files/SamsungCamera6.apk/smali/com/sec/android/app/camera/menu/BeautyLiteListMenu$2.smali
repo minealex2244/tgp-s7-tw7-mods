@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     .prologue
-    .line 335
+    .line 338
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,18 +42,18 @@
     .param p1, "step"    # I
 
     .prologue
-    .line 338
+    .line 341
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->updateSkinColorLevel(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->access$400(Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;I)V
 
-    .line 339
+    .line 342
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->restartSliderMenuTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->access$200(Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;)V
 
-    .line 340
+    .line 343
     return-void
 .end method

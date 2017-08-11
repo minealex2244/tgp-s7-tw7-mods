@@ -192,6 +192,8 @@ Kaasavedamine: saate liikuvate objektide pildistamisel jäädvustada tausta sell
     <string name="SM_SLOW_VIDEO_description">Saate salvestada videoid suurel kaadrikiirusel aegluubis vaatamiseks. Saate esitada aegluubis iga video kindlat lõiku pärast salvestamist.</string>
     <string name="SM_SMART_SELFSHOT">Tagumise kaamera selfie</string>
     <string name="SM_SMART_SELFSHOT_description">Tagumine kaamera tuvastab ja fokuseerib teie näo automaatselt, kui teete endast portreepilte.</string>
+    <string name="SM_SOCIAL">Sotsiaalne</string>
+    <string name="SM_SOCIAL_description">Pildistage ja jagage fotosid hõlpsalt sotsiaalvõrgustikes.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Saate pildistada kiiresti liikuvaid objekte.</string>
     <string name="SM_STORY">Heli ja võte</string>
@@ -263,7 +265,7 @@ Kaasavedamine: saate liikuvate objektide pildistamisel jäädvustada tausta sell
     <string name="Title_Viewmode">Täisekraani vaade (16:9)</string>
     <string name="Title_Voice_Capture">Hääljuhtimine</string>
     <string name="Title_Voice_guide">Hääljuhised</string>
-    <string name="Title_Volume_Key_As">Helitugevuse nupu funktsioon</string>
+    <string name="Title_Volume_Key_As">Helitugevusklahvi funktsioon</string>
     <string name="Title_WhiteBalance">Valge tasakaal</string>
     <string name="Title_common">Üldine</string>
     <string name="Title_front">Eesmine kaamera</string>
@@ -395,7 +397,10 @@ korrektuur"</string>
     <string name="guideline_square">Ruut</string>
     <string name="help_change_mode_tip_1">Libistage paremale, et vaadata saadaolevaid kaamerarežiime.</string>
     <string name="help_change_mode_tip_2">Valige režiim, mida soovite kasutada.</string>
+    <string name="help_change_mode_tip_3">Kui lihtne režiim on aktiveeritud, on saadaval ainult kaamerarežiimid Automaatne ja Selfie.</string>
     <string name="help_changing_the_camera_mode">Kaamerarežiimide valimine</string>
+    <string name="help_changing_the_camera_mode_header">Kaamerarežiimi valimine</string>
+    <string name="help_changing_the_camera_mode_title">Kaamerarežiimi muutmine</string>
     <string name="help_recording_videos">Videote salvestamine</string>
     <string name="help_recording_videos_tip_1">Toksake ikooni %s.</string>
     <string name="help_recording_videos_tip_1_tts">Toksake videokaamera nuppu.</string>
@@ -403,7 +408,7 @@ korrektuur"</string>
     <string name="help_recording_videos_tip_2_tts">Toksake lõpetamise nuppu, et lõpetada salvestamist.</string>
     <string name="help_recording_videos_tip_snapshot">Toksake ikooni %s, et pildistada video salvestamise ajal.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Toksake kaamera nuppu, et pildistada video salvestamise ajal.</string>
-    <string name="help_section_summary">Saate jäädvustada pilte või videoid mitmete erinevate efektidega, mis sobivad kõikidesse olukordadesse. Kui lihtne režiimi on aktiivne, on saadaval ainult kaamerarežiimid Automaatne ja Selfie ning efekte ei saa rakendada.</string>
+    <string name="help_section_summary">Saate jäädvustada pilte või videoid mitmete erinevate efektidega, mis sobivad kõikidesse olukordadesse.</string>
     <string name="help_selecting_camera_mode">Kaamerarežiimide valimine</string>
     <string name="help_taking_pictures">Pildistamine</string>
     <string name="help_taking_pictures_tip_1">Toksake objekti, mida soovite fokuseerida.</string>
@@ -418,6 +423,7 @@ korrektuur"</string>
     <string name="help_text_wideselfie">Toksake kaameranuppu ja pöörake seadet aeglaselt ühes suunas.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Toksake ikooni %s, et vaadata pilte ja videoid kohe pärast nende jäädvustamist.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Toksake kiirvaate nuppu, et vaadata pilte ja videoid kohe pärast nende jäädvustamist.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Piltide ja videote vaatamine</string>
     <string name="high_resolution_video_description">Eraldusvõimega %s salvestamisel pole saadaval järgnev:</string>
     <string name="highlight">Esiletõstud</string>

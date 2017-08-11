@@ -54,7 +54,7 @@
     <uses-permission android:name="com.samsung.cmh.data.READ"/>
     <uses-permission android:name="com.samsung.android.productsearch.permission.SEARCH_PRODUCT"/>
     <permission android:name="com.sec.android.app.camera.permission.READ_IMAGE_VIDEO_INFO" android:protectionLevel="signature"/>
-    <permission android:description="@string/permission_shooting_mode_descr" android:label="@string/permission_shooting_mode" android:name="com.sec.android.app.camera.permission.SHOOTING_MODE" android:permissionGroup="android.permission-group.CAMERA" android:protectionLevel="dangerous"/>
+    <permission android:description="@string/permission_shooting_mode_descr" android:label="@string/permission_shooting_mode" android:name="com.sec.android.app.camera.permission.SHOOTING_MODE" android:protectionLevel="normal"/>
     <supports-screens android:anyDensity="true" android:normalScreens="true"/>
     <application android:allowBackup="false" android:icon="@mipmap/tw30_icon_camera" android:label="@string/app_name" android:largeHeap="true" android:name="com.sec.android.app.camera.CameraApplication" android:resizeableActivity="true" android:supportsRtl="true">
         <meta-data android:name="com.sec.android.sdk.cover.MODE" android:value="2"/>
@@ -164,7 +164,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <meta-data android:name="SPDE.build.signature" android:value="3675091/11670135/normal-release/SamsungCamera-608000-6.5.69"/>
-        <meta-data android:name="SPDE.env.version" android:value="2.1.3/L24.2.16/24.2.9"/>
+        <meta-data android:name="SPDE.build.signature" android:value="3992229/13677843/SEP81-normal-release/SamsungCamera-612100-6.5.95"/>
+        <meta-data android:name="SPDE.env.version" android:value="2.1.3/L24.2.16/24.2.10"/>
     </application>
 </manifest>

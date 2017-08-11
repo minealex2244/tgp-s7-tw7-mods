@@ -95,6 +95,7 @@
     <dimen name="beauty_level_slider_bottom_margin">138.0dip</dimen>
     <dimen name="beauty_menu_bottom_margin">117.0dip</dimen>
     <dimen name="beauty_menu_button_pos_x">128.0dip</dimen>
+    <dimen name="beauty_slider_space">14.0dip</dimen>
     <dimen name="blur_image_width">384.0px</dimen>
     <dimen name="burst_panoramashot_capturetri_height">34.0dip</dimen>
     <dimen name="burst_panoramashot_capturetri_width">34.0dip</dimen>
@@ -508,7 +509,7 @@
     <dimen name="sound_and_shot_add_voice_progress_bar_pos_y">75.0dip</dimen>
     <dimen name="sound_and_shot_add_voice_progress_bar_seq_spacing">3.0dip</dimen>
     <dimen name="sound_and_shot_add_voice_progress_bar_seq_width">23.0dip</dimen>
-    <dimen name="sound_and_shot_add_voice_progress_group_height">109.0dip</dimen>
+    <dimen name="sound_and_shot_add_voice_progress_group_height">111.0dip</dimen>
     <dimen name="sound_and_shot_add_voice_progress_group_width">231.0dip</dimen>
     <dimen name="sound_and_shot_add_voice_progress_text_font_size">16.0dip</dimen>
     <dimen name="sound_and_shot_add_voice_progress_text_height">20.0dip</dimen>
@@ -638,7 +639,6 @@
     <dimen name="beauty_slider_skin_color_group_width">35.0dip</dimen>
     <dimen name="beauty_slider_skin_color_slider_width">15.0dip</dimen>
     <dimen name="beauty_slider_skin_color_title_text_size">13.0dip</dimen>
-    <dimen name="beauty_slider_space">14.0dip</dimen>
     <dimen name="beauty_slider_spot_light_divider_width">20.0dip</dimen>
     <dimen name="beauty_slider_spot_light_image_size">32.0dip</dimen>
     <dimen name="beauty_slider_spot_light_indicator_text_height">12.0dip</dimen>
@@ -790,6 +790,7 @@
     <dimen name="mode_item_icon_width">27.0dip</dimen>
     <dimen name="mode_menu_info_text_font_size">15.0dip</dimen>
     <dimen name="mode_option_text_size">16.0dip</dimen>
+    <dimen name="mode_scroll_position_gap">25.0dip</dimen>
     <dimen name="multi_af_frame_image_width">7.0dip</dimen>
     <dimen name="navigator_height">20.0dip</dimen>
     <dimen name="number_text_margin_end">4.0dip</dimen>
@@ -814,7 +815,7 @@
     <dimen name="overlay_help_interaction_guide_pager_portrait_height">392.0dip</dimen>
     <dimen name="overlay_help_text_height">90.0dip</dimen>
     <dimen name="overlay_help_text_width">360.0dip</dimen>
-    <dimen name="overlay_layout_shootingmode_height">23.0dip</dimen>
+    <dimen name="overlay_layout_shootingmode_height">24.0dip</dimen>
     <dimen name="overlay_layout_shootingmode_width">240.0dip</dimen>
     <dimen name="overlay_layout_text_size">14.0dip</dimen>
     <dimen name="page_navigator_group_portrait_bottom_padding">96.0dip</dimen>
@@ -857,7 +858,7 @@
     <dimen name="slidermenu_text_font_size">21.0dip</dimen>
     <dimen name="slidermenu_zoom_value_text_font_size">30.0dip</dimen>
     <dimen name="slidermenu_zoom_value_text_width">70.0dip</dimen>
-    <dimen name="spinner_drop_down_vertical_offset">0.0px</dimen>
+    <dimen name="spinner_drop_down_vertical_offset">-9.5dip</dimen>
     <dimen name="swipe_ignore_area_landscape">50.0dip</dimen>
     <dimen name="swipe_ignore_area_portrait">50.0dip</dimen>
     <dimen name="swipe_threshold_distance">50.0dip</dimen>
@@ -910,13 +911,12 @@
     <dimen name="watermark_handler_thickness_size">1.0dip</dimen>
     <dimen name="watermark_tab_item_text_size">13.0dip</dimen>
     <dimen name="watermark_tab_menu_height">43.0dip</dimen>
-    <dimen name="watermark_tab_text_padding">13.0dip</dimen>
     <dimen name="window_min_height">220.0dip</dimen>
     <dimen name="window_min_width">220.0dip</dimen>
     <dimen name="winset_list_divider_height">2.0px</dimen>
     <dimen name="winset_list_item_end_padding">24.0dip</dimen>
     <dimen name="winset_list_item_start_padding">18.0dip</dimen>
-    <dimen name="winset_list_item_top_padding">11.75dip</dimen>
+    <dimen name="winset_list_item_top_padding">13.0dip</dimen>
     <dimen name="winset_spinner_max_width">200.0dip</dimen>
     <dimen name="winset_spinner_right_margin">16.0dip</dimen>
     <dimen name="winset_spinner_sub_text_size">13.0sp</dimen>

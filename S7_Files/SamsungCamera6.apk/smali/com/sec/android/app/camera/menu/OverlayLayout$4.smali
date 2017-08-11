@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     .prologue
-    .line 1230
+    .line 1236
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$4;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 
     const/4 v2, 0x0
 
-    .line 1233
+    .line 1239
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->isVisible()I
 
     move-result v0
@@ -56,7 +56,7 @@
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$4;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$200(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$300(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     move-result-object v0
 
@@ -66,27 +66,27 @@
 
     if-eqz v0, :cond_1
 
-    .line 1239
+    .line 1245
     :cond_0
     :goto_0
     return v2
 
-    .line 1236
+    .line 1242
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$4;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mEffectEditButton:Lcom/samsung/android/glview/GLButton;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$300(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/samsung/android/glview/GLButton;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$400(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/samsung/android/glview/GLButton;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1237
+    .line 1243
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$4;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
-    invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$400(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/sec/android/app/camera/interfaces/MenuManager;
+    invoke-static {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$500(Lcom/sec/android/app/camera/menu/OverlayLayout;)Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     move-result-object v0
 
@@ -94,7 +94,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/MenuManager;->showMenu(I)Lcom/sec/android/app/camera/interfaces/MenuBase;
 
-    .line 1238
+    .line 1244
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$4;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/OverlayLayout;->hideTouchEVSlider()V

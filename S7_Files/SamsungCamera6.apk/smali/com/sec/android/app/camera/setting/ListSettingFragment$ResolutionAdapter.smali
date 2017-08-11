@@ -37,13 +37,13 @@
     .param p4, "objects"    # [Ljava/lang/String;
 
     .prologue
-    .line 493
+    .line 499
     iput-object p1, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    .line 494
+    .line 500
     invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
 
-    .line 495
+    .line 501
     return-void
 .end method
 
@@ -56,16 +56,16 @@
     .param p3, "parent"    # Landroid/view/ViewGroup;
 
     .prologue
-    const v7, 0x7f0a0261
+    const v7, 0x7f0a0267
 
-    const v6, 0x7f0a023b
+    const v6, 0x7f0a0241
 
     const/4 v5, 0x1
 
-    .line 500
+    .line 506
     if-nez p2, :cond_1
 
-    .line 501
+    .line 507
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getActivity()Landroid/app/Activity;
@@ -84,12 +84,12 @@
 
     move-result-object p2
 
-    .line 502
+    .line 508
     new-instance v1, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;
 
     invoke-direct {v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;-><init>()V
 
-    .line 503
+    .line 509
     .local v1, "viewHolder":Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;
     const v2, 0x1020014
 
@@ -101,8 +101,8 @@
 
     iput-object v2, v1, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;->title:Landroid/widget/CheckedTextView;
 
-    .line 504
-    const v2, 0x7f10003d
+    .line 510
+    const v2, 0x7f10003f
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -112,10 +112,10 @@
 
     iput-object v2, v1, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;->resolution:Landroid/widget/TextView;
 
-    .line 505
+    .line 511
     invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 509
+    .line 515
     :goto_0
     iget-object v2, v1, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;->title:Landroid/widget/CheckedTextView;
 
@@ -130,7 +130,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 510
+    .line 516
     iget-object v2, v1, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;->resolution:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->getContext()Landroid/content/Context;
@@ -152,17 +152,17 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 511
+    .line 517
     iget v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->selectedIndex:I
 
     if-ne v2, p1, :cond_2
 
-    .line 512
+    .line 518
     iget-object v2, v1, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;->title:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v2, v5}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
-    .line 516
+    .line 522
     :goto_1
     iget-object v2, v1, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;->title:Landroid/widget/CheckedTextView;
 
@@ -170,7 +170,7 @@
 
     move-result v0
 
-    .line 517
+    .line 523
     .local v0, "isChecked":Z
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
@@ -192,7 +192,7 @@
 
     if-ne v2, v3, :cond_4
 
-    .line 518
+    .line 524
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -237,7 +237,7 @@
 
     move-result-object v2
 
-    .line 519
+    .line 525
     :goto_2
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -247,14 +247,14 @@
 
     move-result-object v2
 
-    .line 518
+    .line 524
     invoke-virtual {p2, v2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 524
+    .line 530
     :goto_3
     return-object p2
 
-    .line 507
+    .line 513
     .end local v0    # "isChecked":Z
     .end local v1    # "viewHolder":Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;
     :cond_1
@@ -267,7 +267,7 @@
     .restart local v1    # "viewHolder":Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;
     goto :goto_0
 
-    .line 514
+    .line 520
     :cond_2
     iget-object v2, v1, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionListItemHolder;->title:Landroid/widget/CheckedTextView;
 
@@ -277,12 +277,12 @@
 
     goto :goto_1
 
-    .line 518
+    .line 524
     .restart local v0    # "isChecked":Z
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    .line 519
+    .line 525
     invoke-virtual {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -293,7 +293,7 @@
 
     goto :goto_2
 
-    .line 521
+    .line 527
     :cond_4
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -338,7 +338,7 @@
 
     move-result-object v2
 
-    .line 522
+    .line 528
     :goto_4
     invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -348,7 +348,7 @@
 
     move-result-object v2
 
-    .line 521
+    .line 527
     invoke-virtual {p2, v2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     goto :goto_3
@@ -356,7 +356,7 @@
     :cond_5
     iget-object v2, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
-    .line 522
+    .line 528
     invoke-virtual {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -373,9 +373,9 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 528
+    .line 534
     iput p1, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->selectedIndex:I
 
-    .line 529
+    .line 535
     return-void
 .end method

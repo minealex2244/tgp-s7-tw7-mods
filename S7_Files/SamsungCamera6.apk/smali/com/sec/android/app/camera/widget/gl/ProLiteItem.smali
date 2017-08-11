@@ -92,7 +92,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProLiteItem;->PRO_ITEM_BACKGROUND_OFFSET:I
 
     .line 36
-    const v0, 0x7f0b0157
+    const v0, 0x7f0b0158
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -116,7 +116,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProLiteItem;->PRO_ITEM_TEXT_POS_Y:I
 
     .line 38
-    const v0, 0x7f0b0156
+    const v0, 0x7f0b0157
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -333,7 +333,7 @@
 
     int-to-float v4, v4
 
-    const v5, 0x7f020184
+    const v5, 0x7f020185
 
     invoke-direct {v0, v1, v3, v4, v5}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 

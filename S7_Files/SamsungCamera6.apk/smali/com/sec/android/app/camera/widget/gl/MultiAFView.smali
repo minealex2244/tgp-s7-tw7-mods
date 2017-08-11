@@ -170,7 +170,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/MultiAFView;->SENSOR_FRAME_TOP_OFFSET:I
 
     .line 50
-    const v0, 0x7f0b0316
+    const v0, 0x7f0b0317
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -207,7 +207,7 @@
 
     new-instance v1, Lcom/samsung/android/glview/GLImage;
 
-    const v3, 0x7f020141
+    const v3, 0x7f020142
 
     invoke-direct {v1, p1, v2, v2, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 

@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">"লেহেমীয়া সঞ্চালনত দৰ্শন কৰিবলৈ ভিডিঅ'সমূহ এক উচ্চ ফ্ৰেমত ৰেকৰ্ড কৰক৷ আপুনি ভিডিঅ'সমূহ ৰেকৰ্ড কৰাৰ পিছত প্ৰতিটো ভিডিঅ'ৰে এটা নিৰ্দিষ্ট শাখা লেহেমীয়া সঞ্চালনত চলাব পাৰে৷"</string>
     <string name="SM_SMART_SELFSHOT">ৰিয়েৰ-কেম চেলফি</string>
     <string name="SM_SMART_SELFSHOT_description">"আপুনি যেতিয়া স্ব-চিত্ৰণ চিত্ৰসমূহ তুলিব পিছৰ কেমেৰাই আপোনাৰ মুখ স্বয়ংক্ৰিয়ভাৱে চিনাক্ত আৰু ফ'কাচ কৰিব৷"</string>
+    <string name="SM_SOCIAL">সামাজিক</string>
+    <string name="SM_SOCIAL_description">চিত্ৰ লওক আৰু সেইবিলাকক সামাজিক নেটৱৰ্কত সহজে ভাগ-বতৰা কৰক।</string>
     <string name="SM_SPORTS">ক্ৰীড়া</string>
     <string name="SM_SPORTS_SCENE_description">দ্ৰুত চলমান বিষয়ৰ স্পষ্ট চিত্ৰ তোলক৷</string>
     <string name="SM_STORY">চাউন্ড এন্ড শ্বট</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">সম্পূ. স্ক্ৰীণ দ. (16:9)</string>
     <string name="Title_Voice_Capture">মাত নিয়ন্ত্ৰণ</string>
     <string name="Title_Voice_guide">মাত নিৰ্দেশনা</string>
-    <string name="Title_Volume_Key_As">শব্দ কীৰ কাৰ্য</string>
+    <string name="Title_Volume_Key_As">ভলিউম কী ফাংচন</string>
     <string name="Title_WhiteBalance">হোৱাইট বেলেঞ্চ</string>
     <string name="Title_common">সাধাৰণ</string>
     <string name="Title_front">ফ্ৰণ্ট কেমেৰা</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">বৰ্গ</string>
     <string name="help_change_mode_tip_1">"উপলব্ধ কেমেৰা ম'ড দৰ্শন কৰিবলৈ সোঁফালে ঘহাঁওক।"</string>
     <string name="help_change_mode_tip_2">"আপুনি ব্যৱহাৰ কৰিব বিচৰা ম'ডটো চয়ন কৰক৷"</string>
+    <string name="help_change_mode_tip_3">"সহজ ম'ড সক্ষম হৈ থাকোতে কেৱল স্বয়ং আৰু চেলফি কেমেৰা ম'ড উপলব্ধ।"</string>
     <string name="help_changing_the_camera_mode">"কেমেৰা ম'ড চয়ন কৰি আছে"</string>
+    <string name="help_changing_the_camera_mode_header">"এটা কেমেৰা ম'ডৰ চয়ন"</string>
+    <string name="help_changing_the_camera_mode_title">"কেমেৰা ম'ডৰ সলনি"</string>
     <string name="help_recording_videos">"ভিডিঅ' ৰেকৰ্ডিং"</string>
     <string name="help_recording_videos_tip_1">%s টিপক৷</string>
     <string name="help_recording_videos_tip_1_tts">"কেমক'ডাৰ বুটাম টিপক৷"</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">ৰেকৰ্ডিং বন্ধ কৰিবলৈ বন্ধ বুটাম টিপক৷</string>
     <string name="help_recording_videos_tip_snapshot">"ভিডিঅ' ৰেকৰ্ডিং কৰি থকা সময়ত চিত্ৰ তুলিবলৈ %s টিপক৷"</string>
     <string name="help_recording_videos_tip_snapshot_tts">"ভিডিঅ' ৰেকৰ্ডিং কৰি থকা সময়ত চিত্ৰ তুলিবলৈ কেমেৰা বুটাম টিপক৷"</string>
-    <string name="help_section_summary">"সকলো পৰিস্থিতিৰ সৈতে খাপ খোৱা, বিভিন্ন বেলেগ বেলেগ প্ৰভাৱ ব্যৱহাৰ কৰি চিত্ৰ তোলক বা ভিডিঅ' ৰেকৰ্ড কৰক। কেৱল স্বয়ং আৰু চেলফি কেমেৰা ম'ড উপলব্ধ আৰু কোনো প্ৰভাৱ প্ৰয়োগ কৰিব নোৱাৰি, যেতিয়া সহজ ম'ড সক্ষম হৈ থাকে।"</string>
+    <string name="help_section_summary">"সকলো পৰিস্থিতিৰ সৈতে খাপ খোৱা, পৃথক প্ৰভাৱসমূহ ব্যৱহাৰ কৰি চিত্ৰসমূহ তোলক বা ভিডিঅ'সমূহ ৰেকৰ্ড কৰক৷"</string>
     <string name="help_selecting_camera_mode">"কেমেৰা ম'ড চয়ন কৰি আছে"</string>
     <string name="help_taking_pictures">চিত্ৰ তুলিবলৈ</string>
     <string name="help_taking_pictures_tip_1">"আপুনি ফ'কাচলৈ আনিব বিচৰা অৱজেক্টটো টিপক৷"</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">কেমেৰা বুটাম টিপক আৰু আপোনাৰ ডিভাইচটো এটা দিশলৈ লাহে লাহে ঘুৰাওক৷</string>
     <string name="help_viewing_pics_and_videos_tip_1">"আপোনাৰ চিত্ৰ বা ভিডিঅ'সমূহ লোৱা বা ৰেকৰ্ড কৰাৰ পিছত দৰ্শন কৰিবলৈ %s টিপক৷"</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">"আপোনাৰ চিত্ৰ আৰু ভিডিঅ'সমূহ আপুনি তোলা বা ৰেকৰ্ড কৰাৰ ঠিক পিছতে দৰ্শন কৰিবলৈ ক্ষিপ্ৰ দৰ্শন বুটাম টিপক৷"</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">"চিত্ৰসমূহ আৰু ভিডিঅ'সমূহ দৰ্শন"</string>
     <string name="high_resolution_video_description">"ৰেকৰ্ডিং %s ৰিজ'লিউশ্বনত থকাৰ সময়ত নিম্নলিখিত উপলব্ধ নহ'ব:"</string>
     <string name="highlight">হাইলাইট</string>
@@ -431,7 +437,7 @@
     <string name="interaction_descrition_effect_and_watermark">উপলব্ধ কেমেৰা ফিল্টাৰ আৰু ৱাটাৰমাৰ্ক দৰ্শন কৰিবলৈ বাওঁফালে ঘহাঁওক।</string>
     <string name="interaction_descrition_mode">"উপলব্ধ কেমেৰা ম'ড দৰ্শন কৰিবলৈ সোঁফালে ঘহাঁওক।"</string>
     <string name="interaction_title_camera">কেমেৰা সলনি হৈ আছে</string>
-    <string name="interaction_title_effect">কেমেৰা ফিল্টাৰ দৰ্শন কৰি</string>
+    <string name="interaction_title_effect">কেমেৰা ফিল্টাৰ দৰ্শন কৰি আছে</string>
     <string name="interaction_title_effect_and_watermark">কেমেৰা ফিল্টাৰ আৰু ৱাটাৰমাৰ্ক দৰ্শন কৰি আছে</string>
     <string name="interaction_title_mode">"কেমেৰা ম'ড দৰ্শন কৰি আছে"</string>
     <string name="interactive_error_capture_warning">সঠিক দিশত লোৱা চিত্ৰসমূহ সংৰক্ষিত হৈছে৷</string>

@@ -156,7 +156,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->BASEMENU_GROUP_ICON_GAP:F
 
     .line 75
-    const v2, 0x7f0b034c
+    const v2, 0x7f0b034d
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -167,7 +167,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->SHUTTER_BUTTON_GAP_WITH_NAVIGATOR:F
 
     .line 76
-    const v2, 0x7f0b0150
+    const v2, 0x7f0b0151
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -178,7 +178,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->PAGE_NAVIGATOR_GROUP_WIDTH:F
 
     .line 77
-    const v2, 0x7f0b014e
+    const v2, 0x7f0b014f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -189,7 +189,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->PAGE_NAVIGATOR_GROUP_HEIGHT:F
 
     .line 78
-    const v2, 0x7f0b014f
+    const v2, 0x7f0b0150
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -204,7 +204,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->PAGE_NAVIGATOR_GROUP_LANDSCAPE_BOTTOM_PADDING:F
 
     .line 79
-    const v2, 0x7f0b0331
+    const v2, 0x7f0b0332
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -219,7 +219,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->PAGE_NAVIGATOR_GROUP_PORTRAIT_BOTTOM_PADDING:F
 
     .line 81
-    const v2, 0x7f0b01d8
+    const v2, 0x7f0b01d9
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -230,7 +230,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->SHUTTER_BUTTON_WIDTH:F
 
     .line 82
-    const v2, 0x7f0b01d7
+    const v2, 0x7f0b01d8
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -252,7 +252,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->SHUTTER_BUTTON_PROGRESS_WIDTH:F
 
     .line 84
-    const v2, 0x7f0b034d
+    const v2, 0x7f0b034e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -263,7 +263,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->SHUTTER_BUTTON_PORTRAIT_BOTTOM_PADDING:F
 
     .line 85
-    const v2, 0x7f0b01d1
+    const v2, 0x7f0b01d2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -274,7 +274,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->RECORDING_BUTTON_WIDTH:F
 
     .line 86
-    const v2, 0x7f0b034e
+    const v2, 0x7f0b034f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -285,7 +285,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->RECORDING_BUTTON_DIAMETER:F
 
     .line 87
-    const v2, 0x7f0b0360
+    const v2, 0x7f0b0361
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -330,7 +330,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->FLOATING_CAMERA_BUTTON_POS_Y:I
 
     .line 90
-    const v2, 0x7f0b0194
+    const v2, 0x7f0b0195
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -341,7 +341,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->SNAPSHOT_BUTTON_WIDTH:F
 
     .line 92
-    const v2, 0x7f0b01ce
+    const v2, 0x7f0b01cf
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -354,7 +354,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->SIDE_QUICK_SETTING_POS_X:I
 
     .line 93
-    const v2, 0x7f0b01cf
+    const v2, 0x7f0b01d0
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -367,7 +367,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->SIDE_QUICK_SETTING_POS_Y:I
 
     .line 94
-    const v2, 0x7f0b01d0
+    const v2, 0x7f0b01d1
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -397,7 +397,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->SIDE_QUICK_SETTING_HEIGHT:I
 
     .line 96
-    const v2, 0x7f0b006f
+    const v2, 0x7f0b0070
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -408,7 +408,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->CAPTURE_PROGRESS_TEXT_WIDTH:F
 
     .line 97
-    const v2, 0x7f0b006d
+    const v2, 0x7f0b006e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -419,7 +419,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/BaseMenu;->CAPTURE_PROGRESS_TEXT_HEIGHT:F
 
     .line 98
-    const v2, 0x7f0b006e
+    const v2, 0x7f0b006f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -693,7 +693,7 @@
 
     int-to-float v2, v2
 
-    const v3, 0x7f0b0103
+    const v3, 0x7f0b0104
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -923,7 +923,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a021a
+    const v6, 0x7f0a0220
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1102,7 +1102,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a00cc
+    const v6, 0x7f0a00ce
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1380,7 +1380,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a01ec
+    const v6, 0x7f0a01f2
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1726,7 +1726,7 @@
 
     const/16 v3, 0x1d4c
 
-    const v6, 0x7f0a0125
+    const v6, 0x7f0a0127
 
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -1752,7 +1752,7 @@
 
     const/16 v3, 0x1d4e
 
-    const v6, 0x7f0a00c9
+    const v6, 0x7f0a00cb
 
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -2318,7 +2318,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a021a
+    const v6, 0x7f0a0220
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2467,7 +2467,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a01ec
+    const v6, 0x7f0a01f2
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2631,7 +2631,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a01c8
+    const v6, 0x7f0a01ce
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3211,7 +3211,7 @@
 
     int-to-float v2, v2
 
-    const v3, 0x7f0b0105
+    const v3, 0x7f0b0106
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -3404,15 +3404,15 @@
     .prologue
     const/4 v1, 0x4
 
-    .line 1505
+    .line 1529
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mSideQuickSetting:Lcom/sec/android/app/camera/menu/SideQuickSetting;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/SideQuickSetting;->setVisibility(I)V
 
-    .line 1506
+    .line 1530
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/menu/BaseMenu;->unregisterEAM(I)V
 
-    .line 1507
+    .line 1531
     return-void
 .end method
 
@@ -3426,7 +3426,7 @@
 
     const/4 v6, 0x0
 
-    .line 1510
+    .line 1534
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isKNOXMode()Z
 
     move-result v1
@@ -3457,12 +3457,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 1529
+    .line 1553
     :cond_0
     :goto_0
     return-void
 
-    .line 1513
+    .line 1537
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -3488,7 +3488,7 @@
 
     if-nez v1, :cond_3
 
-    .line 1514
+    .line 1538
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
@@ -3496,20 +3496,20 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/menu/PageNavigator;->hidePage(I)V
 
-    .line 1516
+    .line 1540
     :cond_3
     iget-boolean v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mAttachMode:Z
 
     if-eqz v1, :cond_4
 
-    .line 1517
+    .line 1541
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
     const/16 v2, 0x1d4c
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/menu/PageNavigator;->hidePage(I)V
 
-    .line 1520
+    .line 1544
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
@@ -3525,7 +3525,7 @@
 
     invoke-virtual {v1, v7, v2}, Lcom/sec/android/app/camera/menu/PageNavigator;->setTitle(ILjava/lang/String;)V
 
-    .line 1522
+    .line 1546
     iget v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->SCREEN_WIDTH:I
 
     div-int/lit8 v1, v1, 0x2
@@ -3542,7 +3542,7 @@
 
     sub-int v0, v1, v2
 
-    .line 1524
+    .line 1548
     .local v0, "ratio_margin":I
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
@@ -3574,7 +3574,7 @@
 
     invoke-virtual {v1, v6, v2, v3}, Lcom/sec/android/app/camera/menu/PageNavigator;->setLeftTop(IFF)V
 
-    .line 1525
+    .line 1549
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
     const/4 v2, 0x2
@@ -3601,19 +3601,19 @@
 
     invoke-virtual {v1, v2, v3, v4}, Lcom/sec/android/app/camera/menu/PageNavigator;->setLeftTop(IFF)V
 
-    .line 1526
+    .line 1550
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/menu/PageNavigator;->updateLayout(Z)V
 
-    .line 1527
+    .line 1551
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
     invoke-virtual {v1, v7}, Lcom/sec/android/app/camera/menu/PageNavigator;->onPageSelected(I)V
 
-    .line 1528
+    .line 1552
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
     invoke-virtual {v1, v6, v6}, Lcom/sec/android/app/camera/menu/PageNavigator;->setVisibility(IZ)V
@@ -3625,14 +3625,14 @@
     .locals 2
 
     .prologue
-    .line 1532
+    .line 1556
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mSideQuickSetting:Lcom/sec/android/app/camera/menu/SideQuickSetting;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/SideQuickSetting;->setVisibility(I)V
 
-    .line 1533
+    .line 1557
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/16 v1, 0x19c
@@ -3653,12 +3653,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1534
+    .line 1558
     const/4 v0, 0x4
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/menu/BaseMenu;->registerEAM(I)V
 
-    .line 1536
+    .line 1560
     :cond_0
     return-void
 .end method
@@ -6895,21 +6895,102 @@
 
     .line 1396
     :cond_1
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mBottomVIButton:Lcom/samsung/android/glview/GLButton;
+
+    if-eqz v0, :cond_2
+
+    .line 1397
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mBottomVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->cancelAnimation()V
+
+    .line 1398
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mBottomVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/menu/BaseMenu;->removeView(Lcom/samsung/android/glview/GLView;)V
+
+    .line 1399
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mBottomVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLButton;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
+
+    .line 1400
+    iput-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mBottomParentView:Lcom/samsung/android/glview/GLView;
+
+    .line 1401
+    iput-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mBottomVIButton:Lcom/samsung/android/glview/GLButton;
+
+    .line 1403
+    :cond_2
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mMiddleVIButton:Lcom/samsung/android/glview/GLButton;
+
+    if-eqz v0, :cond_3
+
+    .line 1404
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mMiddleVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->cancelAnimation()V
+
+    .line 1405
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mMiddleVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/menu/BaseMenu;->removeView(Lcom/samsung/android/glview/GLView;)V
+
+    .line 1406
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mMiddleVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLButton;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
+
+    .line 1407
+    iput-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mMiddleParentView:Lcom/samsung/android/glview/GLView;
+
+    .line 1408
+    iput-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mMiddleVIButton:Lcom/samsung/android/glview/GLButton;
+
+    .line 1410
+    :cond_3
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mTopVIButton:Lcom/samsung/android/glview/GLButton;
+
+    if-eqz v0, :cond_4
+
+    .line 1411
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mTopVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->cancelAnimation()V
+
+    .line 1412
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mTopVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/menu/BaseMenu;->removeView(Lcom/samsung/android/glview/GLView;)V
+
+    .line 1413
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mTopVIButton:Lcom/samsung/android/glview/GLButton;
+
+    invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLButton;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
+
+    .line 1414
+    iput-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mTopParentView:Lcom/samsung/android/glview/GLView;
+
+    .line 1415
+    iput-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mTopVIButton:Lcom/samsung/android/glview/GLButton;
+
+    .line 1418
+    :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLButton;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1397
+    .line 1419
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mRecordingButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLButton;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1399
+    .line 1421
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mRecordingButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->resetTranslate()V
 
-    .line 1400
+    .line 1422
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mRecordingButton:Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->RECORDING_BUTTON_WIDTH:F
@@ -6918,17 +6999,17 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLButton;->setSize(FF)V
 
-    .line 1401
+    .line 1423
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mRecordingButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setAlpha(F)V
 
-    .line 1403
+    .line 1425
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->resetTranslate()V
 
-    .line 1404
+    .line 1426
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterButton:Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->SHUTTER_BUTTON_WIDTH:F
@@ -6949,70 +7030,70 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLButton;->setSize(FF)V
 
-    .line 1405
+    .line 1427
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setAlpha(F)V
 
-    .line 1406
+    .line 1428
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLButton;->setPressed(Z)V
 
-    .line 1408
+    .line 1430
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterProgressWheel:Lcom/sec/android/app/camera/widget/gl/ProgressWheel;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/ProgressWheel;->isVisible()I
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_5
 
-    .line 1409
+    .line 1431
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BaseMenu;->endShutterProgressWheel()V
 
-    .line 1412
-    :cond_2
+    .line 1434
+    :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_6
 
-    .line 1413
+    .line 1435
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mPageNavigator:Lcom/sec/android/app/camera/menu/PageNavigator;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/PageNavigator;->setVisibility(I)V
 
-    .line 1416
-    :cond_3
+    .line 1438
+    :cond_6
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_FLOATING_CAMERA_BUTTON:Z
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_7
 
-    .line 1417
+    .line 1439
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mFloatingCameraButton:Lcom/sec/android/app/camera/widget/gl/FloatingButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/FloatingButton;->getVisibility()I
 
     move-result v0
 
-    if-nez v0, :cond_4
+    if-nez v0, :cond_7
 
-    .line 1418
+    .line 1440
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mFloatingCameraButton:Lcom/sec/android/app/camera/widget/gl/FloatingButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1, v4}, Lcom/sec/android/app/camera/widget/gl/FloatingButton;->setVisibility(IZ)V
 
-    .line 1421
-    :cond_4
+    .line 1443
+    :cond_7
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mOverlayHelp:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/menu/OverlayHelp;->hideHelp(Z)V
 
-    .line 1422
+    .line 1444
     return-void
 .end method
 
@@ -7021,7 +7102,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1427
+    .line 1449
     return-void
 .end method
 
@@ -7030,7 +7111,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1432
+    .line 1454
     return-void
 .end method
 
@@ -7040,7 +7121,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 1436
+    .line 1458
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mOverlayHelp:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->isShowing()Z
@@ -7057,10 +7138,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 1437
+    .line 1459
     const/4 v0, 0x1
 
-    .line 1439
+    .line 1461
     :goto_0
     return v0
 
@@ -7217,7 +7298,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 1444
+    .line 1466
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mOverlayHelp:Lcom/sec/android/app/camera/menu/OverlayHelp;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/OverlayHelp;->isShowing()Z
@@ -7234,10 +7315,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 1445
+    .line 1467
     const/4 v0, 0x1
 
-    .line 1447
+    .line 1469
     :goto_0
     return v0
 
@@ -7492,28 +7573,28 @@
     .locals 5
 
     .prologue
-    .line 1452
+    .line 1474
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mOverlayLayout:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setFocusChangeListener(Lcom/sec/android/app/camera/interfaces/CameraContext$FocusStateListener;)V
 
-    .line 1454
+    .line 1476
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLButton;->isDim()Z
 
     move-result v2
 
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_5
 
-    .line 1455
+    .line 1477
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mRecordingButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
-    .line 1461
+    .line 1483
     :cond_0
     :goto_0
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterProgressWheel:Lcom/sec/android/app/camera/widget/gl/ProgressWheel;
@@ -7524,20 +7605,20 @@
 
     if-nez v2, :cond_1
 
-    .line 1462
+    .line 1484
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterProgressWheel:Lcom/sec/android/app/camera/widget/gl/ProgressWheel;
 
     const/4 v3, 0x4
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/ProgressWheel;->setVisibility(I)V
 
-    .line 1465
+    .line 1487
     :cond_1
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_FLOATING_CAMERA_BUTTON:Z
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_3
 
-    .line 1466
+    .line 1488
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -7552,7 +7633,7 @@
 
     move-result v0
 
-    .line 1467
+    .line 1489
     .local v0, "savePosX":I
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -7568,8 +7649,41 @@
 
     move-result v1
 
-    .line 1469
+    .line 1491
     .local v1, "savePosY":I
+    const-string v2, "BaseMenu"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "floating camera button savePosX: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, ", posY:"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1493
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getShootingModeFeature()Lcom/sec/android/app/camera/interfaces/ShootingModeFeature;
@@ -7580,18 +7694,18 @@
 
     move-result v2
 
-    if-eqz v2, :cond_2
+    if-eqz v2, :cond_3
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mFloatingCameraButton:Lcom/sec/android/app/camera/widget/gl/FloatingButton;
 
-    .line 1470
+    .line 1494
     invoke-virtual {v2}, Lcom/sec/android/app/camera/widget/gl/FloatingButton;->getCurrentLeft()F
 
     move-result v2
 
     float-to-int v2, v2
 
-    if-eq v2, v0, :cond_2
+    if-ne v2, v0, :cond_2
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mFloatingCameraButton:Lcom/sec/android/app/camera/widget/gl/FloatingButton;
 
@@ -7601,9 +7715,10 @@
 
     float-to-int v2, v2
 
-    if-eq v2, v1, :cond_2
+    if-eq v2, v1, :cond_3
 
-    .line 1471
+    .line 1495
+    :cond_2
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mFloatingCameraButton:Lcom/sec/android/app/camera/widget/gl/FloatingButton;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mFloatingCameraButton:Lcom/sec/android/app/camera/widget/gl/FloatingButton;
@@ -7632,10 +7747,10 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/sec/android/app/camera/widget/gl/FloatingButton;->moveBaseLayout(FF)V
 
-    .line 1475
+    .line 1499
     .end local v0    # "savePosX":I
     .end local v1    # "savePosY":I
-    :cond_2
+    :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -7656,14 +7771,14 @@
 
     const/4 v3, 0x1
 
-    if-ne v2, v3, :cond_3
+    if-ne v2, v3, :cond_4
 
-    .line 1476
+    .line 1500
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mAssistantMenu:Lcom/sec/android/app/camera/menu/EnhancedAssistant;
 
-    if-nez v2, :cond_3
+    if-nez v2, :cond_4
 
-    .line 1477
+    .line 1501
     new-instance v2, Lcom/sec/android/app/camera/menu/EnhancedAssistant;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -7674,8 +7789,8 @@
 
     iput-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mAssistantMenu:Lcom/sec/android/app/camera/menu/EnhancedAssistant;
 
-    .line 1482
-    :cond_3
+    .line 1506
+    :cond_4
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BaseMenu;->getMenuViewGroup()Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v2
@@ -7684,7 +7799,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1483
+    .line 1507
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BaseMenu;->getMenuViewGroup()Lcom/samsung/android/glview/GLViewGroup;
 
     move-result-object v2
@@ -7693,11 +7808,11 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setAlpha(F)V
 
-    .line 1484
+    .line 1508
     return-void
 
-    .line 1457
-    :cond_4
+    .line 1479
+    :cond_5
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
@@ -7718,7 +7833,7 @@
 
     if-nez v2, :cond_0
 
-    .line 1458
+    .line 1480
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/BaseMenu;->mShutterButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
@@ -7731,7 +7846,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1489
+    .line 1513
     return-void
 .end method
 
@@ -7740,7 +7855,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 1494
+    .line 1518
     return-void
 .end method
 
@@ -8168,31 +8283,31 @@
     .param p2, "shootingModeControllerLayout"    # Lcom/samsung/android/glview/GLViewGroup;
 
     .prologue
-    .line 1498
+    .line 1522
     monitor-enter p0
 
     :try_start_0
     invoke-super {p0, p1, p2}, Lcom/sec/android/app/camera/menu/AbstractBaseMenu;->setShootingModeView(Lcom/samsung/android/glview/GLViewGroup;Lcom/samsung/android/glview/GLViewGroup;)V
 
-    .line 1499
+    .line 1523
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BaseMenu;->resetView()V
 
-    .line 1500
+    .line 1524
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/BaseMenu;->resetPageNavigatorItem()V
 
-    .line 1501
+    .line 1525
     const/16 v0, 0x200
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/menu/BaseMenu;->hideView(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1502
+    .line 1526
     monitor-exit p0
 
     return-void
 
-    .line 1498
+    .line 1522
     :catchall_0
     move-exception v0
 

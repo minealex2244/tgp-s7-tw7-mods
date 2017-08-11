@@ -46,12 +46,12 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 10317
+    .line 10398
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10321
+    .line 10402
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     const/4 v1, 0x3
@@ -60,7 +60,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mBuffersHeap:Ljava/util/concurrent/ConcurrentHashMap;
 
-    .line 10322
+    .line 10403
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mPreviewCallbackFormat:I
@@ -73,15 +73,15 @@
     .param p1, "buf"    # [B
 
     .prologue
-    .line 10371
+    .line 10452
     if-nez p1, :cond_1
 
-    .line 10377
+    .line 10458
     :cond_0
     :goto_0
     return-void
 
-    .line 10373
+    .line 10454
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mBuffersHeap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -91,7 +91,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 10376
+    .line 10457
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mBuffersHeap:Ljava/util/concurrent/ConcurrentHashMap;
 
     sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
@@ -107,17 +107,17 @@
     .locals 1
 
     .prologue
-    .line 10325
+    .line 10406
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mPreviewCallbackFormat:I
 
-    .line 10326
+    .line 10407
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mBuffersHeap:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
 
-    .line 10327
+    .line 10408
     return-void
 .end method
 
@@ -125,7 +125,7 @@
     .locals 1
 
     .prologue
-    .line 10330
+    .line 10411
     iget v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mPreviewCallbackFormat:I
 
     return v0
@@ -140,18 +140,18 @@
     .prologue
     const-wide v4, 0x3ff028f5c28f5c29L    # 1.01
 
-    .line 10334
+    .line 10415
     iput p3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mPreviewCallbackFormat:I
 
-    .line 10335
+    .line 10416
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mBuffersHeap:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v2}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
 
-    .line 10337
+    .line 10418
     const/4 v1, 0x0
 
-    .line 10338
+    .line 10419
     .local v1, "size":I
     iget v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mPreviewCallbackFormat:I
 
@@ -159,7 +159,7 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 10339
+    .line 10420
     mul-int v2, p1, p2
 
     mul-int/lit8 v2, v2, 0x4
@@ -170,7 +170,7 @@
 
     double-to-int v1, v2
 
-    .line 10343
+    .line 10424
     :goto_0
     const/4 v0, 0x0
 
@@ -180,7 +180,7 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 10344
+    .line 10425
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mBuffersHeap:Ljava/util/concurrent/ConcurrentHashMap;
 
     new-array v3, v1, [B
@@ -189,12 +189,12 @@
 
     invoke-virtual {v2, v3, v4}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10343
+    .line 10424
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 10341
+    .line 10422
     .end local v0    # "i":I
     :cond_0
     mul-int v2, p1, p2
@@ -215,7 +215,7 @@
 
     goto :goto_0
 
-    .line 10346
+    .line 10427
     .restart local v0    # "i":I
     :cond_1
     return-void
@@ -227,21 +227,21 @@
     .param p2, "arg1"    # Lcom/samsung/android/camera/core/SemCamera;
 
     .prologue
-    .line 10350
+    .line 10431
     const-string v0, "PreviewCallbackManager"
 
     const-string v1, "onPreviewFrame"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10352
+    .line 10433
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v0, :cond_0
 
-    .line 10353
+    .line 10434
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -260,14 +260,14 @@
 
     invoke-virtual {v0, v1, v2, p1}, Lcom/samsung/android/glview/GLContext;->setPreviewData(II[B)V
 
-    .line 10355
+    .line 10436
     :cond_0
     invoke-virtual {p0, p2}, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->setPreviewBuffer(Lcom/samsung/android/camera/core/SemCamera;)V
 
-    .line 10356
+    .line 10437
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->releasePreviewBuffer([B)V
 
-    .line 10357
+    .line 10438
     return-void
 .end method
 
@@ -276,10 +276,10 @@
     .param p1, "arg1"    # Lcom/samsung/android/camera/core/SemCamera;
 
     .prologue
-    .line 10360
+    .line 10441
     if-eqz p1, :cond_1
 
-    .line 10361
+    .line 10442
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$SemCameraPreviewCallbackManager;->mBuffersHeap:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
@@ -304,7 +304,7 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 10362
+    .line 10443
     .local v0, "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<[BLjava/lang/Boolean;>;"
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -318,12 +318,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 10363
+    .line 10444
     sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     invoke-interface {v0, v1}, Ljava/util/Map$Entry;->setValue(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10364
+    .line 10445
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -334,7 +334,7 @@
 
     goto :goto_0
 
-    .line 10368
+    .line 10449
     .end local v0    # "entry":Ljava/util/Map$Entry;, "Ljava/util/Map$Entry<[BLjava/lang/Boolean;>;"
     :cond_1
     return-void

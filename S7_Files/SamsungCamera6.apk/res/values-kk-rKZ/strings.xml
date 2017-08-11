@@ -188,6 +188,8 @@
     <string name="SM_SLOW_VIDEO_description">Баяу әрекетте көру үшін бейнелерді жоғары кадр жиілігінде жазыңыз. Әр бейненің көрсетілген бөлігін жазғаннан кейін баяу әрекетте ойнатуға болады.</string>
     <string name="SM_SMART_SELFSHOT">Артқы камера селфиі</string>
     <string name="SM_SMART_SELFSHOT_description">Автопортрет түсірілген кезде артқы камера автоматты түрде бетіңізді анықтап, фокусқа алады.</string>
+    <string name="SM_SOCIAL">Әлеуметтік</string>
+    <string name="SM_SOCIAL_description">Суреттерге түсіріп, оларды әлеуметтік желілерде оңай бөлісіңіз.</string>
     <string name="SM_SPORTS">Спорт</string>
     <string name="SM_SPORTS_SCENE_description">Жылдам қозғалатын нысандарды анық суретке түсіріңіз.</string>
     <string name="SM_STORY">Дыбыс және кадр</string>
@@ -260,7 +262,7 @@
     <string name="Title_Viewmode">Толық экран көрін. (16:9)</string>
     <string name="Title_Voice_Capture">Дауыспен басқару</string>
     <string name="Title_Voice_guide">Дыбыстық нұсқау</string>
-    <string name="Title_Volume_Key_As">Дыбыс клавишасы</string>
+    <string name="Title_Volume_Key_As">Дыбыс деңгейі пернесі функциясы</string>
     <string name="Title_WhiteBalance">Ақ түс балансы</string>
     <string name="Title_common">Жалпы</string>
     <string name="Title_front">Алдыңғы камера</string>
@@ -392,7 +394,10 @@
     <string name="guideline_square">Квадрат</string>
     <string name="help_change_mode_tip_1">Қолжетімді камера режимдерін көру үшін, оңға қарай сипаңыз.</string>
     <string name="help_change_mode_tip_2">Пайдаланғыңыз келетін режимді таңдаңыз.</string>
+    <string name="help_change_mode_tip_3">Жеңіл режим қосулы кезде тек “Автоматты” және “Селфи” камера режимдері ғана қолжетімді.</string>
     <string name="help_changing_the_camera_mode">Камера режимдерін таңдау</string>
+    <string name="help_changing_the_camera_mode_header">Камера режимін таңдау</string>
+    <string name="help_changing_the_camera_mode_title">Камера режимін өзгерту</string>
     <string name="help_recording_videos">Бейнелер жазу</string>
     <string name="help_recording_videos_tip_1">%s түртіңіз.</string>
     <string name="help_recording_videos_tip_1_tts">“Бейнекамера” түймесін түртіңіз.</string>
@@ -400,7 +405,7 @@
     <string name="help_recording_videos_tip_2_tts">Жазуды тоқтату үшін, “Тоқтату” түймесін түртіңіз.</string>
     <string name="help_recording_videos_tip_snapshot">Бейнені жазу кезінде суретке түсіру үшін %s түртіңіз.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Бейнені жазу кезінде суретке түсіру үшін камера түймесін түртіңіз.</string>
-    <string name="help_section_summary">Барлық жағдайға сәйкес келетін әртүрлі әсерлердің көмегімен суретке түсіріңіз немесе бейнелерді жазыңыз. Тек авто және селфи камера режимдері қолжетімді және жеңіл режим өшірілмегенше, әсерлер қолжетімсіз болады.</string>
+    <string name="help_section_summary">Барлық жағдайға сәйкес келетін әртүрлі әсерлердің көмегімен суретке түсіріңіз немесе бейнелерді жазыңыз.</string>
     <string name="help_selecting_camera_mode">Камера режимдерін таңдау</string>
     <string name="help_taking_pictures">Суретке түсіру</string>
     <string name="help_taking_pictures_tip_1">Фокусқа апарғыңыз келетін нысанды түртіңіз.</string>
@@ -415,6 +420,7 @@
     <string name="help_text_wideselfie">Камера түймесін түртіп, құрылғыңызды бір бағытта ақырын айналдырыңыз.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Суреттеріңіз бен бейнелеріңізді түсіргеннен кейін оларды бірден көру үшін, %s түртіңіз.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Суретке түсіргеннен немесе жазып алғаннан кейін дереу көру үшін жылдам көру түймесін басыңыз.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Суреттер мен бейнелерді көру</string>
     <string name="high_resolution_video_description">%s ажыратымдылықта жазу кезінде, келесі қолжетімсіз болады:</string>
     <string name="highlight">Жарық әсерлері</string>

@@ -135,7 +135,7 @@
     invoke-direct {p0, v0, p3, p4}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 67
-    const v0, 0x7f0b032b
+    const v0, 0x7f0b032c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_PAGER_TOP_MARGIN_LAND:I
 
     .line 71
-    const v0, 0x7f0b0329
+    const v0, 0x7f0b032a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -190,7 +190,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_IMAGE_TOP_MARGIN_PORT:I
 
     .line 72
-    const v0, 0x7f0b0327
+    const v0, 0x7f0b0328
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -201,7 +201,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_IMAGE_TOP_MARGIN_LAND:I
 
     .line 73
-    const v0, 0x7f0b0328
+    const v0, 0x7f0b0329
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -212,7 +212,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_IMAGE_BOTTOM_MARGIN_PORT:I
 
     .line 74
-    const v0, 0x7f0b0326
+    const v0, 0x7f0b0327
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -223,7 +223,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_IMAGE_BOTTOM_MARGIN_LAND:I
 
     .line 75
-    const v0, 0x7f0b031d
+    const v0, 0x7f0b031e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -234,7 +234,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_DESCRIPTION_HEIGHT_PORT:I
 
     .line 76
-    const v0, 0x7f0b031c
+    const v0, 0x7f0b031d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -245,7 +245,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_DESCRIPTION_HEIGHT_LAND:I
 
     .line 77
-    const v0, 0x7f0b0325
+    const v0, 0x7f0b0326
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -256,7 +256,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_TITLE_TOP_MARGIN_PORT:I
 
     .line 78
-    const v0, 0x7f0b0323
+    const v0, 0x7f0b0324
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -267,7 +267,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_TITLE_TOP_MARGIN_LAND:I
 
     .line 79
-    const v0, 0x7f0b0324
+    const v0, 0x7f0b0325
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -278,7 +278,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_TITLE_TOP_MARGIN_FOR_MOBILE_KEYBOARD:I
 
     .line 80
-    const v0, 0x7f0b031f
+    const v0, 0x7f0b0320
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -289,7 +289,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_IMAGE_TOP_MARGIN_PORT:I
 
     .line 81
-    const v0, 0x7f0b031e
+    const v0, 0x7f0b031f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -300,7 +300,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_IMAGE_TOP_MARGIN_LAND:I
 
     .line 82
-    const v0, 0x7f0b0322
+    const v0, 0x7f0b0323
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -311,7 +311,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_TEXT_TOP_MARGIN_PORT:I
 
     .line 83
-    const v0, 0x7f0b0321
+    const v0, 0x7f0b0322
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -322,7 +322,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->HRM_SENSOR_CAPTURE_TEXT_TOP_MARGIN_LAND:I
 
     .line 84
-    const v0, 0x7f0b0320
+    const v0, 0x7f0b0321
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -344,7 +344,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->INTERACTION_PAGE_INDICATOR_BOTTOM_MARGIN_PORT:I
 
     .line 86
-    const v0, 0x7f0b032a
+    const v0, 0x7f0b032b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -366,7 +366,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->BUTTON_BOTTOM_MARGIN_PORT:I
 
     .line 88
-    const v0, 0x7f0b0319
+    const v0, 0x7f0b031a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -377,7 +377,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->BUTTON_BOTTOM_MARGIN_LAND:I
 
     .line 89
-    const v0, 0x7f0b031a
+    const v0, 0x7f0b031b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -388,7 +388,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->BUTTON_END_MARGIN_LAND:I
 
     .line 90
-    const v0, 0x7f0b031b
+    const v0, 0x7f0b031c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -450,7 +450,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f100031
+    const v1, 0x7f100033
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
@@ -901,7 +901,7 @@
     invoke-virtual {v1, v6}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 332
-    const v6, 0x7f100028
+    const v6, 0x7f10002a
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -927,7 +927,7 @@
     if-eqz v6, :cond_0
 
     .line 345
-    const v6, 0x7f100024
+    const v6, 0x7f100026
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -953,7 +953,7 @@
     invoke-virtual {v5, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 350
-    const v6, 0x7f100026
+    const v6, 0x7f100028
 
     invoke-virtual {v1, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1060,7 +1060,7 @@
     invoke-virtual {v1, v5}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 394
-    const v5, 0x7f10002d
+    const v5, 0x7f10002f
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1090,7 +1090,7 @@
     iput-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->mViewPagerAdapter:Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;
 
     .line 425
-    const v5, 0x7f10002e
+    const v5, 0x7f100030
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1172,7 +1172,7 @@
     invoke-direct {p0, v5}, Lcom/sec/android/app/camera/menu/OverlayHelp;->updatePageIndicator(I)V
 
     .line 440
-    const v5, 0x7f10002c
+    const v5, 0x7f10002e
 
     invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1276,7 +1276,7 @@
     .line 496
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->mPalmCaptureGuideView:Landroid/view/View;
 
-    const v5, 0x7f100038
+    const v5, 0x7f10003a
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1304,7 +1304,7 @@
     .line 509
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->mPalmCaptureGuideView:Landroid/view/View;
 
-    const v5, 0x7f100036
+    const v5, 0x7f100038
 
     invoke-virtual {v4, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1642,11 +1642,11 @@
     .param p1, "orientation"    # I
 
     .prologue
-    const v10, 0x7f100026
+    const v10, 0x7f100028
 
-    const v9, 0x7f100025
+    const v9, 0x7f100027
 
-    const v6, 0x7f100024
+    const v6, 0x7f100026
 
     const/16 v8, 0x15
 
@@ -1745,7 +1745,7 @@
     .line 559
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->mHRMSensorCaptureGuideView:Landroid/view/View;
 
-    const v6, 0x7f100028
+    const v6, 0x7f10002a
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1878,7 +1878,7 @@
     iput v5, v2, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 580
-    const v5, 0x7f0b032c
+    const v5, 0x7f0b032d
 
     invoke-static {v5}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1894,7 +1894,7 @@
     .line 583
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->mHRMSensorCaptureGuideView:Landroid/view/View;
 
-    const v6, 0x7f100028
+    const v6, 0x7f10002a
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1942,7 +1942,7 @@
     .param p1, "orientation"    # I
 
     .prologue
-    const v6, 0x7f10002d
+    const v6, 0x7f10002f
 
     const/16 v5, 0x15
 
@@ -2180,11 +2180,11 @@
     .param p1, "orientation"    # I
 
     .prologue
-    const v10, 0x7f100036
+    const v10, 0x7f100038
 
-    const v9, 0x7f100035
+    const v9, 0x7f100037
 
-    const v6, 0x7f100034
+    const v6, 0x7f100036
 
     const/16 v8, 0x15
 
@@ -2278,7 +2278,7 @@
     .line 650
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->mPalmCaptureGuideView:Landroid/view/View;
 
-    const v6, 0x7f100038
+    const v6, 0x7f10003a
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2416,7 +2416,7 @@
     .line 673
     iget-object v5, p0, Lcom/sec/android/app/camera/menu/OverlayHelp;->mPalmCaptureGuideView:Landroid/view/View;
 
-    const v6, 0x7f100038
+    const v6, 0x7f10003a
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

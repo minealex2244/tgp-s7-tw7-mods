@@ -1356,7 +1356,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b005f
+    const v5, 0x7f0b0060
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -1787,7 +1787,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b020c
+    const v5, 0x7f0b020d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -2051,7 +2051,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b020c
+    const v5, 0x7f0b020d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -2487,7 +2487,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b0209
+    const v5, 0x7f0b020a
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -2530,7 +2530,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b0209
+    const v5, 0x7f0b020a
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -2579,7 +2579,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b0144
+    const v5, 0x7f0b0145
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -2630,7 +2630,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b0144
+    const v5, 0x7f0b0145
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -2933,7 +2933,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b020c
+    const v5, 0x7f0b020d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -2996,7 +2996,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b020c
+    const v5, 0x7f0b020d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -3052,7 +3052,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b020c
+    const v5, 0x7f0b020d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -3113,7 +3113,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b020c
+    const v5, 0x7f0b020d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -3176,7 +3176,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b020c
+    const v5, 0x7f0b020d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -3232,7 +3232,7 @@
 
     iget-object v4, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v5, 0x7f0b020c
+    const v5, 0x7f0b020d
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -3865,7 +3865,7 @@
     if-eqz v4, :cond_7
 
     .line 1098
-    const v4, 0x7f0b00b4
+    const v4, 0x7f0b00b5
 
     invoke-static {v4}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4072,7 +4072,7 @@
 
     iget-object v6, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v7, 0x7f0b0209
+    const v7, 0x7f0b020a
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -4119,7 +4119,7 @@
 
     iget-object v6, v0, Lcom/sec/android/app/camera/menu/VisualInteraction;->mResources:Landroid/content/res/Resources;
 
-    const v7, 0x7f0b0144
+    const v7, 0x7f0b0145
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getDimension(I)F
 

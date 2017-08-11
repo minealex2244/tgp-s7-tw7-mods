@@ -76,7 +76,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProgressWheel;->RIM_COLOR:I
 
     .line 42
-    const v0, 0x7f0b015e
+    const v0, 0x7f0b015f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -121,7 +121,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProgressWheel;->SHUTTER_BGCOLOR:I
 
     .line 47
-    const v0, 0x7f0b015f
+    const v0, 0x7f0b0160
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -330,7 +330,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProgressWheel;->RIM_COLOR:I
 
     .line 42
-    const v0, 0x7f0b015e
+    const v0, 0x7f0b015f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -375,7 +375,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProgressWheel;->SHUTTER_BGCOLOR:I
 
     .line 47
-    const v0, 0x7f0b015f
+    const v0, 0x7f0b0160
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

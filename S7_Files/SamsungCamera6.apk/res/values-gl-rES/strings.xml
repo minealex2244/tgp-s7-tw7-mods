@@ -190,6 +190,8 @@ Toma en panorámica: captura a sensación de movemento cando tomes imaxes de obx
     <string name="SM_SLOW_VIDEO_description">Grava vídeos a unha velocidade de fotogramas elevada a cámara lenta. Podes reproducir unha sección específica de cada vídeo a cámara lenta tras gravalos.</string>
     <string name="SM_SMART_SELFSHOT">Selfie coa cámara traseira</string>
     <string name="SM_SMART_SELFSHOT_description">A cámara posterior detectará e enfocará automaticamente a túa cara cando tomes autorretratos.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Toma imaxes e compárteas facilmente en redes sociais.</string>
     <string name="SM_SPORTS">Deportes</string>
     <string name="SM_SPORTS_SCENE_description">Toma imaxes máis claras de suxeitos en movemento a gran velocidade.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -393,7 +395,10 @@ formas"</string>
     <string name="guideline_square">Cadrado</string>
     <string name="help_change_mode_tip_1">Pasa o dedo á dereita para ver os modos de cámara dispoñibles.</string>
     <string name="help_change_mode_tip_2">Selecciona o modo que desexas utilizar.</string>
+    <string name="help_change_mode_tip_3">Co modo Fácil activado só están dispoñibles os modos de cámara Automático e Selfie.</string>
     <string name="help_changing_the_camera_mode">Selección dos modos de cámara</string>
+    <string name="help_changing_the_camera_mode_header">Selección do modo de cámara</string>
+    <string name="help_changing_the_camera_mode_title">Cambio do modo de cámara</string>
     <string name="help_recording_videos">Gravación de vídeos</string>
     <string name="help_recording_videos_tip_1">Toca %s.</string>
     <string name="help_recording_videos_tip_1_tts">Toca o botón da videocámara.</string>
@@ -401,7 +406,7 @@ formas"</string>
     <string name="help_recording_videos_tip_2_tts">Toca o botón de parada para deter a gravación.</string>
     <string name="help_recording_videos_tip_snapshot">Toca %s para tomar imaxes mentres estás gravando vídeo.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Toca o botón da cámara para tomar imaxes mentres estás gravando vídeo.</string>
-    <string name="help_section_summary">Toma imaxes ou grava vídeos mediante unha ampla variedade de efectos diferentes adaptados a todas as situacións. Cando se atopa activado o modo Fácil, só están dispoñibles os modos de cámara Auto e Selfie e non se pode aplicar ningún efecto.</string>
+    <string name="help_section_summary">Toma imaxes ou grava vídeos cunha grande variedade de efectos diferentes adaptados a todas as ocasións.</string>
     <string name="help_selecting_camera_mode">Selección dos modos de cámara</string>
     <string name="help_taking_pictures">Toma de imaxes</string>
     <string name="help_taking_pictures_tip_1">Toca o obxecto que desexes enfocar.</string>
@@ -416,6 +421,7 @@ formas"</string>
     <string name="help_text_wideselfie">Toca o botón Cámara e xira o dispositivo lentamente nunha dirección.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Toca %s para ver as imaxes ou vídeos inmediatamente despois de tomalas ou gravalos.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Toca o botón de vista rápida para ver as imaxes ou vídeos inmediatamente despois de tomalas ou gravalos.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Visualiz. de imaxes e vídeos</string>
     <string name="high_resolution_video_description">As seguintes funcións non estarán dispoñibles durante a gravación con resolucións %s:</string>
     <string name="highlight">Elementos destacados</string>

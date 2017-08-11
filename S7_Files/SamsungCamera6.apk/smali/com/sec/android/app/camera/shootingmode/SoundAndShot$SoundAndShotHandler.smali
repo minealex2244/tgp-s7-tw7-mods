@@ -33,17 +33,17 @@
     .param p1, "soundAndShot"    # Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
     .prologue
-    .line 1334
+    .line 1344
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 1335
+    .line 1345
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->mSoundAndShot:Ljava/lang/ref/WeakReference;
 
-    .line 1336
+    .line 1346
     return-void
 .end method
 
@@ -52,7 +52,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     .prologue
-    .line 1331
+    .line 1341
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->clear()V
 
     return-void
@@ -62,12 +62,12 @@
     .locals 1
 
     .prologue
-    .line 1347
+    .line 1357
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->mSoundAndShot:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->clear()V
 
-    .line 1348
+    .line 1358
     return-void
 .end method
 
@@ -78,7 +78,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 1340
+    .line 1350
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->mSoundAndShot:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -87,15 +87,15 @@
 
     check-cast v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
 
-    .line 1341
+    .line 1351
     .local v0, "soundAndShot":Lcom/sec/android/app/camera/shootingmode/SoundAndShot;
     if-eqz v0, :cond_0
 
-    .line 1342
+    .line 1352
     # invokes: Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->handleMessage(Landroid/os/Message;)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->access$800(Lcom/sec/android/app/camera/shootingmode/SoundAndShot;Landroid/os/Message;)V
 
-    .line 1344
+    .line 1354
     :cond_0
     return-void
 .end method

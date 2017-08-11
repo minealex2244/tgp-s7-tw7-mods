@@ -26,27 +26,27 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 117
+    .line 119
     invoke-static {}, Landroid/os/Debug;->semIsProductDev()Z
 
     move-result v0
 
     sput-boolean v0, Lcom/sec/android/app/camera/util/Util;->DEBUG:Z
 
-    .line 120
+    .line 122
     const/4 v0, -0x1
 
     sput v0, Lcom/sec/android/app/camera/util/Util;->mDefaultDeviceOrientation:I
 
-    .line 121
+    .line 123
     const/high16 v0, 0x3f800000    # 1.0f
 
     sput v0, Lcom/sec/android/app/camera/util/Util;->DEFAULT_PADDING:F
 
-    .line 122
+    .line 124
     sput-boolean v1, Lcom/sec/android/app/camera/util/Util;->mIsSystemSoundMute:Z
 
-    .line 123
+    .line 125
     sput v1, Lcom/sec/android/app/camera/util/Util;->mRingerMode:I
 
     return-void
@@ -56,10 +56,10 @@
     .locals 0
 
     .prologue
-    .line 128
+    .line 130
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 129
+    .line 131
     return-void
 .end method
 
@@ -68,14 +68,14 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 133
+    .line 135
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "intent.stop.app-in-app"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 134
+    .line 136
     .local v0, "stopAppInAppIntent":Landroid/content/Intent;
     const-string v1, "stopFrom"
 
@@ -83,12 +83,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 135
+    .line 137
     sget-object v1, Landroid/os/UserHandle;->SEM_ALL:Landroid/os/UserHandle;
 
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 136
+    .line 138
     return-void
 .end method
 
@@ -98,31 +98,31 @@
     .param p1, "cv"    # Landroid/content/ContentValues;
 
     .prologue
-    .line 139
+    .line 141
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 140
+    .line 142
     .local v0, "featureIntent":Landroid/content/Intent;
     const-string v1, "com.samsung.android.providers.context.log.action.USE_APP_FEATURE_SURVEY"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 141
+    .line 143
     const-string v1, "data"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 142
+    .line 144
     const-string v1, "com.samsung.android.providers.context"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 143
+    .line 145
     invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 144
+    .line 146
     return-void
 .end method
 
@@ -132,31 +132,31 @@
     .param p1, "cvs"    # [Landroid/content/ContentValues;
 
     .prologue
-    .line 147
+    .line 149
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 148
+    .line 150
     .local v0, "featureIntent":Landroid/content/Intent;
     const-string v1, "com.samsung.android.providers.context.log.action.USE_MULTI_APP_FEATURE_SURVEY"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 149
+    .line 151
     const-string v1, "data"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 150
+    .line 152
     const-string v1, "com.samsung.android.providers.context"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 151
+    .line 153
     invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 152
+    .line 154
     return-void
 .end method
 
@@ -166,31 +166,31 @@
     .param p1, "cvs"    # [Landroid/content/ContentValues;
 
     .prologue
-    .line 155
+    .line 157
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 156
+    .line 158
     .local v0, "featureIntent":Landroid/content/Intent;
     const-string v1, "com.samsung.android.providers.context.log.action.REPORT_MULTI_APP_STATUS_SURVEY"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 157
+    .line 159
     const-string v1, "data"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 158
+    .line 160
     const-string v1, "com.samsung.android.providers.context"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 159
+    .line 161
     invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 160
+    .line 162
     return-void
 .end method
 
@@ -205,10 +205,10 @@
     .end annotation
 
     .prologue
-    .line 172
+    .line 174
     const/4 v3, 0x0
 
-    .line 173
+    .line 175
     .local v3, "value":I
     const/4 v0, 0x0
 
@@ -218,23 +218,23 @@
 
     if-ge v0, v4, :cond_1
 
-    .line 174
+    .line 176
     mul-int/lit8 v1, v0, 0x8
 
-    .line 175
+    .line 177
     .local v1, "shift":I
     add-int v4, v0, p1
 
     aget-byte v2, p0, v4
 
-    .line 176
+    .line 178
     .local v2, "tmp":I
     if-gez v2, :cond_0
 
-    .line 177
+    .line 179
     add-int/lit16 v2, v2, 0x100
 
-    .line 178
+    .line 180
     :cond_0
     and-int/lit16 v4, v2, 0xff
 
@@ -242,12 +242,12 @@
 
     add-int/2addr v3, v4
 
-    .line 173
+    .line 175
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 180
+    .line 182
     .end local v1    # "shift":I
     .end local v2    # "tmp":I
     :cond_1
@@ -260,10 +260,10 @@
     .param p1, "isFlip"    # Z
 
     .prologue
-    .line 184
+    .line 186
     move v0, p0
 
-    .line 185
+    .line 187
     .local v0, "rotation":I
     const-string v1, "Util"
 
@@ -287,7 +287,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 186
+    .line 188
     const/16 v1, 0x5a
 
     if-eq p0, v1, :cond_0
@@ -296,14 +296,14 @@
 
     if-ne p0, v1, :cond_1
 
-    .line 187
+    .line 189
     :cond_0
     if-eqz p1, :cond_2
 
-    .line 188
+    .line 190
     rem-int/lit16 v0, p0, 0x168
 
-    .line 189
+    .line 191
     const-string v1, "Util"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -326,18 +326,18 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 195
+    .line 197
     :cond_1
     :goto_0
     return v0
 
-    .line 191
+    .line 193
     :cond_2
     add-int/lit16 v1, p0, 0xb4
 
     rem-int/lit16 v0, v1, 0x168
 
-    .line 192
+    .line 194
     const-string v1, "Util"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -368,7 +368,7 @@
     .param p0, "value"    # Ljava/lang/Boolean;
 
     .prologue
-    .line 199
+    .line 201
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
@@ -390,10 +390,10 @@
     .locals 9
 
     .prologue
-    .line 204
+    .line 206
     const-string v3, "1"
 
-    .line 205
+    .line 207
     .local v3, "value":Ljava/lang/String;
     new-instance v2, Ljava/io/File;
 
@@ -401,7 +401,7 @@
 
     invoke-direct {v2, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 206
+    .line 208
     .local v2, "mGraphicConfig":Ljava/io/File;
     :try_start_0
     new-instance v1, Ljava/io/FileOutputStream;
@@ -415,7 +415,7 @@
     .local v1, "fOut":Ljava/io/FileOutputStream;
     const/4 v5, 0x0
 
-    .line 207
+    .line 209
     :try_start_1
     invoke-static {}, Ljava/nio/charset/Charset;->defaultCharset()Ljava/nio/charset/Charset;
 
@@ -439,13 +439,13 @@
 
     invoke-virtual {v1, v4, v6, v7}, Ljava/io/FileOutputStream;->write([BII)V
 
-    .line 208
+    .line 210
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->flush()V
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_3
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 209
+    .line 211
     if-eqz v1, :cond_0
 
     if-eqz v5, :cond_1
@@ -458,13 +458,13 @@
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_4
 
-    .line 216
+    .line 218
     .end local v1    # "fOut":Ljava/io/FileOutputStream;
     :cond_0
     :goto_0
     return-void
 
-    .line 209
+    .line 211
     .restart local v1    # "fOut":Ljava/io/FileOutputStream;
     :catch_0
     move-exception v4
@@ -482,7 +482,7 @@
     :catch_1
     move-exception v0
 
-    .line 210
+    .line 212
     .local v0, "e":Ljava/io/FileNotFoundException;
     const-string v4, "Util"
 
@@ -512,7 +512,7 @@
 
     goto :goto_0
 
-    .line 209
+    .line 211
     .end local v0    # "e":Ljava/io/FileNotFoundException;
     .restart local v1    # "fOut":Ljava/io/FileOutputStream;
     :cond_1
@@ -525,12 +525,12 @@
 
     goto :goto_0
 
-    .line 211
+    .line 213
     .end local v1    # "fOut":Ljava/io/FileOutputStream;
     :catch_2
     move-exception v0
 
-    .line 212
+    .line 214
     .local v0, "e":Ljava/io/IOException;
     const-string v4, "Util"
 
@@ -560,7 +560,7 @@
 
     goto :goto_0
 
-    .line 206
+    .line 208
     .end local v0    # "e":Ljava/io/IOException;
     .restart local v1    # "fOut":Ljava/io/FileOutputStream;
     :catch_3
@@ -571,7 +571,7 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 209
+    .line 211
     :catchall_0
     move-exception v5
 
@@ -603,12 +603,12 @@
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_2
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_4
 
-    .line 213
+    .line 215
     .end local v1    # "fOut":Ljava/io/FileOutputStream;
     :catch_4
     move-exception v0
 
-    .line 214
+    .line 216
     .local v0, "e":Ljava/lang/Exception;
     const-string v4, "Util"
 
@@ -638,7 +638,7 @@
 
     goto :goto_0
 
-    .line 209
+    .line 211
     .end local v0    # "e":Ljava/lang/Exception;
     .restart local v1    # "fOut":Ljava/io/FileOutputStream;
     :catch_5
@@ -671,7 +671,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 219
+    .line 221
     if-ne p0, v0, :cond_0
 
     :goto_0
@@ -690,28 +690,28 @@
     .param p2, "max"    # I
 
     .prologue
-    .line 229
+    .line 231
     if-le p0, p2, :cond_0
 
-    .line 233
+    .line 235
     .end local p2    # "max":I
     :goto_0
     return p2
 
-    .line 231
+    .line 233
     .restart local p2    # "max":I
     :cond_0
     if-ge p0, p1, :cond_1
 
     move p2, p1
 
-    .line 232
+    .line 234
     goto :goto_0
 
     :cond_1
     move p2, p0
 
-    .line 233
+    .line 235
     goto :goto_0
 .end method
 
@@ -720,14 +720,14 @@
     .param p0, "c"    # Ljava/io/Closeable;
 
     .prologue
-    .line 237
+    .line 239
     if-nez p0, :cond_0
 
-    .line 244
+    .line 246
     :goto_0
     return-void
 
-    .line 240
+    .line 242
     :cond_0
     :try_start_0
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
@@ -736,7 +736,7 @@
 
     goto :goto_0
 
-    .line 241
+    .line 243
     :catch_0
     move-exception v0
 
@@ -748,41 +748,41 @@
     .param p0, "orientation"    # I
 
     .prologue
-    .line 247
+    .line 249
     const/4 v0, 0x6
 
     if-ne p0, v0, :cond_0
 
-    .line 248
+    .line 250
     const/16 v0, 0x5a
 
-    .line 254
+    .line 256
     :goto_0
     return v0
 
-    .line 249
+    .line 251
     :cond_0
     const/4 v0, 0x3
 
     if-ne p0, v0, :cond_1
 
-    .line 250
+    .line 252
     const/16 v0, 0xb4
 
     goto :goto_0
 
-    .line 251
+    .line 253
     :cond_1
     const/16 v0, 0x8
 
     if-ne p0, v0, :cond_2
 
-    .line 252
+    .line 254
     const/16 v0, 0x10e
 
     goto :goto_0
 
-    .line 254
+    .line 256
     :cond_2
     const/4 v0, 0x0
 
@@ -794,10 +794,10 @@
     .param p0, "filepath"    # Ljava/lang/String;
 
     .prologue
-    .line 258
+    .line 260
     const/4 v9, 0x0
 
-    .line 259
+    .line 261
     .local v9, "result":Ljava/lang/String;
     if-eqz p0, :cond_8
 
@@ -811,7 +811,7 @@
 
     if-eqz v13, :cond_8
 
-    .line 260
+    .line 262
     const-string v13, "storage/emulated"
 
     const-string v14, "data/media"
@@ -822,12 +822,12 @@
 
     move-result-object v9
 
-    .line 261
+    .line 263
     new-instance v8, Ljava/io/File;
 
     invoke-direct {v8, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 262
+    .line 264
     .local v8, "directory":Ljava/io/File;
     invoke-virtual {v8}, Ljava/io/File;->exists()Z
 
@@ -835,24 +835,24 @@
 
     if-nez v13, :cond_7
 
-    .line 266
+    .line 268
     new-instance v1, Ljava/io/File;
 
     move-object/from16 v0, p0
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 268
+    .line 270
     .local v1, "camera":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v4
 
-    .line 269
+    .line 271
     .local v4, "dcim":Ljava/io/File;
     if-nez v4, :cond_0
 
-    .line 270
+    .line 272
     const-string v13, "Util"
 
     new-instance v14, Ljava/lang/StringBuilder;
@@ -879,17 +879,17 @@
 
     invoke-static {v13, v14}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 271
+    .line 273
     const/4 v13, 0x0
 
-    .line 320
+    .line 322
     .end local v1    # "camera":Ljava/io/File;
     .end local v4    # "dcim":Ljava/io/File;
     .end local v8    # "directory":Ljava/io/File;
     :goto_0
     return-object v13
 
-    .line 274
+    .line 276
     .restart local v1    # "camera":Ljava/io/File;
     .restart local v4    # "dcim":Ljava/io/File;
     .restart local v8    # "directory":Ljava/io/File;
@@ -898,11 +898,11 @@
 
     move-result-object v10
 
-    .line 275
+    .line 277
     .local v10, "root":Ljava/io/File;
     if-nez v10, :cond_1
 
-    .line 276
+    .line 278
     const-string v13, "Util"
 
     new-instance v14, Ljava/lang/StringBuilder;
@@ -929,30 +929,30 @@
 
     invoke-static {v13, v14}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 277
+    .line 279
     const/4 v13, 0x0
 
     goto :goto_0
 
-    .line 280
+    .line 282
     :cond_1
     const/4 v2, 0x0
 
-    .line 281
+    .line 283
     .local v2, "cameraString":Ljava/lang/String;
     const/4 v6, 0x0
 
-    .line 283
+    .line 285
     .local v6, "dcimString":Ljava/lang/String;
     invoke-virtual {v10}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v12
 
-    .line 284
+    .line 286
     .local v12, "root_files":[Ljava/io/File;
     if-nez v12, :cond_2
 
-    .line 285
+    .line 287
     const-string v13, "Util"
 
     new-instance v14, Ljava/lang/StringBuilder;
@@ -979,12 +979,12 @@
 
     invoke-static {v13, v14}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 286
+    .line 288
     const/4 v13, 0x0
 
     goto :goto_0
 
-    .line 289
+    .line 291
     :cond_2
     array-length v14, v12
 
@@ -995,7 +995,7 @@
 
     aget-object v11, v12, v13
 
-    .line 290
+    .line 292
     .local v11, "rootFile":Ljava/io/File;
     invoke-virtual {v11}, Ljava/io/File;->isDirectory()Z
 
@@ -1003,7 +1003,7 @@
 
     if-eqz v15, :cond_4
 
-    .line 291
+    .line 293
     invoke-virtual {v11}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v15
@@ -1016,23 +1016,23 @@
 
     if-nez v15, :cond_4
 
-    .line 292
+    .line 294
     invoke-virtual {v11}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 298
+    .line 300
     .end local v11    # "rootFile":Ljava/io/File;
     :cond_3
     invoke-virtual {v4}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v7
 
-    .line 299
+    .line 301
     .local v7, "dcim_files":[Ljava/io/File;
     if-nez v7, :cond_5
 
-    .line 300
+    .line 302
     const-string v13, "Util"
 
     new-instance v14, Ljava/lang/StringBuilder;
@@ -1059,12 +1059,12 @@
 
     invoke-static {v13, v14}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 301
+    .line 303
     const/4 v13, 0x0
 
     goto/16 :goto_0
 
-    .line 289
+    .line 291
     .end local v7    # "dcim_files":[Ljava/io/File;
     .restart local v11    # "rootFile":Ljava/io/File;
     :cond_4
@@ -1072,7 +1072,7 @@
 
     goto :goto_1
 
-    .line 304
+    .line 306
     .end local v11    # "rootFile":Ljava/io/File;
     .restart local v7    # "dcim_files":[Ljava/io/File;
     :cond_5
@@ -1085,7 +1085,7 @@
 
     aget-object v5, v7, v13
 
-    .line 305
+    .line 307
     .local v5, "dcimFile":Ljava/io/File;
     invoke-virtual {v5}, Ljava/io/File;->isDirectory()Z
 
@@ -1093,7 +1093,7 @@
 
     if-eqz v15, :cond_9
 
-    .line 306
+    .line 308
     invoke-virtual {v5}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v15
@@ -1106,19 +1106,19 @@
 
     if-nez v15, :cond_9
 
-    .line 307
+    .line 309
     invoke-virtual {v5}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 313
+    .line 315
     .end local v5    # "dcimFile":Ljava/io/File;
     :cond_6
     if-eqz v2, :cond_7
 
     if-eqz v6, :cond_7
 
-    .line 314
+    .line 316
     new-instance v13, Ljava/lang/StringBuilder;
 
     invoke-direct {v13}, Ljava/lang/StringBuilder;-><init>()V
@@ -1161,7 +1161,7 @@
 
     move-result-object v3
 
-    .line 315
+    .line 317
     .local v3, "convString":Ljava/lang/String;
     const-string v13, "storage/emulated"
 
@@ -1171,7 +1171,7 @@
 
     move-result-object v9
 
-    .line 318
+    .line 320
     .end local v1    # "camera":Ljava/io/File;
     .end local v2    # "cameraString":Ljava/lang/String;
     .end local v3    # "convString":Ljava/lang/String;
@@ -1219,10 +1219,10 @@
     :cond_8
     move-object v13, v9
 
-    .line 320
+    .line 322
     goto/16 :goto_0
 
-    .line 304
+    .line 306
     .restart local v1    # "camera":Ljava/io/File;
     .restart local v2    # "cameraString":Ljava/lang/String;
     .restart local v4    # "dcim":Ljava/io/File;
@@ -1245,42 +1245,42 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 324
+    .line 326
     const/16 v1, 0x5a
 
     if-ne p0, v1, :cond_1
 
-    .line 325
+    .line 327
     const/4 v0, 0x6
 
-    .line 333
+    .line 335
     :cond_0
     :goto_0
     return v0
 
-    .line 326
+    .line 328
     :cond_1
     const/16 v1, 0xb4
 
     if-ne p0, v1, :cond_2
 
-    .line 327
+    .line 329
     const/4 v0, 0x3
 
     goto :goto_0
 
-    .line 328
+    .line 330
     :cond_2
     const/16 v1, 0x10e
 
     if-ne p0, v1, :cond_3
 
-    .line 329
+    .line 331
     const/16 v0, 0x8
 
     goto :goto_0
 
-    .line 330
+    .line 332
     :cond_3
     const/16 v1, 0x168
 
@@ -1296,10 +1296,10 @@
     .param p0, "filepath"    # Ljava/lang/String;
 
     .prologue
-    .line 337
+    .line 339
     const/4 v0, 0x0
 
-    .line 338
+    .line 340
     .local v0, "result":Ljava/lang/String;
     if-eqz p0, :cond_0
 
@@ -1311,7 +1311,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 339
+    .line 341
     const-string v1, "data/media"
 
     const-string v2, "storage/emulated"
@@ -1320,7 +1320,7 @@
 
     move-result-object v0
 
-    .line 340
+    .line 342
     const-string v1, "Util"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1353,7 +1353,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 342
+    .line 344
     :cond_0
     return-object v0
 .end method
@@ -1364,7 +1364,7 @@
     .param p1, "outRotation"    # [Ljava/lang/Integer;
 
     .prologue
-    .line 355
+    .line 357
     if-eqz p0, :cond_0
 
     move-object/from16 v0, p0
@@ -1375,7 +1375,7 @@
 
     if-ge v14, v15, :cond_2
 
-    .line 356
+    .line 358
     :cond_0
     const-string v14, "Util"
 
@@ -1383,15 +1383,15 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 357
+    .line 359
     const/4 v2, 0x0
 
-    .line 460
+    .line 462
     :cond_1
     :goto_0
     return-object v2
 
-    .line 361
+    .line 363
     :cond_2
     const/4 v14, 0x0
 
@@ -1425,7 +1425,7 @@
 
     if-eq v14, v15, :cond_4
 
-    .line 362
+    .line 364
     :cond_3
     const-string v14, "Util"
 
@@ -1433,24 +1433,24 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 363
+    .line 365
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 366
+    .line 368
     :cond_4
     const/4 v13, 0x0
 
-    .line 367
+    .line 369
     .local v13, "width":I
     const/4 v6, 0x0
 
-    .line 368
+    .line 370
     .local v6, "height":I
     const/4 v10, 0x0
 
-    .line 371
+    .line 373
     .local v10, "rotation":I
     const/4 v14, 0x4
 
@@ -1461,7 +1461,7 @@
 
     move-result v13
 
-    .line 372
+    .line 374
     const/16 v14, 0x8
 
     move-object/from16 v0, p0
@@ -1470,7 +1470,7 @@
 
     move-result v6
 
-    .line 373
+    .line 375
     const/16 v14, 0x14
 
     move-object/from16 v0, p0
@@ -1481,7 +1481,7 @@
 
     move-result v10
 
-    .line 380
+    .line 382
     move-object/from16 v0, p0
 
     array-length v14, v0
@@ -1494,7 +1494,7 @@
 
     if-ge v14, v15, :cond_5
 
-    .line 381
+    .line 383
     const-string v14, "Util"
 
     new-instance v15, Ljava/lang/StringBuilder;
@@ -1527,16 +1527,16 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 382
+    .line 384
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 375
+    .line 377
     :catch_0
     move-exception v5
 
-    .line 376
+    .line 378
     .local v5, "ex":Ljava/lang/ArrayIndexOutOfBoundsException;
     const-string v14, "Util"
 
@@ -1544,12 +1544,12 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 377
+    .line 379
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 387
+    .line 389
     .end local v5    # "ex":Ljava/lang/ArrayIndexOutOfBoundsException;
     :cond_5
     :try_start_1
@@ -1561,7 +1561,7 @@
 
     move-result-object v2
 
-    .line 396
+    .line 398
     .local v2, "bmp":Landroid/graphics/Bitmap;
     move-object/from16 v0, p0
 
@@ -1573,7 +1573,7 @@
 
     move-result-object v1
 
-    .line 397
+    .line 399
     .local v1, "bbuf":Ljava/nio/ByteBuffer;
     const/16 v14, 0x20
 
@@ -1587,44 +1587,44 @@
 
     invoke-virtual {v1, v0, v14, v15}, Ljava/nio/ByteBuffer;->put([BII)Ljava/nio/ByteBuffer;
 
-    .line 398
+    .line 400
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 399
+    .line 401
     invoke-virtual {v2, v1}, Landroid/graphics/Bitmap;->copyPixelsFromBuffer(Ljava/nio/Buffer;)V
 
-    .line 400
+    .line 402
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 402
+    .line 404
     move v9, v13
 
-    .line 403
+    .line 405
     .local v9, "realWidth":I
     move v8, v6
 
-    .line 405
+    .line 407
     .local v8, "realHeight":I
     if-eqz v10, :cond_7
 
-    .line 407
+    .line 409
     const/4 v11, 0x0
 
-    .line 408
+    .line 410
     .local v11, "transX":I
     const/4 v12, 0x0
 
-    .line 410
+    .line 412
     .local v12, "transY":I
     :goto_1
     if-gez v10, :cond_6
 
-    .line 411
+    .line 413
     add-int/lit16 v10, v10, 0x168
 
     goto :goto_1
 
-    .line 388
+    .line 390
     .end local v1    # "bbuf":Ljava/nio/ByteBuffer;
     .end local v2    # "bmp":Landroid/graphics/Bitmap;
     .end local v8    # "realHeight":I
@@ -1634,7 +1634,7 @@
     :catch_1
     move-exception v7
 
-    .line 389
+    .line 391
     .local v7, "oom":Ljava/lang/OutOfMemoryError;
     const-string v14, "Util"
 
@@ -1642,12 +1642,12 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 390
+    .line 392
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 413
+    .line 415
     .end local v7    # "oom":Ljava/lang/OutOfMemoryError;
     .restart local v1    # "bbuf":Ljava/nio/ByteBuffer;
     .restart local v2    # "bmp":Landroid/graphics/Bitmap;
@@ -1662,22 +1662,22 @@
 
     if-ne v14, v15, :cond_8
 
-    .line 414
+    .line 416
     move v9, v6
 
-    .line 415
+    .line 417
     move v8, v13
 
-    .line 416
+    .line 418
     const/16 v10, -0x5a
 
-    .line 417
+    .line 419
     const/4 v11, 0x0
 
-    .line 418
+    .line 420
     move v12, v13
 
-    .line 437
+    .line 439
     :goto_2
     :try_start_2
     sget-object v14, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
@@ -1688,29 +1688,29 @@
 
     move-result-object v4
 
-    .line 445
+    .line 447
     .local v4, "cvBmp":Landroid/graphics/Bitmap;
     new-instance v3, Landroid/graphics/Canvas;
 
     invoke-direct {v3, v4}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 446
+    .line 448
     .local v3, "cv":Landroid/graphics/Canvas;
     invoke-virtual {v3}, Landroid/graphics/Canvas;->save()I
 
-    .line 447
+    .line 449
     int-to-float v14, v11
 
     int-to-float v15, v12
 
     invoke-virtual {v3, v14, v15}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 448
+    .line 450
     int-to-float v14, v10
 
     invoke-virtual {v3, v14}, Landroid/graphics/Canvas;->rotate(F)V
 
-    .line 449
+    .line 451
     const/4 v14, 0x0
 
     const/4 v15, 0x0
@@ -1721,16 +1721,16 @@
 
     invoke-virtual {v3, v2, v14, v15, v0}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 450
+    .line 452
     invoke-virtual {v3}, Landroid/graphics/Canvas;->restore()V
 
-    .line 452
+    .line 454
     const/4 v2, 0x0
 
-    .line 453
+    .line 455
     move-object v2, v4
 
-    .line 456
+    .line 458
     .end local v3    # "cv":Landroid/graphics/Canvas;
     .end local v4    # "cvBmp":Landroid/graphics/Bitmap;
     .end local v11    # "transX":I
@@ -1744,7 +1744,7 @@
 
     if-lez v14, :cond_1
 
-    .line 457
+    .line 459
     const/4 v14, 0x0
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1755,7 +1755,7 @@
 
     goto/16 :goto_0
 
-    .line 419
+    .line 421
     .restart local v11    # "transX":I
     .restart local v12    # "transY":I
     :cond_8
@@ -1765,18 +1765,18 @@
 
     if-ne v14, v15, :cond_9
 
-    .line 420
+    .line 422
     const/16 v10, 0xb4
 
-    .line 421
+    .line 423
     move v11, v13
 
-    .line 422
+    .line 424
     move v12, v6
 
     goto :goto_2
 
-    .line 423
+    .line 425
     :cond_9
     rem-int/lit16 v14, v10, 0x168
 
@@ -1784,24 +1784,24 @@
 
     if-ne v14, v15, :cond_a
 
-    .line 424
+    .line 426
     move v9, v6
 
-    .line 425
+    .line 427
     move v8, v13
 
-    .line 426
+    .line 428
     const/16 v10, 0x5a
 
-    .line 427
+    .line 429
     move v11, v6
 
-    .line 428
+    .line 430
     const/4 v12, 0x0
 
     goto :goto_2
 
-    .line 430
+    .line 432
     :cond_a
     const-string v14, "Util"
 
@@ -1831,19 +1831,19 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 431
+    .line 433
     const/4 v2, 0x0
 
-    .line 432
+    .line 434
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 438
+    .line 440
     :catch_2
     move-exception v7
 
-    .line 439
+    .line 441
     .restart local v7    # "oom":Ljava/lang/OutOfMemoryError;
     const-string v14, "Util"
 
@@ -1851,10 +1851,10 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 440
+    .line 442
     const/4 v2, 0x0
 
-    .line 441
+    .line 443
     const/4 v2, 0x0
 
     goto/16 :goto_0
@@ -1866,7 +1866,7 @@
     .param p1, "outRotation"    # [Ljava/lang/Integer;
 
     .prologue
-    .line 473
+    .line 475
     if-eqz p0, :cond_0
 
     move-object/from16 v0, p0
@@ -1877,7 +1877,7 @@
 
     if-ge v14, v15, :cond_2
 
-    .line 474
+    .line 476
     :cond_0
     const-string v14, "Util"
 
@@ -1885,15 +1885,15 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 475
+    .line 477
     const/4 v2, 0x0
 
-    .line 574
+    .line 576
     :cond_1
     :goto_0
     return-object v2
 
-    .line 479
+    .line 481
     :cond_2
     const/4 v14, 0x0
 
@@ -1927,7 +1927,7 @@
 
     if-eq v14, v15, :cond_4
 
-    .line 480
+    .line 482
     :cond_3
     const-string v14, "Util"
 
@@ -1935,12 +1935,12 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 481
+    .line 483
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 486
+    .line 488
     :cond_4
     const/4 v14, 0x4
 
@@ -1951,7 +1951,7 @@
 
     move-result v13
 
-    .line 487
+    .line 489
     .local v13, "width":I
     const/16 v14, 0x8
 
@@ -1961,7 +1961,7 @@
 
     move-result v6
 
-    .line 488
+    .line 490
     .local v6, "height":I
     const/16 v14, 0xc
 
@@ -1973,7 +1973,7 @@
 
     move-result v10
 
-    .line 494
+    .line 496
     .local v10, "rotation":I
     move-object/from16 v0, p0
 
@@ -1987,7 +1987,7 @@
 
     if-ge v14, v15, :cond_5
 
-    .line 495
+    .line 497
     const-string v14, "Util"
 
     new-instance v15, Ljava/lang/StringBuilder;
@@ -2020,19 +2020,19 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 496
+    .line 498
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 489
+    .line 491
     .end local v6    # "height":I
     .end local v10    # "rotation":I
     .end local v13    # "width":I
     :catch_0
     move-exception v5
 
-    .line 490
+    .line 492
     .local v5, "ex":Ljava/lang/ArrayIndexOutOfBoundsException;
     const-string v14, "Util"
 
@@ -2040,12 +2040,12 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 491
+    .line 493
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 501
+    .line 503
     .end local v5    # "ex":Ljava/lang/ArrayIndexOutOfBoundsException;
     .restart local v6    # "height":I
     .restart local v10    # "rotation":I
@@ -2060,7 +2060,7 @@
 
     move-result-object v2
 
-    .line 510
+    .line 512
     .local v2, "bmp":Landroid/graphics/Bitmap;
     move-object/from16 v0, p0
 
@@ -2072,7 +2072,7 @@
 
     move-result-object v1
 
-    .line 511
+    .line 513
     .local v1, "bbuf":Ljava/nio/ByteBuffer;
     const/16 v14, 0x10
 
@@ -2086,44 +2086,44 @@
 
     invoke-virtual {v1, v0, v14, v15}, Ljava/nio/ByteBuffer;->put([BII)Ljava/nio/ByteBuffer;
 
-    .line 512
+    .line 514
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 513
+    .line 515
     invoke-virtual {v2, v1}, Landroid/graphics/Bitmap;->copyPixelsFromBuffer(Ljava/nio/Buffer;)V
 
-    .line 514
+    .line 516
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 516
+    .line 518
     move v9, v13
 
-    .line 517
+    .line 519
     .local v9, "realWidth":I
     move v8, v6
 
-    .line 519
+    .line 521
     .local v8, "realHeight":I
     if-eqz v10, :cond_7
 
-    .line 521
+    .line 523
     const/4 v11, 0x0
 
-    .line 522
+    .line 524
     .local v11, "transX":I
     const/4 v12, 0x0
 
-    .line 524
+    .line 526
     .local v12, "transY":I
     :goto_1
     if-gez v10, :cond_6
 
-    .line 525
+    .line 527
     add-int/lit16 v10, v10, 0x168
 
     goto :goto_1
 
-    .line 502
+    .line 504
     .end local v1    # "bbuf":Ljava/nio/ByteBuffer;
     .end local v2    # "bmp":Landroid/graphics/Bitmap;
     .end local v8    # "realHeight":I
@@ -2133,7 +2133,7 @@
     :catch_1
     move-exception v7
 
-    .line 503
+    .line 505
     .local v7, "oom":Ljava/lang/OutOfMemoryError;
     const-string v14, "Util"
 
@@ -2141,12 +2141,12 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 504
+    .line 506
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 527
+    .line 529
     .end local v7    # "oom":Ljava/lang/OutOfMemoryError;
     .restart local v1    # "bbuf":Ljava/nio/ByteBuffer;
     .restart local v2    # "bmp":Landroid/graphics/Bitmap;
@@ -2161,22 +2161,22 @@
 
     if-ne v14, v15, :cond_8
 
-    .line 528
+    .line 530
     move v9, v6
 
-    .line 529
+    .line 531
     move v8, v13
 
-    .line 530
+    .line 532
     const/16 v10, -0x5a
 
-    .line 531
+    .line 533
     const/4 v11, 0x0
 
-    .line 532
+    .line 534
     move v12, v13
 
-    .line 551
+    .line 553
     :goto_2
     :try_start_2
     sget-object v14, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
@@ -2187,29 +2187,29 @@
 
     move-result-object v4
 
-    .line 559
+    .line 561
     .local v4, "cvBmp":Landroid/graphics/Bitmap;
     new-instance v3, Landroid/graphics/Canvas;
 
     invoke-direct {v3, v4}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 560
+    .line 562
     .local v3, "cv":Landroid/graphics/Canvas;
     invoke-virtual {v3}, Landroid/graphics/Canvas;->save()I
 
-    .line 561
+    .line 563
     int-to-float v14, v11
 
     int-to-float v15, v12
 
     invoke-virtual {v3, v14, v15}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 562
+    .line 564
     int-to-float v14, v10
 
     invoke-virtual {v3, v14}, Landroid/graphics/Canvas;->rotate(F)V
 
-    .line 563
+    .line 565
     const/4 v14, 0x0
 
     const/4 v15, 0x0
@@ -2220,16 +2220,16 @@
 
     invoke-virtual {v3, v2, v14, v15, v0}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 564
+    .line 566
     invoke-virtual {v3}, Landroid/graphics/Canvas;->restore()V
 
-    .line 566
+    .line 568
     const/4 v2, 0x0
 
-    .line 567
+    .line 569
     move-object v2, v4
 
-    .line 570
+    .line 572
     .end local v3    # "cv":Landroid/graphics/Canvas;
     .end local v4    # "cvBmp":Landroid/graphics/Bitmap;
     .end local v11    # "transX":I
@@ -2243,7 +2243,7 @@
 
     if-lez v14, :cond_1
 
-    .line 571
+    .line 573
     const/4 v14, 0x0
 
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -2254,7 +2254,7 @@
 
     goto/16 :goto_0
 
-    .line 533
+    .line 535
     .restart local v11    # "transX":I
     .restart local v12    # "transY":I
     :cond_8
@@ -2264,18 +2264,18 @@
 
     if-ne v14, v15, :cond_9
 
-    .line 534
+    .line 536
     const/16 v10, 0xb4
 
-    .line 535
+    .line 537
     move v11, v13
 
-    .line 536
+    .line 538
     move v12, v6
 
     goto :goto_2
 
-    .line 537
+    .line 539
     :cond_9
     rem-int/lit16 v14, v10, 0x168
 
@@ -2283,24 +2283,24 @@
 
     if-ne v14, v15, :cond_a
 
-    .line 538
+    .line 540
     move v9, v6
 
-    .line 539
+    .line 541
     move v8, v13
 
-    .line 540
+    .line 542
     const/16 v10, 0x5a
 
-    .line 541
+    .line 543
     move v11, v6
 
-    .line 542
+    .line 544
     const/4 v12, 0x0
 
     goto :goto_2
 
-    .line 544
+    .line 546
     :cond_a
     const-string v14, "Util"
 
@@ -2330,19 +2330,19 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 545
+    .line 547
     const/4 v2, 0x0
 
-    .line 546
+    .line 548
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 552
+    .line 554
     :catch_2
     move-exception v7
 
-    .line 553
+    .line 555
     .restart local v7    # "oom":Ljava/lang/OutOfMemoryError;
     const-string v14, "Util"
 
@@ -2350,10 +2350,10 @@
 
     invoke-static {v14, v15}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 554
+    .line 556
     const/4 v2, 0x0
 
-    .line 555
+    .line 557
     const/4 v2, 0x0
 
     goto/16 :goto_0
@@ -2366,12 +2366,12 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 584
+    .line 586
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 585
+    .line 587
     .local v1, "dir":Ljava/io/File;
     invoke-virtual {v1}, Ljava/io/File;->isDirectory()Z
 
@@ -2379,29 +2379,29 @@
 
     if-eqz v5, :cond_2
 
-    .line 586
+    .line 588
     invoke-virtual {v1}, Ljava/io/File;->list()[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 587
+    .line 589
     .local v0, "children":[Ljava/lang/String;
     if-nez v0, :cond_1
 
     move v3, v4
 
-    .line 596
+    .line 598
     .end local v0    # "children":[Ljava/lang/String;
     :cond_0
     :goto_0
     return v3
 
-    .line 590
+    .line 592
     .restart local v0    # "children":[Ljava/lang/String;
     :cond_1
     const/4 v3, 0x1
 
-    .line 591
+    .line 593
     .local v3, "result":Z
     array-length v5, v0
 
@@ -2410,7 +2410,7 @@
 
     aget-object v2, v0, v4
 
-    .line 592
+    .line 594
     .local v2, "file":Ljava/lang/String;
     new-instance v6, Ljava/io/File;
 
@@ -2422,7 +2422,7 @@
 
     and-int/2addr v3, v6
 
-    .line 591
+    .line 593
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
@@ -2433,7 +2433,7 @@
     :cond_2
     move v3, v4
 
-    .line 596
+    .line 598
     goto :goto_0
 .end method
 
@@ -2442,7 +2442,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 602
+    .line 604
     const-string v1, "sem_statusbar"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -2451,16 +2451,16 @@
 
     check-cast v0, Landroid/app/SemStatusBarManager;
 
-    .line 603
+    .line 605
     .local v0, "statusBar":Landroid/app/SemStatusBarManager;
     if-eqz v0, :cond_0
 
-    .line 604
+    .line 606
     const/high16 v1, 0x40000
 
     invoke-virtual {v0, v1}, Landroid/app/SemStatusBarManager;->disable(I)V
 
-    .line 606
+    .line 608
     :cond_0
     return-void
 .end method
@@ -2472,7 +2472,7 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 610
+    .line 612
     const-string v1, "audio"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -2481,7 +2481,7 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    .line 611
+    .line 613
     .local v0, "mAudioManager":Landroid/media/AudioManager;
     invoke-virtual {v0, v3}, Landroid/media/AudioManager;->isStreamMute(I)Z
 
@@ -2489,19 +2489,19 @@
 
     sput-boolean v1, Lcom/sec/android/app/camera/util/Util;->mIsSystemSoundMute:Z
 
-    .line 612
+    .line 614
     sget-boolean v1, Lcom/sec/android/app/camera/util/Util;->mIsSystemSoundMute:Z
 
     if-nez v1, :cond_0
 
-    .line 613
+    .line 615
     const/16 v1, -0x64
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/media/AudioManager;->adjustStreamVolume(III)V
 
-    .line 615
+    .line 617
     :cond_0
     return-void
 .end method
@@ -2511,7 +2511,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 618
+    .line 620
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.sec.android.app.camera.DISABLE_VIBRATOR"
@@ -2522,7 +2522,7 @@
 
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 619
+    .line 621
     return-void
 .end method
 
@@ -2532,7 +2532,7 @@
     .param p2, "b"    # D
 
     .prologue
-    .line 622
+    .line 624
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Double;->compare(DD)I
 
     move-result v0
@@ -2555,7 +2555,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 628
+    .line 630
     const-string v1, "sem_statusbar"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -2564,16 +2564,16 @@
 
     check-cast v0, Landroid/app/SemStatusBarManager;
 
-    .line 629
+    .line 631
     .local v0, "statusBar":Landroid/app/SemStatusBarManager;
     if-eqz v0, :cond_0
 
-    .line 630
+    .line 632
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/app/SemStatusBarManager;->disable(I)V
 
-    .line 632
+    .line 634
     :cond_0
     return-void
 .end method
@@ -2583,7 +2583,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 636
+    .line 638
     const-string v1, "audio"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -2592,7 +2592,7 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    .line 637
+    .line 639
     .local v0, "mAudioManager":Landroid/media/AudioManager;
     sget-boolean v1, Lcom/sec/android/app/camera/util/Util;->mIsSystemSoundMute:Z
 
@@ -2606,7 +2606,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 638
+    .line 640
     const/4 v1, 0x1
 
     const/16 v2, 0x64
@@ -2615,7 +2615,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/media/AudioManager;->adjustStreamVolume(III)V
 
-    .line 640
+    .line 642
     :cond_0
     return-void
 .end method
@@ -2625,7 +2625,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 643
+    .line 645
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.sec.android.app.camera.ENABLE_VIBRATOR"
@@ -2636,7 +2636,7 @@
 
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 644
+    .line 646
     return-void
 .end method
 
@@ -2653,7 +2653,7 @@
 
     const/4 v10, 0x0
 
-    .line 647
+    .line 649
     const-string v7, "Util"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -2686,47 +2686,47 @@
 
     invoke-static {v7, v8}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 649
+    .line 651
     const/4 v1, 0x0
 
-    .line 650
+    .line 652
     .local v1, "MIN_IDX":I
     const/4 v0, 0x1
 
-    .line 651
+    .line 653
     .local v0, "MAX_IDX":I
     new-array v3, v12, [I
 
-    .line 652
+    .line 654
     .local v3, "fpsRange":[I
     new-array v2, v12, [I
 
-    .line 654
+    .line 656
     .local v2, "bestFpsRange":[I
     invoke-virtual {p0}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->getSupportedPreviewFpsRanges()Ljava/util/List;
 
     move-result-object v4
 
-    .line 656
+    .line 658
     .local v4, "fpsRangeList":Ljava/util/List;, "Ljava/util/List<[I>;"
     if-nez v4, :cond_0
 
-    .line 657
+    .line 659
     const-string v7, "Util"
 
     const-string v8, "supported preview fps range is null"
 
     invoke-static {v7, v8}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 658
+    .line 660
     const/4 v3, 0x0
 
-    .line 708
+    .line 710
     .end local v3    # "fpsRange":[I
     :goto_0
     return-object v3
 
-    .line 661
+    .line 663
     .restart local v3    # "fpsRange":[I
     :cond_0
     invoke-interface {v4}, Ljava/util/List;->size()I
@@ -2739,7 +2739,7 @@
     :goto_1
     if-ltz v5, :cond_8
 
-    .line 662
+    .line 664
     invoke-interface {v4, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
@@ -2750,7 +2750,7 @@
 
     aput v7, v3, v10
 
-    .line 663
+    .line 665
     invoke-interface {v4, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
@@ -2761,20 +2761,20 @@
 
     aput v7, v3, v11
 
-    .line 665
+    .line 667
     aget v7, v3, v11
 
     if-ne p2, v7, :cond_6
 
-    .line 666
+    .line 668
     aget v7, v3, v10
 
     if-ne p1, v7, :cond_1
 
-    .line 668
+    .line 670
     move-object v2, v3
 
-    .line 669
+    .line 671
     const-string v7, "Util"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -2813,14 +2813,14 @@
 
     goto :goto_0
 
-    .line 671
+    .line 673
     :cond_1
     if-nez v5, :cond_2
 
-    .line 673
+    .line 675
     move-object v2, v3
 
-    .line 674
+    .line 676
     const-string v7, "Util"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -2859,7 +2859,7 @@
 
     goto :goto_0
 
-    .line 678
+    .line 680
     :cond_2
     move v6, v5
 
@@ -2867,7 +2867,7 @@
     :goto_2
     if-ltz v6, :cond_5
 
-    .line 679
+    .line 681
     invoke-interface {v4, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
@@ -2878,7 +2878,7 @@
 
     aput v7, v3, v10
 
-    .line 680
+    .line 682
     invoke-interface {v4, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
@@ -2889,15 +2889,15 @@
 
     aput v7, v3, v11
 
-    .line 682
+    .line 684
     aget v7, v3, v10
 
     if-ne p1, v7, :cond_3
 
-    .line 684
+    .line 686
     move-object v2, v3
 
-    .line 685
+    .line 687
     const-string v7, "Util"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -2936,16 +2936,16 @@
 
     goto/16 :goto_0
 
-    .line 687
+    .line 689
     :cond_3
     aget v7, v3, v10
 
     if-le p1, v7, :cond_4
 
-    .line 688
+    .line 690
     move-object v2, v3
 
-    .line 689
+    .line 691
     const-string v7, "Util"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -2984,17 +2984,17 @@
 
     goto/16 :goto_0
 
-    .line 678
+    .line 680
     :cond_4
     add-int/lit8 v6, v6, -0x1
 
     goto :goto_2
 
-    .line 694
+    .line 696
     :cond_5
     move-object v2, v3
 
-    .line 695
+    .line 697
     const-string v7, "Util"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -3033,17 +3033,17 @@
 
     goto/16 :goto_0
 
-    .line 698
+    .line 700
     .end local v6    # "j":I
     :cond_6
     aget v7, v3, v11
 
     if-le p2, v7, :cond_7
 
-    .line 699
+    .line 701
     move-object v2, v3
 
-    .line 700
+    .line 702
     const-string v7, "Util"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -3082,17 +3082,17 @@
 
     goto/16 :goto_0
 
-    .line 661
+    .line 663
     :cond_7
     add-int/lit8 v5, v5, -0x1
 
     goto/16 :goto_1
 
-    .line 706
+    .line 708
     :cond_8
     move-object v2, v3
 
-    .line 707
+    .line 709
     const-string v7, "Util"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -3148,34 +3148,34 @@
     .end annotation
 
     .prologue
-    .line 818
+    .line 820
     .local p0, "sizes":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/camera/core/SemCamera$Size;>;"
     if-nez p0, :cond_0
 
-    .line 819
+    .line 821
     const/4 v9, 0x0
 
-    .line 843
+    .line 845
     :goto_0
     return-object v9
 
-    .line 821
+    .line 823
     :cond_0
     const/4 v9, 0x0
 
-    .line 822
+    .line 824
     .local v9, "thumbnailSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     const-wide v4, 0x3f9eb851eb851eb8L    # 0.03
 
-    .line 823
+    .line 825
     .local v4, "minRatioDiff":D
     const v3, 0x186a0
 
-    .line 824
+    .line 826
     .local v3, "minGap":I
     const/4 v2, 0x0
 
-    .line 826
+    .line 828
     .local v2, "index":I
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3195,7 +3195,7 @@
 
     check-cast v8, Lcom/samsung/android/camera/core/SemCamera$Size;
 
-    .line 827
+    .line 829
     .local v8, "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     iget v12, v8, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
@@ -3207,7 +3207,7 @@
 
     div-double v6, v12, v14
 
-    .line 830
+    .line 832
     .local v6, "ratio":D
     invoke-static {v6, v7}, Ljava/lang/Double;->isNaN(D)Z
 
@@ -3221,7 +3221,7 @@
 
     if-nez v12, :cond_1
 
-    .line 832
+    .line 834
     move/from16 v0, p1
 
     int-to-double v12, v0
@@ -3242,7 +3242,7 @@
 
     if-gtz v12, :cond_1
 
-    .line 835
+    .line 837
     iget v12, v8, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
     sub-int v12, v12, p1
@@ -3251,23 +3251,23 @@
 
     move-result v10
 
-    .line 836
+    .line 838
     .local v10, "widthGap":I
     if-le v3, v10, :cond_1
 
-    .line 837
+    .line 839
     move-object/from16 v0, p0
 
     invoke-interface {v0, v8}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
     move-result v2
 
-    .line 838
+    .line 840
     move v3, v10
 
     goto :goto_1
 
-    .line 841
+    .line 843
     .end local v6    # "ratio":D
     .end local v8    # "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     .end local v10    # "widthGap":I
@@ -3281,7 +3281,7 @@
     .end local v9    # "thumbnailSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     check-cast v9, Lcom/samsung/android/camera/core/SemCamera$Size;
 
-    .line 842
+    .line 844
     .restart local v9    # "thumbnailSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     const-string v11, "Util"
 
@@ -3328,14 +3328,14 @@
     .param p1, "b"    # F
 
     .prologue
-    .line 712
+    .line 714
     new-instance v0, Ljava/math/BigDecimal;
 
     float-to-double v2, p0
 
     invoke-direct {v0, v2, v3}, Ljava/math/BigDecimal;-><init>(D)V
 
-    .line 713
+    .line 715
     .local v0, "val1":Ljava/math/BigDecimal;
     new-instance v1, Ljava/math/BigDecimal;
 
@@ -3343,7 +3343,7 @@
 
     invoke-direct {v1, v2, v3}, Ljava/math/BigDecimal;-><init>(D)V
 
-    .line 714
+    .line 716
     .local v1, "val2":Ljava/math/BigDecimal;
     const/4 v2, 0x5
 
@@ -3366,7 +3366,7 @@
     .param p1, "b"    # F
 
     .prologue
-    .line 718
+    .line 720
     invoke-static {p0, p1}, Ljava/lang/Float;->compare(FF)I
 
     move-result v0
@@ -3390,14 +3390,14 @@
     .param p1, "b"    # F
 
     .prologue
-    .line 722
+    .line 724
     new-instance v0, Ljava/math/BigDecimal;
 
     float-to-double v2, p0
 
     invoke-direct {v0, v2, v3}, Ljava/math/BigDecimal;-><init>(D)V
 
-    .line 723
+    .line 725
     .local v0, "val1":Ljava/math/BigDecimal;
     new-instance v1, Ljava/math/BigDecimal;
 
@@ -3405,7 +3405,7 @@
 
     invoke-direct {v1, v2, v3}, Ljava/math/BigDecimal;-><init>(D)V
 
-    .line 724
+    .line 726
     .local v1, "val2":Ljava/math/BigDecimal;
     invoke-virtual {v0, v1}, Ljava/math/BigDecimal;->multiply(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;
 
@@ -3424,7 +3424,7 @@
     .param p1, "height"    # I
 
     .prologue
-    .line 728
+    .line 730
     int-to-double v0, p0
 
     int-to-double v2, p1
@@ -3439,21 +3439,21 @@
     .param p0, "ratio"    # D
 
     .prologue
-    .line 732
+    .line 734
     const-wide v0, 0x3ffc51eb851eb852L    # 1.77
 
     cmpl-double v0, p0, v0
 
     if-ltz v0, :cond_0
 
-    .line 733
+    .line 735
     const/4 v0, 0x0
 
-    .line 739
+    .line 741
     :goto_0
     return v0
 
-    .line 734
+    .line 736
     :cond_0
     const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
@@ -3463,12 +3463,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 735
+    .line 737
     const/4 v0, 0x2
 
     goto :goto_0
 
-    .line 736
+    .line 738
     :cond_1
     const-wide v0, 0x3ff38e38e38e38e4L    # 1.2222222222222223
 
@@ -3484,12 +3484,12 @@
 
     if-gez v0, :cond_2
 
-    .line 737
+    .line 739
     const/4 v0, 0x3
 
     goto :goto_0
 
-    .line 739
+    .line 741
     :cond_2
     const/4 v0, 0x1
 
@@ -3501,16 +3501,16 @@
     .param p0, "cameraId"    # I
 
     .prologue
-    .line 744
+    .line 746
     new-instance v0, Lcom/samsung/android/camera/core/SemCamera$CameraInfo;
 
     invoke-direct {v0}, Lcom/samsung/android/camera/core/SemCamera$CameraInfo;-><init>()V
 
-    .line 745
+    .line 747
     .local v0, "info":Lcom/samsung/android/camera/core/SemCamera$CameraInfo;
     invoke-static {p0, v0}, Lcom/samsung/android/camera/core/SemCamera;->getCameraInfo(ILcom/samsung/android/camera/core/SemCamera$CameraInfo;)V
 
-    .line 746
+    .line 748
     iget v1, v0, Lcom/samsung/android/camera/core/SemCamera$CameraInfo;->orientation:I
 
     return v1
@@ -3527,19 +3527,19 @@
 
     const-wide/high16 v8, 0x4024000000000000L    # 10.0
 
-    .line 750
+    .line 752
     if-ne p0, p3, :cond_0
 
-    .line 751
+    .line 753
     div-double v2, p1, v2
 
     double-to-float v2, v2
 
-    .line 755
+    .line 757
     :goto_0
     return v2
 
-    .line 754
+    .line 756
     :cond_0
     div-double v2, p1, v2
 
@@ -3553,7 +3553,7 @@
 
     move-result-wide v0
 
-    .line 755
+    .line 757
     .local v0, "zoomRatioDelta":D
     int-to-double v2, p3
 
@@ -3578,12 +3578,12 @@
     .locals 4
 
     .prologue
-    .line 765
+    .line 767
     new-instance v0, Ljava/util/GregorianCalendar;
 
     invoke-direct {v0}, Ljava/util/GregorianCalendar;-><init>()V
 
-    .line 766
+    .line 768
     .local v0, "calendar":Ljava/util/GregorianCalendar;
     invoke-virtual {v0}, Ljava/util/GregorianCalendar;->getTimeInMillis()J
 
@@ -3596,7 +3596,7 @@
     .locals 1
 
     .prologue
-    .line 770
+    .line 772
     sget v0, Lcom/sec/android/app/camera/util/Util;->mDefaultDeviceOrientation:I
 
     return v0
@@ -3613,14 +3613,14 @@
 
     const/4 v6, 0x0
 
-    .line 781
+    .line 783
     const-string v3, "M"
 
     invoke-virtual {p0, v3}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 783
+    .line 785
     .local v1, "index":I
     if-ne v1, v7, :cond_1
 
@@ -3631,7 +3631,7 @@
 
     move-result v2
 
-    .line 784
+    .line 786
     .local v2, "megaPixels":F
     const/high16 v3, 0x41200000    # 10.0f
 
@@ -3639,7 +3639,7 @@
 
     if-ltz v3, :cond_2
 
-    .line 785
+    .line 787
     const-string v3, "%d"
 
     new-array v4, v4, [Ljava/lang/Object;
@@ -3656,12 +3656,12 @@
 
     move-result-object v0
 
-    .line 790
+    .line 792
     .local v0, "formattedString":Ljava/lang/String;
     :goto_1
     if-eq v1, v7, :cond_0
 
-    .line 791
+    .line 793
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -3682,11 +3682,11 @@
 
     move-result-object v0
 
-    .line 793
+    .line 795
     :cond_0
     return-object v0
 
-    .line 783
+    .line 785
     .end local v0    # "formattedString":Ljava/lang/String;
     .end local v2    # "megaPixels":F
     :cond_1
@@ -3696,7 +3696,7 @@
 
     goto :goto_0
 
-    .line 787
+    .line 789
     .restart local v2    # "megaPixels":F
     :cond_2
     const-string v3, "%.1f"
@@ -3721,7 +3721,7 @@
     .locals 1
 
     .prologue
-    .line 798
+    .line 800
     const-string v0, "/system/fonts/SECCJK-Regular.ttc"
 
     invoke-static {v0}, Landroid/graphics/Typeface;->createFromFile(Ljava/lang/String;)Landroid/graphics/Typeface;
@@ -3736,10 +3736,10 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 802
+    .line 804
     const/4 v1, 0x0
 
-    .line 804
+    .line 806
     .local v1, "info":Landroid/content/pm/PackageInfo;
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -3756,22 +3756,22 @@
 
     move-result-object v1
 
-    .line 811
+    .line 813
     :goto_0
     if-nez v1, :cond_0
 
-    .line 812
+    .line 814
     const/4 v2, 0x1
 
-    .line 814
+    .line 816
     :goto_1
     return v2
 
-    .line 805
+    .line 807
     :catch_0
     move-exception v0
 
-    .line 806
+    .line 808
     .local v0, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     const-string v2, "Util"
 
@@ -3801,7 +3801,7 @@
 
     goto :goto_0
 
-    .line 814
+    .line 816
     .end local v0    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     :cond_0
     iget v2, v1, Landroid/content/pm/PackageInfo;->versionCode:I
@@ -3824,36 +3824,36 @@
     .end annotation
 
     .prologue
-    .line 848
+    .line 850
     .local p0, "sizes":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/camera/core/SemCamera$Size;>;"
     const-wide v0, 0x3f50624dd2f1a9fcL    # 0.001
 
-    .line 849
+    .line 851
     .local v0, "ASPECT_TOLERANCE":D
     if-nez p0, :cond_1
 
-    .line 850
+    .line 852
     const/4 v3, 0x0
 
-    .line 894
+    .line 896
     :cond_0
     return-object v3
 
-    .line 852
+    .line 854
     :cond_1
     const/4 v3, 0x0
 
-    .line 853
+    .line 855
     .local v3, "optimalSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     const-wide v4, 0x7fefffffffffffffL    # Double.MAX_VALUE
 
-    .line 861
+    .line 863
     .local v4, "minDiff":D
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
 
-    .line 862
+    .line 864
     .local v2, "displaySize":Landroid/graphics/Point;
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenHeightPixels()I
 
@@ -3861,14 +3861,14 @@
 
     iput v10, v2, Landroid/graphics/Point;->x:I
 
-    .line 863
+    .line 865
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
     move-result v10
 
     iput v10, v2, Landroid/graphics/Point;->y:I
 
-    .line 864
+    .line 866
     iget v10, v2, Landroid/graphics/Point;->y:I
 
     iget v11, v2, Landroid/graphics/Point;->x:I
@@ -3877,14 +3877,14 @@
 
     move-result v9
 
-    .line 866
+    .line 868
     .local v9, "targetHeight":I
     if-gtz v9, :cond_2
 
-    .line 868
+    .line 870
     iget v9, v2, Landroid/graphics/Point;->y:I
 
-    .line 872
+    .line 874
     :cond_2
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -3904,7 +3904,7 @@
 
     check-cast v8, Lcom/samsung/android/camera/core/SemCamera$Size;
 
-    .line 873
+    .line 875
     .local v8, "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     iget v11, v8, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
@@ -3916,7 +3916,7 @@
 
     div-double v6, v12, v14
 
-    .line 874
+    .line 876
     .local v6, "ratio":D
     sub-double v12, v6, p1
 
@@ -3930,7 +3930,7 @@
 
     if-gtz v11, :cond_3
 
-    .line 876
+    .line 878
     iget v11, v8, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     sub-int/2addr v11, v9
@@ -3945,10 +3945,10 @@
 
     if-gez v11, :cond_3
 
-    .line 877
+    .line 879
     move-object v3, v8
 
-    .line 878
+    .line 880
     iget v11, v8, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     sub-int/2addr v11, v9
@@ -3961,23 +3961,23 @@
 
     goto :goto_0
 
-    .line 884
+    .line 886
     .end local v6    # "ratio":D
     .end local v8    # "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     :cond_4
     if-nez v3, :cond_0
 
-    .line 885
+    .line 887
     const-string v10, "Util"
 
     const-string v11, "No preview size match the aspect ratio"
 
     invoke-static {v10, v11}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 886
+    .line 888
     const-wide v4, 0x7fefffffffffffffL    # Double.MAX_VALUE
 
-    .line 887
+    .line 889
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v10
@@ -3996,7 +3996,7 @@
 
     check-cast v8, Lcom/samsung/android/camera/core/SemCamera$Size;
 
-    .line 888
+    .line 890
     .restart local v8    # "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     iget v11, v8, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
@@ -4012,10 +4012,10 @@
 
     if-gez v11, :cond_5
 
-    .line 889
+    .line 891
     move-object v3, v8
 
-    .line 890
+    .line 892
     iget v11, v8, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     sub-int/2addr v11, v9
@@ -4043,16 +4043,16 @@
 
     const/4 v4, 0x0
 
-    .line 972
+    .line 974
     const/4 v1, 0x0
 
-    .line 973
+    .line 975
     .local v1, "str":Ljava/lang/String;
     invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getMegaPixelString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 974
+    .line 976
     .local v0, "megaPixelStr":Ljava/lang/String;
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
@@ -4072,7 +4072,7 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
-    .line 975
+    .line 977
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
@@ -4081,7 +4081,7 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
-    .line 976
+    .line 978
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
@@ -4098,14 +4098,14 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
-    .line 977
+    .line 979
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
 
     if-ne p1, v2, :cond_2
 
-    .line 978
+    .line 980
     :cond_0
     const v2, 0x7f0a007f
 
@@ -4137,12 +4137,12 @@
 
     move-result-object v1
 
-    .line 990
+    .line 992
     :cond_1
     :goto_0
     return-object v1
 
-    .line 979
+    .line 981
     :cond_2
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
@@ -4162,7 +4162,7 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
-    .line 980
+    .line 982
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
@@ -4171,7 +4171,7 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
-    .line 981
+    .line 983
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
@@ -4188,14 +4188,14 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
-    .line 982
+    .line 984
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
 
     if-ne p1, v2, :cond_4
 
-    .line 983
+    .line 985
     :cond_3
     const v2, 0x7f0a007d
 
@@ -4229,7 +4229,7 @@
 
     goto :goto_0
 
-    .line 984
+    .line 986
     :cond_4
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
@@ -4249,7 +4249,7 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
-    .line 985
+    .line 987
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
@@ -4258,7 +4258,7 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
-    .line 986
+    .line 988
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
@@ -4275,14 +4275,14 @@
 
     sget-object v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
-    .line 987
+    .line 989
     invoke-static {v2}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v2
 
     if-ne p1, v2, :cond_1
 
-    .line 988
+    .line 990
     :cond_5
     const v2, 0x7f0a007e
 
@@ -4326,31 +4326,31 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1006
+    .line 1008
     if-nez p0, :cond_0
 
-    .line 1007
+    .line 1009
     const/4 v7, 0x0
 
-    .line 1015
+    .line 1017
     :goto_0
     return-object v7
 
-    .line 1009
+    .line 1011
     :cond_0
     const/4 v7, 0x0
 
-    .line 1011
+    .line 1013
     .local v7, "bitmap":Landroid/graphics/Bitmap;
     new-instance v5, Landroid/graphics/Matrix;
 
     invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 1012
+    .line 1014
     .local v5, "matrix":Landroid/graphics/Matrix;
     invoke-virtual {v5, p1, p2}, Landroid/graphics/Matrix;->setScale(FF)V
 
-    .line 1014
+    .line 1016
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v3
@@ -4369,7 +4369,7 @@
 
     move-result-object v7
 
-    .line 1015
+    .line 1017
     goto :goto_0
 .end method
 
@@ -4377,7 +4377,7 @@
     .locals 1
 
     .prologue
-    .line 1019
+    .line 1021
     const-string v0, "/system/fonts/Roboto-Black.ttf"
 
     invoke-static {v0}, Landroid/graphics/Typeface;->createFromFile(Ljava/lang/String;)Landroid/graphics/Typeface;
@@ -4391,7 +4391,7 @@
     .locals 2
 
     .prologue
-    .line 1023
+    .line 1025
     const-string v0, "sec-roboto-condensed"
 
     const/4 v1, 0x1
@@ -4407,7 +4407,7 @@
     .locals 2
 
     .prologue
-    .line 1027
+    .line 1029
     const-string v0, "sec-roboto-light"
 
     const/4 v1, 0x1
@@ -4423,7 +4423,7 @@
     .locals 2
 
     .prologue
-    .line 1031
+    .line 1033
     const-string v0, "sec-roboto-light"
 
     const/4 v1, 0x0
@@ -4439,7 +4439,7 @@
     .locals 1
 
     .prologue
-    .line 1035
+    .line 1037
     const-string v0, "/system/fonts/Roboto-Medium.ttf"
 
     invoke-static {v0}, Landroid/graphics/Typeface;->createFromFile(Ljava/lang/String;)Landroid/graphics/Typeface;
@@ -4453,7 +4453,7 @@
     .locals 2
 
     .prologue
-    .line 1039
+    .line 1041
     const-string v0, "sans-serif"
 
     const/4 v1, 0x0
@@ -4475,25 +4475,25 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 994
+    .line 996
     const/4 v7, 0x0
 
-    .line 995
+    .line 997
     .local v7, "resizedBitmap":Landroid/graphics/Bitmap;
     new-instance v5, Landroid/graphics/Matrix;
 
     invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 997
+    .line 999
     .local v5, "matrix":Landroid/graphics/Matrix;
     invoke-virtual {v5, p1, p2}, Landroid/graphics/Matrix;->postScale(FF)Z
 
-    .line 998
+    .line 1000
     int-to-float v0, p3
 
     invoke-virtual {v5, v0}, Landroid/graphics/Matrix;->postRotate(F)Z
 
-    .line 1000
+    .line 1002
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v3
@@ -4512,7 +4512,7 @@
 
     move-result-object v7
 
-    .line 1002
+    .line 1004
     return-object v7
 .end method
 
@@ -4531,40 +4531,40 @@
     .end annotation
 
     .prologue
-    .line 906
+    .line 908
     .local p0, "sizes":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/camera/core/SemCamera$Size;>;"
     const-wide v0, 0x3f50624dd2f1a9fcL    # 0.001
 
-    .line 907
+    .line 909
     .local v0, "ASPECT_TOLERANCE":D
     if-nez p0, :cond_1
 
-    .line 908
+    .line 910
     const/4 v3, 0x0
 
-    .line 968
+    .line 970
     :cond_0
     return-object v3
 
-    .line 910
+    .line 912
     :cond_1
     const/4 v6, 0x0
 
-    .line 911
+    .line 913
     .local v6, "optimalSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     const/4 v3, 0x0
 
-    .line 912
+    .line 914
     .local v3, "loweroptimalSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     const-wide v4, 0x7fefffffffffffffL    # Double.MAX_VALUE
 
-    .line 920
+    .line 922
     .local v4, "minDiff":D
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
 
-    .line 921
+    .line 923
     .local v2, "displaySize":Landroid/graphics/Point;
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenHeightPixels()I
 
@@ -4572,14 +4572,14 @@
 
     iput v11, v2, Landroid/graphics/Point;->x:I
 
-    .line 922
+    .line 924
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
     move-result v11
 
     iput v11, v2, Landroid/graphics/Point;->y:I
 
-    .line 923
+    .line 925
     iget v11, v2, Landroid/graphics/Point;->y:I
 
     iget v12, v2, Landroid/graphics/Point;->x:I
@@ -4588,14 +4588,14 @@
 
     move-result v10
 
-    .line 925
+    .line 927
     .local v10, "targetHeight":I
     if-gtz v10, :cond_2
 
-    .line 927
+    .line 929
     iget v10, v2, Landroid/graphics/Point;->y:I
 
-    .line 931
+    .line 933
     :cond_2
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -4615,7 +4615,7 @@
 
     check-cast v7, Lcom/samsung/android/camera/core/SemCamera$Size;
 
-    .line 932
+    .line 934
     .local v7, "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     iget v12, v7, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
@@ -4627,7 +4627,7 @@
 
     div-double v8, v12, v14
 
-    .line 933
+    .line 935
     .local v8, "ratio":D
     sub-double v12, v8, p1
 
@@ -4641,7 +4641,7 @@
 
     if-gtz v12, :cond_3
 
-    .line 935
+    .line 937
     iget v12, v7, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     sub-int/2addr v12, v10
@@ -4656,10 +4656,10 @@
 
     if-gez v12, :cond_3
 
-    .line 936
+    .line 938
     move-object v6, v7
 
-    .line 937
+    .line 939
     iget v12, v7, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     sub-int/2addr v12, v10
@@ -4672,16 +4672,16 @@
 
     goto :goto_0
 
-    .line 941
+    .line 943
     .end local v7    # "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     .end local v8    # "ratio":D
     :cond_4
     const-wide v4, 0x7fefffffffffffffL    # Double.MAX_VALUE
 
-    .line 944
+    .line 946
     if-eqz v6, :cond_6
 
-    .line 945
+    .line 947
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v11
@@ -4700,7 +4700,7 @@
 
     check-cast v7, Lcom/samsung/android/camera/core/SemCamera$Size;
 
-    .line 946
+    .line 948
     .restart local v7    # "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     iget v12, v7, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
@@ -4712,7 +4712,7 @@
 
     div-double v8, v12, v14
 
-    .line 947
+    .line 949
     .restart local v8    # "ratio":D
     sub-double v12, v8, p1
 
@@ -4726,7 +4726,7 @@
 
     if-gtz v12, :cond_5
 
-    .line 949
+    .line 951
     iget v12, v7, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     sub-int/2addr v12, v10
@@ -4747,10 +4747,10 @@
 
     if-ge v12, v13, :cond_5
 
-    .line 950
+    .line 952
     move-object v3, v7
 
-    .line 951
+    .line 953
     iget v12, v7, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     sub-int/2addr v12, v10
@@ -4763,7 +4763,7 @@
 
     goto :goto_1
 
-    .line 958
+    .line 960
     .end local v7    # "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     .end local v8    # "ratio":D
     :cond_6
@@ -4771,17 +4771,17 @@
 
     if-nez v3, :cond_0
 
-    .line 959
+    .line 961
     const-string v11, "Util"
 
     const-string v12, "No preview size match the aspect ratio"
 
     invoke-static {v11, v12}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 960
+    .line 962
     const-wide v4, 0x7fefffffffffffffL    # Double.MAX_VALUE
 
-    .line 961
+    .line 963
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v11
@@ -4800,7 +4800,7 @@
 
     check-cast v7, Lcom/samsung/android/camera/core/SemCamera$Size;
 
-    .line 962
+    .line 964
     .restart local v7    # "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     iget v12, v7, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
@@ -4816,10 +4816,10 @@
 
     if-gez v12, :cond_7
 
-    .line 963
+    .line 965
     move-object v6, v7
 
-    .line 964
+    .line 966
     iget v12, v7, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     sub-int/2addr v12, v10
@@ -4842,29 +4842,29 @@
     .prologue
     const/high16 v4, 0x40000000    # 2.0f
 
-    .line 1043
+    .line 1045
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 1044
+    .line 1046
     .local v0, "paint":Landroid/graphics/Paint;
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 1045
+    .line 1047
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 1046
+    .line 1048
     invoke-virtual {v0, p2}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 1048
+    .line 1050
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 1049
+    .line 1051
     .local v1, "textRect":Landroid/graphics/Rect;
     const/4 v2, 0x0
 
@@ -4874,7 +4874,7 @@
 
     invoke-virtual {v0, p0, v2, v3, v1}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 1051
+    .line 1053
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
 
     move-result v2
@@ -4889,7 +4889,7 @@
 
     if-lez v2, :cond_0
 
-    .line 1052
+    .line 1054
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
 
     move-result v2
@@ -4902,7 +4902,7 @@
 
     add-float/2addr v2, v3
 
-    .line 1054
+    .line 1056
     :goto_0
     return v2
 
@@ -4926,7 +4926,7 @@
     .param p1, "resourcesId"    # I
 
     .prologue
-    .line 1059
+    .line 1061
     new-instance v0, Landroid/content/res/Configuration;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -4939,7 +4939,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/res/Configuration;-><init>(Landroid/content/res/Configuration;)V
 
-    .line 1060
+    .line 1062
     .local v0, "config":Landroid/content/res/Configuration;
     new-instance v1, Ljava/util/Locale;
 
@@ -4949,7 +4949,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/res/Configuration;->setLocale(Ljava/util/Locale;)V
 
-    .line 1061
+    .line 1063
     invoke-virtual {p0, v0}, Landroid/content/Context;->createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
 
     move-result-object v1
@@ -4967,21 +4967,21 @@
     .param p1, "textSize"    # F
 
     .prologue
-    .line 1065
+    .line 1067
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 1066
+    .line 1068
     .local v0, "paint":Landroid/graphics/Paint;
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 1067
+    .line 1069
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 1068
+    .line 1070
     invoke-virtual {v0, p0}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
 
     move-result v1
@@ -5014,24 +5014,24 @@
     .param p2, "typeface"    # Landroid/graphics/Typeface;
 
     .prologue
-    .line 1072
+    .line 1074
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 1073
+    .line 1075
     .local v0, "paint":Landroid/graphics/Paint;
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 1074
+    .line 1076
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 1075
+    .line 1077
     invoke-virtual {v0, p2}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 1076
+    .line 1078
     invoke-virtual {v0, p0}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
 
     move-result v1
@@ -5063,7 +5063,7 @@
     .param p1, "modeId"    # I
 
     .prologue
-    .line 1080
+    .line 1082
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -5102,12 +5102,12 @@
 
     const/4 v3, 0x1
 
-    .line 1081
+    .line 1083
     invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntHeight(I)I
 
     move-result v4
 
-    .line 1080
+    .line 1082
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -5134,28 +5134,28 @@
     .param p0, "supportMaxZoomValue"    # I
 
     .prologue
-    .line 1085
+    .line 1087
     sparse-switch p0, :sswitch_data_0
 
-    .line 1091
+    .line 1093
     const/4 v0, 0x1
 
     :goto_0
     return v0
 
-    .line 1087
+    .line 1089
     :sswitch_0
     const/16 v0, 0xa
 
     goto :goto_0
 
-    .line 1089
+    .line 1091
     :sswitch_1
     const/4 v0, 0x5
 
     goto :goto_0
 
-    .line 1085
+    .line 1087
     :sswitch_data_0
     .sparse-switch
         0x18f -> :sswitch_1
@@ -5170,10 +5170,10 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 1096
+    .line 1098
     if-eqz p0, :cond_0
 
-    .line 1097
+    .line 1099
     const-string v4, "user"
 
     invoke-virtual {p0, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -5182,7 +5182,7 @@
 
     check-cast v1, Landroid/os/UserManager;
 
-    .line 1098
+    .line 1100
     .local v1, "um":Landroid/os/UserManager;
     if-eqz v1, :cond_0
 
@@ -5192,18 +5192,18 @@
 
     if-le v4, v3, :cond_0
 
-    .line 1099
+    .line 1101
     invoke-virtual {v1}, Landroid/os/UserManager;->getUserProfiles()Ljava/util/List;
 
     move-result-object v2
 
-    .line 1100
+    .line 1102
     .local v2, "up":Ljava/util/List;, "Ljava/util/List<Landroid/os/UserHandle;>;"
     invoke-static {}, Landroid/os/Process;->myUserHandle()Landroid/os/UserHandle;
 
     move-result-object v0
 
-    .line 1102
+    .line 1104
     .local v0, "mine":Landroid/os/UserHandle;
     if-eqz v0, :cond_0
 
@@ -5221,7 +5221,7 @@
 
     if-nez v4, :cond_0
 
-    .line 1103
+    .line 1105
     if-eqz v2, :cond_0
 
     invoke-interface {v2}, Ljava/util/List;->size()I
@@ -5230,7 +5230,7 @@
 
     if-le v4, v3, :cond_0
 
-    .line 1109
+    .line 1111
     .end local v0    # "mine":Landroid/os/UserHandle;
     .end local v1    # "um":Landroid/os/UserManager;
     .end local v2    # "up":Ljava/util/List;, "Ljava/util/List<Landroid/os/UserHandle;>;"
@@ -5248,7 +5248,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1113
+    .line 1115
     const-string v3, "device_policy"
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -5257,20 +5257,20 @@
 
     check-cast v1, Landroid/app/admin/DevicePolicyManager;
 
-    .line 1114
+    .line 1116
     .local v1, "dpm":Landroid/app/admin/DevicePolicyManager;
     if-eqz v1, :cond_1
 
-    .line 1115
+    .line 1117
     invoke-virtual {v1}, Landroid/app/admin/DevicePolicyManager;->getActiveAdmins()Ljava/util/List;
 
     move-result-object v0
 
-    .line 1116
+    .line 1118
     .local v0, "components":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
     if-eqz v0, :cond_1
 
-    .line 1117
+    .line 1119
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -5288,7 +5288,7 @@
 
     check-cast v2, Landroid/content/ComponentName;
 
-    .line 1118
+    .line 1120
     .local v2, "name":Landroid/content/ComponentName;
     invoke-virtual {v2}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -5300,10 +5300,10 @@
 
     if-eqz v4, :cond_0
 
-    .line 1119
+    .line 1121
     const/4 v3, 0x1
 
-    .line 1124
+    .line 1126
     .end local v0    # "components":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
     .end local v2    # "name":Landroid/content/ComponentName;
     :goto_0
@@ -5320,7 +5320,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1128
+    .line 1130
     invoke-static {p0}, Lcom/sec/android/app/camera/util/Util;->isAFWForBYOD(Landroid/content/Context;)Z
 
     move-result v0
@@ -5350,12 +5350,12 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1138
+    .line 1140
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
-    .line 1139
+    .line 1141
     .local v1, "pm":Landroid/content/pm/PackageManager;
     new-instance v0, Landroid/content/Intent;
 
@@ -5363,7 +5363,7 @@
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1140
+    .line 1142
     .local v0, "intent":Landroid/content/Intent;
     const/16 v3, 0x20
 
@@ -5371,7 +5371,7 @@
 
     move-result-object v2
 
-    .line 1141
+    .line 1143
     .local v2, "receivers":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
     invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
 
@@ -5394,7 +5394,7 @@
     .locals 2
 
     .prologue
-    .line 1173
+    .line 1175
     invoke-static {}, Landroid/os/SemSystemProperties;->getCountryCode()Ljava/lang/String;
 
     move-result-object v1
@@ -5403,7 +5403,7 @@
 
     move-result-object v0
 
-    .line 1174
+    .line 1176
     .local v0, "countryCode":Ljava/lang/String;
     const-string v1, "CHINA"
 
@@ -5413,10 +5413,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 1175
+    .line 1177
     const/4 v1, 0x1
 
-    .line 1177
+    .line 1179
     :goto_0
     return v1
 
@@ -5433,7 +5433,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 1194
+    .line 1211
     invoke-virtual {p0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
 
     move-result-object v2
@@ -5446,7 +5446,7 @@
 
     move-result v0
 
-    .line 1196
+    .line 1213
     .local v0, "rotation":I
     if-eq v0, v1, :cond_0
 
@@ -5454,7 +5454,7 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 1201
+    .line 1218
     :cond_0
     :goto_0
     return v1
@@ -5470,7 +5470,7 @@
     .param p0, "activity"    # Landroid/app/Activity;
 
     .prologue
-    .line 1205
+    .line 1222
     invoke-virtual {p0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
 
     move-result-object v1
@@ -5483,7 +5483,7 @@
 
     move-result v0
 
-    .line 1207
+    .line 1224
     .local v0, "rotation":I
     const/4 v1, 0x3
 
@@ -5493,11 +5493,11 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 1208
+    .line 1225
     :cond_0
     const/4 v1, 0x1
 
-    .line 1212
+    .line 1229
     :goto_0
     return v1
 
@@ -5511,14 +5511,14 @@
     .locals 4
 
     .prologue
-    .line 1216
+    .line 1233
     const v2, 0x7f0b0047
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
     move-result v1
 
-    .line 1217
+    .line 1234
     .local v1, "screen_width":F
     const v2, 0x7f0b0046
 
@@ -5526,7 +5526,7 @@
 
     move-result v0
 
-    .line 1219
+    .line 1236
     .local v0, "screen_height":F
     div-float v2, v1, v0
 
@@ -5554,18 +5554,18 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1151
+    .line 1153
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1152
+    .line 1154
     .local v1, "intentList":Ljava/util/List;, "Ljava/util/List<Landroid/content/IntentFilter;>;"
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1153
+    .line 1155
     .local v0, "componentList":Ljava/util/List;, "Ljava/util/List<Landroid/content/ComponentName;>;"
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -5575,7 +5575,7 @@
 
     invoke-virtual {v2, v1, v0, v3}, Landroid/content/pm/PackageManager;->getPreferredActivities(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I
 
-    .line 1154
+    .line 1156
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -5600,7 +5600,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1164
+    .line 1166
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -5619,12 +5619,65 @@
     return v0
 .end method
 
+.method public static isEuropeanArabicNumerals()Z
+    .locals 7
+
+    .prologue
+    const/16 v6, 0x4d2
+
+    const/4 v2, 0x1
+
+    const/4 v1, 0x0
+
+    .line 1820
+    invoke-static {v6}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "%d"
+
+    new-array v5, v2, [Ljava/lang/Object;
+
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    aput-object v6, v5, v1
+
+    invoke-static {v4, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    .line 1821
+    .local v0, "europeanArabicNumerals":Z
+    invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    if-nez v0, :cond_0
+
+    .line 1824
+    :goto_0
+    return v1
+
+    :cond_0
+    move v1, v2
+
+    goto :goto_0
+.end method
+
 .method public static isExternalEffectSupported(Landroid/content/Context;)Z
     .locals 1
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1223
+    .line 1240
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isKNOXMode()Z
 
     move-result v0
@@ -5637,11 +5690,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 1224
+    .line 1241
     :cond_0
     const/4 v0, 0x0
 
-    .line 1226
+    .line 1243
     :goto_0
     return v0
 
@@ -5656,7 +5709,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1796
+    .line 1813
     const-string v1, "activity"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -5665,7 +5718,7 @@
 
     check-cast v0, Landroid/app/ActivityManager;
 
-    .line 1797
+    .line 1814
     .local v0, "am":Landroid/app/ActivityManager;
     if-eqz v0, :cond_0
 
@@ -5677,10 +5730,10 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 1798
+    .line 1815
     const/4 v1, 0x1
 
-    .line 1800
+    .line 1817
     :goto_0
     return v1
 
@@ -5694,7 +5747,7 @@
     .locals 2
 
     .prologue
-    .line 1231
+    .line 1248
     invoke-static {}, Landroid/os/UserHandle;->semGetMyUserId()I
 
     move-result v0
@@ -5703,10 +5756,10 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 1232
+    .line 1249
     const/4 v0, 0x1
 
-    .line 1234
+    .line 1251
     :goto_0
     return v0
 
@@ -5721,12 +5774,12 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1238
+    .line 1255
     invoke-static {p0}, Lcom/samsung/android/knox/SemPersonaManager;->getKnoxInfoForApp(Landroid/content/Context;)Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 1239
+    .line 1256
     .local v0, "bundle":Landroid/os/Bundle;
     if-eqz v0, :cond_0
 
@@ -5744,10 +5797,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 1240
+    .line 1257
     const/4 v1, 0x1
 
-    .line 1242
+    .line 1259
     :goto_0
     return v1
 
@@ -5762,7 +5815,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1246
+    .line 1263
     const-string v1, "keyguard"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -5771,7 +5824,7 @@
 
     check-cast v0, Landroid/app/KeyguardManager;
 
-    .line 1247
+    .line 1264
     .local v0, "kgm":Landroid/app/KeyguardManager;
     if-eqz v0, :cond_0
 
@@ -5796,12 +5849,12 @@
     .locals 2
 
     .prologue
-    .line 1256
+    .line 1273
     invoke-static {}, Landroid/os/SemSystemProperties;->getSalesCode()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1258
+    .line 1275
     .local v0, "salesCode":Ljava/lang/String;
     const-string v1, "LGT"
 
@@ -5845,7 +5898,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1267
+    .line 1284
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
@@ -5876,16 +5929,16 @@
 
     const/4 v3, 0x0
 
-    .line 1271
+    .line 1288
     const/4 v7, 0x0
 
-    .line 1272
+    .line 1289
     .local v7, "result":Z
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 1273
+    .line 1290
     .local v0, "cr":Landroid/content/ContentResolver;
     invoke-static {}, Landroid/provider/MediaStore;->getMediaScannerUri()Landroid/net/Uri;
 
@@ -5905,26 +5958,26 @@
 
     move-result-object v6
 
-    .line 1274
+    .line 1291
     .local v6, "cursor":Landroid/database/Cursor;
     if-eqz v6, :cond_2
 
-    .line 1275
+    .line 1292
     invoke-interface {v6}, Landroid/database/Cursor;->getCount()I
 
     move-result v1
 
     if-ne v1, v10, :cond_1
 
-    .line 1276
+    .line 1293
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 1277
+    .line 1294
     invoke-interface {v6, v9}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 1278
+    .line 1295
     .local v8, "volumeName":Ljava/lang/String;
     const-string v1, "external"
 
@@ -5942,16 +5995,16 @@
 
     if-eqz v1, :cond_1
 
-    .line 1279
+    .line 1296
     :cond_0
     const/4 v7, 0x1
 
-    .line 1281
+    .line 1298
     .end local v8    # "volumeName":Ljava/lang/String;
     :cond_1
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    .line 1283
+    .line 1300
     :cond_2
     const-string v1, "Util"
 
@@ -5975,7 +6028,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1284
+    .line 1301
     return v7
 .end method
 
@@ -5988,7 +6041,7 @@
 
     const/4 v4, 0x1
 
-    .line 1294
+    .line 1311
     const-string v6, "connectivity"
 
     invoke-virtual {p0, v6}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -5997,19 +6050,19 @@
 
     check-cast v1, Landroid/net/ConnectivityManager;
 
-    .line 1295
+    .line 1312
     .local v1, "manager":Landroid/net/ConnectivityManager;
     invoke-virtual {v1, v5}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
 
     move-result-object v2
 
-    .line 1296
+    .line 1313
     .local v2, "mobile":Landroid/net/NetworkInfo;
     invoke-virtual {v1, v4}, Landroid/net/ConnectivityManager;->getNetworkInfo(I)Landroid/net/NetworkInfo;
 
     move-result-object v3
 
-    .line 1297
+    .line 1314
     .local v3, "wifi":Landroid/net/NetworkInfo;
     const/4 v6, 0x6
 
@@ -6017,11 +6070,11 @@
 
     move-result-object v0
 
-    .line 1299
+    .line 1316
     .local v0, "lte_4g":Landroid/net/NetworkInfo;
     if-eqz v2, :cond_1
 
-    .line 1300
+    .line 1317
     invoke-virtual {v2}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v6
@@ -6042,12 +6095,12 @@
 
     if-eqz v6, :cond_2
 
-    .line 1306
+    .line 1323
     :cond_0
     :goto_0
     return v4
 
-    .line 1303
+    .line 1320
     :cond_1
     invoke-virtual {v3}, Landroid/net/NetworkInfo;->isConnected()Z
 
@@ -6066,7 +6119,7 @@
     :cond_2
     move v4, v5
 
-    .line 1306
+    .line 1323
     goto :goto_0
 .end method
 
@@ -6074,7 +6127,7 @@
     .locals 1
 
     .prologue
-    .line 1310
+    .line 1327
     invoke-static {}, Landroid/os/UserHandle;->semGetMyUserId()I
 
     move-result v0
@@ -6100,7 +6153,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1315
+    .line 1332
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -6110,7 +6163,7 @@
 
     move-result v0
 
-    .line 1316
+    .line 1333
     .local v0, "enable":I
     const/4 v3, 0x2
 
@@ -6120,7 +6173,7 @@
 
     if-ne v3, v0, :cond_1
 
-    .line 1317
+    .line 1334
     :cond_0
     const-string v3, "Util"
 
@@ -6144,12 +6197,12 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1325
+    .line 1342
     .end local v0    # "enable":I
     :goto_0
     return v2
 
-    .line 1320
+    .line 1337
     .restart local v0    # "enable":I
     :cond_1
     const-string v3, "Util"
@@ -6176,17 +6229,17 @@
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1321
+    .line 1338
     const/4 v2, 0x1
 
     goto :goto_0
 
-    .line 1323
+    .line 1340
     .end local v0    # "enable":I
     :catch_0
     move-exception v1
 
-    .line 1324
+    .line 1341
     .local v1, "ex":Ljava/lang/IllegalArgumentException;
     const-string v3, "Util"
 
@@ -6221,7 +6274,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1337
+    .line 1354
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -6233,18 +6286,18 @@
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1338
+    .line 1355
     const/4 v1, 0x1
 
-    .line 1341
+    .line 1358
     :goto_0
     return v1
 
-    .line 1339
+    .line 1356
     :catch_0
     move-exception v0
 
-    .line 1340
+    .line 1357
     .local v0, "ex":Landroid/content/pm/PackageManager$NameNotFoundException;
     const-string v2, "Util"
 
@@ -6280,10 +6333,10 @@
 
     const/4 v4, 0x0
 
-    .line 1578
+    .line 1595
     const/4 v0, 0x0
 
-    .line 1579
+    .line 1596
     .local v0, "inPowerSaveMode":Z
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -6299,7 +6352,7 @@
 
     move v1, v3
 
-    .line 1580
+    .line 1597
     .local v1, "lowPowerMode":Z
     :goto_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -6316,18 +6369,18 @@
 
     move v2, v3
 
-    .line 1581
+    .line 1598
     .local v2, "ultraPowerMode":Z
     :goto_1
     if-nez v2, :cond_0
 
     if-eqz v1, :cond_1
 
-    .line 1582
+    .line 1599
     :cond_0
     const/4 v0, 0x1
 
-    .line 1584
+    .line 1601
     :cond_1
     return v0
 
@@ -6336,14 +6389,14 @@
     :cond_2
     move v1, v4
 
-    .line 1579
+    .line 1596
     goto :goto_0
 
     .restart local v1    # "lowPowerMode":Z
     :cond_3
     move v2, v4
 
-    .line 1580
+    .line 1597
     goto :goto_1
 .end method
 
@@ -6352,7 +6405,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1352
+    .line 1369
     const-string v0, "com.samsung.android.app.qragent"
 
     invoke-static {p0, v0}, Lcom/sec/android/app/camera/util/Util;->isPkgExist(Landroid/content/Context;Ljava/lang/String;)Z
@@ -6370,19 +6423,19 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1363
+    .line 1380
     mul-int/lit8 v1, p0, 0x9
 
     mul-int/lit8 v2, p1, 0x10
 
     if-ne v1, v2, :cond_1
 
-    .line 1372
+    .line 1389
     :cond_0
     :goto_0
     return v0
 
-    .line 1366
+    .line 1383
     :cond_1
     mul-int/lit8 v1, p0, 0x3
 
@@ -6390,10 +6443,10 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 1369
+    .line 1386
     if-eq p0, p1, :cond_0
 
-    .line 1372
+    .line 1389
     const/4 v0, 0x0
 
     goto :goto_0
@@ -6403,7 +6456,7 @@
     .locals 2
 
     .prologue
-    .line 1409
+    .line 1426
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
@@ -6412,7 +6465,7 @@
 
     move-result-object v0
 
-    .line 1410
+    .line 1427
     .local v0, "fontLanguage":Ljava/lang/String;
     const-string v1, "vi"
 
@@ -6454,11 +6507,11 @@
 
     if-eqz v1, :cond_1
 
-    .line 1411
+    .line 1428
     :cond_0
     const/4 v1, 0x1
 
-    .line 1413
+    .line 1430
     :goto_0
     return v1
 
@@ -6472,7 +6525,7 @@
     .locals 2
 
     .prologue
-    .line 1427
+    .line 1444
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
@@ -6481,7 +6534,7 @@
 
     move-result-object v0
 
-    .line 1428
+    .line 1445
     .local v0, "fontLanguage":Ljava/lang/String;
     const-string v1, "ml"
 
@@ -6525,7 +6578,7 @@
 
     const-string v1, "bn"
 
-    .line 1429
+    .line 1446
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -6566,7 +6619,7 @@
 
     const-string v1, "kn"
 
-    .line 1430
+    .line 1447
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -6589,11 +6642,11 @@
 
     if-eqz v1, :cond_1
 
-    .line 1431
+    .line 1448
     :cond_0
     const/4 v1, 0x1
 
-    .line 1433
+    .line 1450
     :goto_0
     return v1
 
@@ -6607,12 +6660,12 @@
     .locals 15
 
     .prologue
-    .line 1376
+    .line 1393
     sget-boolean v8, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_BATT_SAFE_CHECK:Z
 
     if-eqz v8, :cond_1a
 
-    .line 1377
+    .line 1394
     new-instance v2, Ljava/io/File;
 
     const-string v8, "/efs/FactoryApp"
@@ -6621,7 +6674,7 @@
 
     invoke-direct {v2, v8, v9}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1379
+    .line 1396
     .local v2, "file":Ljava/io/File;
     if-eqz v2, :cond_6
 
@@ -6631,14 +6684,14 @@
 
     if-eqz v8, :cond_6
 
-    .line 1380
+    .line 1397
     const-string v4, "1"
 
-    .line 1381
+    .line 1398
     .local v4, "isSafeStr":Ljava/lang/String;
     const-string v5, "0"
 
-    .line 1383
+    .line 1400
     .local v5, "isUnsafeStr":Ljava/lang/String;
     :try_start_0
     new-instance v3, Ljava/io/FileInputStream;
@@ -6650,7 +6703,7 @@
     .local v3, "fis":Ljava/io/FileInputStream;
     const/4 v11, 0x0
 
-    .line 1384
+    .line 1401
     :try_start_1
     new-instance v7, Ljava/io/InputStreamReader;
 
@@ -6661,11 +6714,11 @@
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_3
 
-    .line 1383
+    .line 1400
     .local v7, "reader":Ljava/io/Reader;
     const/4 v10, 0x0
 
-    .line 1385
+    .line 1402
     :try_start_2
     new-instance v0, Ljava/io/BufferedReader;
 
@@ -6674,11 +6727,11 @@
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 1383
+    .line 1400
     .local v0, "br":Ljava/io/BufferedReader;
     const/4 v9, 0x0
 
-    .line 1388
+    .line 1405
     :cond_0
     :try_start_3
     invoke-virtual {v0}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -6688,12 +6741,12 @@
     .local v6, "line":Ljava/lang/String;
     if-eqz v6, :cond_10
 
-    .line 1389
+    .line 1406
     invoke-virtual {v6}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 1390
+    .line 1407
     const-string v8, "Util"
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -6716,7 +6769,7 @@
 
     invoke-static {v8, v12}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1391
+    .line 1408
     const-string v8, "1"
 
     invoke-virtual {v8, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -6728,10 +6781,10 @@
 
     if-eqz v8, :cond_a
 
-    .line 1392
+    .line 1409
     const/4 v8, 0x1
 
-    .line 1396
+    .line 1413
     if-eqz v0, :cond_1
 
     if-eqz v9, :cond_7
@@ -6766,7 +6819,7 @@
     .catch Ljava/lang/Throwable; {:try_start_6 .. :try_end_6} :catch_5
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_3
 
-    .line 1404
+    .line 1421
     .end local v0    # "br":Ljava/io/BufferedReader;
     .end local v3    # "fis":Ljava/io/FileInputStream;
     .end local v4    # "isSafeStr":Ljava/lang/String;
@@ -6777,7 +6830,7 @@
     :goto_2
     return v8
 
-    .line 1396
+    .line 1413
     .restart local v0    # "br":Ljava/io/BufferedReader;
     .restart local v3    # "fis":Ljava/io/FileInputStream;
     .restart local v4    # "isSafeStr":Ljava/lang/String;
@@ -6795,7 +6848,7 @@
 
     goto :goto_0
 
-    .line 1383
+    .line 1400
     .end local v0    # "br":Ljava/io/BufferedReader;
     .end local v6    # "line":Ljava/lang/String;
     :catch_1
@@ -6806,7 +6859,7 @@
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 1396
+    .line 1413
     :catchall_0
     move-exception v9
 
@@ -6835,7 +6888,7 @@
     .catch Ljava/lang/Throwable; {:try_start_a .. :try_end_a} :catch_2
     .catchall {:try_start_a .. :try_end_a} :catchall_3
 
-    .line 1383
+    .line 1400
     .end local v7    # "reader":Ljava/io/Reader;
     :catch_2
     move-exception v8
@@ -6845,7 +6898,7 @@
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_1
 
-    .line 1396
+    .line 1413
     :catchall_1
     move-exception v9
 
@@ -6877,7 +6930,7 @@
     :catch_3
     move-exception v1
 
-    .line 1397
+    .line 1414
     .local v1, "e":Ljava/lang/Exception;
     const-string v8, "Util"
 
@@ -6885,7 +6938,7 @@
 
     invoke-static {v8, v9, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 1401
+    .line 1418
     .end local v1    # "e":Ljava/lang/Exception;
     .end local v4    # "isSafeStr":Ljava/lang/String;
     .end local v5    # "isUnsafeStr":Ljava/lang/String;
@@ -6897,12 +6950,12 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1402
+    .line 1419
     const/4 v8, 0x0
 
     goto :goto_2
 
-    .line 1396
+    .line 1413
     .restart local v0    # "br":Ljava/io/BufferedReader;
     .restart local v3    # "fis":Ljava/io/FileInputStream;
     .restart local v4    # "isSafeStr":Ljava/lang/String;
@@ -6973,7 +7026,7 @@
 
     goto :goto_2
 
-    .line 1393
+    .line 1410
     :cond_a
     :try_start_11
     const-string v8, "0"
@@ -6987,10 +7040,10 @@
 
     if-eqz v8, :cond_0
 
-    .line 1394
+    .line 1411
     const/4 v8, 0x0
 
-    .line 1396
+    .line 1413
     if-eqz v0, :cond_b
 
     if-eqz v9, :cond_d
@@ -7140,7 +7193,7 @@
 
     goto :goto_a
 
-    .line 1383
+    .line 1400
     .end local v6    # "line":Ljava/lang/String;
     :catch_b
     move-exception v8
@@ -7150,7 +7203,7 @@
     :try_end_1e
     .catchall {:try_start_1e .. :try_end_1e} :catchall_4
 
-    .line 1396
+    .line 1413
     :catchall_4
     move-exception v9
 
@@ -7247,7 +7300,7 @@
 
     goto/16 :goto_6
 
-    .line 1404
+    .line 1421
     .end local v2    # "file":Ljava/io/File;
     .end local v3    # "fis":Ljava/io/FileInputStream;
     .end local v4    # "isSafeStr":Ljava/lang/String;
@@ -7257,7 +7310,7 @@
 
     goto/16 :goto_2
 
-    .line 1396
+    .line 1413
     .restart local v0    # "br":Ljava/io/BufferedReader;
     .restart local v2    # "file":Ljava/io/File;
     .restart local v3    # "fis":Ljava/io/FileInputStream;
@@ -7277,18 +7330,18 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1444
+    .line 1461
     const/4 v1, 0x0
 
-    .line 1446
+    .line 1463
     .local v1, "talkbackEnabled":Z
     if-nez p0, :cond_0
 
-    .line 1457
+    .line 1474
     :goto_0
     return v2
 
-    .line 1450
+    .line 1467
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -7300,11 +7353,11 @@
 
     move-result-object v0
 
-    .line 1451
+    .line 1468
     .local v0, "accessibilityService":Ljava/lang/String;
     if-eqz v0, :cond_2
 
-    .line 1454
+    .line 1471
     const-string v3, "(?i).*com.samsung.android.app.talkback.TalkBackService.*"
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
@@ -7315,7 +7368,7 @@
 
     const-string v3, "(?i).*com.google.android.marvin.talkback.TalkBackService.*"
 
-    .line 1455
+    .line 1472
     invoke-virtual {v0, v3}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
 
     move-result v3
@@ -7329,13 +7382,13 @@
     :goto_1
     move v2, v1
 
-    .line 1457
+    .line 1474
     goto :goto_0
 
     :cond_3
     move v1, v2
 
-    .line 1455
+    .line 1472
     goto :goto_1
 .end method
 
@@ -7346,18 +7399,18 @@
     .prologue
     const/4 v8, 0x0
 
-    .line 1461
+    .line 1478
     const/16 v1, 0x3a
 
-    .line 1462
+    .line 1479
     .local v1, "ENABLED_SERVICES_SEPARATOR":C
     const-string v0, "com.google.android.marvin.talkback"
 
-    .line 1463
+    .line 1480
     .local v0, "DEFAULT_SCREENREADER_NAME":Ljava/lang/String;
     const-string v2, "com.samsung.android.app.talkback"
 
-    .line 1464
+    .line 1481
     .local v2, "SAMSUNG_SCREENREADER_NAME":Ljava/lang/String;
     new-instance v7, Landroid/text/TextUtils$SimpleStringSplitter;
 
@@ -7365,20 +7418,20 @@
 
     invoke-direct {v7, v9}, Landroid/text/TextUtils$SimpleStringSplitter;-><init>(C)V
 
-    .line 1466
+    .line 1483
     .local v7, "sStringColonSplitter":Landroid/text/TextUtils$SimpleStringSplitter;
     if-nez p0, :cond_1
 
-    .line 1491
+    .line 1508
     :cond_0
     :goto_0
     return v8
 
-    .line 1469
+    .line 1486
     :cond_1
     const/4 v6, 0x0
 
-    .line 1470
+    .line 1487
     .local v6, "enabledServicesSetting":Ljava/lang/String;
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -7390,21 +7443,21 @@
 
     move-result-object v6
 
-    .line 1471
+    .line 1488
     if-nez v6, :cond_2
 
-    .line 1472
+    .line 1489
     const-string v6, ""
 
-    .line 1475
+    .line 1492
     :cond_2
     move-object v3, v7
 
-    .line 1477
+    .line 1494
     .local v3, "colonSplitter":Landroid/text/TextUtils$SimpleStringSplitter;
     invoke-virtual {v3, v6}, Landroid/text/TextUtils$SimpleStringSplitter;->setString(Ljava/lang/String;)V
 
-    .line 1479
+    .line 1496
     :cond_3
     invoke-virtual {v3}, Landroid/text/TextUtils$SimpleStringSplitter;->hasNext()Z
 
@@ -7412,22 +7465,22 @@
 
     if-eqz v9, :cond_0
 
-    .line 1480
+    .line 1497
     invoke-virtual {v3}, Landroid/text/TextUtils$SimpleStringSplitter;->next()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1481
+    .line 1498
     .local v4, "componentNameString":Ljava/lang/String;
     invoke-static {v4}, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
 
     move-result-object v5
 
-    .line 1483
+    .line 1500
     .local v5, "enabledService":Landroid/content/ComponentName;
     if-eqz v5, :cond_3
 
-    .line 1484
+    .line 1501
     const-string v9, "com.google.android.marvin.talkback"
 
     invoke-virtual {v5}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
@@ -7442,7 +7495,7 @@
 
     const-string v9, "com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService"
 
-    .line 1485
+    .line 1502
     invoke-virtual {v6, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v9
@@ -7452,7 +7505,7 @@
     :cond_4
     const-string v9, "com.samsung.android.app.talkback"
 
-    .line 1486
+    .line 1503
     invoke-virtual {v5}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
     move-result-object v10
@@ -7465,14 +7518,14 @@
 
     const-string v9, "com.samsung.android.app.talkback/com.samsung.android.app.talkback.TalkBackService"
 
-    .line 1487
+    .line 1504
     invoke-virtual {v6, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v9
 
     if-eqz v9, :cond_3
 
-    .line 1488
+    .line 1505
     :cond_5
     const/4 v8, 0x1
 
@@ -7484,7 +7537,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1495
+    .line 1512
     const-string v1, "keyguard"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -7493,7 +7546,7 @@
 
     check-cast v0, Landroid/app/KeyguardManager;
 
-    .line 1496
+    .line 1513
     .local v0, "kgm":Landroid/app/KeyguardManager;
     if-eqz v0, :cond_0
 
@@ -7525,7 +7578,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1423
+    .line 1440
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
@@ -7572,7 +7625,7 @@
 
     const/4 v1, 0x0
 
-    .line 1500
+    .line 1517
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -7599,18 +7652,18 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1504
+    .line 1521
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 1505
+    .line 1522
     .local v0, "intent":Landroid/content/Intent;
     const-string v1, "com.samsung.android.sm.ACTION_STORAGE"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1507
+    .line 1524
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
@@ -7621,10 +7674,50 @@
 
     if-eqz v1, :cond_0
 
-    .line 1508
+    .line 1525
     const/4 v1, 0x1
 
-    .line 1510
+    .line 1527
+    :goto_0
+    return v1
+
+    :cond_0
+    const/4 v1, 0x0
+
+    goto :goto_0
+.end method
+
+.method public static isSocialSupported()Z
+    .locals 3
+
+    .prologue
+    .line 1188
+    invoke-static {}, Lcom/samsung/android/feature/SemCscFeature;->getInstance()Lcom/samsung/android/feature/SemCscFeature;
+
+    move-result-object v1
+
+    const-string v2, "CscFeature_Common_ConfigYuva"
+
+    invoke-virtual {v1, v2}, Lcom/samsung/android/feature/SemCscFeature;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 1189
+    .local v0, "social":Ljava/lang/String;
+    if-eqz v0, :cond_0
+
+    const-string v1, "social"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 1190
+    const/4 v1, 0x1
+
+    .line 1192
     :goto_0
     return v1
 
@@ -7638,14 +7731,14 @@
     .locals 2
 
     .prologue
-    .line 1519
+    .line 1536
     invoke-static {}, Landroid/os/SemSystemProperties;->getCountryCode()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 1520
+    .line 1537
     invoke-static {}, Landroid/os/SemSystemProperties;->getCountryCode()Ljava/lang/String;
 
     move-result-object v1
@@ -7654,7 +7747,7 @@
 
     move-result-object v0
 
-    .line 1521
+    .line 1538
     .local v0, "countryCode":Ljava/lang/String;
     const-string v1, "CHINA"
 
@@ -7698,7 +7791,7 @@
 
     const-string v1, "JP"
 
-    .line 1522
+    .line 1539
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -7731,7 +7824,7 @@
 
     const-string v1, "MALAYSIA"
 
-    .line 1523
+    .line 1540
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -7764,7 +7857,7 @@
 
     const-string v1, "LAOS"
 
-    .line 1524
+    .line 1541
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -7787,11 +7880,11 @@
 
     if-eqz v1, :cond_1
 
-    .line 1525
+    .line 1542
     :cond_0
     const/4 v1, 0x1
 
-    .line 1528
+    .line 1545
     :goto_0
     return v1
 
@@ -7816,11 +7909,11 @@
     .end annotation
 
     .prologue
-    .line 1538
+    .line 1555
     .local p0, "sizes":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/camera/core/SemCamera$Size;>;"
     if-eqz p0, :cond_1
 
-    .line 1539
+    .line 1556
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -7838,7 +7931,7 @@
 
     check-cast v0, Lcom/samsung/android/camera/core/SemCamera$Size;
 
-    .line 1540
+    .line 1557
     .local v0, "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     iget v2, v0, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
@@ -7848,10 +7941,10 @@
 
     if-ne v2, p2, :cond_0
 
-    .line 1541
+    .line 1558
     const/4 v1, 0x1
 
-    .line 1545
+    .line 1562
     .end local v0    # "size":Lcom/samsung/android/camera/core/SemCamera$Size;
     :goto_0
     return v1
@@ -7869,7 +7962,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1549
+    .line 1566
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -7897,14 +7990,14 @@
 
     const/4 v2, 0x0
 
-    .line 1553
+    .line 1570
     if-nez p0, :cond_0
 
-    .line 1569
+    .line 1586
     :goto_0
     return v2
 
-    .line 1557
+    .line 1574
     :cond_0
     const-string v4, "accessibility"
 
@@ -7914,16 +8007,16 @@
 
     check-cast v0, Landroid/view/accessibility/AccessibilityManager;
 
-    .line 1558
+    .line 1575
     .local v0, "accessibilityManager":Landroid/view/accessibility/AccessibilityManager;
     if-eqz v0, :cond_2
 
-    .line 1559
+    .line 1576
     invoke-virtual {v0, v3}, Landroid/view/accessibility/AccessibilityManager;->getEnabledAccessibilityServiceList(I)Ljava/util/List;
 
     move-result-object v1
 
-    .line 1560
+    .line 1577
     .local v1, "enabledServices":Ljava/util/List;, "Ljava/util/List<Landroid/accessibilityservice/AccessibilityServiceInfo;>;"
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -7931,27 +8024,27 @@
 
     if-lez v4, :cond_1
 
-    .line 1561
+    .line 1578
     const/4 v0, 0x0
 
     move v2, v3
 
-    .line 1562
+    .line 1579
     goto :goto_0
 
-    .line 1564
+    .line 1581
     :cond_1
     const/4 v0, 0x0
 
-    .line 1565
+    .line 1582
     goto :goto_0
 
-    .line 1568
+    .line 1585
     .end local v1    # "enabledServices":Ljava/util/List;, "Ljava/util/List<Landroid/accessibilityservice/AccessibilityServiceInfo;>;"
     :cond_2
     const/4 v0, 0x0
 
-    .line 1569
+    .line 1586
     goto :goto_0
 .end method
 
@@ -7960,12 +8053,12 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1574
+    .line 1591
     invoke-static {p0}, Lcom/samsung/android/emergencymode/SemEmergencyManager;->getInstance(Landroid/content/Context;)Lcom/samsung/android/emergencymode/SemEmergencyManager;
 
     move-result-object v0
 
-    .line 1575
+    .line 1592
     .local v0, "em":Lcom/samsung/android/emergencymode/SemEmergencyManager;
     invoke-static {p0}, Lcom/samsung/android/emergencymode/SemEmergencyManager;->isEmergencyMode(Landroid/content/Context;)Z
 
@@ -7996,7 +8089,7 @@
     .locals 2
 
     .prologue
-    .line 1186
+    .line 1203
     invoke-static {}, Landroid/os/SemSystemProperties;->getCountryCode()Ljava/lang/String;
 
     move-result-object v1
@@ -8005,7 +8098,7 @@
 
     move-result-object v0
 
-    .line 1187
+    .line 1204
     .local v0, "countryCode":Ljava/lang/String;
     const-string v1, "USA"
 
@@ -8015,10 +8108,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 1188
+    .line 1205
     const/4 v1, 0x1
 
-    .line 1190
+    .line 1207
     :goto_0
     return v1
 
@@ -8032,7 +8125,7 @@
     .locals 2
 
     .prologue
-    .line 1594
+    .line 1611
     invoke-static {}, Landroid/os/SemSystemProperties;->getSalesCode()Ljava/lang/String;
 
     move-result-object v1
@@ -8041,7 +8134,7 @@
 
     move-result-object v0
 
-    .line 1595
+    .line 1612
     .local v0, "salesCode":Ljava/lang/String;
     const-string v1, "VZW"
 
@@ -8051,10 +8144,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 1596
+    .line 1613
     const/4 v1, 0x1
 
-    .line 1598
+    .line 1615
     :goto_0
     return v1
 
@@ -8071,7 +8164,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1608
+    .line 1625
     const-string v2, "connectivity"
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -8080,7 +8173,7 @@
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 1609
+    .line 1626
     .local v0, "cm":Landroid/net/ConnectivityManager;
     invoke-virtual {v0, v1}, Landroid/net/ConnectivityManager;->semIsNetworkSupported(I)Z
 
@@ -8101,21 +8194,21 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1619
+    .line 1636
     if-nez p0, :cond_1
 
-    .line 1626
+    .line 1643
     :cond_0
     :goto_0
     return v1
 
-    .line 1622
+    .line 1639
     :cond_1
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1623
+    .line 1640
     .local v0, "dir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -8123,7 +8216,7 @@
 
     if-nez v2, :cond_0
 
-    .line 1626
+    .line 1643
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v1
@@ -8138,28 +8231,28 @@
     .param p2, "statusValue"    # Z
 
     .prologue
-    .line 1631
+    .line 1648
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 1632
+    .line 1649
     .local v0, "boostIntent":Landroid/content/Intent;
     const-string v1, "com.samsung.intent.action.SSRM_REQUEST"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1633
+    .line 1650
     const-string v1, "SSRM_STATUS_NAME"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1634
+    .line 1651
     const-string v1, "SSRM_STATUS_VALUE"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 1635
+    .line 1652
     const-string v1, "PackageName"
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -8172,7 +8265,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1636
+    .line 1653
     const-string v1, "PID"
 
     invoke-static {}, Landroid/os/Process;->myPid()I
@@ -8181,10 +8274,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1637
+    .line 1654
     invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1638
+    .line 1655
     return-void
 .end method
 
@@ -8196,33 +8289,33 @@
     .param p3, "recordingResolution"    # Ljava/lang/String;
 
     .prologue
-    .line 1649
+    .line 1666
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 1650
+    .line 1667
     .local v0, "boostIntent":Landroid/content/Intent;
     const-string v1, "com.samsung.intent.action.SSRM_REQUEST"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1651
+    .line 1668
     const-string v1, "SSRM_STATUS_NAME"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1652
+    .line 1669
     const-string v1, "SSRM_STATUS_VALUE"
 
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 1653
+    .line 1670
     const-string v1, "SSRM_STATUS_RESOLUTION"
 
     invoke-virtual {v0, v1, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1654
+    .line 1671
     const-string v1, "PackageName"
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -8235,7 +8328,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1655
+    .line 1672
     const-string v1, "PID"
 
     invoke-static {}, Landroid/os/Process;->myPid()I
@@ -8244,10 +8337,10 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 1656
+    .line 1673
     invoke-virtual {p0, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1657
+    .line 1674
     return-void
 .end method
 
@@ -8260,7 +8353,7 @@
 
     const/4 v4, 0x1
 
-    .line 1661
+    .line 1678
     const-string v3, "window"
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -8269,7 +8362,7 @@
 
     check-cast v2, Landroid/view/WindowManager;
 
-    .line 1663
+    .line 1680
     .local v2, "windowManager":Landroid/view/WindowManager;
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -8279,7 +8372,7 @@
 
     move-result-object v0
 
-    .line 1665
+    .line 1682
     .local v0, "config":Landroid/content/res/Configuration;
     invoke-interface {v2}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
@@ -8289,7 +8382,7 @@
 
     move-result v1
 
-    .line 1668
+    .line 1685
     .local v1, "rotation":I
     if-eqz v1, :cond_0
 
@@ -8312,15 +8405,15 @@
 
     if-ne v3, v4, :cond_4
 
-    .line 1670
+    .line 1687
     :cond_3
     sput v5, Lcom/sec/android/app/camera/util/Util;->mDefaultDeviceOrientation:I
 
-    .line 1674
+    .line 1691
     :goto_0
     return-void
 
-    .line 1672
+    .line 1689
     :cond_4
     sput v4, Lcom/sec/android/app/camera/util/Util;->mDefaultDeviceOrientation:I
 
@@ -8332,7 +8425,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1678
+    .line 1695
     const-string v1, "audio"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -8341,18 +8434,18 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    .line 1679
+    .line 1696
     .local v0, "mAudioManager":Landroid/media/AudioManager;
     sget v1, Lcom/sec/android/app/camera/util/Util;->mRingerMode:I
 
     if-eqz v1, :cond_0
 
-    .line 1680
+    .line 1697
     sget v1, Lcom/sec/android/app/camera/util/Util;->mRingerMode:I
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setRingerMode(I)V
 
-    .line 1682
+    .line 1699
     :cond_0
     return-void
 .end method
@@ -8362,7 +8455,7 @@
     .param p0, "orientation"    # I
 
     .prologue
-    .line 1689
+    .line 1706
     add-int/lit8 v0, p0, 0x2d
 
     div-int/lit8 v0, v0, 0x5a
@@ -8380,7 +8473,7 @@
     .param p1, "data"    # [B
 
     .prologue
-    .line 1693
+    .line 1710
     :try_start_0
     new-instance v1, Ljava/io/FileOutputStream;
 
@@ -8391,14 +8484,14 @@
     .local v1, "f":Ljava/io/FileOutputStream;
     const/4 v3, 0x0
 
-    .line 1694
+    .line 1711
     :try_start_1
     invoke-virtual {v1, p1}, Ljava/io/FileOutputStream;->write([B)V
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1695
+    .line 1712
     if-eqz v1, :cond_0
 
     if-eqz v3, :cond_1
@@ -8409,7 +8502,7 @@
     .catch Ljava/lang/Throwable; {:try_start_2 .. :try_end_2} :catch_0
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 1698
+    .line 1715
     :cond_0
     :goto_0
     const/4 v2, 0x1
@@ -8418,7 +8511,7 @@
     :goto_1
     return v2
 
-    .line 1695
+    .line 1712
     .restart local v1    # "f":Ljava/io/FileOutputStream;
     :catch_0
     move-exception v2
@@ -8432,13 +8525,13 @@
     :catch_1
     move-exception v0
 
-    .line 1696
+    .line 1713
     .local v0, "e":Ljava/io/IOException;
     const/4 v2, 0x0
 
     goto :goto_1
 
-    .line 1695
+    .line 1712
     .end local v0    # "e":Ljava/io/IOException;
     .restart local v1    # "f":Ljava/io/FileOutputStream;
     :cond_1
@@ -8448,7 +8541,7 @@
 
     goto :goto_0
 
-    .line 1693
+    .line 1710
     :catch_2
     move-exception v3
 
@@ -8457,7 +8550,7 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 1695
+    .line 1712
     :catchall_0
     move-exception v2
 
@@ -8496,14 +8589,14 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1702
+    .line 1719
     const-string v0, "Util"
 
     const-string v1, "setHighAccuracyLocationMode"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1703
+    .line 1720
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -8514,7 +8607,7 @@
 
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1704
+    .line 1721
     return-void
 .end method
 
@@ -8523,36 +8616,36 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1707
+    .line 1724
     invoke-static {p0}, Lcom/sec/android/app/camera/util/Util;->getHelpVersion(Landroid/content/Context;)I
 
     move-result v2
 
-    .line 1708
+    .line 1725
     .local v2, "version":I
     const/4 v3, 0x1
 
     if-ne v2, v3, :cond_1
 
-    .line 1732
+    .line 1749
     :cond_0
     :goto_0
     return-void
 
-    .line 1712
+    .line 1729
     :cond_1
     const/4 v3, 0x2
 
     if-ne v2, v3, :cond_2
 
-    .line 1714
+    .line 1731
     new-instance v1, Landroid/content/Intent;
 
     const-string v3, "com.samsung.helphub.HELP"
 
     invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1715
+    .line 1732
     .local v1, "intent":Landroid/content/Intent;
     const-string v3, "helphub:section"
 
@@ -8560,7 +8653,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1718
+    .line 1735
     :try_start_0
     invoke-virtual {p0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
@@ -8568,11 +8661,11 @@
 
     goto :goto_0
 
-    .line 1719
+    .line 1736
     :catch_0
     move-exception v0
 
-    .line 1720
+    .line 1737
     .local v0, "e":Landroid/content/ActivityNotFoundException;
     const-string v3, "Util"
 
@@ -8602,7 +8695,7 @@
 
     goto :goto_0
 
-    .line 1722
+    .line 1739
     .end local v0    # "e":Landroid/content/ActivityNotFoundException;
     .end local v1    # "intent":Landroid/content/Intent;
     :cond_2
@@ -8610,14 +8703,14 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 1724
+    .line 1741
     new-instance v1, Landroid/content/Intent;
 
     const-string v3, "com.samsung.helphub.HELP"
 
     invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1725
+    .line 1742
     .restart local v1    # "intent":Landroid/content/Intent;
     const-string v3, "helphub:appid"
 
@@ -8625,7 +8718,7 @@
 
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1727
+    .line 1744
     :try_start_1
     invoke-virtual {p0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_1
@@ -8633,11 +8726,11 @@
 
     goto :goto_0
 
-    .line 1728
+    .line 1745
     :catch_1
     move-exception v0
 
-    .line 1729
+    .line 1746
     .restart local v0    # "e":Landroid/content/ActivityNotFoundException;
     const-string v3, "Util"
 
@@ -8673,7 +8766,7 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 1736
+    .line 1753
     const-string v1, "audio"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -8682,7 +8775,7 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    .line 1737
+    .line 1754
     .local v0, "mAudioManager":Landroid/media/AudioManager;
     invoke-virtual {v0}, Landroid/media/AudioManager;->getRingerMode()I
 
@@ -8690,17 +8783,17 @@
 
     sput v1, Lcom/sec/android/app/camera/util/Util;->mRingerMode:I
 
-    .line 1738
+    .line 1755
     sget v1, Lcom/sec/android/app/camera/util/Util;->mRingerMode:I
 
     if-eqz v1, :cond_0
 
-    .line 1739
+    .line 1756
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setRingerMode(I)V
 
-    .line 1741
+    .line 1758
     :cond_0
     return-void
 .end method
@@ -8713,15 +8806,15 @@
     .param p3, "screenHeight"    # I
 
     .prologue
-    .line 1759
+    .line 1776
     packed-switch p1, :pswitch_data_0
 
-    .line 1773
+    .line 1790
     :goto_0
     :pswitch_0
     return-void
 
-    .line 1761
+    .line 1778
     :pswitch_1
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getY()F
 
@@ -8739,7 +8832,7 @@
 
     goto :goto_0
 
-    .line 1764
+    .line 1781
     :pswitch_2
     int-to-float v0, p2
 
@@ -8757,7 +8850,7 @@
 
     goto :goto_0
 
-    .line 1767
+    .line 1784
     :pswitch_3
     int-to-float v0, p2
 
@@ -8779,7 +8872,7 @@
 
     goto :goto_0
 
-    .line 1759
+    .line 1776
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1
@@ -8798,7 +8891,7 @@
     .param p4, "targetHeight"    # I
 
     .prologue
-    .line 1786
+    .line 1803
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
@@ -8821,6 +8914,6 @@
 
     invoke-virtual {p0, v0, v1}, Landroid/view/MotionEvent;->setLocation(FF)V
 
-    .line 1787
+    .line 1804
     return-void
 .end method

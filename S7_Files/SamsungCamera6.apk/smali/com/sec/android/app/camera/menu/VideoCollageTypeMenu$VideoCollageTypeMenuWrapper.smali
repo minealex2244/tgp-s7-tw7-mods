@@ -463,7 +463,7 @@
     .line 651
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/VideoCollageTypeMenu$VideoCollageTypeMenuWrapper;->mList:Lcom/samsung/android/glview/GLList;
 
-    const v1, 0x7f0202d0
+    const v1, 0x7f0202cf
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLList;->setScrollBarResource(I)V
 

@@ -72,7 +72,7 @@
     iput v1, p0, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;->THUMBNAIL_TEXT_COLOR:I
 
     .line 39
-    const v1, 0x7f0b00f8
+    const v1, 0x7f0b00f9
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -158,7 +158,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;->THUMBNAIL_TEXT_COLOR:I
 
     .line 39
-    const v0, 0x7f0b00f8
+    const v0, 0x7f0b00f9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -223,7 +223,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;->THUMBNAIL_TEXT_COLOR:I
 
     .line 39
-    const v0, 0x7f0b00f8
+    const v0, 0x7f0b00f9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

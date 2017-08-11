@@ -29,7 +29,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/engine/CommonEngine$23;
 
     .prologue
-    .line 7296
+    .line 7329
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
 
     iput-object p2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->val$jpegData:[B
@@ -45,19 +45,19 @@
     .locals 24
 
     .prologue
-    .line 7299
+    .line 7332
     const-string v6, "Video SnapShot Saving Thread"
 
     invoke-static {v6}, Lcom/sec/android/app/TraceWrapper;->traceBegin(Ljava/lang/String;)V
 
-    .line 7300
+    .line 7333
     const-string v6, "CommonEngine"
 
     const-string v7, "starting save..."
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7302
+    .line 7335
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -71,7 +71,7 @@
     iget-object v7, v7, Lcom/sec/android/app/camera/engine/CommonEngine$23;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mOrientationOnTake:I
-    invoke-static {v7}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4100(Lcom/sec/android/app/camera/engine/CommonEngine;)I
+    invoke-static {v7}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4200(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v7
 
@@ -79,7 +79,7 @@
 
     move-result v18
 
-    .line 7303
+    .line 7336
     .local v18, "orientationForPicture":I
     const-string v6, "CommonEngine"
 
@@ -107,12 +107,12 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7304
+    .line 7337
     invoke-static/range {v18 .. v18}, Lcom/sec/android/app/camera/util/Util;->convertToExifInterfaceOrientation(I)I
 
     move-result v17
 
-    .line 7305
+    .line 7338
     .local v17, "orientationForExif":I
     const-string v6, "CommonEngine"
 
@@ -140,18 +140,18 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7307
+    .line 7340
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
 
-    .line 7308
+    .line 7341
     .local v4, "dateTaken":J
     invoke-static {v4, v5}, Lcom/sec/android/app/camera/util/ImageUtils;->createName(J)Ljava/lang/String;
 
     move-result-object v16
 
-    .line 7309
+    .line 7342
     .local v16, "name":Ljava/lang/String;
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -173,11 +173,11 @@
 
     move-result-object v3
 
-    .line 7310
+    .line 7343
     .local v3, "filename":Ljava/lang/String;
     const-string v2, ""
 
-    .line 7311
+    .line 7344
     .local v2, "directory":Ljava/lang/String;
     move-object/from16 v0, p0
 
@@ -193,7 +193,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 7312
+    .line 7345
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -210,7 +210,7 @@
 
     move-result-object v2
 
-    .line 7317
+    .line 7350
     :goto_0
     new-instance v10, Ljava/io/File;
 
@@ -238,11 +238,11 @@
 
     invoke-direct {v10, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 7318
+    .line 7351
     .local v10, "f":Ljava/io/File;
     const/4 v12, 0x0
 
-    .line 7319
+    .line 7352
     .local v12, "filenumber":I
     :goto_1
     invoke-virtual {v10}, Ljava/io/File;->exists()Z
@@ -251,14 +251,14 @@
 
     if-eqz v6, :cond_1
 
-    .line 7320
+    .line 7353
     const-string v6, "CommonEngine"
 
     const-string v7, "Duplicated file name found"
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7321
+    .line 7354
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -299,14 +299,14 @@
 
     move-result-object v3
 
-    .line 7322
+    .line 7355
     const-string v6, "CommonEngine"
 
     const-string v7, "New file name created"
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7323
+    .line 7356
     new-instance v10, Ljava/io/File;
 
     .end local v10    # "f":Ljava/io/File;
@@ -341,7 +341,7 @@
     .restart local v12    # "filenumber":I
     goto :goto_1
 
-    .line 7314
+    .line 7347
     .end local v10    # "f":Ljava/io/File;
     .end local v12    # "filenumber":I
     :cond_0
@@ -363,7 +363,7 @@
 
     goto/16 :goto_0
 
-    .line 7326
+    .line 7359
     .restart local v10    # "f":Ljava/io/File;
     .restart local v12    # "filenumber":I
     :cond_1
@@ -375,7 +375,7 @@
 
     invoke-static/range {v2 .. v7}, Lcom/sec/android/app/camera/util/ImageUtils;->addImage(Ljava/lang/String;Ljava/lang/String;JLandroid/graphics/Bitmap;[B)Z
 
-    .line 7328
+    .line 7361
     new-instance v20, Landroid/content/ContentValues;
 
     const/16 v6, 0xa
@@ -384,7 +384,7 @@
 
     invoke-direct {v0, v6}, Landroid/content/ContentValues;-><init>(I)V
 
-    .line 7330
+    .line 7363
     .local v20, "values":Landroid/content/ContentValues;
     const-string v6, "_display_name"
 
@@ -392,7 +392,7 @@
 
     invoke-virtual {v0, v6, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7331
+    .line 7364
     const-string v6, "datetaken"
 
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -403,7 +403,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 7332
+    .line 7365
     const-string v6, "mime_type"
 
     const-string v7, "image/jpeg"
@@ -412,7 +412,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7333
+    .line 7366
     const-string v6, "height"
 
     move-object/from16 v0, p0
@@ -440,7 +440,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 7334
+    .line 7367
     const-string v6, "width"
 
     move-object/from16 v0, p0
@@ -468,7 +468,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 7335
+    .line 7368
     const-string v6, "orientation"
 
     invoke-static/range {v18 .. v18}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -479,7 +479,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 7336
+    .line 7369
     const-string v6, "_data"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -510,10 +510,10 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7338
+    .line 7371
     const/4 v15, 0x0
 
-    .line 7339
+    .line 7372
     .local v15, "location":Landroid/location/Location;
     move-object/from16 v0, p0
 
@@ -525,7 +525,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 7340
+    .line 7373
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -538,11 +538,11 @@
 
     move-result-object v15
 
-    .line 7342
+    .line 7375
     :cond_2
     if-eqz v15, :cond_3
 
-    .line 7343
+    .line 7376
     const-string v6, "latitude"
 
     invoke-virtual {v15}, Landroid/location/Location;->getLatitude()D
@@ -561,7 +561,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Float;)V
 
-    .line 7344
+    .line 7377
     const-string v6, "longitude"
 
     invoke-virtual {v15}, Landroid/location/Location;->getLongitude()D
@@ -580,7 +580,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Float;)V
 
-    .line 7347
+    .line 7380
     :cond_3
     const-string v6, "langagecode"
 
@@ -596,7 +596,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7348
+    .line 7381
     const-string v6, "addr"
 
     move-object/from16 v0, p0
@@ -606,7 +606,7 @@
     iget-object v7, v7, Lcom/sec/android/app/camera/engine/CommonEngine$23;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mAddressValue:Ljava/lang/String;
-    invoke-static {v7}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4200(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/String;
+    invoke-static {v7}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4300(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -614,7 +614,7 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7351
+    .line 7384
     const-string v6, "_size"
 
     new-instance v7, Ljava/io/File;
@@ -633,10 +633,10 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 7353
+    .line 7386
     const/4 v11, 0x0
 
-    .line 7356
+    .line 7389
     .local v11, "fileUri":Landroid/net/Uri;
     :try_start_0
     move-object/from16 v0, p0
@@ -646,7 +646,7 @@
     iget-object v6, v6, Lcom/sec/android/app/camera/engine/CommonEngine$23;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mContentResolver:Landroid/content/ContentResolver;
-    invoke-static {v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4300(Lcom/sec/android/app/camera/engine/CommonEngine;)Landroid/content/ContentResolver;
+    invoke-static {v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;)Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -658,7 +658,7 @@
 
     move-result-object v11
 
-    .line 7358
+    .line 7391
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -683,7 +683,7 @@
 
     if-eqz v11, :cond_4
 
-    .line 7359
+    .line 7392
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -710,7 +710,7 @@
 
     invoke-virtual {v6, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 7362
+    .line 7395
     :cond_4
     move-object/from16 v0, p0
 
@@ -722,12 +722,12 @@
 
     if-eqz v6, :cond_5
 
-    .line 7363
+    .line 7396
     new-instance v8, Ljava/util/ArrayList;
 
     invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
-    .line 7364
+    .line 7397
     .local v8, "cvs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     move-object/from16 v0, p0
 
@@ -743,7 +743,7 @@
 
     if-eqz v6, :cond_7
 
-    .line 7365
+    .line 7398
     const-string v6, "Z002"
 
     const-string v7, "RECORDING_SNAPSHOT"
@@ -754,7 +754,7 @@
 
     invoke-virtual {v8, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 7369
+    .line 7402
     :goto_2
     move-object/from16 v0, p0
 
@@ -782,7 +782,7 @@
 
     invoke-static {v7, v6}, Lcom/sec/android/app/camera/util/Util;->broadcastMultipleGeneralEventForLogging(Landroid/content/Context;[Landroid/content/ContentValues;)V
 
-    .line 7371
+    .line 7404
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -801,7 +801,7 @@
 
     if-eqz v6, :cond_5
 
-    .line 7372
+    .line 7405
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -816,7 +816,7 @@
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 7398
+    .line 7431
     .end local v8    # "cvs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     :cond_5
     :goto_3
@@ -836,7 +836,7 @@
 
     if-eqz v6, :cond_6
 
-    .line 7399
+    .line 7432
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -849,7 +849,7 @@
 
     invoke-virtual {v6, v7}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 7400
+    .line 7433
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -857,13 +857,13 @@
     iget-object v6, v6, Lcom/sec/android/app/camera/engine/CommonEngine$23;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSingleCaptureEventListener:Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
-    invoke-static {v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
+    invoke-static {v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4500(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
 
     move-result-object v6
 
     if-eqz v6, :cond_6
 
-    .line 7401
+    .line 7434
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -871,20 +871,20 @@
     iget-object v6, v6, Lcom/sec/android/app/camera/engine/CommonEngine$23;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSingleCaptureEventListener:Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
-    invoke-static {v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
+    invoke-static {v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4500(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
 
     move-result-object v6
 
     invoke-interface {v6}, Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;->onSingleCaptureCompleted()V
 
-    .line 7405
+    .line 7438
     :cond_6
     invoke-static {}, Lcom/sec/android/app/TraceWrapper;->traceEnd()V
 
-    .line 7406
+    .line 7439
     return-void
 
-    .line 7367
+    .line 7400
     .restart local v8    # "cvs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     :cond_7
     :try_start_1
@@ -904,12 +904,12 @@
 
     goto :goto_2
 
-    .line 7375
+    .line 7408
     .end local v8    # "cvs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     :catch_0
     move-exception v19
 
-    .line 7376
+    .line 7409
     .local v19, "sfe":Landroid/database/sqlite/SQLiteFullException;
     const-string v6, "CommonEngine"
 
@@ -917,7 +917,7 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7377
+    .line 7410
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -928,7 +928,7 @@
 
     if-eqz v6, :cond_5
 
-    .line 7378
+    .line 7411
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -951,12 +951,12 @@
 
     goto :goto_3
 
-    .line 7385
+    .line 7418
     .end local v19    # "sfe":Landroid/database/sqlite/SQLiteFullException;
     :catch_1
     move-exception v14
 
-    .line 7386
+    .line 7419
     .local v14, "ise":Ljava/lang/IllegalStateException;
     const-string v6, "CommonEngine"
 
@@ -964,7 +964,7 @@
 
     invoke-static {v6, v7}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7387
+    .line 7420
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -975,7 +975,7 @@
 
     if-eqz v6, :cond_5
 
-    .line 7388
+    .line 7421
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/engine/CommonEngine$23$1;->this$1:Lcom/sec/android/app/camera/engine/CommonEngine$23;
@@ -998,12 +998,12 @@
 
     goto/16 :goto_3
 
-    .line 7395
+    .line 7428
     .end local v14    # "ise":Ljava/lang/IllegalStateException;
     :catch_2
     move-exception v9
 
-    .line 7396
+    .line 7429
     .local v9, "e":Ljava/lang/IllegalArgumentException;
     const-string v6, "CommonEngine"
 

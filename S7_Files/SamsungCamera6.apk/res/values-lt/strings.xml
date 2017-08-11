@@ -191,6 +191,8 @@ Panoraminis kadras: fotografuodami judančius objektus užfiksuokite judėjimo �
     <string name="SM_SLOW_VIDEO_description">Įrašykite vaizdo įrašus didele kadrų sparta, kad galėtumėte peržiūrėti sulėtintus vaizdus. Įrašę galite sulėtintai atkurti konkrečią kiekvieno vaizdo įrašo dalį.</string>
     <string name="SM_SMART_SELFSHOT">Autoportretas galiniu fotoaparatu</string>
     <string name="SM_SMART_SELFSHOT_description">Darant autoportreto nuotraukas galinis fotoaparatas automatiškai aptiks ir sufokusuos jūsų veidą.</string>
+    <string name="SM_SOCIAL">Socialinis</string>
+    <string name="SM_SOCIAL_description">Užfiksuokite nuotraukų ir bendrinkite jas lengvai socialiniuose tinkluose.</string>
     <string name="SM_SPORTS">Sportas</string>
     <string name="SM_SPORTS_SCENE_description">Darykite ryškesnes greitai judančių objektų nuotraukas.</string>
     <string name="SM_STORY">Fotografuoti su garsu</string>
@@ -267,7 +269,7 @@ nuotraukas"</string>
     <string name="Title_WhiteBalance">Baltos balansas</string>
     <string name="Title_common">Bendra</string>
     <string name="Title_front">Priekinis fotoaparatas</string>
-    <string name="Title_rear">Užpakalinis fotoaparatas</string>
+    <string name="Title_rear">Galinis fotoaparatas</string>
     <string name="Title_rear_lens_distortion_correction">Figūrų taisymas</string>
     <string name="Using_Data_Background">Kai įrenginys prijungiamas prie mobiliojo tinklo ar WLAN, duomenys perkeliami fone.</string>
     <string name="Using_Data_Background_Wifi">Kai įrenginys prijungiamas prie WLAN, duomenys perkeliami fone.</string>
@@ -395,7 +397,10 @@ taisymas"</string>
     <string name="guideline_square">Kvadratinis</string>
     <string name="help_change_mode_tip_1">Braukite į dešinę ir peržiūrėkite galimus fotoaparato režimus.</string>
     <string name="help_change_mode_tip_2">Pasirinkite norimą naudoti režimą.</string>
+    <string name="help_change_mode_tip_3">Įjungus paprastą režimą, veikia tik automatinis ir autoportretų fotoaparato režimas.</string>
     <string name="help_changing_the_camera_mode">Fotoaparato režimų pasirinkimas</string>
+    <string name="help_changing_the_camera_mode_header">Fotoaparato režimo pasirinkimas</string>
+    <string name="help_changing_the_camera_mode_title">Fotoaparato režimo keitimas</string>
     <string name="help_recording_videos">Vaizdų įrašymas</string>
     <string name="help_recording_videos_tip_1">Bakstelėkite %s.</string>
     <string name="help_recording_videos_tip_1_tts">Bakstelėkite vaizdo kameros mygtuką.</string>
@@ -403,7 +408,7 @@ taisymas"</string>
     <string name="help_recording_videos_tip_2_tts">Bakstelėkite sustabdymo mygtuką ir sustabdykite įrašymą.</string>
     <string name="help_recording_videos_tip_snapshot">Palieskite %s ir fotografuokite filmuodami.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Palieskite fotoaparato mygtuką ir fotografuokite filmuodami.</string>
-    <string name="help_section_summary">Darykite nuotraukas arba įrašykite vaizdus naudodami įvairius skirtingus efektus, kurie tinka visiems atvejams. Įjungus paprastąjį režimą veikia tik automatinis ir asmenukių fotoaparato režimas, be to, negalima taikyti jokių efektų.</string>
+    <string name="help_section_summary">Darykite nuotraukas arba įrašykite vaizdus naudodami įvairius skirtingus efektus, kurie tinka visiems atvejams.</string>
     <string name="help_selecting_camera_mode">Fotoaparato režimų pasirinkimas</string>
     <string name="help_taking_pictures">Fotografavimas</string>
     <string name="help_taking_pictures_tip_1">Palieskite norimą sufokusuoti objektą.</string>
@@ -418,6 +423,7 @@ taisymas"</string>
     <string name="help_text_wideselfie">Bakstelėkite fotoaparato mygtuką ir lėtai judinkite įrenginį viena kryptimi.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Jei užfiksavę norite peržiūrėti nuotraukas ar vaizdo įrašus, bakstelėkite %s.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Bakstelėkite sparčiosios peržiūros mygtuką, kad peržiūrėtumėte nufotografuotą ar įrašytą vaizdą.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Nuotraukų, vaizdo įr. peržiūra</string>
     <string name="high_resolution_video_description">Filmuojant %s raiška nurodytos funkcijos nebus pasiekiamos:</string>
     <string name="highlight">Žymėjimai</string>

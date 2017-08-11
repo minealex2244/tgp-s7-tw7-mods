@@ -1532,9 +1532,7 @@
 
     if-eq v0, v10, :cond_7
 
-    add-int/lit8 v10, v0, 0x1
-
-    if-lt v6, v10, :cond_d
+    if-lt v6, v0, :cond_d
 
     .line 934
     :cond_7
@@ -1679,9 +1677,7 @@
 
     .line 946
     :cond_d
-    add-int/lit8 v10, v0, 0x1
-
-    if-eq v6, v10, :cond_8
+    if-eq v6, v0, :cond_8
 
     .line 947
     add-int/lit8 v10, v5, 0x1
@@ -1783,9 +1779,7 @@
 
     if-eq v0, v10, :cond_11
 
-    add-int/lit8 v10, v0, 0x1
-
-    if-lt v6, v10, :cond_14
+    if-lt v6, v0, :cond_14
 
     .line 965
     :cond_11

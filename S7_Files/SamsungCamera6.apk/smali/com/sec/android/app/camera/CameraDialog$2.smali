@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/CameraDialog;
 
     .prologue
-    .line 397
+    .line 421
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$2;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "checked"    # Z
 
     .prologue
-    .line 400
+    .line 424
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$2;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -58,12 +58,12 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    .line 401
+    .line 425
     .local v0, "audioManager":Landroid/media/AudioManager;
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->playSoundEffect(I)V
 
-    .line 402
+    .line 426
     return-void
 .end method

@@ -41,43 +41,43 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 621
+    .line 618
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 613
+    .line 610
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mNormal:I
 
-    .line 614
+    .line 611
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mPress:I
 
-    .line 615
+    .line 612
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    .line 616
+    .line 613
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
-    .line 617
+    .line 614
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mAbbTitle:I
 
-    .line 618
+    .line 615
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mContentDescription:I
 
-    .line 619
+    .line 616
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mListNormal:I
 
-    .line 622
+    .line 619
     iput p1, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mNormal:I
 
-    .line 623
+    .line 620
     iput p2, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mPress:I
 
-    .line 624
+    .line 621
     iput p3, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    .line 625
+    .line 622
     iput p4, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
-    .line 626
+    .line 623
     return-void
 .end method
 
@@ -92,46 +92,46 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 628
+    .line 625
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 613
+    .line 610
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mNormal:I
 
-    .line 614
+    .line 611
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mPress:I
 
-    .line 615
+    .line 612
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    .line 616
+    .line 613
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
-    .line 617
+    .line 614
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mAbbTitle:I
 
-    .line 618
+    .line 615
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mContentDescription:I
 
-    .line 619
+    .line 616
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mListNormal:I
 
-    .line 629
+    .line 626
     iput p1, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mNormal:I
 
-    .line 630
+    .line 627
     iput p2, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mPress:I
 
-    .line 631
+    .line 628
     iput p3, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    .line 632
+    .line 629
     iput p4, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
-    .line 633
+    .line 630
     iput p5, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mContentDescription:I
 
-    .line 634
+    .line 631
     return-void
 .end method
 
@@ -147,49 +147,49 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 636
+    .line 633
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 613
+    .line 610
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mNormal:I
 
-    .line 614
+    .line 611
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mPress:I
 
-    .line 615
+    .line 612
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    .line 616
+    .line 613
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
-    .line 617
+    .line 614
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mAbbTitle:I
 
-    .line 618
+    .line 615
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mContentDescription:I
 
-    .line 619
+    .line 616
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mListNormal:I
 
-    .line 637
+    .line 634
     iput p1, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mNormal:I
 
-    .line 638
+    .line 635
     iput p2, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mPress:I
 
-    .line 639
+    .line 636
     iput p3, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    .line 640
+    .line 637
     iput p4, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
-    .line 641
+    .line 638
     iput p5, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mAbbTitle:I
 
-    .line 642
+    .line 639
     iput p6, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mContentDescription:I
 
-    .line 643
+    .line 640
     return-void
 .end method
 
@@ -206,51 +206,51 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 645
+    .line 642
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 613
+    .line 610
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mNormal:I
 
-    .line 614
+    .line 611
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mPress:I
 
-    .line 615
+    .line 612
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    .line 616
+    .line 613
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
-    .line 617
+    .line 614
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mAbbTitle:I
 
-    .line 618
+    .line 615
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mContentDescription:I
 
-    .line 619
+    .line 616
     iput v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mListNormal:I
 
-    .line 646
+    .line 643
     iput p1, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mNormal:I
 
-    .line 647
+    .line 644
     iput p2, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mPress:I
 
-    .line 648
+    .line 645
     iput p3, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mDim:I
 
-    .line 649
+    .line 646
     iput p4, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mTitle:I
 
-    .line 650
+    .line 647
     iput p5, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mAbbTitle:I
 
-    .line 651
+    .line 648
     iput p6, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mContentDescription:I
 
-    .line 652
+    .line 649
     iput p7, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mListNormal:I
 
-    .line 653
+    .line 650
     return-void
 .end method

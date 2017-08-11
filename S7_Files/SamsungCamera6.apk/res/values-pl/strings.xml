@@ -190,6 +190,8 @@ Zdjęcie panoramiczne: Uchwycenie wrażenia ruchu podczas robienia zdjęć rucho
     <string name="SM_SLOW_VIDEO_description">Nagrywaj filmy o wysokiej częstotliwości odświeżania do oglądania w zwolnionym tempie. Po nagraniu możesz odtwarzać określone fragmenty filmów w zwolnionym tempie.</string>
     <string name="SM_SMART_SELFSHOT">Autoportret z tylnego aparatu</string>
     <string name="SM_SMART_SELFSHOT_description">Gdy robisz zdjęcie-autoportret, tylny aparat automatycznie wykrywa twarz i ustawia na niej ostrość.</string>
+    <string name="SM_SOCIAL">Społeczne</string>
+    <string name="SM_SOCIAL_description">Rób zdjęcia i łatwo je udostępniaj na portalach społecznościowych.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Rób wyraźne zdjęcia szybko poruszających się obiektów.</string>
     <string name="SM_STORY">Dźwięk i obraz</string>
@@ -393,7 +395,10 @@ kształtu"</string>
     <string name="guideline_square">Kwadrat</string>
     <string name="help_change_mode_tip_1">Przeciągnij w prawo, aby wyświetlić dostępne tryby aparatu.</string>
     <string name="help_change_mode_tip_2">Wybierz tryb, którego chcesz użyć.</string>
+    <string name="help_change_mode_tip_3">Po włączeniu Trybu ułatwienia w aparacie jest dostępny tylko tryb automatyczny oraz tryb autoportretu.</string>
     <string name="help_changing_the_camera_mode">Wybór trybów kamery</string>
+    <string name="help_changing_the_camera_mode_header">Wybór trybu kamery</string>
+    <string name="help_changing_the_camera_mode_title">Zmiana trybu aparatu</string>
     <string name="help_recording_videos">Nagrywanie filmów</string>
     <string name="help_recording_videos_tip_1">Dotknij ikony %s.</string>
     <string name="help_recording_videos_tip_1_tts">Dotknij przycisku kamery.</string>
@@ -401,7 +406,7 @@ kształtu"</string>
     <string name="help_recording_videos_tip_2_tts">Dotknij przycisku zatrzymywania, aby przerwać nagrywanie.</string>
     <string name="help_recording_videos_tip_snapshot">Dotknij %s, aby zrobić zdjęcia podczas nagrywania filmu.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Dotknij przycisku aparatu, aby zrobić zdjęcia podczas nagrywania filmu.</string>
-    <string name="help_section_summary">Rób zdjęcia lub nagrywaj filmy, korzystając z wielu różnych efektów dopasowanych do każdej okoliczności. Po włączeniu Trybu ułatwienia w aparacie jest dostępny tylko tryb automatyczny oraz tryb autoportretu.</string>
+    <string name="help_section_summary">Rób zdjęcia lub nagrywaj filmy z użyciem rozmaitych efektów odpowiednich na każdą okazję.</string>
     <string name="help_selecting_camera_mode">Wybór trybów kamery</string>
     <string name="help_taking_pictures">Robienie zdjęć</string>
     <string name="help_taking_pictures_tip_1">Dotknij obiektu, który ma się znaleźć w polu ostrości.</string>
@@ -416,6 +421,7 @@ kształtu"</string>
     <string name="help_text_wideselfie">Dotknij przycisku Aparatu i powoli obróć urządzenie w jednym kierunku.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Dotknij %s, aby wyświetlić zdjęcia lub filmy bezpośrednio po ich zarejestrowaniu.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Dotknij przycisku Szybki podgląd, aby wyświetlić zdjęcia lub filmy bezpośrednio po ich zarejestrowaniu.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Wyświetlanie obrazów i filmów</string>
     <string name="high_resolution_video_description">Następujące funkcje będą niedostępne podczas nagrywania w rozdzielczości %s:</string>
     <string name="highlight">Podświetlone</string>

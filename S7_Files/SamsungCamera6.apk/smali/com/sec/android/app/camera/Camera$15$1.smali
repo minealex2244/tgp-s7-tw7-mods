@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/Camera$15;
 
     .prologue
-    .line 2178
+    .line 2182
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$15$1;->this$1:Lcom/sec/android/app/camera/Camera$15;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,14 +41,13 @@
     .locals 1
 
     .prologue
-    .line 2181
+    .line 2185
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$15$1;->this$1:Lcom/sec/android/app/camera/Camera$15;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/Camera$15;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # invokes: Lcom/sec/android/app/camera/Camera;->showLocationTagDialog()V
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$2100(Lcom/sec/android/app/camera/Camera;)V
+    invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->showLocationTagDialog()V
 
-    .line 2182
+    .line 2186
     return-void
 .end method

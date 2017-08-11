@@ -105,7 +105,7 @@
 
     .line 267
     .local v1, "viewHolder":Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerItemHolder;
-    const v2, 0x7f10003e
+    const v2, 0x7f100040
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -116,7 +116,7 @@
     iput-object v2, v1, Lcom/sec/android/app/camera/setting/SpinnerPreference$ResolutionSpinnerItemHolder;->mainText:Landroid/widget/TextView;
 
     .line 268
-    const v2, 0x7f10003f
+    const v2, 0x7f100041
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -318,7 +318,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f0a023b
+    const v4, 0x7f0a0241
 
     .line 284
     invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -345,7 +345,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f0a0261
+    const v4, 0x7f0a0267
 
     invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 9860
+    .line 9915
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/engine/CommonEngine$1;
 
     .prologue
-    .line 9860
+    .line 9915
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;-><init>(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     return-void
@@ -60,7 +60,7 @@
 
     const/4 v4, 0x1
 
-    .line 9863
+    .line 9918
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -77,12 +77,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 9923
+    .line 9978
     :cond_0
     :goto_0
     return-void
 
-    .line 9866
+    .line 9921
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -96,7 +96,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 9870
+    .line 9925
     const/4 v0, 0x3
 
     if-eq p1, v0, :cond_0
@@ -105,7 +105,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 9874
+    .line 9929
     const-string v0, "CommonEngine"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -152,7 +152,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9876
+    .line 9931
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -185,7 +185,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9878
+    .line 9933
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -199,18 +199,18 @@
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsHalfShutter:Z
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5500(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5600(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 9880
+    .line 9935
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->lockAEAWB()V
 
-    .line 9883
+    .line 9938
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -227,45 +227,45 @@
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsDualCamera:Z
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$3200(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$3300(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 9884
+    .line 9939
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsHalfShutter:Z
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5500(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5600(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 9885
+    .line 9940
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->unlockAEAWB()V
 
     goto/16 :goto_0
 
-    .line 9890
+    .line 9945
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mAutoFocusListener:Lcom/sec/android/app/camera/interfaces/Engine$AutoFocusListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5600(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$AutoFocusListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5700(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$AutoFocusListener;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
-    .line 9891
+    .line 9946
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mAutoFocusListener:Lcom/sec/android/app/camera/interfaces/Engine$AutoFocusListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5600(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$AutoFocusListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5700(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$AutoFocusListener;
 
     move-result-object v0
 
@@ -279,13 +279,13 @@
 
     invoke-interface {v0, p1, v1}, Lcom/sec/android/app/camera/interfaces/Engine$AutoFocusListener;->onAutoFocus(IZ)V
 
-    .line 9894
+    .line 9949
     :cond_4
     if-eq p1, v4, :cond_5
 
     if-nez p1, :cond_b
 
-    .line 9895
+    .line 9950
     :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -318,7 +318,7 @@
 
     if-nez v0, :cond_7
 
-    .line 9896
+    .line 9951
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mRequestQueue:Lcom/sec/android/app/camera/engine/CeRequestQueue;
@@ -331,12 +331,12 @@
 
     if-nez v0, :cond_7
 
-    .line 9897
+    .line 9952
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->unlockAEAWB()V
 
-    .line 9899
+    .line 9954
     :cond_7
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -346,12 +346,12 @@
 
     if-ne v0, v4, :cond_8
 
-    .line 9900
+    .line 9955
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->unlockAWB()V
 
-    .line 9903
+    .line 9958
     :cond_8
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -359,7 +359,7 @@
 
     invoke-interface {v0, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setFocusState(I)V
 
-    .line 9908
+    .line 9963
     :cond_9
     :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
@@ -370,7 +370,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 9909
+    .line 9964
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -391,7 +391,7 @@
 
     if-eq v0, v5, :cond_a
 
-    .line 9910
+    .line 9965
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->getTouchAeLockState()I
@@ -400,7 +400,7 @@
 
     if-eq v0, v4, :cond_a
 
-    .line 9911
+    .line 9966
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_TOUCH_AE:Z
 
     if-eqz v0, :cond_c
@@ -408,7 +408,7 @@
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mShootingModeFeature:Lcom/sec/android/app/camera/interfaces/ShootingModeFeature;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2700(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/ShootingModeFeature;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2800(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/ShootingModeFeature;
 
     move-result-object v0
 
@@ -418,24 +418,24 @@
 
     if-eqz v0, :cond_c
 
-    .line 9912
+    .line 9967
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->removeResetTouchFocusMessage()V
 
-    .line 9913
+    .line 9968
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->startResetTouchAeTimer()V
 
-    .line 9914
+    .line 9969
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->restartHideTouchEVMessage()V
 
-    .line 9921
+    .line 9976
     :cond_a
     :goto_2
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
@@ -446,11 +446,11 @@
 
     goto/16 :goto_0
 
-    .line 9904
+    .line 9959
     :cond_b
     if-ne p1, v5, :cond_9
 
-    .line 9905
+    .line 9960
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -459,12 +459,12 @@
 
     goto :goto_1
 
-    .line 9915
+    .line 9970
     :cond_c
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mRecorderRecording:Z
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$3300(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$3400(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v0
 
@@ -492,7 +492,7 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 9916
+    .line 9971
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isDivideAFStarted()Z
 
     move-result v0
@@ -509,7 +509,7 @@
 
     if-nez v0, :cond_a
 
-    .line 9917
+    .line 9972
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$AutoFocusCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->startResetTouchFocusTimer()V

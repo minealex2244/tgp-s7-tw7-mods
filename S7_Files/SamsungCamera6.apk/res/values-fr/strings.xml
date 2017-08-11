@@ -28,7 +28,7 @@
     <string name="Abb_Title_More_Settings">Paramètres supp.</string>
     <string name="Abb_Title_SaveAsFlipped">Enreg. comme ret.</string>
     <string name="Abb_Title_ShutterSound">Son obturateur</string>
-    <string name="Abb_Title_Storage">Emplac. de stockage</string>
+    <string name="Abb_Title_Storage">Emplacement de stockage</string>
     <string name="Abb_Title_VideoStabilisation">"Stabilis.
 vidéo"</string>
     <string name="Abb_Title_VoiceCapture">Contrôle vocal</string>
@@ -190,6 +190,8 @@ Effet filé : capturez un effet de mouvement lorsque vous prenez des photos d'ob
     <string name="SM_SLOW_VIDEO_description">"Enregistrez les vidéos avec une fréquence d'image élevée pour un visionnage au ralenti. Une fois les vidéos enregistrées, vous pouvez en visionner une partie au ralenti."</string>
     <string name="SM_SMART_SELFSHOT">Selfie arrière</string>
     <string name="SM_SMART_SELFSHOT_description">"L'appareil photo arrière détectera automatiquement votre visage et effectuera la mise au point lorsque vous prendrez des autoportraits."</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Prenez des photos et partagez-les facilement sur les réseaux sociaux.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Prenez des photos plus nettes de sujets qui bougent rapidement.</string>
     <string name="SM_STORY">Son &amp; prise</string>
@@ -235,12 +237,12 @@ Effet filé : capturez un effet de mouvement lorsque vous prenez des photos d'ob
     <string name="Title_MotionPanorama">Panorama sur mouvement</string>
     <string name="Title_MotionPhoto">Photo avec mouvement</string>
     <string name="Title_MultiAF">Zone AF</string>
-    <string name="Title_Picture_Format">Enreg. fichiers RAW et JPEG</string>
+    <string name="Title_Picture_Format">Enreg. fichiers RAW/JPEG</string>
     <string name="Title_QRCode">Détecter les codes QR</string>
     <string name="Title_QuickShot">Lancement rapide</string>
     <string name="Title_Rear_CamcorderResolution">Résolution vidéo (arr.)</string>
     <string name="Title_Rear_CamcorderResolution_TTS">"Taille de vidéo pour l'appareil photo arrière"</string>
-    <string name="Title_Rear_CameraResolution">Résolution photo (arr.)</string>
+    <string name="Title_Rear_CameraResolution">Résolution photo (arrière)</string>
     <string name="Title_Rear_CameraResolution_TTS">"Taille d'image pour l'appareil photo arrière"</string>
     <string name="Title_RecordingMotionSpeed">Sélection vitesse</string>
     <string name="Title_Review">Évaluer les photos</string>
@@ -261,7 +263,7 @@ Effet filé : capturez un effet de mouvement lorsque vous prenez des photos d'ob
     <string name="Title_Viewmode">Plein écran (16:9)</string>
     <string name="Title_Voice_Capture">Contrôle vocal</string>
     <string name="Title_Voice_guide">Guide vocal</string>
-    <string name="Title_Volume_Key_As">Touche volume</string>
+    <string name="Title_Volume_Key_As">Fonction de la touche de volume</string>
     <string name="Title_WhiteBalance">Balance des blancs</string>
     <string name="Title_common">Commun</string>
     <string name="Title_front">Objectif avant</string>
@@ -282,7 +284,7 @@ Effet filé : capturez un effet de mouvement lorsque vous prenez des photos d'ob
     <string name="af_ae_lock">Verr. AF/AE</string>
     <string name="af_lock">Verr. AF</string>
     <string name="alert_title">Alerte</string>
-    <string name="app_name">Appareil photo</string>
+    <string name="app_name">Caméra</string>
     <string name="application_disable_toast_message">"Impossible d'ouvrir %s. Seules les applications ajoutées à l'écran d'accueil peuvent être utilisées en mode Économie d'énergie maximale."</string>
     <string name="aquashot_helptext">"Utilisez la touche active pour prendre des photos et utilisez l'une des touches de volume pour enregistrer des vidéos."</string>
     <string name="battery_low">"Fermez l'appareil photo. La température de la batterie est trop basse."</string>
@@ -303,7 +305,7 @@ de forme"</string>
     <string name="camcorder_label">Caméscope</string>
     <string name="camera_busy_msg">"Vous ne pouvez pas utiliser plus d'une application nécessitant l'appareil photo à la fois. L'appareil photo va se fermer."</string>
     <string name="camera_key">Photographier</string>
-    <string name="camera_label">Appareil photo</string>
+    <string name="camera_label">Caméra</string>
     <string name="camera_modes">"Modes de l'appareil photo"</string>
     <string name="camera_security_enter">"La politique de sécurité limite l'utilisation de l'appareil photo."</string>
     <string name="cancel">Annuler</string>
@@ -391,9 +393,12 @@ de forme"</string>
     <string name="gps_wifi_or_wifi_only">GPS et Wi-Fi</string>
     <string name="guideline_3by3">3 x 3</string>
     <string name="guideline_square">Carré</string>
-    <string name="help_change_mode_tip_1">"Faites glisser un doigt vers la droite pour afficher les modes d'appareil photo dispo."</string>
+    <string name="help_change_mode_tip_1">Faites glisser votre doigt vers la droite pour afficher les modes Photo disponibles.</string>
     <string name="help_change_mode_tip_2">Sélectionnez le mode que vous souhaitez utiliser.</string>
+    <string name="help_change_mode_tip_3">"Seuls les modes d'appareil photo Auto et Selfie sont disponibles lorsque le mode Simplifié est activé."</string>
     <string name="help_changing_the_camera_mode">"Sélection des modes d'appareil photo"</string>
+    <string name="help_changing_the_camera_mode_header">"Sélect. mode d'appareil photo"</string>
+    <string name="help_changing_the_camera_mode_title">Modifier mode appareil photo</string>
     <string name="help_recording_videos">Enregistrer des vidéos</string>
     <string name="help_recording_videos_tip_1">Appuyez sur %s.</string>
     <string name="help_recording_videos_tip_1_tts">Appuyez sur le bouton du caméscope.</string>
@@ -401,7 +406,7 @@ de forme"</string>
     <string name="help_recording_videos_tip_2_tts">"Appuyez sur le bouton d'arrêt pour interrompre l'enregistrement."</string>
     <string name="help_recording_videos_tip_snapshot">"Appuyez sur %s pour prendre des photos pendant l'enregistrement d’une vidéo."</string>
     <string name="help_recording_videos_tip_snapshot_tts">"Appuyez sur la touche de l'appareil photo pour prendre des photos pendant l’enregistrement d'une vidéo."</string>
-    <string name="help_section_summary">"Prenez des photos ou enregistrez des vidéos en appliquant divers effets en fonction de l'occasion. Seuls les modes d'appareil photo Auto et Selfie sont disponibles, et aucun effet ne peut être appliqué lorsque le mode simplifié est activé."</string>
+    <string name="help_section_summary">"Prenez des photos et des vidéos en appliquant divers effets en fonction de l'occasion."</string>
     <string name="help_selecting_camera_mode">"Sélection des modes d'appareil photo"</string>
     <string name="help_taking_pictures">Prendre des photos</string>
     <string name="help_taking_pictures_tip_1">"Appuyez sur l'objet sur lequel vous souhaitez effectuer la mise au point."</string>
@@ -416,6 +421,7 @@ de forme"</string>
     <string name="help_text_wideselfie">Appuyez sur la touche Appareil photo et déplacez lentement votre appareil dans une direction.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Appuyez sur %s pour afficher vos photos ou vidéos juste après leur prise ou enregistrement.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Appuyez sur le bouton Aperçu rapide pour afficher vos photos ou vidéos juste après leur prise ou enregistrement.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Faites glisser votre doigt vers la gauche pour afficher vos photos ou vidéos juste après leur prise ou enregistrement.</string>
     <string name="help_viewing_pictures_and_videos">Afficher les photos et vidéos</string>
     <string name="high_resolution_video_description">"Les fonctions suivantes seront indisponibles pendant l'enregistrement avec une résolution en %s :"</string>
     <string name="highlight">Hautes lumières</string>
@@ -427,9 +433,9 @@ de forme"</string>
     <string name="info_tts">Infos complémentaires</string>
     <string name="insert_mmc_msg">"Insérez une carte mémoire pour utiliser l'appareil photo."</string>
     <string name="interaction_descrition_camera">Faites glisser un doigt vers le haut ou vers le bas pour basculer entre les appareils photo avant et arrière.</string>
-    <string name="interaction_descrition_effect">"Faites glisser un doigt vers la gauche pour afficher les filtres d'appareil photo dispo."</string>
+    <string name="interaction_descrition_effect">Faites glisser votre doigt vers la droite pour afficher les modes Photo disponibles</string>
     <string name="interaction_descrition_effect_and_watermark">"Faites glisser un doigt vers la gauche pour afficher les filtres d'appareil photo et les filigranes disponibles."</string>
-    <string name="interaction_descrition_mode">"Faites glisser un doigt vers la droite pour afficher les modes d'appareil photo dispo."</string>
+    <string name="interaction_descrition_mode">Faites glisser votre doigt vers la droite pour afficher les modes Photo disponibles.</string>
     <string name="interaction_title_camera">"Activation de l'appareil photo"</string>
     <string name="interaction_title_effect">"Affichage des filtres d'appareil photo"</string>
     <string name="interaction_title_effect_and_watermark">"Affichage des filtres d'appareil photo et des filigranes"</string>

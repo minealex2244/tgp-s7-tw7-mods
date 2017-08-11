@@ -160,7 +160,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->SCREEN_HEIGHT:I
 
     .line 55
-    const v0, 0x7f0b0358
+    const v0, 0x7f0b0359
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -171,7 +171,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->ZOOM_VALUE_TEXT_WIDTH:I
 
     .line 56
-    const v0, 0x7f0b01f0
+    const v0, 0x7f0b01f1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -188,7 +188,7 @@
 
     sub-int/2addr v0, v1
 
-    const v1, 0x7f0b01ec
+    const v1, 0x7f0b01ed
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -212,7 +212,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->INDICATOR_GROUP_POS_Y:I
 
     .line 59
-    const v0, 0x7f0b0357
+    const v0, 0x7f0b0358
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -248,7 +248,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->ZOOM_TEXT_STROKE_COLOR:I
 
     .line 63
-    const v0, 0x7f0b01ef
+    const v0, 0x7f0b01f0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -265,7 +265,7 @@
 
     sub-int/2addr v0, v1
 
-    const v1, 0x7f0b01ed
+    const v1, 0x7f0b01ee
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -278,7 +278,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->ZOOM_SLIDEBAR_LANDSCAPE_POS_X:I
 
     .line 65
-    const v0, 0x7f0b01ee
+    const v0, 0x7f0b01ef
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -291,7 +291,7 @@
     .line 66
     iget v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->SCREEN_HEIGHT:I
 
-    const v1, 0x7f0b01ee
+    const v1, 0x7f0b01ef
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -306,7 +306,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->ZOOM_SLIDEBAR_HEIGHT:I
 
     .line 67
-    const v0, 0x7f0b01eb
+    const v0, 0x7f0b01ec
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -317,7 +317,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->SLIDEBAR_TOUCH_AREA_WIDTH:I
 
     .line 68
-    const v0, 0x7f0b01e9
+    const v0, 0x7f0b01ea
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -330,7 +330,7 @@
     .line 69
     iget v0, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->SCREEN_HEIGHT:I
 
-    const v1, 0x7f0b00b4
+    const v1, 0x7f0b00b5
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -716,9 +716,9 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f02018c
+    const v6, 0x7f02018d
 
-    const v7, 0x7f02018d
+    const v7, 0x7f02018e
 
     iget v8, p0, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->mZoomNumOfStep:I
 
@@ -1111,7 +1111,7 @@
     .prologue
     const/high16 v6, 0x3f800000    # 1.0f
 
-    const v10, 0x7f0a02b4
+    const v10, 0x7f0a02ba
 
     const/4 v9, 0x1
 

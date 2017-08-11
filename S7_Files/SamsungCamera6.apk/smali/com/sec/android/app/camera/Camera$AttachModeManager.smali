@@ -55,12 +55,12 @@
     .locals 1
 
     .prologue
-    .line 9294
+    .line 9353
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9295
+    .line 9354
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -71,16 +71,16 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
-    .line 9296
+    .line 9355
     return-void
 .end method
 
-.method static synthetic access$4300(Lcom/sec/android/app/camera/Camera$AttachModeManager;)V
+.method static synthetic access$4200(Lcom/sec/android/app/camera/Camera$AttachModeManager;)V
     .locals 0
     .param p0, "x0"    # Lcom/sec/android/app/camera/Camera$AttachModeManager;
 
     .prologue
-    .line 9272
+    .line 9331
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera$AttachModeManager;->checkAttachIntent()V
 
     return-void
@@ -98,7 +98,7 @@
 
     const/4 v2, 0x0
 
-    .line 9302
+    .line 9361
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->isImageCaptureIntent()Z
@@ -107,14 +107,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 9303
+    .line 9362
     const-string v0, "Camera6"
 
     const-string v1, "checkAttachIntent - Image capture intent"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9304
+    .line 9363
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -124,7 +124,7 @@
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setAttachImageMode(Z)V
 
-    .line 9305
+    .line 9364
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -134,17 +134,17 @@
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setAttachVideoMode(Z)V
 
-    .line 9306
+    .line 9365
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mDimController:Lcom/sec/android/app/camera/DimController;
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$5300(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/DimController;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$5200(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/DimController;
 
     move-result-object v0
 
     invoke-virtual {v0, v2, v3}, Lcom/sec/android/app/camera/DimController;->setButtonDim(II)V
 
-    .line 9308
+    .line 9367
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
@@ -159,24 +159,24 @@
 
     if-eqz v0, :cond_0
 
-    .line 9309
+    .line 9368
     const-string v0, "Camera6"
 
     const-string v1, "MMS Image attach mode."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9310
+    .line 9369
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0, v4, v5}, Lcom/sec/android/app/camera/Camera;->sendBroadcastChangeSettings(II)V
 
-    .line 9336
+    .line 9395
     :cond_0
     :goto_0
     return-void
 
-    .line 9312
+    .line 9371
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -186,27 +186,27 @@
 
     if-eqz v0, :cond_0
 
-    .line 9313
+    .line 9372
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mIsCalling:Z
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$5400(Lcom/sec/android/app/camera/Camera;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$5300(Lcom/sec/android/app/camera/Camera;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 9314
+    .line 9373
     const-string v0, "Camera6"
 
     const-string v1, "checkAttachIntent - now is calling. finish."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9315
+    .line 9374
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v1, 0x7f0a0128
+    const v1, 0x7f0a012a
 
     invoke-static {v0, v1, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -214,12 +214,12 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 9316
+    .line 9375
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->finish()V
 
-    .line 9318
+    .line 9377
     :cond_2
     const-string v0, "Camera6"
 
@@ -227,7 +227,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9319
+    .line 9378
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -237,7 +237,7 @@
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setAttachVideoMode(Z)V
 
-    .line 9320
+    .line 9379
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -247,27 +247,27 @@
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setAttachImageMode(Z)V
 
-    .line 9322
+    .line 9381
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
     if-eqz v0, :cond_3
 
-    .line 9323
+    .line 9382
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera$AttachModeManager;->checkExtraVideoQuality()V
 
-    .line 9324
+    .line 9383
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera$AttachModeManager;->checkExtraMediaRecorderProfileInfo()V
 
-    .line 9325
+    .line 9384
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera$AttachModeManager;->checkExtraSizeLimit()V
 
-    .line 9326
+    .line 9385
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera$AttachModeManager;->checkExtraDurationLimit()V
 
-    .line 9327
+    .line 9386
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera$AttachModeManager;->checkExtraOutput()V
 
-    .line 9329
+    .line 9388
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
     const-string v1, "mms"
@@ -278,24 +278,24 @@
 
     if-eqz v0, :cond_3
 
-    .line 9330
+    .line 9389
     const-string v0, "Camera6"
 
     const-string v1, "MMS Viedo attach mode."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9331
+    .line 9390
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0, v4, v5}, Lcom/sec/android/app/camera/Camera;->sendBroadcastChangeSettings(II)V
 
-    .line 9334
+    .line 9393
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mDimController:Lcom/sec/android/app/camera/DimController;
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$5300(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/DimController;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$5200(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/DimController;
 
     move-result-object v0
 
@@ -310,7 +310,7 @@
     .locals 4
 
     .prologue
-    .line 9342
+    .line 9401
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->getIntent()Landroid/content/Intent;
@@ -325,18 +325,18 @@
 
     if-nez v0, :cond_0
 
-    .line 9343
+    .line 9402
     const-string v0, "Camera6"
 
     const-string v1, "No EXTRA_DURATION_LIMIT"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9350
+    .line 9409
     :goto_0
     return-void
 
-    .line 9347
+    .line 9406
     :cond_0
     const-string v0, "Camera6"
 
@@ -368,7 +368,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9349
+    .line 9408
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -395,10 +395,10 @@
     .prologue
     const/4 v12, -0x1
 
-    .line 9356
+    .line 9415
     const/4 v10, -0x1
 
-    .line 9357
+    .line 9416
     .local v10, "NO_VALUE":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -408,7 +408,7 @@
 
     move-result v1
 
-    .line 9358
+    .line 9417
     .local v1, "videoEncoder":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -418,7 +418,7 @@
 
     move-result v2
 
-    .line 9359
+    .line 9418
     .local v2, "videoBitrate":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -428,7 +428,7 @@
 
     move-result v3
 
-    .line 9360
+    .line 9419
     .local v3, "videoFps":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -438,7 +438,7 @@
 
     move-result v4
 
-    .line 9361
+    .line 9420
     .local v4, "outputFormat":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -448,7 +448,7 @@
 
     move-result v5
 
-    .line 9362
+    .line 9421
     .local v5, "audioEncoder":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -458,7 +458,7 @@
 
     move-result v6
 
-    .line 9363
+    .line 9422
     .local v6, "audioBitrate":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -468,7 +468,7 @@
 
     move-result v7
 
-    .line 9364
+    .line 9423
     .local v7, "audioChannels":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -478,7 +478,7 @@
 
     move-result v8
 
-    .line 9365
+    .line 9424
     .local v8, "audioSamplingRate":I
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -488,7 +488,7 @@
 
     move-result v9
 
-    .line 9367
+    .line 9426
     .local v9, "fileSizeInterval":I
     const-string v0, "Camera6"
 
@@ -592,7 +592,7 @@
 
     invoke-static {v0, v11}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9371
+    .line 9430
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -606,7 +606,7 @@
 
     invoke-interface {v11, v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setRequestedMediaRecorderProfileInfo(Lcom/sec/android/app/camera/interfaces/CameraSettings$RequestedMediaRecorderProfileInfo;)V
 
-    .line 9373
+    .line 9432
     return-void
 .end method
 
@@ -614,7 +614,7 @@
     .locals 4
 
     .prologue
-    .line 9379
+    .line 9438
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->getIntent()Landroid/content/Intent;
@@ -629,18 +629,18 @@
 
     if-nez v1, :cond_0
 
-    .line 9380
+    .line 9439
     const-string v1, "Camera6"
 
     const-string v2, "No EXTRA_OUTPUT"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9390
+    .line 9449
     :goto_0
     return-void
 
-    .line 9384
+    .line 9443
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -652,11 +652,11 @@
 
     check-cast v0, Landroid/net/Uri;
 
-    .line 9385
+    .line 9444
     .local v0, "saveUri":Landroid/net/Uri;
     if-eqz v0, :cond_1
 
-    .line 9386
+    .line 9445
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -666,7 +666,7 @@
 
     invoke-interface {v1, v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setRequestedSaveUri(Landroid/net/Uri;)V
 
-    .line 9389
+    .line 9448
     :cond_1
     const-string v1, "Camera6"
 
@@ -697,7 +697,7 @@
     .locals 8
 
     .prologue
-    .line 9396
+    .line 9455
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/Camera;->getIntent()Landroid/content/Intent;
@@ -726,7 +726,7 @@
 
     if-gtz v3, :cond_1
 
-    .line 9397
+    .line 9456
     :cond_0
     const-string v3, "Camera6"
 
@@ -734,11 +734,11 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9418
+    .line 9477
     :goto_0
     return-void
 
-    .line 9401
+    .line 9460
     :cond_1
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -748,7 +748,7 @@
 
     move-result-wide v0
 
-    .line 9404
+    .line 9463
     .local v0, "requestedSizeLimit":J
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -778,7 +778,7 @@
 
     if-lez v3, :cond_2
 
-    .line 9405
+    .line 9464
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -792,7 +792,7 @@
 
     iget v2, v3, Lcom/sec/android/app/camera/interfaces/CameraSettings$RequestedMediaRecorderProfileInfo;->videoBitrate:I
 
-    .line 9410
+    .line 9469
     .local v2, "videoBitRate":I
     :goto_1
     const-string v3, "Camera6"
@@ -831,7 +831,7 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9412
+    .line 9471
     int-to-long v4, v2
 
     const-wide/16 v6, 0x2
@@ -846,10 +846,10 @@
 
     if-gez v3, :cond_3
 
-    .line 9413
+    .line 9472
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v4, 0x7f0a01c3
+    const v4, 0x7f0a01c9
 
     const/4 v5, 0x1
 
@@ -859,14 +859,14 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    .line 9414
+    .line 9473
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/Camera;->finish()V
 
     goto :goto_0
 
-    .line 9407
+    .line 9466
     .end local v2    # "videoBitRate":I
     :cond_2
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
@@ -883,7 +883,7 @@
     .restart local v2    # "videoBitRate":I
     goto :goto_1
 
-    .line 9417
+    .line 9476
     :cond_3
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -905,10 +905,10 @@
 
     const/4 v6, -0x1
 
-    .line 9425
+    .line 9484
     const/4 v0, -0x1
 
-    .line 9430
+    .line 9489
     .local v0, "NO_VALUE":I
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -922,7 +922,7 @@
 
     if-eqz v3, :cond_1
 
-    .line 9433
+    .line 9492
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/Camera;->getIntent()Landroid/content/Intent;
@@ -951,7 +951,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 9436
+    .line 9495
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
     const-string v4, "back_video_size"
@@ -964,7 +964,7 @@
 
     move-result v1
 
-    .line 9437
+    .line 9496
     .local v1, "backResolution":I
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -978,7 +978,7 @@
 
     move-result v2
 
-    .line 9439
+    .line 9498
     .local v2, "frontResolution":I
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -989,7 +989,7 @@
 
     invoke-interface {v3, v1, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setAttachVideoFixedResolution(II)V
 
-    .line 9440
+    .line 9499
     const-string v3, "Camera6"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1022,13 +1022,13 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9476
+    .line 9535
     .end local v1    # "backResolution":I
     .end local v2    # "frontResolution":I
     :goto_0
     return-void
 
-    .line 9445
+    .line 9504
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -1039,7 +1039,7 @@
 
     invoke-interface {v3, v7, v7}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setAttachVideoFixedResolution(II)V
 
-    .line 9446
+    .line 9505
     const-string v3, "Camera6"
 
     const-string v4, "MMS QCIF FIXED_RESOLUTION"
@@ -1048,7 +1048,7 @@
 
     goto :goto_0
 
-    .line 9451
+    .line 9510
     :cond_1
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -1060,14 +1060,14 @@
 
     if-nez v3, :cond_2
 
-    .line 9452
+    .line 9511
     sget-object v3, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RECORDING_MIN_RESOLUTION:Ljava/lang/String;
 
     invoke-static {v3}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 9453
+    .line 9512
     .restart local v1    # "backResolution":I
     sget-object v3, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RECORDING_MIN_RESOLUTION:Ljava/lang/String;
 
@@ -1075,7 +1075,7 @@
 
     move-result v2
 
-    .line 9455
+    .line 9514
     .restart local v2    # "frontResolution":I
     const-string v3, "Camera6"
 
@@ -1109,7 +1109,7 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9457
+    .line 9516
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -1121,7 +1121,7 @@
 
     goto :goto_0
 
-    .line 9459
+    .line 9518
     .end local v1    # "backResolution":I
     .end local v2    # "frontResolution":I
     :cond_2
@@ -1137,7 +1137,7 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 9462
+    .line 9521
     const-string v3, "Camera6"
 
     const-string v4, "EXTRA_VIDEO_QUALITY - HIGH_QUALITY"
@@ -1146,7 +1146,7 @@
 
     goto :goto_0
 
-    .line 9464
+    .line 9523
     :cond_3
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -1176,7 +1176,7 @@
 
     if-eqz v3, :cond_4
 
-    .line 9467
+    .line 9526
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
     const-string v4, "back_video_size"
@@ -1189,7 +1189,7 @@
 
     move-result v1
 
-    .line 9468
+    .line 9527
     .restart local v1    # "backResolution":I
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->mMyExtras:Landroid/os/Bundle;
 
@@ -1203,7 +1203,7 @@
 
     move-result v2
 
-    .line 9470
+    .line 9529
     .restart local v2    # "frontResolution":I
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$AttachModeManager;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -1214,7 +1214,7 @@
 
     invoke-interface {v3, v1, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setAttachVideoFixedResolution(II)V
 
-    .line 9471
+    .line 9530
     const-string v3, "Camera6"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1249,7 +1249,7 @@
 
     goto/16 :goto_0
 
-    .line 9473
+    .line 9532
     .end local v1    # "backResolution":I
     .end local v2    # "frontResolution":I
     :cond_4

@@ -195,6 +195,8 @@ Panoramali kadr: Harakatlanayotgan obyektlarni rasmga olayotganda harakatlanish 
     <string name="SM_SLOW_VIDEO_description">Sekinroq harakatda ko‘rish uchun videolarni yuqori hoshiya tezligida yozib oling. Sekin harakatlanayotgan obyekt videolarini yozib olganingizdan so‘ng har bir videoning ma’lum bir bo‘limini o‘ynatishingiz mumkin.</string>
     <string name="SM_SMART_SELFSHOT">Orq/kam selfisi</string>
     <string name="SM_SMART_SELFSHOT_description">Avto-portretingizni suratga olganingizda, orqa kamera yuzingizni avtomatik ravishda aniqlaydi va fokuslaydi.</string>
+    <string name="SM_SOCIAL">Ijtimoiy</string>
+    <string name="SM_SOCIAL_description">Rasmga oling va ularni ijtimoiy tarmoqlarda osongina ulashing.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Tez harakatlanayotgan obyektlarning aniqroq rasmga oling.</string>
     <string name="SM_STORY">Ovozli kadr</string>
@@ -266,7 +268,7 @@ Panoramali kadr: Harakatlanayotgan obyektlarni rasmga olayotganda harakatlanish 
     <string name="Title_Viewmode">To‘liq ekran (16:9)</string>
     <string name="Title_Voice_Capture">Ovozli boshqaruv</string>
     <string name="Title_Voice_guide">Ovozli ko‘rsatma</string>
-    <string name="Title_Volume_Key_As">Ovoz balandligi tugmasi funksiyasi</string>
+    <string name="Title_Volume_Key_As">Ovoz tugmasi funksiyasi</string>
     <string name="Title_WhiteBalance">Oq balans</string>
     <string name="Title_common">Umumiy</string>
     <string name="Title_front">Ro‘paradagi kamera</string>
@@ -398,7 +400,10 @@ tuzatish"</string>
     <string name="guideline_square">Kvadrat</string>
     <string name="help_change_mode_tip_1">Mavjud kamera rejimlarini ko‘rish uchun o‘ngga suring.</string>
     <string name="help_change_mode_tip_2">Foydalanmoqchi bo‘lgan rejimni tanlang.</string>
+    <string name="help_change_mode_tip_3">Oddiy rejim yoqilgan vaqtda faqat Avtomatik va Selfi kamera rejimlaridan foydalanish mumkin.</string>
     <string name="help_changing_the_camera_mode">Kamera rejimlarini tanlash</string>
+    <string name="help_changing_the_camera_mode_header">Kamera rejimini tanlash</string>
+    <string name="help_changing_the_camera_mode_title">Kamera rejimini o‘zgartirish</string>
     <string name="help_recording_videos">Videolarni yozib olish</string>
     <string name="help_recording_videos_tip_1">%sga teging.</string>
     <string name="help_recording_videos_tip_1_tts">Kamkorder tugmasiga teging.</string>
@@ -406,7 +411,7 @@ tuzatish"</string>
     <string name="help_recording_videos_tip_2_tts">Yozib olishni to‘xtatish uchun to‘xtatish tugmasiga teging.</string>
     <string name="help_recording_videos_tip_snapshot">Video yozib olayotganda rasmga olish uchun %sga teging.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Video yozib olayotganda rasmga olish uchun kamera tugmasiga teging.</string>
-    <string name="help_section_summary">Barcha vaziyatlarga moslashish uchun turli effketlar bilan rasmga yoki videoga oling. Oddiy rejim yoqilganda, faqat Avto va Selfi kamera rejimidan foydalanish mumkin va hech qanday effektni qo‘llab bo‘lmaydi.</string>
+    <string name="help_section_summary">Barcha vaziyatlarga moslashish uchun turli effketlar bilan rasmga yoki videoga oling.</string>
     <string name="help_selecting_camera_mode">Kamera rejimlarini tanlash</string>
     <string name="help_taking_pictures">Rasmga olish</string>
     <string name="help_taking_pictures_tip_1">Fokus ichiga olib kirmoqchi bo‘lgan obyektga teging.</string>
@@ -421,6 +426,7 @@ tuzatish"</string>
     <string name="help_text_wideselfie">Kamera tugmasiga teging va qurilmani bir yo‘nalishda sekin-asta aylantiring.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Rasm yoki videoga olishingiz bilanoq ularni ko‘rib chiqish uchun %sga teging.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Rasm yoki videolarni yozib olishingiz bilanoq tezda ko‘rib chiqish uchun tezkor ko‘rib chiqish tugmasiga teging.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Rasm va videolarni ko‘riish</string>
     <string name="high_resolution_video_description">%s aniqlik darajasida yozib olayotganda, quyidagilardan foydalanib bo‘lmaydi:</string>
     <string name="highlight">Yoritishlar</string>

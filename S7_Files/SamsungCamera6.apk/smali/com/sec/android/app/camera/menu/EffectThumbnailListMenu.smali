@@ -356,7 +356,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->SCREEN_HEIGHT:I
 
     .line 81
-    const v2, 0x7f0b00cf
+    const v2, 0x7f0b00d0
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -369,7 +369,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->EFFECT_MENU_POS_X:I
 
     .line 82
-    const v2, 0x7f0b00d0
+    const v2, 0x7f0b00d1
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -382,7 +382,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->EFFECT_MENU_POS_Y:I
 
     .line 83
-    const v2, 0x7f0b00ce
+    const v2, 0x7f0b00cf
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -395,7 +395,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->EFFECT_MENU_BOTTOM_MARGIN:I
 
     .line 84
-    const v2, 0x7f0b00cd
+    const v2, 0x7f0b00ce
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -488,7 +488,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->EFFECT_MENU_HEIGHT:I
 
     .line 89
-    const v2, 0x7f0b00e3
+    const v2, 0x7f0b00e4
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -499,7 +499,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->OPTION_BUTTON_WIDTH:F
 
     .line 90
-    const v2, 0x7f0b00e1
+    const v2, 0x7f0b00e2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -510,7 +510,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->OPTION_BUTTON_HEIGHT:F
 
     .line 91
-    const v2, 0x7f0b00e2
+    const v2, 0x7f0b00e3
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -532,7 +532,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->OPTION_BUTTON_TEXT_MARGIN:F
 
     .line 93
-    const v2, 0x7f0b00e4
+    const v2, 0x7f0b00e5
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -543,7 +543,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->OPTION_BUTTON_TEXT_HEIGHT:F
 
     .line 94
-    const v2, 0x7f0b00e5
+    const v2, 0x7f0b00e6
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -587,7 +587,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->OPTION_BUTTON_FONT_COLOR:I
 
     .line 98
-    const v2, 0x7f0b0118
+    const v2, 0x7f0b0119
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -598,7 +598,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->EFFECT_BACK_ICON_WIDTH:F
 
     .line 99
-    const v2, 0x7f0b0117
+    const v2, 0x7f0b0118
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -620,7 +620,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->BUTTON_FONT_COLOR:I
 
     .line 101
-    const v2, 0x7f0b00d1
+    const v2, 0x7f0b00d2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -633,7 +633,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->EFFECT_BUTTON_HEIGHT:I
 
     .line 102
-    const v2, 0x7f0b00d2
+    const v2, 0x7f0b00d3
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -754,7 +754,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->LIST_MENU_TRANSLATE_OFFSET:F
 
     .line 111
-    const v2, 0x7f0b00d3
+    const v2, 0x7f0b00d4
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -769,7 +769,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->MENU_BAR_GROUP_MARGIN:F
 
     .line 113
-    const v2, 0x7f0b0387
+    const v2, 0x7f0b0388
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -782,7 +782,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->WATERMARK_BUTTON_WIDTH:I
 
     .line 114
-    const v2, 0x7f0b0382
+    const v2, 0x7f0b0383
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -795,7 +795,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->WATERMARK_BUTTON_HEIGHT:I
 
     .line 115
-    const v2, 0x7f0b0383
+    const v2, 0x7f0b0384
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -808,7 +808,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->WATERMARK_BUTTON_RIGHT_MARGIN:I
 
     .line 116
-    const v2, 0x7f0b0381
+    const v2, 0x7f0b0382
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -863,7 +863,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->WATERMARK_BUTTON_POS_Y:I
 
     .line 119
-    const v2, 0x7f0b0386
+    const v2, 0x7f0b0387
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -876,7 +876,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->WATERMARK_TEXT_WIDTH:I
 
     .line 120
-    const v2, 0x7f0b0384
+    const v2, 0x7f0b0385
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -889,7 +889,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->WATERMARK_TEXT_HEIGHT:I
 
     .line 121
-    const v2, 0x7f0b0385
+    const v2, 0x7f0b0386
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1174,7 +1174,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0163
+    const v3, 0x7f0a0165
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1904,7 +1904,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a01c4
+    const v3, 0x7f0a01ca
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1952,7 +1952,7 @@
 
     iget v14, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->OPTION_BUTTON_HEIGHT:F
 
-    const v15, 0x7f0202cf
+    const v15, 0x7f0202ce
 
     const/16 v16, 0x0
 
@@ -2086,7 +2086,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0163
+    const v3, 0x7f0a0165
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2249,7 +2249,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mOptionGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    const v3, 0x7f020142
+    const v3, 0x7f020143
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setNinePatchBackground(I)Z
 
@@ -2955,7 +2955,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0161
+    const v3, 0x7f0a0163
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3389,7 +3389,7 @@
 
     move/from16 v40, v0
 
-    const v41, 0x7f0202ce
+    const v41, 0x7f0202cd
 
     const/16 v42, 0x0
 
@@ -3543,7 +3543,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01c8
+    const v4, 0x7f0a01ce
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3709,7 +3709,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mList:Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$GLEffectThumbnailList;
 
-    const v3, 0x7f0202d0
+    const v3, 0x7f0202cf
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu$GLEffectThumbnailList;->setScrollBarResource(I)V
 
@@ -4074,7 +4074,7 @@
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f0a027b
+    const v3, 0x7f0a0281
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -4278,7 +4278,7 @@
     .line 463
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
 
-    const v2, 0x7f0a027b
+    const v2, 0x7f0a0281
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -5114,7 +5114,7 @@
 
     move/from16 v40, v0
 
-    const v41, 0x7f0202cd
+    const v41, 0x7f0202cc
 
     const/16 v42, 0x0
 
@@ -7091,7 +7091,7 @@
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f0a0163
+    const v3, 0x7f0a0165
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -8716,7 +8716,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a00c9
+    const v4, 0x7f0a00cb
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

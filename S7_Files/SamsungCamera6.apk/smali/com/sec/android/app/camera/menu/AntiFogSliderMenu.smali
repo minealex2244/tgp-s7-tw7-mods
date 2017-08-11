@@ -133,7 +133,7 @@
     invoke-direct/range {v0 .. v12}, Lcom/sec/android/app/camera/menu/AbstractMenu;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;Lcom/sec/android/app/camera/interfaces/Engine;Lcom/sec/android/app/camera/menu/MenuManagerImpl;ILcom/samsung/android/glview/GLViewGroup;FFFFLcom/sec/android/app/camera/menu/MenuResourceDepot;IZ)V
 
     .line 46
-    const v0, 0x7f0b01dd
+    const v0, 0x7f0b01de
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -144,7 +144,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->SLIDE_ANTI_FOG_GROUP_WIDTH:I
 
     .line 47
-    const v0, 0x7f0b01da
+    const v0, 0x7f0b01db
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -155,7 +155,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->SLIDE_ANTI_FOG_GROUP_HEIGHT:I
 
     .line 48
-    const v0, 0x7f0b01db
+    const v0, 0x7f0b01dc
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->SLIDE_ANTI_FOG_GROUP_POS_Y:I
 
     .line 50
-    const v0, 0x7f0b01eb
+    const v0, 0x7f0b01ec
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -190,7 +190,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->SLIDEBAR_TOUCH_AREA_WIDTH:I
 
     .line 51
-    const v0, 0x7f0b01df
+    const v0, 0x7f0b01e0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -201,7 +201,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_SLIDEBAR_POS_X:I
 
     .line 52
-    const v0, 0x7f0b01e0
+    const v0, 0x7f0b01e1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -212,7 +212,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_SLIDEBAR_POS_Y:I
 
     .line 53
-    const v0, 0x7f0b01e1
+    const v0, 0x7f0b01e2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -223,7 +223,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_SLIDEBAR_WIDTH:I
 
     .line 54
-    const v0, 0x7f0b01de
+    const v0, 0x7f0b01df
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -234,7 +234,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_SLIDEBAR_HEIGHT:I
 
     .line 55
-    const v0, 0x7f0b01e9
+    const v0, 0x7f0b01ea
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -245,7 +245,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->SLIDEBAR_TOUCH_AREA_HEIGHT:I
 
     .line 56
-    const v0, 0x7f0b01ea
+    const v0, 0x7f0b01eb
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -274,7 +274,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ZOOM_TEXT_COLOR:I
 
     .line 59
-    const v0, 0x7f0b01e3
+    const v0, 0x7f0b01e4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -285,7 +285,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_LEVEL_TEXT_X:I
 
     .line 60
-    const v0, 0x7f0b01e4
+    const v0, 0x7f0b01e5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -296,7 +296,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_LEVEL_TEXT_Y:I
 
     .line 61
-    const v0, 0x7f0b01e5
+    const v0, 0x7f0b01e6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -307,7 +307,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_LEVEL_TEXT_WIDTH:I
 
     .line 62
-    const v0, 0x7f0b01e2
+    const v0, 0x7f0b01e3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -318,7 +318,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_LEVEL_TEXT_HEIGHT:I
 
     .line 63
-    const v0, 0x7f0b0353
+    const v0, 0x7f0b0354
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -329,7 +329,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_TITLE_ICON_X:I
 
     .line 64
-    const v0, 0x7f0b0354
+    const v0, 0x7f0b0355
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -340,7 +340,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_TITLE_ICON_Y:I
 
     .line 65
-    const v0, 0x7f0b0355
+    const v0, 0x7f0b0356
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -351,7 +351,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_TITLE_ICON_WIDTH:I
 
     .line 66
-    const v0, 0x7f0b0352
+    const v0, 0x7f0b0353
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -362,7 +362,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_TITLE_ICON_HEIGHT:I
 
     .line 67
-    const v0, 0x7f0b0356
+    const v0, 0x7f0b0357
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -456,9 +456,9 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f02018e
+    const v6, 0x7f02018f
 
-    const v7, 0x7f02018e
+    const v7, 0x7f02018f
 
     const/4 v8, 0x0
 
@@ -677,9 +677,9 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f02018c
+    const v6, 0x7f02018d
 
-    const v7, 0x7f02018d
+    const v7, 0x7f02018e
 
     iget v8, p0, Lcom/sec/android/app/camera/menu/AntiFogSliderMenu;->ANTI_FOG_LEVEL_NUM_OF_STEP_10:I
 

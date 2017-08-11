@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">ধীর গতিতে দেখার জন্য ভিডিওগুলি একটি উচ্চ ফ্রেম রেটে রেকর্ড করুন। রেকর্ড করার পরে আপনি প্রতিটি ভিডিওর একটি নির্দিষ্ট বিভাগকে ধীর গতিতে প্লে করতে পারেন।</string>
     <string name="SM_SMART_SELFSHOT">কাছাকাছি-ক্যামে. সেলফি</string>
     <string name="SM_SMART_SELFSHOT_description">আপনি যখন স্ব-পোর্ট্রেট ছবিগুলি তোলেন তখন সামনের ক্যামেরাটি স্বয়ংক্রিয়ভাবে আপনার মুখটি শনাক্ত করে ফোকাস করবে।</string>
+    <string name="SM_SOCIAL">সামাজিক</string>
+    <string name="SM_SOCIAL_description">ছবিগুলি তুলুন ও সামাজিক নেটওয়ার্কগুলিতে সেগুলি সহজে শেয়ার করুন।</string>
     <string name="SM_SPORTS">খেলাগুলি</string>
     <string name="SM_SPORTS_SCENE_description">দ্রুত গতিময় বিষয়বস্তুর আরও স্বচ্ছ ছবি নিন।</string>
     <string name="SM_STORY">ধ্বনি ও শট</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">বর্গক্ষেত্র</string>
     <string name="help_change_mode_tip_1">সুলভ ক্যামেরা মোডগুলি দেখতে ডানদিকে সোয়াইপ করুন।</string>
     <string name="help_change_mode_tip_2">মোড নির্বাচন করুন যেটি আপনি ব্যবহার করতে চান।</string>
+    <string name="help_change_mode_tip_3">সহজ মোড সক্ষম থাকার সময় কেবলমাত্র স্বতঃ ও সেলফি ক্যামেরা মোডগুলি সুলভ।</string>
     <string name="help_changing_the_camera_mode">ক্যামেরার মোডগুলি নির্বাচন করা</string>
+    <string name="help_changing_the_camera_mode_header">একটি ক্যামেরা মোড নির্বাচন করা</string>
+    <string name="help_changing_the_camera_mode_title">ক্যামেরা মোড পরিবর্তন করা</string>
     <string name="help_recording_videos">ভিডিওগুলি রেকর্ড করা</string>
     <string name="help_recording_videos_tip_1">%s ট্যাপ করুন।</string>
     <string name="help_recording_videos_tip_1_tts">ক্যামকর্ডার বোতাম ট্যাপ করুন।</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">রেকর্ডিং বন্ধ করতে থামুন বোতামটি ট্যাপ করুন।</string>
     <string name="help_recording_videos_tip_snapshot">ভিডিও রেকর্ড করার সময় ছবিগুলি তুলতে %s ট্যাপ করুন।</string>
     <string name="help_recording_videos_tip_snapshot_tts">ভিডিও রেকর্ড করার সময় ছবিগুলি তুলতে ক্যামেরা বোতামটি ট্যাপ করুন।</string>
-    <string name="help_section_summary">সমস্ত অনুষ্ঠানে মানানসই করতে, বিভিন্ন ধরণের প্রভাব ব্যবহার করে ছবিগুলি তুলুন বা ভিডিও রেকর্ড করুন। সহজ মোড সক্ষম থাকার সময়, কেবলমাত্র স্বতঃ ও সেলফি ক্যামেরা মোডগুলি সুলভ এবং কোনও প্রভাব প্রয়োগ করা হবে না।</string>
+    <string name="help_section_summary">সমস্ত অনুষ্ঠানে মানানসাই করতে, বিভিন্ন ধরণের প্রভাব ব্যবহার করে ছবিগুলি তুলুন এবং ভিডিও রেকর্ড করুন।</string>
     <string name="help_selecting_camera_mode">ক্যামেরার মোডগুলি নির্বাচন করা</string>
     <string name="help_taking_pictures">ছবিগুলি তোলা</string>
     <string name="help_taking_pictures_tip_1">আপনি যে বিষয়বস্তুটি ফোকাসে আনতে চান তা ট্যাপ করুন।</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">ক্যামেরা বোতামটি ট্যাপ করুন এবং ধীরে ধীরে একটি দিকে আপনার ডিভাইসটি সরান।</string>
     <string name="help_viewing_pics_and_videos_tip_1">আপনি আপনার ছবিগুলি বা ভিডিওগুলি রেকর্ড করার ঠিক পরেই দেখতে %s ট্যাপ করুন।</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">আপনার ছবিগুলি তোলার বা ভিডিওগুলি রেকর্ড করার ঠিক পরে সেগুলি দেখতে দ্রুত দৃশ্য বোতামটি ট্যাপ করুন।</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ছবিগুলি ও ভিডিওগুলি দেখা</string>
     <string name="high_resolution_video_description">%s রেজোলিউশনে রেকর্ড করার সময়ে নিম্নলিখিতটি অসুলভ হবে:</string>
     <string name="highlight">হাইলাইটগুলি</string>

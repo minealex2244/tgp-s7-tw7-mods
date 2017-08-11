@@ -117,7 +117,7 @@
     invoke-direct/range {v0 .. v8}, Lcom/sec/android/app/camera/menu/AbstractMenu;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;Lcom/sec/android/app/camera/interfaces/Engine;Lcom/sec/android/app/camera/menu/MenuManagerImpl;ILcom/samsung/android/glview/GLViewGroup;Lcom/sec/android/app/camera/menu/MenuResourceDepot;IZ)V
 
     .line 42
-    const v0, 0x7f0b00dc
+    const v0, 0x7f0b00dd
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -130,7 +130,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_TEXT_FONT_SIZE:F
 
     .line 43
-    const v0, 0x7f0b00dd
+    const v0, 0x7f0b00de
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -139,7 +139,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_TEXT_Y_MARGIN:F
 
     .line 44
-    const v0, 0x7f0b00db
+    const v0, 0x7f0b00dc
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -148,7 +148,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_TEXT_HEIGHT:F
 
     .line 45
-    const v0, 0x7f0b00da
+    const v0, 0x7f0b00db
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -159,7 +159,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_SLIDER_WIDTH:I
 
     .line 46
-    const v0, 0x7f0b00d5
+    const v0, 0x7f0b00d6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -170,7 +170,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_SLIDER_HEIGHT:I
 
     .line 47
-    const v0, 0x7f0b00d8
+    const v0, 0x7f0b00d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -181,7 +181,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_SLIDER_GROUP_WIDTH:I
 
     .line 48
-    const v0, 0x7f0b00d5
+    const v0, 0x7f0b00d6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -196,7 +196,7 @@
 
     move-result v0
 
-    const v1, 0x7f0b00d6
+    const v1, 0x7f0b00d7
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -209,7 +209,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_SLIDER_GROUP_POS_X:I
 
     .line 50
-    const v0, 0x7f0b00d7
+    const v0, 0x7f0b00d8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -233,7 +233,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_SLIDER_GROUP_POS_Y:I
 
     .line 52
-    const v0, 0x7f0b00df
+    const v0, 0x7f0b00e0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -244,7 +244,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_SLIDER_TOUCH_AREA_WIDTH:I
 
     .line 53
-    const v0, 0x7f0b00de
+    const v0, 0x7f0b00df
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -255,7 +255,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_SLIDER_TOUCH_AREA_HEIGHT:I
 
     .line 54
-    const v0, 0x7f0b00e0
+    const v0, 0x7f0b00e1
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -266,7 +266,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_LEVEL_SLIDER_WIDTH_INTERVAL:I
 
     .line 55
-    const v0, 0x7f0b00d9
+    const v0, 0x7f0b00da
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -703,7 +703,7 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f02018b
+    const v6, 0x7f02018c
 
     iget v7, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_STRENGTH_LEVEL_NUM_OF_STEP:I
 
@@ -1173,7 +1173,7 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f02018b
+    const v6, 0x7f02018c
 
     iget v7, p0, Lcom/sec/android/app/camera/menu/EffectLevelSliderMenu;->EFFECT_VIGNETTE_LEVEL_NUM_OF_STEP:I
 

@@ -193,6 +193,8 @@ Panoramaschwenk: Fangen Sie das Gefühl einer Bewegung ein, wenn Sie ein sich be
     <string name="SM_SLOW_VIDEO_description">Videos mit hoher Bildwiederholfrequenz für die Wiedergabe in Zeitlupe aufnehmen. Nach der Aufnahme können Sie einen bestimmten Abschnitt jedes Videos in Zeitlupe wiedergeben.</string>
     <string name="SM_SMART_SELFSHOT">Hauptkamera-Selfie</string>
     <string name="SM_SMART_SELFSHOT_description">Die Hauptkamera erkennt und fokussiert automatisch das Gesicht, wenn Sie Selbstporträts aufnehmen.</string>
+    <string name="SM_SOCIAL">Sozial</string>
+    <string name="SM_SOCIAL_description">Bilder aufnehmen und leicht in sozialen Netzwerken freigeben.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Schärfere Fotos von schnell bewegten Motiven aufnehmen.</string>
     <string name="SM_STORY">Sound &amp; Shot</string>
@@ -264,7 +266,7 @@ Panoramaschwenk: Fangen Sie das Gefühl einer Bewegung ein, wenn Sie ein sich be
     <string name="Title_Viewmode">Vollbildanzeige (16:9)</string>
     <string name="Title_Voice_Capture">Sprachsteuerung</string>
     <string name="Title_Voice_guide">Sprachführung</string>
-    <string name="Title_Volume_Key_As">Funktion der Lautstärketaste</string>
+    <string name="Title_Volume_Key_As">Lautstärketaste-Funktion</string>
     <string name="Title_WhiteBalance">Weißabgleich</string>
     <string name="Title_common">Allgemein</string>
     <string name="Title_front">Vordere Kamera</string>
@@ -396,7 +398,10 @@ korrektur"</string>
     <string name="guideline_square">Quadrat</string>
     <string name="help_change_mode_tip_1">Streichen Sie nach rechts, um weitere verfügbare Kameramodi anzuzeigen.</string>
     <string name="help_change_mode_tip_2">Wählen Sie den Modus aus, den Sie verwenden möchten.</string>
+    <string name="help_change_mode_tip_3">Bei aktiviertem einfachen Modus sind nur die Kameramodi „Automatisch“ und „Selfie“ verfügbar.</string>
     <string name="help_changing_the_camera_mode">Auswahl von Kameramodi</string>
+    <string name="help_changing_the_camera_mode_header">Kameramodus auswählen</string>
+    <string name="help_changing_the_camera_mode_title">Kameramodus ändern</string>
     <string name="help_recording_videos">Aufzeichnen von Videos</string>
     <string name="help_recording_videos_tip_1">Auf %s tippen.</string>
     <string name="help_recording_videos_tip_1_tts">Tippen Sie auf die Schaltfläche „Videokamera“.</string>
@@ -404,7 +409,7 @@ korrektur"</string>
     <string name="help_recording_videos_tip_2_tts">Tippen Sie auf die Taste „Stopp“, um die Aufnahme zu beenden.</string>
     <string name="help_recording_videos_tip_snapshot">Auf %s tippen, um während einer Videoaufzeichnung Fotos aufzunehmen.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Auf die Kamerataste tippen, um während einer Videoaufzeichnung Fotos aufzunehmen.</string>
-    <string name="help_section_summary">Bilder oder Videos mit verschiedenen Effekten für alle Gelegenheiten aufnehmen. Bei aktiviertem einfachen Modus sind nur die Kameramodi „Automatisch“ und „Selfie“ verfügbar. Im einfachen Modus können keine Effekte angewendet werden.</string>
+    <string name="help_section_summary">Fotos oder Videos mit verschiedenen Effekten für alle Gelegenheiten aufnehmen.</string>
     <string name="help_selecting_camera_mode">Auswahl von Kameramodi</string>
     <string name="help_taking_pictures">Fotos aufnehmen</string>
     <string name="help_taking_pictures_tip_1">Tippen Sie auf das Objekt, das Sie fokussieren möchten.</string>
@@ -419,6 +424,7 @@ korrektur"</string>
     <string name="help_text_wideselfie">Tippen Sie auf die Kamerataste und schwenken Sie das Gerät langsam in eine Richtung.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Auf %s tippen, um Bilder und Videos sofort nach dem Aufnehmen anzeigen.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Auf die Schaltfläche „Schnellansicht“ tippen, um Bilder und Videos sofort nach dem Aufnehmen anzeigen.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Streichen Sie nach links, um Bilder und Videos sofort nach dem Aufnehmen anzeigen.</string>
     <string name="help_viewing_pictures_and_videos">Anzeigen von Fotos und Videos</string>
     <string name="high_resolution_video_description">Folgendes ist während der Aufnahme in %s-Auflösungen nicht verfügbar:</string>
     <string name="highlight">Highlights</string>

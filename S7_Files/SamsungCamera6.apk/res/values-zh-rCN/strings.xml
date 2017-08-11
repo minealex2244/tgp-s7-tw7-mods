@@ -125,7 +125,7 @@
     <string name="R_5312x2988">16:9 (16 M)</string>
     <string name="R_640x480">4:3 (0.3 M)</string>
     <string name="R_MOVIE_1440x1440">1:1</string>
-    <string name="R_MOVIE_1920x1080_60FPS">全高清 (60 fps)</string>
+    <string name="R_MOVIE_1920x1080_60FPS">FHD (60 fps)</string>
     <string name="Resolution_Ratio_16_9_TTS">宽高比 16 比 9、%1$s 百万像素、分辨率 %2$d 乘 %3$d</string>
     <string name="Resolution_Ratio_1_1_TTS">宽高比一比一、%1$s 百万像素、分辨率 %2$d 乘 %3$d</string>
     <string name="Resolution_Ratio_4_3_TTS">宽高比 4 比 3、%1$s 百万像素、分辨率 %2$d 乘 %3$d</string>
@@ -189,6 +189,8 @@
     <string name="SM_SLOW_VIDEO_description">拍摄比实际动作慢的视频。您可以在录制后以慢动作播放每个视频的特定部分。</string>
     <string name="SM_SMART_SELFSHOT">后置摄像头自拍</string>
     <string name="SM_SMART_SELFSHOT_description">自拍时，后置摄像头将自动检测并对焦您的脸部。</string>
+    <string name="SM_SOCIAL">社交</string>
+    <string name="SM_SOCIAL_description">拍照并在社交网络上轻松分享</string>
     <string name="SM_SPORTS">运动</string>
     <string name="SM_SPORTS_SCENE_description">捕捉快速移动的拍摄对象，拍摄清晰的照片。</string>
     <string name="SM_STORY">有声拍摄</string>
@@ -243,7 +245,7 @@
     <string name="Title_Rear_CameraResolution_TTS">后置摄像头拍摄的照片大小</string>
     <string name="Title_RecordingMotionSpeed">选择速度</string>
     <string name="Title_Review">查看照片</string>
-    <string name="Title_SaveAsFlipped">按预览存储照片</string>
+    <string name="Title_SaveAsFlipped">自拍镜像</string>
     <string name="Title_Save_Richtone">另存为</string>
     <string name="Title_ShootingMode">拍摄模式</string>
     <string name="Title_Shooting_Method">拍照方法</string>
@@ -260,7 +262,7 @@
     <string name="Title_Viewmode">全屏视图 (16:9)</string>
     <string name="Title_Voice_Capture">语音控制</string>
     <string name="Title_Voice_guide">语音向导</string>
-    <string name="Title_Volume_Key_As">音量键控制</string>
+    <string name="Title_Volume_Key_As">音量键功能</string>
     <string name="Title_WhiteBalance">白平衡</string>
     <string name="Title_common">通用</string>
     <string name="Title_front">前置摄像头</string>
@@ -392,7 +394,10 @@
     <string name="guideline_square">方形</string>
     <string name="help_change_mode_tip_1">向右滑动可查看可用的相机模式。</string>
     <string name="help_change_mode_tip_2">选择想要使用的模式。</string>
+    <string name="help_change_mode_tip_3">启用简易模式时，只有自动和自拍相机模式可用。</string>
     <string name="help_changing_the_camera_mode">选择相机模式</string>
+    <string name="help_changing_the_camera_mode_header">选择相机模式</string>
+    <string name="help_changing_the_camera_mode_title">更改相机模式</string>
     <string name="help_recording_videos">录制视频</string>
     <string name="help_recording_videos_tip_1">点击 %s。</string>
     <string name="help_recording_videos_tip_1_tts">点击摄像机按钮。</string>
@@ -400,7 +405,7 @@
     <string name="help_recording_videos_tip_2_tts">点击停止按钮以停止录制。</string>
     <string name="help_recording_videos_tip_snapshot">点击%s可在录制视频时拍照。</string>
     <string name="help_recording_videos_tip_snapshot_tts">点击相机按钮可在录制视频时拍照。</string>
-    <string name="help_section_summary">使用各种不同的效果拍摄照片或录制视频，以便适合所有场合。启用简易模式时，仅自动和自拍相机模式可用，且不能应用效果。</string>
+    <string name="help_section_summary">根据不同场合使用各种效果拍照或录制视频。</string>
     <string name="help_selecting_camera_mode">选择相机模式</string>
     <string name="help_taking_pictures">拍照</string>
     <string name="help_taking_pictures_tip_1">点击想要进行对焦的对象。</string>
@@ -415,6 +420,7 @@
     <string name="help_text_wideselfie">点击相机按钮并朝一个方向缓慢转动您的设备。</string>
     <string name="help_viewing_pics_and_videos_tip_1">点击%s以在拍照或录制视频后立即查看照片或视频。</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">点击快速查看按钮以在拍摄照片或录制视频后立即查看照片或视频。</string>
+    <string name="help_viewing_pics_and_videos_tip_2">向左滑动以在拍照或录制视频后立即查看照片或视频。</string>
     <string name="help_viewing_pictures_and_videos">查看照片和视频</string>
     <string name="high_resolution_video_description">以下功能在以 %s 分辨率录制时将不可用：</string>
     <string name="highlight">高亮</string>

@@ -53,45 +53,18 @@
     .end annotation
 
     .prologue
-    .line 69
+    .line 63
     .local p0, "this":Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO;, "Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO<TV1;TV2;>;"
     .local p1, "val1":Ljava/lang/Object;, "TV1;"
     .local p2, "val2":Ljava/lang/Object;, "TV2;"
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 70
+    .line 64
     iput-object p1, p0, Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO;->v1:Ljava/lang/Object;
 
-    .line 71
+    .line 65
     iput-object p2, p0, Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO;->v2:Ljava/lang/Object;
 
-    .line 72
-    return-void
-.end method
-
-
-# virtual methods
-.method protected finalize()V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Throwable;
-        }
-    .end annotation
-
-    .prologue
-    .local p0, "this":Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO;, "Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO<TV1;TV2;>;"
-    const/4 v0, 0x0
-
-    .line 76
-    iput-object v0, p0, Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO;->v1:Ljava/lang/Object;
-
-    .line 77
-    iput-object v0, p0, Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap$ValueVO;->v2:Ljava/lang/Object;
-
-    .line 78
-    invoke-super {p0}, Ljava/lang/Object;->finalize()V
-
-    .line 79
+    .line 66
     return-void
 .end method

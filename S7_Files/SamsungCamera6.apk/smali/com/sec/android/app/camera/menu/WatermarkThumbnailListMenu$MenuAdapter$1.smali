@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$MenuAdapter;
 
     .prologue
-    .line 652
+    .line 661
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$MenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$MenuAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 655
+    .line 664
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$MenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$MenuAdapter;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
@@ -50,7 +50,7 @@
     # invokes: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->refreshItemBG(Lcom/samsung/android/glview/GLView;)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->access$1200(Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;Lcom/samsung/android/glview/GLView;)V
 
-    .line 656
+    .line 665
     const/4 v0, 0x1
 
     return v0

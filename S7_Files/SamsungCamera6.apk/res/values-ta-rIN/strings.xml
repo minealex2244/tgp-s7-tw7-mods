@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">இயக்கத்தை மெதுவாகக் காண, நிகழ்படங்களை அதிக ஃப்ரேம் விகிதத்தில் பதிவுசெய்யவும். அவற்றைப் பதிவு செய்த பிறகு, ஒவ்வொரு நிகழ்படத்தின் ஒரு குறிப்பிட்ட பகுதியை மெதுவான இயக்கத்தில் இயக்கலாம்.</string>
     <string name="SM_SMART_SELFSHOT">பின்-கேமரா செல்ஃபீ</string>
     <string name="SM_SMART_SELFSHOT_description">செல்ஃப்-போர்ட்ரைட் படங்களை நீங்கள் எடுக்கும் போது பின்புற கேமராவானது உங்கள் முகத்தைத் தானாக கண்டறிந்து ஃபோகஸ் செய்யும்.</string>
+    <string name="SM_SOCIAL">சமூகம்</string>
+    <string name="SM_SOCIAL_description">படங்கள் எடுத்து அவற்றை சமூக நெட்வொர்க்குகளில் எளிமையாக பகிரவும்.</string>
     <string name="SM_SPORTS">விளையாட்டுகள்</string>
     <string name="SM_SPORTS_SCENE_description">வேகமாக நகரும் பொருட்களின் படங்களை தெளிவாக எடுக்கவும்.</string>
     <string name="SM_STORY">ஒலி &amp; ஷாட்</string>
@@ -261,9 +263,9 @@
     <string name="Title_Viewmode">முழுத்திரைக் காட்சி (16:9)</string>
     <string name="Title_Voice_Capture">குரல் கட்டுப்பாடு</string>
     <string name="Title_Voice_guide">குரல் வழிகாட்டி</string>
-    <string name="Title_Volume_Key_As">ஒலிவிசை செயற்பாடு</string>
+    <string name="Title_Volume_Key_As">ஒலியளவு விசைச் செயல்பாடு</string>
     <string name="Title_WhiteBalance">வெண் சமநிலை</string>
-    <string name="Title_common">பொது</string>
+    <string name="Title_common">பொதுவானது</string>
     <string name="Title_front">முன் கேமரா</string>
     <string name="Title_rear">பின் கேமரா</string>
     <string name="Title_rear_lens_distortion_correction">வடிவம் திருத்தல்</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">சதுரம்</string>
     <string name="help_change_mode_tip_1">கிடைக்கக்கூடிய கேமரா முறைகளைப் பார்க்க வலது பக்கம் ஸ்வைப் செய்யவும்.</string>
     <string name="help_change_mode_tip_2">நீங்கள் பயன்படுத்த விரும்பும் முறையைத் தேர்ந்தெடுக்கவும்.</string>
+    <string name="help_change_mode_tip_3">எளிய முறையைச் செயல்படுத்தும் போது, தானியக்க மற்றும் செல்ஃபீ கேமரா முறைகள் மட்டுமே கிடைக்கின்றன.</string>
     <string name="help_changing_the_camera_mode">கேமரா முறைகளைத் தேர்வு செய்கிறது</string>
+    <string name="help_changing_the_camera_mode_header">கேமரா முறை தேர்வுசெய்தல்</string>
+    <string name="help_changing_the_camera_mode_title">கேமரா முறையை மாற்றுதல்</string>
     <string name="help_recording_videos">நிகழ்படங்களை பதிதல்</string>
     <string name="help_recording_videos_tip_1">%s டேப் செய்யவும்.</string>
     <string name="help_recording_videos_tip_1_tts">கேம்கார்டர் பொத்தானை டேப் செய்க.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">பதிவை நிறுத்தவென நிறுத்துக பொத்தானை டேப் செய்க.</string>
     <string name="help_recording_videos_tip_snapshot">நிகழ்படம் பதிவுசெய்யும் போது படங்களை எடுக்க %s டேப் செய்யவும்.</string>
     <string name="help_recording_videos_tip_snapshot_tts">நிகழ்படம் பதிவுசெய்கையில் படங்களை எடுக்க கேமரா பொத்தானை டேப் செய்யவும்.</string>
-    <string name="help_section_summary">எல்லா சந்தர்ப்பங்களுக்கும் பொருந்துமாறு பல்வேறுபட்ட விளைவுகளைப் பயன்படுத்தி படங்களை எடுக்கவும் அல்லது நிகழ்படங்களைப் பதிவுசெய்க. எளிய முறையைச் செயல்படுத்தும் போது, தானியக்க மற்றும் செல்ஃபீ கேமரா முறைகள் மட்டுமே கிடைக்கின்றன, மற்றும் பயன்படுத்தக் கூடிய விளைவுகள் ஏதும் இல்லை.</string>
+    <string name="help_section_summary">எல்லா சந்தர்ப்பங்களுக்கும் பொருந்துமாறு பல்வேறுபட்ட விளைவுகளைப் பயன்படுத்தி படங்களை எடுக்கவும் அல்லது நிகழ்படங்களைப் பதிவுசெய்க.</string>
     <string name="help_selecting_camera_mode">கேமரா முறைகளைத் தேர்வு செய்கிறது</string>
     <string name="help_taking_pictures">படங்களை எடுத்தல்</string>
     <string name="help_taking_pictures_tip_1">நீங்கள் ஃபோகஸ் செய்ய விரும்பும் பொருளை டேப் செய்யவும்.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">கேமரா பொத்தானை டேப் செய்து உங்கள் சாதனத்தை ஒரு திசையில் மெதுவாகத் திருப்பவும்.</string>
     <string name="help_viewing_pics_and_videos_tip_1">நீங்கள் படங்கள் அல்லது நிகழ்படங்களை எடுத்த அல்லது பதிவு செய்தவுடன் அவற்றைக் காண %s டேப் செய்யவும்.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">நீங்கள் எடுத்த அல்லது பதிவுசெய்த உடனும் உங்கள் படங்களை அல்லது நிகழ்படத்தைப் பார்ப்பதற்கு துரித காட்சி பொத்தானை டேப் செய்யவும்.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">படங்கள் மற். நிகழ்படங். காண்க</string>
     <string name="high_resolution_video_description">%s தெளிவுதிறன்களின் பதிவுசெய்யும் போது, பின்வருவது கிடைக்காது:</string>
     <string name="highlight">தனிப்படுத்தல்கள்</string>

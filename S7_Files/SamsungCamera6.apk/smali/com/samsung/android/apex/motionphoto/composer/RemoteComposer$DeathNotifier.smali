@@ -39,7 +39,7 @@
     .locals 1
 
     .prologue
-    .line 368
+    .line 367
     const-class v0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$DeathNotifier;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -56,17 +56,17 @@
     .param p1, "owner"    # Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;
 
     .prologue
-    .line 372
+    .line 371
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 373
+    .line 372
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$DeathNotifier;->mOwner:Ljava/lang/ref/WeakReference;
 
-    .line 374
+    .line 373
     return-void
 .end method
 
@@ -78,7 +78,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 378
+    .line 377
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$DeathNotifier;->mOwner:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -87,18 +87,18 @@
 
     if-nez v1, :cond_0
 
-    .line 379
+    .line 378
     sget-object v1, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$DeathNotifier;->TAG:Ljava/lang/String;
 
     const-string v2, "composer is null"
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 390
+    .line 389
     :goto_0
     return-void
 
-    .line 383
+    .line 382
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$DeathNotifier;->mOwner:Ljava/lang/ref/WeakReference;
 
@@ -108,7 +108,7 @@
 
     check-cast v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;
 
-    .line 384
+    .line 383
     .local v0, "impl":Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;
     invoke-virtual {v0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->getTag()Ljava/lang/String;
 
@@ -118,12 +118,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 385
+    .line 384
     iget-object v1, v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mOnErrorListener:Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnErrorListener;
 
     if-eqz v1, :cond_1
 
-    .line 386
+    .line 385
     iget-object v1, v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mOnErrorListener:Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnErrorListener;
 
     const/16 v2, -0x2701
@@ -132,7 +132,7 @@
 
     invoke-interface {v1, v2, v4, v4, v3}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnErrorListener;->onError(IIILjava/lang/Object;)V
 
-    .line 389
+    .line 388
     :cond_1
     invoke-virtual {v0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->release()V
 

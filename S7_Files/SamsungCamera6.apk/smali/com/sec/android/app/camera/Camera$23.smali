@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->setToFullSensorOrientation()V
+    value = Lcom/sec/android/app/camera/Camera;->sendBroadcastChangeSettings(Ljava/lang/String;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,15 +20,23 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/app/camera/Camera;
 
+.field final synthetic val$featureId:Ljava/lang/String;
+
+.field final synthetic val$value:Ljava/lang/String;
+
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/app/camera/Camera;)V
+.method constructor <init>(Lcom/sec/android/app/camera/Camera;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 4326
+    .line 4285
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$23;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    iput-object p2, p0, Lcom/sec/android/app/camera/Camera$23;->val$featureId:Ljava/lang/String;
+
+    iput-object p3, p0, Lcom/sec/android/app/camera/Camera$23;->val$value:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,23 +46,28 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
     .prologue
-    .line 4329
-    const-string v0, "Camera6"
+    .line 4288
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$23;->val$featureId:Ljava/lang/String;
 
-    const-string v1, "setToSupportFullOrientation"
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$23;->val$value:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Lcom/sec/android/app/camera/util/ContextProviderUtils;->getSettingsSet(Ljava/lang/String;Ljava/lang/String;)Landroid/content/ContentValues;
 
-    .line 4330
-    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$23;->this$0:Lcom/sec/android/app/camera/Camera;
+    move-result-object v0
 
-    const/16 v1, 0xa
+    .line 4289
+    .local v0, "cv":Landroid/content/ContentValues;
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$23;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera;->setRequestedOrientation(I)V
+    invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->getApplicationContext()Landroid/content/Context;
 
-    .line 4331
+    move-result-object v1
+
+    invoke-static {v1, v0}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
+
+    .line 4290
     return-void
 .end method

@@ -65,7 +65,7 @@
 
     .prologue
     .line 38
-    const v0, 0x7f0b035c
+    const v0, 0x7f0b035d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -74,7 +74,7 @@
     sput v0, Lcom/sec/android/app/camera/util/CameraGestureListener;->SWIPE_THRESHOLD_DISTANCE:F
 
     .line 43
-    const v0, 0x7f0b0344
+    const v0, 0x7f0b0345
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -83,7 +83,7 @@
     sput v0, Lcom/sec/android/app/camera/util/CameraGestureListener;->SCROLL_THRESHOLD_DISTANCE:F
 
     .line 48
-    const v0, 0x7f0b020a
+    const v0, 0x7f0b020b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -92,7 +92,7 @@
     sput v0, Lcom/sec/android/app/camera/util/CameraGestureListener;->SWIPE_THRESHOLD_VELOCITY:F
 
     .line 53
-    const v0, 0x7f0b020b
+    const v0, 0x7f0b020c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -101,7 +101,7 @@
     sput v0, Lcom/sec/android/app/camera/util/CameraGestureListener;->SWIPE_THRESHOLD_VELOCITY_PORTRAIT:F
 
     .line 58
-    const v0, 0x7f0b035b
+    const v0, 0x7f0b035c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -110,7 +110,7 @@
     sput v0, Lcom/sec/android/app/camera/util/CameraGestureListener;->SWIPE_IGNORE_AREA_PORTRAIT:F
 
     .line 63
-    const v0, 0x7f0b035a
+    const v0, 0x7f0b035b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

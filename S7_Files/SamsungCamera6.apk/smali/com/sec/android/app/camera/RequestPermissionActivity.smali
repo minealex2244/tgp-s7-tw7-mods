@@ -65,7 +65,7 @@
     .locals 14
 
     .prologue
-    const v13, 0x7f0a0110
+    const v13, 0x7f0a0112
 
     const/4 v6, 0x0
 
@@ -180,7 +180,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a015a
+    const v6, 0x7f0a015c
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -214,7 +214,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a0159
+    const v6, 0x7f0a015b
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -240,7 +240,7 @@
 
     move-result-object v5
 
-    const v7, 0x7f0a0158
+    const v7, 0x7f0a015a
 
     const/4 v8, 0x2
 
@@ -291,7 +291,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a01f4
+    const v6, 0x7f0a01fa
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -307,7 +307,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a01f5
+    const v6, 0x7f0a01fb
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -362,7 +362,7 @@
 
     move-result-object v5
 
-    const v7, 0x7f0a01f3
+    const v7, 0x7f0a01f9
 
     new-array v8, v11, [Ljava/lang/Object;
 
@@ -490,7 +490,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01f4
+    const v4, 0x7f0a01fa
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -532,11 +532,11 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0202
+    const v4, 0x7f0a0208
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    const v5, 0x7f0a00d3
+    const v5, 0x7f0a00d5
 
     invoke-virtual {p0, v5}, Lcom/sec/android/app/camera/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 

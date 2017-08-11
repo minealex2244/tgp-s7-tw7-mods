@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     .prologue
-    .line 1593
+    .line 1600
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$4;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "mData"    # Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
 
     .prologue
-    .line 1596
+    .line 1603
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$4;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeListMenu;
@@ -52,7 +52,7 @@
     # setter for: Lcom/sec/android/app/camera/menu/ModeListMenu;->mIsNeedShowBaseMenu:Z
     invoke-static {v2, v3}, Lcom/sec/android/app/camera/menu/ModeListMenu;->access$702(Lcom/sec/android/app/camera/menu/ModeListMenu;Z)Z
 
-    .line 1597
+    .line 1604
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$4;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeListMenu;
@@ -61,10 +61,10 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/menu/ModeListMenu;->setHideAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1598
+    .line 1605
     const-string v1, ""
 
-    .line 1599
+    .line 1606
     .local v1, "packageName":Ljava/lang/String;
     invoke-virtual {p1}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
 
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    .line 1600
+    .line 1607
     .local v0, "mode":Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;
     invoke-virtual {p1}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getCommandId()I
 
@@ -90,12 +90,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 1601
+    .line 1608
     invoke-virtual {p1}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->getPackage()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1605
+    .line 1612
     :goto_0
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$4;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
@@ -105,12 +105,12 @@
 
     invoke-interface {v2, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->uninstallShootingModePackage(Ljava/lang/String;)V
 
-    .line 1607
-    sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
+    .line 1614
+    sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DOWNLOAD_SHOOTING_MODES:Z
 
     if-nez v2, :cond_0
 
-    .line 1608
+    .line 1615
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$4;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     iget-object v2, v2, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeListMenu;
@@ -125,11 +125,11 @@
 
     invoke-interface {v2, v3, v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->uninstallShootingModeShortcut(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1610
+    .line 1617
     :cond_0
     return-void
 
-    .line 1603
+    .line 1610
     :cond_1
     iget-object v1, v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->packageName:Ljava/lang/String;
 

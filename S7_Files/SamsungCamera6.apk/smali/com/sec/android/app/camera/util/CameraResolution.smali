@@ -3713,47 +3713,87 @@
 .end method
 
 .method public static getResolutionSubString(Landroid/content/Context;I)Ljava/lang/String;
-    .locals 4
+    .locals 5
     .param p0, "context"    # Landroid/content/Context;
     .param p1, "resolutionId"    # I
 
     .prologue
-    .line 920
-    const-string v0, "%dx%d"
-
     const/4 v1, 0x2
+
+    const/4 v4, 0x1
+
+    const/4 v3, 0x0
+
+    .line 920
+    invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isEuropeanArabicNumerals()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 921
+    const-string v0, "%dx%d"
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    const/4 v2, 0x0
-
     invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntWidth(I)I
 
-    move-result v3
+    move-result v2
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v3
+    move-result-object v2
 
-    aput-object v3, v1, v2
-
-    const/4 v2, 0x1
+    aput-object v2, v1, v3
 
     invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntHeight(I)I
 
-    move-result v3
+    move-result v2
 
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v3
+    move-result-object v2
 
-    aput-object v3, v1, v2
+    aput-object v2, v1, v4
 
     invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
+    .line 923
+    :goto_0
     return-object v0
+
+    :cond_0
+    const-string v0, "%dx%d"
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntHeight(I)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, v3
+
+    invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getIntWidth(I)I
+
+    move-result v2
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    aput-object v2, v1, v4
+
+    invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
 .end method
 
 .method public static getVideoSizeFullString(Landroid/content/Context;I)Ljava/lang/String;
@@ -3762,7 +3802,7 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 924
+    .line 928
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3802,12 +3842,12 @@
     .param p1, "value"    # I
 
     .prologue
-    const v0, 0x7f0a02c5
+    const v0, 0x7f0a02cc
 
-    .line 928
+    .line 932
     sparse-switch p1, :sswitch_data_0
 
-    .line 949
+    .line 953
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -3815,29 +3855,9 @@
     :goto_0
     return-object v0
 
-    .line 930
-    :sswitch_0
-    const v0, 0x7f0a02c9
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 932
-    :sswitch_1
-    const v0, 0x7f0a02c7
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
     .line 934
-    :sswitch_2
-    const v0, 0x7f0a02c6
+    :sswitch_0
+    const v0, 0x7f0a02d0
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3846,6 +3866,26 @@
     goto :goto_0
 
     .line 936
+    :sswitch_1
+    const v0, 0x7f0a02ce
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 938
+    :sswitch_2
+    const v0, 0x7f0a02cd
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 940
     :sswitch_3
     const v0, 0x7f0a007c
 
@@ -3855,7 +3895,7 @@
 
     goto :goto_0
 
-    .line 939
+    .line 943
     :sswitch_4
     const v0, 0x7f0a007b
 
@@ -3865,29 +3905,9 @@
 
     goto :goto_0
 
-    .line 941
-    :sswitch_5
-    const v0, 0x7f0a02c4
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
-    .line 943
-    :sswitch_6
-    const v0, 0x7f0a02ca
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_0
-
     .line 945
-    :sswitch_7
-    const v0, 0x7f0a02c8
+    :sswitch_5
+    const v0, 0x7f0a02cb
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3896,6 +3916,26 @@
     goto :goto_0
 
     .line 947
+    :sswitch_6
+    const v0, 0x7f0a02d1
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 949
+    :sswitch_7
+    const v0, 0x7f0a02cf
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 951
     :sswitch_8
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3903,7 +3943,7 @@
 
     goto :goto_0
 
-    .line 928
+    .line 932
     :sswitch_data_0
     .sparse-switch
         0xb -> :sswitch_6
@@ -3924,22 +3964,22 @@
     .param p0, "resolutionId"    # I
 
     .prologue
-    .line 954
+    .line 958
     sparse-switch p0, :sswitch_data_0
 
-    .line 978
+    .line 982
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 976
+    .line 980
     :sswitch_0
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 954
+    .line 958
     nop
 
     :sswitch_data_0
@@ -3973,23 +4013,23 @@
     .param p0, "resolutionId"    # I
 
     .prologue
-    .line 983
+    .line 987
     packed-switch p0, :pswitch_data_0
 
-    .line 1004
+    .line 1008
     :pswitch_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 1002
+    .line 1006
     :pswitch_1
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 983
+    .line 987
     nop
 
     :pswitch_data_0
@@ -4039,23 +4079,23 @@
     .param p0, "resolutionId"    # I
 
     .prologue
-    .line 1009
+    .line 1013
     packed-switch p0, :pswitch_data_0
 
-    .line 1042
+    .line 1046
     :pswitch_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 1040
+    .line 1044
     :pswitch_1
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 1009
+    .line 1013
     nop
 
     :pswitch_data_0

@@ -471,7 +471,7 @@
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 137
-    const v3, 0x7f0a0109
+    const v3, 0x7f0a010b
 
     invoke-static {p0, v3, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

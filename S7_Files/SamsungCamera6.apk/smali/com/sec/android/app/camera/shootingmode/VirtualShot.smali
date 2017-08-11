@@ -236,7 +236,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 106
-    const v0, 0x7f0b0379
+    const v0, 0x7f0b037a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -245,7 +245,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_W:F
 
     .line 107
-    const v0, 0x7f0b0378
+    const v0, 0x7f0b0379
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -254,7 +254,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->VIRTUALSHOT_GUIDE_H:F
 
     .line 108
-    const v0, 0x7f0b0376
+    const v0, 0x7f0b0377
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -263,7 +263,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_REAR_X:F
 
     .line 109
-    const v0, 0x7f0b0377
+    const v0, 0x7f0b0378
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -272,7 +272,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_REAR_Y:F
 
     .line 110
-    const v0, 0x7f0b0374
+    const v0, 0x7f0b0375
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -281,7 +281,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_FRONT_X:F
 
     .line 111
-    const v0, 0x7f0b0375
+    const v0, 0x7f0b0376
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -290,7 +290,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->CENTER_OBJECT_FRONT_Y:F
 
     .line 112
-    const v0, 0x7f0b037c
+    const v0, 0x7f0b037d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -299,7 +299,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_REAR_X:F
 
     .line 113
-    const v0, 0x7f0b037d
+    const v0, 0x7f0b037e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -308,7 +308,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_REAR_Y:F
 
     .line 114
-    const v0, 0x7f0b037a
+    const v0, 0x7f0b037b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -317,7 +317,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->PROGRESS_FRONT_X:F
 
     .line 115
-    const v0, 0x7f0b037b
+    const v0, 0x7f0b037c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -420,7 +420,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SCREEN_HEIGHT:I
 
     .line 124
-    const v0, 0x7f0b01d8
+    const v0, 0x7f0b01d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -429,7 +429,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->SHUTTER_BUTTON_WIDTH:F
 
     .line 125
-    const v0, 0x7f0b034d
+    const v0, 0x7f0b034e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -472,7 +472,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->STOP_BUTTON_POS_Y:I
 
     .line 128
-    const v0, 0x7f0b01d6
+    const v0, 0x7f0b01d7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4335,7 +4335,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0161
+    const v2, 0x7f0a0163
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5093,7 +5093,7 @@
     .line 514
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01a7
+    const v1, 0x7f0a01ad
 
     invoke-static {v0, v1, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -5110,7 +5110,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VirtualShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01a9
+    const v1, 0x7f0a01af
 
     invoke-static {v0, v1, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 

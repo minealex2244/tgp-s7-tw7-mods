@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->sendBroadcastChangeSettings(Ljava/lang/String;Ljava/lang/String;)V
+    value = Lcom/sec/android/app/camera/Camera;->sendBroadcastChangeSettings(ILjava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,21 +20,21 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/app/camera/Camera;
 
-.field final synthetic val$featureId:Ljava/lang/String;
+.field final synthetic val$menuCommandId:I
 
 .field final synthetic val$value:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/app/camera/Camera;Ljava/lang/String;Ljava/lang/String;)V
+.method constructor <init>(Lcom/sec/android/app/camera/Camera;ILjava/lang/String;)V
     .locals 0
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 4265
+    .line 4272
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    iput-object p2, p0, Lcom/sec/android/app/camera/Camera$22;->val$featureId:Ljava/lang/String;
+    iput p2, p0, Lcom/sec/android/app/camera/Camera$22;->val$menuCommandId:I
 
     iput-object p3, p0, Lcom/sec/android/app/camera/Camera$22;->val$value:Ljava/lang/String;
 
@@ -46,28 +46,52 @@
 
 # virtual methods
 .method public run()V
-    .locals 3
+    .locals 5
 
     .prologue
-    .line 4268
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$22;->val$featureId:Ljava/lang/String;
+    .line 4275
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    move-result-object v2
+
+    iget v3, p0, Lcom/sec/android/app/camera/Camera$22;->val$menuCommandId:I
+
+    iget-object v4, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    invoke-static {v4}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    move-result-object v4
+
+    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
+
+    move-result v4
+
+    invoke-interface {v2, v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFeatureValueByCommandIdForLogging(IZ)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 4276
+    .local v1, "featureID":Ljava/lang/String;
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$22;->val$value:Ljava/lang/String;
 
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/util/ContextProviderUtils;->getSettingsSet(Ljava/lang/String;Ljava/lang/String;)Landroid/content/ContentValues;
 
     move-result-object v0
 
-    .line 4269
+    .line 4277
     .local v0, "cv":Landroid/content/ContentValues;
-    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$22;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-static {v1, v0}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
+    invoke-static {v2, v0}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 4270
+    .line 4278
     return-void
 .end method

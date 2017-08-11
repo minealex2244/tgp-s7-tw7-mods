@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 9283
+    .line 9338
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$28;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iput-object p2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$28;->val$jpegData:[B
@@ -49,12 +49,12 @@
     .locals 4
 
     .prologue
-    .line 9286
+    .line 9341
     const-string v0, "storeImage"
 
     invoke-static {v0}, Lcom/sec/android/app/TraceWrapper;->traceBegin(Ljava/lang/String;)V
 
-    .line 9288
+    .line 9343
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -87,7 +87,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9289
+    .line 9344
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$28;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$28;->val$jpegData:[B
@@ -95,9 +95,9 @@
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$28;->val$info:Lcom/sec/android/app/camera/util/ImageStoringInfo;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->storeImage([BLcom/sec/android/app/camera/util/ImageStoringInfo;)Z
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5400(Lcom/sec/android/app/camera/engine/CommonEngine;[BLcom/sec/android/app/camera/util/ImageStoringInfo;)Z
+    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5500(Lcom/sec/android/app/camera/engine/CommonEngine;[BLcom/sec/android/app/camera/util/ImageStoringInfo;)Z
 
-    .line 9291
+    .line 9346
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -130,7 +130,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9293
+    .line 9348
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$28;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;
@@ -139,7 +139,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 9296
+    .line 9351
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -172,9 +172,9 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9297
+    .line 9352
     invoke-static {}, Lcom/sec/android/app/TraceWrapper;->traceEnd()V
 
-    .line 9298
+    .line 9353
     return-void
 .end method

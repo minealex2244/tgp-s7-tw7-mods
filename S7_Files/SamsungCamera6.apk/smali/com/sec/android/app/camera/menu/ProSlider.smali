@@ -271,7 +271,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->SCREEN_HEIGHT:I
 
     .line 72
-    const v0, 0x7f0b015a
+    const v0, 0x7f0b015b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -282,7 +282,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_ITEM_WIDTH:I
 
     .line 73
-    const v0, 0x7f0b0155
+    const v0, 0x7f0b0156
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -293,7 +293,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_RIGHT_MARGIN:I
 
     .line 74
-    const v0, 0x7f0b0172
+    const v0, 0x7f0b0173
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -317,7 +317,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_GROUP_WIDTH:I
 
     .line 76
-    const v0, 0x7f0b0166
+    const v0, 0x7f0b0167
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -328,7 +328,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_WIDTH:I
 
     .line 77
-    const v0, 0x7f0b0168
+    const v0, 0x7f0b0169
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -339,7 +339,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_DIVIDER_POS_Y:I
 
     .line 78
-    const v0, 0x7f0b0163
+    const v0, 0x7f0b0164
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -350,7 +350,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_RECORDING_SLIDE_DIVIDER_POS_Y:I
 
     .line 79
-    const v0, 0x7f0b0169
+    const v0, 0x7f0b016a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -361,7 +361,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_DIVIDER_SIZE:I
 
     .line 80
-    const v0, 0x7f0b016a
+    const v0, 0x7f0b016b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -372,7 +372,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_INDICATOR_SIZE:I
 
     .line 81
-    const v0, 0x7f0b0160
+    const v0, 0x7f0b0161
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -396,7 +396,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_INDICATOR_POS_X:I
 
     .line 83
-    const v0, 0x7f0b0161
+    const v0, 0x7f0b0162
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -407,7 +407,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_INDICATOR_SIDE_MARGIN:I
 
     .line 84
-    const v0, 0x7f0b0171
+    const v0, 0x7f0b0172
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -418,7 +418,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_SHUTTER_SPEED_INDICATOR_WIDTH:I
 
     .line 85
-    const v0, 0x7f0b0170
+    const v0, 0x7f0b0171
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -429,7 +429,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_SHUTTER_SPEED_INDICATOR_HEIGHT:I
 
     .line 86
-    const v0, 0x7f0b0165
+    const v0, 0x7f0b0166
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -440,7 +440,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_SHUTTER_SPEED_INDICATOR_RIGHT_MARGIN:I
 
     .line 87
-    const v0, 0x7f0b0162
+    const v0, 0x7f0b0163
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -451,7 +451,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_MANUAL_FOCUS_INDICATOR_BOTTOM_MARGIN:I
 
     .line 88
-    const v0, 0x7f0b0167
+    const v0, 0x7f0b0168
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -473,7 +473,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDEBAR_HEIGHT:I
 
     .line 90
-    const v0, 0x7f0b0175
+    const v0, 0x7f0b0176
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -484,7 +484,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDEBAR_TOUCH_AREA_WIDTH:I
 
     .line 91
-    const v0, 0x7f0b0174
+    const v0, 0x7f0b0175
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -495,7 +495,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDEBAR_TOUCH_AREA_HEIGHT:I
 
     .line 92
-    const v0, 0x7f0b033a
+    const v0, 0x7f0b033b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -506,7 +506,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_KELVIN_SLIDEBAR_TOUCH_AREA_WIDTH:I
 
     .line 93
-    const v0, 0x7f0b016f
+    const v0, 0x7f0b0170
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -530,7 +530,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_SLIDER_POS_X:I
 
     .line 95
-    const v0, 0x7f0b015d
+    const v0, 0x7f0b015e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -550,7 +550,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_RECORDING_SLIDER_OFFSET_X:I
 
     .line 97
-    const v0, 0x7f0b0178
+    const v0, 0x7f0b0179
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -561,7 +561,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_STEP_BUTTON_RIGHT_MARGIN:I
 
     .line 98
-    const v0, 0x7f0b0173
+    const v0, 0x7f0b0174
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -585,7 +585,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_STEP_BUTTON_POS_X:I
 
     .line 100
-    const v0, 0x7f0b033b
+    const v0, 0x7f0b033c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -596,7 +596,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_STEP_BUTTON_EXPAND_AREA:I
 
     .line 101
-    const v0, 0x7f0b0177
+    const v0, 0x7f0b0178
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -607,7 +607,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_VALUE_TEXT_WIDTH:I
 
     .line 102
-    const v0, 0x7f0b0176
+    const v0, 0x7f0b0177
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -618,7 +618,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_VALUE_TEXT_MARGIN:I
 
     .line 103
-    const v0, 0x7f0b0164
+    const v0, 0x7f0b0165
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -629,7 +629,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_RECORDING_VALUE_TEXT_OFFSET_X:I
 
     .line 104
-    const v0, 0x7f0b016e
+    const v0, 0x7f0b016f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -640,7 +640,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_KELVIN_WIDTH:I
 
     .line 105
-    const v0, 0x7f0b016b
+    const v0, 0x7f0b016c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -668,7 +668,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_KELVIN_POS_X:I
 
     .line 107
-    const v0, 0x7f0b016d
+    const v0, 0x7f0b016e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -679,7 +679,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->PRO_SLIDE_KELVIN_TEXT_LEFT_MARGIN:I
 
     .line 108
-    const v0, 0x7f0b016c
+    const v0, 0x7f0b016d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -771,7 +771,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->KELVIN_LEVEL_START_STEP:I
 
     .line 118
-    const v0, 0x7f0b0338
+    const v0, 0x7f0b0339
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -809,7 +809,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/ProSlider;->INDICATOR_TEXT_STROKE_COLOR:I
 
     .line 122
-    const v0, 0x7f0b0339
+    const v0, 0x7f0b033a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1123,7 +1123,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0345
+    const v1, 0x7f0a034c
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1146,7 +1146,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0344
+    const v1, 0x7f0a034b
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1167,7 +1167,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0347
+    const v1, 0x7f0a034e
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1188,7 +1188,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a0346
+    const v1, 0x7f0a034d
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1303,7 +1303,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f020172
+    const v8, 0x7f020173
 
     const/4 v9, 0x0
 
@@ -1330,7 +1330,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0340
+    const v4, 0x7f0a0347
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1500,7 +1500,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f020173
+    const v8, 0x7f020174
 
     const/4 v9, 0x0
 
@@ -1527,7 +1527,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a033f
+    const v4, 0x7f0a0346
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2008,7 +2008,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f02018b
+    const v8, 0x7f02018c
 
     move-object/from16 v0, p0
 
@@ -2039,7 +2039,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a00ca
+    const v5, 0x7f0a00cc
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2603,7 +2603,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f02018b
+    const v8, 0x7f02018c
 
     move-object/from16 v0, p0
 
@@ -2634,7 +2634,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a00ef
+    const v5, 0x7f0a00f1
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2684,7 +2684,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProDividedSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
 
-    const v3, 0x7f020174
+    const v3, 0x7f020175
 
     move-object/from16 v0, p0
 
@@ -2823,7 +2823,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02e6
+    const v4, 0x7f0a02ed
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2841,7 +2841,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02da
+    const v4, 0x7f0a02e1
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2860,7 +2860,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02ce
+    const v4, 0x7f0a02d5
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2878,7 +2878,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02cb
+    const v4, 0x7f0a02d2
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2896,7 +2896,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a033e
+    const v4, 0x7f0a02bb
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3464,7 +3464,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f02018b
+    const v8, 0x7f02018c
 
     move-object/from16 v0, p0
 
@@ -3495,7 +3495,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a00d9
+    const v5, 0x7f0a00db
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3661,7 +3661,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02c3
+    const v4, 0x7f0a02ca
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3679,7 +3679,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02be
+    const v4, 0x7f0a02c5
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3698,7 +3698,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02ba
+    const v4, 0x7f0a02c1
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3716,7 +3716,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02b6
+    const v4, 0x7f0a02bd
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3734,7 +3734,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a033e
+    const v4, 0x7f0a02bb
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4141,7 +4141,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f02018b
+    const v8, 0x7f02018c
 
     move-object/from16 v0, p0
 
@@ -4172,7 +4172,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a00fc
+    const v5, 0x7f0a00fe
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4709,7 +4709,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f02018a
+    const v8, 0x7f02018b
 
     move-object/from16 v0, p0
 
@@ -4740,7 +4740,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a0108
+    const v5, 0x7f0a010a
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5282,7 +5282,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f02018b
+    const v8, 0x7f02018c
 
     move-object/from16 v0, p0
 
@@ -5313,7 +5313,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a00db
+    const v5, 0x7f0a00dd
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5363,7 +5363,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProDividedSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
 
-    const v3, 0x7f020174
+    const v3, 0x7f020175
 
     move-object/from16 v0, p0
 
@@ -6023,7 +6023,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f02018b
+    const v8, 0x7f02018c
 
     move-object/from16 v0, p0
 
@@ -6054,7 +6054,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a00ef
+    const v5, 0x7f0a00f1
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6104,7 +6104,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/ProSlider;->mProDividedSlider:Lcom/sec/android/app/camera/widget/gl/DividedSlider;
 
-    const v3, 0x7f020174
+    const v3, 0x7f020175
 
     move-object/from16 v0, p0
 
@@ -6243,7 +6243,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02d8
+    const v4, 0x7f0a02df
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6261,7 +6261,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02cd
+    const v4, 0x7f0a02d4
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6280,7 +6280,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a02cb
+    const v4, 0x7f0a02d2
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6298,7 +6298,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a033e
+    const v4, 0x7f0a02bb
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8119,7 +8119,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a0108
+    const v5, 0x7f0a010a
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8254,7 +8254,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a0105
+    const v5, 0x7f0a0107
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8307,7 +8307,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a0104
+    const v5, 0x7f0a0106
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8362,7 +8362,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a0107
+    const v5, 0x7f0a0109
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8417,7 +8417,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a0106
+    const v5, 0x7f0a0108
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

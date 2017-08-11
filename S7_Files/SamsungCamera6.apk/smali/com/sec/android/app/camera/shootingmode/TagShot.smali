@@ -220,7 +220,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->SCREEN_HEIGHT:I
 
     .line 138
-    const v0, 0x7f0b0215
+    const v0, 0x7f0b0216
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -229,7 +229,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_TEXT_WIDTH:F
 
     .line 139
-    const v0, 0x7f0b0212
+    const v0, 0x7f0b0213
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -238,7 +238,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_TEXT_HEIGHT:F
 
     .line 140
-    const v0, 0x7f0b0213
+    const v0, 0x7f0b0214
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -247,7 +247,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_TEXT_RIGHT_MARGIN:F
 
     .line 141
-    const v0, 0x7f0b0211
+    const v0, 0x7f0b0212
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -256,7 +256,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_TEXT_BOTTOM_MARGIN:F
 
     .line 142
-    const v0, 0x7f0b020d
+    const v0, 0x7f0b020e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -265,7 +265,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_ICON_WIDTH:F
 
     .line 143
-    const v0, 0x7f0b020f
+    const v0, 0x7f0b0210
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -274,7 +274,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_PORTRAIT_MARGIN:F
 
     .line 144
-    const v0, 0x7f0b020e
+    const v0, 0x7f0b020f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -283,7 +283,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_LANDSCAPE_MARGIN:F
 
     .line 145
-    const v0, 0x7f0b0210
+    const v0, 0x7f0b0211
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -314,7 +314,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->TAG_SHOT_INFO_GROUP_HEIGHT:I
 
     .line 148
-    const v0, 0x7f0b0214
+    const v0, 0x7f0b0215
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -2522,15 +2522,15 @@
     .param p1, "iconNum"    # I
 
     .prologue
-    const v0, 0x7f0202e5
+    const v0, 0x7f0202e4
 
-    const v2, 0x7f0202e3
+    const v2, 0x7f0202e2
 
-    const v3, 0x7f0202d8
+    const v3, 0x7f0202d7
 
-    const v1, 0x7f0202d6
+    const v1, 0x7f0202d5
 
-    const v4, 0x7f0202e4
+    const v4, 0x7f0202e3
 
     .line 723
     const-string v5, "TagShot"
@@ -2565,7 +2565,7 @@
 
     .line 731
     :pswitch_1
-    const v0, 0x7f0202dd
+    const v0, 0x7f0202dc
 
     goto :goto_0
 
@@ -2577,7 +2577,7 @@
 
     .line 737
     :pswitch_3
-    const v0, 0x7f0202d9
+    const v0, 0x7f0202d8
 
     goto :goto_0
 
@@ -2589,25 +2589,25 @@
 
     .line 742
     :pswitch_5
-    const v0, 0x7f0202df
+    const v0, 0x7f0202de
 
     goto :goto_0
 
     .line 744
     :pswitch_6
-    const v0, 0x7f0202e6
+    const v0, 0x7f0202e5
 
     goto :goto_0
 
     .line 747
     :pswitch_7
-    const v0, 0x7f0202e0
+    const v0, 0x7f0202df
 
     goto :goto_0
 
     .line 749
     :pswitch_8
-    const v0, 0x7f0202e1
+    const v0, 0x7f0202e0
 
     goto :goto_0
 
@@ -2619,7 +2619,7 @@
 
     .line 754
     :pswitch_a
-    const v0, 0x7f0202de
+    const v0, 0x7f0202dd
 
     goto :goto_0
 
@@ -2631,7 +2631,7 @@
 
     .line 759
     :pswitch_c
-    const v0, 0x7f0202db
+    const v0, 0x7f0202da
 
     goto :goto_0
 
@@ -2643,37 +2643,37 @@
 
     .line 764
     :pswitch_e
-    const v0, 0x7f0202e2
+    const v0, 0x7f0202e1
 
     goto :goto_0
 
     .line 766
     :pswitch_f
-    const v0, 0x7f0202da
+    const v0, 0x7f0202d9
 
     goto :goto_0
 
     .line 768
     :pswitch_10
-    const v0, 0x7f0202d7
+    const v0, 0x7f0202d6
 
     goto :goto_0
 
     .line 770
     :pswitch_11
-    const v0, 0x7f0202e7
+    const v0, 0x7f0202e6
 
     goto :goto_0
 
     .line 772
     :pswitch_12
-    const v0, 0x7f0202d5
+    const v0, 0x7f0202d4
 
     goto :goto_0
 
     .line 774
     :pswitch_13
-    const v0, 0x7f0202dc
+    const v0, 0x7f0202db
 
     goto :goto_0
 
@@ -2691,7 +2691,7 @@
 
     .line 785
     :pswitch_16
-    const v0, 0x7f0202e6
+    const v0, 0x7f0202e5
 
     goto :goto_0
 
@@ -3262,9 +3262,9 @@
     .locals 9
 
     .prologue
-    const v8, 0x7f0a0178
+    const v8, 0x7f0a017a
 
-    const v2, 0x7f0a00d3
+    const v2, 0x7f0a00d5
 
     const/16 v7, 0x1e6
 
@@ -3288,7 +3288,7 @@
     .line 889
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/TagShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a022f
+    const v1, 0x7f0a0235
 
     invoke-static {v0, v1, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -3364,7 +3364,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a01b3
+    const v3, 0x7f0a01b9
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -3432,7 +3432,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a01b1
+    const v3, 0x7f0a01b7
 
     new-array v4, v4, [Ljava/lang/Object;
 
@@ -3997,7 +3997,7 @@
 
     const/4 v2, 0x0
 
-    const v3, 0x7f0201f8
+    const v3, 0x7f0201f6
 
     invoke-direct {v0, p1, v1, v2, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 

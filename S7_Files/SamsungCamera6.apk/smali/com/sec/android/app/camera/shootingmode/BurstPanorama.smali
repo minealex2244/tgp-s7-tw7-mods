@@ -312,7 +312,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->SCREEN_HEIGHT:I
 
     .line 108
-    const v0, 0x7f0b0065
+    const v0, 0x7f0b0066
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -334,7 +334,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->INIT_LANDSCAPE_X:F
 
     .line 110
-    const v0, 0x7f0b0066
+    const v0, 0x7f0b0067
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -352,7 +352,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
     .line 112
-    const v0, 0x7f0b0067
+    const v0, 0x7f0b0068
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -383,7 +383,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->LIVEPREVIEW_PORTRAIT_Y:F
 
     .line 116
-    const v0, 0x7f0b0064
+    const v0, 0x7f0b0065
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -392,7 +392,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->GUIDE_HELP_TEXT_WIDTH:F
 
     .line 117
-    const v0, 0x7f0b0062
+    const v0, 0x7f0b0063
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -434,7 +434,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->GUIDE_HELP_TEXT_SIZE:F
 
     .line 121
-    const v0, 0x7f0b0063
+    const v0, 0x7f0b0064
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -443,7 +443,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->GUIDE_TEXT_MARGIN:F
 
     .line 123
-    const v0, 0x7f0b0069
+    const v0, 0x7f0b006a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -452,7 +452,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
 
     .line 125
-    const v0, 0x7f0b006c
+    const v0, 0x7f0b006d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -461,7 +461,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->WARNING_ARROW_SWING_DISTANCE:F
 
     .line 126
-    const v0, 0x7f0b006b
+    const v0, 0x7f0b006c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -470,7 +470,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->WARNING_ARROW_OFFSET:F
 
     .line 128
-    const v0, 0x7f0b0061
+    const v0, 0x7f0b0062
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -479,7 +479,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->TRI_WIDTH:F
 
     .line 129
-    const v0, 0x7f0b0060
+    const v0, 0x7f0b0061
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -488,7 +488,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->TRI_HEIGHT:F
 
     .line 132
-    const v0, 0x7f0b01d8
+    const v0, 0x7f0b01d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -497,7 +497,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->SHUTTER_BUTTON_WIDTH:F
 
     .line 133
-    const v0, 0x7f0b034d
+    const v0, 0x7f0b034e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -538,7 +538,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->STOP_BUTTON_POS_Y:I
 
     .line 136
-    const v0, 0x7f0b01d6
+    const v0, 0x7f0b01d7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1161,7 +1161,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v6, 0x7f020154
+    const v6, 0x7f020155
 
     move v2, v11
 
@@ -1209,7 +1209,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v2, 0x7f020154
+    const v2, 0x7f020155
 
     invoke-direct {v0, v1, v11, v11, v2}, Lcom/samsung/android/glview/GLNinePatch;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1400,7 +1400,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020152
+    const v3, 0x7f020153
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1413,7 +1413,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020151
+    const v3, 0x7f020152
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1426,7 +1426,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020153
+    const v3, 0x7f020154
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1441,7 +1441,7 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v4, 0x7f020150
+    const v4, 0x7f020151
 
     invoke-direct {v2, v3, v11, v11, v4}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1554,7 +1554,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020152
+    const v3, 0x7f020153
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1567,7 +1567,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020153
+    const v3, 0x7f020154
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1625,7 +1625,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020159
+    const v3, 0x7f02015a
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1638,7 +1638,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020156
+    const v3, 0x7f020157
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1651,7 +1651,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020157
+    const v3, 0x7f020158
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1666,7 +1666,7 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v4, 0x7f020158
+    const v4, 0x7f020159
 
     invoke-direct {v2, v3, v11, v11, v4}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1804,7 +1804,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0161
+    const v2, 0x7f0a0163
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1918,7 +1918,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0a01d7
+    const v7, 0x7f0a01dd
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3860,7 +3860,7 @@
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mInitLandscapeSingleX:F
 
     .line 1223
-    const v3, 0x7f0b0068
+    const v3, 0x7f0b0069
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4666,7 +4666,7 @@
     :pswitch_1
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mPreviewThumbnailWidth:F
 
-    const v11, 0x7f0b006a
+    const v11, 0x7f0b006b
 
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4725,7 +4725,7 @@
 
     sub-float/2addr v0, v11
 
-    const v11, 0x7f0b006a
+    const v11, 0x7f0b006b
 
     .line 1350
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -4800,7 +4800,7 @@
 
     .line 1359
     :cond_11
-    const v0, 0x7f0b006a
+    const v0, 0x7f0b006b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4905,7 +4905,7 @@
 
     sub-float/2addr v0, v4
 
-    const v11, 0x7f0b006a
+    const v11, 0x7f0b006b
 
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -5377,7 +5377,7 @@
 
     aget-object v3, v3, v7
 
-    const v4, 0x7f020153
+    const v4, 0x7f020154
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
@@ -5389,7 +5389,7 @@
 
     aget-object v3, v3, v7
 
-    const v4, 0x7f020150
+    const v4, 0x7f020151
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
@@ -5401,7 +5401,7 @@
 
     aget-object v3, v3, v5
 
-    const v4, 0x7f020151
+    const v4, 0x7f020152
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
@@ -5417,7 +5417,7 @@
 
     aget-object v3, v3, v5
 
-    const v4, 0x7f020152
+    const v4, 0x7f020153
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
@@ -9716,7 +9716,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a019b
+    const v1, 0x7f0a01a1
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -9730,7 +9730,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/BurstPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01d6
+    const v1, 0x7f0a01dc
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -10027,7 +10027,7 @@
 
     .line 2105
     :pswitch_0
-    const v1, 0x7f0b006a
+    const v1, 0x7f0b006b
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -10115,7 +10115,7 @@
     .line 2115
     .end local v0    # "triOffset":F
     :pswitch_1
-    const v1, 0x7f0b006a
+    const v1, 0x7f0b006b
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

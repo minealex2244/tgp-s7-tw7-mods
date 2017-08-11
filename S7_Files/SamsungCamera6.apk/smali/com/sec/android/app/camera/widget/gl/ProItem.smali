@@ -64,7 +64,7 @@
     invoke-direct/range {v0 .. v7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 35
-    const v0, 0x7f0b015a
+    const v0, 0x7f0b015b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -75,7 +75,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProItem;->PRO_ITEM_WIDTH:I
 
     .line 36
-    const v0, 0x7f0b0157
+    const v0, 0x7f0b0158
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -86,7 +86,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProItem;->PRO_ITEM_TEXT_HEIGHT:I
 
     .line 37
-    const v0, 0x7f0b0158
+    const v0, 0x7f0b0159
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -97,7 +97,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ProItem;->PRO_ITEM_TEXT_POS_Y:I
 
     .line 38
-    const v0, 0x7f0b0156
+    const v0, 0x7f0b0157
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -310,7 +310,7 @@
     .line 158
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ProItem;->mButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f020184
+    const v1, 0x7f020185
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setBackground(I)Z
 

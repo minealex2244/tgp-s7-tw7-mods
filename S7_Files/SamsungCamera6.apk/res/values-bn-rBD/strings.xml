@@ -188,6 +188,8 @@
     <string name="SM_SLOW_VIDEO_description">ধীর গতিতে দেখার জন্য ভিডিওগুলো একটি উচ্চ ফ্রেম রেটে রেকর্ড করুন। রেকর্ড করার পরে আপনি প্রতিটি ভিডিওর একটি নির্দিষ্ট বিভাগকে ধীর গতিতে প্লে করতে পারেন।</string>
     <string name="SM_SMART_SELFSHOT">পেছনের-ক্যাম দিয়ে সেলফি</string>
     <string name="SM_SMART_SELFSHOT_description">আপনি যখন সেলফ-পোর্ট্রেট ছবি তোলেন তখন পিছনের ক্যামেরাটি স্বয়ংক্রিয়ভাবে আপনার চেহারা শনাক্ত করে ফোকাস করবে।</string>
+    <string name="SM_SOCIAL">সামাজিক</string>
+    <string name="SM_SOCIAL_description">ছবি তুলুন এবং সেগুলো সামাজিক যোগাযোগ মাধ্যমে সহজে শেয়ার করুন৷</string>
     <string name="SM_SPORTS">খেলাগুলো</string>
     <string name="SM_SPORTS_SCENE_description">দ্রুত গতিময় বিষয়বস্তুর আরও স্বচ্ছ ছবি নিন।</string>
     <string name="SM_STORY">শব্দ এবং শট</string>
@@ -259,9 +261,9 @@
     <string name="Title_Viewmode">পূর্ণ স্ক্রিন দৃশ্য (16:9)</string>
     <string name="Title_Voice_Capture">ভয়েস নিয়ন্ত্রণ</string>
     <string name="Title_Voice_guide">ভয়েস সহায়িকা</string>
-    <string name="Title_Volume_Key_As">Volume key function</string>
+    <string name="Title_Volume_Key_As">ভলিউম কী-এর কাজ</string>
     <string name="Title_WhiteBalance">হোয়াইট ব্যালেন্স</string>
-    <string name="Title_common">Common</string>
+    <string name="Title_common">সাধারণ</string>
     <string name="Title_front">সামনের ক্যামেরা</string>
     <string name="Title_rear">পিছনের ক্যামেরা</string>
     <string name="Title_rear_lens_distortion_correction">আকৃতি সংশোধন</string>
@@ -391,7 +393,10 @@
     <string name="guideline_square">বর্গ</string>
     <string name="help_change_mode_tip_1">ক্যামেরার লভ্য মোডগুলো দেখতে ডানে সোয়াইপ করুন৷</string>
     <string name="help_change_mode_tip_2">মোড নির্বাচন করুন যেটি আপনি ব্যবহার করতে চান।</string>
+    <string name="help_change_mode_tip_3">‘সহজ মোড’ সক্রিয় থাকাকালীন শুধু ‘স্বয়ংক্রিয়’ ও ‘সেলফি’ ক্যামেরা মোড পাওয়া যায়৷</string>
     <string name="help_changing_the_camera_mode">ক্যামেরা মোড নির্বাচন করা</string>
+    <string name="help_changing_the_camera_mode_header">একটি ক্যামেরা মোড নির্বাচন করা</string>
+    <string name="help_changing_the_camera_mode_title">ক্যামেরা মোড পরিবর্তন করা হচ্ছে</string>
     <string name="help_recording_videos">ভিডিওগুলো রেকর্ড করা</string>
     <string name="help_recording_videos_tip_1">%s ট্যাপ করুন।</string>
     <string name="help_recording_videos_tip_1_tts">ক্যামকর্ডার বাটন ট্যাপ করুন।</string>
@@ -399,7 +404,7 @@
     <string name="help_recording_videos_tip_2_tts">রেকর্ডিং বন্ধ করতে থামুন বাটনটি ট্যাপ করুন।</string>
     <string name="help_recording_videos_tip_snapshot">ভিডিও রেকর্ড করার সময় ছবি তুলতে %s ট্যাপ করুন।</string>
     <string name="help_recording_videos_tip_snapshot_tts">ভিডিও রেকর্ড করার সময় ছবি তুলতে ক্যামেরা বাটনটি ট্যাপ করুন।</string>
-    <string name="help_section_summary">সব অনুষ্ঠানের সাথে মানানসই করতে, বিভিন্ন ধরনের ইফেক্ট ব্যবহার করে ছবি তুলুন বা ভিডিও রেকর্ড করুন। ‘সহজ মোড’ সক্রিয় থাকাকালীন শুধু ‘অটো’ ও ‘সেলফি’ ক্যামেরা মোড পাওয়া যাবে, এবং কোনো ইফেক্ট প্রয়োগ করা যাবে না৷</string>
+    <string name="help_section_summary">সকল অনুষ্ঠানে মানানসই করতে, বিভিন্ন ধরণের প্রভাব ব্যবহার করে ছবিগুলো তুলুন এবং ভিডিও রেকর্ড করুন।</string>
     <string name="help_selecting_camera_mode">ক্যামেরা মোড নির্বাচন করা</string>
     <string name="help_taking_pictures">ছবিগুলো তোলা</string>
     <string name="help_taking_pictures_tip_1">আপনি যে বিষয়বস্তুটি ফোকাসে আনতে চান তা ট্যাপ করুন।</string>
@@ -414,6 +419,7 @@
     <string name="help_text_wideselfie">ক্যামেরা বোতাম ট্যাপ করুন এবং ধীরে ধীরে কোনো দিকে আপনার ডিভাইসটি সরান।</string>
     <string name="help_viewing_pics_and_videos_tip_1">আপনি আপনার ছবি বা ভিডিও রেকর্ড করার ঠিক পরেই দেখতে %s ট্যাপ করুন।</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">আপনার ছবি তোলার অথবা ভিডিও রেকর্ড করার ঠিক পরে সেগুলো দেখতে দ্রুত দৃশ্য বাটনটি ট্যাপ করুন।</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ছবি এবং ভিডিও দেখা</string>
     <string name="high_resolution_video_description">%s রেজোল্যুশনে রেকর্ড করার সময়ে নিম্নলিখিতটি পাওয়া যাবে না:</string>
     <string name="highlight">হাইলাইট</string>

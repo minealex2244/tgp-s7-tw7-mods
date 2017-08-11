@@ -52,7 +52,7 @@
 
     .prologue
     .line 38
-    const v0, 0x7f0b038c
+    const v0, 0x7f0b038d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

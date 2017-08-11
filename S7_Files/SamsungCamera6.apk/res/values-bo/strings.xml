@@ -186,6 +186,8 @@
     <string name="SM_SLOW_VIDEO_description">དོན་དངོས་འགུལ་སྟངས་ནས་དལ་བའི་བརྙན་ཟློས་པར་ལེན་བྱས་ཚེ། ཁྱེད་ནས་ཕབ་འཇུག་ཟིན་རྗེས་དལ་གཏོང་ཐོག་ནས་བརྙན་ཟློས་རེ་རེའི་དམིགས་བཙུགས་ཆ་ཤས་གཏོང་ལེན་བྱ་དགོས།</string>
     <string name="SM_SMART_SELFSHOT">རྒྱབ་སྒྲིག་པར་སྒོ་རང་པར་ལེན་པ་</string>
     <string name="SM_SMART_SELFSHOT_description">རང་པར་ལེན་དུས། རྒྱབ་སྒྲིག་པར་སྒོས་རང་འགུལ་ཐོག་ཁྱེད་ཀྱི་གདོང་བཞིན་ཚོར་རྟོགས་དང་འོད་སྒྲིག་བྱ་སྲིད།</string>
+    <string name="SM_SOCIAL">社交</string>
+    <string name="SM_SOCIAL_description">拍照并在社交网络上轻松分享</string>
     <string name="SM_SPORTS">ལུས་རྩལ།</string>
     <string name="SM_SPORTS_SCENE_description">མྱུར་མགྱོགས་འགུལ་སྤོ་བྱེད་པའི་པར་ལེན་ཡུལ་འཛིན་ནས། འདྲ་པར་གསལ་པོ་ལེན་པ།</string>
     <string name="SM_STORY">སྐད་ཕབ་པར་ལེན།</string>
@@ -210,7 +212,7 @@
     <string name="Title_Effects">ནུས་པ།</string>
     <string name="Title_ExposureValue">འོད་གཏོང་ཚད།</string>
     <string name="Title_Flash">འོད་འཚེར།</string>
-    <string name="Title_FloatingCameraButton">浮动快门按钮</string>
+    <string name="Title_FloatingCameraButton">འཕྱོ་འདུག་མགྱོགས་སྒོའི་མཐེབ་གནོན།</string>
     <string name="Title_FocusMode">འདོ་འདུས་རྣམ་པ།</string>
     <string name="Title_Frame">པར་སྒྲོམ།</string>
     <string name="Title_Front_CamcorderResolution">བརྙན་ཟློས་ཆེ་ཆུང་།(མདུན་སྒྲིག་པར་ཆས་)</string>
@@ -256,9 +258,9 @@
     <string name="Title_Viewmode">ཡོལ་ཡོངས་མཐོང་རིས། (16:9)</string>
     <string name="Title_Voice_Capture">སྐད་སྒྲའི་གཏོང་འཛིན།</string>
     <string name="Title_Voice_guide">སྒྲ་སྐད་མཛུབ་སྟོན།</string>
-    <string name="Title_Volume_Key_As">སྒྲ་ཡི་གནས་ཀྱི་ལག་ལེན</string>
+    <string name="Title_Volume_Key_As">音量键功能</string>
     <string name="Title_WhiteBalance">དཀར་འོད་དོ་སྙོམས།</string>
-    <string name="Title_common">通用</string>
+    <string name="Title_common">ཐུན་མོང་།</string>
     <string name="Title_front">མདུན་སྒྲིག་པར་སྒོ</string>
     <string name="Title_rear">རྒྱབ་སྒྲིག་པར་སྒོ།</string>
     <string name="Title_rear_lens_distortion_correction">གཟུགས་སྒྱུར་བཅོས་པ།</string>
@@ -358,7 +360,7 @@
     <string name="do_not_ask_again">ཕྱིས་ནས་མི་གསལ་བ།</string>
     <string name="done">ལས་ཟིན།</string>
     <string name="dual">ཆུ་ཚོད་1གི་མགྱོགས།</string>
-    <string name="edit">编辑</string>
+    <string name="edit">སྒྲིག་བཟོ།</string>
     <string name="effect_recording_restriction_msg">录制视频时无法应用效果</string>
     <string name="emoji">སེམས་ཚོར།</string>
     <string name="enable_btn">ཁ་ཕྱེ།</string>
@@ -373,7 +375,7 @@
     <string name="face_right_middle">གདོང་བཞིན་1ཚོར་རྟོགས་ཐུབ་པ་དང་བརྙན་ཡོལ་གྱི་གཡས་ཕྱོགས་སུ་གནས་འདུག</string>
     <string name="face_right_top">གདོང་བཞིན་1ཚོར་རྟོགས་ཐུབ་པ་དང་བརྙན་ཡོལ་གྱི་གཡས་གོང་ཐོག་ཏུ་གནས་འདུག</string>
     <string name="faces_detected">གདོང་བཞིན་%dཚོར་རྟོགས་ཟིན།</string>
-    <string name="floating_camera_button">添加额外的相机按钮，该按钮可在自动模式和自拍模式下移动到屏幕上的任何位置。</string>
+    <string name="floating_camera_button">པར་ཆས་མཐེབ་གནོན་འཕར་མ་སྣོན་འཇུག་བྱས།མཐེབ་གནོན་འདི་རང་འགུལ་རྣམ་པ་དང་པར་རང་ལེན་རྣམ་པའི་འོག་བརྙན་ཡོལ་ཐོག་གི་གནས་གང་རུང་ཏུ་འགུལ་སྤོ་བྱེད་ཆོག</string>
     <string name="food">ཟས།</string>
     <string name="gallery">པར་དེབ།</string>
     <string name="gallery_app_name_in_upsm">པར་དེབ།</string>
@@ -385,7 +387,10 @@
     <string name="guideline_square">གྲུ་བཞི།</string>
     <string name="help_change_mode_tip_1">གཡས་སུ་འདྲུད་འགུལ་བྱས་ནས་སྤྱོད་ཆོག་པའི་པར་ཆས་རྣམ་པ་བལྟ་བ།</string>
     <string name="help_change_mode_tip_2">སྤྱོད་འདོད་པའི་རྣམ་པ་འདེམས་པ།</string>
+    <string name="help_change_mode_tip_3">སྟབས་བདེའི་རྣམ་པ་ཁ་ཕྱེ་བའི་དུས་སུ། རང་འགུལ་དང་རང་པར་ལེན་པའི་པར་ཆས་རྣམ་པ་སྤྱོད་ཆོག</string>
     <string name="help_changing_the_camera_mode">པར་ཆས་རྣམ་པ་འདེམས་པ།</string>
+    <string name="help_changing_the_camera_mode_header">པར་ཆས་རྣམ་པ་འདེམས་པ།</string>
+    <string name="help_changing_the_camera_mode_title">པར་ཆས་རྣམ་པ་སྒྱུར་བ།</string>
     <string name="help_recording_videos">བརྙན་ཟློས་ཕབ་འཇུག་བྱས།</string>
     <string name="help_recording_videos_tip_1">%s བརྡེབས།</string>
     <string name="help_recording_videos_tip_1_tts">བརྙན་ལེན་འཕྲུལ་ཆས་མཐེབ་བརྡེབས་དགོས།</string>
@@ -393,7 +398,7 @@
     <string name="help_recording_videos_tip_2_tts">མཚམས་འཇོག་མཐེབ་བརྡེབས་ནས་ཕན་འཇུག་མཚམས་འཇོག་པ།</string>
     <string name="help_recording_videos_tip_snapshot">%sབརྡེབས་ནས་བརྙན་ཟློས་ཕབ་འཇུག་བྱེད་པའི་སྐབས་པར་ལེན་ཆོག་པ།</string>
     <string name="help_recording_videos_tip_snapshot_tts">པར་ཆས་མཐེབ་གནོན་བརྡེབས་ནས་བརྙན་ཟློས་ཕབ་པའི་དུས་དུ་པར་ལེན་ཆོག</string>
-    <string name="help_section_summary">ནུས་པ་མི་འདྲ་བ་སྤྱད་ནས་པར་ལེན་པའམ་བརྙན་ཟློས་ཕབ་འཇུག་བྱེད་པ། དེ་ལྟར་གནས་ཡུལ་གང་སར་འོས་འཚམ་ཐུབ། སྟབས་བདེའི་རྣམ་པ་བེད་སྤྱོད་གཏོང་བའི་དུས་སུ་རང་འགུལ་དང་རང་པར་ལེན་པའི་་པར་ཆས་རྣམ་པ་ཁོ་ནའོ་ཐོག་སྤྱོད་ཆོགདེས་མ་ཟད་ནུས་པ་སྤྱོད་མི་ཐུབ།</string>
+    <string name="help_section_summary">གནས་མི་འབྲ་བར་བསྟུན་ནས་ནུས་པ་མི་འདྲ་བ་སྣ་ཚོགས་སྤྱད་ནས་པར་ལེན་པའམ་བརྙན་ཟློས་ཕབ་ཆོག</string>
     <string name="help_selecting_camera_mode">པར་ཆས་རྣམ་པ་འདེམས་པ།</string>
     <string name="help_taking_pictures">པར་ལེན་པ།</string>
     <string name="help_taking_pictures_tip_1">འོད་སྒྲིག་བྱ་འདོད་པའི་བྱ་ཡུལ་བརྡེབས་པ།</string>
@@ -408,6 +413,7 @@
     <string name="help_text_wideselfie">པར་ཆས་མཐེབ་གནོན་བརྡེབས་པ་དང་ཁྱེད་ཀྱི་འཕྲུལ་ཆས་ཕྱོགས་གཅིག་ཏུ་དལ་བུས་སྒྲིག་འགུལ་གཏོང་དགོས།</string>
     <string name="help_viewing_pics_and_videos_tip_1">%sབརྡེབས་ནས་པར་རྒྱག་པའམ་བརྙན་ཟློས་ཕབ་འཇུག་བྱས་རྗེས་ལམ་སེང་འདྲ་པར་རམ་བརྙན་ཟློས་ལྟ་ཞིབ་བྱེད་པ།</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">མྱུར་མགྱོགས་ལྟ་ཞིབ་མཐེབ་གནོན་བརྡེབས་ནས་པར་ལེན་པའམ་བརྙན་ཟློས་ཕབ་པའི་རྗེས་སུ་ལམ་སེང་འདྲ་པར་རམ་བརྙན་ཟློས་ལྟ་ཞིབ་བྱེད་པ།</string>
+    <string name="help_viewing_pics_and_videos_tip_2">向左滑动以在拍照或录制视频后立即查看照片或视频。</string>
     <string name="help_viewing_pictures_and_videos">འདྲ་པར་དང་བརྙན་ཟློས་ལྟ་ཞིབ།</string>
     <string name="high_resolution_video_description">གཤམ་གྱི་ཕན་ནུས་འདི་དག་འབྱེད་ཚད་%sཡི་ཕབ་འཇུག་བྱེད་པའི་སྐབས་སུ་སྤྱོད་མི་ཐུབ།</string>
     <string name="highlight">གསལ་པོ།</string>
@@ -466,12 +472,12 @@
     <string name="not_enough_device_storage_to_record_video">འཕྲུལ་ཆས་གསོག་སྣོད་བར་སྟོང་མི་ལྡང་། བརྙན་ཟློས་ཕབ་འཇུག་མི་ཐུབ།</string>
     <string name="not_enough_device_storage_to_take_picture">འཕྲུལ་ཆས་གསོག་སྣོད་བར་སྟོང་མི་ལྡང་། པར་ལེན་པ་མི་ཐུབ།</string>
     <string name="not_enough_space">ནང་གསོག་ལྡང་ངེས་མེད་པ།</string>
-    <string name="not_support_shootingmode_in_multiwindow">无法在多窗口视图中使用%s</string>
+    <string name="not_support_shootingmode_in_multiwindow">ཁྲ་ངོས་མང་བའི་མཐོང་རིས་ནང་%sབེད་སྤྱོད་གཏོང་མི་ཐུབ།</string>
     <string name="not_supported_zoom_toast_popup">རྣམ་པ་དེའི་འོག་ཏུ་ཆེ་སྐྱེད་དང་ཆུང་སྐུང་བྱ་མི་ཐུབ།</string>
     <string name="okay">གཏན་འཁེལ།</string>
     <string name="open_hw_failed_msg">༼པར་ཆས་༽ཉམས་སྐྱོན་ཤོར།</string>
-    <string name="palm_capture_help_mag">伸出手并让掌心朝向相机，即可在几秒后拍照。</string>
-    <string name="palmcapture_title">轻松自拍</string>
+    <string name="palm_capture_help_mag">ལག་པ་རྐྱང་བ་དང་སྦར་མོ་འོག་ཏུ་པར་ཆས་ལ་གཏད་དགོས། དེ་ལྟར་སྐར་ཆ་ཁ་ཤས་རྗེས་པར་ལེན་བྱེད་ཐུབ།</string>
+    <string name="palmcapture_title">བདེ་བླག་ངང་པར་རང་ལེན།</string>
     <string name="panorama_no_direction">གནས་དང་ལྗོངས་ཀྱི་ཞིབ་ཕྲའི་གནས་ཚུལ་མེད་པས་ལྗོངས་ཡོངས་འདྲ་པར་ལེན་མི་ཐུབ།</string>
     <string name="panorama_warning_text_too_fast">དལ་བུས་འགུལ་སྤོ།</string>
     <string name="pause">བར་མཚམས་བཞག</string>
@@ -496,7 +502,7 @@
     <string name="record">ཕབ་འཇུག</string>
     <string name="record_key">བརྙན་ཟློས་ཕབ་འཇུག</string>
     <string name="recording_call_rinning_msg">ཚུར་ཡོང་ཁ་པར་ལེན་པའི་སྐབས་སུ། བརྙན་ཕབ་མཚམས་འཇོག་པ་དང་ཉར་ཚགས་བྱས་སྲིད།</string>
-    <string name="recording_discard_call_rinning_msg">接听来电将舍弃视频拼贴</string>
+    <string name="recording_discard_call_rinning_msg">ཁ་པར་ལ་ལན་འདེབས་བྱས་ན་བརྙན་ཟློས་དུམ་སྒྲིག་དོར་གྱི་རེད།</string>
     <string name="recording_fail_lack_of_hw_resource">བརྙན་ཟློས་གསང་ཨང་འགྲོལ་ཆས་མིག་སྔར་ཉེར་སྤྱོད་བྱ་རིམ་གཞན་ནས་བེད་སྤྱོད་བྱས་ཡོད། ལས་འགན་དོ་དམ་ཡོ་བྱད་ནང་དུ་འགུལ་གཏོང་བཞིན་པའི་བརྙན་ཟློས་ཉེར་སྤྱོད་བྱ་རིམ་གཞན་གང་རུང་འདེམས་ནས་བསྐྱར་ཚོད་གནང་རོགས།</string>
     <string name="recording_failed_msg">ཕབ་འཇུག་མ་ཐུབ།</string>
     <string name="recording_using_earphone_mic">ད་ལྟ་སྒྲ་སྦུག་སྙན་ཆས་བརྒྱུད་ནས་སྒྲ་འཇུག་བྱེད་བཞིན་པ།</string>
@@ -508,7 +514,7 @@
     <string name="reset_title">སོར་བཞག་སྒྲིག་འགོད་སླར་གསོ་བྱས།</string>
     <string name="restrict_snapshot_description">འབྱེད་ཚད་%sསྤྱད་ནས་ཕབ་འཇུག་བྱ་བའི་སྐབས་སུ། པར་ལེན་མི་ཐུབ།</string>
     <string name="restrict_vdis_description">འབྱེད་ཚད་%1$sསྤྱད་ནས་ཕབ་འཇུག་བྱ་བའིས་སྐབས་སུ་བརྙན་ཟློས་འདར་འགོག་ནུས་པ་བེད་སྤྱོད་གཏོང་མི་ཐུབ།(%2$sདེས་འོད་རིག་པར་བརྙན་འདར་འགོག་ཕན་ནུས་ཁོ་ནར་རྒྱབ་སྐྱོར་ཐོབ།)</string>
-    <string name="restrict_vdis_description_not_support_ois">以超高清、1:1 和 VGA 分辨率录制时视频稳定功能不可用。</string>
+    <string name="restrict_vdis_description_not_support_ois">ཆེས་གསལ་པོ།1:1དང་VGAའབྱེད་ཚད་ཐོག་ནས་ཕབ་འཇུག་བྱེད་སྐབས་བརྙན་ཟློས་བརྟན་ལྷིང་ཕན་ནུས་སྤྱོད་མི་ཐུབ།</string>
     <string name="resume">མུ་མཐུད།</string>
     <string name="retry">བསྐྱར་ཚོད།</string>
     <string name="review_summary">པར་ལེན་བྱས་ནས་ལམ་སེང་ལྟ་ཞིབ་བྱེད་པ།</string>

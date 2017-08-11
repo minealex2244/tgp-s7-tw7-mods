@@ -113,17 +113,17 @@
     .line 54
     :array_0
     .array-data 4
+        0x7f0201cc
         0x7f0201ce
         0x7f0201d0
-        0x7f0201d2
     .end array-data
 
     .line 56
     :array_1
     .array-data 4
+        0x7f0201cd
         0x7f0201cf
         0x7f0201d1
-        0x7f0201d3
     .end array-data
 .end method
 
@@ -163,7 +163,7 @@
     invoke-direct/range {v0 .. v10}, Lcom/sec/android/app/camera/menu/AbstractMenu;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;Lcom/sec/android/app/camera/interfaces/Engine;Lcom/sec/android/app/camera/menu/MenuManagerImpl;ILcom/samsung/android/glview/GLViewGroup;FFLcom/sec/android/app/camera/menu/MenuResourceDepot;IZ)V
 
     .line 59
-    const v0, 0x7f0b0369
+    const v0, 0x7f0b036a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -174,7 +174,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_NUMBER_POS_X:I
 
     .line 60
-    const v0, 0x7f0b036a
+    const v0, 0x7f0b036b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -185,7 +185,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_NUMBER_POS_Y:I
 
     .line 61
-    const v0, 0x7f0b036b
+    const v0, 0x7f0b036c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -196,7 +196,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_PROGRESS_WHEEL_POS_X:I
 
     .line 62
-    const v0, 0x7f0b036c
+    const v0, 0x7f0b036d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -207,7 +207,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_PROGRESS_WHEEL_POS_Y:I
 
     .line 63
-    const v0, 0x7f0b036d
+    const v0, 0x7f0b036e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -218,7 +218,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->PROGRESS_TIMER_WIDTH:I
 
     .line 64
-    const v0, 0x7f0b0367
+    const v0, 0x7f0b0368
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -235,7 +235,7 @@
 
     const/4 v1, 0x0
 
-    const v2, 0x7f0b0363
+    const v2, 0x7f0b0364
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -247,7 +247,7 @@
 
     const/4 v1, 0x1
 
-    const v2, 0x7f0b0364
+    const v2, 0x7f0b0365
 
     .line 66
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -260,7 +260,7 @@
 
     const/4 v1, 0x2
 
-    const v2, 0x7f0b0365
+    const v2, 0x7f0b0366
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -273,7 +273,7 @@
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_INTERVAL_COUNT_POS_Y:[I
 
     .line 67
-    const v0, 0x7f0b0368
+    const v0, 0x7f0b0369
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -284,7 +284,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->TIMER_INTERVAL_COUNT_WIDTH:I
 
     .line 68
-    const v0, 0x7f0b0366
+    const v0, 0x7f0b0367
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -364,16 +364,16 @@
 
     :array_0
     .array-data 4
+        0x7f0201d2
         0x7f0201d4
+        0x7f0201d5
         0x7f0201d6
         0x7f0201d7
         0x7f0201d8
         0x7f0201d9
         0x7f0201da
         0x7f0201db
-        0x7f0201dc
-        0x7f0201dd
-        0x7f0201d5
+        0x7f0201d3
     .end array-data
 .end method
 
@@ -1439,20 +1439,20 @@
 
     .prologue
     .line 189
-    invoke-super {p0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->clear()V
-
-    .line 190
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v0, :cond_0
 
-    .line 191
+    .line 190
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/TimerCountingMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->unregisterLayoutChangedListener(Lcom/sec/android/app/camera/interfaces/CameraContext$LayoutChangedListener;)V
 
-    .line 193
+    .line 192
     :cond_0
+    invoke-super {p0}, Lcom/sec/android/app/camera/menu/AbstractMenu;->clear()V
+
+    .line 193
     return-void
 .end method
 

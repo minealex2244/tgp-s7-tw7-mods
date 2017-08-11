@@ -33,26 +33,26 @@
     .param p1, "recordingController"    # Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
     .prologue
-    .line 1011
+    .line 1024
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 1012
+    .line 1025
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->mRecordingController:Ljava/lang/ref/WeakReference;
 
-    .line 1013
+    .line 1026
     return-void
 .end method
 
-.method static synthetic access$900(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;)V
+.method static synthetic access$1100(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;)V
     .locals 0
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     .prologue
-    .line 1008
+    .line 1021
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->clear()V
 
     return-void
@@ -62,12 +62,12 @@
     .locals 1
 
     .prologue
-    .line 1031
+    .line 1044
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->mRecordingController:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->clear()V
 
-    .line 1032
+    .line 1045
     return-void
 .end method
 
@@ -78,7 +78,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 1017
+    .line 1030
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->mRecordingController:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -87,16 +87,16 @@
 
     check-cast v0, Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
-    .line 1019
+    .line 1032
     .local v0, "controller":Lcom/sec/android/app/camera/shootingmode/RecordingController;
     if-nez v0, :cond_1
 
-    .line 1028
+    .line 1041
     :cond_0
     :goto_0
     return-void
 
-    .line 1023
+    .line 1036
     :cond_1
     iget v1, p1, Landroid/os/Message;->what:I
 
@@ -104,7 +104,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 1024
+    .line 1037
     invoke-virtual {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     move-result-object v1
@@ -121,10 +121,10 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 1025
+    .line 1038
     :cond_2
     # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController;->checkRecordingTickTime()V
-    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$1100(Lcom/sec/android/app/camera/shootingmode/RecordingController;)V
+    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->access$1300(Lcom/sec/android/app/camera/shootingmode/RecordingController;)V
 
     goto :goto_0
 .end method

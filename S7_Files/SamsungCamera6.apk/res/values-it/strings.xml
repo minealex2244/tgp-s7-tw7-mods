@@ -190,6 +190,8 @@ Scatto panoramica: catturate una percezione di movimento quando scattate delle f
     <string name="SM_SLOW_VIDEO_description">Registra dei video a una frequenza fotogrammi elevata per la visualizzazione al rallentatore. Potete riprodurre una sezione specifica di ciascun video in movimento lento dopo la registrazione.</string>
     <string name="SM_SMART_SELFSHOT">Selfie posteriore</string>
     <string name="SM_SMART_SELFSHOT_description">La fotocamera posteriore rileva e mette a fuoco automaticamente il viso quando scattate degli autoritratti.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Potete scattare foto e condividerle facilmente sui social network.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Scattate foto più nitide di oggetti in movimento.</string>
     <string name="SM_STORY">Audio foto</string>
@@ -231,7 +233,7 @@ Scatto panoramica: catturate una percezione di movimento quando scattate delle f
     <string name="Title_ImageViewer">Visualizzatore immagini</string>
     <string name="Title_Manual_Focus_TTS">Messa a fuoco</string>
     <string name="Title_Metering">Modalità misurazione</string>
-    <string name="Title_More_Settings">Impostaz.</string>
+    <string name="Title_More_Settings">Impostazioni</string>
     <string name="Title_MotionPanorama">Panorama in movimento</string>
     <string name="Title_MotionPhoto">Foto in movimento</string>
     <string name="Title_MultiAF">Area AF</string>
@@ -263,7 +265,7 @@ Scatto panoramica: catturate una percezione di movimento quando scattate delle f
     <string name="Title_Voice_guide">Guida vocale</string>
     <string name="Title_Volume_Key_As">Funzione tasto volume</string>
     <string name="Title_WhiteBalance">Bilanciamento bianco</string>
-    <string name="Title_common">Generali</string>
+    <string name="Title_common">Comune</string>
     <string name="Title_front">Fotocamera anteriore</string>
     <string name="Title_rear">Fotocamera posteriore</string>
     <string name="Title_rear_lens_distortion_correction">Correzione forma</string>
@@ -393,7 +395,10 @@ forma"</string>
     <string name="guideline_square">Quadrato</string>
     <string name="help_change_mode_tip_1">Trascinate il dito verso destra per visualizzare le modalità della fotocamera disponibili.</string>
     <string name="help_change_mode_tip_2">Selezionate la modalità che volete utilizzare.</string>
+    <string name="help_change_mode_tip_3">Mentre la Modalità Facile è attiva, sono disponibili soltanto i modi Automatico e Autoscatto della fotocamera.</string>
     <string name="help_changing_the_camera_mode">Selezione modi fotocamera</string>
+    <string name="help_changing_the_camera_mode_header">Selez. una modalità fotocamera</string>
+    <string name="help_changing_the_camera_mode_title">Modifica modalità fotocamera</string>
     <string name="help_recording_videos">Registrazione di video</string>
     <string name="help_recording_videos_tip_1">Toccate %s.</string>
     <string name="help_recording_videos_tip_1_tts">Toccate il pulsante Videocamera.</string>
@@ -401,7 +406,7 @@ forma"</string>
     <string name="help_recording_videos_tip_2_tts">Toccate il pulsante Interrompi per interrompere la registrazione.</string>
     <string name="help_recording_videos_tip_snapshot">Toccate %s per scattare delle foto durante la registrazione di video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Toccate il pulsante della fotocamera per scattare delle foto durante la registrazione di video.</string>
-    <string name="help_section_summary">Scattate delle foto o registrate dei video utilizzando effetti diversi in base alle occasioni. Quando la Modalità facile è attiva, sono disponibili soltanto i modi Automatico e Selfie della fotocamera e non potete applicare nessun effetto.</string>
+    <string name="help_section_summary">Scattate delle foto o registrate dei video utilizzando diversi effetti, adatti a tutte le occasioni.</string>
     <string name="help_selecting_camera_mode">Selezione modi fotocamera</string>
     <string name="help_taking_pictures">Scatto di foto</string>
     <string name="help_taking_pictures_tip_1">"Toccate l'oggetto che desiderate mettere a fuoco."</string>
@@ -416,6 +421,7 @@ forma"</string>
     <string name="help_text_wideselfie">Toccate il pulsante Fotocamera e ruotate lentamente il dispositivo in una direzione.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Toccate %s per visualizzare immagini o video immediatamente dopo lo scatto o la registrazione.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Toccate il pulsante di visualizzazione rapida per visualizzare immagini o video immediatamente dopo lo scatto o la registrazione.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Trascinate il dito a sinistra per visualizzare immagini o video immediatamente dopo lo scatto o la registrazione.</string>
     <string name="help_viewing_pictures_and_videos">Visualizzazione di foto e video</string>
     <string name="high_resolution_video_description">Le seguenti funzioni non sono disponibili durante la registrazione in risoluzioni %s:</string>
     <string name="highlight">Esposizione alta</string>
@@ -448,7 +454,7 @@ forma"</string>
     <string name="location_tag_dialog_main_message">Per utilizzare i tag sulla posizione, verranno modificate queste impostazioni:</string>
     <string name="location_tag_dialog_message">La posizione verrà attivata e il metodo di localizzazione verrà impostato su %s.</string>
     <string name="location_tag_first_launch_dialog_main_message">Toccate ATTIVA per attivare i tag posizione. Questa operazione modificherà anche queste impostazioni:</string>
-    <string name="location_tag_summary">Allega, integra e memorizza i dati sulla posizione geografica su ogni foto e video.</string>
+    <string name="location_tag_summary">Allega, integra e memorizza i dati sulla posizione geografica di ogni foto e video.</string>
     <string name="location_tag_toast_message">Per attivare i tag posizione, è necessario che la posizione sia attivata anche nel pannello delle impostazioni rapide.</string>
     <string name="location_tag_toast_message_GPS_only_condition">Per utilizzare i tag posizione, assicuratevi che il metodo di localizzazione sia impostato su GPS, Wi-Fi e reti mobili o su Wi-Fi e reti mobili.</string>
     <string name="location_tag_toast_message_GPS_only_condition_Wifi">Per utilizzare i tag posizione, assicuratevi che il metodo di localizzazione sia impostato su GPS e Wi-Fi o su Solo Wi-Fi.</string>

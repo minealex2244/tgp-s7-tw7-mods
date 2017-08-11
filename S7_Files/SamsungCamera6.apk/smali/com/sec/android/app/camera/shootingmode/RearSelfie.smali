@@ -137,7 +137,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 101
-    const v0, 0x7f0b01aa
+    const v0, 0x7f0b01ab
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -146,7 +146,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->SELFIE_GUIDE_WIDTH:F
 
     .line 102
-    const v0, 0x7f0b01a9
+    const v0, 0x7f0b01aa
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -185,7 +185,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->SELFIE_GUIDE_POS_Y:F
 
     .line 106
-    const v0, 0x7f0b01ab
+    const v0, 0x7f0b01ac
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -281,11 +281,11 @@
     .line 108
     :array_0
     .array-data 4
+        0x7f0201c0
         0x7f0201c2
+        0x7f0201c1
         0x7f0201c4
         0x7f0201c3
-        0x7f0201c6
-        0x7f0201c5
     .end array-data
 .end method
 
@@ -2645,7 +2645,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/RearSelfie;->SELFIE_GUIDE_HEIGHT:F
 
-    const v6, 0x7f0201c2
+    const v6, 0x7f0201c0
 
     invoke-direct/range {v0 .. v6}, Lcom/samsung/android/glview/GLNinePatch;-><init>(Lcom/samsung/android/glview/GLContext;FFFFI)V
 
@@ -2675,7 +2675,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a00ce
+    const v2, 0x7f0a00d0
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

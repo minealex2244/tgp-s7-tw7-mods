@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 547
+    .line 540
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$3;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "accuracy"    # I
 
     .prologue
-    .line 550
+    .line 543
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 554
+    .line 547
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$3;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
@@ -64,7 +64,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 555
+    .line 548
     iget-object v0, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
 
     invoke-virtual {v0}, Landroid/hardware/Sensor;->getType()I
@@ -85,7 +85,7 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 556
+    .line 549
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$3;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -98,7 +98,7 @@
     # setter for: Lcom/sec/android/app/camera/Camera;->mHRMIR:I
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/Camera;->access$102(Lcom/sec/android/app/camera/Camera;I)I
 
-    .line 558
+    .line 551
     const-string v0, "Camera6"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -143,7 +143,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 559
+    .line 552
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$3;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMainHandler:Lcom/sec/android/app/camera/Camera$MainHandler;
@@ -155,7 +155,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/Camera$MainHandler;->sendEmptyMessage(I)Z
 
-    .line 562
+    .line 555
     :cond_1
     return-void
 .end method

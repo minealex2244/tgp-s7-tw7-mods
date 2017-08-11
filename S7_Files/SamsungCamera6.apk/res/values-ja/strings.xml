@@ -33,7 +33,7 @@
 手振れ補正"</string>
     <string name="Abb_Title_VoiceCapture">音声​コントロール</string>
     <string name="Abb_Title_WhiteBalance">ホワイト​バランス</string>
-    <string name="AnimatedGif_Helptext">アニメーション画像を作成するには、カメラボタンを押し続けてください。</string>
+    <string name="AnimatedGif_Helptext">写真を連写するには、カメラボタンを長押ししてください。</string>
     <string name="COLOR_TONE_EDIT">色調を編集</string>
     <string name="COLOR_TONE_NONE">標準</string>
     <string name="COLOR_TUNE_BREEZE">さわやか</string>
@@ -42,7 +42,7 @@
     <string name="COLOR_TUNE_SERENE">穏やか</string>
     <string name="COLOR_TUNE_SOFT">ソフト</string>
     <string name="COLOR_TUNE_VIVID">鮮やか</string>
-    <string name="EFFECT_STRENGTH">強調</string>
+    <string name="EFFECT_STRENGTH">強度</string>
     <string name="EFFECT_VIGNETTE">ビネット</string>
     <string name="ER_EFFECT_NOEFFECT">エフェクトなし</string>
     <string name="EXT_DOWNLOAD">ダウンロード</string>
@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">スローモーションで再生できる高フレームレートの動画を撮影します。録画した動画の特定セクションをスローモーションで再生できます。</string>
     <string name="SM_SMART_SELFSHOT">自分撮り(リアカメラ)</string>
     <string name="SM_SMART_SELFSHOT_description">自分撮りをするときに、リアカメラが顔を自動的に検出し、焦点を合わせます。</string>
+    <string name="SM_SOCIAL">ソーシャル</string>
+    <string name="SM_SOCIAL_description">写真を撮影して、ソーシャルネットワークで簡単に共有できます。</string>
     <string name="SM_SPORTS">スポーツ</string>
     <string name="SM_SPORTS_SCENE_description">動きの速い被写体をより鮮明に撮影します。</string>
     <string name="SM_STORY">ｻｳﾝﾄﾞ&amp;ｼｮｯﾄ</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">四角形</string>
     <string name="help_change_mode_tip_1">利用可能なカメラモードを確認するには、右にスワイプします。</string>
     <string name="help_change_mode_tip_2">使用するモードを選択します。</string>
+    <string name="help_change_mode_tip_3">かんたんモードが有効な場合は、自動モードまたは自分撮りモードのみが利用できます。</string>
     <string name="help_changing_the_camera_mode">カメラモードを選択</string>
+    <string name="help_changing_the_camera_mode_header">カメラモードを選択</string>
+    <string name="help_changing_the_camera_mode_title">カメラモードを変更</string>
     <string name="help_recording_videos">動画を撮影</string>
     <string name="help_recording_videos_tip_1">%sをタップします。</string>
     <string name="help_recording_videos_tip_1_tts">ビデオカメラボタンをタップします。</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">録画を停止するには、停止ボタンをタップします。</string>
     <string name="help_recording_videos_tip_snapshot">録画中に写真を撮影するには、%sをタップします。</string>
     <string name="help_recording_videos_tip_snapshot_tts">録画中に写真を撮影するには、カメラボタンをタップします。</string>
-    <string name="help_section_summary">シチュエーションに合わせて、さまざまな効果を適用して写真や動画を撮影できます。かんたんモードが有効な場合は、自動モードまたは自分撮りモードのみが利用できます。エフェクトは適用できません。</string>
+    <string name="help_section_summary">シチュエーションに合わせて、さまざまな効果を適用して写真や動画を撮影できます。</string>
     <string name="help_selecting_camera_mode">カメラモードを選択</string>
     <string name="help_taking_pictures">写真を撮影</string>
     <string name="help_taking_pictures_tip_1">焦点を合わせる被写体をタップします。</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">カメラボタンをタップし、端末を一方向に​ゆっくりと動かしてください。</string>
     <string name="help_viewing_pics_and_videos_tip_1">写真や動画を撮影した後に撮影結果を確認するには、%sをタップします。</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">写真や動画を撮影した後に撮影結果を確認するには、クイックビューボタンをタップします。</string>
+    <string name="help_viewing_pics_and_videos_tip_2">写真や動画を撮影した後に撮影結果を確認するには、左にスワイプします。</string>
     <string name="help_viewing_pictures_and_videos">写真と動画を表示</string>
     <string name="high_resolution_video_description">%sの解像度で動画を撮影する場合は、以下の機能を使用できません。</string>
     <string name="highlight">ハイライト</string>

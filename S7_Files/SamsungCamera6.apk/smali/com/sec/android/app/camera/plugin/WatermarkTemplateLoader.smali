@@ -504,7 +504,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f020287
+    const v4, 0x7f020286
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -525,7 +525,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f02028f
+    const v4, 0x7f02028e
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -546,7 +546,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f02028d
+    const v4, 0x7f02028c
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -567,7 +567,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f020247
+    const v4, 0x7f020246
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_TOP:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -588,7 +588,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f020299
+    const v4, 0x7f020298
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_TOP:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -609,7 +609,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f02029d
+    const v4, 0x7f02029c
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_TOP:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -630,7 +630,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f02027f
+    const v4, 0x7f02027e
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -651,7 +651,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f02025f
+    const v4, 0x7f02025e
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -672,7 +672,7 @@
 
     const/16 v3, 0x1db0
 
-    const v4, 0x7f020251
+    const v4, 0x7f020250
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -693,7 +693,7 @@
 
     const/16 v18, 0x1db1
 
-    const v19, 0x7f020255
+    const v19, 0x7f020254
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -762,7 +762,7 @@
 
     const/16 v18, 0x1db1
 
-    const v19, 0x7f020269
+    const v19, 0x7f020268
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -865,7 +865,7 @@
 
     const/16 v18, 0x1db1
 
-    const v19, 0x7f02027b
+    const v19, 0x7f02027a
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -968,7 +968,7 @@
 
     const/16 v18, 0x1db1
 
-    const v19, 0x7f020277
+    const v19, 0x7f020276
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1071,7 +1071,7 @@
 
     const/16 v3, 0x1db1
 
-    const v4, 0x7f020237
+    const v4, 0x7f020236
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1092,7 +1092,7 @@
 
     const/16 v3, 0x1db1
 
-    const v4, 0x7f02025d
+    const v4, 0x7f02025c
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1113,7 +1113,7 @@
 
     const/16 v18, 0x1db1
 
-    const v19, 0x7f020259
+    const v19, 0x7f020258
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1182,7 +1182,7 @@
 
     const/16 v3, 0x1db1
 
-    const v4, 0x7f020239
+    const v4, 0x7f020238
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1203,7 +1203,7 @@
 
     const/16 v18, 0x1db1
 
-    const v19, 0x7f020263
+    const v19, 0x7f020262
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1272,7 +1272,7 @@
 
     const/16 v18, 0x1db2
 
-    const v19, 0x7f020235
+    const v19, 0x7f020234
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1341,7 +1341,7 @@
 
     const/16 v3, 0x1db2
 
-    const v4, 0x7f02029b
+    const v4, 0x7f02029a
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_TOP:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1362,7 +1362,7 @@
 
     const/16 v18, 0x1db2
 
-    const v19, 0x7f020295
+    const v19, 0x7f020294
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1431,7 +1431,7 @@
 
     const/16 v18, 0x1db2
 
-    const v19, 0x7f020241
+    const v19, 0x7f020240
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1500,7 +1500,7 @@
 
     const/16 v3, 0x1db2
 
-    const v4, 0x7f020283
+    const v4, 0x7f020282
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1521,7 +1521,7 @@
 
     const/16 v3, 0x1db2
 
-    const v4, 0x7f02027d
+    const v4, 0x7f02027c
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1542,7 +1542,7 @@
 
     const/16 v3, 0x1db2
 
-    const v4, 0x7f02023b
+    const v4, 0x7f02023a
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1563,7 +1563,7 @@
 
     const/16 v18, 0x1db2
 
-    const v19, 0x7f020233
+    const v19, 0x7f020232
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1632,7 +1632,7 @@
 
     const/16 v3, 0x1db2
 
-    const v4, 0x7f02024d
+    const v4, 0x7f02024c
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1653,7 +1653,7 @@
 
     const/16 v19, 0x1db3
 
-    const v20, 0x7f02026b
+    const v20, 0x7f02026a
 
     sget-object v21, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1760,7 +1760,7 @@
 
     const/16 v18, 0x1db3
 
-    const v19, 0x7f02026d
+    const v19, 0x7f02026c
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1863,7 +1863,7 @@
 
     const/16 v3, 0x1db3
 
-    const v4, 0x7f020275
+    const v4, 0x7f020274
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1884,7 +1884,7 @@
 
     const/16 v3, 0x1db3
 
-    const v4, 0x7f020243
+    const v4, 0x7f020242
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1905,7 +1905,7 @@
 
     const/16 v3, 0x1db3
 
-    const v4, 0x7f020279
+    const v4, 0x7f020278
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1926,7 +1926,7 @@
 
     const/16 v3, 0x1db3
 
-    const v4, 0x7f02023d
+    const v4, 0x7f02023c
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1947,7 +1947,7 @@
 
     const/16 v3, 0x1db3
 
-    const v4, 0x7f02023f
+    const v4, 0x7f02023e
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -1968,7 +1968,7 @@
 
     const/16 v18, 0x1db3
 
-    const v19, 0x7f020297
+    const v19, 0x7f020296
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_TOP:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2037,7 +2037,7 @@
 
     const/16 v18, 0x1db3
 
-    const v19, 0x7f02025b
+    const v19, 0x7f02025a
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2106,7 +2106,7 @@
 
     const/16 v3, 0x1db4
 
-    const v4, 0x7f020271
+    const v4, 0x7f020270
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2127,7 +2127,7 @@
 
     const/16 v3, 0x1db4
 
-    const v4, 0x7f020291
+    const v4, 0x7f020290
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2148,7 +2148,7 @@
 
     const/16 v3, 0x1db4
 
-    const v4, 0x7f020265
+    const v4, 0x7f020264
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2169,7 +2169,7 @@
 
     const/16 v3, 0x1db4
 
-    const v4, 0x7f020285
+    const v4, 0x7f020284
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2190,7 +2190,7 @@
 
     const/16 v3, 0x1db4
 
-    const v4, 0x7f020289
+    const v4, 0x7f020288
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2211,7 +2211,7 @@
 
     const/16 v18, 0x1db4
 
-    const v19, 0x7f020293
+    const v19, 0x7f020292
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2280,7 +2280,7 @@
 
     const/16 v3, 0x1db4
 
-    const v4, 0x7f02028b
+    const v4, 0x7f02028a
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2301,7 +2301,7 @@
 
     const/16 v3, 0x1db4
 
-    const v4, 0x7f020245
+    const v4, 0x7f020244
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_TOP:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2322,7 +2322,7 @@
 
     const/16 v3, 0x1db4
 
-    const v4, 0x7f020281
+    const v4, 0x7f020280
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->RIGHT_BOTTOM:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2343,7 +2343,7 @@
 
     const/16 v3, 0x1db5
 
-    const v4, 0x7f020273
+    const v4, 0x7f020272
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2364,7 +2364,7 @@
 
     const/16 v18, 0x1db5
 
-    const v19, 0x7f020257
+    const v19, 0x7f020256
 
     sget-object v20, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2433,7 +2433,7 @@
 
     const/16 v3, 0x1db5
 
-    const v4, 0x7f02024b
+    const v4, 0x7f02024a
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2454,7 +2454,7 @@
 
     const/16 v3, 0x1db5
 
-    const v4, 0x7f02024f
+    const v4, 0x7f02024e
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2475,7 +2475,7 @@
 
     const/16 v3, 0x1db5
 
-    const v4, 0x7f020267
+    const v4, 0x7f020266
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2496,7 +2496,7 @@
 
     const/16 v3, 0x1db5
 
-    const v4, 0x7f02026f
+    const v4, 0x7f02026e
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2517,7 +2517,7 @@
 
     const/16 v3, 0x1db5
 
-    const v4, 0x7f020253
+    const v4, 0x7f020252
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2538,7 +2538,7 @@
 
     const/16 v3, 0x1db5
 
-    const v4, 0x7f020249
+    const v4, 0x7f020248
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->LEFT_TOP:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 
@@ -2559,7 +2559,7 @@
 
     const/16 v3, 0x1db5
 
-    const v4, 0x7f020261
+    const v4, 0x7f020260
 
     sget-object v5, Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;->CENTER:Lcom/sec/android/app/camera/plugin/WatermarkTemplateLoader$DefaultPosition;
 

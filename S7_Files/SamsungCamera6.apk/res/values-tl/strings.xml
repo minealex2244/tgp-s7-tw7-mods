@@ -190,6 +190,8 @@ Paikot na kuha: Kumuha ng paggalaw kapag kumukuha ng mga larawan ng mga gumagala
     <string name="SM_SLOW_VIDEO_description">Mag-record ng mga video sa mataas na frame rate para sa panonood nang slow motion. Maaari kang mag-play ng partikular na seksyon ng bawat video nang slow motion pagkatapos i-record ang mga ito.</string>
     <string name="SM_SMART_SELFSHOT">Selfie sa likurang cam</string>
     <string name="SM_SMART_SELFSHOT_description">Awtomatikong ide-detect at ifo-focus ng camera sa likod ang iyong mukha kapag kinunan mo ng larawan ang sarili mo.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Kumuha ng mga litrato at walang-hirap na ibahagi ang mga ito sa mga social network.</string>
     <string name="SM_SPORTS">Sports</string>
     <string name="SM_SPORTS_SCENE_description">Kumuha ng mas malilinaw na litrato ng mabibilis na subject.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -261,7 +263,7 @@ Paikot na kuha: Kumuha ng paggalaw kapag kumukuha ng mga larawan ng mga gumagala
     <string name="Title_Viewmode">Full screen (16:9)</string>
     <string name="Title_Voice_Capture">Kontrol sa boses</string>
     <string name="Title_Voice_guide">Gabay na boses</string>
-    <string name="Title_Volume_Key_As">Function ng Volume key</string>
+    <string name="Title_Volume_Key_As">Function ng volume key</string>
     <string name="Title_WhiteBalance">White balance</string>
     <string name="Title_common">Karaniwan</string>
     <string name="Title_front">Kamera sa harap</string>
@@ -393,7 +395,10 @@ sa hugis"</string>
     <string name="guideline_square">Parisukat</string>
     <string name="help_change_mode_tip_1">Mag-swipe pakanan para tingnan ang mga magagamit na mode ng camera.</string>
     <string name="help_change_mode_tip_2">Piliin ang mode na gusto mong gamitin.</string>
+    <string name="help_change_mode_tip_3">Awto at Selfie camera mode lang ang magagamit habang gumagana ang Easy mode.</string>
     <string name="help_changing_the_camera_mode">Pagpili ng mga camera mode</string>
+    <string name="help_changing_the_camera_mode_header">Pagpili ng camera mode</string>
+    <string name="help_changing_the_camera_mode_title">Pinapalitan ang camera mode</string>
     <string name="help_recording_videos">Pag-record ng mga video</string>
     <string name="help_recording_videos_tip_1">I-tap ang %s.</string>
     <string name="help_recording_videos_tip_1_tts">I-tap ang button ng camcorder.</string>
@@ -401,7 +406,7 @@ sa hugis"</string>
     <string name="help_recording_videos_tip_2_tts">I-tap ang button na ihinto para ihinto ang recording.</string>
     <string name="help_recording_videos_tip_snapshot">I-tap ang %s para kumuha ng mga larawan habang nagre-record ng video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">I-tap ang camera button para kumuha ng mga larawan habang nagre-record ng video.</string>
-    <string name="help_section_summary">"Kumuha ng mga litrato o mag-record ng mga video gamit ang iba't-ibang effect, na aakma sa lahat ng okasyon. Awto at Selfie camera mode lang ang magagamit at walang effect na mailalapat, habang gumagana ang Easy mode."</string>
+    <string name="help_section_summary">"Kumuha ng mga litrato o mag-record ng mga video gamit ang iba't ibang effect, para umakma sa lahat ng okasyon."</string>
     <string name="help_selecting_camera_mode">Pagpili ng mga camera mode</string>
     <string name="help_taking_pictures">Pagkuha ng mga litrato</string>
     <string name="help_taking_pictures_tip_1">I-tap ang bagay na gusto mong i-focus.</string>
@@ -416,6 +421,7 @@ sa hugis"</string>
     <string name="help_text_wideselfie">I-tap ang camera button at i-swivel ang iyong device nang dahan-dahan sa isang direksyon.</string>
     <string name="help_viewing_pics_and_videos_tip_1">I-tap ang %s upang tingnan ang iyong mga litrato o video pagkatapos mo mismong kunan o i-record ang mga iyon.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">I-tap ang quick view button upang tingnan ang iyong mga litrato o video pagkatapos mo mismong kunan o i-record ang mga iyon.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Pagtingin sa mga larawan at video</string>
     <string name="high_resolution_video_description">Ang sumusunod ay hindi magiging available habang nagre-record sa mga resolusyon na %s:</string>
     <string name="highlight">Highlights</string>

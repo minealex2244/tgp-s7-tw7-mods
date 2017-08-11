@@ -190,6 +190,8 @@ Foto panoramuese: Kap një sens lëvizjeje kur nxjerr foto objektesh në lëvizj
     <string name="SM_SLOW_VIDEO_description">"Regjistro videot me shpejtësi të madhe kuadri, për t'i parë me ngadalësim. Mund të luash me ngadalësim një seksion specifik të çdo videoje pasi të regjistrosh."</string>
     <string name="SM_SMART_SELFSHOT">Selfie kamera prapa</string>
     <string name="SM_SMART_SELFSHOT_description">Kamera e pasme do të dallojë automatikisht fytyrën tënde dhe do të fokusohet atje, kur ti nxjerr foto auto-portret.</string>
+    <string name="SM_SOCIAL">Shoqërore</string>
+    <string name="SM_SOCIAL_description">Nxirr foto dhe përbashkoji lehtë në rrjetet sociale.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Nxirr foto më të qarta të subjekteve që lëvizin shpejt.</string>
     <string name="SM_STORY">Zëri &amp; shkrepja</string>
@@ -393,7 +395,10 @@ i formës"</string>
     <string name="guideline_square">Katror</string>
     <string name="help_change_mode_tip_1">Rrëshqit djathtas për të parë regjimet e kamerës në dispozicion.</string>
     <string name="help_change_mode_tip_2">Përzgjidh regjimin që dëshiron të përdorësh.</string>
+    <string name="help_change_mode_tip_3">Vetëm regjimet e kamerës Auto dhe Selfie mund të përdoren, kur aftësohet Regjimi i lehtë.</string>
     <string name="help_changing_the_camera_mode">Për të përzgjedhur regjimet e kamerës</string>
+    <string name="help_changing_the_camera_mode_header">Zgjedhja e regjimit të kamerës</string>
+    <string name="help_changing_the_camera_mode_title">Ndërrimi i regjimit të kamerës</string>
     <string name="help_recording_videos">Regjistrimi i videove</string>
     <string name="help_recording_videos_tip_1">Trokit mbi %s.</string>
     <string name="help_recording_videos_tip_1_tts">Trokit mbi butonin e videokamerës.</string>
@@ -401,7 +406,7 @@ i formës"</string>
     <string name="help_recording_videos_tip_2_tts">Trokit mbi butonin e ndalimit për ta ndalur regjistrimin.</string>
     <string name="help_recording_videos_tip_snapshot">Trokit mbi %s për të nxjerrë foto kur je duke regjistruar video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Trokit mbi butonin e kamerës për të nxjerrë foto kur je duke regjistruar video.</string>
-    <string name="help_section_summary">Nxirr foto ose regjistro video duke përdorur efekte të ndryshme të larmishme, për të gjitha rrethanat. Vetëm regjimet e kamerës Auto dhe Selfie janë në dispozicion dhe asnjë efekt nuk mund të zbatohet, kur është aftësuar Regjimi i lehtë.</string>
+    <string name="help_section_summary">Nxirr foto ose regjistro video duke përdorur një larmi efektesh të ndryshme, për të gjitha rrethanat.</string>
     <string name="help_selecting_camera_mode">Për të përzgjedhur regjimet e kamerës</string>
     <string name="help_taking_pictures">Për të nxjerrë foto</string>
     <string name="help_taking_pictures_tip_1">Trokit mbi objektin që dëshiron të sjellësh në fokus.</string>
@@ -416,6 +421,7 @@ i formës"</string>
     <string name="help_text_wideselfie">Trokit mbi butonin e Kamerës dhe rrotulloje pajisjen ngadalë në një drejtim.</string>
     <string name="help_viewing_pics_and_videos_tip_1">"Trokit mbi %s për t'i parë fotot ose videot menjëherë pasi t'i nxjerrësh ose t'i regjistrosh."</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">"Trokit mbi butonin e pamjes së shpejtë për t'i parë fotot ose videot menjëherë pasi t'i nxjerrësh ose t'i regjistrosh."</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Për të parë fotografi dhe video</string>
     <string name="high_resolution_video_description">Sa vijon nuk do të mund të përdoret kur regjistron me rezolucionet %s:</string>
     <string name="highlight">Theksimet</string>

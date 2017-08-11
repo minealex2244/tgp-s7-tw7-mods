@@ -36,7 +36,7 @@
     .locals 2
 
     .prologue
-    .line 394
+    .line 393
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -67,17 +67,17 @@
     .param p1, "owner"    # Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;
 
     .prologue
-    .line 402
+    .line 401
     invoke-direct {p0}, Lcom/samsung/android/apex/service/IMotionPhotoComposerListener$Stub;-><init>()V
 
-    .line 403
+    .line 402
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$ComposerListener;->mOwner:Ljava/lang/ref/WeakReference;
 
-    .line 404
+    .line 403
     return-void
 .end method
 
@@ -100,7 +100,7 @@
 
     const/4 v7, 0x0
 
-    .line 408
+    .line 407
     sget-object v2, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$ComposerListener;->TAG:Ljava/lang/String;
 
     const-string v3, "notify: what=%d, arg1=%d, arg2=%d"
@@ -137,7 +137,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 410
+    .line 409
     iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$ComposerListener;->mOwner:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -146,18 +146,18 @@
 
     if-nez v2, :cond_0
 
-    .line 411
+    .line 410
     sget-object v2, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$ComposerListener;->TAG:Ljava/lang/String;
 
     const-string v3, "composer is already released!!!"
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 444
+    .line 443
     :goto_0
     return-void
 
-    .line 415
+    .line 414
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$ComposerListener;->mOwner:Ljava/lang/ref/WeakReference;
 
@@ -167,19 +167,19 @@
 
     check-cast v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;
 
-    .line 417
+    .line 416
     .local v0, "impl":Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 419
+    .line 418
     :pswitch_0
     iget-object v2, v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mOnInfoListener:Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnInfoListener;
 
     if-nez v2, :cond_1
 
-    .line 420
+    .line 419
     sget-object v2, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$ComposerListener;->TAG:Ljava/lang/String;
 
     const-string v3, "onInfo listener is not set"
@@ -188,24 +188,24 @@
 
     goto :goto_0
 
-    .line 424
+    .line 423
     :cond_1
     iget-object v1, v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mOnInfoListener:Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnInfoListener;
 
-    .line 426
+    .line 425
     .local v1, "l":Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnInfoListener;
     invoke-interface {v1, p2, p3, v7, v8}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnInfoListener;->onInfo(IIILjava/lang/Object;)V
 
     goto :goto_0
 
-    .line 430
+    .line 429
     .end local v1    # "l":Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnInfoListener;
     :pswitch_1
     iget-object v2, v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mOnErrorListener:Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnErrorListener;
 
     if-nez v2, :cond_2
 
-    .line 431
+    .line 430
     sget-object v2, Lcom/samsung/android/apex/motionphoto/composer/RemoteComposer$ComposerListener;->TAG:Ljava/lang/String;
 
     const-string v3, "onError listener is not set"
@@ -214,20 +214,20 @@
 
     goto :goto_0
 
-    .line 435
+    .line 434
     :cond_2
     iget-object v1, v0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mOnErrorListener:Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnErrorListener;
 
-    .line 437
+    .line 436
     .local v1, "l":Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnErrorListener;
     invoke-interface {v1, p2, p3, v7, v8}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer$OnErrorListener;->onError(IIILjava/lang/Object;)V
 
-    .line 439
+    .line 438
     invoke-virtual {v0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->release()V
 
     goto :goto_0
 
-    .line 417
+    .line 416
     nop
 
     :pswitch_data_0

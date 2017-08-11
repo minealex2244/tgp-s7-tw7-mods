@@ -613,7 +613,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0a0216
+    const v26, 0x7f0a021c
 
     invoke-virtual/range {v25 .. v26}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1066,7 +1066,7 @@
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->setSelection(I)V
 
     .line 597
-    const v25, 0x7f0a00e5
+    const v25, 0x7f0a00e7
 
     move-object/from16 v0, p0
 
@@ -1309,7 +1309,7 @@
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->setSelection(I)V
 
     .line 628
-    const v25, 0x7f0a00d0
+    const v25, 0x7f0a00d2
 
     move-object/from16 v0, p0
 
@@ -1411,7 +1411,7 @@
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->setSelection(I)V
 
     .line 649
-    const v25, 0x7f0a00e7
+    const v25, 0x7f0a00e9
 
     move-object/from16 v0, p0
 
@@ -1617,7 +1617,7 @@
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/setting/SpinnerPreference;->setSelection(I)V
 
     .line 669
-    const v25, 0x7f0a00d2
+    const v25, 0x7f0a00d4
 
     move-object/from16 v0, p0
 
@@ -2150,7 +2150,7 @@
 
     .line 742
     .local v13, "helpPref":Landroid/preference/Preference;
-    const v25, 0x7f0a00d8
+    const v25, 0x7f0a00da
 
     move/from16 v0, v25
 
@@ -2409,7 +2409,7 @@
     if-eqz v25, :cond_38
 
     .line 778
-    const v25, 0x7f0a01e8
+    const v25, 0x7f0a01ee
 
     move-object/from16 v0, p0
 
@@ -2469,7 +2469,7 @@
 
     move-result v25
 
-    const v26, 0x7f0a01f8
+    const v26, 0x7f0a01fe
 
     move/from16 v0, v25
 
@@ -2604,7 +2604,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0a00e5
+    const v26, 0x7f0a00e7
 
     move-object/from16 v0, p0
 
@@ -2759,7 +2759,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0a00e7
+    const v26, 0x7f0a00e9
 
     move-object/from16 v0, p0
 
@@ -3110,7 +3110,7 @@
     if-eqz v25, :cond_39
 
     .line 788
-    const v25, 0x7f0a01ff
+    const v25, 0x7f0a0205
 
     move-object/from16 v0, p0
 
@@ -3130,7 +3130,7 @@
 
     .line 790
     :cond_39
-    const v25, 0x7f0a01fe
+    const v25, 0x7f0a0204
 
     move-object/from16 v0, p0
 
@@ -3178,7 +3178,7 @@
     if-eqz v7, :cond_28
 
     .line 796
-    const v25, 0x7f0a026e
+    const v25, 0x7f0a0274
 
     const/16 v26, 0x5
 
@@ -3262,7 +3262,7 @@
     if-eqz v25, :cond_3c
 
     .line 800
-    const v25, 0x7f0a0172
+    const v25, 0x7f0a0174
 
     move-object/from16 v0, p0
 
@@ -3304,7 +3304,7 @@
     if-nez v25, :cond_28
 
     .line 803
-    const v25, 0x7f0a0268
+    const v25, 0x7f0a026e
 
     move-object/from16 v0, p0
 
@@ -3598,7 +3598,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0a00d0
+    const v26, 0x7f0a00d2
 
     move-object/from16 v0, p0
 
@@ -3716,7 +3716,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0a00d2
+    const v26, 0x7f0a00d4
 
     move-object/from16 v0, p0
 

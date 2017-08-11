@@ -48,7 +48,7 @@
 
     iget-object v1, v1, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0a01be
+    const v2, 0x7f0a01c4
 
     const/4 v3, 0x0
 

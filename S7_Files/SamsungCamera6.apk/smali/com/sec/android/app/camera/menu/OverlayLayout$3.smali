@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     .prologue
-    .line 280
+    .line 278
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$3;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,15 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 283
+    .line 281
+    iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$3;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
+
+    const/4 v2, 0x1
+
+    # setter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mFaceRectInvisibled:Z
+    invoke-static {v1, v2}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$102(Lcom/sec/android/app/camera/menu/OverlayLayout;Z)Z
+
+    .line 282
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -51,11 +59,11 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 284
+    .line 283
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$3;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mFaceCircle:[Lcom/samsung/android/glview/GLCircle;
-    invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[Lcom/samsung/android/glview/GLCircle;
+    invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$200(Lcom/sec/android/app/camera/menu/OverlayLayout;)[Lcom/samsung/android/glview/GLCircle;
 
     move-result-object v1
 
@@ -65,11 +73,11 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLCircle;->setVisibility(I)V
 
-    .line 285
+    .line 284
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/OverlayLayout$3;->this$0:Lcom/sec/android/app/camera/menu/OverlayLayout;
 
     # getter for: Lcom/sec/android/app/camera/menu/OverlayLayout;->mFaceCircle:[Lcom/samsung/android/glview/GLCircle;
-    invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$100(Lcom/sec/android/app/camera/menu/OverlayLayout;)[Lcom/samsung/android/glview/GLCircle;
+    invoke-static {v1}, Lcom/sec/android/app/camera/menu/OverlayLayout;->access$200(Lcom/sec/android/app/camera/menu/OverlayLayout;)[Lcom/samsung/android/glview/GLCircle;
 
     move-result-object v1
 
@@ -77,12 +85,12 @@
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLCircle;->resetTranslate()V
 
-    .line 283
+    .line 282
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 287
+    .line 286
     :cond_0
     return-void
 .end method
@@ -92,7 +100,7 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 291
+    .line 290
     return-void
 .end method
 
@@ -101,6 +109,6 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 295
+    .line 294
     return-void
 .end method

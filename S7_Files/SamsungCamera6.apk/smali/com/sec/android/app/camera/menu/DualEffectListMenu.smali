@@ -336,7 +336,7 @@
     .line 87
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/DualEffectListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
 
-    const v2, 0x7f0202d0
+    const v2, 0x7f0202cf
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLGridList;->setScrollBarResource(I)V
 

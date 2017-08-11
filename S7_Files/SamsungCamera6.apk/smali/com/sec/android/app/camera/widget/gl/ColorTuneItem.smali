@@ -128,7 +128,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->BUTTON_HEIGHT:I
 
     .line 43
-    const v0, 0x7f0b00a7
+    const v0, 0x7f0b00a8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -139,7 +139,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->TEXT_HEIGHT:I
 
     .line 44
-    const v0, 0x7f0b00a8
+    const v0, 0x7f0b00a9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -150,7 +150,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->TEXT_TOP_MARGIN:I
 
     .line 45
-    const v0, 0x7f0b00a5
+    const v0, 0x7f0b00a6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -161,7 +161,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ColorTuneItem;->FONT_SIZE:I
 
     .line 46
-    const v0, 0x7f0b00a6
+    const v0, 0x7f0b00a7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -713,7 +713,7 @@
 
     const/4 v6, 0x1
 
-    const v7, 0x7f020167
+    const v7, 0x7f020168
 
     invoke-direct/range {v0 .. v7}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFFFZI)V
 
@@ -777,7 +777,7 @@
 
     const/4 v6, 0x1
 
-    const v7, 0x7f020168
+    const v7, 0x7f020169
 
     invoke-direct/range {v0 .. v7}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFFFZI)V
 
@@ -1099,7 +1099,7 @@
 
     const/4 v6, 0x1
 
-    const v7, 0x7f020166
+    const v7, 0x7f020167
 
     invoke-direct/range {v0 .. v7}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFFFZI)V
 
@@ -1133,7 +1133,7 @@
 
     const/4 v6, 0x1
 
-    const v7, 0x7f020168
+    const v7, 0x7f020169
 
     invoke-direct/range {v0 .. v7}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFFFZI)V
 

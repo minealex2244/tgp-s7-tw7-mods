@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 8903
+    .line 8946
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$27;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,9 +41,9 @@
     .locals 0
 
     .prologue
-    .line 8906
+    .line 8949
     invoke-static {}, Lcom/sec/android/app/camera/engine/CameraHolder;->instance()Lcom/sec/android/app/camera/engine/CameraHolder;
 
-    .line 8907
+    .line 8950
     return-void
 .end method

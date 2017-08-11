@@ -14,6 +14,12 @@
 # static fields
 .field public static final KEY_BUFFERING_MODE:Ljava/lang/String; = "buffering-mode"
 
+.field public static final KEY_CAPTURE_INTERVAL:Ljava/lang/String; = "capture-interval"
+
+.field public static final KEY_DITHER_STRENGTH:Ljava/lang/String; = "dither-strength"
+
+.field public static final KEY_DURATION:Ljava/lang/String; = "record-duration"
+
 .field public static final KEY_EFFECT_MODE:Ljava/lang/String; = "effect-mode"
 
 .field public static final KEY_FPS_FACTOR:Ljava/lang/String; = "fps-factor"
@@ -24,15 +30,27 @@
 
 .field public static final KEY_HEIGHT:Ljava/lang/String; = "height"
 
+.field public static final KEY_INPUT_FILE:Ljava/lang/String; = "input-file"
+
 .field public static final KEY_METADATA_STORED:Ljava/lang/String; = "metadatastored"
+
+.field public static final KEY_OUTPUT_FILE:Ljava/lang/String; = "output-file"
 
 .field public static final KEY_PREVIEW_FORMAT:Ljava/lang/String; = "preview-format"
 
 .field public static final KEY_PREVIEW_SIZE:Ljava/lang/String; = "preview-size"
 
+.field public static final KEY_QUALITY_FACTOR:Ljava/lang/String; = "quality-factor"
+
+.field public static final KEY_REPEAT:Ljava/lang/String; = "repeat"
+
 .field public static final KEY_SAVE_AS_FLIPPED:Ljava/lang/String; = "save-as-flipped"
 
+.field public static final KEY_TRANSPARENT:Ljava/lang/String; = "transparent"
+
 .field public static final KEY_USE_INTRINSIC_TIMESTAMP:Ljava/lang/String; = "use-intrinsic-timestamp"
+
+.field public static final KEY_USE_PROXY_STORETIME:Ljava/lang/String; = "use-proxy-storetime"
 
 .field public static final KEY_VIDEO_FORMAT:Ljava/lang/String; = "video-format"
 
@@ -78,17 +96,17 @@
     .locals 1
 
     .prologue
-    .line 180
+    .line 196
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 175
+    .line 191
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
-    .line 182
+    .line 198
     return-void
 .end method
 
@@ -97,37 +115,65 @@
     .param p1, "param"    # Ljava/lang/String;
 
     .prologue
-    .line 189
+    .line 205
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 175
+    .line 191
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
-    .line 190
+    .line 206
     invoke-virtual {p0, p1}, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->unflatten(Ljava/lang/String;)V
 
-    .line 191
+    .line 207
     return-void
 .end method
 
 
 # virtual methods
+.method public clear()V
+    .locals 1
+
+    .prologue
+    .line 426
+    iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
+
+    invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
+
+    .line 427
+    return-void
+.end method
+
+.method public contains(Ljava/lang/String;)Z
+    .locals 1
+    .param p1, "key"    # Ljava/lang/String;
+
+    .prologue
+    .line 329
+    iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public flatten()Ljava/lang/String;
     .locals 12
 
     .prologue
     const/4 v7, 0x0
 
-    .line 199
+    .line 215
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 200
+    .line 216
     .local v0, "flattened":Ljava/lang/StringBuilder;
     iget-object v6, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
@@ -153,7 +199,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 201
+    .line 217
     .local v1, "k":Ljava/lang/String;
     iget-object v6, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
@@ -161,24 +207,24 @@
 
     move-result-object v5
 
-    .line 202
+    .line 218
     .local v5, "val":Ljava/lang/Object;
     if-eqz v5, :cond_0
 
-    .line 206
+    .line 222
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 207
+    .line 223
     const-string v6, "="
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 209
+    .line 225
     instance-of v6, v5, Ljava/lang/Boolean;
 
     if-eqz v6, :cond_1
 
-    .line 210
+    .line 226
     check-cast v5, Ljava/lang/Boolean;
 
     .end local v5    # "val":Ljava/lang/Object;
@@ -188,7 +234,7 @@
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 211
+    .line 227
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -211,7 +257,7 @@
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 250
+    .line 266
     :goto_1
     const-string v6, ";"
 
@@ -219,14 +265,14 @@
 
     goto :goto_0
 
-    .line 212
+    .line 228
     .restart local v5    # "val":Ljava/lang/Object;
     :cond_1
     instance-of v6, v5, Ljava/lang/Integer;
 
     if-eqz v6, :cond_2
 
-    .line 213
+    .line 229
     check-cast v5, Ljava/lang/Integer;
 
     .end local v5    # "val":Ljava/lang/Object;
@@ -236,7 +282,7 @@
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 214
+    .line 230
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -261,14 +307,14 @@
 
     goto :goto_1
 
-    .line 215
+    .line 231
     .restart local v5    # "val":Ljava/lang/Object;
     :cond_2
     instance-of v6, v5, Ljava/lang/Long;
 
     if-eqz v6, :cond_3
 
-    .line 216
+    .line 232
     check-cast v5, Ljava/lang/Long;
 
     .end local v5    # "val":Ljava/lang/Object;
@@ -278,7 +324,7 @@
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 217
+    .line 233
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -303,14 +349,14 @@
 
     goto :goto_1
 
-    .line 218
+    .line 234
     .restart local v5    # "val":Ljava/lang/Object;
     :cond_3
     instance-of v6, v5, Ljava/lang/Float;
 
     if-eqz v6, :cond_4
 
-    .line 219
+    .line 235
     check-cast v5, Ljava/lang/Float;
 
     .end local v5    # "val":Ljava/lang/Object;
@@ -320,7 +366,7 @@
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 220
+    .line 236
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -345,20 +391,20 @@
 
     goto :goto_1
 
-    .line 221
+    .line 237
     .restart local v5    # "val":Ljava/lang/Object;
     :cond_4
     instance-of v6, v5, Ljava/lang/String;
 
     if-eqz v6, :cond_5
 
-    .line 222
+    .line 238
     check-cast v5, Ljava/lang/String;
 
     .end local v5    # "val":Ljava/lang/Object;
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 223
+    .line 239
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -383,19 +429,19 @@
 
     goto/16 :goto_1
 
-    .line 224
+    .line 240
     .restart local v5    # "val":Ljava/lang/Object;
     :cond_5
     instance-of v6, v5, [I
 
     if-eqz v6, :cond_7
 
-    .line 225
+    .line 241
     const-string v6, "["
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 226
+    .line 242
     check-cast v5, [I
 
     .end local v5    # "val":Ljava/lang/Object;
@@ -403,7 +449,7 @@
 
     check-cast v4, [I
 
-    .line 227
+    .line 243
     .local v4, "list":[I
     array-length v9, v4
 
@@ -414,7 +460,7 @@
 
     aget v2, v4, v6
 
-    .line 228
+    .line 244
     .local v2, "i":I
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -436,12 +482,12 @@
 
     invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 227
+    .line 243
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_2
 
-    .line 230
+    .line 246
     .end local v2    # "i":I
     :cond_6
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
@@ -452,7 +498,7 @@
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
 
-    .line 231
+    .line 247
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -477,7 +523,7 @@
 
     goto/16 :goto_1
 
-    .line 232
+    .line 248
     .end local v4    # "list":[I
     .restart local v5    # "val":Ljava/lang/Object;
     :cond_7
@@ -485,12 +531,12 @@
 
     if-eqz v6, :cond_9
 
-    .line 233
+    .line 249
     const-string v6, "["
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 234
+    .line 250
     check-cast v5, [J
 
     .end local v5    # "val":Ljava/lang/Object;
@@ -498,7 +544,7 @@
 
     check-cast v4, [J
 
-    .line 235
+    .line 251
     .local v4, "list":[J
     array-length v9, v4
 
@@ -509,7 +555,7 @@
 
     aget-wide v2, v4, v6
 
-    .line 236
+    .line 252
     .local v2, "i":J
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -531,12 +577,12 @@
 
     invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 235
+    .line 251
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_3
 
-    .line 238
+    .line 254
     .end local v2    # "i":J
     :cond_8
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
@@ -569,7 +615,7 @@
 
     goto/16 :goto_1
 
-    .line 239
+    .line 255
     .end local v4    # "list":[J
     .restart local v5    # "val":Ljava/lang/Object;
     :cond_9
@@ -577,12 +623,12 @@
 
     if-eqz v6, :cond_b
 
-    .line 240
+    .line 256
     const-string v6, "["
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 241
+    .line 257
     check-cast v5, [Ljava/lang/String;
 
     .end local v5    # "val":Ljava/lang/Object;
@@ -590,7 +636,7 @@
 
     check-cast v4, [Ljava/lang/String;
 
-    .line 242
+    .line 258
     .local v4, "list":[Ljava/lang/String;
     array-length v9, v4
 
@@ -601,7 +647,7 @@
 
     aget-object v2, v4, v6
 
-    .line 243
+    .line 259
     .local v2, "i":Ljava/lang/String;
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -623,12 +669,12 @@
 
     invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 242
+    .line 258
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_4
 
-    .line 245
+    .line 261
     .end local v2    # "i":Ljava/lang/String;
     :cond_a
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
@@ -661,7 +707,7 @@
 
     goto/16 :goto_1
 
-    .line 247
+    .line 263
     .end local v4    # "list":[Ljava/lang/String;
     .restart local v5    # "val":Ljava/lang/Object;
     :cond_b
@@ -699,7 +745,7 @@
 
     throw v6
 
-    .line 253
+    .line 269
     .end local v1    # "k":Ljava/lang/String;
     .end local v5    # "val":Ljava/lang/Object;
     :cond_c
@@ -711,7 +757,7 @@
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
 
-    .line 254
+    .line 270
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v6
@@ -724,7 +770,7 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 338
+    .line 358
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -739,7 +785,7 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 348
+    .line 368
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -756,7 +802,7 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 378
+    .line 398
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -777,7 +823,7 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 358
+    .line 378
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -798,7 +844,7 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 398
+    .line 418
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -815,7 +861,7 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 368
+    .line 388
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -836,7 +882,7 @@
     .param p1, "key"    # Ljava/lang/String;
 
     .prologue
-    .line 388
+    .line 408
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -861,13 +907,27 @@
     .end annotation
 
     .prologue
-    .line 328
+    .line 348
     .local p1, "map":Ljava/util/Map;, "Ljava/util/Map<+Ljava/lang/String;*>;"
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
 
-    .line 329
+    .line 349
+    return-void
+.end method
+
+.method public remove(Ljava/lang/String;)V
+    .locals 1
+    .param p1, "key"    # Ljava/lang/String;
+
+    .prologue
+    .line 422
+    iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 423
     return-void
 .end method
 
@@ -877,12 +937,12 @@
     .param p2, "value"    # Ljava/lang/Object;
 
     .prologue
-    .line 319
+    .line 339
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 320
+    .line 340
     return-void
 .end method
 
@@ -891,23 +951,23 @@
     .param p1, "flattened"    # Ljava/lang/String;
 
     .prologue
-    .line 263
+    .line 279
     iget-object v10, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
 
     invoke-virtual {v10}, Ljava/util/HashMap;->clear()V
 
-    .line 265
+    .line 281
     new-instance v6, Landroid/text/TextUtils$SimpleStringSplitter;
 
     const/16 v10, 0x3b
 
     invoke-direct {v6, v10}, Landroid/text/TextUtils$SimpleStringSplitter;-><init>(C)V
 
-    .line 266
+    .line 282
     .local v6, "splitter":Landroid/text/TextUtils$StringSplitter;
     invoke-interface {v6, p1}, Landroid/text/TextUtils$StringSplitter;->setString(Ljava/lang/String;)V
 
-    .line 267
+    .line 283
     invoke-interface {v6}, Landroid/text/TextUtils$StringSplitter;->iterator()Ljava/util/Iterator;
 
     move-result-object v10
@@ -926,7 +986,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 268
+    .line 284
     .local v3, "kv":Ljava/lang/String;
     const-string v11, "="
 
@@ -934,20 +994,20 @@
 
     move-result v0
 
-    .line 269
+    .line 285
     .local v0, "eqPos":I
     const/4 v11, -0x1
 
     if-eq v0, v11, :cond_0
 
-    .line 272
+    .line 288
     const/4 v11, 0x0
 
     invoke-virtual {v3, v11, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 274
+    .line 290
     .local v2, "k":Ljava/lang/String;
     const-string v11, "@"
 
@@ -955,7 +1015,7 @@
 
     move-result v8
 
-    .line 275
+    .line 291
     .local v8, "tpPos":I
     add-int/lit8 v11, v8, 0x1
 
@@ -971,17 +1031,17 @@
 
     move-result-object v7
 
-    .line 277
+    .line 293
     .local v7, "t":Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
     const/4 v9, 0x0
 
-    .line 278
+    .line 294
     .local v9, "val":Ljava/lang/Object;
     sget-object v11, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->BOOLEAN:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     if-ne v7, v11, :cond_1
 
-    .line 279
+    .line 295
     add-int/lit8 v11, v0, 0x1
 
     invoke-virtual {v3, v11, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -996,7 +1056,7 @@
 
     move-result-object v9
 
-    .line 308
+    .line 324
     .end local v9    # "val":Ljava/lang/Object;
     :goto_1
     iget-object v11, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters;->mMap:Ljava/util/HashMap;
@@ -1005,14 +1065,14 @@
 
     goto :goto_0
 
-    .line 280
+    .line 296
     .restart local v9    # "val":Ljava/lang/Object;
     :cond_1
     sget-object v11, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->INT:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     if-ne v7, v11, :cond_2
 
-    .line 281
+    .line 297
     add-int/lit8 v11, v0, 0x1
 
     invoke-virtual {v3, v11, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -1030,14 +1090,14 @@
     .local v9, "val":Ljava/lang/Integer;
     goto :goto_1
 
-    .line 282
+    .line 298
     .local v9, "val":Ljava/lang/Object;
     :cond_2
     sget-object v11, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->LONG:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     if-ne v7, v11, :cond_3
 
-    .line 283
+    .line 299
     add-int/lit8 v11, v0, 0x1
 
     invoke-virtual {v3, v11, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -1055,14 +1115,14 @@
     .local v9, "val":Ljava/lang/Long;
     goto :goto_1
 
-    .line 284
+    .line 300
     .local v9, "val":Ljava/lang/Object;
     :cond_3
     sget-object v11, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->FLOAT:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     if-ne v7, v11, :cond_4
 
-    .line 285
+    .line 301
     add-int/lit8 v11, v0, 0x1
 
     invoke-virtual {v3, v11, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -1080,14 +1140,14 @@
     .local v9, "val":Ljava/lang/Float;
     goto :goto_1
 
-    .line 286
+    .line 302
     .local v9, "val":Ljava/lang/Object;
     :cond_4
     sget-object v11, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->STRING:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     if-ne v7, v11, :cond_5
 
-    .line 287
+    .line 303
     add-int/lit8 v11, v0, 0x1
 
     invoke-virtual {v3, v11, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -1097,14 +1157,14 @@
     .local v9, "val":Ljava/lang/String;
     goto :goto_1
 
-    .line 288
+    .line 304
     .local v9, "val":Ljava/lang/Object;
     :cond_5
     sget-object v11, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->INTARRAY:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     if-ne v7, v11, :cond_7
 
-    .line 289
+    .line 305
     add-int/lit8 v11, v0, 0x2
 
     add-int/lit8 v12, v8, -0x1
@@ -1119,13 +1179,13 @@
 
     move-result-object v5
 
-    .line 290
+    .line 306
     .local v5, "list":[Ljava/lang/String;
     array-length v11, v5
 
     new-array v4, v11, [I
 
-    .line 291
+    .line 307
     .local v4, "l":[I
     const/4 v1, 0x0
 
@@ -1135,7 +1195,7 @@
 
     if-ge v1, v11, :cond_6
 
-    .line 292
+    .line 308
     aget-object v11, v5, v1
 
     invoke-static {v11}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -1144,16 +1204,16 @@
 
     aput v11, v4, v1
 
-    .line 291
+    .line 307
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_2
 
-    .line 294
+    .line 310
     :cond_6
     move-object v9, v4
 
-    .line 295
+    .line 311
     .local v9, "val":[I
     goto :goto_1
 
@@ -1166,7 +1226,7 @@
 
     if-ne v7, v11, :cond_9
 
-    .line 296
+    .line 312
     add-int/lit8 v11, v0, 0x2
 
     add-int/lit8 v12, v8, -0x1
@@ -1181,13 +1241,13 @@
 
     move-result-object v5
 
-    .line 297
+    .line 313
     .restart local v5    # "list":[Ljava/lang/String;
     array-length v11, v5
 
     new-array v4, v11, [J
 
-    .line 298
+    .line 314
     .local v4, "l":[J
     const/4 v1, 0x0
 
@@ -1197,7 +1257,7 @@
 
     if-ge v1, v11, :cond_8
 
-    .line 299
+    .line 315
     aget-object v11, v5, v1
 
     invoke-static {v11}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -1206,16 +1266,16 @@
 
     aput-wide v12, v4, v1
 
-    .line 298
+    .line 314
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_3
 
-    .line 301
+    .line 317
     :cond_8
     move-object v9, v4
 
-    .line 302
+    .line 318
     .local v9, "val":[J
     goto/16 :goto_1
 
@@ -1228,7 +1288,7 @@
 
     if-ne v7, v11, :cond_a
 
-    .line 303
+    .line 319
     add-int/lit8 v11, v0, 0x2
 
     add-int/lit8 v12, v8, -0x1
@@ -1246,7 +1306,7 @@
     .local v9, "val":[Ljava/lang/String;
     goto/16 :goto_1
 
-    .line 305
+    .line 321
     .local v9, "val":Ljava/lang/Object;
     :cond_a
     new-instance v10, Ljava/lang/IllegalArgumentException;
@@ -1273,7 +1333,7 @@
 
     throw v10
 
-    .line 310
+    .line 326
     .end local v0    # "eqPos":I
     .end local v2    # "k":Ljava/lang/String;
     .end local v3    # "kv":Ljava/lang/String;

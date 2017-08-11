@@ -133,7 +133,7 @@
     invoke-direct {p0, v0, v1, v2}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 71
-    const v0, 0x7f0b0144
+    const v0, 0x7f0b0145
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -155,7 +155,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->NORMAL_RATIO_PREVIEW_WIDTH:I
 
     .line 74
-    const v0, 0x7f0b038b
+    const v0, 0x7f0b038c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -166,7 +166,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->BOUND_RECT_THICKNESS:I
 
     .line 75
-    const v0, 0x7f0b0388
+    const v0, 0x7f0b0389
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -177,7 +177,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->OUTER_BOUND_RECT_THICKNESS:I
 
     .line 76
-    const v0, 0x7f0b038a
+    const v0, 0x7f0b038b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -186,7 +186,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->HANDLE_SIZE:F
 
     .line 77
-    const v0, 0x7f0b0389
+    const v0, 0x7f0b038a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -570,7 +570,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->HANDLE_SIZE:F
 
-    const v6, 0x7f020231
+    const v6, 0x7f020230
 
     const/4 v7, 0x0
 
@@ -602,7 +602,7 @@
     .line 179
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f02022f
+    const v1, 0x7f02022e
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setBackground(I)Z
 
@@ -635,7 +635,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->HANDLE_SIZE:F
 
-    const v6, 0x7f020232
+    const v6, 0x7f020231
 
     const/4 v7, 0x0
 
@@ -667,7 +667,7 @@
     .line 187
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->mRotateButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f02022f
+    const v1, 0x7f02022e
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setBackground(I)Z
 
@@ -700,7 +700,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->HANDLE_SIZE:F
 
-    const v6, 0x7f020230
+    const v6, 0x7f02022f
 
     const/4 v7, 0x0
 
@@ -775,7 +775,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/widget/gl/StickerView;->HANDLE_SIZE:F
 
-    const v6, 0x7f020230
+    const v6, 0x7f02022f
 
     const/4 v7, 0x0
 

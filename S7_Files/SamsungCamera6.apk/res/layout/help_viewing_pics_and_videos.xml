@@ -3,5 +3,9 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:helphub="http://schemas.android.com/apk/res-auto">
     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/HelpPageLayoutBase">
         <com.sec.android.app.camera.help.HelpHubTextView android:paddingBottom="@dimen/helppage_tipbox_margin_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/desc_text_area_margin_top" android:text="@string/help_viewing_pics_and_videos_tip_1" android:contentDescription="@string/help_viewing_pics_and_videos_tip_1_tts" helphub:image="@drawable/help_ic_gallery" style="@style/HelpItemDescText" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/tip_box_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/helppage_tipbox_margin_bottom" style="@style/HelpPageTipBoxLayout">
+            <TextView android:id="@id/more_info_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_text_more_info" style="@style/HelpPageTipBoxTitle" />
+            <com.sec.android.app.camera.help.HelpHubTextView android:id="@id/more_info_text_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_viewing_pics_and_videos_tip_2" android:layout_below="@id/more_info_title_1" android:contentDescription="@string/help_viewing_pics_and_videos_tip_2" style="@style/HelpPageTipBoxDescText" />
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

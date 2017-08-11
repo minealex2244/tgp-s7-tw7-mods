@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 9926
+    .line 9981
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,14 +47,14 @@
 
     const/4 v2, 0x1
 
-    .line 9929
+    .line 9984
     const-string v0, "CommonEngine"
 
     const-string v1, "OneShotPreviewCallback onPreviewFrame()"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9931
+    .line 9986
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mMainHandler:Landroid/os/Handler;
@@ -63,7 +63,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 9933
+    .line 9988
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mRequestQueue:Lcom/sec/android/app/camera/engine/CeRequestQueue;
@@ -76,14 +76,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 9934
+    .line 9989
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;
 
     invoke-virtual {v0, v3}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 9935
+    .line 9990
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -94,7 +94,7 @@
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/VisualInteractionProvider;->setPreviewAnimation(I)V
 
-    .line 9936
+    .line 9991
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -105,17 +105,17 @@
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/VisualInteractionProvider;->startPreviewAnimation([B)V
 
-    .line 9942
+    .line 9997
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsFinishOneShotPreviewCallback:Z
-    invoke-static {v0, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2802(Lcom/sec/android/app/camera/engine/CommonEngine;Z)Z
+    invoke-static {v0, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2902(Lcom/sec/android/app/camera/engine/CommonEngine;Z)Z
 
-    .line 9943
+    .line 9998
     return-void
 
-    .line 9938
+    .line 9993
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -127,7 +127,7 @@
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/VisualInteractionProvider;->startPreviewAnimation([B)V
 
-    .line 9939
+    .line 9994
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;

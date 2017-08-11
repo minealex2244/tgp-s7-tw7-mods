@@ -186,6 +186,8 @@ Saipika jery panoramika: Misambora hetsika misy dikany rehefa maka sarin'ny zava
     <string name="SM_SLOW_VIDEO_description">"Handrakitra horonantsary amina tosak'efitsary ambony hojerena amin'ny fandeha miadana. Azonao atao ny mamaky ny ampahany manokana amin'ny horonantsary tsirairay izay amin'ny fandeha miadana aorian'ny nandraketanao azy ireo."</string>
     <string name="SM_SMART_SELFSHOT">Rear-cam selfie</string>
     <string name="SM_SMART_SELFSHOT_description">"Ny fakantsary aoriana dia hamafantatra hoazy amin'ny detekitera ny tarehinao sy hifantoka aminy rehefa maka sary sarimaneho tena ianao."</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Take pictures and share them easily on social networks.</string>
     <string name="SM_SPORTS">Fanatanjahantena</string>
     <string name="SM_SPORTS_SCENE_description">Maka sary madio kokoa ireo halaina sary haingam-pihetsika.</string>
     <string name="SM_STORY">Feo sy saripika</string>
@@ -194,7 +196,7 @@ Saipika jery panoramika: Misambora hetsika misy dikany rehefa maka sarin'ny zava
     <string name="SM_ULTRA_WIDE_SHOT_description">"Makà saripika selfie be velarana mba hahazakan'ny sarinao olona maro."</string>
     <string name="SS_EDIT_TEXT">Hanova soratra</string>
     <string name="S_DEVICE">Fitaovana</string>
-    <string name="S_MMC">SD card</string>
+    <string name="S_MMC">Karatra SD</string>
     <string name="Selective_Focus_Helptext">Tsindrio miala latsaky ny 50 sm ny zavatra iray raha hifantoka aminy, avy eo tsindrio ny bokotra Fakantsary raha haka sary.</string>
     <string name="T_FIVE">5 seg</string>
     <string name="T_INTERVAL">Take 3 shots</string>
@@ -246,7 +248,7 @@ Saipika jery panoramika: Misambora hetsika misy dikany rehefa maka sarin'ny zava
     <string name="Title_Shooting_Method">Ways to take pictures</string>
     <string name="Title_ShutterSpeed">"Hafaingan'ny fipihana"</string>
     <string name="Title_Sound_and_Shot_Mode">Haka feo</string>
-    <string name="Title_Storage">Storage location</string>
+    <string name="Title_Storage">Toerana fitehirizana</string>
     <string name="Title_Tap_To_Take_Pictures">Tap to take pictures</string>
     <string name="Title_Timer">Minitera</string>
     <string name="Title_TrackingAF">Fanarahan-dia AF</string>
@@ -324,8 +326,8 @@ correction"</string>
     <string name="clip_movie_leave_recording_discard_or_save_dialog_msg">The recording of your video collage is still in progress. Tap SAVE to save the recording and leave the recording screen.</string>
     <string name="clip_movie_new">New</string>
     <string name="clip_movie_start_continue_or_new_dialog_msg">The recording of your video collage is still in progress. Tap CONTINUE to continue the current recording, or tap NEW to start a new recording.</string>
-    <string name="clip_movie_time_15s">15 seconds</string>
-    <string name="clip_movie_time_3s">3 seconds</string>
+    <string name="clip_movie_time_15s">15 segondra</string>
+    <string name="clip_movie_time_3s">3 segondra</string>
     <string name="clip_movie_time_6s">6 seconds</string>
     <string name="clip_movie_time_9s">9 seconds</string>
     <string name="clip_movie_type_collage_1by1_1x2">Ratio one by one, grid 2 by one</string>
@@ -360,7 +362,7 @@ correction"</string>
     <string name="do_not_ask_again">Aza aseho intsony.</string>
     <string name="done">VIta</string>
     <string name="dual">Fktsr miroa</string>
-    <string name="edit">Edit</string>
+    <string name="edit">Hanitsy</string>
     <string name="effect_recording_restriction_msg">Unable to apply effects while recording videos.</string>
     <string name="emoji">Emotions</string>
     <string name="enable_btn">Hamelona</string>
@@ -387,7 +389,10 @@ correction"</string>
     <string name="guideline_square">Efajoro</string>
     <string name="help_change_mode_tip_1">Swipe right to view available camera modes.</string>
     <string name="help_change_mode_tip_2">Fanteno ilay maody tianao hampiasana.</string>
+    <string name="help_change_mode_tip_3">Only the Auto and Selfie camera modes are available while Easy mode is enabled.</string>
     <string name="help_changing_the_camera_mode">Selecting camera modes</string>
+    <string name="help_changing_the_camera_mode_header">Mifantina maody fakantsary</string>
+    <string name="help_changing_the_camera_mode_title">Manova ny maody fakantsary</string>
     <string name="help_recording_videos">Mandraikitra horonan-tsary</string>
     <string name="help_recording_videos_tip_1">Tsindrio %s.</string>
     <string name="help_recording_videos_tip_1_tts">Tsindrio ny bokotra fakana horonantsary.</string>
@@ -395,7 +400,7 @@ correction"</string>
     <string name="help_recording_videos_tip_2_tts">Tsindrio ny bokotra fanaperana raha hampijanona ny fandraiketana.</string>
     <string name="help_recording_videos_tip_snapshot">Tsindrio ny %s raha haka sary rehefa maka horonantsary.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Tsindrio ny bokotra fakantsary raha haka sary rehefa mandraikitra horonantsary.</string>
-    <string name="help_section_summary">Take pictures or record videos using a variety of different effects, to suit all occasions. Only the Auto and Selfie camera modes are available, and no effects can be applied, while Easy mode is enabled.</string>
+    <string name="help_section_summary">"Haka sary na handraiktra horonantsary amin'ny alalàn'ny karazana triokazy samihafa, izay mifanaraka amin'ny fotoana."</string>
     <string name="help_selecting_camera_mode">Selecting camera modes</string>
     <string name="help_taking_pictures">Maka sary</string>
     <string name="help_taking_pictures_tip_1">"Tsindrio ny ny zavatra tianao asongadina amin'ny focus."</string>
@@ -410,6 +415,7 @@ correction"</string>
     <string name="help_text_wideselfie">Tsindrio ny bokotra fakantsary ary ahorirano moramora amina todika iray ny fitaovanao.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Tsindrio %s raha hijery ireo sarinao na horonantsarinao vao avy nalainao na noraketinao.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">"Tsindrio ny bokotra Jery maika raha hijery ny sarinao na horonantsarinao aorian'ny nakanao na nandraketanao azy."</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Fijerena sary sy horonantsary</string>
     <string name="high_resolution_video_description">Tsy vonona ireto manaraka ireto raha handrakitra amina fivelatra %s:</string>
     <string name="highlight">Highlights</string>
@@ -418,7 +424,7 @@ correction"</string>
     <string name="hrm_shutter_unavailable_toast_popup">Unable to take selfies by tapping the heart rate sensor while using a flip cover.</string>
     <string name="image_stitching_fail">Tsy nety.</string>
     <string name="info">Fampahalalana</string>
-    <string name="info_tts">Information</string>
+    <string name="info_tts">Fampahalln</string>
     <string name="insert_mmc_msg">Atsofohy ny karatra memoara raha hampiasa Fakantsary.</string>
     <string name="interaction_descrition_camera">Swipe up or down to switch between the front and rear cameras.</string>
     <string name="interaction_descrition_effect">Swipe left to view available camera filters.</string>
@@ -538,7 +544,7 @@ correction"</string>
     <string name="settings">"Tefin'ny fakantsary"</string>
     <string name="settings_btn">Settings</string>
     <string name="shadow">Shadows</string>
-    <string name="share">Share</string>
+    <string name="share">Hizara</string>
     <string name="shutter">Fanampenana</string>
     <string name="sight">Sight</string>
     <string name="sound_and_shot_add_voice_guidetext">"Halaina mandritra ny %d farafabeny ny feo ambadika aorian'ny nanindrianao ny bokotra fakantsary."</string>

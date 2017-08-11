@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 1102
+    .line 1076
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,14 +44,14 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 1105
+    .line 1079
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onClick - CaptureStopButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1106
+    .line 1080
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isCapturing()Z
@@ -60,7 +60,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1107
+    .line 1081
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     # getter for: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
@@ -81,19 +81,19 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 1108
+    .line 1082
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "panorama can be saved at least two shot"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1121
+    .line 1095
     :cond_0
     :goto_0
     return v2
 
-    .line 1112
+    .line 1086
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
@@ -104,7 +104,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 1113
+    .line 1087
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onClick - stopping now. so returned"
@@ -113,7 +113,7 @@
 
     goto :goto_0
 
-    .line 1117
+    .line 1091
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
@@ -124,7 +124,7 @@
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 1119
+    .line 1093
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;->this$0:Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V

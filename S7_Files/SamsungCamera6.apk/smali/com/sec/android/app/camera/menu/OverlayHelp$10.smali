@@ -106,7 +106,7 @@
     .line 456
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$10;->val$guideView:Landroid/view/View;
 
-    const v1, 0x7f10002d
+    const v1, 0x7f10002f
 
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -114,7 +114,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    const v1, 0x7f0a01d2
+    const v1, 0x7f0a01d8
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 

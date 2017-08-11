@@ -78,26 +78,6 @@
     return-void
 .end method
 
-.method protected finalize()V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Throwable;
-        }
-    .end annotation
-
-    .prologue
-    .line 61
-    .local p0, "this":Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap;, "Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap<TK;TV1;TV2;>;"
-    invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/utils/SemTriHashMap;->clear()V
-
-    .line 62
-    invoke-super {p0}, Ljava/lang/Object;->finalize()V
-
-    .line 63
-    return-void
-.end method
-
 .method public getFirst(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;

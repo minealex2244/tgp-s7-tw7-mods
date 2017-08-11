@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 958
+    .line 996
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/CameraDialog$1;
 
     .prologue
-    .line 958
+    .line 996
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;)V
 
     return-void
@@ -65,7 +65,7 @@
 
     const/4 v1, 0x0
 
-    .line 961
+    .line 999
     iget-object v3, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v3}, Lcom/sec/android/app/camera/CameraDialog;->getArguments()Landroid/os/Bundle;
@@ -78,16 +78,16 @@
 
     move-result v0
 
-    .line 962
+    .line 1000
     .local v0, "id":I
     sparse-switch v0, :sswitch_data_0
 
-    .line 1000
+    .line 1038
     :cond_0
     :goto_0
     return v1
 
-    .line 970
+    .line 1008
     :sswitch_0
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
@@ -103,7 +103,7 @@
 
     if-ne p2, v3, :cond_0
 
-    .line 971
+    .line 1009
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -119,14 +119,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 972
+    .line 1010
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v1
 
     invoke-static {v1}, Landroid/os/Process;->killProcess(I)V
 
-    .line 976
+    .line 1014
     :goto_1
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -135,10 +135,10 @@
 
     move v1, v2
 
-    .line 977
+    .line 1015
     goto :goto_0
 
-    .line 974
+    .line 1012
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -150,7 +150,7 @@
 
     goto :goto_1
 
-    .line 981
+    .line 1019
     :sswitch_1
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
@@ -162,7 +162,7 @@
 
     if-ne p2, v6, :cond_0
 
-    .line 983
+    .line 1021
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -171,10 +171,10 @@
 
     move v1, v2
 
-    .line 984
+    .line 1022
     goto :goto_0
 
-    .line 988
+    .line 1026
     :sswitch_2
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
@@ -188,7 +188,7 @@
 
     if-ne p2, v6, :cond_0
 
-    .line 989
+    .line 1027
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -200,7 +200,7 @@
 
     iput-boolean v2, v1, Lcom/sec/android/app/camera/Camera;->mLowBatteryDisableFlashPopupDisplayed:Z
 
-    .line 990
+    .line 1028
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->dismissCameraDialog()V
@@ -208,17 +208,17 @@
 
     move v1, v2
 
-    .line 991
+    .line 1029
     goto :goto_0
 
-    .line 996
+    .line 1034
     :sswitch_3
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->dismissCameraDialog()V
     invoke-static {v2}, Lcom/sec/android/app/camera/CameraDialog;->access$800(Lcom/sec/android/app/camera/CameraDialog;)V
 
-    .line 997
+    .line 1035
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraDialog$OnKeyListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -229,7 +229,7 @@
 
     goto :goto_0
 
-    .line 962
+    .line 1000
     :sswitch_data_0
     .sparse-switch
         0x190 -> :sswitch_0

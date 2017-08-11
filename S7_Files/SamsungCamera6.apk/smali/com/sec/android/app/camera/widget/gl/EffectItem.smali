@@ -81,7 +81,7 @@
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 39
-    const v0, 0x7f0b00fb
+    const v0, 0x7f0b00fc
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -92,7 +92,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_TYPE_LINE_WIDTH:I
 
     .line 40
-    const v0, 0x7f0b00f7
+    const v0, 0x7f0b00f8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -109,7 +109,7 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0b00f9
+    const v0, 0x7f0b00fa
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -133,7 +133,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_TYPE_TEXT_MARGIN:I
 
     .line 44
-    const v0, 0x7f0b00f6
+    const v0, 0x7f0b00f7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -144,7 +144,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_BADGE_IMAGE_WIDTH:I
 
     .line 45
-    const v0, 0x7f0b00f5
+    const v0, 0x7f0b00f6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -317,7 +317,7 @@
 
     .line 41
     :cond_0
-    const v0, 0x7f0b00f8
+    const v0, 0x7f0b00f9
 
     .line 42
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -359,101 +359,101 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 218
+    .line 214
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     if-eqz v0, :cond_0
 
-    .line 219
+    .line 215
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 220
+    .line 216
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->clear()V
 
-    .line 221
+    .line 217
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    .line 223
+    .line 219
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
     if-eqz v0, :cond_1
 
-    .line 224
+    .line 220
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 225
+    .line 221
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;->clear()V
 
-    .line 226
+    .line 222
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
-    .line 228
+    .line 224
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v0, :cond_2
 
-    .line 229
+    .line 225
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 230
+    .line 226
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->clear()V
 
-    .line 231
+    .line 227
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
-    .line 233
+    .line 229
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_3
 
-    .line 234
+    .line 230
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 235
+    .line 231
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLRectangle;->clear()V
 
-    .line 236
+    .line 232
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 238
+    .line 234
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mEffectBadgeImage:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v0, :cond_4
 
-    .line 239
+    .line 235
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mEffectBadgeImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 240
+    .line 236
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mEffectBadgeImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->clear()V
 
-    .line 241
+    .line 237
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mEffectBadgeImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 243
+    .line 239
     :cond_4
     return-void
 .end method
@@ -680,14 +680,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 121
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->getSelected()Z
 
     move-result v0
 
-    .line 123
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
     :goto_0
     return v0
 
@@ -701,7 +703,7 @@
     .locals 13
 
     .prologue
-    .line 247
+    .line 243
     new-instance v0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -728,24 +730,24 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
-    .line 248
+    .line 244
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mTitle:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setTitle(Ljava/lang/String;)V
 
-    .line 250
+    .line 246
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 251
+    .line 247
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setFocusListener(Lcom/samsung/android/glview/GLView$FocusListener;)V
 
-    .line 252
+    .line 248
     const/16 v0, 0x3e8
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
@@ -756,7 +758,7 @@
 
     if-eq v0, v1, :cond_3
 
-    .line 253
+    .line 249
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->getCommandId()I
@@ -785,21 +787,21 @@
 
     move-result-object v12
 
-    .line 254
+    .line 250
     .local v12, "objectTagName":Ljava/lang/String;
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0, v12}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setObjectTag(Ljava/lang/String;)V
 
-    .line 258
+    .line 254
     .end local v12    # "objectTagName":Ljava/lang/String;
     :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 260
+    .line 256
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mBadge:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->getBadgeResourceID(Ljava/lang/String;)I
@@ -808,19 +810,19 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mBadgeResId:I
 
-    .line 261
+    .line 257
     iget v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mBadgeResId:I
 
     if-eqz v0, :cond_0
 
-    .line 262
+    .line 258
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 263
+    .line 259
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -869,7 +871,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mEffectBadgeImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 267
+    .line 263
     :goto_2
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mEffectBadgeImage:Lcom/samsung/android/glview/GLImage;
 
@@ -881,19 +883,19 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setBackground(I)Z
 
-    .line 268
+    .line 264
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mEffectBadgeImage:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setBypassTouch(Z)V
 
-    .line 269
+    .line 265
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mEffectBadgeImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 272
+    .line 268
     :cond_0
     new-instance v0, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
@@ -937,7 +939,7 @@
 
     const/4 v7, 0x0
 
-    .line 273
+    .line 269
     invoke-virtual {p0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->getWidth()F
 
     move-result v8
@@ -970,7 +972,7 @@
 
     iget-object v11, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 274
+    .line 270
     invoke-interface {v11}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v11
@@ -989,7 +991,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
-    .line 275
+    .line 271
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoLightFont()Landroid/graphics/Typeface;
@@ -998,14 +1000,14 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;->setTextFont(Landroid/graphics/Typeface;)V
 
-    .line 276
+    .line 272
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 277
+    .line 273
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
     const/4 v1, 0x3
@@ -1014,7 +1016,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;->setAlign(II)V
 
-    .line 281
+    .line 277
     :goto_3
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
@@ -1022,14 +1024,14 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;->setBypassTouch(Z)V
 
-    .line 282
+    .line 278
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;->setTextShadow(Z)V
 
-    .line 284
+    .line 280
     new-instance v0, Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1060,7 +1062,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 285
+    .line 281
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1103,28 +1105,28 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
-    .line 286
+    .line 282
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setCenterPivot(Z)V
 
-    .line 287
+    .line 283
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setBypassTouch(Z)V
 
-    .line 289
+    .line 285
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setClickable(Z)V
 
-    .line 290
+    .line 286
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mTitle:Ljava/lang/String;
@@ -1137,12 +1139,12 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 291
+    .line 287
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    const v3, 0x7f0a0120
+    const v3, 0x7f0a0122
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1160,7 +1162,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a025c
+    const v4, 0x7f0a0262
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1170,21 +1172,21 @@
 
     move-result-object v2
 
-    .line 290
+    .line 286
     invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setTitle(Ljava/lang/String;)V
 
-    .line 292
+    .line 288
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setBypassTouch(Z)V
 
-    .line 294
+    .line 290
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->getSelected()Z
@@ -1193,37 +1195,37 @@
 
     if-eqz v0, :cond_6
 
-    .line 295
+    .line 291
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 296
+    .line 292
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 302
+    .line 298
     :goto_4
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 303
+    .line 299
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 304
+    .line 300
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 307
+    .line 303
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-static {v0}, Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;->instance(Lcom/sec/android/app/camera/interfaces/CameraContext;)Lcom/sec/android/app/camera/plugin/ExternalFilterLoader;
@@ -1250,14 +1252,14 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 308
+    .line 304
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
-    .line 309
+    .line 305
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1274,9 +1276,9 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_DELETE_ICON_WIDTH:F
 
-    const v6, 0x7f02013f
+    const v6, 0x7f020140
 
-    const v7, 0x7f020140
+    const v7, 0x7f020141
 
     const/4 v8, 0x0
 
@@ -1286,30 +1288,30 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 313
+    .line 309
     :goto_5
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 314
+    .line 310
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 315
+    .line 311
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setDraggable(Z)V
 
-    .line 316
+    .line 312
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    const v1, 0x7f0a025e
+    const v1, 0x7f0a0264
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 
@@ -1317,22 +1319,22 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 317
+    .line 313
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 319
+    .line 315
     :cond_1
     return-void
 
-    .line 253
+    .line 249
     :cond_2
     iget-object v12, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mTitle:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 256
+    .line 252
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
@@ -1350,7 +1352,7 @@
 
     goto/16 :goto_1
 
-    .line 265
+    .line 261
     :cond_4
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
@@ -1394,7 +1396,7 @@
 
     goto/16 :goto_2
 
-    .line 279
+    .line 275
     :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailText:Lcom/sec/android/app/camera/widget/gl/ItemThumbnailText;
 
@@ -1406,7 +1408,7 @@
 
     goto/16 :goto_3
 
-    .line 298
+    .line 294
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
@@ -1414,7 +1416,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 299
+    .line 295
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x4
@@ -1423,7 +1425,7 @@
 
     goto/16 :goto_4
 
-    .line 311
+    .line 307
     :cond_7
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
@@ -1451,9 +1453,9 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->EFFECT_DELETE_ICON_WIDTH:F
 
-    const v6, 0x7f02013f
+    const v6, 0x7f020140
 
-    const v7, 0x7f020140
+    const v7, 0x7f020141
 
     const/4 v8, 0x0
 
@@ -1471,7 +1473,7 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 129
+    .line 125
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -1480,12 +1482,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 130
+    .line 126
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteClickListener:Lcom/sec/android/app/camera/widget/gl/EffectItem$DeleteClickListener;
 
     if-eqz v0, :cond_0
 
-    .line 131
+    .line 127
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteClickListener:Lcom/sec/android/app/camera/widget/gl/EffectItem$DeleteClickListener;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mPackageName:Ljava/lang/String;
@@ -1498,11 +1500,11 @@
 
     invoke-interface {v0, v1, v2}, Lcom/sec/android/app/camera/widget/gl/EffectItem$DeleteClickListener;->onDeleteClick(Ljava/lang/String;I)V
 
-    .line 133
+    .line 129
     :cond_0
     const/4 v0, 0x1
 
-    .line 136
+    .line 132
     :goto_0
     return v0
 
@@ -1519,10 +1521,10 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 141
+    .line 137
     invoke-super {p0, p1}, Lcom/sec/android/app/camera/widget/gl/Item;->onOrientationChanged(I)V
 
-    .line 142
+    .line 138
     return-void
 .end method
 
@@ -1531,7 +1533,7 @@
     .param p1, "clipping"    # Z
 
     .prologue
-    .line 146
+    .line 142
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -1542,23 +1544,23 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 147
+    .line 143
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/EffectItem;->getView(I)Lcom/samsung/android/glview/GLView;
 
     move-result-object v1
 
     invoke-virtual {v1, p1}, Lcom/samsung/android/glview/GLView;->setClipping(Z)V
 
-    .line 146
+    .line 142
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 149
+    .line 145
     :cond_0
     invoke-super {p0, p1}, Lcom/sec/android/app/camera/widget/gl/Item;->setClipping(Z)V
 
-    .line 150
+    .line 146
     return-void
 .end method
 
@@ -1567,17 +1569,17 @@
     .param p1, "visibility"    # I
 
     .prologue
-    .line 153
+    .line 149
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_0
 
-    .line 154
+    .line 150
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 156
+    .line 152
     :cond_0
     return-void
 .end method
@@ -1587,10 +1589,10 @@
     .param p1, "listener"    # Lcom/sec/android/app/camera/widget/gl/EffectItem$DeleteClickListener;
 
     .prologue
-    .line 159
+    .line 155
     iput-object p1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mDeleteClickListener:Lcom/sec/android/app/camera/widget/gl/EffectItem$DeleteClickListener;
 
-    .line 160
+    .line 156
     return-void
 .end method
 
@@ -1599,41 +1601,41 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$KeyListener;
 
     .prologue
-    .line 164
+    .line 160
     iput-object p1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mKeyListener:Lcom/samsung/android/glview/GLView$KeyListener;
 
-    .line 165
+    .line 161
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mKeyListener:Lcom/samsung/android/glview/GLView$KeyListener;
 
     if-nez v0, :cond_1
 
-    .line 166
+    .line 162
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     if-eqz v0, :cond_0
 
-    .line 167
+    .line 163
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    .line 174
+    .line 170
     :cond_0
     :goto_0
     invoke-super {p0, p1}, Lcom/sec/android/app/camera/widget/gl/Item;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
 
-    .line 175
+    .line 171
     return-void
 
-    .line 170
+    .line 166
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     if-eqz v0, :cond_0
 
-    .line 171
+    .line 167
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setKeyListener(Lcom/samsung/android/glview/GLView$KeyListener;)V
@@ -1646,17 +1648,17 @@
     .param p1, "mute"    # Z
 
     .prologue
-    .line 179
+    .line 175
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     if-eqz v0, :cond_0
 
-    .line 180
+    .line 176
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setMute(Z)V
 
-    .line 182
+    .line 178
     :cond_0
     return-void
 .end method
@@ -1666,12 +1668,12 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 186
+    .line 182
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     if-eqz v0, :cond_0
 
-    .line 187
+    .line 183
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->getButton()Lcom/samsung/android/glview/GLSelectButton;
@@ -1684,10 +1686,10 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLSelectButton;->setNextFocusUpId(I)V
 
-    .line 188
+    .line 184
     const/4 v0, 0x1
 
-    .line 190
+    .line 186
     :goto_0
     return v0
 
@@ -1702,17 +1704,17 @@
     .param p1, "visibility"    # I
 
     .prologue
-    .line 197
+    .line 193
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectBG:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 198
+    .line 194
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mSelectRectBG:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 199
+    .line 195
     return-void
 .end method
 
@@ -1721,41 +1723,41 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$TouchListener;
 
     .prologue
-    .line 203
+    .line 199
     iput-object p1, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
 
-    .line 204
+    .line 200
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
 
     if-nez v0, :cond_1
 
-    .line 205
+    .line 201
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     if-eqz v0, :cond_0
 
-    .line 206
+    .line 202
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 213
+    .line 209
     :cond_0
     :goto_0
     invoke-super {p0, p1}, Lcom/sec/android/app/camera/widget/gl/Item;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 214
+    .line 210
     return-void
 
-    .line 209
+    .line 205
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     if-eqz v0, :cond_0
 
-    .line 210
+    .line 206
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/EffectItem;->mThumbnailButton:Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;
 
     invoke-virtual {v0, p0}, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V

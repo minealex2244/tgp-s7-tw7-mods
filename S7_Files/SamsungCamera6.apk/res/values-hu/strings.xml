@@ -192,6 +192,8 @@ Pásztázó felvétel: mozgó objektumokat fényképezhet, kiemelve a mozgás ha
     <string name="SM_SLOW_VIDEO_description">Nagy képkockasebességgel rögzít videót lassított lejátszáshoz. A rögzített videók kívánt részét lejátszhatja lassított felvételként.</string>
     <string name="SM_SMART_SELFSHOT">Hátsó önarckép</string>
     <string name="SM_SMART_SELFSHOT_description">Önarckép készítésekor a hátsó fényképező automatikusan észleli és fókuszba állítja az arcát.</string>
+    <string name="SM_SOCIAL">Közösségi</string>
+    <string name="SM_SOCIAL_description">Képek készítése, majd egyszerű megosztása a közösségi hálózatokon.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Tisztább képeket készíthet gyorsan mozgó objektumokról.</string>
     <string name="SM_STORY">Hangos kép</string>
@@ -263,9 +265,9 @@ Pásztázó felvétel: mozgó objektumokat fényképezhet, kiemelve a mozgás ha
     <string name="Title_Viewmode">Telj. képer. nézet (16:9)</string>
     <string name="Title_Voice_Capture">Hangvezérlés</string>
     <string name="Title_Voice_guide">Hangos segítség</string>
-    <string name="Title_Volume_Key_As">Hangerőgomb funkciója</string>
+    <string name="Title_Volume_Key_As">Hangerő gomb funkciója</string>
     <string name="Title_WhiteBalance">Fehéregyensúly</string>
-    <string name="Title_common">Szokásos</string>
+    <string name="Title_common">Általános</string>
     <string name="Title_front">Elülső kamera</string>
     <string name="Title_rear">Hátsó kamera</string>
     <string name="Title_rear_lens_distortion_correction">Alak javítása</string>
@@ -395,7 +397,10 @@ javítása"</string>
     <string name="guideline_square">Négyszögletes</string>
     <string name="help_change_mode_tip_1">A rendelkezésre álló kameraüzemmódok megjelenítéséhez húzza jobbra a képernyőt.</string>
     <string name="help_change_mode_tip_2">Válassza ki a használni kívánt üzemmódot.</string>
+    <string name="help_change_mode_tip_3">Egyszerű üzemmódban csak az Automatikus és az Önarckép kameraüzemmód áll rendelkezésre.</string>
     <string name="help_changing_the_camera_mode">Kameraüzemmódok kiválasztása</string>
+    <string name="help_changing_the_camera_mode_header">Fényképező-üzemmód kiválasztása</string>
+    <string name="help_changing_the_camera_mode_title">Fényk. üzemmódjának módosítása</string>
     <string name="help_recording_videos">Videófelvétel készítése</string>
     <string name="help_recording_videos_tip_1">Érintse meg az %s ikont.</string>
     <string name="help_recording_videos_tip_1_tts">Érintse meg a Videokamera gombot.</string>
@@ -403,7 +408,7 @@ javítása"</string>
     <string name="help_recording_videos_tip_2_tts">Érintse meg a Leállítás gombot a rögzítés leállításához.</string>
     <string name="help_recording_videos_tip_snapshot">A(z) %s megérintésével fényképet készíthet videórögzítés közben.</string>
     <string name="help_recording_videos_tip_snapshot_tts">A Fényképező gomb megérintésével fényképet készíthet videórögzítés közben.</string>
-    <string name="help_section_summary">A képek és a videók készítéséhez számos különféle effekt áll rendelkezésre, amelyek közül minden alkalomhoz megtalálhatja a megfelelőt. Egyszerű üzemmódban csak az Automatikus és az Önarckép kameraüzemmód áll rendelkezésre, továbbá effekteket sem lehet beállítani.</string>
+    <string name="help_section_summary">Különféle effektekkel készíthet képeket és videókat, hogy minden alkalomra megfeleljenek.</string>
     <string name="help_selecting_camera_mode">Kameraüzemmódok kiválasztása</string>
     <string name="help_taking_pictures">Fényképezés</string>
     <string name="help_taking_pictures_tip_1">Érintse meg a fókuszba szánt objektumot.</string>
@@ -418,6 +423,7 @@ javítása"</string>
     <string name="help_text_wideselfie">Érintse meg a Fényképező gombot, és lassan forgassa el az eszközt egy irányba.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Ha rögzítésük után azonnal szeretné megjeleníteni a képeket és videókat, akkor érintse meg az %s ikont.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Ha rögzítésük után azonnal szeretné megjeleníteni a képeket és videókat, akkor érintse meg a Gyorsnézet gombot.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Képek és videók megtekintése</string>
     <string name="high_resolution_video_description">%s felbontású rögzítés közben az alábbi funkciók nem használhatók:</string>
     <string name="highlight">Csúcsfények</string>

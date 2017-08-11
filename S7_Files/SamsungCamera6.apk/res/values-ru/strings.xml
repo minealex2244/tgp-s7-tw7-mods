@@ -189,6 +189,8 @@
     <string name="SM_SLOW_VIDEO_description">Записывать видео с высокой частотой кадров для замедленного воспроизведения. После записи видео нужный фрагмент можно воспроизводить в замедленном режиме.</string>
     <string name="SM_SMART_SELFSHOT">Селфи на заднюю камеру</string>
     <string name="SM_SMART_SELFSHOT_description">Во время съемки автопортретов основная камера автоматически обнаружит ваше лицо и сфокусируется на нем.</string>
+    <string name="SM_SOCIAL">Соцсети</string>
+    <string name="SM_SOCIAL_description">Снимайте фотографии и с легкостью делитесь ими в социальных сетях.</string>
     <string name="SM_SPORTS">Спорт</string>
     <string name="SM_SPORTS_SCENE_description">Делайте четкие снимки быстро движущихся объектов.</string>
     <string name="SM_STORY">Звук и фото</string>
@@ -243,7 +245,7 @@
     <string name="Title_Rear_CameraResolution_TTS">Размер изображения основной камеры</string>
     <string name="Title_RecordingMotionSpeed">Выбор скорости</string>
     <string name="Title_Review">Обзор изображений</string>
-    <string name="Title_SaveAsFlipped">Сохр.изобр. как предв.просм.</string>
+    <string name="Title_SaveAsFlipped">Отображение по вертикали</string>
     <string name="Title_Save_Richtone">Сохранить как</string>
     <string name="Title_ShootingMode">Режим съемки</string>
     <string name="Title_Shooting_Method">Способы съемки</string>
@@ -260,9 +262,9 @@
     <string name="Title_Viewmode">Полноэкран. режим (16:9)</string>
     <string name="Title_Voice_Capture">Управление голосом</string>
     <string name="Title_Voice_guide">Голосовые подсказки</string>
-    <string name="Title_Volume_Key_As">Клавиша громкости</string>
+    <string name="Title_Volume_Key_As">Функция клавиши звука</string>
     <string name="Title_WhiteBalance">Баланс белого</string>
-    <string name="Title_common">Общий</string>
+    <string name="Title_common">Стандартное</string>
     <string name="Title_front">Фронтальная камера</string>
     <string name="Title_rear">Основная камера</string>
     <string name="Title_rear_lens_distortion_correction">Коррекция формы</string>
@@ -392,7 +394,10 @@
     <string name="guideline_square">Квадрат</string>
     <string name="help_change_mode_tip_1">Проведите вправо, чтобы просмотреть доступные режимы камеры.</string>
     <string name="help_change_mode_tip_2">Выберите желаемый режим.</string>
+    <string name="help_change_mode_tip_3">В простом режиме камеры доступны только автоматическая съемка и селфи.</string>
     <string name="help_changing_the_camera_mode">Выбор режимов камеры</string>
+    <string name="help_changing_the_camera_mode_header">Выбор режима камеры</string>
+    <string name="help_changing_the_camera_mode_title">Изменение режима камеры</string>
     <string name="help_recording_videos">Запись видео</string>
     <string name="help_recording_videos_tip_1">Нажмите значок %s.</string>
     <string name="help_recording_videos_tip_1_tts">Нажмите кнопку видеокамеры.</string>
@@ -400,7 +405,7 @@
     <string name="help_recording_videos_tip_2_tts">Нажмите кнопку остановки, чтобы остановить запись.</string>
     <string name="help_recording_videos_tip_snapshot">Нажмите %s, чтобы делать снимки во время записи видео.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Чтобы делать снимки во время записи видео, нажмите кнопку камеры.</string>
-    <string name="help_section_summary">Съемка видео и фотографий с различными эффектами для любых ситуаций. В простом режиме доступны только автоматическая съемка и селфи, а применение эффектов невозможно.</string>
+    <string name="help_section_summary">Съемка видео и фотографий с различными эффектами для любых ситуаций.</string>
     <string name="help_selecting_camera_mode">Выбор режимов камеры</string>
     <string name="help_taking_pictures">Фотосъемка</string>
     <string name="help_taking_pictures_tip_1">Нажмите объект для фокусировки.</string>
@@ -415,6 +420,7 @@
     <string name="help_text_wideselfie">Нажмите кнопку камеры и медленно поверните устройство в одном направлении.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Нажмите %s, чтобы просмотреть фотографию или видео сразу после съемки.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Нажмите кнопку быстрого просмотра, чтобы просмотреть фотографию или видео сразу после съемки.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Просмотр изображений и видео</string>
     <string name="high_resolution_video_description">При записи с разрешением %s будут недоступны следующие функции:</string>
     <string name="highlight">Подсветка</string>

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/CameraDialog;
 
     .prologue
-    .line 707
+    .line 731
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$8;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "checked"    # Z
 
     .prologue
-    .line 710
+    .line 734
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$8;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -63,10 +63,10 @@
     :goto_0
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->savePreferences(Landroid/content/Context;Ljava/lang/String;Z)V
 
-    .line 711
+    .line 735
     return-void
 
-    .line 710
+    .line 734
     :cond_0
     const/4 v0, 0x0
 

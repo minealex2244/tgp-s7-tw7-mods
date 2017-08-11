@@ -146,7 +146,7 @@
     invoke-direct {p0, v0, v2, v2}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 54
-    const v0, 0x7f0b00bc
+    const v0, 0x7f0b00bd
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -157,7 +157,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/RectHandler;->BOUND_RECT_THICKNESS:I
 
     .line 55
-    const v0, 0x7f0b00bd
+    const v0, 0x7f0b00be
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -168,7 +168,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/RectHandler;->OUTER_BOUND_RECT_THICKNESS:I
 
     .line 56
-    const v0, 0x7f0b00bf
+    const v0, 0x7f0b00c0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/RectHandler;->RESIZE_HANDLE_SIZE:I
 
     .line 57
-    const v0, 0x7f0b00be
+    const v0, 0x7f0b00bf
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

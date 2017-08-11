@@ -604,7 +604,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0108
+    const v4, 0x7f0b0109
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -627,7 +627,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f02022a
+    const v4, 0x7f020229
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -907,7 +907,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0216
+    const v2, 0x7f0a021c
 
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1068,7 +1068,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0a01d0
+    const v1, 0x7f0a01d6
 
     const/4 v2, 0x1
 
@@ -1078,7 +1078,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0216
+    const v4, 0x7f0a021c
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1136,7 +1136,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0216
+    const v2, 0x7f0a021c
 
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -1668,7 +1668,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a01d0
+    const v3, 0x7f0a01d6
 
     new-array v4, v8, [Ljava/lang/Object;
 
@@ -1676,7 +1676,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0a0216
+    const v6, 0x7f0a021c
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -80,7 +80,7 @@
     .prologue
     const/4 v13, 0x0
 
-    const v12, 0x7f0b01ac
+    const v12, 0x7f0b01ad
 
     const/4 v3, 0x1
 
@@ -101,7 +101,7 @@
 
     .line 148
     .local v11, "savedPos":I
-    const v1, 0x7f0a00f3
+    const v1, 0x7f0a00f5
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/TimerSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -153,7 +153,7 @@
     invoke-virtual {v10, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 156
-    const v1, 0x7f100041
+    const v1, 0x7f100043
 
     invoke-virtual {v10, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -166,12 +166,12 @@
     .line 157
     iget-object v1, p0, Lcom/sec/android/app/camera/setting/TimerSettingFragment;->mIntervalTextView:Landroid/widget/TextView;
 
-    const v4, 0x7f0a00bf
+    const v4, 0x7f0a00c1
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 158
-    const v1, 0x7f100042
+    const v1, 0x7f100044
 
     invoke-virtual {v10, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -188,7 +188,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a01ab
+    const v5, 0x7f0a01b1
 
     new-array v6, v3, [Ljava/lang/Object;
 
@@ -220,7 +220,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 161
-    const v1, 0x7f100043
+    const v1, 0x7f100045
 
     invoke-virtual {v10, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -651,7 +651,7 @@
 
     move-result v0
 
-    const v1, 0x7f100040
+    const v1, 0x7f100042
 
     if-ne v0, v1, :cond_0
 
@@ -812,7 +812,7 @@
     .line 136
     :cond_4
     :goto_2
-    const v1, 0x7f0a0216
+    const v1, 0x7f0a021c
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/TimerSettingFragment;->getString(I)Ljava/lang/String;
 

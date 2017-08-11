@@ -25,7 +25,7 @@
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
-    .line 649
+    .line 642
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$9;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -42,7 +42,7 @@
     .prologue
     const/16 v4, 0x7f
 
-    .line 652
+    .line 645
     const-string v1, "Camera6"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -65,7 +65,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 653
+    .line 646
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$9;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
@@ -88,7 +88,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 654
+    .line 647
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$9;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
@@ -102,11 +102,11 @@
 
     check-cast v0, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
 
-    .line 655
+    .line 648
     .local v0, "effectThumbnailListMenu":Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;->refreshEffectListMenu()V
 
-    .line 657
+    .line 650
     .end local v0    # "effectThumbnailListMenu":Lcom/sec/android/app/camera/menu/EffectThumbnailListMenu;
     :cond_0
     return-void

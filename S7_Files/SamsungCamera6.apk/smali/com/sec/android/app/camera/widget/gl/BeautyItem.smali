@@ -75,7 +75,7 @@
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 43
-    const v0, 0x7f0b026f
+    const v0, 0x7f0b0270
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -84,7 +84,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->BEAUTY_MODE_TITLE_WIDTH:F
 
     .line 44
-    const v0, 0x7f0b026e
+    const v0, 0x7f0b026f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -93,7 +93,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->BEAUTY_MODE_TITLE_HEIGHT:F
 
     .line 45
-    const v0, 0x7f0b0271
+    const v0, 0x7f0b0272
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -102,7 +102,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->BEAUTY_MODE_TITLE_POS_X:F
 
     .line 46
-    const v0, 0x7f0b0272
+    const v0, 0x7f0b0273
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -111,7 +111,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->BEAUTY_MODE_TITLE_POS_Y:F
 
     .line 47
-    const v0, 0x7f0b0270
+    const v0, 0x7f0b0271
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -120,7 +120,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->BEAUTY_MODE_TITLE_FONT_SIZE:F
 
     .line 48
-    const v0, 0x7f0b0273
+    const v0, 0x7f0b0274
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -129,7 +129,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->BEAUTY_MODE_TITLE_SMALL_FONT_SIZE:F
 
     .line 49
-    const v0, 0x7f0b0267
+    const v0, 0x7f0b0268
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -140,7 +140,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->BEAUTY_MODE_ITEM_WIDTH:I
 
     .line 50
-    const v0, 0x7f0b0266
+    const v0, 0x7f0b0267
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

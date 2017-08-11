@@ -33,17 +33,17 @@
     .param p1, "beautySlider"    # Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     .prologue
-    .line 468
+    .line 471
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 469
+    .line 472
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$BeautySliderHandler;->mBeautySlider:Ljava/lang/ref/WeakReference;
 
-    .line 470
+    .line 473
     return-void
 .end method
 
@@ -54,7 +54,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 474
+    .line 477
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$BeautySliderHandler;->mBeautySlider:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -63,15 +63,15 @@
 
     check-cast v0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
-    .line 475
+    .line 478
     .local v0, "beautySlider":Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
     if-nez v0, :cond_0
 
-    .line 486
+    .line 489
     :goto_0
     return-void
 
-    .line 478
+    .line 481
     :cond_0
     iget v1, p1, Landroid/os/Message;->what:I
 
@@ -79,17 +79,17 @@
 
     goto :goto_0
 
-    .line 480
+    .line 483
     :pswitch_0
     # invokes: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->stopSliderMenuTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->access$500(Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;)V
 
-    .line 481
+    .line 484
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->hideMenu()V
 
     goto :goto_0
 
-    .line 478
+    .line 481
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

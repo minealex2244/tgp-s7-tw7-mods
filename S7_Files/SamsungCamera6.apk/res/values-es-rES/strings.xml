@@ -190,6 +190,8 @@ Foto en movimiento: captura una sensación de movimiento al sacar fotos de objet
     <string name="SM_SLOW_VIDEO_description">Grabe vídeos a una frecuencia alta para verlos a cámara lenta. Puede reproducir una sección específica de cada vídeo a cámara lenta después de grabarlos.</string>
     <string name="SM_SMART_SELFSHOT">Aviso selfie</string>
     <string name="SM_SMART_SELFSHOT_description">La cámara trasera detectará y enfocará su cara automáticamente al hacer selfies.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Haz fotos y compártelas fácilmente en las redes sociales.</string>
     <string name="SM_SPORTS">Deportes</string>
     <string name="SM_SPORTS_SCENE_description">Saque fotos más claras de objetos en movimiento rápido.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -199,7 +201,7 @@ Foto en movimiento: captura una sensación de movimiento al sacar fotos de objet
     <string name="SS_EDIT_TEXT">Editar texto</string>
     <string name="S_DEVICE">Dispositivo</string>
     <string name="S_MMC">Tarjeta SD</string>
-    <string name="Selective_Focus_Helptext">Pulse un objeto a menos de 50 cm de distancia para enfocarlo y, a continuación, pulse el botón de la Cámara para sacar una foto.</string>
+    <string name="Selective_Focus_Helptext">Pulsa un objeto a menos de 50 cm de distancia para enfocarlo y, a continuación, pulsa el botón Cámara para sacar una foto.</string>
     <string name="T_FIVE">5 seg</string>
     <string name="T_INTERVAL">Capturar 3 imágenes</string>
     <string name="T_TEN">10 seg</string>
@@ -261,7 +263,7 @@ Foto en movimiento: captura una sensación de movimiento al sacar fotos de objet
     <string name="Title_Viewmode">Pantalla completa (16:9)</string>
     <string name="Title_Voice_Capture">Control de voz</string>
     <string name="Title_Voice_guide">Guía de voz</string>
-    <string name="Title_Volume_Key_As">Función de tecla de volumen</string>
+    <string name="Title_Volume_Key_As">Función botón Volumen</string>
     <string name="Title_WhiteBalance">Balance de blancos</string>
     <string name="Title_common">Común</string>
     <string name="Title_front">Cámara frontal</string>
@@ -393,7 +395,10 @@ de forma"</string>
     <string name="guideline_square">Cuadrado</string>
     <string name="help_change_mode_tip_1">Deslice la pantalla hacia la derecha para ver los modos de cámara disponibles.</string>
     <string name="help_change_mode_tip_2">Seleccione el modo que desea utilizar.</string>
+    <string name="help_change_mode_tip_3">Los modos Automático y Selfie de la cámara solo están disponibles cuando el modo Sencillo está activado.</string>
     <string name="help_changing_the_camera_mode">Selección de modos de cámara</string>
+    <string name="help_changing_the_camera_mode_header">Seleccionar un modo de cámara</string>
+    <string name="help_changing_the_camera_mode_title">Cambiar el modo de cámara</string>
     <string name="help_recording_videos">Grabación de vídeos</string>
     <string name="help_recording_videos_tip_1">Pulse %s.</string>
     <string name="help_recording_videos_tip_1_tts">Pulse el botón de la videocámara.</string>
@@ -401,7 +406,7 @@ de forma"</string>
     <string name="help_recording_videos_tip_2_tts">Pulse el botón detener para detener la grabación.</string>
     <string name="help_recording_videos_tip_snapshot">Pulse %s para hacer fotos mientras graba un vídeo.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Pulse el botón de la cámara para hacer fotos mientras graba un vídeo.</string>
-    <string name="help_section_summary">Saque fotos o grabe vídeos usando una variedad de efectos diferentes adecuados para cada ocasión. Cuando el modo Sencillo está activado, solo están disponibles los modos de cámara Auto y Selfie y no se pueden aplicar efectos.</string>
+    <string name="help_section_summary">Saque fotos o grabe vídeos utilizando diversos efectos que se adaptan a todas las circunstancias.</string>
     <string name="help_selecting_camera_mode">Selección de modos de cámara</string>
     <string name="help_taking_pictures">Sacar fotos</string>
     <string name="help_taking_pictures_tip_1">Pulse el objeto que desea enfocar.</string>
@@ -416,6 +421,7 @@ de forma"</string>
     <string name="help_text_wideselfie">Pulse el botón Cámara y gire su dispositivo lentamente en una dirección.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Pulse %s para ver sus fotos o vídeos justo después de capturarlos o grabarlos.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Pulse el botón de vista rápida para ver sus fotos o vídeos justo después de hacerlos.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Visualización de fotos y vídeos</string>
     <string name="high_resolution_video_description">Las siguientes funciones no estarán disponibles durante la grabación en resoluciones %s:</string>
     <string name="highlight">Destacados</string>
@@ -437,7 +443,7 @@ de forma"</string>
     <string name="interactive_error_capture_warning">Se han guardado las fotos que se sacaron en la dirección correcta.</string>
     <string name="interactive_error_device_not_moved">No se puede sacar el disparo virtual. El dispositivo no se ha movido.</string>
     <string name="interactive_error_not_enough_frames">No se puede guardar el disparo virtual. No hay fotos suficientes.</string>
-    <string name="interactive_helptext">Pulse el botón Cámara y, a continuación, rodee un objeto mientras lo mantiene en encuadrado.</string>
+    <string name="interactive_helptext">Pulsa el botón Cámara y, a continuación, rodea un objeto mientras lo mantienes encuadrado.</string>
     <string name="interval_summary">Saque %d fotos seguidas cuando la cuenta atrás llegue a cero. Esta función solo se puede usar con los modos Automático, Pro y Selfie de la cámara.</string>
     <string name="invalid_device_version_title">Actualizar cámara</string>
     <string name="invalid_shooting_mode_version_title">Actualizar modo de cámara</string>
@@ -477,7 +483,7 @@ de forma"</string>
     <string name="not_enough_space">No hay suficiente memoria</string>
     <string name="not_support_shootingmode_in_multiwindow">No se puede usar %s en la vista Multiwindow.</string>
     <string name="not_supported_zoom_toast_popup">En este modo, no se puede ampliar ni reducir</string>
-    <string name="okay">OK</string>
+    <string name="okay">Aceptar</string>
     <string name="open_hw_failed_msg">Error de la cámara</string>
     <string name="palm_capture_help_mag">Levante la mano con la palma mirando hacia la cámara para sacarse una foto tras unos segundos.</string>
     <string name="palmcapture_title">Sacar selfies fácilmente</string>

@@ -242,7 +242,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->LIST_ITEM_WIDTH:I
 
     .line 61
-    const v2, 0x7f0b00a9
+    const v2, 0x7f0b00aa
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -255,7 +255,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->LIST_MENU_EDIT_TYPE_BOTTOM_MARGIN:I
 
     .line 62
-    const v2, 0x7f0b00aa
+    const v2, 0x7f0b00ab
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -437,7 +437,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->BUTTON_TEXT_POSITION:I
 
     .line 76
-    const v2, 0x7f0b00b0
+    const v2, 0x7f0b00b1
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -450,7 +450,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->SLIDE_SIDE_PADDING:I
 
     .line 77
-    const v2, 0x7f0b00b1
+    const v2, 0x7f0b00b2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -493,7 +493,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->SLIDE_POS_X:I
 
     .line 80
-    const v2, 0x7f0b00af
+    const v2, 0x7f0b00b0
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -624,7 +624,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->SLIDE_TOUCH_AREA_HEIGHT:I
 
     .line 87
-    const v2, 0x7f0b00ac
+    const v2, 0x7f0b00ad
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -637,7 +637,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->SLIDE_CENTER_DIVIDER_WIDTH:I
 
     .line 88
-    const v2, 0x7f0b00ab
+    const v2, 0x7f0b00ac
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -927,7 +927,7 @@
 
     int-to-float v7, v7
 
-    const v8, 0x7f0202cd
+    const v8, 0x7f0202cc
 
     const/4 v9, 0x0
 
@@ -954,7 +954,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01c8
+    const v4, 0x7f0a01ce
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -989,7 +989,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a01f6
+    const v3, 0x7f0a01fc
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1009,7 +1009,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0205
+    const v3, 0x7f0a020b
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1406,7 +1406,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/ProColorTuneSettingMenu;->mBackButton:Lcom/samsung/android/glview/GLButton;
 
-    const v3, 0x7f0202ce
+    const v3, 0x7f0202cd
 
     const/4 v4, 0x0
 
@@ -2056,7 +2056,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0236
+    const v4, 0x7f0a023c
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2074,7 +2074,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a023d
+    const v4, 0x7f0a0243
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2092,7 +2092,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0157
+    const v4, 0x7f0a0159
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2110,7 +2110,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0204
+    const v4, 0x7f0a020a
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2128,7 +2128,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0197
+    const v4, 0x7f0a019d
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2146,7 +2146,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0218
+    const v4, 0x7f0a021e
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2402,7 +2402,7 @@
 
     int-to-float v12, v3
 
-    const v13, 0x7f02018b
+    const v13, 0x7f02018c
 
     move-object/from16 v0, p0
 
@@ -2594,7 +2594,7 @@
 
     int-to-float v12, v2
 
-    const v13, 0x7f02018b
+    const v13, 0x7f02018c
 
     invoke-direct/range {v7 .. v13}, Lcom/samsung/android/glview/GLNinePatch;-><init>(Lcom/samsung/android/glview/GLContext;FFFFI)V
 
@@ -3125,7 +3125,7 @@
 
     move/from16 v18, v0
 
-    const v19, 0x7f02018b
+    const v19, 0x7f02018c
 
     move-object/from16 v0, p0
 

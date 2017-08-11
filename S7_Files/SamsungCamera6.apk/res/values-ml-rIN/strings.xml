@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">സ്ലോ മോഷനിൽ കാണുന്നതിനായി ഉയർന്ന ഫ്രെയിം റേറ്റിൽ വീഡിയോകൾ റെക്കോർഡ് ചെയ്യുക. ഓരോ വീഡിയോയും റെക്കോർഡ് ചെയ്ത ശേഷം അവയിലെ ഒരു നിശ്ചിത വിഭാഗത്തെ സ്ലോ മോഷനിൽ നിങ്ങൾക്ക് പ്ലേ ചെയ്യാവുന്നതാണ്.</string>
     <string name="SM_SMART_SELFSHOT">പിൻ-ക്യാമറ സെൽഫി</string>
     <string name="SM_SMART_SELFSHOT_description">നിങ്ങൾ സ്വഛായാചിത്രങ്ങൾ എടുക്കുമ്പോൾ പിൻവശ ക്യാമറ ഓട്ടോമാറ്റിക്കായി നിങ്ങളുടെ മുഖം കണ്ടെത്തി ഫോക്കസ് ചെയ്യും.</string>
+    <string name="SM_SOCIAL">സോഷ്യൽ</string>
+    <string name="SM_SOCIAL_description">ചിത്രങ്ങൾ എടുക്കുക, സോഷ്യൽ നെറ്റ്‌വർക്കുകളിൽ അവ എളുപ്പത്തിൽ പങ്കിടുക.</string>
     <string name="SM_SPORTS">സ്പോര്‍ട്സ്</string>
     <string name="SM_SPORTS_SCENE_description">വേഗത്തിൽ ചലിക്കുന്ന വസ്തുക്കളുടെ വ്യക്തമായ ചിത്രങ്ങൾ എടുക്കുക.</string>
     <string name="SM_STORY">സൗണ്ട് &amp; ഷോട്ട്</string>
@@ -261,9 +263,9 @@
     <string name="Title_Viewmode">പൂർണ്ണ സ്ക്രീൻ കാഴ്ച (16:9)</string>
     <string name="Title_Voice_Capture">ശബ്ദ നിയന്ത്രണം</string>
     <string name="Title_Voice_guide">വോയ്സ് ഗൈഡ്</string>
-    <string name="Title_Volume_Key_As">വോളിയം കീ പ്രവര്‍ത്തനം</string>
+    <string name="Title_Volume_Key_As">വോളിയം കീ പ്രവർത്തനം</string>
     <string name="Title_WhiteBalance">വൈറ്റ് ബാലന്‍സ്</string>
-    <string name="Title_common">പൊതുവായവ</string>
+    <string name="Title_common">പൊതുവായത്</string>
     <string name="Title_front">മുന്‍‌ഭാഗത്തെ ക്യാമറ</string>
     <string name="Title_rear">പിന്‍‌ഭാഗത്തെ ക്യാമറ</string>
     <string name="Title_rear_lens_distortion_correction">ആകാരം തിരുത്തൽ</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">ചതുരം</string>
     <string name="help_change_mode_tip_1">ലഭ്യമായ ക്യാമറ മോഡുകൾ കാണുന്നതിന് വലത്തോട്ട് സ്വൈപ് ചെയ്യുക.</string>
     <string name="help_change_mode_tip_2">നിങ്ങൾ ഉപയോഗിക്കാൻ ആഗ്രഹിക്കുന്ന മോഡ് തിരഞ്ഞെടുക്കുക.</string>
+    <string name="help_change_mode_tip_3">ഈസി മോഡ് പ്രാപ്തമാക്കിയിരിക്കുന്ന സമയത്ത് ഓട്ടോ, സെൽഫി ക്യാമറ മോഡുകൾ മാത്രമാണ് ലഭ്യമാവുക.</string>
     <string name="help_changing_the_camera_mode">ക്യാമറ മോഡുകൾ തിരഞ്ഞെടുക്കൽ</string>
+    <string name="help_changing_the_camera_mode_header">ക്യാമറാ മോഡ് തിരഞ്ഞെടുക്കൽ</string>
+    <string name="help_changing_the_camera_mode_title">ക്യാമറാ മോഡ് മാറ്റൽ</string>
     <string name="help_recording_videos">വീഡിയോകൾ റെക്കോർഡ് ചെയ്യൽ</string>
     <string name="help_recording_videos_tip_1">%s-ൽ സ്പർശിക്കുക.</string>
     <string name="help_recording_videos_tip_1_tts">കാംകോർഡർ ബട്ടൺ ടാപ്പുചെയ്യുക.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">റെക്കോര്‍ഡിംഗ് നിര്‍ത്തുന്നതിന് നിര്‍ത്തല്‍ ബട്ടണില്‍ ടാപ്പുചെയ്യുക.</string>
     <string name="help_recording_videos_tip_snapshot">വീഡിയോ റെക്കോർഡ് ചെയ്യുന്ന സമയത്ത് ചിത്രങ്ങളെടുക്കുന്നതിന് %s-ൽ സ്പർശിക്കുക.</string>
     <string name="help_recording_videos_tip_snapshot_tts">വീഡിയോ റെക്കോർഡ് ചെയ്യുന്ന സമയത്ത് ചിത്രങ്ങളെടുക്കുന്നതിന് ക്യാമറ ബട്ടണിൽ സ്പർശിക്കുക.</string>
-    <string name="help_section_summary">എല്ലാ അവസരങ്ങൾക്കും യോജിക്കുന്ന വൈവിധ്യമാർന്ന വ്യത്യസ്ത ഇഫക്റ്റുകൾ ഉപയോഗിച്ച് ചിത്രങ്ങളെടുക്കുക അല്ലെങ്കിൽ വീഡിയോകൾ റെക്കോർഡ് ചെയ്യുക. ഈസി മോഡ് പ്രാപ്തമാക്കിയിരിക്കുന്ന സമയത്ത് ഓട്ടോ, സെൽഫി ക്യാമറ മോഡുകൾ മാത്രമാണ് ലഭ്യമാവുക, ഇഫക്റ്റുകളൊന്നും പ്രയോഗിക്കാനാവില്ല.</string>
+    <string name="help_section_summary">എല്ലാ അവസരങ്ങൾക്കും യോജിച്ച, വ്യത്യസ്ത എഫക്റ്റുകളുടെ ശ്രേണി ഉപയോഗിച്ചുകൊണ്ട് ചിത്രങ്ങൾ എടുക്കുക അല്ലെങ്കിൽ വീഡിയോ റെക്കോർഡ് ചെയ്യുക.</string>
     <string name="help_selecting_camera_mode">ക്യാമറ മോഡുകൾ തിരഞ്ഞെടുക്കൽ</string>
     <string name="help_taking_pictures">ചിത്രങ്ങളെടുക്കൽ</string>
     <string name="help_taking_pictures_tip_1">നിങ്ങൾ ഫോക്കസ് ചെയ്യാനാഗ്രഹിക്കുന്ന വസ്തുവിൽ സ്പർശിക്കുക.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">ക്യാമറ ബട്ടണിൽ സ്പർശിച്ച ശേഷം നിങ്ങളുടെ ഉപകരണത്തെ സാവധാനം ഒരു ദിശയിലേക്ക് തിരിക്കുക.</string>
     <string name="help_viewing_pics_and_videos_tip_1">നിങ്ങളുടെ ചിത്രങ്ങളും വീഡിയോകളും എടുത്ത അല്ലെങ്കിൽ റെക്കോർഡ് ചെയ്ത ഉടനെ കാണുന്നതിന് %s-ൽ സ്പർശിക്കുക.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">നിങ്ങളുടെ ചിത്രങ്ങളും വീഡിയോകളും എടുത്ത അല്ലെങ്കിൽ റെക്കോർഡ് ചെയ്ത ഉടനെ കാണുന്നതിന് ദ്രുത കാഴ്ചാ ബട്ടണിൽ സ്പർശിക്കുക.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ചിത്രങ്ങളും വീഡിയോകളും കാണൽ</string>
     <string name="high_resolution_video_description">%s മിഴിവുകളിൽ റെക്കോർഡ് ചെയ്യുമ്പോൾ ഇനിപ്പറയുന്നവ ലഭ്യമാവുന്നതല്ല:</string>
     <string name="highlight">ഹൈലൈറ്റുകള്‍</string>

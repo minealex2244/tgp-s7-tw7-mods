@@ -194,6 +194,8 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="SM_SLOW_VIDEO_description">Spela in videor med hög bildfrekvens för visning i slowmotion. Du kan spela upp en viss del av en video i slowmotion när du har spelat in dem.</string>
     <string name="SM_SMART_SELFSHOT">Selfie med bakre kameran</string>
     <string name="SM_SMART_SELFSHOT_description">Den bakre kameran kommer automatiskt att identifiera och fokusera på ditt ansikte när du tar en självporträttsbild.</string>
+    <string name="SM_SOCIAL">Socialt</string>
+    <string name="SM_SOCIAL_description">Ta bilder och dela dem enkelt på sociala nätverket.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Ta tydligare bilder på motiv som rör sig snabbt.</string>
     <string name="SM_STORY">Ljud &amp; foto</string>
@@ -265,9 +267,9 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="Title_Viewmode">Helskärmsvy (16:9)</string>
     <string name="Title_Voice_Capture">Röststyrning</string>
     <string name="Title_Voice_guide">Röstvägledning</string>
-    <string name="Title_Volume_Key_As">Volymknappens funktion</string>
+    <string name="Title_Volume_Key_As">Volymknappsfunktion</string>
     <string name="Title_WhiteBalance">Vitbalans</string>
-    <string name="Title_common">Allmänt</string>
+    <string name="Title_common">Gemensamt</string>
     <string name="Title_front">Främre kamera</string>
     <string name="Title_rear">Bakre kamera</string>
     <string name="Title_rear_lens_distortion_correction">Formkorrigering</string>
@@ -279,7 +281,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="WB_FLUORESCENT">Lysrör</string>
     <string name="WB_INCANDESCENT">Glödlampa</string>
     <string name="WB_KELVIN">Kelvin</string>
-    <string name="activity_not_found_exception">Inget program för att utföra åtgärden hittades.</string>
+    <string name="activity_not_found_exception">Ingen app för att utföra åtgärden hittades.</string>
     <string name="add_shortcut_on_home_screen">Lägg t. genväg på hemskärmen</string>
     <string name="add_shortcut_on_home_screen_tts">Lägg till genväg på hemskärmen</string>
     <string name="ae_lock">AE-lås</string>
@@ -287,7 +289,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="af_lock">AF-lås</string>
     <string name="alert_title">Varning</string>
     <string name="app_name">Kamera</string>
-    <string name="application_disable_toast_message">Det går inte att öppna %s. Bara program som har lagts till på hemskärmen går att använda i maximalt energisparläge.</string>
+    <string name="application_disable_toast_message">Det går inte att öppna %s. Bara appar som har lagts till på hemskärmen går att använda i maximalt energisparläge.</string>
     <string name="aquashot_helptext">Ta bilder med knappen Aktiv och spela in videor med någon av volymknapparna.</string>
     <string name="battery_low">Stäng Kamera. För låg batteritemperatur.</string>
     <string name="battery_low_connect_charger">Låg batterinivå. Anslut laddaren.</string>
@@ -305,7 +307,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="burst_shots_not_supported">Serietagningar stöds inte i svagt ljus.</string>
     <string name="button">Knapp</string>
     <string name="camcorder_label">Videokamera</string>
-    <string name="camera_busy_msg">Det går inte att använda mer än ett program som använder kameran samtidigt. Kameran kommer att stängas.</string>
+    <string name="camera_busy_msg">Det går inte att använda mer än en app som använder kameran samtidigt. Kameran kommer att stängas.</string>
     <string name="camera_key">Ta bilder</string>
     <string name="camera_label">Kamera</string>
     <string name="camera_modes">Kameralägen</string>
@@ -397,7 +399,10 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="guideline_square">Fyrkant</string>
     <string name="help_change_mode_tip_1">Visa de tillgängliga kameralägena genom att svepa åt höger.</string>
     <string name="help_change_mode_tip_2">Välj det läge som du vill använda.</string>
+    <string name="help_change_mode_tip_3">Bara kameralägena Auto och Selfie är tillgängliga när Enkelt läge är aktiverat.</string>
     <string name="help_changing_the_camera_mode">Välja kameralägen</string>
+    <string name="help_changing_the_camera_mode_header">Välja ett kameraläge</string>
+    <string name="help_changing_the_camera_mode_title">Ändra kameraläget</string>
     <string name="help_recording_videos">Spela in videor</string>
     <string name="help_recording_videos_tip_1">Tryck på %s.</string>
     <string name="help_recording_videos_tip_1_tts">Tryck på videokameraknappen.</string>
@@ -405,7 +410,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="help_recording_videos_tip_2_tts">Tryck på stoppknappen för att avsluta inspelningen.</string>
     <string name="help_recording_videos_tip_snapshot">Tryck på %s för att ta bilder under videoinspelning.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Tryck på kameraknappen för att ta bilder under videoinspelning.</string>
-    <string name="help_section_summary">Ta bilder eller spela in videor med en mängd olika effekter som lämpar sig för olika tillfällen. När Enkelt läge är aktiverat är bara kameralägena Auto och Selfie tillgängliga och inga effekter går att använda.</string>
+    <string name="help_section_summary">Ta bilder eller spela in videor med en mängd olika effekter som passar alla tillfällen.</string>
     <string name="help_selecting_camera_mode">Välja kameralägen</string>
     <string name="help_taking_pictures">Ta bilder</string>
     <string name="help_taking_pictures_tip_1">Tryck på objektet som du vill ska fokuseras.</string>
@@ -420,6 +425,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="help_text_wideselfie">Tryck på kameraknappen och vrid enheten långsamt i en riktning.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Tryck på %s om du vill visa bilder eller videor omedelbart efter att du har tagit eller spelat in dem.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Tryck på snabbvisningsknappen om du vill visa bilder eller videor omedelbart efter att du har tagit eller spelat in dem.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Visa bilder och video</string>
     <string name="high_resolution_video_description">Följande kommer att vara otillgängligt vid inspelning i upplösningar på %s:</string>
     <string name="highlight">Markeringar</string>
@@ -491,7 +497,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="permission_describe">Tillåt vissa av funktionerna i %s att använda nätverskanslutningar och att öppna följande uppgifter:</string>
     <string name="permission_item">Din plats</string>
     <string name="permission_shooting_mode">Kameraläge</string>
-    <string name="permission_title">Tillåta programbehörighet</string>
+    <string name="permission_title">Tillåta appbehörighet</string>
     <string name="picture_format_summary">Spara en komprimerad kopia (JPEG) och en RAW-kopia av varje bild du tar i proffsläget. Det går inte att spara serietagningar som RAW-filer.</string>
     <string name="plugged_low_batt_msg">Det går inte att använda blixt. Låg batterinivå.</string>
     <string name="processing_msg">Bearbetar…</string>
@@ -511,10 +517,10 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="record_key">Sp. in video</string>
     <string name="recording_call_rinning_msg">Inspelningen stoppas och sparas när du svarar på samtal.</string>
     <string name="recording_discard_call_rinning_msg">Om samtalet besvaras ignoreras videocollaget.</string>
-    <string name="recording_fail_lack_of_hw_resource">Videokodeken används för tillfället av andra program. Stäng alla andra aktiva videoprogram i Uppgiftshanteraren och försök igen.</string>
+    <string name="recording_fail_lack_of_hw_resource">Videokodeken används för tillfället av andra appar. Stäng alla andra aktiva videoappar i Uppgiftshanteraren och försök igen.</string>
     <string name="recording_failed_msg">Inspelning misslyckades.</string>
     <string name="recording_using_earphone_mic">Spelar in med hörlursmikrofon</string>
-    <string name="request_runtime_permission_message">Det går inte att öppna %s. Tryck på INSTÄLLNINGAR, öppna Programinfo > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
+    <string name="request_runtime_permission_message">Det går inte att öppna %s. Tryck på INSTÄLLNINGAR, öppna Appinfo > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
     <string name="request_runtime_permission_message_for_location_secure_lock">Det går inte att använda Platstaggar. Lås upp enheten, öppna Kamera och tillåt relevanta behörigheter innan du försöker igen.</string>
     <string name="request_runtime_permission_message_secure_lock">Det går inte att öppna kameran från låsskärmen. Lås upp enheter, öppna kameran och tillåt relevanta behörigheter.</string>
     <string name="reset">Återställ</string>
@@ -529,7 +535,7 @@ Panoreringsbild: Fånga en känsla av rörelse när du tar bilder av motiv som r
     <string name="review_summary_vzw">Granska bilden så fort du tar den.</string>
     <string name="right">Höger</string>
     <string name="right_tts">Höger</string>
-    <string name="runtime_permission_message_for_location">Det går inte att använda %s. Tryck på INSTÄLLNINGAR, öppna Programinfo > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
+    <string name="runtime_permission_message_for_location">Det går inte att använda %s. Tryck på INSTÄLLNINGAR, öppna Appinfo > Behörigheter och tillåt sedan följande behörigheter innan du försöker igen:</string>
     <string name="runtime_permission_secure_lock_in_video_collage">Det går inte att skapa videocollaget. Lås upp enheten och tillåt relevanta behörigheter.</string>
     <string name="saturation">Mättnad</string>
     <string name="save">Spara</string>

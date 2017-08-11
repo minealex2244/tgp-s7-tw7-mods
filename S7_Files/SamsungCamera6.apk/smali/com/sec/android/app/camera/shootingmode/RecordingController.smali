@@ -119,6 +119,8 @@
 
 .field private mPreviousRecordingTime:J
 
+.field private mRecordStopToast:Landroid/widget/Toast;
+
 .field private mRecordingErrorHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;
 
 .field private mRecordingEventHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;
@@ -132,18 +134,18 @@
 
 # direct methods
 .method protected constructor <init>(Lcom/sec/android/app/camera/interfaces/CameraContext;Lcom/sec/android/app/camera/interfaces/CameraSettings;)V
-    .locals 5
+    .locals 6
     .param p1, "cameraContext"    # Lcom/sec/android/app/camera/interfaces/CameraContext;
     .param p2, "cameraSettings"    # Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     .prologue
-    const/4 v4, 0x0
+    const-wide/16 v4, 0x0
 
-    const-wide/16 v2, 0x0
+    const/4 v2, 0x0
 
     const/4 v1, 0x0
 
-    .line 221
+    .line 228
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 101
@@ -157,13 +159,13 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mTickInterval:I
 
     .line 104
-    iput-object v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+    iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     .line 105
-    iput-object v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     .line 106
-    iput-object v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+    iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     .line 111
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->IDLE:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
@@ -171,16 +173,16 @@
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingState:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     .line 114
-    iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingTimeInMilliSecond:J
+    iput-wide v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingTimeInMilliSecond:J
 
     .line 115
-    iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileSize:J
+    iput-wide v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileSize:J
 
     .line 116
-    iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
+    iput-wide v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
 
     .line 117
-    iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mPreviousRecordingTime:J
+    iput-wide v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mPreviousRecordingTime:J
 
     .line 118
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitByStorage:I
@@ -206,20 +208,23 @@
     .line 125
     iput-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByWifiDisplayNotAllowed:Z
 
-    .line 127
+    .line 126
+    iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
+
+    .line 128
     new-instance v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$1;-><init>(Lcom/sec/android/app/camera/shootingmode/RecordingController;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 222
+    .line 229
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 223
+    .line 230
     iput-object p2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 224
+    .line 231
     return-void
 .end method
 
@@ -258,7 +263,7 @@
     return-void
 .end method
 
-.method static synthetic access$1100(Lcom/sec/android/app/camera/shootingmode/RecordingController;)V
+.method static synthetic access$1300(Lcom/sec/android/app/camera/shootingmode/RecordingController;)V
     .locals 0
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/RecordingController;
 
@@ -316,7 +321,43 @@
     return-void
 .end method
 
-.method static synthetic access$502(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
+.method static synthetic access$500(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Z
+    .locals 1
+    .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/RecordingController;
+
+    .prologue
+    .line 56
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->isShowingRecordStopToast()Z
+
+    move-result v0
+
+    return v0
+.end method
+
+.method static synthetic access$600(Lcom/sec/android/app/camera/shootingmode/RecordingController;)Landroid/widget/Toast;
+    .locals 1
+    .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/RecordingController;
+
+    .prologue
+    .line 56
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
+
+    return-object v0
+.end method
+
+.method static synthetic access$602(Lcom/sec/android/app/camera/shootingmode/RecordingController;Landroid/widget/Toast;)Landroid/widget/Toast;
+    .locals 0
+    .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/RecordingController;
+    .param p1, "x1"    # Landroid/widget/Toast;
+
+    .prologue
+    .line 56
+    iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
+
+    return-object p1
+.end method
+
+.method static synthetic access$702(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
     .locals 0
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/RecordingController;
     .param p1, "x1"    # Z
@@ -328,7 +369,7 @@
     return p1
 .end method
 
-.method static synthetic access$602(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
+.method static synthetic access$802(Lcom/sec/android/app/camera/shootingmode/RecordingController;Z)Z
     .locals 0
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/RecordingController;
     .param p1, "x1"    # Z
@@ -340,7 +381,7 @@
     return p1
 .end method
 
-.method static synthetic access$700(Lcom/sec/android/app/camera/shootingmode/RecordingController;I)V
+.method static synthetic access$900(Lcom/sec/android/app/camera/shootingmode/RecordingController;I)V
     .locals 0
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/RecordingController;
     .param p1, "x1"    # I
@@ -358,7 +399,7 @@
     .prologue
     const-wide/16 v4, 0x3e8
 
-    .line 850
+    .line 863
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getTotalRecordingTime()J
 
     move-result-wide v0
@@ -375,7 +416,7 @@
 
     if-gez v0, :cond_0
 
-    .line 851
+    .line 864
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getTotalRecordingTime()J
 
     move-result-wide v0
@@ -390,7 +431,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 853
+    .line 866
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getTotalRecordingTime()J
 
@@ -398,14 +439,14 @@
 
     iput-wide v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingTimeInMilliSecond:J
 
-    .line 854
+    .line 867
     iget-wide v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingTimeInMilliSecond:J
 
     iget-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileSize:J
 
     invoke-virtual {p0, v0, v1, v2, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingTick(JJ)V
 
-    .line 856
+    .line 869
     :cond_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
@@ -423,13 +464,13 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 857
+    .line 870
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     if-eqz v0, :cond_3
 
-    .line 858
+    .line 871
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     const/4 v1, 0x1
@@ -438,7 +479,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 861
+    .line 874
     :cond_3
     return-void
 .end method
@@ -450,7 +491,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 864
+    .line 877
     const-string v0, "RecordingController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -473,16 +514,16 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 865
+    .line 878
     packed-switch p1, :pswitch_data_0
 
-    .line 902
+    .line 915
     :cond_0
     :goto_0
     :pswitch_0
     return-void
 
-    .line 868
+    .line 881
     :pswitch_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
@@ -500,28 +541,28 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 869
+    .line 882
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->cancelRecording()V
 
-    .line 871
+    .line 884
     :cond_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->unregisterRecordingController()V
 
     goto :goto_0
 
-    .line 874
+    .line 887
     :pswitch_2
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByWifiDisplayNotAllowed:Z
 
     if-eqz v0, :cond_3
 
-    .line 875
+    .line 888
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByWifiDisplayNotAllowed:Z
 
-    .line 876
+    .line 889
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByVideoCapability:Z
 
-    .line 877
+    .line 890
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getActivity()Landroid/app/Activity;
@@ -534,7 +575,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 878
+    .line 891
     const-string v0, "RecordingController"
 
     const-string v1, "Return, camera is finishing"
@@ -543,7 +584,7 @@
 
     goto :goto_0
 
-    .line 881
+    .line 894
     :cond_2
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
@@ -561,21 +602,21 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 882
+    .line 895
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->cancelRecording()V
 
     goto :goto_0
 
-    .line 884
+    .line 897
     :cond_3
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByVideoCapability:Z
 
     if-eqz v0, :cond_6
 
-    .line 885
+    .line 898
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByVideoCapability:Z
 
-    .line 886
+    .line 899
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getActivity()Landroid/app/Activity;
@@ -588,7 +629,7 @@
 
     if-eqz v0, :cond_4
 
-    .line 887
+    .line 900
     const-string v0, "RecordingController"
 
     const-string v1, "Return, camera is finishing"
@@ -597,7 +638,7 @@
 
     goto :goto_0
 
-    .line 890
+    .line 903
     :cond_4
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
@@ -615,10 +656,10 @@
 
     if-eq v0, v1, :cond_5
 
-    .line 891
+    .line 904
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->cancelRecording()V
 
-    .line 893
+    .line 906
     :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -630,7 +671,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a027a
+    const v3, 0x7f0a0280
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -638,23 +679,23 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 894
+    .line 907
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    const v4, 0x7f0a01f0
+    const v4, 0x7f0a01f6
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 893
+    .line 906
     invoke-interface {v0, v1, v2, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showCameraDialog(ILjava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_0
 
-    .line 896
+    .line 909
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -664,7 +705,7 @@
 
     goto/16 :goto_0
 
-    .line 865
+    .line 878
     :pswitch_data_0
     .packed-switch -0xf
         :pswitch_1
@@ -674,17 +715,58 @@
     .end packed-switch
 .end method
 
+.method private isShowingRecordStopToast()Z
+    .locals 1
+
+    .prologue
+    .line 798
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
+
+    invoke-virtual {v0}, Landroid/widget/Toast;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
+
+    invoke-virtual {v0}, Landroid/widget/Toast;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/View;->isShown()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
 .method private restrictRecording(Z)V
     .locals 1
     .param p1, "isRestricted"    # Z
 
     .prologue
-    .line 917
+    .line 930
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->restrictRecording(ZZ)V
 
-    .line 918
+    .line 931
     return-void
 .end method
 
@@ -696,27 +778,27 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 905
+    .line 918
     if-eqz p1, :cond_1
 
-    .line 906
+    .line 919
     const-string v0, "RecordingController"
 
     const-string v1, "restrictRecording : true"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 907
+    .line 920
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0, p2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingRestricted(ZZ)V
 
-    .line 914
+    .line 927
     :cond_0
     :goto_0
     return-void
 
-    .line 909
+    .line 922
     :cond_1
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
 
@@ -726,14 +808,14 @@
 
     if-nez v0, :cond_0
 
-    .line 910
+    .line 923
     const-string v0, "RecordingController"
 
     const-string v1, "restrictRecording : false"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 911
+    .line 924
     invoke-virtual {p0, v2, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingRestricted(ZZ)V
 
     goto :goto_0
@@ -743,12 +825,12 @@
     .locals 4
 
     .prologue
-    .line 921
+    .line 934
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->stopInactivityTimer()V
 
-    .line 922
+    .line 935
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getTotalRecordingTime()J
 
     move-result-wide v0
@@ -757,7 +839,7 @@
 
     invoke-virtual {p0, v0, v1, v2, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingTick(JJ)V
 
-    .line 923
+    .line 936
     return-void
 .end method
 
@@ -767,10 +849,10 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 926
+    .line 939
     const/4 v0, -0x1
 
-    .line 927
+    .line 940
     .local v0, "minimumRecordingTime":I
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -780,39 +862,39 @@
 
     if-lez v1, :cond_0
 
-    .line 928
+    .line 941
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getRequestedRecordingDurationLimit()I
 
     move-result v0
 
-    .line 931
+    .line 944
     :cond_0
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingTimeLimitedBySystem:Z
 
     if-eqz v1, :cond_1
 
-    .line 932
+    .line 945
     if-ne v0, v2, :cond_3
 
-    .line 933
+    .line 946
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitBySystem:I
 
-    .line 939
+    .line 952
     :cond_1
     :goto_0
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingTimeLimitedByLowStorage:Z
 
     if-eqz v1, :cond_2
 
-    .line 940
+    .line 953
     if-ne v0, v2, :cond_4
 
-    .line 941
+    .line 954
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitByStorage:I
 
-    .line 947
+    .line 960
     :cond_2
     :goto_1
     const-string v1, "RecordingController"
@@ -837,30 +919,30 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 948
+    .line 961
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitInSecond:I
 
-    .line 949
+    .line 962
     return-void
 
-    .line 934
+    .line 947
     :cond_3
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitBySystem:I
 
     if-ge v1, v0, :cond_1
 
-    .line 935
+    .line 948
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitBySystem:I
 
     goto :goto_0
 
-    .line 942
+    .line 955
     :cond_4
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitByStorage:I
 
     if-ge v1, v0, :cond_2
 
-    .line 943
+    .line 956
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitByStorage:I
 
     goto :goto_1
@@ -875,7 +957,7 @@
     .locals 3
 
     .prologue
-    .line 556
+    .line 563
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getRemainRecordingTime()I
@@ -884,7 +966,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitByStorage:I
 
-    .line 557
+    .line 564
     const-string v0, "RecordingController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -909,26 +991,26 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 559
+    .line 566
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitByStorage:I
 
     const/16 v1, 0xe10
 
     if-ge v0, v1, :cond_0
 
-    .line 560
+    .line 567
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingTimeLimitedByLowStorage:Z
 
-    .line 564
+    .line 571
     :goto_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->updateMaxRecordingTimeLimit()V
 
-    .line 565
+    .line 572
     return-void
 
-    .line 562
+    .line 569
     :cond_0
     const/4 v0, 0x0
 
@@ -941,7 +1023,7 @@
     .locals 1
 
     .prologue
-    .line 573
+    .line 580
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->needToResizeForCamcorderPreviewAspectRatio()Z
@@ -958,11 +1040,11 @@
 
     if-nez v0, :cond_0
 
-    .line 578
+    .line 585
     :goto_0
     return-void
 
-    .line 577
+    .line 584
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -975,7 +1057,7 @@
     .locals 2
 
     .prologue
-    .line 581
+    .line 588
     iget-wide v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileSize:J
 
     return-wide v0
@@ -985,7 +1067,7 @@
     .locals 4
 
     .prologue
-    .line 585
+    .line 592
     iget-wide v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
 
     const-wide/16 v2, 0x3e8
@@ -999,7 +1081,7 @@
     .locals 1
 
     .prologue
-    .line 595
+    .line 602
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingState:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     return-object v0
@@ -1009,7 +1091,7 @@
     .locals 4
 
     .prologue
-    .line 611
+    .line 618
     iget-wide v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mPreviousRecordingTime:J
 
     iget-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
@@ -1023,7 +1105,7 @@
     .locals 2
 
     .prologue
-    .line 621
+    .line 628
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingState:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     sget-object v1, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->RECORD_STARTING:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
@@ -1036,11 +1118,11 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 622
+    .line 629
     :cond_0
     const/4 v0, 0x0
 
-    .line 624
+    .line 631
     :goto_0
     return v0
 
@@ -1056,7 +1138,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 634
+    .line 641
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
 
     if-nez v1, :cond_0
@@ -1069,7 +1151,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 635
+    .line 642
     :cond_0
     const-string v1, "RecordingController"
 
@@ -1077,11 +1159,11 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 642
+    .line 649
     :goto_0
     return v0
 
-    .line 638
+    .line 645
     :cond_1
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByCallState:Z
 
@@ -1095,7 +1177,7 @@
 
     if-ne v1, v0, :cond_3
 
-    .line 639
+    .line 646
     :cond_2
     const-string v1, "RecordingController"
 
@@ -1145,7 +1227,7 @@
 
     goto :goto_0
 
-    .line 642
+    .line 649
     :cond_3
     const/4 v0, 0x0
 
@@ -1158,7 +1240,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 653
+    .line 660
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getRequestedRecordingDurationLimit()I
@@ -1167,24 +1249,24 @@
 
     if-lez v1, :cond_0
 
-    .line 654
+    .line 661
     const-string v1, "RecordingController"
 
     const-string v2, "RecordingTimeLimited - requested recording duration limit"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 665
+    .line 672
     :goto_0
     return v0
 
-    .line 657
+    .line 664
     :cond_0
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingTimeLimitedBySystem:Z
 
     if-eqz v1, :cond_1
 
-    .line 658
+    .line 665
     const-string v1, "RecordingController"
 
     const-string v2, "RecordingTimeLimited - system limitation"
@@ -1193,13 +1275,13 @@
 
     goto :goto_0
 
-    .line 661
+    .line 668
     :cond_1
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingTimeLimitedByLowStorage:Z
 
     if-eqz v1, :cond_2
 
-    .line 662
+    .line 669
     const-string v1, "RecordingController"
 
     const-string v2, "RecordingTimeLimited - low storage"
@@ -1208,7 +1290,7 @@
 
     goto :goto_0
 
-    .line 665
+    .line 672
     :cond_2
     const/4 v0, 0x0
 
@@ -1219,7 +1301,7 @@
     .locals 1
 
     .prologue
-    .line 675
+    .line 682
     const/4 v0, 0x0
 
     return v0
@@ -1233,18 +1315,18 @@
     .param p1, "second"    # I
 
     .prologue
-    .line 686
+    .line 693
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingTimeLimitedBySystem:Z
 
-    .line 687
+    .line 694
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitBySystem:I
 
-    .line 688
+    .line 695
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->updateMaxRecordingTimeLimit()V
 
-    .line 689
+    .line 696
     return-void
 .end method
 
@@ -1253,7 +1335,7 @@
     .param p1, "parameters"    # Lcom/samsung/android/camera/core/SemCamera$Parameters;
 
     .prologue
-    .line 228
+    .line 235
     sget-boolean v5, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_SNAPSHOT:Z
 
     if-eqz v5, :cond_0
@@ -1264,25 +1346,25 @@
 
     if-eqz v5, :cond_0
 
-    .line 230
+    .line 237
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCamcorderResolution()I
 
     move-result v0
 
-    .line 232
+    .line 239
     .local v0, "camcorderResolutionId":I
     sparse-switch v0, :sswitch_data_0
 
-    .line 362
+    .line 369
     const-string v5, "RecordingController"
 
     const-string v6, "Wrong camcorder resolution id"
 
     invoke-static {v5, v6}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 363
+    .line 370
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
@@ -1291,14 +1373,14 @@
 
     if-nez v5, :cond_f
 
-    .line 364
+    .line 371
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X480_PICTURE_WIDTH:I
 
-    .line 365
+    .line 372
     .local v2, "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X480_PICTURE_HEIGHT:I
 
-    .line 373
+    .line 380
     .local v1, "pictureHeight":I
     :goto_0
     const-string v5, "RecordingController"
@@ -1333,15 +1415,15 @@
 
     invoke-static {v5, v6}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 374
+    .line 381
     invoke-virtual {p1, v2, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPictureSize(II)V
 
-    .line 376
+    .line 383
     invoke-virtual {p1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->getSupportedJpegThumbnailSizes()Ljava/util/List;
 
     move-result-object v4
 
-    .line 377
+    .line 384
     .local v4, "thumbnailSizes":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/camera/core/SemCamera$Size;>;"
     if-eqz v4, :cond_0
 
@@ -1353,10 +1435,10 @@
 
     if-le v5, v6, :cond_0
 
-    .line 378
+    .line 385
     const/4 v3, 0x0
 
-    .line 379
+    .line 386
     .local v3, "thumbnaiSize":Lcom/samsung/android/camera/core/SemCamera$Size;
     invoke-virtual {p1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->getPreviewSize()Lcom/samsung/android/camera/core/SemCamera$Size;
 
@@ -1374,17 +1456,17 @@
 
     move-result-object v3
 
-    .line 380
+    .line 387
     if-eqz v3, :cond_0
 
-    .line 381
+    .line 388
     iget v5, v3, Lcom/samsung/android/camera/core/SemCamera$Size;->width:I
 
     iget v6, v3, Lcom/samsung/android/camera/core/SemCamera$Size;->height:I
 
     invoke-virtual {p1, v5, v6}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setJpegThumbnailSize(II)V
 
-    .line 384
+    .line 391
     .end local v0    # "camcorderResolutionId":I
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
@@ -1393,7 +1475,7 @@
     :cond_0
     return-void
 
-    .line 234
+    .line 241
     .restart local v0    # "camcorderResolutionId":I
     :sswitch_0
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -1404,31 +1486,31 @@
 
     if-nez v5, :cond_1
 
-    .line 235
+    .line 242
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_3840X2160_PICTURE_WIDTH:I
 
-    .line 236
+    .line 243
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_3840X2160_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto :goto_0
 
-    .line 239
+    .line 246
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_1
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PICTURE_WIDTH:I
 
-    .line 240
+    .line 247
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PICTURE_HEIGHT:I
 
-    .line 242
+    .line 249
     .restart local v1    # "pictureHeight":I
     goto :goto_0
 
-    .line 244
+    .line 251
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_1
@@ -1440,31 +1522,31 @@
 
     if-nez v5, :cond_2
 
-    .line 245
+    .line 252
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_2560X1440_PICTURE_WIDTH:I
 
-    .line 246
+    .line 253
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_2560X1440_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto :goto_0
 
-    .line 248
+    .line 255
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_2
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PICTURE_WIDTH:I
 
-    .line 249
+    .line 256
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PICTURE_HEIGHT:I
 
-    .line 251
+    .line 258
     .restart local v1    # "pictureHeight":I
     goto :goto_0
 
-    .line 253
+    .line 260
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_2
@@ -1476,31 +1558,31 @@
 
     if-nez v5, :cond_3
 
-    .line 254
+    .line 261
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_PICTURE_WIDTH:I
 
-    .line 255
+    .line 262
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto :goto_0
 
-    .line 257
+    .line 264
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_3
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1920X1080_PICTURE_WIDTH:I
 
-    .line 258
+    .line 265
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1920X1080_PICTURE_HEIGHT:I
 
-    .line 260
+    .line 267
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 262
+    .line 269
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_3
@@ -1512,31 +1594,31 @@
 
     if-nez v5, :cond_4
 
-    .line 263
+    .line 270
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_60FPS_PICTURE_WIDTH:I
 
-    .line 264
+    .line 271
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_60FPS_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 267
+    .line 274
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_4
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1920X1080_PICTURE_WIDTH:I
 
-    .line 268
+    .line 275
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1920X1080_PICTURE_HEIGHT:I
 
-    .line 270
+    .line 277
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 272
+    .line 279
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_4
@@ -1548,31 +1630,31 @@
 
     if-nez v5, :cond_5
 
-    .line 273
+    .line 280
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1440X1440_PICTURE_WIDTH:I
 
-    .line 274
+    .line 281
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1440X1440_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 276
+    .line 283
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_5
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1440X1440_PICTURE_WIDTH:I
 
-    .line 277
+    .line 284
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1440X1440_PICTURE_HEIGHT:I
 
-    .line 279
+    .line 286
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 281
+    .line 288
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_5
@@ -1584,31 +1666,31 @@
 
     if-nez v5, :cond_6
 
-    .line 282
+    .line 289
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1280X720_PICTURE_WIDTH:I
 
-    .line 283
+    .line 290
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1280X720_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 285
+    .line 292
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_6
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PICTURE_WIDTH:I
 
-    .line 286
+    .line 293
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PICTURE_HEIGHT:I
 
-    .line 288
+    .line 295
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 290
+    .line 297
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_6
@@ -1620,31 +1702,31 @@
 
     if-nez v5, :cond_7
 
-    .line 291
+    .line 298
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMCORDER_RESOLUTION_PICTURE_WIDTH:I
 
-    .line 292
+    .line 299
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMCORDER_RESOLUTION_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 294
+    .line 301
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_7
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SQUARE_PREVIEW_WIDTH_HEIGHT:I
 
-    .line 295
+    .line 302
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SQUARE_PREVIEW_WIDTH_HEIGHT:I
 
-    .line 297
+    .line 304
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 299
+    .line 306
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_7
@@ -1656,31 +1738,31 @@
 
     if-nez v5, :cond_8
 
-    .line 300
+    .line 307
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1072X1072_PICTURE_WIDTH:I
 
-    .line 301
+    .line 308
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1072X1072_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 303
+    .line 310
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_8
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1072X1072_PICTURE_WIDTH:I
 
-    .line 304
+    .line 311
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1072X1072_PICTURE_HEIGHT:I
 
-    .line 306
+    .line 313
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 308
+    .line 315
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_8
@@ -1692,31 +1774,31 @@
 
     if-nez v5, :cond_9
 
-    .line 309
+    .line 316
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_960X960_PICTURE_WIDTH:I
 
-    .line 310
+    .line 317
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_960X960_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 312
+    .line 319
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_9
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_960X960_PICTURE_WIDTH:I
 
-    .line 313
+    .line 320
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_960X960_PICTURE_HEIGHT:I
 
-    .line 315
+    .line 322
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 317
+    .line 324
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_9
@@ -1728,31 +1810,31 @@
 
     if-nez v5, :cond_a
 
-    .line 318
+    .line 325
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_960X720_PICTURE_WIDTH:I
 
-    .line 319
+    .line 326
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_960X720_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 321
+    .line 328
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_a
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_960X720_PICTURE_WIDTH:I
 
-    .line 322
+    .line 329
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_960X720_PICTURE_HEIGHT:I
 
-    .line 324
+    .line 331
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 326
+    .line 333
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_a
@@ -1764,31 +1846,31 @@
 
     if-nez v5, :cond_b
 
-    .line 327
+    .line 334
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_720X480_PICTURE_WIDTH:I
 
-    .line 328
+    .line 335
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_720X480_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 330
+    .line 337
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_b
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_720X480_PICTURE_WIDTH:I
 
-    .line 331
+    .line 338
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_720X480_PICTURE_HEIGHT:I
 
-    .line 333
+    .line 340
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 335
+    .line 342
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_b
@@ -1800,31 +1882,31 @@
 
     if-nez v5, :cond_c
 
-    .line 336
+    .line 343
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X480_PICTURE_WIDTH:I
 
-    .line 337
+    .line 344
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X480_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 339
+    .line 346
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_c
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480_PICTURE_WIDTH:I
 
-    .line 340
+    .line 347
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480_PICTURE_HEIGHT:I
 
-    .line 342
+    .line 349
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 344
+    .line 351
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_c
@@ -1836,31 +1918,31 @@
 
     if-nez v5, :cond_d
 
-    .line 345
+    .line 352
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_320X240_PICTURE_WIDTH:I
 
-    .line 346
+    .line 353
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_320X240_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 348
+    .line 355
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_d
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_320X240_PICTURE_WIDTH:I
 
-    .line 349
+    .line 356
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_320X240_PICTURE_HEIGHT:I
 
-    .line 351
+    .line 358
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 353
+    .line 360
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :sswitch_d
@@ -1872,44 +1954,44 @@
 
     if-nez v5, :cond_e
 
-    .line 354
+    .line 361
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_320X240_PICTURE_WIDTH:I
 
-    .line 355
+    .line 362
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_320X240_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 357
+    .line 364
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_e
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_320X240_PICTURE_WIDTH:I
 
-    .line 358
+    .line 365
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_320X240_PICTURE_HEIGHT:I
 
-    .line 360
+    .line 367
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 367
+    .line 374
     .end local v1    # "pictureHeight":I
     .end local v2    # "pictureWidth":I
     :cond_f
     sget v2, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480_PICTURE_WIDTH:I
 
-    .line 368
+    .line 375
     .restart local v2    # "pictureWidth":I
     sget v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480_PICTURE_HEIGHT:I
 
     .restart local v1    # "pictureHeight":I
     goto/16 :goto_0
 
-    .line 232
+    .line 239
     :sswitch_data_0
     .sparse-switch
         0xb -> :sswitch_b
@@ -1938,17 +2020,17 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 391
+    .line 398
     if-ne p2, v2, :cond_2
 
-    .line 392
+    .line 399
     const-string v0, "RecordingController"
 
     const-string v1, "onError - MEDIA_RECORDER_ERROR_UNKNOWN"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 393
+    .line 400
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     move-result-object v0
@@ -1957,10 +2039,10 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 394
+    .line 401
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->cancelRecording()V
 
-    .line 396
+    .line 403
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -1968,28 +2050,28 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 402
+    .line 409
     :cond_1
     :goto_0
     return-void
 
-    .line 397
+    .line 404
     :cond_2
     const/4 v0, 0x2
 
     if-ne p2, v0, :cond_1
 
-    .line 398
+    .line 405
     const-string v0, "RecordingController"
 
     const-string v1, "onError - SEM_MEDIA_RECORDER_ERROR_BUFFER_OVERFLOW"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 399
+    .line 406
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onStopRecordingRequested(Z)V
 
-    .line 400
+    .line 407
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v1, -0x6
@@ -2004,7 +2086,7 @@
     .param p1, "mString"    # Ljava/lang/String;
 
     .prologue
-    .line 406
+    .line 413
     const-string v1, "RecordingController"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -2027,7 +2109,7 @@
 
     invoke-static {v1, v4}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 407
+    .line 414
     const-string v1, "multiduration"
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -2036,7 +2118,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 408
+    .line 415
     const-string v1, "\\D"
 
     const-string v4, ""
@@ -2049,33 +2131,33 @@
 
     move-result v0
 
-    .line 409
+    .line 416
     .local v0, "duration":I
     int-to-long v4, v0
 
     iput-wide v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
 
-    .line 410
+    .line 417
     if-nez v0, :cond_0
 
-    .line 411
+    .line 418
     sget-object v1, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->RECORDING:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->setRecordingState(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;)V
 
-    .line 412
+    .line 419
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->startRecordingTickTimer()V
 
-    .line 413
+    .line 420
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->checkRecordingTickTime()V
 
-    .line 429
+    .line 436
     .end local v0    # "duration":I
     :cond_0
     :goto_0
     return-void
 
-    .line 415
+    .line 422
     :cond_1
     const-string v1, "multimaxduration"
 
@@ -2085,14 +2167,14 @@
 
     if-eqz v1, :cond_2
 
-    .line 416
+    .line 423
     const-string v1, "RecordingController"
 
     const-string v4, "onImageEffectInfo - MAX_DURATION_REACHED"
 
     invoke-static {v1, v4}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 417
+    .line 424
     const-string v1, "\\D"
 
     const-string v4, ""
@@ -2105,18 +2187,18 @@
 
     move-result v0
 
-    .line 418
+    .line 425
     .restart local v0    # "duration":I
     int-to-long v4, v0
 
     iput-wide v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
 
-    .line 419
+    .line 426
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingMaxDurationReached()V
 
     goto :goto_0
 
-    .line 420
+    .line 427
     .end local v0    # "duration":I
     :cond_2
     const-string v1, "multimaxsize"
@@ -2127,14 +2209,14 @@
 
     if-eqz v1, :cond_3
 
-    .line 421
+    .line 428
     const-string v1, "RecordingController"
 
     const-string v4, "onImageEffectInfo - MAX_FILESIZE_REACHED"
 
     invoke-static {v1, v4}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 422
+    .line 429
     const-string v1, "\\D"
 
     const-string v4, ""
@@ -2149,16 +2231,16 @@
 
     int-to-long v2, v1
 
-    .line 423
+    .line 430
     .local v2, "size":J
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileSize:J
 
-    .line 424
+    .line 431
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingMaxFileSizeReached()V
 
     goto :goto_0
 
-    .line 425
+    .line 432
     .end local v2    # "size":J
     :cond_3
     const-string v1, "multisize"
@@ -2169,7 +2251,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 426
+    .line 433
     const-string v1, "\\D"
 
     const-string v4, ""
@@ -2184,7 +2266,7 @@
 
     int-to-long v2, v1
 
-    .line 427
+    .line 434
     .restart local v2    # "size":J
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileSize:J
 
@@ -2198,19 +2280,19 @@
     .param p3, "extra"    # I
 
     .prologue
-    .line 436
+    .line 443
     const/16 v0, 0x320
 
     if-ne p2, v0, :cond_2
 
-    .line 437
+    .line 444
     const-string v0, "RecordingController"
 
     const-string v1, "onInfo - MEDIA_RECORDER_INFO_MAX_DURATION_REACHED"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 438
+    .line 445
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->isRecorderStopping()Z
@@ -2219,19 +2301,19 @@
 
     if-eqz v0, :cond_1
 
-    .line 439
+    .line 446
     const-string v0, "RecordingController"
 
     const-string v1, "onInfo - already scheduled to stop video recording so returned."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 458
+    .line 465
     :cond_0
     :goto_0
     return-void
 
-    .line 442
+    .line 449
     :cond_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getTotalRecordingTime()J
 
@@ -2241,36 +2323,36 @@
 
     invoke-virtual {p0, v0, v1, v2, v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingTick(JJ)V
 
-    .line 443
+    .line 450
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingMaxDurationReached()V
 
     goto :goto_0
 
-    .line 444
+    .line 451
     :cond_2
     const/16 v0, 0x321
 
     if-ne p2, v0, :cond_3
 
-    .line 445
+    .line 452
     const-string v0, "RecordingController"
 
     const-string v1, "onInfo - MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 446
+    .line 453
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingMaxFileSizeReached()V
 
     goto :goto_0
 
-    .line 447
+    .line 454
     :cond_3
     const/16 v0, 0x384
 
     if-ne p2, v0, :cond_4
 
-    .line 448
+    .line 455
     int-to-long v0, p3
 
     const-wide v2, 0xffffffffL
@@ -2281,18 +2363,18 @@
 
     goto :goto_0
 
-    .line 449
+    .line 456
     :cond_4
     const/16 v0, 0x385
 
     if-ne p2, v0, :cond_0
 
-    .line 450
+    .line 457
     int-to-long v0, p3
 
     iput-wide v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
 
-    .line 451
+    .line 458
     const-string v0, "RecordingController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2315,18 +2397,18 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 452
+    .line 459
     if-nez p3, :cond_0
 
-    .line 453
+    .line 460
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->RECORDING:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->setRecordingState(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;)V
 
-    .line 454
+    .line 461
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->startRecordingTickTimer()V
 
-    .line 455
+    .line 462
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->checkRecordingTickTime()V
 
     goto :goto_0
@@ -2337,10 +2419,10 @@
     .param p1, "mediaRecorder"    # Landroid/media/MediaRecorder;
 
     .prologue
-    .line 462
+    .line 469
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onMediaRecorderPreparedEvent(Landroid/media/MediaRecorder;)V
 
-    .line 463
+    .line 470
     return-void
 .end method
 
@@ -2353,36 +2435,36 @@
     .prologue
     const-wide/16 v2, 0x0
 
-    .line 467
+    .line 474
     const-string v0, "RecordingController"
 
     const-string v1, "onRecordingCancelled"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 468
+    .line 475
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->IDLE:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->setRecordingState(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;)V
 
-    .line 469
+    .line 476
     const/4 v0, 0x4
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingEvent(I)V
 
-    .line 471
+    .line 478
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingTimeInMilliSecond:J
 
-    .line 472
+    .line 479
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileSize:J
 
-    .line 473
+    .line 480
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
 
-    .line 474
+    .line 481
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mPreviousRecordingTime:J
 
-    .line 475
+    .line 482
     return-void
 .end method
 
@@ -2394,7 +2476,7 @@
     .param p1, "error"    # I
 
     .prologue
-    .line 479
+    .line 486
     const-string v0, "RecordingController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2417,17 +2499,17 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 480
+    .line 487
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingErrorHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;
 
     if-eqz v0, :cond_0
 
-    .line 481
+    .line 488
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingErrorHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;
 
     invoke-virtual {v0, p1}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;->sendEmptyMessage(I)Z
 
-    .line 483
+    .line 490
     :cond_0
     return-void
 .end method
@@ -2442,19 +2524,19 @@
     .locals 2
 
     .prologue
-    .line 487
+    .line 494
     const-string v0, "RecordingController"
 
     const-string v1, "onRecordingPaused"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 488
+    .line 495
     const/4 v0, 0x2
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingEvent(I)V
 
-    .line 489
+    .line 496
     return-void
 .end method
 
@@ -2464,19 +2546,19 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 493
+    .line 500
     const-string v0, "RecordingController"
 
     const-string v1, "onRecordingRestarted"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 494
+    .line 501
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     if-eqz v0, :cond_1
 
-    .line 495
+    .line 502
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->hasMessages(I)Z
@@ -2485,12 +2567,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 496
+    .line 503
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->removeMessages(I)V
 
-    .line 498
+    .line 505
     :cond_0
     iget-wide v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mPreviousRecordingTime:J
 
@@ -2500,7 +2582,7 @@
 
     iput-wide v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mPreviousRecordingTime:J
 
-    .line 499
+    .line 506
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitInSecond:I
 
     int-to-long v0, v0
@@ -2517,7 +2599,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitInSecond:I
 
-    .line 501
+    .line 508
     :cond_1
     return-void
 .end method
@@ -2529,24 +2611,24 @@
     .locals 2
 
     .prologue
-    .line 505
+    .line 512
     const-string v0, "RecordingController"
 
     const-string v1, "onRecordingResumed"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 506
+    .line 513
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->RECORDING:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->setRecordingState(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;)V
 
-    .line 507
+    .line 514
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingEvent(I)V
 
-    .line 508
+    .line 515
     return-void
 .end method
 
@@ -2554,19 +2636,19 @@
     .locals 2
 
     .prologue
-    .line 512
+    .line 519
     const-string v0, "RecordingController"
 
     const-string v1, "onRecordingStarted"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 514
+    .line 521
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingEvent(I)V
 
-    .line 515
+    .line 522
     return-void
 .end method
 
@@ -2576,36 +2658,36 @@
     .prologue
     const-wide/16 v2, 0x0
 
-    .line 519
+    .line 526
     const-string v0, "RecordingController"
 
     const-string v1, "onRecordingStopped"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 520
+    .line 527
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->IDLE:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->setRecordingState(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;)V
 
-    .line 521
+    .line 528
     const/4 v0, 0x3
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onRecordingEvent(I)V
 
-    .line 523
+    .line 530
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingTimeInMilliSecond:J
 
-    .line 524
+    .line 531
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileSize:J
 
-    .line 525
+    .line 532
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
 
-    .line 526
+    .line 533
     iput-wide v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mPreviousRecordingTime:J
 
-    .line 527
+    .line 534
     return-void
 .end method
 
@@ -2620,10 +2702,10 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 531
+    .line 538
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onStopProgress(I)V
 
-    .line 532
+    .line 539
     return-void
 .end method
 
@@ -2632,7 +2714,7 @@
     .param p1, "forced"    # Z
 
     .prologue
-    .line 706
+    .line 713
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     move-result-object v0
@@ -2641,11 +2723,11 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 718
+    .line 725
     :goto_0
     return-void
 
-    .line 709
+    .line 716
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->getCurrentRecordingFileTimeInSecond()J
 
@@ -2657,21 +2739,21 @@
 
     if-gez v0, :cond_1
 
-    .line 710
+    .line 717
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->cancelRecording()V
 
     goto :goto_0
 
-    .line 712
+    .line 719
     :cond_1
     if-eqz p1, :cond_2
 
-    .line 713
+    .line 720
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->stopRecordingForced()V
 
     goto :goto_0
 
-    .line 715
+    .line 722
     :cond_2
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->stopRecording()V
 
@@ -2683,12 +2765,12 @@
     .param p1, "values"    # Landroid/content/ContentValues;
 
     .prologue
-    .line 536
+    .line 543
     new-instance v1, Landroid/media/MediaMetadataRetriever;
 
     invoke-direct {v1}, Landroid/media/MediaMetadataRetriever;-><init>()V
 
-    .line 538
+    .line 545
     .local v1, "retriever":Landroid/media/MediaMetadataRetriever;
     :try_start_0
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -2699,7 +2781,7 @@
 
     invoke-virtual {v1, v2}, Landroid/media/MediaMetadataRetriever;->setDataSource(Ljava/lang/String;)V
 
-    .line 539
+    .line 546
     const-string v2, "duration"
 
     const/16 v3, 0x9
@@ -2713,22 +2795,22 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 544
+    .line 551
     :goto_0
     invoke-virtual {v1}, Landroid/media/MediaMetadataRetriever;->release()V
 
-    .line 546
+    .line 553
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->onVideoDBUpdatePreparedEvent(Landroid/content/ContentValues;)Z
 
     move-result v2
 
     return v2
 
-    .line 540
+    .line 547
     :catch_0
     move-exception v0
 
-    .line 541
+    .line 548
     .local v0, "e":Ljava/lang/RuntimeException;
     :goto_1
     const-string v2, "RecordingController"
@@ -2737,7 +2819,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 542
+    .line 549
     const-string v2, "duration"
 
     iget-wide v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCurrentRecordingFileTime:J
@@ -2750,7 +2832,7 @@
 
     goto :goto_0
 
-    .line 540
+    .line 547
     .end local v0    # "e":Ljava/lang/RuntimeException;
     :catch_1
     move-exception v0
@@ -2768,105 +2850,105 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 729
+    .line 736
     const-string v1, "RecordingController"
 
     const-string v2, "registerRecordingController"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 731
+    .line 738
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
-    .line 733
+    .line 740
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     invoke-direct {v1, p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;-><init>(Lcom/sec/android/app/camera/shootingmode/RecordingController;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
-    .line 735
+    .line 742
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 736
+    .line 743
     .local v0, "intentFilter":Landroid/content/IntentFilter;
     const-string v1, "camera.action.LOW_BATTERY"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 737
+    .line 744
     const-string v1, "camera.action.AUDIOFOCUS_LOSS"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 738
+    .line 745
     const-string v1, "camera.action.OVERHEAT_TEMPERATURE"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 739
+    .line 746
     const-string v1, "camera.action.COOLDOWN_TEMPERATURE"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 740
+    .line 747
     const-string v1, "camera.action.PREVIEW_TIMEOUT"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 741
+    .line 748
     const-string v1, "camera.action.MEDIA_UNMOUNTED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 742
+    .line 749
     const-string v1, "camera.action.HEADSET_PLUG"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 743
+    .line 750
     const-string v1, "camera.action.CALL_STATE_IDLE"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 744
+    .line 751
     const-string v1, "camera.action.CALL_STATE_RINGING"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 745
+    .line 752
     const-string v1, "camera.action.CALL_STATE_OFFHOOK"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 746
+    .line 753
     const-string v1, "camera.action.COVER_OPENED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 747
+    .line 754
     const-string v1, "camera.action.ACTION_VIDEO_CAPABILITY"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 748
+    .line 755
     const-string v1, "camera.action.ACTION_WIFI_DISPLAY_NOT_ALLOWED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 749
+    .line 756
     const-string v1, "camera.action.ACTION_ERROR_CAMERA_BUSY"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 750
+    .line 757
     const-string v1, "camera.action.ACTION_ERROR_CAMERA_SERVER_DIED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 751
+    .line 758
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -2877,22 +2959,22 @@
 
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/util/CameraLocalBroadcastManager;->register(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
-    .line 753
+    .line 760
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setRecordingEventListener(Lcom/sec/android/app/camera/interfaces/Engine$RecordingEventListener;)V
 
-    .line 754
+    .line 761
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setMediaRecorderListener(Ljava/lang/Object;)V
 
-    .line 755
+    .line 762
     sget-object v1, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->IDLE:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->setRecordingState(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;)V
 
-    .line 757
+    .line 764
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isTemperatureHighToRecord()Z
@@ -2901,16 +2983,16 @@
 
     if-eqz v1, :cond_0
 
-    .line 758
+    .line 765
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
 
-    .line 761
+    .line 768
     :cond_0
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByCallState:Z
 
-    .line 763
+    .line 770
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCallStatus()I
@@ -2919,17 +3001,17 @@
 
     if-ne v1, v3, :cond_1
 
-    .line 764
+    .line 771
     const-string v1, "RecordingController"
 
     const-string v2, "registerRecordingController, CallStatus ON"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 765
+    .line 772
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByCallState:Z
 
-    .line 768
+    .line 775
     :cond_1
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;
 
@@ -2937,14 +3019,14 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingErrorHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;
 
-    .line 769
+    .line 776
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;
 
     invoke-direct {v1, p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;-><init>(Lcom/sec/android/app/camera/shootingmode/RecordingController;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingEventHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;
 
-    .line 770
+    .line 777
     return-void
 .end method
 
@@ -2953,7 +3035,7 @@
     .param p1, "state"    # Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     .prologue
-    .line 606
+    .line 613
     const-string v0, "RecordingController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2980,10 +3062,10 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 607
+    .line 614
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingState:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
-    .line 608
+    .line 615
     return-void
 .end method
 
@@ -2992,12 +3074,12 @@
     .param p1, "l"    # Lcom/samsung/android/camera/core/SemCamera$ImageEffectEventListener;
 
     .prologue
-    .line 777
+    .line 784
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->setSecImagingEventListener(Lcom/samsung/android/camera/core/SemCamera$ImageEffectEventListener;)V
 
-    .line 778
+    .line 785
     return-void
 .end method
 
@@ -3007,39 +3089,50 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 781
+    .line 788
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/RecordingController;->isRecordingTimeRestricted()Z
 
     move-result v0
 
+    if-eqz v0, :cond_1
+
+    .line 789
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    const v1, 0x7f0a01f5
+
+    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
+
+    .line 793
+    :goto_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
+
     if-eqz v0, :cond_0
 
-    .line 782
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    const v1, 0x7f0a01ef
-
-    invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
-
-    move-result-object v0
+    .line 794
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 786
-    :goto_0
+    .line 795
+    :cond_0
     return-void
 
-    .line 784
-    :cond_0
+    .line 791
+    :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01ee
+    const v1, 0x7f0a01f4
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordStopToast:Landroid/widget/Toast;
 
     goto :goto_0
 .end method
@@ -3051,7 +3144,7 @@
     .locals 2
 
     .prologue
-    .line 795
+    .line 808
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->needToResizeForCamcorderPreviewAspectRatio()Z
@@ -3068,11 +3161,11 @@
 
     if-nez v0, :cond_0
 
-    .line 801
+    .line 814
     :goto_0
     return-void
 
-    .line 799
+    .line 812
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -3084,7 +3177,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/VisualInteractionProvider;->setPreviewAnimation(I)V
 
-    .line 800
+    .line 813
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleSetOneShotPreviewCallback()V
@@ -3108,7 +3201,7 @@
 
     const/4 v3, 0x0
 
-    .line 812
+    .line 825
     const-string v0, "RecordingController"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3139,12 +3232,12 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 814
+    .line 827
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_0
 
-    .line 815
+    .line 828
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3155,81 +3248,81 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/util/CameraLocalBroadcastManager;->unregister(Landroid/content/Context;Landroid/content/BroadcastReceiver;)V
 
-    .line 818
+    .line 831
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->setRecordingEventListener(Lcom/sec/android/app/camera/interfaces/Engine$RecordingEventListener;)V
 
-    .line 819
+    .line 832
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->setMediaRecorderListener(Ljava/lang/Object;)V
 
-    .line 821
+    .line 834
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByOverHeat:Z
 
-    .line 822
+    .line 835
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingRestrictedByCallState:Z
 
-    .line 823
+    .line 836
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByVideoCapability:Z
 
-    .line 824
+    .line 837
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingFailedByWifiDisplayNotAllowed:Z
 
-    .line 827
+    .line 840
     const/16 v0, 0x3e8
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mTickInterval:I
 
-    .line 828
+    .line 841
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mIsRecordingTimeLimitedBySystem:Z
 
-    .line 829
+    .line 842
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitBySystem:I
 
-    .line 830
+    .line 843
     const/4 v0, -0x1
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mMaxRecordingTimeLimitInSecond:I
 
-    .line 832
+    .line 845
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingErrorHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;
 
     if-eqz v0, :cond_1
 
-    .line 833
+    .line 846
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingErrorHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;->clear()V
-    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;->access$800(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;)V
+    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;->access$1000(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;)V
 
-    .line 834
+    .line 847
     iput-object v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingErrorHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingErrorHandler;
 
-    .line 836
+    .line 849
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     if-eqz v0, :cond_2
 
-    .line 837
+    .line 850
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->clear()V
-    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->access$900(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;)V
+    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;->access$1100(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;)V
 
-    .line 838
+    .line 851
     iput-object v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingProgressHandler;
 
-    .line 840
+    .line 853
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingEventHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;
 
     if-eqz v0, :cond_4
 
-    .line 841
+    .line 854
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingEventHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;
 
     invoke-virtual {v0, v5}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;->hasMessages(I)Z
@@ -3238,22 +3331,22 @@
 
     if-eqz v0, :cond_3
 
-    .line 842
+    .line 855
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingEventHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;
 
     invoke-virtual {v0, v5}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;->removeMessages(I)V
 
-    .line 844
+    .line 857
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingEventHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;->clear()V
-    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;->access$1000(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;)V
+    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;->access$1200(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;)V
 
-    .line 845
+    .line 858
     iput-object v4, p0, Lcom/sec/android/app/camera/shootingmode/RecordingController;->mRecordingEventHandler:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingEventHandler;
 
-    .line 847
+    .line 860
     :cond_4
     return-void
 .end method

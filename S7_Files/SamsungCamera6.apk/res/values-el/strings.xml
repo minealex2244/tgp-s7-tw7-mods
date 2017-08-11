@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">Εγγράψτε βίντεο σε υψηλότερο ρυθμό καρέ για προβολή σε αργή κίνηση. Μπορείτε να αναπαράγετε ένα συγκεκριμένο τμήμα κάθε βίντεο σε αργή κίνηση μετά την εγγραφή τους.</string>
     <string name="SM_SMART_SELFSHOT">Selfie πίσω κάμερας</string>
     <string name="SM_SMART_SELFSHOT_description">Η πίσω κάμερα θα εντοπίσει και θα εστιάσει αυτόματα στο πρόσωπό σας κατά τη λήψη μιας φωτογραφίας του εαυτού σας.</string>
+    <string name="SM_SOCIAL">Κοινωνικά</string>
+    <string name="SM_SOCIAL_description">Τραβήξτε εικόνες και μοιραστείτε τις εύκολα σε κοινωνικά δίκτυα.</string>
     <string name="SM_SPORTS">Σπορ</string>
     <string name="SM_SPORTS_SCENE_description">Αποτυπώστε ευκρινέστερες εικόνες θεμάτων σε γρήγορη κίνηση.</string>
     <string name="SM_STORY">Ήχος &amp; λήψη</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">Τετράγωνο</string>
     <string name="help_change_mode_tip_1">Κάντε σάρωση προς τα δεξιά για να δείτε τις διαθέσιμες λειτουργίες κάμερας.</string>
     <string name="help_change_mode_tip_2">Επιλέξτε τη λειτουργία που θέλετε να χρησιμοποιήσετε.</string>
+    <string name="help_change_mode_tip_3">Όταν η Εύκολη λειτουργία είναι ενεργοποιημένη, μόνο οι λειτουργίες κάμερας «Αυτόματη» και «Selfie» είναι διαθέσιμες.</string>
     <string name="help_changing_the_camera_mode">Επιλογή λειτουργιών κάμερας</string>
+    <string name="help_changing_the_camera_mode_header">Επιλογή λειτουργίας κάμερας</string>
+    <string name="help_changing_the_camera_mode_title">Αλλαγή λειτουργίας κάμερας</string>
     <string name="help_recording_videos">Εγγραφή βίντεο</string>
     <string name="help_recording_videos_tip_1">Πατήστε %s.</string>
     <string name="help_recording_videos_tip_1_tts">Πατήστε το κουμπί βιντεοκάμερας.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">Πατήστε το κουμπί διακοπής, για να σταματήσετε την εγγραφή.</string>
     <string name="help_recording_videos_tip_snapshot">Πατήστε %s, για να τραβήξετε φωτογραφίες κατά την εγγραφή βίντεο.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Πατήστε το κουμπί της κάμερας, για να τραβήξετε φωτογραφίες κατά την εγγραφή βίντεο.</string>
-    <string name="help_section_summary">Αποτυπώστε εικόνες ή εγγράψτε βίντεο χρησιμοποιώντας μια μεγάλη γκάμα διαφορετικών εφέ που καλύπτουν όλες τις περιστάσεις. Είναι διαθέσιμες μόνο οι λειτουργίες κάμερας «Αυτόματα» και «Selfie» και δεν είναι δυνατή η εφαρμογή εφέ όσο είναι ενεργοποιημένη η Εύκολη λειτουργία.</string>
+    <string name="help_section_summary">Τραβήξτε φωτογραφίες ή εγγράψτε βίντεο, χρησιμοποιώντας διάφορα εφέ ανάλογα με τις εκάστοτε συνθήκες.</string>
     <string name="help_selecting_camera_mode">Επιλογή λειτουργιών κάμερας</string>
     <string name="help_taking_pictures">Λήψη φωτογραφιών</string>
     <string name="help_taking_pictures_tip_1">Πατήστε το αντικείμενο στο οποίο θέλετε να εστιάσετε.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">Πατήστε το πλήκτρο της Κάμερας και στρέψτε τη συσκευή σας αργά προς μία κατεύθυνση.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Πατήστε %s για να δείτε τις εικόνες και τα βίντεό σας απευθείας μετά τη λήψη ή την εγγραφή τους.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Πατήστε το κουμπί γρήγορης προβολής για να δείτε τις εικόνες και τα βίντεό σας απευθείας μετά τη λήψη ή την εγγραφή τους.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Προβολή εικόνων και βίντεο</string>
     <string name="high_resolution_video_description">Οι ακόλουθες λειτουργίες δεν θα είναι διαθέσιμες κατά την εγγραφή σε αναλύσεις %s:</string>
     <string name="highlight">Επισημάνσεις</string>

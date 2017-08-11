@@ -195,6 +195,8 @@ Panorering: Få en fornemmelse af bevægelse, når du tager billeder af objekter
     <string name="SM_SLOW_VIDEO_description">Optag videoer med høj billedhastighed for at se dem i slowmotion. Du kan afspille bestemte afsnit af hver video i slowmotion, når de er blevet optaget.</string>
     <string name="SM_SMART_SELFSHOT">Bag.kam.-selfie</string>
     <string name="SM_SMART_SELFSHOT_description">Det bagerste kamera vil automatisk registrere og fokusere på dit ansigt, når du tager selvportrætter.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Tag billeder, og del dem nemt på sociale netværk.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Tag tydeligere billeder af genstande, der bevæger sig hurtigt.</string>
     <string name="SM_STORY">Lyd og foto</string>
@@ -267,7 +269,7 @@ tilstand"</string>
     <string name="Title_Viewmode">Fuldskærmsvisning (16:9)</string>
     <string name="Title_Voice_Capture">Stemmekontrol</string>
     <string name="Title_Voice_guide">Stemmeguide</string>
-    <string name="Title_Volume_Key_As">Lydstyrketast</string>
+    <string name="Title_Volume_Key_As">Lydstyrketastfunktion</string>
     <string name="Title_WhiteBalance">Hvidbalance</string>
     <string name="Title_common">Fælles</string>
     <string name="Title_front">Det forreste kamera</string>
@@ -399,7 +401,10 @@ korrektur"</string>
     <string name="guideline_square">Kvadrat</string>
     <string name="help_change_mode_tip_1">Stryg mod højre for at se tilgængelige kameratilstande.</string>
     <string name="help_change_mode_tip_2">Vælg den tilstand, du vil bruge.</string>
+    <string name="help_change_mode_tip_3">Det er kun kameratilstandene Automatisk og Selfie, der er tilgængelige, når Nem tilstand er aktiveret.</string>
     <string name="help_changing_the_camera_mode">Vælge kameratilstande</string>
+    <string name="help_changing_the_camera_mode_header">Vælger en kameratilstand</string>
+    <string name="help_changing_the_camera_mode_title">Skifter kameratilstanden</string>
     <string name="help_recording_videos">Optagelse af videoer</string>
     <string name="help_recording_videos_tip_1">Tryk på %s.</string>
     <string name="help_recording_videos_tip_1_tts">Tryk på knappen Videokamera.</string>
@@ -407,7 +412,7 @@ korrektur"</string>
     <string name="help_recording_videos_tip_2_tts">Tryk på stopknappen for at stoppe med at optage.</string>
     <string name="help_recording_videos_tip_snapshot">Tryk på %s for at tage billeder, mens du optager video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Tryk på kameraknappen for at tage billeder, mens du optager video.</string>
-    <string name="help_section_summary">Tag billeder eller optag videoer med en række forskellige effekter, der passer til forskellige situationer. Når Nem tilstand er aktiveret, er det kun kameratilstandene Auto og Selfie, der er tilgængelige, og der kan ikke anvendes nogen effekter.</string>
+    <string name="help_section_summary">Tag billeder, eller optag video med en række effekter, der passer til alle situationer.</string>
     <string name="help_selecting_camera_mode">Vælge kameratilstande</string>
     <string name="help_taking_pictures">Tager billeder</string>
     <string name="help_taking_pictures_tip_1">Tryk på det motiv, du ønsker at bringe i fokus.</string>
@@ -422,6 +427,7 @@ korrektur"</string>
     <string name="help_text_wideselfie">Tryk på kameraknappen, og drej din enhed langsomt i én retning.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Tryk på %s for at se dine billeder eller videoer straks efter, du har taget eller optaget dem.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Tryk på hurtigvisningsknappen for at se dine billeder eller videoer med det samme, efter du har taget eller optaget dem.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Visning af billeder og videoer</string>
     <string name="high_resolution_video_description">Følgende vil ikke være tilgængeligt under optagelse i %s-opløsninger:</string>
     <string name="highlight">Fremhævninger</string>

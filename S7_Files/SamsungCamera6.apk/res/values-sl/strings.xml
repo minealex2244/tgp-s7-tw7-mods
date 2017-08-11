@@ -190,6 +190,8 @@ Sledenje: zajemanje gibanja pri slikanju premikajočih objektov."</string>
     <string name="SM_SLOW_VIDEO_description">Če si želite videoposnetke ogledati v počasnem posnetku, jih snemajte z veliko hitrostjo sličic. Ko jih posnamete, lahko določen del vsakega videa predvajate v počasnem posnetku.</string>
     <string name="SM_SMART_SELFSHOT">Posnetek sebe s fotoaparatom na hrbtni strani</string>
     <string name="SM_SMART_SELFSHOT_description">Fotoaparat na zadnji strani bo samodejno zaznal in izostril vaš obraz, ko slikate sami sebe.</string>
+    <string name="SM_SOCIAL">Družbeni</string>
+    <string name="SM_SOCIAL_description">Posnemite fotografije in jih preprosto delite z drugimi v družbenih omrežjih.</string>
     <string name="SM_SPORTS">Šport</string>
     <string name="SM_SPORTS_SCENE_description">Napravite jasnejše slike hitro premikajočih predmetov.</string>
     <string name="SM_STORY">Zvok+slikanje</string>
@@ -263,7 +265,7 @@ Sledenje: zajemanje gibanja pri slikanju premikajočih objektov."</string>
     <string name="Title_Voice_guide">Glasovni vodnik</string>
     <string name="Title_Volume_Key_As">Funkcija tipke za glasnost</string>
     <string name="Title_WhiteBalance">Ravnovesje beline</string>
-    <string name="Title_common">Skupno</string>
+    <string name="Title_common">Splošno</string>
     <string name="Title_front">Sprednja kamera</string>
     <string name="Title_rear">Zadnja kamera</string>
     <string name="Title_rear_lens_distortion_correction">Popravki oblike</string>
@@ -393,7 +395,10 @@ oblike"</string>
     <string name="guideline_square">Kvadrat</string>
     <string name="help_change_mode_tip_1">Podrsajte v desno za prikaz razpoložljivih načinov fotoaparata.</string>
     <string name="help_change_mode_tip_2">Izberite način, ki ga želite uporabljati.</string>
+    <string name="help_change_mode_tip_3">Ko je omogočen preprosti način, sta na voljo samo načina fotoaparata Samodejno in Posnetek sebe.</string>
     <string name="help_changing_the_camera_mode">Izbiranje načinov fotoaparata</string>
+    <string name="help_changing_the_camera_mode_header">Izbiranje načina fotoaparata</string>
+    <string name="help_changing_the_camera_mode_title">Spreminjanje nast. fotoaparata</string>
     <string name="help_recording_videos">Snemanje videoposnetkov</string>
     <string name="help_recording_videos_tip_1">Pritisnite %s.</string>
     <string name="help_recording_videos_tip_1_tts">Pritisnite gumb za kamero.</string>
@@ -401,7 +406,7 @@ oblike"</string>
     <string name="help_recording_videos_tip_2_tts">Pritisnite gumb za ustavitev, da ustavite snemanje.</string>
     <string name="help_recording_videos_tip_snapshot">Pritisnite %s za slikanje med snemanjem videa.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Za slikanje med snemanjem videa pritisnite tipko za fotoaparat.</string>
-    <string name="help_section_summary">Fotografirajte ali snemajte videe s številnimi različnimi učinki, ki ustrezajo vsem priložnostim. Ko je omogočen preprosti način, sta na voljo samo načina fotoaparata Samodejno in Posnetek sebe, učinkov pa ni mogoče uporabljati.</string>
+    <string name="help_section_summary">Slikanje ali snemanje videa z uporabo številnih različnih učinkov, ki ustrezajo vsem priložnostim.</string>
     <string name="help_selecting_camera_mode">Izbiranje načinov fotoaparata</string>
     <string name="help_taking_pictures">Slikanje</string>
     <string name="help_taking_pictures_tip_1">Pritisnite predmet, ki ga želite izostriti.</string>
@@ -416,6 +421,7 @@ oblike"</string>
     <string name="help_text_wideselfie">Pritisnite Gumb za fotoaparat in napravo počasi vrtite v eni smeri.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Pritisnite %s, da slike ali videoposnetke prikažete takoj, ko jih napravite.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Pritisnite gumb za hitri prikaz, da slike ali videoposnetke prikažete takoj, ko jih napravite.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Ogled slik in videoposnetkov</string>
     <string name="high_resolution_video_description">Naslednje nastavitve ne bodo na voljo med snemanjem v ločljivosti %s:</string>
     <string name="highlight">Označbe</string>

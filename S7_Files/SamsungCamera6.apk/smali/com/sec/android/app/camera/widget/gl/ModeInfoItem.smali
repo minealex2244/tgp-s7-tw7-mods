@@ -107,7 +107,7 @@
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
     .line 46
-    const v0, 0x7f0b0125
+    const v0, 0x7f0b0126
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -116,7 +116,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_POS_X:F
 
     .line 47
-    const v0, 0x7f0b0126
+    const v0, 0x7f0b0127
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -125,7 +125,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_WIDTH:F
 
     .line 48
-    const v0, 0x7f0b011f
+    const v0, 0x7f0b0120
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -134,7 +134,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_BUTTON_WIDTH:F
 
     .line 49
-    const v0, 0x7f0b011d
+    const v0, 0x7f0b011e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -143,7 +143,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_BUTTON_HEIGHT:F
 
     .line 50
-    const v0, 0x7f0b011e
+    const v0, 0x7f0b011f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -152,7 +152,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_BUTTON_LEFT_MARGIN:F
 
     .line 51
-    const v0, 0x7f0b011a
+    const v0, 0x7f0b011b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -161,7 +161,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_DOWNLOAD_ICON_HEIGHT:F
 
     .line 52
-    const v0, 0x7f0b012a
+    const v0, 0x7f0b012b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -170,7 +170,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_TITLE_WIDTH:F
 
     .line 53
-    const v0, 0x7f0b0128
+    const v0, 0x7f0b0129
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_TITLE_TEXT_HEIGHT:F
 
     .line 54
-    const v0, 0x7f0b0129
+    const v0, 0x7f0b012a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -224,7 +224,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_DIVIDER_COLOR:I
 
     .line 59
-    const v0, 0x7f0b0123
+    const v0, 0x7f0b0124
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -233,7 +233,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_DIVIDER_POS_X:F
 
     .line 60
-    const v0, 0x7f0b0124
+    const v0, 0x7f0b0125
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -248,7 +248,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ITEM_HEIGHT:F
 
     .line 61
-    const v0, 0x7f0b0120
+    const v0, 0x7f0b0121
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -257,7 +257,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_MARGIN:F
 
     .line 62
-    const v0, 0x7f0b0121
+    const v0, 0x7f0b0122
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -266,7 +266,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_PADDING:F
 
     .line 63
-    const v0, 0x7f0b0122
+    const v0, 0x7f0b0123
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -402,18 +402,18 @@
     .param p1, "shootingMode"    # I
 
     .prologue
-    .line 475
+    .line 478
     const-string v0, ""
 
-    .line 476
+    .line 479
     .local v0, "description":Ljava/lang/String;
     packed-switch p1, :pswitch_data_0
 
-    .line 483
+    .line 486
     :goto_0
     return-object v0
 
-    .line 478
+    .line 481
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -427,10 +427,10 @@
 
     move-result-object v0
 
-    .line 479
+    .line 482
     goto :goto_0
 
-    .line 476
+    .line 479
     :pswitch_data_0
     .packed-switch 0x45
         :pswitch_0
@@ -445,26 +445,26 @@
 
     const/4 v2, 0x0
 
-    .line 492
+    .line 495
     const/4 v0, 0x0
 
-    .line 494
+    .line 497
     .local v0, "isCurrent":Z
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     if-nez v3, :cond_0
 
-    .line 509
+    .line 512
     :goto_0
     return v2
 
-    .line 497
+    .line 500
     :cond_0
     iget-boolean v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mIsDownloadedShootingMode:Z
 
     if-nez v3, :cond_3
 
-    .line 498
+    .line 501
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     iget v4, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mMenuId:I
@@ -483,16 +483,16 @@
     :goto_1
     move v2, v0
 
-    .line 509
+    .line 512
     goto :goto_0
 
     :cond_2
     move v0, v2
 
-    .line 498
+    .line 501
     goto :goto_1
 
-    .line 501
+    .line 504
     :cond_3
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
@@ -506,7 +506,7 @@
 
     if-nez v3, :cond_5
 
-    .line 502
+    .line 505
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     iget v4, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mMenuId:I
@@ -529,7 +529,7 @@
 
     goto :goto_2
 
-    .line 503
+    .line 506
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
@@ -547,7 +547,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 504
+    .line 507
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getSeparatedShootingModeName()Ljava/lang/String;
 
     move-result-object v2
@@ -566,7 +566,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 505
+    .line 508
     const/4 v0, 0x1
 
     goto :goto_1
@@ -580,101 +580,101 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 347
+    .line 350
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_0
 
-    .line 348
+    .line 351
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 349
+    .line 352
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->clear()V
 
-    .line 350
+    .line 353
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 352
+    .line 355
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v0, :cond_1
 
-    .line 353
+    .line 356
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 354
+    .line 357
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->clear()V
 
-    .line 355
+    .line 358
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 357
+    .line 360
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_2
 
-    .line 358
+    .line 361
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 359
+    .line 362
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->clear()V
 
-    .line 360
+    .line 363
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
-    .line 362
+    .line 365
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_3
 
-    .line 363
+    .line 366
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 364
+    .line 367
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->clear()V
 
-    .line 365
+    .line 368
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
-    .line 367
+    .line 370
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     if-eqz v0, :cond_4
 
-    .line 368
+    .line 371
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 369
+    .line 372
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLLine;->clear()V
 
-    .line 370
+    .line 373
     iput-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
-    .line 372
+    .line 375
     :cond_4
     return-void
 .end method
@@ -732,9 +732,10 @@
 
     .line 112
     .local v0, "description":Ljava/lang/String;
-    sparse-switch p1, :sswitch_data_0
+    packed-switch p1, :pswitch_data_0
 
-    .line 202
+    .line 205
+    :pswitch_0
     const-string v1, "ModeInfoItem"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -757,12 +758,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 205
+    .line 208
     :goto_0
     return-object v0
 
     .line 114
-    :sswitch_0
+    :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -779,7 +780,7 @@
     goto :goto_0
 
     .line 117
-    :sswitch_1
+    :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -796,7 +797,7 @@
     goto :goto_0
 
     .line 120
-    :sswitch_2
+    :pswitch_3
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -813,7 +814,7 @@
     goto :goto_0
 
     .line 123
-    :sswitch_3
+    :pswitch_4
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -830,7 +831,7 @@
     goto :goto_0
 
     .line 127
-    :sswitch_4
+    :pswitch_5
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -847,7 +848,24 @@
     goto :goto_0
 
     .line 130
-    :sswitch_5
+    :pswitch_6
+    iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const v2, 0x7f0a00b9
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 131
+    goto :goto_0
+
+    .line 133
+    :pswitch_7
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -860,28 +878,11 @@
 
     move-result-object v0
 
-    .line 131
-    goto :goto_0
-
-    .line 133
-    :sswitch_6
-    iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    const v2, 0x7f0a00b5
-
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
     .line 134
     goto :goto_0
 
     .line 137
-    :sswitch_7
+    :pswitch_8
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -898,7 +899,7 @@
     goto :goto_0
 
     .line 140
-    :sswitch_8
+    :pswitch_9
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -915,7 +916,7 @@
     goto :goto_0
 
     .line 143
-    :sswitch_9
+    :pswitch_a
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -932,7 +933,7 @@
     goto/16 :goto_0
 
     .line 146
-    :sswitch_a
+    :pswitch_b
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -949,14 +950,14 @@
     goto/16 :goto_0
 
     .line 151
-    :sswitch_b
+    :pswitch_c
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    const v2, 0x7f0a00b9
+    const v2, 0x7f0a00bb
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -966,7 +967,7 @@
     goto/16 :goto_0
 
     .line 154
-    :sswitch_c
+    :pswitch_d
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -983,7 +984,7 @@
     goto/16 :goto_0
 
     .line 157
-    :sswitch_d
+    :pswitch_e
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1000,7 +1001,7 @@
     goto/16 :goto_0
 
     .line 160
-    :sswitch_e
+    :pswitch_f
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1017,7 +1018,7 @@
     goto/16 :goto_0
 
     .line 163
-    :sswitch_f
+    :pswitch_10
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1034,7 +1035,7 @@
     goto/16 :goto_0
 
     .line 166
-    :sswitch_10
+    :pswitch_11
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1051,7 +1052,7 @@
     goto/16 :goto_0
 
     .line 169
-    :sswitch_11
+    :pswitch_12
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1068,7 +1069,7 @@
     goto/16 :goto_0
 
     .line 172
-    :sswitch_12
+    :pswitch_13
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1085,7 +1086,7 @@
     goto/16 :goto_0
 
     .line 175
-    :sswitch_13
+    :pswitch_14
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1126,7 +1127,7 @@
     goto/16 :goto_0
 
     .line 178
-    :sswitch_14
+    :pswitch_15
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1143,7 +1144,7 @@
     goto/16 :goto_0
 
     .line 181
-    :sswitch_15
+    :pswitch_16
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1160,7 +1161,7 @@
     goto/16 :goto_0
 
     .line 184
-    :sswitch_16
+    :pswitch_17
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1177,7 +1178,7 @@
     goto/16 :goto_0
 
     .line 187
-    :sswitch_17
+    :pswitch_18
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1194,7 +1195,7 @@
     goto/16 :goto_0
 
     .line 190
-    :sswitch_18
+    :pswitch_19
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1211,7 +1212,7 @@
     goto/16 :goto_0
 
     .line 193
-    :sswitch_19
+    :pswitch_1a
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1228,7 +1229,7 @@
     goto/16 :goto_0
 
     .line 196
-    :sswitch_1a
+    :pswitch_1b
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1245,7 +1246,24 @@
     goto/16 :goto_0
 
     .line 199
-    :sswitch_1b
+    :pswitch_1c
+    iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const v2, 0x7f0a00b5
+
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 200
+    goto/16 :goto_0
+
+    .line 202
+    :pswitch_1d
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -1258,61 +1276,112 @@
 
     move-result-object v0
 
-    .line 200
+    .line 203
     goto/16 :goto_0
 
     .line 112
-    :sswitch_data_0
-    .sparse-switch
-        0x0 -> :sswitch_0
-        0x1 -> :sswitch_7
-        0x2 -> :sswitch_4
-        0x7 -> :sswitch_1
-        0xe -> :sswitch_8
-        0x11 -> :sswitch_7
-        0x17 -> :sswitch_3
-        0x23 -> :sswitch_5
-        0x28 -> :sswitch_6
-        0x2a -> :sswitch_f
-        0x2d -> :sswitch_12
-        0x2e -> :sswitch_13
-        0x2f -> :sswitch_1a
-        0x31 -> :sswitch_e
-        0x34 -> :sswitch_b
-        0x37 -> :sswitch_a
-        0x38 -> :sswitch_2
-        0x3a -> :sswitch_9
-        0x3b -> :sswitch_c
-        0x3e -> :sswitch_16
-        0x3f -> :sswitch_15
-        0x40 -> :sswitch_19
-        0x43 -> :sswitch_10
-        0x44 -> :sswitch_17
-        0x45 -> :sswitch_11
-        0x46 -> :sswitch_14
-        0x48 -> :sswitch_4
-        0x4a -> :sswitch_18
-        0x4b -> :sswitch_d
-        0x4d -> :sswitch_b
-        0x4e -> :sswitch_b
-        0x4f -> :sswitch_1b
-    .end sparse-switch
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_8
+        :pswitch_5
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_2
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_9
+        :pswitch_0
+        :pswitch_0
+        :pswitch_8
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_4
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_6
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_7
+        :pswitch_0
+        :pswitch_10
+        :pswitch_0
+        :pswitch_0
+        :pswitch_13
+        :pswitch_14
+        :pswitch_1b
+        :pswitch_0
+        :pswitch_f
+        :pswitch_0
+        :pswitch_0
+        :pswitch_c
+        :pswitch_0
+        :pswitch_0
+        :pswitch_b
+        :pswitch_3
+        :pswitch_0
+        :pswitch_a
+        :pswitch_d
+        :pswitch_0
+        :pswitch_0
+        :pswitch_17
+        :pswitch_16
+        :pswitch_1a
+        :pswitch_0
+        :pswitch_0
+        :pswitch_11
+        :pswitch_18
+        :pswitch_12
+        :pswitch_15
+        :pswitch_0
+        :pswitch_5
+        :pswitch_0
+        :pswitch_19
+        :pswitch_e
+        :pswitch_0
+        :pswitch_c
+        :pswitch_c
+        :pswitch_1d
+        :pswitch_1c
+    .end packed-switch
 .end method
 
 .method protected init()V
     .locals 31
 
     .prologue
-    .line 376
+    .line 379
     const/16 v26, 0x0
 
-    .line 378
+    .line 381
     .local v26, "mode":Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;
-    sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
+    sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DOWNLOAD_SHOOTING_MODES:Z
 
     if-eqz v1, :cond_0
 
-    .line 379
+    .line 382
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
@@ -1335,7 +1404,7 @@
 
     move-result-object v26
 
-    .line 380
+    .line 383
     if-eqz v26, :cond_0
 
     move-object/from16 v0, p0
@@ -1352,14 +1421,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 381
+    .line 384
     const/4 v1, 0x1
 
     move-object/from16 v0, p0
 
     iput-boolean v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mIsDownloadedShootingMode:Z
 
-    .line 385
+    .line 388
     :cond_0
     const/4 v1, 0x1
 
@@ -1367,7 +1436,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->setFocusable(Z)V
 
-    .line 387
+    .line 390
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
@@ -1382,7 +1451,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 388
+    .line 391
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1419,7 +1488,7 @@
 
     move-result-object v7
 
-    .line 389
+    .line 392
     .local v7, "normalBitmap":Landroid/graphics/Bitmap;
     new-instance v1, Lcom/samsung/android/glview/GLButton;
 
@@ -1455,7 +1524,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 393
+    .line 396
     .end local v7    # "normalBitmap":Landroid/graphics/Bitmap;
     :goto_0
     move-object/from16 v0, p0
@@ -1480,7 +1549,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setResourceOffset(FF)Z
 
-    .line 394
+    .line 397
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
@@ -1489,7 +1558,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLButton;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 395
+    .line 398
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
@@ -1498,7 +1567,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 396
+    .line 399
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
@@ -1507,7 +1576,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLButton;->setFocusListener(Lcom/samsung/android/glview/GLView$FocusListener;)V
 
-    .line 397
+    .line 400
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
@@ -1516,7 +1585,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 398
+    .line 401
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
@@ -1525,7 +1594,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setButtonShapeVisibility(Z)V
 
-    .line 399
+    .line 402
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
@@ -1534,15 +1603,11 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 402
+    .line 405
     const/16 v29, 0x0
 
-    .line 404
+    .line 407
     .local v29, "subDescription":Ljava/lang/String;
-    sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
-
-    if-eqz v1, :cond_5
-
     if-eqz v26, :cond_5
 
     move-object/from16 v0, p0
@@ -1559,12 +1624,12 @@
 
     if-eqz v1, :cond_5
 
-    .line 405
+    .line 408
     move-object/from16 v0, v26
 
     iget-object v14, v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->modeDesc:Ljava/lang/String;
 
-    .line 410
+    .line 413
     .local v14, "description":Ljava/lang/String;
     :goto_1
     move-object/from16 v0, p0
@@ -1577,7 +1642,7 @@
 
     move-result-object v29
 
-    .line 412
+    .line 415
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_FONT_SIZE:F
@@ -1604,7 +1669,7 @@
 
     move-result v28
 
-    .line 413
+    .line 416
     .local v28, "stringHeight":F
     move-object/from16 v0, p0
 
@@ -1636,7 +1701,7 @@
 
     move-result v27
 
-    .line 414
+    .line 417
     .local v27, "rows":I
     move/from16 v0, v27
 
@@ -1664,7 +1729,7 @@
 
     iput v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescriptionHeight:F
 
-    .line 416
+    .line 419
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_WIDTH_LANDSCAPE:F
@@ -1695,7 +1760,7 @@
 
     move-result v25
 
-    .line 417
+    .line 420
     .local v25, "landscapeRows":I
     move/from16 v0, v25
 
@@ -1723,7 +1788,7 @@
 
     iput v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescriptionLandscapeHeight:F
 
-    .line 419
+    .line 422
     new-instance v8, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -1758,7 +1823,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 420
+    .line 423
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v2
@@ -1783,7 +1848,7 @@
 
     iput-object v8, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
-    .line 421
+    .line 424
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1792,7 +1857,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLText;->setNextFocusDownView(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 422
+    .line 425
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1801,7 +1866,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLText;->setNextFocusUpView(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 423
+    .line 426
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1810,7 +1875,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLText;->setNextFocusLeftView(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 424
+    .line 427
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1819,7 +1884,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLText;->setNextFocusRightView(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 425
+    .line 428
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1830,7 +1895,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setTextFont(Landroid/graphics/Typeface;)V
 
-    .line 426
+    .line 429
     const-string v1, ""
 
     move-object/from16 v0, v29
@@ -1841,7 +1906,7 @@
 
     if-nez v1, :cond_1
 
-    .line 427
+    .line 430
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1850,7 +1915,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLText;->setContentDescription(Ljava/lang/String;)V
 
-    .line 429
+    .line 432
     :cond_1
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
@@ -1858,7 +1923,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 430
+    .line 433
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1869,7 +1934,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 434
+    .line 437
     :goto_2
     move-object/from16 v0, p0
 
@@ -1879,7 +1944,7 @@
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLText;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 435
+    .line 438
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1888,7 +1953,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setFocusable(Z)V
 
-    .line 436
+    .line 439
     new-instance v15, Lcom/samsung/android/glview/GLLine;
 
     move-object/from16 v0, p0
@@ -1937,7 +2002,7 @@
 
     iput-object v15, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
-    .line 438
+    .line 441
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
@@ -1946,7 +2011,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLLine;->setBypassTouch(Z)V
 
-    .line 440
+    .line 443
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
@@ -1955,7 +2020,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 441
+    .line 444
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
@@ -1964,7 +2029,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 443
+    .line 446
     move-object/from16 v0, p0
 
     iget-boolean v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mIsDownloadedShootingMode:Z
@@ -1973,7 +2038,7 @@
 
     if-eqz v26, :cond_8
 
-    .line 444
+    .line 447
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mData:Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
@@ -1988,7 +2053,7 @@
 
     if-eqz v1, :cond_7
 
-    .line 445
+    .line 448
     move-object/from16 v0, v26
 
     iget-object v1, v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;->modeTitle:Ljava/lang/String;
@@ -1997,7 +2062,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitle:Ljava/lang/String;
 
-    .line 452
+    .line 455
     :cond_2
     :goto_3
     new-instance v1, Lcom/samsung/android/glview/GLImage;
@@ -2022,7 +2087,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 453
+    .line 456
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
@@ -2031,7 +2096,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setBypassTouch(Z)V
 
-    .line 454
+    .line 457
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
@@ -2040,7 +2105,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 460
+    .line 463
     :cond_3
     :goto_4
     move-object/from16 v0, p0
@@ -2053,7 +2118,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 462
+    .line 465
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_TITLE_WIDTH:F
@@ -2074,7 +2139,7 @@
 
     move-result v30
 
-    .line 463
+    .line 466
     .local v30, "titleRows":I
     move-object/from16 v0, p0
 
@@ -2090,7 +2155,7 @@
 
     iput v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleHeight:F
 
-    .line 464
+    .line 467
     new-instance v15, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -2147,7 +2212,7 @@
 
     iput-object v15, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
-    .line 465
+    .line 468
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
@@ -2156,7 +2221,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setFocusable(Z)V
 
-    .line 466
+    .line 469
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
@@ -2165,7 +2230,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setBypassTouch(Z)V
 
-    .line 467
+    .line 470
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
@@ -2176,7 +2241,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 468
+    .line 471
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
@@ -2187,7 +2252,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setTextFont(Landroid/graphics/Typeface;)V
 
-    .line 469
+    .line 472
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
@@ -2196,7 +2261,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 471
+    .line 474
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
 
     move-result v1
@@ -2205,10 +2270,10 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->setSizeForOrientation(I)V
 
-    .line 472
+    .line 475
     return-void
 
-    .line 391
+    .line 394
     .end local v14    # "description":Ljava/lang/String;
     .end local v25    # "landscapeRows":I
     .end local v27    # "rows":I
@@ -2262,7 +2327,7 @@
 
     goto/16 :goto_0
 
-    .line 407
+    .line 410
     .restart local v29    # "subDescription":Ljava/lang/String;
     :cond_5
     move-object/from16 v0, p0
@@ -2278,7 +2343,7 @@
     .restart local v14    # "description":Ljava/lang/String;
     goto/16 :goto_1
 
-    .line 432
+    .line 435
     .restart local v25    # "landscapeRows":I
     .restart local v27    # "rows":I
     .restart local v28    # "stringHeight":F
@@ -2295,7 +2360,7 @@
 
     goto/16 :goto_2
 
-    .line 447
+    .line 450
     :cond_7
     move-object/from16 v0, p0
 
@@ -2307,7 +2372,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 448
+    .line 451
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -2334,7 +2399,7 @@
 
     goto/16 :goto_3
 
-    .line 456
+    .line 459
     :cond_8
     move-object/from16 v0, p0
 
@@ -2346,7 +2411,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 457
+    .line 460
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -2381,7 +2446,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 210
+    .line 213
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCommand:Lcom/sec/android/app/camera/command/MenuCommand;
 
     if-eqz v1, :cond_0
@@ -2394,7 +2459,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 211
+    .line 214
     const-string v1, "ModeInfoItem"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2423,40 +2488,40 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 213
+    .line 216
     invoke-direct {p0}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->isCurrentMode()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 214
+    .line 217
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mClickListener:Lcom/samsung/android/glview/GLView$ClickListener;
 
     if-eqz v1, :cond_0
 
-    .line 215
+    .line 218
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mClickListener:Lcom/samsung/android/glview/GLView$ClickListener;
 
     invoke-interface {v1, p1}, Lcom/samsung/android/glview/GLView$ClickListener;->onClick(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 228
+    .line 231
     :cond_0
     :goto_0
     return v0
 
-    .line 219
+    .line 222
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mSelectListener:Lcom/sec/android/app/camera/widget/gl/ModeInfoItem$SelectListener;
 
     if-eqz v0, :cond_2
 
-    .line 220
+    .line 223
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mSelectListener:Lcom/sec/android/app/camera/widget/gl/ModeInfoItem$SelectListener;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem$SelectListener;->onSelect(Lcom/samsung/android/glview/GLView;)V
 
-    .line 224
+    .line 227
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCommand:Lcom/sec/android/app/camera/command/MenuCommand;
 
@@ -2466,12 +2531,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 225
+    .line 228
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mCommand:Lcom/sec/android/app/camera/command/MenuCommand;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/command/MenuCommand;->execute()Z
 
-    .line 226
+    .line 229
     :cond_3
     const/4 v0, 0x1
 
@@ -2483,13 +2548,13 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 233
+    .line 236
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->setSizeForOrientation(I)V
 
-    .line 234
+    .line 237
     invoke-super {p0, p1}, Lcom/sec/android/app/camera/widget/gl/Item;->onOrientationChanged(I)V
 
-    .line 235
+    .line 238
     return-void
 .end method
 
@@ -2498,19 +2563,19 @@
     .param p1, "visibility"    # I
 
     .prologue
-    .line 243
+    .line 246
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     if-eqz v0, :cond_0
 
-    .line 244
+    .line 247
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, v1}, Lcom/samsung/android/glview/GLLine;->setVisibility(IZ)V
 
-    .line 246
+    .line 249
     :cond_0
     return-void
 .end method
@@ -2520,31 +2585,31 @@
     .param p1, "draggable"    # Z
 
     .prologue
-    .line 250
+    .line 253
     invoke-super {p0, p1}, Lcom/sec/android/app/camera/widget/gl/Item;->setDraggable(Z)V
 
-    .line 251
+    .line 254
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_0
 
-    .line 252
+    .line 255
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLButton;->setDraggable(Z)V
 
-    .line 255
+    .line 258
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_1
 
-    .line 256
+    .line 259
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLText;->setDraggable(Z)V
 
-    .line 258
+    .line 261
     :cond_1
     return-void
 .end method
@@ -2554,17 +2619,17 @@
     .param p1, "mute"    # Z
 
     .prologue
-    .line 261
+    .line 264
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_0
 
-    .line 262
+    .line 265
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 264
+    .line 267
     :cond_0
     return-void
 .end method
@@ -2574,10 +2639,10 @@
     .param p1, "l"    # Lcom/sec/android/app/camera/widget/gl/ModeInfoItem$SelectListener;
 
     .prologue
-    .line 272
+    .line 275
     iput-object p1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mSelectListener:Lcom/sec/android/app/camera/widget/gl/ModeInfoItem$SelectListener;
 
-    .line 273
+    .line 276
     return-void
 .end method
 
@@ -2590,14 +2655,14 @@
 
     const/4 v7, 0x0
 
-    .line 276
+    .line 279
     const/4 v1, 0x0
 
-    .line 277
+    .line 280
     .local v1, "itemHeight":F
     const/4 v0, 0x0
 
-    .line 279
+    .line 282
     .local v0, "iconPosY":F
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
@@ -2605,12 +2670,12 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 280
+    .line 283
     rem-int/lit8 v2, p1, 0x2
 
     if-nez v2, :cond_5
 
-    .line 281
+    .line 284
     iget v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescriptionLandscapeHeight:F
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_PADDING:F
@@ -2619,17 +2684,17 @@
 
     add-float v1, v2, v3
 
-    .line 282
+    .line 285
     iget v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ITEM_HEIGHT:F
 
     cmpg-float v2, v1, v2
 
     if-gez v2, :cond_0
 
-    .line 283
+    .line 286
     iget v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ITEM_HEIGHT:F
 
-    .line 285
+    .line 288
     :cond_0
     iget v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_WIDTH:F
 
@@ -2645,7 +2710,7 @@
 
     div-float v0, v2, v8
 
-    .line 287
+    .line 290
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_WIDTH_LANDSCAPE:F
@@ -2658,7 +2723,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setSize(FF)V
 
-    .line 288
+    .line 291
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_DIVIDER_POS_X:F
@@ -2677,7 +2742,7 @@
 
     invoke-virtual {v2, v3, v4, v5, v6}, Lcom/samsung/android/glview/GLLine;->setLine(FFFF)V
 
-    .line 289
+    .line 292
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_WIDTH:F
@@ -2692,14 +2757,14 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setHeight(F)V
 
-    .line 291
+    .line 294
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 292
+    .line 295
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_POS_X:F
@@ -2712,7 +2777,7 @@
 
     invoke-virtual {v2, v3, v7}, Lcom/samsung/android/glview/GLText;->moveLayoutAbsolute(FF)V
 
-    .line 293
+    .line 296
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_POS_X:F
@@ -2725,7 +2790,7 @@
 
     invoke-virtual {v2, v3, v7}, Lcom/samsung/android/glview/GLLine;->moveLayoutAbsolute(FF)V
 
-    .line 294
+    .line 297
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
@@ -2740,12 +2805,12 @@
 
     invoke-virtual {v2, v3, v0}, Lcom/samsung/android/glview/GLButton;->moveLayoutAbsolute(FF)V
 
-    .line 295
+    .line 298
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v2, :cond_1
 
-    .line 296
+    .line 299
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_POS_X:F
@@ -2776,13 +2841,13 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLImage;->moveLayoutAbsolute(FF)V
 
-    .line 298
+    .line 301
     :cond_1
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v2, :cond_2
 
-    .line 299
+    .line 302
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
@@ -2801,7 +2866,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->moveLayoutAbsolute(FF)V
 
-    .line 311
+    .line 314
     :cond_2
     :goto_0
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
@@ -2812,7 +2877,7 @@
 
     invoke-virtual {p0, v2, v1}, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->setSize(FF)V
 
-    .line 342
+    .line 345
     :goto_1
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
@@ -2820,21 +2885,21 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 343
+    .line 346
     return-void
 
-    .line 302
+    .line 305
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2, v7, v0}, Lcom/samsung/android/glview/GLButton;->moveLayoutAbsolute(FF)V
 
-    .line 303
+    .line 306
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v2, :cond_4
 
-    .line 304
+    .line 307
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
@@ -2859,7 +2924,7 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 305
+    .line 308
     invoke-virtual {v4}, Lcom/samsung/android/glview/GLButton;->getLayoutY()F
 
     move-result v4
@@ -2872,16 +2937,16 @@
 
     sub-float/2addr v4, v5
 
-    .line 304
+    .line 307
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLImage;->moveLayoutAbsolute(FF)V
 
-    .line 307
+    .line 310
     :cond_4
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v2, :cond_2
 
-    .line 308
+    .line 311
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_WIDTH:F
@@ -2892,7 +2957,7 @@
 
     goto :goto_0
 
-    .line 313
+    .line 316
     :cond_5
     iget v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescriptionHeight:F
 
@@ -2902,17 +2967,17 @@
 
     add-float v1, v2, v3
 
-    .line 314
+    .line 317
     iget v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ITEM_HEIGHT:F
 
     cmpg-float v2, v1, v2
 
     if-gez v2, :cond_6
 
-    .line 315
+    .line 318
     iget v1, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ITEM_HEIGHT:F
 
-    .line 317
+    .line 320
     :cond_6
     iget v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_WIDTH:F
 
@@ -2928,7 +2993,7 @@
 
     div-float v0, v2, v8
 
-    .line 319
+    .line 322
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_WIDTH_PORTRAIT:F
@@ -2941,7 +3006,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setSize(FF)V
 
-    .line 320
+    .line 323
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_DIVIDER_POS_X:F
@@ -2960,7 +3025,7 @@
 
     invoke-virtual {v2, v3, v4, v5, v6}, Lcom/samsung/android/glview/GLLine;->setLine(FFFF)V
 
-    .line 321
+    .line 324
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_WIDTH:F
@@ -2975,14 +3040,14 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setHeight(F)V
 
-    .line 323
+    .line 326
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
     move-result v2
 
     if-eqz v2, :cond_8
 
-    .line 324
+    .line 327
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDescription:Lcom/samsung/android/glview/GLText;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_POS_X:F
@@ -2995,7 +3060,7 @@
 
     invoke-virtual {v2, v3, v7}, Lcom/samsung/android/glview/GLText;->moveLayoutAbsolute(FF)V
 
-    .line 325
+    .line 328
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDivider:Lcom/samsung/android/glview/GLLine;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->DESCRIPTION_POS_X:F
@@ -3008,7 +3073,7 @@
 
     invoke-virtual {v2, v3, v7}, Lcom/samsung/android/glview/GLLine;->moveLayoutAbsolute(FF)V
 
-    .line 326
+    .line 329
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenHeightPixels()I
@@ -3023,12 +3088,12 @@
 
     invoke-virtual {v2, v3, v0}, Lcom/samsung/android/glview/GLButton;->moveLayoutAbsolute(FF)V
 
-    .line 327
+    .line 330
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v2, :cond_7
 
-    .line 328
+    .line 331
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     iget v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->MODE_INFO_ICON_POS_X:F
@@ -3051,17 +3116,17 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 329
+    .line 332
     invoke-virtual {v5}, Lcom/samsung/android/glview/GLImage;->getHeight()F
 
     move-result v5
 
     sub-float/2addr v4, v5
 
-    .line 328
+    .line 331
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLImage;->moveLayoutAbsolute(FF)V
 
-    .line 331
+    .line 334
     :cond_7
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 
@@ -3081,7 +3146,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->moveLayoutAbsolute(FF)V
 
-    .line 340
+    .line 343
     :goto_2
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenHeightPixels()I
 
@@ -3093,18 +3158,18 @@
 
     goto/16 :goto_1
 
-    .line 333
+    .line 336
     :cond_8
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2, v7, v0}, Lcom/samsung/android/glview/GLButton;->moveLayoutAbsolute(FF)V
 
-    .line 334
+    .line 337
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v2, :cond_9
 
-    .line 335
+    .line 338
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mDownloadIcon:Lcom/samsung/android/glview/GLImage;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
@@ -3129,7 +3194,7 @@
 
     iget-object v4, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mModeInfoButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 336
+    .line 339
     invoke-virtual {v4}, Lcom/samsung/android/glview/GLButton;->getLayoutY()F
 
     move-result v4
@@ -3142,10 +3207,10 @@
 
     sub-float/2addr v4, v5
 
-    .line 335
+    .line 338
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLImage;->moveLayoutAbsolute(FF)V
 
-    .line 338
+    .line 341
     :cond_9
     iget-object v2, p0, Lcom/sec/android/app/camera/widget/gl/ModeInfoItem;->mTitleText:Lcom/samsung/android/glview/GLText;
 

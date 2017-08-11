@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 584
+    .line 577
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$5;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 587
+    .line 580
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$5;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mIsDestroying:Z
@@ -60,7 +60,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 588
+    .line 581
     :cond_0
     const-string v0, "Camera6"
 
@@ -68,11 +68,11 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 604
+    .line 597
     :goto_0
     return-void
 
-    .line 591
+    .line 584
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$5;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -83,12 +83,12 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->waitForStartPreviewThreadComplete()V
 
-    .line 593
+    .line 586
     const-string v0, "HeavyResource-loading"
 
     invoke-static {v0}, Lcom/sec/android/app/TraceWrapper;->traceBegin(Ljava/lang/String;)V
 
-    .line 596
+    .line 589
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -121,7 +121,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 597
+    .line 590
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$5;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSoundLoadingThread:Ljava/lang/Thread;
@@ -144,7 +144,7 @@
 
     if-nez v0, :cond_2
 
-    .line 598
+    .line 591
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$5;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSoundLoadingThread:Ljava/lang/Thread;
@@ -154,7 +154,7 @@
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 600
+    .line 593
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$5;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -167,7 +167,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/MenuManager;->createMenu(I)V
 
-    .line 602
+    .line 595
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -200,7 +200,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 603
+    .line 596
     invoke-static {}, Lcom/sec/android/app/TraceWrapper;->traceEnd()V
 
     goto :goto_0

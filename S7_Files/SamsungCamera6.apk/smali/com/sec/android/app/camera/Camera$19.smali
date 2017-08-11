@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->playSound(II)V
+    value = Lcom/sec/android/app/camera/Camera;->playCameraSound(II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,36 +44,37 @@
     .line 3843
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mStreamId:[I
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3200(Lcom/sec/android/app/camera/Camera;)[I
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraStreamId:[I
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$2500(Lcom/sec/android/app/camera/Camera;)[I
 
     move-result-object v7
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundId:I
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3300(Lcom/sec/android/app/camera/Camera;)I
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSoundIdToPlay:I
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$2600(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v8
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundPool:Landroid/media/SoundPool;
-    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3700(Lcom/sec/android/app/camera/Camera;)Landroid/media/SoundPool;
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSoundPool:Landroid/media/SoundPool;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3000(Lcom/sec/android/app/camera/Camera;)Landroid/media/SoundPool;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundPoolId:[I
-    invoke-static {v1}, Lcom/sec/android/app/camera/Camera;->access$3400(Lcom/sec/android/app/camera/Camera;)[I
+    .line 3844
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSoundPoolId:[I
+    invoke-static {v1}, Lcom/sec/android/app/camera/Camera;->access$2700(Lcom/sec/android/app/camera/Camera;)[I
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundId:I
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$3300(Lcom/sec/android/app/camera/Camera;)I
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSoundIdToPlay:I
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2600(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v2
 
@@ -81,15 +82,15 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mStreamVolume:F
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$3500(Lcom/sec/android/app/camera/Camera;)F
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraStreamVolume:F
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2800(Lcom/sec/android/app/camera/Camera;)F
 
     move-result v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mStreamVolume:F
-    invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$3500(Lcom/sec/android/app/camera/Camera;)F
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraStreamVolume:F
+    invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$2800(Lcom/sec/android/app/camera/Camera;)F
 
     move-result v3
 
@@ -97,8 +98,8 @@
 
     iget-object v5, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundLoop:I
-    invoke-static {v5}, Lcom/sec/android/app/camera/Camera;->access$3600(Lcom/sec/android/app/camera/Camera;)I
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSoundLoop:I
+    invoke-static {v5}, Lcom/sec/android/app/camera/Camera;->access$2900(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v5
 
@@ -110,14 +111,14 @@
 
     aput v0, v7, v8
 
-    .line 3844
+    .line 3845
     const-string v0, "Camera6"
 
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "SoundPool.play - channelId:"
+    const-string v2, "CameraSoundPool.play - channelId:"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -125,15 +126,15 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mStreamId:[I
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$3200(Lcom/sec/android/app/camera/Camera;)[I
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraStreamId:[I
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2500(Lcom/sec/android/app/camera/Camera;)[I
 
     move-result-object v2
 
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$19;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundId:I
-    invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$3300(Lcom/sec/android/app/camera/Camera;)I
+    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSoundIdToPlay:I
+    invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$2600(Lcom/sec/android/app/camera/Camera;)I
 
     move-result v3
 
@@ -149,6 +150,6 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3845
+    .line 3846
     return-void
 .end method

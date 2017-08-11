@@ -60,7 +60,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 33
-    const v0, 0x7f0b0152
+    const v0, 0x7f0b0153
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -73,7 +73,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/PageNavigator;->PAGE_NAVIGATOR_ITEM_SIZE:F
 
     .line 34
-    const v0, 0x7f0b0151
+    const v0, 0x7f0b0152
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -276,7 +276,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/menu/PageNavigator;->PAGE_NAVIGATOR_ITEM_SIZE:F
 
-    const v6, 0x7f02021f
+    const v6, 0x7f02021e
 
     move v3, v2
 
@@ -526,7 +526,7 @@
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 150
-    const v3, 0x7f020220
+    const v3, 0x7f02021f
 
     invoke-virtual {v0, v3, v6, v6, v6}, Lcom/samsung/android/glview/GLButton;->setButtonResources(IIII)V
 
@@ -537,7 +537,7 @@
 
     .line 153
     :cond_1
-    const v3, 0x7f02021f
+    const v3, 0x7f02021e
 
     invoke-virtual {v0, v3, v6, v6, v6}, Lcom/samsung/android/glview/GLButton;->setButtonResources(IIII)V
 

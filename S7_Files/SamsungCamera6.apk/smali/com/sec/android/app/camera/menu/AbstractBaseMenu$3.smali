@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
 
     .prologue
-    .line 207
+    .line 237
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/AbstractBaseMenu$3;->this$0:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,28 +42,28 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 210
+    .line 240
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractBaseMenu$3;->this$0:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/AbstractBaseMenu;->mQuickView:Lcom/sec/android/app/camera/menu/QuickView;
 
     if-eqz v0, :cond_0
 
-    .line 211
+    .line 241
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractBaseMenu$3;->this$0:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/AbstractBaseMenu;->mQuickView:Lcom/sec/android/app/camera/menu/QuickView;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/QuickView;->hideReview()V
 
-    .line 212
+    .line 242
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/AbstractBaseMenu$3;->this$0:Lcom/sec/android/app/camera/menu/AbstractBaseMenu;
 
     const/4 v1, 0x0
 
     iput-boolean v1, v0, Lcom/sec/android/app/camera/menu/AbstractBaseMenu;->mReviewShowing:Z
 
-    .line 214
+    .line 244
     :cond_0
     return-void
 .end method
@@ -73,7 +73,7 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 218
+    .line 248
     return-void
 .end method
 
@@ -82,6 +82,6 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 222
+    .line 252
     return-void
 .end method

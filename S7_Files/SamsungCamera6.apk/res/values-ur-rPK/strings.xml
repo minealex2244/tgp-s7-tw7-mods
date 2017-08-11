@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">سست رفتار سے دیکھنے کے لئے ویڈیوز کو ہائی فریم کی شرح پر ریکارڈ کریں۔ آپ ویڈیوز ریکارڈ کرنے کے بعد کسی بھی ویڈیو کے مخصوص حصہ کو سست رفتار پر چلا سکتے ہیں۔</string>
     <string name="SM_SMART_SELFSHOT">پیچھے کے کیمرہ سے سیلفی</string>
     <string name="SM_SMART_SELFSHOT_description">جب آپ سیلف پورٹریٹ تصویریں لیں گے تو کیمرہ خودکار طور پر آپ کے چہرہ کا سراغ لگائے گا اور اس پر فوکس کرے گا۔</string>
+    <string name="SM_SOCIAL">سوشل</string>
+    <string name="SM_SOCIAL_description">تصاویر لیں اور انہیں سوشل نیٹ ورک پر آسانی سے شیئر کریں۔</string>
     <string name="SM_SPORTS">اسپورٹس</string>
     <string name="SM_SPORTS_SCENE_description">تیزی سے حرکت کرنے والی اشیاء کی واضح تر تصویریں لیں۔</string>
     <string name="SM_STORY">آواز اور شاٹ</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">پوری اسکرین منظر (16:9)</string>
     <string name="Title_Voice_Capture">وائس کنٹرول</string>
     <string name="Title_Voice_guide">وائس گائیڈ</string>
-    <string name="Title_Volume_Key_As">والیوم کے بٹن کے فنکشن</string>
+    <string name="Title_Volume_Key_As">والیوم کیی فنکشن</string>
     <string name="Title_WhiteBalance">وہائٹ بیلینس</string>
     <string name="Title_common">عام</string>
     <string name="Title_front">آگے کا کیمرہ</string>
@@ -359,7 +361,7 @@
     <string name="cover_runtime_permission_message_for_location">‏S View سرورق کے بند ہونے پر محل وقوع ٹیگز استعمال کرنے سے قاصر۔ سرورق کھولیں، کیمرہ کھولیں، پھر متعلقہ اجازتوں کی اجازت دیں اور دوبارہ کوشش کریں۔</string>
     <string name="cover_runtime_permission_message_secure_lock">‏S View سرورق بند ہونے کے وقت کیمرہ کھولنے سے قاصر۔ سرورق کھولیں، اپنا آلہ انلاک کریں، کیمرہ کھولیں، پھر متعلقہ اجازتوں کی اجازت دیں۔</string>
     <string name="delete">حذف کریں</string>
-    <string name="detach_keyboard_cover_popup">%s کھولنے کرنے کے لیے، آلہ سے کی بورڈ کے سرورق کو غیر منسلک کریں۔</string>
+    <string name="detach_keyboard_cover_popup">%s کھولنے کرنے کے لیے، آلہ سے کیی بورڈ کے سرورق کو غیر منسلک کریں۔</string>
     <string name="disable">غیرفعال۔</string>
     <string name="disable_btn">نااہل کریں</string>
     <string name="distortion_guide">ان چہروں کی شکل درست کریں جو منسخ کردہ ظاہر ہوتے ہیں۔</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">مربع شکل</string>
     <string name="help_change_mode_tip_1">دستیاب کیمرہ موڈز دیکھنے کے لیے دائیں سوائپ کریں۔</string>
     <string name="help_change_mode_tip_2">اس موڈ کو منتخب کریں جسے آپ استعمال کرنا چاہتے ہیں۔</string>
+    <string name="help_change_mode_tip_3">صرف خودکار اور سیلفی کیمرہ موڈز آسان موڈ کے اہل ہونے کے دوران دستیاب ہے۔</string>
     <string name="help_changing_the_camera_mode">کیمرہ موڈ منتخب کرنا</string>
+    <string name="help_changing_the_camera_mode_header">کوئی کیمرہ موڈ منتخب کرنا</string>
+    <string name="help_changing_the_camera_mode_title">کیمرہ موڈ کو تبدیل کرنا</string>
     <string name="help_recording_videos">ویڈیوز ریکارڈ کرنا</string>
     <string name="help_recording_videos_tip_1">%s پر ٹیپ کریں۔</string>
     <string name="help_recording_videos_tip_1_tts">کیمکارڈر بٹن کو تھپتھپائیں۔</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">ریکارڈنگ روکنے کیلئے روکیں بٹن کو تھپتھپائیں۔</string>
     <string name="help_recording_videos_tip_snapshot">ویڈیو ریکارڈ کرنے کے دوران تصویریں لینے کے لئے %s پر ٹیپ کریں۔</string>
     <string name="help_recording_videos_tip_snapshot_tts">ویڈیو ریکارڈ کرنے کے دوران تصویریں لینے کے لئے کیمرہ بٹن پر ٹیپ کریں۔</string>
-    <string name="help_section_summary">ہر مواقع کے لیے مناسب، کئی ایک مختلف اثرات کا استعمال کرکے تصاویر لیں یا ویڈیوز ریکارڈ کریں۔ صرف خودکار اور سیلفی کیمرہ موڈز، آسان موڈ کے اہل ہونے پر دستیاب ہوتا ہے، اور کسی اثرات کا اطلاق نہیں کیا جاسکتا ہے۔</string>
+    <string name="help_section_summary">ہر مواقع کے لیے مناسب، کئی ایک مختلف اثرات کا استعمال کرکے تصاویر لیں یا ویڈیوز ریکارڈ کریں۔</string>
     <string name="help_selecting_camera_mode">کیمرہ موڈ منتخب کرنا</string>
     <string name="help_taking_pictures">تصاویر لینا</string>
     <string name="help_taking_pictures_tip_1">اس شے پر ٹیپ کریں جسے آپ فوکس میں لانا چاہتے ہیں۔</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">کیمرہ بٹن پر تھپتھپائیں اور اپنے آلہ کو آھستہ سے ایک سمت میں سویول کریں۔</string>
     <string name="help_viewing_pics_and_videos_tip_1">اپنی تصاویر لینے یا ویڈیوز ریکارڈ کرنے کے فوری بعد انہیں دیکھنے کے لیے %s کو تھپتھپائیں۔</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">لینے یا ریکارڈ کرنے کے فوری بعد اپنی تصویروں یا ویڈیوز کو دیکھنے کیلئے فوری ملاحظہ بٹن کو تھپتھپائیں۔</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">تصویریں اور ویڈیوز دیکھنا</string>
     <string name="high_resolution_video_description">جزیات کاری میں ریکارڈنگ کے دوران درج ذیل دستیاب نہیں ہوگا %s:</string>
     <string name="highlight">نمایاں کردہ اشیاء</string>

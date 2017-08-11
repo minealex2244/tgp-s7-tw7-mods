@@ -65,7 +65,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 42
-    const v0, 0x7f0b00e7
+    const v0, 0x7f0b00e8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -76,7 +76,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->PREVIEW_WIDTH:I
 
     .line 43
-    const v0, 0x7f0b00e6
+    const v0, 0x7f0b00e7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -87,7 +87,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->PREVIEW_HEIGHT:I
 
     .line 44
-    const v0, 0x7f0b00f7
+    const v0, 0x7f0b00f8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -144,7 +144,7 @@
     invoke-direct {p0, v0, p2, p3}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 42
-    const v0, 0x7f0b00e7
+    const v0, 0x7f0b00e8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -155,7 +155,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->PREVIEW_WIDTH:I
 
     .line 43
-    const v0, 0x7f0b00e6
+    const v0, 0x7f0b00e7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -166,7 +166,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->PREVIEW_HEIGHT:I
 
     .line 44
-    const v0, 0x7f0b00f7
+    const v0, 0x7f0b00f8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1077,11 +1077,25 @@
     .line 117
     iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mButton:Lcom/samsung/android/glview/GLSelectButton;
 
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/sec/android/app/camera/widget/gl/ItemEffectThumbnailButton;->mButton:Lcom/samsung/android/glview/GLSelectButton;
+
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLSelectButton;->getSelected()Z
 
     move-result v0
 
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
     return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public onCameraSettingChanged(II)V

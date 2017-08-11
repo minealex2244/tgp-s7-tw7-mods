@@ -29,7 +29,7 @@
     .locals 0
 
     .prologue
-    .line 1571
+    .line 1573
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
     .param p1, "modeId"    # I
 
     .prologue
-    .line 1591
+    .line 1593
     and-int/lit16 v0, p0, 0x7fff
 
     shl-int/lit8 v0, v0, 0x10
@@ -60,7 +60,7 @@
     .param p0, "combinedKey"    # I
 
     .prologue
-    .line 1595
+    .line 1597
     shr-int/lit8 v0, p0, 0x10
 
     return v0
@@ -71,7 +71,7 @@
     .param p0, "combinedKey"    # I
 
     .prologue
-    .line 1599
+    .line 1601
     const v0, 0xffff
 
     and-int/2addr v0, p0

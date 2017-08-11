@@ -190,6 +190,8 @@ Panning shot: Capture a sense of motion when taking pictures of moving objects."
     <string name="SM_SLOW_VIDEO_description">Record videos at a high frame rate for viewing in slow motion. You can play a specific section of each video in slow motion after recording it.</string>
     <string name="SM_SMART_SELFSHOT">Rear-cam selfie</string>
     <string name="SM_SMART_SELFSHOT_description">The rear camera will automatically detect and focus on your face when you take self-portrait pictures.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Take pictures and share them easily on social networks.</string>
     <string name="SM_SPORTS">Sports</string>
     <string name="SM_SPORTS_SCENE_description">Take clearer pictures of fast moving subjects.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -393,7 +395,10 @@ correction"</string>
     <string name="guideline_square">Square</string>
     <string name="help_change_mode_tip_1">Swipe right to view available camera modes.</string>
     <string name="help_change_mode_tip_2">Select the mode that you want to use.</string>
+    <string name="help_change_mode_tip_3">Only the Auto and Selfie camera modes are available while Easy mode is turned on.</string>
     <string name="help_changing_the_camera_mode">Selecting camera modes</string>
+    <string name="help_changing_the_camera_mode_header">Selecting a camera mode</string>
+    <string name="help_changing_the_camera_mode_title">Changing the camera mode</string>
     <string name="help_recording_videos">Recording videos</string>
     <string name="help_recording_videos_tip_1">Tap %s.</string>
     <string name="help_recording_videos_tip_1_tts">Tap the camcorder button.</string>
@@ -401,7 +406,7 @@ correction"</string>
     <string name="help_recording_videos_tip_2_tts">Tap the stop button to stop recording.</string>
     <string name="help_recording_videos_tip_snapshot">Tap %s to take pictures while recording video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Tap the camera button to take pictures while recording video.</string>
-    <string name="help_section_summary">Take pictures or record videos using a variety of different effects, to suit all occasions. Only the Auto and Selfie camera modes are available, and no effects can be applied, while Easy mode is turned on.</string>
+    <string name="help_section_summary">Take pictures or record videos using a variety of different effects, to suit all occasions.</string>
     <string name="help_selecting_camera_mode">Selecting camera modes</string>
     <string name="help_taking_pictures">Taking pictures</string>
     <string name="help_taking_pictures_tip_1">Tap the object you want to bring into focus.</string>
@@ -416,6 +421,7 @@ correction"</string>
     <string name="help_text_wideselfie">Tap the Camera button and swivel your <cst>device</cst> slowly in one direction.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Tap %s to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Tap the Quick view button to view your pictures or videos right after you take or record them.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Viewing pictures and videos</string>
     <string name="high_resolution_video_description">The following will be unavailable while recording in %s resolutions:</string>
     <string name="highlight">Highlights</string>

@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">Видеолорду бийик алкак коюмунда жаздырып жай кыймылда көрүүгө. Сиз ар видеонун өзгөчө бөлүгүн жай кыймылда жаздыргандан кийин ойното аласыз.</string>
     <string name="SM_SMART_SELFSHOT">Арткы камера селфи</string>
     <string name="SM_SMART_SELFSHOT_description">Арткы камера, өзүңүздүн портретин тартканда, автоматтуу түрдө өңүңүздү ажыратып таап, жана кунт коет.</string>
+    <string name="SM_SOCIAL">Коомдук</string>
+    <string name="SM_SOCIAL_description">Сүрөттөрдү тартып, аларды заматта коомдук тармактарда бөлүшүңүз.</string>
     <string name="SM_SPORTS">Спорттор</string>
     <string name="SM_SPORTS_SCENE_description">Тез жылган объекттердин таза сүрөттөрүн тартыңыз.</string>
     <string name="SM_STORY">Добуш &amp; Тартуу</string>
@@ -261,9 +263,9 @@
     <string name="Title_Viewmode">Толук экр. көрүн. (16:9)</string>
     <string name="Title_Voice_Capture">Үн башкаруусу</string>
     <string name="Title_Voice_guide">Үндүү көрсөтмө курал</string>
-    <string name="Title_Volume_Key_As">Volume key function</string>
+    <string name="Title_Volume_Key_As">Үн көлөм ачкыч функциясы</string>
     <string name="Title_WhiteBalance">Актын теңдиги</string>
-    <string name="Title_common">Common</string>
+    <string name="Title_common">Жалпы</string>
     <string name="Title_front">Алдыңкы камера</string>
     <string name="Title_rear">Арткы камера</string>
     <string name="Title_rear_lens_distortion_correction">Форма түзөтүүлөрү</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">Аянты</string>
     <string name="help_change_mode_tip_1">Байкалган камера режимдерин көрүүгө, оңго жылдырыңыз.</string>
     <string name="help_change_mode_tip_2">Колдонууну каалган режимди тандаңыз.</string>
+    <string name="help_change_mode_tip_3">Оңой режими иштетилген учурда, бир гана Авто жана Сэлфи камера режимдери байкалат.</string>
     <string name="help_changing_the_camera_mode">Камера режимдерин тандоо</string>
+    <string name="help_changing_the_camera_mode_header">Камера режимин тандаңыз</string>
+    <string name="help_changing_the_camera_mode_title">Камера режимин өзгөртүүдө</string>
     <string name="help_recording_videos">Видеолор жаздыруусу</string>
     <string name="help_recording_videos_tip_1">%s таптаңыз.</string>
     <string name="help_recording_videos_tip_1_tts">Видео жазгычтын баскычын таптаңыз.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">Жаздырууну токтотуу үчүн токтотуу баскычын таптаңыз.</string>
     <string name="help_recording_videos_tip_snapshot">Видео жаздырууда, сүрөттөрдү тартуу үчүн %s таптаңыз.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Видео жаздырууда, сүрөттөрдү тартуу үчүн камера баскычын таптаңыз.</string>
-    <string name="help_section_summary">Бардык учурларга жараган, ар кандай эффектердин түрлөрүн пайдаланып, сүрөттөрдү тартып, же видеолорду жаздырыңыз. Камеранын жалгыз гана Авто жана Селфи режимдери байкалат жана Оңой режими иштетилген убакта, эч кандай эффекттер колдонулбайт.</string>
+    <string name="help_section_summary">Бардык учурларга жараган, ар кандай эффектердин түрлөрүн пайдаланып, сүрөттөрдү тартып, же видеолорду жаздырыңыз.</string>
     <string name="help_selecting_camera_mode">Камера режимдерин тандоо</string>
     <string name="help_taking_pictures">Сүрөттөрдү тартуу</string>
     <string name="help_taking_pictures_tip_1">Кунтту коюуну каалаган объектти таптаңыз.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">Камера баскычын басып, түзмөктү бир багытта жай айландырыңыз.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Тартып же жаздырар замат сүрөттөр же видеолоруңузду көрүү үчүн %s таптаңыз.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Тартып же жаздырар замат сүрөттөр же видеолоруңузду көрүү үчүн тез көрүү баскычын таптаңыз.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Сүрөт. ж-а видео көрүү</string>
     <string name="high_resolution_video_description">Төмөнкү нерсе %s чечимдерине жаздырууда мүмкүн байкалбайт:</string>
     <string name="highlight">Жарык эффекттери</string>

@@ -23,7 +23,7 @@
     .line 35
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
-    const v1, 0x7f020223
+    const v1, 0x7f020222
 
     invoke-direct {v0, p1, v2, v2, v1}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -50,7 +50,7 @@
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/widget/gl/HDRIndicator;->getContext()Lcom/samsung/android/glview/GLContext;
 
-    const v1, 0x7f0a00d6
+    const v1, 0x7f0a00d8
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

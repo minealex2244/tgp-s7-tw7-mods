@@ -196,6 +196,8 @@ Disparo panorámico: transmita la sensación de dinamismo al capturar imágenes 
     <string name="SM_SLOW_VIDEO_description">Grabe videos a una velocidad alta de cuadros para verlos en cámara lenta. Después de grabar videos, puede reproducir secciones específicas de cada uno en cámara lenta</string>
     <string name="SM_SMART_SELFSHOT">Selfie de cámara posterior</string>
     <string name="SM_SMART_SELFSHOT_description">La cámara posterior detectará automáticamente y se enfocará en su rostro cuando se capturen imágenes de autorretrato.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Capture imágenes y compártalas fácilmente en las redes sociales.</string>
     <string name="SM_SPORTS">Deportes</string>
     <string name="SM_SPORTS_SCENE_description">Capture imágenes más claras de sujetos en movimiento rápido.</string>
     <string name="SM_STORY">Sonido y captura</string>
@@ -267,7 +269,7 @@ Disparo panorámico: transmita la sensación de dinamismo al capturar imágenes 
     <string name="Title_Viewmode">Pantalla completa (16:9)</string>
     <string name="Title_Voice_Capture">Control de voz</string>
     <string name="Title_Voice_guide">Guía de voz</string>
-    <string name="Title_Volume_Key_As">Tecla de volumen</string>
+    <string name="Title_Volume_Key_As">Función de tecla Volumen</string>
     <string name="Title_WhiteBalance">Balance de blancos</string>
     <string name="Title_common">Común</string>
     <string name="Title_front">Cámara frontal</string>
@@ -399,7 +401,10 @@ de forma"</string>
     <string name="guideline_square">Cuadrado</string>
     <string name="help_change_mode_tip_1">Deslice hacia la derecha para ver todos los modos disponibles de la cámara.</string>
     <string name="help_change_mode_tip_2">Seleccione el modo que desea utilizar.</string>
+    <string name="help_change_mode_tip_3">Cuando el modo Fácil está activado, los únicos modos de cámara disponibles son Automático y Selfie.</string>
     <string name="help_changing_the_camera_mode">Seleccionar modos de cámara</string>
+    <string name="help_changing_the_camera_mode_header">Seleccionar un modo de cámara</string>
+    <string name="help_changing_the_camera_mode_title">Cambiar el modo de cámara</string>
     <string name="help_recording_videos">Grabar videos</string>
     <string name="help_recording_videos_tip_1">Pulse %s.</string>
     <string name="help_recording_videos_tip_1_tts">Pulse el botón de la cámara de video.</string>
@@ -407,7 +412,7 @@ de forma"</string>
     <string name="help_recording_videos_tip_2_tts">Pulse el botón detener para detener la grabación.</string>
     <string name="help_recording_videos_tip_snapshot">Pulse %s para capturar imágenes mientras graba video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Pulse el botón de la cámara para capturar imágenes mientras graba video.</string>
-    <string name="help_section_summary">Capture imágenes o grabe videos usando una serie de efectos diversos para cada ocasión. Cuando el modo Fácil está activado, solo están disponibles los modos de cámara Automático y Selfie, y no se puede aplicar efectos.</string>
+    <string name="help_section_summary">Capture imágenes o grabe videos con distintos modos de efectos, que se adaptan a todas las circunstancias.</string>
     <string name="help_selecting_camera_mode">Seleccionar modos de cámara</string>
     <string name="help_taking_pictures">Capturar imágenes</string>
     <string name="help_taking_pictures_tip_1">Pulse el objeto que desee enfocar.</string>
@@ -422,6 +427,7 @@ de forma"</string>
     <string name="help_text_wideselfie">Pulse el botón Cámara y gire su dispositivo lentamente en una dirección.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Pulse %s para ver sus imágenes y videos inmediatamente después de capturarlas o grabarlos.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Pulse el botón de vista rápida para ver las imágenes o los videos justo después de capturarlas o grabarlos.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Deslice hacia la izquierda para ver sus imágenes o videos inmediatamente después de capturarlas o grabarlos.</string>
     <string name="help_viewing_pictures_and_videos">Ver imágenes y videos</string>
     <string name="high_resolution_video_description">Las siguientes funciones no están disponibles al realizar grabaciones en resolución %s:</string>
     <string name="highlight">Destacados</string>

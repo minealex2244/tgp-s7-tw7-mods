@@ -186,6 +186,8 @@ Snimak pomjeranja: snimite osjećaj kretanja tokom snimanja slika ili pokretnih 
     <string name="SM_SLOW_VIDEO_description">Snimite videozapise pri velikoj brzini kadriranja radi prikazivanja u režimu usporenog kretanja. Možete reprodukovati određeni odjeljak svih videozapisa u režimu usporenog kretanja nakon što ih snimite.</string>
     <string name="SM_SMART_SELFSHOT">Selfi zadnjom kamerom</string>
     <string name="SM_SMART_SELFSHOT_description">Kada snimate autoportrete, zadnja kamera će automatski detektovati vaše lice i usredsrediti se na njega.</string>
+    <string name="SM_SOCIAL">Društvo</string>
+    <string name="SM_SOCIAL_description">Snimite slike i dijelite ih s lakoćom na društvenim mrežama.</string>
     <string name="SM_SPORTS">Sportovi</string>
     <string name="SM_SPORTS_SCENE_description">Snimite jasnije slike predmeta koji se brzo kreću.</string>
     <string name="SM_STORY">Zvuk i snimak</string>
@@ -256,9 +258,9 @@ Snimak pomjeranja: snimite osjećaj kretanja tokom snimanja slika ili pokretnih 
     <string name="Title_Viewmode">Prikaz cijelog ekrana (16:9)</string>
     <string name="Title_Voice_Capture">Kontrola glasom</string>
     <string name="Title_Voice_guide">Glasovni vodič</string>
-    <string name="Title_Volume_Key_As">Funkcija tipke za jačinu zvuka</string>
+    <string name="Title_Volume_Key_As">Volume key function</string>
     <string name="Title_WhiteBalance">Balans bijele boje</string>
-    <string name="Title_common">Common</string>
+    <string name="Title_common">Zajedničko</string>
     <string name="Title_front">Prednja kamera</string>
     <string name="Title_rear">Zadnja kamera</string>
     <string name="Title_rear_lens_distortion_correction">Ispravljanje oblika</string>
@@ -386,7 +388,10 @@ oblika"</string>
     <string name="guideline_square">Kvadrat</string>
     <string name="help_change_mode_tip_1">Prevucite prstom prema desno da biste prikazali dostupne režime kamere.</string>
     <string name="help_change_mode_tip_2">Izaberite režim koji želite koristiti.</string>
+    <string name="help_change_mode_tip_3">Dostupni su samo Automatski i Selfi režimi kamere dok je omogućen Jednostavni režim.</string>
     <string name="help_changing_the_camera_mode">Izbor režima kamere</string>
+    <string name="help_changing_the_camera_mode_header">Izbor režima kamere</string>
+    <string name="help_changing_the_camera_mode_title">Promjena režima kamere</string>
     <string name="help_recording_videos">Snimanje video zapisa</string>
     <string name="help_recording_videos_tip_1">Dodirnite %s.</string>
     <string name="help_recording_videos_tip_1_tts">Dodirnite dugme za video kameru.</string>
@@ -394,7 +399,7 @@ oblika"</string>
     <string name="help_recording_videos_tip_2_tts">Dodirnite dugme za zaustavljanje da biste zaustavili snimanje.</string>
     <string name="help_recording_videos_tip_snapshot">Dodirnite %s za snimanje slika tokom snimanja videozapisa.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Dodirnite dugme kamere za snimanje slika tokom snimanja videozapisa.</string>
-    <string name="help_section_summary">Snimite slike ili videozapise koristeći različite efekte koji su pogodni za sve prilike. Dostupni su samo režimi Automatske kamere i Selfi kamere, a efekti se neće primijeniti dok je omogućen Jednostavni režim.</string>
+    <string name="help_section_summary">Snimite slike ili videozapise pomoću velikog broja različitih efekata koji odgovaraju svim prilikama.</string>
     <string name="help_selecting_camera_mode">Izbor režima kamere</string>
     <string name="help_taking_pictures">Snimanje slika</string>
     <string name="help_taking_pictures_tip_1">Dodirnite objekat koji želite staviti u fokus.</string>
@@ -409,6 +414,7 @@ oblika"</string>
     <string name="help_text_wideselfie">Dodirnite dugme za Kameru i polako okrećite uređaj u jednom pravcu.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Dodirnite %s za prikaz slika ili videozapisa odmah nakon što ih snimite.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Dodirnite dugme za brzo prikazivanje da biste prikazali slike ili video zapise odmah nakon snimanja.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Prikazivanje slika i videa</string>
     <string name="high_resolution_video_description">Tokom snimanja u %s rezoluciji, bit će nedostupno sljedeće:</string>
     <string name="highlight">Isticanja</string>

@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">လႈပ္ရွားမႈ အေႏွးတြင္ ၾကည့္႐ႈရန္အတြက္ ဖရိန္ ႏႈန္းျမင့္တစ္ခုတြင္ ဗြီဒီယိုမ်ား မွတ္တမ္းတင္ပါ။ ဗြီဒီယိုမ်ား မွတ္တမ္းတင္ၿပီးေနာက္တြင္ လႈပ္ရွားမႈ အေႏွးျဖင့္ ၄င္းတို႔အသီးသီး၏ သတ္မွတ္ထားသည့္ အပိုင္းတစ္ပိုင္းကို သင္ ဖြင့္ႏိုင္သည္။</string>
     <string name="SM_SMART_SELFSHOT">ေနာက္-ကင္မရာ ကိုယ္တိုင္႐ိုက္ခ်က္</string>
     <string name="SM_SMART_SELFSHOT_description">ကိုယ့္ကိုယ္ကို ပံုတူမ်ား ရိုက္သည့္အခါ ေနာက္ကင္မရာက သင့္မ်က္ႏွာကို အလိုအေလ်ာက္ ရွာသိၿပီး ဆံုခ်က္ျပဳေပးမည္။</string>
+    <string name="SM_SOCIAL">လူမႈေရး</string>
+    <string name="SM_SOCIAL_description">ဓာတ္ပံုမ်ားရုိက္ၿပီး လူမႈကြန္ရက္မ်ားတြင္ အလြယ္တကူ မွ်ေဝပါ။</string>
     <string name="SM_SPORTS">အားကစား</string>
     <string name="SM_SPORTS_SCENE_description">ျမန္စြာ ေရြ႕လ်ားေနေသာ အေၾကာင္းအရာမ်ား၏ ရွင္းေသာ ရုပ္ပံုမ်ား ရိုက္ပါ။</string>
     <string name="SM_STORY">အသံႏွင့္ရိုက္ခ်က္</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">ဖန္သားျပင္အျပည့္ျမင္ကြင္း (16:9)</string>
     <string name="Title_Voice_Capture">အသံ ထိန္းညႇိျခင္း</string>
     <string name="Title_Voice_guide">အသံ လမ္းညႊန္</string>
-    <string name="Title_Volume_Key_As">အသံ ခလုတ္ လုပ္ေဆာင္ခ်က္</string>
+    <string name="Title_Volume_Key_As">အသံအတိုးအက်ယ္ ခလုတ္ လုပ္ေဆာင္ခ်က္</string>
     <string name="Title_WhiteBalance">အျဖဴေရာင္ခ်ိန္ညႇိ</string>
     <string name="Title_common">သာမန္</string>
     <string name="Title_front">ေရွ႕ကင္မရာ</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">စတုရန္း</string>
     <string name="help_change_mode_tip_1">ရရွိႏိုင္သည့္ ကင္မရာအေနအထားမ်ားကို ၾကည့္႐ႈရန္ ညာဘက္သို႔ပြတ္ဆြဲပါ။</string>
     <string name="help_change_mode_tip_2">သင္ သံုးလိုသည့္ အေနအထား ေရြးပါ။</string>
+    <string name="help_change_mode_tip_3">လြယ္ကူအေနအထားဖြင့္ထားစဥ္ အလိုလိုႏွင့္ ကိုယ္တိုင္႐ိုက္ ကင္မရာအေနအထားမ်ားသာလၽွင္ရရွိႏိုင္သည္။</string>
     <string name="help_changing_the_camera_mode">ကင္မရာ အေနအထားေရြးခ်ယ္ျခင္း</string>
+    <string name="help_changing_the_camera_mode_header">ကင္မရာ အေနအထားတစ္ခု ေရြးပါ</string>
+    <string name="help_changing_the_camera_mode_title">ကင္မရာ အေနအထား ေျပာင္းျခင္း</string>
     <string name="help_recording_videos">ဗီဒီယိုမ်ား ရိုက္ျခင္း</string>
     <string name="help_recording_videos_tip_1">%s ႏွိပ္ပါ။</string>
     <string name="help_recording_videos_tip_1_tts">လက္ဆြဲကင္မရာ ခလုတ္ ႏွိပ္ပါ။</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">ဖမ္းယူျခင္း ရပ္ရန္ ရပ္ပါ ခလုတ္ကို ႏွိပ္ပါ။</string>
     <string name="help_recording_videos_tip_snapshot">ဗီဒီယို ရိုက္စဥ္ ပံုမ်ား ရိုက္ရန္ %s ႏွိပ္ပါ။</string>
     <string name="help_recording_videos_tip_snapshot_tts">ဗီဒီယို ရိုက္စဥ္ ပံုမ်ား ရိုက္ရန္ ကင္မရာ ခလုတ္ကို ႏွိပ္ပါ။</string>
-    <string name="help_section_summary">ျဖစ္ရပ္အားလုံး သဟဇာတျဖစ္ေစရန္ အထူးျပဳလုပ္ခ်က္ အမ်ိဳးမ်ိဳးသုံး၍ ဓာတ္ပုံ႐ိုက္ပါ (သို႔) ဗီဒီယိုမ်ား ႐ိုက္ကူးပါ။ အလိုလိုႏွင့္ ကိုယ္တိုင္႐ိုက္ ကင္မရာ အေနအထားမ်ားသာ ရရွိႏိုင္ၿပီး အလြယ္သုံး အေနအထားဖြင့္ထားစဥ္ အထူးျပဳလုပ္ခ်က္မ်ားကို က်င့္သုံး၍မရႏိုင္ပါ။</string>
+    <string name="help_section_summary">ျဖစ္ရပ္အားလံုး သဟဇာတျဖစ္ရန္ အထူးျပဳလုပ္ခ်က္ အမ်ဳိးမ်ဳိးသံုး၍ ရုပ္ပံုမ်ား (သို႔) ဗီဒီယိုမ်ား ရိုက္ပါ။</string>
     <string name="help_selecting_camera_mode">ကင္မရာ အေနအထားေရြးခ်ယ္ျခင္း</string>
     <string name="help_taking_pictures">ဓာတ္ပံုမ်ား ရိုက္ျခင္း</string>
     <string name="help_taking_pictures_tip_1">ဆံုခ်က္ထဲ ယူလာလိုသည့္ အရာဝတၳဳကို ႏွိပ္ပါ။</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">ကင္မရာခလုတ္ကို ႏွိပ္၍ သင့္ကင္မရာကို တစ္ခုခုသို႔ ဦးတည္ၿပီး ျဖည္းျဖည္းခ်င္း ဆုံလည္လွည့္ပါ။</string>
     <string name="help_viewing_pics_and_videos_tip_1">ဓာတ္ပုံမ်ား (သို႔) ဗီဒီယိုမ်ားကို သင္ ရိုက္ၿပီးသည္ႏွင့္ ခ်က္ခ်င္း ၎တို႔ကို ၾကည့္ရန္ %s ကို ႏွိပ္ပါ။</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">သင္၏ ဓာတ္ပုံမ်ား (သို႔) ဗီဒီယိုမ်ားကို ရိုက္ (သို႔) ရိုက္ကူး ၿပီးသည္ႏွင့္ခ်က္ခ်င္း ၎တို႔ကို ၾကည့္ရန္ အျမန္ၾကည့္ခလုတ္ကို ႏွိပ္ပါ။</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">႐ုပ္ပုံမ်ားႏွင့္ ဗြီဒီယိုမ်ား ၾကည့္ေနသည္</string>
     <string name="high_resolution_video_description">ပုံရိပ္ျပတ္သားမႈ %s တြင္ ႐ိုက္ကူးေနစဥ္ ေအာက္ပါအရာသည္ ရႏိုင္မည္ မဟုတ္ပါ :</string>
     <string name="highlight">အလင္းကဲေရာင္</string>

@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">"ਹੌਲੀ ਗਤੀ ਵਿੱਚ ਵੇਖਣ ਲਈ ਉੱਚ ਫਰੇਮ ਦਰ 'ਤੇ ਵੀਡਿਓਜ਼ ਰਿਕਾਰਡ ਕਰੋ। ਤੁਸੀਂ ਉਹਨਾਂ ਨੂੰ ਰਿਕਾਰਡ ਕਰਨ ਤੋਂ ਬਾਅਦ ਹਰੇਕ ਵੀਡਿਓ ਦੇ ਵਿਸ਼ੇਸ਼ ਭਾਗ ਨੂੰ ਹੌਲੀ ਗਤੀ ਵਿੱਚ ਚਲਾ ਸਕਦੇ ਹੋ।"</string>
     <string name="SM_SMART_SELFSHOT">ਪਿਛਲੇ ਕੈਮ. ਨਾਲ ਸੈਲਫ਼ੀ</string>
     <string name="SM_SMART_SELFSHOT_description">ਜਦੋਂ ਤੁਸੀਂ ਸੈਲਫ਼-ਪੋਰਟ੍ਰੇਟ ਤਸਵੀਰਾਂ ਲੈਂਦੇ ਹੋ ਤਾਂ ਪਿਛਲਾ ਕੈਮਰਾ ਸਵੈਚਲਿਤ ਰੂਪ ਤੋਂ ਤੁਹਾਡੇ ਚਿਹਰੇ ਦੀ ਖੋਜ ਕਰੇਗਾ ਅਤੇ ਫੋਕਸ ਕਰੇਗਾ।</string>
+    <string name="SM_SOCIAL">ਸਮਾਜਿਕ</string>
+    <string name="SM_SOCIAL_description">ਤਸਵੀਰਾਂ ਖਿੱਚੋ ਅਤੇ ਉਨ੍ਹਾਂ ਨੂੰ ਆਸਾਨੀ ਨਾਲ ਸਮਾਜਿਕ ਨੈੱਟਵਰਕਸ ਤੇ ਸਾਂਝਾ ਕਰੋ।</string>
     <string name="SM_SPORTS">ਖੇਡਾਂ</string>
     <string name="SM_SPORTS_SCENE_description">ਤੇਜ਼ੀ ਨਾਲ ਚੱਲ ਰਹੀਆਂ ਵਸਤੂਆਂ ਦੀਆਂ ਸਾਫ਼ ਤਸਵੀਰਾਂ ਲਉ।</string>
     <string name="SM_STORY">ਸਾਉਂਡ ਅਤੇ ਸ਼ੌਟ</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">ਵਰਗਾਕਾਰ</string>
     <string name="help_change_mode_tip_1">ਉਪਲਬਧ ਕੈਮਰਾ ਮੋਡਸ ਦੇਖਣ ਲਈ ਸੱਜੇ ਪਾਸੇ ਸਵਾਈਪ ਕਰੋ।</string>
     <string name="help_change_mode_tip_2">ਮੋਡ ਜਿਸਦਾ ਤੁਸੀਂ ਉਪਯੋਗ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ ਦੀ ਚੋਣ ਕਰੋ।</string>
+    <string name="help_change_mode_tip_3">ਇਜ਼ੀ ਮੋਡ ਦੇ ਸਮਰੱਥ ਹੋਣ ਦੌਰਾਨ ਸਿਰਫ ਸਵੈ ਅਤੇ ਸੈਲਫੀ ਕੈਮਰਾ ਮੋਡਸ ਉਪਲਬਧ ਹੁੰਦੇ ਹਨ।</string>
     <string name="help_changing_the_camera_mode">ਕੈਮਰਾ ਮੋਡਸ ਚੁਣਨਾ</string>
+    <string name="help_changing_the_camera_mode_header">ਕੈਮਰਾ ਮੋਡ ਚੁਣਨਾ</string>
+    <string name="help_changing_the_camera_mode_title">ਕੈਮਰਾ ਮੋਡ ਬਦਲਣਾ</string>
     <string name="help_recording_videos">ਵੀਡਿਓਜ਼ ਰਿਕਾਰਡ ਕਰਨਾ</string>
     <string name="help_recording_videos_tip_1">%s ਟੈਪ ਕਰੋ।</string>
     <string name="help_recording_videos_tip_1_tts">ਕੈਮਕਾਰਡਰ ਬਟਨ ਟੈਪ ਕਰੋ।</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">ਰਿਕਾਰਡਿੰਗ ਨੂੰ ਰੋਕਣ ਲਈ ਰੋਕੋ ਬਟਨ ਟੈਪ ਕਰੋ।</string>
     <string name="help_recording_videos_tip_snapshot">ਵੀਡਿਓ ਰਿਕਾਰਡ ਕਰਦੇ ਸਮੇਂ ਤਸਵੀਰਾਂ ਲੈਣ ਦੇ ਲਈ %s ਟੈਪ ਕਰੋ।</string>
     <string name="help_recording_videos_tip_snapshot_tts">ਵੀਡਿਓ ਰਿਕਾਰਡ ਕਰਦੇ ਸਮੇਂ ਤਸਵੀਰਾਂ ਲੈਣ ਦੇ ਲਈ ਕੈਮਰਾ ਬਟਨ ਟੈਪ ਕਰੋ।</string>
-    <string name="help_section_summary">ਸਾਰੇ ਅਵਸਰਾਂ ਦੇ ਅਨੁਰੂਪ, ਭਿੰਨ ਪ੍ਰਭਾਵਾਂ ਦੇ ਪ੍ਰਕਾਰਾਂ ਦਾ ਉਪਯੋਗ ਕਰਦੇ ਹੋਏ ਤਸਵੀਰਾਂ ਲਉ ਜਾਂ ਵੀਡਿਓਜ਼ ਰਿਕਾਰਡ ਕਰੋ। ਇਜ਼ੀ ਮੋਡ ਦੇ ਸਮਰੱਥ ਹੋਣ ਦੌਰਾਨ ਸਿਰਫ ਸਵੈ ਅਤੇ ਸੈਲਫੀ ਕੈਮਰਾ ਮੋਡਸ ਉਪਲਬਧ ਹੁੰਦੇ ਹਨ ਅਤੇ ਕੋਈ ਪ੍ਰਭਾਵ ਲਾਗੂ ਨਹੀਂ ਕੀਤੇ ਜਾ ਸਕਦੇ।</string>
+    <string name="help_section_summary">ਸਾਰੇ ਅਵਸਰਾਂ ਦੇ ਅਨੁਰੂਪ, ਭਿੰਨ ਪ੍ਰਭਾਵਾਂ ਦੇ ਪ੍ਰਕਾਰਾਂ ਦਾ ਉਪਯੋਗ ਕਰਦੇ ਹੋਏ ਵੀਡਿਓਜ਼ ਰਿਕਾਰਡ ਕਰੋ ਜਾਂ ਤਸਵੀਰਾਂ ਲਉ।</string>
     <string name="help_selecting_camera_mode">ਕੈਮਰਾ ਮੋਡਸ ਚੁਣਨਾ</string>
     <string name="help_taking_pictures">ਤਸਵੀਰਾਂ ਲੈਣਾ</string>
     <string name="help_taking_pictures_tip_1">ਔਬਜੈਕਟ ਜਿਸਨੂੰ ਤੁਸੀਂ ਫੋਕਸ ਵਿੱਚ ਲਿਆਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਨੂੰ ਟੈਪ ਕਰੋ।</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">ਕੈਮਰਾ ਬਟਨ ਟੈਪ ਕਰੋ ਅਤੇ ਆਪਣੇ ਡਿਵਾਈਸ ਨੂੰ ਹੌਲੀ-ਹੌਲੀ ਇੱਕ ਦਿਸ਼ਾ ਵਿੱਚ ਘੁਮਾਉ।</string>
     <string name="help_viewing_pics_and_videos_tip_1">ਆਪਣੇ ਵੱਲੋਂ ਤਸਵੀਰਾਂ ਲੈਣ ਜਾਂ ਵੀਡਿਓਜ਼ ਰਿਕਾਰਡ ਕਰਨ ਦੇ ਤੁਰੰਤ ਬਾਅਦ ਵੇਖਣ ਲਈ %s ਉੱਤੇ ਟੈਪ ਕਰੋ।</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">ਤੁਹਾਡੇ ਦੁਆਰਾ ਤਸਵੀਰਾਂ ਜਾਂ ਵੀਡਿਓਜ਼ ਲੈਣ ਜਾਂ ਰਿਕਾਰਡ ਕਰਨ ਦੇ ਤੁਰੰਤ ਬਾਅਦ ਹੀ ਉਹਨਾਂ ਨੂੰ ਦੇਖਣ ਦੇ ਲਈ ਤੁਰੰਤ ਦ੍ਰਿਸ਼ ਬਟਨ ਤੇ ਟੈਪ ਕਰੋ।</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ਤਸਵੀਰਾਂ ਅਤੇ ਵੀਡਿਓਜ਼ ਦੇਖਣਾ</string>
     <string name="high_resolution_video_description">%s ਰਿਜ਼ੋਲਿਉਸ਼ਨ ਵਿੱਚ ਰਿਕਾਰਡਿੰਗ ਕਰਦੇ ਸਮੇਂ ਨਿਮਨਲਿਖਤ ਅਣਉਪਲਬਧ ਹੋਣਗੇ:</string>
     <string name="highlight">ਹਾਈਲਾਈਟਸ</string>

@@ -31,7 +31,7 @@
     .line 38
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
-    const v1, 0x7f020229
+    const v1, 0x7f020228
 
     invoke-direct {v0, p1, v2, v2, v1}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 

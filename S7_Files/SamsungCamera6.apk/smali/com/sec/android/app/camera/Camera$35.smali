@@ -3,12 +3,12 @@
 .source "Camera.java"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/samsung/android/location/SemLocationListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->updateLatestMediaFromCMH()V
+    value = Lcom/sec/android/app/camera/Camera;->startAddressRequest()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 9216
+    .line 8995
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,208 +37,277 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 6
+.method public onLocationAvailable([Landroid/location/Location;)V
+    .locals 0
+    .param p1, "arg0"    # [Landroid/location/Location;
 
     .prologue
-    .line 9219
-    const-string v2, "Camera6"
-
-    const-string v3, "updateLatestMediaFromCMH : updateLatestMediaFromCMH***start"
-
-    invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 9220
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v0
-
-    .line 9221
-    .local v0, "startTime":J
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLatestMediaStateLock:Ljava/lang/Object;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2300(Lcom/sec/android/app/camera/Camera;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    monitor-enter v3
-
-    .line 9222
-    :try_start_0
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLatestMedia:Lcom/sec/android/app/camera/util/LatestMedia;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/util/LatestMedia;
-
-    move-result-object v2
-
-    if-nez v2, :cond_0
-
-    .line 9223
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    new-instance v4, Lcom/sec/android/app/camera/util/LatestMedia;
-
-    iget-object v5, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    invoke-virtual {v5}, Lcom/sec/android/app/camera/Camera;->getContext()Landroid/content/Context;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v5
-
-    invoke-direct {v4, v5}, Lcom/sec/android/app/camera/util/LatestMedia;-><init>(Landroid/content/ContentResolver;)V
-
-    # setter for: Lcom/sec/android/app/camera/Camera;->mLatestMedia:Lcom/sec/android/app/camera/util/LatestMedia;
-    invoke-static {v2, v4}, Lcom/sec/android/app/camera/Camera;->access$2402(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/util/LatestMedia;)Lcom/sec/android/app/camera/util/LatestMedia;
-
-    .line 9225
-    :cond_0
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/Engine;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_1
-
-    .line 9226
-    const-string v2, "Camera6"
-
-    const-string v4, "updateLatestMediaFromCMH"
-
-    invoke-static {v2, v4}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 9227
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLatestMedia:Lcom/sec/android/app/camera/util/LatestMedia;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$2400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/util/LatestMedia;
-
-    move-result-object v2
-
-    iget-object v4, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-    invoke-static {v4}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    move-result-object v4
-
-    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isCoverCamera()Z
-
-    move-result v4
-
-    iget-object v5, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-    invoke-static {v5}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    move-result-object v5
-
-    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isSecureCamera()Z
-
-    move-result v5
-
-    invoke-virtual {v2, v4, v5}, Lcom/sec/android/app/camera/util/LatestMedia;->updateCMH(ZZ)V
-
-    .line 9228
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/Engine;
-
-    move-result-object v2
-
-    iget-object v4, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLatestMedia:Lcom/sec/android/app/camera/util/LatestMedia;
-    invoke-static {v4}, Lcom/sec/android/app/camera/Camera;->access$2400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/util/LatestMedia;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Lcom/sec/android/app/camera/util/LatestMedia;->getOrientation()I
-
-    move-result v4
-
-    invoke-interface {v2, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->setLastContentOrientation(I)V
-
-    .line 9229
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/Engine;
-
-    move-result-object v2
-
-    iget-object v4, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    # getter for: Lcom/sec/android/app/camera/Camera;->mLatestMedia:Lcom/sec/android/app/camera/util/LatestMedia;
-    invoke-static {v4}, Lcom/sec/android/app/camera/Camera;->access$2400(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/util/LatestMedia;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Lcom/sec/android/app/camera/util/LatestMedia;->getUri()Landroid/net/Uri;
-
-    move-result-object v4
-
-    invoke-interface {v2, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->setLastContentUri(Landroid/net/Uri;)V
-
-    .line 9231
-    :cond_1
-    monitor-exit v3
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 9232
-    const-string v2, "Camera6"
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "updateLatestMediaFromCMH : updateLatestMediaFromCMH***end"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    move-result-wide v4
-
-    sub-long/2addr v4, v0
-
-    invoke-virtual {v3, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, "ms"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 9233
+    .line 8999
     return-void
+.end method
 
-    .line 9231
-    :catchall_0
-    move-exception v2
+.method public onLocationChanged(Landroid/location/Location;Landroid/location/Address;)V
+    .locals 4
+    .param p1, "arg0"    # Landroid/location/Location;
+    .param p2, "arg1"    # Landroid/location/Address;
 
-    :try_start_1
-    monitor-exit v3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .prologue
+    const/4 v3, 0x0
 
-    throw v2
+    .line 9003
+    if-eqz p2, :cond_0
+
+    .line 9004
+    const-string v0, ""
+
+    .line 9005
+    .local v0, "mAddressValue":Ljava/lang/String;
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Landroid/location/Address;->getCountryName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "|"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9006
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Landroid/location/Address;->getAdminArea()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "|"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9007
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Landroid/location/Address;->getSubAdminArea()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "|"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9008
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Landroid/location/Address;->getLocality()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "|"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9009
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Landroid/location/Address;->getSubLocality()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "|"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9010
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "|"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9011
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Landroid/location/Address;->getThoroughfare()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "|"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9012
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "|"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9013
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 9014
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # getter for: Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+    invoke-static {v1}, Lcom/sec/android/app/camera/Camera;->access$600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/Engine;
+
+    move-result-object v1
+
+    invoke-interface {v1, v0}, Lcom/sec/android/app/camera/interfaces/Engine;->setAddressValue(Ljava/lang/String;)V
+
+    .line 9016
+    .end local v0    # "mAddressValue":Ljava/lang/String;
+    :cond_0
+    if-eqz p1, :cond_1
+
+    .line 9017
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$35;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # setter for: Lcom/sec/android/app/camera/Camera;->mSemLocation:Landroid/location/Location;
+    invoke-static {v1, p1}, Lcom/sec/android/app/camera/Camera;->access$5002(Lcom/sec/android/app/camera/Camera;Landroid/location/Location;)Landroid/location/Location;
+
+    .line 9019
+    :cond_1
+    return-void
 .end method

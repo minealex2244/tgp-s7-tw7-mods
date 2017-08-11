@@ -190,6 +190,8 @@ Disparo panorâmico: capture uma sensação de movimento quando tirar fotografia
     <string name="SM_SLOW_VIDEO_description">Grave vídeos a uma velocidade de fotogramas elevada para visualização em câmara lenta. Pode reproduzir uma secção específica de cada vídeo em câmara lenta, depois de os gravar.</string>
     <string name="SM_SMART_SELFSHOT">Selfie traseira</string>
     <string name="SM_SMART_SELFSHOT_description">A câmara posterior irá automaticamente detectar e focar o seu rosto quando tirar um auto-retrato.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Tire fotografias e partilhe-as facilmente nas redes sociais.</string>
     <string name="SM_SPORTS">Desporto</string>
     <string name="SM_SPORTS_SCENE_description">Tire fotografias mais nítidas de objectos em movimento rápido.</string>
     <string name="SM_STORY">Som e disparo</string>
@@ -262,7 +264,7 @@ imagens"</string>
     <string name="Title_Viewmode">Vista de ecrã inteiro (16:9)</string>
     <string name="Title_Voice_Capture">Controlo de voz</string>
     <string name="Title_Voice_guide">Orientação por voz</string>
-    <string name="Title_Volume_Key_As">Função da tecla de volume</string>
+    <string name="Title_Volume_Key_As">Função de tecla de volume</string>
     <string name="Title_WhiteBalance">Equilíbrio de brancos</string>
     <string name="Title_common">Comum</string>
     <string name="Title_front">Câmara frontal</string>
@@ -394,7 +396,10 @@ de forma"</string>
     <string name="guideline_square">Quadrado</string>
     <string name="help_change_mode_tip_1">Deslize para a direita para ver os modos de câmara disponíveis.</string>
     <string name="help_change_mode_tip_2">Seleccione o modo que quer utilizar.</string>
+    <string name="help_change_mode_tip_3">Quando o Modo fácil está activado, só estão disponíveis o Modo automático e o Modo de câmara selfie.</string>
     <string name="help_changing_the_camera_mode">Seleccionar modos de câmara</string>
+    <string name="help_changing_the_camera_mode_header">Seleccionar um modo de câmara</string>
+    <string name="help_changing_the_camera_mode_title">Alterar o modo da câmara</string>
     <string name="help_recording_videos">Gravar vídeos</string>
     <string name="help_recording_videos_tip_1">Toque em %s.</string>
     <string name="help_recording_videos_tip_1_tts">Toque no botão da câmara de vídeo.</string>
@@ -402,7 +407,7 @@ de forma"</string>
     <string name="help_recording_videos_tip_2_tts">Toque no botão de parar para parar a gravação.</string>
     <string name="help_recording_videos_tip_snapshot">Toque em %s para tirar fotografias durante a gravação de um vídeo.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Toque no botão da câmara para tirar fotografias durante a gravação de um vídeo.</string>
-    <string name="help_section_summary">Tire fotografias ou grave vídeos utilizando toda uma variedade de efeitos diferentes, adequados a todas as ocasiões. Quando o Modo fácil está activado, só estão disponíveis o Modo automático e o Modo de câmara selfie, e não podem ser aplicados nenhuns efeitos.</string>
+    <string name="help_section_summary">Tire fotografias ou grave vídeos utilizando toda uma variedade de efeitos diferentes, adequados a todas as ocasiões.</string>
     <string name="help_selecting_camera_mode">Seleccionar modos de câmara</string>
     <string name="help_taking_pictures">Tirar fotografias</string>
     <string name="help_taking_pictures_tip_1">Toque no motivo que pretende focar.</string>
@@ -417,6 +422,7 @@ de forma"</string>
     <string name="help_text_wideselfie">Toque no botão da Câmara e gire o seu dispositivo lentamente numa direcção.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Toque em %s para ver fotografias ou vídeos logo depois de as ter tirado ou de os ter gravado.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Toque no botão de visualização rápida para ver fotografias ou vídeos logo depois de as ter tirado ou de os ter gravado.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Ver fotografias e vídeos</string>
     <string name="high_resolution_video_description">As funções que se seguem não estarão disponíveis durante a gravação nas resoluções %s:</string>
     <string name="highlight">Destaques</string>

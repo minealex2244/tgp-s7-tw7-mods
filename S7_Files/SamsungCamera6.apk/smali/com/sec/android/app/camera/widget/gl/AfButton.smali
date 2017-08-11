@@ -168,7 +168,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AfButton;->CONTRAST_AF_HEIGHT:I
 
     .line 54
-    const v0, 0x7f0b0333
+    const v0, 0x7f0b0334
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AfButton;->PHASE_AF_BASE_WIDTH:I
 
     .line 55
-    const v0, 0x7f0b0332
+    const v0, 0x7f0b0333
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -190,7 +190,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AfButton;->PHASE_AF_BASE_HEIGHT:I
 
     .line 56
-    const v0, 0x7f0b0335
+    const v0, 0x7f0b0336
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -201,7 +201,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/AfButton;->PHASE_AF_CONTROL_WIDTH:I
 
     .line 57
-    const v0, 0x7f0b0334
+    const v0, 0x7f0b0335
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

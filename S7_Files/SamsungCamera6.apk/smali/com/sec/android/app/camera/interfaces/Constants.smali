@@ -26,10 +26,6 @@
 
 .field public static final INTENT_ACTION_ENABLE_VIBRATOR:Ljava/lang/String; = "com.sec.android.app.camera.ENABLE_VIBRATOR"
 
-.field public static final KEY_LOCATION_TAG_FIRST_LAUNCH_CAMERA:Ljava/lang/String; = "location_tag_first_launch_camera_key"
-
-.field public static final KEY_LOCATION_TAG_POPUP_DISPLAY_COUNT:Ljava/lang/String; = "location_tag_popup_display_count_key"
-
 .field public static final MSCS_ON:Ljava/lang/String; = "sys.mdniecontrolservice.mscon"
 
 .field public static final MULTIWINDOW_FREEFORM_DENSITY_RATIO:F = 0.75f

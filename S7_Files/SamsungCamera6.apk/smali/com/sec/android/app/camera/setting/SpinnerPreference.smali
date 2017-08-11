@@ -258,7 +258,7 @@
     .line 98
     iget-object v7, p0, Lcom/sec/android/app/camera/setting/SpinnerPreference;->mSpinner:Landroid/widget/Spinner;
 
-    const v8, 0x7f0b0359
+    const v8, 0x7f0b035a
 
     invoke-static {v8}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 10382
+    .line 10463
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/engine/CommonEngine$1;
 
     .prologue
-    .line 10382
+    .line 10463
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;-><init>(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     return-void
@@ -54,14 +54,14 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 10385
+    .line 10466
     const-string v0, "CommonEngine"
 
     const-string v1, "ShutterCallback.onShutter"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10388
+    .line 10469
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -94,7 +94,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10390
+    .line 10471
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
@@ -107,33 +107,33 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 10408
+    .line 10489
     :cond_0
     :goto_0
     return-void
 
-    .line 10395
+    .line 10476
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mShutterEventListener:Lcom/sec/android/app/camera/interfaces/Engine$ShutterEventListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6900(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ShutterEventListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ShutterEventListener;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    .line 10396
+    .line 10477
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mShutterEventListener:Lcom/sec/android/app/camera/interfaces/Engine$ShutterEventListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6900(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ShutterEventListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7100(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ShutterEventListener;
 
     move-result-object v0
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine$ShutterEventListener;->onShutter()V
 
-    .line 10399
+    .line 10480
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -157,7 +157,7 @@
 
     if-ge v0, v1, :cond_3
 
-    .line 10400
+    .line 10481
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
@@ -169,7 +169,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/camera/core/SemCamera;->setShutterSoundMode(I)V
 
-    .line 10403
+    .line 10484
     :cond_3
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_NOT_SUPPORT_ZSL:Z
 
@@ -190,7 +190,7 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 10404
+    .line 10485
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
 
     move-result v0
@@ -212,7 +212,7 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 10405
+    .line 10486
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraFacing()I
 
     move-result v0
@@ -232,13 +232,13 @@
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsFlashConditionDetected:Z
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7000(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7200(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 10406
+    .line 10487
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ShutterCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 

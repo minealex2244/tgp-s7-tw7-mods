@@ -36,8 +36,6 @@
 
 .field private static final MESSAGE_TIMEOUT_MOVE_SLOWLY:I = 0x5
 
-.field private static final MOTION_PANORAMA_TEMP_AUDIO_FILE_NAME:Ljava/lang/String; = "motionpanorama.aac"
-
 .field private static final MOTION_PANORAMA_TEMP_FILE_NAME:Ljava/lang/String; = "motionpanorama.jpg"
 
 .field private static final PANORAMA_MAX_IMAGE_COUNT:I = 0x320
@@ -118,8 +116,6 @@
 
 .field private mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-.field private mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
-
 .field private mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
 .field private mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -190,10 +186,6 @@
 
 .field private mIsPreviewRectRotationSupported:Z
 
-.field private mIsSoundRecording:Z
-
-.field private mIsSoundRecordingEnabled:Z
-
 .field private mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
 
 .field private mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -233,8 +225,6 @@
 .field private mLivepreviewPortraitX:F
 
 .field private mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
-
-.field private mMediaRecorder:Landroid/media/MediaRecorder;
 
 .field private mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
@@ -278,7 +268,7 @@
     .locals 1
 
     .prologue
-    .line 116
+    .line 110
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -304,25 +294,25 @@
 
     const/4 v2, 0x0
 
-    .line 263
+    .line 246
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 118
+    .line 112
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_WIDTH:I
 
-    .line 119
+    .line 113
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenHeightPixels()I
 
     move-result v0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_HEIGHT:I
 
-    .line 120
-    const v0, 0x7f0b0065
+    .line 114
+    const v0, 0x7f0b0066
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -330,7 +320,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->INIT_LANDSCAPE_WIDTH:F
 
-    .line 121
+    .line 115
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_WIDTH:I
 
     int-to-float v0, v0
@@ -343,8 +333,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->INIT_LANDSCAPE_X:F
 
-    .line 122
-    const v0, 0x7f0b0066
+    .line 116
+    const v0, 0x7f0b0067
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -352,7 +342,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->INIT_PORTRAIT_WIDTH:F
 
-    .line 123
+    .line 117
     const v0, 0x7f0b000d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -361,8 +351,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
-    .line 124
-    const v0, 0x7f0b0067
+    .line 118
+    const v0, 0x7f0b0068
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -370,7 +360,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_X:F
 
-    .line 125
+    .line 119
     const v0, 0x7f0b000e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -379,7 +369,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
 
-    .line 126
+    .line 120
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_HEIGHT:I
 
     int-to-float v0, v0
@@ -392,8 +382,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_Y:F
 
-    .line 128
-    const v0, 0x7f0b0064
+    .line 122
+    const v0, 0x7f0b0065
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -401,8 +391,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_HELP_TEXT_WIDTH:F
 
-    .line 129
-    const v0, 0x7f0b0062
+    .line 123
+    const v0, 0x7f0b0063
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -410,7 +400,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_HELP_TEXT_HEIGHT:F
 
-    .line 130
+    .line 124
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_WIDTH:I
 
     int-to-float v0, v0
@@ -423,7 +413,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_HELP_TEXT_POS_X:F
 
-    .line 131
+    .line 125
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_HEIGHT:I
 
     int-to-float v0, v0
@@ -434,7 +424,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_HELP_TEXT_POS_Y:F
 
-    .line 132
+    .line 126
     const v0, 0x7f0b028e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -443,8 +433,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_HELP_TEXT_SIZE:F
 
-    .line 133
-    const v0, 0x7f0b0063
+    .line 127
+    const v0, 0x7f0b0064
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -452,8 +442,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_TEXT_MARGIN:F
 
-    .line 135
-    const v0, 0x7f0b0069
+    .line 129
+    const v0, 0x7f0b006a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -461,8 +451,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
 
-    .line 137
-    const v0, 0x7f0b006c
+    .line 131
+    const v0, 0x7f0b006d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -470,8 +460,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->WARNING_ARROW_SWING_DISTANCE:F
 
-    .line 138
-    const v0, 0x7f0b006b
+    .line 132
+    const v0, 0x7f0b006c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -479,8 +469,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->WARNING_ARROW_OFFSET:F
 
-    .line 140
-    const v0, 0x7f0b0061
+    .line 134
+    const v0, 0x7f0b0062
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -488,8 +478,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->TRI_WIDTH:F
 
-    .line 141
-    const v0, 0x7f0b0060
+    .line 135
+    const v0, 0x7f0b0061
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -497,8 +487,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->TRI_HEIGHT:F
 
-    .line 144
-    const v0, 0x7f0b01d8
+    .line 138
+    const v0, 0x7f0b01d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -506,8 +496,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SHUTTER_BUTTON_WIDTH:F
 
-    .line 145
-    const v0, 0x7f0b034d
+    .line 139
+    const v0, 0x7f0b034e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -515,7 +505,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SHUTTER_BUTTON_PORTRAIT_BOTTOM_PADDING:F
 
-    .line 146
+    .line 140
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_WIDTH:I
 
     int-to-float v0, v0
@@ -532,7 +522,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->STOP_BUTTON_POS_X:I
 
-    .line 147
+    .line 141
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_HEIGHT:I
 
     int-to-float v0, v0
@@ -547,8 +537,8 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->STOP_BUTTON_POS_Y:I
 
-    .line 148
-    const v0, 0x7f0b01d6
+    .line 142
+    const v0, 0x7f0b01d7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -558,266 +548,254 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->STOP_BUTTON_DIAMETER:I
 
-    .line 150
+    .line 144
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
-    .line 151
+    .line 145
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviousCaptureCount:I
 
-    .line 152
+    .line 146
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewWidth:I
 
-    .line 153
+    .line 147
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewHeight:I
 
-    .line 154
+    .line 148
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
 
-    .line 155
+    .line 149
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxHeight:I
 
-    .line 156
+    .line 150
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewPreallocatedBuffer:[I
 
-    .line 157
+    .line 151
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeHeight:F
 
-    .line 158
+    .line 152
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeY:F
 
-    .line 159
+    .line 153
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
 
-    .line 160
+    .line 154
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeY:F
 
-    .line 161
+    .line 155
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeSingleWidth:F
 
-    .line 162
+    .line 156
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeSingleHeight:F
 
-    .line 163
+    .line 157
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeSingleX:F
 
-    .line 164
+    .line 158
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleWidth:F
 
-    .line 165
+    .line 159
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
-    .line 166
+    .line 160
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleX:F
 
-    .line 167
+    .line 161
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleY:F
 
-    .line 168
+    .line 162
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitX:F
 
-    .line 169
+    .line 163
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitY:F
 
-    .line 170
+    .line 164
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitHeight:F
 
-    .line 171
+    .line 165
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleWidth:F
 
-    .line 172
+    .line 166
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleHeight:F
 
-    .line 173
+    .line 167
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleX:F
 
-    .line 174
+    .line 168
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitWidth:F
 
-    .line 175
+    .line 169
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitX:F
 
-    .line 176
+    .line 170
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleWidth:F
 
-    .line 177
+    .line 171
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleHeight:F
 
-    .line 178
+    .line 172
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleX:F
 
-    .line 179
+    .line 173
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleY:F
 
-    .line 180
+    .line 174
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeRectWidth:F
 
-    .line 181
+    .line 175
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitRectWidth:F
 
-    .line 182
+    .line 176
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailWidth:F
 
-    .line 183
+    .line 177
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailHeight:F
 
-    .line 184
+    .line 178
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mHorizontalMaxCount:F
 
-    .line 185
+    .line 179
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewRatio:F
 
-    .line 186
+    .line 180
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
-    .line 187
+    .line 181
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEnterOrientation:I
 
-    .line 188
+    .line 182
     iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCaptureStarted:Z
 
-    .line 189
+    .line 183
     iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
 
-    .line 190
+    .line 184
     iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 191
+    .line 185
     iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
-    .line 192
+    .line 186
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPreviewRectRotationSupported:Z
 
-    .line 193
+    .line 187
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPostProgress:I
 
-    .line 195
+    .line 189
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 196
+    .line 190
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 197
+    .line 191
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
-    .line 198
+    .line 192
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-    .line 199
+    .line 193
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 200
+    .line 194
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 201
+    .line 195
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    .line 202
+    .line 196
     new-array v0, v6, [Lcom/samsung/android/glview/GLImage;
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
-    .line 203
+    .line 197
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 204
+    .line 198
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 205
+    .line 199
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 206
+    .line 200
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
-    .line 207
+    .line 201
     iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsGuideTextDisplaying:Z
 
-    .line 208
+    .line 202
     new-array v0, v6, [Lcom/samsung/android/glview/GLImage;
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeTri:[Lcom/samsung/android/glview/GLImage;
 
-    .line 209
+    .line 203
     new-array v0, v6, [Lcom/samsung/android/glview/GLViewGroup;
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 210
+    .line 204
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/samsung/android/glview/GLImage;
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
 
-    .line 211
+    .line 205
     const/4 v0, 0x2
 
     new-array v0, v0, [Lcom/samsung/android/glview/GLViewGroup;
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 212
-    iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
-
-    .line 213
+    .line 206
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 214
+    .line 207
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
-    .line 215
+    .line 208
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 216
+    .line 209
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
 
-    .line 217
+    .line 210
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 218
+    .line 211
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
-    .line 219
+    .line 212
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 220
+    .line 213
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
-    .line 221
-    iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    .line 222
+    .line 214
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBmp:Landroid/graphics/Bitmap;
 
-    .line 223
-    iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecording:Z
-
-    .line 224
+    .line 215
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsMotionPanoramaEnabled:Z
 
-    .line 225
-    iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecordingEnabled:Z
-
-    .line 227
+    .line 217
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaThumbnailBitmap:Landroid/graphics/Bitmap;
 
-    .line 229
+    .line 219
     new-instance v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;
 
     invoke-direct {v0, p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$1;-><init>(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 264
+    .line 247
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 265
+    .line 248
     iput-object p2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 266
+    .line 249
     return-void
 .end method
 
@@ -826,7 +804,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     return-object v0
@@ -837,7 +815,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->cancelPanoramaCapture()V
 
     return-void
@@ -848,7 +826,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
 
     return-void
@@ -860,7 +838,7 @@
     .param p1, "x1"    # I
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->playCameraSound(I)V
 
     return-void
@@ -871,7 +849,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isPanoramaWarning()Z
 
     move-result v0
@@ -884,7 +862,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideGuideText()V
 
     return-void
@@ -895,7 +873,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isCameraSwitchingAnimationRunning()Z
 
     move-result v0
@@ -908,7 +886,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showPreviewGroup()V
 
     return-void
@@ -919,7 +897,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->reset()V
 
     return-void
@@ -930,7 +908,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     return-object v0
@@ -941,7 +919,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clearMessageHandler()V
 
     return-void
@@ -952,7 +930,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
 
     return v0
@@ -963,7 +941,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     return v0
@@ -974,7 +952,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     return v0
@@ -985,7 +963,7 @@
     .param p0, "x0"    # Lcom/sec/android/app/camera/shootingmode/MotionPanorama;
 
     .prologue
-    .line 87
+    .line 82
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     return-object v0
@@ -995,24 +973,24 @@
     .locals 2
 
     .prologue
-    .line 933
+    .line 910
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "cancelPanoramaCapture"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 935
+    .line 912
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
-    .line 937
+    .line 914
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->waitForMotionPanoramaStartThreadComplete()V
 
-    .line 938
+    .line 915
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getCurrentStateId()I
@@ -1023,72 +1001,63 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 939
+    .line 916
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->stopPreview()V
 
-    .line 941
+    .line 918
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelMotionPanorama()V
 
-    .line 943
-    iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecordingEnabled:Z
-
-    if-eqz v0, :cond_1
-
-    .line 944
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopSoundRecording()V
-
-    .line 946
-    :cond_1
+    .line 920
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->removeTempFile()V
 
-    .line 948
+    .line 922
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clearPanoramaRect()V
 
-    .line 950
+    .line 924
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->unlockAEAWB()V
 
-    .line 951
+    .line 925
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isTouchAutoFocusActive()Z
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
-    .line 952
+    .line 926
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->resetTouchFocus()V
 
-    .line 956
+    .line 930
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 958
+    .line 932
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleStartPreview()V
 
-    .line 960
+    .line 934
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCaptureStarted:Z
 
-    .line 961
+    .line 935
     return-void
 
-    .line 954
-    :cond_2
+    .line 928
+    :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelAutoFocus()V
@@ -1102,42 +1071,42 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 964
+    .line 938
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
-    .line 965
+    .line 939
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCaptureStarted:Z
 
-    .line 966
+    .line 940
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
 
-    .line 967
+    .line 941
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
-    .line 968
+    .line 942
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
-    .line 969
+    .line 943
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPostProgress:I
 
-    .line 971
+    .line 945
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopCancelTimer()V
 
-    .line 972
+    .line 946
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaSound()V
 
-    .line 974
+    .line 948
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideCaptureTri()V
 
-    .line 975
+    .line 949
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideStopButton()V
 
-    .line 977
+    .line 951
     iget-object v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     monitor-enter v6
 
-    .line 978
+    .line 952
     const/4 v1, 0x0
 
     const/4 v2, 0x0
@@ -1153,15 +1122,15 @@
     :try_start_0
     invoke-direct/range {v0 .. v5}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewGroup(FFFFLandroid/graphics/Bitmap;)V
 
-    .line 979
+    .line 953
     monitor-exit v6
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 981
+    .line 955
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clearPanoramaRect()V
 
-    .line 982
+    .line 956
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->isShutterProgressWheelVisible()Z
@@ -1170,12 +1139,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 983
+    .line 957
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->endShutterProgressWheel()V
 
-    .line 985
+    .line 959
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -1183,17 +1152,17 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 986
+    .line 960
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 987
+    .line 961
     return-void
 
-    .line 979
+    .line 953
     :catchall_0
     move-exception v0
 
@@ -1211,21 +1180,21 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 990
+    .line 964
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 991
+    .line 965
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->access$500(Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;)V
 
-    .line 992
+    .line 966
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
-    .line 993
+    .line 967
     return-void
 .end method
 
@@ -1235,90 +1204,90 @@
     .prologue
     const/4 v3, 0x4
 
-    .line 996
+    .line 970
     const-string v1, "MotionPanoramaApp"
 
     const-string v2, "clearPanoramaRect"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 998
+    .line 972
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v1, :cond_0
 
-    .line 999
+    .line 973
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 1000
+    .line 974
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLRectangle;->resetTranslate()V
 
-    .line 1003
+    .line 977
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v1, :cond_1
 
-    .line 1004
+    .line 978
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1005
+    .line 979
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLText;->resetTranslate()V
 
-    .line 1008
+    .line 982
     :cond_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideWarningArrow()V
 
-    .line 1009
+    .line 983
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideWarningBox()V
 
-    .line 1011
+    .line 985
     const/4 v0, 0x0
 
     .local v0, "i":I
     :goto_0
     if-ge v0, v3, :cond_3
 
-    .line 1012
+    .line 986
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v1, v1, v0
 
     if-eqz v1, :cond_2
 
-    .line 1013
+    .line 987
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1011
+    .line 985
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1017
+    .line 991
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1018
+    .line 992
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1019
+    .line 993
     return-void
 .end method
 
@@ -1336,7 +1305,7 @@
 
     const/4 v11, 0x0
 
-    .line 1023
+    .line 997
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -1353,12 +1322,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1024
+    .line 998
     new-instance v0, Lcom/samsung/android/glview/GLNinePatch;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v6, 0x7f020154
+    const v6, 0x7f020155
 
     move v2, v11
 
@@ -1372,19 +1341,19 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
-    .line 1026
+    .line 1000
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLNinePatch;->setVisibility(I)V
 
-    .line 1027
+    .line 1001
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1030
+    .line 1004
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -1401,18 +1370,18 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1031
+    .line 1005
     new-instance v0, Lcom/samsung/android/glview/GLNinePatch;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v2, 0x7f020154
+    const v2, 0x7f020155
 
     invoke-direct {v0, v1, v11, v11, v2}, Lcom/samsung/android/glview/GLNinePatch;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
-    .line 1032
+    .line 1006
     new-instance v0, Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -1437,52 +1406,52 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 1034
+    .line 1008
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1035
+    .line 1009
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1036
+    .line 1010
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1037
+    .line 1011
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPreviewRectRotationSupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 1038
+    .line 1012
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v12}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 1041
+    .line 1015
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v12}, Lcom/samsung/android/glview/GLViewGroup;->setCenterPivot(Z)V
 
-    .line 1042
+    .line 1016
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, p0}, Lcom/samsung/android/glview/GLViewGroup;->setOrientationChangeListener(Lcom/samsung/android/glview/GLView$OrientationChangeListener;)V
 
-    .line 1043
+    .line 1017
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1045
+    .line 1019
     iget-object v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
@@ -1501,7 +1470,7 @@
 
     aput-object v0, v6, v9
 
-    .line 1046
+    .line 1020
     iget-object v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
@@ -1520,7 +1489,7 @@
 
     aput-object v0, v6, v12
 
-    .line 1047
+    .line 1021
     iget-object v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
@@ -1539,7 +1508,7 @@
 
     aput-object v0, v6, v14
 
-    .line 1048
+    .line 1022
     iget-object v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v7, 0x3
@@ -1560,28 +1529,28 @@
 
     aput-object v0, v6, v7
 
-    .line 1050
+    .line 1024
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v9
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1051
+    .line 1025
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v12
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1052
+    .line 1026
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v14
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1053
+    .line 1027
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x3
@@ -1590,33 +1559,7 @@
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1055
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeTri:[Lcom/samsung/android/glview/GLImage;
-
-    new-instance v1, Lcom/samsung/android/glview/GLImage;
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
-
-    const v3, 0x7f020152
-
-    invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
-
-    aput-object v1, v0, v9
-
-    .line 1056
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeTri:[Lcom/samsung/android/glview/GLImage;
-
-    new-instance v1, Lcom/samsung/android/glview/GLImage;
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
-
-    const v3, 0x7f020151
-
-    invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
-
-    aput-object v1, v0, v12
-
-    .line 1057
+    .line 1029
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeTri:[Lcom/samsung/android/glview/GLImage;
 
     new-instance v1, Lcom/samsung/android/glview/GLImage;
@@ -1627,9 +1570,35 @@
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
+    aput-object v1, v0, v9
+
+    .line 1030
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeTri:[Lcom/samsung/android/glview/GLImage;
+
+    new-instance v1, Lcom/samsung/android/glview/GLImage;
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
+
+    const v3, 0x7f020152
+
+    invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
+
+    aput-object v1, v0, v12
+
+    .line 1031
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeTri:[Lcom/samsung/android/glview/GLImage;
+
+    new-instance v1, Lcom/samsung/android/glview/GLImage;
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
+
+    const v3, 0x7f020154
+
+    invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
+
     aput-object v1, v0, v14
 
-    .line 1058
+    .line 1032
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeTri:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x3
@@ -1638,13 +1607,13 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v4, 0x7f020150
+    const v4, 0x7f020151
 
     invoke-direct {v2, v3, v11, v11, v4}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
     aput-object v2, v0, v1
 
-    .line 1060
+    .line 1034
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v9
@@ -1655,7 +1624,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1061
+    .line 1035
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v12
@@ -1666,7 +1635,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1062
+    .line 1036
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v14
@@ -1677,7 +1646,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1063
+    .line 1037
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x3
@@ -1692,7 +1661,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1065
+    .line 1039
     iget-object v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
@@ -1711,7 +1680,7 @@
 
     aput-object v0, v6, v9
 
-    .line 1066
+    .line 1040
     iget-object v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
@@ -1730,34 +1699,21 @@
 
     aput-object v0, v6, v12
 
-    .line 1068
+    .line 1042
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v9
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1069
+    .line 1043
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v12
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1071
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
-
-    new-instance v1, Lcom/samsung/android/glview/GLImage;
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
-
-    const v3, 0x7f020152
-
-    invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
-
-    aput-object v1, v0, v9
-
-    .line 1072
+    .line 1045
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
 
     new-instance v1, Lcom/samsung/android/glview/GLImage;
@@ -1768,9 +1724,22 @@
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
+    aput-object v1, v0, v9
+
+    .line 1046
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
+
+    new-instance v1, Lcom/samsung/android/glview/GLImage;
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
+
+    const v3, 0x7f020154
+
+    invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
+
     aput-object v1, v0, v12
 
-    .line 1074
+    .line 1048
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v9
@@ -1781,7 +1750,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1075
+    .line 1049
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v12
@@ -1792,7 +1761,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1077
+    .line 1051
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -1801,7 +1770,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1078
+    .line 1052
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -1810,38 +1779,25 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1079
+    .line 1053
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1081
+    .line 1055
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
     new-instance v1, Lcom/samsung/android/glview/GLImage;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v3, 0x7f020159
+    const v3, 0x7f02015a
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
     aput-object v1, v0, v9
 
-    .line 1082
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
-
-    new-instance v1, Lcom/samsung/android/glview/GLImage;
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
-
-    const v3, 0x7f020156
-
-    invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
-
-    aput-object v1, v0, v12
-
-    .line 1083
+    .line 1056
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
     new-instance v1, Lcom/samsung/android/glview/GLImage;
@@ -1852,9 +1808,22 @@
 
     invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
+    aput-object v1, v0, v12
+
+    .line 1057
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
+
+    new-instance v1, Lcom/samsung/android/glview/GLImage;
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
+
+    const v3, 0x7f020158
+
+    invoke-direct {v1, v2, v11, v11, v3}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
+
     aput-object v1, v0, v14
 
-    .line 1084
+    .line 1058
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
     const/4 v1, 0x3
@@ -1863,13 +1832,13 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v4, 0x7f020158
+    const v4, 0x7f020159
 
     invoke-direct {v2, v3, v11, v11, v4}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
     aput-object v2, v0, v1
 
-    .line 1086
+    .line 1060
     new-instance v0, Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -1880,7 +1849,7 @@
 
     const v2, 0x7f0d0010
 
-    .line 1087
+    .line 1061
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
 
     move-result v6
@@ -1895,12 +1864,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 1088
+    .line 1062
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 1090
+    .line 1064
     new-instance v0, Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -1911,7 +1880,7 @@
 
     const v2, 0x7f0d002b
 
-    .line 1091
+    .line 1065
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
 
     move-result v6
@@ -1926,12 +1895,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 1092
+    .line 1066
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 1093
+    .line 1067
     new-instance v0, Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -1942,7 +1911,7 @@
 
     const v2, 0x7f0d002b
 
-    .line 1094
+    .line 1068
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
 
     move-result v6
@@ -1957,12 +1926,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 1095
+    .line 1069
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 1097
+    .line 1071
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -1987,12 +1956,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1098
+    .line 1072
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v12}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1099
+    .line 1073
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -2001,7 +1970,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0161
+    const v2, 0x7f0a0163
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2009,17 +1978,17 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1100
+    .line 1074
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v9}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1101
+    .line 1075
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v9}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1102
+    .line 1076
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$2;
@@ -2028,12 +1997,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1124
+    .line 1098
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v12}, Lcom/samsung/android/glview/GLButton;->setFocusable(Z)V
 
-    .line 1125
+    .line 1099
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->STOP_BUTTON_DIAMETER:I
@@ -2042,61 +2011,61 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 1126
+    .line 1100
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1128
+    .line 1102
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
 
     move-result v0
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->onOrientationChanged(I)V
 
-    .line 1130
+    .line 1104
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1131
+    .line 1105
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1132
+    .line 1106
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1133
+    .line 1107
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1134
+    .line 1108
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1135
+    .line 1109
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1137
+    .line 1111
     new-instance v0, Lcom/samsung/android/glview/GLText;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -2115,7 +2084,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0a01d7
+    const v7, 0x7f0a01dd
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2125,7 +2094,7 @@
 
     const v8, 0x7f0d001d
 
-    .line 1138
+    .line 1112
     invoke-static {v8}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
 
     move-result v8
@@ -2134,12 +2103,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
-    .line 1139
+    .line 1113
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v9}, Lcom/samsung/android/glview/GLText;->setClipping(Z)V
 
-    .line 1140
+    .line 1114
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoRegular()Landroid/graphics/Typeface;
@@ -2148,7 +2117,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setTextFont(Landroid/graphics/Typeface;)V
 
-    .line 1141
+    .line 1115
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     const v1, 0x7f0e0017
@@ -2167,45 +2136,45 @@
 
     invoke-virtual {v0, v12, v1, v2}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1142
+    .line 1116
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v12}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 1143
+    .line 1117
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1144
+    .line 1118
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1146
+    .line 1120
     const/4 v10, 0x0
 
     .local v10, "i":I
     :goto_1
     if-ge v10, v13, :cond_1
 
-    .line 1147
+    .line 1121
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v0, v0, v10
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1148
+    .line 1122
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v0, v0, v10
 
     invoke-virtual {v0, v13}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1149
+    .line 1123
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -2214,7 +2183,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1150
+    .line 1124
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -2223,12 +2192,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1146
+    .line 1120
     add-int/lit8 v10, v10, 0x1
 
     goto :goto_1
 
-    .line 1040
+    .line 1014
     .end local v10    # "i":I
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2237,36 +2206,36 @@
 
     goto/16 :goto_0
 
-    .line 1157
+    .line 1131
     .restart local v10    # "i":I
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v14, v14}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 1158
+    .line 1132
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v9, v11, v11}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1159
+    .line 1133
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v12, v11, v11}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1160
+    .line 1134
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v14, v11, v11}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1161
+    .line 1135
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1, v11, v11}, Lcom/samsung/android/glview/GLText;->setLeftTop(IFF)V
 
-    .line 1162
+    .line 1136
     return-void
 .end method
 
@@ -2286,52 +2255,52 @@
 
     const/4 v4, 0x0
 
-    .line 1165
+    .line 1139
     new-instance v1, Landroid/view/animation/AnimationSet;
 
     invoke-direct {v1, v6}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 1166
+    .line 1140
     .local v1, "animation":Landroid/view/animation/AnimationSet;
     const/4 v0, 0x0
 
-    .line 1168
+    .line 1142
     .local v0, "anim":Landroid/view/animation/Animation;
     packed-switch p2, :pswitch_data_0
 
-    .line 1194
+    .line 1168
     :goto_0
     :pswitch_0
     if-eqz v0, :cond_0
 
-    .line 1195
+    .line 1169
     int-to-long v2, p1
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 1196
+    .line 1170
     const/4 v2, -0x1
 
     invoke-virtual {v0, v2}, Landroid/view/animation/Animation;->setRepeatCount(I)V
 
-    .line 1197
+    .line 1171
     invoke-virtual {v0, v7}, Landroid/view/animation/Animation;->setRepeatMode(I)V
 
-    .line 1198
+    .line 1172
     new-instance v2, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v2}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
     invoke-virtual {v0, v2}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 1199
+    .line 1173
     invoke-virtual {v1, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1202
+    .line 1176
     :cond_0
     return-object v1
 
-    .line 1171
+    .line 1145
     :pswitch_1
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
@@ -2344,7 +2313,7 @@
 
     invoke-direct {v0, v4, v4, v4, v2}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 1172
+    .line 1146
     .restart local v0    # "anim":Landroid/view/animation/Animation;
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
@@ -2390,7 +2359,7 @@
 
     goto :goto_0
 
-    .line 1177
+    .line 1151
     :pswitch_2
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
@@ -2399,7 +2368,7 @@
 
     invoke-direct {v0, v4, v4, v4, v2}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 1178
+    .line 1152
     .restart local v0    # "anim":Landroid/view/animation/Animation;
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
@@ -2445,7 +2414,7 @@
 
     goto :goto_0
 
-    .line 1183
+    .line 1157
     :pswitch_3
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
@@ -2458,7 +2427,7 @@
 
     invoke-direct {v0, v4, v2, v4, v4}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 1184
+    .line 1158
     .restart local v0    # "anim":Landroid/view/animation/Animation;
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
@@ -2504,7 +2473,7 @@
 
     goto/16 :goto_0
 
-    .line 1189
+    .line 1163
     :pswitch_4
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
@@ -2513,7 +2482,7 @@
 
     invoke-direct {v0, v4, v2, v4, v4}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 1190
+    .line 1164
     .restart local v0    # "anim":Landroid/view/animation/Animation;
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
@@ -2559,7 +2528,7 @@
 
     goto/16 :goto_0
 
-    .line 1168
+    .line 1142
     nop
 
     :pswitch_data_0
@@ -2579,7 +2548,7 @@
     .locals 1
 
     .prologue
-    .line 1206
+    .line 1180
     monitor-enter p0
 
     :try_start_0
@@ -2614,26 +2583,26 @@
 
     const/4 v7, 0x0
 
-    .line 1210
+    .line 1184
     invoke-interface {p1}, Lcom/sec/android/app/camera/interfaces/Engine;->getViewAngle()[F
 
     move-result-object v3
 
-    .line 1211
+    .line 1185
     .local v3, "viewAngle":[F
     aget v2, v3, v7
 
-    .line 1212
+    .line 1186
     .local v2, "verticalAngle":F
     aget v0, v3, v8
 
-    .line 1214
+    .line 1188
     .local v0, "horizontalAngle":F
     const/4 v4, 0x2
 
     new-array v1, v4, [F
 
-    .line 1215
+    .line 1189
     .local v1, "maxCount":[F
     cmpl-float v4, v2, v5
 
@@ -2643,7 +2612,7 @@
 
     if-lez v4, :cond_1
 
-    .line 1216
+    .line 1190
     :cond_0
     div-float v4, v9, v2
 
@@ -2651,14 +2620,14 @@
 
     aput v4, v1, v7
 
-    .line 1217
+    .line 1191
     div-float v4, v9, v0
 
     add-float/2addr v4, v6
 
     aput v4, v1, v8
 
-    .line 1219
+    .line 1193
     :cond_1
     const-string v4, "MotionPanoramaApp"
 
@@ -2696,7 +2665,7 @@
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1221
+    .line 1195
     return-object v1
 .end method
 
@@ -2705,44 +2674,44 @@
     .param p1, "data"    # [B
 
     .prologue
-    .line 1225
+    .line 1199
     monitor-enter p0
 
     const/4 v9, 0x0
 
-    .line 1228
+    .line 1202
     .local v9, "bmp":Landroid/graphics/Bitmap;
     const/16 v20, 0x0
 
-    .line 1229
+    .line 1203
     .local v20, "width":I
     const/4 v11, 0x0
 
-    .line 1230
+    .line 1204
     .local v11, "height":I
     const/4 v15, 0x0
 
-    .line 1231
+    .line 1205
     .local v15, "offsetX":I
     const/16 v16, 0x0
 
-    .line 1232
+    .line 1206
     .local v16, "offsetY":I
     const/16 v19, 0x0
 
-    .line 1233
+    .line 1207
     .local v19, "rotation":I
     const/4 v14, 0x0
 
-    .line 1235
+    .line 1209
     .local v14, "maxSize":I
     const/4 v3, 0x0
 
-    .line 1236
+    .line 1210
     .local v3, "bmpOffset":I
     const/4 v4, 0x0
 
-    .line 1238
+    .line 1212
     .local v4, "bmpStride":I
     if-eqz p1, :cond_0
 
@@ -2755,7 +2724,7 @@
 
     if-ge v2, v5, :cond_1
 
-    .line 1239
+    .line 1213
     :cond_0
     const-string v2, "MotionPanoramaApp"
 
@@ -2765,16 +2734,16 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1240
+    .line 1214
     const/4 v2, 0x0
 
-    .line 1371
+    .line 1345
     :goto_0
     monitor-exit p0
 
     return-object v2
 
-    .line 1244
+    .line 1218
     :cond_1
     const/4 v2, 0x0
 
@@ -2809,7 +2778,7 @@
 
     if-eq v2, v5, :cond_3
 
-    .line 1245
+    .line 1219
     :cond_2
     const-string v2, "MotionPanoramaApp"
 
@@ -2819,12 +2788,12 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 1246
+    .line 1220
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 1250
+    .line 1224
     :cond_3
     const/4 v2, 0x4
 
@@ -2835,7 +2804,7 @@
 
     move-result v20
 
-    .line 1251
+    .line 1225
     const/16 v2, 0x8
 
     move-object/from16 v0, p1
@@ -2844,7 +2813,7 @@
 
     move-result v11
 
-    .line 1252
+    .line 1226
     const/16 v2, 0xc
 
     move-object/from16 v0, p1
@@ -2853,7 +2822,7 @@
 
     move-result v15
 
-    .line 1253
+    .line 1227
     const/16 v2, 0x10
 
     move-object/from16 v0, p1
@@ -2862,7 +2831,7 @@
 
     move-result v16
 
-    .line 1254
+    .line 1228
     const/16 v2, 0x14
 
     move-object/from16 v0, p1
@@ -2871,7 +2840,7 @@
 
     move-result v19
 
-    .line 1255
+    .line 1229
     const/16 v2, 0x18
 
     move-object/from16 v0, p1
@@ -2883,7 +2852,7 @@
 
     move-result v14
 
-    .line 1261
+    .line 1235
     :try_start_3
     move-object/from16 v0, p1
 
@@ -2897,7 +2866,7 @@
 
     if-ge v2, v5, :cond_4
 
-    .line 1262
+    .line 1236
     const-string v2, "MotionPanoramaApp"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -2932,16 +2901,16 @@
 
     invoke-static {v2, v5}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1263
+    .line 1237
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 1256
+    .line 1230
     :catch_0
     move-exception v10
 
-    .line 1257
+    .line 1231
     .local v10, "ex":Ljava/lang/ArrayIndexOutOfBoundsException;
     const-string v2, "MotionPanoramaApp"
 
@@ -2949,12 +2918,12 @@
 
     invoke-static {v2, v5}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1258
+    .line 1232
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 1266
+    .line 1240
     .end local v10    # "ex":Ljava/lang/ArrayIndexOutOfBoundsException;
     :cond_4
     move-object/from16 v0, p0
@@ -2963,14 +2932,14 @@
 
     if-nez v2, :cond_5
 
-    .line 1267
+    .line 1241
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
     packed-switch v2, :pswitch_data_0
 
-    .line 1283
+    .line 1257
     :pswitch_0
     const-string v2, "MotionPanoramaApp"
 
@@ -2998,23 +2967,23 @@
 
     invoke-static {v2, v5}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1284
+    .line 1258
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 1270
+    .line 1244
     :pswitch_1
     move-object/from16 v0, p0
 
     iput v14, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
 
-    .line 1271
+    .line 1245
     move-object/from16 v0, p0
 
     iput v11, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxHeight:I
 
-    .line 1272
+    .line 1246
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
@@ -3031,14 +3000,14 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewPreallocatedBuffer:[I
 
-    .line 1273
+    .line 1247
     move-object/from16 v0, p0
 
     iput v11, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewHeight:I
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 1294
+    .line 1268
     :cond_5
     :goto_1
     :try_start_4
@@ -3052,15 +3021,15 @@
 
     new-array v13, v2, [I
 
-    .line 1295
+    .line 1269
     .local v13, "intData":[I
     const/16 v8, 0xff
 
-    .line 1296
+    .line 1270
     .local v8, "MASK":I
     const/16 v18, 0x0
 
-    .line 1297
+    .line 1271
     .local v18, "result":I
     const/4 v12, 0x0
 
@@ -3076,7 +3045,7 @@
 
     if-ge v12, v2, :cond_6
 
-    .line 1298
+    .line 1272
     add-int/lit8 v2, v12, 0x8
 
     mul-int/lit8 v2, v2, 0x4
@@ -3087,7 +3056,7 @@
 
     shl-int/lit8 v18, v2, 0x10
 
-    .line 1299
+    .line 1273
     add-int/lit8 v2, v12, 0x8
 
     mul-int/lit8 v2, v2, 0x4
@@ -3102,7 +3071,7 @@
 
     add-int v18, v18, v2
 
-    .line 1300
+    .line 1274
     add-int/lit8 v2, v12, 0x8
 
     mul-int/lit8 v2, v2, 0x4
@@ -3115,7 +3084,7 @@
 
     add-int v18, v18, v2
 
-    .line 1301
+    .line 1275
     add-int/lit8 v2, v12, 0x8
 
     mul-int/lit8 v2, v2, 0x4
@@ -3130,18 +3099,18 @@
 
     add-int v18, v18, v2
 
-    .line 1302
+    .line 1276
     aput v18, v13, v12
     :try_end_4
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_4 .. :try_end_4} :catch_1
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 1297
+    .line 1271
     add-int/lit8 v12, v12, 0x1
 
     goto :goto_2
 
-    .line 1277
+    .line 1251
     .end local v8    # "MASK":I
     .end local v12    # "i":I
     .end local v13    # "intData":[I
@@ -3154,12 +3123,12 @@
 
     iput v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
 
-    .line 1278
+    .line 1252
     move-object/from16 v0, p0
 
     iput v14, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxHeight:I
 
-    .line 1279
+    .line 1253
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
@@ -3176,7 +3145,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewPreallocatedBuffer:[I
 
-    .line 1280
+    .line 1254
     move/from16 v0, v20
 
     move-object/from16 v1, p0
@@ -3187,7 +3156,7 @@
 
     goto :goto_1
 
-    .line 1225
+    .line 1199
     :catchall_0
     move-exception v2
 
@@ -3195,7 +3164,7 @@
 
     throw v2
 
-    .line 1305
+    .line 1279
     .restart local v8    # "MASK":I
     .restart local v12    # "i":I
     .restart local v13    # "intData":[I
@@ -3208,7 +3177,7 @@
 
     packed-switch v2, :pswitch_data_1
 
-    .line 1356
+    .line 1330
     :pswitch_3
     const-string v2, "MotionPanoramaApp"
 
@@ -3239,7 +3208,7 @@
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_6 .. :try_end_6} :catch_1
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 1365
+    .line 1339
     :goto_3
     :try_start_7
     move-object/from16 v0, p0
@@ -3265,10 +3234,10 @@
 
     move-object v2, v9
 
-    .line 1371
+    .line 1345
     goto/16 :goto_0
 
-    .line 1307
+    .line 1281
     :pswitch_4
     :try_start_8
     move-object/from16 v0, p0
@@ -3277,7 +3246,7 @@
 
     if-eq v2, v11, :cond_7
 
-    .line 1308
+    .line 1282
     const-string v2, "MotionPanoramaApp"
 
     const-string v5, "getPartialPanoramaImage: Height is different!!"
@@ -3289,7 +3258,7 @@
 
     goto :goto_3
 
-    .line 1359
+    .line 1333
     .end local v8    # "MASK":I
     .end local v12    # "i":I
     .end local v13    # "intData":[I
@@ -3297,7 +3266,7 @@
     :catch_1
     move-exception v10
 
-    .line 1360
+    .line 1334
     .restart local v10    # "ex":Ljava/lang/ArrayIndexOutOfBoundsException;
     :try_start_9
     const-string v2, "MotionPanoramaApp"
@@ -3308,12 +3277,12 @@
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_0
 
-    .line 1361
+    .line 1335
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 1310
+    .line 1284
     .end local v10    # "ex":Ljava/lang/ArrayIndexOutOfBoundsException;
     .restart local v8    # "MASK":I
     .restart local v12    # "i":I
@@ -3333,7 +3302,7 @@
 
     if-ge v0, v2, :cond_8
 
-    .line 1311
+    .line 1285
     mul-int v2, v21, v20
 
     move-object/from16 v0, p0
@@ -3352,12 +3321,12 @@
 
     invoke-static {v13, v2, v5, v6, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 1310
+    .line 1284
     add-int/lit8 v21, v21, 0x1
 
     goto :goto_4
 
-    .line 1313
+    .line 1287
     :cond_8
     add-int v2, v15, v20
 
@@ -3365,18 +3334,18 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewWidth:I
 
-    .line 1315
+    .line 1289
     const/4 v3, 0x0
 
-    .line 1316
+    .line 1290
     move-object/from16 v0, p0
 
     iget v4, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
 
-    .line 1318
+    .line 1292
     goto :goto_3
 
-    .line 1320
+    .line 1294
     .end local v21    # "y":I
     :pswitch_5
     move-object/from16 v0, p0
@@ -3385,7 +3354,7 @@
 
     if-eq v2, v11, :cond_9
 
-    .line 1321
+    .line 1295
     const-string v2, "MotionPanoramaApp"
 
     const-string v5, "getPartialPanoramaImage: Height is different!!"
@@ -3394,7 +3363,7 @@
 
     goto :goto_3
 
-    .line 1323
+    .line 1297
     :cond_9
     const/16 v21, 0x0
 
@@ -3408,7 +3377,7 @@
 
     if-ge v0, v2, :cond_a
 
-    .line 1324
+    .line 1298
     mul-int v2, v21, v20
 
     move-object/from16 v0, p0
@@ -3435,12 +3404,12 @@
 
     invoke-static {v13, v2, v5, v6, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 1323
+    .line 1297
     add-int/lit8 v21, v21, 0x1
 
     goto :goto_5
 
-    .line 1327
+    .line 1301
     :cond_a
     add-int v2, v15, v20
 
@@ -3448,7 +3417,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewWidth:I
 
-    .line 1329
+    .line 1303
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
@@ -3459,15 +3428,15 @@
 
     sub-int v3, v2, v5
 
-    .line 1330
+    .line 1304
     move-object/from16 v0, p0
 
     iget v4, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
 
-    .line 1332
+    .line 1306
     goto/16 :goto_3
 
-    .line 1334
+    .line 1308
     .end local v21    # "y":I
     :pswitch_6
     move-object/from16 v0, p0
@@ -3478,7 +3447,7 @@
 
     if-eq v2, v0, :cond_b
 
-    .line 1335
+    .line 1309
     const-string v2, "MotionPanoramaApp"
 
     const-string v5, "getPartialPanoramaImage: Width is different!!"
@@ -3487,7 +3456,7 @@
 
     goto/16 :goto_3
 
-    .line 1337
+    .line 1311
     :cond_b
     const/4 v2, 0x0
 
@@ -3513,14 +3482,14 @@
 
     invoke-static {v13, v2, v5, v6, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 1338
+    .line 1312
     add-int v2, v16, v11
 
     move-object/from16 v0, p0
 
     iput v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewHeight:I
 
-    .line 1340
+    .line 1314
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxHeight:I
@@ -3537,15 +3506,15 @@
 
     mul-int v3, v2, v5
 
-    .line 1341
+    .line 1315
     move-object/from16 v0, p0
 
     iget v4, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
 
-    .line 1343
+    .line 1317
     goto/16 :goto_3
 
-    .line 1345
+    .line 1319
     :pswitch_7
     move-object/from16 v0, p0
 
@@ -3555,7 +3524,7 @@
 
     if-eq v2, v0, :cond_c
 
-    .line 1346
+    .line 1320
     const-string v2, "MotionPanoramaApp"
 
     const-string v5, "getPartialPanoramaImage: Width is different!!"
@@ -3564,7 +3533,7 @@
 
     goto/16 :goto_3
 
-    .line 1348
+    .line 1322
     :cond_c
     const/4 v2, 0x0
 
@@ -3582,17 +3551,17 @@
 
     invoke-static {v13, v2, v5, v6, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 1349
+    .line 1323
     add-int v2, v16, v11
 
     move-object/from16 v0, p0
 
     iput v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewHeight:I
 
-    .line 1351
+    .line 1325
     const/4 v3, 0x0
 
-    .line 1352
+    .line 1326
     move-object/from16 v0, p0
 
     iget v4, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewMaxWidth:I
@@ -3600,14 +3569,14 @@
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_a .. :try_end_a} :catch_1
     .catchall {:try_start_a .. :try_end_a} :catchall_0
 
-    .line 1354
+    .line 1328
     goto/16 :goto_3
 
-    .line 1366
+    .line 1340
     :catch_2
     move-exception v17
 
-    .line 1367
+    .line 1341
     .local v17, "oom":Ljava/lang/OutOfMemoryError;
     :try_start_b
     const-string v2, "MotionPanoramaApp"
@@ -3618,12 +3587,12 @@
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_0
 
-    .line 1368
+    .line 1342
     const/4 v2, 0x0
 
     goto/16 :goto_0
 
-    .line 1267
+    .line 1241
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -3636,7 +3605,7 @@
         :pswitch_2
     .end packed-switch
 
-    .line 1305
+    .line 1279
     :pswitch_data_1
     .packed-switch 0x1
         :pswitch_4
@@ -3656,7 +3625,7 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 1375
+    .line 1349
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x0
@@ -3665,7 +3634,7 @@
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1376
+    .line 1350
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x1
@@ -3674,7 +3643,7 @@
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1377
+    .line 1351
     return-void
 .end method
 
@@ -3682,36 +3651,36 @@
     .locals 2
 
     .prologue
-    .line 1380
+    .line 1354
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_0
 
-    .line 1381
+    .line 1355
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1382
+    .line 1356
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsGuideTextDisplaying:Z
 
-    .line 1383
+    .line 1357
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     if-eqz v0, :cond_0
 
-    .line 1384
+    .line 1358
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     const/4 v1, 0x5
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 1387
+    .line 1361
     :cond_0
     return-void
 .end method
@@ -3720,14 +3689,14 @@
     .locals 2
 
     .prologue
-    .line 1390
+    .line 1364
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1391
+    .line 1365
     return-void
 .end method
 
@@ -3737,17 +3706,17 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 1394
+    .line 1368
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v1, :cond_0
 
-    .line 1395
+    .line 1369
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1398
+    .line 1372
     :cond_0
     const/4 v0, 0x0
 
@@ -3755,19 +3724,19 @@
     :goto_0
     if-ge v0, v2, :cond_1
 
-    .line 1399
+    .line 1373
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1398
+    .line 1372
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1401
+    .line 1375
     :cond_1
     return-void
 .end method
@@ -3776,21 +3745,21 @@
     .locals 2
 
     .prologue
-    .line 1404
+    .line 1378
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1405
+    .line 1379
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 1406
+    .line 1380
     return-void
 .end method
 
@@ -3800,33 +3769,33 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 1409
+    .line 1383
     const/4 v0, 0x0
 
     .local v0, "i":I
     :goto_0
     if-ge v0, v2, :cond_0
 
-    .line 1410
+    .line 1384
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLImage;->resetTranslate()V
 
-    .line 1411
+    .line 1385
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1409
+    .line 1383
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1413
+    .line 1387
     :cond_0
     return-void
 .end method
@@ -3837,27 +3806,27 @@
     .prologue
     const/4 v1, 0x4
 
-    .line 1416
+    .line 1390
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 1417
+    .line 1391
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLRectangle;->resetTranslate()V
 
-    .line 1419
+    .line 1393
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 1420
+    .line 1394
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLRectangle;->resetTranslate()V
 
-    .line 1421
+    .line 1395
     return-void
 .end method
 
@@ -3868,10 +3837,10 @@
     .prologue
     const/high16 v5, 0x40000000    # 2.0f
 
-    .line 1424
+    .line 1398
     move-object v0, p1
 
-    .line 1425
+    .line 1399
     .local v0, "panoramaMaxRate":[F
     const/4 v3, 0x1
 
@@ -3879,7 +3848,7 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mHorizontalMaxCount:F
 
-    .line 1427
+    .line 1401
     sget-object v3, Lcom/sec/android/app/camera/feature/Feature;->BURST_PANORAMA_RESOLUTION:Ljava/lang/String;
 
     invoke-static {v3}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
@@ -3890,7 +3859,7 @@
 
     move-result v2
 
-    .line 1428
+    .line 1402
     .local v2, "previewWidth":I
     sget-object v3, Lcom/sec/android/app/camera/feature/Feature;->BURST_PANORAMA_RESOLUTION:Ljava/lang/String;
 
@@ -3902,7 +3871,7 @@
 
     move-result v1
 
-    .line 1429
+    .line 1403
     .local v1, "previewHeight":I
     int-to-float v3, v2
 
@@ -3912,7 +3881,7 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewRatio:F
 
-    .line 1431
+    .line 1405
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mHorizontalMaxCount:F
@@ -3925,7 +3894,7 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
 
-    .line 1432
+    .line 1406
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_HEIGHT:I
 
     int-to-float v3, v3
@@ -3938,17 +3907,17 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeY:F
 
-    .line 1434
+    .line 1408
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeHeight:F
 
-    .line 1435
+    .line 1409
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeY:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeY:F
 
-    .line 1437
+    .line 1411
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewRatio:F
@@ -3957,12 +3926,12 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleWidth:F
 
-    .line 1438
+    .line 1412
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
-    .line 1440
+    .line 1414
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_WIDTH:I
 
     int-to-float v3, v3
@@ -3975,22 +3944,22 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleX:F
 
-    .line 1441
+    .line 1415
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeY:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleY:F
 
-    .line 1443
+    .line 1417
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleWidth:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeSingleWidth:F
 
-    .line 1444
+    .line 1418
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeSingleHeight:F
 
-    .line 1445
+    .line 1419
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->INIT_LANDSCAPE_WIDTH:F
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeSingleWidth:F
@@ -4001,8 +3970,8 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeSingleX:F
 
-    .line 1447
-    const v3, 0x7f0b0068
+    .line 1421
+    const v3, 0x7f0b0069
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4010,7 +3979,7 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitWidth:F
 
-    .line 1448
+    .line 1422
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_WIDTH:I
 
     int-to-float v3, v3
@@ -4023,12 +3992,12 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitX:F
 
-    .line 1450
+    .line 1424
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitWidth:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitHeight:F
 
-    .line 1451
+    .line 1425
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_WIDTH:I
 
     int-to-float v3, v3
@@ -4041,7 +4010,7 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitX:F
 
-    .line 1452
+    .line 1426
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_HEIGHT:I
 
     int-to-float v3, v3
@@ -4054,12 +4023,12 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitY:F
 
-    .line 1454
+    .line 1428
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitWidth:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleWidth:F
 
-    .line 1455
+    .line 1429
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleWidth:F
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewRatio:F
@@ -4068,12 +4037,12 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleHeight:F
 
-    .line 1456
+    .line 1430
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitX:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleX:F
 
-    .line 1457
+    .line 1431
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_HEIGHT:I
 
     int-to-float v3, v3
@@ -4086,17 +4055,17 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleY:F
 
-    .line 1459
+    .line 1433
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleHeight:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleWidth:F
 
-    .line 1460
+    .line 1434
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleWidth:F
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleHeight:F
 
-    .line 1461
+    .line 1435
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->INIT_PORTRAIT_WIDTH:F
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleWidth:F
@@ -4107,7 +4076,7 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleX:F
 
-    .line 1463
+    .line 1437
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitWidth:F
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
@@ -4118,7 +4087,7 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitRectWidth:F
 
-    .line 1464
+    .line 1438
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
@@ -4135,7 +4104,7 @@
 
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeRectWidth:F
 
-    .line 1465
+    .line 1439
     return-void
 .end method
 
@@ -4143,7 +4112,7 @@
     .locals 1
 
     .prologue
-    .line 1468
+    .line 1442
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getVisualInteractionProvider()Lcom/sec/android/app/camera/interfaces/VisualInteractionProvider;
@@ -4161,7 +4130,7 @@
     .locals 1
 
     .prologue
-    .line 1472
+    .line 1446
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
     if-eqz v0, :cond_0
@@ -4181,7 +4150,7 @@
     .locals 1
 
     .prologue
-    .line 1476
+    .line 1450
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
     return v0
@@ -4191,7 +4160,7 @@
     .locals 1
 
     .prologue
-    .line 1480
+    .line 1461
     monitor-enter p0
 
     :try_start_0
@@ -4226,7 +4195,7 @@
     .param p1, "data"    # [B
 
     .prologue
-    .line 1489
+    .line 1470
     monitor-enter p0
 
     :try_start_0
@@ -4266,10 +4235,10 @@
 
     invoke-static {v0, v11}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1491
+    .line 1472
     const/4 v5, 0x0
 
-    .line 1492
+    .line 1473
     .local v5, "bmp":Landroid/graphics/Bitmap;
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
@@ -4277,21 +4246,21 @@
 
     if-ge v0, v11, :cond_2
 
-    .line 1493
+    .line 1474
     const/4 v0, 0x1
 
     new-array v9, v0, [Ljava/lang/Integer;
 
-    .line 1494
+    .line 1475
     .local v9, "rotation":[Ljava/lang/Integer;
     invoke-static {p1, v9}, Lcom/sec/android/app/camera/util/Util;->decodeExtendedRgbaBitmap([B[Ljava/lang/Integer;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
-    .line 1495
+    .line 1476
     if-nez v5, :cond_1
 
-    .line 1496
+    .line 1477
     const-string v0, "MotionPanoramaApp"
 
     const-string v11, "Unable to decode RGBA data for live preview."
@@ -4300,7 +4269,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1670
+    .line 1651
     .end local v9    # "rotation":[Ljava/lang/Integer;
     :cond_0
     :goto_0
@@ -4308,7 +4277,7 @@
 
     return-void
 
-    .line 1500
+    .line 1481
     .restart local v9    # "rotation":[Ljava/lang/Integer;
     :cond_1
     :try_start_1
@@ -4322,30 +4291,30 @@
 
     invoke-direct {p0, v0, v11}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setPreviewThumbnailSize(II)V
 
-    .line 1502
+    .line 1483
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewWidth:I
 
-    .line 1503
+    .line 1484
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewHeight:I
 
-    .line 1505
+    .line 1486
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mThumbnailPreviewPreallocatedBuffer:[I
 
-    .line 1526
+    .line 1507
     .end local v9    # "rotation":[Ljava/lang/Integer;
     :goto_1
     iput-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBmp:Landroid/graphics/Bitmap;
 
-    .line 1527
+    .line 1508
     if-nez v5, :cond_6
 
-    .line 1528
+    .line 1509
     const-string v0, "MotionPanoramaApp"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -4374,7 +4343,7 @@
 
     goto :goto_0
 
-    .line 1489
+    .line 1470
     .end local v5    # "bmp":Landroid/graphics/Bitmap;
     :catchall_0
     move-exception v0
@@ -4383,7 +4352,7 @@
 
     throw v0
 
-    .line 1507
+    .line 1488
     .restart local v5    # "bmp":Landroid/graphics/Bitmap;
     :cond_2
     :try_start_2
@@ -4393,12 +4362,12 @@
 
     if-eq v0, v11, :cond_0
 
-    .line 1512
+    .line 1493
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-eqz v0, :cond_3
 
-    .line 1513
+    .line 1494
     const-string v0, "MotionPanoramaApp"
 
     const-string v11, "return panorama is stopping"
@@ -4407,7 +4376,7 @@
 
     goto :goto_0
 
-    .line 1516
+    .line 1497
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -4417,7 +4386,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 1517
+    .line 1498
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     const/4 v11, 0x1
@@ -4430,7 +4399,7 @@
 
     if-lt v0, v11, :cond_5
 
-    .line 1518
+    .line 1499
     :cond_4
     const-string v0, "MotionPanoramaApp"
 
@@ -4470,7 +4439,7 @@
 
     goto/16 :goto_0
 
-    .line 1524
+    .line 1505
     :cond_5
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->getPartialPanoramaImage([B)Landroid/graphics/Bitmap;
 
@@ -4478,7 +4447,7 @@
 
     goto :goto_1
 
-    .line 1531
+    .line 1512
     :cond_6
     invoke-virtual {v5}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -4490,44 +4459,44 @@
 
     invoke-direct {p0, v0, v11}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setPreviewThumbnailSize(II)V
 
-    .line 1533
+    .line 1514
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviousCaptureCount:I
 
-    .line 1535
+    .line 1516
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     const/4 v11, 0x2
 
     if-ge v0, v11, :cond_7
 
-    .line 1536
+    .line 1517
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewLayout(Z)V
 
-    .line 1541
+    .line 1522
     :cond_7
     const/4 v7, 0x0
 
-    .line 1542
+    .line 1523
     .local v7, "arrowLeft":F
     const/4 v8, 0x0
 
-    .line 1543
+    .line 1524
     .local v8, "arrowTop":F
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
 
-    .line 1544
+    .line 1525
     .local v1, "left":F
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
 
-    .line 1545
+    .line 1526
     .local v2, "top":F
     const/4 v10, 0x0
 
-    .line 1547
+    .line 1528
     .local v10, "stopPanorama":Z
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
@@ -4535,7 +4504,7 @@
 
     if-ge v0, v11, :cond_d
 
-    .line 1548
+    .line 1529
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
     if-eqz v0, :cond_8
@@ -4546,7 +4515,7 @@
 
     if-ne v0, v11, :cond_a
 
-    .line 1549
+    .line 1530
     :cond_8
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleWidth:F
 
@@ -4558,7 +4527,7 @@
 
     sub-float v3, v0, v11
 
-    .line 1550
+    .line 1531
     .local v3, "width":F
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
@@ -4570,7 +4539,7 @@
 
     sub-float v4, v0, v11
 
-    .line 1616
+    .line 1597
     .local v4, "height":F
     :goto_2
     iget-object v11, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4579,7 +4548,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 1617
+    .line 1598
     const/high16 v0, 0x3f800000    # 1.0f
 
     cmpg-float v0, v3, v0
@@ -4592,7 +4561,7 @@
 
     if-gez v0, :cond_14
 
-    .line 1618
+    .line 1599
     :cond_9
     :try_start_3
     const-string v0, "MotionPanoramaApp"
@@ -4601,12 +4570,12 @@
 
     invoke-static {v0, v12}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1619
+    .line 1600
     monitor-exit v11
 
     goto/16 :goto_0
 
-    .line 1622
+    .line 1603
     :catchall_1
     move-exception v0
 
@@ -4617,7 +4586,7 @@
     :try_start_4
     throw v0
 
-    .line 1551
+    .line 1532
     .end local v3    # "width":F
     .end local v4    # "height":F
     :cond_a
@@ -4633,7 +4602,7 @@
 
     if-ne v0, v11, :cond_c
 
-    .line 1552
+    .line 1533
     :cond_b
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleHeight:F
 
@@ -4645,7 +4614,7 @@
 
     sub-float v4, v0, v11
 
-    .line 1553
+    .line 1534
     .restart local v4    # "height":F
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleWidth:F
 
@@ -4660,7 +4629,7 @@
     .restart local v3    # "width":F
     goto :goto_2
 
-    .line 1555
+    .line 1536
     .end local v3    # "width":F
     .end local v4    # "height":F
     :cond_c
@@ -4690,7 +4659,7 @@
 
     goto/16 :goto_0
 
-    .line 1559
+    .line 1540
     :cond_d
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailWidth:F
 
@@ -4700,7 +4669,7 @@
 
     if-ltz v0, :cond_e
 
-    .line 1560
+    .line 1541
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
     const/high16 v11, 0x40000000    # 2.0f
@@ -4711,7 +4680,7 @@
 
     sub-float v3, v0, v11
 
-    .line 1561
+    .line 1542
     .restart local v3    # "width":F
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailHeight:F
 
@@ -4723,17 +4692,17 @@
 
     sub-float v4, v0, v11
 
-    .line 1562
+    .line 1543
     .restart local v4    # "height":F
     const/4 v10, 0x1
 
-    .line 1577
+    .line 1558
     :goto_3
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1611
+    .line 1592
     :pswitch_0
     const-string v0, "MotionPanoramaApp"
 
@@ -4761,7 +4730,7 @@
 
     goto/16 :goto_0
 
-    .line 1563
+    .line 1544
     .end local v3    # "width":F
     .end local v4    # "height":F
     :cond_e
@@ -4773,7 +4742,7 @@
 
     if-ltz v0, :cond_f
 
-    .line 1564
+    .line 1545
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailWidth:F
 
     const/high16 v11, 0x40000000    # 2.0f
@@ -4784,7 +4753,7 @@
 
     sub-float v3, v0, v11
 
-    .line 1565
+    .line 1546
     .restart local v3    # "width":F
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
 
@@ -4796,13 +4765,13 @@
 
     sub-float v4, v0, v11
 
-    .line 1566
+    .line 1547
     .restart local v4    # "height":F
     const/4 v10, 0x1
 
     goto :goto_3
 
-    .line 1568
+    .line 1549
     .end local v3    # "width":F
     .end local v4    # "height":F
     :cond_f
@@ -4812,7 +4781,7 @@
 
     sub-float v3, v0, v11
 
-    .line 1570
+    .line 1551
     .restart local v3    # "width":F
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
@@ -4826,13 +4795,13 @@
 
     if-ne v0, v11, :cond_11
 
-    .line 1571
+    .line 1552
     :cond_10
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
 
     sub-float/2addr v3, v0
 
-    .line 1574
+    .line 1555
     :cond_11
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailHeight:F
 
@@ -4847,11 +4816,11 @@
     .restart local v4    # "height":F
     goto :goto_3
 
-    .line 1579
+    .line 1560
     :pswitch_1
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailWidth:F
 
-    const v11, 0x7f0b006a
+    const v11, 0x7f0b006b
 
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4859,7 +4828,7 @@
 
     add-float v7, v0, v11
 
-    .line 1580
+    .line 1561
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
 
     iget-object v11, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -4878,10 +4847,10 @@
 
     div-float v8, v0, v11
 
-    .line 1581
+    .line 1562
     goto/16 :goto_2
 
-    .line 1584
+    .line 1565
     :pswitch_2
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
@@ -4891,7 +4860,7 @@
 
     sub-float v1, v0, v3
 
-    .line 1585
+    .line 1566
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
     iget v11, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailWidth:F
@@ -4910,16 +4879,16 @@
 
     sub-float/2addr v0, v11
 
-    const v11, 0x7f0b006a
+    const v11, 0x7f0b006b
 
-    .line 1586
+    .line 1567
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
     move-result v11
 
     sub-float v7, v0, v11
 
-    .line 1587
+    .line 1568
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
 
     iget-object v11, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -4938,10 +4907,10 @@
 
     div-float v8, v0, v11
 
-    .line 1588
+    .line 1569
     goto/16 :goto_2
 
-    .line 1591
+    .line 1572
     :pswitch_3
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
@@ -4949,7 +4918,7 @@
 
     if-ne v0, v11, :cond_12
 
-    .line 1592
+    .line 1573
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
 
     const/high16 v11, 0x40000000    # 2.0f
@@ -4974,7 +4943,7 @@
 
     div-float v4, v0, v11
 
-    .line 1593
+    .line 1574
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
 
     sub-float/2addr v0, v4
@@ -4983,9 +4952,9 @@
 
     sub-float v2, v0, v11
 
-    .line 1595
+    .line 1576
     :cond_12
-    const v0, 0x7f0b006a
+    const v0, 0x7f0b006b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -4993,7 +4962,7 @@
 
     add-float v8, v4, v0
 
-    .line 1596
+    .line 1577
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitRectWidth:F
 
     iget-object v11, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -5016,10 +4985,10 @@
 
     add-float v7, v0, v11
 
-    .line 1597
+    .line 1578
     goto/16 :goto_2
 
-    .line 1600
+    .line 1581
     :pswitch_4
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
 
@@ -5029,14 +4998,14 @@
 
     sub-float v2, v0, v4
 
-    .line 1602
+    .line 1583
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     const/16 v11, 0x320
 
     if-ne v0, v11, :cond_13
 
-    .line 1603
+    .line 1584
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
 
     const/high16 v11, 0x40000000    # 2.0f
@@ -5061,7 +5030,7 @@
 
     div-float v4, v0, v11
 
-    .line 1604
+    .line 1585
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
 
     sub-float/2addr v0, v4
@@ -5070,7 +5039,7 @@
 
     sub-float v2, v0, v11
 
-    .line 1606
+    .line 1587
     :cond_13
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->SCREEN_HEIGHT:I
 
@@ -5090,7 +5059,7 @@
 
     sub-float/2addr v0, v4
 
-    const v11, 0x7f0b006a
+    const v11, 0x7f0b006b
 
     invoke-static {v11}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -5098,7 +5067,7 @@
 
     sub-float v8, v0, v11
 
-    .line 1607
+    .line 1588
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitRectWidth:F
 
     iget-object v11, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -5123,22 +5092,22 @@
 
     add-float v7, v0, v11
 
-    .line 1608
+    .line 1589
     goto/16 :goto_2
 
     :cond_14
     move-object v0, p0
 
-    .line 1621
+    .line 1602
     :try_start_5
     invoke-direct/range {v0 .. v5}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewGroup(FFFFLandroid/graphics/Bitmap;)V
 
-    .line 1622
+    .line 1603
     monitor-exit v11
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 1624
+    .line 1605
     :try_start_6
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
@@ -5146,14 +5115,14 @@
 
     if-ge v0, v11, :cond_1a
 
-    .line 1625
+    .line 1606
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     const/4 v11, 0x1
 
     if-le v0, v11, :cond_18
 
-    .line 1627
+    .line 1608
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
     const/4 v11, 0x0
@@ -5162,7 +5131,7 @@
 
     invoke-virtual {v0, v11, v12}, Lcom/samsung/android/glview/GLRectangle;->moveLayoutAbsolute(FF)V
 
-    .line 1632
+    .line 1613
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
     const/4 v11, 0x1
@@ -5175,7 +5144,7 @@
 
     if-ne v0, v11, :cond_16
 
-    .line 1633
+    .line 1614
     :cond_15
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
@@ -5183,25 +5152,25 @@
 
     aget-object v6, v0, v11
 
-    .line 1638
+    .line 1619
     .local v6, "activeGroup":Lcom/samsung/android/glview/GLViewGroup;
     :goto_4
     invoke-virtual {v6, v7, v8}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 1639
+    .line 1620
     const/4 v0, 0x0
 
     invoke-virtual {v6, v0}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1641
+    .line 1622
     if-eqz v10, :cond_18
 
-    .line 1642
+    .line 1623
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-eqz v0, :cond_17
 
-    .line 1643
+    .line 1624
     const-string v0, "MotionPanoramaApp"
 
     const-string v11, "already Stopping..."
@@ -5210,7 +5179,7 @@
 
     goto/16 :goto_0
 
-    .line 1635
+    .line 1616
     .end local v6    # "activeGroup":Lcom/samsung/android/glview/GLViewGroup;
     :cond_16
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -5222,11 +5191,11 @@
     .restart local v6    # "activeGroup":Lcom/samsung/android/glview/GLViewGroup;
     goto :goto_4
 
-    .line 1646
+    .line 1627
     :cond_17
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
 
-    .line 1665
+    .line 1646
     .end local v6    # "activeGroup":Lcom/samsung/android/glview/GLViewGroup;
     :cond_18
     :goto_5
@@ -5242,7 +5211,7 @@
 
     if-ne v0, v11, :cond_1e
 
-    .line 1666
+    .line 1647
     :cond_19
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
@@ -5254,7 +5223,7 @@
 
     goto/16 :goto_0
 
-    .line 1650
+    .line 1631
     :cond_1a
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
@@ -5268,7 +5237,7 @@
 
     if-ne v0, v11, :cond_1c
 
-    .line 1651
+    .line 1632
     :cond_1b
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
@@ -5280,7 +5249,7 @@
 
     invoke-virtual {v0, v11}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1656
+    .line 1637
     :goto_6
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
@@ -5288,12 +5257,12 @@
 
     if-ne v0, v11, :cond_18
 
-    .line 1657
+    .line 1638
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-eqz v0, :cond_1d
 
-    .line 1658
+    .line 1639
     const-string v0, "MotionPanoramaApp"
 
     const-string v11, "already Stopping..."
@@ -5302,7 +5271,7 @@
 
     goto/16 :goto_0
 
-    .line 1653
+    .line 1634
     :cond_1c
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
@@ -5316,13 +5285,13 @@
 
     goto :goto_6
 
-    .line 1661
+    .line 1642
     :cond_1d
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
 
     goto :goto_5
 
-    .line 1668
+    .line 1649
     :cond_1e
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
 
@@ -5336,7 +5305,7 @@
 
     goto/16 :goto_0
 
-    .line 1577
+    .line 1558
     nop
 
     :pswitch_data_0
@@ -5353,319 +5322,318 @@
 .end method
 
 .method private panoramaDirectionChanged(I)V
-    .locals 9
+    .locals 10
     .param p1, "orientation"    # I
 
     .prologue
-    const/4 v5, 0x3
+    const/4 v9, 0x3
 
     const/4 v8, 0x2
 
-    const/4 v7, 0x1
+    const/4 v7, 0x4
 
-    const/4 v6, 0x4
+    const/4 v3, 0x1
 
     const/4 v4, 0x0
 
-    .line 1674
+    .line 1655
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isDirectionDetected()Z
 
-    move-result v3
+    move-result v5
 
-    if-nez v3, :cond_5
+    if-nez v5, :cond_5
 
-    .line 1675
-    iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
+    .line 1656
+    iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
-    packed-switch v3, :pswitch_data_0
+    packed-switch v5, :pswitch_data_0
 
-    .line 1698
+    .line 1679
     :goto_0
     const/4 v1, 0x0
 
-    .line 1699
+    .line 1680
     .local v1, "isHorizontalCapturing":Z
     packed-switch p1, :pswitch_data_1
 
-    .line 1717
+    .line 1698
     :goto_1
     :pswitch_0
-    iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
+    iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
-    if-eq v3, v7, :cond_0
+    if-eq v5, v3, :cond_0
 
-    iget v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
+    iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
-    if-ne v3, v5, :cond_1
+    if-ne v5, v9, :cond_1
 
-    .line 1718
+    .line 1699
     :cond_0
-    if-eqz v1, :cond_6
+    if-nez v1, :cond_6
 
-    .line 1719
-    const/4 v1, 0x0
+    move v1, v3
 
-    .line 1724
+    .line 1702
     :cond_1
     :goto_2
     if-eqz v1, :cond_7
 
-    .line 1725
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+    .line 1703
+    iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const/16 v4, 0x189e
+    const/16 v5, 0x189e
 
-    const-string v5, "1000"
+    const-string v6, "1000"
 
-    invoke-interface {v3, v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->sendBroadcastChangeSettings(ILjava/lang/String;)V
+    invoke-interface {v4, v5, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->sendBroadcastChangeSettings(ILjava/lang/String;)V
 
-    .line 1730
+    .line 1708
     :goto_3
     if-eqz p1, :cond_4
 
-    .line 1731
+    .line 1709
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isDirectionDetected()Z
 
-    move-result v3
+    move-result v4
 
-    if-nez v3, :cond_4
+    if-nez v4, :cond_4
 
-    .line 1732
+    .line 1710
     const/4 v2, 0x0
 
     .local v2, "width":F
     const/4 v0, 0x0
 
-    .line 1733
+    .line 1711
     .local v0, "height":F
-    if-eq p1, v6, :cond_2
+    if-eq p1, v7, :cond_2
 
-    const/16 v3, 0x8
+    const/16 v4, 0x8
 
-    if-ne p1, v3, :cond_8
+    if-ne p1, v4, :cond_8
 
-    .line 1734
+    .line 1712
     :cond_2
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleWidth:F
 
-    .line 1735
+    .line 1713
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleHeight:F
 
-    .line 1736
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
+    .line 1714
+    iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
 
-    invoke-virtual {v3, v2, v0}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
+    invoke-virtual {v4, v2, v0}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 1742
+    .line 1720
     :cond_3
     :goto_4
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
-    .line 1743
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
+    .line 1721
+    iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
-    invoke-virtual {v3, v2, v0}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
+    invoke-virtual {v4, v2, v0}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 1744
-    invoke-direct {p0, v7}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewLayout(Z)V
+    .line 1722
+    invoke-direct {p0, v3}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewLayout(Z)V
 
-    .line 1747
+    .line 1725
     .end local v0    # "height":F
     .end local v2    # "width":F
     :cond_4
     return-void
 
-    .line 1678
+    .line 1659
     .end local v1    # "isHorizontalCapturing":Z
     :pswitch_1
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v4
+    aget-object v5, v5, v4
 
-    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1679
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1660
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v7
+    aget-object v5, v5, v3
 
-    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1680
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1661
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v8
+    aget-object v5, v5, v8
 
-    invoke-virtual {v3, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1681
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1662
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v5
+    aget-object v5, v5, v9
 
-    invoke-virtual {v3, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 1685
+    .line 1666
     :pswitch_2
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v4
+    aget-object v5, v5, v4
 
-    invoke-virtual {v3, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1686
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1667
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v7
+    aget-object v5, v5, v3
 
-    invoke-virtual {v3, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1687
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1668
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v8
+    aget-object v5, v5, v8
 
-    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1688
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1669
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v5
+    aget-object v5, v5, v9
 
-    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 1692
+    .line 1673
     :cond_5
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v4
+    aget-object v5, v5, v4
 
-    invoke-virtual {v3, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1693
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1674
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v7
+    aget-object v5, v5, v3
 
-    invoke-virtual {v3, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1694
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1675
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v8
+    aget-object v5, v5, v8
 
-    invoke-virtual {v3, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1695
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
+    .line 1676
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
-    aget-object v3, v3, v5
+    aget-object v5, v5, v9
 
-    invoke-virtual {v3, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
     goto/16 :goto_0
 
-    .line 1701
+    .line 1682
     .restart local v1    # "isHorizontalCapturing":Z
     :pswitch_3
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
 
-    aget-object v3, v3, v7
+    aget-object v5, v5, v3
 
-    const v4, 0x7f020153
+    const v6, 0x7f020154
 
-    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
+    invoke-virtual {v5, v6}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
     goto/16 :goto_1
 
-    .line 1704
+    .line 1685
     :pswitch_4
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
 
-    aget-object v3, v3, v7
+    aget-object v5, v5, v3
 
-    const v4, 0x7f020150
+    const v6, 0x7f020151
 
-    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
+    invoke-virtual {v5, v6}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
     goto/16 :goto_1
 
-    .line 1707
+    .line 1688
     :pswitch_5
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
 
-    aget-object v3, v3, v4
+    aget-object v5, v5, v4
 
-    const v4, 0x7f020151
+    const v6, 0x7f020152
 
-    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
+    invoke-virtual {v5, v6}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1708
+    .line 1689
     const/4 v1, 0x1
 
-    .line 1709
+    .line 1690
     goto/16 :goto_1
 
-    .line 1711
+    .line 1692
     :pswitch_6
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
+    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureTri:[Lcom/samsung/android/glview/GLImage;
 
-    aget-object v3, v3, v4
+    aget-object v5, v5, v4
 
-    const v4, 0x7f020152
+    const v6, 0x7f020153
 
-    invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
+    invoke-virtual {v5, v6}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1712
+    .line 1693
     const/4 v1, 0x1
 
     goto/16 :goto_1
 
-    .line 1721
     :cond_6
-    const/4 v1, 0x1
+    move v1, v4
 
+    .line 1699
     goto/16 :goto_2
 
-    .line 1727
+    .line 1705
     :cond_7
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+    iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const/16 v4, 0x189e
+    const/16 v5, 0x189e
 
-    const-string v5, "0"
+    const-string v6, "0"
 
-    invoke-interface {v3, v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->sendBroadcastChangeSettings(ILjava/lang/String;)V
+    invoke-interface {v4, v5, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->sendBroadcastChangeSettings(ILjava/lang/String;)V
 
     goto/16 :goto_3
 
-    .line 1737
+    .line 1715
     .restart local v0    # "height":F
     .restart local v2    # "width":F
     :cond_8
-    if-eq p1, v7, :cond_9
+    if-eq p1, v3, :cond_9
 
     if-ne p1, v8, :cond_3
 
-    .line 1738
+    .line 1716
     :cond_9
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleWidth:F
 
-    .line 1739
+    .line 1717
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
-    .line 1740
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
+    .line 1718
+    iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
 
-    invoke-virtual {v3, v2, v0}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
+    invoke-virtual {v4, v2, v0}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
     goto/16 :goto_4
 
-    .line 1675
+    .line 1656
     nop
 
     :pswitch_data_0
@@ -5676,7 +5644,7 @@
         :pswitch_2
     .end packed-switch
 
-    .line 1699
+    .line 1680
     :pswitch_data_1
     .packed-switch 0x1
         :pswitch_6
@@ -5694,7 +5662,7 @@
     .locals 2
 
     .prologue
-    .line 1750
+    .line 1728
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
 
     if-eqz v0, :cond_0
@@ -5705,10 +5673,10 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 1751
+    .line 1729
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showGuideText()V
 
-    .line 1753
+    .line 1731
     :cond_0
     return-void
 .end method
@@ -5719,34 +5687,34 @@
     .param p2, "y"    # I
 
     .prologue
-    .line 1756
+    .line 1734
     const/4 v8, 0x0
 
-    .line 1757
+    .line 1735
     .local v8, "rect_x":F
     const/4 v9, 0x0
 
-    .line 1758
+    .line 1736
     .local v9, "rect_y":F
     const/4 v10, 0x0
 
-    .line 1760
+    .line 1738
     .local v10, "startOffsetPosition":F
     const/4 v4, 0x0
 
-    .line 1761
+    .line 1739
     .local v4, "arrow_x":F
     const/4 v5, 0x0
 
-    .line 1763
+    .line 1741
     .local v5, "arrow_y":F
     const/4 v7, 0x0
 
-    .line 1764
+    .line 1742
     .local v7, "baseW":F
     const/4 v6, 0x0
 
-    .line 1768
+    .line 1746
     .local v6, "baseH":F
     move-object/from16 v0, p0
 
@@ -5756,24 +5724,24 @@
 
     packed-switch v22, :pswitch_data_0
 
-    .line 2066
+    .line 2044
     :cond_0
     :goto_0
     :pswitch_0
     return-void
 
-    .line 1770
+    .line 1748
     :pswitch_1
     move-object/from16 v0, p0
 
     iget v7, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitWidth:F
 
-    .line 1771
+    .line 1749
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleHeight:F
 
-    .line 1772
+    .line 1750
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_Y:F
@@ -5796,7 +5764,7 @@
 
     sub-float v10, v22, v23
 
-    .line 1773
+    .line 1751
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitX:F
@@ -5827,7 +5795,7 @@
 
     add-float v8, v22, v23
 
-    .line 1774
+    .line 1752
     move/from16 v0, p2
 
     neg-int v0, v0
@@ -5858,7 +5826,7 @@
 
     add-float v9, v10, v22
 
-    .line 1801
+    .line 1779
     :goto_1
     move-object/from16 v0, p0
 
@@ -5878,10 +5846,10 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1804
+    .line 1782
     const/4 v11, 0x0
 
-    .line 1806
+    .line 1784
     .local v11, "warningLevel":I
     move/from16 v0, p1
 
@@ -5915,7 +5883,7 @@
 
     move-result-wide v14
 
-    .line 1807
+    .line 1785
     .local v14, "xDistance":D
     move/from16 v0, p2
 
@@ -5955,7 +5923,7 @@
 
     move-result-wide v18
 
-    .line 1808
+    .line 1786
     .local v18, "yDistance":D
     move-object/from16 v0, p0
 
@@ -5965,7 +5933,7 @@
 
     packed-switch v22, :pswitch_data_1
 
-    .line 1821
+    .line 1799
     :goto_2
     :pswitch_2
     move-object/from16 v0, p0
@@ -6001,11 +5969,11 @@
 
     if-gez p2, :cond_7
 
-    .line 1822
+    .line 1800
     :cond_2
     const-wide/16 v18, 0x0
 
-    .line 1826
+    .line 1804
     :cond_3
     :goto_3
     float-to-double v0, v7
@@ -6018,7 +5986,7 @@
 
     mul-double v16, v22, v24
 
-    .line 1827
+    .line 1805
     .local v16, "xDistanceRate":D
     float-to-double v0, v6
 
@@ -6030,7 +5998,7 @@
 
     mul-double v20, v22, v24
 
-    .line 1828
+    .line 1806
     .local v20, "yDistanceRate":D
     move-wide/from16 v0, v16
 
@@ -6040,7 +6008,7 @@
 
     move-result-wide v12
 
-    .line 1830
+    .line 1808
     .local v12, "totalDistance":D
     const-string v22, "MotionPanoramaApp"
 
@@ -6098,7 +6066,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1832
+    .line 1810
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
@@ -6110,7 +6078,7 @@
     :pswitch_3
     goto/16 :goto_0
 
-    .line 1950
+    .line 1928
     :pswitch_4
     const-wide/high16 v22, 0x403e000000000000L    # 30.0
 
@@ -6118,10 +6086,10 @@
 
     if-gez v22, :cond_16
 
-    .line 1951
+    .line 1929
     const/4 v11, 0x0
 
-    .line 1957
+    .line 1935
     :goto_4
     const/16 v22, 0x1
 
@@ -6129,7 +6097,7 @@
 
     if-ne v11, v0, :cond_18
 
-    .line 1958
+    .line 1936
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -6144,7 +6112,7 @@
 
     if-eqz v22, :cond_4
 
-    .line 1959
+    .line 1937
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -6155,7 +6123,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 1960
+    .line 1938
     const/16 v22, 0x0
 
     move/from16 v0, v22
@@ -6164,7 +6132,7 @@
 
     iput-boolean v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 1963
+    .line 1941
     :cond_4
     move-object/from16 v0, p0
 
@@ -6174,7 +6142,7 @@
 
     if-nez v22, :cond_5
 
-    .line 1964
+    .line 1942
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -6185,7 +6153,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->sendEmptyMessage(I)Z
 
-    .line 1965
+    .line 1943
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6212,7 +6180,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1966
+    .line 1944
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6239,7 +6207,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1967
+    .line 1945
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6266,7 +6234,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1968
+    .line 1946
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6293,7 +6261,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1969
+    .line 1947
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6306,7 +6274,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1970
+    .line 1948
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6319,7 +6287,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1971
+    .line 1949
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6332,7 +6300,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1972
+    .line 1950
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6345,7 +6313,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1973
+    .line 1951
     const/16 v22, 0x1
 
     move/from16 v0, v22
@@ -6354,7 +6322,7 @@
 
     iput-boolean v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 1998
+    .line 1976
     :cond_5
     :goto_5
     const/16 v22, 0x1
@@ -6363,15 +6331,15 @@
 
     if-lt v11, v0, :cond_1e
 
-    .line 2000
+    .line 1978
     cmpl-double v22, v16, v20
 
     if-lez v22, :cond_1c
 
-    .line 2001
+    .line 1979
     if-lez p1, :cond_1b
 
-    .line 2002
+    .line 1980
     const-string v22, "MotionPanoramaApp"
 
     new-instance v23, Ljava/lang/StringBuilder;
@@ -6400,7 +6368,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2004
+    .line 1982
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6425,7 +6393,7 @@
 
     sub-float v4, v22, v23
 
-    .line 2005
+    .line 1983
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
@@ -6458,7 +6426,7 @@
 
     add-float v5, v9, v22
 
-    .line 2006
+    .line 1984
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6473,7 +6441,7 @@
 
     invoke-virtual {v0, v4, v5}, Lcom/samsung/android/glview/GLImage;->translateAbsolute(FF)V
 
-    .line 2008
+    .line 1986
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6488,7 +6456,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2009
+    .line 1987
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6503,7 +6471,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2010
+    .line 1988
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6518,7 +6486,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2011
+    .line 1989
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -6533,7 +6501,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2050
+    .line 2028
     :cond_6
     :goto_6
     move-object/from16 v0, p0
@@ -6546,7 +6514,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 2051
+    .line 2029
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
@@ -6557,7 +6525,7 @@
 
     invoke-virtual {v0, v8, v9}, Lcom/samsung/android/glview/GLRectangle;->translateAbsolute(FF)V
 
-    .line 2052
+    .line 2030
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
@@ -6570,7 +6538,7 @@
 
     goto/16 :goto_0
 
-    .line 1777
+    .line 1755
     .end local v11    # "warningLevel":I
     .end local v12    # "totalDistance":D
     .end local v14    # "xDistance":D
@@ -6582,12 +6550,12 @@
 
     iget v7, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitWidth:F
 
-    .line 1778
+    .line 1756
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleHeight:F
 
-    .line 1779
+    .line 1757
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_Y:F
@@ -6614,7 +6582,7 @@
 
     sub-float v10, v22, v23
 
-    .line 1780
+    .line 1758
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitX:F
@@ -6645,7 +6613,7 @@
 
     add-float v8, v22, v23
 
-    .line 1781
+    .line 1759
     move/from16 v0, p2
 
     neg-int v0, v0
@@ -6676,21 +6644,21 @@
 
     add-float v9, v10, v22
 
-    .line 1782
+    .line 1760
     goto/16 :goto_1
 
-    .line 1784
+    .line 1762
     :pswitch_6
     move-object/from16 v0, p0
 
     iget v7, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeRectWidth:F
 
-    .line 1785
+    .line 1763
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
-    .line 1786
+    .line 1764
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_X:F
@@ -6713,7 +6681,7 @@
 
     sub-float v10, v22, v23
 
-    .line 1787
+    .line 1765
     move/from16 v0, p1
 
     int-to-float v0, v0
@@ -6738,7 +6706,7 @@
 
     add-float v8, v10, v22
 
-    .line 1788
+    .line 1766
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeY:F
@@ -6775,21 +6743,21 @@
 
     add-float v9, v22, v23
 
-    .line 1789
+    .line 1767
     goto/16 :goto_1
 
-    .line 1791
+    .line 1769
     :pswitch_7
     move-object/from16 v0, p0
 
     iget v7, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeRectWidth:F
 
-    .line 1792
+    .line 1770
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
-    .line 1793
+    .line 1771
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_LANDSCAPE_X:F
@@ -6812,7 +6780,7 @@
 
     sub-float v10, v22, v23
 
-    .line 1794
+    .line 1772
     move/from16 v0, p1
 
     int-to-float v0, v0
@@ -6837,7 +6805,7 @@
 
     add-float v8, v10, v22
 
-    .line 1795
+    .line 1773
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeY:F
@@ -6874,10 +6842,10 @@
 
     add-float v9, v22, v23
 
-    .line 1796
+    .line 1774
     goto/16 :goto_1
 
-    .line 1811
+    .line 1789
     .restart local v11    # "warningLevel":I
     .restart local v14    # "xDistance":D
     .restart local v18    # "yDistance":D
@@ -6886,19 +6854,19 @@
 
     div-double v18, v18, v22
 
-    .line 1812
+    .line 1790
     goto/16 :goto_2
 
-    .line 1815
+    .line 1793
     :pswitch_9
     const-wide/high16 v22, 0x4000000000000000L    # 2.0
 
     div-double v14, v14, v22
 
-    .line 1816
+    .line 1794
     goto/16 :goto_2
 
-    .line 1823
+    .line 1801
     :cond_7
     move-object/from16 v0, p0
 
@@ -6933,13 +6901,13 @@
 
     if-gez p1, :cond_3
 
-    .line 1824
+    .line 1802
     :cond_9
     const-wide/16 v14, 0x0
 
     goto/16 :goto_3
 
-    .line 1835
+    .line 1813
     .restart local v12    # "totalDistance":D
     .restart local v16    # "xDistanceRate":D
     .restart local v20    # "yDistanceRate":D
@@ -6950,10 +6918,10 @@
 
     if-gez v22, :cond_d
 
-    .line 1836
+    .line 1814
     const/4 v11, 0x0
 
-    .line 1842
+    .line 1820
     :goto_7
     const/16 v22, 0x1
 
@@ -6961,7 +6929,7 @@
 
     if-ne v11, v0, :cond_f
 
-    .line 1843
+    .line 1821
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -6976,7 +6944,7 @@
 
     if-eqz v22, :cond_a
 
-    .line 1844
+    .line 1822
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -6987,7 +6955,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 1845
+    .line 1823
     const/16 v22, 0x0
 
     move/from16 v0, v22
@@ -6996,7 +6964,7 @@
 
     iput-boolean v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 1848
+    .line 1826
     :cond_a
     move-object/from16 v0, p0
 
@@ -7006,7 +6974,7 @@
 
     if-nez v22, :cond_b
 
-    .line 1849
+    .line 1827
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -7017,7 +6985,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->sendEmptyMessage(I)Z
 
-    .line 1850
+    .line 1828
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7044,7 +7012,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1851
+    .line 1829
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7071,7 +7039,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1852
+    .line 1830
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7098,7 +7066,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1853
+    .line 1831
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7125,7 +7093,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1854
+    .line 1832
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7138,7 +7106,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1855
+    .line 1833
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7151,7 +7119,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1856
+    .line 1834
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7164,7 +7132,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1857
+    .line 1835
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7177,7 +7145,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1858
+    .line 1836
     const/16 v22, 0x1
 
     move/from16 v0, v22
@@ -7186,7 +7154,7 @@
 
     iput-boolean v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 1883
+    .line 1861
     :cond_b
     :goto_8
     const/16 v22, 0x1
@@ -7195,15 +7163,15 @@
 
     if-lt v11, v0, :cond_15
 
-    .line 1884
+    .line 1862
     cmpl-double v22, v20, v16
 
     if-lez v22, :cond_13
 
-    .line 1885
+    .line 1863
     if-lez p2, :cond_12
 
-    .line 1886
+    .line 1864
     const-string v22, "MotionPanoramaApp"
 
     new-instance v23, Ljava/lang/StringBuilder;
@@ -7232,7 +7200,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1888
+    .line 1866
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
@@ -7265,7 +7233,7 @@
 
     add-float v4, v8, v22
 
-    .line 1889
+    .line 1867
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
@@ -7286,7 +7254,7 @@
 
     add-float v5, v22, v23
 
-    .line 1890
+    .line 1868
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7301,7 +7269,7 @@
 
     invoke-virtual {v0, v4, v5}, Lcom/samsung/android/glview/GLImage;->translateAbsolute(FF)V
 
-    .line 1892
+    .line 1870
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7316,7 +7284,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1893
+    .line 1871
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7331,7 +7299,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1894
+    .line 1872
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7346,7 +7314,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1895
+    .line 1873
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7361,7 +7329,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1934
+    .line 1912
     :cond_c
     :goto_9
     move-object/from16 v0, p0
@@ -7374,7 +7342,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 1936
+    .line 1914
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
@@ -7385,7 +7353,7 @@
 
     invoke-virtual {v0, v8, v9}, Lcom/samsung/android/glview/GLRectangle;->translateAbsolute(FF)V
 
-    .line 1937
+    .line 1915
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
@@ -7398,7 +7366,7 @@
 
     goto/16 :goto_0
 
-    .line 1837
+    .line 1815
     :cond_d
     const-wide/high16 v22, 0x4049000000000000L    # 50.0
 
@@ -7406,18 +7374,18 @@
 
     if-gez v22, :cond_e
 
-    .line 1838
+    .line 1816
     const/4 v11, 0x1
 
     goto/16 :goto_7
 
-    .line 1840
+    .line 1818
     :cond_e
     const/4 v11, 0x2
 
     goto/16 :goto_7
 
-    .line 1860
+    .line 1838
     :cond_f
     const/16 v22, 0x2
 
@@ -7425,7 +7393,7 @@
 
     if-ne v11, v0, :cond_11
 
-    .line 1861
+    .line 1839
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -7440,7 +7408,7 @@
 
     if-eqz v22, :cond_10
 
-    .line 1862
+    .line 1840
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -7451,7 +7419,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 1863
+    .line 1841
     const/16 v22, 0x0
 
     move/from16 v0, v22
@@ -7460,7 +7428,7 @@
 
     iput-boolean v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 1866
+    .line 1844
     :cond_10
     move-object/from16 v0, p0
 
@@ -7470,7 +7438,7 @@
 
     if-nez v22, :cond_b
 
-    .line 1867
+    .line 1845
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -7481,7 +7449,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->sendEmptyMessage(I)Z
 
-    .line 1868
+    .line 1846
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7508,7 +7476,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1869
+    .line 1847
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7535,7 +7503,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1870
+    .line 1848
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7562,7 +7530,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1871
+    .line 1849
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7589,7 +7557,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1872
+    .line 1850
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7602,7 +7570,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1873
+    .line 1851
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7615,7 +7583,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1874
+    .line 1852
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7628,7 +7596,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1875
+    .line 1853
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7641,7 +7609,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1876
+    .line 1854
     const/16 v22, 0x1
 
     move/from16 v0, v22
@@ -7652,7 +7620,7 @@
 
     goto/16 :goto_8
 
-    .line 1879
+    .line 1857
     :cond_11
     const/16 v22, 0x0
 
@@ -7662,12 +7630,12 @@
 
     iput-boolean v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 1880
+    .line 1858
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaSound()V
 
     goto/16 :goto_8
 
-    .line 1898
+    .line 1876
     :cond_12
     const-string v22, "MotionPanoramaApp"
 
@@ -7697,7 +7665,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1900
+    .line 1878
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
@@ -7730,7 +7698,7 @@
 
     add-float v4, v8, v22
 
-    .line 1901
+    .line 1879
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7755,7 +7723,7 @@
 
     sub-float v5, v22, v23
 
-    .line 1902
+    .line 1880
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7770,7 +7738,7 @@
 
     invoke-virtual {v0, v4, v5}, Lcom/samsung/android/glview/GLImage;->translateAbsolute(FF)V
 
-    .line 1904
+    .line 1882
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7785,7 +7753,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1905
+    .line 1883
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7800,7 +7768,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1906
+    .line 1884
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7815,7 +7783,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1907
+    .line 1885
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7832,11 +7800,11 @@
 
     goto/16 :goto_9
 
-    .line 1911
+    .line 1889
     :cond_13
     if-lez p1, :cond_14
 
-    .line 1912
+    .line 1890
     const-string v22, "MotionPanoramaApp"
 
     new-instance v23, Ljava/lang/StringBuilder;
@@ -7865,7 +7833,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1914
+    .line 1892
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7890,7 +7858,7 @@
 
     sub-float v4, v22, v23
 
-    .line 1915
+    .line 1893
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
@@ -7923,7 +7891,7 @@
 
     add-float v5, v9, v22
 
-    .line 1916
+    .line 1894
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7938,7 +7906,7 @@
 
     invoke-virtual {v0, v4, v5}, Lcom/samsung/android/glview/GLImage;->translateAbsolute(FF)V
 
-    .line 1918
+    .line 1896
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7953,7 +7921,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1919
+    .line 1897
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7968,7 +7936,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1920
+    .line 1898
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -7983,7 +7951,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1921
+    .line 1899
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8000,11 +7968,11 @@
 
     goto/16 :goto_9
 
-    .line 1922
+    .line 1900
     :cond_14
     if-gez p1, :cond_c
 
-    .line 1923
+    .line 1901
     const-string v22, "MotionPanoramaApp"
 
     new-instance v23, Ljava/lang/StringBuilder;
@@ -8033,7 +8001,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1925
+    .line 1903
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
@@ -8054,7 +8022,7 @@
 
     add-float v4, v22, v23
 
-    .line 1926
+    .line 1904
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxPortrait:Lcom/samsung/android/glview/GLRectangle;
@@ -8087,7 +8055,7 @@
 
     add-float v5, v9, v22
 
-    .line 1927
+    .line 1905
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8102,7 +8070,7 @@
 
     invoke-virtual {v0, v4, v5}, Lcom/samsung/android/glview/GLImage;->translateAbsolute(FF)V
 
-    .line 1929
+    .line 1907
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8117,7 +8085,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1930
+    .line 1908
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8132,7 +8100,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1931
+    .line 1909
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8147,7 +8115,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1932
+    .line 1910
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8164,7 +8132,7 @@
 
     goto/16 :goto_9
 
-    .line 1939
+    .line 1917
     :cond_15
     move-object/from16 v0, p0
 
@@ -8176,7 +8144,7 @@
 
     invoke-virtual {v0, v8, v9}, Lcom/samsung/android/glview/GLRectangle;->translateAbsolute(FF)V
 
-    .line 1940
+    .line 1918
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -8187,18 +8155,18 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 1941
+    .line 1919
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setGuideTextLocation()V
 
-    .line 1943
+    .line 1921
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideWarningArrow()V
 
-    .line 1944
+    .line 1922
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideWarningBox()V
 
     goto/16 :goto_0
 
-    .line 1952
+    .line 1930
     :cond_16
     const-wide/high16 v22, 0x4049000000000000L    # 50.0
 
@@ -8206,18 +8174,18 @@
 
     if-gez v22, :cond_17
 
-    .line 1953
+    .line 1931
     const/4 v11, 0x1
 
     goto/16 :goto_4
 
-    .line 1955
+    .line 1933
     :cond_17
     const/4 v11, 0x2
 
     goto/16 :goto_4
 
-    .line 1975
+    .line 1953
     :cond_18
     const/16 v22, 0x2
 
@@ -8225,7 +8193,7 @@
 
     if-ne v11, v0, :cond_1a
 
-    .line 1976
+    .line 1954
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -8240,7 +8208,7 @@
 
     if-eqz v22, :cond_19
 
-    .line 1977
+    .line 1955
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -8251,7 +8219,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 1978
+    .line 1956
     const/16 v22, 0x0
 
     move/from16 v0, v22
@@ -8260,7 +8228,7 @@
 
     iput-boolean v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 1981
+    .line 1959
     :cond_19
     move-object/from16 v0, p0
 
@@ -8270,7 +8238,7 @@
 
     if-nez v22, :cond_5
 
-    .line 1982
+    .line 1960
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
@@ -8281,7 +8249,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->sendEmptyMessage(I)Z
 
-    .line 1983
+    .line 1961
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8308,7 +8276,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1984
+    .line 1962
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8335,7 +8303,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1985
+    .line 1963
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8362,7 +8330,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1986
+    .line 1964
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8389,7 +8357,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1987
+    .line 1965
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8402,7 +8370,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1988
+    .line 1966
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8415,7 +8383,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1989
+    .line 1967
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8428,7 +8396,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1990
+    .line 1968
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8441,7 +8409,7 @@
 
     invoke-virtual/range {v22 .. v22}, Lcom/samsung/android/glview/GLImage;->startAnimation()V
 
-    .line 1991
+    .line 1969
     const/16 v22, 0x1
 
     move/from16 v0, v22
@@ -8452,7 +8420,7 @@
 
     goto/16 :goto_5
 
-    .line 1994
+    .line 1972
     :cond_1a
     const/16 v22, 0x0
 
@@ -8462,12 +8430,12 @@
 
     iput-boolean v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 1995
+    .line 1973
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaSound()V
 
     goto/16 :goto_5
 
-    .line 2014
+    .line 1992
     :cond_1b
     const-string v22, "MotionPanoramaApp"
 
@@ -8497,7 +8465,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2016
+    .line 1994
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
@@ -8518,7 +8486,7 @@
 
     add-float v4, v22, v23
 
-    .line 2017
+    .line 1995
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
@@ -8551,7 +8519,7 @@
 
     add-float v5, v9, v22
 
-    .line 2018
+    .line 1996
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8566,7 +8534,7 @@
 
     invoke-virtual {v0, v4, v5}, Lcom/samsung/android/glview/GLImage;->translateAbsolute(FF)V
 
-    .line 2020
+    .line 1998
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8581,7 +8549,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2021
+    .line 1999
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8596,7 +8564,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2022
+    .line 2000
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8611,7 +8579,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2023
+    .line 2001
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8628,11 +8596,11 @@
 
     goto/16 :goto_6
 
-    .line 2025
+    .line 2003
     :cond_1c
     if-gez p2, :cond_1d
 
-    .line 2026
+    .line 2004
     const-string v22, "MotionPanoramaApp"
 
     new-instance v23, Ljava/lang/StringBuilder;
@@ -8661,7 +8629,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2028
+    .line 2006
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
@@ -8694,7 +8662,7 @@
 
     add-float v4, v8, v22
 
-    .line 2029
+    .line 2007
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8719,7 +8687,7 @@
 
     sub-float v5, v22, v23
 
-    .line 2030
+    .line 2008
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8734,7 +8702,7 @@
 
     invoke-virtual {v0, v4, v5}, Lcom/samsung/android/glview/GLImage;->translateAbsolute(FF)V
 
-    .line 2032
+    .line 2010
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8749,7 +8717,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2033
+    .line 2011
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8764,7 +8732,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2034
+    .line 2012
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8779,7 +8747,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2035
+    .line 2013
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8796,11 +8764,11 @@
 
     goto/16 :goto_6
 
-    .line 2038
+    .line 2016
     :cond_1d
     if-lez p2, :cond_6
 
-    .line 2039
+    .line 2017
     const-string v22, "MotionPanoramaApp"
 
     new-instance v23, Ljava/lang/StringBuilder;
@@ -8829,7 +8797,7 @@
 
     invoke-static/range {v22 .. v23}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2041
+    .line 2019
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
@@ -8862,7 +8830,7 @@
 
     add-float v4, v8, v22
 
-    .line 2042
+    .line 2020
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningBoxLandscape:Lcom/samsung/android/glview/GLRectangle;
@@ -8883,7 +8851,7 @@
 
     add-float v5, v22, v23
 
-    .line 2043
+    .line 2021
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8898,7 +8866,7 @@
 
     invoke-virtual {v0, v4, v5}, Lcom/samsung/android/glview/GLImage;->translateAbsolute(FF)V
 
-    .line 2045
+    .line 2023
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8913,7 +8881,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2046
+    .line 2024
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8928,7 +8896,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2047
+    .line 2025
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8943,7 +8911,7 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 2048
+    .line 2026
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mWarningArrow:[Lcom/samsung/android/glview/GLImage;
@@ -8960,7 +8928,7 @@
 
     goto/16 :goto_6
 
-    .line 2054
+    .line 2032
     :cond_1e
     move-object/from16 v0, p0
 
@@ -8972,7 +8940,7 @@
 
     invoke-virtual {v0, v8, v9}, Lcom/samsung/android/glview/GLRectangle;->translateAbsolute(FF)V
 
-    .line 2056
+    .line 2034
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -8983,18 +8951,18 @@
 
     invoke-virtual/range {v22 .. v23}, Lcom/samsung/android/glview/GLRectangle;->setVisibility(I)V
 
-    .line 2057
+    .line 2035
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setGuideTextLocation()V
 
-    .line 2059
+    .line 2037
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideWarningArrow()V
 
-    .line 2060
+    .line 2038
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideWarningBox()V
 
     goto/16 :goto_0
 
-    .line 1768
+    .line 1746
     nop
 
     :pswitch_data_0
@@ -9009,7 +8977,7 @@
         :pswitch_5
     .end packed-switch
 
-    .line 1808
+    .line 1786
     :pswitch_data_1
     .packed-switch 0x1
         :pswitch_9
@@ -9022,7 +8990,7 @@
         :pswitch_8
     .end packed-switch
 
-    .line 1832
+    .line 1810
     :pswitch_data_2
     .packed-switch 0x1
         :pswitch_4
@@ -9041,14 +9009,14 @@
     .param p1, "sound"    # I
 
     .prologue
-    .line 2069
+    .line 2047
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, p1, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->playCameraSound(II)V
 
-    .line 2070
+    .line 2048
     return-void
 .end method
 
@@ -9056,14 +9024,14 @@
     .locals 6
 
     .prologue
-    .line 2077
+    .line 2055
     const-string v3, "MotionPanoramaApp"
 
     const-string v4, "removeTempFile"
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2078
+    .line 2056
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStorage()I
@@ -9074,7 +9042,7 @@
 
     move-result-object v0
 
-    .line 2079
+    .line 2057
     .local v0, "directory":Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -9100,7 +9068,7 @@
 
     move-result-object v2
 
-    .line 2081
+    .line 2059
     .local v2, "filename":Ljava/lang/String;
     :try_start_0
     new-instance v3, Ljava/io/File;
@@ -9111,15 +9079,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2085
+    .line 2063
     :goto_0
     return-void
 
-    .line 2082
+    .line 2060
     :catch_0
     move-exception v1
 
-    .line 2083
+    .line 2061
     .local v1, "ex":Ljava/lang/Exception;
     const-string v3, "MotionPanoramaApp"
 
@@ -9154,28 +9122,28 @@
     .locals 2
 
     .prologue
-    .line 2088
+    .line 2066
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "reset"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2090
+    .line 2068
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clear()V
 
-    .line 2091
+    .line 2069
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewLayout(Z)V
 
-    .line 2092
+    .line 2070
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setPreviewThumbnailSizeToDefault()V
 
-    .line 2094
+    .line 2072
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showPreviewGroup()V
 
-    .line 2095
+    .line 2073
     return-void
 .end method
 
@@ -9183,163 +9151,13 @@
     .locals 0
 
     .prologue
-    .line 2098
+    .line 2076
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopCancelTimer()V
 
-    .line 2099
+    .line 2077
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->startCancelTimer()V
 
-    .line 2100
-    return-void
-.end method
-
-.method private saveAudio(Ljava/lang/String;)V
-    .locals 8
-    .param p1, "outputFileName"    # Ljava/lang/String;
-
-    .prologue
-    .line 2103
-    const-string v5, "MotionPanoramaApp"
-
-    const-string v6, "saveAudio"
-
-    invoke-static {v5, v6}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 2105
-    iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStorage()I
-
-    move-result v5
-
-    invoke-static {v5}, Lcom/sec/android/app/camera/util/ImageUtils;->getImageSavingDir(I)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 2106
-    .local v1, "directory":Ljava/lang/String;
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string v6, "/"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    const-string v6, "motionpanorama.aac"
-
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 2108
-    .local v0, "audioPath":Ljava/lang/String;
-    :try_start_0
-    new-instance v4, Ljava/io/File;
-
-    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 2109
-    .local v4, "sefFile":Ljava/io/File;
-    new-instance v3, Ljava/io/File;
-
-    invoke-direct {v3, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 2110
-    .local v3, "sefDataFile":Ljava/io/File;
-    const-string v5, "Motion_Panorama_AAC_000"
-
-    const/16 v6, 0x104
-
-    const/4 v7, 0x1
-
-    invoke-static {v4, v5, v3, v6, v7}, Lcom/samsung/android/media/SemExtendedFormat;->addData(Ljava/io/File;Ljava/lang/String;Ljava/io/File;II)I
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 2115
-    .end local v3    # "sefDataFile":Ljava/io/File;
-    .end local v4    # "sefFile":Ljava/io/File;
-    :goto_0
-    return-void
-
-    .line 2112
-    :catch_0
-    move-exception v2
-
-    .line 2113
-    .local v2, "e":Ljava/io/IOException;
-    const-string v5, "MotionPanoramaApp"
-
-    const-string v6, "error while addSEFData in MotionPanorama"
-
-    invoke-static {v5, v6}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-.end method
-
-.method private setAlphaArrow(Lcom/samsung/android/glview/GLView;)V
-    .locals 4
-    .param p1, "view"    # Lcom/samsung/android/glview/GLView;
-
-    .prologue
-    .line 2118
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
-
-    if-nez v0, :cond_0
-
-    .line 2119
-    new-instance v0, Landroid/view/animation/AlphaAnimation;
-
-    const/4 v1, 0x0
-
-    const/high16 v2, 0x3f800000    # 1.0f
-
-    invoke-direct {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
-
-    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
-
-    .line 2120
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
-
-    const-wide/16 v2, 0xfa
-
-    invoke-virtual {v0, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
-
-    .line 2121
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
-
-    const/4 v1, -0x1
-
-    invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setRepeatCount(I)V
-
-    .line 2122
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
-
-    const/4 v1, 0x2
-
-    invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setRepeatMode(I)V
-
-    .line 2124
-    :cond_0
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
-
-    invoke-virtual {p1, v0}, Lcom/samsung/android/glview/GLView;->setAnimation(Landroid/view/animation/Animation;)V
-
-    .line 2125
-    invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->startAnimation()V
-
-    .line 2126
+    .line 2078
     return-void
 .end method
 
@@ -9347,7 +9165,7 @@
     .locals 3
 
     .prologue
-    .line 2129
+    .line 2081
     monitor-enter p0
 
     const/4 v0, 0x1
@@ -9355,14 +9173,14 @@
     :try_start_0
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
 
-    .line 2130
+    .line 2082
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
-    .line 2132
+    .line 2084
     const-string v0, "MotionPanoramaApp"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -9389,12 +9207,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2133
+    .line 2085
     monitor-exit p0
 
     return-void
 
-    .line 2129
+    .line 2081
     :catchall_0
     move-exception v0
 
@@ -9408,7 +9226,7 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 2136
+    .line 2088
     const-string v0, "MotionPanoramaApp"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -9431,10 +9249,10 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2137
+    .line 2089
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEnterOrientation:I
 
-    .line 2138
+    .line 2090
     return-void
 .end method
 
@@ -9448,43 +9266,43 @@
 
     const/4 v10, 0x2
 
-    .line 2146
+    .line 2098
     const/4 v6, 0x0
 
-    .line 2147
+    .line 2099
     .local v6, "textX":F
     const/4 v7, 0x0
 
-    .line 2148
+    .line 2100
     .local v7, "textY":F
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_HELP_TEXT_WIDTH:F
 
-    .line 2149
+    .line 2101
     .local v5, "textW":F
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_HELP_TEXT_HEIGHT:F
 
-    .line 2150
+    .line 2102
     .local v4, "textH":F
     iget v8, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->GUIDE_TEXT_MARGIN:F
 
-    .line 2152
+    .line 2104
     .local v8, "text_margin":F
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
     if-nez v9, :cond_0
 
-    .line 2153
+    .line 2105
     const-string v9, "MotionPanoramaApp"
 
     const-string v10, "setGuideTextLocation : LivePreview is null!"
 
     invoke-static {v9, v10}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2222
+    .line 2174
     :goto_0
     return-void
 
-    .line 2157
+    .line 2109
     :cond_0
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
@@ -9492,7 +9310,7 @@
 
     move-result v2
 
-    .line 2158
+    .line 2110
     .local v2, "rectX":F
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
@@ -9500,7 +9318,7 @@
 
     move-result v3
 
-    .line 2159
+    .line 2111
     .local v3, "rectY":F
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
@@ -9508,7 +9326,7 @@
 
     move-result v1
 
-    .line 2160
+    .line 2112
     .local v1, "rectW":F
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
 
@@ -9516,13 +9334,13 @@
 
     move-result v0
 
-    .line 2162
+    .line 2114
     .local v0, "rectH":F
     iget v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
     packed-switch v9, :pswitch_data_0
 
-    .line 2217
+    .line 2169
     :goto_1
     :pswitch_0
     const-string v9, "MotionPanoramaApp"
@@ -9561,7 +9379,7 @@
 
     invoke-static {v9, v10}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2218
+    .line 2170
     const-string v9, "MotionPanoramaApp"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -9620,7 +9438,7 @@
 
     invoke-static {v9, v10}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2219
+    .line 2171
     const-string v9, "MotionPanoramaApp"
 
     new-instance v10, Ljava/lang/StringBuilder;
@@ -9679,14 +9497,14 @@
 
     invoke-static {v9, v10}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2221
+    .line 2173
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v6, v7}, Lcom/samsung/android/glview/GLText;->translateAbsolute(FF)V
 
     goto/16 :goto_0
 
-    .line 2165
+    .line 2117
     :pswitch_1
     iget v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
@@ -9694,60 +9512,60 @@
 
     goto/16 :goto_1
 
-    .line 2167
+    .line 2119
     :pswitch_2
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v12, v10}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 2168
+    .line 2120
     add-float v9, v2, v1
 
     add-float v6, v9, v8
 
-    .line 2169
+    .line 2121
     sub-float v9, v0, v4
 
     div-float/2addr v9, v11
 
     add-float v7, v3, v9
 
-    .line 2170
+    .line 2122
     goto/16 :goto_1
 
-    .line 2172
+    .line 2124
     :pswitch_3
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v10, v10}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 2173
+    .line 2125
     add-float v9, v2, v1
 
     add-float/2addr v9, v4
 
     add-float v6, v9, v8
 
-    .line 2174
+    .line 2126
     sub-float v9, v5, v0
 
     div-float/2addr v9, v11
 
     sub-float v7, v3, v9
 
-    .line 2175
+    .line 2127
     goto/16 :goto_1
 
-    .line 2177
+    .line 2129
     :pswitch_4
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v12, v10}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 2178
+    .line 2130
     sub-float v6, v2, v8
 
-    .line 2179
+    .line 2131
     add-float v9, v3, v0
 
     sub-float v10, v0, v4
@@ -9756,21 +9574,21 @@
 
     add-float v7, v9, v10
 
-    .line 2180
+    .line 2132
     goto/16 :goto_1
 
-    .line 2182
+    .line 2134
     :pswitch_5
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v10, v10}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 2183
+    .line 2135
     sub-float v9, v2, v4
 
     sub-float v6, v9, v8
 
-    .line 2184
+    .line 2136
     add-float v9, v3, v0
 
     sub-float v10, v5, v0
@@ -9781,7 +9599,7 @@
 
     goto/16 :goto_1
 
-    .line 2191
+    .line 2143
     :pswitch_6
     iget v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
@@ -9789,34 +9607,34 @@
 
     goto/16 :goto_1
 
-    .line 2193
+    .line 2145
     :pswitch_7
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v10, v10}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 2194
+    .line 2146
     sub-float v9, v1, v5
 
     div-float/2addr v9, v11
 
     add-float v6, v2, v9
 
-    .line 2195
+    .line 2147
     sub-float v9, v3, v4
 
     sub-float v7, v9, v8
 
-    .line 2196
+    .line 2148
     goto/16 :goto_1
 
-    .line 2198
+    .line 2150
     :pswitch_8
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v12, v10}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 2199
+    .line 2151
     add-float v9, v2, v1
 
     sub-float v10, v1, v4
@@ -9825,21 +9643,21 @@
 
     sub-float v6, v9, v10
 
-    .line 2200
+    .line 2152
     add-float v9, v3, v0
 
     add-float v7, v9, v8
 
-    .line 2201
+    .line 2153
     goto/16 :goto_1
 
-    .line 2203
+    .line 2155
     :pswitch_9
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v10, v10}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 2204
+    .line 2156
     add-float v9, v2, v1
 
     sub-float v10, v5, v1
@@ -9848,35 +9666,35 @@
 
     add-float v6, v9, v10
 
-    .line 2205
+    .line 2157
     add-float v9, v3, v0
 
     add-float/2addr v9, v4
 
     add-float v7, v9, v8
 
-    .line 2206
+    .line 2158
     goto/16 :goto_1
 
-    .line 2208
+    .line 2160
     :pswitch_a
     iget-object v9, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v9, v12, v10}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 2209
+    .line 2161
     sub-float v9, v1, v4
 
     div-float/2addr v9, v11
 
     add-float v6, v2, v9
 
-    .line 2210
+    .line 2162
     sub-float v7, v3, v8
 
     goto/16 :goto_1
 
-    .line 2162
+    .line 2114
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_6
@@ -9889,7 +9707,7 @@
         :pswitch_1
     .end packed-switch
 
-    .line 2165
+    .line 2117
     :pswitch_data_1
     .packed-switch 0x0
         :pswitch_2
@@ -9898,7 +9716,7 @@
         :pswitch_5
     .end packed-switch
 
-    .line 2191
+    .line 2143
     :pswitch_data_2
     .packed-switch 0x0
         :pswitch_7
@@ -9913,14 +9731,14 @@
     .param p1, "bmp"    # Landroid/graphics/Bitmap;
 
     .prologue
-    .line 2230
+    .line 2182
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "Fancy progress bar is not implemented yet."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2231
+    .line 2183
     return-void
 .end method
 
@@ -9929,53 +9747,50 @@
     .param p1, "modeId"    # I
 
     .prologue
-    const/4 v3, 0x1
+    const/4 v0, 0x1
 
-    .line 2234
-    const-string v0, "MotionPanoramaApp"
+    .line 2186
+    const-string v1, "MotionPanoramaApp"
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "setMotionPanoramaMode - modeId:"
+    const-string v3, "setMotionPanoramaMode - modeId:"
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2236
-    if-ne p1, v3, :cond_0
+    .line 2188
+    if-ne p1, v0, :cond_0
 
-    .line 2237
-    iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsMotionPanoramaEnabled:Z
-
-    .line 2241
     :goto_0
+    iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsMotionPanoramaEnabled:Z
+
+    .line 2189
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsMotionPanoramaEnabled:Z
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->enableMotionPanoramaMode(Z)V
 
-    .line 2242
+    .line 2190
     return-void
 
-    .line 2239
+    .line 2188
     :cond_0
     const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsMotionPanoramaEnabled:Z
 
     goto :goto_0
 .end method
@@ -9984,25 +9799,25 @@
     .locals 7
 
     .prologue
-    .line 2248
+    .line 2196
     const-string v4, "MotionPanoramaApp"
 
     const-string v5, "setOutputFile"
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2249
+    .line 2197
     invoke-static {}, Lcom/sec/android/app/camera/util/StorageUtils;->getExternalStoragePath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2251
+    .line 2199
     .local v1, "directory":Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2252
+    .line 2200
     .local v0, "cameraDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -10010,14 +9825,14 @@
 
     if-nez v4, :cond_0
 
-    .line 2253
+    .line 2201
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 2254
+    .line 2202
     const-string v4, "MotionPanoramaApp"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -10040,7 +9855,7 @@
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2258
+    .line 2206
     :cond_0
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -10052,13 +9867,13 @@
 
     move-result-object v1
 
-    .line 2260
+    .line 2208
     new-instance v0, Ljava/io/File;
 
     .end local v0    # "cameraDir":Ljava/io/File;
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2261
+    .line 2209
     .restart local v0    # "cameraDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -10066,14 +9881,14 @@
 
     if-nez v4, :cond_1
 
-    .line 2262
+    .line 2210
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 2263
+    .line 2211
     const-string v4, "MotionPanoramaApp"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -10096,18 +9911,18 @@
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2264
+    .line 2212
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/16 v5, -0xa
 
     invoke-interface {v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 2279
+    .line 2227
     :goto_0
     return-void
 
-    .line 2269
+    .line 2217
     :cond_1
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -10133,13 +9948,13 @@
 
     move-result-object v2
 
-    .line 2270
+    .line 2218
     .local v2, "filename":Ljava/lang/String;
     new-instance v3, Ljava/io/File;
 
     invoke-direct {v3, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2271
+    .line 2219
     .local v3, "preFile":Ljava/io/File;
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
@@ -10147,21 +9962,21 @@
 
     if-eqz v4, :cond_2
 
-    .line 2272
+    .line 2220
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 2273
+    .line 2221
     const-string v4, "MotionPanoramaApp"
 
     const-string v5, "temp file was deleted"
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2278
+    .line 2226
     :cond_2
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -10175,7 +9990,7 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 2282
+    .line 2230
     monitor-enter p0
 
     :try_start_0
@@ -10201,17 +10016,17 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2283
+    .line 2231
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPostProgress:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2284
+    .line 2232
     monitor-exit p0
 
     return-void
 
-    .line 2282
+    .line 2230
     :catchall_0
     move-exception v0
 
@@ -10226,12 +10041,12 @@
     .param p2, "height"    # I
 
     .prologue
-    .line 2287
+    .line 2235
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     if-lez v1, :cond_0
 
-    .line 2288
+    .line 2236
     const-string v1, "MotionPanoramaApp"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -10264,28 +10079,28 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2292
+    .line 2240
     :cond_0
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 2306
+    .line 2254
     :pswitch_0
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleWidth:F
 
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailWidth:F
 
-    .line 2307
+    .line 2255
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailHeight:F
 
-    .line 2311
+    .line 2259
     :goto_0
     return-void
 
-    .line 2295
+    .line 2243
     :pswitch_1
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
@@ -10293,7 +10108,7 @@
 
     div-float v0, v1, v2
 
-    .line 2296
+    .line 2244
     .local v0, "Ratio":F
     int-to-float v1, p1
 
@@ -10301,7 +10116,7 @@
 
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailWidth:F
 
-    .line 2297
+    .line 2245
     int-to-float v1, p2
 
     mul-float/2addr v1, v0
@@ -10310,7 +10125,7 @@
 
     goto :goto_0
 
-    .line 2301
+    .line 2249
     .end local v0    # "Ratio":F
     :pswitch_2
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitSingleWidth:F
@@ -10319,7 +10134,7 @@
 
     div-float v0, v1, v2
 
-    .line 2302
+    .line 2250
     .restart local v0    # "Ratio":F
     int-to-float v1, p2
 
@@ -10327,7 +10142,7 @@
 
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailHeight:F
 
-    .line 2303
+    .line 2251
     int-to-float v1, p1
 
     mul-float/2addr v1, v0
@@ -10336,7 +10151,7 @@
 
     goto :goto_0
 
-    .line 2292
+    .line 2240
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -10354,17 +10169,17 @@
     .locals 1
 
     .prologue
-    .line 2314
+    .line 2262
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleWidth:F
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailWidth:F
 
-    .line 2315
+    .line 2263
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPreviewThumbnailHeight:F
 
-    .line 2316
+    .line 2264
     return-void
 .end method
 
@@ -10374,45 +10189,45 @@
     .prologue
     const/4 v4, 0x5
 
-    .line 2319
+    .line 2267
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_1
 
-    .line 2320
+    .line 2268
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsGuideTextDisplaying:Z
 
     if-eqz v0, :cond_2
 
-    .line 2321
+    .line 2269
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     if-eqz v0, :cond_0
 
-    .line 2322
+    .line 2270
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 2328
+    .line 2276
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     if-eqz v0, :cond_1
 
-    .line 2329
+    .line 2277
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     const-wide/16 v2, 0x3e8
 
     invoke-virtual {v0, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 2332
+    .line 2280
     :cond_1
     return-void
 
-    .line 2325
+    .line 2273
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGuideText:Lcom/samsung/android/glview/GLText;
 
@@ -10420,7 +10235,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 2326
+    .line 2274
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsGuideTextDisplaying:Z
@@ -10435,18 +10250,18 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 2336
+    .line 2284
     packed-switch p1, :pswitch_data_0
 
-    .line 2346
+    .line 2294
     :goto_0
     return-void
 
-    .line 2338
+    .line 2286
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a019b
+    const v1, 0x7f0a01a1
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -10456,11 +10271,11 @@
 
     goto :goto_0
 
-    .line 2341
+    .line 2289
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01d6
+    const v1, 0x7f0a01dc
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -10470,7 +10285,7 @@
 
     goto :goto_0
 
-    .line 2336
+    .line 2284
     nop
 
     :pswitch_data_0
@@ -10486,30 +10301,30 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 2349
+    .line 2297
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v1, :cond_0
 
-    .line 2350
+    .line 2298
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 2353
+    .line 2301
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateArrow()V
 
-    .line 2355
+    .line 2303
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 2369
+    .line 2317
     :cond_1
     return-void
 
-    .line 2358
+    .line 2306
     :pswitch_0
     const/4 v0, 0x0
 
@@ -10519,19 +10334,19 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 2359
+    .line 2307
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 2358
+    .line 2306
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 2364
+    .line 2312
     .end local v0    # "i":I
     :pswitch_1
     const/4 v0, 0x2
@@ -10542,19 +10357,19 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 2365
+    .line 2313
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v1, v1, v0
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 2364
+    .line 2312
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 2355
+    .line 2303
     nop
 
     :pswitch_data_0
@@ -10570,19 +10385,19 @@
     .locals 2
 
     .prologue
-    .line 2372
+    .line 2320
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 2373
+    .line 2321
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
-    .line 2374
+    .line 2322
     return-void
 .end method
 
@@ -10592,7 +10407,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 2377
+    .line 2325
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->hasMessages(I)Z
@@ -10601,12 +10416,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2378
+    .line 2326
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 2380
+    .line 2328
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
@@ -10614,248 +10429,8 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 2381
+    .line 2329
     return-void
-.end method
-
-.method private startSoundRecording()V
-    .locals 12
-
-    .prologue
-    const/4 v2, 0x0
-
-    const/4 v11, 0x1
-
-    .line 2384
-    const-string v0, "MotionPanoramaApp"
-
-    const-string v3, "startSoundRecording"
-
-    invoke-static {v0, v3}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 2386
-    iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecording:Z
-
-    if-eqz v0, :cond_0
-
-    .line 2420
-    :goto_0
-    return-void
-
-    .line 2389
-    :cond_0
-    const-string v0, "content://com.sec.knox.provider/RestrictionPolicy1"
-
-    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    .line 2390
-    .local v1, "uri":Landroid/net/Uri;
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v0
-
-    const-string v3, "isAudioRecordAllowed"
-
-    new-array v4, v11, [Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    const-string v10, "false"
-
-    aput-object v10, v4, v5
-
-    move-object v5, v2
-
-    .line 2391
-    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object v6
-
-    .line 2392
-    .local v6, "cr":Landroid/database/Cursor;
-    if-eqz v6, :cond_2
-
-    .line 2393
-    invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
-
-    .line 2394
-    const-string v0, "isAudioRecordAllowed"
-
-    invoke-interface {v6, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v0
-
-    invoke-interface {v6, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v2, "false"
-
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 2395
-    const-string v0, "MotionPanoramaApp"
-
-    const-string v2, "Audio record not allowed"
-
-    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 2396
-    invoke-interface {v6}, Landroid/database/Cursor;->close()V
-
-    goto :goto_0
-
-    .line 2399
-    :cond_1
-    invoke-interface {v6}, Landroid/database/Cursor;->close()V
-
-    .line 2403
-    :cond_2
-    :try_start_0
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStorage()I
-
-    move-result v0
-
-    invoke-static {v0}, Lcom/sec/android/app/camera/util/ImageUtils;->getImageSavingDir(I)Ljava/lang/String;
-
-    move-result-object v7
-
-    .line 2404
-    .local v7, "directory":Ljava/lang/String;
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v2, "/"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    const-string v2, "motionpanorama.aac"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    .line 2406
-    .local v9, "path":Ljava/lang/String;
-    new-instance v0, Landroid/media/MediaRecorder;
-
-    invoke-direct {v0}, Landroid/media/MediaRecorder;-><init>()V
-
-    iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    .line 2408
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    const/4 v2, 0x1
-
-    invoke-virtual {v0, v2}, Landroid/media/MediaRecorder;->setAudioSource(I)V
-
-    .line 2409
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    const/4 v2, 0x6
-
-    invoke-virtual {v0, v2}, Landroid/media/MediaRecorder;->setOutputFormat(I)V
-
-    .line 2410
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    const/4 v2, 0x3
-
-    invoke-virtual {v0, v2}, Landroid/media/MediaRecorder;->setAudioEncoder(I)V
-
-    .line 2411
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    invoke-virtual {v0, v9}, Landroid/media/MediaRecorder;->setOutputFile(Ljava/lang/String;)V
-
-    .line 2412
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    invoke-virtual {v0}, Landroid/media/MediaRecorder;->prepare()V
-
-    .line 2413
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    invoke-virtual {v0}, Landroid/media/MediaRecorder;->start()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 2418
-    .end local v7    # "directory":Ljava/lang/String;
-    .end local v9    # "path":Ljava/lang/String;
-    :goto_1
-    iput-boolean v11, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecording:Z
-
-    .line 2419
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/sec/android/app/camera/util/Util;->disableAlertSound(Landroid/content/Context;)V
-
-    goto/16 :goto_0
-
-    .line 2414
-    :catch_0
-    move-exception v8
-
-    .line 2415
-    .local v8, "e":Ljava/lang/Exception;
-    const-string v0, "MotionPanoramaApp"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "startSoundRecording : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v8}, Ljava/lang/Exception;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v0, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
 .end method
 
 .method private stopCancelTimer()V
@@ -10864,7 +10439,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 2423
+    .line 2332
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->hasMessages(I)Z
@@ -10873,12 +10448,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2424
+    .line 2333
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 2426
+    .line 2335
     :cond_0
     return-void
 .end method
@@ -10889,64 +10464,55 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 2429
+    .line 2338
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "stopPanoramaCapturing"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2430
+    .line 2339
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isCapturing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2431
+    .line 2340
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "current is not Capturing"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2448
+    .line 2353
     :goto_0
     return-void
 
-    .line 2434
+    .line 2343
     :cond_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
-    .line 2436
-    iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecordingEnabled:Z
-
-    if-eqz v0, :cond_1
-
-    .line 2437
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopSoundRecording()V
-
-    .line 2440
-    :cond_1
+    .line 2345
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleStopMotionPanorama()V
 
-    .line 2442
+    .line 2347
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideCaptureTri()V
 
-    .line 2444
+    .line 2349
     iput-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCaptureStarted:Z
 
-    .line 2445
+    .line 2350
     iput-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
 
-    .line 2446
+    .line 2351
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
-    .line 2447
+    .line 2352
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mDetectedDirection:I
 
     goto :goto_0
@@ -10960,7 +10526,7 @@
 
     const/4 v1, 0x2
 
-    .line 2451
+    .line 2356
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     if-eqz v0, :cond_1
@@ -10981,18 +10547,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 2452
+    .line 2357
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 2453
+    .line 2358
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->removeMessages(I)V
 
-    .line 2455
+    .line 2360
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -11000,104 +10566,8 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->stopCameraSound(I)V
 
-    .line 2456
+    .line 2361
     return-void
-.end method
-
-.method private stopSoundRecording()V
-    .locals 4
-
-    .prologue
-    .line 2459
-    const-string v1, "MotionPanoramaApp"
-
-    const-string v2, "stopSoundRecording"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 2461
-    iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecording:Z
-
-    if-nez v1, :cond_0
-
-    .line 2476
-    :goto_0
-    return-void
-
-    .line 2466
-    :cond_0
-    :try_start_0
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    invoke-virtual {v1}, Landroid/media/MediaRecorder;->stop()V
-
-    .line 2467
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    invoke-virtual {v1}, Landroid/media/MediaRecorder;->reset()V
-
-    .line 2468
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-
-    invoke-virtual {v1}, Landroid/media/MediaRecorder;->release()V
-
-    .line 2469
-    const/4 v1, 0x0
-
-    iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mMediaRecorder:Landroid/media/MediaRecorder;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 2474
-    :goto_1
-    const/4 v1, 0x0
-
-    iput-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecording:Z
-
-    .line 2475
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-static {v1}, Lcom/sec/android/app/camera/util/Util;->enableAlertSound(Landroid/content/Context;)V
-
-    goto :goto_0
-
-    .line 2470
-    :catch_0
-    move-exception v0
-
-    .line 2471
-    .local v0, "e":Ljava/lang/Exception;
-    const-string v1, "MotionPanoramaApp"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "stopSoundRecording : "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_1
 .end method
 
 .method private updateArrow()V
@@ -11114,24 +10584,24 @@
 
     const/high16 v6, 0x40000000    # 2.0f
 
-    .line 2479
-    const v1, 0x7f0b006a
+    .line 2364
+    const v1, 0x7f0b006b
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
     move-result v0
 
-    .line 2481
+    .line 2366
     .local v0, "triOffset":F
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 2499
+    .line 2384
     :goto_0
     return-void
 
-    .line 2484
+    .line 2369
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
@@ -11153,7 +10623,7 @@
 
     aget-object v5, v5, v8
 
-    .line 2485
+    .line 2370
     invoke-virtual {v5}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
     move-result v5
@@ -11164,10 +10634,10 @@
 
     add-float/2addr v3, v4
 
-    .line 2484
+    .line 2369
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 2486
+    .line 2371
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v1, v1, v7
@@ -11194,7 +10664,7 @@
 
     aget-object v5, v5, v7
 
-    .line 2487
+    .line 2372
     invoke-virtual {v5}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
     move-result v5
@@ -11205,12 +10675,12 @@
 
     add-float/2addr v3, v4
 
-    .line 2486
+    .line 2371
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
     goto :goto_0
 
-    .line 2492
+    .line 2377
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
@@ -11242,7 +10712,7 @@
 
     aget-object v4, v4, v5
 
-    .line 2493
+    .line 2378
     invoke-virtual {v4}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
     move-result v4
@@ -11251,10 +10721,10 @@
 
     sub-float/2addr v3, v0
 
-    .line 2492
+    .line 2377
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 2494
+    .line 2379
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
 
     aget-object v1, v1, v9
@@ -11291,7 +10761,7 @@
 
     goto :goto_0
 
-    .line 2481
+    .line 2366
     nop
 
     :pswitch_data_0
@@ -11312,46 +10782,46 @@
     .param p5, "bmp"    # Landroid/graphics/Bitmap;
 
     .prologue
-    .line 2502
+    .line 2387
     sget-object v7, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewLock:Ljava/lang/Object;
 
     monitor-enter v7
 
-    .line 2503
+    .line 2388
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
 
     if-eqz v0, :cond_0
 
-    .line 2504
+    .line 2389
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 2505
+    .line 2390
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLBitmapTexture;->clear()V
 
-    .line 2508
+    .line 2393
     :cond_0
     if-nez p5, :cond_1
 
-    .line 2509
+    .line 2394
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
 
-    .line 2514
+    .line 2399
     :goto_0
     monitor-exit v7
 
-    .line 2515
+    .line 2400
     return-void
 
-    .line 2511
+    .line 2396
     :cond_1
     new-instance v0, Lcom/samsung/android/glview/GLBitmapTexture;
 
@@ -11371,7 +10841,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
 
-    .line 2512
+    .line 2397
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -11380,7 +10850,7 @@
 
     goto :goto_0
 
-    .line 2514
+    .line 2399
     :catchall_0
     move-exception v0
 
@@ -11396,7 +10866,7 @@
     .param p1, "detectedDirection"    # Z
 
     .prologue
-    .line 2522
+    .line 2407
     monitor-enter p0
 
     :try_start_0
@@ -11438,7 +10908,7 @@
 
     invoke-static {v6, v9}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2525
+    .line 2410
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
@@ -11449,17 +10919,17 @@
 
     if-nez p1, :cond_6
 
-    .line 2529
+    .line 2414
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showPreviewGroup()V
 
-    .line 2531
+    .line 2416
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v6}, Lcom/samsung/android/glview/GLViewGroup;->resetTranslate()V
 
-    .line 2532
+    .line 2417
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
@@ -11474,7 +10944,7 @@
 
     if-ne v6, v9, :cond_3
 
-    .line 2533
+    .line 2418
     :cond_0
     move-object/from16 v0, p0
 
@@ -11482,7 +10952,7 @@
 
     move/from16 v25, v0
 
-    .line 2534
+    .line 2419
     .local v25, "groupX":F
     move-object/from16 v0, p0
 
@@ -11490,7 +10960,7 @@
 
     move/from16 v26, v0
 
-    .line 2535
+    .line 2420
     .local v26, "groupY":F
     move-object/from16 v0, p0
 
@@ -11498,7 +10968,7 @@
 
     move/from16 v24, v0
 
-    .line 2536
+    .line 2421
     .local v24, "groupW":F
     move-object/from16 v0, p0
 
@@ -11506,7 +10976,7 @@
 
     move/from16 v21, v0
 
-    .line 2537
+    .line 2422
     .local v21, "groupH":F
     move-object/from16 v0, p0
 
@@ -11514,7 +10984,7 @@
 
     move/from16 v41, v0
 
-    .line 2538
+    .line 2423
     .local v41, "rectW":F
     move-object/from16 v0, p0
 
@@ -11522,7 +10992,7 @@
 
     move/from16 v40, v0
 
-    .line 2552
+    .line 2437
     .local v40, "rectH":F
     :goto_0
     move-object/from16 v0, p0
@@ -11535,7 +11005,7 @@
 
     invoke-virtual {v6, v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
 
-    .line 2553
+    .line 2438
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -11548,7 +11018,7 @@
 
     invoke-virtual {v6, v9, v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 2554
+    .line 2439
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -11557,7 +11027,7 @@
 
     invoke-virtual {v6, v9}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 2555
+    .line 2440
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -11568,14 +11038,14 @@
 
     invoke-virtual {v6, v0, v1}, Lcom/samsung/android/glview/GLNinePatch;->setSize(FF)V
 
-    .line 2557
+    .line 2442
     sget-object v9, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewLock:Ljava/lang/Object;
 
     monitor-enter v9
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2558
+    .line 2443
     :try_start_1
     move-object/from16 v0, p0
 
@@ -11593,7 +11063,7 @@
 
     if-eqz v6, :cond_1
 
-    .line 2559
+    .line 2444
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -11602,7 +11072,7 @@
 
     invoke-virtual {v6, v10}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 2560
+    .line 2445
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -11611,13 +11081,13 @@
 
     invoke-virtual {v6, v10}, Lcom/samsung/android/glview/GLNinePatch;->setVisibility(I)V
 
-    .line 2562
+    .line 2447
     :cond_1
     monitor-exit v9
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 2757
+    .line 2642
     .end local v21    # "groupH":F
     .end local v24    # "groupW":F
     .end local v25    # "groupX":F
@@ -11630,7 +11100,7 @@
 
     return-void
 
-    .line 2540
+    .line 2425
     :cond_3
     :try_start_2
     move-object/from16 v0, p0
@@ -11649,7 +11119,7 @@
 
     if-ne v6, v9, :cond_5
 
-    .line 2541
+    .line 2426
     :cond_4
     move-object/from16 v0, p0
 
@@ -11657,7 +11127,7 @@
 
     move/from16 v25, v0
 
-    .line 2542
+    .line 2427
     .restart local v25    # "groupX":F
     move-object/from16 v0, p0
 
@@ -11665,7 +11135,7 @@
 
     move/from16 v26, v0
 
-    .line 2543
+    .line 2428
     .restart local v26    # "groupY":F
     move-object/from16 v0, p0
 
@@ -11673,7 +11143,7 @@
 
     move/from16 v24, v0
 
-    .line 2544
+    .line 2429
     .restart local v24    # "groupW":F
     move-object/from16 v0, p0
 
@@ -11681,7 +11151,7 @@
 
     move/from16 v21, v0
 
-    .line 2545
+    .line 2430
     .restart local v21    # "groupH":F
     move-object/from16 v0, p0
 
@@ -11689,7 +11159,7 @@
 
     move/from16 v41, v0
 
-    .line 2546
+    .line 2431
     .restart local v41    # "rectW":F
     move-object/from16 v0, p0
 
@@ -11700,7 +11170,7 @@
     .restart local v40    # "rectH":F
     goto/16 :goto_0
 
-    .line 2548
+    .line 2433
     .end local v21    # "groupH":F
     .end local v24    # "groupW":F
     .end local v25    # "groupX":F
@@ -11718,7 +11188,7 @@
 
     goto :goto_1
 
-    .line 2522
+    .line 2407
     :catchall_0
     move-exception v6
 
@@ -11726,7 +11196,7 @@
 
     throw v6
 
-    .line 2562
+    .line 2447
     .restart local v21    # "groupH":F
     .restart local v24    # "groupW":F
     .restart local v25    # "groupX":F
@@ -11744,7 +11214,7 @@
     :try_start_4
     throw v6
 
-    .line 2563
+    .line 2448
     .end local v21    # "groupH":F
     .end local v24    # "groupW":F
     .end local v25    # "groupX":F
@@ -11754,10 +11224,10 @@
     :cond_6
     if-eqz p1, :cond_2
 
-    .line 2564
+    .line 2449
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hidePreviewGroup()V
 
-    .line 2565
+    .line 2450
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -11766,14 +11236,14 @@
 
     invoke-virtual {v6, v9}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 2566
+    .line 2451
     sget-object v9, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewLock:Ljava/lang/Object;
 
     monitor-enter v9
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 2567
+    .line 2452
     :try_start_5
     move-object/from16 v0, p0
 
@@ -11781,19 +11251,19 @@
 
     if-nez v6, :cond_7
 
-    .line 2568
+    .line 2453
     const-string v6, "MotionPanoramaApp"
 
     const-string v10, "updateLivePreviewLayout: LivePreview is null yet. ignore"
 
     invoke-static {v6, v10}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2569
+    .line 2454
     monitor-exit v9
 
     goto :goto_1
 
-    .line 2571
+    .line 2456
     :catchall_2
     move-exception v6
 
@@ -11812,7 +11282,7 @@
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
-    .line 2572
+    .line 2457
     :try_start_8
     move-object/from16 v0, p0
 
@@ -11822,10 +11292,10 @@
 
     invoke-virtual {v6, v9}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 2573
+    .line 2458
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showStopButton()V
 
-    .line 2581
+    .line 2466
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleWidth:F
@@ -11840,7 +11310,7 @@
 
     sub-float v48, v6, v9
 
-    .line 2582
+    .line 2467
     .local v48, "widthFocus":F
     move-object/from16 v0, p0
 
@@ -11856,7 +11326,7 @@
 
     sub-float v28, v6, v9
 
-    .line 2584
+    .line 2469
     .local v28, "heightFocus":F
     move-object/from16 v0, p0
 
@@ -11872,7 +11342,7 @@
 
     aget v36, v6, v9
 
-    .line 2585
+    .line 2470
     .local v36, "oldLeftGroup":F
     move-object/from16 v0, p0
 
@@ -11888,7 +11358,7 @@
 
     aget v38, v6, v9
 
-    .line 2586
+    .line 2471
     .local v38, "oldTopGroup":F
     move-object/from16 v0, p0
 
@@ -11898,7 +11368,7 @@
 
     move-result v35
 
-    .line 2587
+    .line 2472
     .local v35, "oldLeft":F
     move-object/from16 v0, p0
 
@@ -11908,7 +11378,7 @@
 
     move-result v37
 
-    .line 2588
+    .line 2473
     .local v37, "oldTop":F
     move-object/from16 v0, p0
 
@@ -11918,7 +11388,7 @@
 
     move-result v39
 
-    .line 2589
+    .line 2474
     .local v39, "oldWidth":F
     move-object/from16 v0, p0
 
@@ -11928,11 +11398,11 @@
 
     move-result v34
 
-    .line 2590
+    .line 2475
     .local v34, "oldHeight":F
     const/16 v30, 0x1
 
-    .line 2592
+    .line 2477
     .local v30, "landscape":Z
     move-object/from16 v0, p0
 
@@ -11948,7 +11418,7 @@
 
     sub-float v47, v6, v9
 
-    .line 2593
+    .line 2478
     .local v47, "width":F
     move-object/from16 v0, p0
 
@@ -11964,7 +11434,7 @@
 
     sub-float v27, v6, v9
 
-    .line 2595
+    .line 2480
     .local v27, "height":F
     move-object/from16 v0, p0
 
@@ -11976,7 +11446,7 @@
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 2596
+    .line 2481
     :try_start_9
     move-object/from16 v0, p0
 
@@ -11984,7 +11454,7 @@
 
     packed-switch v6, :pswitch_data_0
 
-    .line 2693
+    .line 2578
     :goto_2
     :pswitch_0
     move-object/from16 v0, p0
@@ -12003,7 +11473,7 @@
 
     sub-float v18, v36, v6
 
-    .line 2694
+    .line 2579
     .local v18, "fromXDeltaRect":F
     move-object/from16 v0, p0
 
@@ -12021,7 +11491,7 @@
 
     sub-float v20, v38, v6
 
-    .line 2695
+    .line 2580
     .local v20, "fromYDeltaRect":F
     move-object/from16 v0, p0
 
@@ -12041,7 +11511,7 @@
 
     add-float v35, v35, v6
 
-    .line 2696
+    .line 2581
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -12052,7 +11522,7 @@
 
     sub-float v17, v35, v6
 
-    .line 2697
+    .line 2582
     .local v17, "fromXDelta":F
     move-object/from16 v0, p0
 
@@ -12072,7 +11542,7 @@
 
     add-float v37, v37, v6
 
-    .line 2698
+    .line 2583
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -12083,7 +11553,7 @@
 
     sub-float v19, v37, v6
 
-    .line 2699
+    .line 2584
     .local v19, "fromYDelta":F
     move-object/from16 v0, p0
 
@@ -12095,7 +11565,7 @@
 
     div-float v5, v39, v6
 
-    .line 2700
+    .line 2585
     .local v5, "scaleX":F
     move-object/from16 v0, p0
 
@@ -12107,17 +11577,17 @@
 
     div-float v7, v34, v6
 
-    .line 2702
+    .line 2587
     .local v7, "scaleY":F
     new-instance v29, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct/range {v29 .. v29}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
-    .line 2707
+    .line 2592
     .local v29, "interpol":Landroid/view/animation/Interpolator;
     if-eqz v30, :cond_8
 
-    .line 2708
+    .line 2593
     new-instance v4, Landroid/view/animation/ScaleAnimation;
 
     const/high16 v6, 0x3f800000    # 1.0f
@@ -12134,7 +11604,7 @@
 
     invoke-direct/range {v4 .. v12}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
 
-    .line 2709
+    .line 2594
     .local v4, "animRect":Landroid/view/animation/Animation;
     move-object/from16 v0, p0
 
@@ -12170,37 +11640,37 @@
 
     iget-object v11, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 2710
+    .line 2595
     invoke-virtual {v11}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
     move-result v11
 
     float-to-int v11, v11
 
-    .line 2709
+    .line 2594
     invoke-virtual {v4, v6, v9, v10, v11}, Landroid/view/animation/Animation;->initialize(IIII)V
 
-    .line 2711
+    .line 2596
     const-wide/16 v10, 0xb2
 
     invoke-virtual {v4, v10, v11}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 2712
+    .line 2597
     const-wide/16 v10, 0x0
 
     invoke-virtual {v4, v10, v11}, Landroid/view/animation/Animation;->setStartOffset(J)V
 
-    .line 2713
+    .line 2598
     const/4 v6, 0x1
 
     invoke-virtual {v4, v6}, Landroid/view/animation/Animation;->setFillAfter(Z)V
 
-    .line 2714
+    .line 2599
     move-object/from16 v0, v29
 
     invoke-virtual {v4, v0}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 2741
+    .line 2626
     :goto_3
     new-instance v44, Landroid/view/animation/TranslateAnimation;
 
@@ -12216,7 +11686,7 @@
 
     invoke-direct {v0, v1, v6, v2, v9}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 2742
+    .line 2627
     .local v44, "ta":Landroid/view/animation/Animation;
     move-object/from16 v0, p0
 
@@ -12252,61 +11722,61 @@
 
     iget-object v11, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 2743
+    .line 2628
     invoke-virtual {v11}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
     move-result v11
 
     float-to-int v11, v11
 
-    .line 2742
+    .line 2627
     move-object/from16 v0, v44
 
     invoke-virtual {v0, v6, v9, v10, v11}, Landroid/view/animation/Animation;->initialize(IIII)V
 
-    .line 2744
+    .line 2629
     const-wide/16 v10, 0xb2
 
     move-object/from16 v0, v44
 
     invoke-virtual {v0, v10, v11}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 2745
+    .line 2630
     const-wide/16 v10, 0x0
 
     move-object/from16 v0, v44
 
     invoke-virtual {v0, v10, v11}, Landroid/view/animation/Animation;->setStartOffset(J)V
 
-    .line 2746
+    .line 2631
     const/4 v6, 0x1
 
     move-object/from16 v0, v44
 
     invoke-virtual {v0, v6}, Landroid/view/animation/Animation;->setFillAfter(Z)V
 
-    .line 2747
+    .line 2632
     move-object/from16 v0, v44
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 2749
+    .line 2634
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v6}, Lcom/samsung/android/glview/GLViewGroup;->resetClipRect()V
 
-    .line 2750
+    .line 2635
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
     invoke-virtual {v6, v4}, Lcom/samsung/android/glview/GLNinePatch;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 2751
+    .line 2636
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -12315,21 +11785,21 @@
 
     invoke-virtual {v6, v0}, Lcom/samsung/android/glview/GLBitmapTexture;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 2753
+    .line 2638
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
 
     invoke-virtual {v6}, Lcom/samsung/android/glview/GLNinePatch;->startAnimation()V
 
-    .line 2754
+    .line 2639
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
 
     invoke-virtual {v6}, Lcom/samsung/android/glview/GLBitmapTexture;->startAnimation()V
 
-    .line 2755
+    .line 2640
     monitor-exit v49
 
     goto/16 :goto_1
@@ -12355,15 +11825,15 @@
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_0
 
-    .line 2598
+    .line 2483
     :pswitch_1
     const/16 v22, 0x0
 
-    .line 2599
+    .line 2484
     .local v22, "groupLeft":F
     const/16 v23, 0x0
 
-    .line 2600
+    .line 2485
     .local v23, "groupTop":F
     :try_start_b
     move-object/from16 v0, p0
@@ -12386,11 +11856,11 @@
 
     add-float v43, v6, v9
 
-    .line 2601
+    .line 2486
     .local v43, "startOffsetPosition":F
     move/from16 v32, v43
 
-    .line 2602
+    .line 2487
     .local v32, "leftFocus":F
     move-object/from16 v0, p0
 
@@ -12398,40 +11868,14 @@
 
     move/from16 v22, v0
 
-    .line 2603
+    .line 2488
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeY:F
 
     move/from16 v23, v0
 
-    .line 2604
-    move-object/from16 v0, p0
-
-    iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeY:F
-
-    move-object/from16 v0, p0
-
-    iget v9, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
-
-    const/high16 v10, 0x40000000    # 2.0f
-
-    div-float/2addr v9, v10
-
-    add-float/2addr v6, v9
-
-    move-object/from16 v0, p0
-
-    iget v9, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeHeight:F
-
-    const/high16 v10, 0x40800000    # 4.0f
-
-    div-float/2addr v9, v10
-
-    sub-float v46, v6, v9
-
-    .line 2606
-    .local v46, "topFocus":F
+    .line 2491
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -12444,7 +11888,7 @@
 
     invoke-virtual {v6, v9, v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 2607
+    .line 2492
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -12459,7 +11903,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
 
-    .line 2608
+    .line 2493
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -12468,7 +11912,7 @@
 
     invoke-virtual {v6, v9}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 2610
+    .line 2495
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -12483,7 +11927,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLNinePatch;->setSize(FF)V
 
-    .line 2612
+    .line 2497
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -12494,7 +11938,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLBitmapTexture;->moveLayoutAbsolute(FF)V
 
-    .line 2613
+    .line 2498
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -12517,7 +11961,7 @@
 
     invoke-virtual {v6, v0, v9}, Lcom/samsung/android/glview/GLBitmapTexture;->setSize(FF)V
 
-    .line 2616
+    .line 2501
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -12528,14 +11972,14 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLRectangle;->moveLayoutAbsolute(FF)V
 
-    .line 2618
+    .line 2503
     add-float v6, v32, v48
 
     const/high16 v9, 0x41400000    # 12.0f
 
     sub-float v47, v6, v9
 
-    .line 2619
+    .line 2504
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -12562,7 +12006,7 @@
 
     invoke-virtual {v6, v0, v9}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 2620
+    .line 2505
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -12577,12 +12021,11 @@
 
     goto/16 :goto_2
 
-    .line 2624
+    .line 2509
     .end local v22    # "groupLeft":F
     .end local v23    # "groupTop":F
     .end local v32    # "leftFocus":F
     .end local v43    # "startOffsetPosition":F
-    .end local v46    # "topFocus":F
     :pswitch_2
     move-object/from16 v0, p0
 
@@ -12614,7 +12057,7 @@
 
     sub-float v43, v6, v9
 
-    .line 2625
+    .line 2510
     .restart local v43    # "startOffsetPosition":F
     move-object/from16 v0, p0
 
@@ -12632,11 +12075,11 @@
 
     sub-float v31, v6, v47
 
-    .line 2626
+    .line 2511
     .local v31, "left":F
     move/from16 v32, v43
 
-    .line 2627
+    .line 2512
     .restart local v32    # "leftFocus":F
     move-object/from16 v0, p0
 
@@ -12662,8 +12105,8 @@
 
     sub-float v46, v6, v9
 
-    .line 2629
-    .restart local v46    # "topFocus":F
+    .line 2514
+    .local v46, "topFocus":F
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -12678,7 +12121,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
 
-    .line 2630
+    .line 2515
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -12695,7 +12138,7 @@
 
     invoke-virtual {v6, v9, v10, v11}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 2631
+    .line 2516
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -12704,7 +12147,7 @@
 
     invoke-virtual {v6, v9}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 2633
+    .line 2518
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -12719,7 +12162,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLNinePatch;->setSize(FF)V
 
-    .line 2635
+    .line 2520
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -12736,7 +12179,7 @@
 
     invoke-virtual {v6, v0, v9}, Lcom/samsung/android/glview/GLBitmapTexture;->moveLayoutAbsolute(FF)V
 
-    .line 2636
+    .line 2521
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -12759,7 +12202,7 @@
 
     invoke-virtual {v6, v0, v9}, Lcom/samsung/android/glview/GLBitmapTexture;->setSize(FF)V
 
-    .line 2638
+    .line 2523
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -12770,7 +12213,7 @@
 
     invoke-virtual {v6, v0, v1}, Lcom/samsung/android/glview/GLRectangle;->moveLayoutAbsolute(FF)V
 
-    .line 2640
+    .line 2525
     const/high16 v6, 0x40000000    # 2.0f
 
     div-float v6, v48, v6
@@ -12787,7 +12230,7 @@
 
     sub-float v47, v6, v9
 
-    .line 2641
+    .line 2526
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -12816,7 +12259,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 2642
+    .line 2527
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -12831,7 +12274,7 @@
 
     goto/16 :goto_2
 
-    .line 2646
+    .line 2531
     .end local v31    # "left":F
     .end local v32    # "leftFocus":F
     .end local v43    # "startOffsetPosition":F
@@ -12839,7 +12282,7 @@
     :pswitch_3
     const/16 v30, 0x0
 
-    .line 2647
+    .line 2532
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_PORTRAIT_HEIGHT:F
@@ -12852,7 +12295,7 @@
 
     sub-float v45, v6, v9
 
-    .line 2648
+    .line 2533
     .local v45, "top":F
     move-object/from16 v0, p0
 
@@ -12882,11 +12325,11 @@
 
     sub-float v43, v6, v9
 
-    .line 2649
+    .line 2534
     .restart local v43    # "startOffsetPosition":F
     move/from16 v46, v43
 
-    .line 2650
+    .line 2535
     .restart local v46    # "topFocus":F
     move-object/from16 v0, p0
 
@@ -12912,7 +12355,7 @@
 
     sub-float v32, v6, v9
 
-    .line 2652
+    .line 2537
     .restart local v32    # "leftFocus":F
     move-object/from16 v0, p0
 
@@ -12928,7 +12371,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
 
-    .line 2653
+    .line 2538
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -12945,7 +12388,7 @@
 
     invoke-virtual {v6, v9, v10, v11}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 2654
+    .line 2539
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -12954,7 +12397,7 @@
 
     invoke-virtual {v6, v9}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 2656
+    .line 2541
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -12969,7 +12412,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLNinePatch;->setSize(FF)V
 
-    .line 2658
+    .line 2543
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -12996,7 +12439,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLBitmapTexture;->setSize(FF)V
 
-    .line 2659
+    .line 2544
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -13007,7 +12450,7 @@
 
     invoke-virtual {v6, v9, v0}, Lcom/samsung/android/glview/GLBitmapTexture;->moveLayoutAbsolute(FF)V
 
-    .line 2661
+    .line 2546
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -13018,7 +12461,7 @@
 
     invoke-virtual {v6, v0, v1}, Lcom/samsung/android/glview/GLRectangle;->moveLayoutAbsolute(FF)V
 
-    .line 2664
+    .line 2549
     const/high16 v6, 0x40000000    # 2.0f
 
     div-float v6, v28, v6
@@ -13035,7 +12478,7 @@
 
     sub-float v27, v6, v9
 
-    .line 2665
+    .line 2550
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -13060,7 +12503,7 @@
 
     invoke-virtual {v6, v9, v0}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 2666
+    .line 2551
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -13075,7 +12518,7 @@
 
     goto/16 :goto_2
 
-    .line 2670
+    .line 2555
     .end local v32    # "leftFocus":F
     .end local v43    # "startOffsetPosition":F
     .end local v45    # "top":F
@@ -13083,10 +12526,10 @@
     :pswitch_4
     const/16 v30, 0x0
 
-    .line 2671
+    .line 2556
     const/16 v45, 0x0
 
-    .line 2672
+    .line 2557
     .restart local v45    # "top":F
     move-object/from16 v0, p0
 
@@ -13120,7 +12563,7 @@
 
     add-float v28, v6, v9
 
-    .line 2673
+    .line 2558
     move-object/from16 v0, p0
 
     iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewLandscapeSingleHeight:F
@@ -13147,38 +12590,8 @@
 
     sub-float v43, v6, v9
 
-    .line 2674
+    .line 2562
     .restart local v43    # "startOffsetPosition":F
-    move-object/from16 v0, p0
-
-    iget v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitX:F
-
-    move-object/from16 v0, p0
-
-    iget v9, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->LIVEPREVIEW_RECT_THICKNESS:F
-
-    const/high16 v10, 0x40000000    # 2.0f
-
-    div-float/2addr v9, v10
-
-    sub-float/2addr v6, v9
-
-    move-object/from16 v0, p0
-
-    iget v9, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivepreviewPortraitWidth:F
-
-    const/high16 v10, 0x40800000    # 4.0f
-
-    div-float/2addr v9, v10
-
-    sub-float v32, v6, v9
-
-    .line 2675
-    .restart local v32    # "leftFocus":F
-    move/from16 v46, v43
-
-    .line 2677
-    .restart local v46    # "topFocus":F
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -13193,7 +12606,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
 
-    .line 2678
+    .line 2563
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -13210,7 +12623,7 @@
 
     invoke-virtual {v6, v9, v10, v11}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 2679
+    .line 2564
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -13219,7 +12632,7 @@
 
     invoke-virtual {v6, v9}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 2680
+    .line 2565
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -13234,7 +12647,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLNinePatch;->setSize(FF)V
 
-    .line 2682
+    .line 2567
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -13261,7 +12674,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLBitmapTexture;->setSize(FF)V
 
-    .line 2683
+    .line 2568
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreview:Lcom/samsung/android/glview/GLBitmapTexture;
@@ -13272,7 +12685,7 @@
 
     invoke-virtual {v6, v9, v0}, Lcom/samsung/android/glview/GLBitmapTexture;->moveLayoutAbsolute(FF)V
 
-    .line 2685
+    .line 2570
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -13283,7 +12696,7 @@
 
     invoke-virtual {v6, v9, v10}, Lcom/samsung/android/glview/GLRectangle;->moveLayoutAbsolute(FF)V
 
-    .line 2687
+    .line 2572
     add-float v6, v27, v28
 
     const/high16 v9, 0x40000000    # 2.0f
@@ -13292,7 +12705,7 @@
 
     sub-float v27, v6, v9
 
-    .line 2688
+    .line 2573
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -13317,7 +12730,7 @@
 
     invoke-virtual {v6, v9, v0}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 2689
+    .line 2574
     move-object/from16 v0, p0
 
     iget-object v6, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaCaptureTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -13332,11 +12745,9 @@
 
     goto/16 :goto_2
 
-    .line 2716
-    .end local v32    # "leftFocus":F
+    .line 2601
     .end local v43    # "startOffsetPosition":F
     .end local v45    # "top":F
-    .end local v46    # "topFocus":F
     .restart local v5    # "scaleX":F
     .restart local v7    # "scaleY":F
     .restart local v17    # "fromXDelta":F
@@ -13365,7 +12776,7 @@
 
     invoke-direct/range {v8 .. v16}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
 
-    .line 2717
+    .line 2602
     .local v8, "scaleRect":Landroid/view/animation/ScaleAnimation;
     move-object/from16 v0, p0
 
@@ -13401,37 +12812,37 @@
 
     iget-object v11, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 2718
+    .line 2603
     invoke-virtual {v11}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
     move-result v11
 
     float-to-int v11, v11
 
-    .line 2717
+    .line 2602
     invoke-virtual {v8, v6, v9, v10, v11}, Landroid/view/animation/ScaleAnimation;->initialize(IIII)V
 
-    .line 2719
+    .line 2604
     const-wide/16 v10, 0xb2
 
     invoke-virtual {v8, v10, v11}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
 
-    .line 2720
+    .line 2605
     const-wide/16 v10, 0x0
 
     invoke-virtual {v8, v10, v11}, Landroid/view/animation/ScaleAnimation;->setStartOffset(J)V
 
-    .line 2721
+    .line 2606
     const/4 v6, 0x1
 
     invoke-virtual {v8, v6}, Landroid/view/animation/ScaleAnimation;->setFillAfter(Z)V
 
-    .line 2722
+    .line 2607
     move-object/from16 v0, v29
 
     invoke-virtual {v8, v0}, Landroid/view/animation/ScaleAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 2724
+    .line 2609
     new-instance v33, Landroid/view/animation/TranslateAnimation;
 
     const/4 v6, 0x0
@@ -13446,7 +12857,7 @@
 
     invoke-direct {v0, v1, v6, v2, v9}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 2725
+    .line 2610
     .local v33, "moveRect":Landroid/view/animation/TranslateAnimation;
     move-object/from16 v0, p0
 
@@ -13482,47 +12893,47 @@
 
     iget-object v11, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 2726
+    .line 2611
     invoke-virtual {v11}, Lcom/samsung/android/glview/GLViewGroup;->getHeight()F
 
     move-result v11
 
     float-to-int v11, v11
 
-    .line 2725
+    .line 2610
     move-object/from16 v0, v33
 
     invoke-virtual {v0, v6, v9, v10, v11}, Landroid/view/animation/TranslateAnimation;->initialize(IIII)V
 
-    .line 2727
+    .line 2612
     const-wide/16 v10, 0xb2
 
     move-object/from16 v0, v33
 
     invoke-virtual {v0, v10, v11}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
 
-    .line 2728
+    .line 2613
     const-wide/16 v10, 0x0
 
     move-object/from16 v0, v33
 
     invoke-virtual {v0, v10, v11}, Landroid/view/animation/TranslateAnimation;->setStartOffset(J)V
 
-    .line 2729
+    .line 2614
     const/4 v6, 0x1
 
     move-object/from16 v0, v33
 
     invoke-virtual {v0, v6}, Landroid/view/animation/TranslateAnimation;->setFillAfter(Z)V
 
-    .line 2730
+    .line 2615
     move-object/from16 v0, v33
 
     move-object/from16 v1, v29
 
     invoke-virtual {v0, v1}, Landroid/view/animation/TranslateAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 2732
+    .line 2617
     new-instance v42, Landroid/view/animation/AnimationSet;
 
     const/4 v6, 0x1
@@ -13531,27 +12942,27 @@
 
     invoke-direct {v0, v6}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 2733
+    .line 2618
     .local v42, "set":Landroid/view/animation/AnimationSet;
     move-object/from16 v0, v42
 
     invoke-virtual {v0, v8}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 2734
+    .line 2619
     move-object/from16 v0, v42
 
     move-object/from16 v1, v33
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 2735
+    .line 2620
     const-wide/16 v10, 0xb2
 
     move-object/from16 v0, v42
 
     invoke-virtual {v0, v10, v11}, Landroid/view/animation/AnimationSet;->setDuration(J)V
 
-    .line 2736
+    .line 2621
     move-object/from16 v0, v42
 
     move-object/from16 v1, v29
@@ -13560,13 +12971,13 @@
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_3
 
-    .line 2737
+    .line 2622
     move-object/from16 v4, v42
 
     .restart local v4    # "animRect":Landroid/view/animation/Animation;
     goto/16 :goto_3
 
-    .line 2596
+    .line 2481
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -13586,7 +12997,7 @@
     .locals 1
 
     .prologue
-    .line 270
+    .line 253
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCaptureStarted:Z
 
     if-nez v0, :cond_0
@@ -13611,7 +13022,7 @@
     .locals 1
 
     .prologue
-    .line 275
+    .line 258
     const/4 v0, 0x0
 
     return v0
@@ -13621,7 +13032,7 @@
     .locals 1
 
     .prologue
-    .line 280
+    .line 263
     const/4 v0, 0x0
 
     return v0
@@ -13636,24 +13047,24 @@
 
     const/4 v3, 0x0
 
-    .line 285
+    .line 268
     const-string v1, "MotionPanoramaApp"
 
     const-string v2, "onActivate"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 287
+    .line 270
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
-    .line 289
+    .line 272
     new-instance v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     invoke-direct {v1, p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;-><init>(Lcom/sec/android/app/camera/shootingmode/MotionPanorama;)V
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
-    .line 291
+    .line 274
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->getPanoramaMaxCount(Lcom/sec/android/app/camera/interfaces/Engine;)[F
@@ -13662,7 +13073,7 @@
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->initCoordinate([F)V
 
-    .line 293
+    .line 276
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isEasyCamera()Z
@@ -13679,7 +13090,7 @@
 
     if-nez v1, :cond_2
 
-    .line 294
+    .line 277
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v2, 0x1
@@ -13690,7 +13101,7 @@
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setSideQuickSettingItems([I)V
 
-    .line 299
+    .line 282
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -13698,48 +13109,48 @@
 
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 301
+    .line 284
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setMotionPanoramaListener(Lcom/samsung/android/camera/core/SemCamera$MotionPanoramaEventListener;)V
 
-    .line 302
+    .line 285
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setPrepareDBUpdateListener(Lcom/sec/android/app/camera/interfaces/Engine$DBUpdateListener;)V
 
-    .line 303
+    .line 286
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setImageContentsLoggingListener(Lcom/sec/android/app/camera/interfaces/Engine$ImageContentsLoggingListener;)V
 
-    .line 306
+    .line 289
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1, v4, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->registerCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 307
+    .line 290
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 308
+    .line 291
     .local v0, "intentFilter":Landroid/content/IntentFilter;
     const-string v1, "camera.action.MEDIA_UNMOUNTED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 309
+    .line 292
     const-string v1, "camera.action.ACTION_ERROR_CAMERA_BUSY"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 310
+    .line 293
     const-string v1, "camera.action.ACTION_ERROR_CAMERA_SERVER_DIED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 311
+    .line 294
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -13750,7 +13161,7 @@
 
     invoke-static {v1, v2, v0}, Lcom/sec/android/app/camera/util/CameraLocalBroadcastManager;->register(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
-    .line 313
+    .line 296
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isEasyCamera()Z
@@ -13767,7 +13178,7 @@
 
     if-nez v1, :cond_0
 
-    .line 314
+    .line 297
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getMotionPanoramaMode()I
@@ -13776,7 +13187,7 @@
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setMotionPanoramaEnabled(I)V
 
-    .line 317
+    .line 300
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isCameraSwitchingAnimationRunning()Z
 
@@ -13784,12 +13195,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 318
+    .line 301
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     if-eqz v1, :cond_1
 
-    .line 319
+    .line 302
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
     const/16 v2, 0x9
@@ -13798,12 +13209,12 @@
 
     invoke-virtual {v1, v2, v4, v5}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 324
+    .line 307
     :cond_1
     :goto_1
     return-void
 
-    .line 296
+    .line 279
     .end local v0    # "intentFilter":Landroid/content/IntentFilter;
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -13814,7 +13225,7 @@
 
     goto :goto_0
 
-    .line 322
+    .line 305
     .restart local v0    # "intentFilter":Landroid/content/IntentFilter;
     :cond_3
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showPreviewGroup()V
@@ -13827,7 +13238,7 @@
     .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 328
+    .line 311
     const/4 v0, 0x0
 
     return v0
@@ -13839,7 +13250,7 @@
     .param p2, "modeId"    # I
 
     .prologue
-    .line 333
+    .line 316
     const-string v0, "MotionPanoramaApp"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -13872,20 +13283,20 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 335
+    .line 318
     packed-switch p1, :pswitch_data_0
 
-    .line 342
+    .line 325
     :goto_0
     return-void
 
-    .line 337
+    .line 320
     :pswitch_0
     invoke-direct {p0, p2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setMotionPanoramaEnabled(I)V
 
     goto :goto_0
 
-    .line 335
+    .line 318
     :pswitch_data_0
     .packed-switch 0x87
         :pswitch_0
@@ -13901,15 +13312,15 @@
 
     const/16 v1, 0x3a98
 
-    .line 349
+    .line 332
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BURST_PANORAMA_LOW_PERFORMANCE:Z
 
     if-eqz v0, :cond_0
 
-    .line 350
+    .line 333
     invoke-virtual {p1, v1, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
-    .line 355
+    .line 338
     :goto_0
     const/16 v0, 0xb
 
@@ -13925,17 +13336,17 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 357
+    .line 340
     const-string v0, "picture-size"
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BURST_PANORAMA_RESOLUTION:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 358
+    .line 341
     return-void
 
-    .line 352
+    .line 335
     :cond_0
     invoke-virtual {p1, v2, v2}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
@@ -13951,22 +13362,22 @@
     .param p5, "menuManager"    # Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     .prologue
-    .line 362
+    .line 345
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    .line 363
+    .line 346
     iput-object p2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 364
+    .line 347
     iput-object p3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 365
+    .line 348
     iput-object p4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-    .line 367
+    .line 350
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->createPanoramaView()V
 
-    .line 368
+    .line 351
     return-void
 .end method
 
@@ -13976,7 +13387,7 @@
     .param p2, "file"    # Ljava/io/File;
 
     .prologue
-    .line 372
+    .line 355
     const-string v1, "sef_file_type"
 
     const/16 v2, 0x8e0
@@ -13987,19 +13398,19 @@
 
     invoke-virtual {p1, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 373
+    .line 356
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsMotionPanoramaEnabled:Z
 
     if-eqz v1, :cond_0
 
-    .line 374
+    .line 357
     const/4 v0, 0x0
 
-    .line 375
+    .line 358
     .local v0, "dataSubType":I
     or-int/lit8 v0, v0, 0x1
 
-    .line 376
+    .line 359
     const-string v1, "sef_file_sub_type"
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -14008,7 +13419,7 @@
 
     invoke-virtual {p1, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 378
+    .line 361
     .end local v0    # "dataSubType":I
     :cond_0
     const/4 v1, 0x0
@@ -14020,7 +13431,7 @@
     .locals 1
 
     .prologue
-    .line 384
+    .line 367
     const/4 v0, 0x0
 
     return v0
@@ -14032,7 +13443,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 389
+    .line 372
     const-string v0, "MotionPanoramaApp"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14059,31 +13470,31 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 390
+    .line 373
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->getCaptureProgressIncreased()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    .line 391
+    .line 374
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->cancelPanoramaCapture()V
 
-    .line 394
+    .line 377
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->removeSideQuickSettingItems()V
 
-    .line 396
+    .line 379
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clear()V
 
-    .line 397
+    .line 380
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_1
 
-    .line 398
+    .line 381
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -14094,7 +13505,7 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/util/CameraLocalBroadcastManager;->unregister(Landroid/content/Context;Landroid/content/BroadcastReceiver;)V
 
-    .line 401
+    .line 384
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -14102,25 +13513,25 @@
 
     invoke-interface {v0, v1, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->unregisterCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 403
+    .line 386
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setMotionPanoramaListener(Lcom/samsung/android/camera/core/SemCamera$MotionPanoramaEventListener;)V
 
-    .line 404
+    .line 387
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setPrepareDBUpdateListener(Lcom/sec/android/app/camera/interfaces/Engine$DBUpdateListener;)V
 
-    .line 405
+    .line 388
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->setImageContentsLoggingListener(Lcom/sec/android/app/camera/interfaces/Engine$ImageContentsLoggingListener;)V
 
-    .line 407
+    .line 390
     iput-object v3, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaMessageHandler:Lcom/sec/android/app/camera/shootingmode/MotionPanorama$PanoramaHandler;
 
-    .line 408
+    .line 391
     return-void
 .end method
 
@@ -14130,23 +13541,23 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 412
+    .line 395
     packed-switch p1, :pswitch_data_0
 
-    .line 422
+    .line 405
     :cond_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 414
+    .line 397
     :pswitch_0
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPostProgress:I
 
     if-lez v0, :cond_0
 
-    .line 415
+    .line 398
     const-string v0, "MotionPanoramaApp"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14177,12 +13588,12 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 416
+    .line 399
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 412
+    .line 395
     nop
 
     :pswitch_data_0
@@ -14201,25 +13612,25 @@
 
     const/4 v0, 0x1
 
-    .line 428
+    .line 411
     sparse-switch p1, :sswitch_data_0
 
     :cond_0
     :goto_0
     move v0, v1
 
-    .line 472
+    .line 455
     :cond_1
     :goto_1
     return v0
 
-    .line 430
+    .line 413
     :sswitch_0
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPostProgress:I
 
     if-gtz v2, :cond_1
 
-    .line 433
+    .line 416
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
@@ -14240,12 +13651,12 @@
 
     if-nez v2, :cond_2
 
-    .line 434
+    .line 417
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
-    .line 436
+    .line 419
     :cond_2
     iget-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCaptureStarted:Z
 
@@ -14257,15 +13668,15 @@
 
     if-nez v2, :cond_3
 
-    .line 437
+    .line 420
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->cancelPanoramaCapture()V
 
-    .line 438
+    .line 421
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->reset()V
 
     goto :goto_1
 
-    .line 440
+    .line 423
     :cond_3
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->getCaptureProgressIncreased()I
 
@@ -14273,12 +13684,12 @@
 
     if-lez v2, :cond_0
 
-    .line 441
+    .line 424
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-eqz v1, :cond_4
 
-    .line 442
+    .line 425
     const-string v1, "MotionPanoramaApp"
 
     const-string v2, "already Stopping..."
@@ -14287,13 +13698,13 @@
 
     goto :goto_1
 
-    .line 445
+    .line 428
     :cond_4
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
 
     goto :goto_1
 
-    .line 452
+    .line 435
     :sswitch_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isCapturing()Z
 
@@ -14301,14 +13712,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 453
+    .line 436
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     const/4 v3, 0x2
 
     if-ge v2, v3, :cond_5
 
-    .line 454
+    .line 437
     const-string v1, "MotionPanoramaApp"
 
     const-string v2, "panorama can be saved at least two shot"
@@ -14317,32 +13728,32 @@
 
     goto :goto_1
 
-    .line 458
+    .line 441
     :cond_5
     iget-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-nez v2, :cond_7
 
-    .line 459
+    .line 442
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v2, :cond_6
 
-    .line 460
+    .line 443
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 462
+    .line 445
     :cond_6
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
 
     move v0, v1
 
-    .line 463
+    .line 446
     goto :goto_1
 
-    .line 465
+    .line 448
     :cond_7
     const-string v0, "MotionPanoramaApp"
 
@@ -14352,7 +13763,7 @@
 
     goto :goto_0
 
-    .line 428
+    .line 411
     :sswitch_data_0
     .sparse-switch
         0x4 -> :sswitch_0
@@ -14368,7 +13779,7 @@
     .param p2, "modeId"    # I
 
     .prologue
-    .line 477
+    .line 460
     const/4 v0, 0x0
 
     return v0
@@ -14379,28 +13790,28 @@
     .param p1, "arg0"    # Z
 
     .prologue
-    .line 482
+    .line 465
     const-string v4, "MotionPanoramaApp"
 
     const-string v5, "onMotionPanoramaCaptureResult"
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 484
+    .line 467
     if-nez p1, :cond_0
 
-    .line 485
+    .line 468
     const-string v4, "MotionPanoramaApp"
 
     const-string v5, "onMotionPanoramaCaptureResult - Error!"
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 534
+    .line 514
     :goto_0
     return-void
 
-    .line 492
+    .line 475
     :cond_0
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -14410,11 +13821,11 @@
 
     move-result-object v2
 
-    .line 493
+    .line 476
     .local v2, "outputFileName":Ljava/lang/String;
-    if-eqz v2, :cond_4
+    if-eqz v2, :cond_3
 
-    .line 494
+    .line 477
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -14427,13 +13838,13 @@
 
     move-result v1
 
-    .line 496
+    .line 479
     .local v1, "orientation":I
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaThumbnailBitmap:Landroid/graphics/Bitmap;
 
     if-eqz v4, :cond_1
 
-    .line 497
+    .line 480
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaThumbnailBitmap:Landroid/graphics/Bitmap;
@@ -14442,17 +13853,17 @@
 
     invoke-interface {v4, v5, v1, v6}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->updateThumbnailButton(Landroid/graphics/Bitmap;IZ)V
 
-    .line 498
+    .line 481
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaThumbnailBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {v4}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 499
+    .line 482
     const/4 v4, 0x0
 
     iput-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaThumbnailBitmap:Landroid/graphics/Bitmap;
 
-    .line 502
+    .line 485
     :cond_1
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -14462,7 +13873,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 503
+    .line 486
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -14477,25 +13888,16 @@
 
     invoke-interface {v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->addUriListInSecureCamera(Landroid/net/Uri;)V
 
-    .line 510
+    .line 494
     .end local v1    # "orientation":I
     :cond_2
     :goto_1
-    iget-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecordingEnabled:Z
-
-    if-eqz v4, :cond_3
-
-    .line 511
-    invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->saveAudio(Ljava/lang/String;)V
-
-    .line 514
-    :cond_3
     :try_start_0
     new-instance v3, Ljava/io/File;
 
     invoke-direct {v3, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 515
+    .line 495
     .local v3, "sefFile":Ljava/io/File;
     const-string v4, "Panorama_Shot_Info"
 
@@ -14517,50 +13919,50 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 519
+    .line 499
     .end local v3    # "sefFile":Ljava/io/File;
     :goto_2
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->updateRemainCounter()V
 
-    .line 521
+    .line 501
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->updateLatestMedia()V
 
-    .line 523
+    .line 503
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/Engine;->unlockAEAWB()V
 
-    .line 524
+    .line 504
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isTouchAutoFocusActive()Z
 
     move-result v4
 
-    if-eqz v4, :cond_5
+    if-eqz v4, :cond_4
 
-    .line 525
+    .line 505
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->resetTouchFocus()V
 
-    .line 530
+    .line 510
     :goto_3
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 532
+    .line 512
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->reset()V
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    .line 506
-    :cond_4
+    .line 489
+    :cond_3
     const-string v4, "MotionPanoramaApp"
 
     const-string v5, "output file error"
@@ -14569,11 +13971,11 @@
 
     goto :goto_1
 
-    .line 516
+    .line 496
     :catch_0
     move-exception v0
 
-    .line 517
+    .line 497
     .local v0, "e":Ljava/io/IOException;
     const-string v4, "MotionPanoramaApp"
 
@@ -14583,9 +13985,9 @@
 
     goto :goto_2
 
-    .line 527
+    .line 507
     .end local v0    # "e":Ljava/io/IOException;
-    :cond_5
+    :cond_4
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelAutoFocus()V
@@ -14597,27 +13999,27 @@
     .locals 2
 
     .prologue
-    .line 538
+    .line 518
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onMotionPanoramaCaptured"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 539
+    .line 519
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCaptureStarted:Z
 
     if-nez v0, :cond_0
 
-    .line 545
+    .line 525
     :goto_0
     return-void
 
-    .line 543
+    .line 523
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setCaptureProgressIncreased()V
 
-    .line 544
+    .line 524
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->restartCancelTimer()V
 
     goto :goto_0
@@ -14627,36 +14029,36 @@
     .locals 2
 
     .prologue
-    .line 549
+    .line 529
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onMotionPanoramaCapturedMaxFrames"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 551
+    .line 531
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCapturing:Z
 
     if-eqz v0, :cond_0
 
-    .line 552
+    .line 532
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-eqz v0, :cond_1
 
-    .line 553
+    .line 533
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "already Stopping..."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 558
+    .line 538
     :cond_0
     :goto_0
     return-void
 
-    .line 556
+    .line 536
     :cond_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
 
@@ -14668,7 +14070,7 @@
     .param p1, "direction"    # I
 
     .prologue
-    .line 562
+    .line 542
     const-string v0, "MotionPanoramaApp"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14691,18 +14093,18 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 564
+    .line 544
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->getCaptureProgressIncreased()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 568
+    .line 548
     :goto_0
     return-void
 
-    .line 567
+    .line 547
     :cond_0
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->panoramaDirectionChanged(I)V
 
@@ -14714,7 +14116,7 @@
     .param p1, "error"    # I
 
     .prologue
-    .line 572
+    .line 552
     const-string v0, "MotionPanoramaApp"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14737,7 +14139,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 574
+    .line 554
     const/4 v0, 0x2
 
     if-eq p1, v0, :cond_0
@@ -14746,38 +14148,38 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 575
+    .line 555
     :cond_0
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-eqz v0, :cond_1
 
-    .line 576
+    .line 556
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "already Stopping..."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 585
+    .line 565
     :goto_0
     return-void
 
-    .line 579
+    .line 559
     :cond_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
 
-    .line 584
+    .line 564
     :goto_1
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showPanoramaToastPopup(I)V
 
     goto :goto_0
 
-    .line 581
+    .line 561
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->cancelPanoramaCapture()V
 
-    .line 582
+    .line 562
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->reset()V
 
     goto :goto_1
@@ -14788,24 +14190,24 @@
     .param p1, "data"    # [B
 
     .prologue
-    .line 594
+    .line 574
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onMotionPanoramaLivePreviewData"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 597
+    .line 577
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     const/4 v1, 0x2
 
     if-ge v0, v1, :cond_0
 
-    .line 598
+    .line 578
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->onLivePreviewData([B)V
 
-    .line 600
+    .line 580
     :cond_0
     return-void
 .end method
@@ -14817,7 +14219,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 604
+    .line 584
     const-string v0, "MotionPanoramaApp"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14840,7 +14242,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 606
+    .line 586
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     const/4 v1, 0x6
@@ -14851,68 +14253,68 @@
 
     if-eqz v0, :cond_0
 
-    .line 607
+    .line 587
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onMotionPanoramaProgressStitching - CE_STATE_SHUTDOWN"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 608
+    .line 588
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clear()V
 
-    .line 628
+    .line 608
     :goto_0
     return-void
 
-    .line 612
+    .line 592
     :cond_0
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setPostCaptureProgress(I)V
 
-    .line 614
+    .line 594
     if-nez p1, :cond_1
 
-    .line 615
+    .line 595
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 616
+    .line 596
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 618
+    .line 598
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopCancelTimer()V
 
-    .line 619
+    .line 599
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaSound()V
 
-    .line 620
+    .line 600
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->clearPanoramaRect()V
 
-    .line 621
+    .line 601
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v1, 0x3
 
     invoke-interface {v0, v1, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->playCameraSound(II)V
 
-    .line 622
+    .line 602
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 624
+    .line 604
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->startShutterProgressWheel()V
 
     goto :goto_0
 
-    .line 626
+    .line 606
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -14927,18 +14329,18 @@
     .param p2, "y"    # I
 
     .prologue
-    .line 634
+    .line 614
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->getCaptureProgressIncreased()I
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 644
+    .line 624
     :goto_0
     return-void
 
-    .line 638
+    .line 618
     :cond_0
     sget-object v4, Lcom/sec/android/app/camera/feature/Feature;->BURST_PANORAMA_RESOLUTION:Ljava/lang/String;
 
@@ -14950,7 +14352,7 @@
 
     move-result v3
 
-    .line 639
+    .line 619
     .local v3, "width":I
     sget-object v4, Lcom/sec/android/app/camera/feature/Feature;->BURST_PANORAMA_RESOLUTION:Ljava/lang/String;
 
@@ -14962,7 +14364,7 @@
 
     move-result v0
 
-    .line 640
+    .line 620
     .local v0, "height":I
     int-to-float v4, p1
 
@@ -14978,7 +14380,7 @@
 
     float-to-int v1, v4
 
-    .line 641
+    .line 621
     .local v1, "resize_x":I
     int-to-float v4, p2
 
@@ -14994,7 +14396,7 @@
 
     float-to-int v2, v4
 
-    .line 643
+    .line 623
     .local v2, "resize_y":I
     invoke-direct {p0, v1, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->panoramaRectChanged(II)V
 
@@ -15005,17 +14407,17 @@
     .locals 2
 
     .prologue
-    .line 648
+    .line 628
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onMotionPanoramaSlowMove"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 650
+    .line 630
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->panoramaMoveSlowly()V
 
-    .line 651
+    .line 631
     return-void
 .end method
 
@@ -15024,14 +14426,14 @@
     .param p1, "data"    # [B
 
     .prologue
-    .line 660
+    .line 640
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onMotionPanoramaThumbnailData"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 662
+    .line 642
     const/4 v0, 0x0
 
     invoke-static {p1, v0}, Lcom/sec/android/app/camera/util/Util;->decodeRgbaBitmap([B[Ljava/lang/Integer;)Landroid/graphics/Bitmap;
@@ -15040,12 +14442,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaThumbnailBitmap:Landroid/graphics/Bitmap;
 
-    .line 663
+    .line 643
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaThumbnailBitmap:Landroid/graphics/Bitmap;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setLowResolutionBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 665
+    .line 645
     return-void
 .end method
 
@@ -15054,24 +14456,24 @@
     .param p1, "arg0"    # [B
 
     .prologue
-    .line 669
+    .line 649
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "onMotionPanoramaUiImageData"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 672
+    .line 652
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
 
     const/4 v1, 0x1
 
     if-le v0, v1, :cond_0
 
-    .line 673
+    .line 653
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->onLivePreviewData([B)V
 
-    .line 675
+    .line 655
     :cond_0
     return-void
 .end method
@@ -15089,7 +14491,7 @@
     .end annotation
 
     .prologue
-    .line 679
+    .line 659
     .local p1, "values":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/content/ContentValues;>;"
     const-string v0, "Z143"
 
@@ -15109,7 +14511,7 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 680
+    .line 660
     return-void
 .end method
 
@@ -15118,7 +14520,7 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 684
+    .line 664
     const-string v2, "MotionPanoramaApp"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -15171,17 +14573,17 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 686
+    .line 666
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPreviewRectRotationSupported:Z
 
     if-nez v2, :cond_0
 
-    .line 687
+    .line 667
     const/16 p1, 0x0
 
-    .line 691
+    .line 671
     :cond_0
     move-object/from16 v0, p0
 
@@ -15195,7 +14597,7 @@
 
     if-nez v2, :cond_1
 
-    .line 692
+    .line 672
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
@@ -15204,51 +14606,51 @@
 
     if-eq v2, v0, :cond_1
 
-    .line 693
+    .line 673
     const-string v2, "MotionPanoramaApp"
 
     const-string v3, "onOrientationChanged Stop case - orientation changed"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 695
+    .line 675
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     iput-boolean v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 696
+    .line 676
     move/from16 v0, p1
 
     move-object/from16 v1, p0
 
     iput v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
-    .line 698
+    .line 678
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewLayout(Z)V
 
-    .line 699
+    .line 679
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hidePreviewGroup()V
 
-    .line 701
+    .line 681
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->cancelPanoramaCapture()V
 
-    .line 702
+    .line 682
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->reset()V
 
-    .line 704
+    .line 684
     const/4 v2, 0x1
 
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->showPanoramaToastPopup(I)V
 
-    .line 708
+    .line 688
     :cond_1
     move/from16 v0, p1
 
@@ -15256,7 +14658,7 @@
 
     iput v0, v1, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCurrentOrientation:I
 
-    .line 710
+    .line 690
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEnterOrientation:I
@@ -15273,10 +14675,10 @@
 
     if-lt v2, v3, :cond_5
 
-    .line 711
+    .line 691
     const/4 v8, 0x0
 
-    .line 712
+    .line 692
     .local v8, "bStop":Z
     move-object/from16 v0, p0
 
@@ -15284,39 +14686,39 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 731
+    .line 711
     :cond_2
     :goto_0
     if-eqz v8, :cond_5
 
-    .line 732
+    .line 712
     const-string v2, "MotionPanoramaApp"
 
     const-string v3, "onOrientationChanged Stop case - orientation changed during a capturing"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 733
+    .line 713
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-eqz v2, :cond_4
 
-    .line 734
+    .line 714
     const-string v2, "MotionPanoramaApp"
 
     const-string v3, "already Stopping..."
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 837
+    .line 817
     .end local v8    # "bStop":Z
     :cond_3
     :goto_1
     return-void
 
-    .line 714
+    .line 694
     .restart local v8    # "bStop":Z
     :pswitch_0
     const/4 v2, 0x2
@@ -15325,12 +14727,12 @@
 
     if-eq v0, v2, :cond_2
 
-    .line 715
+    .line 695
     const/4 v8, 0x1
 
     goto :goto_0
 
-    .line 718
+    .line 698
     :pswitch_1
     const/4 v2, 0x3
 
@@ -15338,21 +14740,21 @@
 
     if-eq v0, v2, :cond_2
 
-    .line 719
+    .line 699
     const/4 v8, 0x1
 
     goto :goto_0
 
-    .line 722
+    .line 702
     :pswitch_2
     if-eqz p1, :cond_2
 
-    .line 723
+    .line 703
     const/4 v8, 0x1
 
     goto :goto_0
 
-    .line 726
+    .line 706
     :pswitch_3
     const/4 v2, 0x1
 
@@ -15360,12 +14762,12 @@
 
     if-eq v0, v2, :cond_2
 
-    .line 727
+    .line 707
     const/4 v8, 0x1
 
     goto :goto_0
 
-    .line 737
+    .line 717
     :cond_4
     const/4 v2, 0x0
 
@@ -15373,40 +14775,40 @@
 
     iput-boolean v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaWarning:Z
 
-    .line 738
+    .line 718
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideWarningArrow()V
 
-    .line 739
+    .line 719
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideWarningBox()V
 
-    .line 740
+    .line 720
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaSound()V
 
-    .line 742
+    .line 722
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->hideLivePreview()V
 
-    .line 743
+    .line 723
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewLayout(Z)V
 
-    .line 745
+    .line 725
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->stopPanoramaCapturing()V
 
-    .line 749
+    .line 729
     .end local v8    # "bStop":Z
     :cond_5
     const/4 v15, 0x0
 
-    .line 751
+    .line 731
     .local v15, "updateLayout":Z
     sget-object v3, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewLock:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 752
+    .line 732
     :try_start_0
     move-object/from16 v0, p0
 
@@ -15428,26 +14830,26 @@
 
     if-eqz v2, :cond_6
 
-    .line 753
+    .line 733
     const/4 v15, 0x1
 
-    .line 755
+    .line 735
     :cond_6
     monitor-exit v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 757
+    .line 737
     if-eqz v15, :cond_7
 
-    .line 758
+    .line 738
     const/4 v2, 0x0
 
     move-object/from16 v0, p0
 
     invoke-direct {v0, v2}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewLayout(Z)V
 
-    .line 762
+    .line 742
     :cond_7
     move-object/from16 v0, p0
 
@@ -15465,28 +14867,28 @@
 
     if-nez v2, :cond_8
 
-    .line 763
+    .line 743
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateArrow()V
 
-    .line 768
+    .line 748
     :cond_8
     packed-switch p1, :pswitch_data_1
 
     goto :goto_1
 
-    .line 771
+    .line 751
     :pswitch_4
     move-object/from16 v0, p0
 
     iget v9, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->INIT_LANDSCAPE_X:F
 
-    .line 772
+    .line 752
     .local v9, "groupX":F
     move-object/from16 v0, p0
 
     iget v10, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitLandscapeY:F
 
-    .line 774
+    .line 754
     .local v10, "groupY":F
     move-object/from16 v0, p0
 
@@ -15494,7 +14896,7 @@
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLRectangle;->resetTranslate()V
 
-    .line 776
+    .line 756
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -15509,14 +14911,14 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
 
-    .line 777
+    .line 757
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v2, v9, v10}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 779
+    .line 759
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -15531,7 +14933,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLNinePatch;->setSize(FF)V
 
-    .line 781
+    .line 761
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -15546,7 +14948,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 782
+    .line 762
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -15559,7 +14961,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLRectangle;->translateAbsolute(FF)V
 
-    .line 783
+    .line 763
     const/4 v11, 0x0
 
     .local v11, "i":I
@@ -15568,12 +14970,12 @@
 
     if-ge v11, v2, :cond_b
 
-    .line 784
+    .line 764
     const/4 v2, 0x2
 
     if-ge v11, v2, :cond_a
 
-    .line 785
+    .line 765
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCaptureCount:I
@@ -15590,7 +14992,7 @@
 
     if-nez v2, :cond_9
 
-    .line 786
+    .line 766
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -15601,14 +15003,14 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 783
+    .line 763
     :cond_9
     :goto_3
     add-int/lit8 v11, v11, 0x1
 
     goto :goto_2
 
-    .line 755
+    .line 735
     .end local v9    # "groupX":F
     .end local v10    # "groupY":F
     .end local v11    # "i":I
@@ -15622,7 +15024,7 @@
 
     throw v2
 
-    .line 789
+    .line 769
     .restart local v9    # "groupX":F
     .restart local v10    # "groupY":F
     .restart local v11    # "i":I
@@ -15639,7 +15041,7 @@
 
     goto :goto_3
 
-    .line 793
+    .line 773
     :cond_b
     move-object/from16 v0, p0
 
@@ -15655,7 +15057,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 794
+    .line 774
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -15664,7 +15066,7 @@
 
     monitor-enter v16
 
-    .line 795
+    .line 775
     const/high16 v2, 0x40000000    # 2.0f
 
     :try_start_2
@@ -15674,7 +15076,7 @@
 
     mul-float v12, v2, v3
 
-    .line 796
+    .line 776
     .local v12, "padding":F
     move-object/from16 v0, p0
 
@@ -15704,7 +15106,7 @@
 
     invoke-direct/range {v2 .. v7}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewGroup(FFFFLandroid/graphics/Bitmap;)V
 
-    .line 797
+    .line 777
     monitor-exit v16
 
     goto/16 :goto_1
@@ -15719,7 +15121,7 @@
 
     throw v2
 
-    .line 802
+    .line 782
     .end local v9    # "groupX":F
     .end local v10    # "groupY":F
     .end local v11    # "i":I
@@ -15728,13 +15130,13 @@
 
     iget v9, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitX:F
 
-    .line 803
+    .line 783
     .restart local v9    # "groupX":F
     move-object/from16 v0, p0
 
     iget v10, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitY:F
 
-    .line 805
+    .line 785
     .restart local v10    # "groupY":F
     move-object/from16 v0, p0
 
@@ -15742,7 +15144,7 @@
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLRectangle;->resetTranslate()V
 
-    .line 807
+    .line 787
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -15757,14 +15159,14 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
 
-    .line 808
+    .line 788
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v2, v9, v10}, Lcom/samsung/android/glview/GLViewGroup;->translateAbsolute(FF)V
 
-    .line 810
+    .line 790
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeBackgroundRect:Lcom/samsung/android/glview/GLNinePatch;
@@ -15779,7 +15181,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLNinePatch;->setSize(FF)V
 
-    .line 812
+    .line 792
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -15794,7 +15196,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 813
+    .line 793
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitializeSingleRect:Lcom/samsung/android/glview/GLRectangle;
@@ -15807,7 +15209,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLRectangle;->translateAbsolute(FF)V
 
-    .line 814
+    .line 794
     const/4 v11, 0x0
 
     .restart local v11    # "i":I
@@ -15816,12 +15218,12 @@
 
     if-ge v11, v2, :cond_e
 
-    .line 815
+    .line 795
     const/4 v2, 0x2
 
     if-ge v11, v2, :cond_d
 
-    .line 816
+    .line 796
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -15832,14 +15234,14 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 814
+    .line 794
     :cond_c
     :goto_5
     add-int/lit8 v11, v11, 0x1
 
     goto :goto_4
 
-    .line 818
+    .line 798
     :cond_d
     move-object/from16 v0, p0
 
@@ -15857,7 +15259,7 @@
 
     if-nez v2, :cond_c
 
-    .line 819
+    .line 799
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPanoramaInitializeTri:[Lcom/samsung/android/glview/GLViewGroup;
@@ -15870,7 +15272,7 @@
 
     goto :goto_5
 
-    .line 824
+    .line 804
     :cond_e
     move-object/from16 v0, p0
 
@@ -15886,7 +15288,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 825
+    .line 805
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mLivePreviewGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -15895,7 +15297,7 @@
 
     monitor-enter v16
 
-    .line 827
+    .line 807
     const/high16 v2, 0x40000000    # 2.0f
 
     :try_start_3
@@ -15905,19 +15307,19 @@
 
     mul-float v12, v2, v3
 
-    .line 828
+    .line 808
     .restart local v12    # "padding":F
     move-object/from16 v0, p0
 
     iget v14, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleHeight:F
 
-    .line 829
+    .line 809
     .local v14, "tempWidth":F
     move-object/from16 v0, p0
 
     iget v13, v0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mInitPortraitSingleWidth:F
 
-    .line 830
+    .line 810
     .local v13, "tempHeight":F
     move-object/from16 v0, p0
 
@@ -15939,7 +15341,7 @@
 
     invoke-direct/range {v2 .. v7}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->updateLivePreviewGroup(FFFFLandroid/graphics/Bitmap;)V
 
-    .line 831
+    .line 811
     monitor-exit v16
 
     goto/16 :goto_1
@@ -15956,7 +15358,7 @@
 
     throw v2
 
-    .line 712
+    .line 692
     nop
 
     :pswitch_data_0
@@ -15967,7 +15369,7 @@
         :pswitch_3
     .end packed-switch
 
-    .line 768
+    .line 748
     :pswitch_data_1
     .packed-switch 0x0
         :pswitch_4
@@ -15981,12 +15383,12 @@
     .locals 1
 
     .prologue
-    .line 841
+    .line 821
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->switchToRecordingMode()V
 
-    .line 842
+    .line 822
     const/4 v0, 0x0
 
     return v0
@@ -15996,7 +15398,7 @@
     .locals 1
 
     .prologue
-    .line 847
+    .line 827
     const/4 v0, 0x0
 
     return v0
@@ -16008,12 +15410,12 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 852
+    .line 832
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mPostProgress:I
 
     if-lez v1, :cond_0
 
-    .line 853
+    .line 833
     const-string v1, "MotionPanoramaApp"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -16044,11 +15446,11 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 860
+    .line 840
     :goto_0
     return v0
 
-    .line 856
+    .line 836
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->getCaptureProgressIncreased()I
 
@@ -16058,7 +15460,7 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 857
+    .line 837
     const-string v1, "MotionPanoramaApp"
 
     const-string v2, "onKeyDown - PANORAMA_MAX_IMAGE_COUNT"
@@ -16067,7 +15469,7 @@
 
     goto :goto_0
 
-    .line 860
+    .line 840
     :cond_1
     const/4 v0, 0x0
 
@@ -16081,25 +15483,25 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 868
+    .line 848
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isReadyToCapture()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 869
+    .line 849
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "Drop Panorama capture start, because it\'s not ready."
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 909
+    .line 886
     :goto_0
     return v2
 
-    .line 872
+    .line 852
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->isCapturing()Z
 
@@ -16107,7 +15509,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 873
+    .line 853
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "return is capturing."
@@ -16116,13 +15518,13 @@
 
     goto :goto_0
 
-    .line 876
+    .line 856
     :cond_1
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaStopping:Z
 
     if-eqz v0, :cond_2
 
-    .line 877
+    .line 857
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "return is stopping"
@@ -16131,7 +15533,7 @@
 
     goto :goto_0
 
-    .line 880
+    .line 860
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->getCaptureProgressIncreased()I
 
@@ -16141,7 +15543,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 881
+    .line 861
     const-string v0, "MotionPanoramaApp"
 
     const-string v1, "Return PANORAMA_MAX_IMAGE_COUNT"
@@ -16150,7 +15552,7 @@
 
     goto :goto_0
 
-    .line 885
+    .line 865
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -16158,14 +15560,14 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 886
+    .line 866
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, -0x1c1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 888
+    .line 868
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -16174,17 +15576,17 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideShootingModeText()V
 
-    .line 890
+    .line 870
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestTransientAudioFocus()V
 
-    .line 892
+    .line 872
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->lockAEAWB()V
 
-    .line 893
+    .line 873
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->isContinuousAutoFocusSupported()Z
@@ -16209,40 +15611,31 @@
 
     if-nez v0, :cond_4
 
-    .line 894
+    .line 874
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleAutoFocus()V
 
-    .line 896
+    .line 876
     :cond_4
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->setOutputFile()V
 
-    .line 898
-    iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsSoundRecordingEnabled:Z
-
-    if-eqz v0, :cond_5
-
-    .line 899
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->startSoundRecording()V
-
-    .line 901
-    :cond_5
+    .line 878
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleStartMotionPanorama()V
 
-    .line 902
+    .line 879
     iput-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mIsPanoramaCaptureStarted:Z
 
-    .line 905
+    .line 882
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x40
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 907
+    .line 884
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionPanorama;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastOrientation()I
@@ -16263,7 +15656,7 @@
     .param p1, "event"    # I
 
     .prologue
-    .line 914
+    .line 891
     return-void
 .end method
 
@@ -16272,7 +15665,7 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 918
+    .line 895
     return-void
 .end method
 
@@ -16280,7 +15673,7 @@
     .locals 1
 
     .prologue
-    .line 922
+    .line 899
     const/4 v0, 0x0
 
     return v0

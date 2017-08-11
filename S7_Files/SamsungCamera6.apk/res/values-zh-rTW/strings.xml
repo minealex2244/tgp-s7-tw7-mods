@@ -189,6 +189,8 @@
     <string name="SM_SLOW_VIDEO_description">以高畫面更新率錄製影片，以便慢動作檢視。錄製後，您可以用慢動作播放每支影片的特定片段。</string>
     <string name="SM_SMART_SELFSHOT">後置相機自拍</string>
     <string name="SM_SMART_SELFSHOT_description">拍攝自拍照時，後置相機將自動偵測並對焦您的臉孔。</string>
+    <string name="SM_SOCIAL">社群</string>
+    <string name="SM_SOCIAL_description">拍照並於社群網路上輕鬆分享。</string>
     <string name="SM_SPORTS">運動</string>
     <string name="SM_SPORTS_SCENE_description">對快速移動的拍攝對象拍下清晰照片。</string>
     <string name="SM_STORY">有聲拍攝</string>
@@ -392,7 +394,10 @@
     <string name="guideline_square">正方形</string>
     <string name="help_change_mode_tip_1">向右滑動以檢視更多可用的相機模式。</string>
     <string name="help_change_mode_tip_2">選擇想要使用的模式。</string>
+    <string name="help_change_mode_tip_3">簡易模式啟用時僅可使用自動與自拍相機模式。</string>
     <string name="help_changing_the_camera_mode">選擇相機模式</string>
+    <string name="help_changing_the_camera_mode_header">選擇相機模式</string>
+    <string name="help_changing_the_camera_mode_title">變更相機模式</string>
     <string name="help_recording_videos">錄製影片</string>
     <string name="help_recording_videos_tip_1">輕觸 %s。</string>
     <string name="help_recording_videos_tip_1_tts">輕觸錄影機按鈕。</string>
@@ -400,7 +405,7 @@
     <string name="help_recording_videos_tip_2_tts">輕觸停止按鈕以停止錄製。</string>
     <string name="help_recording_videos_tip_snapshot">輕觸%s以於錄影時拍照。</string>
     <string name="help_recording_videos_tip_snapshot_tts">輕觸相機按鈕以於錄影時拍照。</string>
-    <string name="help_section_summary">使用各種不同特效來拍照或錄影，以因應所有場合需求。啟用簡易模式時僅可使用自動與自拍相機模式，且無法套用特效。</string>
+    <string name="help_section_summary">使用各種不同效果來拍照或錄影，以符合各種情境。</string>
     <string name="help_selecting_camera_mode">選擇相機模式</string>
     <string name="help_taking_pictures">拍照</string>
     <string name="help_taking_pictures_tip_1">輕觸想要置入對焦框的物體。</string>
@@ -415,6 +420,7 @@
     <string name="help_text_wideselfie">輕觸相機按鈕並朝一個方向慢慢旋轉裝置。</string>
     <string name="help_viewing_pics_and_videos_tip_1">輕觸%s在拍照或錄影後立即檢視您的照片或影片。</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">輕觸快速檢視按鈕以在拍照或錄影後立即檢視您的照片或影片。</string>
+    <string name="help_viewing_pics_and_videos_tip_2">向左滑動可在拍照或錄影後立即檢視照片或影片。</string>
     <string name="help_viewing_pictures_and_videos">檢視相片與影片</string>
     <string name="high_resolution_video_description">以%s解析度錄影時無法使用下方選項：</string>
     <string name="highlight">亮部細節</string>

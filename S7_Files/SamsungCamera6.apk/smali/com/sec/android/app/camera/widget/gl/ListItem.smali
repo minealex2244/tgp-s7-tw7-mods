@@ -54,7 +54,7 @@
     .param p7, "command"    # Lcom/sec/android/app/camera/command/MenuCommand;
 
     .prologue
-    const v1, 0x7f0b00fe
+    const v1, 0x7f0b00ff
 
     .line 57
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/app/camera/widget/gl/Item;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
@@ -69,7 +69,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ListItem;->LIST_TYPE_BUTTON_IMAGE_SIDE_MARGIN:I
 
     .line 39
-    const v0, 0x7f0b00ff
+    const v0, 0x7f0b0100
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -80,7 +80,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ListItem;->LIST_TYPE_BUTTON_TEXT_SIDE_MARGIN:I
 
     .line 40
-    const v0, 0x7f0b00fc
+    const v0, 0x7f0b00fd
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -91,7 +91,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ListItem;->LIST_TYPE_BUTTON_IMAGE_WIDTH:I
 
     .line 41
-    const v0, 0x7f0b00fd
+    const v0, 0x7f0b00fe
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -111,7 +111,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ListItem;->LIST_TYPE_BUTTON_LEFT_PADDING:I
 
     .line 43
-    const v0, 0x7f0b0100
+    const v0, 0x7f0b0101
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -122,7 +122,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ListItem;->LIST_TYPE_TEXT_POS_X:I
 
     .line 44
-    const v0, 0x7f0b0101
+    const v0, 0x7f0b0102
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -133,7 +133,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ListItem;->LIST_TYPE_TEXT_POS_Y:I
 
     .line 45
-    const v0, 0x7f0b0102
+    const v0, 0x7f0b0103
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -151,7 +151,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ListItem;->LIST_TYPE_TEXT_FONT_COLOR:I
 
     .line 47
-    const v0, 0x7f0b00f4
+    const v0, 0x7f0b00f5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -803,7 +803,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a025c
+    const v2, 0x7f0a0262
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -825,7 +825,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0258
+    const v2, 0x7f0a025e
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

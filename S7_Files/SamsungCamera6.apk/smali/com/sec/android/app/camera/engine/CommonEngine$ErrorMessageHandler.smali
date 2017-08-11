@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 10051
+    .line 10106
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorMessageHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 10054
+    .line 10109
     const-string v0, "CommonEngine"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -70,7 +70,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10056
+    .line 10111
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$ErrorMessageHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -79,6 +79,6 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 10057
+    .line 10112
     return-void
 .end method

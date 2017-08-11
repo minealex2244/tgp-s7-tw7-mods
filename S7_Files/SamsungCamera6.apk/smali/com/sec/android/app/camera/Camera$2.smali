@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 531
+    .line 524
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "focusChange"    # I
 
     .prologue
-    .line 534
+    .line 527
     const-string v0, "Camera6"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -65,10 +65,10 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 535
+    .line 528
     packed-switch p1, :pswitch_data_0
 
-    .line 541
+    .line 534
     const-string v0, "Camera6"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -91,11 +91,11 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 543
+    .line 536
     :goto_0
     return-void
 
-    .line 538
+    .line 531
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$2;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -113,7 +113,7 @@
 
     goto :goto_0
 
-    .line 535
+    .line 528
     nop
 
     :pswitch_data_0

@@ -190,6 +190,8 @@ Snimka pomicanja: uhvatite osjećaj pokreta prilikom fotografiranja predmeta u p
     <string name="SM_SLOW_VIDEO_description">Snimajte videozapise visokom brzinom kadrova za usporeno prikazivanje. Možete usporeno reproducirati određeni dio svakog videozapisa nakon što ih snimite.</string>
     <string name="SM_SMART_SELFSHOT">Autoportret stražnje kamere</string>
     <string name="SM_SMART_SELFSHOT_description">Stražnja kamera automatski će prepoznati i fokusirati lica dok snimate autoportrete.</string>
+    <string name="SM_SOCIAL">Društveni</string>
+    <string name="SM_SOCIAL_description">Snimajte fotografije i lako ih dijelite na društvenim mrežama.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Snimite jasnije fotografije objekata u brzom pokretu.</string>
     <string name="SM_STORY">Zvuk i snimka</string>
@@ -261,7 +263,7 @@ Snimka pomicanja: uhvatite osjećaj pokreta prilikom fotografiranja predmeta u p
     <string name="Title_Viewmode">Prikaz punog zasl. (16:9)</string>
     <string name="Title_Voice_Capture">Kontrola glasom</string>
     <string name="Title_Voice_guide">Glasovne upute</string>
-    <string name="Title_Volume_Key_As">Funkcija tipke glasnoće</string>
+    <string name="Title_Volume_Key_As">Funkcija tipke za glasnoću</string>
     <string name="Title_WhiteBalance">Balans bijele boje</string>
     <string name="Title_common">Zajedničko</string>
     <string name="Title_front">Prednja kamera</string>
@@ -393,7 +395,10 @@ oblika"</string>
     <string name="guideline_square">Kvadrat</string>
     <string name="help_change_mode_tip_1">Prijeđite prstom desno da biste vidjeli dostupne načine rada kamere.</string>
     <string name="help_change_mode_tip_2">Odaberite način rada koji želite koristiti.</string>
+    <string name="help_change_mode_tip_3">Dostupni su samo načini rada kamere Automatski i Autoportret kada je uključen Jednostavan način.</string>
     <string name="help_changing_the_camera_mode">Odabir načina rada kamere</string>
+    <string name="help_changing_the_camera_mode_header">Odabir načina rada kamere</string>
+    <string name="help_changing_the_camera_mode_title">Promjena načina rada kamere</string>
     <string name="help_recording_videos">Snimanje videozapisa</string>
     <string name="help_recording_videos_tip_1">Dodirnite %s.</string>
     <string name="help_recording_videos_tip_1_tts">Dodirnite gumb za snimanje.</string>
@@ -401,7 +406,7 @@ oblika"</string>
     <string name="help_recording_videos_tip_2_tts">Dodirnite gumb za prekid da biste zaustavili snimanje.</string>
     <string name="help_recording_videos_tip_snapshot">Dodirnite %s za fotografiranje tijekom snimanja videozapisa.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Dodirnite gumb kamere za fotografiranje tijekom snimanja videozapisa.</string>
-    <string name="help_section_summary">Snimajte fotografije ili videozapise primjenjujući različite efekte koji odgovaraju svakoj situaciji. Dostupni su samo načini rada kamere Automatski i Autoportret i ne može se primijeniti nijedan efekt dok je uključen Jednostavan način.</string>
+    <string name="help_section_summary">Fotografirajte ili snimite videozapise koristeći različite efekte za svaku priliku.</string>
     <string name="help_selecting_camera_mode">Odabir načina rada kamere</string>
     <string name="help_taking_pictures">Snimanje slika</string>
     <string name="help_taking_pictures_tip_1">Dodirnite predmet koji želite fokusirati.</string>
@@ -416,6 +421,7 @@ oblika"</string>
     <string name="help_text_wideselfie">Dodirnite gumb Kamere i lagano zakrenite uređaj u jednom smjeru.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Dodirnite %s da biste pregledali slike ili videozapise odmah nakon što ih snimite.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Dodirnite gumb za brzi prikaz da biste pregledali slike ili videozapise odmah nakon što ih snimite.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Pregled slika i videozapisa</string>
     <string name="high_resolution_video_description">Sljedeće neće biti dostupno tijekom snimanja u razlučivosti %s:</string>
     <string name="highlight">Istaknuto</string>

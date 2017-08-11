@@ -297,7 +297,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->SCREEN_HEIGHT:I
 
     .line 78
-    const v2, 0x7f0b033e
+    const v2, 0x7f0b033f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -306,7 +306,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->REC_INDICATOR_TEXT_SIZE:F
 
     .line 79
-    const v2, 0x7f0b0190
+    const v2, 0x7f0b0191
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -317,7 +317,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->REC_SIZE_TEXT_SIZE:I
 
     .line 82
-    const v2, 0x7f0b01d8
+    const v2, 0x7f0b01d9
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -350,7 +350,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->BASEMENU_GROUP_ICON_GAP:F
 
     .line 85
-    const v2, 0x7f0b034d
+    const v2, 0x7f0b034e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -359,7 +359,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->SHUTTER_BUTTON_PORTRAIT_BOTTOM_PADDING:F
 
     .line 87
-    const v2, 0x7f0b00f1
+    const v2, 0x7f0b00f2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -370,7 +370,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_REC_TIME_GROUP_HEIGHT:I
 
     .line 88
-    const v2, 0x7f0b00f0
+    const v2, 0x7f0b00f1
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -394,7 +394,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_REC_TIME_GROUP_POS_Y:I
 
     .line 90
-    const v2, 0x7f0b00ee
+    const v2, 0x7f0b00ef
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -405,7 +405,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_REC_TIME_GROUP_1_1_RATIO_MARGIN:I
 
     .line 91
-    const v2, 0x7f0b00ef
+    const v2, 0x7f0b00f0
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -416,7 +416,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_REC_TIME_GROUP_4_3_RATIO_MARGIN:I
 
     .line 92
-    const v2, 0x7f0b00f2
+    const v2, 0x7f0b00f3
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -427,7 +427,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_REC_TIME_GROUP_RATIO_BOTTOM_MARGIN:I
 
     .line 93
-    const v2, 0x7f0b0199
+    const v2, 0x7f0b019a
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -438,7 +438,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_REC_ICON_WIDTH:I
 
     .line 94
-    const v2, 0x7f0b0198
+    const v2, 0x7f0b0199
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -449,7 +449,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_REC_ICON_LEFT_MARGIN:I
 
     .line 95
-    const v2, 0x7f0b019b
+    const v2, 0x7f0b019c
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -460,7 +460,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_REC_TIME_TEXT_POS_X:I
 
     .line 96
-    const v2, 0x7f0b019a
+    const v2, 0x7f0b019b
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -520,7 +520,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->INDICATOR_GROUP_HEIGHT:I
 
     .line 103
-    const v2, 0x7f0b00eb
+    const v2, 0x7f0b00ec
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -531,7 +531,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->INDICATOR_GROUP_POS_X:I
 
     .line 104
-    const v2, 0x7f0b00ec
+    const v2, 0x7f0b00ed
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -542,7 +542,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->INDICATOR_GROUP_POS_Y:I
 
     .line 106
-    const v2, 0x7f0b018d
+    const v2, 0x7f0b018e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -553,7 +553,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_GROUP_WIDTH:I
 
     .line 107
-    const v2, 0x7f0b0189
+    const v2, 0x7f0b018a
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -564,7 +564,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_GROUP_HEIGHT:I
 
     .line 108
-    const v2, 0x7f0b018a
+    const v2, 0x7f0b018b
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -575,7 +575,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_GROUP_POS_X:I
 
     .line 109
-    const v2, 0x7f0b018b
+    const v2, 0x7f0b018c
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -586,7 +586,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_GROUP_POS_X_PORTRAIT:I
 
     .line 110
-    const v2, 0x7f0b018c
+    const v2, 0x7f0b018d
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -597,7 +597,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_GROUP_POS_Y:I
 
     .line 111
-    const v2, 0x7f0b0191
+    const v2, 0x7f0b0192
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -608,7 +608,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_SIZE_TEXT_WIDTH:I
 
     .line 112
-    const v2, 0x7f0b018f
+    const v2, 0x7f0b0190
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -628,7 +628,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESSBAR_POS_X:I
 
     .line 114
-    const v2, 0x7f0b0192
+    const v2, 0x7f0b0193
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -639,7 +639,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESSBAR_WIDTH:I
 
     .line 115
-    const v2, 0x7f0b018e
+    const v2, 0x7f0b018f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -665,7 +665,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_MAX_SIZE_POS_X:I
 
     .line 118
-    const v2, 0x7f0b0195
+    const v2, 0x7f0b0196
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -676,7 +676,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_SNAPSHOT_MARGIN_Y:I
 
     .line 119
-    const v2, 0x7f0b034e
+    const v2, 0x7f0b034f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -687,7 +687,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_PAUSE_BUTTON_DIAMETER:I
 
     .line 120
-    const v2, 0x7f0b0188
+    const v2, 0x7f0b0189
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -698,7 +698,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_PAUSE_BUTTON_WIDTH:I
 
     .line 122
-    const v2, 0x7f0b0193
+    const v2, 0x7f0b0194
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -709,7 +709,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->SNAPSHOT_BUTTON_POS_Y:I
 
     .line 123
-    const v2, 0x7f0b0194
+    const v2, 0x7f0b0195
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -731,7 +731,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->CAF_BUTTON_POS_X:I
 
     .line 126
-    const v2, 0x7f0b033d
+    const v2, 0x7f0b033e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -742,7 +742,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->CAF_BUTTON_POS_Y_BOTTOM:I
 
     .line 127
-    const v2, 0x7f0b033c
+    const v2, 0x7f0b033d
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -838,7 +838,7 @@
 
     sub-float/2addr v2, v3
 
-    const v3, 0x7f0b01d1
+    const v3, 0x7f0b01d2
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -986,7 +986,7 @@
 
     int-to-float v2, v2
 
-    const v3, 0x7f0b0105
+    const v3, 0x7f0b0106
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -998,7 +998,7 @@
 
     sub-float/2addr v2, v3
 
-    const v3, 0x7f0b0104
+    const v3, 0x7f0b0105
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1475,6 +1475,13 @@
     const/4 v4, 0x4
 
     .line 957
+    const-string v0, "Recording"
+
+    const-string v1, "hideRecordingButtonWithAnimation"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 958
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isEasyCamera()Z
@@ -1483,45 +1490,45 @@
 
     if-eqz v0, :cond_0
 
-    .line 958
+    .line 959
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-interface {v0, v3, v1, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setRecordingButtonForAnimation(Lcom/samsung/android/glview/GLButton;Lcom/samsung/android/glview/GLButton;Lcom/samsung/android/glview/GLButton;)V
 
-    .line 964
+    .line 965
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableRecordingAnimation()V
 
-    .line 965
+    .line 966
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 966
+    .line 967
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 967
+    .line 968
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 968
+    .line 969
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 969
+    .line 970
     return-void
 
-    .line 959
+    .line 960
     :cond_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isSnapShotAvailable()Z
 
@@ -1529,7 +1536,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 960
+    .line 961
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -1542,7 +1549,7 @@
 
     goto :goto_0
 
-    .line 962
+    .line 963
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -1561,7 +1568,7 @@
     .prologue
     const/4 v1, 0x4
 
-    .line 972
+    .line 973
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isEasyCamera()Z
@@ -1570,46 +1577,46 @@
 
     if-nez v0, :cond_1
 
-    .line 973
+    .line 974
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isSnapShotAvailable()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 974
+    .line 975
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 976
+    .line 977
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 978
+    .line 979
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 979
+    .line 980
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 980
+    .line 981
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 981
+    .line 982
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 982
+    .line 983
     return-void
 .end method
 
@@ -1617,7 +1624,7 @@
     .locals 56
 
     .prologue
-    .line 985
+    .line 986
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->SCREEN_WIDTH:I
@@ -1640,7 +1647,7 @@
 
     move/from16 v43, v0
 
-    .line 986
+    .line 987
     .local v43, "controllerButtonBaseX":I
     move-object/from16 v0, p0
 
@@ -1648,7 +1655,7 @@
 
     move/from16 v44, v0
 
-    .line 987
+    .line 988
     .local v44, "controllerButtonBaseY":I
     move-object/from16 v0, p0
 
@@ -1658,7 +1665,7 @@
 
     move/from16 v42, v0
 
-    .line 988
+    .line 989
     .local v42, "controllerButtonBaseWidth":I
     move-object/from16 v0, p0
 
@@ -1668,7 +1675,7 @@
 
     move/from16 v45, v0
 
-    .line 989
+    .line 990
     .local v45, "controllerButtonGap":I
     move-object/from16 v0, p0
 
@@ -1682,7 +1689,7 @@
 
     const/16 v46, 0x0
 
-    .line 991
+    .line 992
     .local v46, "isGUIRotatable":Z
     :goto_0
     move-object/from16 v0, p0
@@ -1703,7 +1710,7 @@
 
     move-result v11
 
-    .line 992
+    .line 993
     .local v11, "recTimeTextWidth":F
     move-object/from16 v0, p0
 
@@ -1713,7 +1720,7 @@
 
     add-float v6, v2, v11
 
-    .line 994
+    .line 995
     .local v6, "recTimeGroupWidth":F
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
@@ -1737,7 +1744,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 995
+    .line 996
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -1746,10 +1753,10 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 997
+    .line 998
     if-eqz v46, :cond_0
 
-    .line 998
+    .line 999
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isDeviceScreenWideRatio()Z
 
     move-result v2
@@ -1770,7 +1777,7 @@
 
     if-nez v2, :cond_f
 
-    .line 999
+    .line 1000
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -1785,7 +1792,7 @@
 
     if-eqz v2, :cond_e
 
-    .line 1000
+    .line 1001
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -1828,7 +1835,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1002
+    .line 1003
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -1877,7 +1884,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1015
+    .line 1016
     :goto_1
     move-object/from16 v0, p0
 
@@ -1919,7 +1926,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1017
+    .line 1018
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -1966,7 +1973,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1021
+    .line 1022
     :cond_0
     new-instance v2, Lcom/samsung/android/glview/GLImage;
 
@@ -1982,7 +1989,7 @@
 
     const/4 v5, 0x0
 
-    const v7, 0x7f0201c8
+    const v7, 0x7f0201c6
 
     invoke-direct {v2, v3, v4, v5, v7}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -1990,7 +1997,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 1022
+    .line 1023
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
@@ -1999,7 +2006,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1024
+    .line 1025
     new-instance v2, Lcom/samsung/android/glview/GLImage;
 
     move-object/from16 v0, p0
@@ -2014,7 +2021,7 @@
 
     const/4 v5, 0x0
 
-    const v7, 0x7f0201c7
+    const v7, 0x7f0201c5
 
     invoke-direct {v2, v3, v4, v5, v7}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -2022,7 +2029,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 1025
+    .line 1026
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
@@ -2031,7 +2038,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1027
+    .line 1028
     new-instance v7, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -2066,7 +2073,7 @@
 
     iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 1028
+    .line 1029
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
 
     move-result v3
@@ -2079,7 +2086,7 @@
 
     iput-object v7, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
-    .line 1029
+    .line 1030
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
@@ -2090,7 +2097,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 1030
+    .line 1031
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
@@ -2109,7 +2116,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1031
+    .line 1032
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
@@ -2118,7 +2125,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setShadowVisibility(Z)V
 
-    .line 1032
+    .line 1033
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
@@ -2127,7 +2134,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1034
+    .line 1035
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2138,7 +2145,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1035
+    .line 1036
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2149,7 +2156,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1036
+    .line 1037
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2160,7 +2167,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1037
+    .line 1038
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2169,7 +2176,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1038
+    .line 1039
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -2180,7 +2187,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1040
+    .line 1041
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->REC_INDICATOR_TEXT_SIZE:F
@@ -2213,21 +2220,21 @@
 
     iget-object v5, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 1041
+    .line 1042
     invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
 
     move-result v5
 
     mul-float/2addr v4, v5
 
-    .line 1040
+    .line 1041
     invoke-static {v3, v4}, Lcom/sec/android/app/camera/util/Util;->getStringWidth(Ljava/lang/String;F)F
 
     move-result v3
 
     add-float v51, v2, v3
 
-    .line 1042
+    .line 1043
     .local v51, "recRemainTimeTextWidth":F
     new-instance v12, Lcom/samsung/android/glview/GLViewGroup;
 
@@ -2261,7 +2268,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1043
+    .line 1044
     new-instance v12, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -2298,7 +2305,7 @@
 
     iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 1044
+    .line 1045
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
 
     move-result v3
@@ -2313,7 +2320,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
-    .line 1045
+    .line 1046
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
@@ -2324,7 +2331,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 1046
+    .line 1047
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
@@ -2343,14 +2350,14 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1047
+    .line 1048
     move-object/from16 v0, p0
 
     iget-boolean v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_MODE_TEXT_SHADOW:Z
 
     if-eqz v2, :cond_10
 
-    .line 1048
+    .line 1049
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
@@ -2369,7 +2376,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setShadowOffset(FF)V
 
-    .line 1052
+    .line 1053
     :goto_2
     move-object/from16 v0, p0
 
@@ -2379,7 +2386,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 1053
+    .line 1054
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2390,10 +2397,10 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1054
+    .line 1055
     if-eqz v46, :cond_1
 
-    .line 1055
+    .line 1056
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2428,7 +2435,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1056
+    .line 1057
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2469,7 +2476,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1058
+    .line 1059
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2510,7 +2517,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1060
+    .line 1061
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2557,7 +2564,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1063
+    .line 1064
     :cond_1
     move-object/from16 v0, p0
 
@@ -2567,7 +2574,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1064
+    .line 1065
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2578,7 +2585,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1065
+    .line 1066
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2589,7 +2596,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1066
+    .line 1067
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2600,7 +2607,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1067
+    .line 1068
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -2611,7 +2618,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1069
+    .line 1070
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
     move-object/from16 v0, p0
@@ -2628,7 +2635,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1070
+    .line 1071
     new-instance v12, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -2683,7 +2690,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
-    .line 1072
+    .line 1073
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
@@ -2694,7 +2701,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 1073
+    .line 1074
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
@@ -2713,7 +2720,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1075
+    .line 1076
     new-instance v12, Lcom/samsung/android/glview/GLProgressBar;
 
     move-object/from16 v0, p0
@@ -2758,9 +2765,9 @@
 
     move/from16 v17, v0
 
-    const v18, 0x7f02018c
+    const v18, 0x7f02018d
 
-    const v19, 0x7f02018d
+    const v19, 0x7f02018e
 
     invoke-direct/range {v12 .. v19}, Lcom/samsung/android/glview/GLProgressBar;-><init>(Lcom/samsung/android/glview/GLContext;FFFFII)V
 
@@ -2768,7 +2775,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
-    .line 1077
+    .line 1078
     new-instance v12, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -2811,7 +2818,7 @@
 
     const v2, 0x7f0d0010
 
-    .line 1078
+    .line 1079
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
 
     move-result v20
@@ -2828,7 +2835,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
-    .line 1079
+    .line 1080
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
@@ -2847,7 +2854,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1081
+    .line 1082
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2856,10 +2863,10 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 1082
+    .line 1083
     if-eqz v46, :cond_2
 
-    .line 1083
+    .line 1084
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2880,7 +2887,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1084
+    .line 1085
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2917,7 +2924,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1085
+    .line 1086
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2950,7 +2957,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1086
+    .line 1087
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -2989,7 +2996,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1088
+    .line 1089
     :cond_2
     move-object/from16 v0, p0
 
@@ -2999,7 +3006,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1090
+    .line 1091
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
@@ -3008,7 +3015,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLProgressBar;->setMax(I)V
 
-    .line 1091
+    .line 1092
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -3019,7 +3026,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1092
+    .line 1093
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -3030,7 +3037,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1093
+    .line 1094
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -3041,7 +3048,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1094
+    .line 1095
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -3052,7 +3059,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1096
+    .line 1097
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_PREVIEW_FIT_TO_FULL_SCREEN:Z
 
     if-eqz v2, :cond_3
@@ -3067,7 +3074,7 @@
 
     if-nez v2, :cond_3
 
-    .line 1097
+    .line 1098
     new-instance v12, Lcom/sec/android/app/camera/widget/gl/IndicatorGroup;
 
     move-object/from16 v0, p0
@@ -3110,7 +3117,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorGroup:Lcom/sec/android/app/camera/widget/gl/IndicatorGroup;
 
-    .line 1098
+    .line 1099
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorGroup:Lcom/sec/android/app/camera/widget/gl/IndicatorGroup;
@@ -3119,7 +3126,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/IndicatorGroup;->setDirection(I)V
 
-    .line 1100
+    .line 1101
     new-instance v2, Lcom/sec/android/app/camera/widget/gl/ViewModeIndicator;
 
     move-object/from16 v0, p0
@@ -3136,7 +3143,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mViewModeIndicator:Lcom/sec/android/app/camera/widget/gl/ViewModeIndicator;
 
-    .line 1101
+    .line 1102
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mViewModeIndicator:Lcom/sec/android/app/camera/widget/gl/ViewModeIndicator;
@@ -3145,7 +3152,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/ViewModeIndicator;->setClipping(Z)V
 
-    .line 1103
+    .line 1104
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorGroup:Lcom/sec/android/app/camera/widget/gl/IndicatorGroup;
@@ -3156,7 +3163,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/IndicatorGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1104
+    .line 1105
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -3167,19 +3174,19 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1107
+    .line 1108
     :cond_3
     const/16 v49, 0x0
 
-    .line 1108
+    .line 1109
     .local v49, "pauseButtonX":I
     const/16 v50, 0x0
 
-    .line 1110
+    .line 1111
     .local v50, "pauseButtonY":I
     if-eqz v46, :cond_4
 
-    .line 1111
+    .line 1112
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_PAUSE_BUTTON_WIDTH:I
@@ -3190,24 +3197,24 @@
 
     add-int v49, v43, v2
 
-    .line 1112
+    .line 1113
     add-int v2, v44, v42
 
     add-int v50, v2, v45
 
-    .line 1113
+    .line 1114
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_SNAPSHOT:Z
 
     if-nez v2, :cond_4
 
-    .line 1114
+    .line 1115
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_SNAPSHOT_MARGIN_Y:I
 
     add-int v50, v50, v2
 
-    .line 1118
+    .line 1119
     :cond_4
     move-object/from16 v0, p0
 
@@ -3225,7 +3232,7 @@
 
     if-ne v2, v3, :cond_11
 
-    .line 1119
+    .line 1120
     new-instance v12, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -3258,7 +3265,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1123
+    .line 1124
     :goto_3
     move-object/from16 v0, p0
 
@@ -3268,7 +3275,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1124
+    .line 1125
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -3277,7 +3284,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1125
+    .line 1126
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -3286,7 +3293,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1126
+    .line 1127
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -3295,7 +3302,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1127
+    .line 1128
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -3304,7 +3311,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1128
+    .line 1129
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -3313,7 +3320,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->updateLayout(Z)V
 
-    .line 1129
+    .line 1130
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -3322,7 +3329,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1130
+    .line 1131
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -3335,7 +3342,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 1131
+    .line 1132
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -3348,7 +3355,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01d8
+    const v4, 0x7f0a01de
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3356,7 +3363,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1132
+    .line 1133
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -3367,7 +3374,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1134
+    .line 1135
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -3384,7 +3391,7 @@
 
     if-ne v2, v3, :cond_12
 
-    .line 1135
+    .line 1136
     new-instance v12, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -3417,7 +3424,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1140
+    .line 1141
     :goto_4
     move-object/from16 v0, p0
 
@@ -3427,7 +3434,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1141
+    .line 1142
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -3436,7 +3443,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1142
+    .line 1143
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -3445,7 +3452,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1143
+    .line 1144
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -3458,7 +3465,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 1144
+    .line 1145
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -3471,7 +3478,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01fc
+    const v4, 0x7f0a0202
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3479,7 +3486,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1145
+    .line 1146
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -3490,23 +3497,23 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1148
+    .line 1149
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_SNAPSHOT:Z
 
     if-eqz v2, :cond_6
 
-    .line 1150
+    .line 1151
     const/16 v52, 0x0
 
-    .line 1151
+    .line 1152
     .local v52, "snapshotButtonX":I
     const/16 v53, 0x0
 
-    .line 1153
+    .line 1154
     .local v53, "snapshotButtonY":I
     if-eqz v46, :cond_5
 
-    .line 1154
+    .line 1155
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->SNAPSHOT_BUTTON_WIDTH:I
@@ -3517,7 +3524,7 @@
 
     add-int v52, v43, v2
 
-    .line 1155
+    .line 1156
     sub-int v2, v44, v45
 
     move-object/from16 v0, p0
@@ -3526,7 +3533,7 @@
 
     sub-int v53, v2, v3
 
-    .line 1158
+    .line 1159
     :cond_5
     move-object/from16 v0, p0
 
@@ -3544,7 +3551,7 @@
 
     if-ne v2, v3, :cond_13
 
-    .line 1159
+    .line 1160
     new-instance v12, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -3573,7 +3580,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1163
+    .line 1164
     :goto_5
     move-object/from16 v0, p0
 
@@ -3583,7 +3590,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1164
+    .line 1165
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -3592,7 +3599,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1165
+    .line 1166
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -3601,7 +3608,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1166
+    .line 1167
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -3610,7 +3617,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1167
+    .line 1168
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -3619,7 +3626,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1168
+    .line 1169
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -3628,7 +3635,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->updateLayout(Z)V
 
-    .line 1169
+    .line 1170
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -3640,27 +3647,6 @@
     int-to-float v3, v3
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
-
-    .line 1170
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    const v4, 0x7f0a012d
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
     .line 1171
     move-object/from16 v0, p0
@@ -3675,7 +3661,28 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a012e
+    const v4, 0x7f0a012f
+
+    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
+
+    .line 1172
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    const v4, 0x7f0a0130
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3683,7 +3690,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setContentDescription(Ljava/lang/String;)V
 
-    .line 1172
+    .line 1173
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -3692,7 +3699,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1173
+    .line 1174
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -3703,7 +3710,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1177
+    .line 1178
     .end local v52    # "snapshotButtonX":I
     .end local v53    # "snapshotButtonY":I
     :cond_6
@@ -3731,33 +3738,33 @@
 
     if-nez v2, :cond_9
 
-    .line 1178
+    .line 1179
     :cond_7
     const/16 v40, 0x0
 
-    .line 1179
+    .line 1180
     .local v40, "afButtonX":I
     const/16 v41, 0x0
 
-    .line 1181
+    .line 1182
     .local v41, "afButtonY":I
     if-eqz v46, :cond_8
 
-    .line 1182
+    .line 1183
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->CAF_BUTTON_POS_X:I
 
     move/from16 v40, v0
 
-    .line 1183
+    .line 1184
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->CAF_BUTTON_POS_Y:I
 
     move/from16 v41, v0
 
-    .line 1185
+    .line 1186
     :cond_8
     new-instance v12, Lcom/samsung/android/glview/GLButton;
 
@@ -3787,7 +3794,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1186
+    .line 1187
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3796,7 +3803,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1187
+    .line 1188
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3805,7 +3812,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1188
+    .line 1189
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3814,7 +3821,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1189
+    .line 1190
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3823,7 +3830,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1190
+    .line 1191
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3832,7 +3839,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1191
+    .line 1192
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3841,7 +3848,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->updateLayout(Z)V
 
-    .line 1192
+    .line 1193
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3854,7 +3861,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 1193
+    .line 1194
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3875,7 +3882,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1194
+    .line 1195
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -3884,7 +3891,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1195
+    .line 1196
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -3895,39 +3902,39 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1198
+    .line 1199
     .end local v40    # "afButtonX":I
     .end local v41    # "afButtonY":I
     :cond_9
     const/16 v54, 0x0
 
-    .line 1199
+    .line 1200
     .local v54, "stopButtonX":I
     const/16 v55, 0x0
 
-    .line 1201
+    .line 1202
     .local v55, "stopButtonY":I
     if-eqz v46, :cond_a
 
-    .line 1202
+    .line 1203
     move/from16 v54, v43
 
-    .line 1203
+    .line 1204
     move/from16 v55, v44
 
-    .line 1204
+    .line 1205
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_SNAPSHOT:Z
 
     if-nez v2, :cond_a
 
-    .line 1205
+    .line 1206
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->RECORDING_SNAPSHOT_MARGIN_Y:I
 
     add-int v55, v55, v2
 
-    .line 1208
+    .line 1209
     :cond_a
     move-object/from16 v0, p0
 
@@ -3945,7 +3952,7 @@
 
     if-ne v2, v3, :cond_14
 
-    .line 1209
+    .line 1210
     new-instance v12, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -3974,7 +3981,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1213
+    .line 1214
     :goto_6
     move-object/from16 v0, p0
 
@@ -3984,7 +3991,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1214
+    .line 1215
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
@@ -3993,7 +4000,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1215
+    .line 1216
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4002,7 +4009,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1216
+    .line 1217
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4011,7 +4018,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1217
+    .line 1218
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4020,7 +4027,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1218
+    .line 1219
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4029,7 +4036,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->updateLayout(Z)V
 
-    .line 1219
+    .line 1220
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4038,7 +4045,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1220
+    .line 1221
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4047,7 +4054,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 1221
+    .line 1222
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4060,7 +4067,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0222
+    const v4, 0x7f0a0228
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4068,7 +4075,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1222
+    .line 1223
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -4079,7 +4086,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1224
+    .line 1225
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMERA_RECORDING:Z
 
     if-eqz v2, :cond_16
@@ -4094,7 +4101,7 @@
 
     if-eqz v2, :cond_16
 
-    .line 1225
+    .line 1226
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->COVER_REC_SIZE_TEXT_SIZE:F
@@ -4103,7 +4110,7 @@
 
     move-result v21
 
-    .line 1226
+    .line 1227
     .local v21, "coverRecTimeTextWidth":F
     move-object/from16 v0, p0
 
@@ -4111,7 +4118,7 @@
 
     add-float v16, v2, v21
 
-    .line 1228
+    .line 1229
     .local v16, "coverRecTimeGroupWidth":F
     new-instance v12, Lcom/samsung/android/glview/GLViewGroup;
 
@@ -4135,7 +4142,7 @@
 
     iput-object v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1229
+    .line 1230
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4166,7 +4173,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1230
+    .line 1231
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4175,7 +4182,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 1231
+    .line 1232
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4184,7 +4191,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 1232
+    .line 1233
     new-instance v2, Lcom/samsung/android/glview/GLImage;
 
     move-object/from16 v0, p0
@@ -4203,7 +4210,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 1233
+    .line 1234
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
@@ -4212,7 +4219,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1234
+    .line 1235
     new-instance v2, Lcom/samsung/android/glview/GLImage;
 
     move-object/from16 v0, p0
@@ -4231,7 +4238,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 1235
+    .line 1236
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
@@ -4240,7 +4247,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1236
+    .line 1237
     new-instance v17, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -4265,7 +4272,7 @@
 
     const/4 v2, 0x0
 
-    .line 1237
+    .line 1238
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingUtil;->convertToHMSFormat(I)Ljava/lang/String;
 
     move-result-object v23
@@ -4292,7 +4299,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
-    .line 1238
+    .line 1239
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
@@ -4303,7 +4310,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 1239
+    .line 1240
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
@@ -4322,7 +4329,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1240
+    .line 1241
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4333,7 +4340,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1241
+    .line 1242
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4344,7 +4351,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1242
+    .line 1243
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4355,7 +4362,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1243
+    .line 1244
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4364,7 +4371,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1244
+    .line 1245
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -4375,7 +4382,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1246
+    .line 1247
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->COVER_REC_SIZE_TEXT_SIZE:F
@@ -4400,7 +4407,7 @@
 
     add-float v31, v2, v3
 
-    .line 1247
+    .line 1248
     .local v31, "coverRemainRecTimeTextWidth":F
     move-object/from16 v0, p0
 
@@ -4408,7 +4415,7 @@
 
     add-float v26, v2, v31
 
-    .line 1248
+    .line 1249
     .local v26, "coverRemainRecTimeGroupWidth":F
     new-instance v22, Lcom/samsung/android/glview/GLViewGroup;
 
@@ -4436,7 +4443,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1249
+    .line 1250
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4467,7 +4474,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1250
+    .line 1251
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4476,7 +4483,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 1251
+    .line 1252
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4485,7 +4492,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 1252
+    .line 1253
     new-instance v27, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -4510,7 +4517,7 @@
 
     const/4 v2, 0x0
 
-    .line 1253
+    .line 1254
     invoke-static {v2}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingUtil;->convertToMSFormat(I)Ljava/lang/String;
 
     move-result-object v33
@@ -4537,7 +4544,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
 
-    .line 1254
+    .line 1255
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
@@ -4548,7 +4555,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 1255
+    .line 1256
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
@@ -4567,7 +4574,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 1256
+    .line 1257
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4578,7 +4585,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1257
+    .line 1258
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4589,7 +4596,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1258
+    .line 1259
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4600,7 +4607,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1259
+    .line 1260
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -4609,7 +4616,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1260
+    .line 1261
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mViewLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -4620,7 +4627,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1262
+    .line 1263
     new-instance v32, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -4659,7 +4666,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1264
+    .line 1265
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4668,7 +4675,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1265
+    .line 1266
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4677,7 +4684,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1266
+    .line 1267
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4686,7 +4693,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1267
+    .line 1268
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4695,7 +4702,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1268
+    .line 1269
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4704,7 +4711,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 1269
+    .line 1270
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4713,7 +4720,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1270
+    .line 1271
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4722,7 +4729,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1271
+    .line 1272
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4735,7 +4742,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 1272
+    .line 1273
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -4748,7 +4755,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01d8
+    const v4, 0x7f0a01de
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4756,7 +4763,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1273
+    .line 1274
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -4767,7 +4774,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1275
+    .line 1276
     new-instance v32, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -4804,7 +4811,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1276
+    .line 1277
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4813,7 +4820,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1277
+    .line 1278
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4822,7 +4829,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1278
+    .line 1279
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4831,7 +4838,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1279
+    .line 1280
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4840,7 +4847,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1280
+    .line 1281
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4849,7 +4856,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 1281
+    .line 1282
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4858,7 +4865,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1282
+    .line 1283
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4867,7 +4874,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1283
+    .line 1284
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4880,7 +4887,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0222
+    const v4, 0x7f0a0228
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4888,7 +4895,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1284
+    .line 1285
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
@@ -4897,7 +4904,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 1285
+    .line 1286
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -4908,7 +4915,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1287
+    .line 1288
     new-instance v32, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -4947,7 +4954,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1288
+    .line 1289
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -4956,7 +4963,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1289
+    .line 1290
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -4965,7 +4972,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1290
+    .line 1291
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -4974,7 +4981,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1291
+    .line 1292
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -4983,7 +4990,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1292
+    .line 1293
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -4992,7 +4999,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 1293
+    .line 1294
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -5001,7 +5008,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1294
+    .line 1295
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -5014,7 +5021,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 1295
+    .line 1296
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -5023,7 +5030,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1296
+    .line 1297
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -5036,7 +5043,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01fc
+    const v4, 0x7f0a0202
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5044,7 +5051,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1297
+    .line 1298
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -5055,14 +5062,14 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1299
+    .line 1300
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
     move-result v2
 
     if-eqz v2, :cond_15
 
-    .line 1300
+    .line 1301
     new-instance v32, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -5101,7 +5108,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1301
+    .line 1302
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
@@ -5110,7 +5117,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1302
+    .line 1303
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
@@ -5119,7 +5126,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 1308
+    .line 1309
     :goto_7
     move-object/from16 v0, p0
 
@@ -5133,7 +5140,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01c8
+    const v4, 0x7f0a01ce
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5141,7 +5148,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1309
+    .line 1310
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
@@ -5150,7 +5157,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1310
+    .line 1311
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
@@ -5159,7 +5166,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1311
+    .line 1312
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
@@ -5168,7 +5175,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1312
+    .line 1313
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -5179,12 +5186,12 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1314
+    .line 1315
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_SNAPSHOT:Z
 
     if-eqz v2, :cond_b
 
-    .line 1315
+    .line 1316
     new-instance v32, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -5221,7 +5228,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1316
+    .line 1317
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -5230,7 +5237,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1317
+    .line 1318
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -5239,7 +5246,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1318
+    .line 1319
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -5248,7 +5255,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1319
+    .line 1320
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -5257,7 +5264,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1320
+    .line 1321
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -5266,7 +5273,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 1321
+    .line 1322
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -5274,27 +5281,6 @@
     const/4 v3, 0x0
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
-
-    .line 1322
-    move-object/from16 v0, p0
-
-    iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
-
-    move-object/from16 v0, p0
-
-    iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
-
-    move-result-object v3
-
-    const v4, 0x7f0a012d
-
-    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
     .line 1323
     move-object/from16 v0, p0
@@ -5309,7 +5295,28 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a012e
+    const v4, 0x7f0a012f
+
+    invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
+
+    .line 1324
+    move-object/from16 v0, p0
+
+    iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
+
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v3
+
+    const v4, 0x7f0a0130
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5317,7 +5324,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setContentDescription(Ljava/lang/String;)V
 
-    .line 1324
+    .line 1325
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -5326,7 +5333,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1325
+    .line 1326
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -5339,7 +5346,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 1326
+    .line 1327
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -5350,13 +5357,13 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1329
+    .line 1330
     :cond_b
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_CONTINUOUS_AF:Z
 
     if-eqz v2, :cond_c
 
-    .line 1330
+    .line 1331
     new-instance v32, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -5393,7 +5400,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1331
+    .line 1332
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5402,7 +5409,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 1332
+    .line 1333
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5411,7 +5418,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 1333
+    .line 1334
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5420,7 +5427,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 1334
+    .line 1335
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5429,7 +5436,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1335
+    .line 1336
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5438,7 +5445,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 1336
+    .line 1337
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5447,7 +5454,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 1337
+    .line 1338
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5460,7 +5467,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 1338
+    .line 1339
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5481,7 +5488,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 1339
+    .line 1340
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -5490,7 +5497,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1340
+    .line 1341
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mControllerLayout:Lcom/samsung/android/glview/GLViewGroup;
@@ -5501,7 +5508,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1360
+    .line 1361
     .end local v16    # "coverRecTimeGroupWidth":F
     .end local v21    # "coverRecTimeTextWidth":F
     .end local v26    # "coverRemainRecTimeGroupWidth":F
@@ -5510,7 +5517,7 @@
     :goto_8
     return-void
 
-    .line 989
+    .line 990
     .end local v6    # "recTimeGroupWidth":F
     .end local v11    # "recTimeTextWidth":F
     .end local v46    # "isGUIRotatable":Z
@@ -5524,7 +5531,7 @@
 
     goto/16 :goto_0
 
-    .line 1005
+    .line 1006
     .restart local v6    # "recTimeGroupWidth":F
     .restart local v11    # "recTimeTextWidth":F
     .restart local v46    # "isGUIRotatable":Z
@@ -5571,7 +5578,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1007
+    .line 1008
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5622,7 +5629,7 @@
 
     goto/16 :goto_1
 
-    .line 1011
+    .line 1012
     :cond_f
     move-object/from16 v0, p0
 
@@ -5658,7 +5665,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1012
+    .line 1013
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5701,7 +5708,7 @@
 
     goto/16 :goto_1
 
-    .line 1050
+    .line 1051
     .restart local v51    # "recRemainTimeTextWidth":F
     :cond_10
     move-object/from16 v0, p0
@@ -5714,7 +5721,7 @@
 
     goto/16 :goto_2
 
-    .line 1121
+    .line 1122
     .restart local v49    # "pauseButtonX":I
     .restart local v50    # "pauseButtonY":I
     :cond_11
@@ -5752,7 +5759,7 @@
 
     goto/16 :goto_3
 
-    .line 1137
+    .line 1138
     :cond_12
     new-instance v12, Lcom/samsung/android/glview/GLButton;
 
@@ -5788,7 +5795,7 @@
 
     goto/16 :goto_4
 
-    .line 1161
+    .line 1162
     .restart local v52    # "snapshotButtonX":I
     .restart local v53    # "snapshotButtonY":I
     :cond_13
@@ -5822,7 +5829,7 @@
 
     goto/16 :goto_5
 
-    .line 1211
+    .line 1212
     .end local v52    # "snapshotButtonX":I
     .end local v53    # "snapshotButtonY":I
     .restart local v54    # "stopButtonX":I
@@ -5858,7 +5865,7 @@
 
     goto/16 :goto_6
 
-    .line 1304
+    .line 1305
     .restart local v16    # "coverRecTimeGroupWidth":F
     .restart local v21    # "coverRecTimeTextWidth":F
     .restart local v26    # "coverRemainRecTimeGroupWidth":F
@@ -5902,7 +5909,7 @@
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1305
+    .line 1306
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
@@ -5911,7 +5918,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setCenterPivot(Z)V
 
-    .line 1306
+    .line 1307
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
@@ -5922,7 +5929,7 @@
 
     goto/16 :goto_7
 
-    .line 1342
+    .line 1343
     .end local v16    # "coverRecTimeGroupWidth":F
     .end local v21    # "coverRecTimeTextWidth":F
     .end local v26    # "coverRemainRecTimeGroupWidth":F
@@ -5938,7 +5945,7 @@
 
     if-eqz v2, :cond_c
 
-    .line 1343
+    .line 1344
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5979,7 +5986,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1345
+    .line 1346
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5988,7 +5995,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 1347
+    .line 1348
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -6029,7 +6036,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1349
+    .line 1350
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -6038,14 +6045,14 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setOrientation(I)V
 
-    .line 1351
+    .line 1352
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->SCREEN_WIDTH:I
 
     int-to-float v2, v2
 
-    const v3, 0x7f0b0105
+    const v3, 0x7f0b0106
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -6059,7 +6066,7 @@
 
     sub-float v48, v2, v3
 
-    .line 1352
+    .line 1353
     .local v48, "keyboardCoverStopButtonX":F
     move-object/from16 v0, p0
 
@@ -6079,7 +6086,7 @@
 
     add-float v47, v48, v2
 
-    .line 1353
+    .line 1354
     .local v47, "keyboardCoverPauseButtonX":F
     move-object/from16 v0, p0
 
@@ -6095,7 +6102,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLButton;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1354
+    .line 1355
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -6110,7 +6117,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLButton;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1355
+    .line 1356
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -6125,12 +6132,12 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLButton;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1356
+    .line 1357
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_SNAPSHOT:Z
 
     if-eqz v2, :cond_c
 
-    .line 1357
+    .line 1358
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -6162,14 +6169,14 @@
 
     const/4 v0, 0x0
 
-    .line 1403
+    .line 1404
     new-instance v2, Landroid/view/animation/AnimationSet;
 
     invoke-direct {v2, v11}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
-    .line 1404
+    .line 1405
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     const/16 v3, 0x12c
@@ -6186,7 +6193,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1405
+    .line 1406
     iget-object v8, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -6203,31 +6210,31 @@
 
     move v3, v1
 
-    .line 1406
+    .line 1407
     invoke-static/range {v0 .. v7}, Lcom/sec/android/app/camera/util/AnimationUtil;->getScaleAnimation(FFFFLcom/samsung/android/glview/GLView;Landroid/view/animation/Interpolator;II)Landroid/view/animation/Animation;
 
     move-result-object v2
 
     invoke-virtual {v8, v2}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1407
+    .line 1408
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     invoke-virtual {v2, v13}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1409
+    .line 1410
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_SNAPSHOT:Z
 
     if-eqz v2, :cond_0
 
-    .line 1410
+    .line 1411
     new-instance v2, Landroid/view/animation/AnimationSet;
 
     invoke-direct {v2, v11}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
-    .line 1411
+    .line 1412
     iget-object v12, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->translationDeltaY:F
@@ -6260,7 +6267,7 @@
 
     invoke-virtual {v12, v2}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1413
+    .line 1414
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     const/16 v3, 0x1d6
@@ -6277,7 +6284,7 @@
 
     invoke-virtual {v2, v3}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1414
+    .line 1415
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mShutterSnapshotRatio:F
@@ -6300,12 +6307,12 @@
 
     invoke-virtual {v2, v3}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1416
+    .line 1417
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     invoke-virtual {v2, v13}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1419
+    .line 1420
     :cond_0
     new-instance v2, Landroid/view/animation/AnimationSet;
 
@@ -6313,7 +6320,7 @@
 
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
-    .line 1420
+    .line 1421
     iget-object v12, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->translationDeltaY:F
@@ -6346,7 +6353,7 @@
 
     invoke-virtual {v12, v0}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1422
+    .line 1423
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     new-instance v2, Lcom/sec/android/app/camera/util/interpolator/SineEaseOut;
@@ -6359,7 +6366,7 @@
 
     invoke-virtual {v0, v2}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1423
+    .line 1424
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     iget v4, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapshotShutterRatio:F
@@ -6382,12 +6389,12 @@
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1425
+    .line 1426
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     invoke-virtual {v0, v13}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1426
+    .line 1427
     return-void
 .end method
 
@@ -6396,7 +6403,7 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 1363
+    .line 1364
     const/4 v10, 0x0
 
     .local v10, "fromSnapShotX":F
@@ -6408,7 +6415,7 @@
     .local v11, "fromSnapShotY":F
     const/4 v15, 0x0
 
-    .line 1364
+    .line 1365
     .local v15, "toSnapshotY":F
     const/4 v12, 0x0
 
@@ -6421,7 +6428,7 @@
     .local v13, "fromStopY":F
     const/16 v17, 0x0
 
-    .line 1366
+    .line 1367
     .local v17, "toStopY":F
     if-eqz p1, :cond_0
 
@@ -6431,7 +6438,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 1367
+    .line 1368
     :cond_0
     move-object/from16 v0, p0
 
@@ -6445,7 +6452,7 @@
 
     div-float v11, v1, v2
 
-    .line 1368
+    .line 1369
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->translationDeltaY:F
@@ -6458,7 +6465,7 @@
 
     div-float v13, v1, v2
 
-    .line 1374
+    .line 1375
     :goto_0
     new-instance v1, Landroid/view/animation/AnimationSet;
 
@@ -6470,7 +6477,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
-    .line 1375
+    .line 1376
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6489,7 +6496,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1376
+    .line 1377
     move-object/from16 v0, p0
 
     iget-object v9, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6514,14 +6521,14 @@
 
     const/16 v8, 0x82
 
-    .line 1377
+    .line 1378
     invoke-static/range {v1 .. v8}, Lcom/sec/android/app/camera/util/AnimationUtil;->getScaleAnimation(FFFFLcom/samsung/android/glview/GLView;Landroid/view/animation/Interpolator;II)Landroid/view/animation/Animation;
 
     move-result-object v1
 
     invoke-virtual {v9, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1378
+    .line 1379
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6530,12 +6537,12 @@
 
     invoke-virtual {v1, v2}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1380
+    .line 1381
     sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_RECORDING_SNAPSHOT:Z
 
     if-eqz v1, :cond_1
 
-    .line 1381
+    .line 1382
     new-instance v1, Landroid/view/animation/AnimationSet;
 
     const/4 v2, 0x0
@@ -6546,7 +6553,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
-    .line 1382
+    .line 1383
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6587,7 +6594,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1384
+    .line 1385
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6606,7 +6613,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1385
+    .line 1386
     move-object/from16 v0, p0
 
     iget-object v9, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6641,7 +6648,7 @@
 
     invoke-virtual {v9, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1387
+    .line 1388
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6650,7 +6657,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1390
+    .line 1391
     :cond_1
     new-instance v1, Landroid/view/animation/AnimationSet;
 
@@ -6662,7 +6669,7 @@
 
     iput-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
-    .line 1391
+    .line 1392
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6703,7 +6710,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1393
+    .line 1394
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6720,7 +6727,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1394
+    .line 1395
     move-object/from16 v0, p0
 
     iget-object v9, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6755,7 +6762,7 @@
 
     invoke-virtual {v9, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1396
+    .line 1397
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
@@ -6764,10 +6771,10 @@
 
     invoke-virtual {v1, v2}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 1399
+    .line 1400
     return-void
 
-    .line 1370
+    .line 1371
     :cond_2
     move-object/from16 v0, p0
 
@@ -6779,7 +6786,7 @@
 
     div-float v10, v1, v2
 
-    .line 1371
+    .line 1372
     move-object/from16 v0, p0
 
     iget v1, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->translationDeltaY:F
@@ -6797,7 +6804,7 @@
     .locals 2
 
     .prologue
-    .line 1429
+    .line 1430
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     move-result-object v0
@@ -6806,29 +6813,29 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1430
+    .line 1431
     const-string v0, "Recording"
 
     const-string v1, "Return pauseRecording - wrong recording state"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1436
+    .line 1437
     :goto_0
     return-void
 
-    .line 1433
+    .line 1434
     :cond_0
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->RECORD_PAUSING:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/Recording;->setRecordingState(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;)V
 
-    .line 1434
+    .line 1435
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;->PAUSE_RECORDING:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/Recording;->updateRecordingLayout(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;)V
 
-    .line 1435
+    .line 1436
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->schedulePauseVideoRecording()V
@@ -6843,7 +6850,7 @@
     .param p3, "height"    # I
 
     .prologue
-    .line 1440
+    .line 1441
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -6856,8 +6863,8 @@
 
     if-eqz v24, :cond_3
 
-    .line 1441
-    const v24, 0x7f0b0265
+    .line 1442
+    const v24, 0x7f0b0266
 
     invoke-static/range {v24 .. v24}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -6875,7 +6882,7 @@
 
     iput v0, v1, Lcom/sec/android/app/camera/shootingmode/Recording;->BASEMENU_GROUP_HEIGHT:I
 
-    .line 1446
+    .line 1447
     :goto_0
     move-object/from16 v0, p0
 
@@ -6921,7 +6928,7 @@
 
     float-to-int v4, v0
 
-    .line 1461
+    .line 1462
     .local v4, "baseMenuWeight":I
     move-object/from16 v0, p0
 
@@ -6945,7 +6952,7 @@
 
     move-result v17
 
-    .line 1462
+    .line 1463
     .local v17, "recTimeTextWidth":F
     move-object/from16 v0, p0
 
@@ -6987,21 +6994,21 @@
 
     move-object/from16 v27, v0
 
-    .line 1463
+    .line 1464
     invoke-interface/range {v27 .. v27}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
 
     move-result v27
 
     mul-float v26, v26, v27
 
-    .line 1462
+    .line 1463
     invoke-static/range {v25 .. v26}, Lcom/sec/android/app/camera/util/Util;->getStringWidth(Ljava/lang/String;F)F
 
     move-result v25
 
     add-float v16, v24, v25
 
-    .line 1465
+    .line 1466
     .local v16, "recRemainTimeTextWidth":F
     move-object/from16 v0, p0
 
@@ -7041,26 +7048,26 @@
 
     add-int v13, v24, v25
 
-    .line 1466
+    .line 1467
     .local v13, "progressGroupSize":I
     move-object/from16 v0, p0
 
     iget v12, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESSBAR_WIDTH:I
 
-    .line 1470
+    .line 1471
     .local v12, "progressBarSize":I
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
     move-result v8
 
-    .line 1471
+    .line 1472
     .local v8, "currentWidth":I
     if-le v13, v8, :cond_4
 
-    .line 1472
+    .line 1473
     move v13, v8
 
-    .line 1473
+    .line 1474
     move-object/from16 v0, p0
 
     iget v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_SIZE_TEXT_WIDTH:I
@@ -7079,10 +7086,10 @@
 
     sub-int v12, v13, v24
 
-    .line 1474
+    .line 1475
     const/4 v14, 0x0
 
-    .line 1475
+    .line 1476
     .local v14, "progressX":I
     move-object/from16 v0, p0
 
@@ -7092,7 +7099,7 @@
 
     sub-int v9, v13, v24
 
-    .line 1481
+    .line 1482
     .local v9, "maxSizeX":I
     :goto_1
     move-object/from16 v0, p0
@@ -7117,8 +7124,8 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 1482
-    const v24, 0x7f0b0263
+    .line 1483
+    const v24, 0x7f0b0264
 
     invoke-static/range {v24 .. v24}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -7128,7 +7135,7 @@
 
     float-to-int v7, v0
 
-    .line 1487
+    .line 1488
     .local v7, "controllerIconGap":I
     :goto_2
     if-eqz p1, :cond_0
@@ -7141,7 +7148,7 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 1488
+    .line 1489
     :cond_0
     move/from16 v0, p2
 
@@ -7195,7 +7202,7 @@
 
     float-to-int v5, v0
 
-    .line 1489
+    .line 1490
     .local v5, "controllerButtonBaseX":I
     move/from16 v0, p3
 
@@ -7219,7 +7226,7 @@
 
     float-to-int v6, v0
 
-    .line 1490
+    .line 1491
     .local v6, "controllerButtonBaseY":I
     int-to-float v0, v5
 
@@ -7259,7 +7266,7 @@
 
     float-to-int v10, v0
 
-    .line 1491
+    .line 1492
     .local v10, "pauseButtonX":I
     int-to-float v0, v6
 
@@ -7283,7 +7290,7 @@
 
     float-to-int v11, v0
 
-    .line 1492
+    .line 1493
     .local v11, "pauseButtonY":I
     int-to-float v0, v5
 
@@ -7325,7 +7332,7 @@
 
     move/from16 v22, v0
 
-    .line 1493
+    .line 1494
     .local v22, "snapShotButtonX":I
     sub-int v24, v6, v7
 
@@ -7337,19 +7344,19 @@
 
     sub-int v23, v24, v25
 
-    .line 1494
+    .line 1495
     .local v23, "snapShotButtonY":I
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->CAF_BUTTON_POS_X:I
 
-    .line 1495
+    .line 1496
     .local v2, "afButtonX":I
     move-object/from16 v0, p0
 
     iget v3, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->CAF_BUTTON_POS_Y:I
 
-    .line 1496
+    .line 1497
     .local v3, "afButtonY":I
     move/from16 v0, p2
 
@@ -7383,7 +7390,7 @@
 
     move/from16 v18, v0
 
-    .line 1497
+    .line 1498
     .local v18, "recTimeX":I
     move/from16 v0, p3
 
@@ -7419,7 +7426,7 @@
 
     move/from16 v19, v0
 
-    .line 1498
+    .line 1499
     .local v19, "recTimeY":I
     move/from16 v0, p2
 
@@ -7453,17 +7460,17 @@
 
     move/from16 v20, v0
 
-    .line 1499
+    .line 1500
     .local v20, "remainRecTimeX":I
     move/from16 v21, v19
 
-    .line 1500
+    .line 1501
     .local v21, "remainRecTimeY":I
     move-object/from16 v0, p0
 
     iget v15, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->PROGRESS_GROUP_POS_Y:I
 
-    .line 1517
+    .line 1518
     .local v15, "progressY":I
     :goto_3
     move-object/from16 v0, p0
@@ -7482,7 +7489,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLButton;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1518
+    .line 1519
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
@@ -7499,7 +7506,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLButton;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1519
+    .line 1520
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
@@ -7516,7 +7523,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLButton;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1520
+    .line 1521
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
@@ -7537,7 +7544,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLButton;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1521
+    .line 1522
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -7558,7 +7565,7 @@
 
     if-nez v24, :cond_1
 
-    .line 1522
+    .line 1523
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
@@ -7575,11 +7582,11 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLButton;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1525
+    .line 1526
     :cond_1
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->checkAvailableRecordingStorage()V
 
-    .line 1526
+    .line 1527
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     move-result-object v24
@@ -7600,7 +7607,7 @@
 
     if-eqz v24, :cond_8
 
-    .line 1527
+    .line 1528
     :cond_2
     move-object/from16 v0, p0
 
@@ -7622,7 +7629,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLViewGroup;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1528
+    .line 1529
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -7643,7 +7650,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLViewGroup;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1533
+    .line 1534
     :goto_4
     move-object/from16 v0, p0
 
@@ -7669,7 +7676,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLViewGroup;->setSize(FF)V
 
-    .line 1534
+    .line 1535
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
@@ -7694,7 +7701,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLProgressBar;->setSize(FF)V
 
-    .line 1535
+    .line 1536
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
@@ -7709,7 +7716,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLText;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1536
+    .line 1537
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -7726,13 +7733,13 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLViewGroup;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1538
+    .line 1539
     invoke-direct/range {p0 .. p1}, Lcom/sec/android/app/camera/shootingmode/Recording;->makeRecordingAnimation(I)V
 
-    .line 1539
+    .line 1540
     return-void
 
-    .line 1443
+    .line 1444
     .end local v2    # "afButtonX":I
     .end local v3    # "afButtonY":I
     .end local v4    # "baseMenuWeight":I
@@ -7756,7 +7763,7 @@
     .end local v22    # "snapShotButtonX":I
     .end local v23    # "snapShotButtonY":I
     :cond_3
-    const v24, 0x7f0b0264
+    const v24, 0x7f0b0265
 
     invoke-static/range {v24 .. v24}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -7776,7 +7783,7 @@
 
     goto/16 :goto_0
 
-    .line 1477
+    .line 1478
     .restart local v4    # "baseMenuWeight":I
     .restart local v8    # "currentWidth":I
     .restart local v12    # "progressBarSize":I
@@ -7800,14 +7807,14 @@
 
     float-to-int v14, v0
 
-    .line 1478
+    .line 1479
     .restart local v14    # "progressX":I
     const/4 v9, 0x0
 
     .restart local v9    # "maxSizeX":I
     goto/16 :goto_1
 
-    .line 1484
+    .line 1485
     :cond_5
     const v24, 0x7f0b005b
 
@@ -7822,7 +7829,7 @@
     .restart local v7    # "controllerIconGap":I
     goto/16 :goto_2
 
-    .line 1502
+    .line 1503
     :cond_6
     move/from16 v0, p2
 
@@ -7846,7 +7853,7 @@
 
     float-to-int v5, v0
 
-    .line 1503
+    .line 1504
     .restart local v5    # "controllerButtonBaseX":I
     sub-int v24, p3, v4
 
@@ -7884,7 +7891,7 @@
 
     float-to-int v6, v0
 
-    .line 1504
+    .line 1505
     .restart local v6    # "controllerButtonBaseY":I
     sub-int v24, v5, v7
 
@@ -7896,7 +7903,7 @@
 
     sub-int v10, v24, v25
 
-    .line 1505
+    .line 1506
     .restart local v10    # "pauseButtonX":I
     int-to-float v0, v6
 
@@ -7932,7 +7939,7 @@
 
     float-to-int v11, v0
 
-    .line 1506
+    .line 1507
     .restart local v11    # "pauseButtonY":I
     int-to-float v0, v5
 
@@ -7958,7 +7965,7 @@
 
     move/from16 v22, v0
 
-    .line 1507
+    .line 1508
     .restart local v22    # "snapShotButtonX":I
     int-to-float v0, v6
 
@@ -7996,19 +8003,19 @@
 
     move/from16 v23, v0
 
-    .line 1508
+    .line 1509
     .restart local v23    # "snapShotButtonY":I
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->CAF_BUTTON_POS_Y_BOTTOM:I
 
-    .line 1509
+    .line 1510
     .restart local v2    # "afButtonX":I
     move-object/from16 v0, p0
 
     iget v3, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->CAF_BUTTON_POS_X:I
 
-    .line 1510
+    .line 1511
     .restart local v3    # "afButtonY":I
     move/from16 v0, p2
 
@@ -8036,7 +8043,7 @@
 
     sub-int v18, v24, v25
 
-    .line 1511
+    .line 1512
     .restart local v18    # "recTimeX":I
     move-object/from16 v0, p0
 
@@ -8054,7 +8061,7 @@
 
     sub-int v19, v24, v25
 
-    .line 1512
+    .line 1513
     .restart local v19    # "recTimeY":I
     move/from16 v0, p2
 
@@ -8082,11 +8089,11 @@
 
     sub-int v20, v24, v25
 
-    .line 1513
+    .line 1514
     .restart local v20    # "remainRecTimeX":I
     move/from16 v21, v19
 
-    .line 1514
+    .line 1515
     .restart local v21    # "remainRecTimeY":I
     move-object/from16 v0, p0
 
@@ -8095,7 +8102,7 @@
     .restart local v15    # "progressY":I
     goto/16 :goto_3
 
-    .line 1526
+    .line 1527
     :cond_7
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isRecordingTimeLimited()Z
 
@@ -8103,7 +8110,7 @@
 
     if-nez v24, :cond_2
 
-    .line 1530
+    .line 1531
     :cond_8
     move-object/from16 v0, p0
 
@@ -8125,7 +8132,7 @@
 
     invoke-virtual/range {v24 .. v26}, Lcom/samsung/android/glview/GLViewGroup;->moveBaseLayoutAbsolute(FF)V
 
-    .line 1531
+    .line 1532
     move-object/from16 v0, p0
 
     iget-object v0, v0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -8153,33 +8160,33 @@
     .locals 2
 
     .prologue
-    .line 1542
+    .line 1543
     const-string v0, "Recording"
 
     const-string v1, "resetProgressBar"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1544
+    .line 1545
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgress:I
 
     if-lez v0, :cond_0
 
-    .line 1545
+    .line 1546
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLProgressBar;->setProgress(I)V
 
-    .line 1546
+    .line 1547
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
     const-string v1, "0K"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 1548
+    .line 1549
     :cond_0
     return-void
 .end method
@@ -8190,269 +8197,269 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1551
+    .line 1552
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_0
 
-    .line 1552
-    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
-
     .line 1553
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
     .line 1554
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
     .line 1555
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    invoke-virtual {v0}, Lcom/samsung/android/glview/GLViewGroup;->clear()V
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
+
+    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
     .line 1556
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLViewGroup;->clear()V
+
+    .line 1557
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1559
+    .line 1560
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_1
 
-    .line 1560
+    .line 1561
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1561
+    .line 1562
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1562
+    .line 1563
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1563
+    .line 1564
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLViewGroup;->clear()V
 
-    .line 1564
+    .line 1565
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1567
+    .line 1568
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v0, :cond_2
 
-    .line 1568
+    .line 1569
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->clear()V
 
-    .line 1569
+    .line 1570
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 1572
+    .line 1573
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v0, :cond_3
 
-    .line 1573
+    .line 1574
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->clear()V
 
-    .line 1574
+    .line 1575
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
-    .line 1577
+    .line 1578
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_4
 
-    .line 1578
+    .line 1579
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->clear()V
 
-    .line 1579
+    .line 1580
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
-    .line 1582
+    .line 1583
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_5
 
-    .line 1583
+    .line 1584
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->clear()V
 
-    .line 1584
+    .line 1585
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
-    .line 1587
+    .line 1588
     :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v0, :cond_6
 
-    .line 1588
+    .line 1589
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1589
+    .line 1590
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1590
+    .line 1591
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1591
+    .line 1592
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLViewGroup;->clear()V
 
-    .line 1592
+    .line 1593
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 1595
+    .line 1596
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_7
 
-    .line 1596
+    .line 1597
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->clear()V
 
-    .line 1597
+    .line 1598
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
-    .line 1600
+    .line 1601
     :cond_7
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     if-eqz v0, :cond_8
 
-    .line 1601
+    .line 1602
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLProgressBar;->clear()V
 
-    .line 1602
+    .line 1603
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
-    .line 1605
+    .line 1606
     :cond_8
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_9
 
-    .line 1606
+    .line 1607
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->clear()V
 
-    .line 1607
+    .line 1608
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
-    .line 1610
+    .line 1611
     :cond_9
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_a
 
-    .line 1611
+    .line 1612
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->clear()V
 
-    .line 1612
+    .line 1613
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1615
+    .line 1616
     :cond_a
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_b
 
-    .line 1616
+    .line 1617
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->clear()V
 
-    .line 1617
+    .line 1618
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1620
+    .line 1621
     :cond_b
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_c
 
-    .line 1621
+    .line 1622
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->clear()V
 
-    .line 1622
+    .line 1623
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1625
+    .line 1626
     :cond_c
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_d
 
-    .line 1626
+    .line 1627
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->clear()V
 
-    .line 1627
+    .line 1628
     iput-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 1630
+    .line 1631
     :cond_d
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->init()V
 
-    .line 1631
+    .line 1632
     return-void
 .end method
 
@@ -8460,7 +8467,7 @@
     .locals 2
 
     .prologue
-    .line 1634
+    .line 1635
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     move-result-object v0
@@ -8469,29 +8476,29 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 1635
+    .line 1636
     const-string v0, "Recording"
 
     const-string v1, "Return resumeRecording - wrong recording state"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1641
+    .line 1642
     :goto_0
     return-void
 
-    .line 1638
+    .line 1639
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestAudioFocus()V
 
-    .line 1639
+    .line 1640
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;->RESUME_RECORDING:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/Recording;->updateRecordingLayout(Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;)V
 
-    .line 1640
+    .line 1641
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleResumeVideoRecording()V
@@ -8504,7 +8511,7 @@
     .param p1, "dimmed"    # Z
 
     .prologue
-    .line 1645
+    .line 1646
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isEasyCamera()Z
@@ -8513,28 +8520,28 @@
 
     if-nez v0, :cond_0
 
-    .line 1646
+    .line 1647
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 1647
+    .line 1648
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 1650
+    .line 1651
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_1
 
-    .line 1651
+    .line 1652
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 1654
+    .line 1655
     :cond_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isSnapShotAvailable()Z
 
@@ -8546,23 +8553,23 @@
 
     if-eqz v0, :cond_2
 
-    .line 1655
+    .line 1656
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 1658
+    .line 1659
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_3
 
-    .line 1659
+    .line 1660
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLButton;->setDim(Z)V
 
-    .line 1661
+    .line 1662
     :cond_3
     return-void
 .end method
@@ -8575,14 +8582,14 @@
 
     const/4 v2, 0x0
 
-    .line 1664
+    .line 1665
     const-string v0, "Recording"
 
     const-string v1, "showCAFButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1666
+    .line 1667
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isCoverCamera()Z
@@ -8591,7 +8598,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1667
+    .line 1668
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_0
@@ -8604,17 +8611,17 @@
 
     if-ne v0, v3, :cond_0
 
-    .line 1668
+    .line 1669
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverCAFButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1675
+    .line 1676
     :cond_0
     :goto_0
     return-void
 
-    .line 1671
+    .line 1672
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
 
@@ -8636,7 +8643,7 @@
 
     if-nez v0, :cond_0
 
-    .line 1672
+    .line 1673
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCAFButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
@@ -8650,12 +8657,12 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 1678
+    .line 1679
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mTextAnimation:Landroid/view/animation/AlphaAnimation;
 
     if-nez v0, :cond_0
 
-    .line 1679
+    .line 1680
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     const/4 v1, 0x0
@@ -8666,14 +8673,14 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mTextAnimation:Landroid/view/animation/AlphaAnimation;
 
-    .line 1680
+    .line 1681
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mTextAnimation:Landroid/view/animation/AlphaAnimation;
 
     const-wide/16 v2, 0xfa
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 1683
+    .line 1684
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -8683,31 +8690,31 @@
 
     if-eqz v0, :cond_3
 
-    .line 1684
+    .line 1685
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isRecordingTimeLimited()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 1685
+    .line 1686
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mTextAnimation:Landroid/view/animation/AlphaAnimation;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1686
+    .line 1687
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->startAnimation()V
 
-    .line 1687
+    .line 1688
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1704
+    .line 1705
     :goto_0
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_PREVIEW_FIT_TO_FULL_SCREEN:Z
 
@@ -8721,7 +8728,7 @@
 
     if-nez v0, :cond_1
 
-    .line 1705
+    .line 1706
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -8734,11 +8741,11 @@
 
     invoke-virtual {p0, v0}, Lcom/sec/android/app/camera/shootingmode/Recording;->setViewModeIndicator(I)V
 
-    .line 1707
+    .line 1708
     :cond_1
     return-void
 
-    .line 1689
+    .line 1690
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
@@ -8746,19 +8753,19 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1690
+    .line 1691
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->startAnimation()V
 
-    .line 1691
+    .line 1692
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 1694
+    .line 1695
     :cond_3
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isRecordingTimeLimited()Z
 
@@ -8766,26 +8773,26 @@
 
     if-eqz v0, :cond_4
 
-    .line 1695
+    .line 1696
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mTextAnimation:Landroid/view/animation/AlphaAnimation;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1696
+    .line 1697
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->startAnimation()V
 
-    .line 1697
+    .line 1698
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 1699
+    .line 1700
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
@@ -8793,12 +8800,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1700
+    .line 1701
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLText;->startAnimation()V
 
-    .line 1701
+    .line 1702
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
@@ -8812,14 +8819,14 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 1710
+    .line 1711
     const-string v0, "Recording"
 
     const-string v1, "startRecIconIndicatorBlinking"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1712
+    .line 1713
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
     move-result-object v0
@@ -8828,22 +8835,22 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1713
+    .line 1714
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/shootingmode/Recording;->blinkRecIconIndicator(Z)V
 
-    .line 1715
+    .line 1716
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/Recording$RecordingHandler;
 
     if-eqz v0, :cond_0
 
-    .line 1716
+    .line 1717
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/Recording$RecordingHandler;
 
     const-wide/16 v2, 0x1f4
 
     invoke-virtual {v0, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/Recording$RecordingHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1719
+    .line 1720
     :cond_0
     return-void
 .end method
@@ -8856,14 +8863,14 @@
 
     const/4 v3, 0x0
 
-    .line 1722
+    .line 1723
     const-string v0, "Recording"
 
     const-string v1, "startTimer"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1724
+    .line 1725
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isCoverCamera()Z
@@ -8872,17 +8879,17 @@
 
     if-eqz v0, :cond_3
 
-    .line 1725
+    .line 1726
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIsRecordingTimeLimited:Z
 
     if-eqz v0, :cond_1
 
-    .line 1726
+    .line 1727
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1727
+    .line 1728
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecordingTimeLimitInSecond:I
 
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingUtil;->convertToMSFormat(I)Ljava/lang/String;
@@ -8891,7 +8898,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mRemainRecordingTime:Ljava/lang/String;
 
-    .line 1728
+    .line 1729
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -8924,24 +8931,24 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 1729
+    .line 1730
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1731
+    .line 1732
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->LOW_PERFORMANCE_RECORDING_VI:Z
 
     if-nez v0, :cond_0
 
-    .line 1732
+    .line 1733
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->showRecordingTextAnimation()V
 
-    .line 1772
+    .line 1773
     :goto_0
     return-void
 
-    .line 1734
+    .line 1735
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
 
@@ -8949,13 +8956,13 @@
 
     goto :goto_0
 
-    .line 1737
+    .line 1738
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1738
+    .line 1739
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingUtil;->convertToHMSFormat(I)Ljava/lang/String;
@@ -8964,22 +8971,22 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 1739
+    .line 1740
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1741
+    .line 1742
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->LOW_PERFORMANCE_RECORDING_VI:Z
 
     if-nez v0, :cond_2
 
-    .line 1742
+    .line 1743
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->showRecordingTextAnimation()V
 
     goto :goto_0
 
-    .line 1744
+    .line 1745
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
@@ -8987,18 +8994,18 @@
 
     goto :goto_0
 
-    .line 1748
+    .line 1749
     :cond_3
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIsRecordingTimeLimited:Z
 
     if-eqz v0, :cond_5
 
-    .line 1749
+    .line 1750
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1750
+    .line 1751
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecordingTimeLimitInSecond:I
 
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingUtil;->convertToMSFormat(I)Ljava/lang/String;
@@ -9007,7 +9014,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mRemainRecordingTime:Ljava/lang/String;
 
-    .line 1751
+    .line 1752
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -9040,22 +9047,22 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 1752
+    .line 1753
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1754
+    .line 1755
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->LOW_PERFORMANCE_RECORDING_VI:Z
 
     if-nez v0, :cond_4
 
-    .line 1755
+    .line 1756
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->showRecordingTextAnimation()V
 
     goto :goto_0
 
-    .line 1757
+    .line 1758
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
@@ -9063,13 +9070,13 @@
 
     goto :goto_0
 
-    .line 1760
+    .line 1761
     :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRemainRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1762
+    .line 1763
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {v3}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingUtil;->convertToHMSFormat(I)Ljava/lang/String;
@@ -9078,12 +9085,12 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 1763
+    .line 1764
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1765
+    .line 1766
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->LOW_PERFORMANCE_RECORDING_VI:Z
 
     if-nez v0, :cond_6
@@ -9096,12 +9103,12 @@
 
     if-nez v0, :cond_6
 
-    .line 1766
+    .line 1767
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->showRecordingTextAnimation()V
 
     goto/16 :goto_0
 
-    .line 1768
+    .line 1769
     :cond_6
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
@@ -9115,7 +9122,7 @@
     .param p1, "forced"    # Z
 
     .prologue
-    .line 1775
+    .line 1776
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/Recording$2;->$SwitchMap$com$sec$android$app$camera$shootingmode$RecordingController$RecordingState:[I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->getRecordingState()Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
@@ -9130,16 +9137,12 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1803
-    :cond_0
+    .line 1806
     :goto_0
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->hideRecordingLayout()V
-
-    .line 1804
     :pswitch_0
     return-void
 
-    .line 1781
+    .line 1782
     :pswitch_1
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->getCurrentRecordingFileTimeInSecond()J
 
@@ -9149,53 +9152,59 @@
 
     cmp-long v0, v0, v2
 
-    if-gez v0, :cond_2
-
-    .line 1782
-    if-eqz p1, :cond_1
+    if-gez v0, :cond_1
 
     .line 1783
+    if-eqz p1, :cond_0
+
+    .line 1784
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->cancelRecording()V
+
+    .line 1795
+    :goto_1
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->hideRecordingLayout()V
 
     goto :goto_0
 
-    .line 1785
-    :cond_1
+    .line 1786
+    :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleCancelVideoRecording()V
 
-    goto :goto_0
-
-    .line 1788
-    :cond_2
-    if-eqz p1, :cond_3
+    goto :goto_1
 
     .line 1789
+    :cond_1
+    if-eqz p1, :cond_2
+
+    .line 1790
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->stopRecordingForced()V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 1791
-    :cond_3
+    .line 1792
+    :cond_2
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->stopRecording()V
 
-    goto :goto_0
+    goto :goto_1
 
-    .line 1796
+    .line 1798
     :pswitch_2
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_3
 
-    .line 1797
+    .line 1799
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->stopVideoRecordingForced()V
 
+    .line 1801
+    :cond_3
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->hideRecordingLayout()V
+
     goto :goto_0
 
-    .line 1775
-    nop
-
+    .line 1776
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -9215,7 +9224,7 @@
 
     const-wide/16 v6, 0x400
 
-    .line 1807
+    .line 1809
     const-string v2, "Recording"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -9238,7 +9247,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1809
+    .line 1811
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isVideoCaptureIntent()Z
@@ -9257,14 +9266,14 @@
 
     if-lez v2, :cond_1
 
-    .line 1810
+    .line 1812
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getRequestedRecordingSizeLimit()J
 
     move-result-wide v0
 
-    .line 1811
+    .line 1813
     .local v0, "mMaxSize":J
     const-wide/16 v2, 0x64
 
@@ -9276,22 +9285,22 @@
 
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgress:I
 
-    .line 1812
+    .line 1814
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     iget v3, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgress:I
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLProgressBar;->setProgress(I)V
 
-    .line 1814
+    .line 1816
     cmp-long v2, p1, v0
 
     if-ltz v2, :cond_0
 
-    .line 1815
+    .line 1817
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->stopRecording()V
 
-    .line 1818
+    .line 1820
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
@@ -9328,12 +9337,12 @@
     :goto_0
     invoke-virtual {v3, v2}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 1820
+    .line 1822
     .end local v0    # "mMaxSize":J
     :cond_1
     return-void
 
-    .line 1818
+    .line 1820
     .restart local v0    # "mMaxSize":J
     :cond_2
     new-instance v2, Ljava/lang/StringBuilder;
@@ -9374,7 +9383,7 @@
 
     const/4 v6, 0x0
 
-    .line 1823
+    .line 1825
     const-string v0, "Recording"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -9401,7 +9410,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1825
+    .line 1827
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/Recording$2;->$SwitchMap$com$sec$android$app$camera$shootingmode$RecordingController$RecordingCommand:[I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;->ordinal()I
@@ -9412,12 +9421,12 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 1983
+    .line 1985
     :cond_0
     :goto_0
     return-void
 
-    .line 1827
+    .line 1829
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -9427,17 +9436,17 @@
 
     if-eqz v0, :cond_3
 
-    .line 1828
+    .line 1830
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 1831
+    .line 1833
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1832
+    .line 1834
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isEasyCamera()Z
@@ -9454,35 +9463,35 @@
 
     if-nez v0, :cond_1
 
-    .line 1833
+    .line 1835
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1835
+    .line 1837
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1836
+    .line 1838
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1838
+    .line 1840
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isSnapShotAvailable()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 1839
+    .line 1841
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1841
+    .line 1843
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -9504,25 +9513,25 @@
 
     if-nez v0, :cond_0
 
-    .line 1842
+    .line 1844
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
     goto :goto_0
 
-    .line 1845
+    .line 1847
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableRecordingAnimation()V
 
-    .line 1846
+    .line 1848
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 1848
+    .line 1850
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isVideoCaptureIntent()Z
@@ -9543,7 +9552,7 @@
 
     if-lez v0, :cond_8
 
-    .line 1851
+    .line 1853
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getRequestedRecordingSizeLimit()J
@@ -9560,7 +9569,7 @@
 
     if-ltz v0, :cond_6
 
-    .line 1852
+    .line 1854
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -9595,34 +9604,34 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 1858
+    .line 1860
     :goto_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1859
+    .line 1861
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLProgressBar;->setVisibility(I)V
 
-    .line 1860
+    .line 1862
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1861
+    .line 1863
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1870
+    .line 1872
     :goto_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1872
+    .line 1874
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isEasyCamera()Z
@@ -9631,81 +9640,81 @@
 
     if-nez v0, :cond_4
 
-    .line 1873
+    .line 1875
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1874
+    .line 1876
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->pauseButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1875
+    .line 1877
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p0}, Lcom/samsung/android/glview/GLButton;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
 
-    .line 1876
+    .line 1878
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->startAnimation()V
 
-    .line 1878
+    .line 1880
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1879
+    .line 1881
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->stopButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1880
+    .line 1882
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p0}, Lcom/samsung/android/glview/GLButton;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
 
-    .line 1881
+    .line 1883
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->startAnimation()V
 
-    .line 1882
+    .line 1884
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isSnapShotAvailable()Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 1883
+    .line 1885
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1884
+    .line 1886
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->snapShotButtonShowAnimationSet:Landroid/view/animation/AnimationSet;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1885
+    .line 1887
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p0}, Lcom/samsung/android/glview/GLButton;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
 
-    .line 1886
+    .line 1888
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->startAnimation()V
 
-    .line 1889
+    .line 1891
     :cond_5
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -9727,14 +9736,14 @@
 
     if-nez v0, :cond_0
 
-    .line 1890
+    .line 1892
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
     goto/16 :goto_0
 
-    .line 1855
+    .line 1857
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
@@ -9810,7 +9819,7 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 1856
+    .line 1858
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getRequestedRecordingSizeLimit()J
 
     move-result-wide v2
@@ -9835,30 +9844,30 @@
 
     goto :goto_3
 
-    .line 1863
+    .line 1865
     :cond_8
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLProgressBar;->setVisibility(I)V
 
-    .line 1864
+    .line 1866
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mProgressBarGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1865
+    .line 1867
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCurRecSize:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1866
+    .line 1868
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecSize:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
     goto/16 :goto_2
 
-    .line 1895
+    .line 1897
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -9868,32 +9877,32 @@
 
     if-eqz v0, :cond_b
 
-    .line 1896
+    .line 1898
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1897
+    .line 1899
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1899
+    .line 1901
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1900
+    .line 1902
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1901
+    .line 1903
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1902
+    .line 1904
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->isFocused()Z
@@ -9902,18 +9911,18 @@
 
     if-eqz v0, :cond_9
 
-    .line 1903
+    .line 1905
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
-    .line 1905
+    .line 1907
     :cond_9
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1917
+    .line 1919
     :cond_a
     :goto_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
@@ -9922,33 +9931,33 @@
 
     goto/16 :goto_0
 
-    .line 1907
+    .line 1909
     :cond_b
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1908
+    .line 1910
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1910
+    .line 1912
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1911
+    .line 1913
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1912
+    .line 1914
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1913
+    .line 1915
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->isFocused()Z
@@ -9957,14 +9966,14 @@
 
     if-eqz v0, :cond_a
 
-    .line 1914
+    .line 1916
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
     goto :goto_4
 
-    .line 1920
+    .line 1922
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -9974,22 +9983,22 @@
 
     if-eqz v0, :cond_f
 
-    .line 1921
+    .line 1923
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 1924
+    .line 1926
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1925
+    .line 1927
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1926
+    .line 1928
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isRecordingTimeLimited()Z
 
     move-result v0
@@ -10004,28 +10013,28 @@
 
     if-ne v0, v7, :cond_c
 
-    .line 1927
+    .line 1929
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1931
+    .line 1933
     :cond_c
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1932
+    .line 1934
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1933
+    .line 1935
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1934
+    .line 1936
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->isFocused()Z
@@ -10034,18 +10043,18 @@
 
     if-eqz v0, :cond_d
 
-    .line 1935
+    .line 1937
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
-    .line 1937
+    .line 1939
     :cond_d
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverBackButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1956
+    .line 1958
     :cond_e
     :goto_5
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
@@ -10054,23 +10063,23 @@
 
     goto/16 :goto_0
 
-    .line 1939
+    .line 1941
     :cond_f
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 1942
+    .line 1944
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1943
+    .line 1945
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorPauseIcon:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1944
+    .line 1946
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/Recording;->isRecordingTimeLimited()Z
 
     move-result v0
@@ -10085,28 +10094,28 @@
 
     if-ne v0, v7, :cond_10
 
-    .line 1945
+    .line 1947
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 1949
+    .line 1951
     :cond_10
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1950
+    .line 1952
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v7}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1951
+    .line 1953
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v6}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1952
+    .line 1954
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->isFocused()Z
@@ -10115,20 +10124,20 @@
 
     if-eqz v0, :cond_e
 
-    .line 1953
+    .line 1955
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mResumeButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
     goto :goto_5
 
-    .line 1961
+    .line 1963
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_11
 
-    .line 1962
+    .line 1964
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->isAnimationFinished()Z
@@ -10137,19 +10146,19 @@
 
     if-nez v0, :cond_11
 
-    .line 1963
+    .line 1965
     const-string v0, "Recording"
 
     const-string v1, "PauseButton animation was not finished, so cancel the animation."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1964
+    .line 1966
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mPauseButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->cancelAnimation()V
 
-    .line 1967
+    .line 1969
     :cond_11
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
@@ -10159,25 +10168,25 @@
 
     if-nez v0, :cond_12
 
-    .line 1968
+    .line 1970
     const-string v0, "Recording"
 
     const-string v1, "StopButton animation was not finished, so cancel the animation."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1969
+    .line 1971
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->cancelAnimation()V
 
-    .line 1971
+    .line 1973
     :cond_12
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_13
 
-    .line 1972
+    .line 1974
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->isAnimationFinished()Z
@@ -10186,19 +10195,19 @@
 
     if-nez v0, :cond_13
 
-    .line 1973
+    .line 1975
     const-string v0, "Recording"
 
     const-string v1, "SnapShotButton animation was not finished, so cancel the animation."
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1974
+    .line 1976
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mSnapShotButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->cancelAnimation()V
 
-    .line 1978
+    .line 1980
     :cond_13
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
@@ -10206,7 +10215,7 @@
 
     goto/16 :goto_0
 
-    .line 1825
+    .line 1827
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -10226,20 +10235,20 @@
 
     const/4 v4, 0x2
 
-    .line 1986
+    .line 1988
     const-wide/16 v2, 0x3e8
 
     div-long v2, p1, v2
 
     long-to-int v0, v2
 
-    .line 1988
+    .line 1990
     .local v0, "seconds":I
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIsRecordingTimeLimited:Z
 
     if-eqz v1, :cond_5
 
-    .line 1989
+    .line 1991
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isCoverCamera()Z
@@ -10248,7 +10257,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 1990
+    .line 1992
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRemainRecTimeText:Lcom/samsung/android/glview/GLText;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -10281,7 +10290,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 1995
+    .line 1997
     :goto_0
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecordingTimeLimitInSecond:I
 
@@ -10291,12 +10300,12 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 1996
+    .line 1998
     const/4 v1, 0x1
 
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBlinkCount:I
 
-    .line 2003
+    .line 2005
     :cond_0
     :goto_1
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBlinkCount:I
@@ -10307,29 +10316,29 @@
 
     if-lez v1, :cond_1
 
-    .line 2004
+    .line 2006
     const/4 v1, 0x0
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/Recording;->blinkRecTimeIndicator(Z)V
 
-    .line 2006
+    .line 2008
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/Recording$RecordingHandler;
 
     if-eqz v1, :cond_1
 
-    .line 2007
+    .line 2009
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mRecordingProgressHandler:Lcom/sec/android/app/camera/shootingmode/Recording$RecordingHandler;
 
     const-wide/16 v2, 0x1f4
 
     invoke-virtual {v1, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/Recording$RecordingHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 2017
+    .line 2019
     :cond_1
     :goto_2
     return-void
 
-    .line 1992
+    .line 1994
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecRemainTimeText:Lcom/samsung/android/glview/GLText;
 
@@ -10365,7 +10374,7 @@
 
     goto :goto_0
 
-    .line 1997
+    .line 1999
     :cond_3
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecordingTimeLimitInSecond:I
 
@@ -10375,12 +10384,12 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 1998
+    .line 2000
     iput v4, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBlinkCount:I
 
     goto :goto_1
 
-    .line 1999
+    .line 2001
     :cond_4
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mMaxRecordingTimeLimitInSecond:I
 
@@ -10388,12 +10397,12 @@
 
     if-ne v1, v5, :cond_0
 
-    .line 2000
+    .line 2002
     iput v5, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mBlinkCount:I
 
     goto :goto_1
 
-    .line 2011
+    .line 2013
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -10403,7 +10412,7 @@
 
     if-eqz v1, :cond_6
 
-    .line 2012
+    .line 2014
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCoverIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingUtil;->convertToHMSFormat(I)Ljava/lang/String;
@@ -10414,7 +10423,7 @@
 
     goto :goto_2
 
-    .line 2014
+    .line 2016
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mIndicatorRecTimeText:Lcom/samsung/android/glview/GLText;
 
@@ -12541,7 +12550,7 @@
     .line 628
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a0265
+    const v1, 0x7f0a026b
 
     const/4 v2, 0x1
 
@@ -12602,7 +12611,7 @@
     .line 638
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Recording;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a0264
+    const v1, 0x7f0a026a
 
     const/4 v2, 0x1
 

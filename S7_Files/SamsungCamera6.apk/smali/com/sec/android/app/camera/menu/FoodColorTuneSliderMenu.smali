@@ -94,7 +94,7 @@
     invoke-direct/range {v0 .. v12}, Lcom/sec/android/app/camera/menu/AbstractMenu;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;Lcom/sec/android/app/camera/interfaces/Engine;Lcom/sec/android/app/camera/menu/MenuManagerImpl;ILcom/samsung/android/glview/GLViewGroup;FFFFLcom/sec/android/app/camera/menu/MenuResourceDepot;IZ)V
 
     .line 43
-    const v0, 0x7f0b01e8
+    const v0, 0x7f0b01e9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -105,7 +105,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/FoodColorTuneSliderMenu;->FOOD_SLIDEBAR_WIDTH:I
 
     .line 44
-    const v0, 0x7f0b01e6
+    const v0, 0x7f0b01e7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -124,7 +124,7 @@
 
     sub-int/2addr v0, v1
 
-    const v1, 0x7f0b01e7
+    const v1, 0x7f0b01e8
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -152,7 +152,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/FoodColorTuneSliderMenu;->FOOD_SLIDEBAR_POS_Y:I
 
     .line 47
-    const v0, 0x7f0b01eb
+    const v0, 0x7f0b01ec
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -163,7 +163,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/FoodColorTuneSliderMenu;->SLIDEBAR_TOUCH_AREA_WIDTH:I
 
     .line 48
-    const v0, 0x7f0b01e9
+    const v0, 0x7f0b01ea
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -174,7 +174,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/FoodColorTuneSliderMenu;->SLIDEBAR_TOUCH_AREA_HEIGHT:I
 
     .line 49
-    const v0, 0x7f0b01ea
+    const v0, 0x7f0b01eb
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

@@ -86,7 +86,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->SCREEN_HEIGHT:I
 
     .line 51
-    const v0, 0x7f0b01d8
+    const v0, 0x7f0b01d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -95,7 +95,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->SHUTTER_BUTTON_WIDTH:F
 
     .line 52
-    const v0, 0x7f0b034d
+    const v0, 0x7f0b034e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -150,7 +150,7 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 293
+    .line 295
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const-string v1, "%d"
@@ -173,7 +173,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 294
+    .line 296
     return-void
 .end method
 
@@ -181,7 +181,7 @@
     .locals 3
 
     .prologue
-    .line 297
+    .line 299
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mLowDeviceStorageToast:Landroid/widget/Toast;
 
     if-eqz v0, :cond_0
@@ -206,27 +206,27 @@
 
     if-nez v0, :cond_2
 
-    .line 298
+    .line 300
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mLowDeviceStorageToast:Landroid/widget/Toast;
 
     if-eqz v0, :cond_1
 
-    .line 299
+    .line 301
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mLowDeviceStorageToast:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
-    .line 300
+    .line 302
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mLowDeviceStorageToast:Landroid/widget/Toast;
 
-    .line 302
+    .line 304
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01ce
+    const v1, 0x7f0a01d4
 
     const/4 v2, 0x1
 
@@ -236,12 +236,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mLowDeviceStorageToast:Landroid/widget/Toast;
 
-    .line 303
+    .line 305
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mLowDeviceStorageToast:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 305
+    .line 307
     :cond_2
     return-void
 .end method
@@ -330,20 +330,31 @@
     invoke-interface {v0, v1, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setDim(IZ)V
 
     .line 94
+    iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    const/16 v1, 0x191
+
+    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isCameraDialogVisible(I)Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 95
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Continuous;->showLowDeviceStorageToast()V
 
-    .line 96
+    .line 98
     :cond_0
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LOW_PERFORMANCE_CONTINUOUS:Z
 
     if-eqz v0, :cond_1
 
-    .line 97
+    .line 99
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setCameraQuality(I)V
 
-    .line 99
+    .line 101
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -351,15 +362,15 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 101
+    .line 103
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mIsBurstCapturing:Z
 
-    .line 102
+    .line 104
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setBurstCaptureEventListener(Lcom/sec/android/app/camera/interfaces/Engine$BurstCaptureEventListener;)V
 
-    .line 103
+    .line 105
     return-void
 .end method
 
@@ -368,7 +379,7 @@
     .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 107
+    .line 109
     const/4 v0, 0x0
 
     return v0
@@ -380,52 +391,52 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 112
+    .line 114
     const-string v0, "Continuous"
 
     const-string v1, "onBurstCaptureCompleted"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 113
+    .line 115
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LOW_PERFORMANCE_CONTINUOUS:Z
 
     if-eqz v0, :cond_0
 
-    .line 114
+    .line 116
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->terminateBurstCapture()V
 
-    .line 116
+    .line 118
     :cond_0
     iput-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mIsBurstCapturing:Z
 
-    .line 118
+    .line 120
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 119
+    .line 121
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/Continuous;->setCapturingProgress(I)V
 
-    .line 121
+    .line 123
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 122
+    .line 124
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x27e
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 124
+    .line 126
     return-void
 .end method
 
@@ -434,7 +445,7 @@
     .param p1, "progress"    # I
 
     .prologue
-    .line 128
+    .line 130
     const-string v0, "Continuous"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -457,10 +468,10 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 129
+    .line 131
     if-nez p1, :cond_0
 
-    .line 130
+    .line 132
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -469,18 +480,18 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideShootingModeText()V
 
-    .line 131
+    .line 133
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 133
+    .line 135
     :cond_0
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/shootingmode/Continuous;->setCapturingProgress(I)V
 
-    .line 134
+    .line 136
     return-void
 .end method
 
@@ -488,33 +499,33 @@
     .locals 2
 
     .prologue
-    .line 138
+    .line 140
     const-string v0, "Continuous"
 
     const-string v1, "onBurstCaptureStarted"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 139
+    .line 141
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mIsBurstCapturing:Z
 
-    .line 141
+    .line 143
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 142
+    .line 144
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x27e
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 144
+    .line 146
     return-void
 .end method
 
@@ -523,7 +534,7 @@
     .param p1, "lastImageNum"    # I
 
     .prologue
-    .line 148
+    .line 150
     const/4 v0, 0x0
 
     return v0
@@ -537,14 +548,14 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 153
+    .line 155
     const-string v0, "Continuous"
 
     const-string v1, "onBurstCaptureThumbnailTaken"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 154
+    .line 156
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getCameraId()I
@@ -561,16 +572,16 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 155
+    .line 157
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, p1, p2, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->updateThumbnailButton(Landroid/graphics/Bitmap;IZ)V
 
-    .line 159
+    .line 161
     :goto_0
     return-void
 
-    .line 157
+    .line 159
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -586,7 +597,7 @@
     .param p1, "data"    # [B
 
     .prologue
-    .line 163
+    .line 165
     const/4 v0, 0x0
 
     return v0
@@ -597,19 +608,19 @@
     .param p1, "parameters"    # Lcom/samsung/android/camera/core/SemCamera$Parameters;
 
     .prologue
-    .line 168
+    .line 170
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FIXED_BURST_RESOLUTION:Z
 
     if-eqz v0, :cond_0
 
-    .line 169
+    .line 171
     const-string v0, "picture-size"
 
     sget-object v1, Lcom/sec/android/app/camera/feature/Feature;->BURST_RESOLUTION:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 171
+    .line 173
     :cond_0
     return-void
 .end method
@@ -623,10 +634,10 @@
     .param p5, "menuManager"    # Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     .prologue
-    .line 175
+    .line 177
     iput-object p4, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-    .line 177
+    .line 179
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->SCREEN_WIDTH:I
 
     int-to-float v0, v0
@@ -643,7 +654,7 @@
 
     sub-float v2, v0, v1
 
-    .line 178
+    .line 180
     .local v2, "CAPTURE_PROGRESS_TEXT_BOTTOM_POS_X":F
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->SCREEN_HEIGHT:I
 
@@ -657,7 +668,7 @@
 
     div-float v3, v0, v1
 
-    .line 181
+    .line 183
     .local v3, "CAPTURE_PROGRESS_TEXT_BOTTOM_POS_Y":F
     new-instance v0, Lcom/samsung/android/glview/GLText;
 
@@ -677,7 +688,7 @@
 
     iget-object v8, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 182
+    .line 184
     invoke-interface {v8}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     move-result-object v8
@@ -698,7 +709,7 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
-    .line 183
+    .line 185
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x2
@@ -707,7 +718,7 @@
 
     invoke-virtual {v0, v1, v4}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 184
+    .line 186
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->getRobotoRegular()Landroid/graphics/Typeface;
@@ -716,14 +727,14 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setTextFont(Landroid/graphics/Typeface;)V
 
-    .line 185
+    .line 187
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setShadowVisibility(Z)V
 
-    .line 186
+    .line 188
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x1
@@ -738,40 +749,40 @@
 
     invoke-virtual {v0, v1, v4, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 187
+    .line 189
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setCenterPivot(Z)V
 
-    .line 188
+    .line 190
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setRotatable(Z)V
 
-    .line 189
+    .line 191
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const-string v1, "0"
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 190
+    .line 192
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 191
+    .line 193
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCaptureProgressText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {p2, v0}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 192
+    .line 194
     return-void
 .end method
 
@@ -779,7 +790,7 @@
     .locals 1
 
     .prologue
-    .line 196
+    .line 198
     const/4 v0, 0x0
 
     return v0
@@ -795,14 +806,14 @@
 
     const/4 v2, 0x0
 
-    .line 201
+    .line 203
     const-string v0, "Continuous"
 
     const-string v1, "onInactivate"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 202
+    .line 204
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->isDimmed(I)Z
@@ -811,12 +822,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 203
+    .line 205
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, v3, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setDim(IZ)V
 
-    .line 204
+    .line 206
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -826,42 +837,42 @@
 
     if-eqz v0, :cond_1
 
-    .line 205
+    .line 207
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0, v4, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setDim(IZ)V
 
-    .line 206
+    .line 208
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->removeSideQuickSettingItems()V
 
-    .line 208
+    .line 210
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mIsBurstCapturing:Z
 
     if-eqz v0, :cond_2
 
-    .line 209
+    .line 211
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelBurstCapture()V
 
-    .line 210
+    .line 212
     iput-boolean v2, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mIsBurstCapturing:Z
 
-    .line 212
+    .line 214
     :cond_2
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LOW_PERFORMANCE_CONTINUOUS:Z
 
     if-eqz v0, :cond_3
 
-    .line 213
+    .line 215
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setCameraQuality(I)V
 
-    .line 216
+    .line 218
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -869,7 +880,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->setBurstCaptureEventListener(Lcom/sec/android/app/camera/interfaces/Engine$BurstCaptureEventListener;)V
 
-    .line 217
+    .line 219
     return-void
 .end method
 
@@ -879,7 +890,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 221
+    .line 223
     const/4 v0, 0x0
 
     return v0
@@ -891,35 +902,35 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 226
+    .line 228
     const-string v0, "Continuous"
 
     const-string v1, "onKeyUp"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 227
+    .line 229
     packed-switch p1, :pswitch_data_0
 
-    .line 235
+    .line 237
     :cond_0
     const/4 v0, 0x0
 
     :goto_0
     return v0
 
-    .line 229
+    .line 231
     :pswitch_0
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mIsBurstCapturing:Z
 
     if-eqz v0, :cond_0
 
-    .line 230
+    .line 232
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 227
+    .line 229
     :pswitch_data_0
     .packed-switch 0x4
         :pswitch_0
@@ -932,7 +943,7 @@
     .param p2, "modeId"    # I
 
     .prologue
-    .line 240
+    .line 242
     const/4 v0, 0x0
 
     return v0
@@ -942,12 +953,12 @@
     .locals 1
 
     .prologue
-    .line 245
+    .line 247
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->switchToRecordingMode()V
 
-    .line 246
+    .line 248
     const/4 v0, 0x0
 
     return v0
@@ -957,7 +968,7 @@
     .locals 1
 
     .prologue
-    .line 251
+    .line 253
     const/4 v0, 0x0
 
     return v0
@@ -971,14 +982,14 @@
 
     const/4 v1, 0x0
 
-    .line 256
+    .line 258
     const-string v2, "Continuous"
 
     const-string v3, "onShutterKeyPressed"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 257
+    .line 259
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isBurstCaptureAvailable()Z
@@ -987,17 +998,17 @@
 
     if-eqz v2, :cond_1
 
-    .line 258
+    .line 260
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->disableChangeBurstShootingMode()V
 
-    .line 259
+    .line 261
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->handleBurstShutterPressed()V
 
-    .line 261
+    .line 263
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getRemainCount(I)I
@@ -1006,10 +1017,10 @@
 
     if-gt v1, v0, :cond_0
 
-    .line 262
+    .line 264
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/Continuous;->showLowDeviceStorageToast()V
 
-    .line 267
+    .line 269
     :cond_0
     :goto_0
     return v0
@@ -1025,14 +1036,14 @@
     .param p1, "captureMethod"    # I
 
     .prologue
-    .line 272
+    .line 274
     const-string v0, "Continuous"
 
     const-string v1, "onShutterKeyReleased"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 273
+    .line 275
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isShutterPressed()Z
@@ -1041,12 +1052,12 @@
 
     if-nez v0, :cond_0
 
-    .line 274
+    .line 276
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/Continuous;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->handleBurstShutterReleased(I)V
 
-    .line 276
+    .line 278
     :cond_0
     const/4 v0, 0x1
 
@@ -1058,7 +1069,7 @@
     .param p1, "event"    # I
 
     .prologue
-    .line 281
+    .line 283
     return-void
 .end method
 
@@ -1067,7 +1078,7 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 285
+    .line 287
     return-void
 .end method
 
@@ -1075,7 +1086,7 @@
     .locals 1
 
     .prologue
-    .line 289
+    .line 291
     const/4 v0, 0x0
 
     return v0

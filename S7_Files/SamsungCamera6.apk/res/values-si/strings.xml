@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">මන්දගාමී චලනයෙන් බැලීම සඳහා වීඩියෝ ඉහළ රාමු අනුපාතයෙන් පටිගත කරන්න. ඒවා පටිගත කිරීමෙන් පසුව ඔබට එක් එක් වීඩියෝවක විශේෂිත අංශයක් මන්දගාමී චලනයෙන් වාදනය කළ හැක.</string>
     <string name="SM_SMART_SELFSHOT">පිටුපස-කැමරා සෙල්ෆිය</string>
     <string name="SM_SMART_SELFSHOT_description">ඔබ ස්ව-ආලේඛන පින්තූර ගන්නා විට ඔබේ මුහුණ පසුපස කැමරාව විසින් ස්වයංක්‍රිය ලෙස අනාවරණය කර නාභිගත කරනු ඇත.</string>
+    <string name="SM_SOCIAL">සාමාජීය</string>
+    <string name="SM_SOCIAL_description">පින්තූර ගෙන සමාජ ජාලවල ඒවා ඉතා පහසුවෙන් බෙදා ගන්න.</string>
     <string name="SM_SPORTS">ක්‍රීඩා</string>
     <string name="SM_SPORTS_SCENE_description">වේගයෙන් චලනය වන වස්තූන්ගේ වඩාත් පැහැදිලි පින්තූර ලබා ගන්න.</string>
     <string name="SM_STORY">හඬ හා පහර</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">පූර්ණ තිර දසුන (16:9)</string>
     <string name="Title_Voice_Capture">හඬ පාලනය</string>
     <string name="Title_Voice_guide">හඬ මාර්ගෝපදේශය</string>
-    <string name="Title_Volume_Key_As">හඞ යතුරු ක්‍රියාදාමය</string>
+    <string name="Title_Volume_Key_As">හඬ යතුරු ක්‍රියාදාමය</string>
     <string name="Title_WhiteBalance">ශ්වේත තුලනය</string>
     <string name="Title_common">පොදු</string>
     <string name="Title_front">ඉදිරිපස කැමරාව</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">චතුරස්‍රය</string>
     <string name="help_change_mode_tip_1">තිබෙන කැමරා ප්‍රකාර බැලීමට දකුණට ස්වයිප් කරන්න.</string>
     <string name="help_change_mode_tip_2">ඔබට භාවිතා කිරීමට අවශ්‍ය ප්‍රකාරය තෝරන්න.</string>
+    <string name="help_change_mode_tip_3">පහසු ප්‍රකාරය සක්‍රිය අතරතුර ස්වයං හා සෙල්ෆි කැමරා ප්‍රකාරයන් පමණක් ඇත.</string>
     <string name="help_changing_the_camera_mode">කැමරා ප්‍රකාර තේරීම</string>
+    <string name="help_changing_the_camera_mode_header">කැමරා ප්‍රකාරයක් තේරීම</string>
+    <string name="help_changing_the_camera_mode_title">කැමරා ප්‍රකාරය වෙනස් කිරීම</string>
     <string name="help_recording_videos">වීඩියෝ පටිගත කිරීම</string>
     <string name="help_recording_videos_tip_1">%s තට්ටු කරන්න.</string>
     <string name="help_recording_videos_tip_1_tts">කැම්කෝඩර බොත්තම තට්ටු කරන්න.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">පටිගත කිරීම නැවතීම සඳහා නවතන්න බොත්තම තට්ටු කරන්න.</string>
     <string name="help_recording_videos_tip_snapshot">වීඩියෝ පටිගත කරන අතර පින්තූර ගැනීමට %s තට්ටු කරන්න.</string>
     <string name="help_recording_videos_tip_snapshot_tts">වීඩියෝ පටිගත කරන අතරතුර පින්තූර ගැනීමට කැමරා බොත්තමට තට්ටු කරන්න.</string>
-    <string name="help_section_summary">සියලු අවස්ථාවන්ට ගැළපෙන පරිදි විවිධ ප්‍රයෝග ගණනාවක් භාවිතයෙන් පින්තූර ගන්න හෝ වීඩියෝ පටිගත කරන්න. පහසු ප්‍රකාරය සක්‍රිය අතරතුර, ස්වයං හා සෙල්ෆි කැමරා ප්‍රකාරයන් පමණක් ඇති අතර, කිසිදු ප්‍රයෝගයක් යෙදිය නොහැක.</string>
+    <string name="help_section_summary">සියලු අවස්ථාවන්ට ගැළපෙන පරිදි විවිධ ප්‍රයෝග ගණනාවක් භාවිතයෙන් පිංතූර ගැනීම හා වීඩියෝ පටිගත කිරීම සිදු කරන්න.</string>
     <string name="help_selecting_camera_mode">කැමරා ප්‍රකාර තේරීම</string>
     <string name="help_taking_pictures">පිංතූර ගැනීම</string>
     <string name="help_taking_pictures_tip_1">ඔබට නාභිගත කිරීමට අවශ්‍ය වස්තුව තට්ටු කරන්න.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">කැමරා බොත්තම තට්ටු කර ඔබේ උපාංගය සෙමින් එක් පැත්තකට කරකවන්න.</string>
     <string name="help_viewing_pics_and_videos_tip_1">ඔබ පින්තූර ගත් පසු හෝ වීඩියෝ හෝ පටිගත කළ පසු ඒවා බැලීමට %s තට්ටු කරන්න.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">ඔබ පින්තූර ගත් වහාම හෝ වීඩියෝ පටිගත කළ වහාම ඒවා බැලීමට යුහු දසුන් බොත්තම තට්ටු කරන්න.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">පින්තූර හා වීඩියෝ බැලීම</string>
     <string name="high_resolution_video_description">%s විභේදනයෙන් පටිගතකරණය කරන විට පහත දැක්වෙන දෑ නොමැති විය හැක:</string>
     <string name="highlight">උද්දීපන</string>

@@ -23,7 +23,7 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 247
+    .line 290
     const-string v0, "apex.db"
 
     const/4 v1, 0x0
@@ -32,7 +32,7 @@
 
     invoke-direct {p0, p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
-    .line 248
+    .line 291
     return-void
 .end method
 
@@ -42,67 +42,67 @@
     .locals 3
 
     .prologue
-    .line 279
+    .line 322
     monitor-enter p0
 
     :try_start_0
     invoke-super {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->close()V
 
-    .line 280
+    .line 323
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager$ApexDbHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
-    .line 281
+    .line 324
     .local v1, "writableDatabase":Landroid/database/sqlite/SQLiteDatabase;
     if-eqz v1, :cond_0
 
-    .line 282
+    .line 325
     monitor-enter v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 283
+    .line 326
     :try_start_1
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 284
+    .line 327
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 286
+    .line 329
     :cond_0
     :try_start_2
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager$ApexDbHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 287
+    .line 330
     .local v0, "readableDatabase":Landroid/database/sqlite/SQLiteDatabase;
     if-eqz v0, :cond_1
 
-    .line 288
+    .line 331
     monitor-enter v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 289
+    .line 332
     :try_start_3
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 290
+    .line 333
     monitor-exit v0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 292
+    .line 335
     :cond_1
     monitor-exit p0
 
     return-void
 
-    .line 284
+    .line 327
     .end local v0    # "readableDatabase":Landroid/database/sqlite/SQLiteDatabase;
     :catchall_0
     move-exception v2
@@ -117,7 +117,7 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 279
+    .line 322
     .end local v1    # "writableDatabase":Landroid/database/sqlite/SQLiteDatabase;
     :catchall_1
     move-exception v2
@@ -126,7 +126,7 @@
 
     throw v2
 
-    .line 290
+    .line 333
     .restart local v0    # "readableDatabase":Landroid/database/sqlite/SQLiteDatabase;
     .restart local v1    # "writableDatabase":Landroid/database/sqlite/SQLiteDatabase;
     :catchall_2
@@ -148,12 +148,12 @@
     .param p1, "db"    # Landroid/database/sqlite/SQLiteDatabase;
 
     .prologue
-    .line 251
+    .line 294
     const-string v0, "CREATE TABLE IF NOT EXISTS apex_photo (_id INTEGER PRIMARY KEY,entryid TEXT,picture_path TEXT,video_path TEXT, )"
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 252
+    .line 295
     return-void
 .end method
 
@@ -164,7 +164,7 @@
     .param p3, "newVersion"    # I
 
     .prologue
-    .line 256
+    .line 299
     sget-object v0, Lcom/samsung/android/apex/motionphoto/persistence/SemApexContentManager;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -203,6 +203,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 259
+    .line 302
     return-void
 .end method

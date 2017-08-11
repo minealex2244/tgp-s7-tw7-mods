@@ -25,7 +25,7 @@
     .locals 3
 
     .prologue
-    .line 1825
+    .line 1827
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;->values()[Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;
 
     move-result-object v0
@@ -115,7 +115,7 @@
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_5
 
-    .line 1775
+    .line 1776
     :goto_4
     invoke-static {}, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;->values()[Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingState;
 
@@ -234,7 +234,7 @@
 
     goto :goto_5
 
-    .line 1825
+    .line 1827
     :catch_5
     move-exception v0
 

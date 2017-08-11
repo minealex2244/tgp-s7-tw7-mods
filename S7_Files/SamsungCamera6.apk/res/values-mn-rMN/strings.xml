@@ -197,6 +197,8 @@
     <string name="SM_SLOW_VIDEO_description">Өндөр хурдаар удаашруулсан хөдөлгөөнтэй бичлэг хийх. Та видеог бичсэнийхээ дараа тус бүрийн заасан хэсгийг удаашруулж тоглуулж болно.</string>
     <string name="SM_SMART_SELFSHOT">Арын камер селфи</string>
     <string name="SM_SMART_SELFSHOT_description">Таныг өөрийнхөө хөрөг зургийг авахад арын камер таны царайг автоматаар илрүүлж, фокусална.</string>
+    <string name="SM_SOCIAL">Нийтийн</string>
+    <string name="SM_SOCIAL_description">Зураг аваад, нийгмийн сүлжээ дээр хялбар хуваалц.</string>
     <string name="SM_SPORTS">Спорт</string>
     <string name="SM_SPORTS_SCENE_description">Түргэн хөдөлж буй этгээдийн зургийг тод ав.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -269,7 +271,7 @@
     <string name="Title_Viewmode">Дэл. дүүрэн харах (16:9)</string>
     <string name="Title_Voice_Capture">Дуут удирдлага</string>
     <string name="Title_Voice_guide">Дуут хөтөч</string>
-    <string name="Title_Volume_Key_As">Volume key function</string>
+    <string name="Title_Volume_Key_As">Дууны түвшний функцүүд</string>
     <string name="Title_WhiteBalance">Цагааны тэнцвэр</string>
     <string name="Title_common">Түгээмэл</string>
     <string name="Title_front">Урд камер</string>
@@ -401,7 +403,10 @@
     <string name="guideline_square">Дөрвөлжин</string>
     <string name="help_change_mode_tip_1">Баруун тийш шудраад байгаа камерын горимыг хар.</string>
     <string name="help_change_mode_tip_2">Ашиглахыг хүссэн горимоо сонго.</string>
+    <string name="help_change_mode_tip_3">Хялбар горим идэвхжсэн үед зөвхөн Автомат болон Селфи камерын горимыг ашиглах боломжтой.</string>
     <string name="help_changing_the_camera_mode">Камерын горим сонгох</string>
+    <string name="help_changing_the_camera_mode_header">Камерын горим сонгох</string>
+    <string name="help_changing_the_camera_mode_title">Камерын горимыг өөрчлөх</string>
     <string name="help_recording_videos">Видео бичих</string>
     <string name="help_recording_videos_tip_1">%s-г товш.</string>
     <string name="help_recording_videos_tip_1_tts">Видео камерын товчийг товш.</string>
@@ -409,7 +414,7 @@
     <string name="help_recording_videos_tip_2_tts">Бичлэгээ зогсоохын тулд зогсоох товчийг товш.</string>
     <string name="help_recording_videos_tip_snapshot">Видео бичлэг хийж байхдаа зураг авахын тулд %s-г товш.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Видео бичлэг хийж байхдаа зураг авахын тулд камерын товчийг товш.</string>
-    <string name="help_section_summary">Ямар ч орчинд тохирохуйц зураг авч, видео бичлэг хийхийн тулд янз бүрийн эффект ашигла. Хялбар горимд зөвхөн Автомат болон Селфи камерын горим ашиглах боломжтой үед ямар ч эффект хэрэглэх боломжгүй.</string>
+    <string name="help_section_summary">Бүх тохиолдолд тохирох төрөл бүрийн эффект ашиглан зураг авах буюу видео бичлэг хий.</string>
     <string name="help_selecting_camera_mode">Камерын горим сонгох</string>
     <string name="help_taking_pictures">Зураг авах</string>
     <string name="help_taking_pictures_tip_1">Фокусанд оруулах объектоо товш.</string>
@@ -424,6 +429,7 @@
     <string name="help_text_wideselfie">Камерын товчийг товшиж, төхөөрөмжөө нэг чиглэлд аажим эргүүл.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Зураг авах буюу видео бичингүүтээ харахын тулд %s-г товш.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Зураг авах буюу видео бичингүүтээ харахын тулд түргэн харагдцын товчийг товш.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Зураг, видео бичлэг үзэх</string>
     <string name="high_resolution_video_description">%s нягтралаар бичлэг хийх үед дараах зүйлс боломжгүй байна:</string>
     <string name="highlight">Тодруулгууд</string>

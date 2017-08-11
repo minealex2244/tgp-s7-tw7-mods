@@ -190,6 +190,8 @@ Foto penggeseran: Abadikan kesan gerakan saat mengambil gambar objek yang berger
     <string name="SM_SLOW_VIDEO_description">Rekam video dengan laju bingkai tinggi untuk tampilan gerakan lambat. Anda dapat memutar bagian spesifik dari tiap video dalam gerakan lambat setelah merekamnya.</string>
     <string name="SM_SMART_SELFSHOT">Selfie kamera belakang</string>
     <string name="SM_SMART_SELFSHOT_description">Kamera belakang akan mendeteksi dan memfokuskan wajah Anda saat Anda mengambil potret diri.</string>
+    <string name="SM_SOCIAL">Sosial</string>
+    <string name="SM_SOCIAL_description">Ambil gambar dan bagikan dengan mudah di jejaring sosial.</string>
     <string name="SM_SPORTS">Olahraga</string>
     <string name="SM_SPORTS_SCENE_description">Ambil gambar yang lebih jelas dari subjek yang bergerak cepat.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -393,7 +395,10 @@ bentuk"</string>
     <string name="guideline_square">Persegi</string>
     <string name="help_change_mode_tip_1">Usap ke kanan untuk melihat mode kamera yang tersedia.</string>
     <string name="help_change_mode_tip_2">Pilih mode yang ingin Anda gunakan.</string>
+    <string name="help_change_mode_tip_3">Hanya Mode otomatis dan Mode selfie yang tersedia saat Mode mudah aktif.</string>
     <string name="help_changing_the_camera_mode">Memilih mode kamera</string>
+    <string name="help_changing_the_camera_mode_header">Memilih mode kamera</string>
+    <string name="help_changing_the_camera_mode_title">Merubah mode kamera</string>
     <string name="help_recording_videos">Merekam video</string>
     <string name="help_recording_videos_tip_1">Ketuk %s.</string>
     <string name="help_recording_videos_tip_1_tts">Ketuk tombol perekam</string>
@@ -401,7 +406,7 @@ bentuk"</string>
     <string name="help_recording_videos_tip_2_tts">Ketuk tombol berhenti untuk berhenti merekam</string>
     <string name="help_recording_videos_tip_snapshot">Ketuk %s untuk mengambil gambar saat merekam video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Ketuk tombol kamera untuk mengambil gambar ketika sedang merekam video.</string>
-    <string name="help_section_summary">Ambil gambar atau rekam video menggunakan berbagai efek, agar sesuai dengan keadaan. Hanya Mode otomatis dan Mode selfie yang tersedia, tanpa bisa menerapkan efek apa pun, saat Mode mudah aktif.</string>
+    <string name="help_section_summary">Ambil gambar atau rekam video menggunakan beragam efek yang berbeda di tiap suasana.</string>
     <string name="help_selecting_camera_mode">Memilih mode kamera</string>
     <string name="help_taking_pictures">Mengambil gambar</string>
     <string name="help_taking_pictures_tip_1">Ketuk objek yang ingin Anda fokuskan.</string>
@@ -416,6 +421,7 @@ bentuk"</string>
     <string name="help_text_wideselfie">Ketuk tombol kamera dan putar perangkat Anda perlahan ke satu arah.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Ketuk %s untuk melihat gambar atau video setelah Anda mengambil atau merekamnya.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Ketuk tombol tampilan cepat untuk melihat gambar atau video langsung setelah Anda mengambil atau merekamnya.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Melihat gambar dan video</string>
     <string name="high_resolution_video_description">Hal berikut tidak akan tersedia selama perekaman dalam resolusi %s:</string>
     <string name="highlight">Sorotan</string>

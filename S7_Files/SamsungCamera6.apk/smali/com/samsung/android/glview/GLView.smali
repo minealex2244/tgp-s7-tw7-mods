@@ -2535,7 +2535,7 @@
     .locals 3
 
     .prologue
-    .line 4151
+    .line 4156
     monitor-enter p0
 
     :try_start_0
@@ -2547,7 +2547,7 @@
 
     invoke-static {v0, v1, v2}, Lcom/samsung/android/glview/GLUtil;->multiplyMM([F[F[F)V
 
-    .line 4152
+    .line 4157
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mCombinedMatrix:[F
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
@@ -2559,13 +2559,13 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4156
+    .line 4161
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 4151
+    .line 4156
     :catchall_0
     move-exception v0
 
@@ -2573,7 +2573,7 @@
 
     throw v0
 
-    .line 4153
+    .line 4158
     :catch_0
     move-exception v0
 
@@ -2598,169 +2598,20 @@
 
     const/4 v4, 0x0
 
-    .line 4160
-    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
-
-    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v1, v1, v4
-
-    int-to-float v2, p1
-
-    mul-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v2, v2, v6
-
-    int-to-float v3, p2
-
-    mul-float/2addr v2, v3
-
-    add-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v2, v2, v8
-
-    add-float/2addr v1, v2
-
-    aput v1, v0, v4
-
-    .line 4161
-    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
-
-    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v1, v1, v5
-
-    int-to-float v2, p1
-
-    mul-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v2, v2, v7
-
-    int-to-float v3, p2
-
-    mul-float/2addr v2, v3
-
-    add-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    const/16 v3, 0xd
-
-    aget v2, v2, v3
-
-    add-float/2addr v1, v2
-
-    aput v1, v0, v5
-
-    .line 4162
-    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftBottom:[F
-
-    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v1, v1, v4
-
-    int-to-float v2, p1
-
-    mul-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v2, v2, v6
-
-    int-to-float v3, p4
-
-    mul-float/2addr v2, v3
-
-    add-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v2, v2, v8
-
-    add-float/2addr v1, v2
-
-    aput v1, v0, v4
-
-    .line 4163
-    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftBottom:[F
-
-    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v1, v1, v5
-
-    int-to-float v2, p1
-
-    mul-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v2, v2, v7
-
-    int-to-float v3, p4
-
-    mul-float/2addr v2, v3
-
-    add-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    const/16 v3, 0xd
-
-    aget v2, v2, v3
-
-    add-float/2addr v1, v2
-
-    aput v1, v0, v5
-
-    .line 4164
-    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRightTop:[F
-
-    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v1, v1, v4
-
-    int-to-float v2, p3
-
-    mul-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v2, v2, v6
-
-    int-to-float v3, p2
-
-    mul-float/2addr v2, v3
-
-    add-float/2addr v1, v2
-
-    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
-
-    aget v2, v2, v8
-
-    add-float/2addr v1, v2
-
-    aput v1, v0, v4
-
     .line 4165
-    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRightTop:[F
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
 
-    aget v1, v1, v5
+    aget v1, v1, v4
 
-    int-to-float v2, p3
+    int-to-float v2, p1
 
     mul-float/2addr v1, v2
 
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
 
-    aget v2, v2, v7
+    aget v2, v2, v6
 
     int-to-float v3, p2
 
@@ -2770,15 +2621,164 @@
 
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
 
-    const/16 v3, 0xd
-
-    aget v2, v2, v3
+    aget v2, v2, v8
 
     add-float/2addr v1, v2
 
-    aput v1, v0, v5
+    aput v1, v0, v4
 
     .line 4166
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
+
+    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v1, v1, v5
+
+    int-to-float v2, p1
+
+    mul-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v2, v2, v7
+
+    int-to-float v3, p2
+
+    mul-float/2addr v2, v3
+
+    add-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    const/16 v3, 0xd
+
+    aget v2, v2, v3
+
+    add-float/2addr v1, v2
+
+    aput v1, v0, v5
+
+    .line 4167
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftBottom:[F
+
+    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v1, v1, v4
+
+    int-to-float v2, p1
+
+    mul-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v2, v2, v6
+
+    int-to-float v3, p4
+
+    mul-float/2addr v2, v3
+
+    add-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v2, v2, v8
+
+    add-float/2addr v1, v2
+
+    aput v1, v0, v4
+
+    .line 4168
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftBottom:[F
+
+    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v1, v1, v5
+
+    int-to-float v2, p1
+
+    mul-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v2, v2, v7
+
+    int-to-float v3, p4
+
+    mul-float/2addr v2, v3
+
+    add-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    const/16 v3, 0xd
+
+    aget v2, v2, v3
+
+    add-float/2addr v1, v2
+
+    aput v1, v0, v5
+
+    .line 4169
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRightTop:[F
+
+    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v1, v1, v4
+
+    int-to-float v2, p3
+
+    mul-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v2, v2, v6
+
+    int-to-float v3, p2
+
+    mul-float/2addr v2, v3
+
+    add-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v2, v2, v8
+
+    add-float/2addr v1, v2
+
+    aput v1, v0, v4
+
+    .line 4170
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRightTop:[F
+
+    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v1, v1, v5
+
+    int-to-float v2, p3
+
+    mul-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    aget v2, v2, v7
+
+    int-to-float v3, p2
+
+    mul-float/2addr v2, v3
+
+    add-float/2addr v1, v2
+
+    iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
+
+    const/16 v3, 0xd
+
+    aget v2, v2, v3
+
+    add-float/2addr v1, v2
+
+    aput v1, v0, v5
+
+    .line 4171
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRightBottom:[F
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
@@ -2807,7 +2807,7 @@
 
     aput v1, v0, v4
 
-    .line 4167
+    .line 4172
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRightBottom:[F
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
@@ -2838,7 +2838,7 @@
 
     aput v1, v0, v5
 
-    .line 4168
+    .line 4173
     return-void
 .end method
 
@@ -3179,7 +3179,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 3838
+    .line 3843
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getScreenWidthPixels()I
 
     move-result v0
@@ -3190,7 +3190,7 @@
 
     invoke-static {v2, v2, v0, v1}, Landroid/opengl/GLES20;->glScissor(IIII)V
 
-    .line 3839
+    .line 3844
     return-void
 .end method
 
@@ -3198,19 +3198,19 @@
     .locals 6
 
     .prologue
-    .line 3845
+    .line 3850
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->isParentClippingForced()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 3846
+    .line 3851
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getParentForcedClipRect()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    .line 3848
+    .line 3853
     .local v0, "parentForcedRect":Landroid/graphics/Rect;
     iget v1, v0, Landroid/graphics/Rect;->left:I
 
@@ -3236,18 +3236,18 @@
 
     invoke-static {v1, v2, v3, v4}, Landroid/opengl/GLES20;->glScissor(IIII)V
 
-    .line 3857
+    .line 3862
     .end local v0    # "parentForcedRect":Landroid/graphics/Rect;
     :goto_0
     return-void
 
-    .line 3850
+    .line 3855
     :cond_0
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mClipping:Z
 
     if-eqz v1, :cond_1
 
-    .line 3852
+    .line 3857
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->left:I
@@ -3286,7 +3286,7 @@
 
     goto :goto_0
 
-    .line 3854
+    .line 3859
     :cond_1
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->clearClip()V
 
@@ -3511,7 +3511,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1118
+    .line 1120
     :cond_0
     :goto_0
     monitor-exit p0
@@ -3786,26 +3786,26 @@
 
     invoke-virtual {v1, v4}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 1065
+    .line 1067
     :cond_9
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
 
     invoke-static {v1, p1, v0}, Lcom/samsung/android/glview/GLUtil;->multiplyMM([F[F[F)V
 
-    .line 1067
+    .line 1069
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mLayoutUpdated:Z
 
     if-eqz v1, :cond_e
 
-    .line 1068
+    .line 1070
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->refreshClipRect()V
 
-    .line 1069
+    .line 1071
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mManualClip:Z
 
     if-eqz v1, :cond_13
 
-    .line 1070
+    .line 1072
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mManualClipRect:Landroid/graphics/Rect;
@@ -3822,22 +3822,22 @@
 
     if-nez v1, :cond_d
 
-    .line 1071
+    .line 1073
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mClipping:Z
 
     if-eqz v1, :cond_d
 
-    .line 1072
+    .line 1074
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mInScreen:Z
 
-    .line 1073
+    .line 1075
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mIsClipped:Z
 
-    .line 1074
+    .line 1076
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->onOutOfScreen()V
 
     goto/16 :goto_0
@@ -3894,7 +3894,7 @@
 
     goto :goto_1
 
-    .line 1078
+    .line 1080
     :cond_d
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mManualClipRect:Landroid/graphics/Rect;
 
@@ -3904,24 +3904,24 @@
 
     if-eqz v1, :cond_11
 
-    .line 1079
+    .line 1081
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mIsClipped:Z
 
-    .line 1104
+    .line 1106
     :goto_2
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mInScreen:Z
 
-    .line 1107
+    .line 1109
     :cond_e
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v1, :cond_f
 
-    .line 1108
+    .line 1110
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
@@ -3930,16 +3930,16 @@
 
     invoke-virtual {v1, v4, v5}, Lcom/samsung/android/glview/GLView;->draw([FLandroid/graphics/Rect;)V
 
-    .line 1110
+    .line 1112
     :cond_f
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->onDraw()V
 
-    .line 1111
+    .line 1113
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mDrawFirstTime:Z
 
-    .line 1112
+    .line 1114
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v1
@@ -3958,7 +3958,7 @@
 
     if-eqz v1, :cond_10
 
-    .line 1113
+    .line 1115
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
@@ -3967,7 +3967,7 @@
 
     invoke-virtual {v1, v4, v5}, Lcom/samsung/android/glview/GLRectangle;->draw([FLandroid/graphics/Rect;)V
 
-    .line 1115
+    .line 1117
     :cond_10
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
@@ -3987,7 +3987,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1116
+    .line 1118
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
@@ -3998,7 +3998,7 @@
 
     goto/16 :goto_0
 
-    .line 1080
+    .line 1082
     :cond_11
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
@@ -4010,14 +4010,14 @@
 
     if-eqz v1, :cond_12
 
-    .line 1081
+    .line 1083
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mIsClipped:Z
 
     goto :goto_2
 
-    .line 1083
+    .line 1085
     :cond_12
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
@@ -4031,14 +4031,14 @@
 
     invoke-virtual {v1, v4, v5, v6, v7}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 1084
+    .line 1086
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mIsClipped:Z
 
     goto :goto_2
 
-    .line 1087
+    .line 1089
     :cond_13
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
@@ -4056,27 +4056,27 @@
 
     if-nez v1, :cond_14
 
-    .line 1088
+    .line 1090
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mClipping:Z
 
     if-eqz v1, :cond_14
 
-    .line 1089
+    .line 1091
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mInScreen:Z
 
-    .line 1090
+    .line 1092
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mIsClipped:Z
 
-    .line 1091
+    .line 1093
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->onOutOfScreen()V
 
     goto/16 :goto_0
 
-    .line 1095
+    .line 1097
     :cond_14
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mOriginalClipRect:Landroid/graphics/Rect;
 
@@ -4086,14 +4086,14 @@
 
     if-eqz v1, :cond_15
 
-    .line 1096
+    .line 1098
     const/4 v1, 0x0
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mIsClipped:Z
 
     goto/16 :goto_2
 
-    .line 1097
+    .line 1099
     :cond_15
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
@@ -4105,14 +4105,14 @@
 
     if-eqz v1, :cond_16
 
-    .line 1098
+    .line 1100
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mIsClipped:Z
 
     goto/16 :goto_2
 
-    .line 1100
+    .line 1102
     :cond_16
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
@@ -4126,7 +4126,7 @@
 
     invoke-virtual {v1, v4, v5, v6, v7}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 1101
+    .line 1103
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mIsClipped:Z
@@ -4141,12 +4141,12 @@
     .param p1, "level"    # I
 
     .prologue
-    .line 1121
+    .line 1123
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 1122
+    .line 1124
     .local v1, "s":Ljava/lang/StringBuilder;
     const/4 v0, 0x0
 
@@ -4154,30 +4154,30 @@
     :goto_0
     if-ge v0, p1, :cond_0
 
-    .line 1123
+    .line 1125
     const-string v2, "| "
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 1122
+    .line 1124
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1126
+    .line 1128
     :cond_0
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
     if-eqz v2, :cond_2
 
-    .line 1127
+    .line 1129
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTitle()Ljava/lang/String;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 1128
+    .line 1130
     const-string v2, "DUMP"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -4266,7 +4266,7 @@
 
     move-result-object v3
 
-    .line 1129
+    .line 1131
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTitle()Ljava/lang/String;
 
     move-result-object v4
@@ -4371,14 +4371,14 @@
 
     move-result-object v3
 
-    .line 1128
+    .line 1130
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1142
+    .line 1144
     :goto_1
     return-void
 
-    .line 1131
+    .line 1133
     :cond_1
     const-string v2, "DUMP"
 
@@ -4530,7 +4530,7 @@
 
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
-    .line 1132
+    .line 1134
     invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
 
     move-result v4
@@ -4565,12 +4565,12 @@
 
     move-result-object v3
 
-    .line 1131
+    .line 1133
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_1
 
-    .line 1135
+    .line 1137
     :cond_2
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTitle()Ljava/lang/String;
 
@@ -4578,7 +4578,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 1136
+    .line 1138
     const-string v2, "DUMP"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -4667,7 +4667,7 @@
 
     move-result-object v3
 
-    .line 1137
+    .line 1139
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTitle()Ljava/lang/String;
 
     move-result-object v4
@@ -4694,12 +4694,12 @@
 
     move-result-object v3
 
-    .line 1136
+    .line 1138
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_1
 
-    .line 1139
+    .line 1141
     :cond_3
     const-string v2, "DUMP"
 
@@ -4814,7 +4814,7 @@
     .prologue
     const/high16 v9, 0x40000000    # 2.0f
 
-    .line 1145
+    .line 1147
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->isFocusable()Z
 
     move-result v7
@@ -4823,20 +4823,20 @@
 
     if-nez p1, :cond_2
 
-    .line 1146
+    .line 1148
     :cond_0
     const/4 v5, 0x0
 
-    .line 1194
+    .line 1196
     :cond_1
     :goto_0
     return-object v5
 
-    .line 1148
+    .line 1150
     :cond_2
     const/4 v5, 0x0
 
-    .line 1151
+    .line 1153
     .local v5, "resultView":Lcom/samsung/android/glview/GLView;
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -4856,7 +4856,7 @@
 
     div-float v0, v7, v9
 
-    .line 1152
+    .line 1154
     .local v0, "centerX":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -4876,7 +4876,7 @@
 
     div-float v1, v7, v9
 
-    .line 1153
+    .line 1155
     .local v1, "centerY":F
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -4896,7 +4896,7 @@
 
     div-float v2, v7, v9
 
-    .line 1154
+    .line 1156
     .local v2, "focusedViewCenterX":F
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -4916,7 +4916,7 @@
 
     div-float v3, v7, v9
 
-    .line 1155
+    .line 1157
     .local v3, "focusedViewCenterY":F
     sub-float v7, v2, v0
 
@@ -4924,7 +4924,7 @@
 
     move-result v4
 
-    .line 1156
+    .line 1158
     .local v4, "horizontalOffset":F
     sub-float v7, v3, v1
 
@@ -4932,80 +4932,80 @@
 
     move-result v6
 
-    .line 1158
+    .line 1160
     .local v6, "verticalOffset":F
     sparse-switch p2, :sswitch_data_0
 
-    .line 1192
+    .line 1194
     const/4 v5, 0x0
 
     goto :goto_0
 
-    .line 1161
+    .line 1163
     :sswitch_0
     cmpl-float v7, v2, v0
 
     if-lez v7, :cond_1
 
-    .line 1162
+    .line 1164
     cmpl-float v7, v4, v6
 
     if-lez v7, :cond_1
 
-    .line 1163
+    .line 1165
     move-object v5, p0
 
     goto :goto_0
 
-    .line 1169
+    .line 1171
     :sswitch_1
     cmpg-float v7, v2, v0
 
     if-gez v7, :cond_1
 
-    .line 1170
+    .line 1172
     cmpl-float v7, v4, v6
 
     if-lez v7, :cond_1
 
-    .line 1171
+    .line 1173
     move-object v5, p0
 
     goto :goto_0
 
-    .line 1177
+    .line 1179
     :sswitch_2
     cmpl-float v7, v3, v1
 
     if-lez v7, :cond_1
 
-    .line 1178
+    .line 1180
     cmpg-float v7, v4, v6
 
     if-gez v7, :cond_1
 
-    .line 1179
+    .line 1181
     move-object v5, p0
 
     goto :goto_0
 
-    .line 1185
+    .line 1187
     :sswitch_3
     cmpg-float v7, v3, v1
 
     if-gez v7, :cond_1
 
-    .line 1186
+    .line 1188
     cmpg-float v7, v4, v6
 
     if-gez v7, :cond_1
 
-    .line 1187
+    .line 1189
     move-object v5, p0
 
     goto :goto_0
 
-    .line 1158
+    .line 1160
     :sswitch_data_0
     .sparse-switch
         0x11 -> :sswitch_0
@@ -5027,20 +5027,20 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1208
+    .line 1210
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
     if-eqz v1, :cond_1
 
     move-object p0, v0
 
-    .line 1220
+    .line 1222
     .end local p0    # "this":Lcom/samsung/android/glview/GLView;
     :cond_0
     :goto_0
     return-object p0
 
-    .line 1212
+    .line 1214
     .restart local p0    # "this":Lcom/samsung/android/glview/GLView;
     :cond_1
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mBypassTouch:Z
@@ -5049,10 +5049,10 @@
 
     move-object p0, v0
 
-    .line 1213
+    .line 1215
     goto :goto_0
 
-    .line 1216
+    .line 1218
     :cond_2
     invoke-virtual {p0, p1, p2}, Lcom/samsung/android/glview/GLView;->contains(FF)Z
 
@@ -5062,7 +5062,7 @@
 
     move-object p0, v0
 
-    .line 1220
+    .line 1222
     goto :goto_0
 .end method
 
@@ -5071,12 +5071,12 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 1230
+    .line 1232
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mViewId:I
 
     if-ne v0, p1, :cond_0
 
-    .line 1233
+    .line 1235
     .end local p0    # "this":Lcom/samsung/android/glview/GLView;
     :goto_0
     return-object p0
@@ -5093,7 +5093,7 @@
     .param p1, "objectTag"    # Ljava/lang/String;
 
     .prologue
-    .line 1243
+    .line 1245
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mObjectTag:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -5102,7 +5102,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1246
+    .line 1248
     .end local p0    # "this":Lcom/samsung/android/glview/GLView;
     :goto_0
     return-object p0
@@ -5119,12 +5119,12 @@
     .param p1, "tag"    # I
 
     .prologue
-    .line 1256
+    .line 1258
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mViewTag:I
 
     if-ne v0, p1, :cond_0
 
-    .line 1259
+    .line 1261
     .end local p0    # "this":Lcom/samsung/android/glview/GLView;
     :goto_0
     return-object p0
@@ -5142,20 +5142,20 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1269
+    .line 1271
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
     if-eqz v1, :cond_1
 
     move-object p0, v0
 
-    .line 1277
+    .line 1279
     .end local p0    # "this":Lcom/samsung/android/glview/GLView;
     :cond_0
     :goto_0
     return-object p0
 
-    .line 1273
+    .line 1275
     .restart local p0    # "this":Lcom/samsung/android/glview/GLView;
     :cond_1
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mBypassTouch:Z
@@ -5164,7 +5164,7 @@
 
     move-object p0, v0
 
-    .line 1274
+    .line 1276
     goto :goto_0
 .end method
 
@@ -5179,19 +5179,19 @@
 
     const/4 v2, 0x0
 
-    .line 1289
+    .line 1291
     iget v3, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
     if-eqz v3, :cond_0
 
     move-object p0, v2
 
-    .line 1325
+    .line 1327
     .end local p0    # "this":Lcom/samsung/android/glview/GLView;
     :goto_0
     return-object p0
 
-    .line 1293
+    .line 1295
     .restart local p0    # "this":Lcom/samsung/android/glview/GLView;
     :cond_0
     iget-boolean v3, p0, Lcom/samsung/android/glview/GLView;->mBypassTouch:Z
@@ -5200,10 +5200,10 @@
 
     move-object p0, v2
 
-    .line 1294
+    .line 1296
     goto :goto_0
 
-    .line 1297
+    .line 1299
     :cond_1
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -5223,7 +5223,7 @@
 
     div-float v0, v3, v5
 
-    .line 1298
+    .line 1300
     .local v0, "centerX":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -5243,17 +5243,17 @@
 
     div-float v1, v3, v5
 
-    .line 1300
+    .line 1302
     .local v1, "centerY":F
     packed-switch p1, :pswitch_data_0
 
     :cond_2
     move-object p0, v2
 
-    .line 1325
+    .line 1327
     goto :goto_0
 
-    .line 1302
+    .line 1304
     :pswitch_0
     cmpl-float v3, v0, p2
 
@@ -5265,7 +5265,7 @@
 
     goto :goto_0
 
-    .line 1307
+    .line 1309
     :pswitch_1
     cmpg-float v3, v0, p2
 
@@ -5277,7 +5277,7 @@
 
     goto :goto_0
 
-    .line 1312
+    .line 1314
     :pswitch_2
     cmpg-float v3, v0, p2
 
@@ -5289,7 +5289,7 @@
 
     goto :goto_0
 
-    .line 1317
+    .line 1319
     :pswitch_3
     cmpl-float v3, v0, p2
 
@@ -5301,7 +5301,7 @@
 
     goto :goto_0
 
-    .line 1300
+    .line 1302
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -5319,7 +5319,7 @@
     .prologue
     const/high16 v7, 0x40000000    # 2.0f
 
-    .line 1336
+    .line 1338
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->isFocusable()Z
 
     move-result v5
@@ -5328,20 +5328,20 @@
 
     if-nez p1, :cond_2
 
-    .line 1337
+    .line 1339
     :cond_0
     const/4 v4, 0x0
 
-    .line 1374
+    .line 1376
     :cond_1
     :goto_0
     return-object v4
 
-    .line 1339
+    .line 1341
     :cond_2
     const/4 v4, 0x0
 
-    .line 1341
+    .line 1343
     .local v4, "resultView":Lcom/samsung/android/glview/GLView;
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -5361,7 +5361,7 @@
 
     div-float v0, v5, v7
 
-    .line 1342
+    .line 1344
     .local v0, "centerX":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -5381,7 +5381,7 @@
 
     div-float v1, v5, v7
 
-    .line 1343
+    .line 1345
     .local v1, "centerY":F
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -5401,7 +5401,7 @@
 
     div-float v2, v5, v7
 
-    .line 1344
+    .line 1346
     .local v2, "focusedViewCenterX":F
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getOriginalClipRect()Landroid/graphics/Rect;
 
@@ -5421,16 +5421,16 @@
 
     div-float v3, v5, v7
 
-    .line 1346
+    .line 1348
     .local v3, "focusedViewCenterY":F
     sparse-switch p2, :sswitch_data_0
 
-    .line 1372
+    .line 1374
     const/4 v4, 0x0
 
     goto :goto_0
 
-    .line 1349
+    .line 1351
     :sswitch_0
     cmpg-float v5, v0, v2
 
@@ -5442,12 +5442,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 1350
+    .line 1352
     move-object v4, p0
 
     goto :goto_0
 
-    .line 1355
+    .line 1357
     :sswitch_1
     cmpl-float v5, v0, v2
 
@@ -5459,12 +5459,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 1356
+    .line 1358
     move-object v4, p0
 
     goto :goto_0
 
-    .line 1361
+    .line 1363
     :sswitch_2
     cmpg-float v5, v1, v3
 
@@ -5476,12 +5476,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 1362
+    .line 1364
     move-object v4, p0
 
     goto :goto_0
 
-    .line 1367
+    .line 1369
     :sswitch_3
     cmpl-float v5, v1, v3
 
@@ -5493,12 +5493,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 1368
+    .line 1370
     move-object v4, p0
 
     goto :goto_0
 
-    .line 1346
+    .line 1348
     :sswitch_data_0
     .sparse-switch
         0x11 -> :sswitch_0
@@ -5520,12 +5520,12 @@
 
     const v0, 0x3ee66666    # 0.45f
 
-    .line 1384
+    .line 1386
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v2, :cond_1
 
-    .line 1385
+    .line 1387
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mAlpha:F
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
@@ -5543,17 +5543,17 @@
     :goto_0
     mul-float/2addr v0, v2
 
-    .line 1388
+    .line 1390
     :goto_1
     return v0
 
     :cond_0
     move v0, v1
 
-    .line 1385
+    .line 1387
     goto :goto_0
 
-    .line 1388
+    .line 1390
     :cond_1
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mAlpha:F
 
@@ -5576,7 +5576,7 @@
     .locals 5
 
     .prologue
-    .line 1425
+    .line 1427
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
@@ -5604,21 +5604,21 @@
     .locals 2
 
     .prologue
-    .line 1434
+    .line 1436
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
     if-nez v0, :cond_0
 
-    .line 1435
+    .line 1437
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->initSize()V
 
-    .line 1437
+    .line 1439
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 1438
+    .line 1440
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->bottom:F
@@ -5631,7 +5631,7 @@
 
     add-float/2addr v0, v1
 
-    .line 1440
+    .line 1442
     :goto_0
     return v0
 
@@ -5647,7 +5647,7 @@
     .locals 1
 
     .prologue
-    .line 1444
+    .line 1446
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mBypassTouch:Z
 
     return v0
@@ -5657,7 +5657,7 @@
     .locals 1
 
     .prologue
-    .line 1457
+    .line 1459
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mCenterPivot:Z
 
     return v0
@@ -5667,7 +5667,7 @@
     .locals 1
 
     .prologue
-    .line 1470
+    .line 1472
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mClickListener:Lcom/samsung/android/glview/GLView$ClickListener;
 
     return-object v0
@@ -5677,15 +5677,15 @@
     .locals 1
 
     .prologue
-    .line 1483
+    .line 1485
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
     if-nez v0, :cond_0
 
-    .line 1484
+    .line 1486
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->refreshClipRect()V
 
-    .line 1486
+    .line 1488
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
@@ -5696,7 +5696,7 @@
     .locals 5
 
     .prologue
-    .line 1504
+    .line 1506
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getClipRect()Landroid/graphics/Rect;
@@ -5740,18 +5740,18 @@
     .locals 5
 
     .prologue
-    .line 1508
+    .line 1510
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContentAreaLeft()F
 
     move-result v0
 
-    .line 1509
+    .line 1511
     .local v0, "left":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContentAreaTop()F
 
     move-result v1
 
-    .line 1510
+    .line 1512
     .local v1, "top":F
     new-instance v2, Landroid/graphics/RectF;
 
@@ -5776,7 +5776,7 @@
     .locals 2
 
     .prologue
-    .line 1519
+    .line 1521
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
     move-result v0
@@ -5804,7 +5804,7 @@
     .locals 2
 
     .prologue
-    .line 1523
+    .line 1525
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
 
     move-result v0
@@ -5824,7 +5824,7 @@
     .locals 2
 
     .prologue
-    .line 1527
+    .line 1529
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
 
     move-result v0
@@ -5844,7 +5844,7 @@
     .locals 2
 
     .prologue
-    .line 1536
+    .line 1538
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
     move-result v0
@@ -5872,7 +5872,7 @@
     .locals 1
 
     .prologue
-    .line 1540
+    .line 1542
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mContentDescription:Ljava/lang/String;
 
     return-object v0
@@ -5882,7 +5882,7 @@
     .locals 1
 
     .prologue
-    .line 1553
+    .line 1555
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     return-object v0
@@ -5892,18 +5892,18 @@
     .locals 7
 
     .prologue
-    .line 1562
+    .line 1564
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTranslateX()F
 
     move-result v4
 
-    .line 1563
+    .line 1565
     .local v4, "offsetX":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTranslateY()F
 
     move-result v5
 
-    .line 1564
+    .line 1566
     .local v5, "offsetY":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
 
@@ -5911,7 +5911,7 @@
 
     add-float v1, v6, v4
 
-    .line 1565
+    .line 1567
     .local v1, "currentLeft":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
 
@@ -5919,7 +5919,7 @@
 
     add-float v3, v6, v5
 
-    .line 1566
+    .line 1568
     .local v3, "currentTop":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
@@ -5927,7 +5927,7 @@
 
     add-float v2, v1, v6
 
-    .line 1567
+    .line 1569
     .local v2, "currentRight":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
@@ -5935,7 +5935,7 @@
 
     add-float v0, v3, v6
 
-    .line 1569
+    .line 1571
     .local v0, "currentBottom":F
     new-instance v6, Landroid/graphics/RectF;
 
@@ -5948,7 +5948,7 @@
     .locals 2
 
     .prologue
-    .line 1578
+    .line 1580
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getBottom()F
 
     move-result v0
@@ -5966,12 +5966,12 @@
     .locals 7
 
     .prologue
-    .line 1582
+    .line 1584
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getCurrentArea()Landroid/graphics/RectF;
 
     move-result-object v0
 
-    .line 1583
+    .line 1585
     .local v0, "current":Landroid/graphics/RectF;
     new-instance v1, Landroid/graphics/RectF;
 
@@ -6024,7 +6024,7 @@
     .locals 2
 
     .prologue
-    .line 1592
+    .line 1594
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getDepth()F
 
     move-result v0
@@ -6042,7 +6042,7 @@
     .locals 2
 
     .prologue
-    .line 1601
+    .line 1603
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
 
     move-result v0
@@ -6060,7 +6060,7 @@
     .locals 2
 
     .prologue
-    .line 1610
+    .line 1612
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getRight()F
 
     move-result v0
@@ -6078,7 +6078,7 @@
     .locals 2
 
     .prologue
-    .line 1619
+    .line 1621
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
 
     move-result v0
@@ -6096,12 +6096,12 @@
     .locals 2
 
     .prologue
-    .line 1623
+    .line 1625
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 1624
+    .line 1626
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
@@ -6112,7 +6112,7 @@
 
     add-float/2addr v0, v1
 
-    .line 1626
+    .line 1628
     :goto_0
     return v0
 
@@ -6126,7 +6126,7 @@
     .locals 1
 
     .prologue
-    .line 1630
+    .line 1632
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDraggable:Z
 
     return v0
@@ -6136,7 +6136,7 @@
     .locals 1
 
     .prologue
-    .line 1638
+    .line 1640
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusListener:Lcom/samsung/android/glview/GLView$FocusListener;
 
     return-object v0
@@ -6146,15 +6146,15 @@
     .locals 2
 
     .prologue
-    .line 1651
+    .line 1653
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
     if-nez v0, :cond_0
 
-    .line 1652
+    .line 1654
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->initSize()V
 
-    .line 1654
+    .line 1656
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -6173,7 +6173,7 @@
     .locals 1
 
     .prologue
-    .line 1676
+    .line 1678
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mViewId:I
 
     return v0
@@ -6183,16 +6183,16 @@
     .locals 2
 
     .prologue
-    .line 1680
+    .line 1682
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mInternalFocus:Z
 
-    .line 1681
+    .line 1683
     .local v0, "result":Z
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v1, :cond_1
 
-    .line 1682
+    .line 1684
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLView;->getInternalFocus()Z
@@ -6206,12 +6206,12 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 1684
+    .line 1686
     :cond_1
     :goto_0
     return v0
 
-    .line 1682
+    .line 1684
     :cond_2
     const/4 v0, 0x0
 
@@ -6222,24 +6222,24 @@
     .locals 1
 
     .prologue
-    .line 1700
+    .line 1702
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mInternalFocus:Z
 
     if-eqz v0, :cond_0
 
-    .line 1705
+    .line 1707
     .end local p0    # "this":Lcom/samsung/android/glview/GLView;
     :goto_0
     return-object p0
 
-    .line 1702
+    .line 1704
     .restart local p0    # "this":Lcom/samsung/android/glview/GLView;
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 1703
+    .line 1705
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->getInternalFocusParent()Lcom/samsung/android/glview/GLView;
@@ -6248,7 +6248,7 @@
 
     goto :goto_0
 
-    .line 1705
+    .line 1707
     :cond_1
     const/4 p0, 0x0
 
@@ -6259,7 +6259,7 @@
     .locals 1
 
     .prologue
-    .line 1715
+    .line 1717
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->left:F
@@ -6271,7 +6271,7 @@
     .locals 1
 
     .prologue
-    .line 1724
+    .line 1726
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F
@@ -6283,7 +6283,7 @@
     .locals 1
 
     .prologue
-    .line 1733
+    .line 1735
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
     return v0
@@ -6293,17 +6293,17 @@
     .locals 2
 
     .prologue
-    .line 1742
+    .line 1744
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mPositionChanged:Z
 
     if-eqz v0, :cond_1
 
-    .line 1743
+    .line 1745
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 1744
+    .line 1746
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->left:F
@@ -6318,7 +6318,7 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mLeft:F
 
-    .line 1745
+    .line 1747
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F
@@ -6333,20 +6333,20 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mTop:F
 
-    .line 1750
+    .line 1752
     :goto_0
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mPositionChanged:Z
 
-    .line 1751
+    .line 1753
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mLeft:F
 
-    .line 1753
+    .line 1755
     :goto_1
     return v0
 
-    .line 1747
+    .line 1749
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -6354,7 +6354,7 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mLeft:F
 
-    .line 1748
+    .line 1750
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F
@@ -6363,7 +6363,7 @@
 
     goto :goto_0
 
-    .line 1753
+    .line 1755
     :cond_1
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mLeft:F
 
@@ -6381,14 +6381,14 @@
 
     const/high16 v4, 0x40000000    # 2.0f
 
-    .line 1764
+    .line 1766
     const/4 v2, 0x3
 
     if-gt p1, v2, :cond_0
 
     if-gez p1, :cond_1
 
-    .line 1765
+    .line 1767
     :cond_0
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
@@ -6396,13 +6396,13 @@
 
     throw v2
 
-    .line 1767
+    .line 1769
     :cond_1
     iget-boolean v2, p0, Lcom/samsung/android/glview/GLView;->mCenterPivot:Z
 
     if-eqz v2, :cond_3
 
-    .line 1768
+    .line 1770
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
 
     move-result v2
@@ -6415,7 +6415,7 @@
 
     div-float v0, v2, v4
 
-    .line 1769
+    .line 1771
     .local v0, "centerX":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
 
@@ -6429,11 +6429,11 @@
 
     div-float v1, v2, v4
 
-    .line 1771
+    .line 1773
     .local v1, "centerY":F
     packed-switch p1, :pswitch_data_0
 
-    .line 1799
+    .line 1801
     .end local v0    # "centerX":F
     .end local v1    # "centerY":F
     :cond_2
@@ -6442,7 +6442,7 @@
 
     return-object v2
 
-    .line 1773
+    .line 1775
     .restart local v0    # "centerX":F
     .restart local v1    # "centerY":F
     :pswitch_0
@@ -6454,7 +6454,7 @@
 
     aput v3, v2, v5
 
-    .line 1774
+    .line 1776
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
@@ -6465,7 +6465,7 @@
 
     goto :goto_0
 
-    .line 1777
+    .line 1779
     :pswitch_1
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
@@ -6479,7 +6479,7 @@
 
     aput v3, v2, v5
 
-    .line 1778
+    .line 1780
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
@@ -6494,7 +6494,7 @@
 
     goto :goto_0
 
-    .line 1781
+    .line 1783
     :pswitch_2
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
@@ -6510,7 +6510,7 @@
 
     aput v3, v2, v5
 
-    .line 1782
+    .line 1784
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
@@ -6527,7 +6527,7 @@
 
     goto :goto_0
 
-    .line 1785
+    .line 1787
     :pswitch_3
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
@@ -6541,7 +6541,7 @@
 
     aput v3, v2, v5
 
-    .line 1786
+    .line 1788
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
@@ -6556,7 +6556,7 @@
 
     goto :goto_0
 
-    .line 1793
+    .line 1795
     .end local v0    # "centerX":F
     .end local v1    # "centerY":F
     :cond_3
@@ -6564,7 +6564,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 1794
+    .line 1796
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
@@ -6575,7 +6575,7 @@
 
     aput v3, v2, v5
 
-    .line 1795
+    .line 1797
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
@@ -6588,7 +6588,7 @@
 
     goto :goto_0
 
-    .line 1771
+    .line 1773
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
@@ -6602,7 +6602,7 @@
     .locals 1
 
     .prologue
-    .line 1808
+    .line 1810
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLoaded:Z
 
     return v0
@@ -6612,7 +6612,7 @@
     .locals 1
 
     .prologue
-    .line 1812
+    .line 1814
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLongClickListener:Lcom/samsung/android/glview/GLView$LongClickListener;
 
     return-object v0
@@ -6622,7 +6622,7 @@
     .locals 1
 
     .prologue
-    .line 3865
+    .line 3870
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
 
     return-object v0
@@ -6632,12 +6632,12 @@
     .locals 2
 
     .prologue
-    .line 1821
+    .line 1823
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 1822
+    .line 1824
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->left:F
@@ -6654,7 +6654,7 @@
 
     add-float/2addr v0, v1
 
-    .line 1824
+    .line 1826
     :goto_0
     return v0
 
@@ -6674,12 +6674,12 @@
     .locals 2
 
     .prologue
-    .line 1828
+    .line 1830
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 1829
+    .line 1831
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F
@@ -6696,7 +6696,7 @@
 
     add-float/2addr v0, v1
 
-    .line 1831
+    .line 1833
     :goto_0
     return v0
 
@@ -6716,12 +6716,12 @@
     .locals 2
 
     .prologue
-    .line 1835
+    .line 1837
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 1836
+    .line 1838
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
@@ -6736,7 +6736,7 @@
 
     add-float/2addr v0, v1
 
-    .line 1838
+    .line 1840
     :goto_0
     return v0
 
@@ -6754,7 +6754,7 @@
     .locals 1
 
     .prologue
-    .line 1842
+    .line 1844
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusDownId:I
 
     return v0
@@ -6764,7 +6764,7 @@
     .locals 1
 
     .prologue
-    .line 1855
+    .line 1857
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusForwardId:I
 
     return v0
@@ -6774,7 +6774,7 @@
     .locals 1
 
     .prologue
-    .line 1868
+    .line 1870
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusLeftId:I
 
     return v0
@@ -6784,7 +6784,7 @@
     .locals 1
 
     .prologue
-    .line 1876
+    .line 1878
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusRightId:I
 
     return v0
@@ -6794,7 +6794,7 @@
     .locals 1
 
     .prologue
-    .line 1884
+    .line 1886
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusUpId:I
 
     return v0
@@ -6804,7 +6804,7 @@
     .locals 1
 
     .prologue
-    .line 1898
+    .line 1900
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mObjectTag:Ljava/lang/String;
 
     return-object v0
@@ -6814,12 +6814,12 @@
     .locals 2
 
     .prologue
-    .line 1917
+    .line 1919
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 1918
+    .line 1920
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mOrientation:I
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
@@ -6832,7 +6832,7 @@
 
     rem-int/lit8 v0, v0, 0x4
 
-    .line 1921
+    .line 1923
     :goto_0
     return v0
 
@@ -6846,15 +6846,15 @@
     .locals 1
 
     .prologue
-    .line 1955
+    .line 1957
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mOriginalClipRect:Landroid/graphics/Rect;
 
     if-nez v0, :cond_0
 
-    .line 1956
+    .line 1958
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->refreshClipRect()V
 
-    .line 1958
+    .line 1960
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mOriginalClipRect:Landroid/graphics/Rect;
 
@@ -6865,7 +6865,7 @@
     .locals 1
 
     .prologue
-    .line 1967
+    .line 1969
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
 
     return-object v0
@@ -6875,19 +6875,19 @@
     .locals 1
 
     .prologue
-    .line 1991
+    .line 1993
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-nez v0, :cond_0
 
-    .line 1992
+    .line 1994
     const/4 v0, 0x0
 
-    .line 1999
+    .line 2001
     :goto_0
     return-object v0
 
-    .line 1995
+    .line 1997
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
@@ -6897,7 +6897,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1996
+    .line 1998
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->getClipRect()Landroid/graphics/Rect;
@@ -6906,7 +6906,7 @@
 
     goto :goto_0
 
-    .line 1999
+    .line 2001
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
@@ -6921,7 +6921,7 @@
     .locals 1
 
     .prologue
-    .line 2008
+    .line 2010
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mParentHAlign:I
 
     return v0
@@ -6931,7 +6931,7 @@
     .locals 1
 
     .prologue
-    .line 2025
+    .line 2027
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mParentViewId:I
 
     return v0
@@ -6941,7 +6941,7 @@
     .locals 1
 
     .prologue
-    .line 2042
+    .line 2044
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mParentVAlign:I
 
     return v0
@@ -6951,7 +6951,7 @@
     .locals 1
 
     .prologue
-    .line 2055
+    .line 2057
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickInterval:I
 
     return v0
@@ -6961,21 +6961,21 @@
     .locals 2
 
     .prologue
-    .line 2068
+    .line 2070
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
     if-nez v0, :cond_0
 
-    .line 2069
+    .line 2071
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->initSize()V
 
-    .line 2071
+    .line 2073
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 2072
+    .line 2074
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->right:F
@@ -6988,7 +6988,7 @@
 
     add-float/2addr v0, v1
 
-    .line 2074
+    .line 2076
     :goto_0
     return v0
 
@@ -7004,7 +7004,7 @@
     .locals 1
 
     .prologue
-    .line 2083
+    .line 2085
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRotatable:Z
 
     return v0
@@ -7014,7 +7014,7 @@
     .locals 1
 
     .prologue
-    .line 2101
+    .line 2103
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRotateAnimation:Z
 
     return v0
@@ -7024,12 +7024,12 @@
     .locals 2
 
     .prologue
-    .line 2114
+    .line 2116
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 2115
+    .line 2117
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mRotateDegree:I
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
@@ -7040,7 +7040,7 @@
 
     add-int/2addr v0, v1
 
-    .line 2117
+    .line 2119
     :goto_0
     return v0
 
@@ -7054,7 +7054,7 @@
     .locals 1
 
     .prologue
-    .line 2126
+    .line 2128
     const/4 v0, 0x0
 
     return v0
@@ -7064,7 +7064,7 @@
     .locals 1
 
     .prologue
-    .line 2130
+    .line 2132
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeGiven:Z
 
     return v0
@@ -7074,7 +7074,7 @@
     .locals 1
 
     .prologue
-    .line 3874
+    .line 3879
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
     return v0
@@ -7084,7 +7084,7 @@
     .locals 1
 
     .prologue
-    .line 2134
+    .line 2136
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mSubTitle:Ljava/lang/String;
 
     return-object v0
@@ -7094,7 +7094,7 @@
     .locals 1
 
     .prologue
-    .line 2147
+    .line 2149
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mViewTag:I
 
     return v0
@@ -7104,7 +7104,7 @@
     .locals 1
 
     .prologue
-    .line 2160
+    .line 2162
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mTitle:Ljava/lang/String;
 
     return-object v0
@@ -7114,17 +7114,17 @@
     .locals 2
 
     .prologue
-    .line 2173
+    .line 2175
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mPositionChanged:Z
 
     if-eqz v0, :cond_1
 
-    .line 2174
+    .line 2176
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 2175
+    .line 2177
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->left:F
@@ -7139,7 +7139,7 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mLeft:F
 
-    .line 2176
+    .line 2178
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F
@@ -7154,20 +7154,20 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mTop:F
 
-    .line 2181
+    .line 2183
     :goto_0
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mPositionChanged:Z
 
-    .line 2182
+    .line 2184
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mTop:F
 
-    .line 2184
+    .line 2186
     :goto_1
     return v0
 
-    .line 2178
+    .line 2180
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -7175,7 +7175,7 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mLeft:F
 
-    .line 2179
+    .line 2181
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F
@@ -7184,7 +7184,7 @@
 
     goto :goto_0
 
-    .line 2184
+    .line 2186
     :cond_1
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mTop:F
 
@@ -7195,12 +7195,12 @@
     .locals 2
 
     .prologue
-    .line 2194
+    .line 2196
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 2195
+    .line 2197
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
@@ -7211,7 +7211,7 @@
 
     add-float/2addr v0, v1
 
-    .line 2197
+    .line 2199
     :goto_0
     return v0
 
@@ -7225,12 +7225,12 @@
     .locals 2
 
     .prologue
-    .line 2206
+    .line 2208
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 2207
+    .line 2209
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
@@ -7241,7 +7241,7 @@
 
     add-float/2addr v0, v1
 
-    .line 2209
+    .line 2211
     :goto_0
     return v0
 
@@ -7255,12 +7255,12 @@
     .locals 2
 
     .prologue
-    .line 2218
+    .line 2220
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 2219
+    .line 2221
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mTranslateZ:F
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
@@ -7271,7 +7271,7 @@
 
     add-float/2addr v0, v1
 
-    .line 2221
+    .line 2223
     :goto_0
     return v0
 
@@ -7285,23 +7285,23 @@
     .locals 4
 
     .prologue
-    .line 2230
+    .line 2232
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2232
+    .line 2234
     .local v1, "ttsString":Ljava/lang/StringBuilder;
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mContentDescription:Ljava/lang/String;
 
     if-eqz v2, :cond_4
 
-    .line 2233
+    .line 2235
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mContentDescription:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2237
+    .line 2239
     :cond_0
     :goto_0
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -7314,7 +7314,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 2239
+    .line 2241
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
@@ -7327,33 +7327,33 @@
 
     move-result-object v0
 
-    .line 2240
+    .line 2242
     .local v0, "temp":Ljava/lang/String;
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->setLength(I)V
 
-    .line 2241
+    .line 2243
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2243
+    .line 2245
     .end local v0    # "temp":Ljava/lang/String;
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mSubTitle:Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
-    .line 2244
+    .line 2246
     const-string v2, ","
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2245
+    .line 2247
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mSubTitle:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2247
+    .line 2249
     :cond_2
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->isDim()Z
 
@@ -7361,12 +7361,12 @@
 
     if-eqz v2, :cond_3
 
-    .line 2248
+    .line 2250
     const-string v2, ","
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2249
+    .line 2251
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
@@ -7379,7 +7379,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2251
+    .line 2253
     :cond_3
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -7387,13 +7387,13 @@
 
     return-object v2
 
-    .line 2234
+    .line 2236
     :cond_4
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTitle:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
-    .line 2235
+    .line 2237
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTitle:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -7405,7 +7405,7 @@
     .locals 1
 
     .prologue
-    .line 2260
+    .line 2262
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
     return v0
@@ -7415,15 +7415,15 @@
     .locals 2
 
     .prologue
-    .line 2284
+    .line 2286
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
     if-nez v0, :cond_0
 
-    .line 2285
+    .line 2287
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->initSize()V
 
-    .line 2287
+    .line 2289
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -7445,7 +7445,7 @@
     .locals 1
 
     .prologue
-    .line 2314
+    .line 2316
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mAnimationFinished:Z
 
     return v0
@@ -7455,7 +7455,7 @@
     .locals 2
 
     .prologue
-    .line 2318
+    .line 2320
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mViewFlags:I
 
     and-int/lit16 v0, v0, 0x4000
@@ -7479,7 +7479,7 @@
     .locals 1
 
     .prologue
-    .line 3878
+    .line 3883
     monitor-enter p0
 
     :try_start_0
@@ -7503,7 +7503,7 @@
     .locals 1
 
     .prologue
-    .line 2338
+    .line 2340
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mForcedClipping:Z
 
     return v0
@@ -7513,12 +7513,12 @@
     .locals 1
 
     .prologue
-    .line 2342
+    .line 2344
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_2
 
-    .line 2343
+    .line 2345
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->isDim()Z
@@ -7534,17 +7534,17 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2345
+    .line 2347
     :goto_0
     return v0
 
-    .line 2343
+    .line 2345
     :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 2345
+    .line 2347
     :cond_2
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDimmed:Z
 
@@ -7555,7 +7555,7 @@
     .locals 1
 
     .prologue
-    .line 2363
+    .line 2365
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDragging:Z
 
     return v0
@@ -7567,7 +7567,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 2368
+    .line 2370
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mViewFlags:I
 
     and-int/lit8 v1, v1, 0x1
@@ -7597,7 +7597,7 @@
     .locals 1
 
     .prologue
-    .line 2381
+    .line 2383
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mFocused:Z
 
     return v0
@@ -7608,7 +7608,7 @@
     .param p1, "direction"    # I
 
     .prologue
-    .line 2385
+    .line 2387
     const/16 v0, 0x41
 
     if-eq p1, v0, :cond_0
@@ -7625,11 +7625,11 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 2386
+    .line 2388
     :cond_0
     const/4 v0, 0x1
 
-    .line 2388
+    .line 2390
     :goto_0
     return v0
 
@@ -7643,7 +7643,7 @@
     .locals 1
 
     .prologue
-    .line 2392
+    .line 2394
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mInScreen:Z
 
     return v0
@@ -7653,7 +7653,7 @@
     .locals 1
 
     .prologue
-    .line 2396
+    .line 2398
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
 
     return v0
@@ -7663,19 +7663,19 @@
     .locals 1
 
     .prologue
-    .line 2409
+    .line 2411
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-nez v0, :cond_0
 
-    .line 2410
+    .line 2412
     const/4 v0, 0x0
 
-    .line 2417
+    .line 2419
     :goto_0
     return v0
 
-    .line 2413
+    .line 2415
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
@@ -7685,12 +7685,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 2414
+    .line 2416
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 2417
+    .line 2419
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
@@ -7705,12 +7705,12 @@
     .locals 1
 
     .prologue
-    .line 2421
+    .line 2423
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 2422
+    .line 2424
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->getRotatable()Z
@@ -7719,14 +7719,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 2423
+    .line 2425
     const/4 v0, 0x1
 
-    .line 2428
+    .line 2430
     :goto_0
     return v0
 
-    .line 2425
+    .line 2427
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
@@ -7736,7 +7736,7 @@
 
     goto :goto_0
 
-    .line 2428
+    .line 2430
     :cond_1
     const/4 v0, 0x0
 
@@ -7747,7 +7747,7 @@
     .locals 1
 
     .prologue
-    .line 2432
+    .line 2434
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickWhenLongClicked:Z
 
     return v0
@@ -7757,12 +7757,12 @@
     .locals 1
 
     .prologue
-    .line 2443
+    .line 2445
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 2444
+    .line 2446
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->isVisible()I
@@ -7773,17 +7773,17 @@
 
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
-    .line 2446
+    .line 2448
     :goto_0
     return v0
 
-    .line 2444
+    .line 2446
     :cond_0
     const/4 v0, 0x4
 
     goto :goto_0
 
-    .line 2446
+    .line 2448
     :cond_1
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
@@ -7796,12 +7796,12 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 2450
+    .line 2452
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mKeyListener:Lcom/samsung/android/glview/GLView$KeyListener;
 
     if-eqz v0, :cond_0
 
-    .line 2451
+    .line 2453
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mKeyListener:Lcom/samsung/android/glview/GLView$KeyListener;
 
     invoke-interface {v0, p0, p2}, Lcom/samsung/android/glview/GLView$KeyListener;->onKeyDown(Lcom/samsung/android/glview/GLView;Landroid/view/KeyEvent;)Z
@@ -7810,10 +7810,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2452
+    .line 2454
     const/4 v0, 0x1
 
-    .line 2454
+    .line 2456
     :goto_0
     return v0
 
@@ -7831,12 +7831,12 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 2458
+    .line 2460
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mKeyListener:Lcom/samsung/android/glview/GLView$KeyListener;
 
     if-eqz v0, :cond_0
 
-    .line 2459
+    .line 2461
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mKeyListener:Lcom/samsung/android/glview/GLView$KeyListener;
 
     invoke-interface {v0, p0, p2}, Lcom/samsung/android/glview/GLView$KeyListener;->onKeyUp(Lcom/samsung/android/glview/GLView;Landroid/view/KeyEvent;)Z
@@ -7845,10 +7845,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2460
+    .line 2462
     const/4 v0, 0x1
 
-    .line 2462
+    .line 2464
     :goto_0
     return v0
 
@@ -7868,25 +7868,25 @@
 
     const/4 v0, 0x1
 
-    .line 2471
+    .line 2473
     iget-boolean v2, p0, Lcom/samsung/android/glview/GLView;->mLoading:Z
 
     if-eqz v2, :cond_2
 
-    .line 2472
+    .line 2474
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLoaded()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 2473
+    .line 2475
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLoaded:Z
 
-    .line 2474
+    .line 2476
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mLoading:Z
 
-    .line 2493
+    .line 2495
     :cond_0
     :goto_0
     return v0
@@ -7894,51 +7894,51 @@
     :cond_1
     move v0, v1
 
-    .line 2477
+    .line 2479
     goto :goto_0
 
-    .line 2480
+    .line 2482
     :cond_2
     iget-boolean v2, p0, Lcom/samsung/android/glview/GLView;->mLoaded:Z
 
     if-nez v2, :cond_0
 
-    .line 2483
+    .line 2485
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->onLoad()Z
 
     move-result v2
 
     if-eqz v2, :cond_4
 
-    .line 2484
+    .line 2486
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLoaded:Z
 
-    .line 2485
+    .line 2487
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mLoading:Z
 
-    .line 2487
+    .line 2489
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_3
 
-    .line 2488
+    .line 2490
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->load()Z
 
-    .line 2493
+    .line 2495
     :cond_3
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLoaded:Z
 
     goto :goto_0
 
-    .line 2490
+    .line 2492
     :cond_4
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLoading:Z
 
     move v0, v1
 
-    .line 2491
+    .line 2493
     goto :goto_0
 .end method
 
@@ -7946,7 +7946,7 @@
     .locals 1
 
     .prologue
-    .line 3885
+    .line 3890
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
     return-object v0
@@ -7967,27 +7967,27 @@
 
     const/4 v1, 0x0
 
-    .line 2512
+    .line 2514
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->glCoordinate:[F
 
     aput p2, v0, v1
 
-    .line 2513
+    .line 2515
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->glCoordinate:[F
 
     aput p3, v0, v6
 
-    .line 2514
+    .line 2516
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->glCoordinate:[F
 
     aput v2, v0, v3
 
-    .line 2515
+    .line 2517
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->glTransformedCoordinate:[F
 
     aput v2, v0, v3
 
-    .line 2516
+    .line 2518
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->glTransformedCoordinate:[F
 
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
@@ -8000,21 +8000,21 @@
 
     invoke-static/range {v0 .. v5}, Landroid/opengl/Matrix;->multiplyMV([FI[FI[FI)V
 
-    .line 2518
+    .line 2520
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->glTransformedCoordinate:[F
 
     aget v0, v0, v1
 
     aput v0, p1, v1
 
-    .line 2519
+    .line 2521
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->glTransformedCoordinate:[F
 
     aget v0, v0, v6
 
     aput v0, p1, v6
 
-    .line 2520
+    .line 2522
     return-void
 .end method
 
@@ -8025,7 +8025,7 @@
     .param p3, "screenY"    # F
 
     .prologue
-    .line 3896
+    .line 3901
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOrientation()I
 
     move-result v2
@@ -8036,43 +8036,43 @@
 
     rem-int/lit8 v10, v2, 0x4
 
-    .line 3897
+    .line 3902
     .local v10, "orientation":I
     if-nez v10, :cond_0
 
-    .line 3898
+    .line 3903
     const/4 v2, 0x0
 
     aput p2, p1, v2
 
-    .line 3899
+    .line 3904
     const/4 v2, 0x1
 
     aput p3, p1, v2
 
-    .line 3939
+    .line 3944
     :goto_0
     return-void
 
-    .line 3903
+    .line 3908
     :cond_0
     const/16 v2, 0x10
 
     new-array v0, v2, [F
 
-    .line 3907
+    .line 3912
     .local v0, "coordinateTransformMatrix":[F
     invoke-virtual {p0, v10}, Lcom/samsung/android/glview/GLView;->getLeftTop(I)[F
 
     move-result-object v9
 
-    .line 3908
+    .line 3913
     .local v9, "leftTop":[F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v2, :cond_1
 
-    .line 3909
+    .line 3914
     const/4 v2, 0x0
 
     aget v3, v9, v2
@@ -8087,7 +8087,7 @@
 
     aput v3, v9, v2
 
-    .line 3910
+    .line 3915
     const/4 v2, 0x1
 
     aget v3, v9, v2
@@ -8102,13 +8102,13 @@
 
     aput v3, v9, v2
 
-    .line 3913
+    .line 3918
     :cond_1
     const/4 v2, 0x4
 
     new-array v7, v2, [F
 
-    .line 3914
+    .line 3919
     .local v7, "glLeftTopCoordinate":[F
     const/4 v2, 0x3
 
@@ -8116,7 +8116,7 @@
 
     aput v3, v7, v2
 
-    .line 3915
+    .line 3920
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
@@ -8129,12 +8129,12 @@
 
     invoke-static {v2, v7, v3, v4}, Lcom/samsung/android/glview/GLUtil;->getGLCoordinateFromScreenCoordinate(Lcom/samsung/android/glview/GLContext;[FFF)V
 
-    .line 3917
+    .line 3922
     const/4 v2, 0x4
 
     new-array v8, v2, [F
 
-    .line 3918
+    .line 3923
     .local v8, "glRotatedLeftTopCoordinate":[F
     const/4 v2, 0x3
 
@@ -8142,7 +8142,7 @@
 
     aput v3, v8, v2
 
-    .line 3919
+    .line 3924
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v3, 0x0
@@ -8155,12 +8155,12 @@
 
     invoke-static {v2, v8, v3, v4}, Lcom/samsung/android/glview/GLUtil;->getGLCoordinateFromScreenCoordinate(Lcom/samsung/android/glview/GLContext;[FFF)V
 
-    .line 3921
+    .line 3926
     const/4 v2, 0x0
 
     invoke-static {v0, v2}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 3922
+    .line 3927
     const/4 v2, 0x0
 
     const/4 v3, 0x0
@@ -8175,7 +8175,7 @@
 
     invoke-static {v0, v2, v3, v4, v6}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3923
+    .line 3928
     const/4 v1, 0x0
 
     mul-int/lit8 v2, v10, 0x5a
@@ -8190,7 +8190,7 @@
 
     invoke-static/range {v0 .. v5}, Landroid/opengl/Matrix;->rotateM([FIFFFF)V
 
-    .line 3924
+    .line 3929
     const/4 v2, 0x0
 
     const/4 v3, 0x0
@@ -8209,12 +8209,12 @@
 
     invoke-static {v0, v2, v3, v4, v6}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3929
+    .line 3934
     const/4 v2, 0x4
 
     new-array v5, v2, [F
 
-    .line 3930
+    .line 3935
     .local v5, "glCoordinate":[F
     const/4 v2, 0x3
 
@@ -8222,17 +8222,17 @@
 
     aput v3, v5, v2
 
-    .line 3931
+    .line 3936
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-static {v2, v5, p2, p3}, Lcom/samsung/android/glview/GLUtil;->getGLCoordinateFromScreenCoordinate(Lcom/samsung/android/glview/GLContext;[FFF)V
 
-    .line 3933
+    .line 3938
     const/4 v2, 0x4
 
     new-array v1, v2, [F
 
-    .line 3934
+    .line 3939
     .local v1, "glTransformedCoordinate":[F
     const/4 v2, 0x3
 
@@ -8240,7 +8240,7 @@
 
     aput v3, v1, v2
 
-    .line 3935
+    .line 3940
     const/4 v2, 0x0
 
     const/4 v4, 0x0
@@ -8251,7 +8251,7 @@
 
     invoke-static/range {v1 .. v6}, Landroid/opengl/Matrix;->multiplyMV([FI[FI[FI)V
 
-    .line 3937
+    .line 3942
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v3, 0x0
@@ -8272,26 +8272,26 @@
     .param p1, "z"    # F
 
     .prologue
-    .line 2523
+    .line 2525
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
     add-float/2addr v0, p1
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
-    .line 2524
+    .line 2526
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
     add-float/2addr v0, p1
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
-    .line 2531
+    .line 2533
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2532
+    .line 2534
     return-void
 .end method
 
@@ -8301,29 +8301,29 @@
     .param p2, "update"    # Z
 
     .prologue
-    .line 2535
+    .line 2537
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
     add-float/2addr v0, p1
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
-    .line 2536
+    .line 2538
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
     add-float/2addr v0, p1
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
-    .line 2543
+    .line 2545
     if-eqz p2, :cond_0
 
-    .line 2544
+    .line 2546
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2546
+    .line 2548
     :cond_0
     return-void
 .end method
@@ -8333,12 +8333,12 @@
     .param p1, "z"    # F
 
     .prologue
-    .line 2549
+    .line 2551
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getMoveLayoutZ()F
 
     move-result v0
 
-    .line 2551
+    .line 2553
     .local v0, "moveZ":F
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mOriginalDepth:F
 
@@ -8346,19 +8346,19 @@
 
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
-    .line 2552
+    .line 2554
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
     add-float/2addr v1, v0
 
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
-    .line 2559
+    .line 2561
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2560
+    .line 2562
     return-void
 .end method
 
@@ -8368,12 +8368,12 @@
     .param p2, "update"    # Z
 
     .prologue
-    .line 2563
+    .line 2565
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getMoveLayoutZ()F
 
     move-result v0
 
-    .line 2565
+    .line 2567
     .local v0, "moveZ":F
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mOriginalDepth:F
 
@@ -8381,22 +8381,22 @@
 
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
-    .line 2566
+    .line 2568
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
     add-float/2addr v1, v0
 
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
-    .line 2573
+    .line 2575
     if-eqz p2, :cond_0
 
-    .line 2574
+    .line 2576
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2576
+    .line 2578
     :cond_0
     return-void
 .end method
@@ -8407,18 +8407,18 @@
     .param p2, "y"    # F
 
     .prologue
-    .line 2579
+    .line 2581
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
     move-result v1
 
-    .line 2580
+    .line 2582
     .local v1, "width":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
     move-result v0
 
-    .line 2582
+    .line 2584
     .local v0, "height":F
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mBaseLeft:F
 
@@ -8426,14 +8426,14 @@
 
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mBaseLeft:F
 
-    .line 2583
+    .line 2585
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
 
     add-float/2addr v2, p2
 
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
 
-    .line 2585
+    .line 2587
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v3, v2, Landroid/graphics/RectF;->left:F
@@ -8442,7 +8442,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->left:F
 
-    .line 2586
+    .line 2588
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v3, v2, Landroid/graphics/RectF;->top:F
@@ -8451,7 +8451,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->top:F
 
-    .line 2587
+    .line 2589
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8462,7 +8462,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->right:F
 
-    .line 2588
+    .line 2590
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8473,12 +8473,12 @@
 
     iput v3, v2, Landroid/graphics/RectF;->bottom:F
 
-    .line 2590
+    .line 2592
     const/4 v2, 0x0
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2591
+    .line 2593
     return-void
 .end method
 
@@ -8488,30 +8488,30 @@
     .param p2, "y"    # F
 
     .prologue
-    .line 2594
+    .line 2596
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
     move-result v3
 
-    .line 2595
+    .line 2597
     .local v3, "width":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
     move-result v0
 
-    .line 2596
+    .line 2598
     .local v0, "height":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getMoveLayoutX()F
 
     move-result v1
 
-    .line 2597
+    .line 2599
     .local v1, "moveX":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getMoveLayoutY()F
 
     move-result v2
 
-    .line 2599
+    .line 2601
     .local v2, "moveY":F
     iget v4, p0, Lcom/samsung/android/glview/GLView;->mOriginalLeft:F
 
@@ -8519,14 +8519,14 @@
 
     iput v4, p0, Lcom/samsung/android/glview/GLView;->mBaseLeft:F
 
-    .line 2600
+    .line 2602
     iget v4, p0, Lcom/samsung/android/glview/GLView;->mOriginalTop:F
 
     add-float/2addr v4, p2
 
     iput v4, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
 
-    .line 2602
+    .line 2604
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v5, p0, Lcom/samsung/android/glview/GLView;->mBaseLeft:F
@@ -8535,7 +8535,7 @@
 
     iput v5, v4, Landroid/graphics/RectF;->left:F
 
-    .line 2603
+    .line 2605
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v5, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
@@ -8544,7 +8544,7 @@
 
     iput v5, v4, Landroid/graphics/RectF;->top:F
 
-    .line 2604
+    .line 2606
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v5, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8555,7 +8555,7 @@
 
     iput v5, v4, Landroid/graphics/RectF;->right:F
 
-    .line 2605
+    .line 2607
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v5, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8566,12 +8566,12 @@
 
     iput v5, v4, Landroid/graphics/RectF;->bottom:F
 
-    .line 2607
+    .line 2609
     const/4 v4, 0x0
 
     invoke-virtual {p0, v4}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2608
+    .line 2610
     return-void
 .end method
 
@@ -8582,30 +8582,30 @@
     .param p3, "update"    # Z
 
     .prologue
-    .line 2611
+    .line 2613
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
     move-result v3
 
-    .line 2612
+    .line 2614
     .local v3, "width":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
     move-result v0
 
-    .line 2613
+    .line 2615
     .local v0, "height":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getMoveLayoutX()F
 
     move-result v1
 
-    .line 2614
+    .line 2616
     .local v1, "moveX":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getMoveLayoutY()F
 
     move-result v2
 
-    .line 2616
+    .line 2618
     .local v2, "moveY":F
     iget v4, p0, Lcom/samsung/android/glview/GLView;->mOriginalLeft:F
 
@@ -8613,14 +8613,14 @@
 
     iput v4, p0, Lcom/samsung/android/glview/GLView;->mBaseLeft:F
 
-    .line 2617
+    .line 2619
     iget v4, p0, Lcom/samsung/android/glview/GLView;->mOriginalTop:F
 
     add-float/2addr v4, p2
 
     iput v4, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
 
-    .line 2619
+    .line 2621
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v5, p0, Lcom/samsung/android/glview/GLView;->mBaseLeft:F
@@ -8629,7 +8629,7 @@
 
     iput v5, v4, Landroid/graphics/RectF;->left:F
 
-    .line 2620
+    .line 2622
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v5, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
@@ -8638,7 +8638,7 @@
 
     iput v5, v4, Landroid/graphics/RectF;->top:F
 
-    .line 2621
+    .line 2623
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v5, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8649,7 +8649,7 @@
 
     iput v5, v4, Landroid/graphics/RectF;->right:F
 
-    .line 2622
+    .line 2624
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v5, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8660,15 +8660,15 @@
 
     iput v5, v4, Landroid/graphics/RectF;->bottom:F
 
-    .line 2624
+    .line 2626
     if-eqz p3, :cond_0
 
-    .line 2625
+    .line 2627
     const/4 v4, 0x0
 
     invoke-virtual {p0, v4}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2627
+    .line 2629
     :cond_0
     return-void
 .end method
@@ -8678,19 +8678,19 @@
     .param p1, "z"    # F
 
     .prologue
-    .line 2630
+    .line 2632
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
     add-float/2addr v0, p1
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
-    .line 2634
+    .line 2636
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2635
+    .line 2637
     return-void
 .end method
 
@@ -8699,19 +8699,19 @@
     .param p1, "z"    # F
 
     .prologue
-    .line 2638
+    .line 2640
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
     add-float/2addr v0, p1
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
-    .line 2645
+    .line 2647
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2646
+    .line 2648
     return-void
 .end method
 
@@ -8721,7 +8721,7 @@
     .param p2, "y"    # F
 
     .prologue
-    .line 2655
+    .line 2657
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->left:F
@@ -8730,7 +8730,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->left:F
 
-    .line 2656
+    .line 2658
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->top:F
@@ -8739,7 +8739,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->top:F
 
-    .line 2657
+    .line 2659
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->right:F
@@ -8748,7 +8748,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->right:F
 
-    .line 2658
+    .line 2660
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->bottom:F
@@ -8757,12 +8757,12 @@
 
     iput v1, v0, Landroid/graphics/RectF;->bottom:F
 
-    .line 2660
+    .line 2662
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2661
+    .line 2663
     return-void
 .end method
 
@@ -8772,18 +8772,18 @@
     .param p2, "y"    # F
 
     .prologue
-    .line 2670
+    .line 2672
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
     move-result v1
 
-    .line 2671
+    .line 2673
     .local v1, "width":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
     move-result v0
 
-    .line 2673
+    .line 2675
     .local v0, "height":F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -8793,7 +8793,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->left:F
 
-    .line 2674
+    .line 2676
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v3, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
@@ -8802,7 +8802,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->top:F
 
-    .line 2675
+    .line 2677
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8813,7 +8813,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->right:F
 
-    .line 2676
+    .line 2678
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8824,12 +8824,12 @@
 
     iput v3, v2, Landroid/graphics/RectF;->bottom:F
 
-    .line 2678
+    .line 2680
     const/4 v2, 0x0
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2679
+    .line 2681
     return-void
 .end method
 
@@ -8840,18 +8840,18 @@
     .param p3, "update"    # Z
 
     .prologue
-    .line 2682
+    .line 2684
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
     move-result v1
 
-    .line 2683
+    .line 2685
     .local v1, "width":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
     move-result v0
 
-    .line 2685
+    .line 2687
     .local v0, "height":F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -8861,7 +8861,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->left:F
 
-    .line 2686
+    .line 2688
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v3, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
@@ -8870,7 +8870,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->top:F
 
-    .line 2687
+    .line 2689
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8881,7 +8881,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->right:F
 
-    .line 2688
+    .line 2690
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -8892,15 +8892,15 @@
 
     iput v3, v2, Landroid/graphics/RectF;->bottom:F
 
-    .line 2690
+    .line 2692
     if-eqz p3, :cond_0
 
-    .line 2691
+    .line 2693
     const/4 v2, 0x0
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2693
+    .line 2695
     :cond_0
     return-void
 .end method
@@ -8909,7 +8909,7 @@
     .locals 0
 
     .prologue
-    .line 3943
+    .line 3948
     return-void
 .end method
 
@@ -8917,7 +8917,7 @@
     .locals 0
 
     .prologue
-    .line 3947
+    .line 3952
     return-void
 .end method
 
@@ -8933,18 +8933,18 @@
 
     const/4 v8, 0x1
 
-    .line 2696
+    .line 2698
     if-ne p1, v8, :cond_2
 
-    .line 2697
+    .line 2699
     iput-boolean v8, p0, Lcom/samsung/android/glview/GLView;->mFocused:Z
 
-    .line 2698
+    .line 2700
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-nez v0, :cond_0
 
-    .line 2699
+    .line 2701
     new-instance v0, Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
@@ -9003,7 +9003,7 @@
 
     sub-float/2addr v5, v6
 
-    .line 2700
+    .line 2702
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v6
@@ -9026,38 +9026,38 @@
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 2701
+    .line 2703
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v8}, Lcom/samsung/android/glview/GLRectangle;->setBypassTouch(Z)V
 
-    .line 2702
+    .line 2704
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v9}, Lcom/samsung/android/glview/GLRectangle;->setClipping(Z)V
 
-    .line 2703
+    .line 2705
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iput-object p0, v0, Lcom/samsung/android/glview/GLRectangle;->mParent:Lcom/samsung/android/glview/GLView;
 
-    .line 2708
+    .line 2710
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusListener:Lcom/samsung/android/glview/GLView$FocusListener;
 
     if-eqz v0, :cond_1
 
-    .line 2709
+    .line 2711
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusListener:Lcom/samsung/android/glview/GLView$FocusListener;
 
     invoke-interface {v0, p0, p1}, Lcom/samsung/android/glview/GLView$FocusListener;->onFocusChanged(Lcom/samsung/android/glview/GLView;I)Z
 
-    .line 2711
+    .line 2713
     :cond_1
     return-void
 
-    .line 2706
+    .line 2708
     :cond_2
     iput-boolean v9, p0, Lcom/samsung/android/glview/GLView;->mFocused:Z
 
@@ -9068,12 +9068,12 @@
     .locals 2
 
     .prologue
-    .line 2717
+    .line 2719
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_0
 
-    .line 2718
+    .line 2720
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
@@ -9086,7 +9086,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setColor(I)V
 
-    .line 2720
+    .line 2722
     :cond_0
     return-void
 .end method
@@ -9100,18 +9100,18 @@
 
     const/4 v8, 0x0
 
-    .line 2723
+    .line 2725
     if-nez p1, :cond_1
 
-    .line 2724
+    .line 2726
     iput-boolean v9, p0, Lcom/samsung/android/glview/GLView;->mHoverFocused:Z
 
-    .line 2725
+    .line 2727
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-nez v0, :cond_0
 
-    .line 2726
+    .line 2728
     new-instance v0, Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
@@ -9170,7 +9170,7 @@
 
     sub-float/2addr v5, v6
 
-    .line 2727
+    .line 2729
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v6
@@ -9193,27 +9193,27 @@
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
-    .line 2728
+    .line 2730
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v9}, Lcom/samsung/android/glview/GLRectangle;->setBypassTouch(Z)V
 
-    .line 2729
+    .line 2731
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0, v8}, Lcom/samsung/android/glview/GLRectangle;->setClipping(Z)V
 
-    .line 2730
+    .line 2732
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iput-object p0, v0, Lcom/samsung/android/glview/GLRectangle;->mParent:Lcom/samsung/android/glview/GLView;
 
-    .line 2735
+    .line 2737
     :cond_0
     :goto_0
     return-void
 
-    .line 2733
+    .line 2735
     :cond_1
     iput-boolean v8, p0, Lcom/samsung/android/glview/GLView;->mHoverFocused:Z
 
@@ -9226,7 +9226,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 2738
+    .line 2740
     const/4 v0, 0x0
 
     return v0
@@ -9238,7 +9238,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 2742
+    .line 2744
     const/4 v0, 0x0
 
     return v0
@@ -9248,12 +9248,12 @@
     .locals 1
 
     .prologue
-    .line 3958
+    .line 3963
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mPositionChanged:Z
 
-    .line 3959
+    .line 3964
     return-void
 .end method
 
@@ -9273,30 +9273,30 @@
 
     const/high16 v9, 0x40000000    # 2.0f
 
-    .line 3974
+    .line 3979
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mRotatable:Z
 
     if-eqz v1, :cond_4
 
-    .line 3975
+    .line 3980
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mOrientation:I
 
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mLastOrientation:I
 
-    .line 3976
+    .line 3981
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mLastOrientation:I
 
     if-ne v1, p1, :cond_0
 
-    .line 4012
+    .line 4017
     :goto_0
     return-void
 
-    .line 3980
+    .line 3985
     :cond_0
     move v8, p1
 
-    .line 3981
+    .line 3986
     .local v8, "tempOrientation":I
     if-nez v8, :cond_5
 
@@ -9304,10 +9304,10 @@
 
     if-ne v1, v2, :cond_5
 
-    .line 3982
+    .line 3987
     const/4 v8, 0x4
 
-    .line 3987
+    .line 3992
     :cond_1
     :goto_1
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mLastOrientation:I
@@ -9316,11 +9316,11 @@
 
     mul-int/lit8 v7, v1, 0x5a
 
-    .line 3988
+    .line 3993
     .local v7, "degree":I
     invoke-virtual {p0, p1}, Lcom/samsung/android/glview/GLView;->setOrientation(I)V
 
-    .line 3990
+    .line 3995
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mDrawFirstTime:Z
 
     if-nez v1, :cond_4
@@ -9337,12 +9337,12 @@
 
     if-eqz v1, :cond_4
 
-    .line 3991
+    .line 3996
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mRotateAnimation:Z
 
     if-nez v1, :cond_6
 
-    .line 3992
+    .line 3997
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mAnimation:Landroid/view/animation/Animation;
 
     if-eqz v1, :cond_2
@@ -9351,7 +9351,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 3993
+    .line 3998
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mTransformation:Landroid/view/animation/Transformation;
 
     invoke-virtual {v1}, Landroid/view/animation/Transformation;->getMatrix()Landroid/graphics/Matrix;
@@ -9360,16 +9360,16 @@
 
     invoke-virtual {v1}, Landroid/graphics/Matrix;->reset()V
 
-    .line 3994
+    .line 3999
     :cond_2
     iget-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mHideAfterAnimation:Z
 
     if-eqz v1, :cond_3
 
-    .line 3995
+    .line 4000
     invoke-virtual {p0, v4}, Lcom/samsung/android/glview/GLView;->setVisibility(I)V
 
-    .line 3997
+    .line 4002
     :cond_3
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mAlpha:F
 
@@ -9379,10 +9379,10 @@
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/glview/GLView;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 3998
+    .line 4003
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->startAnimation()V
 
-    .line 4011
+    .line 4016
     .end local v7    # "degree":I
     .end local v8    # "tempOrientation":I
     :cond_4
@@ -9399,7 +9399,7 @@
 
     goto :goto_0
 
-    .line 3983
+    .line 3988
     .restart local v8    # "tempOrientation":I
     :cond_5
     if-ne v8, v2, :cond_1
@@ -9408,12 +9408,12 @@
 
     if-nez v1, :cond_1
 
-    .line 3984
+    .line 3989
     iput v4, p0, Lcom/samsung/android/glview/GLView;->mLastOrientation:I
 
     goto :goto_1
 
-    .line 4000
+    .line 4005
     .restart local v7    # "degree":I
     :cond_6
     new-instance v0, Landroid/view/animation/RotateAnimation;
@@ -9450,7 +9450,7 @@
 
     invoke-direct/range {v0 .. v6}, Landroid/view/animation/RotateAnimation;-><init>(FFIFIF)V
 
-    .line 4001
+    .line 4006
     .local v0, "anim":Landroid/view/animation/RotateAnimation;
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
@@ -9474,28 +9474,28 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/view/animation/RotateAnimation;->initialize(IIII)V
 
-    .line 4002
+    .line 4007
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mRotateAnimationDuration:I
 
     int-to-long v2, v1
 
     invoke-virtual {v0, v2, v3}, Landroid/view/animation/RotateAnimation;->setDuration(J)V
 
-    .line 4003
+    .line 4008
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mRotateAnimationInterpolator:Landroid/view/animation/Interpolator;
 
     if-eqz v1, :cond_7
 
-    .line 4004
+    .line 4009
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mRotateAnimationInterpolator:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v0, v1}, Landroid/view/animation/RotateAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 4005
+    .line 4010
     :cond_7
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 4006
+    .line 4011
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->startAnimation()V
 
     goto :goto_2
@@ -9505,12 +9505,12 @@
     .locals 1
 
     .prologue
-    .line 4015
+    .line 4020
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mInScreen:Z
 
-    .line 4016
+    .line 4021
     return-void
 .end method
 
@@ -9522,7 +9522,7 @@
     .param p1, "e"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 4030
+    .line 4035
     const/4 v0, 0x0
 
     return v0
@@ -9533,15 +9533,15 @@
     .param p1, "visibility"    # I
 
     .prologue
-    .line 4037
+    .line 4042
     if-eqz p1, :cond_0
 
-    .line 4038
+    .line 4043
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
 
     if-eqz v0, :cond_0
 
-    .line 4039
+    .line 4044
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
@@ -9552,12 +9552,12 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 4040
+    .line 4045
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickWhenLongClicked:Z
 
     if-eqz v0, :cond_0
 
-    .line 4041
+    .line 4046
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
@@ -9568,7 +9568,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 4045
+    .line 4050
     :cond_0
     return-void
 .end method
@@ -9577,19 +9577,19 @@
     .locals 1
 
     .prologue
-    .line 4053
+    .line 4058
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 4054
+    .line 4059
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->mClipRect()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    .line 4056
+    .line 4061
     :goto_0
     return-object v0
 
@@ -9609,7 +9609,7 @@
 
     const/high16 v6, 0x3f000000    # 0.5f
 
-    .line 4065
+    .line 4070
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
 
     move-result v4
@@ -9624,7 +9624,7 @@
 
     add-int v1, v4, v5
 
-    .line 4066
+    .line 4071
     .local v1, "left":I
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
 
@@ -9640,7 +9640,7 @@
 
     add-int v3, v4, v5
 
-    .line 4067
+    .line 4072
     .local v3, "top":I
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getRight()F
 
@@ -9656,7 +9656,7 @@
 
     sub-int v2, v4, v5
 
-    .line 4068
+    .line 4073
     .local v2, "right":I
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getBottom()F
 
@@ -9672,11 +9672,11 @@
 
     sub-int v0, v4, v5
 
-    .line 4069
+    .line 4074
     .local v0, "bottom":I
     invoke-direct {p0, v1, v3, v2, v0}, Lcom/samsung/android/glview/GLView;->transformScreenCoordinates(IIII)V
 
-    .line 4071
+    .line 4076
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     aget v4, v4, v7
@@ -9685,7 +9685,7 @@
 
     float-to-int v1, v4
 
-    .line 4072
+    .line 4077
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     aget v4, v4, v8
@@ -9694,7 +9694,7 @@
 
     float-to-int v3, v4
 
-    .line 4073
+    .line 4078
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mRightBottom:[F
 
     aget v4, v4, v7
@@ -9703,7 +9703,7 @@
 
     float-to-int v2, v4
 
-    .line 4074
+    .line 4079
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mRightBottom:[F
 
     aget v4, v4, v8
@@ -9712,7 +9712,7 @@
 
     float-to-int v0, v4
 
-    .line 4076
+    .line 4081
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOrientation()I
 
     move-result v4
@@ -9725,7 +9725,7 @@
 
     packed-switch v4, :pswitch_data_0
 
-    .line 4100
+    .line 4105
     :goto_0
     if-gt v1, v2, :cond_0
 
@@ -9737,7 +9737,7 @@
 
     if-eqz v4, :cond_1
 
-    .line 4103
+    .line 4108
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
 
@@ -9753,7 +9753,7 @@
 
     add-int v1, v4, v5
 
-    .line 4104
+    .line 4109
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
 
     move-result v4
@@ -9768,7 +9768,7 @@
 
     add-int v3, v4, v5
 
-    .line 4105
+    .line 4110
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getRight()F
 
     move-result v4
@@ -9783,7 +9783,7 @@
 
     sub-int v2, v4, v5
 
-    .line 4106
+    .line 4111
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getBottom()F
 
     move-result v4
@@ -9798,47 +9798,47 @@
 
     sub-int v0, v4, v5
 
-    .line 4109
+    .line 4114
     :cond_1
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
     if-nez v4, :cond_2
 
-    .line 4110
+    .line 4115
     new-instance v4, Landroid/graphics/Rect;
 
     invoke-direct {v4}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v4, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
-    .line 4112
+    .line 4117
     :cond_2
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mClipRect:Landroid/graphics/Rect;
 
     invoke-virtual {v4, v1, v3, v2, v0}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 4113
+    .line 4118
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mOriginalClipRect:Landroid/graphics/Rect;
 
     if-nez v4, :cond_3
 
-    .line 4114
+    .line 4119
     new-instance v4, Landroid/graphics/Rect;
 
     invoke-direct {v4}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v4, p0, Lcom/samsung/android/glview/GLView;->mOriginalClipRect:Landroid/graphics/Rect;
 
-    .line 4116
+    .line 4121
     :cond_3
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mOriginalClipRect:Landroid/graphics/Rect;
 
     invoke-virtual {v4, v1, v3, v2, v0}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 4117
+    .line 4122
     return-void
 
-    .line 4078
+    .line 4083
     :pswitch_0
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mRightTop:[F
 
@@ -9848,7 +9848,7 @@
 
     float-to-int v1, v4
 
-    .line 4079
+    .line 4084
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mRightTop:[F
 
     aget v4, v4, v8
@@ -9857,7 +9857,7 @@
 
     float-to-int v3, v4
 
-    .line 4080
+    .line 4085
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mLeftBottom:[F
 
     aget v4, v4, v7
@@ -9866,7 +9866,7 @@
 
     float-to-int v2, v4
 
-    .line 4081
+    .line 4086
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mLeftBottom:[F
 
     aget v4, v4, v8
@@ -9875,10 +9875,10 @@
 
     float-to-int v0, v4
 
-    .line 4082
+    .line 4087
     goto :goto_0
 
-    .line 4084
+    .line 4089
     :pswitch_1
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mLeftBottom:[F
 
@@ -9888,7 +9888,7 @@
 
     float-to-int v1, v4
 
-    .line 4085
+    .line 4090
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mLeftBottom:[F
 
     aget v4, v4, v8
@@ -9897,7 +9897,7 @@
 
     float-to-int v3, v4
 
-    .line 4086
+    .line 4091
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mRightTop:[F
 
     aget v4, v4, v7
@@ -9906,7 +9906,7 @@
 
     float-to-int v2, v4
 
-    .line 4087
+    .line 4092
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mRightTop:[F
 
     aget v4, v4, v8
@@ -9915,10 +9915,10 @@
 
     float-to-int v0, v4
 
-    .line 4088
+    .line 4093
     goto/16 :goto_0
 
-    .line 4090
+    .line 4095
     :pswitch_2
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mRightBottom:[F
 
@@ -9928,7 +9928,7 @@
 
     float-to-int v1, v4
 
-    .line 4091
+    .line 4096
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mRightBottom:[F
 
     aget v4, v4, v8
@@ -9937,7 +9937,7 @@
 
     float-to-int v3, v4
 
-    .line 4092
+    .line 4097
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     aget v4, v4, v7
@@ -9946,7 +9946,7 @@
 
     float-to-int v2, v4
 
-    .line 4093
+    .line 4098
     iget-object v4, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     aget v4, v4, v8
@@ -9955,10 +9955,10 @@
 
     float-to-int v0, v4
 
-    .line 4094
+    .line 4099
     goto/16 :goto_0
 
-    .line 4076
+    .line 4081
     nop
 
     :pswitch_data_0
@@ -9974,7 +9974,7 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 2751
+    .line 2753
     return-void
 .end method
 
@@ -9982,7 +9982,7 @@
     .locals 1
 
     .prologue
-    .line 2754
+    .line 2756
     const/16 v0, 0x82
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->requestFocus(I)Z
@@ -9997,7 +9997,7 @@
     .param p1, "direction"    # I
 
     .prologue
-    .line 2758
+    .line 2760
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, v0}, Lcom/samsung/android/glview/GLView;->requestFocus(ILcom/samsung/android/glview/GLView;)Z
@@ -10021,24 +10021,24 @@
 
     const/4 v5, -0x1
 
-    .line 2762
+    .line 2764
     if-nez p2, :cond_1
 
-    .line 2763
+    .line 2765
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mViewFlags:I
 
     and-int/lit8 v2, v2, 0x1
 
     if-ne v2, v3, :cond_6
 
-    .line 2764
+    .line 2766
     invoke-virtual {p0, p1}, Lcom/samsung/android/glview/GLView;->isHoverSwipeEvent(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 2765
+    .line 2767
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -10048,11 +10048,11 @@
     :goto_0
     move v2, v3
 
-    .line 2824
+    .line 2826
     :goto_1
     return v2
 
-    .line 2767
+    .line 2769
     :cond_0
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
@@ -10062,24 +10062,24 @@
 
     goto :goto_0
 
-    .line 2773
+    .line 2775
     :cond_1
     const/4 v0, 0x0
 
-    .line 2774
+    .line 2776
     .local v0, "nextViewToFocus":Lcom/samsung/android/glview/GLView;
     move v1, p1
 
-    .line 2777
+    .line 2779
     .local v1, "revisedDirection":I
     sparse-switch v1, :sswitch_data_0
 
-    .line 2806
+    .line 2808
     :cond_2
     :goto_2
     if-nez v0, :cond_4
 
-    .line 2807
+    .line 2809
     invoke-virtual {p2}, Lcom/samsung/android/glview/GLView;->getId()I
 
     move-result v2
@@ -10096,16 +10096,16 @@
 
     move v2, v4
 
-    .line 2808
+    .line 2810
     goto :goto_1
 
-    .line 2780
+    .line 2782
     :sswitch_0
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mNextFocusLeftId:I
 
     if-eq v2, v5, :cond_2
 
-    .line 2781
+    .line 2783
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -10118,13 +10118,13 @@
 
     goto :goto_2
 
-    .line 2786
+    .line 2788
     :sswitch_1
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mNextFocusRightId:I
 
     if-eq v2, v5, :cond_2
 
-    .line 2787
+    .line 2789
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -10137,13 +10137,13 @@
 
     goto :goto_2
 
-    .line 2792
+    .line 2794
     :sswitch_2
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mNextFocusUpId:I
 
     if-eq v2, v5, :cond_2
 
-    .line 2793
+    .line 2795
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -10156,13 +10156,13 @@
 
     goto :goto_2
 
-    .line 2798
+    .line 2800
     :sswitch_3
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mNextFocusDownId:I
 
     if-eq v2, v5, :cond_2
 
-    .line 2799
+    .line 2801
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -10175,7 +10175,7 @@
 
     goto :goto_2
 
-    .line 2810
+    .line 2812
     :cond_3
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
@@ -10185,7 +10185,7 @@
 
     if-eqz v2, :cond_5
 
-    .line 2811
+    .line 2813
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v5
@@ -10200,20 +10200,20 @@
 
     move-result-object v0
 
-    .line 2817
+    .line 2819
     :cond_4
     :goto_3
     if-eqz v0, :cond_6
 
-    .line 2818
+    .line 2820
     invoke-virtual {v0, p1, v6}, Lcom/samsung/android/glview/GLView;->requestFocus(ILcom/samsung/android/glview/GLView;)Z
 
     move v2, v3
 
-    .line 2820
+    .line 2822
     goto :goto_1
 
-    .line 2813
+    .line 2815
     :cond_5
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
@@ -10230,10 +10230,10 @@
     :cond_6
     move v2, v4
 
-    .line 2824
+    .line 2826
     goto/16 :goto_1
 
-    .line 2777
+    .line 2779
     nop
 
     :sswitch_data_0
@@ -10255,49 +10255,49 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 2831
+    .line 2833
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLoaded:Z
 
-    .line 2832
+    .line 2834
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLoading:Z
 
-    .line 2833
+    .line 2835
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 2834
+    .line 2836
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->reset()V
 
-    .line 2836
+    .line 2838
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_1
 
-    .line 2837
+    .line 2839
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLRectangle;->reset()V
 
-    .line 2839
+    .line 2841
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_2
 
-    .line 2840
+    .line 2842
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLRectangle;->reset()V
 
-    .line 2842
+    .line 2844
     :cond_2
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->onReset()V
 
-    .line 2843
+    .line 2845
     return-void
 .end method
 
@@ -10305,17 +10305,17 @@
     .locals 1
 
     .prologue
-    .line 2846
+    .line 2848
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mOriginalDepth:F
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
-    .line 2847
+    .line 2849
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2848
+    .line 2850
     return-void
 .end method
 
@@ -10323,18 +10323,18 @@
     .locals 4
 
     .prologue
-    .line 2851
+    .line 2853
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
     move-result v1
 
-    .line 2852
+    .line 2854
     .local v1, "width":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
     move-result v0
 
-    .line 2854
+    .line 2856
     .local v0, "height":F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -10342,14 +10342,14 @@
 
     iput v3, v2, Landroid/graphics/RectF;->left:F
 
-    .line 2855
+    .line 2857
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v3, p0, Lcom/samsung/android/glview/GLView;->mOriginalTop:F
 
     iput v3, v2, Landroid/graphics/RectF;->top:F
 
-    .line 2856
+    .line 2858
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -10360,7 +10360,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->right:F
 
-    .line 2857
+    .line 2859
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -10371,12 +10371,12 @@
 
     iput v3, v2, Landroid/graphics/RectF;->bottom:F
 
-    .line 2859
+    .line 2861
     const/4 v2, 0x0
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2860
+    .line 2862
     return-void
 .end method
 
@@ -10384,15 +10384,15 @@
     .locals 1
 
     .prologue
-    .line 2863
+    .line 2865
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mManualClip:Z
 
-    .line 2864
+    .line 2866
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->refreshClipRect()V
 
-    .line 2865
+    .line 2867
     return-void
 .end method
 
@@ -10400,17 +10400,17 @@
     .locals 1
 
     .prologue
-    .line 2868
+    .line 2870
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mBaseDepth:F
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mZCoordinate:F
 
-    .line 2870
+    .line 2872
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2871
+    .line 2873
     return-void
 .end method
 
@@ -10418,12 +10418,12 @@
     .locals 2
 
     .prologue
-    .line 4123
+    .line 4128
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDragging:Z
 
-    .line 4124
+    .line 4129
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
@@ -10434,7 +10434,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 4125
+    .line 4130
     return-void
 .end method
 
@@ -10442,18 +10442,18 @@
     .locals 4
 
     .prologue
-    .line 2877
+    .line 2879
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
 
     move-result v1
 
-    .line 2878
+    .line 2880
     .local v1, "width":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getHeight()F
 
     move-result v0
 
-    .line 2880
+    .line 2882
     .local v0, "height":F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -10461,14 +10461,14 @@
 
     iput v3, v2, Landroid/graphics/RectF;->left:F
 
-    .line 2881
+    .line 2883
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget v3, p0, Lcom/samsung/android/glview/GLView;->mBaseTop:F
 
     iput v3, v2, Landroid/graphics/RectF;->top:F
 
-    .line 2882
+    .line 2884
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -10479,7 +10479,7 @@
 
     iput v3, v2, Landroid/graphics/RectF;->right:F
 
-    .line 2883
+    .line 2885
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v3, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -10490,12 +10490,12 @@
 
     iput v3, v2, Landroid/graphics/RectF;->bottom:F
 
-    .line 2885
+    .line 2887
     const/4 v2, 0x0
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 2886
+    .line 2888
     return-void
 .end method
 
@@ -10505,19 +10505,19 @@
     .prologue
     const/4 v0, -0x1
 
-    .line 2892
+    .line 2894
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusDownId:I
 
-    .line 2893
+    .line 2895
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusUpId:I
 
-    .line 2894
+    .line 2896
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusLeftId:I
 
-    .line 2895
+    .line 2897
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusRightId:I
 
-    .line 2896
+    .line 2898
     return-void
 .end method
 
@@ -10529,24 +10529,24 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 2902
+    .line 2904
     iput-boolean v2, p0, Lcom/samsung/android/glview/GLView;->mScaleChanged:Z
 
-    .line 2904
+    .line 2906
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mScaleMatrix:[F
 
     invoke-static {v0, v2}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 2906
+    .line 2908
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 2908
+    .line 2910
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mScaleX:F
 
-    .line 2909
+    .line 2911
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mScaleY:F
 
-    .line 2910
+    .line 2912
     return-void
 .end method
 
@@ -10554,7 +10554,7 @@
     .locals 2
 
     .prologue
-    .line 2916
+    .line 2918
     monitor-enter p0
 
     :try_start_0
@@ -10564,13 +10564,13 @@
 
     if-nez v0, :cond_0
 
-    .line 2924
+    .line 2926
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 2919
+    .line 2921
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
@@ -10579,28 +10579,28 @@
 
     invoke-static {v0, v1}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 2920
+    .line 2922
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 2921
+    .line 2923
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mCombinedMatrix:[F
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 2922
+    .line 2924
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mScaleMatrix:[F
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 2923
+    .line 2925
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mMatrix:[F
 
     const/4 v1, 0x0
@@ -10611,7 +10611,7 @@
 
     goto :goto_0
 
-    .line 2916
+    .line 2918
     :catchall_0
     move-exception v0
 
@@ -10626,7 +10626,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 2930
+    .line 2932
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     cmpl-float v0, v0, v2
@@ -10645,11 +10645,11 @@
 
     if-nez v0, :cond_0
 
-    .line 2942
+    .line 2944
     :goto_0
     return-void
 
-    .line 2933
+    .line 2935
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
@@ -10657,19 +10657,19 @@
 
     invoke-static {v0, v1}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 2935
+    .line 2937
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 2937
+    .line 2939
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 2938
+    .line 2940
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
-    .line 2939
+    .line 2941
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateZ:F
 
-    .line 2941
+    .line 2943
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
@@ -10682,7 +10682,7 @@
     .param p1, "degree"    # I
 
     .prologue
-    .line 2950
+    .line 2952
     monitor-enter p0
 
     :try_start_0
@@ -10690,19 +10690,19 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mRotateDegree:I
 
-    .line 2951
+    .line 2953
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2952
+    .line 2954
     monitor-exit p0
 
     return-void
 
-    .line 2950
+    .line 2952
     :catchall_0
     move-exception v0
 
@@ -10725,16 +10725,16 @@
 
     const/4 v4, 0x0
 
-    .line 2961
+    .line 2963
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     if-nez v1, :cond_0
 
-    .line 2977
+    .line 2979
     :goto_0
     return-void
 
-    .line 2963
+    .line 2965
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
@@ -10752,7 +10752,7 @@
 
     aput v2, v1, v4
 
-    .line 2964
+    .line 2966
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
@@ -10769,12 +10769,12 @@
 
     aput v2, v1, v5
 
-    .line 2966
+    .line 2968
     const/4 v1, 0x2
 
     new-array v0, v1, [F
 
-    .line 2967
+    .line 2969
     .local v0, "currentPivot":[F
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
@@ -10788,7 +10788,7 @@
 
     invoke-static {v1, v0, v2, v3}, Lcom/samsung/android/glview/GLUtil;->getGLCoordinateFromScreenCoordinate(Lcom/samsung/android/glview/GLContext;[FFF)V
 
-    .line 2969
+    .line 2971
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mScaleMatrix:[F
 
     aget v2, v0, v4
@@ -10797,14 +10797,14 @@
 
     invoke-static {v1, v4, v2, v3, v6}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 2970
+    .line 2972
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mScaleMatrix:[F
 
     const/high16 v2, 0x3f800000    # 1.0f
 
     invoke-static {v1, v4, p1, p2, v2}, Landroid/opengl/Matrix;->scaleM([FIFFF)V
 
-    .line 2971
+    .line 2973
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mScaleMatrix:[F
 
     aget v2, v0, v4
@@ -10817,21 +10817,21 @@
 
     invoke-static {v1, v4, v2, v3, v6}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 2973
+    .line 2975
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mScaleX:F
 
     mul-float/2addr v1, p1
 
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mScaleX:F
 
-    .line 2974
+    .line 2976
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mScaleY:F
 
     mul-float/2addr v1, p2
 
     iput v1, p0, Lcom/samsung/android/glview/GLView;->mScaleY:F
 
-    .line 2976
+    .line 2978
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
     goto :goto_0
@@ -10841,7 +10841,7 @@
     .locals 3
 
     .prologue
-    .line 2984
+    .line 2986
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     if-eqz v1, :cond_0
@@ -10854,14 +10854,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 2985
+    .line 2987
     const/4 v1, 0x1
 
     invoke-static {v1}, Landroid/view/accessibility/AccessibilityEvent;->obtain(I)Landroid/view/accessibility/AccessibilityEvent;
 
     move-result-object v0
 
-    .line 2986
+    .line 2988
     .local v0, "event":Landroid/view/accessibility/AccessibilityEvent;
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
@@ -10873,7 +10873,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/accessibility/AccessibilityEvent;->setSource(Landroid/view/View;I)V
 
-    .line 2987
+    .line 2989
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
@@ -10884,7 +10884,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityEvent;->setClassName(Ljava/lang/CharSequence;)V
 
-    .line 2988
+    .line 2990
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -10895,14 +10895,14 @@
 
     invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityEvent;->setPackageName(Ljava/lang/CharSequence;)V
 
-    .line 2989
+    .line 2991
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTitle()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 2990
+    .line 2992
     invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityEvent;->getText()Ljava/util/List;
 
     move-result-object v1
@@ -10913,7 +10913,7 @@
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 2993
+    .line 2995
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
@@ -10933,12 +10933,12 @@
 
     invoke-interface {v1, v2, v0}, Landroid/view/ViewParent;->requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
-    .line 2995
+    .line 2997
     .end local v0    # "event":Landroid/view/accessibility/AccessibilityEvent;
     :cond_0
     return-void
 
-    .line 2992
+    .line 2994
     .restart local v0    # "event":Landroid/view/accessibility/AccessibilityEvent;
     :cond_1
     invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityEvent;->getText()Ljava/util/List;
@@ -10959,7 +10959,7 @@
     .param p1, "alpha"    # F
 
     .prologue
-    .line 1417
+    .line 1419
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mAlpha:F
 
     invoke-static {v0, p1}, Lcom/samsung/android/glview/GLUtil;->floatEquals(FF)Z
@@ -10968,16 +10968,16 @@
 
     if-nez v0, :cond_0
 
-    .line 1418
+    .line 1420
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mAlpha:F
 
-    .line 1419
+    .line 1421
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mOldAlpha:F
 
-    .line 1420
+    .line 1422
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->updateAlpha()V
 
-    .line 1422
+    .line 1424
     :cond_0
     return-void
 .end method
@@ -10987,12 +10987,12 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 3003
+    .line 3005
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, v0}, Lcom/samsung/android/glview/GLView;->setAnimation(Landroid/view/animation/Animation;Z)V
 
-    .line 3004
+    .line 3006
     return-void
 .end method
 
@@ -11002,23 +11002,23 @@
     .param p2, "hideAfterAnimation"    # Z
 
     .prologue
-    .line 3013
+    .line 3015
     monitor-enter p0
 
     :try_start_0
     iput-boolean p2, p0, Lcom/samsung/android/glview/GLView;->mHideAfterAnimation:Z
 
-    .line 3014
+    .line 3016
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mAnimation:Landroid/view/animation/Animation;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3015
+    .line 3017
     monitor-exit p0
 
     return-void
 
-    .line 3013
+    .line 3015
     :catchall_0
     move-exception v0
 
@@ -11032,10 +11032,10 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$AnimationEventListener;
 
     .prologue
-    .line 3018
+    .line 3020
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mAnimationEventListener:Lcom/samsung/android/glview/GLView$AnimationEventListener;
 
-    .line 3019
+    .line 3021
     return-void
 .end method
 
@@ -11044,10 +11044,10 @@
     .param p1, "async"    # Z
 
     .prologue
-    .line 3022
+    .line 3024
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mAsyncLoad:Z
 
-    .line 3023
+    .line 3025
     return-void
 .end method
 
@@ -11058,39 +11058,39 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 3031
+    .line 3033
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mBackgroundResId:I
 
     if-ne v0, p1, :cond_0
 
-    .line 3032
+    .line 3034
     const/4 v0, 0x0
 
-    .line 3041
+    .line 3043
     :goto_0
     return v0
 
-    .line 3034
+    .line 3036
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 3035
+    .line 3037
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->clear()V
 
-    .line 3036
+    .line 3038
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
-    .line 3038
+    .line 3040
     :cond_1
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mBackgroundResId:I
 
-    .line 3039
+    .line 3041
     new-instance v0, Lcom/samsung/android/glview/GLResourceTexture;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -11111,12 +11111,12 @@
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
-    .line 3040
+    .line 3042
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     iput-object p0, v0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
-    .line 3041
+    .line 3043
     const/4 v0, 0x1
 
     goto :goto_0
@@ -11127,25 +11127,25 @@
     .param p1, "alpha"    # F
 
     .prologue
-    .line 3050
+    .line 3052
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-nez v0, :cond_0
 
-    .line 3051
+    .line 3053
     const/4 v0, 0x0
 
-    .line 3054
+    .line 3056
     :goto_0
     return v0
 
-    .line 3053
+    .line 3055
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLView;->setAlpha(F)V
 
-    .line 3054
+    .line 3056
     const/4 v0, 0x1
 
     goto :goto_0
@@ -11156,10 +11156,10 @@
     .param p1, "bypass"    # Z
 
     .prologue
-    .line 1448
+    .line 1450
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mBypassTouch:Z
 
-    .line 1449
+    .line 1451
     return-void
 .end method
 
@@ -11168,10 +11168,10 @@
     .param p1, "centerPivot"    # Z
 
     .prologue
-    .line 1466
+    .line 1468
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mCenterPivot:Z
 
-    .line 1467
+    .line 1469
     return-void
 .end method
 
@@ -11180,10 +11180,10 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$ClickListener;
 
     .prologue
-    .line 1474
+    .line 1476
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mClickListener:Lcom/samsung/android/glview/GLView$ClickListener;
 
-    .line 1475
+    .line 1477
     return-void
 .end method
 
@@ -11192,7 +11192,7 @@
     .param p1, "clickable"    # Z
 
     .prologue
-    .line 2329
+    .line 2331
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mViewFlags:I
 
     and-int/lit16 v1, v0, -0x4001
@@ -11206,10 +11206,10 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mViewFlags:I
 
-    .line 2330
+    .line 2332
     return-void
 
-    .line 2329
+    .line 2331
     :cond_0
     const/4 v0, 0x0
 
@@ -11221,28 +11221,28 @@
     .param p1, "clipRect"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 1495
+    .line 1497
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mManualClipRect:Landroid/graphics/Rect;
 
     if-nez v0, :cond_0
 
-    .line 1496
+    .line 1498
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0, p1}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mManualClipRect:Landroid/graphics/Rect;
 
-    .line 1500
+    .line 1502
     :goto_0
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mManualClip:Z
 
-    .line 1501
+    .line 1503
     return-void
 
-    .line 1498
+    .line 1500
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mManualClipRect:Landroid/graphics/Rect;
 
@@ -11256,18 +11256,18 @@
     .param p1, "clipping"    # Z
 
     .prologue
-    .line 3063
+    .line 3065
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mClipping:Z
 
-    .line 3064
+    .line 3066
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mClipping:Z
 
     if-eqz v0, :cond_0
 
-    .line 3065
+    .line 3067
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->refreshClipRect()V
 
-    .line 3067
+    .line 3069
     :cond_0
     return-void
 .end method
@@ -11277,10 +11277,10 @@
     .param p1, "description"    # Ljava/lang/String;
 
     .prologue
-    .line 1544
+    .line 1546
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mContentDescription:Ljava/lang/String;
 
-    .line 1545
+    .line 1547
     return-void
 .end method
 
@@ -11289,10 +11289,10 @@
     .param p1, "continuousDrawMode"    # Z
 
     .prologue
-    .line 3075
+    .line 3077
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mContinuousDrawMode:Z
 
-    .line 3076
+    .line 3078
     return-void
 .end method
 
@@ -11301,20 +11301,20 @@
     .param p1, "orientation"    # I
 
     .prologue
-    .line 3084
+    .line 3086
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mDefaultOrientation:I
 
-    .line 3085
+    .line 3087
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->updateRotationMatrix()V
 
-    .line 3086
+    .line 3088
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLContext;->setDirty(Z)V
 
-    .line 3087
+    .line 3089
     return-void
 .end method
 
@@ -11323,20 +11323,20 @@
     .param p1, "dimmed"    # Z
 
     .prologue
-    .line 2354
+    .line 2356
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDimmed:Z
 
     if-ne v0, p1, :cond_0
 
-    .line 2360
+    .line 2362
     :goto_0
     return-void
 
-    .line 2357
+    .line 2359
     :cond_0
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mDimmed:Z
 
-    .line 2358
+    .line 2360
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v1, 0x1
@@ -11351,10 +11351,10 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$DragListener;
 
     .prologue
-    .line 3090
+    .line 3092
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
-    .line 3091
+    .line 3093
     return-void
 .end method
 
@@ -11363,7 +11363,7 @@
     .param p1, "sensitivity"    # I
 
     .prologue
-    .line 3099
+    .line 3101
     if-eqz p1, :cond_0
 
     const/4 v0, 0x1
@@ -11374,18 +11374,18 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 3100
+    .line 3102
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {v0}, Ljava/lang/IllegalArgumentException;-><init>()V
 
     throw v0
 
-    .line 3103
+    .line 3105
     :cond_0
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mDragSensitivity:I
 
-    .line 3104
+    .line 3106
     return-void
 .end method
 
@@ -11394,10 +11394,10 @@
     .param p1, "draggable"    # Z
 
     .prologue
-    .line 1634
+    .line 1636
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mDraggable:Z
 
-    .line 1635
+    .line 1637
     return-void
 .end method
 
@@ -11406,10 +11406,10 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$FocusListener;
 
     .prologue
-    .line 1642
+    .line 1644
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mFocusListener:Lcom/samsung/android/glview/GLView$FocusListener;
 
-    .line 1643
+    .line 1645
     return-void
 .end method
 
@@ -11418,7 +11418,7 @@
     .param p1, "focusable"    # Z
 
     .prologue
-    .line 2377
+    .line 2379
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mViewFlags:I
 
     and-int/lit8 v1, v0, -0x2
@@ -11432,10 +11432,10 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mViewFlags:I
 
-    .line 2378
+    .line 2380
     return-void
 
-    .line 2377
+    .line 2379
     :cond_0
     const/4 v0, 0x0
 
@@ -11447,10 +11447,10 @@
     .param p1, "forced"    # Z
 
     .prologue
-    .line 3112
+    .line 3114
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mForcedClipping:Z
 
-    .line 3113
+    .line 3115
     return-void
 .end method
 
@@ -11459,16 +11459,16 @@
     .param p1, "height"    # F
 
     .prologue
-    .line 1658
+    .line 1660
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
     if-nez v0, :cond_0
 
-    .line 1673
+    .line 1675
     :goto_0
     return-void
 
-    .line 1661
+    .line 1663
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -11480,23 +11480,23 @@
 
     iput v1, v0, Landroid/graphics/RectF;->bottom:F
 
-    .line 1662
+    .line 1664
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 1663
+    .line 1665
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLView;->setHeight(F)V
 
-    .line 1665
+    .line 1667
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_2
 
-    .line 1666
+    .line 1668
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
@@ -11517,13 +11517,13 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setHeight(F)V
 
-    .line 1669
+    .line 1671
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_3
 
-    .line 1670
+    .line 1672
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
@@ -11544,7 +11544,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setHeight(F)V
 
-    .line 1672
+    .line 1674
     :cond_3
     const/4 v0, 0x0
 
@@ -11558,10 +11558,10 @@
     .param p1, "value"    # Z
 
     .prologue
-    .line 1696
+    .line 1698
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mInternalFocus:Z
 
-    .line 1697
+    .line 1699
     return-void
 .end method
 
@@ -11570,10 +11570,10 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$KeyListener;
 
     .prologue
-    .line 3116
+    .line 3118
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mKeyListener:Lcom/samsung/android/glview/GLView$KeyListener;
 
-    .line 3117
+    .line 3119
     return-void
 .end method
 
@@ -11584,14 +11584,14 @@
     .param p3, "top"    # F
 
     .prologue
-    .line 3127
+    .line 3129
     const/4 v0, 0x3
 
     if-gt p1, v0, :cond_0
 
     if-gez p1, :cond_1
 
-    .line 3128
+    .line 3130
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -11599,27 +11599,27 @@
 
     throw v0
 
-    .line 3130
+    .line 3132
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
 
     if-eqz v0, :cond_2
 
-    .line 3131
+    .line 3133
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
 
     aget-object v0, v0, p1
 
     iput p2, v0, Landroid/graphics/RectF;->left:F
 
-    .line 3132
+    .line 3134
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
 
     aget-object v0, v0, p1
 
     iput p3, v0, Landroid/graphics/RectF;->top:F
 
-    .line 3134
+    .line 3136
     :cond_2
     return-void
 .end method
@@ -11634,14 +11634,14 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 3144
+    .line 3146
     const/4 v0, 0x3
 
     if-gt p1, v0, :cond_0
 
     if-gez p1, :cond_1
 
-    .line 3145
+    .line 3147
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -11649,37 +11649,37 @@
 
     throw v0
 
-    .line 3147
+    .line 3149
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
 
     if-eqz v0, :cond_2
 
-    .line 3148
+    .line 3150
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
 
     aget-object v0, v0, p1
 
     iput p2, v0, Landroid/graphics/RectF;->left:F
 
-    .line 3149
+    .line 3151
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
 
     aget-object v0, v0, p1
 
     iput p3, v0, Landroid/graphics/RectF;->top:F
 
-    .line 3152
+    .line 3154
     :cond_2
     if-eqz p4, :cond_3
 
-    .line 3153
+    .line 3155
     invoke-virtual {p0, v1}, Lcom/samsung/android/glview/GLView;->setRotatable(Z)V
 
-    .line 3154
+    .line 3156
     invoke-virtual {p0, v1}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3156
+    .line 3158
     :cond_3
     return-void
 .end method
@@ -11690,14 +11690,14 @@
     .param p2, "leftTops"    # [F
 
     .prologue
-    .line 3165
+    .line 3167
     const/4 v0, 0x3
 
     if-gt p1, v0, :cond_0
 
     if-gez p1, :cond_1
 
-    .line 3166
+    .line 3168
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -11705,7 +11705,7 @@
 
     throw v0
 
-    .line 3168
+    .line 3170
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
 
@@ -11717,7 +11717,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->left:F
 
-    .line 3169
+    .line 3171
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mLeftTopCoordinates:[Landroid/graphics/RectF;
 
     aget-object v0, v0, p1
@@ -11728,7 +11728,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->top:F
 
-    .line 3170
+    .line 3172
     return-void
 .end method
 
@@ -11737,15 +11737,15 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$LongClickListener;
 
     .prologue
-    .line 1816
+    .line 1818
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
 
-    .line 1817
+    .line 1819
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mLongClickListener:Lcom/samsung/android/glview/GLView$LongClickListener;
 
-    .line 1818
+    .line 1820
     return-void
 .end method
 
@@ -11754,10 +11754,10 @@
     .param p1, "longClickable"    # Z
 
     .prologue
-    .line 2400
+    .line 2402
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
 
-    .line 2401
+    .line 2403
     return-void
 .end method
 
@@ -11766,10 +11766,10 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 1846
+    .line 1848
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mNextFocusDownId:I
 
-    .line 1847
+    .line 1849
     return-void
 .end method
 
@@ -11778,20 +11778,20 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 3173
+    .line 3175
     if-eqz p1, :cond_0
 
-    .line 3174
+    .line 3176
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getId()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusDownId:I
 
-    .line 3175
+    .line 3177
     const/4 v0, 0x1
 
-    .line 3177
+    .line 3179
     :goto_0
     return v0
 
@@ -11806,10 +11806,10 @@
     .param p1, "nextFocusForwardId"    # I
 
     .prologue
-    .line 1864
+    .line 1866
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mNextFocusForwardId:I
 
-    .line 1865
+    .line 1867
     return-void
 .end method
 
@@ -11818,10 +11818,10 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 1872
+    .line 1874
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mNextFocusLeftId:I
 
-    .line 1873
+    .line 1875
     return-void
 .end method
 
@@ -11830,20 +11830,20 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 3181
+    .line 3183
     if-eqz p1, :cond_0
 
-    .line 3182
+    .line 3184
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getId()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusLeftId:I
 
-    .line 3183
+    .line 3185
     const/4 v0, 0x1
 
-    .line 3185
+    .line 3187
     :goto_0
     return v0
 
@@ -11858,10 +11858,10 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 1880
+    .line 1882
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mNextFocusRightId:I
 
-    .line 1881
+    .line 1883
     return-void
 .end method
 
@@ -11870,20 +11870,20 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 3189
+    .line 3191
     if-eqz p1, :cond_0
 
-    .line 3190
+    .line 3192
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getId()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusRightId:I
 
-    .line 3191
+    .line 3193
     const/4 v0, 0x1
 
-    .line 3193
+    .line 3195
     :goto_0
     return v0
 
@@ -11898,10 +11898,10 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 1888
+    .line 1890
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mNextFocusUpId:I
 
-    .line 1889
+    .line 1891
     return-void
 .end method
 
@@ -11910,20 +11910,20 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 3197
+    .line 3199
     if-eqz p1, :cond_0
 
-    .line 3198
+    .line 3200
     invoke-virtual {p1}, Lcom/samsung/android/glview/GLView;->getId()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mNextFocusUpId:I
 
-    .line 3199
+    .line 3201
     const/4 v0, 0x1
 
-    .line 3201
+    .line 3203
     :goto_0
     return v0
 
@@ -11940,39 +11940,39 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 3210
+    .line 3212
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mBackgroundResId:I
 
     if-ne v0, p1, :cond_0
 
-    .line 3211
+    .line 3213
     const/4 v0, 0x0
 
-    .line 3221
+    .line 3223
     :goto_0
     return v0
 
-    .line 3213
+    .line 3215
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 3214
+    .line 3216
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->clear()V
 
-    .line 3215
+    .line 3217
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
-    .line 3217
+    .line 3219
     :cond_1
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mBackgroundResId:I
 
-    .line 3218
+    .line 3220
     new-instance v0, Lcom/samsung/android/glview/GLNinePatch;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -11993,12 +11993,12 @@
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
-    .line 3219
+    .line 3221
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     iput-object p0, v0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
-    .line 3220
+    .line 3222
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->getPaddings()Landroid/graphics/Rect;
@@ -12007,7 +12007,7 @@
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->setPaddings(Landroid/graphics/Rect;)V
 
-    .line 3221
+    .line 3223
     const/4 v0, 0x1
 
     goto :goto_0
@@ -12021,39 +12021,39 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 3231
+    .line 3233
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mBackgroundResId:I
 
     if-ne v0, p1, :cond_0
 
-    .line 3232
+    .line 3234
     const/4 v0, 0x0
 
-    .line 3242
+    .line 3244
     :goto_0
     return v0
 
-    .line 3234
+    .line 3236
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 3235
+    .line 3237
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->clear()V
 
-    .line 3236
+    .line 3238
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
-    .line 3238
+    .line 3240
     :cond_1
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mBackgroundResId:I
 
-    .line 3239
+    .line 3241
     new-instance v0, Lcom/samsung/android/glview/GLNinePatch;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
@@ -12076,12 +12076,12 @@
 
     iput-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
-    .line 3240
+    .line 3242
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     iput-object p0, v0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
-    .line 3241
+    .line 3243
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->getPaddings()Landroid/graphics/Rect;
@@ -12090,7 +12090,7 @@
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->setPaddings(Landroid/graphics/Rect;)V
 
-    .line 3242
+    .line 3244
     const/4 v0, 0x1
 
     goto :goto_0
@@ -12101,10 +12101,10 @@
     .param p1, "commandString"    # Ljava/lang/String;
 
     .prologue
-    .line 1908
+    .line 1910
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mObjectTag:Ljava/lang/String;
 
-    .line 1909
+    .line 1911
     return-void
 .end method
 
@@ -12115,7 +12115,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 1930
+    .line 1932
     monitor-enter p0
 
     if-eqz p1, :cond_0
@@ -12130,7 +12130,7 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 1931
+    .line 1933
     :try_start_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -12140,7 +12140,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1930
+    .line 1932
     :catchall_0
     move-exception v0
 
@@ -12148,7 +12148,7 @@
 
     throw v0
 
-    .line 1934
+    .line 1936
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
@@ -12157,38 +12157,38 @@
 
     if-nez v0, :cond_1
 
-    .line 1947
+    .line 1949
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 1938
+    .line 1940
     :cond_1
     :try_start_2
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mOrientation:I
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mLastOrientation:I
 
-    .line 1939
+    .line 1941
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mOrientation:I
 
-    .line 1941
+    .line 1943
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->updateRotationMatrix()V
 
-    .line 1943
+    .line 1945
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mOrientationChangeListener:Lcom/samsung/android/glview/GLView$OrientationChangeListener;
 
     if-eqz v0, :cond_2
 
-    .line 1944
+    .line 1946
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mOrientationChangeListener:Lcom/samsung/android/glview/GLView$OrientationChangeListener;
 
     iget v1, p0, Lcom/samsung/android/glview/GLView;->mOrientation:I
 
     invoke-interface {v0, v1}, Lcom/samsung/android/glview/GLView$OrientationChangeListener;->onOrientationChanged(I)V
 
-    .line 1946
+    .line 1948
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
@@ -12206,10 +12206,10 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$OrientationChangeListener;
 
     .prologue
-    .line 3251
+    .line 3253
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mOrientationChangeListener:Lcom/samsung/android/glview/GLView$OrientationChangeListener;
 
-    .line 3252
+    .line 3254
     return-void
 .end method
 
@@ -12218,15 +12218,15 @@
     .param p1, "paddings"    # Landroid/graphics/Rect;
 
     .prologue
-    .line 1976
+    .line 1978
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
 
-    .line 1977
+    .line 1979
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_0
 
-    .line 1978
+    .line 1980
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
@@ -12271,13 +12271,13 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 1980
+    .line 1982
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_1
 
-    .line 1981
+    .line 1983
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getWidth()F
@@ -12322,7 +12322,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 1983
+    .line 1985
     :cond_1
     return-void
 .end method
@@ -12332,10 +12332,10 @@
     .param p1, "halign"    # I
 
     .prologue
-    .line 2017
+    .line 2019
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mParentHAlign:I
 
-    .line 2018
+    .line 2020
     return-void
 .end method
 
@@ -12344,10 +12344,10 @@
     .param p1, "id"    # I
 
     .prologue
-    .line 2033
+    .line 2035
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mParentViewId:I
 
-    .line 2034
+    .line 2036
     return-void
 .end method
 
@@ -12356,10 +12356,10 @@
     .param p1, "valign"    # I
 
     .prologue
-    .line 2051
+    .line 2053
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mParentVAlign:I
 
-    .line 2052
+    .line 2054
     return-void
 .end method
 
@@ -12368,10 +12368,10 @@
     .param p1, "milliSeconds"    # I
 
     .prologue
-    .line 2059
+    .line 2061
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickInterval:I
 
-    .line 2060
+    .line 2062
     return-void
 .end method
 
@@ -12380,17 +12380,17 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 2436
+    .line 2438
     if-eqz p1, :cond_0
 
-    .line 2437
+    .line 2439
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
 
-    .line 2439
+    .line 2441
     :cond_0
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickWhenLongClicked:Z
 
-    .line 2440
+    .line 2442
     return-void
 .end method
 
@@ -12399,10 +12399,10 @@
     .param p1, "rotatable"    # Z
 
     .prologue
-    .line 2092
+    .line 2094
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mRotatable:Z
 
-    .line 2093
+    .line 2095
     return-void
 .end method
 
@@ -12411,10 +12411,10 @@
     .param p1, "rotateAnimation"    # Z
 
     .prologue
-    .line 2110
+    .line 2112
     iput-boolean p1, p0, Lcom/samsung/android/glview/GLView;->mRotateAnimation:Z
 
-    .line 2111
+    .line 2113
     return-void
 .end method
 
@@ -12423,10 +12423,10 @@
     .param p1, "duration"    # I
 
     .prologue
-    .line 3255
+    .line 3257
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mRotateAnimationDuration:I
 
-    .line 3256
+    .line 3258
     return-void
 .end method
 
@@ -12435,13 +12435,13 @@
     .param p1, "interpolator"    # Landroid/view/animation/Interpolator;
 
     .prologue
-    .line 3259
+    .line 3261
     if-eqz p1, :cond_0
 
-    .line 3260
+    .line 3262
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mRotateAnimationInterpolator:Landroid/view/animation/Interpolator;
 
-    .line 3261
+    .line 3263
     :cond_0
     return-void
 .end method
@@ -12451,10 +12451,10 @@
     .param p1, "parameter"    # F
 
     .prologue
-    .line 3269
+    .line 3271
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mShaderParameter:F
 
-    .line 3270
+    .line 3272
     return-void
 .end method
 
@@ -12463,7 +12463,7 @@
     .param p1, "type"    # I
 
     .prologue
-    .line 3278
+    .line 3280
     return-void
 .end method
 
@@ -12472,10 +12472,10 @@
     .param p1, "step"    # F
 
     .prologue
-    .line 3287
+    .line 3289
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mShaderStep:F
 
-    .line 3288
+    .line 3290
     return-void
 .end method
 
@@ -12487,7 +12487,7 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 3297
+    .line 3299
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -12498,7 +12498,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->right:F
 
-    .line 3298
+    .line 3300
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -12509,29 +12509,29 @@
 
     iput v1, v0, Landroid/graphics/RectF;->bottom:F
 
-    .line 3300
+    .line 3302
     iput-boolean v2, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
-    .line 3301
+    .line 3303
     iput-boolean v2, p0, Lcom/samsung/android/glview/GLView;->mSizeGiven:Z
 
-    .line 3303
+    .line 3305
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 3304
+    .line 3306
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0, p1, p2}, Lcom/samsung/android/glview/GLView;->setSize(FF)V
 
-    .line 3306
+    .line 3308
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_1
 
-    .line 3307
+    .line 3309
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
@@ -12568,13 +12568,13 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 3310
+    .line 3312
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_2
 
-    .line 3311
+    .line 3313
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
@@ -12611,13 +12611,13 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLRectangle;->setSize(FF)V
 
-    .line 3314
+    .line 3316
     :cond_2
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3315
+    .line 3317
     return-void
 .end method
 
@@ -12626,10 +12626,10 @@
     .param p1, "title"    # Ljava/lang/String;
 
     .prologue
-    .line 2138
+    .line 2140
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mSubTitle:Ljava/lang/String;
 
-    .line 2139
+    .line 2141
     return-void
 .end method
 
@@ -12638,10 +12638,10 @@
     .param p1, "viewTag"    # I
 
     .prologue
-    .line 2156
+    .line 2158
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mViewTag:I
 
-    .line 2157
+    .line 2159
     return-void
 .end method
 
@@ -12653,10 +12653,10 @@
     .param p1, "title"    # Ljava/lang/String;
 
     .prologue
-    .line 2164
+    .line 2166
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mTitle:Ljava/lang/String;
 
-    .line 2165
+    .line 2167
     return-void
 .end method
 
@@ -12665,10 +12665,10 @@
     .param p1, "l"    # Lcom/samsung/android/glview/GLView$TouchListener;
 
     .prologue
-    .line 3328
+    .line 3330
     iput-object p1, p0, Lcom/samsung/android/glview/GLView;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
 
-    .line 3329
+    .line 3331
     return-void
 .end method
 
@@ -12677,31 +12677,31 @@
     .param p1, "visibility"    # I
 
     .prologue
-    .line 2269
+    .line 2271
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
     if-eq v0, p1, :cond_1
 
-    .line 2270
+    .line 2272
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
-    .line 2271
+    .line 2273
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     if-eqz v0, :cond_0
 
-    .line 2272
+    .line 2274
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLContext;->setDirty(Z)V
 
-    .line 2274
+    .line 2276
     :cond_0
     invoke-virtual {p0, p1}, Lcom/samsung/android/glview/GLView;->onVisibilityChanged(I)V
 
-    .line 2276
+    .line 2278
     :cond_1
     return-void
 .end method
@@ -12712,34 +12712,34 @@
     .param p2, "update"    # Z
 
     .prologue
-    .line 3332
+    .line 3334
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
     if-ne v0, p1, :cond_0
 
-    .line 3340
+    .line 3342
     :goto_0
     return-void
 
-    .line 3335
+    .line 3337
     :cond_0
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mVisibility:I
 
-    .line 3336
+    .line 3338
     if-eqz p2, :cond_1
 
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     if-eqz v0, :cond_1
 
-    .line 3337
+    .line 3339
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLContext;->setDirty(Z)V
 
-    .line 3339
+    .line 3341
     :cond_1
     invoke-virtual {p0, p1}, Lcom/samsung/android/glview/GLView;->onVisibilityChanged(I)V
 
@@ -12751,16 +12751,16 @@
     .param p1, "width"    # F
 
     .prologue
-    .line 2291
+    .line 2293
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
     if-nez v0, :cond_0
 
-    .line 2306
+    .line 2308
     :goto_0
     return-void
 
-    .line 2294
+    .line 2296
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
@@ -12772,23 +12772,23 @@
 
     iput v1, v0, Landroid/graphics/RectF;->right:F
 
-    .line 2295
+    .line 2297
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_1
 
-    .line 2296
+    .line 2298
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/glview/GLView;->setWidth(F)V
 
-    .line 2298
+    .line 2300
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_2
 
-    .line 2299
+    .line 2301
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
@@ -12809,13 +12809,13 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setWidth(F)V
 
-    .line 2302
+    .line 2304
     :cond_2
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_3
 
-    .line 2303
+    .line 2305
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
@@ -12836,7 +12836,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLRectangle;->setWidth(F)V
 
-    .line 2305
+    .line 2307
     :cond_3
     const/4 v0, 0x0
 
@@ -12853,48 +12853,48 @@
 
     const/4 v1, 0x0
 
-    .line 3346
+    .line 3348
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mAnimation:Landroid/view/animation/Animation;
 
     if-nez v0, :cond_0
 
-    .line 3360
+    .line 3362
     :goto_0
     return-void
 
-    .line 3349
+    .line 3351
     :cond_0
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLoaded:Z
 
     if-eqz v0, :cond_1
 
-    .line 3350
+    .line 3352
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mAnimation:Landroid/view/animation/Animation;
 
     invoke-virtual {v0}, Landroid/view/animation/Animation;->reset()V
 
-    .line 3351
+    .line 3353
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mAnimationPending:Z
 
-    .line 3352
+    .line 3354
     iput-boolean v2, p0, Lcom/samsung/android/glview/GLView;->mAnimationStarted:Z
 
-    .line 3357
+    .line 3359
     :goto_1
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mAnimationFinished:Z
 
-    .line 3359
+    .line 3361
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLContext;->setDirty(Z)V
 
     goto :goto_0
 
-    .line 3354
+    .line 3356
     :cond_1
     iput-boolean v2, p0, Lcom/samsung/android/glview/GLView;->mAnimationPending:Z
 
-    .line 3355
+    .line 3357
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mAnimationStarted:Z
 
     goto :goto_1
@@ -12909,15 +12909,15 @@
 
     const/4 v7, 0x1
 
-    .line 3370
+    .line 3372
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mDragSensitivity:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 3379
+    .line 3381
     const/16 v6, 0x1f4
 
-    .line 3383
+    .line 3385
     .local v6, "dragHoldTime":I
     :goto_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
@@ -12926,58 +12926,58 @@
 
     if-nez v0, :cond_4
 
-    .line 3384
+    .line 3386
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mIsTouchCanceled:Z
 
-    .line 3385
+    .line 3387
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mPreviousDragX:F
 
-    .line 3386
+    .line 3388
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mPreviousDragY:F
 
-    .line 3387
+    .line 3389
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->resetDrag()V
 
-    .line 3388
+    .line 3390
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDraggable:Z
 
     if-eqz v0, :cond_0
 
-    .line 3389
+    .line 3391
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOrientation()I
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mTempOrientation:I
 
-    .line 3390
+    .line 3392
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mDragSensitivity:I
 
     if-nez v0, :cond_3
 
-    .line 3391
+    .line 3393
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->setDragging:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 3396
+    .line 3398
     :cond_0
     :goto_1
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
 
     if-eqz v0, :cond_1
 
-    .line 3397
+    .line 3399
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
@@ -12990,14 +12990,14 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 3471
+    .line 3473
     :cond_1
     :goto_2
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
 
     if-eqz v0, :cond_14
 
-    .line 3472
+    .line 3474
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mTouchListener:Lcom/samsung/android/glview/GLView$TouchListener;
 
     invoke-interface {v0, p0, p1}, Lcom/samsung/android/glview/GLView$TouchListener;->onTouch(Lcom/samsung/android/glview/GLView;Landroid/view/MotionEvent;)Z
@@ -13006,7 +13006,7 @@
 
     if-eqz v0, :cond_14
 
-    .line 3473
+    .line 3475
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDraggable:Z
 
     if-eqz v0, :cond_2
@@ -13015,35 +13015,35 @@
 
     if-nez v0, :cond_2
 
-    .line 3474
+    .line 3476
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->resetDrag()V
 
     :cond_2
     move v0, v7
 
-    .line 3490
+    .line 3492
     :goto_3
     return v0
 
-    .line 3372
+    .line 3374
     .end local v6    # "dragHoldTime":I
     :pswitch_0
     const/4 v6, 0x0
 
-    .line 3373
+    .line 3375
     .restart local v6    # "dragHoldTime":I
     goto :goto_0
 
-    .line 3375
+    .line 3377
     .end local v6    # "dragHoldTime":I
     :pswitch_1
     const/16 v6, 0x12c
 
-    .line 3376
+    .line 3378
     .restart local v6    # "dragHoldTime":I
     goto :goto_0
 
-    .line 3393
+    .line 3395
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
@@ -13059,7 +13059,7 @@
 
     goto :goto_1
 
-    .line 3399
+    .line 3401
     :cond_4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -13069,17 +13069,17 @@
 
     if-ne v0, v1, :cond_b
 
-    .line 3400
+    .line 3402
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDraggable:Z
 
     if-eqz v0, :cond_a
 
-    .line 3401
+    .line 3403
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDragging:Z
 
     if-eqz v0, :cond_8
 
-    .line 3402
+    .line 3404
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mTempOrientation:I
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getOrientation()I
@@ -13088,12 +13088,12 @@
 
     if-eq v0, v1, :cond_6
 
-    .line 3403
+    .line 3405
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
     if-eqz v0, :cond_5
 
-    .line 3404
+    .line 3406
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -13106,25 +13106,25 @@
 
     invoke-interface {v0, p0, v1, v2}, Lcom/samsung/android/glview/GLView$DragListener;->onDragEnd(Lcom/samsung/android/glview/GLView;FF)V
 
-    .line 3406
+    .line 3408
     :cond_5
     invoke-virtual {p1, v8}, Landroid/view/MotionEvent;->setAction(I)V
 
-    .line 3407
+    .line 3409
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->resetDrag()V
 
     move v0, v7
 
-    .line 3408
+    .line 3410
     goto :goto_3
 
-    .line 3410
+    .line 3412
     :cond_6
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
     if-eqz v0, :cond_7
 
-    .line 3411
+    .line 3413
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -13155,7 +13155,7 @@
 
     invoke-interface/range {v0 .. v5}, Lcom/samsung/android/glview/GLView$DragListener;->onDrag(Lcom/samsung/android/glview/GLView;FFFF)V
 
-    .line 3413
+    .line 3415
     :cond_7
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -13163,22 +13163,22 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mPreviousDragX:F
 
-    .line 3414
+    .line 3416
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v0
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mPreviousDragY:F
 
-    .line 3415
+    .line 3417
     if-eqz v6, :cond_1
 
     move v0, v7
 
-    .line 3416
+    .line 3418
     goto :goto_3
 
-    .line 3417
+    .line 3419
     :cond_8
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -13194,12 +13194,12 @@
 
     if-nez v0, :cond_9
 
-    .line 3418
+    .line 3420
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->resetDrag()V
 
     goto/16 :goto_2
 
-    .line 3420
+    .line 3422
     :cond_9
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -13207,7 +13207,7 @@
 
     iput v0, p0, Lcom/samsung/android/glview/GLView;->mPreviousDragX:F
 
-    .line 3421
+    .line 3423
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v0
@@ -13216,7 +13216,7 @@
 
     goto/16 :goto_2
 
-    .line 3423
+    .line 3425
     :cond_a
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -13232,12 +13232,12 @@
 
     if-nez v0, :cond_1
 
-    .line 3425
+    .line 3427
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
 
     if-eqz v0, :cond_1
 
-    .line 3426
+    .line 3428
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
@@ -13248,12 +13248,12 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 3427
+    .line 3429
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickWhenLongClicked:Z
 
     if-eqz v0, :cond_1
 
-    .line 3428
+    .line 3430
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
@@ -13266,7 +13266,7 @@
 
     goto/16 :goto_2
 
-    .line 3432
+    .line 3434
     :cond_b
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -13274,22 +13274,22 @@
 
     if-ne v0, v7, :cond_11
 
-    .line 3433
+    .line 3435
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDraggable:Z
 
     if-eqz v0, :cond_10
 
-    .line 3434
+    .line 3436
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDragging:Z
 
     if-eqz v0, :cond_d
 
-    .line 3435
+    .line 3437
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
     if-eqz v0, :cond_c
 
-    .line 3436
+    .line 3438
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -13302,34 +13302,18 @@
 
     invoke-interface {v0, p0, v1, v2}, Lcom/samsung/android/glview/GLView$DragListener;->onDragEnd(Lcom/samsung/android/glview/GLView;FF)V
 
-    .line 3438
+    .line 3440
     :cond_c
     invoke-virtual {p1, v8}, Landroid/view/MotionEvent;->setAction(I)V
 
-    .line 3440
+    .line 3442
     :cond_d
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->resetDrag()V
 
-    .line 3446
+    .line 3448
     :cond_e
     :goto_4
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
-
-    if-eqz v0, :cond_f
-
-    .line 3447
-    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
-
-    invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->setLongClick:Ljava/lang/Runnable;
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
-
-    .line 3448
-    iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickWhenLongClicked:Z
 
     if-eqz v0, :cond_f
 
@@ -13340,17 +13324,33 @@
 
     move-result-object v0
 
+    iget-object v1, p0, Lcom/samsung/android/glview/GLView;->setLongClick:Ljava/lang/Runnable;
+
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+
+    .line 3450
+    iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickWhenLongClicked:Z
+
+    if-eqz v0, :cond_f
+
+    .line 3451
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
+
+    move-result-object v0
+
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->repeatClick:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 3452
+    .line 3454
     :cond_f
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->sendAccessibilityEvent()V
 
     goto/16 :goto_2
 
-    .line 3442
+    .line 3444
     :cond_10
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -13366,12 +13366,12 @@
 
     if-nez v0, :cond_e
 
-    .line 3443
+    .line 3445
     invoke-virtual {p1, v8}, Landroid/view/MotionEvent;->setAction(I)V
 
     goto :goto_4
 
-    .line 3453
+    .line 3455
     :cond_11
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -13379,22 +13379,22 @@
 
     if-ne v0, v8, :cond_1
 
-    .line 3454
+    .line 3456
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDraggable:Z
 
     if-eqz v0, :cond_13
 
-    .line 3455
+    .line 3457
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mDragging:Z
 
     if-eqz v0, :cond_12
 
-    .line 3456
+    .line 3458
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
     if-eqz v0, :cond_12
 
-    .line 3457
+    .line 3459
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mDragListener:Lcom/samsung/android/glview/GLView$DragListener;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
@@ -13407,17 +13407,17 @@
 
     invoke-interface {v0, p0, v1, v2}, Lcom/samsung/android/glview/GLView$DragListener;->onDragEnd(Lcom/samsung/android/glview/GLView;FF)V
 
-    .line 3460
+    .line 3462
     :cond_12
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->resetDrag()V
 
-    .line 3462
+    .line 3464
     :cond_13
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mLongClickable:Z
 
     if-eqz v0, :cond_1
 
-    .line 3463
+    .line 3465
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
@@ -13428,12 +13428,12 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 3464
+    .line 3466
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRepeatClickWhenLongClicked:Z
 
     if-eqz v0, :cond_1
 
-    .line 3465
+    .line 3467
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLContext;->getMainHandler()Landroid/os/Handler;
@@ -13446,7 +13446,7 @@
 
     goto/16 :goto_2
 
-    .line 3480
+    .line 3482
     :cond_14
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -13468,10 +13468,10 @@
 
     if-nez v0, :cond_15
 
-    .line 3481
+    .line 3483
     invoke-virtual {p1, v8}, Landroid/view/MotionEvent;->setAction(I)V
 
-    .line 3484
+    .line 3486
     :cond_15
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -13479,21 +13479,21 @@
 
     if-ne v0, v8, :cond_17
 
-    .line 3485
+    .line 3487
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mIsTouchCanceled:Z
 
     if-eqz v0, :cond_16
 
     move v0, v7
 
-    .line 3486
+    .line 3488
     goto/16 :goto_3
 
-    .line 3488
+    .line 3490
     :cond_16
     iput-boolean v7, p0, Lcom/samsung/android/glview/GLView;->mIsTouchCanceled:Z
 
-    .line 3490
+    .line 3492
     :cond_17
     invoke-virtual {p0, p1}, Lcom/samsung/android/glview/GLView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -13501,7 +13501,7 @@
 
     goto/16 :goto_3
 
-    .line 3370
+    .line 3372
     nop
 
     :pswitch_data_0
@@ -13523,7 +13523,7 @@
 
     const/high16 v4, 0x3f000000    # 0.5f
 
-    .line 3500
+    .line 3502
     cmpl-float v2, p1, v5
 
     if-nez v2, :cond_0
@@ -13532,19 +13532,19 @@
 
     if-nez v2, :cond_0
 
-    .line 3519
+    .line 3521
     :goto_0
     return-void
 
-    .line 3503
+    .line 3505
     :cond_0
     move v0, p1
 
-    .line 3504
+    .line 3506
     .local v0, "alignedX":F
     move v1, p2
 
-    .line 3507
+    .line 3509
     .local v1, "alignedY":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
@@ -13556,7 +13556,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 3508
+    .line 3510
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     add-float/2addr v2, p1
@@ -13577,7 +13577,7 @@
 
     sub-float v0, v2, v3
 
-    .line 3509
+    .line 3511
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     add-float/2addr v2, p2
@@ -13598,7 +13598,7 @@
 
     sub-float v1, v2, v3
 
-    .line 3512
+    .line 3514
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
@@ -13616,20 +13616,20 @@
 
     invoke-static {v2, v6, v3, v4, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3514
+    .line 3516
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3516
+    .line 3518
     invoke-virtual {p0, v6}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3517
+    .line 3519
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     add-float/2addr v2, p1
 
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 3518
+    .line 3520
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     add-float/2addr v2, p2
@@ -13652,7 +13652,7 @@
 
     const/high16 v4, 0x3f000000    # 0.5f
 
-    .line 3546
+    .line 3548
     cmpl-float v2, p1, v5
 
     if-nez v2, :cond_0
@@ -13661,19 +13661,19 @@
 
     if-nez v2, :cond_0
 
-    .line 3569
+    .line 3571
     :goto_0
     return-void
 
-    .line 3549
+    .line 3551
     :cond_0
     move v0, p1
 
-    .line 3550
+    .line 3552
     .local v0, "alignedX":F
     move v1, p2
 
-    .line 3553
+    .line 3555
     .local v1, "alignedY":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
@@ -13685,7 +13685,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 3554
+    .line 3556
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     add-float/2addr v2, p1
@@ -13706,7 +13706,7 @@
 
     sub-float v0, v2, v3
 
-    .line 3555
+    .line 3557
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     add-float/2addr v2, p2
@@ -13727,26 +13727,26 @@
 
     sub-float v1, v2, v3
 
-    .line 3558
+    .line 3560
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
     invoke-static {v2, v6, v0, v1, p3}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3559
+    .line 3561
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3561
+    .line 3563
     cmpl-float v2, p3, v5
 
     if-eqz v2, :cond_2
 
-    .line 3562
+    .line 3564
     const/4 v2, 0x1
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3566
+    .line 3568
     :goto_1
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
@@ -13754,14 +13754,14 @@
 
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 3567
+    .line 3569
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     add-float/2addr v2, p2
 
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
-    .line 3568
+    .line 3570
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateZ:F
 
     add-float/2addr v2, p3
@@ -13770,7 +13770,7 @@
 
     goto :goto_0
 
-    .line 3564
+    .line 3566
     :cond_2
     invoke-virtual {p0, v6}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
@@ -13791,7 +13791,7 @@
 
     const/4 v4, 0x0
 
-    .line 3572
+    .line 3574
     cmpl-float v2, p1, v4
 
     if-nez v2, :cond_0
@@ -13804,19 +13804,19 @@
 
     if-nez v2, :cond_0
 
-    .line 3596
+    .line 3598
     :goto_0
     return-void
 
-    .line 3575
+    .line 3577
     :cond_0
     move v0, p1
 
-    .line 3576
+    .line 3578
     .local v0, "alignedX":F
     move v1, p2
 
-    .line 3579
+    .line 3581
     .local v1, "alignedY":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
@@ -13828,7 +13828,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 3580
+    .line 3582
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     add-float/2addr v2, p1
@@ -13849,7 +13849,7 @@
 
     sub-float v0, v2, v3
 
-    .line 3581
+    .line 3583
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     add-float/2addr v2, p2
@@ -13870,29 +13870,29 @@
 
     sub-float v1, v2, v3
 
-    .line 3583
+    .line 3585
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
     invoke-static {v2, v6, v0, v1, p3}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3584
+    .line 3586
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3586
+    .line 3588
     if-eqz p4, :cond_2
 
-    .line 3587
+    .line 3589
     cmpl-float v2, p3, v4
 
     if-eqz v2, :cond_3
 
-    .line 3588
+    .line 3590
     const/4 v2, 0x1
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3593
+    .line 3595
     :cond_2
     :goto_1
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
@@ -13901,14 +13901,14 @@
 
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 3594
+    .line 3596
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     add-float/2addr v2, p2
 
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
-    .line 3595
+    .line 3597
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateZ:F
 
     add-float/2addr v2, p3
@@ -13917,7 +13917,7 @@
 
     goto :goto_0
 
-    .line 3590
+    .line 3592
     :cond_3
     invoke-virtual {p0, v6}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
@@ -13937,7 +13937,7 @@
 
     const/high16 v4, 0x3f000000    # 0.5f
 
-    .line 3522
+    .line 3524
     cmpl-float v2, p1, v5
 
     if-nez v2, :cond_0
@@ -13946,19 +13946,19 @@
 
     if-nez v2, :cond_0
 
-    .line 3543
+    .line 3545
     :goto_0
     return-void
 
-    .line 3525
+    .line 3527
     :cond_0
     move v0, p1
 
-    .line 3526
+    .line 3528
     .local v0, "alignedX":F
     move v1, p2
 
-    .line 3529
+    .line 3531
     .local v1, "alignedY":F
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
@@ -13970,7 +13970,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 3530
+    .line 3532
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     add-float/2addr v2, p1
@@ -13991,7 +13991,7 @@
 
     sub-float v0, v2, v3
 
-    .line 3531
+    .line 3533
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     add-float/2addr v2, p2
@@ -14012,7 +14012,7 @@
 
     sub-float v1, v2, v3
 
-    .line 3534
+    .line 3536
     :cond_1
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
@@ -14030,16 +14030,16 @@
 
     invoke-static {v2, v6, v3, v4, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3536
+    .line 3538
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3538
+    .line 3540
     if-eqz p3, :cond_2
 
-    .line 3539
+    .line 3541
     invoke-virtual {p0, v6}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3541
+    .line 3543
     :cond_2
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
@@ -14047,7 +14047,7 @@
 
     iput v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 3542
+    .line 3544
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     add-float/2addr v2, p2
@@ -14069,7 +14069,7 @@
 
     const/high16 v3, 0x3f000000    # 0.5f
 
-    .line 3599
+    .line 3601
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     invoke-static {v2, p1}, Lcom/samsung/android/glview/GLUtil;->floatEquals(FF)Z
@@ -14086,28 +14086,28 @@
 
     if-eqz v2, :cond_0
 
-    .line 3631
+    .line 3633
     :goto_0
     return-void
 
-    .line 3602
+    .line 3604
     :cond_0
     move v0, p1
 
-    .line 3603
+    .line 3605
     .local v0, "alignedX":F
     move v1, p2
 
-    .line 3606
+    .line 3608
     .local v1, "alignedY":F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
     invoke-static {v2, v6}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 3607
+    .line 3609
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3610
+    .line 3612
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -14118,32 +14118,32 @@
 
     if-eqz v2, :cond_1
 
-    .line 3611
+    .line 3613
     cmpl-float v2, v0, v5
 
     if-ltz v2, :cond_2
 
-    .line 3612
+    .line 3614
     add-float v2, p1, v3
 
     float-to-int v2, v2
 
     int-to-float v0, v2
 
-    .line 3616
+    .line 3618
     :goto_1
     cmpl-float v2, v1, v5
 
     if-ltz v2, :cond_3
 
-    .line 3617
+    .line 3619
     add-float v2, p2, v3
 
     float-to-int v2, v2
 
     int-to-float v1, v2
 
-    .line 3623
+    .line 3625
     :cond_1
     :goto_2
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
@@ -14162,21 +14162,21 @@
 
     invoke-static {v2, v6, v3, v4, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3625
+    .line 3627
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3627
+    .line 3629
     invoke-virtual {p0, v6}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3629
+    .line 3631
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 3630
+    .line 3632
     iput p2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     goto :goto_0
 
-    .line 3614
+    .line 3616
     :cond_2
     sub-float v2, p1, v3
 
@@ -14186,7 +14186,7 @@
 
     goto :goto_1
 
-    .line 3619
+    .line 3621
     :cond_3
     sub-float v2, p2, v3
 
@@ -14210,7 +14210,7 @@
 
     const/high16 v3, 0x3f000000    # 0.5f
 
-    .line 3670
+    .line 3672
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     invoke-static {v2, p1}, Lcom/samsung/android/glview/GLUtil;->floatEquals(FF)Z
@@ -14235,28 +14235,28 @@
 
     if-eqz v2, :cond_0
 
-    .line 3706
+    .line 3708
     :goto_0
     return-void
 
-    .line 3673
+    .line 3675
     :cond_0
     move v0, p1
 
-    .line 3674
+    .line 3676
     .local v0, "alignedX":F
     move v1, p2
 
-    .line 3677
+    .line 3679
     .local v1, "alignedY":F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
     invoke-static {v2, v6}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 3678
+    .line 3680
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3681
+    .line 3683
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -14267,32 +14267,32 @@
 
     if-eqz v2, :cond_1
 
-    .line 3682
+    .line 3684
     cmpl-float v2, v0, v4
 
     if-ltz v2, :cond_2
 
-    .line 3683
+    .line 3685
     add-float v2, p1, v3
 
     float-to-int v2, v2
 
     int-to-float v0, v2
 
-    .line 3687
+    .line 3689
     :goto_1
     cmpl-float v2, v1, v4
 
     if-ltz v2, :cond_3
 
-    .line 3688
+    .line 3690
     add-float v2, p2, v3
 
     float-to-int v2, v2
 
     int-to-float v1, v2
 
-    .line 3694
+    .line 3696
     :cond_1
     :goto_2
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
@@ -14311,18 +14311,18 @@
 
     iget-object v5, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    .line 3695
+    .line 3697
     invoke-static {v5, p3}, Lcom/samsung/android/glview/GLUtil;->getGLDistanceFromScreenDistanceY(Lcom/samsung/android/glview/GLContext;F)F
 
     move-result v5
 
-    .line 3694
+    .line 3696
     invoke-static {v2, v6, v3, v4, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3696
+    .line 3698
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3698
+    .line 3700
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateZ:F
 
     invoke-static {v2, p3}, Lcom/samsung/android/glview/GLUtil;->floatEquals(FF)Z
@@ -14331,24 +14331,24 @@
 
     if-nez v2, :cond_4
 
-    .line 3699
+    .line 3701
     const/4 v2, 0x1
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3703
+    .line 3705
     :goto_3
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 3704
+    .line 3706
     iput p2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
-    .line 3705
+    .line 3707
     iput p3, p0, Lcom/samsung/android/glview/GLView;->mTranslateZ:F
 
     goto :goto_0
 
-    .line 3685
+    .line 3687
     :cond_2
     sub-float v2, p1, v3
 
@@ -14358,7 +14358,7 @@
 
     goto :goto_1
 
-    .line 3690
+    .line 3692
     :cond_3
     sub-float v2, p2, v3
 
@@ -14368,7 +14368,7 @@
 
     goto :goto_2
 
-    .line 3701
+    .line 3703
     :cond_4
     invoke-virtual {p0, v6}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
@@ -14389,7 +14389,7 @@
 
     const/high16 v3, 0x3f000000    # 0.5f
 
-    .line 3709
+    .line 3711
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     invoke-static {v2, p1}, Lcom/samsung/android/glview/GLUtil;->floatEquals(FF)Z
@@ -14414,28 +14414,28 @@
 
     if-eqz v2, :cond_0
 
-    .line 3747
+    .line 3749
     :goto_0
     return-void
 
-    .line 3712
+    .line 3714
     :cond_0
     move v0, p1
 
-    .line 3713
+    .line 3715
     .local v0, "alignedX":F
     move v1, p2
 
-    .line 3716
+    .line 3718
     .local v1, "alignedY":F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
     invoke-static {v2, v6}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 3717
+    .line 3719
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3720
+    .line 3722
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -14446,32 +14446,32 @@
 
     if-eqz v2, :cond_1
 
-    .line 3721
+    .line 3723
     cmpl-float v2, v0, v4
 
     if-ltz v2, :cond_3
 
-    .line 3722
+    .line 3724
     add-float v2, p1, v3
 
     float-to-int v2, v2
 
     int-to-float v0, v2
 
-    .line 3726
+    .line 3728
     :goto_1
     cmpl-float v2, v1, v4
 
     if-ltz v2, :cond_4
 
-    .line 3727
+    .line 3729
     add-float v2, p2, v3
 
     float-to-int v2, v2
 
     int-to-float v1, v2
 
-    .line 3733
+    .line 3735
     :cond_1
     :goto_2
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
@@ -14490,21 +14490,21 @@
 
     iget-object v5, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    .line 3734
+    .line 3736
     invoke-static {v5, p3}, Lcom/samsung/android/glview/GLUtil;->getGLDistanceFromScreenDistanceY(Lcom/samsung/android/glview/GLContext;F)F
 
     move-result v5
 
-    .line 3733
+    .line 3735
     invoke-static {v2, v6, v3, v4, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3735
+    .line 3737
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3737
+    .line 3739
     if-eqz p4, :cond_2
 
-    .line 3738
+    .line 3740
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateZ:F
 
     invoke-static {v2, p3}, Lcom/samsung/android/glview/GLUtil;->floatEquals(FF)Z
@@ -14513,25 +14513,25 @@
 
     if-nez v2, :cond_5
 
-    .line 3739
+    .line 3741
     const/4 v2, 0x1
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3744
+    .line 3746
     :cond_2
     :goto_3
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 3745
+    .line 3747
     iput p2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
-    .line 3746
+    .line 3748
     iput p3, p0, Lcom/samsung/android/glview/GLView;->mTranslateZ:F
 
     goto :goto_0
 
-    .line 3724
+    .line 3726
     :cond_3
     sub-float v2, p1, v3
 
@@ -14541,7 +14541,7 @@
 
     goto :goto_1
 
-    .line 3729
+    .line 3731
     :cond_4
     sub-float v2, p2, v3
 
@@ -14551,7 +14551,7 @@
 
     goto :goto_2
 
-    .line 3741
+    .line 3743
     :cond_5
     invoke-virtual {p0, v6}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
@@ -14571,7 +14571,7 @@
 
     const/high16 v3, 0x3f000000    # 0.5f
 
-    .line 3634
+    .line 3636
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
     invoke-static {v2, p1}, Lcom/samsung/android/glview/GLUtil;->floatEquals(FF)Z
@@ -14588,28 +14588,28 @@
 
     if-eqz v2, :cond_0
 
-    .line 3667
+    .line 3669
     :goto_0
     return-void
 
-    .line 3637
+    .line 3639
     :cond_0
     move v0, p1
 
-    .line 3638
+    .line 3640
     .local v0, "alignedX":F
     move v1, p2
 
-    .line 3641
+    .line 3643
     .local v1, "alignedY":F
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
 
     invoke-static {v2, v6}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 3642
+    .line 3644
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3645
+    .line 3647
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getContext()Lcom/samsung/android/glview/GLContext;
 
     move-result-object v2
@@ -14620,32 +14620,32 @@
 
     if-eqz v2, :cond_1
 
-    .line 3646
+    .line 3648
     cmpl-float v2, v0, v5
 
     if-ltz v2, :cond_3
 
-    .line 3647
+    .line 3649
     add-float v2, p1, v3
 
     float-to-int v2, v2
 
     int-to-float v0, v2
 
-    .line 3651
+    .line 3653
     :goto_1
     cmpl-float v2, v1, v5
 
     if-ltz v2, :cond_4
 
-    .line 3652
+    .line 3654
     add-float v2, p2, v3
 
     float-to-int v2, v2
 
     int-to-float v1, v2
 
-    .line 3658
+    .line 3660
     :cond_1
     :goto_2
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mTranslationMatrix:[F
@@ -14664,25 +14664,25 @@
 
     invoke-static {v2, v6, v3, v4, v5}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3660
+    .line 3662
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3662
+    .line 3664
     if-eqz p3, :cond_2
 
-    .line 3663
+    .line 3665
     invoke-virtual {p0, v6}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 3665
+    .line 3667
     :cond_2
     iput p1, p0, Lcom/samsung/android/glview/GLView;->mTranslateX:F
 
-    .line 3666
+    .line 3668
     iput p2, p0, Lcom/samsung/android/glview/GLView;->mTranslateY:F
 
     goto :goto_0
 
-    .line 3649
+    .line 3651
     :cond_3
     sub-float v2, p1, v3
 
@@ -14692,7 +14692,7 @@
 
     goto :goto_1
 
-    .line 3654
+    .line 3656
     :cond_4
     sub-float v2, p2, v3
 
@@ -14707,27 +14707,27 @@
     .locals 2
 
     .prologue
-    .line 3750
+    .line 3752
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLContext;->setDirty(Z)V
 
-    .line 3751
+    .line 3753
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->onAlphaUpdated()V
 
-    .line 3752
+    .line 3754
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 3753
+    .line 3755
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->onAlphaUpdated()V
 
-    .line 3755
+    .line 3757
     :cond_0
     return-void
 .end method
@@ -14739,45 +14739,45 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 3758
+    .line 3760
     iput-boolean v1, p0, Lcom/samsung/android/glview/GLView;->mLayoutUpdated:Z
 
-    .line 3759
+    .line 3761
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->onLayoutUpdated()V
 
-    .line 3760
+    .line 3762
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 3761
+    .line 3763
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->onLayoutUpdated()V
 
-    .line 3763
+    .line 3765
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_1
 
-    .line 3764
+    .line 3766
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLRectangle;->onLayoutUpdated()V
 
-    .line 3766
+    .line 3768
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_2
 
-    .line 3767
+    .line 3769
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLRectangle;->onLayoutUpdated()V
 
-    .line 3769
+    .line 3771
     :cond_2
     if-eqz p1, :cond_3
 
@@ -14785,35 +14785,35 @@
 
     if-eqz v0, :cond_3
 
-    .line 3770
+    .line 3772
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLView;->onDepthUpdated()V
 
-    .line 3772
+    .line 3774
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLContext;->setDirty(Z)V
 
-    .line 3774
+    .line 3776
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mRotatable:Z
 
     if-eqz v0, :cond_4
 
-    .line 3775
+    .line 3777
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->updateRotationMatrix()V
 
-    .line 3778
+    .line 3780
     :cond_4
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mScaleChanged:Z
 
     if-eqz v0, :cond_5
 
-    .line 3779
+    .line 3781
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->updateScaleMatrix()V
 
-    .line 3781
+    .line 3783
     :cond_5
     return-void
 .end method
@@ -14824,28 +14824,43 @@
     .prologue
     const/high16 v3, 0x40000000    # 2.0f
 
-    .line 3784
+    .line 3786
     monitor-enter p0
 
     :try_start_0
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v0, :cond_0
+
+    .line 3819
+    :goto_0
+    monitor-exit p0
+
+    return-void
+
+    .line 3789
+    :cond_0
+    :try_start_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 3786
+    .line 3791
     const/4 v0, 0x2
 
     new-array v6, v0, [F
 
-    .line 3787
+    .line 3792
     .local v6, "currentPivot":[F
     const/4 v0, 0x2
 
     new-array v8, v0, [F
 
-    .line 3788
+    .line 3793
     .local v8, "rotationPivot":[F
     iget v0, p0, Lcom/samsung/android/glview/GLView;->mOrientation:I
 
@@ -14859,13 +14874,13 @@
 
     move-result-object v7
 
-    .line 3790
+    .line 3795
     .local v7, "leftTop":[F
     iget-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mCenterPivot:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 3791
+    .line 3796
     const/4 v0, 0x0
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
@@ -14882,7 +14897,7 @@
 
     aput v1, v7, v0
 
-    .line 3792
+    .line 3797
     const/4 v0, 0x1
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
@@ -14899,7 +14914,7 @@
 
     aput v1, v7, v0
 
-    .line 3794
+    .line 3799
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v1, 0x0
@@ -14912,7 +14927,7 @@
 
     invoke-static {v0, v6, v1, v2}, Lcom/samsung/android/glview/GLUtil;->getGLCoordinateFromScreenCoordinate(Lcom/samsung/android/glview/GLContext;[FFF)V
 
-    .line 3796
+    .line 3801
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
 
     const/4 v1, 0x0
@@ -14929,7 +14944,7 @@
 
     invoke-static {v0, v1, v2, v3, v4}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3797
+    .line 3802
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
 
     const/4 v1, 0x0
@@ -14962,7 +14977,7 @@
 
     invoke-static/range {v0 .. v5}, Landroid/opengl/Matrix;->rotateM([FIFFFF)V
 
-    .line 3798
+    .line 3803
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
 
     const/4 v1, 0x0
@@ -14983,25 +14998,36 @@
 
     invoke-static {v0, v1, v2, v3, v4}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3813
-    :goto_0
+    .line 3818
+    :goto_1
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3814
+    goto :goto_0
+
+    .line 3786
+    .end local v6    # "currentPivot":[F
+    .end local v7    # "leftTop":[F
+    .end local v8    # "rotationPivot":[F
+    :catchall_0
+    move-exception v0
+
     monitor-exit p0
 
-    return-void
+    throw v0
 
-    .line 3800
-    :cond_0
-    :try_start_1
+    .line 3805
+    .restart local v6    # "currentPivot":[F
+    .restart local v7    # "leftTop":[F
+    .restart local v8    # "rotationPivot":[F
+    :cond_1
+    :try_start_2
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mParent:Lcom/samsung/android/glview/GLView;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
-    .line 3801
+    .line 3806
     const/4 v0, 0x0
 
     aget v1, v7, v0
@@ -15016,7 +15042,7 @@
 
     aput v1, v7, v0
 
-    .line 3802
+    .line 3807
     const/4 v0, 0x1
 
     aget v1, v7, v0
@@ -15031,8 +15057,8 @@
 
     aput v1, v7, v0
 
-    .line 3805
-    :cond_1
+    .line 3810
+    :cond_2
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getLeft()F
@@ -15045,7 +15071,7 @@
 
     invoke-static {v0, v6, v1, v2}, Lcom/samsung/android/glview/GLUtil;->getGLCoordinateFromScreenCoordinate(Lcom/samsung/android/glview/GLContext;[FFF)V
 
-    .line 3806
+    .line 3811
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     const/4 v1, 0x0
@@ -15058,7 +15084,7 @@
 
     invoke-static {v0, v8, v1, v2}, Lcom/samsung/android/glview/GLUtil;->getGLCoordinateFromScreenCoordinate(Lcom/samsung/android/glview/GLContext;[FFF)V
 
-    .line 3808
+    .line 3813
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
 
     const/4 v1, 0x0
@@ -15075,7 +15101,7 @@
 
     invoke-static {v0, v1, v2, v3, v4}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3809
+    .line 3814
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
 
     const/4 v1, 0x0
@@ -15108,7 +15134,7 @@
 
     invoke-static/range {v0 .. v5}, Landroid/opengl/Matrix;->rotateM([FIFFFF)V
 
-    .line 3810
+    .line 3815
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mRotationMatrix:[F
 
     const/4 v1, 0x0
@@ -15128,21 +15154,10 @@
     const/4 v4, 0x0
 
     invoke-static {v0, v1, v2, v3, v4}, Landroid/opengl/Matrix;->translateM([FIFFF)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    goto :goto_0
-
-    .line 3784
-    .end local v6    # "currentPivot":[F
-    .end local v7    # "leftTop":[F
-    .end local v8    # "rotationPivot":[F
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
+    goto :goto_1
 .end method
 
 .method public final updateScaleMatrix()V
@@ -15157,15 +15172,15 @@
 
     const/4 v5, 0x0
 
-    .line 3817
+    .line 3822
     iput-boolean v6, p0, Lcom/samsung/android/glview/GLView;->mScaleChanged:Z
 
-    .line 3819
+    .line 3824
     const/4 v1, 0x2
 
     new-array v0, v1, [F
 
-    .line 3822
+    .line 3827
     .local v0, "currentPivot":[F
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
@@ -15183,7 +15198,7 @@
 
     aput v2, v1, v5
 
-    .line 3823
+    .line 3828
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
 
     invoke-virtual {p0}, Lcom/samsung/android/glview/GLView;->getTop()F
@@ -15200,7 +15215,7 @@
 
     aput v2, v1, v6
 
-    .line 3825
+    .line 3830
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
     iget-object v2, p0, Lcom/samsung/android/glview/GLView;->mLeftTop:[F
@@ -15213,7 +15228,7 @@
 
     invoke-static {v1, v0, v2, v3}, Lcom/samsung/android/glview/GLUtil;->getGLCoordinateFromScreenCoordinate(Lcom/samsung/android/glview/GLContext;[FFF)V
 
-    .line 3827
+    .line 3832
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mScaleMatrix:[F
 
     aget v2, v0, v5
@@ -15222,7 +15237,7 @@
 
     invoke-static {v1, v5, v2, v3, v7}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3828
+    .line 3833
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mScaleMatrix:[F
 
     iget v2, p0, Lcom/samsung/android/glview/GLView;->mScaleX:F
@@ -15233,7 +15248,7 @@
 
     invoke-static {v1, v5, v2, v3, v4}, Landroid/opengl/Matrix;->scaleM([FIFFF)V
 
-    .line 3829
+    .line 3834
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mScaleMatrix:[F
 
     aget v2, v0, v5
@@ -15246,10 +15261,10 @@
 
     invoke-static {v1, v5, v2, v3, v7}, Landroid/opengl/Matrix;->translateM([FIFFF)V
 
-    .line 3831
+    .line 3836
     invoke-direct {p0}, Lcom/samsung/android/glview/GLView;->combineMatrices()V
 
-    .line 3832
+    .line 3837
     return-void
 .end method
 
@@ -15259,7 +15274,7 @@
     .param p2, "height"    # F
 
     .prologue
-    .line 4128
+    .line 4133
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -15270,7 +15285,7 @@
 
     iput v1, v0, Landroid/graphics/RectF;->right:F
 
-    .line 4129
+    .line 4134
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mBound:Landroid/graphics/RectF;
@@ -15281,28 +15296,28 @@
 
     iput v1, v0, Landroid/graphics/RectF;->bottom:F
 
-    .line 4131
+    .line 4136
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/samsung/android/glview/GLView;->mSizeSpecified:Z
 
-    .line 4133
+    .line 4138
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     if-eqz v0, :cond_0
 
-    .line 4134
+    .line 4139
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mBackground:Lcom/samsung/android/glview/GLView;
 
     invoke-virtual {v0, p1, p2}, Lcom/samsung/android/glview/GLView;->updateSize(FF)V
 
-    .line 4136
+    .line 4141
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_1
 
-    .line 4137
+    .line 4142
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mFocusIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
@@ -15339,13 +15354,13 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLRectangle;->updateSize(FF)V
 
-    .line 4140
+    .line 4145
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v0, :cond_2
 
-    .line 4141
+    .line 4146
     iget-object v0, p0, Lcom/samsung/android/glview/GLView;->mHoverIndicator:Lcom/samsung/android/glview/GLRectangle;
 
     iget-object v1, p0, Lcom/samsung/android/glview/GLView;->mPaddings:Landroid/graphics/Rect;
@@ -15382,12 +15397,12 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLRectangle;->updateSize(FF)V
 
-    .line 4143
+    .line 4148
     :cond_2
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/glview/GLView;->updateLayout(Z)V
 
-    .line 4144
+    .line 4149
     return-void
 .end method

@@ -106,7 +106,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_HEIGHT:I
 
     .line 51
-    const v0, 0x7f0b00eb
+    const v0, 0x7f0b00ec
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -117,7 +117,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/Indicators;->INDICATOR_GROUP_POS_X:I
 
     .line 52
-    const v0, 0x7f0b00ec
+    const v0, 0x7f0b00ed
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -407,7 +407,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a00f3
+    const v3, 0x7f0a00f5
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -663,7 +663,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f020224
+    const v4, 0x7f020223
 
     invoke-direct {v0, v1, v2, v3, v4}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -814,7 +814,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a00f9
+    const v3, 0x7f0a00fb
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1528,7 +1528,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0114
+    const v2, 0x7f0a0116
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1569,7 +1569,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0114
+    const v2, 0x7f0a0116
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->sendBroadcastChangeSettings(ILjava/lang/String;)V
+    value = Lcom/sec/android/app/camera/Camera;->sendBroadcastChangeSettings(II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -22,21 +22,21 @@
 
 .field final synthetic val$menuCommandId:I
 
-.field final synthetic val$value:Ljava/lang/String;
+.field final synthetic val$modeCommandId:I
 
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/app/camera/Camera;ILjava/lang/String;)V
+.method constructor <init>(Lcom/sec/android/app/camera/Camera;II)V
     .locals 0
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 4252
+    .line 4255
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     iput p2, p0, Lcom/sec/android/app/camera/Camera$21;->val$menuCommandId:I
 
-    iput-object p3, p0, Lcom/sec/android/app/camera/Camera$21;->val$value:Ljava/lang/String;
+    iput p3, p0, Lcom/sec/android/app/camera/Camera$21;->val$modeCommandId:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,52 +46,69 @@
 
 # virtual methods
 .method public run()V
-    .locals 5
+    .locals 6
 
     .prologue
-    .line 4255
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
+    .line 4258
+    iget-object v3, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    move-result-object v2
+    move-result-object v3
 
-    iget v3, p0, Lcom/sec/android/app/camera/Camera$21;->val$menuCommandId:I
+    iget v4, p0, Lcom/sec/android/app/camera/Camera$21;->val$menuCommandId:I
 
-    iget-object v4, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
+    iget-object v5, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-    invoke-static {v4}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    invoke-static {v5}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
+    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
 
-    move-result v4
+    move-result v5
 
-    invoke-interface {v2, v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFeatureValueByCommandIdForLogging(IZ)Ljava/lang/String;
+    invoke-interface {v3, v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFeatureValueByCommandIdForLogging(IZ)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4256
+    .line 4259
     .local v1, "featureID":Ljava/lang/String;
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->val$value:Ljava/lang/String;
+    const/4 v2, 0x0
 
+    .line 4260
+    .local v2, "settingID":Ljava/lang/String;
+    iget v3, p0, Lcom/sec/android/app/camera/Camera$21;->val$modeCommandId:I
+
+    const/4 v4, -0x1
+
+    if-eq v3, v4, :cond_0
+
+    .line 4261
+    iget v3, p0, Lcom/sec/android/app/camera/Camera$21;->val$modeCommandId:I
+
+    invoke-static {v3}, Lcom/sec/android/app/camera/command/CmdIdStringMapper;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 4263
+    :cond_0
     invoke-static {v1, v2}, Lcom/sec/android/app/camera/util/ContextProviderUtils;->getSettingsSet(Ljava/lang/String;Ljava/lang/String;)Landroid/content/ContentValues;
 
     move-result-object v0
 
-    .line 4257
+    .line 4264
     .local v0, "cv":Landroid/content/ContentValues;
-    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
+    iget-object v3, p0, Lcom/sec/android/app/camera/Camera$21;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-virtual {v2}, Lcom/sec/android/app/camera/Camera;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/sec/android/app/camera/Camera;->getApplicationContext()Landroid/content/Context;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-static {v2, v0}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
+    invoke-static {v3, v0}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
 
-    .line 4258
+    .line 4265
     return-void
 .end method

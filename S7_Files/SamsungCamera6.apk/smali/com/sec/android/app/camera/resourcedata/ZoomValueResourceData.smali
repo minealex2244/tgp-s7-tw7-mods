@@ -9,7 +9,7 @@
 
     .prologue
     .line 26
-    const v0, 0x7f0a00ca
+    const v0, 0x7f0a00cc
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;-><init>(I)V
 

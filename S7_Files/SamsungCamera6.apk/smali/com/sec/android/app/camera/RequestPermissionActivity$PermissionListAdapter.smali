@@ -133,7 +133,7 @@
 
     .line 393
     .local v0, "holder":Lcom/sec/android/app/camera/RequestPermissionActivity$PermissionListAdapter$ViewHolder;
-    const v2, 0x7f10003a
+    const v2, 0x7f10003c
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -144,7 +144,7 @@
     iput-object v2, v0, Lcom/sec/android/app/camera/RequestPermissionActivity$PermissionListAdapter$ViewHolder;->icon:Landroid/widget/ImageView;
 
     .line 394
-    const v2, 0x7f10003b
+    const v2, 0x7f10003d
 
     invoke-virtual {p2, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

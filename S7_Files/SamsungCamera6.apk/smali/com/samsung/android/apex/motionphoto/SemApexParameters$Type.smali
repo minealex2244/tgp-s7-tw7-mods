@@ -66,7 +66,7 @@
 
     const/4 v4, 0x0
 
-    .line 103
+    .line 119
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "NONE"
@@ -77,7 +77,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->NONE:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 107
+    .line 123
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "BOOLEAN"
@@ -88,7 +88,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->BOOLEAN:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 111
+    .line 127
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "INT"
@@ -99,7 +99,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->INT:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 115
+    .line 131
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "LONG"
@@ -110,7 +110,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->LONG:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 119
+    .line 135
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "FLOAT"
@@ -121,7 +121,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->FLOAT:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 123
+    .line 139
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "STRING"
@@ -134,7 +134,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->STRING:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 127
+    .line 143
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "INTARRAY"
@@ -147,7 +147,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->INTARRAY:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 131
+    .line 147
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "LONGARRAY"
@@ -160,7 +160,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->LONGARRAY:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 135
+    .line 151
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "ULONGARRAY"
@@ -173,7 +173,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->ULONGARRAY:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 139
+    .line 155
     new-instance v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     const-string v1, "STRINGARRAY"
@@ -186,7 +186,7 @@
 
     sput-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->STRINGARRAY:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
-    .line 99
+    .line 115
     const/16 v0, 0xa
 
     new-array v0, v0, [Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
@@ -258,10 +258,10 @@
     .end annotation
 
     .prologue
-    .line 148
+    .line 164
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 150
+    .line 166
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -270,14 +270,14 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 151
+    .line 167
     iget v1, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->val:I
 
     shl-int/lit8 v1, v1, 0x8
 
     iput v1, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->val:I
 
-    .line 152
+    .line 168
     iget v1, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->val:I
 
     invoke-virtual {p3, v0}, Ljava/lang/String;->charAt(I)C
@@ -288,12 +288,12 @@
 
     iput v1, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->val:I
 
-    .line 150
+    .line 166
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 154
+    .line 170
     :cond_0
     return-void
 .end method
@@ -303,7 +303,7 @@
     .param p0, "val"    # I
 
     .prologue
-    .line 166
+    .line 182
     invoke-static {}, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->values()[Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     move-result-object v2
@@ -317,25 +317,25 @@
 
     aget-object v0, v2, v1
 
-    .line 167
+    .line 183
     .local v0, "t":Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
     iget v4, v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->val:I
 
     if-ne p0, v4, :cond_0
 
-    .line 171
+    .line 187
     .end local v0    # "t":Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
     :goto_1
     return-object v0
 
-    .line 166
+    .line 182
     .restart local v0    # "t":Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 171
+    .line 187
     .end local v0    # "t":Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
     :cond_1
     sget-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->NONE:Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
@@ -348,7 +348,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 99
+    .line 115
     const-class v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -364,7 +364,7 @@
     .locals 1
 
     .prologue
-    .line 99
+    .line 115
     sget-object v0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->$VALUES:[Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;
 
     invoke-virtual {v0}, [Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->clone()Ljava/lang/Object;
@@ -382,7 +382,7 @@
     .locals 1
 
     .prologue
-    .line 157
+    .line 173
     iget v0, p0, Lcom/samsung/android/apex/motionphoto/SemApexParameters$Type;->val:I
 
     invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;

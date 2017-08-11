@@ -40,24 +40,24 @@
 
     const/4 v0, 0x0
 
-    .line 10100
+    .line 10177
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10101
+    .line 10178
     iput-boolean v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isRawCallbackCompleted:Z
 
-    .line 10102
+    .line 10179
     iput-boolean v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isJpegCallbackCompleted:Z
 
-    .line 10104
+    .line 10181
     iput-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mRawFilePath:Ljava/lang/String;
 
-    .line 10106
+    .line 10183
     iput-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegData:[B
 
-    .line 10107
+    .line 10184
     iput-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegInfo:Lcom/sec/android/app/camera/util/ImageStoringInfo;
 
     return-void
@@ -69,31 +69,31 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/engine/CommonEngine$1;
 
     .prologue
-    .line 10100
+    .line 10177
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;-><init>(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     return-void
 .end method
 
 .method private getRawPictureSize(I)[I
-    .locals 12
+    .locals 14
     .param p1, "jpegResolution"    # I
 
     .prologue
-    .line 10224
+    .line 10301
     const/4 v8, 0x2
 
     new-array v2, v8, [I
 
     fill-array-data v2, :array_0
 
-    .line 10225
+    .line 10302
     .local v2, "rawPictureSize":[I
     invoke-static {p1}, Lcom/sec/android/app/camera/util/CameraResolution;->getAspectRatio(I)D
 
     move-result-wide v0
 
-    .line 10226
+    .line 10303
     .local v0, "currentRatio":D
     iget-object v8, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -108,18 +108,18 @@
 
     move-result-object v4
 
-    .line 10228
+    .line 10305
     .local v4, "rawPictureSizeValue":Ljava/lang/String;
     if-eqz v4, :cond_0
 
-    .line 10229
+    .line 10306
     const-string v8, ","
 
     invoke-virtual {v4, v8}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v3
 
-    .line 10230
+    .line 10307
     .local v3, "rawPictureSizeArray":[Ljava/lang/String;
     array-length v9, v3
 
@@ -130,7 +130,7 @@
 
     aget-object v5, v3, v8
 
-    .line 10231
+    .line 10308
     .local v5, "rawSize":Ljava/lang/String;
     const-string v10, "x"
 
@@ -138,7 +138,7 @@
 
     move-result-object v6
 
-    .line 10232
+    .line 10309
     .local v6, "resolution":[Ljava/lang/String;
     const/4 v10, 0x0
 
@@ -152,7 +152,7 @@
 
     aput v11, v2, v10
 
-    .line 10233
+    .line 10310
     const/4 v10, 0x1
 
     const/4 v11, 0x1
@@ -165,7 +165,7 @@
 
     aput v11, v2, v10
 
-    .line 10235
+    .line 10314
     const/4 v10, 0x0
 
     aget v10, v2, v10
@@ -178,13 +178,19 @@
 
     move-result-wide v10
 
-    invoke-static {v0, v1, v10, v11}, Lcom/sec/android/app/camera/util/Util;->doubleEquals(DD)Z
+    sub-double v10, v0, v10
 
-    move-result v10
+    invoke-static {v10, v11}, Ljava/lang/Math;->abs(D)D
 
-    if-eqz v10, :cond_3
+    move-result-wide v10
 
-    .line 10241
+    const-wide v12, 0x3f847ae147ae147bL    # 0.01
+
+    cmpg-double v10, v10, v12
+
+    if-gez v10, :cond_3
+
+    .line 10320
     .end local v3    # "rawPictureSizeArray":[Ljava/lang/String;
     .end local v5    # "rawSize":Ljava/lang/String;
     .end local v6    # "resolution":[Ljava/lang/String;
@@ -201,8 +207,15 @@
 
     if-nez v8, :cond_2
 
-    .line 10243
+    .line 10321
     :cond_1
+    const-string v8, "CommonEngine"
+
+    const-string v9, "RawPictureCallback.getRawPictureSize : rawPictureSize is null. use JPEG picture size"
+
+    invoke-static {v8, v9}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 10324
     const-wide v8, 0x3ffc71c71c71c71cL    # 1.7777777777777777
 
     invoke-static {v0, v1, v8, v9}, Lcom/sec/android/app/camera/util/Util;->doubleEquals(DD)Z
@@ -211,10 +224,10 @@
 
     if-eqz v8, :cond_4
 
-    .line 10244
+    .line 10325
     sget-object v7, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
-    .line 10250
+    .line 10331
     .local v7, "resolutionString":Ljava/lang/String;
     :goto_1
     const/4 v8, 0x0
@@ -229,7 +242,7 @@
 
     aput v9, v2, v8
 
-    .line 10251
+    .line 10332
     const/4 v8, 0x1
 
     invoke-static {v7}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
@@ -242,7 +255,7 @@
 
     aput v9, v2, v8
 
-    .line 10254
+    .line 10335
     .end local v7    # "resolutionString":Ljava/lang/String;
     :cond_2
     const-string v8, "CommonEngine"
@@ -251,7 +264,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v10, "RawPictureCallback.getRawPictureSize rawPictureSize="
+    const-string v10, "RawPictureCallback.getRawPictureSize : rawPictureSize="
 
     invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -285,10 +298,10 @@
 
     invoke-static {v8, v9}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10255
+    .line 10336
     return-object v2
 
-    .line 10230
+    .line 10307
     .restart local v3    # "rawPictureSizeArray":[Ljava/lang/String;
     .restart local v5    # "rawSize":Ljava/lang/String;
     .restart local v6    # "resolution":[Ljava/lang/String;
@@ -297,7 +310,7 @@
 
     goto/16 :goto_0
 
-    .line 10245
+    .line 10326
     .end local v3    # "rawPictureSizeArray":[Ljava/lang/String;
     .end local v5    # "rawSize":Ljava/lang/String;
     .end local v6    # "resolution":[Ljava/lang/String;
@@ -310,13 +323,13 @@
 
     if-eqz v8, :cond_5
 
-    .line 10246
+    .line 10327
     sget-object v7, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     .restart local v7    # "resolutionString":Ljava/lang/String;
     goto :goto_1
 
-    .line 10248
+    .line 10329
     .end local v7    # "resolutionString":Ljava/lang/String;
     :cond_5
     sget-object v7, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
@@ -324,7 +337,7 @@
     .restart local v7    # "resolutionString":Ljava/lang/String;
     goto :goto_1
 
-    .line 10224
+    .line 10301
     :array_0
     .array-data 4
         0x0
@@ -340,19 +353,19 @@
     .param p5, "orientationForPicture"    # I
 
     .prologue
-    .line 10259
+    .line 10340
     const-string v7, "CommonEngine"
 
     const-string v8, "insertToDBForRawImage"
 
     invoke-static {v7, v8}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10261
+    .line 10342
     new-instance v5, Landroid/content/ContentValues;
 
     invoke-direct {v5}, Landroid/content/ContentValues;-><init>()V
 
-    .line 10263
+    .line 10344
     .local v5, "values":Landroid/content/ContentValues;
     iget-object v7, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -366,37 +379,37 @@
 
     move-result-object v3
 
-    .line 10264
+    .line 10345
     .local v3, "rawPictureSize":[I
     const/4 v7, 0x0
 
     aget v6, v3, v7
 
-    .line 10265
+    .line 10346
     .local v6, "width":I
     const/4 v7, 0x1
 
     aget v1, v3, v7
 
-    .line 10267
+    .line 10348
     .local v1, "height":I
     const-string v7, "title"
 
     iget-object v8, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->removeFileExtension(Ljava/lang/String;)Ljava/lang/String;
-    invoke-static {v8, p2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6600(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8, p2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6800(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10268
+    .line 10349
     const-string v7, "_display_name"
 
     invoke-virtual {v5, v7, p2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10269
+    .line 10350
     const-string v7, "datetaken"
 
     invoke-static/range {p3 .. p4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -405,7 +418,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 10270
+    .line 10351
     const-string v7, "date_modified"
 
     const-wide/16 v8, 0x3e8
@@ -418,14 +431,14 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 10271
+    .line 10352
     const-string v7, "mime_type"
 
     const-string v8, "image/x-adobe-dng"
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10272
+    .line 10353
     const-string v7, "_data"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -452,7 +465,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10273
+    .line 10354
     const-string v7, "height"
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -461,7 +474,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 10274
+    .line 10355
     const-string v7, "width"
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -470,7 +483,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 10275
+    .line 10356
     const-string v7, "orientation"
 
     invoke-static/range {p5 .. p5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -479,7 +492,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 10276
+    .line 10357
     const-string v7, "langagecode"
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -492,22 +505,22 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10277
+    .line 10358
     const-string v7, "addr"
 
     iget-object v8, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mAddressValue:Ljava/lang/String;
-    invoke-static {v8}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4200(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/String;
+    invoke-static {v8}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4300(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/String;
 
     move-result-object v8
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10279
+    .line 10360
     const/4 v2, 0x0
 
-    .line 10280
+    .line 10361
     .local v2, "location":Landroid/location/Location;
     iget-object v7, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -515,7 +528,7 @@
 
     if-eqz v7, :cond_0
 
-    .line 10281
+    .line 10362
     iget-object v7, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v7, v7, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -524,11 +537,11 @@
 
     move-result-object v2
 
-    .line 10283
+    .line 10364
     :cond_0
     if-eqz v2, :cond_1
 
-    .line 10284
+    .line 10365
     const-string v7, "latitude"
 
     invoke-virtual {v2}, Landroid/location/Location;->getLatitude()D
@@ -543,7 +556,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Float;)V
 
-    .line 10285
+    .line 10366
     const-string v7, "longitude"
 
     invoke-virtual {v2}, Landroid/location/Location;->getLongitude()D
@@ -558,7 +571,7 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Float;)V
 
-    .line 10289
+    .line 10370
     :cond_1
     const-string v7, "_size"
 
@@ -576,13 +589,13 @@
 
     invoke-virtual {v5, v7, v8}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
-    .line 10292
+    .line 10373
     :try_start_0
     const-string v7, "DB Insert"
 
     invoke-static {v7}, Lcom/sec/android/app/TraceWrapper;->traceBegin(Ljava/lang/String;)V
 
-    .line 10293
+    .line 10374
     const-string v7, "AXLOG"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -615,11 +628,11 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10294
+    .line 10375
     iget-object v7, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mContentResolver:Landroid/content/ContentResolver;
-    invoke-static {v7}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4300(Lcom/sec/android/app/camera/engine/CommonEngine;)Landroid/content/ContentResolver;
+    invoke-static {v7}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;)Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -627,7 +640,7 @@
 
     invoke-virtual {v7, v8, v5}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
-    .line 10295
+    .line 10376
     const-string v7, "AXLOG"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -660,21 +673,21 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10296
+    .line 10377
     invoke-static {}, Lcom/sec/android/app/TraceWrapper;->traceEnd()V
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 10303
+    .line 10384
     :goto_0
     return-void
 
-    .line 10297
+    .line 10378
     :catch_0
     move-exception v4
 
-    .line 10298
+    .line 10379
     .local v4, "sfe":Landroid/database/sqlite/SQLiteFullException;
     const-string v7, "CommonEngine"
 
@@ -682,12 +695,12 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10299
+    .line 10380
     iget-object v7, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v7, v7, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v8, 0x7f0a01bc
+    const v8, 0x7f0a01c2
 
     const/4 v9, 0x0
 
@@ -699,12 +712,12 @@
 
     goto :goto_0
 
-    .line 10300
+    .line 10381
     .end local v4    # "sfe":Landroid/database/sqlite/SQLiteFullException;
     :catch_1
     move-exception v0
 
-    .line 10301
+    .line 10382
     .local v0, "e":Ljava/lang/IllegalArgumentException;
     const-string v7, "CommonEngine"
 
@@ -721,14 +734,14 @@
     .param p2, "jpegInfo"    # Lcom/sec/android/app/camera/util/ImageStoringInfo;
 
     .prologue
-    .line 10306
+    .line 10387
     const-string v1, "CommonEngine"
 
     const-string v2, "RawPictureCallback.storeRawImage"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10308
+    .line 10389
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {p2}, Lcom/sec/android/app/camera/util/ImageStoringInfo;->getFileName()Ljava/lang/String;
@@ -740,11 +753,11 @@
     move-result-object v4
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->regenerateFileNameIfExists(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    invoke-static {v1, v2, v4}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6700(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v4}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6900(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10309
+    .line 10390
     .local v0, "jpegFileName":Ljava/lang/String;
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -776,7 +789,7 @@
 
     move-result-object v3
 
-    .line 10311
+    .line 10392
     .local v3, "newRawFileName":Ljava/lang/String;
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -807,9 +820,9 @@
     move-result-object v2
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->renameRawFile(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v1, p1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6800(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7000(Lcom/sec/android/app/camera/engine/CommonEngine;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10313
+    .line 10394
     invoke-virtual {p2}, Lcom/sec/android/app/camera/util/ImageStoringInfo;->getDirectory()Ljava/lang/String;
 
     move-result-object v2
@@ -823,7 +836,7 @@
     iget-object v6, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mOrientationOnTake:I
-    invoke-static {v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4100(Lcom/sec/android/app/camera/engine/CommonEngine;)I
+    invoke-static {v6}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4200(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v6
 
@@ -835,7 +848,7 @@
 
     invoke-direct/range {v1 .. v6}, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->insertToDBForRawImage(Ljava/lang/String;Ljava/lang/String;JI)V
 
-    .line 10314
+    .line 10395
     return-void
 .end method
 
@@ -847,50 +860,50 @@
     .param p2, "jpegInfo"    # Lcom/sec/android/app/camera/util/ImageStoringInfo;
 
     .prologue
-    .line 10116
+    .line 10193
     const-string v0, "CommonEngine"
 
     const-string v1, "RawPictureCallback.handleJpegPictureTaken"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10118
+    .line 10195
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isJpegCallbackCompleted:Z
 
-    .line 10120
+    .line 10197
     iget-boolean v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isRawCallbackCompleted:Z
 
     if-eqz v0, :cond_1
 
-    .line 10121
+    .line 10198
     const-string v0, "CommonEngine"
 
     const-string v1, "Both JPEG and RAW callback state are completed"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10122
+    .line 10199
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mRawFilePath:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 10123
+    .line 10200
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mRawFilePath:Ljava/lang/String;
 
     invoke-direct {p0, v0, p2}, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->storeRawImage(Ljava/lang/String;Lcom/sec/android/app/camera/util/ImageStoringInfo;)V
 
-    .line 10129
+    .line 10206
     :cond_0
     :goto_0
     return-void
 
-    .line 10126
+    .line 10203
     :cond_1
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegData:[B
 
-    .line 10127
+    .line 10204
     iput-object p2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegInfo:Lcom/sec/android/app/camera/util/ImageStoringInfo;
 
     goto :goto_0
@@ -904,29 +917,29 @@
 
     const/4 v3, 0x0
 
-    .line 10135
+    .line 10212
     const-string v1, "CommonEngine"
 
     const-string v2, "RawPictureCallback.initialize"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10137
+    .line 10214
     iput-boolean v4, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isRawCallbackCompleted:Z
 
-    .line 10138
+    .line 10215
     iput-boolean v4, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isJpegCallbackCompleted:Z
 
-    .line 10140
+    .line 10217
     iput-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mRawFilePath:Ljava/lang/String;
 
-    .line 10142
+    .line 10219
     iput-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegData:[B
 
-    .line 10143
+    .line 10220
     iput-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegInfo:Lcom/sec/android/app/camera/util/ImageStoringInfo;
 
-    .line 10145
+    .line 10222
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
@@ -940,19 +953,19 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/camera/core/SemCamera;->addRawImageCallbackBuffer([B)V
 
-    .line 10147
+    .line 10224
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->getRawFilePath()Ljava/lang/String;
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6100(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6300(Lcom/sec/android/app/camera/engine/CommonEngine;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10148
+    .line 10225
     .local v0, "filePath":Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 10149
+    .line 10226
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mParameters:Lcom/samsung/android/camera/core/SemCamera$Parameters;
@@ -964,7 +977,7 @@
 
     invoke-virtual {v1, v2, v0}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10151
+    .line 10228
     :cond_0
     return-void
 .end method
@@ -973,7 +986,7 @@
     .locals 1
 
     .prologue
-    .line 10159
+    .line 10236
     iget-boolean v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isRawCallbackCompleted:Z
 
     return v0
@@ -991,14 +1004,14 @@
 
     const/4 v4, 0x3
 
-    .line 10164
+    .line 10241
     const-string v1, "CommonEngine"
 
     const-string v2, "RawPictureCallback.onPictureTaken"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10166
+    .line 10243
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
@@ -1009,23 +1022,23 @@
 
     if-ne v1, v5, :cond_1
 
-    .line 10221
+    .line 10298
     :cond_0
     :goto_0
     return-void
 
-    .line 10172
+    .line 10249
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsRawPictureFormatEnabled:Z
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6200(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6400(Lcom/sec/android/app/camera/engine/CommonEngine;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 10173
+    .line 10250
     const-string v1, "CommonEngine"
 
     const-string v2, "Returned because RawPictureFormat is not enabled"
@@ -1034,28 +1047,28 @@
 
     goto :goto_0
 
-    .line 10177
+    .line 10254
     :cond_2
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isRawCallbackCompleted:Z
 
-    .line 10179
+    .line 10256
     iget-boolean v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->isJpegCallbackCompleted:Z
 
     if-eqz v1, :cond_7
 
-    .line 10180
+    .line 10257
     const-string v1, "CommonEngine"
 
     const-string v2, "Both JPEG and RAW callback state are completed"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10182
+    .line 10259
     if-eqz p1, :cond_3
 
-    .line 10183
+    .line 10260
     new-instance v0, Ljava/lang/String;
 
     invoke-static {}, Ljava/nio/charset/Charset;->defaultCharset()Ljava/nio/charset/Charset;
@@ -1064,7 +1077,7 @@
 
     invoke-direct {v0, p1, v1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
-    .line 10184
+    .line 10261
     .local v0, "srcFilePath":Ljava/lang/String;
     if-eqz v0, :cond_3
 
@@ -1072,7 +1085,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 10185
+    .line 10262
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v1
@@ -1085,7 +1098,7 @@
 
     invoke-direct {p0, v1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->storeRawImage(Ljava/lang/String;Lcom/sec/android/app/camera/util/ImageStoringInfo;)V
 
-    .line 10189
+    .line 10266
     .end local v0    # "srcFilePath":Ljava/lang/String;
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegData:[B
@@ -1096,7 +1109,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 10190
+    .line 10267
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegData:[B
@@ -1104,15 +1117,15 @@
     iget-object v3, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegInfo:Lcom/sec/android/app/camera/util/ImageStoringInfo;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->savePicture([BLcom/sec/android/app/camera/util/ImageStoringInfo;)V
-    invoke-static {v1, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6300(Lcom/sec/android/app/camera/engine/CommonEngine;[BLcom/sec/android/app/camera/util/ImageStoringInfo;)V
+    invoke-static {v1, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6500(Lcom/sec/android/app/camera/engine/CommonEngine;[BLcom/sec/android/app/camera/util/ImageStoringInfo;)V
 
-    .line 10191
+    .line 10268
     iput-object v6, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegData:[B
 
-    .line 10192
+    .line 10269
     iput-object v6, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->mJpegInfo:Lcom/sec/android/app/camera/util/ImageStoringInfo;
 
-    .line 10195
+    .line 10272
     :cond_4
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -1124,80 +1137,80 @@
 
     if-eqz v1, :cond_0
 
-    .line 10196
+    .line 10273
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/engine/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;
 
     invoke-virtual {v1, v4}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 10197
+    .line 10274
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSingleCaptureEventListener:Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4500(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
 
     move-result-object v1
 
     if-eqz v1, :cond_5
 
-    .line 10198
+    .line 10275
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mSingleCaptureEventListener:Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4400(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$4500(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;
 
     move-result-object v1
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine$SingleCaptureEventListener;->onSingleCaptureCompleted()V
 
-    .line 10201
+    .line 10278
     :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIntervalCaptureCount:I
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6400(Lcom/sec/android/app/camera/engine/CommonEngine;)I
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6600(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 10202
+    .line 10279
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # operator++ for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIntervalCaptureCount:I
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6408(Lcom/sec/android/app/camera/engine/CommonEngine;)I
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6608(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
-    .line 10203
+    .line 10280
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIntervalCaptureCount:I
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6400(Lcom/sec/android/app/camera/engine/CommonEngine;)I
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6600(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v1
 
     if-le v1, v4, :cond_6
 
-    .line 10204
+    .line 10281
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     const/4 v2, 0x0
 
     # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIntervalCaptureCount:I
-    invoke-static {v1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6402(Lcom/sec/android/app/camera/engine/CommonEngine;I)I
+    invoke-static {v1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6602(Lcom/sec/android/app/camera/engine/CommonEngine;I)I
 
     goto/16 :goto_0
 
-    .line 10206
+    .line 10283
     :cond_6
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$RawPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->startIntervalCapture()V
-    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6500(Lcom/sec/android/app/camera/engine/CommonEngine;)V
+    invoke-static {v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6700(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     goto/16 :goto_0
 
-    .line 10212
+    .line 10289
     :cond_7
     const-string v1, "CommonEngine"
 
@@ -1205,10 +1218,10 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10214
+    .line 10291
     if-eqz p1, :cond_0
 
-    .line 10215
+    .line 10292
     new-instance v0, Ljava/lang/String;
 
     invoke-static {}, Ljava/nio/charset/Charset;->defaultCharset()Ljava/nio/charset/Charset;
@@ -1217,11 +1230,11 @@
 
     invoke-direct {v0, p1, v1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
 
-    .line 10216
+    .line 10293
     .restart local v0    # "srcFilePath":Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 10217
+    .line 10294
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v1

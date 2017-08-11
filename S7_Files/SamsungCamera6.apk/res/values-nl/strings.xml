@@ -195,6 +195,8 @@ Panningopname: leg het gevoel van beweging vast bij het nemen van foto's van bew
     <string name="SM_SLOW_VIDEO_description">"Neem video's op met een hoge framesnelheid om ze in slow motion weer te geven. Na het opnemen kunt u een specifiek deel van elke video in slow motion afspelen."</string>
     <string name="SM_SMART_SELFSHOT">Selfie camera achter</string>
     <string name="SM_SMART_SELFSHOT_description">De achterste camera detecteert uw gezicht automatisch en stelt scherp wanneer u selfies maakt.</string>
+    <string name="SM_SOCIAL">Sociaal</string>
+    <string name="SM_SOCIAL_description">"Maak foto's en deel ze eenvoudig op sociale netwerken."</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Maak duidelijkere foto´s van snel bewegende onderwerpen.</string>
     <string name="SM_STORY">Geluid &amp; opname</string>
@@ -398,7 +400,10 @@ correctie"</string>
     <string name="guideline_square">Vierkant</string>
     <string name="help_change_mode_tip_1">Veeg naar rechts om beschikbare camerastanden weer te geven.</string>
     <string name="help_change_mode_tip_2">Selecteer de stand die u wilt gebruiken.</string>
+    <string name="help_change_mode_tip_3">Alleen de standen Automatisch en Selfiecamera zijn beschikbaar terwijl Eenvoudige stand is ingeschakeld.</string>
     <string name="help_changing_the_camera_mode">Camerastanden selecteren</string>
+    <string name="help_changing_the_camera_mode_header">Een camerastand selecteren</string>
+    <string name="help_changing_the_camera_mode_title">De camerastand wijzigen</string>
     <string name="help_recording_videos">Video´s opnemen</string>
     <string name="help_recording_videos_tip_1">Tik op %s.</string>
     <string name="help_recording_videos_tip_1_tts">Tik op de camcorderknop.</string>
@@ -406,7 +411,7 @@ correctie"</string>
     <string name="help_recording_videos_tip_2_tts">Tik op de stopknop om te stoppen met opnemen.</string>
     <string name="help_recording_videos_tip_snapshot">"Tik op %s om foto's te maken tijdens het opnemen van video."</string>
     <string name="help_recording_videos_tip_snapshot_tts">"Tik op de cameraknop om foto's te maken tijdens het opnemen van video."</string>
-    <string name="help_section_summary">"Maak foto's of neem video's op met verschillende effecten die bij de gelegenheid passen. Als Eenvoudige stand is ingeschakeld, zijn alleen de standen Auto en Selfiecamera beschikbaar en kunnen er geen effecten worden toegepast."</string>
+    <string name="help_section_summary">Maak foto´s of video´s met verschillende effecten, geschikt voor alle omstandigheden.</string>
     <string name="help_selecting_camera_mode">Camerastanden selecteren</string>
     <string name="help_taking_pictures">"Foto's nemen"</string>
     <string name="help_taking_pictures_tip_1">Tik op het object waarop u wilt scherpstellen.</string>
@@ -421,6 +426,7 @@ correctie"</string>
     <string name="help_text_wideselfie">Tik op de knop Camera en draai uw apparaat langzaam in één richting.</string>
     <string name="help_viewing_pics_and_videos_tip_1">"Tik op %s om foto's en video's weer te geven direct nadat u ze hebt gemaakt of opgenomen."</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">"Tik op de knop Snel weergeven om uw foto's en video's direct weer te geven nadat u ze hebt gemaakt of opgenomen."</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">"Foto's en video's bekijken"</string>
     <string name="high_resolution_video_description">Het volgende is niet beschikbaar bij opnemen in resoluties van %s:</string>
     <string name="highlight">Hooglichten</string>

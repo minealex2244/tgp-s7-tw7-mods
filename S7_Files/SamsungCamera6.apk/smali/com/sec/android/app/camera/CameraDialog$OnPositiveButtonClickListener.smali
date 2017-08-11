@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 1051
+    .line 1090
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/CameraDialog$1;
 
     .prologue
-    .line 1051
+    .line 1090
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;-><init>(Lcom/sec/android/app/camera/CameraDialog;)V
 
     return-void
@@ -62,7 +62,7 @@
 
     const/4 v9, 0x1
 
-    .line 1054
+    .line 1093
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getArguments()Landroid/os/Bundle;
@@ -75,11 +75,11 @@
 
     move-result v2
 
-    .line 1055
+    .line 1094
     .local v2, "id":I
     sparse-switch v2, :sswitch_data_0
 
-    .line 1201
+    .line 1243
     .end local p1    # "dialog":Landroid/content/DialogInterface;
     :cond_0
     :goto_0
@@ -88,17 +88,17 @@
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->dismissCameraDialog()V
     invoke-static {v7}, Lcom/sec/android/app/camera/CameraDialog;->access$800(Lcom/sec/android/app/camera/CameraDialog;)V
 
-    .line 1202
+    .line 1244
     return-void
 
-    .line 1057
+    .line 1096
     .restart local p1    # "dialog":Landroid/content/DialogInterface;
     :sswitch_0
     new-instance v4, Landroid/content/Intent;
 
     invoke-direct {v4}, Landroid/content/Intent;-><init>()V
 
-    .line 1058
+    .line 1097
     .local v4, "marketIntent":Landroid/content/Intent;
     const-string v7, "samsungapps://CategoryList/0000004068"
 
@@ -108,10 +108,10 @@
 
     invoke-virtual {v4, v7}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 1059
+    .line 1098
     invoke-virtual {v4, v12}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 1060
+    .line 1099
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -128,7 +128,7 @@
 
     if-eqz v7, :cond_0
 
-    .line 1062
+    .line 1101
     :try_start_0
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -138,11 +138,11 @@
 
     goto :goto_0
 
-    .line 1063
+    .line 1102
     :catch_0
     move-exception v1
 
-    .line 1064
+    .line 1103
     .local v1, "e":Landroid/content/ActivityNotFoundException;
     const-string v7, "CameraDialog"
 
@@ -152,7 +152,7 @@
 
     goto :goto_0
 
-    .line 1070
+    .line 1109
     .end local v1    # "e":Landroid/content/ActivityNotFoundException;
     .end local v4    # "marketIntent":Landroid/content/Intent;
     :sswitch_1
@@ -186,7 +186,7 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    .line 1071
+    .line 1110
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
@@ -199,7 +199,7 @@
 
     if-eqz v7, :cond_2
 
-    .line 1072
+    .line 1111
     :cond_1
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -217,7 +217,7 @@
 
     goto :goto_0
 
-    .line 1073
+    .line 1112
     :cond_2
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -239,7 +239,7 @@
 
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
-    .line 1074
+    .line 1113
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
@@ -252,7 +252,7 @@
 
     if-nez v7, :cond_3
 
-    .line 1075
+    .line 1114
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -269,7 +269,7 @@
 
     goto/16 :goto_0
 
-    .line 1077
+    .line 1116
     :cond_3
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -281,7 +281,7 @@
 
     goto/16 :goto_0
 
-    .line 1081
+    .line 1120
     :sswitch_2
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -295,7 +295,7 @@
 
     invoke-virtual {v7, v8}, Lcom/sec/android/app/camera/Camera;->dismissCameraDialog(I)V
 
-    .line 1082
+    .line 1121
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -310,7 +310,7 @@
 
     invoke-interface {v7, v9}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setStorage(I)V
 
-    .line 1083
+    .line 1122
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->setChangeStorageSettingDialogEnabled(Z)V
@@ -318,7 +318,7 @@
 
     goto/16 :goto_0
 
-    .line 1086
+    .line 1125
     :sswitch_3
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -338,7 +338,7 @@
 
     if-ne v7, v9, :cond_0
 
-    .line 1087
+    .line 1126
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -351,7 +351,7 @@
 
     goto/16 :goto_0
 
-    .line 1091
+    .line 1130
     :sswitch_4
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -365,7 +365,7 @@
 
     goto/16 :goto_0
 
-    .line 1094
+    .line 1133
     :sswitch_5
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -383,7 +383,7 @@
 
     goto/16 :goto_0
 
-    .line 1097
+    .line 1136
     :sswitch_6
     new-instance v3, Landroid/content/Intent;
 
@@ -391,7 +391,7 @@
 
     invoke-direct {v3, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1099
+    .line 1138
     .local v3, "intent":Landroid/content/Intent;
     :try_start_1
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
@@ -402,11 +402,11 @@
 
     goto/16 :goto_0
 
-    .line 1100
+    .line 1139
     :catch_1
     move-exception v1
 
-    .line 1101
+    .line 1140
     .restart local v1    # "e":Landroid/content/ActivityNotFoundException;
     const-string v7, "CameraDialog"
 
@@ -416,7 +416,7 @@
 
     goto/16 :goto_0
 
-    .line 1106
+    .line 1145
     .end local v1    # "e":Landroid/content/ActivityNotFoundException;
     .end local v3    # "intent":Landroid/content/Intent;
     :sswitch_7
@@ -432,7 +432,7 @@
 
     goto/16 :goto_0
 
-    .line 1109
+    .line 1148
     :sswitch_8
     check-cast p1, Landroid/app/Dialog;
 
@@ -451,25 +451,25 @@
 
     if-eqz v7, :cond_0
 
-    .line 1110
+    .line 1149
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->setBurstShotsStorageDialogEnabled(Z)V
-    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1100(Lcom/sec/android/app/camera/CameraDialog;Z)V
+    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1200(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     goto/16 :goto_0
 
-    .line 1115
+    .line 1154
     .restart local p1    # "dialog":Landroid/content/DialogInterface;
     :sswitch_9
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->setLocationTagDialogEnabled(Z)V
-    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;Z)V
+    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1100(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     goto/16 :goto_0
 
-    .line 1118
+    .line 1157
     :sswitch_a
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -483,7 +483,7 @@
 
     if-nez v7, :cond_4
 
-    .line 1119
+    .line 1158
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -498,7 +498,7 @@
 
     invoke-interface {v7, v9}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setGPS(I)V
 
-    .line 1120
+    .line 1159
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -511,16 +511,16 @@
 
     invoke-static {v7}, Lcom/sec/android/app/camera/util/Util;->setHighAccuracyLocationMode(Landroid/content/Context;)V
 
-    .line 1122
+    .line 1161
     :cond_4
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->setLocationTagDialogEnabled(Z)V
-    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;Z)V
+    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1100(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     goto/16 :goto_0
 
-    .line 1125
+    .line 1164
     :sswitch_b
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -534,7 +534,7 @@
 
     if-nez v7, :cond_0
 
-    .line 1126
+    .line 1165
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -549,7 +549,7 @@
 
     invoke-interface {v7, v9}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setGPS(I)V
 
-    .line 1127
+    .line 1166
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -564,7 +564,7 @@
 
     goto/16 :goto_0
 
-    .line 1131
+    .line 1170
     :sswitch_c
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -578,7 +578,7 @@
 
     if-nez v7, :cond_0
 
-    .line 1132
+    .line 1171
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -589,7 +589,7 @@
 
     invoke-virtual {v7, v9}, Lcom/sec/android/app/camera/setting/CameraSettingActivity;->setGPS(Z)V
 
-    .line 1133
+    .line 1172
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -602,7 +602,7 @@
 
     goto/16 :goto_0
 
-    .line 1137
+    .line 1176
     :sswitch_d
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -616,7 +616,7 @@
 
     if-nez v7, :cond_5
 
-    .line 1138
+    .line 1177
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -631,7 +631,7 @@
 
     invoke-interface {v7, v9}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setGPS(I)V
 
-    .line 1139
+    .line 1178
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -642,16 +642,16 @@
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->setLocationRequest()V
 
-    .line 1141
+    .line 1180
     :cond_5
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # invokes: Lcom/sec/android/app/camera/CameraDialog;->setLocationTagDialogEnabled(Z)V
-    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;Z)V
+    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1100(Lcom/sec/android/app/camera/CameraDialog;Z)V
 
     goto/16 :goto_0
 
-    .line 1144
+    .line 1183
     :sswitch_e
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -665,12 +665,12 @@
 
     goto/16 :goto_0
 
-    .line 1147
+    .line 1186
     :sswitch_f
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     # getter for: Lcom/sec/android/app/camera/CameraDialog;->mSeparatedShootingModeMessage:Ljava/lang/String;
-    invoke-static {v7}, Lcom/sec/android/app/camera/CameraDialog;->access$1200(Lcom/sec/android/app/camera/CameraDialog;)Ljava/lang/String;
+    invoke-static {v7}, Lcom/sec/android/app/camera/CameraDialog;->access$1300(Lcom/sec/android/app/camera/CameraDialog;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -680,7 +680,7 @@
 
     move-result-object v5
 
-    .line 1148
+    .line 1187
     .local v5, "message":[Ljava/lang/String;
     aget-object v7, v5, v10
 
@@ -688,11 +688,11 @@
 
     move-result v0
 
-    .line 1149
+    .line 1188
     .local v0, "commandId":I
     aget-object v6, v5, v9
 
-    .line 1151
+    .line 1190
     .local v6, "shootingModeName":Ljava/lang/String;
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -704,7 +704,7 @@
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->resetTouchFocus()V
 
-    .line 1152
+    .line 1191
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -715,7 +715,7 @@
 
     invoke-virtual {v7, v0, v6}, Lcom/sec/android/app/camera/Camera;->startSeparatedShootingMode(ILjava/lang/String;)V
 
-    .line 1153
+    .line 1192
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -728,7 +728,7 @@
 
     goto/16 :goto_0
 
-    .line 1156
+    .line 1195
     .end local v0    # "commandId":I
     .end local v5    # "message":[Ljava/lang/String;
     .end local v6    # "shootingModeName":Ljava/lang/String;
@@ -737,7 +737,7 @@
 
     invoke-direct {v3}, Landroid/content/Intent;-><init>()V
 
-    .line 1157
+    .line 1196
     .restart local v3    # "intent":Landroid/content/Intent;
     const-string v7, "samsungapps://SubCategoryList/0000005082"
 
@@ -747,10 +747,10 @@
 
     invoke-virtual {v3, v7}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 1158
+    .line 1197
     invoke-virtual {v3, v12}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 1160
+    .line 1199
     :try_start_2
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -762,11 +762,11 @@
 
     goto/16 :goto_0
 
-    .line 1161
+    .line 1200
     :catch_2
     move-exception v1
 
-    .line 1162
+    .line 1201
     .restart local v1    # "e":Landroid/content/ActivityNotFoundException;
     const-string v7, "CameraDialog"
 
@@ -776,7 +776,7 @@
 
     goto/16 :goto_0
 
-    .line 1167
+    .line 1206
     .end local v1    # "e":Landroid/content/ActivityNotFoundException;
     .end local v3    # "intent":Landroid/content/Intent;
     :sswitch_11
@@ -784,7 +784,7 @@
 
     invoke-direct {v3}, Landroid/content/Intent;-><init>()V
 
-    .line 1168
+    .line 1207
     .restart local v3    # "intent":Landroid/content/Intent;
     const-string v7, "samsungapps://CategoryList/0000004068"
 
@@ -794,10 +794,10 @@
 
     invoke-virtual {v3, v7}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 1169
+    .line 1208
     invoke-virtual {v3, v12}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 1171
+    .line 1210
     :try_start_3
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -807,11 +807,11 @@
 
     goto/16 :goto_0
 
-    .line 1172
+    .line 1211
     :catch_3
     move-exception v1
 
-    .line 1173
+    .line 1212
     .restart local v1    # "e":Landroid/content/ActivityNotFoundException;
     const-string v7, "CameraDialog"
 
@@ -821,7 +821,7 @@
 
     goto/16 :goto_0
 
-    .line 1178
+    .line 1217
     .end local v1    # "e":Landroid/content/ActivityNotFoundException;
     .end local v3    # "intent":Landroid/content/Intent;
     :sswitch_12
@@ -843,7 +843,7 @@
 
     goto/16 :goto_0
 
-    .line 1181
+    .line 1220
     :sswitch_13
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -857,7 +857,7 @@
 
     if-nez v7, :cond_0
 
-    .line 1182
+    .line 1221
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -872,7 +872,7 @@
 
     invoke-interface {v7, v9}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setGPS(I)V
 
-    .line 1183
+    .line 1222
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -885,7 +885,7 @@
 
     invoke-static {v7}, Lcom/sec/android/app/camera/util/Util;->setHighAccuracyLocationMode(Landroid/content/Context;)V
 
-    .line 1184
+    .line 1223
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -898,7 +898,7 @@
 
     goto/16 :goto_0
 
-    .line 1188
+    .line 1227
     :sswitch_14
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -912,7 +912,7 @@
 
     if-nez v7, :cond_0
 
-    .line 1189
+    .line 1228
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -927,7 +927,7 @@
 
     invoke-interface {v7, v9}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setGPS(I)V
 
-    .line 1190
+    .line 1229
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -938,7 +938,7 @@
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/Camera;->setLocationRequest()V
 
-    .line 1191
+    .line 1230
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v7}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -955,7 +955,7 @@
 
     goto/16 :goto_0
 
-    .line 1196
+    .line 1235
     :sswitch_15
     iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
@@ -967,9 +967,16 @@
 
     goto/16 :goto_0
 
-    .line 1055
-    nop
+    .line 1238
+    :sswitch_16
+    iget-object v7, p0, Lcom/sec/android/app/camera/CameraDialog$OnPositiveButtonClickListener;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
+    # invokes: Lcom/sec/android/app/camera/CameraDialog;->setQuickLaunchDialogEnabled(Z)V
+    invoke-static {v7, v10}, Lcom/sec/android/app/camera/CameraDialog;->access$1000(Lcom/sec/android/app/camera/CameraDialog;Z)V
+
+    goto/16 :goto_0
+
+    .line 1094
     :sswitch_data_0
     .sparse-switch
         0xc8 -> :sswitch_0
@@ -987,6 +994,7 @@
         0x1d1 -> :sswitch_5
         0x1d2 -> :sswitch_6
         0x1d6 -> :sswitch_8
+        0x1d7 -> :sswitch_16
         0x1d8 -> :sswitch_e
         0x1d9 -> :sswitch_f
         0x1da -> :sswitch_10

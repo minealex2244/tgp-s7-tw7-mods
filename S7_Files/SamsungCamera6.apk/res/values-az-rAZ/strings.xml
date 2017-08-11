@@ -198,6 +198,8 @@ Panoramik kadr: Hərəkət edən obyektləri çəkən zaman hərəkət hissini �
     <string name="SM_SLOW_VIDEO_description">Asta hərəkətli görünüş üçün videoları yüksək çərçivə dərəcəsində çəkin. Siz hər bir videonu çəkdikdən sonra asta hərəkətlə onun xüsusi hissəsini görüntüləyə bilərsiniz.</string>
     <string name="SM_SMART_SELFSHOT">Arxa kamera ilə selfi</string>
     <string name="SM_SMART_SELFSHOT_description">Özünüzün portret şəklinizi çəkən zaman arxa kamera avtomatik olaraq üzünüzü müəyyən edəcək və fokusa alacaq.</string>
+    <string name="SM_SOCIAL">Sosial</string>
+    <string name="SM_SOCIAL_description">Şəkil çəkin və asanlıqla sosial şəbəkələrdə paylaşın.</string>
     <string name="SM_SPORTS">İdman</string>
     <string name="SM_SPORTS_SCENE_description">Cəld hərəkət edən subyektlərin daha aydın şəkillərini çəkin.</string>
     <string name="SM_STORY">Səs və çəkiliş</string>
@@ -268,9 +270,9 @@ bax"</string>
     <string name="Title_VideoQuality">Video keyfiyyəti</string>
     <string name="Title_VideoStabilisation">Videonun sabitl</string>
     <string name="Title_Viewmode">Tam ekran görünüşü (16:9)</string>
-    <string name="Title_Voice_Capture">Səsi idarə elementi</string>
+    <string name="Title_Voice_Capture">Səsli idarə</string>
     <string name="Title_Voice_guide">Səs bələdçisi</string>
-    <string name="Title_Volume_Key_As">Səs ucaltma düyməsinin funksiyası</string>
+    <string name="Title_Volume_Key_As">Səs düyməsi funksiyası</string>
     <string name="Title_WhiteBalance">Ağ balansı</string>
     <string name="Title_common">Ümumi</string>
     <string name="Title_front">Ön kamera</string>
@@ -402,7 +404,10 @@ düzəld"</string>
     <string name="guideline_square">Kvadrat</string>
     <string name="help_change_mode_tip_1">Mövcud kamera rejimlərinə baxmaq üçün sağa sürüşdür.</string>
     <string name="help_change_mode_tip_2">İstifadə etmək istədiyiniz rejimi seçin.</string>
+    <string name="help_change_mode_tip_3">Asan rejim aktiv olan zaman yalnız Avto və Selfi kamera rejimləri mövcuddur.</string>
     <string name="help_changing_the_camera_mode">Kamera rejimləri seçilir</string>
+    <string name="help_changing_the_camera_mode_header">Kamera rejiminin seçilməsi</string>
+    <string name="help_changing_the_camera_mode_title">Kamera rejiminin dəyişdirilməsi</string>
     <string name="help_recording_videos">Videoların yazılması</string>
     <string name="help_recording_videos_tip_1">%s vurun.</string>
     <string name="help_recording_videos_tip_1_tts">Videokamera düyməsinə vurun.</string>
@@ -410,7 +415,7 @@ düzəld"</string>
     <string name="help_recording_videos_tip_2_tts">Yazını dayandırmaq üçün dayandır düyməsinə vurun.</string>
     <string name="help_recording_videos_tip_snapshot">Video yazan zaman şəkil çəkmək üçün %s vurun.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Video yazan zaman şəkil çəkmək üçün kamera düyməsinə vurun.</string>
-    <string name="help_section_summary">Bütün vəziyyətlərə uyğun olmaq üçün fərqli effektlərdən istifadə edərək şəkillər və ya videolar çəkin. Asan rejim aktiv olan zaman yalnız Avto və Selfi kamera rejimləri mövcuddur və effekt tətbiq edilmir.</string>
+    <string name="help_section_summary">Bütün vəziyyətlərə uyğun olmaq üçün fərqli effektlərdən istifadə edərək şəkillər çəkin və ya videolar yazın.</string>
     <string name="help_selecting_camera_mode">Kamera rejimləri seçilir</string>
     <string name="help_taking_pictures">Şəkil çəkmək</string>
     <string name="help_taking_pictures_tip_1">Fokusa almaq istədiyiniz obyektə vurun.</string>
@@ -425,6 +430,7 @@ düzəld"</string>
     <string name="help_text_wideselfie">Kamera düyməsinə vurun və cihazınızı ehtiyatla bir istiqamətdə çevirin.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Şəkil və ya video çəkdikdən sonra dərhal onlara baxmaq üçün %s vurun.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Şəkillərinizi və videolarınızı çəkdikdən dərhal görmək üçün cəld görünüş düyməsinə vurun.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Şəkillərə və videolara baxış</string>
     <string name="high_resolution_video_description">%s ölçüsündə video çəkilişi zamanı aşağıdakılar mümkün olmur:</string>
     <string name="highlight">Əsas məqamlar</string>

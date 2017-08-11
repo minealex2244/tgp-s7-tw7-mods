@@ -175,7 +175,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a00ba
+    const v4, 0x7f0a00bc
 
     invoke-virtual {v3, v4}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -196,7 +196,7 @@
 
     .line 94
     .local v0, "Oritext":Ljava/lang/String;
-    const v3, 0x7f100044
+    const v3, 0x7f100046
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/WatermarkTextInputActivity;->findViewById(I)Landroid/view/View;
 
@@ -261,7 +261,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/EditText;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     .line 118
-    const v3, 0x7f100045
+    const v3, 0x7f100047
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/WatermarkTextInputActivity;->findViewById(I)Landroid/view/View;
 

@@ -113,7 +113,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->SCREEN_HEIGHT:I
 
     .line 65
-    const v2, 0x7f0b034d
+    const v2, 0x7f0b034e
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -135,7 +135,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->BASEMENU_GROUP_ICON_GAP:F
 
     .line 67
-    const v2, 0x7f0b01d8
+    const v2, 0x7f0b01d9
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -146,7 +146,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->SHUTTER_BUTTON_WIDTH:F
 
     .line 68
-    const v2, 0x7f0b01d7
+    const v2, 0x7f0b01d8
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -168,7 +168,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->SHUTTER_BUTTON_PROGRESS_WIDTH:F
 
     .line 70
-    const v2, 0x7f0b01d1
+    const v2, 0x7f0b01d2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->RECORDING_BUTTON_WIDTH:F
 
     .line 71
-    const v2, 0x7f0b034e
+    const v2, 0x7f0b034f
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -190,7 +190,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->RECORDING_BUTTON_DIAMETER:F
 
     .line 72
-    const v2, 0x7f0b0194
+    const v2, 0x7f0b0195
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -201,7 +201,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->SNAPSHOT_BUTTON_WIDTH:F
 
     .line 73
-    const v2, 0x7f0b0360
+    const v2, 0x7f0b0361
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -212,7 +212,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->THUMBNAIL_BUTTON_WIDTH:F
 
     .line 75
-    const v2, 0x7f0b00cb
+    const v2, 0x7f0b00cc
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -225,7 +225,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasyBaseMenu;->EASY_QUICK_SETTING_POS_X:I
 
     .line 76
-    const v2, 0x7f0b00cc
+    const v2, 0x7f0b00cd
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -715,7 +715,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a021a
+    const v6, 0x7f0a0220
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -973,7 +973,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a01ec
+    const v6, 0x7f0a01f2
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1402,7 +1402,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a021a
+    const v6, 0x7f0a0220
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1551,7 +1551,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a01ec
+    const v6, 0x7f0a01f2
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1715,7 +1715,7 @@
 
     move-result-object v3
 
-    const v6, 0x7f0a01c8
+    const v6, 0x7f0a01ce
 
     invoke-virtual {v3, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2217,7 +2217,7 @@
 
     int-to-float v2, v2
 
-    const v3, 0x7f0b0105
+    const v3, 0x7f0b0106
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

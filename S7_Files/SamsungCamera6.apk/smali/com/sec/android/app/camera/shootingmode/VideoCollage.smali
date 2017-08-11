@@ -901,7 +901,7 @@
     .param p2, "cameraSettings"    # Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     .prologue
-    const v6, 0x7f0b01cc
+    const v6, 0x7f0b01cd
 
     const/high16 v5, 0x40000000    # 2.0f
 
@@ -929,7 +929,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->SCREEN_HEIGHT:I
 
     .line 209
-    const v0, 0x7f0b0187
+    const v0, 0x7f0b0188
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -940,7 +940,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->SIDE_MENU_WIDTH:I
 
     .line 210
-    const v0, 0x7f0b0186
+    const v0, 0x7f0b0187
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -960,7 +960,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->RIGHT_SIDE_MENU_POS_X:I
 
     .line 214
-    const v0, 0x7f0b01d8
+    const v0, 0x7f0b01d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -993,7 +993,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->BASEMENU_GROUP_ICON_GAP:F
 
     .line 217
-    const v0, 0x7f0b034d
+    const v0, 0x7f0b034e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1013,7 +1013,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->UNDO_BUTTON_WIDTH:I
 
     .line 221
-    const v0, 0x7f0b034f
+    const v0, 0x7f0b0350
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1035,7 +1035,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->CAF_BUTTON_POS_X:I
 
     .line 225
-    const v0, 0x7f0b033d
+    const v0, 0x7f0b033e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1046,7 +1046,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->CAF_BUTTON_POS_Y_BOTTOM:I
 
     .line 226
-    const v0, 0x7f0b033c
+    const v0, 0x7f0b033d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1070,7 +1070,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->CAF_BUTTON_POS_Y:I
 
     .line 230
-    const v0, 0x7f0b01cd
+    const v0, 0x7f0b01ce
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1090,7 +1090,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->SWITCH_BUTTON_HEIGHT:I
 
     .line 232
-    const v0, 0x7f0b01ce
+    const v0, 0x7f0b01cf
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1134,7 +1134,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->SWITCH_BUTTON_POS_Y_REAR:I
 
     .line 238
-    const v0, 0x7f0b01cd
+    const v0, 0x7f0b01ce
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1154,7 +1154,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->FLASH_BUTTON_HEIGHT:I
 
     .line 240
-    const v0, 0x7f0b01ce
+    const v0, 0x7f0b01cf
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1178,7 +1178,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->FLASH_BUTTON_POS_Y:I
 
     .line 244
-    const v0, 0x7f0b007c
+    const v0, 0x7f0b007d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1194,7 +1194,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->COLLAGE_TYPE_HEIGHT:I
 
     .line 246
-    const v0, 0x7f0b007a
+    const v0, 0x7f0b007b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1205,7 +1205,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->COLLAGE_TYPE_MARGIN_Y:I
 
     .line 247
-    const v0, 0x7f0b007b
+    const v0, 0x7f0b007c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1216,7 +1216,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->COLLAGE_TYPE_MARGIN_Y_270:I
 
     .line 250
-    const v0, 0x7f0b0084
+    const v0, 0x7f0b0085
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1227,7 +1227,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->RECORDING_TIME_GROUP_MARGIN_Y:I
 
     .line 251
-    const v0, 0x7f0b0085
+    const v0, 0x7f0b0086
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1238,7 +1238,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->RECORDING_TIME_GROUP_MARGIN_Y_270:I
 
     .line 252
-    const v0, 0x7f0b0083
+    const v0, 0x7f0b0084
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1249,7 +1249,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->RECORDING_TIME_GROUP_HEIGHT:I
 
     .line 253
-    const v0, 0x7f0b0082
+    const v0, 0x7f0b0083
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1260,7 +1260,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->RECORDING_ICON_WIDTH:I
 
     .line 254
-    const v0, 0x7f0b0087
+    const v0, 0x7f0b0088
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1271,7 +1271,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->RECORDING_TIME_TEXT_WIDTH:I
 
     .line 255
-    const v0, 0x7f0b0086
+    const v0, 0x7f0b0087
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1331,7 +1331,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->RECORDING_TIME_TEXT_SIZE:F
 
     .line 263
-    const v0, 0x7f0b0081
+    const v0, 0x7f0b0082
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1342,7 +1342,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->PROGRESS_GROUP_WIDTH:I
 
     .line 264
-    const v0, 0x7f0b0080
+    const v0, 0x7f0b0081
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1353,7 +1353,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->PROGRESS_GROUP_HEIGHT:I
 
     .line 265
-    const v0, 0x7f0b007e
+    const v0, 0x7f0b007f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1364,7 +1364,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->PROGRESS_GROUP_MARGIN_Y:I
 
     .line 266
-    const v0, 0x7f0b007f
+    const v0, 0x7f0b0080
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1385,7 +1385,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->PROGRESSBAR_HEIGHT:I
 
     .line 269
-    const v0, 0x7f0b007d
+    const v0, 0x7f0b007e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1407,7 +1407,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->SCREEN_NORMAL_WIDTH:I
 
     .line 273
-    const v0, 0x7f0b0144
+    const v0, 0x7f0b0145
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -2981,7 +2981,7 @@
     .locals 8
 
     .prologue
-    const v7, 0x7f0a0220
+    const v7, 0x7f0a0226
 
     const/4 v3, 0x2
 
@@ -4185,7 +4185,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0a0203
+    const v5, 0x7f0a0209
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -4925,7 +4925,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a01ec
+    const v3, 0x7f0a01f2
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5056,7 +5056,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a01d8
+    const v3, 0x7f0a01de
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5187,7 +5187,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a01fc
+    const v3, 0x7f0a0202
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5341,7 +5341,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0154
+    const v3, 0x7f0a0156
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5645,7 +5645,7 @@
 
     const/4 v12, 0x0
 
-    const v13, 0x7f0201bc
+    const v13, 0x7f0201ba
 
     const/4 v14, 0x0
 
@@ -5719,7 +5719,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0228
+    const v3, 0x7f0a022e
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5958,7 +5958,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0201c8
+    const v4, 0x7f0201c6
 
     move-object/from16 v0, p1
 
@@ -5984,7 +5984,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0201c7
+    const v4, 0x7f0201c5
 
     move-object/from16 v0, p1
 
@@ -6366,9 +6366,9 @@
 
     int-to-float v14, v1
 
-    const v15, 0x7f02018c
+    const v15, 0x7f02018d
 
-    const v16, 0x7f02018d
+    const v16, 0x7f02018e
 
     move-object/from16 v10, p1
 
@@ -6676,7 +6676,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0149
+    const v3, 0x7f0a014b
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -6741,7 +6741,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0149
+    const v3, 0x7f0a014b
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10069,7 +10069,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0142
+    const v2, 0x7f0a0144
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10086,7 +10086,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0144
+    const v2, 0x7f0a0146
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10103,7 +10103,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0145
+    const v2, 0x7f0a0147
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10120,7 +10120,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0143
+    const v2, 0x7f0a0145
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10137,7 +10137,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0146
+    const v2, 0x7f0a0148
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10154,7 +10154,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0148
+    const v2, 0x7f0a014a
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10171,7 +10171,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0149
+    const v2, 0x7f0a014b
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10188,7 +10188,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0147
+    const v2, 0x7f0a0149
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -10624,7 +10624,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
-    const v1, 0x7f0201c8
+    const v1, 0x7f0201c6
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
@@ -10634,7 +10634,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mIndicatorRecIcon:Lcom/samsung/android/glview/GLImage;
 
-    const v1, 0x7f0201cc
+    const v1, 0x7f0201ca
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
@@ -11048,7 +11048,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01cd
+    const v1, 0x7f0a01d3
 
     const/4 v2, 0x1
 
@@ -16638,7 +16638,7 @@
     .line 1045
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/VideoCollage;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a0264
+    const v1, 0x7f0a026a
 
     const/4 v2, 0x1
 

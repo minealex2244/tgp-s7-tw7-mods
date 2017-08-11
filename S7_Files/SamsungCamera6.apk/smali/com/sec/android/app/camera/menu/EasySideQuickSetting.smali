@@ -73,7 +73,7 @@
     invoke-direct/range {v2 .. v7}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 42
-    const v2, 0x7f0b01cd
+    const v2, 0x7f0b01ce
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -86,7 +86,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->ITEM_WIDTH:I
 
     .line 43
-    const v2, 0x7f0b01cc
+    const v2, 0x7f0b01cd
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -99,7 +99,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->ITEM_HEIGHT:I
 
     .line 44
-    const v2, 0x7f0b00cc
+    const v2, 0x7f0b00cd
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -763,7 +763,7 @@
     .locals 3
 
     .prologue
-    .line 140
+    .line 139
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -776,7 +776,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 141
+    .line 140
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -789,7 +789,7 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setAlpha(F)V
 
-    .line 142
+    .line 141
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -802,12 +802,12 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setVisibility(I)V
 
-    .line 140
+    .line 139
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 144
+    .line 143
     :cond_0
     return-void
 .end method
@@ -872,31 +872,29 @@
 .end method
 
 .method public varargs updateSideQuickSetting([I)V
-    .locals 7
+    .locals 6
     .param p1, "ids"    # [I
 
     .prologue
-    const/4 v4, 0x0
-
     .line 115
     move-object v1, p1
 
     .line 117
     .local v1, "commandIDs":[I
-    array-length v5, v1
+    array-length v4, v1
 
-    move v3, v4
+    const/4 v3, 0x0
 
     :goto_0
-    if-ge v3, v5, :cond_1
+    if-ge v3, v4, :cond_1
 
     aget v0, v1, v3
 
     .line 118
     .local v0, "commandID":I
-    iget-object v6, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mQuickMenuItemList:Landroid/util/SparseArray;
+    iget-object v5, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mQuickMenuItemList:Landroid/util/SparseArray;
 
-    invoke-virtual {v6, v0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+    invoke-virtual {v5, v0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -907,21 +905,18 @@
     if-eqz v2, :cond_0
 
     .line 120
-    invoke-virtual {v2, v4}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setDim(Z)V
-
-    .line 121
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
 
-    move-result v6
+    move-result v5
 
-    invoke-virtual {v2, v6}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setOrientation(I)V
+    invoke-virtual {v2, v5}, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->setOrientation(I)V
+
+    .line 121
+    iget-object v5, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
+
+    invoke-virtual {v5, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 122
-    iget-object v6, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
-
-    invoke-virtual {v6, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 123
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->addView(Lcom/samsung/android/glview/GLView;)V
 
     .line 117
@@ -930,7 +925,7 @@
 
     goto :goto_0
 
-    .line 127
+    .line 126
     .end local v0    # "commandID":I
     .end local v2    # "item":Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
     :cond_1
@@ -962,7 +957,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 128
+    .line 127
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -975,19 +970,19 @@
 
     if-nez v3, :cond_2
 
-    .line 129
+    .line 128
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mHelpButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 130
+    .line 129
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mHelpButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 133
+    .line 132
     :cond_2
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mCurrentAddItemList:Ljava/util/ArrayList;
 
@@ -995,14 +990,14 @@
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 134
+    .line 133
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->mSwitchCameraButton:Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;
 
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 136
+    .line 135
     invoke-direct {p0}, Lcom/sec/android/app/camera/menu/EasySideQuickSetting;->showQuickMenuItems()V
 
-    .line 137
+    .line 136
     return-void
 .end method

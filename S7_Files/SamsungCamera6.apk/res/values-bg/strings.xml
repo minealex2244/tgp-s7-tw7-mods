@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">Записвайте видеоклипове с висока скорост на кадрите с цел гледане на забавен каданс. Можете да пуснете конкретна секция от всяко видео на забавен каданс, след като ги запишете.</string>
     <string name="SM_SMART_SELFSHOT">Селфи със задна камера</string>
     <string name="SM_SMART_SELFSHOT_description">Задната камера ще открие и ще се фокусира автоматично върху лицето ви, когато правите автопортретни снимки.</string>
+    <string name="SM_SOCIAL">Социален</string>
+    <string name="SM_SOCIAL_description">Правете снимки и ги споделяйте лесно в социалните мрежи.</string>
     <string name="SM_SPORTS">Спорт</string>
     <string name="SM_SPORTS_SCENE_description">За правене на по-ясни снимки на бързо движещи се обекти.</string>
     <string name="SM_STORY">Звук и снимка</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">Изглед в цял екран (16:9)</string>
     <string name="Title_Voice_Capture">Управление с глас</string>
     <string name="Title_Voice_guide">Ръководство за глас</string>
-    <string name="Title_Volume_Key_As">Функция на клавиша за сила на звука</string>
+    <string name="Title_Volume_Key_As">Функцион. клавиш за сила звук</string>
     <string name="Title_WhiteBalance">Баланс на бялото</string>
     <string name="Title_common">Общи</string>
     <string name="Title_front">Предна камера</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">Квадрат</string>
     <string name="help_change_mode_tip_1">Плъзнете надясно, за да прегледате наличните режими на камерата.</string>
     <string name="help_change_mode_tip_2">Изберете режима, който искате да използвате.</string>
+    <string name="help_change_mode_tip_3">Само Режим автоматично и Режим селфи на камерата са налични, докато е активиран Лесен режим.</string>
     <string name="help_changing_the_camera_mode">Избиране на режими на камерата</string>
+    <string name="help_changing_the_camera_mode_header">Избиране на режим на камерата</string>
+    <string name="help_changing_the_camera_mode_title">Промяна на режима на камерата</string>
     <string name="help_recording_videos">Записване на видеоклипове</string>
     <string name="help_recording_videos_tip_1">Чукнете %s.</string>
     <string name="help_recording_videos_tip_1_tts">Чукнете бутона за камкордер.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">Чукнете бутона за спиране, за да спрете записването.</string>
     <string name="help_recording_videos_tip_snapshot">Чукнете %s, за да направите снимки, докато записвате видеоклип.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Чукнете бутона за камера, за да направите снимки, докато записвате видеоклип.</string>
-    <string name="help_section_summary">Заснемайте снимки или записвайте видеоклипове с разнообразие от различни ефекти за всякакви случаи. Само Режим автоматично и Режим селфи на камерата са налични и не могат да се прилагат ефекти, докато Лесен режим е активиран.</string>
+    <string name="help_section_summary">Можете да правите снимки или да записвате клипове с разнообразните ефекти, подхождащи на всички поводи.</string>
     <string name="help_selecting_camera_mode">Избиране на режими на камерата</string>
     <string name="help_taking_pictures">Правене на снимки</string>
     <string name="help_taking_pictures_tip_1">Чукнете обекта, който искате да бъде на фокус.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">Докоснете бутона на камерата и завъртете устройството си бавно в една посока.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Докоснете %s, за да видите своите снимки или видеоклипове веднага след като ги направите или запишете.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Докоснете бутона за бърз преглед, за да видите своите снимки или видеоклипове веднага след като ги направите или запишете.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Преглед на снимки и видео</string>
     <string name="high_resolution_video_description">Следното няма да бъде налично, докато записвате в разделителна способност %s:</string>
     <string name="highlight">Акценти</string>

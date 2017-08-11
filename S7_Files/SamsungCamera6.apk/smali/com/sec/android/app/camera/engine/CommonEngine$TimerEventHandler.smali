@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 10473
+    .line 10532
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -43,7 +43,7 @@
 
     const/4 v4, 0x1
 
-    .line 10476
+    .line 10535
     const-string v0, "AXLOG"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -76,11 +76,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10478
+    .line 10537
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mTimerEventListener:Lcom/sec/android/app/camera/interfaces/Engine$TimerEventListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7200(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$TimerEventListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7300(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$TimerEventListener;
 
     move-result-object v0
 
@@ -88,12 +88,12 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine$TimerEventListener;->onTimerEvent(I)V
 
-    .line 10479
+    .line 10538
     iget v0, p1, Landroid/os/Message;->what:I
 
     if-nez v0, :cond_1
 
-    .line 10481
+    .line 10540
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -116,39 +116,39 @@
 
     if-nez v0, :cond_2
 
-    .line 10482
+    .line 10541
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # setter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mIsScreenFlashStarted:Z
-    invoke-static {v0, v4}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7302(Lcom/sec/android/app/camera/engine/CommonEngine;Z)Z
+    invoke-static {v0, v4}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7402(Lcom/sec/android/app/camera/engine/CommonEngine;Z)Z
 
-    .line 10483
+    .line 10542
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->enableScreenFlash(Z)V
-    invoke-static {v0, v4}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7400(Lcom/sec/android/app/camera/engine/CommonEngine;Z)V
+    invoke-static {v0, v4}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7500(Lcom/sec/android/app/camera/engine/CommonEngine;Z)V
 
-    .line 10484
+    .line 10543
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mScreenFlashEventListener:Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7500(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7600(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 10485
+    .line 10544
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mScreenFlashEventListener:Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
-    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7500(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
+    invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7600(Lcom/sec/android/app/camera/engine/CommonEngine;)Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;
 
     move-result-object v0
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine$ScreenFlashEventListener;->onScreenFlashStarted()V
 
-    .line 10487
+    .line 10546
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -158,12 +158,12 @@
 
     invoke-virtual {v0, v5, v2, v3}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 10492
+    .line 10551
     :cond_1
     :goto_0
     return-void
 
-    .line 10489
+    .line 10548
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$TimerEventHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 

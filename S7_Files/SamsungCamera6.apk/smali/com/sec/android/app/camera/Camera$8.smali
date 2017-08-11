@@ -25,7 +25,7 @@
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
-    .line 632
+    .line 625
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$8;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,7 +40,7 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 636
+    .line 629
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$8;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -60,7 +60,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 637
+    .line 630
     :cond_0
     const-string v1, "Camera6"
 
@@ -68,12 +68,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 647
+    .line 640
     :cond_1
     :goto_0
     return-void
 
-    .line 638
+    .line 631
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$8;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -83,19 +83,19 @@
 
     if-nez v1, :cond_1
 
-    .line 639
+    .line 632
     const-string v1, "Camera6"
 
     const-string v2, "Ready to query for best photo"
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 640
+    .line 633
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$8;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->updateLatestMedia()V
 
-    .line 641
+    .line 634
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$8;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/Camera;->updateThumbnail()V
@@ -104,11 +104,11 @@
 
     goto :goto_0
 
-    .line 643
+    .line 636
     :catch_0
     move-exception v0
 
-    .line 644
+    .line 637
     .local v0, "e":Landroid/database/sqlite/SQLiteFullException;
     const-string v1, "Camera6"
 
@@ -116,10 +116,10 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 645
+    .line 638
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$8;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v2, 0x7f0a01bc
+    const v2, 0x7f0a01c2
 
     const/4 v3, 0x0
 

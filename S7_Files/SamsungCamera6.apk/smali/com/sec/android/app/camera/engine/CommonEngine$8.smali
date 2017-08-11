@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 5371
+    .line 5400
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$8;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 5375
+    .line 5404
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$8;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
@@ -50,7 +50,7 @@
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5380
+    .line 5409
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$8;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v1, v1, Lcom/sec/android/app/camera/engine/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;
@@ -59,15 +59,15 @@
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 5381
+    .line 5410
     :goto_0
     return-void
 
-    .line 5376
+    .line 5405
     :catch_0
     move-exception v0
 
-    .line 5377
+    .line 5406
     .local v0, "e":Ljava/lang/NullPointerException;
     const-string v1, "CommonEngine"
 

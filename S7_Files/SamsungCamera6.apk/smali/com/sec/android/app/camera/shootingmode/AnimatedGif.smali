@@ -77,7 +77,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 69
-    const v0, 0x7f0b0257
+    const v0, 0x7f0b0258
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -86,7 +86,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/AnimatedGif;->CAPTURE_PROGRESS_TEXT_SIZE:F
 
     .line 70
-    const v0, 0x7f0b0256
+    const v0, 0x7f0b0257
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -95,7 +95,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/AnimatedGif;->CAPTURE_PROGRESS_TEXT_HEIGHT:F
 
     .line 71
-    const v0, 0x7f0b0258
+    const v0, 0x7f0b0259
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1410,7 +1410,7 @@
 
     move-object/from16 v29, v0
 
-    const v30, 0x7f0a01bc
+    const v30, 0x7f0a01c2
 
     const/16 v31, 0x0
 
@@ -1903,7 +1903,7 @@
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/AnimatedGif;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01ce
+    const v1, 0x7f0a01d4
 
     const/4 v2, 0x1
 

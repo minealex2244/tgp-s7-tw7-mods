@@ -203,7 +203,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->SCREEN_HEIGHT:I
 
     .line 109
-    const v0, 0x7f0b00e8
+    const v0, 0x7f0b00e9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -214,7 +214,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/Food;->FOOD_COLOR_TUNE_BUTTON_RIGHT_MARGIN:I
 
     .line 110
-    const v0, 0x7f0b00e9
+    const v0, 0x7f0b00ea
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1178,7 +1178,7 @@
     if-nez v5, :cond_1
 
     .line 742
-    const v5, 0x7f0b0144
+    const v5, 0x7f0b0145
 
     invoke-static {v5}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1188,7 +1188,7 @@
 
     .line 743
     .local v3, "upperLimit":I
-    const v5, 0x7f0b01d8
+    const v5, 0x7f0b01d9
 
     invoke-static {v5}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -1196,7 +1196,7 @@
 
     .line 744
     .local v1, "SHUTTER_BUTTON_WIDTH":F
-    const v5, 0x7f0b034d
+    const v5, 0x7f0b034e
 
     invoke-static {v5}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -3293,7 +3293,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a00c7
+    const v2, 0x7f0a00c9
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3385,7 +3385,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a00ce
+    const v2, 0x7f0a00d0
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

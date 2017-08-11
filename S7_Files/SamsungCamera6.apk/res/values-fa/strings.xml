@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">برای مشاهده ویدیوها با حرکت آهسته، آنها را با سرعت زیاد فریم ضبط کنید. می‌توانید پس از ضبط ویدیوها، قسمت خاصی از هر ویدیو را با سرعت آهسته پخش کنید.</string>
     <string name="SM_SMART_SELFSHOT">سلفی با دوربین پشت</string>
     <string name="SM_SMART_SELFSHOT_description">دوربین پشت در هنگام گرفتن عکس‌های پرتره از خود، به طور خودکار صورت شما را شناسایی کرده و روی آن فوکوس می‌کند.</string>
+    <string name="SM_SOCIAL">اجتماعی</string>
+    <string name="SM_SOCIAL_description">عکس بگیرید و آنها را به آسانی در شبکه‌های اجتماعی به اشتراک بگذارید.</string>
     <string name="SM_SPORTS">ورزش</string>
     <string name="SM_SPORTS_SCENE_description">از سوژه‌هایی که به سرعت در حال حرکت هستند، عکس‌های واضح‌تری بگیرید.</string>
     <string name="SM_STORY">عکس صوتی</string>
@@ -261,9 +263,9 @@
     <string name="Title_Viewmode">نمای تمام صفحه (۱۶:۹)</string>
     <string name="Title_Voice_Capture">کنترل صدا</string>
     <string name="Title_Voice_guide">راهنمای صوتی</string>
-    <string name="Title_Volume_Key_As">عمليات کليد جانبی</string>
+    <string name="Title_Volume_Key_As">عملکرد کلید میزان صدا</string>
     <string name="Title_WhiteBalance">تعادل سفیدی</string>
-    <string name="Title_common">معمول</string>
+    <string name="Title_common">متداول</string>
     <string name="Title_front">دوربین جلو</string>
     <string name="Title_rear">دوربین عقب</string>
     <string name="Title_rear_lens_distortion_correction">اصلاح شکل تصویر</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">مربع</string>
     <string name="help_change_mode_tip_1">برای مشاهده حالت‌های موجود دوربین، انگشت را به راست بکشید.</string>
     <string name="help_change_mode_tip_2">حالتی که می‌خواهید از آن استفاده کنید را انتخاب کنید.</string>
+    <string name="help_change_mode_tip_3">وقتی حالت آسان فعال است، فقط حالت‌های سلفی و خودکار دوربین در دسترس خواهند بود.</string>
     <string name="help_changing_the_camera_mode">انتخاب حالت‌های دوربین</string>
+    <string name="help_changing_the_camera_mode_header">انتخاب یک حالت دوربین</string>
+    <string name="help_changing_the_camera_mode_title">تغییر حالت دوربین</string>
     <string name="help_recording_videos">ضبط ویدیو</string>
     <string name="help_recording_videos_tip_1">روی ‎%s ضربه بزنید.</string>
     <string name="help_recording_videos_tip_1_tts">روی دکمه دوربین فیلمبرداری ضربه بزنید.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">برای متوقف کردن ضبط روی دکمه توقف ضربه بزنید.</string>
     <string name="help_recording_videos_tip_snapshot">برای گرفتن عکس در حین فیلمبرداری، روی ‎%s ضربه بزنید.</string>
     <string name="help_recording_videos_tip_snapshot_tts">برای گرفتن عکس در حین فیلمبرداری، روی دکمه دوربین ضربه بزنید.</string>
-    <string name="help_section_summary">مناسب با هر موقعیت، با استفاده از جلوه‌های متنوع و گوناگون عکس یا فیلم بگیرید. وقتی حالت آسان فعال است، فقط حالت‌های سلفی و خودکار دوربین در دسترس بوده و استفاده از جلوه‌ها ممکن نخواهد بود.</string>
+    <string name="help_section_summary">مناسب با هر موقعیت، با استفاده از جلوه‌های متنوع و گوناگون عکس یا فیلم بگیرید.</string>
     <string name="help_selecting_camera_mode">انتخاب حالت‌های دوربین</string>
     <string name="help_taking_pictures">عکس گرفتن</string>
     <string name="help_taking_pictures_tip_1">روی سوژه‌ای که می‌خواهید در فوکوس قرار داشته باشد ضربه بزنید.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">روی دکمه دوربین ضربه بزنید و دستگاه خود را به آرامی به یک جهت برگردانید.</string>
     <string name="help_viewing_pics_and_videos_tip_1">برای مشاهده تصاویر یا ویدیوها بلافاصله پس از گرفتن یا ضبط آنها روی ‎%s ضربه بزنید.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">روی نماد مشاهده سریع ضربه بزنید و عکس‌ها یا ویدیوها را درست پس از گرفته شدن یا ضبط شدن مشاهده نمایید.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">مشاهده عکس‌ها و ویدیوها</string>
     <string name="high_resolution_video_description">موارد زیر در هنگام ضبط با وضوح ‎%s در دسترس نخواهند بود:</string>
     <string name="highlight">ویژگی‌های برجسته</string>

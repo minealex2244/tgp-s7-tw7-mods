@@ -65,7 +65,7 @@
     .param p1, "cameraContext"    # Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     .prologue
-    const v13, 0x7f0202d3
+    const v13, 0x7f0202d2
 
     const/4 v12, 0x4
 
@@ -99,7 +99,7 @@
     invoke-direct/range {v0 .. v5}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FFFF)V
 
     .line 53
-    const v0, 0x7f0b0380
+    const v0, 0x7f0b0381
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -108,7 +108,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/WatermarkHandler;->WATERMARK_ARROW_WIDTH:F
 
     .line 54
-    const v0, 0x7f0b037e
+    const v0, 0x7f0b037f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -117,7 +117,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/WatermarkHandler;->WATERMARK_ARROW_HEIGHT:F
 
     .line 55
-    const v0, 0x7f0b037f
+    const v0, 0x7f0b0380
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -126,7 +126,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/WatermarkHandler;->WATERMARK_ARROW_OFFSET:F
 
     .line 56
-    const v0, 0x7f0b0144
+    const v0, 0x7f0b0145
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -261,9 +261,9 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/widget/gl/WatermarkHandler;->WATERMARK_ARROW_HEIGHT:F
 
-    const v6, 0x7f0202d4
+    const v6, 0x7f0202d3
 
-    const v7, 0x7f0202d4
+    const v7, 0x7f0202d3
 
     move v3, v2
 

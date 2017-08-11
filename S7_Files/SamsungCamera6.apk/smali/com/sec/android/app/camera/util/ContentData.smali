@@ -128,7 +128,7 @@
     sput v0, Lcom/sec/android/app/camera/util/ContentData;->SCREEN_NORMAL_HEIGHT:I
 
     .line 41
-    const v0, 0x7f0b0362
+    const v0, 0x7f0b0363
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -139,7 +139,7 @@
     sput v0, Lcom/sec/android/app/camera/util/ContentData;->THUMBNAIL_IMAGE_WIDTH:I
 
     .line 42
-    const v0, 0x7f0b0361
+    const v0, 0x7f0b0362
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

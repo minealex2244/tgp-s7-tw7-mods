@@ -190,6 +190,8 @@ Panoramatická snímka: pri snímaní fotografií objektov v pohybe môžete zac
     <string name="SM_SLOW_VIDEO_description">Môžete nahrávať videá s vysokou snímkovou frekvenciou umožňujúce spomalené prehrávanie. Po ich nahratí môžete prehrávať spomalene konkrétnu sekciu každého videa.</string>
     <string name="SM_SMART_SELFSHOT">Selfie pomocou zadného fotoaparátu</string>
     <string name="SM_SMART_SELFSHOT_description">Pri snímaní autoportrétových fotografií bude zadný fotoaparát automaticky zisťovať tvár a zaostrovať na ňu.</string>
+    <string name="SM_SOCIAL">Sociálny</string>
+    <string name="SM_SOCIAL_description">Môžete snímať fotografie a jednoducho ich zdieľať v sociálnych sieťach.</string>
     <string name="SM_SPORTS">Športy</string>
     <string name="SM_SPORTS_SCENE_description">Snímanie ostrejších fotografií rýchlo sa pohybujúcich objektov.</string>
     <string name="SM_STORY">Ozvučená snímka</string>
@@ -263,7 +265,7 @@ Panoramatická snímka: pri snímaní fotografií objektov v pohybe môžete zac
     <string name="Title_Voice_guide">Hlasový sprievodca</string>
     <string name="Title_Volume_Key_As">Funkcia tlačidla hlasitosti</string>
     <string name="Title_WhiteBalance">Vyváženie bielej farby</string>
-    <string name="Title_common">Bežné</string>
+    <string name="Title_common">Všeobecné</string>
     <string name="Title_front">Predná kamera</string>
     <string name="Title_rear">Zadný fotoaparát</string>
     <string name="Title_rear_lens_distortion_correction">Korekcia tvaru</string>
@@ -393,7 +395,10 @@ tvaru"</string>
     <string name="guideline_square">Štvorec</string>
     <string name="help_change_mode_tip_1">Potiahnutím doprava môžete zobraziť dostupné režimy fotoaparátu.</string>
     <string name="help_change_mode_tip_2">Vyberte režim, ktorý chcete použiť.</string>
+    <string name="help_change_mode_tip_3">Keď je zapnutá funkcia Jednoduchý režim, sú k dispozícii len režimy fotoaparátu Automaticky a Selfie.</string>
     <string name="help_changing_the_camera_mode">Výber režimov fotoaparátu</string>
+    <string name="help_changing_the_camera_mode_header">Výber režimu fotoaparátu</string>
+    <string name="help_changing_the_camera_mode_title">Zmena režimu fotoaparátu</string>
     <string name="help_recording_videos">Nahrávanie videí</string>
     <string name="help_recording_videos_tip_1">Ťuknite na položku %s.</string>
     <string name="help_recording_videos_tip_1_tts">Ťuknite na tlačidlo videokamery.</string>
@@ -401,7 +406,7 @@ tvaru"</string>
     <string name="help_recording_videos_tip_2_tts">Ťuknutím na tlačidlo zastavenia môžete zastaviť nahrávanie.</string>
     <string name="help_recording_videos_tip_snapshot">Ťuknutím na tlačidlo %s môžete fotografovať počas nahrávanie videa.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Ťuknutím na tlačidlo fotoaparátu môžete fotografovať počas nahrávania videa.</string>
-    <string name="help_section_summary">Môžete snímať fotografie alebo nahrávať videá použitím rôznych odlišných efektov vhodných pre všetky príležitosti. Keď je zapnutá funkcia Jednoduchý režim, sú k dispozícii len režimy fotoaparátu Automaticky a Selfie a nemôžete použiť žiadne efekty.</string>
+    <string name="help_section_summary">Môžete snímať fotografie alebo nahrávať videá použitím rôznych odlišných efektov vhodných pre všetky príležitosti.</string>
     <string name="help_selecting_camera_mode">Výber režimov fotoaparátu</string>
     <string name="help_taking_pictures">Snímanie fotografií</string>
     <string name="help_taking_pictures_tip_1">Ťuknite na objekt, na ktorý chcete zaostriť.</string>
@@ -416,6 +421,7 @@ tvaru"</string>
     <string name="help_text_wideselfie">Ťuknite na tlačidlo fotoaparátu a pomaly nakláňajte zariadenie v jednom smere.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Ťuknutím na tlačidlo %s môžete zobraziť fotografie alebo videá hneď po ich nasnímaní alebo nahraní.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Ťuknutím na tlačidlo rýchleho zobrazenia môžete zobraziť fotografie alebo videá hneď po ich nasnímaní alebo nahraní.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Prezeranie fotografií a videí</string>
     <string name="high_resolution_video_description">Počas nahrávania v rozlíšení %s nebudú k dispozícii nasledujúce funkcie:</string>
     <string name="highlight">Zvýraznenia</string>

@@ -28,7 +28,7 @@
     .locals 0
 
     .prologue
-    .line 489
+    .line 492
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$1;
 
     .prologue
-    .line 489
+    .line 492
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;-><init>(Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;)V
 
     return-void
@@ -54,7 +54,7 @@
     .locals 1
 
     .prologue
-    .line 494
+    .line 497
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
@@ -79,10 +79,10 @@
 
     const/4 v8, 0x1
 
-    .line 499
+    .line 502
     if-nez p2, :cond_2
 
-    .line 500
+    .line 503
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
@@ -94,7 +94,7 @@
 
     move-result-object v6
 
-    .line 501
+    .line 504
     .local v6, "itemData":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
@@ -113,11 +113,11 @@
 
     check-cast v0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
-    .line 502
+    .line 505
     .local v0, "item":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     if-nez v0, :cond_1
 
-    .line 503
+    .line 506
     invoke-virtual {v6}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->getCommandId()I
 
     move-result v1
@@ -134,11 +134,11 @@
 
     move-result-object v7
 
-    .line 504
+    .line 507
     .local v7, "command":Lcom/sec/android/app/camera/command/MenuCommand;
     if-eqz v7, :cond_1
 
-    .line 505
+    .line 508
     new-instance v0, Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
     .end local v0    # "item":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
@@ -164,7 +164,7 @@
 
     invoke-direct/range {v0 .. v8}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;I)V
 
-    .line 506
+    .line 509
     .restart local v0    # "item":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
@@ -175,7 +175,7 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->setNextFocusLeftView(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 507
+    .line 510
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
@@ -185,13 +185,13 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->setTouchListener(Lcom/samsung/android/glview/GLView$TouchListener;)V
 
-    .line 508
+    .line 511
     invoke-virtual {v0, v8}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->setRotatable(Z)V
 
-    .line 509
+    .line 512
     invoke-virtual {v0, v8}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->setCenterPivot(Z)V
 
-    .line 510
+    .line 513
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/BeautyLiteListMenu;->mItemList:Landroid/util/SparseArray;
@@ -205,24 +205,24 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 511
+    .line 514
     if-eqz p1, :cond_0
 
-    .line 512
+    .line 515
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->preItem:Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
     invoke-virtual {v1, v0}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->setNextFocusDownView(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 513
+    .line 516
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->preItem:Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/widget/gl/BeautyItem;->setNextFocusUpView(Lcom/samsung/android/glview/GLView;)Z
 
-    .line 515
+    .line 518
     :cond_0
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyLiteListMenu$MenuAdapter;->preItem:Lcom/sec/android/app/camera/widget/gl/BeautyItem;
 
-    .line 520
+    .line 523
     .end local v0    # "item":Lcom/sec/android/app/camera/widget/gl/BeautyItem;
     .end local v6    # "itemData":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     .end local v7    # "command":Lcom/sec/android/app/camera/command/MenuCommand;
@@ -240,6 +240,6 @@
     .locals 0
 
     .prologue
-    .line 525
+    .line 528
     return-void
 .end method

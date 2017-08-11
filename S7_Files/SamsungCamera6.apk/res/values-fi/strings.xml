@@ -195,6 +195,8 @@ Panorointikuva: luo liikevaikutelma liikkuvia kohteita kuvattaessa."</string>
     <string name="SM_SLOW_VIDEO_description">Tallenna videoita suurella kuvanopeudella hidastettua katselua varten. Tallennuksen jälkeen voit toistaa kustakin videosta haluamasi osan hidastettuna.</string>
     <string name="SM_SMART_SELFSHOT">Omakuva takakameralla</string>
     <string name="SM_SMART_SELFSHOT_description">Takakamera tunnistaa kasvosi ja tarkentaa niihin automaattisesti, kun otat omakuvia.</string>
+    <string name="SM_SOCIAL">Sosiaalinen</string>
+    <string name="SM_SOCIAL_description">Ota kuvia ja jaa ne helposti yhteisöpalveluissa.</string>
     <string name="SM_SPORTS">Urheilu</string>
     <string name="SM_SPORTS_SCENE_description">Ota entistä selkeämpiä kuvia nopeasti liikkuvista kohteista.</string>
     <string name="SM_STORY">Ääni ja kuva</string>
@@ -266,9 +268,9 @@ Panorointikuva: luo liikevaikutelma liikkuvia kohteita kuvattaessa."</string>
     <string name="Title_Viewmode">Koko näytön näkymä (16:9)</string>
     <string name="Title_Voice_Capture">Puheohjaus</string>
     <string name="Title_Voice_guide">Ääniohjaus</string>
-    <string name="Title_Volume_Key_As">Äänenvoimakkuusnäppäimen toiminto</string>
+    <string name="Title_Volume_Key_As">Voimakkuusnäppäimen toiminto</string>
     <string name="Title_WhiteBalance">Valkotasapaino</string>
-    <string name="Title_common">Yhteinen</string>
+    <string name="Title_common">Yleiset</string>
     <string name="Title_front">Etukamera</string>
     <string name="Title_rear">Takakamera</string>
     <string name="Title_rear_lens_distortion_correction">Muodon korjaus</string>
@@ -398,7 +400,10 @@ korjaus"</string>
     <string name="guideline_square">Neliö</string>
     <string name="help_change_mode_tip_1">Näytä käytettävissä olevat kameratilat pyyhkäisemällä oikealle.</string>
     <string name="help_change_mode_tip_2">Valitse käytettävä tila.</string>
+    <string name="help_change_mode_tip_3">Vain Automaattinen- ja Omakuva-kameratilat ovat käytettävissä, kun Helppo tila on käytössä.</string>
     <string name="help_changing_the_camera_mode">Kameratilojen valitseminen</string>
+    <string name="help_changing_the_camera_mode_header">Kameratilan valitseminen</string>
+    <string name="help_changing_the_camera_mode_title">Kameratilan vaihtaminen</string>
     <string name="help_recording_videos">Videoiden tallentaminen</string>
     <string name="help_recording_videos_tip_1">Napauta %s.</string>
     <string name="help_recording_videos_tip_1_tts">Napauta videokamerapainiketta.</string>
@@ -406,7 +411,7 @@ korjaus"</string>
     <string name="help_recording_videos_tip_2_tts">Lopeta tallennus napauttamalla pysäytyspainiketta.</string>
     <string name="help_recording_videos_tip_snapshot">Ota kuvia videon tallennuksen aikana napauttamalla %s.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Ota kuvia videon tallennuksen aikana napauttamalla kamerapainiketta.</string>
-    <string name="help_section_summary">Ota kuvia tai tallenna videoita käyttämällä erilaisia tehosteita tilanteen mukaan. Vain Automaattinen- ja Omakuva-kameratilat ovat käytettävissä, eikä tehosteita voi käyttää, kun Helppo tila on käytössä.</string>
+    <string name="help_section_summary">Ota kuvia tai tallenna videoita käyttämällä erilaisia tehosteita tilanteen mukaan.</string>
     <string name="help_selecting_camera_mode">Kameratilojen valitseminen</string>
     <string name="help_taking_pictures">Kuvien ottaminen</string>
     <string name="help_taking_pictures_tip_1">Napauta tarkennettavaa kohdetta.</string>
@@ -421,6 +426,7 @@ korjaus"</string>
     <string name="help_text_wideselfie">Napauta Kamera-painiketta ja käännä laitetta hitaasti yhteen suuntaan.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Napauta %s, jos haluat tarkastella kuvia tai videoita välittömästi niiden ottamisen tai kuvaamisen jälkeen.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Napauta pikanäkymäpainiketta, jos haluat tarkastella kuvia tai videoita välittömästi niiden ottamisen tai kuvaamisen jälkeen.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Kuvien ja videoiden katseleminen</string>
     <string name="high_resolution_video_description">Seuraavat toiminnot eivät ole käytettävissä, kun tallennustarkkuus on %s:</string>
     <string name="highlight">Kohokohdat</string>

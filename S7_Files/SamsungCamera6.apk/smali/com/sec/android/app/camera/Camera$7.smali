@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 620
+    .line 613
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +45,7 @@
 
     const/4 v3, 0x0
 
-    .line 623
+    .line 616
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -55,7 +55,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 624
+    .line 617
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -82,7 +82,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 625
+    .line 618
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -97,7 +97,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v2, 0x7f0a0253
+    const v2, 0x7f0a0259
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 
@@ -105,12 +105,12 @@
 
     invoke-virtual {v0, v1, v3, v4}, Landroid/speech/tts/TextToSpeech;->speak(Ljava/lang/String;ILjava/util/HashMap;)I
 
-    .line 630
+    .line 623
     :cond_1
     :goto_0
     return-void
 
-    .line 627
+    .line 620
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -125,7 +125,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera$7;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    const v2, 0x7f0a0259
+    const v2, 0x7f0a025f
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/Camera;->getString(I)Ljava/lang/String;
 

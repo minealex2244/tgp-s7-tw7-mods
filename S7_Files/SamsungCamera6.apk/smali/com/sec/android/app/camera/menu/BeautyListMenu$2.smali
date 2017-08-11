@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     .prologue
-    .line 427
+    .line 428
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,19 +42,19 @@
     .param p1, "step"    # I
 
     .prologue
-    .line 430
+    .line 431
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->updateLevel(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$200(Lcom/sec/android/app/camera/menu/BeautyListMenu;I)V
 
-    .line 431
+    .line 432
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->restartSliderMenuTimer()V
     invoke-static {v0}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$300(Lcom/sec/android/app/camera/menu/BeautyListMenu;)V
 
-    .line 432
+    .line 433
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -87,7 +87,7 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/BeautyListMenu;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 433
+    .line 434
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -102,13 +102,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 434
+    .line 435
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/BeautyListMenu$2;->this$0:Lcom/sec/android/app/camera/menu/BeautyListMenu;
 
     # invokes: Lcom/sec/android/app/camera/menu/BeautyListMenu;->speakBeautyLevel(I)V
     invoke-static {v0, p1}, Lcom/sec/android/app/camera/menu/BeautyListMenu;->access$400(Lcom/sec/android/app/camera/menu/BeautyListMenu;I)V
 
-    .line 436
+    .line 437
     :cond_0
     return-void
 .end method

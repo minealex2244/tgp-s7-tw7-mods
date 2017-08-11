@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/CameraDialog;
 
     .prologue
-    .line 328
+    .line 352
     iput-object p1, p0, Lcom/sec/android/app/camera/CameraDialog$1;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "which"    # I
 
     .prologue
-    .line 331
+    .line 355
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$1;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraDialog;->getActivity()Landroid/app/Activity;
@@ -60,11 +60,11 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 332
+    .line 356
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDialog$1;->this$0:Lcom/sec/android/app/camera/CameraDialog;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/CameraDialog;->dismiss()V
 
-    .line 333
+    .line 357
     return-void
 .end method

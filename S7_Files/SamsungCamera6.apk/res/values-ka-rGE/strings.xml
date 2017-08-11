@@ -191,6 +191,8 @@
     <string name="SM_SLOW_VIDEO_description">ჩაწერეთ ვიდეოები კადრების უფრო სწრაფი ცვლის რეჟიმში, რომ ნახოთ შენელებული კადრით. ჩაწერის შემდეგ, შეგიძლიათ თითოეული ვიდეოს კონკრეტული ნაწილი გაუშვათ შენელებული კადრით.</string>
     <string name="SM_SMART_SELFSHOT">სელფი უკანა კამერით</string>
     <string name="SM_SMART_SELFSHOT_description">უკანა კამერა ავტომატურად ამოიცნობს და ფოკუსში მოაქცევს სახეს, როდესაც საკუთარ თავს გადაუღებთ სურათებს.</string>
+    <string name="SM_SOCIAL">სოციალური</string>
+    <string name="SM_SOCIAL_description">გადაიღეთ სურათები და მარტივად გააზიარეთ ისინი სოციალურ ქსელებში.</string>
     <string name="SM_SPORTS">სპორტი</string>
     <string name="SM_SPORTS_SCENE_description">გადაუღეთ უფრო მკაფიო სურათები სწრაფად მოძრავ სუბიექტებს.</string>
     <string name="SM_STORY">ხმა და გადაღება</string>
@@ -395,7 +397,10 @@
     <string name="guideline_square">ოთხკუთხედი</string>
     <string name="help_change_mode_tip_1">კამერის რეჟიმების სანახავად, გადაუსვით თითი მარცხნივ და მარჯვნივ.</string>
     <string name="help_change_mode_tip_2">აირჩიეთ რეჟიმი, რომლის გამოყენებაც გსურთ.</string>
+    <string name="help_change_mode_tip_3">მხოლოდ „ავტომატური“ და „სელფი“ კამერის რეჟიმების გამოყენებაა შესაძლებელი, როცა ჩართულია „მარტივი რეჟიმი“.</string>
     <string name="help_changing_the_camera_mode">კამერის რეჟიმების არჩევა</string>
+    <string name="help_changing_the_camera_mode_header">კამერის რეჟიმის არჩევა</string>
+    <string name="help_changing_the_camera_mode_title">კამერის რეჟიმის შეცვლა</string>
     <string name="help_recording_videos">ვიდეოების ჩაწერა</string>
     <string name="help_recording_videos_tip_1">შეეხეთ ნიშანს %s.</string>
     <string name="help_recording_videos_tip_1_tts">შეეხეთ ვიდეოკამერის ღილაკს.</string>
@@ -403,7 +408,7 @@
     <string name="help_recording_videos_tip_2_tts">ჩაწერის შესაჩერებლად შეეხეთ გაჩერების ღილაკს.</string>
     <string name="help_recording_videos_tip_snapshot">ვიდეოს ჩაწერის დროს სურათის გადასაღებად შეეხეთ ღილაკს %s.</string>
     <string name="help_recording_videos_tip_snapshot_tts">ვიდეოს ჩაწერის დროს სურათის გადასაღებად შეეხეთ კამერის ღილაკს.</string>
-    <string name="help_section_summary">გადაიღეთ სურათები ან ჩაწერეთ ვიდეოები, შემთხვევის შესაფერისი სხვადასხვა ეფექტების გამოყენებით. მხოლოდ „ავტომატური“ და „სელფი“ კამერის რეჟიმების გამოყენებაა შესაძლებელი და ეფექტების დადება შეუძლებელია, როცა ჩართულია „მარტივი რეჟიმი“.</string>
+    <string name="help_section_summary">გადაიღეთ სურათები ან ჩაწერეთ ვიდეოები, შემთხვევის შესაფერისი სხვადასხვა ეფექტების გამოყენებით.</string>
     <string name="help_selecting_camera_mode">კამერის რეჟიმების არჩევა</string>
     <string name="help_taking_pictures">სურათის გადაღება</string>
     <string name="help_taking_pictures_tip_1">შეეხეთ ობიექტს, რომელიც გსურთ მოხვდეს ფოკუსში.</string>
@@ -418,6 +423,7 @@
     <string name="help_text_wideselfie">შეეხეთ კამერის ღილაკს და აპარატი ნელა ამოძრავეთ ერთი მიმართულებით.</string>
     <string name="help_viewing_pics_and_videos_tip_1">შეეხეთ ღილაკს %s და ნახეთ სურათები ან ვიდეოები მათი გადაღებისთანავე.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">შეეხეთ სწრაფი დათვალიერების ღილაკს და ნახეთ სურათები ან ვიდეოები მათი გადაღებისთანავე.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">სურათებისა და ვიდეოების ნახვა</string>
     <string name="high_resolution_video_description">ქვემოთ მოცემული მიუწვდომელი იქნება, როდესაც ჩაწერა სრულდება %s ფორმატითა და გარჩევადობით:</string>
     <string name="highlight">მონიშნულები</string>

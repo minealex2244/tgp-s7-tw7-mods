@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
     .prologue
-    .line 408
+    .line 414
     iput-object p1, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$1;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "isChecked"    # Z
 
     .prologue
-    .line 411
+    .line 417
     iget-object v0, p0, Lcom/sec/android/app/camera/setting/ListSettingFragment$1;->this$0:Lcom/sec/android/app/camera/setting/ListSettingFragment;
 
     # getter for: Lcom/sec/android/app/camera/setting/ListSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
@@ -61,6 +61,6 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/setting/CameraSettingsImpl;->setPictureFormat(I)V
 
-    .line 412
+    .line 418
     return-void
 .end method

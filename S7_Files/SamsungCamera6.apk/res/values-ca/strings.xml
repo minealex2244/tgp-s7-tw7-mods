@@ -190,6 +190,8 @@ Dispar desplaçament: Capturi una sensació de moviment quan faci fotos d'object
     <string name="SM_SLOW_VIDEO_description">"Gravi vídeos a una velocitat de fotogrames baixa per veure'ls a càmera lenta. Pot reproduir una part específica de cada vídeo a càmera lenta després de gravar-los."</string>
     <string name="SM_SMART_SELFSHOT">Autofoto amb càmera posterior</string>
     <string name="SM_SMART_SELFSHOT_description">"La càmera posterior detectarà i enfocarà automàticament la seva cara quan faci fotos d'autoretrat."</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Fes fotos i comparteix-les fàcilment a les xarxes socials.</string>
     <string name="SM_SPORTS">Esport</string>
     <string name="SM_SPORTS_SCENE_description">Faci fotos més nítides de subjectes en moviment.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -261,7 +263,7 @@ Dispar desplaçament: Capturi una sensació de moviment quan faci fotos d'object
     <string name="Title_Viewmode">Vista pant completa(16:9)</string>
     <string name="Title_Voice_Capture">Control de veu</string>
     <string name="Title_Voice_guide">Guia de veu</string>
-    <string name="Title_Volume_Key_As">Funció de tecla de volum</string>
+    <string name="Title_Volume_Key_As">Funció tecla volum</string>
     <string name="Title_WhiteBalance">Balanç de blancs</string>
     <string name="Title_common">Comú</string>
     <string name="Title_front">Càmera frontal</string>
@@ -393,7 +395,10 @@ correcció"</string>
     <string name="guideline_square">Quadrat</string>
     <string name="help_change_mode_tip_1">"Desplaci's cap a la dreta per veure els modes de càmera disponibles."</string>
     <string name="help_change_mode_tip_2">Seleccioni el mode que vulgui utilitzar.</string>
+    <string name="help_change_mode_tip_3">Només els modes de Càmera automàtica i Autofoto estan disponibles mentre el mode Senzill estigui activat.</string>
     <string name="help_changing_the_camera_mode">"S'estan seleccionant els modes de la càmera"</string>
+    <string name="help_changing_the_camera_mode_header">Selecció de mode de càmera</string>
+    <string name="help_changing_the_camera_mode_title">Canvi de mode de la càmera</string>
     <string name="help_recording_videos">Gravació de vídeos</string>
     <string name="help_recording_videos_tip_1">Toqui %s.</string>
     <string name="help_recording_videos_tip_1_tts">Toqui el botó de videocàmera.</string>
@@ -401,7 +406,7 @@ correcció"</string>
     <string name="help_recording_videos_tip_2_tts">"Toqui el botó d'aturar per deixar de gravar."</string>
     <string name="help_recording_videos_tip_snapshot">Toqui %s per fer fotos mentre grava vídeo.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Toqui el botó de la càmera per fer fotos mentre grava vídeo.</string>
-    <string name="help_section_summary">"Faci fotos o gravi vídeos utilitzant un ventall d'efectes diferents per adaptar-se a totes les situacions. Només els modes de Càmera automàtica i Autofoto estan disponibles, i no es podrà aplicar cap efecte mentre el mode Fàcil estigui activat."</string>
+    <string name="help_section_summary">Faci fotos o gravi vídeos fent servir diversos efectes per adaptar-se a totes les situacions.</string>
     <string name="help_selecting_camera_mode">"S'estan seleccionant els modes de la càmera"</string>
     <string name="help_taking_pictures">Fer fotos</string>
     <string name="help_taking_pictures_tip_1">"Toqui l'objecte que vulgui portar al focus."</string>
@@ -416,6 +421,7 @@ correcció"</string>
     <string name="help_text_wideselfie">Toqui el botó Càmera i mogui el dispositiu lentament en una direcció.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Toqui %s per veure les seves fotos o vídeos directament després de fer-los.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Toqui el botó vista ràpida per veure les seves fotos o vídeos directament després de fer-los.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Visualització de fotos i vídeos</string>
     <string name="high_resolution_video_description">Això no estarà disponible mentre es gravi en resolucions %s:</string>
     <string name="highlight">Destacats</string>

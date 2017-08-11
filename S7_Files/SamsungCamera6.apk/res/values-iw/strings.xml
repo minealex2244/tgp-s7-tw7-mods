@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">צלם סרטוני וידאו בקצב מסגרות גבוה לצפייה בהילוך איטי. לאחר הצילום, תוכל להפעיל את ההילוך האיטי בכל מקטע רצוי בסרטון הווידאו.</string>
     <string name="SM_SMART_SELFSHOT">סלפי במצלמה אחורית</string>
     <string name="SM_SMART_SELFSHOT_description">המצלמה האחורית תזהה באופן אוטומטי את ההתמקדות בפניך כאשר תצלם תמונות דיוקן-עצמי.</string>
+    <string name="SM_SOCIAL">חברתי</string>
+    <string name="SM_SOCIAL_description">צלם תמונות ושתף אותן בקלות דרך רשתות חברתיות.</string>
     <string name="SM_SPORTS">ספורט</string>
     <string name="SM_SPORTS_SCENE_description">צלם תמונות ברורות יותר של עצמים בתנועה מהירה.</string>
     <string name="SM_STORY">קול וצילום</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">תצוגת מסך מלא (16:9)</string>
     <string name="Title_Voice_Capture">בקרה קולית</string>
     <string name="Title_Voice_guide">מדריך קולי</string>
-    <string name="Title_Volume_Key_As">"היישום 'מקשי עוצמת הקול'"</string>
+    <string name="Title_Volume_Key_As">יישום מקש עוצמת הקול</string>
     <string name="Title_WhiteBalance">איזון לבן</string>
     <string name="Title_common">משותף</string>
     <string name="Title_front">מצלמה קדמית</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">ריבוע</string>
     <string name="help_change_mode_tip_1">החלק לימין כדי להציג מצבי מצלמה זמינים.</string>
     <string name="help_change_mode_tip_2">בחר את המצב הרצוי.</string>
+    <string name="help_change_mode_tip_3">כאשר מצב קל מופעל, רק מצב אוטומטי ומצב סלפי זמינים במצלמה.</string>
     <string name="help_changing_the_camera_mode">בחירת מצבים במצלמה</string>
+    <string name="help_changing_the_camera_mode_header">בחירת מצב מצלמה</string>
+    <string name="help_changing_the_camera_mode_title">שינוי מצב המצלמה</string>
     <string name="help_recording_videos">צילום סרטונים</string>
     <string name="help_recording_videos_tip_1">הקש על %s.</string>
     <string name="help_recording_videos_tip_1_tts">"הקש על לחצן 'מצלמת וידאו'."</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">"הקש על לחצן 'עצור' כדי להפסיק את ההקלטה."</string>
     <string name="help_recording_videos_tip_snapshot">הקש על %s כדי לצלם תמונות בזמן הקלטת וידאו.</string>
     <string name="help_recording_videos_tip_snapshot_tts">הקש על לחצן המצלמה כדי לצלם תמונות בזמן הקלטת וידאו.</string>
-    <string name="help_section_summary">צלם תמונות או סרטוני וידאו והוסף מגוון של אפקטים שונים בהתאם לאירוע. כאשר מצב קל מופעל, רק מצב אוטומטי ומצב סלפי זמינים במצלמה ולא ניתן להחיל אפקטים.</string>
+    <string name="help_section_summary">צלם תמונות או קטעי וידאו בעזרת מגוון של אפקטים שונים, בהתאמה לכל אירוע.</string>
     <string name="help_selecting_camera_mode">בחירת מצבים במצלמה</string>
     <string name="help_taking_pictures">צילום תמונות</string>
     <string name="help_taking_pictures_tip_1">הקש על האובייקט שברצונך להתמקד בו.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">הקש על לחצן הצילום וסובב את המכשיר באיטיות בכיוון אחד.</string>
     <string name="help_viewing_pics_and_videos_tip_1">הקש על %s כדי להציג תמונות או קטעי וידאו מיד לאחר הצילום.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">הקש על לחצן התצוגה המהירה כדי להציג את התמונות או קטעי הוידאו מיד לאחר הצילום.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">הצגת תמונות וסרטוני וידאו</string>
     <string name="high_resolution_video_description">הפריטים הבאים לא יהיו זמינים בעת צילום ברזולוציות %s:</string>
     <string name="highlight">הדגשות</string>
@@ -449,7 +455,7 @@
     <string name="location_tag_dialog_message">"הפונקציה 'מיקום' תופעל ובהגדרה 'שיטת איתור' יוצב הערך %s."</string>
     <string name="location_tag_first_launch_dialog_main_message">"הקש על 'הפעל' כדי להפעיל את 'תגיות מיקום'. דבר זה יחולל שינוי גם בהגדרות הבאות:"</string>
     <string name="location_tag_summary">צרף, הטבע ואחסן נתוני מיקום גיאוגרפי בכל תמונה וסרטון וידאו.</string>
-    <string name="location_tag_toast_message">"כדי להפעיל את הפונקציה 'תגיות מיקום', יש להפעיל גם את 'מיקום' דרך חלונית ההגדרות המהירות."</string>
+    <string name="location_tag_toast_message">"כדי להפעיל את היישום 'תגיות מיקום', יש להפעיל גם את 'מיקום' דרך חלונית ההגדרות המהירות."</string>
     <string name="location_tag_toast_message_GPS_only_condition">"כדי להשתמש בפונקציה 'תגיות מיקום', ודא שבהגדרה 'שיטת איתור' נבחרה האפשרות 'GPS, ‏Wi-Fi ורשתות סלולריות' או 'Wi-Fi ורשתות סלולריות'."</string>
     <string name="location_tag_toast_message_GPS_only_condition_Wifi">"כדי להפעיל את הפונקציה 'תגיות מיקום', ודא שהאפשרות שנבחרה תחת 'שיטת איתור' היא 'GPS ו-‏Wi-Fi' או 'Wi-Fi בלבד'."</string>
     <string name="location_tag_toast_message_GPS_only_condition_vzw">"כדי להשתמש ב'תגיות מיקום', ודא שהמצב שנבחר ב'שיטת איתור' הוא 'רמת דיוק גבוהה' או 'חיסכון בחשמל'."</string>

@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 10433
+    .line 10159
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/engine/CommonEngine$1;
 
     .prologue
-    .line 10433
+    .line 10159
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;-><init>(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
     return-void
@@ -54,7 +54,7 @@
     .param p2, "camera"    # Lcom/samsung/android/camera/core/SemCamera;
 
     .prologue
-    .line 10436
+    .line 10162
     const-string v0, "CommonEngine"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -82,7 +82,7 @@
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentThumbnailWidth:I
-    invoke-static {v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5000(Lcom/sec/android/app/camera/engine/CommonEngine;)I
+    invoke-static {v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5100(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v2
 
@@ -98,9 +98,9 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    .line 10437
+    .line 10163
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentThumbnailHeight:I
-    invoke-static {v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5100(Lcom/sec/android/app/camera/engine/CommonEngine;)I
+    invoke-static {v2}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$5200(Lcom/sec/android/app/camera/engine/CommonEngine;)I
 
     move-result v2
 
@@ -112,10 +112,10 @@
 
     move-result-object v1
 
-    .line 10436
+    .line 10162
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10438
+    .line 10164
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
@@ -128,25 +128,25 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 10441
+    .line 10167
     const-string v0, "CommonEngine"
 
     const-string v1, "PostProcessedThumbnailPictureCallback.onPictureTaken X : STATE_SHUTDOWN"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10448
+    .line 10174
     :goto_0
     return-void
 
-    .line 10445
+    .line 10171
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$PostProcessedThumbnailPictureCallback;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->makeAndUpdateThumbnail([B)V
-    invoke-static {v0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$7100(Lcom/sec/android/app/camera/engine/CommonEngine;[B)V
+    invoke-static {v0, p1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$6200(Lcom/sec/android/app/camera/engine/CommonEngine;[B)V
 
-    .line 10447
+    .line 10173
     const-string v0, "CommonEngine"
 
     const-string v1, "PostProcessedThumbnailPictureCallback.onPictureTaken X"

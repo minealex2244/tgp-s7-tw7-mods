@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">सावकाश मोशनमध्‍ये पाहण्‍यासाठी व्हिडिओस उच्‍च फ्रेम दरामध्‍ये रेकॉर्ड करा. आपण प्रत्‍येक व्हिडिओ रेकॉर्ड केल्‍यानंतर सावकाश मोशनमध्‍ये विशिष्‍ट विभाग प्‍ले करू शकता.</string>
     <string name="SM_SMART_SELFSHOT">मागील-कॅमेरा सेल्फि</string>
     <string name="SM_SMART_SELFSHOT_description">सेल्फ-पोर्टरेट चित्रे घेत असताना मा‍गील कॅमेरा स्वयंचलितपणे आपला चेहरा शोधेल आणि त्यावर फोकस करेल.</string>
+    <string name="SM_SOCIAL">सामाजिक</string>
+    <string name="SM_SOCIAL_description">चित्रे घ्या आणि सामाजिक नेटवर्क्‍स वर त्यांना सहजपणे सामायिक करा.</string>
     <string name="SM_SPORTS">क्रिडा</string>
     <string name="SM_SPORTS_SCENE_description">जलद हलणार्‍या विषयांची स्‍वच्‍छ चित्रे घ्‍या.</string>
     <string name="SM_STORY">आवाज आणि शॉट</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">संपूर्ण स्‍क्रीन दृश्‍य (16:9)</string>
     <string name="Title_Voice_Capture">आवाज नियंत्रण</string>
     <string name="Title_Voice_guide">ध्‍वनी मार्गदर्शक</string>
-    <string name="Title_Volume_Key_As">आवाज तीव्रता कळ कार्य</string>
+    <string name="Title_Volume_Key_As">आवाज की फंक्शन</string>
     <string name="Title_WhiteBalance">शुभ्रतेचा समतोल</string>
     <string name="Title_common">सामान्‍य</string>
     <string name="Title_front">समोरचा कॅमेरा</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">चौकोन</string>
     <string name="help_change_mode_tip_1">उपलब्ध कॅमेरा मोड्स पाहण्यासाठी उजवीकडे स्वाइप करा.</string>
     <string name="help_change_mode_tip_2">आपण वापरू इच्छित असलेला मोड निवडा.</string>
+    <string name="help_change_mode_tip_3">सहज मोड सक्षम असताना केवळ स्वयं आणि सेल्फी कॅमेरा मोड्स उपलब्ध आहेत.</string>
     <string name="help_changing_the_camera_mode">कॅमेरा मोड्स निवडत आहे</string>
+    <string name="help_changing_the_camera_mode_header">कॅमेरा मोड निवडत आहे</string>
+    <string name="help_changing_the_camera_mode_title">कॅमेरा मोड बदलतील आहे</string>
     <string name="help_recording_videos">व्हिडिओस रेकॉर्ड करत आहे</string>
     <string name="help_recording_videos_tip_1">%s टॅप करा.</string>
     <string name="help_recording_videos_tip_1_tts">कॅमकॉडर बटण टॅप करा.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">रेकॉर्डिंग थांबवण्‍यासाठी स्‍टॉप बटण टॅप करा.</string>
     <string name="help_recording_videos_tip_snapshot">व्हिडिओ रेकॉर्ड करत असताना चित्रे घेण्यासाठी %s टॅप करा.</string>
     <string name="help_recording_videos_tip_snapshot_tts">व्हिडिओ रेकॉर्ड करत असताना चित्रे घेण्यासाठी कॅमेरा बटण टॅप करा.</string>
-    <string name="help_section_summary">सर्व समारंभांना शोभण्यासाठी, विविध प्रभाव वापरून चित्रे घ्‍या किंवा व्हिडिओस रेकॉर्ड करा. सहज मोड सक्षम असताना केवळ स्वयं आणि सेल्फी कॅमेरा मोड्स उपलब्ध आहेत आणि कोणेतही प्रभाव लागू केले जाऊ शकत नाहीत.</string>
+    <string name="help_section_summary">सर्व प्रसंगाना शोभतील अशा, भिन्न प्रभावाना वापरून चित्रे घ्या किंवा रेकॉर्डिग करा.</string>
     <string name="help_selecting_camera_mode">कॅमेरा मोड्स निवडत आहे</string>
     <string name="help_taking_pictures">चित्रे घेत आहे</string>
     <string name="help_taking_pictures_tip_1">आपण फोकस मध्ये आणू इच्छित असलेली वस्तू टॅप करा.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">कॅमेरा बटण टॅप करा आणि आपले बोट एकाच दिशेने सावकाश वळवा.</string>
     <string name="help_viewing_pics_and_videos_tip_1">आपली चित्रे घेताच किंवा व्हिडिओ रेकॉर्ड करताच ते पहाण्यासाठी किंवा रेकॉर्ड करण्यासाठी %s टॅप करा.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">आपण चित्रे आणि व्हिडिओस घेतल्‍यानंतर त्‍यांना पाहण्‍यासाठी त्‍वरित व्‍ह्यू बटण टॅप करा.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">चित्रे आणि व्हिडिओस पाहणे</string>
     <string name="high_resolution_video_description">%s रिझॉल्यूशनमध्ये रेकॉर्डिंग करताना खालील अनुपलब्ध असेल:</string>
     <string name="highlight">हायलाइट्स</string>

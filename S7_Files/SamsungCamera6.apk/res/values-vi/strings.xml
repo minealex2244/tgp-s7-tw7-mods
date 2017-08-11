@@ -190,9 +190,11 @@ Kiểu ảnh lia: Ghi lại cảm giác chuyển động khi chụp ảnh đối
     <string name="SM_SLOW_VIDEO_description">Quay video ở tốc độ khung hình cao để xem ở dạng chuyển động chậm. Bạn có thể phát một phần cụ thể của mỗi video ở dạng chuyển động chậm sau khi quay.</string>
     <string name="SM_SMART_SELFSHOT">Selfie máy ảnh sau</string>
     <string name="SM_SMART_SELFSHOT_description">Máy ảnh sau sẽ tự động phát hiện và lấy nét vào khuôn mặt của bạn khi bạn tự chụp chân dung.</string>
+    <string name="SM_SOCIAL">Xã hội</string>
+    <string name="SM_SOCIAL_description">Chụp ảnh và chia sẻ dễ dàng trên mạng xã hội.</string>
     <string name="SM_SPORTS">Thể thao</string>
     <string name="SM_SPORTS_SCENE_description">Chụp ảnh đối tượng di chuyển nhanh rõ nét hơn.</string>
-    <string name="SM_STORY">Ảnh kèm âm thanh</string>
+    <string name="SM_STORY">Ảnh kèm â.thanh</string>
     <string name="SM_STORY_description">Giúp ảnh thêm sinh động bằng cách thêm vào vài giây nhạc nền.</string>
     <string name="SM_ULTRA_WIDE_SHOT">Selfie góc rộng</string>
     <string name="SM_ULTRA_WIDE_SHOT_description">Selfie góc rộng để có thêm nhiều người vào ảnh của bạn.</string>
@@ -263,7 +265,7 @@ Kiểu ảnh lia: Ghi lại cảm giác chuyển động khi chụp ảnh đối
     <string name="Title_Voice_guide">Hướng dẫn thoại</string>
     <string name="Title_Volume_Key_As">Chức năng phím âm lượng</string>
     <string name="Title_WhiteBalance">Cân bằng trắng</string>
-    <string name="Title_common">Thông dụng</string>
+    <string name="Title_common">Chung</string>
     <string name="Title_front">Máy ảnh phía trước</string>
     <string name="Title_rear">Máy ảnh phía sau</string>
     <string name="Title_rear_lens_distortion_correction">Sửa hình dạng</string>
@@ -393,7 +395,10 @@ hình dạng"</string>
     <string name="guideline_square">Vuông</string>
     <string name="help_change_mode_tip_1">Vuốt sang phải để xem các chế độ máy ảnh có sẵn.</string>
     <string name="help_change_mode_tip_2">Chọn chế độ bạn muốn sử dụng.</string>
+    <string name="help_change_mode_tip_3">Chỉ có thể sử dụng chế độ máy ảnh Tự động và Selfie khi bật chế độ Đơn giản.</string>
     <string name="help_changing_the_camera_mode">Chọn chế độ máy ảnh</string>
+    <string name="help_changing_the_camera_mode_header">Chọn chế độ máy ảnh</string>
+    <string name="help_changing_the_camera_mode_title">Thay đổi chế độ máy ảnh</string>
     <string name="help_recording_videos">Quay video</string>
     <string name="help_recording_videos_tip_1">Chạm vào %s.</string>
     <string name="help_recording_videos_tip_1_tts">Chạm vào phím máy quay.</string>
@@ -401,7 +406,7 @@ hình dạng"</string>
     <string name="help_recording_videos_tip_2_tts">Chạm vào phím dừng để dừng quay.</string>
     <string name="help_recording_videos_tip_snapshot">Chạm %s để chụp ảnh khi đang quay video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Chạm vào phím máy ảnh để chụp ảnh trong khi quay video.</string>
-    <string name="help_section_summary">Chụp ảnh hoặc quay video sử dụng nhiều hiệu ứng khác nhau để phù hợp với mọi tình huống. Chỉ có thể sử dụng chế độ máy ảnh Tự động và Selfie và không thể áp dụng hiệu ứng khi bật chế độ Đơn giản.</string>
+    <string name="help_section_summary">Chụp ảnh hoặc quay video sử dụng nhiều hiệu ứng khác nhau để phù hợp với mọi tình huống.</string>
     <string name="help_selecting_camera_mode">Chọn chế độ máy ảnh</string>
     <string name="help_taking_pictures">Chụp ảnh</string>
     <string name="help_taking_pictures_tip_1">Chạm vào đối tượng bạn muốn lấy nét.</string>
@@ -416,6 +421,7 @@ hình dạng"</string>
     <string name="help_text_wideselfie">Chạm phím máy ảnh và xoay chậm thiết bị theo một hướng.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Chạm vào %s để xem ảnh hoặc video ngay sau khi chụp hoặc quay.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Chạm vào phím xem nhanh để xem ảnh hoặc video của bạn ngay sau khi chụp hoặc quay.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Vuốt sang trái để xem ảnh hoặc video ngay sau khi chụp hoặc quay.</string>
     <string name="help_viewing_pictures_and_videos">Xem ảnh và video</string>
     <string name="high_resolution_video_description">Mục sau sẽ không có khi quay phim ở độ phân giải %s:</string>
     <string name="highlight">Tiêu điểm</string>

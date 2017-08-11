@@ -101,7 +101,7 @@
     <string name="R_1936x1936">1:1 (3.7 ລ້ານພິກເຊລ)</string>
     <string name="R_2048x1152">16:9 (2.4 ລ້ານພິກເຊລ)</string>
     <string name="R_2048x1536">4:3 (3.1 ລ້ານພິກເຊລ)</string>
-    <string name="R_2160x2160">1:1 (4.7 ລ້ານພິກເຊລ)</string>
+    <string name="R_2160x2160">1:1 (4.7 M)</string>
     <string name="R_2448x2448">1:1 (6.0 M)</string>
     <string name="R_2560x1440">16:9 (3.7 ລ້ານພິກເຊລ)</string>
     <string name="R_2560x1920">4:3 (5.0 M)</string>
@@ -111,7 +111,7 @@
     <string name="R_2880x2160">4:3 (6.2 M)</string>
     <string name="R_2976x2976">1:1 (8.9 M)</string>
     <string name="R_3024x3024">1:1 (9.1 M)</string>
-    <string name="R_3088x3088">1:1 (9.5 ລ້ານພິກເຊລ)</string>
+    <string name="R_3088x3088">1:1 (4.7 M)</string>
     <string name="R_3264x1836">16:9 (6.0 M)</string>
     <string name="R_3264x2448">4:3 (8.0 M)</string>
     <string name="R_3344x3344">1:1 (11 M)</string>
@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">ບັນທຶກໄຟລ໌ຢູ່ທີ່ອັດຕາກອບສູງສໍາລັບການເບິ່ງຢູ່ໃນການເຄື່ອນໄຫວຊ້າ. ທ່ານ​ສາ​ມາດ​ຫຼິ້ນ​ຕອນ​ສະ​ເພາະ​ຂອງ​ແຕ່​ລະ​ວິ​ດີ​ໂອ​ຢູ່​ໃນ​ການ​ເຄື່ອນ​ໄຫວ​ຊ້າ​ໄດ້​ຫຼັງ​ຈາກ​ບັນ​ທຶກ​ມັນ.</string>
     <string name="SM_SMART_SELFSHOT">ຖ່າຍຮູບຕົວເອງດ້ວຍກ້ອງຫຼັງ</string>
     <string name="SM_SMART_SELFSHOT_description">ກ້ອງຫຼັງຈະກວດຫາ ແລະໂຟກັສໃສ່ໃບໜ້າຂອງທ່ານໂດຍອັດຕະໂນມັດ ເມື່ອທ່ານຖ່າຍຮູບຕົວເອງເຄິ່ງຕົວ.</string>
+    <string name="SM_SOCIAL">ສັງຄົມ</string>
+    <string name="SM_SOCIAL_description">ຖ່າຍຮູບ ແລະ ແຊຣ໌ພວກມັນໃນເຄືອຂ່າຍທາງສັງຄົມໄດ້ຢ່າງງ່າຍດາຍ.</string>
     <string name="SM_SPORTS">ກິລາ</string>
     <string name="SM_SPORTS_SCENE_description">ຖ່າຍຮູບວັດຖຸເຄື່ອນທີ່ໄວໄດ້ແຈ້ງກວ່າ.</string>
     <string name="SM_STORY">ສຽງ &amp; ຖ່າຍ</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">ຈະຕຸລັດ</string>
     <string name="help_change_mode_tip_1">ຮູດໄປທາງຂວາເພື່ອເບິ່ງໂໝດກ້ອງຖ່າຍຮູບທີ່ມີຢູ່.</string>
     <string name="help_change_mode_tip_2">ເລືອກໂໝດທີ່ທ່ານຕ້ອງການໃຊ້.</string>
+    <string name="help_change_mode_tip_3">ມີຢູ່ແຕ່ໂໝດອັດຕະໂນມັດແລະເຊລຟີເທົ່ານັ້ນ ໃນຂະນະທີ່ໂໝດງ່າຍດາຍເປີດໃຊ້ງານຢູ່.</string>
     <string name="help_changing_the_camera_mode">ການເລືອກໂໝດກ້ອງຖ່າຍຮູບ</string>
+    <string name="help_changing_the_camera_mode_header">ການເລືອກໂໝດກ້ອງຖ່າຍຮູບ</string>
+    <string name="help_changing_the_camera_mode_title">ການປ່ຽນໂໝດກ້ອງຖ່າຍຮູບ</string>
     <string name="help_recording_videos">ການບັນທຶກວິດີໂອ</string>
     <string name="help_recording_videos_tip_1">ແຕະ %s.</string>
     <string name="help_recording_videos_tip_1_tts">ແຕະປຸ່ມກ້ອງວິດີໂອ.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">ແຕະປຸ່ມຢຸດ ເພື່ອຢຸດການບັນທຶກ.</string>
     <string name="help_recording_videos_tip_snapshot">ແຕະ %s ເພື່ອຖ່າຍຮູບໃນຂະນະທີ່ກໍາລັງບັນທຶກວິດີໂອ.</string>
     <string name="help_recording_videos_tip_snapshot_tts">ແຕະປຸ່ມກ້ອງຖ່າຍຮູບ ເພື່ອຖ່າຍຮູບໃນຂະນະທີ່ກໍາລັງບັນທຶກວິດີໂອ.</string>
-    <string name="help_section_summary">ຖ່າຍຮູບ ຫຼືບັນທຶກວິດີໂອໂດຍການໃຊ້ເອັບເຝັກຕ່າງໆ, ເພື່ອໃຫ້ເໝາະສົມທຸກໂອກາດ. ມີຢູ່ແຕ່ໂໝດກ້ອງຖ່າຍຮູບອັດຕະໂນມັດແລະເຊລຟີເທົ່ານັ້ນ, ບໍ່ມີເອັບເຝັກສາມາດນຳໃຊ້ໄດ້, ໃນຂະນະທີ່ໂໝດງ່າຍດາຍເປີດໃຊ້ງານຢູ່.</string>
+    <string name="help_section_summary">ຖ່າຍຮູບ ຫຼືບັນທຶກວິດີໂອໂດຍການໃຊ້ເອັບເຝັກຕ່າງໆ, ເພື່ອໃຫ້ເໝາະສົມທຸກໂອກາດ.</string>
     <string name="help_selecting_camera_mode">ການເລືອກໂໝດກ້ອງຖ່າຍຮູບ</string>
     <string name="help_taking_pictures">ການຖ່າຍຮູບ</string>
     <string name="help_taking_pictures_tip_1">ແຕະວັດຖຸທີ່ທ່ານຕ້ອງການນໍາມາສູ່ໂຟກັສ.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">ແຕະປຸ່ມກ້ອງຖ່າຍຮູບ ແລະໝູນເຄື່ອງຂອງທ່ານຊ້າໆໄປໃນທິດທາງໜຶ່ງ.</string>
     <string name="help_viewing_pics_and_videos_tip_1">ແຕະ %s ເພື່ອເບິ່ງຮູບ ຫຼືວິດີໂອຂອງທ່ານທັນທີຫຼັງຈາກຖ່າຍ ຫຼືບັນທຶກມັນ.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">ແຕະປຸ່ມເບິ່ງດ່ວນ ເພື່ອເບິ່ງຮູບ ຫຼືວິດີໂອຂອງທ່ານທັນທີຫຼັງຈາກຖ່າຍ ຫຼືບັນທຶກມັນ.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ກໍາລັງເບິ່ງຮູບ ແລະວິດີໂອ</string>
     <string name="high_resolution_video_description">ຈະ​ບໍ່​ມີ​ສິ່ງ​ຕໍ່​ໄປ​ນີ້​ໃຫ້ ໃນ​ຂະ​ນະ​ທີ່​ກຳ​ລັງ​ບັນ​ທຶກຢູ່​ໃນ​ຄວາມ​ລະ​ອຽດ %s:</string>
     <string name="highlight">ໄຮໄລ້</string>

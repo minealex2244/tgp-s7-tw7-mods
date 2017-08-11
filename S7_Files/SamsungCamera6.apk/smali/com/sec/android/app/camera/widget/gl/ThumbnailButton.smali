@@ -66,7 +66,7 @@
     invoke-direct {p0, v0, p2, p3}, Lcom/samsung/android/glview/GLViewGroup;-><init>(Lcom/samsung/android/glview/GLContext;FF)V
 
     .line 52
-    const v0, 0x7f0b0360
+    const v0, 0x7f0b0361
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -77,7 +77,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->THUMBNAIL_FRAME_WIDTH:I
 
     .line 53
-    const v0, 0x7f0b035f
+    const v0, 0x7f0b0360
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -88,7 +88,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->THUMBNAIL_FRAME_HEIGHT:I
 
     .line 54
-    const v0, 0x7f0b0362
+    const v0, 0x7f0b0363
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -103,7 +103,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/ThumbnailButton;->THUMBNAIL_IMAGE_WIDTH:I
 
     .line 55
-    const v0, 0x7f0b0361
+    const v0, 0x7f0b0362
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -359,7 +359,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0174
+    const v2, 0x7f0a0176
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

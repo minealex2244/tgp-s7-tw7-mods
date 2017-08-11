@@ -284,7 +284,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SCREEN_HEIGHT:I
 
     .line 92
-    const v0, 0x7f0b0208
+    const v0, 0x7f0b0209
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -295,7 +295,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_WIDTH:I
 
     .line 93
-    const v0, 0x7f0b0207
+    const v0, 0x7f0b0208
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -306,7 +306,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_SPACING:I
 
     .line 94
-    const v0, 0x7f0b0205
+    const v0, 0x7f0b0206
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -317,7 +317,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_AND_TIMER_PADDING:I
 
     .line 95
-    const v0, 0x7f0b0206
+    const v0, 0x7f0b0207
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -328,7 +328,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_POS_Y:I
 
     .line 96
-    const v0, 0x7f0b0202
+    const v0, 0x7f0b0203
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -339,7 +339,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_HEIGHT:I
 
     .line 97
-    const v0, 0x7f0b0203
+    const v0, 0x7f0b0204
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -350,7 +350,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_MARGIN_0_180:I
 
     .line 98
-    const v0, 0x7f0b0204
+    const v0, 0x7f0b0205
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -361,7 +361,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_MARGIN_90_270:I
 
     .line 99
-    const v0, 0x7f0b01fd
+    const v0, 0x7f0b01fe
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -372,7 +372,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_GROUP_WIDTH:I
 
     .line 100
-    const v0, 0x7f0b01fc
+    const v0, 0x7f0b01fd
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -383,7 +383,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_GROUP_HEIGHT:I
 
     .line 101
-    const v0, 0x7f0b01f7
+    const v0, 0x7f0b01f8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -394,7 +394,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_GROUP_POS_BOTTOM_MARGIN_PORTRAIT:I
 
     .line 102
-    const v0, 0x7f0b01d8
+    const v0, 0x7f0b01d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -403,7 +403,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SHUTTER_BUTTON_WIDTH:F
 
     .line 103
-    const v0, 0x7f0b034d
+    const v0, 0x7f0b034e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -446,7 +446,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->STOP_BUTTON_POS_Y:I
 
     .line 106
-    const v0, 0x7f0b01f5
+    const v0, 0x7f0b01f6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -457,7 +457,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_POS_X_START:I
 
     .line 107
-    const v0, 0x7f0b01f6
+    const v0, 0x7f0b01f7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -468,7 +468,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_POS_Y:I
 
     .line 108
-    const v0, 0x7f0b01f3
+    const v0, 0x7f0b01f4
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -479,7 +479,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_BAND_WIDTH:I
 
     .line 109
-    const v0, 0x7f0b01f2
+    const v0, 0x7f0b01f3
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -490,7 +490,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_BAND_SPACING:I
 
     .line 110
-    const v0, 0x7f0b01f1
+    const v0, 0x7f0b01f2
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -501,7 +501,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_BAND_AND_MIC_PADDING:I
 
     .line 111
-    const v0, 0x7f0b01f4
+    const v0, 0x7f0b01f5
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -512,7 +512,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_MIC_WIDTH:I
 
     .line 112
-    const v0, 0x7f0b01f9
+    const v0, 0x7f0b01fa
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -523,7 +523,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_ADD_VOICE_POS_Y:I
 
     .line 113
-    const v0, 0x7f0b01f8
+    const v0, 0x7f0b01f9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -534,7 +534,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_ADD_VOICE_HEIGHT:I
 
     .line 114
-    const v0, 0x7f0b01fb
+    const v0, 0x7f0b01fc
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -545,7 +545,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_ADD_VOICE_SEQ_WIDTH:I
 
     .line 115
-    const v0, 0x7f0b01fa
+    const v0, 0x7f0b01fb
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -556,7 +556,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_ADD_VOICE_SEQ_SPACING:I
 
     .line 116
-    const v0, 0x7f0b0200
+    const v0, 0x7f0b0201
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -567,7 +567,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_TEXT_POS_Y:I
 
     .line 117
-    const v0, 0x7f0b01fe
+    const v0, 0x7f0b01ff
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -578,7 +578,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_TEXT_FONT_SIZE:I
 
     .line 118
-    const v0, 0x7f0b0201
+    const v0, 0x7f0b0202
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -589,7 +589,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_TEXT_WIDTH:I
 
     .line 119
-    const v0, 0x7f0b01ff
+    const v0, 0x7f0b0200
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -696,12 +696,12 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     .line 154
-    const v0, 0x7f0202c1
+    const v0, 0x7f0202c0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgessBarSeqImage:I
 
     .line 155
-    const v0, 0x7f0202c2
+    const v0, 0x7f0202c1
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgessBarSeqFullImage:I
 
@@ -742,6 +742,7 @@
     .line 125
     :array_0
     .array-data 4
+        0x7f0202a5
         0x7f0202a6
         0x7f0202a7
         0x7f0202a8
@@ -756,14 +757,13 @@
         0x7f0202b1
         0x7f0202b2
         0x7f0202b3
-        0x7f0202b4
     .end array-data
 
     .line 131
     :array_1
     .array-data 4
+        0x7f0202b4
         0x7f0202b5
-        0x7f0202b6
     .end array-data
 .end method
 
@@ -851,14 +851,14 @@
     .param p1, "file"    # Ljava/io/File;
 
     .prologue
-    .line 734
+    .line 744
     const-string v1, "SoundAndShot"
 
     const-string v2, "addAudio"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 735
+    .line 745
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->getRecordedAudioStream()[B
@@ -867,7 +867,7 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->rec_audio:[B
 
-    .line 738
+    .line 748
     :try_start_0
     const-string v1, "SoundShot_Meta_Info"
 
@@ -881,21 +881,21 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 744
+    .line 754
     :goto_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->stopSoundRecording()V
 
-    .line 745
+    .line 755
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->soundAndShotAddVoiceCompleted()V
 
-    .line 746
+    .line 756
     return-void
 
-    .line 740
+    .line 750
     :catch_0
     move-exception v0
 
-    .line 741
+    .line 751
     .local v0, "e":Ljava/io/IOException;
     const-string v1, "SoundAndShot"
 
@@ -912,36 +912,36 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 749
+    .line 759
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v0, :cond_0
 
-    .line 750
+    .line 760
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->access$500(Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;)V
 
-    .line 751
+    .line 761
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
-    .line 753
+    .line 763
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     if-eqz v0, :cond_1
 
-    .line 754
+    .line 764
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     # invokes: Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;->clear()V
     invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;->access$600(Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;)V
 
-    .line 755
+    .line 765
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
-    .line 757
+    .line 767
     :cond_1
     return-void
 .end method
@@ -951,39 +951,39 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 769
+    .line 779
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 797
+    .line 807
     :goto_0
     :pswitch_0
     return-void
 
-    .line 771
+    .line 781
     :pswitch_1
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v1, :cond_0
 
-    .line 772
+    .line 782
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->getVisualizationBands()[I
 
     move-result-object v0
 
-    .line 773
+    .line 783
     .local v0, "mRecordingAmpitude":[I
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setAudioRecordIndicatorlevel([I)V
 
-    .line 774
+    .line 784
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateRecordingAmplevel()V
 
     goto :goto_0
 
-    .line 776
+    .line 786
     .end local v0    # "mRecordingAmpitude":[I
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
@@ -992,40 +992,40 @@
 
     move-result-object v0
 
-    .line 777
+    .line 787
     .restart local v0    # "mRecordingAmpitude":[I
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setRecordingAmplitude([I)V
 
-    .line 778
+    .line 788
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateRecordingAmplevel()V
 
     goto :goto_0
 
-    .line 782
+    .line 792
     .end local v0    # "mRecordingAmpitude":[I
     :pswitch_2
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v1, :cond_2
 
-    .line 783
+    .line 793
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->RecordedTime:I
 
     const/16 v2, 0x9
 
     if-ne v1, v2, :cond_1
 
-    .line 784
+    .line 794
     const/4 v1, 0x1
 
     iput-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mFull:Z
 
-    .line 785
+    .line 795
     const/4 v1, 0x0
 
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->RecordedTime:I
 
-    .line 787
+    .line 797
     :cond_1
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->RecordedTime:I
 
@@ -1033,7 +1033,7 @@
 
     invoke-direct {p0, v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setProgressBar(IZ)V
 
-    .line 788
+    .line 798
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x3
@@ -1042,7 +1042,7 @@
 
     invoke-virtual {v1, v2, v4, v5}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 789
+    .line 799
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->RecordedTime:I
 
     add-int/lit8 v1, v1, 0x1
@@ -1051,13 +1051,13 @@
 
     goto :goto_0
 
-    .line 791
+    .line 801
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setRecordProgressIncreased()V
 
     goto :goto_0
 
-    .line 769
+    .line 779
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -1072,7 +1072,7 @@
     .prologue
     const/4 v2, 0x4
 
-    .line 800
+    .line 810
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -1081,7 +1081,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 801
+    .line 811
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarBG:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1092,7 +1092,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 802
+    .line 812
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1103,30 +1103,30 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 800
+    .line 810
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 804
+    .line 814
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecTimerIMG:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 805
+    .line 815
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v1, :cond_1
 
-    .line 806
+    .line 816
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x3
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 807
+    .line 817
     :cond_1
     return-void
 .end method
@@ -1139,66 +1139,66 @@
 
     const/4 v2, 0x4
 
-    .line 810
+    .line 820
     const-string v0, "SoundAndShot"
 
     const-string v1, "hideSoundRecordProgressBar"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 812
+    .line 822
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 813
+    .line 823
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 814
+    .line 824
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 816
+    .line 826
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 817
+    .line 827
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->setVisibility(I)V
 
-    .line 819
+    .line 829
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
 
-    .line 820
+    .line 830
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v0, :cond_0
 
-    .line 821
+    .line 831
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x280
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 822
+    .line 832
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 823
+    .line 833
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->disableFaceRect(Z)V
 
-    .line 825
+    .line 835
     :cond_0
     return-void
 .end method
@@ -1209,14 +1209,14 @@
     .prologue
     const/high16 v6, 0x40000000    # 2.0f
 
-    .line 828
+    .line 838
     const-string v0, "SoundAndShot"
 
     const-string v1, "initAddVoice"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 829
+    .line 839
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x1
@@ -1241,7 +1241,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 830
+    .line 840
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x2
@@ -1280,7 +1280,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 832
+    .line 842
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x3
@@ -1315,14 +1315,14 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 835
+    .line 845
     new-instance v0, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-direct {v0}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;-><init>()V
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
-    .line 836
+    .line 846
     return-void
 .end method
 
@@ -1332,7 +1332,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 839
+    .line 849
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-ne v1, v0, :cond_0
@@ -1352,19 +1352,19 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 848
+    .line 858
     const-string v1, "SoundAndShot"
 
     const-string v2, "isRecorded"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 849
+    .line 859
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
     if-nez v1, :cond_0
 
-    .line 850
+    .line 860
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->getRecordedAudioStream()[B
@@ -1373,17 +1373,17 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->rec_audio:[B
 
-    .line 851
+    .line 861
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->rec_audio:[B
 
     if-eqz v1, :cond_1
 
-    .line 856
+    .line 866
     :cond_0
     :goto_0
     return v0
 
-    .line 854
+    .line 864
     :cond_1
     const/4 v0, 0x0
 
@@ -1465,22 +1465,22 @@
 
     const/4 v5, 0x4
 
-    .line 860
+    .line 870
     const-string v1, "SoundAndShot"
 
     const-string v2, "resetManualMode"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 862
+    .line 872
     iput v6, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
 
-    .line 865
+    .line 875
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v1, :cond_0
 
-    .line 866
+    .line 876
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressText:Lcom/samsung/android/glview/GLText;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1513,12 +1513,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 867
+    .line 877
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v4, 0x7f0a0220
+    const v4, 0x7f0a0226
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1532,30 +1532,30 @@
 
     move-result-object v2
 
-    .line 866
+    .line 876
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 869
+    .line 879
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v1, :cond_1
 
-    .line 870
+    .line 880
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x3
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 871
+    .line 881
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 874
+    .line 884
     :cond_1
     const/16 v1, 0xb
 
@@ -1563,43 +1563,43 @@
 
     fill-array-data v0, :array_0
 
-    .line 875
+    .line 885
     .local v0, "MicAmplitude":[I
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setRecordingAmplitude([I)V
 
-    .line 877
+    .line 887
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v1, v5}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 878
+    .line 888
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v5}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 879
+    .line 889
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImageGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v1, :cond_2
 
-    .line 880
+    .line 890
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImageGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v5}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 881
+    .line 891
     :cond_2
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->rec_audio:[B
 
-    .line 883
+    .line 893
     invoke-direct {p0, v6}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->switchScreen(I)V
 
-    .line 884
+    .line 894
     return-void
 
-    .line 874
+    .line 884
     :array_0
     .array-data 4
         0x0
@@ -1622,14 +1622,14 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 887
+    .line 897
     const-string v1, "SoundAndShot"
 
     const-string v2, "resetProgressBar"
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 889
+    .line 899
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -1638,7 +1638,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 890
+    .line 900
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1651,19 +1651,19 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 889
+    .line 899
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 893
+    .line 903
     :cond_0
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->RecordedTime:I
 
-    .line 894
+    .line 904
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mFull:Z
 
-    .line 896
+    .line 906
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->getRecordedAudioStream()[B
@@ -1672,45 +1672,45 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->rec_audio:[B
 
-    .line 897
+    .line 907
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->rec_audio:[B
 
     if-eqz v1, :cond_1
 
-    .line 898
+    .line 908
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->stopRecorder()V
 
-    .line 899
+    .line 909
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
-    .line 900
+    .line 910
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->rec_audio:[B
 
-    .line 903
+    .line 913
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v1, :cond_2
 
-    .line 904
+    .line 914
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 905
+    .line 915
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x3
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 907
+    .line 917
     :cond_2
     return-void
 .end method
@@ -1720,14 +1720,14 @@
     .param p1, "filepath"    # Ljava/lang/String;
 
     .prologue
-    .line 910
+    .line 920
     const-string v1, "SoundAndShot"
 
     const-string v2, "saveAudio"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 913
+    .line 923
     :try_start_0
     new-instance v1, Ljava/io/File;
 
@@ -1745,18 +1745,18 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 919
+    .line 929
     :goto_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->soundAndShotAddVoiceCompleted()V
 
-    .line 920
+    .line 930
     return-void
 
-    .line 915
+    .line 925
     :catch_0
     move-exception v0
 
-    .line 916
+    .line 926
     .local v0, "e":Ljava/io/IOException;
     const-string v1, "SoundAndShot"
 
@@ -1788,25 +1788,25 @@
     .param p1, "isAudioRecording"    # Z
 
     .prologue
-    .line 923
+    .line 933
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
     if-nez v0, :cond_0
 
-    .line 933
+    .line 943
     :goto_0
     return-void
 
-    .line 926
+    .line 936
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->setRecording()V
 
-    .line 928
+    .line 938
     if-eqz p1, :cond_1
 
-    .line 929
+    .line 939
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
     const/4 v1, 0x0
@@ -1815,7 +1815,7 @@
 
     goto :goto_0
 
-    .line 931
+    .line 941
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
@@ -1831,16 +1831,16 @@
     .param p1, "MicAmplitude"    # [I
 
     .prologue
-    .line 936
+    .line 946
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
     if-nez v0, :cond_0
 
-    .line 939
+    .line 949
     :goto_0
     return-void
 
-    .line 938
+    .line 948
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
@@ -1854,7 +1854,7 @@
     .param p1, "enable"    # Z
 
     .prologue
-    .line 942
+    .line 952
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getHRMShutter()I
@@ -1865,20 +1865,20 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 943
+    .line 953
     if-eqz p1, :cond_1
 
-    .line 944
+    .line 954
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, p0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->registerHRMShutterListener(Lcom/sec/android/app/camera/interfaces/CameraContext$HRMShutterListener;)V
 
-    .line 949
+    .line 959
     :cond_0
     :goto_0
     return-void
 
-    .line 946
+    .line 956
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -1892,10 +1892,10 @@
     .param p1, "time"    # I
 
     .prologue
-    .line 952
+    .line 962
     if-lez p1, :cond_0
 
-    .line 953
+    .line 963
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarSeq:Ljava/util/ArrayList;
 
     add-int/lit8 v1, p1, -0x1
@@ -1910,13 +1910,13 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 956
+    .line 966
     :cond_0
     const/16 v0, 0x9
 
     if-ge p1, v0, :cond_1
 
-    .line 957
+    .line 967
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarSeq:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1929,7 +1929,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 958
+    .line 968
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarSeq:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1942,7 +1942,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 960
+    .line 970
     :cond_1
     return-void
 .end method
@@ -1953,13 +1953,13 @@
     .param p2, "full"    # Z
 
     .prologue
-    .line 963
+    .line 973
     if-nez p2, :cond_2
 
-    .line 964
+    .line 974
     if-lez p1, :cond_0
 
-    .line 965
+    .line 975
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
 
     add-int/lit8 v2, p1, -0x1
@@ -1974,7 +1974,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 967
+    .line 977
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
 
@@ -1988,7 +1988,7 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 968
+    .line 978
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2001,11 +2001,11 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 977
+    .line 987
     :cond_1
     return-void
 
-    .line 970
+    .line 980
     :cond_2
     const/4 v0, 0x0
 
@@ -2015,10 +2015,10 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 971
+    .line 981
     if-ne v0, p1, :cond_3
 
-    .line 972
+    .line 982
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2031,13 +2031,13 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 970
+    .line 980
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 974
+    .line 984
     :cond_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
 
@@ -2066,7 +2066,7 @@
 
     const/16 v6, 0x9
 
-    .line 981
+    .line 991
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v1, :cond_0
@@ -2075,7 +2075,7 @@
 
     if-nez v1, :cond_1
 
-    .line 982
+    .line 992
     :cond_0
     const-string v1, "SoundAndShot"
 
@@ -2083,26 +2083,26 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1008
+    .line 1018
     :goto_0
     return-void
 
-    .line 986
+    .line 996
     :cond_1
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
 
     if-ge v1, v6, :cond_3
 
-    .line 987
+    .line 997
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
 
     add-int/lit8 v0, v1, 0x1
 
-    .line 988
+    .line 998
     .local v0, "progressCountForDisplay":I
     if-gt v0, v6, :cond_2
 
-    .line 989
+    .line 999
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressText:Lcom/samsung/android/glview/GLText;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2159,12 +2159,12 @@
 
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 990
+    .line 1000
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const v4, 0x7f0a0220
+    const v4, 0x7f0a0226
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2178,16 +2178,16 @@
 
     move-result-object v2
 
-    .line 989
+    .line 999
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 992
+    .line 1002
     :cond_2
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setProgressBar(I)V
 
-    .line 995
+    .line 1005
     .end local v0    # "progressCountForDisplay":I
     :cond_3
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
@@ -2196,24 +2196,24 @@
 
     if-le v1, v2, :cond_4
 
-    .line 997
+    .line 1007
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
 
     add-int/lit8 v1, v1, -0x1
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setProgressBar(I)V
 
-    .line 999
+    .line 1009
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     invoke-virtual {v1, v9}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 1001
+    .line 1011
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->soundAndshotAddVoiceRecordingFinished()V
 
     goto :goto_0
 
-    .line 1005
+    .line 1015
     :cond_4
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
 
@@ -2221,7 +2221,7 @@
 
     iput v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecordProgressCounter:I
 
-    .line 1006
+    .line 1016
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const-wide/16 v2, 0x3e8
@@ -2240,10 +2240,10 @@
 
     const/16 v5, 0xe
 
-    .line 1011
+    .line 1021
     new-array v0, v6, [I
 
-    .line 1012
+    .line 1022
     .local v0, "EqBandLevel":[I
     const/4 v1, 0x0
 
@@ -2251,14 +2251,14 @@
     :goto_0
     if-ge v1, v6, :cond_1
 
-    .line 1013
+    .line 1023
     const/4 v2, 0x0
 
     .local v2, "j":I
     :goto_1
     if-gt v2, v5, :cond_0
 
-    .line 1014
+    .line 1024
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->eqBandListGroup:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2277,18 +2277,18 @@
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1013
+    .line 1023
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 1012
+    .line 1022
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 1018
+    .line 1028
     .end local v2    # "j":I
     :cond_1
     const/4 v1, 0x0
@@ -2296,38 +2296,38 @@
     :goto_2
     if-ge v1, v6, :cond_6
 
-    .line 1019
+    .line 1029
     div-int/lit8 v3, v1, 0x2
 
     aget v3, p1, v3
 
     if-le v3, v5, :cond_2
 
-    .line 1020
+    .line 1030
     div-int/lit8 v3, v1, 0x2
 
     aput v5, p1, v3
 
-    .line 1022
+    .line 1032
     :cond_2
     rem-int/lit8 v3, v1, 0x2
 
     if-nez v3, :cond_3
 
-    .line 1023
+    .line 1033
     div-int/lit8 v3, v1, 0x2
 
     aget v3, p1, v3
 
     aput v3, v0, v1
 
-    .line 1018
+    .line 1028
     :goto_3
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_2
 
-    .line 1025
+    .line 1035
     :cond_3
     div-int/lit8 v3, v1, 0x2
 
@@ -2341,7 +2341,7 @@
 
     if-ne v3, v5, :cond_5
 
-    .line 1026
+    .line 1036
     :cond_4
     div-int/lit8 v3, v1, 0x2
 
@@ -2351,7 +2351,7 @@
 
     goto :goto_3
 
-    .line 1028
+    .line 1038
     :cond_5
     div-int/lit8 v3, v1, 0x2
 
@@ -2363,14 +2363,14 @@
 
     goto :goto_3
 
-    .line 1033
+    .line 1043
     :cond_6
     const/4 v1, 0x0
 
     :goto_4
     if-ge v1, v6, :cond_7
 
-    .line 1034
+    .line 1044
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->eqBandListGroup:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2391,12 +2391,12 @@
 
     invoke-virtual {v3, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1033
+    .line 1043
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_4
 
-    .line 1036
+    .line 1046
     :cond_7
     return-void
 .end method
@@ -2410,36 +2410,36 @@
     .prologue
     const/4 v8, 0x0
 
-    .line 1056
+    .line 1066
     const-string v0, "SoundAndShot"
 
     const-string v1, "showReviewImage"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1058
+    .line 1068
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     if-eqz v0, :cond_0
 
-    .line 1059
+    .line 1069
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImageGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1060
+    .line 1070
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->clear()V
 
-    .line 1061
+    .line 1071
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 1063
+    .line 1073
     :cond_0
     if-eqz p3, :cond_2
 
@@ -2451,7 +2451,7 @@
 
     if-ne p2, v0, :cond_2
 
-    .line 1064
+    .line 1074
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -2465,14 +2465,14 @@
 
     if-nez v0, :cond_2
 
-    .line 1065
+    .line 1075
     const/16 v0, 0xb4
 
     invoke-static {p1, v0, v8}, Lcom/sec/android/app/camera/util/ImageUtils;->rotateAndMirror(Landroid/graphics/Bitmap;IZ)Landroid/graphics/Bitmap;
 
     move-result-object p1
 
-    .line 1068
+    .line 1078
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -2480,7 +2480,7 @@
 
     move-result-object v7
 
-    .line 1069
+    .line 1079
     .local v7, "previewRect":Landroid/graphics/Rect;
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
@@ -2516,19 +2516,19 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 1070
+    .line 1080
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImageGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 1072
+    .line 1082
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImageGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v8}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1073
+    .line 1083
     return-void
 .end method
 
@@ -2537,7 +2537,7 @@
     .param p1, "mode"    # I
 
     .prologue
-    .line 1076
+    .line 1086
     const-string v0, "SoundAndShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2560,39 +2560,39 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1077
+    .line 1087
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
-    .line 1079
+    .line 1089
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
     if-nez v0, :cond_0
 
-    .line 1080
+    .line 1090
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateLayoutForRatio()V
 
-    .line 1081
+    .line 1091
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->switchScreen(I)V
 
-    .line 1082
+    .line 1092
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->resetProgressBar()V
 
-    .line 1083
+    .line 1093
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->startSoundRecording()V
 
-    .line 1088
+    .line 1098
     :goto_0
     return-void
 
-    .line 1085
+    .line 1095
     :cond_0
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->switchScreen(I)V
 
-    .line 1086
+    .line 1096
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->stopSoundRecording()V
 
     goto :goto_0
@@ -2604,7 +2604,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1091
+    .line 1101
     const/4 v0, 0x0
 
     .local v0, "i":I
@@ -2613,7 +2613,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 1092
+    .line 1102
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarBG:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2624,23 +2624,23 @@
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1091
+    .line 1101
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 1094
+    .line 1104
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecTimerIMG:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 1095
+    .line 1105
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v1, :cond_1
 
-    .line 1096
+    .line 1106
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x3
@@ -2649,7 +2649,7 @@
 
     invoke-virtual {v1, v2, v4, v5}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1097
+    .line 1107
     :cond_1
     return-void
 .end method
@@ -2658,26 +2658,26 @@
     .locals 2
 
     .prologue
-    .line 1100
+    .line 1110
     const-string v0, "SoundAndShot"
 
     const-string v1, "showSoundRecordProgress"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1101
+    .line 1111
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     if-eqz v0, :cond_0
 
-    .line 1102
+    .line 1112
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 1104
+    .line 1114
     :cond_0
     return-void
 .end method
@@ -2686,14 +2686,14 @@
     .locals 6
 
     .prologue
-    .line 1107
+    .line 1117
     const-string v1, "SoundAndShot"
 
     const-string v2, "soundAndShotAddVoiceCompleted()"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1109
+    .line 1119
     const-string v1, "SoundAndShot"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -2726,7 +2726,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1110
+    .line 1120
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -2763,14 +2763,14 @@
 
     invoke-static {v1, v2, v4, v5}, Lcom/sec/android/app/camera/util/ImageUtils;->updatePostSavingFile(Landroid/content/ContentResolver;Landroid/net/Uri;J)V
 
-    .line 1112
+    .line 1122
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.android.MTP.OBJECT_PROP_CHANGED"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1113
+    .line 1123
     .local v0, "action":Landroid/content/Intent;
     const-string v1, "Path"
 
@@ -2786,7 +2786,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1114
+    .line 1124
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -2795,7 +2795,7 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1115
+    .line 1125
     return-void
 .end method
 
@@ -2803,66 +2803,10 @@
     .locals 3
 
     .prologue
-    .line 1118
-    const-string v1, "SoundAndShot"
-
-    const-string v2, "soundAndshotAddVoiceRecordingFinished()"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1119
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentData()Lcom/sec/android/app/camera/util/ContentData;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentFilePath()Ljava/lang/String;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 1120
-    new-instance v0, Ljava/io/File;
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
-
-    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentFilePath()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 1121
-    .local v0, "sefFile":Ljava/io/File;
-    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isSoundScene(Ljava/io/File;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 1122
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->addAudio(Ljava/io/File;)V
-
-    .line 1125
-    .end local v0    # "sefFile":Ljava/io/File;
-    :cond_0
-    return-void
-.end method
-
-.method private soundAndshotAddVoiceRecordingPaused()V
-    .locals 3
-
-    .prologue
     .line 1128
     const-string v1, "SoundAndShot"
 
-    const-string v2, "soundAndshotAddVoiceRecordingPaused()"
+    const-string v2, "soundAndshotAddVoiceRecordingFinished()"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2903,16 +2847,72 @@
     if-nez v1, :cond_0
 
     .line 1132
+    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->addAudio(Ljava/io/File;)V
+
+    .line 1135
+    .end local v0    # "sefFile":Ljava/io/File;
+    :cond_0
+    return-void
+.end method
+
+.method private soundAndshotAddVoiceRecordingPaused()V
+    .locals 3
+
+    .prologue
+    .line 1138
+    const-string v1, "SoundAndShot"
+
+    const-string v2, "soundAndshotAddVoiceRecordingPaused()"
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1139
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentData()Lcom/sec/android/app/camera/util/ContentData;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentFilePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 1140
+    new-instance v0, Ljava/io/File;
+
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentFilePath()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 1141
+    .local v0, "sefFile":Ljava/io/File;
+    invoke-static {v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isSoundScene(Ljava/io/File;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 1142
     const-string v1, "SoundAndShot"
 
     const-string v2, "the sound file is not stored. store it again"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1133
+    .line 1143
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->stopSoundRecordingByExternalEvent(Ljava/io/File;)V
 
-    .line 1136
+    .line 1146
     .end local v0    # "sefFile":Ljava/io/File;
     :cond_0
     return-void
@@ -2922,19 +2922,19 @@
     .locals 2
 
     .prologue
-    .line 1139
+    .line 1149
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     if-eqz v0, :cond_0
 
-    .line 1140
+    .line 1150
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;->sendEmptyMessage(I)Z
 
-    .line 1142
+    .line 1152
     :cond_0
     return-void
 .end method
@@ -2943,23 +2943,23 @@
     .locals 2
 
     .prologue
-    .line 1145
+    .line 1155
     const-string v0, "SoundAndShot"
 
     const-string v1, "startRecordingByCreateButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1146
+    .line 1156
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->startSoundRecording()V
 
-    .line 1147
+    .line 1157
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->showSoundRecordProgress()V
 
-    .line 1148
+    .line 1158
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->startMicAnimation()V
 
-    .line 1149
+    .line 1159
     return-void
 .end method
 
@@ -2971,30 +2971,30 @@
 
     const/4 v3, 0x0
 
-    .line 1152
+    .line 1162
     const-string v0, "SoundAndShot"
 
     const-string v1, "startSoundRecording"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1154
+    .line 1164
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-nez v0, :cond_0
 
-    .line 1155
+    .line 1165
     const-string v0, "SoundAndShot"
 
     const-string v1, "Error occurred"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1183
+    .line 1193
     :goto_0
     return-void
 
-    .line 1158
+    .line 1168
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -3008,7 +3008,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 1159
+    .line 1169
     const-string v0, "SoundAndShot"
 
     const-string v1, "Audio record not allowed"
@@ -3017,16 +3017,16 @@
 
     goto :goto_0
 
-    .line 1164
+    .line 1174
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->startRecorder()V
 
-    .line 1165
+    .line 1175
     iput-boolean v4, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
-    .line 1167
+    .line 1177
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isMicrophonePlugged()Z
@@ -3035,10 +3035,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 1168
+    .line 1178
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a01f2
+    const v1, 0x7f0a01f8
 
     invoke-static {v0, v1, v3}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -3046,13 +3046,13 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 1171
+    .line 1181
     :cond_2
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v0, :cond_3
 
-    .line 1172
+    .line 1182
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3061,7 +3061,7 @@
 
     invoke-static {v0}, Lcom/sec/android/app/camera/util/Util;->disableAlertSound(Landroid/content/Context;)V
 
-    .line 1173
+    .line 1183
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3076,32 +3076,32 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1174
+    .line 1184
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setAudioRecordIndicator(Z)V
 
-    .line 1175
+    .line 1185
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateRecordingAmplevel()V
 
-    .line 1176
+    .line 1186
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->showProgressBar()V
 
-    .line 1177
+    .line 1187
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 1179
+    .line 1189
     :cond_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1180
+    .line 1190
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateRecordingAmplevel()V
 
-    .line 1181
+    .line 1191
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setRecordProgressIncreased()V
 
     goto :goto_0
@@ -3111,25 +3111,25 @@
     .locals 2
 
     .prologue
-    .line 1186
+    .line 1196
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     if-eqz v0, :cond_0
 
-    .line 1187
+    .line 1197
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;->removeMessages(I)V
 
-    .line 1189
+    .line 1199
     :cond_0
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mUpdateCnt:I
 
-    .line 1190
+    .line 1200
     return-void
 .end method
 
@@ -3139,14 +3139,14 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1193
+    .line 1203
     const-string v0, "SoundAndShot"
 
     const-string v1, "stopSoundRecording"
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1194
+    .line 1204
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
     if-nez v0, :cond_0
@@ -3155,24 +3155,24 @@
 
     if-nez v0, :cond_0
 
-    .line 1195
+    .line 1205
     const-string v0, "SoundAndShot"
 
     const-string v1, "stopSoundRecording : not recording state"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1229
+    .line 1239
     :goto_0
     return-void
 
-    .line 1199
+    .line 1209
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-nez v0, :cond_1
 
-    .line 1200
+    .line 1210
     const-string v0, "SoundAndShot"
 
     const-string v1, "Error occurred"
@@ -3181,27 +3181,27 @@
 
     goto :goto_0
 
-    .line 1203
+    .line 1213
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->stopRecorder()V
 
-    .line 1204
+    .line 1214
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
-    .line 1206
+    .line 1216
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v0, :cond_2
 
-    .line 1207
+    .line 1217
     iput v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->RecordedTime:I
 
-    .line 1208
+    .line 1218
     iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mFull:Z
 
-    .line 1209
+    .line 1219
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3210,7 +3210,7 @@
 
     invoke-static {v0}, Lcom/sec/android/app/camera/util/Util;->enableAlertSound(Landroid/content/Context;)V
 
-    .line 1210
+    .line 1220
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3225,48 +3225,48 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1211
+    .line 1221
     invoke-direct {p0, v3}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setAudioRecordIndicator(Z)V
 
-    .line 1215
+    .line 1225
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v0, :cond_3
 
-    .line 1216
+    .line 1226
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 1217
+    .line 1227
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 1220
+    .line 1230
     :cond_3
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v0, :cond_4
 
-    .line 1221
+    .line 1231
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->hideProgressBar()V
 
     goto :goto_0
 
-    .line 1223
+    .line 1233
     :cond_4
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->hideSoundRecordProgressBar()V
 
-    .line 1224
+    .line 1234
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->resetManualMode()V
 
-    .line 1226
+    .line 1236
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3275,7 +3275,7 @@
 
     invoke-static {v0}, Lcom/sec/android/app/camera/util/Util;->enableAlertSound(Landroid/content/Context;)V
 
-    .line 1227
+    .line 1237
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -3298,14 +3298,14 @@
     .param p1, "file"    # Ljava/io/File;
 
     .prologue
-    .line 1232
+    .line 1242
     const-string v1, "SoundAndShot"
 
     const-string v2, "stopSoundRecordingByExternalEvent"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1233
+    .line 1243
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v1}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->getRecordedAudioStream()[B
@@ -3314,7 +3314,7 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->rec_audio:[B
 
-    .line 1236
+    .line 1246
     :try_start_0
     const-string v1, "SoundShot_Meta_Info"
 
@@ -3328,15 +3328,15 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 1241
+    .line 1251
     :goto_0
     return-void
 
-    .line 1238
+    .line 1248
     :catch_0
     move-exception v0
 
-    .line 1239
+    .line 1249
     .local v0, "e":Ljava/io/IOException;
     const-string v1, "SoundAndShot"
 
@@ -3356,7 +3356,7 @@
 
     const/4 v3, 0x0
 
-    .line 1244
+    .line 1254
     const-string v0, "SoundAndShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3379,51 +3379,51 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1246
+    .line 1256
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
-    .line 1248
+    .line 1258
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v0, :cond_1
 
-    .line 1249
+    .line 1259
     const-string v0, "SoundAndShot"
 
     const-string v1, "switchScreen()- It will show normal menu"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1250
+    .line 1260
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotSeq:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1251
+    .line 1261
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotAddVoice:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1253
+    .line 1263
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x280
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 1254
+    .line 1264
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 1261
+    .line 1271
     :cond_0
     :goto_0
     return-void
 
-    .line 1255
+    .line 1265
     :cond_1
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
@@ -3431,19 +3431,19 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 1256
+    .line 1266
     const-string v0, "SoundAndShot"
 
     const-string v1, "switchScreen()- It will show addvoice menu"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1257
+    .line 1267
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotSeq:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 1258
+    .line 1268
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotAddVoice:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v0, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
@@ -3463,23 +3463,23 @@
 
     const/high16 v6, 0x40000000    # 2.0f
 
-    .line 1268
+    .line 1278
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-nez v1, :cond_0
 
-    .line 1269
+    .line 1279
     const-string v1, "SoundAndShot"
 
     const-string v2, "Error occurred"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1287
+    .line 1297
     :goto_0
     return-void
 
-    .line 1272
+    .line 1282
     :cond_0
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SCREEN_WIDTH:I
 
@@ -3497,13 +3497,13 @@
 
     sub-int v0, v1, v2
 
-    .line 1273
+    .line 1283
     .local v0, "ratioMargin":I
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
     if-nez v1, :cond_1
 
-    .line 1274
+    .line 1284
     const-string v1, "SoundAndShot"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -3528,7 +3528,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1275
+    .line 1285
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SCREEN_WIDTH:I
@@ -3559,7 +3559,7 @@
 
     invoke-virtual {v1, v7, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1277
+    .line 1287
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SCREEN_WIDTH:I
@@ -3592,14 +3592,14 @@
 
     invoke-virtual {v1, v9, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1279
+    .line 1289
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v8}, Lcom/samsung/android/glview/GLViewGroup;->updateLayout(Z)V
 
     goto :goto_0
 
-    .line 1281
+    .line 1291
     :cond_1
     const-string v1, "SoundAndShot"
 
@@ -3625,7 +3625,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1282
+    .line 1292
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SCREEN_WIDTH:I
@@ -3654,7 +3654,7 @@
 
     invoke-virtual {v1, v7, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1283
+    .line 1293
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SCREEN_WIDTH:I
@@ -3695,7 +3695,7 @@
 
     invoke-virtual {v1, v9, v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 1285
+    .line 1295
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v8}, Lcom/samsung/android/glview/GLViewGroup;->updateLayout(Z)V
@@ -3709,17 +3709,17 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 1290
+    .line 1300
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     if-eqz v0, :cond_0
 
-    .line 1291
+    .line 1301
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     invoke-virtual {v0, v4}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;->removeMessages(I)V
 
-    .line 1292
+    .line 1302
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mUpdateCnt:I
 
     add-int/lit8 v0, v0, 0x1
@@ -3728,7 +3728,7 @@
 
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mUpdateCnt:I
 
-    .line 1293
+    .line 1303
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mMicImage:Lcom/samsung/android/glview/GLImage;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mMicImageArray:[I
@@ -3739,14 +3739,14 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLImage;->setImageResources(I)V
 
-    .line 1294
+    .line 1304
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecIndicatorHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;
 
     const-wide/16 v2, 0x190
 
     invoke-virtual {v0, v4, v2, v3}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$RecIndicatorHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1296
+    .line 1306
     :cond_0
     return-void
 .end method
@@ -3755,12 +3755,12 @@
     .locals 4
 
     .prologue
-    .line 1299
+    .line 1309
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v0, :cond_0
 
-    .line 1300
+    .line 1310
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v1, 0x1
@@ -3769,7 +3769,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 1301
+    .line 1311
     :cond_0
     return-void
 .end method
@@ -3778,12 +3778,12 @@
     .locals 1
 
     .prologue
-    .line 1304
+    .line 1314
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->qar:Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/shootingmode/util/QuramAudioRecorder;->waitForAudioThread()V
 
-    .line 1305
+    .line 1315
     return-void
 .end method
 
@@ -3834,11 +3834,13 @@
 .end method
 
 .method public onActivate(Lcom/sec/android/app/camera/interfaces/Engine;)V
-    .locals 5
+    .locals 6
     .param p1, "engine"    # Lcom/sec/android/app/camera/interfaces/Engine;
 
     .prologue
-    const/16 v4, 0x4d
+    const/16 v5, 0x4d
+
+    const/4 v4, 0x1
 
     const/4 v3, 0x0
 
@@ -3908,7 +3910,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_5
 
     .line 261
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -3928,9 +3930,7 @@
 
     move-result v1
 
-    const/4 v2, 0x1
-
-    if-ne v1, v2, :cond_0
+    if-ne v1, v4, :cond_0
 
     .line 263
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -3954,9 +3954,18 @@
     .line 271
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    invoke-interface {v1, v4, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->registerCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
+    invoke-interface {v1, v5, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->registerCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
     .line 274
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
+
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isBackCamera()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 275
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     const/16 v2, 0x12
@@ -3969,64 +3978,91 @@
 
     iput-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
-    .line 275
+    .line 276
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
     invoke-virtual {v1, p0}, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->setOnShowListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnShowListener;)V
 
-    .line 276
+    .line 277
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
     invoke-virtual {v1, p0}, Lcom/sec/android/app/camera/menu/ZoomSliderMenu;->setOnHideListener(Lcom/sec/android/app/camera/interfaces/MenuBase$OnHideListener;)V
 
-    .line 278
+    .line 279
+    :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1, p0}, Lcom/sec/android/app/camera/interfaces/Engine;->setPrepareDBUpdateListener(Lcom/sec/android/app/camera/interfaces/Engine$DBUpdateListener;)V
 
-    .line 279
+    .line 280
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/Engine;->sendOrientationInfoToHAL()V
 
-    .line 281
+    .line 282
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getSoundAndShotMode()I
 
     move-result v1
 
-    if-nez v1, :cond_1
-
-    .line 282
-    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v1, v4, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setButtonDim(II)V
-
-    .line 285
-    :cond_1
-    iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
-
-    .line 287
-    iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
-
     if-nez v1, :cond_2
 
-    .line 288
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->startSoundRecording()V
+    .line 283
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 290
+    invoke-interface {v1, v5, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setButtonDim(II)V
+
+    .line 286
     :cond_2
-    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateLayoutForRatio()V
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 291
-    iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isRecordKeyReleased:Z
+    invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFlashMode()I
+
+    move-result v1
+
+    if-ne v1, v4, :cond_6
+
+    .line 287
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v1, v4}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFlashAutoCallback(Z)V
 
     .line 292
+    :goto_1
+    iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
+
+    .line 294
+    iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
+
+    if-nez v1, :cond_3
+
+    .line 295
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->startSoundRecording()V
+
+    .line 297
+    :cond_3
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isAddVoiceScreen()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_4
+
+    .line 298
+    invoke-direct {p0, v3}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->switchScreen(I)V
+
+    .line 300
+    :cond_4
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateLayoutForRatio()V
+
+    .line 301
+    iput-boolean v3, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isRecordKeyReleased:Z
+
+    .line 302
     return-void
 
     .line 266
-    :cond_3
+    :cond_5
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v2, 0x3
@@ -4038,6 +4074,14 @@
     invoke-interface {v1, v2}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->setSideQuickSettingItems([I)V
 
     goto :goto_0
+
+    .line 289
+    :cond_6
+    iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
+
+    invoke-interface {v1, v3}, Lcom/sec/android/app/camera/interfaces/Engine;->enableFlashAutoCallback(Z)V
+
+    goto :goto_1
 
     .line 261
     nop
@@ -4062,7 +4106,7 @@
     .param p1, "event"    # Landroid/view/MotionEvent;
 
     .prologue
-    .line 297
+    .line 307
     const/4 v0, 0x0
 
     return v0
@@ -4074,7 +4118,7 @@
     .param p2, "modeId"    # I
 
     .prologue
-    .line 302
+    .line 312
     const-string v0, "SoundAndShot"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -4107,7 +4151,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 303
+    .line 313
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->isRecording()Z
@@ -4116,23 +4160,23 @@
 
     if-eqz v0, :cond_0
 
-    .line 313
+    .line 323
     :goto_0
     return-void
 
-    .line 306
+    .line 316
     :cond_0
     packed-switch p1, :pswitch_data_0
 
     goto :goto_0
 
-    .line 308
+    .line 318
     :pswitch_0
     invoke-direct {p0, p2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setSoundAndShotType(I)V
 
     goto :goto_0
 
-    .line 306
+    .line 316
     nop
 
     :pswitch_data_0
@@ -4148,7 +4192,7 @@
     .prologue
     const/16 v1, 0x7530
 
-    .line 318
+    .line 328
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isBackCamera()Z
@@ -4157,12 +4201,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 319
+    .line 329
     const/16 v0, 0x3a98
 
     invoke-virtual {p1, v0, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->setPreviewFpsRange(II)V
 
-    .line 324
+    .line 334
     :goto_0
     const/4 v0, 0x1
 
@@ -4178,10 +4222,10 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/samsung/android/camera/core/SemCamera$Parameters;->set(Ljava/lang/String;I)V
 
-    .line 325
+    .line 335
     return-void
 
-    .line 321
+    .line 331
     :cond_0
     const/16 v0, 0x1f40
 
@@ -4197,14 +4241,14 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 329
+    .line 339
     const-string v1, "SoundAndShot"
 
     const-string v2, "onClick"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 330
+    .line 340
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {p1, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -4213,36 +4257,36 @@
 
     if-eqz v1, :cond_1
 
-    .line 331
+    .line 341
     const-string v1, "SoundAndShot"
 
     const-string v2, "mCaptureStopButton onClicked"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 332
+    .line 342
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v1, :cond_0
 
-    .line 333
+    .line 343
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x3
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 335
+    .line 345
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->soundAndshotAddVoiceRecordingFinished()V
 
-    .line 336
+    .line 346
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
-    .line 338
+    .line 348
     const/4 v0, 0x1
 
-    .line 340
+    .line 350
     :cond_1
     return v0
 .end method
@@ -4256,28 +4300,28 @@
     .param p5, "menuManager"    # Lcom/sec/android/app/camera/interfaces/MenuManager;
 
     .prologue
-    .line 345
+    .line 355
     const-string v2, "SoundAndShot"
 
     const-string v3, "SoundAndShot"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 346
+    .line 356
     move-object/from16 v0, p4
 
     move-object/from16 v1, p0
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
-    .line 347
+    .line 357
     move-object/from16 v0, p5
 
     move-object/from16 v1, p0
 
     iput-object v0, v1, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mMenuManager:Lcom/sec/android/app/camera/interfaces/MenuManager;
 
-    .line 349
+    .line 359
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -4286,7 +4330,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarBG:Ljava/util/ArrayList;
 
-    .line 350
+    .line 360
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -4295,7 +4339,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
 
-    .line 352
+    .line 362
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -4304,7 +4348,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarBG:Ljava/util/ArrayList;
 
-    .line 353
+    .line 363
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -4313,7 +4357,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarSeq:Ljava/util/ArrayList;
 
-    .line 355
+    .line 365
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -4322,7 +4366,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->eqBandListGroup:Ljava/util/ArrayList;
 
-    .line 357
+    .line 367
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
@@ -4335,7 +4379,7 @@
 
     iput v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
-    .line 358
+    .line 368
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual/range {p2 .. p2}, Lcom/samsung/android/glview/GLViewGroup;->getLeft()F
@@ -4362,7 +4406,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotSeq:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 359
+    .line 369
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
     move-object/from16 v0, p0
@@ -4419,7 +4463,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 361
+    .line 371
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4428,7 +4472,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 362
+    .line 372
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4437,7 +4481,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setBypassTouch(Z)V
 
-    .line 364
+    .line 374
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->SCREEN_WIDTH:I
@@ -4458,7 +4502,7 @@
 
     sub-int v15, v2, v3
 
-    .line 365
+    .line 375
     .local v15, "ratioMargin":I
     move-object/from16 v0, p0
 
@@ -4506,7 +4550,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 367
+    .line 377
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4549,7 +4593,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 368
+    .line 378
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4598,7 +4642,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 370
+    .line 380
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4643,13 +4687,13 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLViewGroup;->setLeftTop(IFF)V
 
-    .line 372
+    .line 382
     const/4 v14, 0x0
 
     .local v14, "progressSeqPosX":I
     const/16 v16, 0x0
 
-    .line 373
+    .line 383
     .local v16, "timerPosX":I
     const/4 v11, 0x0
 
@@ -4659,13 +4703,13 @@
 
     if-ge v11, v2, :cond_2
 
-    .line 375
+    .line 385
     if-nez v11, :cond_0
 
-    .line 376
+    .line 386
     const/4 v14, 0x0
 
-    .line 384
+    .line 394
     :goto_1
     move-object/from16 v0, p0
 
@@ -4681,7 +4725,7 @@
 
     int-to-float v5, v5
 
-    const v6, 0x7f0202c3
+    const v6, 0x7f0202c2
 
     move-object/from16 v0, p1
 
@@ -4689,7 +4733,7 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 385
+    .line 395
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarBG:Ljava/util/ArrayList;
@@ -4704,7 +4748,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 386
+    .line 396
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4721,7 +4765,7 @@
 
     invoke-virtual {v3, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 388
+    .line 398
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
@@ -4746,7 +4790,7 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 389
+    .line 399
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBarSeq:Ljava/util/ArrayList;
@@ -4761,7 +4805,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 390
+    .line 400
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4778,18 +4822,18 @@
 
     invoke-virtual {v3, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 373
+    .line 383
     add-int/lit8 v11, v11, 0x1
 
     goto :goto_0
 
-    .line 377
+    .line 387
     :cond_0
     const/16 v2, 0x8
 
     if-ne v11, v2, :cond_1
 
-    .line 378
+    .line 388
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_WIDTH:I
@@ -4802,7 +4846,7 @@
 
     add-int v14, v2, v3
 
-    .line 379
+    .line 389
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->PROGRESS_BAR_SEQ_WIDTH:I
@@ -4817,7 +4861,7 @@
 
     goto/16 :goto_1
 
-    .line 381
+    .line 391
     :cond_1
     move-object/from16 v0, p0
 
@@ -4833,7 +4877,7 @@
 
     goto/16 :goto_1
 
-    .line 393
+    .line 403
     :cond_2
     new-instance v2, Lcom/samsung/android/glview/GLImage;
 
@@ -4843,7 +4887,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f0202b7
+    const v5, 0x7f0202b6
 
     move-object/from16 v0, p1
 
@@ -4853,7 +4897,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecTimerIMG:Lcom/samsung/android/glview/GLImage;
 
-    .line 394
+    .line 404
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecTimerIMG:Lcom/samsung/android/glview/GLImage;
@@ -4862,7 +4906,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 395
+    .line 405
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4873,7 +4917,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 396
+    .line 406
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -4882,7 +4926,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setClipping(Z)V
 
-    .line 398
+    .line 408
     new-instance v2, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
     move-object/from16 v0, p0
@@ -4899,7 +4943,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
 
-    .line 399
+    .line 409
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
@@ -4908,7 +4952,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->setClipping(Z)V
 
-    .line 400
+    .line 410
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mAudioRecordIndicator:Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;
@@ -4917,7 +4961,7 @@
 
     invoke-virtual {v2, v3}, Lcom/sec/android/app/camera/widget/gl/AudioRecordIndicator;->setVisibility(I)V
 
-    .line 402
+    .line 412
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotSeq:Lcom/samsung/android/glview/GLViewGroup;
@@ -4928,7 +4972,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 403
+    .line 413
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotSeq:Lcom/samsung/android/glview/GLViewGroup;
@@ -4939,7 +4983,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 405
+    .line 415
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotSeq:Lcom/samsung/android/glview/GLViewGroup;
@@ -4948,7 +4992,7 @@
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 411
+    .line 421
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual/range {p2 .. p2}, Lcom/samsung/android/glview/GLViewGroup;->getLeft()F
@@ -4975,7 +5019,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotAddVoice:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 413
+    .line 423
     new-instance v2, Lcom/samsung/android/glview/GLButton;
 
     move-object/from16 v0, p0
@@ -5012,7 +5056,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 415
+    .line 425
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -5021,7 +5065,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setMute(Z)V
 
-    .line 416
+    .line 426
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -5034,7 +5078,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a0161
+    const v4, 0x7f0a0163
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5042,7 +5086,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setTitle(Ljava/lang/String;)V
 
-    .line 417
+    .line 427
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -5051,7 +5095,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 418
+    .line 428
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -5060,7 +5104,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 419
+    .line 429
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -5069,7 +5113,7 @@
 
     invoke-virtual {v2, v0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 420
+    .line 430
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -5078,7 +5122,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setFocusable(Z)V
 
-    .line 421
+    .line 431
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -5087,7 +5131,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 422
+    .line 432
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -5096,7 +5140,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 424
+    .line 434
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
     move-object/from16 v0, p0
@@ -5151,7 +5195,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 426
+    .line 436
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5160,7 +5204,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 427
+    .line 437
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5169,13 +5213,13 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setRotatable(Z)V
 
-    .line 429
+    .line 439
     const/4 v10, 0x0
 
     .local v10, "eqBarPosX":I
     const/4 v13, 0x0
 
-    .line 430
+    .line 440
     .local v13, "micPosX":I
     const/4 v11, 0x0
 
@@ -5184,15 +5228,15 @@
 
     if-ge v11, v2, :cond_6
 
-    .line 431
+    .line 441
     if-nez v11, :cond_3
 
-    .line 432
+    .line 442
     move-object/from16 v0, p0
 
     iget v10, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_POS_X_START:I
 
-    .line 439
+    .line 449
     :goto_3
     new-instance v2, Ljava/util/ArrayList;
 
@@ -5202,7 +5246,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->eqBandList:Ljava/util/ArrayList;
 
-    .line 440
+    .line 450
     const/4 v12, 0x0
 
     .local v12, "j":I
@@ -5211,7 +5255,7 @@
 
     if-gt v12, v2, :cond_5
 
-    .line 441
+    .line 451
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->eqBandList:Ljava/util/ArrayList;
@@ -5238,7 +5282,7 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 442
+    .line 452
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5255,19 +5299,19 @@
 
     invoke-virtual {v3, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 440
+    .line 450
     add-int/lit8 v12, v12, 0x1
 
     goto :goto_4
 
-    .line 433
+    .line 443
     .end local v12    # "j":I
     :cond_3
     const/16 v2, 0xa
 
     if-ne v11, v2, :cond_4
 
-    .line 434
+    .line 444
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_BAND_WIDTH:I
@@ -5280,7 +5324,7 @@
 
     add-int v13, v2, v3
 
-    .line 435
+    .line 445
     move-object/from16 v0, p0
 
     iget v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->INDICATOR_EQBAR_MIC_WIDTH:I
@@ -5295,7 +5339,7 @@
 
     goto :goto_3
 
-    .line 437
+    .line 447
     :cond_4
     move-object/from16 v0, p0
 
@@ -5311,7 +5355,7 @@
 
     goto :goto_3
 
-    .line 444
+    .line 454
     .restart local v12    # "j":I
     :cond_5
     move-object/from16 v0, p0
@@ -5324,12 +5368,12 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 430
+    .line 440
     add-int/lit8 v11, v11, 0x1
 
     goto :goto_2
 
-    .line 447
+    .line 457
     .end local v12    # "j":I
     :cond_6
     new-instance v2, Lcom/samsung/android/glview/GLImage;
@@ -5346,7 +5390,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0202b5
+    const v6, 0x7f0202b4
 
     invoke-direct {v2, v3, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -5354,7 +5398,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mMicImage:Lcom/samsung/android/glview/GLImage;
 
-    .line 448
+    .line 458
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5365,7 +5409,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 450
+    .line 460
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v4, 0x0
@@ -5396,7 +5440,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 452
+    .line 462
     const/4 v11, 0x0
 
     :goto_5
@@ -5404,13 +5448,13 @@
 
     if-ge v11, v2, :cond_8
 
-    .line 453
+    .line 463
     if-nez v11, :cond_7
 
-    .line 454
+    .line 464
     const/4 v14, 0x0
 
-    .line 459
+    .line 469
     :goto_6
     move-object/from16 v0, p0
 
@@ -5422,7 +5466,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0202c3
+    const v6, 0x7f0202c2
 
     move-object/from16 v0, p1
 
@@ -5430,7 +5474,7 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 460
+    .line 470
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -5447,7 +5491,7 @@
 
     invoke-virtual {v3, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 461
+    .line 471
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarBG:Ljava/util/ArrayList;
@@ -5462,7 +5506,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 463
+    .line 473
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarSeq:Ljava/util/ArrayList;
@@ -5483,7 +5527,7 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 464
+    .line 474
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBar:Lcom/samsung/android/glview/GLViewGroup;
@@ -5500,12 +5544,12 @@
 
     invoke-virtual {v3, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 452
+    .line 462
     add-int/lit8 v11, v11, 0x1
 
     goto :goto_5
 
-    .line 456
+    .line 466
     :cond_7
     move-object/from16 v0, p0
 
@@ -5521,7 +5565,7 @@
 
     goto :goto_6
 
-    .line 466
+    .line 476
     :cond_8
     move-object/from16 v0, p0
 
@@ -5533,7 +5577,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 468
+    .line 478
     new-instance v2, Lcom/samsung/android/glview/GLText;
 
     move-object/from16 v0, p0
@@ -5590,12 +5634,12 @@
 
     iget-object v8, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 469
+    .line 479
     invoke-interface {v8}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
 
     move-result-object v8
 
-    const v9, 0x7f0a0220
+    const v9, 0x7f0a0226
 
     invoke-virtual {v8, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5623,7 +5667,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressText:Lcom/samsung/android/glview/GLText;
 
-    .line 471
+    .line 481
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressText:Lcom/samsung/android/glview/GLText;
@@ -5632,7 +5676,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 472
+    .line 482
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressText:Lcom/samsung/android/glview/GLText;
@@ -5643,7 +5687,7 @@
 
     invoke-virtual {v2, v3, v4}, Lcom/samsung/android/glview/GLText;->setAlign(II)V
 
-    .line 473
+    .line 483
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressText:Lcom/samsung/android/glview/GLText;
@@ -5662,7 +5706,7 @@
 
     invoke-virtual {v2, v3, v4, v5}, Lcom/samsung/android/glview/GLText;->setStroke(ZFI)V
 
-    .line 474
+    .line 484
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressText:Lcom/samsung/android/glview/GLText;
@@ -5673,7 +5717,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setShadowVisibility(Z)V
 
-    .line 475
+    .line 485
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
@@ -5684,10 +5728,10 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 477
+    .line 487
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->initAddVoice()V
 
-    .line 479
+    .line 489
     new-instance v2, Lcom/samsung/android/glview/GLViewGroup;
 
     move-object/from16 v0, p0
@@ -5704,7 +5748,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImageGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 480
+    .line 490
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotAddVoice:Lcom/samsung/android/glview/GLViewGroup;
@@ -5715,7 +5759,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 481
+    .line 491
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotAddVoice:Lcom/samsung/android/glview/GLViewGroup;
@@ -5726,7 +5770,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 482
+    .line 492
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotAddVoice:Lcom/samsung/android/glview/GLViewGroup;
@@ -5737,7 +5781,7 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 484
+    .line 494
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotAddVoice:Lcom/samsung/android/glview/GLViewGroup;
@@ -5746,7 +5790,7 @@
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 485
+    .line 495
     return-void
 .end method
 
@@ -5756,14 +5800,14 @@
     .param p2, "file"    # Ljava/io/File;
 
     .prologue
-    .line 490
+    .line 500
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isRecorded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 491
+    .line 501
     const-string v0, "sef_file_type"
 
     const/16 v1, 0x800
@@ -5774,18 +5818,18 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 494
+    .line 504
     :cond_0
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-eqz v0, :cond_1
 
-    .line 495
+    .line 505
     const-string v0, "date_modified"
 
     invoke-virtual {p1, v0}, Landroid/content/ContentValues;->remove(Ljava/lang/String;)V
 
-    .line 497
+    .line 507
     :cond_1
     const/4 v0, 0x0
 
@@ -5796,23 +5840,23 @@
     .locals 2
 
     .prologue
-    .line 502
+    .line 512
     iget-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
     if-eqz v0, :cond_0
 
-    .line 503
+    .line 513
     const-string v0, "SoundAndShot"
 
     const-string v1, "onHRMShutterDetected returned - Recording"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 515
+    .line 525
     :goto_0
     return-void
 
-    .line 507
+    .line 517
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isAddVoiceScreen()Z
 
@@ -5820,25 +5864,25 @@
 
     if-eqz v0, :cond_2
 
-    .line 508
+    .line 518
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v0, :cond_1
 
-    .line 509
+    .line 519
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 511
+    .line 521
     :cond_1
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->soundAndshotAddVoiceRecordingFinished()V
 
     goto :goto_0
 
-    .line 513
+    .line 523
     :cond_2
     const/4 v0, 0x6
 
@@ -5852,7 +5896,7 @@
     .param p1, "menu"    # Lcom/sec/android/app/camera/interfaces/MenuBase;
 
     .prologue
-    .line 519
+    .line 529
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
     invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -5861,19 +5905,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 520
+    .line 530
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
     if-nez v0, :cond_0
 
-    .line 521
+    .line 531
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 524
+    .line 534
     :cond_0
     return-void
 .end method
@@ -5884,24 +5928,24 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 528
+    .line 538
     const-string v0, "SoundAndShot"
 
     const-string v1, "onImageStoringCompleted"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 530
+    .line 540
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
     if-ne v0, v4, :cond_2
 
-    .line 531
+    .line 541
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v0, :cond_0
 
-    .line 532
+    .line 542
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentData()Lcom/sec/android/app/camera/util/ContentData;
@@ -5926,21 +5970,21 @@
 
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    .line 533
+    .line 543
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
 
     move-result v2
 
-    .line 532
+    .line 542
     invoke-direct {p0, v0, v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setReviewImage(Landroid/graphics/Bitmap;IZ)V
 
-    .line 534
+    .line 544
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->showSoundAndShowAddVoice()V
 
-    .line 535
+    .line 545
     invoke-direct {p0, v4}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->switchScreen(I)V
 
-    .line 541
+    .line 551
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -5951,7 +5995,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 542
+    .line 552
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -5978,17 +6022,17 @@
 
     invoke-interface {v0, v1, v2, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->updateThumbnailButton(Landroid/graphics/Bitmap;IZ)V
 
-    .line 544
+    .line 554
     :cond_1
     return v4
 
-    .line 537
+    .line 547
     :cond_2
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
     if-nez v0, :cond_0
 
-    .line 538
+    .line 548
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->getLastContentFilePath()Ljava/lang/String;
@@ -6008,17 +6052,17 @@
 
     const/4 v2, 0x1
 
-    .line 549
+    .line 559
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->removeSideQuickSettingItems()V
 
-    .line 551
+    .line 561
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 552
+    .line 562
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getHRMShutter()I
@@ -6027,12 +6071,12 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 553
+    .line 563
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->unregisterHRMShutterListener()V
 
-    .line 556
+    .line 566
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -6040,25 +6084,25 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/Engine;->setPrepareDBUpdateListener(Lcom/sec/android/app/camera/interfaces/Engine$DBUpdateListener;)V
 
-    .line 557
+    .line 567
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0, v3, p0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->unregisterCameraSettingChangedListener(ILcom/sec/android/app/camera/interfaces/CameraSettings$CameraSettingChangedListener;)V
 
-    .line 559
+    .line 569
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->stopSoundRecording()V
 
-    .line 561
+    .line 571
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
-    .line 563
+    .line 573
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mLocalBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_1
 
-    .line 564
+    .line 574
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -6069,29 +6113,29 @@
 
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/util/CameraLocalBroadcastManager;->unregister(Landroid/content/Context;Landroid/content/BroadcastReceiver;)V
 
-    .line 567
+    .line 577
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v0, :cond_2
 
-    .line 568
+    .line 578
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 569
+    .line 579
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v1, 0x3
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 571
+    .line 581
     :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->soundAndshotAddVoiceRecordingPaused()V
 
-    .line 572
+    .line 582
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isPausing()Z
@@ -6104,12 +6148,12 @@
 
     if-nez v0, :cond_3
 
-    .line 573
+    .line 583
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, v3, v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setButtonDim(II)V
 
-    .line 576
+    .line 586
     :cond_3
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
@@ -6119,14 +6163,14 @@
 
     if-eqz v0, :cond_4
 
-    .line 577
+    .line 587
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->waitForAudioThread()V
 
-    .line 579
+    .line 589
     :cond_4
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->clear()V
 
-    .line 580
+    .line 590
     return-void
 .end method
 
@@ -6136,7 +6180,7 @@
     .param p2, "event"    # Landroid/view/KeyEvent;
 
     .prologue
-    .line 584
+    .line 594
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLButton;->getVisibility()I
@@ -6145,7 +6189,7 @@
 
     if-nez v0, :cond_1
 
-    .line 585
+    .line 595
     const/4 v0, 0x4
 
     if-eq p1, v0, :cond_0
@@ -6154,11 +6198,11 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 586
+    .line 596
     :cond_0
     const/4 v0, 0x1
 
-    .line 588
+    .line 598
     :goto_0
     return v0
 
@@ -6176,10 +6220,10 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 593
+    .line 603
     sparse-switch p1, :sswitch_data_0
 
-    .line 617
+    .line 627
     :goto_0
     :sswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
@@ -6194,47 +6238,47 @@
 
     if-nez v1, :cond_4
 
-    .line 618
+    .line 628
     const/16 v1, 0x52
 
     if-ne p1, v1, :cond_4
 
-    .line 623
+    .line 633
     :cond_0
     :goto_1
     return v0
 
-    .line 595
+    .line 605
     :sswitch_1
     iget v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v1, :cond_1
 
-    .line 596
+    .line 606
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->stopSoundRecording()V
 
     goto :goto_0
 
-    .line 598
+    .line 608
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     if-eqz v1, :cond_2
 
-    .line 599
+    .line 609
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotHandler:Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;
 
     const/4 v2, 0x3
 
     invoke-virtual {v1, v2}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot$SoundAndShotHandler;->removeMessages(I)V
 
-    .line 602
+    .line 612
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v1, :cond_0
 
-    .line 603
+    .line 613
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getGLContext()Lcom/samsung/android/glview/GLContext;
@@ -6255,24 +6299,24 @@
 
     if-eqz v1, :cond_3
 
-    .line 604
+    .line 614
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
-    .line 606
+    .line 616
     :cond_3
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->soundAndshotAddVoiceRecordingFinished()V
 
     goto :goto_1
 
-    .line 623
+    .line 633
     :cond_4
     const/4 v0, 0x0
 
     goto :goto_1
 
-    .line 593
+    .line 603
     :sswitch_data_0
     .sparse-switch
         0x4 -> :sswitch_1
@@ -6286,7 +6330,7 @@
     .param p2, "modeId"    # I
 
     .prologue
-    .line 628
+    .line 638
     const/4 v0, 0x0
 
     return v0
@@ -6296,17 +6340,17 @@
     .locals 1
 
     .prologue
-    .line 633
+    .line 643
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isRecordKeyReleased:Z
 
-    .line 635
+    .line 645
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->switchToRecordingMode()V
 
-    .line 636
+    .line 646
     const/4 v0, 0x0
 
     return v0
@@ -6317,7 +6361,7 @@
     .param p1, "menu"    # Lcom/sec/android/app/camera/interfaces/MenuBase;
 
     .prologue
-    .line 641
+    .line 651
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mZoomSliderMenu:Lcom/sec/android/app/camera/menu/ZoomSliderMenu;
 
     invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -6326,19 +6370,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 642
+    .line 652
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotMode:I
 
     if-nez v0, :cond_0
 
-    .line 643
+    .line 653
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 646
+    .line 656
     :cond_0
     return-void
 .end method
@@ -6347,7 +6391,7 @@
     .locals 1
 
     .prologue
-    .line 650
+    .line 660
     const/4 v0, 0x0
 
     return v0
@@ -6357,7 +6401,7 @@
     .locals 1
 
     .prologue
-    .line 655
+    .line 665
     const/4 v0, 0x0
 
     return v0
@@ -6370,25 +6414,25 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 660
+    .line 670
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->isCapturing()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 661
+    .line 671
     const-string v1, "SoundAndShot"
 
     const-string v2, "return sound and shot recording"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 677
+    .line 687
     :goto_0
     return v0
 
-    .line 664
+    .line 674
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -6410,7 +6454,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 665
+    .line 675
     :cond_1
     const-string v1, "SoundAndShot"
 
@@ -6420,7 +6464,7 @@
 
     goto :goto_0
 
-    .line 668
+    .line 678
     :cond_2
     iget-boolean v1, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
@@ -6430,21 +6474,21 @@
 
     if-ne v1, v0, :cond_3
 
-    .line 669
+    .line 679
     iput-boolean v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecording:Z
 
-    .line 672
+    .line 682
     :cond_3
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mSoundAndShotScreen:I
 
     if-nez v0, :cond_4
 
-    .line 673
+    .line 683
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0, p1}, Lcom/sec/android/app/camera/interfaces/Engine;->handleSingleShutterReleased(I)V
 
-    .line 676
+    .line 686
     :cond_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -6454,7 +6498,7 @@
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideShootingModeText()V
 
-    .line 677
+    .line 687
     const/4 v0, 0x0
 
     goto :goto_0
@@ -6465,7 +6509,7 @@
     .param p1, "event"    # I
 
     .prologue
-    .line 682
+    .line 692
     return-void
 .end method
 
@@ -6474,7 +6518,7 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 686
+    .line 696
     return-void
 .end method
 
@@ -6482,7 +6526,7 @@
     .locals 1
 
     .prologue
-    .line 690
+    .line 700
     const/4 v0, 0x0
 
     return v0
@@ -6496,40 +6540,40 @@
 
     const/4 v4, 0x0
 
-    .line 694
+    .line 704
     const-string v2, "SoundAndShot"
 
     const-string v3, "showSoundAndShowAddVoice()"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 696
+    .line 706
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v3, 0x280
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 697
+    .line 707
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v3, -0x101
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 698
+    .line 708
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v2, :cond_0
 
-    .line 699
+    .line 709
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v3, 0x1
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->disableFaceRect(Z)V
 
-    .line 700
+    .line 710
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isPausing()Z
@@ -6538,29 +6582,29 @@
 
     if-eqz v2, :cond_0
 
-    .line 701
+    .line 711
     const-string v2, "SoundAndShot"
 
     const-string v3, "stop onShow by pausing main activity"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 731
+    .line 741
     :goto_0
     return-void
 
-    .line 705
+    .line 715
     :cond_0
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImageGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v2, :cond_1
 
-    .line 706
+    .line 716
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mReviewImageGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v2, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 707
+    .line 717
     :cond_1
     const/16 v2, 0xb
 
@@ -6568,33 +6612,33 @@
 
     fill-array-data v0, :array_0
 
-    .line 708
+    .line 718
     .local v0, "MicAmplitude":[I
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->setRecordingAmplitude([I)V
 
-    .line 710
+    .line 720
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2, v4}, Lcom/samsung/android/glview/GLButton;->setVisibility(I)V
 
-    .line 712
+    .line 722
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mMicImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v2, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 714
+    .line 724
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressText:Lcom/samsung/android/glview/GLText;
 
     invoke-virtual {v2, v4}, Lcom/samsung/android/glview/GLText;->setVisibility(I)V
 
-    .line 715
+    .line 725
     const/4 v1, 0x0
 
     .local v1, "i":I
     :goto_1
     if-ge v1, v5, :cond_2
 
-    .line 716
+    .line 726
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarBG:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -6605,24 +6649,24 @@
 
     invoke-virtual {v2, v4}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 715
+    .line 725
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 719
+    .line 729
     :cond_2
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBar:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v2, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 721
+    .line 731
     const/4 v1, 0x0
 
     :goto_2
     if-ge v1, v5, :cond_3
 
-    .line 722
+    .line 732
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mRecAddVoiceProgressBarSeq:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -6635,21 +6679,21 @@
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLImage;->setVisibility(I)V
 
-    .line 721
+    .line 731
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_2
 
-    .line 725
+    .line 735
     :cond_3
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v2, v4}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 726
+    .line 736
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->startRecordingByCreateButton()V
 
-    .line 727
+    .line 737
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v2, :cond_4
@@ -6674,18 +6718,18 @@
 
     if-nez v2, :cond_4
 
-    .line 728
+    .line 738
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->mCaptureStopButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLButton;->requestFocus()Z
 
-    .line 730
+    .line 740
     :cond_4
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/SoundAndShot;->updateLayoutForRatio()V
 
     goto :goto_0
 
-    .line 707
+    .line 717
     nop
 
     :array_0

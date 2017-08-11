@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">ଧୀର ମୋସନରେ ଦେଖିବାକୁ ଭିଡିଓ‌ଗୁଡିକ ଏକ ଅଧିକ ଫ୍ରେମ୍ ଦରରେ ରେକର୍ଡ କରନ୍ତୁ। ରେକର୍ଡିଂ କରିବା ପରେ ଆପଣ ପ୍ରତ୍ୟେକ ଭିଡିଓର ଏକ ନିର୍ଦ୍ଧିଷ୍ଟ ବିଭାଗକୁ ଧୀର ମୋସନରେ ଚାଳନ କରିପାରନ୍ତି।</string>
     <string name="SM_SMART_SELFSHOT">ପଛ-କ୍ୟାମ୍‌ ସେଲଫି</string>
     <string name="SM_SMART_SELFSHOT_description">ପଛ କ୍ୟାମେରା ସ୍ଵତଃସ୍ପୃତ ଭାବେ ଚିହ୍ନଟ କରିବ ଏବଂ ନିଜସ୍ଵ-ପୋର୍ଟ୍ରେଟ୍ ଫଟୋ ଉଠାଇବା ବେଳେ ଆପଣଙ୍କ ମୁଖରେ ଫୋକସ୍ କରିବ।</string>
+    <string name="SM_SOCIAL">ସାମାଜିକ</string>
+    <string name="SM_SOCIAL_description">ଫଟୋ ନେଇ ସେଗୁଡିକୁ ସାମାଜିକ ନେଟୱାର୍କଗୁଡିକରେ ସହଜରେ ଅଂଶୀଦାର କରନ୍ତୁ।</string>
     <string name="SM_SPORTS">କ୍ରୀଡା</string>
     <string name="SM_SPORTS_SCENE_description">ଦ୍ରୁତ ଗତିରେ ଗତି କରୁଥିବା ବସ୍ତୁର ସ୍ପଷ୍ଟ ଫଟୋ ନିଅନ୍ତୁ।</string>
     <string name="SM_STORY">ଧ୍ଵନି ଓ ସଟ୍</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">ପୂର୍ଣ୍ଣ ସ୍କ୍ରିନ୍ ଦର୍ଶନ (16:9)</string>
     <string name="Title_Voice_Capture">ଭଏସ୍ ନିୟନ୍ତ୍ରଣ</string>
     <string name="Title_Voice_guide">ଭଏସ୍ ଗାଇଡ୍</string>
-    <string name="Title_Volume_Key_As">ଭଲ୍ୟୁମ୍ କୀ କାର୍ଯ୍ଯକଳାପ</string>
+    <string name="Title_Volume_Key_As">ଭଲ୍ୟୁମ୍ କୀ ପ୍ରକାର୍ଯ୍ୟ</string>
     <string name="Title_WhiteBalance">ହ୍ଵାଇଟ୍ ବାଲାନ୍ସ</string>
     <string name="Title_common">ସାଧାରଣ</string>
     <string name="Title_front">ସମ୍ମୁଖ କ୍ୟାମେରା</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">ଚତୁର୍ଭୁଜ</string>
     <string name="help_change_mode_tip_1">ଉପଲବ୍ଧ କ୍ୟାମେରା ମୋଡଗୁଡିକ ଦର୍ଶନ କରିବାକୁ ଡାହାଣକୁ ସ୍ଵାଇପ୍ କରନ୍ତୁ।</string>
     <string name="help_change_mode_tip_2">ଆପଣ ବ୍ୟବହାର କରିବାକୁ ଚାହୁଁଥିବା ମୋଡ୍ ଚୟନ କରନ୍ତୁ।</string>
+    <string name="help_change_mode_tip_3">ସହଜ ମୋଡ୍ ସକ୍ଷମ ହୋଇଥିବା ସମୟରେ କେବଳ ସ୍ଵତଃ ଏବଂ ସେଲଫି କ୍ୟାମେରା ମୋଡ୍ ଉପଲବ୍ଧ।</string>
     <string name="help_changing_the_camera_mode">ଚୟନିତ କ୍ୟାମେରା ମୋଡଗୁଡିକ</string>
+    <string name="help_changing_the_camera_mode_header">ଏକ କ୍ୟାମେରା ମୋଡ୍ ଚୟନ କରିବା</string>
+    <string name="help_changing_the_camera_mode_title">କ୍ୟାମେରା ମୋଡ୍ ପରିବର୍ତ୍ତନ କରିବା</string>
     <string name="help_recording_videos">ଭିଡିଓଗୁଡିକ ରେକର୍ଡ କରିବା</string>
     <string name="help_recording_videos_tip_1">%s ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
     <string name="help_recording_videos_tip_1_tts">କ୍ୟାମ୍‌କର୍ଡର୍ ବଟନ୍ ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">ରେକର୍ଡ କରିବା ବନ୍ଦ କରିବାକୁ ବନ୍ଦ ବଟନ୍ ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
     <string name="help_recording_videos_tip_snapshot">ଭିଡିଓ ରେକର୍ଡିଂ କରିବା ବେଳେ ଛବି ନେବାକୁ %s ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
     <string name="help_recording_videos_tip_snapshot_tts">ଭିଡିଓ ରେକର୍ଡିଂ ବେଳେ ଛବି ନେବାକୁ କ୍ୟାମେରା ବଟନ୍ ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
-    <string name="help_section_summary">ସମସ୍ତ ଘଟଣାକୁ ସୁହାଇବା ପରି ବିଭିନ୍ନ ପ୍ରକାରର ପ୍ରଭାବ ବ୍ୟବହାର କରି ଫଟୋ ନିଅନ୍ତୁ କିମ୍ବା ଭିଡିଓ ରେକର୍ଡ କରନ୍ତୁ। ସହଜ ମୋଡ୍ ସକ୍ଷମ ହୋଇଥିବା ସମୟରେ, କେବଳ ସ୍ଵତଃ ଏବଂ ସେଲଫି କ୍ୟାମେରା ମୋଡ୍ ଉପଲବ୍ଧ, ଏବଂ କୌଣସି ପ୍ରଭାବ ପ୍ରୟୋଗ ହୋଇପାରିବ ନାହିଁ।</string>
+    <string name="help_section_summary">ସମସ୍ତ ମୁହୁର୍ତ୍ତକୁ ସୁଟ୍ କରୁଥିବା ପରି ଭିନ୍ନ ଭିନ୍ନ ପ୍ରକାରର ପ୍ରଭାବ ବ୍ୟବହାର କରି ଛବି ନିଅନ୍ତୁ କିମ୍ବା ଭିଡିଓ ରେକର୍ଡ କରନ୍ତୁ।</string>
     <string name="help_selecting_camera_mode">ଚୟନିତ କ୍ୟାମେରା ମୋଡଗୁଡିକ</string>
     <string name="help_taking_pictures">ଛବି ନେବା</string>
     <string name="help_taking_pictures_tip_1">ଆପଣ ଫୋକସ୍‌କୁ ଆଣିବାକୁ ଚାହୁଁଥିବା ଦ୍ରବ୍ୟ ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">କ୍ୟାପଚର୍ ବଟନ୍ ଟ୍ୟାପ୍ କରନ୍ତୁ ଏବଂ ଆପଣଙ୍କ ଡିଭାଇସ୍ ଗୋଟିଏ ଦିଗରେ ଧିରେ ଧିରେ ଘୁରାନ୍ତୁ।</string>
     <string name="help_viewing_pics_and_videos_tip_1">ଆପଣ ଫଟୋ କିମ୍ବା ଭିଡିଓ ଉଠାଇବା ପରେ କିମ୍ବା ରେକର୍ଡ କରିବା ପରେ ସେଗୁଡିକ ତୁରନ୍ତ ଦେଖିବାକୁ %s ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">ଆପଣଙ୍କର ଫଟୋଗୁଡିକ ଉଠେଇବା କିମ୍ୱା ଭିଡିଓଗୁଡିକ ରେକର୍ଡ କରିବା ଠିକ୍‌ ପରେ ସେଗୁଡିକ ଦେଖିବାକୁ ଦ୍ରୁତ ଦୃଶ୍ୟ ବଟନ୍ ଟ୍ୟାପ୍‌ କରନ୍ତୁ।</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ଫଟୋ ଏବଂ ଭିଡିଓ‌ଗୁଡିକ ଦର୍ଶନ କରିବା</string>
     <string name="high_resolution_video_description">%s ରିଜୋଲ୍ୟୁସନ୍ ରେକର୍ଡିଂ କରିବା ସମୟରେ ନିମ୍ନଲିଖିତ ଅନୁପଲବ୍ଧ ହେବ:</string>
     <string name="highlight">ହାଇଲାଇଟ୍</string>

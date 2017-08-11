@@ -58,7 +58,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/widget/gl/WatermarkItem;->THUMBNAIL_TEXT_COLOR:I
 
     .line 35
-    const v0, 0x7f0b00f8
+    const v0, 0x7f0b00f9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -447,7 +447,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0120
+    const v3, 0x7f0a0122
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -465,7 +465,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a025c
+    const v4, 0x7f0a0262
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

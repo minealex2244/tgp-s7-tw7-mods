@@ -108,7 +108,7 @@
     <string name="R_1936x1936">1:1 (3,7 М)</string>
     <string name="R_2048x1152">16:9 (2,4 М)</string>
     <string name="R_2048x1536">4:3 (3,1 М)</string>
-    <string name="R_2160x2160">1:1 (4,7 М)</string>
+    <string name="R_2160x2160">1:1 (4,7 Мп)</string>
     <string name="R_2448x2448">1:1 (6,0 М)</string>
     <string name="R_2560x1440">16:9 (3,7 М)</string>
     <string name="R_2560x1920">4:3 (5,0 М)</string>
@@ -119,8 +119,8 @@
     <string name="R_2976x2976">1:1 (8,9 М)</string>
     <string name="R_3024x3024">1:1 (9,1 М)</string>
     <string name="R_3088x3088">1:1 (9,5 Мп)</string>
-    <string name="R_3264x1836">16:9 (6,0 М)</string>
-    <string name="R_3264x2448">4:3 (8,0 М)</string>
+    <string name="R_3264x1836">16:9 (6,0 Мп)</string>
+    <string name="R_3264x2448">4:3 (8,0 Мп)</string>
     <string name="R_3344x3344">1:1 (11 М)</string>
     <string name="R_3456x3456">1:1 (12 Мп)</string>
     <string name="R_3984x2988">4:3 (12 М)</string>
@@ -197,6 +197,8 @@
     <string name="SM_SLOW_VIDEO_description">Записувати відео із використанням високої частоти кадрів для сповільненого перегляду. Після запису відео потрібний фрагмент можна переглядати у сповільненому режимі.</string>
     <string name="SM_SMART_SELFSHOT">Селфі на задню камеру</string>
     <string name="SM_SMART_SELFSHOT_description">Під час створення автопортретів задня камера автоматично розпізнає обличчя та сфокусується на ньому.</string>
+    <string name="SM_SOCIAL">Вечірка</string>
+    <string name="SM_SOCIAL_description">Робіть знімки та з легкістю обмінюйтеся ними у соціальних мережах.</string>
     <string name="SM_SPORTS">Спорт</string>
     <string name="SM_SPORTS_SCENE_description">Створення чіткіших фотографій об’єктів, що швидко рухаються.</string>
     <string name="SM_STORY">Звук і знімок</string>
@@ -268,9 +270,9 @@
     <string name="Title_Viewmode">Повноекран. режим (16:9)</string>
     <string name="Title_Voice_Capture">Голосове керування</string>
     <string name="Title_Voice_guide">Голосові підказки</string>
-    <string name="Title_Volume_Key_As">Функція кнопки гучності</string>
+    <string name="Title_Volume_Key_As">Функція клавіші гучності</string>
     <string name="Title_WhiteBalance">Баланс білого</string>
-    <string name="Title_common">Звичайні</string>
+    <string name="Title_common">Загальні</string>
     <string name="Title_front">Передня камера</string>
     <string name="Title_rear">Задня камера</string>
     <string name="Title_rear_lens_distortion_correction">Коригування форми</string>
@@ -400,7 +402,10 @@
     <string name="guideline_square">Квадрат</string>
     <string name="help_change_mode_tip_1">Проведіть вправо для показу доступних режимів камери.</string>
     <string name="help_change_mode_tip_2">Виберіть режим, яким потрібно скористатися.</string>
+    <string name="help_change_mode_tip_3">У спрощеному режимі камери доступні лише автоматична зйомка та селфі.</string>
     <string name="help_changing_the_camera_mode">Вибір режимів камери</string>
+    <string name="help_changing_the_camera_mode_header">Вибір режиму камери</string>
+    <string name="help_changing_the_camera_mode_title">Зміна режиму камери</string>
     <string name="help_recording_videos">Запис відео</string>
     <string name="help_recording_videos_tip_1">Натисніть %s.</string>
     <string name="help_recording_videos_tip_1_tts">Натисніть кнопку відеокамери.</string>
@@ -408,7 +413,7 @@
     <string name="help_recording_videos_tip_2_tts">Натисніть кнопку «Зупинити», щоб зупинити запис.</string>
     <string name="help_recording_videos_tip_snapshot">Натисніть %s, щоб зробити фотографії під час запису відео.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Натисніть кнопку камери, щоб зробити фотографії під час запису відео.</string>
-    <string name="help_section_summary">Зйомка відео та фотографій з різноманітними ефектами для будь-яких ситуацій. У простому режимі доступні лише автоматична зйомка та селфі, а використання ефектів неможливе.</string>
+    <string name="help_section_summary">Фото- або відеозйомка з використанням різноманітних ефектів за будь-яких умов.</string>
     <string name="help_selecting_camera_mode">Вибір режимів камери</string>
     <string name="help_taking_pictures">Фотографування</string>
     <string name="help_taking_pictures_tip_1">Натисніть об’єкт, на якому потрібно сфокусуватися.</string>
@@ -423,6 +428,7 @@
     <string name="help_text_wideselfie">Натисніть кнопку камери та повільно повертайте пристрій в одному напрямку.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Торкніться «%s», щоб переглянути фотографії або відео відразу після створення.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Торкніться кнопки швидкого перегляду, щоб переглянути фотографії або відео відразу після створення.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Перегляд фотографій і відео</string>
     <string name="high_resolution_video_description">У разі запису з роздільністю %s будуть недоступними такі функції:</string>
     <string name="highlight">Підсвічування</string>

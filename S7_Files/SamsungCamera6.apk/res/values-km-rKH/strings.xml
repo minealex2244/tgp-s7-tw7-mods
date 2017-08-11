@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">ថត​វីដេអូ​ក្នុង​អត្រា​ហ្វ្រេម​ខ្ពស់ សម្រាប់​ការបង្ហាញ​ក្នុង​ចលនា​យឺត។ អ្នក​អាច​ចាក់​ផ្នែក​ជាក់លាក់​នៃ​វីដេអូ​នីមួយៗ​ក្នុង​ចលនា​យឺត បន្ទាប់​ពី​ថត​ពួកវា។</string>
     <string name="SM_SMART_SELFSHOT">ថតរូប​ខ្លួនឯង​ដោយ​ប្រើ​កាមេរ៉ា​ក្រោយ</string>
     <string name="SM_SMART_SELFSHOT_description">កាមេរ៉ា​ក្រោយ​នឹង​ចាប់ ហើយ​ផ្ដោត​លើ​ផ្ទៃមុខ​របស់​អ្នក​ដោយ​ស្វ័យប្រវត្តិ នៅពេល​អ្នក​ថត​រូបភាព​ខ្លួន​ឯង​មួយ​កំណាត់ខ្លួន។</string>
+    <string name="SM_SOCIAL">សង្គម</string>
+    <string name="SM_SOCIAL_description">ថត​រូបភាព និង ចែករំលែក​ពួកវា​យ៉ាង​ងាយស្រួល​លើ​បណ្ដាញ​សង្គម។</string>
     <string name="SM_SPORTS">កីឡា</string>
     <string name="SM_SPORTS_SCENE_description">ថត​រូបភាព​កាន់តែ​ច្បាស់​នៃ​វត្ថុ​ដែល​ផ្លាស់ទី​លឿន។</string>
     <string name="SM_STORY">សំឡេង &amp; រូបថត</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">ការ៉េ</string>
     <string name="help_change_mode_tip_1">អូស​ទៅ​ស្ដាំ​ដើម្បី​បង្ហាញ​ទម្រង់​កាមេរ៉ា​ដែល​មាន។</string>
     <string name="help_change_mode_tip_2">ជ្រើស​ទម្រង់​ដែល​អ្នក​ចង់​ប្រើ។</string>
+    <string name="help_change_mode_tip_3">អាច​ប្រើ​បាន​តែ​ទម្រង់​កាមេរ៉ា​ស្វ័យប្រវត្តិ​និង​ថតរូបខ្លួនឯង​ប៉ុណ្ណោះ ខណៈពេល​បាន​បើកប្រើ​ទម្រង់​ងាយស្រួល។</string>
     <string name="help_changing_the_camera_mode">ការជ្រើស​ទម្រង់​កាមេរ៉ា</string>
+    <string name="help_changing_the_camera_mode_header">ការជ្រើស​ទម្រង់​កាមេរ៉ា</string>
+    <string name="help_changing_the_camera_mode_title">ការប្ដូរ​ទម្រង់​កាមេរ៉ា</string>
     <string name="help_recording_videos">ការថត​វីដេអូ</string>
     <string name="help_recording_videos_tip_1">ប៉ះ %s។</string>
     <string name="help_recording_videos_tip_1_tts">ប៉ះ​ប៊ូតុង​កាមេរ៉ា​វីដេអូ។</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">ប៉ះ​ប៊ូតុង​បញ្ឈប់ ដើម្បី​បញ្ឈប់​ការថត។</string>
     <string name="help_recording_videos_tip_snapshot">ប៉ះ %s ដើម្បី​ថត​រូបភាព ខណៈពេល​កំពុង​ថត​វីដេអូ។</string>
     <string name="help_recording_videos_tip_snapshot_tts">ប៉ះ​ប៊ូតុង​កាមេរ៉ា​ដើម្បី​ថត​រូបភាព ខណៈពេល​កំពុង​ថត​វីដេអូ។</string>
-    <string name="help_section_summary">ថត​រូបភាព ឬ ថត​វីដេអូ ដោយ​ប្រើ​បែបផែន​ផ្សេងៗ​ជាច្រើន ដើម្បី​តម្រូវ​តាម​ឱកាស​ទាំងអស់។ ខណៈពេល​បាន​បើកប្រើ​ទម្រង់​ងាយស្រួល អ្នក​អាច​ប្រើ​បាន​តែ​ទម្រង់​កាមេរ៉ា​ស្វ័យប្រវត្តិ​និង​ថតរូបខ្លួនឯង​ប៉ុណ្ណោះ ហើយ​មិន​អាច​ប្រើ​បែបផែន​ណា​មួយ​ឡើយ។</string>
+    <string name="help_section_summary">ថត​រូបភាព ឬ ថត​វីដេអូ ដោយ​ប្រើ​បែបផែន​ផ្សេងៗ​ជាច្រើន ដើម្បី​តម្រូវ​តាម​ឱកាស​ទាំងអស់។</string>
     <string name="help_selecting_camera_mode">ការជ្រើស​ទម្រង់​កាមេរ៉ា</string>
     <string name="help_taking_pictures">ការថត​រូបភាព</string>
     <string name="help_taking_pictures_tip_1">ប៉ះ​វត្ថុ​ដែល​អ្នក​ចង់​ឲ្យ​ផ្ដោត។</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">ប៉ះ​ប៊ូតុង​កាមេរ៉ា ហើយ​បង្វិល​ឧបករណ៍​របស់​អ្នក​យឺតៗ​ក្នុង​ទិសដៅ​មួយ។</string>
     <string name="help_viewing_pics_and_videos_tip_1">ប៉ះ %s ដើម្បី​បង្ហាញ​រូបភាព ឬ វីដេអូ​របស់​អ្នក​ភ្លាមៗ​បន្ទាប់​ពី​អ្នក​ថត​ពួកវា។</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">ប៉ះ​ប៊ូតុង​បង្ហាញ​រហ័ស ដើម្បី​បង្ហាញ​រូបភាព ឬ វីដេអូ​របស់​អ្នក​ភ្លាមៗ បន្ទាប់​ពី​អ្នក​ថត​ពួកវា។</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ការបង្ហាញ​រូបភាព និង វីដេអូ</string>
     <string name="high_resolution_video_description">មុខងារ​ខាងក្រោម​នឹង​មិន​អាច​ប្រើ​បាន​ឡើយ ខណៈពេល​ថត​ក្នុង​រីសូលូសិន %s៖</string>
     <string name="highlight">រំលេច</string>

@@ -38,11 +38,13 @@
 
 # virtual methods
 .method public onAnimationEnd(Lcom/samsung/android/glview/GLView;Landroid/view/animation/Animation;)V
-    .locals 2
+    .locals 3
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
     .param p2, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
+    const/4 v2, 0x0
+
     .line 716
     const-string v0, "SimpleBaseMenu"
 
@@ -75,11 +77,19 @@
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu;->mBottomVIButton:Lcom/samsung/android/glview/GLButton;
 
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
+    invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLButton;->setAnimationEventListener(Lcom/samsung/android/glview/GLView$AnimationEventListener;)V
 
     .line 720
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu$2;->this$0:Lcom/sec/android/app/camera/menu/SimpleBaseMenu;
+
+    iput-object v2, v0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu;->mBottomParentView:Lcom/samsung/android/glview/GLView;
+
+    .line 721
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu$2;->this$0:Lcom/sec/android/app/camera/menu/SimpleBaseMenu;
+
+    iput-object v2, v0, Lcom/sec/android/app/camera/menu/SimpleBaseMenu;->mBottomVIButton:Lcom/samsung/android/glview/GLButton;
+
+    .line 722
     return-void
 .end method
 
@@ -89,13 +99,13 @@
     .param p2, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 724
+    .line 726
     const-string v0, "SimpleBaseMenu"
 
     const-string v1, "onAnimationStart - mBottomVIButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 725
+    .line 727
     return-void
 .end method

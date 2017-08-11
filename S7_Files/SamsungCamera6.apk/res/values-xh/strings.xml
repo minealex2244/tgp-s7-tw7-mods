@@ -188,6 +188,8 @@ Panning shot: Capture a sense of motion when taking pictures of moving objects."
     <string name="SM_SLOW_VIDEO_description">Record videos at a high frame rate for viewing in slow motion. You can play a specific section of each video in slow motion after recording them.</string>
     <string name="SM_SMART_SELFSHOT">Rear-cam selfie</string>
     <string name="SM_SMART_SELFSHOT_description">Ikhamera engasemva ngokuzenzekelayo iza kubona ize ijolise kubuso bakho xa uthatha imifanekiso yakho.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Take pictures and share them easily on social networks.</string>
     <string name="SM_SPORTS">Sports</string>
     <string name="SM_SPORTS_SCENE_description">Take clearer pictures of fast moving subjects.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -220,7 +222,7 @@ Panning shot: Capture a sense of motion when taking pictures of moving objects."
     <string name="Title_Front_CameraResolution">Ubungakanani bomfanekiso (ngaphambili)</string>
     <string name="Title_Front_CameraResolution_TTS">Front camera picture size</string>
     <string name="Title_GPS">Location tags</string>
-    <string name="Title_GestureControl">Gesture control</string>
+    <string name="Title_GestureControl">Ulauwlo lwezimbo zomzimba</string>
     <string name="Title_Guideline">Imigca yegridi</string>
     <string name="Title_HDR">HDR (rich tone)</string>
     <string name="Title_HRM_shutter">Use heart rate sensor</string>
@@ -259,7 +261,7 @@ Panning shot: Capture a sense of motion when taking pictures of moving objects."
     <string name="Title_Viewmode">Full screen view (16:9)</string>
     <string name="Title_Voice_Capture">Ulawulo lwelizwi</string>
     <string name="Title_Voice_guide">Isikhokelo selizwi</string>
-    <string name="Title_Volume_Key_As">Ukusebenza kweqhosha lobungakanani besandi</string>
+    <string name="Title_Volume_Key_As">Umsebenzi weqhosha levolyum</string>
     <string name="Title_WhiteBalance">White balance</string>
     <string name="Title_common">Common</string>
     <string name="Title_front">Ikhamera engaphambili</string>
@@ -383,7 +385,7 @@ correction"</string>
     <string name="food">Food</string>
     <string name="gallery">Igalari</string>
     <string name="gallery_app_name_in_upsm">Gallery</string>
-    <string name="gesture_control_summary">Hold your hand out with your palm facing the camera to have your picture taken after a few seconds.</string>
+    <string name="gesture_control_summary">Bamba isandla sakho uze ujongise ikhamera kuwe ifowuni iza kukufota kwimizuzwana engephi.</string>
     <string name="gps_more_message">Learn more</string>
     <string name="gps_wifi_and_mobile_networks">High accuracy</string>
     <string name="gps_wifi_or_wifi_only">GPS and Wi-Fi</string>
@@ -391,7 +393,10 @@ correction"</string>
     <string name="guideline_square">Square</string>
     <string name="help_change_mode_tip_1">Swipe right to view available camera modes.</string>
     <string name="help_change_mode_tip_2">Select the mode that you want to use.</string>
+    <string name="help_change_mode_tip_3">Only the Auto and Selfie camera modes are available while Easy mode is enabled.</string>
     <string name="help_changing_the_camera_mode">Selecting camera modes</string>
+    <string name="help_changing_the_camera_mode_header">Selecting a camera mode</string>
+    <string name="help_changing_the_camera_mode_title">Changing the camera mode</string>
     <string name="help_recording_videos">Recording videos</string>
     <string name="help_recording_videos_tip_1">Tepa %s.</string>
     <string name="help_recording_videos_tip_1_tts">Tap the camcorder button.</string>
@@ -399,7 +404,7 @@ correction"</string>
     <string name="help_recording_videos_tip_2_tts">Tap the stop button to stop recording.</string>
     <string name="help_recording_videos_tip_snapshot">Tap %s to take pictures while recording video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Tap the camera button to take pictures while recording video.</string>
-    <string name="help_section_summary">Take pictures or record videos using a variety of different effects, to suit all occasions. Only the Auto and Selfie camera modes are available, and no effects can be applied, while Easy mode is enabled.</string>
+    <string name="help_section_summary">Take pictures or record videos using a variety of different effects, to suit all occasions.</string>
     <string name="help_selecting_camera_mode">Selecting camera modes</string>
     <string name="help_taking_pictures">Taking pictures</string>
     <string name="help_taking_pictures_tip_1">Tap the object you want to bring into focus.</string>
@@ -414,6 +419,7 @@ correction"</string>
     <string name="help_text_wideselfie">Betha iqhosha leKhamera uze ujikajike isixhobo sakho ngokucothayo kwicala elinye.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Tap %s to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Tap the quick view button to view your pictures or videos right after you take or record them.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Viewing pictures and videos</string>
     <string name="high_resolution_video_description">The following will be unavailable while recording in %s resolutions:</string>
     <string name="highlight">Highlights</string>

@@ -190,6 +190,8 @@ Tangkapan sorotan: Tangkap deria gerakan semasa mengambil gambar objek yang berg
     <string name="SM_SLOW_VIDEO_description">Rakam video pada kadar bingkai tinggi untuk melihat dalam gerak perlahan. Anda boleh memainkan bahagian khusus setiap video dalam gerak perlahan selepas merakamnya.</string>
     <string name="SM_SMART_SELFSHOT">Selfie kamera belakang</string>
     <string name="SM_SMART_SELFSHOT_description">Kamera belakang akan mengesan dan memfokus wajah anda secara automatik apabila anda mengambil gambar potret diri.</string>
+    <string name="SM_SOCIAL">Sosial</string>
+    <string name="SM_SOCIAL_description">Ambil gambar dan kongsinya secara mudah pada rangkaian sosial.</string>
     <string name="SM_SPORTS">Sukan</string>
     <string name="SM_SPORTS_SCENE_description">Mengambil gambar subjek bergerak pantas dengan lebih jelas.</string>
     <string name="SM_STORY">Bunyi &amp; tangkapan</string>
@@ -261,9 +263,9 @@ Tangkapan sorotan: Tangkap deria gerakan semasa mengambil gambar objek yang berg
     <string name="Title_Viewmode">Paparn skrin penuh (16:9)</string>
     <string name="Title_Voice_Capture">Kawalan suara</string>
     <string name="Title_Voice_guide">Panduan suara</string>
-    <string name="Title_Volume_Key_As">Fungsi kekunci bahana</string>
+    <string name="Title_Volume_Key_As">Fungsi kekunci kelantangan</string>
     <string name="Title_WhiteBalance">Imbangan putih</string>
-    <string name="Title_common">Biasa</string>
+    <string name="Title_common">Umum</string>
     <string name="Title_front">Kamera depan</string>
     <string name="Title_rear">Kamera belakang</string>
     <string name="Title_rear_lens_distortion_correction">Pembetulan bentuk</string>
@@ -393,7 +395,10 @@ bentuk"</string>
     <string name="guideline_square">Empat segi</string>
     <string name="help_change_mode_tip_1">Leret ke kanan untuk melihat mod kamera yang tersedia.</string>
     <string name="help_change_mode_tip_2">Pilih mod yang anda ingin gunakan.</string>
+    <string name="help_change_mode_tip_3">Hanya mod kamera Auto dan Selfie tersedia apabila mod Mudah diaktifkan.</string>
     <string name="help_changing_the_camera_mode">Memilih mod kamera</string>
+    <string name="help_changing_the_camera_mode_header">Memilih mod kamera</string>
+    <string name="help_changing_the_camera_mode_title">Menukar mod kamera</string>
     <string name="help_recording_videos">Merakam video</string>
     <string name="help_recording_videos_tip_1">Ketik %s.</string>
     <string name="help_recording_videos_tip_1_tts">Ketik butang kamkorder.</string>
@@ -401,7 +406,7 @@ bentuk"</string>
     <string name="help_recording_videos_tip_2_tts">Ketik butang henti untuk berhenti merakam.</string>
     <string name="help_recording_videos_tip_snapshot">Ketik %s untuk mengambil gambar semasa merakam video.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Ketik butang kamera untuk mengambil gambar semasa merakam video.</string>
-    <string name="help_section_summary">Mengambil gambar atau merakam video menggunakan pelbagai kesan yang berbeza, untuk disesuaikan dengan semua keadaan. Hanya mod kamera Auto dan Selfie tersedia dan tiada kesan boleh digunakan semasa mod Mudah diaktifkan.</string>
+    <string name="help_section_summary">Ambil gambar atau rakam video menggunakan pelbagai kesan yang berbeza, sesuai dengan semua keadaan.</string>
     <string name="help_selecting_camera_mode">Memilih mod kamera</string>
     <string name="help_taking_pictures">Mengambil gambar</string>
     <string name="help_taking_pictures_tip_1">Ketik objek yang anda ingin fokus.</string>
@@ -416,6 +421,7 @@ bentuk"</string>
     <string name="help_text_wideselfie">Ketik butang kamera dan pusingkan peranti anda perlahan-lahan dalam satu arah.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Ketik %s untuk melihat gambar atau video selepas anda mengambil atau merakamnya.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Ketik butang paparan cepat untuk melihat gambar atau video selepas anda mengambil atau merakamnya.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Melihat gambar dan video</string>
     <string name="high_resolution_video_description">Yang berikut tidak akan tersedia semasa merakam dalam resolusi %s:</string>
     <string name="highlight">Serlahan</string>

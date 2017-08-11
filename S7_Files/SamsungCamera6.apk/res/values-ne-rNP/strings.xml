@@ -186,6 +186,8 @@
     <string name="SM_SLOW_VIDEO_description">ढिलो गतिमा हेर्नको लागि भिडियोहरू उच्च फ्रेम रेटमा रेकर्ड गर्नुहोस्। भिडियो रेकर्ड गरेपछि तपाईले त्यसको विशिष्ट खण्‍ड ढिलो गतिमा प्ले गर्न सक्नुहुन्छ।</string>
     <string name="SM_SMART_SELFSHOT">रियर-क्याम सेल्फी</string>
     <string name="SM_SMART_SELFSHOT_description">जब तपाईले आफ्नो तस्वीरहरु लिनुहुन्छ पछाडिको क्यामेराले स्वत: पत्ता लगाई तपाईको अनुहारमा फोकस गर्छ।</string>
+    <string name="SM_SOCIAL">सामाजिक</string>
+    <string name="SM_SOCIAL_description">तस्वीरहरू लिनुहोस् र तिनीहरूलाई सामाजिक नेटवर्कहरूमा साझा गर्नुहोस्।</string>
     <string name="SM_SPORTS">खेलहरू</string>
     <string name="SM_SPORTS_SCENE_description">तिव्र गतिमा चलिरहेका वस्तुहरुको स्पष्ट तस्वीर खिच्नुहोस्।</string>
     <string name="SM_STORY">साउन्ड &amp; शाट</string>
@@ -256,7 +258,7 @@
     <string name="Title_Viewmode">पूर्ण स्क्रीन दृश्‍य (16:9)</string>
     <string name="Title_Voice_Capture">भ्वाइस नियन्त्रण</string>
     <string name="Title_Voice_guide">भ्वाइस मार्गदर्शन</string>
-    <string name="Title_Volume_Key_As">भोल्युम कुञ्जी प्रकार्य</string>
+    <string name="Title_Volume_Key_As">भोल्युम कुञ्जी फंक्शन</string>
     <string name="Title_WhiteBalance">ह्वाइट ब्यालेन्स</string>
     <string name="Title_common">सामान्य</string>
     <string name="Title_front">अगाडिको क्यामेरा</string>
@@ -385,7 +387,10 @@
     <string name="guideline_square">वर्ग</string>
     <string name="help_change_mode_tip_1">उपलब्ध रहेका क्यामेरा मोडहरू हेर्न दायाँ स्वाइप गर्नुहोस्।</string>
     <string name="help_change_mode_tip_2">तपाईले प्रयोग गर्न चाहेको मोड चयन गर्नुहोस्।</string>
+    <string name="help_change_mode_tip_3">सरल मोड सक्षम गरिएको बेला स्वतः र सेल्फी क्यामेरा मोडहरू मात्र उपलब्ध हुन्छन्।</string>
     <string name="help_changing_the_camera_mode">क्यामेरा मोडहरूको चयन गर्नु</string>
+    <string name="help_changing_the_camera_mode_header">क्यामेरा मोडको चयन</string>
+    <string name="help_changing_the_camera_mode_title">क्यामेरा मोड परिवर्तन गर्नुहोस्</string>
     <string name="help_recording_videos">भिडियोहरू रेकर्ड गर्नु</string>
     <string name="help_recording_videos_tip_1">%s ट्याप गर्नुहोस्।</string>
     <string name="help_recording_videos_tip_1_tts">क्याम्कअर्डर बटन ट्याप गर्नुहोस्।</string>
@@ -393,7 +398,7 @@
     <string name="help_recording_videos_tip_2_tts">रेकर्ड गर्न रोक्नको लागि रोक्नुहोस् बटनलाई ट्याप गर्नुहोस्।</string>
     <string name="help_recording_videos_tip_snapshot">भिडियो रेकर्डिङ गरिरहँदा तस्वीरहरु लिन %s ट्याप गर्नुहोस्।</string>
     <string name="help_recording_videos_tip_snapshot_tts">भिडियो रेकर्डिङ गरिरहँदा तस्वीरहरु लिन क्यामेरा बटन ट्याप गर्नुहोस्।</string>
-    <string name="help_section_summary">सबै अवसरहरूमा अनुकूल हुने विभिन्न प्रकारका प्रभावहरूको प्रयोग गरेर तस्वीरहरू खिच्नुहोस् वा भिडियोहरू रेकर्ड गर्नुहोस्। सरल मोड सक्षम गरिएको बेला स्वतः र सेल्फी क्यामेरा मोडहरू मात्र उपलब्ध हुन्छन् र कुनै प्रभाव लागू गर्न सकिँदैन।</string>
+    <string name="help_section_summary">सबै सुअवसरहरुमा अनुकूल गर्न, विभिन्न फरक प्रभावहरु प्रयोग गर्न तस्वीरहरु लिनुहोस् वा भिडियोहरु रेकर्ड गर्नुहोस्।</string>
     <string name="help_selecting_camera_mode">क्यामेरा मोडहरूको चयन गर्नु</string>
     <string name="help_taking_pictures">तस्वीरहरू लिंदै</string>
     <string name="help_taking_pictures_tip_1">तपाईले फोकसमा ल्याउन चाहेको वस्तुलाई ट्याप गर्नुहोस्।</string>
@@ -408,6 +413,7 @@
     <string name="help_text_wideselfie">क्यामेरा बटनलाई ट्याप गर्नुहोस् र आफ्नो यन्त्रलाई बिस्तारै एक दिशामा घुमाउनुहोस्।</string>
     <string name="help_viewing_pics_and_videos_tip_1">तपाईले आफ्ना तस्वीरहरू वा भिडियोहरू लिएपछि तुरुन्तै हेर्न %s ट्याप गर्नुहोस्।</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">तपाईले आफ्ना तस्वीरहरू वा भिडियोहरू लिएपछि तुरुन्तै हेर्न द्रुत दृश्य बटन ट्याप गर्नुहोस्।</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">तस्वीरहरू र भिडियोहरू हेर्दै</string>
     <string name="high_resolution_video_description">%s रिजोल्युशनहरूमा रेकर्डिङ गर्दा निम्न कुराहरू अनुपलब्ध हुनेछन्:</string>
     <string name="highlight">हाइलाइटहरू</string>

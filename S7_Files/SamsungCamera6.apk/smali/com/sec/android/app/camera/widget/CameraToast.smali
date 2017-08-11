@@ -43,7 +43,7 @@
 
     .line 51
     .local v1, "layout":Landroid/view/View;
-    const v4, 0x7f100030
+    const v4, 0x7f100032
 
     invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b021a
+    const v1, 0x7f0b021b
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -207,7 +207,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0b0219
+    const v1, 0x7f0b021a
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 

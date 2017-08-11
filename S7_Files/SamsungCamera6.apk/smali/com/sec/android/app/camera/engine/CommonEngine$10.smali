@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 5469
+    .line 5498
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$10;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,21 +41,21 @@
     .locals 2
 
     .prologue
-    .line 5473
+    .line 5502
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$10;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->resetCameraSettingsToDefault()V
 
-    .line 5475
+    .line 5504
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$10;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->updateUIWhenResetSettings()V
 
-    .line 5476
+    .line 5505
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$10;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;
@@ -64,6 +64,6 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 5477
+    .line 5506
     return-void
 .end method

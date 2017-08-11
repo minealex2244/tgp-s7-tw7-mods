@@ -660,6 +660,19 @@
     .line 127
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mShootingModeCmdIDMappting:Ljava/util/HashMap;
 
+    const-string v1, "com.sec.android.app.camera.shootingmode.social.SocialCamera"
+
+    const/16 v2, 0x169
+
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 128
+    sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mShootingModeCmdIDMappting:Ljava/util/HashMap;
+
     const-string v1, "com.sec.android.app.camera.shootingmode.productsearch"
 
     const/16 v2, 0x168
@@ -670,7 +683,7 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 130
+    .line 131
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SOUND_AND_SHOT:Z
 
     if-nez v0, :cond_0
@@ -679,7 +692,7 @@
 
     if-nez v0, :cond_0
 
-    .line 131
+    .line 132
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -688,7 +701,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 133
+    .line 134
     :cond_0
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_BEAUTY_SHOT:Z
 
@@ -698,7 +711,7 @@
 
     if-nez v0, :cond_1
 
-    .line 134
+    .line 135
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -707,13 +720,13 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 136
+    .line 137
     :cond_1
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_DUAL:Z
 
     if-nez v0, :cond_2
 
-    .line 137
+    .line 138
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -722,13 +735,13 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 139
+    .line 140
     :cond_2
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SHOT_AND_MORE:Z
 
     if-nez v0, :cond_3
 
-    .line 140
+    .line 141
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -737,13 +750,13 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 142
+    .line 143
     :cond_3
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SPORTS_SCENE:Z
 
     if-nez v0, :cond_4
 
-    .line 143
+    .line 144
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -752,13 +765,13 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 145
+    .line 146
     :cond_4
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_REAR_SELFIE:Z
 
     if-nez v0, :cond_5
 
-    .line 146
+    .line 147
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     const/16 v1, 0x157
@@ -769,13 +782,13 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 148
+    .line 149
     :cond_5
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_ANIMATEDGIF:Z
 
     if-nez v0, :cond_6
 
-    .line 149
+    .line 150
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     const/16 v1, 0x15d
@@ -786,13 +799,13 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 151
+    .line 152
     :cond_6
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_FOOD:Z
 
     if-nez v0, :cond_7
 
-    .line 152
+    .line 153
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     const/16 v1, 0x161
@@ -803,7 +816,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 154
+    .line 155
     :cond_7
     return-void
 .end method
@@ -813,13 +826,13 @@
     .param p1, "cameraContext"    # Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     .prologue
-    .line 158
+    .line 159
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 159
+    .line 160
     iput-object p1, p0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    .line 160
+    .line 161
     return-void
 .end method
 
@@ -828,7 +841,7 @@
     .param p0, "shootingModeCommand"    # I
 
     .prologue
-    .line 169
+    .line 170
     invoke-static {p0}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->isIntegratedMode(I)Z
 
     move-result v0
@@ -858,7 +871,7 @@
     .param p0, "shootingModeCommand"    # I
 
     .prologue
-    .line 179
+    .line 180
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mIntegratedShootingModeMappting:Ljava/util/HashSet;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -877,17 +890,22 @@
     .param p0, "shootingModeCommand"    # I
 
     .prologue
-    .line 189
+    .line 190
     const/16 v0, 0x165
 
-    if-ne p0, v0, :cond_0
+    if-eq p0, v0, :cond_0
 
+    const/16 v0, 0x169
+
+    if-ne p0, v0, :cond_1
+
+    :cond_0
     const/4 v0, 0x1
 
     :goto_0
     return v0
 
-    :cond_0
+    :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
@@ -898,7 +916,7 @@
     .param p0, "shootingModeCommand"    # I
 
     .prologue
-    .line 199
+    .line 200
     const/16 v0, 0x155
 
     if-ne p0, v0, :cond_0
@@ -935,10 +953,10 @@
     .param p1, "arg0"    # [Ljava/lang/Void;
 
     .prologue
-    .line 286
+    .line 287
     invoke-virtual {p0}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->loadShootingModes()V
 
-    .line 287
+    .line 288
     const/4 v0, 0x0
 
     return-object v0
@@ -948,7 +966,7 @@
     .locals 27
 
     .prologue
-    .line 203
+    .line 204
     monitor-enter p0
 
     :try_start_0
@@ -958,16 +976,16 @@
 
     invoke-static {v3, v8}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 205
+    .line 206
     new-instance v23, Landroid/util/SparseArray;
 
     invoke-direct/range {v23 .. v23}, Landroid/util/SparseArray;-><init>()V
 
-    .line 206
+    .line 207
     .local v23, "modes":Landroid/util/SparseArray;, "Landroid/util/SparseArray<Ljava/util/HashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;>;>;"
     const/16 v19, 0x0
 
-    .line 207
+    .line 208
     .local v19, "cursor":Landroid/database/Cursor;
     move-object/from16 v0, p0
 
@@ -983,7 +1001,7 @@
 
     move-result-object v24
 
-    .line 210
+    .line 211
     .local v24, "packageManager":Landroid/content/pm/PackageManager;
     :try_start_1
     move-object/from16 v0, p0
@@ -1016,17 +1034,17 @@
 
     move-result-object v19
 
-    .line 212
+    .line 213
     if-nez v19, :cond_1
 
-    .line 274
+    .line 275
     if-eqz v19, :cond_0
 
-    .line 275
+    .line 276
     :try_start_2
     invoke-interface/range {v19 .. v19}, Landroid/database/Cursor;->close()V
 
-    .line 278
+    .line 279
     :cond_0
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;->getInstance()Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;
 
@@ -1046,13 +1064,13 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 281
+    .line 282
     :goto_0
     monitor-exit p0
 
     return-void
 
-    .line 216
+    .line 217
     :cond_1
     :try_start_3
     invoke-interface/range {v19 .. v19}, Landroid/database/Cursor;->getCount()I
@@ -1061,12 +1079,12 @@
 
     if-nez v3, :cond_5
 
-    .line 218
+    .line 219
     new-instance v25, Landroid/content/Intent;
 
     invoke-direct/range {v25 .. v25}, Landroid/content/Intent;-><init>()V
 
-    .line 220
+    .line 221
     .local v25, "serviceIntent":Landroid/content/Intent;
     const-string v3, "com.samsung.android.provider.shootingmodeprovider.action.UPDATE_SHOOTING_MODES_DB"
 
@@ -1074,14 +1092,14 @@
 
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 221
+    .line 222
     const-string v3, "com.samsung.android.provider.shootingmodeprovider"
 
     move-object/from16 v0, v25
 
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 222
+    .line 223
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1098,16 +1116,16 @@
     .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_1
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 274
+    .line 275
     .end local v25    # "serviceIntent":Landroid/content/Intent;
     :cond_2
     if-eqz v19, :cond_3
 
-    .line 275
+    .line 276
     :try_start_4
     invoke-interface/range {v19 .. v19}, Landroid/database/Cursor;->close()V
 
-    .line 278
+    .line 279
     :cond_3
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;->getInstance()Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;
 
@@ -1125,7 +1143,7 @@
 
     invoke-virtual {v3, v8, v0}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;->setShootingModes(Landroid/content/Context;Landroid/util/SparseArray;)V
 
-    .line 280
+    .line 281
     :goto_1
     sget-object v3, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->TAG:Ljava/lang/String;
 
@@ -1137,7 +1155,7 @@
 
     goto :goto_0
 
-    .line 203
+    .line 204
     .end local v19    # "cursor":Landroid/database/Cursor;
     .end local v23    # "modes":Landroid/util/SparseArray;, "Landroid/util/SparseArray<Ljava/util/HashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;>;>;"
     .end local v24    # "packageManager":Landroid/content/pm/PackageManager;
@@ -1170,7 +1188,7 @@
     :cond_4
     move-object/from16 v8, v20
 
-    .line 262
+    .line 263
     :goto_2
     :try_start_5
     invoke-direct/range {v3 .. v17}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIILjava/lang/String;Ljava/lang/String;III)V
@@ -1179,7 +1197,7 @@
 
     invoke-virtual {v0, v6, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 224
+    .line 225
     .end local v4    # "id":I
     .end local v5    # "packageName":Ljava/lang/String;
     .end local v6    # "activityName":Ljava/lang/String;
@@ -1204,14 +1222,14 @@
 
     if-eqz v3, :cond_2
 
-    .line 225
+    .line 226
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->isCancelled()Z
 
     move-result v3
 
     if-eqz v3, :cond_7
 
-    .line 226
+    .line 227
     new-instance v3, Ljava/lang/IllegalStateException;
 
     invoke-direct {v3}, Ljava/lang/IllegalStateException;-><init>()V
@@ -1222,11 +1240,11 @@
     .catch Ljava/lang/RuntimeException; {:try_start_5 .. :try_end_5} :catch_1
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 269
+    .line 270
     :catch_0
     move-exception v21
 
-    .line 270
+    .line 271
     .local v21, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     :try_start_6
     sget-object v3, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->TAG:Ljava/lang/String;
@@ -1237,14 +1255,14 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 274
+    .line 275
     if-eqz v19, :cond_6
 
-    .line 275
+    .line 276
     :try_start_7
     invoke-interface/range {v19 .. v19}, Landroid/database/Cursor;->close()V
 
-    .line 278
+    .line 279
     :cond_6
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;->getInstance()Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;
 
@@ -1266,7 +1284,7 @@
 
     goto :goto_1
 
-    .line 229
+    .line 230
     .end local v21    # "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     :cond_7
     const/4 v3, 0x0
@@ -1278,7 +1296,7 @@
 
     move-result v4
 
-    .line 230
+    .line 231
     .restart local v4    # "id":I
     const/4 v3, 0x1
 
@@ -1288,7 +1306,7 @@
 
     move-result-object v7
 
-    .line 231
+    .line 232
     .restart local v7    # "title":Ljava/lang/String;
     const/4 v3, 0x2
 
@@ -1298,7 +1316,7 @@
 
     move-result v9
 
-    .line 232
+    .line 233
     .restart local v9    # "iconResId":I
     const/4 v3, 0x3
 
@@ -1308,7 +1326,7 @@
 
     move-result v10
 
-    .line 233
+    .line 234
     .restart local v10    # "pressedIconResId":I
     const/4 v3, 0x4
 
@@ -1318,7 +1336,7 @@
 
     move-result-object v20
 
-    .line 234
+    .line 235
     .restart local v20    # "description":Ljava/lang/String;
     const/4 v3, 0x5
 
@@ -1328,7 +1346,7 @@
 
     move-result-object v5
 
-    .line 235
+    .line 236
     .restart local v5    # "packageName":Ljava/lang/String;
     const/4 v3, 0x6
 
@@ -1338,7 +1356,7 @@
 
     move-result-object v6
 
-    .line 236
+    .line 237
     .restart local v6    # "activityName":Ljava/lang/String;
     const/4 v3, 0x7
 
@@ -1348,7 +1366,7 @@
 
     move-result v11
 
-    .line 237
+    .line 238
     .restart local v11    # "majorVersion":I
     const/16 v3, 0x8
 
@@ -1358,7 +1376,7 @@
 
     move-result v12
 
-    .line 238
+    .line 239
     .restart local v12    # "minorVersion":I
     const/16 v3, 0x9
 
@@ -1368,7 +1386,7 @@
 
     move-result-object v13
 
-    .line 239
+    .line 240
     .restart local v13    # "libPath":Ljava/lang/String;
     const/16 v3, 0xa
 
@@ -1378,7 +1396,7 @@
 
     move-result-object v14
 
-    .line 240
+    .line 241
     .restart local v14    # "cameraType":Ljava/lang/String;
     const/16 v3, 0xb
 
@@ -1388,7 +1406,7 @@
 
     move-result v15
 
-    .line 241
+    .line 242
     .restart local v15    # "order":I
     const/16 v3, 0xc
 
@@ -1398,7 +1416,7 @@
 
     move-result v16
 
-    .line 242
+    .line 243
     .restart local v16    # "frontOrder":I
     const/16 v3, 0xd
 
@@ -1408,7 +1426,7 @@
 
     move-result v17
 
-    .line 245
+    .line 246
     .restart local v17    # "downloaded":I
     sget-object v3, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mShootingModeCmdIDMappting:Ljava/util/HashMap;
 
@@ -1418,7 +1436,7 @@
 
     if-eqz v3, :cond_9
 
-    .line 246
+    .line 247
     sget-object v3, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mShootingModeCmdIDMappting:Ljava/util/HashMap;
 
     invoke-virtual {v3, v6}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1431,7 +1449,7 @@
 
     move-result v18
 
-    .line 253
+    .line 254
     .restart local v18    # "commandId":I
     :goto_4
     move-object/from16 v0, v23
@@ -1444,17 +1462,17 @@
 
     check-cast v22, Ljava/util/HashMap;
 
-    .line 255
+    .line 256
     .restart local v22    # "itemsList":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;>;"
     if-nez v22, :cond_8
 
-    .line 256
+    .line 257
     new-instance v22, Ljava/util/HashMap;
 
     .end local v22    # "itemsList":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;>;"
     invoke-direct/range {v22 .. v22}, Ljava/util/HashMap;-><init>()V
 
-    .line 257
+    .line 258
     .restart local v22    # "itemsList":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;>;"
     move-object/from16 v0, v23
 
@@ -1464,7 +1482,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 261
+    .line 262
     :cond_8
     const/4 v3, 0x1
 
@@ -1476,7 +1494,7 @@
 
     if-eqz v3, :cond_b
 
-    .line 262
+    .line 263
     new-instance v3, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;
 
     if-nez v20, :cond_4
@@ -1485,7 +1503,7 @@
 
     goto/16 :goto_2
 
-    .line 247
+    .line 248
     .end local v18    # "commandId":I
     .end local v22    # "itemsList":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;>;"
     :cond_9
@@ -1497,7 +1515,7 @@
 
     if-eqz v3, :cond_a
 
-    .line 248
+    .line 249
     sget-object v3, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mShootingModeCmdIDMappting:Ljava/util/HashMap;
 
     invoke-virtual {v3, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1513,7 +1531,7 @@
     .restart local v18    # "commandId":I
     goto :goto_4
 
-    .line 250
+    .line 251
     .end local v18    # "commandId":I
     :cond_a
     const/16 v18, 0x155
@@ -1521,7 +1539,7 @@
     .restart local v18    # "commandId":I
     goto :goto_4
 
-    .line 265
+    .line 266
     .restart local v22    # "itemsList":Ljava/util/HashMap;, "Ljava/util/HashMap<Ljava/lang/String;Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;>;"
     :cond_b
     sget-object v3, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->TAG:Ljava/lang/String;
@@ -1554,7 +1572,7 @@
 
     goto/16 :goto_3
 
-    .line 271
+    .line 272
     .end local v4    # "id":I
     .end local v5    # "packageName":Ljava/lang/String;
     .end local v6    # "activityName":Ljava/lang/String;
@@ -1574,7 +1592,7 @@
     :catch_1
     move-exception v21
 
-    .line 272
+    .line 273
     .local v21, "e":Ljava/lang/RuntimeException;
     :try_start_9
     sget-object v3, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->TAG:Ljava/lang/String;
@@ -1585,14 +1603,14 @@
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
-    .line 274
+    .line 275
     if-eqz v19, :cond_c
 
-    .line 275
+    .line 276
     :try_start_a
     invoke-interface/range {v19 .. v19}, Landroid/database/Cursor;->close()V
 
-    .line 278
+    .line 279
     :cond_c
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;->getInstance()Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;
 
@@ -1612,17 +1630,17 @@
 
     goto/16 :goto_1
 
-    .line 274
+    .line 275
     .end local v21    # "e":Ljava/lang/RuntimeException;
     :catchall_1
     move-exception v3
 
     if-eqz v19, :cond_d
 
-    .line 275
+    .line 276
     invoke-interface/range {v19 .. v19}, Landroid/database/Cursor;->close()V
 
-    .line 278
+    .line 279
     :cond_d
     invoke-static {}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;->getInstance()Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage;
 
@@ -1653,17 +1671,17 @@
     .locals 2
 
     .prologue
-    .line 292
+    .line 293
     sget-object v0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->TAG:Ljava/lang/String;
 
     const-string v1, "onCancelled"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 293
+    .line 294
     invoke-super {p0}, Landroid/os/AsyncTask;->onCancelled()V
 
-    .line 294
+    .line 295
     return-void
 .end method
 
@@ -1684,14 +1702,14 @@
     .param p1, "aVoid"    # Ljava/lang/Void;
 
     .prologue
-    .line 298
+    .line 299
     sget-object v1, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->TAG:Ljava/lang/String;
 
     const-string v2, "onPostExecute"
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 300
+    .line 301
     iget-object v1, p0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isPausing()Z
@@ -1700,12 +1718,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 309
+    .line 310
     :cond_0
     :goto_0
     return-void
 
-    .line 304
+    .line 305
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -1713,11 +1731,11 @@
 
     move-result-object v0
 
-    .line 306
+    .line 307
     .local v0, "mHandler":Landroid/os/Handler;
     if-eqz v0, :cond_0
 
-    .line 307
+    .line 308
     const/16 v1, 0x1f
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
@@ -1742,6 +1760,6 @@
     .param p1, "values"    # [Ljava/lang/Void;
 
     .prologue
-    .line 314
+    .line 315
     return-void
 .end method

@@ -54,7 +54,7 @@
 
     const/4 v3, 0x0
 
-    .line 952
+    .line 965
     new-instance v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;
 
     const-string v1, "IDLE"
@@ -105,7 +105,7 @@
 
     sput-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;->CANCEL_RECORDING:Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;
 
-    .line 951
+    .line 964
     const/4 v0, 0x6
 
     new-array v0, v0, [Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;
@@ -150,7 +150,7 @@
     .end annotation
 
     .prologue
-    .line 951
+    .line 964
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -161,7 +161,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 951
+    .line 964
     const-class v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -177,7 +177,7 @@
     .locals 1
 
     .prologue
-    .line 951
+    .line 964
     sget-object v0, Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;->$VALUES:[Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;
 
     invoke-virtual {v0}, [Lcom/sec/android/app/camera/shootingmode/RecordingController$RecordingCommand;->clone()Ljava/lang/Object;

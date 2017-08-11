@@ -151,7 +151,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_ACTION_BAR_ICON_SIZE:F
 
     .line 65
-    const v2, 0x7f0b011c
+    const v2, 0x7f0b011d
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -162,7 +162,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_ACTION_BAR_ICON_TOP_MARGIN:F
 
     .line 66
-    const v2, 0x7f0b011b
+    const v2, 0x7f0b011c
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -229,7 +229,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_ACTION_BAR_FONT_COLOR:I
 
     .line 71
-    const v2, 0x7f0b0127
+    const v2, 0x7f0b0128
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -240,7 +240,7 @@
     iput v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_LIST_START_POS_Y:F
 
     .line 72
-    const v2, 0x7f0b0124
+    const v2, 0x7f0b0125
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -338,7 +338,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a019c
+    const v3, 0x7f0a01a2
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -538,7 +538,7 @@
 
     iget v7, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->MODE_INFO_ACTION_BAR_HEIGHT:F
 
-    const v8, 0x7f0202cd
+    const v8, 0x7f0202cc
 
     const/4 v9, 0x0
 
@@ -565,7 +565,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a01c8
+    const v4, 0x7f0a01ce
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -831,7 +831,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/ModeInfoListMenu;->mList:Lcom/samsung/android/glview/GLList;
 
-    const v3, 0x7f0202d0
+    const v3, 0x7f0202cf
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLList;->setScrollBarResource(I)V
 

@@ -23,7 +23,7 @@
     .line 35
     new-instance v0, Lcom/samsung/android/glview/GLImage;
 
-    const v1, 0x7f020222
+    const v1, 0x7f020221
 
     invoke-direct {v0, p1, v2, v2, v1}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -50,7 +50,7 @@
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/widget/gl/FlashIndicator;->getContext()Lcom/samsung/android/glview/GLContext;
 
-    const v1, 0x7f0a00cb
+    const v1, 0x7f0a00cd
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getString(I)Ljava/lang/String;
 

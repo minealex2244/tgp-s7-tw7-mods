@@ -2108,6 +2108,14 @@
 
     if-eq v3, v4, :cond_5
 
+    invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v3
+
+    const/16 v4, 0x6f
+
+    if-eq v3, v4, :cond_5
+
     .line 303
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -2147,16 +2155,25 @@
 
     const/4 v1, 0x4
 
-    if-ne v0, v1, :cond_0
+    if-eq v0, v1, :cond_0
+
+    invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
+
+    move-result v0
+
+    const/16 v1, 0x6f
+
+    if-ne v0, v1, :cond_1
 
     .line 315
+    :cond_0
     const/4 v0, 0x0
 
     .line 317
     :goto_0
     return v0
 
-    :cond_0
+    :cond_1
     const/4 v0, 0x1
 
     goto :goto_0

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     .prologue
-    .line 406
+    .line 411
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 413
+    .line 418
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$1;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mMenuManager:Lcom/sec/android/app/camera/menu/MenuManagerImpl;
@@ -55,7 +55,7 @@
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 414
+    .line 419
     return-void
 .end method
 
@@ -64,7 +64,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 418
+    .line 423
     return-void
 .end method
 
@@ -73,6 +73,6 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 409
+    .line 414
     return-void
 .end method

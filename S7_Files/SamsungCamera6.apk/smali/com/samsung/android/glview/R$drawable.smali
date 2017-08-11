@@ -15,13 +15,13 @@
 
 
 # static fields
-.field public static final overscroll_landscape_left:I = 0x7f02022b
+.field public static final overscroll_landscape_left:I = 0x7f02022a
 
-.field public static final overscroll_landscape_right:I = 0x7f02022c
+.field public static final overscroll_landscape_right:I = 0x7f02022b
 
-.field public static final overscroll_portrait_bottom:I = 0x7f02022d
+.field public static final overscroll_portrait_bottom:I = 0x7f02022c
 
-.field public static final overscroll_portrait_top:I = 0x7f02022e
+.field public static final overscroll_portrait_top:I = 0x7f02022d
 
 
 # direct methods

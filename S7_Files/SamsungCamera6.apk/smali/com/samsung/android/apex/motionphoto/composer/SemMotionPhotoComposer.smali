@@ -189,58 +189,6 @@
     return-void
 .end method
 
-.method private removeAllCommands()V
-    .locals 2
-
-    .prologue
-    .line 473
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
-
-    if-nez v1, :cond_0
-
-    .line 479
-    :goto_0
-    return-void
-
-    .line 475
-    :cond_0
-    const/4 v0, 0x0
-
-    .local v0, "i":I
-    :goto_1
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
-
-    invoke-virtual {v1}, Landroid/util/SparseArray;->size()I
-
-    move-result v1
-
-    if-ge v0, v1, :cond_1
-
-    .line 476
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
-
-    invoke-virtual {v1, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/concurrent/ConcurrentLinkedQueue;
-
-    invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->clear()V
-
-    .line 475
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_1
-
-    .line 478
-    :cond_1
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
-
-    invoke-virtual {v1}, Landroid/util/SparseArray;->clear()V
-
-    goto :goto_0
-.end method
-
 
 # virtual methods
 .method public changeState(Lcom/samsung/android/apex/motionphoto/composer/State;)V
@@ -248,7 +196,7 @@
     .param p1, "state"    # Lcom/samsung/android/apex/motionphoto/composer/State;
 
     .prologue
-    .line 513
+    .line 505
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
@@ -257,7 +205,7 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->lock()V
 
-    .line 515
+    .line 507
     :try_start_0
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->getTag()Ljava/lang/String;
 
@@ -303,25 +251,25 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 516
+    .line 508
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mState:Lcom/samsung/android/apex/motionphoto/composer/State;
 
     sget-object v1, Lcom/samsung/android/apex/motionphoto/composer/State;->RELEASED:Lcom/samsung/android/apex/motionphoto/composer/State;
 
     if-ne v0, v1, :cond_0
 
-    .line 517
+    .line 509
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->getTag()Ljava/lang/String;
 
     move-result-object v0
 
-    const-string v1, "ignore already released"
+    const-string v1, "ignore arleady released"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 523
+    .line 515
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
@@ -330,21 +278,21 @@
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;->unlock()V
 
-    .line 525
+    .line 517
     :goto_0
     return-void
 
-    .line 520
+    .line 512
     :cond_0
     :try_start_1
     iput-object p1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mState:Lcom/samsung/android/apex/motionphoto/composer/State;
 
-    .line 521
+    .line 513
     invoke-virtual {p0, p1}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->handleCommand(Lcom/samsung/android/apex/motionphoto/composer/State;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 523
+    .line 515
     iget-object v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mLock:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->writeLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;
@@ -541,7 +489,7 @@
     .locals 1
 
     .prologue
-    .line 543
+    .line 535
     iget v0, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mApiLevel:I
 
     return v0
@@ -584,29 +532,29 @@
     .param p1, "state"    # Lcom/samsung/android/apex/motionphoto/composer/State;
 
     .prologue
-    .line 487
+    .line 479
     iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mState:Lcom/samsung/android/apex/motionphoto/composer/State;
 
     sget-object v4, Lcom/samsung/android/apex/motionphoto/composer/State;->RELEASED:Lcom/samsung/android/apex/motionphoto/composer/State;
 
     if-ne v3, v4, :cond_0
 
-    .line 488
+    .line 480
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->getTag()Ljava/lang/String;
 
     move-result-object v3
 
-    const-string v4, "handleCommand : ignore already released"
+    const-string v4, "handleCommand : ignore arleady released"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 490
+    .line 482
     :cond_0
     iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
 
     if-nez v3, :cond_2
 
-    .line 491
+    .line 483
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->getTag()Ljava/lang/String;
 
     move-result-object v3
@@ -615,11 +563,11 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 505
+    .line 497
     :cond_1
     return-void
 
-    .line 494
+    .line 486
     :cond_2
     iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
 
@@ -633,16 +581,16 @@
 
     check-cast v1, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 495
+    .line 487
     .local v1, "list":Ljava/util/concurrent/ConcurrentLinkedQueue;, "Ljava/util/concurrent/ConcurrentLinkedQueue<Landroid/os/Message;>;"
     if-eqz v1, :cond_1
 
-    .line 499
+    .line 491
     invoke-virtual {v1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 500
+    .line 492
     .local v0, "it":Ljava/util/Iterator;, "Ljava/util/Iterator<Landroid/os/Message;>;"
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -651,20 +599,20 @@
 
     if-eqz v3, :cond_1
 
-    .line 501
+    .line 493
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/os/Message;
 
-    .line 502
+    .line 494
     .local v2, "m":Landroid/os/Message;
     iget-object v3, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
 
     invoke-virtual {v3, v2}, Landroid/os/Handler;->sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
 
-    .line 503
+    .line 495
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
@@ -994,7 +942,7 @@
 .end method
 
 .method public declared-synchronized release()V
-    .locals 4
+    .locals 3
 
     .prologue
     .line 278
@@ -1038,56 +986,60 @@
     .line 284
     :cond_0
     :try_start_1
-    invoke-direct {p0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->removeAllCommands()V
-
-    .line 285
     invoke-virtual {p0}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->disconnect()V
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 289
+    .line 288
+    :goto_1
     :try_start_2
-    sget-object v1, Lcom/samsung/android/apex/motionphoto/composer/State;->RELEASED:Lcom/samsung/android/apex/motionphoto/composer/State;
-
-    invoke-virtual {p0, v1}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->changeState(Lcom/samsung/android/apex/motionphoto/composer/State;)V
-
-    .line 291
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mContext:Ljava/lang/ref/WeakReference;
 
     if-eqz v1, :cond_1
 
-    .line 292
+    .line 289
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mContext:Ljava/lang/ref/WeakReference;
 
-    .line 293
+    .line 290
     :cond_1
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
 
     if-eqz v1, :cond_2
 
-    .line 294
+    .line 291
+    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mCommandQueue:Landroid/util/SparseArray;
+
+    invoke-virtual {v1}, Landroid/util/SparseArray;->clear()V
+
+    .line 292
+    :cond_2
+    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
+
+    if-eqz v1, :cond_3
+
+    .line 293
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 295
-    :cond_2
+    .line 294
+    :cond_3
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
 
-    if-eqz v1, :cond_3
+    if-eqz v1, :cond_4
 
-    .line 296
+    .line 295
     iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->quit()Z
 
     .line 301
-    :cond_3
+    :cond_4
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
@@ -1096,6 +1048,11 @@
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
+
+    .line 303
+    sget-object v1, Lcom/samsung/android/apex/motionphoto/composer/State;->RELEASED:Lcom/samsung/android/apex/motionphoto/composer/State;
+
+    iput-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mState:Lcom/samsung/android/apex/motionphoto/composer/State;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1109,127 +1066,18 @@
 
     throw v1
 
-    .line 286
+    .line 285
     :catch_0
     move-exception v0
 
-    .line 287
+    .line 286
     .local v0, "e":Landroid/os/RemoteException;
     :try_start_3
     invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
     :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 289
-    :try_start_4
-    sget-object v1, Lcom/samsung/android/apex/motionphoto/composer/State;->RELEASED:Lcom/samsung/android/apex/motionphoto/composer/State;
-
-    invoke-virtual {p0, v1}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->changeState(Lcom/samsung/android/apex/motionphoto/composer/State;)V
-
-    .line 291
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mContext:Ljava/lang/ref/WeakReference;
-
-    if-eqz v1, :cond_4
-
-    .line 292
-    const/4 v1, 0x0
-
-    iput-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mContext:Ljava/lang/ref/WeakReference;
-
-    .line 293
-    :cond_4
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
-
-    if-eqz v1, :cond_5
-
-    .line 294
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
-
-    .line 295
-    :cond_5
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
-
-    if-eqz v1, :cond_6
-
-    .line 296
-    iget-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
-
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->quit()Z
-
-    .line 301
-    :cond_6
-    const/4 v1, 0x0
-
-    iput-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
-
-    .line 302
-    const/4 v1, 0x0
-
-    iput-object v1, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
-
-    goto :goto_0
-
-    .line 289
-    .end local v0    # "e":Landroid/os/RemoteException;
-    :catchall_1
-    move-exception v1
-
-    sget-object v2, Lcom/samsung/android/apex/motionphoto/composer/State;->RELEASED:Lcom/samsung/android/apex/motionphoto/composer/State;
-
-    invoke-virtual {p0, v2}, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->changeState(Lcom/samsung/android/apex/motionphoto/composer/State;)V
-
-    .line 291
-    iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mContext:Ljava/lang/ref/WeakReference;
-
-    if-eqz v2, :cond_7
-
-    .line 292
-    const/4 v2, 0x0
-
-    iput-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mContext:Ljava/lang/ref/WeakReference;
-
-    .line 293
-    :cond_7
-    iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
-
-    if-eqz v2, :cond_8
-
-    .line 294
-    iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
-
-    .line 295
-    :cond_8
-    iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
-
-    if-eqz v2, :cond_9
-
-    .line 296
-    iget-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
-
-    invoke-virtual {v2}, Landroid/os/HandlerThread;->quit()Z
-
-    .line 301
-    :cond_9
-    const/4 v2, 0x0
-
-    iput-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mComposerHandler:Landroid/os/Handler;
-
-    .line 302
-    const/4 v2, 0x0
-
-    iput-object v2, p0, Lcom/samsung/android/apex/motionphoto/composer/SemMotionPhotoComposer;->mHandlerThread:Landroid/os/HandlerThread;
-
-    throw v1
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+    goto :goto_1
 .end method
 
 .method protected removeCommand(Lcom/samsung/android/apex/motionphoto/composer/State;I)V
@@ -1316,7 +1164,7 @@
     .end annotation
 
     .prologue
-    .line 535
+    .line 527
     const-wide/16 v0, -0x1
 
     return-wide v0

@@ -23,7 +23,7 @@
     .locals 3
 
     .prologue
-    .line 127
+    .line 126
     invoke-static {}, Lcom/samsung/android/apex/motionphoto/composer/State;->values()[Lcom/samsung/android/apex/motionphoto/composer/State;
 
     move-result-object v0

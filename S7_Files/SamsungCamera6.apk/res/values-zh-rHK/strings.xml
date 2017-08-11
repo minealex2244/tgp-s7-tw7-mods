@@ -6,7 +6,7 @@
     <string name="Abb_COLOR_TUNE_BREEZE">活潑</string>
     <string name="Abb_COLOR_TUNE_NOSTALGIA">懷舊</string>
     <string name="Abb_COLOR_TUNE_PRESET">色調 %d</string>
-    <string name="Abb_COLOR_TUNE_SERENE">安詳</string>
+    <string name="Abb_COLOR_TUNE_SERENE">寧靜</string>
     <string name="Abb_COLOR_TUNE_SOFT">柔和</string>
     <string name="Abb_COLOR_TUNE_VIVID">鮮明</string>
     <string name="Abb_Contrast">對比度</string>
@@ -38,7 +38,7 @@
     <string name="COLOR_TUNE_BREEZE">活潑</string>
     <string name="COLOR_TUNE_NOSTALGIA">懷舊</string>
     <string name="COLOR_TUNE_PRESET">色調 %d</string>
-    <string name="COLOR_TUNE_SERENE">安詳</string>
+    <string name="COLOR_TUNE_SERENE">寧靜</string>
     <string name="COLOR_TUNE_SOFT">柔和</string>
     <string name="COLOR_TUNE_VIVID">鮮明</string>
     <string name="EFFECT_STRENGTH">強度</string>
@@ -125,7 +125,7 @@
     <string name="R_5312x2988">16:9 (16 M)</string>
     <string name="R_640x480">4:3 (0.3 M)</string>
     <string name="R_MOVIE_1440x1440">1:1</string>
-    <string name="R_MOVIE_1920x1080_60FPS">全高清 (60 fps)</string>
+    <string name="R_MOVIE_1920x1080_60FPS">FHD (60 fps)</string>
     <string name="Resolution_Ratio_16_9_TTS">比例 16 乘 9，%1$s 百萬像素，解像度 %2$d 乘 %3$d</string>
     <string name="Resolution_Ratio_1_1_TTS">比例一乘一，%1$s 百萬像素，解像度 %2$d 乘 %3$d</string>
     <string name="Resolution_Ratio_4_3_TTS">比例 4 乘 3，%1$s 百萬像素，解像度 %2$d 乘 %3$d</string>
@@ -189,6 +189,8 @@
     <string name="SM_SLOW_VIDEO_description">以較高的畫面播放速率錄製用於以慢動作檢視的影片。您可在錄製後以慢動作播放每部影片的特定部分。</string>
     <string name="SM_SMART_SELFSHOT">後置相機自拍</string>
     <string name="SM_SMART_SELFSHOT_description">在拍攝自拍照時，後置相機將自動偵測並對焦您的臉部。</string>
+    <string name="SM_SOCIAL">社交</string>
+    <string name="SM_SOCIAL_description">拍照並在社交網絡上輕鬆共享相片。</string>
     <string name="SM_SPORTS">運動</string>
     <string name="SM_SPORTS_SCENE_description">拍攝快速移動對象的更清晰相片。</string>
     <string name="SM_STORY">有聲拍攝</string>
@@ -262,10 +264,10 @@
     <string name="Title_Voice_guide">語音指南</string>
     <string name="Title_Volume_Key_As">音量鍵功能</string>
     <string name="Title_WhiteBalance">白平衡</string>
-    <string name="Title_common">一般</string>
+    <string name="Title_common">通用</string>
     <string name="Title_front">前置相機</string>
     <string name="Title_rear">後置相機</string>
-    <string name="Title_rear_lens_distortion_correction">形狀修正</string>
+    <string name="Title_rear_lens_distortion_correction">臉形修正</string>
     <string name="Using_Data_Background">數據將在裝置連接至流動網絡或 WLAN 時於背景傳輸。</string>
     <string name="Using_Data_Background_Wifi">數據將在裝置連接至 WLAN 時於背景傳輸。</string>
     <string name="Video_Stabilisation_Dialog">由於影片穩定度演算法的關係，與影片相比，在錄製影片時拍攝的相片將顯得稍小。</string>
@@ -392,7 +394,10 @@
     <string name="guideline_square">正方形</string>
     <string name="help_change_mode_tip_1">向右滑動以檢視可用相機模式。</string>
     <string name="help_change_mode_tip_2">選擇想要使用的模式。</string>
+    <string name="help_change_mode_tip_3">簡易模式已啟用時，僅自動與自拍相機模式可用。</string>
     <string name="help_changing_the_camera_mode">選擇相機模式</string>
+    <string name="help_changing_the_camera_mode_header">選擇相機模式</string>
+    <string name="help_changing_the_camera_mode_title">變更相機模式</string>
     <string name="help_recording_videos">錄製影片</string>
     <string name="help_recording_videos_tip_1">輕觸 %s。</string>
     <string name="help_recording_videos_tip_1_tts">輕觸攝錄機按鈕。</string>
@@ -400,7 +405,7 @@
     <string name="help_recording_videos_tip_2_tts">輕觸停止按鈕以停止錄製。</string>
     <string name="help_recording_videos_tip_snapshot">輕觸%s以在錄製影片時拍照。</string>
     <string name="help_recording_videos_tip_snapshot_tts">輕觸相機按鍵以在錄製影片時拍照。</string>
-    <string name="help_section_summary">使用各種不同效果拍照或錄製影片以適合所有場合。簡易模式已啟用時，僅自動與自拍相機模式可用，並且沒有效果可應用。</string>
+    <string name="help_section_summary">使用各種不同效果拍攝相片或錄製影片以適合所有場合。</string>
     <string name="help_selecting_camera_mode">選擇相機模式</string>
     <string name="help_taking_pictures">拍照</string>
     <string name="help_taking_pictures_tip_1">輕觸想要進行對焦的物件。</string>
@@ -415,6 +420,7 @@
     <string name="help_text_wideselfie">輕觸相機按鍵並朝一個方向慢慢轉動裝置。</string>
     <string name="help_viewing_pics_and_videos_tip_1">輕觸%s以在拍照或錄影後立即檢視相片或影片。</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">輕觸快速檢視按鍵以在拍攝相片或錄製影片後立即檢視相片或影片。</string>
+    <string name="help_viewing_pics_and_videos_tip_2">向左滑動以在拍照或錄影後立即檢視相片或影片。</string>
     <string name="help_viewing_pictures_and_videos">檢視相片與影片</string>
     <string name="high_resolution_video_description">以%s解像度錄製時，以下選項將不可用：</string>
     <string name="highlight">突出</string>

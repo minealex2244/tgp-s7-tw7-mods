@@ -190,6 +190,8 @@ Posouvání snímku: Slouží k vytvoření dojmu pohybu při fotografování po
     <string name="SM_SLOW_VIDEO_description">Umožňuje nahrávat videa s vysokou frekvencí snímků pro pomalé sledování. Po nahrání můžete zpomaleně přehrát jednotlivé sekce každého videa.</string>
     <string name="SM_SMART_SELFSHOT">Selfie ze zadního fotoaparátu</string>
     <string name="SM_SMART_SELFSHOT_description">Když budete fotografovat autoportréty, zadní fotoaparát automaticky rozpozná váš obličej a zaostří na něj.</string>
+    <string name="SM_SOCIAL">Sociální</string>
+    <string name="SM_SOCIAL_description">Umožňuje fotografovat obrázky a snadno je sdílet na sociálních sítích.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Umožňuje fotografovat ostřejší obrázky rychle se pohybujících objektů.</string>
     <string name="SM_STORY">Zvuk a foto</string>
@@ -393,7 +395,10 @@ zkreslení"</string>
     <string name="guideline_square">Čtverec</string>
     <string name="help_change_mode_tip_1">Potažením doprava zobrazíte dostupné režimy fotoaparátu.</string>
     <string name="help_change_mode_tip_2">Vyberte režim, který chcete použít.</string>
+    <string name="help_change_mode_tip_3">Když je zapnutý Snadný režim, jsou k dispozici pouze režimy fotoaparátu Auto a Selfie.</string>
     <string name="help_changing_the_camera_mode">Výběr režimů fotoaparátu</string>
+    <string name="help_changing_the_camera_mode_header">Výběr režimu fotoaparátu</string>
+    <string name="help_changing_the_camera_mode_title">Změna režimu fotoaparátu</string>
     <string name="help_recording_videos">Nahrávání videí</string>
     <string name="help_recording_videos_tip_1">Klepněte na ikonu %s.</string>
     <string name="help_recording_videos_tip_1_tts">Klepněte na tlačítko videokamery.</string>
@@ -401,7 +406,7 @@ zkreslení"</string>
     <string name="help_recording_videos_tip_2_tts">Klepnutím na tlačítko zastavení zastavíte nahrávání.</string>
     <string name="help_recording_videos_tip_snapshot">Klepnutím na %s vyfotografujete obrázky během nahrávání videa.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Klepnutím na tlačítko fotoaparátu vyfotografujete obrázky během nahrávání videa.</string>
-    <string name="help_section_summary">Můžete fotografovat nebo nahrávat video pomocí různých efektů, které se hodí pro každou příležitost. Když je zapnutý Snadný režim, jsou k dispozici pouze režimy fotoaparátu Auto a Selfie a nelze použít žádné efekty.</string>
+    <string name="help_section_summary">Můžete fotografovat nebo nahrávat video pomocí různých efektů, které se hodí pro každou příležitost.</string>
     <string name="help_selecting_camera_mode">Výběr režimů fotoaparátu</string>
     <string name="help_taking_pictures">Fotografování</string>
     <string name="help_taking_pictures_tip_1">Klepněte na objekt, na který chcete zaostřit.</string>
@@ -416,6 +421,7 @@ zkreslení"</string>
     <string name="help_text_wideselfie">Klepněte na tlačítko fotoaparátu a pomalu otáčejte zařízením jedním směrem.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Chcete-li zobrazit své obrázky nebo videa ihned po jejich pořízení, klepněte na %s.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Chcete-li zobrazit své obrázky nebo videa ihned po jejich pořízení, klepněte na tlačítko rychlého zobrazení.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Prohlížení fotografií a videa</string>
     <string name="high_resolution_video_description">Následující funkce nebudou během nahrávání v rozlišeních %s dostupné:</string>
     <string name="highlight">Zvýraznění</string>

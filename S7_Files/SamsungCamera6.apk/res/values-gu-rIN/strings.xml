@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">ધીમી ગતિમાં જોવા માટે વિડિયોઝને ઉચ્ચ ફ્રેમ દર પર રેકોર્ડ કરો. તમે પ્રત્યેક વિડિયોના વિશેષ વિભાગને રેકોર્ડ કર્યા પછી તેને ધીમી ગતિમાં ચલાવી શકો છો.</string>
     <string name="SM_SMART_SELFSHOT">પાછલા-કૅમેરાએ સેલ્ફી</string>
     <string name="SM_SMART_SELFSHOT_description">જયારે તમે સેલ્ફ-પોર્ટ્રેટ ચિત્રો લો ત્યારે પાછલો કૅમેરો સ્વચાલિત રીતે તમારો ચેહરો શોધીને તેના પર ફોકસ કરશે.</string>
+    <string name="SM_SOCIAL">સામાજિક</string>
+    <string name="SM_SOCIAL_description">ચિત્રો લો અને તેને સામાજિક નેટવર્ક્સ પર શેર કરો.</string>
     <string name="SM_SPORTS">ખેલકૂદ</string>
     <string name="SM_SPORTS_SCENE_description">ઝડપી ગતિમાન પાત્રોના વધુ સ્પષ્ટ ચિત્રો લો.</string>
     <string name="SM_STORY">ધ્વનિ &amp; શોટ</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">ચોરસ</string>
     <string name="help_change_mode_tip_1">ઉપલબ્ધ કૅમેરા મોડ્સ જોવા માટે જમણે સ્વાઇપ કરો.</string>
     <string name="help_change_mode_tip_2">તમે જે મોડનો ઉપયોગ કરવા માંગો છો તેને પસંદ કરો.</string>
+    <string name="help_change_mode_tip_3">સરળ મોડ સક્ષમ કરેલ હોય ત્યારે માત્ર સ્વતઃ અને સેલ્ફી કૅમેરા મોડ્સ ઉપલબ્ધ હોય છે.</string>
     <string name="help_changing_the_camera_mode">કૅમેરા મોડ્સ પસંદ કરવા</string>
+    <string name="help_changing_the_camera_mode_header">કૅમેરા મોડને પસંદ કરી રહ્યું છે</string>
+    <string name="help_changing_the_camera_mode_title">કૅમેરા મોડ બદલી રહ્યું છે</string>
     <string name="help_recording_videos">વિડિયોઝ રેકોર્ડ કરવા</string>
     <string name="help_recording_videos_tip_1">%s ને ટેપ કરો.</string>
     <string name="help_recording_videos_tip_1_tts">કેમકોર્ડર બટનને ટેપ કરો.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">રેકોડિંગ બંધ કરવા માટે બંધ કરો બટન ટેપ કરો.</string>
     <string name="help_recording_videos_tip_snapshot">વિડિયો રેકોર્ડ કરતી વખતે ચિત્રો લેવા માટે %s ટેપ કરો.</string>
     <string name="help_recording_videos_tip_snapshot_tts">વિડિયો રેકોર્ડ કરતી વખતે ચિત્રો લેવા માટે કૅમેરા બટનને ટેપ કરો.</string>
-    <string name="help_section_summary">બધા પ્રસંગો માટે યોગ્ય બનાવવા માટે, વિવિધ ભિન્ન પ્રભાવોનો ઉપયોગ કરીને ચિત્રો લો અથવા વિડિયોઝ રેકોર્ડ કરો. સરળ મોડ સક્ષમ કરેલ હોય ત્યારે માત્ર સ્વતઃ અને સેલ્ફી કૅમેરા મોડ્સ ઉપલબ્ધ હોય છે અને કોઈ પ્રભાવો લાગુ કરી શકાતા નથી.</string>
+    <string name="help_section_summary">બધા ઘટનાોને અનુકૂલ થવા, વિવિધ ભિન્ન પ્રભાવોનો ઉપયોગ કરીને ચિત્રો લો અથવા વિડિયોઝ રેકોર્ડ કરો.</string>
     <string name="help_selecting_camera_mode">કૅમેરા મોડ્સ પસંદ કરવા</string>
     <string name="help_taking_pictures">ચિત્રો લેવા</string>
     <string name="help_taking_pictures_tip_1">તમે ધ્યાનમાં લાવવા માંગતા હોય તે પદાર્થને ટેપ કરો.</string>
@@ -415,7 +420,8 @@
     <string name="help_text_panorama">પહેલાં કૅમેરા બટન ટેપ કરો, પછી ઉપકરણને એક દિશામાં ધીરેથી ખસેડો.</string>
     <string name="help_text_wideselfie">કૅમેરા બટન ટેપ કરો અને તમારા ઉપકરણ ધીમે ધીમે એક દિશામાં ફેરવો.</string>
     <string name="help_viewing_pics_and_videos_tip_1">તમે ચિત્રો અથવા વિડિયોઝ લો પછી તેઓને તરત જ જોવા માટે %s ને ટેપ કરો.</string>
-    <string name="help_viewing_pics_and_videos_tip_1_tts">તમે તમારા ચિત્રો અથવા વિડિઓઝને લેવા કે તેને રેકોર્ડ કરવા પછી તરત જ તેને જોવા માટે ઝડપી દૃશ્ય બટન ટેપ કરો.</string>
+    <string name="help_viewing_pics_and_videos_tip_1_tts">તમે તમારા ચિત્રો અથવા વિડિયોઝને લેવા કે તેને રેકોર્ડ કરવા પછી તરત જ તેને જોવા માટે ઝડપી દૃશ્ય બટન ટેપ કરો.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ચિત્રો અને વિડિયો જોવા</string>
     <string name="high_resolution_video_description">%s રીઝોલ્યૂશન્સમાં રેકોર્ડ કરતી વખતે નીચે આપેલ ઉપલબ્ધ રહેશે નહીં:</string>
     <string name="highlight">હાઇલાઇટ્સ</string>
@@ -634,7 +640,7 @@
     <string name="video_stabilisation_restriction_guide">પાછલા કૅમેરાનો ઉપયોગ કરીને વિડિયોઝ રેકોર્ડિંગ કરતી વખતે ધ્રુજારીઓ અને અસ્થિરતા સુધારો.</string>
     <string name="viewmode_fullmview">પૂર્ણ સ્ક્રીન</string>
     <string name="viewmode_normalview">પ્રમાણભૂત</string>
-    <string name="viewmode_tag_summary">પૂર્ણ સ્ક્રીનનો ઉપયોગ કરી ચિત્રો અને વિડિઓઝનું પૂર્વાવલોકન કરો.</string>
+    <string name="viewmode_tag_summary">પૂર્ણ સ્ક્રીનનો ઉપયોગ કરી ચિત્રો અને વિડિયોઝનું પૂર્વાવલોકન કરો.</string>
     <string name="voice_assistant_dialog_msg">કૅમેરામાં Voice Assistant વિસ્તૃત કરવા માટે, અવાજ નિયંત્રણને સક્ષમ કરવામાં આવશે.</string>
     <string name="voice_assistant_setting_msg">અવાજ માર્ગદર્શિકાને સક્ષમ કરવામાં અસમર્થ. Voice Assistant ને સક્ષમ કરો અને ફરીથી પ્રયાસ કરો.</string>
     <string name="voice_control_summary">“%1$s”, “%2$s”, “%3$s”, અથવા “%4$s” બોલીને ચિત્રો લો અથવા “%5$s” બોલીને વિડિયોઝ રેકોર્ડ કરો.</string>

@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/engine/CommonEngine;
 
     .prologue
-    .line 6161
+    .line 6190
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$12;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,18 +41,18 @@
     .locals 3
 
     .prologue
-    .line 6164
+    .line 6193
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$12;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->setOrientationAndUpdateParameter()V
     invoke-static {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2400(Lcom/sec/android/app/camera/engine/CommonEngine;)V
 
-    .line 6165
+    .line 6194
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$12;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/engine/CommonEngine;->updateGpsParameters()V
 
-    .line 6166
+    .line 6195
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$12;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$12;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
@@ -65,7 +65,7 @@
     # invokes: Lcom/sec/android/app/camera/engine/CommonEngine;->setParameters(Lcom/samsung/android/camera/core/SemCamera$Parameters;)V
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/engine/CommonEngine;->access$2200(Lcom/sec/android/app/camera/engine/CommonEngine;Lcom/samsung/android/camera/core/SemCamera$Parameters;)V
 
-    .line 6167
+    .line 6196
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$12;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -76,7 +76,7 @@
 
     invoke-interface {v0, v1, v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->playCameraSound(II)V
 
-    .line 6169
+    .line 6198
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$12;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     # getter for: Lcom/sec/android/app/camera/engine/CommonEngine;->mCameraDevice:Lcom/samsung/android/camera/core/SemCamera;
@@ -86,7 +86,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/camera/core/SemCamera;->startMotionPanorama()V
 
-    .line 6170
+    .line 6199
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$12;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mStateMessageHandler:Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;
@@ -95,6 +95,6 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->sendEmptyMessage(I)Z
 
-    .line 6171
+    .line 6200
     return-void
 .end method

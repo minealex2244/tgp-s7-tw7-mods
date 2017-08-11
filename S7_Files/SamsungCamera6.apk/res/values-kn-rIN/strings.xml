@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">ನಿಧಾನ ಚಲನೆಯಲ್ಲಿ ವೀಕ್ಷಿಸುವುದಕ್ಕಾಗಿ ಹೆಚ್ಚು ಫ್ರೇಮ್ ದರದಲ್ಲಿ ವೀಡಿಯೊಗಳನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿ. ನೀವು ಅವುಗಳನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿದ ನಂತರ ನಿಧಾನ ಚಲನೆಯಲ್ಲಿ ಪ್ರತಿ ವೀಡಿಯೊದ ನಿರ್ದಿಷ್ಟ ಆಯ್ಕೆಯನ್ನು ಪ್ಲೇ ಮಾಡಬಹುದು.</string>
     <string name="SM_SMART_SELFSHOT">ಹಿಂಬದಿ-ಕ್ಯಾಮರಾ ಸೆಲ್ಫೀ</string>
     <string name="SM_SMART_SELFSHOT_description">ನಿಮ್ಮ ಮುಖದ ಚಿತ್ರವನ್ನು ನೀವು ತೆಗೆದುಕೊಳ್ಳುವಾಗ ಮುಂಭಾಗದ ಕ್ಯಾಮರಾವು ನಿಮ್ಮ ಮುಖವನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಗುರುತಿಸಿ ಕೇಂದ್ರೀಕರಿಸುತ್ತದೆ.</string>
+    <string name="SM_SOCIAL">ಸಾಮಾಜಿಕ</string>
+    <string name="SM_SOCIAL_description">ಚಿತ್ರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ ಹಾಗೂ ಸುಲಭವಾಗಿ ಅವುಗಳನ್ನು ಸಾಮಾಜಿಕ ನೆಟ್‍ವರ್ಕ್‍ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ.</string>
     <string name="SM_SPORTS">ಕ್ರೀಡೆಗಳು</string>
     <string name="SM_SPORTS_SCENE_description">ವೇಗವಾಗಿ ಚಲಿಸುತ್ತಿರುವ ವಸ್ತುಗಳ ಸ್ಪಷ್ಟ ಚಿತ್ರವನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ.</string>
     <string name="SM_STORY">ಶಬ್ದ &amp; ಶಾಟ್</string>
@@ -261,7 +263,7 @@
     <string name="Title_Viewmode">ಪೂರ್ಣ ಪರದೆ ವೀಕ್ಷಣೆ (16:9)</string>
     <string name="Title_Voice_Capture">ಧ್ವನಿ ನಿಯಂತ್ರಣ</string>
     <string name="Title_Voice_guide">ಧ್ವನಿ ಗೈಡ್</string>
-    <string name="Title_Volume_Key_As">ವಾಲ್ಯೂಮ್ ಕೀ ಫಂಕ್ಷನ್</string>
+    <string name="Title_Volume_Key_As">ವಾಲ್ಯೂಮ್ ಕೀ ಕಾರ್ಯ</string>
     <string name="Title_WhiteBalance">ವೈಟ್ ಬ್ಯಾಲೆನ್ಸ್</string>
     <string name="Title_common">ಸಾಮಾನ್ಯ</string>
     <string name="Title_front">ಮುಂದಿನ ಕ್ಯಾಮರಾ</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">ಸ್ಕ್ವೇರ್</string>
     <string name="help_change_mode_tip_1">ಲಭ್ಯ ಕ್ಯಾಮರಾ ಮೋಡ್‍ಗಳನ್ನು ವೀಕ್ಷಿಸಲು ಬಲಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ.</string>
     <string name="help_change_mode_tip_2">ನೀವು ಬಳಸಲು ಬಯಸುವ ಮೋಡ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.</string>
+    <string name="help_change_mode_tip_3">ಸುಲಭ ಮೋಡ್ ಶಕ್ತಗೊಂಡಿರುವಾಗ ಸ್ವಯಂ ಹಾಗೂ ಸೆಲ್ಫೀ ಕ್ಯಾಮರಾ ಮೋಡ್‍ಗಳು ಮಾತ್ರ ಲಭ್ಯವಿರುತ್ತವೆ.</string>
     <string name="help_changing_the_camera_mode">ಕ್ಯಾಮರಾ ಮೋಡ್ ಆಯ್ಕೆಮಾಡಲಾಗುತ್ತಿದೆ</string>
+    <string name="help_changing_the_camera_mode_header">ಕ್ಯಾಮರಾ ಮೋಡ್ ಶೋಧಿಸುತ್ತಿದೆ</string>
+    <string name="help_changing_the_camera_mode_title">ಕ್ಯಾಮರಾ ಮೋಡ್ ಬದಲಾಯಿಸುತ್ತಿದೆ</string>
     <string name="help_recording_videos">ವೀಡಿಯೋ ರೆಕಾರ್ಡ್ ಮಾಡುತ್ತಿದೆ</string>
     <string name="help_recording_videos_tip_1">%s ತಟ್ಟಿ.</string>
     <string name="help_recording_videos_tip_1_tts">ಕ್ಯಾಮ್‌‌ಕಾರ್ಡರ್‌ ಬಟನ್ ತಟ್ಟಿ.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">ರೆಕಾರ್ಡಿಂಗ್‌ ನಿಲ್ಲಿಸಲು ನಿಲ್ಲಿಸು ಬಟನ್ ಒತ್ತಿ.</string>
     <string name="help_recording_videos_tip_snapshot">ವಿಡಿಯೋ ರೆಕಾರ್ಡಿಂಗ್‌ ಮಾಡುವಾಗ ಚಿತ್ರ ತೆಗೆಯಲು %s ತಟ್ಟಿ.</string>
     <string name="help_recording_videos_tip_snapshot_tts">ವಿಡಿಯೋ ರೆಕಾರ್ಡಿಂಗ್‌ ಮಾಡುವಾಗ ಚಿತ್ರ ತೆಗೆಯಲು ಕ್ಯಾಮರಾ ಬಟನ್‌ ತಟ್ಟಿ.</string>
-    <string name="help_section_summary">ಎಲ್ಲಾ ಸಂದರ್ಭಗಳಿಗೆ ಹೊಂದುವ ರೀತಿಯಲ್ಲಿ ವಿಭಿನ್ನ ಎಫೆಕ್ಟ್‌ಗಳನ್ನು ಬಳಸಿ ಚಿತ್ರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ ಅಥವಾ ವೀಡಿಯೋಗಳನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿ. ಸುಲಭ ಮೋಡ್ ಶಕ್ತಗೊಂಡಿರುವಾಗ ಸ್ವಯಂ ಹಾಗೂ ಸೆಲ್ಫೀ ಕ್ಯಾಮರಾ ಮೋಡ್‍ಗಳು ಮಾತ್ರ ಲಭ್ಯವಿರುತ್ತವೆ ಮತ್ತು ಯಾವುದೇ ಎಫೆಕ್ಟ್‌ಗಳನ್ನು ಅನ್ವಯಿಸಬೇಕಾಗಿಲ್ಲ.</string>
+    <string name="help_section_summary">ಬೇರೆ ಬೇರೆ ಎಫೆಕ್ಟ್‌ಗಳ ವೈವಿಧ್ಯವನ್ನು ಬಳಸುವ ಮೂಲಕ, ಎಲ್ಲ ಸಂದರ್ಭಗಳಿಗೆ ಸೂಕ್ತವಾಗುವ ಚಿತ್ರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ ಅಥವಾ ವೀಡಿಯೋಗಳನ್ನು ರೆಕಾರ್ಡ್ ಮಾಡಿ.</string>
     <string name="help_selecting_camera_mode">ಕ್ಯಾಮರಾ ಮೋಡ್ ಆಯ್ಕೆಮಾಡಲಾಗುತ್ತಿದೆ</string>
     <string name="help_taking_pictures">ಚಿತ್ರಗಳನ್ನು ತೆಗೆಯುತ್ತಿದೆ</string>
     <string name="help_taking_pictures_tip_1">ಫೋಕಸ್ ಮಾಡುವುದಕ್ಕೆ ತರಲು ಬಯಸುವ ವಸ್ತುವಿನ ಮೇಲೆ ತಟ್ಟಿ.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">ಕ್ಯಾಮರಾ ಬಟನ್ ಅನ್ನು ತಟ್ಟಿ ಮತ್ತು ನಿಮ್ಮ ಸಾಧನವನ್ನು ಒಂದು ದಿಕ್ಕಿನಲ್ಲಿ ನಿಧಾನವಾಗಿ ತಿರುಗಿಸಿ.</string>
     <string name="help_viewing_pics_and_videos_tip_1">ನಿಮ್ಮ ಚಿತ್ರಗಳು ಅಥವಾ ವೀಡಿಯೊಗಳನ್ನು ನೀವು ಸೆರೆಹಿಡಿದ ಇಲ್ಲವೇ ರೆಕಾರ್ಡ್ ಮಾಡಿದ ಕೂಡಲೇ ಅವುಗಳನ್ನು ವೀಕ್ಷಿಸಲು %s ತಟ್ಟಿ.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">ನಿಮ್ಮ ಚಿತ್ರಗಳು ಅಥವಾ ವೀಡಿಯೊಗಳನ್ನು ಸೆರೆಹಿಡಿದ ಕೂಡಲೇ ಅವುಗಳನ್ನು ವೀಕ್ಷಿಸಲು ತ್ವರಿತ ವೀಕ್ಷಣೆ ಬಟನ್ ತಟ್ಟಿ.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">ಚಿತ್ರಗಳು ಮತ್ತು ವೀಡಿಯೊಗಳ ವೀಕ್ಷಣೆ</string>
     <string name="high_resolution_video_description">%s ರೆಸಲ್ಯೂಷನ್‌ಗಳಲ್ಲಿ ರೆಕಾರ್ಡ್ ಮಾಡುತ್ತಿರುವಾಗ ಈ ಮುಂದಿನವುಗಳು ಲಭ್ಯವಿರುವುದಿಲ್ಲ:</string>
     <string name="highlight">ಹೈಲೈಟ್‌ಗಳು</string>

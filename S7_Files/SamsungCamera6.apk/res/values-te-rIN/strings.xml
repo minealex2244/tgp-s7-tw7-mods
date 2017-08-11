@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">మందగమన కదలికలో వీక్షించడం కోసం వీడియోలను అధిక ఫ్రేమ్ రేటుతో రికార్డ్ చేయండి. మీరు ప్రతి వీడియోను రికార్డ్ చేసిన తర్వాత వాటిలో నిర్దిష్ట భాగాన్ని మందగమన కదలికతో ప్లే చేయవచ్చు.</string>
     <string name="SM_SMART_SELFSHOT">వెనుక-కెమెరా సెల్ఫీ</string>
     <string name="SM_SMART_SELFSHOT_description">మీరు స్వీయ-పొట్రైయిట్ చిత్రాలు తీస్తున్నప్పుడు స్వయంచాలకంగా వెనుక కెమెరా మీ ముఖాన్ని గుర్తిస్తుంది మరియు ఫోకస్ చేస్తుంది.</string>
+    <string name="SM_SOCIAL">సామాజికం</string>
+    <string name="SM_SOCIAL_description">చిత్రాలను తీసి, వాటిని సామాజిక నెట్‌వర్క్‌లో సులభంగా భాగస్వామ్యం చేయండి.</string>
     <string name="SM_SPORTS">క్రీడలు</string>
     <string name="SM_SPORTS_SCENE_description">త్వరగా కదిలే విషయాల యొక్క స్పష్టమైన చిత్రాలను తీస్తుంది.</string>
     <string name="SM_STORY">సౌండ్ &amp; షాట్</string>
@@ -261,9 +263,9 @@
     <string name="Title_Viewmode">పూర్తి స్క్రీన్ వీక్షణ (16:9)</string>
     <string name="Title_Voice_Capture">వాయిస్ నియంత్రణ</string>
     <string name="Title_Voice_guide">వాయిస్ మార్గదర్శకం</string>
-    <string name="Title_Volume_Key_As">వాల్యూమ్ కీ ఫంక్షన్</string>
+    <string name="Title_Volume_Key_As">వాల్యూమ్ కీ విధి</string>
     <string name="Title_WhiteBalance">తెలుపు సమతుల్యత</string>
-    <string name="Title_common">ఉమ్మడిగా</string>
+    <string name="Title_common">సాధారణంగా</string>
     <string name="Title_front">ముందరి కెమెరా</string>
     <string name="Title_rear">రేర్ కెమెరా</string>
     <string name="Title_rear_lens_distortion_correction">ఆకారం దిద్దుబాటు</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">చతురస్రం</string>
     <string name="help_change_mode_tip_1">అందుబాటులో ఉన్న కెమెరా మోడ్‌లను వీక్షించడానికి కుడివైపుకి స్వైప్ చేయండి.</string>
     <string name="help_change_mode_tip_2">మీరు ఉపయోగించాలనుకునే మోడ్‌ను ఎంచుకోండి.</string>
+    <string name="help_change_mode_tip_3">సులభ మోడ్ ప్రారంభించబడి ఉన్నప్పుడు స్వీయ లేదా సెల్ఫీ కెమెరా మోడ్‌లు మాత్రమే అందుబాటులో ఉంటాయి.</string>
     <string name="help_changing_the_camera_mode">కెమెరా మోడ్‌లను ఎంచుకోవడం</string>
+    <string name="help_changing_the_camera_mode_header">కెమెరా మోడ్‌ను ఎంచుకోవడం</string>
+    <string name="help_changing_the_camera_mode_title">కెమెరా మోడ్‌ను మార్చడం</string>
     <string name="help_recording_videos">వీడియోలను రికార్డ్ చేయడం</string>
     <string name="help_recording_videos_tip_1">%sను ట్యాప్ చేయండి.</string>
     <string name="help_recording_videos_tip_1_tts">క్యామ్‌కార్డర్ బటన్‌ను ట్యాప్ చేయండి.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">రికార్డింగ్‌ను ఆపివేయడానికి ఆపివేయి బటన్‌ను ట్యాప్ చేయండి.</string>
     <string name="help_recording_videos_tip_snapshot">వీడియో రికార్డ్ చేస్తున్నప్పుడు చిత్రాలు తీయడానికి %s ట్యాప్ చేయండి.</string>
     <string name="help_recording_videos_tip_snapshot_tts">వీడియో రికార్డ్ చేస్తున్నప్పుడు చిత్రాలు తీయడానికి కెమెరా బటన్ ట్యాప్ చేయండి.</string>
-    <string name="help_section_summary">అన్ని సందర్భాలకు సరిపోయే విధంగా పలు ప్రభావాలతో చిత్రాలను తీస్తుంది లేదా వీడియోలను రికార్డ్ చేస్తుంది. సులభ మోడ్ ప్రారంభించబడి ఉన్నప్పుడు స్వీయ లేదా సెల్ఫీ కెమెరా మోడ్‌లు మాత్రమే అందుబాటులో ఉంటాయి మరియు ఎలాంటి ప్రభావాలు వర్తించబడవు.</string>
+    <string name="help_section_summary">అన్ని సందర్భాలకు సరిపోయేలా అందుబాటులో ఉన్న విభన్న రకాల ప్రభావాలను ఉపయోగించి చిత్రాలను తీయండి లేదా వీడియోలను రికార్డ్ చేయండి.</string>
     <string name="help_selecting_camera_mode">కెమెరా మోడ్‌లను ఎంచుకోవడం</string>
     <string name="help_taking_pictures">చిత్రాలను తీయడం</string>
     <string name="help_taking_pictures_tip_1">మీరు ఫోకస్‌లోకి తేవాలనుకునే ఆబ్జెక్ట్‌ను ట్యాప్ చేయండి.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">కెమెరా బటన్‌ని ట్యాప్ చేసి, ఒక దిశలో మీ పరికరాన్ని నెమ్మదిగా తరలించండి.</string>
     <string name="help_viewing_pics_and_videos_tip_1">మీ చిత్రాలు లేదా వీడియోలను తీసిన తర్వాత వెంటనే వాటిని వీక్షించడానికి %sని ట్యాప్ చేయండి.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">మీ చిత్రాలు లేదా వీడియోలను తీసిన తర్వాత వెంటనే వాటిని వీక్షించడానికి త్వరిత వీక్షణ బటన్‌ను ట్యాప్ చేయండి.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">చిత్రాలు, వీడియోలను వీక్షించడం</string>
     <string name="high_resolution_video_description">%s రిజల్యూషన్‌లలో రికార్డ్ చేస్తున్నప్పుడు కిందివి అందుబాటులో ఉండవు:</string>
     <string name="highlight">ముఖ్య విషయాలు</string>

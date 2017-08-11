@@ -32,7 +32,7 @@
 
 .field private final REVIEW_GROUP_HEIGHT:F
 
-.field private REVIEW_GROUP_WIDTH:F
+.field private final REVIEW_GROUP_WIDTH:F
 
 .field private final REVIEW_NORMAL_HEIGHT:F
 
@@ -182,7 +182,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->SCREEN_HEIGHT:F
 
     .line 58
-    const v0, 0x7f0b019f
+    const v0, 0x7f0b01a0
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -191,7 +191,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_WIDE_WIDTH:F
 
     .line 59
-    const v0, 0x7f0b019e
+    const v0, 0x7f0b019f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -209,7 +209,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_SQUARE_WIDTH:F
 
     .line 61
-    const v0, 0x7f0b019d
+    const v0, 0x7f0b019e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -218,7 +218,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_NORMAL_WIDTH:F
 
     .line 62
-    const v0, 0x7f0b019c
+    const v0, 0x7f0b019d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -267,7 +267,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_WIDE_POS_Y:F
 
     .line 67
-    const v0, 0x7f0b0342
+    const v0, 0x7f0b0343
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -276,7 +276,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
 
     .line 68
-    const v0, 0x7f0b0341
+    const v0, 0x7f0b0342
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -285,7 +285,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
     .line 69
-    const v0, 0x7f0b0340
+    const v0, 0x7f0b0341
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -294,7 +294,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_GAP:F
 
     .line 70
-    const v0, 0x7f0b033f
+    const v0, 0x7f0b0340
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -303,7 +303,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
 
     .line 71
-    const v0, 0x7f0b0343
+    const v0, 0x7f0b0344
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -531,6 +531,10 @@
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 457
+    iget v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+
+    .line 458
+    .local v4, "buttonWidth":F
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
 
     move-result v0
@@ -543,10 +547,31 @@
 
     const/4 v1, 0x2
 
-    if-ne v0, v1, :cond_1
+    if-ne v0, v1, :cond_2
 
-    .line 458
+    .line 459
     :cond_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
+
+    move-result v0
+
+    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    mul-float/2addr v1, v2
+
+    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
+
+    add-float/2addr v1, v2
+
+    cmpg-float v0, v0, v1
+
+    if-gez v0, :cond_1
+
+    .line 460
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
@@ -559,11 +584,10 @@
 
     const/high16 v1, 0x40000000    # 2.0f
 
-    div-float/2addr v0, v1
+    div-float v4, v0, v1
 
-    iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    .line 462
+    .line 467
+    :cond_1
     :goto_0
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
@@ -575,11 +599,9 @@
 
     const/4 v3, 0x0
 
-    iget v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
     iget v5, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
-    const v6, 0x7f0201c9
+    const v6, 0x7f0201c7
 
     const/4 v7, 0x0
 
@@ -589,14 +611,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 463
+    .line 468
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
-    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
-
-    sub-float/2addr v1, v2
+    sub-float v1, v4, v1
 
     const/high16 v2, 0x40000000    # 2.0f
 
@@ -614,7 +634,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLButton;->setResourceOffset(FF)Z
 
-    .line 464
+    .line 469
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -623,7 +643,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a015b
+    const v2, 0x7f0a015d
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -645,17 +665,17 @@
 
     const v3, 0x7f0d003c
 
-    .line 465
+    .line 470
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
 
     move-result v3
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    .line 464
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/samsung/android/glview/GLButton;->setText(Ljava/lang/String;FIZ)V
+    .line 469
+    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/samsung/android/glview/GLButton;->setText(Ljava/lang/String;FIZ)V
 
-    .line 466
+    .line 471
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x2
@@ -664,7 +684,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLButton;->setTextAlign(II)V
 
-    .line 467
+    .line 472
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
@@ -677,27 +697,27 @@
 
     iget v3, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_TEXT_FONT_SIZE:F
 
-    iget-object v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+    iget-object v5, p0, Lcom/sec/android/app/camera/menu/QuickView;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
+    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
 
-    move-result v4
+    move-result v5
 
-    mul-float/2addr v3, v4
+    mul-float/2addr v3, v5
 
-    const/high16 v4, 0x40000000    # 2.0f
+    const/high16 v5, 0x40000000    # 2.0f
 
-    div-float/2addr v3, v4
+    div-float/2addr v3, v5
 
     add-float/2addr v2, v3
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLButton;->setTextPosition(FF)V
 
-    .line 468
+    .line 473
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
@@ -710,35 +730,35 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setStroke(ZFI)V
 
-    .line 469
+    .line 474
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 470
+    .line 475
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 471
+    .line 476
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 472
+    .line 477
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 473
+    .line 478
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
@@ -747,19 +767,19 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 474
+    .line 479
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->updateLayout(Z)V
 
-    .line 475
+    .line 480
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 478
+    .line 483
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
@@ -776,23 +796,19 @@
 
     const/high16 v3, 0x40000000    # 2.0f
 
-    iget v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
     mul-float/2addr v3, v4
 
     sub-float/2addr v2, v3
 
     float-to-double v2, v2
 
-    const-wide v4, 0x3fd3333333333333L    # 0.3
+    const-wide v6, 0x3fd3333333333333L    # 0.3
 
-    mul-double/2addr v2, v4
+    mul-double/2addr v2, v6
 
     sub-double/2addr v0, v2
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    float-to-double v2, v2
+    float-to-double v2, v4
 
     sub-double/2addr v0, v2
 
@@ -804,7 +820,7 @@
 
     add-double v10, v0, v2
 
-    .line 479
+    .line 484
     .local v10, "button_x":D
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
@@ -826,7 +842,7 @@
 
     float-to-double v12, v0
 
-    .line 480
+    .line 485
     .local v12, "button_y":D
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
@@ -838,7 +854,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
 
-    .line 483
+    .line 488
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
@@ -847,9 +863,7 @@
 
     const/high16 v1, 0x40000000    # 2.0f
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    mul-float/2addr v1, v2
+    mul-float/2addr v1, v4
 
     sub-float/2addr v0, v1
 
@@ -859,9 +873,7 @@
 
     mul-double/2addr v0, v2
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    float-to-double v2, v2
+    float-to-double v2, v4
 
     add-double/2addr v0, v2
 
@@ -873,7 +885,7 @@
 
     add-double v10, v0, v2
 
-    .line 484
+    .line 489
     iget v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShadowPadding:Landroid/graphics/Rect;
@@ -886,7 +898,7 @@
 
     float-to-double v12, v0
 
-    .line 485
+    .line 490
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x2
@@ -897,85 +909,8 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
 
-    .line 488
-    iget v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
-
-    iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShadowPadding:Landroid/graphics/Rect;
-
-    iget v1, v1, Landroid/graphics/Rect;->bottom:I
-
-    int-to-float v1, v1
-
-    add-float/2addr v0, v1
-
-    float-to-double v10, v0
-
-    .line 489
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
-
-    invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getHeight()F
-
-    move-result v0
-
-    float-to-double v0, v0
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
-
-    invoke-virtual {v2}, Lcom/samsung/android/glview/GLImage;->getHeight()F
-
-    move-result v2
-
-    const/high16 v3, 0x40000000    # 2.0f
-
-    iget v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    mul-float/2addr v3, v4
-
-    sub-float/2addr v2, v3
-
-    float-to-double v2, v2
-
-    const-wide v4, 0x3fd3333333333333L    # 0.3
-
-    mul-double/2addr v2, v4
-
-    sub-double/2addr v0, v2
-
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    float-to-double v2, v2
-
-    sub-double/2addr v0, v2
-
-    iget-object v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShadowPadding:Landroid/graphics/Rect;
-
-    iget v2, v2, Landroid/graphics/Rect;->left:I
-
-    int-to-double v2, v2
-
-    add-double v12, v0, v2
-
-    .line 490
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
-
-    const/4 v1, 0x1
-
-    double-to-float v2, v10
-
-    double-to-float v3, v12
-
-    invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
-
     .line 493
-    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
-
-    invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
-
-    move-result v0
-
-    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
-
-    sub-float/2addr v0, v1
+    iget v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShadowPadding:Landroid/graphics/Rect;
 
@@ -994,11 +929,82 @@
 
     move-result v0
 
+    float-to-double v0, v0
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
+
+    invoke-virtual {v2}, Lcom/samsung/android/glview/GLImage;->getHeight()F
+
+    move-result v2
+
+    const/high16 v3, 0x40000000    # 2.0f
+
+    mul-float/2addr v3, v4
+
+    sub-float/2addr v2, v3
+
+    float-to-double v2, v2
+
+    const-wide v6, 0x3fd3333333333333L    # 0.3
+
+    mul-double/2addr v2, v6
+
+    sub-double/2addr v0, v2
+
+    float-to-double v2, v4
+
+    sub-double/2addr v0, v2
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShadowPadding:Landroid/graphics/Rect;
+
+    iget v2, v2, Landroid/graphics/Rect;->left:I
+
+    int-to-double v2, v2
+
+    add-double v12, v0, v2
+
+    .line 495
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
+
+    const/4 v1, 0x1
+
+    double-to-float v2, v10
+
+    double-to-float v3, v12
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
+
+    .line 498
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
+
+    move-result v0
+
+    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
+
+    sub-float/2addr v0, v1
+
+    iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShadowPadding:Landroid/graphics/Rect;
+
+    iget v1, v1, Landroid/graphics/Rect;->bottom:I
+
+    int-to-float v1, v1
+
+    add-float/2addr v0, v1
+
+    float-to-double v10, v0
+
+    .line 499
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getHeight()F
+
+    move-result v0
+
     const/high16 v1, 0x40000000    # 2.0f
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    mul-float/2addr v1, v2
+    mul-float/2addr v1, v4
 
     sub-float/2addr v0, v1
 
@@ -1008,9 +1014,7 @@
 
     mul-double/2addr v0, v2
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    float-to-double v2, v2
+    float-to-double v2, v4
 
     add-double/2addr v0, v2
 
@@ -1022,7 +1026,7 @@
 
     add-double v12, v0, v2
 
-    .line 495
+    .line 500
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x3
@@ -1033,20 +1037,41 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
 
-    .line 497
+    .line 502
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 498
+    .line 503
     return-void
 
-    .line 460
+    .line 463
     .end local v10    # "button_x":D
     .end local v12    # "button_y":D
-    :cond_1
+    :cond_2
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getHeight()F
+
+    move-result v0
+
+    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    mul-float/2addr v1, v2
+
+    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
+
+    add-float/2addr v1, v2
+
+    cmpg-float v0, v0, v1
+
+    if-gez v0, :cond_1
+
+    .line 464
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getHeight()F
@@ -1059,9 +1084,7 @@
 
     const/high16 v1, 0x40000000    # 2.0f
 
-    div-float/2addr v0, v1
-
-    iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+    div-float v4, v0, v1
 
     goto/16 :goto_0
 .end method
@@ -1070,14 +1093,18 @@
     .locals 14
 
     .prologue
-    .line 501
+    .line 506
     const-string v0, "QuickView"
 
     const-string v1, "addShareButton"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 510
+    .line 515
+    iget v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+
+    .line 516
+    .local v4, "buttonWidth":F
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
 
     move-result v0
@@ -1090,10 +1117,31 @@
 
     const/4 v1, 0x2
 
-    if-ne v0, v1, :cond_1
+    if-ne v0, v1, :cond_2
 
-    .line 511
+    .line 517
     :cond_0
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
+
+    move-result v0
+
+    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    mul-float/2addr v1, v2
+
+    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
+
+    add-float/2addr v1, v2
+
+    cmpg-float v0, v0, v1
+
+    if-gez v0, :cond_1
+
+    .line 518
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
@@ -1106,11 +1154,10 @@
 
     const/high16 v1, 0x40000000    # 2.0f
 
-    div-float/2addr v0, v1
+    div-float v4, v0, v1
 
-    iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    .line 515
+    .line 525
+    :cond_1
     :goto_0
     new-instance v0, Lcom/samsung/android/glview/GLButton;
 
@@ -1122,11 +1169,9 @@
 
     const/4 v3, 0x0
 
-    iget v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
     iget v5, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
-    const v6, 0x7f0201ca
+    const v6, 0x7f0201c8
 
     const/4 v7, 0x0
 
@@ -1136,14 +1181,12 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
-    .line 516
+    .line 526
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
-    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
-
-    sub-float/2addr v1, v2
+    sub-float v1, v4, v1
 
     const/high16 v2, 0x40000000    # 2.0f
 
@@ -1161,7 +1204,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLButton;->setResourceOffset(FF)Z
 
-    .line 517
+    .line 527
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -1170,7 +1213,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0219
+    const v2, 0x7f0a021f
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1192,17 +1235,17 @@
 
     const v3, 0x7f0d003c
 
-    .line 518
+    .line 528
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getColor(I)I
 
     move-result v3
 
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
-    .line 517
-    invoke-virtual {v0, v1, v2, v3, v4}, Lcom/samsung/android/glview/GLButton;->setText(Ljava/lang/String;FIZ)V
+    .line 527
+    invoke-virtual {v0, v1, v2, v3, v5}, Lcom/samsung/android/glview/GLButton;->setText(Ljava/lang/String;FIZ)V
 
-    .line 519
+    .line 529
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x2
@@ -1211,7 +1254,7 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLButton;->setTextAlign(II)V
 
-    .line 520
+    .line 530
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
@@ -1224,27 +1267,27 @@
 
     iget v3, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_TEXT_FONT_SIZE:F
 
-    iget-object v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+    iget-object v5, p0, Lcom/sec/android/app/camera/menu/QuickView;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
-    move-result-object v4
+    move-result-object v5
 
-    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
+    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFontScale()F
 
-    move-result v4
+    move-result v5
 
-    mul-float/2addr v3, v4
+    mul-float/2addr v3, v5
 
-    const/high16 v4, 0x40000000    # 2.0f
+    const/high16 v5, 0x40000000    # 2.0f
 
-    div-float/2addr v3, v4
+    div-float/2addr v3, v5
 
     add-float/2addr v2, v3
 
     invoke-virtual {v0, v1, v2}, Lcom/samsung/android/glview/GLButton;->setTextPosition(FF)V
 
-    .line 521
+    .line 531
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
@@ -1257,35 +1300,35 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setStroke(ZFI)V
 
-    .line 522
+    .line 532
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->enableRippleEffect(Z)V
 
-    .line 523
+    .line 533
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRippleDiameter(F)V
 
-    .line 524
+    .line 534
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotatable(Z)V
 
-    .line 525
+    .line 535
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setRotateAnimation(Z)V
 
-    .line 526
+    .line 536
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
@@ -1294,19 +1337,19 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->setOrientation(I)V
 
-    .line 527
+    .line 537
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLButton;->updateLayout(Z)V
 
-    .line 528
+    .line 538
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, p0}, Lcom/samsung/android/glview/GLButton;->setClickListener(Lcom/samsung/android/glview/GLView$ClickListener;)V
 
-    .line 531
+    .line 541
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
@@ -1315,9 +1358,7 @@
 
     const/high16 v1, 0x40000000    # 2.0f
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    mul-float/2addr v1, v2
+    mul-float/2addr v1, v4
 
     sub-float/2addr v0, v1
 
@@ -1335,7 +1376,7 @@
 
     add-double v10, v0, v2
 
-    .line 532
+    .line 542
     .local v10, "button_x":D
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
@@ -1357,7 +1398,7 @@
 
     float-to-double v12, v0
 
-    .line 533
+    .line 543
     .local v12, "button_y":D
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
@@ -1369,7 +1410,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
 
-    .line 536
+    .line 546
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
@@ -1386,17 +1427,15 @@
 
     const/high16 v3, 0x40000000    # 2.0f
 
-    iget v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
     mul-float/2addr v3, v4
 
     sub-float/2addr v2, v3
 
     float-to-double v2, v2
 
-    const-wide v4, 0x3fd3333333333333L    # 0.3
+    const-wide v6, 0x3fd3333333333333L    # 0.3
 
-    mul-double/2addr v2, v4
+    mul-double/2addr v2, v6
 
     sub-double/2addr v0, v2
 
@@ -1408,7 +1447,7 @@
 
     add-double v10, v0, v2
 
-    .line 537
+    .line 547
     iget v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShadowPadding:Landroid/graphics/Rect;
@@ -1421,7 +1460,7 @@
 
     float-to-double v12, v0
 
-    .line 538
+    .line 548
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x2
@@ -1432,7 +1471,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
 
-    .line 541
+    .line 551
     iget v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_HEIGHT:F
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShadowPadding:Landroid/graphics/Rect;
@@ -1445,7 +1484,7 @@
 
     float-to-double v10, v0
 
-    .line 542
+    .line 552
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getHeight()F
@@ -1454,9 +1493,7 @@
 
     const/high16 v1, 0x40000000    # 2.0f
 
-    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
-    mul-float/2addr v1, v2
+    mul-float/2addr v1, v4
 
     sub-float/2addr v0, v1
 
@@ -1474,7 +1511,7 @@
 
     add-double v12, v0, v2
 
-    .line 543
+    .line 553
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x1
@@ -1485,7 +1522,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
 
-    .line 546
+    .line 556
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getWidth()F
@@ -1506,7 +1543,7 @@
 
     float-to-double v10, v0
 
-    .line 547
+    .line 557
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getHeight()F
@@ -1523,17 +1560,15 @@
 
     const/high16 v3, 0x40000000    # 2.0f
 
-    iget v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
-
     mul-float/2addr v3, v4
 
     sub-float/2addr v2, v3
 
     float-to-double v2, v2
 
-    const-wide v4, 0x3fd3333333333333L    # 0.3
+    const-wide v6, 0x3fd3333333333333L    # 0.3
 
-    mul-double/2addr v2, v4
+    mul-double/2addr v2, v6
 
     sub-double/2addr v0, v2
 
@@ -1545,7 +1580,7 @@
 
     add-double v12, v0, v2
 
-    .line 548
+    .line 558
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     const/4 v1, 0x3
@@ -1556,20 +1591,41 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/samsung/android/glview/GLButton;->setLeftTop(IFF)V
 
-    .line 550
+    .line 560
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 551
+    .line 561
     return-void
 
-    .line 513
+    .line 521
     .end local v10    # "button_x":D
     .end local v12    # "button_y":D
-    :cond_1
+    :cond_2
+    iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
+
+    invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getHeight()F
+
+    move-result v0
+
+    iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+
+    const/high16 v2, 0x40000000    # 2.0f
+
+    mul-float/2addr v1, v2
+
+    iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_BUTTON_SIZE:F
+
+    add-float/2addr v1, v2
+
+    cmpg-float v0, v0, v1
+
+    if-gez v0, :cond_1
+
+    .line 522
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLImage;->getHeight()F
@@ -1582,9 +1638,7 @@
 
     const/high16 v1, 0x40000000    # 2.0f
 
-    div-float/2addr v0, v1
-
-    iput v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_GROUP_WIDTH:F
+    div-float v4, v0, v1
 
     goto/16 :goto_0
 .end method
@@ -1603,7 +1657,7 @@
 
     const/4 v7, 0x0
 
-    .line 554
+    .line 564
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     if-eqz v1, :cond_0
@@ -1612,7 +1666,7 @@
 
     if-nez v1, :cond_1
 
-    .line 555
+    .line 565
     :cond_0
     const-string v1, "QuickView"
 
@@ -1620,11 +1674,11 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 596
+    .line 606
     :goto_0
     return-void
 
-    .line 560
+    .line 570
     :cond_1
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -1632,38 +1686,38 @@
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 561
+    .line 571
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 562
+    .line 572
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/QuickView;->mDeleteButton:Lcom/samsung/android/glview/GLButton;
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 563
+    .line 573
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1, v3}, Lcom/samsung/android/glview/GLViewGroup;->removeView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 564
+    .line 574
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLViewGroup;->clear()V
 
-    .line 565
+    .line 575
     const/4 v1, 0x0
 
     iput-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 567
+    .line 577
     new-instance v0, Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/menu/QuickView;->getContext()Lcom/samsung/android/glview/GLContext;
@@ -1680,19 +1734,19 @@
 
     iput-object v0, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    .line 568
+    .line 578
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLViewGroup;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 569
+    .line 579
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/menu/QuickView;->addView(Lcom/samsung/android/glview/GLView;)V
 
-    .line 571
+    .line 581
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareViaImageWidth:F
@@ -1701,7 +1755,7 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->setSize(FF)V
 
-    .line 572
+    .line 582
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImage:Lcom/samsung/android/glview/GLImage;
 
     iget v2, p0, Lcom/sec/android/app/camera/menu/QuickView;->SCREEN_WIDTH:F
@@ -1722,43 +1776,43 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/samsung/android/glview/GLImage;->moveBaseLayoutAbsolute(FF)V
 
-    .line 574
+    .line 584
     iput-boolean v6, p0, Lcom/sec/android/app/camera/menu/QuickView;->mShareViaWorking:Z
 
-    .line 576
+    .line 586
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewBlackBackground:Lcom/samsung/android/glview/GLRectangle;
 
     if-eqz v1, :cond_2
 
-    .line 577
+    .line 587
     new-instance v8, Landroid/view/animation/AlphaAnimation;
 
     const v1, 0x3ee66666    # 0.45f
 
     invoke-direct {v8, v1, v12}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 578
+    .line 588
     .local v8, "alphaAnim":Landroid/view/animation/Animation;
     invoke-virtual {v8, v6}, Landroid/view/animation/Animation;->setFillAfter(Z)V
 
-    .line 579
+    .line 589
     iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->REVIEW_ANIMATION_DURATION:I
 
     int-to-long v2, v1
 
     invoke-virtual {v8, v2, v3}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 581
+    .line 591
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewBlackBackground:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v1, v8}, Lcom/samsung/android/glview/GLRectangle;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 582
+    .line 592
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewBlackBackground:Lcom/samsung/android/glview/GLRectangle;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLRectangle;->startAnimation()V
 
-    .line 585
+    .line 595
     .end local v8    # "alphaAnim":Landroid/view/animation/Animation;
     :cond_2
     iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImageWidth:F
@@ -1767,7 +1821,7 @@
 
     div-float v11, v1, v2
 
-    .line 586
+    .line 596
     .local v11, "reviewScaleWidth":F
     iget v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewImageHeight:F
 
@@ -1775,7 +1829,7 @@
 
     div-float v10, v1, v2
 
-    .line 587
+    .line 597
     .local v10, "reviewScaleHeight":F
     cmpl-float v1, v11, v10
 
@@ -1783,18 +1837,18 @@
 
     move v0, v11
 
-    .line 589
+    .line 599
     .local v0, "aniScale":F
     :goto_1
     new-instance v9, Landroid/view/animation/AnimationSet;
 
     invoke-direct {v9, v7}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
-    .line 590
+    .line 600
     .local v9, "reviewAnimationSet":Landroid/view/animation/AnimationSet;
     invoke-virtual {v9, v6}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
-    .line 591
+    .line 601
     iget-object v4, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     new-instance v5, Lcom/sec/android/app/camera/util/interpolator/SineEaseOut;
@@ -1815,17 +1869,17 @@
 
     invoke-virtual {v9, v1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 593
+    .line 603
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v9}, Lcom/samsung/android/glview/GLViewGroup;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 594
+    .line 604
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1}, Lcom/samsung/android/glview/GLViewGroup;->startAnimation()V
 
-    .line 595
+    .line 605
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v7, v7}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(IZ)V
@@ -1837,7 +1891,7 @@
     :cond_3
     move v0, v10
 
-    .line 587
+    .line 597
     goto :goto_1
 .end method
 
@@ -2936,7 +2990,7 @@
 
     iget-object v2, v0, Lcom/sec/android/app/camera/menu/QuickView;->mReviewGroup:Lcom/samsung/android/glview/GLViewGroup;
 
-    const v3, 0x7f0201cd
+    const v3, 0x7f0201cb
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLViewGroup;->setNinePatchBackground(I)Z
 
@@ -3044,7 +3098,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0a00e9
+    const v4, 0x7f0a00eb
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

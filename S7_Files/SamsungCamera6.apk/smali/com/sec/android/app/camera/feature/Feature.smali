@@ -160,6 +160,8 @@
 
 .field public static final BACK_CAMERA_SHOOTINGMODE_SLOW_MOTION:Z
 
+.field public static final BACK_CAMERA_SHOOTINGMODE_SOCIAL:Z
+
 .field public static final BACK_CAMERA_SHOOTINGMODE_SOUND_AND_SHOT:Z
 
 .field public static final BACK_CAMERA_SHOOTINGMODE_SPORTS_SCENE:Z
@@ -306,8 +308,6 @@
 
 .field public static final CAMERA_SCREEN_FLASH_VI:Z
 
-.field public static final CAMERA_SEPARATED_SHOOTING_MODES:Z
-
 .field public static final CAMERA_SETTING_LIST_HORIZONTAL_ALIGN_WITH_PADING:Z
 
 .field public static final CAMERA_SUPPORT_AUTO_HDR_LITE:Z
@@ -331,6 +331,8 @@
 .field public static final CAMERA_THERMISTOR_CHECK_DURATION:I = 0x1b58
 
 .field public static final CAMERA_USE_LOW_PERFORMANCE_PREVIEW:Z
+
+.field public static final COUNTRY_JAPAN:Z
 
 .field public static final COVER_CAMCORDER_RESOLUTION:Ljava/lang/String;
 
@@ -520,6 +522,8 @@
 
 .field public static final FRONT_CAMERA_SHOOTINGMODE_SHOT_AND_MORE:Z
 
+.field public static final FRONT_CAMERA_SHOOTINGMODE_SOCIAL:Z
+
 .field public static final FRONT_CAMERA_SHOOTINGMODE_SOUND_AND_SHOT:Z
 
 .field public static final FRONT_CAMERA_SHOOTINGMODE_VIDEO_COLLAGE:Z
@@ -531,6 +535,10 @@
 .field public static final FRONT_CAMERA_SHOOTINGMODE_WIDE_SELFIE_LITE:Z
 
 .field public static final FRONT_CAMERA_SQUARE_PREVIEW_WIDTH_HEIGHT:I
+
+.field public static final FRONT_CAMERA_WIDE_PREVIEW_HEIGHT:I
+
+.field public static final FRONT_CAMERA_WIDE_PREVIEW_WIDTH:I
 
 .field public static final FRONT_NIGHT_SHOOTINGMODE_PREVIEW_FPS_MIN:I
 
@@ -615,6 +623,8 @@
 .field public static final SUPPORT_DEAD_ZONE:Z
 
 .field public static final SUPPORT_DOWNLOAD_EFFECT:Z
+
+.field public static final SUPPORT_DOWNLOAD_SHOOTING_MODES:Z
 
 .field public static final SUPPORT_FACE_PRIORITY_AF:Z
 
@@ -912,542 +922,542 @@
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_OIS:Z
 
-    .line 103
+    .line 102
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_MAX_ISO:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_MAX_ISO:Ljava/lang/String;
 
-    .line 105
+    .line 104
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_CAMERA_ISO:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_CAMERA_ISO:Z
 
-    .line 107
+    .line 106
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->EXPOSURE_COMPENSATION_STEP:F
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->EXPOSURE_COMPENSATION_STEP:F
 
-    .line 109
+    .line 108
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_CAMERA_BRIGHTNESS:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_CAMERA_BRIGHTNESS:Z
 
-    .line 111
+    .line 110
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_AUTO_NIGHT_DETECTION:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_AUTO_NIGHT_DETECTION:Z
 
-    .line 113
+    .line 112
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_ANTISHAKE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_ANTISHAKE:Z
 
-    .line 114
+    .line 113
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_ANTISHAKE_DEFAULT_ON:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_ANTISHAKE_DEFAULT_ON:Z
 
-    .line 115
+    .line 114
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_FRONT_ANTISHAKE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_FRONT_ANTISHAKE:Z
 
-    .line 116
+    .line 115
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_REAR_ANTISHAKE_QHD:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_REAR_ANTISHAKE_QHD:Z
 
-    .line 117
+    .line 116
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_REAR_ANTISHAKE_FHD_60FPS:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_REAR_ANTISHAKE_FHD_60FPS:Z
 
-    .line 119
+    .line 118
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->REAR_LENS_DISTORTION_CORRECTION:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->REAR_LENS_DISTORTION_CORRECTION:Z
 
-    .line 123
+    .line 122
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_PREVIEW_FPS_MAX:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_PREVIEW_FPS_MAX:I
 
-    .line 129
+    .line 128
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_NIGHT_SHOOTINGMODE_PREVIEW_FPS_MIN:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_NIGHT_SHOOTINGMODE_PREVIEW_FPS_MIN:I
 
-    .line 130
+    .line 129
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_NIGHT_SHOOTINGMODE_PREVIEW_FPS_MIN:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_NIGHT_SHOOTINGMODE_PREVIEW_FPS_MIN:I
 
-    .line 135
+    .line 134
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SLOWMOTION_RECORDING_PREVIEW_FPS:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->SLOWMOTION_RECORDING_PREVIEW_FPS:I
 
-    .line 139
+    .line 138
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_RECORDING_VIDEO_FPS_NORMAL_FRONT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_RECORDING_VIDEO_FPS_NORMAL_FRONT:I
 
-    .line 148
+    .line 147
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_DUALCAMERA:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_DUALCAMERA:Z
 
-    .line 150
+    .line 149
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_BEAUTY_SUBMENU:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_BEAUTY_SUBMENU:Z
 
-    .line 152
+    .line 151
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_LIVE_BEAUTY:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY:Z
 
-    .line 153
+    .line 152
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_LIVE_BEAUTY_SLIMFACE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SLIMFACE:Z
 
-    .line 154
+    .line 153
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_LIVE_BEAUTY_SPOTLIGHT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SPOTLIGHT:Z
 
-    .line 155
+    .line 154
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_LIVE_BEAUTY_EYEENLARGE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_EYEENLARGE:Z
 
-    .line 156
+    .line 155
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_LIVE_BEAUTY_SHAPECORRECTION:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SHAPECORRECTION:Z
 
-    .line 157
+    .line 156
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_LIVE_BEAUTY_SKINCOLOR:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LIVE_BEAUTY_SKINCOLOR:Z
 
-    .line 159
+    .line 158
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_DEFAULT_LIVE_BEAUTY_LEVEL:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_DEFAULT_LIVE_BEAUTY_LEVEL:I
 
-    .line 161
+    .line 160
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_PICTURE_FORMAT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_PICTURE_FORMAT:Z
 
-    .line 163
+    .line 162
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_FOOD_ADDED_LENS:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_FOOD_ADDED_LENS:Z
 
-    .line 165
+    .line 164
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_AUTO_LLS_LITE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_AUTO_LLS_LITE:Z
 
-    .line 167
+    .line 166
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_AUTO_HDR_LITE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_AUTO_HDR_LITE:Z
 
-    .line 169
+    .line 168
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_FLIP_PHOTO:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_FLIP_PHOTO:Z
 
-    .line 176
+    .line 175
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_QUICK_LAUNCH:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_QUICK_LAUNCH:Z
 
-    .line 178
+    .line 177
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->HELPHUB_REQUEST_SECTION_NAME:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->HELPHUB_REQUEST_SECTION_NAME:Ljava/lang/String;
 
-    .line 180
+    .line 179
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_MULTI_USER_MODE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_MULTI_USER_MODE:Z
 
-    .line 182
+    .line 181
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_VOICE_COMMAND:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_VOICE_COMMAND:Z
 
-    .line 184
+    .line 183
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->USE_TOASTALERT_WHEN_FRONTCAM_ISNOT_AVAILABLE_BY_FOLDER_CLOSING:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->USE_TOASTALERT_WHEN_FRONTCAM_ISNOT_AVAILABLE_BY_FOLDER_CLOSING:Z
 
-    .line 186
-    sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
+    .line 185
+    sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_DOWNLOAD_SHOOTING_MODES:Z
 
-    sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
+    sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DOWNLOAD_SHOOTING_MODES:Z
 
-    .line 188
+    .line 187
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_PREVIEW_FIT_TO_FULL_SCREEN:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_PREVIEW_FIT_TO_FULL_SCREEN:Z
 
-    .line 190
+    .line 189
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SETTING_LIST_HORIZONTAL_ALIGN_WITH_PADING:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SETTING_LIST_HORIZONTAL_ALIGN_WITH_PADING:Z
 
-    .line 192
+    .line 191
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FIXED_TYPE_SIDE_QUICK_SETTING_MENU:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FIXED_TYPE_SIDE_QUICK_SETTING_MENU:Z
 
-    .line 194
+    .line 193
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->COVER_CAMERA_RECORDING:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMERA_RECORDING:Z
 
-    .line 196
+    .line 195
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_FOCUSMODE_MENU:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_FOCUSMODE_MENU:Z
 
-    .line 198
+    .line 197
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_MOTION_PHOTO:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_MOTION_PHOTO:Z
 
-    .line 200
+    .line 199
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_WATERMARK:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_WATERMARK:Z
 
-    .line 202
+    .line 201
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_SUPPORT_WECHATSIGHT_MODE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_WECHATSIGHT_MODE:Z
 
-    .line 204
+    .line 203
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_FLOATING_CAMERA_BUTTON:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_FLOATING_CAMERA_BUTTON:Z
 
-    .line 206
+    .line 205
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_FRONT_SETTING_AUTO_SCROLL:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_FRONT_SETTING_AUTO_SCROLL:Z
 
-    .line 208
+    .line 207
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_QUICK_LAUNCH_POWER_KEY:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_QUICK_LAUNCH_POWER_KEY:Z
 
-    .line 214
+    .line 213
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_GPU_EFFECT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_GPU_EFFECT:Z
 
-    .line 215
+    .line 214
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_GPU_EFFECT_RECORDING:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_GPU_EFFECT_RECORDING:Z
 
-    .line 217
+    .line 216
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_DOWNLOAD_EFFECT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DOWNLOAD_EFFECT:Z
 
-    .line 219
+    .line 218
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_ENABLE_THUMBNAILPICTURE_CALLBACK:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_ENABLE_THUMBNAILPICTURE_CALLBACK:Z
 
-    .line 221
+    .line 220
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_ENABLE_POST_PROCESSED_THUMBNAIL_CALLBACK:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_ENABLE_POST_PROCESSED_THUMBNAIL_CALLBACK:Z
 
-    .line 223
+    .line 222
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->NEED_GRAPHIC_CONFIG_SET:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->NEED_GRAPHIC_CONFIG_SET:Z
 
-    .line 225
+    .line 224
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BURST_PANORAMA_LOW_PERFORMANCE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BURST_PANORAMA_LOW_PERFORMANCE:Z
 
-    .line 227
+    .line 226
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_LOW_PERFORMANCE_CONTINUOUS:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_LOW_PERFORMANCE_CONTINUOUS:Z
 
-    .line 229
+    .line 228
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_NOT_SUPPORT_ZSL:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_NOT_SUPPORT_ZSL:Z
 
-    .line 230
+    .line 229
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_NOT_SUPPORT_ZSL:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_NOT_SUPPORT_ZSL:Z
 
-    .line 232
+    .line 231
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FIXED_BURST_RESOLUTION:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FIXED_BURST_RESOLUTION:Z
 
-    .line 233
+    .line 232
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SWITCH_CAMERA_VI:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SWITCH_CAMERA_VI:Z
 
-    .line 234
+    .line 233
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_BACKGROUND_OPEN_WHEN_BOOTING:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_BACKGROUND_OPEN_WHEN_BOOTING:Z
 
-    .line 236
+    .line 235
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->LOW_PERFORMANCE_RECORDING_VI:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->LOW_PERFORMANCE_RECORDING_VI:Z
 
-    .line 238
+    .line 237
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SHOT_MORE_PROCESSING_SOUND_LOW_QUALITY:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SHOT_MORE_PROCESSING_SOUND_LOW_QUALITY:Z
 
-    .line 242
+    .line 241
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_INTERVAL_CAPTURE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_INTERVAL_CAPTURE:Z
 
-    .line 244
+    .line 243
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_MULTI_INSTANCE_CAMERA:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_MULTI_INSTANCE_CAMERA:Z
 
-    .line 246
+    .line 245
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_BARCODE_DETECTION:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_BARCODE_DETECTION:Z
 
-    .line 248
+    .line 247
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_USE_LOW_PERFORMANCE_PREVIEW:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_USE_LOW_PERFORMANCE_PREVIEW:Z
 
-    .line 250
+    .line 249
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SWITCH_CAMCORDER_DELAY:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->SWITCH_CAMCORDER_DELAY:I
 
-    .line 256
+    .line 255
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_EFFECT_POSTERIZE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_EFFECT_POSTERIZE:Z
 
-    .line 257
+    .line 256
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_EFFECT_SOLARIZE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_EFFECT_SOLARIZE:Z
 
-    .line 258
+    .line 257
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_EFFECT_POINT_BLUE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_EFFECT_POINT_BLUE:Z
 
-    .line 259
+    .line 258
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_EFFECT_POINT_RED_YELLOW:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_EFFECT_POINT_RED_YELLOW:Z
 
-    .line 260
+    .line 259
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_EFFECT_NEGATIVE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_EFFECT_NEGATIVE:Z
 
-    .line 262
+    .line 261
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FRONT_EFFECT_VINTAGE_COLD:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FRONT_EFFECT_VINTAGE_COLD:Z
 
-    .line 263
+    .line 262
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FRONT_EFFECT_POSTERIZE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FRONT_EFFECT_POSTERIZE:Z
 
-    .line 264
+    .line 263
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FRONT_EFFECT_SOLARIZE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FRONT_EFFECT_SOLARIZE:Z
 
-    .line 265
+    .line 264
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FRONT_EFFECT_POINT_BLUE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FRONT_EFFECT_POINT_BLUE:Z
 
-    .line 266
+    .line 265
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FRONT_EFFECT_POINT_RED_YELLOW:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FRONT_EFFECT_POINT_RED_YELLOW:Z
 
-    .line 267
+    .line 266
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FRONT_EFFECT_NEGATIVE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FRONT_EFFECT_NEGATIVE:Z
 
-    .line 272
+    .line 271
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->DISABLE_GOOGLE_SERVICE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->DISABLE_GOOGLE_SERVICE:Z
 
-    .line 273
+    .line 272
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->REPLACE_WIFI_STRING:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->REPLACE_WIFI_STRING:Z
 
-    .line 274
+    .line 273
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->ENABLE_SHUTTER_SOUND_MENU:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->ENABLE_SHUTTER_SOUND_MENU:Z
 
-    .line 275
+    .line 274
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SUPPORT_HIDE_ALBUM:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_HIDE_ALBUM:Z
 
-    .line 282
+    .line 281
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_PANORAMA_SHOT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_PANORAMA_SHOT:Z
 
-    .line 283
+    .line 282
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_CONTINUOUS_SHOT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_CONTINUOUS_SHOT:Z
 
-    .line 284
+    .line 283
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_BEAUTY_SHOT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_BEAUTY_SHOT:Z
 
-    .line 285
+    .line 284
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_NIGHT_SHOT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_NIGHT_SHOT:Z
 
-    .line 286
+    .line 285
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_NIGHT_SHOT_SCENE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_NIGHT_SHOT_SCENE:Z
 
-    .line 287
+    .line 286
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_RICH_TONE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_RICH_TONE:Z
 
-    .line 288
+    .line 287
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_SOUND_AND_SHOT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SOUND_AND_SHOT:Z
 
-    .line 289
+    .line 288
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_SPORTS_SCENE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SPORTS_SCENE:Z
 
-    .line 290
+    .line 289
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_AQUA:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_AQUA:Z
 
-    .line 291
+    .line 290
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_DUAL:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_DUAL:Z
 
-    .line 292
+    .line 291
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_SELECTIVE_FOCUS:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SELECTIVE_FOCUS:Z
 
-    .line 293
+    .line 292
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_SHOT_AND_MORE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SHOT_AND_MORE:Z
 
-    .line 294
+    .line 293
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_REAR_SELFIE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_REAR_SELFIE:Z
 
-    .line 295
+    .line 294
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_PRO:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_PRO:Z
 
-    .line 296
+    .line 295
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_PRO_LITE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_PRO_LITE:Z
 
-    .line 297
+    .line 296
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_SLOW_MOTION:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SLOW_MOTION:Z
 
-    .line 298
+    .line 297
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_FAST_MOTION:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_FAST_MOTION:Z
 
-    .line 299
+    .line 298
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_HYPER_MOTION:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_HYPER_MOTION:Z
 
-    .line 300
+    .line 299
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_VIRTUAL_SHOT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_VIRTUAL_SHOT:Z
 
-    .line 301
+    .line 300
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_ANIMATEDGIF:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_ANIMATEDGIF:Z
 
-    .line 302
+    .line 301
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_ANTI_FOG:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_ANTI_FOG:Z
 
-    .line 303
+    .line 302
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_TAG_SHOT:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_TAG_SHOT:Z
 
-    .line 304
+    .line 303
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_VIDEO_COLLAGE:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_VIDEO_COLLAGE:Z
 
-    .line 305
+    .line 304
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_FOOD:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_FOOD:Z
 
-    .line 306
+    .line 305
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_MOTION_PANORAMA:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_MOTION_PANORAMA:Z
 
-    .line 307
+    .line 306
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->DISABLE_GOOGLE_SERVICE:Z
 
     if-nez v0, :cond_3
@@ -1460,6 +1470,11 @@
 
     :goto_3
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_LVB:Z
+
+    .line 307
+    sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_SOCIAL:Z
+
+    sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SHOOTINGMODE_SOCIAL:Z
 
     .line 308
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SHOOTINGMODE_PRODUCT_SEARCH:Z
@@ -1559,654 +1574,676 @@
     sput-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SHOOTINGMODE_LVB:Z
 
     .line 327
+    sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_SHOOTINGMODE_SOCIAL:Z
+
+    sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SHOOTINGMODE_SOCIAL:Z
+
+    .line 328
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_SHOOTINGMODE_PRODUCT_SEARCH:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SHOOTINGMODE_PRODUCT_SEARCH:Z
 
-    .line 333
+    .line 334
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
-    .line 334
+    .line 335
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
-    .line 335
+    .line 336
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
-    .line 336
+    .line 337
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
-    .line 337
+    .line 338
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
-    .line 338
+    .line 339
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
-    .line 339
+    .line 340
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
-    .line 340
+    .line 341
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
-    .line 341
+    .line 342
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
-    .line 342
+    .line 343
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_PICTURE_DEFAULT_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_PICTURE_DEFAULT_RESOLUTION:Ljava/lang/String;
 
-    .line 344
+    .line 345
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
-    .line 345
+    .line 346
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_MEDIUM:Ljava/lang/String;
 
-    .line 346
+    .line 347
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_SMALL:Ljava/lang/String;
 
-    .line 347
+    .line 348
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
-    .line 348
+    .line 349
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_MEDIUM:Ljava/lang/String;
 
-    .line 349
+    .line 350
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_SMALL:Ljava/lang/String;
 
-    .line 350
+    .line 351
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
-    .line 351
+    .line 352
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_MEDIUM:Ljava/lang/String;
 
-    .line 352
+    .line 353
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_SMALL:Ljava/lang/String;
 
-    .line 353
+    .line 354
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION:Ljava/lang/String;
 
-    .line 355
+    .line 356
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_BACK_CAMERA_DEFAULT_NORMAL_PICTURESIZE:Ljava/lang/String;
 
-    .line 356
+    .line 357
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_BACK_CAMERA_DEFAULT_WIDE_PICTURESIZE:Ljava/lang/String;
 
-    .line 357
+    .line 358
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_BACK_CAMERA_DEFAULT_SQUARE_PICTURESIZE:Ljava/lang/String;
 
-    .line 358
+    .line 359
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_BACK_CAMERA_DEFAULT_NORMAL_PICTURESIZE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_BACK_CAMERA_DEFAULT_PICTURESIZE:Ljava/lang/String;
 
-    .line 360
+    .line 361
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_4BY3_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_FRONT_CAMERA_DEFAULT_NORMAL_PICTURESIZE:Ljava/lang/String;
 
-    .line 361
+    .line 362
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_16BY9_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_FRONT_CAMERA_DEFAULT_WIDE_PICTURESIZE:Ljava/lang/String;
 
-    .line 362
+    .line 363
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_FRONT_CAMERA_DEFAULT_SQUARE_PICTURESIZE:Ljava/lang/String;
 
-    .line 363
+    .line 364
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_FRONT_CAMERA_DEFAULT_NORMAL_PICTURESIZE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->DUAL_FRONT_CAMERA_DEFAULT_PICTURESIZE:Ljava/lang/String;
 
-    .line 365
+    .line 366
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BURST_PANORAMA_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BURST_PANORAMA_RESOLUTION:Ljava/lang/String;
 
-    .line 366
+    .line 367
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BURST_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BURST_RESOLUTION:Ljava/lang/String;
 
-    .line 367
+    .line 368
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->WIDE_SELFIE_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->WIDE_SELFIE_RESOLUTION:Ljava/lang/String;
 
-    .line 368
+    .line 369
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->SHOT_AND_MORE_BACK_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->SHOT_AND_MORE_BACK_RESOLUTION:Ljava/lang/String;
 
-    .line 373
+    .line 374
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMERA_RESOLUTION:Ljava/lang/String;
 
-    .line 374
+    .line 375
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->COVER_CAMCORDER_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMCORDER_RESOLUTION:Ljava/lang/String;
 
-    .line 376
+    .line 377
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->KEYBOARD_COVER_BACK_CAMERA_RESOLUTION:Ljava/lang/String;
 
-    .line 377
+    .line 378
     sget-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RESOLUTION_1BY1_LARGE:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->KEYBOARD_COVER_FRONT_CAMERA_RESOLUTION:Ljava/lang/String;
 
-    .line 378
+    .line 379
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->KEYBOARD_COVER_CAMCORDER_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->KEYBOARD_COVER_CAMCORDER_RESOLUTION:Ljava/lang/String;
 
-    .line 392
+    .line 393
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RECORDING_DEFAULT_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RECORDING_DEFAULT_RESOLUTION:Ljava/lang/String;
 
-    .line 393
+    .line 394
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_RECORDING_MIN_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RECORDING_MIN_RESOLUTION:Ljava/lang/String;
 
-    .line 394
+    .line 395
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_3840X2160:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_3840X2160:Z
 
-    .line 395
+    .line 396
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_2560X1440:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_2560X1440:Z
 
-    .line 396
+    .line 397
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1920X1080:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080:Z
 
-    .line 397
+    .line 398
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1920X1080_60FPS:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_60FPS:Z
 
-    .line 398
+    .line 399
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1440X1080:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1440X1080:Z
 
-    .line 399
+    .line 400
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1440X1440:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1440X1440:Z
 
-    .line 400
+    .line 401
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1072X1072:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1072X1072:Z
 
-    .line 401
+    .line 402
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1280X720:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1280X720:Z
 
-    .line 402
+    .line 403
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_720X480:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_720X480:Z
 
-    .line 403
+    .line 404
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_640X480:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X480:Z
 
-    .line 404
+    .line 405
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_320X240:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_320X240:Z
 
-    .line 405
+    .line 406
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_176X144:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_176X144:Z
 
-    .line 407
+    .line 408
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RECORDING_DEFAULT_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RECORDING_DEFAULT_RESOLUTION:Ljava/lang/String;
 
-    .line 408
+    .line 409
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_RECORDING_MIN_RESOLUTION:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RECORDING_MIN_RESOLUTION:Ljava/lang/String;
 
-    .line 409
+    .line 410
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_2560X1440:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440:Z
 
-    .line 410
+    .line 411
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1920X1080:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1920X1080:Z
 
-    .line 411
+    .line 412
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1440X1440:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1440X1440:Z
 
-    .line 412
+    .line 413
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1072X1072:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1072X1072:Z
 
-    .line 413
+    .line 414
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1280X720:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1280X720:Z
 
-    .line 414
+    .line 415
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_720X480:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_720X480:Z
 
-    .line 415
+    .line 416
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_640X480:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480:Z
 
-    .line 416
+    .line 417
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_320X240:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_320X240:Z
 
-    .line 417
+    .line 418
     sget-boolean v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_176X144:Z
 
     sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_176X144:Z
 
-    .line 426
+    .line 427
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->REAL_PREVIEW_SIZE_16_9:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->REAL_PREVIEW_SIZE_16_9:Ljava/lang/String;
 
-    .line 427
+    .line 428
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->REAL_PREVIEW_SIZE_4_3:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->REAL_PREVIEW_SIZE_4_3:Ljava/lang/String;
 
-    .line 428
+    .line 429
     sget-object v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->REAL_PREVIEW_SIZE_1_1:Ljava/lang/String;
 
     sput-object v0, Lcom/sec/android/app/camera/feature/Feature;->REAL_PREVIEW_SIZE_1_1:Ljava/lang/String;
 
-    .line 430
+    .line 431
+    sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_WIDE_PREVIEW_WIDTH:I
+
+    sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_WIDE_PREVIEW_WIDTH:I
+
+    .line 432
+    sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_WIDE_PREVIEW_HEIGHT:I
+
+    sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_WIDE_PREVIEW_HEIGHT:I
+
+    .line 434
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMERA_SQUARE_PREVIEW_WIDTH_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_SQUARE_PREVIEW_WIDTH_HEIGHT:I
 
-    .line 431
+    .line 435
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMERA_SQUARE_PREVIEW_WIDTH_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SQUARE_PREVIEW_WIDTH_HEIGHT:I
 
-    .line 433
+    .line 437
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FULL_SCREEN_PREVIEW_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FULL_SCREEN_PREVIEW_WIDTH:I
 
-    .line 434
+    .line 438
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMERA_FULL_SCREEN_PREVIEW_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_FULL_SCREEN_PREVIEW_HEIGHT:I
 
-    .line 445
+    .line 449
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_RESOLUTION_1280X720_PREVIEW_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_RESOLUTION_1280X720_PREVIEW_WIDTH:I
 
-    .line 446
+    .line 450
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_RESOLUTION_1280X720_PREVIEW_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_RESOLUTION_1280X720_PREVIEW_HEIGHT:I
 
-    .line 447
+    .line 451
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_RESOLUTION_640X480_PREVIEW_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_RESOLUTION_640X480_PREVIEW_WIDTH:I
 
-    .line 448
+    .line 452
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->CAMCORDER_RESOLUTION_640X480_PREVIEW_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_RESOLUTION_640X480_PREVIEW_HEIGHT:I
 
-    .line 453
+    .line 457
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PREVIEW_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PREVIEW_WIDTH:I
 
-    .line 454
+    .line 458
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PREVIEW_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PREVIEW_HEIGHT:I
 
-    .line 459
+    .line 463
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PREVIEW_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PREVIEW_WIDTH:I
 
-    .line 460
+    .line 464
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PREVIEW_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PREVIEW_HEIGHT:I
 
-    .line 461
+    .line 465
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_640X480_PREVIEW_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480_PREVIEW_WIDTH:I
 
-    .line 462
+    .line 466
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_640X480_PREVIEW_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480_PREVIEW_HEIGHT:I
 
-    .line 471
+    .line 475
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_3840X2160_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_3840X2160_PICTURE_WIDTH:I
 
-    .line 472
+    .line 476
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_3840X2160_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_3840X2160_PICTURE_HEIGHT:I
 
-    .line 473
+    .line 477
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_2560X1440_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_2560X1440_PICTURE_WIDTH:I
 
-    .line 474
+    .line 478
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_2560X1440_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_2560X1440_PICTURE_HEIGHT:I
 
-    .line 475
+    .line 479
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1920X1080_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_PICTURE_WIDTH:I
 
-    .line 476
+    .line 480
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1920X1080_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_PICTURE_HEIGHT:I
 
-    .line 477
+    .line 481
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1920X1080_60FPS_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_60FPS_PICTURE_WIDTH:I
 
-    .line 478
+    .line 482
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1920X1080_60FPS_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1920X1080_60FPS_PICTURE_HEIGHT:I
 
-    .line 479
+    .line 483
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1440X1080_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1440X1080_PICTURE_WIDTH:I
 
-    .line 480
+    .line 484
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1440X1080_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1440X1080_PICTURE_HEIGHT:I
 
-    .line 481
+    .line 485
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1440X1440_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1440X1440_PICTURE_WIDTH:I
 
-    .line 482
+    .line 486
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1440X1440_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1440X1440_PICTURE_HEIGHT:I
 
-    .line 483
+    .line 487
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1280X720_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1280X720_PICTURE_WIDTH:I
 
-    .line 484
+    .line 488
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1280X720_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1280X720_PICTURE_HEIGHT:I
 
-    .line 485
+    .line 489
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1072X1072_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1072X1072_PICTURE_WIDTH:I
 
-    .line 486
+    .line 490
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_1072X1072_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_1072X1072_PICTURE_HEIGHT:I
 
-    .line 487
+    .line 491
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_960X960_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_960X960_PICTURE_WIDTH:I
 
-    .line 488
+    .line 492
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_960X960_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_960X960_PICTURE_HEIGHT:I
 
-    .line 489
+    .line 493
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_960X720_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_960X720_PICTURE_WIDTH:I
 
-    .line 490
+    .line 494
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_960X720_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_960X720_PICTURE_HEIGHT:I
 
-    .line 491
+    .line 495
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_720X480_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_720X480_PICTURE_WIDTH:I
 
-    .line 492
+    .line 496
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_720X480_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_720X480_PICTURE_HEIGHT:I
 
-    .line 493
+    .line 497
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_640X480_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X480_PICTURE_WIDTH:I
 
-    .line 494
+    .line 498
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_640X480_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X480_PICTURE_HEIGHT:I
 
-    .line 495
+    .line 499
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_640X360_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X360_PICTURE_WIDTH:I
 
-    .line 496
+    .line 500
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_640X360_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_640X360_PICTURE_HEIGHT:I
 
-    .line 497
+    .line 501
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_320X240_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_320X240_PICTURE_WIDTH:I
 
-    .line 498
+    .line 502
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->BACK_CAMCORDER_RESOLUTION_320X240_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMCORDER_RESOLUTION_320X240_PICTURE_HEIGHT:I
 
-    .line 500
+    .line 504
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PICTURE_WIDTH:I
 
-    .line 501
+    .line 505
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_2560X1440_PICTURE_HEIGHT:I
 
-    .line 502
+    .line 506
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1920X1080_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1920X1080_PICTURE_WIDTH:I
 
-    .line 503
+    .line 507
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1920X1080_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1920X1080_PICTURE_HEIGHT:I
 
-    .line 504
+    .line 508
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1440X1440_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1440X1440_PICTURE_WIDTH:I
 
-    .line 505
+    .line 509
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1440X1440_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1440X1440_PICTURE_HEIGHT:I
 
-    .line 506
+    .line 510
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PICTURE_WIDTH:I
 
-    .line 507
+    .line 511
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1280X720_PICTURE_HEIGHT:I
 
-    .line 508
+    .line 512
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1072X1072_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1072X1072_PICTURE_WIDTH:I
 
-    .line 509
+    .line 513
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_1072X1072_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_1072X1072_PICTURE_HEIGHT:I
 
-    .line 510
+    .line 514
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_960X960_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_960X960_PICTURE_WIDTH:I
 
-    .line 511
+    .line 515
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_960X960_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_960X960_PICTURE_HEIGHT:I
 
-    .line 512
+    .line 516
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_960X720_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_960X720_PICTURE_WIDTH:I
 
-    .line 513
+    .line 517
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_960X720_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_960X720_PICTURE_HEIGHT:I
 
-    .line 514
+    .line 518
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_720X480_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_720X480_PICTURE_WIDTH:I
 
-    .line 515
+    .line 519
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_720X480_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_720X480_PICTURE_HEIGHT:I
 
-    .line 516
+    .line 520
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_640X480_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480_PICTURE_WIDTH:I
 
-    .line 517
+    .line 521
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_640X480_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_640X480_PICTURE_HEIGHT:I
 
-    .line 518
+    .line 522
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_320X240_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_320X240_PICTURE_WIDTH:I
 
-    .line 519
+    .line 523
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->FRONT_CAMCORDER_RESOLUTION_320X240_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMCORDER_RESOLUTION_320X240_PICTURE_HEIGHT:I
 
-    .line 521
+    .line 525
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->COVER_CAMCORDER_RESOLUTION_PICTURE_WIDTH:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMCORDER_RESOLUTION_PICTURE_WIDTH:I
 
-    .line 522
+    .line 526
     sget v0, Lcom/sec/android/app/camera/feature/RuntimeFeature;->COVER_CAMCORDER_RESOLUTION_PICTURE_HEIGHT:I
 
     sput v0, Lcom/sec/android/app/camera/feature/Feature;->COVER_CAMCORDER_RESOLUTION_PICTURE_HEIGHT:I
+
+    .line 531
+    invoke-static {}, Lcom/sec/android/app/camera/feature/RuntimeFeature;->isJapan()Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->COUNTRY_JAPAN:Z
 
     return-void
 
@@ -2231,7 +2268,7 @@
     :cond_3
     move v0, v2
 
-    .line 307
+    .line 306
     goto/16 :goto_3
 
     :cond_4
@@ -2245,9 +2282,9 @@
     .locals 0
 
     .prologue
-    .line 527
+    .line 536
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 528
+    .line 537
     return-void
 .end method

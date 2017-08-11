@@ -19,9 +19,9 @@
 
 .field public static final checkbox:I = 0x7f100012
 
-.field public static final text:I = 0x7f100030
+.field public static final text:I = 0x7f100032
 
-.field public static final title:I = 0x7f100041
+.field public static final title:I = 0x7f100043
 
 .field public static final top:I = 0x7f100005
 

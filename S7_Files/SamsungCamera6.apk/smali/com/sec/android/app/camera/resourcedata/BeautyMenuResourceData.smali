@@ -72,7 +72,7 @@
     .local v2, "resIDs":Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     new-instance v0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
-    const/16 v3, 0x8
+    const/4 v3, 0x6
 
     new-array v3, v3, [I
 
@@ -105,16 +105,6 @@
     const/4 v5, 0x5
 
     aput v7, v3, v5
-
-    const/4 v5, 0x6
-
-    aput v7, v3, v5
-
-    const/4 v5, 0x7
-
-    iget v6, v2, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;->mListNormal:I
-
-    aput v6, v3, v5
 
     invoke-direct {v0, v3}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;-><init>([I)V
 

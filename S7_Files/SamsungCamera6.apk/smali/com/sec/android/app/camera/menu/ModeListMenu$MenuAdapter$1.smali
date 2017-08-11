@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     .prologue
-    .line 1561
+    .line 1568
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "view"    # Lcom/samsung/android/glview/GLView;
 
     .prologue
-    .line 1564
+    .line 1571
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeListMenu;
@@ -58,14 +58,14 @@
 
     invoke-virtual {v0, v1}, Lcom/sec/android/app/camera/menu/ModeListMenu;->setOneTimeHideAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1565
+    .line 1572
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter$1;->this$1:Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/menu/ModeListMenu$MenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/ModeListMenu;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/menu/ModeListMenu;->hideMenu()V
 
-    .line 1566
+    .line 1573
     const/4 v0, 0x1
 
     return v0

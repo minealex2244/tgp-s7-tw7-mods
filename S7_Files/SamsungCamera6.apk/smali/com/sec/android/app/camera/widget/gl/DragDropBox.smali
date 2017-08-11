@@ -1578,7 +1578,7 @@
 
     move-result v6
 
-    const v3, 0x7f0b00b7
+    const v3, 0x7f0b00b8
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 

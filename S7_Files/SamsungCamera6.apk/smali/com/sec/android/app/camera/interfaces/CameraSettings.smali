@@ -1067,6 +1067,8 @@
 
 .field public static final SHOOTINGMODE_SLOW_MOTION:I = 0x3f
 
+.field public static final SHOOTINGMODE_SOCIAL:I = 0x50
+
 .field public static final SHOOTINGMODE_SOUND_AND_SHOT:I = 0x23
 
 .field public static final SHOOTINGMODE_SPORTS_SCENE:I = 0x28
@@ -1315,7 +1317,7 @@
 
     const/4 v2, 0x0
 
-    .line 510
+    .line 511
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_PREVIEW_FIT_TO_FULL_SCREEN:Z
 
     if-eqz v0, :cond_0
@@ -1325,7 +1327,7 @@
     :goto_0
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_VIEW_MODE:I
 
-    .line 864
+    .line 865
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SHOOTINGMODE_SELFIE:Z
 
     if-eqz v0, :cond_1
@@ -1335,7 +1337,7 @@
     :goto_1
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_FRONT_SHOOTINGMODE:I
 
-    .line 872
+    .line 873
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_FLIP_PHOTO:Z
 
     if-eqz v0, :cond_3
@@ -1345,7 +1347,7 @@
     :goto_2
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_DUAL_EFFECT:I
 
-    .line 888
+    .line 889
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_COMPANION_CHIP:Z
 
     if-eqz v0, :cond_4
@@ -1355,7 +1357,7 @@
     :goto_3
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_CAMERA_HDR:I
 
-    .line 889
+    .line 890
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_SUPPORT_COMPANION_CHIP:Z
 
     if-eqz v0, :cond_5
@@ -1365,7 +1367,7 @@
     :goto_4
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_FRONT_CAMERA_HDR:I
 
-    .line 895
+    .line 896
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_ANTISHAKE_DEFAULT_ON:Z
 
     if-eqz v0, :cond_6
@@ -1375,7 +1377,7 @@
     :goto_5
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_BACK_CAMCORDER_ANTISHAKE:I
 
-    .line 896
+    .line 897
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_FRONT_ANTISHAKE:Z
 
     if-eqz v0, :cond_7
@@ -1385,7 +1387,7 @@
     :goto_6
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_FRONT_CAMCORDER_ANTISHAKE:I
 
-    .line 897
+    .line 898
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->ACTIVE_KEY:Z
 
     if-eqz v0, :cond_8
@@ -1395,22 +1397,32 @@
     :goto_7
     sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_VOLUME_KEY_AS:I
 
-    .line 915
-    sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_MULTI_AF:Z
+    .line 909
+    sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->COUNTRY_JAPAN:Z
 
     if-eqz v0, :cond_9
 
-    move v0, v1
+    move v0, v2
 
     :goto_8
-    sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_MULTI_AF_MODE:I
+    sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_QRCODE_DETECTION:I
 
-    .line 919
-    sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_WATERMARK:Z
+    .line 916
+    sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_MULTI_AF:Z
 
     if-eqz v0, :cond_a
 
+    move v0, v1
+
     :goto_9
+    sput v0, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_MULTI_AF_MODE:I
+
+    .line 920
+    sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_WATERMARK:Z
+
+    if-eqz v0, :cond_b
+
+    :goto_a
     sput v1, Lcom/sec/android/app/camera/interfaces/CameraSettings;->DEFAULT_EFFECT_LIST_TYPE:I
 
     return-void
@@ -1418,10 +1430,10 @@
     :cond_0
     move v0, v2
 
-    .line 510
+    .line 511
     goto :goto_0
 
-    .line 864
+    .line 865
     :cond_1
     sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_SHOOTINGMODE_BEAUTY_SHOT:Z
 
@@ -1436,7 +1448,7 @@
 
     goto :goto_1
 
-    .line 872
+    .line 873
     :cond_3
     const/16 v0, 0x2a
 
@@ -1445,44 +1457,50 @@
     :cond_4
     move v0, v2
 
-    .line 888
+    .line 889
     goto :goto_3
 
     :cond_5
     move v0, v2
 
-    .line 889
+    .line 890
     goto :goto_4
 
     :cond_6
     move v0, v2
 
-    .line 895
+    .line 896
     goto :goto_5
 
     :cond_7
     move v0, v2
 
-    .line 896
+    .line 897
     goto :goto_6
 
     :cond_8
     move v0, v1
 
-    .line 897
+    .line 898
     goto :goto_7
 
     :cond_9
-    move v0, v2
+    move v0, v1
 
-    .line 915
+    .line 909
     goto :goto_8
 
     :cond_a
+    move v0, v2
+
+    .line 916
+    goto :goto_9
+
+    :cond_b
     move v1, v2
 
-    .line 919
-    goto :goto_9
+    .line 920
+    goto :goto_a
 .end method
 
 
@@ -1919,9 +1937,6 @@
 .method public abstract isEffectRecordingRestricted()Z
 .end method
 
-.method public abstract isFirstLaunchCameraByHomeKey()Z
-.end method
-
 .method public abstract isFrontCamera()Z
 .end method
 
@@ -2163,9 +2178,6 @@
 .end method
 
 .method public abstract setInterval(I)V
-.end method
-
-.method public abstract setIsFirstLaunchCameraByHomeKey(Z)V
 .end method
 
 .method public abstract setKelvinValue(I)V

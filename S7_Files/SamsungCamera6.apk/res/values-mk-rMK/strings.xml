@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">Снимајте видеа со голем број кадри за забавен преглед. Можете да пуштите одреден дел од секое видео забавено откако ќе го снимите.</string>
     <string name="SM_SMART_SELFSHOT">Заден селфи</string>
     <string name="SM_SMART_SELFSHOT_description">Задната камера автоматски ќе го открие и ќе се фокусира на Вашето лице кога сликате автопортрети.</string>
+    <string name="SM_SOCIAL">Дружење</string>
+    <string name="SM_SOCIAL_description">Снимајте слики и споделувајте ги лесно на социјалните мрежи.</string>
     <string name="SM_SPORTS">Спорт</string>
     <string name="SM_SPORTS_SCENE_description">Сликајте појасни слики на објекти што се движат брзо.</string>
     <string name="SM_STORY">Звук и слика</string>
@@ -261,9 +263,9 @@
     <string name="Title_Viewmode">Прег. на цел екран (16:9)</string>
     <string name="Title_Voice_Capture">Говорна контрола</string>
     <string name="Title_Voice_guide">Говорен водич</string>
-    <string name="Title_Volume_Key_As">Функција на страничното копче</string>
+    <string name="Title_Volume_Key_As">Функција на јачина на звук</string>
     <string name="Title_WhiteBalance">Баланс на белата</string>
-    <string name="Title_common">Заедничко</string>
+    <string name="Title_common">Вообичаено</string>
     <string name="Title_front">Преден фотоапарат</string>
     <string name="Title_rear">Заден фотоапарат</string>
     <string name="Title_rear_lens_distortion_correction">Поправање облик</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">Квадрат</string>
     <string name="help_change_mode_tip_1">Поминете надесно за да ги видите достапните режими на камерата.</string>
     <string name="help_change_mode_tip_2">Изберете го режимот што сакате да го користите.</string>
+    <string name="help_change_mode_tip_3">Само Автоматскиот режим и режимот на Камера за селфи се достапни додека е овозможен Лесен режим.</string>
     <string name="help_changing_the_camera_mode">Избирање режими на камера</string>
+    <string name="help_changing_the_camera_mode_header">Избирање режим на камерата</string>
+    <string name="help_changing_the_camera_mode_title">Менување на режимот на камерата</string>
     <string name="help_recording_videos">Снимање видеа</string>
     <string name="help_recording_videos_tip_1">Допрете %s.</string>
     <string name="help_recording_videos_tip_1_tts">Допрете го копчето на камкордерот.</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">Допрете го копчето за сопирање за да сопре снимањето.</string>
     <string name="help_recording_videos_tip_snapshot">Допрете %s за да сликате додека снимате видео.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Допрете го копчето на камерата за да сликате додека снимате видео.</string>
-    <string name="help_section_summary">Сликајте или снимајте видеа користејќи разни ефекти погодни за сите прилики. Достапни се само Автоматскиот режим и режимот на Камера за селфи и не може да се применуваат ефекти додека е овозможен Лесен режим.</string>
+    <string name="help_section_summary">Сликајте или снимајте видеа користејќи разни ефекти погодни за сите околности.</string>
     <string name="help_selecting_camera_mode">Избирање режими на камера</string>
     <string name="help_taking_pictures">Сликање</string>
     <string name="help_taking_pictures_tip_1">Допрете го објектот што сакате да го доведете во фокус.</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">Допрете го копчето за Камерата и вртете го уредот полека во една насока.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Допрете %s за да ги видите своите слики или видеа веднаш откако ќе ги сликате или снимите.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Допрете го копчето за брз преглед за да ги видите своите слики или видеа веднаш откако ќе ги сликате или снимите.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Гледање слики и видеа</string>
     <string name="high_resolution_video_description">Следново ќе биде недостапно додека се снима во резолуции %s:</string>
     <string name="highlight">Нагласено</string>

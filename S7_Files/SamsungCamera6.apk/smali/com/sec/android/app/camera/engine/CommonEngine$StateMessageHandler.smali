@@ -25,13 +25,13 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 10412
+    .line 10493
     iput-object p1, p0, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
-    .line 10413
+    .line 10494
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 10414
+    .line 10495
     return-void
 .end method
 
@@ -42,7 +42,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 10418
+    .line 10499
     const-string v0, "CommonEngine"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -65,18 +65,18 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10419
+    .line 10500
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 
     iget-object v0, v0, Lcom/sec/android/app/camera/engine/CommonEngine;->mCurrentState:Lcom/sec/android/app/camera/engine/AbstractCeState;
 
     if-nez v0, :cond_0
 
-    .line 10426
+    .line 10507
     :goto_0
     return-void
 
-    .line 10422
+    .line 10503
     :cond_0
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -84,14 +84,14 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 10423
+    .line 10504
     const-string v0, "Recording..."
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/sec/android/app/TraceWrapper;->asyncTraceBegin(Ljava/lang/String;I)V
 
-    .line 10425
+    .line 10506
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/engine/CommonEngine$StateMessageHandler;->this$0:Lcom/sec/android/app/camera/engine/CommonEngine;
 

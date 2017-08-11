@@ -190,6 +190,8 @@ Panlama çekimi: Hareketli nesnelerin fotoğraflarını çekerken hareket hissi 
     <string name="SM_SLOW_VIDEO_description">Videoları ağır çekimde görüntülemek için yüksek kare hızında kaydedin. Kaydettikten sonra her videonun belirli bir bölümünü ağır çekimde oynatabilirsiniz.</string>
     <string name="SM_SMART_SELFSHOT">Arka kamerayla selfie</string>
     <string name="SM_SMART_SELFSHOT_description">Arka kamera, otoportre fotoğraflar çekerken yüzünüzü otomatik olarak algılayarak odaklanır.</string>
+    <string name="SM_SOCIAL">Sosyal</string>
+    <string name="SM_SOCIAL_description">Fotoğraf çekip sosyal ağlarda kolayca paylaşın.</string>
     <string name="SM_SPORTS">Spor</string>
     <string name="SM_SPORTS_SCENE_description">Hızlı hareket eden konuların daha net resimlerini çekin.</string>
     <string name="SM_STORY">Ses ve çekim</string>
@@ -261,7 +263,7 @@ Panlama çekimi: Hareketli nesnelerin fotoğraflarını çekerken hareket hissi 
     <string name="Title_Viewmode">Tam ekran görünümü (16:9)</string>
     <string name="Title_Voice_Capture">Sesli kontrol</string>
     <string name="Title_Voice_guide">Ses kılavuzu</string>
-    <string name="Title_Volume_Key_As">Yan ses tuşu fonksiyonu</string>
+    <string name="Title_Volume_Key_As">Ses tuşu işlevi</string>
     <string name="Title_WhiteBalance">Beyaz dengesi</string>
     <string name="Title_common">Ortak</string>
     <string name="Title_front">Ön fotoğraf makinesi</string>
@@ -393,7 +395,10 @@ düzeltmesi"</string>
     <string name="guideline_square">Kare</string>
     <string name="help_change_mode_tip_1">Mevcut kamera modlarını görüntülemek için sağa kaydırın.</string>
     <string name="help_change_mode_tip_2">Kullanmak istediğiniz modu seçin.</string>
+    <string name="help_change_mode_tip_3">Kolay mod etkinken sadece Otomatik ve Selfie kamera modları kullanılabilir.</string>
     <string name="help_changing_the_camera_mode">Kamera modlarını seçme</string>
+    <string name="help_changing_the_camera_mode_header">Kamera modu seçme</string>
+    <string name="help_changing_the_camera_mode_title">Kamera modunu değiştirme</string>
     <string name="help_recording_videos">Video kaydetme</string>
     <string name="help_recording_videos_tip_1">%s simgesine dokunun.</string>
     <string name="help_recording_videos_tip_1_tts">Video kamera tuşuna dokunun.</string>
@@ -401,7 +406,7 @@ düzeltmesi"</string>
     <string name="help_recording_videos_tip_2_tts">Kaydı durdurmak için durdur tuşuna dokunun.</string>
     <string name="help_recording_videos_tip_snapshot">Video kaydederken fotoğraf çekmek için %s öğesine dokunun.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Video kaydederken fotoğraf çekmek için kamera tuşuna dokunun.</string>
-    <string name="help_section_summary">Her duruma uygun, farklı efektler kullanarak fotoğraf çekin veya video kaydedin. Kolay mod etkinken sadece Otomatik ve Selfie kamera modları kullanılabilir ve hiçbir efekt uygulanamaz.</string>
+    <string name="help_section_summary">Her duruma uygun, farklı efektler kullanarak fotoğraf çekin veya video kaydedin.</string>
     <string name="help_selecting_camera_mode">Kamera modlarını seçme</string>
     <string name="help_taking_pictures">Fotoğraf çekme</string>
     <string name="help_taking_pictures_tip_1">Odağa getirmek istediğiniz nesneye dokunun.</string>
@@ -416,6 +421,7 @@ düzeltmesi"</string>
     <string name="help_text_wideselfie">Kamera tuşuna dokunun ve cihazınızı bir yöne doğru yavaşça çevirin.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Çektikten veya kaydettikten hemen sonra resimlerinizi veya videolarınızı görüntülemek için %s öğesine dokunun.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Fotoğraflarınızı veya videolarınızı çektikten hemen sonra görüntülemek için hızlı görüntü tuşuna dokunun.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Resimleri ve videoları gösterme</string>
     <string name="high_resolution_video_description">%s çözünürlükte kayıt yaparken aşağıdakiler mevcut olmaz:</string>
     <string name="highlight">Vurgulananlar</string>

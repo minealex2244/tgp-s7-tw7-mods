@@ -146,7 +146,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->SCREEN_HEIGHT:I
 
     .line 78
-    const v2, 0x7f0b01a4
+    const v2, 0x7f0b01a5
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -157,7 +157,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_BOTTOM_PADDING_LANDSCAPE:I
 
     .line 79
-    const v2, 0x7f0b01a5
+    const v2, 0x7f0b01a6
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -168,7 +168,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_BOTTOM_PADDING_PORTRAIT:I
 
     .line 80
-    const v2, 0x7f0b01a8
+    const v2, 0x7f0b01a9
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -179,7 +179,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_STEP_WIDTH:I
 
     .line 81
-    const v2, 0x7f0b01a7
+    const v2, 0x7f0b01a8
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -190,7 +190,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_STEP_HEIGHT:I
 
     .line 82
-    const v2, 0x7f0b01a6
+    const v2, 0x7f0b01a7
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -201,7 +201,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_PROGRESSBAR_STEP_GAP:I
 
     .line 84
-    const v2, 0x7f0b01a2
+    const v2, 0x7f0b01a3
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -210,7 +210,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_WIDTH:F
 
     .line 85
-    const v2, 0x7f0b01a3
+    const v2, 0x7f0b01a4
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -219,7 +219,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_WIDTH_VERITCAL:F
 
     .line 86
-    const v2, 0x7f0b01a0
+    const v2, 0x7f0b01a1
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -228,7 +228,7 @@
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->CAPTURE_GUIDE_TEXT_HEIGHT:F
 
     .line 87
-    const v2, 0x7f0b01a1
+    const v2, 0x7f0b01a2
 
     invoke-static {v2}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -655,7 +655,7 @@
 
     check-cast v1, Lcom/samsung/android/glview/GLNinePatch;
 
-    const v2, 0x7f02018d
+    const v2, 0x7f02018e
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLNinePatch;->setNinePatch(I)V
 
@@ -715,7 +715,7 @@
 
     check-cast v1, Lcom/samsung/android/glview/GLNinePatch;
 
-    const v2, 0x7f02018c
+    const v2, 0x7f02018d
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/glview/GLNinePatch;->setNinePatch(I)V
 
@@ -1906,7 +1906,7 @@
 
     move-object/from16 v25, v0
 
-    const v26, 0x7f0a01bc
+    const v26, 0x7f0a01c2
 
     const/16 v27, 0x0
 
@@ -2478,7 +2478,7 @@
 
     int-to-float v5, v1
 
-    const v6, 0x7f02018c
+    const v6, 0x7f02018d
 
     move-object v1, p1
 
@@ -2534,7 +2534,7 @@
 
     move-result-object v1
 
-    const v6, 0x7f0a0198
+    const v6, 0x7f0a019e
 
     invoke-virtual {v1, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3189,7 +3189,7 @@
     :pswitch_0
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0a020c
+    const v2, 0x7f0a0212
 
     invoke-static {v1, v2, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -3203,7 +3203,7 @@
     :pswitch_1
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0a020d
+    const v2, 0x7f0a0213
 
     invoke-static {v1, v2, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -3217,7 +3217,7 @@
     :pswitch_2
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0a020e
+    const v2, 0x7f0a0214
 
     invoke-static {v1, v2, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -3231,7 +3231,7 @@
     :pswitch_3
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/SelectiveFocus;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v2, 0x7f0a019b
+    const v2, 0x7f0a01a1
 
     invoke-static {v1, v2, v4}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 

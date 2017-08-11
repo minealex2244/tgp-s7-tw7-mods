@@ -193,6 +193,8 @@ Panoreringsbilde: Få med en følelse av bevegelse når du tar bilder av motiver
     <string name="SM_SLOW_VIDEO_description">Ta opp videoer med høy bildefrekvens for visning i sakte film. Du kan spille av en bestemt del av hver video i sakte film etter at du har tatt dem opp.</string>
     <string name="SM_SMART_SELFSHOT">Bakkamera-selfie</string>
     <string name="SM_SMART_SELFSHOT_description">Det bakre kameraet oppdager og fokuserer automatisk på ansiktet ditt når du tar selvportrettbilder.</string>
+    <string name="SM_SOCIAL">Sosial</string>
+    <string name="SM_SOCIAL_description">Ta bilder og del dem enkelt på sosiale nettverk.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Ta klarere bilder av motiver i rask bevegelse.</string>
     <string name="SM_STORY">Lyd og bilde</string>
@@ -264,7 +266,7 @@ Panoreringsbilde: Få med en følelse av bevegelse når du tar bilder av motiver
     <string name="Title_Viewmode">Fullskjermvisning (16:9)</string>
     <string name="Title_Voice_Capture">Bruke talekommandoer</string>
     <string name="Title_Voice_guide">Taleveiledning</string>
-    <string name="Title_Volume_Key_As">Volumknappfunksjon</string>
+    <string name="Title_Volume_Key_As">Volumtastfunksjon</string>
     <string name="Title_WhiteBalance">Hvitbalanse</string>
     <string name="Title_common">Felles</string>
     <string name="Title_front">Fremre kamera</string>
@@ -396,7 +398,10 @@ korrigering"</string>
     <string name="guideline_square">Firkant</string>
     <string name="help_change_mode_tip_1">Stryk mot høyre for å vise tilgjengelige kameramodi.</string>
     <string name="help_change_mode_tip_2">Velg den modusen du vil bruke.</string>
+    <string name="help_change_mode_tip_3">Bare Auto- og Selfie-kameramodi er tilgjengelige når Enkel modus er aktivert.</string>
     <string name="help_changing_the_camera_mode">Velge kameramodi</string>
+    <string name="help_changing_the_camera_mode_header">Velge en kameramodus</string>
+    <string name="help_changing_the_camera_mode_title">Endre kameramodus</string>
     <string name="help_recording_videos">Ta opp videoer</string>
     <string name="help_recording_videos_tip_1">Trykk på %s.</string>
     <string name="help_recording_videos_tip_1_tts">Trykk på videokamera-knappen.</string>
@@ -404,7 +409,7 @@ korrigering"</string>
     <string name="help_recording_videos_tip_2_tts">Trykk på stoppknappen for å stoppe innspillingen.</string>
     <string name="help_recording_videos_tip_snapshot">Trykk på %s for å ta bilder under videoopptak.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Trykk på kameratasten for å ta bilder under videoopptak.</string>
-    <string name="help_section_summary">Ta bilder eller ta opp videoer ved å bruke en rekke ulike effekter som passer alle anledninger. Bare Auto- og Selfie-kameramodiene er tilgjengelige, og ingen effekter kan tas i bruk mens Enkel modus er aktivert.</string>
+    <string name="help_section_summary">Ta bilder eller spill inn videoer ved å bruke en rekke ulike effekter som passer alle anledninger.</string>
     <string name="help_selecting_camera_mode">Velge kameramodi</string>
     <string name="help_taking_pictures">Ta bilder</string>
     <string name="help_taking_pictures_tip_1">Trykk på motivet du vil ha i fokus.</string>
@@ -419,6 +424,7 @@ korrigering"</string>
     <string name="help_text_wideselfie">Trykk på Kameraknappen, og vri enheten sakte i én retning.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Trykk på %s for å vise bildene eller videoene med en gang de er tatt.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Trykk på hurtigvisningsknappen for å vise bildene eller videoene med en gang de er tatt.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Vise bilder og videoer</string>
     <string name="high_resolution_video_description">Følgende vil ikke være tilgjengelig under opptak med oppløsning på %s:</string>
     <string name="highlight">Uthevinger</string>

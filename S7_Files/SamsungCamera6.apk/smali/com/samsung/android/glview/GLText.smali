@@ -2051,9 +2051,7 @@
 
     if-eq v0, v9, :cond_5
 
-    add-int/lit8 v9, v0, 0x1
-
-    if-lt v5, v9, :cond_6
+    if-lt v5, v0, :cond_6
 
     .line 429
     :cond_5
@@ -2132,9 +2130,7 @@
 
     if-eq v0, v9, :cond_a
 
-    add-int/lit8 v9, v0, 0x1
-
-    if-lt v5, v9, :cond_b
+    if-lt v5, v0, :cond_b
 
     .line 436
     :cond_a

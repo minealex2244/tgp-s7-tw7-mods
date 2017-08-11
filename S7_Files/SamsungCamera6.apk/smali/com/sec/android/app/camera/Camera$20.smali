@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/sec/android/app/camera/Camera;->sendBroadcastChangeSettings(II)V
+    value = Lcom/sec/android/app/camera/Camera;->playSound(II)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,23 +20,15 @@
 # instance fields
 .field final synthetic this$0:Lcom/sec/android/app/camera/Camera;
 
-.field final synthetic val$menuCommandId:I
-
-.field final synthetic val$modeCommandId:I
-
 
 # direct methods
-.method constructor <init>(Lcom/sec/android/app/camera/Camera;II)V
+.method constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
     .param p1, "this$0"    # Lcom/sec/android/app/camera/Camera;
 
     .prologue
-    .line 4235
+    .line 3861
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
-
-    iput p2, p0, Lcom/sec/android/app/camera/Camera$20;->val$menuCommandId:I
-
-    iput p3, p0, Lcom/sec/android/app/camera/Camera$20;->val$modeCommandId:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,69 +38,117 @@
 
 # virtual methods
 .method public run()V
-    .locals 6
+    .locals 9
 
     .prologue
-    .line 4238
-    iget-object v3, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
+    .line 3864
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-    invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    # getter for: Lcom/sec/android/app/camera/Camera;->mStreamId:[I
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3100(Lcom/sec/android/app/camera/Camera;)[I
 
-    move-result-object v3
+    move-result-object v7
 
-    iget v4, p0, Lcom/sec/android/app/camera/Camera$20;->val$menuCommandId:I
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    iget-object v5, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
+    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundId:I
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3200(Lcom/sec/android/app/camera/Camera;)I
 
-    # getter for: Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
-    invoke-static {v5}, Lcom/sec/android/app/camera/Camera;->access$1000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/interfaces/CameraSettings;
+    move-result v8
 
-    move-result-object v5
+    iget-object v0, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-interface {v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
-
-    move-result v5
-
-    invoke-interface {v3, v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getFeatureValueByCommandIdForLogging(IZ)Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 4239
-    .local v1, "featureID":Ljava/lang/String;
-    const/4 v2, 0x0
-
-    .line 4240
-    .local v2, "settingID":Ljava/lang/String;
-    iget v3, p0, Lcom/sec/android/app/camera/Camera$20;->val$modeCommandId:I
-
-    const/4 v4, -0x1
-
-    if-eq v3, v4, :cond_0
-
-    .line 4241
-    iget v3, p0, Lcom/sec/android/app/camera/Camera$20;->val$modeCommandId:I
-
-    invoke-static {v3}, Lcom/sec/android/app/camera/command/CmdIdStringMapper;->getString(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    .line 4243
-    :cond_0
-    invoke-static {v1, v2}, Lcom/sec/android/app/camera/util/ContextProviderUtils;->getSettingsSet(Ljava/lang/String;Ljava/lang/String;)Landroid/content/ContentValues;
+    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundPool:Landroid/media/SoundPool;
+    invoke-static {v0}, Lcom/sec/android/app/camera/Camera;->access$3600(Lcom/sec/android/app/camera/Camera;)Landroid/media/SoundPool;
 
     move-result-object v0
 
-    .line 4244
-    .local v0, "cv":Landroid/content/ContentValues;
+    iget-object v1, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundPoolId:[I
+    invoke-static {v1}, Lcom/sec/android/app/camera/Camera;->access$3300(Lcom/sec/android/app/camera/Camera;)[I
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundId:I
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$3200(Lcom/sec/android/app/camera/Camera;)I
+
+    move-result v2
+
+    aget v1, v1, v2
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # getter for: Lcom/sec/android/app/camera/Camera;->mStreamVolume:F
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$3400(Lcom/sec/android/app/camera/Camera;)F
+
+    move-result v2
+
     iget-object v3, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
 
-    invoke-virtual {v3}, Lcom/sec/android/app/camera/Camera;->getApplicationContext()Landroid/content/Context;
+    # getter for: Lcom/sec/android/app/camera/Camera;->mStreamVolume:F
+    invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$3400(Lcom/sec/android/app/camera/Camera;)F
 
-    move-result-object v3
+    move-result v3
 
-    invoke-static {v3, v0}, Lcom/sec/android/app/camera/util/Util;->broadcastGeneralEventForLogging(Landroid/content/Context;Landroid/content/ContentValues;)V
+    const/4 v4, 0x0
 
-    .line 4245
+    iget-object v5, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundLoop:I
+    invoke-static {v5}, Lcom/sec/android/app/camera/Camera;->access$3500(Lcom/sec/android/app/camera/Camera;)I
+
+    move-result v5
+
+    const/high16 v6, 0x3f800000    # 1.0f
+
+    invoke-virtual/range {v0 .. v6}, Landroid/media/SoundPool;->play(IFFIIF)I
+
+    move-result v0
+
+    aput v0, v7, v8
+
+    .line 3865
+    const-string v0, "Camera6"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "SoundPool.play - channelId:"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # getter for: Lcom/sec/android/app/camera/Camera;->mStreamId:[I
+    invoke-static {v2}, Lcom/sec/android/app/camera/Camera;->access$3100(Lcom/sec/android/app/camera/Camera;)[I
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/sec/android/app/camera/Camera$20;->this$0:Lcom/sec/android/app/camera/Camera;
+
+    # getter for: Lcom/sec/android/app/camera/Camera;->mSoundId:I
+    invoke-static {v3}, Lcom/sec/android/app/camera/Camera;->access$3200(Lcom/sec/android/app/camera/Camera;)I
+
+    move-result v3
+
+    aget v2, v2, v3
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 3866
     return-void
 .end method

@@ -190,6 +190,8 @@
     <string name="SM_SLOW_VIDEO_description">स्लो मोशन में देखने के लिए वीडियोज उच्च फ्रेम रेट पर रिकॉर्ड करें। रिकॉर्ड करने के बाद आप प्रत्येक वीडियो का एक विशिष्ट अनुभाग स्लो मोशन में चला सकते हैं।</string>
     <string name="SM_SMART_SELFSHOT">रियर-कैम सेल्फी</string>
     <string name="SM_SMART_SELFSHOT_description">जब आप सेल्फ-पोर्ट्रेट तस्वीर लेते हैं, तो पिछला कैमरा स्वचालित रूप से आपके चेहरे का पता लगाता है और उस पर फोकस करता है।</string>
+    <string name="SM_SOCIAL">सामाजिक</string>
+    <string name="SM_SOCIAL_description">तस्वीरें लें और सामाजिक नेटवर्क्स पर उन्हें आसानी से साझा करें।</string>
     <string name="SM_SPORTS">खेल</string>
     <string name="SM_SPORTS_SCENE_description">तेजी से चलते विषयों की स्पष्ट तस्वीर लें।</string>
     <string name="SM_STORY">ध्वनि व शॉट</string>
@@ -393,7 +395,10 @@
     <string name="guideline_square">वर्ग</string>
     <string name="help_change_mode_tip_1">उपलब्ध कैमरा मोड्स देखने के लिए दाएँ स्वाइप करें।</string>
     <string name="help_change_mode_tip_2">उपयोग करने के लिए इच्छित मोड चुनें।</string>
+    <string name="help_change_mode_tip_3">आसान मोड सक्षम होने पर केवल स्वतः और सेल्फी कैमरा मोड्स ही उपलब्ध होते हैं।</string>
     <string name="help_changing_the_camera_mode">कैमरा मोड्स चुनना</string>
+    <string name="help_changing_the_camera_mode_header">कैमरा मोड चुनना</string>
+    <string name="help_changing_the_camera_mode_title">कैमरा मोड बदलना</string>
     <string name="help_recording_videos">वीडियोज रिकॉर्ड करना</string>
     <string name="help_recording_videos_tip_1">%s टैप करें।</string>
     <string name="help_recording_videos_tip_1_tts">कैमकॉर्डर बटन पर टैप करें।</string>
@@ -401,7 +406,7 @@
     <string name="help_recording_videos_tip_2_tts">रिकॉर्डिंग रोकने के लिए रोकें बटन टैप करें।</string>
     <string name="help_recording_videos_tip_snapshot">वीडियो रिकॉर्डिंग करते समय तस्वीरें लेने के लिए %s पर टैप करें।</string>
     <string name="help_recording_videos_tip_snapshot_tts">वीडियो रिकॉर्डिंग करते समय तस्वीर लेने के लिए कैमरा बटन पर टैप करें।</string>
-    <string name="help_section_summary">सभी अवसरों के अनुसार, विभिन्न प्रभावों का उपयोग करके तस्वीरें लें या वीडियो रिकॉर्ड करें। आसान मोड सक्षम होने पर केवल स्वतः और सेल्फी कैमरा मोड्स ही उपलब्ध होते हैं और कोई प्रभाव लागू नहीं किए जा सकते हैं।</string>
+    <string name="help_section_summary">सभी अवसरों के लिए उपयुक्त विभिन्न प्रकार के प्रभावों का उपयोग करके तस्वीरें लें या वीडियोज रिकॉर्ड करें।</string>
     <string name="help_selecting_camera_mode">कैमरा मोड्स चुनना</string>
     <string name="help_taking_pictures">तस्वीरें खीचना</string>
     <string name="help_taking_pictures_tip_1">उस वस्तु पर टैप करें, जिसे आप फोकस में लाना चाहते हैं।</string>
@@ -416,6 +421,7 @@
     <string name="help_text_wideselfie">कैमरा बटन टैप करें और अपने डिवाइस को धीरे-धीरे एक दिशा में घुमाएँ।</string>
     <string name="help_viewing_pics_and_videos_tip_1">तस्वीर लेने या वीडियो रिकॉर्ड करने के तुरंत बाद उन्हें देखने के लिए %s टैप करें।</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">अपने द्वारा तस्वीरें या वीडियोज लेने के ठीक बाद उन्हें देखने के लिए शीघ्र दृश्य बटन टैप करें।</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">तस्वीरें और वीडियो देखना</string>
     <string name="high_resolution_video_description">%s रिजॉल्यूशन में रिकॉर्ड करने के दौरान निम्नलिखित उपलब्ध नहीं होंगे:</string>
     <string name="highlight">हाईलाइट्स</string>

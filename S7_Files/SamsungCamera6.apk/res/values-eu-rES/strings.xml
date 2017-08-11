@@ -198,6 +198,8 @@ Panoramikoa: harrapatu mugimendu sentsazioa mugitzen ari diren objektuen argazki
     <string name="SM_SLOW_VIDEO_description">Grabatu bideoak fotograma abiadura handian bideoak mugimendu motelean ikusteko. Bideoak grabatu ondoren, bideo bakoitzaren zati zehatzak erreproduzi ditzakezu mugimendu motelean.</string>
     <string name="SM_SMART_SELFSHOT">Atzeko kameraren selfiea</string>
     <string name="SM_SMART_SELFSHOT_description">Aurreko kamerak automatikoki hautemango eta fokatuko du zure aurpegia, autorretratuak ateratzen dituzunean.</string>
+    <string name="SM_SOCIAL">Sare sozial.</string>
+    <string name="SM_SOCIAL_description">Atera argazkiak eta parteka itzazu erraz sare sozialetan.</string>
     <string name="SM_SPORTS">Kirolak</string>
     <string name="SM_SPORTS_SCENE_description">Atera mugimendu azkarreko objektuen argazki argiagoak.</string>
     <string name="SM_STORY">Sound &amp; shot</string>
@@ -272,7 +274,7 @@ argazkiak"</string>
     <string name="Title_Voice_guide">Ahots gida</string>
     <string name="Title_Volume_Key_As">Bolumen teklaren funtzioa</string>
     <string name="Title_WhiteBalance">Zurien balantzea</string>
-    <string name="Title_common">Ohikoa</string>
+    <string name="Title_common">Arruntak</string>
     <string name="Title_front">Aurreko Kamera</string>
     <string name="Title_rear">Atzeko Kamera</string>
     <string name="Title_rear_lens_distortion_correction">Forma zuzentzea</string>
@@ -402,7 +404,10 @@ zuzenketa"</string>
     <string name="guideline_square">Laukia</string>
     <string name="help_change_mode_tip_1">Irristatu eskuinera erabilgarri dauden kamera moduak ikusteko.</string>
     <string name="help_change_mode_tip_2">Hautatu erabili nahi duzun modua.</string>
+    <string name="help_change_mode_tip_3">Automatikoa eta Autoargazkia kamera moduak soilik daude erabilgarri Modu erraza gaituta dagoenean.</string>
     <string name="help_changing_the_camera_mode">Kamera moduak hautatzea</string>
+    <string name="help_changing_the_camera_mode_header">Kamera modua aukeratzea</string>
+    <string name="help_changing_the_camera_mode_title">Kamera modua aldatzea</string>
     <string name="help_recording_videos">Bideoak grabatzea</string>
     <string name="help_recording_videos_tip_1">Ukitu %s.</string>
     <string name="help_recording_videos_tip_1_tts">Ukitu bideokameraren botoia.</string>
@@ -410,7 +415,7 @@ zuzenketa"</string>
     <string name="help_recording_videos_tip_2_tts">Ukitu eteteko botoia, grabaketa eteteko.</string>
     <string name="help_recording_videos_tip_snapshot">Ukitu %s, argazkiak ateratzeko, bideoa grabatu bitartean.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Ukitu kamera botoia argazkiak ateratzeko, bideoa grabatu bitartean.</string>
-    <string name="help_section_summary">Atera argazkiak edo grabatu bideoak hainbat efektu erabilita, une bakoitzarekin bat etor daitezen. Automatikoa eta Autoargazkia kamera moduak soilik daude erabilgarri, eta ezin da efekturik aplikatu Modu erraza gaituta badago.</string>
+    <string name="help_section_summary">Atera argazkiak edo grabatu bideoak askotariko efektuak erabiliz, abagune guztietara egokitzeko.</string>
     <string name="help_selecting_camera_mode">Kamera moduak hautatzea</string>
     <string name="help_taking_pictures">Argazkiak ateratzea</string>
     <string name="help_taking_pictures_tip_1">Ukitu fokatu nahi duzun objektua.</string>
@@ -425,6 +430,7 @@ zuzenketa"</string>
     <string name="help_text_wideselfie">Ukitu Kameraren botoia eta biratu zure gailua poliki norabide bakarrean.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Ukitu %s zure argazkiak edo bideoak atera edo grabatu bezain laster ikusteko.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Ukitu bistaratze azkarraren botoia zure argazkiak edo bideoak atera edo grabatu bezain laster ikusteko.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Argazkiak eta bideoak ikustea</string>
     <string name="high_resolution_video_description">Hurrengo eginbideak ez dira erabilgarri egongo %s bereizmenekin grabatu bitartean:</string>
     <string name="highlight">Nabarmendua</string>

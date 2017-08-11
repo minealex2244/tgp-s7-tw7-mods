@@ -29,7 +29,7 @@
     .param p1, "this$0"    # Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     .prologue
-    .line 600
+    .line 609
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     iput-object p2, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->val$showInAnim:Landroid/view/animation/Animation;
@@ -46,7 +46,7 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 603
+    .line 612
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
@@ -58,7 +58,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLGridList;->setVisibility(I)V
 
-    .line 604
+    .line 613
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
@@ -82,7 +82,7 @@
     # setter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     invoke-static {v0, v1}, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->access$502(Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
-    .line 605
+    .line 614
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mList:Lcom/samsung/android/glview/GLGridList;
@@ -92,7 +92,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLGridList;->invalidate()V
 
-    .line 606
+    .line 615
     return-void
 .end method
 
@@ -101,7 +101,7 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 610
+    .line 619
     return-void
 .end method
 
@@ -110,7 +110,7 @@
     .param p1, "arg0"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 614
+    .line 623
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mNextList:Lcom/samsung/android/glview/GLGridList;
@@ -122,7 +122,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLGridList;->setVisibility(I)V
 
-    .line 615
+    .line 624
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mNextList:Lcom/samsung/android/glview/GLGridList;
@@ -134,7 +134,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLGridList;->setAnimation(Landroid/view/animation/Animation;)V
 
-    .line 616
+    .line 625
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mNextList:Lcom/samsung/android/glview/GLGridList;
@@ -144,7 +144,7 @@
 
     invoke-virtual {v0}, Lcom/samsung/android/glview/GLGridList;->startAnimation()V
 
-    .line 617
+    .line 626
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$3;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mNextList:Lcom/samsung/android/glview/GLGridList;
@@ -156,6 +156,6 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLGridList;->setVisibility(I)V
 
-    .line 618
+    .line 627
     return-void
 .end method

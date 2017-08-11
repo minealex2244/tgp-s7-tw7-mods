@@ -190,6 +190,8 @@ Panorama: Hereketli obýektleriň suratyny düşüreniňizde, hereket duýgusyny
     <string name="SM_SLOW_VIDEO_description">Haýal hereketde görmek üçin, wideolary ýokary kadr ýygylygynda düşüriň. Düşürilensoň her wideonyň belli bir bölegini haýal hereketde goýberip bilersiňiz.</string>
     <string name="SM_SMART_SELFSHOT">Yzky-kamera selfi</string>
     <string name="SM_SMART_SELFSHOT_description">Öz portret suratlaryňyzy düşüreniňizde, yzky kamera ýüzüňizi awtomatiki tapyp fokuslanar.</string>
+    <string name="SM_SOCIAL">Sosial</string>
+    <string name="SM_SOCIAL_description">Suratlar düşüriň we olary sosial torlarda ýeňil paýlaşyň.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Çalt hereket edýän zatlaryň has arassa suratlaryny alyň.</string>
     <string name="SM_STORY">Ses we düşüriş</string>
@@ -262,9 +264,9 @@ göz. geçir"</string>
     <string name="Title_Viewmode">Doly ekran görnüşi (16:9)</string>
     <string name="Title_Voice_Capture">Ses dolandyryjy</string>
     <string name="Title_Voice_guide">Ses gollanmasy</string>
-    <string name="Title_Volume_Key_As">Ses düwmesi funksiýasy</string>
+    <string name="Title_Volume_Key_As">Ses düwme funksiýasy</string>
     <string name="Title_WhiteBalance">Ak balans</string>
-    <string name="Title_common">Common</string>
+    <string name="Title_common">Umumy</string>
     <string name="Title_front">Öňki kamera</string>
     <string name="Title_rear">Yzky kamera</string>
     <string name="Title_rear_lens_distortion_correction">Şekil düzediş</string>
@@ -394,7 +396,10 @@ düzediş"</string>
     <string name="guideline_square">Kwadrat</string>
     <string name="help_change_mode_tip_1">Elýeterli kamera tertiplerini görmek üçin, saga syryň.</string>
     <string name="help_change_mode_tip_2">Ulanmak isleýän tertibiňizi saýlaň.</string>
+    <string name="help_change_mode_tip_3">Aňsat tertip işledilende, diňe Awto we Selfi kamera tertipleri elýeterli bolýar.</string>
     <string name="help_changing_the_camera_mode">Kamera tertiplerini saýlamak</string>
+    <string name="help_changing_the_camera_mode_header">Kamera tertibini saýlamak</string>
+    <string name="help_changing_the_camera_mode_title">Kamera tertibini üýtgetmek</string>
     <string name="help_recording_videos">Wideolary ýazga almak</string>
     <string name="help_recording_videos_tip_1">%s-e basyň.</string>
     <string name="help_recording_videos_tip_1_tts">Kamkoder düwmesine basyň.</string>
@@ -402,7 +407,7 @@ düzediş"</string>
     <string name="help_recording_videos_tip_2_tts">Ýazga almagy duruzmak üçin duruz düwmesine basyň.</string>
     <string name="help_recording_videos_tip_snapshot">Wideo düşürilýärkä, suratlary almak üçin %s basyň.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Wideo alynýarka, suratlary düşürmek üçin kamera düwmesine basyň.</string>
-    <string name="help_section_summary">Ähli ýagdaýlara laýyklap, dürli effektleri ulanyp, suratlary alyň ýa-da wideolary düşüriň. Aňsat tertip işledilende, diňe Awto we Selfi kamera tertipleri elýeterli bolýar, effekt ulanyp bolmaýar.</string>
+    <string name="help_section_summary">Ähli ýagdaýlara laýyklap, dürli effektleri ulanyp, suratlary alyň ýa-da wideolary düşüriň.</string>
     <string name="help_selecting_camera_mode">Kamera tertiplerini saýlamak</string>
     <string name="help_taking_pictures">Suratlary almak</string>
     <string name="help_taking_pictures_tip_1">Fokusa getirmek isleýän obýektiňize basyň.</string>
@@ -417,6 +422,7 @@ düzediş"</string>
     <string name="help_text_wideselfie">Kamera düwmesine basyp, enjamy bir ugra haýaljak aýlaň.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Surata düşüreniňizden ýa-da wideo alanyňyzdan soň olary görmek üçin %s basyň.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Suraty düşüreniňizden ýa-da wideony ýazga alanyňyzdan soň dessine olary görnek üçin çalt görnüş düwmesine basyň.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Suratlary we wideolary görmek</string>
     <string name="high_resolution_video_description">%s çözgütde ýazga geçirilýärkä, aşakdakylar elýeterli bolmaz:</string>
     <string name="highlight">Esasylar</string>

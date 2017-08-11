@@ -430,7 +430,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->SCREEN_HEIGHT:I
 
     .line 133
-    const v0, 0x7f0b024b
+    const v0, 0x7f0b024c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -441,7 +441,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_SCREEN_WIDTH:I
 
     .line 134
-    const v0, 0x7f0b023e
+    const v0, 0x7f0b023f
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -450,7 +450,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->GUIDE_TEXT_WIDTH:F
 
     .line 135
-    const v0, 0x7f0b023a
+    const v0, 0x7f0b023b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -468,7 +468,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->GUIDE_TEXT_POS_X:F
 
     .line 137
-    const v0, 0x7f0b023d
+    const v0, 0x7f0b023e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -531,7 +531,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->GUIDE_TEXT_FONT_COLOR:I
 
     .line 144
-    const v0, 0x7f0b0237
+    const v0, 0x7f0b0238
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -540,7 +540,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->ARROW_MARGIN:F
 
     .line 145
-    const v0, 0x7f0b0236
+    const v0, 0x7f0b0237
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -549,7 +549,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->ARROW_LANDSCAPE_OVERLAY:F
 
     .line 146
-    const v0, 0x7f0b023f
+    const v0, 0x7f0b0240
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -558,7 +558,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_LANDSCAPE_HEIGHT:F
 
     .line 147
-    const v0, 0x7f0b0241
+    const v0, 0x7f0b0242
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -567,7 +567,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_LANDSCAPE_X:F
 
     .line 148
-    const v0, 0x7f0b0242
+    const v0, 0x7f0b0243
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -576,7 +576,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_LANDSCAPE_Y:F
 
     .line 149
-    const v0, 0x7f0b0244
+    const v0, 0x7f0b0245
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -587,7 +587,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_WIDTH:F
 
     .line 150
-    const v0, 0x7f0b0245
+    const v0, 0x7f0b0246
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -596,7 +596,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_X:F
 
     .line 151
-    const v0, 0x7f0b0246
+    const v0, 0x7f0b0247
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -629,7 +629,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_SINGLE_PORTRAIT_HEIGHT:F
 
     .line 156
-    const v0, 0x7f0b0247
+    const v0, 0x7f0b0248
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -638,7 +638,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_RECT_THICKNESS:F
 
     .line 157
-    const v0, 0x7f0b0248
+    const v0, 0x7f0b0249
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -656,7 +656,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->NEXT_CAPTURE_FOCUS_PORTRAIT_X:F
 
     .line 159
-    const v0, 0x7f0b0238
+    const v0, 0x7f0b0239
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -665,7 +665,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->BACKGROUND_RECT_PORTRAIT_X:F
 
     .line 160
-    const v0, 0x7f0b0239
+    const v0, 0x7f0b023a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -684,7 +684,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->FOCUS_RECT_PORTRAIT_X:F
 
     .line 163
-    const v0, 0x7f0b024a
+    const v0, 0x7f0b024b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -702,7 +702,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->PREVIEW_PORTRAIT_MARGIN:F
 
     .line 165
-    const v0, 0x7f0b0249
+    const v0, 0x7f0b024a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -729,7 +729,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->ANIMATION_TOP_MARGIN_LEFT:F
 
     .line 168
-    const v0, 0x7f0b01d6
+    const v0, 0x7f0b01d7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -773,7 +773,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->SCREEN_CROP_PORTRAIT_OFFSET_NORMAL:I
 
     .line 172
-    const v0, 0x7f0b0144
+    const v0, 0x7f0b0145
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -786,7 +786,7 @@
     .line 173
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->SCREEN_CROP_PORTRAIT_OFFSET_NORMAL:I
 
-    const v1, 0x7f0b0144
+    const v1, 0x7f0b0145
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -799,7 +799,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->SCREEN_CROP_PORTRAIT_BOTTOM_OFFSET_NORMAL:I
 
     .line 175
-    const v0, 0x7f0b01d8
+    const v0, 0x7f0b01d9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -808,7 +808,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->SHUTTER_BUTTON_WIDTH:F
 
     .line 176
-    const v0, 0x7f0b034d
+    const v0, 0x7f0b034e
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -863,7 +863,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->GUIDE_TEXT_PORTRAIT_HEIGHT:F
 
     .line 181
-    const v0, 0x7f0b023c
+    const v0, 0x7f0b023d
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -872,7 +872,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->GUIDE_TEXT_PORTRAIT_WIDTH:F
 
     .line 182
-    const v0, 0x7f0b0240
+    const v0, 0x7f0b0241
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -881,7 +881,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_LANDSCAPE_WIDTH:F
 
     .line 183
-    const v0, 0x7f0b0243
+    const v0, 0x7f0b0244
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -3570,7 +3570,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mGLContext:Lcom/samsung/android/glview/GLContext;
 
-    const v2, 0x7f020155
+    const v2, 0x7f020156
 
     invoke-direct {v0, v1, v8, v10, v2}, Lcom/samsung/android/glview/GLNinePatch;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -4798,7 +4798,7 @@
     if-nez v6, :cond_6
 
     .line 1812
-    const v6, 0x7f0b0240
+    const v6, 0x7f0b0241
 
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -5128,7 +5128,7 @@
     iput v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mLivePreviewPortraitHeightMargin:F
 
     .line 1859
-    const v7, 0x7f0b0243
+    const v7, 0x7f0b0244
 
     invoke-static {v7}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -5995,7 +5995,7 @@
 
     .prologue
     .line 2066
-    const v0, 0x7f0b0243
+    const v0, 0x7f0b0244
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -7738,7 +7738,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a02aa
+    const v2, 0x7f0a02b0
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -7763,7 +7763,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a02ab
+    const v2, 0x7f0a02b1
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -7788,7 +7788,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a02ac
+    const v2, 0x7f0a02b2
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8138,13 +8138,13 @@
     .param p1, "warningType"    # I
 
     .prologue
-    const v5, 0x7f0a02b2
+    const v5, 0x7f0a02b8
 
-    const v4, 0x7f0a02b0
+    const v4, 0x7f0a02b6
 
-    const v3, 0x7f0a02af
+    const v3, 0x7f0a02b5
 
-    const v2, 0x7f0a02ae
+    const v2, 0x7f0a02b4
 
     const/4 v1, 0x2
 
@@ -8363,7 +8363,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a02b1
+    const v2, 0x7f0a02b7
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -8403,7 +8403,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a019b
+    const v1, 0x7f0a01a1
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -8417,7 +8417,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a02ad
+    const v1, 0x7f0a02b3
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -8431,7 +8431,7 @@
     :pswitch_3
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a02a9
+    const v1, 0x7f0a02af
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -8445,7 +8445,7 @@
     :pswitch_4
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v1, 0x7f0a02a8
+    const v1, 0x7f0a02ae
 
     invoke-static {v0, v1, v2}, Lcom/sec/android/app/camera/widget/CameraToast;->makeText(Lcom/sec/android/app/camera/interfaces/CameraContext;II)Landroid/widget/Toast;
 
@@ -10940,7 +10940,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f020155
+    const v4, 0x7f020156
 
     invoke-direct {v1, p1, v2, v3, v4}, Lcom/samsung/android/glview/GLNinePatch;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -10977,7 +10977,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f020154
+    const v4, 0x7f020155
 
     invoke-direct {v1, p1, v2, v3, v4}, Lcom/samsung/android/glview/GLNinePatch;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11034,7 +11034,7 @@
 
     iget v6, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_SINGLE_HEIGHT:F
 
-    const v7, 0x7f020155
+    const v7, 0x7f020156
 
     move-object v2, p1
 
@@ -11094,7 +11094,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0201ea
+    const v4, 0x7f0201e8
 
     invoke-direct {v1, p1, v2, v3, v4}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11107,7 +11107,7 @@
 
     const/4 v3, 0x0
 
-    const v4, 0x7f0201eb
+    const v4, 0x7f0201e9
 
     invoke-direct {v1, p1, v2, v3, v4}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11308,7 +11308,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e3
+    const v6, 0x7f0201e1
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11325,7 +11325,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e9
+    const v6, 0x7f0201e7
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11342,7 +11342,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e8
+    const v6, 0x7f0201e6
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11359,7 +11359,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e2
+    const v6, 0x7f0201e0
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11376,7 +11376,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e2
+    const v6, 0x7f0201e0
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11393,7 +11393,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e0
+    const v6, 0x7f0201de
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11410,7 +11410,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201de
+    const v6, 0x7f0201dc
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11427,7 +11427,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201ec
+    const v6, 0x7f0201ea
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11444,7 +11444,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e4
+    const v6, 0x7f0201e2
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11461,7 +11461,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e6
+    const v6, 0x7f0201e4
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11478,7 +11478,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e8
+    const v6, 0x7f0201e6
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11495,7 +11495,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e3
+    const v6, 0x7f0201e1
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11512,7 +11512,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e1
+    const v6, 0x7f0201df
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11529,7 +11529,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201df
+    const v6, 0x7f0201dd
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11546,7 +11546,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201ed
+    const v6, 0x7f0201eb
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11563,7 +11563,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e5
+    const v6, 0x7f0201e3
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11580,7 +11580,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e7
+    const v6, 0x7f0201e5
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11597,7 +11597,7 @@
 
     const/4 v5, 0x0
 
-    const v6, 0x7f0201e9
+    const v6, 0x7f0201e7
 
     invoke-direct {v3, p1, v4, v5, v6}, Lcom/samsung/android/glview/GLImage;-><init>(Lcom/samsung/android/glview/GLContext;FFI)V
 
@@ -11793,7 +11793,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_Y:F
 
-    const v6, 0x7f0b0243
+    const v6, 0x7f0b0244
 
     .line 489
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -11835,7 +11835,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_Y:F
 
-    const v6, 0x7f0b0243
+    const v6, 0x7f0b0244
 
     .line 492
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -11877,7 +11877,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_Y:F
 
-    const v6, 0x7f0b0243
+    const v6, 0x7f0b0244
 
     .line 495
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -11919,7 +11919,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_Y:F
 
-    const v6, 0x7f0b0243
+    const v6, 0x7f0b0244
 
     .line 498
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -11961,7 +11961,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_Y:F
 
-    const v6, 0x7f0b0243
+    const v6, 0x7f0b0244
 
     .line 501
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -12003,7 +12003,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_Y:F
 
-    const v6, 0x7f0b0243
+    const v6, 0x7f0b0244
 
     .line 504
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -12045,7 +12045,7 @@
 
     iget v5, p0, Lcom/sec/android/app/camera/shootingmode/MotionWideSelfie;->LIVEPREVIEW_PORTRAIT_Y:F
 
-    const v6, 0x7f0b0243
+    const v6, 0x7f0b0244
 
     .line 507
     invoke-static {v6}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -12113,7 +12113,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a0161
+    const v3, 0x7f0a0163
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -12189,7 +12189,7 @@
 
     int-to-float v6, v2
 
-    const v7, 0x7f0202e8
+    const v7, 0x7f0202e7
 
     move-object v2, p1
 
@@ -12220,7 +12220,7 @@
 
     int-to-float v6, v2
 
-    const v7, 0x7f0202e8
+    const v7, 0x7f0202e7
 
     move-object v2, p1
 
@@ -12245,7 +12245,7 @@
 
     int-to-float v6, v2
 
-    const v7, 0x7f0202e8
+    const v7, 0x7f0202e7
 
     move-object v2, p1
 
@@ -12278,7 +12278,7 @@
 
     int-to-float v6, v2
 
-    const v7, 0x7f0202e8
+    const v7, 0x7f0202e7
 
     move-object v2, p1
 

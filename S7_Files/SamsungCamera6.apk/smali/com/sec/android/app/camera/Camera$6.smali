@@ -25,7 +25,7 @@
     .param p2, "x0"    # Landroid/os/Handler;
 
     .prologue
-    .line 606
+    .line 599
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,7 +40,7 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 609
+    .line 602
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
     # invokes: Lcom/sec/android/app/camera/Camera;->isInteractionControlEnabled()Z
@@ -50,16 +50,16 @@
 
     if-nez v0, :cond_0
 
-    .line 610
+    .line 603
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
     invoke-virtual {v0}, Lcom/sec/android/app/camera/Camera;->setToFullSensorOrientation()V
 
-    .line 618
+    .line 611
     :goto_0
     return-void
 
-    .line 612
+    .line 605
     :cond_0
     invoke-static {}, Lcom/samsung/android/glview/GLContext;->getLastOrientation()I
 
@@ -75,7 +75,7 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 613
+    .line 606
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 
@@ -83,7 +83,7 @@
 
     goto :goto_0
 
-    .line 615
+    .line 608
     :cond_2
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$6;->this$0:Lcom/sec/android/app/camera/Camera;
 

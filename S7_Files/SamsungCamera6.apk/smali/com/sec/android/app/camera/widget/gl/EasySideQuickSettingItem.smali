@@ -132,7 +132,7 @@
 
     iget-object v1, p0, Lcom/sec/android/app/camera/widget/gl/EasySideQuickSettingItem;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const v3, 0x7f0b01cd
+    const v3, 0x7f0b01ce
 
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -142,7 +142,7 @@
 
     int-to-float v4, v3
 
-    const v3, 0x7f0b01cc
+    const v3, 0x7f0b01cd
 
     .line 142
     invoke-static {v3}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F

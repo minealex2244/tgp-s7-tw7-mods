@@ -46,6 +46,22 @@
 
     iget-object v0, v0, Lcom/samsung/android/glview/GLView;->mAnimationEventListener:Lcom/samsung/android/glview/GLView$AnimationEventListener;
 
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView$5;->this$0:Lcom/samsung/android/glview/GLView;
+
+    # getter for: Lcom/samsung/android/glview/GLView;->mAnimation:Landroid/view/animation/Animation;
+    invoke-static {v0}, Lcom/samsung/android/glview/GLView;->access$700(Lcom/samsung/android/glview/GLView;)Landroid/view/animation/Animation;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    .line 1059
+    iget-object v0, p0, Lcom/samsung/android/glview/GLView$5;->this$0:Lcom/samsung/android/glview/GLView;
+
+    iget-object v0, v0, Lcom/samsung/android/glview/GLView;->mAnimationEventListener:Lcom/samsung/android/glview/GLView$AnimationEventListener;
+
     iget-object v1, p0, Lcom/samsung/android/glview/GLView$5;->this$0:Lcom/samsung/android/glview/GLView;
 
     iget-object v2, p0, Lcom/samsung/android/glview/GLView$5;->this$0:Lcom/samsung/android/glview/GLView;
@@ -57,6 +73,7 @@
 
     invoke-interface {v0, v1, v2}, Lcom/samsung/android/glview/GLView$AnimationEventListener;->onAnimationStart(Lcom/samsung/android/glview/GLView;Landroid/view/animation/Animation;)V
 
-    .line 1059
+    .line 1061
+    :cond_0
     return-void
 .end method

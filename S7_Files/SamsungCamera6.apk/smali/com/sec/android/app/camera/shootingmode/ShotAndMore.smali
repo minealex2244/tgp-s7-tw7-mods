@@ -131,7 +131,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->SCREEN_HEIGHT:I
 
     .line 78
-    const v0, 0x7f0b01c5
+    const v0, 0x7f0b01c6
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -146,7 +146,7 @@
 
     new-array v0, v0, [I
 
-    const v1, 0x7f0b01bd
+    const v1, 0x7f0b01be
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -156,7 +156,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0b01c0
+    const v1, 0x7f0b01c1
 
     .line 81
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -167,7 +167,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0b01be
+    const v1, 0x7f0b01bf
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -177,7 +177,7 @@
 
     aput v1, v0, v5
 
-    const v1, 0x7f0b01bf
+    const v1, 0x7f0b01c0
 
     .line 82
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -195,7 +195,7 @@
 
     new-array v0, v0, [I
 
-    const v1, 0x7f0b01c1
+    const v1, 0x7f0b01c2
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -205,7 +205,7 @@
 
     aput v1, v0, v3
 
-    const v1, 0x7f0b01c4
+    const v1, 0x7f0b01c5
 
     .line 84
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -216,7 +216,7 @@
 
     aput v1, v0, v4
 
-    const v1, 0x7f0b01c2
+    const v1, 0x7f0b01c3
 
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -226,7 +226,7 @@
 
     aput v1, v0, v5
 
-    const v1, 0x7f0b01c3
+    const v1, 0x7f0b01c4
 
     .line 85
     invoke-static {v1}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
@@ -240,7 +240,7 @@
     iput-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->CAPTURE_PROGRESS_Y:[I
 
     .line 86
-    const v0, 0x7f0b01cb
+    const v0, 0x7f0b01cc
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -251,7 +251,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->CAPTURE_PROGRESS_WIDTH:I
 
     .line 87
-    const v0, 0x7f0b01c8
+    const v0, 0x7f0b01c9
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -262,7 +262,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->CAPTURE_PROGRESS_HEIGHT:I
 
     .line 88
-    const v0, 0x7f0b0349
+    const v0, 0x7f0b034a
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -271,7 +271,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESS_GROUP_LAND_BOTTOM_MARGIN:F
 
     .line 89
-    const v0, 0x7f0b034a
+    const v0, 0x7f0b034b
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -280,7 +280,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESS_GROUP_PORT_BOTTOM_MARGIN:F
 
     .line 91
-    const v0, 0x7f0b01ca
+    const v0, 0x7f0b01cb
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -291,7 +291,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESSBAR_TEXT_HEIGHT:I
 
     .line 92
-    const v0, 0x7f0b01c9
+    const v0, 0x7f0b01ca
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -302,7 +302,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESSBAR_TEXT_BOTTOM_PADDING:I
 
     .line 93
-    const v0, 0x7f0b034b
+    const v0, 0x7f0b034c
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -311,7 +311,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESSBAR_TEXT_SIZE:F
 
     .line 94
-    const v0, 0x7f0b01c7
+    const v0, 0x7f0b01c8
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -322,7 +322,7 @@
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->PROGRESS_TEXT_WIDTH:I
 
     .line 95
-    const v0, 0x7f0b01c6
+    const v0, 0x7f0b01c7
 
     invoke-static {v0}, Lcom/samsung/android/glview/GLContext;->getDimension(I)F
 
@@ -400,7 +400,7 @@
     .locals 2
 
     .prologue
-    .line 452
+    .line 454
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mShotAndMoreState:I
 
     const/4 v1, 0x1
@@ -415,33 +415,33 @@
 
     if-eqz v0, :cond_1
 
-    .line 453
+    .line 455
     const-string v0, "ShotAndMore"
 
     const-string v1, "cancelShotAndMoreCapture - invalide state return"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 462
+    .line 464
     :cond_0
     :goto_0
     return-void
 
-    .line 457
+    .line 459
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-eqz v0, :cond_0
 
-    .line 458
+    .line 460
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->stopShotAndMoreShutterSound()V
 
-    .line 459
+    .line 461
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->cancelShotAndMore()V
 
-    .line 460
+    .line 462
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->onShotAndMoreCapturingCancel()V
 
     goto :goto_0
@@ -451,20 +451,20 @@
     .locals 5
 
     .prologue
-    .line 466
+    .line 468
     const/4 v2, 0x0
 
     invoke-static {v2}, Lcom/sec/android/app/camera/util/ImageUtils;->getImageSavingDir(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 467
+    .line 469
     .local v1, "saveDirName":Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 468
+    .line 470
     .local v0, "cameraDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -472,14 +472,14 @@
 
     if-nez v2, :cond_0
 
-    .line 469
+    .line 471
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 470
+    .line 472
     const-string v2, "ShotAndMore"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -502,16 +502,73 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 474
+    .line 476
     :cond_0
     return-void
+.end method
+
+.method private getProgressText(I)Ljava/lang/String;
+    .locals 5
+    .param p1, "value"    # I
+
+    .prologue
+    const/4 v2, 0x1
+
+    const/4 v4, 0x0
+
+    .line 611
+    invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isEuropeanArabicNumerals()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 612
+    const-string v1, "%d%%"
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v4
+
+    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 617
+    .local v0, "result":Ljava/lang/String;
+    :goto_0
+    return-object v0
+
+    .line 614
+    .end local v0    # "result":Ljava/lang/String;
+    :cond_0
+    const-string v1, "%%%d"
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v3
+
+    aput-object v3, v2, v4
+
+    invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .restart local v0    # "result":Ljava/lang/String;
+    goto :goto_0
 .end method
 
 .method private getRequiredStorageSize()J
     .locals 2
 
     .prologue
-    .line 477
+    .line 479
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -520,10 +577,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 478
+    .line 480
     const-wide/32 v0, 0xa00000
 
-    .line 480
+    .line 482
     :goto_0
     return-wide v0
 
@@ -537,12 +594,12 @@
     .locals 2
 
     .prologue
-    .line 485
+    .line 487
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mShotAndMoreStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 486
+    .line 488
     :try_start_0
     iget v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mShotAndMoreState:I
 
@@ -550,7 +607,7 @@
 
     return v0
 
-    .line 487
+    .line 489
     :catchall_0
     move-exception v0
 
@@ -565,7 +622,7 @@
     .locals 1
 
     .prologue
-    .line 498
+    .line 500
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mTempFileName:Ljava/lang/String;
 
     return-object v0
@@ -575,21 +632,21 @@
     .locals 2
 
     .prologue
-    .line 502
+    .line 504
     const-string v0, "ShotAndMore"
 
     const-string v1, "hideCaptureLayout"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 503
+    .line 505
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLViewGroup;->setVisibility(I)V
 
-    .line 504
+    .line 506
     return-void
 .end method
 
@@ -597,7 +654,7 @@
     .locals 6
 
     .prologue
-    .line 508
+    .line 510
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
@@ -612,18 +669,18 @@
 
     if-nez v3, :cond_0
 
-    .line 509
+    .line 511
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const-string v4, "com.sec.android.app.camera.shootingmode.shotandmore"
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showApplicationDisabledPopup(Ljava/lang/String;)V
 
-    .line 534
+    .line 536
     :goto_0
     return-void
 
-    .line 513
+    .line 515
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -639,12 +696,12 @@
 
     if-eqz v3, :cond_2
 
-    .line 514
+    .line 516
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    .line 515
+    .line 517
     .local v2, "intent":Landroid/content/Intent;
     new-instance v0, Landroid/content/ComponentName;
 
@@ -654,25 +711,25 @@
 
     invoke-direct {v0, v3, v4}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 516
+    .line 518
     .local v0, "component":Landroid/content/ComponentName;
     invoke-virtual {v2, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    .line 518
+    .line 520
     const-string v3, "sef_file_name"
 
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mInputPath:Ljava/lang/String;
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 519
+    .line 521
     const-string v3, "start_type"
 
     const/4 v4, 0x0
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 521
+    .line 523
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isFromLockScreen()Z
@@ -681,14 +738,14 @@
 
     if-eqz v3, :cond_1
 
-    .line 522
+    .line 524
     const-string v3, "createdByLockscreen"
 
     const/4 v4, 0x1
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 526
+    .line 528
     :cond_1
     :try_start_0
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -697,11 +754,15 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v2}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    const/16 v4, 0x7e2
+
+    invoke-virtual {v3, v2, v4}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 530
+    .line 532
     :goto_1
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -717,11 +778,11 @@
 
     goto :goto_0
 
-    .line 527
+    .line 529
     :catch_0
     move-exception v1
 
-    .line 528
+    .line 530
     .local v1, "e":Landroid/content/ActivityNotFoundException;
     const-string v3, "ShotAndMore"
 
@@ -731,7 +792,7 @@
 
     goto :goto_1
 
-    .line 532
+    .line 534
     .end local v0    # "component":Landroid/content/ComponentName;
     .end local v1    # "e":Landroid/content/ActivityNotFoundException;
     .end local v2    # "intent":Landroid/content/Intent;
@@ -755,14 +816,14 @@
 
     const/4 v2, 0x0
 
-    .line 537
+    .line 539
     const-string v0, "ShotAndMore"
 
     const-string v1, "onShotAndMoreCapturingCancel"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 539
+    .line 541
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isSystemKeyEventRequested(I)Z
@@ -771,12 +832,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 540
+    .line 542
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, v4, v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
 
-    .line 541
+    .line 543
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -786,29 +847,29 @@
 
     if-eqz v0, :cond_1
 
-    .line 542
+    .line 544
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, v3, v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
 
-    .line 544
+    .line 546
     :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->resetTouchFocus()V
 
-    .line 546
+    .line 548
     invoke-direct {p0, v2}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->reset(Z)V
 
-    .line 547
+    .line 549
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->removeTempFile()V
 
-    .line 548
+    .line 550
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->setShotAndMoreState(I)V
 
-    .line 549
+    .line 551
     return-void
 .end method
 
@@ -818,14 +879,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 552
+    .line 554
     const-string v0, "ShotAndMore"
 
     const-string v1, "ShotAndMoreCapturingStop"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 554
+    .line 556
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->getShotAndMoreState()I
 
     move-result v0
@@ -834,50 +895,50 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 555
+    .line 557
     const-string v0, "ShotAndMore"
 
     const-string v1, "onShotAndMoreCapturingStop - getShotAndMoreState is not SHOT_AND_MORE_STATE_START, return"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 569
+    .line 571
     :goto_0
     return-void
 
-    .line 559
+    .line 561
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     if-eqz v0, :cond_1
 
-    .line 560
+    .line 562
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleStopShotAndMore()V
 
-    .line 563
+    .line 565
     :cond_1
     const/4 v0, 0x3
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->setShotAndMoreState(I)V
 
-    .line 564
+    .line 566
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->hideCaptureLayout()V
 
-    .line 566
+    .line 568
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v1, 0x5
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->stopCameraSound(I)V
 
-    .line 567
+    .line 569
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, v2, v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->playCameraSound(II)V
 
-    .line 568
+    .line 570
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
@@ -890,15 +951,15 @@
     .param p1, "filepath"    # Ljava/lang/String;
 
     .prologue
-    .line 572
+    .line 574
     iput-object p1, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mInputPath:Ljava/lang/String;
 
-    .line 573
+    .line 575
     sget-boolean v0, Lcom/sec/android/app/camera/util/Util;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
-    .line 574
+    .line 576
     const-string v0, "ShotAndMore"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -921,7 +982,7 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 575
+    .line 577
     :cond_0
     return-void
 .end method
@@ -930,7 +991,7 @@
     .locals 6
 
     .prologue
-    .line 578
+    .line 580
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->getStorage()I
@@ -941,7 +1002,7 @@
 
     move-result-object v0
 
-    .line 579
+    .line 581
     .local v0, "directory":Ljava/lang/String;
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -967,7 +1028,7 @@
 
     move-result-object v2
 
-    .line 581
+    .line 583
     .local v2, "filename":Ljava/lang/String;
     :try_start_0
     new-instance v3, Ljava/io/File;
@@ -978,15 +1039,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 585
+    .line 587
     :goto_0
     return-void
 
-    .line 582
+    .line 584
     :catch_0
     move-exception v1
 
-    .line 583
+    .line 585
     .local v1, "ex":Ljava/lang/Exception;
     const-string v3, "ShotAndMore"
 
@@ -1024,19 +1085,19 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 588
+    .line 590
     const-string v0, "ShotAndMore"
 
     const-string v1, "reset"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 589
+    .line 591
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCaptureProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     invoke-virtual {v0, v2}, Lcom/samsung/android/glview/GLProgressBar;->setProgress(I)V
 
-    .line 590
+    .line 592
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -1050,25 +1111,25 @@
     :goto_0
     iput v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mMaxImageCount:I
 
-    .line 591
+    .line 593
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCaptureProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     const/16 v1, 0x64
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLProgressBar;->setMax(I)V
 
-    .line 592
+    .line 594
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCaptureCount:I
 
-    .line 594
+    .line 596
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->hideCaptureLayout()V
 
-    .line 596
+    .line 598
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mProgressText:Lcom/samsung/android/glview/GLText;
 
     if-eqz v0, :cond_0
 
-    .line 597
+    .line 599
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mProgressText:Lcom/samsung/android/glview/GLText;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1107,7 +1168,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 600
+    .line 602
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -1115,25 +1176,25 @@
 
     if-nez p1, :cond_1
 
-    .line 601
+    .line 603
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v1, 0x200
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->enableView(I)V
 
-    .line 602
+    .line 604
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 604
+    .line 606
     :cond_1
     return-void
 
-    .line 590
+    .line 592
     :cond_2
     const/16 v0, 0x20
 
@@ -1141,14 +1202,10 @@
 .end method
 
 .method private setCaptureProgressIncreased()V
-    .locals 8
+    .locals 5
 
     .prologue
-    const/4 v5, 0x1
-
-    const/4 v7, 0x0
-
-    .line 607
+    .line 621
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -1162,10 +1219,10 @@
     :goto_0
     iput v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mMaxImageCount:I
 
-    .line 608
+    .line 622
     const/4 v1, 0x0
 
-    .line 610
+    .line 624
     .local v1, "progress":I
     :try_start_0
     iget v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCaptureCount:I
@@ -1182,7 +1239,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 614
+    .line 628
     :goto_1
     const-string v2, "ShotAndMore"
 
@@ -1208,7 +1265,7 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 615
+    .line 629
     const-string v2, "ShotAndMore"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1231,57 +1288,21 @@
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 617
+    .line 631
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCaptureProgressBar:Lcom/samsung/android/glview/GLProgressBar;
 
     invoke-virtual {v2, v1}, Lcom/samsung/android/glview/GLProgressBar;->setProgress(I)V
 
-    .line 618
-    invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 619
+    .line 632
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mProgressText:Lcom/samsung/android/glview/GLText;
 
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "%"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, "%d"
-
-    new-array v5, v5, [Ljava/lang/Object;
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    aput-object v6, v5, v7
-
-    invoke-static {v4, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->getProgressText(I)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
 
-    .line 623
-    :goto_2
+    .line 633
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v2}, Lcom/samsung/android/glview/GLViewGroup;->getVisibility()I
@@ -1292,40 +1313,40 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 624
+    .line 634
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v3, 0x200
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 625
+    .line 635
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v3, -0x181
 
     invoke-interface {v2, v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 626
+    .line 636
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->showCaptureLayout()V
 
-    .line 628
+    .line 638
     :cond_0
     return-void
 
-    .line 607
+    .line 621
     .end local v1    # "progress":I
     :cond_1
     const/16 v2, 0x20
 
-    goto/16 :goto_0
+    goto :goto_0
 
-    .line 611
+    .line 625
     .restart local v1    # "progress":I
     :catch_0
     move-exception v0
 
-    .line 612
+    .line 626
     .local v0, "ex":Ljava/lang/Exception;
     const-string v2, "ShotAndMore"
 
@@ -1349,73 +1370,32 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto/16 :goto_1
-
-    .line 621
-    .end local v0    # "ex":Ljava/lang/Exception;
-    :cond_2
-    iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mProgressText:Lcom/samsung/android/glview/GLText;
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "%d"
-
-    new-array v5, v5, [Ljava/lang/Object;
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v6
-
-    aput-object v6, v5, v7
-
-    invoke-static {v4, v5}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    const-string v4, "%"
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Lcom/samsung/android/glview/GLText;->setText(Ljava/lang/String;)V
-
-    goto :goto_2
+    goto :goto_1
 .end method
 
 .method private setOutputFile()V
     .locals 6
 
     .prologue
-    .line 631
+    .line 641
     const-string v3, "ShotAndMore"
 
     const-string v4, "setOutputFile"
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 632
+    .line 642
     invoke-static {}, Lcom/sec/android/app/camera/util/StorageUtils;->getExternalStoragePath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 634
+    .line 644
     .local v1, "directory":Ljava/lang/String;
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 635
+    .line 645
     .local v0, "cameraDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1423,14 +1403,14 @@
 
     if-nez v3, :cond_0
 
-    .line 636
+    .line 646
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 637
+    .line 647
     const-string v3, "ShotAndMore"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1453,7 +1433,7 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 641
+    .line 651
     :cond_0
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -1465,13 +1445,13 @@
 
     move-result-object v1
 
-    .line 643
+    .line 653
     new-instance v0, Ljava/io/File;
 
     .end local v0    # "cameraDir":Ljava/io/File;
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 644
+    .line 654
     .restart local v0    # "cameraDir":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1479,14 +1459,14 @@
 
     if-nez v3, :cond_1
 
-    .line 645
+    .line 655
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 646
+    .line 656
     const-string v3, "ShotAndMore"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1509,18 +1489,18 @@
 
     invoke-static {v3, v4}, Lcom/samsung/android/util/SemLog;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 647
+    .line 657
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/16 v4, -0xa
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->finishOnError(I)V
 
-    .line 655
+    .line 665
     :goto_0
     return-void
 
-    .line 652
+    .line 662
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1546,7 +1526,7 @@
 
     move-result-object v2
 
-    .line 654
+    .line 664
     .local v2, "filename":Ljava/lang/String;
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -1560,12 +1540,12 @@
     .param p1, "state"    # I
 
     .prologue
-    .line 491
+    .line 493
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mShotAndMoreStateLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 492
+    .line 494
     :try_start_0
     const-string v0, "ShotAndMore"
 
@@ -1589,16 +1569,16 @@
 
     invoke-static {v0, v2}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 493
+    .line 495
     iput p1, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mShotAndMoreState:I
 
-    .line 494
+    .line 496
     monitor-exit v1
 
-    .line 495
+    .line 497
     return-void
 
-    .line 494
+    .line 496
     :catchall_0
     move-exception v0
 
@@ -1613,23 +1593,23 @@
     .locals 2
 
     .prologue
-    .line 658
+    .line 668
     const-string v0, "ShotAndMore"
 
     const-string v1, "showCaptureLayout"
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 659
+    .line 669
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     if-nez v0, :cond_0
 
-    .line 663
+    .line 673
     :goto_0
     return-void
 
-    .line 662
+    .line 672
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mProgressGroup:Lcom/samsung/android/glview/GLViewGroup;
 
@@ -1644,19 +1624,19 @@
     .locals 2
 
     .prologue
-    .line 666
+    .line 676
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v1, 0x5
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->stopCameraSound(I)V
 
-    .line 667
+    .line 677
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 668
+    .line 678
     return-void
 .end method
 
@@ -1905,9 +1885,9 @@
 
     int-to-float v5, v1
 
-    const v6, 0x7f020164
+    const v6, 0x7f020165
 
-    const v7, 0x7f020165
+    const v7, 0x7f020166
 
     move-object v1, p1
 
@@ -2471,12 +2451,14 @@
 .end method
 
 .method public onShotAndMoreCaptureProgress(II)V
-    .locals 5
+    .locals 6
     .param p1, "current"    # I
     .param p2, "max"    # I
 
     .prologue
-    const/16 v4, 0x191
+    const/16 v5, 0x191
+
+    const/4 v4, 0x1
 
     const/4 v3, 0x0
 
@@ -2514,6 +2496,19 @@
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 287
+    invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->getShotAndMoreState()I
+
+    move-result v0
+
+    if-ne v0, v4, :cond_1
+
+    .line 314
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 290
+    :cond_1
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v0, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getRemainCount(I)I
@@ -2522,48 +2517,43 @@
 
     sub-int v1, p2, p1
 
-    if-ge v0, v1, :cond_1
+    if-ge v0, v1, :cond_2
 
-    .line 288
+    .line 291
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->cancelShotAndMoreCapture()V
 
-    .line 289
+    .line 292
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    const/4 v1, 0x1
+    invoke-interface {v0, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setStorageStatus(I)V
 
-    invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setStorageStatus(I)V
-
-    .line 290
+    .line 293
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v0, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isCameraDialogVisible(I)Z
+    invoke-interface {v0, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isCameraDialogVisible(I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 291
+    .line 294
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
-    invoke-interface {v0, v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showCameraDialog(I)V
+    invoke-interface {v0, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->showCameraDialog(I)V
 
-    .line 311
-    :cond_0
-    :goto_0
-    return-void
+    goto :goto_0
 
-    .line 296
-    :cond_1
+    .line 299
+    :cond_2
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->getShotAndMoreState()I
 
     move-result v0
 
     const/4 v1, 0x2
 
-    if-eq v0, v1, :cond_2
+    if-eq v0, v1, :cond_3
 
-    .line 297
+    .line 300
     const-string v0, "ShotAndMore"
 
     const-string v1, "onShotAndMoreCaptureProgress - getShotAndMoreState is not SHOT_AND_MORE_STATE_START, return"
@@ -2572,37 +2562,37 @@
 
     goto :goto_0
 
-    .line 301
-    :cond_2
-    if-nez p1, :cond_3
+    .line 304
+    :cond_3
+    if-nez p1, :cond_4
 
-    .line 302
+    .line 305
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/4 v1, 0x5
 
     invoke-interface {v0, v1, v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->playCameraSound(II)V
 
-    .line 303
+    .line 306
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/16 v1, 0xfa0
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->acquireDVFS(I)V
 
-    .line 306
-    :cond_3
+    .line 309
+    :cond_4
     add-int/lit8 v0, p2, -0x1
 
-    if-le p1, v0, :cond_4
+    if-le p1, v0, :cond_5
 
-    .line 307
+    .line 310
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->onShotAndMoreCapturingStop()V
 
     goto :goto_0
 
-    .line 309
-    :cond_4
+    .line 312
+    :cond_5
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->setCaptureProgressIncreased()V
 
     goto :goto_0
@@ -2620,30 +2610,30 @@
 
     const/4 v7, 0x0
 
-    .line 315
+    .line 318
     const-string v4, "ShotAndMore"
 
     const-string v5, "onShotAndMoreComplete"
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 317
+    .line 320
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->endShutterProgressWheel()V
 
-    .line 319
+    .line 322
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->getShotAndMoreState()I
 
     move-result v4
 
     if-ne v4, v8, :cond_0
 
-    .line 365
+    .line 368
     :goto_0
     return-void
 
-    .line 324
+    .line 327
     :cond_0
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
@@ -2653,25 +2643,25 @@
 
     if-ne v4, v8, :cond_1
 
-    .line 326
+    .line 329
     const-string v4, "ShotAndMore"
 
     const-string v5, "onShotAndMoreComplete - return - shot and more already cancel "
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 328
+    .line 331
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->cancelShotAndMoreCapture()V
 
-    .line 329
+    .line 332
     invoke-direct {p0, v8}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->reset(Z)V
 
-    .line 330
+    .line 333
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->removeTempFile()V
 
     goto :goto_0
 
-    .line 335
+    .line 338
     :cond_1
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -2683,11 +2673,11 @@
 
     move-result-object v1
 
-    .line 336
+    .line 339
     .local v1, "outputFileName":Ljava/lang/String;
     if-eqz v1, :cond_5
 
-    .line 337
+    .line 340
     const-string v4, "ShotAndMore"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -2710,17 +2700,17 @@
 
     invoke-static {v4, v5}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 338
+    .line 341
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->pushInputString(Ljava/lang/String;)V
 
-    .line 340
+    .line 343
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/Engine;->getCurrentThumbnailSize()[I
 
     move-result-object v3
 
-    .line 341
+    .line 344
     .local v3, "thumbnailSize":[I
     aget v4, v3, v7
 
@@ -2730,7 +2720,7 @@
 
     move-result-object v2
 
-    .line 342
+    .line 345
     .local v2, "thumbnailBitmap":Landroid/graphics/Bitmap;
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
@@ -2744,13 +2734,13 @@
 
     move-result v0
 
-    .line 343
+    .line 346
     .local v0, "orientation":I
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v4, v2, v0, v7}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->updateThumbnailButton(Landroid/graphics/Bitmap;IZ)V
 
-    .line 348
+    .line 351
     .end local v0    # "orientation":I
     .end local v2    # "thumbnailBitmap":Landroid/graphics/Bitmap;
     .end local v3    # "thumbnailSize":[I
@@ -2763,7 +2753,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 349
+    .line 352
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     iget-object v5, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
@@ -2778,24 +2768,24 @@
 
     invoke-interface {v4, v5}, Lcom/sec/android/app/camera/interfaces/CameraContext;->addUriListInSecureCamera(Landroid/net/Uri;)V
 
-    .line 351
+    .line 354
     :cond_2
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->updateLatestMedia()V
 
-    .line 353
+    .line 356
     invoke-direct {p0, v7}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->reset(Z)V
 
-    .line 354
+    .line 357
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->abandonAudioFocus()V
 
-    .line 355
+    .line 358
     invoke-direct {p0, v8}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->setShotAndMoreState(I)V
 
-    .line 357
+    .line 360
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4, v10}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isSystemKeyEventRequested(I)Z
@@ -2804,12 +2794,12 @@
 
     if-eqz v4, :cond_3
 
-    .line 358
+    .line 361
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4, v10, v7}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
 
-    .line 360
+    .line 363
     :cond_3
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -2819,18 +2809,18 @@
 
     if-eqz v4, :cond_4
 
-    .line 361
+    .line 364
     iget-object v4, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v4, v9, v7}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
 
-    .line 364
+    .line 367
     :cond_4
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->launchShotAndMoreStudio()V
 
     goto/16 :goto_0
 
-    .line 345
+    .line 348
     :cond_5
     const-string v4, "ShotAndMore"
 
@@ -2847,7 +2837,7 @@
     .param p2, "max"    # I
 
     .prologue
-    .line 369
+    .line 372
     const-string v0, "ShotAndMore"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -2870,26 +2860,26 @@
 
     invoke-static {v0, v1}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 371
+    .line 374
     if-nez p1, :cond_0
 
-    .line 372
+    .line 375
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/4 v1, -0x1
 
     invoke-interface {v0, v1}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->showView(I)V
 
-    .line 373
+    .line 376
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v0}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->startShutterProgressWheel()V
 
-    .line 377
+    .line 380
     :goto_0
     return-void
 
-    .line 375
+    .line 378
     :cond_0
     iget-object v0, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
@@ -2902,7 +2892,7 @@
     .locals 1
 
     .prologue
-    .line 381
+    .line 384
     const/4 v0, 0x0
 
     return v0
@@ -2912,7 +2902,7 @@
     .locals 1
 
     .prologue
-    .line 386
+    .line 389
     const/4 v0, 0x0
 
     return v0
@@ -2931,38 +2921,29 @@
 
     const/4 v1, 0x1
 
-    .line 391
+    .line 394
     invoke-virtual {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->isCapturing()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 392
+    .line 395
     const-string v2, "ShotAndMore"
 
     const-string v3, "Return, isCapturing"
 
     invoke-static {v2, v3}, Lcom/samsung/android/util/SemLog;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 435
+    .line 437
     :goto_0
     return v1
 
-    .line 396
+    .line 399
     :cond_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->checkShotAndMoreDumpDir()V
 
-    .line 397
-    iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getCameraSettings()Lcom/sec/android/app/camera/interfaces/CameraSettings;
-
-    move-result-object v3
-
-    invoke-interface {v3, v2}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->setStorage(I)V
-
-    .line 398
+    .line 400
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraSettings:Lcom/sec/android/app/camera/interfaces/CameraSettings;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/CameraSettings;->isFrontCamera()Z
@@ -2973,7 +2954,7 @@
 
     const/16 v0, 0x10
 
-    .line 399
+    .line 401
     .local v0, "maxCaptureCount":I
     :goto_1
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
@@ -2984,12 +2965,12 @@
 
     if-ge v3, v0, :cond_2
 
-    .line 400
+    .line 402
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setStorageStatus(I)V
 
-    .line 401
+    .line 403
     iget-object v1, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     const/16 v3, 0x191
@@ -2998,17 +2979,17 @@
 
     move v1, v2
 
-    .line 402
+    .line 404
     goto :goto_0
 
-    .line 398
+    .line 400
     .end local v0    # "maxCaptureCount":I
     :cond_1
     const/16 v0, 0x20
 
     goto :goto_1
 
-    .line 404
+    .line 406
     .restart local v0    # "maxCaptureCount":I
     :cond_2
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
@@ -3017,14 +2998,14 @@
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->disableView(I)V
 
-    .line 405
+    .line 407
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     const/16 v4, -0x181
 
     invoke-interface {v3, v4}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->hideView(I)V
 
-    .line 407
+    .line 409
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mBaseMenuController:Lcom/sec/android/app/camera/interfaces/BaseMenuController;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/BaseMenuController;->getOverlayLayoutController()Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;
@@ -3033,7 +3014,7 @@
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/OverlayLayoutController;->hideShootingModeText()V
 
-    .line 409
+    .line 411
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/Engine;->isContinuousAutoFocusSupported()Z
@@ -3058,30 +3039,30 @@
 
     if-nez v3, :cond_3
 
-    .line 410
+    .line 412
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleAutoFocus()V
 
-    .line 413
+    .line 415
     :cond_3
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/Engine;->scheduleStartShotAndMore()V
 
-    .line 415
+    .line 417
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->getShotAndMoreState()I
 
     move-result v3
 
     if-ne v3, v1, :cond_6
 
-    .line 416
+    .line 418
     const/4 v3, 0x2
 
     invoke-direct {p0, v3}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->setShotAndMoreState(I)V
 
-    .line 418
+    .line 420
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3, v6}, Lcom/sec/android/app/camera/interfaces/CameraContext;->isSystemKeyEventRequested(I)Z
@@ -3090,12 +3071,12 @@
 
     if-nez v3, :cond_4
 
-    .line 419
+    .line 421
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3, v6, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
 
-    .line 420
+    .line 422
     :cond_4
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
@@ -3105,41 +3086,41 @@
 
     if-nez v3, :cond_5
 
-    .line 421
+    .line 423
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3, v5, v1}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestSystemKeyEvent(IZ)Z
 
-    .line 423
+    .line 425
     :cond_5
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v3}, Lcom/sec/android/app/camera/interfaces/Engine;->lockAEAWB()V
 
-    .line 424
+    .line 426
     invoke-direct {p0}, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->setOutputFile()V
 
-    .line 426
+    .line 428
     iget-object v3, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v3, v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->setFocusState(I)V
 
-    .line 427
+    .line 429
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mEngine:Lcom/sec/android/app/camera/interfaces/Engine;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/Engine;->removeResetTouchFocusMessage()V
 
-    .line 428
+    .line 430
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->stopAFWaitTimer()V
 
-    .line 429
+    .line 431
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->removeAFmessage()V
 
-    .line 430
+    .line 432
     iget-object v2, p0, Lcom/sec/android/app/camera/shootingmode/ShotAndMore;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     invoke-interface {v2}, Lcom/sec/android/app/camera/interfaces/CameraContext;->requestTransientAudioFocus()V
@@ -3149,7 +3130,7 @@
     :cond_6
     move v1, v2
 
-    .line 435
+    .line 437
     goto/16 :goto_0
 .end method
 
@@ -3158,7 +3139,7 @@
     .param p1, "event"    # I
 
     .prologue
-    .line 440
+    .line 442
     return-void
 .end method
 
@@ -3167,7 +3148,7 @@
     .param p1, "value"    # I
 
     .prologue
-    .line 444
+    .line 446
     return-void
 .end method
 
@@ -3175,7 +3156,7 @@
     .locals 1
 
     .prologue
-    .line 448
+    .line 450
     const/4 v0, 0x0
 
     return v0

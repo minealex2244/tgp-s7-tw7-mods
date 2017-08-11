@@ -190,6 +190,8 @@ Fotografiere cu panoramare: surprindeți un aspect de mișcare la fotografierea 
     <string name="SM_SLOW_VIDEO_description">Înregistrați videoclipuri la o frecvență mare a cadrelor, pentru a le vizualiza cu încetinitorul. Puteți reda cu încetinitorul o anumită secțiune a oricărui videoclip după ce l-ați înregistrat.</string>
     <string name="SM_SMART_SELFSHOT">Autoportret cameră foto spate</string>
     <string name="SM_SMART_SELFSHOT_description">Camera foto din spate vă va detecta automat fața și se va focaliza pe aceasta atunci când faceți fotografii autoportret.</string>
+    <string name="SM_SOCIAL">Social</string>
+    <string name="SM_SOCIAL_description">Realizați fotografii partajați-le pe rețelele de socializare.</string>
     <string name="SM_SPORTS">Sport</string>
     <string name="SM_SPORTS_SCENE_description">Faceți fotografii mai clare ale subiecților care se mișcă rapid.</string>
     <string name="SM_STORY">Sunet și foto</string>
@@ -393,7 +395,10 @@ formă"</string>
     <string name="guideline_square">Pătrat</string>
     <string name="help_change_mode_tip_1">Glisați la dreapta pentru a vizualiza modurile disponibile ale camerei foto.</string>
     <string name="help_change_mode_tip_2">Selectați modul pe care doriți să-l utilizați.</string>
+    <string name="help_change_mode_tip_3">Sunt disponibile doar modurile Automat și Autoportret ale camerei foto atunci când Modul Simplu este activat.</string>
     <string name="help_changing_the_camera_mode">Selectarea modurilor camerei foto</string>
+    <string name="help_changing_the_camera_mode_header">Selectarea unui mod pt. cameră</string>
+    <string name="help_changing_the_camera_mode_title">Schimbarea modului camerei foto</string>
     <string name="help_recording_videos">Înregistrarea videoclipurilor</string>
     <string name="help_recording_videos_tip_1">Atingeți %s.</string>
     <string name="help_recording_videos_tip_1_tts">Atingeți butonul camerei video.</string>
@@ -401,7 +406,7 @@ formă"</string>
     <string name="help_recording_videos_tip_2_tts">Atingeți butonul de oprire pentru a opri înregistrarea.</string>
     <string name="help_recording_videos_tip_snapshot">Atingeți %s pentru a face fotografii în timpul înregistrării unui videoclip.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Atingeți butonul camerei foto pentru a face fotografii în timpul înregistrării unui videoclip.</string>
-    <string name="help_section_summary">Realizați fotografii sau înregistrați videoclipuri utilizând o varietate de efecte care se potrivesc pentru toate ocaziile. Atunci când este activat Modul Simplu, sunt disponibile doar modurile Automat și Autoportret ale camerei foto și nu se pot aplica efecte.</string>
+    <string name="help_section_summary">Realizați fotografii sau înregistrați videoclipuri utilizând o varietate de efecte, adecvate pentru toate situațiile.</string>
     <string name="help_selecting_camera_mode">Selectarea modurilor camerei foto</string>
     <string name="help_taking_pictures">Fotografierea</string>
     <string name="help_taking_pictures_tip_1">Atingeți obiectul pe care doriți să-l focalizați.</string>
@@ -416,6 +421,7 @@ formă"</string>
     <string name="help_text_wideselfie">Atingeți butonul Cameră foto și rotiți ușor dispozitivul într-o singură direcție.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Atingeți %s pentru a vizualiza imaginile și videoclipurile imediat după ce le înregistrați.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Atingeți butonul vizualizare rapidă pentru a vedea fotografiile sau videoclipurile imediat după ce le înregistrați.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Viz. imaginilor/videoclipurilor</string>
     <string name="high_resolution_video_description">Următoarele elemente nu vor fi disponibile în timp ce se înregistrează la rezoluții de %s:</string>
     <string name="highlight">Evidențieri</string>

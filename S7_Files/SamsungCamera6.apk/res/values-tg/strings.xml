@@ -191,6 +191,8 @@
     <string name="SM_SLOW_VIDEO_description">Видеоҳоро бо суръати кадри баланд барои тамошо дар ҳаракати суст сабт кунед. Шумо метавонед қисми мушаххаси ҳар як видеоро пас аз сабт дар ҳаракати суст тамошо кунед.</string>
     <string name="SM_SMART_SELFSHOT">Селфии камераи қафо</string>
     <string name="SM_SMART_SELFSHOT_description">Вақте ки шумо автопортретҳо мегиред, камераи қафо ба таври худкор рӯи шуморо муайян карда, ба фокус мегузорад.</string>
+    <string name="SM_SOCIAL">Иҷтимоӣ</string>
+    <string name="SM_SOCIAL_description">Сурат гирифта, онҳоро бо осонӣ дар шабакаҳои иҷтимоӣ мубодила кунед.</string>
     <string name="SM_SPORTS">Варзиш</string>
     <string name="SM_SPORTS_SCENE_description">Объектҳои ҳаракаткунандаро суратҳои тозатар гиред.</string>
     <string name="SM_STORY">Садо ва сурат</string>
@@ -263,9 +265,9 @@
     <string name="Title_Viewmode">Намуди экр-и пурра (16:9)</string>
     <string name="Title_Voice_Capture">Идоракунӣ бо овоз</string>
     <string name="Title_Voice_guide">Дастури овозӣ</string>
-    <string name="Title_Volume_Key_As">Volume key function</string>
+    <string name="Title_Volume_Key_As">Функсияи тугмаи баландии садо</string>
     <string name="Title_WhiteBalance">Тавозуни сафед</string>
-    <string name="Title_common">Common</string>
+    <string name="Title_common">Умумӣ</string>
     <string name="Title_front">Камераи пеш</string>
     <string name="Title_rear">Камераи қафо</string>
     <string name="Title_rear_lens_distortion_correction">Ислоҳи шаклҳо</string>
@@ -395,7 +397,10 @@
     <string name="guideline_square">Мураббаъ</string>
     <string name="help_change_mode_tip_1">Барои реҷаҳои дастраси камераро дидан, ба рост бимолед.</string>
     <string name="help_change_mode_tip_2">Реҷаеро, ки истифода бурданиед, интихоб кунед.</string>
+    <string name="help_change_mode_tip_3">Ҳангоми фаъол будани реҷаи Осон танҳо реҷаҳои Худкор ва Селфии камера дастрасанд.</string>
     <string name="help_changing_the_camera_mode">Интихоб кардани реҷаҳои камера</string>
+    <string name="help_changing_the_camera_mode_header">Интихоби реҷаи камера</string>
+    <string name="help_changing_the_camera_mode_title">Иваз кардани реҷаи камера</string>
     <string name="help_recording_videos">Сабткунии видеоҳо</string>
     <string name="help_recording_videos_tip_1">%s­ро зарба занед.</string>
     <string name="help_recording_videos_tip_1_tts">Тугмаи камкодерро зарба занед.</string>
@@ -403,7 +408,7 @@
     <string name="help_recording_videos_tip_2_tts">Тугмаи қатъро зарба зада сабткуниро қатъ кунед.</string>
     <string name="help_recording_videos_tip_snapshot">Барои гирифтани сурат ҳангоми сабти видео %s -ро зарба занед.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Барои гирифтани сурат ҳангоми сабти видео тугмаи камераро зарба занед.</string>
-    <string name="help_section_summary">Бо истифодаи эффектҳои гуногун суратҳое гиред, ки ба ҳолатҳои гуногун мувофиқ оянд. Ҳангоми фаъол будани реҷаи Осон, танҳо реҷаҳои камераи Худкор ва Селфи дастрасанд ва ягон эффектро татбиқ кардан мумкин нест.</string>
+    <string name="help_section_summary">Бо истифодаи эффектҳои гуногун суратҳое гиред, ки ба ҳолатҳои гуногун мувофиқ оянд.</string>
     <string name="help_selecting_camera_mode">Интихоб кардани реҷаҳои камера</string>
     <string name="help_taking_pictures">Гирифтани суратҳо</string>
     <string name="help_taking_pictures_tip_1">Объектро, ки ба фокус гузоштаниед, зарба занед.</string>
@@ -418,6 +423,7 @@
     <string name="help_text_wideselfie">Тугмаи Камераро зарба занед ва дастгоҳи худро оҳиста ба як самт тоб диҳед.</string>
     <string name="help_viewing_pics_and_videos_tip_1">%s-ро зарба зада, суратҳо ва видеоҳои худро фавран пас аз сабт кардан бинед.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Тугмаи намуди зудро зарба зада, суратҳо ва видеоҳои худро фавран пас аз сабт кардан бинед.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Дидани суратҳо ва видеоҳо</string>
     <string name="high_resolution_video_description">Ҳангоми сабткунӣ дар гузаронишҳои %s, инҳо дастнорас мешаванд:</string>
     <string name="highlight">Ҷойҳои равшан</string>

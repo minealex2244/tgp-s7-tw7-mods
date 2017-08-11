@@ -10,7 +10,11 @@
 
 .field public static final DEBUG:Z = false
 
-.field public static final FLAVOR:Ljava/lang/String; = "normal"
+.field public static final FLAVOR:Ljava/lang/String; = "SEP81Normal"
+
+.field public static final FLAVOR_sep_version:Ljava/lang/String; = "SEP81"
+
+.field public static final FLAVOR_type:Ljava/lang/String; = "normal"
 
 .field public static final VERSION_CODE:I = 0x0
 

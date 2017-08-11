@@ -197,6 +197,8 @@
     <string name="SM_SLOW_VIDEO_description">Տեսանյութերը տեսագրել կադրերի մեծ հաճախությամբ՝ դանդաղ շարժման մեջ դիտելու համար: Կարող եք տեսանյութերը տեսագրելուց հետո յուրաքանչյուր տեսանյութի կոնկրետ հատված նվագարկել դանդաղ շարժման մեջ:</string>
     <string name="SM_SMART_SELFSHOT">Ինքնանկար՝ հետևի խցիկով</string>
     <string name="SM_SMART_SELFSHOT_description">Հետևի խցիկն ինքնաբերաբար կհայտնաբերի և կկիզակետի Ձեր դեմքը, երբ նկարահանեք ինքնանկարներ:</string>
+    <string name="SM_SOCIAL">Սոցիալական</string>
+    <string name="SM_SOCIAL_description">Նկարներ նկարահանեք և հեշտությամբ տարածեք սոցիալական ցանցերում:</string>
     <string name="SM_SPORTS">Մարզաձևեր</string>
     <string name="SM_SPORTS_SCENE_description">Նկարահանեք արագ շարժվող սուբյեկտների ավելի հստակ նկարներ:</string>
     <string name="SM_STORY">Ձայն և նկար</string>
@@ -269,7 +271,7 @@
     <string name="Title_Viewmode">Լիաէկրան դիտում (16:9)</string>
     <string name="Title_Voice_Capture">Ձայնով կառավարում</string>
     <string name="Title_Voice_guide">Ձայնային ուղեցույց</string>
-    <string name="Title_Volume_Key_As">Ձայնի բարձրության ստեղնի գործառույթ</string>
+    <string name="Title_Volume_Key_As">Ձայնի ուժգն. ստեղնի գործառույթ</string>
     <string name="Title_WhiteBalance">Սպիտակի հաշվեկշիռ</string>
     <string name="Title_common">Սովորական</string>
     <string name="Title_front">Առջևի խցիկ</string>
@@ -401,7 +403,10 @@
     <string name="guideline_square">Քառակուսի</string>
     <string name="help_change_mode_tip_1">Մատը սահեցրեք աջ՝ խցիկի հասանելի ռեժիմները դիտելու համար:</string>
     <string name="help_change_mode_tip_2">Ընտրեք ռեժիմը, որն ուզում եք օգտագործել:</string>
+    <string name="help_change_mode_tip_3">Երբ Հեշտ ռեժիմն միացված է, հասանելի են խցիկի միայն Ավտոմատ և Ինքնանկարի ռեժիմները:</string>
     <string name="help_changing_the_camera_mode">Խցիկի ռեժիմների ընտրում</string>
+    <string name="help_changing_the_camera_mode_header">Խցիկի ռեժիմ ընտրելը</string>
+    <string name="help_changing_the_camera_mode_title">Խցիկի ռեժիմի փոխում</string>
     <string name="help_recording_videos">Տեսանյութեր տեսագրելը</string>
     <string name="help_recording_videos_tip_1">Թակեք %s:</string>
     <string name="help_recording_videos_tip_1_tts">Թակեք տեսաձայնագրիչի կոճակը:</string>
@@ -409,7 +414,7 @@
     <string name="help_recording_videos_tip_2_tts">Թակեք կանգի կոճակը՝ տեսագրումը կանգնեցնելու համար:</string>
     <string name="help_recording_videos_tip_snapshot">Թակեք %s՝ տեսանյութ տեսագրելու ընթացքում նկարներ նկարահանելու համար:</string>
     <string name="help_recording_videos_tip_snapshot_tts">Թակեք խցիկի կոճակը՝ տեսանյութ տեսագրելու ընթացքում նկարներ նկարահանելու համար:</string>
-    <string name="help_section_summary">Նկարահանեք նկարներ կամ տեսագրեք տեսանյութեր՝ օգտվելով մի շարք տարբեր էֆեկտներից՝ ի համապատասխանություն բոլոր դեպքերի: Երբ Հեշտ ռեժիմն միացված է, հասանելիւ են խցիկի միայն Ավտոմատ և Ինքնանկարի ռեժիմները, և հնարավոր չէ կիրառել որևէ էֆեկտ:</string>
+    <string name="help_section_summary">Նկարահանեք նկարներ կամ տեսագրեք տեսանյութեր՝ օգտվելով մի շարք տարբեր էֆեկտներից՝ ի համապատասխանություն բոլոր դեպքերի:</string>
     <string name="help_selecting_camera_mode">Խցիկի ռեժիմների ընտրում</string>
     <string name="help_taking_pictures">Նկարների նկարահանում</string>
     <string name="help_taking_pictures_tip_1">Թակեք օբյեկտը, որն ուզում եք բերել կիզակետի մեջ:</string>
@@ -424,6 +429,7 @@
     <string name="help_text_wideselfie">Թակեք խցիկի կոճակը և սարքը դանդաղորեն շարջեք մեկ ուղղությամբ:</string>
     <string name="help_viewing_pics_and_videos_tip_1">Հպեք %s` ձեր նկարները կամ տեսնյութերը նկարահանելուց անմիջապես հետո դիտելու:</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Հպեք արագ դիտման կոճակը` ձեր նկարները կամ տեսնյութերը նկարահանելուց անմիջապես հետո դիտելու:</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Նկարների և տեսանյութերի դիտում</string>
     <string name="high_resolution_video_description">%s լուծաչափերով տեսագրելիս անմատչելի կլինի հետևյալը՝</string>
     <string name="highlight">Գունանշումներ</string>

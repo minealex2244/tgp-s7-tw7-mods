@@ -18,7 +18,7 @@
 
     .prologue
     .line 35
-    const v0, 0x7f0a00ec
+    const v0, 0x7f0a00ee
 
     invoke-direct {p0, v0}, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBase;-><init>(I)V
 
@@ -26,7 +26,7 @@
     iput-object p1, p0, Lcom/sec/android/app/camera/resourcedata/FrontCameraShootingModeResourceData;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
 
     .line 39
-    sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
+    sget-boolean v0, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DOWNLOAD_SHOOTING_MODES:Z
 
     if-eqz v0, :cond_0
 
@@ -580,10 +580,6 @@
     .line 109
     .restart local v2    # "commandId":I
     :cond_4
-    sget-boolean v14, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
-
-    if-eqz v14, :cond_5
-
     invoke-static {v2}, Lcom/sec/android/app/camera/plugin/PlugInShootingModesLoader;->isSeparatedShootingMode(I)Z
 
     move-result v14
@@ -604,7 +600,7 @@
     .line 123
     .end local v6    # "mode":Lcom/sec/android/app/camera/plugin/PlugInShootingModesStorage$PlugInShootingMode;
     :goto_3
-    sget-boolean v14, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
+    sget-boolean v14, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DOWNLOAD_SHOOTING_MODES:Z
 
     if-eqz v14, :cond_8
 
@@ -651,7 +647,7 @@
     .restart local v11    # "st":[Ljava/lang/String;
     :cond_5
     :try_start_1
-    sget-boolean v14, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SEPARATED_SHOOTING_MODES:Z
+    sget-boolean v14, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_DOWNLOAD_SHOOTING_MODES:Z
 
     if-eqz v14, :cond_6
 

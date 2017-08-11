@@ -21,7 +21,7 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v2, 0x7f0a017e
+    const v2, 0x7f0a0183
 
     .line 44
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V

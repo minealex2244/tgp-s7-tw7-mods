@@ -1571,11 +1571,14 @@
 
     .line 1971
     :cond_2
-    iget-object v1, p0, Lcom/samsung/android/glview/GLContext;->mRootView:Lcom/samsung/android/glview/GLViewGroup;
-
-    if-eqz v1, :cond_3
+    invoke-direct {p0, v0}, Lcom/samsung/android/glview/GLContext;->setLastOrientation(I)V
 
     .line 1972
+    iget-object v1, p0, Lcom/samsung/android/glview/GLContext;->mRootView:Lcom/samsung/android/glview/GLViewGroup;
+
+    if-eqz v1, :cond_0
+
+    .line 1973
     const-string v1, "GLContext"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1598,19 +1601,15 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1973
+    .line 1974
     iget-object v1, p0, Lcom/samsung/android/glview/GLContext;->mRootView:Lcom/samsung/android/glview/GLViewGroup;
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/glview/GLViewGroup;->onOrientationChanged(I)V
 
-    .line 1974
+    .line 1975
     const/4 v1, 0x1
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/glview/GLContext;->setDirty(Z)V
-
-    .line 1976
-    :cond_3
-    invoke-direct {p0, v0}, Lcom/samsung/android/glview/GLContext;->setLastOrientation(I)V
 
     goto :goto_0
 .end method

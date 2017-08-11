@@ -186,6 +186,8 @@
     <string name="SM_SLOW_VIDEO_description">Запіс відэа з высокай частатой кадраў для запаволенага прайгравання. Пасля запісу відэа пэўныя часткі з іх можна прайграваць у рэжыме запаволенага руху.</string>
     <string name="SM_SMART_SELFSHOT">Аўтапартрэт, зроблены задняй камерай</string>
     <string name="SM_SMART_SELFSHOT_description">Пры выкананні аўтапартрэтаў задняя камера аўтаматычна выявіць ваш твар і сфакусіруецца на ім.</string>
+    <string name="SM_SOCIAL">Сацсеткі</string>
+    <string name="SM_SOCIAL_description">Рабіце здымкі і лёгка абагульвайце іх у сацыяльных сетках.</string>
     <string name="SM_SPORTS">Спорт</string>
     <string name="SM_SPORTS_SCENE_description">Рабіце больш выразныя фота аб’ектаў, якія хутка рухаюцца.</string>
     <string name="SM_STORY">Гукі і фота</string>
@@ -257,9 +259,9 @@
     <string name="Title_Viewmode">Поўнаэкранны рэжым (16:9)</string>
     <string name="Title_Voice_Capture">Кіраванне голасам</string>
     <string name="Title_Voice_guide">Галасавы гід</string>
-    <string name="Title_Volume_Key_As">Volume key function</string>
+    <string name="Title_Volume_Key_As">Функцыя клавішы гучнасці</string>
     <string name="Title_WhiteBalance">Баланс белага</string>
-    <string name="Title_common">Common</string>
+    <string name="Title_common">Агульныя</string>
     <string name="Title_front">Пярэдняя камера</string>
     <string name="Title_rear">Задняя камера</string>
     <string name="Title_rear_lens_distortion_correction">Выпраўленне формы</string>
@@ -386,7 +388,10 @@
     <string name="guideline_square">Квадрат</string>
     <string name="help_change_mode_tip_1">Правядзіце ўправа, каб прагледзець даступныя рэжымы камеры.</string>
     <string name="help_change_mode_tip_2">Выберыце рэжым, якім вы хочаце карыстацца.</string>
+    <string name="help_change_mode_tip_3">Пры ўключаным простым рэжыме толькі рэжымы камеры «Аўтаматычны» і «Сэлфі» будуць даступнымі.</string>
     <string name="help_changing_the_camera_mode">Выбар рэжымаў камеры</string>
+    <string name="help_changing_the_camera_mode_header">Выбар рэжыму камеры</string>
+    <string name="help_changing_the_camera_mode_title">Змяненне рэжыму камеры</string>
     <string name="help_recording_videos">Запіс відэа</string>
     <string name="help_recording_videos_tip_1">Наіцісніце %s.</string>
     <string name="help_recording_videos_tip_1_tts">Націсніце на кнопку відэакамеры.</string>
@@ -394,7 +399,7 @@
     <string name="help_recording_videos_tip_2_tts">Націсніце на кнопку спынення, каб спыніць запіс.</string>
     <string name="help_recording_videos_tip_snapshot">Наіцісніце %s, каб рабіць фота падчас запісу відэа.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Націсніце на кнопку камеры, каб зрабіць здымкі падчас запісу відэа.</string>
-    <string name="help_section_summary">Рабіце фота або запісвайце відэа, карыстаючыся рознымі эфектамі для любой сітуацыі. Пры ўключаным простым рэжыме даступныя толькі рэжымы камеры «Аўтаматычны» і «Сэлфі», і немагчыма прымяняць эфекты.</string>
+    <string name="help_section_summary">Рабіце фота або запісвайце відэа, карыстаючыся рознымі эфектамі для любой сітуацыі.</string>
     <string name="help_selecting_camera_mode">Выбар рэжымаў камеры</string>
     <string name="help_taking_pictures">Выкананне здымкаў</string>
     <string name="help_taking_pictures_tip_1">Дакраніцеся да аб’екта, які вы хочаце змясціць у фокусе.</string>
@@ -409,6 +414,7 @@
     <string name="help_text_wideselfie">Націсніце кнопку камеры і павольна павярніце прыладу ў адным кірунку.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Каб адразу праглядзець зробленыя здымкі або знятыя відэа, націсніце %s.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Націсніце кнопку хуткага прагляду, каб праглядзець здымкі альбо відэа адразу пасля таго, як вы іх зрабілі.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Прагляд фота і відэа</string>
     <string name="high_resolution_video_description">Падчас запісу ў раздзяляльнасці %s будзе недаступна наступнае:</string>
     <string name="highlight">Вылучаныя фрагменты</string>

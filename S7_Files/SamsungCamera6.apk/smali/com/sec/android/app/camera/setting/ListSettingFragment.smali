@@ -150,11 +150,11 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f0a02c7
+    const v5, 0x7f0a02ce
 
     const v3, 0x7f0a007c
 
-    const v4, 0x7f0a0267
+    const v4, 0x7f0a026d
 
     .line 144
     const-string v0, ""
@@ -178,7 +178,7 @@
     if-nez v1, :cond_0
 
     .line 147
-    const v1, 0x7f0a02c9
+    const v1, 0x7f0a02d0
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -343,7 +343,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0266
+    const v2, 0x7f0a026c
 
     .line 166
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
@@ -405,13 +405,13 @@
     .locals 7
 
     .prologue
-    const v6, 0x7f0a02ca
+    const v6, 0x7f0a02d1
 
-    const v5, 0x7f0a02c7
+    const v5, 0x7f0a02ce
 
     const v3, 0x7f0a007b
 
-    const v4, 0x7f0a0267
+    const v4, 0x7f0a026d
 
     .line 178
     const-string v0, ""
@@ -457,7 +457,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_6
+    if-nez v1, :cond_7
 
     .line 184
     new-instance v1, Ljava/lang/StringBuilder;
@@ -512,7 +512,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_7
+    if-nez v1, :cond_8
 
     .line 191
     new-instance v1, Ljava/lang/StringBuilder;
@@ -552,7 +552,11 @@
     .line 196
     :cond_3
     :goto_1
-    const/16 v1, 0xb
+    sget-boolean v1, Lcom/sec/android/app/camera/feature/Feature;->CAMCORDER_REAR_ANTISHAKE_FHD_60FPS:Z
+
+    if-nez v1, :cond_4
+
+    const/16 v1, 0x2a
 
     invoke-direct {p0, v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->isSupportedCamcorderResolution(I)Z
 
@@ -567,9 +571,29 @@
 
     move-result v1
 
-    if-nez v1, :cond_8
+    if-nez v1, :cond_9
 
-    .line 198
+    .line 202
+    :cond_4
+    :goto_2
+    const/16 v1, 0xb
+
+    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->isSupportedCamcorderResolution(I)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    .line 203
+    const-string v1, ""
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_a
+
+    .line 204
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -604,9 +628,9 @@
 
     move-result-object v0
 
-    .line 203
-    :cond_4
-    :goto_2
+    .line 209
+    :cond_5
+    :goto_3
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -615,9 +639,9 @@
 
     move-result v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_6
 
-    .line 204
+    .line 210
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -646,9 +670,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0266
+    const v2, 0x7f0a026c
 
-    .line 205
+    .line 211
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -683,12 +707,12 @@
 
     move-result-object v0
 
-    .line 207
-    :cond_5
+    .line 213
+    :cond_6
     return-object v0
 
     .line 186
-    :cond_6
+    :cond_7
     invoke-virtual {p0, v5}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -696,36 +720,46 @@
     goto/16 :goto_0
 
     .line 193
-    :cond_7
+    :cond_8
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     goto/16 :goto_1
 
-    .line 200
-    :cond_8
+    .line 199
+    :cond_9
+    const v1, 0x7f0a007c
+
+    invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto/16 :goto_2
+
+    .line 206
+    :cond_a
     invoke-virtual {p0, v6}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    goto :goto_2
+    goto :goto_3
 .end method
 
 .method private getRestrictedVideoResolution()Ljava/lang/String;
     .locals 6
 
     .prologue
-    const v5, 0x7f0a02c7
+    const v5, 0x7f0a02ce
 
     const v3, 0x7f0a007c
 
-    const v4, 0x7f0a0267
+    const v4, 0x7f0a026d
 
-    .line 217
+    .line 223
     const-string v0, ""
 
-    .line 218
+    .line 224
     .local v0, "videoResolution":Ljava/lang/String;
     const/16 v1, 0x28
 
@@ -735,14 +769,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 219
-    const v1, 0x7f0a02c9
+    .line 225
+    const v1, 0x7f0a02d0
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 221
+    .line 227
     :cond_0
     const/16 v1, 0x15
 
@@ -752,7 +786,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 222
+    .line 228
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -761,7 +795,7 @@
 
     if-nez v1, :cond_4
 
-    .line 223
+    .line 229
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -796,7 +830,7 @@
 
     move-result-object v0
 
-    .line 228
+    .line 234
     :cond_1
     :goto_0
     const/16 v1, 0x2a
@@ -807,7 +841,7 @@
 
     if-eqz v1, :cond_2
 
-    .line 229
+    .line 235
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -816,7 +850,7 @@
 
     if-nez v1, :cond_5
 
-    .line 230
+    .line 236
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -851,7 +885,7 @@
 
     move-result-object v0
 
-    .line 235
+    .line 241
     :cond_2
     :goto_1
     invoke-virtual {p0, v4}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
@@ -864,7 +898,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 236
+    .line 242
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -893,9 +927,9 @@
 
     move-result-object v1
 
-    const v2, 0x7f0a0266
+    const v2, 0x7f0a026c
 
-    .line 237
+    .line 243
     invoke-virtual {p0, v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -930,11 +964,11 @@
 
     move-result-object v0
 
-    .line 239
+    .line 245
     :cond_3
     return-object v0
 
-    .line 225
+    .line 231
     :cond_4
     invoke-virtual {p0, v5}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -942,7 +976,7 @@
 
     goto/16 :goto_0
 
-    .line 232
+    .line 238
     :cond_5
     invoke-virtual {p0, v3}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 
@@ -955,32 +989,32 @@
     .locals 23
 
     .prologue
-    .line 246
+    .line 252
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
 
     if-nez v2, :cond_0
 
-    .line 458
+    .line 464
     :goto_0
     return-void
 
-    .line 249
+    .line 255
     :cond_0
     const/16 v18, 0x0
 
-    .line 250
+    .line 256
     .local v18, "savedPos":I
     const/4 v7, 0x0
 
-    .line 251
+    .line 257
     .local v7, "actionBarTitle":Ljava/lang/String;
     invoke-static {}, Lcom/sec/android/app/camera/util/CameraResolutionListLoader;->getInstance()Lcom/sec/android/app/camera/util/CameraResolutionListLoader;
 
     move-result-object v15
 
-    .line 252
+    .line 258
     .local v15, "loader":Lcom/sec/android/app/camera/util/CameraResolutionListLoader;
     move-object/from16 v0, p0
 
@@ -988,7 +1022,7 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 450
+    .line 456
     :goto_1
     invoke-static {}, Lcom/sec/android/app/camera/util/Util;->isLocaleRTL()Z
 
@@ -996,7 +1030,7 @@
 
     if-eqz v2, :cond_15
 
-    .line 451
+    .line 457
     new-instance v1, Landroid/graphics/drawable/InsetDrawable;
 
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
@@ -1015,7 +1049,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b01ac
+    const v6, 0x7f0b01ad
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -1027,7 +1061,7 @@
 
     invoke-direct/range {v1 .. v6}, Landroid/graphics/drawable/InsetDrawable;-><init>(Landroid/graphics/drawable/Drawable;IIII)V
 
-    .line 455
+    .line 461
     .local v1, "insetDivider":Landroid/graphics/drawable/InsetDrawable;
     :goto_2
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
@@ -1036,17 +1070,17 @@
 
     invoke-virtual {v2, v1}, Landroid/widget/ListView;->setDivider(Landroid/graphics/drawable/Drawable;)V
 
-    .line 457
+    .line 463
     move-object/from16 v0, p0
 
     invoke-direct {v0, v7}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->setActionBarTitle(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 254
+    .line 260
     .end local v1    # "insetDivider":Landroid/graphics/drawable/InsetDrawable;
     :pswitch_0
-    const v2, 0x7f0a00e4
+    const v2, 0x7f0a00e6
 
     move-object/from16 v0, p0
 
@@ -1054,7 +1088,7 @@
 
     move-result-object v7
 
-    .line 255
+    .line 261
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
@@ -1065,7 +1099,7 @@
 
     if-eqz v2, :cond_1
 
-    .line 256
+    .line 262
     invoke-virtual {v15}, Lcom/sec/android/app/camera/util/CameraResolutionListLoader;->getDualBackVideoIdList()[I
 
     move-result-object v2
@@ -1074,7 +1108,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
 
-    .line 257
+    .line 263
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1083,12 +1117,12 @@
 
     const-string v4, "1920x1080"
 
-    .line 258
+    .line 264
     invoke-static {v4}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 257
+    .line 263
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v2
@@ -1099,7 +1133,7 @@
 
     move-result v18
 
-    .line 264
+    .line 270
     :goto_3
     move-object/from16 v0, p0
 
@@ -1113,7 +1147,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
 
-    .line 265
+    .line 271
     const/4 v13, 0x0
 
     .local v13, "i":I
@@ -1126,7 +1160,7 @@
 
     if-ge v13, v2, :cond_2
 
-    .line 266
+    .line 272
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
@@ -1147,12 +1181,12 @@
 
     aput-object v3, v2, v13
 
-    .line 265
+    .line 271
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_4
 
-    .line 260
+    .line 266
     .end local v13    # "i":I
     :cond_1
     invoke-virtual {v15}, Lcom/sec/android/app/camera/util/CameraResolutionListLoader;->getBackVideoIdList()[I
@@ -1163,7 +1197,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
 
-    .line 261
+    .line 267
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1172,12 +1206,12 @@
 
     sget-object v4, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_RECORDING_DEFAULT_RESOLUTION:Ljava/lang/String;
 
-    .line 262
+    .line 268
     invoke-static {v4}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 261
+    .line 267
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v2
@@ -1190,14 +1224,14 @@
 
     goto :goto_3
 
-    .line 269
+    .line 275
     .restart local v13    # "i":I
     :cond_2
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getRestrictedVideoResolution()Ljava/lang/String;
 
     move-result-object v22
 
-    .line 270
+    .line 276
     .local v22, "videoResolution":Ljava/lang/String;
     const-string v2, ""
 
@@ -1209,7 +1243,7 @@
 
     if-nez v2, :cond_6
 
-    .line 271
+    .line 277
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -1226,7 +1260,7 @@
 
     move-result-object v14
 
-    .line 272
+    .line 278
     .local v14, "layout":Landroid/view/View;
     const v2, 0x7f100008
 
@@ -1236,9 +1270,9 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    .line 273
+    .line 279
     .local v8, "description":Landroid/widget/TextView;
-    const v2, 0x7f0a0196
+    const v2, 0x7f0a019c
 
     const/4 v3, 0x1
 
@@ -1256,8 +1290,8 @@
 
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 274
-    const v2, 0x7f0a0196
+    .line 280
+    const v2, 0x7f0a019c
 
     const/4 v3, 0x1
 
@@ -1275,16 +1309,16 @@
 
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 276
+    .line 282
     const-string v21, ""
 
-    .line 277
+    .line 283
     .local v21, "unavailableFunctions":Ljava/lang/String;
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_COMPANION_CHIP:Z
 
     if-eqz v2, :cond_3
 
-    .line 278
+    .line 284
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1301,7 +1335,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a00d6
+    const v3, 0x7f0a00d8
 
     move-object/from16 v0, p0
 
@@ -1323,7 +1357,7 @@
 
     move-result-object v21
 
-    .line 280
+    .line 286
     :cond_3
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1341,7 +1375,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a00f5
+    const v3, 0x7f0a00f7
 
     move-object/from16 v0, p0
 
@@ -1363,12 +1397,12 @@
 
     move-result-object v21
 
-    .line 281
+    .line 287
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_OBJECT_TRACKING_AF:Z
 
     if-eqz v2, :cond_4
 
-    .line 282
+    .line 288
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1385,7 +1419,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a00f4
+    const v3, 0x7f0a00f6
 
     move-object/from16 v0, p0
 
@@ -1401,7 +1435,7 @@
 
     move-result-object v21
 
-    .line 284
+    .line 290
     :cond_4
     const v2, 0x7f100009
 
@@ -1411,18 +1445,18 @@
 
     check-cast v9, Landroid/widget/TextView;
 
-    .line 285
+    .line 291
     .local v9, "description_array":Landroid/widget/TextView;
     move-object/from16 v0, v21
 
     invoke-virtual {v9, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 286
+    .line 292
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getResolutionLimitingSnapShot()Ljava/lang/String;
 
     move-result-object v16
 
-    .line 287
+    .line 293
     .local v16, "resolutionLimitingSnapShot":Ljava/lang/String;
     const-string v2, ""
 
@@ -1438,7 +1472,7 @@
 
     if-eqz v2, :cond_7
 
-    .line 288
+    .line 294
     const v2, 0x7f10000a
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1447,9 +1481,9 @@
 
     check-cast v10, Landroid/widget/TextView;
 
-    .line 289
+    .line 295
     .local v10, "description_restrictSnapShot":Landroid/widget/TextView;
-    const v2, 0x7f0a01f9
+    const v2, 0x7f0a01ff
 
     const/4 v3, 0x1
 
@@ -1467,8 +1501,8 @@
 
     invoke-virtual {v10, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 290
-    const v2, 0x7f0a01f9
+    .line 296
+    const v2, 0x7f0a01ff
 
     const/4 v3, 0x1
 
@@ -1494,14 +1528,14 @@
 
     invoke-virtual {v10, v2}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 295
+    .line 301
     .end local v10    # "description_restrictSnapShot":Landroid/widget/TextView;
     :goto_5
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getResolutionLimitingVDIS()Ljava/lang/String;
 
     move-result-object v17
 
-    .line 296
+    .line 302
     .local v17, "resolutionLimitingVDIS":Ljava/lang/String;
     const-string v2, ""
 
@@ -1517,7 +1551,7 @@
 
     if-eqz v2, :cond_5
 
-    .line 297
+    .line 303
     const v2, 0x7f10000b
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1526,14 +1560,14 @@
 
     check-cast v11, Landroid/widget/TextView;
 
-    .line 298
+    .line 304
     .local v11, "description_restrictVDIS":Landroid/widget/TextView;
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_OIS:Z
 
     if-eqz v2, :cond_8
 
-    .line 299
-    const v2, 0x7f0a01fa
+    .line 305
+    const v2, 0x7f0a0200
 
     const/4 v3, 0x2
 
@@ -1555,8 +1589,8 @@
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 300
-    const v2, 0x7f0a01fa
+    .line 306
+    const v2, 0x7f0a0200
 
     const/4 v3, 0x2
 
@@ -1578,7 +1612,7 @@
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 307
+    .line 313
     .end local v11    # "description_restrictVDIS":Landroid/widget/TextView;
     :cond_5
     :goto_6
@@ -1590,7 +1624,7 @@
 
     invoke-direct {v12, v2}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 308
+    .line 314
     .local v12, "dummyView":Landroid/view/View;
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
@@ -1602,7 +1636,7 @@
 
     invoke-virtual {v2, v12, v3, v4}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
 
-    .line 309
+    .line 315
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -1613,7 +1647,7 @@
 
     invoke-virtual {v2, v14, v3, v4}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
 
-    .line 310
+    .line 316
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -1622,7 +1656,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ListView;->setFooterDividersEnabled(Z)V
 
-    .line 313
+    .line 319
     .end local v8    # "description":Landroid/widget/TextView;
     .end local v9    # "description_array":Landroid/widget/TextView;
     .end local v12    # "dummyView":Landroid/view/View;
@@ -1651,7 +1685,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
-    .line 314
+    .line 320
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
@@ -1660,14 +1694,14 @@
 
     invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->setSelectedIndex(I)V
 
-    .line 315
+    .line 321
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->notifyDataSetChanged()V
 
-    .line 316
+    .line 322
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
@@ -1676,7 +1710,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 317
+    .line 323
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -1695,7 +1729,7 @@
     :cond_7
     move-object v2, v14
 
-    .line 292
+    .line 298
     check-cast v2, Landroid/widget/LinearLayout;
 
     const/4 v3, 0x2
@@ -1704,16 +1738,16 @@
 
     goto/16 :goto_5
 
-    .line 302
+    .line 308
     .restart local v11    # "description_restrictVDIS":Landroid/widget/TextView;
     .restart local v17    # "resolutionLimitingVDIS":Ljava/lang/String;
     :cond_8
-    const v2, 0x7f0a01fb
+    const v2, 0x7f0a0201
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 303
-    const v2, 0x7f0a01fb
+    .line 309
+    const v2, 0x7f0a0201
 
     move-object/from16 v0, p0
 
@@ -1725,7 +1759,7 @@
 
     goto :goto_6
 
-    .line 320
+    .line 326
     .end local v8    # "description":Landroid/widget/TextView;
     .end local v9    # "description_array":Landroid/widget/TextView;
     .end local v11    # "description_restrictVDIS":Landroid/widget/TextView;
@@ -1736,7 +1770,7 @@
     .end local v21    # "unavailableFunctions":Ljava/lang/String;
     .end local v22    # "videoResolution":Ljava/lang/String;
     :pswitch_1
-    const v2, 0x7f0a00cf
+    const v2, 0x7f0a00d1
 
     move-object/from16 v0, p0
 
@@ -1744,7 +1778,7 @@
 
     move-result-object v7
 
-    .line 321
+    .line 327
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mCameraSettings:Lcom/sec/android/app/camera/setting/CameraSettingsImpl;
@@ -1755,7 +1789,7 @@
 
     if-eqz v2, :cond_9
 
-    .line 322
+    .line 328
     invoke-virtual {v15}, Lcom/sec/android/app/camera/util/CameraResolutionListLoader;->getDualFrontVideoIdList()[I
 
     move-result-object v2
@@ -1764,7 +1798,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
 
-    .line 323
+    .line 329
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1773,12 +1807,12 @@
 
     const-string v4, "1920x1080"
 
-    .line 324
+    .line 330
     invoke-static {v4}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 323
+    .line 329
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v2
@@ -1789,7 +1823,7 @@
 
     move-result v18
 
-    .line 330
+    .line 336
     :goto_7
     move-object/from16 v0, p0
 
@@ -1803,7 +1837,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
 
-    .line 331
+    .line 337
     const/4 v13, 0x0
 
     .restart local v13    # "i":I
@@ -1816,7 +1850,7 @@
 
     if-ge v13, v2, :cond_a
 
-    .line 332
+    .line 338
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
@@ -1837,12 +1871,12 @@
 
     aput-object v3, v2, v13
 
-    .line 331
+    .line 337
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_8
 
-    .line 326
+    .line 332
     .end local v13    # "i":I
     :cond_9
     invoke-virtual {v15}, Lcom/sec/android/app/camera/util/CameraResolutionListLoader;->getFrontVideoSizeIdList()[I
@@ -1853,7 +1887,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
 
-    .line 327
+    .line 333
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1862,12 +1896,12 @@
 
     sget-object v4, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_RECORDING_DEFAULT_RESOLUTION:Ljava/lang/String;
 
-    .line 328
+    .line 334
     invoke-static {v4}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 327
+    .line 333
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v2
@@ -1880,14 +1914,14 @@
 
     goto :goto_7
 
-    .line 335
+    .line 341
     .restart local v13    # "i":I
     :cond_a
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getRestrictedVideoResolution()Ljava/lang/String;
 
     move-result-object v22
 
-    .line 336
+    .line 342
     .restart local v22    # "videoResolution":Ljava/lang/String;
     const-string v2, ""
 
@@ -1899,7 +1933,7 @@
 
     if-nez v2, :cond_d
 
-    .line 337
+    .line 343
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -1916,7 +1950,7 @@
 
     move-result-object v14
 
-    .line 338
+    .line 344
     .restart local v14    # "layout":Landroid/view/View;
     const v2, 0x7f100008
 
@@ -1926,9 +1960,9 @@
 
     check-cast v8, Landroid/widget/TextView;
 
-    .line 339
+    .line 345
     .restart local v8    # "description":Landroid/widget/TextView;
-    const v2, 0x7f0a0196
+    const v2, 0x7f0a019c
 
     const/4 v3, 0x1
 
@@ -1946,8 +1980,8 @@
 
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 340
-    const v2, 0x7f0a0196
+    .line 346
+    const v2, 0x7f0a019c
 
     const/4 v3, 0x1
 
@@ -1965,16 +1999,16 @@
 
     invoke-virtual {v8, v2}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 342
+    .line 348
     const-string v21, ""
 
-    .line 343
+    .line 349
     .restart local v21    # "unavailableFunctions":Ljava/lang/String;
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_COMPANION_CHIP:Z
 
     if-eqz v2, :cond_b
 
-    .line 344
+    .line 350
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1991,7 +2025,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a00d6
+    const v3, 0x7f0a00d8
 
     move-object/from16 v0, p0
 
@@ -2013,7 +2047,7 @@
 
     move-result-object v21
 
-    .line 346
+    .line 352
     :cond_b
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2031,7 +2065,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0a00f5
+    const v3, 0x7f0a00f7
 
     move-object/from16 v0, p0
 
@@ -2053,7 +2087,7 @@
 
     move-result-object v21
 
-    .line 348
+    .line 354
     const v2, 0x7f100009
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2062,13 +2096,13 @@
 
     check-cast v9, Landroid/widget/TextView;
 
-    .line 349
+    .line 355
     .restart local v9    # "description_array":Landroid/widget/TextView;
     move-object/from16 v0, v21
 
     invoke-virtual {v9, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 351
+    .line 357
     const v2, 0x7f0a007c
 
     move-object/from16 v0, p0
@@ -2089,7 +2123,7 @@
 
     if-eqz v2, :cond_e
 
-    .line 352
+    .line 358
     const v2, 0x7f10000a
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2098,9 +2132,9 @@
 
     check-cast v10, Landroid/widget/TextView;
 
-    .line 353
+    .line 359
     .restart local v10    # "description_restrictSnapShot":Landroid/widget/TextView;
-    const v2, 0x7f0a01f9
+    const v2, 0x7f0a01ff
 
     const/4 v3, 0x1
 
@@ -2126,8 +2160,8 @@
 
     invoke-virtual {v10, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 354
-    const v2, 0x7f0a01f9
+    .line 360
+    const v2, 0x7f0a01ff
 
     const/4 v3, 0x1
 
@@ -2153,14 +2187,14 @@
 
     invoke-virtual {v10, v2}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 359
+    .line 365
     .end local v10    # "description_restrictSnapShot":Landroid/widget/TextView;
     :goto_9
     invoke-direct/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getResolutionLimitingVDIS()Ljava/lang/String;
 
     move-result-object v17
 
-    .line 360
+    .line 366
     .restart local v17    # "resolutionLimitingVDIS":Ljava/lang/String;
     const-string v2, ""
 
@@ -2176,7 +2210,7 @@
 
     if-eqz v2, :cond_c
 
-    .line 361
+    .line 367
     const v2, 0x7f10000b
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2185,14 +2219,14 @@
 
     check-cast v11, Landroid/widget/TextView;
 
-    .line 362
+    .line 368
     .restart local v11    # "description_restrictVDIS":Landroid/widget/TextView;
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->SUPPORT_OIS:Z
 
     if-eqz v2, :cond_f
 
-    .line 363
-    const v2, 0x7f0a01fa
+    .line 369
+    const v2, 0x7f0a0200
 
     const/4 v3, 0x2
 
@@ -2214,8 +2248,8 @@
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 364
-    const v2, 0x7f0a01fa
+    .line 370
+    const v2, 0x7f0a0200
 
     const/4 v3, 0x2
 
@@ -2237,7 +2271,7 @@
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 371
+    .line 377
     .end local v11    # "description_restrictVDIS":Landroid/widget/TextView;
     :cond_c
     :goto_a
@@ -2249,7 +2283,7 @@
 
     invoke-direct {v12, v2}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 372
+    .line 378
     .restart local v12    # "dummyView":Landroid/view/View;
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
@@ -2261,7 +2295,7 @@
 
     invoke-virtual {v2, v12, v3, v4}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
 
-    .line 373
+    .line 379
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -2272,7 +2306,7 @@
 
     invoke-virtual {v2, v14, v3, v4}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
 
-    .line 374
+    .line 380
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -2281,7 +2315,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ListView;->setFooterDividersEnabled(Z)V
 
-    .line 377
+    .line 383
     .end local v8    # "description":Landroid/widget/TextView;
     .end local v9    # "description_array":Landroid/widget/TextView;
     .end local v12    # "dummyView":Landroid/view/View;
@@ -2309,7 +2343,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
-    .line 378
+    .line 384
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
@@ -2318,14 +2352,14 @@
 
     invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->setSelectedIndex(I)V
 
-    .line 379
+    .line 385
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->notifyDataSetChanged()V
 
-    .line 380
+    .line 386
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
@@ -2334,7 +2368,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 381
+    .line 387
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -2352,7 +2386,7 @@
     :cond_e
     move-object v2, v14
 
-    .line 356
+    .line 362
     check-cast v2, Landroid/widget/LinearLayout;
 
     const/4 v3, 0x2
@@ -2361,16 +2395,16 @@
 
     goto/16 :goto_9
 
-    .line 366
+    .line 372
     .restart local v11    # "description_restrictVDIS":Landroid/widget/TextView;
     .restart local v17    # "resolutionLimitingVDIS":Ljava/lang/String;
     :cond_f
-    const v2, 0x7f0a01fb
+    const v2, 0x7f0a0201
 
     invoke-virtual {v11, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 367
-    const v2, 0x7f0a01fb
+    .line 373
+    const v2, 0x7f0a0201
 
     move-object/from16 v0, p0
 
@@ -2382,7 +2416,7 @@
 
     goto :goto_a
 
-    .line 384
+    .line 390
     .end local v8    # "description":Landroid/widget/TextView;
     .end local v9    # "description_array":Landroid/widget/TextView;
     .end local v11    # "description_restrictVDIS":Landroid/widget/TextView;
@@ -2392,7 +2426,7 @@
     .end local v21    # "unavailableFunctions":Ljava/lang/String;
     .end local v22    # "videoResolution":Ljava/lang/String;
     :pswitch_2
-    const v2, 0x7f0a00e6
+    const v2, 0x7f0a00e8
 
     move-object/from16 v0, p0
 
@@ -2400,7 +2434,7 @@
 
     move-result-object v7
 
-    .line 385
+    .line 391
     invoke-virtual {v15}, Lcom/sec/android/app/camera/util/CameraResolutionListLoader;->getBackPictureIdList()[I
 
     move-result-object v2
@@ -2409,7 +2443,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
 
-    .line 386
+    .line 392
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
@@ -2422,7 +2456,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
 
-    .line 387
+    .line 393
     const/4 v13, 0x0
 
     .restart local v13    # "i":I
@@ -2435,7 +2469,7 @@
 
     if-ge v13, v2, :cond_10
 
-    .line 388
+    .line 394
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
@@ -2456,12 +2490,12 @@
 
     aput-object v3, v2, v13
 
-    .line 387
+    .line 393
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_b
 
-    .line 390
+    .line 396
     :cond_10
     move-object/from16 v0, p0
 
@@ -2473,7 +2507,7 @@
 
     if-eqz v2, :cond_12
 
-    .line 391
+    .line 397
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -2482,12 +2516,12 @@
 
     sget-object v4, Lcom/sec/android/app/camera/feature/Feature;->DUAL_BACK_CAMERA_DEFAULT_PICTURESIZE:Ljava/lang/String;
 
-    .line 392
+    .line 398
     invoke-static {v4}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 391
+    .line 397
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v2
@@ -2498,13 +2532,13 @@
 
     move-result v18
 
-    .line 398
+    .line 404
     :goto_c
     sget-boolean v2, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_PICTURE_FORMAT:Z
 
     if-eqz v2, :cond_11
 
-    .line 399
+    .line 405
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
@@ -2521,14 +2555,14 @@
 
     move-result-object v14
 
-    .line 400
+    .line 406
     .restart local v14    # "layout":Landroid/view/View;
     move-object/from16 v0, p0
 
     invoke-virtual {v14, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 401
-    const v2, 0x7f100041
+    .line 407
+    const v2, 0x7f100043
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2536,16 +2570,16 @@
 
     check-cast v20, Landroid/widget/TextView;
 
-    .line 402
+    .line 408
     .local v20, "title":Landroid/widget/TextView;
-    const v2, 0x7f0a00e1
+    const v2, 0x7f0a00e3
 
     move-object/from16 v0, v20
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 403
-    const v2, 0x7f100042
+    .line 409
+    const v2, 0x7f100044
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2553,23 +2587,23 @@
 
     check-cast v19, Landroid/widget/TextView;
 
-    .line 404
+    .line 410
     .local v19, "summary":Landroid/widget/TextView;
-    const v2, 0x7f0a01dd
+    const v2, 0x7f0a01e3
 
     move-object/from16 v0, v19
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 405
+    .line 411
     const/4 v2, 0x0
 
     move-object/from16 v0, v19
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 406
-    const v2, 0x7f100043
+    .line 412
+    const v2, 0x7f100045
 
     invoke-virtual {v14, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -2581,7 +2615,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mPictureFormatSwitch:Landroid/widget/Switch;
 
-    .line 407
+    .line 413
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mPictureFormatSwitch:Landroid/widget/Switch;
@@ -2600,7 +2634,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Switch;->setChecked(Z)V
 
-    .line 408
+    .line 414
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mPictureFormatSwitch:Landroid/widget/Switch;
@@ -2613,7 +2647,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 414
+    .line 420
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -2622,7 +2656,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ListView;->setItemsCanFocus(Z)V
 
-    .line 415
+    .line 421
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -2633,7 +2667,7 @@
 
     invoke-virtual {v2, v14, v3, v4}, Landroid/widget/ListView;->addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
 
-    .line 416
+    .line 422
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -2642,7 +2676,7 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/ListView;->setFooterDividersEnabled(Z)V
 
-    .line 419
+    .line 425
     .end local v14    # "layout":Landroid/view/View;
     .end local v19    # "summary":Landroid/widget/TextView;
     .end local v20    # "title":Landroid/widget/TextView;
@@ -2667,7 +2701,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
-    .line 420
+    .line 426
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
@@ -2676,14 +2710,14 @@
 
     invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->setSelectedIndex(I)V
 
-    .line 421
+    .line 427
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->notifyDataSetChanged()V
 
-    .line 422
+    .line 428
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
@@ -2692,7 +2726,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 423
+    .line 429
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -2703,7 +2737,7 @@
 
     goto/16 :goto_1
 
-    .line 394
+    .line 400
     :cond_12
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getContext()Landroid/content/Context;
 
@@ -2713,12 +2747,12 @@
 
     sget-object v4, Lcom/sec/android/app/camera/feature/Feature;->BACK_CAMERA_PICTURE_DEFAULT_RESOLUTION:Ljava/lang/String;
 
-    .line 395
+    .line 401
     invoke-static {v4}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 394
+    .line 400
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v2
@@ -2731,10 +2765,10 @@
 
     goto/16 :goto_c
 
-    .line 426
+    .line 432
     .end local v13    # "i":I
     :pswitch_3
-    const v2, 0x7f0a00d1
+    const v2, 0x7f0a00d3
 
     move-object/from16 v0, p0
 
@@ -2742,7 +2776,7 @@
 
     move-result-object v7
 
-    .line 427
+    .line 433
     invoke-virtual {v15}, Lcom/sec/android/app/camera/util/CameraResolutionListLoader;->getFrontPictureSizeIdList()[I
 
     move-result-object v2
@@ -2751,7 +2785,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
 
-    .line 428
+    .line 434
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionIdList:[I
@@ -2764,7 +2798,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
 
-    .line 429
+    .line 435
     const/4 v13, 0x0
 
     .restart local v13    # "i":I
@@ -2777,7 +2811,7 @@
 
     if-ge v13, v2, :cond_13
 
-    .line 430
+    .line 436
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mList:[Ljava/lang/String;
@@ -2798,12 +2832,12 @@
 
     aput-object v3, v2, v13
 
-    .line 429
+    .line 435
     add-int/lit8 v13, v13, 0x1
 
     goto :goto_d
 
-    .line 432
+    .line 438
     :cond_13
     move-object/from16 v0, p0
 
@@ -2815,7 +2849,7 @@
 
     if-eqz v2, :cond_14
 
-    .line 433
+    .line 439
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -2824,12 +2858,12 @@
 
     sget-object v4, Lcom/sec/android/app/camera/feature/Feature;->DUAL_FRONT_CAMERA_DEFAULT_PICTURESIZE:Ljava/lang/String;
 
-    .line 434
+    .line 440
     invoke-static {v4}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 433
+    .line 439
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v2
@@ -2840,7 +2874,7 @@
 
     move-result v18
 
-    .line 440
+    .line 446
     :goto_e
     new-instance v2, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
@@ -2862,7 +2896,7 @@
 
     iput-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
-    .line 441
+    .line 447
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
@@ -2871,14 +2905,14 @@
 
     invoke-virtual {v2, v0}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->setSelectedIndex(I)V
 
-    .line 442
+    .line 448
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
 
     invoke-virtual {v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;->notifyDataSetChanged()V
 
-    .line 443
+    .line 449
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lcom/sec/android/app/camera/setting/ListSettingFragment;->mResolutionAdapter:Lcom/sec/android/app/camera/setting/ListSettingFragment$ResolutionAdapter;
@@ -2887,7 +2921,7 @@
 
     invoke-virtual {v0, v2}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 444
+    .line 450
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
@@ -2898,7 +2932,7 @@
 
     goto/16 :goto_1
 
-    .line 436
+    .line 442
     :cond_14
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getContext()Landroid/content/Context;
 
@@ -2908,12 +2942,12 @@
 
     sget-object v4, Lcom/sec/android/app/camera/feature/Feature;->FRONT_CAMERA_PICTURE_DEFAULT_RESOLUTION:Ljava/lang/String;
 
-    .line 437
+    .line 443
     invoke-static {v4}, Lcom/sec/android/app/camera/util/CameraResolution;->getResolutionID(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 436
+    .line 442
     invoke-static {v2, v3, v4}, Lcom/sec/android/app/camera/util/SharedPreferencesHelper;->loadPreferences(Landroid/content/Context;Ljava/lang/String;I)I
 
     move-result v2
@@ -2926,7 +2960,7 @@
 
     goto :goto_e
 
-    .line 453
+    .line 459
     .end local v13    # "i":I
     :cond_15
     new-instance v1, Landroid/graphics/drawable/InsetDrawable;
@@ -2943,7 +2977,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b01ac
+    const v4, 0x7f0b01ad
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -2962,7 +2996,7 @@
     .restart local v1    # "insetDivider":Landroid/graphics/drawable/InsetDrawable;
     goto/16 :goto_2
 
-    .line 252
+    .line 258
     nop
 
     :pswitch_data_0
@@ -2979,7 +3013,7 @@
     .param p1, "resolution"    # I
 
     .prologue
-    .line 461
+    .line 467
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getIndexFromResolutionIdList(I)I
 
     move-result v0
@@ -3039,7 +3073,7 @@
     .param p1, "title"    # Ljava/lang/String;
 
     .prologue
-    .line 470
+    .line 476
     invoke-virtual {p0}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -3048,11 +3082,11 @@
 
     move-result-object v0
 
-    .line 471
+    .line 477
     .local v0, "mActionBar":Landroid/app/ActionBar;
     invoke-virtual {v0, p1}, Landroid/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 472
+    .line 478
     return-void
 .end method
 
@@ -3142,7 +3176,7 @@
 
     move-result v0
 
-    const v1, 0x7f100040
+    const v1, 0x7f100042
 
     if-ne v0, v1, :cond_0
 
@@ -3258,7 +3292,7 @@
     .line 120
     :cond_2
     :goto_1
-    const v1, 0x7f0a0216
+    const v1, 0x7f0a021c
 
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/setting/ListSettingFragment;->getString(I)Ljava/lang/String;
 

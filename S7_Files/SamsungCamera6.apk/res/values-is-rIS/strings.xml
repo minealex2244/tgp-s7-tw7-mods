@@ -196,6 +196,8 @@ Skimunarmynd: Skapa tilfinningu fyrir hreyfingu þegar myndir eru teknar af hlut
     <string name="SM_SLOW_VIDEO_description">Taka upp myndskeið með hárri rammatíðni til að horfa á í hægspilun. Þú getur spilað tiltekinn hluta hvers myndskeiðs í hægspilun að upptöku lokinni.</string>
     <string name="SM_SMART_SELFSHOT">Sjálfsmynd með aftari myndavél</string>
     <string name="SM_SMART_SELFSHOT_description">Aftari myndavélin greinir sjálfkrafa andlit þitt og stillir fókus á það þegar þú tekur sjálfsmyndir.</string>
+    <string name="SM_SOCIAL">Samfélög</string>
+    <string name="SM_SOCIAL_description">Taktu myndir og deildu þeim á þægilegan hátt á samfélagsmiðlunum.</string>
     <string name="SM_SPORTS">Íþróttir</string>
     <string name="SM_SPORTS_SCENE_description">Taktu skýrari myndir af hlutum sem hreyfast hratt.</string>
     <string name="SM_STORY">Hljóð og mynd</string>
@@ -267,9 +269,9 @@ Skimunarmynd: Skapa tilfinningu fyrir hreyfingu þegar myndir eru teknar af hlut
     <string name="Title_Viewmode">Allur skjárinn (16:9)</string>
     <string name="Title_Voice_Capture">Raddstjórnun</string>
     <string name="Title_Voice_guide">Raddleiðbeiningar</string>
-    <string name="Title_Volume_Key_As">Virkni styrklykils</string>
+    <string name="Title_Volume_Key_As">Virkni hljóðstyrkstakka</string>
     <string name="Title_WhiteBalance">Hvítjöfnun</string>
-    <string name="Title_common">Almennt</string>
+    <string name="Title_common">Almennar</string>
     <string name="Title_front">Fremri myndavél</string>
     <string name="Title_rear">Aftari myndavél</string>
     <string name="Title_rear_lens_distortion_correction">Leiðrétta lögun</string>
@@ -399,7 +401,10 @@ lögun"</string>
     <string name="guideline_square">Ferningur</string>
     <string name="help_change_mode_tip_1">Strjúktu til hægri til að skoða mögulegar myndavélarstillingar.</string>
     <string name="help_change_mode_tip_2">Veldu stillinguna sem þú vilt nota.</string>
+    <string name="help_change_mode_tip_3">Þegar kveikt er á einfaldri útgáfu er aðeins hægt að nota stillingarnar „Sjálfvirkt“ og „Sjálfsmynd“.</string>
     <string name="help_changing_the_camera_mode">Að velja myndavélarstillingar</string>
+    <string name="help_changing_the_camera_mode_header">Myndavélarstilling valin</string>
+    <string name="help_changing_the_camera_mode_title">Stillingum myndavélar breytt</string>
     <string name="help_recording_videos">Upptaka myndskeiða</string>
     <string name="help_recording_videos_tip_1">Pikkaðu á %s.</string>
     <string name="help_recording_videos_tip_1_tts">Pikkaðu á upptökuhnappinn.</string>
@@ -407,7 +412,7 @@ lögun"</string>
     <string name="help_recording_videos_tip_2_tts">Pikkaðu á stöðvunarhnappinn til að stöðva upptöku.</string>
     <string name="help_recording_videos_tip_snapshot">Pikkaðu á „%s“ til að taka myndir á meðan upptaka myndskeiðs fer fram.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Pikkaðu á myndavélarhnappinn til að taka myndir á meðan upptaka myndskeiðs fer fram.</string>
-    <string name="help_section_summary">Hægt er að taka myndir eða myndskeið með ýmsum áhrifum fyrir öll tilefni. Þegar kveikt er á einfaldri útgáfu er aðeins hægt að nota myndavélarstillingarnar „Sjálfvirkt“ og „Sjálfsmynd“ og ekki er hægt að nota áhrif.</string>
+    <string name="help_section_summary">Hægt er að taka myndir eða myndskeið með ýmsum áhrifum fyrir öll tilefni.</string>
     <string name="help_selecting_camera_mode">Að velja myndavélarstillingar</string>
     <string name="help_taking_pictures">Myndataka</string>
     <string name="help_taking_pictures_tip_1">Pikkaðu á myndefnið sem á að vera í fókus.</string>
@@ -422,6 +427,7 @@ lögun"</string>
     <string name="help_text_wideselfie">Pikkaðu á myndavélarhnappinn og snúðu tækinu rólega í eina átt.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Pikkaðu á %s til að skoða myndir eða myndskeið um leið og þau eru tekin.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Pikkaðu á flýtiskoðunarhnappinn til að skoða myndir eða myndskeið um leið og þau eru tekin.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Myndir og myndskeið skoðuð</string>
     <string name="high_resolution_video_description">Eftirfarandi verður ekki í boði meðan á upptöku í upplausninni %s stendur:</string>
     <string name="highlight">Ljós svæði</string>

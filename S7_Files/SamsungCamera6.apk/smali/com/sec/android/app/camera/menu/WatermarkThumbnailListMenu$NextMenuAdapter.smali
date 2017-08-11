@@ -26,7 +26,7 @@
     .locals 0
 
     .prologue
-    .line 673
+    .line 682
     iput-object p1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +40,7 @@
     .param p2, "x1"    # Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$1;
 
     .prologue
-    .line 673
+    .line 682
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;-><init>(Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;)V
 
     return-void
@@ -52,7 +52,7 @@
     .locals 1
 
     .prologue
-    .line 676
+    .line 685
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mNextResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
@@ -75,10 +75,10 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 681
+    .line 690
     if-nez p2, :cond_3
 
-    .line 683
+    .line 692
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mOrientation:I
@@ -99,7 +99,7 @@
 
     if-ne v1, v3, :cond_2
 
-    .line 684
+    .line 693
     :cond_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
@@ -110,7 +110,7 @@
 
     int-to-float v4, v1
 
-    .line 685
+    .line 694
     .local v4, "itemWidth":F
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
@@ -121,7 +121,7 @@
 
     int-to-float v5, v1
 
-    .line 691
+    .line 700
     .local v5, "itemHeight":F
     :goto_0
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
@@ -135,7 +135,7 @@
 
     move-result-object v6
 
-    .line 692
+    .line 701
     .local v6, "itemData":Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
@@ -154,11 +154,11 @@
 
     check-cast v0, Lcom/sec/android/app/camera/widget/gl/WatermarkItem;
 
-    .line 694
+    .line 703
     .local v0, "item":Lcom/sec/android/app/camera/widget/gl/WatermarkItem;
     if-nez v0, :cond_3
 
-    .line 695
+    .line 704
     invoke-virtual {v6}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->getCommandId()I
 
     move-result v1
@@ -175,7 +175,7 @@
 
     move-result-object v7
 
-    .line 696
+    .line 705
     .local v7, "command":Lcom/sec/android/app/camera/command/MenuCommand;
     if-eqz v7, :cond_1
 
@@ -183,7 +183,7 @@
 
     if-nez v1, :cond_1
 
-    .line 697
+    .line 706
     new-instance v0, Lcom/sec/android/app/camera/widget/gl/WatermarkItem;
 
     .end local v0    # "item":Lcom/sec/android/app/camera/widget/gl/WatermarkItem;
@@ -195,7 +195,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/sec/android/app/camera/widget/gl/WatermarkItem;-><init>(Lcom/sec/android/app/camera/interfaces/CameraContext;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;)V
 
-    .line 698
+    .line 707
     .restart local v0    # "item":Lcom/sec/android/app/camera/widget/gl/WatermarkItem;
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
@@ -210,7 +210,7 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 703
+    .line 712
     .end local v0    # "item":Lcom/sec/android/app/camera/widget/gl/WatermarkItem;
     .end local v4    # "itemWidth":F
     .end local v5    # "itemHeight":F
@@ -220,7 +220,7 @@
     :goto_1
     return-object v0
 
-    .line 687
+    .line 696
     :cond_2
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
@@ -231,7 +231,7 @@
 
     int-to-float v4, v1
 
-    .line 688
+    .line 697
     .restart local v4    # "itemWidth":F
     iget-object v1, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
@@ -250,7 +250,7 @@
     :cond_3
     move-object v0, p2
 
-    .line 703
+    .line 712
     goto :goto_1
 .end method
 
@@ -258,7 +258,7 @@
     .locals 1
 
     .prologue
-    .line 708
+    .line 717
     iget-object v0, p0, Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu$NextMenuAdapter;->this$0:Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;
 
     # getter for: Lcom/sec/android/app/camera/menu/WatermarkThumbnailListMenu;->mNextItemList:Landroid/util/SparseArray;
@@ -268,6 +268,6 @@
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
-    .line 709
+    .line 718
     return-void
 .end method

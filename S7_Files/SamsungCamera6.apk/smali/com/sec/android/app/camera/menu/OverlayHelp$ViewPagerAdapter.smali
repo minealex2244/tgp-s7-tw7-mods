@@ -211,7 +211,7 @@
 
     aget-object v3, v3, p2
 
-    const v4, 0x7f10002a
+    const v4, 0x7f10002c
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -234,7 +234,7 @@
 
     aget-object v3, v3, p2
 
-    const v4, 0x7f100029
+    const v4, 0x7f10002b
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -248,7 +248,7 @@
 
     aget-object v3, v3, p2
 
-    const v4, 0x7f10002b
+    const v4, 0x7f10002d
 
     invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -345,7 +345,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f020149
+    const v5, 0x7f02014a
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -373,7 +373,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f02014a
+    const v5, 0x7f02014b
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -401,7 +401,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f02014b
+    const v5, 0x7f02014c
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -410,12 +410,12 @@
     invoke-virtual {v3, v4, v8}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
 
     .line 807
-    const v3, 0x7f0a01a6
+    const v3, 0x7f0a01ac
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
     .line 808
-    const v3, 0x7f0a01a2
+    const v3, 0x7f0a01a8
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -423,34 +423,6 @@
 
     .line 811
     :pswitch_1
-    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationDrawable:[Landroid/graphics/drawable/AnimationDrawable;
-
-    aget-object v3, v3, p2
-
-    iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
-
-    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
-    invoke-static {v4}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$600(Lcom/sec/android/app/camera/menu/OverlayHelp;)Lcom/sec/android/app/camera/interfaces/CameraContext;
-
-    move-result-object v4
-
-    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v4
-
-    const v5, 0x7f020144
-
-    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v4, v7}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
-
-    .line 812
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationDrawable:[Landroid/graphics/drawable/AnimationDrawable;
 
     aget-object v3, v3, p2
@@ -478,7 +450,7 @@
 
     invoke-virtual {v3, v4, v7}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 813
+    .line 812
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationDrawable:[Landroid/graphics/drawable/AnimationDrawable;
 
     aget-object v3, v3, p2
@@ -504,40 +476,9 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4, v8}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
+    invoke-virtual {v3, v4, v7}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 815
-    sget-boolean v3, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_WATERMARK:Z
-
-    if-eqz v3, :cond_1
-
-    .line 816
-    const v3, 0x7f0a01a5
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
-
-    .line 817
-    const v3, 0x7f0a01a1
-
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
-
-    goto/16 :goto_1
-
-    .line 819
-    :cond_1
-    const v3, 0x7f0a01a4
-
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
-
-    .line 820
-    const v3, 0x7f0a01a0
-
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
-
-    goto/16 :goto_1
-
-    .line 824
-    :pswitch_2
+    .line 813
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationDrawable:[Landroid/graphics/drawable/AnimationDrawable;
 
     aget-object v3, v3, p2
@@ -557,15 +498,46 @@
 
     move-result-object v4
 
-    const v5, 0x7f02014d
+    const v5, 0x7f020147
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4, v7}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
+    invoke-virtual {v3, v4, v8}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 825
+    .line 815
+    sget-boolean v3, Lcom/sec/android/app/camera/feature/Feature;->CAMERA_SUPPORT_WATERMARK:Z
+
+    if-eqz v3, :cond_1
+
+    .line 816
+    const v3, 0x7f0a01ab
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
+
+    .line 817
+    const v3, 0x7f0a01a7
+
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
+
+    goto/16 :goto_1
+
+    .line 819
+    :cond_1
+    const v3, 0x7f0a01aa
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
+
+    .line 820
+    const v3, 0x7f0a01a6
+
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
+
+    goto/16 :goto_1
+
+    .line 824
+    :pswitch_2
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationDrawable:[Landroid/graphics/drawable/AnimationDrawable;
 
     aget-object v3, v3, p2
@@ -593,7 +565,7 @@
 
     invoke-virtual {v3, v4, v7}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 826
+    .line 825
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationDrawable:[Landroid/graphics/drawable/AnimationDrawable;
 
     aget-object v3, v3, p2
@@ -619,15 +591,43 @@
 
     move-result-object v4
 
+    invoke-virtual {v3, v4, v7}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
+
+    .line 826
+    iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mAnimationDrawable:[Landroid/graphics/drawable/AnimationDrawable;
+
+    aget-object v3, v3, p2
+
+    iget-object v4, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->this$0:Lcom/sec/android/app/camera/menu/OverlayHelp;
+
+    # getter for: Lcom/sec/android/app/camera/menu/OverlayHelp;->mCameraContext:Lcom/sec/android/app/camera/interfaces/CameraContext;
+    invoke-static {v4}, Lcom/sec/android/app/camera/menu/OverlayHelp;->access$600(Lcom/sec/android/app/camera/menu/OverlayHelp;)Lcom/sec/android/app/camera/interfaces/CameraContext;
+
+    move-result-object v4
+
+    invoke-interface {v4}, Lcom/sec/android/app/camera/interfaces/CameraContext;->getContext()Landroid/content/Context;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v4
+
+    const v5, 0x7f020150
+
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v4
+
     invoke-virtual {v3, v4, v8}, Landroid/graphics/drawable/AnimationDrawable;->addFrame(Landroid/graphics/drawable/Drawable;I)V
 
     .line 828
-    const v3, 0x7f0a01a3
+    const v3, 0x7f0a01a9
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
     .line 829
-    const v3, 0x7f0a019f
+    const v3, 0x7f0a01a5
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -723,9 +723,9 @@
     .param p2, "orientation"    # I
 
     .prologue
-    const v5, 0x7f10002b
+    const v5, 0x7f10002d
 
-    const v4, 0x7f10002a
+    const v4, 0x7f10002c
 
     .line 862
     iget-object v3, p0, Lcom/sec/android/app/camera/menu/OverlayHelp$ViewPagerAdapter;->mViewPagerItem:[Landroid/view/View;

@@ -190,6 +190,8 @@ Panorāmas foto: tveriet kustību, kad fotografējat kustīgus objektus."</strin
     <string name="SM_SLOW_VIDEO_description">Ierakstiet videoklipus ar lielu kadru ātrumu, lai varētu skatīties palēninājumā. Pēc videoklipa ierakstīšanas varat demonstrēt noteiktu tā daļu palēninājumā.</string>
     <string name="SM_SMART_SELFSHOT">Pašbilde ar aizmugurējo kameru</string>
     <string name="SM_SMART_SELFSHOT_description">Aizmugurējā kamera automātiski nosaka un fokusējas uz jūsu seju, kad uzņemat pašportretus.</string>
+    <string name="SM_SOCIAL">Sociālais</string>
+    <string name="SM_SOCIAL_description">Uzņemiet attēlus un ērti kopīgojiet tos sociālajos tīklos.</string>
     <string name="SM_SPORTS">Sports</string>
     <string name="SM_SPORTS_SCENE_description">Uzņemiet skaidrākus kustīgu objektu attēlus.</string>
     <string name="SM_STORY">Skaņa un attēls</string>
@@ -261,7 +263,7 @@ Panorāmas foto: tveriet kustību, kad fotografējat kustīgus objektus."</strin
     <string name="Title_Viewmode">Pilnekrāna skats (16:9)</string>
     <string name="Title_Voice_Capture">Balss vadība</string>
     <string name="Title_Voice_guide">Balss ceļvedis</string>
-    <string name="Title_Volume_Key_As">Skaļuma taustiņa funkcija</string>
+    <string name="Title_Volume_Key_As">Skaļuma taustiņu funkcija</string>
     <string name="Title_WhiteBalance">Baltā balanss</string>
     <string name="Title_common">Vispārīgi</string>
     <string name="Title_front">Priekšējā kamera</string>
@@ -393,7 +395,10 @@ labošana"</string>
     <string name="guideline_square">Kvadrātveida</string>
     <string name="help_change_mode_tip_1">Pavelciet pa labi, lai skatītu pieejamos kameras režīmus.</string>
     <string name="help_change_mode_tip_2">Izvēlieties režīmu, kuru lietosit.</string>
+    <string name="help_change_mode_tip_3">Kad ir aktivizēts vienkāršais režīms, ir pieejams tikai kameras automātiskais un pašbildes režīms.</string>
     <string name="help_changing_the_camera_mode">Kameras režīmu izvēle</string>
+    <string name="help_changing_the_camera_mode_header">Izvēlas kameras režīmu</string>
+    <string name="help_changing_the_camera_mode_title">Maina kameras režīmu</string>
     <string name="help_recording_videos">Videoklipu ierakstīšana</string>
     <string name="help_recording_videos_tip_1">Pieskarieties pie %s.</string>
     <string name="help_recording_videos_tip_1_tts">Pieskarieties videokameras pogai.</string>
@@ -401,7 +406,7 @@ labošana"</string>
     <string name="help_recording_videos_tip_2_tts">Lai apturētu ierakstīšanu, pieskarieties pārtraukšanas pogai.</string>
     <string name="help_recording_videos_tip_snapshot">Pieskarieties pie %s, lai videoklipa uzņemšanas laikā uzņemtu attēlus.</string>
     <string name="help_recording_videos_tip_snapshot_tts">Pieskarieties kameras pogai, lai videoklipa uzņemšanas laikā uzņemtu attēlus.</string>
-    <string name="help_section_summary">Uzņemiet attēlus vai videoklipus, izmantojot dažādus efektus atbilstoši situācijai. Kad ir aktivizēts vienkāršais režīms, ir pieejami tikai kameras režīmi Automātiski un Pašbilde, un efektus nevar lietot.</string>
+    <string name="help_section_summary">Uzņemiet attēlus vai video, izmantojot dažādus efektus atbilstoši situācijai.</string>
     <string name="help_selecting_camera_mode">Kameras režīmu izvēle</string>
     <string name="help_taking_pictures">Fotografēšana</string>
     <string name="help_taking_pictures_tip_1">Pieskarieties objektam, uz kuru fokusēties.</string>
@@ -416,6 +421,7 @@ labošana"</string>
     <string name="help_text_wideselfie">Pieskarieties Kameras pogai un lēni pagrieziet ierīci vienā virzienā.</string>
     <string name="help_viewing_pics_and_videos_tip_1">Pieskarieties pie %s, lai attēlus vai videoklipus skatītu uzreiz pēc to uzņemšanas.</string>
     <string name="help_viewing_pics_and_videos_tip_1_tts">Lai skatītu attēlus vai videoklipus tūlīt pēc to uzņemšanas vai ierakstīšanas, pieskarieties ātrās apskates pogai.</string>
+    <string name="help_viewing_pics_and_videos_tip_2">Swipe left to view your pictures or videos right after you take or record them.</string>
     <string name="help_viewing_pictures_and_videos">Attēlu un videoklipu apskate</string>
     <string name="high_resolution_video_description">Šī funkcija nebūs pieejama, ja ierakstīsit ar izšķirtspēju %s:</string>
     <string name="highlight">Gaišās vietas</string>
