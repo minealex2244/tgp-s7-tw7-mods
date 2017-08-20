@@ -1022,7 +1022,7 @@
     .line 662
     iget-object v4, p0, Lcom/samsung/android/settings/accessibility/AccessibilitySettings;->mNotificationReminderPreference:Landroid/preference/PreferenceScreen;
 
-    const v5, 0x7f0b19d8
+    const v5, 0x7f0b19d7
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
@@ -1062,7 +1062,7 @@
     :cond_6
     iget-object v4, p0, Lcom/samsung/android/settings/accessibility/AccessibilitySettings;->mNotificationReminderPreference:Landroid/preference/PreferenceScreen;
 
-    const v5, 0x7f0b19d9
+    const v5, 0x7f0b19d8
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
@@ -1562,7 +1562,7 @@
     move-object/from16 v24, v0
 
     .line 796
-    const v25, 0x7f0b1644
+    const v25, 0x7f0b1643
 
     move-object/from16 v0, p0
 
@@ -1709,7 +1709,7 @@
     if-eqz v18, :cond_8
 
     .line 708
-    const v24, 0x7f0b19d8
+    const v24, 0x7f0b19d7
 
     move-object/from16 v0, p0
 
@@ -1757,7 +1757,7 @@
     .line 710
     .restart local v18    # "serviceEnabled":Z
     :cond_8
-    const v24, 0x7f0b19d9
+    const v24, 0x7f0b19d8
 
     move-object/from16 v0, p0
 
@@ -1977,7 +1977,7 @@
     if-eqz v24, :cond_b
 
     .line 771
-    const v24, 0x7f0b1645
+    const v24, 0x7f0b1644
 
     move-object/from16 v0, p0
 
@@ -2012,7 +2012,7 @@
     const-string/jumbo v24, "settings_title"
 
     .line 778
-    const v25, 0x7f0b1616
+    const v25, 0x7f0b1615
 
     move-object/from16 v0, p0
 
@@ -2198,7 +2198,7 @@
 
     .prologue
     .line 232
-    const v0, 0x7f0b189a
+    const v0, 0x7f0b1899
 
     return v0
 .end method
@@ -2339,7 +2339,7 @@
     iput-object v9, v5, Lcom/samsung/android/settings/SettingsPreferenceFragmentLinkData;->intent:Landroid/content/Intent;
 
     .line 380
-    const v10, 0x7f0b0a7d
+    const v10, 0x7f0b0a7b
 
     iput v10, v5, Lcom/samsung/android/settings/SettingsPreferenceFragmentLinkData;->titleRes:I
 

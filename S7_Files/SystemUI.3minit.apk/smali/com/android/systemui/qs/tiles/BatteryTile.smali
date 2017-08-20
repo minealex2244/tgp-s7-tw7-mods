@@ -184,7 +184,7 @@
     .line 116
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/BatteryTile;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0f057a
+    const v1, 0x7f0f0578
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -292,7 +292,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/qs/tiles/BatteryTile;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f049c
+    const v4, 0x7f0f049a
 
     invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -367,7 +367,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/qs/tiles/BatteryTile;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0f0464
+    const v4, 0x7f0f0462
 
     invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
     .prologue
-    .line 838
+    .line 849
     iput-object p1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -41,10 +41,10 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 841
+    .line 852
     const/4 v0, 0x0
 
-    .line 842
+    .line 853
     .local v0, "am":Landroid/view/accessibility/AccessibilityManager;
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
@@ -54,7 +54,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 843
+    .line 854
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
     invoke-static {v1}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->-get0(Lcom/samsung/android/content/clipboard/SemClipboardManager;)Landroid/content/Context;
@@ -70,19 +70,19 @@
     .end local v0    # "am":Landroid/view/accessibility/AccessibilityManager;
     check-cast v0, Landroid/view/accessibility/AccessibilityManager;
 
-    .line 845
+    .line 856
     :cond_0
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 840
+    .line 851
     :cond_1
     :goto_0
     :pswitch_0
     return-void
 
-    .line 847
+    .line 858
     :pswitch_1
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
@@ -92,7 +92,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 848
+    .line 859
     if-eqz v0, :cond_2
 
     invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityManager;->isTwoFingerGestureRecognitionEnabled()Z
@@ -101,7 +101,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 856
+    .line 867
     :cond_2
     :goto_1
     const-string/jumbo v1, "SemClipboardManager"
@@ -112,7 +112,7 @@
 
     goto :goto_0
 
-    .line 849
+    .line 860
     :cond_3
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
@@ -122,7 +122,7 @@
 
     if-eqz v1, :cond_4
 
-    .line 850
+    .line 861
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
     invoke-static {v1}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->-get0(Lcom/samsung/android/content/clipboard/SemClipboardManager;)Landroid/content/Context;
@@ -137,14 +137,14 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 851
+    .line 862
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
     invoke-static {v1, v5}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->-set0(Lcom/samsung/android/content/clipboard/SemClipboardManager;Z)Z
 
     goto :goto_1
 
-    .line 853
+    .line 864
     :cond_4
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
@@ -162,7 +162,7 @@
 
     goto :goto_1
 
-    .line 860
+    .line 871
     :pswitch_2
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
@@ -172,7 +172,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 861
+    .line 872
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
     iget-object v2, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
@@ -187,7 +187,7 @@
 
     if-nez v1, :cond_5
 
-    .line 863
+    .line 874
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
     invoke-static {v1}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->-get0(Lcom/samsung/android/content/clipboard/SemClipboardManager;)Landroid/content/Context;
@@ -202,10 +202,10 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 864
+    .line 875
     return-void
 
-    .line 866
+    .line 877
     :cond_5
     if-eqz v0, :cond_6
 
@@ -215,7 +215,7 @@
 
     if-eqz v1, :cond_7
 
-    .line 869
+    .line 880
     :cond_6
     :goto_2
     const-string/jumbo v1, "SemClipboardManager"
@@ -226,7 +226,7 @@
 
     goto/16 :goto_0
 
-    .line 867
+    .line 878
     :cond_7
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
@@ -244,7 +244,7 @@
 
     goto :goto_2
 
-    .line 875
+    .line 886
     :pswitch_3
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
@@ -254,7 +254,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 876
+    .line 887
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;->this$0:Lcom/samsung/android/content/clipboard/SemClipboardManager;
 
     invoke-static {v1}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->-get0(Lcom/samsung/android/content/clipboard/SemClipboardManager;)Landroid/content/Context;
@@ -297,7 +297,7 @@
 
     goto/16 :goto_0
 
-    .line 845
+    .line 856
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1

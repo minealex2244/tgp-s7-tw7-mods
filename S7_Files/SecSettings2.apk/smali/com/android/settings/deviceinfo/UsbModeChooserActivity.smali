@@ -583,7 +583,7 @@
 
     .line 514
     :pswitch_2
-    const v0, 0x7f0b1a67
+    const v0, 0x7f0b1a66
 
     return v0
 
@@ -595,7 +595,7 @@
 
     .line 518
     :pswitch_4
-    const v0, 0x7f0b1a6f    # 1.8489994E38f
+    const v0, 0x7f0b1a6e    # 1.8489992E38f
 
     return v0
 
@@ -662,7 +662,7 @@
 
     .line 552
     :pswitch_2
-    const v0, 0x7f0b1a67
+    const v0, 0x7f0b1a66
 
     return v0
 
@@ -674,7 +674,7 @@
 
     .line 556
     :pswitch_4
-    const v0, 0x7f0b1a6e    # 1.8489992E38f
+    const v0, 0x7f0b1a6d    # 1.848999E38f
 
     return v0
 
@@ -729,37 +729,37 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0b1a34
+    const v0, 0x7f0b1a33
 
     return v0
 
     .line 531
     :cond_0
-    const v0, 0x7f0b1a64
+    const v0, 0x7f0b1a63
 
     return v0
 
     .line 533
     :pswitch_2
-    const v0, 0x7f0b1a66
+    const v0, 0x7f0b1a65
 
     return v0
 
     .line 535
     :pswitch_3
-    const v0, 0x7f0b1a69
+    const v0, 0x7f0b1a68
 
     return v0
 
     .line 537
     :pswitch_4
-    const v0, 0x7f0b1a6c
+    const v0, 0x7f0b1a6b
 
     return v0
 
     .line 539
     :pswitch_5
-    const v0, 0x7f0b1a71    # 1.8489998E38f
+    const v0, 0x7f0b1a70    # 1.8489996E38f
 
     return v0
 
@@ -808,37 +808,37 @@
 
     if-eqz v0, :cond_0
 
-    const v0, 0x7f0b1a34
+    const v0, 0x7f0b1a33
 
     return v0
 
     .line 569
     :cond_0
-    const v0, 0x7f0b1a64
+    const v0, 0x7f0b1a63
 
     return v0
 
     .line 571
     :pswitch_2
-    const v0, 0x7f0b1a66
+    const v0, 0x7f0b1a65
 
     return v0
 
     .line 573
     :pswitch_3
-    const v0, 0x7f0b1a68
+    const v0, 0x7f0b1a67
 
     return v0
 
     .line 575
     :pswitch_4
-    const v0, 0x7f0b1a6b
+    const v0, 0x7f0b1a6a
 
     return v0
 
     .line 577
     :pswitch_5
-    const v0, 0x7f0b1a70    # 1.8489996E38f
+    const v0, 0x7f0b1a6f    # 1.8489994E38f
 
     return v0
 
@@ -1234,7 +1234,7 @@
     invoke-direct {v1, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 261
-    const v4, 0x7f0b1a73    # 1.8490002E38f
+    const v4, 0x7f0b1a72    # 1.849E38f
 
     .line 260
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;

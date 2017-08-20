@@ -3686,7 +3686,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%2$s என்பதை %1$s உடன் இணைக்க கடவுச்சொல்லை உறுதிப்படுத்துக.</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>இலிருந்து இந்த சாதனத்துடன் பிணைக்கவா?</string>
     <string name="bluetooth_display_passkey_pin_msg">இணைக்க, %1$s என்பதை %2$s என்பதில் உள்ளிடுக, பிறகு “பின்செல்” அல்லது “எண்டர்” என்பதை டேப் செய்க.</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s உடன் இணைக்க இயலாது. %2$s வழியாக இணைக்க முயலுக.</string>
     <string name="bluetooth_connecting_error_message">%s உடன் இணைக்க இயலாது.</string>
     <string name="bluetooth_preference_scan_title">ஸ்கேன்</string>
     <string name="bluetooth_preference_paired_devices">இணைக்கப்பட்ட சாதனங்கள்</string>

@@ -3684,7 +3684,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">Потврда дека лозинката е %2$s за поврзување со %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Од&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Да се поврзе со овој уред?</string>
     <string name="bluetooth_display_passkey_pin_msg">Внесете %1$s на %2$s за спојување, па допрете Нов ред или Внеси.</string>
-    <string name="bluetooth_HID_connecting_error_message">Не може да се поврзе со %1$s. Обидете се да се поврзете од %2$s.</string>
     <string name="bluetooth_connecting_error_message">Не е можно поврзување со %s.</string>
     <string name="bluetooth_preference_scan_title">Скенирај</string>
     <string name="bluetooth_preference_paired_devices">Поврзани уреди</string>
@@ -4085,7 +4084,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">Сите Ваши лични информации и преземени апликации ќе се избришат и нема да може да се вратат.</string>
     <string name="master_clear_final_button_text">Избриши сè</string>
     <string name="master_clear_not_available">Овој гостински профил нема дозвола да изврши фабричко ресетирање на податоците.</string>
-    <string name="master_clear_progress_title">Ресетирање</string>
+    <string name="master_clear_progress_title">Ресетирај</string>
     <string name="master_clear_progress_text">Ве молам почекајте…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">Споделув. врска преку USB</string>

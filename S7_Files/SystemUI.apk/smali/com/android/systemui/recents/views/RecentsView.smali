@@ -4641,7 +4641,7 @@
 
     .line 293
     :cond_1
-    const v0, 0x7f0f0455
+    const v0, 0x7f0f0453
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/recents/views/RecentsView;->showEmptyView(I)V
 

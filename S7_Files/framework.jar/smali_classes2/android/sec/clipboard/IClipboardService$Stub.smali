@@ -28,39 +28,41 @@
 
 .field static final TRANSACTION_addClip:I = 0x10
 
-.field static final TRANSACTION_addClipboardEventListener:I = 0x1a
+.field static final TRANSACTION_addClipboardEventListener:I = 0x1b
 
 .field static final TRANSACTION_dismissDialog:I = 0x6
 
-.field static final TRANSACTION_getClip:I = 0x17
+.field static final TRANSACTION_getClip:I = 0x18
 
 .field static final TRANSACTION_getClipData:I = 0x9
 
 .field static final TRANSACTION_getClipedStrings:I = 0x11
 
-.field static final TRANSACTION_getClips:I = 0x16
+.field static final TRANSACTION_getClips:I = 0x17
 
 .field static final TRANSACTION_getCount:I = 0x1
 
 .field static final TRANSACTION_isClipboardAllowed:I = 0x12
 
+.field static final TRANSACTION_isClipboardShareAllowed:I = 0x13
+
 .field static final TRANSACTION_isEnabled:I = 0xf
 
-.field static final TRANSACTION_isPackageAllowed:I = 0x13
+.field static final TRANSACTION_isPackageAllowed:I = 0x14
 
 .field static final TRANSACTION_isShowing:I = 0x5
 
 .field static final TRANSACTION_loadSEClipboard:I = 0xe
 
-.field static final TRANSACTION_pasteClip:I = 0x15
+.field static final TRANSACTION_pasteClip:I = 0x16
 
 .field static final TRANSACTION_registClipboardWorkingFormUiInterfaces:I = 0x7
 
-.field static final TRANSACTION_removeAll:I = 0x14
+.field static final TRANSACTION_removeAll:I = 0x15
 
-.field static final TRANSACTION_removeClip:I = 0x18
+.field static final TRANSACTION_removeClip:I = 0x19
 
-.field static final TRANSACTION_removeClipboardEventListener:I = 0x1b
+.field static final TRANSACTION_removeClipboardEventListener:I = 0x1c
 
 .field static final TRANSACTION_setClipData:I = 0xa
 
@@ -76,7 +78,7 @@
 
 .field static final TRANSACTION_unRegistClipboardWorkingFormUiInterfaces:I = 0x8
 
-.field static final TRANSACTION_updateClip:I = 0x19
+.field static final TRANSACTION_updateClip:I = 0x1a
 
 .field static final TRANSACTION_updateFilter:I = 0x4
 
@@ -169,7 +171,7 @@
     .line 39
     sparse-switch p1, :sswitch_data_0
 
-    .line 364
+    .line 374
     invoke-super/range {p0 .. p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result v19
@@ -1093,7 +1095,7 @@
     .restart local v2    # "_arg0":I
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Landroid/sec/clipboard/IClipboardService$Stub;->isPackageAllowed(I)Z
+    invoke-virtual {v0, v2}, Landroid/sec/clipboard/IClipboardService$Stub;->isClipboardShareAllowed(I)Z
 
     move-result v18
 
@@ -1136,16 +1138,24 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 278
-    invoke-virtual/range {p0 .. p0}, Landroid/sec/clipboard/IClipboardService$Stub;->removeAll()Z
+    .line 279
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
+
+    move-result v2
+
+    .line 280
+    .restart local v2    # "_arg0":I
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v2}, Landroid/sec/clipboard/IClipboardService$Stub;->isPackageAllowed(I)Z
 
     move-result v18
 
-    .line 279
+    .line 281
     .restart local v18    # "_result":Z
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 280
+    .line 282
     if-eqz v18, :cond_b
 
     const/16 v19, 0x1
@@ -1157,18 +1167,19 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 281
+    .line 283
     const/16 v19, 0x1
 
     return v19
 
-    .line 280
+    .line 282
     :cond_b
     const/16 v19, 0x0
 
     goto :goto_b
 
-    .line 285
+    .line 287
+    .end local v2    # "_arg0":I
     .end local v18    # "_result":Z
     :sswitch_15
     const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
@@ -1179,27 +1190,40 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 287
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v6
-
     .line 288
-    .local v6, "_arg0":Ljava/lang/String;
-    move-object/from16 v0, p0
+    invoke-virtual/range {p0 .. p0}, Landroid/sec/clipboard/IClipboardService$Stub;->removeAll()Z
 
-    invoke-virtual {v0, v6}, Landroid/sec/clipboard/IClipboardService$Stub;->pasteClip(Ljava/lang/String;)V
+    move-result v18
 
     .line 289
+    .restart local v18    # "_result":Z
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     .line 290
+    if-eqz v18, :cond_c
+
+    const/16 v19, 0x1
+
+    :goto_c
+    move-object/from16 v0, p3
+
+    move/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 291
     const/16 v19, 0x1
 
     return v19
 
-    .line 294
-    .end local v6    # "_arg0":Ljava/lang/String;
+    .line 290
+    :cond_c
+    const/16 v19, 0x0
+
+    goto :goto_c
+
+    .line 295
+    .end local v18    # "_result":Z
     :sswitch_16
     const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
 
@@ -1209,29 +1233,27 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 295
-    invoke-virtual/range {p0 .. p0}, Landroid/sec/clipboard/IClipboardService$Stub;->getClips()Ljava/util/List;
-
-    move-result-object v16
-
-    .line 296
-    .local v16, "_result":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/content/clipboard/data/SemClipData;>;"
-    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
-
     .line 297
-    move-object/from16 v0, p3
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    move-object/from16 v1, v16
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
+    move-result-object v6
 
     .line 298
+    .local v6, "_arg0":Ljava/lang/String;
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v6}, Landroid/sec/clipboard/IClipboardService$Stub;->pasteClip(Ljava/lang/String;)V
+
+    .line 299
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 300
     const/16 v19, 0x1
 
     return v19
 
-    .line 302
-    .end local v16    # "_result":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/content/clipboard/data/SemClipData;>;"
+    .line 304
+    .end local v6    # "_arg0":Ljava/lang/String;
     :sswitch_17
     const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
 
@@ -1241,65 +1263,29 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 304
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v6
-
     .line 305
-    .restart local v6    # "_arg0":Ljava/lang/String;
-    move-object/from16 v0, p0
+    invoke-virtual/range {p0 .. p0}, Landroid/sec/clipboard/IClipboardService$Stub;->getClips()Ljava/util/List;
 
-    invoke-virtual {v0, v6}, Landroid/sec/clipboard/IClipboardService$Stub;->getClip(Ljava/lang/String;)Lcom/samsung/android/content/clipboard/data/SemClipData;
-
-    move-result-object v15
+    move-result-object v16
 
     .line 306
-    .restart local v15    # "_result":Lcom/samsung/android/content/clipboard/data/SemClipData;
+    .local v16, "_result":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/content/clipboard/data/SemClipData;>;"
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
     .line 307
-    if-eqz v15, :cond_c
+    move-object/from16 v0, p3
+
+    move-object/from16 v1, v16
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
     .line 308
-    const/16 v19, 0x1
-
-    move-object/from16 v0, p3
-
-    move/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 309
-    const/16 v19, 0x1
-
-    move-object/from16 v0, p3
-
-    move/from16 v1, v19
-
-    invoke-virtual {v15, v0, v1}, Lcom/samsung/android/content/clipboard/data/SemClipData;->writeToParcel(Landroid/os/Parcel;I)V
-
-    .line 314
-    :goto_c
     const/16 v19, 0x1
 
     return v19
 
     .line 312
-    :cond_c
-    const/16 v19, 0x0
-
-    move-object/from16 v0, p3
-
-    move/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    goto :goto_c
-
-    .line 318
-    .end local v6    # "_arg0":Ljava/lang/String;
-    .end local v15    # "_result":Lcom/samsung/android/content/clipboard/data/SemClipData;
+    .end local v16    # "_result":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/content/clipboard/data/SemClipData;>;"
     :sswitch_18
     const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
 
@@ -1309,49 +1295,65 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 320
+    .line 314
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 321
+    .line 315
     .restart local v6    # "_arg0":Ljava/lang/String;
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v6}, Landroid/sec/clipboard/IClipboardService$Stub;->removeClip(Ljava/lang/String;)Z
+    invoke-virtual {v0, v6}, Landroid/sec/clipboard/IClipboardService$Stub;->getClip(Ljava/lang/String;)Lcom/samsung/android/content/clipboard/data/SemClipData;
 
-    move-result v18
+    move-result-object v15
 
-    .line 322
-    .restart local v18    # "_result":Z
+    .line 316
+    .restart local v15    # "_result":Lcom/samsung/android/content/clipboard/data/SemClipData;
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 323
-    if-eqz v18, :cond_d
+    .line 317
+    if-eqz v15, :cond_d
 
+    .line 318
     const/16 v19, 0x1
 
-    :goto_d
     move-object/from16 v0, p3
 
     move/from16 v1, v19
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
+    .line 319
+    const/16 v19, 0x1
+
+    move-object/from16 v0, p3
+
+    move/from16 v1, v19
+
+    invoke-virtual {v15, v0, v1}, Lcom/samsung/android/content/clipboard/data/SemClipData;->writeToParcel(Landroid/os/Parcel;I)V
+
     .line 324
+    :goto_d
     const/16 v19, 0x1
 
     return v19
 
-    .line 323
+    .line 322
     :cond_d
     const/16 v19, 0x0
+
+    move-object/from16 v0, p3
+
+    move/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     goto :goto_d
 
     .line 328
     .end local v6    # "_arg0":Ljava/lang/String;
-    .end local v18    # "_result":Z
+    .end local v15    # "_result":Lcom/samsung/android/content/clipboard/data/SemClipData;
     :sswitch_19
     const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
 
@@ -1366,15 +1368,67 @@
 
     move-result-object v6
 
+    .line 331
+    .restart local v6    # "_arg0":Ljava/lang/String;
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v6}, Landroid/sec/clipboard/IClipboardService$Stub;->removeClip(Ljava/lang/String;)Z
+
+    move-result v18
+
     .line 332
+    .restart local v18    # "_result":Z
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 333
+    if-eqz v18, :cond_e
+
+    const/16 v19, 0x1
+
+    :goto_e
+    move-object/from16 v0, p3
+
+    move/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 334
+    const/16 v19, 0x1
+
+    return v19
+
+    .line 333
+    :cond_e
+    const/16 v19, 0x0
+
+    goto :goto_e
+
+    .line 338
+    .end local v6    # "_arg0":Ljava/lang/String;
+    .end local v18    # "_result":Z
+    :sswitch_1a
+    const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 340
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 342
     .restart local v6    # "_arg0":Ljava/lang/String;
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v19
 
-    if-eqz v19, :cond_e
+    if-eqz v19, :cond_f
 
-    .line 333
+    .line 343
     sget-object v19, Lcom/samsung/android/content/clipboard/data/SemClipData;->CREATOR:Landroid/os/Parcelable$Creator;
 
     move-object/from16 v0, v19
@@ -1387,95 +1441,54 @@
 
     check-cast v9, Lcom/samsung/android/content/clipboard/data/SemClipData;
 
-    .line 338
-    :goto_e
+    .line 348
+    :goto_f
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v6, v9}, Landroid/sec/clipboard/IClipboardService$Stub;->updateClip(Ljava/lang/String;Lcom/samsung/android/content/clipboard/data/SemClipData;)Z
 
     move-result v18
 
-    .line 339
+    .line 349
     .restart local v18    # "_result":Z
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 340
-    if-eqz v18, :cond_f
+    .line 350
+    if-eqz v18, :cond_10
 
     const/16 v19, 0x1
 
-    :goto_f
+    :goto_10
     move-object/from16 v0, p3
 
     move/from16 v1, v19
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 341
+    .line 351
     const/16 v19, 0x1
 
     return v19
 
-    .line 336
+    .line 346
     .end local v18    # "_result":Z
-    :cond_e
+    :cond_f
     const/4 v9, 0x0
 
     .restart local v9    # "_arg1":Lcom/samsung/android/content/clipboard/data/SemClipData;
-    goto :goto_e
-
-    .line 340
-    .end local v9    # "_arg1":Lcom/samsung/android/content/clipboard/data/SemClipData;
-    .restart local v18    # "_result":Z
-    :cond_f
-    const/16 v19, 0x0
-
     goto :goto_f
 
-    .line 345
+    .line 350
+    .end local v9    # "_arg1":Lcom/samsung/android/content/clipboard/data/SemClipData;
+    .restart local v18    # "_result":Z
+    :cond_10
+    const/16 v19, 0x0
+
+    goto :goto_10
+
+    .line 355
     .end local v6    # "_arg0":Ljava/lang/String;
     .end local v18    # "_result":Z
-    :sswitch_1a
-    const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
-
-    move-object/from16 v0, p2
-
-    move-object/from16 v1, v19
-
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
-    .line 347
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
-    move-result-object v19
-
-    invoke-static/range {v19 .. v19}, Lcom/samsung/android/content/clipboard/IOnClipboardEventListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;
-
-    move-result-object v5
-
-    .line 349
-    .local v5, "_arg0":Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;
-    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
-
-    move-result-object v10
-
-    .line 350
-    .local v10, "_arg1":Ljava/lang/String;
-    move-object/from16 v0, p0
-
-    invoke-virtual {v0, v5, v10}, Landroid/sec/clipboard/IClipboardService$Stub;->addClipboardEventListener(Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;Ljava/lang/String;)V
-
-    .line 351
-    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
-
-    .line 352
-    const/16 v19, 0x1
-
-    return v19
-
-    .line 356
-    .end local v5    # "_arg0":Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;
-    .end local v10    # "_arg1":Ljava/lang/String;
     :sswitch_1b
     const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
 
@@ -1485,7 +1498,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 358
+    .line 357
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     move-result-object v19
@@ -1495,15 +1508,56 @@
     move-result-object v5
 
     .line 359
+    .local v5, "_arg0":Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v10
+
+    .line 360
+    .local v10, "_arg1":Ljava/lang/String;
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v5, v10}, Landroid/sec/clipboard/IClipboardService$Stub;->addClipboardEventListener(Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;Ljava/lang/String;)V
+
+    .line 361
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 362
+    const/16 v19, 0x1
+
+    return v19
+
+    .line 366
+    .end local v5    # "_arg0":Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;
+    .end local v10    # "_arg1":Ljava/lang/String;
+    :sswitch_1c
+    const-string/jumbo v19, "android.sec.clipboard.IClipboardService"
+
+    move-object/from16 v0, p2
+
+    move-object/from16 v1, v19
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 368
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+
+    move-result-object v19
+
+    invoke-static/range {v19 .. v19}, Lcom/samsung/android/content/clipboard/IOnClipboardEventListener$Stub;->asInterface(Landroid/os/IBinder;)Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;
+
+    move-result-object v5
+
+    .line 369
     .restart local v5    # "_arg0":Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v5}, Landroid/sec/clipboard/IClipboardService$Stub;->removeClipboardEventListener(Lcom/samsung/android/content/clipboard/IOnClipboardEventListener;)V
 
-    .line 360
+    .line 370
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 361
+    .line 371
     const/16 v19, 0x1
 
     return v19
@@ -1538,6 +1592,7 @@
         0x19 -> :sswitch_19
         0x1a -> :sswitch_1a
         0x1b -> :sswitch_1b
+        0x1c -> :sswitch_1c
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

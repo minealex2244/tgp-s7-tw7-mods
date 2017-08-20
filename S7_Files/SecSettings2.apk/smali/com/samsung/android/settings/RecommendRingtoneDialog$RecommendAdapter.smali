@@ -116,7 +116,7 @@
     if-nez p1, :cond_2
 
     .line 187
-    const v5, 0x7f0b09ed
+    const v5, 0x7f0b09eb
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -169,7 +169,7 @@
     .restart local v2    # "text2":Landroid/widget/TextView;
     .restart local v3    # "view":Landroid/view/View;
     :cond_2
-    const v5, 0x7f0b09ee
+    const v5, 0x7f0b09ec
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -177,7 +177,7 @@
     invoke-virtual {v2, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 192
-    const v5, 0x7f0b09ef
+    const v5, 0x7f0b09ed
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
 

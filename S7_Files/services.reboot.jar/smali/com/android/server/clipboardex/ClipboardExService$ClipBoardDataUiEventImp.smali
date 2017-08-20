@@ -35,19 +35,19 @@
     .param p1, "this$0"    # Lcom/android/server/clipboardex/ClipboardExService;
 
     .prologue
-    .line 224
+    .line 226
     iput-object p1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 225
+    .line 227
     new-instance v0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp$1;
 
     invoke-direct {v0, p0}, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp$1;-><init>(Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;)V
 
     iput-object v0, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->mBind:Landroid/sec/clipboard/IClipboardDataUiEvent$Stub;
 
-    .line 224
+    .line 226
     return-void
 .end method
 
@@ -67,7 +67,7 @@
     .locals 1
 
     .prologue
-    .line 344
+    .line 346
     iget-object v0, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->mBind:Landroid/sec/clipboard/IClipboardDataUiEvent$Stub;
 
     return-object v0
@@ -77,10 +77,10 @@
     .locals 4
 
     .prologue
-    .line 281
+    .line 283
     monitor-enter p0
 
-    .line 282
+    .line 284
     :try_start_0
     const-string/jumbo v1, "ClipboardExService"
 
@@ -88,7 +88,7 @@
 
     invoke-static {v1, v2}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 284
+    .line 286
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v1}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -99,7 +99,7 @@
 
     move-result v0
 
-    .line 286
+    .line 288
     .local v0, "bRes":Z
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -121,7 +121,7 @@
 
     if-lez v1, :cond_0
 
-    .line 287
+    .line 289
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v1}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -134,18 +134,18 @@
 
     or-int/2addr v0, v1
 
-    .line 290
+    .line 292
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 291
+    .line 293
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     const/4 v2, 0x3
 
     invoke-static {v1, v2}, Lcom/android/server/clipboardex/ClipboardExService;->-wrap2(Lcom/android/server/clipboardex/ClipboardExService;I)V
 
-    .line 292
+    .line 294
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     const/4 v2, 0x3
@@ -154,7 +154,7 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/server/clipboardex/ClipboardExService;->-wrap5(Lcom/android/server/clipboardex/ClipboardExService;ILcom/samsung/android/content/clipboard/data/SemClipData;)V
 
-    .line 295
+    .line 297
     :cond_1
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -166,10 +166,10 @@
 
     monitor-exit p0
 
-    .line 296
+    .line 298
     return v0
 
-    .line 281
+    .line 283
     .end local v0    # "bRes":Z
     :catchall_0
     move-exception v1
@@ -188,10 +188,10 @@
 
     const/4 v5, 0x0
 
-    .line 246
+    .line 248
     monitor-enter p0
 
-    .line 247
+    .line 249
     :try_start_0
     const-string/jumbo v6, "ClipboardExService"
 
@@ -215,14 +215,14 @@
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 248
+    .line 250
     const/4 v1, 0x0
 
-    .line 249
+    .line 251
     .local v1, "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     const/4 v0, 0x0
 
-    .line 251
+    .line 253
     .local v0, "bRes":Z
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -232,7 +232,7 @@
 
     if-eqz v6, :cond_3
 
-    .line 252
+    .line 254
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -243,11 +243,11 @@
 
     move-result v2
 
-    .line 253
+    .line 255
     .local v2, "dataListSize":I
     if-ge p1, v2, :cond_1
 
-    .line 254
+    .line 256
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -258,7 +258,7 @@
 
     move-result-object v1
 
-    .line 255
+    .line 257
     .local v1, "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -270,7 +270,7 @@
 
     move-result v0
 
-    .line 262
+    .line 264
     .local v0, "bRes":Z
     :goto_0
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
@@ -290,19 +290,19 @@
     :goto_1
     invoke-static {v6, v4}, Lcom/android/server/clipboardex/ClipboardExService;->-set0(Lcom/android/server/clipboardex/ClipboardExService;Z)Z
 
-    .line 269
+    .line 271
     .end local v2    # "dataListSize":I
     :goto_2
     if-eqz v0, :cond_0
 
-    .line 270
+    .line 272
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     const/4 v5, 0x2
 
     invoke-static {v4, v5}, Lcom/android/server/clipboardex/ClipboardExService;->-wrap2(Lcom/android/server/clipboardex/ClipboardExService;I)V
 
-    .line 271
+    .line 273
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     const/4 v5, 0x2
@@ -314,17 +314,17 @@
     :cond_0
     monitor-exit p0
 
-    .line 245
+    .line 247
     return-void
 
-    .line 257
+    .line 259
     .local v0, "bRes":Z
     .local v1, "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     .restart local v2    # "dataListSize":I
     :cond_1
     sub-int v3, p1, v2
 
-    .line 258
+    .line 260
     .local v3, "ownerIndex":I
     :try_start_1
     const-string/jumbo v6, "ClipboardExService"
@@ -359,7 +359,7 @@
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 259
+    .line 261
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -370,7 +370,7 @@
 
     move-result-object v1
 
-    .line 260
+    .line 262
     .local v1, "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -389,10 +389,10 @@
     :cond_2
     move v4, v5
 
-    .line 262
+    .line 264
     goto :goto_1
 
-    .line 265
+    .line 267
     .end local v2    # "dataListSize":I
     .local v0, "bRes":Z
     .local v1, "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
@@ -407,7 +407,7 @@
 
     move-result-object v1
 
-    .line 266
+    .line 268
     .local v1, "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -419,7 +419,7 @@
 
     move-result v0
 
-    .line 267
+    .line 269
     .local v0, "bRes":Z
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -442,7 +442,7 @@
 
     goto :goto_2
 
-    .line 246
+    .line 248
     .end local v0    # "bRes":Z
     .end local v1    # "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     :catchall_0
@@ -457,7 +457,7 @@
     :cond_4
     move v4, v5
 
-    .line 267
+    .line 269
     goto :goto_3
 .end method
 
@@ -472,13 +472,13 @@
     .end annotation
 
     .prologue
-    .line 309
+    .line 311
     monitor-enter p0
 
-    .line 310
+    .line 312
     if-nez p2, :cond_0
 
-    .line 311
+    .line 313
     :try_start_0
     const-string/jumbo v5, "ClipboardExService"
 
@@ -490,10 +490,10 @@
 
     monitor-exit p0
 
-    .line 312
+    .line 314
     return-void
 
-    .line 315
+    .line 317
     :cond_0
     :try_start_1
     const-string/jumbo v5, "ClipboardExService"
@@ -520,10 +520,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 317
+    .line 319
     const/4 v4, 0x0
 
-    .line 320
+    .line 322
     .local v4, "resData":Lcom/samsung/android/content/clipboard/data/SemClipData;
     :try_start_2
     iget-object v5, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
@@ -534,7 +534,7 @@
 
     if-eqz v5, :cond_2
 
-    .line 321
+    .line 323
     iget-object v5, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v5}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -545,11 +545,11 @@
 
     move-result v0
 
-    .line 322
+    .line 324
     .local v0, "dataListSize":I
     if-ge p1, v0, :cond_1
 
-    .line 323
+    .line 325
     iget-object v5, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v5}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -560,7 +560,7 @@
 
     move-result-object v4
 
-    .line 333
+    .line 335
     .end local v0    # "dataListSize":I
     .local v4, "resData":Lcom/samsung/android/content/clipboard/data/SemClipData;
     :goto_0
@@ -574,16 +574,16 @@
     :goto_1
     monitor-exit p0
 
-    .line 308
+    .line 310
     return-void
 
-    .line 325
+    .line 327
     .restart local v0    # "dataListSize":I
     .local v4, "resData":Lcom/samsung/android/content/clipboard/data/SemClipData;
     :cond_1
     sub-int v3, p1, v0
 
-    .line 326
+    .line 328
     .local v3, "ownerIndex":I
     :try_start_3
     const-string/jumbo v5, "ClipboardExService"
@@ -618,7 +618,7 @@
 
     invoke-static {v5, v6}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 327
+    .line 329
     iget-object v5, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v5}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -632,7 +632,7 @@
     .local v4, "resData":Lcom/samsung/android/content/clipboard/data/SemClipData;
     goto :goto_0
 
-    .line 331
+    .line 333
     .end local v0    # "dataListSize":I
     .end local v3    # "ownerIndex":I
     .local v4, "resData":Lcom/samsung/android/content/clipboard/data/SemClipData;
@@ -654,12 +654,12 @@
     .local v4, "resData":Lcom/samsung/android/content/clipboard/data/SemClipData;
     goto :goto_0
 
-    .line 336
+    .line 338
     .end local v4    # "resData":Lcom/samsung/android/content/clipboard/data/SemClipData;
     :catch_0
     move-exception v2
 
-    .line 337
+    .line 339
     .local v2, "e":Ljava/lang/Exception;
     :try_start_4
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
@@ -668,7 +668,7 @@
 
     goto :goto_1
 
-    .line 309
+    .line 311
     .end local v2    # "e":Ljava/lang/Exception;
     :catchall_0
     move-exception v5
@@ -677,11 +677,11 @@
 
     throw v5
 
-    .line 334
+    .line 336
     :catch_1
     move-exception v1
 
-    .line 335
+    .line 337
     .local v1, "e":Landroid/os/RemoteException;
     :try_start_5
     invoke-virtual {v1}, Landroid/os/RemoteException;->printStackTrace()V

@@ -416,7 +416,7 @@
 
     .line 77
     .local v1, "item":Lcom/android/setupwizardlib/items/Item;
-    const v4, 0x7f0b18b0
+    const v4, 0x7f0b18af
 
     invoke-virtual {p0, v4}, Lcom/android/settings/fingerprint/FingerprintEnrollIntroduction;->getString(I)Ljava/lang/String;
 

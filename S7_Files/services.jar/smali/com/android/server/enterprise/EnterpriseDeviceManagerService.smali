@@ -15049,6 +15049,52 @@
     return-object v3
 .end method
 
+.method public getActiveAdminPackageName(I)Ljava/lang/String;
+    .locals 4
+    .param p1, "uid"    # I
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 4275
+    iget-object v1, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminMap:Ljava/util/HashMap;
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
+
+    .line 4276
+    .local v0, "admin":Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 4277
+    invoke-virtual {v0}, Lcom/samsung/android/knox/EnterpriseDeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    return-object v1
+
+    .line 4279
+    :cond_0
+    return-object v3
+.end method
+
 .method public getActiveAdmins(I)Ljava/util/List;
     .locals 9
     .param p1, "userHandle"    # I

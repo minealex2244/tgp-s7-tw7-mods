@@ -157,7 +157,7 @@
     invoke-direct {v6, p0}, Lcom/android/settings/utils/ManagedServiceSettings$ScaryWarningDialogFragment$2;-><init>(Lcom/android/settings/utils/ManagedServiceSettings$ScaryWarningDialogFragment;)V
 
     .line 169
-    const v7, 0x7f0b1299
+    const v7, 0x7f0b1298
 
     .line 159
     invoke-virtual {v5, v7, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

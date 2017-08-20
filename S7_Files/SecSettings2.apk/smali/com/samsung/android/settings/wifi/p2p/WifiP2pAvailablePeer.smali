@@ -496,7 +496,7 @@
 
     .line 169
     :cond_3
-    const v2, 0x7f0b0c67
+    const v2, 0x7f0b0c65
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/wifi/p2p/WifiP2pAvailablePeer;->setSummary(I)V
 

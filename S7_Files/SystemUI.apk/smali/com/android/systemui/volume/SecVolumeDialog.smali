@@ -3973,10 +3973,10 @@
     const/16 v0, 0xa
 
     .line 793
-    const v1, 0x7f020716
+    const v1, 0x7f02070f
 
     .line 794
-    const v2, 0x7f020716
+    const v2, 0x7f02070f
 
     .line 792
     invoke-direct {p0, v0, v1, v2, v8}, Lcom/android/systemui/volume/SecVolumeDialog;->addRow(IIIZ)V
@@ -3987,10 +3987,10 @@
     invoke-direct {p0, v0, v11, v10, v8}, Lcom/android/systemui/volume/SecVolumeDialog;->addRow(IIIZ)V
 
     .line 799
-    const v0, 0x7f02071a
+    const v0, 0x7f020713
 
     .line 800
-    const v1, 0x7f020718
+    const v1, 0x7f020711
 
     .line 799
     invoke-direct {p0, v12, v0, v1, v9}, Lcom/android/systemui/volume/SecVolumeDialog;->addRow_lockscreen(IIIZ)V
@@ -3998,10 +3998,10 @@
     .line 801
     const/16 v0, 0xb
 
-    const v1, 0x7f02071a
+    const v1, 0x7f020713
 
     .line 802
-    const v2, 0x7f020718
+    const v2, 0x7f020711
 
     .line 801
     invoke-direct {p0, v0, v1, v2, v9}, Lcom/android/systemui/volume/SecVolumeDialog;->addRow_lockscreen(IIIZ)V
@@ -4126,7 +4126,7 @@
     move-result-object v0
 
     .line 854
-    const v1, 0x7f0c0067
+    const v1, 0x7f0c0069
 
     .line 853
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
@@ -4202,10 +4202,10 @@
     const/16 v0, 0xa
 
     .line 822
-    const v1, 0x7f020716
+    const v1, 0x7f02070f
 
     .line 823
-    const v2, 0x7f020716
+    const v2, 0x7f02070f
 
     .line 821
     invoke-direct {p0, v0, v1, v2, v8}, Lcom/android/systemui/volume/SecVolumeDialog;->addRow(IIIZ)V
@@ -4216,10 +4216,10 @@
     invoke-direct {p0, v0, v11, v10, v8}, Lcom/android/systemui/volume/SecVolumeDialog;->addRow(IIIZ)V
 
     .line 828
-    const v0, 0x7f02071a
+    const v0, 0x7f020713
 
     .line 829
-    const v1, 0x7f020718
+    const v1, 0x7f020711
 
     .line 828
     invoke-direct {p0, v12, v0, v1, v9}, Lcom/android/systemui/volume/SecVolumeDialog;->addRow_lockscreen(IIIZ)V
@@ -4227,10 +4227,10 @@
     .line 830
     const/16 v0, 0xb
 
-    const v1, 0x7f02071a
+    const v1, 0x7f020713
 
     .line 831
-    const v2, 0x7f020718
+    const v2, 0x7f020711
 
     .line 830
     invoke-direct {p0, v0, v1, v2, v9}, Lcom/android/systemui/volume/SecVolumeDialog;->addRow_lockscreen(IIIZ)V
@@ -8762,7 +8762,7 @@
     .line 3485
     iget-object v1, p0, Lcom/android/systemui/volume/SecVolumeDialog;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0f0662
+    const v2, 0x7f0f0660
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -8827,7 +8827,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
     .line 3420
-    const v1, 0x7f0f04e1
+    const v1, 0x7f0f04df
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -8837,7 +8837,7 @@
     invoke-direct {v1, p0}, Lcom/android/systemui/volume/SecVolumeDialog$17;-><init>(Lcom/android/systemui/volume/SecVolumeDialog;)V
 
     .line 3422
-    const v2, 0x7f0f04e3
+    const v2, 0x7f0f04e1
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -9413,7 +9413,7 @@
     if-eqz v1, :cond_5
 
     .line 1600
-    const v1, 0x7f0f04c3
+    const v1, 0x7f0f04c1
 
     .line 1599
     :goto_2
@@ -9466,7 +9466,7 @@
 
     .line 1600
     :cond_5
-    const v1, 0x7f0f04c2
+    const v1, 0x7f0f04c0
 
     goto :goto_2
 .end method
@@ -11813,7 +11813,7 @@
 
     aput-object v37, v36, v38
 
-    const v37, 0x7f0f04d7
+    const v37, 0x7f0f04d5
 
     .line 1922
     move-object/from16 v0, v35
@@ -11935,7 +11935,7 @@
 
     move-result-object v34
 
-    const v35, 0x7f0f0662
+    const v35, 0x7f0f0660
 
     invoke-virtual/range {v34 .. v35}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -12784,7 +12784,7 @@
 
     aput-object v37, v36, v38
 
-    const v37, 0x7f0f04d8
+    const v37, 0x7f0f04d6
 
     .line 1926
     move-object/from16 v0, v35
@@ -12832,7 +12832,7 @@
 
     aput-object v37, v36, v38
 
-    const v37, 0x7f0f04d9
+    const v37, 0x7f0f04d7
 
     .line 1929
     move-object/from16 v0, v35
@@ -12906,7 +12906,7 @@
 
     aput-object v37, v36, v38
 
-    const v37, 0x7f0f04d7
+    const v37, 0x7f0f04d5
 
     .line 1935
     move-object/from16 v0, v35
@@ -12954,7 +12954,7 @@
 
     aput-object v37, v36, v38
 
-    const v37, 0x7f0f04d9
+    const v37, 0x7f0f04d7
 
     .line 1938
     move-object/from16 v0, v35
@@ -14457,7 +14457,7 @@
     .line 1491
     iget-object v1, p0, Lcom/android/systemui/volume/SecVolumeDialog;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0f04db
+    const v2, 0x7f0f04d9
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

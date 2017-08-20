@@ -3686,7 +3686,6 @@ Poznámka: Váš otisk prstu může představovat nižší úroveň zabezpečen�
     <string name="bluetooth_confirm_passkey_msg">Potvrzení kódu je %2$s pro spárování s %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Od&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Párovat s tímto zařízením?</string>
     <string name="bluetooth_display_passkey_pin_msg">Zadejte %1$s v %2$s pro spárování a klepněte na klávesu Return nebo Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Připojení k %1$s se nezdařilo. Připojte se z %2$s.</string>
     <string name="bluetooth_connecting_error_message">Nelze se připojit k %s.</string>
     <string name="bluetooth_preference_scan_title">Hledat</string>
     <string name="bluetooth_preference_paired_devices">Spárovaná zařízení</string>

@@ -3014,7 +3014,7 @@
 
     invoke-direct {v3, p0, p1}, Lcom/samsung/android/settings/display/FontPreview$11;-><init>(Lcom/samsung/android/settings/display/FontPreview;Ljava/lang/String;)V
 
-    const v4, 0x7f0b179b
+    const v4, 0x7f0b179a
 
     .line 1531
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -4883,7 +4883,7 @@
 
     .line 360
     .local v22, "point":Landroid/widget/ImageView;
-    const v3, 0x7f0b0917
+    const v3, 0x7f0b0915
 
     move-object/from16 v0, p0
 

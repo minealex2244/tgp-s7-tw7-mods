@@ -3856,7 +3856,7 @@
 
     move-result-object v22
 
-    const v23, 0x7f0b1394
+    const v23, 0x7f0b1393
 
     invoke-virtual/range {v22 .. v23}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -5715,7 +5715,7 @@
     .line 581
     iget-object v10, p0, Lcom/samsung/android/settings/deviceinfo/StatusVZW;->mRes:Landroid/content/res/Resources;
 
-    const v11, 0x7f0b13a2
+    const v11, 0x7f0b13a1
 
     invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -6613,7 +6613,7 @@
     .line 1930
     if-eqz p1, :cond_0
 
-    const v0, 0x7f0b0cb1
+    const v0, 0x7f0b0caf
 
     .line 1934
     :goto_0
@@ -6632,7 +6632,7 @@
 
     .line 1930
     :cond_0
-    const v0, 0x7f0b0cb2
+    const v0, 0x7f0b0cb0
 
     goto :goto_0
 

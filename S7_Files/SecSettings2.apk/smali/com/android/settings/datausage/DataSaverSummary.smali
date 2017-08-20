@@ -83,7 +83,7 @@
 
     .prologue
     .line 143
-    const v0, 0x7f0b18a0
+    const v0, 0x7f0b189f
 
     return v0
 .end method

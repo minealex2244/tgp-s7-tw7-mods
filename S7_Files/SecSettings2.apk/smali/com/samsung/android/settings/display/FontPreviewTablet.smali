@@ -1705,7 +1705,7 @@
     iput-object v5, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence;
 
     .line 281
-    const v5, 0x7f0b153c
+    const v5, 0x7f0b153b
 
     invoke-virtual {p0, v5}, Lcom/samsung/android/settings/display/FontPreviewTablet;->getString(I)Ljava/lang/String;
 
@@ -4064,7 +4064,7 @@
     .line 831
     iget-object v1, p0, Lcom/samsung/android/settings/display/FontPreviewTablet;->mSaveButton:Landroid/widget/Button;
 
-    const v2, 0x7f0b1839
+    const v2, 0x7f0b1838
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setText(I)V
 
@@ -5545,7 +5545,7 @@
 
     move-result-object v2
 
-    const v6, 0x7f0b13c3
+    const v6, 0x7f0b13c2
 
     invoke-virtual {v2, v6}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

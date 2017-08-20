@@ -141,7 +141,7 @@
     .line 137
     const/4 v0, 0x1
 
-    const v1, 0x7f0b1354
+    const v1, 0x7f0b1353
 
     invoke-interface {p1, v2, v0, v2, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -180,7 +180,7 @@
 
     .line 73
     .local v0, "airplaneModeDesc":Landroid/widget/TextView;
-    const v2, 0x7f0b09d5
+    const v2, 0x7f0b09d3
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
@@ -246,7 +246,7 @@
     move-result-object v1
 
     .line 147
-    const v3, 0x7f0b1354
+    const v3, 0x7f0b1353
 
     const/4 v6, 0x0
 
@@ -341,7 +341,7 @@
 
     .line 111
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
-    const v2, 0x7f0b09da
+    const v2, 0x7f0b09d8
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -356,7 +356,7 @@
     invoke-direct {v2, p0}, Lcom/samsung/android/settings/multisound/MultiSoundSettings$1;-><init>(Lcom/samsung/android/settings/multisound/MultiSoundSettings;)V
 
     .line 113
-    const v3, 0x7f0b1354
+    const v3, 0x7f0b1353
 
     invoke-virtual {v0, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

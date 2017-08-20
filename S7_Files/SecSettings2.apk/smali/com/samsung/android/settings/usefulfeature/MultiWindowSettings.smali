@@ -335,7 +335,7 @@
 
     .line 216
     .local v4, "point":Landroid/widget/ImageView;
-    const v6, 0x7f0b0917
+    const v6, 0x7f0b0915
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/usefulfeature/MultiWindowSettings;->getString(I)Ljava/lang/String;
 
@@ -760,9 +760,9 @@
     .param p2, "objValue"    # Ljava/lang/Object;
 
     .prologue
-    const v6, 0x7f0b19d9
+    const v6, 0x7f0b19d8
 
-    const v5, 0x7f0b19d8
+    const v5, 0x7f0b19d7
 
     const/4 v4, 0x1
 
@@ -979,13 +979,13 @@
     .locals 10
 
     .prologue
-    const v4, 0x7f0b19d8
+    const v4, 0x7f0b19d7
 
     const/4 v9, 0x1
 
     const/4 v8, 0x0
 
-    const v5, 0x7f0b19d9
+    const v5, 0x7f0b19d8
 
     const/4 v7, 0x0
 

@@ -151,7 +151,7 @@
     new-array v2, v6, [Ljava/lang/CharSequence;
 
     .line 257
-    const v3, 0x7f0b0cb3
+    const v3, 0x7f0b0cb1
 
     invoke-virtual {p0, v3}, Lcom/samsung/android/settings/SecurityPolicySettings;->getString(I)Ljava/lang/String;
 
@@ -160,7 +160,7 @@
     aput-object v3, v2, v4
 
     .line 258
-    const v3, 0x7f0b0abe
+    const v3, 0x7f0b0abc
 
     invoke-virtual {p0, v3}, Lcom/samsung/android/settings/SecurityPolicySettings;->getString(I)Ljava/lang/String;
 
@@ -820,7 +820,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0cb3
+    const v4, 0x7f0b0cb1
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -936,7 +936,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0abe
+    const v4, 0x7f0b0abc
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

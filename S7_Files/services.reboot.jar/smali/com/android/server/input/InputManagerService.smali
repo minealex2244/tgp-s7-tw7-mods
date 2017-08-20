@@ -9495,11 +9495,7 @@
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 2435
-    iget-wide v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:J
-
-    invoke-static {v0, v1, p1}, Lcom/android/server/input/InputManagerService;->nativeAddOrRemoveVirtualGamePadDevice(JZ)I
-
-    move-result v0
+    const/4 v0, -0x1
 
     return v0
 .end method

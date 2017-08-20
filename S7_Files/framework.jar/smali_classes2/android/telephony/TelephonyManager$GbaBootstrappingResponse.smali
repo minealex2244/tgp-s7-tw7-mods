@@ -29,12 +29,12 @@
     .param p2, "bundle"    # Landroid/os/Bundle;
 
     .prologue
-    .line 7953
+    .line 7952
     iput-object p1, p0, Landroid/telephony/TelephonyManager$GbaBootstrappingResponse;->this$0:Landroid/telephony/TelephonyManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7954
+    .line 7953
     const-string/jumbo v0, "res"
 
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->getByteArray(Ljava/lang/String;)[B
@@ -43,7 +43,7 @@
 
     iput-object v0, p0, Landroid/telephony/TelephonyManager$GbaBootstrappingResponse;->res:[B
 
-    .line 7955
+    .line 7954
     const-string/jumbo v0, "auts"
 
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->getByteArray(Ljava/lang/String;)[B
@@ -52,6 +52,6 @@
 
     iput-object v0, p0, Landroid/telephony/TelephonyManager$GbaBootstrappingResponse;->auts:[B
 
-    .line 7953
+    .line 7952
     return-void
 .end method

@@ -3546,7 +3546,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s-ৰ সৈতে যোৰা দিবলৈ পাছকী %2$s বুলি নিশ্চিত কৰক৷</string>
     <string name="bluetooth_incoming_pairing_msg">পৰা&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>এই ডিভাইচৰ সৈতে যোৰ কৰিবনে?</string>
     <string name="bluetooth_display_passkey_pin_msg">যোৰা লগাবলৈ %2$s-ত %1$s প্ৰৱিষ্ট কৰক, তাৰপিছত ঘুৰি আহক বা “প্ৰৱিষ্ট কৰক”ত টিপক৷</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s-ত সংযোগ কৰিব নোৱাৰে। %2$s-ৰ পৰা সংযোগ কৰিবলৈ চেষ্টা কৰক।</string>
     <string name="bluetooth_connecting_error_message">%s লৈ সম্পৰ্ক স্থাপন কৰিবলৈ অক্ষম৷</string>
     <string name="bluetooth_preference_scan_title">স্কেন কৰক</string>
     <string name="bluetooth_preference_paired_devices">যোৰা কৰি থোৱা ডিভাইচসমূহ</string>
@@ -3947,7 +3946,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">"আপোনাৰ সকলো ব্যক্তিগত তথ্য আৰু ডাউনলোড কৰা এপ্লিকেশ্বনসমূহ মুচি পেলোৱা হ'ব আৰু পুনৰুদ্ধাৰ কৰিব পৰা নাযাব৷"</string>
     <string name="master_clear_final_button_text">সকলো বিলোপ কৰক</string>
     <string name="master_clear_not_available">"এটা ফেক্টৰী ডাটা পুনঃছেট সম্পাদন কৰিবলৈ এই অতিথি প্ৰ'ফাইলৰ অনুমতি নাই৷"</string>
-    <string name="master_clear_progress_title">পুনঃছেট</string>
+    <string name="master_clear_progress_title">পুনঃছেট কৰক</string>
     <string name="master_clear_progress_text">অনুগ্ৰহ কৰি অপেক্ষা কৰক</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB টিথাৰিং</string>

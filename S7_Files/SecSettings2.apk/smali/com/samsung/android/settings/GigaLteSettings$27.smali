@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/settings/GigaLteSettings;
 
     .prologue
-    .line 639
+    .line 583
     iput-object p1, p0, Lcom/samsung/android/settings/GigaLteSettings$27;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .param p2, "which"    # I
 
     .prologue
-    .line 641
+    .line 585
     iget-object v0, p0, Lcom/samsung/android/settings/GigaLteSettings$27;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
 
     invoke-static {v0}, Lcom/samsung/android/settings/GigaLteSettings;->-get6(Lcom/samsung/android/settings/GigaLteSettings;)Lcom/android/settings/widget/SwitchBar;
@@ -52,28 +52,8 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/SwitchBar;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
 
-    .line 642
-    iget-object v0, p0, Lcom/samsung/android/settings/GigaLteSettings$27;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
-
-    invoke-virtual {v0}, Lcom/samsung/android/settings/GigaLteSettings;->showProgressDialog()V
-
-    .line 643
-    iget-object v0, p0, Lcom/samsung/android/settings/GigaLteSettings$27;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
-
-    iget-object v1, p0, Lcom/samsung/android/settings/GigaLteSettings$27;->this$0:Lcom/samsung/android/settings/GigaLteSettings;
-
-    invoke-static {v1}, Lcom/samsung/android/settings/GigaLteSettings;->-get6(Lcom/samsung/android/settings/GigaLteSettings;)Lcom/android/settings/widget/SwitchBar;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/settings/widget/SwitchBar;->isChecked()Z
-
-    move-result v1
-
-    invoke-static {v0, v1}, Lcom/samsung/android/settings/GigaLteSettings;->-wrap5(Lcom/samsung/android/settings/GigaLteSettings;Z)V
-
-    .line 640
+    .line 584
     return-void
 .end method

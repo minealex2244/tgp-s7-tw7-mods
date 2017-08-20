@@ -1789,7 +1789,7 @@
 
     .prologue
     .line 1010
-    const v0, 0x7f0b18a4
+    const v0, 0x7f0b18a3
 
     return v0
 .end method
@@ -1818,7 +1818,7 @@
     .param p2, "ringtoneType"    # I
 
     .prologue
-    const v6, 0x7f0b09ea
+    const v6, 0x7f0b09e8
 
     const/4 v5, 0x0
 
@@ -2804,7 +2804,7 @@
 
     aput-object v1, v10, v11
 
-    const v11, 0x7f0b0984
+    const v11, 0x7f0b0982
 
     invoke-virtual {p0, v11, v10}, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2898,7 +2898,7 @@
 
     aput-object v1, v10, v11
 
-    const v11, 0x7f0b0984
+    const v11, 0x7f0b0982
 
     invoke-virtual {p0, v11, v10}, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2975,7 +2975,7 @@
 
     aput-object v1, v10, v11
 
-    const v11, 0x7f0b0984
+    const v11, 0x7f0b0982
 
     invoke-virtual {p0, v11, v10}, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2997,7 +2997,7 @@
     .line 478
     iget-object v9, p0, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->mEmail:Landroid/preference/Preference;
 
-    const v10, 0x7f0b0985
+    const v10, 0x7f0b0983
 
     invoke-virtual {v9, v10}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -3133,7 +3133,7 @@
     .line 536
     iget-object v9, p0, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->mRingtonePreference_DS:Landroid/preference/Preference;
 
-    const v10, 0x7f0b0972
+    const v10, 0x7f0b0970
 
     invoke-virtual {v9, v10}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -3255,7 +3255,7 @@
     .line 559
     iget-object v9, p0, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->mRingtoneCategory:Landroid/preference/PreferenceCategory;
 
-    const v10, 0x7f0b0997
+    const v10, 0x7f0b0995
 
     invoke-virtual {v9, v10}, Landroid/preference/PreferenceCategory;->setTitle(I)V
 
@@ -3508,7 +3508,7 @@
     .line 891
     const-string/jumbo v2, "extra_prefs_set_back_text"
 
-    const v3, 0x7f0b1757
+    const v3, 0x7f0b1756
 
     invoke-virtual {p0, v3}, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->getString(I)Ljava/lang/String;
 
@@ -4203,7 +4203,7 @@
 
     iget-object v4, v0, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b1317
+    const v6, 0x7f0b1316
 
     invoke-virtual {v4, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -5236,7 +5236,7 @@
 
     iget-object v4, v0, Lcom/samsung/android/settings/notification/NotificationsSubSettings;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b1317
+    const v6, 0x7f0b1316
 
     invoke-virtual {v4, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

@@ -500,7 +500,7 @@
     :cond_2
     iget-object v5, p0, Lcom/samsung/android/settings/notification/VolumeLimiterSettings;->mHeaderText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b083d
+    const v6, 0x7f0b083b
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -1424,7 +1424,7 @@
     invoke-direct {v4, v5}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 284
-    const v5, 0x7f0b14b7
+    const v5, 0x7f0b14b6
 
     .line 283
     invoke-virtual {v4, v5}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;

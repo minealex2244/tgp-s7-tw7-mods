@@ -3688,7 +3688,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">Підтвердьте пароль %2$s, щоб утворити пару з %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Від&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Утворити пару із цим пристроєм?</string>
     <string name="bluetooth_display_passkey_pin_msg">Введіть %1$s на %2$s, щоб утворити пару, а потім натисніть «Повернутися» або «Ввести».</string>
-    <string name="bluetooth_HID_connecting_error_message">Неможливо підключитися до %1$s. Спробуйте підключитися за допомогою %2$s.</string>
     <string name="bluetooth_connecting_error_message">Неможливо підключитися до %s.</string>
     <string name="bluetooth_preference_scan_title">Сканувати</string>
     <string name="bluetooth_preference_paired_devices">З’єднані пристрої</string>

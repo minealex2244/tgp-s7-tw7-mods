@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PersonaManagerService;
 
     .prologue
-    .line 2801
+    .line 2808
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageInstallObserver2$Stub;-><init>()V
@@ -52,13 +52,13 @@
     .param p4, "extras"    # Landroid/os/Bundle;
 
     .prologue
-    .line 2806
+    .line 2813
     if-nez p1, :cond_0
 
-    .line 2807
+    .line 2814
     const-string/jumbo p1, ""
 
-    .line 2809
+    .line 2816
     :cond_0
     const-string/jumbo v0, "PersonaManagerService"
 
@@ -92,16 +92,16 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2810
+    .line 2817
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get16(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;
+    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get17(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;
 
     move-result-object v1
 
     monitor-enter v1
 
-    .line 2811
+    .line 2818
     :try_start_0
     const-string/jumbo v0, "PersonaManagerService"
 
@@ -109,15 +109,15 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2812
+    .line 2819
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {v0, p2}, Lcom/android/server/pm/PersonaManagerService;->-set1(Lcom/android/server/pm/PersonaManagerService;I)I
 
-    .line 2813
+    .line 2820
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get16(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;
+    invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-get17(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;
 
     move-result-object v0
 
@@ -127,10 +127,10 @@
 
     monitor-exit v1
 
-    .line 2804
+    .line 2811
     return-void
 
-    .line 2810
+    .line 2817
     :catchall_0
     move-exception v0
 
@@ -144,6 +144,6 @@
     .param p1, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 2817
+    .line 2824
     return-void
 .end method

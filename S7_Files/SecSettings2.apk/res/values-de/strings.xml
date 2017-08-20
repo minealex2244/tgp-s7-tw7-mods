@@ -3687,7 +3687,6 @@ Hinweis: Ihr Fingerabdruck ist möglicherweise weniger sicher als ein sicheres M
     <string name="bluetooth_confirm_passkey_msg">Passkey %2$s bestätigen und mit %1$s koppeln.</string>
     <string name="bluetooth_incoming_pairing_msg">Von&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Mit diesem Gerät koppeln?</string>
     <string name="bluetooth_display_passkey_pin_msg">Zum Koppeln %1$s auf %2$s eingeben, anschließend auf „Enter“ oder „Return“ tippen.</string>
-    <string name="bluetooth_HID_connecting_error_message">Verbindung zu %1$s nicht möglich. Versuchen Sie, über %2$s zu verbinden.</string>
     <string name="bluetooth_connecting_error_message">Verbindung zu %s kann nicht hergestellt werden</string>
     <string name="bluetooth_preference_scan_title">Scannen</string>
     <string name="bluetooth_preference_paired_devices">Gekoppelte Geräte</string>

@@ -2868,7 +2868,7 @@
     .line 344
     iget-object v1, p0, Lcom/android/settings/deviceinfo/Status;->mRes:Landroid/content/res/Resources;
 
-    const v2, 0x7f0b13a2
+    const v2, 0x7f0b13a1
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3360,7 +3360,7 @@
     .line 1099
     if-eqz p1, :cond_0
 
-    const v0, 0x7f0b0cb1
+    const v0, 0x7f0b0caf
 
     .line 1103
     :goto_0
@@ -3379,7 +3379,7 @@
 
     .line 1099
     :cond_0
-    const v0, 0x7f0b0cb2
+    const v0, 0x7f0b0cb0
 
     goto :goto_0
 

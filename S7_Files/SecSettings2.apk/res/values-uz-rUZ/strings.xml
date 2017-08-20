@@ -3685,7 +3685,6 @@ Eslatma: Barmoq izingiz qiyin chizma yoki PIN-kodga nisbatan yaxshiroq himoya qi
     <string name="bluetooth_confirm_passkey_msg">%2$s- bu tasdiqlash kirish kaliti, %1$s bilan bog‘lanish uchun.</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>&lt;br/>dan&lt;br/>Ushbu qurilma bilan bog‘lanilsinmi?</string>
     <string name="bluetooth_display_passkey_pin_msg">Bog‘lanish uchun %2$sda %1$sni kiriting, so‘ngra Qaytish yoki Kiritishga teging.</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s’ga ulanib bo‘lmaydi. %2$s’dan ulanishga qayta urinib ko‘ring.</string>
     <string name="bluetooth_connecting_error_message">%sga ulanib bo‘lmaydi.</string>
     <string name="bluetooth_preference_scan_title">Qidirish</string>
     <string name="bluetooth_preference_paired_devices">Bog‘langan qurilmalar</string>

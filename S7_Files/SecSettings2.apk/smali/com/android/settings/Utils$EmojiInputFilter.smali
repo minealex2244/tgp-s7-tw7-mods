@@ -27,13 +27,13 @@
     .param p1, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 7084
+    .line 7050
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7085
+    .line 7051
     iput-object p1, p0, Lcom/android/settings/Utils$EmojiInputFilter;->mContext:Landroid/content/Context;
 
-    .line 7084
+    .line 7050
     return-void
 .end method
 
@@ -49,7 +49,7 @@
     .param p6, "dend"    # I
 
     .prologue
-    .line 7091
+    .line 7057
     iget-object v0, p0, Lcom/android/settings/Utils$EmojiInputFilter;->mContext:Landroid/content/Context;
 
     invoke-static {p1, v0, p4, p5, p6}, Lcom/android/settings/Utils;->-wrap0(Ljava/lang/CharSequence;Landroid/content/Context;Landroid/text/Spanned;II)Ljava/lang/CharSequence;

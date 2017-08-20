@@ -658,7 +658,7 @@
     .line 161
     iget-object v4, p0, Lcom/samsung/android/settings/KnoxConfirmLockHelper;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b0eba
+    const v5, 0x7f0b0eb8
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -686,7 +686,7 @@
     :cond_8
     iget-object v4, p0, Lcom/samsung/android/settings/KnoxConfirmLockHelper;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b0eb6
+    const v5, 0x7f0b0eb4
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -741,7 +741,7 @@
     .line 170
     iget-object v4, p0, Lcom/samsung/android/settings/KnoxConfirmLockHelper;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b0ebc
+    const v5, 0x7f0b0eba
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -782,7 +782,7 @@
     :cond_a
     iget-object v4, p0, Lcom/samsung/android/settings/KnoxConfirmLockHelper;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b0eb8
+    const v5, 0x7f0b0eb6
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -925,7 +925,7 @@
     .line 196
     iget-object v0, p0, Lcom/samsung/android/settings/KnoxConfirmLockHelper;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0b0e47
+    const v1, 0x7f0b0e45
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -953,7 +953,7 @@
     :cond_3
     iget-object v0, p0, Lcom/samsung/android/settings/KnoxConfirmLockHelper;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0b0e48
+    const v1, 0x7f0b0e46
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

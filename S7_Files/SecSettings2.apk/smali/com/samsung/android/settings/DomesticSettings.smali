@@ -144,7 +144,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0b19d8
+    const v1, 0x7f0b19d7
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setSummary(I)V
@@ -155,7 +155,7 @@
 
     .line 65
     :cond_1
-    const v1, 0x7f0b19d9
+    const v1, 0x7f0b19d8
 
     goto :goto_0
 .end method

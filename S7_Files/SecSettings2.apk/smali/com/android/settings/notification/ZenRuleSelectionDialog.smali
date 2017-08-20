@@ -237,7 +237,7 @@
     invoke-direct {v1, p1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 78
-    const v2, 0x7f0b1995
+    const v2, 0x7f0b1994
 
     .line 77
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -493,7 +493,7 @@
     .line 151
     iget-object v2, p0, Lcom/android/settings/notification/ZenRuleSelectionDialog;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b199d
+    const v3, 0x7f0b199c
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -574,7 +574,7 @@
     .line 137
     iget-object v2, p0, Lcom/android/settings/notification/ZenRuleSelectionDialog;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b199b
+    const v3, 0x7f0b199a
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

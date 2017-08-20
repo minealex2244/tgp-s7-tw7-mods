@@ -330,6 +330,22 @@
     <protected-broadcast android:name="com.samsung.action.HOTSPOT_EXEC_COMMAND"/>
     <protected-broadcast android:name="android.net.wifi.hs20.TEST_START_OSU_PROCESS_NOSIGMA"/>
     <protected-broadcast android:name="android.net.wifi.hs20.TEST_TRIGGER_INSTALL_FILE"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.EAP_TYPE_FOUND"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.INSTALL_CRED"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.INSTALL_CRED_BROWSER"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.TEST_CLEAR_DB"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.TEST_CONNECT_WITH_STATIC_IP"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.TEST_GEN_CRED_CONF_FILE"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.TEST_START_OSU_PROCESS"/>
+    <protected-broadcast android:name="android.net.wifi.hs20.TEST_TRIGGER_POLICY_UPDATE"/>
+    <protected-broadcast android:name="android.net.wifi.HS20_DISABLED_COMPLETE_BY_CREDERROR_ACTION"/>
+    <protected-broadcast android:name="android.net.wifi.HS20_EAP_TYPE_FOUND"/>
+    <protected-broadcast android:name="android.net.wifi.HS20_OSU_SELECTED"/>
+    <protected-broadcast android:name="android.net.wifi.HS20_REMEDIATION_REQUEST"/>
+    <protected-broadcast android:name="android.net.wifi.HS20_SEC_CLOSE_BROWSER"/>
+    <protected-broadcast android:name="android.net.wifi.HS20_SEC_LAUNCH_OPERTOR_URL"/>
+    <protected-broadcast android:name="android.net.wifi.HS20_SEC_LAUNCH_SP_URL"/>
+    <protected-broadcast android:name="android.net.wifi.HS20_STATE_CHANGE"/>
     <protected-broadcast android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
     <protected-broadcast android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"/>
     <protected-broadcast android:name="android.net.wifi.WIFI_CREDENTIAL_CHANGED"/>
@@ -1504,6 +1520,7 @@
     <permission android:name="android.permission.sec.BLUETOOTH_SECUREMODE_INTERNAL" android:permissionGroup="com.sec.enterprise.permission-group.mdm" android:protectionLevel="system|signature"/>
     <permission android:name="android.permission.BLUETOOTH_MAP" android:protectionLevel="signature"/>
     <permission android:name="android.permission.BLUETOOTH_STACK" android:protectionLevel="signature"/>
+    <permission android:name="com.samsung.bluetooth.permission.BLUETOOTH_DEVICE" android:protectionLevel="signature"/>
     <permission android:description="@string/permdesc_nfc" android:label="@string/permlab_nfc" android:name="android.permission.NFC" android:protectionLevel="normal"/>
     <permission android:name="android.permission.CONNECTIVITY_INTERNAL" android:protectionLevel="system|signature"/>
     <permission android:name="android.permission.PACKET_KEEPALIVE_OFFLOAD" android:protectionLevel="system|signature"/>
@@ -1804,7 +1821,7 @@
     <permission android:name="android.permission.QUERY_DO_NOT_ASK_CREDENTIALS_ON_BOOT" android:protectionLevel="signature"/>
     <permission android:name="android.permission.KILL_UID" android:protectionLevel="installer|signature"/>
     <permission android:name="android.permission.LOCAL_MAC_ADDRESS" android:protectionLevel="system|signature"/>
-    <permission android:name="android.permission.PEERS_MAC_ADDRESS" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.PEERS_MAC_ADDRESS" android:protectionLevel="setup|signature"/>
     <permission android:name="android.permission.DISPATCH_NFC_MESSAGE" android:protectionLevel="system|signature"/>
     <permission android:name="com.samsung.android.permission.EXTRACT_SMARTCLIP_DATA" android:protectionLevel="system|signature"/>
     <permission android:name="com.sec.android.permission.VOIP_INTERFACE" android:protectionLevel="signature"/>

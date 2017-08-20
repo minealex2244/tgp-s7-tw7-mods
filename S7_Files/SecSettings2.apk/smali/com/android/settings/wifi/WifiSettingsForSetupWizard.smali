@@ -97,7 +97,7 @@
     .line 202
     .restart local v2    # "macAddressTextView":Landroid/widget/TextView;
     :cond_2
-    const v3, 0x7f0b13a2
+    const v3, 0x7f0b13a1
 
     invoke-virtual {p0, v3}, Lcom/android/settings/wifi/WifiSettingsForSetupWizard;->getString(I)Ljava/lang/String;
 

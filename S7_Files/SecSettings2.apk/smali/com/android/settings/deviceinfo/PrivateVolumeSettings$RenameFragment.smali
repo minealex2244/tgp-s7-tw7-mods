@@ -176,7 +176,7 @@
     invoke-virtual {v4, v9}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 850
-    const v9, 0x7f0b13e5
+    const v9, 0x7f0b13e4
 
     invoke-virtual {v0, v9}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 

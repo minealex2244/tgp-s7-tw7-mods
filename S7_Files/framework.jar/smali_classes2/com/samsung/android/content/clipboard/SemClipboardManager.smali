@@ -278,10 +278,10 @@
     .param p5, "callingId"    # I
 
     .prologue
-    .line 1006
+    .line 1017
     const/4 v2, 0x1
 
-    .line 1008
+    .line 1019
     .local v2, "result":I
     :try_start_0
     const-string/jumbo v3, "SemClipboardManager"
@@ -326,62 +326,62 @@
 
     invoke-static {v3, v4}, Landroid/sec/clipboard/util/Log;->secV(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1009
+    .line 1020
     if-eqz p1, :cond_5
 
-    .line 1010
+    .line 1021
     invoke-direct {p0, p1}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->makeFileDescriptor(Lcom/samsung/android/content/clipboard/data/SemClipData;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 1011
+    .line 1022
     const-string/jumbo v3, "SemClipboardManager"
 
     const-string/jumbo v4, "failed making file descriptor!"
 
     invoke-static {v3, v4}, Landroid/sec/clipboard/util/Log;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1012
+    .line 1023
     invoke-direct {p0, p2, v2}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->sendResult(ZI)V
 
-    .line 1013
+    .line 1024
     const/4 v3, 0x1
 
     return v3
 
-    .line 1016
+    .line 1027
     :cond_0
     invoke-virtual {p1}, Lcom/samsung/android/content/clipboard/data/SemClipData;->getClipType()I
 
     move-result v1
 
-    .line 1017
+    .line 1028
     .local v1, "formatId":I
     if-eqz p4, :cond_2
 
-    .line 1018
+    .line 1029
     iget-object v3, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mContext:Landroid/content/Context;
 
     if-nez v3, :cond_1
 
-    .line 1019
+    .line 1030
     const/4 v2, 0x1
 
-    .line 1032
+    .line 1043
     :goto_0
     invoke-direct {p0, p2, v2}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->sendResult(ZI)V
 
-    .line 1033
+    .line 1044
     invoke-virtual {p1}, Lcom/samsung/android/content/clipboard/data/SemClipData;->closeParcelFileDescriptor()V
 
-    .line 1040
+    .line 1051
     .end local v1    # "formatId":I
     :goto_1
     return v2
 
-    .line 1021
+    .line 1032
     .restart local v1    # "formatId":I
     :cond_1
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
@@ -400,21 +400,21 @@
 
     goto :goto_0
 
-    .line 1023
+    .line 1034
     :cond_2
     if-eqz p3, :cond_4
 
-    .line 1024
+    .line 1035
     iget-object v3, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mContext:Landroid/content/Context;
 
     if-nez v3, :cond_3
 
-    .line 1025
+    .line 1036
     const/4 v2, 0x1
 
     goto :goto_0
 
-    .line 1027
+    .line 1038
     :cond_3
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
@@ -432,7 +432,7 @@
 
     goto :goto_0
 
-    .line 1030
+    .line 1041
     :cond_4
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
@@ -444,7 +444,7 @@
 
     goto :goto_0
 
-    .line 1035
+    .line 1046
     .end local v1    # "formatId":I
     :cond_5
     const-string/jumbo v3, "SemClipboardManager"
@@ -457,11 +457,11 @@
 
     goto :goto_1
 
-    .line 1037
+    .line 1048
     :catch_0
     move-exception v0
 
-    .line 1038
+    .line 1049
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
@@ -485,7 +485,7 @@
 
     const/4 v3, 0x1
 
-    .line 808
+    .line 819
     const-string/jumbo v0, "addData"
 
     invoke-direct {p0, v0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->isEnabled(Ljava/lang/String;)Z
@@ -494,14 +494,14 @@
 
     if-nez v0, :cond_0
 
-    .line 809
+    .line 820
     return v3
 
-    .line 812
+    .line 823
     :cond_0
     iput-object p1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mContext:Landroid/content/Context;
 
-    .line 814
+    .line 825
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
@@ -510,7 +510,7 @@
 
     if-nez p2, :cond_2
 
-    .line 815
+    .line 826
     :cond_1
     const-string/jumbo v0, "SemClipboardManager"
 
@@ -534,10 +534,10 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 816
+    .line 827
     return v3
 
-    .line 819
+    .line 830
     :cond_2
     invoke-virtual {p2}, Lcom/samsung/android/content/clipboard/data/SemClipData;->getClipType()I
 
@@ -545,14 +545,14 @@
 
     if-ne v0, v2, :cond_5
 
-    .line 820
+    .line 831
     invoke-virtual {p2, v2}, Lcom/samsung/android/content/clipboard/data/SemClipData;->getAlternateClipData(I)Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     move-result-object v6
 
     check-cast v6, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
 
-    .line 821
+    .line 832
     .local v6, "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     if-eqz v6, :cond_4
 
@@ -572,24 +572,24 @@
 
     if-lt v0, v4, :cond_4
 
-    .line 822
+    .line 833
     iput-boolean v3, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mIsMaximumSize:Z
 
-    .line 837
+    .line 848
     .end local v6    # "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     :goto_0
     iget-object v0, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mSetDataHandler:Landroid/os/Handler;
 
     if-nez v0, :cond_3
 
-    .line 838
+    .line 849
     new-instance v0, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;
 
     invoke-direct {v0, p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager$3;-><init>(Lcom/samsung/android/content/clipboard/SemClipboardManager;)V
 
     iput-object v0, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mSetDataHandler:Landroid/os/Handler;
 
-    .line 884
+    .line 895
     :cond_3
     invoke-virtual {p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getPersonaId()I
 
@@ -611,14 +611,14 @@
 
     return v0
 
-    .line 824
+    .line 835
     .restart local v6    # "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     :cond_4
     iput-boolean v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mIsMaximumSize:Z
 
     goto :goto_0
 
-    .line 826
+    .line 837
     .end local v6    # "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     :cond_5
     invoke-virtual {p2}, Lcom/samsung/android/content/clipboard/data/SemClipData;->getClipType()I
@@ -627,14 +627,14 @@
 
     if-ne v0, v3, :cond_7
 
-    .line 827
+    .line 838
     invoke-virtual {p2, v3}, Lcom/samsung/android/content/clipboard/data/SemClipData;->getAlternateClipData(I)Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     move-result-object v7
 
     check-cast v7, Lcom/samsung/android/content/clipboard/data/SemTextClipData;
 
-    .line 828
+    .line 839
     .local v7, "textData":Lcom/samsung/android/content/clipboard/data/SemTextClipData;
     if-eqz v7, :cond_6
 
@@ -654,18 +654,18 @@
 
     if-lt v0, v4, :cond_6
 
-    .line 829
+    .line 840
     iput-boolean v3, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mIsMaximumSize:Z
 
     goto :goto_0
 
-    .line 831
+    .line 842
     :cond_6
     iput-boolean v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mIsMaximumSize:Z
 
     goto :goto_0
 
-    .line 834
+    .line 845
     .end local v7    # "textData":Lcom/samsung/android/content/clipboard/data/SemTextClipData;
     :cond_7
     iput-boolean v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mIsMaximumSize:Z
@@ -770,14 +770,14 @@
     .param p1, "func"    # Ljava/lang/String;
 
     .prologue
-    .line 1056
+    .line 1067
     invoke-virtual {p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->isEnabled()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 1057
+    .line 1068
     const-string/jumbo v0, "SemClipboardManager"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -800,12 +800,12 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1058
+    .line 1069
     const/4 v0, 0x0
 
     return v0
 
-    .line 1060
+    .line 1071
     :cond_0
     const/4 v0, 0x1
 
@@ -819,12 +819,12 @@
     .prologue
     const/4 v13, 0x0
 
-    .line 888
+    .line 899
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v3
 
-    .line 889
+    .line 900
     .local v3, "fh":Landroid/sec/clipboard/util/FileHelper;
     invoke-virtual {p1}, Lcom/samsung/android/content/clipboard/data/SemClipData;->getClipType()I
 
@@ -832,7 +832,7 @@
 
     sparse-switch v10, :sswitch_data_0
 
-    .line 1002
+    .line 1013
     :cond_0
     :goto_0
     const/4 v10, 0x1
@@ -842,16 +842,16 @@
     :sswitch_0
     move-object v8, p1
 
-    .line 891
+    .line 902
     check-cast v8, Lcom/samsung/android/content/clipboard/data/SemImageClipData;
 
-    .line 892
+    .line 903
     .local v8, "target":Lcom/samsung/android/content/clipboard/data/SemImageClipData;
     invoke-virtual {v8}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->getBitmapPath()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 893
+    .line 904
     .local v4, "imgPath":Ljava/lang/String;
     if-eqz v4, :cond_2
 
@@ -861,12 +861,12 @@
 
     if-lez v10, :cond_2
 
-    .line 894
+    .line 905
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 895
+    .line 906
     .local v2, "f":Ljava/io/File;
     invoke-virtual {v3, v2}, Landroid/sec/clipboard/util/FileHelper;->checkFile(Ljava/io/File;)Z
 
@@ -874,10 +874,10 @@
 
     if-eqz v10, :cond_1
 
-    .line 896
+    .line 907
     const/4 v5, 0x0
 
-    .line 898
+    .line 909
     .local v5, "pfd":Landroid/os/ParcelFileDescriptor;
     const/high16 v10, 0x38000000
 
@@ -886,13 +886,13 @@
 
     move-result-object v5
 
-    .line 899
+    .line 910
     .local v5, "pfd":Landroid/os/ParcelFileDescriptor;
     invoke-virtual {v8, v5}, Lcom/samsung/android/content/clipboard/data/SemClipData;->setParcelFileDescriptor(Landroid/os/ParcelFileDescriptor;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 912
+    .line 923
     .end local v2    # "f":Ljava/io/File;
     .end local v5    # "pfd":Landroid/os/ParcelFileDescriptor;
     :goto_1
@@ -902,12 +902,12 @@
 
     if-eqz v10, :cond_4
 
-    .line 913
+    .line 924
     invoke-virtual {v8}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->getExtraDataPath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 914
+    .line 925
     .local v1, "extraPath":Ljava/lang/String;
     if-eqz v1, :cond_0
 
@@ -917,12 +917,12 @@
 
     if-lez v10, :cond_0
 
-    .line 915
+    .line 926
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 916
+    .line 927
     .restart local v2    # "f":Ljava/io/File;
     invoke-virtual {v3, v2}, Landroid/sec/clipboard/util/FileHelper;->checkFile(Ljava/io/File;)Z
 
@@ -930,10 +930,10 @@
 
     if-eqz v10, :cond_3
 
-    .line 917
+    .line 928
     const/4 v5, 0x0
 
-    .line 919
+    .line 930
     .local v5, "pfd":Landroid/os/ParcelFileDescriptor;
     const/high16 v10, 0x38000000
 
@@ -942,7 +942,7 @@
 
     move-result-object v5
 
-    .line 920
+    .line 931
     .local v5, "pfd":Landroid/os/ParcelFileDescriptor;
     invoke-virtual {v8, v5}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->setExtraParcelFileDescriptor(Landroid/os/ParcelFileDescriptor;)V
     :try_end_1
@@ -950,32 +950,32 @@
 
     goto :goto_0
 
-    .line 921
+    .line 932
     .end local v5    # "pfd":Landroid/os/ParcelFileDescriptor;
     :catch_0
     move-exception v0
 
-    .line 922
+    .line 933
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 923
+    .line 934
     return v13
 
-    .line 900
+    .line 911
     .end local v0    # "e":Ljava/lang/Exception;
     .end local v1    # "extraPath":Ljava/lang/String;
     :catch_1
     move-exception v0
 
-    .line 901
+    .line 912
     .restart local v0    # "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 902
+    .line 913
     return v13
 
-    .line 905
+    .line 916
     .end local v0    # "e":Ljava/lang/Exception;
     :cond_1
     const-string/jumbo v10, "SemClipboardManager"
@@ -1004,10 +1004,10 @@
 
     invoke-static {v10, v11}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 906
+    .line 917
     return v13
 
-    .line 909
+    .line 920
     .end local v2    # "f":Ljava/io/File;
     :cond_2
     const-string/jumbo v10, "SemClipboardManager"
@@ -1018,7 +1018,7 @@
 
     goto :goto_1
 
-    .line 926
+    .line 937
     .restart local v1    # "extraPath":Ljava/lang/String;
     .restart local v2    # "f":Ljava/io/File;
     :cond_3
@@ -1048,10 +1048,10 @@
 
     invoke-static {v10, v11}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 927
+    .line 938
     return v13
 
-    .line 931
+    .line 942
     .end local v1    # "extraPath":Ljava/lang/String;
     .end local v2    # "f":Ljava/io/File;
     :cond_4
@@ -1068,16 +1068,16 @@
     :sswitch_1
     move-object v7, p1
 
-    .line 937
+    .line 948
     check-cast v7, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
 
-    .line 938
+    .line 949
     .local v7, "target":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     invoke-virtual {v7}, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;->getThumbnailImagePath()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 940
+    .line 951
     .restart local v4    # "imgPath":Ljava/lang/String;
     if-eqz v4, :cond_5
 
@@ -1089,22 +1089,22 @@
 
     if-gtz v10, :cond_6
 
-    .line 941
+    .line 952
     :cond_5
     invoke-virtual {v3, v7}, Landroid/sec/clipboard/util/FileHelper;->setFirstImagePathFromHtmlData(Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;)Z
 
     move-result v6
 
-    .line 942
+    .line 953
     .local v6, "result":Z
     if-eqz v6, :cond_6
 
-    .line 943
+    .line 954
     invoke-virtual {v7}, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;->getThumbnailImagePath()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 947
+    .line 958
     .end local v6    # "result":Z
     :cond_6
     if-eqz v4, :cond_8
@@ -1115,12 +1115,12 @@
 
     if-lez v10, :cond_8
 
-    .line 948
+    .line 959
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 949
+    .line 960
     .restart local v2    # "f":Ljava/io/File;
     invoke-virtual {v3, v2}, Landroid/sec/clipboard/util/FileHelper;->checkFile(Ljava/io/File;)Z
 
@@ -1128,10 +1128,10 @@
 
     if-eqz v10, :cond_7
 
-    .line 950
+    .line 961
     const/4 v5, 0x0
 
-    .line 952
+    .line 963
     .local v5, "pfd":Landroid/os/ParcelFileDescriptor;
     const/high16 v10, 0x38000000
 
@@ -1140,7 +1140,7 @@
 
     move-result-object v5
 
-    .line 953
+    .line 964
     .local v5, "pfd":Landroid/os/ParcelFileDescriptor;
     invoke-virtual {v7, v5}, Lcom/samsung/android/content/clipboard/data/SemClipData;->setParcelFileDescriptor(Landroid/os/ParcelFileDescriptor;)V
     :try_end_2
@@ -1148,19 +1148,19 @@
 
     goto/16 :goto_0
 
-    .line 954
+    .line 965
     .end local v5    # "pfd":Landroid/os/ParcelFileDescriptor;
     :catch_2
     move-exception v0
 
-    .line 955
+    .line 966
     .restart local v0    # "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 956
+    .line 967
     return v13
 
-    .line 959
+    .line 970
     .end local v0    # "e":Ljava/lang/Exception;
     :cond_7
     const-string/jumbo v10, "SemClipboardManager"
@@ -1189,10 +1189,10 @@
 
     invoke-static {v10, v11}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 960
+    .line 971
     return v13
 
-    .line 963
+    .line 974
     .end local v2    # "f":Ljava/io/File;
     :cond_8
     const-string/jumbo v10, "SemClipboardManager"
@@ -1208,16 +1208,16 @@
     :sswitch_2
     move-object v9, p1
 
-    .line 969
+    .line 980
     check-cast v9, Lcom/samsung/android/content/clipboard/data/SemUriClipData;
 
-    .line 970
+    .line 981
     .local v9, "target":Lcom/samsung/android/content/clipboard/data/SemUriClipData;
     invoke-virtual {v9}, Lcom/samsung/android/content/clipboard/data/SemUriClipData;->getThumbnailPath()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 972
+    .line 983
     .restart local v4    # "imgPath":Ljava/lang/String;
     if-eqz v4, :cond_9
 
@@ -1229,22 +1229,22 @@
 
     if-gtz v10, :cond_a
 
-    .line 973
+    .line 984
     :cond_9
     invoke-virtual {v3, v9}, Landroid/sec/clipboard/util/FileHelper;->setThumbnailImagePathFromUriData(Lcom/samsung/android/content/clipboard/data/SemUriClipData;)Z
 
     move-result v6
 
-    .line 974
+    .line 985
     .restart local v6    # "result":Z
     if-eqz v6, :cond_a
 
-    .line 975
+    .line 986
     invoke-virtual {v9}, Lcom/samsung/android/content/clipboard/data/SemUriClipData;->getThumbnailPath()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 979
+    .line 990
     .end local v6    # "result":Z
     :cond_a
     if-eqz v4, :cond_c
@@ -1255,12 +1255,12 @@
 
     if-lez v10, :cond_c
 
-    .line 980
+    .line 991
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 981
+    .line 992
     .restart local v2    # "f":Ljava/io/File;
     invoke-virtual {v3, v2}, Landroid/sec/clipboard/util/FileHelper;->checkFile(Ljava/io/File;)Z
 
@@ -1268,10 +1268,10 @@
 
     if-eqz v10, :cond_b
 
-    .line 982
+    .line 993
     const/4 v5, 0x0
 
-    .line 984
+    .line 995
     .local v5, "pfd":Landroid/os/ParcelFileDescriptor;
     const/high16 v10, 0x38000000
 
@@ -1280,7 +1280,7 @@
 
     move-result-object v5
 
-    .line 985
+    .line 996
     .local v5, "pfd":Landroid/os/ParcelFileDescriptor;
     invoke-virtual {v9, v5}, Lcom/samsung/android/content/clipboard/data/SemClipData;->setParcelFileDescriptor(Landroid/os/ParcelFileDescriptor;)V
     :try_end_3
@@ -1288,19 +1288,19 @@
 
     goto/16 :goto_0
 
-    .line 986
+    .line 997
     .end local v5    # "pfd":Landroid/os/ParcelFileDescriptor;
     :catch_3
     move-exception v0
 
-    .line 987
+    .line 998
     .restart local v0    # "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 988
+    .line 999
     return v13
 
-    .line 991
+    .line 1002
     .end local v0    # "e":Ljava/lang/Exception;
     :cond_b
     const-string/jumbo v10, "SemClipboardManager"
@@ -1329,10 +1329,10 @@
 
     invoke-static {v10, v11}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 992
+    .line 1003
     return v13
 
-    .line 995
+    .line 1006
     .end local v2    # "f":Ljava/io/File;
     :cond_c
     const-string/jumbo v10, "SemClipboardManager"
@@ -1343,7 +1343,7 @@
 
     goto/16 :goto_0
 
-    .line 889
+    .line 900
     nop
 
     :sswitch_data_0
@@ -1359,35 +1359,35 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 1064
+    .line 1075
     iget v5, p1, Landroid/os/Message;->what:I
 
     packed-switch v5, :pswitch_data_0
 
-    .line 1063
+    .line 1074
     :cond_0
     :pswitch_0
     return-void
 
-    .line 1070
+    .line 1081
     :pswitch_1
     const/4 v1, 0x0
 
-    .line 1071
+    .line 1082
     .local v1, "bundle":Landroid/os/Bundle;
     const/4 v2, 0x0
 
-    .line 1072
+    .line 1083
     .local v2, "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
     move-result-object v1
 
-    .line 1073
+    .line 1084
     .local v1, "bundle":Landroid/os/Bundle;
     if-eqz v1, :cond_1
 
-    .line 1074
+    .line 1085
     const-string/jumbo v5, "data"
 
     invoke-virtual {v1, v5}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
@@ -1397,13 +1397,13 @@
     .end local v2    # "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     check-cast v2, Lcom/samsung/android/content/clipboard/data/SemClipData;
 
-    .line 1077
+    .line 1088
     :cond_1
     iget-object v6, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mOnClipboardEventServiceListeners:Ljava/util/ArrayList;
 
     monitor-enter v6
 
-    .line 1078
+    .line 1089
     :try_start_0
     iget-object v5, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mOnClipboardEventServiceListeners:Ljava/util/ArrayList;
 
@@ -1413,16 +1413,16 @@
 
     move-result v0
 
-    .line 1079
+    .line 1090
     .local v0, "N":I
     if-gtz v0, :cond_2
 
     monitor-exit v6
 
-    .line 1080
+    .line 1091
     return-void
 
-    .line 1082
+    .line 1093
     :cond_2
     :try_start_1
     iget-object v5, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mOnClipboardEventServiceListeners:Ljava/util/ArrayList;
@@ -1436,7 +1436,7 @@
     .local v4, "listeners":[Ljava/lang/Object;
     monitor-exit v6
 
-    .line 1085
+    .line 1096
     const/4 v3, 0x0
 
     .local v3, "i":I
@@ -1445,7 +1445,7 @@
 
     if-ge v3, v5, :cond_0
 
-    .line 1086
+    .line 1097
     aget-object v5, v4, v3
 
     check-cast v5, Lcom/samsung/android/content/clipboard/SemClipboardEventListener;
@@ -1454,12 +1454,12 @@
 
     invoke-interface {v5, v6, v2}, Lcom/samsung/android/content/clipboard/SemClipboardEventListener;->onClipboardUpdated(ILcom/samsung/android/content/clipboard/data/SemClipData;)V
 
-    .line 1085
+    .line 1096
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 1077
+    .line 1088
     .end local v0    # "N":I
     .end local v3    # "i":I
     .end local v4    # "listeners":[Ljava/lang/Object;
@@ -1470,7 +1470,7 @@
 
     throw v5
 
-    .line 1064
+    .line 1075
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -1489,35 +1489,35 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1044
+    .line 1055
     if-nez p1, :cond_0
 
-    .line 1045
+    .line 1056
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mSetDataHandler:Landroid/os/Handler;
 
     invoke-virtual {v1}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 1046
+    .line 1057
     .local v0, "msg":Landroid/os/Message;
     if-nez p2, :cond_1
 
-    .line 1047
+    .line 1058
     iput v2, v0, Landroid/os/Message;->what:I
 
-    .line 1051
+    .line 1062
     :goto_0
     iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mSetDataHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 1043
+    .line 1054
     .end local v0    # "msg":Landroid/os/Message;
     :cond_0
     return-void
 
-    .line 1049
+    .line 1060
     .restart local v0    # "msg":Landroid/os/Message;
     :cond_1
     const/4 v1, 0x1
@@ -1785,14 +1785,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1163
+    .line 1174
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1164
+    .line 1175
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
@@ -1803,7 +1803,7 @@
 
     return-object v0
 
-    .line 1166
+    .line 1177
     :cond_0
     const-string/jumbo v0, "SemClipboardManager"
 
@@ -1811,7 +1811,7 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1168
+    .line 1179
     return-object v2
 .end method
 
@@ -1836,14 +1836,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1148
+    .line 1159
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1149
+    .line 1160
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
@@ -1854,7 +1854,7 @@
 
     return-object v0
 
-    .line 1151
+    .line 1162
     :cond_0
     const-string/jumbo v0, "SemClipboardManager"
 
@@ -1862,7 +1862,7 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1152
+    .line 1163
     return-object v2
 .end method
 
@@ -2205,14 +2205,47 @@
     return v1
 .end method
 
+.method public isClipboardShareAllowed()Z
+    .locals 3
+
+    .prologue
+    .line 812
+    :try_start_0
+    invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
+
+    move-result-object v1
+
+    invoke-virtual {p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getPersonaId()I
+
+    move-result v2
+
+    invoke-interface {v1, v2}, Landroid/sec/clipboard/IClipboardService;->isClipboardShareAllowed(I)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v1
+
+    return v1
+
+    .line 813
+    :catch_0
+    move-exception v0
+
+    .line 814
+    .local v0, "e":Ljava/lang/Exception;
+    const/4 v1, 0x1
+
+    return v1
+.end method
+
 .method public isEnabled()Z
     .locals 5
 
     .prologue
-    .line 1101
+    .line 1112
     const/4 v2, 0x0
 
-    .line 1104
+    .line 1115
     .local v2, "isEnabled":Z
     :try_start_0
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
@@ -2221,19 +2254,19 @@
 
     if-eqz v3, :cond_0
 
-    .line 1105
+    .line 1116
     sget-object v3, Lcom/samsung/android/content/clipboard/SemClipboardManager;->sService:Landroid/sec/clipboard/IClipboardService;
 
     invoke-interface {v3}, Landroid/sec/clipboard/IClipboardService;->isEnabled()Z
 
     move-result v2
 
-    .line 1115
+    .line 1126
     .end local v2    # "isEnabled":Z
     :goto_0
     return v2
 
-    .line 1107
+    .line 1118
     .restart local v2    # "isEnabled":Z
     :cond_0
     const-string/jumbo v3, "SemClipboardManager"
@@ -2247,22 +2280,22 @@
 
     goto :goto_0
 
-    .line 1109
+    .line 1120
     :catch_0
     move-exception v0
 
-    .line 1110
+    .line 1121
     .local v0, "e":Landroid/os/RemoteException;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_0
 
-    .line 1111
+    .line 1122
     .end local v0    # "e":Landroid/os/RemoteException;
     :catch_1
     move-exception v1
 
-    .line 1112
+    .line 1123
     .local v1, "ex":Ljava/lang/Exception;
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
@@ -2367,21 +2400,21 @@
     .end annotation
 
     .prologue
-    .line 1137
+    .line 1148
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1138
+    .line 1149
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
 
     invoke-interface {v0, p1}, Landroid/sec/clipboard/IClipboardService;->pasteClip(Ljava/lang/String;)V
 
-    .line 1136
+    .line 1147
     :cond_0
     return-void
 .end method
@@ -2599,14 +2632,14 @@
     .end annotation
 
     .prologue
-    .line 1124
+    .line 1135
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1125
+    .line 1136
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
@@ -2617,7 +2650,7 @@
 
     return v0
 
-    .line 1127
+    .line 1138
     :cond_0
     const/4 v0, 0x0
 
@@ -2634,14 +2667,14 @@
     .end annotation
 
     .prologue
-    .line 1179
+    .line 1190
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1180
+    .line 1191
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
@@ -2652,7 +2685,7 @@
 
     return v0
 
-    .line 1182
+    .line 1193
     :cond_0
     const-string/jumbo v0, "SemClipboardManager"
 
@@ -2660,7 +2693,7 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1183
+    .line 1194
     const/4 v0, 0x0
 
     return v0
@@ -2973,26 +3006,15 @@
 
     move-result v1
 
-    if-nez v1, :cond_1
+    if-eqz v1, :cond_1
 
-    .line 750
-    iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mContext:Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->isClipboardShareAllowed()Z
 
-    const v2, 0x1040612
+    move-result v1
 
-    const/4 v3, 0x0
-
-    invoke-static {v1, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
-
-    .line 751
-    return-void
+    if-eqz v1, :cond_1
 
     .line 754
-    :cond_1
     invoke-direct {p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->startClipboardUIServiceService()V
 
     .line 756
@@ -3009,12 +3031,32 @@
     const-string/jumbo v2, "showDialog - Fail~ Service is null."
 
     invoke-static {v1, v2}, Landroid/sec/clipboard/util/Log;->secW(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 758
     return-void
 
+    .line 750
+    :cond_1
+    iget-object v1, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mContext:Landroid/content/Context;
+
+    const v2, 0x1040612
+
+    const/4 v3, 0x0
+
+    invoke-static {v1, v2, v3}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    .line 751
+    return-void
+
     .line 761
     :cond_2
+    :try_start_1
     invoke-virtual {p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->isFiltered()Z
 
     move-result v1
@@ -3080,8 +3122,8 @@
     move-result-object v2
 
     invoke-static {v1, v2}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 
@@ -3126,24 +3168,15 @@
 
     move-result v2
 
-    if-nez v2, :cond_1
+    if-eqz v2, :cond_1
 
-    .line 709
-    iget-object v2, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mContext:Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->isClipboardShareAllowed()Z
 
-    const v3, 0x1040612
+    move-result v2
 
-    invoke-static {v2, v3, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
-
-    .line 710
-    return v5
+    if-eqz v2, :cond_1
 
     .line 713
-    :cond_1
     const/4 v0, 0x1
 
     .line 714
@@ -3187,12 +3220,32 @@
     const-string/jumbo v3, "showDialog - Fail~ Service is null."
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secW(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 720
     return v5
 
+    .line 709
+    .end local v0    # "Result":Z
+    :cond_1
+    iget-object v2, p0, Lcom/samsung/android/content/clipboard/SemClipboardManager;->mContext:Landroid/content/Context;
+
+    const v3, 0x1040612
+
+    invoke-static {v2, v3, v5}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/widget/Toast;->show()V
+
+    .line 710
+    return v5
+
     .line 724
+    .restart local v0    # "Result":Z
     :cond_2
+    :try_start_1
     invoke-virtual {p0}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->isFiltered()Z
 
     move-result v2
@@ -3304,8 +3357,8 @@
     move-result-object v3
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     goto :goto_0
 
@@ -3489,14 +3542,14 @@
     .end annotation
 
     .prologue
-    .line 1195
+    .line 1206
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 1196
+    .line 1207
     invoke-static {}, Lcom/samsung/android/content/clipboard/SemClipboardManager;->getService()Landroid/sec/clipboard/IClipboardService;
 
     move-result-object v0
@@ -3507,7 +3560,7 @@
 
     return v0
 
-    .line 1198
+    .line 1209
     :cond_0
     const-string/jumbo v0, "SemClipboardManager"
 
@@ -3515,7 +3568,7 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secE(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1199
+    .line 1210
     const/4 v0, 0x0
 
     return v0

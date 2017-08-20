@@ -34,7 +34,7 @@
     .param p3, "val$callback"    # Landroid/hardware/SensorManager$DynamicSensorCallback;
 
     .prologue
-    .line 456
+    .line 467
     .local p2, "val$addedList":Ljava/util/List;, "Ljava/util/List<Landroid/hardware/Sensor;>;"
     .local p4, "val$removedList":Ljava/util/List;, "Ljava/util/List<Landroid/hardware/Sensor;>;"
     iput-object p1, p0, Landroid/hardware/SystemSensorManager$1;->this$0:Landroid/hardware/SystemSensorManager;
@@ -56,7 +56,7 @@
     .locals 3
 
     .prologue
-    .line 459
+    .line 470
     iget-object v2, p0, Landroid/hardware/SystemSensorManager$1;->val$addedList:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -77,7 +77,7 @@
 
     check-cast v0, Landroid/hardware/Sensor;
 
-    .line 460
+    .line 471
     .local v0, "s":Landroid/hardware/Sensor;
     iget-object v2, p0, Landroid/hardware/SystemSensorManager$1;->val$callback:Landroid/hardware/SensorManager$DynamicSensorCallback;
 
@@ -85,7 +85,7 @@
 
     goto :goto_0
 
-    .line 462
+    .line 473
     .end local v0    # "s":Landroid/hardware/Sensor;
     :cond_0
     iget-object v2, p0, Landroid/hardware/SystemSensorManager$1;->val$removedList:Ljava/util/List;
@@ -107,7 +107,7 @@
 
     check-cast v0, Landroid/hardware/Sensor;
 
-    .line 463
+    .line 474
     .restart local v0    # "s":Landroid/hardware/Sensor;
     iget-object v2, p0, Landroid/hardware/SystemSensorManager$1;->val$callback:Landroid/hardware/SensorManager$DynamicSensorCallback;
 
@@ -115,7 +115,7 @@
 
     goto :goto_1
 
-    .line 458
+    .line 469
     .end local v0    # "s":Landroid/hardware/Sensor;
     :cond_1
     return-void

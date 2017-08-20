@@ -3685,7 +3685,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s-এর সাথে জোড় বাঁধতে করতে সুনিশ্চিত করুন যে পাস-কি %2$s।</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>&lt;br/>&lt;br/> থেকে এই ডিভাইসটির সঙ্গে জোড় গঠন করবেন?</string>
     <string name="bluetooth_display_passkey_pin_msg">জোড় গঠন করতে %2$s-তে %1$s যান, তারপর ‘রিটার্ন বা এন্টার’ ট্যাপ করুন।</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s-এর সাথে সংযোগ করা যাবে না৷ %2$s থেকে সংযোগ করার চেষ্টা করুন৷</string>
     <string name="bluetooth_connecting_error_message">%s-এ সংযোগ করতে অপারগ।</string>
     <string name="bluetooth_preference_scan_title">স্ক্যান</string>
     <string name="bluetooth_preference_paired_devices">জোড় বাঁধা ডিভাইসগুলো</string>

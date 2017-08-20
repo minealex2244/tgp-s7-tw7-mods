@@ -428,7 +428,7 @@
     .line 95
     iget-object v5, p0, Lcom/android/settings/wfd/WfdPickerDialog;->mWfdTitle:Landroid/widget/TextView;
 
-    const v6, 0x7f0b0e32
+    const v6, 0x7f0b0e30
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -525,7 +525,7 @@
     :cond_0
     iget-object v5, p0, Lcom/android/settings/wfd/WfdPickerDialog;->mWfdTitle:Landroid/widget/TextView;
 
-    const v6, 0x7f0b0e31
+    const v6, 0x7f0b0e2f
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 

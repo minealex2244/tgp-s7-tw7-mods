@@ -695,7 +695,7 @@
 
     .line 262
     .local v1, "helper":Lcom/android/settings/ChooseLockSettingsHelper;
-    const v0, 0x7f0b074c
+    const v0, 0x7f0b074a
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/settings/iris/IrisLockSettings;->getString(I)Ljava/lang/String;
 
@@ -846,7 +846,7 @@
 
     const/4 v4, 0x0
 
-    const v5, 0x7f0b074c
+    const v5, 0x7f0b074a
 
     move-object v6, v3
 
@@ -942,7 +942,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0b078a
+    const v12, 0x7f0b0788
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -992,7 +992,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0b078e
+    const v12, 0x7f0b078c
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1053,7 +1053,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0b078c
+    const v12, 0x7f0b078a
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1073,7 +1073,7 @@
 
     move-result-object v12
 
-    const v13, 0x7f0b078d
+    const v13, 0x7f0b078b
 
     invoke-virtual {v12, v13}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1105,7 +1105,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0b078f
+    const v12, 0x7f0b078d
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1126,7 +1126,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0b078b
+    const v12, 0x7f0b0789
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1617,7 +1617,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0789
+    const v4, 0x7f0b0787
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1723,7 +1723,7 @@
 
     .line 773
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
-    const v4, 0x7f0b0778
+    const v4, 0x7f0b0776
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1735,7 +1735,7 @@
 
     invoke-direct {v4, p0}, Lcom/samsung/android/settings/iris/IrisLockSettings$5;-><init>(Lcom/samsung/android/settings/iris/IrisLockSettings;)V
 
-    const v5, 0x7f0b14dd
+    const v5, 0x7f0b14dc    # 1.84871E38f
 
     invoke-virtual {v0, v5, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1786,7 +1786,7 @@
     .local v3, "timeMsg":Ljava/lang/StringBuilder;
     iget-object v4, p0, Lcom/samsung/android/settings/iris/IrisLockSettings;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b0774
+    const v5, 0x7f0b0772
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1802,7 +1802,7 @@
     .line 758
     iget-object v4, p0, Lcom/samsung/android/settings/iris/IrisLockSettings;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b0775
+    const v5, 0x7f0b0773
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1828,7 +1828,7 @@
     .local v2, "proxiMsg":Ljava/lang/StringBuilder;
     iget-object v4, p0, Lcom/samsung/android/settings/iris/IrisLockSettings;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b0776
+    const v5, 0x7f0b0774
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1844,7 +1844,7 @@
     .line 765
     iget-object v4, p0, Lcom/samsung/android/settings/iris/IrisLockSettings;->mContext:Landroid/content/Context;
 
-    const v5, 0x7f0b0777
+    const v5, 0x7f0b0775
 
     invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2776,7 +2776,7 @@
     .line 663
     iget-object v2, p0, Lcom/samsung/android/settings/iris/IrisLockSettings;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b0787
+    const v3, 0x7f0b0785
 
     invoke-virtual {p0, v3}, Lcom/samsung/android/settings/iris/IrisLockSettings;->getString(I)Ljava/lang/String;
 

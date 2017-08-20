@@ -39,16 +39,16 @@
 
     const/4 v1, 0x0
 
-    .line 5197
+    .line 5216
     sput-boolean v1, Landroid/media/AudioManager$AudioLog;->isSecLogEnable:Z
 
-    .line 5198
+    .line 5217
     sput-boolean v1, Landroid/media/AudioManager$AudioLog;->isAudioCoreLogEnable:Z
 
-    .line 5207
+    .line 5226
     sput v4, Landroid/media/AudioManager$AudioLog;->debugLevel:I
 
-    .line 5211
+    .line 5230
     const-string/jumbo v1, "1"
 
     const-string/jumbo v2, "persist.log.seclevel"
@@ -65,7 +65,7 @@
 
     sput-boolean v1, Landroid/media/AudioManager$AudioLog;->isSecLogEnable:Z
 
-    .line 5215
+    .line 5234
     :try_start_0
     const-string/jumbo v1, "ro.debug_level"
 
@@ -91,17 +91,17 @@
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5196
+    .line 5215
     .local v0, "ne":Ljava/lang/NumberFormatException;
     :goto_0
     return-void
 
-    .line 5216
+    .line 5235
     .end local v0    # "ne":Ljava/lang/NumberFormatException;
     :catch_0
     move-exception v0
 
-    .line 5217
+    .line 5236
     .restart local v0    # "ne":Ljava/lang/NumberFormatException;
     sput v4, Landroid/media/AudioManager$AudioLog;->debugLevel:I
 
@@ -112,7 +112,7 @@
     .locals 0
 
     .prologue
-    .line 5196
+    .line 5215
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -128,24 +128,24 @@
 
     const/4 v1, 0x0
 
-    .line 5222
+    .line 5241
     sget-boolean v2, Landroid/media/AudioManager$AudioLog;->isAudioCoreLogEnable:Z
 
     if-eqz v2, :cond_0
 
-    .line 5223
+    .line 5242
     return v0
 
-    .line 5225
+    .line 5244
     :cond_0
     if-nez p1, :cond_1
 
-    .line 5226
+    .line 5245
     sget-boolean v0, Landroid/media/AudioManager$AudioLog;->isSecLogEnable:Z
 
     return v0
 
-    .line 5227
+    .line 5246
     :cond_1
     const/16 v2, 0x4f4c
 
@@ -155,7 +155,7 @@
 
     if-ne p1, v2, :cond_3
 
-    .line 5228
+    .line 5247
     :cond_2
     sget v2, Landroid/media/AudioManager$AudioLog;->debugLevel:I
 
@@ -164,18 +164,18 @@
     :goto_0
     return v0
 
-    .line 5227
+    .line 5246
     :cond_3
     const/16 v2, 0x4948
 
     if-eq p1, v2, :cond_2
 
-    .line 5229
+    .line 5248
     return v1
 
     :cond_4
     move v0, v1
 
-    .line 5228
+    .line 5247
     goto :goto_0
 .end method

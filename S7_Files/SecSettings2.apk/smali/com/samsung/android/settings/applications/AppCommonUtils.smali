@@ -38,7 +38,7 @@
 
     .line 165
     :cond_0
-    const v0, 0x7f0b1aa3
+    const v0, 0x7f0b1aa2
 
     return v0
 .end method
@@ -67,7 +67,7 @@
 
     .line 173
     :cond_0
-    const v0, 0x7f0b1aad    # 1.849012E38f
+    const v0, 0x7f0b1aac
 
     return v0
 .end method

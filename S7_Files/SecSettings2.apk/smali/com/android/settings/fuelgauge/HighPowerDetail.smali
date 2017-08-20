@@ -69,7 +69,7 @@
 
     if-eqz v1, :cond_1
 
-    const v1, 0x7f0b1a54
+    const v1, 0x7f0b1a53
 
     :goto_0
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -86,13 +86,13 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f0b1a52
+    const v1, 0x7f0b1a51
 
     goto :goto_0
 
     .line 148
     :cond_2
-    const v1, 0x7f0b1a53
+    const v1, 0x7f0b1a52
 
     goto :goto_0
 .end method
@@ -588,7 +588,7 @@
     if-eqz p2, :cond_1
 
     .line 68
-    const v1, 0x7f0b1a91
+    const v1, 0x7f0b1a90
 
     .line 67
     :goto_0
@@ -606,7 +606,7 @@
     if-eqz p2, :cond_2
 
     .line 70
-    const v1, 0x7f0b1a93
+    const v1, 0x7f0b1a92
 
     .line 69
     :goto_1
@@ -648,13 +648,13 @@
     .line 68
     .restart local p1    # "view":Landroid/view/View;
     :cond_1
-    const v1, 0x7f0b1a92
+    const v1, 0x7f0b1a91
 
     goto :goto_0
 
     .line 70
     :cond_2
-    const v1, 0x7f0b1a94
+    const v1, 0x7f0b1a93
 
     goto :goto_1
 .end method

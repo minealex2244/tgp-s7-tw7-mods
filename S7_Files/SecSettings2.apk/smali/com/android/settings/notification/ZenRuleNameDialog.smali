@@ -132,7 +132,7 @@
 
     if-eqz v1, :cond_2
 
-    const v1, 0x7f0b1993
+    const v1, 0x7f0b1992
 
     .line 48
     :goto_1
@@ -149,7 +149,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/settings/notification/ZenRuleNameDialog$1;-><init>(Lcom/android/settings/notification/ZenRuleNameDialog;)V
 
-    const v3, 0x7f0b0fac
+    const v3, 0x7f0b0faa
 
     .line 48
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -183,7 +183,7 @@
     .line 49
     .restart local v0    # "v":Landroid/view/View;
     :cond_2
-    const v1, 0x7f0b1990
+    const v1, 0x7f0b198f
 
     goto :goto_1
 .end method

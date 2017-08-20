@@ -36,7 +36,7 @@
     .param p4, "val$intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 1464
+    .line 1462
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13;->val$keyguardShowing:Z
@@ -58,7 +58,7 @@
     .prologue
     const/4 v4, 0x1
 
-    .line 1467
+    .line 1465
     new-instance v0, Lcom/android/systemui/statusbar/BaseStatusBar$13$1;
 
     iget-boolean v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13;->val$keyguardShowing:Z
@@ -71,13 +71,13 @@
 
     invoke-static {v0}, Landroid/os/AsyncTask;->execute(Ljava/lang/Runnable;)V
 
-    .line 1494
+    .line 1492
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$13;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1, v4}, Lcom/android/systemui/statusbar/BaseStatusBar;->animateCollapsePanels(IZ)V
 
-    .line 1495
+    .line 1493
     return v4
 .end method

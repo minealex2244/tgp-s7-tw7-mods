@@ -2314,9 +2314,9 @@
     .locals 10
 
     .prologue
-    const v9, 0x7f0f05d2
+    const v9, 0x7f0f05d0
 
-    const v8, 0x7f0f05d1
+    const v8, 0x7f0f05cf
 
     const v5, 0x7f020437
 
@@ -2410,10 +2410,10 @@
 
     const v3, 0x7f020435
 
-    const v4, 0x7f0f05cc
+    const v4, 0x7f0f05ca
 
     .line 631
-    const v5, 0x7f0f05cd
+    const v5, 0x7f0f05cb
 
     .line 630
     invoke-virtual {v2, v3, v4, v5, v6}, Lcom/android/systemui/recents/views/AbstractHelpPopup;->addContent(IIII)V
@@ -2506,7 +2506,7 @@
     const v3, 0x7f020436
 
     .line 637
-    const v4, 0x7f0f05d0
+    const v4, 0x7f0f05ce
 
     .line 636
     invoke-virtual {v2, v3, v8, v8, v4}, Lcom/android/systemui/recents/views/AbstractHelpPopup;->addContent(IIII)V
@@ -2525,10 +2525,10 @@
     .line 639
     iget-object v2, p0, Lcom/android/systemui/recents/RecentsActivity;->mHelpPopup:Lcom/android/systemui/recents/views/AbstractHelpPopup;
 
-    const v3, 0x7f0f05d3
+    const v3, 0x7f0f05d1
 
     .line 640
-    const v4, 0x7f0f05d3
+    const v4, 0x7f0f05d1
 
     .line 639
     invoke-virtual {v2, v5, v3, v4, v6}, Lcom/android/systemui/recents/views/AbstractHelpPopup;->addContent(IIII)V

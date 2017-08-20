@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/systemui/recents/views/RecentsSlidingView;
 
     .prologue
-    .line 102
+    .line 100
     iput-object p1, p0, Lcom/android/systemui/recents/views/RecentsSlidingView$1;->this$0:Lcom/android/systemui/recents/views/RecentsSlidingView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,11 +42,11 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 105
+    .line 103
     iget-object v0, p0, Lcom/android/systemui/recents/views/RecentsSlidingView$1;->this$0:Lcom/android/systemui/recents/views/RecentsSlidingView;
 
     invoke-virtual {v0}, Lcom/android/systemui/recents/views/RecentsSlidingView;->toggleScrollVertical()V
 
-    .line 104
+    .line 102
     return-void
 .end method

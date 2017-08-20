@@ -58,7 +58,7 @@
 
     .line 96
     :pswitch_1
-    const v7, 0x7f0b19c9
+    const v7, 0x7f0b19c8
 
     .line 97
     const v3, 0x7f13001a
@@ -67,14 +67,14 @@
     const v2, 0x7f13001b
 
     .line 99
-    const v4, 0x7f0b19ca
+    const v4, 0x7f0b19c9
 
     .line 100
     goto :goto_0
 
     .line 102
     :pswitch_2
-    const v7, 0x7f0b19cb
+    const v7, 0x7f0b19ca
 
     .line 103
     goto :goto_0

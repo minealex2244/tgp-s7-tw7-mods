@@ -3688,7 +3688,6 @@ Nota: la huella digital puede ser menos segura que un patrón complejo o un PIN.
     <string name="bluetooth_confirm_passkey_msg">Confirmar contraseña %2$s para vincular con %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">De:&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>¿Conectar con este dispositivo?</string>
     <string name="bluetooth_display_passkey_pin_msg">Introducir %1$s en %2$s para vincular y pulse Atrás o Aceptar.</string>
-    <string name="bluetooth_HID_connecting_error_message">No es posible conectar a %1$s. Intente conectarse desde %2$s.</string>
     <string name="bluetooth_connecting_error_message">No es posible conectar con %s.</string>
     <string name="bluetooth_preference_scan_title">Buscar</string>
     <string name="bluetooth_preference_paired_devices">Dispositivos vinculados</string>

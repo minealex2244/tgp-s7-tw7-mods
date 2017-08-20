@@ -315,7 +315,7 @@
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 259
-    const v1, 0x7f0f03e3
+    const v1, 0x7f0f03e2
 
     .line 258
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -323,7 +323,7 @@
     move-result-object v0
 
     .line 260
-    const v1, 0x7f0f03e4
+    const v1, 0x7f0f03e3
 
     .line 258
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -539,7 +539,7 @@
     .line 147
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/VoLteTile;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0f03e6
+    const v2, 0x7f0f03e5
 
     invoke-static {v0, v2, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -567,7 +567,7 @@
     .line 152
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/VoLteTile;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0f03e8
+    const v2, 0x7f0f03e7
 
     invoke-static {v0, v2, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -619,7 +619,7 @@
     .line 159
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/VoLteTile;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0f03e7
+    const v2, 0x7f0f03e6
 
     invoke-static {v0, v2, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -648,7 +648,7 @@
     .line 165
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/VoLteTile;->mContext:Landroid/content/Context;
 
-    const v2, 0x7f0f03e9
+    const v2, 0x7f0f03e8
 
     invoke-static {v0, v2, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -695,7 +695,7 @@
     :cond_7
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/VoLteTile;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0f03ea
+    const v3, 0x7f0f03e9
 
     invoke-static {v0, v3, v1}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 

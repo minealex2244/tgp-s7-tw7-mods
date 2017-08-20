@@ -696,7 +696,7 @@
     :cond_2
     iget-object v4, p0, Lcom/samsung/android/settings/KnoxSetLockFingerprintPassword;->mHeading:Landroid/widget/TextView;
 
-    const v5, 0x7f0b14bb
+    const v5, 0x7f0b14ba
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
@@ -1030,7 +1030,7 @@
 
     aput-object v28, v27, v29
 
-    const v28, 0x7f0b087d
+    const v28, 0x7f0b087b
 
     move-object/from16 v0, p0
 
@@ -1071,7 +1071,7 @@
 
     aput-object v28, v27, v29
 
-    const v28, 0x7f0b087c
+    const v28, 0x7f0b087a
 
     move-object/from16 v0, p0
 
@@ -1110,7 +1110,7 @@
 
     aput-object v28, v27, v29
 
-    const v28, 0x7f0b087f
+    const v28, 0x7f0b087d
 
     move-object/from16 v0, p0
 
@@ -1133,7 +1133,7 @@
     if-ne v12, v0, :cond_3
 
     .line 394
-    const v27, 0x7f0b087e
+    const v27, 0x7f0b087c
 
     move-object/from16 v0, p0
 
@@ -1170,7 +1170,7 @@
 
     aput-object v28, v27, v29
 
-    const v28, 0x7f0b0880
+    const v28, 0x7f0b087e
 
     move-object/from16 v0, p0
 
@@ -1189,7 +1189,7 @@
     if-nez v17, :cond_5
 
     .line 400
-    const v27, 0x7f0b0881
+    const v27, 0x7f0b087f
 
     move-object/from16 v0, p0
 
@@ -1262,7 +1262,7 @@
 
     .line 411
     :cond_7
-    const v27, 0x7f0b08c2
+    const v27, 0x7f0b08c0
 
     goto :goto_0
 
@@ -1300,7 +1300,7 @@
 
     .line 417
     :cond_9
-    const v27, 0x7f0b08c1
+    const v27, 0x7f0b08bf
 
     goto :goto_1
 
@@ -2141,7 +2141,7 @@
 
     .line 499
     :cond_1d
-    const v27, 0x7f0b0875
+    const v27, 0x7f0b0873
 
     move-object/from16 v0, p0
 
@@ -2417,7 +2417,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b07b0
+    const v3, 0x7f0b07ae
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2515,7 +2515,7 @@
 
     aput-object v8, v5, v7
 
-    const v8, 0x7f0b07b1
+    const v8, 0x7f0b07af
 
     invoke-virtual {p0, v8, v5}, Lcom/samsung/android/settings/KnoxSetLockFingerprintPassword;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2991,7 +2991,7 @@
 
     aput-object v8, v6, v7
 
-    const v8, 0x7f0b077f
+    const v8, 0x7f0b077d
 
     invoke-virtual {p0, v8, v6}, Lcom/samsung/android/settings/KnoxSetLockFingerprintPassword;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

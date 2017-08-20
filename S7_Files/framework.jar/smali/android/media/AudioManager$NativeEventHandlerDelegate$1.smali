@@ -28,7 +28,7 @@
     .param p3, "val$callback"    # Landroid/media/AudioDeviceCallback;
 
     .prologue
-    .line 5123
+    .line 5142
     iput-object p1, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate$1;->this$1:Landroid/media/AudioManager$NativeEventHandlerDelegate;
 
     iput-object p3, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate$1;->val$callback:Landroid/media/AudioDeviceCallback;
@@ -45,12 +45,12 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 5126
+    .line 5145
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 5141
+    .line 5160
     invoke-static {}, Landroid/media/AudioManager;->-get0()Ljava/lang/String;
 
     move-result-object v0
@@ -77,18 +77,18 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5125
+    .line 5144
     :cond_0
     :goto_0
     return-void
 
-    .line 5129
+    .line 5148
     :pswitch_0
     iget-object v0, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate$1;->val$callback:Landroid/media/AudioDeviceCallback;
 
     if-eqz v0, :cond_0
 
-    .line 5130
+    .line 5149
     iget-object v1, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate$1;->val$callback:Landroid/media/AudioDeviceCallback;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -99,13 +99,13 @@
 
     goto :goto_0
 
-    .line 5135
+    .line 5154
     :pswitch_1
     iget-object v0, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate$1;->val$callback:Landroid/media/AudioDeviceCallback;
 
     if-eqz v0, :cond_0
 
-    .line 5136
+    .line 5155
     iget-object v1, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate$1;->val$callback:Landroid/media/AudioDeviceCallback;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -116,7 +116,7 @@
 
     goto :goto_0
 
-    .line 5126
+    .line 5145
     nop
 
     :pswitch_data_0

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/wifi/WifiPolicy;
 
     .prologue
-    .line 4045
+    .line 4044
     iput-object p1, p0, Lcom/android/server/enterprise/wifi/WifiPolicy$1;->this$0:Lcom/android/server/enterprise/wifi/WifiPolicy;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,12 +42,12 @@
     .prologue
     const/4 v8, 0x1
 
-    .line 4048
+    .line 4047
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4049
+    .line 4048
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v7, "android.net.wifi.WIFI_STATE_CHANGED"
 
@@ -57,39 +57,39 @@
 
     if-eqz v7, :cond_1
 
-    .line 4050
+    .line 4049
     const-string/jumbo v7, "wifi_state"
 
-    .line 4051
+    .line 4050
     const/4 v8, 0x4
 
-    .line 4050
+    .line 4049
     invoke-virtual {p2, v7, v8}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 4052
+    .line 4051
     .local v2, "state":I
     const/4 v7, 0x3
 
     if-ne v2, v7, :cond_0
 
-    .line 4057
+    .line 4056
     new-instance v4, Lcom/android/server/enterprise/wifi/WifiPolicy$1$1;
 
     invoke-direct {v4, p0}, Lcom/android/server/enterprise/wifi/WifiPolicy$1$1;-><init>(Lcom/android/server/enterprise/wifi/WifiPolicy$1;)V
 
-    .line 4062
+    .line 4061
     .local v4, "taskToupdateConfiguredNetworks":Ljava/lang/Runnable;
     new-instance v5, Ljava/lang/Thread;
 
     invoke-direct {v5, v4}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 4064
+    .line 4063
     .local v5, "threadToUpdateConfiguredNetworks":Ljava/lang/Thread;
     invoke-virtual {v5}, Ljava/lang/Thread;->start()V
 
-    .line 4047
+    .line 4046
     .end local v2    # "state":I
     .end local v4    # "taskToupdateConfiguredNetworks":Ljava/lang/Runnable;
     .end local v5    # "threadToUpdateConfiguredNetworks":Ljava/lang/Thread;
@@ -97,7 +97,7 @@
     :goto_0
     return-void
 
-    .line 4066
+    .line 4065
     :cond_1
     const-string/jumbo v7, "android.net.wifi.STATE_CHANGE"
 
@@ -107,17 +107,17 @@
 
     if-eqz v7, :cond_2
 
-    .line 4068
+    .line 4067
     const-string/jumbo v7, "networkInfo"
 
-    .line 4067
+    .line 4066
     invoke-virtual {p2, v7}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v1
 
     check-cast v1, Landroid/net/NetworkInfo;
 
-    .line 4069
+    .line 4068
     .local v1, "info":Landroid/net/NetworkInfo;
     if-eqz v1, :cond_0
 
@@ -127,14 +127,14 @@
 
     if-eqz v7, :cond_0
 
-    .line 4070
+    .line 4069
     invoke-virtual {v1}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v7
 
     if-ne v7, v8, :cond_0
 
-    .line 4071
+    .line 4070
     iget-object v7, p0, Lcom/android/server/enterprise/wifi/WifiPolicy$1;->this$0:Lcom/android/server/enterprise/wifi/WifiPolicy;
 
     invoke-static {v7}, Lcom/android/server/enterprise/wifi/WifiPolicy;->-wrap1(Lcom/android/server/enterprise/wifi/WifiPolicy;)Lcom/samsung/android/knox/EnterpriseDeviceManager;
@@ -145,27 +145,27 @@
 
     move-result v7
 
-    .line 4069
+    .line 4068
     if-eqz v7, :cond_0
 
-    .line 4072
+    .line 4071
     new-instance v3, Lcom/android/server/enterprise/wifi/WifiPolicy$1$2;
 
     invoke-direct {v3, p0}, Lcom/android/server/enterprise/wifi/WifiPolicy$1$2;-><init>(Lcom/android/server/enterprise/wifi/WifiPolicy$1;)V
 
-    .line 4077
+    .line 4076
     .local v3, "taskToWpsBlockedNetworks":Ljava/lang/Runnable;
     new-instance v6, Ljava/lang/Thread;
 
     invoke-direct {v6, v3}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 4078
+    .line 4077
     .local v6, "threadToUpdateWpsBlockedNetworks":Ljava/lang/Thread;
     invoke-virtual {v6}, Ljava/lang/Thread;->start()V
 
     goto :goto_0
 
-    .line 4080
+    .line 4079
     .end local v1    # "info":Landroid/net/NetworkInfo;
     .end local v3    # "taskToWpsBlockedNetworks":Ljava/lang/Runnable;
     .end local v6    # "threadToUpdateWpsBlockedNetworks":Ljava/lang/Thread;
@@ -178,12 +178,12 @@
 
     if-eqz v7, :cond_3
 
-    .line 4081
+    .line 4080
     invoke-static {v8}, Lcom/android/server/enterprise/wifi/WifiPolicy;->-set0(Z)Z
 
     goto :goto_0
 
-    .line 4082
+    .line 4081
     :cond_3
     const-string/jumbo v7, "com.samsung.android.knox.intent.action.KNOXFRAMEWORK_SYSTEMUI_UPDATE_INTENT_INTERNAL"
 
@@ -193,7 +193,7 @@
 
     if-eqz v7, :cond_0
 
-    .line 4083
+    .line 4082
     iget-object v7, p0, Lcom/android/server/enterprise/wifi/WifiPolicy$1;->this$0:Lcom/android/server/enterprise/wifi/WifiPolicy;
 
     invoke-virtual {p1}, Landroid/content/Context;->getUserId()I

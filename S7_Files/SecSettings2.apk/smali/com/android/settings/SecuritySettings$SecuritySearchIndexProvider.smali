@@ -429,7 +429,7 @@
 
     .line 935
     .restart local v3    # "data":Lcom/android/settings/search/SearchIndexableRaw;
-    const v15, 0x7f0b14ee
+    const v15, 0x7f0b14ed
 
     invoke-virtual {v9, v15}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -467,7 +467,7 @@
     if-eqz v15, :cond_5
 
     .line 946
-    const v13, 0x7f0b1714
+    const v13, 0x7f0b1713
 
     .line 949
     .local v13, "storageSummaryRes":I
@@ -590,7 +590,7 @@
     .restart local v7    # "lockPatternUtils":Lcom/android/internal/widget/LockPatternUtils;
     .restart local v8    # "profileUserId":I
     :cond_5
-    const v13, 0x7f0b1715
+    const v13, 0x7f0b1714
 
     .restart local v13    # "storageSummaryRes":I
     goto :goto_1

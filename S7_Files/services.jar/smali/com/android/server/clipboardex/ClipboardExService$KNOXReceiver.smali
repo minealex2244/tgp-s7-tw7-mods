@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/clipboardex/ClipboardExService;
 
     .prologue
-    .line 348
+    .line 350
     iput-object p1, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,12 +42,12 @@
     .prologue
     const/4 v9, 0x0
 
-    .line 352
+    .line 354
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 354
+    .line 356
     .local v2, "intentAction":Ljava/lang/String;
     const-string/jumbo v6, "ClipboardExService"
 
@@ -71,7 +71,7 @@
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 355
+    .line 357
     const-string/jumbo v6, "android.intent.action.BOOT_COMPLETED"
 
     invoke-virtual {v2, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -80,7 +80,7 @@
 
     if-eqz v6, :cond_2
 
-    .line 356
+    .line 358
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-wrap0(Lcom/android/server/clipboardex/ClipboardExService;)Z
@@ -89,21 +89,21 @@
 
     if-nez v6, :cond_0
 
-    .line 357
+    .line 359
     const-string/jumbo v6, "ClipboardExService"
 
     const-string/jumbo v7, "null"
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 358
+    .line 360
     return-void
 
-    .line 361
+    .line 363
     :cond_0
     const/4 v5, 0x0
 
-    .line 363
+    .line 365
     .local v5, "size":[I
     :try_start_0
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
@@ -118,33 +118,33 @@
 
     move-result-object v5
 
-    .line 369
+    .line 371
     .local v5, "size":[I
     if-nez v5, :cond_1
 
-    .line 370
+    .line 372
     const-string/jumbo v6, "ClipboardExService"
 
     const-string/jumbo v7, "size is null"
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 371
+    .line 373
     return-void
 
-    .line 364
+    .line 366
     .local v5, "size":[I
     :catch_0
     move-exception v0
 
-    .line 365
+    .line 367
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 366
+    .line 368
     return-void
 
-    .line 374
+    .line 376
     .end local v0    # "e":Ljava/lang/Exception;
     .local v5, "size":[I
     :cond_1
@@ -156,19 +156,19 @@
 
     if-ge v1, v6, :cond_3
 
-    .line 375
+    .line 377
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     aget v7, v5, v1
 
     invoke-static {v6, v7}, Lcom/android/server/clipboardex/ClipboardExService;->-wrap4(Lcom/android/server/clipboardex/ClipboardExService;I)V
 
-    .line 374
+    .line 376
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 377
+    .line 379
     .end local v1    # "i":I
     .end local v5    # "size":[I
     :cond_2
@@ -188,12 +188,12 @@
 
     if-eqz v6, :cond_4
 
-    .line 351
+    .line 353
     :cond_3
     :goto_1
     return-void
 
-    .line 379
+    .line 381
     :cond_4
     const-string/jumbo v6, "com.samsung.knox.clipboard.sync"
 
@@ -203,7 +203,7 @@
 
     if-eqz v6, :cond_3
 
-    .line 380
+    .line 382
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-virtual {v6}, Lcom/android/server/clipboardex/ClipboardExService;->isKnoxTwoEnabled()Z
@@ -212,7 +212,7 @@
 
     if-eqz v6, :cond_6
 
-    .line 381
+    .line 383
     const-string/jumbo v6, "ClipboardExService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -235,7 +235,7 @@
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 383
+    .line 385
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -244,7 +244,7 @@
 
     if-eqz v6, :cond_5
 
-    .line 384
+    .line 386
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -253,7 +253,7 @@
 
     invoke-virtual {v6}, Landroid/sec/clipboard/data/ClipboardDataMgr;->refresh()V
 
-    .line 387
+    .line 389
     :cond_5
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -263,7 +263,7 @@
 
     if-eqz v6, :cond_6
 
-    .line 388
+    .line 390
     const-string/jumbo v6, "ClipboardExService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -296,7 +296,7 @@
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 389
+    .line 391
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -305,7 +305,7 @@
 
     invoke-virtual {v6}, Landroid/sec/clipboard/data/ClipboardDataMgr;->refresh()V
 
-    .line 393
+    .line 395
     :cond_6
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -323,7 +323,7 @@
 
     if-eqz v6, :cond_3
 
-    .line 394
+    .line 396
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get8(Lcom/android/server/clipboardex/ClipboardExService;)Lcom/samsung/android/knox/SemPersonaManager;
@@ -336,11 +336,11 @@
 
     move-result-object v3
 
-    .line 395
+    .line 397
     .local v3, "personas":Ljava/util/List;, "Ljava/util/List<Lcom/samsung/android/knox/SemPersonaInfo;>;"
     const/4 v4, 0x0
 
-    .line 396
+    .line 398
     .local v4, "pi":Lcom/samsung/android/knox/SemPersonaInfo;
     if-eqz v3, :cond_7
 
@@ -350,7 +350,7 @@
 
     if-lez v6, :cond_7
 
-    .line 397
+    .line 399
     invoke-interface {v3, v9}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -358,11 +358,11 @@
     .end local v4    # "pi":Lcom/samsung/android/knox/SemPersonaInfo;
     check-cast v4, Lcom/samsung/android/knox/SemPersonaInfo;
 
-    .line 398
+    .line 400
     .local v4, "pi":Lcom/samsung/android/knox/SemPersonaInfo;
     if-eqz v4, :cond_7
 
-    .line 399
+    .line 401
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     iget v7, v4, Lcom/samsung/android/knox/SemPersonaInfo;->id:I
@@ -371,12 +371,12 @@
 
     invoke-virtual {v6, v7, v8}, Lcom/android/server/clipboardex/ClipboardExService;->multiUserMode(ILjava/lang/String;)V
 
-    .line 400
+    .line 402
     sget-boolean v6, Landroid/sec/clipboard/data/ClipboardConstants;->DEBUG:Z
 
     if-eqz v6, :cond_7
 
-    .line 401
+    .line 403
     const-string/jumbo v6, "ClipboardExService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -401,7 +401,7 @@
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 406
+    .line 408
     .end local v4    # "pi":Lcom/samsung/android/knox/SemPersonaInfo;
     :cond_7
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
@@ -412,7 +412,7 @@
 
     if-eqz v6, :cond_8
 
-    .line 407
+    .line 409
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -421,7 +421,7 @@
 
     invoke-virtual {v6}, Landroid/sec/clipboard/data/ClipboardDataMgr;->refresh()V
 
-    .line 410
+    .line 412
     :cond_8
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -431,7 +431,7 @@
 
     if-eqz v6, :cond_3
 
-    .line 411
+    .line 413
     const-string/jumbo v6, "ClipboardExService"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -464,7 +464,7 @@
 
     invoke-static {v6, v7}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 412
+    .line 414
     iget-object v6, p0, Lcom/android/server/clipboardex/ClipboardExService$KNOXReceiver;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v6}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;

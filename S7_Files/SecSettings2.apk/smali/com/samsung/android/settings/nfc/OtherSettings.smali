@@ -541,7 +541,7 @@
     move-result-object v2
 
     .line 426
-    const v3, 0x7f0b187a
+    const v3, 0x7f0b1879
 
     const/4 v5, 0x0
 
@@ -718,7 +718,7 @@
     invoke-direct {v2, v3, v4}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     .line 289
-    const v3, 0x7f0b1ba6
+    const v3, 0x7f0b1ba5
 
     invoke-virtual {p0, v3}, Lcom/samsung/android/settings/nfc/OtherSettings;->getString(I)Ljava/lang/String;
 

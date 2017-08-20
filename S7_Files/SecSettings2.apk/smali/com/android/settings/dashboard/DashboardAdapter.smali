@@ -1957,7 +1957,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/settings/dashboard/DashboardAdapter;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0b0a9a
+    const v1, 0x7f0b0a98
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1973,7 +1973,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/settings/dashboard/DashboardAdapter;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0b0ab9
+    const v1, 0x7f0b0ab7
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2043,7 +2043,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/settings/dashboard/DashboardAdapter;->mContext:Landroid/content/Context;
 
-    const v3, 0x7f0b137b
+    const v3, 0x7f0b137a
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2109,7 +2109,7 @@
 
     .line 915
     .local v3, "messageView":Landroid/widget/TextView;
-    const v4, 0x7f0b0f19
+    const v4, 0x7f0b0f17
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 
@@ -2183,7 +2183,7 @@
     .param p1, "tile"    # Lcom/android/settingslib/drawer/Tile;
 
     .prologue
-    const v1, 0x7f0b130c
+    const v1, 0x7f0b130b
 
     .line 875
     iget-object v0, p0, Lcom/android/settings/dashboard/DashboardAdapter;->mContext:Landroid/content/Context;
@@ -3135,7 +3135,7 @@
     .line 269
     iget-object v9, p0, Lcom/android/settings/dashboard/DashboardAdapter;->mContext:Landroid/content/Context;
 
-    const v10, 0x7f0b1340
+    const v10, 0x7f0b133f
 
     invoke-virtual {v9, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

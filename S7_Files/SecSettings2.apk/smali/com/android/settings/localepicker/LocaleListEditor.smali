@@ -531,7 +531,7 @@
     if-eqz v3, :cond_3
 
     .line 322
-    const v3, 0x7f0b179b
+    const v3, 0x7f0b179a
 
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
@@ -705,7 +705,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b1599
+    const v3, 0x7f0b1598
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->setTitle(I)V
 

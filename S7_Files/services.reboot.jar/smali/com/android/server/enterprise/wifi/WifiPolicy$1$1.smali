@@ -27,7 +27,7 @@
     .param p1, "this$1"    # Lcom/android/server/enterprise/wifi/WifiPolicy$1;
 
     .prologue
-    .line 4057
+    .line 4056
     iput-object p1, p0, Lcom/android/server/enterprise/wifi/WifiPolicy$1$1;->this$1:Lcom/android/server/enterprise/wifi/WifiPolicy$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,13 +41,13 @@
     .locals 1
 
     .prologue
-    .line 4059
+    .line 4058
     iget-object v0, p0, Lcom/android/server/enterprise/wifi/WifiPolicy$1$1;->this$1:Lcom/android/server/enterprise/wifi/WifiPolicy$1;
 
     iget-object v0, v0, Lcom/android/server/enterprise/wifi/WifiPolicy$1;->this$0:Lcom/android/server/enterprise/wifi/WifiPolicy;
 
     invoke-virtual {v0}, Lcom/android/server/enterprise/wifi/WifiPolicy;->edmUpdateConfiguredNetworks()V
 
-    .line 4058
+    .line 4057
     return-void
 .end method

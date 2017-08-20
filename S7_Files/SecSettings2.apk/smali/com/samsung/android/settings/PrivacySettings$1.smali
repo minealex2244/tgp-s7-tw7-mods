@@ -176,7 +176,7 @@
     .local v7, "mMessage":Ljava/lang/CharSequence;
     iget-object v8, p0, Lcom/samsung/android/settings/PrivacySettings$1;->this$0:Lcom/samsung/android/settings/PrivacySettings;
 
-    const v9, 0x7f0b0b13
+    const v9, 0x7f0b0b11
 
     invoke-virtual {v8, v9}, Lcom/samsung/android/settings/PrivacySettings;->getString(I)Ljava/lang/String;
 

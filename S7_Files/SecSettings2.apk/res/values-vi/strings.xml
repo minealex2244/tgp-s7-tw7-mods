@@ -3686,7 +3686,6 @@ Lưu ý: Vân tay của bạn có thể ít bảo mật hơn mã PIN hoặc mẫ
     <string name="bluetooth_confirm_passkey_msg">Xác nhận mật mã %2$s để ghép đôi với %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Từ&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Cặp đôi với thiết bị này?</string>
     <string name="bluetooth_display_passkey_pin_msg">Nhập %1$s trên %2$s để ghép đôi, sau đó chạm vào Trở lại hoặc Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Không thể kết nối với %1$s. Hãy thử kết nối từ %2$s.</string>
     <string name="bluetooth_connecting_error_message">Không thể kết nối đến %s.</string>
     <string name="bluetooth_preference_scan_title">Dò</string>
     <string name="bluetooth_preference_paired_devices">Các thiết bị đã ghép đôi</string>
@@ -4087,7 +4086,7 @@ Hãy xem xét sử dụng thẻ SD hoặc thiết bị lưu trữ USB nhanh hơn
     <string name="master_clear_final_desc">Tất cả thông tin cá nhân của bạn và ứng dụng đã tải về sẽ bị xóa và không thể khôi phục.</string>
     <string name="master_clear_final_button_text">Xóa hết</string>
     <string name="master_clear_not_available">Hồ sơ khách này không được phép thực hiện khôi phục cài đặt gốc.</string>
-    <string name="master_clear_progress_title">Đặt lại</string>
+    <string name="master_clear_progress_title">Xóa</string>
     <string name="master_clear_progress_text">Xin chờ…</string>
     <string name="tether_settings_uid_title_vzw">Chia sẻ kết nối internet</string>
     <string name="usb_tethering_button_text">Kết nối USB internet</string>

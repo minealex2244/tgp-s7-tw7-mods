@@ -30,7 +30,7 @@
     .param p3, "val$personaId"    # I
 
     .prologue
-    .line 7976
+    .line 8006
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$10;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iput-boolean p2, p0, Lcom/android/server/pm/PersonaManagerService$10;->val$onReboot:Z
@@ -49,12 +49,12 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 7986
+    .line 8016
     const-string/jumbo v0, "userStopAborted"
 
     invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-wrap13(Ljava/lang/String;)I
 
-    .line 7985
+    .line 8015
     return-void
 .end method
 
@@ -63,12 +63,12 @@
     .param p1, "userId"    # I
 
     .prologue
-    .line 7979
+    .line 8009
     const-string/jumbo v0, "userStopped"
 
     invoke-static {v0}, Lcom/android/server/pm/PersonaManagerService;->-wrap13(Ljava/lang/String;)I
 
-    .line 7980
+    .line 8010
     const-string/jumbo v0, "PersonaManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -93,13 +93,13 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7981
+    .line 8011
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$10;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iget v1, p0, Lcom/android/server/pm/PersonaManagerService$10;->val$personaId:I
 
-    invoke-static {v0, v1}, Lcom/android/server/pm/PersonaManagerService;->-wrap57(Lcom/android/server/pm/PersonaManagerService;I)V
+    invoke-static {v0, v1}, Lcom/android/server/pm/PersonaManagerService;->-wrap58(Lcom/android/server/pm/PersonaManagerService;I)V
 
-    .line 7978
+    .line 8008
     return-void
 .end method

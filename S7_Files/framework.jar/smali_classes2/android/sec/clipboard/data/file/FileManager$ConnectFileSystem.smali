@@ -224,7 +224,7 @@
     .end annotation
 
     .prologue
-    .line 430
+    .line 444
     .local p1, "base":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
     invoke-virtual {p2}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
@@ -232,11 +232,11 @@
 
     check-cast v2, [Ljava/io/File;
 
-    .line 431
+    .line 445
     .local v2, "result":[Ljava/io/File;
     array-length v3, v2
 
-    .line 432
+    .line 446
     .local v3, "size":I
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -256,7 +256,7 @@
 
     check-cast v4, Landroid/sec/clipboard/data/file/WrapFileClipData;
 
-    .line 433
+    .line 447
     .local v4, "wrap":Landroid/sec/clipboard/data/file/WrapFileClipData;
     invoke-virtual {v4}, Landroid/sec/clipboard/data/file/WrapFileClipData;->getFile()Ljava/io/File;
 
@@ -266,7 +266,7 @@
 
     move-result-object v0
 
-    .line 435
+    .line 449
     .local v0, "base_path":Ljava/io/File;
     const/4 v1, 0x0
 
@@ -274,7 +274,7 @@
     :goto_0
     if-ge v1, v3, :cond_0
 
-    .line 436
+    .line 450
     iget-object v6, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->infoFile:Ljava/io/File;
 
     aget-object v7, v2, v1
@@ -285,7 +285,7 @@
 
     if-nez v6, :cond_2
 
-    .line 437
+    .line 451
     iget-object v6, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
     invoke-virtual {v6}, Landroid/sec/clipboard/util/FileHelper;->getNullFile()Ljava/io/File;
@@ -294,14 +294,14 @@
 
     aput-object v6, v2, v1
 
-    .line 435
+    .line 449
     :cond_1
     :goto_1
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 438
+    .line 452
     :cond_2
     iget-object v6, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->infoTempFile:Ljava/io/File;
 
@@ -313,7 +313,7 @@
 
     if-nez v6, :cond_3
 
-    .line 439
+    .line 453
     iget-object v6, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
     invoke-virtual {v6}, Landroid/sec/clipboard/util/FileHelper;->getNullFile()Ljava/io/File;
@@ -324,11 +324,11 @@
 
     goto :goto_1
 
-    .line 440
+    .line 454
     :cond_3
     if-eqz v0, :cond_1
 
-    .line 441
+    .line 455
     aget-object v6, v2, v1
 
     invoke-virtual {v0, v6}, Ljava/io/File;->compareTo(Ljava/io/File;)I
@@ -337,7 +337,7 @@
 
     if-nez v6, :cond_1
 
-    .line 442
+    .line 456
     iget-object v6, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
     invoke-virtual {v6}, Landroid/sec/clipboard/util/FileHelper;->getNullFile()Ljava/io/File;
@@ -348,7 +348,7 @@
 
     goto :goto_1
 
-    .line 447
+    .line 461
     .end local v0    # "base_path":Ljava/io/File;
     .end local v1    # "i":I
     .end local v4    # "wrap":Landroid/sec/clipboard/data/file/WrapFileClipData;
@@ -373,13 +373,13 @@
     .end annotation
 
     .prologue
-    .line 497
+    .line 511
     .local p1, "list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
     invoke-virtual {p0}, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->createDataList()Ljava/util/ArrayList;
 
     move-result-object v2
 
-    .line 498
+    .line 512
     .local v2, "temp_list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -400,7 +400,7 @@
 
     check-cast v0, Landroid/sec/clipboard/data/file/WrapFileClipData;
 
-    .line 499
+    .line 513
     .local v0, "data":Landroid/sec/clipboard/data/file/WrapFileClipData;
     invoke-virtual {v0}, Landroid/sec/clipboard/data/file/WrapFileClipData;->load()Z
 
@@ -408,12 +408,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 500
+    .line 514
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 503
+    .line 517
     .end local v0    # "data":Landroid/sec/clipboard/data/file/WrapFileClipData;
     :cond_1
     return-object v2
@@ -425,23 +425,23 @@
     .param p2, "wfClip"    # Landroid/sec/clipboard/data/file/WrapFileClipData;
 
     .prologue
-    .line 556
+    .line 570
     invoke-virtual/range {p2 .. p2}, Landroid/sec/clipboard/data/file/WrapFileClipData;->getClipData()Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     move-result-object v14
 
-    .line 557
+    .line 571
     .local v14, "temp_clip":Lcom/samsung/android/content/clipboard/data/SemClipData;
     if-eqz v14, :cond_12
 
-    .line 558
+    .line 572
     invoke-virtual {v14}, Lcom/samsung/android/content/clipboard/data/SemClipData;->getClipType()I
 
     move-result v17
 
     sparse-switch v17, :sswitch_data_0
 
-    .line 676
+    .line 690
     const/16 v17, 0x1
 
     return v17
@@ -449,14 +449,14 @@
     :sswitch_0
     move-object v15, v14
 
-    .line 560
+    .line 574
     check-cast v15, Lcom/samsung/android/content/clipboard/data/SemTextClipData;
 
-    .line 561
+    .line 575
     .local v15, "text":Lcom/samsung/android/content/clipboard/data/SemTextClipData;
     invoke-virtual {v15}, Lcom/samsung/android/content/clipboard/data/SemTextClipData;->toSave()V
 
-    .line 562
+    .line 576
     const/16 v17, 0x1
 
     return v17
@@ -465,16 +465,16 @@
     :sswitch_1
     move-object v3, v14
 
-    .line 565
+    .line 579
     check-cast v3, Lcom/samsung/android/content/clipboard/data/SemImageClipData;
 
-    .line 566
+    .line 580
     .local v3, "bitmapClip":Lcom/samsung/android/content/clipboard/data/SemImageClipData;
     invoke-virtual {v3}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->getBitmapPath()Ljava/lang/String;
 
     move-result-object v11
 
-    .line 568
+    .line 582
     .local v11, "path":Ljava/lang/String;
     sget-object v17, Ljava/io/File;->separator:Ljava/lang/String;
 
@@ -484,13 +484,13 @@
 
     move-result v12
 
-    .line 569
+    .line 583
     .local v12, "separatorIndex":I
     if-gez v12, :cond_5
 
     move-object v8, v11
 
-    .line 570
+    .line 584
     .local v8, "fileName":Ljava/lang/String;
     :goto_0
     new-instance v4, Ljava/io/File;
@@ -499,13 +499,13 @@
 
     invoke-direct {v4, v0, v8}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 572
+    .line 586
     .local v4, "createFile":Ljava/io/File;
     invoke-virtual {v3}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->getParcelFileDescriptor()Landroid/os/ParcelFileDescriptor;
 
     move-result-object v7
 
-    .line 573
+    .line 587
     .local v7, "fd":Landroid/os/ParcelFileDescriptor;
     if-eqz v7, :cond_0
 
@@ -521,7 +521,7 @@
 
     if-nez v17, :cond_1
 
-    .line 574
+    .line 588
     :cond_0
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
@@ -541,10 +541,10 @@
 
     move-result v17
 
-    .line 573
+    .line 587
     if-eqz v17, :cond_12
 
-    .line 576
+    .line 590
     :cond_1
     const-string/jumbo v17, "Clipboard.FileManager"
 
@@ -552,14 +552,14 @@
 
     invoke-static/range {v17 .. v18}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 577
+    .line 591
     const/16 v17, 0x0
 
     move-object/from16 v0, v17
 
     invoke-virtual {v3, v0}, Lcom/samsung/android/content/clipboard/data/SemClipData;->setParcelFileDescriptor(Landroid/os/ParcelFileDescriptor;)V
 
-    .line 578
+    .line 592
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v17
@@ -568,7 +568,7 @@
 
     invoke-virtual {v3, v0}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->setImagePath(Ljava/lang/String;)Z
 
-    .line 579
+    .line 593
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v17
@@ -581,7 +581,7 @@
 
     invoke-static/range {v17 .. v20}, Landroid/os/FileUtils;->setPermissions(Ljava/lang/String;III)I
 
-    .line 582
+    .line 596
     move-object/from16 v0, p0
 
     iget-object v0, v0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->this$0:Landroid/sec/clipboard/data/file/FileManager;
@@ -594,7 +594,7 @@
 
     if-eqz v17, :cond_6
 
-    .line 583
+    .line 597
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v17
@@ -603,7 +603,7 @@
 
     move-result-object v18
 
-    .line 584
+    .line 598
     move-object/from16 v0, p0
 
     iget-object v0, v0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->this$0:Landroid/sec/clipboard/data/file/FileManager;
@@ -630,7 +630,7 @@
 
     move/from16 v19, v0
 
-    .line 585
+    .line 599
     move-object/from16 v0, p0
 
     iget-object v0, v0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->this$0:Landroid/sec/clipboard/data/file/FileManager;
@@ -657,10 +657,10 @@
 
     move/from16 v20, v0
 
-    .line 583
+    .line 597
     invoke-virtual/range {v17 .. v20}, Landroid/sec/clipboard/util/FileHelper;->createThumnailImage(Ljava/lang/String;II)Z
 
-    .line 591
+    .line 605
     :goto_1
     invoke-virtual {v3}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->HasExtraData()Z
 
@@ -668,12 +668,12 @@
 
     if-eqz v17, :cond_4
 
-    .line 592
+    .line 606
     invoke-virtual {v3}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->getExtraDataPath()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 593
+    .line 607
     .local v2, "ExtraDataPath":Ljava/lang/String;
     sget-object v17, Ljava/io/File;->separator:Ljava/lang/String;
 
@@ -683,13 +683,13 @@
 
     move-result v13
 
-    .line 594
+    .line 608
     .local v13, "separatorIndexForExtraData":I
     if-gez v13, :cond_7
 
     move-object v9, v2
 
-    .line 595
+    .line 609
     .local v9, "fileNameForExtraData":Ljava/lang/String;
     :goto_2
     new-instance v5, Ljava/io/File;
@@ -698,7 +698,7 @@
 
     invoke-direct {v5, v0, v9}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 597
+    .line 611
     .local v5, "createFileForExtraData":Ljava/io/File;
     invoke-virtual/range {p2 .. p2}, Landroid/sec/clipboard/data/file/WrapFileClipData;->getClipData()Lcom/samsung/android/content/clipboard/data/SemClipData;
 
@@ -710,7 +710,7 @@
 
     move-result-object v6
 
-    .line 598
+    .line 612
     .local v6, "extraFD":Landroid/os/ParcelFileDescriptor;
     if-eqz v6, :cond_2
 
@@ -726,7 +726,7 @@
 
     if-nez v17, :cond_3
 
-    .line 599
+    .line 613
     :cond_2
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
@@ -746,10 +746,10 @@
 
     move-result v17
 
-    .line 598
+    .line 612
     if-eqz v17, :cond_4
 
-    .line 600
+    .line 614
     :cond_3
     const-string/jumbo v17, "Clipboard.FileManager"
 
@@ -757,14 +757,14 @@
 
     invoke-static/range {v17 .. v18}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 602
+    .line 616
     const/16 v17, 0x0
 
     move-object/from16 v0, v17
 
     invoke-virtual {v3, v0}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->setExtraParcelFileDescriptor(Landroid/os/ParcelFileDescriptor;)V
 
-    .line 603
+    .line 617
     invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v17
@@ -773,7 +773,7 @@
 
     invoke-virtual {v3, v0}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->setExtraDataPath(Ljava/lang/String;)Z
 
-    .line 604
+    .line 618
     invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v17
@@ -786,7 +786,7 @@
 
     invoke-static/range {v17 .. v20}, Landroid/os/FileUtils;->setPermissions(Ljava/lang/String;III)I
 
-    .line 607
+    .line 621
     .end local v2    # "ExtraDataPath":Ljava/lang/String;
     .end local v5    # "createFileForExtraData":Ljava/io/File;
     .end local v6    # "extraFD":Landroid/os/ParcelFileDescriptor;
@@ -797,7 +797,7 @@
 
     return v17
 
-    .line 569
+    .line 583
     .end local v4    # "createFile":Ljava/io/File;
     .end local v7    # "fd":Landroid/os/ParcelFileDescriptor;
     .end local v8    # "fileName":Ljava/lang/String;
@@ -819,7 +819,7 @@
     .restart local v8    # "fileName":Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 587
+    .line 601
     .restart local v4    # "createFile":Ljava/io/File;
     .restart local v7    # "fd":Landroid/os/ParcelFileDescriptor;
     :cond_6
@@ -835,7 +835,7 @@
 
     goto/16 :goto_1
 
-    .line 594
+    .line 608
     .restart local v2    # "ExtraDataPath":Ljava/lang/String;
     .restart local v13    # "separatorIndexForExtraData":I
     :cond_7
@@ -868,16 +868,16 @@
     :sswitch_2
     move-object v10, v14
 
-    .line 612
+    .line 626
     check-cast v10, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
 
-    .line 613
+    .line 627
     .local v10, "htmlClip":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     invoke-virtual {v10}, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;->getThumbnailImagePath()Ljava/lang/String;
 
     move-result-object v11
 
-    .line 614
+    .line 628
     .restart local v11    # "path":Ljava/lang/String;
     const-string/jumbo v17, ""
 
@@ -891,7 +891,7 @@
 
     if-lez v17, :cond_d
 
-    .line 616
+    .line 630
     sget-object v17, Ljava/io/File;->separator:Ljava/lang/String;
 
     move-object/from16 v0, v17
@@ -900,13 +900,13 @@
 
     move-result v12
 
-    .line 617
+    .line 631
     .restart local v12    # "separatorIndex":I
     if-gez v12, :cond_b
 
     move-object v8, v11
 
-    .line 618
+    .line 632
     .restart local v8    # "fileName":Ljava/lang/String;
     :goto_3
     new-instance v4, Ljava/io/File;
@@ -915,7 +915,7 @@
 
     invoke-direct {v4, v0, v8}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 621
+    .line 635
     .restart local v4    # "createFile":Ljava/io/File;
     invoke-virtual/range {p2 .. p2}, Landroid/sec/clipboard/data/file/WrapFileClipData;->getClipData()Lcom/samsung/android/content/clipboard/data/SemClipData;
 
@@ -925,7 +925,7 @@
 
     move-result-object v7
 
-    .line 622
+    .line 636
     .restart local v7    # "fd":Landroid/os/ParcelFileDescriptor;
     if-eqz v7, :cond_8
 
@@ -941,7 +941,7 @@
 
     if-nez v17, :cond_9
 
-    .line 623
+    .line 637
     :cond_8
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
@@ -961,10 +961,10 @@
 
     move-result v17
 
-    .line 622
+    .line 636
     if-eqz v17, :cond_12
 
-    .line 624
+    .line 638
     :cond_9
     const-string/jumbo v17, "Clipboard.FileManager"
 
@@ -972,14 +972,14 @@
 
     invoke-static/range {v17 .. v18}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 626
+    .line 640
     const/16 v17, 0x0
 
     move-object/from16 v0, v17
 
     invoke-virtual {v10, v0}, Lcom/samsung/android/content/clipboard/data/SemClipData;->setParcelFileDescriptor(Landroid/os/ParcelFileDescriptor;)V
 
-    .line 627
+    .line 641
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v17
@@ -988,7 +988,7 @@
 
     invoke-virtual {v10, v0}, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;->setThumbnailImagePath(Ljava/lang/String;)Z
 
-    .line 628
+    .line 642
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v17
@@ -1001,7 +1001,7 @@
 
     invoke-static/range {v17 .. v20}, Landroid/os/FileUtils;->setPermissions(Ljava/lang/String;III)I
 
-    .line 631
+    .line 645
     const-string/jumbo v17, "previewhtmlclipboarditem"
 
     move-object/from16 v0, v17
@@ -1012,7 +1012,7 @@
 
     if-nez v17, :cond_a
 
-    .line 632
+    .line 646
     move-object/from16 v0, p0
 
     iget-object v0, v0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->this$0:Landroid/sec/clipboard/data/file/FileManager;
@@ -1025,7 +1025,7 @@
 
     if-eqz v17, :cond_c
 
-    .line 633
+    .line 647
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v17
@@ -1034,7 +1034,7 @@
 
     move-result-object v18
 
-    .line 634
+    .line 648
     move-object/from16 v0, p0
 
     iget-object v0, v0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->this$0:Landroid/sec/clipboard/data/file/FileManager;
@@ -1061,7 +1061,7 @@
 
     move/from16 v19, v0
 
-    .line 635
+    .line 649
     move-object/from16 v0, p0
 
     iget-object v0, v0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->this$0:Landroid/sec/clipboard/data/file/FileManager;
@@ -1088,17 +1088,17 @@
 
     move/from16 v20, v0
 
-    .line 633
+    .line 647
     invoke-virtual/range {v17 .. v20}, Landroid/sec/clipboard/util/FileHelper;->createThumnailImage(Ljava/lang/String;II)Z
 
-    .line 641
+    .line 655
     :cond_a
     :goto_4
     const/16 v17, 0x1
 
     return v17
 
-    .line 617
+    .line 631
     .end local v4    # "createFile":Ljava/io/File;
     .end local v7    # "fd":Landroid/os/ParcelFileDescriptor;
     .end local v8    # "fileName":Ljava/lang/String;
@@ -1120,7 +1120,7 @@
     .restart local v8    # "fileName":Ljava/lang/String;
     goto/16 :goto_3
 
-    .line 637
+    .line 651
     .restart local v4    # "createFile":Ljava/io/File;
     .restart local v7    # "fd":Landroid/os/ParcelFileDescriptor;
     :cond_c
@@ -1136,7 +1136,7 @@
 
     goto :goto_4
 
-    .line 644
+    .line 658
     .end local v4    # "createFile":Ljava/io/File;
     .end local v7    # "fd":Landroid/os/ParcelFileDescriptor;
     .end local v8    # "fileName":Ljava/lang/String;
@@ -1151,16 +1151,16 @@
     :sswitch_3
     move-object/from16 v16, v14
 
-    .line 649
+    .line 663
     check-cast v16, Lcom/samsung/android/content/clipboard/data/SemUriClipData;
 
-    .line 650
+    .line 664
     .local v16, "uriClip":Lcom/samsung/android/content/clipboard/data/SemUriClipData;
     invoke-virtual/range {v16 .. v16}, Lcom/samsung/android/content/clipboard/data/SemUriClipData;->getThumbnailPath()Ljava/lang/String;
 
     move-result-object v11
 
-    .line 651
+    .line 665
     .restart local v11    # "path":Ljava/lang/String;
     const-string/jumbo v17, ""
 
@@ -1174,7 +1174,7 @@
 
     if-lez v17, :cond_11
 
-    .line 652
+    .line 666
     sget-object v17, Ljava/io/File;->separator:Ljava/lang/String;
 
     move-object/from16 v0, v17
@@ -1183,13 +1183,13 @@
 
     move-result v12
 
-    .line 653
+    .line 667
     .restart local v12    # "separatorIndex":I
     if-gez v12, :cond_10
 
     move-object v8, v11
 
-    .line 654
+    .line 668
     .restart local v8    # "fileName":Ljava/lang/String;
     :goto_5
     new-instance v4, Ljava/io/File;
@@ -1198,7 +1198,7 @@
 
     invoke-direct {v4, v0, v8}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 656
+    .line 670
     .restart local v4    # "createFile":Ljava/io/File;
     invoke-virtual/range {p2 .. p2}, Landroid/sec/clipboard/data/file/WrapFileClipData;->getClipData()Lcom/samsung/android/content/clipboard/data/SemClipData;
 
@@ -1208,7 +1208,7 @@
 
     move-result-object v7
 
-    .line 657
+    .line 671
     .restart local v7    # "fd":Landroid/os/ParcelFileDescriptor;
     if-eqz v7, :cond_e
 
@@ -1224,7 +1224,7 @@
 
     if-nez v17, :cond_f
 
-    .line 658
+    .line 672
     :cond_e
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
@@ -1244,10 +1244,10 @@
 
     move-result v17
 
-    .line 657
+    .line 671
     if-eqz v17, :cond_12
 
-    .line 659
+    .line 673
     :cond_f
     const-string/jumbo v17, "Clipboard.FileManager"
 
@@ -1255,19 +1255,19 @@
 
     invoke-static/range {v17 .. v18}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 661
+    .line 675
     const/16 v17, 0x0
 
     invoke-virtual/range {v16 .. v17}, Lcom/samsung/android/content/clipboard/data/SemClipData;->setParcelFileDescriptor(Landroid/os/ParcelFileDescriptor;)V
 
-    .line 662
+    .line 676
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v17
 
     invoke-virtual/range {v16 .. v17}, Lcom/samsung/android/content/clipboard/data/SemUriClipData;->setThumbnailPath(Ljava/lang/String;)Z
 
-    .line 663
+    .line 677
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v17
@@ -1280,7 +1280,7 @@
 
     invoke-static/range {v17 .. v20}, Landroid/os/FileUtils;->setPermissions(Ljava/lang/String;III)I
 
-    .line 666
+    .line 680
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v17
@@ -1291,12 +1291,12 @@
 
     invoke-virtual/range {v17 .. v18}, Landroid/sec/clipboard/util/FileHelper;->createThumnailImage(Ljava/lang/String;)Z
 
-    .line 668
+    .line 682
     const/16 v17, 0x1
 
     return v17
 
-    .line 653
+    .line 667
     .end local v4    # "createFile":Ljava/io/File;
     .end local v7    # "fd":Landroid/os/ParcelFileDescriptor;
     .end local v8    # "fileName":Ljava/lang/String;
@@ -1318,7 +1318,7 @@
     .restart local v8    # "fileName":Ljava/lang/String;
     goto :goto_5
 
-    .line 671
+    .line 685
     .end local v8    # "fileName":Ljava/lang/String;
     .end local v12    # "separatorIndex":I
     :cond_11
@@ -1326,7 +1326,7 @@
 
     return v17
 
-    .line 679
+    .line 693
     .end local v11    # "path":Ljava/lang/String;
     .end local v16    # "uriClip":Lcom/samsung/android/content/clipboard/data/SemUriClipData;
     :cond_12
@@ -1334,7 +1334,7 @@
 
     return v17
 
-    .line 558
+    .line 572
     nop
 
     :sswitch_data_0
@@ -1347,59 +1347,133 @@
 .end method
 
 .method private saveInfoFile()Z
-    .locals 3
+    .locals 5
 
     .prologue
     .line 419
-    new-instance v0, Ljava/util/ArrayList;
+    new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
 
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 420
-    .local v0, "saveList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
-    iget-object v1, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
+    .line 421
+    .local v1, "saveList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
+    :try_start_0
+    iget-object v3, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
-    iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->infoFile:Ljava/io/File;
+    monitor-enter v3
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    .line 422
+    :try_start_1
+    iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
-    move-result-object v2
+    iget-object v4, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->infoFile:Ljava/io/File;
 
-    invoke-virtual {v1, v2, v0}, Landroid/sec/clipboard/util/FileHelper;->saveObjectFile(Ljava/lang/String;Ljava/lang/Object;)Z
+    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result v1
+    move-result-object v4
 
-    return v1
+    invoke-virtual {v2, v4, v1}, Landroid/sec/clipboard/util/FileHelper;->saveObjectFile(Ljava/lang/String;Ljava/lang/Object;)Z
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    move-result v2
+
+    :try_start_2
+    monitor-exit v3
+
+    return v2
+
+    .line 421
+    :catchall_0
+    move-exception v2
+
+    monitor-exit v3
+
+    throw v2
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    .line 424
+    :catch_0
+    move-exception v0
+
+    .line 425
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 426
+    const/4 v2, 0x0
+
+    return v2
 .end method
 
 .method private saveTempInfoFile()Z
-    .locals 3
+    .locals 5
 
     .prologue
-    .line 425
-    new-instance v0, Ljava/util/ArrayList;
+    .line 432
+    new-instance v1, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
+    iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
 
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 426
-    .local v0, "saveList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
-    iget-object v1, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
+    .line 434
+    .local v1, "saveList":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
+    :try_start_0
+    iget-object v3, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
-    iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->infoTempFile:Ljava/io/File;
+    monitor-enter v3
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    .line 435
+    :try_start_1
+    iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
-    move-result-object v2
+    iget-object v4, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->infoTempFile:Ljava/io/File;
 
-    invoke-virtual {v1, v2, v0}, Landroid/sec/clipboard/util/FileHelper;->saveObjectFile(Ljava/lang/String;Ljava/lang/Object;)Z
+    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result v1
+    move-result-object v4
 
-    return v1
+    invoke-virtual {v2, v4, v1}, Landroid/sec/clipboard/util/FileHelper;->saveObjectFile(Ljava/lang/String;Ljava/lang/Object;)Z
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    move-result v2
+
+    :try_start_2
+    monitor-exit v3
+
+    return v2
+
+    .line 434
+    :catchall_0
+    move-exception v2
+
+    monitor-exit v3
+
+    throw v2
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    .line 437
+    :catch_0
+    move-exception v0
+
+    .line 438
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 439
+    const/4 v2, 0x0
+
+    return v2
 .end method
 
 
@@ -1408,7 +1482,7 @@
     .locals 0
 
     .prologue
-    .line 506
+    .line 520
     return-void
 .end method
 
@@ -1452,14 +1526,14 @@
     .locals 5
 
     .prologue
-    .line 683
+    .line 697
     const-string/jumbo v2, "Clipboard.FileManager"
 
     const-string/jumbo v3, "==========================================================="
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 685
+    .line 699
     iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
 
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -1481,7 +1555,7 @@
 
     check-cast v0, Landroid/sec/clipboard/data/file/WrapFileClipData;
 
-    .line 686
+    .line 700
     .local v0, "wrap":Landroid/sec/clipboard/data/file/WrapFileClipData;
     sget-boolean v2, Landroid/sec/clipboard/data/ClipboardConstants;->INFO_DEBUG:Z
 
@@ -1493,7 +1567,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 687
+    .line 701
     const-string/jumbo v2, "Clipboard.FileManager"
 
     invoke-virtual {v0}, Landroid/sec/clipboard/data/file/WrapFileClipData;->getClipData()Lcom/samsung/android/content/clipboard/data/SemClipData;
@@ -1506,7 +1580,7 @@
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 688
+    .line 702
     const-string/jumbo v2, "Clipboard.FileManager"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1539,7 +1613,7 @@
 
     goto :goto_0
 
-    .line 691
+    .line 705
     .end local v0    # "wrap":Landroid/sec/clipboard/data/file/WrapFileClipData;
     :cond_1
     const-string/jumbo v2, "Clipboard.FileManager"
@@ -1548,7 +1622,7 @@
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 682
+    .line 696
     return-void
 .end method
 
@@ -1556,14 +1630,14 @@
     .locals 6
 
     .prologue
-    .line 695
+    .line 709
     const-string/jumbo v3, "Clipboard.FileManager"
 
     const-string/jumbo v4, "run gc()1"
 
     invoke-static {v3, v4}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 696
+    .line 710
     iget-object v3, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
     iget-object v4, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->rootPath:Ljava/io/File;
@@ -1572,7 +1646,7 @@
 
     move-result-object v1
 
-    .line 699
+    .line 713
     .local v1, "list":[Ljava/io/File;
     if-eqz v1, :cond_0
 
@@ -1580,11 +1654,11 @@
 
     if-nez v3, :cond_1
 
-    .line 700
+    .line 714
     :cond_0
     return-void
 
-    .line 704
+    .line 718
     :cond_1
     iget-object v3, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
 
@@ -1592,10 +1666,10 @@
 
     move-result-object v1
 
-    .line 705
+    .line 719
     array-length v2, v1
 
-    .line 708
+    .line 722
     .local v2, "size":I
     const/4 v0, 0x0
 
@@ -1603,7 +1677,7 @@
     :goto_0
     if-ge v0, v2, :cond_3
 
-    .line 709
+    .line 723
     aget-object v3, v1, v0
 
     iget-object v4, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
@@ -1618,7 +1692,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 710
+    .line 724
     const-string/jumbo v3, "Clipboard.FileManager"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1657,20 +1731,20 @@
 
     invoke-static {v3, v4}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 711
+    .line 725
     iget-object v3, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
     aget-object v4, v1, v0
 
     invoke-virtual {v3, v4}, Landroid/sec/clipboard/util/FileHelper;->delete(Ljava/io/File;)V
 
-    .line 708
+    .line 722
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 694
+    .line 708
     :cond_3
     return-void
 .end method
@@ -1688,12 +1762,12 @@
     .end annotation
 
     .prologue
-    .line 451
+    .line 465
     invoke-virtual {p0}, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->createDataList()Ljava/util/ArrayList;
 
     move-result-object v1
 
-    .line 452
+    .line 466
     .local v1, "temp_list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
     iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
@@ -1705,14 +1779,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 453
+    .line 467
     const-string/jumbo v2, "Clipboard.FileManager"
 
     const-string/jumbo v3, "load ...info file"
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 455
+    .line 469
     :try_start_0
     iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
@@ -1727,24 +1801,24 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 462
+    .line 476
     :cond_0
     :goto_0
     if-nez v1, :cond_2
 
-    .line 463
+    .line 477
     sget-boolean v2, Landroid/sec/clipboard/data/ClipboardConstants;->DEBUG:Z
 
     if-eqz v2, :cond_1
 
-    .line 464
+    .line 478
     const-string/jumbo v2, "Clipboard.FileManager"
 
     const-string/jumbo v3, "failed load ...clips.info file"
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 466
+    .line 480
     :cond_1
     iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
@@ -1756,14 +1830,14 @@
 
     if-eqz v2, :cond_2
 
-    .line 467
+    .line 481
     const-string/jumbo v2, "Clipboard.FileManager"
 
     const-string/jumbo v3, "load ...clips.info_temp file"
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 471
+    .line 485
     :try_start_1
     iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
@@ -1777,30 +1851,30 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 480
+    .line 494
     :cond_2
     :goto_1
     if-nez v1, :cond_4
 
-    .line 481
+    .line 495
     sget-boolean v2, Landroid/sec/clipboard/data/ClipboardConstants;->DEBUG:Z
 
     if-eqz v2, :cond_3
 
-    .line 482
+    .line 496
     const-string/jumbo v2, "Clipboard.FileManager"
 
     const-string/jumbo v3, "failed to load info file. create new list."
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 484
+    .line 498
     :cond_3
     invoke-virtual {p0}, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->createDataList()Ljava/util/ArrayList;
 
     move-result-object v1
 
-    .line 488
+    .line 502
     :cond_4
     :try_start_2
     invoke-direct {p0, v1}, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->loadDataList(Ljava/util/ArrayList;)Ljava/util/ArrayList;
@@ -1811,49 +1885,49 @@
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 493
+    .line 507
     :goto_2
     iget-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
 
     return-object v2
 
-    .line 456
+    .line 470
     :catch_0
     move-exception v0
 
-    .line 457
+    .line 471
     .local v0, "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 458
+    .line 472
     const/4 v1, 0x0
 
     .local v1, "temp_list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
     goto :goto_0
 
-    .line 472
+    .line 486
     .end local v0    # "e":Ljava/lang/Exception;
     .end local v1    # "temp_list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
     :catch_1
     move-exception v0
 
-    .line 473
+    .line 487
     .restart local v0    # "e":Ljava/lang/Exception;
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 474
+    .line 488
     const/4 v1, 0x0
 
     .restart local v1    # "temp_list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
     goto :goto_1
 
-    .line 489
+    .line 503
     .end local v0    # "e":Ljava/lang/Exception;
     .end local v1    # "temp_list":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/sec/clipboard/data/file/WrapFileClipData;>;"
     :catch_2
     move-exception v0
 
-    .line 490
+    .line 504
     .restart local v0    # "e":Ljava/lang/Exception;
     invoke-virtual {p0}, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->createDataList()Ljava/util/ArrayList;
 
@@ -1861,7 +1935,7 @@
 
     iput-object v2, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
 
-    .line 491
+    .line 505
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_2
@@ -1871,7 +1945,7 @@
     .locals 3
 
     .prologue
-    .line 717
+    .line 731
     const-string/jumbo v0, "Clipboard.FileManager"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1896,14 +1970,14 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 718
+    .line 732
     iget-object v0, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
     iget-object v1, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->rootPath:Ljava/io/File;
 
     invoke-virtual {v0, v1}, Landroid/sec/clipboard/util/FileHelper;->delete(Ljava/io/File;)V
 
-    .line 716
+    .line 730
     return-void
 .end method
 
@@ -1911,14 +1985,14 @@
     .locals 5
 
     .prologue
-    .line 722
+    .line 736
     const-string/jumbo v3, "Clipboard.FileManager"
 
     const-string/jumbo v4, "run removeKNOXClipFilder()"
 
     invoke-static {v3, v4}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 723
+    .line 737
     iget-object v3, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
     iget-object v4, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->rootPath:Ljava/io/File;
@@ -1927,7 +2001,7 @@
 
     move-result-object v1
 
-    .line 726
+    .line 740
     .local v1, "list":[Ljava/io/File;
     if-eqz v1, :cond_0
 
@@ -1938,7 +2012,7 @@
     :cond_0
     return-void
 
-    .line 729
+    .line 743
     :cond_1
     iget-object v3, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->dataList:Ljava/util/ArrayList;
 
@@ -1946,10 +2020,10 @@
 
     move-result-object v1
 
-    .line 730
+    .line 744
     array-length v2, v1
 
-    .line 733
+    .line 747
     .local v2, "size":I
     const/4 v0, 0x0
 
@@ -1957,7 +2031,7 @@
     :goto_0
     if-ge v0, v2, :cond_4
 
-    .line 734
+    .line 748
     aget-object v3, v1, v0
 
     iget-object v4, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
@@ -1972,7 +2046,7 @@
 
     if-eqz v3, :cond_2
 
-    .line 735
+    .line 749
     aget-object v3, v1, v0
 
     invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -1995,14 +2069,14 @@
 
     if-eqz v3, :cond_3
 
-    .line 733
+    .line 747
     :cond_2
     :goto_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 738
+    .line 752
     :cond_3
     iget-object v3, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->fileHelper:Landroid/sec/clipboard/util/FileHelper;
 
@@ -2012,7 +2086,7 @@
 
     goto :goto_1
 
-    .line 721
+    .line 735
     :cond_4
     return-void
 .end method
@@ -2024,7 +2098,7 @@
     .prologue
     monitor-enter p0
 
-    .line 511
+    .line 525
     const/4 v0, 0x0
 
     :try_start_0
@@ -2056,30 +2130,30 @@
 
     monitor-enter p0
 
-    .line 515
+    .line 529
     :try_start_0
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v2
 
-    .line 516
+    .line 530
     .local v2, "fh":Landroid/sec/clipboard/util/FileHelper;
     new-instance v3, Ljava/lang/StringBuffer;
 
     invoke-direct {v3}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 518
+    .line 532
     .local v3, "sb":Ljava/lang/StringBuffer;
     iget-object v4, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->rootPath:Ljava/io/File;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
 
-    .line 519
+    .line 533
     const-string/jumbo v4, "/"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 520
+    .line 534
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result v4
@@ -2090,14 +2164,14 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 521
+    .line 535
     invoke-static {}, Landroid/sec/clipboard/util/StringHelper;->getUniqueString()Ljava/lang/StringBuffer;
 
     move-result-object v4
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
 
-    .line 524
+    .line 538
     new-instance v1, Ljava/io/File;
 
     invoke-virtual {v3}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
@@ -2106,7 +2180,7 @@
 
     invoke-direct {v1, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 526
+    .line 540
     .local v1, "dir":Ljava/io/File;
     if-nez p2, :cond_0
 
@@ -2116,7 +2190,7 @@
 
     if-eqz v4, :cond_0
 
-    .line 527
+    .line 541
     const-string/jumbo v4, "Clipboard.FileManager"
 
     const-string/jumbo v5, "Saving WrapFileClipData, folder already exists"
@@ -2127,10 +2201,10 @@
 
     monitor-exit p0
 
-    .line 528
+    .line 542
     return v6
 
-    .line 531
+    .line 545
     :cond_0
     :try_start_1
     invoke-virtual {v2, v1}, Landroid/sec/clipboard/util/FileHelper;->checkDir(Ljava/io/File;)Z
@@ -2139,10 +2213,10 @@
 
     if-nez v4, :cond_1
 
-    .line 532
+    .line 546
     invoke-virtual {v2, v1}, Landroid/sec/clipboard/util/FileHelper;->makeDir(Ljava/io/File;)V
 
-    .line 536
+    .line 550
     :cond_1
     invoke-direct {p0, v1, p1}, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->makeDataValue(Ljava/io/File;Landroid/sec/clipboard/data/file/WrapFileClipData;)Z
 
@@ -2150,12 +2224,12 @@
 
     if-eqz v4, :cond_3
 
-    .line 538
+    .line 552
     const-string/jumbo v4, "/clip"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 539
+    .line 553
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {v3}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
@@ -2164,7 +2238,7 @@
 
     invoke-direct {v0, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 540
+    .line 554
     .local v0, "cfile":Ljava/io/File;
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -2180,29 +2254,29 @@
 
     if-eqz v4, :cond_2
 
-    .line 541
+    .line 555
     const-string/jumbo v4, "Clipboard.FileManager"
 
     const-string/jumbo v5, "ok Wrap saveData"
 
     invoke-static {v4, v5}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 542
+    .line 556
     invoke-virtual {p1, v1}, Landroid/sec/clipboard/data/file/WrapFileClipData;->setDir(Ljava/io/File;)V
 
-    .line 543
+    .line 557
     invoke-virtual {p1, v0}, Landroid/sec/clipboard/data/file/WrapFileClipData;->setFile(Ljava/io/File;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 544
+    .line 558
     const/4 v4, 0x1
 
     monitor-exit p0
 
     return v4
 
-    .line 547
+    .line 561
     :cond_2
     :try_start_2
     const-string/jumbo v4, "Clipboard.FileManager"
@@ -2211,21 +2285,21 @@
 
     invoke-static {v4, v5}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 548
+    .line 562
     invoke-virtual {v2, v1}, Landroid/sec/clipboard/util/FileHelper;->delete(Ljava/io/File;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     monitor-exit p0
 
-    .line 549
+    .line 563
     return v6
 
     .end local v0    # "cfile":Ljava/io/File;
     :cond_3
     monitor-exit p0
 
-    .line 552
+    .line 566
     return v6
 
     .end local v1    # "dir":Ljava/io/File;

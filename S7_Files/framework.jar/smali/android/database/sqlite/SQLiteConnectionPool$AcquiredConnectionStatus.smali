@@ -44,37 +44,37 @@
 
     const/4 v2, 0x0
 
-    .line 99
+    .line 101
     new-instance v0, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
     const-string/jumbo v1, "NORMAL"
 
     invoke-direct {v0, v1, v2}, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;-><init>(Ljava/lang/String;I)V
 
-    .line 100
+    .line 102
     sput-object v0, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;->NORMAL:Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
-    .line 102
+    .line 104
     new-instance v0, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
     const-string/jumbo v1, "RECONFIGURE"
 
     invoke-direct {v0, v1, v3}, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;-><init>(Ljava/lang/String;I)V
 
-    .line 103
+    .line 105
     sput-object v0, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;->RECONFIGURE:Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
-    .line 105
+    .line 107
     new-instance v0, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
     const-string/jumbo v1, "DISCARD"
 
     invoke-direct {v0, v1, v4}, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;-><init>(Ljava/lang/String;I)V
 
-    .line 106
+    .line 108
     sput-object v0, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;->DISCARD:Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
-    .line 98
+    .line 100
     const/4 v0, 0x3
 
     new-array v0, v0, [Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
@@ -100,7 +100,7 @@
     .locals 0
 
     .prologue
-    .line 98
+    .line 100
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -111,7 +111,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 98
+    .line 100
     const-class v0, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -127,7 +127,7 @@
     .locals 1
 
     .prologue
-    .line 98
+    .line 100
     sget-object v0, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;->$VALUES:[Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
     return-object v0

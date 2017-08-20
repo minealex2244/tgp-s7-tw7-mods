@@ -125,7 +125,7 @@
     iput v1, p0, Lcom/android/systemui/recents/tv/animations/DismissAnimationsHolder;->mDismissStartYDelta:I
 
     .line 57
-    const v1, 0x7f0c0070
+    const v1, 0x7f0c0072
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -136,7 +136,7 @@
     iput-wide v2, p0, Lcom/android/systemui/recents/tv/animations/DismissAnimationsHolder;->mShortDuration:J
 
     .line 58
-    const v1, 0x7f0c0071
+    const v1, 0x7f0c0073
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -152,7 +152,7 @@
     if-nez v1, :cond_0
 
     .line 62
-    const v1, 0x7f0c0079
+    const v1, 0x7f0c007b
 
     .line 61
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getFloat(I)F
@@ -167,7 +167,7 @@
 
     .line 65
     :cond_0
-    const v1, 0x7f0c0080
+    const v1, 0x7f0c0082
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getFloat(I)F
 

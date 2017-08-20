@@ -3686,7 +3686,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s के साथ जोड़ने के लिए पास कुंजी %2$s प्रविष्ट करें।</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>से इस डिवाइस के साथ पेअर करें?</string>
     <string name="bluetooth_display_passkey_pin_msg">जोड़ने के लिए %2$s पर %1$s प्रविष्ट करें, बाद में “वापस जाएँ” या “प्रविष्ट करें” पर टैप करें।</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s से कनेक्ट नहीं किया जा सकता है। %2$s से कनेक्ट करने का प्रयास करें।</string>
     <string name="bluetooth_connecting_error_message">%s से कनेक्‍ट करने में असमर्थ।</string>
     <string name="bluetooth_preference_scan_title">स्कैन</string>
     <string name="bluetooth_preference_paired_devices">जोड़ें गए डिवाइसेस</string>

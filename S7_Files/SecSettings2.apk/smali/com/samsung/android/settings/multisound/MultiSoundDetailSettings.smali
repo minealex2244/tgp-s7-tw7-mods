@@ -157,7 +157,7 @@
     .line 74
     iget-object v4, p0, Lcom/samsung/android/settings/multisound/MultiSoundDetailSettings;->mDeviceType:Landroid/preference/PreferenceScreen;
 
-    const v5, 0x7f0b09dc
+    const v5, 0x7f0b09da
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
@@ -175,7 +175,7 @@
     .line 76
     iget-object v4, p0, Lcom/samsung/android/settings/multisound/MultiSoundDetailSettings;->mDeviceType:Landroid/preference/PreferenceScreen;
 
-    const v5, 0x7f0b09dd
+    const v5, 0x7f0b09db
 
     invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 

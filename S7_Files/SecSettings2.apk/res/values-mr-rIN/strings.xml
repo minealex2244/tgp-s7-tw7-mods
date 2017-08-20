@@ -3686,7 +3686,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s-शी पेअर करण्यासाठी पासकी %2$s सुनिश्चित करा.</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>वरुन&lt;br/>&lt;br/>या डिव्हाइससह पेअर करायचे?</string>
     <string name="bluetooth_display_passkey_pin_msg">पेअर करण्यासाठी %2$s वर %1$s प्रविष्ट करा, नंतर “परत या” किंवा “प्रविष्ट करा” टॅप करा.</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s शी कनेक्ट करू शकत नाही. %2$s मधून कनेक्ट करण्याचा प्रयत्न करा.</string>
     <string name="bluetooth_connecting_error_message">%s कनेक्ट करण्यास अक्षम.</string>
     <string name="bluetooth_preference_scan_title">स्कॅन करा</string>
     <string name="bluetooth_preference_paired_devices">पेअर्ड उपकरणे</string>
@@ -4087,7 +4086,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">आपली सर्व वैयक्तिक माहिती आणि डाउनलोड केलेले अनुप्रयोग खोडण्यात येतील आणि पुर्नप्राप्त करता येणार नाहीत.</string>
     <string name="master_clear_final_button_text">सर्व काढून टाका</string>
     <string name="master_clear_not_available">या पाहुण्या प्रोफाइलला फॅक्टरी डेटाची पुन्हा मांडणी करण्याची परवानगी नाही.</string>
-    <string name="master_clear_progress_title">पुन्हा मांडणी करा</string>
+    <string name="master_clear_progress_title">पुन्हा मांडणी करा.</string>
     <string name="master_clear_progress_text">कृपया वाट पहा…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB टेथरिंग</string>

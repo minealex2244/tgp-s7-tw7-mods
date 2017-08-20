@@ -30,36 +30,36 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 5109
+    .line 5128
     iput-object p1, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate;->this$0:Landroid/media/AudioManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5113
+    .line 5132
     if-eqz p3, :cond_0
 
-    .line 5114
+    .line 5133
     invoke-virtual {p3}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
     move-result-object v0
 
-    .line 5121
+    .line 5140
     .local v0, "looper":Landroid/os/Looper;
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 5123
+    .line 5142
     new-instance v1, Landroid/media/AudioManager$NativeEventHandlerDelegate$1;
 
     invoke-direct {v1, p0, v0, p2}, Landroid/media/AudioManager$NativeEventHandlerDelegate$1;-><init>(Landroid/media/AudioManager$NativeEventHandlerDelegate;Landroid/os/Looper;Landroid/media/AudioDeviceCallback;)V
 
     iput-object v1, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate;->mHandler:Landroid/os/Handler;
 
-    .line 5110
+    .line 5129
     :goto_1
     return-void
 
-    .line 5117
+    .line 5136
     .end local v0    # "looper":Landroid/os/Looper;
     :cond_0
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -69,7 +69,7 @@
     .restart local v0    # "looper":Landroid/os/Looper;
     goto :goto_0
 
-    .line 5147
+    .line 5166
     :cond_1
     iput-object v1, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate;->mHandler:Landroid/os/Handler;
 
@@ -82,7 +82,7 @@
     .locals 1
 
     .prologue
-    .line 5152
+    .line 5171
     iget-object v0, p0, Landroid/media/AudioManager$NativeEventHandlerDelegate;->mHandler:Landroid/os/Handler;
 
     return-object v0

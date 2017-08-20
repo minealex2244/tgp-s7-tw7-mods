@@ -383,7 +383,7 @@
 
     move-result-object v4
 
-    const v6, 0x7f0b1900
+    const v6, 0x7f0b18ff
 
     invoke-virtual {v4, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -516,7 +516,7 @@
     if-nez v3, :cond_1
 
     .line 188
-    const v6, 0x7f0b1901
+    const v6, 0x7f0b1900
 
     invoke-virtual {v2, v6}, Landroid/preference/Preference;->setSummary(I)V
 
@@ -661,7 +661,7 @@
     if-nez v1, :cond_0
 
     .line 169
-    const v4, 0x7f0b1901
+    const v4, 0x7f0b1900
 
     invoke-virtual {v0, v4}, Landroid/preference/Preference;->setSummary(I)V
 

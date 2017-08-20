@@ -39,7 +39,7 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    const v3, 0x7f0b1755
+    const v3, 0x7f0b1754
 
     const/4 v2, 0x0
 

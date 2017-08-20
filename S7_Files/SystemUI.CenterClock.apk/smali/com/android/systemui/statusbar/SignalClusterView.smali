@@ -1142,7 +1142,7 @@
     .line 853
     iget-object v7, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mNWBoosterWifiStrength:Landroid/widget/ImageView;
 
-    const v9, 0x7f0205f9
+    const v9, 0x7f0205f2
 
     invoke-direct {p0, v7, v9}, Lcom/android/systemui/statusbar/SignalClusterView;->setIconForView(Landroid/widget/ImageView;I)V
 

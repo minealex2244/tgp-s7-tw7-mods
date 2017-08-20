@@ -3706,7 +3706,6 @@ Wi-Fi is now on."</string>
     <string name="bluetooth_confirm_passkey_msg">ยืน​ยัน​รหัส​ผ่าน %2$s ​เพื่อ​จับ​คู่​กับ %1$s</string>
     <string name="bluetooth_incoming_pairing_msg">จาก&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>​จับ​คู่​กับ​อุปกรณ์​นี้?</string>
     <string name="bluetooth_display_passkey_pin_msg">ป้อน %1$s ​ใน %2$s ​เพื่อ​จับ​คู่ แล้ว​แตะ​ “รี​เทิร์น” ​หรือ​ “Enter”</string>
-    <string name="bluetooth_HID_connecting_error_message">ไม่สามารถเชื่อมต่อกับ %1$s ลองเชื่อมต่อจาก %2$s</string>
     <string name="bluetooth_connecting_error_message">ไม่​สามารถ​เชื่อม​ต่อ​กับ %s</string>
     <string name="bluetooth_preference_scan_title">ค้น​หา</string>
     <string name="bluetooth_preference_paired_devices">อุปกรณ์​ที่​จับ​คู่</string>
@@ -4107,7 +4106,7 @@ Wi-Fi is now on."</string>
     <string name="master_clear_final_desc">ข้อมูลส่วนตัวและแอพพลิเคชั่น ที่ดาวน์โหลดของคุณทั้งหมด จะถูกลบออก และกู้คืนไม่ได้</string>
     <string name="master_clear_final_button_text">ลบ​ทั้ง​หมด</string>
     <string name="master_clear_not_available">โปรไฟล์ของแขกนี้ไม่ได้รับอนุญาตให้ทำการรีเซ็ทข้อมูลจากโรงงาน</string>
-    <string name="master_clear_progress_title">รีเซ็ท</string>
+    <string name="master_clear_progress_title">ตั้ง​ค่า​ใหม่</string>
     <string name="master_clear_progress_text">กรุณา​รอ…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">การเชื่อมโยงเครือข่ายด้วย USB</string>

@@ -99,7 +99,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 89
-    const v1, 0x7f0b1267
+    const v1, 0x7f0b1266
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/wifi/mobileap/PinDialog;->setTitle(I)V
 

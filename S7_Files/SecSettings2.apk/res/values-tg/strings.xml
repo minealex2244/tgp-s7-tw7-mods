@@ -3546,7 +3546,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">Тасдиқ кунед ки калиди рамзӣ %2$s барои ҷуфт шудан бо %1$s аст.</string>
     <string name="bluetooth_incoming_pairing_msg">Аз&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Бо ин дастгоҳ ҷуфт шавад?</string>
     <string name="bluetooth_display_passkey_pin_msg">%1$s дар %2$s ворид карда, ҷуфт кунед, пас Бозгашт ё Вурудро зарба занед.</string>
-    <string name="bluetooth_HID_connecting_error_message">Пайваст ба %1$s ғайриимкон аст. Онро аз %2$s истифода баред.</string>
     <string name="bluetooth_connecting_error_message">Ба %s пайваст шуда наметавонад.</string>
     <string name="bluetooth_preference_scan_title">Ковиш</string>
     <string name="bluetooth_preference_paired_devices">Дастгоҳҳои ҳамроҳ</string>

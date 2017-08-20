@@ -272,12 +272,12 @@
 
     .line 332
     .local v0, "mAlertDialog":Landroid/app/AlertDialog$Builder;
-    const v1, 0x7f0b0966
+    const v1, 0x7f0b0964
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 333
-    const v1, 0x7f0b0968
+    const v1, 0x7f0b0966
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -721,7 +721,7 @@
     iput-object v1, p0, Lcom/samsung/android/settings/nfc/AndroidBeam;->mOldActivityTitle:Ljava/lang/CharSequence;
 
     .line 135
-    const v1, 0x7f0b093a
+    const v1, 0x7f0b0938
 
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(I)V
 

@@ -3686,7 +3686,6 @@ Nota: É posible que a túa impresión dixital sexa menos segura que un patrón 
     <string name="bluetooth_confirm_passkey_msg">Confirma que a clave de paso é %2$s para vincularse con %1$s</string>
     <string name="bluetooth_incoming_pairing_msg">De&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Emparellar con este dispositivo?</string>
     <string name="bluetooth_display_passkey_pin_msg">Introduce %1$s en %2$s para realizar a vinculación e, a continuación, toca Volver ou Introducir</string>
-    <string name="bluetooth_HID_connecting_error_message">Non se pode conectar con %1$s. Tenta conectarte desde %2$s.</string>
     <string name="bluetooth_connecting_error_message">Non se pode conectar a %s</string>
     <string name="bluetooth_preference_scan_title">Buscar</string>
     <string name="bluetooth_preference_paired_devices">Dispositivos vinculados</string>

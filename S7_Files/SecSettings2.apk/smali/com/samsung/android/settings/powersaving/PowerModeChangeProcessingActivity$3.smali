@@ -98,7 +98,7 @@
 
     iget-object v2, p0, Lcom/samsung/android/settings/powersaving/PowerModeChangeProcessingActivity$3;->this$0:Lcom/samsung/android/settings/powersaving/PowerModeChangeProcessingActivity;
 
-    const v3, 0x7f0b0a4e
+    const v3, 0x7f0b0a4c
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/settings/powersaving/PowerModeChangeProcessingActivity;->getString(I)Ljava/lang/String;
 
@@ -167,7 +167,7 @@
 
     iget-object v2, p0, Lcom/samsung/android/settings/powersaving/PowerModeChangeProcessingActivity$3;->this$0:Lcom/samsung/android/settings/powersaving/PowerModeChangeProcessingActivity;
 
-    const v3, 0x7f0b0a4d
+    const v3, 0x7f0b0a4b
 
     invoke-virtual {v2, v3}, Lcom/samsung/android/settings/powersaving/PowerModeChangeProcessingActivity;->getString(I)Ljava/lang/String;
 

@@ -320,6 +320,10 @@
 
     move-result-object v12
 
+    invoke-static {v12}, Landroid/app/enterprise/SimChangeInfo;->convertToOld(Lcom/samsung/android/knox/deviceinfo/SimChangeInfo;)Landroid/app/enterprise/SimChangeInfo;
+
+    move-result-object v12
+
     .line 752
     invoke-virtual {v5, v11, v12}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -361,6 +365,10 @@
     invoke-direct {v13, v14}, Lcom/samsung/android/knox/ContextInfo;-><init>(I)V
 
     invoke-virtual {v12, v13}, Lcom/android/server/enterprise/general/MiscPolicy;->getLastSimChangeInfo(Lcom/samsung/android/knox/ContextInfo;)Lcom/samsung/android/knox/deviceinfo/SimChangeInfo;
+
+    move-result-object v12
+
+    invoke-static {v12}, Landroid/app/enterprise/SimChangeInfo;->convertToOld(Lcom/samsung/android/knox/deviceinfo/SimChangeInfo;)Landroid/app/enterprise/SimChangeInfo;
 
     move-result-object v12
 
@@ -570,6 +578,10 @@
 
     move-result-object v12
 
+    invoke-static {v12}, Landroid/app/enterprise/SimChangeInfo;->convertToOld(Lcom/samsung/android/knox/deviceinfo/SimChangeInfo;)Landroid/app/enterprise/SimChangeInfo;
+
+    move-result-object v12
+
     .line 789
     invoke-virtual {v5, v11, v12}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -611,6 +623,10 @@
     invoke-direct {v13, v14}, Lcom/samsung/android/knox/ContextInfo;-><init>(I)V
 
     invoke-virtual {v12, v13}, Lcom/android/server/enterprise/general/MiscPolicy;->getLastSimChangeInfo(Lcom/samsung/android/knox/ContextInfo;)Lcom/samsung/android/knox/deviceinfo/SimChangeInfo;
+
+    move-result-object v12
+
+    invoke-static {v12}, Landroid/app/enterprise/SimChangeInfo;->convertToOld(Lcom/samsung/android/knox/deviceinfo/SimChangeInfo;)Landroid/app/enterprise/SimChangeInfo;
 
     move-result-object v12
 

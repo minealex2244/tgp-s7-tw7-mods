@@ -3684,7 +3684,6 @@ Wi-Fi 現已開啟。"</string>
     <string name="bluetooth_confirm_passkey_msg">確認密碼為 %2$s 以與 %1$s 配對。</string>
     <string name="bluetooth_incoming_pairing_msg">來自&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>與此裝置配對？</string>
     <string name="bluetooth_display_passkey_pin_msg">於 %2$s 上輸入 %1$s 以配對，然後輕觸 [返回] 或 [輸入]。</string>
-    <string name="bluetooth_HID_connecting_error_message">無法連接至 %1$s。請嘗試從 %2$s 連接。</string>
     <string name="bluetooth_connecting_error_message">無法連接到 %s。</string>
     <string name="bluetooth_preference_scan_title">掃描</string>
     <string name="bluetooth_preference_paired_devices">已配對裝置</string>

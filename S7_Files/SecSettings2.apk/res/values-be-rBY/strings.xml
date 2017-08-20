@@ -3691,7 +3691,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">Пацвердзіце ключ доступу «%2$s» для спалучэння з «%1$s».</string>
     <string name="bluetooth_incoming_pairing_msg">Ад&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Спалучыць з гэтай прыладай?</string>
     <string name="bluetooth_display_passkey_pin_msg">Увядзіце %1$s на %2$s для спалучэння, а потым націсніце «Вярнуцца» або «Увод».</string>
-    <string name="bluetooth_HID_connecting_error_message">Немагчыма падлучыцца да %1$s. Паспрабуйце падлучыцца з %2$s.</string>
     <string name="bluetooth_connecting_error_message">Немагчыма падлучыцца да «%s».</string>
     <string name="bluetooth_preference_scan_title">Шукаць</string>
     <string name="bluetooth_preference_paired_devices">Спалучаныя прылады</string>

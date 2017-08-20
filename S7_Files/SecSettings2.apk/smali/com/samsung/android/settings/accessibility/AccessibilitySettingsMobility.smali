@@ -460,7 +460,7 @@
     .locals 6
 
     .prologue
-    const v5, 0x7f0b088e
+    const v5, 0x7f0b088c
 
     const/4 v4, 0x1
 
@@ -1216,7 +1216,7 @@
     .locals 13
 
     .prologue
-    const v12, 0x7f0b1612
+    const v12, 0x7f0b1611
 
     const/4 v11, 0x0
 
@@ -1273,7 +1273,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b0b5c
+    const v10, 0x7f0b0b5a
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1600,7 +1600,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b0b7e
+    const v10, 0x7f0b0b7c
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1705,7 +1705,7 @@
 
     move-result-object v9
 
-    const v10, 0x7f0b0b5c
+    const v10, 0x7f0b0b5a
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3010,7 +3010,7 @@
     if-eqz v20, :cond_5
 
     .line 805
-    const v20, 0x7f0b1645
+    const v20, 0x7f0b1644
 
     move-object/from16 v0, p0
 
@@ -3045,7 +3045,7 @@
     const-string/jumbo v20, "settings_title"
 
     .line 812
-    const v21, 0x7f0b1616
+    const v21, 0x7f0b1615
 
     move-object/from16 v0, p0
 
@@ -4911,7 +4911,7 @@
     move-result-object v3
 
     .line 460
-    const v4, 0x7f0b160f
+    const v4, 0x7f0b160e
 
     .line 459
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;

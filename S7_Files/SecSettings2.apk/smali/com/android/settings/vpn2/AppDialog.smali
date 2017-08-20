@@ -60,7 +60,7 @@
 
     .line 69
     .local v0, "context":Landroid/content/Context;
-    const v1, 0x7f0b180a
+    const v1, 0x7f0b1809
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -72,7 +72,7 @@
     invoke-virtual {p0, v2, v1, p0}, Lcom/android/settings/vpn2/AppDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 73
-    const v1, 0x7f0b1805
+    const v1, 0x7f0b1804
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -138,7 +138,7 @@
 
     aput-object v2, v1, v3
 
-    const v2, 0x7f0b180e
+    const v2, 0x7f0b180d
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

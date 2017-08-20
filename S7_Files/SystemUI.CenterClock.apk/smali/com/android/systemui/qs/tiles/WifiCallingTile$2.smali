@@ -25,7 +25,7 @@
     .param p2, "$anonymous0"    # Landroid/os/Handler;
 
     .prologue
-    .line 412
+    .line 402
     iput-object p1, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile$2;->this$0:Lcom/android/systemui/qs/tiles/WifiCallingTile;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -40,22 +40,22 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    .line 416
+    .line 406
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
-    .line 418
+    .line 408
     sget-boolean v0, Lcom/android/systemui/SystemUIRune;->SUPPORT_QS_ATTWFC:Z
 
     if-eqz v0, :cond_0
 
-    .line 419
+    .line 409
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile$2;->this$0:Lcom/android/systemui/qs/tiles/WifiCallingTile;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->-set0(Lcom/android/systemui/qs/tiles/WifiCallingTile;Z)Z
 
-    .line 421
+    .line 411
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/WifiCallingTile$2;->this$0:Lcom/android/systemui/qs/tiles/WifiCallingTile;
 
@@ -71,6 +71,6 @@
 
     invoke-static {v0, v1}, Lcom/android/systemui/qs/tiles/WifiCallingTile;->-wrap2(Lcom/android/systemui/qs/tiles/WifiCallingTile;Ljava/lang/Object;)V
 
-    .line 415
+    .line 405
     return-void
 .end method

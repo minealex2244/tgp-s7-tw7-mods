@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/clipboardex/ClipboardExService;
 
     .prologue
-    .line 1453
+    .line 1455
     iput-object p1, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -41,28 +41,28 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 1456
+    .line 1458
     iget v4, p1, Landroid/os/Message;->what:I
 
     packed-switch v4, :pswitch_data_0
 
-    .line 1494
+    .line 1496
     const-string/jumbo v4, "ClipboardExService"
 
     const-string/jumbo v5, "handler msg : default"
 
     invoke-static {v4, v5}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1495
+    .line 1497
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 1455
+    .line 1457
     :cond_0
     :goto_0
     :pswitch_0
     return-void
 
-    .line 1461
+    .line 1463
     :pswitch_1
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -78,7 +78,7 @@
 
     invoke-static {v4, v5}, Lcom/android/server/clipboardex/ClipboardExService;->-set1(Lcom/android/server/clipboardex/ClipboardExService;Landroid/sec/clipboard/ClipboardUIManager;)Landroid/sec/clipboard/ClipboardUIManager;
 
-    .line 1462
+    .line 1464
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v4}, Lcom/android/server/clipboardex/ClipboardExService;->-get4(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/ClipboardUIManager;
@@ -101,7 +101,7 @@
 
     goto :goto_0
 
-    .line 1466
+    .line 1468
     :pswitch_2
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -117,7 +117,7 @@
 
     invoke-static {v4, v5}, Lcom/android/server/clipboardex/ClipboardExService;->-set1(Lcom/android/server/clipboardex/ClipboardExService;Landroid/sec/clipboard/ClipboardUIManager;)Landroid/sec/clipboard/ClipboardUIManager;
 
-    .line 1467
+    .line 1469
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v4}, Lcom/android/server/clipboardex/ClipboardExService;->-get4(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/ClipboardUIManager;
@@ -140,7 +140,7 @@
 
     goto :goto_0
 
-    .line 1471
+    .line 1473
     :pswitch_3
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -156,14 +156,14 @@
 
     invoke-static {v4, v5}, Lcom/android/server/clipboardex/ClipboardExService;->-set1(Lcom/android/server/clipboardex/ClipboardExService;Landroid/sec/clipboard/ClipboardUIManager;)Landroid/sec/clipboard/ClipboardUIManager;
 
-    .line 1472
+    .line 1474
     const-string/jumbo v4, "ClipboardExService"
 
     const-string/jumbo v5, "mCBUIManager enter case. MSG_DISMISS_DIALOG"
 
     invoke-static {v4, v5}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1473
+    .line 1475
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v4}, Lcom/android/server/clipboardex/ClipboardExService;->-get4(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/ClipboardUIManager;
@@ -172,31 +172,31 @@
 
     invoke-virtual {v4}, Landroid/sec/clipboard/ClipboardUIManager;->dismiss()V
 
-    .line 1474
+    .line 1476
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v4, v6}, Lcom/android/server/clipboardex/ClipboardExService;->-set1(Lcom/android/server/clipboardex/ClipboardExService;Landroid/sec/clipboard/ClipboardUIManager;)Landroid/sec/clipboard/ClipboardUIManager;
 
     goto :goto_0
 
-    .line 1478
+    .line 1480
     :pswitch_4
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 1479
+    .line 1481
     .local v0, "bundle":Landroid/os/Bundle;
     if-eqz v0, :cond_0
 
-    .line 1480
+    .line 1482
     const-string/jumbo v4, "path"
 
     invoke-virtual {v0, v4}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1482
+    .line 1484
     .local v2, "filePath":Ljava/lang/String;
     new-instance v1, Landroid/content/Intent;
 
@@ -204,18 +204,18 @@
 
     invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 1483
+    .line 1485
     .local v1, "deleteIntent":Landroid/content/Intent;
     const/16 v4, 0x20
 
     invoke-virtual {v1, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 1484
+    .line 1486
     const-string/jumbo v4, "path"
 
     invoke-virtual {v1, v4, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 1486
+    .line 1488
     new-instance v3, Landroid/os/UserHandle;
 
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
@@ -226,7 +226,7 @@
 
     invoke-direct {v3, v4}, Landroid/os/UserHandle;-><init>(I)V
 
-    .line 1487
+    .line 1489
     .local v3, "user":Landroid/os/UserHandle;
     iget-object v4, p0, Lcom/android/server/clipboardex/ClipboardExService$1;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -236,7 +236,7 @@
 
     invoke-virtual {v4, v1, v3}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 1489
+    .line 1491
     const-string/jumbo v4, "ClipboardExService"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -265,7 +265,7 @@
 
     goto/16 :goto_0
 
-    .line 1456
+    .line 1458
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

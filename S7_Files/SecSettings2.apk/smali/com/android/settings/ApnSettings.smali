@@ -3029,7 +3029,7 @@
 
     .line 882
     .local v0, "mAlertDialog":Landroid/app/AlertDialog$Builder;
-    const v1, 0x7f0b0acf
+    const v1, 0x7f0b0acd
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
@@ -3583,7 +3583,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b143d
+    const v2, 0x7f0b143c
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3689,7 +3689,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b143e
+    const v2, 0x7f0b143d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

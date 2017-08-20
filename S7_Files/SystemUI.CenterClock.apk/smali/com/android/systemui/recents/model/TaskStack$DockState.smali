@@ -344,7 +344,7 @@
     new-instance v0, Lcom/android/systemui/recents/model/TaskStack$DockState$ViewState;
 
     .line 512
-    const v4, 0x7f0f045e
+    const v4, 0x7f0f045c
 
     .line 511
     const/4 v5, 0x0

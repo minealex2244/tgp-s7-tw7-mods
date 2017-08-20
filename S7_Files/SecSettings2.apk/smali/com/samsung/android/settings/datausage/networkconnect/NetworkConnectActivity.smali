@@ -1923,7 +1923,7 @@
     .line 149
     iget-object v7, p0, Lcom/samsung/android/settings/datausage/networkconnect/NetworkConnectActivity;->mWlanText:Landroid/widget/TextView;
 
-    const v8, 0x7f0b0c50
+    const v8, 0x7f0b0c4e
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/datausage/networkconnect/NetworkConnectActivity;->getString(I)Ljava/lang/String;
 
@@ -1934,7 +1934,7 @@
     .line 150
     iget-object v7, p0, Lcom/samsung/android/settings/datausage/networkconnect/NetworkConnectActivity;->mMobileText:Landroid/widget/TextView;
 
-    const v8, 0x7f0b0c4f
+    const v8, 0x7f0b0c4d
 
     invoke-virtual {p0, v8}, Lcom/samsung/android/settings/datausage/networkconnect/NetworkConnectActivity;->getString(I)Ljava/lang/String;
 

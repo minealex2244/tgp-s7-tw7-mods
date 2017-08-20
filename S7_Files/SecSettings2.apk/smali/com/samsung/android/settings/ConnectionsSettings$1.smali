@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/samsung/android/settings/ConnectionsSettings;
 
     .prologue
-    .line 137
+    .line 136
     iput-object p1, p0, Lcom/samsung/android/settings/ConnectionsSettings$1;->this$0:Lcom/samsung/android/settings/ConnectionsSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 140
+    .line 139
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 141
+    .line 140
     .local v0, "action":Ljava/lang/String;
     const-string/jumbo v1, "wificalling"
 
@@ -69,7 +69,7 @@
 
     invoke-static {v1, v2}, Lcom/samsung/android/util/SemLog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 142
+    .line 141
     const-string/jumbo v1, "android.intent.action.SIM_STATE_CHANGED"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -78,28 +78,28 @@
 
     if-nez v1, :cond_0
 
-    .line 143
+    .line 142
     const-string/jumbo v1, "com.samsung.ims.action.onsimloaded"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    .line 142
+    .line 141
     if-eqz v1, :cond_1
 
-    .line 144
+    .line 143
     :cond_0
     iget-object v1, p0, Lcom/samsung/android/settings/ConnectionsSettings$1;->this$0:Lcom/samsung/android/settings/ConnectionsSettings;
 
     invoke-static {v1}, Lcom/samsung/android/settings/ConnectionsSettings;->-wrap0(Lcom/samsung/android/settings/ConnectionsSettings;)Z
 
-    .line 145
+    .line 144
     iget-object v1, p0, Lcom/samsung/android/settings/ConnectionsSettings$1;->this$0:Lcom/samsung/android/settings/ConnectionsSettings;
 
     invoke-static {v1}, Lcom/samsung/android/settings/ConnectionsSettings;->-wrap1(Lcom/samsung/android/settings/ConnectionsSettings;)V
 
-    .line 139
+    .line 138
     :cond_1
     return-void
 .end method

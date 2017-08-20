@@ -3546,7 +3546,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s ସହ ପେୟାର କରିବାକୁ ନିଶ୍ଚିତ ପାସକୀ ହେଉଛି %2$s।</string>
     <string name="bluetooth_incoming_pairing_msg">ଠାରୁ&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>ଏହି ଡିଭାଇସ୍ ସହିତ ଯୋଡିବେ?</string>
     <string name="bluetooth_display_passkey_pin_msg">ପେୟାର୍ କରିବାକୁ %2$sରେ %1$s ପ୍ରବେଶ କରନ୍ତୁ, ତାପରେ ଫେରସ୍ତ କିମ୍ଵା “ପ୍ରବେଶ” ଟ୍ୟାପ୍‍ କରନ୍ତୁ।</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$sକୁ ସଂଯୋଗ କରିପାରିବେ ନାହିଁ। %2$sରୁ ସଂଯୋଗ କରିବାକୁ ଚେଷ୍ଟା କରନ୍ତୁ।</string>
     <string name="bluetooth_connecting_error_message">%sକୁ ସଂଯୋଗ କରିବା ଅସମର୍ଥ ଅଟେ।</string>
     <string name="bluetooth_preference_scan_title">ସ୍କାନ୍</string>
     <string name="bluetooth_preference_paired_devices">ପେୟାର୍ ହୋଇଥିବା ଡିଭାଇସଗୁଡିକ</string>
@@ -3947,7 +3946,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">ଆପଣଙ୍କ ସମସ୍ତ ବ୍ୟକ୍ତିଗତ ସୂଚନା ଏବଂ ଡାଉନଲୋଡ୍ ହୋଇଥିବା ଆପ୍ଲିକେସନଗୁଡିକ ବିଲୋପ ହେବ ଏବଂ ପୁନରୁଦ୍ଧାର ହୋଇପାରିବ ନାହିଁ।</string>
     <string name="master_clear_final_button_text">ସମସ୍ତ ବିଲୋପ</string>
     <string name="master_clear_not_available">ଏହି ଅତିଥି ପ୍ରୋଫାଇଲ୍ ଗୋଟିଏ ଫ୍ୟାକ୍ଟୋରୀ ଡାଟା ପୁନଃସେଟ୍ କାର୍ଯ୍ୟ ସମ୍ପାଦନ କରିବାକୁ ଅନୁମତି ନାହିଁ।</string>
-    <string name="master_clear_progress_title">ପୂର୍ବସେଟ୍</string>
+    <string name="master_clear_progress_title">ପୁନଃସେଟ୍</string>
     <string name="master_clear_progress_text">ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB ଟିଥରିଂ</string>

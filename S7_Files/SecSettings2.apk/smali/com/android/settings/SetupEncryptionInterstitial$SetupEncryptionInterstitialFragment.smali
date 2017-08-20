@@ -160,7 +160,7 @@
     invoke-virtual {v3, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 100
-    const v4, 0x7f0b19e6
+    const v4, 0x7f0b19e5
 
     invoke-virtual {v1, v4}, Lcom/android/setupwizardlib/SetupWizardPreferenceLayout;->setHeaderText(I)V
 

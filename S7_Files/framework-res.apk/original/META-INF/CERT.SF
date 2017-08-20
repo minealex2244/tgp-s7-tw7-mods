@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA-256-Digest-Manifest: 65V2pbwQi5LKUufFh8XN5Q7XXOoRp7OegByGDgWWO2E=
+SHA-256-Digest-Manifest: Sp2XQNylXMYQqva95WYKdFwe3/F2+5Wv2Z2mGpEH/DM=
 Created-By: 1.0 (Android SignApk)
 
 Name: res/drawable-xxhdpi-v4/btn_radio_on_holo.png
@@ -829,7 +829,7 @@ Name: res/drawable-xxhdpi-v4/textfield_focused_holo_dark.9.png
 SHA-256-Digest: sLzO8Bbtp07iziwqC456lxwdTSSw6saeAbw98x+07ZE=
 
 Name: AndroidManifest.xml
-SHA-256-Digest: 9tG5aNBflMTYct4+LPAWaZlIXCcwjUYffqpb/5p/PC0=
+SHA-256-Digest: bI1d8QWSa3+xoVUfRFabyDLJn6ialNmOvH+kfHJTRtI=
 
 Name: res/drawable-xxhdpi-v4/ic_media_pause.png
 SHA-256-Digest: RisQ8JfMxFY2Q9lK0tAV7A+URtY+d9StkwiFbmhbPXo=
@@ -2637,7 +2637,7 @@ Name: res/layout/sem_resolver_profile_button.xml
 SHA-256-Digest: 0A4382FUKAV4iTxz3rIRjYm5ZUZuC/yTT4P+tg9niXY=
 
 Name: res/xml/enterprisedata.xml
-SHA-256-Digest: 5mHRSffjz6GwyyQgbvL8f8Z8B480mn5eCfVq8Mf/1AQ=
+SHA-256-Digest: B6IiO0L0jf69GuqT9IGKKnJha3AfLyF2wL8MOibdvME=
 
 Name: res/drawable/ic_menu_moreoverflow_holo_light.xml
 SHA-256-Digest: wFwySCC7DS0VoCvfZcqBa17KSL2wGgRyUd4BnI+UOfA=
@@ -4791,7 +4791,7 @@ Name: res/drawable/tw_vertical_bar_mtrl_alpha.png
 SHA-256-Digest: mjS9oKCvyAPCagQ3Lwj5Bv97jyXfjQBwZ5kRFVgWwYo=
 
 Name: resources.arsc
-SHA-256-Digest: Y2PBv8uTe4U1nnbzURViP0RRZ2wL6w82eyScZwsmGUo=
+SHA-256-Digest: QOfXtNkEc68y7aGhQtztvP2/LXBWJVposfEGRGVqj50=
 
 Name: res/drawable-xhdpi-v4/checkbox_off_background.png
 SHA-256-Digest: dmYkQIiWGUBc8nh2exu4JpIIW/6inZdVDW9toPS02CQ=
@@ -4969,7 +4969,7 @@ Name: res/drawable-mdpi-v4/tw_btn_radio_to_on_mtrl_011.png
 SHA-256-Digest: 0gJT9cNz+r71VJFm1zpggBuWRGB9K0fOKjsJUi28sXY=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: 3ayu0q4sbuWb/VQPQrF2dHLDpQh+o81cxPFrMAbYWHo=
+SHA-256-Digest: ie7toKfY1VSaO5N0ScDt4iHl+ztQ0m9adohbZlm61do=
 
 Name: res/drawable-xxhdpi-v4/rate_star_med_off_holo_dark.png
 SHA-256-Digest: iSgH0YilDyWilLB+ihq83xPOoDG63dnHSP2ef9035vs=
@@ -6031,7 +6031,7 @@ Name: res/layout-sw600dp-v13/tw_preference_fragment_bread_crumb_item_d
 SHA-256-Digest: +Qy6z6HkhjT6ySRpa0DX+rlSkJ9ozDgFqP4NHtEQkTw=
 
 Name: res/xml/sms_short_codes.xml
-SHA-256-Digest: HMQluW216xujBqVSptOhL/mys/ZMwEU2R9Bdr7VgMY8=
+SHA-256-Digest: rZiyeKjHCuhXqc1Q951vlrcfn2i+uIDl15fYcKIbNco=
 
 Name: res/anim/sem_resolver_exit.xml
 SHA-256-Digest: OTHet5Q2h4xm52I58HJiX4V7Ufl70RtrO0/X3R9wgUY=

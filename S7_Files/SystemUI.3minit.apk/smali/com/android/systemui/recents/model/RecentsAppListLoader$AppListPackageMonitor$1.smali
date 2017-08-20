@@ -30,7 +30,7 @@
     .param p2, "val$packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 395
+    .line 337
     iput-object p1, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$1;->this$1:Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor;
 
     iput-object p2, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$1;->val$packageName:Ljava/lang/String;
@@ -46,7 +46,7 @@
     .locals 2
 
     .prologue
-    .line 398
+    .line 340
     iget-object v0, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$1;->this$1:Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor;
 
     iget-object v1, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$1;->val$packageName:Ljava/lang/String;
@@ -57,7 +57,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 399
+    .line 341
     invoke-static {}, Lcom/android/systemui/recents/events/EventBus;->getDefault()Lcom/android/systemui/recents/events/EventBus;
 
     move-result-object v0
@@ -68,7 +68,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/recents/events/EventBus;->sendOntoMainThread(Lcom/android/systemui/recents/events/EventBus$Event;)V
 
-    .line 397
+    .line 339
     :cond_0
     return-void
 .end method

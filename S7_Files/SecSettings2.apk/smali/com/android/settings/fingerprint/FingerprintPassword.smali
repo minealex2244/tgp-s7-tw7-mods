@@ -272,7 +272,7 @@
 
     .line 120
     :cond_0
-    const v3, 0x7f0b14b5
+    const v3, 0x7f0b14b4
 
     invoke-virtual {p0, v3}, Lcom/android/settings/fingerprint/FingerprintPassword;->getText(I)Ljava/lang/CharSequence;
 

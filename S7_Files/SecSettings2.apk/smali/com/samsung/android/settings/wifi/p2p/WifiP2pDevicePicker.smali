@@ -538,9 +538,9 @@
 
     .prologue
     .line 1152
-    const v0, 0x7f0b0c6b
+    const v0, 0x7f0b0c69
 
-    const v1, 0x7f0b0c6e
+    const v1, 0x7f0b0c6c
 
     const/4 v2, 0x0
 
@@ -752,7 +752,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b0ccb
+    const v3, 0x7f0b0cc9
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1504,7 +1504,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0ccc
+    const v2, 0x7f0b0cca
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1952,7 +1952,7 @@
 
     move-result-object v7
 
-    const v8, 0x7f0b0c6c
+    const v8, 0x7f0b0c6a
 
     invoke-static {v7, v8, v9}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -2372,7 +2372,7 @@
     .line 1186
     iget-object v1, p0, Lcom/samsung/android/settings/wifi/p2p/WifiP2pDevicePicker;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
-    const v2, 0x7f0b0c64
+    const v2, 0x7f0b0c62
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/wifi/p2p/WifiP2pDevicePicker;->getString(I)Ljava/lang/String;
 
@@ -3004,7 +3004,7 @@
     const/4 v3, 0x0
 
     .line 693
-    const v1, 0x7f0b0c69
+    const v1, 0x7f0b0c67
 
     invoke-interface {p1, v3, v2, v3, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -3190,7 +3190,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f0b0ccc
+    const v4, 0x7f0b0cca
 
     invoke-virtual {v1, v4}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -3224,7 +3224,7 @@
     .param p3, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v10, 0x7f0b0ccc
+    const v10, 0x7f0b0cca
 
     const/4 v7, 0x0
 
@@ -4777,7 +4777,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0c6a
+    const v4, 0x7f0b0c68
 
     invoke-static {v3, v4, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -4885,7 +4885,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0ccc
+    const v4, 0x7f0b0cca
 
     invoke-virtual {v3, v4}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 

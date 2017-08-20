@@ -891,7 +891,7 @@
 
     aput-object v4, v3, v2
 
-    const v4, 0x7f0b0a3a
+    const v4, 0x7f0b0a38
 
     invoke-virtual {p0, v4, v3}, Lcom/samsung/android/settings/powersaving/PowerSavingValueFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1098,7 +1098,7 @@
     .line 426
     iget-object v0, p0, Lcom/samsung/android/settings/powersaving/PowerSavingValueFragment;->mAlwaysOnDisplay:Landroid/preference/SwitchPreference;
 
-    const v1, 0x7f0b0a42
+    const v1, 0x7f0b0a40
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/powersaving/PowerSavingValueFragment;->getString(I)Ljava/lang/String;
 
@@ -1970,7 +1970,7 @@
 
     iget-object v3, p0, Lcom/samsung/android/settings/powersaving/PowerSavingValueFragment;->mContext:Landroid/content/Context;
 
-    const v4, 0x7f0b0a2a
+    const v4, 0x7f0b0a28
 
     invoke-virtual {v3, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -2335,7 +2335,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f0b084c
+    const v23, 0x7f0b084a
 
     invoke-virtual/range {v22 .. v23}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3049,7 +3049,7 @@
 
     move-object/from16 v22, v0
 
-    const v23, 0x7f0b0a33
+    const v23, 0x7f0b0a31
 
     invoke-virtual/range {v22 .. v23}, Lcom/android/settings/widget/SecIntervalSeekbarPreference;->setSummary(I)V
 
@@ -3932,7 +3932,7 @@
     if-ne v4, v8, :cond_3
 
     .line 467
-    const v4, 0x7f0b0a46
+    const v4, 0x7f0b0a44
 
     invoke-virtual {p0, v4}, Lcom/samsung/android/settings/powersaving/PowerSavingValueFragment;->getString(I)Ljava/lang/String;
 
@@ -4055,7 +4055,7 @@
     .line 468
     .end local v1    # "list":Landroid/widget/ListView;
     :cond_3
-    const v4, 0x7f0b0a47
+    const v4, 0x7f0b0a45
 
     invoke-virtual {p0, v4}, Lcom/samsung/android/settings/powersaving/PowerSavingValueFragment;->getString(I)Ljava/lang/String;
 

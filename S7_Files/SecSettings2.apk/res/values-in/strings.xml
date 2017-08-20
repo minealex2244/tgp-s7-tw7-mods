@@ -3687,7 +3687,6 @@ Catatan: Sidik jari Anda mungkin kurang aman dibanding PIN atau pola yang kuat.
     <string name="bluetooth_confirm_passkey_msg">Kunci sandi konfirmasi adalah %2$s untuk berpasangan dengan %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Dari&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Pasangkan dengan perangkat ini?</string>
     <string name="bluetooth_display_passkey_pin_msg">Masukkan %1$s pada %2$s untuk memasangkan, lalu ketuk Kembali atau Masukkan.</string>
-    <string name="bluetooth_HID_connecting_error_message">Tidak dapat tersambung ke %1$s. Coba menyambung dari %2$s.</string>
     <string name="bluetooth_connecting_error_message">Tidak bisa menyambung ke %s.</string>
     <string name="bluetooth_preference_scan_title">Pindai</string>
     <string name="bluetooth_preference_paired_devices">Perangkat terpasang</string>

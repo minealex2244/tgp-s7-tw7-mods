@@ -202,7 +202,7 @@
 
     .line 183
     .local v2, "activeInputMethodsCategory":Landroid/preference/PreferenceCategory;
-    const v17, 0x7f0b15df
+    const v17, 0x7f0b15de
 
     move/from16 v0, v17
 
@@ -371,7 +371,7 @@
     if-eqz v17, :cond_5
 
     .line 220
-    const v17, 0x7f0b15e0
+    const v17, 0x7f0b15df
 
     .line 219
     move/from16 v0, v17

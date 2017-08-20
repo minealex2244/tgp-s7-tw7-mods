@@ -408,7 +408,7 @@
 
     .line 125
     :cond_4
-    const v10, 0x7f0b0b2f
+    const v10, 0x7f0b0b2d
 
     invoke-virtual {v1, v10}, Landroid/widget/CheckBox;->setText(I)V
 

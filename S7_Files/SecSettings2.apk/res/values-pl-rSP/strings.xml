@@ -3547,7 +3547,6 @@ Uwaga: Twój odcisk palca może być mniej bezpieczny niż silny symbol lub kod 
     <string name="bluetooth_confirm_passkey_msg">Je żeś zicher, co klucz dostympu to %2$s, coby powiōnzać ze maszinōm %1$s?</string>
     <string name="bluetooth_incoming_pairing_msg">Ôd:&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Zepnōńć z tōm maszinōm?</string>
     <string name="bluetooth_display_passkey_pin_msg">Podej %1$s na %2$s coby skuplować, a potym tyknij Nazŏd abo OK.</string>
-    <string name="bluetooth_HID_connecting_error_message">Niy idzie zepnōńć z: %1$s. Wybadej coby chycić gŏdka z: %2$s.</string>
     <string name="bluetooth_connecting_error_message">Niy idzie połōnczyć z %s.</string>
     <string name="bluetooth_preference_scan_title">Szukej za</string>
     <string name="bluetooth_preference_paired_devices">Skuplowane masziny</string>
@@ -3948,7 +3947,7 @@ Rozważ użycie szybszej karty pamięci lub urządzenia pamięci USB w celu popr
     <string name="master_clear_final_desc">Wszyjskie info ȏsobiste i zebrane aplikacyje bydōm wyciepniynte i niy poradzisz ich wrōcić nazŏd.</string>
     <string name="master_clear_final_button_text">Wyciep wszyjsko</string>
     <string name="master_clear_not_available">Profil gościa niy mŏ przizwolyniŏ, coby łōnaczyć fabryczny reset danych.</string>
-    <string name="master_clear_progress_title">Resetowanie</string>
+    <string name="master_clear_progress_title">Wynuluj</string>
     <string name="master_clear_progress_text">Czekejcie…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB tethering</string>

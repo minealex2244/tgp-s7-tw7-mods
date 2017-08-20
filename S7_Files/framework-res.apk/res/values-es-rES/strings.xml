@@ -1355,7 +1355,7 @@ Turn on Airplane mode?"</string>
     <string name="permlab_mdmKioskMode">Activar modo Quiosco</string>
     <string name="permdesc_mdmKioskMode">Bloquear el dispositivo para restringir el acceso únicamente a las aplicaciones aprobadas.</string>
     <string name="permlab_mdmEnterpriseSSO">Configurar los ajustes de SSO empresarial en modo Knox</string>
-    <string name="permdesc_mdmEnterpriseSSO">Permita que la aplicación configure los ajustes de SSO empresarial y elimine tokens de SSO en modo Knox.</string>
+    <string name="permdesc_mdmEnterpriseSSO">Permite que la aplicación configure los ajustes de SSO empresarial y elimine tokens de SSO en modo Knox.</string>
     <string name="permlab_mdmEnterpriseContainer">Configurar Knox Workspace</string>
     <string name="permdesc_mdmEnterpriseContainer">Crear, editar y eliminar cuentas de Knox Workspace y usuarios asociados</string>
     <string name="permlab_mdmEnterpriseISL">Políticas de servicio de integridad</string>
@@ -1511,7 +1511,7 @@ Turn on Airplane mode?"</string>
     <string name="restriction_VPN_allowUserAddProfiles">La política de seguridad restringe la creación de perfiles VPN.</string>
     <string name="restriction_ccmode_support">Este dispositivo es compatible con el CC Mode.</string>
     <string name="smartclip_restrict">La política de seguridad impide el uso de Easy clip.</string>
-    <string name="admin_device_restart">El administrador reiniciará su dispositivo.</string>
+    <string name="admin_device_restart">El administrador reiniciará tu dispositivo.</string>
     <string name="application_default_restrict">El administrador del dispositivo ha establecido otra aplicación como predeterminada.</string>
     <string name="constrained_status_bar_device_locked">Dispositivo bloqueado</string>
     <string name="restriction_msg_app_installed">Aplicación instalada</string>

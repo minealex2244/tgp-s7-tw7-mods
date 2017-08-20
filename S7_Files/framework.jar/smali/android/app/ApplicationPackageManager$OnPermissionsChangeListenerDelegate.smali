@@ -37,22 +37,22 @@
     .param p3, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 3861
+    .line 3865
     iput-object p1, p0, Landroid/app/ApplicationPackageManager$OnPermissionsChangeListenerDelegate;->this$0:Landroid/app/ApplicationPackageManager;
 
     invoke-direct {p0}, Landroid/content/pm/IOnPermissionsChangeListener$Stub;-><init>()V
 
-    .line 3863
+    .line 3867
     iput-object p2, p0, Landroid/app/ApplicationPackageManager$OnPermissionsChangeListenerDelegate;->mListener:Landroid/content/pm/PackageManager$OnPermissionsChangedListener;
 
-    .line 3864
+    .line 3868
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0, p3, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
     iput-object v0, p0, Landroid/app/ApplicationPackageManager$OnPermissionsChangeListenerDelegate;->mHandler:Landroid/os/Handler;
 
-    .line 3862
+    .line 3866
     return-void
 .end method
 
@@ -63,32 +63,32 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 3874
+    .line 3878
     iget v1, p1, Landroid/os/Message;->what:I
 
     packed-switch v1, :pswitch_data_0
 
-    .line 3881
+    .line 3885
     const/4 v1, 0x0
 
     return v1
 
-    .line 3876
+    .line 3880
     :pswitch_0
     iget v0, p1, Landroid/os/Message;->arg1:I
 
-    .line 3877
+    .line 3881
     .local v0, "uid":I
     iget-object v1, p0, Landroid/app/ApplicationPackageManager$OnPermissionsChangeListenerDelegate;->mListener:Landroid/content/pm/PackageManager$OnPermissionsChangedListener;
 
     invoke-interface {v1, v0}, Landroid/content/pm/PackageManager$OnPermissionsChangedListener;->onPermissionsChanged(I)V
 
-    .line 3878
+    .line 3882
     const/4 v1, 0x1
 
     return v1
 
-    .line 3874
+    .line 3878
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0
@@ -100,7 +100,7 @@
     .param p1, "uid"    # I
 
     .prologue
-    .line 3869
+    .line 3873
     iget-object v0, p0, Landroid/app/ApplicationPackageManager$OnPermissionsChangeListenerDelegate;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x1
@@ -113,6 +113,6 @@
 
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 3868
+    .line 3872
     return-void
 .end method

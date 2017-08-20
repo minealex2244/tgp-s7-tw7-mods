@@ -3686,7 +3686,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s સાથે જોડી બનાવવા માટે પુષ્ટિ કરો કે પાસકી %2$s છે.</string>
     <string name="bluetooth_incoming_pairing_msg">પ્રેષક&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>આ ડિવાઇસ સાથે જોડી બનાવીએ?</string>
     <string name="bluetooth_display_passkey_pin_msg">જોડી બનાવવા માટે %2$s પર %1$s દાખલ કરો, પછી “રિટર્ન” અથવા “એન્ટર” ટેપ કરો.</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s થી જોડી શકાતું નથી. %2$s દ્વારા જોડવાનો પ્રયાસ કરો.</string>
     <string name="bluetooth_connecting_error_message">%s થી જોડાણ કરવામાં અક્ષમ.</string>
     <string name="bluetooth_preference_scan_title">સ્કેન કરો</string>
     <string name="bluetooth_preference_paired_devices">ઉપકરણની જોડી બનાવી</string>

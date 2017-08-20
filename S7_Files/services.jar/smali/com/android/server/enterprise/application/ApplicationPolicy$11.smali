@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     .prologue
-    .line 6756
+    .line 6755
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$11;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -44,19 +44,19 @@
 
     const/4 v8, 0x0
 
-    .line 6758
+    .line 6757
     const-string/jumbo v5, "ApplicationPolicy"
 
     const-string/jumbo v6, "registerECContainerRemovalListener"
 
     invoke-static {v5, v6}, Lcom/android/server/enterprise/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6760
+    .line 6759
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 6761
+    .line 6760
     .local v0, "bundle":Landroid/os/Bundle;
     const-string/jumbo v5, "personaid"
 
@@ -64,7 +64,7 @@
 
     move-result v3
 
-    .line 6762
+    .line 6761
     .local v3, "personaId":I
     const-string/jumbo v5, "owneruid"
 
@@ -72,13 +72,13 @@
 
     move-result v2
 
-    .line 6763
+    .line 6762
     .local v2, "ownerUid":I
     invoke-static {v2}, Landroid/os/UserHandle;->getUserId(I)I
 
     move-result v4
 
-    .line 6764
+    .line 6763
     .local v4, "ui":I
     const-string/jumbo v5, "isEC"
 
@@ -86,7 +86,7 @@
 
     move-result v1
 
-    .line 6765
+    .line 6764
     .local v1, "isEC":Z
     const-string/jumbo v5, "ApplicationPolicy"
 
@@ -130,32 +130,32 @@
 
     invoke-static {v5, v6}, Lcom/android/server/enterprise/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6766
+    .line 6765
     if-eqz v1, :cond_0
 
-    .line 6768
+    .line 6767
     if-ne v4, v3, :cond_1
 
-    .line 6769
+    .line 6768
     iget-object v5, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$11;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     const-string/jumbo v6, "com.sec.knox.knoxecswitcher/com.sec.knox.knoxecswitcher.SwitchECActivity"
 
     invoke-static {v5, v6, v9, v8}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-wrap1(Lcom/android/server/enterprise/application/ApplicationPolicy;Ljava/lang/String;Ljava/lang/String;I)Z
 
-    .line 6770
+    .line 6769
     iget-object v5, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$11;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     const-string/jumbo v6, "com.sec.knox.knoxecswitcher"
 
     invoke-static {v5, v6, v9, v8}, Lcom/android/server/enterprise/application/ApplicationPolicy;->-wrap0(Lcom/android/server/enterprise/application/ApplicationPolicy;Ljava/lang/String;[BI)Z
 
-    .line 6757
+    .line 6756
     :cond_0
     :goto_0
     return-void
 
-    .line 6772
+    .line 6771
     :cond_1
     iget-object v5, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$11;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 

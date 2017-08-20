@@ -3687,7 +3687,6 @@ Obs! Ditt fingeravtryck kan vara mindre säkert än ett bra mönster eller en br
     <string name="bluetooth_confirm_passkey_msg">Bekräfta att koden är %2$s för sammankoppling med %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Från&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Sammankoppla med den här enheten?</string>
     <string name="bluetooth_display_passkey_pin_msg">Ange %1$s på %2$s för att sammankoppla och tryck sedan retur eller enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Det går inte att ansluta till %1$s. Försök att ansluta från %2$s.</string>
     <string name="bluetooth_connecting_error_message">Det går inte att ansluta till %s.</string>
     <string name="bluetooth_preference_scan_title">Sök</string>
     <string name="bluetooth_preference_paired_devices">Sammankopplade enheter</string>

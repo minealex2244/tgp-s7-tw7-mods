@@ -1950,7 +1950,7 @@
 
     iget-object v5, p0, Lcom/samsung/android/settings/nfc/PaymentDropDownPreference;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b0952
+    const v6, 0x7f0b0950
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

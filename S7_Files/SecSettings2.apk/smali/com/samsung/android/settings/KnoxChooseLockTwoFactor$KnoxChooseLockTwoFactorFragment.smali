@@ -1991,7 +1991,7 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    const v10, 0x7f0b079a
+    const v10, 0x7f0b0798
 
     const/4 v9, -0x1
 
@@ -2288,7 +2288,7 @@
 
     aput-object v0, v6, v4
 
-    const v7, 0x7f0b0793
+    const v7, 0x7f0b0791
 
     invoke-virtual {v5, v7, v6}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2579,7 +2579,7 @@
 
     aput-object v0, v6, v4
 
-    const v7, 0x7f0b0794
+    const v7, 0x7f0b0792
 
     invoke-virtual {v5, v7, v6}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -2761,7 +2761,7 @@
 
     new-array v6, v3, [Ljava/lang/Object;
 
-    const v7, 0x7f0b074c
+    const v7, 0x7f0b074a
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/KnoxChooseLockTwoFactor$KnoxChooseLockTwoFactorFragment;->getString(I)Ljava/lang/String;
 

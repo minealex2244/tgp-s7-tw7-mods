@@ -3546,7 +3546,6 @@ Bellik: Barmak yzyňyz şablonça ýa-da PIN-çe howpsuz bolman biler.
     <string name="bluetooth_confirm_passkey_msg">Tassyklanan açar %1$s bilen %2$s</string>
     <string name="bluetooth_incoming_pairing_msg">Şundan&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Bu enjam bilen jübütlemelimi?</string>
     <string name="bluetooth_display_passkey_pin_msg">%1$s-i %2$s-niň üstüne jübütlemäge giriz, soňra Yzyňa dolanma ýa-da Girizme düwmesine bas</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s birigip bolmaýar. %2$s içinden birigip görüň.</string>
     <string name="bluetooth_connecting_error_message">%s birigip bolmaýar.</string>
     <string name="bluetooth_preference_scan_title">Skan et</string>
     <string name="bluetooth_preference_paired_devices">Jübütleşdirilen enjamlar</string>

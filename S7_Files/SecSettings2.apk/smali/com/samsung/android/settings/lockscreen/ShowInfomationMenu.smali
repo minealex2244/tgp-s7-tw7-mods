@@ -264,7 +264,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0b0867
+    const v7, 0x7f0b0865
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -284,7 +284,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0b0ae8
+    const v7, 0x7f0b0ae6
 
     invoke-virtual {v6, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -473,7 +473,7 @@
     if-eqz v3, :cond_9
 
     .line 172
-    const v3, 0x7f0b19d8
+    const v3, 0x7f0b19d7
 
     .line 171
     :goto_4
@@ -555,7 +555,7 @@
 
     .line 172
     :cond_9
-    const v3, 0x7f0b19d9
+    const v3, 0x7f0b19d8
 
     goto :goto_4
 
@@ -1228,7 +1228,7 @@
     if-eqz v2, :cond_1
 
     .line 385
-    const v2, 0x7f0b084a
+    const v2, 0x7f0b0848
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1237,7 +1237,7 @@
     .line 388
     .local v1, "dialogMsg":Ljava/lang/String;
     :goto_0
-    const v2, 0x7f0b0848
+    const v2, 0x7f0b0846
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -1274,7 +1274,7 @@
     .line 387
     .end local v1    # "dialogMsg":Ljava/lang/String;
     :cond_1
-    const v2, 0x7f0b084b
+    const v2, 0x7f0b0849
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1391,7 +1391,7 @@
     .line 229
     iget-object v1, p0, Lcom/samsung/android/settings/lockscreen/ShowInfomationMenu;->mOwnerInfo:Lcom/samsung/android/settingslib/RestrictedPreference;
 
-    const v2, 0x7f0b0849
+    const v2, 0x7f0b0847
 
     invoke-virtual {v1, v2}, Lcom/samsung/android/settingslib/RestrictedPreference;->setSummary(I)V
 
@@ -1918,7 +1918,7 @@
     .local v5, "args":Landroid/os/Bundle;
     const-string/jumbo v2, "com.android.settings.WeatherSettings"
 
-    const v3, 0x7f0b0848
+    const v3, 0x7f0b0846
 
     move-object v0, p0
 

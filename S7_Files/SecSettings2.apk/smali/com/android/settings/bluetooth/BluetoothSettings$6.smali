@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/settings/bluetooth/BluetoothSettings;
 
     .prologue
-    .line 905
+    .line 907
     iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$6;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 909
+    .line 911
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$6;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
 
     invoke-virtual {v1}, Lcom/android/settings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
@@ -52,7 +52,7 @@
 
     check-cast v0, Lcom/android/settings/SettingsActivity;
 
-    .line 910
+    .line 912
     .local v0, "activity":Lcom/android/settings/SettingsActivity;
     const-class v1, Lcom/android/settings/location/ScanningSettings;
 
@@ -60,8 +60,8 @@
 
     move-result-object v1
 
-    .line 911
-    const v3, 0x7f0b07c3
+    .line 913
+    const v3, 0x7f0b07c1
 
     const/4 v6, 0x0
 
@@ -69,9 +69,9 @@
 
     move-object v5, v2
 
-    .line 910
+    .line 912
     invoke-virtual/range {v0 .. v6}, Lcom/android/settings/SettingsActivity;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
-    .line 907
+    .line 909
     return-void
 .end method

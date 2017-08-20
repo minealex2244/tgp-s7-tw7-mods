@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     .prologue
-    .line 1567
+    .line 1531
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$SubListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     invoke-direct {p0}, Landroid/telephony/SubscriptionManager$OnSubscriptionsChangedListener;-><init>()V
@@ -48,11 +48,11 @@
     .locals 1
 
     .prologue
-    .line 1570
+    .line 1534
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$SubListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->-wrap2(Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;)V
 
-    .line 1569
+    .line 1533
     return-void
 .end method

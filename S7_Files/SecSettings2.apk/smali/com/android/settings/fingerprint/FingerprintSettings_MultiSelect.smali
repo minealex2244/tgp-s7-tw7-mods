@@ -1210,7 +1210,7 @@
     move-result-object v7
 
     .line 1066
-    const v8, 0x7f0b1707
+    const v8, 0x7f0b1706
 
     .line 1065
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -4048,7 +4048,7 @@
 
     .prologue
     .line 856
-    const v0, 0x7f0b18b0
+    const v0, 0x7f0b18af
 
     return v0
 .end method

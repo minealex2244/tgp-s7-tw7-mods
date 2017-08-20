@@ -40,7 +40,7 @@
     .param p1, "selfChange"    # Z
 
     .prologue
-    const v0, 0x7f0b19d9
+    const v0, 0x7f0b19d8
 
     const/4 v4, 0x1
 
@@ -127,7 +127,7 @@
     if-eqz v2, :cond_2
 
     .line 475
-    const v0, 0x7f0b19d8
+    const v0, 0x7f0b19d7
 
     .line 474
     :cond_2

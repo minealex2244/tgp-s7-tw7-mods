@@ -36,7 +36,7 @@
     .param p4, "val$appUidF"    # I
 
     .prologue
-    .line 1542
+    .line 1540
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$14;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$14;->val$guts:Lcom/android/systemui/statusbar/NotificationGuts;
@@ -57,7 +57,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1544
+    .line 1542
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$14;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mContext:Landroid/content/Context;
@@ -66,12 +66,12 @@
 
     invoke-static {v0, v1}, Lcom/android/internal/logging/MetricsLogger;->action(Landroid/content/Context;I)V
 
-    .line 1545
+    .line 1543
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$14;->val$guts:Lcom/android/systemui/statusbar/NotificationGuts;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/NotificationGuts;->resetFalsingCheck()V
 
-    .line 1546
+    .line 1544
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$14;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$14;->val$pkg:Ljava/lang/String;
@@ -80,6 +80,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/BaseStatusBar;->startAppNotificationSettingsActivity(Ljava/lang/String;I)V
 
-    .line 1543
+    .line 1541
     return-void
 .end method

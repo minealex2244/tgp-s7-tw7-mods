@@ -3686,7 +3686,6 @@ Wi-Fi is now on."</string>
     <string name="bluetooth_confirm_passkey_msg">‫قم بتأكيد أن مفتاح المرور هو %2$s للإقتران مع %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">من&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>هل تريد الإقتران بهذا الجهاز؟</string>
     <string name="bluetooth_display_passkey_pin_msg">أدخل %1$s على %2$s للإقتران ثم انقر فوق ”رجوع“ أو ”إدخال“.</string>
-    <string name="bluetooth_HID_connecting_error_message">يتعذر الاتصال بـ %1$s. حاول الاتصال من %2$s.</string>
     <string name="bluetooth_connecting_error_message">يتعذر الاتصال بـ %s.</string>
     <string name="bluetooth_preference_scan_title">بحث</string>
     <string name="bluetooth_preference_paired_devices">الأجهزة المقترنة</string>
@@ -4087,7 +4086,7 @@ Wi-Fi is now on."</string>
     <string name="master_clear_final_desc">سيتم حذف جميع معلوماتك الشخصية والتطبيقات التي تم تنزيلها وسيتعذّر استردادها.</string>
     <string name="master_clear_final_button_text">مسح الكل</string>
     <string name="master_clear_not_available">لا يملك ملف تعريف الضيف هذا إذناً لإجراء إعادة ضبط بيانات المصنع.</string>
-    <string name="master_clear_progress_title">إعادة الضبط</string>
+    <string name="master_clear_progress_title">إرجاع</string>
     <string name="master_clear_progress_text">يرجى الانتظار …</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">تقييد USB</string>

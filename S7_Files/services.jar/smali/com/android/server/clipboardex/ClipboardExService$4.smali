@@ -36,7 +36,7 @@
     .param p4, "val$data"    # Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     .prologue
-    .line 1023
+    .line 1025
     iput-object p1, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     iput-object p2, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$addItem:Lcom/samsung/android/content/clipboard/data/SemClipData;
@@ -56,10 +56,10 @@
     .locals 14
 
     .prologue
-    .line 1027
+    .line 1029
     const/4 v7, 0x0
 
-    .line 1028
+    .line 1030
     .local v7, "thumFullPath":Ljava/lang/String;
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$addItem:Lcom/samsung/android/content/clipboard/data/SemClipData;
 
@@ -75,18 +75,18 @@
 
     if-ne v11, v12, :cond_4
 
-    .line 1029
+    .line 1031
     iget-object v3, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$addItem:Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     check-cast v3, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
 
-    .line 1030
+    .line 1032
     .local v3, "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     invoke-virtual {v3}, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;->getThumbnailImagePath()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1031
+    .line 1033
     .local v2, "firstImagePath":Ljava/lang/String;
     const-string/jumbo v11, ""
 
@@ -96,7 +96,7 @@
 
     if-eqz v11, :cond_1
 
-    .line 1032
+    .line 1034
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v11}, Lcom/android/server/clipboardex/ClipboardExService;->-get6(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/content/Context;
@@ -105,7 +105,7 @@
 
     if-eqz v11, :cond_3
 
-    .line 1033
+    .line 1035
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v11
@@ -120,7 +120,7 @@
 
     move-result-object v7
 
-    .line 1034
+    .line 1036
     .local v7, "thumFullPath":Ljava/lang/String;
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -128,7 +128,7 @@
 
     invoke-static {v11, v12}, Lcom/android/server/clipboardex/ClipboardExService;->-set2(Lcom/android/server/clipboardex/ClipboardExService;Landroid/content/Context;)Landroid/content/Context;
 
-    .line 1038
+    .line 1040
     .end local v7    # "thumFullPath":Ljava/lang/String;
     :cond_0
     :goto_0
@@ -140,14 +140,14 @@
 
     if-lez v11, :cond_1
 
-    .line 1039
+    .line 1041
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$addItem:Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     check-cast v11, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
 
     invoke-virtual {v11, v7}, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;->setThumbnailImagePath(Ljava/lang/String;)Z
 
-    .line 1057
+    .line 1059
     .end local v2    # "firstImagePath":Ljava/lang/String;
     .end local v3    # "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     :cond_1
@@ -176,7 +176,7 @@
 
     if-eqz v11, :cond_8
 
-    .line 1058
+    .line 1060
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     iget-object v12, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$addItem:Lcom/samsung/android/content/clipboard/data/SemClipData;
@@ -189,7 +189,7 @@
 
     invoke-static {v11, v12, v13}, Lcom/android/server/clipboardex/ClipboardExService;->-wrap6(Lcom/android/server/clipboardex/ClipboardExService;ILjava/lang/String;)V
 
-    .line 1059
+    .line 1061
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     iget-object v12, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
@@ -206,7 +206,7 @@
 
     invoke-static {v11, v12}, Lcom/android/server/clipboardex/ClipboardExService;->-wrap7(Lcom/android/server/clipboardex/ClipboardExService;Lcom/samsung/android/content/clipboard/data/SemClipData;)V
 
-    .line 1060
+    .line 1062
     iget-object v12, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
@@ -222,7 +222,7 @@
     :goto_2
     invoke-static {v12, v11}, Lcom/android/server/clipboardex/ClipboardExService;->-set0(Lcom/android/server/clipboardex/ClipboardExService;Z)Z
 
-    .line 1061
+    .line 1063
     const-string/jumbo v11, "ClipboardExService"
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -251,22 +251,22 @@
 
     invoke-static {v11, v12}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1067
+    .line 1069
     :goto_3
     iget v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$format:I
 
     sparse-switch v11, :sswitch_data_0
 
-    .line 1089
+    .line 1091
     :goto_4
     if-eqz v7, :cond_2
 
-    .line 1090
+    .line 1092
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1091
+    .line 1093
     .local v0, "deleteFile":Ljava/io/File;
     new-instance v5, Ljava/io/File;
 
@@ -274,7 +274,7 @@
 
     invoke-direct {v5, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 1093
+    .line 1095
     .local v5, "pasteFile":Ljava/io/File;
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
@@ -286,7 +286,7 @@
 
     if-nez v11, :cond_a
 
-    .line 1094
+    .line 1096
     const-string/jumbo v11, "ClipboardExService"
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -309,14 +309,14 @@
 
     invoke-static {v11, v12}, Landroid/sec/clipboard/util/Log;->secW(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1025
+    .line 1027
     .end local v0    # "deleteFile":Ljava/io/File;
     .end local v5    # "pasteFile":Ljava/io/File;
     :cond_2
     :goto_5
     return-void
 
-    .line 1035
+    .line 1037
     .restart local v2    # "firstImagePath":Ljava/lang/String;
     .restart local v3    # "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     .local v7, "thumFullPath":Ljava/lang/String;
@@ -329,7 +329,7 @@
 
     if-eqz v11, :cond_0
 
-    .line 1036
+    .line 1038
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v11
@@ -347,7 +347,7 @@
     .local v7, "thumFullPath":Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 1042
+    .line 1044
     .end local v2    # "firstImagePath":Ljava/lang/String;
     .end local v3    # "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     .local v7, "thumFullPath":Ljava/lang/String;
@@ -366,18 +366,18 @@
 
     if-ne v11, v12, :cond_1
 
-    .line 1043
+    .line 1045
     iget-object v10, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$addItem:Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     check-cast v10, Lcom/samsung/android/content/clipboard/data/SemUriClipData;
 
-    .line 1044
+    .line 1046
     .local v10, "uriData":Lcom/samsung/android/content/clipboard/data/SemUriClipData;
     invoke-virtual {v10}, Lcom/samsung/android/content/clipboard/data/SemUriClipData;->getThumbnailPath()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 1045
+    .line 1047
     .local v8, "thumbnailImagePath":Ljava/lang/String;
     const-string/jumbo v11, ""
 
@@ -387,7 +387,7 @@
 
     if-eqz v11, :cond_1
 
-    .line 1046
+    .line 1048
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v11}, Lcom/android/server/clipboardex/ClipboardExService;->-get6(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/content/Context;
@@ -396,7 +396,7 @@
 
     if-eqz v11, :cond_6
 
-    .line 1047
+    .line 1049
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v11
@@ -411,7 +411,7 @@
 
     move-result-object v7
 
-    .line 1051
+    .line 1053
     .end local v7    # "thumFullPath":Ljava/lang/String;
     :cond_5
     :goto_6
@@ -423,7 +423,7 @@
 
     if-lez v11, :cond_1
 
-    .line 1052
+    .line 1054
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$addItem:Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     check-cast v11, Lcom/samsung/android/content/clipboard/data/SemUriClipData;
@@ -432,7 +432,7 @@
 
     goto/16 :goto_1
 
-    .line 1048
+    .line 1050
     .restart local v7    # "thumFullPath":Ljava/lang/String;
     :cond_6
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
@@ -443,7 +443,7 @@
 
     if-eqz v11, :cond_5
 
-    .line 1049
+    .line 1051
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v11
@@ -461,7 +461,7 @@
     .local v7, "thumFullPath":Ljava/lang/String;
     goto :goto_6
 
-    .line 1060
+    .line 1062
     .end local v7    # "thumFullPath":Ljava/lang/String;
     .end local v8    # "thumbnailImagePath":Ljava/lang/String;
     .end local v10    # "uriData":Lcom/samsung/android/content/clipboard/data/SemUriClipData;
@@ -470,7 +470,7 @@
 
     goto/16 :goto_2
 
-    .line 1063
+    .line 1065
     :cond_8
     const-string/jumbo v11, "ClipboardExService"
 
@@ -480,23 +480,23 @@
 
     goto/16 :goto_3
 
-    .line 1069
+    .line 1071
     :sswitch_0
     iget-object v9, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->val$data:Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     check-cast v9, Lcom/samsung/android/content/clipboard/data/SemImageClipData;
 
-    .line 1070
+    .line 1072
     .local v9, "trgData":Lcom/samsung/android/content/clipboard/data/SemImageClipData;
     invoke-virtual {v9}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->getBitmapPath()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 1071
+    .line 1073
     .local v4, "imagePath":Ljava/lang/String;
     const-string/jumbo v1, ""
 
-    .line 1072
+    .line 1074
     .local v1, "extraFilePath":Ljava/lang/String;
     invoke-virtual {v9}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->HasExtraData()Z
 
@@ -504,12 +504,12 @@
 
     if-eqz v11, :cond_9
 
-    .line 1073
+    .line 1075
     invoke-virtual {v9}, Lcom/samsung/android/content/clipboard/data/SemImageClipData;->getExtraDataPath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1075
+    .line 1077
     :cond_9
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -517,7 +517,7 @@
 
     goto/16 :goto_4
 
-    .line 1078
+    .line 1080
     .end local v1    # "extraFilePath":Ljava/lang/String;
     .end local v4    # "imagePath":Ljava/lang/String;
     .end local v9    # "trgData":Lcom/samsung/android/content/clipboard/data/SemImageClipData;
@@ -526,13 +526,13 @@
 
     check-cast v10, Lcom/samsung/android/content/clipboard/data/SemUriClipData;
 
-    .line 1079
+    .line 1081
     .restart local v10    # "uriData":Lcom/samsung/android/content/clipboard/data/SemUriClipData;
     invoke-virtual {v10}, Lcom/samsung/android/content/clipboard/data/SemUriClipData;->getThumbnailPath()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 1080
+    .line 1082
     .local v6, "previewImagePath":Ljava/lang/String;
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -542,7 +542,7 @@
 
     goto/16 :goto_4
 
-    .line 1083
+    .line 1085
     .end local v6    # "previewImagePath":Ljava/lang/String;
     .end local v10    # "uriData":Lcom/samsung/android/content/clipboard/data/SemUriClipData;
     :sswitch_2
@@ -550,13 +550,13 @@
 
     check-cast v3, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
 
-    .line 1084
+    .line 1086
     .restart local v3    # "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     invoke-virtual {v3}, Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;->getThumbnailImagePath()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1085
+    .line 1087
     .restart local v2    # "firstImagePath":Ljava/lang/String;
     iget-object v11, p0, Lcom/android/server/clipboardex/ClipboardExService$4;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -566,7 +566,7 @@
 
     goto/16 :goto_4
 
-    .line 1096
+    .line 1098
     .end local v2    # "firstImagePath":Ljava/lang/String;
     .end local v3    # "htmlData":Lcom/samsung/android/content/clipboard/data/SemHtmlClipData;
     .restart local v0    # "deleteFile":Ljava/io/File;
@@ -598,14 +598,14 @@
 
     if-eqz v11, :cond_2
 
-    .line 1097
+    .line 1099
     const-string/jumbo v11, "ClipboardExService"
 
     const-string/jumbo v12, "Temp preview file of html item will be deleted"
 
     invoke-static {v11, v12}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1098
+    .line 1100
     invoke-static {}, Landroid/sec/clipboard/util/FileHelper;->getInstance()Landroid/sec/clipboard/util/FileHelper;
 
     move-result-object v11
@@ -614,7 +614,7 @@
 
     goto/16 :goto_5
 
-    .line 1067
+    .line 1069
     :sswitch_data_0
     .sparse-switch
         0x2 -> :sswitch_0

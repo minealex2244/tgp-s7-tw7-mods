@@ -3686,7 +3686,6 @@ Not: Parmak iziniz, güçlü bir desen veya PIN'den daha az güvenli olabilir.
     <string name="bluetooth_confirm_passkey_msg">%1$s ile eşleşmek için onaylama şifresi %2$s.</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>"&lt;br/>&lt;br/>'den Bu cihazla eşleştirilsin mi?"</string>
     <string name="bluetooth_display_passkey_pin_msg">"Eşlemek %1$s şifresini %2$s cihazına girin ardından Geri veya Tamam'a dokunun."</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s öğesine bağlanılamıyor. %2$s yoluyla bağlanmayı deneyin.</string>
     <string name="bluetooth_connecting_error_message">%s ile bağlantı yok.</string>
     <string name="bluetooth_preference_scan_title">Tara</string>
     <string name="bluetooth_preference_paired_devices">Eşleşen cihazlar</string>

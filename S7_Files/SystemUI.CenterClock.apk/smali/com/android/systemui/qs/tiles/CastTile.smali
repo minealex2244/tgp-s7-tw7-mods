@@ -530,7 +530,7 @@
     .line 151
     iget-object v5, p0, Lcom/android/systemui/qs/tiles/CastTile;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0f05c0
+    const v6, 0x7f0f05be
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

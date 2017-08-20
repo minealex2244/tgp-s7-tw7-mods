@@ -24,7 +24,7 @@
     .param p1, "this$1"    # Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;
 
     .prologue
-    .line 225
+    .line 227
     iput-object p1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp$1;->this$1:Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;
 
     invoke-direct {p0}, Landroid/sec/clipboard/IClipboardDataUiEvent$Stub;-><init>()V
@@ -43,7 +43,7 @@
     .end annotation
 
     .prologue
-    .line 234
+    .line 236
     iget-object v0, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp$1;->this$1:Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;
 
     invoke-virtual {v0}, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->removeAll()Z
@@ -63,12 +63,12 @@
     .end annotation
 
     .prologue
-    .line 229
+    .line 231
     iget-object v0, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp$1;->this$1:Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;
 
     invoke-virtual {v0, p1}, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->removeItem(I)V
 
-    .line 228
+    .line 230
     return-void
 .end method
 
@@ -83,11 +83,11 @@
     .end annotation
 
     .prologue
-    .line 240
+    .line 242
     iget-object v0, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp$1;->this$1:Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;
 
     invoke-virtual {v0, p1, p2}, Lcom/android/server/clipboardex/ClipboardExService$ClipBoardDataUiEventImp;->selectItem(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
 
-    .line 239
+    .line 241
     return-void
 .end method

@@ -253,7 +253,7 @@
     .local v1, "msg":Ljava/lang/String;
     iget-object v5, p0, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b0778
+    const v6, 0x7f0b0776
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -281,7 +281,7 @@
 
     invoke-direct {v5, p0}, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity$1;-><init>(Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;)V
 
-    const v6, 0x7f0b14dd
+    const v6, 0x7f0b14dc    # 1.84871E38f
 
     invoke-virtual {v0, v6, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -321,7 +321,7 @@
     .local v3, "timeMsg":Ljava/lang/StringBuilder;
     iget-object v5, p0, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b0774
+    const v6, 0x7f0b0772
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -355,7 +355,7 @@
     .line 258
     iget-object v5, p0, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b0775
+    const v6, 0x7f0b0773
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -381,7 +381,7 @@
     .local v2, "proxiMsg":Ljava/lang/StringBuilder;
     iget-object v5, p0, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b0776
+    const v6, 0x7f0b0774
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -397,7 +397,7 @@
     .line 266
     iget-object v5, p0, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b0777
+    const v6, 0x7f0b0775
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -417,7 +417,7 @@
     :pswitch_2
     iget-object v5, p0, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b077a
+    const v6, 0x7f0b0778
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -426,7 +426,7 @@
     .line 271
     iget-object v5, p0, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;->mContext:Landroid/content/Context;
 
-    const v6, 0x7f0b0779
+    const v6, 0x7f0b0777
 
     invoke-virtual {v5, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

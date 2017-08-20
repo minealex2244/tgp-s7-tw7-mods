@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/pm/PersonaManagerService;
 
     .prologue
-    .line 4928
+    .line 4958
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$1;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,14 +40,14 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 4930
+    .line 4960
     const-string/jumbo v2, "PersonaManagerService"
 
     const-string/jumbo v3, "Received the DPM state change broadcast"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4931
+    .line 4961
     const-string/jumbo v2, "userhandle"
 
     const/4 v3, 0x0
@@ -56,11 +56,11 @@
 
     move-result v1
 
-    .line 4932
+    .line 4962
     .local v1, "userid":I
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$1;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get20(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
+    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get21(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
 
     move-result-object v2
 
@@ -70,19 +70,19 @@
 
     move-result-object v0
 
-    .line 4933
+    .line 4963
     .local v0, "msg":Landroid/os/Message;
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 4934
+    .line 4964
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$1;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get20(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
+    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get21(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 4929
+    .line 4959
     return-void
 .end method

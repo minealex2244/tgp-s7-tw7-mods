@@ -165,7 +165,7 @@
     .param p1, "host"    # Lcom/android/systemui/qs/QSTile$Host;
 
     .prologue
-    const v6, 0x7f0c007b
+    const v6, 0x7f0c007d
 
     const v3, 0x7f020417
 
@@ -194,7 +194,7 @@
     const v2, 0x7f020407
 
     .line 67
-    const v7, 0x7f0c007c
+    const v7, 0x7f0c007e
 
     move-object v1, p0
 
@@ -215,7 +215,7 @@
     const v5, 0x7f0b00fa
 
     .line 71
-    const v7, 0x7f0c007d
+    const v7, 0x7f0c007f
 
     move-object v1, p0
 

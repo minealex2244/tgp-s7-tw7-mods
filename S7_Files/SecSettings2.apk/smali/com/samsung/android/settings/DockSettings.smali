@@ -839,7 +839,7 @@
     .line 195
     iget-object v1, p0, Lcom/samsung/android/settings/DockSettings;->mFastWirelessCharging:Landroid/preference/SwitchPreference;
 
-    const v2, 0x7f0b0b24
+    const v2, 0x7f0b0b22
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -856,7 +856,7 @@
     .line 198
     iget-object v1, p0, Lcom/samsung/android/settings/DockSettings;->mFastWirelessCharging:Landroid/preference/SwitchPreference;
 
-    const v2, 0x7f0b0b27
+    const v2, 0x7f0b0b25
 
     invoke-virtual {v1, v2}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -1441,7 +1441,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b0867
+    const v9, 0x7f0b0865
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1462,7 +1462,7 @@
 
     move-result-object v8
 
-    const v9, 0x7f0b0ae8
+    const v9, 0x7f0b0ae6
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -161,7 +161,7 @@
 
     .line 95
     .local v3, "p":Lcom/android/internal/app/AlertController$AlertParams;
-    const v4, 0x7f0b1474
+    const v4, 0x7f0b1473
 
     invoke-virtual {p0, v4}, Lcom/android/settings/ActiveNetworkScorerDialog;->getString(I)Ljava/lang/String;
 
@@ -185,7 +185,7 @@
     aput-object v5, v4, v6
 
     .line 97
-    const v5, 0x7f0b1475
+    const v5, 0x7f0b1474
 
     invoke-virtual {p0, v5, v4}, Lcom/android/settings/ActiveNetworkScorerDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -232,7 +232,7 @@
     aput-object v0, v4, v7
 
     .line 100
-    const v5, 0x7f0b1476
+    const v5, 0x7f0b1475
 
     invoke-virtual {p0, v5, v4}, Lcom/android/settings/ActiveNetworkScorerDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

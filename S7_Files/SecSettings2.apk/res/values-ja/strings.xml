@@ -3684,7 +3684,6 @@ Bluetooth設定に移動すると、後からこの設定を変更すること�
     <string name="bluetooth_confirm_passkey_msg">パスキー「%2$s」を確認し、%1$sとペアリングしてください。</string>
     <string name="bluetooth_incoming_pairing_msg"><b>%1$s</b>&lt;br/>&lt;br/>上記のデバイスとペアリングしますか？</string>
     <string name="bluetooth_display_passkey_pin_msg">ペアリングするには、%2$sで「%1$s」を入力してからEnterキーまたはReturnキーを押してください。</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$sに接続できません。%2$sからの接続をお試しください。</string>
     <string name="bluetooth_connecting_error_message">%sに接続できません。</string>
     <string name="bluetooth_preference_scan_title">スキャン</string>
     <string name="bluetooth_preference_paired_devices">ペアリング済みデバイス</string>

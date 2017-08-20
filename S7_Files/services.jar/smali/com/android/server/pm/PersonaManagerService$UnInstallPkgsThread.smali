@@ -72,38 +72,38 @@
     .local p3, "pkgs":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
     const/4 v1, 0x0
 
-    .line 7105
+    .line 7135
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
-    .line 7099
+    .line 7129
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->personaId:I
 
-    .line 7100
+    .line 7130
     iput-object v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->packagesList:Ljava/util/Set;
 
-    .line 7101
+    .line 7131
     iput-object v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->activeList:Ljava/util/List;
 
-    .line 7102
+    .line 7132
     iput-object v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->edm:Landroid/app/enterprise/EnterpriseDeviceManager;
 
-    .line 7106
+    .line 7136
     iput p2, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->personaId:I
 
-    .line 7107
+    .line 7137
     iput-object p3, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->packagesList:Ljava/util/Set;
 
-    .line 7108
+    .line 7138
     iput p4, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->givenMsg:I
 
-    .line 7109
+    .line 7139
     new-instance v0, Landroid/app/enterprise/EnterpriseDeviceManager;
 
-    invoke-static {p1}, Lcom/android/server/pm/PersonaManagerService;->-get4(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/android/server/pm/PersonaManagerService;->-get5(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -111,7 +111,7 @@
 
     iput-object v0, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->edm:Landroid/app/enterprise/EnterpriseDeviceManager;
 
-    .line 7110
+    .line 7140
     const-string/jumbo v0, "PersonaManagerService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -136,7 +136,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7111
+    .line 7141
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->edm:Landroid/app/enterprise/EnterpriseDeviceManager;
 
     iget v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->personaId:I
@@ -147,7 +147,7 @@
 
     iput-object v0, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->activeList:Ljava/util/List;
 
-    .line 7105
+    .line 7135
     return-void
 .end method
 
@@ -157,7 +157,7 @@
     .param p2, "pkg"    # Ljava/lang/String;
 
     .prologue
-    .line 7177
+    .line 7207
     const-string/jumbo v3, "PersonaManagerService"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -190,17 +190,17 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7179
+    .line 7209
     new-instance v2, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread$PackageDeleteObserver;
 
     invoke-direct {v2, p0}, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread$PackageDeleteObserver;-><init>(Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;)V
 
-    .line 7182
+    .line 7212
     .local v2, "obs":Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread$PackageDeleteObserver;
     :try_start_0
     iget-object v3, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v3}, Lcom/android/server/pm/PersonaManagerService;->-get22(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PackageManagerService;
+    invoke-static {v3}, Lcom/android/server/pm/PersonaManagerService;->-get23(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PackageManagerService;
 
     move-result-object v3
 
@@ -208,12 +208,12 @@
 
     invoke-virtual {v3, p2, v2, p1, v4}, Lcom/android/server/pm/PackageManagerService;->deletePackageAsUserAndPersona(Ljava/lang/String;Landroid/content/pm/IPackageDeleteObserver;II)V
 
-    .line 7183
+    .line 7213
     monitor-enter v2
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 7184
+    .line 7214
     :goto_0
     :try_start_1
     iget-boolean v3, v2, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread$PackageDeleteObserver;->finished:Z
@@ -222,7 +222,7 @@
 
     if-nez v3, :cond_0
 
-    .line 7186
+    .line 7216
     :try_start_2
     const-string/jumbo v3, "PersonaManagerService"
 
@@ -248,7 +248,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7187
+    .line 7217
     invoke-virtual {v2}, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread$PackageDeleteObserver;->wait()V
     :try_end_2
     .catch Ljava/lang/InterruptedException; {:try_start_2 .. :try_end_2} :catch_0
@@ -256,7 +256,7 @@
 
     goto :goto_0
 
-    .line 7188
+    .line 7218
     :catch_0
     move-exception v1
 
@@ -270,13 +270,13 @@
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
 
-    .line 7196
+    .line 7226
     :goto_1
     iget-boolean v3, v2, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread$PackageDeleteObserver;->result:Z
 
     return v3
 
-    .line 7183
+    .line 7213
     :catchall_0
     move-exception v3
 
@@ -287,11 +287,11 @@
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 7192
+    .line 7222
     :catch_1
     move-exception v0
 
-    .line 7193
+    .line 7223
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v3, "PersonaManagerService"
 
@@ -332,7 +332,7 @@
     .end annotation
 
     .prologue
-    .line 7130
+    .line 7160
     .local p2, "packages":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
     const-string/jumbo v2, "PersonaManagerService"
 
@@ -370,16 +370,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7131
+    .line 7161
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get19(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
+    invoke-static {v2}, Lcom/android/server/pm/PersonaManagerService;->-get20(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
 
     move-result-object v3
 
     monitor-enter v3
 
-    .line 7132
+    .line 7162
     :try_start_0
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -387,11 +387,11 @@
 
     move-result-object v0
 
-    .line 7133
+    .line 7163
     .local v0, "personaInfo":Lcom/samsung/android/knox/SemPersonaInfo;
     if-nez v0, :cond_0
 
-    .line 7134
+    .line 7164
     const-string/jumbo v2, "PersonaManagerService"
 
     const-string/jumbo v4, "setInstalledPkgList personaInfo is null "
@@ -402,33 +402,33 @@
 
     monitor-exit v3
 
-    .line 7135
+    .line 7165
     return-void
 
-    .line 7137
+    .line 7167
     :cond_0
     :try_start_1
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, p2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 7138
+    .line 7168
     .local v1, "pkgList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     invoke-virtual {v0, v1}, Lcom/samsung/android/knox/SemPersonaInfo;->setInstalledPkgList(Ljava/util/List;)V
 
-    .line 7139
+    .line 7169
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v2, v0}, Lcom/android/server/pm/PersonaManagerService;->-wrap61(Lcom/android/server/pm/PersonaManagerService;Lcom/samsung/android/knox/SemPersonaInfo;)V
+    invoke-static {v2, v0}, Lcom/android/server/pm/PersonaManagerService;->-wrap62(Lcom/android/server/pm/PersonaManagerService;Lcom/samsung/android/knox/SemPersonaInfo;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     monitor-exit v3
 
-    .line 7129
+    .line 7159
     return-void
 
-    .line 7131
+    .line 7161
     .end local v0    # "personaInfo":Lcom/samsung/android/knox/SemPersonaInfo;
     .end local v1    # "pkgList":Ljava/util/List;, "Ljava/util/List<Ljava/lang/String;>;"
     :catchall_0
@@ -453,7 +453,7 @@
     .end annotation
 
     .prologue
-    .line 7144
+    .line 7174
     .local p2, "packages":Ljava/util/Set;, "Ljava/util/Set<Ljava/lang/String;>;"
     const-string/jumbo v3, "PersonaManagerService"
 
@@ -477,20 +477,20 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7145
+    .line 7175
     if-nez p2, :cond_0
 
     return-void
 
-    .line 7146
+    .line 7176
     :cond_0
     const/4 v2, 0x0
 
-    .line 7147
+    .line 7177
     .local v2, "result":Z
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->setInstalledPkgList(ILjava/util/Set;)V
 
-    .line 7148
+    .line 7178
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -510,17 +510,17 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 7149
+    .line 7179
     .local v0, "name":Ljava/lang/String;
     invoke-direct {p0, p1, v0}, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->deletePackage(ILjava/lang/String;)Z
 
     move-result v2
 
-    .line 7150
+    .line 7180
     .local v2, "result":Z
     if-nez v2, :cond_1
 
-    .line 7151
+    .line 7181
     const-string/jumbo v3, "PersonaManagerService"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -551,7 +551,7 @@
 
     goto :goto_0
 
-    .line 7153
+    .line 7183
     :cond_1
     const-string/jumbo v3, "PersonaManagerService"
 
@@ -583,7 +583,7 @@
 
     goto :goto_0
 
-    .line 7143
+    .line 7173
     .end local v0    # "name":Ljava/lang/String;
     .end local v2    # "result":Z
     :cond_2
@@ -598,56 +598,56 @@
     .prologue
     const/4 v3, 0x2
 
-    .line 7116
+    .line 7146
     const-string/jumbo v1, "PersonaManagerService"
 
     const-string/jumbo v2, "UnInstallPkgsThread has started..."
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7117
+    .line 7147
     iget v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->personaId:I
 
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->packagesList:Ljava/util/Set;
 
     invoke-direct {p0, v1, v2}, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->unInstallPackages(ILjava/util/Set;)V
 
-    .line 7119
+    .line 7149
     iget v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->givenMsg:I
 
     const/4 v2, 0x3
 
     if-ne v1, v2, :cond_1
 
-    .line 7120
+    .line 7150
     const-string/jumbo v1, "PersonaManagerService"
 
     const-string/jumbo v2, " msg was -1 and removing the Persona"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7121
+    .line 7151
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
     iget v2, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->personaId:I
 
     invoke-virtual {v1, v2}, Lcom/android/server/pm/PersonaManagerService;->finishRemoveUser(I)V
 
-    .line 7114
+    .line 7144
     :cond_0
     :goto_0
     return-void
 
-    .line 7122
+    .line 7152
     :cond_1
     iget v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->givenMsg:I
 
     if-ne v1, v3, :cond_0
 
-    .line 7123
+    .line 7153
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v1}, Lcom/android/server/pm/PersonaManagerService;->-get20(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
+    invoke-static {v1}, Lcom/android/server/pm/PersonaManagerService;->-get21(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
 
     move-result-object v1
 
@@ -655,16 +655,16 @@
 
     move-result-object v0
 
-    .line 7124
+    .line 7154
     .local v0, "msg":Landroid/os/Message;
     iget v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->personaId:I
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 7125
+    .line 7155
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService$UnInstallPkgsThread;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
-    invoke-static {v1}, Lcom/android/server/pm/PersonaManagerService;->-get20(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
+    invoke-static {v1}, Lcom/android/server/pm/PersonaManagerService;->-get21(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
 
     move-result-object v1
 

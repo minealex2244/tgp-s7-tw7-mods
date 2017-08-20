@@ -630,7 +630,7 @@
 
     .line 523
     .local v10, "items":[Ljava/lang/CharSequence;
-    const v4, 0x7f0b1214
+    const v4, 0x7f0b1213
 
     invoke-virtual {p0, v4}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
 
@@ -802,7 +802,7 @@
     .end local v10    # "items":[Ljava/lang/CharSequence;
     .end local v12    # "rememberCheckbox":Landroid/widget/CheckBox;
     :cond_3
-    const v4, 0x7f0b1214
+    const v4, 0x7f0b1213
 
     invoke-virtual {p0, v4}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
 
@@ -1476,7 +1476,7 @@
     .param p3, "firstTime"    # Z
 
     .prologue
-    const v3, 0x7f0b1216
+    const v3, 0x7f0b1215
 
     const/4 v5, 0x1
 
@@ -1530,7 +1530,7 @@
     .line 664
     .restart local v0    # "items":[Ljava/lang/CharSequence;
     :pswitch_2
-    const v2, 0x7f0b1215
+    const v2, 0x7f0b1214
 
     invoke-virtual {p0, v2}, Lcom/android/settings/bluetooth/DockService;->getString(I)Ljava/lang/String;
 

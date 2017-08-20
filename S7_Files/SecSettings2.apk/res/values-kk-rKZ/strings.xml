@@ -3687,7 +3687,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s жұптастыру үшін құпиясөздің %2$s екеніне көз жеткізіңіз.</string>
     <string name="bluetooth_incoming_pairing_msg">Кімнен&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Мына құрылғымен жұптастыру керек пе?</string>
     <string name="bluetooth_display_passkey_pin_msg">Жұптастыру үшін %2$s құрылғысына %1$s енгізіңіз, сосын “Оралу” немесе “Енгізу” опциясын түртіңіз.</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s-ға қосылу мүмкін емес. %2$s-нан қосылып көріңіз.</string>
     <string name="bluetooth_connecting_error_message">%s жүйесіне қосылу мүмкін емес.</string>
     <string name="bluetooth_preference_scan_title">Қар. шығу</string>
     <string name="bluetooth_preference_paired_devices">Жұптасқан құрылғылар</string>
@@ -4088,7 +4087,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">Барлық жеке ақпаратыңыз бен жүктелген бағдарламаларыңыз өшіріледі және қалпына келтірілмейді.</string>
     <string name="master_clear_final_button_text">Бәрін жою</string>
     <string name="master_clear_not_available">Осы қонақ профилінде зауыттық деректерді қалпына келтіру үшін рұқсат жоқ.</string>
-    <string name="master_clear_progress_title">Бастапқы қалпына келтіру</string>
+    <string name="master_clear_progress_title">Жаңарту</string>
     <string name="master_clear_progress_text">Күте тұрыңыз…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB модем</string>

@@ -226,7 +226,7 @@
 
     .line 296
     :cond_3
-    const v2, 0x7f0b1bb1
+    const v2, 0x7f0b1bb0
 
     .line 295
     invoke-direct {p0, v2, p2}, Lcom/samsung/android/settings/nfc/PaymentBackend;->showErrorDialog(IZ)Z
@@ -239,7 +239,7 @@
     .line 300
     .local v0, "needDialogDismiss":Z
     :cond_4
-    const v2, 0x7f0b1bb2
+    const v2, 0x7f0b1bb1
 
     .line 299
     invoke-direct {p0, v2, p2}, Lcom/samsung/android/settings/nfc/PaymentBackend;->showErrorDialog(IZ)Z
@@ -399,7 +399,7 @@
 
     .line 242
     :cond_3
-    const v1, 0x7f0b1bb1
+    const v1, 0x7f0b1bb0
 
     invoke-direct {p0, v1, v4}, Lcom/samsung/android/settings/nfc/PaymentBackend;->showErrorDialog(IZ)Z
 
@@ -407,7 +407,7 @@
 
     .line 244
     :cond_4
-    const v1, 0x7f0b1bb2
+    const v1, 0x7f0b1bb1
 
     invoke-direct {p0, v1, v4}, Lcom/samsung/android/settings/nfc/PaymentBackend;->showErrorDialog(IZ)Z
 

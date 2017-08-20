@@ -3688,7 +3688,6 @@ SMS 수신"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s 디바이스와 연결하려면 인증번호를 확인하세요.&lt;br/>인증번호: %2$s</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>에서&lt;br/>&lt;br/>이 디바이스를 등록할까요?</string>
     <string name="bluetooth_display_passkey_pin_msg">등록하려면 %2$s 디바이스에서 %1$s 키를 입력한 후, 엔터를 누르세요.</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s에 연결할 수 없습니다. %2$s에서 연결을 시도하세요.</string>
     <string name="bluetooth_connecting_error_message">%s에 연결할 수 없습니다.</string>
     <string name="bluetooth_preference_scan_title">찾기</string>
     <string name="bluetooth_preference_paired_devices">등록된 디바이스</string>

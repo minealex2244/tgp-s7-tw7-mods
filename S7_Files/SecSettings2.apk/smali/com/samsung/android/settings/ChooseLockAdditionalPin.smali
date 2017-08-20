@@ -324,7 +324,7 @@
 
     .line 126
     :cond_1
-    const v1, 0x7f0b14b5
+    const v1, 0x7f0b14b4
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/ChooseLockAdditionalPin;->getText(I)Ljava/lang/CharSequence;
 
@@ -356,7 +356,7 @@
     .line 128
     .restart local v0    # "msg":Ljava/lang/CharSequence;
     :cond_3
-    const v1, 0x7f0b0ad3
+    const v1, 0x7f0b0ad1
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/ChooseLockAdditionalPin;->getText(I)Ljava/lang/CharSequence;
 

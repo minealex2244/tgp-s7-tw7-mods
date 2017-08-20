@@ -173,7 +173,7 @@
 
     .line 186
     .local v0, "builder":Landroid/app/AlertDialog$Builder;
-    const v2, 0x7f0b0e9a
+    const v2, 0x7f0b0e98
 
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
@@ -218,7 +218,7 @@
 
     invoke-direct {v2, p0, v1}, Lcom/samsung/android/settings/GlobalLteRoaming$4;-><init>(Lcom/samsung/android/settings/GlobalLteRoaming;Z)V
 
-    const v3, 0x7f0b153c
+    const v3, 0x7f0b153b
 
     invoke-virtual {v0, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

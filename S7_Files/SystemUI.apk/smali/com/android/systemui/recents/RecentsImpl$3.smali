@@ -29,17 +29,17 @@
     .param p1, "this$0"    # Lcom/android/systemui/recents/RecentsImpl;
 
     .prologue
-    .line 832
+    .line 826
     iput-object p1, p0, Lcom/android/systemui/recents/RecentsImpl$3;->this$0:Lcom/android/systemui/recents/RecentsImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 833
+    .line 827
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/systemui/recents/RecentsImpl$3;->triggered:Z
 
-    .line 832
+    .line 826
     return-void
 .end method
 
@@ -49,30 +49,30 @@
     .locals 2
 
     .prologue
-    .line 836
+    .line 830
     iget-boolean v0, p0, Lcom/android/systemui/recents/RecentsImpl$3;->triggered:Z
 
     if-nez v0, :cond_0
 
-    .line 837
+    .line 831
     invoke-static {}, Lcom/android/systemui/recents/events/EventBus;->getDefault()Lcom/android/systemui/recents/events/EventBus;
 
     move-result-object v0
 
-    .line 838
+    .line 832
     new-instance v1, Lcom/android/systemui/recents/events/activity/EnterRecentsWindowAnimationCompletedEvent;
 
     invoke-direct {v1}, Lcom/android/systemui/recents/events/activity/EnterRecentsWindowAnimationCompletedEvent;-><init>()V
 
-    .line 837
+    .line 831
     invoke-virtual {v0, v1}, Lcom/android/systemui/recents/events/EventBus;->send(Lcom/android/systemui/recents/events/EventBus$Event;)V
 
-    .line 839
+    .line 833
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/systemui/recents/RecentsImpl$3;->triggered:Z
 
-    .line 835
+    .line 829
     :cond_0
     return-void
 .end method

@@ -679,7 +679,7 @@
 
     .line 577
     :pswitch_1
-    const v1, 0x7f0b0c59
+    const v1, 0x7f0b0c57
 
     .line 578
     const v0, 0x7f040125
@@ -689,7 +689,7 @@
 
     .line 581
     :pswitch_2
-    const v1, 0x7f0b0c5a
+    const v1, 0x7f0b0c58
 
     .line 582
     const v0, 0x7f040125
@@ -699,7 +699,7 @@
 
     .line 585
     :pswitch_3
-    const v1, 0x7f0b0c5b
+    const v1, 0x7f0b0c59
 
     .line 586
     const v0, 0x7f040125
@@ -709,7 +709,7 @@
 
     .line 589
     :pswitch_4
-    const v1, 0x7f0b0c58
+    const v1, 0x7f0b0c56
 
     .line 590
     const v0, 0x7f040122
@@ -719,7 +719,7 @@
 
     .line 593
     :pswitch_5
-    const v1, 0x7f0b0c5c
+    const v1, 0x7f0b0c5a
 
     .line 594
     const v0, 0x7f040125
@@ -2683,7 +2683,7 @@
     sget-object v3, Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;->OPAQUE:Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;
 
     .line 417
-    const v1, 0x7f0b0c59
+    const v1, 0x7f0b0c57
 
     move-object v0, p0
 
@@ -2698,7 +2698,7 @@
     sget-object v3, Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;->OPAQUE:Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;
 
     .line 421
-    const v1, 0x7f0b0c5a
+    const v1, 0x7f0b0c58
 
     move-object v0, p0
 
@@ -2713,7 +2713,7 @@
     sget-object v3, Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;->OPAQUE:Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;
 
     .line 425
-    const v1, 0x7f0b0c5b
+    const v1, 0x7f0b0c59
 
     move-object v0, p0
 
@@ -2728,7 +2728,7 @@
     sget-object v3, Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;->OPAQUE:Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;
 
     .line 429
-    const v1, 0x7f0b0c58
+    const v1, 0x7f0b0c56
 
     const v2, 0x7f040122
 
@@ -2745,7 +2745,7 @@
     sget-object v3, Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;->OPAQUE:Lcom/samsung/android/settings/helpdialog/TwHelpDialog$TouchMode;
 
     .line 433
-    const v1, 0x7f0b0c5c
+    const v1, 0x7f0b0c5a
 
     move-object v0, p0
 

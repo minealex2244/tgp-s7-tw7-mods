@@ -1416,7 +1416,7 @@
     :goto_0
     iget-object v6, p0, Lcom/samsung/android/settings/boostmode/BoostModeCustomFragment;->mSecBrightness:Lcom/android/settings/widget/SecIntervalSeekbarPreference;
 
-    const v7, 0x7f0b084c
+    const v7, 0x7f0b084a
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/boostmode/BoostModeCustomFragment;->getString(I)Ljava/lang/String;
 
@@ -1642,7 +1642,7 @@
     .line 178
     iget-object v6, p0, Lcom/samsung/android/settings/boostmode/BoostModeCustomFragment;->mScreenSeekBar:Lcom/android/settings/widget/SecIntervalSeekbarPreference;
 
-    const v7, 0x7f0b0a33
+    const v7, 0x7f0b0a31
 
     invoke-virtual {v6, v7}, Lcom/android/settings/widget/SecIntervalSeekbarPreference;->setSummary(I)V
 

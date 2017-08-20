@@ -1519,7 +1519,7 @@
 
     aput-object v7, v6, v5
 
-    const v7, 0x7f0b0f17
+    const v7, 0x7f0b0f15
 
     invoke-virtual {p0, v7, v6}, Lcom/android/settings/datausage/DataUsageSummary;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1867,7 +1867,7 @@
 
     if-gtz v11, :cond_7
 
-    const v11, 0x7f0b1b02
+    const v11, 0x7f0b1b01
 
     :goto_1
     const/4 v13, 0x2
@@ -1998,7 +1998,7 @@
     .restart local v8    # "limit":Ljava/lang/String;
     .restart local v10    # "warning":Ljava/lang/String;
     :cond_7
-    const v11, 0x7f0b1b03
+    const v11, 0x7f0b1b02
 
     goto :goto_1
 
@@ -2882,7 +2882,7 @@
     :cond_d
     if-eqz v1, :cond_21
 
-    const v8, 0x7f0b1aff
+    const v8, 0x7f0b1afe
 
     :goto_9
     iput v8, p0, Lcom/android/settings/datausage/DataUsageSummary;->mDataUsageTemplate:I
@@ -3168,13 +3168,13 @@
     :cond_21
     if-eqz v2, :cond_22
 
-    const v8, 0x7f0b1b00
+    const v8, 0x7f0b1aff
 
     goto/16 :goto_9
 
     .line 319
     :cond_22
-    const v8, 0x7f0b1b01
+    const v8, 0x7f0b1b00
 
     goto/16 :goto_9
 .end method
@@ -3849,7 +3849,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0f0d
+    const v2, 0x7f0b0f0b
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3935,7 +3935,7 @@
     move-result-object v1
 
     .line 1168
-    const v3, 0x7f0b0f0a
+    const v3, 0x7f0b0f08
 
     move-object v4, v2
 

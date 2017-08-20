@@ -72,7 +72,7 @@
 
     aput-object v11, v10, v12
 
-    const v11, 0x7f0b0a18
+    const v11, 0x7f0b0a16
 
     invoke-virtual {v8, v11, v10}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -306,7 +306,7 @@
 
     aput-object v11, v10, v12
 
-    const v11, 0x7f0b0a19
+    const v11, 0x7f0b0a17
 
     invoke-virtual {v8, v11, v10}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -338,7 +338,7 @@
 
     aput-object v11, v10, v12
 
-    const v11, 0x7f0b0a1a
+    const v11, 0x7f0b0a18
 
     invoke-virtual {v8, v11, v10}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1339,9 +1339,9 @@
     .param p2, "twoline"    # Z
 
     .prologue
-    const v6, 0x7f0b0a18
+    const v6, 0x7f0b0a16
 
-    const v9, 0x7f0b0a19
+    const v9, 0x7f0b0a17
 
     const/4 v8, 0x1
 
@@ -1515,7 +1515,7 @@
     .line 584
     .end local v0    # "contentDesc":Ljava/lang/String;
     :cond_2
-    const v3, 0x7f0b0a1a
+    const v3, 0x7f0b0a18
 
     invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -1636,7 +1636,7 @@
     aput-object v2, v1, v4
 
     .line 600
-    const v2, 0x7f0b0a37
+    const v2, 0x7f0b0a35
 
     invoke-virtual {p0, v2, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1660,7 +1660,7 @@
     aput-object v2, v1, v4
 
     .line 603
-    const v2, 0x7f0b0a36
+    const v2, 0x7f0b0a34
 
     invoke-virtual {p0, v2, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3567,7 +3567,7 @@
     .param p4, "bsm"    # Lcom/samsung/android/settings/powersaving/BrightnessSolutionManager;
 
     .prologue
-    const v6, 0x7f0b0a5c
+    const v6, 0x7f0b0a5a
 
     const/4 v5, 0x0
 
@@ -3588,7 +3588,7 @@
     if-ne p2, v4, :cond_1
 
     .line 705
-    const v1, 0x7f0b0a46
+    const v1, 0x7f0b0a44
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -3616,7 +3616,7 @@
     aput-object v3, v2, v4
 
     .line 710
-    const v3, 0x7f0b0a69
+    const v3, 0x7f0b0a67
 
     invoke-virtual {p0, v3, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3638,7 +3638,7 @@
     aput-object v3, v2, v5
 
     .line 712
-    const v3, 0x7f0b0a68
+    const v3, 0x7f0b0a66
 
     invoke-virtual {p0, v3, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3654,7 +3654,7 @@
 
     invoke-direct {v2, p4, p0, p2, p3}, Lcom/samsung/android/settings/powersaving/PSMUtils$1;-><init>(Lcom/samsung/android/settings/powersaving/BrightnessSolutionManager;Landroid/content/Context;ILjava/lang/String;)V
 
-    const v3, 0x7f0b0ade
+    const v3, 0x7f0b0adc
 
     .line 709
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -3702,7 +3702,7 @@
     .end local v0    # "mode":Ljava/lang/String;
     .end local p1    # "mAD":Landroid/app/AlertDialog;
     :cond_1
-    const v1, 0x7f0b0a47
+    const v1, 0x7f0b0a45
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

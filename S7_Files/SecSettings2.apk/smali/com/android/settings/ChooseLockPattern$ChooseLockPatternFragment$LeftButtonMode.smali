@@ -85,7 +85,7 @@
 
     const-string/jumbo v1, "Retry"
 
-    const v2, 0x7f0b14dd
+    const v2, 0x7f0b14dc    # 1.84871E38f
 
     invoke-direct {v0, v1, v5, v2, v4}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;-><init>(Ljava/lang/String;IIZ)V
 
@@ -96,7 +96,7 @@
 
     const-string/jumbo v1, "RetryDisabled"
 
-    const v2, 0x7f0b14dd
+    const v2, 0x7f0b14dc    # 1.84871E38f
 
     invoke-direct {v0, v1, v6, v2, v3}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;-><init>(Ljava/lang/String;IIZ)V
 

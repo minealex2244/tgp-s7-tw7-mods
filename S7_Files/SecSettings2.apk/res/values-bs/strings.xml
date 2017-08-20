@@ -3548,7 +3548,6 @@ Napomena: vaš otisak prsta može biti manje siguran od snažnog obrasca ili PIN
     <string name="bluetooth_confirm_passkey_msg">Potvrdite lozinku %2$s za sparivanje sa %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">From&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Pair with this device?</string>
     <string name="bluetooth_display_passkey_pin_msg">Unesite %1$s na %2$s za sparivanje, zatim dodirnite opciju Povratak ili Unos.</string>
-    <string name="bluetooth_HID_connecting_error_message">Nije moguće povezivanje na %1$s. Pokušajte se povezati sa %2$s.</string>
     <string name="bluetooth_connecting_error_message">Nije moguće povezivanje na %s.</string>
     <string name="bluetooth_preference_scan_title">Skeniraj</string>
     <string name="bluetooth_preference_paired_devices">Spareni uređaji</string>

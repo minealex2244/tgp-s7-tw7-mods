@@ -57,7 +57,7 @@
 
     const-string/jumbo v1, "Introduction"
 
-    const v2, 0x7f0b0876
+    const v2, 0x7f0b0874
 
     invoke-direct {v0, v1, v4, v2, v7}, Lcom/samsung/android/settings/ChooseLockAdditionalPin$ChooseLockAdditionalPinFragment$Stage;-><init>(Ljava/lang/String;III)V
 
@@ -68,7 +68,7 @@
 
     const-string/jumbo v1, "NeedToConfirm"
 
-    const v2, 0x7f0b0877
+    const v2, 0x7f0b0875
 
     .line 258
     const v3, 0x7f0b11ce
@@ -83,7 +83,7 @@
 
     const-string/jumbo v1, "ConfirmWrong"
 
-    const v2, 0x7f0b14bc
+    const v2, 0x7f0b14bb
 
     invoke-direct {v0, v1, v6, v2, v7}, Lcom/samsung/android/settings/ChooseLockAdditionalPin$ChooseLockAdditionalPinFragment$Stage;-><init>(Ljava/lang/String;III)V
 

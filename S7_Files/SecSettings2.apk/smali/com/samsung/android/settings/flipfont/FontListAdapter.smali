@@ -1823,31 +1823,22 @@
 
     move-result v1
 
-    if-nez v1, :cond_7
-
-    const-string/jumbo v1, "SamsungSans"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_8
+    if-eqz v1, :cond_7
 
     .line 375
-    :cond_7
     const-string/jumbo v0, "Samsung Sans"
 
-    goto/16 :goto_0
+    goto :goto_0
 
     .line 376
-    :cond_8
+    :cond_7
     const-string/jumbo v1, "Applemint"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_9
+    if-eqz v1, :cond_8
 
     .line 377
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -1871,14 +1862,14 @@
     goto/16 :goto_0
 
     .line 379
-    :cond_9
+    :cond_8
     const-string/jumbo v1, "Tinkerbell"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_9
 
     .line 380
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -1902,14 +1893,14 @@
     goto/16 :goto_0
 
     .line 382
-    :cond_a
+    :cond_9
     const-string/jumbo v1, "Shaonv"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_a
 
     .line 383
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -1933,14 +1924,14 @@
     goto/16 :goto_0
 
     .line 385
-    :cond_b
+    :cond_a
     const-string/jumbo v1, "Kaiti"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_c
+    if-eqz v1, :cond_b
 
     .line 386
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -1964,14 +1955,14 @@
     goto/16 :goto_0
 
     .line 388
-    :cond_c
+    :cond_b
     const-string/jumbo v1, "Miao"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_d
+    if-eqz v1, :cond_c
 
     .line 389
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -1995,14 +1986,14 @@
     goto/16 :goto_0
 
     .line 391
-    :cond_d
+    :cond_c
     const-string/jumbo v1, "UDRGothic"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_d
 
     .line 392
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -2026,14 +2017,14 @@
     goto/16 :goto_0
 
     .line 394
-    :cond_e
+    :cond_d
     const-string/jumbo v1, "UDMincho"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_f
+    if-eqz v1, :cond_e
 
     .line 395
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -2057,14 +2048,14 @@
     goto/16 :goto_0
 
     .line 397
-    :cond_f
+    :cond_e
     const-string/jumbo v1, "Pop"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_10
+    if-eqz v1, :cond_f
 
     .line 398
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -2088,14 +2079,14 @@
     goto/16 :goto_0
 
     .line 400
-    :cond_10
+    :cond_f
     const-string/jumbo v1, "Current theme\'s default"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_11
+    if-eqz v1, :cond_10
 
     .line 401
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -2119,14 +2110,14 @@
     goto/16 :goto_0
 
     .line 403
-    :cond_11
+    :cond_10
     const-string/jumbo v1, "Foundation"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_12
+    if-eqz v1, :cond_11
 
     .line 404
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->context:Landroid/content/Context;
@@ -2150,7 +2141,7 @@
     goto/16 :goto_0
 
     .line 406
-    :cond_12
+    :cond_11
     iget-object v1, p0, Lcom/samsung/android/settings/flipfont/FontListAdapter;->downloadFontString:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z

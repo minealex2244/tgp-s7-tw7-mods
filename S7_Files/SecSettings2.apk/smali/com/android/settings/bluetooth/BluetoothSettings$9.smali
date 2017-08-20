@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/settings/bluetooth/BluetoothSettings;
 
     .prologue
-    .line 1286
+    .line 1288
     iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$9;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,12 +43,12 @@
     .param p2, "whichButton"    # I
 
     .prologue
-    .line 1288
+    .line 1290
     if-eqz p1, :cond_0
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 1287
+    .line 1289
     :cond_0
     return-void
 .end method

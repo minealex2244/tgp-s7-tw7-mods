@@ -865,7 +865,7 @@
     if-nez v4, :cond_3
 
     .line 145
-    const v4, 0x7f0b0d06
+    const v4, 0x7f0b0d04
 
     invoke-virtual {p0, v4}, Lcom/samsung/android/settings/wifi/mobileap/WifiApWhitelistDialog;->setTitle(I)V
 
@@ -985,7 +985,7 @@
     if-ne v4, v11, :cond_4
 
     .line 152
-    const v4, 0x7f0b0d06
+    const v4, 0x7f0b0d04
 
     invoke-virtual {p0, v4}, Lcom/samsung/android/settings/wifi/mobileap/WifiApWhitelistDialog;->setTitle(I)V
 
@@ -1039,7 +1039,7 @@
     if-ne v4, v5, :cond_5
 
     .line 159
-    const v4, 0x7f0b0d2c
+    const v4, 0x7f0b0d2a
 
     invoke-virtual {p0, v4}, Lcom/samsung/android/settings/wifi/mobileap/WifiApWhitelistDialog;->setTitle(I)V
 
@@ -1081,7 +1081,7 @@
 
     move-result-object v5
 
-    const v6, 0x7f0b0dbe
+    const v6, 0x7f0b0dbc
 
     invoke-static {v5, v6}, Lcom/samsung/android/settings/WifiApUtils;->getString(Landroid/content/Context;I)Ljava/lang/String;
 

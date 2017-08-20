@@ -455,7 +455,7 @@
 
     .prologue
     .line 737
-    const v0, 0x7f0b163f
+    const v0, 0x7f0b163e
 
     .line 738
     .local v0, "resId":I
@@ -507,13 +507,13 @@
 
     .line 740
     :sswitch_0
-    const v0, 0x7f0b163d
+    const v0, 0x7f0b163c
 
     goto :goto_0
 
     .line 744
     :sswitch_1
-    const v0, 0x7f0b163e
+    const v0, 0x7f0b163d
 
     goto :goto_0
 
@@ -611,7 +611,7 @@
     aput-object v19, v18, v20
 
     .line 497
-    const v19, 0x7f0b163b
+    const v19, 0x7f0b163a
 
     move-object/from16 v0, p0
 
@@ -678,7 +678,7 @@
     aput-object v19, v18, v20
 
     .line 509
-    const v19, 0x7f0b1639
+    const v19, 0x7f0b1638
 
     move-object/from16 v0, p0
 
@@ -805,7 +805,7 @@
     invoke-direct {v0, v1, v2}, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->setCapabilitiesText(Landroid/widget/TextView;Z)V
 
     .line 533
-    const v18, 0x7f0b1640
+    const v18, 0x7f0b163f
 
     move-object/from16 v0, p0
 
@@ -1085,7 +1085,7 @@
     .restart local v14    # "imageView":Landroid/widget/ImageView;
     .restart local v16    # "labelView":Landroid/widget/TextView;
     :cond_2
-    const v18, 0x7f0b1641
+    const v18, 0x7f0b1640
 
     move-object/from16 v0, p0
 
@@ -2825,7 +2825,7 @@
     aput-object v18, v17, v19
 
     .line 320
-    const v18, 0x7f0b1643
+    const v18, 0x7f0b1642
 
     move-object/from16 v0, p0
 
@@ -2896,7 +2896,7 @@
     iput v0, v1, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->mShownDialogId:I
 
     .line 330
-    const v16, 0x7f0b0be4
+    const v16, 0x7f0b0be2
 
     move-object/from16 v0, p0
 
@@ -2908,7 +2908,7 @@
 
     .line 331
     .local v15, "title":Ljava/lang/CharSequence;
-    const v16, 0x7f0b0be5
+    const v16, 0x7f0b0be3
 
     move-object/from16 v0, p0
 
@@ -2953,7 +2953,7 @@
     move-result-object v16
 
     .line 426
-    const v17, 0x7f0b1822
+    const v17, 0x7f0b1821
 
     .line 422
     move-object/from16 v0, v16
@@ -3071,7 +3071,7 @@
     move-result-object v16
 
     .line 360
-    const v17, 0x7f0b158c
+    const v17, 0x7f0b158b
 
     .line 355
     move-object/from16 v0, v16
@@ -3421,7 +3421,7 @@
     move-result-object v16
 
     .line 391
-    const v17, 0x7f0b158c
+    const v17, 0x7f0b158b
 
     .line 386
     move-object/from16 v0, v16
@@ -4092,7 +4092,7 @@
     move-result-object v16
 
     .line 451
-    const v17, 0x7f0b153d
+    const v17, 0x7f0b153c
 
     .line 446
     move-object/from16 v0, v16

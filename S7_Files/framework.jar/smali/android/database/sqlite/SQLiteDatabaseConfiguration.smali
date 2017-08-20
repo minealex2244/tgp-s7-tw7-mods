@@ -8,6 +8,10 @@
 
 .field public static final MEMORY_DB_PATH:Ljava/lang/String; = ":memory:"
 
+.field private static final default_wal_db_blacklist:[Ljava/lang/String;
+
+.field private static final default_wal_db_packages:[Ljava/lang/String;
+
 .field private static final preload_wal_dbs:[Ljava/lang/String;
 
 
@@ -22,6 +26,8 @@
         }
     .end annotation
 .end field
+
+.field public defaultWAL:Z
 
 .field public enableWALExplicitly:Z
 
@@ -42,42 +48,42 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 6
 
     .prologue
-    .line 41
+    const/4 v5, 0x2
+
+    const/4 v4, 0x1
+
+    const/4 v3, 0x0
+
+    .line 44
     const-string/jumbo v0, "[\\w\\.\\-]+@[\\w\\.\\-]+"
 
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
 
-    .line 40
+    .line 43
     sput-object v0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->EMAIL_IN_DB_PATTERN:Ljava/util/regex/Pattern;
 
-    .line 106
+    .line 116
     const/4 v0, 0x6
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 107
+    .line 117
     const-string/jumbo v1, "internal.db"
 
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
+    aput-object v1, v0, v3
 
     const-string/jumbo v1, "external.db"
 
-    const/4 v2, 0x1
-
-    aput-object v1, v0, v2
+    aput-object v1, v0, v4
 
     const-string/jumbo v1, "settings.db"
 
-    const/4 v2, 0x2
-
-    aput-object v1, v0, v2
+    aput-object v1, v0, v5
 
     const-string/jumbo v1, "mmssms.db"
 
@@ -85,7 +91,7 @@
 
     aput-object v1, v0, v2
 
-    .line 108
+    .line 118
     const-string/jumbo v1, "contacts2.db"
 
     const/4 v2, 0x4
@@ -98,10 +104,40 @@
 
     aput-object v1, v0, v2
 
-    .line 106
+    .line 116
     sput-object v0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->preload_wal_dbs:[Ljava/lang/String;
 
-    .line 37
+    .line 119
+    new-array v0, v5, [Ljava/lang/String;
+
+    .line 120
+    const-string/jumbo v1, "com.samsung."
+
+    aput-object v1, v0, v3
+
+    const-string/jumbo v1, "com.sec."
+
+    aput-object v1, v0, v4
+
+    .line 119
+    sput-object v0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->default_wal_db_packages:[Ljava/lang/String;
+
+    .line 121
+    new-array v0, v5, [Ljava/lang/String;
+
+    .line 122
+    const-string/jumbo v1, "EmailProvider.db"
+
+    aput-object v1, v0, v3
+
+    const-string/jumbo v1, "EmailProviderBody.db"
+
+    aput-object v1, v0, v4
+
+    .line 121
+    sput-object v0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->default_wal_db_blacklist:[Ljava/lang/String;
+
+    .line 40
     return-void
 .end method
 
@@ -110,21 +146,21 @@
     .param p1, "other"    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
     .prologue
-    .line 150
+    .line 165
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 104
+    .line 114
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 103
+    .line 113
     iput-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->customFunctions:Ljava/util/ArrayList;
 
-    .line 151
+    .line 166
     if-nez p1, :cond_0
 
-    .line 152
+    .line 167
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v1, "other must not be null."
@@ -133,21 +169,21 @@
 
     throw v0
 
-    .line 155
+    .line 170
     :cond_0
     iget-object v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->path:Ljava/lang/String;
 
     iput-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->path:Ljava/lang/String;
 
-    .line 156
+    .line 171
     iget-object v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->label:Ljava/lang/String;
 
     iput-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->label:Ljava/lang/String;
 
-    .line 157
+    .line 172
     invoke-virtual {p0, p1}, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->updateParametersFrom(Landroid/database/sqlite/SQLiteDatabaseConfiguration;)V
 
-    .line 150
+    .line 165
     return-void
 .end method
 
@@ -161,21 +197,21 @@
 
     const/4 v1, 0x0
 
-    .line 117
+    .line 131
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 104
+    .line 114
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 103
+    .line 113
     iput-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->customFunctions:Ljava/util/ArrayList;
 
-    .line 118
+    .line 132
     if-nez p1, :cond_0
 
-    .line 119
+    .line 133
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v1, "path must not be null."
@@ -184,78 +220,101 @@
 
     throw v0
 
-    .line 122
+    .line 136
     :cond_0
     iput-object p1, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->path:Ljava/lang/String;
 
-    .line 123
+    .line 137
     invoke-static {p1}, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->stripPathForLogs(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->label:Ljava/lang/String;
 
-    .line 124
+    .line 138
     iput p2, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->openFlags:I
 
-    .line 127
+    .line 141
     const/16 v0, 0x19
 
     iput v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->maxSqlCacheSize:I
 
-    .line 128
+    .line 142
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->locale:Ljava/util/Locale;
 
-    .line 131
+    .line 145
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->isInMemoryDb()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 132
+    .line 146
     invoke-static {p1}, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->isPreloadWalDb(Ljava/lang/String;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->preloadWalDb:Z
 
-    .line 134
-    and-int v0, p2, v2
+    .line 147
+    iget-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->preloadWalDb:Z
 
     if-eqz v0, :cond_2
 
-    .line 135
+    move v0, v1
+
+    :goto_0
+    iput-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->defaultWAL:Z
+
+    .line 149
+    and-int v0, p2, v2
+
+    if-eqz v0, :cond_3
+
+    .line 150
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->enableWALExplicitly:Z
 
-    .line 117
+    .line 131
     :cond_1
-    :goto_0
+    :goto_1
     return-void
 
-    .line 137
+    .line 147
     :cond_2
+    invoke-static {p1}, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->useWALModebyDefault(Ljava/lang/String;)Z
+
+    move-result v0
+
+    goto :goto_0
+
+    .line 152
+    :cond_3
     iput-boolean v1, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->enableWALExplicitly:Z
 
-    .line 138
+    .line 153
     iget-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->preloadWalDb:Z
+
+    if-nez v0, :cond_4
+
+    iget-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->defaultWAL:Z
 
     if-eqz v0, :cond_1
 
-    .line 139
+    .line 154
+    :cond_4
     iget v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->openFlags:I
 
     or-int/2addr v0, v2
 
     iput v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->openFlags:I
 
-    goto :goto_0
+    goto :goto_1
 .end method
 
 .method private static isPreloadWalDb(Ljava/lang/String;)Z
@@ -265,7 +324,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 194
+    .line 210
     sget-object v3, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->preload_wal_dbs:[Ljava/lang/String;
 
     array-length v4, v3
@@ -277,7 +336,7 @@
 
     aget-object v0, v3, v1
 
-    .line 195
+    .line 211
     .local v0, "s":Ljava/lang/String;
     invoke-virtual {p0, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -285,18 +344,18 @@
 
     if-eqz v5, :cond_0
 
-    .line 196
+    .line 212
     const/4 v1, 0x1
 
     return v1
 
-    .line 194
+    .line 210
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 199
+    .line 215
     .end local v0    # "s":Ljava/lang/String;
     :cond_1
     return v2
@@ -307,7 +366,7 @@
     .param p0, "path"    # Ljava/lang/String;
 
     .prologue
-    .line 203
+    .line 261
     const/16 v0, 0x40
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->indexOf(I)I
@@ -318,10 +377,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 204
+    .line 262
     return-object p0
 
-    .line 206
+    .line 264
     :cond_0
     sget-object v0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->EMAIL_IN_DB_PATTERN:Ljava/util/regex/Pattern;
 
@@ -338,13 +397,152 @@
     return-object v0
 .end method
 
+.method private static useWALModebyDefault(Ljava/lang/String;)Z
+    .locals 7
+    .param p0, "path"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 243
+    invoke-static {}, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->useWALModebyDefaultonDevice()Z
+
+    move-result v0
+
+    .line 245
+    .local v0, "defaultWalonDevice":Z
+    if-eqz v0, :cond_3
+
+    .line 246
+    sget-object v4, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->default_wal_db_blacklist:[Ljava/lang/String;
+
+    array-length v5, v4
+
+    move v2, v3
+
+    :goto_0
+    if-ge v2, v5, :cond_1
+
+    aget-object v1, v4, v2
+
+    .line 247
+    .local v1, "s":Ljava/lang/String;
+    invoke-virtual {p0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    .line 248
+    return v3
+
+    .line 246
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 251
+    .end local v1    # "s":Ljava/lang/String;
+    :cond_1
+    sget-object v4, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->default_wal_db_packages:[Ljava/lang/String;
+
+    array-length v5, v4
+
+    move v2, v3
+
+    :goto_1
+    if-ge v2, v5, :cond_3
+
+    aget-object v1, v4, v2
+
+    .line 252
+    .restart local v1    # "s":Ljava/lang/String;
+    invoke-virtual {p0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    .line 253
+    const/4 v2, 0x1
+
+    return v2
+
+    .line 251
+    :cond_2
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_1
+
+    .line 257
+    .end local v1    # "s":Ljava/lang/String;
+    :cond_3
+    return v3
+.end method
+
+.method public static useWALModebyDefaultonDevice()Z
+    .locals 2
+
+    .prologue
+    .line 232
+    const-string/jumbo v1, "ro.product.name"
+
+    invoke-static {v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 233
+    .local v0, "device":Ljava/lang/String;
+    if-eqz v0, :cond_1
+
+    .line 234
+    const-string/jumbo v1, "a7y17ltektt"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string/jumbo v1, "a7y17ltelgt"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    .line 235
+    const-string/jumbo v1, "a7y17lteskt"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    .line 234
+    if-eqz v1, :cond_1
+
+    .line 236
+    :cond_0
+    const/4 v1, 0x1
+
+    return v1
+
+    .line 239
+    :cond_1
+    const/4 v1, 0x0
+
+    return v1
+.end method
+
 
 # virtual methods
 .method public isInMemoryDb()Z
     .locals 2
 
     .prologue
-    .line 190
+    .line 206
     iget-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->path:Ljava/lang/String;
 
     const-string/jumbo v1, ":memory:"
@@ -361,10 +559,10 @@
     .param p1, "other"    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
     .prologue
-    .line 167
+    .line 182
     if-nez p1, :cond_0
 
-    .line 168
+    .line 183
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v1, "other must not be null."
@@ -373,7 +571,7 @@
 
     throw v0
 
-    .line 170
+    .line 185
     :cond_0
     iget-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->path:Ljava/lang/String;
 
@@ -385,7 +583,7 @@
 
     if-nez v0, :cond_1
 
-    .line 171
+    .line 186
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string/jumbo v1, "other configuration must refer to the same database."
@@ -394,49 +592,54 @@
 
     throw v0
 
-    .line 175
+    .line 190
     :cond_1
     iget v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->openFlags:I
 
     iput v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->openFlags:I
 
-    .line 176
+    .line 191
     iget-boolean v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->enableWALExplicitly:Z
 
     iput-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->enableWALExplicitly:Z
 
-    .line 177
+    .line 192
     iget-boolean v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->preloadWalDb:Z
 
     iput-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->preloadWalDb:Z
 
-    .line 178
+    .line 193
+    iget-boolean v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->defaultWAL:Z
+
+    iput-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->defaultWAL:Z
+
+    .line 194
     iget v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->maxSqlCacheSize:I
 
     iput v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->maxSqlCacheSize:I
 
-    .line 179
+    .line 195
     iget-object v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->locale:Ljava/util/Locale;
 
     iput-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->locale:Ljava/util/Locale;
 
-    .line 180
+    .line 196
     iget-boolean v0, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->foreignKeyConstraintsEnabled:Z
 
     iput-boolean v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->foreignKeyConstraintsEnabled:Z
 
-    .line 181
+    .line 197
     iget-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->customFunctions:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 182
+    .line 198
     iget-object v0, p0, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->customFunctions:Ljava/util/ArrayList;
 
     iget-object v1, p1, Landroid/database/sqlite/SQLiteDatabaseConfiguration;->customFunctions:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 166
+    .line 181
     return-void
 .end method

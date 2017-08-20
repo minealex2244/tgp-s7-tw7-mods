@@ -43,7 +43,7 @@
 
     .prologue
     .line 124
-    const v0, 0x7f0b089e
+    const v0, 0x7f0b089c
 
     invoke-static {v0}, Lcom/samsung/android/settings/SecSetupLockScreenIntroActivity$LearnMoreDialog;->newInstance(I)Lcom/samsung/android/settings/SecSetupLockScreenIntroActivity$LearnMoreDialog;
 

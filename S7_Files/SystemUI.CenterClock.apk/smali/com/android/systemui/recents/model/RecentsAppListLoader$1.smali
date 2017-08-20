@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;",
+        "Lcom/android/systemui/recents/model/AppInfo;",
         ">;"
     }
 .end annotation
@@ -37,7 +37,7 @@
     .param p1, "this$0"    # Lcom/android/systemui/recents/model/RecentsAppListLoader;
 
     .prologue
-    .line 160
+    .line 100
     iput-object p1, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$1;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,37 +47,37 @@
 
 
 # virtual methods
-.method public compare(Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;)I
+.method public compare(Lcom/android/systemui/recents/model/AppInfo;Lcom/android/systemui/recents/model/AppInfo;)I
     .locals 4
-    .param p1, "object1"    # Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;
-    .param p2, "object2"    # Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;
+    .param p1, "object1"    # Lcom/android/systemui/recents/model/AppInfo;
+    .param p2, "object2"    # Lcom/android/systemui/recents/model/AppInfo;
 
     .prologue
-    .line 162
+    .line 102
     const/4 v0, 0x0
 
-    .line 163
+    .line 103
     .local v0, "res":I
-    iget-object v1, p1, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;->title:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/systemui/recents/model/AppInfo;->title:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p2, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;->title:Ljava/lang/String;
+    iget-object v1, p2, Lcom/android/systemui/recents/model/AppInfo;->title:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 164
+    .line 104
     sget-object v1, Ljava/lang/String;->CASE_INSENSITIVE_ORDER:Ljava/util/Comparator;
 
-    iget-object v2, p1, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;->title:Ljava/lang/String;
+    iget-object v2, p1, Lcom/android/systemui/recents/model/AppInfo;->title:Ljava/lang/String;
 
-    iget-object v3, p2, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;->title:Ljava/lang/String;
+    iget-object v3, p2, Lcom/android/systemui/recents/model/AppInfo;->title:Ljava/lang/String;
 
     invoke-interface {v1, v2, v3}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 166
+    .line 106
     :cond_0
     return v0
 .end method
@@ -88,14 +88,14 @@
     .param p2, "object2"    # Ljava/lang/Object;
 
     .prologue
-    .line 161
-    check-cast p1, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;
+    .line 101
+    check-cast p1, Lcom/android/systemui/recents/model/AppInfo;
 
     .end local p1    # "object1":Ljava/lang/Object;
-    check-cast p2, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;
+    check-cast p2, Lcom/android/systemui/recents/model/AppInfo;
 
     .end local p2    # "object2":Ljava/lang/Object;
-    invoke-virtual {p0, p1, p2}, Lcom/android/systemui/recents/model/RecentsAppListLoader$1;->compare(Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/systemui/recents/model/RecentsAppListLoader$1;->compare(Lcom/android/systemui/recents/model/AppInfo;Lcom/android/systemui/recents/model/AppInfo;)I
 
     move-result v0
 

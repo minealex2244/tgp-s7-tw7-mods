@@ -555,9 +555,9 @@
 
     .prologue
     .line 990
-    const v0, 0x7f0b0c6b
+    const v0, 0x7f0b0c69
 
-    const v1, 0x7f0b0c6e
+    const v1, 0x7f0b0c6c
 
     const/4 v2, 0x0
 
@@ -748,7 +748,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0ccb
+    const v2, 0x7f0b0cc9
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1821,7 +1821,7 @@
     .line 1061
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
-    const v1, 0x7f0b0c64
+    const v1, 0x7f0b0c62
 
     invoke-virtual {p0, v1}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->getString(I)Ljava/lang/String;
 
@@ -3722,7 +3722,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0b0c6a
+    const v11, 0x7f0b0c68
 
     const/4 v12, 0x1
 
@@ -3755,7 +3755,7 @@
 
     move-result-object v10
 
-    const v11, 0x7f0b0c6d
+    const v11, 0x7f0b0c6b
 
     const/4 v12, 0x1
 

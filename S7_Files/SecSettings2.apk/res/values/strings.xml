@@ -129,7 +129,7 @@
     <string name="launch_defaults_some">Some defaults set</string>
     <string name="launch_defaults_none">No defaults set</string>
     <string name="tts_settings">Text-to-speech settings</string>
-    <string name="tts_settings_title">Text-to-speech</string>
+    <string name="tts_settings_title">Text-to-speech output</string>
     <string name="tts_default_rate_title">Speech rate</string>
     <string name="tts_default_rate_summary">Speed at which the text is spoken</string>
     <string name="tts_default_pitch_title">Pitch</string>
@@ -1991,8 +1991,6 @@ Before you request a repair under the warranty, Reactivation lock must be disabl
     <string name="empty_content_toast">No content to save.</string>
     <string name="find_my_mobile_message_zero">"Track and control your device remotely using the Find My Mobile web service. For more information and to find out what other functions are available, visit the following website:
 %s"</string>
-    <string name="send_last_location_title">Send last location</string>
-    <string name="send_last_location_summary">"Allow your phone to send its last location to the Find My Mobile server before it's turned off."</string>
     <string name="high_power_description">Enable Optimise battery usage for individual apps. Some functions, such as those that use mobile networks or sync data, will be restricted to save battery power.</string>
     <string name="wifi_display_summary_off">Off</string>
     <string name="estimated_reserved_time">$s</string>
@@ -4653,7 +4651,6 @@ Your saved fingerprints will also be removed from this profile and you won't be 
     <string name="bluetooth_display_passkey_pin_msg">Enter %1$s on %2$s to pair, then tap Return or Enter.</string>
     <string name="bluetooth_pairing_shares_phonebook">Allow %1$s to access your contacts and call history</string>
     <string name="bluetooth_error_title" />
-    <string name="bluetooth_HID_connecting_error_message">"Can't connect to %1$s, Try to connect from %2$s"</string>
     <string name="bluetooth_connecting_error_message">Unable to connect to %1$s.</string>
     <string name="bluetooth_preference_scan_title">Scan</string>
     <string name="bluetooth_search_for_devices">Scan for devices</string>

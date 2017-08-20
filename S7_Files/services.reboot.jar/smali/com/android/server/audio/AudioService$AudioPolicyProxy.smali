@@ -40,18 +40,18 @@
     .param p4, "hasFocusListener"    # Z
 
     .prologue
-    .line 10690
+    .line 10688
     iput-object p1, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->this$0:Lcom/android/server/audio/AudioService;
 
-    .line 10692
+    .line 10690
     invoke-direct {p0, p2}, Landroid/media/audiopolicy/AudioPolicyConfig;-><init>(Landroid/media/audiopolicy/AudioPolicyConfig;)V
 
-    .line 10688
+    .line 10686
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mFocusDuckBehavior:I
 
-    .line 10693
+    .line 10691
     new-instance v0, Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -92,18 +92,18 @@
 
     invoke-virtual {p0, v0}, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->setRegistration(Ljava/lang/String;)V
 
-    .line 10694
+    .line 10692
     iput-object p3, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mPolicyCallback:Landroid/media/audiopolicy/IAudioPolicyCallback;
 
-    .line 10695
+    .line 10693
     iput-boolean p4, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mHasFocusListener:Z
 
-    .line 10696
+    .line 10694
     iget-boolean v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mHasFocusListener:Z
 
     if-eqz v0, :cond_0
 
-    .line 10697
+    .line 10695
     invoke-static {p1}, Lcom/android/server/audio/AudioService;->-get43(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/MediaFocusControl;
 
     move-result-object v0
@@ -112,11 +112,11 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/audio/MediaFocusControl;->addFocusFollower(Landroid/media/audiopolicy/IAudioPolicyCallback;)V
 
-    .line 10699
+    .line 10697
     :cond_0
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->connectMixes()V
 
-    .line 10691
+    .line 10689
     return-void
 .end method
 
@@ -126,7 +126,7 @@
     .locals 4
 
     .prologue
-    .line 10703
+    .line 10701
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-get16(Lcom/android/server/audio/AudioService;)Ljava/util/HashMap;
@@ -135,7 +135,7 @@
 
     monitor-enter v1
 
-    .line 10704
+    .line 10702
     :try_start_0
     const-string/jumbo v0, "AudioPolicyProxy"
 
@@ -167,10 +167,10 @@
 
     invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10705
+    .line 10703
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->release()V
 
-    .line 10706
+    .line 10704
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-get16(Lcom/android/server/audio/AudioService;)Ljava/util/HashMap;
@@ -189,10 +189,10 @@
 
     monitor-exit v1
 
-    .line 10702
+    .line 10700
     return-void
 
-    .line 10703
+    .line 10701
     :catchall_0
     move-exception v0
 
@@ -205,14 +205,14 @@
     .locals 2
 
     .prologue
-    .line 10725
+    .line 10723
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mMixes:Ljava/util/ArrayList;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Landroid/media/AudioSystem;->registerPolicyMixes(Ljava/util/ArrayList;Z)I
 
-    .line 10724
+    .line 10722
     return-void
 .end method
 
@@ -220,7 +220,7 @@
     .locals 1
 
     .prologue
-    .line 10711
+    .line 10709
     invoke-virtual {p0}, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->getRegistration()Ljava/lang/String;
 
     move-result-object v0
@@ -234,14 +234,14 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 10715
+    .line 10713
     iget v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mFocusDuckBehavior:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 10716
+    .line 10714
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-get43(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/MediaFocusControl;
@@ -250,13 +250,13 @@
 
     invoke-virtual {v0, v2}, Lcom/android/server/audio/MediaFocusControl;->setDuckingInExtPolicyAvailable(Z)V
 
-    .line 10718
+    .line 10716
     :cond_0
     iget-boolean v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mHasFocusListener:Z
 
     if-eqz v0, :cond_1
 
-    .line 10719
+    .line 10717
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-get43(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/MediaFocusControl;
@@ -267,12 +267,12 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/audio/MediaFocusControl;->removeFocusFollower(Landroid/media/audiopolicy/IAudioPolicyCallback;)V
 
-    .line 10721
+    .line 10719
     :cond_1
     iget-object v0, p0, Lcom/android/server/audio/AudioService$AudioPolicyProxy;->mMixes:Ljava/util/ArrayList;
 
     invoke-static {v0, v2}, Landroid/media/AudioSystem;->registerPolicyMixes(Ljava/util/ArrayList;Z)I
 
-    .line 10714
+    .line 10712
     return-void
 .end method

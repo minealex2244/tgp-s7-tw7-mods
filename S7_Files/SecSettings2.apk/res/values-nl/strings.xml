@@ -3687,7 +3687,6 @@ Opmerking: uw vingerafdruk is mogelijk minder veilig dan een sterk patroon of ee
     <string name="bluetooth_confirm_passkey_msg">Bevestig dat sleutel %2$s is voor koppelen met %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Van&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Koppelen met dit apparaat?</string>
     <string name="bluetooth_display_passkey_pin_msg">Geef %1$s in op %2$s om te koppelen, en tik dan op Return of Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Kan niet verbinden met %1$s. Probeer te verbinden vanaf %2$s.</string>
     <string name="bluetooth_connecting_error_message">Kan niet verbinden met %s.</string>
     <string name="bluetooth_preference_scan_title">Scannen</string>
     <string name="bluetooth_preference_paired_devices">Gekoppelde apparaten</string>

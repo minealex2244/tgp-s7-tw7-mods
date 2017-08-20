@@ -264,7 +264,7 @@
     .line 364
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/HotspotTile;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0f03db
+    const v1, 0x7f0f03da
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -526,7 +526,7 @@
 
     if-eqz v2, :cond_1
 
-    const v1, 0x7f0f03d7
+    const v1, 0x7f0f03d6
 
     .line 334
     .local v1, "nosimPopupTitleId":I
@@ -535,7 +535,7 @@
 
     if-eqz v2, :cond_2
 
-    const v0, 0x7f0f03da
+    const v0, 0x7f0f03d9
 
     .line 340
     .local v0, "nosimPopupMsgId":I
@@ -603,7 +603,7 @@
     .end local v0    # "nosimPopupMsgId":I
     .end local v1    # "nosimPopupTitleId":I
     :cond_1
-    const v1, 0x7f0f03d6
+    const v1, 0x7f0f03d5
 
     .restart local v1    # "nosimPopupTitleId":I
     goto :goto_0
@@ -614,7 +614,7 @@
 
     if-eqz v2, :cond_3
 
-    const v0, 0x7f0f03d9
+    const v0, 0x7f0f03d8
 
     .restart local v0    # "nosimPopupMsgId":I
     goto :goto_1
@@ -626,7 +626,7 @@
 
     if-eqz v2, :cond_4
 
-    const v0, 0x7f0f03d8
+    const v0, 0x7f0f03d7
 
     .restart local v0    # "nosimPopupMsgId":I
     goto :goto_1
@@ -634,7 +634,7 @@
     .line 337
     .end local v0    # "nosimPopupMsgId":I
     :cond_4
-    const v0, 0x7f0f03d5
+    const v0, 0x7f0f03d4
 
     .restart local v0    # "nosimPopupMsgId":I
     goto :goto_1
@@ -708,7 +708,7 @@
 
     if-eqz v1, :cond_2
 
-    const v0, 0x7f0f04f7
+    const v0, 0x7f0f04f5
 
     .line 399
     .local v0, "popupMsgId":I
@@ -735,7 +735,7 @@
 
     if-eqz v1, :cond_5
 
-    const v0, 0x7f0f04fc
+    const v0, 0x7f0f04fa
 
     .line 404
     :cond_1
@@ -824,7 +824,7 @@
 
     if-eqz v1, :cond_3
 
-    const v0, 0x7f0f04f8
+    const v0, 0x7f0f04f6
 
     .restart local v0    # "popupMsgId":I
     goto :goto_0
@@ -836,7 +836,7 @@
 
     if-eqz v1, :cond_4
 
-    const v0, 0x7f0f04f6
+    const v0, 0x7f0f04f4
 
     .restart local v0    # "popupMsgId":I
     goto :goto_0
@@ -844,14 +844,14 @@
     .line 396
     .end local v0    # "popupMsgId":I
     :cond_4
-    const v0, 0x7f0f04f5
+    const v0, 0x7f0f04f3
 
     .restart local v0    # "popupMsgId":I
     goto :goto_0
 
     .line 400
     :cond_5
-    const v0, 0x7f0f04fb
+    const v0, 0x7f0f04f9
 
     goto :goto_1
 .end method
@@ -933,7 +933,7 @@
 
     .line 137
     :cond_0
-    const v0, 0x7f0f03dc
+    const v0, 0x7f0f03db
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/tiles/HotspotTile;->showItPolicyToast(I)V
 
@@ -1046,7 +1046,7 @@
 
     .line 154
     :cond_1
-    const v1, 0x7f0f03dc
+    const v1, 0x7f0f03db
 
     invoke-virtual {p0, v1}, Lcom/android/systemui/qs/tiles/HotspotTile;->showItPolicyToast(I)V
 
@@ -1244,7 +1244,7 @@
 
     .line 194
     :cond_1
-    const v0, 0x7f0f03dc
+    const v0, 0x7f0f03db
 
     invoke-virtual {p0, v0}, Lcom/android/systemui/qs/tiles/HotspotTile;->showItPolicyToast(I)V
 

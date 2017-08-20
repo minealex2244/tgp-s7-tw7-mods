@@ -71,7 +71,7 @@
     invoke-direct {v2, p0}, Lcom/android/settings/fingerprint/SetupFingerprintEnrollEnrolling$SkipDialog$1;-><init>(Lcom/android/settings/fingerprint/SetupFingerprintEnrollEnrolling$SkipDialog;)V
 
     .line 110
-    const v3, 0x7f0b12a6
+    const v3, 0x7f0b12a5
 
     .line 106
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -84,7 +84,7 @@
     invoke-direct {v2, p0}, Lcom/android/settings/fingerprint/SetupFingerprintEnrollEnrolling$SkipDialog$2;-><init>(Lcom/android/settings/fingerprint/SetupFingerprintEnrollEnrolling$SkipDialog;)V
 
     .line 121
-    const v3, 0x7f0b12a7
+    const v3, 0x7f0b12a6
 
     .line 106
     invoke-virtual {v1, v3, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

@@ -7,8 +7,8 @@
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/recents/model/RecentsAppListLoader;->buildAppInfos()V
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/systemui/recents/model/RecentsAppListLoader;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/systemui/recents/model/RecentsAppListLoader;
 
     .prologue
-    .line 116
+    .line 256
     iput-object p1, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,202 +38,199 @@
 
 # virtual methods
 .method public run()V
-    .locals 9
+    .locals 7
 
     .prologue
-    const/4 v8, 0x0
+    .line 259
+    const-string/jumbo v4, "RecentsAppListLoader"
 
-    .line 120
-    sget-object v6, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mRawResolveInfoList:Ljava/util/List;
+    const-string/jumbo v5, "preloadData()"
 
-    invoke-interface {v6}, Ljava/util/List;->clear()V
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 123
-    const/4 v5, 0x0
-
-    .line 124
-    .local v5, "rInfoList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
-    iget-object v6, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
-
+    .line 260
     invoke-static {}, Lcom/android/systemui/recents/Recents;->getSystemServices()Lcom/android/systemui/recents/misc/SystemServicesProxy;
 
-    move-result-object v7
+    move-result-object v2
 
-    invoke-virtual {v7}, Lcom/android/systemui/recents/misc/SystemServicesProxy;->getKioskId()I
+    .line 261
+    .local v2, "ssp":Lcom/android/systemui/recents/misc/SystemServicesProxy;
+    const/4 v0, 0x0
 
-    move-result v7
-
-    invoke-static {v6, v7}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-set1(Lcom/android/systemui/recents/model/RecentsAppListLoader;I)I
-
-    .line 125
-    iget-object v6, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
-
-    invoke-static {v6}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-get2(Lcom/android/systemui/recents/model/RecentsAppListLoader;)I
-
-    move-result v6
-
-    const/4 v7, -0x1
-
-    if-eq v6, v7, :cond_2
-
-    .line 126
-    invoke-static {}, Lcom/android/systemui/recents/Recents;->getSystemServices()Lcom/android/systemui/recents/misc/SystemServicesProxy;
-
-    move-result-object v6
-
-    iget-object v7, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
-
-    invoke-static {v7}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-get2(Lcom/android/systemui/recents/model/RecentsAppListLoader;)I
-
-    move-result v7
-
-    invoke-virtual {v6, v8, v7}, Lcom/android/systemui/recents/misc/SystemServicesProxy;->getLauncherPacakgesAsUser(Ljava/lang/String;I)Ljava/util/List;
-
-    move-result-object v5
-
-    .line 133
-    .local v5, "rInfoList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
+    .local v0, "i":I
     :goto_0
-    const/4 v2, 0x0
+    sget-object v4, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mAppInfoList:Ljava/util/ArrayList;
 
-    .local v2, "i":I
-    :goto_1
-    invoke-interface {v5}, Ljava/util/List;->size()I
+    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
 
-    move-result v6
+    move-result v4
 
-    if-ge v2, v6, :cond_3
+    if-ge v0, v4, :cond_1
 
-    .line 134
-    invoke-interface {v5, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 262
+    sget-object v4, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mAppInfoList:Ljava/util/ArrayList;
 
-    move-result-object v4
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    check-cast v4, Landroid/content/pm/ResolveInfo;
+    move-result-object v1
 
-    .line 135
-    .local v4, "rInfo":Landroid/content/pm/ResolveInfo;
-    iget-object v0, v4, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    check-cast v1, Lcom/android/systemui/recents/model/AppInfo;
 
-    .line 136
-    .local v0, "ai":Landroid/content/pm/ActivityInfo;
-    iget v6, v0, Landroid/content/pm/ActivityInfo;->resizeMode:I
+    .line 264
+    .local v1, "info":Lcom/android/systemui/recents/model/AppInfo;
+    iget-object v4, v1, Lcom/android/systemui/recents/model/AppInfo;->resolveInfo:Landroid/content/pm/ResolveInfo;
 
-    invoke-static {v6}, Landroid/content/pm/ActivityInfo;->isResizeableMode(I)Z
+    iget-object v4, v4, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
-    move-result v6
+    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
-    if-nez v6, :cond_0
+    move-result v5
 
-    invoke-static {}, Lcom/android/systemui/recents/Recents;->getSystemServices()Lcom/android/systemui/recents/misc/SystemServicesProxy;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v0}, Lcom/android/systemui/recents/misc/SystemServicesProxy;->isForceResizable(Landroid/content/pm/ActivityInfo;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_1
-
-    .line 137
-    :cond_0
-    sget-object v6, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mRawResolveInfoList:Ljava/util/List;
-
-    invoke-interface {v6, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 133
-    :cond_1
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_1
-
-    .line 128
-    .end local v0    # "ai":Landroid/content/pm/ActivityInfo;
-    .end local v2    # "i":I
-    .end local v4    # "rInfo":Landroid/content/pm/ResolveInfo;
-    .local v5, "rInfoList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
-    :cond_2
-    invoke-static {}, Lcom/android/systemui/recents/Recents;->getSystemServices()Lcom/android/systemui/recents/misc/SystemServicesProxy;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v8}, Lcom/android/systemui/recents/misc/SystemServicesProxy;->getLauncherPacakges(Ljava/lang/String;)Ljava/util/List;
-
-    move-result-object v5
-
-    .local v5, "rInfoList":Ljava/util/List;, "Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
-    goto :goto_0
-
-    .line 141
-    .restart local v2    # "i":I
-    :cond_3
-    sget-object v6, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mAppInfoList:Ljava/util/ArrayList;
-
-    invoke-virtual {v6}, Ljava/util/ArrayList;->clear()V
-
-    .line 142
-    const/4 v2, 0x0
-
-    :goto_2
-    sget-object v6, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mRawResolveInfoList:Ljava/util/List;
-
-    invoke-interface {v6}, Ljava/util/List;->size()I
-
-    move-result v6
-
-    if-ge v2, v6, :cond_4
-
-    .line 143
-    sget-object v6, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mRawResolveInfoList:Ljava/util/List;
-
-    invoke-interface {v6, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    .line 263
+    invoke-virtual {v2, v4, v5}, Lcom/android/systemui/recents/misc/SystemServicesProxy;->getBadgedActivityLabel(Landroid/content/pm/ActivityInfo;I)Ljava/lang/String;
 
     move-result-object v3
 
-    check-cast v3, Landroid/content/pm/ResolveInfo;
+    .line 265
+    .local v3, "title":Ljava/lang/String;
+    if-eqz v3, :cond_0
 
-    .line 145
-    .local v3, "info":Landroid/content/pm/ResolveInfo;
-    new-instance v1, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;
+    .end local v3    # "title":Ljava/lang/String;
+    :goto_1
+    iput-object v3, v1, Lcom/android/systemui/recents/model/AppInfo;->title:Ljava/lang/String;
+
+    .line 266
+    iget-object v4, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
+
+    iget-object v4, v4, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mApplicationContext:Landroid/content/Context;
+
+    .line 267
+    iget-object v5, v1, Lcom/android/systemui/recents/model/AppInfo;->resolveInfo:Landroid/content/pm/ResolveInfo;
+
+    iget-object v5, v5, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    iget-object v5, v5, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+
+    .line 266
+    invoke-static {v4, v5}, Lcom/android/systemui/recents/misc/AppListUsageStats;->getCount(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v4
+
+    iput v4, v1, Lcom/android/systemui/recents/model/AppInfo;->executeCount:I
+
+    .line 269
+    iget-object v4, v1, Lcom/android/systemui/recents/model/AppInfo;->resolveInfo:Landroid/content/pm/ResolveInfo;
+
+    iget-object v4, v4, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
+    .line 268
+    invoke-virtual {v2, v4}, Lcom/android/systemui/recents/misc/SystemServicesProxy;->shouldLaunchAsMultiInstance(Landroid/content/pm/ActivityInfo;)Z
+
+    move-result v4
+
+    iput-boolean v4, v1, Lcom/android/systemui/recents/model/AppInfo;->supportMultiInstance:Z
+
+    .line 261
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 265
+    .restart local v3    # "title":Ljava/lang/String;
+    :cond_0
+    const-string/jumbo v3, ""
+
+    goto :goto_1
+
+    .line 271
+    .end local v1    # "info":Lcom/android/systemui/recents/model/AppInfo;
+    .end local v3    # "title":Ljava/lang/String;
+    :cond_1
+    iget-object v4, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
+
+    invoke-static {v4}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-get6(Lcom/android/systemui/recents/model/RecentsAppListLoader;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    monitor-enter v5
+
+    .line 272
+    :try_start_0
+    iget-object v4, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
+
+    invoke-static {v4}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-get0(Lcom/android/systemui/recents/model/RecentsAppListLoader;)Landroid/os/Handler;
+
+    move-result-object v4
 
     iget-object v6, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
 
-    invoke-direct {v1, v6}, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;-><init>(Lcom/android/systemui/recents/model/RecentsAppListLoader;)V
+    invoke-static {v6}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-get1(Lcom/android/systemui/recents/model/RecentsAppListLoader;)Ljava/lang/Runnable;
 
-    .line 146
-    .local v1, "appInfo":Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;
-    iput-object v3, v1, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;->resolveInfo:Landroid/content/pm/ResolveInfo;
+    move-result-object v6
 
-    .line 147
+    invoke-virtual {v4, v6}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    .line 273
+    iget-object v4, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
+
+    invoke-static {v4}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-get0(Lcom/android/systemui/recents/model/RecentsAppListLoader;)Landroid/os/Handler;
+
+    move-result-object v4
+
     iget-object v6, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
 
-    iget-object v6, v6, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mApplicationContext:Landroid/content/Context;
+    invoke-static {v6}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-get5(Lcom/android/systemui/recents/model/RecentsAppListLoader;)Ljava/lang/Runnable;
 
-    .line 148
-    iget-object v7, v3, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+    move-result-object v6
 
-    iget-object v7, v7, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
+    invoke-virtual {v4, v6}, Landroid/os/Handler;->hasCallbacks(Ljava/lang/Runnable;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 147
-    invoke-static {v6, v7}, Lcom/android/systemui/recents/misc/AppListUsageStats;->getCount(Landroid/content/Context;Ljava/lang/String;)I
+    move-result v4
 
-    move-result v6
+    if-eqz v4, :cond_3
 
-    iput v6, v1, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;->executeCount:I
+    :cond_2
+    :goto_2
+    monitor-exit v5
 
-    .line 150
-    sget-object v6, Lcom/android/systemui/recents/model/RecentsAppListLoader;->mAppInfoList:Ljava/util/ArrayList;
+    .line 258
+    return-void
 
-    invoke-virtual {v6, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 274
+    :cond_3
+    :try_start_1
+    iget-object v4, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$4;->this$0:Lcom/android/systemui/recents/model/RecentsAppListLoader;
 
-    .line 142
-    add-int/lit8 v2, v2, 0x1
+    const/4 v6, 0x0
+
+    invoke-static {v4, v6}, Lcom/android/systemui/recents/model/RecentsAppListLoader;->-set0(Lcom/android/systemui/recents/model/RecentsAppListLoader;Z)Z
+
+    .line 275
+    invoke-static {}, Lcom/android/systemui/recents/events/EventBus;->getDefault()Lcom/android/systemui/recents/events/EventBus;
+
+    move-result-object v4
+
+    new-instance v6, Lcom/android/systemui/recents/events/activity/NotifyDataLoadEvent;
+
+    invoke-direct {v6}, Lcom/android/systemui/recents/events/activity/NotifyDataLoadEvent;-><init>()V
+
+    invoke-virtual {v4, v6}, Lcom/android/systemui/recents/events/EventBus;->sendOntoMainThread(Lcom/android/systemui/recents/events/EventBus$Event;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto :goto_2
 
-    .line 118
-    .end local v1    # "appInfo":Lcom/android/systemui/recents/model/RecentsAppListLoader$AppInfo;
-    .end local v3    # "info":Landroid/content/pm/ResolveInfo;
-    :cond_4
-    return-void
+    .line 271
+    :catchall_0
+    move-exception v4
+
+    monitor-exit v5
+
+    throw v4
 .end method

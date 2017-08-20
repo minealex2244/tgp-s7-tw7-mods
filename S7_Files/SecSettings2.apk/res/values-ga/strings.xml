@@ -3547,7 +3547,6 @@ Tabhair faoi deara: Is féidir nach mbeidh do mhéarloirg chomh slán le patrún
     <string name="bluetooth_confirm_passkey_msg">Deimhnigh gurb í %2$s an phaseochair le péireáil le %1$s</string>
     <string name="bluetooth_incoming_pairing_msg">Ó &lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Péireáil leis an ngléas seo?</string>
     <string name="bluetooth_display_passkey_pin_msg">Iontráil %1$s ar %2$s le péireáil, ansin tapáil Fill nó Iontráil</string>
-    <string name="bluetooth_HID_connecting_error_message">Nascadh le %1$s dodhéanta. Triail nascadh ó %2$s.</string>
     <string name="bluetooth_connecting_error_message">Ní féidir nascadh le %s.</string>
     <string name="bluetooth_preference_scan_title">Scan</string>
     <string name="bluetooth_preference_paired_devices">Gléasanna péireáilte</string>

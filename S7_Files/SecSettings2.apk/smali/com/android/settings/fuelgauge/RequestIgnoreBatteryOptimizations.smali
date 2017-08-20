@@ -378,7 +378,7 @@
 
     .line 92
     .local v3, "p":Lcom/android/internal/app/AlertController$AlertParams;
-    const v5, 0x7f0b1a56
+    const v5, 0x7f0b1a55
 
     invoke-virtual {p0, v5}, Lcom/android/settings/fuelgauge/RequestIgnoreBatteryOptimizations;->getText(I)Ljava/lang/CharSequence;
 
@@ -401,7 +401,7 @@
 
     aput-object v6, v5, v8
 
-    const v6, 0x7f0b1a57
+    const v6, 0x7f0b1a56
 
     invoke-virtual {p0, v6, v5}, Lcom/android/settings/fuelgauge/RequestIgnoreBatteryOptimizations;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

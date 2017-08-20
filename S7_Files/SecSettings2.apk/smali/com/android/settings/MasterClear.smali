@@ -1329,7 +1329,7 @@
 
     move-result-object v19
 
-    const v20, 0x7f0b0ed3
+    const v20, 0x7f0b0ed1
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1354,6 +1354,70 @@
     move-result-object v18
 
     .line 281
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/MasterClear;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v19
+
+    const v20, 0x7f0b0ed2
+
+    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v19
+
+    .line 280
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    .line 281
+    const-string/jumbo v19, "\n"
+
+    .line 280
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    .line 282
+    const-string/jumbo v19, "\u2022 "
+
+    .line 280
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    .line 282
+    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/MasterClear;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v19
+
+    const v20, 0x7f0b0ed3
+
+    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v19
+
+    .line 280
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    .line 282
+    const-string/jumbo v19, "\n"
+
+    .line 280
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    .line 283
+    const-string/jumbo v19, "\u2022 "
+
+    .line 280
+    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v18
+
+    .line 283
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings/MasterClear;->getResources()Landroid/content/res/Resources;
 
     move-result-object v19
@@ -1369,7 +1433,7 @@
 
     move-result-object v18
 
-    .line 281
+    .line 283
     const-string/jumbo v19, "\n"
 
     .line 280
@@ -1377,7 +1441,7 @@
 
     move-result-object v18
 
-    .line 282
+    .line 284
     const-string/jumbo v19, "\u2022 "
 
     .line 280
@@ -1385,7 +1449,7 @@
 
     move-result-object v18
 
-    .line 282
+    .line 284
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings/MasterClear;->getResources()Landroid/content/res/Resources;
 
     move-result-object v19
@@ -1401,7 +1465,7 @@
 
     move-result-object v18
 
-    .line 282
+    .line 284
     const-string/jumbo v19, "\n"
 
     .line 280
@@ -1409,7 +1473,7 @@
 
     move-result-object v18
 
-    .line 283
+    .line 285
     const-string/jumbo v19, "\u2022 "
 
     .line 280
@@ -1417,76 +1481,12 @@
 
     move-result-object v18
 
-    .line 283
+    .line 285
     invoke-virtual/range {p0 .. p0}, Lcom/android/settings/MasterClear;->getResources()Landroid/content/res/Resources;
 
     move-result-object v19
 
     const v20, 0x7f0b0ed6
-
-    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v19
-
-    .line 280
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    .line 283
-    const-string/jumbo v19, "\n"
-
-    .line 280
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    .line 284
-    const-string/jumbo v19, "\u2022 "
-
-    .line 280
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    .line 284
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/MasterClear;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v19
-
-    const v20, 0x7f0b0ed7
-
-    invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v19
-
-    .line 280
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    .line 284
-    const-string/jumbo v19, "\n"
-
-    .line 280
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    .line 285
-    const-string/jumbo v19, "\u2022 "
-
-    .line 280
-    invoke-virtual/range {v18 .. v19}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v18
-
-    .line 285
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/MasterClear;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v19
-
-    const v20, 0x7f0b0ed8
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1517,7 +1517,7 @@
 
     move-result-object v19
 
-    const v20, 0x7f0b0ad0
+    const v20, 0x7f0b0ace
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1720,7 +1720,7 @@
 
     .line 324
     .local v11, "mExternalTitle":Landroid/widget/TextView;
-    const v18, 0x7f0b138d
+    const v18, 0x7f0b138c
 
     move/from16 v0, v18
 
@@ -1743,7 +1743,7 @@
 
     .line 326
     .local v10, "mExternalSummary":Landroid/widget/TextView;
-    const v18, 0x7f0b138e
+    const v18, 0x7f0b138d
 
     move/from16 v0, v18
 
@@ -2952,7 +2952,7 @@
     move-result-object v1
 
     .line 192
-    const v3, 0x7f0b1449
+    const v3, 0x7f0b1448
 
     const/4 v6, 0x0
 

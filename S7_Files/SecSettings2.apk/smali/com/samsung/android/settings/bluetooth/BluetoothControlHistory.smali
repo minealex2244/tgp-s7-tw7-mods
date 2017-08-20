@@ -1205,7 +1205,7 @@
     move-result-object v1
 
     .line 150
-    const v3, 0x7f0b1503
+    const v3, 0x7f0b1502
 
     move-object v5, v4
 

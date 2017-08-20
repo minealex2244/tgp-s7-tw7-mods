@@ -131,7 +131,7 @@
     .line 58
     iget-object v0, p0, Lcom/android/systemui/statusbar/DismissView;->mDismissButton:Lcom/android/systemui/statusbar/DismissViewButton;
 
-    const v1, 0x7f0f04a4
+    const v1, 0x7f0f04a2
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/DismissViewButton;->setText(I)V
 

@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     .prologue
-    .line 754
+    .line 752
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$9;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct {p0}, Landroid/service/notification/NotificationListenerService;-><init>()V
@@ -38,18 +38,18 @@
     .locals 4
 
     .prologue
-    .line 758
+    .line 756
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/BaseStatusBar$9;->getActiveNotifications()[Landroid/service/notification/StatusBarNotification;
 
     move-result-object v1
 
-    .line 759
+    .line 757
     .local v1, "notifications":[Landroid/service/notification/StatusBarNotification;
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/BaseStatusBar$9;->getCurrentRanking()Landroid/service/notification/NotificationListenerService$RankingMap;
 
     move-result-object v0
 
-    .line 760
+    .line 758
     .local v0, "currentRanking":Landroid/service/notification/NotificationListenerService$RankingMap;
     iget-object v2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$9;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -61,7 +61,7 @@
 
     invoke-virtual {v2, v3}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->post(Ljava/lang/Runnable;)Z
 
-    .line 756
+    .line 754
     return-void
 .end method
 
@@ -71,10 +71,10 @@
     .param p2, "rankingMap"    # Landroid/service/notification/NotificationListenerService$RankingMap;
 
     .prologue
-    .line 774
+    .line 772
     if-eqz p1, :cond_0
 
-    .line 775
+    .line 773
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$9;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
@@ -85,7 +85,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->post(Ljava/lang/Runnable;)Z
 
-    .line 772
+    .line 770
     :cond_0
     return-void
 .end method
@@ -95,10 +95,10 @@
     .param p1, "rankingMap"    # Landroid/service/notification/NotificationListenerService$RankingMap;
 
     .prologue
-    .line 828
+    .line 826
     if-eqz p1, :cond_0
 
-    .line 829
+    .line 827
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$9;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
@@ -109,7 +109,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->post(Ljava/lang/Runnable;)Z
 
-    .line 826
+    .line 824
     :cond_0
     return-void
 .end method
@@ -120,15 +120,15 @@
     .param p2, "rankingMap"    # Landroid/service/notification/NotificationListenerService$RankingMap;
 
     .prologue
-    .line 814
+    .line 812
     if-eqz p1, :cond_0
 
-    .line 815
+    .line 813
     invoke-virtual {p1}, Landroid/service/notification/StatusBarNotification;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 816
+    .line 814
     .local v0, "key":Ljava/lang/String;
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$9;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -140,7 +140,7 @@
 
     invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->post(Ljava/lang/Runnable;)Z
 
-    .line 812
+    .line 810
     .end local v0    # "key":Ljava/lang/String;
     :cond_0
     return-void

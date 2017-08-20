@@ -3688,7 +3688,6 @@ Wi-Fi is now on."</string>
     <string name="bluetooth_confirm_passkey_msg">Подтвердите ключ доступа %2$s для соединения с %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Запрос от&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Соединить с этим устройством?</string>
     <string name="bluetooth_display_passkey_pin_msg">"Для соединения введите %1$s на %2$s и нажмите 'Возврат' или 'Ввод'."</string>
-    <string name="bluetooth_HID_connecting_error_message">Невозможно подключиться к %1$s. Попробуйте подключиться с %2$s.</string>
     <string name="bluetooth_connecting_error_message">Невозможно подключиться к %s.</string>
     <string name="bluetooth_preference_scan_title">Поиск</string>
     <string name="bluetooth_preference_paired_devices">Подключенные устройства</string>

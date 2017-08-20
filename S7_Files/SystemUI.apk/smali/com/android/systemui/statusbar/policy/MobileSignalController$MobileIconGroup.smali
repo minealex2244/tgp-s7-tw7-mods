@@ -44,27 +44,27 @@
     .param p13, "qsDataType"    # I
 
     .prologue
-    .line 3200
+    .line 3186
     invoke-direct/range {p0 .. p9}, Lcom/android/systemui/statusbar/policy/SignalController$IconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIII)V
 
-    .line 3202
+    .line 3188
     iput p10, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mDataContentDescription:I
 
-    .line 3203
+    .line 3189
     iput p11, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mDataType:I
 
-    .line 3204
+    .line 3190
     iput-boolean p12, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mIsWide:Z
 
-    .line 3205
+    .line 3191
     iput p13, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mQsDataType:I
 
-    .line 3207
+    .line 3193
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mNwBoosterDataType:I
 
-    .line 3199
+    .line 3185
     return-void
 .end method
 
@@ -86,24 +86,24 @@
     .param p14, "nwBoosterDataType"    # I
 
     .prologue
-    .line 3215
+    .line 3201
     invoke-direct/range {p0 .. p9}, Lcom/android/systemui/statusbar/policy/SignalController$IconGroup;-><init>(Ljava/lang/String;[[I[[I[IIIIII)V
 
-    .line 3217
+    .line 3203
     iput p10, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mDataContentDescription:I
 
-    .line 3218
+    .line 3204
     iput p11, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mDataType:I
 
-    .line 3219
+    .line 3205
     iput-boolean p12, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mIsWide:Z
 
-    .line 3220
+    .line 3206
     iput p13, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mQsDataType:I
 
-    .line 3221
+    .line 3207
     iput p14, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$MobileIconGroup;->mNwBoosterDataType:I
 
-    .line 3214
+    .line 3200
     return-void
 .end method

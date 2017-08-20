@@ -502,7 +502,7 @@
     :cond_8
     iget-object v3, p0, Lcom/samsung/android/settings/lockscreen/OwnerInfo;->mCheckbox:Landroid/widget/CheckBox;
 
-    const v4, 0x7f0b0c41
+    const v4, 0x7f0b0c3f
 
     invoke-virtual {v3, v4}, Landroid/widget/CheckBox;->setText(I)V
 
@@ -1143,7 +1143,7 @@
     move-result-object v1
 
     .line 148
-    const v2, 0x7f0b1839
+    const v2, 0x7f0b1838
 
     .line 145
     invoke-virtual {v1, v2, p0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;

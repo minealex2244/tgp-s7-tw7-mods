@@ -553,7 +553,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0b1600
+    const v7, 0x7f0b15ff
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/spen/SPenSettingsMenu;->getString(I)Ljava/lang/String;
 
@@ -667,7 +667,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0b0919
+    const v7, 0x7f0b0917
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -696,7 +696,7 @@
 
     invoke-direct {v7, p0}, Lcom/samsung/android/settings/spen/SPenSettingsMenu$6;-><init>(Lcom/samsung/android/settings/spen/SPenSettingsMenu;)V
 
-    const v8, 0x7f0b0c10
+    const v8, 0x7f0b0c0e
 
     .line 787
     invoke-virtual {v6, v8, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -859,7 +859,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0b1600
+    const v7, 0x7f0b15ff
 
     invoke-virtual {p0, v7}, Lcom/samsung/android/settings/spen/SPenSettingsMenu;->getString(I)Ljava/lang/String;
 
@@ -973,7 +973,7 @@
 
     move-result-object v6
 
-    const v7, 0x7f0b0bf0
+    const v7, 0x7f0b0bee
 
     invoke-virtual {v6, v7}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1002,7 +1002,7 @@
 
     invoke-direct {v7, p0}, Lcom/samsung/android/settings/spen/SPenSettingsMenu$9;-><init>(Lcom/samsung/android/settings/spen/SPenSettingsMenu;)V
 
-    const v8, 0x7f0b0c10
+    const v8, 0x7f0b0c0e
 
     .line 841
     invoke-virtual {v6, v8, v7}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -1115,7 +1115,7 @@
     if-ne v5, v10, :cond_4
 
     .line 427
-    const v10, 0x7f0b0c06
+    const v10, 0x7f0b0c04
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1143,7 +1143,7 @@
     if-eqz v10, :cond_5
 
     .line 440
-    const v10, 0x7f0b0c05
+    const v10, 0x7f0b0c03
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1166,7 +1166,7 @@
     .line 449
     :cond_1
     :goto_2
-    const v10, 0x7f0b0c03
+    const v10, 0x7f0b0c01
 
     invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1463,7 +1463,7 @@
 
     if-eqz v9, :cond_4
 
-    const v9, 0x7f0b0c0d
+    const v9, 0x7f0b0c0b
 
     invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1543,7 +1543,7 @@
     aput-object v10, v9, v11
 
     .line 487
-    const v10, 0x7f0b0bfb
+    const v10, 0x7f0b0bf9
 
     .line 486
     invoke-virtual {v6, v10, v9}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -1739,7 +1739,7 @@
     .restart local v0    # "detachTime":J
     .restart local v6    # "res":Landroid/content/res/Resources;
     :cond_4
-    const v9, 0x7f0b0c0c
+    const v9, 0x7f0b0c0a
 
     invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2142,7 +2142,7 @@
     .line 248
     iget-object v5, p0, Lcom/samsung/android/settings/spen/SPenSettingsMenu;->mScreenoffNoteSwitchPref:Landroid/preference/SwitchPreference;
 
-    const v6, 0x7f0b0be9
+    const v6, 0x7f0b0be7
 
     invoke-virtual {v5, v6}, Landroid/preference/SwitchPreference;->setSummary(I)V
 
@@ -2502,9 +2502,9 @@
     .param p2, "objValue"    # Ljava/lang/Object;
 
     .prologue
-    const v9, 0x7f0b19d9
+    const v9, 0x7f0b19d8
 
-    const v8, 0x7f0b19d8
+    const v8, 0x7f0b19d7
 
     const/4 v6, 0x1
 
@@ -2726,7 +2726,7 @@
 
     .line 552
     :cond_6
-    const v5, 0x7f0b0bee
+    const v5, 0x7f0b0bec
 
     goto :goto_2
 
@@ -2988,7 +2988,7 @@
 
     .line 587
     :cond_11
-    const v8, 0x7f0b07cb
+    const v8, 0x7f0b07c9
 
     goto :goto_8
 
@@ -4190,9 +4190,9 @@
     .locals 9
 
     .prologue
-    const v6, 0x7f0b19d9
+    const v6, 0x7f0b19d8
 
-    const v5, 0x7f0b19d8
+    const v5, 0x7f0b19d7
 
     const/4 v3, 0x1
 
@@ -4614,7 +4614,7 @@
 
     .line 360
     :cond_5
-    const v2, 0x7f0b07cb
+    const v2, 0x7f0b07c9
 
     goto/16 :goto_4
 
@@ -4688,7 +4688,7 @@
 
     .line 380
     :cond_b
-    const v5, 0x7f0b0bee
+    const v5, 0x7f0b0bec
 
     goto/16 :goto_8
 

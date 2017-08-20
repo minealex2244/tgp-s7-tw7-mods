@@ -33,7 +33,7 @@
     .param p4, "val$intent"    # Landroid/app/PendingIntent;
 
     .prologue
-    .line 2531
+    .line 2529
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$17;
 
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->val$keyguardShowing:Z
@@ -55,7 +55,7 @@
     .prologue
     const/4 v10, 0x0
 
-    .line 2535
+    .line 2533
     :try_start_0
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->val$keyguardShowing:Z
 
@@ -65,7 +65,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 2544
+    .line 2542
     :cond_0
     :goto_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -76,7 +76,7 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2548
+    .line 2546
     :goto_1
     :try_start_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->val$intent:Landroid/app/PendingIntent;
@@ -105,7 +105,7 @@
     :try_end_1
     .catch Landroid/app/PendingIntent$CanceledException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 2556
+    .line 2554
     :goto_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->val$intent:Landroid/app/PendingIntent;
 
@@ -115,7 +115,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 2557
+    .line 2555
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$17;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar$17;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -124,7 +124,7 @@
 
     invoke-virtual {v0}, Lcom/android/systemui/assist/AssistManager;->hideAssist()V
 
-    .line 2558
+    .line 2556
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$17;
 
     iget-object v1, v0, Lcom/android/systemui/statusbar/BaseStatusBar$17;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -133,22 +133,22 @@
 
     if-eqz v0, :cond_4
 
-    .line 2559
+    .line 2557
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$17$1;->val$afterKeyguardGone:Z
 
     if-eqz v0, :cond_3
 
     move v0, v10
 
-    .line 2558
+    .line 2556
     :goto_3
     invoke-virtual {v1, v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->overrideActivityPendingAppTransition(Z)V
 
-    .line 2533
+    .line 2531
     :cond_1
     return-void
 
-    .line 2536
+    .line 2534
     :cond_2
     :try_start_2
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -161,19 +161,19 @@
 
     goto :goto_0
 
-    .line 2545
+    .line 2543
     :catch_0
     move-exception v9
 
     .local v9, "e":Landroid/os/RemoteException;
     goto :goto_1
 
-    .line 2549
+    .line 2547
     .end local v9    # "e":Landroid/os/RemoteException;
     :catch_1
     move-exception v8
 
-    .line 2552
+    .line 2550
     .local v8, "e":Landroid/app/PendingIntent$CanceledException;
     const-string/jumbo v0, "StatusBar"
 
@@ -199,7 +199,7 @@
 
     goto :goto_2
 
-    .line 2559
+    .line 2557
     .end local v8    # "e":Landroid/app/PendingIntent$CanceledException;
     :cond_3
     const/4 v0, 0x1
@@ -209,6 +209,6 @@
     :cond_4
     move v0, v10
 
-    .line 2558
+    .line 2556
     goto :goto_3
 .end method

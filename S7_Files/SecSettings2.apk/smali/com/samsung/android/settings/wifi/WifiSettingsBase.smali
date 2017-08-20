@@ -361,7 +361,7 @@
     .param p1, "enable"    # Z
 
     .prologue
-    const v4, 0x7f0b0c8e
+    const v4, 0x7f0b0c8c
 
     const v3, 0x7f0b0228
 
@@ -490,7 +490,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0b0c6f
+    const v3, 0x7f0b0c6d
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -513,7 +513,7 @@
     .param p1, "enable"    # Z
 
     .prologue
-    const v3, 0x7f0b1258
+    const v3, 0x7f0b1257
 
     const v4, 0x7f0b0228
 
@@ -625,7 +625,7 @@
     move-result-object v2
 
     .line 1505
-    const v3, 0x7f0b0c6f
+    const v3, 0x7f0b0c6d
 
     invoke-virtual {v0, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1077,7 +1077,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b0c44
+    const v5, 0x7f0b0c42
 
     invoke-static {v4, v5, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1104,7 +1104,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b0c46
+    const v5, 0x7f0b0c44
 
     invoke-static {v4, v5, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1158,7 +1158,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0b0c45
+    const v5, 0x7f0b0c43
 
     invoke-static {v4, v5, v6}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
@@ -1241,7 +1241,7 @@
 
     .line 590
     .local v0, "wifiIsEnabled":Z
-    const v1, 0x7f0b125a
+    const v1, 0x7f0b1259
 
     invoke-interface {p1, v3, v4, v3, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1255,7 +1255,7 @@
     if-eqz v1, :cond_0
 
     .line 594
-    const v1, 0x7f0b188f
+    const v1, 0x7f0b188e
 
     invoke-interface {p1, v3, v6, v3, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -1501,7 +1501,7 @@
     if-nez v0, :cond_0
 
     .line 1409
-    const v0, 0x7f0b1262
+    const v0, 0x7f0b1261
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/settings/wifi/WifiSettingsBase;->addMessagePreference(I)V
 
@@ -1695,7 +1695,7 @@
     .line 429
     iget-object v0, p0, Lcom/samsung/android/settings/wifi/WifiSettingsBase;->mAddPreference:Landroid/preference/Preference;
 
-    const v1, 0x7f0b1251
+    const v1, 0x7f0b1250
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setTitle(I)V
 
@@ -2701,7 +2701,7 @@
     if-eqz v5, :cond_e
 
     .line 1092
-    const v5, 0x7f0b0c31
+    const v5, 0x7f0b0c2f
 
     move-object/from16 v0, v17
 
@@ -2993,7 +2993,7 @@
 
     .line 1141
     :pswitch_2
-    const v5, 0x7f0b123a
+    const v5, 0x7f0b1239
 
     move-object/from16 v0, p0
 
@@ -3883,7 +3883,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0caf
+    const v2, 0x7f0b0cad
 
     const/4 v3, 0x1
 
@@ -4871,7 +4871,7 @@
     .prologue
     const/4 v6, 0x0
 
-    const v3, 0x7f0b1258
+    const v3, 0x7f0b1257
 
     const/4 v2, 0x0
 
@@ -5232,7 +5232,7 @@
     if-nez v5, :cond_3
 
     .line 470
-    const v5, 0x7f0b1235
+    const v5, 0x7f0b1234
 
     invoke-virtual {v0, v5}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -5436,7 +5436,7 @@
     .line 475
     .restart local v0    # "actionBar":Landroid/app/ActionBar;
     :cond_a
-    const v5, 0x7f0b0ca1
+    const v5, 0x7f0b0c9f
 
     invoke-virtual {v0, v5}, Landroid/app/ActionBar;->setTitle(I)V
 
@@ -5578,7 +5578,7 @@
 
     .line 886
     :pswitch_0
-    const v1, 0x7f0b1239
+    const v1, 0x7f0b1238
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/wifi/WifiSettingsBase;->addMessagePreference(I)V
 
@@ -5938,7 +5938,7 @@
 
     .line 1328
     :cond_1
-    const v6, 0x7f0b1261
+    const v6, 0x7f0b1260
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/wifi/WifiSettingsBase;->getText(I)Ljava/lang/CharSequence;
 
@@ -6027,7 +6027,7 @@
     invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 1346
-    const v6, 0x7f0b1247
+    const v6, 0x7f0b1246
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/wifi/WifiSettingsBase;->getText(I)Ljava/lang/CharSequence;
 
@@ -6357,7 +6357,7 @@
     .locals 10
 
     .prologue
-    const v3, 0x7f0b07c3
+    const v3, 0x7f0b07c1
 
     const/4 v2, 0x0
 
@@ -6427,7 +6427,7 @@
     .locals 10
 
     .prologue
-    const v3, 0x7f0b0c8e
+    const v3, 0x7f0b0c8c
 
     const/4 v2, 0x0
 
@@ -6497,7 +6497,7 @@
     .locals 10
 
     .prologue
-    const v3, 0x7f0b12ad
+    const v3, 0x7f0b12ac
 
     const/4 v2, 0x0
 

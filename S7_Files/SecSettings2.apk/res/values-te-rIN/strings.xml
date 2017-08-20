@@ -3686,7 +3686,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s తో జత చేసేందుకు పాస్‌కీ %2$sను ధృవీకరించండి.</string>
     <string name="bluetooth_incoming_pairing_msg">ఈ పరికరంతో&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>నుండి జత చెయ్యాలా?</string>
     <string name="bluetooth_display_passkey_pin_msg">జత కూర్చడం కు %2$s లో %1$s నమోదు చేయండి, ఆపై “రిటర్న్” లేదా నమోదు నొక్కండి.</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$sకు కనెక్ట్ చేయలేరు. %2$s నుండి కనెక్ట్ చేయడానికి ప్రయత్నించండి.</string>
     <string name="bluetooth_connecting_error_message">%s‌కు కనెక్ట్ చేయడం సాధ్యం కాదు.</string>
     <string name="bluetooth_preference_scan_title">స్కాన్</string>
     <string name="bluetooth_preference_paired_devices">జత చేయబడిన పరికరాలు</string>

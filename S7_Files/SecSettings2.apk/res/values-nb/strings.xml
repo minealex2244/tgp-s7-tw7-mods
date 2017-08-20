@@ -3686,7 +3686,6 @@ Merk: Det kan hende at fingeravtrykket ditt ikke er like sikkert som et sterkt m
     <string name="bluetooth_confirm_passkey_msg">Bekreft at koden er %2$s for å pare med %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Fra&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Pare med denne enheten?</string>
     <string name="bluetooth_display_passkey_pin_msg">Angi %1$s på %2$s for å sammenkoble, etterfulgt av Tilbake eller Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Kan ikke koble til %1$s. Prøv å koble til fra %2$s.</string>
     <string name="bluetooth_connecting_error_message">Kan ikke koble til %s.</string>
     <string name="bluetooth_preference_scan_title">Søk</string>
     <string name="bluetooth_preference_paired_devices">Parede enheter</string>

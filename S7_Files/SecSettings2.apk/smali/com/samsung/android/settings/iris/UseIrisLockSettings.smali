@@ -165,7 +165,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b076a
+    const v4, 0x7f0b0768
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -177,7 +177,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b076b
+    const v4, 0x7f0b0769
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -320,7 +320,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 61
-    const v0, 0x7f0b0769
+    const v0, 0x7f0b0767
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/settings/iris/UseIrisLockSettings;->setTitle(I)V
 

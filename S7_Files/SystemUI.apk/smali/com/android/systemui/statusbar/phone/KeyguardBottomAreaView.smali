@@ -496,7 +496,7 @@
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/KeyguardBottomAreaView;->mIndicationController:Lcom/android/systemui/statusbar/KeyguardIndicationController;
 
     .line 628
-    const v1, 0x7f0f04bb
+    const v1, 0x7f0f04b9
 
     .line 627
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/KeyguardIndicationController;->showTransientIndication(I)V
@@ -3458,7 +3458,7 @@
 
     .line 521
     .restart local v2    # "drawableId":I
-    const v0, 0x7f0f05cb
+    const v0, 0x7f0f05c9
 
     .line 524
     .restart local v0    # "contentDescription":I

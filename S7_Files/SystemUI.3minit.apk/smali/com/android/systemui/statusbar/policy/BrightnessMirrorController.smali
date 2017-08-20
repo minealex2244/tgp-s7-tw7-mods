@@ -498,7 +498,7 @@
     iput v2, v0, Landroid/widget/FrameLayout$LayoutParams;->width:I
 
     .line 135
-    const v2, 0x7f0c006e
+    const v2, 0x7f0c0070
 
     .line 134
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
@@ -535,7 +535,7 @@
 
     check-cast v2, Landroid/widget/SeekBar;
 
-    const v3, 0x7f02071e
+    const v3, 0x7f020717
 
     invoke-virtual {v1, v3, v4}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 

@@ -1007,7 +1007,7 @@
     .line 233
     .end local v0    # "wifiStateString":Ljava/lang/String;
     :pswitch_0
-    const v1, 0x7f0b12fd
+    const v1, 0x7f0b12fc
 
     invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiStatusTest;->getString(I)Ljava/lang/String;
 
@@ -1019,7 +1019,7 @@
     .line 236
     .end local v0    # "wifiStateString":Ljava/lang/String;
     :pswitch_1
-    const v1, 0x7f0b12fe
+    const v1, 0x7f0b12fd
 
     invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiStatusTest;->getString(I)Ljava/lang/String;
 
@@ -1031,7 +1031,7 @@
     .line 239
     .end local v0    # "wifiStateString":Ljava/lang/String;
     :pswitch_2
-    const v1, 0x7f0b12ff
+    const v1, 0x7f0b12fe
 
     invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiStatusTest;->getString(I)Ljava/lang/String;
 
@@ -1043,7 +1043,7 @@
     .line 242
     .end local v0    # "wifiStateString":Ljava/lang/String;
     :pswitch_3
-    const v1, 0x7f0b1300
+    const v1, 0x7f0b12ff
 
     invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiStatusTest;->getString(I)Ljava/lang/String;
 
@@ -1055,7 +1055,7 @@
     .line 245
     .end local v0    # "wifiStateString":Ljava/lang/String;
     :pswitch_4
-    const v1, 0x7f0b1301
+    const v1, 0x7f0b1300
 
     invoke-virtual {p0, v1}, Lcom/android/settings/wifi/WifiStatusTest;->getString(I)Ljava/lang/String;
 

@@ -113,7 +113,7 @@
 
     .line 42
     .local v0, "p":Lcom/android/internal/app/AlertController$AlertParams;
-    const v1, 0x7f0b0e98
+    const v1, 0x7f0b0e96
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/deviceinfo/legal/PrivacyAlertDialogActivity;->getString(I)Ljava/lang/String;
 

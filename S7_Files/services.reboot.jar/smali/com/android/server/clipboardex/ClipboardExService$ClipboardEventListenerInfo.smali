@@ -30,17 +30,17 @@
     .param p3, "packageName"    # Ljava/lang/String;
 
     .prologue
-    .line 126
+    .line 128
     iput-object p1, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipboardEventListenerInfo;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 127
+    .line 129
     iput p2, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipboardEventListenerInfo;->mUid:I
 
-    .line 128
+    .line 130
     iput-object p3, p0, Lcom/android/server/clipboardex/ClipboardExService$ClipboardEventListenerInfo;->mPackageName:Ljava/lang/String;
 
-    .line 126
+    .line 128
     return-void
 .end method

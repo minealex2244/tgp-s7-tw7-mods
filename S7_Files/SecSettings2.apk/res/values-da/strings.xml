@@ -3687,7 +3687,6 @@ Bemærk: Dit fingeraftryk er muligvis mindre sikkert end en stærk adgangs- elle
     <string name="bluetooth_confirm_passkey_msg">Bekræft, at koden er %2$s for at parre med %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Fra&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Par med denne enhed?</string>
     <string name="bluetooth_display_passkey_pin_msg">Indtast %1$s på %2$s for at parre. Tryk derefter på Retur eller Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Det er ikke muligt at oprette forbindelse til %1$s. Prøv at oprette forbindelse fra %2$s.</string>
     <string name="bluetooth_connecting_error_message">Kan ikke oprette forbindelse %s.</string>
     <string name="bluetooth_preference_scan_title">Søg</string>
     <string name="bluetooth_preference_paired_devices">Parrede enheder</string>

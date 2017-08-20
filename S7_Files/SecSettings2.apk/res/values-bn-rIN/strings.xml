@@ -3546,7 +3546,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s-এর সাথে জোড় বাঁধা গঠন করতে সুনিশ্চিত করুন যে পাসকী হল %2$s।</string>
     <string name="bluetooth_incoming_pairing_msg">প্রেরক&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>এই ডিভাইসটির সঙ্গে পেয়ার গঠন করবেন?</string>
     <string name="bluetooth_display_passkey_pin_msg">জোড় বাঁধতে %2$s-তে %1$s লিখে “ফিরুন বা লিখুন” ট্যাপ করুন।</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s-এ সংযোগ করা যাচ্ছে না। %2$s-এর মাধ্যমে সংযোগ করার চেষ্টা করুন।</string>
     <string name="bluetooth_connecting_error_message">%s-এ সংযোগ করতে অক্ষম।</string>
     <string name="bluetooth_preference_scan_title">স্ক্যান</string>
     <string name="bluetooth_preference_paired_devices">জোড় বাঁধা ডিভাইসগুলি</string>
@@ -3947,7 +3946,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">আপনার সমস্ত ব্যক্তিগত তথ্য এবং ডাউনলোড হওয়া অ্যাপ্লিকেশনগুলি মুছে যাবে এবং পুনরুদ্ধার করতে পারা যাবে না।</string>
     <string name="master_clear_final_button_text">সমস্ত মুছুন</string>
     <string name="master_clear_not_available">এই অতিথি প্রোফাইলের কাছে কোনও ফ্যাক্টরি তথ্য পুনরায় সেট নিষ্পন্ন করার অনুমতি নেই।</string>
-    <string name="master_clear_progress_title">রিসেট</string>
+    <string name="master_clear_progress_title">রিসেট করুন</string>
     <string name="master_clear_progress_text">দয়া করে অপেক্ষা করুন…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB টেথারিং</string>

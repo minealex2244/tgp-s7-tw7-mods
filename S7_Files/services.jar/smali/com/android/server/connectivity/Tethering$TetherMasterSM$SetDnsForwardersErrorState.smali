@@ -24,7 +24,7 @@
     .param p1, "this$1"    # Lcom/android/server/connectivity/Tethering$TetherMasterSM;
 
     .prologue
-    .line 4096
+    .line 4094
     iput-object p1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM$SetDnsForwardersErrorState;->this$1:Lcom/android/server/connectivity/Tethering$TetherMasterSM;
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/Tethering$TetherMasterSM$ErrorState;-><init>(Lcom/android/server/connectivity/Tethering$TetherMasterSM;)V
@@ -38,19 +38,19 @@
     .locals 3
 
     .prologue
-    .line 4099
+    .line 4097
     const-string/jumbo v1, "Tethering"
 
     const-string/jumbo v2, "Error in setDnsForwarders"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4100
+    .line 4098
     const v1, 0x5006f
 
     invoke-virtual {p0, v1}, Lcom/android/server/connectivity/Tethering$TetherMasterSM$SetDnsForwardersErrorState;->notify(I)V
 
-    .line 4102
+    .line 4100
     :try_start_0
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM$SetDnsForwardersErrorState;->this$1:Lcom/android/server/connectivity/Tethering$TetherMasterSM;
 
@@ -64,7 +64,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 4105
+    .line 4103
     :goto_0
     :try_start_1
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM$SetDnsForwardersErrorState;->this$1:Lcom/android/server/connectivity/Tethering$TetherMasterSM;
@@ -81,18 +81,18 @@
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 4098
+    .line 4096
     :goto_1
     return-void
 
-    .line 4106
+    .line 4104
     :catch_0
     move-exception v0
 
     .local v0, "e":Ljava/lang/Exception;
     goto :goto_1
 
-    .line 4103
+    .line 4101
     .end local v0    # "e":Ljava/lang/Exception;
     :catch_1
     move-exception v0

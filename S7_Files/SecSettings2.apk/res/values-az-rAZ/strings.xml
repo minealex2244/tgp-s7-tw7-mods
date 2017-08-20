@@ -3685,7 +3685,6 @@ Qeyd: Sizin barmaq iziniz güclü model və ya PIN-dən daha az təhlükəsiz ol
     <string name="bluetooth_confirm_passkey_msg">Təsdiq parolu %1$s ilə qoşulmaq üçün %2$s -dir.</string>
     <string name="bluetooth_incoming_pairing_msg">Buradan:&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Bu cihazla qoşulsun?</string>
     <string name="bluetooth_display_passkey_pin_msg">Qoşulmaq üçün %2$s-da %1$s daxil edin və sonra Geri qayıt və ya Daxil et seçin.</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s-a qoşulmaq olmur. %2$s ilə qoşulmağa çalış.</string>
     <string name="bluetooth_connecting_error_message">%s-ə qoşulmaq mümkün deyildir.</string>
     <string name="bluetooth_preference_scan_title">Axtar</string>
     <string name="bluetooth_preference_paired_devices">Qoşulmuş cihazlar</string>

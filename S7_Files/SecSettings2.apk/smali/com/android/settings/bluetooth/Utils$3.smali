@@ -22,7 +22,7 @@
     .locals 0
 
     .prologue
-    .line 203
+    .line 195
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,33 +36,33 @@
     .param p2, "bluetoothManager"    # Lcom/android/settingslib/bluetooth/LocalBluetoothManager;
 
     .prologue
-    .line 207
+    .line 199
     invoke-virtual {p2}, Lcom/android/settingslib/bluetooth/LocalBluetoothManager;->getEventManager()Lcom/android/settingslib/bluetooth/BluetoothEventManager;
 
     move-result-object v0
 
-    .line 208
+    .line 200
     new-instance v1, Lcom/android/settings/bluetooth/DockService$DockBluetoothCallback;
 
     invoke-direct {v1, p1}, Lcom/android/settings/bluetooth/DockService$DockBluetoothCallback;-><init>(Landroid/content/Context;)V
 
-    .line 207
+    .line 199
     invoke-virtual {v0, v1}, Lcom/android/settingslib/bluetooth/BluetoothEventManager;->registerCallback(Lcom/android/settingslib/bluetooth/BluetoothCallback;)V
 
-    .line 209
+    .line 201
     invoke-static {}, Lcom/android/settings/bluetooth/Utils;->-get0()Lcom/android/settingslib/bluetooth/Utils$ErrorListener;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/android/settingslib/bluetooth/Utils;->setErrorListener(Lcom/android/settingslib/bluetooth/Utils$ErrorListener;)V
 
-    .line 210
+    .line 202
     invoke-static {}, Lcom/android/settings/bluetooth/Utils;->-get1()Lcom/android/settingslib/bluetooth/Utils$SemErrorListener;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/android/settingslib/bluetooth/Utils;->setSemErrorListener(Lcom/android/settingslib/bluetooth/Utils$SemErrorListener;)V
 
-    .line 206
+    .line 198
     return-void
 .end method

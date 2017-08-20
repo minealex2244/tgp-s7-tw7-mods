@@ -387,7 +387,7 @@
     move-result-object v4
 
     .line 371
-    const v5, 0x7f0b153d
+    const v5, 0x7f0b153c
 
     invoke-virtual {p0, v5}, Lcom/samsung/android/settings/NewModePreview;->getString(I)Ljava/lang/String;
 
@@ -403,7 +403,7 @@
     move-result-object v4
 
     .line 372
-    const v5, 0x7f0b153c
+    const v5, 0x7f0b153b
 
     invoke-virtual {p0, v5}, Lcom/samsung/android/settings/NewModePreview;->getString(I)Ljava/lang/String;
 

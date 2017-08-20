@@ -89,7 +89,7 @@
     .line 174
     iget-object v0, p0, Lcom/android/systemui/qs/tiles/BikeModeTile$BikeModeDetailAdapter;->mSummary:Landroid/widget/TextView;
 
-    const v1, 0x7f0f03cb
+    const v1, 0x7f0f03ca
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
@@ -132,7 +132,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0f03ca
+    const v1, 0x7f0f03c9
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

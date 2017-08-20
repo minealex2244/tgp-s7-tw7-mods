@@ -116,7 +116,7 @@
     if-le p1, v4, :cond_0
 
     .line 417
-    const v2, 0x7f0b08c8
+    const v2, 0x7f0b08c6
 
     .line 427
     :goto_0
@@ -162,7 +162,7 @@
     if-ne p1, v4, :cond_1
 
     .line 419
-    const v2, 0x7f0b08c7
+    const v2, 0x7f0b08c5
 
     goto :goto_0
 
@@ -171,13 +171,13 @@
     if-le p1, v3, :cond_2
 
     .line 421
-    const v2, 0x7f0b08c6
+    const v2, 0x7f0b08c4
 
     goto :goto_0
 
     .line 423
     :cond_2
-    const v2, 0x7f0b08c5
+    const v2, 0x7f0b08c3
 
     goto :goto_0
 
@@ -252,7 +252,7 @@
     iput-object v0, p0, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity$showRemainingTimerDialog;->mView:Landroid/view/View;
 
     .line 346
-    const v0, 0x7f0b0779
+    const v0, 0x7f0b0777
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity$showRemainingTimerDialog;->setTitle(I)V
 
@@ -300,7 +300,7 @@
 
     aput-object v2, v1, v4
 
-    const v2, 0x7f0b0783
+    const v2, 0x7f0b0781
 
     invoke-virtual {v0, v2, v1}, Lcom/samsung/android/settings/biometrics/BiometricsAuthenticationActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

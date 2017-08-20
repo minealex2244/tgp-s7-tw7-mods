@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/audio/AudioService;
 
     .prologue
-    .line 11282
+    .line 11280
     iput-object p1, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-direct {p0}, Landroid/os/UEventObserver;-><init>()V
@@ -47,7 +47,7 @@
 
     const/4 v3, 0x0
 
-    .line 11285
+    .line 11283
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-get70(Lcom/android/server/audio/AudioService;)Z
@@ -58,7 +58,7 @@
 
     return-void
 
-    .line 11288
+    .line 11286
     :cond_0
     const-string/jumbo v0, "USB_CONNECTION"
 
@@ -66,7 +66,7 @@
 
     move-result-object v7
 
-    .line 11289
+    .line 11287
     .local v7, "USB_CONNECTION":Ljava/lang/String;
     const-string/jumbo v0, "AudioService"
 
@@ -90,7 +90,7 @@
 
     invoke-static {v0, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 11290
+    .line 11288
     const-string/jumbo v0, "READY"
 
     invoke-virtual {v0, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -99,7 +99,7 @@
 
     if-eqz v0, :cond_3
 
-    .line 11291
+    .line 11289
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-wrap7(Lcom/android/server/audio/AudioService;)Z
@@ -116,12 +116,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 11284
+    .line 11282
     :cond_1
     :goto_0
     return-void
 
-    .line 11291
+    .line 11289
     :cond_2
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -139,7 +139,7 @@
 
     if-nez v0, :cond_1
 
-    .line 11292
+    .line 11290
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-wrap10(Lcom/android/server/audio/AudioService;)I
@@ -150,26 +150,26 @@
 
     if-ne v0, v4, :cond_1
 
-    .line 11293
+    .line 11291
     const-string/jumbo v0, "AudioService"
 
     const-string/jumbo v4, "### set usb check device"
 
     invoke-static {v0, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 11294
+    .line 11292
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0, v2}, Lcom/android/server/audio/AudioService;->-set12(Lcom/android/server/audio/AudioService;Z)Z
 
-    .line 11295
+    .line 11293
     const-string/jumbo v0, ""
 
     const-string/jumbo v4, ""
 
     invoke-static {v6, v2, v0, v4}, Landroid/media/AudioSystem;->setDeviceConnectionState(IILjava/lang/String;Ljava/lang/String;)I
 
-    .line 11296
+    .line 11294
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-get15(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/AudioService$AudioHandler;
@@ -186,7 +186,7 @@
 
     goto :goto_0
 
-    .line 11299
+    .line 11297
     :cond_3
     const-string/jumbo v0, "CONNECTED"
 
@@ -204,7 +204,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 11300
+    .line 11298
     :cond_4
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -214,7 +214,7 @@
 
     if-eqz v0, :cond_5
 
-    .line 11301
+    .line 11299
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-get15(Lcom/android/server/audio/AudioService;)Lcom/android/server/audio/AudioService$AudioHandler;
@@ -223,12 +223,12 @@
 
     invoke-virtual {v0, v1}, Lcom/android/server/audio/AudioService$AudioHandler;->removeMessages(I)V
 
-    .line 11302
+    .line 11300
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0, v3}, Lcom/android/server/audio/AudioService;->-set12(Lcom/android/server/audio/AudioService;Z)Z
 
-    .line 11303
+    .line 11301
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-wrap10(Lcom/android/server/audio/AudioService;)I
@@ -239,21 +239,21 @@
 
     if-eqz v0, :cond_5
 
-    .line 11304
+    .line 11302
     const-string/jumbo v0, "AudioService"
 
     const-string/jumbo v1, "### release usb check device"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 11305
+    .line 11303
     const-string/jumbo v0, ""
 
     const-string/jumbo v1, ""
 
     invoke-static {v6, v3, v0, v1}, Landroid/media/AudioSystem;->setDeviceConnectionState(IILjava/lang/String;Ljava/lang/String;)I
 
-    .line 11309
+    .line 11307
     :cond_5
     iget-object v0, p0, Lcom/android/server/audio/AudioService$5;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -275,7 +275,7 @@
 
     invoke-static {v0, v2}, Lcom/android/server/audio/AudioService;->-set41(Lcom/android/server/audio/AudioService;Z)Z
 
-    .line 11310
+    .line 11308
     :cond_6
     const-string/jumbo v0, "DISCONNECTED"
 
@@ -291,7 +291,7 @@
 
     goto/16 :goto_0
 
-    .line 11312
+    .line 11310
     :cond_7
     const-string/jumbo v0, "AudioService"
 

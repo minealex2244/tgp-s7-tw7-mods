@@ -107,7 +107,7 @@
     move-result-object v2
 
     .line 265
-    const v3, 0x7f0b19d9
+    const v3, 0x7f0b19d8
 
     .line 264
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->setSummary(I)V

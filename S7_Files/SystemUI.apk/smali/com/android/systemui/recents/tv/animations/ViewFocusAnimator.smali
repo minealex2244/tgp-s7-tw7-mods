@@ -75,7 +75,7 @@
     if-nez v3, :cond_0
 
     .line 57
-    const v3, 0x7f0c0077
+    const v3, 0x7f0c0079
 
     invoke-virtual {v1, v3, v0, v5}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
@@ -87,7 +87,7 @@
     iput v3, p0, Lcom/android/systemui/recents/tv/animations/ViewFocusAnimator;->mUnselectedScale:F
 
     .line 59
-    const v3, 0x7f0c0078
+    const v3, 0x7f0c007a
 
     invoke-virtual {v1, v3, v0, v5}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
@@ -161,7 +161,7 @@
 
     .line 84
     :goto_1
-    const v3, 0x7f0c006f
+    const v3, 0x7f0c0071
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -215,7 +215,7 @@
     if-nez v3, :cond_2
 
     .line 94
-    const v3, 0x7f0c0079
+    const v3, 0x7f0c007b
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getFloat(I)F
 
@@ -248,7 +248,7 @@
 
     .line 64
     :cond_0
-    const v3, 0x7f0c007e
+    const v3, 0x7f0c0080
 
     invoke-virtual {v1, v3, v0, v5}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
@@ -260,7 +260,7 @@
     iput v3, p0, Lcom/android/systemui/recents/tv/animations/ViewFocusAnimator;->mUnselectedScale:F
 
     .line 66
-    const v3, 0x7f0c007f
+    const v3, 0x7f0c0081
 
     invoke-virtual {v1, v3, v0, v5}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
@@ -309,7 +309,7 @@
 
     .line 97
     :cond_2
-    const v3, 0x7f0c0080
+    const v3, 0x7f0c0082
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getFloat(I)F
 

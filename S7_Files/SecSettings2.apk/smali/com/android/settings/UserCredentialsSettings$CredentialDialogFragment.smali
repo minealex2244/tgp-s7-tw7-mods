@@ -295,7 +295,7 @@
     move-result-object v13
 
     .line 175
-    const v14, 0x7f0b182d
+    const v14, 0x7f0b182c
 
     .line 173
     invoke-virtual {v13, v14}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -345,7 +345,7 @@
 
     .line 201
     .local v6, "listener":Landroid/content/DialogInterface$OnClickListener;
-    const v13, 0x7f0b1824
+    const v13, 0x7f0b1823
 
     invoke-virtual {v1, v13, v6}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

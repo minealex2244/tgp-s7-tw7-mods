@@ -27,7 +27,7 @@
     .param p4, "$anonymous2"    # Z
 
     .prologue
-    .line 2095
+    .line 2084
     iput-object p1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     invoke-direct {p0, p2, p3, p4}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
@@ -46,17 +46,17 @@
 
     const/4 v2, 0x0
 
-    .line 2098
+    .line 2087
     iget v3, p1, Landroid/os/Message;->what:I
 
     packed-switch v3, :pswitch_data_0
 
-    .line 2097
+    .line 2086
     :goto_0
     :pswitch_0
     return-void
 
-    .line 2100
+    .line 2089
     :pswitch_1
     iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -68,7 +68,7 @@
 
     goto :goto_0
 
-    .line 2103
+    .line 2092
     :pswitch_2
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -76,7 +76,7 @@
 
     goto :goto_0
 
-    .line 2106
+    .line 2095
     :pswitch_3
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -84,23 +84,23 @@
 
     goto :goto_0
 
-    .line 2109
+    .line 2098
     :pswitch_4
     const-string/jumbo v1, "KeyguardViewMediator#handleMessage VERIFY_UNLOCK"
 
     invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2110
+    .line 2099
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     invoke-static {v1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->-wrap19(Lcom/android/systemui/keyguard/KeyguardViewMediator;)V
 
-    .line 2111
+    .line 2100
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     goto :goto_0
 
-    .line 2114
+    .line 2103
     :pswitch_5
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -108,7 +108,7 @@
 
     goto :goto_0
 
-    .line 2117
+    .line 2106
     :pswitch_6
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -116,13 +116,13 @@
 
     goto :goto_0
 
-    .line 2120
+    .line 2109
     :pswitch_7
     const-string/jumbo v1, "KeyguardViewMediator#handleMessage NOTIFY_SCREEN_TURNING_ON"
 
     invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2121
+    .line 2110
     iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     iget-object v1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -131,28 +131,28 @@
 
     invoke-static {v2, v1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->-wrap10(Lcom/android/systemui/keyguard/KeyguardViewMediator;Lcom/android/internal/policy/IKeyguardDrawnCallback;)V
 
-    .line 2122
+    .line 2111
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     goto :goto_0
 
-    .line 2125
+    .line 2114
     :pswitch_8
     const-string/jumbo v1, "KeyguardViewMediator#handleMessage NOTIFY_SCREEN_TURNED_ON"
 
     invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2126
+    .line 2115
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     invoke-static {v1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->-wrap9(Lcom/android/systemui/keyguard/KeyguardViewMediator;)V
 
-    .line 2127
+    .line 2116
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     goto :goto_0
 
-    .line 2130
+    .line 2119
     :pswitch_9
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -160,29 +160,29 @@
 
     goto :goto_0
 
-    .line 2133
+    .line 2122
     :pswitch_a
     const-string/jumbo v1, "KeyguardViewMediator#handleMessage NOTIFY_STARTED_WAKING_UP"
 
     invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2134
+    .line 2123
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     invoke-static {v1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->-wrap12(Lcom/android/systemui/keyguard/KeyguardViewMediator;)V
 
-    .line 2135
+    .line 2124
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     goto :goto_0
 
-    .line 2141
+    .line 2130
     :pswitch_b
     const-string/jumbo v3, "KeyguardViewMediator#handleMessage KEYGUARD_DONE"
 
     invoke-static {v3}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2142
+    .line 2131
     iget-object v3, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     iget v4, p1, Landroid/os/Message;->arg1:I
@@ -192,7 +192,7 @@
     :goto_1
     invoke-static {v3, v1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->-wrap5(Lcom/android/systemui/keyguard/KeyguardViewMediator;Z)V
 
-    .line 2143
+    .line 2132
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     goto :goto_0
@@ -200,32 +200,32 @@
     :cond_0
     move v1, v2
 
-    .line 2142
+    .line 2131
     goto :goto_1
 
-    .line 2146
+    .line 2135
     :pswitch_c
     const-string/jumbo v1, "KeyguardViewMediator#handleMessage KEYGUARD_DONE_DRAWING"
 
     invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2147
+    .line 2136
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     invoke-static {v1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->-wrap4(Lcom/android/systemui/keyguard/KeyguardViewMediator;)V
 
-    .line 2148
+    .line 2137
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     goto/16 :goto_0
 
-    .line 2151
+    .line 2140
     :pswitch_d
     const-string/jumbo v3, "KeyguardViewMediator#handleMessage SET_OCCLUDED"
 
     invoke-static {v3}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2152
+    .line 2141
     iget-object v3, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     iget v4, p1, Landroid/os/Message;->arg1:I
@@ -235,7 +235,7 @@
     :goto_2
     invoke-static {v3, v1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->-wrap16(Lcom/android/systemui/keyguard/KeyguardViewMediator;Z)V
 
-    .line 2153
+    .line 2142
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     goto/16 :goto_0
@@ -243,16 +243,16 @@
     :cond_1
     move v1, v2
 
-    .line 2152
+    .line 2141
     goto :goto_2
 
-    .line 2156
+    .line 2145
     :pswitch_e
     iget-object v2, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     monitor-enter v2
 
-    .line 2157
+    .line 2146
     :try_start_0
     iget-object v3, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -268,7 +268,7 @@
 
     goto/16 :goto_0
 
-    .line 2156
+    .line 2145
     :catchall_0
     move-exception v1
 
@@ -276,7 +276,7 @@
 
     throw v1
 
-    .line 2161
+    .line 2150
     :pswitch_f
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -284,18 +284,18 @@
 
     goto/16 :goto_0
 
-    .line 2164
+    .line 2153
     :pswitch_10
     const-string/jumbo v1, "KeyguardViewMediator#handleMessage START_KEYGUARD_EXIT_ANIM"
 
     invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2165
+    .line 2154
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/android/systemui/keyguard/KeyguardViewMediator$StartKeyguardExitAnimParams;
 
-    .line 2166
+    .line 2155
     .local v0, "params":Lcom/android/systemui/keyguard/KeyguardViewMediator$StartKeyguardExitAnimParams;
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -305,7 +305,7 @@
 
     invoke-static {v1, v2, v3, v4, v5}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->-wrap18(Lcom/android/systemui/keyguard/KeyguardViewMediator;JJ)V
 
-    .line 2167
+    .line 2156
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
     iget-object v1, v1, Lcom/android/systemui/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
@@ -316,29 +316,29 @@
 
     invoke-virtual {v1}, Lcom/android/systemui/classifier/FalsingManager;->onSucccessfulUnlock()V
 
-    .line 2168
+    .line 2157
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     goto/16 :goto_0
 
-    .line 2171
+    .line 2160
     .end local v0    # "params":Lcom/android/systemui/keyguard/KeyguardViewMediator$StartKeyguardExitAnimParams;
     :pswitch_11
     const-string/jumbo v1, "KeyguardViewMediator#handleMessage KEYGUARD_DONE_PENDING_TIMEOUT"
 
     invoke-static {v1}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
-    .line 2172
+    .line 2161
     const-string/jumbo v1, "KeyguardViewMediator"
 
     const-string/jumbo v2, "Timeout while waiting for activity drawn!"
 
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2173
+    .line 2162
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
-    .line 2176
+    .line 2165
     :pswitch_12
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -346,7 +346,7 @@
 
     goto/16 :goto_0
 
-    .line 2180
+    .line 2169
     :pswitch_13
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -358,7 +358,7 @@
 
     goto/16 :goto_0
 
-    .line 2185
+    .line 2174
     :pswitch_14
     iget-object v1, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator$5;->this$0:Lcom/android/systemui/keyguard/KeyguardViewMediator;
 
@@ -366,7 +366,7 @@
 
     goto/16 :goto_0
 
-    .line 2098
+    .line 2087
     :pswitch_data_0
     .packed-switch 0x2
         :pswitch_1

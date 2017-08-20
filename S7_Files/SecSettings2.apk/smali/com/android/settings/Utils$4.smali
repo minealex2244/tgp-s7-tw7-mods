@@ -27,7 +27,7 @@
     .param p1, "val$view"    # Landroid/view/View;
 
     .prologue
-    .line 2938
+    .line 2904
     iput-object p1, p0, Lcom/android/settings/Utils$4;->val$view:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,14 +42,14 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 2949
+    .line 2915
     iget-object v0, p0, Lcom/android/settings/Utils$4;->val$view:Landroid/view/View;
 
     const/4 v1, 0x4
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 2948
+    .line 2914
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 2944
+    .line 2910
     return-void
 .end method
 
@@ -67,6 +67,6 @@
     .param p1, "animation"    # Landroid/view/animation/Animation;
 
     .prologue
-    .line 2940
+    .line 2906
     return-void
 .end method

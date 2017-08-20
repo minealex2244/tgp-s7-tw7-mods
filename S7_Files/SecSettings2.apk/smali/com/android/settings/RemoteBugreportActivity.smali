@@ -53,7 +53,7 @@
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 52
-    const v3, 0x7f0b1a61
+    const v3, 0x7f0b1a60
 
     .line 51
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
@@ -112,7 +112,7 @@
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 71
-    const v3, 0x7f0b1a5e
+    const v3, 0x7f0b1a5d
 
     .line 70
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
@@ -123,7 +123,7 @@
     if-ne v1, v5, :cond_2
 
     .line 74
-    const v2, 0x7f0b1a60
+    const v2, 0x7f0b1a5f
 
     .line 70
     :goto_1
@@ -147,7 +147,7 @@
     invoke-direct {v3, p0}, Lcom/android/settings/RemoteBugreportActivity$4;-><init>(Lcom/android/settings/RemoteBugreportActivity;)V
 
     .line 82
-    const v4, 0x7f0b1a63
+    const v4, 0x7f0b1a62
 
     .line 70
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -160,7 +160,7 @@
     invoke-direct {v3, p0}, Lcom/android/settings/RemoteBugreportActivity$5;-><init>(Lcom/android/settings/RemoteBugreportActivity;)V
 
     .line 93
-    const v4, 0x7f0b1a62
+    const v4, 0x7f0b1a61
 
     .line 70
     invoke-virtual {v2, v4, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
@@ -180,7 +180,7 @@
     .line 75
     .end local v0    # "dialog":Landroid/app/AlertDialog;
     :cond_2
-    const v2, 0x7f0b1a5f
+    const v2, 0x7f0b1a5e
 
     goto :goto_1
 

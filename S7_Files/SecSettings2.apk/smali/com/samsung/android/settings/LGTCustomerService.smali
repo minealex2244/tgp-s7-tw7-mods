@@ -105,7 +105,7 @@
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/settings/LGTCustomerService;->mCustomerService:Landroid/preference/Preference;
 
-    const v1, 0x7f0b0e82
+    const v1, 0x7f0b0e80
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/LGTCustomerService;->getString(I)Ljava/lang/String;
 

@@ -638,7 +638,7 @@
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonText:Ljava/lang/CharSequence;
 
     .line 128
-    const v1, 0x7f0b153c
+    const v1, 0x7f0b153b
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/ModePreviewTablet;->getString(I)Ljava/lang/String;
 

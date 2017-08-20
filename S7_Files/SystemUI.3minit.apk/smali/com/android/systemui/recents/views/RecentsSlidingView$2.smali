@@ -30,7 +30,7 @@
     .param p2, "val$event"    # Lcom/android/systemui/recents/events/activity/LaunchTaskPostEvent;
 
     .prologue
-    .line 373
+    .line 360
     iput-object p1, p0, Lcom/android/systemui/recents/views/RecentsSlidingView$2;->this$0:Lcom/android/systemui/recents/views/RecentsSlidingView;
 
     iput-object p2, p0, Lcom/android/systemui/recents/views/RecentsSlidingView$2;->val$event:Lcom/android/systemui/recents/events/activity/LaunchTaskPostEvent;
@@ -47,12 +47,12 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 386
+    .line 373
     iget-object v0, p0, Lcom/android/systemui/recents/views/RecentsSlidingView$2;->this$0:Lcom/android/systemui/recents/views/RecentsSlidingView;
 
     invoke-virtual {v0}, Lcom/android/systemui/recents/views/RecentsSlidingView;->resetScroll()V
 
-    .line 385
+    .line 372
     return-void
 .end method
 
@@ -61,12 +61,12 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 382
+    .line 369
     iget-object v0, p0, Lcom/android/systemui/recents/views/RecentsSlidingView$2;->this$0:Lcom/android/systemui/recents/views/RecentsSlidingView;
 
     invoke-virtual {v0}, Lcom/android/systemui/recents/views/RecentsSlidingView;->resetScroll()V
 
-    .line 381
+    .line 368
     return-void
 .end method
 
@@ -75,7 +75,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 379
+    .line 366
     return-void
 .end method
 
@@ -84,7 +84,7 @@
     .param p1, "animation"    # Landroid/animation/Animator;
 
     .prologue
-    .line 376
+    .line 363
     invoke-static {}, Lcom/android/systemui/recents/misc/ForegroundThread;->getHandler()Landroid/os/Handler;
 
     move-result-object v0
@@ -95,6 +95,6 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 375
+    .line 362
     return-void
 .end method

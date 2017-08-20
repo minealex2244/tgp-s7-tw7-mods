@@ -1138,7 +1138,7 @@
     .locals 14
 
     .prologue
-    const v13, 0x7f0b0867
+    const v13, 0x7f0b0865
 
     const/4 v9, 0x1
 
@@ -1488,7 +1488,7 @@
 
     move-result-object v11
 
-    const v12, 0x7f0b0ae8
+    const v12, 0x7f0b0ae6
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3679,7 +3679,7 @@
 
     .prologue
     .line 600
-    const v1, 0x7f0b0aaf
+    const v1, 0x7f0b0aad
 
     invoke-static {v1}, Lcom/samsung/android/settings/TimeDisplaySchemeSettings;->newInstance(I)Lcom/samsung/android/settings/TimeDisplaySchemeSettings;
 

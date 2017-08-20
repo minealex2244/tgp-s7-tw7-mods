@@ -30,7 +30,7 @@
     .locals 0
 
     .prologue
-    .line 10069
+    .line 10067
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +41,7 @@
     .param p0, "ctxt"    # Landroid/content/Context;
 
     .prologue
-    .line 10083
+    .line 10081
     const-string/jumbo v1, "accessibility"
 
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -50,24 +50,24 @@
 
     check-cast v0, Landroid/view/accessibility/AccessibilityManager;
 
-    .line 10085
+    .line 10083
     .local v0, "accessibilityManager":Landroid/view/accessibility/AccessibilityManager;
     invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityManager;->isTouchExplorationEnabled()Z
 
     move-result v1
 
-    .line 10084
+    .line 10082
     invoke-static {v1}, Lcom/android/server/audio/AudioService$StreamOverride;->updateDefaultStreamOverrideDelay(Z)V
 
-    .line 10087
+    .line 10085
     new-instance v1, Lcom/android/server/audio/AudioService$StreamOverride;
 
     invoke-direct {v1}, Lcom/android/server/audio/AudioService$StreamOverride;-><init>()V
 
-    .line 10086
+    .line 10084
     invoke-virtual {v0, v1}, Landroid/view/accessibility/AccessibilityManager;->addTouchExplorationStateChangeListener(Landroid/view/accessibility/AccessibilityManager$TouchExplorationStateChangeListener;)Z
 
-    .line 10081
+    .line 10079
     return-void
 .end method
 
@@ -76,15 +76,15 @@
     .param p0, "touchExploreEnabled"    # Z
 
     .prologue
-    .line 10096
+    .line 10094
     if-eqz p0, :cond_1
 
-    .line 10097
+    .line 10095
     const/16 v0, 0x3e8
 
     sput v0, Lcom/android/server/audio/AudioService$StreamOverride;->sDelayMs:I
 
-    .line 10101
+    .line 10099
     :goto_0
     sget-boolean v0, Lcom/android/server/audio/AudioService;->DEBUG_VOL:Z
 
@@ -106,26 +106,26 @@
 
     move-result-object v1
 
-    .line 10102
+    .line 10100
     const-string/jumbo v2, " stream override delay is now "
 
-    .line 10101
+    .line 10099
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 10102
+    .line 10100
     sget v2, Lcom/android/server/audio/AudioService$StreamOverride;->sDelayMs:I
 
-    .line 10101
+    .line 10099
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
-    .line 10102
+    .line 10100
     const-string/jumbo v2, " ms"
 
-    .line 10101
+    .line 10099
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
@@ -136,11 +136,11 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10095
+    .line 10093
     :cond_0
     return-void
 
-    .line 10099
+    .line 10097
     :cond_1
     const/4 v0, 0x0
 
@@ -156,9 +156,9 @@
     .param p1, "enabled"    # Z
 
     .prologue
-    .line 10092
+    .line 10090
     invoke-static {p1}, Lcom/android/server/audio/AudioService$StreamOverride;->updateDefaultStreamOverrideDelay(Z)V
 
-    .line 10091
+    .line 10089
     return-void
 .end method

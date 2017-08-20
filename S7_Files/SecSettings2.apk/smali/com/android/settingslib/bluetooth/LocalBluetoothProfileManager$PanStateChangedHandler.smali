@@ -25,13 +25,13 @@
     .param p2, "profile"    # Lcom/android/settingslib/bluetooth/LocalBluetoothProfile;
 
     .prologue
-    .line 417
+    .line 413
     iput-object p1, p0, Lcom/android/settingslib/bluetooth/LocalBluetoothProfileManager$PanStateChangedHandler;->this$0:Lcom/android/settingslib/bluetooth/LocalBluetoothProfileManager;
 
-    .line 418
+    .line 414
     invoke-direct {p0, p1, p2}, Lcom/android/settingslib/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;-><init>(Lcom/android/settingslib/bluetooth/LocalBluetoothProfileManager;Lcom/android/settingslib/bluetooth/LocalBluetoothProfile;)V
 
-    .line 417
+    .line 413
     return-void
 .end method
 
@@ -44,12 +44,12 @@
     .param p3, "device"    # Landroid/bluetooth/BluetoothDevice;
 
     .prologue
-    .line 423
+    .line 419
     iget-object v0, p0, Lcom/android/settingslib/bluetooth/LocalBluetoothProfileManager$PanStateChangedHandler;->mProfile:Lcom/android/settingslib/bluetooth/LocalBluetoothProfile;
 
     check-cast v0, Lcom/android/settingslib/bluetooth/PanProfile;
 
-    .line 424
+    .line 420
     .local v0, "panProfile":Lcom/android/settingslib/bluetooth/PanProfile;
     const-string/jumbo v2, "android.bluetooth.pan.extra.LOCAL_ROLE"
 
@@ -59,13 +59,13 @@
 
     move-result v1
 
-    .line 425
+    .line 421
     .local v1, "role":I
     invoke-virtual {v0, p3, v1}, Lcom/android/settingslib/bluetooth/PanProfile;->setLocalRole(Landroid/bluetooth/BluetoothDevice;I)V
 
-    .line 426
+    .line 422
     invoke-super {p0, p1, p2, p3}, Lcom/android/settingslib/bluetooth/LocalBluetoothProfileManager$StateChangedHandler;->onReceive(Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 422
+    .line 418
     return-void
 .end method

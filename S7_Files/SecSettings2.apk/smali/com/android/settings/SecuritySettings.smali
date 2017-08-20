@@ -579,7 +579,7 @@
     move-result-object v24
 
     .line 256
-    const v25, 0x7f0b14f5
+    const v25, 0x7f0b14f4
 
     .line 255
     invoke-virtual/range {v24 .. v25}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -890,7 +890,7 @@
 
     move-result-object v25
 
-    const v26, 0x7f0b19d8
+    const v26, 0x7f0b19d7
 
     invoke-virtual/range {v25 .. v26}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1073,7 +1073,7 @@
 
     if-eqz v24, :cond_f
 
-    const v18, 0x7f0b1714
+    const v18, 0x7f0b1713
 
     .line 349
     .local v18, "storageSummaryRes":I
@@ -1457,7 +1457,7 @@
     .restart local v21    # "um":Landroid/os/UserManager;
     .restart local v23    # "userCredentials":Lcom/android/settingslib/RestrictedPreference;
     :cond_f
-    const v18, 0x7f0b1715
+    const v18, 0x7f0b1714
 
     goto/16 :goto_3
 
@@ -2526,7 +2526,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b1438
+    const v2, 0x7f0b1437
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2550,7 +2550,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b14ff
+    const v2, 0x7f0b14fe
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -2594,7 +2594,7 @@
 
     .prologue
     .line 806
-    const v0, 0x7f0b18ad
+    const v0, 0x7f0b18ac
 
     return v0
 .end method

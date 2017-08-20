@@ -36,7 +36,7 @@
     .param p4, "val$row"    # Lcom/android/systemui/statusbar/ExpandableNotificationRow;
 
     .prologue
-    .line 1553
+    .line 1551
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15;->val$guts:Lcom/android/systemui/statusbar/NotificationGuts;
@@ -57,7 +57,7 @@
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
-    .line 1557
+    .line 1555
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15;->val$guts:Lcom/android/systemui/statusbar/NotificationGuts;
 
     invoke-virtual {v1}, Lcom/android/systemui/statusbar/NotificationGuts;->hasImportanceChanged()Z
@@ -74,7 +74,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 1558
+    .line 1556
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mState:I
@@ -83,7 +83,7 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 1559
+    .line 1557
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mState:I
@@ -92,7 +92,7 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 1560
+    .line 1558
     :cond_0
     new-instance v0, Lcom/android/systemui/statusbar/BaseStatusBar$15$1;
 
@@ -108,18 +108,18 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/android/systemui/statusbar/BaseStatusBar$15$1;-><init>(Lcom/android/systemui/statusbar/BaseStatusBar$15;Landroid/service/notification/StatusBarNotification;Lcom/android/systemui/statusbar/ExpandableNotificationRow;Lcom/android/systemui/statusbar/NotificationGuts;Landroid/view/View;)V
 
-    .line 1567
+    .line 1565
     .local v0, "dismissAction":Lcom/android/keyguard/KeyguardHostView$OnDismissAction;
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v1, v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->onLockedNotificationImportanceChange(Lcom/android/keyguard/KeyguardHostView$OnDismissAction;)V
 
-    .line 1555
+    .line 1553
     .end local v0    # "dismissAction":Lcom/android/keyguard/KeyguardHostView$OnDismissAction;
     :goto_0
     return-void
 
-    .line 1569
+    .line 1567
     :cond_1
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$15;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 

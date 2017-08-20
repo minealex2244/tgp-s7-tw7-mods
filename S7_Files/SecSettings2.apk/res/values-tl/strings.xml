@@ -3685,7 +3685,6 @@ Tandaan: Maaaring hindi kasing-ligtas ang fingerprint mo kaysa sa isang matibay 
     <string name="bluetooth_confirm_passkey_msg">Ang passkey sa pagkumpirma ay %2$s upang i-pair sa %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">Mula sa&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>I-pair sa device na ito?</string>
     <string name="bluetooth_display_passkey_pin_msg">Ilagay ang %1$s sa %2$s na ipe-pair, pagkatapos ay i-tap ang Bumalik o ang Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Hindi makakonekta sa %1$s. Subukang kumonekta mula sa %2$s.</string>
     <string name="bluetooth_connecting_error_message">Hindi makakonekta sa %s.</string>
     <string name="bluetooth_preference_scan_title">Mag-scan</string>
     <string name="bluetooth_preference_paired_devices">Mga na-pair na device</string>

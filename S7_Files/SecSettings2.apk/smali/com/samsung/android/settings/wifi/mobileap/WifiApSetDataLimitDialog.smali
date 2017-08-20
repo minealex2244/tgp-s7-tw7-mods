@@ -235,7 +235,7 @@
     invoke-virtual {p0, v0}, Lcom/samsung/android/settings/wifi/mobileap/WifiApSetDataLimitDialog;->setView(Landroid/view/View;)V
 
     .line 55
-    const v1, 0x7f0b17c0
+    const v1, 0x7f0b17bf
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/wifi/mobileap/WifiApSetDataLimitDialog;->setTitle(I)V
 
@@ -273,7 +273,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b153c
+    const v2, 0x7f0b153b
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -288,7 +288,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b12a5
+    const v2, 0x7f0b12a4
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -337,7 +337,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0b0dbd
+    const v2, 0x7f0b0dbb
 
     invoke-virtual {v1, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

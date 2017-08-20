@@ -3542,7 +3542,6 @@ Note: Your fingerprint may be less secure than a strong pattern or PIN.
     <string name="bluetooth_confirm_passkey_msg">Confirm passkey is %2$s to pair with %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">From&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Pair with this device?</string>
     <string name="bluetooth_display_passkey_pin_msg">Enter %1$s on %2$s to pair, then tap Return or Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">"Can't connect to %1$s. Try to connect from %2$s."</string>
     <string name="bluetooth_connecting_error_message">Unable to connect to %s.</string>
     <string name="bluetooth_preference_scan_title">Scan</string>
     <string name="bluetooth_preference_paired_devices">Paired devices</string>

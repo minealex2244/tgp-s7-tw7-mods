@@ -3687,7 +3687,6 @@ Wi-Fi is now on."</string>
     <string name="bluetooth_confirm_passkey_msg">אשר שהסיסמה היא %2$s כדי לבצע התאמה עם %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">מאת&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>לבצע התאמה עם התקן זה?</string>
     <string name="bluetooth_display_passkey_pin_msg">הזן %1$s ב-%2$s כדי לבצע התאמה, ולאחר מכן הקש Return או Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">לא ניתן להתחבר אל %1$s. נסה להתחבר מ-%2$s.</string>
     <string name="bluetooth_connecting_error_message">לא ניתן להתחבר ל-%s.</string>
     <string name="bluetooth_preference_scan_title">סרוק</string>
     <string name="bluetooth_preference_paired_devices">מכשירים מותאמים</string>

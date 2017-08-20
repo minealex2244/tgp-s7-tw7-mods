@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lcom/android/settings/bluetooth/BluetoothSettings;
 
     .prologue
-    .line 1263
+    .line 1265
     iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$8;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,13 +45,13 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 1266
+    .line 1268
     if-nez p1, :cond_0
 
-    .line 1267
+    .line 1269
     return-void
 
-    .line 1269
+    .line 1271
     :cond_0
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$8;->this$0:Lcom/android/settings/bluetooth/BluetoothSettings;
 
@@ -67,37 +67,37 @@
 
     move-result-object v0
 
-    .line 1270
+    .line 1272
     .local v0, "resolver":Landroid/content/ContentResolver;
     if-nez v0, :cond_1
 
-    .line 1271
+    .line 1273
     return-void
 
-    .line 1273
+    .line 1275
     :cond_1
     if-ne p2, v2, :cond_2
 
-    .line 1276
+    .line 1278
     const-string/jumbo v1, "bluetooth_security_on_check"
 
-    .line 1275
+    .line 1277
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1282
+    .line 1284
     :goto_0
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 1265
+    .line 1267
     return-void
 
-    .line 1280
+    .line 1282
     :cond_2
     const-string/jumbo v1, "bluetooth_security_on_check"
 
     const/4 v2, 0x0
 
-    .line 1279
+    .line 1281
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     goto :goto_0

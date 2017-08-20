@@ -3687,7 +3687,6 @@ Oharra: baliteke hatz aztarna ez izatea patroia edo PINa bezain segurua.
     <string name="bluetooth_confirm_passkey_msg">Baieztatu pasahitza %2$s dela %1$s-(r)ekin parekatzeko</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>-(e)tik Parekatu gailu honekin?</string>
     <string name="bluetooth_display_passkey_pin_msg">Adierazi %1$s %2$s-(e)n parekatzeko, eta ondoren ukitu Itzuli edo Intro</string>
-    <string name="bluetooth_HID_connecting_error_message">Ezin da konektatu %1$s osagarrira. Konektatu %2$s bidez.</string>
     <string name="bluetooth_connecting_error_message">Ezin da %s-ra konektatu</string>
     <string name="bluetooth_preference_scan_title">Arakatu</string>
     <string name="bluetooth_preference_paired_devices">Sinkronizatutako gailuak</string>

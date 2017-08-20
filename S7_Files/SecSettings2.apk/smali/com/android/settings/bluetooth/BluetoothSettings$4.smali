@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 1308
+    .line 1310
     invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
@@ -44,37 +44,37 @@
     .end annotation
 
     .prologue
-    .line 1320
+    .line 1322
     new-instance v6, Ljava/util/ArrayList;
 
     invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
 
-    .line 1322
+    .line 1324
     .local v6, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/search/SearchIndexableRaw;>;"
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    .line 1331
+    .line 1333
     .local v5, "res":Landroid/content/res/Resources;
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v0
 
-    .line 1332
+    .line 1334
     .local v0, "adapter":Landroid/bluetooth/BluetoothAdapter;
     const/4 v2, 0x0
 
-    .line 1334
+    .line 1336
     .local v2, "data":Lcom/android/settings/search/SearchIndexableRaw;
     if-eqz v0, :cond_0
 
-    .line 1335
+    .line 1337
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->getBondedDevices()Ljava/util/Set;
 
     move-result-object v1
 
-    .line 1337
+    .line 1339
     .local v1, "bondedDevices":Ljava/util/Set;, "Ljava/util/Set<Landroid/bluetooth/BluetoothDevice;>;"
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -95,13 +95,13 @@
 
     check-cast v3, Landroid/bluetooth/BluetoothDevice;
 
-    .line 1338
+    .line 1340
     .local v3, "device":Landroid/bluetooth/BluetoothDevice;
     new-instance v2, Lcom/android/settings/search/SearchIndexableRaw;
 
     invoke-direct {v2, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    .line 1339
+    .line 1341
     .local v2, "data":Lcom/android/settings/search/SearchIndexableRaw;
     invoke-virtual {v3}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
 
@@ -109,7 +109,7 @@
 
     iput-object v7, v2, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
-    .line 1340
+    .line 1342
     const v7, 0x7f0b11db
 
     invoke-virtual {v5, v7}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -118,15 +118,15 @@
 
     iput-object v7, v2, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
-    .line 1341
+    .line 1343
     iput-boolean p2, v2, Lcom/android/settings/search/SearchIndexableRaw;->enabled:Z
 
-    .line 1342
+    .line 1344
     invoke-interface {v6, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 1345
+    .line 1347
     .end local v1    # "bondedDevices":Ljava/util/Set;, "Ljava/util/Set<Landroid/bluetooth/BluetoothDevice;>;"
     .end local v2    # "data":Lcom/android/settings/search/SearchIndexableRaw;
     .end local v3    # "device":Landroid/bluetooth/BluetoothDevice;
@@ -152,12 +152,12 @@
     .end annotation
 
     .prologue
-    .line 1311
+    .line 1313
     new-instance v0, Landroid/provider/SearchIndexableResource;
 
     invoke-direct {v0, p1}, Landroid/provider/SearchIndexableResource;-><init>(Landroid/content/Context;)V
 
-    .line 1312
+    .line 1314
     .local v0, "sir":Landroid/provider/SearchIndexableResource;
     const-class v1, Lcom/android/settings/bluetooth/BluetoothSettings;
 
@@ -167,12 +167,12 @@
 
     iput-object v1, v0, Landroid/provider/SearchIndexableResource;->className:Ljava/lang/String;
 
-    .line 1313
+    .line 1315
     const v1, 0x7f080035
 
     iput v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 
-    .line 1314
+    .line 1316
     const/4 v1, 0x1
 
     new-array v1, v1, [Landroid/provider/SearchIndexableResource;

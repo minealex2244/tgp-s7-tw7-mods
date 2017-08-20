@@ -35,19 +35,19 @@
     .param p1, "this$0"    # Lcom/android/server/clipboardex/ClipboardExService;
 
     .prologue
-    .line 1263
+    .line 1265
     iput-object p1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1264
+    .line 1266
     new-instance v0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList$1;
 
     invoke-direct {v0, p0}, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList$1;-><init>(Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;)V
 
     iput-object v0, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->mBind:Landroid/sec/clipboard/data/IClipboardDataList$Stub;
 
-    .line 1263
+    .line 1265
     return-void
 .end method
 
@@ -67,7 +67,7 @@
     .locals 1
 
     .prologue
-    .line 1365
+    .line 1367
     iget-object v0, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->mBind:Landroid/sec/clipboard/data/IClipboardDataList$Stub;
 
     return-object v0
@@ -83,7 +83,7 @@
     .end annotation
 
     .prologue
-    .line 1355
+    .line 1357
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v1}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -94,11 +94,11 @@
 
     move-result-object v0
 
-    .line 1356
+    .line 1358
     .local v0, "data":Lcom/samsung/android/content/clipboard/data/SemClipData;
     if-nez v0, :cond_0
 
-    .line 1357
+    .line 1359
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v1}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -109,7 +109,7 @@
 
     move-result-object v0
 
-    .line 1360
+    .line 1362
     :cond_0
     return-object v0
 .end method
@@ -119,7 +119,7 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 1305
+    .line 1307
     const-string/jumbo v2, "ClipboardExService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -142,7 +142,7 @@
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1306
+    .line 1308
     iget-object v2, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v2}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -153,11 +153,11 @@
 
     move-result v0
 
-    .line 1307
+    .line 1309
     .local v0, "dataListSize":I
     if-ge p1, v0, :cond_0
 
-    .line 1308
+    .line 1310
     iget-object v2, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v2}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -170,11 +170,11 @@
 
     return-object v2
 
-    .line 1310
+    .line 1312
     :cond_0
     sub-int v1, p1, v0
 
-    .line 1311
+    .line 1313
     .local v1, "ownerIndex":I
     const-string/jumbo v2, "ClipboardExService"
 
@@ -208,7 +208,7 @@
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1312
+    .line 1314
     iget-object v2, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v2}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -227,12 +227,12 @@
     .param p1, "index"    # I
 
     .prologue
-    .line 1318
+    .line 1320
     sget-boolean v2, Landroid/sec/clipboard/data/ClipboardConstants;->DEBUG:Z
 
     if-eqz v2, :cond_0
 
-    .line 1319
+    .line 1321
     const-string/jumbo v2, "ClipboardExService"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -255,7 +255,7 @@
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1321
+    .line 1323
     :cond_0
     iget-object v2, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -267,11 +267,11 @@
 
     move-result v0
 
-    .line 1322
+    .line 1324
     .local v0, "dataListSize":I
     if-ge p1, v0, :cond_1
 
-    .line 1323
+    .line 1325
     iget-object v2, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v2}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -284,11 +284,11 @@
 
     return v2
 
-    .line 1325
+    .line 1327
     :cond_1
     sub-int v1, p1, v0
 
-    .line 1326
+    .line 1328
     .local v1, "ownerIndex":I
     const-string/jumbo v2, "ClipboardExService"
 
@@ -322,7 +322,7 @@
 
     invoke-static {v2, v3}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1327
+    .line 1329
     iget-object v2, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v2}, Lcom/android/server/clipboardex/ClipboardExService;->-get9(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -340,18 +340,18 @@
     .locals 3
 
     .prologue
-    .line 1295
+    .line 1297
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v1}, Lcom/android/server/clipboardex/ClipboardExService;->-wrap1(Lcom/android/server/clipboardex/ClipboardExService;)Z
 
     move-result v0
 
-    .line 1296
+    .line 1298
     .local v0, "kioskEnabled":Z
     if-eqz v0, :cond_0
 
-    .line 1297
+    .line 1299
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v1}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -364,7 +364,7 @@
 
     return v1
 
-    .line 1299
+    .line 1301
     :cond_0
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -397,12 +397,12 @@
     .param p2, "clipData"    # Lcom/samsung/android/content/clipboard/data/SemClipData;
 
     .prologue
-    .line 1333
+    .line 1335
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardConstants;->DEBUG:Z
 
     if-eqz v1, :cond_0
 
-    .line 1334
+    .line 1336
     const-string/jumbo v1, "ClipboardExService"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -425,7 +425,7 @@
 
     invoke-static {v1, v2}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1337
+    .line 1339
     :cond_0
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -439,19 +439,19 @@
 
     if-ge p1, v1, :cond_2
 
-    .line 1338
+    .line 1340
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardConstants;->DEBUG:Z
 
     if-eqz v1, :cond_1
 
-    .line 1339
+    .line 1341
     const-string/jumbo v1, "ClipboardExService"
 
     const-string/jumbo v2, "ISharedClipboardDataList updateData() - index = is for regular mDataList"
 
     invoke-static {v1, v2}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1341
+    .line 1343
     :cond_1
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -465,7 +465,7 @@
 
     return v1
 
-    .line 1343
+    .line 1345
     :cond_2
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
@@ -479,13 +479,13 @@
 
     sub-int v0, p1, v1
 
-    .line 1344
+    .line 1346
     .local v0, "newIndex":I
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardConstants;->DEBUG:Z
 
     if-eqz v1, :cond_3
 
-    .line 1345
+    .line 1347
     const-string/jumbo v1, "ClipboardExService"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -502,15 +502,15 @@
 
     move-result-object v2
 
-    .line 1346
+    .line 1348
     const-string/jumbo v3, " was higher than mDataList "
 
-    .line 1345
+    .line 1347
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 1346
+    .line 1348
     iget-object v3, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-static {v3}, Lcom/android/server/clipboardex/ClipboardExService;->-get3(Lcom/android/server/clipboardex/ClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
@@ -521,15 +521,15 @@
 
     move-result v3
 
-    .line 1345
+    .line 1347
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    .line 1347
+    .line 1349
     const-string/jumbo v3, " newINxed to update from shared = "
 
-    .line 1345
+    .line 1347
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
@@ -544,7 +544,7 @@
 
     invoke-static {v1, v2}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1349
+    .line 1351
     :cond_3
     iget-object v1, p0, Lcom/android/server/clipboardex/ClipboardExService$ISharedClipboardDataList;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 

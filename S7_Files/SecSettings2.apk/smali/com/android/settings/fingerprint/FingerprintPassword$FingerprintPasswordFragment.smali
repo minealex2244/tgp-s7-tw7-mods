@@ -1120,7 +1120,7 @@
     :cond_4
     iget-object v5, p0, Lcom/android/settings/fingerprint/FingerprintPassword$FingerprintPasswordFragment;->mHeaderText:Landroid/widget/TextView;
 
-    const v6, 0x7f0b083d
+    const v6, 0x7f0b083b
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(I)V
 
@@ -2468,7 +2468,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b087d
+    const v29, 0x7f0b087b
 
     move-object/from16 v0, p0
 
@@ -2525,7 +2525,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b087c
+    const v29, 0x7f0b087a
 
     move-object/from16 v0, p0
 
@@ -2564,7 +2564,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b087f
+    const v29, 0x7f0b087d
 
     move-object/from16 v0, p0
 
@@ -2587,7 +2587,7 @@
     if-ne v13, v0, :cond_1d
 
     .line 698
-    const v28, 0x7f0b087e
+    const v28, 0x7f0b087c
 
     move-object/from16 v0, p0
 
@@ -2626,7 +2626,7 @@
 
     aput-object v29, v28, v30
 
-    const v29, 0x7f0b0880
+    const v29, 0x7f0b087e
 
     move-object/from16 v0, p0
 
@@ -2645,7 +2645,7 @@
     if-nez v18, :cond_19
 
     .line 704
-    const v28, 0x7f0b0881
+    const v28, 0x7f0b087f
 
     move-object/from16 v0, p0
 

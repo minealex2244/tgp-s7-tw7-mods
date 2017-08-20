@@ -33,7 +33,7 @@
     .param p3, "val$parentFragment"    # Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;
 
     .prologue
-    .line 2473
+    .line 2508
     iput-object p1, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$UnificationConfirmationDialog$1;->this$1:Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$UnificationConfirmationDialog;
 
     iput-boolean p2, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$UnificationConfirmationDialog$1;->val$compliant:Z
@@ -53,25 +53,25 @@
     .param p2, "whichButton"    # I
 
     .prologue
-    .line 2476
+    .line 2511
     iget-boolean v0, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$UnificationConfirmationDialog$1;->val$compliant:Z
 
     if-eqz v0, :cond_0
 
-    .line 2477
+    .line 2512
     iget-object v0, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$UnificationConfirmationDialog$1;->val$parentFragment:Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;
 
-    invoke-static {v0}, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;->-wrap1(Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;)V
+    invoke-static {v0}, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;->-wrap2(Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;)V
 
-    .line 2475
+    .line 2510
     :goto_0
     return-void
 
-    .line 2479
+    .line 2514
     :cond_0
     iget-object v0, p0, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings$UnificationConfirmationDialog$1;->val$parentFragment:Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;
 
-    invoke-static {v0}, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;->-wrap4(Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;)V
+    invoke-static {v0}, Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;->-wrap5(Lcom/samsung/android/settings/lockscreen/LockscreenMenuSettings;)V
 
     goto :goto_0
 .end method

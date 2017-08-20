@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     .prologue
-    .line 1702
+    .line 1666
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     invoke-direct {p0}, Lcom/sec/ims/IImsRegistrationListener$Stub;-><init>()V
@@ -47,7 +47,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 1737
+    .line 1701
     const-string/jumbo v2, "mmtel"
 
     invoke-virtual {p1, v2}, Lcom/sec/ims/ImsRegistration;->hasService(Ljava/lang/String;)Z
@@ -56,15 +56,15 @@
 
     if-eqz v2, :cond_1
 
-    .line 1738
+    .line 1702
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     iput-boolean v3, v2, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mVoWifiConnected:Z
 
-    .line 1739
+    .line 1703
     sput-boolean v3, Lcom/android/keyguard/CarrierText;->mVoWifiConnected:Z
 
-    .line 1740
+    .line 1704
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     invoke-static {v2}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->-get2(Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;)Landroid/content/Context;
@@ -79,19 +79,19 @@
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1741
+    .line 1705
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     invoke-virtual {v2}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateCarrierText()V
 
-    .line 1742
+    .line 1706
     const-string/jumbo v2, "NetworkController"
 
     const-string/jumbo v3, "RegistrationListener onDeregistered : VoWifi is Disconnected "
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1744
+    .line 1708
     sget-boolean v2, Lcom/android/systemui/SystemUIRune;->SUPPORT_HIDE_SIGNAL_LEVEL_AT_WFC_STATE:Z
 
     if-nez v2, :cond_0
@@ -100,7 +100,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 1745
+    .line 1709
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
@@ -128,13 +128,13 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
-    .line 1746
+    .line 1710
     .local v0, "mobileSignalController":Lcom/android/systemui/statusbar/policy/MobileSignalController;
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->notifyListeners()V
 
     goto :goto_0
 
-    .line 1750
+    .line 1714
     .end local v0    # "mobileSignalController":Lcom/android/systemui/statusbar/policy/MobileSignalController;
     .end local v1    # "mobileSignalController$iterator":Ljava/util/Iterator;
     :cond_1
@@ -144,7 +144,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1735
+    .line 1699
     :cond_2
     return-void
 .end method
@@ -163,7 +163,7 @@
 
     const/4 v3, 0x1
 
-    .line 1706
+    .line 1670
     const-string/jumbo v2, "mmtel"
 
     invoke-virtual {p1, v2}, Lcom/sec/ims/ImsRegistration;->hasService(Ljava/lang/String;)Z
@@ -172,7 +172,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 1707
+    .line 1671
     invoke-virtual {p1}, Lcom/sec/ims/ImsRegistration;->getEpdgStatus()Z
 
     move-result v2
@@ -185,16 +185,16 @@
 
     if-ne v2, v3, :cond_2
 
-    .line 1710
+    .line 1674
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     iput-boolean v3, v2, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mVoWifiConnected:Z
 
-    .line 1711
+    .line 1675
     sput-boolean v3, Lcom/android/keyguard/CarrierText;->mVoWifiConnected:Z
 
-    .line 1712
+    .line 1676
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     invoke-static {v2}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->-get2(Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;)Landroid/content/Context;
@@ -209,20 +209,20 @@
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1713
+    .line 1677
     const-string/jumbo v2, "NetworkController"
 
     const-string/jumbo v3, "RegistrationListener onRegistered : VoWifi is Connected "
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1722
+    .line 1686
     :goto_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     invoke-virtual {v2}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->updateCarrierText()V
 
-    .line 1724
+    .line 1688
     sget-boolean v2, Lcom/android/systemui/SystemUIRune;->SUPPORT_HIDE_SIGNAL_LEVEL_AT_WFC_STATE:Z
 
     if-nez v2, :cond_1
@@ -231,7 +231,7 @@
 
     if-eqz v2, :cond_4
 
-    .line 1725
+    .line 1689
     :cond_1
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
@@ -259,13 +259,13 @@
 
     check-cast v0, Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
-    .line 1726
+    .line 1690
     .local v0, "mobileSignalController":Lcom/android/systemui/statusbar/policy/MobileSignalController;
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/MobileSignalController;->notifyListeners()V
 
     goto :goto_1
 
-    .line 1716
+    .line 1680
     .end local v0    # "mobileSignalController":Lcom/android/systemui/statusbar/policy/MobileSignalController;
     .end local v1    # "mobileSignalController$iterator":Ljava/util/Iterator;
     :cond_2
@@ -273,10 +273,10 @@
 
     iput-boolean v4, v2, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->mVoWifiConnected:Z
 
-    .line 1717
+    .line 1681
     sput-boolean v4, Lcom/android/keyguard/CarrierText;->mVoWifiConnected:Z
 
-    .line 1718
+    .line 1682
     iget-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl$RegistrationListener;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;
 
     invoke-static {v2}, Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;->-get2(Lcom/android/systemui/statusbar/policy/NetworkControllerImpl;)Landroid/content/Context;
@@ -291,7 +291,7 @@
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1719
+    .line 1683
     const-string/jumbo v2, "NetworkController"
 
     const-string/jumbo v3, "RegistrationListener onRegistered : VoLte is Connected "
@@ -300,7 +300,7 @@
 
     goto :goto_0
 
-    .line 1730
+    .line 1694
     :cond_3
     const-string/jumbo v2, "NetworkController"
 
@@ -308,7 +308,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1704
+    .line 1668
     :cond_4
     return-void
 .end method

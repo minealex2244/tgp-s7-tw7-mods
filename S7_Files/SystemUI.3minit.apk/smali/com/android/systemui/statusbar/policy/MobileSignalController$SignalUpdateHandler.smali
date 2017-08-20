@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
     .prologue
-    .line 2923
+    .line 2920
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$SignalUpdateHandler;->this$0:Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,16 +39,16 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 2926
+    .line 2923
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 2925
+    .line 2922
     :goto_0
     return-void
 
-    .line 2928
+    .line 2925
     :pswitch_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/MobileSignalController$SignalUpdateHandler;->this$0:Lcom/android/systemui/statusbar/policy/MobileSignalController;
 
@@ -56,7 +56,7 @@
 
     goto :goto_0
 
-    .line 2926
+    .line 2923
     :pswitch_data_0
     .packed-switch 0x46
         :pswitch_0

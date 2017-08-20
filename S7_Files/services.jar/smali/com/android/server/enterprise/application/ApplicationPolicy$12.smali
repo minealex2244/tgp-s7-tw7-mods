@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     .prologue
-    .line 6786
+    .line 6785
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$12;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,20 +40,20 @@
     .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    .line 6788
+    .line 6787
     const-string/jumbo v0, "ApplicationPolicy"
 
     const-string/jumbo v1, "registerECContainerAddedListener"
 
     invoke-static {v0, v1}, Lcom/android/server/enterprise/log/Log;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6790
+    .line 6789
     new-instance v0, Lcom/android/server/enterprise/application/ApplicationPolicy$12$1;
 
     invoke-direct {v0, p0}, Lcom/android/server/enterprise/application/ApplicationPolicy$12$1;-><init>(Lcom/android/server/enterprise/application/ApplicationPolicy$12;)V
 
     invoke-virtual {v0}, Lcom/android/server/enterprise/application/ApplicationPolicy$12$1;->start()V
 
-    .line 6787
+    .line 6786
     return-void
 .end method

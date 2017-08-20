@@ -116,7 +116,7 @@
     if-eqz v0, :cond_1
 
     .line 2001
-    const v0, 0x7f0b121c
+    const v0, 0x7f0b121b
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
 
@@ -130,7 +130,7 @@
 
     .line 2003
     :cond_1
-    const v0, 0x7f0b121d
+    const v0, 0x7f0b121c
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
 
@@ -154,7 +154,7 @@
     if-ne v0, v1, :cond_3
 
     .line 2011
-    const v0, 0x7f0b121e
+    const v0, 0x7f0b121d
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
 
@@ -162,7 +162,7 @@
 
     .line 2013
     :cond_3
-    const v0, 0x7f0b121f
+    const v0, 0x7f0b121e
 
     invoke-virtual {p0, v0}, Lcom/android/settings/wfd/WifiDisplaySettings$RoutePreference;->setSummary(I)V
 

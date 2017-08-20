@@ -234,7 +234,7 @@
 
     .line 814
     .local v5, "parentTitle":I
-    const v9, 0x7f0b085b
+    const v9, 0x7f0b0859
 
     invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -371,7 +371,7 @@
 
     .line 836
     :cond_1
-    const v9, 0x7f0b086e
+    const v9, 0x7f0b086c
 
     invoke-virtual {v6, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

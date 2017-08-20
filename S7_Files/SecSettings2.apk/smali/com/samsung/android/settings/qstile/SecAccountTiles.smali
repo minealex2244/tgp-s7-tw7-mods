@@ -89,7 +89,7 @@
     .line 106
     if-eqz p1, :cond_1
 
-    const v1, 0x7f0b17d7
+    const v1, 0x7f0b17d6
 
     .line 105
     :goto_0
@@ -100,7 +100,7 @@
     .line 107
     if-eqz p1, :cond_2
 
-    const v1, 0x7f0b17d8
+    const v1, 0x7f0b17d7
 
     .line 105
     :goto_1
@@ -159,13 +159,13 @@
 
     .line 106
     :cond_1
-    const v1, 0x7f0b17d9
+    const v1, 0x7f0b17d8
 
     goto :goto_0
 
     .line 107
     :cond_2
-    const v1, 0x7f0b17da
+    const v1, 0x7f0b17d9
 
     goto :goto_1
 .end method
@@ -209,7 +209,7 @@
     invoke-virtual {v1, v2}, Landroid/service/quicksettings/Tile;->setIcon(Landroid/graphics/drawable/Icon;)V
 
     .line 79
-    const v2, 0x7f0b1700
+    const v2, 0x7f0b16ff
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -391,7 +391,7 @@
     if-eqz v0, :cond_0
 
     .line 146
-    const v2, 0x7f0b17d8
+    const v2, 0x7f0b17d7
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/qstile/SecAccountTiles;->getText(I)Ljava/lang/CharSequence;
 
@@ -427,7 +427,7 @@
 
     .line 148
     :cond_0
-    const v2, 0x7f0b17da
+    const v2, 0x7f0b17d9
 
     invoke-virtual {p0, v2}, Lcom/samsung/android/settings/qstile/SecAccountTiles;->getText(I)Ljava/lang/CharSequence;
 
@@ -445,7 +445,7 @@
     .line 126
     iget-object v0, p0, Lcom/samsung/android/settings/qstile/SecAccountTiles;->mContext:Landroid/content/Context;
 
-    const v1, 0x7f0b1700
+    const v1, 0x7f0b16ff
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

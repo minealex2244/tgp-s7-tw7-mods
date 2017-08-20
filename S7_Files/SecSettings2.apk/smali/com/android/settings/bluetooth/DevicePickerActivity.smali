@@ -361,7 +361,7 @@
     .line 419
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mScanBtn:Landroid/widget/Button;
 
-    const v1, 0x7f0b158b
+    const v1, 0x7f0b158a
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 

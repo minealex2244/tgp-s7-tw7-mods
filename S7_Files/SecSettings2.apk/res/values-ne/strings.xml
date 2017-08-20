@@ -3548,7 +3548,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s संग जोडा मिलाउनको लागि पुष्टि गरिएको पासकुञ्जी %2$s हो।</string>
     <string name="bluetooth_incoming_pairing_msg">बाट&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>यो डिभाइसमा जोडी बनाउने?</string>
     <string name="bluetooth_display_passkey_pin_msg">जोडा मिलाउन %2$s मा %1$s प्रविष्ट गर्नुहोस्, त्यसपछि “फर्कनुहोस्” वा “प्रविष्ट गर्नुहोस्” ट्याप गर्नुहोस्।</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s मा जडान गर्न सकिँदैन। %2$s मार्फत जडान गर्ने प्रयास गर्नुहोस्।</string>
     <string name="bluetooth_connecting_error_message">%s संग जडान गर्न सकिएन।</string>
     <string name="bluetooth_preference_scan_title">स्क्यान</string>
     <string name="bluetooth_preference_paired_devices">जोडी मिलाइका उपकरणहरू</string>
@@ -3949,7 +3948,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">तपाईको सबै व्यक्तिगत जानकारी र डाउनलोड गरिएका अनुप्रयोगहरू मेटाइनेछ र पुन: प्राप्त हुन सक्नेछैन।</string>
     <string name="master_clear_final_button_text">सबै मेट्नुहोस्</string>
     <string name="master_clear_not_available">यो पाहुना प्रोफाइलसंग फ्याक्ट्री डाटा रिसेट गर्ने अनुमति छैन।</string>
-    <string name="master_clear_progress_title">रिसेट गर्नुहोस्</string>
+    <string name="master_clear_progress_title">रिसेट</string>
     <string name="master_clear_progress_text">कृपया प्रतीक्षा गर्नुहोस्…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB टेथरिङ</string>

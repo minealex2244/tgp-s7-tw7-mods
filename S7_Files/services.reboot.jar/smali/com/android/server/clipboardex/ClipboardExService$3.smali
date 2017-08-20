@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/clipboardex/ClipboardExService;
 
     .prologue
-    .line 583
+    .line 585
     iput-object p1, p0, Lcom/android/server/clipboardex/ClipboardExService$3;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     invoke-direct {p0}, Landroid/content/pm/IKnoxModeChangeObserver$Stub;-><init>()V
@@ -39,7 +39,7 @@
     .param p1, "personaId"    # I
 
     .prologue
-    .line 589
+    .line 591
     const-string/jumbo v0, "ClipboardExService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -62,7 +62,7 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secD(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 591
+    .line 593
     const-string/jumbo v0, "ClipboardExService"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -85,21 +85,21 @@
 
     invoke-static {v0, v1}, Landroid/sec/clipboard/util/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 593
+    .line 595
     invoke-static {p1}, Lcom/samsung/android/knox/SemPersonaManager;->isBBCContainer(I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 594
+    .line 596
     iget-object v0, p0, Lcom/android/server/clipboardex/ClipboardExService$3;->this$0:Lcom/android/server/clipboardex/ClipboardExService;
 
     const-string/jumbo v1, "SWITCHED"
 
     invoke-virtual {v0, p1, v1}, Lcom/android/server/clipboardex/ClipboardExService;->multiUserMode(ILjava/lang/String;)V
 
-    .line 587
+    .line 589
     :cond_0
     return-void
 .end method

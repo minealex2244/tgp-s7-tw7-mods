@@ -31,26 +31,26 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 6673
+    .line 6639
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6658
+    .line 6624
     iput-boolean v1, p0, Lcom/android/settings/Utils$OnlineHelpMenuState;->removeTile:Z
 
-    .line 6674
+    .line 6640
     iput-boolean v1, p0, Lcom/android/settings/Utils$OnlineHelpMenuState;->removeTile:Z
 
-    .line 6675
+    .line 6641
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/settings/Utils$OnlineHelpMenuState;->intent:Landroid/content/Intent;
 
-    .line 6676
+    .line 6642
     iput v1, p0, Lcom/android/settings/Utils$OnlineHelpMenuState;->titleRes:I
 
-    .line 6677
+    .line 6643
     iput v1, p0, Lcom/android/settings/Utils$OnlineHelpMenuState;->iconRes:I
 
-    .line 6673
+    .line 6639
     return-void
 .end method

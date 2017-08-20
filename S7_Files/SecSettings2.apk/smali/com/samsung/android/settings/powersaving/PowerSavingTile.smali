@@ -149,7 +149,7 @@
     invoke-virtual {v0, v5, v1}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
     .line 190
-    const v1, 0x7f0b0a2c
+    const v1, 0x7f0b0a2a
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/powersaving/PowerSavingTile;->getText(I)Ljava/lang/CharSequence;
 
@@ -168,7 +168,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
     .line 191
-    const v1, 0x7f0b0a2e
+    const v1, 0x7f0b0a2c
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/powersaving/PowerSavingTile;->getText(I)Ljava/lang/CharSequence;
 
@@ -187,7 +187,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
     .line 192
-    const v1, 0x7f0b0a2d
+    const v1, 0x7f0b0a2b
 
     invoke-virtual {p0, v1}, Lcom/samsung/android/settings/powersaving/PowerSavingTile;->getText(I)Ljava/lang/CharSequence;
 
@@ -1600,7 +1600,7 @@
 
     .prologue
     .line 163
-    const v0, 0x7f0b0a1b
+    const v0, 0x7f0b0a19
 
     invoke-virtual {p0, v0}, Lcom/samsung/android/settings/powersaving/PowerSavingTile;->getString(I)Ljava/lang/String;
 

@@ -19,7 +19,7 @@
     .locals 0
 
     .prologue
-    .line 869
+    .line 686
     invoke-direct {p0}, Lcom/android/settings/search/BaseSearchIndexProvider;-><init>()V
 
     return-void
@@ -44,28 +44,28 @@
     .end annotation
 
     .prologue
-    const v5, 0x7f0b0b9c
+    const v5, 0x7f0b0b9a
 
-    const v4, 0x7f0b0b8d
+    const v4, 0x7f0b0b8b
 
-    .line 883
+    .line 700
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 885
+    .line 702
     .local v2, "result":Ljava/util/List;, "Ljava/util/List<Lcom/android/settings/search/SearchIndexableRaw;>;"
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 888
+    .line 705
     .local v1, "res":Landroid/content/res/Resources;
     new-instance v0, Lcom/android/settings/search/SearchIndexableRaw;
 
     invoke-direct {v0, p1}, Lcom/android/settings/search/SearchIndexableRaw;-><init>(Landroid/content/Context;)V
 
-    .line 889
+    .line 706
     .local v0, "data":Lcom/android/settings/search/SearchIndexableRaw;
     invoke-static {}, Lcom/android/settings/Utils;->isDomesticSKTModel()Z
 
@@ -73,28 +73,28 @@
 
     if-eqz v3, :cond_0
 
-    .line 890
+    .line 707
     invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     iput-object v3, v0, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
-    .line 891
+    .line 708
     invoke-virtual {v1, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     iput-object v3, v0, Lcom/android/settings/search/SearchIndexableRaw;->screenTitle:Ljava/lang/String;
 
-    .line 896
+    .line 713
     :goto_0
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 898
+    .line 715
     return-object v2
 
-    .line 893
+    .line 710
     :cond_0
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -102,7 +102,7 @@
 
     iput-object v3, v0, Lcom/android/settings/search/SearchIndexableRaw;->title:Ljava/lang/String;
 
-    .line 894
+    .line 711
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -129,12 +129,12 @@
     .end annotation
 
     .prologue
-    .line 874
+    .line 691
     new-instance v0, Landroid/provider/SearchIndexableResource;
 
     invoke-direct {v0, p1}, Landroid/provider/SearchIndexableResource;-><init>(Landroid/content/Context;)V
 
-    .line 875
+    .line 692
     .local v0, "sir":Landroid/provider/SearchIndexableResource;
     const-class v1, Lcom/samsung/android/settings/GigaLteSettings;
 
@@ -144,12 +144,12 @@
 
     iput-object v1, v0, Landroid/provider/SearchIndexableResource;->className:Ljava/lang/String;
 
-    .line 876
+    .line 693
     sget v1, Lcom/android/settings/search/SearchIndexableResources;->NO_DATA_RES_ID:I
 
     iput v1, v0, Landroid/provider/SearchIndexableResource;->xmlResId:I
 
-    .line 877
+    .line 694
     const/4 v1, 0x1
 
     new-array v1, v1, [Landroid/provider/SearchIndexableResource;

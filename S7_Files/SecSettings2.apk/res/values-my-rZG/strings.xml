@@ -3548,7 +3548,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s ႏွင့္ တြဲရန္ ပတ္စ္ကီးမွာ %2$s ဟုတ္မဟုတ္ ေသခ်ာေစပါ။</string>
     <string name="bluetooth_incoming_pairing_msg">&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>မွ ဤကိရိယာျဖင့္ တြဲမည္လား?</string>
     <string name="bluetooth_display_passkey_pin_msg">%1$s သည္ %2$s အေပၚ၌ တြဲခ်ိတ္ရန္၊ ၿပီးေနာက္ ျပန္ထားပါ (သို႔) “ထည့္သြင္းပါ” ကိုႏွိပ္ပါ။</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s ႏွင့္ ခ်ိတ္ဆက္မရပါ။ %2$s မွ ခ်ိတ္ဆက္ၾကည့္ပါ။</string>
     <string name="bluetooth_connecting_error_message">%s သို႔ ခ်ိတ္ဆက္၍ မရပါ။</string>
     <string name="bluetooth_preference_scan_title">ရွာေဖြ</string>
     <string name="bluetooth_preference_paired_devices">တြဲဖက္ထားသည့္ကိရိယာမ်ား</string>
@@ -3949,7 +3948,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">သင့္ ပုဂၢိဳလ္ေရး အခ်က္အလက္ႏွင့္ ေဒါင္းလုတ္လုပ္ထားေသာ အပလီေကးရွင္း အားလံုး ဖ်က္ပစ္ၿပီး ျပန္ရႏိုင္ေတာ့မည္ မဟုတ္ပါ။</string>
     <string name="master_clear_final_button_text">အားလုံးဖ်က္ပစ္ပါ</string>
     <string name="master_clear_not_available">ဤဧည့္သည္၏ ပရိုဖိုင္တြင္ စက္ရုံထုတ္ ေဒတာပုံစံသို႔ ျပန္သတ္မွတ္ျခင္းကို ေဆာင္ရြက္ရန္ ခြင့္ျပဳခ်က္ မရွိပါ။</string>
-    <string name="master_clear_progress_title">ျပန္လည္သတ္မွတ္ပါ</string>
+    <string name="master_clear_progress_title">ျပန္သတ္မွတ္ပါ</string>
     <string name="master_clear_progress_text">ေက်းဇူးျပဳ၍ေစာင့္ပါ….</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB ျဖင့္ မွ်ေဝအသံုးျပဳျခင္း</string>

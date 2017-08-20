@@ -290,7 +290,7 @@
 
     aput-object v1, v6, v7
 
-    const v7, 0x7f0b096c
+    const v7, 0x7f0b096a
 
     invoke-virtual {p0, v7, v6}, Lcom/samsung/android/settings/nfc/NfcForegroundDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -318,7 +318,7 @@
 
     .line 75
     :cond_3
-    const v6, 0x7f0b096d
+    const v6, 0x7f0b096b
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/nfc/NfcForegroundDialog;->getString(I)Ljava/lang/String;
 

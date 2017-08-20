@@ -3686,7 +3686,6 @@ Nota: A sua impressão digital pode ser menos segura do que um padrão ou PIN fo
     <string name="bluetooth_confirm_passkey_msg">Confirmar que a chave de acesso é %2$s para emparelhar com %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">De&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Emparelhar com este dispositivo?</string>
     <string name="bluetooth_display_passkey_pin_msg">Introduza %1$s em %2$s para emparelhar, em seguida toque em Retrocesso ou Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Impossível estabelecer ligação com %1$s. Tente ligar a partir de %2$s.</string>
     <string name="bluetooth_connecting_error_message">Impossível ligar a %s.</string>
     <string name="bluetooth_preference_scan_title">Pesquisar</string>
     <string name="bluetooth_preference_paired_devices">Dispositivos emparelhados</string>

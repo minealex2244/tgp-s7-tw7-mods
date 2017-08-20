@@ -36,15 +36,15 @@
     .param p1, "this$0"    # Lcom/android/server/audio/AudioService;
 
     .prologue
-    .line 10737
+    .line 10735
     iput-object p1, p0, Lcom/android/server/audio/AudioService$ControllerService;->this$0:Lcom/android/server/audio/AudioService;
 
-    .line 10738
+    .line 10736
     const/4 v0, 0x0
 
     invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
-    .line 10737
+    .line 10735
     return-void
 .end method
 
@@ -54,33 +54,33 @@
     .locals 3
 
     .prologue
-    .line 10747
+    .line 10745
     const/4 v0, 0x1
 
     invoke-virtual {p0, v0}, Lcom/android/server/audio/AudioService$ControllerService;->onChange(Z)V
 
-    .line 10748
+    .line 10746
     iget-object v0, p0, Lcom/android/server/audio/AudioService$ControllerService;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v0}, Lcom/android/server/audio/AudioService;->-get27(Lcom/android/server/audio/AudioService;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 10749
+    .line 10747
     const-string/jumbo v1, "volume_controller_service_component"
 
-    .line 10748
+    .line 10746
     invoke-static {v1}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 10749
+    .line 10747
     const/4 v2, 0x0
 
-    .line 10748
+    .line 10746
     invoke-virtual {v0, v1, v2, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    .line 10746
+    .line 10744
     return-void
 .end method
 
@@ -93,34 +93,34 @@
 
     const/4 v2, 0x0
 
-    .line 10754
+    .line 10752
     iput v3, p0, Lcom/android/server/audio/AudioService$ControllerService;->mUid:I
 
-    .line 10755
+    .line 10753
     iput-object v2, p0, Lcom/android/server/audio/AudioService$ControllerService;->mComponent:Landroid/content/ComponentName;
 
-    .line 10756
+    .line 10754
     iget-object v2, p0, Lcom/android/server/audio/AudioService$ControllerService;->this$0:Lcom/android/server/audio/AudioService;
 
     invoke-static {v2}, Lcom/android/server/audio/AudioService;->-get27(Lcom/android/server/audio/AudioService;)Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    .line 10757
+    .line 10755
     const-string/jumbo v3, "volume_controller_service_component"
 
-    .line 10756
+    .line 10754
     invoke-static {v2, v3}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 10758
+    .line 10756
     .local v1, "setting":Ljava/lang/String;
     if-nez v1, :cond_0
 
     return-void
 
-    .line 10760
+    .line 10758
     :cond_0
     :try_start_0
     invoke-static {v1}, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
@@ -129,14 +129,14 @@
 
     iput-object v2, p0, Lcom/android/server/audio/AudioService$ControllerService;->mComponent:Landroid/content/ComponentName;
 
-    .line 10761
+    .line 10759
     iget-object v2, p0, Lcom/android/server/audio/AudioService$ControllerService;->mComponent:Landroid/content/ComponentName;
 
     if-nez v2, :cond_1
 
     return-void
 
-    .line 10762
+    .line 10760
     :cond_1
     iget-object v2, p0, Lcom/android/server/audio/AudioService$ControllerService;->this$0:Lcom/android/server/audio/AudioService;
 
@@ -148,7 +148,7 @@
 
     move-result-object v2
 
-    .line 10763
+    .line 10761
     iget-object v3, p0, Lcom/android/server/audio/AudioService$ControllerService;->mComponent:Landroid/content/ComponentName;
 
     invoke-virtual {v3}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
@@ -157,7 +157,7 @@
 
     const/4 v4, 0x0
 
-    .line 10762
+    .line 10760
     invoke-virtual {v2, v3, v4}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
     move-result-object v2
@@ -168,7 +168,7 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 10767
+    .line 10765
     :goto_0
     sget-boolean v2, Lcom/android/server/audio/AudioService;->DEBUG_VOL:Z
 
@@ -196,15 +196,15 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10753
+    .line 10751
     :cond_2
     return-void
 
-    .line 10764
+    .line 10762
     :catch_0
     move-exception v0
 
-    .line 10765
+    .line 10763
     .local v0, "e":Ljava/lang/Exception;
     const-string/jumbo v2, "AudioService"
 
@@ -219,7 +219,7 @@
     .locals 4
 
     .prologue
-    .line 10743
+    .line 10741
     const-string/jumbo v0, "{mUid=%d,mComponent=%s}"
 
     const/4 v1, 0x2

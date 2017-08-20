@@ -44,18 +44,18 @@
     .param p2, "accountManager"    # Landroid/accounts/AccountManager;
 
     .prologue
-    .line 666
+    .line 663
     iput-object p1, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 667
+    .line 664
     iput-object p2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountManager:Landroid/accounts/AccountManager;
 
-    .line 668
+    .line 665
     const-string/jumbo v0, "com.osp.app.signin"
 
-    .line 669
+    .line 666
     new-instance v1, Landroid/os/UserHandle;
 
     invoke-static {}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getCurrentUser()I
@@ -64,14 +64,14 @@
 
     invoke-direct {v1, v2}, Landroid/os/UserHandle;-><init>(I)V
 
-    .line 668
+    .line 665
     invoke-virtual {p2, v0, v1}, Landroid/accounts/AccountManager;->getAccountsByTypeAsUser(Ljava/lang/String;Landroid/os/UserHandle;)[Landroid/accounts/Account;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccounts:[Landroid/accounts/Account;
 
-    .line 666
+    .line 663
     return-void
 .end method
 
@@ -92,21 +92,21 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 674
+    .line 671
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccounts:[Landroid/accounts/Account;
 
     array-length v0, v0
 
     if-lez v0, :cond_0
 
-    .line 675
+    .line 672
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->-set0(Lcom/android/keyguard/KeyguardAbsKeyInputView;Z)Z
 
-    .line 680
+    .line 677
     :cond_0
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
@@ -124,11 +124,11 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 681
+    .line 678
     :cond_1
     return-void
 
-    .line 685
+    .line 682
     :cond_2
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountManager:Landroid/accounts/AccountManager;
 
@@ -138,7 +138,7 @@
 
     aget-object v1, v1, v3
 
-    .line 686
+    .line 683
     new-instance v6, Landroid/os/UserHandle;
 
     invoke-static {}, Lcom/android/keyguard/KeyguardUpdateMonitor;->getCurrentUser()I
@@ -153,10 +153,10 @@
 
     move-object v5, v2
 
-    .line 685
+    .line 682
     invoke-virtual/range {v0 .. v6}, Landroid/accounts/AccountManager;->confirmCredentialsAsUser(Landroid/accounts/Account;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;Landroid/os/UserHandle;)Landroid/accounts/AccountManagerFuture;
 
-    .line 672
+    .line 669
     return-void
 .end method
 
@@ -175,7 +175,7 @@
     .end annotation
 
     .prologue
-    .line 696
+    .line 693
     .local p1, "future":Landroid/accounts/AccountManagerFuture;, "Landroid/accounts/AccountManagerFuture<Landroid/os/Bundle;>;"
     const-string/jumbo v2, "KeyguardAbsKeyInputView"
 
@@ -183,7 +183,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 698
+    .line 695
     :try_start_0
     invoke-interface {p1}, Landroid/accounts/AccountManagerFuture;->getResult()Ljava/lang/Object;
 
@@ -191,7 +191,7 @@
 
     check-cast v1, Landroid/os/Bundle;
 
-    .line 699
+    .line 696
     .local v1, "result":Landroid/os/Bundle;
     const-string/jumbo v2, "intent"
 
@@ -201,7 +201,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 700
+    .line 697
     iget-object v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
     const/4 v3, 0x1
@@ -213,7 +213,7 @@
     .catch Landroid/accounts/AuthenticatorException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 705
+    .line 702
     :cond_0
     iget v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountIndex:I
 
@@ -221,19 +221,19 @@
 
     iput v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountIndex:I
 
-    .line 706
+    .line 703
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->next()V
 
-    .line 695
+    .line 692
     .end local v1    # "result":Landroid/os/Bundle;
     :goto_0
     return-void
 
-    .line 703
+    .line 700
     :catch_0
     move-exception v0
 
-    .line 705
+    .line 702
     .local v0, "ignored":Ljava/lang/Exception;
     iget v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountIndex:I
 
@@ -241,27 +241,27 @@
 
     iput v2, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountIndex:I
 
-    .line 706
+    .line 703
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->next()V
 
     goto :goto_0
 
-    .line 704
+    .line 701
     .end local v0    # "ignored":Ljava/lang/Exception;
     :catchall_0
     move-exception v2
 
-    .line 705
+    .line 702
     iget v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountIndex:I
 
     add-int/lit8 v3, v3, 0x1
 
     iput v3, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountIndex:I
 
-    .line 706
+    .line 703
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->next()V
 
-    .line 704
+    .line 701
     throw v2
 .end method
 
@@ -271,17 +271,17 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 690
+    .line 687
     iget-object v0, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->this$0:Lcom/android/keyguard/KeyguardAbsKeyInputView;
 
     invoke-static {v0, v1}, Lcom/android/keyguard/KeyguardAbsKeyInputView;->-set0(Lcom/android/keyguard/KeyguardAbsKeyInputView;Z)Z
 
-    .line 691
+    .line 688
     iput v1, p0, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->mAccountIndex:I
 
-    .line 692
+    .line 689
     invoke-direct {p0}, Lcom/android/keyguard/KeyguardAbsKeyInputView$AccountAnalyzer;->next()V
 
-    .line 689
+    .line 686
     return-void
 .end method

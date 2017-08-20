@@ -76,27 +76,27 @@
     .param p3, "filter"    # I
 
     .prologue
-    .line 429
+    .line 432
     invoke-virtual {p0, p2}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;->setTitle(Ljava/lang/String;)V
 
-    .line 430
+    .line 433
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getListAdapter()Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;->addPreferenceGroup(Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;)Z
 
-    .line 431
+    .line 434
     invoke-virtual {p0, p3}, Lcom/android/settings/bluetooth/DevicePickerFragment;->setFilter(I)V
 
-    .line 432
+    .line 435
     invoke-virtual {p0, p1}, Lcom/android/settings/bluetooth/DevicePickerFragment;->setDeviceListGroup(Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;)V
 
-    .line 433
+    .line 436
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLocalManager:Lcom/android/settingslib/bluetooth/LocalBluetoothManager;
 
     invoke-virtual {v0}, Lcom/android/settingslib/bluetooth/LocalBluetoothManager;->getCachedDeviceManager()Lcom/android/settingslib/bluetooth/CachedBluetoothDeviceManager;
@@ -105,10 +105,10 @@
 
     invoke-virtual {v0}, Lcom/android/settingslib/bluetooth/CachedBluetoothDeviceManager;->clearNonBondedDevices()V
 
-    .line 434
+    .line 437
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->addCachedDevices()V
 
-    .line 428
+    .line 431
     return-void
 .end method
 
@@ -117,7 +117,7 @@
     .param p1, "device"    # Landroid/bluetooth/BluetoothDevice;
 
     .prologue
-    .line 444
+    .line 447
     sget-boolean v1, Lcom/android/settings/bluetooth/DevicePickerFragment;->DEBUG:Z
 
     if-eqz v1, :cond_0
@@ -148,18 +148,18 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 445
+    .line 448
     :cond_0
     sget-boolean v1, Lcom/android/settings/bluetooth/DevicePickerActivity;->mMyPlacesCalled:Z
 
     if-eqz v1, :cond_1
 
-    .line 447
+    .line 450
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 448
+    .line 451
     .local v0, "intent":Landroid/content/Intent;
     const-string/jumbo v1, "DeviceName"
 
@@ -169,7 +169,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 449
+    .line 452
     const-string/jumbo v1, "MacAddress"
 
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
@@ -178,7 +178,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 450
+    .line 453
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -187,11 +187,11 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 443
+    .line 446
     :goto_0
     return-void
 
-    .line 452
+    .line 455
     .end local v0    # "intent":Landroid/content/Intent;
     :cond_1
     new-instance v0, Landroid/content/Intent;
@@ -200,13 +200,13 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 453
+    .line 456
     .restart local v0    # "intent":Landroid/content/Intent;
     const-string/jumbo v1, "android.bluetooth.device.extra.DEVICE"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 454
+    .line 457
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLaunchPackage:Ljava/lang/String;
 
     if-eqz v1, :cond_2
@@ -215,20 +215,20 @@
 
     if-eqz v1, :cond_2
 
-    .line 455
+    .line 458
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLaunchPackage:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLaunchClass:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 457
+    .line 460
     :cond_2
     const/high16 v1, 0x10000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 458
+    .line 461
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -242,12 +242,12 @@
     .locals 3
 
     .prologue
-    .line 463
+    .line 466
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mDiscoveryHelpMsgPreference:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     if-nez v0, :cond_0
 
-    .line 464
+    .line 467
     new-instance v0, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
@@ -258,14 +258,14 @@
 
     iput-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mDiscoveryHelpMsgPreference:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
-    .line 465
+    .line 468
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mDiscoveryHelpMsgPreference:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     const v1, 0x7f0401d6
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;->setLayoutResource(I)V
 
-    .line 468
+    .line 471
     :cond_0
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mDiscoveryHelpMsgPreference:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
@@ -281,7 +281,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;->setTitle(Ljava/lang/String;)V
 
-    .line 470
+    .line 473
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mDiscoveryHelpMsgPreference:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     return-object v0
@@ -292,10 +292,10 @@
     .param p1, "isShown"    # Z
 
     .prologue
-    .line 482
+    .line 485
     if-eqz p1, :cond_1
 
-    .line 483
+    .line 486
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mDiscoveryHelpMsgPreference:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     if-eqz v0, :cond_0
@@ -308,7 +308,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;->removePreferenceGroup(Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;)V
 
-    .line 484
+    .line 487
     :cond_0
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getListAdapter()Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;
 
@@ -320,11 +320,11 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;->addPreferenceGroup(Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;)Z
 
-    .line 481
+    .line 484
     :goto_0
     return-void
 
-    .line 486
+    .line 489
     :cond_1
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mNoItemPreferenceGroup:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
@@ -338,7 +338,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;->removePreferenceGroup(Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;)V
 
-    .line 487
+    .line 490
     :cond_2
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getListAdapter()Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;
 
@@ -357,12 +357,12 @@
     .locals 2
 
     .prologue
-    .line 474
+    .line 477
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mNoItemPreferenceGroup:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     if-nez v0, :cond_0
 
-    .line 475
+    .line 478
     new-instance v0, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
@@ -373,14 +373,14 @@
 
     iput-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mNoItemPreferenceGroup:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
-    .line 476
+    .line 479
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mNoItemPreferenceGroup:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     const v1, 0x7f0401cf
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;->setLayoutResource(I)V
 
-    .line 478
+    .line 481
     :cond_0
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mNoItemPreferenceGroup:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
@@ -475,7 +475,7 @@
 
     iget v3, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mFilterType:I
 
-    const v4, 0x7f0b11fb
+    const v4, 0x7f0b11fa
 
     invoke-direct {p0, v2, v4, v3}, Lcom/android/settings/bluetooth/DevicePickerFragment;->addDeviceCategory(Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;II)V
 
@@ -632,7 +632,7 @@
     .locals 1
 
     .prologue
-    .line 238
+    .line 241
     const/16 v0, 0x19
 
     return v0
@@ -643,7 +643,7 @@
     .param p1, "preference"    # Lcom/android/settings/bluetooth/BluetoothDevicePreference;
 
     .prologue
-    .line 178
+    .line 181
     return-void
 .end method
 
@@ -652,10 +652,10 @@
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
 
     .prologue
-    .line 173
+    .line 176
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 174
+    .line 177
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getListController()Lcom/samsung/android/settings/bluetooth/BluetoothExpListController;
 
     move-result-object v0
@@ -664,7 +664,7 @@
 
     invoke-virtual {v0, v1}, Lcom/samsung/android/settings/bluetooth/BluetoothExpListController;->setListDivider(Landroid/graphics/drawable/InsetDrawable;)V
 
-    .line 172
+    .line 175
     return-void
 .end method
 
@@ -673,10 +673,10 @@
     .param p1, "bluetoothState"    # I
 
     .prologue
-    .line 344
+    .line 347
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onBluetoothStateChanged(I)V
 
-    .line 345
+    .line 348
     const-string/jumbo v0, "DevicePickerFragment"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -699,15 +699,15 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 347
+    .line 350
     const/16 v0, 0xa
 
     if-ne p1, v0, :cond_0
 
-    .line 348
+    .line 351
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->finish()V
 
-    .line 343
+    .line 346
     :cond_0
     return-void
 .end method
@@ -717,10 +717,10 @@
     .param p1, "newConfig"    # Landroid/content/res/Configuration;
 
     .prologue
-    .line 294
+    .line 297
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 293
+    .line 296
     return-void
 .end method
 
@@ -735,15 +735,15 @@
 
     const/4 v3, 0x1
 
-    .line 243
+    .line 246
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 244
+    .line 247
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    .line 245
+    .line 248
     .local v0, "activity":Landroid/app/Activity;
     invoke-static {}, Lcom/android/settings/Utils;->isTablet()Z
 
@@ -751,21 +751,21 @@
 
     if-eqz v1, :cond_0
 
-    .line 246
+    .line 249
     invoke-virtual {p0, v4}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 258
+    .line 261
     :goto_0
     invoke-virtual {p0, v3}, Lcom/android/settings/bluetooth/DevicePickerFragment;->setHasOptionsMenu(Z)V
 
-    .line 242
+    .line 245
     return-void
 
-    .line 249
+    .line 252
     :cond_0
     invoke-virtual {v0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
@@ -773,12 +773,12 @@
 
     invoke-virtual {v1, v2, v2}, Landroid/app/ActionBar;->setDisplayOptions(II)V
 
-    .line 250
+    .line 253
     sget-boolean v1, Lcom/android/settings/bluetooth/DevicePickerActivity;->mMyPlacesCalled:Z
 
     if-eqz v1, :cond_1
 
-    .line 251
+    .line 254
     invoke-virtual {v0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v1
@@ -787,7 +787,7 @@
 
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setTitle(I)V
 
-    .line 255
+    .line 258
     :goto_1
     invoke-virtual {v0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
@@ -795,7 +795,7 @@
 
     invoke-virtual {v1, v3}, Landroid/app/ActionBar;->setHomeButtonEnabled(Z)V
 
-    .line 256
+    .line 259
     invoke-virtual {v0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v1
@@ -804,7 +804,7 @@
 
     goto :goto_0
 
-    .line 253
+    .line 256
     :cond_1
     invoke-virtual {v0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
@@ -827,30 +827,30 @@
 
     const/4 v3, 0x0
 
-    .line 184
+    .line 187
     invoke-static {}, Lcom/android/settings/Utils;->isTablet()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 185
+    .line 188
     const-string/jumbo v1, "DevicePickerFragment"
 
     const-string/jumbo v2, "onCreateOptionsMenu :: do not creat option menu on Tablet!!"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 186
+    .line 189
     return-void
 
-    .line 189
+    .line 192
     :cond_0
     const v1, 0x7f140002
 
     invoke-virtual {p2, v1, p1}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    .line 190
+    .line 193
     const v1, 0x7f110144
 
     invoke-interface {p1, v1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
@@ -859,23 +859,23 @@
 
     iput-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
-    .line 191
+    .line 194
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     invoke-interface {v1, v5}, Landroid/view/MenuItem;->setActionView(I)Landroid/view/MenuItem;
 
-    .line 193
+    .line 196
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLocalAdapter:Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;
 
     invoke-virtual {v1}, Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;->isDiscovering()Z
 
     move-result v0
 
-    .line 194
+    .line 197
     .local v0, "mIsDiscovering":Z
     if-eqz v0, :cond_1
 
-    const v1, 0x7f0b158b
+    const v1, 0x7f0b158a
 
     :goto_0
     invoke-interface {p1, v3, v4, v3, v1}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
@@ -884,53 +884,53 @@
 
     iput-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mScan:Landroid/view/MenuItem;
 
-    .line 195
+    .line 198
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mScan:Landroid/view/MenuItem;
 
     const/4 v2, 0x2
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    .line 197
+    .line 200
     if-eqz v0, :cond_2
 
-    .line 198
+    .line 201
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     invoke-interface {v1, v4}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
-    .line 199
+    .line 202
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     invoke-interface {v1, v5}, Landroid/view/MenuItem;->setActionView(I)Landroid/view/MenuItem;
 
-    .line 205
+    .line 208
     :goto_1
     invoke-super {p0, p1, p2}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
-    .line 183
+    .line 186
     return-void
 
-    .line 194
+    .line 197
     :cond_1
     const v1, 0x7f0b1074
 
     goto :goto_0
 
-    .line 201
+    .line 204
     :cond_2
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     invoke-interface {v1, v3}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
-    .line 202
+    .line 205
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setActionView(Landroid/view/View;)Landroid/view/MenuItem;
 
-    .line 203
+    .line 206
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     invoke-interface {v1, v3}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
@@ -943,10 +943,10 @@
     .param p1, "cachedDevice"    # Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
 
     .prologue
-    .line 440
+    .line 443
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onDeviceAdded(Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;)V
 
-    .line 439
+    .line 442
     return-void
 .end method
 
@@ -956,7 +956,7 @@
     .param p2, "bondState"    # I
 
     .prologue
-    .line 328
+    .line 331
     const-string/jumbo v1, "DevicePickerFragment"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1005,17 +1005,17 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 329
+    .line 332
     const/16 v1, 0xc
 
     if-ne p2, v1, :cond_0
 
-    .line 330
+    .line 333
     invoke-virtual {p1}, Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;->getDevice()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v0
 
-    .line 331
+    .line 334
     .local v0, "device":Landroid/bluetooth/BluetoothDevice;
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mSelectedDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -1025,23 +1025,23 @@
 
     if-eqz v1, :cond_0
 
-    .line 332
+    .line 335
     sget-boolean v1, Lcom/android/settings/bluetooth/DevicePickerActivity;->mMyPlacesCalled:Z
 
     if-nez v1, :cond_0
 
-    .line 333
+    .line 336
     iget-boolean v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mCallFromHeadset:Z
 
     if-nez v1, :cond_0
 
-    .line 334
+    .line 337
     invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->sendDevicePickedIntent(Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 335
+    .line 338
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->finish()V
 
-    .line 327
+    .line 330
     .end local v0    # "device":Landroid/bluetooth/BluetoothDevice;
     :cond_0
     return-void
@@ -1052,7 +1052,7 @@
     .param p1, "btPreference"    # Lcom/android/settings/bluetooth/BluetoothDevicePreference;
 
     .prologue
-    .line 299
+    .line 302
     sget-boolean v0, Lcom/android/settings/bluetooth/DevicePickerFragment;->DEBUG:Z
 
     if-eqz v0, :cond_0
@@ -1097,13 +1097,13 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 300
+    .line 303
     :cond_0
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLocalAdapter:Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;
 
     invoke-virtual {v0}, Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;->stopScanning()V
 
-    .line 301
+    .line 304
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1116,7 +1116,7 @@
 
     invoke-static {v0, v1}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->persistSelectedDeviceInPicker(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 303
+    .line 306
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
@@ -1127,20 +1127,20 @@
 
     const-string/jumbo v1, "com.android.bluetooth"
 
-    .line 304
+    .line 307
     const-string/jumbo v2, "BDCC"
 
     const-string/jumbo v3, "DevicePicker"
 
-    .line 303
+    .line 306
     invoke-static {v0, v1, v2, v3}, Lcom/samsung/android/settingslib/bluetooth/GSIMBluetoothLogger;->insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 306
+    .line 309
     sget-boolean v0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mMyPlacesCalled:Z
 
     if-eqz v0, :cond_2
 
-    .line 307
+    .line 310
     invoke-virtual {p1}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->getCachedDevice()Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
 
     move-result-object v0
@@ -1151,41 +1151,41 @@
 
     if-eqz v0, :cond_1
 
-    .line 308
+    .line 311
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mSelectedDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->sendDevicePickedIntent(Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 309
+    .line 312
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->finish()V
 
-    .line 298
+    .line 301
     :goto_0
     return-void
 
-    .line 311
+    .line 314
     :cond_1
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mSelectedDevice:Landroid/bluetooth/BluetoothDevice;
 
     sput-object v0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mSelected:Landroid/bluetooth/BluetoothDevice;
 
-    .line 312
+    .line 315
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onDevicePreferenceClick(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)V
 
     goto :goto_0
 
-    .line 314
+    .line 317
     :cond_2
     iget-boolean v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mCallFromHeadset:Z
 
     if-eqz v0, :cond_3
 
-    .line 315
+    .line 318
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onDevicePreferenceClickForHeadset(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)V
 
     goto :goto_0
 
-    .line 317
+    .line 320
     :cond_3
     invoke-virtual {p1}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->getCachedDevice()Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;
 
@@ -1195,29 +1195,29 @@
 
     move-result v0
 
-    .line 318
+    .line 321
     const/16 v1, 0xc
 
-    .line 317
+    .line 320
     if-eq v0, v1, :cond_4
 
-    .line 318
+    .line 321
     iget-boolean v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mNeedAuth:Z
 
     if-eqz v0, :cond_4
 
-    .line 322
+    .line 325
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onDevicePreferenceClick(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)V
 
     goto :goto_0
 
-    .line 319
+    .line 322
     :cond_4
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mSelectedDevice:Landroid/bluetooth/BluetoothDevice;
 
     invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->sendDevicePickedIntent(Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 320
+    .line 323
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->finish()V
 
     goto :goto_0
@@ -1230,21 +1230,21 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 210
+    .line 213
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v0
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 229
+    .line 232
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
     return v0
 
-    .line 212
+    .line 215
     :sswitch_0
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLocalAdapter:Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;
 
@@ -1256,7 +1256,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 213
+    .line 216
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLocalAdapter:Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;
 
     invoke-virtual {v0}, Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;->isDiscovering()Z
@@ -1265,24 +1265,24 @@
 
     if-eqz v0, :cond_1
 
-    .line 214
+    .line 217
     const-string/jumbo v0, "DevicePickerFragment"
 
     const-string/jumbo v1, "onOptionsItemSelected :: Stop scanning"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 215
+    .line 218
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLocalAdapter:Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;
 
     invoke-virtual {v0}, Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;->stopScanning()V
 
-    .line 221
+    .line 224
     :cond_0
     :goto_0
     return v2
 
-    .line 217
+    .line 220
     :cond_1
     const-string/jumbo v0, "DevicePickerFragment"
 
@@ -1290,19 +1290,19 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 218
+    .line 221
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->startScanning()V
 
     goto :goto_0
 
-    .line 224
+    .line 227
     :sswitch_1
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->finish()V
 
-    .line 225
+    .line 228
     return v2
 
-    .line 210
+    .line 213
     nop
 
     :sswitch_data_0
@@ -1320,29 +1320,29 @@
 
     const/4 v0, 0x0
 
-    .line 275
+    .line 278
     invoke-super {p0}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onPause()V
 
-    .line 276
+    .line 279
     const-string/jumbo v1, "DevicePickerFragment"
 
     const-string/jumbo v2, "onPause"
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 278
+    .line 281
     invoke-static {}, Lcom/android/settings/Utils;->isTablet()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 279
+    .line 282
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mAvailableDevicesCategory:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     invoke-virtual {v1, v0}, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;->setProgress(Z)V
 
-    .line 289
+    .line 292
     :cond_0
     :goto_0
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mAvailableDevicesCategory:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
@@ -1355,37 +1355,37 @@
 
     const/4 v0, 0x1
 
-    .line 290
+    .line 293
     .local v0, "isShown":Z
     :cond_1
     invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->setNoDeviceLayout(Z)V
 
-    .line 274
+    .line 277
     return-void
 
-    .line 281
+    .line 284
     .end local v0    # "isShown":Z
     :cond_2
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     if-eqz v1, :cond_3
 
-    .line 282
+    .line 285
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
-    .line 283
+    .line 286
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     invoke-interface {v1, v3}, Landroid/view/MenuItem;->setActionView(Landroid/view/View;)Landroid/view/MenuItem;
 
-    .line 284
+    .line 287
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mProgressItem:Landroid/view/MenuItem;
 
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    .line 286
+    .line 289
     :cond_3
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mScan:Landroid/view/MenuItem;
 
@@ -1412,10 +1412,10 @@
 
     const/4 v3, 0x2
 
-    .line 404
+    .line 407
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onProfileStateChanged(Lcom/android/settingslib/bluetooth/CachedBluetoothDevice;Lcom/android/settingslib/bluetooth/LocalBluetoothProfile;II)V
 
-    .line 405
+    .line 408
     const-string/jumbo v0, "DevicePickerFragment"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1458,7 +1458,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 407
+    .line 410
     sget-boolean v0, Lcom/android/settings/bluetooth/DevicePickerActivity;->mMyPlacesCalled:Z
 
     if-eqz v0, :cond_1
@@ -1467,63 +1467,63 @@
 
     if-eqz v0, :cond_1
 
-    .line 408
+    .line 411
     if-ne p3, v3, :cond_0
 
-    .line 409
+    .line 412
     sget-object v0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mSelected:Landroid/bluetooth/BluetoothDevice;
 
     invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->sendDevicePickedIntent(Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 410
+    .line 413
     sput-object v4, Lcom/android/settings/bluetooth/DevicePickerFragment;->mSelected:Landroid/bluetooth/BluetoothDevice;
 
-    .line 411
+    .line 414
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->finish()V
 
-    .line 403
+    .line 406
     :cond_0
     :goto_0
     return-void
 
-    .line 414
+    .line 417
     :cond_1
     instance-of v0, p2, Lcom/android/settingslib/bluetooth/HeadsetProfile;
 
     if-eqz v0, :cond_2
 
-    .line 415
+    .line 418
     if-ne p3, v3, :cond_0
 
-    .line 416
+    .line 419
     iget v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mFilterType:I
 
     const/4 v1, 0x5
 
     if-ne v0, v1, :cond_0
 
-    .line 417
+    .line 420
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->finish()V
 
     goto :goto_0
 
-    .line 419
+    .line 422
     :cond_2
     instance-of v0, p2, Lcom/android/settingslib/bluetooth/A2dpProfile;
 
     if-eqz v0, :cond_0
 
-    .line 420
+    .line 423
     if-ne p3, v3, :cond_0
 
-    .line 421
+    .line 424
     iget v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mFilterType:I
 
     const/4 v1, 0x6
 
     if-ne v0, v1, :cond_0
 
-    .line 422
+    .line 425
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->finish()V
 
     goto :goto_0
@@ -1537,23 +1537,23 @@
 
     const/4 v1, 0x0
 
-    .line 264
+    .line 267
     invoke-super {p0}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onResume()V
 
-    .line 265
+    .line 268
     iget-boolean v2, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mStartScanOnResume:Z
 
     if-eqz v2, :cond_0
 
-    .line 266
+    .line 269
     iget-object v2, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLocalAdapter:Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;
 
     invoke-virtual {v2, v0}, Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;->startScanning(Z)V
 
-    .line 267
+    .line 270
     iput-boolean v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mStartScanOnResume:Z
 
-    .line 269
+    .line 272
     :cond_0
     iget-object v2, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mAvailableDevicesCategory:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
@@ -1563,19 +1563,19 @@
 
     if-nez v2, :cond_1
 
-    .line 270
+    .line 273
     .local v0, "isShown":Z
     :goto_0
     invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->setNoDeviceLayout(Z)V
 
-    .line 263
+    .line 266
     return-void
 
     .end local v0    # "isShown":Z
     :cond_1
     move v0, v1
 
-    .line 269
+    .line 272
     goto :goto_0
 .end method
 
@@ -1588,10 +1588,10 @@
 
     const/4 v5, 0x0
 
-    .line 354
+    .line 357
     invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DeviceListPreferenceFragment;->onScanningStateChanged(Z)V
 
-    .line 355
+    .line 358
     const-string/jumbo v4, "DevicePickerFragment"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -1614,47 +1614,47 @@
 
     invoke-static {v4, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 357
+    .line 360
     iget-object v4, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mScan:Landroid/view/MenuItem;
 
     if-eqz v4, :cond_0
 
-    .line 358
+    .line 361
     iget-object v6, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mScan:Landroid/view/MenuItem;
 
     if-eqz p1, :cond_1
 
-    const v4, 0x7f0b158b
+    const v4, 0x7f0b158a
 
     :goto_0
     invoke-interface {v6, v4}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
-    .line 361
+    .line 364
     :cond_0
     if-nez p1, :cond_9
 
-    .line 362
+    .line 365
     iget-object v4, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mAvailableDevicesCategory:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     if-nez v4, :cond_2
 
-    .line 363
+    .line 366
     const-string/jumbo v4, "DevicePickerFragment"
 
     const-string/jumbo v5, "mAvailableDevicesCategory is null!"
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 364
+    .line 367
     return-void
 
-    .line 358
+    .line 361
     :cond_1
     const v4, 0x7f0b1074
 
     goto :goto_0
 
-    .line 366
+    .line 369
     :cond_2
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getListAdapter()Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;
 
@@ -1664,10 +1664,10 @@
 
     if-nez v4, :cond_8
 
-    .line 367
+    .line 370
     const/4 v0, 0x0
 
-    .line 368
+    .line 371
     .local v0, "availableDeviceCount":I
     const/4 v2, 0x0
 
@@ -1681,14 +1681,14 @@
 
     if-ge v2, v4, :cond_4
 
-    .line 369
+    .line 372
     iget-object v4, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mAvailableDevicesCategory:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     invoke-virtual {v4, v2}, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;->getPreference(I)Lcom/android/settings/bluetooth/BluetoothDevicePreference;
 
     move-result-object v1
 
-    .line 370
+    .line 373
     .local v1, "devicePref":Lcom/android/settings/bluetooth/BluetoothDevicePreference;
     if-eqz v1, :cond_3
 
@@ -1704,16 +1704,16 @@
 
     if-eq v4, v6, :cond_3
 
-    .line 371
+    .line 374
     add-int/lit8 v0, v0, 0x1
 
-    .line 368
+    .line 371
     :cond_3
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 375
+    .line 378
     .end local v1    # "devicePref":Lcom/android/settings/bluetooth/BluetoothDevicePreference;
     :cond_4
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
@@ -1726,15 +1726,15 @@
 
     const-string/jumbo v6, "com.android.bluetooth"
 
-    .line 376
+    .line 379
     const-string/jumbo v7, "BSDC"
 
     mul-int/lit16 v8, v0, 0x3e8
 
-    .line 375
+    .line 378
     invoke-static {v4, v6, v7, v8}, Lcom/samsung/android/settingslib/bluetooth/GSIMBluetoothLogger;->insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 378
+    .line 381
     iget-object v4, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mAvailableDevicesCategory:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     invoke-virtual {v4}, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;->getPreferenceCount()I
@@ -1743,12 +1743,12 @@
 
     if-nez v4, :cond_7
 
-    .line 379
+    .line 382
     .local v3, "isShown":Z
     :goto_2
     invoke-direct {p0, v3}, Lcom/android/settings/bluetooth/DevicePickerFragment;->setNoDeviceLayout(Z)V
 
-    .line 396
+    .line 399
     .end local v0    # "availableDeviceCount":I
     .end local v2    # "i":I
     .end local v3    # "isShown":Z
@@ -1760,7 +1760,7 @@
 
     invoke-virtual {v4}, Landroid/app/Activity;->invalidateOptionsMenu()V
 
-    .line 397
+    .line 400
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
@@ -1771,7 +1771,7 @@
 
     if-eqz v4, :cond_6
 
-    .line 398
+    .line 401
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
@@ -1780,7 +1780,7 @@
 
     invoke-virtual {v4, p1}, Lcom/android/settings/bluetooth/DevicePickerActivity;->ScanBtnStateUpdate(Z)V
 
-    .line 353
+    .line 356
     :cond_6
     return-void
 
@@ -1789,10 +1789,10 @@
     :cond_7
     move v3, v5
 
-    .line 378
+    .line 381
     goto :goto_2
 
-    .line 381
+    .line 384
     .end local v0    # "availableDeviceCount":I
     .end local v2    # "i":I
     :cond_8
@@ -1804,7 +1804,7 @@
 
     goto :goto_3
 
-    .line 384
+    .line 387
     :cond_9
     iget-object v4, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mNoItemPreferenceGroup:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
@@ -1818,14 +1818,14 @@
 
     invoke-virtual {v4, v5}, Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;->removePreferenceGroup(Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;)V
 
-    .line 386
+    .line 389
     :cond_a
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->removeSelectedGroupDevices()V
 
-    .line 387
+    .line 390
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->addCachedDevices()V
 
-    .line 390
+    .line 393
     iget-object v4, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mDiscoveryHelpMsgPreference:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     if-eqz v4, :cond_5
@@ -1842,7 +1842,7 @@
 
     if-nez v4, :cond_5
 
-    .line 391
+    .line 394
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getListAdapter()Lcom/samsung/android/settings/bluetooth/BluetoothExpListAdapter;
 
     move-result-object v4
@@ -1877,8 +1877,15 @@
     .line 162
     return-void
 
-    .line 164
+    .line 165
     :cond_0
+    invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_1
+
+    .line 166
     invoke-virtual {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -1889,7 +1896,7 @@
 
     const-string/jumbo v2, "com.android.bluetooth"
 
-    .line 165
+    .line 167
     const-string/jumbo v3, "BSDC"
 
     iget-object v4, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mAvailableDevicesCategory:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
@@ -1900,23 +1907,24 @@
 
     add-int/lit8 v4, v4, -0x1
 
-    .line 164
+    .line 166
     invoke-static {v1, v2, v3, v4}, Lcom/samsung/android/settingslib/bluetooth/GSIMBluetoothLogger;->insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)V
 
-    .line 167
+    .line 170
+    :cond_1
     iget-object v1, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mAvailableDevicesCategory:Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;
 
     invoke-virtual {v1}, Lcom/samsung/android/settings/bluetooth/BluetoothDevicePreferenceGroup;->getPreferenceCount()I
 
     move-result v1
 
-    if-nez v1, :cond_1
+    if-nez v1, :cond_2
 
     const/4 v0, 0x1
 
-    .line 168
+    .line 171
     .local v0, "isShown":Z
-    :cond_1
+    :cond_2
     invoke-direct {p0, v0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->setNoDeviceLayout(Z)V
 
     .line 159
@@ -1927,13 +1935,13 @@
     .locals 2
 
     .prologue
-    .line 233
+    .line 236
     iget-object v0, p0, Lcom/android/settings/bluetooth/DevicePickerFragment;->mLocalAdapter:Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/android/settingslib/bluetooth/LocalBluetoothAdapter;->startScanning(Z)V
 
-    .line 232
+    .line 235
     return-void
 .end method

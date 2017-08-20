@@ -3686,7 +3686,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">សោ​សម្ងាត់​បញ្ជាក់​គឺ %2$s ដើម្បី​ផ្គូ​ជាមួយ %1$s។</string>
     <string name="bluetooth_incoming_pairing_msg">ពី&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>ផ្គូ​ជាមួយ​ឧបករណ៍​នេះ?</string>
     <string name="bluetooth_display_passkey_pin_msg">វាយបញ្ចូល %1$s លើ %2$s ដើម្បី​ផ្គូ​គ្នា រួច​ប៉ះ ត្រឡប់ ឬ ចូល។</string>
-    <string name="bluetooth_HID_connecting_error_message">មិន​អាច​ភ្ជាប់​ទៅ %1$s។ សាកល្បង​ភ្ជាប់​ពី %2$s។</string>
     <string name="bluetooth_connecting_error_message">មិន​អាច​ភ្ជាប់​ទៅ %s។</string>
     <string name="bluetooth_preference_scan_title">ស្កេន</string>
     <string name="bluetooth_preference_paired_devices">ឧបករណ៍​បាន​ផ្គូ</string>

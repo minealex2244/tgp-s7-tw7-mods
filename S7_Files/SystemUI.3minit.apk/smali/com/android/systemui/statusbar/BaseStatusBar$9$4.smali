@@ -30,7 +30,7 @@
     .param p2, "val$rankingMap"    # Landroid/service/notification/NotificationListenerService$RankingMap;
 
     .prologue
-    .line 829
+    .line 827
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$9$4;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$9;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$9$4;->val$rankingMap:Landroid/service/notification/NotificationListenerService$RankingMap;
@@ -46,7 +46,7 @@
     .locals 2
 
     .prologue
-    .line 832
+    .line 830
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$9$4;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$9;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar$9;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -55,6 +55,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/BaseStatusBar;->updateNotificationRanking(Landroid/service/notification/NotificationListenerService$RankingMap;)V
 
-    .line 831
+    .line 829
     return-void
 .end method

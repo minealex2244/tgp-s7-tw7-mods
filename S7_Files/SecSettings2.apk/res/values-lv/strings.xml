@@ -3688,7 +3688,6 @@ Piezīme. Pirksta nospiedums negarantē tādu aizsardzību kā droša figūra va
     <string name="bluetooth_confirm_passkey_msg">Apstipriniet piekļuves kodu %2$s, lai izveidotu savienojumu pārī ar %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">No&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Vai savienot pārī ar šo ierīci?</string>
     <string name="bluetooth_display_passkey_pin_msg">Ierīcē %2$s ievadiet %1$s, lai savienotu pārī, pēc tam pieskarieties pie Atgriezties vai Ievadīt.</string>
-    <string name="bluetooth_HID_connecting_error_message">Nevar izveidot savienojumu ar %1$s. Mēģiniet izveidot savienojumu no %2$s.</string>
     <string name="bluetooth_connecting_error_message">Nevar izveidot savienojumu ar %s.</string>
     <string name="bluetooth_preference_scan_title">Meklēt</string>
     <string name="bluetooth_preference_paired_devices">Pārī savienotas ierīces</string>

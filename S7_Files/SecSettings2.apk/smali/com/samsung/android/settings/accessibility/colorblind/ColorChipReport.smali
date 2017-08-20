@@ -534,7 +534,7 @@
 
     invoke-direct {v1, p0}, Lcom/samsung/android/settings/accessibility/colorblind/ColorChipReport$14;-><init>(Lcom/samsung/android/settings/accessibility/colorblind/ColorChipReport;)V
 
-    const v2, 0x7f0b1518
+    const v2, 0x7f0b1517
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -655,7 +655,7 @@
 
     invoke-direct {v1, p0}, Lcom/samsung/android/settings/accessibility/colorblind/ColorChipReport$11;-><init>(Lcom/samsung/android/settings/accessibility/colorblind/ColorChipReport;)V
 
-    const v2, 0x7f0b1518
+    const v2, 0x7f0b1517
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -737,7 +737,7 @@
 
     invoke-direct {v1, p0}, Lcom/samsung/android/settings/accessibility/colorblind/ColorChipReport$8;-><init>(Lcom/samsung/android/settings/accessibility/colorblind/ColorChipReport;)V
 
-    const v2, 0x7f0b1518
+    const v2, 0x7f0b1517
 
     invoke-virtual {v0, v2, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -972,7 +972,7 @@
     :cond_1
     iget-object v1, p0, Lcom/samsung/android/settings/accessibility/colorblind/ColorChipReport;->mResultText:Landroid/widget/TextView;
 
-    const v3, 0x7f0b0e56
+    const v3, 0x7f0b0e54
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(I)V
 
@@ -1486,7 +1486,7 @@
     :cond_1
     iget-object v0, p0, Lcom/samsung/android/settings/accessibility/colorblind/ColorChipReport;->mResultText:Landroid/widget/TextView;
 
-    const v1, 0x7f0b0e56
+    const v1, 0x7f0b0e54
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

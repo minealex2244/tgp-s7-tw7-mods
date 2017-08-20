@@ -1,5 +1,5 @@
 .class Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;
-.super Landroid/database/ContentObserver;
+.super Landroid/content/BroadcastReceiver;
 .source "FindMyMobileSettings.java"
 
 
@@ -19,65 +19,32 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
     .locals 0
     .param p1, "this$0"    # Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
-    .param p2, "$anonymous0"    # Landroid/os/Handler;
 
     .prologue
-    .line 197
+    .line 187
     iput-object p1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
 
-    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onChange(Z)V
-    .locals 4
-    .param p1, "selfChange"    # Z
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 1
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intent"    # Landroid/content/Intent;
 
     .prologue
-    const/4 v3, 0x0
+    .line 190
+    iget-object v0, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
 
-    .line 200
-    iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
+    invoke-static {v0}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->-wrap2(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)V
 
-    invoke-static {v1}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->-wrap0(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)Landroid/content/ContentResolver;
-
-    move-result-object v1
-
-    const-string/jumbo v2, "send_last_location"
-
-    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    const/4 v0, 0x1
-
-    .line 201
-    .local v0, "Enabled":Z
-    :goto_0
-    iget-object v1, p0, Lcom/samsung/android/settings/fmm/FindMyMobileSettings$3;->this$0:Lcom/samsung/android/settings/fmm/FindMyMobileSettings;
-
-    invoke-static {v1}, Lcom/samsung/android/settings/fmm/FindMyMobileSettings;->-get4(Lcom/samsung/android/settings/fmm/FindMyMobileSettings;)Landroid/preference/SwitchPreference;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/preference/SwitchPreference;->setChecked(Z)V
-
-    .line 199
+    .line 189
     return-void
-
-    .line 200
-    .end local v0    # "Enabled":Z
-    :cond_0
-    const/4 v0, 0x0
-
-    .restart local v0    # "Enabled":Z
-    goto :goto_0
 .end method

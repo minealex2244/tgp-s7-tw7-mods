@@ -3686,7 +3686,6 @@ Notă: este posibil ca amprenta dvs. să fie mai puțin sigură decât un model 
     <string name="bluetooth_confirm_passkey_msg">Confirmați cheia %2$s pentru asocierea cu %1$s.</string>
     <string name="bluetooth_incoming_pairing_msg">De la&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Asociaţi cu acest dispozitiv?</string>
     <string name="bluetooth_display_passkey_pin_msg">Introduceți %1$s la %2$s pentru asociere, apoi apăsați pe tasta Return sau Enter.</string>
-    <string name="bluetooth_HID_connecting_error_message">Nu se poate realiza conectarea la %1$s. Încercați să vă conectați de la %2$s.</string>
     <string name="bluetooth_connecting_error_message">Imposibil de conectat la %s</string>
     <string name="bluetooth_preference_scan_title">Căutare</string>
     <string name="bluetooth_preference_paired_devices">Dispozitive împerecheate</string>
@@ -4087,7 +4086,7 @@ Se recomandă să utilizaţi un card SD sau un dispozitiv de stocare USB mai rap
     <string name="master_clear_final_desc">Toate informațiile personale și aplicațiile descărcate vor fi șterse și nu vor putea fi recuperate.</string>
     <string name="master_clear_final_button_text">Ștergere totală</string>
     <string name="master_clear_not_available">Acest profil de invitat nu are permisiunea de a efectua resetarea la datele din fabrică.</string>
-    <string name="master_clear_progress_title">Resetare</string>
+    <string name="master_clear_progress_title">Reinițial.</string>
     <string name="master_clear_progress_text">Așteptați…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">Partajare conex. Internet</string>

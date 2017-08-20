@@ -5799,7 +5799,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f0c006a
+    const v5, 0x7f0c006c
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -14643,7 +14643,7 @@
 
     .line 5112
     :cond_0
-    const v2, 0x7f0c005a
+    const v2, 0x7f0c005c
 
     .line 5111
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
@@ -24821,7 +24821,7 @@
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 5020
-    const v2, 0x7f0206c7
+    const v2, 0x7f0206c0
 
     .line 5021
     .local v2, "modeIconId":I
@@ -24842,7 +24842,7 @@
     if-eqz v3, :cond_4
 
     .line 5023
-    const v2, 0x7f0206c5
+    const v2, 0x7f0206be
 
     .line 5028
     :cond_1
@@ -24883,7 +24883,7 @@
     .restart local v1    # "isTwoPhoneMode":Z
     .restart local v2    # "modeIconId":I
     :cond_4
-    const v2, 0x7f0206c6
+    const v2, 0x7f0206bf
 
     goto :goto_0
 .end method

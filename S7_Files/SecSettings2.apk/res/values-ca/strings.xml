@@ -3686,7 +3686,6 @@ Nota: és possible que la seva empremta sigui menys segura que un patró o un PI
     <string name="bluetooth_confirm_passkey_msg">La clau de pas de confirmació és %2$s per vincular amb %1$s</string>
     <string name="bluetooth_incoming_pairing_msg">De&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Vincular amb aquest dispositiu?</string>
     <string name="bluetooth_display_passkey_pin_msg">Introdueixi %1$s a %2$s per vincular i toqui Retorn o Intro</string>
-    <string name="bluetooth_HID_connecting_error_message">No es pot connectar a %1$s. Torni a intentar la connexió de %2$s.</string>
     <string name="bluetooth_connecting_error_message">No es pot connectar amb %s</string>
     <string name="bluetooth_preference_scan_title">Escanejar</string>
     <string name="bluetooth_preference_paired_devices">Dispositius aparellats</string>

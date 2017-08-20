@@ -523,7 +523,7 @@
 
     .line 154
     .local v5, "mMessage":Ljava/lang/CharSequence;
-    const v6, 0x7f0b0b13
+    const v6, 0x7f0b0b11
 
     invoke-virtual {p0, v6}, Lcom/samsung/android/settings/CloudAccountSettings;->getString(I)Ljava/lang/String;
 

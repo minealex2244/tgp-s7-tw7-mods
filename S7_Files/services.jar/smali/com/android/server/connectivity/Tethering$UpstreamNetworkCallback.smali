@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lcom/android/server/connectivity/Tethering;
 
     .prologue
-    .line 3218
+    .line 3216
     iput-object p1, p0, Lcom/android/server/connectivity/Tethering$UpstreamNetworkCallback;->this$0:Lcom/android/server/connectivity/Tethering;
 
     invoke-direct {p0}, Landroid/net/ConnectivityManager$NetworkCallback;-><init>()V
@@ -42,14 +42,14 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 3221
+    .line 3219
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$UpstreamNetworkCallback;->this$0:Lcom/android/server/connectivity/Tethering;
 
     invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->-get29(Lcom/android/server/connectivity/Tethering;)Lcom/android/internal/util/StateMachine;
 
     move-result-object v7
 
-    .line 3223
+    .line 3221
     new-instance v0, Landroid/net/NetworkState;
 
     move-object v2, p2
@@ -64,13 +64,13 @@
 
     invoke-direct/range {v0 .. v6}, Landroid/net/NetworkState;-><init>(Landroid/net/NetworkInfo;Landroid/net/LinkProperties;Landroid/net/NetworkCapabilities;Landroid/net/Network;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3222
+    .line 3220
     const v1, 0x50005
 
-    .line 3221
+    .line 3219
     invoke-virtual {v7, v1, v0}, Lcom/android/internal/util/StateMachine;->sendMessage(ILjava/lang/Object;)V
 
-    .line 3220
+    .line 3218
     return-void
 .end method
 
@@ -79,7 +79,7 @@
     .param p1, "network"    # Landroid/net/Network;
 
     .prologue
-    .line 3228
+    .line 3226
     iget-object v0, p0, Lcom/android/server/connectivity/Tethering$UpstreamNetworkCallback;->this$0:Lcom/android/server/connectivity/Tethering;
 
     invoke-static {v0}, Lcom/android/server/connectivity/Tethering;->-get29(Lcom/android/server/connectivity/Tethering;)Lcom/android/internal/util/StateMachine;
@@ -90,6 +90,6 @@
 
     invoke-virtual {v0, v1, p1}, Lcom/android/internal/util/StateMachine;->sendMessage(ILjava/lang/Object;)V
 
-    .line 3227
+    .line 3225
     return-void
 .end method

@@ -1933,7 +1933,7 @@
     .param p1, "serviceState"    # Landroid/telephony/ServiceState;
 
     .prologue
-    const v8, 0x7f0b18fc
+    const v8, 0x7f0b18fb
 
     const/4 v4, 0x2
 
@@ -2983,7 +2983,7 @@
 
     aput-object v13, v12, v14
 
-    const v13, 0x7f0b18fc
+    const v13, 0x7f0b18fb
 
     invoke-virtual {v5, v13, v12}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3133,7 +3133,7 @@
     aput-object v13, v12, v14
 
     .line 543
-    const v13, 0x7f0b18fc
+    const v13, 0x7f0b18fb
 
     invoke-virtual {v5, v13, v12}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
@@ -3433,7 +3433,7 @@
     aput-object v13, v12, v14
 
     .line 608
-    const v13, 0x7f0b18fc
+    const v13, 0x7f0b18fb
 
     invoke-virtual {v5, v13, v12}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 

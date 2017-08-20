@@ -30,7 +30,7 @@
     .param p2, "val$packages"    # [Ljava/lang/String;
 
     .prologue
-    .line 447
+    .line 389
     iput-object p1, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$4;->this$1:Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor;
 
     iput-object p2, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$4;->val$packages:[Ljava/lang/String;
@@ -48,10 +48,10 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 450
+    .line 392
     const/4 v1, 0x0
 
-    .line 451
+    .line 393
     .local v1, "update":Z
     iget-object v4, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$4;->val$packages:[Ljava/lang/String;
 
@@ -65,7 +65,7 @@
 
     aget-object v0, v4, v2
 
-    .line 452
+    .line 394
     .local v0, "packageName":Ljava/lang/String;
     iget-object v6, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$4;->this$1:Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor;
 
@@ -75,7 +75,7 @@
 
     or-int/2addr v1, v6
 
-    .line 453
+    .line 395
     .local v1, "update":Z
     iget-object v6, p0, Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor$4;->this$1:Lcom/android/systemui/recents/model/RecentsAppListLoader$AppListPackageMonitor;
 
@@ -85,18 +85,18 @@
 
     or-int/2addr v1, v6
 
-    .line 451
+    .line 393
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 455
+    .line 397
     .end local v0    # "packageName":Ljava/lang/String;
     .end local v1    # "update":Z
     :cond_0
     if-eqz v1, :cond_1
 
-    .line 456
+    .line 398
     invoke-static {}, Lcom/android/systemui/recents/events/EventBus;->getDefault()Lcom/android/systemui/recents/events/EventBus;
 
     move-result-object v2
@@ -107,7 +107,7 @@
 
     invoke-virtual {v2, v3}, Lcom/android/systemui/recents/events/EventBus;->sendOntoMainThread(Lcom/android/systemui/recents/events/EventBus$Event;)V
 
-    .line 449
+    .line 391
     :cond_1
     return-void
 .end method

@@ -31,7 +31,7 @@
     .param p1, "this$0"    # Landroid/media/AudioManager;
 
     .prologue
-    .line 5078
+    .line 5097
     iput-object p1, p0, Landroid/media/AudioManager$OnAmPortUpdateListener;->this$0:Landroid/media/AudioManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -56,7 +56,7 @@
     .param p1, "patchList"    # [Landroid/media/AudioPatch;
 
     .prologue
-    .line 5089
+    .line 5108
     return-void
 .end method
 
@@ -65,14 +65,14 @@
     .param p1, "portList"    # [Landroid/media/AudioPort;
 
     .prologue
-    .line 5081
+    .line 5100
     iget-object v0, p0, Landroid/media/AudioManager$OnAmPortUpdateListener;->this$0:Landroid/media/AudioManager;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Landroid/media/AudioManager;->-wrap1(Landroid/media/AudioManager;Landroid/os/Handler;)V
 
-    .line 5080
+    .line 5099
     return-void
 .end method
 
@@ -80,13 +80,13 @@
     .locals 2
 
     .prologue
-    .line 5095
+    .line 5114
     iget-object v0, p0, Landroid/media/AudioManager$OnAmPortUpdateListener;->this$0:Landroid/media/AudioManager;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Landroid/media/AudioManager;->-wrap1(Landroid/media/AudioManager;Landroid/os/Handler;)V
 
-    .line 5094
+    .line 5113
     return-void
 .end method

@@ -4343,7 +4343,7 @@
     if-eqz v1, :cond_0
 
     .line 2474
-    const v2, 0x7f0b08ae
+    const v2, 0x7f0b08ac
 
     .line 2481
     .local v2, "resourceId":I
@@ -4356,7 +4356,7 @@
     if-eqz v0, :cond_1
 
     .line 2476
-    const v2, 0x7f0b08ac
+    const v2, 0x7f0b08aa
 
     .restart local v2    # "resourceId":I
     goto :goto_0
@@ -4364,7 +4364,7 @@
     .line 2478
     .end local v2    # "resourceId":I
     :cond_1
-    const v2, 0x7f0b08ad
+    const v2, 0x7f0b08ab
 
     .restart local v2    # "resourceId":I
     goto :goto_0
@@ -5618,7 +5618,7 @@
     move v7, v4
 
     :goto_1
-    const v5, 0x7f0b1903
+    const v5, 0x7f0b1902
 
     move-object v0, p0
 
@@ -6037,7 +6037,7 @@
 
     iget v0, p0, Lcom/android/settings/SettingsActivity;->mInitialTitleResId:I
 
-    const v1, 0x7f0b074c
+    const v1, 0x7f0b074a
 
     if-ne v1, v0, :cond_0
 
@@ -9265,7 +9265,7 @@
     const/4 v9, 0x0
 
     .line 1320
-    const v10, 0x7f0b1902
+    const v10, 0x7f0b1901
 
     const/4 v11, 0x0
 
@@ -9696,7 +9696,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0f14
+    const v4, 0x7f0b0f12
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -9708,7 +9708,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0b0f15
+    const v4, 0x7f0b0f13
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -9877,7 +9877,7 @@
     if-eqz v0, :cond_0
 
     .line 689
-    const v0, 0x7f0b134a
+    const v0, 0x7f0b1349
 
     invoke-virtual {p0, v0}, Lcom/android/settings/SettingsActivity;->getString(I)Ljava/lang/String;
 
@@ -11574,7 +11574,7 @@
 
     const/4 v10, 0x0
 
-    const v11, 0x7f0b0f14
+    const v11, 0x7f0b0f12
 
     invoke-interface {p1, v8, v9, v10, v11}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 
@@ -11606,7 +11606,7 @@
 
     const/4 v10, 0x0
 
-    const v11, 0x7f0b0f15
+    const v11, 0x7f0b0f13
 
     invoke-interface {p1, v8, v9, v10, v11}, Landroid/view/Menu;->add(IIII)Landroid/view/MenuItem;
 

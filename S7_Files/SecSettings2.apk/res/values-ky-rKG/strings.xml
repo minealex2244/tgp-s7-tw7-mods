@@ -3685,7 +3685,6 @@ Receiving SMS"</string>
     <string name="bluetooth_confirm_passkey_msg">%1$s менен кошоктотуу үчүн кирүү ачкычы %2$s болгонун ырастоо</string>
     <string name="bluetooth_incoming_pairing_msg">Кимден&lt;br/><b>%1$s</b>&lt;br/>&lt;br/>Бул түзмөк менен кошоктотуубу?</string>
     <string name="bluetooth_display_passkey_pin_msg">Кошоктотуу үчүн %2$s ичине %1$s киргизиңиз, андан соң Кайтарууну же Киргизүүнү таптаңыз</string>
-    <string name="bluetooth_HID_connecting_error_message">%1$s туташа албайт. %2$s туташууга аракет кылыңыз.</string>
     <string name="bluetooth_connecting_error_message">%s менен туташуу мүмкүн эмес.</string>
     <string name="bluetooth_preference_scan_title">Издөө</string>
     <string name="bluetooth_preference_paired_devices">Байланышкан түзмөктөр</string>
@@ -4086,7 +4085,7 @@ Receiving SMS"</string>
     <string name="master_clear_final_desc">Сиздин бардык жеке маалыматыңыз жана жүктөлгөн колдонмолоруңуз өчүрүлөт жана калыбына келтирүүгө мүмкүн болбойт.</string>
     <string name="master_clear_final_button_text">Баарын жок кылуу</string>
     <string name="master_clear_not_available">Бул конок профили дайындарды баштапкы абалга келтире албайт.</string>
-    <string name="master_clear_progress_title">Кайра кой</string>
+    <string name="master_clear_progress_title">Кайра коюу</string>
     <string name="master_clear_progress_text">Күтө туруңуз…</string>
     <string name="tether_settings_uid_title_vzw">Mobile Hotspot and tethering</string>
     <string name="usb_tethering_button_text">USB модем</string>
